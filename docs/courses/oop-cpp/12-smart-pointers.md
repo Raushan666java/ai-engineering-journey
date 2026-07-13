@@ -96,14 +96,14 @@ Smart pointers eliminate all four categories by encoding ownership semantics int
 
 ### 12.2.1 What Is unique_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-handwritten.svg" alt="Handwritten: 12.2.1 What Is unique_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-handwritten.svg" alt="Handwritten: 12.2.1 What Is unique_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-diagram.svg" alt="Diagram: 12.2.1 What Is unique_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-diagram.svg" alt="Diagram: 12.2.1 What Is unique_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-sticky.svg" alt="Sticky Note: 12.2.1 What Is unique_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-1-what-is-unique-ptr-sticky.svg" alt="Sticky Note: 12.2.1 What Is unique_ptr?" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ You have the only key to a house. You can hand the key to someone else (move), b
 
 ### 12.2.2 Template Signature
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-handwritten.svg" alt="Handwritten: 12.2.2 Template Signature" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-handwritten.svg" alt="Handwritten: 12.2.2 Template Signature" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-diagram.svg" alt="Diagram: 12.2.2 Template Signature" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-diagram.svg" alt="Diagram: 12.2.2 Template Signature" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-sticky.svg" alt="Sticky Note: 12.2.2 Template Signature" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-2-template-signature-sticky.svg" alt="Sticky Note: 12.2.2 Template Signature" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ class unique_ptr {
 
 ### 12.2.3 Construction and Basic Usage
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-handwritten.svg" alt="Handwritten: 12.2.3 Construction and Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-handwritten.svg" alt="Handwritten: 12.2.3 Construction and Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-diagram.svg" alt="Diagram: 12.2.3 Construction and Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-diagram.svg" alt="Diagram: 12.2.3 Construction and Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-sticky.svg" alt="Sticky Note: 12.2.3 Construction and Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-3-construction-and-basic-usage-sticky.svg" alt="Sticky Note: 12.2.3 Construction and Basic Usage" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ Resource(10) released
 
 ### 12.2.4 Move-Only Semantics
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-handwritten.svg" alt="Handwritten: 12.2.4 Move-Only Semantics" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-handwritten.svg" alt="Handwritten: 12.2.4 Move-Only Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-diagram.svg" alt="Diagram: 12.2.4 Move-Only Semantics" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-diagram.svg" alt="Diagram: 12.2.4 Move-Only Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-sticky.svg" alt="Sticky Note: 12.2.4 Move-Only Semantics" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-4-move-only-semantics-sticky.svg" alt="Sticky Note: 12.2.4 Move-Only Semantics" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ std::cout << *dst << '\n';  // 42
 
 ### 12.2.5 unique_ptr with Arrays
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-handwritten.svg" alt="Handwritten: 12.2.5 unique_ptr with Arrays" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-handwritten.svg" alt="Handwritten: 12.2.5 unique_ptr with Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-diagram.svg" alt="Diagram: 12.2.5 unique_ptr with Arrays" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-diagram.svg" alt="Diagram: 12.2.5 unique_ptr with Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-sticky.svg" alt="Sticky Note: 12.2.5 unique_ptr with Arrays" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-5-unique-ptr-with-arrays-sticky.svg" alt="Sticky Note: 12.2.5 unique_ptr with Arrays" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ int* raw = arr2.get() + 1;  // OK: use get()
 
 ### 12.2.6 Returning unique_ptr from Functions
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-handwritten.svg" alt="Handwritten: 12.2.6 Returning unique_ptr from Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-handwritten.svg" alt="Handwritten: 12.2.6 Returning unique_ptr from Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-diagram.svg" alt="Diagram: 12.2.6 Returning unique_ptr from Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-diagram.svg" alt="Diagram: 12.2.6 Returning unique_ptr from Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-sticky.svg" alt="Sticky Note: 12.2.6 Returning unique_ptr from Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-6-returning-unique-ptr-from-functions-sticky.svg" alt="Sticky Note: 12.2.6 Returning unique_ptr from Functions" width="30%">
 </a>
 
 
@@ -316,14 +316,14 @@ This pattern is essential for factory functions — ownership flows naturally fr
 
 ### 12.2.7 unique_ptr in Containers
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-handwritten.svg" alt="Handwritten: 12.2.7 unique_ptr in Containers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-handwritten.svg" alt="Handwritten: 12.2.7 unique_ptr in Containers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-diagram.svg" alt="Diagram: 12.2.7 unique_ptr in Containers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-diagram.svg" alt="Diagram: 12.2.7 unique_ptr in Containers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-sticky.svg" alt="Sticky Note: 12.2.7 unique_ptr in Containers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-7-unique-ptr-in-containers-sticky.svg" alt="Sticky Note: 12.2.7 unique_ptr in Containers" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ int main() {
 
 ### 12.2.8 Performance Characteristics of unique_ptr
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-handwritten.svg" alt="Handwritten: 12.2.8 Performance Characteristics of unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-handwritten.svg" alt="Handwritten: 12.2.8 Performance Characteristics of unique_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-diagram.svg" alt="Diagram: 12.2.8 Performance Characteristics of unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-diagram.svg" alt="Diagram: 12.2.8 Performance Characteristics of unique_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-sticky.svg" alt="Sticky Note: 12.2.8 Performance Characteristics of unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-8-performance-characteristics-of-unique-ptr-sticky.svg" alt="Sticky Note: 12.2.8 Performance Characteristics of unique_ptr" width="30%">
 </a>
 
 
@@ -374,14 +374,14 @@ int main() {
 
 ### 12.2.9 Edge Cases with unique_ptr
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-handwritten.svg" alt="Handwritten: 12.2.9 Edge Cases with unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-handwritten.svg" alt="Handwritten: 12.2.9 Edge Cases with unique_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-diagram.svg" alt="Diagram: 12.2.9 Edge Cases with unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-diagram.svg" alt="Diagram: 12.2.9 Edge Cases with unique_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-sticky.svg" alt="Sticky Note: 12.2.9 Edge Cases with unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-2-9-edge-cases-with-unique-ptr-sticky.svg" alt="Sticky Note: 12.2.9 Edge Cases with unique_ptr" width="30%">
 </a>
 
 
@@ -400,14 +400,14 @@ int main() {
 
 ### 12.3.1 What Is shared_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-handwritten.svg" alt="Handwritten: 12.3.1 What Is shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-handwritten.svg" alt="Handwritten: 12.3.1 What Is shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-diagram.svg" alt="Diagram: 12.3.1 What Is shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-diagram.svg" alt="Diagram: 12.3.1 What Is shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-sticky.svg" alt="Sticky Note: 12.3.1 What Is shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-1-what-is-shared-ptr-sticky.svg" alt="Sticky Note: 12.3.1 What Is shared_ptr?" width="30%">
 </a>
 
 
@@ -421,14 +421,14 @@ Multiple people own shares in a condo. Each person has a key (shared_ptr). The c
 
 ### 12.3.2 Control Block Architecture
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-handwritten.svg" alt="Handwritten: 12.3.2 Control Block Architecture" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-handwritten.svg" alt="Handwritten: 12.3.2 Control Block Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-diagram.svg" alt="Diagram: 12.3.2 Control Block Architecture" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-diagram.svg" alt="Diagram: 12.3.2 Control Block Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-sticky.svg" alt="Sticky Note: 12.3.2 Control Block Architecture" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-2-control-block-architecture-sticky.svg" alt="Sticky Note: 12.3.2 Control Block Architecture" width="30%">
 </a>
 
 
@@ -476,14 +476,14 @@ When using `make_shared`, the object and control block are allocated in a **sing
 
 ### 12.3.3 Construction and Basic Usage
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-handwritten.svg" alt="Handwritten: 12.3.3 Construction and Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-handwritten.svg" alt="Handwritten: 12.3.3 Construction and Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-diagram.svg" alt="Diagram: 12.3.3 Construction and Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-diagram.svg" alt="Diagram: 12.3.3 Construction and Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-sticky.svg" alt="Sticky Note: 12.3.3 Construction and Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-3-construction-and-basic-usage-sticky.svg" alt="Sticky Note: 12.3.3 Construction and Basic Usage" width="30%">
 </a>
 
 
@@ -538,14 +538,14 @@ Object should be gone now
 
 ### 12.3.4 Reference Counting Dry Run
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-handwritten.svg" alt="Handwritten: 12.3.4 Reference Counting Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-handwritten.svg" alt="Handwritten: 12.3.4 Reference Counting Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-diagram.svg" alt="Diagram: 12.3.4 Reference Counting Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-diagram.svg" alt="Diagram: 12.3.4 Reference Counting Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-sticky.svg" alt="Sticky Note: 12.3.4 Reference Counting Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-4-reference-counting-dry-run-sticky.svg" alt="Sticky Note: 12.3.4 Reference Counting Dry Run" width="30%">
 </a>
 
 
@@ -578,14 +578,14 @@ a.reset();                             // Step 8
 
 ### 12.3.5 Key Member Functions
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-handwritten.svg" alt="Handwritten: 12.3.5 Key Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-handwritten.svg" alt="Handwritten: 12.3.5 Key Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-diagram.svg" alt="Diagram: 12.3.5 Key Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-diagram.svg" alt="Diagram: 12.3.5 Key Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-sticky.svg" alt="Sticky Note: 12.3.5 Key Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-5-key-member-functions-sticky.svg" alt="Sticky Note: 12.3.5 Key Member Functions" width="30%">
 </a>
 
 
@@ -600,14 +600,14 @@ a.reset();                             // Step 8
 
 ### 12.3.6 Thread Safety
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-handwritten.svg" alt="Handwritten: 12.3.6 Thread Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-handwritten.svg" alt="Handwritten: 12.3.6 Thread Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-diagram.svg" alt="Diagram: 12.3.6 Thread Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-diagram.svg" alt="Diagram: 12.3.6 Thread Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-sticky.svg" alt="Sticky Note: 12.3.6 Thread Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-6-thread-safety-sticky.svg" alt="Sticky Note: 12.3.6 Thread Safety" width="30%">
 </a>
 
 
@@ -631,14 +631,14 @@ sp.reset();                        // Race if A is also using sp!
 
 ### 12.3.7 shared_ptr with Custom Deleter
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-handwritten.svg" alt="Handwritten: 12.3.7 shared_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-handwritten.svg" alt="Handwritten: 12.3.7 shared_ptr with Custom Deleter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-diagram.svg" alt="Diagram: 12.3.7 shared_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-diagram.svg" alt="Diagram: 12.3.7 shared_ptr with Custom Deleter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-sticky.svg" alt="Sticky Note: 12.3.7 shared_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-3-7-shared-ptr-with-custom-deleter-sticky.svg" alt="Sticky Note: 12.3.7 shared_ptr with Custom Deleter" width="30%">
 </a>
 
 
@@ -670,14 +670,14 @@ files.push_back({fopen("b.txt", "r"), &fclose});
 
 ### 12.4.1 What Is weak_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-handwritten.svg" alt="Handwritten: 12.4.1 What Is weak_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-handwritten.svg" alt="Handwritten: 12.4.1 What Is weak_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-diagram.svg" alt="Diagram: 12.4.1 What Is weak_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-diagram.svg" alt="Diagram: 12.4.1 What Is weak_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-sticky.svg" alt="Sticky Note: 12.4.1 What Is weak_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-1-what-is-weak-ptr-sticky.svg" alt="Sticky Note: 12.4.1 What Is weak_ptr?" width="30%">
 </a>
 
 
@@ -691,14 +691,14 @@ A movie ticket stub (weak_ptr) lets you re-enter the theater only if the movie i
 
 ### 12.4.2 Construction and Locking
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-handwritten.svg" alt="Handwritten: 12.4.2 Construction and Locking" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-handwritten.svg" alt="Handwritten: 12.4.2 Construction and Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-diagram.svg" alt="Diagram: 12.4.2 Construction and Locking" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-diagram.svg" alt="Diagram: 12.4.2 Construction and Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-sticky.svg" alt="Sticky Note: 12.4.2 Construction and Locking" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-2-construction-and-locking-sticky.svg" alt="Sticky Note: 12.4.2 Construction and Locking" width="30%">
 </a>
 
 
@@ -741,14 +741,14 @@ Object has been destroyed
 
 ### 12.4.3 weak_ptr Lock Dry Run
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-handwritten.svg" alt="Handwritten: 12.4.3 weak_ptr Lock Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-handwritten.svg" alt="Handwritten: 12.4.3 weak_ptr Lock Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-diagram.svg" alt="Diagram: 12.4.3 weak_ptr Lock Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-diagram.svg" alt="Diagram: 12.4.3 weak_ptr Lock Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-sticky.svg" alt="Sticky Note: 12.4.3 weak_ptr Lock Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-3-weak-ptr-lock-dry-run-sticky.svg" alt="Sticky Note: 12.4.3 weak_ptr Lock Dry Run" width="30%">
 </a>
 
 
@@ -772,14 +772,14 @@ auto locked2 = wp.lock();               // Step 5
 
 ### 12.4.4 weak_ptr Properties
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-handwritten.svg" alt="Handwritten: 12.4.4 weak_ptr Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-handwritten.svg" alt="Handwritten: 12.4.4 weak_ptr Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-diagram.svg" alt="Diagram: 12.4.4 weak_ptr Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-diagram.svg" alt="Diagram: 12.4.4 weak_ptr Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-sticky.svg" alt="Sticky Note: 12.4.4 weak_ptr Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-4-4-weak-ptr-properties-sticky.svg" alt="Sticky Note: 12.4.4 weak_ptr Properties" width="30%">
 </a>
 
 
@@ -798,14 +798,14 @@ auto locked2 = wp.lock();               // Step 5
 
 ### 12.5.1 The Problem
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-handwritten.svg" alt="Handwritten: 12.5.1 The Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-handwritten.svg" alt="Handwritten: 12.5.1 The Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-diagram.svg" alt="Diagram: 12.5.1 The Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-diagram.svg" alt="Diagram: 12.5.1 The Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-sticky.svg" alt="Sticky Note: 12.5.1 The Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-1-the-problem-sticky.svg" alt="Sticky Note: 12.5.1 The Problem" width="30%">
 </a>
 
 
@@ -819,14 +819,14 @@ Two toddlers each grab the other's shirt and won't let go. Neither can go home (
 
 ### 12.5.2 The Leak Demonstration
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-handwritten.svg" alt="Handwritten: 12.5.2 The Leak Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-handwritten.svg" alt="Handwritten: 12.5.2 The Leak Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-diagram.svg" alt="Diagram: 12.5.2 The Leak Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-diagram.svg" alt="Diagram: 12.5.2 The Leak Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-sticky.svg" alt="Sticky Note: 12.5.2 The Leak Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-2-the-leak-demonstration-sticky.svg" alt="Sticky Note: 12.5.2 The Leak Demonstration" width="30%">
 </a>
 
 
@@ -881,14 +881,14 @@ b use_count: 2
 
 ### 12.5.3 Reference Count Dry Run for the Cycle
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-handwritten.svg" alt="Handwritten: 12.5.3 Reference Count Dry Run for the Cycle" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-handwritten.svg" alt="Handwritten: 12.5.3 Reference Count Dry Run for the Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-diagram.svg" alt="Diagram: 12.5.3 Reference Count Dry Run for the Cycle" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-diagram.svg" alt="Diagram: 12.5.3 Reference Count Dry Run for the Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-sticky.svg" alt="Sticky Note: 12.5.3 Reference Count Dry Run for the Cycle" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-3-reference-count-dry-run-for-the-cycle-sticky.svg" alt="Sticky Note: 12.5.3 Reference Count Dry Run for the Cycle" width="30%">
 </a>
 
 
@@ -906,14 +906,14 @@ Both counts stuck at 1 — neither object can be freed.
 
 ### 12.5.4 The Fix: weak_ptr
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-handwritten.svg" alt="Handwritten: 12.5.4 The Fix: weak_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-handwritten.svg" alt="Handwritten: 12.5.4 The Fix: weak_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-diagram.svg" alt="Diagram: 12.5.4 The Fix: weak_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-diagram.svg" alt="Diagram: 12.5.4 The Fix: weak_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-sticky.svg" alt="Sticky Note: 12.5.4 The Fix: weak_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-4-the-fix-weak-ptr-sticky.svg" alt="Sticky Note: 12.5.4 The Fix: weak_ptr" width="30%">
 </a>
 
 
@@ -967,14 +967,14 @@ NodeFixed(1) destroyed
 
 ### 12.5.5 General Rule for Cycle Avoidance
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-handwritten.svg" alt="Handwritten: 12.5.5 General Rule for Cycle Avoidance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-handwritten.svg" alt="Handwritten: 12.5.5 General Rule for Cycle Avoidance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-diagram.svg" alt="Diagram: 12.5.5 General Rule for Cycle Avoidance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-diagram.svg" alt="Diagram: 12.5.5 General Rule for Cycle Avoidance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-sticky.svg" alt="Sticky Note: 12.5.5 General Rule for Cycle Avoidance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-5-5-general-rule-for-cycle-avoidance-sticky.svg" alt="Sticky Note: 12.5.5 General Rule for Cycle Avoidance" width="30%">
 </a>
 
 
@@ -998,14 +998,14 @@ In any ownership hierarchy:
 
 ### 12.6.1 The Problem
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-handwritten.svg" alt="Handwritten: 12.6.1 The Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-handwritten.svg" alt="Handwritten: 12.6.1 The Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-diagram.svg" alt="Diagram: 12.6.1 The Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-diagram.svg" alt="Diagram: 12.6.1 The Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-sticky.svg" alt="Sticky Note: 12.6.1 The Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-1-the-problem-sticky.svg" alt="Sticky Note: 12.6.1 The Problem" width="30%">
 </a>
 
 
@@ -1028,14 +1028,14 @@ int main() {
 
 ### 12.6.2 The Solution
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-handwritten.svg" alt="Handwritten: 12.6.2 The Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-handwritten.svg" alt="Handwritten: 12.6.2 The Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-diagram.svg" alt="Diagram: 12.6.2 The Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-diagram.svg" alt="Diagram: 12.6.2 The Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-sticky.svg" alt="Sticky Note: 12.6.2 The Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-2-the-solution-sticky.svg" alt="Sticky Note: 12.6.2 The Solution" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ Good destroyed
 
 ### 12.6.3 Important Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-handwritten.svg" alt="Handwritten: 12.6.3 Important Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-handwritten.svg" alt="Handwritten: 12.6.3 Important Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-diagram.svg" alt="Diagram: 12.6.3 Important Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-diagram.svg" alt="Diagram: 12.6.3 Important Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-sticky.svg" alt="Sticky Note: 12.6.3 Important Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-3-important-rules-sticky.svg" alt="Sticky Note: 12.6.3 Important Rules" width="30%">
 </a>
 
 
@@ -1107,14 +1107,14 @@ struct Manager : std::enable_shared_from_this<Manager> {
 
 ### 12.6.4 Real-World Use: Asynchronous Callbacks
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-handwritten.svg" alt="Handwritten: 12.6.4 Real-World Use: Asynchronous Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-handwritten.svg" alt="Handwritten: 12.6.4 Real-World Use: Asynchronous Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-diagram.svg" alt="Diagram: 12.6.4 Real-World Use: Asynchronous Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-diagram.svg" alt="Diagram: 12.6.4 Real-World Use: Asynchronous Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-sticky.svg" alt="Sticky Note: 12.6.4 Real-World Use: Asynchronous Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-6-4-real-world-use-asynchronous-callbacks-sticky.svg" alt="Sticky Note: 12.6.4 Real-World Use: Asynchronous Callbacks" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ int main() {
 
 ### 12.7.1 History
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-handwritten.svg" alt="Handwritten: 12.7.1 History" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-handwritten.svg" alt="Handwritten: 12.7.1 History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-diagram.svg" alt="Diagram: 12.7.1 History" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-diagram.svg" alt="Diagram: 12.7.1 History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-sticky.svg" alt="Sticky Note: 12.7.1 History" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-1-history-sticky.svg" alt="Sticky Note: 12.7.1 History" width="30%">
 </a>
 
 
@@ -1161,14 +1161,14 @@ int main() {
 
 ### 12.7.2 Why auto_ptr Failed
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-handwritten.svg" alt="Handwritten: 12.7.2 Why auto_ptr Failed" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-handwritten.svg" alt="Handwritten: 12.7.2 Why auto_ptr Failed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-diagram.svg" alt="Diagram: 12.7.2 Why auto_ptr Failed" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-diagram.svg" alt="Diagram: 12.7.2 Why auto_ptr Failed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-sticky.svg" alt="Sticky Note: 12.7.2 Why auto_ptr Failed" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-2-why-auto-ptr-failed-sticky.svg" alt="Sticky Note: 12.7.2 Why auto_ptr Failed" width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ vec.push_back(std::auto_ptr<int>(new int(2)));
 
 ### 12.7.3 auto_ptr vs unique_ptr
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-handwritten.svg" alt="Handwritten: 12.7.3 auto_ptr vs unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-handwritten.svg" alt="Handwritten: 12.7.3 auto_ptr vs unique_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-diagram.svg" alt="Diagram: 12.7.3 auto_ptr vs unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-diagram.svg" alt="Diagram: 12.7.3 auto_ptr vs unique_ptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-sticky.svg" alt="Sticky Note: 12.7.3 auto_ptr vs unique_ptr" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-7-3-auto-ptr-vs-unique-ptr-sticky.svg" alt="Sticky Note: 12.7.3 auto_ptr vs unique_ptr" width="30%">
 </a>
 
 
@@ -1217,14 +1217,14 @@ vec.push_back(std::auto_ptr<int>(new int(2)));
 
 ### 12.8.1 Motivation
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-handwritten.svg" alt="Handwritten: 12.8.1 Motivation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-handwritten.svg" alt="Handwritten: 12.8.1 Motivation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-diagram.svg" alt="Diagram: 12.8.1 Motivation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-diagram.svg" alt="Diagram: 12.8.1 Motivation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-sticky.svg" alt="Sticky Note: 12.8.1 Motivation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-1-motivation-sticky.svg" alt="Sticky Note: 12.8.1 Motivation" width="30%">
 </a>
 
 
@@ -1232,14 +1232,14 @@ Smart pointers manage more than heap memory: file handles, sockets, database con
 
 ### 12.8.2 unique_ptr with Custom Deleter
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-handwritten.svg" alt="Handwritten: 12.8.2 unique_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-handwritten.svg" alt="Handwritten: 12.8.2 unique_ptr with Custom Deleter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-diagram.svg" alt="Diagram: 12.8.2 unique_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-diagram.svg" alt="Diagram: 12.8.2 unique_ptr with Custom Deleter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-sticky.svg" alt="Sticky Note: 12.8.2 unique_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-2-unique-ptr-with-custom-deleter-sticky.svg" alt="Sticky Note: 12.8.2 unique_ptr with Custom Deleter" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ int main() {
 
 ### 12.8.3 shared_ptr with Custom Deleter
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-handwritten.svg" alt="Handwritten: 12.8.3 shared_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-handwritten.svg" alt="Handwritten: 12.8.3 shared_ptr with Custom Deleter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-diagram.svg" alt="Diagram: 12.8.3 shared_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-diagram.svg" alt="Diagram: 12.8.3 shared_ptr with Custom Deleter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-sticky.svg" alt="Sticky Note: 12.8.3 shared_ptr with Custom Deleter" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-3-shared-ptr-with-custom-deleter-sticky.svg" alt="Sticky Note: 12.8.3 shared_ptr with Custom Deleter" width="30%">
 </a>
 
 
@@ -1317,14 +1317,14 @@ files.push_back(sp2);
 
 ### 12.8.4 Custom Deleter Use Cases
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-handwritten.svg" alt="Handwritten: 12.8.4 Custom Deleter Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-handwritten.svg" alt="Handwritten: 12.8.4 Custom Deleter Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-diagram.svg" alt="Diagram: 12.8.4 Custom Deleter Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-diagram.svg" alt="Diagram: 12.8.4 Custom Deleter Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-sticky.svg" alt="Sticky Note: 12.8.4 Custom Deleter Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-4-custom-deleter-use-cases-sticky.svg" alt="Sticky Note: 12.8.4 Custom Deleter Use Cases" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ files.push_back(sp2);
 
 ### 12.8.5 The "Wrapper" Pattern for C APIs
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-handwritten.svg" alt="Handwritten: 12.8.5 The "Wrapper" Pattern for C APIs" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-handwritten.svg" alt="Handwritten: 12.8.5 The "Wrapper" Pattern for C APIs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-diagram.svg" alt="Diagram: 12.8.5 The "Wrapper" Pattern for C APIs" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-diagram.svg" alt="Diagram: 12.8.5 The "Wrapper" Pattern for C APIs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-sticky.svg" alt="Sticky Note: 12.8.5 The "Wrapper" Pattern for C APIs" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-8-5-the-wrapper-pattern-for-c-apis-sticky.svg" alt="Sticky Note: 12.8.5 The "Wrapper" Pattern for C APIs" width="30%">
 </a>
 
 
@@ -1383,14 +1383,14 @@ auto sock = createSocket();
 
 ### 12.9.1 Single vs Double Allocation
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-handwritten.svg" alt="Handwritten: 12.9.1 Single vs Double Allocation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-handwritten.svg" alt="Handwritten: 12.9.1 Single vs Double Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-diagram.svg" alt="Diagram: 12.9.1 Single vs Double Allocation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-diagram.svg" alt="Diagram: 12.9.1 Single vs Double Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-sticky.svg" alt="Sticky Note: 12.9.1 Single vs Double Allocation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-1-single-vs-double-allocation-sticky.svg" alt="Sticky Note: 12.9.1 Single vs Double Allocation" width="30%">
 </a>
 
 
@@ -1410,14 +1410,14 @@ std::shared_ptr<MyClass> p2(new MyClass(args));
 
 ### 12.9.2 Performance Comparison Table
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-handwritten.svg" alt="Handwritten: 12.9.2 Performance Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-handwritten.svg" alt="Handwritten: 12.9.2 Performance Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-diagram.svg" alt="Diagram: 12.9.2 Performance Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-diagram.svg" alt="Diagram: 12.9.2 Performance Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-sticky.svg" alt="Sticky Note: 12.9.2 Performance Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-2-performance-comparison-table-sticky.svg" alt="Sticky Note: 12.9.2 Performance Comparison Table" width="30%">
 </a>
 
 
@@ -1434,14 +1434,14 @@ std::shared_ptr<MyClass> p2(new MyClass(args));
 
 ### 12.9.3 The Memory Trade-Off
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-handwritten.svg" alt="Handwritten: 12.9.3 The Memory Trade-Off" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-handwritten.svg" alt="Handwritten: 12.9.3 The Memory Trade-Off" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-diagram.svg" alt="Diagram: 12.9.3 The Memory Trade-Off" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-diagram.svg" alt="Diagram: 12.9.3 The Memory Trade-Off" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-sticky.svg" alt="Sticky Note: 12.9.3 The Memory Trade-Off" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-9-3-the-memory-trade-off-sticky.svg" alt="Sticky Note: 12.9.3 The Memory Trade-Off" width="30%">
 </a>
 
 
@@ -1470,14 +1470,14 @@ sp.reset();  // Object destructor runs, memory freed
 
 ### 12.10.1 Why make_unique Was Late to C++
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-handwritten.svg" alt="Handwritten: 12.10.1 Why make_unique Was Late to C++" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-handwritten.svg" alt="Handwritten: 12.10.1 Why make_unique Was Late to C++" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-diagram.svg" alt="Diagram: 12.10.1 Why make_unique Was Late to C++" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-diagram.svg" alt="Diagram: 12.10.1 Why make_unique Was Late to C++" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-sticky.svg" alt="Sticky Note: 12.10.1 Why make_unique Was Late to C++" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-1-why-make-unique-was-late-to-c-sticky.svg" alt="Sticky Note: 12.10.1 Why make_unique Was Late to C++" width="30%">
 </a>
 
 
@@ -1485,14 +1485,14 @@ sp.reset();  // Object destructor runs, memory freed
 
 ### 12.10.2 Exception Safety
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-handwritten.svg" alt="Handwritten: 12.10.2 Exception Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-handwritten.svg" alt="Handwritten: 12.10.2 Exception Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-diagram.svg" alt="Diagram: 12.10.2 Exception Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-diagram.svg" alt="Diagram: 12.10.2 Exception Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-sticky.svg" alt="Sticky Note: 12.10.2 Exception Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-2-exception-safety-sticky.svg" alt="Sticky Note: 12.10.2 Exception Safety" width="30%">
 </a>
 
 
@@ -1511,14 +1511,14 @@ f(std::make_unique<A>(), std::make_unique<B>());
 
 ### 12.10.3 Implementation (for reference)
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-handwritten.svg" alt="Handwritten: 12.10.3 Implementation (for reference)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-handwritten.svg" alt="Handwritten: 12.10.3 Implementation (for reference)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-diagram.svg" alt="Diagram: 12.10.3 Implementation (for reference)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-diagram.svg" alt="Diagram: 12.10.3 Implementation (for reference)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-sticky.svg" alt="Sticky Note: 12.10.3 Implementation (for reference)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-10-3-implementation-for-reference-sticky.svg" alt="Sticky Note: 12.10.3 Implementation (for reference)" width="30%">
 </a>
 
 
@@ -1544,14 +1544,14 @@ Raw pointer casts (`static_cast`, `dynamic_cast`, `const_cast`, `reinterpret_cas
 
 ### 12.11.1 static_pointer_cast
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-handwritten.svg" alt="Handwritten: 12.11.1 static_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-handwritten.svg" alt="Handwritten: 12.11.1 static_pointer_cast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-diagram.svg" alt="Diagram: 12.11.1 static_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-diagram.svg" alt="Diagram: 12.11.1 static_pointer_cast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-sticky.svg" alt="Sticky Note: 12.11.1 static_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-1-static-pointer-cast-sticky.svg" alt="Sticky Note: 12.11.1 static_pointer_cast" width="30%">
 </a>
 
 
@@ -1582,14 +1582,14 @@ int main() {
 
 ### 12.11.2 dynamic_pointer_cast
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-handwritten.svg" alt="Handwritten: 12.11.2 dynamic_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-handwritten.svg" alt="Handwritten: 12.11.2 dynamic_pointer_cast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-diagram.svg" alt="Diagram: 12.11.2 dynamic_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-diagram.svg" alt="Diagram: 12.11.2 dynamic_pointer_cast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-sticky.svg" alt="Sticky Note: 12.11.2 dynamic_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-2-dynamic-pointer-cast-sticky.svg" alt="Sticky Note: 12.11.2 dynamic_pointer_cast" width="30%">
 </a>
 
 
@@ -1630,14 +1630,14 @@ Not a dog, can't fetch
 
 ### 12.11.3 const_pointer_cast
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-handwritten.svg" alt="Handwritten: 12.11.3 const_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-handwritten.svg" alt="Handwritten: 12.11.3 const_pointer_cast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-diagram.svg" alt="Diagram: 12.11.3 const_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-diagram.svg" alt="Diagram: 12.11.3 const_pointer_cast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-sticky.svg" alt="Sticky Note: 12.11.3 const_pointer_cast" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-3-const-pointer-cast-sticky.svg" alt="Sticky Note: 12.11.3 const_pointer_cast" width="30%">
 </a>
 
 
@@ -1660,14 +1660,14 @@ int main() {
 
 ### 12.11.4 Cast Behaviour Table
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-handwritten.svg" alt="Handwritten: 12.11.4 Cast Behaviour Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-handwritten.svg" alt="Handwritten: 12.11.4 Cast Behaviour Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-diagram.svg" alt="Diagram: 12.11.4 Cast Behaviour Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-diagram.svg" alt="Diagram: 12.11.4 Cast Behaviour Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-sticky.svg" alt="Sticky Note: 12.11.4 Cast Behaviour Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-11-4-cast-behaviour-table-sticky.svg" alt="Sticky Note: 12.11.4 Cast Behaviour Table" width="30%">
 </a>
 
 
@@ -1685,14 +1685,14 @@ int main() {
 
 ### 12.12.1 Motivation
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-handwritten.svg" alt="Handwritten: 12.12.1 Motivation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-handwritten.svg" alt="Handwritten: 12.12.1 Motivation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-diagram.svg" alt="Diagram: 12.12.1 Motivation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-diagram.svg" alt="Diagram: 12.12.1 Motivation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-sticky.svg" alt="Sticky Note: 12.12.1 Motivation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-1-motivation-sticky.svg" alt="Sticky Note: 12.12.1 Motivation" width="30%">
 </a>
 
 
@@ -1714,14 +1714,14 @@ ownerSet.insert(b);   // a and b share a control block — won't insert duplicat
 
 ### 12.12.2 Aliasing Constructor and owner_less
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-handwritten.svg" alt="Handwritten: 12.12.2 Aliasing Constructor and owner_less" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-handwritten.svg" alt="Handwritten: 12.12.2 Aliasing Constructor and owner_less" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-diagram.svg" alt="Diagram: 12.12.2 Aliasing Constructor and owner_less" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-diagram.svg" alt="Diagram: 12.12.2 Aliasing Constructor and owner_less" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-sticky.svg" alt="Sticky Note: 12.12.2 Aliasing Constructor and owner_less" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-12-2-aliasing-constructor-and-owner-less-sticky.svg" alt="Sticky Note: 12.12.2 Aliasing Constructor and owner_less" width="30%">
 </a>
 
 
@@ -1764,14 +1764,14 @@ std::cout << less(meta, data) << "\n";  // 0 (not less)
 
 ### Selection Decision Tree
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-handwritten.svg" alt="Handwritten: Selection Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-handwritten.svg" alt="Handwritten: Selection Decision Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-diagram.svg" alt="Diagram: Selection Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-diagram.svg" alt="Diagram: Selection Decision Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-sticky.svg" alt="Sticky Note: Selection Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/selection-decision-tree-sticky.svg" alt="Sticky Note: Selection Decision Tree" width="30%">
 </a>
 
 
@@ -1797,14 +1797,14 @@ Q: Do I need dynamic allocation?
 
 ### Ownership Spectrum
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-handwritten.svg" alt="Handwritten: Ownership Spectrum" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-handwritten.svg" alt="Handwritten: Ownership Spectrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-diagram.svg" alt="Diagram: Ownership Spectrum" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-diagram.svg" alt="Diagram: Ownership Spectrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-sticky.svg" alt="Sticky Note: Ownership Spectrum" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/ownership-spectrum-sticky.svg" alt="Sticky Note: Ownership Spectrum" width="30%">
 </a>
 
 
@@ -1819,14 +1819,14 @@ Q: Do I need dynamic allocation?
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1844,14 +1844,14 @@ Q: Do I need dynamic allocation?
 
 ### Memory Layout Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-handwritten.svg" alt="Handwritten: Memory Layout Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-handwritten.svg" alt="Handwritten: Memory Layout Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-diagram.svg" alt="Diagram: Memory Layout Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-diagram.svg" alt="Diagram: Memory Layout Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-sticky.svg" alt="Sticky Note: Memory Layout Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/memory-layout-comparison-sticky.svg" alt="Sticky Note: Memory Layout Comparison" width="30%">
 </a>
 
 
@@ -1865,14 +1865,14 @@ Q: Do I need dynamic allocation?
 
 ### shared_ptr Control Block Structure (Typical libstdc++ Layout)
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-handwritten.svg" alt="Handwritten: shared_ptr Control Block Structure (Typical libstdc++ Layout)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-handwritten.svg" alt="Handwritten: shared_ptr Control Block Structure (Typical libstdc++ Layout)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-diagram.svg" alt="Diagram: shared_ptr Control Block Structure (Typical libstdc++ Layout)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-diagram.svg" alt="Diagram: shared_ptr Control Block Structure (Typical libstdc++ Layout)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-sticky.svg" alt="Sticky Note: shared_ptr Control Block Structure (Typical libstdc++ Layout)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/shared-ptr-control-block-structure-typical-libstdc-layout-sticky.svg" alt="Sticky Note: shared_ptr Control Block Structure (Typical libstdc++ Layout)" width="30%">
 </a>
 
 
@@ -1893,14 +1893,14 @@ With `make_shared`, the managed object is appended immediately after the control
 
 ### C++17
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-handwritten.svg" alt="Handwritten: C++17" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-handwritten.svg" alt="Handwritten: C++17" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-diagram.svg" alt="Diagram: C++17" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-diagram.svg" alt="Diagram: C++17" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-sticky.svg" alt="Sticky Note: C++17" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-17-sticky.svg" alt="Sticky Note: C++17" width="30%">
 </a>
 
 - `shared_ptr<T[]>` partial specialization for arrays (NOTE: not the same as `unique_ptr<T[]>`)
@@ -1908,14 +1908,14 @@ With `make_shared`, the managed object is appended immediately after the control
 
 ### C++20
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-handwritten.svg" alt="Handwritten: C++20" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-handwritten.svg" alt="Handwritten: C++20" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-diagram.svg" alt="Diagram: C++20" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-diagram.svg" alt="Diagram: C++20" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-sticky.svg" alt="Sticky Note: C++20" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/c-20-sticky.svg" alt="Sticky Note: C++20" width="30%">
 </a>
 
 - `std::make_shared` for arrays: `auto p = std::make_shared<int[]>(10);`
@@ -1928,14 +1928,14 @@ With `make_shared`, the managed object is appended immediately after the control
 
 ### 12.16.1 Using .get() After Move
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-handwritten.svg" alt="Handwritten: 12.16.1 Using .get() After Move" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-handwritten.svg" alt="Handwritten: 12.16.1 Using .get() After Move" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-diagram.svg" alt="Diagram: 12.16.1 Using .get() After Move" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-diagram.svg" alt="Diagram: 12.16.1 Using .get() After Move" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-sticky.svg" alt="Sticky Note: 12.16.1 Using .get() After Move" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-1-using-get-after-move-sticky.svg" alt="Sticky Note: 12.16.1 Using .get() After Move" width="30%">
 </a>
 
 
@@ -1949,14 +1949,14 @@ auto moved = std::move(p);
 
 ### 12.16.2 Creating shared_ptr from Raw Pointer Twice
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-handwritten.svg" alt="Handwritten: 12.16.2 Creating shared_ptr from Raw Pointer Twice" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-handwritten.svg" alt="Handwritten: 12.16.2 Creating shared_ptr from Raw Pointer Twice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-diagram.svg" alt="Diagram: 12.16.2 Creating shared_ptr from Raw Pointer Twice" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-diagram.svg" alt="Diagram: 12.16.2 Creating shared_ptr from Raw Pointer Twice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-sticky.svg" alt="Sticky Note: 12.16.2 Creating shared_ptr from Raw Pointer Twice" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-2-creating-shared-ptr-from-raw-pointer-twice-sticky.svg" alt="Sticky Note: 12.16.2 Creating shared_ptr from Raw Pointer Twice" width="30%">
 </a>
 
 
@@ -1969,14 +1969,14 @@ std::shared_ptr<int> sp2(raw);  // UNDEFINED BEHAVIOUR!
 
 ### 12.16.3 shared_ptr to this Without enable_shared_from_this
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-handwritten.svg" alt="Handwritten: 12.16.3 shared_ptr to this Without enable_shared_from_this" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-handwritten.svg" alt="Handwritten: 12.16.3 shared_ptr to this Without enable_shared_from_this" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-diagram.svg" alt="Diagram: 12.16.3 shared_ptr to this Without enable_shared_from_this" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-diagram.svg" alt="Diagram: 12.16.3 shared_ptr to this Without enable_shared_from_this" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-sticky.svg" alt="Sticky Note: 12.16.3 shared_ptr to this Without enable_shared_from_this" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-3-shared-ptr-to-this-without-enable-shared-from-this-sticky.svg" alt="Sticky Note: 12.16.3 shared_ptr to this Without enable_shared_from_this" width="30%">
 </a>
 
 
@@ -1990,14 +1990,14 @@ struct BadExample {
 
 ### 12.16.4 weak_ptr::lock() on Expired Object
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-handwritten.svg" alt="Handwritten: 12.16.4 weak_ptr::lock() on Expired Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-handwritten.svg" alt="Handwritten: 12.16.4 weak_ptr::lock() on Expired Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-diagram.svg" alt="Diagram: 12.16.4 weak_ptr::lock() on Expired Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-diagram.svg" alt="Diagram: 12.16.4 weak_ptr::lock() on Expired Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-sticky.svg" alt="Sticky Note: 12.16.4 weak_ptr::lock() on Expired Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-4-weak-ptr-lock-on-expired-object-sticky.svg" alt="Sticky Note: 12.16.4 weak_ptr::lock() on Expired Object" width="30%">
 </a>
 
 
@@ -2010,14 +2010,14 @@ auto locked = wp.lock();   // locked is nullptr — safe, not UB
 
 ### 12.16.5 Mixing make_shared and Placement new
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-handwritten.svg" alt="Handwritten: 12.16.5 Mixing make_shared and Placement new" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-handwritten.svg" alt="Handwritten: 12.16.5 Mixing make_shared and Placement new" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-diagram.svg" alt="Diagram: 12.16.5 Mixing make_shared and Placement new" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-diagram.svg" alt="Diagram: 12.16.5 Mixing make_shared and Placement new" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-sticky.svg" alt="Sticky Note: 12.16.5 Mixing make_shared and Placement new" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-5-mixing-make-shared-and-placement-new-sticky.svg" alt="Sticky Note: 12.16.5 Mixing make_shared and Placement new" width="30%">
 </a>
 
 
@@ -2028,14 +2028,14 @@ auto locked = wp.lock();   // locked is nullptr — safe, not UB
 
 ### 12.16.6 Using shared_ptr with Objects on Stack
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-handwritten.svg" alt="Handwritten: 12.16.6 Using shared_ptr with Objects on Stack" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-handwritten.svg" alt="Handwritten: 12.16.6 Using shared_ptr with Objects on Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-diagram.svg" alt="Diagram: 12.16.6 Using shared_ptr with Objects on Stack" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-diagram.svg" alt="Diagram: 12.16.6 Using shared_ptr with Objects on Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-sticky.svg" alt="Sticky Note: 12.16.6 Using shared_ptr with Objects on Stack" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-6-using-shared-ptr-with-objects-on-stack-sticky.svg" alt="Sticky Note: 12.16.6 Using shared_ptr with Objects on Stack" width="30%">
 </a>
 
 
@@ -2046,14 +2046,14 @@ int x = 42;
 
 ### 12.16.7 shared_ptr with Incomplete Types
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-handwritten.svg" alt="Handwritten: 12.16.7 shared_ptr with Incomplete Types" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-handwritten.svg" alt="Handwritten: 12.16.7 shared_ptr with Incomplete Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-diagram.svg" alt="Diagram: 12.16.7 shared_ptr with Incomplete Types" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-diagram.svg" alt="Diagram: 12.16.7 shared_ptr with Incomplete Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-sticky.svg" alt="Sticky Note: 12.16.7 shared_ptr with Incomplete Types" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-16-7-shared-ptr-with-incomplete-types-sticky.svg" alt="Sticky Note: 12.16.7 shared_ptr with Incomplete Types" width="30%">
 </a>
 
 
@@ -2074,14 +2074,14 @@ struct Holder {
 
 ### Q1: When would you choose unique_ptr over shared_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-handwritten.svg" alt="Handwritten: When would you choose unique_ptr over shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-handwritten.svg" alt="Handwritten: When would you choose unique_ptr over shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-diagram.svg" alt="Diagram: When would you choose unique_ptr over shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-diagram.svg" alt="Diagram: When would you choose unique_ptr over shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-sticky.svg" alt="Sticky Note: When would you choose unique_ptr over shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/when-would-you-choose-unique-ptr-over-shared-ptr-sticky.svg" alt="Sticky Note: When would you choose unique_ptr over shared_ptr?" width="30%">
 </a>
 
 
@@ -2097,14 +2097,14 @@ struct Holder {
 
 ### Q2: How does shared_ptr know when to delete the object?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-handwritten.svg" alt="Handwritten: How does shared_ptr know when to delete the object?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-handwritten.svg" alt="Handwritten: How does shared_ptr know when to delete the object?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-diagram.svg" alt="Diagram: How does shared_ptr know when to delete the object?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-diagram.svg" alt="Diagram: How does shared_ptr know when to delete the object?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-sticky.svg" alt="Sticky Note: How does shared_ptr know when to delete the object?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-shared-ptr-know-when-to-delete-the-object-sticky.svg" alt="Sticky Note: How does shared_ptr know when to delete the object?" width="30%">
 </a>
 
 
@@ -2130,14 +2130,14 @@ class shared_ptr {
 
 ### Q3: What is the difference between reset() and release() on unique_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-handwritten.svg" alt="Handwritten: What is the difference between reset() and release() on unique_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-handwritten.svg" alt="Handwritten: What is the difference between reset() and release() on unique_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-diagram.svg" alt="Diagram: What is the difference between reset() and release() on unique_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-diagram.svg" alt="Diagram: What is the difference between reset() and release() on unique_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-sticky.svg" alt="Sticky Note: What is the difference between reset() and release() on unique_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-difference-between-reset-and-release-on-unique-ptr-sticky.svg" alt="Sticky Note: What is the difference between reset() and release() on unique_ptr?" width="30%">
 </a>
 
 
@@ -2154,14 +2154,14 @@ delete raw;               // caller must delete
 
 ### Q4: How does weak_ptr::lock() prevent dangling access?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-handwritten.svg" alt="Handwritten: How does weak_ptr::lock() prevent dangling access?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-handwritten.svg" alt="Handwritten: How does weak_ptr::lock() prevent dangling access?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-diagram.svg" alt="Diagram: How does weak_ptr::lock() prevent dangling access?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-diagram.svg" alt="Diagram: How does weak_ptr::lock() prevent dangling access?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-sticky.svg" alt="Sticky Note: How does weak_ptr::lock() prevent dangling access?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-weak-ptr-lock-prevent-dangling-access-sticky.svg" alt="Sticky Note: How does weak_ptr::lock() prevent dangling access?" width="30%">
 </a>
 
 
@@ -2181,14 +2181,14 @@ shared_ptr<T> lock() {
 
 ### Q5: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared.
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-handwritten.svg" alt="Handwritten: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-handwritten.svg" alt="Handwritten: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-diagram.svg" alt="Diagram: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-diagram.svg" alt="Diagram: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-sticky.svg" alt="Sticky Note: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/explain-the-n-1-allocation-problem-with-shared-ptr-new-t-vs-make-shared-sticky.svg" alt="Sticky Note: Explain the N+1 allocation problem with shared_ptr(new T) vs make_shared." width="30%">
 </a>
 
 
@@ -2214,14 +2214,14 @@ auto p = std::make_shared<LargeObj>(args);
 
 ### Q6: What is the aliasing constructor of shared_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-handwritten.svg" alt="Handwritten: What is the aliasing constructor of shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-handwritten.svg" alt="Handwritten: What is the aliasing constructor of shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-diagram.svg" alt="Diagram: What is the aliasing constructor of shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-diagram.svg" alt="Diagram: What is the aliasing constructor of shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-sticky.svg" alt="Sticky Note: What is the aliasing constructor of shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/what-is-the-aliasing-constructor-of-shared-ptr-sticky.svg" alt="Sticky Note: What is the aliasing constructor of shared_ptr?" width="30%">
 </a>
 
 
@@ -2238,14 +2238,14 @@ This is used to point to sub-objects while keeping the parent alive. `owner_less
 
 ### Q7: How does enable_shared_from_this work internally?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-handwritten.svg" alt="Handwritten: How does enable_shared_from_this work internally?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-handwritten.svg" alt="Handwritten: How does enable_shared_from_this work internally?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-diagram.svg" alt="Diagram: How does enable_shared_from_this work internally?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-diagram.svg" alt="Diagram: How does enable_shared_from_this work internally?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-sticky.svg" alt="Sticky Note: How does enable_shared_from_this work internally?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/how-does-enable-shared-from-this-work-internally-sticky.svg" alt="Sticky Note: How does enable_shared_from_this work internally?" width="30%">
 </a>
 
 
@@ -2275,14 +2275,14 @@ shared_ptr<U>::shared_ptr(U* ptr) {
 
 ### Q8: Can you use unique_ptr with STL containers? What about shared_ptr?
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-handwritten.svg" alt="Handwritten: Can you use unique_ptr with STL containers? What about shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-handwritten.svg" alt="Handwritten: Can you use unique_ptr with STL containers? What about shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-diagram.svg" alt="Diagram: Can you use unique_ptr with STL containers? What about shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-diagram.svg" alt="Diagram: Can you use unique_ptr with STL containers? What about shared_ptr?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-sticky.svg" alt="Sticky Note: Can you use unique_ptr with STL containers? What about shared_ptr?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/can-you-use-unique-ptr-with-stl-containers-what-about-shared-ptr-sticky.svg" alt="Sticky Note: Can you use unique_ptr with STL containers? What about shared_ptr?" width="30%">
 </a>
 
 
@@ -2311,14 +2311,14 @@ auto copy = textureCache[0];  // ref_count becomes 2
 
 ### 12.18.1 Chromium / Blink Engine
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-handwritten.svg" alt="Handwritten: 12.18.1 Chromium / Blink Engine" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-handwritten.svg" alt="Handwritten: 12.18.1 Chromium / Blink Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-diagram.svg" alt="Diagram: 12.18.1 Chromium / Blink Engine" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-diagram.svg" alt="Diagram: 12.18.1 Chromium / Blink Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-sticky.svg" alt="Sticky Note: 12.18.1 Chromium / Blink Engine" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-1-chromium-blink-engine-sticky.svg" alt="Sticky Note: 12.18.1 Chromium / Blink Engine" width="30%">
 </a>
 
 
@@ -2326,14 +2326,14 @@ Chromium uses a custom smart pointer hierarchy (`scoped_refptr` for reference-co
 
 ### 12.18.2 LLVM / Clang
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-handwritten.svg" alt="Handwritten: 12.18.2 LLVM / Clang" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-handwritten.svg" alt="Handwritten: 12.18.2 LLVM / Clang" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-diagram.svg" alt="Diagram: 12.18.2 LLVM / Clang" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-diagram.svg" alt="Diagram: 12.18.2 LLVM / Clang" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-sticky.svg" alt="Sticky Note: 12.18.2 LLVM / Clang" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-2-llvm-clang-sticky.svg" alt="Sticky Note: 12.18.2 LLVM / Clang" width="30%">
 </a>
 
 
@@ -2341,14 +2341,14 @@ LLVM uses `std::unique_ptr` extensively for ownership of AST nodes, passes, and 
 
 ### 12.18.3 Boost.Asio (Networking)
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-handwritten.svg" alt="Handwritten: 12.18.3 Boost.Asio (Networking)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-handwritten.svg" alt="Handwritten: 12.18.3 Boost.Asio (Networking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-diagram.svg" alt="Diagram: 12.18.3 Boost.Asio (Networking)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-diagram.svg" alt="Diagram: 12.18.3 Boost.Asio (Networking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-sticky.svg" alt="Sticky Note: 12.18.3 Boost.Asio (Networking)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-3-boost-asio-networking-sticky.svg" alt="Sticky Note: 12.18.3 Boost.Asio (Networking)" width="30%">
 </a>
 
 
@@ -2376,14 +2376,14 @@ The `shared_from_this()` call ensures the session stays alive during asynchronou
 
 ### 12.18.4 Game Engines (Unreal Engine, Unity)
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-handwritten.svg" alt="Handwritten: 12.18.4 Game Engines (Unreal Engine, Unity)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-handwritten.svg" alt="Handwritten: 12.18.4 Game Engines (Unreal Engine, Unity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-diagram.svg" alt="Diagram: 12.18.4 Game Engines (Unreal Engine, Unity)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-diagram.svg" alt="Diagram: 12.18.4 Game Engines (Unreal Engine, Unity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-sticky.svg" alt="Sticky Note: 12.18.4 Game Engines (Unreal Engine, Unity)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-4-game-engines-unreal-engine-unity-sticky.svg" alt="Sticky Note: 12.18.4 Game Engines (Unreal Engine, Unity)" width="30%">
 </a>
 
 
@@ -2393,14 +2393,14 @@ The `shared_from_this()` call ensures the session stays alive during asynchronou
 
 ### 12.18.5 C++ Standard Library Implementation (libstdc++)
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-handwritten.svg" alt="Handwritten: 12.18.5 C++ Standard Library Implementation (libstdc++)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-handwritten.svg" alt="Handwritten: 12.18.5 C++ Standard Library Implementation (libstdc++)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-diagram.svg" alt="Diagram: 12.18.5 C++ Standard Library Implementation (libstdc++)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-diagram.svg" alt="Diagram: 12.18.5 C++ Standard Library Implementation (libstdc++)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-sticky.svg" alt="Sticky Note: 12.18.5 C++ Standard Library Implementation (libstdc++)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/12-18-5-c-standard-library-implementation-libstdc-sticky.svg" alt="Sticky Note: 12.18.5 C++ Standard Library Implementation (libstdc++)" width="30%">
 </a>
 
 
@@ -2471,14 +2471,14 @@ Always prefer `make_unique` and `make_shared`. Use `weak_ptr` to break cycles. U
 
 ### Further Reading
 
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-handwritten.svg" alt="Handwritten: Further Reading" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-handwritten.svg" alt="Handwritten: Further Reading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-diagram.svg" alt="Diagram: Further Reading" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-diagram.svg" alt="Diagram: Further Reading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-sticky.svg" alt="Sticky Note: Further Reading" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/12-smart-pointers/further-reading-sticky.svg" alt="Sticky Note: Further Reading" width="30%">
 </a>
 
 - [C++ Core Guidelines: Smart pointer rules (R.20-R.37)](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#r-resource-management)

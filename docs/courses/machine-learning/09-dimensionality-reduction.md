@@ -50,14 +50,14 @@ flowchart LR
 
 ### The Curse of Dimensionality
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-handwritten.svg" alt="Handwritten: The Curse of Dimensionality" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-handwritten.svg" alt="Handwritten: The Curse of Dimensionality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-diagram.svg" alt="Diagram: The Curse of Dimensionality" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-diagram.svg" alt="Diagram: The Curse of Dimensionality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-sticky.svg" alt="Sticky Note: The Curse of Dimensionality" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/the-curse-of-dimensionality-sticky.svg" alt="Sticky Note: The Curse of Dimensionality" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ As the number of features (dimensions) increases, the volume of the feature spac
 
 ### Principal Component Analysis (PCA)
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-handwritten.svg" alt="Handwritten: Principal Component Analysis (PCA)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-handwritten.svg" alt="Handwritten: Principal Component Analysis (PCA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-diagram.svg" alt="Diagram: Principal Component Analysis (PCA)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-diagram.svg" alt="Diagram: Principal Component Analysis (PCA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-sticky.svg" alt="Sticky Note: Principal Component Analysis (PCA)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/principal-component-analysis-pca-sticky.svg" alt="Sticky Note: Principal Component Analysis (PCA)" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ $$
 
 ### Explained Variance Ratio
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-handwritten.svg" alt="Handwritten: Explained Variance Ratio" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-handwritten.svg" alt="Handwritten: Explained Variance Ratio" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-diagram.svg" alt="Diagram: Explained Variance Ratio" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-diagram.svg" alt="Diagram: Explained Variance Ratio" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-sticky.svg" alt="Sticky Note: Explained Variance Ratio" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/explained-variance-ratio-sticky.svg" alt="Sticky Note: Explained Variance Ratio" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ flowchart LR
 
 ### SVD for PCA
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-handwritten.svg" alt="Handwritten: SVD for PCA" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-handwritten.svg" alt="Handwritten: SVD for PCA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-diagram.svg" alt="Diagram: SVD for PCA" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-diagram.svg" alt="Diagram: SVD for PCA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-sticky.svg" alt="Sticky Note: SVD for PCA" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/svd-for-pca-sticky.svg" alt="Sticky Note: SVD for PCA" width="30%">
 </a>
 
 
@@ -214,14 +214,14 @@ Thus:
 
 ### t-SNE (t-Distributed Stochastic Neighbor Embedding)
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-handwritten.svg" alt="Handwritten: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-handwritten.svg" alt="Handwritten: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-diagram.svg" alt="Diagram: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-diagram.svg" alt="Diagram: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-sticky.svg" alt="Sticky Note: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/t-sne-t-distributed-stochastic-neighbor-embedding-sticky.svg" alt="Sticky Note: t-SNE (t-Distributed Stochastic Neighbor Embedding)" width="30%">
 </a>
 
 
@@ -276,14 +276,14 @@ flowchart TB
 
 ### UMAP (Uniform Manifold Approximation and Projection)
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-handwritten.svg" alt="Handwritten: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-handwritten.svg" alt="Handwritten: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-diagram.svg" alt="Diagram: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-diagram.svg" alt="Diagram: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-sticky.svg" alt="Sticky Note: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/umap-uniform-manifold-approximation-and-projection-sticky.svg" alt="Sticky Note: UMAP (Uniform Manifold Approximation and Projection)" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ The first term encourages preserving the presence of edges (local structure), wh
 
 ### Feature Selection Methods
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-handwritten.svg" alt="Handwritten: Feature Selection Methods" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-handwritten.svg" alt="Handwritten: Feature Selection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-diagram.svg" alt="Diagram: Feature Selection Methods" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-diagram.svg" alt="Diagram: Feature Selection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-sticky.svg" alt="Sticky Note: Feature Selection Methods" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/feature-selection-methods-sticky.svg" alt="Sticky Note: Feature Selection Methods" width="30%">
 </a>
 
 
@@ -375,14 +375,14 @@ flowchart LR
 
 ### Autoencoders for Non-linear Dimensionality Reduction
 
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-handwritten.svg" alt="Handwritten: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-handwritten.svg" alt="Handwritten: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-diagram.svg" alt="Diagram: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-diagram.svg" alt="Diagram: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-sticky.svg" alt="Sticky Note: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/09-dimensionality-reduction/autoencoders-for-non-linear-dimensionality-reduction-sticky.svg" alt="Sticky Note: Autoencoders for Non-linear Dimensionality Reduction" width="30%">
 </a>
 
 

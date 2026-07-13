@@ -32,56 +32,56 @@
 
 ### १. वैखरी (बाह्य ध्वनि)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: १. वैखरी (बाह्य ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: १. वैखरी (बाह्य ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: १. वैखरी (बाह्य ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: १. वैखरी (बाह्य ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: १. वैखरी (बाह्य ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: १. वैखरी (बाह्य ध्वनि)" width="30%">
 </a>
 
 गले से निकली हुई ध्वनि — जो हम बोलते हैं, गाते हैं, मंत्र का उच्चारण करते हैं।
 
 ### २. मध्यमा (मानसिक ध्वनि)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: २. मध्यमा (मानसिक ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: २. मध्यमा (मानसिक ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: २. मध्यमा (मानसिक ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: २. मध्यमा (मानसिक ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: २. मध्यमा (मानसिक ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: २. मध्यमा (मानसिक ध्वनि)" width="30%">
 </a>
 
 बिना उच्चारण के मन में सुनाई देने वाली ध्वनि।
 
 ### ३. पश्यन्ती (दृश्य ध्वनि)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ३. पश्यन्ती (दृश्य ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ३. पश्यन्ती (दृश्य ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ३. पश्यन्ती (दृश्य ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ३. पश्यन्ती (दृश्य ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ३. पश्यन्ती (दृश्य ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ३. पश्यन्ती (दृश्य ध्वनि)" width="30%">
 </a>
 
 ध्वनि का सूक्ष्म रूप — जहाँ ध्वनि दिखाई देने लगती है।
 
 ### ४. परा (मूल ध्वनि)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ४. परा (मूल ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ४. परा (मूल ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ४. परा (मूल ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ४. परा (मूल ध्वनि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ४. परा (मूल ध्वनि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ४. परा (मूल ध्वनि)" width="30%">
 </a>
 
 सभी ध्वनियों का स्रोत — मौन। यह ध्वनि का अभाव नहीं, बल्कि ध्वनि का मूल है।
@@ -253,14 +253,14 @@
 
 ### ओशो का मंत्र और जागरूकता पर गहरा अंतर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ओशो का मंत्र और जागरूकता पर गहरा अंतर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ओशो का मंत्र और जागरूकता पर गहरा अंतर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ओशो का मंत्र और जागरूकता पर गहरा अंतर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ओशो का मंत्र और जागरूकता पर गहरा अंतर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ओशो का मंत्र और जागरूकता पर गहरा अंतर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ओशो का मंत्र और जागरूकता पर गहरा अंतर" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ flowchart TB
 
 ### ओशो का निष्कर्ष — ध्वनि से मौन तक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ओशो का निष्कर्ष — ध्वनि से मौन तक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: ओशो का निष्कर्ष — ध्वनि से मौन तक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ओशो का निष्कर्ष — ध्वनि से मौन तक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: ओशो का निष्कर्ष — ध्वनि से मौन तक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ओशो का निष्कर्ष — ध्वनि से मौन तक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: ओशो का निष्कर्ष — ध्वनि से मौन तक" width="30%">
 </a>
 
 
@@ -540,14 +540,14 @@ omSession.start();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 **ओशो के अनुसार ॐ क्या है?**
@@ -559,14 +559,14 @@ omSession.start();
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 **ध्वनि के चार स्तर कौन-से हैं?**
@@ -578,14 +578,14 @@ omSession.start();
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 **ओशो के अनुसार मंत्र को कैसे जपना चाहिए?**
@@ -597,14 +597,14 @@ omSession.start();
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 **सोऽहम् मंत्र का क्या अर्थ है?**
@@ -616,14 +616,14 @@ omSession.start();
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 **अनाहत नाद क्या है — ओशो के अनुसार?**
@@ -635,14 +635,14 @@ omSession.start();
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 **सर्व ध्वनि समत्व तकनीक में क्या करना है?**
@@ -654,14 +654,14 @@ omSession.start();
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 **स्फोट ध्यान में किस क्षण को पकड़ने का प्रयास किया जाता है?**
@@ -673,14 +673,14 @@ omSession.start();
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 **ओशो के अनुसार मौन क्या है?**
@@ -692,14 +692,14 @@ omSession.start();
 
 ### प्रश्न ९
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
 </a>
 
 **प्राण ध्वनि में श्वास के साथ कौन-सा मंत्र जुड़ा है — ओशो के अनुसार?**
@@ -711,14 +711,14 @@ omSession.start();
 
 ### प्रश्न १०
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
 </a>
 
 **ओशो के अनुसार ॐ का 'अ', 'उ', 'म्' तीन भाग किन अवस्थाओं के प्रतीक हैं?**
@@ -732,14 +732,14 @@ omSession.start();
 
 ### उत्तर कुंजी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
 </a>
 
 
@@ -762,14 +762,14 @@ omSession.start();
 
 ### अभ्यास १: १०८ बार ॐ — ओशो शैली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास १: १०८ बार ॐ — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास १: १०८ बार ॐ — ओशो शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास १: १०८ बार ॐ — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास १: १०८ बार ॐ — ओशो शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास १: १०८ बार ॐ — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास १: १०८ बार ॐ — ओशो शैली" width="30%">
 </a>
 
 
@@ -777,14 +777,14 @@ omSession.start();
 
 ### अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास २: सोऽहम् — २१ मिनट श्वास मंत्र" width="30%">
 </a>
 
 
@@ -792,14 +792,14 @@ omSession.start();
 
 ### अभ्यास ३: अनाहत नाद — ११ मिनट
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ३: अनाहत नाद — ११ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ३: अनाहत नाद — ११ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ३: अनाहत नाद — ११ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ३: अनाहत नाद — ११ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ३: अनाहत नाद — ११ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ३: अनाहत नाद — ११ मिनट" width="30%">
 </a>
 
 
@@ -807,14 +807,14 @@ omSession.start();
 
 ### अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ४: सर्व ध्वनि समत्व — पूरे दिन का प्रयोग" width="30%">
 </a>
 
 
@@ -822,14 +822,14 @@ omSession.start();
 
 ### अभ्यास ५: TypeScript मंत्र टाइमर विस्तार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript मंत्र टाइमर विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript मंत्र टाइमर विस्तार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript मंत्र टाइमर विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript मंत्र टाइमर विस्तार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript मंत्र टाइमर विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript मंत्र टाइमर विस्तार" width="30%">
 </a>
 
 
@@ -837,14 +837,14 @@ omSession.start();
 
 ### अभ्यास ६: चारों स्तरों पर एक मंत्र
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ६: चारों स्तरों पर एक मंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ६: चारों स्तरों पर एक मंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ६: चारों स्तरों पर एक मंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ६: चारों स्तरों पर एक मंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ६: चारों स्तरों पर एक मंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ६: चारों स्तरों पर एक मंत्र" width="30%">
 </a>
 
 
@@ -852,14 +852,14 @@ omSession.start();
 
 ### अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/07-dhwani-nad/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): महामंत्र सत्र — ११०८ बार" width="30%">
 </a>
 
 

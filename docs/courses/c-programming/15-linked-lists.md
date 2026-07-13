@@ -17,14 +17,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -58,14 +58,14 @@ flowchart LR
 
 ### Concept
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ A linked list is a sequence of **nodes** where each node contains data and a poi
 
 ### Real-World Analogy: Treasure Hunt
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-handwritten.svg" alt="Handwritten: Real-World Analogy: Treasure Hunt" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-handwritten.svg" alt="Handwritten: Real-World Analogy: Treasure Hunt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-diagram.svg" alt="Diagram: Real-World Analogy: Treasure Hunt" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-diagram.svg" alt="Diagram: Real-World Analogy: Treasure Hunt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-sticky.svg" alt="Sticky Note: Real-World Analogy: Treasure Hunt" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-treasure-hunt-sticky.svg" alt="Sticky Note: Real-World Analogy: Treasure Hunt" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ You start at the first clue card (head). Read the piece of treasure, then follow
 
 ### Structure Definition
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-handwritten.svg" alt="Handwritten: Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-handwritten.svg" alt="Handwritten: Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-diagram.svg" alt="Diagram: Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-diagram.svg" alt="Diagram: Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-sticky.svg" alt="Sticky Note: Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-definition-sticky.svg" alt="Sticky Note: Structure Definition" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ typedef struct node {
 
 ### Memory Layout
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" alt="Handwritten: Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" alt="Handwritten: Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" alt="Diagram: Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" alt="Diagram: Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" alt="Sticky Note: Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" alt="Sticky Note: Memory Layout" width="30%">
 </a>
 
 
@@ -141,14 +141,14 @@ Node (16 bytes on 64-bit)
 
 ### Pointer Diagram
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
 </a>
 
 
@@ -160,14 +160,14 @@ head ───→ ┌────┬──────┐    ┌────┬�
 
 ### Key Invariant
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-handwritten.svg" alt="Handwritten: Key Invariant" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-handwritten.svg" alt="Handwritten: Key Invariant" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-diagram.svg" alt="Diagram: Key Invariant" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-diagram.svg" alt="Diagram: Key Invariant" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-sticky.svg" alt="Sticky Note: Key Invariant" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/key-invariant-sticky.svg" alt="Sticky Note: Key Invariant" width="30%">
 </a>
 
 
@@ -179,14 +179,14 @@ head ───→ ┌────┬──────┐    ┌────┬�
 
 ### 15.2.1 Creating a Node
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-handwritten.svg" alt="Handwritten: 15.2.1 Creating a Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-handwritten.svg" alt="Handwritten: 15.2.1 Creating a Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-diagram.svg" alt="Diagram: 15.2.1 Creating a Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-diagram.svg" alt="Diagram: 15.2.1 Creating a Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-sticky.svg" alt="Sticky Note: 15.2.1 Creating a Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-1-creating-a-node-sticky.svg" alt="Sticky Note: 15.2.1 Creating a Node" width="30%">
 </a>
 
 
@@ -265,14 +265,14 @@ Node *create_node(int value)
 
 ### 15.2.2 Traversal
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-handwritten.svg" alt="Handwritten: 15.2.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-handwritten.svg" alt="Handwritten: 15.2.2 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-diagram.svg" alt="Diagram: 15.2.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-diagram.svg" alt="Diagram: 15.2.2 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-sticky.svg" alt="Sticky Note: 15.2.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-2-traversal-sticky.svg" alt="Sticky Note: 15.2.2 Traversal" width="30%">
 </a>
 
 
@@ -341,14 +341,14 @@ void print_list(const Node *head)
 
 ### 15.2.3 Insertion
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-handwritten.svg" alt="Handwritten: 15.2.3 Insertion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-handwritten.svg" alt="Handwritten: 15.2.3 Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-diagram.svg" alt="Diagram: 15.2.3 Insertion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-diagram.svg" alt="Diagram: 15.2.3 Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-sticky.svg" alt="Sticky Note: 15.2.3 Insertion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-3-insertion-sticky.svg" alt="Sticky Note: 15.2.3 Insertion" width="30%">
 </a>
 
 
@@ -652,14 +652,14 @@ Result: [10 → 20 → 25 → 30 → NULL]
 
 ### 15.2.4 Deletion
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-handwritten.svg" alt="Handwritten: 15.2.4 Deletion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-handwritten.svg" alt="Handwritten: 15.2.4 Deletion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-diagram.svg" alt="Diagram: 15.2.4 Deletion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-diagram.svg" alt="Diagram: 15.2.4 Deletion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-sticky.svg" alt="Sticky Note: 15.2.4 Deletion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-4-deletion-sticky.svg" alt="Sticky Note: 15.2.4 Deletion" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ Node *delete_at(Node *head, int position)
 
 ### 15.2.5 Search
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-handwritten.svg" alt="Handwritten: 15.2.5 Search" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-handwritten.svg" alt="Handwritten: 15.2.5 Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-diagram.svg" alt="Diagram: 15.2.5 Search" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-diagram.svg" alt="Diagram: 15.2.5 Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-sticky.svg" alt="Sticky Note: 15.2.5 Search" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-5-search-sticky.svg" alt="Sticky Note: 15.2.5 Search" width="30%">
 </a>
 
 
@@ -909,14 +909,14 @@ Node *search_node(Node *head, int target)
 
 ### 15.2.6 Reverse (Iterative)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-handwritten.svg" alt="Handwritten: 15.2.6 Reverse (Iterative)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-handwritten.svg" alt="Handwritten: 15.2.6 Reverse (Iterative)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-diagram.svg" alt="Diagram: 15.2.6 Reverse (Iterative)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-diagram.svg" alt="Diagram: 15.2.6 Reverse (Iterative)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-sticky.svg" alt="Sticky Note: 15.2.6 Reverse (Iterative)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-6-reverse-iterative-sticky.svg" alt="Sticky Note: 15.2.6 Reverse (Iterative)" width="30%">
 </a>
 
 
@@ -1026,14 +1026,14 @@ Node *reverse_iterative(Node *head)
 
 ### 15.2.7 Reverse (Recursive)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-handwritten.svg" alt="Handwritten: 15.2.7 Reverse (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-handwritten.svg" alt="Handwritten: 15.2.7 Reverse (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-diagram.svg" alt="Diagram: 15.2.7 Reverse (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-diagram.svg" alt="Diagram: 15.2.7 Reverse (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-sticky.svg" alt="Sticky Note: 15.2.7 Reverse (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-7-reverse-recursive-sticky.svg" alt="Sticky Note: 15.2.7 Reverse (Recursive)" width="30%">
 </a>
 
 
@@ -1131,14 +1131,14 @@ Node *reverse_recursive(Node *head)
 
 ### 15.2.8 Find Middle (Slow/Fast Pointer)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-handwritten.svg" alt="Handwritten: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-handwritten.svg" alt="Handwritten: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-diagram.svg" alt="Diagram: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-diagram.svg" alt="Diagram: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-sticky.svg" alt="Sticky Note: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-8-find-middle-slow-fast-pointer-sticky.svg" alt="Sticky Note: 15.2.8 Find Middle (Slow/Fast Pointer)" width="30%">
 </a>
 
 
@@ -1223,14 +1223,14 @@ Node *find_middle(Node *head)
 
 ### 15.2.9 Detect Loop (Floyd's Cycle Detection)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-handwritten.svg" alt="Handwritten: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-handwritten.svg" alt="Handwritten: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-diagram.svg" alt="Diagram: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-diagram.svg" alt="Diagram: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-sticky.svg" alt="Sticky Note: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-9-detect-loop-floyd-s-cycle-detection-sticky.svg" alt="Sticky Note: 15.2.9 Detect Loop (Floyd's Cycle Detection)" width="30%">
 </a>
 
 
@@ -1333,14 +1333,14 @@ Node *find_loop_start(Node *head)
 
 ### 15.2.10 Merge Two Sorted Lists
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-handwritten.svg" alt="Handwritten: 15.2.10 Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-handwritten.svg" alt="Handwritten: 15.2.10 Merge Two Sorted Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-diagram.svg" alt="Diagram: 15.2.10 Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-diagram.svg" alt="Diagram: 15.2.10 Merge Two Sorted Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-sticky.svg" alt="Sticky Note: 15.2.10 Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-10-merge-two-sorted-lists-sticky.svg" alt="Sticky Note: 15.2.10 Merge Two Sorted Lists" width="30%">
 </a>
 
 
@@ -1457,14 +1457,14 @@ Node *merge_sorted_iterative(Node *a, Node *b)
 
 ### 15.2.11 Complete Singly Linked List Driver
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-handwritten.svg" alt="Handwritten: 15.2.11 Complete Singly Linked List Driver" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-handwritten.svg" alt="Handwritten: 15.2.11 Complete Singly Linked List Driver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-diagram.svg" alt="Diagram: 15.2.11 Complete Singly Linked List Driver" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-diagram.svg" alt="Diagram: 15.2.11 Complete Singly Linked List Driver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-sticky.svg" alt="Sticky Note: 15.2.11 Complete Singly Linked List Driver" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-2-11-complete-singly-linked-list-driver-sticky.svg" alt="Sticky Note: 15.2.11 Complete Singly Linked List Driver" width="30%">
 </a>
 
 
@@ -1604,14 +1604,14 @@ Middle: 20
 
 ### Singly Linked List — Operations Summary Table
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-handwritten.svg" alt="Handwritten: Singly Linked List — Operations Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-handwritten.svg" alt="Handwritten: Singly Linked List — Operations Summary Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-diagram.svg" alt="Diagram: Singly Linked List — Operations Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-diagram.svg" alt="Diagram: Singly Linked List — Operations Summary Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-sticky.svg" alt="Sticky Note: Singly Linked List — Operations Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-operations-summary-table-sticky.svg" alt="Sticky Note: Singly Linked List — Operations Summary Table" width="30%">
 </a>
 
 
@@ -1638,14 +1638,14 @@ Middle: 20
 
 ### Singly Linked List — Edge Cases Matrix
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-handwritten.svg" alt="Handwritten: Singly Linked List — Edge Cases Matrix" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-handwritten.svg" alt="Handwritten: Singly Linked List — Edge Cases Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-diagram.svg" alt="Diagram: Singly Linked List — Edge Cases Matrix" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-diagram.svg" alt="Diagram: Singly Linked List — Edge Cases Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-sticky.svg" alt="Sticky Note: Singly Linked List — Edge Cases Matrix" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/singly-linked-list-edge-cases-matrix-sticky.svg" alt="Sticky Note: Singly Linked List — Edge Cases Matrix" width="30%">
 </a>
 
 
@@ -1666,14 +1666,14 @@ Middle: 20
 
 ### Concept
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
 </a>
 
 
@@ -1681,14 +1681,14 @@ Each node has two pointers: `prev` (previous node) and `next` (next node). This 
 
 ### Real-World Analogy: Two-Way Street
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-handwritten.svg" alt="Handwritten: Real-World Analogy: Two-Way Street" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-handwritten.svg" alt="Handwritten: Real-World Analogy: Two-Way Street" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-diagram.svg" alt="Diagram: Real-World Analogy: Two-Way Street" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-diagram.svg" alt="Diagram: Real-World Analogy: Two-Way Street" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-sticky.svg" alt="Sticky Note: Real-World Analogy: Two-Way Street" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-two-way-street-sticky.svg" alt="Sticky Note: Real-World Analogy: Two-Way Street" width="30%">
 </a>
 
 
@@ -1696,14 +1696,14 @@ A doubly linked list is like a street where each house has signs pointing both t
 
 ### Structure
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
 </a>
 
 
@@ -1717,14 +1717,14 @@ typedef struct dnode {
 
 ### Memory Layout
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" alt="Handwritten: Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-handwritten.svg" alt="Handwritten: Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" alt="Diagram: Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-diagram.svg" alt="Diagram: Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" alt="Sticky Note: Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-layout-sticky.svg" alt="Sticky Note: Memory Layout" width="30%">
 </a>
 
 
@@ -1738,14 +1738,14 @@ DNode (24 bytes on 64-bit)
 
 ### Pointer Diagram
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
 </a>
 
 
@@ -1759,14 +1759,14 @@ NULL ←──┌────┬─────┬──────┐    ┌�
 
 ### 15.3.1 Create Node
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-handwritten.svg" alt="Handwritten: 15.3.1 Create Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-handwritten.svg" alt="Handwritten: 15.3.1 Create Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-diagram.svg" alt="Diagram: 15.3.1 Create Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-diagram.svg" alt="Diagram: 15.3.1 Create Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-sticky.svg" alt="Sticky Note: 15.3.1 Create Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-1-create-node-sticky.svg" alt="Sticky Note: 15.3.1 Create Node" width="30%">
 </a>
 
 
@@ -1785,14 +1785,14 @@ DNode *create_dnode(int value)
 
 ### 15.3.2 Insert at Beginning
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-handwritten.svg" alt="Handwritten: 15.3.2 Insert at Beginning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-handwritten.svg" alt="Handwritten: 15.3.2 Insert at Beginning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-diagram.svg" alt="Diagram: 15.3.2 Insert at Beginning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-diagram.svg" alt="Diagram: 15.3.2 Insert at Beginning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-sticky.svg" alt="Sticky Note: 15.3.2 Insert at Beginning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-2-insert-at-beginning-sticky.svg" alt="Sticky Note: 15.3.2 Insert at Beginning" width="30%">
 </a>
 
 
@@ -1837,14 +1837,14 @@ Result: [5 &lt;-> 10 <-&gt; 20 &lt;-> NULL]
 
 ### 15.3.3 Insert at End
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-handwritten.svg" alt="Handwritten: 15.3.3 Insert at End" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-handwritten.svg" alt="Handwritten: 15.3.3 Insert at End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-diagram.svg" alt="Diagram: 15.3.3 Insert at End" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-diagram.svg" alt="Diagram: 15.3.3 Insert at End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-sticky.svg" alt="Sticky Note: 15.3.3 Insert at End" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-3-insert-at-end-sticky.svg" alt="Sticky Note: 15.3.3 Insert at End" width="30%">
 </a>
 
 
@@ -1873,14 +1873,14 @@ DNode *insert_end(DNode *head, int value)
 
 ### 15.3.4 Delete Node
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-handwritten.svg" alt="Handwritten: 15.3.4 Delete Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-handwritten.svg" alt="Handwritten: 15.3.4 Delete Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-diagram.svg" alt="Diagram: 15.3.4 Delete Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-diagram.svg" alt="Diagram: 15.3.4 Delete Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-sticky.svg" alt="Sticky Note: 15.3.4 Delete Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-4-delete-node-sticky.svg" alt="Sticky Note: 15.3.4 Delete Node" width="30%">
 </a>
 
 
@@ -1993,14 +1993,14 @@ DNode *delete_node(DNode *head, int value)
 
 ### 15.3.5 Forward and Backward Traversal
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-handwritten.svg" alt="Handwritten: 15.3.5 Forward and Backward Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-handwritten.svg" alt="Handwritten: 15.3.5 Forward and Backward Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-diagram.svg" alt="Diagram: 15.3.5 Forward and Backward Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-diagram.svg" alt="Diagram: 15.3.5 Forward and Backward Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-sticky.svg" alt="Sticky Note: 15.3.5 Forward and Backward Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-5-forward-and-backward-traversal-sticky.svg" alt="Sticky Note: 15.3.5 Forward and Backward Traversal" width="30%">
 </a>
 
 
@@ -2026,14 +2026,14 @@ void print_backward(const DNode *tail)
 
 ### 15.3.6 Complete Doubly Linked List Example
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-handwritten.svg" alt="Handwritten: 15.3.6 Complete Doubly Linked List Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-handwritten.svg" alt="Handwritten: 15.3.6 Complete Doubly Linked List Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-diagram.svg" alt="Diagram: 15.3.6 Complete Doubly Linked List Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-diagram.svg" alt="Diagram: 15.3.6 Complete Doubly Linked List Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-sticky.svg" alt="Sticky Note: 15.3.6 Complete Doubly Linked List Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-3-6-complete-doubly-linked-list-example-sticky.svg" alt="Sticky Note: 15.3.6 Complete Doubly Linked List Example" width="30%">
 </a>
 
 
@@ -2124,14 +2124,14 @@ After deleting 30: 5 <-> 10 <-> 20 <-> 40 <-> NULL
 
 ### Concept
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
 </a>
 
 
@@ -2139,14 +2139,14 @@ In a circular linked list, the last node's `next` pointer points back to the hea
 
 ### Real-World Analogy: Roundabout
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-handwritten.svg" alt="Handwritten: Real-World Analogy: Roundabout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-handwritten.svg" alt="Handwritten: Real-World Analogy: Roundabout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-diagram.svg" alt="Diagram: Real-World Analogy: Roundabout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-diagram.svg" alt="Diagram: Real-World Analogy: Roundabout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-sticky.svg" alt="Sticky Note: Real-World Analogy: Roundabout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-sticky.svg" alt="Sticky Note: Real-World Analogy: Roundabout" width="30%">
 </a>
 
 
@@ -2154,14 +2154,14 @@ Instead of a road that dead-ends, the road curves back to the start. You can kee
 
 ### Structure
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
 </a>
 
 
@@ -2176,14 +2176,14 @@ head ───→ ┌────┬──────┐    ┌────┬�
 
 ### 15.4.1 Insert at End (Circular Trick)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-handwritten.svg" alt="Handwritten: 15.4.1 Insert at End (Circular Trick)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-handwritten.svg" alt="Handwritten: 15.4.1 Insert at End (Circular Trick)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-diagram.svg" alt="Diagram: 15.4.1 Insert at End (Circular Trick)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-diagram.svg" alt="Diagram: 15.4.1 Insert at End (Circular Trick)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-sticky.svg" alt="Sticky Note: 15.4.1 Insert at End (Circular Trick)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-1-insert-at-end-circular-trick-sticky.svg" alt="Sticky Note: 15.4.1 Insert at End (Circular Trick)" width="30%">
 </a>
 
 
@@ -2262,14 +2262,14 @@ Result: [10 → 20 → 30 → (back to 10)]
 
 ### 15.4.2 Traversal
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-handwritten.svg" alt="Handwritten: 15.4.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-handwritten.svg" alt="Handwritten: 15.4.2 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-diagram.svg" alt="Diagram: 15.4.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-diagram.svg" alt="Diagram: 15.4.2 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-sticky.svg" alt="Sticky Note: 15.4.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-2-traversal-sticky.svg" alt="Sticky Note: 15.4.2 Traversal" width="30%">
 </a>
 
 
@@ -2294,14 +2294,14 @@ void print_circular(const Node *head)
 
 ### 15.4.3 Complete Example
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-handwritten.svg" alt="Handwritten: 15.4.3 Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-handwritten.svg" alt="Handwritten: 15.4.3 Complete Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-diagram.svg" alt="Diagram: 15.4.3 Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-diagram.svg" alt="Diagram: 15.4.3 Complete Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-sticky.svg" alt="Sticky Note: 15.4.3 Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-4-3-complete-example-sticky.svg" alt="Sticky Note: 15.4.3 Complete Example" width="30%">
 </a>
 
 
@@ -2368,14 +2368,14 @@ Circular: 10 -> 20 -> 30 -> 40 -> (back to 10)
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -2388,14 +2388,14 @@ Circular: 10 -> 20 -> 30 -> 40 -> (back to 10)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2409,14 +2409,14 @@ Circular: 10 -> 20 -> 30 -> 40 -> (back to 10)
 
 ### Concept
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-handwritten.svg" alt="Handwritten: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-diagram.svg" alt="Diagram: Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/concept-sticky.svg" alt="Sticky Note: Concept" width="30%">
 </a>
 
 
@@ -2424,14 +2424,14 @@ Combines doubly linked list with circular linking. Head's `prev` points to the t
 
 ### Real-World Analogy: Roundabout with Two-Way Traffic
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-handwritten.svg" alt="Handwritten: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-handwritten.svg" alt="Handwritten: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-diagram.svg" alt="Diagram: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-diagram.svg" alt="Diagram: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-sticky.svg" alt="Sticky Note: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-analogy-roundabout-with-two-way-traffic-sticky.svg" alt="Sticky Note: Real-World Analogy: Roundabout with Two-Way Traffic" width="30%">
 </a>
 
 
@@ -2439,14 +2439,14 @@ A circular road where each house has signs pointing both to the previous and nex
 
 ### Structure
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-diagram.svg" alt="Diagram: Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
 </a>
 
 
@@ -2460,14 +2460,14 @@ typedef struct cdnode {
 
 ### Pointer Diagram
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-handwritten.svg" alt="Handwritten: Pointer Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-diagram.svg" alt="Diagram: Pointer Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/pointer-diagram-sticky.svg" alt="Sticky Note: Pointer Diagram" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ typedef struct cdnode {
 
 ### 15.5.1 Create Node
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-handwritten.svg" alt="Handwritten: 15.5.1 Create Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-handwritten.svg" alt="Handwritten: 15.5.1 Create Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-diagram.svg" alt="Diagram: 15.5.1 Create Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-diagram.svg" alt="Diagram: 15.5.1 Create Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-sticky.svg" alt="Sticky Note: 15.5.1 Create Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-1-create-node-sticky.svg" alt="Sticky Note: 15.5.1 Create Node" width="30%">
 </a>
 
 
@@ -2510,14 +2510,14 @@ CDNode *create_cdnode(int value)
 
 ### 15.5.2 Insert at End
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-handwritten.svg" alt="Handwritten: 15.5.2 Insert at End" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-handwritten.svg" alt="Handwritten: 15.5.2 Insert at End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-diagram.svg" alt="Diagram: 15.5.2 Insert at End" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-diagram.svg" alt="Diagram: 15.5.2 Insert at End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-sticky.svg" alt="Sticky Note: 15.5.2 Insert at End" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-2-insert-at-end-sticky.svg" alt="Sticky Note: 15.5.2 Insert at End" width="30%">
 </a>
 
 
@@ -2547,14 +2547,14 @@ CDNode *insert_end(CDNode *head, int value)
 
 ### 15.5.3 Delete Node
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-handwritten.svg" alt="Handwritten: 15.5.3 Delete Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-handwritten.svg" alt="Handwritten: 15.5.3 Delete Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-diagram.svg" alt="Diagram: 15.5.3 Delete Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-diagram.svg" alt="Diagram: 15.5.3 Delete Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-sticky.svg" alt="Sticky Note: 15.5.3 Delete Node" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-3-delete-node-sticky.svg" alt="Sticky Note: 15.5.3 Delete Node" width="30%">
 </a>
 
 
@@ -2590,14 +2590,14 @@ CDNode *delete_node(CDNode *head, int value)
 
 ### 15.5.4 Traversal
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-handwritten.svg" alt="Handwritten: 15.5.4 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-handwritten.svg" alt="Handwritten: 15.5.4 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-diagram.svg" alt="Diagram: 15.5.4 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-diagram.svg" alt="Diagram: 15.5.4 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-sticky.svg" alt="Sticky Note: 15.5.4 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-4-traversal-sticky.svg" alt="Sticky Note: 15.5.4 Traversal" width="30%">
 </a>
 
 
@@ -2627,14 +2627,14 @@ void print_backward(const CDNode *head)
 
 ### 15.5.5 Complete Example
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-handwritten.svg" alt="Handwritten: 15.5.5 Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-handwritten.svg" alt="Handwritten: 15.5.5 Complete Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-diagram.svg" alt="Diagram: 15.5.5 Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-diagram.svg" alt="Diagram: 15.5.5 Complete Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-sticky.svg" alt="Sticky Note: 15.5.5 Complete Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/15-5-5-complete-example-sticky.svg" alt="Sticky Note: 15.5.5 Complete Example" width="30%">
 </a>
 
 
@@ -2714,14 +2714,14 @@ Head->prev (tail) data: 30
 
 ### When to Use Which
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
 </a>
 
 
@@ -2758,14 +2758,14 @@ Head->prev (tail) data: 30
 
 ### When to Choose Array
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-handwritten.svg" alt="Handwritten: When to Choose Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-handwritten.svg" alt="Handwritten: When to Choose Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-diagram.svg" alt="Diagram: When to Choose Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-diagram.svg" alt="Diagram: When to Choose Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-sticky.svg" alt="Sticky Note: When to Choose Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-array-sticky.svg" alt="Sticky Note: When to Choose Array" width="30%">
 </a>
 
 
@@ -2777,14 +2777,14 @@ Head->prev (tail) data: 30
 
 ### When to Choose Linked List
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-handwritten.svg" alt="Handwritten: When to Choose Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-handwritten.svg" alt="Handwritten: When to Choose Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-diagram.svg" alt="Diagram: When to Choose Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-diagram.svg" alt="Diagram: When to Choose Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-sticky.svg" alt="Sticky Note: When to Choose Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/when-to-choose-linked-list-sticky.svg" alt="Sticky Note: When to Choose Linked List" width="30%">
 </a>
 
 
@@ -2796,14 +2796,14 @@ Head->prev (tail) data: 30
 
 ### Memory Visualization
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-handwritten.svg" alt="Handwritten: Memory Visualization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-handwritten.svg" alt="Handwritten: Memory Visualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-diagram.svg" alt="Diagram: Memory Visualization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-diagram.svg" alt="Diagram: Memory Visualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-sticky.svg" alt="Sticky Note: Memory Visualization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/memory-visualization-sticky.svg" alt="Sticky Note: Memory Visualization" width="30%">
 </a>
 
 
@@ -2836,14 +2836,14 @@ The array reads all 5 elements in ONE cache line (typically 64 bytes).
 
 ### Mathematical Intuition
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-handwritten.svg" alt="Handwritten: Mathematical Intuition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-handwritten.svg" alt="Handwritten: Mathematical Intuition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-diagram.svg" alt="Diagram: Mathematical Intuition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-diagram.svg" alt="Diagram: Mathematical Intuition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-sticky.svg" alt="Sticky Note: Mathematical Intuition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/mathematical-intuition-sticky.svg" alt="Sticky Note: Mathematical Intuition" width="30%">
 </a>
 
 
@@ -2851,14 +2851,14 @@ Floyd's algorithm works because of modular arithmetic. In a list with a cycle of
 
 ### Detailed Trace
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-handwritten.svg" alt="Handwritten: Detailed Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-handwritten.svg" alt="Handwritten: Detailed Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-diagram.svg" alt="Diagram: Detailed Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-diagram.svg" alt="Diagram: Detailed Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-sticky.svg" alt="Sticky Note: Detailed Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/detailed-trace-sticky.svg" alt="Sticky Note: Detailed Trace" width="30%">
 </a>
 
 
@@ -2882,14 +2882,14 @@ Distance reduces by 1 each step modulo the cycle length. When it hits 0, they're
 
 ### Finding the Start of the Cycle (Proof)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-handwritten.svg" alt="Handwritten: Finding the Start of the Cycle (Proof)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-handwritten.svg" alt="Handwritten: Finding the Start of the Cycle (Proof)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-diagram.svg" alt="Diagram: Finding the Start of the Cycle (Proof)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-diagram.svg" alt="Diagram: Finding the Start of the Cycle (Proof)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-sticky.svg" alt="Sticky Note: Finding the Start of the Cycle (Proof)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/finding-the-start-of-the-cycle-proof-sticky.svg" alt="Sticky Note: Finding the Start of the Cycle (Proof)" width="30%">
 </a>
 
 
@@ -2913,14 +2913,14 @@ They meet at the cycle start. QED.
 
 ### C Code
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-handwritten.svg" alt="Handwritten: C Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/c-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/c-code-handwritten.svg" alt="Handwritten: C Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-diagram.svg" alt="Diagram: C Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/c-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/c-code-diagram.svg" alt="Diagram: C Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/c-code-sticky.svg" alt="Sticky Note: C Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/c-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/c-code-sticky.svg" alt="Sticky Note: C Code" width="30%">
 </a>
 
 
@@ -2951,14 +2951,14 @@ Node *find_cycle_start(Node *head)
 
 ### Complexity Proof
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-handwritten.svg" alt="Handwritten: Complexity Proof" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-handwritten.svg" alt="Handwritten: Complexity Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-diagram.svg" alt="Diagram: Complexity Proof" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-diagram.svg" alt="Diagram: Complexity Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-sticky.svg" alt="Sticky Note: Complexity Proof" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/complexity-proof-sticky.svg" alt="Sticky Note: Complexity Proof" width="30%">
 </a>
 
 
@@ -2970,14 +2970,14 @@ Node *find_cycle_start(Node *head)
 
 ### Edge Cases for Floyd
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-handwritten.svg" alt="Handwritten: Edge Cases for Floyd" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-handwritten.svg" alt="Handwritten: Edge Cases for Floyd" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-diagram.svg" alt="Diagram: Edge Cases for Floyd" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-diagram.svg" alt="Diagram: Edge Cases for Floyd" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-sticky.svg" alt="Sticky Note: Edge Cases for Floyd" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/edge-cases-for-floyd-sticky.svg" alt="Sticky Note: Edge Cases for Floyd" width="30%">
 </a>
 
 
@@ -2992,14 +2992,14 @@ Node *find_cycle_start(Node *head)
 
 ### Iterative Reverse (Three-Pointer Technique)
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-handwritten.svg" alt="Handwritten: Iterative Reverse (Three-Pointer Technique)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-handwritten.svg" alt="Handwritten: Iterative Reverse (Three-Pointer Technique)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-diagram.svg" alt="Diagram: Iterative Reverse (Three-Pointer Technique)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-diagram.svg" alt="Diagram: Iterative Reverse (Three-Pointer Technique)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-sticky.svg" alt="Sticky Note: Iterative Reverse (Three-Pointer Technique)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/iterative-reverse-three-pointer-technique-sticky.svg" alt="Sticky Note: Iterative Reverse (Three-Pointer Technique)" width="30%">
 </a>
 
 
@@ -3036,14 +3036,14 @@ Return prev — D is new head.
 
 ### Recursive Reverse
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-handwritten.svg" alt="Handwritten: Recursive Reverse" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-handwritten.svg" alt="Handwritten: Recursive Reverse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-diagram.svg" alt="Diagram: Recursive Reverse" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-diagram.svg" alt="Diagram: Recursive Reverse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-sticky.svg" alt="Sticky Note: Recursive Reverse" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/recursive-reverse-sticky.svg" alt="Sticky Note: Recursive Reverse" width="30%">
 </a>
 
 
@@ -3076,14 +3076,14 @@ Result: D → C → B → A → NULL
 
 ### Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
 </a>
 
 
@@ -3105,14 +3105,14 @@ Result: D → C → B → A → NULL
 
 ### Frequently Asked Linked List Questions
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-handwritten.svg" alt="Handwritten: Frequently Asked Linked List Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-handwritten.svg" alt="Handwritten: Frequently Asked Linked List Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-diagram.svg" alt="Diagram: Frequently Asked Linked List Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-diagram.svg" alt="Diagram: Frequently Asked Linked List Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-sticky.svg" alt="Sticky Note: Frequently Asked Linked List Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/frequently-asked-linked-list-questions-sticky.svg" alt="Sticky Note: Frequently Asked Linked List Questions" width="30%">
 </a>
 
 
@@ -3138,14 +3138,14 @@ Given a pointer to the node (not just the value), you can access the previous no
 
 ### Common Mistakes to Avoid
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-handwritten.svg" alt="Handwritten: Common Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-handwritten.svg" alt="Handwritten: Common Mistakes to Avoid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-diagram.svg" alt="Diagram: Common Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-diagram.svg" alt="Diagram: Common Mistakes to Avoid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-sticky.svg" alt="Sticky Note: Common Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/common-mistakes-to-avoid-sticky.svg" alt="Sticky Note: Common Mistakes to Avoid" width="30%">
 </a>
 
 
@@ -3162,14 +3162,14 @@ Given a pointer to the node (not just the value), you can access the previous no
 
 ### Whiteboard Checklist
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-handwritten.svg" alt="Handwritten: Whiteboard Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-handwritten.svg" alt="Handwritten: Whiteboard Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-diagram.svg" alt="Diagram: Whiteboard Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-diagram.svg" alt="Diagram: Whiteboard Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-sticky.svg" alt="Sticky Note: Whiteboard Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/whiteboard-checklist-sticky.svg" alt="Sticky Note: Whiteboard Checklist" width="30%">
 </a>
 
 
@@ -3189,14 +3189,14 @@ When implementing any linked list operation on a whiteboard:
 
 ### Operating Systems
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
 </a>
 
 
@@ -3209,14 +3209,14 @@ When implementing any linked list operation on a whiteboard:
 
 ### Programming Languages and Runtimes
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-handwritten.svg" alt="Handwritten: Programming Languages and Runtimes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-handwritten.svg" alt="Handwritten: Programming Languages and Runtimes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-diagram.svg" alt="Diagram: Programming Languages and Runtimes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-diagram.svg" alt="Diagram: Programming Languages and Runtimes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-sticky.svg" alt="Sticky Note: Programming Languages and Runtimes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/programming-languages-and-runtimes-sticky.svg" alt="Sticky Note: Programming Languages and Runtimes" width="30%">
 </a>
 
 
@@ -3229,14 +3229,14 @@ When implementing any linked list operation on a whiteboard:
 
 ### Networking
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/networking-handwritten.svg" alt="Handwritten: Networking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/networking-handwritten.svg" alt="Handwritten: Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/networking-diagram.svg" alt="Diagram: Networking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/networking-diagram.svg" alt="Diagram: Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/networking-sticky.svg" alt="Sticky Note: Networking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/networking-sticky.svg" alt="Sticky Note: Networking" width="30%">
 </a>
 
 
@@ -3249,14 +3249,14 @@ When implementing any linked list operation on a whiteboard:
 
 ### Real-World Libraries
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-handwritten.svg" alt="Handwritten: Real-World Libraries" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-handwritten.svg" alt="Handwritten: Real-World Libraries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-diagram.svg" alt="Diagram: Real-World Libraries" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-diagram.svg" alt="Diagram: Real-World Libraries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-sticky.svg" alt="Sticky Note: Real-World Libraries" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/real-world-libraries-sticky.svg" alt="Sticky Note: Real-World Libraries" width="30%">
 </a>
 
 
@@ -3270,14 +3270,14 @@ When implementing any linked list operation on a whiteboard:
 
 ### Music Player Example
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-handwritten.svg" alt="Handwritten: Music Player Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-handwritten.svg" alt="Handwritten: Music Player Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-diagram.svg" alt="Diagram: Music Player Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-diagram.svg" alt="Diagram: Music Player Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-sticky.svg" alt="Sticky Note: Music Player Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/music-player-example-sticky.svg" alt="Sticky Note: Music Player Example" width="30%">
 </a>
 
 
@@ -3485,14 +3485,14 @@ Head → SongA ⇄ SongB ⇄ SongC ⇄ SongD
 
 ### Challenge Problem: Polynomial Using Linked List
 
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-handwritten.svg" alt="Handwritten: Challenge Problem: Polynomial Using Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-handwritten.svg" alt="Handwritten: Challenge Problem: Polynomial Using Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-diagram.svg" alt="Diagram: Challenge Problem: Polynomial Using Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-diagram.svg" alt="Diagram: Challenge Problem: Polynomial Using Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-sticky.svg" alt="Sticky Note: Challenge Problem: Polynomial Using Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/15-linked-lists/challenge-problem-polynomial-using-linked-list-sticky.svg" alt="Sticky Note: Challenge Problem: Polynomial Using Linked List" width="30%">
 </a>
 
 

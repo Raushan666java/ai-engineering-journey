@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Memory Hierarchy Overview
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-handwritten.svg" alt="Handwritten: 1. Memory Hierarchy Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-handwritten.svg" alt="Handwritten: 1. Memory Hierarchy Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-diagram.svg" alt="Diagram: 1. Memory Hierarchy Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-diagram.svg" alt="Diagram: 1. Memory Hierarchy Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-sticky.svg" alt="Sticky Note: 1. Memory Hierarchy Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/1-memory-hierarchy-overview-sticky.svg" alt="Sticky Note: 1. Memory Hierarchy Overview" width="30%">
 </a>
 
 
@@ -50,14 +50,14 @@ The memory hierarchy exploits two principles: **locality of reference** (tempora
 
 ### 2. SRAM vs DRAM
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-handwritten.svg" alt="Handwritten: 2. SRAM vs DRAM" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-handwritten.svg" alt="Handwritten: 2. SRAM vs DRAM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-diagram.svg" alt="Diagram: 2. SRAM vs DRAM" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-diagram.svg" alt="Diagram: 2. SRAM vs DRAM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-sticky.svg" alt="Sticky Note: 2. SRAM vs DRAM" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/2-sram-vs-dram-sticky.svg" alt="Sticky Note: 2. SRAM vs DRAM" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ The memory hierarchy exploits two principles: **locality of reference** (tempora
 
 ### 3. ROM Types
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-handwritten.svg" alt="Handwritten: 3. ROM Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-handwritten.svg" alt="Handwritten: 3. ROM Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-diagram.svg" alt="Diagram: 3. ROM Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-diagram.svg" alt="Diagram: 3. ROM Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-sticky.svg" alt="Sticky Note: 3. ROM Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/3-rom-types-sticky.svg" alt="Sticky Note: 3. ROM Types" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ The memory hierarchy exploits two principles: **locality of reference** (tempora
 
 ### 4. Cache Memory
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-handwritten.svg" alt="Handwritten: 4. Cache Memory" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-handwritten.svg" alt="Handwritten: 4. Cache Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-diagram.svg" alt="Diagram: 4. Cache Memory" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-diagram.svg" alt="Diagram: 4. Cache Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-sticky.svg" alt="Sticky Note: 4. Cache Memory" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/4-cache-memory-sticky.svg" alt="Sticky Note: 4. Cache Memory" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ AMAT = 1 + 0.05 × (10 + 0.20 × 100)
 
 ### 5. Cache Mapping Techniques
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-handwritten.svg" alt="Handwritten: 5. Cache Mapping Techniques" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-handwritten.svg" alt="Handwritten: 5. Cache Mapping Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-diagram.svg" alt="Diagram: 5. Cache Mapping Techniques" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-diagram.svg" alt="Diagram: 5. Cache Mapping Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-sticky.svg" alt="Sticky Note: 5. Cache Mapping Techniques" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/5-cache-mapping-techniques-sticky.svg" alt="Sticky Note: 5. Cache Mapping Techniques" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ Tag = 32 − 10 − 4 = 18 bits
 
 ### 6. Numerical Problems on Cache Mapping
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-handwritten.svg" alt="Handwritten: 6. Numerical Problems on Cache Mapping" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-handwritten.svg" alt="Handwritten: 6. Numerical Problems on Cache Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-diagram.svg" alt="Diagram: 6. Numerical Problems on Cache Mapping" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-diagram.svg" alt="Diagram: 6. Numerical Problems on Cache Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-sticky.svg" alt="Sticky Note: 6. Numerical Problems on Cache Mapping" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/6-numerical-problems-on-cache-mapping-sticky.svg" alt="Sticky Note: 6. Numerical Problems on Cache Mapping" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@ Speedup = 100 / 20 = 5×
 
 ### 7. Replacement Policies
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-handwritten.svg" alt="Handwritten: 7. Replacement Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-handwritten.svg" alt="Handwritten: 7. Replacement Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-diagram.svg" alt="Diagram: 7. Replacement Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-diagram.svg" alt="Diagram: 7. Replacement Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-sticky.svg" alt="Sticky Note: 7. Replacement Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/7-replacement-policies-sticky.svg" alt="Sticky Note: 7. Replacement Policies" width="30%">
 </a>
 
 
@@ -333,14 +333,14 @@ When a miss occurs and the set is full, a block must be evicted to make room.
 
 ### 8. Write Policies
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-handwritten.svg" alt="Handwritten: 8. Write Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-handwritten.svg" alt="Handwritten: 8. Write Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-diagram.svg" alt="Diagram: 8. Write Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-diagram.svg" alt="Diagram: 8. Write Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-sticky.svg" alt="Sticky Note: 8. Write Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/8-write-policies-sticky.svg" alt="Sticky Note: 8. Write Policies" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ When a miss occurs and the set is full, a block must be evicted to make room.
 
 ### 9. Cache Performance Enhancements
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-handwritten.svg" alt="Handwritten: 9. Cache Performance Enhancements" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-handwritten.svg" alt="Handwritten: 9. Cache Performance Enhancements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-diagram.svg" alt="Diagram: 9. Cache Performance Enhancements" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-diagram.svg" alt="Diagram: 9. Cache Performance Enhancements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-sticky.svg" alt="Sticky Note: 9. Cache Performance Enhancements" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/9-cache-performance-enhancements-sticky.svg" alt="Sticky Note: 9. Cache Performance Enhancements" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ When a miss occurs and the set is full, a block must be evicted to make room.
 
 ### 10. Important Exam Formulae
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-handwritten.svg" alt="Handwritten: 10. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-handwritten.svg" alt="Handwritten: 10. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-diagram.svg" alt="Diagram: 10. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-diagram.svg" alt="Diagram: 10. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-sticky.svg" alt="Sticky Note: 10. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/10-important-exam-formulae-sticky.svg" alt="Sticky Note: 10. Important Exam Formulae" width="30%">
 </a>
 
 
@@ -413,14 +413,14 @@ When a miss occurs and the set is full, a block must be evicted to make room.
 
 ### 11. Virtual Memory (Overview)
 
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-handwritten.svg" alt="Handwritten: 11. Virtual Memory (Overview)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-handwritten.svg" alt="Handwritten: 11. Virtual Memory (Overview)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-diagram.svg" alt="Diagram: 11. Virtual Memory (Overview)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-diagram.svg" alt="Diagram: 11. Virtual Memory (Overview)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-sticky.svg" alt="Sticky Note: 11. Virtual Memory (Overview)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/03-memory-hierarchy/11-virtual-memory-overview-sticky.svg" alt="Sticky Note: 11. Virtual Memory (Overview)" width="30%">
 </a>
 
 

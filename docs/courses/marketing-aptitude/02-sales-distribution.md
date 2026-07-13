@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 Sales Management: An Overview
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-handwritten.svg" alt="Handwritten: 2.1 Sales Management: An Overview" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-handwritten.svg" alt="Handwritten: 2.1 Sales Management: An Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-diagram.svg" alt="Diagram: 2.1 Sales Management: An Overview" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-diagram.svg" alt="Diagram: 2.1 Sales Management: An Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-sticky.svg" alt="Sticky Note: 2.1 Sales Management: An Overview" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-1-sales-management-an-overview-sticky.svg" alt="Sticky Note: 2.1 Sales Management: An Overview" width="30%">
 </a>
 
 
@@ -43,14 +43,14 @@ flowchart LR
 
 ### 2.2 The Personal Selling Process
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-handwritten.svg" alt="Handwritten: 2.2 The Personal Selling Process" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-handwritten.svg" alt="Handwritten: 2.2 The Personal Selling Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-diagram.svg" alt="Diagram: 2.2 The Personal Selling Process" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-diagram.svg" alt="Diagram: 2.2 The Personal Selling Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-sticky.svg" alt="Sticky Note: 2.2 The Personal Selling Process" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-2-the-personal-selling-process-sticky.svg" alt="Sticky Note: 2.2 The Personal Selling Process" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ The AIDA model describes the stages a customer goes through during a sales prese
 
 ### 2.3 Sales Forecasting
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-handwritten.svg" alt="Handwritten: 2.3 Sales Forecasting" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-handwritten.svg" alt="Handwritten: 2.3 Sales Forecasting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-diagram.svg" alt="Diagram: 2.3 Sales Forecasting" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-diagram.svg" alt="Diagram: 2.3 Sales Forecasting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-sticky.svg" alt="Sticky Note: 2.3 Sales Forecasting" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-3-sales-forecasting-sticky.svg" alt="Sticky Note: 2.3 Sales Forecasting" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ console.log("Exponential Smoothing:", smoothed);
 
 ### 2.4 Sales Quotas
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-handwritten.svg" alt="Handwritten: 2.4 Sales Quotas" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-handwritten.svg" alt="Handwritten: 2.4 Sales Quotas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-diagram.svg" alt="Diagram: 2.4 Sales Quotas" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-diagram.svg" alt="Diagram: 2.4 Sales Quotas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-sticky.svg" alt="Sticky Note: 2.4 Sales Quotas" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-4-sales-quotas-sticky.svg" alt="Sticky Note: 2.4 Sales Quotas" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ A sales quota is the performance goal assigned to a salesperson, territory, or b
 
 ### 2.5 Territory Management
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-handwritten.svg" alt="Handwritten: 2.5 Territory Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-handwritten.svg" alt="Handwritten: 2.5 Territory Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-diagram.svg" alt="Diagram: 2.5 Territory Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-diagram.svg" alt="Diagram: 2.5 Territory Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-sticky.svg" alt="Sticky Note: 2.5 Territory Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-5-territory-management-sticky.svg" alt="Sticky Note: 2.5 Territory Management" width="30%">
 </a>
 
 
@@ -221,14 +221,14 @@ A sales territory is a group of customers or a geographic area assigned to a sal
 
 ### 2.6 Distribution Channels
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-handwritten.svg" alt="Handwritten: 2.6 Distribution Channels" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-handwritten.svg" alt="Handwritten: 2.6 Distribution Channels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-diagram.svg" alt="Diagram: 2.6 Distribution Channels" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-diagram.svg" alt="Diagram: 2.6 Distribution Channels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-sticky.svg" alt="Sticky Note: 2.6 Distribution Channels" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-6-distribution-channels-sticky.svg" alt="Sticky Note: 2.6 Distribution Channels" width="30%">
 </a>
 
 
@@ -265,14 +265,14 @@ flowchart TD
 
 ### 2.7 Distribution Intensity
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-handwritten.svg" alt="Handwritten: 2.7 Distribution Intensity" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-handwritten.svg" alt="Handwritten: 2.7 Distribution Intensity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-diagram.svg" alt="Diagram: 2.7 Distribution Intensity" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-diagram.svg" alt="Diagram: 2.7 Distribution Intensity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-sticky.svg" alt="Sticky Note: 2.7 Distribution Intensity" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-7-distribution-intensity-sticky.svg" alt="Sticky Note: 2.7 Distribution Intensity" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ console.log("Luxury Watch:", recommendDistribution(luxuryWatch)); // Exclusive
 
 ### 2.8 Supply Chain Management (SCM)
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-handwritten.svg" alt="Handwritten: 2.8 Supply Chain Management (SCM)" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-handwritten.svg" alt="Handwritten: 2.8 Supply Chain Management (SCM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-diagram.svg" alt="Diagram: 2.8 Supply Chain Management (SCM)" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-diagram.svg" alt="Diagram: 2.8 Supply Chain Management (SCM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-sticky.svg" alt="Sticky Note: 2.8 Supply Chain Management (SCM)" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-8-supply-chain-management-scm-sticky.svg" alt="Sticky Note: 2.8 Supply Chain Management (SCM)" width="30%">
 </a>
 
 
@@ -396,14 +396,14 @@ console.log("Cost at 1000 units:", Math.round(totalInventoryCost(D, S, H, 1000))
 
 ### 2.9 E-Commerce and D2C Distribution
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-handwritten.svg" alt="Handwritten: 2.9 E-Commerce and D2C Distribution" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-handwritten.svg" alt="Handwritten: 2.9 E-Commerce and D2C Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-diagram.svg" alt="Diagram: 2.9 E-Commerce and D2C Distribution" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-diagram.svg" alt="Diagram: 2.9 E-Commerce and D2C Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-sticky.svg" alt="Sticky Note: 2.9 E-Commerce and D2C Distribution" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-9-e-commerce-and-d2c-distribution-sticky.svg" alt="Sticky Note: 2.9 E-Commerce and D2C Distribution" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ Direct-to-Consumer (D2C) brands bypass traditional intermediaries, selling direc
 
 ### 2.10 Logistics and Physical Distribution
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-handwritten.svg" alt="Handwritten: 2.10 Logistics and Physical Distribution" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-handwritten.svg" alt="Handwritten: 2.10 Logistics and Physical Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-diagram.svg" alt="Diagram: 2.10 Logistics and Physical Distribution" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-diagram.svg" alt="Diagram: 2.10 Logistics and Physical Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-sticky.svg" alt="Sticky Note: 2.10 Logistics and Physical Distribution" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-10-logistics-and-physical-distribution-sticky.svg" alt="Sticky Note: 2.10 Logistics and Physical Distribution" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ Logistics involves planning, implementing, and controlling the physical flow of 
 
 ### 2.11 Sales Force Structure
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-handwritten.svg" alt="Handwritten: 2.11 Sales Force Structure" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-handwritten.svg" alt="Handwritten: 2.11 Sales Force Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-diagram.svg" alt="Diagram: 2.11 Sales Force Structure" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-diagram.svg" alt="Diagram: 2.11 Sales Force Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-sticky.svg" alt="Sticky Note: 2.11 Sales Force Structure" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-11-sales-force-structure-sticky.svg" alt="Sticky Note: 2.11 Sales Force Structure" width="30%">
 </a>
 
 
@@ -499,14 +499,14 @@ graph TD
 
 ### 2.12 Channel Conflict and Management
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-handwritten.svg" alt="Handwritten: 2.12 Channel Conflict and Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-handwritten.svg" alt="Handwritten: 2.12 Channel Conflict and Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-diagram.svg" alt="Diagram: 2.12 Channel Conflict and Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-diagram.svg" alt="Diagram: 2.12 Channel Conflict and Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-sticky.svg" alt="Sticky Note: 2.12 Channel Conflict and Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-12-channel-conflict-and-management-sticky.svg" alt="Sticky Note: 2.12 Channel Conflict and Management" width="30%">
 </a>
 
 
@@ -541,14 +541,14 @@ graph TD
 
 ### 2.13 Push vs Pull Distribution Strategies
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-handwritten.svg" alt="Handwritten: 2.13 Push vs Pull Distribution Strategies" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-handwritten.svg" alt="Handwritten: 2.13 Push vs Pull Distribution Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-diagram.svg" alt="Diagram: 2.13 Push vs Pull Distribution Strategies" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-diagram.svg" alt="Diagram: 2.13 Push vs Pull Distribution Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-sticky.svg" alt="Sticky Note: 2.13 Push vs Pull Distribution Strategies" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-13-push-vs-pull-distribution-strategies-sticky.svg" alt="Sticky Note: 2.13 Push vs Pull Distribution Strategies" width="30%">
 </a>
 
 
@@ -563,14 +563,14 @@ graph TD
 
 ### 2.14 Comparison: Direct Sales vs Channel Sales
 
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-handwritten.svg" alt="Handwritten: 2.14 Comparison: Direct Sales vs Channel Sales" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-handwritten.svg" alt="Handwritten: 2.14 Comparison: Direct Sales vs Channel Sales" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-diagram.svg" alt="Diagram: 2.14 Comparison: Direct Sales vs Channel Sales" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-diagram.svg" alt="Diagram: 2.14 Comparison: Direct Sales vs Channel Sales" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-sticky.svg" alt="Sticky Note: 2.14 Comparison: Direct Sales vs Channel Sales" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/02-sales-distribution/2-14-comparison-direct-sales-vs-channel-sales-sticky.svg" alt="Sticky Note: 2.14 Comparison: Direct Sales vs Channel Sales" width="30%">
 </a>
 
 

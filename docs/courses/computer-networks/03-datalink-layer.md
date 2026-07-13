@@ -15,14 +15,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -36,14 +36,14 @@
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@ flowchart LR
 
 ### Data Link Layer Frame Exchange Flow
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-handwritten.svg" alt="Handwritten: Data Link Layer Frame Exchange Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-handwritten.svg" alt="Handwritten: Data Link Layer Frame Exchange Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-diagram.svg" alt="Diagram: Data Link Layer Frame Exchange Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-diagram.svg" alt="Diagram: Data Link Layer Frame Exchange Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-sticky.svg" alt="Sticky Note: Data Link Layer Frame Exchange Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/data-link-layer-frame-exchange-flow-sticky.svg" alt="Sticky Note: Data Link Layer Frame Exchange Flow" width="30%">
 </a>
 
 
@@ -118,14 +118,14 @@ sequenceDiagram
 
 ### CRC Computation State Machine
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-handwritten.svg" alt="Handwritten: CRC Computation State Machine" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-handwritten.svg" alt="Handwritten: CRC Computation State Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-diagram.svg" alt="Diagram: CRC Computation State Machine" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-diagram.svg" alt="Diagram: CRC Computation State Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-sticky.svg" alt="Sticky Note: CRC Computation State Machine" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-computation-state-machine-sticky.svg" alt="Sticky Note: CRC Computation State Machine" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ The data link layer (Layer 2) provides reliable, efficient communication between
 
 ### 3.1.1 Real-World Analogy: Postal Service
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-handwritten.svg" alt="Handwritten: 3.1.1 Real-World Analogy: Postal Service" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-handwritten.svg" alt="Handwritten: 3.1.1 Real-World Analogy: Postal Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-diagram.svg" alt="Diagram: 3.1.1 Real-World Analogy: Postal Service" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-diagram.svg" alt="Diagram: 3.1.1 Real-World Analogy: Postal Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-sticky.svg" alt="Sticky Note: 3.1.1 Real-World Analogy: Postal Service" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-1-real-world-analogy-postal-service-sticky.svg" alt="Sticky Note: 3.1.1 Real-World Analogy: Postal Service" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ Think of the data link layer as a postal sorting facility between two neighborin
 
 ### 3.1.2 Five Core Services (Numbered)
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-handwritten.svg" alt="Handwritten: 3.1.2 Five Core Services (Numbered)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-handwritten.svg" alt="Handwritten: 3.1.2 Five Core Services (Numbered)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-diagram.svg" alt="Diagram: 3.1.2 Five Core Services (Numbered)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-diagram.svg" alt="Diagram: 3.1.2 Five Core Services (Numbered)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-sticky.svg" alt="Sticky Note: 3.1.2 Five Core Services (Numbered)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-2-five-core-services-numbered-sticky.svg" alt="Sticky Note: 3.1.2 Five Core Services (Numbered)" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ Think of the data link layer as a postal sorting facility between two neighborin
 
 ### 3.1.3 Pseudocode: DLL Service Interface
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-handwritten.svg" alt="Handwritten: 3.1.3 Pseudocode: DLL Service Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-handwritten.svg" alt="Handwritten: 3.1.3 Pseudocode: DLL Service Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-diagram.svg" alt="Diagram: 3.1.3 Pseudocode: DLL Service Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-diagram.svg" alt="Diagram: 3.1.3 Pseudocode: DLL Service Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-sticky.svg" alt="Sticky Note: 3.1.3 Pseudocode: DLL Service Interface" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-3-pseudocode-dll-service-interface-sticky.svg" alt="Sticky Note: 3.1.3 Pseudocode: DLL Service Interface" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ END
 
 ### 3.1.4 Dry Run: Packet Flow Through DLL
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-handwritten.svg" alt="Handwritten: 3.1.4 Dry Run: Packet Flow Through DLL" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-handwritten.svg" alt="Handwritten: 3.1.4 Dry Run: Packet Flow Through DLL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-diagram.svg" alt="Diagram: 3.1.4 Dry Run: Packet Flow Through DLL" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-diagram.svg" alt="Diagram: 3.1.4 Dry Run: Packet Flow Through DLL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-sticky.svg" alt="Sticky Note: 3.1.4 Dry Run: Packet Flow Through DLL" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-4-dry-run-packet-flow-through-dll-sticky.svg" alt="Sticky Note: 3.1.4 Dry Run: Packet Flow Through DLL" width="30%">
 </a>
 
 
@@ -278,14 +278,14 @@ Consider a network-layer packet `[0x48, 0x65, 0x6C, 0x6C, 0x6F]` ("Hello") being
 
 ### 3.1.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 3.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 3.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-diagram.svg" alt="Diagram: 3.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-diagram.svg" alt="Diagram: 3.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 3.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 3.1.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ Consider a network-layer packet `[0x48, 0x65, 0x6C, 0x6C, 0x6F]` ("Hello") being
 
 ### 3.1.6 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 3.1.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 3.1.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 3.1.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 3.1.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 3.1.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 3.1.6 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ Consider a network-layer packet `[0x48, 0x65, 0x6C, 0x6C, 0x6F]` ("Hello") being
 
 ### 3.1.7 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-handwritten.svg" alt="Handwritten: 3.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-handwritten.svg" alt="Handwritten: 3.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-diagram.svg" alt="Diagram: 3.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-diagram.svg" alt="Diagram: 3.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-sticky.svg" alt="Sticky Note: 3.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-1-7-edge-cases-sticky.svg" alt="Sticky Note: 3.1.7 Edge Cases" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ Framing solves the problem of locating the start and end of each frame within a 
 
 ### 3.2.1 Character Count
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-handwritten.svg" alt="Handwritten: 3.2.1 Character Count" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-handwritten.svg" alt="Handwritten: 3.2.1 Character Count" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-diagram.svg" alt="Diagram: 3.2.1 Character Count" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-diagram.svg" alt="Diagram: 3.2.1 Character Count" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-sticky.svg" alt="Sticky Note: 3.2.1 Character Count" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-1-character-count-sticky.svg" alt="Sticky Note: 3.2.1 Character Count" width="30%">
 </a>
 
 
@@ -447,14 +447,14 @@ This illustrates why character count is fragile: a single bit error in any lengt
 
 ### 3.2.2 Byte Stuffing
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-handwritten.svg" alt="Handwritten: 3.2.2 Byte Stuffing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-handwritten.svg" alt="Handwritten: 3.2.2 Byte Stuffing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-diagram.svg" alt="Diagram: 3.2.2 Byte Stuffing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-diagram.svg" alt="Diagram: 3.2.2 Byte Stuffing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-sticky.svg" alt="Sticky Note: 3.2.2 Byte Stuffing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-2-byte-stuffing-sticky.svg" alt="Sticky Note: 3.2.2 Byte Stuffing" width="30%">
 </a>
 
 
@@ -587,14 +587,14 @@ Receiver processing:
 
 ### 3.2.3 Bit Stuffing
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-handwritten.svg" alt="Handwritten: 3.2.3 Bit Stuffing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-handwritten.svg" alt="Handwritten: 3.2.3 Bit Stuffing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-diagram.svg" alt="Diagram: 3.2.3 Bit Stuffing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-diagram.svg" alt="Diagram: 3.2.3 Bit Stuffing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-sticky.svg" alt="Sticky Note: 3.2.3 Bit Stuffing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-2-3-bit-stuffing-sticky.svg" alt="Sticky Note: 3.2.3 Bit Stuffing" width="30%">
 </a>
 
 
@@ -787,14 +787,14 @@ Final extracted payload: `11111011111111110` → matches original input exactly.
 
 ### Framing Methods Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-handwritten.svg" alt="Handwritten: Framing Methods Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-handwritten.svg" alt="Handwritten: Framing Methods Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-diagram.svg" alt="Diagram: Framing Methods Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-diagram.svg" alt="Diagram: Framing Methods Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-sticky.svg" alt="Sticky Note: Framing Methods Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/framing-methods-comparison-sticky.svg" alt="Sticky Note: Framing Methods Comparison" width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ Error detection codes add redundant bits to each frame so the receiver can verif
 
 ### 3.3.1 Parity
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-handwritten.svg" alt="Handwritten: 3.3.1 Parity" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-handwritten.svg" alt="Handwritten: 3.3.1 Parity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-diagram.svg" alt="Diagram: 3.3.1 Parity" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-diagram.svg" alt="Diagram: 3.3.1 Parity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-sticky.svg" alt="Sticky Note: 3.3.1 Parity" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-1-parity-sticky.svg" alt="Sticky Note: 3.3.1 Parity" width="30%">
 </a>
 
 
@@ -934,14 +934,14 @@ A single-bit error at position (2,3) flips that bit. Row 2 parity check fails; c
 
 ### 3.3.2 Checksum
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-handwritten.svg" alt="Handwritten: 3.3.2 Checksum" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-handwritten.svg" alt="Handwritten: 3.3.2 Checksum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-diagram.svg" alt="Diagram: 3.3.2 Checksum" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-diagram.svg" alt="Diagram: 3.3.2 Checksum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-sticky.svg" alt="Sticky Note: 3.3.2 Checksum" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-2-checksum-sticky.svg" alt="Sticky Note: 3.3.2 Checksum" width="30%">
 </a>
 
 
@@ -1052,14 +1052,14 @@ Data (8 bytes): 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08
 
 ### 3.3.3 Cyclic Redundancy Check (CRC)
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-handwritten.svg" alt="Handwritten: 3.3.3 Cyclic Redundancy Check (CRC)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-handwritten.svg" alt="Handwritten: 3.3.3 Cyclic Redundancy Check (CRC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-diagram.svg" alt="Diagram: 3.3.3 Cyclic Redundancy Check (CRC)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-diagram.svg" alt="Diagram: 3.3.3 Cyclic Redundancy Check (CRC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-sticky.svg" alt="Sticky Note: 3.3.3 Cyclic Redundancy Check (CRC)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-3-3-cyclic-redundancy-check-crc-sticky.svg" alt="Sticky Note: 3.3.3 Cyclic Redundancy Check (CRC)" width="30%">
 </a>
 
 
@@ -1329,14 +1329,14 @@ print(f"Error detected: {crc != crc2}")
 
 ### Error Detection Comparison: Parity vs Checksum vs CRC
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-handwritten.svg" alt="Handwritten: Error Detection Comparison: Parity vs Checksum vs CRC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-handwritten.svg" alt="Handwritten: Error Detection Comparison: Parity vs Checksum vs CRC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-diagram.svg" alt="Diagram: Error Detection Comparison: Parity vs Checksum vs CRC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-diagram.svg" alt="Diagram: Error Detection Comparison: Parity vs Checksum vs CRC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-sticky.svg" alt="Sticky Note: Error Detection Comparison: Parity vs Checksum vs CRC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/error-detection-comparison-parity-vs-checksum-vs-crc-sticky.svg" alt="Sticky Note: Error Detection Comparison: Parity vs Checksum vs CRC" width="30%">
 </a>
 
 
@@ -1411,14 +1411,14 @@ console.log(`Transmitted codeword: ${transmitted.toString(2)}`);
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1426,14 +1426,14 @@ A teacher reads an answer aloud, and each student writes it down. Instead of one
 
 ### How It Works (Numbered Steps)
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-handwritten.svg" alt="Handwritten: How It Works (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-handwritten.svg" alt="Handwritten: How It Works (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-diagram.svg" alt="Diagram: How It Works (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-diagram.svg" alt="Diagram: How It Works (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-sticky.svg" alt="Sticky Note: How It Works (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-it-works-numbered-steps-sticky.svg" alt="Sticky Note: How It Works (Numbered Steps)" width="30%">
 </a>
 
 
@@ -1480,14 +1480,14 @@ Syndrome = `101` binary = 5 → position 5 is the error! Flip it back to 0.
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1832,14 +1832,14 @@ Flow control prevents a fast sender from overwhelming a slow receiver. The recei
 
 ### 3.5.1 Stop-and-Wait Flow Control
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-handwritten.svg" alt="Handwritten: 3.5.1 Stop-and-Wait Flow Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-handwritten.svg" alt="Handwritten: 3.5.1 Stop-and-Wait Flow Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-diagram.svg" alt="Diagram: 3.5.1 Stop-and-Wait Flow Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-diagram.svg" alt="Diagram: 3.5.1 Stop-and-Wait Flow Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-sticky.svg" alt="Sticky Note: 3.5.1 Stop-and-Wait Flow Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-1-stop-and-wait-flow-control-sticky.svg" alt="Sticky Note: 3.5.1 Stop-and-Wait Flow Control" width="30%">
 </a>
 
 
@@ -1877,14 +1877,14 @@ The link is idle 99.976% of the time. This is why stop-and-wait is impractical f
 
 ### 3.5.2 Sliding Window Flow Control
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-handwritten.svg" alt="Handwritten: 3.5.2 Sliding Window Flow Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-handwritten.svg" alt="Handwritten: 3.5.2 Sliding Window Flow Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-diagram.svg" alt="Diagram: 3.5.2 Sliding Window Flow Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-diagram.svg" alt="Diagram: 3.5.2 Sliding Window Flow Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-sticky.svg" alt="Sticky Note: 3.5.2 Sliding Window Flow Control" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-2-sliding-window-flow-control-sticky.svg" alt="Sticky Note: 3.5.2 Sliding Window Flow Control" width="30%">
 </a>
 
 
@@ -1979,14 +1979,14 @@ END
 
 ### 3.5.3 Piggybacking
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-handwritten.svg" alt="Handwritten: 3.5.3 Piggybacking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-handwritten.svg" alt="Handwritten: 3.5.3 Piggybacking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-diagram.svg" alt="Diagram: 3.5.3 Piggybacking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-diagram.svg" alt="Diagram: 3.5.3 Piggybacking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-sticky.svg" alt="Sticky Note: 3.5.3 Piggybacking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-5-3-piggybacking-sticky.svg" alt="Sticky Note: 3.5.3 Piggybacking" width="30%">
 </a>
 
 
@@ -2107,14 +2107,14 @@ ARQ protocols combine error detection with retransmission to achieve reliable da
 
 ### 3.6.1 Stop-and-Wait ARQ
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-handwritten.svg" alt="Handwritten: 3.6.1 Stop-and-Wait ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-handwritten.svg" alt="Handwritten: 3.6.1 Stop-and-Wait ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-diagram.svg" alt="Diagram: 3.6.1 Stop-and-Wait ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-diagram.svg" alt="Diagram: 3.6.1 Stop-and-Wait ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-sticky.svg" alt="Sticky Note: 3.6.1 Stop-and-Wait ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-1-stop-and-wait-arq-sticky.svg" alt="Sticky Note: 3.6.1 Stop-and-Wait ARQ" width="30%">
 </a>
 
 
@@ -2432,14 +2432,14 @@ if __name__ == "__main__":
 
 ### 3.6.2 Go-Back-N ARQ
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-handwritten.svg" alt="Handwritten: 3.6.2 Go-Back-N ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-handwritten.svg" alt="Handwritten: 3.6.2 Go-Back-N ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-diagram.svg" alt="Diagram: 3.6.2 Go-Back-N ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-diagram.svg" alt="Diagram: 3.6.2 Go-Back-N ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-sticky.svg" alt="Sticky Note: 3.6.2 Go-Back-N ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-2-go-back-n-arq-sticky.svg" alt="Sticky Note: 3.6.2 Go-Back-N ARQ" width="30%">
 </a>
 
 
@@ -2577,14 +2577,14 @@ Key observation: Frame 2 was lost. Even though frame 3 was received correctly, t
 
 ### 3.6.3 Selective Repeat ARQ
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-handwritten.svg" alt="Handwritten: 3.6.3 Selective Repeat ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-handwritten.svg" alt="Handwritten: 3.6.3 Selective Repeat ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-diagram.svg" alt="Diagram: 3.6.3 Selective Repeat ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-diagram.svg" alt="Diagram: 3.6.3 Selective Repeat ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-sticky.svg" alt="Sticky Note: 3.6.3 Selective Repeat ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/3-6-3-selective-repeat-arq-sticky.svg" alt="Sticky Note: 3.6.3 Selective Repeat ARQ" width="30%">
 </a>
 
 
@@ -2744,14 +2744,14 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 
 ### ARQ Protocols Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-handwritten.svg" alt="Handwritten: ARQ Protocols Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-handwritten.svg" alt="Handwritten: ARQ Protocols Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-diagram.svg" alt="Diagram: ARQ Protocols Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-diagram.svg" alt="Diagram: ARQ Protocols Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-sticky.svg" alt="Sticky Note: ARQ Protocols Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-protocols-comparison-sticky.svg" alt="Sticky Note: ARQ Protocols Comparison" width="30%">
 </a>
 
 
@@ -2771,14 +2771,14 @@ Key advantage: only frame 2 was retransmitted (not frames 2 and 3 as in Go-Back-
 
 ### ARQ Sliding Window Dry Run
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-handwritten.svg" alt="Handwritten: ARQ Sliding Window Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-handwritten.svg" alt="Handwritten: ARQ Sliding Window Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-diagram.svg" alt="Diagram: ARQ Sliding Window Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-diagram.svg" alt="Diagram: ARQ Sliding Window Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-sticky.svg" alt="Sticky Note: ARQ Sliding Window Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/arq-sliding-window-dry-run-sticky.svg" alt="Sticky Note: ARQ Sliding Window Dry Run" width="30%">
 </a>
 
 
@@ -2813,14 +2813,14 @@ With $T_{\text{trans}} = 10$ ms, max possible at 100% utilization = 10 fps. We a
 
 ### Overview
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" alt="Diagram: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
 </a>
 
 
@@ -2828,14 +2828,14 @@ HDLC (ISO 13239) is a bit-oriented data link protocol that serves as the foundat
 
 ### Station Types
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-handwritten.svg" alt="Handwritten: Station Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-handwritten.svg" alt="Handwritten: Station Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-diagram.svg" alt="Diagram: Station Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-diagram.svg" alt="Diagram: Station Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-sticky.svg" alt="Sticky Note: Station Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/station-types-sticky.svg" alt="Sticky Note: Station Types" width="30%">
 </a>
 
 
@@ -2847,14 +2847,14 @@ HDLC (ISO 13239) is a bit-oriented data link protocol that serves as the foundat
 
 ### Modes of Operation
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-handwritten.svg" alt="Handwritten: Modes of Operation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-handwritten.svg" alt="Handwritten: Modes of Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-diagram.svg" alt="Diagram: Modes of Operation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-diagram.svg" alt="Diagram: Modes of Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-sticky.svg" alt="Sticky Note: Modes of Operation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/modes-of-operation-sticky.svg" alt="Sticky Note: Modes of Operation" width="30%">
 </a>
 
 
@@ -2866,14 +2866,14 @@ HDLC (ISO 13239) is a bit-oriented data link protocol that serves as the foundat
 
 ### HDLC Frame Format
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-handwritten.svg" alt="Handwritten: HDLC Frame Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-handwritten.svg" alt="Handwritten: HDLC Frame Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-diagram.svg" alt="Diagram: HDLC Frame Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-diagram.svg" alt="Diagram: HDLC Frame Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-sticky.svg" alt="Sticky Note: HDLC Frame Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-frame-format-sticky.svg" alt="Sticky Note: HDLC Frame Format" width="30%">
 </a>
 
 
@@ -2886,14 +2886,14 @@ Bit stuffing is used: a 0 is inserted after every five consecutive 1s in the Add
 
 ### Control Field: Three Frame Types
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-handwritten.svg" alt="Handwritten: Control Field: Three Frame Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-handwritten.svg" alt="Handwritten: Control Field: Three Frame Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-diagram.svg" alt="Diagram: Control Field: Three Frame Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-diagram.svg" alt="Diagram: Control Field: Three Frame Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-sticky.svg" alt="Sticky Note: Control Field: Three Frame Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/control-field-three-frame-types-sticky.svg" alt="Sticky Note: Control Field: Three Frame Types" width="30%">
 </a>
 
 
@@ -2933,14 +2933,14 @@ Bit:  1-2    3-4     5     6-8
 
 ### HDLC Operation Example
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-handwritten.svg" alt="Handwritten: HDLC Operation Example" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-handwritten.svg" alt="Handwritten: HDLC Operation Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-diagram.svg" alt="Diagram: HDLC Operation Example" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-diagram.svg" alt="Diagram: HDLC Operation Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-sticky.svg" alt="Sticky Note: HDLC Operation Example" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-operation-example-sticky.svg" alt="Sticky Note: HDLC Operation Example" width="30%">
 </a>
 
 
@@ -2954,14 +2954,14 @@ Bit:  1-2    3-4     5     6-8
 
 ### HDLC vs Other Protocols
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-handwritten.svg" alt="Handwritten: HDLC vs Other Protocols" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-handwritten.svg" alt="Handwritten: HDLC vs Other Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-diagram.svg" alt="Diagram: HDLC vs Other Protocols" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-diagram.svg" alt="Diagram: HDLC vs Other Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-sticky.svg" alt="Sticky Note: HDLC vs Other Protocols" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-other-protocols-sticky.svg" alt="Sticky Note: HDLC vs Other Protocols" width="30%">
 </a>
 
 
@@ -2975,14 +2975,14 @@ Bit:  1-2    3-4     5     6-8
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -3002,14 +3002,14 @@ Bit:  1-2    3-4     5     6-8
 
 ### Overview
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-diagram.svg" alt="Diagram: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
 </a>
 
 
@@ -3017,14 +3017,14 @@ PPP (RFC 1661) provides encapsulation, authentication, and link configuration ov
 
 ### PPP Frame Format
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-handwritten.svg" alt="Handwritten: PPP Frame Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-handwritten.svg" alt="Handwritten: PPP Frame Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-diagram.svg" alt="Diagram: PPP Frame Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-diagram.svg" alt="Diagram: PPP Frame Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-sticky.svg" alt="Sticky Note: PPP Frame Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-frame-format-sticky.svg" alt="Sticky Note: PPP Frame Format" width="30%">
 </a>
 
 
@@ -3037,14 +3037,14 @@ Byte stuffing is used: 0x7E → 0x7D 0x5E, 0x7D → 0x7D 0x5D.
 
 ### PPP Protocol Stack
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-handwritten.svg" alt="Handwritten: PPP Protocol Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-handwritten.svg" alt="Handwritten: PPP Protocol Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-diagram.svg" alt="Diagram: PPP Protocol Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-diagram.svg" alt="Diagram: PPP Protocol Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-sticky.svg" alt="Sticky Note: PPP Protocol Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ppp-protocol-stack-sticky.svg" alt="Sticky Note: PPP Protocol Stack" width="30%">
 </a>
 
 
@@ -3063,14 +3063,14 @@ Byte stuffing is used: 0x7E → 0x7D 0x5E, 0x7D → 0x7D 0x5D.
 
 ### LCP (Link Control Protocol)
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-handwritten.svg" alt="Handwritten: LCP (Link Control Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-handwritten.svg" alt="Handwritten: LCP (Link Control Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-diagram.svg" alt="Diagram: LCP (Link Control Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-diagram.svg" alt="Diagram: LCP (Link Control Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-sticky.svg" alt="Sticky Note: LCP (Link Control Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/lcp-link-control-protocol-sticky.svg" alt="Sticky Note: LCP (Link Control Protocol)" width="30%">
 </a>
 
 
@@ -3102,14 +3102,14 @@ LCP is responsible for establishing, configuring, and testing the data-link conn
 
 ### Authentication Protocols
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-handwritten.svg" alt="Handwritten: Authentication Protocols" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-handwritten.svg" alt="Handwritten: Authentication Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-diagram.svg" alt="Diagram: Authentication Protocols" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-diagram.svg" alt="Diagram: Authentication Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-sticky.svg" alt="Sticky Note: Authentication Protocols" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/authentication-protocols-sticky.svg" alt="Sticky Note: Authentication Protocols" width="30%">
 </a>
 
 
@@ -3131,14 +3131,14 @@ LCP is responsible for establishing, configuring, and testing the data-link conn
 
 ### NCP (Network Control Protocol)
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-handwritten.svg" alt="Handwritten: NCP (Network Control Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-handwritten.svg" alt="Handwritten: NCP (Network Control Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-diagram.svg" alt="Diagram: NCP (Network Control Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-diagram.svg" alt="Diagram: NCP (Network Control Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-sticky.svg" alt="Sticky Note: NCP (Network Control Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ncp-network-control-protocol-sticky.svg" alt="Sticky Note: NCP (Network Control Protocol)" width="30%">
 </a>
 
 
@@ -3151,14 +3151,14 @@ NCP configures and negotiates network-layer protocol parameters.
 
 ### PPPoE (PPP over Ethernet)
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-handwritten.svg" alt="Handwritten: PPPoE (PPP over Ethernet)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-handwritten.svg" alt="Handwritten: PPPoE (PPP over Ethernet)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-diagram.svg" alt="Diagram: PPPoE (PPP over Ethernet)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-diagram.svg" alt="Diagram: PPPoE (PPP over Ethernet)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-sticky.svg" alt="Sticky Note: PPPoE (PPP over Ethernet)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/pppoe-ppp-over-ethernet-sticky.svg" alt="Sticky Note: PPPoE (PPP over Ethernet)" width="30%">
 </a>
 
 
@@ -3171,14 +3171,14 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -3195,14 +3195,14 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -3220,14 +3220,14 @@ PPPoE (RFC 2516) encapsulates PPP frames inside Ethernet frames, enabling PPP au
 
 ### Q1: CRC vs Checksum → Which is better for link-layer error detection?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-handwritten.svg" alt="Handwritten: CRC vs Checksum → Which is better for link-layer error detection?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-handwritten.svg" alt="Handwritten: CRC vs Checksum → Which is better for link-layer error detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-diagram.svg" alt="Diagram: CRC vs Checksum → Which is better for link-layer error detection?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-diagram.svg" alt="Diagram: CRC vs Checksum → Which is better for link-layer error detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-sticky.svg" alt="Sticky Note: CRC vs Checksum → Which is better for link-layer error detection?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/crc-vs-checksum-which-is-better-for-link-layer-error-detection-sticky.svg" alt="Sticky Note: CRC vs Checksum → Which is better for link-layer error detection?" width="30%">
 </a>
 
 
@@ -3235,14 +3235,14 @@ CRC is always better for link-layer error detection. CRC-32 detects: (a) all sin
 
 ### Q2: How do you calculate the optimal sliding window size?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-handwritten.svg" alt="Handwritten: How do you calculate the optimal sliding window size?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-handwritten.svg" alt="Handwritten: How do you calculate the optimal sliding window size?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-diagram.svg" alt="Diagram: How do you calculate the optimal sliding window size?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-diagram.svg" alt="Diagram: How do you calculate the optimal sliding window size?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-sticky.svg" alt="Sticky Note: How do you calculate the optimal sliding window size?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-do-you-calculate-the-optimal-sliding-window-size-sticky.svg" alt="Sticky Note: How do you calculate the optimal sliding window size?" width="30%">
 </a>
 
 
@@ -3259,14 +3259,14 @@ If window is smaller than BDP, the link is underutilized. If larger than BDP and
 
 ### Q3: Go-Back-N vs Selective Repeat → When to use which?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-handwritten.svg" alt="Handwritten: Go-Back-N vs Selective Repeat → When to use which?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-handwritten.svg" alt="Handwritten: Go-Back-N vs Selective Repeat → When to use which?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-diagram.svg" alt="Diagram: Go-Back-N vs Selective Repeat → When to use which?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-diagram.svg" alt="Diagram: Go-Back-N vs Selective Repeat → When to use which?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-sticky.svg" alt="Sticky Note: Go-Back-N vs Selective Repeat → When to use which?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/go-back-n-vs-selective-repeat-when-to-use-which-sticky.svg" alt="Sticky Note: Go-Back-N vs Selective Repeat → When to use which?" width="30%">
 </a>
 
 
@@ -3282,14 +3282,14 @@ The crossover point is roughly when retransmission cost (N Ã— frame size) exc
 
 ### Q4: HDLC vs PPP → What are the key differences?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-handwritten.svg" alt="Handwritten: HDLC vs PPP → What are the key differences?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-handwritten.svg" alt="Handwritten: HDLC vs PPP → What are the key differences?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-diagram.svg" alt="Diagram: HDLC vs PPP → What are the key differences?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-diagram.svg" alt="Diagram: HDLC vs PPP → What are the key differences?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-sticky.svg" alt="Sticky Note: HDLC vs PPP → What are the key differences?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-vs-ppp-what-are-the-key-differences-sticky.svg" alt="Sticky Note: HDLC vs PPP → What are the key differences?" width="30%">
 </a>
 
 
@@ -3306,14 +3306,14 @@ The crossover point is roughly when retransmission cost (N Ã— frame size) exc
 
 ### Q5: Why does Ethernet use CRC-32 instead of a checksum?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-handwritten.svg" alt="Handwritten: Why does Ethernet use CRC-32 instead of a checksum?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-handwritten.svg" alt="Handwritten: Why does Ethernet use CRC-32 instead of a checksum?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-diagram.svg" alt="Diagram: Why does Ethernet use CRC-32 instead of a checksum?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-diagram.svg" alt="Diagram: Why does Ethernet use CRC-32 instead of a checksum?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-sticky.svg" alt="Sticky Note: Why does Ethernet use CRC-32 instead of a checksum?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-does-ethernet-use-crc-32-instead-of-a-checksum-sticky.svg" alt="Sticky Note: Why does Ethernet use CRC-32 instead of a checksum?" width="30%">
 </a>
 
 
@@ -3321,14 +3321,14 @@ Ethernet operates over noisy copper cables (originally coaxial). A weak detectio
 
 ### Q6: How many bits does a (7,4) Hamming code need to correct two errors?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-handwritten.svg" alt="Handwritten: How many bits does a (7,4) Hamming code need to correct two errors?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-handwritten.svg" alt="Handwritten: How many bits does a (7,4) Hamming code need to correct two errors?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-diagram.svg" alt="Diagram: How many bits does a (7,4) Hamming code need to correct two errors?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-diagram.svg" alt="Diagram: How many bits does a (7,4) Hamming code need to correct two errors?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-sticky.svg" alt="Sticky Note: How many bits does a (7,4) Hamming code need to correct two errors?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/how-many-bits-does-a-7-4-hamming-code-need-to-correct-two-errors-sticky.svg" alt="Sticky Note: How many bits does a (7,4) Hamming code need to correct two errors?" width="30%">
 </a>
 
 
@@ -3336,14 +3336,14 @@ A (7,4) Hamming code has minimum Hamming distance $d_{\min} = 3$. To correct up 
 
 ### Q7: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-handwritten.svg" alt="Handwritten: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-handwritten.svg" alt="Handwritten: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-diagram.svg" alt="Diagram: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-diagram.svg" alt="Diagram: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-sticky.svg" alt="Sticky Note: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/why-2-1-maximum-window-for-go-back-n-but-2-for-selective-repeat-sticky.svg" alt="Sticky Note: Why 2Â³Â¹ - 1 maximum window for Go-Back-N but 2Â³â° for Selective Repeat?" width="30%">
 </a>
 
 
@@ -3351,14 +3351,14 @@ For Go-Back-N with 31-bit sequence numbers ($2^{31} - 1$), the receiver's window
 
 ### Q8: What happens if both data and its ACK are lost in Stop-and-Wait?
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-handwritten.svg" alt="Handwritten: What happens if both data and its ACK are lost in Stop-and-Wait?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-handwritten.svg" alt="Handwritten: What happens if both data and its ACK are lost in Stop-and-Wait?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-diagram.svg" alt="Diagram: What happens if both data and its ACK are lost in Stop-and-Wait?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-diagram.svg" alt="Diagram: What happens if both data and its ACK are lost in Stop-and-Wait?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-sticky.svg" alt="Sticky Note: What happens if both data and its ACK are lost in Stop-and-Wait?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/what-happens-if-both-data-and-its-ack-are-lost-in-stop-and-wait-sticky.svg" alt="Sticky Note: What happens if both data and its ACK are lost in Stop-and-Wait?" width="30%">
 </a>
 
 
@@ -3370,14 +3370,14 @@ The sender times out and retransmits the frame. The receiver sees a duplicate fr
 
 ### Ethernet (802.3) Uses CRC-32
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-handwritten.svg" alt="Handwritten: Ethernet (802.3) Uses CRC-32" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-handwritten.svg" alt="Handwritten: Ethernet (802.3) Uses CRC-32" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-diagram.svg" alt="Diagram: Ethernet (802.3) Uses CRC-32" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-diagram.svg" alt="Diagram: Ethernet (802.3) Uses CRC-32" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-sticky.svg" alt="Sticky Note: Ethernet (802.3) Uses CRC-32" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/ethernet-802-3-uses-crc-32-sticky.svg" alt="Sticky Note: Ethernet (802.3) Uses CRC-32" width="30%">
 </a>
 
 
@@ -3392,14 +3392,14 @@ The CRC covers the destination MAC through payload (not preamble/SFD). Every Eth
 
 ### HDLC in PPP
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-handwritten.svg" alt="Handwritten: HDLC in PPP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-handwritten.svg" alt="Handwritten: HDLC in PPP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-diagram.svg" alt="Diagram: HDLC in PPP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-diagram.svg" alt="Diagram: HDLC in PPP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-sticky.svg" alt="Sticky Note: HDLC in PPP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/hdlc-in-ppp-sticky.svg" alt="Sticky Note: HDLC in PPP" width="30%">
 </a>
 
 
@@ -3407,14 +3407,14 @@ PPP's framing (flag byte 0x7E, bit stuffing, FCS) is directly derived from HDLC.
 
 ### Wi-Fi (802.11) Uses ARQ
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-handwritten.svg" alt="Handwritten: Wi-Fi (802.11) Uses ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-handwritten.svg" alt="Handwritten: Wi-Fi (802.11) Uses ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-diagram.svg" alt="Diagram: Wi-Fi (802.11) Uses ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-diagram.svg" alt="Diagram: Wi-Fi (802.11) Uses ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-sticky.svg" alt="Sticky Note: Wi-Fi (802.11) Uses ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/wi-fi-802-11-uses-arq-sticky.svg" alt="Sticky Note: Wi-Fi (802.11) Uses ARQ" width="30%">
 </a>
 
 
@@ -3432,14 +3432,14 @@ Additional 802.11 ARQ features:
 
 ### USB Uses Bit Stuffing + NRZI Encoding
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-handwritten.svg" alt="Handwritten: USB Uses Bit Stuffing + NRZI Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-handwritten.svg" alt="Handwritten: USB Uses Bit Stuffing + NRZI Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-diagram.svg" alt="Diagram: USB Uses Bit Stuffing + NRZI Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-diagram.svg" alt="Diagram: USB Uses Bit Stuffing + NRZI Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-sticky.svg" alt="Sticky Note: USB Uses Bit Stuffing + NRZI Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/usb-uses-bit-stuffing-nrzi-encoding-sticky.svg" alt="Sticky Note: USB Uses Bit Stuffing + NRZI Encoding" width="30%">
 </a>
 
 
@@ -3447,14 +3447,14 @@ USB (Universal Serial Bus) uses bit stuffing with a flag condition of 6 consecut
 
 ### Memory ECC Uses Hamming Code
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-handwritten.svg" alt="Handwritten: Memory ECC Uses Hamming Code" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-handwritten.svg" alt="Handwritten: Memory ECC Uses Hamming Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-diagram.svg" alt="Diagram: Memory ECC Uses Hamming Code" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-diagram.svg" alt="Diagram: Memory ECC Uses Hamming Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-sticky.svg" alt="Sticky Note: Memory ECC Uses Hamming Code" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/memory-ecc-uses-hamming-code-sticky.svg" alt="Sticky Note: Memory ECC Uses Hamming Code" width="30%">
 </a>
 
 
@@ -3462,14 +3462,14 @@ DRAM (DDR4, DDR5) modules use Error-Correcting Code (ECC) memory based on Hammin
 
 ### Bluetooth Uses CRC-16 + ARQ
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-handwritten.svg" alt="Handwritten: Bluetooth Uses CRC-16 + ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-handwritten.svg" alt="Handwritten: Bluetooth Uses CRC-16 + ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-diagram.svg" alt="Diagram: Bluetooth Uses CRC-16 + ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-diagram.svg" alt="Diagram: Bluetooth Uses CRC-16 + ARQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-sticky.svg" alt="Sticky Note: Bluetooth Uses CRC-16 + ARQ" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/bluetooth-uses-crc-16-arq-sticky.svg" alt="Sticky Note: Bluetooth Uses CRC-16 + ARQ" width="30%">
 </a>
 
 
@@ -3477,14 +3477,14 @@ Bluetooth's Baseband layer uses CRC-16 (CRC-CCITT polynomial $x^{16} + x^{12} + 
 
 ### Real-World Protocol Summary
 
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-handwritten.svg" alt="Handwritten: Real-World Protocol Summary" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-handwritten.svg" alt="Handwritten: Real-World Protocol Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-diagram.svg" alt="Diagram: Real-World Protocol Summary" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-diagram.svg" alt="Diagram: Real-World Protocol Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-sticky.svg" alt="Sticky Note: Real-World Protocol Summary" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/03-datalink-layer/real-world-protocol-summary-sticky.svg" alt="Sticky Note: Real-World Protocol Summary" width="30%">
 </a>
 
 

@@ -69,14 +69,14 @@ flowchart LR
 
 ### Locality of Reference
 
-<a href="../../assets/images/diagrams/system-design/03-caching/locality-of-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/locality-of-reference-handwritten.svg" alt="Handwritten: Locality of Reference" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/locality-of-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/locality-of-reference-handwritten.svg" alt="Handwritten: Locality of Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/locality-of-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/locality-of-reference-diagram.svg" alt="Diagram: Locality of Reference" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/locality-of-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/locality-of-reference-diagram.svg" alt="Diagram: Locality of Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/locality-of-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/locality-of-reference-sticky.svg" alt="Sticky Note: Locality of Reference" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/locality-of-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/locality-of-reference-sticky.svg" alt="Sticky Note: Locality of Reference" width="30%">
 </a>
 
 
@@ -103,14 +103,14 @@ A well-tuned cache for an internet application achieves 90-99% hit rate. Below 8
 
 ### Cache Hierarchy
 
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-handwritten.svg" alt="Handwritten: Cache Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-handwritten.svg" alt="Handwritten: Cache Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-diagram.svg" alt="Diagram: Cache Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-diagram.svg" alt="Diagram: Cache Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-sticky.svg" alt="Sticky Note: Cache Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-hierarchy-sticky.svg" alt="Sticky Note: Cache Hierarchy" width="30%">
 </a>
 
 
@@ -138,14 +138,14 @@ The **cache miss penalty** increases by orders of magnitude at each level. A mis
 
 ### Caching Patterns
 
-<a href="../../assets/images/diagrams/system-design/03-caching/caching-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/caching-patterns-handwritten.svg" alt="Handwritten: Caching Patterns" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/caching-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/caching-patterns-handwritten.svg" alt="Handwritten: Caching Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/caching-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/caching-patterns-diagram.svg" alt="Diagram: Caching Patterns" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/caching-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/caching-patterns-diagram.svg" alt="Diagram: Caching Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/caching-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/caching-patterns-sticky.svg" alt="Sticky Note: Caching Patterns" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/caching-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/caching-patterns-sticky.svg" alt="Sticky Note: Caching Patterns" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ The cache proactively refreshes a key before it expires, based on access pattern
 
 ### Eviction Policies
 
-<a href="../../assets/images/diagrams/system-design/03-caching/eviction-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/eviction-policies-handwritten.svg" alt="Handwritten: Eviction Policies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/eviction-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/eviction-policies-handwritten.svg" alt="Handwritten: Eviction Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/eviction-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/eviction-policies-diagram.svg" alt="Diagram: Eviction Policies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/eviction-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/eviction-policies-diagram.svg" alt="Diagram: Eviction Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/eviction-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/eviction-policies-sticky.svg" alt="Sticky Note: Eviction Policies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/eviction-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/eviction-policies-sticky.svg" alt="Sticky Note: Eviction Policies" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ Maintains three queues: Am (FIFO, for single-access items), A1 (FIFO for recentl
 
 ### Implementing an LRU Cache from Scratch
 
-<a href="../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-handwritten.svg" alt="Handwritten: Implementing an LRU Cache from Scratch" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-handwritten.svg" alt="Handwritten: Implementing an LRU Cache from Scratch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-diagram.svg" alt="Diagram: Implementing an LRU Cache from Scratch" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-diagram.svg" alt="Diagram: Implementing an LRU Cache from Scratch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-sticky.svg" alt="Sticky Note: Implementing an LRU Cache from Scratch" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/implementing-an-lru-cache-from-scratch-sticky.svg" alt="Sticky Note: Implementing an LRU Cache from Scratch" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ class LRUCache:
 
 ### Cache Invalidation
 
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-invalidation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-invalidation-handwritten.svg" alt="Handwritten: Cache Invalidation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-invalidation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-invalidation-handwritten.svg" alt="Handwritten: Cache Invalidation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-invalidation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-invalidation-diagram.svg" alt="Diagram: Cache Invalidation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-invalidation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-invalidation-diagram.svg" alt="Diagram: Cache Invalidation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-invalidation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-invalidation-sticky.svg" alt="Sticky Note: Cache Invalidation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-invalidation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-invalidation-sticky.svg" alt="Sticky Note: Cache Invalidation" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ def update_user(user_id, name):
 
 ### The Thundering Herd Problem
 
-<a href="../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-handwritten.svg" alt="Handwritten: The Thundering Herd Problem" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-handwritten.svg" alt="Handwritten: The Thundering Herd Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-diagram.svg" alt="Diagram: The Thundering Herd Problem" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-diagram.svg" alt="Diagram: The Thundering Herd Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-sticky.svg" alt="Sticky Note: The Thundering Herd Problem" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/the-thundering-herd-problem-sticky.svg" alt="Sticky Note: The Thundering Herd Problem" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ The parameter ß (beta) controls the aggressiveness: ß=0 means refresh immediat
 
 ### Global Cache vs Distributed Cache
 
-<a href="../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-handwritten.svg" alt="Handwritten: Global Cache vs Distributed Cache" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-handwritten.svg" alt="Handwritten: Global Cache vs Distributed Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-diagram.svg" alt="Diagram: Global Cache vs Distributed Cache" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-diagram.svg" alt="Diagram: Global Cache vs Distributed Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-sticky.svg" alt="Sticky Note: Global Cache vs Distributed Cache" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/global-cache-vs-distributed-cache-sticky.svg" alt="Sticky Note: Global Cache vs Distributed Cache" width="30%">
 </a>
 
 
@@ -598,14 +598,14 @@ Memcached:
 
 ### Cache Consistency
 
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-consistency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-consistency-handwritten.svg" alt="Handwritten: Cache Consistency" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-consistency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-consistency-handwritten.svg" alt="Handwritten: Cache Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-consistency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-consistency-diagram.svg" alt="Diagram: Cache Consistency" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-consistency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-consistency-diagram.svg" alt="Diagram: Cache Consistency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cache-consistency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cache-consistency-sticky.svg" alt="Sticky Note: Cache Consistency" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cache-consistency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cache-consistency-sticky.svg" alt="Sticky Note: Cache Consistency" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ Between these extremes:
 
 ### CDN Caching
 
-<a href="../../assets/images/diagrams/system-design/03-caching/cdn-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cdn-caching-handwritten.svg" alt="Handwritten: CDN Caching" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cdn-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cdn-caching-handwritten.svg" alt="Handwritten: CDN Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cdn-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cdn-caching-diagram.svg" alt="Diagram: CDN Caching" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cdn-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cdn-caching-diagram.svg" alt="Diagram: CDN Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/cdn-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/cdn-caching-sticky.svg" alt="Sticky Note: CDN Caching" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/cdn-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/cdn-caching-sticky.svg" alt="Sticky Note: CDN Caching" width="30%">
 </a>
 
 
@@ -656,14 +656,14 @@ Cache-Control: private, max-age=0                     # do not cache
 
 ### Real-World Systems
 
-<a href="../../assets/images/diagrams/system-design/03-caching/real-world-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/real-world-systems-handwritten.svg" alt="Handwritten: Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/real-world-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/real-world-systems-handwritten.svg" alt="Handwritten: Real-World Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/real-world-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/real-world-systems-diagram.svg" alt="Diagram: Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/real-world-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/real-world-systems-diagram.svg" alt="Diagram: Real-World Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/03-caching/real-world-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/03-caching/real-world-systems-sticky.svg" alt="Sticky Note: Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/03-caching/real-world-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/03-caching/real-world-systems-sticky.svg" alt="Sticky Note: Real-World Systems" width="30%">
 </a>
 
 

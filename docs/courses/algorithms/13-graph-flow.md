@@ -67,14 +67,14 @@ flowchart LR
 
 ### 13.1 Flow Networks
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-handwritten.svg" alt="Handwritten: 13.1 Flow Networks" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-handwritten.svg" alt="Handwritten: 13.1 Flow Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-diagram.svg" alt="Diagram: 13.1 Flow Networks" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-diagram.svg" alt="Diagram: 13.1 Flow Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-sticky.svg" alt="Sticky Note: 13.1 Flow Networks" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-1-flow-networks-sticky.svg" alt="Sticky Note: 13.1 Flow Networks" width="30%">
 </a>
 
 
@@ -113,14 +113,14 @@ A forward edge holds remaining capacity; a backward edge allows "undoing" flow â
 
 ### 13.2 Max-Flow Min-Cut Theorem
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-handwritten.svg" alt="Handwritten: 13.2 Max-Flow Min-Cut Theorem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-handwritten.svg" alt="Handwritten: 13.2 Max-Flow Min-Cut Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-diagram.svg" alt="Diagram: 13.2 Max-Flow Min-Cut Theorem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-diagram.svg" alt="Diagram: 13.2 Max-Flow Min-Cut Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-sticky.svg" alt="Sticky Note: 13.2 Max-Flow Min-Cut Theorem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-2-max-flow-min-cut-theorem-sticky.svg" alt="Sticky Note: 13.2 Max-Flow Min-Cut Theorem" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ c(S, T) = \sum_{u \in S, v \in T} c(u,v)
 
 ### 13.3 Ford-Fulkerson Method
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-handwritten.svg" alt="Handwritten: 13.3 Ford-Fulkerson Method" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-handwritten.svg" alt="Handwritten: 13.3 Ford-Fulkerson Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-diagram.svg" alt="Diagram: 13.3 Ford-Fulkerson Method" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-diagram.svg" alt="Diagram: 13.3 Ford-Fulkerson Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-sticky.svg" alt="Sticky Note: 13.3 Ford-Fulkerson Method" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-3-ford-fulkerson-method-sticky.svg" alt="Sticky Note: 13.3 Ford-Fulkerson Method" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ Ford-Fulkerson runs in \( O(E \cdot |f^*|) \) where \( |f^*| \) is the maximum f
 
 ### 13.4 Edmonds-Karp Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-handwritten.svg" alt="Handwritten: 13.4 Edmonds-Karp Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-handwritten.svg" alt="Handwritten: 13.4 Edmonds-Karp Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-diagram.svg" alt="Diagram: 13.4 Edmonds-Karp Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-diagram.svg" alt="Diagram: 13.4 Edmonds-Karp Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-sticky.svg" alt="Sticky Note: 13.4 Edmonds-Karp Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-4-edmonds-karp-algorithm-sticky.svg" alt="Sticky Note: 13.4 Edmonds-Karp Algorithm" width="30%">
 </a>
 
 
@@ -627,14 +627,14 @@ Edmonds-Karp runs in \( O(VE^2) \).
 
 ### 13.5 Dinic's Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-handwritten.svg" alt="Handwritten: 13.5 Dinic's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-handwritten.svg" alt="Handwritten: 13.5 Dinic's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-diagram.svg" alt="Diagram: 13.5 Dinic's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-diagram.svg" alt="Diagram: 13.5 Dinic's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-sticky.svg" alt="Sticky Note: 13.5 Dinic's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-5-dinic-s-algorithm-sticky.svg" alt="Sticky Note: 13.5 Dinic's Algorithm" width="30%">
 </a>
 
 
@@ -958,14 +958,14 @@ Dinic runs in \( O(V^2 E) \) general, \( O(E \sqrt{V}) \) for unit-capacity netw
 
 ### 13.6 Push-Relabel Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-handwritten.svg" alt="Handwritten: 13.6 Push-Relabel Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-handwritten.svg" alt="Handwritten: 13.6 Push-Relabel Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-diagram.svg" alt="Diagram: 13.6 Push-Relabel Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-diagram.svg" alt="Diagram: 13.6 Push-Relabel Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-sticky.svg" alt="Sticky Note: 13.6 Push-Relabel Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-6-push-relabel-algorithm-sticky.svg" alt="Sticky Note: 13.6 Push-Relabel Algorithm" width="30%">
 </a>
 
 
@@ -1174,14 +1174,14 @@ Push-Relabel runs in \( O(V^2 \sqrt{E}) \) with highest-label selection, \( O(V^
 
 ### 13.7 Min-Cut (Finding the Bottleneck)
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-handwritten.svg" alt="Handwritten: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-handwritten.svg" alt="Handwritten: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-diagram.svg" alt="Diagram: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-diagram.svg" alt="Diagram: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-sticky.svg" alt="Sticky Note: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-7-min-cut-finding-the-bottleneck-sticky.svg" alt="Sticky Note: 13.7 Min-Cut (Finding the Bottleneck)" width="30%">
 </a>
 
 
@@ -1270,14 +1270,14 @@ std::pair<int, std::vector<bool>> minCut(
 
 ### 13.8 Bipartite Matching via Max Flow
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-handwritten.svg" alt="Handwritten: 13.8 Bipartite Matching via Max Flow" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-handwritten.svg" alt="Handwritten: 13.8 Bipartite Matching via Max Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-diagram.svg" alt="Diagram: 13.8 Bipartite Matching via Max Flow" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-diagram.svg" alt="Diagram: 13.8 Bipartite Matching via Max Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-sticky.svg" alt="Sticky Note: 13.8 Bipartite Matching via Max Flow" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-8-bipartite-matching-via-max-flow-sticky.svg" alt="Sticky Note: 13.8 Bipartite Matching via Max Flow" width="30%">
 </a>
 
 
@@ -1303,14 +1303,14 @@ std::pair<int, std::vector<bool>> minCut(
 
 ### 13.9 Assignment Problem
 
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-handwritten.svg" alt="Handwritten: 13.9 Assignment Problem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-handwritten.svg" alt="Handwritten: 13.9 Assignment Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-diagram.svg" alt="Diagram: 13.9 Assignment Problem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-diagram.svg" alt="Diagram: 13.9 Assignment Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-sticky.svg" alt="Sticky Note: 13.9 Assignment Problem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/13-graph-flow/13-9-assignment-problem-sticky.svg" alt="Sticky Note: 13.9 Assignment Problem" width="30%">
 </a>
 
 

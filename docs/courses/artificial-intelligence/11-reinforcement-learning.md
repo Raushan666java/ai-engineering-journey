@@ -50,14 +50,14 @@ Reinforcement learning is this exact process, formalized mathematically. The age
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ This loop continues until a terminal state is reached (e.g., game over, goal ach
 
 ### The Return
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-handwritten.svg" alt="Handwritten: The Return" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-handwritten.svg" alt="Handwritten: The Return" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-diagram.svg" alt="Diagram: The Return" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-diagram.svg" alt="Diagram: The Return" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-sticky.svg" alt="Sticky Note: The Return" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-return-sticky.svg" alt="Sticky Note: The Return" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ where $\gamma \in [0, 1]$ is the **discount factor**. A small $\gamma$ makes the
 
 ### 11.1.1 Key Components
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-handwritten.svg" alt="Handwritten: 11.1.1 Key Components" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-handwritten.svg" alt="Handwritten: 11.1.1 Key Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-diagram.svg" alt="Diagram: 11.1.1 Key Components" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-diagram.svg" alt="Diagram: 11.1.1 Key Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-sticky.svg" alt="Sticky Note: 11.1.1 Key Components" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-1-key-components-sticky.svg" alt="Sticky Note: 11.1.1 Key Components" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ where $\gamma \in [0, 1]$ is the **discount factor**. A small $\gamma$ makes the
 
 ### 11.1.2 How RL Differs from Other Learning Paradigms
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-handwritten.svg" alt="Handwritten: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-handwritten.svg" alt="Handwritten: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-diagram.svg" alt="Diagram: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-diagram.svg" alt="Diagram: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-sticky.svg" alt="Sticky Note: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-1-2-how-rl-differs-from-other-learning-paradigms-sticky.svg" alt="Sticky Note: 11.1.2 How RL Differs from Other Learning Paradigms" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ where $\gamma \in [0, 1]$ is the **discount factor**. A small $\gamma$ makes the
 
 ### Real-World Analogy: Training a Dog
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-handwritten.svg" alt="Handwritten: Real-World Analogy: Training a Dog" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-handwritten.svg" alt="Handwritten: Real-World Analogy: Training a Dog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-diagram.svg" alt="Diagram: Real-World Analogy: Training a Dog" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-diagram.svg" alt="Diagram: Real-World Analogy: Training a Dog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-sticky.svg" alt="Sticky Note: Real-World Analogy: Training a Dog" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-training-a-dog-sticky.svg" alt="Sticky Note: Real-World Analogy: Training a Dog" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ $$P(S_{t+1} \mid S_t, A_t, S_{t-1}, A_{t-1}, \dots) = P(S_{t+1} \mid S_t, A_t)$$
 
 ### Real-World Analogy: Navigation Robot
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-handwritten.svg" alt="Handwritten: Real-World Analogy: Navigation Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-handwritten.svg" alt="Handwritten: Real-World Analogy: Navigation Robot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-diagram.svg" alt="Diagram: Real-World Analogy: Navigation Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-diagram.svg" alt="Diagram: Real-World Analogy: Navigation Robot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-sticky.svg" alt="Sticky Note: Real-World Analogy: Navigation Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-navigation-robot-sticky.svg" alt="Sticky Note: Real-World Analogy: Navigation Robot" width="30%">
 </a>
 
 
@@ -197,14 +197,14 @@ $$P(S_{t+1} \mid S_t, A_t, S_{t-1}, A_{t-1}, \dots) = P(S_{t+1} \mid S_t, A_t)$$
 
 ### 11.2.1 Bellman Expectation Equation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-handwritten.svg" alt="Handwritten: 11.2.1 Bellman Expectation Equation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-handwritten.svg" alt="Handwritten: 11.2.1 Bellman Expectation Equation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-diagram.svg" alt="Diagram: 11.2.1 Bellman Expectation Equation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-diagram.svg" alt="Diagram: 11.2.1 Bellman Expectation Equation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-sticky.svg" alt="Sticky Note: 11.2.1 Bellman Expectation Equation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-1-bellman-expectation-equation-sticky.svg" alt="Sticky Note: 11.2.1 Bellman Expectation Equation" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ $$Q_\pi(s, a) = R(s, a) + \gamma \sum_{s'} P(s' \mid s, a) \sum_{a'} \pi(a' \mid
 
 ### 11.2.2 Bellman Optimality Equation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-handwritten.svg" alt="Handwritten: 11.2.2 Bellman Optimality Equation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-handwritten.svg" alt="Handwritten: 11.2.2 Bellman Optimality Equation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-diagram.svg" alt="Diagram: 11.2.2 Bellman Optimality Equation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-diagram.svg" alt="Diagram: 11.2.2 Bellman Optimality Equation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-sticky.svg" alt="Sticky Note: 11.2.2 Bellman Optimality Equation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-2-2-bellman-optimality-equation-sticky.svg" alt="Sticky Note: 11.2.2 Bellman Optimality Equation" width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ When the model (transitions $P$ and rewards $R$) is known, we can compute the op
 
 ### 11.3.1 Policy Evaluation (Prediction)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-handwritten.svg" alt="Handwritten: 11.3.1 Policy Evaluation (Prediction)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-handwritten.svg" alt="Handwritten: 11.3.1 Policy Evaluation (Prediction)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-diagram.svg" alt="Diagram: 11.3.1 Policy Evaluation (Prediction)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-diagram.svg" alt="Diagram: 11.3.1 Policy Evaluation (Prediction)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-sticky.svg" alt="Sticky Note: 11.3.1 Policy Evaluation (Prediction)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-1-policy-evaluation-prediction-sticky.svg" alt="Sticky Note: 11.3.1 Policy Evaluation (Prediction)" width="30%">
 </a>
 
 
@@ -399,14 +399,14 @@ def policy_evaluation(P, R, gamma, policy, theta=1e-6):
 
 ### 11.3.2 Policy Iteration
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-handwritten.svg" alt="Handwritten: 11.3.2 Policy Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-handwritten.svg" alt="Handwritten: 11.3.2 Policy Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-diagram.svg" alt="Diagram: 11.3.2 Policy Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-diagram.svg" alt="Diagram: 11.3.2 Policy Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-sticky.svg" alt="Sticky Note: 11.3.2 Policy Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-2-policy-iteration-sticky.svg" alt="Sticky Note: 11.3.2 Policy Iteration" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ def policy_iteration(P, R, gamma, n_actions, theta=1e-6):
 
 ### 11.3.3 Value Iteration
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-handwritten.svg" alt="Handwritten: 11.3.3 Value Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-handwritten.svg" alt="Handwritten: 11.3.3 Value Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-diagram.svg" alt="Diagram: 11.3.3 Value Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-diagram.svg" alt="Diagram: 11.3.3 Value Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-sticky.svg" alt="Sticky Note: 11.3.3 Value Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-3-value-iteration-sticky.svg" alt="Sticky Note: 11.3.3 Value Iteration" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ def value_iteration(P, R, gamma, n_actions, theta=1e-6):
 
 ### 11.3.4 Value Iteration vs Policy Iteration
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-handwritten.svg" alt="Handwritten: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-handwritten.svg" alt="Handwritten: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-diagram.svg" alt="Diagram: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-diagram.svg" alt="Diagram: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-sticky.svg" alt="Sticky Note: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/11-3-4-value-iteration-vs-policy-iteration-sticky.svg" alt="Sticky Note: 11.3.4 Value Iteration vs Policy Iteration" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ The core dilemma: the agent must **explore** unknown actions to discover better 
 
 ### Standard Exploration Strategies
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-handwritten.svg" alt="Handwritten: Standard Exploration Strategies" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-handwritten.svg" alt="Handwritten: Standard Exploration Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-diagram.svg" alt="Diagram: Standard Exploration Strategies" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-diagram.svg" alt="Diagram: Standard Exploration Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-sticky.svg" alt="Sticky Note: Standard Exploration Strategies" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/standard-exploration-strategies-sticky.svg" alt="Sticky Note: Standard Exploration Strategies" width="30%">
 </a>
 
 
@@ -760,14 +760,14 @@ TD learning combines ideas from dynamic programming (bootstrapping) and Monte Ca
 
 ### TD(0) Update
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-handwritten.svg" alt="Handwritten: TD(0) Update" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-handwritten.svg" alt="Handwritten: TD(0) Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-diagram.svg" alt="Diagram: TD(0) Update" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-diagram.svg" alt="Diagram: TD(0) Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-sticky.svg" alt="Sticky Note: TD(0) Update" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/td-0-update-sticky.svg" alt="Sticky Note: TD(0) Update" width="30%">
 </a>
 
 
@@ -779,14 +779,14 @@ The **TD error** $\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)$ is the differ
 
 ### Advantages of TD Learning
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-handwritten.svg" alt="Handwritten: Advantages of TD Learning" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-handwritten.svg" alt="Handwritten: Advantages of TD Learning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-diagram.svg" alt="Diagram: Advantages of TD Learning" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-diagram.svg" alt="Diagram: Advantages of TD Learning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-sticky.svg" alt="Sticky Note: Advantages of TD Learning" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantages-of-td-learning-sticky.svg" alt="Sticky Note: Advantages of TD Learning" width="30%">
 </a>
 
 
@@ -809,14 +809,14 @@ Q-learning is **off-policy**: it learns the optimal Q-function $Q^*$ while follo
 
 ### Real-World Analogy: Learning Chess from Watching
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-handwritten.svg" alt="Handwritten: Real-World Analogy: Learning Chess from Watching" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-handwritten.svg" alt="Handwritten: Real-World Analogy: Learning Chess from Watching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-diagram.svg" alt="Diagram: Real-World Analogy: Learning Chess from Watching" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-diagram.svg" alt="Diagram: Real-World Analogy: Learning Chess from Watching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-sticky.svg" alt="Sticky Note: Real-World Analogy: Learning Chess from Watching" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-chess-from-watching-sticky.svg" alt="Sticky Note: Real-World Analogy: Learning Chess from Watching" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ Q-learning is **off-policy**: it learns the optimal Q-function $Q^*$ while follo
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -847,14 +847,14 @@ Q-learning is **off-policy**: it learns the optimal Q-function $Q^*$ while follo
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -873,14 +873,14 @@ function Q-LEARNING(env, gamma, alpha, epsilon, episodes) returns Q
 
 ### Step-by-Step Dry Run: 1D Grid of 5 Cells
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-diagram.svg" alt="Diagram: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-diagram.svg" alt="Diagram: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-1d-grid-of-5-cells-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: 1D Grid of 5 Cells" width="30%">
 </a>
 
 
@@ -1118,14 +1118,14 @@ The key difference from Q-learning: SARSA uses the **actual next action** $A_{t+
 
 ### Real-World Analogy: Defensive Driving
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-handwritten.svg" alt="Handwritten: Real-World Analogy: Defensive Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-handwritten.svg" alt="Handwritten: Real-World Analogy: Defensive Driving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-diagram.svg" alt="Diagram: Real-World Analogy: Defensive Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-diagram.svg" alt="Diagram: Real-World Analogy: Defensive Driving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-sticky.svg" alt="Sticky Note: Real-World Analogy: Defensive Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-defensive-driving-sticky.svg" alt="Sticky Note: Real-World Analogy: Defensive Driving" width="30%">
 </a>
 
 
@@ -1133,14 +1133,14 @@ The key difference from Q-learning: SARSA uses the **actual next action** $A_{t+
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -1156,14 +1156,14 @@ The key difference from Q-learning: SARSA uses the **actual next action** $A_{t+
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1183,14 +1183,14 @@ function SARSA(env, gamma, alpha, epsilon, episodes) returns Q
 
 ### Step-by-Step Dry Run: Cliff Walking
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Cliff Walking" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Cliff Walking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Cliff Walking" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Cliff Walking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Cliff Walking" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-cliff-walking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Cliff Walking" width="30%">
 </a>
 
 
@@ -1391,14 +1391,14 @@ public class SARSA {
 
 ### Q-Learning vs SARSA: When to Use Which
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-handwritten.svg" alt="Handwritten: Q-Learning vs SARSA: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-handwritten.svg" alt="Handwritten: Q-Learning vs SARSA: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-diagram.svg" alt="Diagram: Q-Learning vs SARSA: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-diagram.svg" alt="Diagram: Q-Learning vs SARSA: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-sticky.svg" alt="Sticky Note: Q-Learning vs SARSA: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/q-learning-vs-sarsa-when-to-use-which-sticky.svg" alt="Sticky Note: Q-Learning vs SARSA: When to Use Which" width="30%">
 </a>
 
 
@@ -1418,14 +1418,14 @@ Tabular RL becomes infeasible for large or continuous state spaces. **Function a
 
 ### Linear Function Approximation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-handwritten.svg" alt="Handwritten: Linear Function Approximation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-handwritten.svg" alt="Handwritten: Linear Function Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-diagram.svg" alt="Diagram: Linear Function Approximation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-diagram.svg" alt="Diagram: Linear Function Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-sticky.svg" alt="Sticky Note: Linear Function Approximation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/linear-function-approximation-sticky.svg" alt="Sticky Note: Linear Function Approximation" width="30%">
 </a>
 
 
@@ -1435,14 +1435,14 @@ Update: $\theta \leftarrow \theta + \alpha [R + \gamma \max_a Q(s', a'; \theta) 
 
 ### Neural Network Approximation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-handwritten.svg" alt="Handwritten: Neural Network Approximation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-handwritten.svg" alt="Handwritten: Neural Network Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-diagram.svg" alt="Diagram: Neural Network Approximation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-diagram.svg" alt="Diagram: Neural Network Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-sticky.svg" alt="Sticky Note: Neural Network Approximation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/neural-network-approximation-sticky.svg" alt="Sticky Note: Neural Network Approximation" width="30%">
 </a>
 
 
@@ -1456,14 +1456,14 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
 
 ### Real-World Analogy: Apprentice Learning from Memory
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-handwritten.svg" alt="Handwritten: Real-World Analogy: Apprentice Learning from Memory" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-handwritten.svg" alt="Handwritten: Real-World Analogy: Apprentice Learning from Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-diagram.svg" alt="Diagram: Real-World Analogy: Apprentice Learning from Memory" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-diagram.svg" alt="Diagram: Real-World Analogy: Apprentice Learning from Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-sticky.svg" alt="Sticky Note: Real-World Analogy: Apprentice Learning from Memory" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-apprentice-learning-from-memory-sticky.svg" alt="Sticky Note: Real-World Analogy: Apprentice Learning from Memory" width="30%">
 </a>
 
 
@@ -1471,14 +1471,14 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
 
 ### Key Innovations
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-handwritten.svg" alt="Handwritten: Key Innovations" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-handwritten.svg" alt="Handwritten: Key Innovations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-diagram.svg" alt="Diagram: Key Innovations" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-diagram.svg" alt="Diagram: Key Innovations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-sticky.svg" alt="Sticky Note: Key Innovations" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-innovations-sticky.svg" alt="Sticky Note: Key Innovations" width="30%">
 </a>
 
 
@@ -1488,14 +1488,14 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -1516,14 +1516,14 @@ DQN (Mnih et al., 2015) uses a deep neural network to approximate $Q(s, a; \thet
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1548,14 +1548,14 @@ function DQN-TRAIN(env, buffer_size, batch_size, gamma)
 
 ### Step-by-Step Dry Run: Neural Net Training (Conceptual)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/step-by-step-dry-run-neural-net-training-conceptual-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Neural Net Training (Conceptual)" width="30%">
 </a>
 
 
@@ -1698,14 +1698,14 @@ Policy gradient methods directly optimize the policy $\pi_\theta(a \mid s)$ with
 
 ### The Policy Gradient Theorem
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-handwritten.svg" alt="Handwritten: The Policy Gradient Theorem" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-handwritten.svg" alt="Handwritten: The Policy Gradient Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-diagram.svg" alt="Diagram: The Policy Gradient Theorem" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-diagram.svg" alt="Diagram: The Policy Gradient Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-sticky.svg" alt="Sticky Note: The Policy Gradient Theorem" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/the-policy-gradient-theorem-sticky.svg" alt="Sticky Note: The Policy Gradient Theorem" width="30%">
 </a>
 
 
@@ -1715,14 +1715,14 @@ The gradient of expected return w.r.t. policy parameters equals the expected gra
 
 ### REINFORCE (Monte Carlo Policy Gradient)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-handwritten.svg" alt="Handwritten: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-handwritten.svg" alt="Handwritten: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-diagram.svg" alt="Diagram: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-diagram.svg" alt="Diagram: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-sticky.svg" alt="Sticky Note: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/reinforce-monte-carlo-policy-gradient-sticky.svg" alt="Sticky Note: REINFORCE (Monte Carlo Policy Gradient)" width="30%">
 </a>
 
 
@@ -1730,14 +1730,14 @@ $$\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^{T_i} \nab
 
 ### Real-World Analogy: Learning to Juggle
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-handwritten.svg" alt="Handwritten: Real-World Analogy: Learning to Juggle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-handwritten.svg" alt="Handwritten: Real-World Analogy: Learning to Juggle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-diagram.svg" alt="Diagram: Real-World Analogy: Learning to Juggle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-diagram.svg" alt="Diagram: Real-World Analogy: Learning to Juggle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-sticky.svg" alt="Sticky Note: Real-World Analogy: Learning to Juggle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/real-world-analogy-learning-to-juggle-sticky.svg" alt="Sticky Note: Real-World Analogy: Learning to Juggle" width="30%">
 </a>
 
 
@@ -1754,14 +1754,14 @@ $$\nabla_\theta J(\theta) \approx \frac{1}{N} \sum_{i=1}^N \sum_{t=0}^{T_i} \nab
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1884,14 +1884,14 @@ The critic provides a lower-variance baseline for the actor's gradient updates.
 
 ### Advantage Actor-Critic (A2C)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-handwritten.svg" alt="Handwritten: Advantage Actor-Critic (A2C)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-handwritten.svg" alt="Handwritten: Advantage Actor-Critic (A2C)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-diagram.svg" alt="Diagram: Advantage Actor-Critic (A2C)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-diagram.svg" alt="Diagram: Advantage Actor-Critic (A2C)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-sticky.svg" alt="Sticky Note: Advantage Actor-Critic (A2C)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/advantage-actor-critic-a2c-sticky.svg" alt="Sticky Note: Advantage Actor-Critic (A2C)" width="30%">
 </a>
 
 
@@ -1903,14 +1903,14 @@ The TD error $\delta_t = R_{t+1} + \gamma V(S_{t+1}) - V(S_t)$ is an unbiased es
 
 ### Proximal Policy Optimization (PPO)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-handwritten.svg" alt="Handwritten: Proximal Policy Optimization (PPO)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-handwritten.svg" alt="Handwritten: Proximal Policy Optimization (PPO)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-diagram.svg" alt="Diagram: Proximal Policy Optimization (PPO)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-diagram.svg" alt="Diagram: Proximal Policy Optimization (PPO)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-sticky.svg" alt="Sticky Note: Proximal Policy Optimization (PPO)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/proximal-policy-optimization-ppo-sticky.svg" alt="Sticky Note: Proximal Policy Optimization (PPO)" width="30%">
 </a>
 
 
@@ -1985,14 +1985,14 @@ where $r_t(\theta) = \pi_\theta(a_t \mid s_t) / \pi_{\theta_{\text{old}}}(a_t \m
 
 ### Common RL Interview Questions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-handwritten.svg" alt="Handwritten: Common RL Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-handwritten.svg" alt="Handwritten: Common RL Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-diagram.svg" alt="Diagram: Common RL Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-diagram.svg" alt="Diagram: Common RL Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-sticky.svg" alt="Sticky Note: Common RL Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/common-rl-interview-questions-sticky.svg" alt="Sticky Note: Common RL Interview Questions" width="30%">
 </a>
 
 
@@ -2038,14 +2038,14 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Key Papers to Know
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-handwritten.svg" alt="Handwritten: Key Papers to Know" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-handwritten.svg" alt="Handwritten: Key Papers to Know" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-diagram.svg" alt="Diagram: Key Papers to Know" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-diagram.svg" alt="Diagram: Key Papers to Know" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-sticky.svg" alt="Sticky Note: Key Papers to Know" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/key-papers-to-know-sticky.svg" alt="Sticky Note: Key Papers to Know" width="30%">
 </a>
 
 
@@ -2063,14 +2063,14 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Game Playing
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-handwritten.svg" alt="Handwritten: Game Playing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-handwritten.svg" alt="Handwritten: Game Playing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-diagram.svg" alt="Diagram: Game Playing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-diagram.svg" alt="Diagram: Game Playing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-sticky.svg" alt="Sticky Note: Game Playing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/game-playing-sticky.svg" alt="Sticky Note: Game Playing" width="30%">
 </a>
 
 
@@ -2084,14 +2084,14 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Robotics
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-handwritten.svg" alt="Handwritten: Robotics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-handwritten.svg" alt="Handwritten: Robotics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-diagram.svg" alt="Diagram: Robotics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-diagram.svg" alt="Diagram: Robotics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-sticky.svg" alt="Sticky Note: Robotics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/robotics-sticky.svg" alt="Sticky Note: Robotics" width="30%">
 </a>
 
 
@@ -2101,14 +2101,14 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Autonomous Driving
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-handwritten.svg" alt="Handwritten: Autonomous Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-handwritten.svg" alt="Handwritten: Autonomous Driving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-diagram.svg" alt="Diagram: Autonomous Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-diagram.svg" alt="Diagram: Autonomous Driving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-sticky.svg" alt="Sticky Note: Autonomous Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/autonomous-driving-sticky.svg" alt="Sticky Note: Autonomous Driving" width="30%">
 </a>
 
 
@@ -2118,14 +2118,14 @@ The online network $\theta$ selects the action; the target network $\theta^-$ ev
 
 ### Recommendation Systems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-handwritten.svg" alt="Handwritten: Recommendation Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-handwritten.svg" alt="Handwritten: Recommendation Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-diagram.svg" alt="Diagram: Recommendation Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-diagram.svg" alt="Diagram: Recommendation Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-sticky.svg" alt="Sticky Note: Recommendation Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/11-reinforcement-learning/recommendation-systems-sticky.svg" alt="Sticky Note: Recommendation Systems" width="30%">
 </a>
 
 

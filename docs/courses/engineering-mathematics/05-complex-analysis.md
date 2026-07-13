@@ -41,14 +41,14 @@ flowchart LR
 
 ### 5.1 Complex Numbers
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-handwritten.svg" alt="Handwritten: 5.1 Complex Numbers" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-handwritten.svg" alt="Handwritten: 5.1 Complex Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-diagram.svg" alt="Diagram: 5.1 Complex Numbers" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-diagram.svg" alt="Diagram: 5.1 Complex Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-sticky.svg" alt="Sticky Note: 5.1 Complex Numbers" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-1-complex-numbers-sticky.svg" alt="Sticky Note: 5.1 Complex Numbers" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ These lie on the unit circle at angles $2\pi k/n$, equally spaced.
 
 ### 5.2 Functions of a Complex Variable
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-handwritten.svg" alt="Handwritten: 5.2 Functions of a Complex Variable" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-handwritten.svg" alt="Handwritten: 5.2 Functions of a Complex Variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-diagram.svg" alt="Diagram: 5.2 Functions of a Complex Variable" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-diagram.svg" alt="Diagram: 5.2 Functions of a Complex Variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-sticky.svg" alt="Sticky Note: 5.2 Functions of a Complex Variable" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-2-functions-of-a-complex-variable-sticky.svg" alt="Sticky Note: 5.2 Functions of a Complex Variable" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ where $u$ and $v$ are real-valued functions of $(x,y)$.
 
 ### 5.3 Analytic (Holomorphic) Functions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-handwritten.svg" alt="Handwritten: 5.3 Analytic (Holomorphic) Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-handwritten.svg" alt="Handwritten: 5.3 Analytic (Holomorphic) Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-diagram.svg" alt="Diagram: 5.3 Analytic (Holomorphic) Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-diagram.svg" alt="Diagram: 5.3 Analytic (Holomorphic) Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-sticky.svg" alt="Sticky Note: 5.3 Analytic (Holomorphic) Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-3-analytic-holomorphic-functions-sticky.svg" alt="Sticky Note: 5.3 Analytic (Holomorphic) Functions" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ $$f'(z) = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x} = \frac
 
 ### 5.4 Elementary Functions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-handwritten.svg" alt="Handwritten: 5.4 Elementary Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-handwritten.svg" alt="Handwritten: 5.4 Elementary Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-diagram.svg" alt="Diagram: 5.4 Elementary Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-diagram.svg" alt="Diagram: 5.4 Elementary Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-sticky.svg" alt="Sticky Note: 5.4 Elementary Functions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-4-elementary-functions-sticky.svg" alt="Sticky Note: 5.4 Elementary Functions" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ Properties: $\log(z_1 z_2) = \log z_1 + \log z_2$ (mod $2\pi i$), $\log(e^z) = z
 
 ### 5.5 Contour Integration
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-handwritten.svg" alt="Handwritten: 5.5 Contour Integration" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-handwritten.svg" alt="Handwritten: 5.5 Contour Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-diagram.svg" alt="Diagram: 5.5 Contour Integration" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-diagram.svg" alt="Diagram: 5.5 Contour Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-sticky.svg" alt="Sticky Note: 5.5 Contour Integration" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-5-contour-integration-sticky.svg" alt="Sticky Note: 5.5 Contour Integration" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ $$\left|\int_\gamma f(z)\,dz\right| \leq M L$$
 
 ### 5.6 Cauchy's Theorem and Integral Formula
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-handwritten.svg" alt="Handwritten: 5.6 Cauchy's Theorem and Integral Formula" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-handwritten.svg" alt="Handwritten: 5.6 Cauchy's Theorem and Integral Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-diagram.svg" alt="Diagram: 5.6 Cauchy's Theorem and Integral Formula" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-diagram.svg" alt="Diagram: 5.6 Cauchy's Theorem and Integral Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-sticky.svg" alt="Sticky Note: 5.6 Cauchy's Theorem and Integral Formula" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-6-cauchy-s-theorem-and-integral-formula-sticky.svg" alt="Sticky Note: 5.6 Cauchy's Theorem and Integral Formula" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ $$f^{(n)}(z_0) = \frac{n!}{2\pi i} \oint_C \frac{f(z)}{(z - z_0)^{n+1}}\,dz$$
 
 ### 5.7 Series Representations
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-handwritten.svg" alt="Handwritten: 5.7 Series Representations" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-handwritten.svg" alt="Handwritten: 5.7 Series Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-diagram.svg" alt="Diagram: 5.7 Series Representations" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-diagram.svg" alt="Diagram: 5.7 Series Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-sticky.svg" alt="Sticky Note: 5.7 Series Representations" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-7-series-representations-sticky.svg" alt="Sticky Note: 5.7 Series Representations" width="30%">
 </a>
 
 
@@ -271,14 +271,14 @@ The **principal part** is $\sum_{n=-\infty}^{-1} a_n (z - z_0)^n$ (negative powe
 
 ### 5.8 Classification of Singularities
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-handwritten.svg" alt="Handwritten: 5.8 Classification of Singularities" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-handwritten.svg" alt="Handwritten: 5.8 Classification of Singularities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-diagram.svg" alt="Diagram: 5.8 Classification of Singularities" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-diagram.svg" alt="Diagram: 5.8 Classification of Singularities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-sticky.svg" alt="Sticky Note: 5.8 Classification of Singularities" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-8-classification-of-singularities-sticky.svg" alt="Sticky Note: 5.8 Classification of Singularities" width="30%">
 </a>
 
 
@@ -300,14 +300,14 @@ The **principal part** is $\sum_{n=-\infty}^{-1} a_n (z - z_0)^n$ (negative powe
 
 ### 5.9 Residue Theorem
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-handwritten.svg" alt="Handwritten: 5.9 Residue Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-handwritten.svg" alt="Handwritten: 5.9 Residue Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-diagram.svg" alt="Diagram: 5.9 Residue Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-diagram.svg" alt="Diagram: 5.9 Residue Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-sticky.svg" alt="Sticky Note: 5.9 Residue Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-9-residue-theorem-sticky.svg" alt="Sticky Note: 5.9 Residue Theorem" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ This is one of the most powerful results in all of mathematics ? it reduces cont
 
 ### 5.10 Evaluation of Real Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-handwritten.svg" alt="Handwritten: 5.10 Evaluation of Real Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-handwritten.svg" alt="Handwritten: 5.10 Evaluation of Real Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-diagram.svg" alt="Diagram: 5.10 Evaluation of Real Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-diagram.svg" alt="Diagram: 5.10 Evaluation of Real Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-sticky.svg" alt="Sticky Note: 5.10 Evaluation of Real Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-10-evaluation-of-real-integrals-sticky.svg" alt="Sticky Note: 5.10 Evaluation of Real Integrals" width="30%">
 </a>
 
 
@@ -368,14 +368,14 @@ $$\int_0^{2\pi} F(\cos\theta, \sin\theta)\,d\theta = \oint_{|z|=1} f(z)\,dz = 2\
 
 ### 5.11 Applications in Engineering
 
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-handwritten.svg" alt="Handwritten: 5.11 Applications in Engineering" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-handwritten.svg" alt="Handwritten: 5.11 Applications in Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-diagram.svg" alt="Diagram: 5.11 Applications in Engineering" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-diagram.svg" alt="Diagram: 5.11 Applications in Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-sticky.svg" alt="Sticky Note: 5.11 Applications in Engineering" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/05-complex-analysis/5-11-applications-in-engineering-sticky.svg" alt="Sticky Note: 5.11 Applications in Engineering" width="30%">
 </a>
 
 

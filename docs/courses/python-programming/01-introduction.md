@@ -76,14 +76,14 @@ While Python uses indentation for blocks, TypeScript uses curly braces `{}`. Bot
 
 ### More on Python's Design Philosophy
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-handwritten.svg" alt="Handwritten: More on Python's Design Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-handwritten.svg" alt="Handwritten: More on Python's Design Philosophy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-diagram.svg" alt="Diagram: More on Python's Design Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-diagram.svg" alt="Diagram: More on Python's Design Philosophy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-sticky.svg" alt="Sticky Note: More on Python's Design Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/more-on-python-s-design-philosophy-sticky.svg" alt="Sticky Note: More on Python's Design Philosophy" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ import this  # Displays all 19 aphorisms
 
 ### Python vs. Other Languages: Philosophy Comparison
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-handwritten.svg" alt="Handwritten: Python vs. Other Languages: Philosophy Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-handwritten.svg" alt="Handwritten: Python vs. Other Languages: Philosophy Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-diagram.svg" alt="Diagram: Python vs. Other Languages: Philosophy Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-diagram.svg" alt="Diagram: Python vs. Other Languages: Philosophy Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-sticky.svg" alt="Sticky Note: Python vs. Other Languages: Philosophy Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-other-languages-philosophy-comparison-sticky.svg" alt="Sticky Note: Python vs. Other Languages: Philosophy Comparison" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ import this  # Displays all 19 aphorisms
 
 ### 1.2.1 Official Distribution
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-handwritten.svg" alt="Handwritten: 1.2.1 Official Distribution" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-handwritten.svg" alt="Handwritten: 1.2.1 Official Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-diagram.svg" alt="Diagram: 1.2.1 Official Distribution" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-diagram.svg" alt="Diagram: 1.2.1 Official Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-sticky.svg" alt="Sticky Note: 1.2.1 Official Distribution" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-2-1-official-distribution-sticky.svg" alt="Sticky Note: 1.2.1 Official Distribution" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ On Windows, ensure "Add Python to PATH" is checked during installation. On macOS
 
 ### 1.2.2 Alternative Distributions
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-handwritten.svg" alt="Handwritten: 1.2.2 Alternative Distributions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-handwritten.svg" alt="Handwritten: 1.2.2 Alternative Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-diagram.svg" alt="Diagram: 1.2.2 Alternative Distributions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-diagram.svg" alt="Diagram: 1.2.2 Alternative Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-sticky.svg" alt="Sticky Note: 1.2.2 Alternative Distributions" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-2-2-alternative-distributions-sticky.svg" alt="Sticky Note: 1.2.2 Alternative Distributions" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ Virtual environments isolate project dependencies so that different projects can
 
 ### 1.8.1 venv (Built-in)
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-handwritten.svg" alt="Handwritten: 1.8.1 venv (Built-in)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-handwritten.svg" alt="Handwritten: 1.8.1 venv (Built-in)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-diagram.svg" alt="Diagram: 1.8.1 venv (Built-in)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-diagram.svg" alt="Diagram: 1.8.1 venv (Built-in)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-sticky.svg" alt="Sticky Note: 1.8.1 venv (Built-in)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-8-1-venv-built-in-sticky.svg" alt="Sticky Note: 1.8.1 venv (Built-in)" width="30%">
 </a>
 
 
@@ -341,14 +341,14 @@ Once activated, `pip install` places packages inside `.venv/` rather than the gl
 
 ### 1.8.2 Conda Environments
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-handwritten.svg" alt="Handwritten: 1.8.2 Conda Environments" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-handwritten.svg" alt="Handwritten: 1.8.2 Conda Environments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-diagram.svg" alt="Diagram: 1.8.2 Conda Environments" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-diagram.svg" alt="Diagram: 1.8.2 Conda Environments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-sticky.svg" alt="Sticky Note: 1.8.2 Conda Environments" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/1-8-2-conda-environments-sticky.svg" alt="Sticky Note: 1.8.2 Conda Environments" width="30%">
 </a>
 
 
@@ -466,14 +466,14 @@ console.log("This is outside the if block");
 
 ### Python vs TypeScript: Ecosystem Comparison
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-handwritten.svg" alt="Handwritten: Python vs TypeScript: Ecosystem Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-handwritten.svg" alt="Handwritten: Python vs TypeScript: Ecosystem Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-diagram.svg" alt="Diagram: Python vs TypeScript: Ecosystem Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-diagram.svg" alt="Diagram: Python vs TypeScript: Ecosystem Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-sticky.svg" alt="Sticky Note: Python vs TypeScript: Ecosystem Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-ecosystem-comparison-sticky.svg" alt="Sticky Note: Python vs TypeScript: Ecosystem Comparison" width="30%">
 </a>
 
 
@@ -492,14 +492,14 @@ console.log("This is outside the if block");
 
 ### Python Execution Model
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-handwritten.svg" alt="Handwritten: Python Execution Model" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-handwritten.svg" alt="Handwritten: Python Execution Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-diagram.svg" alt="Diagram: Python Execution Model" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-diagram.svg" alt="Diagram: Python Execution Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-sticky.svg" alt="Sticky Note: Python Execution Model" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-execution-model-sticky.svg" alt="Sticky Note: Python Execution Model" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ Python compiles source code to platform-independent bytecode (`.pyc` files in `_
 
 ### Python IDEs and Tools
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-handwritten.svg" alt="Handwritten: Python IDEs and Tools" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-handwritten.svg" alt="Handwritten: Python IDEs and Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-diagram.svg" alt="Diagram: Python IDEs and Tools" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-diagram.svg" alt="Diagram: Python IDEs and Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-sticky.svg" alt="Sticky Note: Python IDEs and Tools" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-ides-and-tools-sticky.svg" alt="Sticky Note: Python IDEs and Tools" width="30%">
 </a>
 
 
@@ -614,14 +614,14 @@ def buggy_function(x):
 
 ### Python Community and Resources
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-handwritten.svg" alt="Handwritten: Python Community and Resources" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-handwritten.svg" alt="Handwritten: Python Community and Resources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-diagram.svg" alt="Diagram: Python Community and Resources" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-diagram.svg" alt="Diagram: Python Community and Resources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-sticky.svg" alt="Sticky Note: Python Community and Resources" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-community-and-resources-sticky.svg" alt="Sticky Note: Python Community and Resources" width="30%">
 </a>
 
 
@@ -645,14 +645,14 @@ print([m for m in dir(math) if not m.startswith('_')])
 
 ### Python Version History
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-version-history-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-version-history-handwritten.svg" alt="Handwritten: Python Version History" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-version-history-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-version-history-handwritten.svg" alt="Handwritten: Python Version History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-version-history-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-version-history-diagram.svg" alt="Diagram: Python Version History" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-version-history-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-version-history-diagram.svg" alt="Diagram: Python Version History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-version-history-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-version-history-sticky.svg" alt="Sticky Note: Python Version History" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-version-history-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-version-history-sticky.svg" alt="Sticky Note: Python Version History" width="30%">
 </a>
 
 
@@ -749,14 +749,14 @@ server.listen(3000);
 
 ### Python → TypeScript Quick Reference
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-handwritten.svg" alt="Handwritten: Python → TypeScript Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-handwritten.svg" alt="Handwritten: Python → TypeScript Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-diagram.svg" alt="Diagram: Python → TypeScript Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-diagram.svg" alt="Diagram: Python → TypeScript Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-sticky.svg" alt="Sticky Note: Python → TypeScript Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-typescript-quick-reference-sticky.svg" alt="Sticky Note: Python → TypeScript Quick Reference" width="30%">
 </a>
 
 
@@ -771,14 +771,14 @@ server.listen(3000);
 
 ### Python vs TypeScript: Hello World Comparison
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-handwritten.svg" alt="Handwritten: Python vs TypeScript: Hello World Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-handwritten.svg" alt="Handwritten: Python vs TypeScript: Hello World Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-diagram.svg" alt="Diagram: Python vs TypeScript: Hello World Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-diagram.svg" alt="Diagram: Python vs TypeScript: Hello World Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-sticky.svg" alt="Sticky Note: Python vs TypeScript: Hello World Comparison" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-hello-world-comparison-sticky.svg" alt="Sticky Note: Python vs TypeScript: Hello World Comparison" width="30%">
 </a>
 
 
@@ -798,14 +798,14 @@ const greeting: string = hello("World");
 
 ### Python vs TypeScript: Key Architectural Differences
 
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-handwritten.svg" alt="Handwritten: Python vs TypeScript: Key Architectural Differences" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-handwritten.svg" alt="Handwritten: Python vs TypeScript: Key Architectural Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-diagram.svg" alt="Diagram: Python vs TypeScript: Key Architectural Differences" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-diagram.svg" alt="Diagram: Python vs TypeScript: Key Architectural Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-sticky.svg" alt="Sticky Note: Python vs TypeScript: Key Architectural Differences" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/01-introduction/python-vs-typescript-key-architectural-differences-sticky.svg" alt="Sticky Note: Python vs TypeScript: Key Architectural Differences" width="30%">
 </a>
 
 

@@ -42,14 +42,14 @@ When you open a file, the OS gives you a **file descriptor** (an integer handle)
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ FILE *fopen(const char *restrict filename, const char *restrict mode);
 
 ### What is FILE*?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-handwritten.svg" alt="Handwritten: What is FILE*?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-handwritten.svg" alt="Handwritten: What is FILE*?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-diagram.svg" alt="Diagram: What is FILE*?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-diagram.svg" alt="Diagram: What is FILE*?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-sticky.svg" alt="Sticky Note: What is FILE*?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-file-sticky.svg" alt="Sticky Note: What is FILE*?" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ FILE *fopen(const char *restrict filename, const char *restrict mode);
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ The `FILE*` pointer is like your **library card + bookmark**. You hand it to the
 
 ### Steps to Use a File
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-handwritten.svg" alt="Handwritten: Steps to Use a File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-handwritten.svg" alt="Handwritten: Steps to Use a File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-diagram.svg" alt="Diagram: Steps to Use a File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-diagram.svg" alt="Diagram: Steps to Use a File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-sticky.svg" alt="Sticky Note: Steps to Use a File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-use-a-file-sticky.svg" alt="Sticky Note: Steps to Use a File" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ The `FILE*` pointer is like your **library card + bookmark**. You hand it to the
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -141,14 +141,14 @@ RETURN success
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ int main(void)
 
 ### Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ Assume `example.txt` exists:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -211,14 +211,14 @@ Assume `example.txt` exists:
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ Assume `example.txt` exists:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ Assume `example.txt` exists:
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ FILE *fopen(const char *restrict filename, const char *restrict mode);
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ Opening a file with different modes is like checking out a library book under di
 
 ### fopen Modes → Complete Reference Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-handwritten.svg" alt="Handwritten: fopen Modes → Complete Reference Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-handwritten.svg" alt="Handwritten: fopen Modes → Complete Reference Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-diagram.svg" alt="Diagram: fopen Modes → Complete Reference Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-diagram.svg" alt="Diagram: fopen Modes → Complete Reference Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-sticky.svg" alt="Sticky Note: fopen Modes → Complete Reference Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/fopen-modes-complete-reference-table-sticky.svg" alt="Sticky Note: fopen Modes → Complete Reference Table" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ Opening a file with different modes is like checking out a library book under di
 
 ### Critical Detail: Text vs Binary on Windows
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-handwritten.svg" alt="Handwritten: Critical Detail: Text vs Binary on Windows" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-handwritten.svg" alt="Handwritten: Critical Detail: Text vs Binary on Windows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-diagram.svg" alt="Diagram: Critical Detail: Text vs Binary on Windows" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-diagram.svg" alt="Diagram: Critical Detail: Text vs Binary on Windows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-sticky.svg" alt="Sticky Note: Critical Detail: Text vs Binary on Windows" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/critical-detail-text-vs-binary-on-windows-sticky.svg" alt="Sticky Note: Critical Detail: Text vs Binary on Windows" width="30%">
 </a>
 
 
@@ -344,14 +344,14 @@ On Linux/macOS, text and binary modes are identical → no translation occurs.
 
 ### Steps to Open a File
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-handwritten.svg" alt="Handwritten: Steps to Open a File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-handwritten.svg" alt="Handwritten: Steps to Open a File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-diagram.svg" alt="Diagram: Steps to Open a File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-diagram.svg" alt="Diagram: Steps to Open a File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-sticky.svg" alt="Sticky Note: Steps to Open a File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-to-open-a-file-sticky.svg" alt="Sticky Note: Steps to Open a File" width="30%">
 </a>
 
 
@@ -363,14 +363,14 @@ On Linux/macOS, text and binary modes are identical → no translation occurs.
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ END FUNCTION
 
 ### Code Example → All Modes Demonstrated
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-handwritten.svg" alt="Handwritten: Code Example → All Modes Demonstrated" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-handwritten.svg" alt="Handwritten: Code Example → All Modes Demonstrated" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-diagram.svg" alt="Diagram: Code Example → All Modes Demonstrated" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-diagram.svg" alt="Diagram: Code Example → All Modes Demonstrated" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-sticky.svg" alt="Sticky Note: Code Example → All Modes Demonstrated" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-all-modes-demonstrated-sticky.svg" alt="Sticky Note: Code Example → All Modes Demonstrated" width="30%">
 </a>
 
 
@@ -444,14 +444,14 @@ int main(void)
 
 ### Dry Run Trace → fopen("data.txt", "r+")
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-handwritten.svg" alt="Handwritten: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-handwritten.svg" alt="Handwritten: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-diagram.svg" alt="Diagram: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-diagram.svg" alt="Diagram: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-sticky.svg" alt="Sticky Note: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fopen-data-txt-r-sticky.svg" alt="Sticky Note: Dry Run Trace → fopen("data.txt", "r+")" width="30%">
 </a>
 
 
@@ -464,14 +464,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -483,14 +483,14 @@ int main(void)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ int main(void)
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -547,14 +547,14 @@ Returns 0 on success, `EOF` on error.
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -562,14 +562,14 @@ Closing a file is like **returning a library book**. If you don't return it, the
 
 ### What Happens Inside fclose
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-handwritten.svg" alt="Handwritten: What Happens Inside fclose" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-handwritten.svg" alt="Handwritten: What Happens Inside fclose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-diagram.svg" alt="Diagram: What Happens Inside fclose" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-diagram.svg" alt="Diagram: What Happens Inside fclose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-sticky.svg" alt="Sticky Note: What Happens Inside fclose" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-inside-fclose-sticky.svg" alt="Sticky Note: What Happens Inside fclose" width="30%">
 </a>
 
 
@@ -581,14 +581,14 @@ Closing a file is like **returning a library book**. If you don't return it, the
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -598,14 +598,14 @@ Closing a file is like **returning a library book**. If you don't return it, the
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -624,14 +624,14 @@ END FUNCTION
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -658,14 +658,14 @@ int main(void)
 
 ### Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
 </a>
 
 
@@ -677,14 +677,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -696,14 +696,14 @@ int main(void)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -715,14 +715,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -740,27 +740,27 @@ int main(void)
 
 ### 12.4.1 Character Reading → fgetc
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-handwritten.svg" alt="Handwritten: 12.4.1 Character Reading → fgetc" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-handwritten.svg" alt="Handwritten: 12.4.1 Character Reading → fgetc" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-diagram.svg" alt="Diagram: 12.4.1 Character Reading → fgetc" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-diagram.svg" alt="Diagram: 12.4.1 Character Reading → fgetc" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-sticky.svg" alt="Sticky Note: 12.4.1 Character Reading → fgetc" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-1-character-reading-fgetc-sticky.svg" alt="Sticky Note: 12.4.1 Character Reading → fgetc" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -772,14 +772,14 @@ Returns the next character as `unsigned char` cast to `int`, or `EOF` on error/e
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -787,14 +787,14 @@ Reading a file character by character is like **reading a scroll one letter at a
 
 ### Why Return int?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-handwritten.svg" alt="Handwritten: Why Return int?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-handwritten.svg" alt="Handwritten: Why Return int?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-diagram.svg" alt="Diagram: Why Return int?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-diagram.svg" alt="Diagram: Why Return int?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-sticky.svg" alt="Sticky Note: Why Return int?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-return-int-sticky.svg" alt="Sticky Note: Why Return int?" width="30%">
 </a>
 
 
@@ -802,14 +802,14 @@ Reading a file character by character is like **reading a scroll one letter at a
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ Reading a file character by character is like **reading a scroll one letter at a
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -848,14 +848,14 @@ fclose(fp)
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -895,14 +895,14 @@ byte 25: 'Z' (0x5A)
 
 ### Dry Run Trace → fgetc Loop on "ABC"
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-handwritten.svg" alt="Handwritten: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-handwritten.svg" alt="Handwritten: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-diagram.svg" alt="Diagram: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-diagram.svg" alt="Diagram: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-sticky.svg" alt="Sticky Note: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgetc-loop-on-abc-sticky.svg" alt="Sticky Note: Dry Run Trace → fgetc Loop on "ABC"" width="30%">
 </a>
 
 
@@ -918,14 +918,14 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -936,14 +936,14 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -955,14 +955,14 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -978,27 +978,27 @@ Assume file contains "ABC\n" (4 bytes). Initial position = 0.
 
 ### 12.4.2 Line Reading → fgets
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-handwritten.svg" alt="Handwritten: 12.4.2 Line Reading → fgets" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-handwritten.svg" alt="Handwritten: 12.4.2 Line Reading → fgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-diagram.svg" alt="Diagram: 12.4.2 Line Reading → fgets" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-diagram.svg" alt="Diagram: 12.4.2 Line Reading → fgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-sticky.svg" alt="Sticky Note: 12.4.2 Line Reading → fgets" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-2-line-reading-fgets-sticky.svg" alt="Sticky Note: 12.4.2 Line Reading → fgets" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -1010,14 +1010,14 @@ Returns `s` on success, `NULL` on EOF or error.
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1025,14 +1025,14 @@ Reading a line with `fgets` is like **tearing off a receipt** from a machine: yo
 
 ### Key Behaviors
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-handwritten.svg" alt="Handwritten: Key Behaviors" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-handwritten.svg" alt="Handwritten: Key Behaviors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-diagram.svg" alt="Diagram: Key Behaviors" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-diagram.svg" alt="Diagram: Key Behaviors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-sticky.svg" alt="Sticky Note: Key Behaviors" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-behaviors-sticky.svg" alt="Sticky Note: Key Behaviors" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ Reading a line with `fgets` is like **tearing off a receipt** from a machine: yo
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -1062,14 +1062,14 @@ Reading a line with `fgets` is like **tearing off a receipt** from a machine: yo
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1083,14 +1083,14 @@ END WHILE
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -1135,14 +1135,14 @@ Line 3 (21 chars): "Line 3: C Programming"
 
 ### Dry Run Trace → fgets with buffer size 8
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-handwritten.svg" alt="Handwritten: Dry Run Trace → fgets with buffer size 8" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-handwritten.svg" alt="Handwritten: Dry Run Trace → fgets with buffer size 8" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-diagram.svg" alt="Diagram: Dry Run Trace → fgets with buffer size 8" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-diagram.svg" alt="Diagram: Dry Run Trace → fgets with buffer size 8" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-sticky.svg" alt="Sticky Note: Dry Run Trace → fgets with buffer size 8" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fgets-with-buffer-size-8-sticky.svg" alt="Sticky Note: Dry Run Trace → fgets with buffer size 8" width="30%">
 </a>
 
 
@@ -1158,14 +1158,14 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1177,14 +1177,14 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1196,14 +1196,14 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1219,27 +1219,27 @@ File contains: `"Hello World!\nNext Line\n"` (21 bytes)
 
 ### 12.4.3 Formatted Reading → fscanf
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-handwritten.svg" alt="Handwritten: 12.4.3 Formatted Reading → fscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-handwritten.svg" alt="Handwritten: 12.4.3 Formatted Reading → fscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-diagram.svg" alt="Diagram: 12.4.3 Formatted Reading → fscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-diagram.svg" alt="Diagram: 12.4.3 Formatted Reading → fscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-sticky.svg" alt="Sticky Note: 12.4.3 Formatted Reading → fscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-3-formatted-reading-fscanf-sticky.svg" alt="Sticky Note: 12.4.3 Formatted Reading → fscanf" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -1251,14 +1251,14 @@ Returns number of input items successfully matched and assigned, or EOF on input
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1266,14 +1266,14 @@ Returns number of input items successfully matched and assigned, or EOF on input
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -1283,14 +1283,14 @@ Returns number of input items successfully matched and assigned, or EOF on input
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1307,14 +1307,14 @@ END IF
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -1363,14 +1363,14 @@ Total: 3 records read successfully
 
 ### Dry Run Trace → fscanf Malformed Input
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-handwritten.svg" alt="Handwritten: Dry Run Trace → fscanf Malformed Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-handwritten.svg" alt="Handwritten: Dry Run Trace → fscanf Malformed Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-diagram.svg" alt="Diagram: Dry Run Trace → fscanf Malformed Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-diagram.svg" alt="Diagram: Dry Run Trace → fscanf Malformed Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-sticky.svg" alt="Sticky Note: Dry Run Trace → fscanf Malformed Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fscanf-malformed-input-sticky.svg" alt="Sticky Note: Dry Run Trace → fscanf Malformed Input" width="30%">
 </a>
 
 
@@ -1386,14 +1386,14 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1405,14 +1405,14 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1424,14 +1424,14 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1447,27 +1447,27 @@ File: `"101 Alice 3.8\n102 Bob BAD\n103 Carol 3.9\n"`
 
 ### 12.4.4 Binary Reading → fread
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-handwritten.svg" alt="Handwritten: 12.4.4 Binary Reading → fread" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-handwritten.svg" alt="Handwritten: 12.4.4 Binary Reading → fread" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-diagram.svg" alt="Diagram: 12.4.4 Binary Reading → fread" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-diagram.svg" alt="Diagram: 12.4.4 Binary Reading → fread" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-sticky.svg" alt="Sticky Note: 12.4.4 Binary Reading → fread" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-4-4-binary-reading-fread-sticky.svg" alt="Sticky Note: 12.4.4 Binary Reading → fread" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -1479,14 +1479,14 @@ Returns the number of complete elements successfully read (may be less than `cou
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1494,14 +1494,14 @@ Reading binary data is like **photocopying pages** from a book: you specify the 
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -1512,14 +1512,14 @@ Reading binary data is like **photocopying pages** from a book: you specify the 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1537,14 +1537,14 @@ END IF
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -1599,14 +1599,14 @@ Read 4 employees
 
 ### Dry Run Trace → fread with sizeof(Employee) = 40
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-handwritten.svg" alt="Handwritten: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-handwritten.svg" alt="Handwritten: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-diagram.svg" alt="Diagram: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-diagram.svg" alt="Diagram: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-sticky.svg" alt="Sticky Note: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fread-with-sizeof-employee-40-sticky.svg" alt="Sticky Note: Dry Run Trace → fread with sizeof(Employee) = 40" width="30%">
 </a>
 
 
@@ -1622,14 +1622,14 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1641,14 +1641,14 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1660,14 +1660,14 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1683,14 +1683,14 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### Read Functions Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-handwritten.svg" alt="Handwritten: Read Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-handwritten.svg" alt="Handwritten: Read Functions Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-diagram.svg" alt="Diagram: Read Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-diagram.svg" alt="Diagram: Read Functions Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-sticky.svg" alt="Sticky Note: Read Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-comparison-table-sticky.svg" alt="Sticky Note: Read Functions Comparison Table" width="30%">
 </a>
 
 
@@ -1703,14 +1703,14 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### Read Functions → Complexity Comparison
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-handwritten.svg" alt="Handwritten: Read Functions → Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-handwritten.svg" alt="Handwritten: Read Functions → Complexity Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-diagram.svg" alt="Diagram: Read Functions → Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-diagram.svg" alt="Diagram: Read Functions → Complexity Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-sticky.svg" alt="Sticky Note: Read Functions → Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/read-functions-complexity-comparison-sticky.svg" alt="Sticky Note: Read Functions → Complexity Comparison" width="30%">
 </a>
 
 
@@ -1725,27 +1725,27 @@ File: `employees.bin` (160 bytes = 4 Ã— 40)
 
 ### 12.5.1 Character Writing → fputc
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-handwritten.svg" alt="Handwritten: 12.5.1 Character Writing → fputc" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-handwritten.svg" alt="Handwritten: 12.5.1 Character Writing → fputc" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-diagram.svg" alt="Diagram: 12.5.1 Character Writing → fputc" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-diagram.svg" alt="Diagram: 12.5.1 Character Writing → fputc" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-sticky.svg" alt="Sticky Note: 12.5.1 Character Writing → fputc" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-1-character-writing-fputc-sticky.svg" alt="Sticky Note: 12.5.1 Character Writing → fputc" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -1757,14 +1757,14 @@ Writes the character `c` (converted to `unsigned char`) to the file. Returns the
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1772,14 +1772,14 @@ Writing a character with `fputc` is like **stamping one letter at a time** onto 
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -1789,14 +1789,14 @@ Writing a character with `fputc` is like **stamping one letter at a time** onto 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1812,14 +1812,14 @@ END WHILE
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -1865,14 +1865,14 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 ### Dry Run Trace → fputc Writing "Hi\n"
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-handwritten.svg" alt="Handwritten: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-handwritten.svg" alt="Handwritten: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-diagram.svg" alt="Diagram: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-diagram.svg" alt="Diagram: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-sticky.svg" alt="Sticky Note: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fputc-writing-hi-n-sticky.svg" alt="Sticky Note: Dry Run Trace → fputc Writing "Hi\n"" width="30%">
 </a>
 
 
@@ -1887,14 +1887,14 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1905,14 +1905,14 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1924,14 +1924,14 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1947,27 +1947,27 @@ File initially empty. Buffer size = 512 (typical default). All writes are buffer
 
 ### 12.5.2 String Writing → fputs
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-handwritten.svg" alt="Handwritten: 12.5.2 String Writing → fputs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-handwritten.svg" alt="Handwritten: 12.5.2 String Writing → fputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-diagram.svg" alt="Diagram: 12.5.2 String Writing → fputs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-diagram.svg" alt="Diagram: 12.5.2 String Writing → fputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-sticky.svg" alt="Sticky Note: 12.5.2 String Writing → fputs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-2-string-writing-fputs-sticky.svg" alt="Sticky Note: 12.5.2 String Writing → fputs" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -1979,14 +1979,14 @@ Writes the string `s` to the file. Does **not** append a newline. Returns non-ne
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1994,14 +1994,14 @@ Writing with `fputs` is like **pasting a pre-written paragraph** into a document
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -2011,14 +2011,14 @@ Writing with `fputs` is like **pasting a pre-written paragraph** into a document
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2035,14 +2035,14 @@ END FUNCTION
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -2093,14 +2093,14 @@ Eggs
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2111,14 +2111,14 @@ Eggs
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -2130,14 +2130,14 @@ Eggs
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2152,27 +2152,27 @@ Eggs
 
 ### 12.5.3 Formatted Writing → fprintf
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-handwritten.svg" alt="Handwritten: 12.5.3 Formatted Writing → fprintf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-handwritten.svg" alt="Handwritten: 12.5.3 Formatted Writing → fprintf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-diagram.svg" alt="Diagram: 12.5.3 Formatted Writing → fprintf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-diagram.svg" alt="Diagram: 12.5.3 Formatted Writing → fprintf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-sticky.svg" alt="Sticky Note: 12.5.3 Formatted Writing → fprintf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-3-formatted-writing-fprintf-sticky.svg" alt="Sticky Note: 12.5.3 Formatted Writing → fprintf" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ Returns the number of characters written on success, or a negative value on erro
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2199,14 +2199,14 @@ Returns the number of characters written on success, or a negative value on erro
 
 ### Format Specifier Quick Ref
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-handwritten.svg" alt="Handwritten: Format Specifier Quick Ref" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-handwritten.svg" alt="Handwritten: Format Specifier Quick Ref" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-diagram.svg" alt="Diagram: Format Specifier Quick Ref" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-diagram.svg" alt="Diagram: Format Specifier Quick Ref" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-sticky.svg" alt="Sticky Note: Format Specifier Quick Ref" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/format-specifier-quick-ref-sticky.svg" alt="Sticky Note: Format Specifier Quick Ref" width="30%">
 </a>
 
 
@@ -2221,14 +2221,14 @@ Returns the number of characters written on success, or a negative value on erro
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -2239,14 +2239,14 @@ Returns the number of characters written on success, or a negative value on erro
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2262,14 +2262,14 @@ END FUNCTION
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -2336,14 +2336,14 @@ ID     Name          Score  Grade
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2356,14 +2356,14 @@ ID     Name          Score  Grade
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -2375,14 +2375,14 @@ ID     Name          Score  Grade
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2397,27 +2397,27 @@ ID     Name          Score  Grade
 
 ### 12.5.4 Binary Writing → fwrite
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-handwritten.svg" alt="Handwritten: 12.5.4 Binary Writing → fwrite" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-handwritten.svg" alt="Handwritten: 12.5.4 Binary Writing → fwrite" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-diagram.svg" alt="Diagram: 12.5.4 Binary Writing → fwrite" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-diagram.svg" alt="Diagram: 12.5.4 Binary Writing → fwrite" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-sticky.svg" alt="Sticky Note: 12.5.4 Binary Writing → fwrite" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-5-4-binary-writing-fwrite-sticky.svg" alt="Sticky Note: 12.5.4 Binary Writing → fwrite" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -2429,14 +2429,14 @@ Writes `count` elements, each `element_size` bytes, from `ptr` to the file. Retu
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2444,14 +2444,14 @@ Writing with `fwrite` is like **pouring a mold** of your data structure directly
 
 ### Important: Endianness and Portability
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-handwritten.svg" alt="Handwritten: Important: Endianness and Portability" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-handwritten.svg" alt="Handwritten: Important: Endianness and Portability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-diagram.svg" alt="Diagram: Important: Endianness and Portability" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-diagram.svg" alt="Diagram: Important: Endianness and Portability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-sticky.svg" alt="Sticky Note: Important: Endianness and Portability" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/important-endianness-and-portability-sticky.svg" alt="Sticky Note: Important: Endianness and Portability" width="30%">
 </a>
 
 
@@ -2467,14 +2467,14 @@ For portable binary data, use:
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ For portable binary data, use:
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2507,14 +2507,14 @@ END FUNCTION
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -2583,14 +2583,14 @@ data[3] = 4.0
 
 ### Dry Run Trace → fwrite Array of 3 Integers
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-handwritten.svg" alt="Handwritten: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-handwritten.svg" alt="Handwritten: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-diagram.svg" alt="Diagram: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-diagram.svg" alt="Diagram: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-sticky.svg" alt="Sticky Note: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fwrite-array-of-3-integers-sticky.svg" alt="Sticky Note: Dry Run Trace → fwrite Array of 3 Integers" width="30%">
 </a>
 
 
@@ -2602,14 +2602,14 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2621,14 +2621,14 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -2640,14 +2640,14 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2663,14 +2663,14 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Write Functions Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-handwritten.svg" alt="Handwritten: Write Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-handwritten.svg" alt="Handwritten: Write Functions Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-diagram.svg" alt="Diagram: Write Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-diagram.svg" alt="Diagram: Write Functions Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-sticky.svg" alt="Sticky Note: Write Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-comparison-table-sticky.svg" alt="Sticky Note: Write Functions Comparison Table" width="30%">
 </a>
 
 
@@ -2683,14 +2683,14 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Write Functions → Complexity Comparison
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-handwritten.svg" alt="Handwritten: Write Functions → Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-handwritten.svg" alt="Handwritten: Write Functions → Complexity Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-diagram.svg" alt="Diagram: Write Functions → Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-diagram.svg" alt="Diagram: Write Functions → Complexity Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-sticky.svg" alt="Sticky Note: Write Functions → Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/write-functions-complexity-comparison-sticky.svg" alt="Sticky Note: Write Functions → Complexity Comparison" width="30%">
 </a>
 
 
@@ -2707,14 +2707,14 @@ Memory: `{0x0000002A, 0xFFFFFF9C, 0x00000010}` (little-endian)
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -2726,14 +2726,14 @@ Returns non-zero if the end-of-file indicator for the stream is set, 0 otherwise
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2741,14 +2741,14 @@ Returns non-zero if the end-of-file indicator for the stream is set, 0 otherwise
 
 ### Critical: feof is NOT a Lookahead
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-handwritten.svg" alt="Handwritten: Critical: feof is NOT a Lookahead" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-handwritten.svg" alt="Handwritten: Critical: feof is NOT a Lookahead" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-diagram.svg" alt="Diagram: Critical: feof is NOT a Lookahead" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-diagram.svg" alt="Diagram: Critical: feof is NOT a Lookahead" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-sticky.svg" alt="Sticky Note: Critical: feof is NOT a Lookahead" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/critical-feof-is-not-a-lookahead-sticky.svg" alt="Sticky Note: Critical: feof is NOT a Lookahead" width="30%">
 </a>
 
 
@@ -2770,14 +2770,14 @@ while (!feof(fp)) {           /* <--- BUG */
 
 ### Correct Pattern: Check Return Value
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-handwritten.svg" alt="Handwritten: Correct Pattern: Check Return Value" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-handwritten.svg" alt="Handwritten: Correct Pattern: Check Return Value" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-diagram.svg" alt="Diagram: Correct Pattern: Check Return Value" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-diagram.svg" alt="Diagram: Correct Pattern: Check Return Value" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-sticky.svg" alt="Sticky Note: Correct Pattern: Check Return Value" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/correct-pattern-check-return-value-sticky.svg" alt="Sticky Note: Correct Pattern: Check Return Value" width="30%">
 </a>
 
 
@@ -2798,14 +2798,14 @@ if (feof(fp)) {
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -2815,14 +2815,14 @@ if (feof(fp)) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2842,14 +2842,14 @@ END IF
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -2894,14 +2894,14 @@ EOF reached after 5 numbers
 
 ### Dry Run Trace → Correct feof Usage
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-handwritten.svg" alt="Handwritten: Dry Run Trace → Correct feof Usage" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-handwritten.svg" alt="Handwritten: Dry Run Trace → Correct feof Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-diagram.svg" alt="Diagram: Dry Run Trace → Correct feof Usage" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-diagram.svg" alt="Diagram: Dry Run Trace → Correct feof Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-sticky.svg" alt="Sticky Note: Dry Run Trace → Correct feof Usage" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-correct-feof-usage-sticky.svg" alt="Sticky Note: Dry Run Trace → Correct feof Usage" width="30%">
 </a>
 
 
@@ -2917,14 +2917,14 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2935,14 +2935,14 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -2954,14 +2954,14 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2978,14 +2978,14 @@ File: `"10\n20\n30\n"` (9 bytes)
 
 ### Prototypes
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
 </a>
 
 
@@ -2997,14 +2997,14 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3014,14 +3014,14 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
 
 ### Error Handling Flow
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-handwritten.svg" alt="Handwritten: Error Handling Flow" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-handwritten.svg" alt="Handwritten: Error Handling Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-diagram.svg" alt="Diagram: Error Handling Flow" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-diagram.svg" alt="Diagram: Error Handling Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-sticky.svg" alt="Sticky Note: Error Handling Flow" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-flow-sticky.svg" alt="Sticky Note: Error Handling Flow" width="30%">
 </a>
 
 
@@ -3057,14 +3057,14 @@ void perror(const char *s); /* prints "s: system error message" to stderr */
 
 ### Code Example → Comprehensive Error Handling
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-handwritten.svg" alt="Handwritten: Code Example → Comprehensive Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-handwritten.svg" alt="Handwritten: Code Example → Comprehensive Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-diagram.svg" alt="Diagram: Code Example → Comprehensive Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-diagram.svg" alt="Diagram: Code Example → Comprehensive Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-sticky.svg" alt="Sticky Note: Code Example → Comprehensive Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-comprehensive-error-handling-sticky.svg" alt="Sticky Note: Code Example → Comprehensive Error Handling" width="30%">
 </a>
 
 
@@ -3107,14 +3107,14 @@ int main(void)
 
 ### Dry Run Trace → File Opens But Read Fails (e.g., USB removed)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-handwritten.svg" alt="Handwritten: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-handwritten.svg" alt="Handwritten: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-diagram.svg" alt="Diagram: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-diagram.svg" alt="Diagram: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-sticky.svg" alt="Sticky Note: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-file-opens-but-read-fails-e-g-usb-removed-sticky.svg" alt="Sticky Note: Dry Run Trace → File Opens But Read Fails (e.g., USB removed)" width="30%">
 </a>
 
 
@@ -3129,14 +3129,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -3149,14 +3149,14 @@ int main(void)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -3168,14 +3168,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -3193,27 +3193,27 @@ int main(void)
 
 ### 12.8.1 fseek and ftell
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-handwritten.svg" alt="Handwritten: 12.8.1 fseek and ftell" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-handwritten.svg" alt="Handwritten: 12.8.1 fseek and ftell" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-diagram.svg" alt="Diagram: 12.8.1 fseek and ftell" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-diagram.svg" alt="Diagram: 12.8.1 fseek and ftell" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-sticky.svg" alt="Sticky Note: 12.8.1 fseek and ftell" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-1-fseek-and-ftell-sticky.svg" alt="Sticky Note: 12.8.1 fseek and ftell" width="30%">
 </a>
 
 
 ### Prototypes
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
 </a>
 
 
@@ -3227,14 +3227,14 @@ long ftell(FILE *fp);
 
 ### whence Constants
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-handwritten.svg" alt="Handwritten: whence Constants" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-handwritten.svg" alt="Handwritten: whence Constants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-diagram.svg" alt="Diagram: whence Constants" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-diagram.svg" alt="Diagram: whence Constants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-sticky.svg" alt="Sticky Note: whence Constants" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/whence-constants-sticky.svg" alt="Sticky Note: whence Constants" width="30%">
 </a>
 
 
@@ -3246,14 +3246,14 @@ long ftell(FILE *fp);
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3266,14 +3266,14 @@ long ftell(FILE *fp);
 
 ### Common Idiom: Get File Size
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-handwritten.svg" alt="Handwritten: Common Idiom: Get File Size" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-handwritten.svg" alt="Handwritten: Common Idiom: Get File Size" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-diagram.svg" alt="Diagram: Common Idiom: Get File Size" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-diagram.svg" alt="Diagram: Common Idiom: Get File Size" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-sticky.svg" alt="Sticky Note: Common Idiom: Get File Size" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/common-idiom-get-file-size-sticky.svg" alt="Sticky Note: Common Idiom: Get File Size" width="30%">
 </a>
 
 
@@ -3287,14 +3287,14 @@ This is the standard portable way to determine a file's size in C.
 
 ### Steps for Random Access
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-handwritten.svg" alt="Handwritten: Steps for Random Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-handwritten.svg" alt="Handwritten: Steps for Random Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-diagram.svg" alt="Diagram: Steps for Random Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-diagram.svg" alt="Diagram: Steps for Random Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-sticky.svg" alt="Sticky Note: Steps for Random Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-random-access-sticky.svg" alt="Sticky Note: Steps for Random Access" width="30%">
 </a>
 
 
@@ -3305,14 +3305,14 @@ This is the standard portable way to determine a file's size in C.
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -3330,14 +3330,14 @@ END FUNCTION
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -3404,14 +3404,14 @@ Current position: 200 (end of file = 200)
 
 ### Dry Run Trace → fseek/ftell on 200-byte File
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-handwritten.svg" alt="Handwritten: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-handwritten.svg" alt="Handwritten: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-diagram.svg" alt="Diagram: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-diagram.svg" alt="Diagram: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-sticky.svg" alt="Sticky Note: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-fseek-ftell-on-200-byte-file-sticky.svg" alt="Sticky Note: Dry Run Trace → fseek/ftell on 200-byte File" width="30%">
 </a>
 
 
@@ -3425,14 +3425,14 @@ Current position: 200 (end of file = 200)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -3445,14 +3445,14 @@ Current position: 200 (end of file = 200)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -3464,14 +3464,14 @@ Current position: 200 (end of file = 200)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -3485,27 +3485,27 @@ Current position: 200 (end of file = 200)
 
 ### 12.8.2 rewind
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-handwritten.svg" alt="Handwritten: 12.8.2 rewind" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-handwritten.svg" alt="Handwritten: 12.8.2 rewind" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-diagram.svg" alt="Diagram: 12.8.2 rewind" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-diagram.svg" alt="Diagram: 12.8.2 rewind" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-sticky.svg" alt="Sticky Note: 12.8.2 rewind" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-2-rewind-sticky.svg" alt="Sticky Note: 12.8.2 rewind" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -3517,14 +3517,14 @@ Equivalent to `fseek(fp, 0L, SEEK_SET)` but also clears the error and EOF indica
 
 ### Key Difference from fseek(fp, 0, SEEK_SET)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-handwritten.svg" alt="Handwritten: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-handwritten.svg" alt="Handwritten: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-diagram.svg" alt="Diagram: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-diagram.svg" alt="Diagram: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-sticky.svg" alt="Sticky Note: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-difference-from-fseek-fp-0-seek-set-sticky.svg" alt="Sticky Note: Key Difference from fseek(fp, 0, SEEK_SET)" width="30%">
 </a>
 
 
@@ -3537,14 +3537,14 @@ Equivalent to `fseek(fp, 0L, SEEK_SET)` but also clears the error and EOF indica
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -3581,27 +3581,27 @@ After rewind: Line 1
 
 ### 12.8.3 fgetpos and fsetpos (Large File Support)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-handwritten.svg" alt="Handwritten: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-handwritten.svg" alt="Handwritten: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-diagram.svg" alt="Diagram: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-diagram.svg" alt="Diagram: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-sticky.svg" alt="Sticky Note: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-8-3-fgetpos-and-fsetpos-large-file-support-sticky.svg" alt="Sticky Note: 12.8.3 fgetpos and fsetpos (Large File Support)" width="30%">
 </a>
 
 
 ### Prototypes
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
 </a>
 
 
@@ -3614,14 +3614,14 @@ int fsetpos(FILE *fp, const fpos_t *pos);
 
 ### Why Use fgetpos/fsetpos Instead of ftell/fseek?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-handwritten.svg" alt="Handwritten: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-handwritten.svg" alt="Handwritten: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-diagram.svg" alt="Diagram: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-diagram.svg" alt="Diagram: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-sticky.svg" alt="Sticky Note: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-use-fgetpos-fsetpos-instead-of-ftell-fseek-sticky.svg" alt="Sticky Note: Why Use fgetpos/fsetpos Instead of ftell/fseek?" width="30%">
 </a>
 
 
@@ -3633,14 +3633,14 @@ int fsetpos(FILE *fp, const fpos_t *pos);
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -3697,14 +3697,14 @@ Value: 0
 
 ### Complexity Analysis → All Positioning Functions
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-handwritten.svg" alt="Handwritten: Complexity Analysis → All Positioning Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-handwritten.svg" alt="Handwritten: Complexity Analysis → All Positioning Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-diagram.svg" alt="Diagram: Complexity Analysis → All Positioning Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-diagram.svg" alt="Diagram: Complexity Analysis → All Positioning Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-sticky.svg" alt="Sticky Note: Complexity Analysis → All Positioning Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-all-positioning-functions-sticky.svg" alt="Sticky Note: Complexity Analysis → All Positioning Functions" width="30%">
 </a>
 
 
@@ -3718,14 +3718,14 @@ Value: 0
 
 ### Positioning Functions Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-handwritten.svg" alt="Handwritten: Positioning Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-handwritten.svg" alt="Handwritten: Positioning Functions Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-diagram.svg" alt="Diagram: Positioning Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-diagram.svg" alt="Diagram: Positioning Functions Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-sticky.svg" alt="Sticky Note: Positioning Functions Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-functions-comparison-table-sticky.svg" alt="Sticky Note: Positioning Functions Comparison Table" width="30%">
 </a>
 
 
@@ -3743,14 +3743,14 @@ Value: 0
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3759,14 +3759,14 @@ Value: 0
 
 ### Key Differences
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
 </a>
 
 
@@ -3782,14 +3782,14 @@ Value: 0
 
 ### Text vs Binary → Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-handwritten.svg" alt="Handwritten: Text vs Binary → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-handwritten.svg" alt="Handwritten: Text vs Binary → Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-diagram.svg" alt="Diagram: Text vs Binary → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-diagram.svg" alt="Diagram: Text vs Binary → Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-sticky.svg" alt="Sticky Note: Text vs Binary → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/text-vs-binary-comparison-table-sticky.svg" alt="Sticky Note: Text vs Binary → Comparison Table" width="30%">
 </a>
 
 
@@ -3806,14 +3806,14 @@ Value: 0
 
 ### Code Example → Demonstrating Text vs Binary on Windows
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-handwritten.svg" alt="Handwritten: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-handwritten.svg" alt="Handwritten: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-diagram.svg" alt="Diagram: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-diagram.svg" alt="Diagram: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-sticky.svg" alt="Sticky Note: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-demonstrating-text-vs-binary-on-windows-sticky.svg" alt="Sticky Note: Code Example → Demonstrating Text vs Binary on Windows" width="30%">
 </a>
 
 
@@ -3872,14 +3872,14 @@ Text size:   10 bytes (no translation on Linux)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3888,14 +3888,14 @@ Text size:   10 bytes (no translation on Linux)
 
 ### Sequential Access
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-handwritten.svg" alt="Handwritten: Sequential Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-handwritten.svg" alt="Handwritten: Sequential Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-diagram.svg" alt="Diagram: Sequential Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-diagram.svg" alt="Diagram: Sequential Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-sticky.svg" alt="Sticky Note: Sequential Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-access-sticky.svg" alt="Sticky Note: Sequential Access" width="30%">
 </a>
 
 
@@ -3920,14 +3920,14 @@ for (int i = 0; i < 100; i++)
 
 ### Random Access
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/random-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/random-access-handwritten.svg" alt="Handwritten: Random Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/random-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/random-access-handwritten.svg" alt="Handwritten: Random Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/random-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/random-access-diagram.svg" alt="Diagram: Random Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/random-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/random-access-diagram.svg" alt="Diagram: Random Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/random-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/random-access-sticky.svg" alt="Sticky Note: Random Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/random-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/random-access-sticky.svg" alt="Sticky Note: Random Access" width="30%">
 </a>
 
 
@@ -3951,14 +3951,14 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 
 ### Sequential vs Random Access → Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-handwritten.svg" alt="Handwritten: Sequential vs Random Access → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-handwritten.svg" alt="Handwritten: Sequential vs Random Access → Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-diagram.svg" alt="Diagram: Sequential vs Random Access → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-diagram.svg" alt="Diagram: Sequential vs Random Access → Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-sticky.svg" alt="Sticky Note: Sequential vs Random Access → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/sequential-vs-random-access-comparison-table-sticky.svg" alt="Sticky Note: Sequential vs Random Access → Comparison Table" width="30%">
 </a>
 
 
@@ -3975,14 +3975,14 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 
 ### Performance Comparison
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-handwritten.svg" alt="Handwritten: Performance Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-handwritten.svg" alt="Handwritten: Performance Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-diagram.svg" alt="Diagram: Performance Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-diagram.svg" alt="Diagram: Performance Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-sticky.svg" alt="Sticky Note: Performance Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/performance-comparison-sticky.svg" alt="Sticky Note: Performance Comparison" width="30%">
 </a>
 
 
@@ -3995,14 +3995,14 @@ fprintf(fp, "UPDATED");  /* Overwrite specific bytes */
 
 ### Code Example → Sequential vs Random Performance Demo
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-handwritten.svg" alt="Handwritten: Code Example → Sequential vs Random Performance Demo" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-handwritten.svg" alt="Handwritten: Code Example → Sequential vs Random Performance Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-diagram.svg" alt="Diagram: Code Example → Sequential vs Random Performance Demo" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-diagram.svg" alt="Diagram: Code Example → Sequential vs Random Performance Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-sticky.svg" alt="Sticky Note: Code Example → Sequential vs Random Performance Demo" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sequential-vs-random-performance-demo-sticky.svg" alt="Sticky Note: Code Example → Sequential vs Random Performance Demo" width="30%">
 </a>
 
 
@@ -4071,27 +4071,27 @@ Random:     10000 queries in 0.0085s (0.9 micros/query)
 
 ### 12.11.1 tmpfile
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-handwritten.svg" alt="Handwritten: 12.11.1 tmpfile" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-handwritten.svg" alt="Handwritten: 12.11.1 tmpfile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-diagram.svg" alt="Diagram: 12.11.1 tmpfile" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-diagram.svg" alt="Diagram: 12.11.1 tmpfile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-sticky.svg" alt="Sticky Note: 12.11.1 tmpfile" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-1-tmpfile-sticky.svg" alt="Sticky Note: 12.11.1 tmpfile" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -4103,14 +4103,14 @@ Creates a temporary file opened in `"wb+"` mode (binary read/write). The file is
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -4118,14 +4118,14 @@ Creates a temporary file opened in `"wb+"` mode (binary read/write). The file is
 
 ### Steps
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-handwritten.svg" alt="Handwritten: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-diagram.svg" alt="Diagram: Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-sticky.svg" alt="Sticky Note: Steps" width="30%">
 </a>
 
 
@@ -4136,14 +4136,14 @@ Creates a temporary file opened in `"wb+"` mode (binary read/write). The file is
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -4185,27 +4185,27 @@ Primes from temp file: 2 3 5 7 11 13 17 19
 
 ### 12.11.2 tmpnam (Deprecated/Security Warning)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-handwritten.svg" alt="Handwritten: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-handwritten.svg" alt="Handwritten: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-diagram.svg" alt="Diagram: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-diagram.svg" alt="Diagram: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-sticky.svg" alt="Sticky Note: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/12-11-2-tmpnam-deprecated-security-warning-sticky.svg" alt="Sticky Note: 12.11.2 tmpnam (Deprecated/Security Warning)" width="30%">
 </a>
 
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -4217,14 +4217,14 @@ Generates a unique filename. **Warning:** There is a race condition between `tmp
 
 ### Safer Alternative: mkstemp (POSIX)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-handwritten.svg" alt="Handwritten: Safer Alternative: mkstemp (POSIX)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-handwritten.svg" alt="Handwritten: Safer Alternative: mkstemp (POSIX)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-diagram.svg" alt="Diagram: Safer Alternative: mkstemp (POSIX)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-diagram.svg" alt="Diagram: Safer Alternative: mkstemp (POSIX)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-sticky.svg" alt="Sticky Note: Safer Alternative: mkstemp (POSIX)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/safer-alternative-mkstemp-posix-sticky.svg" alt="Sticky Note: Safer Alternative: mkstemp (POSIX)" width="30%">
 </a>
 
 
@@ -4241,14 +4241,14 @@ remove(template);  /* manual cleanup needed */
 
 ### Temporary Files Comparison
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-handwritten.svg" alt="Handwritten: Temporary Files Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-handwritten.svg" alt="Handwritten: Temporary Files Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-diagram.svg" alt="Diagram: Temporary Files Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-diagram.svg" alt="Diagram: Temporary Files Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-sticky.svg" alt="Sticky Note: Temporary Files Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/temporary-files-comparison-sticky.svg" alt="Sticky Note: Temporary Files Comparison" width="30%">
 </a>
 
 
@@ -4261,14 +4261,14 @@ remove(template);  /* manual cleanup needed */
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -4283,14 +4283,14 @@ remove(template);  /* manual cleanup needed */
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -4302,14 +4302,14 @@ Buffering is like **using a tray** to carry multiple dishes at once instead of w
 
 ### Stream Buffering Modes
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-handwritten.svg" alt="Handwritten: Stream Buffering Modes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-handwritten.svg" alt="Handwritten: Stream Buffering Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-diagram.svg" alt="Diagram: Stream Buffering Modes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-diagram.svg" alt="Diagram: Stream Buffering Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-sticky.svg" alt="Sticky Note: Stream Buffering Modes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-modes-sticky.svg" alt="Sticky Note: Stream Buffering Modes" width="30%">
 </a>
 
 
@@ -4321,14 +4321,14 @@ Buffering is like **using a tray** to carry multiple dishes at once instead of w
 
 ### Default Buffering Behavior
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-handwritten.svg" alt="Handwritten: Default Buffering Behavior" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-handwritten.svg" alt="Handwritten: Default Buffering Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-diagram.svg" alt="Diagram: Default Buffering Behavior" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-diagram.svg" alt="Diagram: Default Buffering Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-sticky.svg" alt="Sticky Note: Default Buffering Behavior" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/default-buffering-behavior-sticky.svg" alt="Sticky Note: Default Buffering Behavior" width="30%">
 </a>
 
 
@@ -4341,14 +4341,14 @@ Buffering is like **using a tray** to carry multiple dishes at once instead of w
 
 ### Prototypes
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-handwritten.svg" alt="Handwritten: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-diagram.svg" alt="Diagram: Prototypes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/prototypes-sticky.svg" alt="Sticky Note: Prototypes" width="30%">
 </a>
 
 
@@ -4361,14 +4361,14 @@ void setbuf(FILE *restrict fp, char *restrict buf);
 
 ### Steps for Custom Buffering
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-handwritten.svg" alt="Handwritten: Steps for Custom Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-handwritten.svg" alt="Handwritten: Steps for Custom Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-diagram.svg" alt="Diagram: Steps for Custom Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-diagram.svg" alt="Diagram: Steps for Custom Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-sticky.svg" alt="Sticky Note: Steps for Custom Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/steps-for-custom-buffering-sticky.svg" alt="Sticky Note: Steps for Custom Buffering" width="30%">
 </a>
 
 
@@ -4379,14 +4379,14 @@ void setbuf(FILE *restrict fp, char *restrict buf);
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -4429,14 +4429,14 @@ int main(void)
 
 ### Dry Run Trace → Default Buffered Write (BUFSIZ=4096)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-handwritten.svg" alt="Handwritten: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-handwritten.svg" alt="Handwritten: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-diagram.svg" alt="Diagram: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-diagram.svg" alt="Diagram: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-sticky.svg" alt="Sticky Note: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/dry-run-trace-default-buffered-write-bufsiz-4096-sticky.svg" alt="Sticky Note: Dry Run Trace → Default Buffered Write (BUFSIZ=4096)" width="30%">
 </a>
 
 
@@ -4453,14 +4453,14 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Buffer Size Trade-off
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-handwritten.svg" alt="Handwritten: Buffer Size Trade-off" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-handwritten.svg" alt="Handwritten: Buffer Size Trade-off" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-diagram.svg" alt="Diagram: Buffer Size Trade-off" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-diagram.svg" alt="Diagram: Buffer Size Trade-off" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-sticky.svg" alt="Sticky Note: Buffer Size Trade-off" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/buffer-size-trade-off-sticky.svg" alt="Sticky Note: Buffer Size Trade-off" width="30%">
 </a>
 
 
@@ -4473,14 +4473,14 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -4492,14 +4492,14 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -4511,14 +4511,14 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -4532,14 +4532,14 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Stream Buffering → Mode Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-handwritten.svg" alt="Handwritten: Stream Buffering → Mode Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-handwritten.svg" alt="Handwritten: Stream Buffering → Mode Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-diagram.svg" alt="Diagram: Stream Buffering → Mode Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-diagram.svg" alt="Diagram: Stream Buffering → Mode Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-sticky.svg" alt="Sticky Note: Stream Buffering → Mode Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/stream-buffering-mode-comparison-table-sticky.svg" alt="Sticky Note: Stream Buffering → Mode Comparison Table" width="30%">
 </a>
 
 
@@ -4643,14 +4643,14 @@ With unbuffered (`_IONBF`), each write would go to disk immediately → 3 syscal
 
 ### Q1: What happens when you read past EOF?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-handwritten.svg" alt="Handwritten: What happens when you read past EOF?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-handwritten.svg" alt="Handwritten: What happens when you read past EOF?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-diagram.svg" alt="Diagram: What happens when you read past EOF?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-diagram.svg" alt="Diagram: What happens when you read past EOF?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-sticky.svg" alt="Sticky Note: What happens when you read past EOF?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-when-you-read-past-eof-sticky.svg" alt="Sticky Note: What happens when you read past EOF?" width="30%">
 </a>
 
 
@@ -4667,14 +4667,14 @@ printf("feof: %d\n", feof(fp));  /* 0 */
 
 ### Q2: What is the difference between fgets and fscanf?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-handwritten.svg" alt="Handwritten: What is the difference between fgets and fscanf?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-handwritten.svg" alt="Handwritten: What is the difference between fgets and fscanf?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-diagram.svg" alt="Diagram: What is the difference between fgets and fscanf?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-diagram.svg" alt="Diagram: What is the difference between fgets and fscanf?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-sticky.svg" alt="Sticky Note: What is the difference between fgets and fscanf?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-fgets-and-fscanf-sticky.svg" alt="Sticky Note: What is the difference between fgets and fscanf?" width="30%">
 </a>
 
 
@@ -4688,14 +4688,14 @@ printf("feof: %d\n", feof(fp));  /* 0 */
 
 ### Q3: Why does fgetc return int instead of char?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-handwritten.svg" alt="Handwritten: Why does fgetc return int instead of char?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-handwritten.svg" alt="Handwritten: Why does fgetc return int instead of char?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-diagram.svg" alt="Diagram: Why does fgetc return int instead of char?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-diagram.svg" alt="Diagram: Why does fgetc return int instead of char?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-sticky.svg" alt="Sticky Note: Why does fgetc return int instead of char?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/why-does-fgetc-return-int-instead-of-char-sticky.svg" alt="Sticky Note: Why does fgetc return int instead of char?" width="30%">
 </a>
 
 
@@ -4713,14 +4713,14 @@ while ((c = fgetc(fp)) != EOF) { /* works for all 256 byte values */ }
 
 ### Q4: What happens in binary mode vs text mode on Windows?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-handwritten.svg" alt="Handwritten: What happens in binary mode vs text mode on Windows?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-handwritten.svg" alt="Handwritten: What happens in binary mode vs text mode on Windows?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-diagram.svg" alt="Diagram: What happens in binary mode vs text mode on Windows?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-diagram.svg" alt="Diagram: What happens in binary mode vs text mode on Windows?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-sticky.svg" alt="Sticky Note: What happens in binary mode vs text mode on Windows?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-happens-in-binary-mode-vs-text-mode-on-windows-sticky.svg" alt="Sticky Note: What happens in binary mode vs text mode on Windows?" width="30%">
 </a>
 
 
@@ -4742,14 +4742,14 @@ fclose(fp);
 
 ### Q5: What are the limitations of fseek and ftell?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-handwritten.svg" alt="Handwritten: What are the limitations of fseek and ftell?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-handwritten.svg" alt="Handwritten: What are the limitations of fseek and ftell?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-diagram.svg" alt="Diagram: What are the limitations of fseek and ftell?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-diagram.svg" alt="Diagram: What are the limitations of fseek and ftell?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-sticky.svg" alt="Sticky Note: What are the limitations of fseek and ftell?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-are-the-limitations-of-fseek-and-ftell-sticky.svg" alt="Sticky Note: What are the limitations of fseek and ftell?" width="30%">
 </a>
 
 
@@ -4760,14 +4760,14 @@ fclose(fp);
 
 ### Q6: Should I use feof in loop conditions?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-handwritten.svg" alt="Handwritten: Should I use feof in loop conditions?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-handwritten.svg" alt="Handwritten: Should I use feof in loop conditions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-diagram.svg" alt="Diagram: Should I use feof in loop conditions?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-diagram.svg" alt="Diagram: Should I use feof in loop conditions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-sticky.svg" alt="Sticky Note: Should I use feof in loop conditions?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/should-i-use-feof-in-loop-conditions-sticky.svg" alt="Sticky Note: Should I use feof in loop conditions?" width="30%">
 </a>
 
 
@@ -4789,14 +4789,14 @@ while (fgets(buf, sizeof(buf), fp)) {
 
 ### Q7: What is the difference between r+ and w+?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-handwritten.svg" alt="Handwritten: What is the difference between r+ and w+?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-handwritten.svg" alt="Handwritten: What is the difference between r+ and w+?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-diagram.svg" alt="Diagram: What is the difference between r+ and w+?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-diagram.svg" alt="Diagram: What is the difference between r+ and w+?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-sticky.svg" alt="Sticky Note: What is the difference between r+ and w+?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-difference-between-r-and-w-sticky.svg" alt="Sticky Note: What is the difference between r+ and w+?" width="30%">
 </a>
 
 
@@ -4807,14 +4807,14 @@ while (fgets(buf, sizeof(buf), fp)) {
 
 ### Q8: How do you handle binary data portably?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-handwritten.svg" alt="Handwritten: How do you handle binary data portably?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-handwritten.svg" alt="Handwritten: How do you handle binary data portably?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-diagram.svg" alt="Diagram: How do you handle binary data portably?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-diagram.svg" alt="Diagram: How do you handle binary data portably?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-sticky.svg" alt="Sticky Note: How do you handle binary data portably?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/how-do-you-handle-binary-data-portably-sticky.svg" alt="Sticky Note: How do you handle binary data portably?" width="30%">
 </a>
 
 
@@ -4837,14 +4837,14 @@ void write_int32(FILE *fp, int32_t val) {
 
 ### Q9: What is the safest way to read a string with fscanf?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-handwritten.svg" alt="Handwritten: What is the safest way to read a string with fscanf?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-handwritten.svg" alt="Handwritten: What is the safest way to read a string with fscanf?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-diagram.svg" alt="Diagram: What is the safest way to read a string with fscanf?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-diagram.svg" alt="Diagram: What is the safest way to read a string with fscanf?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-sticky.svg" alt="Sticky Note: What is the safest way to read a string with fscanf?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-is-the-safest-way-to-read-a-string-with-fscanf-sticky.svg" alt="Sticky Note: What is the safest way to read a string with fscanf?" width="30%">
 </a>
 
 
@@ -4860,14 +4860,14 @@ name[strcspn(name, "\n")] = '\0';  /* strip newline */
 
 ### Q10: What does fflush(stdin) do?
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-handwritten.svg" alt="Handwritten: What does fflush(stdin) do?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-handwritten.svg" alt="Handwritten: What does fflush(stdin) do?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-diagram.svg" alt="Diagram: What does fflush(stdin) do?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-diagram.svg" alt="Diagram: What does fflush(stdin) do?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-sticky.svg" alt="Sticky Note: What does fflush(stdin) do?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/what-does-fflush-stdin-do-sticky.svg" alt="Sticky Note: What does fflush(stdin) do?" width="30%">
 </a>
 
 
@@ -4879,14 +4879,14 @@ By the C standard, `fflush` is defined only for output streams. `fflush(stdin)` 
 
 ### 1. Web Server Logging
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-handwritten.svg" alt="Handwritten: 1. Web Server Logging" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-handwritten.svg" alt="Handwritten: 1. Web Server Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-diagram.svg" alt="Diagram: 1. Web Server Logging" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-diagram.svg" alt="Diagram: 1. Web Server Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-sticky.svg" alt="Sticky Note: 1. Web Server Logging" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/1-web-server-logging-sticky.svg" alt="Sticky Note: 1. Web Server Logging" width="30%">
 </a>
 
 
@@ -4920,14 +4920,14 @@ void log_request(const char *client_ip, const char *method,
 
 ### 2. Configuration File Parser
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-handwritten.svg" alt="Handwritten: 2. Configuration File Parser" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-handwritten.svg" alt="Handwritten: 2. Configuration File Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-diagram.svg" alt="Diagram: 2. Configuration File Parser" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-diagram.svg" alt="Diagram: 2. Configuration File Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-sticky.svg" alt="Sticky Note: 2. Configuration File Parser" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/2-configuration-file-parser-sticky.svg" alt="Sticky Note: 2. Configuration File Parser" width="30%">
 </a>
 
 
@@ -4985,14 +4985,14 @@ int main(void)
 
 ### 3. Binary Database Engine (Simple Record Manager)
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-handwritten.svg" alt="Handwritten: 3. Binary Database Engine (Simple Record Manager)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-handwritten.svg" alt="Handwritten: 3. Binary Database Engine (Simple Record Manager)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-diagram.svg" alt="Diagram: 3. Binary Database Engine (Simple Record Manager)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-diagram.svg" alt="Diagram: 3. Binary Database Engine (Simple Record Manager)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-sticky.svg" alt="Sticky Note: 3. Binary Database Engine (Simple Record Manager)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/3-binary-database-engine-simple-record-manager-sticky.svg" alt="Sticky Note: 3. Binary Database Engine (Simple Record Manager)" width="30%">
 </a>
 
 
@@ -5127,14 +5127,14 @@ After deletion:
 
 ### 4. File Copy Utility
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-handwritten.svg" alt="Handwritten: 4. File Copy Utility" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-handwritten.svg" alt="Handwritten: 4. File Copy Utility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-diagram.svg" alt="Diagram: 4. File Copy Utility" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-diagram.svg" alt="Diagram: 4. File Copy Utility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-sticky.svg" alt="Sticky Note: 4. File Copy Utility" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/4-file-copy-utility-sticky.svg" alt="Sticky Note: 4. File Copy Utility" width="30%">
 </a>
 
 
@@ -5182,14 +5182,14 @@ int main(int argc, char *argv[])
 
 ### 5. Checksum/Hashing a File Line-by-Line
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-handwritten.svg" alt="Handwritten: 5. Checksum/Hashing a File Line-by-Line" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-handwritten.svg" alt="Handwritten: 5. Checksum/Hashing a File Line-by-Line" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-diagram.svg" alt="Diagram: 5. Checksum/Hashing a File Line-by-Line" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-diagram.svg" alt="Diagram: 5. Checksum/Hashing a File Line-by-Line" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-sticky.svg" alt="Sticky Note: 5. Checksum/Hashing a File Line-by-Line" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/5-checksum-hashing-a-file-line-by-line-sticky.svg" alt="Sticky Note: 5. Checksum/Hashing a File Line-by-Line" width="30%">
 </a>
 
 
@@ -5238,14 +5238,14 @@ int main(int argc, char *argv[])
 
 ### Multiple Choice
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-handwritten.svg" alt="Handwritten: Multiple Choice" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-handwritten.svg" alt="Handwritten: Multiple Choice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-diagram.svg" alt="Diagram: Multiple Choice" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-diagram.svg" alt="Diagram: Multiple Choice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-sticky.svg" alt="Sticky Note: Multiple Choice" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/multiple-choice-sticky.svg" alt="Sticky Note: Multiple Choice" width="30%">
 </a>
 
 
@@ -5331,14 +5331,14 @@ int main(int argc, char *argv[])
 
 ### True or False
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-handwritten.svg" alt="Handwritten: True or False" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-handwritten.svg" alt="Handwritten: True or False" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-diagram.svg" alt="Diagram: True or False" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-diagram.svg" alt="Diagram: True or False" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-sticky.svg" alt="Sticky Note: True or False" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/true-or-false-sticky.svg" alt="Sticky Note: True or False" width="30%">
 </a>
 
 
@@ -5363,14 +5363,14 @@ int main(int argc, char *argv[])
 
 ### Core Concepts
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-handwritten.svg" alt="Handwritten: Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-handwritten.svg" alt="Handwritten: Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-diagram.svg" alt="Diagram: Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-diagram.svg" alt="Diagram: Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-sticky.svg" alt="Sticky Note: Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/core-concepts-sticky.svg" alt="Sticky Note: Core Concepts" width="30%">
 </a>
 
 
@@ -5381,14 +5381,14 @@ int main(int argc, char *argv[])
 
 ### Reading
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/reading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/reading-handwritten.svg" alt="Handwritten: Reading" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/reading-handwritten.svg" alt="Handwritten: Reading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/reading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/reading-diagram.svg" alt="Diagram: Reading" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/reading-diagram.svg" alt="Diagram: Reading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/reading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/reading-sticky.svg" alt="Sticky Note: Reading" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/reading-sticky.svg" alt="Sticky Note: Reading" width="30%">
 </a>
 
 
@@ -5401,14 +5401,14 @@ int main(int argc, char *argv[])
 
 ### Writing
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/writing-handwritten.svg" alt="Handwritten: Writing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/writing-handwritten.svg" alt="Handwritten: Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/writing-diagram.svg" alt="Diagram: Writing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/writing-diagram.svg" alt="Diagram: Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/writing-sticky.svg" alt="Sticky Note: Writing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/writing-sticky.svg" alt="Sticky Note: Writing" width="30%">
 </a>
 
 
@@ -5421,14 +5421,14 @@ int main(int argc, char *argv[])
 
 ### Positioning
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-handwritten.svg" alt="Handwritten: Positioning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-handwritten.svg" alt="Handwritten: Positioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-diagram.svg" alt="Diagram: Positioning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-diagram.svg" alt="Diagram: Positioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/positioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/positioning-sticky.svg" alt="Sticky Note: Positioning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/positioning-sticky.svg" alt="Sticky Note: Positioning" width="30%">
 </a>
 
 
@@ -5438,14 +5438,14 @@ int main(int argc, char *argv[])
 
 ### Error Handling
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-handwritten.svg" alt="Handwritten: Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-handwritten.svg" alt="Handwritten: Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-diagram.svg" alt="Diagram: Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-diagram.svg" alt="Diagram: Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/error-handling-sticky.svg" alt="Sticky Note: Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/error-handling-sticky.svg" alt="Sticky Note: Error Handling" width="30%">
 </a>
 
 
@@ -5456,14 +5456,14 @@ int main(int argc, char *argv[])
 
 ### Buffering
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffering-handwritten.svg" alt="Handwritten: Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/buffering-handwritten.svg" alt="Handwritten: Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffering-diagram.svg" alt="Diagram: Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/buffering-diagram.svg" alt="Diagram: Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/buffering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/buffering-sticky.svg" alt="Sticky Note: Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/buffering-sticky.svg" alt="Sticky Note: Buffering" width="30%">
 </a>
 
 
@@ -5473,14 +5473,14 @@ int main(int argc, char *argv[])
 
 ### Key Rules
 
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-handwritten.svg" alt="Handwritten: Key Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-rules-handwritten.svg" alt="Handwritten: Key Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-diagram.svg" alt="Diagram: Key Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-rules-diagram.svg" alt="Diagram: Key Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/12-file-handling/key-rules-sticky.svg" alt="Sticky Note: Key Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/12-file-handling/key-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/12-file-handling/key-rules-sticky.svg" alt="Sticky Note: Key Rules" width="30%">
 </a>
 
 

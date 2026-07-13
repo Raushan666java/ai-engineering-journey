@@ -25,14 +25,14 @@ flowchart LR
 
 ### Q1: What are the six constraints of REST? How do they affect API design?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-handwritten.svg" alt="Handwritten: What are the six constraints of REST? How do they affect API design?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-handwritten.svg" alt="Handwritten: What are the six constraints of REST? How do they affect API design?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-diagram.svg" alt="Diagram: What are the six constraints of REST? How do they affect API design?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-diagram.svg" alt="Diagram: What are the six constraints of REST? How do they affect API design?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-sticky.svg" alt="Sticky Note: What are the six constraints of REST? How do they affect API design?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-the-six-constraints-of-rest-how-do-they-affect-api-design-sticky.svg" alt="Sticky Note: What are the six constraints of REST? How do they affect API design?" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ REST constraints create loosely coupled, evolvable systems. The uniform interfac
 
 ### Q2: What is the difference between POST and PUT? When should you use PATCH?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-handwritten.svg" alt="Handwritten: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-handwritten.svg" alt="Handwritten: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-diagram.svg" alt="Diagram: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-diagram.svg" alt="Diagram: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-sticky.svg" alt="Sticky Note: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-the-difference-between-post-and-put-when-should-you-use-patch-sticky.svg" alt="Sticky Note: What is the difference between POST and PUT? When should you use PATCH?" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ POST creates, PUT replaces fully, PATCH updates partially. The idempotency guara
 
 ### Q3: HTTP status codes → how do you choose the right ones?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-handwritten.svg" alt="Handwritten: HTTP status codes → how do you choose the right ones?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-handwritten.svg" alt="Handwritten: HTTP status codes → how do you choose the right ones?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-diagram.svg" alt="Diagram: HTTP status codes → how do you choose the right ones?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-diagram.svg" alt="Diagram: HTTP status codes → how do you choose the right ones?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-sticky.svg" alt="Sticky Note: HTTP status codes → how do you choose the right ones?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/http-status-codes-how-do-you-choose-the-right-ones-sticky.svg" alt="Sticky Note: HTTP status codes → how do you choose the right ones?" width="30%">
 </a>
 
 
@@ -574,14 +574,14 @@ Request received
 Choose status codes to enable correct client behavior without inspecting the response body. Use 201 for creation, 202 for async acceptance, 204 for successful empty responses, 400 for bad syntax, 422 for bad semantics, 409 for conflicts, 429 for rate limits. Never expose 5xx details to clients → log internally, return generic messages.
 ### Q4: RESTful URL design → what are the best practices?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-handwritten.svg" alt="Handwritten: RESTful URL design → what are the best practices?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-handwritten.svg" alt="Handwritten: RESTful URL design → what are the best practices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-diagram.svg" alt="Diagram: RESTful URL design → what are the best practices?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-diagram.svg" alt="Diagram: RESTful URL design → what are the best practices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-sticky.svg" alt="Sticky Note: RESTful URL design → what are the best practices?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/restful-url-design-what-are-the-best-practices-sticky.svg" alt="Sticky Note: RESTful URL design → what are the best practices?" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ Resource naming rules:
 Good URLs are self-documenting and consistent. Use plural nouns for collections, path parameters for identities, query parameters for filtering. Keep nesting to 2-3 levels max → deeper hierarchies suggest poor resource modeling. Use actions as sub-resources (e.g., /api/orders/123/cancel) only for operations that don't map to standard CRUD.
 ### Q5: REST API versioning → what strategies exist?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-handwritten.svg" alt="Handwritten: REST API versioning → what strategies exist?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-handwritten.svg" alt="Handwritten: REST API versioning → what strategies exist?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-diagram.svg" alt="Diagram: REST API versioning → what strategies exist?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-diagram.svg" alt="Diagram: REST API versioning → what strategies exist?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-sticky.svg" alt="Sticky Note: REST API versioning → what strategies exist?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-versioning-what-strategies-exist-sticky.svg" alt="Sticky Note: REST API versioning → what strategies exist?" width="30%">
 </a>
 
 
@@ -896,14 +896,14 @@ Migration approach:
 URI path versioning is the most practical choice for public APIs → it's explicit, easy to route, cache-friendly, and simple for clients. Content negotiation is theoretically more RESTful but adds client complexity. Always provide deprecation headers and migration guides when retiring versions.
 ### Q6: How do you implement pagination, sorting, and filtering?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-handwritten.svg" alt="Handwritten: How do you implement pagination, sorting, and filtering?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-handwritten.svg" alt="Handwritten: How do you implement pagination, sorting, and filtering?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-diagram.svg" alt="Diagram: How do you implement pagination, sorting, and filtering?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-diagram.svg" alt="Diagram: How do you implement pagination, sorting, and filtering?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-sticky.svg" alt="Sticky Note: How do you implement pagination, sorting, and filtering?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-pagination-sorting-and-filtering-sticky.svg" alt="Sticky Note: How do you implement pagination, sorting, and filtering?" width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ class SortValidator {
 Offset-based pagination works for most cases but degrades at high offsets. Cursor-based is better for real-time feeds and infinite scroll. Always whitelist sort fields to prevent injection and unintended joins. For complex filtering, use Specifications, Querydsl, or a dedicated search service.
 ### Q7: How do you implement error handling with Problem Details (RFC 7807)?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-handwritten.svg" alt="Handwritten: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-handwritten.svg" alt="Handwritten: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-diagram.svg" alt="Diagram: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-diagram.svg" alt="Diagram: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-sticky.svg" alt="Sticky Note: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-error-handling-with-problem-details-rfc-7807-sticky.svg" alt="Sticky Note: How do you implement error handling with Problem Details (RFC 7807)?" width="30%">
 </a>
 
 
@@ -1442,14 +1442,14 @@ Custom (no standard) {"error": "Not found", "code": 404}    None
 RFC 7807 Problem Details provides a consistent, extensible error format across your entire API. Spring Boot 3.x makes it the default error mechanism. Use custom error types for different error categories and include correlation IDs for debugging. Always test error responses in integration tests.
 ### Q8: How do you implement content negotiation in a REST API?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement content negotiation in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement content negotiation in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement content negotiation in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement content negotiation in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement content negotiation in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-content-negotiation-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement content negotiation in a REST API?" width="30%">
 </a>
 
 
@@ -1678,14 +1678,14 @@ spring:
 Content negotiation decouples resource representation from resource identity. Always use the Accept header. Support JSON as minimum; add XML for enterprise clients. Use versioned media types (application/vnd.company.v1+json) for API versioning. Return 406 for unsupported formats.
 ### Q9: CORS → what is it and how do you configure it?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-handwritten.svg" alt="Handwritten: CORS → what is it and how do you configure it?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-handwritten.svg" alt="Handwritten: CORS → what is it and how do you configure it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-diagram.svg" alt="Diagram: CORS → what is it and how do you configure it?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-diagram.svg" alt="Diagram: CORS → what is it and how do you configure it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-sticky.svg" alt="Sticky Note: CORS → what is it and how do you configure it?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/cors-what-is-it-and-how-do-you-configure-it-sticky.svg" alt="Sticky Note: CORS → what is it and how do you configure it?" width="30%">
 </a>
 
 
@@ -1949,14 +1949,14 @@ class ProdCorsConfig implements WebMvcConfigurer {
 CORS is a browser-enforced security mechanism. Configure it globally via WebMvcConfigurer for consistency. Never combine `allowedOrigins("*")` with `allowCredentials(true)`. Use different CORS configurations per profile (permissive for dev, restrictive for prod). Test with curl OPTIONS requests before relying on browser behavior.
 ### Q10: What is HATEOAS and do you need it?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-handwritten.svg" alt="Handwritten: What is HATEOAS and do you need it?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-handwritten.svg" alt="Handwritten: What is HATEOAS and do you need it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-diagram.svg" alt="Diagram: What is HATEOAS and do you need it?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-diagram.svg" alt="Diagram: What is HATEOAS and do you need it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-sticky.svg" alt="Sticky Note: What is HATEOAS and do you need it?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-is-hateoas-and-do-you-need-it-sticky.svg" alt="Sticky Note: What is HATEOAS and do you need it?" width="30%">
 </a>
 
 
@@ -2189,14 +2189,14 @@ public EntityModel<Order> getOrderMinimal(@PathVariable Long id) {
 HATEOAS is a REST maturity level L3 concept. Most real APIs provide minimal hypermedia (self links, pagination links) without full action-discovery HATEOAS. Use it for workflow-driven APIs where available actions change based on state. Skip it for simple CRUD or performance-critical APIs. The pragmatic approach: add self links and pagination, skip action links.
 ### Q11: How do you secure a REST API with authentication?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-handwritten.svg" alt="Handwritten: How do you secure a REST API with authentication?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-handwritten.svg" alt="Handwritten: How do you secure a REST API with authentication?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-diagram.svg" alt="Diagram: How do you secure a REST API with authentication?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-diagram.svg" alt="Diagram: How do you secure a REST API with authentication?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-sticky.svg" alt="Sticky Note: How do you secure a REST API with authentication?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-secure-a-rest-api-with-authentication-sticky.svg" alt="Sticky Note: How do you secure a REST API with authentication?" width="30%">
 </a>
 
 
@@ -2564,14 +2564,14 @@ Pragma: no-cache
 JWT Bearer tokens in the Authorization header are the standard for REST API auth. Stateless, scalable, and cross-platform. Use OAuth2 for third-party access delegation. Never use session cookies in REST APIs. Always use HTTPS, short token expiry, and proper token validation.
 ### Q12: How do you implement rate limiting in a REST API?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement rate limiting in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement rate limiting in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement rate limiting in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement rate limiting in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement rate limiting in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-rate-limiting-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement rate limiting in a REST API?" width="30%">
 </a>
 
 
@@ -2922,14 +2922,14 @@ Response body (Problem Details):
 Rate limiting is essential for production APIs. Use the token bucket algorithm (Bucket4j) for burst handling. Return 429 Too Many Requests with Retry-After and X-RateLimit-* headers. Use Redis for distributed rate limiting across instances. Different rate limits per endpoint, per tier, and per client. Always log rate limit violations.
 ### Q13: Explain the Richardson Maturity Model.
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-handwritten.svg" alt="Handwritten: Explain the Richardson Maturity Model." width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-handwritten.svg" alt="Handwritten: Explain the Richardson Maturity Model." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-diagram.svg" alt="Diagram: Explain the Richardson Maturity Model." width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-diagram.svg" alt="Diagram: Explain the Richardson Maturity Model." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-sticky.svg" alt="Sticky Note: Explain the Richardson Maturity Model." width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/explain-the-richardson-maturity-model-sticky.svg" alt="Sticky Note: Explain the Richardson Maturity Model." width="30%">
 </a>
 
 
@@ -3145,14 +3145,14 @@ void testRmmLevel() {
 Most practical APIs target Level 2 (resources + HTTP verbs + status codes). Level 3 (hypermedia) adds discoverability but increases complexity. Don't jump to L3 unless you have hypermedia clients. The model is descriptive, not prescriptive → build at the level that serves your consumers.
 ### Q14: How does REST compare to GraphQL and gRPC?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-handwritten.svg" alt="Handwritten: How does REST compare to GraphQL and gRPC?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-handwritten.svg" alt="Handwritten: How does REST compare to GraphQL and gRPC?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-diagram.svg" alt="Diagram: How does REST compare to GraphQL and gRPC?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-diagram.svg" alt="Diagram: How does REST compare to GraphQL and gRPC?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-sticky.svg" alt="Sticky Note: How does REST compare to GraphQL and gRPC?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-does-rest-compare-to-graphql-and-grpc-sticky.svg" alt="Sticky Note: How does REST compare to GraphQL and gRPC?" width="30%">
 </a>
 
 
@@ -3459,14 +3459,14 @@ Don't use gRPC when:
 Choose the right protocol for the job: REST for public APIs, GraphQL for flexible frontends, gRPC for microservice-internal communication. Many large systems use all three → REST for external, GraphQL for frontend gateway, gRPC for service mesh. Don't over-engineer: REST is the safest default.
 ### Q15: How do you implement caching in a REST API (ETag, Cache-Control)?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-handwritten.svg" alt="Handwritten: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-handwritten.svg" alt="Handwritten: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-diagram.svg" alt="Diagram: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-diagram.svg" alt="Diagram: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-sticky.svg" alt="Sticky Note: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-caching-in-a-rest-api-etag-cache-control-sticky.svg" alt="Sticky Note: How do you implement caching in a REST API (ETag, Cache-Control)?" width="30%">
 </a>
 
 
@@ -3813,14 +3813,14 @@ public ResponseEntity&lt;Product&gt; getProductCached(@PathVariable Long id) {
 Caching is the most impactful performance optimization for REST APIs. Use ETags for conditional requests (returns 304 with empty body), Cache-Control headers for client/CDN caching, and Spring @Cacheable for server-side caching. Combine all three for maximum benefit. Match cache invalidation granularity to your data change patterns.
 ### Q16: How do you document a REST API with OpenAPI/Swagger?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-handwritten.svg" alt="Handwritten: How do you document a REST API with OpenAPI/Swagger?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-handwritten.svg" alt="Handwritten: How do you document a REST API with OpenAPI/Swagger?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-diagram.svg" alt="Diagram: How do you document a REST API with OpenAPI/Swagger?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-diagram.svg" alt="Diagram: How do you document a REST API with OpenAPI/Swagger?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-sticky.svg" alt="Sticky Note: How do you document a REST API with OpenAPI/Swagger?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-document-a-rest-api-with-openapi-swagger-sticky.svg" alt="Sticky Note: How do you document a REST API with OpenAPI/Swagger?" width="30%">
 </a>
 
 
@@ -4242,14 +4242,14 @@ public Attachment uploadAttachment(
 OpenAPI is essential for production APIs. Springdoc auto-generates the spec from annotations → add descriptive text, examples, and response codes. Document error responses (Problem Details schema), auth requirements (Bearer, API key), and pagination parameters. Group endpoints by domain for manageable docs. Provide examples for request/response bodies.
 ### Q17: How do you validate request bodies and parameters?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-handwritten.svg" alt="Handwritten: How do you validate request bodies and parameters?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-handwritten.svg" alt="Handwritten: How do you validate request bodies and parameters?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-diagram.svg" alt="Diagram: How do you validate request bodies and parameters?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-diagram.svg" alt="Diagram: How do you validate request bodies and parameters?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-sticky.svg" alt="Sticky Note: How do you validate request bodies and parameters?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-validate-request-bodies-and-parameters-sticky.svg" alt="Sticky Note: How do you validate request bodies and parameters?" width="30%">
 </a>
 
 
@@ -4664,14 +4664,14 @@ void testEnumValidation() throws Exception {
 Bean Validation is the standard approach. Combine javax/jakarta validation annotations on DTOs, @Valid on controller parameters, and @Validated for method-level validation. Add custom validators for cross-field rules (@ValidDateRange). Handle validation errors with @ControllerAdvice returning Problem Details with individual field errors. Never trust client input.
 ### Q18: How do you handle file uploads in a REST API?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you handle file uploads in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you handle file uploads in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-diagram.svg" alt="Diagram: How do you handle file uploads in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-diagram.svg" alt="Diagram: How do you handle file uploads in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you handle file uploads in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-file-uploads-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you handle file uploads in a REST API?" width="30%">
 </a>
 
 
@@ -5126,14 +5126,14 @@ class FileStorageException extends RuntimeException {
 File uploads require careful validation and secure storage. Validate file type (MIME whitelist), size, and extension before storing. Use UUID-based filenames to prevent path traversal. Stream large files to avoid memory issues. For production, use cloud storage (S3) with presigned URLs for secure access. Set multipart limits based on your use case.
 ### Q19: How do you implement streaming responses in a REST API?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement streaming responses in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-handwritten.svg" alt="Handwritten: How do you implement streaming responses in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement streaming responses in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-diagram.svg" alt="Diagram: How do you implement streaming responses in a REST API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement streaming responses in a REST API?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-streaming-responses-in-a-rest-api-sticky.svg" alt="Sticky Note: How do you implement streaming responses in a REST API?" width="30%">
 </a>
 
 
@@ -5548,14 +5548,14 @@ public void handleSseError(IOException e) {
 Streaming is essential for large datasets and real-time updates. Use StreamingResponseBody for file/data exports (CSV, JSON arrays). Use SseEmitter (Server-Sent Events) for real-time pushes to browser clients. Always handle client disconnects gracefully. Use database cursors (Stream<Order>) for memory-efficient large data processing.
 ### Q20: How do you implement idempotency keys for safe retries?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-handwritten.svg" alt="Handwritten: How do you implement idempotency keys for safe retries?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-handwritten.svg" alt="Handwritten: How do you implement idempotency keys for safe retries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-diagram.svg" alt="Diagram: How do you implement idempotency keys for safe retries?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-diagram.svg" alt="Diagram: How do you implement idempotency keys for safe retries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-sticky.svg" alt="Sticky Note: How do you implement idempotency keys for safe retries?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-implement-idempotency-keys-for-safe-retries-sticky.svg" alt="Sticky Note: How do you implement idempotency keys for safe retries?" width="30%">
 </a>
 
 
@@ -5941,14 +5941,14 @@ void testInvalidIdempotencyKey() throws Exception {
 Idempotency keys prevent duplicate processing on retries. Store results with TTL in Redis. Use atomic locks to handle concurrent requests with the same key. Return stored results on replay (including original status code). This is critical for payment processing, order creation, and any operation that shouldn't execute twice.
 ### Q21: What are REST API security best practices?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-handwritten.svg" alt="Handwritten: What are REST API security best practices?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-handwritten.svg" alt="Handwritten: What are REST API security best practices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-diagram.svg" alt="Diagram: What are REST API security best practices?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-diagram.svg" alt="Diagram: What are REST API security best practices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-sticky.svg" alt="Sticky Note: What are REST API security best practices?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-api-security-best-practices-sticky.svg" alt="Sticky Note: What are REST API security best practices?" width="30%">
 </a>
 
 
@@ -6322,14 +6322,14 @@ class ProductionSecurityConfig {
 Security is layered: HTTPS + HSTS for transport, JWT/OAuth2 for auth, @PreAuthorize for authorization, bean validation for input, rate limiting for abuse prevention, and audit logging for accountability. Every layer is necessary → one missed layer becomes the weakest link. Test security headers, injection vectors, and error information leakage.
 ### Q22: How do you handle async requests in REST (DeferredResult / Callable)?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-handwritten.svg" alt="Handwritten: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-handwritten.svg" alt="Handwritten: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-diagram.svg" alt="Diagram: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-diagram.svg" alt="Diagram: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-sticky.svg" alt="Sticky Note: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-handle-async-requests-in-rest-deferredresult-callable-sticky.svg" alt="Sticky Note: How do you handle async requests in REST (DeferredResult / Callable)?" width="30%">
 </a>
 
 
@@ -6696,14 +6696,14 @@ server:
 Async request processing frees servlet container threads during long operations. Use Callable for simple offloading, DeferredResult for event-driven responses (queues, long polling), and CompletableFuture for complex orchestration. Always configure a proper thread pool → the default SimpleAsyncTaskExecutor creates unbounded threads. Test async endpoints with asyncDispatch().
 ### Q23: How do you test REST APIs?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-handwritten.svg" alt="Handwritten: How do you test REST APIs?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-handwritten.svg" alt="Handwritten: How do you test REST APIs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-diagram.svg" alt="Diagram: How do you test REST APIs?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-diagram.svg" alt="Diagram: How do you test REST APIs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-sticky.svg" alt="Sticky Note: How do you test REST APIs?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/how-do-you-test-rest-apis-sticky.svg" alt="Sticky Note: How do you test REST APIs?" width="30%">
 </a>
 
 
@@ -7187,14 +7187,14 @@ Test every endpoint for:
 Test your REST API at every level. MockMvc for fast controller tests with validation and error scenarios. TestRestTemplate for full integration tests that exercise the entire stack. Always test security (auth, authorization, IDOR). Include performance tests for critical endpoints. Use parameterized tests for status codes and edge cases. Every endpoint needs a success test AND failure tests.
 ### Q24: What are REST conditional requests and how do they work?
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-handwritten.svg" alt="Handwritten: What are REST conditional requests and how do they work?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-handwritten.svg" alt="Handwritten: What are REST conditional requests and how do they work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-diagram.svg" alt="Diagram: What are REST conditional requests and how do they work?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-diagram.svg" alt="Diagram: What are REST conditional requests and how do they work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-sticky.svg" alt="Sticky Note: What are REST conditional requests and how do they work?" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/what-are-rest-conditional-requests-and-how-do-they-work-sticky.svg" alt="Sticky Note: What are REST conditional requests and how do they work?" width="30%">
 </a>
 
 
@@ -7518,14 +7518,14 @@ DELETE /resource
 Conditional requests are the foundation of HTTP caching and optimistic concurrency. Use ETag + If-None-Match for efficient caching (304). Use If-Match for safe updates (prevents lost updates, 412 Precondition Failed). Always include both ETag and Last-Modified headers. Test all conditional scenarios: not modified (304), conflict (412), and normal success (200).
 ### Q25: REST API design → complete best practices checklist
 
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-handwritten.svg" alt="Handwritten: REST API design → complete best practices checklist" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-handwritten.svg" alt="Handwritten: REST API design → complete best practices checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-diagram.svg" alt="Diagram: REST API design → complete best practices checklist" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-diagram.svg" alt="Diagram: REST API design → complete best practices checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-sticky.svg" alt="Sticky Note: REST API design → complete best practices checklist" width="30%">
+<a href="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/58-interview-rest-api/rest-api-design-complete-best-practices-checklist-sticky.svg" alt="Sticky Note: REST API design → complete best practices checklist" width="30%">
 </a>
 
 

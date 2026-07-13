@@ -46,7 +46,7 @@ flowchart TD
     J --> N[Word Break DP]
     J --> O[Delete O(L)]
     J --> P[Longest Prefix O(L)]
-```
+```
 
 ## Theory
 
@@ -56,14 +56,14 @@ flowchart TD
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/16-trie/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/16-trie/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/16-trie/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/16-trie/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/16-trie/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/16-trie/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/16-trie/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/16-trie/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/16-trie/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/16-trie/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/16-trie/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/16-trie/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ Words: "app", "at", "bat", "cat", "cats"
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/data-structures/16-trie/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/16-trie/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/16-trie/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/16-trie/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/16-trie/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/16-trie/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/16-trie/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/16-trie/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/16-trie/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/16-trie/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/16-trie/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/16-trie/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -161,7 +161,7 @@ function insert(word):
             current.children[c] = new TrieNode()
         current = current.children[c]
     current.isEndOfWord = true
-```
+```
 
 ### Dry Run — Insertion Trace
 
@@ -323,7 +323,7 @@ function search(word):
             return false
         current = current.children[c]
     return current.isEndOfWord
-```
+```
 
 ### Dry Run — Search Trace
 
@@ -439,7 +439,7 @@ function deleteRecursive(node, word, depth):
         remove c from node.children
         return node.children is empty AND not node.isEndOfWord
     return false
-```
+```
 
 ### Dry Run — Delete Trace
 
@@ -597,7 +597,7 @@ function startsWith(prefix):
             return false
         current = current.children[c]
     return true
-```
+```
 
 ### Dry Run
 
@@ -723,7 +723,7 @@ Traverse root, a, p. From node 'p', DFS:
 | ap + r | false | — |
 | ap + r + i + c + o + t | true | "apricot" check |
 
-Result: ["app", "apple", "application", "apricot"]
+Result: ["app", "apple", "application", "apricot"]
 
 ### Implementations
 
@@ -843,7 +843,7 @@ function longestPrefix(word):
         if current.isEndOfWord:
             lastMatch = prefix
     return lastMatch
-```
+```
 
 ### Dry Run
 
@@ -975,7 +975,7 @@ function wordBreak(s, dictionary):
                 dp[i] = true
                 break
     return dp[n]
-```
+```
 
 ### Dry Run
 
@@ -1176,7 +1176,7 @@ def search(self, word: str) -> bool:
             return False
         return dfs(node.children[word[i]], i + 1)
     return dfs(self.root, 0)
-```
+```
 
 ---
 
@@ -1534,4 +1534,4 @@ function findWords(board: string[][], words: string[]): string[] {
 ### Challenge Problem
 
 11. Implement a **compressed trie** (radix tree / Patricia trie) where edges with single-child paths are concatenated. Compare insertion and search time against the standard trie for a large dictionary.
-
+

@@ -50,14 +50,14 @@ flowchart LR
 
 ### 11.1 Cache Drivers
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-handwritten.svg" alt="Handwritten: 11.1 Cache Drivers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-handwritten.svg" alt="Handwritten: 11.1 Cache Drivers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-diagram.svg" alt="Diagram: 11.1 Cache Drivers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-diagram.svg" alt="Diagram: 11.1 Cache Drivers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-sticky.svg" alt="Sticky Note: 11.1 Cache Drivers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-1-cache-drivers-sticky.svg" alt="Sticky Note: 11.1 Cache Drivers" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ CACHE_STORE=null
 
 ### 11.2 Cache API
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-handwritten.svg" alt="Handwritten: 11.2 Cache API" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-handwritten.svg" alt="Handwritten: 11.2 Cache API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-diagram.svg" alt="Diagram: 11.2 Cache API" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-diagram.svg" alt="Diagram: 11.2 Cache API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-sticky.svg" alt="Sticky Note: 11.2 Cache API" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-2-cache-api-sticky.svg" alt="Sticky Note: 11.2 Cache API" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ if ($profile !== null) {
 
 ### 11.3 Cache Tags
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-handwritten.svg" alt="Handwritten: 11.3 Cache Tags" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-handwritten.svg" alt="Handwritten: 11.3 Cache Tags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-diagram.svg" alt="Diagram: 11.3 Cache Tags" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-diagram.svg" alt="Diagram: 11.3 Cache Tags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-sticky.svg" alt="Sticky Note: 11.3 Cache Tags" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-3-cache-tags-sticky.svg" alt="Sticky Note: 11.3 Cache Tags" width="30%">
 </a>
 
 
@@ -356,14 +356,14 @@ class PostController
 
 ### 11.4 Atomic Locks
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-handwritten.svg" alt="Handwritten: 11.4 Atomic Locks" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-handwritten.svg" alt="Handwritten: 11.4 Atomic Locks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-diagram.svg" alt="Diagram: 11.4 Atomic Locks" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-diagram.svg" alt="Diagram: 11.4 Atomic Locks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-sticky.svg" alt="Sticky Note: 11.4 Atomic Locks" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-4-atomic-locks-sticky.svg" alt="Sticky Note: 11.4 Atomic Locks" width="30%">
 </a>
 
 
@@ -450,14 +450,14 @@ Locks work with **Redis**, **Memcached**, **DynamoDB**, and **database** cache d
 
 ### 11.5 Redis Optimization
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-handwritten.svg" alt="Handwritten: 11.5 Redis Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-handwritten.svg" alt="Handwritten: 11.5 Redis Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-diagram.svg" alt="Diagram: 11.5 Redis Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-diagram.svg" alt="Diagram: 11.5 Redis Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-sticky.svg" alt="Sticky Note: 11.5 Redis Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-5-redis-optimization-sticky.svg" alt="Sticky Note: 11.5 Redis Optimization" width="30%">
 </a>
 
 
@@ -590,14 +590,14 @@ Keys are automatically distributed across shards. Only database 0 is available i
 
 ### 11.6 Database Performance
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-handwritten.svg" alt="Handwritten: 11.6 Database Performance" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-handwritten.svg" alt="Handwritten: 11.6 Database Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-diagram.svg" alt="Diagram: 11.6 Database Performance" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-diagram.svg" alt="Diagram: 11.6 Database Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-sticky.svg" alt="Sticky Note: 11.6 Database Performance" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-6-database-performance-sticky.svg" alt="Sticky Note: 11.6 Database Performance" width="30%">
 </a>
 
 
@@ -746,14 +746,14 @@ foreach (Post::where('published', true)->cursor() as $post) {
 
 ### 11.7 Eager Loading Strategies
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-handwritten.svg" alt="Handwritten: 11.7 Eager Loading Strategies" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-handwritten.svg" alt="Handwritten: 11.7 Eager Loading Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-diagram.svg" alt="Diagram: 11.7 Eager Loading Strategies" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-diagram.svg" alt="Diagram: 11.7 Eager Loading Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-sticky.svg" alt="Sticky Note: 11.7 Eager Loading Strategies" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-7-eager-loading-strategies-sticky.svg" alt="Sticky Note: 11.7 Eager Loading Strategies" width="30%">
 </a>
 
 
@@ -836,14 +836,14 @@ $users = User::with(['posts' => function ($query) {
 
 ### 11.8 Laravel Octane
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-handwritten.svg" alt="Handwritten: 11.8 Laravel Octane" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-handwritten.svg" alt="Handwritten: 11.8 Laravel Octane" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-diagram.svg" alt="Diagram: 11.8 Laravel Octane" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-diagram.svg" alt="Diagram: 11.8 Laravel Octane" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-sticky.svg" alt="Sticky Note: 11.8 Laravel Octane" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-8-laravel-octane-sticky.svg" alt="Sticky Note: 11.8 Laravel Octane" width="30%">
 </a>
 
 
@@ -1004,14 +1004,14 @@ Event::listen(function (\Laravel\Octane\Events\WorkerErrorOccurred $event) {
 
 ### 11.9 Performance Measurement
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-handwritten.svg" alt="Handwritten: 11.9 Performance Measurement" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-handwritten.svg" alt="Handwritten: 11.9 Performance Measurement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-diagram.svg" alt="Diagram: 11.9 Performance Measurement" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-diagram.svg" alt="Diagram: 11.9 Performance Measurement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-sticky.svg" alt="Sticky Note: 11.9 Performance Measurement" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-9-performance-measurement-sticky.svg" alt="Sticky Note: 11.9 Performance Measurement" width="30%">
 </a>
 
 
@@ -1089,14 +1089,14 @@ Analyze with `KCacheGrind` or `QCacheGrind` for:
 
 ### 11.10 Caching Strategies
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-handwritten.svg" alt="Handwritten: 11.10 Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-handwritten.svg" alt="Handwritten: 11.10 Caching Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-diagram.svg" alt="Diagram: 11.10 Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-diagram.svg" alt="Diagram: 11.10 Caching Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-sticky.svg" alt="Sticky Note: 11.10 Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-10-caching-strategies-sticky.svg" alt="Sticky Note: 11.10 Caching Strategies" width="30%">
 </a>
 
 
@@ -1252,14 +1252,14 @@ The `@cache` directive caches the rendered HTML output, not just the data. The c
 
 ### 11.11 CDN & Asset Optimization
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-handwritten.svg" alt="Handwritten: 11.11 CDN & Asset Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-handwritten.svg" alt="Handwritten: 11.11 CDN & Asset Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-diagram.svg" alt="Diagram: 11.11 CDN & Asset Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-diagram.svg" alt="Diagram: 11.11 CDN & Asset Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-sticky.svg" alt="Sticky Note: 11.11 CDN & Asset Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-11-cdn-asset-optimization-sticky.svg" alt="Sticky Note: 11.11 CDN & Asset Optimization" width="30%">
 </a>
 
 
@@ -1400,14 +1400,14 @@ return [
 
 ### 11.12 Complete Example: Caching Strategy for an API
 
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-handwritten.svg" alt="Handwritten: 11.12 Complete Example: Caching Strategy for an API" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-handwritten.svg" alt="Handwritten: 11.12 Complete Example: Caching Strategy for an API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-diagram.svg" alt="Diagram: 11.12 Complete Example: Caching Strategy for an API" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-diagram.svg" alt="Diagram: 11.12 Complete Example: Caching Strategy for an API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-sticky.svg" alt="Sticky Note: 11.12 Complete Example: Caching Strategy for an API" width="30%">
+<a href="../../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/11-caching-performance/11-12-complete-example-caching-strategy-for-an-api-sticky.svg" alt="Sticky Note: 11.12 Complete Example: Caching Strategy for an API" width="30%">
 </a>
 
 

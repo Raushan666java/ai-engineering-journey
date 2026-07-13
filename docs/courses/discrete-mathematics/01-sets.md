@@ -50,14 +50,14 @@ flowchart LR
 
 ### 1.1 Definition of a Set
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-handwritten.svg" alt="Handwritten: 1.1 Definition of a Set" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-handwritten.svg" alt="Handwritten: 1.1 Definition of a Set" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-diagram.svg" alt="Diagram: 1.1 Definition of a Set" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-diagram.svg" alt="Diagram: 1.1 Definition of a Set" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-sticky.svg" alt="Sticky Note: 1.1 Definition of a Set" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-1-definition-of-a-set-sticky.svg" alt="Sticky Note: 1.1 Definition of a Set" width="30%">
 </a>
 
 
@@ -87,14 +87,14 @@ The **empty set** $\emptyset$ (or $\{\}$) contains no elements. The **universal 
 
 ### 1.2 Subsets
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-handwritten.svg" alt="Handwritten: 1.2 Subsets" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-handwritten.svg" alt="Handwritten: 1.2 Subsets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-diagram.svg" alt="Diagram: 1.2 Subsets" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-diagram.svg" alt="Diagram: 1.2 Subsets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-sticky.svg" alt="Sticky Note: 1.2 Subsets" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-2-subsets-sticky.svg" alt="Sticky Note: 1.2 Subsets" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ $A$ is a **proper subset** of $B$, written $A \subset B$, if $A \subseteq B$ and
 
 ### 1.3 Cardinality
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-handwritten.svg" alt="Handwritten: 1.3 Cardinality" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-handwritten.svg" alt="Handwritten: 1.3 Cardinality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-diagram.svg" alt="Diagram: 1.3 Cardinality" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-diagram.svg" alt="Diagram: 1.3 Cardinality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-sticky.svg" alt="Sticky Note: 1.3 Cardinality" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-3-cardinality-sticky.svg" alt="Sticky Note: 1.3 Cardinality" width="30%">
 </a>
 
 
@@ -138,14 +138,14 @@ The **cardinality** of a finite set $S$, denoted $|S|$, is the number of distinc
 
 ### 1.4 Power Set
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-handwritten.svg" alt="Handwritten: 1.4 Power Set" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-handwritten.svg" alt="Handwritten: 1.4 Power Set" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-diagram.svg" alt="Diagram: 1.4 Power Set" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-diagram.svg" alt="Diagram: 1.4 Power Set" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-sticky.svg" alt="Sticky Note: 1.4 Power Set" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-4-power-set-sticky.svg" alt="Sticky Note: 1.4 Power Set" width="30%">
 </a>
 
 
@@ -160,14 +160,14 @@ $$\mathcal{P}(S) = \{T \mid T \subseteq S\}$$
 
 ### 1.5 Set Operations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-handwritten.svg" alt="Handwritten: 1.5 Set Operations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-handwritten.svg" alt="Handwritten: 1.5 Set Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-diagram.svg" alt="Diagram: 1.5 Set Operations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-diagram.svg" alt="Diagram: 1.5 Set Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-sticky.svg" alt="Sticky Note: 1.5 Set Operations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-5-set-operations-sticky.svg" alt="Sticky Note: 1.5 Set Operations" width="30%">
 </a>
 
 
@@ -193,14 +193,14 @@ graph TD
 
 ### 1.6 Set Identities
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-handwritten.svg" alt="Handwritten: 1.6 Set Identities" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-handwritten.svg" alt="Handwritten: 1.6 Set Identities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-diagram.svg" alt="Diagram: 1.6 Set Identities" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-diagram.svg" alt="Diagram: 1.6 Set Identities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-sticky.svg" alt="Sticky Note: 1.6 Set Identities" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-6-set-identities-sticky.svg" alt="Sticky Note: 1.6 Set Identities" width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ For sets $A, B, C$ under universal set $U$:
 
 ### 1.7 Venn Diagrams
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-handwritten.svg" alt="Handwritten: 1.7 Venn Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-handwritten.svg" alt="Handwritten: 1.7 Venn Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-diagram.svg" alt="Diagram: 1.7 Venn Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-diagram.svg" alt="Diagram: 1.7 Venn Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-sticky.svg" alt="Sticky Note: 1.7 Venn Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-7-venn-diagrams-sticky.svg" alt="Sticky Note: 1.7 Venn Diagrams" width="30%">
 </a>
 
 
@@ -253,14 +253,14 @@ graph TD
 
 ### 1.8 Cartesian Product
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-handwritten.svg" alt="Handwritten: 1.8 Cartesian Product" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-handwritten.svg" alt="Handwritten: 1.8 Cartesian Product" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-diagram.svg" alt="Diagram: 1.8 Cartesian Product" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-diagram.svg" alt="Diagram: 1.8 Cartesian Product" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-sticky.svg" alt="Sticky Note: 1.8 Cartesian Product" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-8-cartesian-product-sticky.svg" alt="Sticky Note: 1.8 Cartesian Product" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ The $n$-fold Cartesian product $A_1 \times A_2 \times \cdots \times A_n$ is the 
 
 ### 1.9 Characteristic Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-handwritten.svg" alt="Handwritten: 1.9 Characteristic Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-handwritten.svg" alt="Handwritten: 1.9 Characteristic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-diagram.svg" alt="Diagram: 1.9 Characteristic Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-diagram.svg" alt="Diagram: 1.9 Characteristic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-sticky.svg" alt="Sticky Note: 1.9 Characteristic Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-9-characteristic-functions-sticky.svg" alt="Sticky Note: 1.9 Characteristic Functions" width="30%">
 </a>
 
 
@@ -308,14 +308,14 @@ console.log(characteristic(A, U)); // [1, 0, 1, 0, 1]
 
 ### 1.10 Multisets (Bags)
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-handwritten.svg" alt="Handwritten: 1.10 Multisets (Bags)" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-handwritten.svg" alt="Handwritten: 1.10 Multisets (Bags)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-diagram.svg" alt="Diagram: 1.10 Multisets (Bags)" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-diagram.svg" alt="Diagram: 1.10 Multisets (Bags)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-sticky.svg" alt="Sticky Note: 1.10 Multisets (Bags)" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-10-multisets-bags-sticky.svg" alt="Sticky Note: 1.10 Multisets (Bags)" width="30%">
 </a>
 
 
@@ -345,14 +345,14 @@ console.log(Object.fromEntries(add(bag1, bag2))); // {a: 3, b: 1, c: 3}
 
 ### 1.11 Fuzzy Sets
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-handwritten.svg" alt="Handwritten: 1.11 Fuzzy Sets" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-handwritten.svg" alt="Handwritten: 1.11 Fuzzy Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-diagram.svg" alt="Diagram: 1.11 Fuzzy Sets" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-diagram.svg" alt="Diagram: 1.11 Fuzzy Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-sticky.svg" alt="Sticky Note: 1.11 Fuzzy Sets" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-11-fuzzy-sets-sticky.svg" alt="Sticky Note: 1.11 Fuzzy Sets" width="30%">
 </a>
 
 
@@ -368,14 +368,14 @@ Operations:
 
 ### 1.12 Inclusion-Exclusion Principle
 
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-handwritten.svg" alt="Handwritten: 1.12 Inclusion-Exclusion Principle" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-handwritten.svg" alt="Handwritten: 1.12 Inclusion-Exclusion Principle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-diagram.svg" alt="Diagram: 1.12 Inclusion-Exclusion Principle" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-diagram.svg" alt="Diagram: 1.12 Inclusion-Exclusion Principle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-sticky.svg" alt="Sticky Note: 1.12 Inclusion-Exclusion Principle" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/01-sets/1-12-inclusion-exclusion-principle-sticky.svg" alt="Sticky Note: 1.12 Inclusion-Exclusion Principle" width="30%">
 </a>
 
 

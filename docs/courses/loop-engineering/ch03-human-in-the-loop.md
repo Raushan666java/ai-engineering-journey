@@ -30,14 +30,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Propose-then-Commit Architecture
 
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-handwritten.svg" alt="Handwritten: 1. Propose-then-Commit Architecture" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-handwritten.svg" alt="Handwritten: 1. Propose-then-Commit Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-diagram.svg" alt="Diagram: 1. Propose-then-Commit Architecture" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-diagram.svg" alt="Diagram: 1. Propose-then-Commit Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-sticky.svg" alt="Sticky Note: 1. Propose-then-Commit Architecture" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/1-propose-then-commit-architecture-sticky.svg" alt="Sticky Note: 1. Propose-then-Commit Architecture" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ The propose-then-commit pattern is the foundational HITL building block. Instead
 
 ### 2. Approval Gates
 
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-handwritten.svg" alt="Handwritten: 2. Approval Gates" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-handwritten.svg" alt="Handwritten: 2. Approval Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-diagram.svg" alt="Diagram: 2. Approval Gates" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-diagram.svg" alt="Diagram: 2. Approval Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-sticky.svg" alt="Sticky Note: 2. Approval Gates" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/2-approval-gates-sticky.svg" alt="Sticky Note: 2. Approval Gates" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ auto-reject zone:        c ≤ 0.30
 
 ### 3. Escalation Policies
 
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-handwritten.svg" alt="Handwritten: 3. Escalation Policies" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-handwritten.svg" alt="Handwritten: 3. Escalation Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-diagram.svg" alt="Diagram: 3. Escalation Policies" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-diagram.svg" alt="Diagram: 3. Escalation Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-sticky.svg" alt="Sticky Note: 3. Escalation Policies" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/3-escalation-policies-sticky.svg" alt="Sticky Note: 3. Escalation Policies" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ Escalation chains should be expressed as a simple ordered list of reviewer ident
 
 ### 4. Batch vs Real-Time Review
 
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-handwritten.svg" alt="Handwritten: 4. Batch vs Real-Time Review" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-handwritten.svg" alt="Handwritten: 4. Batch vs Real-Time Review" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-diagram.svg" alt="Diagram: 4. Batch vs Real-Time Review" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-diagram.svg" alt="Diagram: 4. Batch vs Real-Time Review" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-sticky.svg" alt="Sticky Note: 4. Batch vs Real-Time Review" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/4-batch-vs-real-time-review-sticky.svg" alt="Sticky Note: 4. Batch vs Real-Time Review" width="30%">
 </a>
 
 
@@ -134,14 +134,14 @@ Hybrid patterns are common: classify proposals at ingestion time, route urgent o
 
 ### 5. Trust Calibration Framework
 
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-handwritten.svg" alt="Handwritten: 5. Trust Calibration Framework" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-handwritten.svg" alt="Handwritten: 5. Trust Calibration Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-diagram.svg" alt="Diagram: 5. Trust Calibration Framework" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-diagram.svg" alt="Diagram: 5. Trust Calibration Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-sticky.svg" alt="Sticky Note: 5. Trust Calibration Framework" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch03-human-in-the-loop/5-trust-calibration-framework-sticky.svg" alt="Sticky Note: 5. Trust Calibration Framework" width="30%">
 </a>
 
 

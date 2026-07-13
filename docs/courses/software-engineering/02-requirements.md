@@ -19,14 +19,14 @@
 
 ### The Requirements Engineering Process
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-handwritten.svg" alt="Handwritten: The Requirements Engineering Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-handwritten.svg" alt="Handwritten: The Requirements Engineering Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-diagram.svg" alt="Diagram: The Requirements Engineering Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-diagram.svg" alt="Diagram: The Requirements Engineering Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-sticky.svg" alt="Sticky Note: The Requirements Engineering Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-sticky.svg" alt="Sticky Note: The Requirements Engineering Process" width="30%">
 </a>
 
 
@@ -51,14 +51,14 @@ The requirements engineering process comprises four high-level activities: **fea
 
 ### Types of Requirements
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-handwritten.svg" alt="Handwritten: Types of Requirements" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-handwritten.svg" alt="Handwritten: Types of Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-diagram.svg" alt="Diagram: Types of Requirements" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-diagram.svg" alt="Diagram: Types of Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-sticky.svg" alt="Sticky Note: Types of Requirements" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-sticky.svg" alt="Sticky Note: Types of Requirements" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@ Requirements are classified into three categories:
 
 ### FURPS+ Classification
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-handwritten.svg" alt="Handwritten: FURPS+ Classification" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-handwritten.svg" alt="Handwritten: FURPS+ Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-diagram.svg" alt="Diagram: FURPS+ Classification" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-diagram.svg" alt="Diagram: FURPS+ Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-sticky.svg" alt="Sticky Note: FURPS+ Classification" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-sticky.svg" alt="Sticky Note: FURPS+ Classification" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ FURPS+ is valuable because it forces teams to explicitly consider all quality di
 
 ### Feasibility Study
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-handwritten.svg" alt="Handwritten: Feasibility Study" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-handwritten.svg" alt="Handwritten: Feasibility Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-diagram.svg" alt="Diagram: Feasibility Study" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-diagram.svg" alt="Diagram: Feasibility Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-sticky.svg" alt="Sticky Note: Feasibility Study" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-sticky.svg" alt="Sticky Note: Feasibility Study" width="30%">
 </a>
 
 
@@ -121,14 +121,14 @@ The output is a feasibility report recommending whether to proceed, with risk as
 
 ### Requirements Elicitation
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-handwritten.svg" alt="Handwritten: Requirements Elicitation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-handwritten.svg" alt="Handwritten: Requirements Elicitation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-diagram.svg" alt="Diagram: Requirements Elicitation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-diagram.svg" alt="Diagram: Requirements Elicitation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-sticky.svg" alt="Sticky Note: Requirements Elicitation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-sticky.svg" alt="Sticky Note: Requirements Elicitation" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ graph TD
 
 ### The INVEST Criteria for User Stories
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-handwritten.svg" alt="Handwritten: The INVEST Criteria for User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-handwritten.svg" alt="Handwritten: The INVEST Criteria for User Stories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-diagram.svg" alt="Diagram: The INVEST Criteria for User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-diagram.svg" alt="Diagram: The INVEST Criteria for User Stories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-sticky.svg" alt="Sticky Note: The INVEST Criteria for User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-sticky.svg" alt="Sticky Note: The INVEST Criteria for User Stories" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ Feature: Book Search
 
 ### Requirements Specification Formats
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-handwritten.svg" alt="Handwritten: Requirements Specification Formats" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-handwritten.svg" alt="Handwritten: Requirements Specification Formats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-diagram.svg" alt="Diagram: Requirements Specification Formats" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-diagram.svg" alt="Diagram: Requirements Specification Formats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-sticky.svg" alt="Sticky Note: Requirements Specification Formats" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-sticky.svg" alt="Sticky Note: Requirements Specification Formats" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ Use cases describe interactions between actors and the system:
 
 ### MoSCoW Prioritisation
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-handwritten.svg" alt="Handwritten: MoSCoW Prioritisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-handwritten.svg" alt="Handwritten: MoSCoW Prioritisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-diagram.svg" alt="Diagram: MoSCoW Prioritisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-diagram.svg" alt="Diagram: MoSCoW Prioritisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-sticky.svg" alt="Sticky Note: MoSCoW Prioritisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-sticky.svg" alt="Sticky Note: MoSCoW Prioritisation" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ MoSCoW is typically applied at the release level, not for the entire project. Re
 
 ### The Kano Model
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-handwritten.svg" alt="Handwritten: The Kano Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-handwritten.svg" alt="Handwritten: The Kano Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-diagram.svg" alt="Diagram: The Kano Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-diagram.svg" alt="Diagram: The Kano Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-sticky.svg" alt="Sticky Note: The Kano Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-sticky.svg" alt="Sticky Note: The Kano Model" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ The key insight: over time, delighters become performance needs, and performance
 
 ### Requirements Validation
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-handwritten.svg" alt="Handwritten: Requirements Validation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-handwritten.svg" alt="Handwritten: Requirements Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-diagram.svg" alt="Diagram: Requirements Validation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-diagram.svg" alt="Diagram: Requirements Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-sticky.svg" alt="Sticky Note: Requirements Validation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-sticky.svg" alt="Sticky Note: Requirements Validation" width="30%">
 </a>
 
 
@@ -351,14 +351,14 @@ Common defects detected:
 
 ### SMART Requirements
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-handwritten.svg" alt="Handwritten: SMART Requirements" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-handwritten.svg" alt="Handwritten: SMART Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-diagram.svg" alt="Diagram: SMART Requirements" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-diagram.svg" alt="Diagram: SMART Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-sticky.svg" alt="Sticky Note: SMART Requirements" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-sticky.svg" alt="Sticky Note: SMART Requirements" width="30%">
 </a>
 
 
@@ -374,14 +374,14 @@ A well-formed requirement should be **SMART**:
 
 ### Requirements Traceability Matrix
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-handwritten.svg" alt="Handwritten: Requirements Traceability Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-handwritten.svg" alt="Handwritten: Requirements Traceability Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-diagram.svg" alt="Diagram: Requirements Traceability Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-diagram.svg" alt="Diagram: Requirements Traceability Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-sticky.svg" alt="Sticky Note: Requirements Traceability Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-sticky.svg" alt="Sticky Note: Requirements Traceability Matrix" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ graph LR
 
 ### Requirements Management
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-handwritten.svg" alt="Handwritten: Requirements Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-handwritten.svg" alt="Handwritten: Requirements Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-diagram.svg" alt="Diagram: Requirements Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-diagram.svg" alt="Diagram: Requirements Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-sticky.svg" alt="Sticky Note: Requirements Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-sticky.svg" alt="Sticky Note: Requirements Management" width="30%">
 </a>
 
 
@@ -424,14 +424,14 @@ Requirements management encompasses maintaining the specification as the system 
 
 ### Requirements Engineering Workflow
 
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-handwritten.svg" alt="Handwritten: Requirements Engineering Workflow" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-handwritten.svg" alt="Handwritten: Requirements Engineering Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-diagram.svg" alt="Diagram: Requirements Engineering Workflow" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-diagram.svg" alt="Diagram: Requirements Engineering Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-sticky.svg" alt="Sticky Note: Requirements Engineering Workflow" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-sticky.svg" alt="Sticky Note: Requirements Engineering Workflow" width="30%">
 </a>
 
 

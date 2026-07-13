@@ -35,14 +35,14 @@ flowchart LR
 
 ### Object-Oriented Programming Foundations
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-handwritten.svg" alt="Handwritten: Object-Oriented Programming Foundations" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-handwritten.svg" alt="Handwritten: Object-Oriented Programming Foundations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-diagram.svg" alt="Diagram: Object-Oriented Programming Foundations" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-diagram.svg" alt="Diagram: Object-Oriented Programming Foundations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-sticky.svg" alt="Sticky Note: Object-Oriented Programming Foundations" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/object-oriented-programming-foundations-sticky.svg" alt="Sticky Note: Object-Oriented Programming Foundations" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ Object-Oriented Programming (OOP) rests on four pillars: Encapsulation, Abstract
 
 ### Coupling and Cohesion
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-handwritten.svg" alt="Handwritten: Coupling and Cohesion" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-handwritten.svg" alt="Handwritten: Coupling and Cohesion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-diagram.svg" alt="Diagram: Coupling and Cohesion" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-diagram.svg" alt="Diagram: Coupling and Cohesion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-sticky.svg" alt="Sticky Note: Coupling and Cohesion" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/coupling-and-cohesion-sticky.svg" alt="Sticky Note: Coupling and Cohesion" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ A useful metric is **LCOM** (Lack of Cohesion of Methods). LCOM counts pairs of 
 
 ### Single Responsibility Principle (SRP)
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-handwritten.svg" alt="Handwritten: Single Responsibility Principle (SRP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-handwritten.svg" alt="Handwritten: Single Responsibility Principle (SRP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-diagram.svg" alt="Diagram: Single Responsibility Principle (SRP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-diagram.svg" alt="Diagram: Single Responsibility Principle (SRP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-sticky.svg" alt="Sticky Note: Single Responsibility Principle (SRP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/single-responsibility-principle-srp-sticky.svg" alt="Sticky Note: Single Responsibility Principle (SRP)" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ Consider a `Report` class that generates content, formats it as HTML and PDF, an
 
 ### Open/Closed Principle (OCP)
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-handwritten.svg" alt="Handwritten: Open/Closed Principle (OCP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-handwritten.svg" alt="Handwritten: Open/Closed Principle (OCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-diagram.svg" alt="Diagram: Open/Closed Principle (OCP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-diagram.svg" alt="Diagram: Open/Closed Principle (OCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-sticky.svg" alt="Sticky Note: Open/Closed Principle (OCP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/open-closed-principle-ocp-sticky.svg" alt="Sticky Note: Open/Closed Principle (OCP)" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ The Strategy pattern is a direct application of OCP. A `PaymentProcessor` class 
 
 ### Liskov Substitution Principle (LSP)
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-handwritten.svg" alt="Handwritten: Liskov Substitution Principle (LSP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-handwritten.svg" alt="Handwritten: Liskov Substitution Principle (LSP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-diagram.svg" alt="Diagram: Liskov Substitution Principle (LSP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-diagram.svg" alt="Diagram: Liskov Substitution Principle (LSP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-sticky.svg" alt="Sticky Note: Liskov Substitution Principle (LSP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/liskov-substitution-principle-lsp-sticky.svg" alt="Sticky Note: Liskov Substitution Principle (LSP)" width="30%">
 </a>
 
 
@@ -160,14 +160,14 @@ The fix: do not model Square as a subtype of Rectangle. Both should inherit from
 
 ### Interface Segregation Principle (ISP)
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-handwritten.svg" alt="Handwritten: Interface Segregation Principle (ISP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-handwritten.svg" alt="Handwritten: Interface Segregation Principle (ISP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-diagram.svg" alt="Diagram: Interface Segregation Principle (ISP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-diagram.svg" alt="Diagram: Interface Segregation Principle (ISP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-sticky.svg" alt="Sticky Note: Interface Segregation Principle (ISP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/interface-segregation-principle-isp-sticky.svg" alt="Sticky Note: Interface Segregation Principle (ISP)" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@ The symptom of ISP violation is the **"not implemented" exception**—methods th
 
 ### Dependency Inversion Principle (DIP)
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-handwritten.svg" alt="Handwritten: Dependency Inversion Principle (DIP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-handwritten.svg" alt="Handwritten: Dependency Inversion Principle (DIP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-diagram.svg" alt="Diagram: Dependency Inversion Principle (DIP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-diagram.svg" alt="Diagram: Dependency Inversion Principle (DIP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-sticky.svg" alt="Sticky Note: Dependency Inversion Principle (DIP)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/dependency-inversion-principle-dip-sticky.svg" alt="Sticky Note: Dependency Inversion Principle (DIP)" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ The `UserService` never knows whether it is backed by PostgreSQL, MySQL, or an i
 
 ### Composition Over Inheritance
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-handwritten.svg" alt="Handwritten: Composition Over Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-handwritten.svg" alt="Handwritten: Composition Over Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-diagram.svg" alt="Diagram: Composition Over Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-diagram.svg" alt="Diagram: Composition Over Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-sticky.svg" alt="Sticky Note: Composition Over Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/composition-over-inheritance-sticky.svg" alt="Sticky Note: Composition Over Inheritance" width="30%">
 </a>
 
 
@@ -252,14 +252,14 @@ The composition version can change its internal storage (e.g., switch to a datab
 
 ### Package Principles
 
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-handwritten.svg" alt="Handwritten: Package Principles" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-handwritten.svg" alt="Handwritten: Package Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-diagram.svg" alt="Diagram: Package Principles" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-diagram.svg" alt="Diagram: Package Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-sticky.svg" alt="Sticky Note: Package Principles" width="30%">
+<a href="../../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/10-lld-solid-oop/package-principles-sticky.svg" alt="Sticky Note: Package Principles" width="30%">
 </a>
 
 

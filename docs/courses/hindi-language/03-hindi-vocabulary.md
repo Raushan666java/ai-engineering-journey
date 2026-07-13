@@ -1,4 +1,4 @@
-﻿# Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)
+# Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)
 
 ## Learning Objectives
 
@@ -13,14 +13,14 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Classification of Hindi Vocabulary
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-handwritten.svg" alt="Handwritten: 3.1 Classification of Hindi Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-handwritten.svg" alt="Handwritten: 3.1 Classification of Hindi Vocabulary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-diagram.svg" alt="Diagram: 3.1 Classification of Hindi Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-diagram.svg" alt="Diagram: 3.1 Classification of Hindi Vocabulary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-sticky.svg" alt="Sticky Note: 3.1 Classification of Hindi Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-1-classification-of-hindi-vocabulary-sticky.svg" alt="Sticky Note: 3.1 Classification of Hindi Vocabulary" width="30%">
 </a>
 
 
@@ -47,14 +47,14 @@ mindmap
 
 ### 3.2 Shabdon ki Utpatti (Word Origins)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-handwritten.svg" alt="Handwritten: 3.2 Shabdon ki Utpatti (Word Origins)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-handwritten.svg" alt="Handwritten: 3.2 Shabdon ki Utpatti (Word Origins)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-diagram.svg" alt="Diagram: 3.2 Shabdon ki Utpatti (Word Origins)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-diagram.svg" alt="Diagram: 3.2 Shabdon ki Utpatti (Word Origins)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-sticky.svg" alt="Sticky Note: 3.2 Shabdon ki Utpatti (Word Origins)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-2-shabdon-ki-utpatti-word-origins-sticky.svg" alt="Sticky Note: 3.2 Shabdon ki Utpatti (Word Origins)" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@ mindmap
 
 ### 3.3 Tatsam-Tadbhav Comparison
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-handwritten.svg" alt="Handwritten: 3.3 Tatsam-Tadbhav Comparison" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-handwritten.svg" alt="Handwritten: 3.3 Tatsam-Tadbhav Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-diagram.svg" alt="Diagram: 3.3 Tatsam-Tadbhav Comparison" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-diagram.svg" alt="Diagram: 3.3 Tatsam-Tadbhav Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-sticky.svg" alt="Sticky Note: 3.3 Tatsam-Tadbhav Comparison" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-3-tatsam-tadbhav-comparison-sticky.svg" alt="Sticky Note: 3.3 Tatsam-Tadbhav Comparison" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ mindmap
 
 ### 3.4 Paryayvachi Shabd (Synonyms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-handwritten.svg" alt="Handwritten: 3.4 Paryayvachi Shabd (Synonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-handwritten.svg" alt="Handwritten: 3.4 Paryayvachi Shabd (Synonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-diagram.svg" alt="Diagram: 3.4 Paryayvachi Shabd (Synonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-diagram.svg" alt="Diagram: 3.4 Paryayvachi Shabd (Synonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-sticky.svg" alt="Sticky Note: 3.4 Paryayvachi Shabd (Synonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-4-paryayvachi-shabd-synonyms-sticky.svg" alt="Sticky Note: 3.4 Paryayvachi Shabd (Synonyms)" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ mindmap
 
 ### 3.5 Vilom Shabd (Antonyms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-handwritten.svg" alt="Handwritten: 3.5 Vilom Shabd (Antonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-handwritten.svg" alt="Handwritten: 3.5 Vilom Shabd (Antonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-diagram.svg" alt="Diagram: 3.5 Vilom Shabd (Antonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-diagram.svg" alt="Diagram: 3.5 Vilom Shabd (Antonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-sticky.svg" alt="Sticky Note: 3.5 Vilom Shabd (Antonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-5-vilom-shabd-antonyms-sticky.svg" alt="Sticky Note: 3.5 Vilom Shabd (Antonyms)" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ mindmap
 
 ### 3.6 Anekarthak Shabd (Homonyms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-handwritten.svg" alt="Handwritten: 3.6 Anekarthak Shabd (Homonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-handwritten.svg" alt="Handwritten: 3.6 Anekarthak Shabd (Homonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-diagram.svg" alt="Diagram: 3.6 Anekarthak Shabd (Homonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-diagram.svg" alt="Diagram: 3.6 Anekarthak Shabd (Homonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-sticky.svg" alt="Sticky Note: 3.6 Anekarthak Shabd (Homonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-6-anekarthak-shabd-homonyms-sticky.svg" alt="Sticky Note: 3.6 Anekarthak Shabd (Homonyms)" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ mindmap
 
 ### 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-handwritten.svg" alt="Handwritten: 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-handwritten.svg" alt="Handwritten: 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-diagram.svg" alt="Diagram: 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-diagram.svg" alt="Diagram: 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-sticky.svg" alt="Sticky Note: 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-7-samaan-dhwani-vale-bhinnarthak-shabd-homophones-sticky.svg" alt="Sticky Note: 3.7 Samaan Dhwani Vale Bhinnarthak Shabd (Homophones)" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ mindmap
 
 ### 3.8 Muhavare (Idioms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-handwritten.svg" alt="Handwritten: 3.8 Muhavare (Idioms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-handwritten.svg" alt="Handwritten: 3.8 Muhavare (Idioms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-diagram.svg" alt="Diagram: 3.8 Muhavare (Idioms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-diagram.svg" alt="Diagram: 3.8 Muhavare (Idioms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-sticky.svg" alt="Sticky Note: 3.8 Muhavare (Idioms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-8-muhavare-idioms-sticky.svg" alt="Sticky Note: 3.8 Muhavare (Idioms)" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ mindmap
 
 ### 3.9 Lokoktiyan (Proverbs)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-handwritten.svg" alt="Handwritten: 3.9 Lokoktiyan (Proverbs)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-handwritten.svg" alt="Handwritten: 3.9 Lokoktiyan (Proverbs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-diagram.svg" alt="Diagram: 3.9 Lokoktiyan (Proverbs)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-diagram.svg" alt="Diagram: 3.9 Lokoktiyan (Proverbs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-sticky.svg" alt="Sticky Note: 3.9 Lokoktiyan (Proverbs)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-9-lokoktiyan-proverbs-sticky.svg" alt="Sticky Note: 3.9 Lokoktiyan (Proverbs)" width="30%">
 </a>
 
 
@@ -477,14 +477,14 @@ a) Neend b) Nidra c) Nidra d) Sona
 
 ### Synonyms (Q1-Q5)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-handwritten.svg" alt="Handwritten: Synonyms (Q1-Q5)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-handwritten.svg" alt="Handwritten: Synonyms (Q1-Q5)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-diagram.svg" alt="Diagram: Synonyms (Q1-Q5)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-diagram.svg" alt="Diagram: Synonyms (Q1-Q5)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-sticky.svg" alt="Sticky Note: Synonyms (Q1-Q5)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/synonyms-q1-q5-sticky.svg" alt="Sticky Note: Synonyms (Q1-Q5)" width="30%">
 </a>
 
 Write 2 synonyms for:
@@ -492,14 +492,14 @@ Write 2 synonyms for:
 
 ### Antonyms (Q6-Q10)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-handwritten.svg" alt="Handwritten: Antonyms (Q6-Q10)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-handwritten.svg" alt="Handwritten: Antonyms (Q6-Q10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-diagram.svg" alt="Diagram: Antonyms (Q6-Q10)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-diagram.svg" alt="Diagram: Antonyms (Q6-Q10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-sticky.svg" alt="Sticky Note: Antonyms (Q6-Q10)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/antonyms-q6-q10-sticky.svg" alt="Sticky Note: Antonyms (Q6-Q10)" width="30%">
 </a>
 
 Write the antonyms:
@@ -507,14 +507,14 @@ Write the antonyms:
 
 ### Tatsam-Tadbhav (Q11-Q15)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-handwritten.svg" alt="Handwritten: Tatsam-Tadbhav (Q11-Q15)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-handwritten.svg" alt="Handwritten: Tatsam-Tadbhav (Q11-Q15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-diagram.svg" alt="Diagram: Tatsam-Tadbhav (Q11-Q15)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-diagram.svg" alt="Diagram: Tatsam-Tadbhav (Q11-Q15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-sticky.svg" alt="Sticky Note: Tatsam-Tadbhav (Q11-Q15)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/tatsam-tadbhav-q11-q15-sticky.svg" alt="Sticky Note: Tatsam-Tadbhav (Q11-Q15)" width="30%">
 </a>
 
 Tadbhav of:
@@ -522,14 +522,14 @@ Tadbhav of:
 
 ### Idioms (Q16-Q20)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-handwritten.svg" alt="Handwritten: Idioms (Q16-Q20)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-handwritten.svg" alt="Handwritten: Idioms (Q16-Q20)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-diagram.svg" alt="Diagram: Idioms (Q16-Q20)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-diagram.svg" alt="Diagram: Idioms (Q16-Q20)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-sticky.svg" alt="Sticky Note: Idioms (Q16-Q20)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/idioms-q16-q20-sticky.svg" alt="Sticky Note: Idioms (Q16-Q20)" width="30%">
 </a>
 
 Match:
@@ -542,14 +542,14 @@ Meanings: a) Prayas karna b) Beijjati c) Sharminda hona d) Kathin kaam e) Dhokha
 
 ### Homophones (Q21-Q25)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-handwritten.svg" alt="Handwritten: Homophones (Q21-Q25)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-handwritten.svg" alt="Handwritten: Homophones (Q21-Q25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-diagram.svg" alt="Diagram: Homophones (Q21-Q25)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-diagram.svg" alt="Diagram: Homophones (Q21-Q25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-sticky.svg" alt="Sticky Note: Homophones (Q21-Q25)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/homophones-q21-q25-sticky.svg" alt="Sticky Note: Homophones (Q21-Q25)" width="30%">
 </a>
 
 Differentiate:
@@ -561,14 +561,14 @@ Differentiate:
 
 ### Proverbs (Q26-Q30)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-handwritten.svg" alt="Handwritten: Proverbs (Q26-Q30)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-handwritten.svg" alt="Handwritten: Proverbs (Q26-Q30)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-diagram.svg" alt="Diagram: Proverbs (Q26-Q30)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-diagram.svg" alt="Diagram: Proverbs (Q26-Q30)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-sticky.svg" alt="Sticky Note: Proverbs (Q26-Q30)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/proverbs-q26-q30-sticky.svg" alt="Sticky Note: Proverbs (Q26-Q30)" width="30%">
 </a>
 
 Explain:
@@ -580,14 +580,14 @@ Explain:
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 
@@ -606,14 +606,14 @@ Explain:
 28. As you sow, so shall you reap 29. Obvious needs no proof 30. Win-win solution
 ### Expanded TypeScript Examples
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-handwritten.svg" alt="Handwritten: Expanded TypeScript Examples" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-handwritten.svg" alt="Handwritten: Expanded TypeScript Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-diagram.svg" alt="Diagram: Expanded TypeScript Examples" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-diagram.svg" alt="Diagram: Expanded TypeScript Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-sticky.svg" alt="Sticky Note: Expanded TypeScript Examples" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/expanded-typescript-examples-sticky.svg" alt="Sticky Note: Expanded TypeScript Examples" width="30%">
 </a>
 
 
@@ -887,14 +887,14 @@ mnemonics.forEach(m => console.log(m));
 
 ### 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-handwritten.svg" alt="Handwritten: 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-handwritten.svg" alt="Handwritten: 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-diagram.svg" alt="Diagram: 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-diagram.svg" alt="Diagram: 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-sticky.svg" alt="Sticky Note: 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-10-thematic-vocabulary-sticky.svg" alt="Sticky Note: 3.10 विषय-आधारित शब्दावली (Thematic Vocabulary)" width="30%">
 </a>
 
 
@@ -908,14 +908,14 @@ mnemonics.forEach(m => console.log(m));
 
 ### 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-handwritten.svg" alt="Handwritten: 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-handwritten.svg" alt="Handwritten: 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-diagram.svg" alt="Diagram: 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-diagram.svg" alt="Diagram: 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-sticky.svg" alt="Sticky Note: 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-11-50-50-additional-synonyms-sticky.svg" alt="Sticky Note: 3.11 50+ अतिरिक्त पर्यायवाची (50+ Additional Synonyms)" width="30%">
 </a>
 
 
@@ -949,14 +949,14 @@ mnemonics.forEach(m => console.log(m));
 
 ### 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-handwritten.svg" alt="Handwritten: 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-handwritten.svg" alt="Handwritten: 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-diagram.svg" alt="Diagram: 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-diagram.svg" alt="Diagram: 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-sticky.svg" alt="Sticky Note: 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-12-20-20-additional-antonyms-sticky.svg" alt="Sticky Note: 3.12 20+ अतिरिक्त विलोम (20+ Additional Antonyms)" width="30%">
 </a>
 
 
@@ -977,14 +977,14 @@ mnemonics.forEach(m => console.log(m));
 
 ### 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-handwritten.svg" alt="Handwritten: 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-handwritten.svg" alt="Handwritten: 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-diagram.svg" alt="Diagram: 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-diagram.svg" alt="Diagram: 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-sticky.svg" alt="Sticky Note: 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-13-20-20-additional-idioms-sticky.svg" alt="Sticky Note: 3.13 20+ अतिरिक्त मुहावरे (20+ Additional Idioms)" width="30%">
 </a>
 
 
@@ -1013,14 +1013,14 @@ mnemonics.forEach(m => console.log(m));
 
 ### 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-handwritten.svg" alt="Handwritten: 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-handwritten.svg" alt="Handwritten: 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-diagram.svg" alt="Diagram: 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-diagram.svg" alt="Diagram: 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-sticky.svg" alt="Sticky Note: 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-14-10-10-additional-proverbs-sticky.svg" alt="Sticky Note: 3.14 10 अतिरिक्त लोकोक्तियाँ (10 Additional Proverbs)" width="30%">
 </a>
 
 
@@ -1039,14 +1039,14 @@ mnemonics.forEach(m => console.log(m));
 
 ### 3.15 वर्गीकृत शब्द समूह (Classified Word Families)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-handwritten.svg" alt="Handwritten: 3.15 वर्गीकृत शब्द समूह (Classified Word Families)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-handwritten.svg" alt="Handwritten: 3.15 वर्गीकृत शब्द समूह (Classified Word Families)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-diagram.svg" alt="Diagram: 3.15 वर्गीकृत शब्द समूह (Classified Word Families)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-diagram.svg" alt="Diagram: 3.15 वर्गीकृत शब्द समूह (Classified Word Families)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-sticky.svg" alt="Sticky Note: 3.15 वर्गीकृत शब्द समूह (Classified Word Families)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/3-15-classified-word-families-sticky.svg" alt="Sticky Note: 3.15 वर्गीकृत शब्द समूह (Classified Word Families)" width="30%">
 </a>
 
 
@@ -1100,14 +1100,14 @@ a) Prayas b) Phal c) Laabh d) Vijay
 
 ### Additional Solved MCQs (Q21-Q30)
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-handwritten.svg" alt="Handwritten: Additional Solved MCQs (Q21-Q30)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-handwritten.svg" alt="Handwritten: Additional Solved MCQs (Q21-Q30)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-diagram.svg" alt="Diagram: Additional Solved MCQs (Q21-Q30)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-diagram.svg" alt="Diagram: Additional Solved MCQs (Q21-Q30)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-sticky.svg" alt="Sticky Note: Additional Solved MCQs (Q21-Q30)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-solved-mcqs-q21-q30-sticky.svg" alt="Sticky Note: Additional Solved MCQs (Q21-Q30)" width="30%">
 </a>
 
 
@@ -1168,14 +1168,14 @@ a) साधु  b) महात्मा  c) दुर्जन  d) मित�
 
 ### Additional Exercises (Q31-Q50) — Added
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-handwritten.svg" alt="Handwritten: Additional Exercises (Q31-Q50) — Added" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-handwritten.svg" alt="Handwritten: Additional Exercises (Q31-Q50) — Added" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-diagram.svg" alt="Diagram: Additional Exercises (Q31-Q50) — Added" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-diagram.svg" alt="Diagram: Additional Exercises (Q31-Q50) — Added" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-sticky.svg" alt="Sticky Note: Additional Exercises (Q31-Q50) — Added" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/additional-exercises-q31-q50-added-sticky.svg" alt="Sticky Note: Additional Exercises (Q31-Q50) — Added" width="30%">
 </a>
 
 
@@ -1213,14 +1213,14 @@ a) साधु  b) महात्मा  c) दुर्जन  d) मित�
 
 ### Answer Key for Additional Exercises
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-handwritten.svg" alt="Handwritten: Answer Key for Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-handwritten.svg" alt="Handwritten: Answer Key for Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-diagram.svg" alt="Diagram: Answer Key for Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-diagram.svg" alt="Diagram: Answer Key for Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-sticky.svg" alt="Sticky Note: Answer Key for Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/answer-key-for-additional-exercises-sticky.svg" alt="Sticky Note: Answer Key for Additional Exercises" width="30%">
 </a>
 
 
@@ -1241,14 +1241,14 @@ a) साधु  b) महात्मा  c) दुर्जन  d) मित�
 
 ### परीक्षा-वार शब्दावली रणनीति
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-handwritten.svg" alt="Handwritten: परीक्षा-वार शब्दावली रणनीति" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-handwritten.svg" alt="Handwritten: परीक्षा-वार शब्दावली रणनीति" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-diagram.svg" alt="Diagram: परीक्षा-वार शब्दावली रणनीति" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-diagram.svg" alt="Diagram: परीक्षा-वार शब्दावली रणनीति" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-sticky.svg" alt="Sticky Note: परीक्षा-वार शब्दावली रणनीति" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/-sticky.svg" alt="Sticky Note: परीक्षा-वार शब्दावली रणनीति" width="30%">
 </a>
 
 
@@ -1262,14 +1262,14 @@ a) साधु  b) महात्मा  c) दुर्जन  d) मित�
 
 ### Quick Revision Checklist
 
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-handwritten.svg" alt="Handwritten: Quick Revision Checklist" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-handwritten.svg" alt="Handwritten: Quick Revision Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-diagram.svg" alt="Diagram: Quick Revision Checklist" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-diagram.svg" alt="Diagram: Quick Revision Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-sticky.svg" alt="Sticky Note: Quick Revision Checklist" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/03-hindi-vocabulary/quick-revision-checklist-sticky.svg" alt="Sticky Note: Quick Revision Checklist" width="30%">
 </a>
 
 - [ ] 100+ पर्यायवाची युग्म (6-6 पर्याय प्रति शब्द) याद करें

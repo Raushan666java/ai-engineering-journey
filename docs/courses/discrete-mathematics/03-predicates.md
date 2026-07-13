@@ -49,14 +49,14 @@ flowchart LR
 
 ### 3.1 Predicates
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-handwritten.svg" alt="Handwritten: 3.1 Predicates" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-handwritten.svg" alt="Handwritten: 3.1 Predicates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-diagram.svg" alt="Diagram: 3.1 Predicates" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-diagram.svg" alt="Diagram: 3.1 Predicates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-sticky.svg" alt="Sticky Note: 3.1 Predicates" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-1-predicates-sticky.svg" alt="Sticky Note: 3.1 Predicates" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ A predicate can have multiple variables: $Q(x, y)$ = "$x$ loves $y$". The truth 
 
 ### 3.2 Quantifiers
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-handwritten.svg" alt="Handwritten: 3.2 Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-handwritten.svg" alt="Handwritten: 3.2 Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-diagram.svg" alt="Diagram: 3.2 Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-diagram.svg" alt="Diagram: 3.2 Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-sticky.svg" alt="Sticky Note: 3.2 Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-2-quantifiers-sticky.svg" alt="Sticky Note: 3.2 Quantifiers" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ flowchart LR
 
 ### 3.3 Translation between English and Logic
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-handwritten.svg" alt="Handwritten: 3.3 Translation between English and Logic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-handwritten.svg" alt="Handwritten: 3.3 Translation between English and Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-diagram.svg" alt="Diagram: 3.3 Translation between English and Logic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-diagram.svg" alt="Diagram: 3.3 Translation between English and Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-sticky.svg" alt="Sticky Note: 3.3 Translation between English and Logic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-3-translation-between-english-and-logic-sticky.svg" alt="Sticky Note: 3.3 Translation between English and Logic" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ Note the pattern: "all" uses $\rightarrow$; "some" uses $\land$.
 
 ### 3.4 Negating Quantified Statements
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-handwritten.svg" alt="Handwritten: 3.4 Negating Quantified Statements" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-handwritten.svg" alt="Handwritten: 3.4 Negating Quantified Statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-diagram.svg" alt="Diagram: 3.4 Negating Quantified Statements" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-diagram.svg" alt="Diagram: 3.4 Negating Quantified Statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-sticky.svg" alt="Sticky Note: 3.4 Negating Quantified Statements" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-4-negating-quantified-statements-sticky.svg" alt="Sticky Note: 3.4 Negating Quantified Statements" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ console.log(negateExistential(nums, x => x > 10)); // true (no element > 10)
 
 ### 3.5 Nested Quantifiers
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-handwritten.svg" alt="Handwritten: 3.5 Nested Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-handwritten.svg" alt="Handwritten: 3.5 Nested Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-diagram.svg" alt="Diagram: 3.5 Nested Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-diagram.svg" alt="Diagram: 3.5 Nested Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-sticky.svg" alt="Sticky Note: 3.5 Nested Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-5-nested-quantifiers-sticky.svg" alt="Sticky Note: 3.5 Nested Quantifiers" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ console.log(checkExistsForall(nums)); // false (no single element > all others i
 
 ### 3.6 Negating Nested Quantifiers
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-handwritten.svg" alt="Handwritten: 3.6 Negating Nested Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-handwritten.svg" alt="Handwritten: 3.6 Negating Nested Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-diagram.svg" alt="Diagram: 3.6 Negating Nested Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-diagram.svg" alt="Diagram: 3.6 Negating Nested Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-sticky.svg" alt="Sticky Note: 3.6 Negating Nested Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-6-negating-nested-quantifiers-sticky.svg" alt="Sticky Note: 3.6 Negating Nested Quantifiers" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ $$\neg \forall x\; \exists y\; \forall z\; P(x,y,z) \equiv \exists x\; \forall y
 
 ### 3.7 Uniqueness Quantifier
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-handwritten.svg" alt="Handwritten: 3.7 Uniqueness Quantifier" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-handwritten.svg" alt="Handwritten: 3.7 Uniqueness Quantifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-diagram.svg" alt="Diagram: 3.7 Uniqueness Quantifier" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-diagram.svg" alt="Diagram: 3.7 Uniqueness Quantifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-sticky.svg" alt="Sticky Note: 3.7 Uniqueness Quantifier" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-7-uniqueness-quantifier-sticky.svg" alt="Sticky Note: 3.7 Uniqueness Quantifier" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ console.log(existsUnique([1, 2, 3, 4, 5], x => x === 3));      // true
 
 ### 3.8 Validity of Arguments with Quantifiers
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-handwritten.svg" alt="Handwritten: 3.8 Validity of Arguments with Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-handwritten.svg" alt="Handwritten: 3.8 Validity of Arguments with Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-diagram.svg" alt="Diagram: 3.8 Validity of Arguments with Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-diagram.svg" alt="Diagram: 3.8 Validity of Arguments with Quantifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-sticky.svg" alt="Sticky Note: 3.8 Validity of Arguments with Quantifiers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-8-validity-of-arguments-with-quantifiers-sticky.svg" alt="Sticky Note: 3.8 Validity of Arguments with Quantifiers" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ Therefore: Socrates is mortal. $M(s)$
 
 ### 3.9 Prenex Normal Form
 
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-handwritten.svg" alt="Handwritten: 3.9 Prenex Normal Form" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-handwritten.svg" alt="Handwritten: 3.9 Prenex Normal Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-diagram.svg" alt="Diagram: 3.9 Prenex Normal Form" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-diagram.svg" alt="Diagram: 3.9 Prenex Normal Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-sticky.svg" alt="Sticky Note: 3.9 Prenex Normal Form" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/03-predicates/3-9-prenex-normal-form-sticky.svg" alt="Sticky Note: 3.9 Prenex Normal Form" width="30%">
 </a>
 
 

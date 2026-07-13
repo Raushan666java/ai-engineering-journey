@@ -10,14 +10,14 @@ A **subquery** (inner query / nested query) is a query embedded inside another q
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -28,14 +28,14 @@ A **subquery** (inner query / nested query) is a query embedded inside another q
 
 ### 6.1.1 Scalar Subquery
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-handwritten.svg" alt="Handwritten: 6.1.1 Scalar Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-handwritten.svg" alt="Handwritten: 6.1.1 Scalar Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-diagram.svg" alt="Diagram: 6.1.1 Scalar Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-diagram.svg" alt="Diagram: 6.1.1 Scalar Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-sticky.svg" alt="Sticky Note: 6.1.1 Scalar Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-1-scalar-subquery-sticky.svg" alt="Sticky Note: 6.1.1 Scalar Subquery" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ for e in above_avg:
 
 ### 6.1.2 Row Subquery
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-handwritten.svg" alt="Handwritten: 6.1.2 Row Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-handwritten.svg" alt="Handwritten: 6.1.2 Row Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-diagram.svg" alt="Diagram: 6.1.2 Row Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-diagram.svg" alt="Diagram: 6.1.2 Row Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-sticky.svg" alt="Sticky Note: 6.1.2 Row Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-2-row-subquery-sticky.svg" alt="Sticky Note: 6.1.2 Row Subquery" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ for e in employees:
 
 ### 6.1.3 Table Subquery
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-handwritten.svg" alt="Handwritten: 6.1.3 Table Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-handwritten.svg" alt="Handwritten: 6.1.3 Table Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-diagram.svg" alt="Diagram: 6.1.3 Table Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-diagram.svg" alt="Diagram: 6.1.3 Table Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-sticky.svg" alt="Sticky Note: 6.1.3 Table Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-3-table-subquery-sticky.svg" alt="Sticky Note: 6.1.3 Table Subquery" width="30%">
 </a>
 
 
@@ -446,14 +446,14 @@ for e in employees:
 
 ### 6.1.4 Correlated Subquery
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-handwritten.svg" alt="Handwritten: 6.1.4 Correlated Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-handwritten.svg" alt="Handwritten: 6.1.4 Correlated Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-diagram.svg" alt="Diagram: 6.1.4 Correlated Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-diagram.svg" alt="Diagram: 6.1.4 Correlated Subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-sticky.svg" alt="Sticky Note: 6.1.4 Correlated Subquery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-4-correlated-subquery-sticky.svg" alt="Sticky Note: 6.1.4 Correlated Subquery" width="30%">
 </a>
 
 
@@ -606,14 +606,14 @@ for e in above_dept_avg(employees):
 
 ### 6.1.5 EXISTS / NOT EXISTS
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-handwritten.svg" alt="Handwritten: 6.1.5 EXISTS / NOT EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-handwritten.svg" alt="Handwritten: 6.1.5 EXISTS / NOT EXISTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-diagram.svg" alt="Diagram: 6.1.5 EXISTS / NOT EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-diagram.svg" alt="Diagram: 6.1.5 EXISTS / NOT EXISTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-sticky.svg" alt="Sticky Note: 6.1.5 EXISTS / NOT EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-5-exists-not-exists-sticky.svg" alt="Sticky Note: 6.1.5 EXISTS / NOT EXISTS" width="30%">
 </a>
 
 
@@ -717,14 +717,14 @@ for d in ["Engineering","Sales","Marketing"]:
 
 ### 6.1.6 ANY / ALL
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-handwritten.svg" alt="Handwritten: 6.1.6 ANY / ALL" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-handwritten.svg" alt="Handwritten: 6.1.6 ANY / ALL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-diagram.svg" alt="Diagram: 6.1.6 ANY / ALL" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-diagram.svg" alt="Diagram: 6.1.6 ANY / ALL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-sticky.svg" alt="Sticky Note: 6.1.6 ANY / ALL" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-6-any-all-sticky.svg" alt="Sticky Note: 6.1.6 ANY / ALL" width="30%">
 </a>
 
 
@@ -817,14 +817,14 @@ for name, sal in employees:
 
 ### 6.1.7 Subquery Types Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-handwritten.svg" alt="Handwritten: 6.1.7 Subquery Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-handwritten.svg" alt="Handwritten: 6.1.7 Subquery Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-diagram.svg" alt="Diagram: 6.1.7 Subquery Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-diagram.svg" alt="Diagram: 6.1.7 Subquery Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-sticky.svg" alt="Sticky Note: 6.1.7 Subquery Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-1-7-subquery-types-comparison-sticky.svg" alt="Sticky Note: 6.1.7 Subquery Types Comparison" width="30%">
 </a>
 
 
@@ -850,14 +850,14 @@ A CTE (`WITH` clause) defines a **temporary named result set** that exists only 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -866,14 +866,14 @@ A CTE (`WITH` clause) defines a **temporary named result set** that exists only 
 
 ### 6.2.1 Basic CTE
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-handwritten.svg" alt="Handwritten: 6.2.1 Basic CTE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-handwritten.svg" alt="Handwritten: 6.2.1 Basic CTE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-diagram.svg" alt="Diagram: 6.2.1 Basic CTE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-diagram.svg" alt="Diagram: 6.2.1 Basic CTE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-sticky.svg" alt="Sticky Note: 6.2.1 Basic CTE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-1-basic-cte-sticky.svg" alt="Sticky Note: 6.2.1 Basic CTE" width="30%">
 </a>
 
 
@@ -897,14 +897,14 @@ ORDER BY avg_salary DESC;
 
 ### 6.2.2 Multiple CTEs
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-handwritten.svg" alt="Handwritten: 6.2.2 Multiple CTEs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-handwritten.svg" alt="Handwritten: 6.2.2 Multiple CTEs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-diagram.svg" alt="Diagram: 6.2.2 Multiple CTEs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-diagram.svg" alt="Diagram: 6.2.2 Multiple CTEs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-sticky.svg" alt="Sticky Note: 6.2.2 Multiple CTEs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-2-multiple-ctes-sticky.svg" alt="Sticky Note: 6.2.2 Multiple CTEs" width="30%">
 </a>
 
 
@@ -935,14 +935,14 @@ WHERE rank <= 2;
 
 ### 6.2.3 Recursive CTEs
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-handwritten.svg" alt="Handwritten: 6.2.3 Recursive CTEs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-handwritten.svg" alt="Handwritten: 6.2.3 Recursive CTEs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-diagram.svg" alt="Diagram: 6.2.3 Recursive CTEs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-diagram.svg" alt="Diagram: 6.2.3 Recursive CTEs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-sticky.svg" alt="Sticky Note: 6.2.3 Recursive CTEs" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-3-recursive-ctes-sticky.svg" alt="Sticky Note: 6.2.3 Recursive CTEs" width="30%">
 </a>
 
 
@@ -1138,14 +1138,14 @@ for node in recursive_cte_simulation(employees):
 
 ### 6.2.4 CTE vs Subquery vs Temp Table
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-handwritten.svg" alt="Handwritten: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-handwritten.svg" alt="Handwritten: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-diagram.svg" alt="Diagram: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-diagram.svg" alt="Diagram: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-sticky.svg" alt="Sticky Note: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-2-4-cte-vs-subquery-vs-temp-table-sticky.svg" alt="Sticky Note: 6.2.4 CTE vs Subquery vs Temp Table" width="30%">
 </a>
 
 
@@ -1169,14 +1169,14 @@ Window functions perform calculations across a set of rows **related to the curr
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1184,14 +1184,14 @@ Window functions perform calculations across a set of rows **related to the curr
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1209,14 +1209,14 @@ function_name() OVER (
 
 ### 6.3.1 ROW_NUMBER
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-handwritten.svg" alt="Handwritten: 6.3.1 ROW_NUMBER" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-handwritten.svg" alt="Handwritten: 6.3.1 ROW_NUMBER" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-diagram.svg" alt="Diagram: 6.3.1 ROW_NUMBER" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-diagram.svg" alt="Diagram: 6.3.1 ROW_NUMBER" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-sticky.svg" alt="Sticky Note: 6.3.1 ROW_NUMBER" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-1-row-number-sticky.svg" alt="Sticky Note: 6.3.1 ROW_NUMBER" width="30%">
 </a>
 
 
@@ -1280,14 +1280,14 @@ Actually, let me re-sort properly:
 
 ### 6.3.2 RANK / DENSE_RANK
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-handwritten.svg" alt="Handwritten: 6.3.2 RANK / DENSE_RANK" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-handwritten.svg" alt="Handwritten: 6.3.2 RANK / DENSE_RANK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-diagram.svg" alt="Diagram: 6.3.2 RANK / DENSE_RANK" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-diagram.svg" alt="Diagram: 6.3.2 RANK / DENSE_RANK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-sticky.svg" alt="Sticky Note: 6.3.2 RANK / DENSE_RANK" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-2-rank-dense-rank-sticky.svg" alt="Sticky Note: 6.3.2 RANK / DENSE_RANK" width="30%">
 </a>
 
 
@@ -1328,14 +1328,14 @@ With tied values:
 
 ### 6.3.3 NTILE
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-handwritten.svg" alt="Handwritten: 6.3.3 NTILE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-handwritten.svg" alt="Handwritten: 6.3.3 NTILE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-diagram.svg" alt="Diagram: 6.3.3 NTILE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-diagram.svg" alt="Diagram: 6.3.3 NTILE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-sticky.svg" alt="Sticky Note: 6.3.3 NTILE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-3-ntile-sticky.svg" alt="Sticky Note: 6.3.3 NTILE" width="30%">
 </a>
 
 
@@ -1371,14 +1371,14 @@ WHERE quartile = 1;
 
 ### 6.3.4 LAG / LEAD
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-handwritten.svg" alt="Handwritten: 6.3.4 LAG / LEAD" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-handwritten.svg" alt="Handwritten: 6.3.4 LAG / LEAD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-diagram.svg" alt="Diagram: 6.3.4 LAG / LEAD" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-diagram.svg" alt="Diagram: 6.3.4 LAG / LEAD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-sticky.svg" alt="Sticky Note: 6.3.4 LAG / LEAD" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-4-lag-lead-sticky.svg" alt="Sticky Note: 6.3.4 LAG / LEAD" width="30%">
 </a>
 
 
@@ -1417,14 +1417,14 @@ ORDER BY emp_name, sale_date;
 
 ### 6.3.5 FIRST_VALUE / LAST_VALUE
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-handwritten.svg" alt="Handwritten: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-handwritten.svg" alt="Handwritten: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-diagram.svg" alt="Diagram: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-diagram.svg" alt="Diagram: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-sticky.svg" alt="Sticky Note: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-5-first-value-last-value-sticky.svg" alt="Sticky Note: 6.3.5 FIRST_VALUE / LAST_VALUE" width="30%">
 </a>
 
 
@@ -1450,14 +1450,14 @@ FROM sales;
 
 ### 6.3.6 Aggregate Window Functions (SUM/AVG OVER)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-handwritten.svg" alt="Handwritten: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-handwritten.svg" alt="Handwritten: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-diagram.svg" alt="Diagram: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-diagram.svg" alt="Diagram: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-sticky.svg" alt="Sticky Note: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-6-aggregate-window-functions-sum-avg-over-sticky.svg" alt="Sticky Note: 6.3.6 Aggregate Window Functions (SUM/AVG OVER)" width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ FROM sales;
 
 ### 6.3.7 Window Functions Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-handwritten.svg" alt="Handwritten: 6.3.7 Window Functions Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-handwritten.svg" alt="Handwritten: 6.3.7 Window Functions Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-diagram.svg" alt="Diagram: 6.3.7 Window Functions Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-diagram.svg" alt="Diagram: 6.3.7 Window Functions Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-sticky.svg" alt="Sticky Note: 6.3.7 Window Functions Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-3-7-window-functions-comparison-sticky.svg" alt="Sticky Note: 6.3.7 Window Functions Comparison" width="30%">
 </a>
 
 
@@ -1521,14 +1521,14 @@ FROM sales;
 
 ### C++ Implementation (Window Function Simulator)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-handwritten.svg" alt="Handwritten: C++ Implementation (Window Function Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-handwritten.svg" alt="Handwritten: C++ Implementation (Window Function Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-diagram.svg" alt="Diagram: C++ Implementation (Window Function Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-diagram.svg" alt="Diagram: C++ Implementation (Window Function Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-sticky.svg" alt="Sticky Note: C++ Implementation (Window Function Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-window-function-simulator-sticky.svg" alt="Sticky Note: C++ Implementation (Window Function Simulator)" width="30%">
 </a>
 
 
@@ -1591,14 +1591,14 @@ public:
 
 ### Python Implementation (Window Function Simulator)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Window Function Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Window Function Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-diagram.svg" alt="Diagram: Python Implementation (Window Function Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-diagram.svg" alt="Diagram: Python Implementation (Window Function Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Window Function Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-window-function-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Window Function Simulator)" width="30%">
 </a>
 
 
@@ -1649,14 +1649,14 @@ for item, rank in simulate_row_number(sales, "dept", "amount"):
 
 ### Complexity Analysis of Window Functions
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-handwritten.svg" alt="Handwritten: Complexity Analysis of Window Functions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-handwritten.svg" alt="Handwritten: Complexity Analysis of Window Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-diagram.svg" alt="Diagram: Complexity Analysis of Window Functions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-diagram.svg" alt="Diagram: Complexity Analysis of Window Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-sticky.svg" alt="Sticky Note: Complexity Analysis of Window Functions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-analysis-of-window-functions-sticky.svg" alt="Sticky Note: Complexity Analysis of Window Functions" width="30%">
 </a>
 
 
@@ -1673,14 +1673,14 @@ for item, rank in simulate_row_number(sales, "dept", "amount"):
 
 ### Window Functions â†’ Edge Cases
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-handwritten.svg" alt="Handwritten: Window Functions â†’ Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-handwritten.svg" alt="Handwritten: Window Functions â†’ Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-diagram.svg" alt="Diagram: Window Functions â†’ Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-diagram.svg" alt="Diagram: Window Functions â†’ Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-sticky.svg" alt="Sticky Note: Window Functions â†’ Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/window-functions-edge-cases-sticky.svg" alt="Sticky Note: Window Functions â†’ Edge Cases" width="30%">
 </a>
 
 
@@ -1698,14 +1698,14 @@ Transforms rows into columns (PIVOT) and columns into rows (UNPIVOT). SQL Server
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1714,14 +1714,14 @@ Transforms rows into columns (PIVOT) and columns into rows (UNPIVOT). SQL Server
 
 ### 6.4.1 PIVOT (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-handwritten.svg" alt="Handwritten: 6.4.1 PIVOT (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-handwritten.svg" alt="Handwritten: 6.4.1 PIVOT (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-diagram.svg" alt="Diagram: 6.4.1 PIVOT (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-diagram.svg" alt="Diagram: 6.4.1 PIVOT (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-sticky.svg" alt="Sticky Note: 6.4.1 PIVOT (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-1-pivot-sql-server-sticky.svg" alt="Sticky Note: 6.4.1 PIVOT (SQL Server)" width="30%">
 </a>
 
 
@@ -1754,14 +1754,14 @@ PIVOT (
 
 ### 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-handwritten.svg" alt="Handwritten: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-handwritten.svg" alt="Handwritten: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-diagram.svg" alt="Diagram: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-diagram.svg" alt="Diagram: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-sticky.svg" alt="Sticky Note: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-2-pivot-using-case-mysql-postgresql-compatible-sticky.svg" alt="Sticky Note: 6.4.2 PIVOT using CASE (MySQL / PostgreSQL compatible)" width="30%">
 </a>
 
 
@@ -1777,14 +1777,14 @@ GROUP BY category;
 
 ### 6.4.3 PIVOT using crosstab (PostgreSQL)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-handwritten.svg" alt="Handwritten: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-handwritten.svg" alt="Handwritten: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-diagram.svg" alt="Diagram: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-diagram.svg" alt="Diagram: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-sticky.svg" alt="Sticky Note: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-3-pivot-using-crosstab-postgresql-sticky.svg" alt="Sticky Note: 6.4.3 PIVOT using crosstab (PostgreSQL)" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ FROM crosstab(
 
 ### 6.4.4 UNPIVOT (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-handwritten.svg" alt="Handwritten: 6.4.4 UNPIVOT (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-handwritten.svg" alt="Handwritten: 6.4.4 UNPIVOT (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-diagram.svg" alt="Diagram: 6.4.4 UNPIVOT (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-diagram.svg" alt="Diagram: 6.4.4 UNPIVOT (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-sticky.svg" alt="Sticky Note: 6.4.4 UNPIVOT (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-4-unpivot-sql-server-sticky.svg" alt="Sticky Note: 6.4.4 UNPIVOT (SQL Server)" width="30%">
 </a>
 
 
@@ -1844,14 +1844,14 @@ UNPIVOT (
 
 ### 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-handwritten.svg" alt="Handwritten: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-handwritten.svg" alt="Handwritten: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-diagram.svg" alt="Diagram: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-diagram.svg" alt="Diagram: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-sticky.svg" alt="Sticky Note: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-4-5-unpivot-using-union-all-cross-dbms-sticky.svg" alt="Sticky Note: 6.4.5 UNPIVOT using UNION ALL (cross-DBMS)" width="30%">
 </a>
 
 
@@ -1888,14 +1888,14 @@ MERGE (aka UPSERT) performs INSERT, UPDATE, or DELETE based on whether a matchin
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1903,14 +1903,14 @@ MERGE (aka UPSERT) performs INSERT, UPDATE, or DELETE based on whether a matchin
 
 ### SQL (SQL Server / PostgreSQL)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-handwritten.svg" alt="Handwritten: SQL (SQL Server / PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-handwritten.svg" alt="Handwritten: SQL (SQL Server / PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-diagram.svg" alt="Diagram: SQL (SQL Server / PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-diagram.svg" alt="Diagram: SQL (SQL Server / PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-sticky.svg" alt="Sticky Note: SQL (SQL Server / PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-sql-server-postgresql-sticky.svg" alt="Sticky Note: SQL (SQL Server / PostgreSQL)" width="30%">
 </a>
 
 
@@ -1939,14 +1939,14 @@ OUTPUT $action, inserted.product_id, deleted.quantity, inserted.quantity;
 
 ### PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-handwritten.svg" alt="Handwritten: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-handwritten.svg" alt="Handwritten: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-diagram.svg" alt="Diagram: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-diagram.svg" alt="Diagram: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-sticky.svg" alt="Sticky Note: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-insert-on-conflict-simpler-upsert-sticky.svg" alt="Sticky Note: PostgreSQL INSERT ... ON CONFLICT (Simpler UPSERT)" width="30%">
 </a>
 
 
@@ -1966,14 +1966,14 @@ ON CONFLICT (emp_id) DO NOTHING;
 
 ### MySQL INSERT ... ON DUPLICATE KEY UPDATE
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-handwritten.svg" alt="Handwritten: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-handwritten.svg" alt="Handwritten: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-diagram.svg" alt="Diagram: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-diagram.svg" alt="Diagram: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-sticky.svg" alt="Sticky Note: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-insert-on-duplicate-key-update-sticky.svg" alt="Sticky Note: MySQL INSERT ... ON DUPLICATE KEY UPDATE" width="30%">
 </a>
 
 
@@ -1987,14 +1987,14 @@ ON DUPLICATE KEY UPDATE
 
 ### Steps for MERGE Execution:
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-handwritten.svg" alt="Handwritten: Steps for MERGE Execution:" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-handwritten.svg" alt="Handwritten: Steps for MERGE Execution:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-diagram.svg" alt="Diagram: Steps for MERGE Execution:" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-diagram.svg" alt="Diagram: Steps for MERGE Execution:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-sticky.svg" alt="Sticky Note: Steps for MERGE Execution:" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/steps-for-merge-execution-sticky.svg" alt="Sticky Note: Steps for MERGE Execution:" width="30%">
 </a>
 
 
@@ -2015,14 +2015,14 @@ ON DUPLICATE KEY UPDATE
 
 ### Edge Cases:
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases:" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-diagram.svg" alt="Diagram: Edge Cases:" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-diagram.svg" alt="Diagram: Edge Cases:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases:" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases:" width="30%">
 </a>
 
 - **Multiple matches:** If source has multiple rows matching one target row, the MERGE fails with a "multiple rows in source match same target row" error.
@@ -2037,14 +2037,14 @@ Dynamic SQL constructs and executes SQL statements **at runtime** using string b
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2052,14 +2052,14 @@ Dynamic SQL constructs and executes SQL statements **at runtime** using string b
 
 ### SQL Server (sp_executesql)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-handwritten.svg" alt="Handwritten: SQL Server (sp_executesql)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-handwritten.svg" alt="Handwritten: SQL Server (sp_executesql)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-diagram.svg" alt="Diagram: SQL Server (sp_executesql)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-diagram.svg" alt="Diagram: SQL Server (sp_executesql)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-sticky.svg" alt="Sticky Note: SQL Server (sp_executesql)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-sp-executesql-sticky.svg" alt="Sticky Note: SQL Server (sp_executesql)" width="30%">
 </a>
 
 
@@ -2083,14 +2083,14 @@ END;
 
 ### PostgreSQL (EXECUTE)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-handwritten.svg" alt="Handwritten: PostgreSQL (EXECUTE)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-handwritten.svg" alt="Handwritten: PostgreSQL (EXECUTE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-diagram.svg" alt="Diagram: PostgreSQL (EXECUTE)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-diagram.svg" alt="Diagram: PostgreSQL (EXECUTE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-sticky.svg" alt="Sticky Note: PostgreSQL (EXECUTE)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-execute-sticky.svg" alt="Sticky Note: PostgreSQL (EXECUTE)" width="30%">
 </a>
 
 
@@ -2111,14 +2111,14 @@ $$ LANGUAGE plpgsql;
 
 ### Security: Always Use QUOTENAME / format with %I
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-handwritten.svg" alt="Handwritten: Security: Always Use QUOTENAME / format with %I" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-handwritten.svg" alt="Handwritten: Security: Always Use QUOTENAME / format with %I" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-diagram.svg" alt="Diagram: Security: Always Use QUOTENAME / format with %I" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-diagram.svg" alt="Diagram: Security: Always Use QUOTENAME / format with %I" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-sticky.svg" alt="Sticky Note: Security: Always Use QUOTENAME / format with %I" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/security-always-use-quotename-format-with-i-sticky.svg" alt="Sticky Note: Security: Always Use QUOTENAME / format with %I" width="30%">
 </a>
 
 
@@ -2135,14 +2135,14 @@ EXECUTE format('SELECT * FROM %I WHERE id = %L', table_name, id);
 
 ### Python Implementation (Dynamic SQL Builder):
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-handwritten.svg" alt="Handwritten: Python Implementation (Dynamic SQL Builder):" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-handwritten.svg" alt="Handwritten: Python Implementation (Dynamic SQL Builder):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-diagram.svg" alt="Diagram: Python Implementation (Dynamic SQL Builder):" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-diagram.svg" alt="Diagram: Python Implementation (Dynamic SQL Builder):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-sticky.svg" alt="Sticky Note: Python Implementation (Dynamic SQL Builder):" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-dynamic-sql-builder-sticky.svg" alt="Sticky Note: Python Implementation (Dynamic SQL Builder):" width="30%">
 </a>
 
 
@@ -2199,14 +2199,14 @@ A **stored procedure** is a pre-compiled collection of SQL statements stored on 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2214,14 +2214,14 @@ A **stored procedure** is a pre-compiled collection of SQL statements stored on 
 
 ### SQL Server Example
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-handwritten.svg" alt="Handwritten: SQL Server Example" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-handwritten.svg" alt="Handwritten: SQL Server Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-diagram.svg" alt="Diagram: SQL Server Example" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-diagram.svg" alt="Diagram: SQL Server Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-sticky.svg" alt="Sticky Note: SQL Server Example" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-example-sticky.svg" alt="Sticky Note: SQL Server Example" width="30%">
 </a>
 
 
@@ -2263,14 +2263,14 @@ PRINT 'Total salary: ' + CAST(@result AS VARCHAR);
 
 ### MySQL Example
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-handwritten.svg" alt="Handwritten: MySQL Example" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-handwritten.svg" alt="Handwritten: MySQL Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-diagram.svg" alt="Diagram: MySQL Example" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-diagram.svg" alt="Diagram: MySQL Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-sticky.svg" alt="Sticky Note: MySQL Example" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-example-sticky.svg" alt="Sticky Note: MySQL Example" width="30%">
 </a>
 
 
@@ -2306,14 +2306,14 @@ SELECT @total;
 
 ### PostgreSQL Example (plpgsql)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-handwritten.svg" alt="Handwritten: PostgreSQL Example (plpgsql)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-handwritten.svg" alt="Handwritten: PostgreSQL Example (plpgsql)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-diagram.svg" alt="Diagram: PostgreSQL Example (plpgsql)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-diagram.svg" alt="Diagram: PostgreSQL Example (plpgsql)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-sticky.svg" alt="Sticky Note: PostgreSQL Example (plpgsql)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-example-plpgsql-sticky.svg" alt="Sticky Note: PostgreSQL Example (plpgsql)" width="30%">
 </a>
 
 
@@ -2340,14 +2340,14 @@ $$ LANGUAGE plpgsql;
 
 ### C++ Implementation (Stored Procedure Executor)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-handwritten.svg" alt="Handwritten: C++ Implementation (Stored Procedure Executor)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-handwritten.svg" alt="Handwritten: C++ Implementation (Stored Procedure Executor)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-diagram.svg" alt="Diagram: C++ Implementation (Stored Procedure Executor)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-diagram.svg" alt="Diagram: C++ Implementation (Stored Procedure Executor)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-sticky.svg" alt="Sticky Note: C++ Implementation (Stored Procedure Executor)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-stored-procedure-executor-sticky.svg" alt="Sticky Note: C++ Implementation (Stored Procedure Executor)" width="30%">
 </a>
 
 
@@ -2416,14 +2416,14 @@ int main() {
 
 ### Python Implementation (Stored Procedure Executor)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-handwritten.svg" alt="Handwritten: Python Implementation (Stored Procedure Executor)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-handwritten.svg" alt="Handwritten: Python Implementation (Stored Procedure Executor)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-diagram.svg" alt="Diagram: Python Implementation (Stored Procedure Executor)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-diagram.svg" alt="Diagram: Python Implementation (Stored Procedure Executor)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-sticky.svg" alt="Sticky Note: Python Implementation (Stored Procedure Executor)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-stored-procedure-executor-sticky.svg" alt="Sticky Note: Python Implementation (Stored Procedure Executor)" width="30%">
 </a>
 
 
@@ -2472,14 +2472,14 @@ for row in results:
 
 ### Complexity & Benefits
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-handwritten.svg" alt="Handwritten: Complexity & Benefits" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-handwritten.svg" alt="Handwritten: Complexity & Benefits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-diagram.svg" alt="Diagram: Complexity & Benefits" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-diagram.svg" alt="Diagram: Complexity & Benefits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-sticky.svg" alt="Sticky Note: Complexity & Benefits" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-benefits-sticky.svg" alt="Sticky Note: Complexity & Benefits" width="30%">
 </a>
 
 
@@ -2507,14 +2507,14 @@ Functions return a **single value** (scalar) or a **table** (table-valued). Unli
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2522,14 +2522,14 @@ Functions return a **single value** (scalar) or a **table** (table-valued). Unli
 
 ### Scalar Function (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-handwritten.svg" alt="Handwritten: Scalar Function (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-handwritten.svg" alt="Handwritten: Scalar Function (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-diagram.svg" alt="Diagram: Scalar Function (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-diagram.svg" alt="Diagram: Scalar Function (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-sticky.svg" alt="Sticky Note: Scalar Function (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/scalar-function-sql-server-sticky.svg" alt="Sticky Note: Scalar Function (SQL Server)" width="30%">
 </a>
 
 
@@ -2559,14 +2559,14 @@ FROM employees;
 
 ### Table-Valued Function (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-handwritten.svg" alt="Handwritten: Table-Valued Function (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-handwritten.svg" alt="Handwritten: Table-Valued Function (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-diagram.svg" alt="Diagram: Table-Valued Function (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-diagram.svg" alt="Diagram: Table-Valued Function (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-sticky.svg" alt="Sticky Note: Table-Valued Function (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/table-valued-function-sql-server-sticky.svg" alt="Sticky Note: Table-Valued Function (SQL Server)" width="30%">
 </a>
 
 
@@ -2586,14 +2586,14 @@ SELECT * FROM GetEmployeesByDepartment(3) WHERE salary > 50000;
 
 ### PostgreSQL Function
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-handwritten.svg" alt="Handwritten: PostgreSQL Function" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-handwritten.svg" alt="Handwritten: PostgreSQL Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-diagram.svg" alt="Diagram: PostgreSQL Function" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-diagram.svg" alt="Diagram: PostgreSQL Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-sticky.svg" alt="Sticky Note: PostgreSQL Function" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-function-sticky.svg" alt="Sticky Note: PostgreSQL Function" width="30%">
 </a>
 
 
@@ -2617,14 +2617,14 @@ $$ LANGUAGE plpgsql IMMUTABLE;
 
 ### Deterministic vs Non-Deterministic
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-handwritten.svg" alt="Handwritten: Deterministic vs Non-Deterministic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-handwritten.svg" alt="Handwritten: Deterministic vs Non-Deterministic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-diagram.svg" alt="Diagram: Deterministic vs Non-Deterministic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-diagram.svg" alt="Diagram: Deterministic vs Non-Deterministic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-sticky.svg" alt="Sticky Note: Deterministic vs Non-Deterministic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/deterministic-vs-non-deterministic-sticky.svg" alt="Sticky Note: Deterministic vs Non-Deterministic" width="30%">
 </a>
 
 
@@ -2635,14 +2635,14 @@ $$ LANGUAGE plpgsql IMMUTABLE;
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -2654,14 +2654,14 @@ $$ LANGUAGE plpgsql IMMUTABLE;
 
 ### Python Implementation (UDF Simulator)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-handwritten.svg" alt="Handwritten: Python Implementation (UDF Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-handwritten.svg" alt="Handwritten: Python Implementation (UDF Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-diagram.svg" alt="Diagram: Python Implementation (UDF Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-diagram.svg" alt="Diagram: Python Implementation (UDF Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-sticky.svg" alt="Sticky Note: Python Implementation (UDF Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-udf-simulator-sticky.svg" alt="Sticky Note: Python Implementation (UDF Simulator)" width="30%">
 </a>
 
 
@@ -2702,14 +2702,14 @@ A **trigger** is a stored procedure that automatically executes (fires) in respo
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2717,14 +2717,14 @@ A **trigger** is a stored procedure that automatically executes (fires) in respo
 
 ### Types of Triggers
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-handwritten.svg" alt="Handwritten: Types of Triggers" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-handwritten.svg" alt="Handwritten: Types of Triggers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-diagram.svg" alt="Diagram: Types of Triggers" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-diagram.svg" alt="Diagram: Types of Triggers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-sticky.svg" alt="Sticky Note: Types of Triggers" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/types-of-triggers-sticky.svg" alt="Sticky Note: Types of Triggers" width="30%">
 </a>
 
 
@@ -2737,14 +2737,14 @@ A **trigger** is a stored procedure that automatically executes (fires) in respo
 
 ### BEFORE Trigger (MySQL)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-handwritten.svg" alt="Handwritten: BEFORE Trigger (MySQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-handwritten.svg" alt="Handwritten: BEFORE Trigger (MySQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-diagram.svg" alt="Diagram: BEFORE Trigger (MySQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-diagram.svg" alt="Diagram: BEFORE Trigger (MySQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-sticky.svg" alt="Sticky Note: BEFORE Trigger (MySQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/before-trigger-mysql-sticky.svg" alt="Sticky Note: BEFORE Trigger (MySQL)" width="30%">
 </a>
 
 
@@ -2769,14 +2769,14 @@ DELIMITER ;
 
 ### AFTER Trigger (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-handwritten.svg" alt="Handwritten: AFTER Trigger (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-handwritten.svg" alt="Handwritten: AFTER Trigger (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-diagram.svg" alt="Diagram: AFTER Trigger (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-diagram.svg" alt="Diagram: AFTER Trigger (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-sticky.svg" alt="Sticky Note: AFTER Trigger (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/after-trigger-sql-server-sticky.svg" alt="Sticky Note: AFTER Trigger (SQL Server)" width="30%">
 </a>
 
 
@@ -2808,14 +2808,14 @@ END;
 
 ### INSTEAD OF Trigger (SQL Server â†’ for Views)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-handwritten.svg" alt="Handwritten: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-handwritten.svg" alt="Handwritten: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-diagram.svg" alt="Diagram: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-diagram.svg" alt="Diagram: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-sticky.svg" alt="Sticky Note: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/instead-of-trigger-sql-server-for-views-sticky.svg" alt="Sticky Note: INSTEAD OF Trigger (SQL Server â†’ for Views)" width="30%">
 </a>
 
 
@@ -2843,14 +2843,14 @@ INSERT INTO emp_view(emp_id, name, salary, department_id) VALUES (100, 'John', -
 
 ### Trigger Execution Order (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-handwritten.svg" alt="Handwritten: Trigger Execution Order (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-handwritten.svg" alt="Handwritten: Trigger Execution Order (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-diagram.svg" alt="Diagram: Trigger Execution Order (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-diagram.svg" alt="Diagram: Trigger Execution Order (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-sticky.svg" alt="Sticky Note: Trigger Execution Order (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-execution-order-sql-server-sticky.svg" alt="Sticky Note: Trigger Execution Order (SQL Server)" width="30%">
 </a>
 
 
@@ -2864,14 +2864,14 @@ BEFORE triggers (not in SQL Server â†’ check constraints fire first)
 
 ### C++ Implementation (Trigger Engine)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-handwritten.svg" alt="Handwritten: C++ Implementation (Trigger Engine)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-handwritten.svg" alt="Handwritten: C++ Implementation (Trigger Engine)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-diagram.svg" alt="Diagram: C++ Implementation (Trigger Engine)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-diagram.svg" alt="Diagram: C++ Implementation (Trigger Engine)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-sticky.svg" alt="Sticky Note: C++ Implementation (Trigger Engine)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-trigger-engine-sticky.svg" alt="Sticky Note: C++ Implementation (Trigger Engine)" width="30%">
 </a>
 
 
@@ -2955,14 +2955,14 @@ int main() {
 
 ### Python Implementation (Trigger Simulator)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Trigger Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Trigger Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-diagram.svg" alt="Diagram: Python Implementation (Trigger Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-diagram.svg" alt="Diagram: Python Implementation (Trigger Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Trigger Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-trigger-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Trigger Simulator)" width="30%">
 </a>
 
 
@@ -3024,14 +3024,14 @@ engine.fire(TriggerEvent.UPDATE, TriggerTiming.BEFORE, old_emp, new_emp)
 
 ### Trigger Complexity & Considerations
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-handwritten.svg" alt="Handwritten: Trigger Complexity & Considerations" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-handwritten.svg" alt="Handwritten: Trigger Complexity & Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-diagram.svg" alt="Diagram: Trigger Complexity & Considerations" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-diagram.svg" alt="Diagram: Trigger Complexity & Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-sticky.svg" alt="Sticky Note: Trigger Complexity & Considerations" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-complexity-considerations-sticky.svg" alt="Sticky Note: Trigger Complexity & Considerations" width="30%">
 </a>
 
 
@@ -3051,14 +3051,14 @@ A **view** is a saved query definition that behaves like a virtual table. An **i
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3067,14 +3067,14 @@ A **view** is a saved query definition that behaves like a virtual table. An **i
 
 ### Creating Views
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-handwritten.svg" alt="Handwritten: Creating Views" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-handwritten.svg" alt="Handwritten: Creating Views" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-diagram.svg" alt="Diagram: Creating Views" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-diagram.svg" alt="Diagram: Creating Views" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-sticky.svg" alt="Sticky Note: Creating Views" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/creating-views-sticky.svg" alt="Sticky Note: Creating Views" width="30%">
 </a>
 
 
@@ -3098,14 +3098,14 @@ SELECT * FROM sales_summary WHERE total_revenue > 10000 ORDER BY total_revenue D
 
 ### View Security (Column-Level Masking)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-handwritten.svg" alt="Handwritten: View Security (Column-Level Masking)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-handwritten.svg" alt="Handwritten: View Security (Column-Level Masking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-diagram.svg" alt="Diagram: View Security (Column-Level Masking)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-diagram.svg" alt="Diagram: View Security (Column-Level Masking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-sticky.svg" alt="Sticky Note: View Security (Column-Level Masking)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-security-column-level-masking-sticky.svg" alt="Sticky Note: View Security (Column-Level Masking)" width="30%">
 </a>
 
 
@@ -3122,14 +3122,14 @@ SELECT * FROM employees;
 
 ### Indexed Views (SQL Server)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-handwritten.svg" alt="Handwritten: Indexed Views (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-handwritten.svg" alt="Handwritten: Indexed Views (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-diagram.svg" alt="Diagram: Indexed Views (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-diagram.svg" alt="Diagram: Indexed Views (SQL Server)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-sticky.svg" alt="Sticky Note: Indexed Views (SQL Server)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/indexed-views-sql-server-sticky.svg" alt="Sticky Note: Indexed Views (SQL Server)" width="30%">
 </a>
 
 
@@ -3153,14 +3153,14 @@ ON dbo.monthly_sales(product_id);
 
 ### Materialized Views (PostgreSQL)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-handwritten.svg" alt="Handwritten: Materialized Views (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-handwritten.svg" alt="Handwritten: Materialized Views (PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-diagram.svg" alt="Diagram: Materialized Views (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-diagram.svg" alt="Diagram: Materialized Views (PostgreSQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-sticky.svg" alt="Sticky Note: Materialized Views (PostgreSQL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/materialized-views-postgresql-sticky.svg" alt="Sticky Note: Materialized Views (PostgreSQL)" width="30%">
 </a>
 
 
@@ -3186,14 +3186,14 @@ REFRESH MATERIALIZED VIEW CONCURRENTLY monthly_sales_mv;
 
 ### Updatable Views
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-handwritten.svg" alt="Handwritten: Updatable Views" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-handwritten.svg" alt="Handwritten: Updatable Views" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-diagram.svg" alt="Diagram: Updatable Views" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-diagram.svg" alt="Diagram: Updatable Views" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-sticky.svg" alt="Sticky Note: Updatable Views" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/updatable-views-sticky.svg" alt="Sticky Note: Updatable Views" width="30%">
 </a>
 
 
@@ -3218,14 +3218,14 @@ DELETE FROM engineering_dept WHERE emp_id = 101;
 
 ### C++ Implementation (View Materialization)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-handwritten.svg" alt="Handwritten: C++ Implementation (View Materialization)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-handwritten.svg" alt="Handwritten: C++ Implementation (View Materialization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-diagram.svg" alt="Diagram: C++ Implementation (View Materialization)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-diagram.svg" alt="Diagram: C++ Implementation (View Materialization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-sticky.svg" alt="Sticky Note: C++ Implementation (View Materialization)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-view-materialization-sticky.svg" alt="Sticky Note: C++ Implementation (View Materialization)" width="30%">
 </a>
 
 
@@ -3305,14 +3305,14 @@ int main() {
 
 ### Python Implementation (View Abstraction)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-handwritten.svg" alt="Handwritten: Python Implementation (View Abstraction)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-handwritten.svg" alt="Handwritten: Python Implementation (View Abstraction)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-diagram.svg" alt="Diagram: Python Implementation (View Abstraction)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-diagram.svg" alt="Diagram: Python Implementation (View Abstraction)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-sticky.svg" alt="Sticky Note: Python Implementation (View Abstraction)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-view-abstraction-sticky.svg" alt="Sticky Note: Python Implementation (View Abstraction)" width="30%">
 </a>
 
 
@@ -3366,14 +3366,14 @@ for r in completed_view.get_data():
 
 ### View Complexity
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-handwritten.svg" alt="Handwritten: View Complexity" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-handwritten.svg" alt="Handwritten: View Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-diagram.svg" alt="Diagram: View Complexity" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-diagram.svg" alt="Diagram: View Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-sticky.svg" alt="Sticky Note: View Complexity" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/view-complexity-sticky.svg" alt="Sticky Note: View Complexity" width="30%">
 </a>
 
 
@@ -3394,14 +3394,14 @@ Temporary tables store intermediate results for the **duration of a session** or
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3410,14 +3410,14 @@ Temporary tables store intermediate results for the **duration of a session** or
 
 ### 6.11.1 Local Temporary Tables (#temp)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-handwritten.svg" alt="Handwritten: 6.11.1 Local Temporary Tables (#temp)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-handwritten.svg" alt="Handwritten: 6.11.1 Local Temporary Tables (#temp)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-diagram.svg" alt="Diagram: 6.11.1 Local Temporary Tables (#temp)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-diagram.svg" alt="Diagram: 6.11.1 Local Temporary Tables (#temp)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-sticky.svg" alt="Sticky Note: 6.11.1 Local Temporary Tables (#temp)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-1-local-temporary-tables-temp-sticky.svg" alt="Sticky Note: 6.11.1 Local Temporary Tables (#temp)" width="30%">
 </a>
 
 
@@ -3452,14 +3452,14 @@ DROP TABLE IF EXISTS #dept_summary;
 
 ### 6.11.2 Global Temporary Tables (##temp)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-handwritten.svg" alt="Handwritten: 6.11.2 Global Temporary Tables (##temp)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-handwritten.svg" alt="Handwritten: 6.11.2 Global Temporary Tables (##temp)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-diagram.svg" alt="Diagram: 6.11.2 Global Temporary Tables (##temp)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-diagram.svg" alt="Diagram: 6.11.2 Global Temporary Tables (##temp)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-sticky.svg" alt="Sticky Note: 6.11.2 Global Temporary Tables (##temp)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-2-global-temporary-tables-temp-sticky.svg" alt="Sticky Note: 6.11.2 Global Temporary Tables (##temp)" width="30%">
 </a>
 
 
@@ -3483,14 +3483,14 @@ SELECT * FROM ##global_temp_errors;
 
 ### 6.11.3 Table Variables
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-handwritten.svg" alt="Handwritten: 6.11.3 Table Variables" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-handwritten.svg" alt="Handwritten: 6.11.3 Table Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-diagram.svg" alt="Diagram: 6.11.3 Table Variables" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-diagram.svg" alt="Diagram: 6.11.3 Table Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-sticky.svg" alt="Sticky Note: 6.11.3 Table Variables" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-3-table-variables-sticky.svg" alt="Sticky Note: 6.11.3 Table Variables" width="30%">
 </a>
 
 
@@ -3519,14 +3519,14 @@ SELECT * FROM @ProductSales ORDER BY total_revenue DESC;
 
 ### 6.11.4 Temp Table vs Table Variable Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-handwritten.svg" alt="Handwritten: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-handwritten.svg" alt="Handwritten: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-diagram.svg" alt="Diagram: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-diagram.svg" alt="Diagram: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-sticky.svg" alt="Sticky Note: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-11-4-temp-table-vs-table-variable-comparison-sticky.svg" alt="Sticky Note: 6.11.4 Temp Table vs Table Variable Comparison" width="30%">
 </a>
 
 
@@ -3544,14 +3544,14 @@ SELECT * FROM @ProductSales ORDER BY total_revenue DESC;
 
 ### C++ Implementation (Temp Table Simulation)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-handwritten.svg" alt="Handwritten: C++ Implementation (Temp Table Simulation)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-handwritten.svg" alt="Handwritten: C++ Implementation (Temp Table Simulation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-diagram.svg" alt="Diagram: C++ Implementation (Temp Table Simulation)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-diagram.svg" alt="Diagram: C++ Implementation (Temp Table Simulation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-sticky.svg" alt="Sticky Note: C++ Implementation (Temp Table Simulation)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/c-implementation-temp-table-simulation-sticky.svg" alt="Sticky Note: C++ Implementation (Temp Table Simulation)" width="30%">
 </a>
 
 
@@ -3638,14 +3638,14 @@ int main() {
 
 ### Python Implementation (Temp Table Simulator)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Temp Table Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-handwritten.svg" alt="Handwritten: Python Implementation (Temp Table Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-diagram.svg" alt="Diagram: Python Implementation (Temp Table Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-diagram.svg" alt="Diagram: Python Implementation (Temp Table Simulator)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Temp Table Simulator)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/python-implementation-temp-table-simulator-sticky.svg" alt="Sticky Note: Python Implementation (Temp Table Simulator)" width="30%">
 </a>
 
 
@@ -3743,14 +3743,14 @@ mgr.clear_session()
 
 ### Q1: What is the maximum recursion depth for CTEs?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-handwritten.svg" alt="Handwritten: What is the maximum recursion depth for CTEs?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-handwritten.svg" alt="Handwritten: What is the maximum recursion depth for CTEs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-diagram.svg" alt="Diagram: What is the maximum recursion depth for CTEs?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-diagram.svg" alt="Diagram: What is the maximum recursion depth for CTEs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-sticky.svg" alt="Sticky Note: What is the maximum recursion depth for CTEs?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-is-the-maximum-recursion-depth-for-ctes-sticky.svg" alt="Sticky Note: What is the maximum recursion depth for CTEs?" width="30%">
 </a>
 
 
@@ -3764,14 +3764,14 @@ Most DBMS enforce a default limit to prevent infinite recursion:
 
 ### Q2: Correlated vs Non-correlated subquery â†’ performance difference?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-handwritten.svg" alt="Handwritten: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-handwritten.svg" alt="Handwritten: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-diagram.svg" alt="Diagram: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-diagram.svg" alt="Diagram: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-sticky.svg" alt="Sticky Note: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/correlated-vs-non-correlated-subquery-performance-difference-sticky.svg" alt="Sticky Note: Correlated vs Non-correlated subquery â†’ performance difference?" width="30%">
 </a>
 
 
@@ -3782,14 +3782,14 @@ Most DBMS enforce a default limit to prevent infinite recursion:
 
 ### Q3: Can you create an index on a view?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-handwritten.svg" alt="Handwritten: Can you create an index on a view?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-handwritten.svg" alt="Handwritten: Can you create an index on a view?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-diagram.svg" alt="Diagram: Can you create an index on a view?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-diagram.svg" alt="Diagram: Can you create an index on a view?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-sticky.svg" alt="Sticky Note: Can you create an index on a view?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-you-create-an-index-on-a-view-sticky.svg" alt="Sticky Note: Can you create an index on a view?" width="30%">
 </a>
 
 
@@ -3808,14 +3808,14 @@ Requirements for indexed views in SQL Server:
 
 ### Q4: Trigger vs CHECK constraint â†’ which to use for validation?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-handwritten.svg" alt="Handwritten: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-handwritten.svg" alt="Handwritten: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-diagram.svg" alt="Diagram: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-diagram.svg" alt="Diagram: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-sticky.svg" alt="Sticky Note: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/trigger-vs-check-constraint-which-to-use-for-validation-sticky.svg" alt="Sticky Note: Trigger vs CHECK constraint â†’ which to use for validation?" width="30%">
 </a>
 
 
@@ -3840,14 +3840,14 @@ END;
 
 ### Q5: What happens with NULLs in window function ORDER BY?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-handwritten.svg" alt="Handwritten: What happens with NULLs in window function ORDER BY?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-handwritten.svg" alt="Handwritten: What happens with NULLs in window function ORDER BY?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-diagram.svg" alt="Diagram: What happens with NULLs in window function ORDER BY?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-diagram.svg" alt="Diagram: What happens with NULLs in window function ORDER BY?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-sticky.svg" alt="Sticky Note: What happens with NULLs in window function ORDER BY?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/what-happens-with-nulls-in-window-function-order-by-sticky.svg" alt="Sticky Note: What happens with NULLs in window function ORDER BY?" width="30%">
 </a>
 
 
@@ -3860,14 +3860,14 @@ END;
 
 ### Q6: Why would a MERGE statement fail with "multiple rows in source match same target"?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-handwritten.svg" alt="Handwritten: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-handwritten.svg" alt="Handwritten: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-diagram.svg" alt="Diagram: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-diagram.svg" alt="Diagram: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-sticky.svg" alt="Sticky Note: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/why-would-a-merge-statement-fail-with-multiple-rows-in-source-match-same-target-sticky.svg" alt="Sticky Note: Why would a MERGE statement fail with "multiple rows in source match same target"?" width="30%">
 </a>
 
 
@@ -3889,14 +3889,14 @@ WHEN MATCHED THEN UPDATE SET quantity = quantity + source.qty;
 
 ### Q7: Can a CTE be used in multiple queries?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-handwritten.svg" alt="Handwritten: Can a CTE be used in multiple queries?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-handwritten.svg" alt="Handwritten: Can a CTE be used in multiple queries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-diagram.svg" alt="Diagram: Can a CTE be used in multiple queries?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-diagram.svg" alt="Diagram: Can a CTE be used in multiple queries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-sticky.svg" alt="Sticky Note: Can a CTE be used in multiple queries?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/can-a-cte-be-used-in-multiple-queries-sticky.svg" alt="Sticky Note: Can a CTE be used in multiple queries?" width="30%">
 </a>
 
 
@@ -3912,14 +3912,14 @@ SELECT * FROM cte;          -- First query uses CTE
 
 ### Q8: Dynamic SQL â†’ why is QUOTENAME important?
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-handwritten.svg" alt="Handwritten: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-handwritten.svg" alt="Handwritten: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-diagram.svg" alt="Diagram: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-diagram.svg" alt="Diagram: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-sticky.svg" alt="Sticky Note: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-why-is-quotename-important-sticky.svg" alt="Sticky Note: Dynamic SQL â†’ why is QUOTENAME important?" width="30%">
 </a>
 
 
@@ -3942,14 +3942,14 @@ SET @sql = 'SELECT * FROM ' + QUOTENAME(@table_name);
 
 ### PostgreSQL Window Functions
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-handwritten.svg" alt="Handwritten: PostgreSQL Window Functions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-handwritten.svg" alt="Handwritten: PostgreSQL Window Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-diagram.svg" alt="Diagram: PostgreSQL Window Functions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-diagram.svg" alt="Diagram: PostgreSQL Window Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-sticky.svg" alt="Sticky Note: PostgreSQL Window Functions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/postgresql-window-functions-sticky.svg" alt="Sticky Note: PostgreSQL Window Functions" width="30%">
 </a>
 
 
@@ -3990,14 +3990,14 @@ WINDOW w AS (PARTITION BY symbol, DATE_TRUNC('month', trade_date)
 
 ### SQL Server Stored Procedures in Production
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-handwritten.svg" alt="Handwritten: SQL Server Stored Procedures in Production" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-handwritten.svg" alt="Handwritten: SQL Server Stored Procedures in Production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-diagram.svg" alt="Diagram: SQL Server Stored Procedures in Production" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-diagram.svg" alt="Diagram: SQL Server Stored Procedures in Production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-sticky.svg" alt="Sticky Note: SQL Server Stored Procedures in Production" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/sql-server-stored-procedures-in-production-sticky.svg" alt="Sticky Note: SQL Server Stored Procedures in Production" width="30%">
 </a>
 
 
@@ -4048,14 +4048,14 @@ END;
 
 ### MySQL Triggers for Data Sync
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-handwritten.svg" alt="Handwritten: MySQL Triggers for Data Sync" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-handwritten.svg" alt="Handwritten: MySQL Triggers for Data Sync" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-diagram.svg" alt="Diagram: MySQL Triggers for Data Sync" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-diagram.svg" alt="Diagram: MySQL Triggers for Data Sync" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-sticky.svg" alt="Sticky Note: MySQL Triggers for Data Sync" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/mysql-triggers-for-data-sync-sticky.svg" alt="Sticky Note: MySQL Triggers for Data Sync" width="30%">
 </a>
 
 
@@ -4098,14 +4098,14 @@ DELIMITER ;
 
 ### Dynamic SQL in Search Applications
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-handwritten.svg" alt="Handwritten: Dynamic SQL in Search Applications" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-handwritten.svg" alt="Handwritten: Dynamic SQL in Search Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-diagram.svg" alt="Diagram: Dynamic SQL in Search Applications" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-diagram.svg" alt="Diagram: Dynamic SQL in Search Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-sticky.svg" alt="Sticky Note: Dynamic SQL in Search Applications" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/dynamic-sql-in-search-applications-sticky.svg" alt="Sticky Note: Dynamic SQL in Search Applications" width="30%">
 </a>
 
 
@@ -4163,14 +4163,14 @@ END;
 
 ### Recursive CTE in Organization Management
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-handwritten.svg" alt="Handwritten: Recursive CTE in Organization Management" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-handwritten.svg" alt="Handwritten: Recursive CTE in Organization Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-diagram.svg" alt="Diagram: Recursive CTE in Organization Management" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-diagram.svg" alt="Diagram: Recursive CTE in Organization Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-sticky.svg" alt="Sticky Note: Recursive CTE in Organization Management" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/recursive-cte-in-organization-management-sticky.svg" alt="Sticky Note: Recursive CTE in Organization Management" width="30%">
 </a>
 
 
@@ -4198,14 +4198,14 @@ FROM role_permissions;
 
 ### MERGE in Data Warehousing (Slowly Changing Dimensions)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-handwritten.svg" alt="Handwritten: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-handwritten.svg" alt="Handwritten: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-diagram.svg" alt="Diagram: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-diagram.svg" alt="Diagram: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-sticky.svg" alt="Sticky Note: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/merge-in-data-warehousing-slowly-changing-dimensions-sticky.svg" alt="Sticky Note: MERGE in Data Warehousing (Slowly Changing Dimensions)" width="30%">
 </a>
 
 
@@ -4280,14 +4280,14 @@ LIMIT / OFFSET   â†’ Pagination
 
 ### 6.16 Recursive CTE Simulator (TypeScript)
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-handwritten.svg" alt="Handwritten: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-handwritten.svg" alt="Handwritten: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-diagram.svg" alt="Diagram: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-diagram.svg" alt="Diagram: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-sticky.svg" alt="Sticky Note: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/6-16-recursive-cte-simulator-typescript-sticky.svg" alt="Sticky Note: 6.16 Recursive CTE Simulator (TypeScript)" width="30%">
 </a>
 
 
@@ -4430,14 +4430,14 @@ flowchart LR
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -4475,14 +4475,14 @@ flowchart LR
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -4600,14 +4600,14 @@ flowchart LR
 
 ### Basic
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -4623,14 +4623,14 @@ flowchart LR
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -4646,14 +4646,14 @@ flowchart LR
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/06-sql-advanced/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 

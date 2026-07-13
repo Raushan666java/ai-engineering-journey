@@ -42,14 +42,14 @@ AI engineering experiments involve combinations of prompts, models, parameters, 
 
 ### Experiment Tracking Schema
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-handwritten.svg" alt="Handwritten: Experiment Tracking Schema" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-handwritten.svg" alt="Handwritten: Experiment Tracking Schema" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-diagram.svg" alt="Diagram: Experiment Tracking Schema" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-diagram.svg" alt="Diagram: Experiment Tracking Schema" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-sticky.svg" alt="Sticky Note: Experiment Tracking Schema" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-schema-sticky.svg" alt="Sticky Note: Experiment Tracking Schema" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ interface RunMetrics {
 
 ### Experiment Tracker Implementation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-handwritten.svg" alt="Handwritten: Experiment Tracker Implementation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-handwritten.svg" alt="Handwritten: Experiment Tracker Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-diagram.svg" alt="Diagram: Experiment Tracker Implementation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-diagram.svg" alt="Diagram: Experiment Tracker Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-sticky.svg" alt="Sticky Note: Experiment Tracker Implementation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracker-implementation-sticky.svg" alt="Sticky Note: Experiment Tracker Implementation" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ class ExperimentTracker {
 
 ### Experiment Tracking Architecture
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-handwritten.svg" alt="Handwritten: Experiment Tracking Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-handwritten.svg" alt="Handwritten: Experiment Tracking Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-diagram.svg" alt="Diagram: Experiment Tracking Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-diagram.svg" alt="Diagram: Experiment Tracking Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-sticky.svg" alt="Sticky Note: Experiment Tracking Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/experiment-tracking-architecture-sticky.svg" alt="Sticky Note: Experiment Tracking Architecture" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ Prompts are the primary artifact in AI engineering. They change frequently and m
 
 ### Prompt Lifecycle
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-handwritten.svg" alt="Handwritten: Prompt Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-handwritten.svg" alt="Handwritten: Prompt Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-diagram.svg" alt="Diagram: Prompt Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-diagram.svg" alt="Diagram: Prompt Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-sticky.svg" alt="Sticky Note: Prompt Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-sticky.svg" alt="Sticky Note: Prompt Lifecycle" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ Prompts are the primary artifact in AI engineering. They change frequently and m
 
 ### Prompt Registry
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-handwritten.svg" alt="Handwritten: Prompt Registry" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-handwritten.svg" alt="Handwritten: Prompt Registry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-diagram.svg" alt="Diagram: Prompt Registry" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-diagram.svg" alt="Diagram: Prompt Registry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-sticky.svg" alt="Sticky Note: Prompt Registry" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-registry-sticky.svg" alt="Sticky Note: Prompt Registry" width="30%">
 </a>
 
 
@@ -471,14 +471,14 @@ class PromptRegistry {
 
 ### Prompt Lifecycle Flow
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-handwritten.svg" alt="Handwritten: Prompt Lifecycle Flow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-handwritten.svg" alt="Handwritten: Prompt Lifecycle Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-diagram.svg" alt="Diagram: Prompt Lifecycle Flow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-diagram.svg" alt="Diagram: Prompt Lifecycle Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-sticky.svg" alt="Sticky Note: Prompt Lifecycle Flow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/prompt-lifecycle-flow-sticky.svg" alt="Sticky Note: Prompt Lifecycle Flow" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ CI/CD pipelines for AI applications must incorporate evaluation gates, model val
 
 ### Pipeline Stages
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-handwritten.svg" alt="Handwritten: Pipeline Stages" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-handwritten.svg" alt="Handwritten: Pipeline Stages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-diagram.svg" alt="Diagram: Pipeline Stages" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-diagram.svg" alt="Diagram: Pipeline Stages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-sticky.svg" alt="Sticky Note: Pipeline Stages" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/pipeline-stages-sticky.svg" alt="Sticky Note: Pipeline Stages" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ interface DeployStatus {
 
 ### CI/CD Pipeline Architecture
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-handwritten.svg" alt="Handwritten: CI/CD Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-handwritten.svg" alt="Handwritten: CI/CD Pipeline Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-diagram.svg" alt="Diagram: CI/CD Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-diagram.svg" alt="Diagram: CI/CD Pipeline Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-sticky.svg" alt="Sticky Note: CI/CD Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/ci-cd-pipeline-architecture-sticky.svg" alt="Sticky Note: CI/CD Pipeline Architecture" width="30%">
 </a>
 
 
@@ -775,14 +775,14 @@ Versioning in AI engineering extends beyond code to include prompts, model confi
 
 ### Hash-Based Versioning
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-handwritten.svg" alt="Handwritten: Hash-Based Versioning" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-handwritten.svg" alt="Handwritten: Hash-Based Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-diagram.svg" alt="Diagram: Hash-Based Versioning" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-diagram.svg" alt="Diagram: Hash-Based Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-sticky.svg" alt="Sticky Note: Hash-Based Versioning" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/hash-based-versioning-sticky.svg" alt="Sticky Note: Hash-Based Versioning" width="30%">
 </a>
 
 
@@ -899,14 +899,14 @@ class ArtifactVersioner {
 
 ### DVC-Like Pattern for AI
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-handwritten.svg" alt="Handwritten: DVC-Like Pattern for AI" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-handwritten.svg" alt="Handwritten: DVC-Like Pattern for AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-diagram.svg" alt="Diagram: DVC-Like Pattern for AI" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-diagram.svg" alt="Diagram: DVC-Like Pattern for AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-sticky.svg" alt="Sticky Note: DVC-Like Pattern for AI" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/dvc-like-pattern-for-ai-sticky.svg" alt="Sticky Note: DVC-Like Pattern for AI" width="30%">
 </a>
 
 
@@ -1021,14 +1021,14 @@ class DataPipelineManager {
 
 ### Metadata Management Strategy
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-handwritten.svg" alt="Handwritten: Metadata Management Strategy" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-handwritten.svg" alt="Handwritten: Metadata Management Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-diagram.svg" alt="Diagram: Metadata Management Strategy" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-diagram.svg" alt="Diagram: Metadata Management Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-sticky.svg" alt="Sticky Note: Metadata Management Strategy" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/metadata-management-strategy-sticky.svg" alt="Sticky Note: Metadata Management Strategy" width="30%">
 </a>
 
 
@@ -1049,14 +1049,14 @@ Drift detection in AI systems requires monitoring multiple layers: data, concept
 
 ### Drift Detection Methods
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-handwritten.svg" alt="Handwritten: Drift Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-handwritten.svg" alt="Handwritten: Drift Detection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-diagram.svg" alt="Diagram: Drift Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-diagram.svg" alt="Diagram: Drift Detection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-sticky.svg" alt="Sticky Note: Drift Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/drift-detection-methods-sticky.svg" alt="Sticky Note: Drift Detection Methods" width="30%">
 </a>
 
 
@@ -1070,14 +1070,14 @@ Drift detection in AI systems requires monitoring multiple layers: data, concept
 
 ### DriftDetector Implementation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-handwritten.svg" alt="Handwritten: DriftDetector Implementation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-handwritten.svg" alt="Handwritten: DriftDetector Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-diagram.svg" alt="Diagram: DriftDetector Implementation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-diagram.svg" alt="Diagram: DriftDetector Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-sticky.svg" alt="Sticky Note: DriftDetector Implementation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/driftdetector-implementation-sticky.svg" alt="Sticky Note: DriftDetector Implementation" width="30%">
 </a>
 
 
@@ -1245,14 +1245,14 @@ class DriftDetector {
 
 ### Understanding Prompt Drift
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-handwritten.svg" alt="Handwritten: Understanding Prompt Drift" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-handwritten.svg" alt="Handwritten: Understanding Prompt Drift" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-diagram.svg" alt="Diagram: Understanding Prompt Drift" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-diagram.svg" alt="Diagram: Understanding Prompt Drift" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-sticky.svg" alt="Sticky Note: Understanding Prompt Drift" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/understanding-prompt-drift-sticky.svg" alt="Sticky Note: Understanding Prompt Drift" width="30%">
 </a>
 
 
@@ -1273,14 +1273,14 @@ Testing AI systems requires a multi-layered approach that covers prompt correctn
 
 ### Testing Categories
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-handwritten.svg" alt="Handwritten: Testing Categories" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-handwritten.svg" alt="Handwritten: Testing Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-diagram.svg" alt="Diagram: Testing Categories" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-diagram.svg" alt="Diagram: Testing Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-sticky.svg" alt="Sticky Note: Testing Categories" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/testing-categories-sticky.svg" alt="Sticky Note: Testing Categories" width="30%">
 </a>
 
 
@@ -1372,14 +1372,14 @@ class AITestSuite {
 
 ### Test Examples by Category
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-handwritten.svg" alt="Handwritten: Test Examples by Category" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-handwritten.svg" alt="Handwritten: Test Examples by Category" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-diagram.svg" alt="Diagram: Test Examples by Category" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-diagram.svg" alt="Diagram: Test Examples by Category" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-sticky.svg" alt="Sticky Note: Test Examples by Category" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/test-examples-by-category-sticky.svg" alt="Sticky Note: Test Examples by Category" width="30%">
 </a>
 
 
@@ -1398,14 +1398,14 @@ class AITestSuite {
 
 ### Automated Eval Gate Configuration
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-handwritten.svg" alt="Handwritten: Automated Eval Gate Configuration" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-handwritten.svg" alt="Handwritten: Automated Eval Gate Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-diagram.svg" alt="Diagram: Automated Eval Gate Configuration" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-diagram.svg" alt="Diagram: Automated Eval Gate Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-sticky.svg" alt="Sticky Note: Automated Eval Gate Configuration" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/automated-eval-gate-configuration-sticky.svg" alt="Sticky Note: Automated Eval Gate Configuration" width="30%">
 </a>
 
 
@@ -1453,14 +1453,14 @@ AI systems require specialized incident response playbooks for each failure mode
 
 ### Incident Response Playbooks
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-handwritten.svg" alt="Handwritten: Incident Response Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-handwritten.svg" alt="Handwritten: Incident Response Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-diagram.svg" alt="Diagram: Incident Response Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-diagram.svg" alt="Diagram: Incident Response Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-sticky.svg" alt="Sticky Note: Incident Response Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-playbooks-sticky.svg" alt="Sticky Note: Incident Response Playbooks" width="30%">
 </a>
 
 
@@ -1474,14 +1474,14 @@ AI systems require specialized incident response playbooks for each failure mode
 
 ### Incident Response Automation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-handwritten.svg" alt="Handwritten: Incident Response Automation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-handwritten.svg" alt="Handwritten: Incident Response Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-diagram.svg" alt="Diagram: Incident Response Automation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-diagram.svg" alt="Diagram: Incident Response Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-sticky.svg" alt="Sticky Note: Incident Response Automation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/incident-response-automation-sticky.svg" alt="Sticky Note: Incident Response Automation" width="30%">
 </a>
 
 
@@ -1915,14 +1915,14 @@ Test your understanding of MLOps for AI engineering concepts.
 
 ### Question 1
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-handwritten.svg" alt="Handwritten: Question 1" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-handwritten.svg" alt="Handwritten: Question 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-diagram.svg" alt="Diagram: Question 1" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-diagram.svg" alt="Diagram: Question 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-sticky.svg" alt="Sticky Note: Question 1" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-1-sticky.svg" alt="Sticky Note: Question 1" width="30%">
 </a>
 
 Which of the following is a key difference between traditional MLOps and AI engineering MLOps?
@@ -1934,14 +1934,14 @@ D) AI engineering MLOps does not require CI/CD pipelines
 
 ### Question 2
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-handwritten.svg" alt="Handwritten: Question 2" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-handwritten.svg" alt="Handwritten: Question 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-diagram.svg" alt="Diagram: Question 2" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-diagram.svg" alt="Diagram: Question 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-sticky.svg" alt="Sticky Note: Question 2" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-2-sticky.svg" alt="Sticky Note: Question 2" width="30%">
 </a>
 
 A prompt version achieves a 92% accuracy score in staging but drops to 84% in production after 2 weeks. What type of drift is this?
@@ -1953,14 +1953,14 @@ D) Embedding drift
 
 ### Question 3
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-handwritten.svg" alt="Handwritten: Question 3" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-handwritten.svg" alt="Handwritten: Question 3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-diagram.svg" alt="Diagram: Question 3" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-diagram.svg" alt="Diagram: Question 3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-sticky.svg" alt="Sticky Note: Question 3" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-3-sticky.svg" alt="Sticky Note: Question 3" width="30%">
 </a>
 
 In the CI/CD pipeline described in this chapter, what happens if a prompt variant fails the evaluation gate?
@@ -1972,14 +1972,14 @@ D) The previous prompt version is automatically rolled back
 
 ### Question 4
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-handwritten.svg" alt="Handwritten: Question 4" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-handwritten.svg" alt="Handwritten: Question 4" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-diagram.svg" alt="Diagram: Question 4" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-diagram.svg" alt="Diagram: Question 4" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-sticky.svg" alt="Sticky Note: Question 4" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-4-sticky.svg" alt="Sticky Note: Question 4" width="30%">
 </a>
 
 Which drift detection method uses Population Stability Index (PSI)?
@@ -1991,14 +1991,14 @@ D) Embedding drift detection
 
 ### Question 5
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-handwritten.svg" alt="Handwritten: Question 5" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-handwritten.svg" alt="Handwritten: Question 5" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-diagram.svg" alt="Diagram: Question 5" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-diagram.svg" alt="Diagram: Question 5" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-sticky.svg" alt="Sticky Note: Question 5" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/question-5-sticky.svg" alt="Sticky Note: Question 5" width="30%">
 </a>
 
 What is the correct first action for a safety incident (sev1)?
@@ -2010,14 +2010,14 @@ D) Notify stakeholders via email
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/11-mlops-for-ai-engineering/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 

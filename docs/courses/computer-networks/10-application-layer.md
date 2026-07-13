@@ -39,14 +39,14 @@
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ The application layer is Layer 7 of the OSI model and the top of the TCP/IP mode
 
 ### 10.1.1 Client-Server Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-handwritten.svg" alt="Handwritten: 10.1.1 Client-Server Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-handwritten.svg" alt="Handwritten: 10.1.1 Client-Server Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-diagram.svg" alt="Diagram: 10.1.1 Client-Server Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-diagram.svg" alt="Diagram: 10.1.1 Client-Server Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-sticky.svg" alt="Sticky Note: 10.1.1 Client-Server Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-sticky.svg" alt="Sticky Note: 10.1.1 Client-Server Architecture" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ SERVER:
 
 ### 10.1.2 Peer-to-Peer (P2P) Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-handwritten.svg" alt="Handwritten: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-handwritten.svg" alt="Handwritten: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-diagram.svg" alt="Diagram: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-diagram.svg" alt="Diagram: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-sticky.svg" alt="Sticky Note: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-sticky.svg" alt="Sticky Note: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ TRACKER:
 
 ### 10.1.3 Client-Server vs P2P Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-handwritten.svg" alt="Handwritten: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-handwritten.svg" alt="Handwritten: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-diagram.svg" alt="Diagram: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-diagram.svg" alt="Diagram: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-sticky.svg" alt="Sticky Note: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-sticky.svg" alt="Sticky Note: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ TRACKER:
 
 ### 10.1.4 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-handwritten.svg" alt="Handwritten: 10.1.4 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-handwritten.svg" alt="Handwritten: 10.1.4 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-diagram.svg" alt="Diagram: 10.1.4 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-diagram.svg" alt="Diagram: 10.1.4 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-sticky.svg" alt="Sticky Note: 10.1.4 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-sticky.svg" alt="Sticky Note: 10.1.4 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ TRACKER:
 
 ### 10.1.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 10.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 10.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-diagram.svg" alt="Diagram: 10.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-diagram.svg" alt="Diagram: 10.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 10.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 10.1.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ TRACKER:
 
 ### 10.1.6 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-handwritten.svg" alt="Handwritten: 10.1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-handwritten.svg" alt="Handwritten: 10.1.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-diagram.svg" alt="Diagram: 10.1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-diagram.svg" alt="Diagram: 10.1.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-sticky.svg" alt="Sticky Note: 10.1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-sticky.svg" alt="Sticky Note: 10.1.6 Edge Cases" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ HTTP is the foundation of data communication on the Web. It is a stateless, appl
 
 ### 10.2.1 HTTP/1.0 and HTTP/1.1
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-handwritten.svg" alt="Handwritten: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-handwritten.svg" alt="Handwritten: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-diagram.svg" alt="Diagram: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-diagram.svg" alt="Diagram: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-sticky.svg" alt="Sticky Note: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-sticky.svg" alt="Sticky Note: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
 </a>
 
 
@@ -595,14 +595,14 @@ if __name__ == "__main__":
 
 ### 10.2.2 HTTP/2
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-handwritten.svg" alt="Handwritten: 10.2.2 HTTP/2" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-handwritten.svg" alt="Handwritten: 10.2.2 HTTP/2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-diagram.svg" alt="Diagram: 10.2.2 HTTP/2" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-diagram.svg" alt="Diagram: 10.2.2 HTTP/2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-sticky.svg" alt="Sticky Note: 10.2.2 HTTP/2" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-sticky.svg" alt="Sticky Note: 10.2.2 HTTP/2" width="30%">
 </a>
 
 
@@ -844,14 +844,14 @@ def build_get_request_frame(stream_id: int, path: str) -> Http2Frame:
 
 ### 10.2.3 HTTP/3
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-handwritten.svg" alt="Handwritten: 10.2.3 HTTP/3" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-handwritten.svg" alt="Handwritten: 10.2.3 HTTP/3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-diagram.svg" alt="Diagram: 10.2.3 HTTP/3" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-diagram.svg" alt="Diagram: 10.2.3 HTTP/3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-sticky.svg" alt="Sticky Note: 10.2.3 HTTP/3" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-sticky.svg" alt="Sticky Note: 10.2.3 HTTP/3" width="30%">
 </a>
 
 
@@ -1022,14 +1022,14 @@ class HTTPClient {
 
 ### 10.3.1 DNS Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-handwritten.svg" alt="Handwritten: 10.3.1 DNS Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-handwritten.svg" alt="Handwritten: 10.3.1 DNS Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-diagram.svg" alt="Diagram: 10.3.1 DNS Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-diagram.svg" alt="Diagram: 10.3.1 DNS Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-sticky.svg" alt="Sticky Note: 10.3.1 DNS Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-sticky.svg" alt="Sticky Note: 10.3.1 DNS Architecture" width="30%">
 </a>
 
 
@@ -1079,14 +1079,14 @@ Root (.)
 
 ### 10.3.2 DNS Resolution Process
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-handwritten.svg" alt="Handwritten: 10.3.2 DNS Resolution Process" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-handwritten.svg" alt="Handwritten: 10.3.2 DNS Resolution Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-diagram.svg" alt="Diagram: 10.3.2 DNS Resolution Process" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-diagram.svg" alt="Diagram: 10.3.2 DNS Resolution Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-sticky.svg" alt="Sticky Note: 10.3.2 DNS Resolution Process" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-sticky.svg" alt="Sticky Note: 10.3.2 DNS Resolution Process" width="30%">
 </a>
 
 
@@ -1152,14 +1152,14 @@ FUNCTION dns_resolve(domain, type="A"):
 
 ### 10.3.3 DNS Security
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-handwritten.svg" alt="Handwritten: 10.3.3 DNS Security" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-handwritten.svg" alt="Handwritten: 10.3.3 DNS Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-diagram.svg" alt="Diagram: 10.3.3 DNS Security" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-diagram.svg" alt="Diagram: 10.3.3 DNS Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-sticky.svg" alt="Sticky Note: 10.3.3 DNS Security" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-sticky.svg" alt="Sticky Note: 10.3.3 DNS Security" width="30%">
 </a>
 
 
@@ -1435,14 +1435,14 @@ class DNSResolver {
 
 ### 10.4.1 SMTP → Simple Mail Transfer Protocol
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-handwritten.svg" alt="Handwritten: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-handwritten.svg" alt="Handwritten: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-diagram.svg" alt="Diagram: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-diagram.svg" alt="Diagram: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-sticky.svg" alt="Sticky Note: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-sticky.svg" alt="Sticky Note: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
 </a>
 
 
@@ -1683,14 +1683,14 @@ if __name__ == "__main__":
 
 ### 10.4.2 POP3 → Post Office Protocol v3
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-handwritten.svg" alt="Handwritten: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-handwritten.svg" alt="Handwritten: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-diagram.svg" alt="Diagram: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-diagram.svg" alt="Diagram: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-sticky.svg" alt="Sticky Note: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-sticky.svg" alt="Sticky Note: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
 </a>
 
 
@@ -1750,14 +1750,14 @@ FUNCTION pop3_retrieve(server, port, user, password):
 
 ### 10.4.3 IMAP → Internet Message Access Protocol
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-handwritten.svg" alt="Handwritten: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-handwritten.svg" alt="Handwritten: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-diagram.svg" alt="Diagram: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-diagram.svg" alt="Diagram: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-sticky.svg" alt="Sticky Note: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-sticky.svg" alt="Sticky Note: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
 </a>
 
 
@@ -1812,14 +1812,14 @@ FUNCTION imap_fetch_inbox(server, port, user, password):
 
 ### 10.4.4 Email Protocols Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-handwritten.svg" alt="Handwritten: 10.4.4 Email Protocols Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-handwritten.svg" alt="Handwritten: 10.4.4 Email Protocols Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-diagram.svg" alt="Diagram: 10.4.4 Email Protocols Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-diagram.svg" alt="Diagram: 10.4.4 Email Protocols Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-sticky.svg" alt="Sticky Note: 10.4.4 Email Protocols Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-sticky.svg" alt="Sticky Note: 10.4.4 Email Protocols Comparison" width="30%">
 </a>
 
 
@@ -1928,14 +1928,14 @@ class SMTPValidator {
 
 ### 10.5.1 FTP Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-handwritten.svg" alt="Handwritten: 10.5.1 FTP Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-handwritten.svg" alt="Handwritten: 10.5.1 FTP Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-diagram.svg" alt="Diagram: 10.5.1 FTP Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-diagram.svg" alt="Diagram: 10.5.1 FTP Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-sticky.svg" alt="Sticky Note: 10.5.1 FTP Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-sticky.svg" alt="Sticky Note: 10.5.1 FTP Architecture" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ FTP (RFC 959) uses two separate connections:
 
 ### 10.5.2 Active vs Passive Mode
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-handwritten.svg" alt="Handwritten: 10.5.2 Active vs Passive Mode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-handwritten.svg" alt="Handwritten: 10.5.2 Active vs Passive Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-diagram.svg" alt="Diagram: 10.5.2 Active vs Passive Mode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-diagram.svg" alt="Diagram: 10.5.2 Active vs Passive Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-sticky.svg" alt="Sticky Note: 10.5.2 Active vs Passive Mode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-sticky.svg" alt="Sticky Note: 10.5.2 Active vs Passive Mode" width="30%">
 </a>
 
 
@@ -2424,14 +2424,14 @@ if __name__ == "__main__":
 
 ### 10.7.1 DORA Process
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-handwritten.svg" alt="Handwritten: 10.7.1 DORA Process" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-handwritten.svg" alt="Handwritten: 10.7.1 DORA Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-diagram.svg" alt="Diagram: 10.7.1 DORA Process" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-diagram.svg" alt="Diagram: 10.7.1 DORA Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-sticky.svg" alt="Sticky Note: 10.7.1 DORA Process" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-sticky.svg" alt="Sticky Note: 10.7.1 DORA Process" width="30%">
 </a>
 
 
@@ -3170,14 +3170,14 @@ HTTP/3 (QUIC):
 
 ### Protocol Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-handwritten.svg" alt="Handwritten: Protocol Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-handwritten.svg" alt="Handwritten: Protocol Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-diagram.svg" alt="Diagram: Protocol Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-diagram.svg" alt="Diagram: Protocol Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-sticky.svg" alt="Sticky Note: Protocol Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-sticky.svg" alt="Sticky Note: Protocol Comparison Table" width="30%">
 </a>
 
 
@@ -3199,14 +3199,14 @@ HTTP/3 (QUIC):
 
 ### Application Layer vs Other Layers
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-handwritten.svg" alt="Handwritten: Application Layer vs Other Layers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-handwritten.svg" alt="Handwritten: Application Layer vs Other Layers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-diagram.svg" alt="Diagram: Application Layer vs Other Layers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-diagram.svg" alt="Diagram: Application Layer vs Other Layers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-sticky.svg" alt="Sticky Note: Application Layer vs Other Layers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-sticky.svg" alt="Sticky Note: Application Layer vs Other Layers" width="30%">
 </a>
 
 
@@ -3222,14 +3222,14 @@ HTTP/3 (QUIC):
 
 ### Application Domain Matrix
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-handwritten.svg" alt="Handwritten: Application Domain Matrix" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-handwritten.svg" alt="Handwritten: Application Domain Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-diagram.svg" alt="Diagram: Application Domain Matrix" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-diagram.svg" alt="Diagram: Application Domain Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-sticky.svg" alt="Sticky Note: Application Domain Matrix" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-sticky.svg" alt="Sticky Note: Application Domain Matrix" width="30%">
 </a>
 
 
@@ -3247,14 +3247,14 @@ HTTP/3 (QUIC):
 
 ### Quick Reference: HTTP Status Codes
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-handwritten.svg" alt="Handwritten: Quick Reference: HTTP Status Codes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-handwritten.svg" alt="Handwritten: Quick Reference: HTTP Status Codes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-diagram.svg" alt="Diagram: Quick Reference: HTTP Status Codes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-diagram.svg" alt="Diagram: Quick Reference: HTTP Status Codes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-sticky.svg" alt="Sticky Note: Quick Reference: HTTP Status Codes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-sticky.svg" alt="Sticky Note: Quick Reference: HTTP Status Codes" width="30%">
 </a>
 
 
@@ -3283,14 +3283,14 @@ HTTP/3 (QUIC):
 
 ### Q1: Difference between DNS Recursive and Iterative Resolution?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-handwritten.svg" alt="Handwritten: Difference between DNS Recursive and Iterative Resolution?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-handwritten.svg" alt="Handwritten: Difference between DNS Recursive and Iterative Resolution?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-diagram.svg" alt="Diagram: Difference between DNS Recursive and Iterative Resolution?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-diagram.svg" alt="Diagram: Difference between DNS Recursive and Iterative Resolution?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-sticky.svg" alt="Sticky Note: Difference between DNS Recursive and Iterative Resolution?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-sticky.svg" alt="Sticky Note: Difference between DNS Recursive and Iterative Resolution?" width="30%">
 </a>
 
 
@@ -3309,14 +3309,14 @@ HTTP/3 (QUIC):
 
 ### Q2: Difference between HTTP Persistent and Non-Persistent Connections?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-handwritten.svg" alt="Handwritten: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-handwritten.svg" alt="Handwritten: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-diagram.svg" alt="Diagram: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-diagram.svg" alt="Diagram: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-sticky.svg" alt="Sticky Note: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-sticky.svg" alt="Sticky Note: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
 </a>
 
 
@@ -3333,14 +3333,14 @@ HTTP/3 (QUIC):
 
 ### Q3: Difference between SMTP and HTTP?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-handwritten.svg" alt="Handwritten: Difference between SMTP and HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-handwritten.svg" alt="Handwritten: Difference between SMTP and HTTP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-diagram.svg" alt="Diagram: Difference between SMTP and HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-diagram.svg" alt="Diagram: Difference between SMTP and HTTP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-sticky.svg" alt="Sticky Note: Difference between SMTP and HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-sticky.svg" alt="Sticky Note: Difference between SMTP and HTTP?" width="30%">
 </a>
 
 
@@ -3359,14 +3359,14 @@ HTTP/3 (QUIC):
 
 ### Q4: Difference between WebSocket and HTTP?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-handwritten.svg" alt="Handwritten: Difference between WebSocket and HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-handwritten.svg" alt="Handwritten: Difference between WebSocket and HTTP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-diagram.svg" alt="Diagram: Difference between WebSocket and HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-diagram.svg" alt="Diagram: Difference between WebSocket and HTTP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-sticky.svg" alt="Sticky Note: Difference between WebSocket and HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-sticky.svg" alt="Sticky Note: Difference between WebSocket and HTTP?" width="30%">
 </a>
 
 
@@ -3387,14 +3387,14 @@ HTTP/3 (QUIC):
 
 ### Q5: How does FTP Active Mode differ from Passive Mode?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-handwritten.svg" alt="Handwritten: How does FTP Active Mode differ from Passive Mode?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-handwritten.svg" alt="Handwritten: How does FTP Active Mode differ from Passive Mode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-diagram.svg" alt="Diagram: How does FTP Active Mode differ from Passive Mode?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-diagram.svg" alt="Diagram: How does FTP Active Mode differ from Passive Mode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-sticky.svg" alt="Sticky Note: How does FTP Active Mode differ from Passive Mode?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-sticky.svg" alt="Sticky Note: How does FTP Active Mode differ from Passive Mode?" width="30%">
 </a>
 
 
@@ -3402,14 +3402,14 @@ HTTP/3 (QUIC):
 
 ### Q6: What is DNS Caching and why is TTL important?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-handwritten.svg" alt="Handwritten: What is DNS Caching and why is TTL important?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-handwritten.svg" alt="Handwritten: What is DNS Caching and why is TTL important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-diagram.svg" alt="Diagram: What is DNS Caching and why is TTL important?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-diagram.svg" alt="Diagram: What is DNS Caching and why is TTL important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-sticky.svg" alt="Sticky Note: What is DNS Caching and why is TTL important?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-sticky.svg" alt="Sticky Note: What is DNS Caching and why is TTL important?" width="30%">
 </a>
 
 
@@ -3417,14 +3417,14 @@ HTTP/3 (QUIC):
 
 ### Q7: What is the N+1 Query Problem?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-handwritten.svg" alt="Handwritten: What is the N+1 Query Problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-handwritten.svg" alt="Handwritten: What is the N+1 Query Problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-diagram.svg" alt="Diagram: What is the N+1 Query Problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-diagram.svg" alt="Diagram: What is the N+1 Query Problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-sticky.svg" alt="Sticky Note: What is the N+1 Query Problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-sticky.svg" alt="Sticky Note: What is the N+1 Query Problem?" width="30%">
 </a>
 
 
@@ -3434,14 +3434,14 @@ HTTP/3 (QUIC):
 
 ### Q8: What is HTTP Request Smuggling?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-handwritten.svg" alt="Handwritten: What is HTTP Request Smuggling?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-handwritten.svg" alt="Handwritten: What is HTTP Request Smuggling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-diagram.svg" alt="Diagram: What is HTTP Request Smuggling?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-diagram.svg" alt="Diagram: What is HTTP Request Smuggling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-sticky.svg" alt="Sticky Note: What is HTTP Request Smuggling?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-sticky.svg" alt="Sticky Note: What is HTTP Request Smuggling?" width="30%">
 </a>
 
 
@@ -3449,14 +3449,14 @@ HTTP/3 (QUIC):
 
 ### Q9: How does HTTPS differ from HTTP?
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-handwritten.svg" alt="Handwritten: How does HTTPS differ from HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-handwritten.svg" alt="Handwritten: How does HTTPS differ from HTTP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-diagram.svg" alt="Diagram: How does HTTPS differ from HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-diagram.svg" alt="Diagram: How does HTTPS differ from HTTP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-sticky.svg" alt="Sticky Note: How does HTTPS differ from HTTP?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-sticky.svg" alt="Sticky Note: How does HTTPS differ from HTTP?" width="30%">
 </a>
 
 
@@ -3464,14 +3464,14 @@ HTTP/3 (QUIC):
 
 ### Q10: Explain the Three-Way Handshake and its Application Layer Impact
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-handwritten.svg" alt="Handwritten: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-handwritten.svg" alt="Handwritten: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-diagram.svg" alt="Diagram: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-diagram.svg" alt="Diagram: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-sticky.svg" alt="Sticky Note: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-sticky.svg" alt="Sticky Note: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
 </a>
 
 
@@ -3483,14 +3483,14 @@ HTTP/3 (QUIC):
 
 ### Nginx and Apache (HTTP Servers)
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-handwritten.svg" alt="Handwritten: Nginx and Apache (HTTP Servers)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-handwritten.svg" alt="Handwritten: Nginx and Apache (HTTP Servers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-diagram.svg" alt="Diagram: Nginx and Apache (HTTP Servers)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-diagram.svg" alt="Diagram: Nginx and Apache (HTTP Servers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-sticky.svg" alt="Sticky Note: Nginx and Apache (HTTP Servers)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-sticky.svg" alt="Sticky Note: Nginx and Apache (HTTP Servers)" width="30%">
 </a>
 
 
@@ -3509,14 +3509,14 @@ HTTP/3 (QUIC):
 
 ### Chrome HTTP/3 Implementation
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-handwritten.svg" alt="Handwritten: Chrome HTTP/3 Implementation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-handwritten.svg" alt="Handwritten: Chrome HTTP/3 Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-diagram.svg" alt="Diagram: Chrome HTTP/3 Implementation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-diagram.svg" alt="Diagram: Chrome HTTP/3 Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-sticky.svg" alt="Sticky Note: Chrome HTTP/3 Implementation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-sticky.svg" alt="Sticky Note: Chrome HTTP/3 Implementation" width="30%">
 </a>
 
 
@@ -3529,14 +3529,14 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 
 ### Cloudflare DNS (1.1.1.1)
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-handwritten.svg" alt="Handwritten: Cloudflare DNS (1.1.1.1)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-handwritten.svg" alt="Handwritten: Cloudflare DNS (1.1.1.1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-diagram.svg" alt="Diagram: Cloudflare DNS (1.1.1.1)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-diagram.svg" alt="Diagram: Cloudflare DNS (1.1.1.1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-sticky.svg" alt="Sticky Note: Cloudflare DNS (1.1.1.1)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-sticky.svg" alt="Sticky Note: Cloudflare DNS (1.1.1.1)" width="30%">
 </a>
 
 
@@ -3549,14 +3549,14 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 
 ### Sendmail vs Postfix (MTA)
 
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-handwritten.svg" alt="Handwritten: Sendmail vs Postfix (MTA)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-handwritten.svg" alt="Handwritten: Sendmail vs Postfix (MTA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-diagram.svg" alt="Diagram: Sendmail vs Postfix (MTA)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-diagram.svg" alt="Diagram: Sendmail vs Postfix (MTA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-sticky.svg" alt="Sticky Note: Sendmail vs Postfix (MTA)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-sticky.svg" alt="Sticky Note: Sendmail vs Postfix (MTA)" width="30%">
 </a>
 
 

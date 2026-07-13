@@ -43,14 +43,14 @@ flowchart LR
 
 ### 6.1 What is a Pushdown Automaton?
 
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-handwritten.svg" alt="Handwritten: 6.1 What is a Pushdown Automaton?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-handwritten.svg" alt="Handwritten: 6.1 What is a Pushdown Automaton?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-diagram.svg" alt="Diagram: 6.1 What is a Pushdown Automaton?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-diagram.svg" alt="Diagram: 6.1 What is a Pushdown Automaton?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-sticky.svg" alt="Sticky Note: 6.1 What is a Pushdown Automaton?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-1-what-is-a-pushdown-automaton-sticky.svg" alt="Sticky Note: 6.1 What is a Pushdown Automaton?" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ The stack is a powerful addition: it provides unlimited memory, but the LIFO res
 
 ### 6.2 Formal Definition of a PDA
 
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-handwritten.svg" alt="Handwritten: 6.2 Formal Definition of a PDA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-handwritten.svg" alt="Handwritten: 6.2 Formal Definition of a PDA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-diagram.svg" alt="Diagram: 6.2 Formal Definition of a PDA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-diagram.svg" alt="Diagram: 6.2 Formal Definition of a PDA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-sticky.svg" alt="Sticky Note: 6.2 Formal Definition of a PDA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-2-formal-definition-of-a-pda-sticky.svg" alt="Sticky Note: 6.2 Formal Definition of a PDA" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ A transition Î´(q, a, X) contains (p, Y), meaning:
 
 ### 6.3 PDA Computation
 
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-handwritten.svg" alt="Handwritten: 6.3 PDA Computation" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-handwritten.svg" alt="Handwritten: 6.3 PDA Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-diagram.svg" alt="Diagram: 6.3 PDA Computation" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-diagram.svg" alt="Diagram: 6.3 PDA Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-sticky.svg" alt="Sticky Note: 6.3 PDA Computation" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-3-pda-computation-sticky.svg" alt="Sticky Note: 6.3 PDA Computation" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ Transitions between configurations follow the transition function.
 
 ### 6.4 Deterministic vs Nondeterministic PDA
 
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-handwritten.svg" alt="Handwritten: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-handwritten.svg" alt="Handwritten: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-diagram.svg" alt="Diagram: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-diagram.svg" alt="Diagram: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-sticky.svg" alt="Sticky Note: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-4-deterministic-vs-nondeterministic-pda-sticky.svg" alt="Sticky Note: 6.4 Deterministic vs Nondeterministic PDA" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ A PDA is **deterministic (DPDA)** if for each (q, a, X) where a âˆˆ Î£ âˆ
 
 ### 6.5 Equivalence of PDA and CFG
 
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-handwritten.svg" alt="Handwritten: 6.5 Equivalence of PDA and CFG" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-handwritten.svg" alt="Handwritten: 6.5 Equivalence of PDA and CFG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-diagram.svg" alt="Diagram: 6.5 Equivalence of PDA and CFG" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-diagram.svg" alt="Diagram: 6.5 Equivalence of PDA and CFG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-sticky.svg" alt="Sticky Note: 6.5 Equivalence of PDA and CFG" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-5-equivalence-of-pda-and-cfg-sticky.svg" alt="Sticky Note: 6.5 Equivalence of PDA and CFG" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ This **top-down** construction produces an NPDA with one state.
 
 ### 6.6 PDA Design Patterns
 
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-handwritten.svg" alt="Handwritten: 6.6 PDA Design Patterns" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-handwritten.svg" alt="Handwritten: 6.6 PDA Design Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-diagram.svg" alt="Diagram: 6.6 PDA Design Patterns" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-diagram.svg" alt="Diagram: 6.6 PDA Design Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-sticky.svg" alt="Sticky Note: 6.6 PDA Design Patterns" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/07-pda/6-6-pda-design-patterns-sticky.svg" alt="Sticky Note: 6.6 PDA Design Patterns" width="30%">
 </a>
 
 

@@ -68,14 +68,14 @@ A **robot** is a physically embodied agent that perceives its environment throug
 
 ### 14.1.1 The Sense-Plan-Act Loop
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-handwritten.svg" alt="Handwritten: 14.1.1 The Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-handwritten.svg" alt="Handwritten: 14.1.1 The Sense-Plan-Act Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-diagram.svg" alt="Diagram: 14.1.1 The Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-diagram.svg" alt="Diagram: 14.1.1 The Sense-Plan-Act Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-sticky.svg" alt="Sticky Note: 14.1.1 The Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-1-the-sense-plan-act-loop-sticky.svg" alt="Sticky Note: 14.1.1 The Sense-Plan-Act Loop" width="30%">
 </a>
 
 
@@ -89,14 +89,14 @@ Every robotic system follows a cyclic pipeline:
 
 ### 14.1.2 Algorithm — Sense-Plan-Act Loop
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-handwritten.svg" alt="Handwritten: 14.1.2 Algorithm — Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-handwritten.svg" alt="Handwritten: 14.1.2 Algorithm — Sense-Plan-Act Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-diagram.svg" alt="Diagram: 14.1.2 Algorithm — Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-diagram.svg" alt="Diagram: 14.1.2 Algorithm — Sense-Plan-Act Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-sticky.svg" alt="Sticky Note: 14.1.2 Algorithm — Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-2-algorithm-sense-plan-act-loop-sticky.svg" alt="Sticky Note: 14.1.2 Algorithm — Sense-Plan-Act Loop" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ Output: actuator_commands (motor/throttle/gripper signals)
 
 ### 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-handwritten.svg" alt="Handwritten: 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-handwritten.svg" alt="Handwritten: 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-diagram.svg" alt="Diagram: 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-diagram.svg" alt="Diagram: 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-sticky.svg" alt="Sticky Note: 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-3-dry-run-sense-plan-act-for-a-line-following-robot-sticky.svg" alt="Sticky Note: 14.1.3 Dry Run — Sense-Plan-Act for a Line-Following Robot" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ Output: actuator_commands (motor/throttle/gripper signals)
 
 ### 14.1.4 Python — Sense-Plan-Act Loop
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-handwritten.svg" alt="Handwritten: 14.1.4 Python — Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-handwritten.svg" alt="Handwritten: 14.1.4 Python — Sense-Plan-Act Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-diagram.svg" alt="Diagram: 14.1.4 Python — Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-diagram.svg" alt="Diagram: 14.1.4 Python — Sense-Plan-Act Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-sticky.svg" alt="Sticky Note: 14.1.4 Python — Sense-Plan-Act Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-4-python-sense-plan-act-loop-sticky.svg" alt="Sticky Note: 14.1.4 Python — Sense-Plan-Act Loop" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ if __name__ == "__main__":
 
 ### 14.1.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-diagram.svg" alt="Diagram: 14.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-diagram.svg" alt="Diagram: 14.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.1.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ if __name__ == "__main__":
 
 ### 14.1.6 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.1.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.1.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-diagram.svg" alt="Diagram: 14.1.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-diagram.svg" alt="Diagram: 14.1.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.1.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.1.6 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ if __name__ == "__main__":
 
 ### 14.1.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-handwritten.svg" alt="Handwritten: 14.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-handwritten.svg" alt="Handwritten: 14.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-diagram.svg" alt="Diagram: 14.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-diagram.svg" alt="Diagram: 14.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-sticky.svg" alt="Sticky Note: 14.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-1-7-edge-cases-sticky.svg" alt="Sticky Note: 14.1.7 Edge Cases" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ Robots are classified by their morphology, mobility, and application domain. The
 
 ### 14.3.1 Sensor Taxonomy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-handwritten.svg" alt="Handwritten: 14.3.1 Sensor Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-handwritten.svg" alt="Handwritten: 14.3.1 Sensor Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-diagram.svg" alt="Diagram: 14.3.1 Sensor Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-diagram.svg" alt="Diagram: 14.3.1 Sensor Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-sticky.svg" alt="Sticky Note: 14.3.1 Sensor Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-1-sensor-taxonomy-sticky.svg" alt="Sticky Note: 14.3.1 Sensor Taxonomy" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ Robots are classified by their morphology, mobility, and application domain. The
 
 ### 14.3.2 Sensor Fusion Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-handwritten.svg" alt="Handwritten: 14.3.2 Sensor Fusion Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-handwritten.svg" alt="Handwritten: 14.3.2 Sensor Fusion Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-diagram.svg" alt="Diagram: 14.3.2 Sensor Fusion Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-diagram.svg" alt="Diagram: 14.3.2 Sensor Fusion Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-sticky.svg" alt="Sticky Note: 14.3.2 Sensor Fusion Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-2-sensor-fusion-pipeline-sticky.svg" alt="Sticky Note: 14.3.2 Sensor Fusion Pipeline" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ Robots are classified by their morphology, mobility, and application domain. The
 
 ### 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-handwritten.svg" alt="Handwritten: 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-handwritten.svg" alt="Handwritten: 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-diagram.svg" alt="Diagram: 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-diagram.svg" alt="Diagram: 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-sticky.svg" alt="Sticky Note: 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-3-algorithm-imu-gps-sensor-fusion-complementary-filter-sticky.svg" alt="Sticky Note: 14.3.3 Algorithm — IMU + GPS Sensor Fusion (Complementary Filter)" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ Output: roll, pitch, yaw (fused orientation)
 
 ### 14.3.4 Dry Run — Sensor Fusion for a Drone
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-handwritten.svg" alt="Handwritten: 14.3.4 Dry Run — Sensor Fusion for a Drone" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-handwritten.svg" alt="Handwritten: 14.3.4 Dry Run — Sensor Fusion for a Drone" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-diagram.svg" alt="Diagram: 14.3.4 Dry Run — Sensor Fusion for a Drone" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-diagram.svg" alt="Diagram: 14.3.4 Dry Run — Sensor Fusion for a Drone" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-sticky.svg" alt="Sticky Note: 14.3.4 Dry Run — Sensor Fusion for a Drone" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-4-dry-run-sensor-fusion-for-a-drone-sticky.svg" alt="Sticky Note: 14.3.4 Dry Run — Sensor Fusion for a Drone" width="30%">
 </a>
 
 
@@ -412,14 +412,14 @@ Output: roll, pitch, yaw (fused orientation)
 
 ### 14.3.5 Python — IMU + GPS Sensor Fusion
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-handwritten.svg" alt="Handwritten: 14.3.5 Python — IMU + GPS Sensor Fusion" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-handwritten.svg" alt="Handwritten: 14.3.5 Python — IMU + GPS Sensor Fusion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-diagram.svg" alt="Diagram: 14.3.5 Python — IMU + GPS Sensor Fusion" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-diagram.svg" alt="Diagram: 14.3.5 Python — IMU + GPS Sensor Fusion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-sticky.svg" alt="Sticky Note: 14.3.5 Python — IMU + GPS Sensor Fusion" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-5-python-imu-gps-sensor-fusion-sticky.svg" alt="Sticky Note: 14.3.5 Python — IMU + GPS Sensor Fusion" width="30%">
 </a>
 
 
@@ -476,14 +476,14 @@ for step in range(200):
 
 ### 14.3.6 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-handwritten.svg" alt="Handwritten: 14.3.6 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-handwritten.svg" alt="Handwritten: 14.3.6 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-diagram.svg" alt="Diagram: 14.3.6 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-diagram.svg" alt="Diagram: 14.3.6 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-sticky.svg" alt="Sticky Note: 14.3.6 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-6-complexity-analysis-sticky.svg" alt="Sticky Note: 14.3.6 Complexity Analysis" width="30%">
 </a>
 
 
@@ -499,14 +499,14 @@ for step in range(200):
 
 ### 14.3.7 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.3.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.3.7 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-diagram.svg" alt="Diagram: 14.3.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-diagram.svg" alt="Diagram: 14.3.7 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.3.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.3.7 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@ for step in range(200):
 
 ### 14.3.8 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-handwritten.svg" alt="Handwritten: 14.3.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-handwritten.svg" alt="Handwritten: 14.3.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-diagram.svg" alt="Diagram: 14.3.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-diagram.svg" alt="Diagram: 14.3.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-sticky.svg" alt="Sticky Note: 14.3.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-3-8-edge-cases-sticky.svg" alt="Sticky Note: 14.3.8 Edge Cases" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ for step in range(200):
 
 ### 14.4.1 Actuator Taxonomy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-handwritten.svg" alt="Handwritten: 14.4.1 Actuator Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-handwritten.svg" alt="Handwritten: 14.4.1 Actuator Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-diagram.svg" alt="Diagram: 14.4.1 Actuator Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-diagram.svg" alt="Diagram: 14.4.1 Actuator Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-sticky.svg" alt="Sticky Note: 14.4.1 Actuator Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-1-actuator-taxonomy-sticky.svg" alt="Sticky Note: 14.4.1 Actuator Taxonomy" width="30%">
 </a>
 
 
@@ -572,14 +572,14 @@ for step in range(200):
 
 ### 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-handwritten.svg" alt="Handwritten: 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-handwritten.svg" alt="Handwritten: 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-diagram.svg" alt="Diagram: 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-diagram.svg" alt="Diagram: 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-sticky.svg" alt="Sticky Note: 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-2-algorithm-dc-motor-speed-control-open-loop-closed-loop-sticky.svg" alt="Sticky Note: 14.4.2 Algorithm — DC Motor Speed Control (Open-Loop + Closed-Loop)" width="30%">
 </a>
 
 
@@ -602,14 +602,14 @@ Output: pwm_duty_cycle (0-255)
 
 ### 14.4.3 Dry Run — DC Motor Speed Regulation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-handwritten.svg" alt="Handwritten: 14.4.3 Dry Run — DC Motor Speed Regulation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-handwritten.svg" alt="Handwritten: 14.4.3 Dry Run — DC Motor Speed Regulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-diagram.svg" alt="Diagram: 14.4.3 Dry Run — DC Motor Speed Regulation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-diagram.svg" alt="Diagram: 14.4.3 Dry Run — DC Motor Speed Regulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-sticky.svg" alt="Sticky Note: 14.4.3 Dry Run — DC Motor Speed Regulation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-3-dry-run-dc-motor-speed-regulation-sticky.svg" alt="Sticky Note: 14.4.3 Dry Run — DC Motor Speed Regulation" width="30%">
 </a>
 
 
@@ -630,14 +630,14 @@ Output: pwm_duty_cycle (0-255)
 
 ### 14.4.4 Python — DC Motor PID Controller
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-handwritten.svg" alt="Handwritten: 14.4.4 Python — DC Motor PID Controller" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-handwritten.svg" alt="Handwritten: 14.4.4 Python — DC Motor PID Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-diagram.svg" alt="Diagram: 14.4.4 Python — DC Motor PID Controller" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-diagram.svg" alt="Diagram: 14.4.4 Python — DC Motor PID Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-sticky.svg" alt="Sticky Note: 14.4.4 Python — DC Motor PID Controller" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-4-python-dc-motor-pid-controller-sticky.svg" alt="Sticky Note: 14.4.4 Python — DC Motor PID Controller" width="30%">
 </a>
 
 
@@ -691,14 +691,14 @@ for i in range(100):
 
 ### 14.4.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.4.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.4.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-diagram.svg" alt="Diagram: 14.4.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-diagram.svg" alt="Diagram: 14.4.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.4.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.4.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -714,14 +714,14 @@ for i in range(100):
 
 ### 14.4.6 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.4.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.4.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-diagram.svg" alt="Diagram: 14.4.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-diagram.svg" alt="Diagram: 14.4.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.4.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.4.6 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -736,14 +736,14 @@ for i in range(100):
 
 ### 14.4.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-handwritten.svg" alt="Handwritten: 14.4.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-handwritten.svg" alt="Handwritten: 14.4.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-diagram.svg" alt="Diagram: 14.4.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-diagram.svg" alt="Diagram: 14.4.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-sticky.svg" alt="Sticky Note: 14.4.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-4-7-edge-cases-sticky.svg" alt="Sticky Note: 14.4.7 Edge Cases" width="30%">
 </a>
 
 
@@ -765,14 +765,14 @@ for i in range(100):
 
 ### 14.5.1 The Localization Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-handwritten.svg" alt="Handwritten: 14.5.1 The Localization Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-handwritten.svg" alt="Handwritten: 14.5.1 The Localization Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-diagram.svg" alt="Diagram: 14.5.1 The Localization Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-diagram.svg" alt="Diagram: 14.5.1 The Localization Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-sticky.svg" alt="Sticky Note: 14.5.1 The Localization Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-1-the-localization-pipeline-sticky.svg" alt="Sticky Note: 14.5.1 The Localization Pipeline" width="30%">
 </a>
 
 
@@ -785,14 +785,14 @@ for i in range(100):
 
 ### 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-handwritten.svg" alt="Handwritten: 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-handwritten.svg" alt="Handwritten: 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-diagram.svg" alt="Diagram: 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-diagram.svg" alt="Diagram: 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-sticky.svg" alt="Sticky Note: 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-2-algorithm-monte-carlo-localization-particle-filter-sticky.svg" alt="Sticky Note: 14.5.2 Algorithm — Monte Carlo Localization (Particle Filter)" width="30%">
 </a>
 
 
@@ -821,14 +821,14 @@ Output: X_t (updated particles)
 
 ### 14.5.3 Dry Run — MCL in a 1D Corridor
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-handwritten.svg" alt="Handwritten: 14.5.3 Dry Run — MCL in a 1D Corridor" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-handwritten.svg" alt="Handwritten: 14.5.3 Dry Run — MCL in a 1D Corridor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-diagram.svg" alt="Diagram: 14.5.3 Dry Run — MCL in a 1D Corridor" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-diagram.svg" alt="Diagram: 14.5.3 Dry Run — MCL in a 1D Corridor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-sticky.svg" alt="Sticky Note: 14.5.3 Dry Run — MCL in a 1D Corridor" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-3-dry-run-mcl-in-a-1d-corridor-sticky.svg" alt="Sticky Note: 14.5.3 Dry Run — MCL in a 1D Corridor" width="30%">
 </a>
 
 
@@ -848,14 +848,14 @@ Output: X_t (updated particles)
 
 ### 14.5.4 Python — Monte Carlo Localization (1D)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-handwritten.svg" alt="Handwritten: 14.5.4 Python — Monte Carlo Localization (1D)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-handwritten.svg" alt="Handwritten: 14.5.4 Python — Monte Carlo Localization (1D)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-diagram.svg" alt="Diagram: 14.5.4 Python — Monte Carlo Localization (1D)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-diagram.svg" alt="Diagram: 14.5.4 Python — Monte Carlo Localization (1D)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-sticky.svg" alt="Sticky Note: 14.5.4 Python — Monte Carlo Localization (1D)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-4-python-monte-carlo-localization-1d-sticky.svg" alt="Sticky Note: 14.5.4 Python — Monte Carlo Localization (1D)" width="30%">
 </a>
 
 
@@ -928,14 +928,14 @@ for step in range(10):
 
 ### 14.5.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.5.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.5.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-diagram.svg" alt="Diagram: 14.5.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-diagram.svg" alt="Diagram: 14.5.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.5.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.5.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -951,14 +951,14 @@ for step in range(10):
 
 ### 14.5.6 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.5.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.5.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-diagram.svg" alt="Diagram: 14.5.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-diagram.svg" alt="Diagram: 14.5.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.5.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.5.6 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -971,14 +971,14 @@ for step in range(10):
 
 ### 14.5.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-handwritten.svg" alt="Handwritten: 14.5.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-handwritten.svg" alt="Handwritten: 14.5.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-diagram.svg" alt="Diagram: 14.5.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-diagram.svg" alt="Diagram: 14.5.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-sticky.svg" alt="Sticky Note: 14.5.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-7-edge-cases-sticky.svg" alt="Sticky Note: 14.5.7 Edge Cases" width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ for step in range(10):
 
 ### 14.5.8 Localization Methods Comparison
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-handwritten.svg" alt="Handwritten: 14.5.8 Localization Methods Comparison" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-handwritten.svg" alt="Handwritten: 14.5.8 Localization Methods Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-diagram.svg" alt="Diagram: 14.5.8 Localization Methods Comparison" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-diagram.svg" alt="Diagram: 14.5.8 Localization Methods Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-sticky.svg" alt="Sticky Note: 14.5.8 Localization Methods Comparison" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-5-8-localization-methods-comparison-sticky.svg" alt="Sticky Note: 14.5.8 Localization Methods Comparison" width="30%">
 </a>
 
 
@@ -1030,14 +1030,14 @@ for step in range(10):
 
 ### 14.6.1 The SLAM Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-handwritten.svg" alt="Handwritten: 14.6.1 The SLAM Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-handwritten.svg" alt="Handwritten: 14.6.1 The SLAM Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-diagram.svg" alt="Diagram: 14.6.1 The SLAM Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-diagram.svg" alt="Diagram: 14.6.1 The SLAM Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-sticky.svg" alt="Sticky Note: 14.6.1 The SLAM Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-1-the-slam-pipeline-sticky.svg" alt="Sticky Note: 14.6.1 The SLAM Pipeline" width="30%">
 </a>
 
 
@@ -1051,14 +1051,14 @@ for step in range(10):
 
 ### 14.6.2 Algorithm — EKF-SLAM
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-handwritten.svg" alt="Handwritten: 14.6.2 Algorithm — EKF-SLAM" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-handwritten.svg" alt="Handwritten: 14.6.2 Algorithm — EKF-SLAM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-diagram.svg" alt="Diagram: 14.6.2 Algorithm — EKF-SLAM" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-diagram.svg" alt="Diagram: 14.6.2 Algorithm — EKF-SLAM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-sticky.svg" alt="Sticky Note: 14.6.2 Algorithm — EKF-SLAM" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-2-algorithm-ekf-slam-sticky.svg" alt="Sticky Note: 14.6.2 Algorithm — EKF-SLAM" width="30%">
 </a>
 
 
@@ -1087,14 +1087,14 @@ Output: mu_t, Sigma_t (updated mean and covariance)
 
 ### 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-handwritten.svg" alt="Handwritten: 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-handwritten.svg" alt="Handwritten: 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-diagram.svg" alt="Diagram: 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-diagram.svg" alt="Diagram: 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-sticky.svg" alt="Sticky Note: 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-3-dry-run-ekf-slam-with-2-landmarks-sticky.svg" alt="Sticky Note: 14.6.3 Dry Run — EKF-SLAM with 2 Landmarks" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ Output: mu_t, Sigma_t (updated mean and covariance)
 
 ### 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-handwritten.svg" alt="Handwritten: 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-handwritten.svg" alt="Handwritten: 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-diagram.svg" alt="Diagram: 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-diagram.svg" alt="Diagram: 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-sticky.svg" alt="Sticky Note: 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-4-python-ekf-slam-1d-1-landmark-sticky.svg" alt="Sticky Note: 14.6.4 Python — EKF-SLAM (1D, 1 Landmark)" width="30%">
 </a>
 
 
@@ -1179,14 +1179,14 @@ for step in range(6):
 
 ### 14.6.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 14.6.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-diagram.svg" alt="Diagram: 14.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-diagram.svg" alt="Diagram: 14.6.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 14.6.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1202,14 +1202,14 @@ for step in range(6):
 
 ### 14.6.6 EKF-SLAM vs GraphSLAM
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-handwritten.svg" alt="Handwritten: 14.6.6 EKF-SLAM vs GraphSLAM" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-handwritten.svg" alt="Handwritten: 14.6.6 EKF-SLAM vs GraphSLAM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-diagram.svg" alt="Diagram: 14.6.6 EKF-SLAM vs GraphSLAM" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-diagram.svg" alt="Diagram: 14.6.6 EKF-SLAM vs GraphSLAM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-sticky.svg" alt="Sticky Note: 14.6.6 EKF-SLAM vs GraphSLAM" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-6-ekf-slam-vs-graphslam-sticky.svg" alt="Sticky Note: 14.6.6 EKF-SLAM vs GraphSLAM" width="30%">
 </a>
 
 
@@ -1226,14 +1226,14 @@ for step in range(6):
 
 ### 14.6.7 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.6.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.6.7 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-diagram.svg" alt="Diagram: 14.6.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-diagram.svg" alt="Diagram: 14.6.7 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.6.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.6.7 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1246,14 +1246,14 @@ for step in range(6):
 
 ### 14.6.8 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-handwritten.svg" alt="Handwritten: 14.6.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-handwritten.svg" alt="Handwritten: 14.6.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-diagram.svg" alt="Diagram: 14.6.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-diagram.svg" alt="Diagram: 14.6.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-sticky.svg" alt="Sticky Note: 14.6.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-6-8-edge-cases-sticky.svg" alt="Sticky Note: 14.6.8 Edge Cases" width="30%">
 </a>
 
 
@@ -1273,14 +1273,14 @@ for step in range(6):
 
 ### 14.7.1 Motion Planning Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-handwritten.svg" alt="Handwritten: 14.7.1 Motion Planning Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-handwritten.svg" alt="Handwritten: 14.7.1 Motion Planning Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-diagram.svg" alt="Diagram: 14.7.1 Motion Planning Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-diagram.svg" alt="Diagram: 14.7.1 Motion Planning Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-sticky.svg" alt="Sticky Note: 14.7.1 Motion Planning Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-1-motion-planning-pipeline-sticky.svg" alt="Sticky Note: 14.7.1 Motion Planning Pipeline" width="30%">
 </a>
 
 
@@ -1293,14 +1293,14 @@ for step in range(6):
 
 ### 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-handwritten.svg" alt="Handwritten: 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-handwritten.svg" alt="Handwritten: 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-diagram.svg" alt="Diagram: 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-diagram.svg" alt="Diagram: 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-sticky.svg" alt="Sticky Note: 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-2-algorithm-rrt-rapidly-exploring-random-tree-sticky.svg" alt="Sticky Note: 14.7.2 Algorithm — RRT (Rapidly-Exploring Random Tree)" width="30%">
 </a>
 
 
@@ -1327,14 +1327,14 @@ Output: path (list of configurations), or failure
 
 ### 14.7.3 Dry Run — RRT in a 2D Square World
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-handwritten.svg" alt="Handwritten: 14.7.3 Dry Run — RRT in a 2D Square World" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-handwritten.svg" alt="Handwritten: 14.7.3 Dry Run — RRT in a 2D Square World" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-diagram.svg" alt="Diagram: 14.7.3 Dry Run — RRT in a 2D Square World" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-diagram.svg" alt="Diagram: 14.7.3 Dry Run — RRT in a 2D Square World" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-sticky.svg" alt="Sticky Note: 14.7.3 Dry Run — RRT in a 2D Square World" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-3-dry-run-rrt-in-a-2d-square-world-sticky.svg" alt="Sticky Note: 14.7.3 Dry Run — RRT in a 2D Square World" width="30%">
 </a>
 
 
@@ -1357,14 +1357,14 @@ Output: path (list of configurations), or failure
 
 ### 14.7.4 Python — RRT for 2D Configuration Space
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-handwritten.svg" alt="Handwritten: 14.7.4 Python — RRT for 2D Configuration Space" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-handwritten.svg" alt="Handwritten: 14.7.4 Python — RRT for 2D Configuration Space" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-diagram.svg" alt="Diagram: 14.7.4 Python — RRT for 2D Configuration Space" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-diagram.svg" alt="Diagram: 14.7.4 Python — RRT for 2D Configuration Space" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-sticky.svg" alt="Sticky Note: 14.7.4 Python — RRT for 2D Configuration Space" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-4-python-rrt-for-2d-configuration-space-sticky.svg" alt="Sticky Note: 14.7.4 Python — RRT for 2D Configuration Space" width="30%">
 </a>
 
 
@@ -1483,14 +1483,14 @@ if __name__ == "__main__":
 
 ### 14.7.5 RRT* — Optimal Extension with Rewiring
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-handwritten.svg" alt="Handwritten: 14.7.5 RRT* — Optimal Extension with Rewiring" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-handwritten.svg" alt="Handwritten: 14.7.5 RRT* — Optimal Extension with Rewiring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-diagram.svg" alt="Diagram: 14.7.5 RRT* — Optimal Extension with Rewiring" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-diagram.svg" alt="Diagram: 14.7.5 RRT* — Optimal Extension with Rewiring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-sticky.svg" alt="Sticky Note: 14.7.5 RRT* — Optimal Extension with Rewiring" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-5-rrt-optimal-extension-with-rewiring-sticky.svg" alt="Sticky Note: 14.7.5 RRT* — Optimal Extension with Rewiring" width="30%">
 </a>
 
 
@@ -1522,14 +1522,14 @@ Algorithm: RRT*-EXTEND (additional steps)
 
 ### 14.7.6 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-handwritten.svg" alt="Handwritten: 14.7.6 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-handwritten.svg" alt="Handwritten: 14.7.6 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-diagram.svg" alt="Diagram: 14.7.6 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-diagram.svg" alt="Diagram: 14.7.6 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-sticky.svg" alt="Sticky Note: 14.7.6 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-6-complexity-analysis-sticky.svg" alt="Sticky Note: 14.7.6 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1545,14 +1545,14 @@ Algorithm: RRT*-EXTEND (additional steps)
 
 ### 14.7.7 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.7.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.7.7 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-diagram.svg" alt="Diagram: 14.7.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-diagram.svg" alt="Diagram: 14.7.7 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.7.7 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.7.7 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1566,14 +1566,14 @@ Algorithm: RRT*-EXTEND (additional steps)
 
 ### 14.7.8 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-handwritten.svg" alt="Handwritten: 14.7.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-handwritten.svg" alt="Handwritten: 14.7.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-diagram.svg" alt="Diagram: 14.7.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-diagram.svg" alt="Diagram: 14.7.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-sticky.svg" alt="Sticky Note: 14.7.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-7-8-edge-cases-sticky.svg" alt="Sticky Note: 14.7.8 Edge Cases" width="30%">
 </a>
 
 
@@ -1593,14 +1593,14 @@ Algorithm: RRT*-EXTEND (additional steps)
 
 ### 14.8.1 The Control Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-handwritten.svg" alt="Handwritten: 14.8.1 The Control Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-handwritten.svg" alt="Handwritten: 14.8.1 The Control Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-diagram.svg" alt="Diagram: 14.8.1 The Control Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-diagram.svg" alt="Diagram: 14.8.1 The Control Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-sticky.svg" alt="Sticky Note: 14.8.1 The Control Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-1-the-control-pipeline-sticky.svg" alt="Sticky Note: 14.8.1 The Control Pipeline" width="30%">
 </a>
 
 
@@ -1613,14 +1613,14 @@ Algorithm: RRT*-EXTEND (additional steps)
 
 ### 14.8.2 PID Control
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-handwritten.svg" alt="Handwritten: 14.8.2 PID Control" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-handwritten.svg" alt="Handwritten: 14.8.2 PID Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-diagram.svg" alt="Diagram: 14.8.2 PID Control" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-diagram.svg" alt="Diagram: 14.8.2 PID Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-sticky.svg" alt="Sticky Note: 14.8.2 PID Control" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-2-pid-control-sticky.svg" alt="Sticky Note: 14.8.2 PID Control" width="30%">
 </a>
 
 
@@ -1638,14 +1638,14 @@ where $e(t)$ is the error.
 
 ### 14.8.3 Algorithm — PID with Anti-Windup
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-handwritten.svg" alt="Handwritten: 14.8.3 Algorithm — PID with Anti-Windup" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-handwritten.svg" alt="Handwritten: 14.8.3 Algorithm — PID with Anti-Windup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-diagram.svg" alt="Diagram: 14.8.3 Algorithm — PID with Anti-Windup" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-diagram.svg" alt="Diagram: 14.8.3 Algorithm — PID with Anti-Windup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-sticky.svg" alt="Sticky Note: 14.8.3 Algorithm — PID with Anti-Windup" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-3-algorithm-pid-with-anti-windup-sticky.svg" alt="Sticky Note: 14.8.3 Algorithm — PID with Anti-Windup" width="30%">
 </a>
 
 
@@ -1666,14 +1666,14 @@ Output: control_signal
 
 ### 14.8.4 Dry Run — PID for Ball Balancing on a Beam
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-handwritten.svg" alt="Handwritten: 14.8.4 Dry Run — PID for Ball Balancing on a Beam" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-handwritten.svg" alt="Handwritten: 14.8.4 Dry Run — PID for Ball Balancing on a Beam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-diagram.svg" alt="Diagram: 14.8.4 Dry Run — PID for Ball Balancing on a Beam" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-diagram.svg" alt="Diagram: 14.8.4 Dry Run — PID for Ball Balancing on a Beam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-sticky.svg" alt="Sticky Note: 14.8.4 Dry Run — PID for Ball Balancing on a Beam" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-4-dry-run-pid-for-ball-balancing-on-a-beam-sticky.svg" alt="Sticky Note: 14.8.4 Dry Run — PID for Ball Balancing on a Beam" width="30%">
 </a>
 
 
@@ -1693,14 +1693,14 @@ Output: control_signal
 
 ### 14.8.5 Python — PID Controller
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-handwritten.svg" alt="Handwritten: 14.8.5 Python — PID Controller" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-handwritten.svg" alt="Handwritten: 14.8.5 Python — PID Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-diagram.svg" alt="Diagram: 14.8.5 Python — PID Controller" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-diagram.svg" alt="Diagram: 14.8.5 Python — PID Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-sticky.svg" alt="Sticky Note: 14.8.5 Python — PID Controller" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-5-python-pid-controller-sticky.svg" alt="Sticky Note: 14.8.5 Python — PID Controller" width="30%">
 </a>
 
 
@@ -1768,14 +1768,14 @@ for i in range(50):
 
 ### 14.8.6 Model Predictive Control (MPC)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-handwritten.svg" alt="Handwritten: 14.8.6 Model Predictive Control (MPC)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-handwritten.svg" alt="Handwritten: 14.8.6 Model Predictive Control (MPC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-diagram.svg" alt="Diagram: 14.8.6 Model Predictive Control (MPC)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-diagram.svg" alt="Diagram: 14.8.6 Model Predictive Control (MPC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-sticky.svg" alt="Sticky Note: 14.8.6 Model Predictive Control (MPC)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-6-model-predictive-control-mpc-sticky.svg" alt="Sticky Note: 14.8.6 Model Predictive Control (MPC)" width="30%">
 </a>
 
 
@@ -1791,14 +1791,14 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 
 ### 14.8.7 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-handwritten.svg" alt="Handwritten: 14.8.7 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-handwritten.svg" alt="Handwritten: 14.8.7 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-diagram.svg" alt="Diagram: 14.8.7 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-diagram.svg" alt="Diagram: 14.8.7 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-sticky.svg" alt="Sticky Note: 14.8.7 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-7-complexity-analysis-sticky.svg" alt="Sticky Note: 14.8.7 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1814,14 +1814,14 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 
 ### 14.8.8 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.8.8 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-handwritten.svg" alt="Handwritten: 14.8.8 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-diagram.svg" alt="Diagram: 14.8.8 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-diagram.svg" alt="Diagram: 14.8.8 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.8.8 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-8-advantages-disadvantages-sticky.svg" alt="Sticky Note: 14.8.8 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1835,14 +1835,14 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 
 ### 14.8.9 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-handwritten.svg" alt="Handwritten: 14.8.9 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-handwritten.svg" alt="Handwritten: 14.8.9 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-diagram.svg" alt="Diagram: 14.8.9 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-diagram.svg" alt="Diagram: 14.8.9 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-sticky.svg" alt="Sticky Note: 14.8.9 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-8-9-edge-cases-sticky.svg" alt="Sticky Note: 14.8.9 Edge Cases" width="30%">
 </a>
 
 
@@ -1873,14 +1873,14 @@ Only the first control $u_t^*$ is applied; then the horizon recedes.
 
 ### 14.9.1 ROS Communication Patterns
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-handwritten.svg" alt="Handwritten: 14.9.1 ROS Communication Patterns" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-handwritten.svg" alt="Handwritten: 14.9.1 ROS Communication Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-diagram.svg" alt="Diagram: 14.9.1 ROS Communication Patterns" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-diagram.svg" alt="Diagram: 14.9.1 ROS Communication Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-sticky.svg" alt="Sticky Note: 14.9.1 ROS Communication Patterns" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-1-ros-communication-patterns-sticky.svg" alt="Sticky Note: 14.9.1 ROS Communication Patterns" width="30%">
 </a>
 
 
@@ -1918,14 +1918,14 @@ node navigation:
 
 ### 14.9.2 ROS 2 vs ROS 1
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-handwritten.svg" alt="Handwritten: 14.9.2 ROS 2 vs ROS 1" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-handwritten.svg" alt="Handwritten: 14.9.2 ROS 2 vs ROS 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-diagram.svg" alt="Diagram: 14.9.2 ROS 2 vs ROS 1" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-diagram.svg" alt="Diagram: 14.9.2 ROS 2 vs ROS 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-sticky.svg" alt="Sticky Note: 14.9.2 ROS 2 vs ROS 1" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-9-2-ros-2-vs-ros-1-sticky.svg" alt="Sticky Note: 14.9.2 ROS 2 vs ROS 1" width="30%">
 </a>
 
 
@@ -1965,14 +1965,14 @@ Robotics interview questions typically span three pillars: **SLAM**, **sensor fu
 
 ### Q1: Explain the SLAM problem. Why can't you solve localization and mapping separately?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-handwritten.svg" alt="Handwritten: Explain the SLAM problem. Why can't you solve localization and mapping separately?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-handwritten.svg" alt="Handwritten: Explain the SLAM problem. Why can't you solve localization and mapping separately?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-diagram.svg" alt="Diagram: Explain the SLAM problem. Why can't you solve localization and mapping separately?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-diagram.svg" alt="Diagram: Explain the SLAM problem. Why can't you solve localization and mapping separately?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-sticky.svg" alt="Sticky Note: Explain the SLAM problem. Why can't you solve localization and mapping separately?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-the-slam-problem-why-can-t-you-solve-localization-and-mapping-separately-sticky.svg" alt="Sticky Note: Explain the SLAM problem. Why can't you solve localization and mapping separately?" width="30%">
 </a>
 
 
@@ -1987,14 +1987,14 @@ Approaches: EKF-SLAM (online, O(n²) in landmarks) and GraphSLAM (batch, exploit
 
 ### Q2: How does a Kalman filter fuse multiple sensors? Walk through the math.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-handwritten.svg" alt="Handwritten: How does a Kalman filter fuse multiple sensors? Walk through the math." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-handwritten.svg" alt="Handwritten: How does a Kalman filter fuse multiple sensors? Walk through the math." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-diagram.svg" alt="Diagram: How does a Kalman filter fuse multiple sensors? Walk through the math." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-diagram.svg" alt="Diagram: How does a Kalman filter fuse multiple sensors? Walk through the math." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-sticky.svg" alt="Sticky Note: How does a Kalman filter fuse multiple sensors? Walk through the math." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/how-does-a-kalman-filter-fuse-multiple-sensors-walk-through-the-math-sticky.svg" alt="Sticky Note: How does a Kalman filter fuse multiple sensors? Walk through the math." width="30%">
 </a>
 
 
@@ -2016,14 +2016,14 @@ Example: GPS (R ≈ 25 m², 5 Hz) + IMU (R ≈ 0.01 m²/s², 200 Hz). At 200 Hz,
 
 ### Q3: Compare PID and MPC. When would you use each?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare PID and MPC. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare PID and MPC. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-diagram.svg" alt="Diagram: Compare PID and MPC. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-diagram.svg" alt="Diagram: Compare PID and MPC. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare PID and MPC. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/compare-pid-and-mpc-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare PID and MPC. When would you use each?" width="30%">
 </a>
 
 
@@ -2046,14 +2046,14 @@ Real systems often **cascade** them: MPC plans a trajectory at 10–50 Hz, and a
 
 ### Q4: What is the kidnapped robot problem and how does MCL handle it?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-handwritten.svg" alt="Handwritten: What is the kidnapped robot problem and how does MCL handle it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-handwritten.svg" alt="Handwritten: What is the kidnapped robot problem and how does MCL handle it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-diagram.svg" alt="Diagram: What is the kidnapped robot problem and how does MCL handle it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-diagram.svg" alt="Diagram: What is the kidnapped robot problem and how does MCL handle it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-sticky.svg" alt="Sticky Note: What is the kidnapped robot problem and how does MCL handle it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-kidnapped-robot-problem-and-how-does-mcl-handle-it-sticky.svg" alt="Sticky Note: What is the kidnapped robot problem and how does MCL handle it?" width="30%">
 </a>
 
 
@@ -2067,14 +2067,14 @@ Without random injection, particles trapped in the wrong mode never recover — 
 
 ### Q5: Explain data association in SLAM and why it's hard.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-handwritten.svg" alt="Handwritten: Explain data association in SLAM and why it's hard." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-handwritten.svg" alt="Handwritten: Explain data association in SLAM and why it's hard." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-diagram.svg" alt="Diagram: Explain data association in SLAM and why it's hard." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-diagram.svg" alt="Diagram: Explain data association in SLAM and why it's hard." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-sticky.svg" alt="Sticky Note: Explain data association in SLAM and why it's hard." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/explain-data-association-in-slam-and-why-it-s-hard-sticky.svg" alt="Sticky Note: Explain data association in SLAM and why it's hard." width="30%">
 </a>
 
 
@@ -2096,14 +2096,14 @@ Without random injection, particles trapped in the wrong mode never recover — 
 
 ### Q6: What is the difference between odometry and localization?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-handwritten.svg" alt="Handwritten: What is the difference between odometry and localization?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-handwritten.svg" alt="Handwritten: What is the difference between odometry and localization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-diagram.svg" alt="Diagram: What is the difference between odometry and localization?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-diagram.svg" alt="Diagram: What is the difference between odometry and localization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-sticky.svg" alt="Sticky Note: What is the difference between odometry and localization?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/what-is-the-difference-between-odometry-and-localization-sticky.svg" alt="Sticky Note: What is the difference between odometry and localization?" width="30%">
 </a>
 
 
@@ -2125,14 +2125,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-handwritten.svg" alt="Handwritten: 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-handwritten.svg" alt="Handwritten: 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-diagram.svg" alt="Diagram: 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-diagram.svg" alt="Diagram: 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-sticky.svg" alt="Sticky Note: 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-1-roomba-irobot-consumer-cleaning-robot-sticky.svg" alt="Sticky Note: 14.11.1 Roomba (iRobot) — Consumer Cleaning Robot" width="30%">
 </a>
 
 
@@ -2148,14 +2148,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### 14.11.2 Boston Dynamics — Atlas and Spot
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-handwritten.svg" alt="Handwritten: 14.11.2 Boston Dynamics — Atlas and Spot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-handwritten.svg" alt="Handwritten: 14.11.2 Boston Dynamics — Atlas and Spot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-diagram.svg" alt="Diagram: 14.11.2 Boston Dynamics — Atlas and Spot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-diagram.svg" alt="Diagram: 14.11.2 Boston Dynamics — Atlas and Spot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-sticky.svg" alt="Sticky Note: 14.11.2 Boston Dynamics — Atlas and Spot" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-2-boston-dynamics-atlas-and-spot-sticky.svg" alt="Sticky Note: 14.11.2 Boston Dynamics — Atlas and Spot" width="30%">
 </a>
 
 
@@ -2171,14 +2171,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### 14.11.3 Self-Driving Cars (Waymo, Cruise)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-handwritten.svg" alt="Handwritten: 14.11.3 Self-Driving Cars (Waymo, Cruise)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-handwritten.svg" alt="Handwritten: 14.11.3 Self-Driving Cars (Waymo, Cruise)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-diagram.svg" alt="Diagram: 14.11.3 Self-Driving Cars (Waymo, Cruise)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-diagram.svg" alt="Diagram: 14.11.3 Self-Driving Cars (Waymo, Cruise)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-sticky.svg" alt="Sticky Note: 14.11.3 Self-Driving Cars (Waymo, Cruise)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-3-self-driving-cars-waymo-cruise-sticky.svg" alt="Sticky Note: 14.11.3 Self-Driving Cars (Waymo, Cruise)" width="30%">
 </a>
 
 
@@ -2194,14 +2194,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-handwritten.svg" alt="Handwritten: 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-handwritten.svg" alt="Handwritten: 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-diagram.svg" alt="Diagram: 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-diagram.svg" alt="Diagram: 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-sticky.svg" alt="Sticky Note: 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-4-industrial-robot-arms-kuka-fanuc-abb-sticky.svg" alt="Sticky Note: 14.11.4 Industrial Robot Arms (KUKA, Fanuc, ABB)" width="30%">
 </a>
 
 
@@ -2217,14 +2217,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### 14.11.5 Comparing Real Systems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-handwritten.svg" alt="Handwritten: 14.11.5 Comparing Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-handwritten.svg" alt="Handwritten: 14.11.5 Comparing Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-diagram.svg" alt="Diagram: 14.11.5 Comparing Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-diagram.svg" alt="Diagram: 14.11.5 Comparing Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-sticky.svg" alt="Sticky Note: 14.11.5 Comparing Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/14-11-5-comparing-real-systems-sticky.svg" alt="Sticky Note: 14.11.5 Comparing Real Systems" width="30%">
 </a>
 
 
@@ -2265,14 +2265,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### PID Tuning Heuristics
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-handwritten.svg" alt="Handwritten: PID Tuning Heuristics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-handwritten.svg" alt="Handwritten: PID Tuning Heuristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-diagram.svg" alt="Diagram: PID Tuning Heuristics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-diagram.svg" alt="Diagram: PID Tuning Heuristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-sticky.svg" alt="Sticky Note: PID Tuning Heuristics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/pid-tuning-heuristics-sticky.svg" alt="Sticky Note: PID Tuning Heuristics" width="30%">
 </a>
 
 
@@ -2285,14 +2285,14 @@ Integration: Odometry feeds the **motion model** of a localization filter (MCL, 
 
 ### Common PID Gains by Application
 
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-handwritten.svg" alt="Handwritten: Common PID Gains by Application" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-handwritten.svg" alt="Handwritten: Common PID Gains by Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-diagram.svg" alt="Diagram: Common PID Gains by Application" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-diagram.svg" alt="Diagram: Common PID Gains by Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-sticky.svg" alt="Sticky Note: Common PID Gains by Application" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/14-robotics/common-pid-gains-by-application-sticky.svg" alt="Sticky Note: Common PID Gains by Application" width="30%">
 </a>
 
 

@@ -66,14 +66,14 @@ flowchart LR
 
 ### 15.1 Complexity Classes
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-handwritten.svg" alt="Handwritten: 15.1 Complexity Classes" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-handwritten.svg" alt="Handwritten: 15.1 Complexity Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-diagram.svg" alt="Diagram: 15.1 Complexity Classes" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-diagram.svg" alt="Diagram: 15.1 Complexity Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-sticky.svg" alt="Sticky Note: 15.1 Complexity Classes" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-1-complexity-classes-sticky.svg" alt="Sticky Note: 15.1 Complexity Classes" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ x \in L \iff \exists c \text{ with } |c| \le p(|x|) \text{ and } V(x, c) = \text
 
 ### 15.2 Polynomial-Time Reductions
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-handwritten.svg" alt="Handwritten: 15.2 Polynomial-Time Reductions" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-handwritten.svg" alt="Handwritten: 15.2 Polynomial-Time Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-diagram.svg" alt="Diagram: 15.2 Polynomial-Time Reductions" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-diagram.svg" alt="Diagram: 15.2 Polynomial-Time Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-sticky.svg" alt="Sticky Note: 15.2 Polynomial-Time Reductions" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-2-polynomial-time-reductions-sticky.svg" alt="Sticky Note: 15.2 Polynomial-Time Reductions" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ x \text{ is a YES instance of } A \iff f(x) \text{ is a YES instance of } B
 
 ### 15.3 Cook-Levin Theorem
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-handwritten.svg" alt="Handwritten: 15.3 Cook-Levin Theorem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-handwritten.svg" alt="Handwritten: 15.3 Cook-Levin Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-diagram.svg" alt="Diagram: 15.3 Cook-Levin Theorem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-diagram.svg" alt="Diagram: 15.3 Cook-Levin Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-sticky.svg" alt="Sticky Note: 15.3 Cook-Levin Theorem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-3-cook-levin-theorem-sticky.svg" alt="Sticky Note: 15.3 Cook-Levin Theorem" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ x \text{ is a YES instance of } A \iff f(x) \text{ is a YES instance of } B
 
 ### 15.4 The Reduction Chain: SAT to TSP
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-handwritten.svg" alt="Handwritten: 15.4 The Reduction Chain: SAT to TSP" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-handwritten.svg" alt="Handwritten: 15.4 The Reduction Chain: SAT to TSP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-diagram.svg" alt="Diagram: 15.4 The Reduction Chain: SAT to TSP" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-diagram.svg" alt="Diagram: 15.4 The Reduction Chain: SAT to TSP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-sticky.svg" alt="Sticky Note: 15.4 The Reduction Chain: SAT to TSP" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-4-the-reduction-chain-sat-to-tsp-sticky.svg" alt="Sticky Note: 15.4 The Reduction Chain: SAT to TSP" width="30%">
 </a>
 
 
@@ -569,14 +569,14 @@ bool verifyTour(const TSPInstance& tsp, const vector<int>& tour) {
 
 ### 15.5 Proving NP-Completeness — Step-by-Step Methodology
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-handwritten.svg" alt="Handwritten: 15.5 Proving NP-Completeness — Step-by-Step Methodology" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-handwritten.svg" alt="Handwritten: 15.5 Proving NP-Completeness — Step-by-Step Methodology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-diagram.svg" alt="Diagram: 15.5 Proving NP-Completeness — Step-by-Step Methodology" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-diagram.svg" alt="Diagram: 15.5 Proving NP-Completeness — Step-by-Step Methodology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-sticky.svg" alt="Sticky Note: 15.5 Proving NP-Completeness — Step-by-Step Methodology" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-5-proving-np-completeness-step-by-step-methodology-sticky.svg" alt="Sticky Note: 15.5 Proving NP-Completeness — Step-by-Step Methodology" width="30%">
 </a>
 
 
@@ -594,14 +594,14 @@ bool verifyTour(const TSPInstance& tsp, const vector<int>& tour) {
 
 ### 15.6 Coping with NP-Completeness
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-handwritten.svg" alt="Handwritten: 15.6 Coping with NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-handwritten.svg" alt="Handwritten: 15.6 Coping with NP-Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-diagram.svg" alt="Diagram: 15.6 Coping with NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-diagram.svg" alt="Diagram: 15.6 Coping with NP-Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-sticky.svg" alt="Sticky Note: 15.6 Coping with NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-6-coping-with-np-completeness-sticky.svg" alt="Sticky Note: 15.6 Coping with NP-Completeness" width="30%">
 </a>
 
 
@@ -633,14 +633,14 @@ Your problem is NP-hard?
 
 ### 15.7 Interview Corner
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-handwritten.svg" alt="Handwritten: 15.7 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-handwritten.svg" alt="Handwritten: 15.7 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-diagram.svg" alt="Diagram: 15.7 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-diagram.svg" alt="Diagram: 15.7 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-sticky.svg" alt="Sticky Note: 15.7 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-7-interview-corner-sticky.svg" alt="Sticky Note: 15.7 Interview Corner" width="30%">
 </a>
 
 
@@ -674,14 +674,14 @@ Your problem is NP-hard?
 
 ### 15.8 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-handwritten.svg" alt="Handwritten: 15.8 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-handwritten.svg" alt="Handwritten: 15.8 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-diagram.svg" alt="Diagram: 15.8 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-diagram.svg" alt="Diagram: 15.8 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-sticky.svg" alt="Sticky Note: 15.8 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-8-applications-in-real-systems-sticky.svg" alt="Sticky Note: 15.8 Applications in Real Systems" width="30%">
 </a>
 
 
@@ -706,14 +706,14 @@ NP-hard problems are not just academic curiosities — they appear in critical i
 
 ### 15.9 Classic NP-Complete Problems
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-handwritten.svg" alt="Handwritten: 15.9 Classic NP-Complete Problems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-handwritten.svg" alt="Handwritten: 15.9 Classic NP-Complete Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-diagram.svg" alt="Diagram: 15.9 Classic NP-Complete Problems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-diagram.svg" alt="Diagram: 15.9 Classic NP-Complete Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-sticky.svg" alt="Sticky Note: 15.9 Classic NP-Complete Problems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-9-classic-np-complete-problems-sticky.svg" alt="Sticky Note: 15.9 Classic NP-Complete Problems" width="30%">
 </a>
 
 
@@ -751,14 +751,14 @@ NP-hard problems are not just academic curiosities — they appear in critical i
 
 ### 15.10 NP-Hard Problems
 
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-handwritten.svg" alt="Handwritten: 15.10 NP-Hard Problems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-handwritten.svg" alt="Handwritten: 15.10 NP-Hard Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-diagram.svg" alt="Diagram: 15.10 NP-Hard Problems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-diagram.svg" alt="Diagram: 15.10 NP-Hard Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-sticky.svg" alt="Sticky Note: 15.10 NP-Hard Problems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/15-np-completeness/15-10-np-hard-problems-sticky.svg" alt="Sticky Note: 15.10 NP-Hard Problems" width="30%">
 </a>
 
 

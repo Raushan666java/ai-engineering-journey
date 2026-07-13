@@ -35,14 +35,14 @@ Your resume is your 6-second pitch. Recruiters at service-based companies, produ
 
 ### 1.1 Standard Resume Structure
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-handwritten.svg" alt="Handwritten: 1.1 Standard Resume Structure" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-handwritten.svg" alt="Handwritten: 1.1 Standard Resume Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-diagram.svg" alt="Diagram: 1.1 Standard Resume Structure" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-diagram.svg" alt="Diagram: 1.1 Standard Resume Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-sticky.svg" alt="Sticky Note: 1.1 Standard Resume Structure" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-1-standard-resume-structure-sticky.svg" alt="Sticky Note: 1.1 Standard Resume Structure" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ A strong campus placement resume follows a strict single-page (or max 2-page for
 
 ### 1.2 The 6-Second Recruiter Scan
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-handwritten.svg" alt="Handwritten: 1.2 The 6-Second Recruiter Scan" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-handwritten.svg" alt="Handwritten: 1.2 The 6-Second Recruiter Scan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-diagram.svg" alt="Diagram: 1.2 The 6-Second Recruiter Scan" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-diagram.svg" alt="Diagram: 1.2 The 6-Second Recruiter Scan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-sticky.svg" alt="Sticky Note: 1.2 The 6-Second Recruiter Scan" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-2-the-6-second-recruiter-scan-sticky.svg" alt="Sticky Note: 1.2 The 6-Second Recruiter Scan" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ Recruiters and ATS (Applicant Tracking Systems) decide in 6 seconds:
 
 ### 1.3 Quantifying Achievements (Before → After)
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-handwritten.svg" alt="Handwritten: 1.3 Quantifying Achievements (Before → After)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-handwritten.svg" alt="Handwritten: 1.3 Quantifying Achievements (Before → After)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-diagram.svg" alt="Diagram: 1.3 Quantifying Achievements (Before → After)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-diagram.svg" alt="Diagram: 1.3 Quantifying Achievements (Before → After)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-sticky.svg" alt="Sticky Note: 1.3 Quantifying Achievements (Before → After)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-3-quantifying-achievements-before-after-sticky.svg" alt="Sticky Note: 1.3 Quantifying Achievements (Before → After)" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 
 ### 1.4 Action Verbs & Buzzwords
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-handwritten.svg" alt="Handwritten: 1.4 Action Verbs & Buzzwords" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-handwritten.svg" alt="Handwritten: 1.4 Action Verbs & Buzzwords" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-diagram.svg" alt="Diagram: 1.4 Action Verbs & Buzzwords" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-diagram.svg" alt="Diagram: 1.4 Action Verbs & Buzzwords" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-sticky.svg" alt="Sticky Note: 1.4 Action Verbs & Buzzwords" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-4-action-verbs-buzzwords-sticky.svg" alt="Sticky Note: 1.4 Action Verbs & Buzzwords" width="30%">
 </a>
 
 
@@ -150,14 +150,14 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 
 ### 1.5 Common Mistakes (And How to Fix Them)
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-handwritten.svg" alt="Handwritten: 1.5 Common Mistakes (And How to Fix Them)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-handwritten.svg" alt="Handwritten: 1.5 Common Mistakes (And How to Fix Them)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-diagram.svg" alt="Diagram: 1.5 Common Mistakes (And How to Fix Them)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-diagram.svg" alt="Diagram: 1.5 Common Mistakes (And How to Fix Them)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-sticky.svg" alt="Sticky Note: 1.5 Common Mistakes (And How to Fix Them)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-5-common-mistakes-and-how-to-fix-them-sticky.svg" alt="Sticky Note: 1.5 Common Mistakes (And How to Fix Them)" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ Recruiters don't read responsibilities; they read impact. Every bullet should fo
 
 ### 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-handwritten.svg" alt="Handwritten: 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-handwritten.svg" alt="Handwritten: 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-diagram.svg" alt="Diagram: 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-diagram.svg" alt="Diagram: 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-sticky.svg" alt="Sticky Note: 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-6-sample-resume-1-service-based-company-tcs-infosys-wipro-sticky.svg" alt="Sticky Note: 1.6 Sample Resume 1: Service-Based Company (TCS, Infosys, Wipro)" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ ACHIEVEMENTS
 
 ### 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-handwritten.svg" alt="Handwritten: 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-handwritten.svg" alt="Handwritten: 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-diagram.svg" alt="Diagram: 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-diagram.svg" alt="Diagram: 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-sticky.svg" alt="Sticky Note: 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-7-sample-resume-2-product-based-company-flipkart-uber-swiggy-sticky.svg" alt="Sticky Note: 1.7 Sample Resume 2: Product-Based Company (Flipkart, Uber, Swiggy)" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ ACHIEVEMENTS
 
 ### 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-handwritten.svg" alt="Handwritten: 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-handwritten.svg" alt="Handwritten: 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-diagram.svg" alt="Diagram: 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-diagram.svg" alt="Diagram: 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-sticky.svg" alt="Sticky Note: 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-8-sample-resume-3-faang-google-microsoft-amazon-sticky.svg" alt="Sticky Note: 1.8 Sample Resume 3: FAANG (Google, Microsoft, Amazon)" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ ACHIEVEMENTS
 
 ### 1.9 Resume Checklist
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-handwritten.svg" alt="Handwritten: 1.9 Resume Checklist" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-handwritten.svg" alt="Handwritten: 1.9 Resume Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-diagram.svg" alt="Diagram: 1.9 Resume Checklist" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-diagram.svg" alt="Diagram: 1.9 Resume Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-sticky.svg" alt="Sticky Note: 1.9 Resume Checklist" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/1-9-resume-checklist-sticky.svg" alt="Sticky Note: 1.9 Resume Checklist" width="30%">
 </a>
 
 
@@ -439,14 +439,14 @@ Your LinkedIn profile is your always-on resume. Recruiters search LinkedIn befor
 
 ### 2.1 Headline
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-handwritten.svg" alt="Handwritten: 2.1 Headline" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-handwritten.svg" alt="Handwritten: 2.1 Headline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-diagram.svg" alt="Diagram: 2.1 Headline" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-diagram.svg" alt="Diagram: 2.1 Headline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-sticky.svg" alt="Sticky Note: 2.1 Headline" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-1-headline-sticky.svg" alt="Sticky Note: 2.1 Headline" width="30%">
 </a>
 
 
@@ -468,14 +468,14 @@ Your headline appears everywhere → search results, comments, messages. Don't j
 
 ### 2.2 About Section (Your Story)
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-handwritten.svg" alt="Handwritten: 2.2 About Section (Your Story)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-handwritten.svg" alt="Handwritten: 2.2 About Section (Your Story)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-diagram.svg" alt="Diagram: 2.2 About Section (Your Story)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-diagram.svg" alt="Diagram: 2.2 About Section (Your Story)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-sticky.svg" alt="Sticky Note: 2.2 About Section (Your Story)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-2-about-section-your-story-sticky.svg" alt="Sticky Note: 2.2 About Section (Your Story)" width="30%">
 </a>
 
 
@@ -505,14 +505,14 @@ PARA 3: What you're looking for + call to action
 
 ### 2.3 Experience & Projects Section
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-handwritten.svg" alt="Handwritten: 2.3 Experience & Projects Section" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-handwritten.svg" alt="Handwritten: 2.3 Experience & Projects Section" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-diagram.svg" alt="Diagram: 2.3 Experience & Projects Section" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-diagram.svg" alt="Diagram: 2.3 Experience & Projects Section" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-sticky.svg" alt="Sticky Note: 2.3 Experience & Projects Section" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-3-experience-projects-section-sticky.svg" alt="Sticky Note: 2.3 Experience & Projects Section" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ Same rules as resume → quantified, action-verb-driven → but LinkedIn allows 
 
 ### 2.4 Skills & Endorsements
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-handwritten.svg" alt="Handwritten: 2.4 Skills & Endorsements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-handwritten.svg" alt="Handwritten: 2.4 Skills & Endorsements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-diagram.svg" alt="Diagram: 2.4 Skills & Endorsements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-diagram.svg" alt="Diagram: 2.4 Skills & Endorsements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-sticky.svg" alt="Sticky Note: 2.4 Skills & Endorsements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-4-skills-endorsements-sticky.svg" alt="Sticky Note: 2.4 Skills & Endorsements" width="30%">
 </a>
 
 
@@ -546,14 +546,14 @@ Same rules as resume → quantified, action-verb-driven → but LinkedIn allows 
 
 ### 2.5 Content Strategy
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-handwritten.svg" alt="Handwritten: 2.5 Content Strategy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-handwritten.svg" alt="Handwritten: 2.5 Content Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-diagram.svg" alt="Diagram: 2.5 Content Strategy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-diagram.svg" alt="Diagram: 2.5 Content Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-sticky.svg" alt="Sticky Note: 2.5 Content Strategy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-5-content-strategy-sticky.svg" alt="Sticky Note: 2.5 Content Strategy" width="30%">
 </a>
 
 
@@ -588,14 +588,14 @@ Posting on LinkedIn builds your brand. You don't need to be an influencer; 1-2 p
 
 ### 2.6 Networking for Referrals
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-handwritten.svg" alt="Handwritten: 2.6 Networking for Referrals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-handwritten.svg" alt="Handwritten: 2.6 Networking for Referrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-diagram.svg" alt="Diagram: 2.6 Networking for Referrals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-diagram.svg" alt="Diagram: 2.6 Networking for Referrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-sticky.svg" alt="Sticky Note: 2.6 Networking for Referrals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/2-6-networking-for-referrals-sticky.svg" alt="Sticky Note: 2.6 Networking for Referrals" width="30%">
 </a>
 
 
@@ -645,14 +645,14 @@ This is a **quick reference** for campus placement aptitude tests. For the GATE-
 
 ### 3.1 Quick Formula Reference
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-handwritten.svg" alt="Handwritten: 3.1 Quick Formula Reference" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-handwritten.svg" alt="Handwritten: 3.1 Quick Formula Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-diagram.svg" alt="Diagram: 3.1 Quick Formula Reference" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-diagram.svg" alt="Diagram: 3.1 Quick Formula Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-sticky.svg" alt="Sticky Note: 3.1 Quick Formula Reference" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-1-quick-formula-reference-sticky.svg" alt="Sticky Note: 3.1 Quick Formula Reference" width="30%">
 </a>
 
 
@@ -1096,14 +1096,14 @@ Probability = `120/455 = 24/91`
 
 ### 3.3 Logical Reasoning Shortcuts
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-handwritten.svg" alt="Handwritten: 3.3 Logical Reasoning Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-handwritten.svg" alt="Handwritten: 3.3 Logical Reasoning Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-diagram.svg" alt="Diagram: 3.3 Logical Reasoning Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-diagram.svg" alt="Diagram: 3.3 Logical Reasoning Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-sticky.svg" alt="Sticky Note: 3.3 Logical Reasoning Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-3-logical-reasoning-shortcuts-sticky.svg" alt="Sticky Note: 3.3 Logical Reasoning Shortcuts" width="30%">
 </a>
 
 
@@ -1182,14 +1182,14 @@ Probability = `120/455 = 24/91`
 
 ### 3.4 Verbal Ability Quick Tips
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-handwritten.svg" alt="Handwritten: 3.4 Verbal Ability Quick Tips" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-handwritten.svg" alt="Handwritten: 3.4 Verbal Ability Quick Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-diagram.svg" alt="Diagram: 3.4 Verbal Ability Quick Tips" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-diagram.svg" alt="Diagram: 3.4 Verbal Ability Quick Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-sticky.svg" alt="Sticky Note: 3.4 Verbal Ability Quick Tips" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-4-verbal-ability-quick-tips-sticky.svg" alt="Sticky Note: 3.4 Verbal Ability Quick Tips" width="30%">
 </a>
 
 
@@ -1256,14 +1256,14 @@ Probability = `120/455 = 24/91`
 
 ### 3.5 Practice Set: 25 Questions with Answer Key
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-handwritten.svg" alt="Handwritten: 3.5 Practice Set: 25 Questions with Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-handwritten.svg" alt="Handwritten: 3.5 Practice Set: 25 Questions with Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-diagram.svg" alt="Diagram: 3.5 Practice Set: 25 Questions with Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-diagram.svg" alt="Diagram: 3.5 Practice Set: 25 Questions with Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-sticky.svg" alt="Sticky Note: 3.5 Practice Set: 25 Questions with Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/3-5-practice-set-25-questions-with-answer-key-sticky.svg" alt="Sticky Note: 3.5 Practice Set: 25 Questions with Answer Key" width="30%">
 </a>
 
 
@@ -1360,14 +1360,14 @@ Probability = `120/455 = 24/91`
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 
@@ -1436,14 +1436,14 @@ Answer: 12 (a)
 
 ### Quantitative Aptitude Practice
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-handwritten.svg" alt="Handwritten: Quantitative Aptitude Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-handwritten.svg" alt="Handwritten: Quantitative Aptitude Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-diagram.svg" alt="Diagram: Quantitative Aptitude Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-diagram.svg" alt="Diagram: Quantitative Aptitude Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-sticky.svg" alt="Sticky Note: Quantitative Aptitude Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/quantitative-aptitude-practice-sticky.svg" alt="Sticky Note: Quantitative Aptitude Practice" width="30%">
 </a>
 
 
@@ -1716,14 +1716,14 @@ Answer: 12 (a)
 
 ### Logical Reasoning Practice
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-handwritten.svg" alt="Handwritten: Logical Reasoning Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-handwritten.svg" alt="Handwritten: Logical Reasoning Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-diagram.svg" alt="Diagram: Logical Reasoning Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-diagram.svg" alt="Diagram: Logical Reasoning Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-sticky.svg" alt="Sticky Note: Logical Reasoning Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/logical-reasoning-practice-sticky.svg" alt="Sticky Note: Logical Reasoning Practice" width="30%">
 </a>
 
 
@@ -1934,14 +1934,14 @@ Answer: 12 (a)
 
 ### Verbal Ability Practice
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-handwritten.svg" alt="Handwritten: Verbal Ability Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-handwritten.svg" alt="Handwritten: Verbal Ability Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-diagram.svg" alt="Diagram: Verbal Ability Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-diagram.svg" alt="Diagram: Verbal Ability Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-sticky.svg" alt="Sticky Note: Verbal Ability Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/verbal-ability-practice-sticky.svg" alt="Sticky Note: Verbal Ability Practice" width="30%">
 </a>
 
 
@@ -2100,14 +2100,14 @@ Passage 4: "Entrepreneurship drives economic growth by creating jobs, fostering 
 
 ### Spatial Ability Practice
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-handwritten.svg" alt="Handwritten: Spatial Ability Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-handwritten.svg" alt="Handwritten: Spatial Ability Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-diagram.svg" alt="Diagram: Spatial Ability Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-diagram.svg" alt="Diagram: Spatial Ability Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-sticky.svg" alt="Sticky Note: Spatial Ability Practice" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/spatial-ability-practice-sticky.svg" alt="Sticky Note: Spatial Ability Practice" width="30%">
 </a>
 
 
@@ -2193,14 +2193,14 @@ Below are five fully filled-out resume templates for different placement scenari
 
 ### Template 1: FAANG/SDE Resume
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-handwritten.svg" alt="Handwritten: Template 1: FAANG/SDE Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-handwritten.svg" alt="Handwritten: Template 1: FAANG/SDE Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-diagram.svg" alt="Diagram: Template 1: FAANG/SDE Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-diagram.svg" alt="Diagram: Template 1: FAANG/SDE Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-sticky.svg" alt="Sticky Note: Template 1: FAANG/SDE Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-1-faang-sde-resume-sticky.svg" alt="Sticky Note: Template 1: FAANG/SDE Resume" width="30%">
 </a>
 
 
@@ -2309,14 +2309,14 @@ Computer Networks, Object-Oriented Programming, Machine Learning, Distributed Sy
 
 ### Template 2: Product-Based Company Resume
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-handwritten.svg" alt="Handwritten: Template 2: Product-Based Company Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-handwritten.svg" alt="Handwritten: Template 2: Product-Based Company Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-diagram.svg" alt="Diagram: Template 2: Product-Based Company Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-diagram.svg" alt="Diagram: Template 2: Product-Based Company Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-sticky.svg" alt="Sticky Note: Template 2: Product-Based Company Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-2-product-based-company-resume-sticky.svg" alt="Sticky Note: Template 2: Product-Based Company Resume" width="30%">
 </a>
 
 
@@ -2453,14 +2453,14 @@ Operating Systems, Cloud Computing, UI/UX Design
 
 ### Template 3: Service-Based Company Resume
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-handwritten.svg" alt="Handwritten: Template 3: Service-Based Company Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-handwritten.svg" alt="Handwritten: Template 3: Service-Based Company Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-diagram.svg" alt="Diagram: Template 3: Service-Based Company Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-diagram.svg" alt="Diagram: Template 3: Service-Based Company Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-sticky.svg" alt="Sticky Note: Template 3: Service-Based Company Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-3-service-based-company-resume-sticky.svg" alt="Sticky Note: Template 3: Service-Based Company Resume" width="30%">
 </a>
 
 
@@ -2593,14 +2593,14 @@ Operating Systems, Software Engineering, Web Technologies, Discrete Mathematics
 
 ### Template 4: Data Science/ML Resume
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-handwritten.svg" alt="Handwritten: Template 4: Data Science/ML Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-handwritten.svg" alt="Handwritten: Template 4: Data Science/ML Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-diagram.svg" alt="Diagram: Template 4: Data Science/ML Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-diagram.svg" alt="Diagram: Template 4: Data Science/ML Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-sticky.svg" alt="Sticky Note: Template 4: Data Science/ML Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-4-data-science-ml-resume-sticky.svg" alt="Sticky Note: Template 4: Data Science/ML Resume" width="30%">
 </a>
 
 
@@ -2740,14 +2740,14 @@ Statistics, Linear Algebra, Optimization, Reinforcement Learning, Data Mining, D
 
 ### Template 5: Full-Stack Developer Resume
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-handwritten.svg" alt="Handwritten: Template 5: Full-Stack Developer Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-handwritten.svg" alt="Handwritten: Template 5: Full-Stack Developer Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-diagram.svg" alt="Diagram: Template 5: Full-Stack Developer Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-diagram.svg" alt="Diagram: Template 5: Full-Stack Developer Resume" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-sticky.svg" alt="Sticky Note: Template 5: Full-Stack Developer Resume" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/template-5-full-stack-developer-resume-sticky.svg" alt="Sticky Note: Template 5: Full-Stack Developer Resume" width="30%">
 </a>
 
 
@@ -2975,14 +2975,14 @@ A well-written cover letter can differentiate you when 200+ candidates have iden
 
 ### 6.1 The 4-Paragraph Formula
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-handwritten.svg" alt="Handwritten: 6.1 The 4-Paragraph Formula" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-handwritten.svg" alt="Handwritten: 6.1 The 4-Paragraph Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-diagram.svg" alt="Diagram: 6.1 The 4-Paragraph Formula" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-diagram.svg" alt="Diagram: 6.1 The 4-Paragraph Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-sticky.svg" alt="Sticky Note: 6.1 The 4-Paragraph Formula" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-1-the-4-paragraph-formula-sticky.svg" alt="Sticky Note: 6.1 The 4-Paragraph Formula" width="30%">
 </a>
 
 
@@ -2995,14 +2995,14 @@ A well-written cover letter can differentiate you when 200+ candidates have iden
 
 ### 6.2 Cover Letter Templates
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-handwritten.svg" alt="Handwritten: 6.2 Cover Letter Templates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-handwritten.svg" alt="Handwritten: 6.2 Cover Letter Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-diagram.svg" alt="Diagram: 6.2 Cover Letter Templates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-diagram.svg" alt="Diagram: 6.2 Cover Letter Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-sticky.svg" alt="Sticky Note: 6.2 Cover Letter Templates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-2-cover-letter-templates-sticky.svg" alt="Sticky Note: 6.2 Cover Letter Templates" width="30%">
 </a>
 
 
@@ -3036,14 +3036,14 @@ A well-written cover letter can differentiate you when 200+ candidates have iden
 
 ### 6.3 Cover Letter Do's and Don'ts
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-handwritten.svg" alt="Handwritten: 6.3 Cover Letter Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-handwritten.svg" alt="Handwritten: 6.3 Cover Letter Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-diagram.svg" alt="Diagram: 6.3 Cover Letter Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-diagram.svg" alt="Diagram: 6.3 Cover Letter Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-sticky.svg" alt="Sticky Note: 6.3 Cover Letter Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/6-3-cover-letter-do-s-and-don-ts-sticky.svg" alt="Sticky Note: 6.3 Cover Letter Do's and Don'ts" width="30%">
 </a>
 
 
@@ -3064,14 +3064,14 @@ Your GitHub profile is often the second thing a recruiter looks at after your re
 
 ### 7.1 Profile Essentials
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-handwritten.svg" alt="Handwritten: 7.1 Profile Essentials" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-handwritten.svg" alt="Handwritten: 7.1 Profile Essentials" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-diagram.svg" alt="Diagram: 7.1 Profile Essentials" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-diagram.svg" alt="Diagram: 7.1 Profile Essentials" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-sticky.svg" alt="Sticky Note: 7.1 Profile Essentials" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-1-profile-essentials-sticky.svg" alt="Sticky Note: 7.1 Profile Essentials" width="30%">
 </a>
 
 
@@ -3084,14 +3084,14 @@ Your GitHub profile is often the second thing a recruiter looks at after your re
 ```markdown
 ### Hi there ðŸ‘‹
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-handwritten.svg" alt="Handwritten: Hi there ðŸ‘‹" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-handwritten.svg" alt="Handwritten: Hi there ðŸ‘‹" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-diagram.svg" alt="Diagram: Hi there ðŸ‘‹" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-diagram.svg" alt="Diagram: Hi there ðŸ‘‹" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-sticky.svg" alt="Sticky Note: Hi there ðŸ‘‹" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/hi-there-sticky.svg" alt="Sticky Note: Hi there ðŸ‘‹" width="30%">
 </a>
 
 
@@ -3108,14 +3108,14 @@ I'm a Computer Science student passionate about distributed systems and develope
 
 ### 7.2 Project README Standards
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-handwritten.svg" alt="Handwritten: 7.2 Project README Standards" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-handwritten.svg" alt="Handwritten: 7.2 Project README Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-diagram.svg" alt="Diagram: 7.2 Project README Standards" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-diagram.svg" alt="Diagram: 7.2 Project README Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-sticky.svg" alt="Sticky Note: 7.2 Project README Standards" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-2-project-readme-standards-sticky.svg" alt="Sticky Note: 7.2 Project README Standards" width="30%">
 </a>
 
 
@@ -3129,14 +3129,14 @@ Every pinned project should have:
 
 ### 7.3 Contribution Graph
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-handwritten.svg" alt="Handwritten: 7.3 Contribution Graph" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-handwritten.svg" alt="Handwritten: 7.3 Contribution Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-diagram.svg" alt="Diagram: 7.3 Contribution Graph" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-diagram.svg" alt="Diagram: 7.3 Contribution Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-sticky.svg" alt="Sticky Note: 7.3 Contribution Graph" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-3-contribution-graph-sticky.svg" alt="Sticky Note: 7.3 Contribution Graph" width="30%">
 </a>
 
 
@@ -3147,14 +3147,14 @@ A green contribution graph signals consistency. Aim for:
 
 ### 7.4 Common Mistakes
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-handwritten.svg" alt="Handwritten: 7.4 Common Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-handwritten.svg" alt="Handwritten: 7.4 Common Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-diagram.svg" alt="Diagram: 7.4 Common Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-diagram.svg" alt="Diagram: 7.4 Common Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-sticky.svg" alt="Sticky Note: 7.4 Common Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/7-4-common-mistakes-sticky.svg" alt="Sticky Note: 7.4 Common Mistakes" width="30%">
 </a>
 
 
@@ -3175,14 +3175,14 @@ Applicant Tracking Systems (ATS) filter resumes before they reach human recruite
 
 ### 8.1 How ATS Parses Resumes
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-handwritten.svg" alt="Handwritten: 8.1 How ATS Parses Resumes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-handwritten.svg" alt="Handwritten: 8.1 How ATS Parses Resumes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-diagram.svg" alt="Diagram: 8.1 How ATS Parses Resumes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-diagram.svg" alt="Diagram: 8.1 How ATS Parses Resumes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-sticky.svg" alt="Sticky Note: 8.1 How ATS Parses Resumes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-1-how-ats-parses-resumes-sticky.svg" alt="Sticky Note: 8.1 How ATS Parses Resumes" width="30%">
 </a>
 
 
@@ -3195,14 +3195,14 @@ ATS software extracts the following fields from your resume:
 
 ### 8.2 ATS-Friendly Formatting Rules
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-handwritten.svg" alt="Handwritten: 8.2 ATS-Friendly Formatting Rules" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-handwritten.svg" alt="Handwritten: 8.2 ATS-Friendly Formatting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-diagram.svg" alt="Diagram: 8.2 ATS-Friendly Formatting Rules" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-diagram.svg" alt="Diagram: 8.2 ATS-Friendly Formatting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-sticky.svg" alt="Sticky Note: 8.2 ATS-Friendly Formatting Rules" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-2-ats-friendly-formatting-rules-sticky.svg" alt="Sticky Note: 8.2 ATS-Friendly Formatting Rules" width="30%">
 </a>
 
 
@@ -3219,14 +3219,14 @@ ATS software extracts the following fields from your resume:
 
 ### 8.3 Keyword Optimization Process
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-handwritten.svg" alt="Handwritten: 8.3 Keyword Optimization Process" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-handwritten.svg" alt="Handwritten: 8.3 Keyword Optimization Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-diagram.svg" alt="Diagram: 8.3 Keyword Optimization Process" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-diagram.svg" alt="Diagram: 8.3 Keyword Optimization Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-sticky.svg" alt="Sticky Note: 8.3 Keyword Optimization Process" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-3-keyword-optimization-process-sticky.svg" alt="Sticky Note: 8.3 Keyword Optimization Process" width="30%">
 </a>
 
 
@@ -3241,14 +3241,14 @@ ATS software extracts the following fields from your resume:
 
 ### 8.4 ATS Score Improvement Checklist
 
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-handwritten.svg" alt="Handwritten: 8.4 ATS Score Improvement Checklist" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-handwritten.svg" alt="Handwritten: 8.4 ATS Score Improvement Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-diagram.svg" alt="Diagram: 8.4 ATS Score Improvement Checklist" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-diagram.svg" alt="Diagram: 8.4 ATS Score Improvement Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-sticky.svg" alt="Sticky Note: 8.4 ATS Score Improvement Checklist" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/01-resume-aptitude/8-4-ats-score-improvement-checklist-sticky.svg" alt="Sticky Note: 8.4 ATS Score Improvement Checklist" width="30%">
 </a>
 
 

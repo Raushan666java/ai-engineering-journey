@@ -74,14 +74,14 @@ flowchart LR
 
 ### Requirements Phase
 
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-handwritten.svg" alt="Handwritten: Requirements Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-handwritten.svg" alt="Handwritten: Requirements Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-diagram.svg" alt="Diagram: Requirements Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-diagram.svg" alt="Diagram: Requirements Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-sticky.svg" alt="Sticky Note: Requirements Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/requirements-phase-sticky.svg" alt="Sticky Note: Requirements Phase" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ Every system design begins with precise functional and non-functional requiremen
 
 ### Estimation Phase
 
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-handwritten.svg" alt="Handwritten: Estimation Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-handwritten.svg" alt="Handwritten: Estimation Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-diagram.svg" alt="Diagram: Estimation Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-diagram.svg" alt="Diagram: Estimation Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-sticky.svg" alt="Sticky Note: Estimation Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/estimation-phase-sticky.svg" alt="Sticky Note: Estimation Phase" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@ Orders of magnitude matter. We compute storage, bandwidth, and QPS before choosi
 
 ### High-Level Design Phase
 
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-handwritten.svg" alt="Handwritten: High-Level Design Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-handwritten.svg" alt="Handwritten: High-Level Design Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-diagram.svg" alt="Diagram: High-Level Design Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-diagram.svg" alt="Diagram: High-Level Design Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-sticky.svg" alt="Sticky Note: High-Level Design Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/high-level-design-phase-sticky.svg" alt="Sticky Note: High-Level Design Phase" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ The following table captures the rationale for each technology choice in the Pas
 
 ### Deep Dive Phase
 
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-handwritten.svg" alt="Handwritten: Deep Dive Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-handwritten.svg" alt="Handwritten: Deep Dive Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-diagram.svg" alt="Diagram: Deep Dive Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-diagram.svg" alt="Diagram: Deep Dive Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-sticky.svg" alt="Sticky Note: Deep Dive Phase" width="30%">
+<a href="../../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/18-case-studies-classic/deep-dive-phase-sticky.svg" alt="Sticky Note: Deep Dive Phase" width="30%">
 </a>
 
 

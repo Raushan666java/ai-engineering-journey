@@ -42,14 +42,14 @@ flowchart LR
 
 ### Q1: What is PCI-DSS compliance and how does it affect Laravel application design?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-handwritten.svg" alt="Handwritten: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-handwritten.svg" alt="Handwritten: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-diagram.svg" alt="Diagram: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-diagram.svg" alt="Diagram: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-sticky.svg" alt="Sticky Note: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-sticky.svg" alt="Sticky Note: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
 </a>
 
 
@@ -69,14 +69,14 @@ protected function cardNumber(): Attribute
 
 ### Q2: Explain the difference between KYC and AML in financial systems.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-handwritten.svg" alt="Handwritten: Explain the difference between KYC and AML in financial systems." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-handwritten.svg" alt="Handwritten: Explain the difference between KYC and AML in financial systems." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-diagram.svg" alt="Diagram: Explain the difference between KYC and AML in financial systems." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-diagram.svg" alt="Diagram: Explain the difference between KYC and AML in financial systems." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-sticky.svg" alt="Sticky Note: Explain the difference between KYC and AML in financial systems." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-sticky.svg" alt="Sticky Note: Explain the difference between KYC and AML in financial systems." width="30%">
 </a>
 
 
@@ -84,14 +84,14 @@ Know Your Customer (KYC) is the identity verification process → collecting and
 
 ### Q3: What are the core data models in a financial transaction system?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-handwritten.svg" alt="Handwritten: What are the core data models in a financial transaction system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-handwritten.svg" alt="Handwritten: What are the core data models in a financial transaction system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-diagram.svg" alt="Diagram: What are the core data models in a financial transaction system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-diagram.svg" alt="Diagram: What are the core data models in a financial transaction system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-sticky.svg" alt="Sticky Note: What are the core data models in a financial transaction system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-sticky.svg" alt="Sticky Note: What are the core data models in a financial transaction system?" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ class LedgerEntry extends Model
 
 ### Q4: How does payment processing work end-to-end in a fintech platform?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-handwritten.svg" alt="Handwritten: How does payment processing work end-to-end in a fintech platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-handwritten.svg" alt="Handwritten: How does payment processing work end-to-end in a fintech platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-diagram.svg" alt="Diagram: How does payment processing work end-to-end in a fintech platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-diagram.svg" alt="Diagram: How does payment processing work end-to-end in a fintech platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-sticky.svg" alt="Sticky Note: How does payment processing work end-to-end in a fintech platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-sticky.svg" alt="Sticky Note: How does payment processing work end-to-end in a fintech platform?" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ The flow is: 1) Customer initiates payment via checkout form, 2) Frontend tokeni
 
 ### Q5: What is a trading signal and how is it generated programmatically?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-handwritten.svg" alt="Handwritten: What is a trading signal and how is it generated programmatically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-handwritten.svg" alt="Handwritten: What is a trading signal and how is it generated programmatically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-diagram.svg" alt="Diagram: What is a trading signal and how is it generated programmatically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-diagram.svg" alt="Diagram: What is a trading signal and how is it generated programmatically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-sticky.svg" alt="Sticky Note: What is a trading signal and how is it generated programmatically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-sticky.svg" alt="Sticky Note: What is a trading signal and how is it generated programmatically?" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ A trading signal is an indicator that suggests buying or selling an asset. Signa
 
 ### Q6: What is a chargeback and how do you handle it programmatically?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-handwritten.svg" alt="Handwritten: What is a chargeback and how do you handle it programmatically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-handwritten.svg" alt="Handwritten: What is a chargeback and how do you handle it programmatically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-diagram.svg" alt="Diagram: What is a chargeback and how do you handle it programmatically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-diagram.svg" alt="Diagram: What is a chargeback and how do you handle it programmatically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-sticky.svg" alt="Sticky Note: What is a chargeback and how do you handle it programmatically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-sticky.svg" alt="Sticky Note: What is a chargeback and how do you handle it programmatically?" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ A chargeback occurs when a cardholder disputes a transaction with their issuing 
 
 ### Q7: Build a fraud detection agent with Laravel AI SDK.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-handwritten.svg" alt="Handwritten: Build a fraud detection agent with Laravel AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-handwritten.svg" alt="Handwritten: Build a fraud detection agent with Laravel AI SDK." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-diagram.svg" alt="Diagram: Build a fraud detection agent with Laravel AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-diagram.svg" alt="Diagram: Build a fraud detection agent with Laravel AI SDK." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-sticky.svg" alt="Sticky Note: Build a fraud detection agent with Laravel AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-sticky.svg" alt="Sticky Note: Build a fraud detection agent with Laravel AI SDK." width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ class FraudDetectionAgent extends Agent
 
 ### Q8: How do you implement real-time transaction monitoring with anomaly detection?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-handwritten.svg" alt="Handwritten: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-handwritten.svg" alt="Handwritten: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-diagram.svg" alt="Diagram: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-diagram.svg" alt="Diagram: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-sticky.svg" alt="Sticky Note: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-sticky.svg" alt="Sticky Note: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ class TransactionMonitorAgent extends Agent
 
 ### Q9: Build a KYC/AML verification agent pipeline.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-handwritten.svg" alt="Handwritten: Build a KYC/AML verification agent pipeline." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-handwritten.svg" alt="Handwritten: Build a KYC/AML verification agent pipeline." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-diagram.svg" alt="Diagram: Build a KYC/AML verification agent pipeline." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-diagram.svg" alt="Diagram: Build a KYC/AML verification agent pipeline." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-sticky.svg" alt="Sticky Note: Build a KYC/AML verification agent pipeline." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-sticky.svg" alt="Sticky Note: Build a KYC/AML verification agent pipeline." width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ class KycSupervisorAgent extends Agent
 
 ### Q10: Implement credit scoring with AI in Laravel.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-handwritten.svg" alt="Handwritten: Implement credit scoring with AI in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-handwritten.svg" alt="Handwritten: Implement credit scoring with AI in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-diagram.svg" alt="Diagram: Implement credit scoring with AI in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-diagram.svg" alt="Diagram: Implement credit scoring with AI in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-sticky.svg" alt="Sticky Note: Implement credit scoring with AI in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-sticky.svg" alt="Sticky Note: Implement credit scoring with AI in Laravel." width="30%">
 </a>
 
 
@@ -512,14 +512,14 @@ class CreditScoringAgent extends Agent
 
 ### Q11: How do you build a trading signal automation pipeline?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-handwritten.svg" alt="Handwritten: How do you build a trading signal automation pipeline?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-handwritten.svg" alt="Handwritten: How do you build a trading signal automation pipeline?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-diagram.svg" alt="Diagram: How do you build a trading signal automation pipeline?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-diagram.svg" alt="Diagram: How do you build a trading signal automation pipeline?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-sticky.svg" alt="Sticky Note: How do you build a trading signal automation pipeline?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-sticky.svg" alt="Sticky Note: How do you build a trading signal automation pipeline?" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ class TradingSignalGenerator extends Agent
 
 ### Q12: Build a portfolio management agent with rebalancing logic.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-handwritten.svg" alt="Handwritten: Build a portfolio management agent with rebalancing logic." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-handwritten.svg" alt="Handwritten: Build a portfolio management agent with rebalancing logic." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-diagram.svg" alt="Diagram: Build a portfolio management agent with rebalancing logic." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-diagram.svg" alt="Diagram: Build a portfolio management agent with rebalancing logic." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-sticky.svg" alt="Sticky Note: Build a portfolio management agent with rebalancing logic." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-sticky.svg" alt="Sticky Note: Build a portfolio management agent with rebalancing logic." width="30%">
 </a>
 
 
@@ -661,14 +661,14 @@ class PortfolioManagementAgent extends Agent
 
 ### Q13: Design a payment reconciliation agent.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-handwritten.svg" alt="Handwritten: Design a payment reconciliation agent." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-handwritten.svg" alt="Handwritten: Design a payment reconciliation agent." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-diagram.svg" alt="Diagram: Design a payment reconciliation agent." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-diagram.svg" alt="Diagram: Design a payment reconciliation agent." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-sticky.svg" alt="Sticky Note: Design a payment reconciliation agent." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-sticky.svg" alt="Sticky Note: Design a payment reconciliation agent." width="30%">
 </a>
 
 
@@ -736,14 +736,14 @@ class PaymentReconciliationAgent extends Agent
 
 ### Q14: How do you automate regulatory reporting in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-handwritten.svg" alt="Handwritten: How do you automate regulatory reporting in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-handwritten.svg" alt="Handwritten: How do you automate regulatory reporting in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-diagram.svg" alt="Diagram: How do you automate regulatory reporting in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-diagram.svg" alt="Diagram: How do you automate regulatory reporting in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-sticky.svg" alt="Sticky Note: How do you automate regulatory reporting in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-sticky.svg" alt="Sticky Note: How do you automate regulatory reporting in Laravel?" width="30%">
 </a>
 
 
@@ -812,14 +812,14 @@ class RegulatoryReportingAgent extends Agent
 
 ### Q15: How do you design a PCI-DSS compliant Laravel application?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-handwritten.svg" alt="Handwritten: How do you design a PCI-DSS compliant Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-handwritten.svg" alt="Handwritten: How do you design a PCI-DSS compliant Laravel application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-diagram.svg" alt="Diagram: How do you design a PCI-DSS compliant Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-diagram.svg" alt="Diagram: How do you design a PCI-DSS compliant Laravel application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-sticky.svg" alt="Sticky Note: How do you design a PCI-DSS compliant Laravel application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-sticky.svg" alt="Sticky Note: How do you design a PCI-DSS compliant Laravel application?" width="30%">
 </a>
 
 
@@ -851,14 +851,14 @@ class PaymentMethod extends Model
 
 ### Q16: Design a financial transaction audit trail system.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-handwritten.svg" alt="Handwritten: Design a financial transaction audit trail system." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-handwritten.svg" alt="Handwritten: Design a financial transaction audit trail system." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-diagram.svg" alt="Diagram: Design a financial transaction audit trail system." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-diagram.svg" alt="Diagram: Design a financial transaction audit trail system." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-sticky.svg" alt="Sticky Note: Design a financial transaction audit trail system." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-sticky.svg" alt="Sticky Note: Design a financial transaction audit trail system." width="30%">
 </a>
 
 
@@ -906,14 +906,14 @@ class AuditTrail extends Model
 
 ### Q17: How do you ensure high availability for a financial system built with Laravel?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-handwritten.svg" alt="Handwritten: How do you ensure high availability for a financial system built with Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-handwritten.svg" alt="Handwritten: How do you ensure high availability for a financial system built with Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-diagram.svg" alt="Diagram: How do you ensure high availability for a financial system built with Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-diagram.svg" alt="Diagram: How do you ensure high availability for a financial system built with Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-sticky.svg" alt="Sticky Note: How do you ensure high availability for a financial system built with Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-sticky.svg" alt="Sticky Note: How do you ensure high availability for a financial system built with Laravel?" width="30%">
 </a>
 
 
@@ -943,14 +943,14 @@ Financial systems require multi-layer redundancy. Use Laravel Octane with Swoole
 
 ### Q18: Design a multi-currency ledger with double-entry bookkeeping.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-handwritten.svg" alt="Handwritten: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-handwritten.svg" alt="Handwritten: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-diagram.svg" alt="Diagram: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-diagram.svg" alt="Diagram: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-sticky.svg" alt="Sticky Note: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-sticky.svg" alt="Sticky Note: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ class JournalEntry extends Model
 
 ### Q19: How would you architect a fraud detection system that scales to millions of transactions per day?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-handwritten.svg" alt="Handwritten: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-handwritten.svg" alt="Handwritten: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-diagram.svg" alt="Diagram: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-diagram.svg" alt="Diagram: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-sticky.svg" alt="Sticky Note: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-sticky.svg" alt="Sticky Note: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
 </a>
 
 
@@ -1011,14 +1011,14 @@ Use a layered architecture: Layer 1 is a lightweight pre-filter in middleware th
 
 ### Q20: Design a payment processing system with integrated fraud detection.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-handwritten.svg" alt="Handwritten: Design a payment processing system with integrated fraud detection." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-handwritten.svg" alt="Handwritten: Design a payment processing system with integrated fraud detection." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-diagram.svg" alt="Diagram: Design a payment processing system with integrated fraud detection." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-diagram.svg" alt="Diagram: Design a payment processing system with integrated fraud detection." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-sticky.svg" alt="Sticky Note: Design a payment processing system with integrated fraud detection." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-sticky.svg" alt="Sticky Note: Design a payment processing system with integrated fraud detection." width="30%">
 </a>
 
 
@@ -1026,14 +1026,14 @@ Walk through the end-to-end design: 1) User submits payment via a frontend form 
 
 ### Q21: How would you handle financial data reconciliation between internal records and a bank statement?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-handwritten.svg" alt="Handwritten: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-handwritten.svg" alt="Handwritten: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-diagram.svg" alt="Diagram: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-diagram.svg" alt="Diagram: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-sticky.svg" alt="Sticky Note: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-sticky.svg" alt="Sticky Note: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
 </a>
 
 
@@ -1041,14 +1041,14 @@ First, I'd fetch the bank statement via an API feed or CSV import and parse it i
 
 ### Q22: Describe the architecture of a fintech platform built on Laravel.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-handwritten.svg" alt="Handwritten: Describe the architecture of a fintech platform built on Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-handwritten.svg" alt="Handwritten: Describe the architecture of a fintech platform built on Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-diagram.svg" alt="Diagram: Describe the architecture of a fintech platform built on Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-diagram.svg" alt="Diagram: Describe the architecture of a fintech platform built on Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-sticky.svg" alt="Sticky Note: Describe the architecture of a fintech platform built on Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-sticky.svg" alt="Sticky Note: Describe the architecture of a fintech platform built on Laravel." width="30%">
 </a>
 
 
@@ -1056,14 +1056,14 @@ The platform follows a modular monolith pattern with domain modules: Accounts, T
 
 ### Q23: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-handwritten.svg" alt="Handwritten: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-handwritten.svg" alt="Handwritten: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-diagram.svg" alt="Diagram: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-diagram.svg" alt="Diagram: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-sticky.svg" alt="Sticky Note: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-sticky.svg" alt="Sticky Note: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
 </a>
 
 
@@ -1071,14 +1071,14 @@ First, check the `FraudFlag` record for that transaction to see which rules trig
 
 ### Q24: How do you handle real-time balance consistency across distributed services in a financial system?
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-handwritten.svg" alt="Handwritten: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-handwritten.svg" alt="Handwritten: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-diagram.svg" alt="Diagram: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-diagram.svg" alt="Diagram: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-sticky.svg" alt="Sticky Note: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-sticky.svg" alt="Sticky Note: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
 </a>
 
 
@@ -1086,14 +1086,14 @@ Use an event-driven saga pattern. The `Account` service owns the balance. Debit/
 
 ### Q25: Design a system for handling payment disputes and chargebacks at scale.
 
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-handwritten.svg" alt="Handwritten: Design a system for handling payment disputes and chargebacks at scale." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-handwritten.svg" alt="Handwritten: Design a system for handling payment disputes and chargebacks at scale." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-diagram.svg" alt="Diagram: Design a system for handling payment disputes and chargebacks at scale." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-diagram.svg" alt="Diagram: Design a system for handling payment disputes and chargebacks at scale." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-sticky.svg" alt="Sticky Note: Design a system for handling payment disputes and chargebacks at scale." width="30%">
+<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-sticky.svg" alt="Sticky Note: Design a system for handling payment disputes and chargebacks at scale." width="30%">
 </a>
 
 

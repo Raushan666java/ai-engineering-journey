@@ -17,14 +17,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -41,14 +41,14 @@
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ flowchart LR
 
 ### Transmission Media Classification (Styled)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-handwritten.svg" alt="Handwritten: Transmission Media Classification (Styled)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-handwritten.svg" alt="Handwritten: Transmission Media Classification (Styled)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-diagram.svg" alt="Diagram: Transmission Media Classification (Styled)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-diagram.svg" alt="Diagram: Transmission Media Classification (Styled)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-sticky.svg" alt="Sticky Note: Transmission Media Classification (Styled)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/transmission-media-classification-styled-sticky.svg" alt="Sticky Note: Transmission Media Classification (Styled)" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ flowchart TB
 
 ### Richer Transmission Media Taxonomy with Performance Metrics
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-handwritten.svg" alt="Handwritten: Richer Transmission Media Taxonomy with Performance Metrics" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-handwritten.svg" alt="Handwritten: Richer Transmission Media Taxonomy with Performance Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-diagram.svg" alt="Diagram: Richer Transmission Media Taxonomy with Performance Metrics" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-diagram.svg" alt="Diagram: Richer Transmission Media Taxonomy with Performance Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-sticky.svg" alt="Sticky Note: Richer Transmission Media Taxonomy with Performance Metrics" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/richer-transmission-media-taxonomy-with-performance-metrics-sticky.svg" alt="Sticky Note: Richer Transmission Media Taxonomy with Performance Metrics" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ flowchart TB
 
 ### Path Loss and Link Budget Flow for Wireless
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-handwritten.svg" alt="Handwritten: Path Loss and Link Budget Flow for Wireless" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-handwritten.svg" alt="Handwritten: Path Loss and Link Budget Flow for Wireless" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-diagram.svg" alt="Diagram: Path Loss and Link Budget Flow for Wireless" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-diagram.svg" alt="Diagram: Path Loss and Link Budget Flow for Wireless" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-sticky.svg" alt="Sticky Note: Path Loss and Link Budget Flow for Wireless" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/path-loss-and-link-budget-flow-for-wireless-sticky.svg" alt="Sticky Note: Path Loss and Link Budget Flow for Wireless" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ flowchart LR
 
 ### 2.1.1 Definitions
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-handwritten.svg" alt="Handwritten: 2.1.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-handwritten.svg" alt="Handwritten: 2.1.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-diagram.svg" alt="Diagram: 2.1.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-diagram.svg" alt="Diagram: 2.1.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-sticky.svg" alt="Sticky Note: 2.1.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-1-definitions-sticky.svg" alt="Sticky Note: 2.1.1 Definitions" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ flowchart LR
 
 ### 2.1.2 Comparison: Analog vs Digital
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-handwritten.svg" alt="Handwritten: 2.1.2 Comparison: Analog vs Digital" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-handwritten.svg" alt="Handwritten: 2.1.2 Comparison: Analog vs Digital" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-diagram.svg" alt="Diagram: 2.1.2 Comparison: Analog vs Digital" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-diagram.svg" alt="Diagram: 2.1.2 Comparison: Analog vs Digital" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-sticky.svg" alt="Sticky Note: 2.1.2 Comparison: Analog vs Digital" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-2-comparison-analog-vs-digital-sticky.svg" alt="Sticky Note: 2.1.2 Comparison: Analog vs Digital" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ flowchart LR
 
 ### 2.1.3 Conversion Steps (Analog to Digital)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-handwritten.svg" alt="Handwritten: 2.1.3 Conversion Steps (Analog to Digital)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-handwritten.svg" alt="Handwritten: 2.1.3 Conversion Steps (Analog to Digital)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-diagram.svg" alt="Diagram: 2.1.3 Conversion Steps (Analog to Digital)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-diagram.svg" alt="Diagram: 2.1.3 Conversion Steps (Analog to Digital)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-sticky.svg" alt="Sticky Note: 2.1.3 Conversion Steps (Analog to Digital)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-1-3-conversion-steps-analog-to-digital-sticky.svg" alt="Sticky Note: 2.1.3 Conversion Steps (Analog to Digital)" width="30%">
 </a>
 
 
@@ -366,14 +366,14 @@ FUNCTION analogToDigital(signal, sampleRate, bitsPerSample):
 
 ### 2.2.1 Periodic Signals
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-handwritten.svg" alt="Handwritten: 2.2.1 Periodic Signals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-handwritten.svg" alt="Handwritten: 2.2.1 Periodic Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-diagram.svg" alt="Diagram: 2.2.1 Periodic Signals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-diagram.svg" alt="Diagram: 2.2.1 Periodic Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-sticky.svg" alt="Sticky Note: 2.2.1 Periodic Signals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-1-periodic-signals-sticky.svg" alt="Sticky Note: 2.2.1 Periodic Signals" width="30%">
 </a>
 
 
@@ -444,14 +444,14 @@ FUNCTION analyzePeriod(signal, sampleRate):
 
 ### 2.2.2 Composite Signals
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-handwritten.svg" alt="Handwritten: 2.2.2 Composite Signals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-handwritten.svg" alt="Handwritten: 2.2.2 Composite Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-diagram.svg" alt="Diagram: 2.2.2 Composite Signals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-diagram.svg" alt="Diagram: 2.2.2 Composite Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-sticky.svg" alt="Sticky Note: 2.2.2 Composite Signals" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-2-composite-signals-sticky.svg" alt="Sticky Note: 2.2.2 Composite Signals" width="30%">
 </a>
 
 
@@ -523,14 +523,14 @@ FFT of above reveals two peaks: one at 2 Hz (magnitude 1.0) and one at 6 Hz (mag
 
 ### 2.2.3 C++ Implementation — Signal Generation and Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-handwritten.svg" alt="Handwritten: 2.2.3 C++ Implementation — Signal Generation and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-handwritten.svg" alt="Handwritten: 2.2.3 C++ Implementation — Signal Generation and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-diagram.svg" alt="Diagram: 2.2.3 C++ Implementation — Signal Generation and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-diagram.svg" alt="Diagram: 2.2.3 C++ Implementation — Signal Generation and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-sticky.svg" alt="Sticky Note: 2.2.3 C++ Implementation — Signal Generation and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-3-c-implementation-signal-generation-and-analysis-sticky.svg" alt="Sticky Note: 2.2.3 C++ Implementation — Signal Generation and Analysis" width="30%">
 </a>
 
 
@@ -609,14 +609,14 @@ int main() {
 
 ### 2.2.4 Python Implementation — Signal Generation and Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-handwritten.svg" alt="Handwritten: 2.2.4 Python Implementation — Signal Generation and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-handwritten.svg" alt="Handwritten: 2.2.4 Python Implementation — Signal Generation and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-diagram.svg" alt="Diagram: 2.2.4 Python Implementation — Signal Generation and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-diagram.svg" alt="Diagram: 2.2.4 Python Implementation — Signal Generation and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-sticky.svg" alt="Sticky Note: 2.2.4 Python Implementation — Signal Generation and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-2-4-python-implementation-signal-generation-and-analysis-sticky.svg" alt="Sticky Note: 2.2.4 Python Implementation — Signal Generation and Analysis" width="30%">
 </a>
 
 
@@ -664,14 +664,14 @@ if __name__ == "__main__":
 
 ### 2.3.1 Key Definitions
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-handwritten.svg" alt="Handwritten: 2.3.1 Key Definitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-handwritten.svg" alt="Handwritten: 2.3.1 Key Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-diagram.svg" alt="Diagram: 2.3.1 Key Definitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-diagram.svg" alt="Diagram: 2.3.1 Key Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-sticky.svg" alt="Sticky Note: 2.3.1 Key Definitions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-1-key-definitions-sticky.svg" alt="Sticky Note: 2.3.1 Key Definitions" width="30%">
 </a>
 
 
@@ -689,14 +689,14 @@ if __name__ == "__main__":
 
 ### 2.3.2 Steps to Compute Total Latency
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-handwritten.svg" alt="Handwritten: 2.3.2 Steps to Compute Total Latency" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-handwritten.svg" alt="Handwritten: 2.3.2 Steps to Compute Total Latency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-diagram.svg" alt="Diagram: 2.3.2 Steps to Compute Total Latency" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-diagram.svg" alt="Diagram: 2.3.2 Steps to Compute Total Latency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-sticky.svg" alt="Sticky Note: 2.3.2 Steps to Compute Total Latency" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-2-steps-to-compute-total-latency-sticky.svg" alt="Sticky Note: 2.3.2 Steps to Compute Total Latency" width="30%">
 </a>
 
 
@@ -733,14 +733,14 @@ FUNCTION computeBDP(bandwidth_bps, distance_m, velocityFactor, frameSize_bits):
 
 ### 2.3.3 C++ Implementation — Latency and BDP Calculator
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-handwritten.svg" alt="Handwritten: 2.3.3 C++ Implementation — Latency and BDP Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-handwritten.svg" alt="Handwritten: 2.3.3 C++ Implementation — Latency and BDP Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-diagram.svg" alt="Diagram: 2.3.3 C++ Implementation — Latency and BDP Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-diagram.svg" alt="Diagram: 2.3.3 C++ Implementation — Latency and BDP Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-sticky.svg" alt="Sticky Note: 2.3.3 C++ Implementation — Latency and BDP Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-3-c-implementation-latency-and-bdp-calculator-sticky.svg" alt="Sticky Note: 2.3.3 C++ Implementation — Latency and BDP Calculator" width="30%">
 </a>
 
 
@@ -788,14 +788,14 @@ int main() {
 
 ### 2.3.4 Python Implementation — Throughput Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-handwritten.svg" alt="Handwritten: 2.3.4 Python Implementation — Throughput Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-handwritten.svg" alt="Handwritten: 2.3.4 Python Implementation — Throughput Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-diagram.svg" alt="Diagram: 2.3.4 Python Implementation — Throughput Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-diagram.svg" alt="Diagram: 2.3.4 Python Implementation — Throughput Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-sticky.svg" alt="Sticky Note: 2.3.4 Python Implementation — Throughput Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-3-4-python-implementation-throughput-simulator-sticky.svg" alt="Sticky Note: 2.3.4 Python Implementation — Throughput Simulator" width="30%">
 </a>
 
 
@@ -887,14 +887,14 @@ Guided media provide a physical conduit for electromagnetic signals. The choice 
 
 ### 2.4.1 Twisted Pair
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-handwritten.svg" alt="Handwritten: 2.4.1 Twisted Pair" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-handwritten.svg" alt="Handwritten: 2.4.1 Twisted Pair" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-diagram.svg" alt="Diagram: 2.4.1 Twisted Pair" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-diagram.svg" alt="Diagram: 2.4.1 Twisted Pair" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-sticky.svg" alt="Sticky Note: 2.4.1 Twisted Pair" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-1-twisted-pair-sticky.svg" alt="Sticky Note: 2.4.1 Twisted Pair" width="30%">
 </a>
 
 
@@ -944,14 +944,14 @@ Twisted pair cable consists of two insulated copper wires twisted together. Twis
 
 ### 2.4.2 Coaxial Cable
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-handwritten.svg" alt="Handwritten: 2.4.2 Coaxial Cable" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-handwritten.svg" alt="Handwritten: 2.4.2 Coaxial Cable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-diagram.svg" alt="Diagram: 2.4.2 Coaxial Cable" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-diagram.svg" alt="Diagram: 2.4.2 Coaxial Cable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-sticky.svg" alt="Sticky Note: 2.4.2 Coaxial Cable" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-2-coaxial-cable-sticky.svg" alt="Sticky Note: 2.4.2 Coaxial Cable" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ Coaxial cable has a central copper conductor surrounded by an insulating layer, 
 
 ### 2.4.3 Optical Fiber
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-handwritten.svg" alt="Handwritten: 2.4.3 Optical Fiber" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-handwritten.svg" alt="Handwritten: 2.4.3 Optical Fiber" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-diagram.svg" alt="Diagram: 2.4.3 Optical Fiber" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-diagram.svg" alt="Diagram: 2.4.3 Optical Fiber" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-sticky.svg" alt="Sticky Note: 2.4.3 Optical Fiber" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-3-optical-fiber-sticky.svg" alt="Sticky Note: 2.4.3 Optical Fiber" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ Optical fiber transmits light pulses through a glass or plastic core by total in
 
 ### 2.4.4 Guided Media Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-handwritten.svg" alt="Handwritten: 2.4.4 Guided Media Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-handwritten.svg" alt="Handwritten: 2.4.4 Guided Media Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-diagram.svg" alt="Diagram: 2.4.4 Guided Media Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-diagram.svg" alt="Diagram: 2.4.4 Guided Media Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-sticky.svg" alt="Sticky Note: 2.4.4 Guided Media Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-4-4-guided-media-comparison-table-sticky.svg" alt="Sticky Note: 2.4.4 Guided Media Comparison Table" width="30%">
 </a>
 
 
@@ -1084,14 +1084,14 @@ Wireless transmission uses electromagnetic waves propagated through free space. 
 
 ### 2.5.1 Radio Waves
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-handwritten.svg" alt="Handwritten: 2.5.1 Radio Waves" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-handwritten.svg" alt="Handwritten: 2.5.1 Radio Waves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-diagram.svg" alt="Diagram: 2.5.1 Radio Waves" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-diagram.svg" alt="Diagram: 2.5.1 Radio Waves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-sticky.svg" alt="Sticky Note: 2.5.1 Radio Waves" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-1-radio-waves-sticky.svg" alt="Sticky Note: 2.5.1 Radio Waves" width="30%">
 </a>
 
 
@@ -1148,14 +1148,14 @@ FUNCTION linkBudget(txPower_dBm, txGain_dBi, rxGain_dBi, fspl_dB, fadeMargin_dB)
 
 ### 2.5.2 Microwaves
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-handwritten.svg" alt="Handwritten: 2.5.2 Microwaves" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-handwritten.svg" alt="Handwritten: 2.5.2 Microwaves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-diagram.svg" alt="Diagram: 2.5.2 Microwaves" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-diagram.svg" alt="Diagram: 2.5.2 Microwaves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-sticky.svg" alt="Sticky Note: 2.5.2 Microwaves" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-2-microwaves-sticky.svg" alt="Sticky Note: 2.5.2 Microwaves" width="30%">
 </a>
 
 
@@ -1181,14 +1181,14 @@ For a 10 km link at 5 GHz (λ = 0.06 m): r = 0.5 × √(0.06 × 10000) = 0.5 × 
 
 ### 2.5.3 Infrared
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-handwritten.svg" alt="Handwritten: 2.5.3 Infrared" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-handwritten.svg" alt="Handwritten: 2.5.3 Infrared" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-diagram.svg" alt="Diagram: 2.5.3 Infrared" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-diagram.svg" alt="Diagram: 2.5.3 Infrared" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-sticky.svg" alt="Sticky Note: 2.5.3 Infrared" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-3-infrared-sticky.svg" alt="Sticky Note: 2.5.3 Infrared" width="30%">
 </a>
 
 
@@ -1213,14 +1213,14 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 
 ### 2.5.4 Unguided Media Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-handwritten.svg" alt="Handwritten: 2.5.4 Unguided Media Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-handwritten.svg" alt="Handwritten: 2.5.4 Unguided Media Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-diagram.svg" alt="Diagram: 2.5.4 Unguided Media Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-diagram.svg" alt="Diagram: 2.5.4 Unguided Media Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-sticky.svg" alt="Sticky Note: 2.5.4 Unguided Media Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-5-4-unguided-media-comparison-table-sticky.svg" alt="Sticky Note: 2.5.4 Unguided Media Comparison Table" width="30%">
 </a>
 
 
@@ -1253,14 +1253,14 @@ Infrared (IR) waves, with frequencies above 300 GHz (300 GHz–400 THz), are use
 
 ### 2.6.1 NRZ (Non-Return-to-Zero)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-handwritten.svg" alt="Handwritten: 2.6.1 NRZ (Non-Return-to-Zero)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-handwritten.svg" alt="Handwritten: 2.6.1 NRZ (Non-Return-to-Zero)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-diagram.svg" alt="Diagram: 2.6.1 NRZ (Non-Return-to-Zero)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-diagram.svg" alt="Diagram: 2.6.1 NRZ (Non-Return-to-Zero)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-sticky.svg" alt="Sticky Note: 2.6.1 NRZ (Non-Return-to-Zero)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-1-nrz-non-return-to-zero-sticky.svg" alt="Sticky Note: 2.6.1 NRZ (Non-Return-to-Zero)" width="30%">
 </a>
 
 
@@ -1308,14 +1308,14 @@ FUNCTION nrzEncode(bits):
 
 ### 2.6.2 Manchester Encoding
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-handwritten.svg" alt="Handwritten: 2.6.2 Manchester Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-handwritten.svg" alt="Handwritten: 2.6.2 Manchester Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-diagram.svg" alt="Diagram: 2.6.2 Manchester Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-diagram.svg" alt="Diagram: 2.6.2 Manchester Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-sticky.svg" alt="Sticky Note: 2.6.2 Manchester Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-2-manchester-encoding-sticky.svg" alt="Sticky Note: 2.6.2 Manchester Encoding" width="30%">
 </a>
 
 
@@ -1356,14 +1356,14 @@ FUNCTION manchesterEncode(bits):
 
 ### 2.6.3 Differential Manchester
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-handwritten.svg" alt="Handwritten: 2.6.3 Differential Manchester" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-handwritten.svg" alt="Handwritten: 2.6.3 Differential Manchester" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-diagram.svg" alt="Diagram: 2.6.3 Differential Manchester" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-diagram.svg" alt="Diagram: 2.6.3 Differential Manchester" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-sticky.svg" alt="Sticky Note: 2.6.3 Differential Manchester" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-3-differential-manchester-sticky.svg" alt="Sticky Note: 2.6.3 Differential Manchester" width="30%">
 </a>
 
 
@@ -1387,14 +1387,14 @@ Differential Manchester (used in Token Ring): bit = 0 means transition at start 
 
 ### 2.6.4 4B/5B Encoding
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-handwritten.svg" alt="Handwritten: 2.6.4 4B/5B Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-handwritten.svg" alt="Handwritten: 2.6.4 4B/5B Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-diagram.svg" alt="Diagram: 2.6.4 4B/5B Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-diagram.svg" alt="Diagram: 2.6.4 4B/5B Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-sticky.svg" alt="Sticky Note: 2.6.4 4B/5B Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-4-4b-5b-encoding-sticky.svg" alt="Sticky Note: 2.6.4 4B/5B Encoding" width="30%">
 </a>
 
 
@@ -1426,14 +1426,14 @@ Special codes: 11111 = idle, 11000 = start-of-stream delimiter, 10001 = end-of-s
 
 ### 2.6.5 8B/10B Encoding
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-handwritten.svg" alt="Handwritten: 2.6.5 8B/10B Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-handwritten.svg" alt="Handwritten: 2.6.5 8B/10B Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-diagram.svg" alt="Diagram: 2.6.5 8B/10B Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-diagram.svg" alt="Diagram: 2.6.5 8B/10B Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-sticky.svg" alt="Sticky Note: 2.6.5 8B/10B Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-5-8b-10b-encoding-sticky.svg" alt="Sticky Note: 2.6.5 8B/10B Encoding" width="30%">
 </a>
 
 
@@ -1473,14 +1473,14 @@ FUNCTION encode8b10b(byte, currentRD):
 
 ### 2.6.6 Encoding Schemes Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-handwritten.svg" alt="Handwritten: 2.6.6 Encoding Schemes Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-handwritten.svg" alt="Handwritten: 2.6.6 Encoding Schemes Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-diagram.svg" alt="Diagram: 2.6.6 Encoding Schemes Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-diagram.svg" alt="Diagram: 2.6.6 Encoding Schemes Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-sticky.svg" alt="Sticky Note: 2.6.6 Encoding Schemes Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-6-encoding-schemes-comparison-table-sticky.svg" alt="Sticky Note: 2.6.6 Encoding Schemes Comparison Table" width="30%">
 </a>
 
 
@@ -1507,14 +1507,14 @@ FUNCTION encode8b10b(byte, currentRD):
 
 ### 2.6.7 C++ Implementation — Signal Encoding
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-handwritten.svg" alt="Handwritten: 2.6.7 C++ Implementation — Signal Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-handwritten.svg" alt="Handwritten: 2.6.7 C++ Implementation — Signal Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-diagram.svg" alt="Diagram: 2.6.7 C++ Implementation — Signal Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-diagram.svg" alt="Diagram: 2.6.7 C++ Implementation — Signal Encoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-sticky.svg" alt="Sticky Note: 2.6.7 C++ Implementation — Signal Encoding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-7-c-implementation-signal-encoding-sticky.svg" alt="Sticky Note: 2.6.7 C++ Implementation — Signal Encoding" width="30%">
 </a>
 
 
@@ -1620,14 +1620,14 @@ int main() {
 
 ### 2.6.8 Python Implementation — Signal Encoding Library
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-handwritten.svg" alt="Handwritten: 2.6.8 Python Implementation — Signal Encoding Library" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-handwritten.svg" alt="Handwritten: 2.6.8 Python Implementation — Signal Encoding Library" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-diagram.svg" alt="Diagram: 2.6.8 Python Implementation — Signal Encoding Library" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-diagram.svg" alt="Diagram: 2.6.8 Python Implementation — Signal Encoding Library" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-sticky.svg" alt="Sticky Note: 2.6.8 Python Implementation — Signal Encoding Library" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-6-8-python-implementation-signal-encoding-library-sticky.svg" alt="Sticky Note: 2.6.8 Python Implementation — Signal Encoding Library" width="30%">
 </a>
 
 
@@ -1833,14 +1833,14 @@ DC disparity: 2
 
 ### 2.7.1 Amplitude Shift Keying (ASK)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-handwritten.svg" alt="Handwritten: 2.7.1 Amplitude Shift Keying (ASK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-handwritten.svg" alt="Handwritten: 2.7.1 Amplitude Shift Keying (ASK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-diagram.svg" alt="Diagram: 2.7.1 Amplitude Shift Keying (ASK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-diagram.svg" alt="Diagram: 2.7.1 Amplitude Shift Keying (ASK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-sticky.svg" alt="Sticky Note: 2.7.1 Amplitude Shift Keying (ASK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-1-amplitude-shift-keying-ask-sticky.svg" alt="Sticky Note: 2.7.1 Amplitude Shift Keying (ASK)" width="30%">
 </a>
 
 
@@ -1886,14 +1886,14 @@ FUNCTION askModulate(bits, carrierFreq, sampleRate, bitDuration):
 
 ### 2.7.2 Frequency Shift Keying (FSK)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-handwritten.svg" alt="Handwritten: 2.7.2 Frequency Shift Keying (FSK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-handwritten.svg" alt="Handwritten: 2.7.2 Frequency Shift Keying (FSK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-diagram.svg" alt="Diagram: 2.7.2 Frequency Shift Keying (FSK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-diagram.svg" alt="Diagram: 2.7.2 Frequency Shift Keying (FSK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-sticky.svg" alt="Sticky Note: 2.7.2 Frequency Shift Keying (FSK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-2-frequency-shift-keying-fsk-sticky.svg" alt="Sticky Note: 2.7.2 Frequency Shift Keying (FSK)" width="30%">
 </a>
 
 
@@ -1909,14 +1909,14 @@ FSK varies the carrier frequency to represent data. 1 = frequency f1, 0 = freque
 
 ### 2.7.3 Phase Shift Keying (PSK)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-handwritten.svg" alt="Handwritten: 2.7.3 Phase Shift Keying (PSK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-handwritten.svg" alt="Handwritten: 2.7.3 Phase Shift Keying (PSK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-diagram.svg" alt="Diagram: 2.7.3 Phase Shift Keying (PSK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-diagram.svg" alt="Diagram: 2.7.3 Phase Shift Keying (PSK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-sticky.svg" alt="Sticky Note: 2.7.3 Phase Shift Keying (PSK)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-3-phase-shift-keying-psk-sticky.svg" alt="Sticky Note: 2.7.3 Phase Shift Keying (PSK)" width="30%">
 </a>
 
 
@@ -1965,14 +1965,14 @@ PSK varies the carrier phase to represent data. BPSK: 0° phase = 1, 180° phase
 
 ### 2.7.4 Quadrature Amplitude Modulation (QAM)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-handwritten.svg" alt="Handwritten: 2.7.4 Quadrature Amplitude Modulation (QAM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-handwritten.svg" alt="Handwritten: 2.7.4 Quadrature Amplitude Modulation (QAM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-diagram.svg" alt="Diagram: 2.7.4 Quadrature Amplitude Modulation (QAM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-diagram.svg" alt="Diagram: 2.7.4 Quadrature Amplitude Modulation (QAM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-sticky.svg" alt="Sticky Note: 2.7.4 Quadrature Amplitude Modulation (QAM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-4-quadrature-amplitude-modulation-qam-sticky.svg" alt="Sticky Note: 2.7.4 Quadrature Amplitude Modulation (QAM)" width="30%">
 </a>
 
 
@@ -2028,14 +2028,14 @@ FUNCTION qpskModulate(bits, carrierFreq, sampleRate, symbolDuration):
 
 ### 2.7.5 Modulation Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-handwritten.svg" alt="Handwritten: 2.7.5 Modulation Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-handwritten.svg" alt="Handwritten: 2.7.5 Modulation Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-diagram.svg" alt="Diagram: 2.7.5 Modulation Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-diagram.svg" alt="Diagram: 2.7.5 Modulation Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-sticky.svg" alt="Sticky Note: 2.7.5 Modulation Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-5-modulation-comparison-table-sticky.svg" alt="Sticky Note: 2.7.5 Modulation Comparison Table" width="30%">
 </a>
 
 
@@ -2063,14 +2063,14 @@ FUNCTION qpskModulate(bits, carrierFreq, sampleRate, symbolDuration):
 
 ### 2.7.6 C++ Implementation — Modulation Simulation
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-handwritten.svg" alt="Handwritten: 2.7.6 C++ Implementation — Modulation Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-handwritten.svg" alt="Handwritten: 2.7.6 C++ Implementation — Modulation Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-diagram.svg" alt="Diagram: 2.7.6 C++ Implementation — Modulation Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-diagram.svg" alt="Diagram: 2.7.6 C++ Implementation — Modulation Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-sticky.svg" alt="Sticky Note: 2.7.6 C++ Implementation — Modulation Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-6-c-implementation-modulation-simulation-sticky.svg" alt="Sticky Note: 2.7.6 C++ Implementation — Modulation Simulation" width="30%">
 </a>
 
 
@@ -2168,14 +2168,14 @@ int main() {
 
 ### 2.7.7 Python Implementation — Modulation Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-handwritten.svg" alt="Handwritten: 2.7.7 Python Implementation — Modulation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-handwritten.svg" alt="Handwritten: 2.7.7 Python Implementation — Modulation Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-diagram.svg" alt="Diagram: 2.7.7 Python Implementation — Modulation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-diagram.svg" alt="Diagram: 2.7.7 Python Implementation — Modulation Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-sticky.svg" alt="Sticky Note: 2.7.7 Python Implementation — Modulation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-7-7-python-implementation-modulation-simulator-sticky.svg" alt="Sticky Note: 2.7.7 Python Implementation — Modulation Simulator" width="30%">
 </a>
 
 
@@ -2296,14 +2296,14 @@ if __name__ == "__main__":
 
 ### 2.8.1 Frequency-Division Multiplexing (FDM)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-handwritten.svg" alt="Handwritten: 2.8.1 Frequency-Division Multiplexing (FDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-handwritten.svg" alt="Handwritten: 2.8.1 Frequency-Division Multiplexing (FDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-diagram.svg" alt="Diagram: 2.8.1 Frequency-Division Multiplexing (FDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-diagram.svg" alt="Diagram: 2.8.1 Frequency-Division Multiplexing (FDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-sticky.svg" alt="Sticky Note: 2.8.1 Frequency-Division Multiplexing (FDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-1-frequency-division-multiplexing-fdm-sticky.svg" alt="Sticky Note: 2.8.1 Frequency-Division Multiplexing (FDM)" width="30%">
 </a>
 
 
@@ -2361,14 +2361,14 @@ FUNCTION fdmDemultiplex(multiplexed, carrierFreq, sampleRate):
 
 ### 2.8.2 Time-Division Multiplexing (TDM)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-handwritten.svg" alt="Handwritten: 2.8.2 Time-Division Multiplexing (TDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-handwritten.svg" alt="Handwritten: 2.8.2 Time-Division Multiplexing (TDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-diagram.svg" alt="Diagram: 2.8.2 Time-Division Multiplexing (TDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-diagram.svg" alt="Diagram: 2.8.2 Time-Division Multiplexing (TDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-sticky.svg" alt="Sticky Note: 2.8.2 Time-Division Multiplexing (TDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-2-time-division-multiplexing-tdm-sticky.svg" alt="Sticky Note: 2.8.2 Time-Division Multiplexing (TDM)" width="30%">
 </a>
 
 
@@ -2423,14 +2423,14 @@ If Ch2 has no data in frame 2 (synchronous): slots are still allocated (wasted).
 
 ### 2.8.3 Wavelength-Division Multiplexing (WDM)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-handwritten.svg" alt="Handwritten: 2.8.3 Wavelength-Division Multiplexing (WDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-handwritten.svg" alt="Handwritten: 2.8.3 Wavelength-Division Multiplexing (WDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-diagram.svg" alt="Diagram: 2.8.3 Wavelength-Division Multiplexing (WDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-diagram.svg" alt="Diagram: 2.8.3 Wavelength-Division Multiplexing (WDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-sticky.svg" alt="Sticky Note: 2.8.3 Wavelength-Division Multiplexing (WDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-3-wavelength-division-multiplexing-wdm-sticky.svg" alt="Sticky Note: 2.8.3 Wavelength-Division Multiplexing (WDM)" width="30%">
 </a>
 
 
@@ -2471,14 +2471,14 @@ WDM is FDM applied to optical fiber. Each wavelength (color) of light carries an
 
 ### 2.8.4 Code-Division Multiplexing (CDM)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-handwritten.svg" alt="Handwritten: 2.8.4 Code-Division Multiplexing (CDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-handwritten.svg" alt="Handwritten: 2.8.4 Code-Division Multiplexing (CDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-diagram.svg" alt="Diagram: 2.8.4 Code-Division Multiplexing (CDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-diagram.svg" alt="Diagram: 2.8.4 Code-Division Multiplexing (CDM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-sticky.svg" alt="Sticky Note: 2.8.4 Code-Division Multiplexing (CDM)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-4-code-division-multiplexing-cdm-sticky.svg" alt="Sticky Note: 2.8.4 Code-Division Multiplexing (CDM)" width="30%">
 </a>
 
 
@@ -2544,14 +2544,14 @@ FUNCTION cdmaDecode(combinedSignal, chipSequence, chipsPerBit):
 
 ### 2.8.5 Multiplexing Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-handwritten.svg" alt="Handwritten: 2.8.5 Multiplexing Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-handwritten.svg" alt="Handwritten: 2.8.5 Multiplexing Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-diagram.svg" alt="Diagram: 2.8.5 Multiplexing Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-diagram.svg" alt="Diagram: 2.8.5 Multiplexing Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-sticky.svg" alt="Sticky Note: 2.8.5 Multiplexing Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-5-multiplexing-comparison-table-sticky.svg" alt="Sticky Note: 2.8.5 Multiplexing Comparison Table" width="30%">
 </a>
 
 
@@ -2569,14 +2569,14 @@ FUNCTION cdmaDecode(combinedSignal, chipSequence, chipsPerBit):
 
 ### 2.8.6 C++ Implementation — Multiplexer Simulation
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-handwritten.svg" alt="Handwritten: 2.8.6 C++ Implementation — Multiplexer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-handwritten.svg" alt="Handwritten: 2.8.6 C++ Implementation — Multiplexer Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-diagram.svg" alt="Diagram: 2.8.6 C++ Implementation — Multiplexer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-diagram.svg" alt="Diagram: 2.8.6 C++ Implementation — Multiplexer Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-sticky.svg" alt="Sticky Note: 2.8.6 C++ Implementation — Multiplexer Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-6-c-implementation-multiplexer-simulation-sticky.svg" alt="Sticky Note: 2.8.6 C++ Implementation — Multiplexer Simulation" width="30%">
 </a>
 
 
@@ -2703,14 +2703,14 @@ int main() {
 
 ### 2.8.7 Python Implementation — Multiplexer Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-handwritten.svg" alt="Handwritten: 2.8.7 Python Implementation — Multiplexer Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-handwritten.svg" alt="Handwritten: 2.8.7 Python Implementation — Multiplexer Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-diagram.svg" alt="Diagram: 2.8.7 Python Implementation — Multiplexer Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-diagram.svg" alt="Diagram: 2.8.7 Python Implementation — Multiplexer Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-sticky.svg" alt="Sticky Note: 2.8.7 Python Implementation — Multiplexer Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-8-7-python-implementation-multiplexer-simulator-sticky.svg" alt="Sticky Note: 2.8.7 Python Implementation — Multiplexer Simulator" width="30%">
 </a>
 
 
@@ -2817,14 +2817,14 @@ if __name__ == "__main__":
 
 ### 2.9.1 Circuit Switching
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-handwritten.svg" alt="Handwritten: 2.9.1 Circuit Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-handwritten.svg" alt="Handwritten: 2.9.1 Circuit Switching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-diagram.svg" alt="Diagram: 2.9.1 Circuit Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-diagram.svg" alt="Diagram: 2.9.1 Circuit Switching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-sticky.svg" alt="Sticky Note: 2.9.1 Circuit Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-1-circuit-switching-sticky.svg" alt="Sticky Note: 2.9.1 Circuit Switching" width="30%">
 </a>
 
 
@@ -2852,14 +2852,14 @@ Circuit switching establishes a dedicated path between endpoints before data tra
 
 ### 2.9.2 Packet Switching
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-handwritten.svg" alt="Handwritten: 2.9.2 Packet Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-handwritten.svg" alt="Handwritten: 2.9.2 Packet Switching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-diagram.svg" alt="Diagram: 2.9.2 Packet Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-diagram.svg" alt="Diagram: 2.9.2 Packet Switching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-sticky.svg" alt="Sticky Note: 2.9.2 Packet Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-2-packet-switching-sticky.svg" alt="Sticky Note: 2.9.2 Packet Switching" width="30%">
 </a>
 
 
@@ -2885,14 +2885,14 @@ Packet switching breaks data into packets that travel independently through the 
 
 ### 2.9.3 Message Switching
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-handwritten.svg" alt="Handwritten: 2.9.3 Message Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-handwritten.svg" alt="Handwritten: 2.9.3 Message Switching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-diagram.svg" alt="Diagram: 2.9.3 Message Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-diagram.svg" alt="Diagram: 2.9.3 Message Switching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-sticky.svg" alt="Sticky Note: 2.9.3 Message Switching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-9-3-message-switching-sticky.svg" alt="Sticky Note: 2.9.3 Message Switching" width="30%">
 </a>
 
 
@@ -2923,14 +2923,14 @@ The PSTN was originally designed for analog voice using circuit switching. Moder
 
 ### 2.10.1 Digital Subscriber Line (DSL)
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-handwritten.svg" alt="Handwritten: 2.10.1 Digital Subscriber Line (DSL)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-handwritten.svg" alt="Handwritten: 2.10.1 Digital Subscriber Line (DSL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-diagram.svg" alt="Diagram: 2.10.1 Digital Subscriber Line (DSL)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-diagram.svg" alt="Diagram: 2.10.1 Digital Subscriber Line (DSL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-sticky.svg" alt="Sticky Note: 2.10.1 Digital Subscriber Line (DSL)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-1-digital-subscriber-line-dsl-sticky.svg" alt="Sticky Note: 2.10.1 Digital Subscriber Line (DSL)" width="30%">
 </a>
 
 
@@ -2960,14 +2960,14 @@ DSL enables broadband Internet over the same twisted-pair local loop used for te
 
 ### 2.10.2 SONET/SDH
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-handwritten.svg" alt="Handwritten: 2.10.2 SONET/SDH" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-handwritten.svg" alt="Handwritten: 2.10.2 SONET/SDH" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-diagram.svg" alt="Diagram: 2.10.2 SONET/SDH" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-diagram.svg" alt="Diagram: 2.10.2 SONET/SDH" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-sticky.svg" alt="Sticky Note: 2.10.2 SONET/SDH" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/2-10-2-sonet-sdh-sticky.svg" alt="Sticky Note: 2.10.2 SONET/SDH" width="30%">
 </a>
 
 
@@ -2992,14 +2992,14 @@ Synchronous Optical Networking (SONET) / Synchronous Digital Hierarchy (SDH) pro
 
 ### Nyquist Theorem vs Shannon Theorem
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-handwritten.svg" alt="Handwritten: Nyquist Theorem vs Shannon Theorem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-handwritten.svg" alt="Handwritten: Nyquist Theorem vs Shannon Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-diagram.svg" alt="Diagram: Nyquist Theorem vs Shannon Theorem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-diagram.svg" alt="Diagram: Nyquist Theorem vs Shannon Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-sticky.svg" alt="Sticky Note: Nyquist Theorem vs Shannon Theorem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/nyquist-theorem-vs-shannon-theorem-sticky.svg" alt="Sticky Note: Nyquist Theorem vs Shannon Theorem" width="30%">
 </a>
 
 
@@ -3240,14 +3240,14 @@ LoRaWAN (51B frame)            | 0.05 Mbps | 0.04 Mbps | 79.7%
 
 ### SNR and Channel Capacity Interview Questions
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-handwritten.svg" alt="Handwritten: SNR and Channel Capacity Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-handwritten.svg" alt="Handwritten: SNR and Channel Capacity Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-diagram.svg" alt="Diagram: SNR and Channel Capacity Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-diagram.svg" alt="Diagram: SNR and Channel Capacity Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-sticky.svg" alt="Sticky Note: SNR and Channel Capacity Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/snr-and-channel-capacity-interview-questions-sticky.svg" alt="Sticky Note: SNR and Channel Capacity Interview Questions" width="30%">
 </a>
 
 
@@ -3274,14 +3274,14 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ### Fiber vs Copper — Engineering Trade-offs
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-handwritten.svg" alt="Handwritten: Fiber vs Copper — Engineering Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-handwritten.svg" alt="Handwritten: Fiber vs Copper — Engineering Trade-offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-diagram.svg" alt="Diagram: Fiber vs Copper — Engineering Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-diagram.svg" alt="Diagram: Fiber vs Copper — Engineering Trade-offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-sticky.svg" alt="Sticky Note: Fiber vs Copper — Engineering Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/fiber-vs-copper-engineering-trade-offs-sticky.svg" alt="Sticky Note: Fiber vs Copper — Engineering Trade-offs" width="30%">
 </a>
 
 
@@ -3303,14 +3303,14 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ### Ethernet — 8B/10B and beyond
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-handwritten.svg" alt="Handwritten: Ethernet — 8B/10B and beyond" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-handwritten.svg" alt="Handwritten: Ethernet — 8B/10B and beyond" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-diagram.svg" alt="Diagram: Ethernet — 8B/10B and beyond" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-diagram.svg" alt="Diagram: Ethernet — 8B/10B and beyond" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-sticky.svg" alt="Sticky Note: Ethernet — 8B/10B and beyond" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/ethernet-8b-10b-and-beyond-sticky.svg" alt="Sticky Note: Ethernet — 8B/10B and beyond" width="30%">
 </a>
 
 
@@ -3328,14 +3328,14 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ### Wi-Fi — OFDM Modulation
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-handwritten.svg" alt="Handwritten: Wi-Fi — OFDM Modulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-handwritten.svg" alt="Handwritten: Wi-Fi — OFDM Modulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-diagram.svg" alt="Diagram: Wi-Fi — OFDM Modulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-diagram.svg" alt="Diagram: Wi-Fi — OFDM Modulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-sticky.svg" alt="Sticky Note: Wi-Fi — OFDM Modulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/wi-fi-ofdm-modulation-sticky.svg" alt="Sticky Note: Wi-Fi — OFDM Modulation" width="30%">
 </a>
 
 
@@ -3352,14 +3352,14 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ### DOCSIS — Cable Internet
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-handwritten.svg" alt="Handwritten: DOCSIS — Cable Internet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-handwritten.svg" alt="Handwritten: DOCSIS — Cable Internet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-diagram.svg" alt="Diagram: DOCSIS — Cable Internet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-diagram.svg" alt="Diagram: DOCSIS — Cable Internet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-sticky.svg" alt="Sticky Note: DOCSIS — Cable Internet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/docsis-cable-internet-sticky.svg" alt="Sticky Note: DOCSIS — Cable Internet" width="30%">
 </a>
 
 
@@ -3371,14 +3371,14 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ### Cellular — From 2G to 5G
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-handwritten.svg" alt="Handwritten: Cellular — From 2G to 5G" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-handwritten.svg" alt="Handwritten: Cellular — From 2G to 5G" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-diagram.svg" alt="Diagram: Cellular — From 2G to 5G" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-diagram.svg" alt="Diagram: Cellular — From 2G to 5G" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-sticky.svg" alt="Sticky Note: Cellular — From 2G to 5G" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/cellular-from-2g-to-5g-sticky.svg" alt="Sticky Note: Cellular — From 2G to 5G" width="30%">
 </a>
 
 
@@ -3392,14 +3392,14 @@ SNR_dB = 10 × log₁₀(31) ≈ 14.9 dB.
 
 ### Real-World Media Selection Guide
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-handwritten.svg" alt="Handwritten: Real-World Media Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-handwritten.svg" alt="Handwritten: Real-World Media Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-diagram.svg" alt="Diagram: Real-World Media Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-diagram.svg" alt="Diagram: Real-World Media Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-sticky.svg" alt="Sticky Note: Real-World Media Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/real-world-media-selection-guide-sticky.svg" alt="Sticky Note: Real-World Media Selection Guide" width="30%">
 </a>
 
 
@@ -3554,14 +3554,14 @@ The Nyquist theorem establishes the maximum data rate on a noiseless channel: 2B
 
 ### Coding Exercises
 
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-handwritten.svg" alt="Handwritten: Coding Exercises" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-handwritten.svg" alt="Handwritten: Coding Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-diagram.svg" alt="Diagram: Coding Exercises" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-diagram.svg" alt="Diagram: Coding Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-sticky.svg" alt="Sticky Note: Coding Exercises" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/02-physical-layer/coding-exercises-sticky.svg" alt="Sticky Note: Coding Exercises" width="30%">
 </a>
 
 

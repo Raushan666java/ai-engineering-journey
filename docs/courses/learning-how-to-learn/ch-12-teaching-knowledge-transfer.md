@@ -17,14 +17,14 @@ Teaching is the master key to learning. Every time you explain a concept to some
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ flowchart LR
 
 ### Q1: Why does teaching accelerate your own learning more than studying?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-handwritten.svg" alt="Handwritten: Why does teaching accelerate your own learning more than studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-handwritten.svg" alt="Handwritten: Why does teaching accelerate your own learning more than studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-diagram.svg" alt="Diagram: Why does teaching accelerate your own learning more than studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-diagram.svg" alt="Diagram: Why does teaching accelerate your own learning more than studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-sticky.svg" alt="Sticky Note: Why does teaching accelerate your own learning more than studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/why-does-teaching-accelerate-your-own-learning-more-than-studying-sticky.svg" alt="Sticky Note: Why does teaching accelerate your own learning more than studying?" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ class ProtegeEffectSimulator {
 
 ### Q2: How do you apply the Feynman technique at scale?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-handwritten.svg" alt="Handwritten: How do you apply the Feynman technique at scale?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-handwritten.svg" alt="Handwritten: How do you apply the Feynman technique at scale?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-diagram.svg" alt="Diagram: How do you apply the Feynman technique at scale?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-diagram.svg" alt="Diagram: How do you apply the Feynman technique at scale?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-sticky.svg" alt="Sticky Note: How do you apply the Feynman technique at scale?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-apply-the-feynman-technique-at-scale-sticky.svg" alt="Sticky Note: How do you apply the Feynman technique at scale?" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ class FeynmanTechnique {
 
 ### Q3: How does rubber duck debugging work as a teaching tool?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-handwritten.svg" alt="Handwritten: How does rubber duck debugging work as a teaching tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-handwritten.svg" alt="Handwritten: How does rubber duck debugging work as a teaching tool?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-diagram.svg" alt="Diagram: How does rubber duck debugging work as a teaching tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-diagram.svg" alt="Diagram: How does rubber duck debugging work as a teaching tool?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-sticky.svg" alt="Sticky Note: How does rubber duck debugging work as a teaching tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-rubber-duck-debugging-work-as-a-teaching-tool-sticky.svg" alt="Sticky Note: How does rubber duck debugging work as a teaching tool?" width="30%">
 </a>
 
 
@@ -366,14 +366,14 @@ class RubberDuckSession {
 
 ### Q4: How can pair programming accelerate learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-handwritten.svg" alt="Handwritten: How can pair programming accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-handwritten.svg" alt="Handwritten: How can pair programming accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-diagram.svg" alt="Diagram: How can pair programming accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-diagram.svg" alt="Diagram: How can pair programming accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-sticky.svg" alt="Sticky Note: How can pair programming accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-pair-programming-accelerate-learning-sticky.svg" alt="Sticky Note: How can pair programming accelerate learning?" width="30%">
 </a>
 
 
@@ -482,14 +482,14 @@ Retention rates after 1 week:
 
 ### Q5: How does building in public accelerate learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does building in public accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does building in public accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does building in public accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does building in public accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does building in public accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does building in public accelerate learning?" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ Learning is not linear — each post compounds on previous ones.`;
 
 ### Q6: How can code review function as a teaching tool?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-handwritten.svg" alt="Handwritten: How can code review function as a teaching tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-handwritten.svg" alt="Handwritten: How can code review function as a teaching tool?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-diagram.svg" alt="Diagram: How can code review function as a teaching tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-diagram.svg" alt="Diagram: How can code review function as a teaching tool?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-sticky.svg" alt="Sticky Note: How can code review function as a teaching tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-code-review-function-as-a-teaching-tool-sticky.svg" alt="Sticky Note: How can code review function as a teaching tool?" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ class CodeReviewAsTeaching {
 
 ### Q7: How do study groups accelerate learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-handwritten.svg" alt="Handwritten: How do study groups accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-handwritten.svg" alt="Handwritten: How do study groups accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-diagram.svg" alt="Diagram: How do study groups accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-diagram.svg" alt="Diagram: How do study groups accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-sticky.svg" alt="Sticky Note: How do study groups accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-study-groups-accelerate-learning-sticky.svg" alt="Sticky Note: How do study groups accelerate learning?" width="30%">
 </a>
 
 
@@ -838,14 +838,14 @@ Rotate teaching responsibilities every cycle.`;
 
 ### Q8: How do you write effective technical explanations?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-handwritten.svg" alt="Handwritten: How do you write effective technical explanations?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-handwritten.svg" alt="Handwritten: How do you write effective technical explanations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-diagram.svg" alt="Diagram: How do you write effective technical explanations?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-diagram.svg" alt="Diagram: How do you write effective technical explanations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-sticky.svg" alt="Sticky Note: How do you write effective technical explanations?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-write-effective-technical-explanations-sticky.svg" alt="Sticky Note: How do you write effective technical explanations?" width="30%">
 </a>
 
 
@@ -960,14 +960,14 @@ function demonstrate${config.topic.replace(/\s+/g, '')}(): string {
 
 ### Q9: How can mentoring accelerate your learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-handwritten.svg" alt="Handwritten: How can mentoring accelerate your learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-handwritten.svg" alt="Handwritten: How can mentoring accelerate your learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-diagram.svg" alt="Diagram: How can mentoring accelerate your learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-diagram.svg" alt="Diagram: How can mentoring accelerate your learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-sticky.svg" alt="Sticky Note: How can mentoring accelerate your learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-can-mentoring-accelerate-your-learning-sticky.svg" alt="Sticky Note: How can mentoring accelerate your learning?" width="30%">
 </a>
 
 
@@ -1062,14 +1062,14 @@ After each mentoring session, the mentor should ask:
 
 ### Q10: How do you handle questions you can't answer while teaching?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-handwritten.svg" alt="Handwritten: How do you handle questions you can't answer while teaching?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-handwritten.svg" alt="Handwritten: How do you handle questions you can't answer while teaching?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-diagram.svg" alt="Diagram: How do you handle questions you can't answer while teaching?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-diagram.svg" alt="Diagram: How do you handle questions you can't answer while teaching?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-sticky.svg" alt="Sticky Note: How do you handle questions you can't answer while teaching?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-handle-questions-you-can-t-answer-while-teaching-sticky.svg" alt="Sticky Note: How do you handle questions you can't answer while teaching?" width="30%">
 </a>
 
 
@@ -1191,14 +1191,14 @@ Thank you for asking — this helped me discover a gap in my understanding of ${
 
 ### Q11: How do you create effective learning materials for others?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-handwritten.svg" alt="Handwritten: How do you create effective learning materials for others?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-handwritten.svg" alt="Handwritten: How do you create effective learning materials for others?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-diagram.svg" alt="Diagram: How do you create effective learning materials for others?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-diagram.svg" alt="Diagram: How do you create effective learning materials for others?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-sticky.svg" alt="Sticky Note: How do you create effective learning materials for others?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-create-effective-learning-materials-for-others-sticky.svg" alt="Sticky Note: How do you create effective learning materials for others?" width="30%">
 </a>
 
 
@@ -1277,14 +1277,14 @@ Purpose: Personal reference — created from memory as a learning exercise
 
 ### Q12: How do you teach across different skill levels?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-handwritten.svg" alt="Handwritten: How do you teach across different skill levels?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-handwritten.svg" alt="Handwritten: How do you teach across different skill levels?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-diagram.svg" alt="Diagram: How do you teach across different skill levels?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-diagram.svg" alt="Diagram: How do you teach across different skill levels?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-sticky.svg" alt="Sticky Note: How do you teach across different skill levels?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-teach-across-different-skill-levels-sticky.svg" alt="Sticky Note: How do you teach across different skill levels?" width="30%">
 </a>
 
 
@@ -1385,14 +1385,14 @@ class AdaptiveTeacher {
 
 ### Q13: How do you build a sustainable teaching practice?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-handwritten.svg" alt="Handwritten: How do you build a sustainable teaching practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-handwritten.svg" alt="Handwritten: How do you build a sustainable teaching practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-diagram.svg" alt="Diagram: How do you build a sustainable teaching practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-diagram.svg" alt="Diagram: How do you build a sustainable teaching practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-sticky.svg" alt="Sticky Note: How do you build a sustainable teaching practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/how-do-you-build-a-sustainable-teaching-practice-sticky.svg" alt="Sticky Note: How do you build a sustainable teaching practice?" width="30%">
 </a>
 
 
@@ -1486,14 +1486,14 @@ answer, and how confident you feel explaining each topic.`;
 
 ### Self-Assessment Quiz
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
 </a>
 
 

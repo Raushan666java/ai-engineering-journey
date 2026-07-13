@@ -56,14 +56,14 @@ MongoDB is a document-oriented NoSQL database that stores data in BSON (Binary J
 
 ### Setup
 
-<a href="../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" alt="Diagram: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" alt="Diagram: Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ spring:
 
 ### Document Modeling
 
-<a href="../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" alt="Handwritten: Document Modeling" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" alt="Handwritten: Document Modeling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" alt="Diagram: Document Modeling" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" alt="Diagram: Document Modeling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" alt="Sticky Note: Document Modeling" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" alt="Sticky Note: Document Modeling" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ public class GeoLocation {
 
 ### MongoRepository
 
-<a href="../../assets/images/diagrams/java/23-nosql/mongorepository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongorepository-handwritten.svg" alt="Handwritten: MongoRepository" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongorepository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongorepository-handwritten.svg" alt="Handwritten: MongoRepository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/mongorepository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongorepository-diagram.svg" alt="Diagram: MongoRepository" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongorepository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongorepository-diagram.svg" alt="Diagram: MongoRepository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/mongorepository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongorepository-sticky.svg" alt="Sticky Note: MongoRepository" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongorepository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongorepository-sticky.svg" alt="Sticky Note: MongoRepository" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ public interface ProductPagingRepository extends MongoRepository<Product, String
 
 ### MongoTemplate
 
-<a href="../../assets/images/diagrams/java/23-nosql/mongotemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongotemplate-handwritten.svg" alt="Handwritten: MongoTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongotemplate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongotemplate-handwritten.svg" alt="Handwritten: MongoTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/mongotemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongotemplate-diagram.svg" alt="Diagram: MongoTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongotemplate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongotemplate-diagram.svg" alt="Diagram: MongoTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/mongotemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongotemplate-sticky.svg" alt="Sticky Note: MongoTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongotemplate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongotemplate-sticky.svg" alt="Sticky Note: MongoTemplate" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ public class ProductTemplateService {
 
 ### @Query with JSON
 
-<a href="../../assets/images/diagrams/java/23-nosql/query-with-json-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/query-with-json-handwritten.svg" alt="Handwritten: @Query with JSON" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/query-with-json-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/query-with-json-handwritten.svg" alt="Handwritten: @Query with JSON" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/query-with-json-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/query-with-json-diagram.svg" alt="Diagram: @Query with JSON" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/query-with-json-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/query-with-json-diagram.svg" alt="Diagram: @Query with JSON" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/query-with-json-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/query-with-json-sticky.svg" alt="Sticky Note: @Query with JSON" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/query-with-json-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/query-with-json-sticky.svg" alt="Sticky Note: @Query with JSON" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ public interface ProductQueryRepository extends MongoRepository<Product, String>
 
 ### Aggregation Pipeline
 
-<a href="../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-handwritten.svg" alt="Handwritten: Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-handwritten.svg" alt="Handwritten: Aggregation Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-diagram.svg" alt="Diagram: Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-diagram.svg" alt="Diagram: Aggregation Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-sticky.svg" alt="Sticky Note: Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/aggregation-pipeline-sticky.svg" alt="Sticky Note: Aggregation Pipeline" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@ public class CategoryStats {
 
 ### Geo-Spatial Queries
 
-<a href="../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-handwritten.svg" alt="Handwritten: Geo-Spatial Queries" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-handwritten.svg" alt="Handwritten: Geo-Spatial Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-diagram.svg" alt="Diagram: Geo-Spatial Queries" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-diagram.svg" alt="Diagram: Geo-Spatial Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-sticky.svg" alt="Sticky Note: Geo-Spatial Queries" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/geo-spatial-queries-sticky.svg" alt="Sticky Note: Geo-Spatial Queries" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ public class ProductGeoService {
 
 ### Index Management
 
-<a href="../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" alt="Handwritten: Index Management" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" alt="Handwritten: Index Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" alt="Diagram: Index Management" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" alt="Diagram: Index Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" alt="Sticky Note: Index Management" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" alt="Sticky Note: Index Management" width="30%">
 </a>
 
 
@@ -905,14 +905,14 @@ public class IndexManagementService {
 
 ### GridFS for File Storage
 
-<a href="../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-handwritten.svg" alt="Handwritten: GridFS for File Storage" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-handwritten.svg" alt="Handwritten: GridFS for File Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-diagram.svg" alt="Diagram: GridFS for File Storage" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-diagram.svg" alt="Diagram: GridFS for File Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-sticky.svg" alt="Sticky Note: GridFS for File Storage" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/gridfs-for-file-storage-sticky.svg" alt="Sticky Note: GridFS for File Storage" width="30%">
 </a>
 
 
@@ -996,14 +996,14 @@ public class FileStorageService {
 
 ### Transactions in MongoDB
 
-<a href="../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-handwritten.svg" alt="Handwritten: Transactions in MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-handwritten.svg" alt="Handwritten: Transactions in MongoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-diagram.svg" alt="Diagram: Transactions in MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-diagram.svg" alt="Diagram: Transactions in MongoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-sticky.svg" alt="Sticky Note: Transactions in MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/transactions-in-mongodb-sticky.svg" alt="Sticky Note: Transactions in MongoDB" width="30%">
 </a>
 
 
@@ -1166,14 +1166,14 @@ public class OrderService {
 
 ### Application Configuration
 
-<a href="../../assets/images/diagrams/java/23-nosql/application-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/application-configuration-handwritten.svg" alt="Handwritten: Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/application-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/application-configuration-handwritten.svg" alt="Handwritten: Application Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/application-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/application-configuration-diagram.svg" alt="Diagram: Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/application-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/application-configuration-diagram.svg" alt="Diagram: Application Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/application-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/application-configuration-sticky.svg" alt="Sticky Note: Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/application-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/application-configuration-sticky.svg" alt="Sticky Note: Application Configuration" width="30%">
 </a>
 
 
@@ -1200,14 +1200,14 @@ Redis is an in-memory data structure store supporting strings, hashes, lists, se
 
 ### Setup
 
-<a href="../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" alt="Diagram: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" alt="Diagram: Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
 </a>
 
 
@@ -1240,14 +1240,14 @@ spring:
 
 ### RedisTemplate
 
-<a href="../../assets/images/diagrams/java/23-nosql/redistemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redistemplate-handwritten.svg" alt="Handwritten: RedisTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redistemplate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redistemplate-handwritten.svg" alt="Handwritten: RedisTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redistemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redistemplate-diagram.svg" alt="Diagram: RedisTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redistemplate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redistemplate-diagram.svg" alt="Diagram: RedisTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redistemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redistemplate-sticky.svg" alt="Sticky Note: RedisTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redistemplate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redistemplate-sticky.svg" alt="Sticky Note: RedisTemplate" width="30%">
 </a>
 
 
@@ -1421,14 +1421,14 @@ public class RedisExampleService {
 
 ### @RedisHash and Spring Data Repositories
 
-<a href="../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-handwritten.svg" alt="Handwritten: @RedisHash and Spring Data Repositories" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-handwritten.svg" alt="Handwritten: @RedisHash and Spring Data Repositories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-diagram.svg" alt="Diagram: @RedisHash and Spring Data Repositories" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-diagram.svg" alt="Diagram: @RedisHash and Spring Data Repositories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-sticky.svg" alt="Sticky Note: @RedisHash and Spring Data Repositories" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redishash-and-spring-data-repositories-sticky.svg" alt="Sticky Note: @RedisHash and Spring Data Repositories" width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ public class SessionService {
 
 ### Redis Pub/Sub
 
-<a href="../../assets/images/diagrams/java/23-nosql/redis-pub-sub-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-pub-sub-handwritten.svg" alt="Handwritten: Redis Pub/Sub" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-pub-sub-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-pub-sub-handwritten.svg" alt="Handwritten: Redis Pub/Sub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redis-pub-sub-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-pub-sub-diagram.svg" alt="Diagram: Redis Pub/Sub" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-pub-sub-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-pub-sub-diagram.svg" alt="Diagram: Redis Pub/Sub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redis-pub-sub-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-pub-sub-sticky.svg" alt="Sticky Note: Redis Pub/Sub" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-pub-sub-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-pub-sub-sticky.svg" alt="Sticky Note: Redis Pub/Sub" width="30%">
 </a>
 
 
@@ -1722,14 +1722,14 @@ public class RedisPublisherService {
 
 ### RedisCacheManager
 
-<a href="../../assets/images/diagrams/java/23-nosql/rediscachemanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/rediscachemanager-handwritten.svg" alt="Handwritten: RedisCacheManager" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/rediscachemanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/rediscachemanager-handwritten.svg" alt="Handwritten: RedisCacheManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/rediscachemanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/rediscachemanager-diagram.svg" alt="Diagram: RedisCacheManager" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/rediscachemanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/rediscachemanager-diagram.svg" alt="Diagram: RedisCacheManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/rediscachemanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/rediscachemanager-sticky.svg" alt="Sticky Note: RedisCacheManager" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/rediscachemanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/rediscachemanager-sticky.svg" alt="Sticky Note: RedisCacheManager" width="30%">
 </a>
 
 
@@ -1877,14 +1877,14 @@ public class ProductCacheService {
 
 ### Redis Streams
 
-<a href="../../assets/images/diagrams/java/23-nosql/redis-streams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-streams-handwritten.svg" alt="Handwritten: Redis Streams" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-streams-handwritten.svg" alt="Handwritten: Redis Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redis-streams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-streams-diagram.svg" alt="Diagram: Redis Streams" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-streams-diagram.svg" alt="Diagram: Redis Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redis-streams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-streams-sticky.svg" alt="Sticky Note: Redis Streams" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-streams-sticky.svg" alt="Sticky Note: Redis Streams" width="30%">
 </a>
 
 
@@ -2053,14 +2053,14 @@ public class OrderStreamPublisher {
 
 ### Redis Configuration
 
-<a href="../../assets/images/diagrams/java/23-nosql/redis-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-configuration-handwritten.svg" alt="Handwritten: Redis Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-configuration-handwritten.svg" alt="Handwritten: Redis Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redis-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-configuration-diagram.svg" alt="Diagram: Redis Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-configuration-diagram.svg" alt="Diagram: Redis Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/redis-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/redis-configuration-sticky.svg" alt="Sticky Note: Redis Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/redis-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/redis-configuration-sticky.svg" alt="Sticky Note: Redis Configuration" width="30%">
 </a>
 
 
@@ -2103,14 +2103,14 @@ Elasticsearch is a distributed full-text search and analytics engine. Spring Dat
 
 ### Setup
 
-<a href="../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-handwritten.svg" alt="Handwritten: Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" alt="Diagram: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-diagram.svg" alt="Diagram: Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/setup-sticky.svg" alt="Sticky Note: Setup" width="30%">
 </a>
 
 
@@ -2132,14 +2132,14 @@ spring:
 
 ### Document Modeling
 
-<a href="../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" alt="Handwritten: Document Modeling" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/document-modeling-handwritten.svg" alt="Handwritten: Document Modeling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" alt="Diagram: Document Modeling" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/document-modeling-diagram.svg" alt="Diagram: Document Modeling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" alt="Sticky Note: Document Modeling" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/document-modeling-sticky.svg" alt="Sticky Note: Document Modeling" width="30%">
 </a>
 
 
@@ -2252,14 +2252,14 @@ public class Article {
 
 ### ElasticsearchRepository
 
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-handwritten.svg" alt="Handwritten: ElasticsearchRepository" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-handwritten.svg" alt="Handwritten: ElasticsearchRepository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-diagram.svg" alt="Diagram: ElasticsearchRepository" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-diagram.svg" alt="Diagram: ElasticsearchRepository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-sticky.svg" alt="Sticky Note: ElasticsearchRepository" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearchrepository-sticky.svg" alt="Sticky Note: ElasticsearchRepository" width="30%">
 </a>
 
 
@@ -2351,14 +2351,14 @@ public interface ArticleRepository extends ElasticsearchRepository<Article, Stri
 
 ### ElasticsearchTemplate
 
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-handwritten.svg" alt="Handwritten: ElasticsearchTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-handwritten.svg" alt="Handwritten: ElasticsearchTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-diagram.svg" alt="Diagram: ElasticsearchTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-diagram.svg" alt="Diagram: ElasticsearchTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-sticky.svg" alt="Sticky Note: ElasticsearchTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearchtemplate-sticky.svg" alt="Sticky Note: ElasticsearchTemplate" width="30%">
 </a>
 
 
@@ -2511,14 +2511,14 @@ public class ArticleSearchService {
 
 ### Full-Text Search
 
-<a href="../../assets/images/diagrams/java/23-nosql/full-text-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/full-text-search-handwritten.svg" alt="Handwritten: Full-Text Search" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/full-text-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/full-text-search-handwritten.svg" alt="Handwritten: Full-Text Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/full-text-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/full-text-search-diagram.svg" alt="Diagram: Full-Text Search" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/full-text-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/full-text-search-diagram.svg" alt="Diagram: Full-Text Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/full-text-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/full-text-search-sticky.svg" alt="Sticky Note: Full-Text Search" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/full-text-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/full-text-search-sticky.svg" alt="Sticky Note: Full-Text Search" width="30%">
 </a>
 
 
@@ -2581,14 +2581,14 @@ public class FullTextSearchService {
 
 ### Aggregations
 
-<a href="../../assets/images/diagrams/java/23-nosql/aggregations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/aggregations-handwritten.svg" alt="Handwritten: Aggregations" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/aggregations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/aggregations-handwritten.svg" alt="Handwritten: Aggregations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/aggregations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/aggregations-diagram.svg" alt="Diagram: Aggregations" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/aggregations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/aggregations-diagram.svg" alt="Diagram: Aggregations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/aggregations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/aggregations-sticky.svg" alt="Sticky Note: Aggregations" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/aggregations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/aggregations-sticky.svg" alt="Sticky Note: Aggregations" width="30%">
 </a>
 
 
@@ -2724,14 +2724,14 @@ public class ArticleAggregationService {
 
 ### Index Management
 
-<a href="../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" alt="Handwritten: Index Management" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/index-management-handwritten.svg" alt="Handwritten: Index Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" alt="Diagram: Index Management" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/index-management-diagram.svg" alt="Diagram: Index Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" alt="Sticky Note: Index Management" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/index-management-sticky.svg" alt="Sticky Note: Index Management" width="30%">
 </a>
 
 
@@ -2803,14 +2803,14 @@ Production applications rarely use a single data store. The most common multi-mo
 
 ### MongoDB + Redis for Caching
 
-<a href="../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-handwritten.svg" alt="Handwritten: MongoDB + Redis for Caching" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-handwritten.svg" alt="Handwritten: MongoDB + Redis for Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-diagram.svg" alt="Diagram: MongoDB + Redis for Caching" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-diagram.svg" alt="Diagram: MongoDB + Redis for Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-sticky.svg" alt="Sticky Note: MongoDB + Redis for Caching" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/mongodb-redis-for-caching-sticky.svg" alt="Sticky Note: MongoDB + Redis for Caching" width="30%">
 </a>
 
 
@@ -2901,14 +2901,14 @@ public class CachedProductService {
 
 ### Elasticsearch + MongoDB for Search
 
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-handwritten.svg" alt="Handwritten: Elasticsearch + MongoDB for Search" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-handwritten.svg" alt="Handwritten: Elasticsearch + MongoDB for Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-diagram.svg" alt="Diagram: Elasticsearch + MongoDB for Search" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-diagram.svg" alt="Diagram: Elasticsearch + MongoDB for Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-sticky.svg" alt="Sticky Note: Elasticsearch + MongoDB for Search" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/elasticsearch-mongodb-for-search-sticky.svg" alt="Sticky Note: Elasticsearch + MongoDB for Search" width="30%">
 </a>
 
 
@@ -2978,14 +2978,14 @@ public class SearchIndexSyncService {
 
 ### Multi-Store Transaction Pattern
 
-<a href="../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-handwritten.svg" alt="Handwritten: Multi-Store Transaction Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-handwritten.svg" alt="Handwritten: Multi-Store Transaction Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-diagram.svg" alt="Diagram: Multi-Store Transaction Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-diagram.svg" alt="Diagram: Multi-Store Transaction Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-sticky.svg" alt="Sticky Note: Multi-Store Transaction Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/multi-store-transaction-pattern-sticky.svg" alt="Sticky Note: Multi-Store Transaction Pattern" width="30%">
 </a>
 
 
@@ -3065,14 +3065,14 @@ public class MultiStoreProductService {
 
 ### Read Model with Query Service
 
-<a href="../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-handwritten.svg" alt="Handwritten: Read Model with Query Service" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-handwritten.svg" alt="Handwritten: Read Model with Query Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-diagram.svg" alt="Diagram: Read Model with Query Service" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-diagram.svg" alt="Diagram: Read Model with Query Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-sticky.svg" alt="Sticky Note: Read Model with Query Service" width="30%">
+<a href="../../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/23-nosql/read-model-with-query-service-sticky.svg" alt="Sticky Note: Read Model with Query Service" width="30%">
 </a>
 
 

@@ -74,14 +74,14 @@ Class loading is the process by which the JVM locates, loads, and prepares class
 
 ### 2.1 Built-in Class Loaders
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-handwritten.svg" alt="Handwritten: 2.1 Built-in Class Loaders" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-handwritten.svg" alt="Handwritten: 2.1 Built-in Class Loaders" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-diagram.svg" alt="Diagram: 2.1 Built-in Class Loaders" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-diagram.svg" alt="Diagram: 2.1 Built-in Class Loaders" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-sticky.svg" alt="Sticky Note: 2.1 Built-in Class Loaders" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-sticky.svg" alt="Sticky Note: 2.1 Built-in Class Loaders" width="30%">
 </a>
 
 
@@ -143,14 +143,14 @@ The Bootstrap class loader returns `null` because it is implemented natively and
 
 ### 2.2 The Class Loading Lifecycle
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-handwritten.svg" alt="Handwritten: 2.2 The Class Loading Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-handwritten.svg" alt="Handwritten: 2.2 The Class Loading Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-diagram.svg" alt="Diagram: 2.2 The Class Loading Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-diagram.svg" alt="Diagram: 2.2 The Class Loading Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-sticky.svg" alt="Sticky Note: 2.2 The Class Loading Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-sticky.svg" alt="Sticky Note: 2.2 The Class Loading Lifecycle" width="30%">
 </a>
 
 
@@ -257,14 +257,14 @@ Observe: the second instance does **not** re-run static initializers → class i
 
 ### 2.3 Custom Class Loader
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-handwritten.svg" alt="Handwritten: 2.3 Custom Class Loader" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-handwritten.svg" alt="Handwritten: 2.3 Custom Class Loader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-diagram.svg" alt="Diagram: 2.3 Custom Class Loader" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-diagram.svg" alt="Diagram: 2.3 Custom Class Loader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-sticky.svg" alt="Sticky Note: 2.3 Custom Class Loader" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-sticky.svg" alt="Sticky Note: 2.3 Custom Class Loader" width="30%">
 </a>
 
 
@@ -421,14 +421,14 @@ public class HotSwapClassLoader extends ClassLoader {
 
 ### 2.4 The Delegation Model in Practice
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-handwritten.svg" alt="Handwritten: 2.4 The Delegation Model in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-handwritten.svg" alt="Handwritten: 2.4 The Delegation Model in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-diagram.svg" alt="Diagram: 2.4 The Delegation Model in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-diagram.svg" alt="Diagram: 2.4 The Delegation Model in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-sticky.svg" alt="Sticky Note: 2.4 The Delegation Model in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-sticky.svg" alt="Sticky Note: 2.4 The Delegation Model in Practice" width="30%">
 </a>
 
 
@@ -473,14 +473,14 @@ The JVM divides memory into several runtime data areas during execution. Each se
 
 ### 3.1 Overview
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-handwritten.svg" alt="Handwritten: 3.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-handwritten.svg" alt="Handwritten: 3.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-diagram.svg" alt="Diagram: 3.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-diagram.svg" alt="Diagram: 3.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-sticky.svg" alt="Sticky Note: 3.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-sticky.svg" alt="Sticky Note: 3.1 Overview" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ The JVM divides memory into several runtime data areas during execution. Each se
 
 ### 3.2 Method Area (Metaspace in JDK 8+)
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-handwritten.svg" alt="Handwritten: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-handwritten.svg" alt="Handwritten: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-diagram.svg" alt="Diagram: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-diagram.svg" alt="Diagram: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-sticky.svg" alt="Sticky Note: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-sticky.svg" alt="Sticky Note: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
 </a>
 
 
@@ -557,14 +557,14 @@ public class MethodAreaDemo {
 
 ### 3.3 The Heap
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-handwritten.svg" alt="Handwritten: 3.3 The Heap" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-handwritten.svg" alt="Handwritten: 3.3 The Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-diagram.svg" alt="Diagram: 3.3 The Heap" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-diagram.svg" alt="Diagram: 3.3 The Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-sticky.svg" alt="Sticky Note: 3.3 The Heap" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-sticky.svg" alt="Sticky Note: 3.3 The Heap" width="30%">
 </a>
 
 
@@ -636,14 +636,14 @@ public class HeapDemo {
 
 ### 3.4 Stack, PC Registers, and Native Method Stack
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-handwritten.svg" alt="Handwritten: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-handwritten.svg" alt="Handwritten: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-diagram.svg" alt="Diagram: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-diagram.svg" alt="Diagram: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-sticky.svg" alt="Sticky Note: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-sticky.svg" alt="Sticky Note: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
 </a>
 
 
@@ -700,14 +700,14 @@ The **Native Method Stack** supports native method execution (C/C++ code via JNI
 
 ### 3.5 Direct Memory
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-handwritten.svg" alt="Handwritten: 3.5 Direct Memory" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-handwritten.svg" alt="Handwritten: 3.5 Direct Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-diagram.svg" alt="Diagram: 3.5 Direct Memory" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-diagram.svg" alt="Diagram: 3.5 Direct Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-sticky.svg" alt="Sticky Note: 3.5 Direct Memory" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-sticky.svg" alt="Sticky Note: 3.5 Direct Memory" width="30%">
 </a>
 
 
@@ -770,14 +770,14 @@ Java bytecode is the intermediate representation of your program. The JVM's inst
 
 ### 4.1 Examining Bytecode with javap
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-handwritten.svg" alt="Handwritten: 4.1 Examining Bytecode with javap" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-handwritten.svg" alt="Handwritten: 4.1 Examining Bytecode with javap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-diagram.svg" alt="Diagram: 4.1 Examining Bytecode with javap" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-diagram.svg" alt="Diagram: 4.1 Examining Bytecode with javap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-sticky.svg" alt="Sticky Note: 4.1 Examining Bytecode with javap" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-sticky.svg" alt="Sticky Note: 4.1 Examining Bytecode with javap" width="30%">
 </a>
 
 
@@ -863,14 +863,14 @@ public static double calculateAverage(int[]);
 
 ### 4.2 Key Bytecode Instructions
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-handwritten.svg" alt="Handwritten: 4.2 Key Bytecode Instructions" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-handwritten.svg" alt="Handwritten: 4.2 Key Bytecode Instructions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-diagram.svg" alt="Diagram: 4.2 Key Bytecode Instructions" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-diagram.svg" alt="Diagram: 4.2 Key Bytecode Instructions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-sticky.svg" alt="Sticky Note: 4.2 Key Bytecode Instructions" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-sticky.svg" alt="Sticky Note: 4.2 Key Bytecode Instructions" width="30%">
 </a>
 
 
@@ -887,14 +887,14 @@ public static double calculateAverage(int[]);
 
 ### 4.3 Stack Frame Walkthrough
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-handwritten.svg" alt="Handwritten: 4.3 Stack Frame Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-handwritten.svg" alt="Handwritten: 4.3 Stack Frame Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-diagram.svg" alt="Diagram: 4.3 Stack Frame Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-diagram.svg" alt="Diagram: 4.3 Stack Frame Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-sticky.svg" alt="Sticky Note: 4.3 Stack Frame Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-sticky.svg" alt="Sticky Note: 4.3 Stack Frame Walkthrough" width="30%">
 </a>
 
 
@@ -916,14 +916,14 @@ Operand Stack: []
 
 ### 4.4 Invokedynamic and Lambda Bytecode
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-handwritten.svg" alt="Handwritten: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-handwritten.svg" alt="Handwritten: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-diagram.svg" alt="Diagram: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-diagram.svg" alt="Diagram: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-sticky.svg" alt="Sticky Note: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-sticky.svg" alt="Sticky Note: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
 </a>
 
 
@@ -957,14 +957,14 @@ The JIT (Just-In-Time) compiler transforms bytecode into native machine code at 
 
 ### 5.1 Interpretation vs Compilation
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-handwritten.svg" alt="Handwritten: 5.1 Interpretation vs Compilation" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-handwritten.svg" alt="Handwritten: 5.1 Interpretation vs Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-diagram.svg" alt="Diagram: 5.1 Interpretation vs Compilation" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-diagram.svg" alt="Diagram: 5.1 Interpretation vs Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-sticky.svg" alt="Sticky Note: 5.1 Interpretation vs Compilation" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-sticky.svg" alt="Sticky Note: 5.1 Interpretation vs Compilation" width="30%">
 </a>
 
 
@@ -1010,14 +1010,14 @@ public class JITDemo {
 
 ### 5.2 Tiered Compilation
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-handwritten.svg" alt="Handwritten: 5.2 Tiered Compilation" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-handwritten.svg" alt="Handwritten: 5.2 Tiered Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-diagram.svg" alt="Diagram: 5.2 Tiered Compilation" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-diagram.svg" alt="Diagram: 5.2 Tiered Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-sticky.svg" alt="Sticky Note: 5.2 Tiered Compilation" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-sticky.svg" alt="Sticky Note: 5.2 Tiered Compilation" width="30%">
 </a>
 
 
@@ -1035,14 +1035,14 @@ The JVM escalates methods through tiers based on invocation count and loop back-
 
 ### 5.3 Hotspot Detection
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-handwritten.svg" alt="Handwritten: 5.3 Hotspot Detection" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-handwritten.svg" alt="Handwritten: 5.3 Hotspot Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-diagram.svg" alt="Diagram: 5.3 Hotspot Detection" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-diagram.svg" alt="Diagram: 5.3 Hotspot Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-sticky.svg" alt="Sticky Note: 5.3 Hotspot Detection" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-sticky.svg" alt="Sticky Note: 5.3 Hotspot Detection" width="30%">
 </a>
 
 
@@ -1081,14 +1081,14 @@ public class HotspotDetection {
 
 ### 5.4 Inlining
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-handwritten.svg" alt="Handwritten: 5.4 Inlining" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-handwritten.svg" alt="Handwritten: 5.4 Inlining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-diagram.svg" alt="Diagram: 5.4 Inlining" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-diagram.svg" alt="Diagram: 5.4 Inlining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-sticky.svg" alt="Sticky Note: 5.4 Inlining" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-sticky.svg" alt="Sticky Note: 5.4 Inlining" width="30%">
 </a>
 
 
@@ -1128,14 +1128,14 @@ InliningDemo::processValue (3 bytes)
 
 ### 5.5 Escape Analysis
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-handwritten.svg" alt="Handwritten: 5.5 Escape Analysis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-handwritten.svg" alt="Handwritten: 5.5 Escape Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-diagram.svg" alt="Diagram: 5.5 Escape Analysis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-diagram.svg" alt="Diagram: 5.5 Escape Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-sticky.svg" alt="Sticky Note: 5.5 Escape Analysis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-sticky.svg" alt="Sticky Note: 5.5 Escape Analysis" width="30%">
 </a>
 
 
@@ -1200,14 +1200,14 @@ public class EscapeAnalysisDemo {
 
 ### 5.6 On-Stack Replacement (OSR)
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-handwritten.svg" alt="Handwritten: 5.6 On-Stack Replacement (OSR)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-handwritten.svg" alt="Handwritten: 5.6 On-Stack Replacement (OSR)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-diagram.svg" alt="Diagram: 5.6 On-Stack Replacement (OSR)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-diagram.svg" alt="Diagram: 5.6 On-Stack Replacement (OSR)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-sticky.svg" alt="Sticky Note: 5.6 On-Stack Replacement (OSR)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-sticky.svg" alt="Sticky Note: 5.6 On-Stack Replacement (OSR)" width="30%">
 </a>
 
 
@@ -1254,14 +1254,14 @@ public class OnStackReplacement {
 
 ### 5.7 C1 vs C2 Compiler
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-handwritten.svg" alt="Handwritten: 5.7 C1 vs C2 Compiler" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-handwritten.svg" alt="Handwritten: 5.7 C1 vs C2 Compiler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-diagram.svg" alt="Diagram: 5.7 C1 vs C2 Compiler" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-diagram.svg" alt="Diagram: 5.7 C1 vs C2 Compiler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-sticky.svg" alt="Sticky Note: 5.7 C1 vs C2 Compiler" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-sticky.svg" alt="Sticky Note: 5.7 C1 vs C2 Compiler" width="30%">
 </a>
 
 
@@ -1278,14 +1278,14 @@ Since tiered compilation is the default, you rarely choose C1 vs C2 explicitly. 
 
 ### 5.8 Graal JIT Compiler
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-handwritten.svg" alt="Handwritten: 5.8 Graal JIT Compiler" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-handwritten.svg" alt="Handwritten: 5.8 Graal JIT Compiler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-diagram.svg" alt="Diagram: 5.8 Graal JIT Compiler" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-diagram.svg" alt="Diagram: 5.8 Graal JIT Compiler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-sticky.svg" alt="Sticky Note: 5.8 Graal JIT Compiler" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-sticky.svg" alt="Sticky Note: 5.8 Graal JIT Compiler" width="30%">
 </a>
 
 
@@ -1334,14 +1334,14 @@ public class GraalJITDemo {
 
 ### 6.1 Heap Layout Visualization
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-handwritten.svg" alt="Handwritten: 6.1 Heap Layout Visualization" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-handwritten.svg" alt="Handwritten: 6.1 Heap Layout Visualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-diagram.svg" alt="Diagram: 6.1 Heap Layout Visualization" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-diagram.svg" alt="Diagram: 6.1 Heap Layout Visualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-sticky.svg" alt="Sticky Note: 6.1 Heap Layout Visualization" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-sticky.svg" alt="Sticky Note: 6.1 Heap Layout Visualization" width="30%">
 </a>
 
 
@@ -1400,14 +1400,14 @@ public class HeapLayoutDemo {
 
 ### 6.2 Object Header and Memory Layout
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-handwritten.svg" alt="Handwritten: 6.2 Object Header and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-handwritten.svg" alt="Handwritten: 6.2 Object Header and Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-diagram.svg" alt="Diagram: 6.2 Object Header and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-diagram.svg" alt="Diagram: 6.2 Object Header and Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-sticky.svg" alt="Sticky Note: 6.2 Object Header and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-sticky.svg" alt="Sticky Note: 6.2 Object Header and Memory Layout" width="30%">
 </a>
 
 
@@ -1465,14 +1465,14 @@ public class ObjectMemoryLayout {
 
 ### 6.3 Metaspace
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-handwritten.svg" alt="Handwritten: 6.3 Metaspace" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-handwritten.svg" alt="Handwritten: 6.3 Metaspace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-diagram.svg" alt="Diagram: 6.3 Metaspace" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-diagram.svg" alt="Diagram: 6.3 Metaspace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-sticky.svg" alt="Sticky Note: 6.3 Metaspace" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-sticky.svg" alt="Sticky Note: 6.3 Metaspace" width="30%">
 </a>
 
 
@@ -1511,14 +1511,14 @@ public class MetaspaceDemo {
 
 ### 6.4 Thread Stack Layout
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-handwritten.svg" alt="Handwritten: 6.4 Thread Stack Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-handwritten.svg" alt="Handwritten: 6.4 Thread Stack Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-diagram.svg" alt="Diagram: 6.4 Thread Stack Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-diagram.svg" alt="Diagram: 6.4 Thread Stack Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-sticky.svg" alt="Sticky Note: 6.4 Thread Stack Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-sticky.svg" alt="Sticky Note: 6.4 Thread Stack Layout" width="30%">
 </a>
 
 
@@ -1583,14 +1583,14 @@ public class StackLayoutDemo {
 
 ### 7.1 The Generational Hypothesis
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-handwritten.svg" alt="Handwritten: 7.1 The Generational Hypothesis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-handwritten.svg" alt="Handwritten: 7.1 The Generational Hypothesis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-diagram.svg" alt="Diagram: 7.1 The Generational Hypothesis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-diagram.svg" alt="Diagram: 7.1 The Generational Hypothesis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-sticky.svg" alt="Sticky Note: 7.1 The Generational Hypothesis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-sticky.svg" alt="Sticky Note: 7.1 The Generational Hypothesis" width="30%">
 </a>
 
 
@@ -1598,14 +1598,14 @@ The generational hypothesis states that most objects die young. Empirical observ
 
 ### 7.2 Basic GC Algorithms
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-handwritten.svg" alt="Handwritten: 7.2 Basic GC Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-handwritten.svg" alt="Handwritten: 7.2 Basic GC Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-diagram.svg" alt="Diagram: 7.2 Basic GC Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-diagram.svg" alt="Diagram: 7.2 Basic GC Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-sticky.svg" alt="Sticky Note: 7.2 Basic GC Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-sticky.svg" alt="Sticky Note: 7.2 Basic GC Algorithms" width="30%">
 </a>
 
 
@@ -1671,14 +1671,14 @@ public class GCAlgorithmsDemo {
 
 ### 7.3 Identifying Liveness (GC Roots)
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-handwritten.svg" alt="Handwritten: 7.3 Identifying Liveness (GC Roots)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-handwritten.svg" alt="Handwritten: 7.3 Identifying Liveness (GC Roots)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-diagram.svg" alt="Diagram: 7.3 Identifying Liveness (GC Roots)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-diagram.svg" alt="Diagram: 7.3 Identifying Liveness (GC Roots)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-sticky.svg" alt="Sticky Note: 7.3 Identifying Liveness (GC Roots)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-sticky.svg" alt="Sticky Note: 7.3 Identifying Liveness (GC Roots)" width="30%">
 </a>
 
 
@@ -1737,14 +1737,14 @@ public class GCRootsDemo {
 
 ### 8.1 Serial GC
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-handwritten.svg" alt="Handwritten: 8.1 Serial GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-handwritten.svg" alt="Handwritten: 8.1 Serial GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-diagram.svg" alt="Diagram: 8.1 Serial GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-diagram.svg" alt="Diagram: 8.1 Serial GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-sticky.svg" alt="Sticky Note: 8.1 Serial GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-sticky.svg" alt="Sticky Note: 8.1 Serial GC" width="30%">
 </a>
 
 
@@ -1784,14 +1784,14 @@ public class SerialGCDemo {
 
 ### 8.2 Parallel GC (Throughput Collector)
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-handwritten.svg" alt="Handwritten: 8.2 Parallel GC (Throughput Collector)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-handwritten.svg" alt="Handwritten: 8.2 Parallel GC (Throughput Collector)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-diagram.svg" alt="Diagram: 8.2 Parallel GC (Throughput Collector)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-diagram.svg" alt="Diagram: 8.2 Parallel GC (Throughput Collector)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-sticky.svg" alt="Sticky Note: 8.2 Parallel GC (Throughput Collector)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-sticky.svg" alt="Sticky Note: 8.2 Parallel GC (Throughput Collector)" width="30%">
 </a>
 
 
@@ -1850,14 +1850,14 @@ public class ParallelGCDemo {
 
 ### 8.3 G1 GC
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-handwritten.svg" alt="Handwritten: 8.3 G1 GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-handwritten.svg" alt="Handwritten: 8.3 G1 GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-diagram.svg" alt="Diagram: 8.3 G1 GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-diagram.svg" alt="Diagram: 8.3 G1 GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-sticky.svg" alt="Sticky Note: 8.3 G1 GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-sticky.svg" alt="Sticky Note: 8.3 G1 GC" width="30%">
 </a>
 
 
@@ -1921,14 +1921,14 @@ public class G1GCDemo {
 
 ### 8.4 ZGC
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-handwritten.svg" alt="Handwritten: 8.4 ZGC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-handwritten.svg" alt="Handwritten: 8.4 ZGC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-diagram.svg" alt="Diagram: 8.4 ZGC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-diagram.svg" alt="Diagram: 8.4 ZGC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-sticky.svg" alt="Sticky Note: 8.4 ZGC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-sticky.svg" alt="Sticky Note: 8.4 ZGC" width="30%">
 </a>
 
 
@@ -1990,14 +1990,14 @@ public class ZGCDemo {
 
 ### 8.5 Shenandoah GC
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-handwritten.svg" alt="Handwritten: 8.5 Shenandoah GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-handwritten.svg" alt="Handwritten: 8.5 Shenandoah GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-diagram.svg" alt="Diagram: 8.5 Shenandoah GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-diagram.svg" alt="Diagram: 8.5 Shenandoah GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-sticky.svg" alt="Sticky Note: 8.5 Shenandoah GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-sticky.svg" alt="Sticky Note: 8.5 Shenandoah GC" width="30%">
 </a>
 
 
@@ -2057,14 +2057,14 @@ public class ShenandoahGCDemo {
 
 ### 8.6 GC Comparison Summary
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-handwritten.svg" alt="Handwritten: 8.6 GC Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-handwritten.svg" alt="Handwritten: 8.6 GC Comparison Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-diagram.svg" alt="Diagram: 8.6 GC Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-diagram.svg" alt="Diagram: 8.6 GC Comparison Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-sticky.svg" alt="Sticky Note: 8.6 GC Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-sticky.svg" alt="Sticky Note: 8.6 GC Comparison Summary" width="30%">
 </a>
 
 
@@ -2082,14 +2082,14 @@ public class ShenandoahGCDemo {
 
 ### 9.1 Essential Flags
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-handwritten.svg" alt="Handwritten: 9.1 Essential Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-handwritten.svg" alt="Handwritten: 9.1 Essential Flags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-diagram.svg" alt="Diagram: 9.1 Essential Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-diagram.svg" alt="Diagram: 9.1 Essential Flags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-sticky.svg" alt="Sticky Note: 9.1 Essential Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-sticky.svg" alt="Sticky Note: 9.1 Essential Flags" width="30%">
 </a>
 
 
@@ -2141,14 +2141,14 @@ public class GCTuningFlags {
 
 ### 9.2 GC Logging and Analysis
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-handwritten.svg" alt="Handwritten: 9.2 GC Logging and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-handwritten.svg" alt="Handwritten: 9.2 GC Logging and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-diagram.svg" alt="Diagram: 9.2 GC Logging and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-diagram.svg" alt="Diagram: 9.2 GC Logging and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-sticky.svg" alt="Sticky Note: 9.2 GC Logging and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-sticky.svg" alt="Sticky Note: 9.2 GC Logging and Analysis" width="30%">
 </a>
 
 
@@ -2190,14 +2190,14 @@ public class GCLoggingDemo {
 
 ### 9.3 Choosing the Right GC
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-handwritten.svg" alt="Handwritten: 9.3 Choosing the Right GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-handwritten.svg" alt="Handwritten: 9.3 Choosing the Right GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-diagram.svg" alt="Diagram: 9.3 Choosing the Right GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-diagram.svg" alt="Diagram: 9.3 Choosing the Right GC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-sticky.svg" alt="Sticky Note: 9.3 Choosing the Right GC" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-sticky.svg" alt="Sticky Note: 9.3 Choosing the Right GC" width="30%">
 </a>
 
 
@@ -2248,14 +2248,14 @@ Java's garbage collection does not eliminate all memory leaks. A leak occurs whe
 
 ### 10.1 Classloader Leak
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-handwritten.svg" alt="Handwritten: 10.1 Classloader Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-handwritten.svg" alt="Handwritten: 10.1 Classloader Leak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-diagram.svg" alt="Diagram: 10.1 Classloader Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-diagram.svg" alt="Diagram: 10.1 Classloader Leak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-sticky.svg" alt="Sticky Note: 10.1 Classloader Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-sticky.svg" alt="Sticky Note: 10.1 Classloader Leak" width="30%">
 </a>
 
 
@@ -2301,14 +2301,14 @@ public class ClassLoaderLeak {
 
 ### 10.2 ThreadLocal Leak
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-handwritten.svg" alt="Handwritten: 10.2 ThreadLocal Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-handwritten.svg" alt="Handwritten: 10.2 ThreadLocal Leak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-diagram.svg" alt="Diagram: 10.2 ThreadLocal Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-diagram.svg" alt="Diagram: 10.2 ThreadLocal Leak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-sticky.svg" alt="Sticky Note: 10.2 ThreadLocal Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-sticky.svg" alt="Sticky Note: 10.2 ThreadLocal Leak" width="30%">
 </a>
 
 
@@ -2362,14 +2362,14 @@ public class ThreadLocalLeak {
 
 ### 10.3 Static Collection Leak
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-handwritten.svg" alt="Handwritten: 10.3 Static Collection Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-handwritten.svg" alt="Handwritten: 10.3 Static Collection Leak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-diagram.svg" alt="Diagram: 10.3 Static Collection Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-diagram.svg" alt="Diagram: 10.3 Static Collection Leak" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-sticky.svg" alt="Sticky Note: 10.3 Static Collection Leak" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-sticky.svg" alt="Sticky Note: 10.3 Static Collection Leak" width="30%">
 </a>
 
 
@@ -2423,14 +2423,14 @@ public class StaticCollectionLeak {
 
 ### 10.4 String.intern() Leak (Pre-JDK 8u25)
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-handwritten.svg" alt="Handwritten: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-handwritten.svg" alt="Handwritten: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-diagram.svg" alt="Diagram: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-diagram.svg" alt="Diagram: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-sticky.svg" alt="Sticky Note: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-sticky.svg" alt="Sticky Note: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
 </a>
 
 
@@ -2478,14 +2478,14 @@ public class StringInternLeak {
 
 ### 10.5 Listener and Callback Leaks
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-handwritten.svg" alt="Handwritten: 10.5 Listener and Callback Leaks" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-handwritten.svg" alt="Handwritten: 10.5 Listener and Callback Leaks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-diagram.svg" alt="Diagram: 10.5 Listener and Callback Leaks" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-diagram.svg" alt="Diagram: 10.5 Listener and Callback Leaks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-sticky.svg" alt="Sticky Note: 10.5 Listener and Callback Leaks" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-sticky.svg" alt="Sticky Note: 10.5 Listener and Callback Leaks" width="30%">
 </a>
 
 
@@ -2546,14 +2546,14 @@ public class ListenerLeak {
 
 ### 10.6 Detecting Memory Leaks
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-handwritten.svg" alt="Handwritten: 10.6 Detecting Memory Leaks" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-handwritten.svg" alt="Handwritten: 10.6 Detecting Memory Leaks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-diagram.svg" alt="Diagram: 10.6 Detecting Memory Leaks" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-diagram.svg" alt="Diagram: 10.6 Detecting Memory Leaks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-sticky.svg" alt="Sticky Note: 10.6 Detecting Memory Leaks" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-sticky.svg" alt="Sticky Note: 10.6 Detecting Memory Leaks" width="30%">
 </a>
 
 
@@ -2743,14 +2743,14 @@ public class StringPoolDemo {
 
 ### 13.1 JIT Compilation Flags
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-handwritten.svg" alt="Handwritten: 13.1 JIT Compilation Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-handwritten.svg" alt="Handwritten: 13.1 JIT Compilation Flags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-diagram.svg" alt="Diagram: 13.1 JIT Compilation Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-diagram.svg" alt="Diagram: 13.1 JIT Compilation Flags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-sticky.svg" alt="Sticky Note: 13.1 JIT Compilation Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-sticky.svg" alt="Sticky Note: 13.1 JIT Compilation Flags" width="30%">
 </a>
 
 
@@ -2798,14 +2798,14 @@ public class JITFlags {
 
 ### 13.2 Memory Flags
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-handwritten.svg" alt="Handwritten: 13.2 Memory Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-handwritten.svg" alt="Handwritten: 13.2 Memory Flags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-diagram.svg" alt="Diagram: 13.2 Memory Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-diagram.svg" alt="Diagram: 13.2 Memory Flags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-sticky.svg" alt="Sticky Note: 13.2 Memory Flags" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-sticky.svg" alt="Sticky Note: 13.2 Memory Flags" width="30%">
 </a>
 
 
@@ -2853,14 +2853,14 @@ public class MemoryFlags {
 
 ### 13.3 Complete Production JVM Flags Example
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-handwritten.svg" alt="Handwritten: 13.3 Complete Production JVM Flags Example" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-handwritten.svg" alt="Handwritten: 13.3 Complete Production JVM Flags Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-diagram.svg" alt="Diagram: 13.3 Complete Production JVM Flags Example" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-diagram.svg" alt="Diagram: 13.3 Complete Production JVM Flags Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-sticky.svg" alt="Sticky Note: 13.3 Complete Production JVM Flags Example" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-sticky.svg" alt="Sticky Note: 13.3 Complete Production JVM Flags Example" width="30%">
 </a>
 
 
@@ -3008,14 +3008,14 @@ This chapter covered the JVM architecture and memory management in depth:
 
 ### Key Concepts
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/key-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/key-concepts-handwritten.svg" alt="Handwritten: Key Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-handwritten.svg" alt="Handwritten: Key Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/key-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/key-concepts-diagram.svg" alt="Diagram: Key Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-diagram.svg" alt="Diagram: Key Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/key-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/key-concepts-sticky.svg" alt="Sticky Note: Key Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-sticky.svg" alt="Sticky Note: Key Concepts" width="30%">
 </a>
 
 
@@ -3041,14 +3041,14 @@ This chapter covered the JVM architecture and memory management in depth:
 
 ### JVM Evolution
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-handwritten.svg" alt="Handwritten: JVM Evolution" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-handwritten.svg" alt="Handwritten: JVM Evolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-diagram.svg" alt="Diagram: JVM Evolution" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-diagram.svg" alt="Diagram: JVM Evolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-sticky.svg" alt="Sticky Note: JVM Evolution" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-sticky.svg" alt="Sticky Note: JVM Evolution" width="30%">
 </a>
 
 
@@ -3092,14 +3092,14 @@ This chapter covered the JVM architecture and memory management in depth:
 
 ### Application Exercises
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/application-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/application-exercises-handwritten.svg" alt="Handwritten: Application Exercises" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-handwritten.svg" alt="Handwritten: Application Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/application-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/application-exercises-diagram.svg" alt="Diagram: Application Exercises" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-diagram.svg" alt="Diagram: Application Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/application-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/application-exercises-sticky.svg" alt="Sticky Note: Application Exercises" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-sticky.svg" alt="Sticky Note: Application Exercises" width="30%">
 </a>
 
 
@@ -3220,14 +3220,14 @@ public class Exercise3_LeakDetector {
 
 ### Challenge Exercises
 
-<a href="../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-handwritten.svg" alt="Handwritten: Challenge Exercises" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-handwritten.svg" alt="Handwritten: Challenge Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-diagram.svg" alt="Diagram: Challenge Exercises" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-diagram.svg" alt="Diagram: Challenge Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-sticky.svg" alt="Sticky Note: Challenge Exercises" width="30%">
+<a href="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-sticky.svg" alt="Sticky Note: Challenge Exercises" width="30%">
 </a>
 
 

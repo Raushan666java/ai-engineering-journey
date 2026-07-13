@@ -25,14 +25,14 @@ After completing this chapter you will be able to:
 
 ### 3.1 Malware Types
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-handwritten.svg" alt="Handwritten: 3.1 Malware Types" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-handwritten.svg" alt="Handwritten: 3.1 Malware Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-diagram.svg" alt="Diagram: 3.1 Malware Types" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-diagram.svg" alt="Diagram: 3.1 Malware Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-sticky.svg" alt="Sticky Note: 3.1 Malware Types" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-sticky.svg" alt="Sticky Note: 3.1 Malware Types" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ flowchart TD
 
 ### 3.2 DoS and DDoS Attacks
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-handwritten.svg" alt="Handwritten: 3.2 DoS and DDoS Attacks" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-handwritten.svg" alt="Handwritten: 3.2 DoS and DDoS Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-diagram.svg" alt="Diagram: 3.2 DoS and DDoS Attacks" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-diagram.svg" alt="Diagram: 3.2 DoS and DDoS Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-sticky.svg" alt="Sticky Note: 3.2 DoS and DDoS Attacks" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-sticky.svg" alt="Sticky Note: 3.2 DoS and DDoS Attacks" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ flowchart LR
 
 ### 3.3 SQL Injection
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-handwritten.svg" alt="Handwritten: 3.3 SQL Injection" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-handwritten.svg" alt="Handwritten: 3.3 SQL Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-diagram.svg" alt="Diagram: 3.3 SQL Injection" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-diagram.svg" alt="Diagram: 3.3 SQL Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-sticky.svg" alt="Sticky Note: 3.3 SQL Injection" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-sticky.svg" alt="Sticky Note: 3.3 SQL Injection" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ SELECT * FROM users WHERE username = 'admin' AND password = 'guess'
 
 ### 3.4 XSS and CSRF
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-handwritten.svg" alt="Handwritten: 3.4 XSS and CSRF" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-handwritten.svg" alt="Handwritten: 3.4 XSS and CSRF" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-diagram.svg" alt="Diagram: 3.4 XSS and CSRF" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-diagram.svg" alt="Diagram: 3.4 XSS and CSRF" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-sticky.svg" alt="Sticky Note: 3.4 XSS and CSRF" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-sticky.svg" alt="Sticky Note: 3.4 XSS and CSRF" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ sequenceDiagram
 
 ### 3.5 Phishing and Social Engineering
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-handwritten.svg" alt="Handwritten: 3.5 Phishing and Social Engineering" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-handwritten.svg" alt="Handwritten: 3.5 Phishing and Social Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-diagram.svg" alt="Diagram: 3.5 Phishing and Social Engineering" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-diagram.svg" alt="Diagram: 3.5 Phishing and Social Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-sticky.svg" alt="Sticky Note: 3.5 Phishing and Social Engineering" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-sticky.svg" alt="Sticky Note: 3.5 Phishing and Social Engineering" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ sequenceDiagram
 
 ### 3.6 Man-in-the-Middle (MITM) Attacks
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-handwritten.svg" alt="Handwritten: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-handwritten.svg" alt="Handwritten: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-diagram.svg" alt="Diagram: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-diagram.svg" alt="Diagram: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-sticky.svg" alt="Sticky Note: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-sticky.svg" alt="Sticky Note: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
 </a>
 
 
@@ -399,14 +399,14 @@ sequenceDiagram
 
 ### 3.7 Session Hijacking
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-handwritten.svg" alt="Handwritten: 3.7 Session Hijacking" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-handwritten.svg" alt="Handwritten: 3.7 Session Hijacking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-diagram.svg" alt="Diagram: 3.7 Session Hijacking" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-diagram.svg" alt="Diagram: 3.7 Session Hijacking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-sticky.svg" alt="Sticky Note: 3.7 Session Hijacking" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-sticky.svg" alt="Sticky Note: 3.7 Session Hijacking" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ sequenceDiagram
 
 ### 3.8 Zero-Day Exploits
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-handwritten.svg" alt="Handwritten: 3.8 Zero-Day Exploits" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-handwritten.svg" alt="Handwritten: 3.8 Zero-Day Exploits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-diagram.svg" alt="Diagram: 3.8 Zero-Day Exploits" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-diagram.svg" alt="Diagram: 3.8 Zero-Day Exploits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-sticky.svg" alt="Sticky Note: 3.8 Zero-Day Exploits" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-sticky.svg" alt="Sticky Note: 3.8 Zero-Day Exploits" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ sequenceDiagram
 
 ### 3.9 Buffer Overflow
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-handwritten.svg" alt="Handwritten: 3.9 Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-handwritten.svg" alt="Handwritten: 3.9 Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-diagram.svg" alt="Diagram: 3.9 Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-diagram.svg" alt="Diagram: 3.9 Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-sticky.svg" alt="Sticky Note: 3.9 Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-sticky.svg" alt="Sticky Note: 3.9 Buffer Overflow" width="30%">
 </a>
 
 
@@ -491,14 +491,14 @@ flowchart TD
 
 ### 3.10 Solved MCQs (Exam Style)
 
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 3.10 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 3.10 Solved MCQs (Exam Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 3.10 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 3.10 Solved MCQs (Exam Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 3.10 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 3.10 Solved MCQs (Exam Style)" width="30%">
 </a>
 
 

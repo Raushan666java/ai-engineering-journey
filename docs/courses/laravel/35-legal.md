@@ -127,14 +127,14 @@ flowchart LR
 
 ### 35.1 Legal Data Models
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-handwritten.svg" alt="Handwritten: 35.1 Legal Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-handwritten.svg" alt="Handwritten: 35.1 Legal Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-diagram.svg" alt="Diagram: 35.1 Legal Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-diagram.svg" alt="Diagram: 35.1 Legal Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-sticky.svg" alt="Sticky Note: 35.1 Legal Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-1-legal-data-models-sticky.svg" alt="Sticky Note: 35.1 Legal Data Models" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ class Contract extends Model
 
 ### 35.2 Contract Review & Analysis Agents
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-handwritten.svg" alt="Handwritten: 35.2 Contract Review & Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-handwritten.svg" alt="Handwritten: 35.2 Contract Review & Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-diagram.svg" alt="Diagram: 35.2 Contract Review & Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-diagram.svg" alt="Diagram: 35.2 Contract Review & Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-sticky.svg" alt="Sticky Note: 35.2 Contract Review & Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-2-contract-review-analysis-agents-sticky.svg" alt="Sticky Note: 35.2 Contract Review & Analysis Agents" width="30%">
 </a>
 
 
@@ -651,14 +651,14 @@ PROMPT;
 
 ### 35.3 Document Discovery Automation
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-handwritten.svg" alt="Handwritten: 35.3 Document Discovery Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-handwritten.svg" alt="Handwritten: 35.3 Document Discovery Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-diagram.svg" alt="Diagram: 35.3 Document Discovery Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-diagram.svg" alt="Diagram: 35.3 Document Discovery Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-sticky.svg" alt="Sticky Note: 35.3 Document Discovery Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-3-document-discovery-automation-sticky.svg" alt="Sticky Note: 35.3 Document Discovery Automation" width="30%">
 </a>
 
 
@@ -901,14 +901,14 @@ PROMPT;
 
 ### 35.4 Compliance Monitoring Agents
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-handwritten.svg" alt="Handwritten: 35.4 Compliance Monitoring Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-handwritten.svg" alt="Handwritten: 35.4 Compliance Monitoring Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-diagram.svg" alt="Diagram: 35.4 Compliance Monitoring Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-diagram.svg" alt="Diagram: 35.4 Compliance Monitoring Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-sticky.svg" alt="Sticky Note: 35.4 Compliance Monitoring Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-4-compliance-monitoring-agents-sticky.svg" alt="Sticky Note: 35.4 Compliance Monitoring Agents" width="30%">
 </a>
 
 
@@ -1150,14 +1150,14 @@ PROMPT;
 
 ### 35.5 Case Management Workflows
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-handwritten.svg" alt="Handwritten: 35.5 Case Management Workflows" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-handwritten.svg" alt="Handwritten: 35.5 Case Management Workflows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-diagram.svg" alt="Diagram: 35.5 Case Management Workflows" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-diagram.svg" alt="Diagram: 35.5 Case Management Workflows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-sticky.svg" alt="Sticky Note: 35.5 Case Management Workflows" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-5-case-management-workflows-sticky.svg" alt="Sticky Note: 35.5 Case Management Workflows" width="30%">
 </a>
 
 
@@ -1349,14 +1349,14 @@ PROMPT;
 
 ### 35.6 Legal Research Agents
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-handwritten.svg" alt="Handwritten: 35.6 Legal Research Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-handwritten.svg" alt="Handwritten: 35.6 Legal Research Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-diagram.svg" alt="Diagram: 35.6 Legal Research Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-diagram.svg" alt="Diagram: 35.6 Legal Research Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-sticky.svg" alt="Sticky Note: 35.6 Legal Research Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-6-legal-research-agents-sticky.svg" alt="Sticky Note: 35.6 Legal Research Agents" width="30%">
 </a>
 
 
@@ -1665,14 +1665,14 @@ PROMPT;
 
 ### 35.7 E-Discovery Pipelines
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-handwritten.svg" alt="Handwritten: 35.7 E-Discovery Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-handwritten.svg" alt="Handwritten: 35.7 E-Discovery Pipelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-diagram.svg" alt="Diagram: 35.7 E-Discovery Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-diagram.svg" alt="Diagram: 35.7 E-Discovery Pipelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-sticky.svg" alt="Sticky Note: 35.7 E-Discovery Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-7-e-discovery-pipelines-sticky.svg" alt="Sticky Note: 35.7 E-Discovery Pipelines" width="30%">
 </a>
 
 
@@ -1978,14 +1978,14 @@ class EDiscoveryPipeline
 
 ### 35.8 Automated Report Generation
 
-<a href="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-handwritten.svg" alt="Handwritten: 35.8 Automated Report Generation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-handwritten.svg" alt="Handwritten: 35.8 Automated Report Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-diagram.svg" alt="Diagram: 35.8 Automated Report Generation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-diagram.svg" alt="Diagram: 35.8 Automated Report Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-sticky.svg" alt="Sticky Note: 35.8 Automated Report Generation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/35-legal/35-8-automated-report-generation-sticky.svg" alt="Sticky Note: 35.8 Automated Report Generation" width="30%">
 </a>
 
 

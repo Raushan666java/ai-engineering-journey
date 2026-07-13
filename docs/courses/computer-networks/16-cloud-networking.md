@@ -19,14 +19,14 @@ Cloud networking replaces physical routers, switches, and firewalls with softwar
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -34,14 +34,14 @@ A cloud network is like a **customizable office building within a business park*
 
 ### How Cloud Networking Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud Networking Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud Networking Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-diagram.svg" alt="Diagram: How Cloud Networking Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-diagram.svg" alt="Diagram: How Cloud Networking Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud Networking Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud Networking Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ A cloud network is like a **customizable office building within a business park*
 
 ### Pseudocode: Cloud Network Packet Forwarding
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-handwritten.svg" alt="Handwritten: Pseudocode: Cloud Network Packet Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-handwritten.svg" alt="Handwritten: Pseudocode: Cloud Network Packet Forwarding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-diagram.svg" alt="Diagram: Pseudocode: Cloud Network Packet Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-diagram.svg" alt="Diagram: Pseudocode: Cloud Network Packet Forwarding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-sticky.svg" alt="Sticky Note: Pseudocode: Cloud Network Packet Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-sticky.svg" alt="Sticky Note: Pseudocode: Cloud Network Packet Forwarding" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ END PROCEDURE
 
 ### Dry Run Trace: VPC Route Table Lookup
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-handwritten.svg" alt="Handwritten: Dry Run Trace: VPC Route Table Lookup" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-handwritten.svg" alt="Handwritten: Dry Run Trace: VPC Route Table Lookup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-diagram.svg" alt="Diagram: Dry Run Trace: VPC Route Table Lookup" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-diagram.svg" alt="Diagram: Dry Run Trace: VPC Route Table Lookup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-sticky.svg" alt="Sticky Note: Dry Run Trace: VPC Route Table Lookup" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-sticky.svg" alt="Sticky Note: Dry Run Trace: VPC Route Table Lookup" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ END PROCEDURE
 
 ### C++ Implementation: VPC Route Table with Longest Prefix Match
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-handwritten.svg" alt="Handwritten: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-handwritten.svg" alt="Handwritten: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-diagram.svg" alt="Diagram: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-diagram.svg" alt="Diagram: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-sticky.svg" alt="Sticky Note: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-sticky.svg" alt="Sticky Note: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
 </a>
 
 
@@ -307,14 +307,14 @@ int main() {
 
 ### Python Implementation: VPC Network Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-handwritten.svg" alt="Handwritten: Python Implementation: VPC Network Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-handwritten.svg" alt="Handwritten: Python Implementation: VPC Network Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-diagram.svg" alt="Diagram: Python Implementation: VPC Network Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-diagram.svg" alt="Diagram: Python Implementation: VPC Network Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-sticky.svg" alt="Sticky Note: Python Implementation: VPC Network Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-sticky.svg" alt="Sticky Note: Python Implementation: VPC Network Simulator" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -481,14 +481,14 @@ if __name__ == "__main__":
 
 ### Advantages & Disadvantages of Cloud Networking
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud Networking" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@ if __name__ == "__main__":
 
 ### Edge Cases in Cloud Networking
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-handwritten.svg" alt="Handwritten: Edge Cases in Cloud Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-handwritten.svg" alt="Handwritten: Edge Cases in Cloud Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-diagram.svg" alt="Diagram: Edge Cases in Cloud Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-diagram.svg" alt="Diagram: Edge Cases in Cloud Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-sticky.svg" alt="Sticky Note: Edge Cases in Cloud Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-sticky.svg" alt="Sticky Note: Edge Cases in Cloud Networking" width="30%">
 </a>
 
 
@@ -523,14 +523,14 @@ if __name__ == "__main__":
 
 ### Cloud Network Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-handwritten.svg" alt="Handwritten: Cloud Network Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-handwritten.svg" alt="Handwritten: Cloud Network Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-diagram.svg" alt="Diagram: Cloud Network Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-diagram.svg" alt="Diagram: Cloud Network Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-sticky.svg" alt="Sticky Note: Cloud Network Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-sticky.svg" alt="Sticky Note: Cloud Network Architecture" width="30%">
 </a>
 
 
@@ -662,14 +662,14 @@ A Virtual Private Cloud (VPC) provides logically isolated network segments withi
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -677,14 +677,14 @@ A VPC is like a **gated community with customizable house lots**. The community 
 
 ### VPC Setup: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-handwritten.svg" alt="Handwritten: VPC Setup: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-handwritten.svg" alt="Handwritten: VPC Setup: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-diagram.svg" alt="Diagram: VPC Setup: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-diagram.svg" alt="Diagram: VPC Setup: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-sticky.svg" alt="Sticky Note: VPC Setup: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-sticky.svg" alt="Sticky Note: VPC Setup: Step-by-Step" width="30%">
 </a>
 
 
@@ -704,14 +704,14 @@ A VPC is like a **gated community with customizable house lots**. The community 
 
 ### 16.3.1 VPC Components
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-handwritten.svg" alt="Handwritten: 16.3.1 VPC Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-handwritten.svg" alt="Handwritten: 16.3.1 VPC Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-diagram.svg" alt="Diagram: 16.3.1 VPC Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-diagram.svg" alt="Diagram: 16.3.1 VPC Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-sticky.svg" alt="Sticky Note: 16.3.1 VPC Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-sticky.svg" alt="Sticky Note: 16.3.1 VPC Components" width="30%">
 </a>
 
 
@@ -735,14 +735,14 @@ A VPC is like a **gated community with customizable house lots**. The community 
 
 ### 16.3.2 VPC Peering
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-handwritten.svg" alt="Handwritten: 16.3.2 VPC Peering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-handwritten.svg" alt="Handwritten: 16.3.2 VPC Peering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-diagram.svg" alt="Diagram: 16.3.2 VPC Peering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-diagram.svg" alt="Diagram: 16.3.2 VPC Peering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-sticky.svg" alt="Sticky Note: 16.3.2 VPC Peering" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-sticky.svg" alt="Sticky Note: 16.3.2 VPC Peering" width="30%">
 </a>
 
 
@@ -750,14 +750,14 @@ VPC Peering connects two VPCs using private IP addresses. Peering is not transit
 
 ### Pseudocode: VPC and Subnet Allocation
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-handwritten.svg" alt="Handwritten: Pseudocode: VPC and Subnet Allocation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-handwritten.svg" alt="Handwritten: Pseudocode: VPC and Subnet Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-diagram.svg" alt="Diagram: Pseudocode: VPC and Subnet Allocation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-diagram.svg" alt="Diagram: Pseudocode: VPC and Subnet Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-sticky.svg" alt="Sticky Note: Pseudocode: VPC and Subnet Allocation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-sticky.svg" alt="Sticky Note: Pseudocode: VPC and Subnet Allocation" width="30%">
 </a>
 
 
@@ -819,14 +819,14 @@ END PROCEDURE
 
 ### Dry Run Trace: VPC with Multi-AZ Subnets
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-handwritten.svg" alt="Handwritten: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-handwritten.svg" alt="Handwritten: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-diagram.svg" alt="Diagram: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-diagram.svg" alt="Diagram: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-sticky.svg" alt="Sticky Note: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-sticky.svg" alt="Sticky Note: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
 </a>
 
 
@@ -860,14 +860,14 @@ END PROCEDURE
 
 ### C++ Implementation: VPC Subnet Allocator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-handwritten.svg" alt="Handwritten: C++ Implementation: VPC Subnet Allocator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-handwritten.svg" alt="Handwritten: C++ Implementation: VPC Subnet Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-diagram.svg" alt="Diagram: C++ Implementation: VPC Subnet Allocator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-diagram.svg" alt="Diagram: C++ Implementation: VPC Subnet Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-sticky.svg" alt="Sticky Note: C++ Implementation: VPC Subnet Allocator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-sticky.svg" alt="Sticky Note: C++ Implementation: VPC Subnet Allocator" width="30%">
 </a>
 
 
@@ -969,14 +969,14 @@ int main() {
 
 ### Python Implementation: VPC Subnet Planner
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-handwritten.svg" alt="Handwritten: Python Implementation: VPC Subnet Planner" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-handwritten.svg" alt="Handwritten: Python Implementation: VPC Subnet Planner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-diagram.svg" alt="Diagram: Python Implementation: VPC Subnet Planner" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-diagram.svg" alt="Diagram: Python Implementation: VPC Subnet Planner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-sticky.svg" alt="Sticky Note: Python Implementation: VPC Subnet Planner" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-sticky.svg" alt="Sticky Note: Python Implementation: VPC Subnet Planner" width="30%">
 </a>
 
 
@@ -1050,14 +1050,14 @@ if subnet:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1070,14 +1070,14 @@ if subnet:
 
 ### Advantages & Disadvantages of VPC
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of VPC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of VPC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-diagram.svg" alt="Diagram: Advantages & Disadvantages of VPC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-diagram.svg" alt="Diagram: Advantages & Disadvantages of VPC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of VPC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of VPC" width="30%">
 </a>
 
 
@@ -1090,14 +1090,14 @@ if subnet:
 
 ### Edge Cases in VPC
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-handwritten.svg" alt="Handwritten: Edge Cases in VPC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-handwritten.svg" alt="Handwritten: Edge Cases in VPC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-diagram.svg" alt="Diagram: Edge Cases in VPC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-diagram.svg" alt="Diagram: Edge Cases in VPC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-sticky.svg" alt="Sticky Note: Edge Cases in VPC" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-sticky.svg" alt="Sticky Note: Edge Cases in VPC" width="30%">
 </a>
 
 
@@ -1293,14 +1293,14 @@ demoVPCDesign();
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1308,14 +1308,14 @@ Security groups are like **VIP club door policies**. Each club section (EC2 inst
 
 ### How Security Groups Work: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-handwritten.svg" alt="Handwritten: How Security Groups Work: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-handwritten.svg" alt="Handwritten: How Security Groups Work: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-diagram.svg" alt="Diagram: How Security Groups Work: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-diagram.svg" alt="Diagram: How Security Groups Work: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-sticky.svg" alt="Sticky Note: How Security Groups Work: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-sticky.svg" alt="Sticky Note: How Security Groups Work: Step-by-Step" width="30%">
 </a>
 
 
@@ -1331,14 +1331,14 @@ Security groups are like **VIP club door policies**. Each club section (EC2 inst
 
 ### Pseudocode: Security Group Evaluation
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-handwritten.svg" alt="Handwritten: Pseudocode: Security Group Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-handwritten.svg" alt="Handwritten: Pseudocode: Security Group Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-diagram.svg" alt="Diagram: Pseudocode: Security Group Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-diagram.svg" alt="Diagram: Pseudocode: Security Group Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-sticky.svg" alt="Sticky Note: Pseudocode: Security Group Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-sticky.svg" alt="Sticky Note: Pseudocode: Security Group Evaluation" width="30%">
 </a>
 
 
@@ -1377,14 +1377,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Security Group Evaluation
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-handwritten.svg" alt="Handwritten: Dry Run Trace: Security Group Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-handwritten.svg" alt="Handwritten: Dry Run Trace: Security Group Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-diagram.svg" alt="Diagram: Dry Run Trace: Security Group Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-diagram.svg" alt="Diagram: Dry Run Trace: Security Group Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-sticky.svg" alt="Sticky Note: Dry Run Trace: Security Group Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-sticky.svg" alt="Sticky Note: Dry Run Trace: Security Group Evaluation" width="30%">
 </a>
 
 
@@ -1421,14 +1421,14 @@ END PROCEDURE
 
 ### C++ Implementation: Security Group Evaluator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-handwritten.svg" alt="Handwritten: C++ Implementation: Security Group Evaluator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-handwritten.svg" alt="Handwritten: C++ Implementation: Security Group Evaluator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-diagram.svg" alt="Diagram: C++ Implementation: Security Group Evaluator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-diagram.svg" alt="Diagram: C++ Implementation: Security Group Evaluator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-sticky.svg" alt="Sticky Note: C++ Implementation: Security Group Evaluator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-sticky.svg" alt="Sticky Note: C++ Implementation: Security Group Evaluator" width="30%">
 </a>
 
 
@@ -1565,14 +1565,14 @@ int main() {
 
 ### Python Implementation: Security Group Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Security Group Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Security Group Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-diagram.svg" alt="Diagram: Python Implementation: Security Group Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-diagram.svg" alt="Diagram: Python Implementation: Security Group Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Security Group Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Security Group Simulator" width="30%">
 </a>
 
 
@@ -1657,14 +1657,14 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1677,14 +1677,14 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)
 
 ### Advantages & Disadvantages of Security Groups
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Security Groups" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Security Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-diagram.svg" alt="Diagram: Advantages & Disadvantages of Security Groups" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-diagram.svg" alt="Diagram: Advantages & Disadvantages of Security Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Security Groups" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Security Groups" width="30%">
 </a>
 
 
@@ -1697,14 +1697,14 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)
 
 ### Edge Cases for Security Groups
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-handwritten.svg" alt="Handwritten: Edge Cases for Security Groups" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-handwritten.svg" alt="Handwritten: Edge Cases for Security Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-diagram.svg" alt="Diagram: Edge Cases for Security Groups" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-diagram.svg" alt="Diagram: Edge Cases for Security Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-sticky.svg" alt="Sticky Note: Edge Cases for Security Groups" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-sticky.svg" alt="Sticky Note: Edge Cases for Security Groups" width="30%">
 </a>
 
 
@@ -1721,14 +1721,14 @@ Load balancers distribute incoming traffic across multiple targets (EC2 instance
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1736,14 +1736,14 @@ A load balancer is like a **hotel front desk with multiple check-in agents**. Gu
 
 ### 16.5.1 Application Load Balancer
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-handwritten.svg" alt="Handwritten: 16.5.1 Application Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-handwritten.svg" alt="Handwritten: 16.5.1 Application Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-diagram.svg" alt="Diagram: 16.5.1 Application Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-diagram.svg" alt="Diagram: 16.5.1 Application Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-sticky.svg" alt="Sticky Note: 16.5.1 Application Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-sticky.svg" alt="Sticky Note: 16.5.1 Application Load Balancer" width="30%">
 </a>
 
 
@@ -1758,14 +1758,14 @@ ALB operates at Layer 7 (HTTP/HTTPS). Features:
 
 ### 16.5.2 Network Load Balancer
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-handwritten.svg" alt="Handwritten: 16.5.2 Network Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-handwritten.svg" alt="Handwritten: 16.5.2 Network Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-diagram.svg" alt="Diagram: 16.5.2 Network Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-diagram.svg" alt="Diagram: 16.5.2 Network Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-sticky.svg" alt="Sticky Note: 16.5.2 Network Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-sticky.svg" alt="Sticky Note: 16.5.2 Network Load Balancer" width="30%">
 </a>
 
 
@@ -1781,14 +1781,14 @@ NLB is suitable for performance-critical applications and protocols that require
 
 ### 16.5.3 Gateway Load Balancer
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-handwritten.svg" alt="Handwritten: 16.5.3 Gateway Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-handwritten.svg" alt="Handwritten: 16.5.3 Gateway Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-diagram.svg" alt="Diagram: 16.5.3 Gateway Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-diagram.svg" alt="Diagram: 16.5.3 Gateway Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-sticky.svg" alt="Sticky Note: 16.5.3 Gateway Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-sticky.svg" alt="Sticky Note: 16.5.3 Gateway Load Balancer" width="30%">
 </a>
 
 
@@ -1801,14 +1801,14 @@ GLB operates at Layer 3 (IP) and is designed for deploying virtual appliances (f
 
 ### 16.5.4 Classic Load Balancer
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-handwritten.svg" alt="Handwritten: 16.5.4 Classic Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-handwritten.svg" alt="Handwritten: 16.5.4 Classic Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-diagram.svg" alt="Diagram: 16.5.4 Classic Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-diagram.svg" alt="Diagram: 16.5.4 Classic Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-sticky.svg" alt="Sticky Note: 16.5.4 Classic Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-sticky.svg" alt="Sticky Note: 16.5.4 Classic Load Balancer" width="30%">
 </a>
 
 
@@ -1816,14 +1816,14 @@ CLB is the legacy load balancer supporting both Layer 4 and basic Layer 7 featur
 
 ### 16.5.5 Health Checks
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-handwritten.svg" alt="Handwritten: 16.5.5 Health Checks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-handwritten.svg" alt="Handwritten: 16.5.5 Health Checks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-diagram.svg" alt="Diagram: 16.5.5 Health Checks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-diagram.svg" alt="Diagram: 16.5.5 Health Checks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-sticky.svg" alt="Sticky Note: 16.5.5 Health Checks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-sticky.svg" alt="Sticky Note: 16.5.5 Health Checks" width="30%">
 </a>
 
 
@@ -1831,14 +1831,14 @@ Load balancers periodically send health check requests to targets. A target is c
 
 ### Pseudocode: Load Balancer Request Dispatch
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-handwritten.svg" alt="Handwritten: Pseudocode: Load Balancer Request Dispatch" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-handwritten.svg" alt="Handwritten: Pseudocode: Load Balancer Request Dispatch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-diagram.svg" alt="Diagram: Pseudocode: Load Balancer Request Dispatch" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-diagram.svg" alt="Diagram: Pseudocode: Load Balancer Request Dispatch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-sticky.svg" alt="Sticky Note: Pseudocode: Load Balancer Request Dispatch" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-sticky.svg" alt="Sticky Note: Pseudocode: Load Balancer Request Dispatch" width="30%">
 </a>
 
 
@@ -1872,14 +1872,14 @@ END PROCEDURE
 
 ### Dry Run Trace: ALB Path-Based Routing
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-handwritten.svg" alt="Handwritten: Dry Run Trace: ALB Path-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-handwritten.svg" alt="Handwritten: Dry Run Trace: ALB Path-Based Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-diagram.svg" alt="Diagram: Dry Run Trace: ALB Path-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-diagram.svg" alt="Diagram: Dry Run Trace: ALB Path-Based Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-sticky.svg" alt="Sticky Note: Dry Run Trace: ALB Path-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-sticky.svg" alt="Sticky Note: Dry Run Trace: ALB Path-Based Routing" width="30%">
 </a>
 
 
@@ -1951,14 +1951,14 @@ END PROCEDURE
 
 ### C++ Implementation: Load Balancer with Round-Robin and Least Connections
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-handwritten.svg" alt="Handwritten: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-handwritten.svg" alt="Handwritten: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-diagram.svg" alt="Diagram: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-diagram.svg" alt="Diagram: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-sticky.svg" alt="Sticky Note: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-sticky.svg" alt="Sticky Note: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
 </a>
 
 
@@ -2137,14 +2137,14 @@ int main() {
 
 ### Python Implementation: Load Balancer with Multiple Algorithms
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-handwritten.svg" alt="Handwritten: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-handwritten.svg" alt="Handwritten: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-diagram.svg" alt="Diagram: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-diagram.svg" alt="Diagram: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-sticky.svg" alt="Sticky Note: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-sticky.svg" alt="Sticky Note: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
 </a>
 
 
@@ -2289,14 +2289,14 @@ lc.print_status()
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2312,14 +2312,14 @@ lc.print_status()
 
 ### Advantages & Disadvantages of Load Balancers
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Load Balancers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-diagram.svg" alt="Diagram: Advantages & Disadvantages of Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-diagram.svg" alt="Diagram: Advantages & Disadvantages of Load Balancers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Load Balancers" width="30%">
 </a>
 
 
@@ -2332,14 +2332,14 @@ lc.print_status()
 
 ### Edge Cases for Load Balancers
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-handwritten.svg" alt="Handwritten: Edge Cases for Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-handwritten.svg" alt="Handwritten: Edge Cases for Load Balancers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-diagram.svg" alt="Diagram: Edge Cases for Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-diagram.svg" alt="Diagram: Edge Cases for Load Balancers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-sticky.svg" alt="Sticky Note: Edge Cases for Load Balancers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-sticky.svg" alt="Sticky Note: Edge Cases for Load Balancers" width="30%">
 </a>
 
 
@@ -2619,14 +2619,14 @@ console.log(drainer.getStatus());
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2634,14 +2634,14 @@ Cloud DNS is like a **national telephone directory service operating across mult
 
 ### How Cloud DNS Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud DNS Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud DNS Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-diagram.svg" alt="Diagram: How Cloud DNS Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-diagram.svg" alt="Diagram: How Cloud DNS Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud DNS Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud DNS Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -2659,14 +2659,14 @@ Cloud DNS is like a **national telephone directory service operating across mult
 
 ### Pseudocode: DNS Resolution with Latency-Based Routing
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-handwritten.svg" alt="Handwritten: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-handwritten.svg" alt="Handwritten: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-diagram.svg" alt="Diagram: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-diagram.svg" alt="Diagram: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-sticky.svg" alt="Sticky Note: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-sticky.svg" alt="Sticky Note: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
 </a>
 
 
@@ -2723,14 +2723,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Route53 Latency-Based Routing
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-handwritten.svg" alt="Handwritten: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-handwritten.svg" alt="Handwritten: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-diagram.svg" alt="Diagram: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-diagram.svg" alt="Diagram: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-sticky.svg" alt="Sticky Note: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-sticky.svg" alt="Sticky Note: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
 </a>
 
 
@@ -2783,14 +2783,14 @@ END PROCEDURE
 
 ### C++ Implementation: DNS Routing Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: DNS Routing Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: DNS Routing Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-diagram.svg" alt="Diagram: C++ Implementation: DNS Routing Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-diagram.svg" alt="Diagram: C++ Implementation: DNS Routing Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: DNS Routing Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: DNS Routing Simulator" width="30%">
 </a>
 
 
@@ -2949,14 +2949,14 @@ int main() {
 
 ### Python Implementation: Cloud DNS with All Routing Policies
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-handwritten.svg" alt="Handwritten: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-handwritten.svg" alt="Handwritten: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-diagram.svg" alt="Diagram: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-diagram.svg" alt="Diagram: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-sticky.svg" alt="Sticky Note: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-sticky.svg" alt="Sticky Note: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
 </a>
 
 
@@ -3098,14 +3098,14 @@ for i in range(5):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -3121,14 +3121,14 @@ for i in range(5):
 
 ### Advantages & Disadvantages of Cloud DNS
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud DNS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud DNS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud DNS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud DNS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud DNS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud DNS" width="30%">
 </a>
 
 
@@ -3142,14 +3142,14 @@ for i in range(5):
 
 ### Edge Cases in Cloud DNS
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-handwritten.svg" alt="Handwritten: Edge Cases in Cloud DNS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-handwritten.svg" alt="Handwritten: Edge Cases in Cloud DNS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-diagram.svg" alt="Diagram: Edge Cases in Cloud DNS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-diagram.svg" alt="Diagram: Edge Cases in Cloud DNS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-sticky.svg" alt="Sticky Note: Edge Cases in Cloud DNS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-sticky.svg" alt="Sticky Note: Edge Cases in Cloud DNS" width="30%">
 </a>
 
 
@@ -3168,14 +3168,14 @@ A Content Delivery Network (CDN) caches content at edge locations close to users
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3183,14 +3183,14 @@ A CDN is like a **chain of local grocery warehouses serving a national restauran
 
 ### How CDN Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-handwritten.svg" alt="Handwritten: How CDN Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-handwritten.svg" alt="Handwritten: How CDN Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-diagram.svg" alt="Diagram: How CDN Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-diagram.svg" alt="Diagram: How CDN Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-sticky.svg" alt="Sticky Note: How CDN Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-sticky.svg" alt="Sticky Note: How CDN Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -3212,14 +3212,14 @@ A CDN is like a **chain of local grocery warehouses serving a national restauran
 
 ### 16.8.1 CDN Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-handwritten.svg" alt="Handwritten: 16.8.1 CDN Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-handwritten.svg" alt="Handwritten: 16.8.1 CDN Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-diagram.svg" alt="Diagram: 16.8.1 CDN Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-diagram.svg" alt="Diagram: 16.8.1 CDN Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-sticky.svg" alt="Sticky Note: 16.8.1 CDN Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-sticky.svg" alt="Sticky Note: 16.8.1 CDN Architecture" width="30%">
 </a>
 
 
@@ -3227,14 +3227,14 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 
 ### 16.8.2 Key CDN Features
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-handwritten.svg" alt="Handwritten: 16.8.2 Key CDN Features" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-handwritten.svg" alt="Handwritten: 16.8.2 Key CDN Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-diagram.svg" alt="Diagram: 16.8.2 Key CDN Features" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-diagram.svg" alt="Diagram: 16.8.2 Key CDN Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-sticky.svg" alt="Sticky Note: 16.8.2 Key CDN Features" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-sticky.svg" alt="Sticky Note: 16.8.2 Key CDN Features" width="30%">
 </a>
 
 
@@ -3250,14 +3250,14 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 
 ### 16.8.3 Major CDNs
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-handwritten.svg" alt="Handwritten: 16.8.3 Major CDNs" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-handwritten.svg" alt="Handwritten: 16.8.3 Major CDNs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-diagram.svg" alt="Diagram: 16.8.3 Major CDNs" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-diagram.svg" alt="Diagram: 16.8.3 Major CDNs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-sticky.svg" alt="Sticky Note: 16.8.3 Major CDNs" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-sticky.svg" alt="Sticky Note: 16.8.3 Major CDNs" width="30%">
 </a>
 
 
@@ -3271,14 +3271,14 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 
 ### Pseudocode: CDN Request Handling with Tiered Caching
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-handwritten.svg" alt="Handwritten: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-handwritten.svg" alt="Handwritten: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-diagram.svg" alt="Diagram: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-diagram.svg" alt="Diagram: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-sticky.svg" alt="Sticky Note: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-sticky.svg" alt="Sticky Note: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
 </a>
 
 
@@ -3321,14 +3321,14 @@ END PROCEDURE
 
 ### Dry Run Trace: CDN Request Lifecycle
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-handwritten.svg" alt="Handwritten: Dry Run Trace: CDN Request Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-handwritten.svg" alt="Handwritten: Dry Run Trace: CDN Request Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-diagram.svg" alt="Diagram: Dry Run Trace: CDN Request Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-diagram.svg" alt="Diagram: Dry Run Trace: CDN Request Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-sticky.svg" alt="Sticky Note: Dry Run Trace: CDN Request Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-sticky.svg" alt="Sticky Note: Dry Run Trace: CDN Request Lifecycle" width="30%">
 </a>
 
 
@@ -3386,14 +3386,14 @@ END PROCEDURE
 
 ### C++ Implementation: CDN Cache Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: CDN Cache Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: CDN Cache Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-diagram.svg" alt="Diagram: C++ Implementation: CDN Cache Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-diagram.svg" alt="Diagram: C++ Implementation: CDN Cache Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: CDN Cache Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: CDN Cache Simulator" width="30%">
 </a>
 
 
@@ -3591,14 +3591,14 @@ int main() {
 
 ### Python Implementation: CDN with Cache Hit Ratio Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-handwritten.svg" alt="Handwritten: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-handwritten.svg" alt="Handwritten: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-diagram.svg" alt="Diagram: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-diagram.svg" alt="Diagram: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-sticky.svg" alt="Sticky Note: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-sticky.svg" alt="Sticky Note: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
 </a>
 
 
@@ -3761,14 +3761,14 @@ for round_num in range(1, simulation_rounds + 1):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -3782,14 +3782,14 @@ for round_num in range(1, simulation_rounds + 1):
 
 ### Advantages & Disadvantages of CDN
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of CDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-diagram.svg" alt="Diagram: Advantages & Disadvantages of CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-diagram.svg" alt="Diagram: Advantages & Disadvantages of CDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of CDN" width="30%">
 </a>
 
 
@@ -3803,14 +3803,14 @@ for round_num in range(1, simulation_rounds + 1):
 
 ### Edge Cases for CDN
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-handwritten.svg" alt="Handwritten: Edge Cases for CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-handwritten.svg" alt="Handwritten: Edge Cases for CDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-diagram.svg" alt="Diagram: Edge Cases for CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-diagram.svg" alt="Diagram: Edge Cases for CDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-sticky.svg" alt="Sticky Note: Edge Cases for CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-sticky.svg" alt="Sticky Note: Edge Cases for CDN" width="30%">
 </a>
 
 
@@ -4096,14 +4096,14 @@ demoCDNManager();
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -4111,14 +4111,14 @@ A VPN to the cloud is like a **secure armored tunnel through a public highway**.
 
 ### How Cloud VPN Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud VPN Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud VPN Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-diagram.svg" alt="Diagram: How Cloud VPN Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-diagram.svg" alt="Diagram: How Cloud VPN Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud VPN Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud VPN Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -4138,14 +4138,14 @@ A VPN to the cloud is like a **secure armored tunnel through a public highway**.
 
 ### Pseudocode: IPSec VPN Tunnel Establishment
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-handwritten.svg" alt="Handwritten: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-handwritten.svg" alt="Handwritten: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-diagram.svg" alt="Diagram: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-diagram.svg" alt="Diagram: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-sticky.svg" alt="Sticky Note: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-sticky.svg" alt="Sticky Note: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
 </a>
 
 
@@ -4211,14 +4211,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Cloud VPN Connectivity
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-handwritten.svg" alt="Handwritten: Dry Run Trace: Cloud VPN Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-handwritten.svg" alt="Handwritten: Dry Run Trace: Cloud VPN Connectivity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-diagram.svg" alt="Diagram: Dry Run Trace: Cloud VPN Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-diagram.svg" alt="Diagram: Dry Run Trace: Cloud VPN Connectivity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-sticky.svg" alt="Sticky Note: Dry Run Trace: Cloud VPN Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-sticky.svg" alt="Sticky Note: Dry Run Trace: Cloud VPN Connectivity" width="30%">
 </a>
 
 
@@ -4266,14 +4266,14 @@ END PROCEDURE
 
 ### C++ Implementation: VPN Tunnel Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: VPN Tunnel Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: VPN Tunnel Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-diagram.svg" alt="Diagram: C++ Implementation: VPN Tunnel Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-diagram.svg" alt="Diagram: C++ Implementation: VPN Tunnel Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: VPN Tunnel Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: VPN Tunnel Simulator" width="30%">
 </a>
 
 
@@ -4457,14 +4457,14 @@ int main() {
 
 ### Python Implementation: Cloud VPN Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Cloud VPN Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Cloud VPN Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-diagram.svg" alt="Diagram: Python Implementation: Cloud VPN Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-diagram.svg" alt="Diagram: Python Implementation: Cloud VPN Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Cloud VPN Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Cloud VPN Simulator" width="30%">
 </a>
 
 
@@ -4565,14 +4565,14 @@ vpn.status()
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -4588,14 +4588,14 @@ vpn.status()
 
 ### Advantages & Disadvantages of Cloud VPN
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud VPN" width="30%">
 </a>
 
 
@@ -4609,14 +4609,14 @@ vpn.status()
 
 ### Edge Cases for Cloud VPN
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-handwritten.svg" alt="Handwritten: Edge Cases for Cloud VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-handwritten.svg" alt="Handwritten: Edge Cases for Cloud VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-diagram.svg" alt="Diagram: Edge Cases for Cloud VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-diagram.svg" alt="Diagram: Edge Cases for Cloud VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-sticky.svg" alt="Sticky Note: Edge Cases for Cloud VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-sticky.svg" alt="Sticky Note: Edge Cases for Cloud VPN" width="30%">
 </a>
 
 
@@ -4632,14 +4632,14 @@ vpn.status()
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -4647,14 +4647,14 @@ Direct Connect is like a **private subway line between your office building and 
 
 ### How Direct Connect Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-handwritten.svg" alt="Handwritten: How Direct Connect Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-handwritten.svg" alt="Handwritten: How Direct Connect Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-diagram.svg" alt="Diagram: How Direct Connect Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-diagram.svg" alt="Diagram: How Direct Connect Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-sticky.svg" alt="Sticky Note: How Direct Connect Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-sticky.svg" alt="Sticky Note: How Direct Connect Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -4672,14 +4672,14 @@ Direct Connect is like a **private subway line between your office building and 
 
 ### Pseudocode: Direct Connect BGP Session Setup
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-handwritten.svg" alt="Handwritten: Pseudocode: Direct Connect BGP Session Setup" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-handwritten.svg" alt="Handwritten: Pseudocode: Direct Connect BGP Session Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-diagram.svg" alt="Diagram: Pseudocode: Direct Connect BGP Session Setup" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-diagram.svg" alt="Diagram: Pseudocode: Direct Connect BGP Session Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-sticky.svg" alt="Sticky Note: Pseudocode: Direct Connect BGP Session Setup" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-sticky.svg" alt="Sticky Note: Pseudocode: Direct Connect BGP Session Setup" width="30%">
 </a>
 
 
@@ -4733,14 +4733,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Direct Connect Packet Flow
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-handwritten.svg" alt="Handwritten: Dry Run Trace: Direct Connect Packet Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-handwritten.svg" alt="Handwritten: Dry Run Trace: Direct Connect Packet Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-diagram.svg" alt="Diagram: Dry Run Trace: Direct Connect Packet Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-diagram.svg" alt="Diagram: Dry Run Trace: Direct Connect Packet Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-sticky.svg" alt="Sticky Note: Dry Run Trace: Direct Connect Packet Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-sticky.svg" alt="Sticky Note: Dry Run Trace: Direct Connect Packet Flow" width="30%">
 </a>
 
 
@@ -4782,14 +4782,14 @@ END PROCEDURE
 
 ### C++ Implementation: Direct Connect Bandwidth Calculator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-diagram.svg" alt="Diagram: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-diagram.svg" alt="Diagram: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
 </a>
 
 
@@ -4860,14 +4860,14 @@ int main() {
 
 ### Python Implementation: Direct Connect Cost vs VPN Analyzer
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-handwritten.svg" alt="Handwritten: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-handwritten.svg" alt="Handwritten: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-diagram.svg" alt="Diagram: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-diagram.svg" alt="Diagram: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-sticky.svg" alt="Sticky Note: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-sticky.svg" alt="Sticky Note: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
 </a>
 
 
@@ -4925,14 +4925,14 @@ analyze_connectivity(daily_data_gb=10000)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -4945,14 +4945,14 @@ analyze_connectivity(daily_data_gb=10000)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -4966,14 +4966,14 @@ analyze_connectivity(daily_data_gb=10000)
 
 ### Edge Cases for Direct Connect
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-handwritten.svg" alt="Handwritten: Edge Cases for Direct Connect" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-handwritten.svg" alt="Handwritten: Edge Cases for Direct Connect" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-diagram.svg" alt="Diagram: Edge Cases for Direct Connect" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-diagram.svg" alt="Diagram: Edge Cases for Direct Connect" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-sticky.svg" alt="Sticky Note: Edge Cases for Direct Connect" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-sticky.svg" alt="Sticky Note: Edge Cases for Direct Connect" width="30%">
 </a>
 
 
@@ -5015,14 +5015,14 @@ analyze_connectivity(daily_data_gb=10000)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -5030,14 +5030,14 @@ Multi-cloud networking is like a **company with offices in three different city 
 
 ### How Multi-Cloud Networking Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-handwritten.svg" alt="Handwritten: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-handwritten.svg" alt="Handwritten: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-diagram.svg" alt="Diagram: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-diagram.svg" alt="Diagram: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-sticky.svg" alt="Sticky Note: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-sticky.svg" alt="Sticky Note: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -5055,14 +5055,14 @@ Multi-cloud networking is like a **company with offices in three different city 
 
 ### Pseudocode: Multi-Cloud Route Advertisement
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-handwritten.svg" alt="Handwritten: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-handwritten.svg" alt="Handwritten: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-diagram.svg" alt="Diagram: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-diagram.svg" alt="Diagram: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-sticky.svg" alt="Sticky Note: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-sticky.svg" alt="Sticky Note: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
 </a>
 
 
@@ -5107,14 +5107,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Multi-Cloud Request Flow
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-handwritten.svg" alt="Handwritten: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-handwritten.svg" alt="Handwritten: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-diagram.svg" alt="Diagram: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-diagram.svg" alt="Diagram: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-sticky.svg" alt="Sticky Note: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-sticky.svg" alt="Sticky Note: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
 </a>
 
 
@@ -5141,14 +5141,14 @@ END PROCEDURE
 
 ### C++ Implementation: Multi-Cloud Route Table
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-handwritten.svg" alt="Handwritten: C++ Implementation: Multi-Cloud Route Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-handwritten.svg" alt="Handwritten: C++ Implementation: Multi-Cloud Route Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-diagram.svg" alt="Diagram: C++ Implementation: Multi-Cloud Route Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-diagram.svg" alt="Diagram: C++ Implementation: Multi-Cloud Route Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-sticky.svg" alt="Sticky Note: C++ Implementation: Multi-Cloud Route Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-sticky.svg" alt="Sticky Note: C++ Implementation: Multi-Cloud Route Table" width="30%">
 </a>
 
 
@@ -5285,14 +5285,14 @@ int main() {
 
 ### Python Implementation: Multi-Cloud Latency Analyzer
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-handwritten.svg" alt="Handwritten: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-handwritten.svg" alt="Handwritten: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-diagram.svg" alt="Diagram: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-diagram.svg" alt="Diagram: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-sticky.svg" alt="Sticky Note: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-sticky.svg" alt="Sticky Note: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
 </a>
 
 
@@ -5374,14 +5374,14 @@ mcn.trace("GCP", "10.0.0.50", 4)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -5393,14 +5393,14 @@ mcn.trace("GCP", "10.0.0.50", 4)
 
 ### Edge Cases in Multi-Cloud
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-handwritten.svg" alt="Handwritten: Edge Cases in Multi-Cloud" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-handwritten.svg" alt="Handwritten: Edge Cases in Multi-Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-diagram.svg" alt="Diagram: Edge Cases in Multi-Cloud" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-diagram.svg" alt="Diagram: Edge Cases in Multi-Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-sticky.svg" alt="Sticky Note: Edge Cases in Multi-Cloud" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-sticky.svg" alt="Sticky Note: Edge Cases in Multi-Cloud" width="30%">
 </a>
 
 
@@ -5415,14 +5415,14 @@ mcn.trace("GCP", "10.0.0.50", 4)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -5430,14 +5430,14 @@ A service mesh is like an **air traffic control system for every courier in a ci
 
 ### How Service Mesh Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-handwritten.svg" alt="Handwritten: How Service Mesh Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-handwritten.svg" alt="Handwritten: How Service Mesh Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-diagram.svg" alt="Diagram: How Service Mesh Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-diagram.svg" alt="Diagram: How Service Mesh Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-sticky.svg" alt="Sticky Note: How Service Mesh Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-sticky.svg" alt="Sticky Note: How Service Mesh Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -5457,14 +5457,14 @@ A service mesh is like an **air traffic control system for every courier in a ci
 
 ### Pseudocode: Service Mesh Request with mTLS and Routing
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-handwritten.svg" alt="Handwritten: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-handwritten.svg" alt="Handwritten: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-diagram.svg" alt="Diagram: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-diagram.svg" alt="Diagram: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-sticky.svg" alt="Sticky Note: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-sticky.svg" alt="Sticky Note: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
 </a>
 
 
@@ -5521,14 +5521,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Istio Service Mesh Request
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-handwritten.svg" alt="Handwritten: Dry Run Trace: Istio Service Mesh Request" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-handwritten.svg" alt="Handwritten: Dry Run Trace: Istio Service Mesh Request" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-diagram.svg" alt="Diagram: Dry Run Trace: Istio Service Mesh Request" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-diagram.svg" alt="Diagram: Dry Run Trace: Istio Service Mesh Request" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-sticky.svg" alt="Sticky Note: Dry Run Trace: Istio Service Mesh Request" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-sticky.svg" alt="Sticky Note: Dry Run Trace: Istio Service Mesh Request" width="30%">
 </a>
 
 
@@ -5570,14 +5570,14 @@ END PROCEDURE
 
 ### C++ Implementation: Service Mesh Sidecar Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-diagram.svg" alt="Diagram: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-diagram.svg" alt="Diagram: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
 </a>
 
 
@@ -5787,14 +5787,14 @@ int main() {
 
 ### Python Implementation: Service Mesh Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Service Mesh Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Service Mesh Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-diagram.svg" alt="Diagram: Python Implementation: Service Mesh Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-diagram.svg" alt="Diagram: Python Implementation: Service Mesh Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Service Mesh Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Service Mesh Simulator" width="30%">
 </a>
 
 
@@ -5935,14 +5935,14 @@ mesh.stats()
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -5958,14 +5958,14 @@ mesh.stats()
 
 ### Advantages & Disadvantages of Service Mesh
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Service Mesh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-diagram.svg" alt="Diagram: Advantages & Disadvantages of Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-diagram.svg" alt="Diagram: Advantages & Disadvantages of Service Mesh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Service Mesh" width="30%">
 </a>
 
 
@@ -5978,14 +5978,14 @@ mesh.stats()
 
 ### Edge Cases for Service Mesh
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-handwritten.svg" alt="Handwritten: Edge Cases for Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-handwritten.svg" alt="Handwritten: Edge Cases for Service Mesh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-diagram.svg" alt="Diagram: Edge Cases for Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-diagram.svg" alt="Diagram: Edge Cases for Service Mesh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-sticky.svg" alt="Sticky Note: Edge Cases for Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-sticky.svg" alt="Sticky Note: Edge Cases for Service Mesh" width="30%">
 </a>
 
 
@@ -6021,14 +6021,14 @@ mesh.stats()
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -6036,14 +6036,14 @@ Anycast is like a **nationwide pizza chain with one phone number**. When you dia
 
 ### How Anycast Works: Step-by-Step
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-handwritten.svg" alt="Handwritten: How Anycast Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-handwritten.svg" alt="Handwritten: How Anycast Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-diagram.svg" alt="Diagram: How Anycast Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-diagram.svg" alt="Diagram: How Anycast Works: Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-sticky.svg" alt="Sticky Note: How Anycast Works: Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-sticky.svg" alt="Sticky Note: How Anycast Works: Step-by-Step" width="30%">
 </a>
 
 
@@ -6059,14 +6059,14 @@ Anycast is like a **nationwide pizza chain with one phone number**. When you dia
 
 ### Pseudocode: Anycast Routing
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-handwritten.svg" alt="Handwritten: Pseudocode: Anycast Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-handwritten.svg" alt="Handwritten: Pseudocode: Anycast Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-diagram.svg" alt="Diagram: Pseudocode: Anycast Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-diagram.svg" alt="Diagram: Pseudocode: Anycast Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-sticky.svg" alt="Sticky Note: Pseudocode: Anycast Routing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-sticky.svg" alt="Sticky Note: Pseudocode: Anycast Routing" width="30%">
 </a>
 
 
@@ -6094,14 +6094,14 @@ END PROCEDURE
 
 ### Dry Run Trace: Anycast DNS Resolution
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-handwritten.svg" alt="Handwritten: Dry Run Trace: Anycast DNS Resolution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-handwritten.svg" alt="Handwritten: Dry Run Trace: Anycast DNS Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-diagram.svg" alt="Diagram: Dry Run Trace: Anycast DNS Resolution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-diagram.svg" alt="Diagram: Dry Run Trace: Anycast DNS Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-sticky.svg" alt="Sticky Note: Dry Run Trace: Anycast DNS Resolution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-sticky.svg" alt="Sticky Note: Dry Run Trace: Anycast DNS Resolution" width="30%">
 </a>
 
 
@@ -6139,14 +6139,14 @@ END PROCEDURE
 
 ### C++ Implementation: Anycast Route Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Anycast Route Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Anycast Route Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-diagram.svg" alt="Diagram: C++ Implementation: Anycast Route Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-diagram.svg" alt="Diagram: C++ Implementation: Anycast Route Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Anycast Route Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Anycast Route Simulator" width="30%">
 </a>
 
 
@@ -6249,14 +6249,14 @@ int main() {
 
 ### Python Implementation: Anycast Network Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Anycast Network Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Anycast Network Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-diagram.svg" alt="Diagram: Python Implementation: Anycast Network Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-diagram.svg" alt="Diagram: Python Implementation: Anycast Network Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Anycast Network Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Anycast Network Simulator" width="30%">
 </a>
 
 
@@ -6340,14 +6340,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -6359,14 +6359,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Edge Cases for Anycast
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-handwritten.svg" alt="Handwritten: Edge Cases for Anycast" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-handwritten.svg" alt="Handwritten: Edge Cases for Anycast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-diagram.svg" alt="Diagram: Edge Cases for Anycast" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-diagram.svg" alt="Diagram: Edge Cases for Anycast" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-sticky.svg" alt="Sticky Note: Edge Cases for Anycast" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-sticky.svg" alt="Sticky Note: Edge Cases for Anycast" width="30%">
 </a>
 
 
@@ -6402,14 +6402,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q1: How does cloud networking differ from on-premises networking?
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-handwritten.svg" alt="Handwritten: How does cloud networking differ from on-premises networking?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-handwritten.svg" alt="Handwritten: How does cloud networking differ from on-premises networking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-diagram.svg" alt="Diagram: How does cloud networking differ from on-premises networking?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-diagram.svg" alt="Diagram: How does cloud networking differ from on-premises networking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-sticky.svg" alt="Sticky Note: How does cloud networking differ from on-premises networking?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-sticky.svg" alt="Sticky Note: How does cloud networking differ from on-premises networking?" width="30%">
 </a>
 
 
@@ -6417,14 +6417,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q2: Compare round-robin vs least-connections vs IP hash load balancing.
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-handwritten.svg" alt="Handwritten: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-handwritten.svg" alt="Handwritten: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-diagram.svg" alt="Diagram: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-diagram.svg" alt="Diagram: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-sticky.svg" alt="Sticky Note: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-sticky.svg" alt="Sticky Note: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
 </a>
 
 
@@ -6432,14 +6432,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q3: What is DNS propagation and why does it matter?
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is DNS propagation and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is DNS propagation and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-diagram.svg" alt="Diagram: What is DNS propagation and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-diagram.svg" alt="Diagram: What is DNS propagation and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is DNS propagation and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is DNS propagation and why does it matter?" width="30%">
 </a>
 
 
@@ -6447,14 +6447,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q4: What factors determine a multi-cloud strategy?
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-handwritten.svg" alt="Handwritten: What factors determine a multi-cloud strategy?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-handwritten.svg" alt="Handwritten: What factors determine a multi-cloud strategy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-diagram.svg" alt="Diagram: What factors determine a multi-cloud strategy?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-diagram.svg" alt="Diagram: What factors determine a multi-cloud strategy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-sticky.svg" alt="Sticky Note: What factors determine a multi-cloud strategy?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-sticky.svg" alt="Sticky Note: What factors determine a multi-cloud strategy?" width="30%">
 </a>
 
 
@@ -6462,14 +6462,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q5: What happens when a load balancer health check fails?
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-handwritten.svg" alt="Handwritten: What happens when a load balancer health check fails?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-handwritten.svg" alt="Handwritten: What happens when a load balancer health check fails?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-diagram.svg" alt="Diagram: What happens when a load balancer health check fails?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-diagram.svg" alt="Diagram: What happens when a load balancer health check fails?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-sticky.svg" alt="Sticky Note: What happens when a load balancer health check fails?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-sticky.svg" alt="Sticky Note: What happens when a load balancer health check fails?" width="30%">
 </a>
 
 
@@ -6477,14 +6477,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q6: How does VXLAN isolate tenants in cloud networking?
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-handwritten.svg" alt="Handwritten: How does VXLAN isolate tenants in cloud networking?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-handwritten.svg" alt="Handwritten: How does VXLAN isolate tenants in cloud networking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-diagram.svg" alt="Diagram: How does VXLAN isolate tenants in cloud networking?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-diagram.svg" alt="Diagram: How does VXLAN isolate tenants in cloud networking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-sticky.svg" alt="Sticky Note: How does VXLAN isolate tenants in cloud networking?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-sticky.svg" alt="Sticky Note: How does VXLAN isolate tenants in cloud networking?" width="30%">
 </a>
 
 
@@ -6496,14 +6496,14 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### AWS: VPC + ALB Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-handwritten.svg" alt="Handwritten: AWS: VPC + ALB Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-handwritten.svg" alt="Handwritten: AWS: VPC + ALB Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-diagram.svg" alt="Diagram: AWS: VPC + ALB Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-diagram.svg" alt="Diagram: AWS: VPC + ALB Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-sticky.svg" alt="Sticky Note: AWS: VPC + ALB Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-sticky.svg" alt="Sticky Note: AWS: VPC + ALB Architecture" width="30%">
 </a>
 
 
@@ -6519,14 +6519,14 @@ Internet → Route53 → CloudFront → ALB → Web Targets (public subnets)
 
 ### Google Cloud: VPC + Cloud CDN
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-handwritten.svg" alt="Handwritten: Google Cloud: VPC + Cloud CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-handwritten.svg" alt="Handwritten: Google Cloud: VPC + Cloud CDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-diagram.svg" alt="Diagram: Google Cloud: VPC + Cloud CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-diagram.svg" alt="Diagram: Google Cloud: VPC + Cloud CDN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-sticky.svg" alt="Sticky Note: Google Cloud: VPC + Cloud CDN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-sticky.svg" alt="Sticky Note: Google Cloud: VPC + Cloud CDN" width="30%">
 </a>
 
 
@@ -6540,14 +6540,14 @@ Global HTTP(S) LB → Cloud CDN → Backend Buckets (static) → Cloud Storage
 
 ### Azure: Virtual Network Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-handwritten.svg" alt="Handwritten: Azure: Virtual Network Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-handwritten.svg" alt="Handwritten: Azure: Virtual Network Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-diagram.svg" alt="Diagram: Azure: Virtual Network Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-diagram.svg" alt="Diagram: Azure: Virtual Network Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-sticky.svg" alt="Sticky Note: Azure: Virtual Network Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-sticky.svg" alt="Sticky Note: Azure: Virtual Network Architecture" width="30%">
 </a>
 
 
@@ -6564,14 +6564,14 @@ Azure Front Door → Application Gateway (WAF) → VMSS (web tier, public subnet
 
 ### Istio on Kubernetes
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-handwritten.svg" alt="Handwritten: Istio on Kubernetes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-handwritten.svg" alt="Handwritten: Istio on Kubernetes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-diagram.svg" alt="Diagram: Istio on Kubernetes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-diagram.svg" alt="Diagram: Istio on Kubernetes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-sticky.svg" alt="Sticky Note: Istio on Kubernetes" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-sticky.svg" alt="Sticky Note: Istio on Kubernetes" width="30%">
 </a>
 
 
@@ -6602,14 +6602,14 @@ Ingress Gateway → VirtualService → DestinationRule → Pod (sidecar Envoy)
 
 ### Problem
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-diagram.svg" alt="Diagram: Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-diagram.svg" alt="Diagram: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
 </a>
 
 
@@ -6617,14 +6617,14 @@ A rapidly growing e-commerce platform serving 5 million monthly visitors across 
 
 ### Solution
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-diagram.svg" alt="Diagram: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-diagram.svg" alt="Diagram: Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
 </a>
 
 
@@ -6632,14 +6632,14 @@ The engineering team migrated to a multi-region AWS architecture. Each region (u
 
 ### Outcome
 
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-handwritten.svg" alt="Handwritten: Outcome" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-handwritten.svg" alt="Handwritten: Outcome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-diagram.svg" alt="Diagram: Outcome" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-diagram.svg" alt="Diagram: Outcome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-sticky.svg" alt="Sticky Note: Outcome" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-sticky.svg" alt="Sticky Note: Outcome" width="30%">
 </a>
 
 

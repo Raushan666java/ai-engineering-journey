@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 Understanding Missing Data
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-handwritten.svg" alt="Handwritten: 2.1 Understanding Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-handwritten.svg" alt="Handwritten: 2.1 Understanding Missing Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-diagram.svg" alt="Diagram: 2.1 Understanding Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-diagram.svg" alt="Diagram: 2.1 Understanding Missing Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-sticky.svg" alt="Sticky Note: 2.1 Understanding Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-1-understanding-missing-data-sticky.svg" alt="Sticky Note: 2.1 Understanding Missing Data" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ This is especially effective for multiple-choice questions where only one answer
 
 ### 2.2 Equation Formulation for Missing Data
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-handwritten.svg" alt="Handwritten: 2.2 Equation Formulation for Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-handwritten.svg" alt="Handwritten: 2.2 Equation Formulation for Missing Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-diagram.svg" alt="Diagram: 2.2 Equation Formulation for Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-diagram.svg" alt="Diagram: 2.2 Equation Formulation for Missing Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-sticky.svg" alt="Sticky Note: 2.2 Equation Formulation for Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-2-equation-formulation-for-missing-data-sticky.svg" alt="Sticky Note: 2.2 Equation Formulation for Missing Data" width="30%">
 </a>
 
 
@@ -149,14 +149,14 @@ When multiple values are missing, you must set up equations:
 
 ### 2.3 Caselet Data Interpretation
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-handwritten.svg" alt="Handwritten: 2.3 Caselet Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-handwritten.svg" alt="Handwritten: 2.3 Caselet Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-diagram.svg" alt="Diagram: 2.3 Caselet Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-diagram.svg" alt="Diagram: 2.3 Caselet Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-sticky.svg" alt="Sticky Note: 2.3 Caselet Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-3-caselet-data-interpretation-sticky.svg" alt="Sticky Note: 2.3 Caselet Data Interpretation" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ flowchart LR
 
 ### 2.4 Caselet Types
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-handwritten.svg" alt="Handwritten: 2.4 Caselet Types" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-handwritten.svg" alt="Handwritten: 2.4 Caselet Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-diagram.svg" alt="Diagram: 2.4 Caselet Types" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-diagram.svg" alt="Diagram: 2.4 Caselet Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-sticky.svg" alt="Sticky Note: 2.4 Caselet Types" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-4-caselet-types-sticky.svg" alt="Sticky Note: 2.4 Caselet Types" width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ Combine multiple types of data � demographic + financial, or production + sale
 
 ### 2.5 Ratio and Proportion in Missing Data
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-handwritten.svg" alt="Handwritten: 2.5 Ratio and Proportion in Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-handwritten.svg" alt="Handwritten: 2.5 Ratio and Proportion in Missing Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-diagram.svg" alt="Diagram: 2.5 Ratio and Proportion in Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-diagram.svg" alt="Diagram: 2.5 Ratio and Proportion in Missing Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-sticky.svg" alt="Sticky Note: 2.5 Ratio and Proportion in Missing Data" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-5-ratio-and-proportion-in-missing-data-sticky.svg" alt="Sticky Note: 2.5 Ratio and Proportion in Missing Data" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ If A:B:C = 2:3:5 and total = 200:
 
 ### 2.6 Solving Through Equation Formulation
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-handwritten.svg" alt="Handwritten: 2.6 Solving Through Equation Formulation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-handwritten.svg" alt="Handwritten: 2.6 Solving Through Equation Formulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-diagram.svg" alt="Diagram: 2.6 Solving Through Equation Formulation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-diagram.svg" alt="Diagram: 2.6 Solving Through Equation Formulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-sticky.svg" alt="Sticky Note: 2.6 Solving Through Equation Formulation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6-solving-through-equation-formulation-sticky.svg" alt="Sticky Note: 2.6 Solving Through Equation Formulation" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ When a caselet involves unknowns, the process is:
 
 ### 2.6a Advanced Caselet Strategies
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-handwritten.svg" alt="Handwritten: 2.6a Advanced Caselet Strategies" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-handwritten.svg" alt="Handwritten: 2.6a Advanced Caselet Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-diagram.svg" alt="Diagram: 2.6a Advanced Caselet Strategies" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-diagram.svg" alt="Diagram: 2.6a Advanced Caselet Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-sticky.svg" alt="Sticky Note: 2.6a Advanced Caselet Strategies" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6a-advanced-caselet-strategies-sticky.svg" alt="Sticky Note: 2.6a Advanced Caselet Strategies" width="30%">
 </a>
 
 
@@ -356,14 +356,14 @@ For complex caselets with 5+ entities and multiple relationships:
 
 ### 2.6b Equation Types in Caselet DI
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-handwritten.svg" alt="Handwritten: 2.6b Equation Types in Caselet DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-handwritten.svg" alt="Handwritten: 2.6b Equation Types in Caselet DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-diagram.svg" alt="Diagram: 2.6b Equation Types in Caselet DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-diagram.svg" alt="Diagram: 2.6b Equation Types in Caselet DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-sticky.svg" alt="Sticky Note: 2.6b Equation Types in Caselet DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6b-equation-types-in-caselet-di-sticky.svg" alt="Sticky Note: 2.6b Equation Types in Caselet DI" width="30%">
 </a>
 
 
@@ -390,14 +390,14 @@ So boys : girls = 3 : 2.
 
 ### 2.6c Determinacy Analysis
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-handwritten.svg" alt="Handwritten: 2.6c Determinacy Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-handwritten.svg" alt="Handwritten: 2.6c Determinacy Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-diagram.svg" alt="Diagram: 2.6c Determinacy Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-diagram.svg" alt="Diagram: 2.6c Determinacy Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-sticky.svg" alt="Sticky Note: 2.6c Determinacy Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-6c-determinacy-analysis-sticky.svg" alt="Sticky Note: 2.6c Determinacy Analysis" width="30%">
 </a>
 
 
@@ -428,14 +428,14 @@ Before solving a missing data problem, check whether the system is:
 
 ### 2.7 Handling Multiple Missing Values
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-handwritten.svg" alt="Handwritten: 2.7 Handling Multiple Missing Values" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-handwritten.svg" alt="Handwritten: 2.7 Handling Multiple Missing Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-diagram.svg" alt="Diagram: 2.7 Handling Multiple Missing Values" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-diagram.svg" alt="Diagram: 2.7 Handling Multiple Missing Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-sticky.svg" alt="Sticky Note: 2.7 Handling Multiple Missing Values" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-7-handling-multiple-missing-values-sticky.svg" alt="Sticky Note: 2.7 Handling Multiple Missing Values" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ When a table has more than one missing value:
 
 ### 2.8 Common Errors in Missing Data DI
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-handwritten.svg" alt="Handwritten: 2.8 Common Errors in Missing Data DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-handwritten.svg" alt="Handwritten: 2.8 Common Errors in Missing Data DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-diagram.svg" alt="Diagram: 2.8 Common Errors in Missing Data DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-diagram.svg" alt="Diagram: 2.8 Common Errors in Missing Data DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-sticky.svg" alt="Sticky Note: 2.8 Common Errors in Missing Data DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-8-common-errors-in-missing-data-di-sticky.svg" alt="Sticky Note: 2.8 Common Errors in Missing Data DI" width="30%">
 </a>
 
 
@@ -476,14 +476,14 @@ When a table has more than one missing value:
 
 ### 2.9 Caselet Question Patterns
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-handwritten.svg" alt="Handwritten: 2.9 Caselet Question Patterns" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-handwritten.svg" alt="Handwritten: 2.9 Caselet Question Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-diagram.svg" alt="Diagram: 2.9 Caselet Question Patterns" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-diagram.svg" alt="Diagram: 2.9 Caselet Question Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-sticky.svg" alt="Sticky Note: 2.9 Caselet Question Patterns" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9-caselet-question-patterns-sticky.svg" alt="Sticky Note: 2.9 Caselet Question Patterns" width="30%">
 </a>
 
 
@@ -497,14 +497,14 @@ Typically, 4-7 questions follow a single caselet. The questions progress from:
 
 ### 2.9a Practice Drill: Rapid Caselet Conversion
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-handwritten.svg" alt="Handwritten: 2.9a Practice Drill: Rapid Caselet Conversion" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-handwritten.svg" alt="Handwritten: 2.9a Practice Drill: Rapid Caselet Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-diagram.svg" alt="Diagram: 2.9a Practice Drill: Rapid Caselet Conversion" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-diagram.svg" alt="Diagram: 2.9a Practice Drill: Rapid Caselet Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-sticky.svg" alt="Sticky Note: 2.9a Practice Drill: Rapid Caselet Conversion" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9a-practice-drill-rapid-caselet-conversion-sticky.svg" alt="Sticky Note: 2.9a Practice Drill: Rapid Caselet Conversion" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ After solving, verify using these checks:
 
 ### 2.9b Caselet Type Deep Dive: Financial Ratios
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-handwritten.svg" alt="Handwritten: 2.9b Caselet Type Deep Dive: Financial Ratios" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-handwritten.svg" alt="Handwritten: 2.9b Caselet Type Deep Dive: Financial Ratios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-diagram.svg" alt="Diagram: 2.9b Caselet Type Deep Dive: Financial Ratios" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-diagram.svg" alt="Diagram: 2.9b Caselet Type Deep Dive: Financial Ratios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-sticky.svg" alt="Sticky Note: 2.9b Caselet Type Deep Dive: Financial Ratios" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9b-caselet-type-deep-dive-financial-ratios-sticky.svg" alt="Sticky Note: 2.9b Caselet Type Deep Dive: Financial Ratios" width="30%">
 </a>
 
 
@@ -593,14 +593,14 @@ Financial caselets often ask you to compute complex ratios:
 
 ### 2.9c Common Caselet Pitfalls
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-handwritten.svg" alt="Handwritten: 2.9c Common Caselet Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-handwritten.svg" alt="Handwritten: 2.9c Common Caselet Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-diagram.svg" alt="Diagram: 2.9c Common Caselet Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-diagram.svg" alt="Diagram: 2.9c Common Caselet Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-sticky.svg" alt="Sticky Note: 2.9c Common Caselet Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-9c-common-caselet-pitfalls-sticky.svg" alt="Sticky Note: 2.9c Common Caselet Pitfalls" width="30%">
 </a>
 
 
@@ -614,14 +614,14 @@ Financial caselets often ask you to compute complex ratios:
 
 ### 2.10 Time Management for Caselet DI
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-handwritten.svg" alt="Handwritten: 2.10 Time Management for Caselet DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-handwritten.svg" alt="Handwritten: 2.10 Time Management for Caselet DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-diagram.svg" alt="Diagram: 2.10 Time Management for Caselet DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-diagram.svg" alt="Diagram: 2.10 Time Management for Caselet DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-sticky.svg" alt="Sticky Note: 2.10 Time Management for Caselet DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/02-missing-data-caselet-di/2-10-time-management-for-caselet-di-sticky.svg" alt="Sticky Note: 2.10 Time Management for Caselet DI" width="30%">
 </a>
 
 

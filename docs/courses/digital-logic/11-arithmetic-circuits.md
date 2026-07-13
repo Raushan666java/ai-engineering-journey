@@ -33,14 +33,14 @@ Multiplication of two N-bit numbers produces a 2N-bit result:
 
 ### 11.1.1 Array Multiplier
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-handwritten.svg" alt="Handwritten: 11.1.1 Array Multiplier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-handwritten.svg" alt="Handwritten: 11.1.1 Array Multiplier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-diagram.svg" alt="Diagram: 11.1.1 Array Multiplier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-diagram.svg" alt="Diagram: 11.1.1 Array Multiplier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-sticky.svg" alt="Sticky Note: 11.1.1 Array Multiplier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-1-array-multiplier-sticky.svg" alt="Sticky Note: 11.1.1 Array Multiplier" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ console.log(arrayMultiply(6, 7, 4));   // 42
 
 ### 11.1.2 Booth Multiplication
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-handwritten.svg" alt="Handwritten: 11.1.2 Booth Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-handwritten.svg" alt="Handwritten: 11.1.2 Booth Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-diagram.svg" alt="Diagram: 11.1.2 Booth Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-diagram.svg" alt="Diagram: 11.1.2 Booth Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-sticky.svg" alt="Sticky Note: 11.1.2 Booth Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-2-booth-multiplication-sticky.svg" alt="Sticky Note: 11.1.2 Booth Multiplication" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ function boothRadix4(A: number, B: number, bits: number): number {
 
 ### 11.1.3 Wallace Tree Multiplier
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-handwritten.svg" alt="Handwritten: 11.1.3 Wallace Tree Multiplier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-handwritten.svg" alt="Handwritten: 11.1.3 Wallace Tree Multiplier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-diagram.svg" alt="Diagram: 11.1.3 Wallace Tree Multiplier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-diagram.svg" alt="Diagram: 11.1.3 Wallace Tree Multiplier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-sticky.svg" alt="Sticky Note: 11.1.3 Wallace Tree Multiplier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-3-wallace-tree-multiplier-sticky.svg" alt="Sticky Note: 11.1.3 Wallace Tree Multiplier" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ console.log(wallace.multiply(255, 255, 8)); // 65025
 
 ### 11.1.4 Multiplier Comparison
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-handwritten.svg" alt="Handwritten: 11.1.4 Multiplier Comparison" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-handwritten.svg" alt="Handwritten: 11.1.4 Multiplier Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-diagram.svg" alt="Diagram: 11.1.4 Multiplier Comparison" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-diagram.svg" alt="Diagram: 11.1.4 Multiplier Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-sticky.svg" alt="Sticky Note: 11.1.4 Multiplier Comparison" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-1-4-multiplier-comparison-sticky.svg" alt="Sticky Note: 11.1.4 Multiplier Comparison" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ Division is the most complex arithmetic operation. The **restoring division** al
 
 ### 11.2.1 Restoring Division
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-handwritten.svg" alt="Handwritten: 11.2.1 Restoring Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-handwritten.svg" alt="Handwritten: 11.2.1 Restoring Division" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-diagram.svg" alt="Diagram: 11.2.1 Restoring Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-diagram.svg" alt="Diagram: 11.2.1 Restoring Division" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-sticky.svg" alt="Sticky Note: 11.2.1 Restoring Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-1-restoring-division-sticky.svg" alt="Sticky Note: 11.2.1 Restoring Division" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ console.log(restoringDivide(145, 13, 8)); // { quotient: 11, remainder: 2 }
 
 ### 11.2.2 Non-Restoring Division
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-handwritten.svg" alt="Handwritten: 11.2.2 Non-Restoring Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-handwritten.svg" alt="Handwritten: 11.2.2 Non-Restoring Division" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-diagram.svg" alt="Diagram: 11.2.2 Non-Restoring Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-diagram.svg" alt="Diagram: 11.2.2 Non-Restoring Division" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-sticky.svg" alt="Sticky Note: 11.2.2 Non-Restoring Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-2-non-restoring-division-sticky.svg" alt="Sticky Note: 11.2.2 Non-Restoring Division" width="30%">
 </a>
 
 
@@ -412,14 +412,14 @@ function nonRestoringDivide(dividend: number, divisor: number, bits: number): { 
 
 ### 11.2.3 SRT Division
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-handwritten.svg" alt="Handwritten: 11.2.3 SRT Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-handwritten.svg" alt="Handwritten: 11.2.3 SRT Division" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-diagram.svg" alt="Diagram: 11.2.3 SRT Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-diagram.svg" alt="Diagram: 11.2.3 SRT Division" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-sticky.svg" alt="Sticky Note: 11.2.3 SRT Division" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-2-3-srt-division-sticky.svg" alt="Sticky Note: 11.2.3 SRT Division" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ SRT division (named for Sweeney, Robertson, Tocher) uses a **redundant quotient 
 
 ### 11.3.1 IEEE 754 Format
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-handwritten.svg" alt="Handwritten: 11.3.1 IEEE 754 Format" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-handwritten.svg" alt="Handwritten: 11.3.1 IEEE 754 Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-diagram.svg" alt="Diagram: 11.3.1 IEEE 754 Format" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-diagram.svg" alt="Diagram: 11.3.1 IEEE 754 Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-sticky.svg" alt="Sticky Note: 11.3.1 IEEE 754 Format" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-1-ieee-754-format-sticky.svg" alt="Sticky Note: 11.3.1 IEEE 754 Format" width="30%">
 </a>
 
 
@@ -483,14 +483,14 @@ console.log(fpDecompose(piBits)); // sign=0, exponent=128, mantissa=0x490FDA
 
 ### 11.3.2 Floating-Point Addition
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-handwritten.svg" alt="Handwritten: 11.3.2 Floating-Point Addition" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-handwritten.svg" alt="Handwritten: 11.3.2 Floating-Point Addition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-diagram.svg" alt="Diagram: 11.3.2 Floating-Point Addition" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-diagram.svg" alt="Diagram: 11.3.2 Floating-Point Addition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-sticky.svg" alt="Sticky Note: 11.3.2 Floating-Point Addition" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-2-floating-point-addition-sticky.svg" alt="Sticky Note: 11.3.2 Floating-Point Addition" width="30%">
 </a>
 
 
@@ -558,14 +558,14 @@ console.log(`3.14159 + 2.71828 = ${sum}`); // ~5.85987
 
 ### 11.3.3 Floating-Point Multiplication
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-handwritten.svg" alt="Handwritten: 11.3.3 Floating-Point Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-handwritten.svg" alt="Handwritten: 11.3.3 Floating-Point Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-diagram.svg" alt="Diagram: 11.3.3 Floating-Point Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-diagram.svg" alt="Diagram: 11.3.3 Floating-Point Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-sticky.svg" alt="Sticky Note: 11.3.3 Floating-Point Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-3-floating-point-multiplication-sticky.svg" alt="Sticky Note: 11.3.3 Floating-Point Multiplication" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ console.log(`3.14159 ? 2.0 = ${product}`); // ~6.28318
 
 ### 11.3.4 Rounding Modes
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-handwritten.svg" alt="Handwritten: 11.3.4 Rounding Modes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-handwritten.svg" alt="Handwritten: 11.3.4 Rounding Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-diagram.svg" alt="Diagram: 11.3.4 Rounding Modes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-diagram.svg" alt="Diagram: 11.3.4 Rounding Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-sticky.svg" alt="Sticky Note: 11.3.4 Rounding Modes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-4-rounding-modes-sticky.svg" alt="Sticky Note: 11.3.4 Rounding Modes" width="30%">
 </a>
 
 
@@ -658,14 +658,14 @@ function round(result: number, guard: number, round: number, sticky: number, mod
 
 ### 11.3.5 Floating-Point Pipeline
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-handwritten.svg" alt="Handwritten: 11.3.5 Floating-Point Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-handwritten.svg" alt="Handwritten: 11.3.5 Floating-Point Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-diagram.svg" alt="Diagram: 11.3.5 Floating-Point Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-diagram.svg" alt="Diagram: 11.3.5 Floating-Point Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-sticky.svg" alt="Sticky Note: 11.3.5 Floating-Point Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/11-3-5-floating-point-pipeline-sticky.svg" alt="Sticky Note: 11.3.5 Floating-Point Pipeline" width="30%">
 </a>
 
 
@@ -1075,14 +1075,14 @@ d) {0, 1, 2}
 
 ### Answers
 
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-diagram.svg" alt="Diagram: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/11-arithmetic-circuits/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
 </a>
 
 

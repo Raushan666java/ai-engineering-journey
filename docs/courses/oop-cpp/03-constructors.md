@@ -79,14 +79,14 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ A default constructor is like a **blank birth certificate**. When a baby is born
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -109,14 +109,14 @@ A **default constructor** is a constructor that can be called with **no argument
 
 ### Key Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-handwritten.svg" alt="Handwritten: Key Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-handwritten.svg" alt="Handwritten: Key Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-diagram.svg" alt="Diagram: Key Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-diagram.svg" alt="Diagram: Key Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-sticky.svg" alt="Sticky Note: Key Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-rules-sticky.svg" alt="Sticky Note: Key Rules" width="30%">
 </a>
 
 
@@ -127,14 +127,14 @@ A **default constructor** is a constructor that can be called with **no argument
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ END CLASS
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ Default constructor called for Unknown
 
 ### Dry Run Trace: Default Constructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-handwritten.svg" alt="Handwritten: Dry Run Trace: Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-handwritten.svg" alt="Handwritten: Dry Run Trace: Default Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-diagram.svg" alt="Diagram: Dry Run Trace: Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-diagram.svg" alt="Diagram: Dry Run Trace: Default Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-sticky.svg" alt="Sticky Note: Dry Run Trace: Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-default-constructor-sticky.svg" alt="Sticky Note: Dry Run Trace: Default Constructor" width="30%">
 </a>
 
 
@@ -232,14 +232,14 @@ Default constructor called for Unknown
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -252,14 +252,14 @@ Default constructor called for Unknown
 
 ### When the Compiler Suppresses the Default Constructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-handwritten.svg" alt="Handwritten: When the Compiler Suppresses the Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-handwritten.svg" alt="Handwritten: When the Compiler Suppresses the Default Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-diagram.svg" alt="Diagram: When the Compiler Suppresses the Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-diagram.svg" alt="Diagram: When the Compiler Suppresses the Default Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-sticky.svg" alt="Sticky Note: When the Compiler Suppresses the Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-compiler-suppresses-the-default-constructor-sticky.svg" alt="Sticky Note: When the Compiler Suppresses the Default Constructor" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ Widget arr[10];     // OK
 
 ### Default Member Initialisers (C++11)
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-handwritten.svg" alt="Handwritten: Default Member Initialisers (C++11)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-handwritten.svg" alt="Handwritten: Default Member Initialisers (C++11)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-diagram.svg" alt="Diagram: Default Member Initialisers (C++11)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-diagram.svg" alt="Diagram: Default Member Initialisers (C++11)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-sticky.svg" alt="Sticky Note: Default Member Initialisers (C++11)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/default-member-initialisers-c-11-sticky.svg" alt="Sticky Note: Default Member Initialisers (C++11)" width="30%">
 </a>
 
 
@@ -321,14 +321,14 @@ private:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -336,14 +336,14 @@ A parameterised constructor is like a **custom order at a restaurant**. Instead 
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -351,14 +351,14 @@ A **parameterised constructor** accepts arguments that customise the object's in
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ END CLASS
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ Parameterised ctor: "Dune" by Frank Herbert
 
 ### Dry Run Trace: Parameterised Constructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-handwritten.svg" alt="Handwritten: Dry Run Trace: Parameterised Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-handwritten.svg" alt="Handwritten: Dry Run Trace: Parameterised Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-diagram.svg" alt="Diagram: Dry Run Trace: Parameterised Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-diagram.svg" alt="Diagram: Dry Run Trace: Parameterised Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-sticky.svg" alt="Sticky Note: Dry Run Trace: Parameterised Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-parameterised-constructor-sticky.svg" alt="Sticky Note: Dry Run Trace: Parameterised Constructor" width="30%">
 </a>
 
 
@@ -448,14 +448,14 @@ Parameterised ctor: "Dune" by Frank Herbert
 
 ### Parameterised with Default Arguments
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-handwritten.svg" alt="Handwritten: Parameterised with Default Arguments" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-handwritten.svg" alt="Handwritten: Parameterised with Default Arguments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-diagram.svg" alt="Diagram: Parameterised with Default Arguments" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-diagram.svg" alt="Diagram: Parameterised with Default Arguments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-sticky.svg" alt="Sticky Note: Parameterised with Default Arguments" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/parameterised-with-default-arguments-sticky.svg" alt="Sticky Note: Parameterised with Default Arguments" width="30%">
 </a>
 
 
@@ -495,14 +495,14 @@ Config(timeout=60, retries=5, logging=0)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ Config(timeout=60, retries=5, logging=0)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -534,14 +534,14 @@ Constructor overloading is like a **multi-function remote control**. The same re
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ Constructor overloading is like a **multi-function remote control**. The same re
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ END CLASS
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -665,14 +665,14 @@ Message(initializer_list)
 
 ### Overload Resolution Table
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-handwritten.svg" alt="Handwritten: Overload Resolution Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-handwritten.svg" alt="Handwritten: Overload Resolution Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-diagram.svg" alt="Diagram: Overload Resolution Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-diagram.svg" alt="Diagram: Overload Resolution Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-sticky.svg" alt="Sticky Note: Overload Resolution Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/overload-resolution-table-sticky.svg" alt="Sticky Note: Overload Resolution Table" width="30%">
 </a>
 
 
@@ -686,14 +686,14 @@ Message(initializer_list)
 
 ### Ambiguity Example
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-handwritten.svg" alt="Handwritten: Ambiguity Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-handwritten.svg" alt="Handwritten: Ambiguity Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-diagram.svg" alt="Diagram: Ambiguity Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-diagram.svg" alt="Diagram: Ambiguity Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-sticky.svg" alt="Sticky Note: Ambiguity Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/ambiguity-example-sticky.svg" alt="Sticky Note: Ambiguity Example" width="30%">
 </a>
 
 
@@ -710,14 +710,14 @@ Ambiguous a3(1.0, 2);       // OK: second ctor
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -732,14 +732,14 @@ Ambiguous a3(1.0, 2);       // OK: second ctor
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -747,14 +747,14 @@ An initialiser list is like **filling out passport details at issuance** — not
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -762,14 +762,14 @@ The **initialiser list** is the part of a constructor after the parameter list, 
 
 ### Syntax and Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-handwritten.svg" alt="Handwritten: Syntax and Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-handwritten.svg" alt="Handwritten: Syntax and Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-diagram.svg" alt="Diagram: Syntax and Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-diagram.svg" alt="Diagram: Syntax and Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-sticky.svg" alt="Sticky Note: Syntax and Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/syntax-and-rules-sticky.svg" alt="Sticky Note: Syntax and Rules" width="30%">
 </a>
 
 
@@ -796,14 +796,14 @@ public:
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -850,14 +850,14 @@ Alice | ID: 1001 | $75000 | Min: $30000
 
 ### What Happens Without Initialiser List?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-handwritten.svg" alt="Handwritten: What Happens Without Initialiser List?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-handwritten.svg" alt="Handwritten: What Happens Without Initialiser List?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-diagram.svg" alt="Diagram: What Happens Without Initialiser List?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-diagram.svg" alt="Diagram: What Happens Without Initialiser List?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-sticky.svg" alt="Sticky Note: What Happens Without Initialiser List?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-happens-without-initialiser-list-sticky.svg" alt="Sticky Note: What Happens Without Initialiser List?" width="30%">
 </a>
 
 
@@ -876,14 +876,14 @@ private:
 
 ### Performance Impact
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-handwritten.svg" alt="Handwritten: Performance Impact" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-handwritten.svg" alt="Handwritten: Performance Impact" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-diagram.svg" alt="Diagram: Performance Impact" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-diagram.svg" alt="Diagram: Performance Impact" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-sticky.svg" alt="Sticky Note: Performance Impact" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/performance-impact-sticky.svg" alt="Sticky Note: Performance Impact" width="30%">
 </a>
 
 
@@ -912,14 +912,14 @@ private:
 
 ### Declaration Order Trap
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-handwritten.svg" alt="Handwritten: Declaration Order Trap" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-handwritten.svg" alt="Handwritten: Declaration Order Trap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-diagram.svg" alt="Diagram: Declaration Order Trap" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-diagram.svg" alt="Diagram: Declaration Order Trap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-sticky.svg" alt="Sticky Note: Declaration Order Trap" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/declaration-order-trap-sticky.svg" alt="Sticky Note: Declaration Order Trap" width="30%">
 </a>
 
 
@@ -958,14 +958,14 @@ x_ = 32767, y_ = 10
 
 ### Initialiser List vs Assignment Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-handwritten.svg" alt="Handwritten: Initialiser List vs Assignment Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-handwritten.svg" alt="Handwritten: Initialiser List vs Assignment Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-diagram.svg" alt="Diagram: Initialiser List vs Assignment Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-diagram.svg" alt="Diagram: Initialiser List vs Assignment Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-sticky.svg" alt="Sticky Note: Initialiser List vs Assignment Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-comparison-sticky.svg" alt="Sticky Note: Initialiser List vs Assignment Comparison" width="30%">
 </a>
 
 
@@ -982,14 +982,14 @@ x_ = 32767, y_ = 10
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1005,14 +1005,14 @@ x_ = 32767, y_ = 10
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1020,14 +1020,14 @@ The `explicit` keyword is like a **bouncer checking ID**. Without a bouncer, any
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1035,14 +1035,14 @@ The `explicit` keyword prevents single-argument constructors (and multi-argument
 
 ### The Problem: Implicit Conversion
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-handwritten.svg" alt="Handwritten: The Problem: Implicit Conversion" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-handwritten.svg" alt="Handwritten: The Problem: Implicit Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-diagram.svg" alt="Diagram: The Problem: Implicit Conversion" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-diagram.svg" alt="Diagram: The Problem: Implicit Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-sticky.svg" alt="Sticky Note: The Problem: Implicit Conversion" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-implicit-conversion-sticky.svg" alt="Sticky Note: The Problem: Implicit Conversion" width="30%">
 </a>
 
 
@@ -1072,14 +1072,14 @@ int main() {
 
 ### The Solution: `explicit`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-handwritten.svg" alt="Handwritten: The Solution: `explicit`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-handwritten.svg" alt="Handwritten: The Solution: `explicit`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-diagram.svg" alt="Diagram: The Solution: `explicit`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-diagram.svg" alt="Diagram: The Solution: `explicit`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-sticky.svg" alt="Sticky Note: The Solution: `explicit`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-explicit-sticky.svg" alt="Sticky Note: The Solution: `explicit`" width="30%">
 </a>
 
 
@@ -1110,14 +1110,14 @@ int main() {
 
 ### `explicit` on Multi-Argument Constructors (C++11)
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-handwritten.svg" alt="Handwritten: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-handwritten.svg" alt="Handwritten: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-diagram.svg" alt="Diagram: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-diagram.svg" alt="Diagram: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-sticky.svg" alt="Sticky Note: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/explicit-on-multi-argument-constructors-c-11-sticky.svg" alt="Sticky Note: `explicit` on Multi-Argument Constructors (C++11)" width="30%">
 </a>
 
 
@@ -1133,14 +1133,14 @@ Point p1(3.0, 4.0);     // OK
 
 ### When to Use `explicit`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-handwritten.svg" alt="Handwritten: When to Use `explicit`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-handwritten.svg" alt="Handwritten: When to Use `explicit`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-diagram.svg" alt="Diagram: When to Use `explicit`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-diagram.svg" alt="Diagram: When to Use `explicit`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-sticky.svg" alt="Sticky Note: When to Use `explicit`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-use-explicit-sticky.svg" alt="Sticky Note: When to Use `explicit`" width="30%">
 </a>
 
 
@@ -1153,14 +1153,14 @@ Point p1(3.0, 4.0);     // OK
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1176,14 +1176,14 @@ Point p1(3.0, 4.0);     // OK
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1191,14 +1191,14 @@ Delegating constructors are like a **call center escalation system**. A junior a
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1206,14 +1206,14 @@ A **delegating constructor** calls another constructor of the same class from it
 
 ### Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rules-handwritten.svg" alt="Handwritten: Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rules-handwritten.svg" alt="Handwritten: Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rules-diagram.svg" alt="Diagram: Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rules-diagram.svg" alt="Diagram: Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rules-sticky.svg" alt="Sticky Note: Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rules-sticky.svg" alt="Sticky Note: Rules" width="30%">
 </a>
 
 
@@ -1225,14 +1225,14 @@ A **delegating constructor** calls another constructor of the same class from it
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -1326,14 +1326,14 @@ Charlie | ID: 1002 | $75000
 
 ### Dry Run Trace: Delegation
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-handwritten.svg" alt="Handwritten: Dry Run Trace: Delegation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-handwritten.svg" alt="Handwritten: Dry Run Trace: Delegation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-diagram.svg" alt="Diagram: Dry Run Trace: Delegation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-diagram.svg" alt="Diagram: Dry Run Trace: Delegation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-sticky.svg" alt="Sticky Note: Dry Run Trace: Delegation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-delegation-sticky.svg" alt="Sticky Note: Dry Run Trace: Delegation" width="30%">
 </a>
 
 
@@ -1353,14 +1353,14 @@ For `Employee e2("Alice")`:
 
 ### Cycle Detection
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-handwritten.svg" alt="Handwritten: Cycle Detection" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-handwritten.svg" alt="Handwritten: Cycle Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-diagram.svg" alt="Diagram: Cycle Detection" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-diagram.svg" alt="Diagram: Cycle Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-sticky.svg" alt="Sticky Note: Cycle Detection" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/cycle-detection-sticky.svg" alt="Sticky Note: Cycle Detection" width="30%">
 </a>
 
 
@@ -1374,14 +1374,14 @@ struct Cycle {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ struct Cycle {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1415,14 +1415,14 @@ A copy constructor is like a **photocopy machine**.
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1432,14 +1432,14 @@ The **copy constructor** creates a new object as a **copy** of an existing objec
 
 ### When the Copy Constructor Is Called
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-handwritten.svg" alt="Handwritten: When the Copy Constructor Is Called" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-handwritten.svg" alt="Handwritten: When the Copy Constructor Is Called" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-diagram.svg" alt="Diagram: When the Copy Constructor Is Called" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-diagram.svg" alt="Diagram: When the Copy Constructor Is Called" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-sticky.svg" alt="Sticky Note: When the Copy Constructor Is Called" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-the-copy-constructor-is-called-sticky.svg" alt="Sticky Note: When the Copy Constructor Is Called" width="30%">
 </a>
 
 
@@ -1451,14 +1451,14 @@ The **copy constructor** creates a new object as a **copy** of an existing objec
 
 ### The Shallow Copy Problem
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-handwritten.svg" alt="Handwritten: The Shallow Copy Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-handwritten.svg" alt="Handwritten: The Shallow Copy Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-diagram.svg" alt="Diagram: The Shallow Copy Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-diagram.svg" alt="Diagram: The Shallow Copy Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-sticky.svg" alt="Sticky Note: The Shallow Copy Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-shallow-copy-problem-sticky.svg" alt="Sticky Note: The Shallow Copy Problem" width="30%">
 </a>
 
 
@@ -1511,14 +1511,14 @@ Dtor: deleting 0x1a2b3c4d
 
 ### The Deep Copy Solution
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-handwritten.svg" alt="Handwritten: The Deep Copy Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-handwritten.svg" alt="Handwritten: The Deep Copy Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-diagram.svg" alt="Diagram: The Deep Copy Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-diagram.svg" alt="Diagram: The Deep Copy Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-sticky.svg" alt="Sticky Note: The Deep Copy Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-deep-copy-solution-sticky.svg" alt="Sticky Note: The Deep Copy Solution" width="30%">
 </a>
 
 
@@ -1589,14 +1589,14 @@ Dtor: deleting 0x1a2b3c4d [Hello]
 
 ### Memory Diagram: Deep vs Shallow Copy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-handwritten.svg" alt="Handwritten: Memory Diagram: Deep vs Shallow Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-handwritten.svg" alt="Handwritten: Memory Diagram: Deep vs Shallow Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-diagram.svg" alt="Diagram: Memory Diagram: Deep vs Shallow Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-diagram.svg" alt="Diagram: Memory Diagram: Deep vs Shallow Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-sticky.svg" alt="Sticky Note: Memory Diagram: Deep vs Shallow Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/memory-diagram-deep-vs-shallow-copy-sticky.svg" alt="Sticky Note: Memory Diagram: Deep vs Shallow Copy" width="30%">
 </a>
 
 
@@ -1615,14 +1615,14 @@ Each object owns its own memory block. Destructors delete independent blocks —
 
 ### Dry Run Trace: Deep Copy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-handwritten.svg" alt="Handwritten: Dry Run Trace: Deep Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-handwritten.svg" alt="Handwritten: Dry Run Trace: Deep Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-diagram.svg" alt="Diagram: Dry Run Trace: Deep Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-diagram.svg" alt="Diagram: Dry Run Trace: Deep Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-sticky.svg" alt="Sticky Note: Dry Run Trace: Deep Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/dry-run-trace-deep-copy-sticky.svg" alt="Sticky Note: Dry Run Trace: Deep Copy" width="30%">
 </a>
 
 
@@ -1640,14 +1640,14 @@ Each object owns its own memory block. Destructors delete independent blocks —
 
 ### Copy Elision and RVO / NRVO
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-handwritten.svg" alt="Handwritten: Copy Elision and RVO / NRVO" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-handwritten.svg" alt="Handwritten: Copy Elision and RVO / NRVO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-diagram.svg" alt="Diagram: Copy Elision and RVO / NRVO" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-diagram.svg" alt="Diagram: Copy Elision and RVO / NRVO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-sticky.svg" alt="Sticky Note: Copy Elision and RVO / NRVO" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-elision-and-rvo-nrvo-sticky.svg" alt="Sticky Note: Copy Elision and RVO / NRVO" width="30%">
 </a>
 
 
@@ -1709,14 +1709,14 @@ Dtor
 
 ### `= delete` — Prohibiting Copy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-handwritten.svg" alt="Handwritten: `= delete` — Prohibiting Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-handwritten.svg" alt="Handwritten: `= delete` — Prohibiting Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-diagram.svg" alt="Diagram: `= delete` — Prohibiting Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-diagram.svg" alt="Diagram: `= delete` — Prohibiting Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-sticky.svg" alt="Sticky Note: `= delete` — Prohibiting Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/delete-prohibiting-copy-sticky.svg" alt="Sticky Note: `= delete` — Prohibiting Copy" width="30%">
 </a>
 
 
@@ -1733,14 +1733,14 @@ public:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1758,14 +1758,14 @@ public:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1773,14 +1773,14 @@ A move constructor is like a **moving truck**. Instead of copying all your furni
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1790,14 +1790,14 @@ The **move constructor** transfers resources from a source (temporary) object to
 
 ### Key Properties
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" alt="Handwritten: Key Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" alt="Handwritten: Key Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" alt="Diagram: Key Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" alt="Diagram: Key Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" alt="Sticky Note: Key Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" alt="Sticky Note: Key Properties" width="30%">
 </a>
 
 
@@ -1808,14 +1808,14 @@ The **move constructor** transfers resources from a source (temporary) object to
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -1910,14 +1910,14 @@ Dtor: empty (nullptr)    [~b1 — was moved-from]
 
 ### Move vs Copy: Performance Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-handwritten.svg" alt="Handwritten: Move vs Copy: Performance Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-handwritten.svg" alt="Handwritten: Move vs Copy: Performance Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-diagram.svg" alt="Diagram: Move vs Copy: Performance Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-diagram.svg" alt="Diagram: Move vs Copy: Performance Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-sticky.svg" alt="Sticky Note: Move vs Copy: Performance Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/move-vs-copy-performance-comparison-sticky.svg" alt="Sticky Note: Move vs Copy: Performance Comparison" width="30%">
 </a>
 
 
@@ -1931,14 +1931,14 @@ Dtor: empty (nullptr)    [~b1 — was moved-from]
 
 ### Why `noexcept` Matters for Move
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-handwritten.svg" alt="Handwritten: Why `noexcept` Matters for Move" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-handwritten.svg" alt="Handwritten: Why `noexcept` Matters for Move" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-diagram.svg" alt="Diagram: Why `noexcept` Matters for Move" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-diagram.svg" alt="Diagram: Why `noexcept` Matters for Move" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-sticky.svg" alt="Sticky Note: Why `noexcept` Matters for Move" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/why-noexcept-matters-for-move-sticky.svg" alt="Sticky Note: Why `noexcept` Matters for Move" width="30%">
 </a>
 
 
@@ -1957,14 +1957,14 @@ v.push_back(MaybeMove{});  // May copy instead of move during reallocation!
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1981,14 +1981,14 @@ v.push_back(MaybeMove{});  // May copy instead of move during reallocation!
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1996,14 +1996,14 @@ A destructor is like the **hotel cleaning crew after checkout**. When you leave 
 
 ### Definition
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -2013,14 +2013,14 @@ The **destructor** is a special member function called when an object is destroy
 
 ### Key Properties
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" alt="Handwritten: Key Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-handwritten.svg" alt="Handwritten: Key Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" alt="Diagram: Key Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-diagram.svg" alt="Diagram: Key Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" alt="Sticky Note: Key Properties" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/key-properties-sticky.svg" alt="Sticky Note: Key Properties" width="30%">
 </a>
 
 
@@ -2032,14 +2032,14 @@ The **destructor** is a special member function called when an object is destroy
 
 ### C++ Code with Output
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-handwritten.svg" alt="Handwritten: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-diagram.svg" alt="Diagram: C++ Code with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/c-code-with-output-sticky.svg" alt="Sticky Note: C++ Code with Output" width="30%">
 </a>
 
 
@@ -2115,14 +2115,14 @@ Logger [main.inner1] destroyed
 
 ### Destruction Order Trace
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-handwritten.svg" alt="Handwritten: Destruction Order Trace" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-handwritten.svg" alt="Handwritten: Destruction Order Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-diagram.svg" alt="Diagram: Destruction Order Trace" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-diagram.svg" alt="Diagram: Destruction Order Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-sticky.svg" alt="Sticky Note: Destruction Order Trace" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/destruction-order-trace-sticky.svg" alt="Sticky Note: Destruction Order Trace" width="30%">
 </a>
 
 
@@ -2136,14 +2136,14 @@ Logger [main.inner1] destroyed
 
 ### RAII — Resource Acquisition Is Initialisation
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-handwritten.svg" alt="Handwritten: RAII — Resource Acquisition Is Initialisation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-handwritten.svg" alt="Handwritten: RAII — Resource Acquisition Is Initialisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-diagram.svg" alt="Diagram: RAII — Resource Acquisition Is Initialisation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-diagram.svg" alt="Diagram: RAII — Resource Acquisition Is Initialisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-sticky.svg" alt="Sticky Note: RAII — Resource Acquisition Is Initialisation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-resource-acquisition-is-initialisation-sticky.svg" alt="Sticky Note: RAII — Resource Acquisition Is Initialisation" width="30%">
 </a>
 
 
@@ -2210,14 +2210,14 @@ void threadSafeOp(std::mutex& m) {
 
 ### When Destructors Must Be `noexcept`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-handwritten.svg" alt="Handwritten: When Destructors Must Be `noexcept`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-handwritten.svg" alt="Handwritten: When Destructors Must Be `noexcept`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-diagram.svg" alt="Diagram: When Destructors Must Be `noexcept`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-diagram.svg" alt="Diagram: When Destructors Must Be `noexcept`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-sticky.svg" alt="Sticky Note: When Destructors Must Be `noexcept`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-destructors-must-be-noexcept-sticky.svg" alt="Sticky Note: When Destructors Must Be `noexcept`" width="30%">
 </a>
 
 
@@ -2239,14 +2239,14 @@ void demo() {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2263,14 +2263,14 @@ void demo() {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2278,14 +2278,14 @@ A virtual destructor is like a **universal fire alarm**. Whether you are in a li
 
 ### The Problem: Non-Virtual Destructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-handwritten.svg" alt="Handwritten: The Problem: Non-Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-handwritten.svg" alt="Handwritten: The Problem: Non-Virtual Destructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-diagram.svg" alt="Diagram: The Problem: Non-Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-diagram.svg" alt="Diagram: The Problem: Non-Virtual Destructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-sticky.svg" alt="Sticky Note: The Problem: Non-Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-problem-non-virtual-destructor-sticky.svg" alt="Sticky Note: The Problem: Non-Virtual Destructor" width="30%">
 </a>
 
 
@@ -2330,14 +2330,14 @@ Base DESTROYED
 
 ### The Solution: Virtual Destructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-handwritten.svg" alt="Handwritten: The Solution: Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-handwritten.svg" alt="Handwritten: The Solution: Virtual Destructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-diagram.svg" alt="Diagram: The Solution: Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-diagram.svg" alt="Diagram: The Solution: Virtual Destructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-sticky.svg" alt="Sticky Note: The Solution: Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/the-solution-virtual-destructor-sticky.svg" alt="Sticky Note: The Solution: Virtual Destructor" width="30%">
 </a>
 
 
@@ -2380,14 +2380,14 @@ Base DESTROYED
 
 ### Virtual Destructor Dry Run
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-handwritten.svg" alt="Handwritten: Virtual Destructor Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-handwritten.svg" alt="Handwritten: Virtual Destructor Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-diagram.svg" alt="Diagram: Virtual Destructor Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-diagram.svg" alt="Diagram: Virtual Destructor Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-sticky.svg" alt="Sticky Note: Virtual Destructor Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/virtual-destructor-dry-run-sticky.svg" alt="Sticky Note: Virtual Destructor Dry Run" width="30%">
 </a>
 
 
@@ -2403,14 +2403,14 @@ Without virtual: step 2 calls ~Base() directly — ~Derived() is never reached.
 
 ### Pure Virtual Destructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-handwritten.svg" alt="Handwritten: Pure Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-handwritten.svg" alt="Handwritten: Pure Virtual Destructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-diagram.svg" alt="Diagram: Pure Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-diagram.svg" alt="Diagram: Pure Virtual Destructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-sticky.svg" alt="Sticky Note: Pure Virtual Destructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/pure-virtual-destructor-sticky.svg" alt="Sticky Note: Pure Virtual Destructor" width="30%">
 </a>
 
 
@@ -2450,14 +2450,14 @@ AbstractBase destructor
 
 ### When to Make Destructors Virtual
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-handwritten.svg" alt="Handwritten: When to Make Destructors Virtual" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-handwritten.svg" alt="Handwritten: When to Make Destructors Virtual" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-diagram.svg" alt="Diagram: When to Make Destructors Virtual" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-diagram.svg" alt="Diagram: When to Make Destructors Virtual" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-sticky.svg" alt="Sticky Note: When to Make Destructors Virtual" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-to-make-destructors-virtual-sticky.svg" alt="Sticky Note: When to Make Destructors Virtual" width="30%">
 </a>
 
 
@@ -2471,14 +2471,14 @@ AbstractBase destructor
 
 ### Rule of Thumb
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-handwritten.svg" alt="Handwritten: Rule of Thumb" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-handwritten.svg" alt="Handwritten: Rule of Thumb" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-diagram.svg" alt="Diagram: Rule of Thumb" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-diagram.svg" alt="Diagram: Rule of Thumb" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-sticky.svg" alt="Sticky Note: Rule of Thumb" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-thumb-sticky.svg" alt="Sticky Note: Rule of Thumb" width="30%">
 </a>
 
 
@@ -2486,14 +2486,14 @@ AbstractBase destructor
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2510,14 +2510,14 @@ AbstractBase destructor
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2535,14 +2535,14 @@ With C++11, two more legs were added (Rule of Five):
 
 ### Rule of Three
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-handwritten.svg" alt="Handwritten: Rule of Three" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-handwritten.svg" alt="Handwritten: Rule of Three" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-diagram.svg" alt="Diagram: Rule of Three" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-diagram.svg" alt="Diagram: Rule of Three" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-sticky.svg" alt="Sticky Note: Rule of Three" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-three-sticky.svg" alt="Sticky Note: Rule of Three" width="30%">
 </a>
 
 
@@ -2552,14 +2552,14 @@ With C++11, two more legs were added (Rule of Five):
 
 ### Rule of Five
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-handwritten.svg" alt="Handwritten: Rule of Five" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-handwritten.svg" alt="Handwritten: Rule of Five" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-diagram.svg" alt="Diagram: Rule of Five" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-diagram.svg" alt="Diagram: Rule of Five" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-sticky.svg" alt="Sticky Note: Rule of Five" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-five-sticky.svg" alt="Sticky Note: Rule of Five" width="30%">
 </a>
 
 
@@ -2569,14 +2569,14 @@ With C++11, two more legs were added (Rule of Five):
 
 ### Complete Rule of Five Example
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-handwritten.svg" alt="Handwritten: Complete Rule of Five Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-handwritten.svg" alt="Handwritten: Complete Rule of Five Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-diagram.svg" alt="Diagram: Complete Rule of Five Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-diagram.svg" alt="Diagram: Complete Rule of Five Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-sticky.svg" alt="Sticky Note: Complete Rule of Five Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complete-rule-of-five-example-sticky.svg" alt="Sticky Note: Complete Rule of Five Example" width="30%">
 </a>
 
 
@@ -2713,14 +2713,14 @@ Dtor: ""
 
 ### Copy-and-Swap Idiom
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-handwritten.svg" alt="Handwritten: Copy-and-Swap Idiom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-handwritten.svg" alt="Handwritten: Copy-and-Swap Idiom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-diagram.svg" alt="Diagram: Copy-and-Swap Idiom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-diagram.svg" alt="Diagram: Copy-and-Swap Idiom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-sticky.svg" alt="Sticky Note: Copy-and-Swap Idiom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/copy-and-swap-idiom-sticky.svg" alt="Sticky Note: Copy-and-Swap Idiom" width="30%">
 </a>
 
 
@@ -2737,14 +2737,14 @@ The copy assignment operator in the example uses **copy-and-swap**:
 
 ### Guidelines for Defaulting / Deleting
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-handwritten.svg" alt="Handwritten: Guidelines for Defaulting / Deleting" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-handwritten.svg" alt="Handwritten: Guidelines for Defaulting / Deleting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-diagram.svg" alt="Diagram: Guidelines for Defaulting / Deleting" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-diagram.svg" alt="Diagram: Guidelines for Defaulting / Deleting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-sticky.svg" alt="Sticky Note: Guidelines for Defaulting / Deleting" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/guidelines-for-defaulting-deleting-sticky.svg" alt="Sticky Note: Guidelines for Defaulting / Deleting" width="30%">
 </a>
 
 
@@ -2758,14 +2758,14 @@ The copy assignment operator in the example uses **copy-and-swap**:
 
 ### Rule of Zero
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-handwritten.svg" alt="Handwritten: Rule of Zero" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-handwritten.svg" alt="Handwritten: Rule of Zero" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-diagram.svg" alt="Diagram: Rule of Zero" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-diagram.svg" alt="Diagram: Rule of Zero" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-sticky.svg" alt="Sticky Note: Rule of Zero" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/rule-of-zero-sticky.svg" alt="Sticky Note: Rule of Zero" width="30%">
 </a>
 
 
@@ -2782,14 +2782,14 @@ class Student {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2807,14 +2807,14 @@ class Student {
 
 ### Default vs Parameterised vs Copy vs Move Constructor
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-handwritten.svg" alt="Handwritten: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-handwritten.svg" alt="Handwritten: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-diagram.svg" alt="Diagram: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-diagram.svg" alt="Diagram: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-sticky.svg" alt="Sticky Note: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/default-vs-parameterised-vs-copy-vs-move-constructor-sticky.svg" alt="Sticky Note: Default vs Parameterised vs Copy vs Move Constructor" width="30%">
 </a>
 
 
@@ -2833,14 +2833,14 @@ class Student {
 
 ### Deep vs Shallow Copy
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-handwritten.svg" alt="Handwritten: Deep vs Shallow Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-handwritten.svg" alt="Handwritten: Deep vs Shallow Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-diagram.svg" alt="Diagram: Deep vs Shallow Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-diagram.svg" alt="Diagram: Deep vs Shallow Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-sticky.svg" alt="Sticky Note: Deep vs Shallow Copy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/deep-vs-shallow-copy-sticky.svg" alt="Sticky Note: Deep vs Shallow Copy" width="30%">
 </a>
 
 
@@ -2878,14 +2878,14 @@ obj2.data  ──> ┌───┬───┬───┬───┬───�
 
 ### Initialiser List vs Assignment
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-handwritten.svg" alt="Handwritten: Initialiser List vs Assignment" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-handwritten.svg" alt="Handwritten: Initialiser List vs Assignment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-diagram.svg" alt="Diagram: Initialiser List vs Assignment" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-diagram.svg" alt="Diagram: Initialiser List vs Assignment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-sticky.svg" alt="Sticky Note: Initialiser List vs Assignment" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/initialiser-list-vs-assignment-sticky.svg" alt="Sticky Note: Initialiser List vs Assignment" width="30%">
 </a>
 
 
@@ -2907,14 +2907,14 @@ obj2.data  ──> ┌───┬───┬───┬───┬───�
 
 ### Q1: What is the difference between shallow copy and deep copy?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-handwritten.svg" alt="Handwritten: What is the difference between shallow copy and deep copy?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-handwritten.svg" alt="Handwritten: What is the difference between shallow copy and deep copy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-diagram.svg" alt="Diagram: What is the difference between shallow copy and deep copy?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-diagram.svg" alt="Diagram: What is the difference between shallow copy and deep copy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-sticky.svg" alt="Sticky Note: What is the difference between shallow copy and deep copy?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-difference-between-shallow-copy-and-deep-copy-sticky.svg" alt="Sticky Note: What is the difference between shallow copy and deep copy?" width="30%">
 </a>
 
 
@@ -2937,14 +2937,14 @@ DynamicArray(const DynamicArray& other)
 
 ### Q2: What is copy elision? What are RVO and NRVO?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-handwritten.svg" alt="Handwritten: What is copy elision? What are RVO and NRVO?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-handwritten.svg" alt="Handwritten: What is copy elision? What are RVO and NRVO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-diagram.svg" alt="Diagram: What is copy elision? What are RVO and NRVO?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-diagram.svg" alt="Diagram: What is copy elision? What are RVO and NRVO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-sticky.svg" alt="Sticky Note: What is copy elision? What are RVO and NRVO?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-copy-elision-what-are-rvo-and-nrvo-sticky.svg" alt="Sticky Note: What is copy elision? What are RVO and NRVO?" width="30%">
 </a>
 
 
@@ -2970,14 +2970,14 @@ T func() {
 
 ### Q3: Why must destructors be virtual in polymorphic base classes?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-handwritten.svg" alt="Handwritten: Why must destructors be virtual in polymorphic base classes?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-handwritten.svg" alt="Handwritten: Why must destructors be virtual in polymorphic base classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-diagram.svg" alt="Diagram: Why must destructors be virtual in polymorphic base classes?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-diagram.svg" alt="Diagram: Why must destructors be virtual in polymorphic base classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-sticky.svg" alt="Sticky Note: Why must destructors be virtual in polymorphic base classes?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/why-must-destructors-be-virtual-in-polymorphic-base-classes-sticky.svg" alt="Sticky Note: Why must destructors be virtual in polymorphic base classes?" width="30%">
 </a>
 
 
@@ -2992,14 +2992,14 @@ delete p; // Without virtual ~Base(): ~Derived() never called → UB + leak
 
 ### Q4: What is the Rule of Three / Rule of Five?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-handwritten.svg" alt="Handwritten: What is the Rule of Three / Rule of Five?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-handwritten.svg" alt="Handwritten: What is the Rule of Three / Rule of Five?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-diagram.svg" alt="Diagram: What is the Rule of Three / Rule of Five?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-diagram.svg" alt="Diagram: What is the Rule of Three / Rule of Five?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-sticky.svg" alt="Sticky Note: What is the Rule of Three / Rule of Five?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-the-rule-of-three-rule-of-five-sticky.svg" alt="Sticky Note: What is the Rule of Three / Rule of Five?" width="30%">
 </a>
 
 
@@ -3022,14 +3022,14 @@ public:
 
 ### Q5: Explain the `explicit` keyword.
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-handwritten.svg" alt="Handwritten: Explain the `explicit` keyword." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-handwritten.svg" alt="Handwritten: Explain the `explicit` keyword." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-diagram.svg" alt="Diagram: Explain the `explicit` keyword." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-diagram.svg" alt="Diagram: Explain the `explicit` keyword." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-sticky.svg" alt="Sticky Note: Explain the `explicit` keyword." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/explain-the-explicit-keyword-sticky.svg" alt="Sticky Note: Explain the `explicit` keyword." width="30%">
 </a>
 
 
@@ -3052,14 +3052,14 @@ navigate(URL(s)); // OK — explicit construction
 
 ### Q6: When should you use initialiser lists over assignment?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-handwritten.svg" alt="Handwritten: When should you use initialiser lists over assignment?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-handwritten.svg" alt="Handwritten: When should you use initialiser lists over assignment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-diagram.svg" alt="Diagram: When should you use initialiser lists over assignment?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-diagram.svg" alt="Diagram: When should you use initialiser lists over assignment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-sticky.svg" alt="Sticky Note: When should you use initialiser lists over assignment?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/when-should-you-use-initialiser-lists-over-assignment-sticky.svg" alt="Sticky Note: When should you use initialiser lists over assignment?" width="30%">
 </a>
 
 
@@ -3080,14 +3080,14 @@ Bad() { str_ = "hello"; vec_ = std::vector<int>(100, 42); }
 
 ### Q7: What is a delegating constructor?
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-handwritten.svg" alt="Handwritten: What is a delegating constructor?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-handwritten.svg" alt="Handwritten: What is a delegating constructor?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-diagram.svg" alt="Diagram: What is a delegating constructor?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-diagram.svg" alt="Diagram: What is a delegating constructor?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-sticky.svg" alt="Sticky Note: What is a delegating constructor?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/what-is-a-delegating-constructor-sticky.svg" alt="Sticky Note: What is a delegating constructor?" width="30%">
 </a>
 
 
@@ -3112,14 +3112,14 @@ The target constructor runs first, then the delegating constructor's body. Cycle
 
 ### RAII in `std::vector`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-handwritten.svg" alt="Handwritten: RAII in `std::vector`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-handwritten.svg" alt="Handwritten: RAII in `std::vector`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-diagram.svg" alt="Diagram: RAII in `std::vector`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-diagram.svg" alt="Diagram: RAII in `std::vector`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-sticky.svg" alt="Sticky Note: RAII in `std::vector`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-vector-sticky.svg" alt="Sticky Note: RAII in `std::vector`" width="30%">
 </a>
 
 
@@ -3166,14 +3166,14 @@ public:
 
 ### RAII in `std::string`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-handwritten.svg" alt="Handwritten: RAII in `std::string`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-handwritten.svg" alt="Handwritten: RAII in `std::string`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-diagram.svg" alt="Diagram: RAII in `std::string`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-diagram.svg" alt="Diagram: RAII in `std::string`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-sticky.svg" alt="Sticky Note: RAII in `std::string`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-string-sticky.svg" alt="Sticky Note: RAII in `std::string`" width="30%">
 </a>
 
 
@@ -3192,14 +3192,14 @@ std::string s3 = std::move(s1);   // Move: transfer buffer, s1 now SSO-empty
 
 ### RAII in `std::fstream`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-handwritten.svg" alt="Handwritten: RAII in `std::fstream`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-handwritten.svg" alt="Handwritten: RAII in `std::fstream`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-diagram.svg" alt="Diagram: RAII in `std::fstream`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-diagram.svg" alt="Diagram: RAII in `std::fstream`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-sticky.svg" alt="Sticky Note: RAII in `std::fstream`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-fstream-sticky.svg" alt="Sticky Note: RAII in `std::fstream`" width="30%">
 </a>
 
 
@@ -3222,14 +3222,14 @@ void processFile() {
 
 ### RAII in Smart Pointers
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-handwritten.svg" alt="Handwritten: RAII in Smart Pointers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-handwritten.svg" alt="Handwritten: RAII in Smart Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-diagram.svg" alt="Diagram: RAII in Smart Pointers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-diagram.svg" alt="Diagram: RAII in Smart Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-sticky.svg" alt="Sticky Note: RAII in Smart Pointers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-smart-pointers-sticky.svg" alt="Sticky Note: RAII in Smart Pointers" width="30%">
 </a>
 
 
@@ -3252,14 +3252,14 @@ void demonstrateRAII() {
 
 ### RAII in `std::lock_guard`
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-handwritten.svg" alt="Handwritten: RAII in `std::lock_guard`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-handwritten.svg" alt="Handwritten: RAII in `std::lock_guard`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-diagram.svg" alt="Diagram: RAII in `std::lock_guard`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-diagram.svg" alt="Diagram: RAII in `std::lock_guard`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-sticky.svg" alt="Sticky Note: RAII in `std::lock_guard`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-in-std-lock-guard-sticky.svg" alt="Sticky Note: RAII in `std::lock_guard`" width="30%">
 </a>
 
 
@@ -3281,14 +3281,14 @@ void threadSafeFunction() {
 
 ### RAII With Network Sockets
 
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-handwritten.svg" alt="Handwritten: RAII With Network Sockets" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-handwritten.svg" alt="Handwritten: RAII With Network Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-diagram.svg" alt="Diagram: RAII With Network Sockets" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-diagram.svg" alt="Diagram: RAII With Network Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-sticky.svg" alt="Sticky Note: RAII With Network Sockets" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/03-constructors/raii-with-network-sockets-sticky.svg" alt="Sticky Note: RAII With Network Sockets" width="30%">
 </a>
 
 

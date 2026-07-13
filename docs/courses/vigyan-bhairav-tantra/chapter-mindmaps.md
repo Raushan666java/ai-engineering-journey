@@ -1,4 +1,4 @@
-﻿## इस गाइड का उपयोग कैसे करें (How to Use This Guide)
+## इस गाइड का उपयोग कैसे करें (How to Use This Guide)
 
 | उद्देश्य | विधि |
 |----------|------|
@@ -74,14 +74,14 @@ mindmap
 
 ### मुख्य बिंदु (Key Takeaways)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-handwritten.svg" alt="Handwritten: मुख्य बिंदु (Key Takeaways)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-handwritten.svg" alt="Handwritten: मुख्य बिंदु (Key Takeaways)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-diagram.svg" alt="Diagram: मुख्य बिंदु (Key Takeaways)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-diagram.svg" alt="Diagram: मुख्य बिंदु (Key Takeaways)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-sticky.svg" alt="Sticky Note: मुख्य बिंदु (Key Takeaways)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-sticky.svg" alt="Sticky Note: मुख्य बिंदु (Key Takeaways)" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ mindmap
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ flowchart TD
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ flowchart TD
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -222,14 +222,14 @@ flowchart LR
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -262,14 +262,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ flowchart LR
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -441,14 +441,14 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ flowchart LR
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -523,14 +523,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -562,14 +562,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -583,14 +583,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -643,14 +643,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -704,14 +704,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -740,14 +740,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -761,14 +761,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -797,14 +797,14 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ flowchart LR
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -878,14 +878,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -915,14 +915,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -936,14 +936,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -975,14 +975,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -996,14 +996,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -1032,14 +1032,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -1053,14 +1053,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 
@@ -1091,14 +1091,14 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ flowchart TB
 
 ### संस्कृत शब्दावली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
 </a>
 
 

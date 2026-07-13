@@ -28,14 +28,14 @@
 
 ### Naive single-stage
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-handwritten.svg" alt="Handwritten: Naive single-stage" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-handwritten.svg" alt="Handwritten: Naive single-stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-diagram.svg" alt="Diagram: Naive single-stage" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-diagram.svg" alt="Diagram: Naive single-stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-sticky.svg" alt="Sticky Note: Naive single-stage" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/naive-single-stage-sticky.svg" alt="Sticky Note: Naive single-stage" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ Size: ~800MB. Includes build tools, cache files, unnecessary packages.
 
 ### Multi-stage
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-handwritten.svg" alt="Handwritten: Multi-stage" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-handwritten.svg" alt="Handwritten: Multi-stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-diagram.svg" alt="Diagram: Multi-stage" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-diagram.svg" alt="Diagram: Multi-stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-sticky.svg" alt="Sticky Note: Multi-stage" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/multi-stage-sticky.svg" alt="Sticky Note: Multi-stage" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ Add health checks and `depends_on` with conditions to your existing docker-compo
 
 ### Why BackgroundTasks isn't enough
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-handwritten.svg" alt="Handwritten: Why BackgroundTasks isn't enough" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-handwritten.svg" alt="Handwritten: Why BackgroundTasks isn't enough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-diagram.svg" alt="Diagram: Why BackgroundTasks isn't enough" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-diagram.svg" alt="Diagram: Why BackgroundTasks isn't enough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-sticky.svg" alt="Sticky Note: Why BackgroundTasks isn't enough" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-backgroundtasks-isn-t-enough-sticky.svg" alt="Sticky Note: Why BackgroundTasks isn't enough" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ async def upload(task: BackgroundTasks):
 
 ### RQ version
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-handwritten.svg" alt="Handwritten: RQ version" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-handwritten.svg" alt="Handwritten: RQ version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-diagram.svg" alt="Diagram: RQ version" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-diagram.svg" alt="Diagram: RQ version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-sticky.svg" alt="Sticky Note: RQ version" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/rq-version-sticky.svg" alt="Sticky Note: RQ version" width="30%">
 </a>
 
 
@@ -299,14 +299,14 @@ Add a `/metrics` endpoint with at least request count and latency histogram to y
 
 ### /healthz (liveness)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-handwritten.svg" alt="Handwritten: /healthz (liveness)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-handwritten.svg" alt="Handwritten: /healthz (liveness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-diagram.svg" alt="Diagram: /healthz (liveness)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-diagram.svg" alt="Diagram: /healthz (liveness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-sticky.svg" alt="Sticky Note: /healthz (liveness)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/healthz-liveness-sticky.svg" alt="Sticky Note: /healthz (liveness)" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ async def healthz():
 
 ### /readyz (readiness)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-handwritten.svg" alt="Handwritten: /readyz (readiness)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-handwritten.svg" alt="Handwritten: /readyz (readiness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-diagram.svg" alt="Diagram: /readyz (readiness)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-diagram.svg" alt="Diagram: /readyz (readiness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-sticky.svg" alt="Sticky Note: /readyz (readiness)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/readyz-readiness-sticky.svg" alt="Sticky Note: /readyz (readiness)" width="30%">
 </a>
 
 
@@ -346,14 +346,14 @@ async def readyz():
 
 ### Why the distinction matters
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-handwritten.svg" alt="Handwritten: Why the distinction matters" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-handwritten.svg" alt="Handwritten: Why the distinction matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-diagram.svg" alt="Diagram: Why the distinction matters" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-diagram.svg" alt="Diagram: Why the distinction matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-sticky.svg" alt="Sticky Note: Why the distinction matters" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/why-the-distinction-matters-sticky.svg" alt="Sticky Note: Why the distinction matters" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ Implement both endpoints in your project. Simulate a dependency failure and veri
 
 ### Bad pattern
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-handwritten.svg" alt="Handwritten: Bad pattern" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-handwritten.svg" alt="Handwritten: Bad pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-diagram.svg" alt="Diagram: Bad pattern" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-diagram.svg" alt="Diagram: Bad pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-sticky.svg" alt="Sticky Note: Bad pattern" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/bad-pattern-sticky.svg" alt="Sticky Note: Bad pattern" width="30%">
 </a>
 
 
@@ -389,14 +389,14 @@ What's wrong: no validation, no error message if missing, no type checking, scat
 
 ### Good pattern (pydantic-settings)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-handwritten.svg" alt="Handwritten: Good pattern (pydantic-settings)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-handwritten.svg" alt="Handwritten: Good pattern (pydantic-settings)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-diagram.svg" alt="Diagram: Good pattern (pydantic-settings)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-diagram.svg" alt="Diagram: Good pattern (pydantic-settings)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-sticky.svg" alt="Sticky Note: Good pattern (pydantic-settings)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/good-pattern-pydantic-settings-sticky.svg" alt="Sticky Note: Good pattern (pydantic-settings)" width="30%">
 </a>
 
 
@@ -420,14 +420,14 @@ settings = Settings()
 
 ### What to put in .env.example
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-handwritten.svg" alt="Handwritten: What to put in .env.example" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-handwritten.svg" alt="Handwritten: What to put in .env.example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-diagram.svg" alt="Diagram: What to put in .env.example" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-diagram.svg" alt="Diagram: What to put in .env.example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-sticky.svg" alt="Sticky Note: What to put in .env.example" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-put-in-env-example-sticky.svg" alt="Sticky Note: What to put in .env.example" width="30%">
 </a>
 
 
@@ -533,14 +533,14 @@ Before you tell a client your API handles "thousands of requests," you need to p
 
 ### k6 basics
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-handwritten.svg" alt="Handwritten: k6 basics" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-handwritten.svg" alt="Handwritten: k6 basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-diagram.svg" alt="Diagram: k6 basics" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-diagram.svg" alt="Diagram: k6 basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-sticky.svg" alt="Sticky Note: k6 basics" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/k6-basics-sticky.svg" alt="Sticky Note: k6 basics" width="30%">
 </a>
 
 
@@ -588,14 +588,14 @@ export default function () {
 
 ### Locust (Python alternative)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-handwritten.svg" alt="Handwritten: Locust (Python alternative)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-handwritten.svg" alt="Handwritten: Locust (Python alternative)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-diagram.svg" alt="Diagram: Locust (Python alternative)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-diagram.svg" alt="Diagram: Locust (Python alternative)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-sticky.svg" alt="Sticky Note: Locust (Python alternative)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/locust-python-alternative-sticky.svg" alt="Sticky Note: Locust (Python alternative)" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@ locust -f locustfile.py --host https://rag-demo.apexpillar.tech \
 
 ### What to measure
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-handwritten.svg" alt="Handwritten: What to measure" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-handwritten.svg" alt="Handwritten: What to measure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-diagram.svg" alt="Diagram: What to measure" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-diagram.svg" alt="Diagram: What to measure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-sticky.svg" alt="Sticky Note: What to measure" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/what-to-measure-sticky.svg" alt="Sticky Note: What to measure" width="30%">
 </a>
 
 
@@ -666,14 +666,14 @@ You can't improve what you don't measure. Grafana + Prometheus is the industry s
 
 ### Prometheus setup
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-handwritten.svg" alt="Handwritten: Prometheus setup" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-handwritten.svg" alt="Handwritten: Prometheus setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-diagram.svg" alt="Diagram: Prometheus setup" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-diagram.svg" alt="Diagram: Prometheus setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-sticky.svg" alt="Sticky Note: Prometheus setup" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/prometheus-setup-sticky.svg" alt="Sticky Note: Prometheus setup" width="30%">
 </a>
 
 
@@ -734,14 +734,14 @@ async def metrics():
 
 ### docker-compose with monitoring
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-handwritten.svg" alt="Handwritten: docker-compose with monitoring" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-handwritten.svg" alt="Handwritten: docker-compose with monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-diagram.svg" alt="Diagram: docker-compose with monitoring" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-diagram.svg" alt="Diagram: docker-compose with monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-sticky.svg" alt="Sticky Note: docker-compose with monitoring" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/docker-compose-with-monitoring-sticky.svg" alt="Sticky Note: docker-compose with monitoring" width="30%">
 </a>
 
 
@@ -774,14 +774,14 @@ scrape_configs:
 
 ### Grafana dashboard panels to create
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-handwritten.svg" alt="Handwritten: Grafana dashboard panels to create" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-handwritten.svg" alt="Handwritten: Grafana dashboard panels to create" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-diagram.svg" alt="Diagram: Grafana dashboard panels to create" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-diagram.svg" alt="Diagram: Grafana dashboard panels to create" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-sticky.svg" alt="Sticky Note: Grafana dashboard panels to create" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/grafana-dashboard-panels-to-create-sticky.svg" alt="Sticky Note: Grafana dashboard panels to create" width="30%">
 </a>
 
 
@@ -795,14 +795,14 @@ scrape_configs:
 
 ### Alerting rules (Prometheus)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-handwritten.svg" alt="Handwritten: Alerting rules (Prometheus)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-handwritten.svg" alt="Handwritten: Alerting rules (Prometheus)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-diagram.svg" alt="Diagram: Alerting rules (Prometheus)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-diagram.svg" alt="Diagram: Alerting rules (Prometheus)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-sticky.svg" alt="Sticky Note: Alerting rules (Prometheus)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/05-phase4-production-hardening/alerting-rules-prometheus-sticky.svg" alt="Sticky Note: Alerting rules (Prometheus)" width="30%">
 </a>
 
 

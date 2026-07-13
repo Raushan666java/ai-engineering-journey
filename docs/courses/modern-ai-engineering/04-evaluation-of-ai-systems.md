@@ -57,14 +57,14 @@ Automatic metrics provide a reproducible, low-cost signal for model evaluation. 
 
 ### 4.2.1 Classification Metrics
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-handwritten.svg" alt="Handwritten: 4.2.1 Classification Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-handwritten.svg" alt="Handwritten: 4.2.1 Classification Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-diagram.svg" alt="Diagram: 4.2.1 Classification Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-diagram.svg" alt="Diagram: 4.2.1 Classification Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-sticky.svg" alt="Sticky Note: 4.2.1 Classification Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-1-classification-metrics-sticky.svg" alt="Sticky Note: 4.2.1 Classification Metrics" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ For generative tasks, these metrics apply when the output is categorical — for
 
 ### 4.2.2 Text Generation Metrics
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-handwritten.svg" alt="Handwritten: 4.2.2 Text Generation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-handwritten.svg" alt="Handwritten: 4.2.2 Text Generation Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-diagram.svg" alt="Diagram: 4.2.2 Text Generation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-diagram.svg" alt="Diagram: 4.2.2 Text Generation Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-sticky.svg" alt="Sticky Note: 4.2.2 Text Generation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-2-text-generation-metrics-sticky.svg" alt="Sticky Note: 4.2.2 Text Generation Metrics" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ For generative tasks, these metrics apply when the output is categorical — for
 
 ### 4.2.3 Metric Comparison Table
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-handwritten.svg" alt="Handwritten: 4.2.3 Metric Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-handwritten.svg" alt="Handwritten: 4.2.3 Metric Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-diagram.svg" alt="Diagram: 4.2.3 Metric Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-diagram.svg" alt="Diagram: 4.2.3 Metric Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-sticky.svg" alt="Sticky Note: 4.2.3 Metric Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-2-3-metric-comparison-table-sticky.svg" alt="Sticky Note: 4.2.3 Metric Comparison Table" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ Using a strong language model to evaluate the outputs of another model has becom
 
 ### 4.3.1 G-Eval
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-handwritten.svg" alt="Handwritten: 4.3.1 G-Eval" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-handwritten.svg" alt="Handwritten: 4.3.1 G-Eval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-diagram.svg" alt="Diagram: 4.3.1 G-Eval" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-diagram.svg" alt="Diagram: 4.3.1 G-Eval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-sticky.svg" alt="Sticky Note: 4.3.1 G-Eval" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-1-g-eval-sticky.svg" alt="Sticky Note: 4.3.1 G-Eval" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ G-Eval achieves higher correlation with human judgment than automatic metrics, e
 
 ### 4.3.2 Prometheus
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-handwritten.svg" alt="Handwritten: 4.3.2 Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-handwritten.svg" alt="Handwritten: 4.3.2 Prometheus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-diagram.svg" alt="Diagram: 4.3.2 Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-diagram.svg" alt="Diagram: 4.3.2 Prometheus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-sticky.svg" alt="Sticky Note: 4.3.2 Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-2-prometheus-sticky.svg" alt="Sticky Note: 4.3.2 Prometheus" width="30%">
 </a>
 
 
@@ -168,14 +168,14 @@ Key features:
 
 ### 4.3.3 MT-Bench
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-handwritten.svg" alt="Handwritten: 4.3.3 MT-Bench" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-handwritten.svg" alt="Handwritten: 4.3.3 MT-Bench" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-diagram.svg" alt="Diagram: 4.3.3 MT-Bench" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-diagram.svg" alt="Diagram: 4.3.3 MT-Bench" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-sticky.svg" alt="Sticky Note: 4.3.3 MT-Bench" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-3-mt-bench-sticky.svg" alt="Sticky Note: 4.3.3 MT-Bench" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ MT-Bench is a multi-turn benchmark with 80 questions across 8 categories (writin
 
 ### 4.3.4 Rubric-Based Evaluation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-handwritten.svg" alt="Handwritten: 4.3.4 Rubric-Based Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-handwritten.svg" alt="Handwritten: 4.3.4 Rubric-Based Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-diagram.svg" alt="Diagram: 4.3.4 Rubric-Based Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-diagram.svg" alt="Diagram: 4.3.4 Rubric-Based Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-sticky.svg" alt="Sticky Note: 4.3.4 Rubric-Based Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-4-rubric-based-evaluation-sticky.svg" alt="Sticky Note: 4.3.4 Rubric-Based Evaluation" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ Each dimension is scored independently, allowing fine-grained analysis of model 
 
 ### 4.3.5 Calibration and Bias Mitigation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-handwritten.svg" alt="Handwritten: 4.3.5 Calibration and Bias Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-handwritten.svg" alt="Handwritten: 4.3.5 Calibration and Bias Mitigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-diagram.svg" alt="Diagram: 4.3.5 Calibration and Bias Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-diagram.svg" alt="Diagram: 4.3.5 Calibration and Bias Mitigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-sticky.svg" alt="Sticky Note: 4.3.5 Calibration and Bias Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-3-5-calibration-and-bias-mitigation-sticky.svg" alt="Sticky Note: 4.3.5 Calibration and Bias Mitigation" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ Human evaluation remains the gold standard for assessing generative AI quality, 
 
 ### 4.4.1 Annotation Guidelines
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-handwritten.svg" alt="Handwritten: 4.4.1 Annotation Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-handwritten.svg" alt="Handwritten: 4.4.1 Annotation Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-diagram.svg" alt="Diagram: 4.4.1 Annotation Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-diagram.svg" alt="Diagram: 4.4.1 Annotation Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-sticky.svg" alt="Sticky Note: 4.4.1 Annotation Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-1-annotation-guidelines-sticky.svg" alt="Sticky Note: 4.4.1 Annotation Guidelines" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ A well-constructed guideline includes annotated examples at each score level to 
 
 ### 4.4.2 Likert Scales
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-handwritten.svg" alt="Handwritten: 4.4.2 Likert Scales" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-handwritten.svg" alt="Handwritten: 4.4.2 Likert Scales" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-diagram.svg" alt="Diagram: 4.4.2 Likert Scales" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-diagram.svg" alt="Diagram: 4.4.2 Likert Scales" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-sticky.svg" alt="Sticky Note: 4.4.2 Likert Scales" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-2-likert-scales-sticky.svg" alt="Sticky Note: 4.4.2 Likert Scales" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ Likert scales (e.g., 1-5 or 1-7) are the most common rating format. The scale sh
 
 ### 4.4.3 Pairwise Comparison
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-handwritten.svg" alt="Handwritten: 4.4.3 Pairwise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-handwritten.svg" alt="Handwritten: 4.4.3 Pairwise Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-diagram.svg" alt="Diagram: 4.4.3 Pairwise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-diagram.svg" alt="Diagram: 4.4.3 Pairwise Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-sticky.svg" alt="Sticky Note: 4.4.3 Pairwise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-3-pairwise-comparison-sticky.svg" alt="Sticky Note: 4.4.3 Pairwise Comparison" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ Pairwise comparisons can be aggregated using the Bradley-Terry model or Elo scor
 
 ### 4.4.4 Inter-Annotator Agreement
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-handwritten.svg" alt="Handwritten: 4.4.4 Inter-Annotator Agreement" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-handwritten.svg" alt="Handwritten: 4.4.4 Inter-Annotator Agreement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-diagram.svg" alt="Diagram: 4.4.4 Inter-Annotator Agreement" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-diagram.svg" alt="Diagram: 4.4.4 Inter-Annotator Agreement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-sticky.svg" alt="Sticky Note: 4.4.4 Inter-Annotator Agreement" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-4-inter-annotator-agreement-sticky.svg" alt="Sticky Note: 4.4.4 Inter-Annotator Agreement" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ A Kappa above 0.6 is considered substantial agreement. Low agreement indicates t
 
 ### 4.4.5 Crowdsourcing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-handwritten.svg" alt="Handwritten: 4.4.5 Crowdsourcing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-handwritten.svg" alt="Handwritten: 4.4.5 Crowdsourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-diagram.svg" alt="Diagram: 4.4.5 Crowdsourcing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-diagram.svg" alt="Diagram: 4.4.5 Crowdsourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-sticky.svg" alt="Sticky Note: 4.4.5 Crowdsourcing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-4-5-crowdsourcing-sticky.svg" alt="Sticky Note: 4.4.5 Crowdsourcing" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ Different AI tasks require different evaluation approaches. A single metric rare
 
 ### 4.5.1 Question Answering
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-handwritten.svg" alt="Handwritten: 4.5.1 Question Answering" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-handwritten.svg" alt="Handwritten: 4.5.1 Question Answering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-diagram.svg" alt="Diagram: 4.5.1 Question Answering" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-diagram.svg" alt="Diagram: 4.5.1 Question Answering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-sticky.svg" alt="Sticky Note: 4.5.1 Question Answering" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-1-question-answering-sticky.svg" alt="Sticky Note: 4.5.1 Question Answering" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ For open-domain QA, evaluation must also consider **answer coverage** (does the 
 
 ### 4.5.2 Summarization
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-handwritten.svg" alt="Handwritten: 4.5.2 Summarization" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-handwritten.svg" alt="Handwritten: 4.5.2 Summarization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-diagram.svg" alt="Diagram: 4.5.2 Summarization" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-diagram.svg" alt="Diagram: 4.5.2 Summarization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-sticky.svg" alt="Sticky Note: 4.5.2 Summarization" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-2-summarization-sticky.svg" alt="Sticky Note: 4.5.2 Summarization" width="30%">
 </a>
 
 
@@ -411,14 +411,14 @@ For open-domain QA, evaluation must also consider **answer coverage** (does the 
 
 ### 4.5.3 Code Generation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-handwritten.svg" alt="Handwritten: 4.5.3 Code Generation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-handwritten.svg" alt="Handwritten: 4.5.3 Code Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-diagram.svg" alt="Diagram: 4.5.3 Code Generation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-diagram.svg" alt="Diagram: 4.5.3 Code Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-sticky.svg" alt="Sticky Note: 4.5.3 Code Generation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-3-code-generation-sticky.svg" alt="Sticky Note: 4.5.3 Code Generation" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ Code evaluation also considers **style and efficiency**, though these are harder
 
 ### 4.5.4 Machine Translation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-handwritten.svg" alt="Handwritten: 4.5.4 Machine Translation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-handwritten.svg" alt="Handwritten: 4.5.4 Machine Translation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-diagram.svg" alt="Diagram: 4.5.4 Machine Translation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-diagram.svg" alt="Diagram: 4.5.4 Machine Translation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-sticky.svg" alt="Sticky Note: 4.5.4 Machine Translation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-5-4-machine-translation-sticky.svg" alt="Sticky Note: 4.5.4 Machine Translation" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ A high-quality evaluation dataset is the foundation of trustworthy evaluation. P
 
 ### 4.6.1 Golden Dataset Creation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-handwritten.svg" alt="Handwritten: 4.6.1 Golden Dataset Creation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-handwritten.svg" alt="Handwritten: 4.6.1 Golden Dataset Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-diagram.svg" alt="Diagram: 4.6.1 Golden Dataset Creation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-diagram.svg" alt="Diagram: 4.6.1 Golden Dataset Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-sticky.svg" alt="Sticky Note: 4.6.1 Golden Dataset Creation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-1-golden-dataset-creation-sticky.svg" alt="Sticky Note: 4.6.1 Golden Dataset Creation" width="30%">
 </a>
 
 
@@ -483,14 +483,14 @@ A "golden" evaluation dataset is a curated collection of input-output pairs that
 
 ### 4.6.2 Stratification
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-handwritten.svg" alt="Handwritten: 4.6.2 Stratification" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-handwritten.svg" alt="Handwritten: 4.6.2 Stratification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-diagram.svg" alt="Diagram: 4.6.2 Stratification" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-diagram.svg" alt="Diagram: 4.6.2 Stratification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-sticky.svg" alt="Sticky Note: 4.6.2 Stratification" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-2-stratification-sticky.svg" alt="Sticky Note: 4.6.2 Stratification" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@ Stratified sampling ensures the evaluation dataset reflects the distribution of 
 
 ### 4.6.3 Coverage
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-handwritten.svg" alt="Handwritten: 4.6.3 Coverage" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-handwritten.svg" alt="Handwritten: 4.6.3 Coverage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-diagram.svg" alt="Diagram: 4.6.3 Coverage" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-diagram.svg" alt="Diagram: 4.6.3 Coverage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-sticky.svg" alt="Sticky Note: 4.6.3 Coverage" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-3-coverage-sticky.svg" alt="Sticky Note: 4.6.3 Coverage" width="30%">
 </a>
 
 
@@ -522,14 +522,14 @@ Coverage measures how well the dataset represents the space of possible inputs. 
 
 ### 4.6.4 Difficulty Tiers
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-handwritten.svg" alt="Handwritten: 4.6.4 Difficulty Tiers" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-handwritten.svg" alt="Handwritten: 4.6.4 Difficulty Tiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-diagram.svg" alt="Diagram: 4.6.4 Difficulty Tiers" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-diagram.svg" alt="Diagram: 4.6.4 Difficulty Tiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-sticky.svg" alt="Sticky Note: 4.6.4 Difficulty Tiers" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-6-4-difficulty-tiers-sticky.svg" alt="Sticky Note: 4.6.4 Difficulty Tiers" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ Evaluation is not a one-time activity. Models degrade over time due to data drif
 
 ### 4.7.1 Evaluation in Production
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-handwritten.svg" alt="Handwritten: 4.7.1 Evaluation in Production" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-handwritten.svg" alt="Handwritten: 4.7.1 Evaluation in Production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-diagram.svg" alt="Diagram: 4.7.1 Evaluation in Production" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-diagram.svg" alt="Diagram: 4.7.1 Evaluation in Production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-sticky.svg" alt="Sticky Note: 4.7.1 Evaluation in Production" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-1-evaluation-in-production-sticky.svg" alt="Sticky Note: 4.7.1 Evaluation in Production" width="30%">
 </a>
 
 
@@ -568,14 +568,14 @@ Production evaluation pipelines score every model response against automatic met
 
 ### 4.7.2 Monitoring Drift
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-handwritten.svg" alt="Handwritten: 4.7.2 Monitoring Drift" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-handwritten.svg" alt="Handwritten: 4.7.2 Monitoring Drift" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-diagram.svg" alt="Diagram: 4.7.2 Monitoring Drift" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-diagram.svg" alt="Diagram: 4.7.2 Monitoring Drift" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-sticky.svg" alt="Sticky Note: 4.7.2 Monitoring Drift" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-2-monitoring-drift-sticky.svg" alt="Sticky Note: 4.7.2 Monitoring Drift" width="30%">
 </a>
 
 
@@ -589,14 +589,14 @@ Statistical tests (Kolmogorov-Smirnov, chi-squared, Z-tests) trigger alerts when
 
 ### 4.7.3 A/B Testing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-handwritten.svg" alt="Handwritten: 4.7.3 A/B Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-handwritten.svg" alt="Handwritten: 4.7.3 A/B Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-diagram.svg" alt="Diagram: 4.7.3 A/B Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-diagram.svg" alt="Diagram: 4.7.3 A/B Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-sticky.svg" alt="Sticky Note: 4.7.3 A/B Testing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-3-a-b-testing-sticky.svg" alt="Sticky Note: 4.7.3 A/B Testing" width="30%">
 </a>
 
 
@@ -609,14 +609,14 @@ A/B testing compares two model versions (or prompt strategies) on live traffic:
 
 ### 4.7.4 Canary Evaluation
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-handwritten.svg" alt="Handwritten: 4.7.4 Canary Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-handwritten.svg" alt="Handwritten: 4.7.4 Canary Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-diagram.svg" alt="Diagram: 4.7.4 Canary Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-diagram.svg" alt="Diagram: 4.7.4 Canary Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-sticky.svg" alt="Sticky Note: 4.7.4 Canary Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/4-7-4-canary-evaluation-sticky.svg" alt="Sticky Note: 4.7.4 Canary Evaluation" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ Canary releases route a small percentage of traffic (e.g., 1-5%) to a new model 
 
 ### EvaluationPipeline Class
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-handwritten.svg" alt="Handwritten: EvaluationPipeline Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-handwritten.svg" alt="Handwritten: EvaluationPipeline Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-diagram.svg" alt="Diagram: EvaluationPipeline Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-diagram.svg" alt="Diagram: EvaluationPipeline Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-sticky.svg" alt="Sticky Note: EvaluationPipeline Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaluationpipeline-class-sticky.svg" alt="Sticky Note: EvaluationPipeline Class" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ class EvaluationPipeline {
 
 ### EvalDataset Class
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-handwritten.svg" alt="Handwritten: EvalDataset Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-handwritten.svg" alt="Handwritten: EvalDataset Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-diagram.svg" alt="Diagram: EvalDataset Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-diagram.svg" alt="Diagram: EvalDataset Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-sticky.svg" alt="Sticky Note: EvalDataset Class" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/evaldataset-class-sticky.svg" alt="Sticky Note: EvalDataset Class" width="30%">
 </a>
 
 
@@ -1097,14 +1097,14 @@ D) Question answering accuracy
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/04-evaluation-of-ai-systems/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 

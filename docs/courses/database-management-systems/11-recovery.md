@@ -47,14 +47,14 @@ flowchart LR
 
 ### 11.1 Failure Classification
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-handwritten.svg" alt="Handwritten: 11.1 Failure Classification" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-handwritten.svg" alt="Handwritten: 11.1 Failure Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-diagram.svg" alt="Diagram: 11.1 Failure Classification" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-diagram.svg" alt="Diagram: 11.1 Failure Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-sticky.svg" alt="Sticky Note: 11.1 Failure Classification" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-sticky.svg" alt="Sticky Note: 11.1 Failure Classification" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ for e in events:
 
 ### 11.2 Storage Hierarchy
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-handwritten.svg" alt="Handwritten: 11.2 Storage Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-handwritten.svg" alt="Handwritten: 11.2 Storage Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-diagram.svg" alt="Diagram: 11.2 Storage Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-diagram.svg" alt="Diagram: 11.2 Storage Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-sticky.svg" alt="Sticky Note: 11.2 Storage Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-sticky.svg" alt="Sticky Note: 11.2 Storage Hierarchy" width="30%">
 </a>
 
 
@@ -531,14 +531,14 @@ for rec in stable.log:
 
 ### 11.3 Buffer Management Policies
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-handwritten.svg" alt="Handwritten: 11.3 Buffer Management Policies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-handwritten.svg" alt="Handwritten: 11.3 Buffer Management Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-diagram.svg" alt="Diagram: 11.3 Buffer Management Policies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-diagram.svg" alt="Diagram: 11.3 Buffer Management Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-sticky.svg" alt="Sticky Note: 11.3 Buffer Management Policies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-sticky.svg" alt="Sticky Note: 11.3 Buffer Management Policies" width="30%">
 </a>
 
 
@@ -737,14 +737,14 @@ print(f"Policy {bm.policy} requires REDO={True}, UNDO={True}")
 
 ### 11.4 The Write-Ahead Log (WAL)
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-handwritten.svg" alt="Handwritten: 11.4 The Write-Ahead Log (WAL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-handwritten.svg" alt="Handwritten: 11.4 The Write-Ahead Log (WAL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-diagram.svg" alt="Diagram: 11.4 The Write-Ahead Log (WAL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-diagram.svg" alt="Diagram: 11.4 The Write-Ahead Log (WAL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-sticky.svg" alt="Sticky Note: 11.4 The Write-Ahead Log (WAL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-sticky.svg" alt="Sticky Note: 11.4 The Write-Ahead Log (WAL)" width="30%">
 </a>
 
 
@@ -1069,14 +1069,14 @@ for rec in wal.read_log():
 
 ### 11.5 Log-Based Recovery Algorithms
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-handwritten.svg" alt="Handwritten: 11.5 Log-Based Recovery Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-handwritten.svg" alt="Handwritten: 11.5 Log-Based Recovery Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-diagram.svg" alt="Diagram: 11.5 Log-Based Recovery Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-diagram.svg" alt="Diagram: 11.5 Log-Based Recovery Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-sticky.svg" alt="Sticky Note: 11.5 Log-Based Recovery Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-sticky.svg" alt="Sticky Note: 11.5 Log-Based Recovery Algorithms" width="30%">
 </a>
 
 
@@ -1670,14 +1670,14 @@ print(f"Final: {disk}")
 
 ### 11.6 Checkpointing
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-handwritten.svg" alt="Handwritten: 11.6 Checkpointing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-handwritten.svg" alt="Handwritten: 11.6 Checkpointing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-diagram.svg" alt="Diagram: 11.6 Checkpointing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-diagram.svg" alt="Diagram: 11.6 Checkpointing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-sticky.svg" alt="Sticky Note: 11.6 Checkpointing" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-sticky.svg" alt="Sticky Note: 11.6 Checkpointing" width="30%">
 </a>
 
 
@@ -1959,14 +1959,14 @@ print(f"Recovery would start from LSN {cp.get_recovery_lsn()}")
 
 ### 11.7 The ARIES Algorithm
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-handwritten.svg" alt="Handwritten: 11.7 The ARIES Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-handwritten.svg" alt="Handwritten: 11.7 The ARIES Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-diagram.svg" alt="Diagram: 11.7 The ARIES Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-diagram.svg" alt="Diagram: 11.7 The ARIES Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-sticky.svg" alt="Sticky Note: 11.7 The ARIES Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-sticky.svg" alt="Sticky Note: 11.7 The ARIES Algorithm" width="30%">
 </a>
 
 
@@ -2375,14 +2375,14 @@ If the system crashes during recovery itself, ARIES starts over from the beginni
 
 ### 11.8 Shadow Paging
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-handwritten.svg" alt="Handwritten: 11.8 Shadow Paging" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-handwritten.svg" alt="Handwritten: 11.8 Shadow Paging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-diagram.svg" alt="Diagram: 11.8 Shadow Paging" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-diagram.svg" alt="Diagram: 11.8 Shadow Paging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-sticky.svg" alt="Sticky Note: 11.8 Shadow Paging" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-sticky.svg" alt="Sticky Note: 11.8 Shadow Paging" width="30%">
 </a>
 
 
@@ -2654,14 +2654,14 @@ db.show()
 
 ### 11.9 Recovery Techniques Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-handwritten.svg" alt="Handwritten: 11.9 Recovery Techniques Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-handwritten.svg" alt="Handwritten: 11.9 Recovery Techniques Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-diagram.svg" alt="Diagram: 11.9 Recovery Techniques Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-diagram.svg" alt="Diagram: 11.9 Recovery Techniques Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-sticky.svg" alt="Sticky Note: 11.9 Recovery Techniques Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-sticky.svg" alt="Sticky Note: 11.9 Recovery Techniques Comparison" width="30%">
 </a>
 
 
@@ -2680,14 +2680,14 @@ db.show()
 
 ### 11.10 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-handwritten.svg" alt="Handwritten: 11.10 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-handwritten.svg" alt="Handwritten: 11.10 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-diagram.svg" alt="Diagram: 11.10 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-diagram.svg" alt="Diagram: 11.10 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-sticky.svg" alt="Sticky Note: 11.10 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-sticky.svg" alt="Sticky Note: 11.10 Interview Corner" width="30%">
 </a>
 
 
@@ -2750,14 +2750,14 @@ STEAL/NO-FORCE dominates because it's the only combination that allows both memo
 
 ### 11.11 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-handwritten.svg" alt="Handwritten: 11.11 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-handwritten.svg" alt="Handwritten: 11.11 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-diagram.svg" alt="Diagram: 11.11 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-diagram.svg" alt="Diagram: 11.11 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-sticky.svg" alt="Sticky Note: 11.11 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-sticky.svg" alt="Sticky Note: 11.11 Applications in Real Systems" width="30%">
 </a>
 
 
@@ -2853,14 +2853,14 @@ Oracle Database has separate redo and undo subsystems:
 
 ### 11.12 Media Recovery
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-handwritten.svg" alt="Handwritten: 11.12 Media Recovery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-handwritten.svg" alt="Handwritten: 11.12 Media Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-diagram.svg" alt="Diagram: 11.12 Media Recovery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-diagram.svg" alt="Diagram: 11.12 Media Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-sticky.svg" alt="Sticky Note: 11.12 Media Recovery" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-sticky.svg" alt="Sticky Note: 11.12 Media Recovery" width="30%">
 </a>
 
 
@@ -2887,14 +2887,14 @@ pg_basebackup -D /backup/location          -- Physical backup
 
 ### 11.13 SQL Recovery Commands
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-handwritten.svg" alt="Handwritten: 11.13 SQL Recovery Commands" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-handwritten.svg" alt="Handwritten: 11.13 SQL Recovery Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-diagram.svg" alt="Diagram: 11.13 SQL Recovery Commands" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-diagram.svg" alt="Diagram: 11.13 SQL Recovery Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-sticky.svg" alt="Sticky Note: 11.13 SQL Recovery Commands" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-sticky.svg" alt="Sticky Note: 11.13 SQL Recovery Commands" width="30%">
 </a>
 
 
@@ -2923,14 +2923,14 @@ COMMIT;
 
 ### 11.14 Recovery in Distributed Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-handwritten.svg" alt="Handwritten: 11.14 Recovery in Distributed Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-handwritten.svg" alt="Handwritten: 11.14 Recovery in Distributed Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-diagram.svg" alt="Diagram: 11.14 Recovery in Distributed Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-diagram.svg" alt="Diagram: 11.14 Recovery in Distributed Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-sticky.svg" alt="Sticky Note: 11.14 Recovery in Distributed Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-sticky.svg" alt="Sticky Note: 11.14 Recovery in Distributed Systems" width="30%">
 </a>
 
 
@@ -3014,14 +3014,14 @@ Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
 
 ### 11.11 TypeScript Write-Ahead Log Simulator
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-handwritten.svg" alt="Handwritten: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-handwritten.svg" alt="Handwritten: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-diagram.svg" alt="Diagram: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-diagram.svg" alt="Diagram: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-sticky.svg" alt="Sticky Note: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-sticky.svg" alt="Sticky Note: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
 </a>
 
 
@@ -3168,14 +3168,14 @@ flowchart TD
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 

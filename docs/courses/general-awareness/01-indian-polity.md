@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Constitution of India — An Overview
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-handwritten.svg" alt="Handwritten: 1.1 Constitution of India — An Overview" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-handwritten.svg" alt="Handwritten: 1.1 Constitution of India — An Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-diagram.svg" alt="Diagram: 1.1 Constitution of India — An Overview" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-diagram.svg" alt="Diagram: 1.1 Constitution of India — An Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-sticky.svg" alt="Sticky Note: 1.1 Constitution of India — An Overview" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-1-constitution-of-india-an-overview-sticky.svg" alt="Sticky Note: 1.1 Constitution of India — An Overview" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ Changes to the Preamble:
 
 ### 1.2 Fundamental Rights (Articles 14–32)
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-handwritten.svg" alt="Handwritten: 1.2 Fundamental Rights (Articles 14–32)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-handwritten.svg" alt="Handwritten: 1.2 Fundamental Rights (Articles 14–32)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-diagram.svg" alt="Diagram: 1.2 Fundamental Rights (Articles 14–32)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-diagram.svg" alt="Diagram: 1.2 Fundamental Rights (Articles 14–32)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-sticky.svg" alt="Sticky Note: 1.2 Fundamental Rights (Articles 14–32)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-2-fundamental-rights-articles-14-32-sticky.svg" alt="Sticky Note: 1.2 Fundamental Rights (Articles 14–32)" width="30%">
 </a>
 
 
@@ -103,14 +103,14 @@ Fundamental Rights are guaranteed by Part III of the Constitution. They are just
 
 ### 1.3 Directive Principles of State Policy (Articles 36–51)
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-handwritten.svg" alt="Handwritten: 1.3 Directive Principles of State Policy (Articles 36–51)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-handwritten.svg" alt="Handwritten: 1.3 Directive Principles of State Policy (Articles 36–51)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-diagram.svg" alt="Diagram: 1.3 Directive Principles of State Policy (Articles 36–51)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-diagram.svg" alt="Diagram: 1.3 Directive Principles of State Policy (Articles 36–51)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-sticky.svg" alt="Sticky Note: 1.3 Directive Principles of State Policy (Articles 36–51)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-3-directive-principles-of-state-policy-articles-36-51-sticky.svg" alt="Sticky Note: 1.3 Directive Principles of State Policy (Articles 36–51)" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ mindmap
 
 ### 1.4 Fundamental Duties (Article 51A)
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-handwritten.svg" alt="Handwritten: 1.4 Fundamental Duties (Article 51A)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-handwritten.svg" alt="Handwritten: 1.4 Fundamental Duties (Article 51A)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-diagram.svg" alt="Diagram: 1.4 Fundamental Duties (Article 51A)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-diagram.svg" alt="Diagram: 1.4 Fundamental Duties (Article 51A)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-sticky.svg" alt="Sticky Note: 1.4 Fundamental Duties (Article 51A)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-4-fundamental-duties-article-51a-sticky.svg" alt="Sticky Note: 1.4 Fundamental Duties (Article 51A)" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ Added by the **42nd Amendment (1976)** — originally 10 duties, 11th added by 8
 
 ### 1.5 Union Executive
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-handwritten.svg" alt="Handwritten: 1.5 Union Executive" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-handwritten.svg" alt="Handwritten: 1.5 Union Executive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-diagram.svg" alt="Diagram: 1.5 Union Executive" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-diagram.svg" alt="Diagram: 1.5 Union Executive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-sticky.svg" alt="Sticky Note: 1.5 Union Executive" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-5-union-executive-sticky.svg" alt="Sticky Note: 1.5 Union Executive" width="30%">
 </a>
 
 
@@ -211,14 +211,14 @@ Added by the **42nd Amendment (1976)** — originally 10 duties, 11th added by 8
 
 ### 1.6 Parliament
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-handwritten.svg" alt="Handwritten: 1.6 Parliament" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-handwritten.svg" alt="Handwritten: 1.6 Parliament" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-diagram.svg" alt="Diagram: 1.6 Parliament" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-diagram.svg" alt="Diagram: 1.6 Parliament" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-sticky.svg" alt="Sticky Note: 1.6 Parliament" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-6-parliament-sticky.svg" alt="Sticky Note: 1.6 Parliament" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ flowchart LR
 
 ### 1.7 Judiciary
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-handwritten.svg" alt="Handwritten: 1.7 Judiciary" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-handwritten.svg" alt="Handwritten: 1.7 Judiciary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-diagram.svg" alt="Diagram: 1.7 Judiciary" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-diagram.svg" alt="Diagram: 1.7 Judiciary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-sticky.svg" alt="Sticky Note: 1.7 Judiciary" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-7-judiciary-sticky.svg" alt="Sticky Note: 1.7 Judiciary" width="30%">
 </a>
 
 
@@ -278,14 +278,14 @@ flowchart LR
 
 ### 1.8 Federal Structure
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-handwritten.svg" alt="Handwritten: 1.8 Federal Structure" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-handwritten.svg" alt="Handwritten: 1.8 Federal Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-diagram.svg" alt="Diagram: 1.8 Federal Structure" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-diagram.svg" alt="Diagram: 1.8 Federal Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-sticky.svg" alt="Sticky Note: 1.8 Federal Structure" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-8-federal-structure-sticky.svg" alt="Sticky Note: 1.8 Federal Structure" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ flowchart TD
 
 ### 1.9 Panchayati Raj (73rd Amendment, 1992)
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-handwritten.svg" alt="Handwritten: 1.9 Panchayati Raj (73rd Amendment, 1992)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-handwritten.svg" alt="Handwritten: 1.9 Panchayati Raj (73rd Amendment, 1992)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-diagram.svg" alt="Diagram: 1.9 Panchayati Raj (73rd Amendment, 1992)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-diagram.svg" alt="Diagram: 1.9 Panchayati Raj (73rd Amendment, 1992)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-sticky.svg" alt="Sticky Note: 1.9 Panchayati Raj (73rd Amendment, 1992)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-9-panchayati-raj-73rd-amendment-1992-sticky.svg" alt="Sticky Note: 1.9 Panchayati Raj (73rd Amendment, 1992)" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ flowchart TD
 
 ### 1.10 Constitutional Amendments
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-handwritten.svg" alt="Handwritten: 1.10 Constitutional Amendments" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-handwritten.svg" alt="Handwritten: 1.10 Constitutional Amendments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-diagram.svg" alt="Diagram: 1.10 Constitutional Amendments" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-diagram.svg" alt="Diagram: 1.10 Constitutional Amendments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-sticky.svg" alt="Sticky Note: 1.10 Constitutional Amendments" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-10-constitutional-amendments-sticky.svg" alt="Sticky Note: 1.10 Constitutional Amendments" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ flowchart TD
 
 ### 1.11 Emergency Provisions
 
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-handwritten.svg" alt="Handwritten: 1.11 Emergency Provisions" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-handwritten.svg" alt="Handwritten: 1.11 Emergency Provisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-diagram.svg" alt="Diagram: 1.11 Emergency Provisions" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-diagram.svg" alt="Diagram: 1.11 Emergency Provisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-sticky.svg" alt="Sticky Note: 1.11 Emergency Provisions" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/01-indian-polity/1-11-emergency-provisions-sticky.svg" alt="Sticky Note: 1.11 Emergency Provisions" width="30%">
 </a>
 
 

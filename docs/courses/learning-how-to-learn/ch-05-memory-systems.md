@@ -33,14 +33,14 @@ After completing this chapter, you will be able to:
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ flowchart LR
 
 ### Q46: What is the method of loci (memory palace), and how do I build one?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-handwritten.svg" alt="Handwritten: What is the method of loci (memory palace), and how do I build one?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-handwritten.svg" alt="Handwritten: What is the method of loci (memory palace), and how do I build one?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-diagram.svg" alt="Diagram: What is the method of loci (memory palace), and how do I build one?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-diagram.svg" alt="Diagram: What is the method of loci (memory palace), and how do I build one?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-sticky.svg" alt="Sticky Note: What is the method of loci (memory palace), and how do I build one?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-method-of-loci-memory-palace-and-how-do-i-build-one-sticky.svg" alt="Sticky Note: What is the method of loci (memory palace), and how do I build one?" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ Walking the palace:
 
 ### Q47: How do visual mnemonics work for encoding abstract concepts?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-handwritten.svg" alt="Handwritten: How do visual mnemonics work for encoding abstract concepts?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-handwritten.svg" alt="Handwritten: How do visual mnemonics work for encoding abstract concepts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-diagram.svg" alt="Diagram: How do visual mnemonics work for encoding abstract concepts?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-diagram.svg" alt="Diagram: How do visual mnemonics work for encoding abstract concepts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-sticky.svg" alt="Sticky Note: How do visual mnemonics work for encoding abstract concepts?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-visual-mnemonics-work-for-encoding-abstract-concepts-sticky.svg" alt="Sticky Note: How do visual mnemonics work for encoding abstract concepts?" width="30%">
 </a>
 
 
@@ -351,14 +351,14 @@ Visualize: A referee who just shrugs and walks away
 
 ### Q48: How does the chaining system help me remember sequences?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-handwritten.svg" alt="Handwritten: How does the chaining system help me remember sequences?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-handwritten.svg" alt="Handwritten: How does the chaining system help me remember sequences?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-diagram.svg" alt="Diagram: How does the chaining system help me remember sequences?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-diagram.svg" alt="Diagram: How does the chaining system help me remember sequences?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-sticky.svg" alt="Sticky Note: How does the chaining system help me remember sequences?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-does-the-chaining-system-help-me-remember-sequences-sticky.svg" alt="Sticky Note: How does the chaining system help me remember sequences?" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ public class ChainingSystem {
 
 ### Q49: What is the peg system, and how does it differ from chaining?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-handwritten.svg" alt="Handwritten: What is the peg system, and how does it differ from chaining?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-handwritten.svg" alt="Handwritten: What is the peg system, and how does it differ from chaining?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-diagram.svg" alt="Diagram: What is the peg system, and how does it differ from chaining?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-diagram.svg" alt="Diagram: What is the peg system, and how does it differ from chaining?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-sticky.svg" alt="Sticky Note: What is the peg system, and how does it differ from chaining?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-peg-system-and-how-does-it-differ-from-chaining-sticky.svg" alt="Sticky Note: What is the peg system, and how does it differ from chaining?" width="30%">
 </a>
 
 
@@ -727,14 +727,14 @@ Position 10: null (not encoded yet)
 
 ### Q50: What is memory compression, and how do I use it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-handwritten.svg" alt="Handwritten: What is memory compression, and how do I use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-handwritten.svg" alt="Handwritten: What is memory compression, and how do I use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-diagram.svg" alt="Diagram: What is memory compression, and how do I use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-diagram.svg" alt="Diagram: What is memory compression, and how do I use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-sticky.svg" alt="Sticky Note: What is memory compression, and how do I use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-memory-compression-and-how-do-i-use-it-sticky.svg" alt="Sticky Note: What is memory compression, and how do I use it?" width="30%">
 </a>
 
 
@@ -888,14 +888,14 @@ public class MemoryCompression {
 
 ### Q51: What is encoding specificity, and how does it affect my studying?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-handwritten.svg" alt="Handwritten: What is encoding specificity, and how does it affect my studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-handwritten.svg" alt="Handwritten: What is encoding specificity, and how does it affect my studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-diagram.svg" alt="Diagram: What is encoding specificity, and how does it affect my studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-diagram.svg" alt="Diagram: What is encoding specificity, and how does it affect my studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-sticky.svg" alt="Sticky Note: What is encoding specificity, and how does it affect my studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-encoding-specificity-and-how-does-it-affect-my-studying-sticky.svg" alt="Sticky Note: What is encoding specificity, and how does it affect my studying?" width="30%">
 </a>
 
 
@@ -1053,14 +1053,14 @@ Bad study (cue mismatches exam): forgets
 
 ### Q52: What is state-dependent memory, and when does it help or hurt?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-handwritten.svg" alt="Handwritten: What is state-dependent memory, and when does it help or hurt?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-handwritten.svg" alt="Handwritten: What is state-dependent memory, and when does it help or hurt?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-diagram.svg" alt="Diagram: What is state-dependent memory, and when does it help or hurt?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-diagram.svg" alt="Diagram: What is state-dependent memory, and when does it help or hurt?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-sticky.svg" alt="Sticky Note: What is state-dependent memory, and when does it help or hurt?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-state-dependent-memory-and-when-does-it-help-or-hurt-sticky.svg" alt="Sticky Note: What is state-dependent memory, and when does it help or hurt?" width="30%">
 </a>
 
 
@@ -1225,14 +1225,14 @@ Bad student always studies tired → performs poorly in alert exam conditions.
 
 ### Q53: What is context-dependent memory, and how can I use it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-handwritten.svg" alt="Handwritten: What is context-dependent memory, and how can I use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-handwritten.svg" alt="Handwritten: What is context-dependent memory, and how can I use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-diagram.svg" alt="Diagram: What is context-dependent memory, and how can I use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-diagram.svg" alt="Diagram: What is context-dependent memory, and how can I use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-sticky.svg" alt="Sticky Note: What is context-dependent memory, and how can I use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-context-dependent-memory-and-how-can-i-use-it-sticky.svg" alt="Sticky Note: What is context-dependent memory, and how can I use it?" width="30%">
 </a>
 
 
@@ -1392,14 +1392,14 @@ public class ContextDependentMemory {
 
 ### Q54: What is the generation effect, and why does it beat reading?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-handwritten.svg" alt="Handwritten: What is the generation effect, and why does it beat reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-handwritten.svg" alt="Handwritten: What is the generation effect, and why does it beat reading?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-diagram.svg" alt="Diagram: What is the generation effect, and why does it beat reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-diagram.svg" alt="Diagram: What is the generation effect, and why does it beat reading?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-sticky.svg" alt="Sticky Note: What is the generation effect, and why does it beat reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-generation-effect-and-why-does-it-beat-reading-sticky.svg" alt="Sticky Note: What is the generation effect, and why does it beat reading?" width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ Q: What is a race condition? → FORGOT ✗
 
 ### Q55: What is the testing effect, and how do I use it properly?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-handwritten.svg" alt="Handwritten: What is the testing effect, and how do I use it properly?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-handwritten.svg" alt="Handwritten: What is the testing effect, and how do I use it properly?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-diagram.svg" alt="Diagram: What is the testing effect, and how do I use it properly?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-diagram.svg" alt="Diagram: What is the testing effect, and how do I use it properly?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-sticky.svg" alt="Sticky Note: What is the testing effect, and how do I use it properly?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-the-testing-effect-and-how-do-i-use-it-properly-sticky.svg" alt="Sticky Note: What is the testing effect, and how do I use it properly?" width="30%">
 </a>
 
 
@@ -1761,14 +1761,14 @@ compared to restudying for the same amount of time.
 
 ### Q56: What are desirable difficulties, and how do I calibrate them?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-handwritten.svg" alt="Handwritten: What are desirable difficulties, and how do I calibrate them?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-handwritten.svg" alt="Handwritten: What are desirable difficulties, and how do I calibrate them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-diagram.svg" alt="Diagram: What are desirable difficulties, and how do I calibrate them?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-diagram.svg" alt="Diagram: What are desirable difficulties, and how do I calibrate them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-sticky.svg" alt="Sticky Note: What are desirable difficulties, and how do I calibrate them?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-are-desirable-difficulties-and-how-do-i-calibrate-them-sticky.svg" alt="Sticky Note: What are desirable difficulties, and how do I calibrate them?" width="30%">
 </a>
 
 
@@ -1935,14 +1935,14 @@ public class DesirableDifficulties {
 
 ### Q57: What is overlearning, and when should I stop?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-handwritten.svg" alt="Handwritten: What is overlearning, and when should I stop?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-handwritten.svg" alt="Handwritten: What is overlearning, and when should I stop?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-diagram.svg" alt="Diagram: What is overlearning, and when should I stop?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-diagram.svg" alt="Diagram: What is overlearning, and when should I stop?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-sticky.svg" alt="Sticky Note: What is overlearning, and when should I stop?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/what-is-overlearning-and-when-should-i-stop-sticky.svg" alt="Sticky Note: What is overlearning, and when should I stop?" width="30%">
 </a>
 
 
@@ -2115,14 +2115,14 @@ for higher total learning return.
 
 ### Q58: How should I create and use cheat sheets effectively?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-handwritten.svg" alt="Handwritten: How should I create and use cheat sheets effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-handwritten.svg" alt="Handwritten: How should I create and use cheat sheets effectively?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-diagram.svg" alt="Diagram: How should I create and use cheat sheets effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-diagram.svg" alt="Diagram: How should I create and use cheat sheets effectively?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-sticky.svg" alt="Sticky Note: How should I create and use cheat sheets effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-should-i-create-and-use-cheat-sheets-effectively-sticky.svg" alt="Sticky Note: How should I create and use cheat sheets effectively?" width="30%">
 </a>
 
 
@@ -2315,14 +2315,14 @@ Total: 30 minutes of active learning disguised as 'cheating'.
 
 ### Q59: How do I integrate multiple memory systems for complex material?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-handwritten.svg" alt="Handwritten: How do I integrate multiple memory systems for complex material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-handwritten.svg" alt="Handwritten: How do I integrate multiple memory systems for complex material?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-diagram.svg" alt="Diagram: How do I integrate multiple memory systems for complex material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-diagram.svg" alt="Diagram: How do I integrate multiple memory systems for complex material?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-sticky.svg" alt="Sticky Note: How do I integrate multiple memory systems for complex material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/how-do-i-integrate-multiple-memory-systems-for-complex-material-sticky.svg" alt="Sticky Note: How do I integrate multiple memory systems for complex material?" width="30%">
 </a>
 
 
@@ -2564,14 +2564,14 @@ Layer: Retrieval Practice
 
 ### Q60: Putting it all together — how do I design a complete memory system for a full course?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-handwritten.svg" alt="Handwritten: Putting it all together — how do I design a complete memory system for a full course?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-handwritten.svg" alt="Handwritten: Putting it all together — how do I design a complete memory system for a full course?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-diagram.svg" alt="Diagram: Putting it all together — how do I design a complete memory system for a full course?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-diagram.svg" alt="Diagram: Putting it all together — how do I design a complete memory system for a full course?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-sticky.svg" alt="Sticky Note: Putting it all together — how do I design a complete memory system for a full course?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/putting-it-all-together-how-do-i-design-a-complete-memory-system-for-a-full-course-sticky.svg" alt="Sticky Note: Putting it all together — how do I design a complete memory system for a full course?" width="30%">
 </a>
 
 
@@ -2924,14 +2924,14 @@ over the course of a semester.
 
 ### Self-Assessment Quiz
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-05-memory-systems/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
 </a>
 
 

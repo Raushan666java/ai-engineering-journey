@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 5.1 Constitutional AI
 
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-handwritten.svg" alt="Handwritten: 5.1 Constitutional AI" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-handwritten.svg" alt="Handwritten: 5.1 Constitutional AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-diagram.svg" alt="Diagram: 5.1 Constitutional AI" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-diagram.svg" alt="Diagram: 5.1 Constitutional AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-sticky.svg" alt="Sticky Note: 5.1 Constitutional AI" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-sticky.svg" alt="Sticky Note: 5.1 Constitutional AI" width="30%">
 </a>
 
 
@@ -51,14 +51,14 @@ Critique and revision share the same underlying LLM, making CAI a pure self-supe
 
 ### 5.2 RLAIF / RLHF
 
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-handwritten.svg" alt="Handwritten: 5.2 RLAIF / RLHF" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-handwritten.svg" alt="Handwritten: 5.2 RLAIF / RLHF" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-diagram.svg" alt="Diagram: 5.2 RLAIF / RLHF" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-diagram.svg" alt="Diagram: 5.2 RLAIF / RLHF" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-sticky.svg" alt="Sticky Note: 5.2 RLAIF / RLHF" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-sticky.svg" alt="Sticky Note: 5.2 RLAIF / RLHF" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ RLAIF scales preference labeling to arbitrary volumes since the judge is an LLM 
 
 ### 5.3 STaR / ReST
 
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-handwritten.svg" alt="Handwritten: 5.3 STaR / ReST" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-handwritten.svg" alt="Handwritten: 5.3 STaR / ReST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-diagram.svg" alt="Diagram: 5.3 STaR / ReST" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-diagram.svg" alt="Diagram: 5.3 STaR / ReST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-sticky.svg" alt="Sticky Note: 5.3 STaR / ReST" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-sticky.svg" alt="Sticky Note: 5.3 STaR / ReST" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ These loops close the gap between generation quality and training signal without
 
 ### 5.4 Direct Preference Optimization
 
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-handwritten.svg" alt="Handwritten: 5.4 Direct Preference Optimization" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-handwritten.svg" alt="Handwritten: 5.4 Direct Preference Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-diagram.svg" alt="Diagram: 5.4 Direct Preference Optimization" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-diagram.svg" alt="Diagram: 5.4 Direct Preference Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-sticky.svg" alt="Sticky Note: 5.4 Direct Preference Optimization" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-sticky.svg" alt="Sticky Note: 5.4 Direct Preference Optimization" width="30%">
 </a>
 
 

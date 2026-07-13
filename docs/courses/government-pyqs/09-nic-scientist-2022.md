@@ -35,14 +35,14 @@
 
 ### Data Structures & Algorithms (14 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-handwritten.svg" alt="Handwritten: Data Structures & Algorithms (14 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-handwritten.svg" alt="Handwritten: Data Structures & Algorithms (14 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-diagram.svg" alt="Diagram: Data Structures & Algorithms (14 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-diagram.svg" alt="Diagram: Data Structures & Algorithms (14 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-sticky.svg" alt="Sticky Note: Data Structures & Algorithms (14 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-sticky.svg" alt="Sticky Note: Data Structures & Algorithms (14 Qs)" width="30%">
 </a>
 
 
@@ -516,14 +516,14 @@ console.log(arr); // [10, 5, 7, 3, 2, 1]
 
 ### Operating Systems (10 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-handwritten.svg" alt="Handwritten: Operating Systems (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-handwritten.svg" alt="Handwritten: Operating Systems (10 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-diagram.svg" alt="Diagram: Operating Systems (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-diagram.svg" alt="Diagram: Operating Systems (10 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-sticky.svg" alt="Sticky Note: Operating Systems (10 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-sticky.svg" alt="Sticky Note: Operating Systems (10 Qs)" width="30%">
 </a>
 
 
@@ -825,14 +825,14 @@ D) mkdir
 
 ### Database Management Systems (9 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-handwritten.svg" alt="Handwritten: Database Management Systems (9 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-handwritten.svg" alt="Handwritten: Database Management Systems (9 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-diagram.svg" alt="Diagram: Database Management Systems (9 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-diagram.svg" alt="Diagram: Database Management Systems (9 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-sticky.svg" alt="Sticky Note: Database Management Systems (9 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-sticky.svg" alt="Sticky Note: Database Management Systems (9 Qs)" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ D) A database trigger
 
 ### Computer Networks (9 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-handwritten.svg" alt="Handwritten: Computer Networks (9 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-handwritten.svg" alt="Handwritten: Computer Networks (9 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-diagram.svg" alt="Diagram: Computer Networks (9 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-diagram.svg" alt="Diagram: Computer Networks (9 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-sticky.svg" alt="Sticky Note: Computer Networks (9 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-sticky.svg" alt="Sticky Note: Computer Networks (9 Qs)" width="30%">
 </a>
 
 
@@ -1244,14 +1244,14 @@ D) Translate domain names
 
 ### Software Engineering (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-handwritten.svg" alt="Handwritten: Software Engineering (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-handwritten.svg" alt="Handwritten: Software Engineering (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-diagram.svg" alt="Diagram: Software Engineering (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-diagram.svg" alt="Diagram: Software Engineering (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-sticky.svg" alt="Sticky Note: Software Engineering (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-sticky.svg" alt="Sticky Note: Software Engineering (5 Qs)" width="30%">
 </a>
 
 
@@ -1365,14 +1365,14 @@ D) Acceptance testing
 
 ### Computer Organization & Architecture (3 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-handwritten.svg" alt="Handwritten: Computer Organization & Architecture (3 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-handwritten.svg" alt="Handwritten: Computer Organization & Architecture (3 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-diagram.svg" alt="Diagram: Computer Organization & Architecture (3 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-diagram.svg" alt="Diagram: Computer Organization & Architecture (3 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-sticky.svg" alt="Sticky Note: Computer Organization & Architecture (3 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-sticky.svg" alt="Sticky Note: Computer Organization & Architecture (3 Qs)" width="30%">
 </a>
 
 
@@ -1432,14 +1432,14 @@ D) System bus
 
 ### C Programming (13 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-handwritten.svg" alt="Handwritten: C Programming (13 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-handwritten.svg" alt="Handwritten: C Programming (13 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-diagram.svg" alt="Diagram: C Programming (13 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-diagram.svg" alt="Diagram: C Programming (13 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-sticky.svg" alt="Sticky Note: C Programming (13 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-sticky.svg" alt="Sticky Note: C Programming (13 Qs)" width="30%">
 </a>
 
 
@@ -1807,14 +1807,14 @@ D) Compilation error
 
 ### Java & OOP (17 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-handwritten.svg" alt="Handwritten: Java & OOP (17 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-handwritten.svg" alt="Handwritten: Java & OOP (17 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-diagram.svg" alt="Diagram: Java & OOP (17 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-diagram.svg" alt="Diagram: Java & OOP (17 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-sticky.svg" alt="Sticky Note: Java & OOP (17 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-sticky.svg" alt="Sticky Note: Java & OOP (17 Qs)" width="30%">
 </a>
 
 
@@ -2225,14 +2225,14 @@ D) They can be overridden
 
 ### Quantitative Aptitude (8 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-handwritten.svg" alt="Handwritten: Quantitative Aptitude (8 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-handwritten.svg" alt="Handwritten: Quantitative Aptitude (8 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-diagram.svg" alt="Diagram: Quantitative Aptitude (8 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-diagram.svg" alt="Diagram: Quantitative Aptitude (8 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-sticky.svg" alt="Sticky Note: Quantitative Aptitude (8 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-sticky.svg" alt="Sticky Note: Quantitative Aptitude (8 Qs)" width="30%">
 </a>
 
 
@@ -2382,14 +2382,14 @@ D) 144
 
 ### Reasoning Ability (7 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-handwritten.svg" alt="Handwritten: Reasoning Ability (7 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-handwritten.svg" alt="Handwritten: Reasoning Ability (7 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-diagram.svg" alt="Diagram: Reasoning Ability (7 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-diagram.svg" alt="Diagram: Reasoning Ability (7 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-sticky.svg" alt="Sticky Note: Reasoning Ability (7 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-sticky.svg" alt="Sticky Note: Reasoning Ability (7 Qs)" width="30%">
 </a>
 
 
@@ -2552,14 +2552,14 @@ D) 75°
 
 ### English Language (5 Qs)
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-handwritten.svg" alt="Handwritten: English Language (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-handwritten.svg" alt="Handwritten: English Language (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-diagram.svg" alt="Diagram: English Language (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-diagram.svg" alt="Diagram: English Language (5 Qs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-sticky.svg" alt="Sticky Note: English Language (5 Qs)" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-sticky.svg" alt="Sticky Note: English Language (5 Qs)" width="30%">
 </a>
 
 
@@ -2695,14 +2695,14 @@ D) with
 
 ### Key Insights for NIC Scientist B
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-handwritten.svg" alt="Handwritten: Key Insights for NIC Scientist B" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-handwritten.svg" alt="Handwritten: Key Insights for NIC Scientist B" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-diagram.svg" alt="Diagram: Key Insights for NIC Scientist B" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-diagram.svg" alt="Diagram: Key Insights for NIC Scientist B" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-sticky.svg" alt="Sticky Note: Key Insights for NIC Scientist B" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-sticky.svg" alt="Sticky Note: Key Insights for NIC Scientist B" width="30%">
 </a>
 
 
@@ -2715,14 +2715,14 @@ D) with
 
 ### Recommended Strategy
 
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-handwritten.svg" alt="Handwritten: Recommended Strategy" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-handwritten.svg" alt="Handwritten: Recommended Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-diagram.svg" alt="Diagram: Recommended Strategy" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-diagram.svg" alt="Diagram: Recommended Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-sticky.svg" alt="Sticky Note: Recommended Strategy" width="30%">
+<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-sticky.svg" alt="Sticky Note: Recommended Strategy" width="30%">
 </a>
 
 

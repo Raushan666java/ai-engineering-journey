@@ -55,14 +55,14 @@ flowchart LR
 
 ### 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture
 
-<a href="../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-handwritten.svg" alt="Handwritten: 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-handwritten.svg" alt="Handwritten: 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-diagram.svg" alt="Diagram: 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-diagram.svg" alt="Diagram: 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-sticky.svg" alt="Sticky Note: 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/1-openapi-and-swagger-the-big-picture-sticky.svg" alt="Sticky Note: 1. OpenAPI and Swagger ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â The Big Picture" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ OpenAPI Specification (openapi.yaml)
 
 ### 2. Project Setup
 
-<a href="../../assets/images/diagrams/java/17-openapi/2-project-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/2-project-setup-handwritten.svg" alt="Handwritten: 2. Project Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/2-project-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/2-project-setup-handwritten.svg" alt="Handwritten: 2. Project Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/2-project-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/2-project-setup-diagram.svg" alt="Diagram: 2. Project Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/2-project-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/2-project-setup-diagram.svg" alt="Diagram: 2. Project Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/2-project-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/2-project-setup-sticky.svg" alt="Sticky Note: 2. Project Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/2-project-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/2-project-setup-sticky.svg" alt="Sticky Note: 2. Project Setup" width="30%">
 </a>
 
 
@@ -161,14 +161,14 @@ No additional configuration is required for a minimal setup. Running the applica
 
 ### 3. Customizing the OpenAPI Info Object
 
-<a href="../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-handwritten.svg" alt="Handwritten: 3. Customizing the OpenAPI Info Object" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-handwritten.svg" alt="Handwritten: 3. Customizing the OpenAPI Info Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-diagram.svg" alt="Diagram: 3. Customizing the OpenAPI Info Object" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-diagram.svg" alt="Diagram: 3. Customizing the OpenAPI Info Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-sticky.svg" alt="Sticky Note: 3. Customizing the OpenAPI Info Object" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/3-customizing-the-openapi-info-object-sticky.svg" alt="Sticky Note: 3. Customizing the OpenAPI Info Object" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ public class OpenApiConfig {
 
 ### 4. Annotating Endpoints
 
-<a href="../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-handwritten.svg" alt="Handwritten: 4. Annotating Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-handwritten.svg" alt="Handwritten: 4. Annotating Endpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-diagram.svg" alt="Diagram: 4. Annotating Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-diagram.svg" alt="Diagram: 4. Annotating Endpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-sticky.svg" alt="Sticky Note: 4. Annotating Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/4-annotating-endpoints-sticky.svg" alt="Sticky Note: 4. Annotating Endpoints" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ public class PetController {
 
 ### 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs
 
-<a href="../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-handwritten.svg" alt="Handwritten: 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-handwritten.svg" alt="Handwritten: 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-diagram.svg" alt="Diagram: 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-diagram.svg" alt="Diagram: 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-sticky.svg" alt="Sticky Note: 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/5-schema-modeling-dtos-sticky.svg" alt="Sticky Note: 5. @Schema ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Modeling DTOs" width="30%">
 </a>
 
 
@@ -641,14 +641,14 @@ public class ErrorResponse {
 
 ### 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation
 
-<a href="../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-handwritten.svg" alt="Handwritten: 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-handwritten.svg" alt="Handwritten: 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-diagram.svg" alt="Diagram: 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-diagram.svg" alt="Diagram: 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-sticky.svg" alt="Sticky Note: 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/6-parameter-fine-grained-parameter-documentation-sticky.svg" alt="Sticky Note: 6. @Parameter ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Parameter Documentation" width="30%">
 </a>
 
 
@@ -722,14 +722,14 @@ public class ParameterExamplesController {
 
 ### 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec
 
-<a href="../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-handwritten.svg" alt="Handwritten: 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-handwritten.svg" alt="Handwritten: 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-diagram.svg" alt="Diagram: 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-diagram.svg" alt="Diagram: 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-sticky.svg" alt="Sticky Note: 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/7-groupedopenapi-partitioning-the-spec-sticky.svg" alt="Sticky Note: 7. GroupedOpenApi ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Partitioning the Spec" width="30%">
 </a>
 
 
@@ -808,14 +808,14 @@ Each group appears as a separate dropdown entry in Swagger UI, each with its own
 
 ### 8. Security Schemes
 
-<a href="../../assets/images/diagrams/java/17-openapi/8-security-schemes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/8-security-schemes-handwritten.svg" alt="Handwritten: 8. Security Schemes" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/8-security-schemes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/8-security-schemes-handwritten.svg" alt="Handwritten: 8. Security Schemes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/8-security-schemes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/8-security-schemes-diagram.svg" alt="Diagram: 8. Security Schemes" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/8-security-schemes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/8-security-schemes-diagram.svg" alt="Diagram: 8. Security Schemes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/8-security-schemes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/8-security-schemes-sticky.svg" alt="Sticky Note: 8. Security Schemes" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/8-security-schemes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/8-security-schemes-sticky.svg" alt="Sticky Note: 8. Security Schemes" width="30%">
 </a>
 
 
@@ -925,14 +925,14 @@ public class AdminController {
 
 ### 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples
 
-<a href="../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-handwritten.svg" alt="Handwritten: 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-handwritten.svg" alt="Handwritten: 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-diagram.svg" alt="Diagram: 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-diagram.svg" alt="Diagram: 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-sticky.svg" alt="Sticky Note: 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/9-content-and-exampleobject-rich-examples-sticky.svg" alt="Sticky Note: 9. @Content and @ExampleObject ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Rich Examples" width="30%">
 </a>
 
 
@@ -1085,14 +1085,14 @@ public class ValidationErrorResponse {
 
 ### 10. API Versioning in Docs
 
-<a href="../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-handwritten.svg" alt="Handwritten: 10. API Versioning in Docs" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-handwritten.svg" alt="Handwritten: 10. API Versioning in Docs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-diagram.svg" alt="Diagram: 10. API Versioning in Docs" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-diagram.svg" alt="Diagram: 10. API Versioning in Docs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-sticky.svg" alt="Sticky Note: 10. API Versioning in Docs" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/10-api-versioning-in-docs-sticky.svg" alt="Sticky Note: 10. API Versioning in Docs" width="30%">
 </a>
 
 
@@ -1114,14 +1114,14 @@ public OpenAPI versionedOpenAPI() {
                 
                 ### Changelog
 
-<a href="../../assets/images/diagrams/java/17-openapi/changelog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/changelog-handwritten.svg" alt="Handwritten: Changelog" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/changelog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/changelog-handwritten.svg" alt="Handwritten: Changelog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/changelog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/changelog-diagram.svg" alt="Diagram: Changelog" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/changelog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/changelog-diagram.svg" alt="Diagram: Changelog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/changelog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/changelog-sticky.svg" alt="Sticky Note: Changelog" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/changelog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/changelog-sticky.svg" alt="Sticky Note: Changelog" width="30%">
 </a>
 
                 - **2.5.0** ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Added medical records endpoints
@@ -1182,14 +1182,14 @@ public class VersionedController {
 
 ### 11. Spring HATEOAS Support
 
-<a href="../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-handwritten.svg" alt="Handwritten: 11. Spring HATEOAS Support" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-handwritten.svg" alt="Handwritten: 11. Spring HATEOAS Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-diagram.svg" alt="Diagram: 11. Spring HATEOAS Support" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-diagram.svg" alt="Diagram: 11. Spring HATEOAS Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-sticky.svg" alt="Sticky Note: 11. Spring HATEOAS Support" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/11-spring-hateoas-support-sticky.svg" alt="Sticky Note: 11. Spring HATEOAS Support" width="30%">
 </a>
 
 
@@ -1269,14 +1269,14 @@ springdoc.show-actuator=false
 
 ### 12. Global Headers
 
-<a href="../../assets/images/diagrams/java/17-openapi/12-global-headers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/12-global-headers-handwritten.svg" alt="Handwritten: 12. Global Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/12-global-headers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/12-global-headers-handwritten.svg" alt="Handwritten: 12. Global Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/12-global-headers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/12-global-headers-diagram.svg" alt="Diagram: 12. Global Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/12-global-headers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/12-global-headers-diagram.svg" alt="Diagram: 12. Global Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/12-global-headers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/12-global-headers-sticky.svg" alt="Sticky Note: 12. Global Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/12-global-headers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/12-global-headers-sticky.svg" alt="Sticky Note: 12. Global Headers" width="30%">
 </a>
 
 
@@ -1357,14 +1357,14 @@ public class GlobalHeadersConfig {
 
 ### 13. Custom @Operation Meta-Annotation
 
-<a href="../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-handwritten.svg" alt="Handwritten: 13. Custom @Operation Meta-Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-handwritten.svg" alt="Handwritten: 13. Custom @Operation Meta-Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-diagram.svg" alt="Diagram: 13. Custom @Operation Meta-Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-diagram.svg" alt="Diagram: 13. Custom @Operation Meta-Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-sticky.svg" alt="Sticky Note: 13. Custom @Operation Meta-Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/13-custom-operation-meta-annotation-sticky.svg" alt="Sticky Note: 13. Custom @Operation Meta-Annotation" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ public class MetaAnnotationController {
 
 ### 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation
 
-<a href="../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-handwritten.svg" alt="Handwritten: 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-handwritten.svg" alt="Handwritten: 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-diagram.svg" alt="Diagram: 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-diagram.svg" alt="Diagram: 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-sticky.svg" alt="Sticky Note: 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/14-openapicustomizer-programmatic-spec-manipulation-sticky.svg" alt="Sticky Note: 14. OpenApiCustomizer ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Programmatic Spec Manipulation" width="30%">
 </a>
 
 
@@ -1606,14 +1606,14 @@ public class OpenApiCustomizerConfig {
 
 ### 15. Hiding Endpoints
 
-<a href="../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-handwritten.svg" alt="Handwritten: 15. Hiding Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-handwritten.svg" alt="Handwritten: 15. Hiding Endpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-diagram.svg" alt="Diagram: 15. Hiding Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-diagram.svg" alt="Diagram: 15. Hiding Endpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-sticky.svg" alt="Sticky Note: 15. Hiding Endpoints" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/15-hiding-endpoints-sticky.svg" alt="Sticky Note: 15. Hiding Endpoints" width="30%">
 </a>
 
 
@@ -1664,14 +1664,14 @@ public class HiddenEndpointsController {
 
 ### 16. Swagger UI Customization
 
-<a href="../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-handwritten.svg" alt="Handwritten: 16. Swagger UI Customization" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-handwritten.svg" alt="Handwritten: 16. Swagger UI Customization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-diagram.svg" alt="Diagram: 16. Swagger UI Customization" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-diagram.svg" alt="Diagram: 16. Swagger UI Customization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-sticky.svg" alt="Sticky Note: 16. Swagger UI Customization" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/16-swagger-ui-customization-sticky.svg" alt="Sticky Note: 16. Swagger UI Customization" width="30%">
 </a>
 
 
@@ -1788,14 +1788,14 @@ public class SwaggerUiBrandingConfig {
 
 ### 17. Complete Working Example
 
-<a href="../../assets/images/diagrams/java/17-openapi/17-complete-working-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/17-complete-working-example-handwritten.svg" alt="Handwritten: 17. Complete Working Example" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/17-complete-working-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/17-complete-working-example-handwritten.svg" alt="Handwritten: 17. Complete Working Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/17-complete-working-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/17-complete-working-example-diagram.svg" alt="Diagram: 17. Complete Working Example" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/17-complete-working-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/17-complete-working-example-diagram.svg" alt="Diagram: 17. Complete Working Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/17-complete-working-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/17-complete-working-example-sticky.svg" alt="Sticky Note: 17. Complete Working Example" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/17-complete-working-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/17-complete-working-example-sticky.svg" alt="Sticky Note: 17. Complete Working Example" width="30%">
 </a>
 
 
@@ -1880,14 +1880,14 @@ public class PetClinicApplication {
 
 ### 18. Testing the OpenAPI Spec
 
-<a href="../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-handwritten.svg" alt="Handwritten: 18. Testing the OpenAPI Spec" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-handwritten.svg" alt="Handwritten: 18. Testing the OpenAPI Spec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-diagram.svg" alt="Diagram: 18. Testing the OpenAPI Spec" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-diagram.svg" alt="Diagram: 18. Testing the OpenAPI Spec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-sticky.svg" alt="Sticky Note: 18. Testing the OpenAPI Spec" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/18-testing-the-openapi-spec-sticky.svg" alt="Sticky Note: 18. Testing the OpenAPI Spec" width="30%">
 </a>
 
 
@@ -1990,14 +1990,14 @@ class OpenApiSpecTest {
 
 ### 19. Application Properties Reference
 
-<a href="../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-handwritten.svg" alt="Handwritten: 19. Application Properties Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-handwritten.svg" alt="Handwritten: 19. Application Properties Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-diagram.svg" alt="Diagram: 19. Application Properties Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-diagram.svg" alt="Diagram: 19. Application Properties Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-sticky.svg" alt="Sticky Note: 19. Application Properties Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/17-openapi/19-application-properties-reference-sticky.svg" alt="Sticky Note: 19. Application Properties Reference" width="30%">
 </a>
 
 

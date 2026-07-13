@@ -52,14 +52,14 @@
 
 ### 18.1.1 Why IPv6? The Address Exhaustion Problem
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-handwritten.svg" alt="Handwritten: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-handwritten.svg" alt="Handwritten: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-diagram.svg" alt="Diagram: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-diagram.svg" alt="Diagram: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-sticky.svg" alt="Sticky Note: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-sticky.svg" alt="Sticky Note: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
 </a>
 
 
@@ -75,14 +75,14 @@ IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated 
 
 ### 18.1.2 IPv6 Packet Format
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-handwritten.svg" alt="Handwritten: 18.1.2 IPv6 Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-handwritten.svg" alt="Handwritten: 18.1.2 IPv6 Packet Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-diagram.svg" alt="Diagram: 18.1.2 IPv6 Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-diagram.svg" alt="Diagram: 18.1.2 IPv6 Packet Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-sticky.svg" alt="Sticky Note: 18.1.2 IPv6 Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-sticky.svg" alt="Sticky Note: 18.1.2 IPv6 Packet Format" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated 
 
 ### 18.1.3 IPv6 Address Types
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-handwritten.svg" alt="Handwritten: 18.1.3 IPv6 Address Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-handwritten.svg" alt="Handwritten: 18.1.3 IPv6 Address Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-diagram.svg" alt="Diagram: 18.1.3 IPv6 Address Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-diagram.svg" alt="Diagram: 18.1.3 IPv6 Address Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-sticky.svg" alt="Sticky Note: 18.1.3 IPv6 Address Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-sticky.svg" alt="Sticky Note: 18.1.3 IPv6 Address Types" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated 
 
 ### 18.1.4 IPv6 Transition Mechanisms
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-handwritten.svg" alt="Handwritten: 18.1.4 IPv6 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-handwritten.svg" alt="Handwritten: 18.1.4 IPv6 Transition Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-diagram.svg" alt="Diagram: 18.1.4 IPv6 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-diagram.svg" alt="Diagram: 18.1.4 IPv6 Transition Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-sticky.svg" alt="Sticky Note: 18.1.4 IPv6 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-sticky.svg" alt="Sticky Note: 18.1.4 IPv6 Transition Mechanisms" width="30%">
 </a>
 
 
@@ -209,14 +209,14 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ### 18.1.5 IPv6 Transition Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-handwritten.svg" alt="Handwritten: 18.1.5 IPv6 Transition Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-handwritten.svg" alt="Handwritten: 18.1.5 IPv6 Transition Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-diagram.svg" alt="Diagram: 18.1.5 IPv6 Transition Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-diagram.svg" alt="Diagram: 18.1.5 IPv6 Transition Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-sticky.svg" alt="Sticky Note: 18.1.5 IPv6 Transition Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-sticky.svg" alt="Sticky Note: 18.1.5 IPv6 Transition Comparison Table" width="30%">
 </a>
 
 
@@ -235,14 +235,14 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ### 18.1.6 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-handwritten.svg" alt="Handwritten: 18.1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-handwritten.svg" alt="Handwritten: 18.1.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-diagram.svg" alt="Diagram: 18.1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-diagram.svg" alt="Diagram: 18.1.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-sticky.svg" alt="Sticky Note: 18.1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-sticky.svg" alt="Sticky Note: 18.1.6 Edge Cases" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ### 18.1.7 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-handwritten.svg" alt="Handwritten: 18.1.7 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-handwritten.svg" alt="Handwritten: 18.1.7 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-diagram.svg" alt="Diagram: 18.1.7 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-diagram.svg" alt="Diagram: 18.1.7 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-sticky.svg" alt="Sticky Note: 18.1.7 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-sticky.svg" alt="Sticky Note: 18.1.7 Complexity Analysis" width="30%">
 </a>
 
 
@@ -276,14 +276,14 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ### 18.1.8 A&D Table: IPv6 Transition
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-handwritten.svg" alt="Handwritten: 18.1.8 A&D Table: IPv6 Transition" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-handwritten.svg" alt="Handwritten: 18.1.8 A&D Table: IPv6 Transition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-diagram.svg" alt="Diagram: 18.1.8 A&D Table: IPv6 Transition" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-diagram.svg" alt="Diagram: 18.1.8 A&D Table: IPv6 Transition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-sticky.svg" alt="Sticky Note: 18.1.8 A&D Table: IPv6 Transition" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-sticky.svg" alt="Sticky Note: 18.1.8 A&D Table: IPv6 Transition" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ The Internet of Things (IoT) connects billions of constrained devices → sensor
 
 ### 18.2.1 6LoWPAN
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-handwritten.svg" alt="Handwritten: 18.2.1 6LoWPAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-handwritten.svg" alt="Handwritten: 18.2.1 6LoWPAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-diagram.svg" alt="Diagram: 18.2.1 6LoWPAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-diagram.svg" alt="Diagram: 18.2.1 6LoWPAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-sticky.svg" alt="Sticky Note: 18.2.1 6LoWPAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-sticky.svg" alt="Sticky Note: 18.2.1 6LoWPAN" width="30%">
 </a>
 
 
@@ -436,14 +436,14 @@ FUNCTION decompress_ipv6(compressed, context):
 
 ### 18.2.2 MQTT → Message Queuing Telemetry Transport
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-handwritten.svg" alt="Handwritten: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-handwritten.svg" alt="Handwritten: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-diagram.svg" alt="Diagram: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-diagram.svg" alt="Diagram: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-sticky.svg" alt="Sticky Note: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-sticky.svg" alt="Sticky Note: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
 </a>
 
 
@@ -590,14 +590,14 @@ client.disconnect()
 
 ### 18.2.3 CoAP → Constrained Application Protocol
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-handwritten.svg" alt="Handwritten: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-handwritten.svg" alt="Handwritten: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-diagram.svg" alt="Diagram: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-diagram.svg" alt="Diagram: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-sticky.svg" alt="Sticky Note: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-sticky.svg" alt="Sticky Note: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
 </a>
 
 
@@ -713,14 +713,14 @@ asyncio.run(observe_temperature())
 
 ### 18.2.4 MQTT vs CoAP vs HTTP Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-handwritten.svg" alt="Handwritten: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-handwritten.svg" alt="Handwritten: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-diagram.svg" alt="Diagram: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-diagram.svg" alt="Diagram: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-sticky.svg" alt="Sticky Note: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-sticky.svg" alt="Sticky Note: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
 </a>
 
 
@@ -740,14 +740,14 @@ asyncio.run(observe_temperature())
 
 ### 18.2.5 LoRaWAN
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-handwritten.svg" alt="Handwritten: 18.2.5 LoRaWAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-handwritten.svg" alt="Handwritten: 18.2.5 LoRaWAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-diagram.svg" alt="Diagram: 18.2.5 LoRaWAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-diagram.svg" alt="Diagram: 18.2.5 LoRaWAN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-sticky.svg" alt="Sticky Note: 18.2.5 LoRaWAN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-sticky.svg" alt="Sticky Note: 18.2.5 LoRaWAN" width="30%">
 </a>
 
 
@@ -831,14 +831,14 @@ sensor.simulate(10);
 
 ### 18.3.1 4G LTE (Long-Term Evolution)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-handwritten.svg" alt="Handwritten: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-handwritten.svg" alt="Handwritten: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-diagram.svg" alt="Diagram: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-diagram.svg" alt="Diagram: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-sticky.svg" alt="Sticky Note: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-sticky.svg" alt="Sticky Note: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
 </a>
 
 
@@ -855,14 +855,14 @@ sensor.simulate(10);
 
 ### 18.3.2 5G Core (5GC) → Service-Based Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-handwritten.svg" alt="Handwritten: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-handwritten.svg" alt="Handwritten: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-diagram.svg" alt="Diagram: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-diagram.svg" alt="Diagram: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-sticky.svg" alt="Sticky Note: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-sticky.svg" alt="Sticky Note: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
 </a>
 
 
@@ -896,14 +896,14 @@ The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Networ
 
 ### 18.3.3 4G vs 5G vs 6G Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-handwritten.svg" alt="Handwritten: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-handwritten.svg" alt="Handwritten: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-diagram.svg" alt="Diagram: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-diagram.svg" alt="Diagram: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-sticky.svg" alt="Sticky Note: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-sticky.svg" alt="Sticky Note: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
 </a>
 
 
@@ -926,14 +926,14 @@ The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Networ
 
 ### 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-handwritten.svg" alt="Handwritten: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-handwritten.svg" alt="Handwritten: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-diagram.svg" alt="Diagram: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-diagram.svg" alt="Diagram: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-sticky.svg" alt="Sticky Note: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-sticky.svg" alt="Sticky Note: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
 </a>
 
 
@@ -956,14 +956,14 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 
 ### 18.4.1 Key Features
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-handwritten.svg" alt="Handwritten: 18.4.1 Key Features" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-handwritten.svg" alt="Handwritten: 18.4.1 Key Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-diagram.svg" alt="Diagram: 18.4.1 Key Features" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-diagram.svg" alt="Diagram: 18.4.1 Key Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-sticky.svg" alt="Sticky Note: 18.4.1 Key Features" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-sticky.svg" alt="Sticky Note: 18.4.1 Key Features" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 
 ### 18.4.2 QUIC Packet Format
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-handwritten.svg" alt="Handwritten: 18.4.2 QUIC Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-handwritten.svg" alt="Handwritten: 18.4.2 QUIC Packet Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-diagram.svg" alt="Diagram: 18.4.2 QUIC Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-diagram.svg" alt="Diagram: 18.4.2 QUIC Packet Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-sticky.svg" alt="Sticky Note: 18.4.2 QUIC Packet Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-sticky.svg" alt="Sticky Note: 18.4.2 QUIC Packet Format" width="30%">
 </a>
 
 
@@ -998,14 +998,14 @@ Long-header packets establish connections; short-header packets carry data. The 
 
 ### 18.4.3 QUIC Streams
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-handwritten.svg" alt="Handwritten: 18.4.3 QUIC Streams" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-handwritten.svg" alt="Handwritten: 18.4.3 QUIC Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-diagram.svg" alt="Diagram: 18.4.3 QUIC Streams" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-diagram.svg" alt="Diagram: 18.4.3 QUIC Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-sticky.svg" alt="Sticky Note: 18.4.3 QUIC Streams" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-sticky.svg" alt="Sticky Note: 18.4.3 QUIC Streams" width="30%">
 </a>
 
 
@@ -1050,14 +1050,14 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.1 Orbital Types for Satellite Internet
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-handwritten.svg" alt="Handwritten: 18.6.1 Orbital Types for Satellite Internet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-handwritten.svg" alt="Handwritten: 18.6.1 Orbital Types for Satellite Internet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-diagram.svg" alt="Diagram: 18.6.1 Orbital Types for Satellite Internet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-diagram.svg" alt="Diagram: 18.6.1 Orbital Types for Satellite Internet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-sticky.svg" alt="Sticky Note: 18.6.1 Orbital Types for Satellite Internet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-sticky.svg" alt="Sticky Note: 18.6.1 Orbital Types for Satellite Internet" width="30%">
 </a>
 
 
@@ -1070,14 +1070,14 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.2 Starlink Architecture
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-handwritten.svg" alt="Handwritten: 18.6.2 Starlink Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-handwritten.svg" alt="Handwritten: 18.6.2 Starlink Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-diagram.svg" alt="Diagram: 18.6.2 Starlink Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-diagram.svg" alt="Diagram: 18.6.2 Starlink Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-sticky.svg" alt="Sticky Note: 18.6.2 Starlink Architecture" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-sticky.svg" alt="Sticky Note: 18.6.2 Starlink Architecture" width="30%">
 </a>
 
 
@@ -1101,14 +1101,14 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.3 Satellite vs Terrestrial Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-handwritten.svg" alt="Handwritten: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-handwritten.svg" alt="Handwritten: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-diagram.svg" alt="Diagram: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-diagram.svg" alt="Diagram: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-sticky.svg" alt="Sticky Note: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-sticky.svg" alt="Sticky Note: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
 </a>
 
 
@@ -1126,14 +1126,14 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.4 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-handwritten.svg" alt="Handwritten: 18.6.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-handwritten.svg" alt="Handwritten: 18.6.4 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-diagram.svg" alt="Diagram: 18.6.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-diagram.svg" alt="Diagram: 18.6.4 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-sticky.svg" alt="Sticky Note: 18.6.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-sticky.svg" alt="Sticky Note: 18.6.4 Edge Cases" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 18.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 18.6.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-diagram.svg" alt="Diagram: 18.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-diagram.svg" alt="Diagram: 18.6.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 18.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 18.6.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1174,14 +1174,14 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.7.1 Ansible for Network Automation
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-handwritten.svg" alt="Handwritten: 18.7.1 Ansible for Network Automation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-handwritten.svg" alt="Handwritten: 18.7.1 Ansible for Network Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-diagram.svg" alt="Diagram: 18.7.1 Ansible for Network Automation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-diagram.svg" alt="Diagram: 18.7.1 Ansible for Network Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-sticky.svg" alt="Sticky Note: 18.7.1 Ansible for Network Automation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-sticky.svg" alt="Sticky Note: 18.7.1 Ansible for Network Automation" width="30%">
 </a>
 
 
@@ -1282,14 +1282,14 @@ print(json.dumps(results, indent=2))
 
 ### 18.7.2 NETCONF/YANG
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-handwritten.svg" alt="Handwritten: 18.7.2 NETCONF/YANG" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-handwritten.svg" alt="Handwritten: 18.7.2 NETCONF/YANG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-diagram.svg" alt="Diagram: 18.7.2 NETCONF/YANG" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-diagram.svg" alt="Diagram: 18.7.2 NETCONF/YANG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-sticky.svg" alt="Sticky Note: 18.7.2 NETCONF/YANG" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-sticky.svg" alt="Sticky Note: 18.7.2 NETCONF/YANG" width="30%">
 </a>
 
 
@@ -1375,14 +1375,14 @@ with manager.connect(**device) as m:
 
 ### 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-handwritten.svg" alt="Handwritten: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-handwritten.svg" alt="Handwritten: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-diagram.svg" alt="Diagram: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-diagram.svg" alt="Diagram: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-sticky.svg" alt="Sticky Note: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-sticky.svg" alt="Sticky Note: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
 </a>
 
 
@@ -1401,14 +1401,14 @@ with manager.connect(**device) as m:
 
 ### 18.7.4 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-handwritten.svg" alt="Handwritten: 18.7.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-handwritten.svg" alt="Handwritten: 18.7.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-diagram.svg" alt="Diagram: 18.7.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-diagram.svg" alt="Diagram: 18.7.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-sticky.svg" alt="Sticky Note: 18.7.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-sticky.svg" alt="Sticky Note: 18.7.4 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1423,14 +1423,14 @@ with manager.connect(**device) as m:
 
 ### 18.7.5 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-handwritten.svg" alt="Handwritten: 18.7.5 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-handwritten.svg" alt="Handwritten: 18.7.5 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-diagram.svg" alt="Diagram: 18.7.5 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-diagram.svg" alt="Diagram: 18.7.5 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-sticky.svg" alt="Sticky Note: 18.7.5 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-sticky.svg" alt="Sticky Note: 18.7.5 Edge Cases" width="30%">
 </a>
 
 
@@ -1448,14 +1448,14 @@ with manager.connect(**device) as m:
 
 ### 18.8.1 Core Principles (NIST SP 800-207)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-handwritten.svg" alt="Handwritten: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-handwritten.svg" alt="Handwritten: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-diagram.svg" alt="Diagram: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-diagram.svg" alt="Diagram: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-sticky.svg" alt="Sticky Note: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-sticky.svg" alt="Sticky Note: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
 </a>
 
 
@@ -1483,14 +1483,14 @@ with manager.connect(**device) as m:
 
 ### 18.8.2 ZTNA (Zero Trust Network Access)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-handwritten.svg" alt="Handwritten: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-handwritten.svg" alt="Handwritten: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-diagram.svg" alt="Diagram: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-diagram.svg" alt="Diagram: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-sticky.svg" alt="Sticky Note: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-sticky.svg" alt="Sticky Note: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
 </a>
 
 
@@ -1510,14 +1510,14 @@ with manager.connect(**device) as m:
 
 ### 18.8.3 SASE (Secure Access Service Edge)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-handwritten.svg" alt="Handwritten: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-handwritten.svg" alt="Handwritten: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-diagram.svg" alt="Diagram: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-diagram.svg" alt="Diagram: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-sticky.svg" alt="Sticky Note: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-sticky.svg" alt="Sticky Note: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
 </a>
 
 
@@ -1527,14 +1527,14 @@ with manager.connect(**device) as m:
 
 ### 18.8.4 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-handwritten.svg" alt="Handwritten: 18.8.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-handwritten.svg" alt="Handwritten: 18.8.4 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-diagram.svg" alt="Diagram: 18.8.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-diagram.svg" alt="Diagram: 18.8.4 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-sticky.svg" alt="Sticky Note: 18.8.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-sticky.svg" alt="Sticky Note: 18.8.4 Edge Cases" width="30%">
 </a>
 
 
@@ -1552,14 +1552,14 @@ with manager.connect(**device) as m:
 
 ### 18.9.1 Application Areas
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-handwritten.svg" alt="Handwritten: 18.9.1 Application Areas" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-handwritten.svg" alt="Handwritten: 18.9.1 Application Areas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-diagram.svg" alt="Diagram: 18.9.1 Application Areas" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-diagram.svg" alt="Diagram: 18.9.1 Application Areas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-sticky.svg" alt="Sticky Note: 18.9.1 Application Areas" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-sticky.svg" alt="Sticky Note: 18.9.1 Application Areas" width="30%">
 </a>
 
 
@@ -1575,14 +1575,14 @@ with manager.connect(**device) as m:
 
 ### 18.9.2 AI/ML in Networking → Implementation
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-handwritten.svg" alt="Handwritten: 18.9.2 AI/ML in Networking → Implementation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-handwritten.svg" alt="Handwritten: 18.9.2 AI/ML in Networking → Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-diagram.svg" alt="Diagram: 18.9.2 AI/ML in Networking → Implementation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-diagram.svg" alt="Diagram: 18.9.2 AI/ML in Networking → Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-sticky.svg" alt="Sticky Note: 18.9.2 AI/ML in Networking → Implementation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-sticky.svg" alt="Sticky Note: 18.9.2 AI/ML in Networking → Implementation" width="30%">
 </a>
 
 
@@ -1647,14 +1647,14 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 
 ### 18.9.3 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-handwritten.svg" alt="Handwritten: 18.9.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-handwritten.svg" alt="Handwritten: 18.9.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-diagram.svg" alt="Diagram: 18.9.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-diagram.svg" alt="Diagram: 18.9.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-sticky.svg" alt="Sticky Note: 18.9.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-sticky.svg" alt="Sticky Note: 18.9.3 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1669,14 +1669,14 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 
 ### 18.9.4 A&D Table: AI/ML in Networking
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-handwritten.svg" alt="Handwritten: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-handwritten.svg" alt="Handwritten: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-diagram.svg" alt="Diagram: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-diagram.svg" alt="Diagram: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-sticky.svg" alt="Sticky Note: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-sticky.svg" alt="Sticky Note: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
 </a>
 
 
@@ -1696,14 +1696,14 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 
 ### 18.10.1 Quantum Key Distribution (QKD)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-handwritten.svg" alt="Handwritten: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-handwritten.svg" alt="Handwritten: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-diagram.svg" alt="Diagram: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-diagram.svg" alt="Diagram: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-sticky.svg" alt="Sticky Note: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-sticky.svg" alt="Sticky Note: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
 </a>
 
 
@@ -1757,14 +1757,14 @@ BOB:
 
 ### 18.10.2 Quantum Repeaters
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-handwritten.svg" alt="Handwritten: 18.10.2 Quantum Repeaters" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-handwritten.svg" alt="Handwritten: 18.10.2 Quantum Repeaters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-diagram.svg" alt="Diagram: 18.10.2 Quantum Repeaters" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-diagram.svg" alt="Diagram: 18.10.2 Quantum Repeaters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-sticky.svg" alt="Sticky Note: 18.10.2 Quantum Repeaters" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-sticky.svg" alt="Sticky Note: 18.10.2 Quantum Repeaters" width="30%">
 </a>
 
 
@@ -1778,14 +1778,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.10.3 Quantum Networking Feasibility
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-handwritten.svg" alt="Handwritten: 18.10.3 Quantum Networking Feasibility" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-handwritten.svg" alt="Handwritten: 18.10.3 Quantum Networking Feasibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-diagram.svg" alt="Diagram: 18.10.3 Quantum Networking Feasibility" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-diagram.svg" alt="Diagram: 18.10.3 Quantum Networking Feasibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-sticky.svg" alt="Sticky Note: 18.10.3 Quantum Networking Feasibility" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-sticky.svg" alt="Sticky Note: 18.10.3 Quantum Networking Feasibility" width="30%">
 </a>
 
 
@@ -1800,14 +1800,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.10.4 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-handwritten.svg" alt="Handwritten: 18.10.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-handwritten.svg" alt="Handwritten: 18.10.4 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-diagram.svg" alt="Diagram: 18.10.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-diagram.svg" alt="Diagram: 18.10.4 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-sticky.svg" alt="Sticky Note: 18.10.4 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-sticky.svg" alt="Sticky Note: 18.10.4 Edge Cases" width="30%">
 </a>
 
 
@@ -1824,14 +1824,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.1 Edge Tiers
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-handwritten.svg" alt="Handwritten: 18.11.1 Edge Tiers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-handwritten.svg" alt="Handwritten: 18.11.1 Edge Tiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-diagram.svg" alt="Diagram: 18.11.1 Edge Tiers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-diagram.svg" alt="Diagram: 18.11.1 Edge Tiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-sticky.svg" alt="Sticky Note: 18.11.1 Edge Tiers" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-sticky.svg" alt="Sticky Note: 18.11.1 Edge Tiers" width="30%">
 </a>
 
 
@@ -1844,14 +1844,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.2 Use Cases
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-handwritten.svg" alt="Handwritten: 18.11.2 Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-handwritten.svg" alt="Handwritten: 18.11.2 Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-diagram.svg" alt="Diagram: 18.11.2 Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-diagram.svg" alt="Diagram: 18.11.2 Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-sticky.svg" alt="Sticky Note: 18.11.2 Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-sticky.svg" alt="Sticky Note: 18.11.2 Use Cases" width="30%">
 </a>
 
 
@@ -1865,14 +1865,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.3 Edge Computing Architecture → Numbered Steps
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-handwritten.svg" alt="Handwritten: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-handwritten.svg" alt="Handwritten: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-diagram.svg" alt="Diagram: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-diagram.svg" alt="Diagram: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-sticky.svg" alt="Sticky Note: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-sticky.svg" alt="Sticky Note: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
 </a>
 
 
@@ -1887,14 +1887,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.4 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-handwritten.svg" alt="Handwritten: 18.11.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-handwritten.svg" alt="Handwritten: 18.11.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-diagram.svg" alt="Diagram: 18.11.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-diagram.svg" alt="Diagram: 18.11.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-sticky.svg" alt="Sticky Note: 18.11.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-sticky.svg" alt="Sticky Note: 18.11.4 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1909,14 +1909,14 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.5 A&D Table: Edge Computing
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-handwritten.svg" alt="Handwritten: 18.11.5 A&D Table: Edge Computing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-handwritten.svg" alt="Handwritten: 18.11.5 A&D Table: Edge Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-diagram.svg" alt="Diagram: 18.11.5 A&D Table: Edge Computing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-diagram.svg" alt="Diagram: 18.11.5 A&D Table: Edge Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-sticky.svg" alt="Sticky Note: 18.11.5 A&D Table: Edge Computing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-sticky.svg" alt="Sticky Note: 18.11.5 A&D Table: Edge Computing" width="30%">
 </a>
 
 
@@ -2008,14 +2008,14 @@ const edge = new EdgeNodeProcessor({
 
 ### 18.12.1 eBPF (Extended Berkeley Packet Filter)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-handwritten.svg" alt="Handwritten: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-handwritten.svg" alt="Handwritten: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-diagram.svg" alt="Diagram: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-diagram.svg" alt="Diagram: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-sticky.svg" alt="Sticky Note: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-sticky.svg" alt="Sticky Note: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
 </a>
 
 
@@ -2089,14 +2089,14 @@ except KeyboardInterrupt:
 
 ### 18.12.2 OpenTelemetry
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-handwritten.svg" alt="Handwritten: 18.12.2 OpenTelemetry" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-handwritten.svg" alt="Handwritten: 18.12.2 OpenTelemetry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-diagram.svg" alt="Diagram: 18.12.2 OpenTelemetry" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-diagram.svg" alt="Diagram: 18.12.2 OpenTelemetry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-sticky.svg" alt="Sticky Note: 18.12.2 OpenTelemetry" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-sticky.svg" alt="Sticky Note: 18.12.2 OpenTelemetry" width="30%">
 </a>
 
 
@@ -2145,14 +2145,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.12.3 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-handwritten.svg" alt="Handwritten: 18.12.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-handwritten.svg" alt="Handwritten: 18.12.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-diagram.svg" alt="Diagram: 18.12.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-diagram.svg" alt="Diagram: 18.12.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-sticky.svg" alt="Sticky Note: 18.12.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-sticky.svg" alt="Sticky Note: 18.12.3 Complexity Analysis" width="30%">
 </a>
 
 
@@ -2172,14 +2172,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.1 IPv6 Transition Mechanisms Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-handwritten.svg" alt="Handwritten: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-handwritten.svg" alt="Handwritten: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-diagram.svg" alt="Diagram: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-diagram.svg" alt="Diagram: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-sticky.svg" alt="Sticky Note: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-sticky.svg" alt="Sticky Note: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
 </a>
 
 
@@ -2198,14 +2198,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.2 MQTT vs CoAP vs HTTP Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-handwritten.svg" alt="Handwritten: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-handwritten.svg" alt="Handwritten: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-diagram.svg" alt="Diagram: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-diagram.svg" alt="Diagram: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-sticky.svg" alt="Sticky Note: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-sticky.svg" alt="Sticky Note: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
 </a>
 
 
@@ -2226,14 +2226,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.3 4G vs 5G vs 6G Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-handwritten.svg" alt="Handwritten: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-handwritten.svg" alt="Handwritten: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-diagram.svg" alt="Diagram: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-diagram.svg" alt="Diagram: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-sticky.svg" alt="Sticky Note: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-sticky.svg" alt="Sticky Note: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
 </a>
 
 
@@ -2241,14 +2241,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.4 Satellite vs Terrestrial Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-handwritten.svg" alt="Handwritten: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-handwritten.svg" alt="Handwritten: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-diagram.svg" alt="Diagram: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-diagram.svg" alt="Diagram: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-sticky.svg" alt="Sticky Note: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-sticky.svg" alt="Sticky Note: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
 </a>
 
 
@@ -2256,14 +2256,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-handwritten.svg" alt="Handwritten: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-handwritten.svg" alt="Handwritten: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-diagram.svg" alt="Diagram: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-diagram.svg" alt="Diagram: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-sticky.svg" alt="Sticky Note: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-sticky.svg" alt="Sticky Note: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
 </a>
 
 
@@ -2271,14 +2271,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.6 Zero Trust vs Perimeter Security Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-handwritten.svg" alt="Handwritten: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-handwritten.svg" alt="Handwritten: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-diagram.svg" alt="Diagram: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-diagram.svg" alt="Diagram: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-sticky.svg" alt="Sticky Note: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-sticky.svg" alt="Sticky Note: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
 </a>
 
 
@@ -2290,14 +2290,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q1: What are the main barriers to IPv6 adoption?
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-handwritten.svg" alt="Handwritten: What are the main barriers to IPv6 adoption?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-handwritten.svg" alt="Handwritten: What are the main barriers to IPv6 adoption?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-diagram.svg" alt="Diagram: What are the main barriers to IPv6 adoption?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-diagram.svg" alt="Diagram: What are the main barriers to IPv6 adoption?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-sticky.svg" alt="Sticky Note: What are the main barriers to IPv6 adoption?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-sticky.svg" alt="Sticky Note: What are the main barriers to IPv6 adoption?" width="30%">
 </a>
 
 
@@ -2313,14 +2313,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q2: 5G vs Wi-Fi 6 → when would you use each?
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-handwritten.svg" alt="Handwritten: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-handwritten.svg" alt="Handwritten: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-diagram.svg" alt="Diagram: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-diagram.svg" alt="Diagram: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-sticky.svg" alt="Sticky Note: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-sticky.svg" alt="Sticky Note: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
 </a>
 
 
@@ -2328,14 +2328,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q3: Is quantum networking feasible for the internet today?
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-handwritten.svg" alt="Handwritten: Is quantum networking feasible for the internet today?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-handwritten.svg" alt="Handwritten: Is quantum networking feasible for the internet today?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-diagram.svg" alt="Diagram: Is quantum networking feasible for the internet today?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-diagram.svg" alt="Diagram: Is quantum networking feasible for the internet today?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-sticky.svg" alt="Sticky Note: Is quantum networking feasible for the internet today?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-sticky.svg" alt="Sticky Note: Is quantum networking feasible for the internet today?" width="30%">
 </a>
 
 
@@ -2343,14 +2343,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q4: How does AI improve network management systems (NMS)?
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-handwritten.svg" alt="Handwritten: How does AI improve network management systems (NMS)?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-handwritten.svg" alt="Handwritten: How does AI improve network management systems (NMS)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-diagram.svg" alt="Diagram: How does AI improve network management systems (NMS)?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-diagram.svg" alt="Diagram: How does AI improve network management systems (NMS)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-sticky.svg" alt="Sticky Note: How does AI improve network management systems (NMS)?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-sticky.svg" alt="Sticky Note: How does AI improve network management systems (NMS)?" width="30%">
 </a>
 
 
@@ -2365,14 +2365,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q5: Explain the difference between SDN, NFV, and Network Automation.
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-handwritten.svg" alt="Handwritten: Explain the difference between SDN, NFV, and Network Automation." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-handwritten.svg" alt="Handwritten: Explain the difference between SDN, NFV, and Network Automation." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-diagram.svg" alt="Diagram: Explain the difference between SDN, NFV, and Network Automation." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-diagram.svg" alt="Diagram: Explain the difference between SDN, NFV, and Network Automation." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-sticky.svg" alt="Sticky Note: Explain the difference between SDN, NFV, and Network Automation." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-sticky.svg" alt="Sticky Note: Explain the difference between SDN, NFV, and Network Automation." width="30%">
 </a>
 
 
@@ -2380,14 +2380,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q6: What is the role of QUIC connection migration in mobile networks?
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-handwritten.svg" alt="Handwritten: What is the role of QUIC connection migration in mobile networks?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-handwritten.svg" alt="Handwritten: What is the role of QUIC connection migration in mobile networks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-diagram.svg" alt="Diagram: What is the role of QUIC connection migration in mobile networks?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-diagram.svg" alt="Diagram: What is the role of QUIC connection migration in mobile networks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-sticky.svg" alt="Sticky Note: What is the role of QUIC connection migration in mobile networks?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-sticky.svg" alt="Sticky Note: What is the role of QUIC connection migration in mobile networks?" width="30%">
 </a>
 
 
@@ -2395,14 +2395,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q7: Edge vs Cloud → how do you decide where to process data?
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-handwritten.svg" alt="Handwritten: Edge vs Cloud → how do you decide where to process data?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-handwritten.svg" alt="Handwritten: Edge vs Cloud → how do you decide where to process data?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-diagram.svg" alt="Diagram: Edge vs Cloud → how do you decide where to process data?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-diagram.svg" alt="Diagram: Edge vs Cloud → how do you decide where to process data?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-sticky.svg" alt="Sticky Note: Edge vs Cloud → how do you decide where to process data?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-sticky.svg" alt="Sticky Note: Edge vs Cloud → how do you decide where to process data?" width="30%">
 </a>
 
 
@@ -2419,14 +2419,14 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Starlink (SpaceX)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-handwritten.svg" alt="Handwritten: Starlink (SpaceX)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-handwritten.svg" alt="Handwritten: Starlink (SpaceX)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-diagram.svg" alt="Diagram: Starlink (SpaceX)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-diagram.svg" alt="Diagram: Starlink (SpaceX)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-sticky.svg" alt="Sticky Note: Starlink (SpaceX)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-sticky.svg" alt="Sticky Note: Starlink (SpaceX)" width="30%">
 </a>
 
 
@@ -2440,14 +2440,14 @@ Starlink is the world's largest LEO satellite constellation (~5,500 satellites a
 
 ### AWS Wavelength (5G Edge Computing)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-handwritten.svg" alt="Handwritten: AWS Wavelength (5G Edge Computing)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-handwritten.svg" alt="Handwritten: AWS Wavelength (5G Edge Computing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-diagram.svg" alt="Diagram: AWS Wavelength (5G Edge Computing)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-diagram.svg" alt="Diagram: AWS Wavelength (5G Edge Computing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-sticky.svg" alt="Sticky Note: AWS Wavelength (5G Edge Computing)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-sticky.svg" alt="Sticky Note: AWS Wavelength (5G Edge Computing)" width="30%">
 </a>
 
 
@@ -2458,14 +2458,14 @@ AWS Wavelength embeds AWS compute (EC2, EBS) at 5G base station sites, providing
 
 ### Google B4 SDN (WAN Traffic Engineering)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-handwritten.svg" alt="Handwritten: Google B4 SDN (WAN Traffic Engineering)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-handwritten.svg" alt="Handwritten: Google B4 SDN (WAN Traffic Engineering)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-diagram.svg" alt="Diagram: Google B4 SDN (WAN Traffic Engineering)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-diagram.svg" alt="Diagram: Google B4 SDN (WAN Traffic Engineering)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-sticky.svg" alt="Sticky Note: Google B4 SDN (WAN Traffic Engineering)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-sticky.svg" alt="Sticky Note: Google B4 SDN (WAN Traffic Engineering)" width="30%">
 </a>
 
 
@@ -2477,14 +2477,14 @@ Google B4 is the private WAN connecting Google data centers worldwide. Key innov
 
 ### Cisco SD-Access (Intent-Based Networking)
 
-<a href="../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-handwritten.svg" alt="Handwritten: Cisco SD-Access (Intent-Based Networking)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-handwritten.svg" alt="Handwritten: Cisco SD-Access (Intent-Based Networking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-diagram.svg" alt="Diagram: Cisco SD-Access (Intent-Based Networking)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-diagram.svg" alt="Diagram: Cisco SD-Access (Intent-Based Networking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-sticky.svg" alt="Sticky Note: Cisco SD-Access (Intent-Based Networking)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-sticky.svg" alt="Sticky Note: Cisco SD-Access (Intent-Based Networking)" width="30%">
 </a>
 
 

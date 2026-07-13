@@ -57,14 +57,14 @@ flowchart LR
 
 ### 14.1 Divisibility
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-handwritten.svg" alt="Handwritten: 14.1 Divisibility" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-handwritten.svg" alt="Handwritten: 14.1 Divisibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-diagram.svg" alt="Diagram: 14.1 Divisibility" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-diagram.svg" alt="Diagram: 14.1 Divisibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-sticky.svg" alt="Sticky Note: 14.1 Divisibility" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-1-divisibility-sticky.svg" alt="Sticky Note: 14.1 Divisibility" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ For integers $a$ and $b$ with $a \neq 0$, $a$ **divides** $b$ (written $a \mid b
 
 ### 14.2 Division Algorithm
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-handwritten.svg" alt="Handwritten: 14.2 Division Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-handwritten.svg" alt="Handwritten: 14.2 Division Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-diagram.svg" alt="Diagram: 14.2 Division Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-diagram.svg" alt="Diagram: 14.2 Division Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-sticky.svg" alt="Sticky Note: 14.2 Division Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-2-division-algorithm-sticky.svg" alt="Sticky Note: 14.2 Division Algorithm" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ We write $r = a \bmod m$ and $q = \lfloor a/m \rfloor$.
 
 ### 14.3 GCD and LCM
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-handwritten.svg" alt="Handwritten: 14.3 GCD and LCM" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-handwritten.svg" alt="Handwritten: 14.3 GCD and LCM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-diagram.svg" alt="Diagram: 14.3 GCD and LCM" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-diagram.svg" alt="Diagram: 14.3 GCD and LCM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-sticky.svg" alt="Sticky Note: 14.3 GCD and LCM" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-3-gcd-and-lcm-sticky.svg" alt="Sticky Note: 14.3 GCD and LCM" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ Two integers are **relatively prime** (coprime) if $\gcd(a,b) = 1$.
 
 ### 14.4 Euclidean Algorithm
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-handwritten.svg" alt="Handwritten: 14.4 Euclidean Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-handwritten.svg" alt="Handwritten: 14.4 Euclidean Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-diagram.svg" alt="Diagram: 14.4 Euclidean Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-diagram.svg" alt="Diagram: 14.4 Euclidean Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-sticky.svg" alt="Sticky Note: 14.4 Euclidean Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-4-euclidean-algorithm-sticky.svg" alt="Sticky Note: 14.4 Euclidean Algorithm" width="30%">
 </a>
 
 
@@ -173,14 +173,14 @@ console.log(extendedGcd(252, 198)); // { gcd: 18, x: 4, y: -5 }
 
 ### 14.5 Modular Arithmetic
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-handwritten.svg" alt="Handwritten: 14.5 Modular Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-handwritten.svg" alt="Handwritten: 14.5 Modular Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-diagram.svg" alt="Diagram: 14.5 Modular Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-diagram.svg" alt="Diagram: 14.5 Modular Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-sticky.svg" alt="Sticky Note: 14.5 Modular Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-5-modular-arithmetic-sticky.svg" alt="Sticky Note: 14.5 Modular Arithmetic" width="30%">
 </a>
 
 
@@ -198,14 +198,14 @@ console.log(extendedGcd(252, 198)); // { gcd: 18, x: 4, y: -5 }
 
 ### 14.6 Modular Inverses
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-handwritten.svg" alt="Handwritten: 14.6 Modular Inverses" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-handwritten.svg" alt="Handwritten: 14.6 Modular Inverses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-diagram.svg" alt="Diagram: 14.6 Modular Inverses" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-diagram.svg" alt="Diagram: 14.6 Modular Inverses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-sticky.svg" alt="Sticky Note: 14.6 Modular Inverses" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-6-modular-inverses-sticky.svg" alt="Sticky Note: 14.6 Modular Inverses" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ console.log(modInverse(2, 4));  // null (gcd(2,4) ? 1)
 
 ### 14.7 Linear Congruences
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-handwritten.svg" alt="Handwritten: 14.7 Linear Congruences" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-handwritten.svg" alt="Handwritten: 14.7 Linear Congruences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-diagram.svg" alt="Diagram: 14.7 Linear Congruences" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-diagram.svg" alt="Diagram: 14.7 Linear Congruences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-sticky.svg" alt="Sticky Note: 14.7 Linear Congruences" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-7-linear-congruences-sticky.svg" alt="Sticky Note: 14.7 Linear Congruences" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ A **linear congruence** is of the form $ax \equiv b \pmod{m}$.
 
 ### 14.8 Chinese Remainder Theorem
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" alt="Handwritten: 14.8 Chinese Remainder Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" alt="Handwritten: 14.8 Chinese Remainder Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" alt="Diagram: 14.8 Chinese Remainder Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" alt="Diagram: 14.8 Chinese Remainder Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" alt="Sticky Note: 14.8 Chinese Remainder Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" alt="Sticky Note: 14.8 Chinese Remainder Theorem" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ console.log(chineseRemainder([2, 3, 2], [3, 5, 7])); // 23
 
 ### 14.9 Prime Numbers
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-handwritten.svg" alt="Handwritten: 14.9 Prime Numbers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-handwritten.svg" alt="Handwritten: 14.9 Prime Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-diagram.svg" alt="Diagram: 14.9 Prime Numbers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-diagram.svg" alt="Diagram: 14.9 Prime Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-sticky.svg" alt="Sticky Note: 14.9 Prime Numbers" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-9-prime-numbers-sticky.svg" alt="Sticky Note: 14.9 Prime Numbers" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ console.log(sieveOfEratosthenes(30)); // [2,3,5,7,11,13,17,19,23,29]
 
 ### 14.10 Fermat's Little Theorem and Euler's Theorem
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-handwritten.svg" alt="Handwritten: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-handwritten.svg" alt="Handwritten: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-diagram.svg" alt="Diagram: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-diagram.svg" alt="Diagram: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-sticky.svg" alt="Sticky Note: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-10-fermat-s-little-theorem-and-euler-s-theorem-sticky.svg" alt="Sticky Note: 14.10 Fermat's Little Theorem and Euler's Theorem" width="30%">
 </a>
 
 
@@ -384,14 +384,14 @@ console.log(totient(100)); // 40
 
 ### 14.11 Public-Key Cryptography: RSA
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-handwritten.svg" alt="Handwritten: 14.11 Public-Key Cryptography: RSA" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-handwritten.svg" alt="Handwritten: 14.11 Public-Key Cryptography: RSA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-diagram.svg" alt="Diagram: 14.11 Public-Key Cryptography: RSA" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-diagram.svg" alt="Diagram: 14.11 Public-Key Cryptography: RSA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-sticky.svg" alt="Sticky Note: 14.11 Public-Key Cryptography: RSA" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-11-public-key-cryptography-rsa-sticky.svg" alt="Sticky Note: 14.11 Public-Key Cryptography: RSA" width="30%">
 </a>
 
 
@@ -889,14 +889,14 @@ console.log(modExp(7, 2023, 11)); // 7^2023 mod 11 using FLT
 
 ### 14.8 Chinese Remainder Theorem
 
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" alt="Handwritten: 14.8 Chinese Remainder Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-handwritten.svg" alt="Handwritten: 14.8 Chinese Remainder Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" alt="Diagram: 14.8 Chinese Remainder Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-diagram.svg" alt="Diagram: 14.8 Chinese Remainder Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" alt="Sticky Note: 14.8 Chinese Remainder Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/14-number-theory/14-8-chinese-remainder-theorem-sticky.svg" alt="Sticky Note: 14.8 Chinese Remainder Theorem" width="30%">
 </a>
 
 

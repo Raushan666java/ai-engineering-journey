@@ -50,14 +50,14 @@ flowchart LR
 
 ### The Build Process
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/the-build-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/the-build-process-handwritten.svg" alt="Handwritten: The Build Process" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/the-build-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/the-build-process-handwritten.svg" alt="Handwritten: The Build Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/the-build-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/the-build-process-diagram.svg" alt="Diagram: The Build Process" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/the-build-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/the-build-process-diagram.svg" alt="Diagram: The Build Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/the-build-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/the-build-process-sticky.svg" alt="Sticky Note: The Build Process" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/the-build-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/the-build-process-sticky.svg" alt="Sticky Note: The Build Process" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ flowchart LR
 
 ### Package Managers
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/package-managers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/package-managers-handwritten.svg" alt="Handwritten: Package Managers" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/package-managers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/package-managers-handwritten.svg" alt="Handwritten: Package Managers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/package-managers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/package-managers-diagram.svg" alt="Diagram: Package Managers" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/package-managers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/package-managers-diagram.svg" alt="Diagram: Package Managers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/package-managers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/package-managers-sticky.svg" alt="Sticky Note: Package Managers" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/package-managers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/package-managers-sticky.svg" alt="Sticky Note: Package Managers" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ TypeScript compilation via `tsconfig.json`:
 
 ### Module Bundlers
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/module-bundlers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/module-bundlers-handwritten.svg" alt="Handwritten: Module Bundlers" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/module-bundlers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/module-bundlers-handwritten.svg" alt="Handwritten: Module Bundlers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/module-bundlers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/module-bundlers-diagram.svg" alt="Diagram: Module Bundlers" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/module-bundlers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/module-bundlers-diagram.svg" alt="Diagram: Module Bundlers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/module-bundlers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/module-bundlers-sticky.svg" alt="Sticky Note: Module Bundlers" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/module-bundlers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/module-bundlers-sticky.svg" alt="Sticky Note: Module Bundlers" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ module.exports = {
 
 ### Build Caching Strategies
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-handwritten.svg" alt="Handwritten: Build Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-handwritten.svg" alt="Handwritten: Build Caching Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-diagram.svg" alt="Diagram: Build Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-diagram.svg" alt="Diagram: Build Caching Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-sticky.svg" alt="Sticky Note: Build Caching Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/build-caching-strategies-sticky.svg" alt="Sticky Note: Build Caching Strategies" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ module.exports = {
 
 ### Dependency Management
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/dependency-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/dependency-management-handwritten.svg" alt="Handwritten: Dependency Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/dependency-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/dependency-management-handwritten.svg" alt="Handwritten: Dependency Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/dependency-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/dependency-management-diagram.svg" alt="Diagram: Dependency Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/dependency-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/dependency-management-diagram.svg" alt="Diagram: Dependency Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/dependency-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/dependency-management-sticky.svg" alt="Sticky Note: Dependency Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/dependency-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/dependency-management-sticky.svg" alt="Sticky Note: Dependency Management" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ my-project/
 
 ### Build Optimization
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/build-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/build-optimization-handwritten.svg" alt="Handwritten: Build Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/build-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/build-optimization-handwritten.svg" alt="Handwritten: Build Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/build-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/build-optimization-diagram.svg" alt="Diagram: Build Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/build-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/build-optimization-diagram.svg" alt="Diagram: Build Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/build-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/build-optimization-sticky.svg" alt="Sticky Note: Build Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/build-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/build-optimization-sticky.svg" alt="Sticky Note: Build Optimization" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ const AdminModule = await import('./modules/admin');
 
 ### npm Scripts and Task Running
 
-<a href="../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-handwritten.svg" alt="Handwritten: npm Scripts and Task Running" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-handwritten.svg" alt="Handwritten: npm Scripts and Task Running" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-diagram.svg" alt="Diagram: npm Scripts and Task Running" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-diagram.svg" alt="Diagram: npm Scripts and Task Running" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-sticky.svg" alt="Sticky Note: npm Scripts and Task Running" width="30%">
+<a href="../../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/03-build-tools/npm-scripts-and-task-running-sticky.svg" alt="Sticky Note: npm Scripts and Task Running" width="30%">
 </a>
 
 

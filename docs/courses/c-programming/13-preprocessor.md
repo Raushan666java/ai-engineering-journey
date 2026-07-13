@@ -16,14 +16,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ The preprocessor runs as the first stage of compilation. It processes directives
 
 ### Real-World Analogy: Kitchen Prep Station
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-handwritten.svg" alt="Handwritten: Real-World Analogy: Kitchen Prep Station" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-handwritten.svg" alt="Handwritten: Real-World Analogy: Kitchen Prep Station" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-diagram.svg" alt="Diagram: Real-World Analogy: Kitchen Prep Station" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-diagram.svg" alt="Diagram: Real-World Analogy: Kitchen Prep Station" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-sticky.svg" alt="Sticky Note: Real-World Analogy: Kitchen Prep Station" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-kitchen-prep-station-sticky.svg" alt="Sticky Note: Real-World Analogy: Kitchen Prep Station" width="30%">
 </a>
 
 
@@ -87,14 +87,14 @@ A chef does not cook raw ingredients directly. First, vegetables are washed and 
 
 ### Numbered Steps of Preprocessing
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-handwritten.svg" alt="Handwritten: Numbered Steps of Preprocessing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-handwritten.svg" alt="Handwritten: Numbered Steps of Preprocessing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-diagram.svg" alt="Diagram: Numbered Steps of Preprocessing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-diagram.svg" alt="Diagram: Numbered Steps of Preprocessing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-sticky.svg" alt="Sticky Note: Numbered Steps of Preprocessing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-of-preprocessing-sticky.svg" alt="Sticky Note: Numbered Steps of Preprocessing" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ A chef does not cook raw ingredients directly. First, vegetables are washed and 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ function preprocess(sourceText):
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ double c = ((r) * 2) * 3.14159;
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ double c = ((r) * 2) * 3.14159;
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ double c = ((r) * 2) * 3.14159;
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -287,14 +287,14 @@ double c = ((r) * 2) * 3.14159;
 
 ### Real-World Analogy: Copy-Paste from Reference Book
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-handwritten.svg" alt="Handwritten: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-handwritten.svg" alt="Handwritten: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-diagram.svg" alt="Diagram: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-diagram.svg" alt="Diagram: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-sticky.svg" alt="Sticky Note: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-copy-paste-from-reference-book-sticky.svg" alt="Sticky Note: Real-World Analogy: Copy-Paste from Reference Book" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ Imagine writing a report and needing the definition of "binary search tree." Ins
 
 ### Search Path Rules
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-handwritten.svg" alt="Handwritten: Search Path Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-handwritten.svg" alt="Handwritten: Search Path Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-diagram.svg" alt="Diagram: Search Path Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-diagram.svg" alt="Diagram: Search Path Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-sticky.svg" alt="Sticky Note: Search Path Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/search-path-rules-sticky.svg" alt="Sticky Note: Search Path Rules" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ Imagine writing a report and needing the definition of "binary search tree." Ins
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -346,14 +346,14 @@ Imagine writing a report and needing the definition of "binary search tree." Ins
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -378,14 +378,14 @@ function handle_include(directive, filename):
 
 ### Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
 </a>
 
 
@@ -419,14 +419,14 @@ Header file `config.h`:
 
 ### Nested Include Resolution
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-handwritten.svg" alt="Handwritten: Nested Include Resolution" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-handwritten.svg" alt="Handwritten: Nested Include Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-diagram.svg" alt="Diagram: Nested Include Resolution" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-diagram.svg" alt="Diagram: Nested Include Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-sticky.svg" alt="Sticky Note: Nested Include Resolution" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/nested-include-resolution-sticky.svg" alt="Sticky Note: Nested Include Resolution" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ Hello from mydefs!
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -479,14 +479,14 @@ Hello from mydefs!
 
 ### Real-World Analogy: Find-and-Replace All
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-handwritten.svg" alt="Handwritten: Real-World Analogy: Find-and-Replace All" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-handwritten.svg" alt="Handwritten: Real-World Analogy: Find-and-Replace All" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-diagram.svg" alt="Diagram: Real-World Analogy: Find-and-Replace All" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-diagram.svg" alt="Diagram: Real-World Analogy: Find-and-Replace All" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-sticky.svg" alt="Sticky Note: Real-World Analogy: Find-and-Replace All" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-find-and-replace-all-sticky.svg" alt="Sticky Note: Real-World Analogy: Find-and-Replace All" width="30%">
 </a>
 
 
@@ -501,14 +501,14 @@ Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Ev
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -520,14 +520,14 @@ Your teacher tells the class "whenever I say 'device', write 'mobile phone'." Ev
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ function expand_macro(name):
 
 ### Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
 </a>
 
 
@@ -608,14 +608,14 @@ Area = 78.54
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ Area = 78.54
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -649,14 +649,14 @@ Area = 78.54
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -670,14 +670,14 @@ Area = 78.54
 
 ### Real-World Analogy: Recipe Template with Blanks
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-handwritten.svg" alt="Handwritten: Real-World Analogy: Recipe Template with Blanks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-handwritten.svg" alt="Handwritten: Real-World Analogy: Recipe Template with Blanks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-diagram.svg" alt="Diagram: Real-World Analogy: Recipe Template with Blanks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-diagram.svg" alt="Diagram: Real-World Analogy: Recipe Template with Blanks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-sticky.svg" alt="Sticky Note: Real-World Analogy: Recipe Template with Blanks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-recipe-template-with-blanks-sticky.svg" alt="Sticky Note: Real-World Analogy: Recipe Template with Blanks" width="30%">
 </a>
 
 
@@ -691,14 +691,14 @@ A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -711,14 +711,14 @@ A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks
 
 ### Critical: The Space-Before-Paren Trap
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-handwritten.svg" alt="Handwritten: Critical: The Space-Before-Paren Trap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-handwritten.svg" alt="Handwritten: Critical: The Space-Before-Paren Trap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-diagram.svg" alt="Diagram: Critical: The Space-Before-Paren Trap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-diagram.svg" alt="Diagram: Critical: The Space-Before-Paren Trap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-sticky.svg" alt="Sticky Note: Critical: The Space-Before-Paren Trap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/critical-the-space-before-paren-trap-sticky.svg" alt="Sticky Note: Critical: The Space-Before-Paren Trap" width="30%">
 </a>
 
 
@@ -729,14 +729,14 @@ A recipe card says "Bake at ___ degrees for ___ minutes." You fill in the blanks
 
 ### Why Parentheses Matter
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-handwritten.svg" alt="Handwritten: Why Parentheses Matter" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-handwritten.svg" alt="Handwritten: Why Parentheses Matter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-diagram.svg" alt="Diagram: Why Parentheses Matter" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-diagram.svg" alt="Diagram: Why Parentheses Matter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-sticky.svg" alt="Sticky Note: Why Parentheses Matter" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/why-parentheses-matter-sticky.svg" alt="Sticky Note: Why Parentheses Matter" width="30%">
 </a>
 
 
@@ -754,14 +754,14 @@ SQUARE(2 + 3)  /* expands to: ((2 + 3) * (2 + 3)) = 25 */
 
 ### Dry Run Trace — With vs Without Parentheses
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-handwritten.svg" alt="Handwritten: Dry Run Trace — With vs Without Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-handwritten.svg" alt="Handwritten: Dry Run Trace — With vs Without Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-diagram.svg" alt="Diagram: Dry Run Trace — With vs Without Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-diagram.svg" alt="Diagram: Dry Run Trace — With vs Without Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-sticky.svg" alt="Sticky Note: Dry Run Trace — With vs Without Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-with-vs-without-parentheses-sticky.svg" alt="Sticky Note: Dry Run Trace — With vs Without Parentheses" width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ MAX(10, 20) = 20
 
 ### Multi-Statement Macros
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-handwritten.svg" alt="Handwritten: Multi-Statement Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-handwritten.svg" alt="Handwritten: Multi-Statement Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-diagram.svg" alt="Diagram: Multi-Statement Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-diagram.svg" alt="Diagram: Multi-Statement Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-sticky.svg" alt="Sticky Note: Multi-Statement Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/multi-statement-macros-sticky.svg" alt="Sticky Note: Multi-Statement Macros" width="30%">
 </a>
 
 
@@ -869,14 +869,14 @@ if (x < y)
 
 ### Variadic Macros (C99)
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-handwritten.svg" alt="Handwritten: Variadic Macros (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-handwritten.svg" alt="Handwritten: Variadic Macros (C99)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-diagram.svg" alt="Diagram: Variadic Macros (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-diagram.svg" alt="Diagram: Variadic Macros (C99)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-sticky.svg" alt="Sticky Note: Variadic Macros (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/variadic-macros-c99-sticky.svg" alt="Sticky Note: Variadic Macros (C99)" width="30%">
 </a>
 
 
@@ -904,14 +904,14 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -924,14 +924,14 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -945,14 +945,14 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -988,14 +988,14 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1020,14 +1020,14 @@ The `##__VA_ARGS__` GNU extension allows omitting the variadic argument (makes t
 
 ### Decision Guide
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-handwritten.svg" alt="Handwritten: Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-handwritten.svg" alt="Handwritten: Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-diagram.svg" alt="Diagram: Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-diagram.svg" alt="Diagram: Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-sticky.svg" alt="Sticky Note: Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/decision-guide-sticky.svg" alt="Sticky Note: Decision Guide" width="30%">
 </a>
 
 
@@ -1047,14 +1047,14 @@ void sort(int* arr, size_t n);                                 /* Multi-statemen
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1101,14 +1101,14 @@ int main(void)
 
 ### When to Use What
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-handwritten.svg" alt="Handwritten: When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-handwritten.svg" alt="Handwritten: When to Use What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-diagram.svg" alt="Diagram: When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-diagram.svg" alt="Diagram: When to Use What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-sticky.svg" alt="Sticky Note: When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/when-to-use-what-sticky.svg" alt="Sticky Note: When to Use What" width="30%">
 </a>
 
 
@@ -1126,14 +1126,14 @@ int main(void)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1158,14 +1158,14 @@ int main(void)
 
 ### Use Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
 </a>
 
 
@@ -1184,14 +1184,14 @@ int main(void)
 
 ### Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
 </a>
 
 
@@ -1214,14 +1214,14 @@ int b = MAX;     /* b = 20 */
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1232,14 +1232,14 @@ int b = MAX;     /* b = 20 */
 
 ### Real-World Analogy: Light Switch / Router Configuration
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-handwritten.svg" alt="Handwritten: Real-World Analogy: Light Switch / Router Configuration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-handwritten.svg" alt="Handwritten: Real-World Analogy: Light Switch / Router Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-diagram.svg" alt="Diagram: Real-World Analogy: Light Switch / Router Configuration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-diagram.svg" alt="Diagram: Real-World Analogy: Light Switch / Router Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-sticky.svg" alt="Sticky Note: Real-World Analogy: Light Switch / Router Configuration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-light-switch-router-configuration-sticky.svg" alt="Sticky Note: Real-World Analogy: Light Switch / Router Configuration" width="30%">
 </a>
 
 
@@ -1247,14 +1247,14 @@ A factory assembly line can produce slightly different products depending on whi
 
 ### 13.8.1 Directives Overview
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-handwritten.svg" alt="Handwritten: 13.8.1 Directives Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-handwritten.svg" alt="Handwritten: 13.8.1 Directives Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-diagram.svg" alt="Diagram: 13.8.1 Directives Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-diagram.svg" alt="Diagram: 13.8.1 Directives Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-sticky.svg" alt="Sticky Note: 13.8.1 Directives Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-1-directives-overview-sticky.svg" alt="Sticky Note: 13.8.1 Directives Overview" width="30%">
 </a>
 
 
@@ -1270,14 +1270,14 @@ A factory assembly line can produce slightly different products depending on whi
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1291,14 +1291,14 @@ A factory assembly line can produce slightly different products depending on whi
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1344,14 +1344,14 @@ function process_conditional(directive, condition):
 
 ### 13.8.2 `#ifdef` and `#ifndef`
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-handwritten.svg" alt="Handwritten: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-handwritten.svg" alt="Handwritten: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-diagram.svg" alt="Diagram: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-diagram.svg" alt="Diagram: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-sticky.svg" alt="Sticky Note: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-2-ifdef-and-ifndef-sticky.svg" alt="Sticky Note: 13.8.2 `#ifdef` and `#ifndef`" width="30%">
 </a>
 
 
@@ -1382,14 +1382,14 @@ Release mode is NOT defined — using debug settings
 
 ### Dry Run Trace — `#ifdef`/`#ifndef`
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-handwritten.svg" alt="Handwritten: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-handwritten.svg" alt="Handwritten: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-diagram.svg" alt="Diagram: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-diagram.svg" alt="Diagram: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-sticky.svg" alt="Sticky Note: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-ifdef-ifndef-sticky.svg" alt="Sticky Note: Dry Run Trace — `#ifdef`/`#ifndef`" width="30%">
 </a>
 
 
@@ -1405,14 +1405,14 @@ Release mode is NOT defined — using debug settings
 
 ### 13.8.3 `#if` and `#elif`
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-handwritten.svg" alt="Handwritten: 13.8.3 `#if` and `#elif`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-handwritten.svg" alt="Handwritten: 13.8.3 `#if` and `#elif`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-diagram.svg" alt="Diagram: 13.8.3 `#if` and `#elif`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-diagram.svg" alt="Diagram: 13.8.3 `#if` and `#elif`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-sticky.svg" alt="Sticky Note: 13.8.3 `#if` and `#elif`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-3-if-and-elif-sticky.svg" alt="Sticky Note: 13.8.3 `#if` and `#elif`" width="30%">
 </a>
 
 
@@ -1442,14 +1442,14 @@ Version 2
 
 ### Dry Run Trace — `#if`/`#elif`/`#else`
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-handwritten.svg" alt="Handwritten: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-handwritten.svg" alt="Handwritten: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-diagram.svg" alt="Diagram: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-diagram.svg" alt="Diagram: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-sticky.svg" alt="Sticky Note: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-if-elif-else-sticky.svg" alt="Sticky Note: Dry Run Trace — `#if`/`#elif`/`#else`" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ Version 2
 
 ### 13.8.4 `#if defined(...)`
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-handwritten.svg" alt="Handwritten: 13.8.4 `#if defined(...)`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-handwritten.svg" alt="Handwritten: 13.8.4 `#if defined(...)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-diagram.svg" alt="Diagram: 13.8.4 `#if defined(...)`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-diagram.svg" alt="Diagram: 13.8.4 `#if defined(...)`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-sticky.svg" alt="Sticky Note: 13.8.4 `#if defined(...)`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-4-if-defined-sticky.svg" alt="Sticky Note: 13.8.4 `#if defined(...)`" width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ int main(void)
 
 ### 13.8.5 Use Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-handwritten.svg" alt="Handwritten: 13.8.5 Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-handwritten.svg" alt="Handwritten: 13.8.5 Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-diagram.svg" alt="Diagram: 13.8.5 Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-diagram.svg" alt="Diagram: 13.8.5 Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-sticky.svg" alt="Sticky Note: 13.8.5 Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-5-use-cases-sticky.svg" alt="Sticky Note: 13.8.5 Use Cases" width="30%">
 </a>
 
 
@@ -1547,14 +1547,14 @@ int main(void)
 
 ### 13.8.6 `#pragma once` vs `#ifndef` — Comparison
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-handwritten.svg" alt="Handwritten: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-handwritten.svg" alt="Handwritten: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-diagram.svg" alt="Diagram: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-diagram.svg" alt="Diagram: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-sticky.svg" alt="Sticky Note: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-6-pragma-once-vs-ifndef-comparison-sticky.svg" alt="Sticky Note: 13.8.6 `#pragma once` vs `#ifndef` — Comparison" width="30%">
 </a>
 
 
@@ -1582,14 +1582,14 @@ int main(void)
 
 ### 13.8.7 Nested Conditional Compilation
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-handwritten.svg" alt="Handwritten: 13.8.7 Nested Conditional Compilation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-handwritten.svg" alt="Handwritten: 13.8.7 Nested Conditional Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-diagram.svg" alt="Diagram: 13.8.7 Nested Conditional Compilation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-diagram.svg" alt="Diagram: 13.8.7 Nested Conditional Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-sticky.svg" alt="Sticky Note: 13.8.7 Nested Conditional Compilation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-8-7-nested-conditional-compilation-sticky.svg" alt="Sticky Note: 13.8.7 Nested Conditional Compilation" width="30%">
 </a>
 
 
@@ -1624,14 +1624,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1645,14 +1645,14 @@ int main(void)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1662,14 +1662,14 @@ A recipe might include a note: "If using a convection oven, reduce temperature b
 
 ### Common Pragmas
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-handwritten.svg" alt="Handwritten: Common Pragmas" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-handwritten.svg" alt="Handwritten: Common Pragmas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-diagram.svg" alt="Diagram: Common Pragmas" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-diagram.svg" alt="Diagram: Common Pragmas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-sticky.svg" alt="Sticky Note: Common Pragmas" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/common-pragmas-sticky.svg" alt="Sticky Note: Common Pragmas" width="30%">
 </a>
 
 
@@ -1697,14 +1697,14 @@ struct PackedData {
 
 ### `_Pragma()` Operator (C99)
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-handwritten.svg" alt="Handwritten: `_Pragma()` Operator (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-handwritten.svg" alt="Handwritten: `_Pragma()` Operator (C99)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-diagram.svg" alt="Diagram: `_Pragma()` Operator (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-diagram.svg" alt="Diagram: `_Pragma()` Operator (C99)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-sticky.svg" alt="Sticky Note: `_Pragma()` Operator (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pragma-operator-c99-sticky.svg" alt="Sticky Note: `_Pragma()` Operator (C99)" width="30%">
 </a>
 
 
@@ -1751,14 +1751,14 @@ Normal struct: 8 bytes
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1773,14 +1773,14 @@ Normal struct: 8 bytes
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1788,14 +1788,14 @@ A factory assembly line has a security checkpoint. If a part doesn't meet specif
 
 ### Syntax and Example
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-handwritten.svg" alt="Handwritten: Syntax and Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-handwritten.svg" alt="Handwritten: Syntax and Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-diagram.svg" alt="Diagram: Syntax and Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-diagram.svg" alt="Diagram: Syntax and Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-sticky.svg" alt="Sticky Note: Syntax and Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-and-example-sticky.svg" alt="Sticky Note: Syntax and Example" width="30%">
 </a>
 
 
@@ -1815,14 +1815,14 @@ A factory assembly line has a security checkpoint. If a part doesn't meet specif
 
 ### Use Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
 </a>
 
 
@@ -1856,14 +1856,14 @@ error: #error "REQUIRED_FEATURE must be defined to compile this program"
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1877,14 +1877,14 @@ error: #error "REQUIRED_FEATURE must be defined to compile this program"
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1892,14 +1892,14 @@ You're editing a document and the page numbers are wrong. You insert a sticky no
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1936,14 +1936,14 @@ Line: 76, File: generated.c
 
 ### Use Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
 </a>
 
 
@@ -1957,27 +1957,27 @@ These operators are only meaningful inside function-like macro definitions.
 
 ### 13.12.1 Stringification (`#`)
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-handwritten.svg" alt="Handwritten: 13.12.1 Stringification (`#`)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-handwritten.svg" alt="Handwritten: 13.12.1 Stringification (`#`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-diagram.svg" alt="Diagram: 13.12.1 Stringification (`#`)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-diagram.svg" alt="Diagram: 13.12.1 Stringification (`#`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-sticky.svg" alt="Sticky Note: 13.12.1 Stringification (`#`)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-1-stringification-sticky.svg" alt="Sticky Note: 13.12.1 Stringification (`#`)" width="30%">
 </a>
 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2007,14 +2007,14 @@ value + 1 = 43
 
 ### Detailed Expansion
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-handwritten.svg" alt="Handwritten: Detailed Expansion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-handwritten.svg" alt="Handwritten: Detailed Expansion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-diagram.svg" alt="Diagram: Detailed Expansion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-diagram.svg" alt="Diagram: Detailed Expansion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-sticky.svg" alt="Sticky Note: Detailed Expansion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/detailed-expansion-sticky.svg" alt="Sticky Note: Detailed Expansion" width="30%">
 </a>
 
 
@@ -2033,14 +2033,14 @@ STR(FOO)          → "FOO"   /* NOT "123" — # prevents expansion of the param
 
 ### Dry Run Trace — Stringification
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-handwritten.svg" alt="Handwritten: Dry Run Trace — Stringification" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-handwritten.svg" alt="Handwritten: Dry Run Trace — Stringification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-diagram.svg" alt="Diagram: Dry Run Trace — Stringification" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-diagram.svg" alt="Diagram: Dry Run Trace — Stringification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-sticky.svg" alt="Sticky Note: Dry Run Trace — Stringification" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/dry-run-trace-stringification-sticky.svg" alt="Sticky Note: Dry Run Trace — Stringification" width="30%">
 </a>
 
 
@@ -2062,14 +2062,14 @@ SHOW(count);
 
 ### Stringification with Spaces
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-handwritten.svg" alt="Handwritten: Stringification with Spaces" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-handwritten.svg" alt="Handwritten: Stringification with Spaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-diagram.svg" alt="Diagram: Stringification with Spaces" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-diagram.svg" alt="Diagram: Stringification with Spaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-sticky.svg" alt="Sticky Note: Stringification with Spaces" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/stringification-with-spaces-sticky.svg" alt="Sticky Note: Stringification with Spaces" width="30%">
 </a>
 
 
@@ -2082,27 +2082,27 @@ Multiple spaces between tokens in the argument are collapsed to a single space, 
 
 ### 13.12.2 Token Pasting (`##`)
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-handwritten.svg" alt="Handwritten: 13.12.2 Token Pasting (`##`)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-handwritten.svg" alt="Handwritten: 13.12.2 Token Pasting (`##`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-diagram.svg" alt="Diagram: 13.12.2 Token Pasting (`##`)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-diagram.svg" alt="Diagram: 13.12.2 Token Pasting (`##`)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-sticky.svg" alt="Sticky Note: 13.12.2 Token Pasting (`##`)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-12-2-token-pasting-sticky.svg" alt="Sticky Note: 13.12.2 Token Pasting (`##`)" width="30%">
 </a>
 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2130,14 +2130,14 @@ x1 = 10, x2 = 20
 
 ### Practical Examples
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-handwritten.svg" alt="Handwritten: Practical Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-handwritten.svg" alt="Handwritten: Practical Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-diagram.svg" alt="Diagram: Practical Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-diagram.svg" alt="Diagram: Practical Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-sticky.svg" alt="Sticky Note: Practical Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/practical-examples-sticky.svg" alt="Sticky Note: Practical Examples" width="30%">
 </a>
 
 
@@ -2210,14 +2210,14 @@ WHITE = #FFFFFF
 
 ### Combining `#` and `##`
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-handwritten.svg" alt="Handwritten: Combining `#` and `##`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-handwritten.svg" alt="Handwritten: Combining `#` and `##`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-diagram.svg" alt="Diagram: Combining `#` and `##`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-diagram.svg" alt="Diagram: Combining `#` and `##`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-sticky.svg" alt="Sticky Note: Combining `#` and `##`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/combining-and-sticky.svg" alt="Sticky Note: Combining `#` and `##`" width="30%">
 </a>
 
 
@@ -2248,14 +2248,14 @@ Name:  x
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2269,14 +2269,14 @@ Name:  x
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2284,14 +2284,14 @@ A factory stamps each product with the date, time, and machine ID. `__DATE__`, `
 
 ### Complete Table
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-handwritten.svg" alt="Handwritten: Complete Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-handwritten.svg" alt="Handwritten: Complete Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-diagram.svg" alt="Diagram: Complete Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-diagram.svg" alt="Diagram: Complete Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-sticky.svg" alt="Sticky Note: Complete Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/complete-table-sticky.svg" alt="Sticky Note: Complete Table" width="30%">
 </a>
 
 
@@ -2348,14 +2348,14 @@ Line:       10
 
 ### Use Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
 </a>
 
 
@@ -2409,14 +2409,14 @@ void c_function(int x);
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2430,14 +2430,14 @@ void c_function(int x);
 
 ### 1. Side Effects from Double Evaluation
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-handwritten.svg" alt="Handwritten: 1. Side Effects from Double Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-handwritten.svg" alt="Handwritten: 1. Side Effects from Double Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-diagram.svg" alt="Diagram: 1. Side Effects from Double Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-diagram.svg" alt="Diagram: 1. Side Effects from Double Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-sticky.svg" alt="Sticky Note: 1. Side Effects from Double Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/1-side-effects-from-double-evaluation-sticky.svg" alt="Sticky Note: 1. Side Effects from Double Evaluation" width="30%">
 </a>
 
 
@@ -2461,14 +2461,14 @@ int main(void)
 
 ### 2. Missing Parentheses
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-handwritten.svg" alt="Handwritten: 2. Missing Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-handwritten.svg" alt="Handwritten: 2. Missing Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-diagram.svg" alt="Diagram: 2. Missing Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-diagram.svg" alt="Diagram: 2. Missing Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-sticky.svg" alt="Sticky Note: 2. Missing Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/2-missing-parentheses-sticky.svg" alt="Sticky Note: 2. Missing Parentheses" width="30%">
 </a>
 
 
@@ -2481,14 +2481,14 @@ BAD_MULTIPLY(2 + 3, 4)   /* 2 + 3 * 4 = 14, not 20 */
 
 ### 3. Semicolon Swallowing
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-handwritten.svg" alt="Handwritten: 3. Semicolon Swallowing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-handwritten.svg" alt="Handwritten: 3. Semicolon Swallowing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-diagram.svg" alt="Diagram: 3. Semicolon Swallowing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-diagram.svg" alt="Diagram: 3. Semicolon Swallowing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-sticky.svg" alt="Sticky Note: 3. Semicolon Swallowing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/3-semicolon-swallowing-sticky.svg" alt="Sticky Note: 3. Semicolon Swallowing" width="30%">
 </a>
 
 
@@ -2513,14 +2513,14 @@ y = temp;           /* error: temp not in scope */
 
 ### 4. No Type Safety
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-handwritten.svg" alt="Handwritten: 4. No Type Safety" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-handwritten.svg" alt="Handwritten: 4. No Type Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-diagram.svg" alt="Diagram: 4. No Type Safety" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-diagram.svg" alt="Diagram: 4. No Type Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-sticky.svg" alt="Sticky Note: 4. No Type Safety" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/4-no-type-safety-sticky.svg" alt="Sticky Note: 4. No Type Safety" width="30%">
 </a>
 
 
@@ -2531,14 +2531,14 @@ SQUARE("hello")    /* compiles! "hello" * "hello" → garbage error */
 
 ### 5. Debugging Difficulty
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-handwritten.svg" alt="Handwritten: 5. Debugging Difficulty" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-handwritten.svg" alt="Handwritten: 5. Debugging Difficulty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-diagram.svg" alt="Diagram: 5. Debugging Difficulty" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-diagram.svg" alt="Diagram: 5. Debugging Difficulty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-sticky.svg" alt="Sticky Note: 5. Debugging Difficulty" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/5-debugging-difficulty-sticky.svg" alt="Sticky Note: 5. Debugging Difficulty" width="30%">
 </a>
 
 
@@ -2551,14 +2551,14 @@ int y = BUGGY(5);  /* compiler error points to expanded: 5 + 5 * 2 */
 
 ### 6. Dangling Else
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-handwritten.svg" alt="Handwritten: 6. Dangling Else" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-handwritten.svg" alt="Handwritten: 6. Dangling Else" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-diagram.svg" alt="Diagram: 6. Dangling Else" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-diagram.svg" alt="Diagram: 6. Dangling Else" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-sticky.svg" alt="Sticky Note: 6. Dangling Else" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/6-dangling-else-sticky.svg" alt="Sticky Note: 6. Dangling Else" width="30%">
 </a>
 
 
@@ -2574,14 +2574,14 @@ else
 
 ### 7. Name Collisions
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-handwritten.svg" alt="Handwritten: 7. Name Collisions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-handwritten.svg" alt="Handwritten: 7. Name Collisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-diagram.svg" alt="Diagram: 7. Name Collisions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-diagram.svg" alt="Diagram: 7. Name Collisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-sticky.svg" alt="Sticky Note: 7. Name Collisions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/7-name-collisions-sticky.svg" alt="Sticky Note: 7. Name Collisions" width="30%">
 </a>
 
 
@@ -2592,14 +2592,14 @@ else
 
 ### Pitfalls at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-handwritten.svg" alt="Handwritten: Pitfalls at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-handwritten.svg" alt="Handwritten: Pitfalls at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-diagram.svg" alt="Diagram: Pitfalls at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-diagram.svg" alt="Diagram: Pitfalls at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-sticky.svg" alt="Sticky Note: Pitfalls at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/pitfalls-at-a-glance-sticky.svg" alt="Sticky Note: Pitfalls at a Glance" width="30%">
 </a>
 
 
@@ -2616,14 +2616,14 @@ else
 
 ### Q1: What is the difference between a macro and an inline function?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-handwritten.svg" alt="Handwritten: What is the difference between a macro and an inline function?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-handwritten.svg" alt="Handwritten: What is the difference between a macro and an inline function?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-diagram.svg" alt="Diagram: What is the difference between a macro and an inline function?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-diagram.svg" alt="Diagram: What is the difference between a macro and an inline function?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-sticky.svg" alt="Sticky Note: What is the difference between a macro and an inline function?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-a-macro-and-an-inline-function-sticky.svg" alt="Sticky Note: What is the difference between a macro and an inline function?" width="30%">
 </a>
 
 
@@ -2646,14 +2646,14 @@ else
 
 ### Q2: What are macro side effects and how do you prevent them?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-handwritten.svg" alt="Handwritten: What are macro side effects and how do you prevent them?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-handwritten.svg" alt="Handwritten: What are macro side effects and how do you prevent them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-diagram.svg" alt="Diagram: What are macro side effects and how do you prevent them?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-diagram.svg" alt="Diagram: What are macro side effects and how do you prevent them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-sticky.svg" alt="Sticky Note: What are macro side effects and how do you prevent them?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-macro-side-effects-and-how-do-you-prevent-them-sticky.svg" alt="Sticky Note: What are macro side effects and how do you prevent them?" width="30%">
 </a>
 
 
@@ -2680,14 +2680,14 @@ int result = SQUARE(++i);
 
 ### Q3: Explain the `#` and `##` preprocessor operators with examples.
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-handwritten.svg" alt="Handwritten: Explain the `#` and `##` preprocessor operators with examples." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-handwritten.svg" alt="Handwritten: Explain the `#` and `##` preprocessor operators with examples." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-diagram.svg" alt="Diagram: Explain the `#` and `##` preprocessor operators with examples." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-diagram.svg" alt="Diagram: Explain the `#` and `##` preprocessor operators with examples." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-sticky.svg" alt="Sticky Note: Explain the `#` and `##` preprocessor operators with examples." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-and-preprocessor-operators-with-examples-sticky.svg" alt="Sticky Note: Explain the `#` and `##` preprocessor operators with examples." width="30%">
 </a>
 
 
@@ -2722,14 +2722,14 @@ MAKE_VAR(int, counter)
 
 ### Q4: Is `#pragma once` portable? Should I use it?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-handwritten.svg" alt="Handwritten: Is `#pragma once` portable? Should I use it?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-handwritten.svg" alt="Handwritten: Is `#pragma once` portable? Should I use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-diagram.svg" alt="Diagram: Is `#pragma once` portable? Should I use it?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-diagram.svg" alt="Diagram: Is `#pragma once` portable? Should I use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-sticky.svg" alt="Sticky Note: Is `#pragma once` portable? Should I use it?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/is-pragma-once-portable-should-i-use-it-sticky.svg" alt="Sticky Note: Is `#pragma once` portable? Should I use it?" width="30%">
 </a>
 
 
@@ -2742,14 +2742,14 @@ MAKE_VAR(int, counter)
 
 ### Q5: What are X macros? Provide an example.
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-handwritten.svg" alt="Handwritten: What are X macros? Provide an example." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-handwritten.svg" alt="Handwritten: What are X macros? Provide an example." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-diagram.svg" alt="Diagram: What are X macros? Provide an example." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-diagram.svg" alt="Diagram: What are X macros? Provide an example." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-sticky.svg" alt="Sticky Note: What are X macros? Provide an example." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-are-x-macros-provide-an-example-sticky.svg" alt="Sticky Note: What are X macros? Provide an example." width="30%">
 </a>
 
 
@@ -2782,14 +2782,14 @@ int fruit_prices[] = { FRUIT_TABLE };
 
 ### Q6: Can macros be recursive?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-handwritten.svg" alt="Handwritten: Can macros be recursive?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-handwritten.svg" alt="Handwritten: Can macros be recursive?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-diagram.svg" alt="Diagram: Can macros be recursive?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-diagram.svg" alt="Diagram: Can macros be recursive?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-sticky.svg" alt="Sticky Note: Can macros be recursive?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/can-macros-be-recursive-sticky.svg" alt="Sticky Note: Can macros be recursive?" width="30%">
 </a>
 
 
@@ -2808,14 +2808,14 @@ A   /* Expands: A → B → A (stops here) */
 
 ### Q7: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-handwritten.svg" alt="Handwritten: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-handwritten.svg" alt="Handwritten: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-diagram.svg" alt="Diagram: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-diagram.svg" alt="Diagram: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-sticky.svg" alt="Sticky Note: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-difference-between-ifdef-macro-and-if-defined-macro-sticky.svg" alt="Sticky Note: What is the difference between `#ifdef MACRO` and `#if defined(MACRO)`?" width="30%">
 </a>
 
 
@@ -2836,14 +2836,14 @@ Functionally identical for a single condition. The difference:
 
 ### Q8: How do you create a debug print macro that includes file and line info?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-handwritten.svg" alt="Handwritten: How do you create a debug print macro that includes file and line info?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-handwritten.svg" alt="Handwritten: How do you create a debug print macro that includes file and line info?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-diagram.svg" alt="Diagram: How do you create a debug print macro that includes file and line info?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-diagram.svg" alt="Diagram: How do you create a debug print macro that includes file and line info?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-sticky.svg" alt="Sticky Note: How do you create a debug print macro that includes file and line info?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/how-do-you-create-a-debug-print-macro-that-includes-file-and-line-info-sticky.svg" alt="Sticky Note: How do you create a debug print macro that includes file and line info?" width="30%">
 </a>
 
 
@@ -2864,14 +2864,14 @@ The `##` before `__VA_ARGS__` is a GNU extension that removes the trailing comma
 
 ### Q9: Explain the `do { ... } while (0)` pattern.
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-handwritten.svg" alt="Handwritten: Explain the `do { ... } while (0)` pattern." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-handwritten.svg" alt="Handwritten: Explain the `do { ... } while (0)` pattern." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-diagram.svg" alt="Diagram: Explain the `do { ... } while (0)` pattern." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-diagram.svg" alt="Diagram: Explain the `do { ... } while (0)` pattern." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-sticky.svg" alt="Sticky Note: Explain the `do { ... } while (0)` pattern." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/explain-the-do-while-0-pattern-sticky.svg" alt="Sticky Note: Explain the `do { ... } while (0)` pattern." width="30%">
 </a>
 
 
@@ -2895,14 +2895,14 @@ The `do { } while (0)` requires a semicolon, consumes it, and wraps all statemen
 
 ### Q10: What is the purpose of `#line` directive?
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-handwritten.svg" alt="Handwritten: What is the purpose of `#line` directive?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-handwritten.svg" alt="Handwritten: What is the purpose of `#line` directive?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-diagram.svg" alt="Diagram: What is the purpose of `#line` directive?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-diagram.svg" alt="Diagram: What is the purpose of `#line` directive?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-sticky.svg" alt="Sticky Note: What is the purpose of `#line` directive?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/what-is-the-purpose-of-line-directive-sticky.svg" alt="Sticky Note: What is the purpose of `#line` directive?" width="30%">
 </a>
 
 
@@ -2915,14 +2915,14 @@ The `do { } while (0)` requires a semicolon, consumes it, and wraps all statemen
 
 ### 13.16.1 The Linux Kernel — `container_of` Macro
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-handwritten.svg" alt="Handwritten: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-handwritten.svg" alt="Handwritten: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-diagram.svg" alt="Diagram: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-diagram.svg" alt="Diagram: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-sticky.svg" alt="Sticky Note: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-1-the-linux-kernel-container-of-macro-sticky.svg" alt="Sticky Note: 13.16.1 The Linux Kernel — `container_of` Macro" width="30%">
 </a>
 
 
@@ -2950,14 +2950,14 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 
 ### 13.16.2 Assertion Macros
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-handwritten.svg" alt="Handwritten: 13.16.2 Assertion Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-handwritten.svg" alt="Handwritten: 13.16.2 Assertion Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-diagram.svg" alt="Diagram: 13.16.2 Assertion Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-diagram.svg" alt="Diagram: 13.16.2 Assertion Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-sticky.svg" alt="Sticky Note: 13.16.2 Assertion Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-2-assertion-macros-sticky.svg" alt="Sticky Note: 13.16.2 Assertion Macros" width="30%">
 </a>
 
 
@@ -2978,14 +2978,14 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 
 ### 13.16.3 Debug Logging Infrastructure
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-handwritten.svg" alt="Handwritten: 13.16.3 Debug Logging Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-handwritten.svg" alt="Handwritten: 13.16.3 Debug Logging Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-diagram.svg" alt="Diagram: 13.16.3 Debug Logging Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-diagram.svg" alt="Diagram: 13.16.3 Debug Logging Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-sticky.svg" alt="Sticky Note: 13.16.3 Debug Logging Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-3-debug-logging-infrastructure-sticky.svg" alt="Sticky Note: 13.16.3 Debug Logging Infrastructure" width="30%">
 </a>
 
 
@@ -3030,14 +3030,14 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 
 ### 13.16.4 Platform-Specific Code
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-handwritten.svg" alt="Handwritten: 13.16.4 Platform-Specific Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-handwritten.svg" alt="Handwritten: 13.16.4 Platform-Specific Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-diagram.svg" alt="Diagram: 13.16.4 Platform-Specific Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-diagram.svg" alt="Diagram: 13.16.4 Platform-Specific Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-sticky.svg" alt="Sticky Note: 13.16.4 Platform-Specific Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-4-platform-specific-code-sticky.svg" alt="Sticky Note: 13.16.4 Platform-Specific Code" width="30%">
 </a>
 
 
@@ -3071,14 +3071,14 @@ This macro is the foundation of Linux kernel data structures (linked lists, tree
 
 ### 13.16.5 Unit Test Framework
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-handwritten.svg" alt="Handwritten: 13.16.5 Unit Test Framework" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-handwritten.svg" alt="Handwritten: 13.16.5 Unit Test Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-diagram.svg" alt="Diagram: 13.16.5 Unit Test Framework" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-diagram.svg" alt="Diagram: 13.16.5 Unit Test Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-sticky.svg" alt="Sticky Note: 13.16.5 Unit Test Framework" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-5-unit-test-framework-sticky.svg" alt="Sticky Note: 13.16.5 Unit Test Framework" width="30%">
 </a>
 
 
@@ -3151,14 +3151,14 @@ int main(void)
 
 ### 13.16.6 API Export/Import Macros
 
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-handwritten.svg" alt="Handwritten: 13.16.6 API Export/Import Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-handwritten.svg" alt="Handwritten: 13.16.6 API Export/Import Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-diagram.svg" alt="Diagram: 13.16.6 API Export/Import Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-diagram.svg" alt="Diagram: 13.16.6 API Export/Import Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-sticky.svg" alt="Sticky Note: 13.16.6 API Export/Import Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/13-preprocessor/13-16-6-api-export-import-macros-sticky.svg" alt="Sticky Note: 13.16.6 API Export/Import Macros" width="30%">
 </a>
 
 

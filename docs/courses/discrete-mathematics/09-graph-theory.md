@@ -55,14 +55,14 @@ flowchart LR
 
 ### 9.1 Definition
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-handwritten.svg" alt="Handwritten: 9.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-handwritten.svg" alt="Handwritten: 9.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-diagram.svg" alt="Diagram: 9.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-diagram.svg" alt="Diagram: 9.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-sticky.svg" alt="Sticky Note: 9.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-1-definition-sticky.svg" alt="Sticky Note: 9.1 Definition" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ A **graph** $G = (V, E)$ consists of a set $V$ of **vertices** (or **nodes**) an
 
 ### 9.2 Basic Concepts
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-handwritten.svg" alt="Handwritten: 9.2 Basic Concepts" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-handwritten.svg" alt="Handwritten: 9.2 Basic Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-diagram.svg" alt="Diagram: 9.2 Basic Concepts" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-diagram.svg" alt="Diagram: 9.2 Basic Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-sticky.svg" alt="Sticky Note: 9.2 Basic Concepts" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-2-basic-concepts-sticky.svg" alt="Sticky Note: 9.2 Basic Concepts" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ A **graph** $G = (V, E)$ consists of a set $V$ of **vertices** (or **nodes**) an
 
 ### 9.3 Connectivity
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-handwritten.svg" alt="Handwritten: 9.3 Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-handwritten.svg" alt="Handwritten: 9.3 Connectivity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-diagram.svg" alt="Diagram: 9.3 Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-diagram.svg" alt="Diagram: 9.3 Connectivity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-sticky.svg" alt="Sticky Note: 9.3 Connectivity" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-3-connectivity-sticky.svg" alt="Sticky Note: 9.3 Connectivity" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ A graph is **connected** if there is a path between any two vertices. A **connec
 
 ### 9.4 Special Graphs
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-handwritten.svg" alt="Handwritten: 9.4 Special Graphs" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-handwritten.svg" alt="Handwritten: 9.4 Special Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-diagram.svg" alt="Diagram: 9.4 Special Graphs" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-diagram.svg" alt="Diagram: 9.4 Special Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-sticky.svg" alt="Sticky Note: 9.4 Special Graphs" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-4-special-graphs-sticky.svg" alt="Sticky Note: 9.4 Special Graphs" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ A graph is **connected** if there is a path between any two vertices. A **connec
 
 ### 9.5 Graph Representations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-handwritten.svg" alt="Handwritten: 9.5 Graph Representations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-handwritten.svg" alt="Handwritten: 9.5 Graph Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-diagram.svg" alt="Diagram: 9.5 Graph Representations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-diagram.svg" alt="Diagram: 9.5 Graph Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-sticky.svg" alt="Sticky Note: 9.5 Graph Representations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-5-graph-representations-sticky.svg" alt="Sticky Note: 9.5 Graph Representations" width="30%">
 </a>
 
 
@@ -219,14 +219,14 @@ class Graph {
 
 ### 9.6 Euler and Hamilton Paths
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-handwritten.svg" alt="Handwritten: 9.6 Euler and Hamilton Paths" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-handwritten.svg" alt="Handwritten: 9.6 Euler and Hamilton Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-diagram.svg" alt="Diagram: 9.6 Euler and Hamilton Paths" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-diagram.svg" alt="Diagram: 9.6 Euler and Hamilton Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-sticky.svg" alt="Sticky Note: 9.6 Euler and Hamilton Paths" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-6-euler-and-hamilton-paths-sticky.svg" alt="Sticky Note: 9.6 Euler and Hamilton Paths" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ No simple characterization exists for Hamiltonian graphs (the problem is NP-comp
 
 ### 9.7 Subgraphs and Graph Isomorphism
 
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-handwritten.svg" alt="Handwritten: 9.7 Subgraphs and Graph Isomorphism" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-handwritten.svg" alt="Handwritten: 9.7 Subgraphs and Graph Isomorphism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-diagram.svg" alt="Diagram: 9.7 Subgraphs and Graph Isomorphism" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-diagram.svg" alt="Diagram: 9.7 Subgraphs and Graph Isomorphism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-sticky.svg" alt="Sticky Note: 9.7 Subgraphs and Graph Isomorphism" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/09-graph-theory/9-7-subgraphs-and-graph-isomorphism-sticky.svg" alt="Sticky Note: 9.7 Subgraphs and Graph Isomorphism" width="30%">
 </a>
 
 

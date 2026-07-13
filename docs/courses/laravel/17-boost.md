@@ -47,14 +47,14 @@ flowchart LR
 
 ### 17.1 What Is Laravel Boost?
 
-<a href="../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-handwritten.svg" alt="Handwritten: 17.1 What Is Laravel Boost?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-handwritten.svg" alt="Handwritten: 17.1 What Is Laravel Boost?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-diagram.svg" alt="Diagram: 17.1 What Is Laravel Boost?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-diagram.svg" alt="Diagram: 17.1 What Is Laravel Boost?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-sticky.svg" alt="Sticky Note: 17.1 What Is Laravel Boost?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-1-what-is-laravel-boost-sticky.svg" alt="Sticky Note: 17.1 What Is Laravel Boost?" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ Boost supports PHP 8.1+ and Laravel 10 through 13. It auto-detects your installe
 
 ### 17.2 Installation
 
-<a href="../../assets/images/diagrams/laravel/17-boost/17-2-installation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-2-installation-handwritten.svg" alt="Handwritten: 17.2 Installation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-2-installation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-2-installation-handwritten.svg" alt="Handwritten: 17.2 Installation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-2-installation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-2-installation-diagram.svg" alt="Diagram: 17.2 Installation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-2-installation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-2-installation-diagram.svg" alt="Diagram: 17.2 Installation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-2-installation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-2-installation-sticky.svg" alt="Sticky Note: 17.2 Installation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-2-installation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-2-installation-sticky.svg" alt="Sticky Note: 17.2 Installation" width="30%">
 </a>
 
 
@@ -171,14 +171,14 @@ The `boost.json` configuration file stores your preferences:
 
 ### 17.3 Vectorized Documentation
 
-<a href="../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-handwritten.svg" alt="Handwritten: 17.3 Vectorized Documentation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-handwritten.svg" alt="Handwritten: 17.3 Vectorized Documentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-diagram.svg" alt="Diagram: 17.3 Vectorized Documentation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-diagram.svg" alt="Diagram: 17.3 Vectorized Documentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-sticky.svg" alt="Sticky Note: 17.3 Vectorized Documentation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-3-vectorized-documentation-sticky.svg" alt="Sticky Note: 17.3 Vectorized Documentation" width="30%">
 </a>
 
 
@@ -222,14 +222,14 @@ $docsBundle = BoostDocs::forVersion($installedVersion);
 
 ### 17.4 Tools
 
-<a href="../../assets/images/diagrams/laravel/17-boost/17-4-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-4-tools-handwritten.svg" alt="Handwritten: 17.4 Tools" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-4-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-4-tools-handwritten.svg" alt="Handwritten: 17.4 Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-4-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-4-tools-diagram.svg" alt="Diagram: 17.4 Tools" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-4-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-4-tools-diagram.svg" alt="Diagram: 17.4 Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-4-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-4-tools-sticky.svg" alt="Sticky Note: 17.4 Tools" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-4-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-4-tools-sticky.svg" alt="Sticky Note: 17.4 Tools" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ All tools are accessed through a unified facade that the AI agent uses automatic
 
 ### 17.5 AI Guidelines
 
-<a href="../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-handwritten.svg" alt="Handwritten: 17.5 AI Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-handwritten.svg" alt="Handwritten: 17.5 AI Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-diagram.svg" alt="Diagram: 17.5 AI Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-diagram.svg" alt="Diagram: 17.5 AI Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-sticky.svg" alt="Sticky Note: 17.5 AI Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/17-boost/17-5-ai-guidelines-sticky.svg" alt="Sticky Note: 17.5 AI Guidelines" width="30%">
 </a>
 
 

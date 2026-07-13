@@ -50,14 +50,14 @@ flowchart LR
 
 ### 4.1 Direct Proof
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-handwritten.svg" alt="Handwritten: 4.1 Direct Proof" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-handwritten.svg" alt="Handwritten: 4.1 Direct Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-diagram.svg" alt="Diagram: 4.1 Direct Proof" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-diagram.svg" alt="Diagram: 4.1 Direct Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-sticky.svg" alt="Sticky Note: 4.1 Direct Proof" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-1-direct-proof-sticky.svg" alt="Sticky Note: 4.1 Direct Proof" width="30%">
 </a>
 
 
@@ -75,14 +75,14 @@ A **direct proof** of $P \implies Q$ assumes $P$ is true and uses logical reason
 
 ### 4.2 Proof by Contrapositive
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-handwritten.svg" alt="Handwritten: 4.2 Proof by Contrapositive" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-handwritten.svg" alt="Handwritten: 4.2 Proof by Contrapositive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-diagram.svg" alt="Diagram: 4.2 Proof by Contrapositive" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-diagram.svg" alt="Diagram: 4.2 Proof by Contrapositive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-sticky.svg" alt="Sticky Note: 4.2 Proof by Contrapositive" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-2-proof-by-contrapositive-sticky.svg" alt="Sticky Note: 4.2 Proof by Contrapositive" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ The **contrapositive** of $P \implies Q$ is $\neg Q \implies \neg P$. Since they
 
 ### 4.3 Proof by Contradiction
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-handwritten.svg" alt="Handwritten: 4.3 Proof by Contradiction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-handwritten.svg" alt="Handwritten: 4.3 Proof by Contradiction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-diagram.svg" alt="Diagram: 4.3 Proof by Contradiction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-diagram.svg" alt="Diagram: 4.3 Proof by Contradiction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-sticky.svg" alt="Sticky Note: 4.3 Proof by Contradiction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-3-proof-by-contradiction-sticky.svg" alt="Sticky Note: 4.3 Proof by Contradiction" width="30%">
 </a>
 
 
@@ -150,14 +150,14 @@ console.log(findPrimeBeyond(10)); // some prime > 10
 
 ### 4.4 Counterexample
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-handwritten.svg" alt="Handwritten: 4.4 Counterexample" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-handwritten.svg" alt="Handwritten: 4.4 Counterexample" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-diagram.svg" alt="Diagram: 4.4 Counterexample" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-diagram.svg" alt="Diagram: 4.4 Counterexample" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-sticky.svg" alt="Sticky Note: 4.4 Counterexample" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-4-counterexample-sticky.svg" alt="Sticky Note: 4.4 Counterexample" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ To disprove a universally quantified statement $\forall x\; P(x)$, it suffices t
 
 ### 4.5 Mathematical Induction
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-handwritten.svg" alt="Handwritten: 4.5 Mathematical Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-handwritten.svg" alt="Handwritten: 4.5 Mathematical Induction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-diagram.svg" alt="Diagram: 4.5 Mathematical Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-diagram.svg" alt="Diagram: 4.5 Mathematical Induction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-sticky.svg" alt="Sticky Note: 4.5 Mathematical Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-5-mathematical-induction-sticky.svg" alt="Sticky Note: 4.5 Mathematical Induction" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ console.log("All checks passed for n = 1 to 100");
 
 ### 4.6 Strong Induction
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-handwritten.svg" alt="Handwritten: 4.6 Strong Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-handwritten.svg" alt="Handwritten: 4.6 Strong Induction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-diagram.svg" alt="Diagram: 4.6 Strong Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-diagram.svg" alt="Diagram: 4.6 Strong Induction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-sticky.svg" alt="Sticky Note: 4.6 Strong Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-6-strong-induction-sticky.svg" alt="Sticky Note: 4.6 Strong Induction" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 ### 4.7 Structural Induction
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-handwritten.svg" alt="Handwritten: 4.7 Structural Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-handwritten.svg" alt="Handwritten: 4.7 Structural Induction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-diagram.svg" alt="Diagram: 4.7 Structural Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-diagram.svg" alt="Diagram: 4.7 Structural Induction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-sticky.svg" alt="Sticky Note: 4.7 Structural Induction" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-7-structural-induction-sticky.svg" alt="Sticky Note: 4.7 Structural Induction" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ Strong induction assumes all smaller instances, not just the immediate predecess
 
 ### 4.8 Proof by Cases
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-handwritten.svg" alt="Handwritten: 4.8 Proof by Cases" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-handwritten.svg" alt="Handwritten: 4.8 Proof by Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-diagram.svg" alt="Diagram: 4.8 Proof by Cases" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-diagram.svg" alt="Diagram: 4.8 Proof by Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-sticky.svg" alt="Sticky Note: 4.8 Proof by Cases" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-8-proof-by-cases-sticky.svg" alt="Sticky Note: 4.8 Proof by Cases" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ In all cases, $n^2$ is $0$ or $1$ mod $3$. $\square$
 
 ### 4.9 Existence Proofs
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-handwritten.svg" alt="Handwritten: 4.9 Existence Proofs" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-handwritten.svg" alt="Handwritten: 4.9 Existence Proofs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-diagram.svg" alt="Diagram: 4.9 Existence Proofs" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-diagram.svg" alt="Diagram: 4.9 Existence Proofs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-sticky.svg" alt="Sticky Note: 4.9 Existence Proofs" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-9-existence-proofs-sticky.svg" alt="Sticky Note: 4.9 Existence Proofs" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ An **existence proof** demonstrates that $\exists x\; P(x)$ is true. **Construct
 
 ### 4.10 Proof Strategy Decision Tree
 
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-handwritten.svg" alt="Handwritten: 4.10 Proof Strategy Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-handwritten.svg" alt="Handwritten: 4.10 Proof Strategy Decision Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-diagram.svg" alt="Diagram: 4.10 Proof Strategy Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-diagram.svg" alt="Diagram: 4.10 Proof Strategy Decision Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-sticky.svg" alt="Sticky Note: 4.10 Proof Strategy Decision Tree" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/04-proofs/4-10-proof-strategy-decision-tree-sticky.svg" alt="Sticky Note: 4.10 Proof Strategy Decision Tree" width="30%">
 </a>
 
 

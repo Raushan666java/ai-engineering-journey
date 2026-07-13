@@ -42,14 +42,14 @@ flowchart TD
 
 ### Interview Panel Composition
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-handwritten.svg" alt="Handwritten: Interview Panel Composition" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-handwritten.svg" alt="Handwritten: Interview Panel Composition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-diagram.svg" alt="Diagram: Interview Panel Composition" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-diagram.svg" alt="Diagram: Interview Panel Composition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-sticky.svg" alt="Sticky Note: Interview Panel Composition" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-sticky.svg" alt="Sticky Note: Interview Panel Composition" width="30%">
 </a>
 
 
@@ -68,14 +68,14 @@ flowchart TD
 
 ### Exam Pattern Overview
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-handwritten.svg" alt="Handwritten: Exam Pattern Overview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-handwritten.svg" alt="Handwritten: Exam Pattern Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-diagram.svg" alt="Diagram: Exam Pattern Overview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-diagram.svg" alt="Diagram: Exam Pattern Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-sticky.svg" alt="Sticky Note: Exam Pattern Overview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-sticky.svg" alt="Sticky Note: Exam Pattern Overview" width="30%">
 </a>
 
 
@@ -89,14 +89,14 @@ flowchart TD
 
 ### Common IBPS SO Interview Questions
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-handwritten.svg" alt="Handwritten: Common IBPS SO Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-handwritten.svg" alt="Handwritten: Common IBPS SO Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-diagram.svg" alt="Diagram: Common IBPS SO Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-diagram.svg" alt="Diagram: Common IBPS SO Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-sticky.svg" alt="Sticky Note: Common IBPS SO Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-sticky.svg" alt="Sticky Note: Common IBPS SO Interview Questions" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 
 ### SBI Interview — Key Facts
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-handwritten.svg" alt="Handwritten: SBI Interview — Key Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-handwritten.svg" alt="Handwritten: SBI Interview — Key Facts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-diagram.svg" alt="Diagram: SBI Interview — Key Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-diagram.svg" alt="Diagram: SBI Interview — Key Facts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-sticky.svg" alt="Sticky Note: SBI Interview — Key Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-sticky.svg" alt="Sticky Note: SBI Interview — Key Facts" width="30%">
 </a>
 
 
@@ -238,14 +238,14 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 
 ### Common SBI Interview Questions
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-handwritten.svg" alt="Handwritten: Common SBI Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-handwritten.svg" alt="Handwritten: Common SBI Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-diagram.svg" alt="Diagram: Common SBI Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-diagram.svg" alt="Diagram: Common SBI Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-sticky.svg" alt="Sticky Note: Common SBI Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-sticky.svg" alt="Sticky Note: Common SBI Interview Questions" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 
 ### NIC Interview Facts
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-handwritten.svg" alt="Handwritten: NIC Interview Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-handwritten.svg" alt="Handwritten: NIC Interview Facts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-diagram.svg" alt="Diagram: NIC Interview Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-diagram.svg" alt="Diagram: NIC Interview Facts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-sticky.svg" alt="Sticky Note: NIC Interview Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-sticky.svg" alt="Sticky Note: NIC Interview Facts" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 
 ### Common NIC Interview Questions
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-handwritten.svg" alt="Handwritten: Common NIC Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-handwritten.svg" alt="Handwritten: Common NIC Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-diagram.svg" alt="Diagram: Common NIC Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-diagram.svg" alt="Diagram: Common NIC Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-sticky.svg" alt="Sticky Note: Common NIC Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-sticky.svg" alt="Sticky Note: Common NIC Interview Questions" width="30%">
 </a>
 
 
@@ -550,14 +550,14 @@ India's rank improved from 118 (2014) to 46 (2024). Parameters:
 
 ### PSU Interview Facts
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-handwritten.svg" alt="Handwritten: PSU Interview Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-handwritten.svg" alt="Handwritten: PSU Interview Facts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-diagram.svg" alt="Diagram: PSU Interview Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-diagram.svg" alt="Diagram: PSU Interview Facts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-sticky.svg" alt="Sticky Note: PSU Interview Facts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-sticky.svg" alt="Sticky Note: PSU Interview Facts" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ India's rank improved from 118 (2014) to 46 (2024). Parameters:
 
 ### Common PSU Interview Questions
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-handwritten.svg" alt="Handwritten: Common PSU Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-handwritten.svg" alt="Handwritten: Common PSU Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-diagram.svg" alt="Diagram: Common PSU Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-diagram.svg" alt="Diagram: Common PSU Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-sticky.svg" alt="Sticky Note: Common PSU Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-sticky.svg" alt="Sticky Note: Common PSU Interview Questions" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### Key Current Affairs Topics for 2024-2026
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-handwritten.svg" alt="Handwritten: Key Current Affairs Topics for 2024-2026" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-handwritten.svg" alt="Handwritten: Key Current Affairs Topics for 2024-2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-diagram.svg" alt="Diagram: Key Current Affairs Topics for 2024-2026" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-diagram.svg" alt="Diagram: Key Current Affairs Topics for 2024-2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-sticky.svg" alt="Sticky Note: Key Current Affairs Topics for 2024-2026" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-sticky.svg" alt="Sticky Note: Key Current Affairs Topics for 2024-2026" width="30%">
 </a>
 
 
@@ -709,14 +709,14 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### Banking Terminology
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-handwritten.svg" alt="Handwritten: Banking Terminology" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-handwritten.svg" alt="Handwritten: Banking Terminology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-diagram.svg" alt="Diagram: Banking Terminology" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-diagram.svg" alt="Diagram: Banking Terminology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-sticky.svg" alt="Sticky Note: Banking Terminology" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-sticky.svg" alt="Sticky Note: Banking Terminology" width="30%">
 </a>
 
 
@@ -747,14 +747,14 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### Budget and Finance Quick Revision
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-handwritten.svg" alt="Handwritten: Budget and Finance Quick Revision" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-handwritten.svg" alt="Handwritten: Budget and Finance Quick Revision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-diagram.svg" alt="Diagram: Budget and Finance Quick Revision" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-diagram.svg" alt="Diagram: Budget and Finance Quick Revision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-sticky.svg" alt="Sticky Note: Budget and Finance Quick Revision" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-sticky.svg" alt="Sticky Note: Budget and Finance Quick Revision" width="30%">
 </a>
 
 
@@ -776,14 +776,14 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### How to Present Your Project in Government Interviews
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-handwritten.svg" alt="Handwritten: How to Present Your Project in Government Interviews" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-handwritten.svg" alt="Handwritten: How to Present Your Project in Government Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-diagram.svg" alt="Diagram: How to Present Your Project in Government Interviews" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-diagram.svg" alt="Diagram: How to Present Your Project in Government Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-sticky.svg" alt="Sticky Note: How to Present Your Project in Government Interviews" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-sticky.svg" alt="Sticky Note: How to Present Your Project in Government Interviews" width="30%">
 </a>
 
 
@@ -802,14 +802,14 @@ flowchart TD
 
 ### Project Defense Template
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-handwritten.svg" alt="Handwritten: Project Defense Template" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-handwritten.svg" alt="Handwritten: Project Defense Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-diagram.svg" alt="Diagram: Project Defense Template" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-diagram.svg" alt="Diagram: Project Defense Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-sticky.svg" alt="Sticky Note: Project Defense Template" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-sticky.svg" alt="Sticky Note: Project Defense Template" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ flowchart TD
 
 ### Questions the Panel May Ask About Your Project
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-handwritten.svg" alt="Handwritten: Questions the Panel May Ask About Your Project" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-handwritten.svg" alt="Handwritten: Questions the Panel May Ask About Your Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-diagram.svg" alt="Diagram: Questions the Panel May Ask About Your Project" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-diagram.svg" alt="Diagram: Questions the Panel May Ask About Your Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-sticky.svg" alt="Sticky Note: Questions the Panel May Ask About Your Project" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-sticky.svg" alt="Sticky Note: Questions the Panel May Ask About Your Project" width="30%">
 </a>
 
 
@@ -848,14 +848,14 @@ flowchart TD
 
 ### Sample Project Defense Script
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-handwritten.svg" alt="Handwritten: Sample Project Defense Script" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-handwritten.svg" alt="Handwritten: Sample Project Defense Script" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-diagram.svg" alt="Diagram: Sample Project Defense Script" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-diagram.svg" alt="Diagram: Sample Project Defense Script" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-sticky.svg" alt="Sticky Note: Sample Project Defense Script" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-sticky.svg" alt="Sticky Note: Sample Project Defense Script" width="30%">
 </a>
 
 
@@ -903,14 +903,14 @@ function calculateETA(
 
 ### Generic Questions to Prepare
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-handwritten.svg" alt="Handwritten: Generic Questions to Prepare" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-handwritten.svg" alt="Handwritten: Generic Questions to Prepare" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-diagram.svg" alt="Diagram: Generic Questions to Prepare" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-diagram.svg" alt="Diagram: Generic Questions to Prepare" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-sticky.svg" alt="Sticky Note: Generic Questions to Prepare" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-sticky.svg" alt="Sticky Note: Generic Questions to Prepare" width="30%">
 </a>
 
 
@@ -945,14 +945,14 @@ function calculateETA(
 
 ### Pay Scales for Government IT Positions
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-handwritten.svg" alt="Handwritten: Pay Scales for Government IT Positions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-handwritten.svg" alt="Handwritten: Pay Scales for Government IT Positions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-diagram.svg" alt="Diagram: Pay Scales for Government IT Positions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-diagram.svg" alt="Diagram: Pay Scales for Government IT Positions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-sticky.svg" alt="Sticky Note: Pay Scales for Government IT Positions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-sticky.svg" alt="Sticky Note: Pay Scales for Government IT Positions" width="30%">
 </a>
 
 
@@ -967,14 +967,14 @@ function calculateETA(
 
 ### PSU Selection Process (Typical)
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-handwritten.svg" alt="Handwritten: PSU Selection Process (Typical)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-handwritten.svg" alt="Handwritten: PSU Selection Process (Typical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-diagram.svg" alt="Diagram: PSU Selection Process (Typical)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-diagram.svg" alt="Diagram: PSU Selection Process (Typical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-sticky.svg" alt="Sticky Note: PSU Selection Process (Typical)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-sticky.svg" alt="Sticky Note: PSU Selection Process (Typical)" width="30%">
 </a>
 
 
@@ -993,14 +993,14 @@ function calculateETA(
 
 ### Interview Dos and Don'ts for Government Panels
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-handwritten.svg" alt="Handwritten: Interview Dos and Don'ts for Government Panels" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-handwritten.svg" alt="Handwritten: Interview Dos and Don'ts for Government Panels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-diagram.svg" alt="Diagram: Interview Dos and Don'ts for Government Panels" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-diagram.svg" alt="Diagram: Interview Dos and Don'ts for Government Panels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-sticky.svg" alt="Sticky Note: Interview Dos and Don'ts for Government Panels" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-sticky.svg" alt="Sticky Note: Interview Dos and Don'ts for Government Panels" width="30%">
 </a>
 
 
@@ -1025,14 +1025,14 @@ function calculateETA(
 
 ### Before the Interview (24 Hours Prior)
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-handwritten.svg" alt="Handwritten: Before the Interview (24 Hours Prior)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-handwritten.svg" alt="Handwritten: Before the Interview (24 Hours Prior)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-diagram.svg" alt="Diagram: Before the Interview (24 Hours Prior)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-diagram.svg" alt="Diagram: Before the Interview (24 Hours Prior)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-sticky.svg" alt="Sticky Note: Before the Interview (24 Hours Prior)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-sticky.svg" alt="Sticky Note: Before the Interview (24 Hours Prior)" width="30%">
 </a>
 
 
@@ -1047,14 +1047,14 @@ function calculateETA(
 
 ### Document Checklist for Government Interviews
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-handwritten.svg" alt="Handwritten: Document Checklist for Government Interviews" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-handwritten.svg" alt="Handwritten: Document Checklist for Government Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-diagram.svg" alt="Diagram: Document Checklist for Government Interviews" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-diagram.svg" alt="Diagram: Document Checklist for Government Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-sticky.svg" alt="Sticky Note: Document Checklist for Government Interviews" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-sticky.svg" alt="Sticky Note: Document Checklist for Government Interviews" width="30%">
 </a>
 
 
@@ -1078,14 +1078,14 @@ Organize in transparent file folders, labeled clearly.
 
 ### The Night Before
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-handwritten.svg" alt="Handwritten: The Night Before" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-handwritten.svg" alt="Handwritten: The Night Before" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-diagram.svg" alt="Diagram: The Night Before" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-diagram.svg" alt="Diagram: The Night Before" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-sticky.svg" alt="Sticky Note: The Night Before" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-sticky.svg" alt="Sticky Note: The Night Before" width="30%">
 </a>
 
 
@@ -1099,14 +1099,14 @@ Organize in transparent file folders, labeled clearly.
 
 ### During the Interview
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-handwritten.svg" alt="Handwritten: During the Interview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-handwritten.svg" alt="Handwritten: During the Interview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-diagram.svg" alt="Diagram: During the Interview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-diagram.svg" alt="Diagram: During the Interview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-sticky.svg" alt="Sticky Note: During the Interview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-sticky.svg" alt="Sticky Note: During the Interview" width="30%">
 </a>
 
 
@@ -1121,14 +1121,14 @@ Organize in transparent file folders, labeled clearly.
 
 ### Common Panel Dynamics
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-handwritten.svg" alt="Handwritten: Common Panel Dynamics" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-handwritten.svg" alt="Handwritten: Common Panel Dynamics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-diagram.svg" alt="Diagram: Common Panel Dynamics" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-diagram.svg" alt="Diagram: Common Panel Dynamics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-sticky.svg" alt="Sticky Note: Common Panel Dynamics" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-sticky.svg" alt="Sticky Note: Common Panel Dynamics" width="30%">
 </a>
 
 
@@ -1142,14 +1142,14 @@ Organize in transparent file folders, labeled clearly.
 
 ### After the Interview
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-handwritten.svg" alt="Handwritten: After the Interview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-handwritten.svg" alt="Handwritten: After the Interview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-diagram.svg" alt="Diagram: After the Interview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-diagram.svg" alt="Diagram: After the Interview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-sticky.svg" alt="Sticky Note: After the Interview" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-sticky.svg" alt="Sticky Note: After the Interview" width="30%">
 </a>
 
 
@@ -1167,14 +1167,14 @@ Organize in transparent file folders, labeled clearly.
 
 ### Mock Interview Simulation
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-handwritten.svg" alt="Handwritten: Mock Interview Simulation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-handwritten.svg" alt="Handwritten: Mock Interview Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-diagram.svg" alt="Diagram: Mock Interview Simulation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-diagram.svg" alt="Diagram: Mock Interview Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-sticky.svg" alt="Sticky Note: Mock Interview Simulation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-sticky.svg" alt="Sticky Note: Mock Interview Simulation" width="30%">
 </a>
 
 
@@ -1198,14 +1198,14 @@ Organize in transparent file folders, labeled clearly.
 
 ### Self-Evaluation Checklist
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-handwritten.svg" alt="Handwritten: Self-Evaluation Checklist" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-handwritten.svg" alt="Handwritten: Self-Evaluation Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-diagram.svg" alt="Diagram: Self-Evaluation Checklist" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-diagram.svg" alt="Diagram: Self-Evaluation Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-sticky.svg" alt="Sticky Note: Self-Evaluation Checklist" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-sticky.svg" alt="Sticky Note: Self-Evaluation Checklist" width="30%">
 </a>
 
 
@@ -1226,14 +1226,14 @@ After each mock interview, rate yourself:
 
 ### Key Banking and Finance Terms
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-handwritten.svg" alt="Handwritten: Key Banking and Finance Terms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-handwritten.svg" alt="Handwritten: Key Banking and Finance Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-diagram.svg" alt="Diagram: Key Banking and Finance Terms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-diagram.svg" alt="Diagram: Key Banking and Finance Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-sticky.svg" alt="Sticky Note: Key Banking and Finance Terms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-sticky.svg" alt="Sticky Note: Key Banking and Finance Terms" width="30%">
 </a>
 
 
@@ -1263,14 +1263,14 @@ After each mock interview, rate yourself:
 
 ### Key Government IT Terms
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-handwritten.svg" alt="Handwritten: Key Government IT Terms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-handwritten.svg" alt="Handwritten: Key Government IT Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-diagram.svg" alt="Diagram: Key Government IT Terms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-diagram.svg" alt="Diagram: Key Government IT Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-sticky.svg" alt="Sticky Note: Key Government IT Terms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-sticky.svg" alt="Sticky Note: Key Government IT Terms" width="30%">
 </a>
 
 
@@ -1296,14 +1296,14 @@ After each mock interview, rate yourself:
 
 ### Important Abbreviations
 
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-handwritten.svg" alt="Handwritten: Important Abbreviations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-handwritten.svg" alt="Handwritten: Important Abbreviations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-diagram.svg" alt="Diagram: Important Abbreviations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-diagram.svg" alt="Diagram: Important Abbreviations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-sticky.svg" alt="Sticky Note: Important Abbreviations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-sticky.svg" alt="Sticky Note: Important Abbreviations" width="30%">
 </a>
 
 

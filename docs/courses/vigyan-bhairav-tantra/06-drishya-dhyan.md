@@ -33,14 +33,14 @@
 
 ### ओशो का दृष्टि दर्शन — चार स्तर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: ओशो का दृष्टि दर्शन — चार स्तर" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@
 
 ### तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-handwritten.svg" alt="Handwritten: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-handwritten.svg" alt="Handwritten: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-diagram.svg" alt="Diagram: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-diagram.svg" alt="Diagram: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-sticky.svg" alt="Sticky Note: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/point-gazing-sticky.svg" alt="Sticky Note: तकनीक १: त्राटक — बिन्दु पर दृष्टि (Point Gazing)" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@
 
 ### तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-handwritten.svg" alt="Handwritten: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-handwritten.svg" alt="Handwritten: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-diagram.svg" alt="Diagram: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-diagram.svg" alt="Diagram: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-sticky.svg" alt="Sticky Note: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/eyebrow-center-gazing-sticky.svg" alt="Sticky Note: तकनीक २: भ्रूमध्य त्राटक (Eyebrow Center Gazing)" width="30%">
 </a>
 
 
@@ -149,14 +149,14 @@
 
 ### तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-handwritten.svg" alt="Handwritten: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-handwritten.svg" alt="Handwritten: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-diagram.svg" alt="Diagram: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-diagram.svg" alt="Diagram: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-sticky.svg" alt="Sticky Note: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/fire-gazing-sticky.svg" alt="Sticky Note: तकनीक ३: अग्नि त्राटक — ज्वाला ध्यान (Fire Gazing)" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@
 
 ### तकनीक ४: आकाश ध्यान (Space Gazing)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-handwritten.svg" alt="Handwritten: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-handwritten.svg" alt="Handwritten: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-diagram.svg" alt="Diagram: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-diagram.svg" alt="Diagram: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-sticky.svg" alt="Sticky Note: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/space-gazing-sticky.svg" alt="Sticky Note: तकनीक ४: आकाश ध्यान (Space Gazing)" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@
 
 ### तकनीक ५: अन्धकार ध्यान (Darkness Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-handwritten.svg" alt="Handwritten: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-handwritten.svg" alt="Handwritten: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-diagram.svg" alt="Diagram: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-diagram.svg" alt="Diagram: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-sticky.svg" alt="Sticky Note: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/darkness-meditation-sticky.svg" alt="Sticky Note: तकनीक ५: अन्धकार ध्यान (Darkness Meditation)" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@
 
 ### तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-handwritten.svg" alt="Handwritten: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-handwritten.svg" alt="Handwritten: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-diagram.svg" alt="Diagram: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-diagram.svg" alt="Diagram: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-sticky.svg" alt="Sticky Note: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/inner-light-of-the-heart-sticky.svg" alt="Sticky Note: तकनीक ६: हृदय ज्योति ध्यान (Inner Light of the Heart)" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@
 
 ### तकनीक ७: शून्य ध्यान (Void Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-handwritten.svg" alt="Handwritten: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-handwritten.svg" alt="Handwritten: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-diagram.svg" alt="Diagram: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-diagram.svg" alt="Diagram: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-sticky.svg" alt="Sticky Note: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/void-meditation-sticky.svg" alt="Sticky Note: तकनीक ७: शून्य ध्यान (Void Meditation)" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@
 
 ### तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-handwritten.svg" alt="Handwritten: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-handwritten.svg" alt="Handwritten: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-diagram.svg" alt="Diagram: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-diagram.svg" alt="Diagram: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-sticky.svg" alt="Sticky Note: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/reflection-meditation-sticky.svg" alt="Sticky Note: तकनीक ८: प्रतिबिम्ब ध्यान (Reflection Meditation)" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@
 
 ### तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-handwritten.svg" alt="Handwritten: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-handwritten.svg" alt="Handwritten: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-diagram.svg" alt="Diagram: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-diagram.svg" alt="Diagram: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-sticky.svg" alt="Sticky Note: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/microcosm-macrocosm-vision-sticky.svg" alt="Sticky Note: तकनीक ९: पिंड-ब्रह्माण्ड दर्शन (Microcosm-Macrocosm Vision)" width="30%">
 </a>
 
 
@@ -594,14 +594,14 @@ tratak.start();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 **ओशो के अनुसार त्राटक क्या है?**
@@ -613,14 +613,14 @@ tratak.start();
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 **ओशो के 'देखने' के चार स्तर कौन-से हैं?**
@@ -632,14 +632,14 @@ tratak.start();
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 **अग्नि त्राटक में ज्वाला के किस भाग को देखना चाहिए — ओशो के अनुसार?**
@@ -651,14 +651,14 @@ tratak.start();
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 **आकाश ध्यान में किस पर ध्यान देना चाहिए?**
@@ -670,14 +670,14 @@ tratak.start();
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 **ओशो के अनुसार अन्धकार ध्यान का उद्देश्य क्या है?**
@@ -689,14 +689,14 @@ tratak.start();
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 **भ्रूमध्य त्राटक में आँखों को किस ओर मोड़ना चाहिए?**
@@ -708,14 +708,14 @@ tratak.start();
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 **हृदय ज्योति ध्यान में क्या कल्पना करनी चाहिए?**
@@ -727,14 +727,14 @@ tratak.start();
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 **ओशो ने त्राटक को किस ज़ेन कहानी से समझाया?**
@@ -746,14 +746,14 @@ tratak.start();
 
 ### प्रश्न ९
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
 </a>
 
 **प्रतिबिम्ब ध्यान में ओशो क्या सिखाते हैं?**
@@ -765,14 +765,14 @@ tratak.start();
 
 ### प्रश्न १०
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
 </a>
 
 **शून्य ध्यान की विशेषता क्या है — ओशो के अनुसार?**
@@ -786,14 +786,14 @@ tratak.start();
 
 ### उत्तर कुंजी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
 </a>
 
 
@@ -816,14 +816,14 @@ tratak.start();
 
 ### अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास १: ११-दिन त्राटक चुनौती — ओशो शैली" width="30%">
 </a>
 
 
@@ -831,14 +831,14 @@ tratak.start();
 
 ### अभ्यास २: अग्नि त्राटक — सात दीपक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास २: अग्नि त्राटक — सात दीपक" width="30%">
 </a>
 
 
@@ -846,14 +846,14 @@ tratak.start();
 
 ### अभ्यास ३: आकाश ध्यान — १५ मिनट
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ३: आकाश ध्यान — १५ मिनट" width="30%">
 </a>
 
 
@@ -861,14 +861,14 @@ tratak.start();
 
 ### अभ्यास ४: अन्धकार ध्यान — ७ दिन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ४: अन्धकार ध्यान — ७ दिन" width="30%">
 </a>
 
 
@@ -876,14 +876,14 @@ tratak.start();
 
 ### अभ्यास ५: TypeScript त्राटक टाइमर विस्तार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript त्राटक टाइमर विस्तार" width="30%">
 </a>
 
 
@@ -891,14 +891,14 @@ tratak.start();
 
 ### अभ्यास ६: चारों स्तरों पर देखना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ६: चारों स्तरों पर देखना" width="30%">
 </a>
 
 
@@ -906,14 +906,14 @@ tratak.start();
 
 ### अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/06-drishya-dhyan/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): १०८ मिनट का महात्राटक" width="30%">
 </a>
 
 

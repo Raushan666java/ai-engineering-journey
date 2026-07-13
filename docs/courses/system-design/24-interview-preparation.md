@@ -76,14 +76,14 @@ flowchart TB
 
 ### Phase 1: The Interview Format
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-handwritten.svg" alt="Handwritten: Phase 1: The Interview Format" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-handwritten.svg" alt="Handwritten: Phase 1: The Interview Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-diagram.svg" alt="Diagram: Phase 1: The Interview Format" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-diagram.svg" alt="Diagram: Phase 1: The Interview Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-sticky.svg" alt="Sticky Note: Phase 1: The Interview Format" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-1-the-interview-format-sticky.svg" alt="Sticky Note: Phase 1: The Interview Format" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ The interviewer is evaluating four dimensions simultaneously:
 
 ### Phase 2: The Structured Answer Framework
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-handwritten.svg" alt="Handwritten: Phase 2: The Structured Answer Framework" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-handwritten.svg" alt="Handwritten: Phase 2: The Structured Answer Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-diagram.svg" alt="Diagram: Phase 2: The Structured Answer Framework" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-diagram.svg" alt="Diagram: Phase 2: The Structured Answer Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-sticky.svg" alt="Sticky Note: Phase 2: The Structured Answer Framework" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-2-the-structured-answer-framework-sticky.svg" alt="Sticky Note: Phase 2: The Structured Answer Framework" width="30%">
 </a>
 
 
@@ -316,14 +316,14 @@ This phase is your opportunity to show that you understand engineering as a seri
 
 ### Phase 3: Company-Specific Question Catalogs
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-handwritten.svg" alt="Handwritten: Phase 3: Company-Specific Question Catalogs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-handwritten.svg" alt="Handwritten: Phase 3: Company-Specific Question Catalogs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-diagram.svg" alt="Diagram: Phase 3: Company-Specific Question Catalogs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-diagram.svg" alt="Diagram: Phase 3: Company-Specific Question Catalogs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-sticky.svg" alt="Sticky Note: Phase 3: Company-Specific Question Catalogs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-3-company-specific-question-catalogs-sticky.svg" alt="Sticky Note: Phase 3: Company-Specific Question Catalogs" width="30%">
 </a>
 
 
@@ -406,14 +406,14 @@ For LLD questions, draw a class diagram with relationships (inheritance, composi
 
 ### Phase 4: Common Pitfalls
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-handwritten.svg" alt="Handwritten: Phase 4: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-handwritten.svg" alt="Handwritten: Phase 4: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-diagram.svg" alt="Diagram: Phase 4: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-diagram.svg" alt="Diagram: Phase 4: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-sticky.svg" alt="Sticky Note: Phase 4: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-4-common-pitfalls-sticky.svg" alt="Sticky Note: Phase 4: Common Pitfalls" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ Skipping the estimation and jumping to architecture is a red flag. The estimatio
 
 ### Phase 5: The Evaluation Rubric
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-handwritten.svg" alt="Handwritten: Phase 5: The Evaluation Rubric" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-handwritten.svg" alt="Handwritten: Phase 5: The Evaluation Rubric" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-diagram.svg" alt="Diagram: Phase 5: The Evaluation Rubric" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-diagram.svg" alt="Diagram: Phase 5: The Evaluation Rubric" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-sticky.svg" alt="Sticky Note: Phase 5: The Evaluation Rubric" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-5-the-evaluation-rubric-sticky.svg" alt="Sticky Note: Phase 5: The Evaluation Rubric" width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ FAANG companies evaluate system design against level-specific criteria. Understa
 
 ### Phase 6: Mock Interview Workflow
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-handwritten.svg" alt="Handwritten: Phase 6: Mock Interview Workflow" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-handwritten.svg" alt="Handwritten: Phase 6: Mock Interview Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-diagram.svg" alt="Diagram: Phase 6: Mock Interview Workflow" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-diagram.svg" alt="Diagram: Phase 6: Mock Interview Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-sticky.svg" alt="Sticky Note: Phase 6: Mock Interview Workflow" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/phase-6-mock-interview-workflow-sticky.svg" alt="Sticky Note: Phase 6: Mock Interview Workflow" width="30%">
 </a>
 
 
@@ -589,14 +589,14 @@ This case study directly maps to interview expectations: when you design a syste
 
 ### Implementation: System Design Interview Preparation
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-handwritten.svg" alt="Handwritten: Implementation: System Design Interview Preparation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-handwritten.svg" alt="Handwritten: Implementation: System Design Interview Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-diagram.svg" alt="Diagram: Implementation: System Design Interview Preparation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-diagram.svg" alt="Diagram: Implementation: System Design Interview Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-sticky.svg" alt="Sticky Note: Implementation: System Design Interview Preparation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/implementation-system-design-interview-preparation-sticky.svg" alt="Sticky Note: Implementation: System Design Interview Preparation" width="30%">
 </a>
 
 
@@ -1050,14 +1050,14 @@ class MockInterviewScorer {
 
 ### Resources for Further Study
 
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-handwritten.svg" alt="Handwritten: Resources for Further Study" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-handwritten.svg" alt="Handwritten: Resources for Further Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-diagram.svg" alt="Diagram: Resources for Further Study" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-diagram.svg" alt="Diagram: Resources for Further Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-sticky.svg" alt="Sticky Note: Resources for Further Study" width="30%">
+<a href="../../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/24-interview-preparation/resources-for-further-study-sticky.svg" alt="Sticky Note: Resources for Further Study" width="30%">
 </a>
 
 

@@ -62,14 +62,14 @@ flowchart LR
 
 ### ClassPathXmlApplicationContext (XML Metadata)
 
-<a href="../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-handwritten.svg" alt="Handwritten: ClassPathXmlApplicationContext (XML Metadata)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-handwritten.svg" alt="Handwritten: ClassPathXmlApplicationContext (XML Metadata)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-diagram.svg" alt="Diagram: ClassPathXmlApplicationContext (XML Metadata)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-diagram.svg" alt="Diagram: ClassPathXmlApplicationContext (XML Metadata)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-sticky.svg" alt="Sticky Note: ClassPathXmlApplicationContext (XML Metadata)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/classpathxmlapplicationcontext-xml-metadata-sticky.svg" alt="Sticky Note: ClassPathXmlApplicationContext (XML Metadata)" width="30%">
 </a>
 
 
@@ -118,14 +118,14 @@ class Greeter {
 
 ### AnnotationConfigApplicationContext
 
-<a href="../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-handwritten.svg" alt="Handwritten: AnnotationConfigApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-handwritten.svg" alt="Handwritten: AnnotationConfigApplicationContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-diagram.svg" alt="Diagram: AnnotationConfigApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-diagram.svg" alt="Diagram: AnnotationConfigApplicationContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-sticky.svg" alt="Sticky Note: AnnotationConfigApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/annotationconfigapplicationcontext-sticky.svg" alt="Sticky Note: AnnotationConfigApplicationContext" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ class HelloService {
 
 ### GenericApplicationContext
 
-<a href="../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-handwritten.svg" alt="Handwritten: GenericApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-handwritten.svg" alt="Handwritten: GenericApplicationContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-diagram.svg" alt="Diagram: GenericApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-diagram.svg" alt="Diagram: GenericApplicationContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-sticky.svg" alt="Sticky Note: GenericApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/genericapplicationcontext-sticky.svg" alt="Sticky Note: GenericApplicationContext" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ class Reporter {
 
 ### ConfigurableApplicationContext
 
-<a href="../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-handwritten.svg" alt="Handwritten: ConfigurableApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-handwritten.svg" alt="Handwritten: ConfigurableApplicationContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-diagram.svg" alt="Diagram: ConfigurableApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-diagram.svg" alt="Diagram: ConfigurableApplicationContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-sticky.svg" alt="Sticky Note: ConfigurableApplicationContext" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/configurableapplicationcontext-sticky.svg" alt="Sticky Note: ConfigurableApplicationContext" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ class Runner {
 
 ### Summary of ApplicationContext Implementations
 
-<a href="../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-handwritten.svg" alt="Handwritten: Summary of ApplicationContext Implementations" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-handwritten.svg" alt="Handwritten: Summary of ApplicationContext Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-diagram.svg" alt="Diagram: Summary of ApplicationContext Implementations" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-diagram.svg" alt="Diagram: Summary of ApplicationContext Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-sticky.svg" alt="Sticky Note: Summary of ApplicationContext Implementations" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/summary-of-applicationcontext-implementations-sticky.svg" alt="Sticky Note: Summary of ApplicationContext Implementations" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ Stereotype annotations mark classes as Spring-managed beans. The container disco
 
 ### The Annotation Hierarchy
 
-<a href="../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-handwritten.svg" alt="Handwritten: The Annotation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-handwritten.svg" alt="Handwritten: The Annotation Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-diagram.svg" alt="Diagram: The Annotation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-diagram.svg" alt="Diagram: The Annotation Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-sticky.svg" alt="Sticky Note: The Annotation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/the-annotation-hierarchy-sticky.svg" alt="Sticky Note: The Annotation Hierarchy" width="30%">
 </a>
 
 
@@ -371,14 +371,14 @@ Every stereotype is meta-annotated with `@Component`. Spring's component scanner
 
 ### Basic @Component
 
-<a href="../../assets/images/diagrams/java/10-di-container/basic-component-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-component-handwritten.svg" alt="Handwritten: Basic @Component" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-component-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-component-handwritten.svg" alt="Handwritten: Basic @Component" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/basic-component-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-component-diagram.svg" alt="Diagram: Basic @Component" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-component-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-component-diagram.svg" alt="Diagram: Basic @Component" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/basic-component-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-component-sticky.svg" alt="Sticky Note: Basic @Component" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-component-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-component-sticky.svg" alt="Sticky Note: Basic @Component" width="30%">
 </a>
 
 
@@ -416,14 +416,14 @@ Implicit bean name: the class name with a lower-case first letter ÃƒÂ¢Ã¢â
 
 ### @Service
 
-<a href="../../assets/images/diagrams/java/10-di-container/service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/service-handwritten.svg" alt="Handwritten: @Service" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/service-handwritten.svg" alt="Handwritten: @Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/service-diagram.svg" alt="Diagram: @Service" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/service-diagram.svg" alt="Diagram: @Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/service-sticky.svg" alt="Sticky Note: @Service" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/service-sticky.svg" alt="Sticky Note: @Service" width="30%">
 </a>
 
 
@@ -456,14 +456,14 @@ public class VehicleService {
 
 ### @Repository
 
-<a href="../../assets/images/diagrams/java/10-di-container/repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/repository-handwritten.svg" alt="Handwritten: @Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/repository-handwritten.svg" alt="Handwritten: @Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/repository-diagram.svg" alt="Diagram: @Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/repository-diagram.svg" alt="Diagram: @Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/repository-sticky.svg" alt="Sticky Note: @Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/repository-sticky.svg" alt="Sticky Note: @Repository" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ public class ProductService {
 
 ### @Controller and @RestController
 
-<a href="../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-handwritten.svg" alt="Handwritten: @Controller and @RestController" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-handwritten.svg" alt="Handwritten: @Controller and @RestController" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-diagram.svg" alt="Diagram: @Controller and @RestController" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-diagram.svg" alt="Diagram: @Controller and @RestController" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-sticky.svg" alt="Sticky Note: @Controller and @RestController" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/controller-and-restcontroller-sticky.svg" alt="Sticky Note: @Controller and @RestController" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ public @interface RestController {
 
 ### What Gets Scanned?
 
-<a href="../../assets/images/diagrams/java/10-di-container/what-gets-scanned-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/what-gets-scanned-handwritten.svg" alt="Handwritten: What Gets Scanned?" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/what-gets-scanned-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/what-gets-scanned-handwritten.svg" alt="Handwritten: What Gets Scanned?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/what-gets-scanned-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/what-gets-scanned-diagram.svg" alt="Diagram: What Gets Scanned?" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/what-gets-scanned-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/what-gets-scanned-diagram.svg" alt="Diagram: What Gets Scanned?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/what-gets-scanned-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/what-gets-scanned-sticky.svg" alt="Sticky Note: What Gets Scanned?" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/what-gets-scanned-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/what-gets-scanned-sticky.svg" alt="Sticky Note: What Gets Scanned?" width="30%">
 </a>
 
 
@@ -615,14 +615,14 @@ public class ScanConfig {
 
 ### Excluding and Filtering Components
 
-<a href="../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-handwritten.svg" alt="Handwritten: Excluding and Filtering Components" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-handwritten.svg" alt="Handwritten: Excluding and Filtering Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-diagram.svg" alt="Diagram: Excluding and Filtering Components" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-diagram.svg" alt="Diagram: Excluding and Filtering Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-sticky.svg" alt="Sticky Note: Excluding and Filtering Components" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/excluding-and-filtering-components-sticky.svg" alt="Sticky Note: Excluding and Filtering Components" width="30%">
 </a>
 
 
@@ -658,14 +658,14 @@ When you cannot ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â or should not ÃƒÂ¢Ã�
 
 ### Basic @Bean Declaration
 
-<a href="../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-handwritten.svg" alt="Handwritten: Basic @Bean Declaration" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-handwritten.svg" alt="Handwritten: Basic @Bean Declaration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-diagram.svg" alt="Diagram: Basic @Bean Declaration" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-diagram.svg" alt="Diagram: Basic @Bean Declaration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-sticky.svg" alt="Sticky Note: Basic @Bean Declaration" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-bean-declaration-sticky.svg" alt="Sticky Note: Basic @Bean Declaration" width="30%">
 </a>
 
 
@@ -715,14 +715,14 @@ Spring intercepts calls to `@Bean` methods inside `@Configuration` classes and r
 
 ### Bean Names
 
-<a href="../../assets/images/diagrams/java/10-di-container/bean-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-names-handwritten.svg" alt="Handwritten: Bean Names" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-names-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-names-handwritten.svg" alt="Handwritten: Bean Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/bean-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-names-diagram.svg" alt="Diagram: Bean Names" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-names-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-names-diagram.svg" alt="Diagram: Bean Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/bean-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-names-sticky.svg" alt="Sticky Note: Bean Names" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-names-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-names-sticky.svg" alt="Sticky Note: Bean Names" width="30%">
 </a>
 
 
@@ -765,14 +765,14 @@ class DataSource {
 
 ### initMethod and destroyMethod
 
-<a href="../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-handwritten.svg" alt="Handwritten: initMethod and destroyMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-handwritten.svg" alt="Handwritten: initMethod and destroyMethod" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-diagram.svg" alt="Diagram: initMethod and destroyMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-diagram.svg" alt="Diagram: initMethod and destroyMethod" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-sticky.svg" alt="Sticky Note: initMethod and destroyMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/initmethod-and-destroymethod-sticky.svg" alt="Sticky Note: initMethod and destroyMethod" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ Spring infers a default `destroyMethod` called `close` or `shutdown` if they exi
 
 ### @Bean(autowire = ...)
 
-<a href="../../assets/images/diagrams/java/10-di-container/bean-autowire-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-autowire-handwritten.svg" alt="Handwritten: @Bean(autowire = ...)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-autowire-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-autowire-handwritten.svg" alt="Handwritten: @Bean(autowire = ...)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/bean-autowire-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-autowire-diagram.svg" alt="Diagram: @Bean(autowire = ...)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-autowire-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-autowire-diagram.svg" alt="Diagram: @Bean(autowire = ...)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/bean-autowire-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-autowire-sticky.svg" alt="Sticky Note: @Bean(autowire = ...)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-autowire-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-autowire-sticky.svg" alt="Sticky Note: @Bean(autowire = ...)" width="30%">
 </a>
 
 
@@ -844,14 +844,14 @@ This exists only for backwards compatibility. Modern Spring uses constructor inj
 
 ### @Bean with Scopes
 
-<a href="../../assets/images/diagrams/java/10-di-container/bean-with-scopes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-with-scopes-handwritten.svg" alt="Handwritten: @Bean with Scopes" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-with-scopes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-with-scopes-handwritten.svg" alt="Handwritten: @Bean with Scopes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/bean-with-scopes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-with-scopes-diagram.svg" alt="Diagram: @Bean with Scopes" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-with-scopes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-with-scopes-diagram.svg" alt="Diagram: @Bean with Scopes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/bean-with-scopes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/bean-with-scopes-sticky.svg" alt="Sticky Note: @Bean with Scopes" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/bean-with-scopes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/bean-with-scopes-sticky.svg" alt="Sticky Note: @Bean with Scopes" width="30%">
 </a>
 
 
@@ -890,14 +890,14 @@ class Notification {
 
 ### Conditional @Bean
 
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-bean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-bean-handwritten.svg" alt="Handwritten: Conditional @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-bean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-bean-handwritten.svg" alt="Handwritten: Conditional @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-bean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-bean-diagram.svg" alt="Diagram: Conditional @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-bean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-bean-diagram.svg" alt="Diagram: Conditional @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-bean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-bean-sticky.svg" alt="Sticky Note: Conditional @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-bean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-bean-sticky.svg" alt="Sticky Note: Conditional @Bean" width="30%">
 </a>
 
 
@@ -946,14 +946,14 @@ class PaymentGateway {
 
 ### Field Injection
 
-<a href="../../assets/images/diagrams/java/10-di-container/field-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/field-injection-handwritten.svg" alt="Handwritten: Field Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/field-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/field-injection-handwritten.svg" alt="Handwritten: Field Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/field-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/field-injection-diagram.svg" alt="Diagram: Field Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/field-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/field-injection-diagram.svg" alt="Diagram: Field Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/field-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/field-injection-sticky.svg" alt="Sticky Note: Field Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/field-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/field-injection-sticky.svg" alt="Sticky Note: Field Injection" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ public class FieldInjectionExample {
 
 ### Setter Injection
 
-<a href="../../assets/images/diagrams/java/10-di-container/setter-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/setter-injection-handwritten.svg" alt="Handwritten: Setter Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/setter-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/setter-injection-handwritten.svg" alt="Handwritten: Setter Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/setter-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/setter-injection-diagram.svg" alt="Diagram: Setter Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/setter-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/setter-injection-diagram.svg" alt="Diagram: Setter Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/setter-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/setter-injection-sticky.svg" alt="Sticky Note: Setter Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/setter-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/setter-injection-sticky.svg" alt="Sticky Note: Setter Injection" width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ Better than field injection ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â swapping impl
 
 ### Constructor Injection (Recommended)
 
-<a href="../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-handwritten.svg" alt="Handwritten: Constructor Injection (Recommended)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-handwritten.svg" alt="Handwritten: Constructor Injection (Recommended)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-diagram.svg" alt="Diagram: Constructor Injection (Recommended)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-diagram.svg" alt="Diagram: Constructor Injection (Recommended)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-sticky.svg" alt="Sticky Note: Constructor Injection (Recommended)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/constructor-injection-recommended-sticky.svg" alt="Sticky Note: Constructor Injection (Recommended)" width="30%">
 </a>
 
 
@@ -1099,14 +1099,14 @@ class FarewellService {
 
 ### Optional Injection
 
-<a href="../../assets/images/diagrams/java/10-di-container/optional-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/optional-injection-handwritten.svg" alt="Handwritten: Optional Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/optional-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/optional-injection-handwritten.svg" alt="Handwritten: Optional Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/optional-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/optional-injection-diagram.svg" alt="Diagram: Optional Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/optional-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/optional-injection-diagram.svg" alt="Diagram: Optional Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/optional-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/optional-injection-sticky.svg" alt="Sticky Note: Optional Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/optional-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/optional-injection-sticky.svg" alt="Sticky Note: Optional Injection" width="30%">
 </a>
 
 
@@ -1172,14 +1172,14 @@ class MetricsCollector {
 
 ### @Autowired on Methods (Arbitrary Configuration)
 
-<a href="../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-handwritten.svg" alt="Handwritten: @Autowired on Methods (Arbitrary Configuration)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-handwritten.svg" alt="Handwritten: @Autowired on Methods (Arbitrary Configuration)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-diagram.svg" alt="Diagram: @Autowired on Methods (Arbitrary Configuration)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-diagram.svg" alt="Diagram: @Autowired on Methods (Arbitrary Configuration)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-sticky.svg" alt="Sticky Note: @Autowired on Methods (Arbitrary Configuration)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/autowired-on-methods-arbitrary-configuration-sticky.svg" alt="Sticky Note: @Autowired on Methods (Arbitrary Configuration)" width="30%">
 </a>
 
 
@@ -1221,14 +1221,14 @@ class Transmission {
 
 ### @Autowired with Collections
 
-<a href="../../assets/images/diagrams/java/10-di-container/autowired-with-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/autowired-with-collections-handwritten.svg" alt="Handwritten: @Autowired with Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/autowired-with-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/autowired-with-collections-handwritten.svg" alt="Handwritten: @Autowired with Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/autowired-with-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/autowired-with-collections-diagram.svg" alt="Diagram: @Autowired with Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/autowired-with-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/autowired-with-collections-diagram.svg" alt="Diagram: @Autowired with Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/autowired-with-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/autowired-with-collections-sticky.svg" alt="Sticky Note: @Autowired with Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/autowired-with-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/autowired-with-collections-sticky.svg" alt="Sticky Note: @Autowired with Collections" width="30%">
 </a>
 
 
@@ -1294,14 +1294,14 @@ When multiple beans of the same type exist, `@Qualifier` selects the specific on
 
 ### Basic @Qualifier
 
-<a href="../../assets/images/diagrams/java/10-di-container/basic-qualifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-qualifier-handwritten.svg" alt="Handwritten: Basic @Qualifier" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-qualifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-qualifier-handwritten.svg" alt="Handwritten: Basic @Qualifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/basic-qualifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-qualifier-diagram.svg" alt="Diagram: Basic @Qualifier" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-qualifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-qualifier-diagram.svg" alt="Diagram: Basic @Qualifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/basic-qualifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/basic-qualifier-sticky.svg" alt="Sticky Note: Basic @Qualifier" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/basic-qualifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/basic-qualifier-sticky.svg" alt="Sticky Note: Basic @Qualifier" width="30%">
 </a>
 
 
@@ -1354,14 +1354,14 @@ class SmsSender implements MessageSender {
 
 ### @Qualifier with @Bean
 
-<a href="../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-handwritten.svg" alt="Handwritten: @Qualifier with @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-handwritten.svg" alt="Handwritten: @Qualifier with @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-diagram.svg" alt="Diagram: @Qualifier with @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-diagram.svg" alt="Diagram: @Qualifier with @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-sticky.svg" alt="Sticky Note: @Qualifier with @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/qualifier-with-bean-sticky.svg" alt="Sticky Note: @Qualifier with @Bean" width="30%">
 </a>
 
 
@@ -1418,14 +1418,14 @@ class ReportingService {
 
 ### Custom Qualifier Annotations
 
-<a href="../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-handwritten.svg" alt="Handwritten: Custom Qualifier Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-handwritten.svg" alt="Handwritten: Custom Qualifier Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-diagram.svg" alt="Diagram: Custom Qualifier Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-diagram.svg" alt="Diagram: Custom Qualifier Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-sticky.svg" alt="Sticky Note: Custom Qualifier Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-qualifier-annotations-sticky.svg" alt="Sticky Note: Custom Qualifier Annotations" width="30%">
 </a>
 
 
@@ -1549,14 +1549,14 @@ interface CacheManager {
 
 ### @Primary on @Bean
 
-<a href="../../assets/images/diagrams/java/10-di-container/primary-on-bean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/primary-on-bean-handwritten.svg" alt="Handwritten: @Primary on @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/primary-on-bean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/primary-on-bean-handwritten.svg" alt="Handwritten: @Primary on @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/primary-on-bean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/primary-on-bean-diagram.svg" alt="Diagram: @Primary on @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/primary-on-bean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/primary-on-bean-diagram.svg" alt="Diagram: @Primary on @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/primary-on-bean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/primary-on-bean-sticky.svg" alt="Sticky Note: @Primary on @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/primary-on-bean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/primary-on-bean-sticky.svg" alt="Sticky Note: @Primary on @Bean" width="30%">
 </a>
 
 
@@ -1598,14 +1598,14 @@ class Serializer {
 
 ### @Primary vs @Qualifier Precedence
 
-<a href="../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-handwritten.svg" alt="Handwritten: @Primary vs @Qualifier Precedence" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-handwritten.svg" alt="Handwritten: @Primary vs @Qualifier Precedence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-diagram.svg" alt="Diagram: @Primary vs @Qualifier Precedence" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-diagram.svg" alt="Diagram: @Primary vs @Qualifier Precedence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-sticky.svg" alt="Sticky Note: @Primary vs @Qualifier Precedence" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/primary-vs-qualifier-precedence-sticky.svg" alt="Sticky Note: @Primary vs @Qualifier Precedence" width="30%">
 </a>
 
 
@@ -1635,14 +1635,14 @@ A bean's **scope** determines how many instances the container creates and how t
 
 ### Singleton (Default)
 
-<a href="../../assets/images/diagrams/java/10-di-container/singleton-default-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/singleton-default-handwritten.svg" alt="Handwritten: Singleton (Default)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/singleton-default-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/singleton-default-handwritten.svg" alt="Handwritten: Singleton (Default)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/singleton-default-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/singleton-default-diagram.svg" alt="Diagram: Singleton (Default)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/singleton-default-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/singleton-default-diagram.svg" alt="Diagram: Singleton (Default)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/singleton-default-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/singleton-default-sticky.svg" alt="Sticky Note: Singleton (Default)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/singleton-default-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/singleton-default-sticky.svg" alt="Sticky Note: Singleton (Default)" width="30%">
 </a>
 
 
@@ -1689,14 +1689,14 @@ class SingletonConsumer {
 
 ### Prototype
 
-<a href="../../assets/images/diagrams/java/10-di-container/prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/prototype-handwritten.svg" alt="Handwritten: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/prototype-diagram.svg" alt="Diagram: Prototype" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/prototype-sticky.svg" alt="Sticky Note: Prototype" width="30%">
 </a>
 
 
@@ -1727,14 +1727,14 @@ Every injection or `getBean()` call returns a **new instance**. Spring does **no
 
 ### Request, Session, Application, WebSocket
 
-<a href="../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-handwritten.svg" alt="Handwritten: Request, Session, Application, WebSocket" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-handwritten.svg" alt="Handwritten: Request, Session, Application, WebSocket" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-diagram.svg" alt="Diagram: Request, Session, Application, WebSocket" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-diagram.svg" alt="Diagram: Request, Session, Application, WebSocket" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-sticky.svg" alt="Sticky Note: Request, Session, Application, WebSocket" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/request-session-application-websocket-sticky.svg" alt="Sticky Note: Request, Session, Application, WebSocket" width="30%">
 </a>
 
 
@@ -1801,14 +1801,14 @@ public class AppVisitorCounter {
 
 ### Why proxyMode is Required
 
-<a href="../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-handwritten.svg" alt="Handwritten: Why proxyMode is Required" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-handwritten.svg" alt="Handwritten: Why proxyMode is Required" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-diagram.svg" alt="Diagram: Why proxyMode is Required" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-diagram.svg" alt="Diagram: Why proxyMode is Required" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-sticky.svg" alt="Sticky Note: Why proxyMode is Required" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/why-proxymode-is-required-sticky.svg" alt="Sticky Note: Why proxyMode is Required" width="30%">
 </a>
 
 
@@ -1848,14 +1848,14 @@ Proxy modes:
 
 ### WebSocket Scope
 
-<a href="../../assets/images/diagrams/java/10-di-container/websocket-scope-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/websocket-scope-handwritten.svg" alt="Handwritten: WebSocket Scope" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/websocket-scope-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/websocket-scope-handwritten.svg" alt="Handwritten: WebSocket Scope" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/websocket-scope-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/websocket-scope-diagram.svg" alt="Diagram: WebSocket Scope" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/websocket-scope-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/websocket-scope-diagram.svg" alt="Diagram: WebSocket Scope" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/websocket-scope-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/websocket-scope-sticky.svg" alt="Sticky Note: WebSocket Scope" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/websocket-scope-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/websocket-scope-sticky.svg" alt="Sticky Note: WebSocket Scope" width="30%">
 </a>
 
 
@@ -1893,14 +1893,14 @@ public class WebSocketSessionState {
 
 ### Scope Summary
 
-<a href="../../assets/images/diagrams/java/10-di-container/scope-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/scope-summary-handwritten.svg" alt="Handwritten: Scope Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/scope-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/scope-summary-handwritten.svg" alt="Handwritten: Scope Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/scope-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/scope-summary-diagram.svg" alt="Diagram: Scope Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/scope-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/scope-summary-diagram.svg" alt="Diagram: Scope Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/scope-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/scope-summary-sticky.svg" alt="Sticky Note: Scope Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/scope-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/scope-summary-sticky.svg" alt="Sticky Note: Scope Summary" width="30%">
 </a>
 
 
@@ -1921,14 +1921,14 @@ Spring provides multiple hooks to run initialisation and cleanup logic.
 
 ### @PostConstruct and @PreDestroy
 
-<a href="../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-handwritten.svg" alt="Handwritten: @PostConstruct and @PreDestroy" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-handwritten.svg" alt="Handwritten: @PostConstruct and @PreDestroy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-diagram.svg" alt="Diagram: @PostConstruct and @PreDestroy" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-diagram.svg" alt="Diagram: @PostConstruct and @PreDestroy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-sticky.svg" alt="Sticky Note: @PostConstruct and @PreDestroy" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/postconstruct-and-predestroy-sticky.svg" alt="Sticky Note: @PostConstruct and @PreDestroy" width="30%">
 </a>
 
 
@@ -1966,14 +1966,14 @@ public class LifecycleDemo {
 
 ### InitializingBean and DisposableBean
 
-<a href="../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-handwritten.svg" alt="Handwritten: InitializingBean and DisposableBean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-handwritten.svg" alt="Handwritten: InitializingBean and DisposableBean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-diagram.svg" alt="Diagram: InitializingBean and DisposableBean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-diagram.svg" alt="Diagram: InitializingBean and DisposableBean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-sticky.svg" alt="Sticky Note: InitializingBean and DisposableBean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/initializingbean-and-disposablebean-sticky.svg" alt="Sticky Note: InitializingBean and DisposableBean" width="30%">
 </a>
 
 
@@ -2011,14 +2011,14 @@ These interfaces are Spring-specific (tight coupling). Prefer `@PostConstruct` /
 
 ### Execution Order for a Single Bean
 
-<a href="../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-handwritten.svg" alt="Handwritten: Execution Order for a Single Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-handwritten.svg" alt="Handwritten: Execution Order for a Single Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-diagram.svg" alt="Diagram: Execution Order for a Single Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-diagram.svg" alt="Diagram: Execution Order for a Single Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-sticky.svg" alt="Sticky Note: Execution Order for a Single Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/execution-order-for-a-single-bean-sticky.svg" alt="Sticky Note: Execution Order for a Single Bean" width="30%">
 </a>
 
 
@@ -2035,14 +2035,14 @@ These interfaces are Spring-specific (tight coupling). Prefer `@PostConstruct` /
 
 ### Custom @Bean initMethod and destroyMethod
 
-<a href="../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-handwritten.svg" alt="Handwritten: Custom @Bean initMethod and destroyMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-handwritten.svg" alt="Handwritten: Custom @Bean initMethod and destroyMethod" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-diagram.svg" alt="Diagram: Custom @Bean initMethod and destroyMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-diagram.svg" alt="Diagram: Custom @Bean initMethod and destroyMethod" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-sticky.svg" alt="Sticky Note: Custom @Bean initMethod and destroyMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-bean-initmethod-and-destroymethod-sticky.svg" alt="Sticky Note: Custom @Bean initMethod and destroyMethod" width="30%">
 </a>
 
 
@@ -2077,14 +2077,14 @@ class Server {
 
 ### SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control
 
-<a href="../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-handwritten.svg" alt="Handwritten: SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-handwritten.svg" alt="Handwritten: SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-diagram.svg" alt="Diagram: SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-diagram.svg" alt="Diagram: SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-sticky.svg" alt="Sticky Note: SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/smartlifecycle-fine-grained-lifecycle-control-sticky.svg" alt="Sticky Note: SmartLifecycle ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Fine-Grained Lifecycle Control" width="30%">
 </a>
 
 
@@ -2183,14 +2183,14 @@ class DatabaseMigrationRunner implements SmartLifecycle {
 
 ### @Profile on @Configuration
 
-<a href="../../assets/images/diagrams/java/10-di-container/profile-on-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-on-configuration-handwritten.svg" alt="Handwritten: @Profile on @Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-on-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-on-configuration-handwritten.svg" alt="Handwritten: @Profile on @Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/profile-on-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-on-configuration-diagram.svg" alt="Diagram: @Profile on @Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-on-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-on-configuration-diagram.svg" alt="Diagram: @Profile on @Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/profile-on-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-on-configuration-sticky.svg" alt="Sticky Note: @Profile on @Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-on-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-on-configuration-sticky.svg" alt="Sticky Note: @Profile on @Configuration" width="30%">
 </a>
 
 
@@ -2247,14 +2247,14 @@ class DataSource {
 
 ### @Profile on @Bean
 
-<a href="../../assets/images/diagrams/java/10-di-container/profile-on-bean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-on-bean-handwritten.svg" alt="Handwritten: @Profile on @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-on-bean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-on-bean-handwritten.svg" alt="Handwritten: @Profile on @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/profile-on-bean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-on-bean-diagram.svg" alt="Diagram: @Profile on @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-on-bean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-on-bean-diagram.svg" alt="Diagram: @Profile on @Bean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/profile-on-bean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-on-bean-sticky.svg" alt="Sticky Note: @Profile on @Bean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-on-bean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-on-bean-sticky.svg" alt="Sticky Note: @Profile on @Bean" width="30%">
 </a>
 
 
@@ -2306,14 +2306,14 @@ class FileLogger implements Logger {
 
 ### Activating Profiles
 
-<a href="../../assets/images/diagrams/java/10-di-container/activating-profiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/activating-profiles-handwritten.svg" alt="Handwritten: Activating Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/activating-profiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/activating-profiles-handwritten.svg" alt="Handwritten: Activating Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/activating-profiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/activating-profiles-diagram.svg" alt="Diagram: Activating Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/activating-profiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/activating-profiles-diagram.svg" alt="Diagram: Activating Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/activating-profiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/activating-profiles-sticky.svg" alt="Sticky Note: Activating Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/activating-profiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/activating-profiles-sticky.svg" alt="Sticky Note: Activating Profiles" width="30%">
 </a>
 
 
@@ -2346,14 +2346,14 @@ ctx.refresh();
 
 ### Programmatic Profile Checking
 
-<a href="../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-handwritten.svg" alt="Handwritten: Programmatic Profile Checking" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-handwritten.svg" alt="Handwritten: Programmatic Profile Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-diagram.svg" alt="Diagram: Programmatic Profile Checking" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-diagram.svg" alt="Diagram: Programmatic Profile Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-sticky.svg" alt="Sticky Note: Programmatic Profile Checking" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/programmatic-profile-checking-sticky.svg" alt="Sticky Note: Programmatic Profile Checking" width="30%">
 </a>
 
 
@@ -2400,14 +2400,14 @@ public class ProfileAwareService {
 
 ### Profile Expressions
 
-<a href="../../assets/images/diagrams/java/10-di-container/profile-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-expressions-handwritten.svg" alt="Handwritten: Profile Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-expressions-handwritten.svg" alt="Handwritten: Profile Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/profile-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-expressions-diagram.svg" alt="Diagram: Profile Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-expressions-diagram.svg" alt="Diagram: Profile Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/profile-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/profile-expressions-sticky.svg" alt="Sticky Note: Profile Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/profile-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/profile-expressions-sticky.svg" alt="Sticky Note: Profile Expressions" width="30%">
 </a>
 
 
@@ -2465,14 +2465,14 @@ class Service {
 
 ### Default Profile
 
-<a href="../../assets/images/diagrams/java/10-di-container/default-profile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/default-profile-handwritten.svg" alt="Handwritten: Default Profile" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/default-profile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/default-profile-handwritten.svg" alt="Handwritten: Default Profile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/default-profile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/default-profile-diagram.svg" alt="Diagram: Default Profile" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/default-profile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/default-profile-diagram.svg" alt="Diagram: Default Profile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/default-profile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/default-profile-sticky.svg" alt="Sticky Note: Default Profile" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/default-profile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/default-profile-sticky.svg" alt="Sticky Note: Default Profile" width="30%">
 </a>
 
 
@@ -2514,14 +2514,14 @@ class Greeter {
 
 ### @Conditional with the Condition Interface
 
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-handwritten.svg" alt="Handwritten: @Conditional with the Condition Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-handwritten.svg" alt="Handwritten: @Conditional with the Condition Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-diagram.svg" alt="Diagram: @Conditional with the Condition Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-diagram.svg" alt="Diagram: @Conditional with the Condition Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-sticky.svg" alt="Sticky Note: @Conditional with the Condition Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-with-the-condition-interface-sticky.svg" alt="Sticky Note: @Conditional with the Condition Interface" width="30%">
 </a>
 
 
@@ -2581,14 +2581,14 @@ class FileSystemManager {
 
 ### Spring Boot's @ConditionalOn* Family
 
-<a href="../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-handwritten.svg" alt="Handwritten: Spring Boot's @ConditionalOn* Family" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-handwritten.svg" alt="Handwritten: Spring Boot's @ConditionalOn* Family" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-diagram.svg" alt="Diagram: Spring Boot's @ConditionalOn* Family" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-diagram.svg" alt="Diagram: Spring Boot's @ConditionalOn* Family" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-sticky.svg" alt="Sticky Note: Spring Boot's @ConditionalOn* Family" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/spring-boot-s-conditionalon-family-sticky.svg" alt="Sticky Note: Spring Boot's @ConditionalOn* Family" width="30%">
 </a>
 
 
@@ -2770,14 +2770,14 @@ class HealthIndicator {
 
 ### Custom @Conditional Annotation
 
-<a href="../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-handwritten.svg" alt="Handwritten: Custom @Conditional Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-handwritten.svg" alt="Handwritten: Custom @Conditional Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-diagram.svg" alt="Diagram: Custom @Conditional Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-diagram.svg" alt="Diagram: Custom @Conditional Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-sticky.svg" alt="Sticky Note: Custom @Conditional Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-conditional-annotation-sticky.svg" alt="Sticky Note: Custom @Conditional Annotation" width="30%">
 </a>
 
 
@@ -2855,14 +2855,14 @@ class ProdConfig {
 
 ### Combining Conditions (Logical AND)
 
-<a href="../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-handwritten.svg" alt="Handwritten: Combining Conditions (Logical AND)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-handwritten.svg" alt="Handwritten: Combining Conditions (Logical AND)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-diagram.svg" alt="Diagram: Combining Conditions (Logical AND)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-diagram.svg" alt="Diagram: Combining Conditions (Logical AND)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-sticky.svg" alt="Sticky Note: Combining Conditions (Logical AND)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/combining-conditions-logical-and-sticky.svg" alt="Sticky Note: Combining Conditions (Logical AND)" width="30%">
 </a>
 
 
@@ -2909,14 +2909,14 @@ When a singleton-scoped bean needs a **new instance** of a prototype-scoped bean
 
 ### @Lookup
 
-<a href="../../assets/images/diagrams/java/10-di-container/lookup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/lookup-handwritten.svg" alt="Handwritten: @Lookup" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/lookup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/lookup-handwritten.svg" alt="Handwritten: @Lookup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/lookup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/lookup-diagram.svg" alt="Diagram: @Lookup" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/lookup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/lookup-diagram.svg" alt="Diagram: @Lookup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/lookup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/lookup-sticky.svg" alt="Sticky Note: @Lookup" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/lookup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/lookup-sticky.svg" alt="Sticky Note: @Lookup" width="30%">
 </a>
 
 
@@ -2956,14 +2956,14 @@ Spring generates a concrete subclass of `SingletonProcessor` at runtime (via CGL
 
 ### @Lookup with Parameters (Spring 4.1+)
 
-<a href="../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-handwritten.svg" alt="Handwritten: @Lookup with Parameters (Spring 4.1+)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-handwritten.svg" alt="Handwritten: @Lookup with Parameters (Spring 4.1+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-diagram.svg" alt="Diagram: @Lookup with Parameters (Spring 4.1+)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-diagram.svg" alt="Diagram: @Lookup with Parameters (Spring 4.1+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-sticky.svg" alt="Sticky Note: @Lookup with Parameters (Spring 4.1+)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/lookup-with-parameters-spring-4-1-sticky.svg" alt="Sticky Note: @Lookup with Parameters (Spring 4.1+)" width="30%">
 </a>
 
 
@@ -3008,14 +3008,14 @@ class Report {
 
 ### Provider (Alternative to @Lookup)
 
-<a href="../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-handwritten.svg" alt="Handwritten: Provider (Alternative to @Lookup)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-handwritten.svg" alt="Handwritten: Provider (Alternative to @Lookup)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-diagram.svg" alt="Diagram: Provider (Alternative to @Lookup)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-diagram.svg" alt="Diagram: Provider (Alternative to @Lookup)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-sticky.svg" alt="Sticky Note: Provider (Alternative to @Lookup)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/provider-alternative-to-lookup-sticky.svg" alt="Sticky Note: Provider (Alternative to @Lookup)" width="30%">
 </a>
 
 
@@ -3049,14 +3049,14 @@ Every call to `workerProvider.get()` returns a new prototype instance. This is t
 
 ### ObjectFactory (Spring's Own Provider)
 
-<a href="../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-handwritten.svg" alt="Handwritten: ObjectFactory (Spring's Own Provider)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-handwritten.svg" alt="Handwritten: ObjectFactory (Spring's Own Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-diagram.svg" alt="Diagram: ObjectFactory (Spring's Own Provider)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-diagram.svg" alt="Diagram: ObjectFactory (Spring's Own Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-sticky.svg" alt="Sticky Note: ObjectFactory (Spring's Own Provider)" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/objectfactory-spring-s-own-provider-sticky.svg" alt="Sticky Note: ObjectFactory (Spring's Own Provider)" width="30%">
 </a>
 
 
@@ -3094,14 +3094,14 @@ Spring's event infrastructure allows beans to publish and listen to application 
 
 ### Custom Event
 
-<a href="../../assets/images/diagrams/java/10-di-container/custom-event-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-event-handwritten.svg" alt="Handwritten: Custom Event" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-event-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-event-handwritten.svg" alt="Handwritten: Custom Event" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-event-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-event-diagram.svg" alt="Diagram: Custom Event" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-event-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-event-diagram.svg" alt="Diagram: Custom Event" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/custom-event-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/custom-event-sticky.svg" alt="Sticky Note: Custom Event" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/custom-event-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/custom-event-sticky.svg" alt="Sticky Note: Custom Event" width="30%">
 </a>
 
 
@@ -3147,14 +3147,14 @@ public class InventoryUpdatedEvent {
 
 ### Publishing Events
 
-<a href="../../assets/images/diagrams/java/10-di-container/publishing-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/publishing-events-handwritten.svg" alt="Handwritten: Publishing Events" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/publishing-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/publishing-events-handwritten.svg" alt="Handwritten: Publishing Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/publishing-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/publishing-events-diagram.svg" alt="Diagram: Publishing Events" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/publishing-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/publishing-events-diagram.svg" alt="Diagram: Publishing Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/publishing-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/publishing-events-sticky.svg" alt="Sticky Note: Publishing Events" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/publishing-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/publishing-events-sticky.svg" alt="Sticky Note: Publishing Events" width="30%">
 </a>
 
 
@@ -3188,14 +3188,14 @@ public class OrderService {
 
 ### @EventListener
 
-<a href="../../assets/images/diagrams/java/10-di-container/eventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/eventlistener-handwritten.svg" alt="Handwritten: @EventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/eventlistener-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/eventlistener-handwritten.svg" alt="Handwritten: @EventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/eventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/eventlistener-diagram.svg" alt="Diagram: @EventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/eventlistener-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/eventlistener-diagram.svg" alt="Diagram: @EventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/eventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/eventlistener-sticky.svg" alt="Sticky Note: @EventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/eventlistener-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/eventlistener-sticky.svg" alt="Sticky Note: @EventListener" width="30%">
 </a>
 
 
@@ -3232,14 +3232,14 @@ public class OrderEventListeners {
 
 ### Listener Ordering
 
-<a href="../../assets/images/diagrams/java/10-di-container/listener-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/listener-ordering-handwritten.svg" alt="Handwritten: Listener Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/listener-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/listener-ordering-handwritten.svg" alt="Handwritten: Listener Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/listener-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/listener-ordering-diagram.svg" alt="Diagram: Listener Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/listener-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/listener-ordering-diagram.svg" alt="Diagram: Listener Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/listener-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/listener-ordering-sticky.svg" alt="Sticky Note: Listener Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/listener-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/listener-ordering-sticky.svg" alt="Sticky Note: Listener Ordering" width="30%">
 </a>
 
 
@@ -3275,14 +3275,14 @@ public class OrderedListeners {
 
 ### Conditional Event Handling with SpEL
 
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-handwritten.svg" alt="Handwritten: Conditional Event Handling with SpEL" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-handwritten.svg" alt="Handwritten: Conditional Event Handling with SpEL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-diagram.svg" alt="Diagram: Conditional Event Handling with SpEL" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-diagram.svg" alt="Diagram: Conditional Event Handling with SpEL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-sticky.svg" alt="Sticky Note: Conditional Event Handling with SpEL" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/conditional-event-handling-with-spel-sticky.svg" alt="Sticky Note: Conditional Event Handling with SpEL" width="30%">
 </a>
 
 
@@ -3310,14 +3310,14 @@ public class ConditionalEventListener {
 
 ### @TransactionalEventListener
 
-<a href="../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-handwritten.svg" alt="Handwritten: @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-handwritten.svg" alt="Handwritten: @TransactionalEventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-diagram.svg" alt="Diagram: @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-diagram.svg" alt="Diagram: @TransactionalEventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-sticky.svg" alt="Sticky Note: @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/transactionaleventlistener-sticky.svg" alt="Sticky Note: @TransactionalEventListener" width="30%">
 </a>
 
 
@@ -3360,14 +3360,14 @@ public class TransactionalOrderListeners {
 
 ### Listening to Multiple Event Types
 
-<a href="../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-handwritten.svg" alt="Handwritten: Listening to Multiple Event Types" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-handwritten.svg" alt="Handwritten: Listening to Multiple Event Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-diagram.svg" alt="Diagram: Listening to Multiple Event Types" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-diagram.svg" alt="Diagram: Listening to Multiple Event Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-sticky.svg" alt="Sticky Note: Listening to Multiple Event Types" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/listening-to-multiple-event-types-sticky.svg" alt="Sticky Note: Listening to Multiple Event Types" width="30%">
 </a>
 
 
@@ -3393,14 +3393,14 @@ public class MultiEventListener {
 
 ### Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType
 
-<a href="../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-handwritten.svg" alt="Handwritten: Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-handwritten.svg" alt="Handwritten: Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-diagram.svg" alt="Diagram: Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-diagram.svg" alt="Diagram: Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-sticky.svg" alt="Sticky Note: Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/generic-events-using-resolvabletype-sticky.svg" alt="Sticky Note: Generic Events ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Using ResolvableType" width="30%">
 </a>
 
 
@@ -3448,14 +3448,14 @@ Spring resolves the generic type parameter via `ResolvableType` to route events 
 
 ### @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context
 
-<a href="../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-handwritten.svg" alt="Handwritten: @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-handwritten.svg" alt="Handwritten: @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-diagram.svg" alt="Diagram: @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-diagram.svg" alt="Diagram: @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-sticky.svg" alt="Sticky Note: @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/springboottest-full-application-context-sticky.svg" alt="Sticky Note: @SpringBootTest ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Full Application Context" width="30%">
 </a>
 
 
@@ -3488,14 +3488,14 @@ class ApplicationContextTest {
 
 ### Test Slices
 
-<a href="../../assets/images/diagrams/java/10-di-container/test-slices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/test-slices-handwritten.svg" alt="Handwritten: Test Slices" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/test-slices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/test-slices-handwritten.svg" alt="Handwritten: Test Slices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/test-slices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/test-slices-diagram.svg" alt="Diagram: Test Slices" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/test-slices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/test-slices-diagram.svg" alt="Diagram: Test Slices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/test-slices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/test-slices-sticky.svg" alt="Sticky Note: Test Slices" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/test-slices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/test-slices-sticky.svg" alt="Sticky Note: Test Slices" width="30%">
 </a>
 
 
@@ -3539,14 +3539,14 @@ Other test slice annotations:
 
 ### @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context
 
-<a href="../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-handwritten.svg" alt="Handwritten: @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-handwritten.svg" alt="Handwritten: @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-diagram.svg" alt="Diagram: @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-diagram.svg" alt="Diagram: @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-sticky.svg" alt="Sticky Note: @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/mockbean-mocking-in-context-sticky.svg" alt="Sticky Note: @MockBean ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Mocking in Context" width="30%">
 </a>
 
 
@@ -3594,14 +3594,14 @@ class OrderServiceTest {
 
 ### @SpyBean
 
-<a href="../../assets/images/diagrams/java/10-di-container/spybean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/spybean-handwritten.svg" alt="Handwritten: @SpyBean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/spybean-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/spybean-handwritten.svg" alt="Handwritten: @SpyBean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/spybean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/spybean-diagram.svg" alt="Diagram: @SpyBean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/spybean-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/spybean-diagram.svg" alt="Diagram: @SpyBean" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/spybean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/spybean-sticky.svg" alt="Sticky Note: @SpyBean" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/spybean-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/spybean-sticky.svg" alt="Sticky Note: @SpyBean" width="30%">
 </a>
 
 
@@ -3637,14 +3637,14 @@ class AuditServiceSpyTest {
 
 ### @Import for Focused Context
 
-<a href="../../assets/images/diagrams/java/10-di-container/import-for-focused-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/import-for-focused-context-handwritten.svg" alt="Handwritten: @Import for Focused Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/import-for-focused-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/import-for-focused-context-handwritten.svg" alt="Handwritten: @Import for Focused Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/import-for-focused-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/import-for-focused-context-diagram.svg" alt="Diagram: @Import for Focused Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/import-for-focused-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/import-for-focused-context-diagram.svg" alt="Diagram: @Import for Focused Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/import-for-focused-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/import-for-focused-context-sticky.svg" alt="Sticky Note: @Import for Focused Context" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/import-for-focused-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/import-for-focused-context-sticky.svg" alt="Sticky Note: @Import for Focused Context" width="30%">
 </a>
 
 
@@ -3677,14 +3677,14 @@ class FocusedContextTest {
 
 ### Dynamic Property Sources
 
-<a href="../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-handwritten.svg" alt="Handwritten: Dynamic Property Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-handwritten.svg" alt="Handwritten: Dynamic Property Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-diagram.svg" alt="Diagram: Dynamic Property Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-diagram.svg" alt="Diagram: Dynamic Property Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-sticky.svg" alt="Sticky Note: Dynamic Property Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/dynamic-property-sources-sticky.svg" alt="Sticky Note: Dynamic Property Sources" width="30%">
 </a>
 
 
@@ -3720,14 +3720,14 @@ class DynamicPropertyTest {
 
 ### TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides
 
-<a href="../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-handwritten.svg" alt="Handwritten: TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-handwritten.svg" alt="Handwritten: TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-diagram.svg" alt="Diagram: TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-diagram.svg" alt="Diagram: TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-sticky.svg" alt="Sticky Note: TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/testconfiguration-local-overrides-sticky.svg" alt="Sticky Note: TestConfiguration ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Local Overrides" width="30%">
 </a>
 
 
@@ -3773,14 +3773,14 @@ A `@TestConfiguration` inner class adds beans to the context **without** replaci
 
 ### Testing with Active Profiles
 
-<a href="../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-handwritten.svg" alt="Handwritten: Testing with Active Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-handwritten.svg" alt="Handwritten: Testing with Active Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-diagram.svg" alt="Diagram: Testing with Active Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-diagram.svg" alt="Diagram: Testing with Active Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-sticky.svg" alt="Sticky Note: Testing with Active Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/10-di-container/testing-with-active-profiles-sticky.svg" alt="Sticky Note: Testing with Active Profiles" width="30%">
 </a>
 
 

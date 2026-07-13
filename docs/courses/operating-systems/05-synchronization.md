@@ -45,14 +45,14 @@ A **race condition** occurs when multiple processes or threads access shared dat
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ ATM 1 (left)                    ATM 2 (right)
 
 ### Numbered Steps of a Race Condition
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-handwritten.svg" alt="Handwritten: Numbered Steps of a Race Condition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-handwritten.svg" alt="Handwritten: Numbered Steps of a Race Condition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-diagram.svg" alt="Diagram: Numbered Steps of a Race Condition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-diagram.svg" alt="Diagram: Numbered Steps of a Race Condition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-sticky.svg" alt="Sticky Note: Numbered Steps of a Race Condition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-a-race-condition-sticky.svg" alt="Sticky Note: Numbered Steps of a Race Condition" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ ATM 1 (left)                    ATM 2 (right)
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ function increment():
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -219,14 +219,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ These terms are often confused but are technically distinct:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ These terms are often confused but are technically distinct:
 
 ### Formal Definition
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ Consider a system with n processes {P₀, P₁, ..., Pₙ₋₁}. Each process h
 
 ### Requirements for a Valid Solution
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-handwritten.svg" alt="Handwritten: Requirements for a Valid Solution" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-handwritten.svg" alt="Handwritten: Requirements for a Valid Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-diagram.svg" alt="Diagram: Requirements for a Valid Solution" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-diagram.svg" alt="Diagram: Requirements for a Valid Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-sticky.svg" alt="Sticky Note: Requirements for a Valid Solution" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/requirements-for-a-valid-solution-sticky.svg" alt="Sticky Note: Requirements for a Valid Solution" width="30%">
 </a>
 
 
@@ -354,14 +354,14 @@ A valid solution must satisfy three requirements:
 
 ### Numbered Steps of Critical Section Protocol
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-handwritten.svg" alt="Handwritten: Numbered Steps of Critical Section Protocol" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-handwritten.svg" alt="Handwritten: Numbered Steps of Critical Section Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-diagram.svg" alt="Diagram: Numbered Steps of Critical Section Protocol" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-diagram.svg" alt="Diagram: Numbered Steps of Critical Section Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-sticky.svg" alt="Sticky Note: Numbered Steps of Critical Section Protocol" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-critical-section-protocol-sticky.svg" alt="Sticky Note: Numbered Steps of Critical Section Protocol" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ remainder_section: // Non-critical code
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ process(i):
 
 ### Complexity Analysis of Critical Section Problem
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-handwritten.svg" alt="Handwritten: Complexity Analysis of Critical Section Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-handwritten.svg" alt="Handwritten: Complexity Analysis of Critical Section Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-diagram.svg" alt="Diagram: Complexity Analysis of Critical Section Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-diagram.svg" alt="Diagram: Complexity Analysis of Critical Section Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-sticky.svg" alt="Sticky Note: Complexity Analysis of Critical Section Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-of-critical-section-problem-sticky.svg" alt="Sticky Note: Complexity Analysis of Critical Section Problem" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ process(i):
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -444,14 +444,14 @@ process(i):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ process(i):
 
 ### Mutual Exclusion — Formal Proof Structure
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-handwritten.svg" alt="Handwritten: Mutual Exclusion — Formal Proof Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-handwritten.svg" alt="Handwritten: Mutual Exclusion — Formal Proof Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-diagram.svg" alt="Diagram: Mutual Exclusion — Formal Proof Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-diagram.svg" alt="Diagram: Mutual Exclusion — Formal Proof Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-sticky.svg" alt="Sticky Note: Mutual Exclusion — Formal Proof Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-formal-proof-structure-sticky.svg" alt="Sticky Note: Mutual Exclusion — Formal Proof Structure" width="30%">
 </a>
 
 
@@ -485,14 +485,14 @@ To prove mutual exclusion, show:
 
 ### Progress — Formal Statement
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-handwritten.svg" alt="Handwritten: Progress — Formal Statement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-handwritten.svg" alt="Handwritten: Progress — Formal Statement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-diagram.svg" alt="Diagram: Progress — Formal Statement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-diagram.svg" alt="Diagram: Progress — Formal Statement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-sticky.svg" alt="Sticky Note: Progress — Formal Statement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-formal-statement-sticky.svg" alt="Sticky Note: Progress — Formal Statement" width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ Then:
 
 ### Bounded Waiting — Formal Statement
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-handwritten.svg" alt="Handwritten: Bounded Waiting — Formal Statement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-handwritten.svg" alt="Handwritten: Bounded Waiting — Formal Statement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-diagram.svg" alt="Diagram: Bounded Waiting — Formal Statement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-diagram.svg" alt="Diagram: Bounded Waiting — Formal Statement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-sticky.svg" alt="Sticky Note: Bounded Waiting — Formal Statement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-formal-statement-sticky.svg" alt="Sticky Note: Bounded Waiting — Formal Statement" width="30%">
 </a>
 
 
@@ -529,14 +529,14 @@ After process Pᵢ makes a request to enter its CS, there exists a bound on the 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ After process Pᵢ makes a request to enter its CS, there exists a bound on the 
 
 ### Numbered Steps of Peterson's Algorithm
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-handwritten.svg" alt="Handwritten: Numbered Steps of Peterson's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-handwritten.svg" alt="Handwritten: Numbered Steps of Peterson's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-diagram.svg" alt="Diagram: Numbered Steps of Peterson's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-diagram.svg" alt="Diagram: Numbered Steps of Peterson's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-sticky.svg" alt="Sticky Note: Numbered Steps of Peterson's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-peterson-s-algorithm-sticky.svg" alt="Sticky Note: Numbered Steps of Peterson's Algorithm" width="30%">
 </a>
 
 
@@ -570,14 +570,14 @@ Step 5: flag[i] = false         // Done; allow other to enter
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -599,14 +599,14 @@ process(i):
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -663,14 +663,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-handwritten.svg" alt="Handwritten: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-handwritten.svg" alt="Handwritten: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-diagram.svg" alt="Diagram: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-diagram.svg" alt="Diagram: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-sticky.svg" alt="Sticky Note: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-p-tries-to-enter-cs-then-p-tries-then-p-exits-sticky.svg" alt="Sticky Note: Scenario: P₀ tries to enter CS, then P₁ tries, then P₀ exits" width="30%">
 </a>
 
 
@@ -744,14 +744,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Scenario: Both P₀ and P₁ want CS simultaneously
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-handwritten.svg" alt="Handwritten: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-handwritten.svg" alt="Handwritten: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-diagram.svg" alt="Diagram: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-diagram.svg" alt="Diagram: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-sticky.svg" alt="Sticky Note: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/scenario-both-p-and-p-want-cs-simultaneously-sticky.svg" alt="Sticky Note: Scenario: Both P₀ and P₁ want CS simultaneously" width="30%">
 </a>
 
 
@@ -774,14 +774,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Mutual Exclusion Proof
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-handwritten.svg" alt="Handwritten: Mutual Exclusion Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-handwritten.svg" alt="Handwritten: Mutual Exclusion Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-diagram.svg" alt="Diagram: Mutual Exclusion Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-diagram.svg" alt="Diagram: Mutual Exclusion Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-sticky.svg" alt="Sticky Note: Mutual Exclusion Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mutual-exclusion-proof-sticky.svg" alt="Sticky Note: Mutual Exclusion Proof" width="30%">
 </a>
 
 
@@ -796,14 +796,14 @@ By contradiction, both cannot be in CS simultaneously. **ME holds.**
 
 ### Progress Proof
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-handwritten.svg" alt="Handwritten: Progress Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-handwritten.svg" alt="Handwritten: Progress Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-diagram.svg" alt="Diagram: Progress Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-diagram.svg" alt="Diagram: Progress Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-sticky.svg" alt="Sticky Note: Progress Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/progress-proof-sticky.svg" alt="Sticky Note: Progress Proof" width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ If P₁ is waiting (`flag[1] == true`) and P₀ is in remainder section:
 
 ### Bounded Waiting Proof
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-handwritten.svg" alt="Handwritten: Bounded Waiting Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-handwritten.svg" alt="Handwritten: Bounded Waiting Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-diagram.svg" alt="Diagram: Bounded Waiting Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-diagram.svg" alt="Diagram: Bounded Waiting Proof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-sticky.svg" alt="Sticky Note: Bounded Waiting Proof" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/bounded-waiting-proof-sticky.svg" alt="Sticky Note: Bounded Waiting Proof" width="30%">
 </a>
 
 
@@ -877,14 +877,14 @@ Modern hardware provides atomic (non-interruptible) instructions that allow lock
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -892,14 +892,14 @@ Modern hardware provides atomic (non-interruptible) instructions that allow lock
 
 ### Why Hardware Support?
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-handwritten.svg" alt="Handwritten: Why Hardware Support?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-handwritten.svg" alt="Handwritten: Why Hardware Support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-diagram.svg" alt="Diagram: Why Hardware Support?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-diagram.svg" alt="Diagram: Why Hardware Support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-sticky.svg" alt="Sticky Note: Why Hardware Support?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/why-hardware-support-sticky.svg" alt="Sticky Note: Why Hardware Support?" width="30%">
 </a>
 
 
@@ -914,14 +914,14 @@ Hardware atomic instructions solve this by guaranteeing that no other core can m
 
 ### Definition
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -932,14 +932,14 @@ Hardware atomic instructions solve this by guaranteeing that no other core can m
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -952,14 +952,14 @@ The check-and-mark must happen as one atomic operation, which is exactly what te
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -976,14 +976,14 @@ release(lock):
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1007,14 +1007,14 @@ function release(Spinlock *lock):
 
 ### C/C++ Implementation (GCC atomic builtins)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-handwritten.svg" alt="Handwritten: C/C++ Implementation (GCC atomic builtins)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-handwritten.svg" alt="Handwritten: C/C++ Implementation (GCC atomic builtins)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-diagram.svg" alt="Diagram: C/C++ Implementation (GCC atomic builtins)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-diagram.svg" alt="Diagram: C/C++ Implementation (GCC atomic builtins)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-sticky.svg" alt="Sticky Note: C/C++ Implementation (GCC atomic builtins)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-gcc-atomic-builtins-sticky.svg" alt="Sticky Note: C/C++ Implementation (GCC atomic builtins)" width="30%">
 </a>
 
 
@@ -1061,14 +1061,14 @@ int main() {
 
 ### Python Implementation (simulated)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-handwritten.svg" alt="Handwritten: Python Implementation (simulated)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-handwritten.svg" alt="Handwritten: Python Implementation (simulated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-diagram.svg" alt="Diagram: Python Implementation (simulated)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-diagram.svg" alt="Diagram: Python Implementation (simulated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-sticky.svg" alt="Sticky Note: Python Implementation (simulated)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-simulated-sticky.svg" alt="Sticky Note: Python Implementation (simulated)" width="30%">
 </a>
 
 
@@ -1115,14 +1115,14 @@ def worker():
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -1139,14 +1139,14 @@ def worker():
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1161,14 +1161,14 @@ def worker():
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1182,14 +1182,14 @@ def worker():
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1205,14 +1205,14 @@ def worker():
 
 ### Definition
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1223,14 +1223,14 @@ def worker():
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1238,14 +1238,14 @@ def worker():
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1259,14 +1259,14 @@ Step 3: return old
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1281,14 +1281,14 @@ function compare_and_swap(int *value, int expected, int new_value) -> int:
 
 ### C/C++ Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-handwritten.svg" alt="Handwritten: C/C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-handwritten.svg" alt="Handwritten: C/C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-diagram.svg" alt="Diagram: C/C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-diagram.svg" alt="Diagram: C/C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-sticky.svg" alt="Sticky Note: C/C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-sticky.svg" alt="Sticky Note: C/C++ Implementation" width="30%">
 </a>
 
 
@@ -1327,14 +1327,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1367,14 +1367,14 @@ class CASLock:
 
 ### Dry Run Trace Table (Lock-free Increment)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Lock-free Increment)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Lock-free Increment)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-diagram.svg" alt="Diagram: Dry Run Trace Table (Lock-free Increment)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-diagram.svg" alt="Diagram: Dry Run Trace Table (Lock-free Increment)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Lock-free Increment)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-lock-free-increment-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Lock-free Increment)" width="30%">
 </a>
 
 
@@ -1389,14 +1389,14 @@ class CASLock:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1411,14 +1411,14 @@ class CASLock:
 
 ### CAS vs TAS — Key Difference
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-handwritten.svg" alt="Handwritten: CAS vs TAS — Key Difference" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-handwritten.svg" alt="Handwritten: CAS vs TAS — Key Difference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-diagram.svg" alt="Diagram: CAS vs TAS — Key Difference" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-diagram.svg" alt="Diagram: CAS vs TAS — Key Difference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-sticky.svg" alt="Sticky Note: CAS vs TAS — Key Difference" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/cas-vs-tas-key-difference-sticky.svg" alt="Sticky Note: CAS vs TAS — Key Difference" width="30%">
 </a>
 
 
@@ -1434,14 +1434,14 @@ class CASLock:
 
 ### Definition
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1449,14 +1449,14 @@ A **memory barrier** is a CPU instruction that enforces ordering constraints on 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1464,14 +1464,14 @@ A **memory barrier** is a CPU instruction that enforces ordering constraints on 
 
 ### Types of Memory Barriers
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-handwritten.svg" alt="Handwritten: Types of Memory Barriers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-handwritten.svg" alt="Handwritten: Types of Memory Barriers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-diagram.svg" alt="Diagram: Types of Memory Barriers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-diagram.svg" alt="Diagram: Types of Memory Barriers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-sticky.svg" alt="Sticky Note: Types of Memory Barriers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/types-of-memory-barriers-sticky.svg" alt="Sticky Note: Types of Memory Barriers" width="30%">
 </a>
 
 
@@ -1484,14 +1484,14 @@ A **memory barrier** is a CPU instruction that enforces ordering constraints on 
 
 ### C++ Memory Order Usage
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-handwritten.svg" alt="Handwritten: C++ Memory Order Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-handwritten.svg" alt="Handwritten: C++ Memory Order Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-diagram.svg" alt="Diagram: C++ Memory Order Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-diagram.svg" alt="Diagram: C++ Memory Order Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-sticky.svg" alt="Sticky Note: C++ Memory Order Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-memory-order-usage-sticky.svg" alt="Sticky Note: C++ Memory Order Usage" width="30%">
 </a>
 
 
@@ -1519,14 +1519,14 @@ A **mutex** (mutual exclusion) is a synchronization primitive that protects a cr
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1538,14 +1538,14 @@ A **mutex** (mutual exclusion) is a synchronization primitive that protects a cr
 
 ### Numbered Steps of Mutex Operation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-handwritten.svg" alt="Handwritten: Numbered Steps of Mutex Operation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-handwritten.svg" alt="Handwritten: Numbered Steps of Mutex Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-diagram.svg" alt="Diagram: Numbered Steps of Mutex Operation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-diagram.svg" alt="Diagram: Numbered Steps of Mutex Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-sticky.svg" alt="Sticky Note: Numbered Steps of Mutex Operation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-of-mutex-operation-sticky.svg" alt="Sticky Note: Numbered Steps of Mutex Operation" width="30%">
 </a>
 
 
@@ -1563,14 +1563,14 @@ Step 2: If any threads are in wait queue → move one to ready queue (wake up)
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1596,14 +1596,14 @@ function release(Mutex *m):
 
 ### C++ Implementation (pthreads wrapper)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-handwritten.svg" alt="Handwritten: C++ Implementation (pthreads wrapper)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-handwritten.svg" alt="Handwritten: C++ Implementation (pthreads wrapper)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-diagram.svg" alt="Diagram: C++ Implementation (pthreads wrapper)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-diagram.svg" alt="Diagram: C++ Implementation (pthreads wrapper)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-sticky.svg" alt="Sticky Note: C++ Implementation (pthreads wrapper)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-pthreads-wrapper-sticky.svg" alt="Sticky Note: C++ Implementation (pthreads wrapper)" width="30%">
 </a>
 
 
@@ -1635,14 +1635,14 @@ int main() {
 
 ### Raw pthread Mutex (C-style)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-handwritten.svg" alt="Handwritten: Raw pthread Mutex (C-style)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-handwritten.svg" alt="Handwritten: Raw pthread Mutex (C-style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-diagram.svg" alt="Diagram: Raw pthread Mutex (C-style)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-diagram.svg" alt="Diagram: Raw pthread Mutex (C-style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-sticky.svg" alt="Sticky Note: Raw pthread Mutex (C-style)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-pthread-mutex-c-style-sticky.svg" alt="Sticky Note: Raw pthread Mutex (C-style)" width="30%">
 </a>
 
 
@@ -1678,14 +1678,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1716,14 +1716,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Dry Run Trace Table (Two Threads Using Mutex)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-diagram.svg" alt="Diagram: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-diagram.svg" alt="Diagram: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-two-threads-using-mutex-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Two Threads Using Mutex)" width="30%">
 </a>
 
 
@@ -1740,14 +1740,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Spinlock vs Mutex — Detailed Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-handwritten.svg" alt="Handwritten: Spinlock vs Mutex — Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-handwritten.svg" alt="Handwritten: Spinlock vs Mutex — Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-diagram.svg" alt="Diagram: Spinlock vs Mutex — Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-diagram.svg" alt="Diagram: Spinlock vs Mutex — Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-sticky.svg" alt="Sticky Note: Spinlock vs Mutex — Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/spinlock-vs-mutex-detailed-comparison-sticky.svg" alt="Sticky Note: Spinlock vs Mutex — Detailed Comparison" width="30%">
 </a>
 
 
@@ -1767,14 +1767,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Recursive Mutex
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-handwritten.svg" alt="Handwritten: Recursive Mutex" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-handwritten.svg" alt="Handwritten: Recursive Mutex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-diagram.svg" alt="Diagram: Recursive Mutex" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-diagram.svg" alt="Diagram: Recursive Mutex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-sticky.svg" alt="Sticky Note: Recursive Mutex" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/recursive-mutex-sticky.svg" alt="Sticky Note: Recursive Mutex" width="30%">
 </a>
 
 
@@ -1805,14 +1805,14 @@ int main() {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1826,14 +1826,14 @@ int main() {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1846,14 +1846,14 @@ int main() {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1875,14 +1875,14 @@ A **semaphore** (Edsger Dijkstra, 1965) is an integer variable accessed only thr
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1894,14 +1894,14 @@ The ticket counter IS the semaphore value -- it represents the number of availab
 
 ### Type 1: Binary Semaphore (value 0 or 1)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-handwritten.svg" alt="Handwritten: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-handwritten.svg" alt="Handwritten: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-diagram.svg" alt="Diagram: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-diagram.svg" alt="Diagram: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-sticky.svg" alt="Sticky Note: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/type-1-binary-semaphore-value-0-or-1-sticky.svg" alt="Sticky Note: Type 1: Binary Semaphore (value 0 or 1)" width="30%">
 </a>
 
 
@@ -1909,14 +1909,14 @@ Used like a mutex -- protects one resource.
 
 ### Type 2: Counting Semaphore (value >= 0)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-handwritten.svg" alt="Handwritten: Type 2: Counting Semaphore (value >= 0)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-handwritten.svg" alt="Handwritten: Type 2: Counting Semaphore (value >= 0)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-diagram.svg" alt="Diagram: Type 2: Counting Semaphore (value >= 0)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-diagram.svg" alt="Diagram: Type 2: Counting Semaphore (value >= 0)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-sticky.svg" alt="Sticky Note: Type 2: Counting Semaphore (value >= 0)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/type-2-counting-semaphore-value-0-sticky.svg" alt="Sticky Note: Type 2: Counting Semaphore (value >= 0)" width="30%">
 </a>
 
 
@@ -1924,14 +1924,14 @@ Used to manage a pool of identical resources (e.g., 5 database connections, 10 p
 
 ### Numbered Steps -- Semaphore Operations
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-handwritten.svg" alt="Handwritten: Numbered Steps -- Semaphore Operations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-handwritten.svg" alt="Handwritten: Numbered Steps -- Semaphore Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-diagram.svg" alt="Diagram: Numbered Steps -- Semaphore Operations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-diagram.svg" alt="Diagram: Numbered Steps -- Semaphore Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-sticky.svg" alt="Sticky Note: Numbered Steps -- Semaphore Operations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-semaphore-operations-sticky.svg" alt="Sticky Note: Numbered Steps -- Semaphore Operations" width="30%">
 </a>
 
 
@@ -1951,14 +1951,14 @@ Step 2: if s->value <= 0:
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1982,14 +1982,14 @@ function signal(Semaphore *s):
 
 ### C/C++ Implementation (POSIX Semaphores)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-handwritten.svg" alt="Handwritten: C/C++ Implementation (POSIX Semaphores)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-handwritten.svg" alt="Handwritten: C/C++ Implementation (POSIX Semaphores)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-diagram.svg" alt="Diagram: C/C++ Implementation (POSIX Semaphores)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-diagram.svg" alt="Diagram: C/C++ Implementation (POSIX Semaphores)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-sticky.svg" alt="Sticky Note: C/C++ Implementation (POSIX Semaphores)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-c-implementation-posix-semaphores-sticky.svg" alt="Sticky Note: C/C++ Implementation (POSIX Semaphores)" width="30%">
 </a>
 
 
@@ -2027,14 +2027,14 @@ int main() {
 
 ### Counting Semaphore -- Resource Pool (C++)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-handwritten.svg" alt="Handwritten: Counting Semaphore -- Resource Pool (C++)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-handwritten.svg" alt="Handwritten: Counting Semaphore -- Resource Pool (C++)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-diagram.svg" alt="Diagram: Counting Semaphore -- Resource Pool (C++)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-diagram.svg" alt="Diagram: Counting Semaphore -- Resource Pool (C++)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-sticky.svg" alt="Sticky Note: Counting Semaphore -- Resource Pool (C++)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/counting-semaphore-resource-pool-c-sticky.svg" alt="Sticky Note: Counting Semaphore -- Resource Pool (C++)" width="30%">
 </a>
 
 
@@ -2072,14 +2072,14 @@ int main() {
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -2111,14 +2111,14 @@ print(f"Counter: {counter} (expected: {2 * iterations})")
 
 ### Python Counting Semaphore -- Resource Pool
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-handwritten.svg" alt="Handwritten: Python Counting Semaphore -- Resource Pool" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-handwritten.svg" alt="Handwritten: Python Counting Semaphore -- Resource Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-diagram.svg" alt="Diagram: Python Counting Semaphore -- Resource Pool" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-diagram.svg" alt="Diagram: Python Counting Semaphore -- Resource Pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-sticky.svg" alt="Sticky Note: Python Counting Semaphore -- Resource Pool" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-counting-semaphore-resource-pool-sticky.svg" alt="Sticky Note: Python Counting Semaphore -- Resource Pool" width="30%">
 </a>
 
 
@@ -2148,14 +2148,14 @@ for t in threads:
 
 ### Dry Run Trace Table -- Binary Semaphore (value=1)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-handwritten.svg" alt="Handwritten: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-handwritten.svg" alt="Handwritten: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-diagram.svg" alt="Diagram: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-diagram.svg" alt="Diagram: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-sticky.svg" alt="Sticky Note: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-binary-semaphore-value-1-sticky.svg" alt="Sticky Note: Dry Run Trace Table -- Binary Semaphore (value=1)" width="30%">
 </a>
 
 
@@ -2174,14 +2174,14 @@ for t in threads:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2196,14 +2196,14 @@ for t in threads:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2216,14 +2216,14 @@ for t in threads:
 
 ### Binary Semaphore vs Mutex
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-handwritten.svg" alt="Handwritten: Binary Semaphore vs Mutex" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-handwritten.svg" alt="Handwritten: Binary Semaphore vs Mutex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-diagram.svg" alt="Diagram: Binary Semaphore vs Mutex" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-diagram.svg" alt="Diagram: Binary Semaphore vs Mutex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-sticky.svg" alt="Sticky Note: Binary Semaphore vs Mutex" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/binary-semaphore-vs-mutex-sticky.svg" alt="Sticky Note: Binary Semaphore vs Mutex" width="30%">
 </a>
 
 
@@ -2238,14 +2238,14 @@ for t in threads:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2260,14 +2260,14 @@ for t in threads:
 
 ### 5.2.1 Producer-Consumer (Bounded Buffer)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-handwritten.svg" alt="Handwritten: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-handwritten.svg" alt="Handwritten: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-diagram.svg" alt="Diagram: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-diagram.svg" alt="Diagram: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-sticky.svg" alt="Sticky Note: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-1-producer-consumer-bounded-buffer-sticky.svg" alt="Sticky Note: 5.2.1 Producer-Consumer (Bounded Buffer)" width="30%">
 </a>
 
 
@@ -2329,14 +2329,14 @@ int main() {
 
 ### 5.2.2 Readers-Writers
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-handwritten.svg" alt="Handwritten: 5.2.2 Readers-Writers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-handwritten.svg" alt="Handwritten: 5.2.2 Readers-Writers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-diagram.svg" alt="Diagram: 5.2.2 Readers-Writers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-diagram.svg" alt="Diagram: 5.2.2 Readers-Writers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-sticky.svg" alt="Sticky Note: 5.2.2 Readers-Writers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/5-2-2-readers-writers-sticky.svg" alt="Sticky Note: 5.2.2 Readers-Writers" width="30%">
 </a>
 
 
@@ -2403,14 +2403,14 @@ A **monitor** (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchron
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2423,14 +2423,14 @@ A **monitor** (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchron
 
 ### Key Characteristics
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-handwritten.svg" alt="Handwritten: Key Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-handwritten.svg" alt="Handwritten: Key Characteristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-diagram.svg" alt="Diagram: Key Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-diagram.svg" alt="Diagram: Key Characteristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-sticky.svg" alt="Sticky Note: Key Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/key-characteristics-sticky.svg" alt="Sticky Note: Key Characteristics" width="30%">
 </a>
 
 
@@ -2440,14 +2440,14 @@ A **monitor** (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchron
 
 ### Condition Variables
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-handwritten.svg" alt="Handwritten: Condition Variables" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-handwritten.svg" alt="Handwritten: Condition Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-diagram.svg" alt="Diagram: Condition Variables" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-diagram.svg" alt="Diagram: Condition Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-sticky.svg" alt="Sticky Note: Condition Variables" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/condition-variables-sticky.svg" alt="Sticky Note: Condition Variables" width="30%">
 </a>
 
 
@@ -2457,14 +2457,14 @@ A **monitor** (C. A. R. Hoare, 1974; Per Brinch Hansen) is a high-level synchron
 
 ### Numbered Steps -- Monitor Wait/Signal
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-handwritten.svg" alt="Handwritten: Numbered Steps -- Monitor Wait/Signal" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-handwritten.svg" alt="Handwritten: Numbered Steps -- Monitor Wait/Signal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-diagram.svg" alt="Diagram: Numbered Steps -- Monitor Wait/Signal" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-diagram.svg" alt="Diagram: Numbered Steps -- Monitor Wait/Signal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-sticky.svg" alt="Sticky Note: Numbered Steps -- Monitor Wait/Signal" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/numbered-steps-monitor-wait-signal-sticky.svg" alt="Sticky Note: Numbered Steps -- Monitor Wait/Signal" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ Step 4: A wakes, re-acquires monitor lock, returns from wait()
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2511,14 +2511,14 @@ monitor SharedResource:
 
 ### C++ Implementation (std::condition_variable)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-handwritten.svg" alt="Handwritten: C++ Implementation (std::condition_variable)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-handwritten.svg" alt="Handwritten: C++ Implementation (std::condition_variable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-diagram.svg" alt="Diagram: C++ Implementation (std::condition_variable)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-diagram.svg" alt="Diagram: C++ Implementation (std::condition_variable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-sticky.svg" alt="Sticky Note: C++ Implementation (std::condition_variable)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/c-implementation-std-condition-variable-sticky.svg" alt="Sticky Note: C++ Implementation (std::condition_variable)" width="30%">
 </a>
 
 
@@ -2579,14 +2579,14 @@ int main() {
 
 ### Python Implementation (threading.Condition)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-handwritten.svg" alt="Handwritten: Python Implementation (threading.Condition)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-handwritten.svg" alt="Handwritten: Python Implementation (threading.Condition)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-diagram.svg" alt="Diagram: Python Implementation (threading.Condition)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-diagram.svg" alt="Diagram: Python Implementation (threading.Condition)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-sticky.svg" alt="Sticky Note: Python Implementation (threading.Condition)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/python-implementation-threading-condition-sticky.svg" alt="Sticky Note: Python Implementation (threading.Condition)" width="30%">
 </a>
 
 
@@ -2641,14 +2641,14 @@ t2.join()
 
 ### Dry Run Trace Table -- Monitor with CV
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-handwritten.svg" alt="Handwritten: Dry Run Trace Table -- Monitor with CV" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-handwritten.svg" alt="Handwritten: Dry Run Trace Table -- Monitor with CV" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-diagram.svg" alt="Diagram: Dry Run Trace Table -- Monitor with CV" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-diagram.svg" alt="Diagram: Dry Run Trace Table -- Monitor with CV" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-sticky.svg" alt="Sticky Note: Dry Run Trace Table -- Monitor with CV" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/dry-run-trace-table-monitor-with-cv-sticky.svg" alt="Sticky Note: Dry Run Trace Table -- Monitor with CV" width="30%">
 </a>
 
 
@@ -2669,14 +2669,14 @@ t2.join()
 
 ### Hoare vs Mesa Semantics
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-handwritten.svg" alt="Handwritten: Hoare vs Mesa Semantics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-handwritten.svg" alt="Handwritten: Hoare vs Mesa Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-diagram.svg" alt="Diagram: Hoare vs Mesa Semantics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-diagram.svg" alt="Diagram: Hoare vs Mesa Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-sticky.svg" alt="Sticky Note: Hoare vs Mesa Semantics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/hoare-vs-mesa-semantics-sticky.svg" alt="Sticky Note: Hoare vs Mesa Semantics" width="30%">
 </a>
 
 
@@ -2692,14 +2692,14 @@ t2.join()
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2713,14 +2713,14 @@ t2.join()
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2734,14 +2734,14 @@ t2.join()
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2772,14 +2772,14 @@ t2.join()
 
 ### Q1: Find the race condition
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-handwritten.svg" alt="Handwritten: Find the race condition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-handwritten.svg" alt="Handwritten: Find the race condition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-diagram.svg" alt="Diagram: Find the race condition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-diagram.svg" alt="Diagram: Find the race condition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-sticky.svg" alt="Sticky Note: Find the race condition" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/find-the-race-condition-sticky.svg" alt="Sticky Note: Find the race condition" width="30%">
 </a>
 
 
@@ -2796,14 +2796,14 @@ void withdraw(int amount) {
 
 ### Q2: Is this thread-safe?
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-handwritten.svg" alt="Handwritten: Is this thread-safe?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-handwritten.svg" alt="Handwritten: Is this thread-safe?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-diagram.svg" alt="Diagram: Is this thread-safe?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-diagram.svg" alt="Diagram: Is this thread-safe?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-sticky.svg" alt="Sticky Note: Is this thread-safe?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/is-this-thread-safe-sticky.svg" alt="Sticky Note: Is this thread-safe?" width="30%">
 </a>
 
 
@@ -2821,14 +2821,14 @@ void add(int x) {
 
 ### Q3: Why is this lock incorrect?
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-handwritten.svg" alt="Handwritten: Why is this lock incorrect?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-handwritten.svg" alt="Handwritten: Why is this lock incorrect?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-diagram.svg" alt="Diagram: Why is this lock incorrect?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-diagram.svg" alt="Diagram: Why is this lock incorrect?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-sticky.svg" alt="Sticky Note: Why is this lock incorrect?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/why-is-this-lock-incorrect-sticky.svg" alt="Sticky Note: Why is this lock incorrect?" width="30%">
 </a>
 
 
@@ -2851,14 +2851,14 @@ void update() {
 
 ### Q1: When use spinlock instead of mutex?
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-handwritten.svg" alt="Handwritten: When use spinlock instead of mutex?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-handwritten.svg" alt="Handwritten: When use spinlock instead of mutex?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-diagram.svg" alt="Diagram: When use spinlock instead of mutex?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-diagram.svg" alt="Diagram: When use spinlock instead of mutex?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-sticky.svg" alt="Sticky Note: When use spinlock instead of mutex?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/when-use-spinlock-instead-of-mutex-sticky.svg" alt="Sticky Note: When use spinlock instead of mutex?" width="30%">
 </a>
 
 
@@ -2866,14 +2866,14 @@ void update() {
 
 ### Q2: 100ms CS with 50 threads contending on spinlock?
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-handwritten.svg" alt="Handwritten: 100ms CS with 50 threads contending on spinlock?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-handwritten.svg" alt="Handwritten: 100ms CS with 50 threads contending on spinlock?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-diagram.svg" alt="Diagram: 100ms CS with 50 threads contending on spinlock?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-diagram.svg" alt="Diagram: 100ms CS with 50 threads contending on spinlock?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-sticky.svg" alt="Sticky Note: 100ms CS with 50 threads contending on spinlock?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/100ms-cs-with-50-threads-contending-on-spinlock-sticky.svg" alt="Sticky Note: 100ms CS with 50 threads contending on spinlock?" width="30%">
 </a>
 
 
@@ -2881,14 +2881,14 @@ void update() {
 
 ### Q3: Overhead comparison
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-handwritten.svg" alt="Handwritten: Overhead comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-handwritten.svg" alt="Handwritten: Overhead comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-diagram.svg" alt="Diagram: Overhead comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-diagram.svg" alt="Diagram: Overhead comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-sticky.svg" alt="Sticky Note: Overhead comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/overhead-comparison-sticky.svg" alt="Sticky Note: Overhead comparison" width="30%">
 </a>
 
 
@@ -2900,14 +2900,14 @@ void update() {
 
 ### Q4: What is a ticket lock?
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-handwritten.svg" alt="Handwritten: What is a ticket lock?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-handwritten.svg" alt="Handwritten: What is a ticket lock?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-diagram.svg" alt="Diagram: What is a ticket lock?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-diagram.svg" alt="Diagram: What is a ticket lock?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-sticky.svg" alt="Sticky Note: What is a ticket lock?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/what-is-a-ticket-lock-sticky.svg" alt="Sticky Note: What is a ticket lock?" width="30%">
 </a>
 
 
@@ -2951,14 +2951,14 @@ struct TicketLock {
 
 ### Deadlock (4 Coffman Conditions)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-handwritten.svg" alt="Handwritten: Deadlock (4 Coffman Conditions)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-handwritten.svg" alt="Handwritten: Deadlock (4 Coffman Conditions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-diagram.svg" alt="Diagram: Deadlock (4 Coffman Conditions)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-diagram.svg" alt="Diagram: Deadlock (4 Coffman Conditions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-sticky.svg" alt="Sticky Note: Deadlock (4 Coffman Conditions)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/deadlock-4-coffman-conditions-sticky.svg" alt="Sticky Note: Deadlock (4 Coffman Conditions)" width="30%">
 </a>
 
 
@@ -2969,14 +2969,14 @@ struct TicketLock {
 
 ### Livelock
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-handwritten.svg" alt="Handwritten: Livelock" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/livelock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/livelock-handwritten.svg" alt="Handwritten: Livelock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-diagram.svg" alt="Diagram: Livelock" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/livelock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/livelock-diagram.svg" alt="Diagram: Livelock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/livelock-sticky.svg" alt="Sticky Note: Livelock" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/livelock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/livelock-sticky.svg" alt="Sticky Note: Livelock" width="30%">
 </a>
 
 
@@ -2984,14 +2984,14 @@ Threads keep yielding to each other without progress. Like two people in a hallw
 
 ### Priority Inversion
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-handwritten.svg" alt="Handwritten: Priority Inversion" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-handwritten.svg" alt="Handwritten: Priority Inversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-diagram.svg" alt="Diagram: Priority Inversion" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-diagram.svg" alt="Diagram: Priority Inversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-sticky.svg" alt="Sticky Note: Priority Inversion" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/priority-inversion-sticky.svg" alt="Sticky Note: Priority Inversion" width="30%">
 </a>
 
 
@@ -3001,14 +3001,14 @@ High-priority thread waits for low-priority thread holding a lock, while medium-
 
 ### ABA Problem
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-handwritten.svg" alt="Handwritten: ABA Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-handwritten.svg" alt="Handwritten: ABA Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-diagram.svg" alt="Diagram: ABA Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-diagram.svg" alt="Diagram: ABA Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-sticky.svg" alt="Sticky Note: ABA Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/aba-problem-sticky.svg" alt="Sticky Note: ABA Problem" width="30%">
 </a>
 
 
@@ -3038,14 +3038,14 @@ void example_function(void) {
 
 ### Variants
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/variants-handwritten.svg" alt="Handwritten: Variants" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/variants-handwritten.svg" alt="Handwritten: Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/variants-diagram.svg" alt="Diagram: Variants" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/variants-diagram.svg" alt="Diagram: Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/variants-sticky.svg" alt="Sticky Note: Variants" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/variants-sticky.svg" alt="Sticky Note: Variants" width="30%">
 </a>
 
 
@@ -3058,14 +3058,14 @@ void example_function(void) {
 
 ### Raw Spinlock (x86 asm)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-handwritten.svg" alt="Handwritten: Raw Spinlock (x86 asm)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-handwritten.svg" alt="Handwritten: Raw Spinlock (x86 asm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-diagram.svg" alt="Diagram: Raw Spinlock (x86 asm)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-diagram.svg" alt="Diagram: Raw Spinlock (x86 asm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-sticky.svg" alt="Sticky Note: Raw Spinlock (x86 asm)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/raw-spinlock-x86-asm-sticky.svg" alt="Sticky Note: Raw Spinlock (x86 asm)" width="30%">
 </a>
 
 
@@ -3085,14 +3085,14 @@ static __always_inline void arch_spin_lock(arch_spinlock_t *lock) {
 
 ### MCS Lock (Linux v5+)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-handwritten.svg" alt="Handwritten: MCS Lock (Linux v5+)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-handwritten.svg" alt="Handwritten: MCS Lock (Linux v5+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-diagram.svg" alt="Diagram: MCS Lock (Linux v5+)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-diagram.svg" alt="Diagram: MCS Lock (Linux v5+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-sticky.svg" alt="Sticky Note: MCS Lock (Linux v5+)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/mcs-lock-linux-v5-sticky.svg" alt="Sticky Note: MCS Lock (Linux v5+)" width="30%">
 </a>
 
 
@@ -3152,14 +3152,14 @@ int __pthread_mutex_lock(pthread_mutex_t *mutex) {
 
 ### Linux Futex Design
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-handwritten.svg" alt="Handwritten: Linux Futex Design" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-handwritten.svg" alt="Handwritten: Linux Futex Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-diagram.svg" alt="Diagram: Linux Futex Design" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-diagram.svg" alt="Diagram: Linux Futex Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-sticky.svg" alt="Sticky Note: Linux Futex Design" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/linux-futex-design-sticky.svg" alt="Sticky Note: Linux Futex Design" width="30%">
 </a>
 
 
@@ -3225,14 +3225,14 @@ Windows critical sections use a two-level strategy similar to futexes.
 
 ### Case 1: Therac-25 Radiation Overdose (1985-1987)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-handwritten.svg" alt="Handwritten: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-handwritten.svg" alt="Handwritten: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-diagram.svg" alt="Diagram: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-diagram.svg" alt="Diagram: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-sticky.svg" alt="Sticky Note: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-1-therac-25-radiation-overdose-1985-1987-sticky.svg" alt="Sticky Note: Case 1: Therac-25 Radiation Overdose (1985-1987)" width="30%">
 </a>
 
 
@@ -3242,14 +3242,14 @@ Windows critical sections use a two-level strategy similar to futexes.
 
 ### Case 2: Mars Pathfinder Priority Inversion (1997)
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-handwritten.svg" alt="Handwritten: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-handwritten.svg" alt="Handwritten: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-diagram.svg" alt="Diagram: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-diagram.svg" alt="Diagram: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-sticky.svg" alt="Sticky Note: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-2-mars-pathfinder-priority-inversion-1997-sticky.svg" alt="Sticky Note: Case 2: Mars Pathfinder Priority Inversion (1997)" width="30%">
 </a>
 
 
@@ -3259,14 +3259,14 @@ Windows critical sections use a two-level strategy similar to futexes.
 
 ### Case 3: Northeast Blackout 2003
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-handwritten.svg" alt="Handwritten: Case 3: Northeast Blackout 2003" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-handwritten.svg" alt="Handwritten: Case 3: Northeast Blackout 2003" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-diagram.svg" alt="Diagram: Case 3: Northeast Blackout 2003" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-diagram.svg" alt="Diagram: Case 3: Northeast Blackout 2003" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-sticky.svg" alt="Sticky Note: Case 3: Northeast Blackout 2003" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/case-3-northeast-blackout-2003-sticky.svg" alt="Sticky Note: Case 3: Northeast Blackout 2003" width="30%">
 </a>
 
 
@@ -3581,14 +3581,14 @@ console.log(benchmarkLocks(10000)); // Long CS → mutex
 
 ### Memory Barriers and Instruction Reordering
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-handwritten.svg" alt="Handwritten: Memory Barriers and Instruction Reordering" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-handwritten.svg" alt="Handwritten: Memory Barriers and Instruction Reordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-diagram.svg" alt="Diagram: Memory Barriers and Instruction Reordering" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-diagram.svg" alt="Diagram: Memory Barriers and Instruction Reordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-sticky.svg" alt="Sticky Note: Memory Barriers and Instruction Reordering" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/memory-barriers-and-instruction-reordering-sticky.svg" alt="Sticky Note: Memory Barriers and Instruction Reordering" width="30%">
 </a>
 
 
@@ -3610,14 +3610,14 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -3655,14 +3655,14 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -3694,14 +3694,14 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Basic
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -3711,14 +3711,14 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -3728,14 +3728,14 @@ Modern CPUs and compilers reorder instructions for performance. This breaks Pete
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/05-synchronization/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/05-synchronization/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/05-synchronization/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 

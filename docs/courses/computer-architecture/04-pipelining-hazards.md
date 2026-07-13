@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Instruction Pipeline Overview
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-handwritten.svg" alt="Handwritten: 1. Instruction Pipeline Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-handwritten.svg" alt="Handwritten: 1. Instruction Pipeline Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-diagram.svg" alt="Diagram: 1. Instruction Pipeline Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-diagram.svg" alt="Diagram: 1. Instruction Pipeline Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-sticky.svg" alt="Sticky Note: 1. Instruction Pipeline Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-sticky.svg" alt="Sticky Note: 1. Instruction Pipeline Overview" width="30%">
 </a>
 
 
@@ -61,14 +61,14 @@ With pipeline: 1 / cycle_time (ideally)
 
 ### 2. Five-Stage RISC Pipeline (Classic)
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-handwritten.svg" alt="Handwritten: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-handwritten.svg" alt="Handwritten: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-diagram.svg" alt="Diagram: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-diagram.svg" alt="Diagram: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-sticky.svg" alt="Sticky Note: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-sticky.svg" alt="Sticky Note: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ After the pipeline is full (cycle 5 onward), one instruction completes per cycle
 
 ### 3. Pipeline Hazards
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-handwritten.svg" alt="Handwritten: 3. Pipeline Hazards" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-handwritten.svg" alt="Handwritten: 3. Pipeline Hazards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-diagram.svg" alt="Diagram: 3. Pipeline Hazards" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-diagram.svg" alt="Diagram: 3. Pipeline Hazards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-sticky.svg" alt="Sticky Note: 3. Pipeline Hazards" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-sticky.svg" alt="Sticky Note: 3. Pipeline Hazards" width="30%">
 </a>
 
 
@@ -228,14 +228,14 @@ ADD R3, R1, R4      // Now R1 is available
 
 ### 4. Control Hazards (Branch Hazards)
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-handwritten.svg" alt="Handwritten: 4. Control Hazards (Branch Hazards)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-handwritten.svg" alt="Handwritten: 4. Control Hazards (Branch Hazards)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-diagram.svg" alt="Diagram: 4. Control Hazards (Branch Hazards)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-diagram.svg" alt="Diagram: 4. Control Hazards (Branch Hazards)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-sticky.svg" alt="Sticky Note: 4. Control Hazards (Branch Hazards)" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-sticky.svg" alt="Sticky Note: 4. Control Hazards (Branch Hazards)" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ For a 5-stage pipeline with branch resolution at EX:
 
 ### 5. Pipeline Stalls vs Flushes
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-handwritten.svg" alt="Handwritten: 5. Pipeline Stalls vs Flushes" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-handwritten.svg" alt="Handwritten: 5. Pipeline Stalls vs Flushes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-diagram.svg" alt="Diagram: 5. Pipeline Stalls vs Flushes" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-diagram.svg" alt="Diagram: 5. Pipeline Stalls vs Flushes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-sticky.svg" alt="Sticky Note: 5. Pipeline Stalls vs Flushes" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-sticky.svg" alt="Sticky Note: 5. Pipeline Stalls vs Flushes" width="30%">
 </a>
 
 
@@ -345,14 +345,14 @@ For a 5-stage pipeline with branch resolution at EX:
 
 ### 6. Pipelining Speedup Formula — Numerical Problems
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-handwritten.svg" alt="Handwritten: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-handwritten.svg" alt="Handwritten: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-diagram.svg" alt="Diagram: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-diagram.svg" alt="Diagram: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-sticky.svg" alt="Sticky Note: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-sticky.svg" alt="Sticky Note: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
 </a>
 
 
@@ -388,14 +388,14 @@ Performance impact = 17% slowdown from ideal pipelining.
 
 ### 7. Superscalar and VLIW
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-handwritten.svg" alt="Handwritten: 7. Superscalar and VLIW" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-handwritten.svg" alt="Handwritten: 7. Superscalar and VLIW" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-diagram.svg" alt="Diagram: 7. Superscalar and VLIW" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-diagram.svg" alt="Diagram: 7. Superscalar and VLIW" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-sticky.svg" alt="Sticky Note: 7. Superscalar and VLIW" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-sticky.svg" alt="Sticky Note: 7. Superscalar and VLIW" width="30%">
 </a>
 
 
@@ -437,14 +437,14 @@ Multiple thread contexts share pipeline resources. One physical core appears as 
 
 ### 8. Pipeline Stages for Different Architectures
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-handwritten.svg" alt="Handwritten: 8. Pipeline Stages for Different Architectures" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-handwritten.svg" alt="Handwritten: 8. Pipeline Stages for Different Architectures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-diagram.svg" alt="Diagram: 8. Pipeline Stages for Different Architectures" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-diagram.svg" alt="Diagram: 8. Pipeline Stages for Different Architectures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-sticky.svg" alt="Sticky Note: 8. Pipeline Stages for Different Architectures" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-sticky.svg" alt="Sticky Note: 8. Pipeline Stages for Different Architectures" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ Multiple thread contexts share pipeline resources. One physical core appears as 
 
 ### 9. Important Exam Formulae
 
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-handwritten.svg" alt="Handwritten: 9. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-handwritten.svg" alt="Handwritten: 9. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-diagram.svg" alt="Diagram: 9. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-diagram.svg" alt="Diagram: 9. Important Exam Formulae" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-sticky.svg" alt="Sticky Note: 9. Important Exam Formulae" width="30%">
+<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-sticky.svg" alt="Sticky Note: 9. Important Exam Formulae" width="30%">
 </a>
 
 

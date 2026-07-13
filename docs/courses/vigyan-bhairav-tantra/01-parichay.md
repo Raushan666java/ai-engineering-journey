@@ -26,14 +26,14 @@
 
 ### एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
 </a>
 
 
@@ -54,14 +54,14 @@
 
 ### ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@
 
 ### इक्कीस मार्च १९५३ — समाधि का अनुभव
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ flowchart TB
 
 ### संदर्भ और वातावरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: संदर्भ और वातावरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: संदर्भ और वातावरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: संदर्भ और वातावरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: संदर्भ और वातावरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: संदर्भ और वातावरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: संदर्भ और वातावरण" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ flowchart TB
 
 ### प्रवचनों की अनूठी शैली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रवचनों की अनूठी शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रवचनों की अनूठी शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रवचनों की अनूठी शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रवचनों की अनूठी शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रवचनों की अनूठी शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रवचनों की अनूठी शैली" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ flowchart TB
 
 ### "द बुक ऑफ़ सीक्रेट्स" का जन्म
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ flowchart TB
 
 ### १. साक्षी (Witnessing) — सबसे बड़ी क्रांति
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-handwritten.svg" alt="Handwritten: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-handwritten.svg" alt="Handwritten: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-diagram.svg" alt="Diagram: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-diagram.svg" alt="Diagram: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-sticky.svg" alt="Sticky Note: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-sticky.svg" alt="Sticky Note: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ flowchart LR
 
 ### २. सम्पूर्ण स्वीकार (Total Acceptance)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-handwritten.svg" alt="Handwritten: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-handwritten.svg" alt="Handwritten: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-diagram.svg" alt="Diagram: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-diagram.svg" alt="Diagram: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-sticky.svg" alt="Sticky Note: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-sticky.svg" alt="Sticky Note: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
 </a>
 
 
@@ -303,14 +303,14 @@ flowchart LR
 
 ### ३. नो-माइंड (No-Mind)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-handwritten.svg" alt="Handwritten: ३. नो-माइंड (No-Mind)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-handwritten.svg" alt="Handwritten: ३. नो-माइंड (No-Mind)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-diagram.svg" alt="Diagram: ३. नो-माइंड (No-Mind)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-diagram.svg" alt="Diagram: ३. नो-माइंड (No-Mind)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-sticky.svg" alt="Sticky Note: ३. नो-माइंड (No-Mind)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-sticky.svg" alt="Sticky Note: ३. नो-माइंड (No-Mind)" width="30%">
 </a>
 
 
@@ -338,14 +338,14 @@ flowchart LR
 
 ### ओशो के कार्य का वर्गीकरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: ओशो के कार्य का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: ओशो के कार्य का वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: ओशो के कार्य का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: ओशो के कार्य का वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: ओशो के कार्य का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: ओशो के कार्य का वर्गीकरण" width="30%">
 </a>
 
 
@@ -376,14 +376,14 @@ mindmap
 
 ### महत्वपूर्ण प्रवचन श्रृंखलाएँ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
 </a>
 
 
@@ -884,14 +884,14 @@ runOshoDiscourseBrowser();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 ओशो का जन्म कब और कहाँ हुआ?
@@ -908,14 +908,14 @@ b) ११ दिसंबर १९३१, कुचवाड़ा, मध्�
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 ओशो के जीवन की सबसे महत्वपूर्ण घटना कौन सी थी?
@@ -932,14 +932,14 @@ b) २१ मार्च १९५३ को सागर के पार्�
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 ओशो ने विज्ञान भैरव तंत्र पर प्रवचन कहाँ दिए?
@@ -956,14 +956,14 @@ b) बॉम्बे के वुडलैंड्स अपार्टम�
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 ओशो के अनुसार, सभी ध्यान तकनीकों का मूल क्या है?
@@ -980,14 +980,14 @@ b) साक्षी (Witnessing) — बाकी सब उसकी तै�
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 "द बुक ऑफ़ सीक्रेट्स" में कितने खंड हैं?
@@ -1004,14 +1004,14 @@ b) ५ खंड — ११२ तकनीकों के अनुसार�
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 ओशो के अनुसार "सम्पूर्ण स्वीकार" का क्या अर्थ है?
@@ -1028,14 +1028,14 @@ b) जो कुछ भी है — क्रोध, काम, लोभ — 
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 ओशो ने कितने वर्ष की आयु में समाधि का अनुभव किया?
@@ -1052,14 +1052,14 @@ b) २१ वर्ष — १९५३ में।
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 ओशो के अनुसार "नो-माइंड" का क्या अर्थ है?
@@ -1080,14 +1080,14 @@ b) मन से पहचान न होना — मन को एक य�
 
 ### अभ्यास १: ओशो जीवन समयरेखा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
 </a>
 
 
@@ -1109,14 +1109,14 @@ revolutionary.forEach(e => {
 
 ### अभ्यास २: प्रवचन अन्वेषक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास २: प्रवचन अन्वेषक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास २: प्रवचन अन्वेषक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास २: प्रवचन अन्वेषक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास २: प्रवचन अन्वेषक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास २: प्रवचन अन्वेषक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास २: प्रवचन अन्वेषक" width="30%">
 </a>
 
 
@@ -1152,14 +1152,14 @@ console.log('अक्टूबर १९७२ के प्रवचन:', oct
 
 ### अभ्यास ३: ओशो उद्धरण संग्रह
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
 </a>
 
 
@@ -1195,14 +1195,14 @@ console.log(daily.getDailyQuote());
 
 ### अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
 </a>
 
 

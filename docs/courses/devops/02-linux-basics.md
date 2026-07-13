@@ -48,14 +48,14 @@ flowchart LR
 
 ### Filesystem Hierarchy Standard (FHS)
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-handwritten.svg" alt="Handwritten: Filesystem Hierarchy Standard (FHS)" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-handwritten.svg" alt="Handwritten: Filesystem Hierarchy Standard (FHS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-diagram.svg" alt="Diagram: Filesystem Hierarchy Standard (FHS)" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-diagram.svg" alt="Diagram: Filesystem Hierarchy Standard (FHS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-sticky.svg" alt="Sticky Note: Filesystem Hierarchy Standard (FHS)" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/filesystem-hierarchy-standard-fhs-sticky.svg" alt="Sticky Note: Filesystem Hierarchy Standard (FHS)" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ Understanding this hierarchy is crucial for DevOps work because logs live in `/v
 
 ### Essential Command-Line Operations
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-handwritten.svg" alt="Handwritten: Essential Command-Line Operations" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-handwritten.svg" alt="Handwritten: Essential Command-Line Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-diagram.svg" alt="Diagram: Essential Command-Line Operations" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-diagram.svg" alt="Diagram: Essential Command-Line Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-sticky.svg" alt="Sticky Note: Essential Command-Line Operations" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/essential-command-line-operations-sticky.svg" alt="Sticky Note: Essential Command-Line Operations" width="30%">
 </a>
 
 
@@ -127,14 +127,14 @@ Understanding this hierarchy is crucial for DevOps work because logs live in `/v
 
 ### File Permissions
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/file-permissions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/file-permissions-handwritten.svg" alt="Handwritten: File Permissions" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/file-permissions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/file-permissions-handwritten.svg" alt="Handwritten: File Permissions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/file-permissions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/file-permissions-diagram.svg" alt="Diagram: File Permissions" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/file-permissions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/file-permissions-diagram.svg" alt="Diagram: File Permissions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/file-permissions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/file-permissions-sticky.svg" alt="Sticky Note: File Permissions" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/file-permissions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/file-permissions-sticky.svg" alt="Sticky Note: File Permissions" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ chmod -R 755 directory/  # Recursively set permissions
 
 ### Pipes, Redirection, and Streams
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-handwritten.svg" alt="Handwritten: Pipes, Redirection, and Streams" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-handwritten.svg" alt="Handwritten: Pipes, Redirection, and Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-diagram.svg" alt="Diagram: Pipes, Redirection, and Streams" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-diagram.svg" alt="Diagram: Pipes, Redirection, and Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-sticky.svg" alt="Sticky Note: Pipes, Redirection, and Streams" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/pipes-redirection-and-streams-sticky.svg" alt="Sticky Note: Pipes, Redirection, and Streams" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ cat access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn | head -10
 
 ### Text Processing Power Tools
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-handwritten.svg" alt="Handwritten: Text Processing Power Tools" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-handwritten.svg" alt="Handwritten: Text Processing Power Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-diagram.svg" alt="Diagram: Text Processing Power Tools" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-diagram.svg" alt="Diagram: Text Processing Power Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-sticky.svg" alt="Sticky Note: Text Processing Power Tools" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/text-processing-power-tools-sticky.svg" alt="Sticky Note: Text Processing Power Tools" width="30%">
 </a>
 
 
@@ -241,14 +241,14 @@ awk 'NR==FNR {a[$1]; next} $1 in a' f1 f2  # Join two files
 
 ### Shell Scripting
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-handwritten.svg" alt="Handwritten: Shell Scripting" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-handwritten.svg" alt="Handwritten: Shell Scripting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-diagram.svg" alt="Diagram: Shell Scripting" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-diagram.svg" alt="Diagram: Shell Scripting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-sticky.svg" alt="Sticky Note: Shell Scripting" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/shell-scripting-sticky.svg" alt="Sticky Note: Shell Scripting" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ fi
 
 ### systemd Service Management
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-handwritten.svg" alt="Handwritten: systemd Service Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-handwritten.svg" alt="Handwritten: systemd Service Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-diagram.svg" alt="Diagram: systemd Service Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-diagram.svg" alt="Diagram: systemd Service Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-sticky.svg" alt="Sticky Note: systemd Service Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/systemd-service-management-sticky.svg" alt="Sticky Note: systemd Service Management" width="30%">
 </a>
 
 
@@ -356,14 +356,14 @@ journalctl --vacuum-size=500M    # Limit log size
 
 ### Network Configuration
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/network-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/network-configuration-handwritten.svg" alt="Handwritten: Network Configuration" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/network-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/network-configuration-handwritten.svg" alt="Handwritten: Network Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/network-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/network-configuration-diagram.svg" alt="Diagram: Network Configuration" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/network-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/network-configuration-diagram.svg" alt="Diagram: Network Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/network-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/network-configuration-sticky.svg" alt="Sticky Note: Network Configuration" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/network-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/network-configuration-sticky.svg" alt="Sticky Note: Network Configuration" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ nc -zv host port     # Test TCP port connectivity
 
 ### Package Management
 
-<a href="../../assets/images/diagrams/devops/02-linux-basics/package-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/package-management-handwritten.svg" alt="Handwritten: Package Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/package-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/package-management-handwritten.svg" alt="Handwritten: Package Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/package-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/package-management-diagram.svg" alt="Diagram: Package Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/package-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/package-management-diagram.svg" alt="Diagram: Package Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/02-linux-basics/package-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/02-linux-basics/package-management-sticky.svg" alt="Sticky Note: Package Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/02-linux-basics/package-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/02-linux-basics/package-management-sticky.svg" alt="Sticky Note: Package Management" width="30%">
 </a>
 
 

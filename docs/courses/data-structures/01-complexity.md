@@ -20,14 +20,14 @@ Every major system — Google Search, Redis, PostgreSQL, Netflix — lives or di
 
 ### Why Complexity Matters
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-handwritten.svg" alt="Handwritten: Why Complexity Matters" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-handwritten.svg" alt="Handwritten: Why Complexity Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-diagram.svg" alt="Diagram: Why Complexity Matters" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-diagram.svg" alt="Diagram: Why Complexity Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-sticky.svg" alt="Sticky Note: Why Complexity Matters" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-sticky.svg" alt="Sticky Note: Why Complexity Matters" width="30%">
 </a>
 
 
@@ -35,14 +35,14 @@ Two programs that solve the same problem can differ in running time by orders of
 
 ### Asymptotic Notation
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-handwritten.svg" alt="Handwritten: Asymptotic Notation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-handwritten.svg" alt="Handwritten: Asymptotic Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-diagram.svg" alt="Diagram: Asymptotic Notation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-diagram.svg" alt="Diagram: Asymptotic Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-sticky.svg" alt="Sticky Note: Asymptotic Notation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-sticky.svg" alt="Sticky Note: Asymptotic Notation" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ Let \( T(n) \) be the exact running time of an algorithm on input size \( n \). 
 
 ### Big-O Notation (O) — Upper Bound
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-handwritten.svg" alt="Handwritten: Big-O Notation (O) — Upper Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-handwritten.svg" alt="Handwritten: Big-O Notation (O) — Upper Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-diagram.svg" alt="Diagram: Big-O Notation (O) — Upper Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-diagram.svg" alt="Diagram: Big-O Notation (O) — Upper Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-sticky.svg" alt="Sticky Note: Big-O Notation (O) — Upper Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-sticky.svg" alt="Sticky Note: Big-O Notation (O) — Upper Bound" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ The `for` loop executes exactly `n` iterations in the worst case (target not fou
 
 ### Omega Notation (Ω) — Lower Bound
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-handwritten.svg" alt="Handwritten: Omega Notation (Ω) — Lower Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-handwritten.svg" alt="Handwritten: Omega Notation (Ω) — Lower Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-diagram.svg" alt="Diagram: Omega Notation (Ω) — Lower Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-diagram.svg" alt="Diagram: Omega Notation (Ω) — Lower Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-sticky.svg" alt="Sticky Note: Omega Notation (Ω) — Lower Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-sticky.svg" alt="Sticky Note: Omega Notation (Ω) — Lower Bound" width="30%">
 </a>
 
 
@@ -290,14 +290,14 @@ The function `arr[0]` performs exactly one array access regardless of array size
 
 ### Theta Notation (Θ) — Tight Bound
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-handwritten.svg" alt="Handwritten: Theta Notation (Θ) — Tight Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-handwritten.svg" alt="Handwritten: Theta Notation (Θ) — Tight Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-diagram.svg" alt="Diagram: Theta Notation (Θ) — Tight Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-diagram.svg" alt="Diagram: Theta Notation (Θ) — Tight Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-sticky.svg" alt="Sticky Note: Theta Notation (Θ) — Tight Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-sticky.svg" alt="Sticky Note: Theta Notation (Θ) — Tight Bound" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ The loop always runs exactly n times regardless of input values. Every input of 
 
 ### Amortized Analysis
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-handwritten.svg" alt="Handwritten: Amortized Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-handwritten.svg" alt="Handwritten: Amortized Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-diagram.svg" alt="Diagram: Amortized Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-diagram.svg" alt="Diagram: Amortized Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-sticky.svg" alt="Sticky Note: Amortized Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-sticky.svg" alt="Sticky Note: Amortized Analysis" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ The key insight: expensive resize operations become rarer as the array grows. Af
 
 ### Space Complexity
 
-<a href="../../assets/images/diagrams/data-structures/01-complexity/space-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/space-complexity-handwritten.svg" alt="Handwritten: Space Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-handwritten.svg" alt="Handwritten: Space Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/space-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/space-complexity-diagram.svg" alt="Diagram: Space Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-diagram.svg" alt="Diagram: Space Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/01-complexity/space-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/01-complexity/space-complexity-sticky.svg" alt="Sticky Note: Space Complexity" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-sticky.svg" alt="Sticky Note: Space Complexity" width="30%">
 </a>
 
 

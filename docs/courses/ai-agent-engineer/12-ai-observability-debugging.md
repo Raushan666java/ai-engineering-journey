@@ -26,14 +26,14 @@
 
 ### Custom Trace Implementation
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-handwritten.svg" alt="Handwritten: Custom Trace Implementation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-handwritten.svg" alt="Handwritten: Custom Trace Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-diagram.svg" alt="Diagram: Custom Trace Implementation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-diagram.svg" alt="Diagram: Custom Trace Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-sticky.svg" alt="Sticky Note: Custom Trace Implementation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/custom-trace-implementation-sticky.svg" alt="Sticky Note: Custom Trace Implementation" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ for rec in report["recommendations"]:
 
 ### Production Quality Monitor
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-handwritten.svg" alt="Handwritten: Production Quality Monitor" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-handwritten.svg" alt="Handwritten: Production Quality Monitor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-diagram.svg" alt="Diagram: Production Quality Monitor" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-diagram.svg" alt="Diagram: Production Quality Monitor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-sticky.svg" alt="Sticky Note: Production Quality Monitor" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/production-quality-monitor-sticky.svg" alt="Sticky Note: Production Quality Monitor" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ for i in range(100):
 
 ### Systematic Debugging Framework
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-handwritten.svg" alt="Handwritten: Systematic Debugging Framework" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-handwritten.svg" alt="Handwritten: Systematic Debugging Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-diagram.svg" alt="Diagram: Systematic Debugging Framework" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-diagram.svg" alt="Diagram: Systematic Debugging Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-sticky.svg" alt="Sticky Note: Systematic Debugging Framework" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/12-ai-observability-debugging/systematic-debugging-framework-sticky.svg" alt="Sticky Note: Systematic Debugging Framework" width="30%">
 </a>
 
 

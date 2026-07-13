@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 7.1 National Affairs 2025
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-handwritten.svg" alt="Handwritten: 7.1 National Affairs 2025" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-handwritten.svg" alt="Handwritten: 7.1 National Affairs 2025" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-diagram.svg" alt="Diagram: 7.1 National Affairs 2025" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-diagram.svg" alt="Diagram: 7.1 National Affairs 2025" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-sticky.svg" alt="Sticky Note: 7.1 National Affairs 2025" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-1-national-affairs-2025-sticky.svg" alt="Sticky Note: 7.1 National Affairs 2025" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.2 National Affairs 2026 (Upcoming/Predicted)
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-handwritten.svg" alt="Handwritten: 7.2 National Affairs 2026 (Upcoming/Predicted)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-handwritten.svg" alt="Handwritten: 7.2 National Affairs 2026 (Upcoming/Predicted)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-diagram.svg" alt="Diagram: 7.2 National Affairs 2026 (Upcoming/Predicted)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-diagram.svg" alt="Diagram: 7.2 National Affairs 2026 (Upcoming/Predicted)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-sticky.svg" alt="Sticky Note: 7.2 National Affairs 2026 (Upcoming/Predicted)" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-2-national-affairs-2026-upcoming-predicted-sticky.svg" alt="Sticky Note: 7.2 National Affairs 2026 (Upcoming/Predicted)" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.3 International Affairs 2025–2026
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-handwritten.svg" alt="Handwritten: 7.3 International Affairs 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-handwritten.svg" alt="Handwritten: 7.3 International Affairs 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-diagram.svg" alt="Diagram: 7.3 International Affairs 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-diagram.svg" alt="Diagram: 7.3 International Affairs 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-sticky.svg" alt="Sticky Note: 7.3 International Affairs 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-3-international-affairs-2025-2026-sticky.svg" alt="Sticky Note: 7.3 International Affairs 2025–2026" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.4 Economic Affairs 2025–2026
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-handwritten.svg" alt="Handwritten: 7.4 Economic Affairs 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-handwritten.svg" alt="Handwritten: 7.4 Economic Affairs 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-diagram.svg" alt="Diagram: 7.4 Economic Affairs 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-diagram.svg" alt="Diagram: 7.4 Economic Affairs 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-sticky.svg" alt="Sticky Note: 7.4 Economic Affairs 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-4-economic-affairs-2025-2026-sticky.svg" alt="Sticky Note: 7.4 Economic Affairs 2025–2026" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.5 Science & Technology 2025–2026
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-handwritten.svg" alt="Handwritten: 7.5 Science & Technology 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-handwritten.svg" alt="Handwritten: 7.5 Science & Technology 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-diagram.svg" alt="Diagram: 7.5 Science & Technology 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-diagram.svg" alt="Diagram: 7.5 Science & Technology 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-sticky.svg" alt="Sticky Note: 7.5 Science & Technology 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-5-science-technology-2025-2026-sticky.svg" alt="Sticky Note: 7.5 Science & Technology 2025–2026" width="30%">
 </a>
 
 
@@ -267,14 +267,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.6 Sports Events 2025–2026
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-handwritten.svg" alt="Handwritten: 7.6 Sports Events 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-handwritten.svg" alt="Handwritten: 7.6 Sports Events 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-diagram.svg" alt="Diagram: 7.6 Sports Events 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-diagram.svg" alt="Diagram: 7.6 Sports Events 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-sticky.svg" alt="Sticky Note: 7.6 Sports Events 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-6-sports-events-2025-2026-sticky.svg" alt="Sticky Note: 7.6 Sports Events 2025–2026" width="30%">
 </a>
 
 
@@ -300,14 +300,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.7 Awards & Honours 2025–2026
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-handwritten.svg" alt="Handwritten: 7.7 Awards & Honours 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-handwritten.svg" alt="Handwritten: 7.7 Awards & Honours 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-diagram.svg" alt="Diagram: 7.7 Awards & Honours 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-diagram.svg" alt="Diagram: 7.7 Awards & Honours 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-sticky.svg" alt="Sticky Note: 7.7 Awards & Honours 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-7-awards-honours-2025-2026-sticky.svg" alt="Sticky Note: 7.7 Awards & Honours 2025–2026" width="30%">
 </a>
 
 
@@ -338,14 +338,14 @@ Presented by Finance Minister Nirmala Sitharaman — the first full budget of Mo
 
 ### 7.8 Environmental & Climate 2025–2026
 
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-handwritten.svg" alt="Handwritten: 7.8 Environmental & Climate 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-handwritten.svg" alt="Handwritten: 7.8 Environmental & Climate 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-diagram.svg" alt="Diagram: 7.8 Environmental & Climate 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-diagram.svg" alt="Diagram: 7.8 Environmental & Climate 2025–2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-sticky.svg" alt="Sticky Note: 7.8 Environmental & Climate 2025–2026" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/07-current-affairs-2025-2026/7-8-environmental-climate-2025-2026-sticky.svg" alt="Sticky Note: 7.8 Environmental & Climate 2025–2026" width="30%">
 </a>
 
 

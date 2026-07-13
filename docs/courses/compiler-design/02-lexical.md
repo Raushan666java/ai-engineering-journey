@@ -45,14 +45,14 @@ flowchart LR
 
 ### Tokens, Lexemes, and Patterns
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-handwritten.svg" alt="Handwritten: Tokens, Lexemes, and Patterns" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-handwritten.svg" alt="Handwritten: Tokens, Lexemes, and Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-diagram.svg" alt="Diagram: Tokens, Lexemes, and Patterns" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-diagram.svg" alt="Diagram: Tokens, Lexemes, and Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-sticky.svg" alt="Sticky Note: Tokens, Lexemes, and Patterns" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/tokens-lexemes-and-patterns-sticky.svg" alt="Sticky Note: Tokens, Lexemes, and Patterns" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ A **pattern** is a rule that describes the set of lexemes belonging to a given t
 
 ### Input Buffering
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-handwritten.svg" alt="Handwritten: Input Buffering" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-handwritten.svg" alt="Handwritten: Input Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-diagram.svg" alt="Diagram: Input Buffering" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-diagram.svg" alt="Diagram: Input Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-sticky.svg" alt="Sticky Note: Input Buffering" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/input-buffering-sticky.svg" alt="Sticky Note: Input Buffering" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ The **one-buffer scheme** uses a single buffer that is refilled when necessary. 
 
 ### Specification of Tokens Using Regular Expressions
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-handwritten.svg" alt="Handwritten: Specification of Tokens Using Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-handwritten.svg" alt="Handwritten: Specification of Tokens Using Regular Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-diagram.svg" alt="Diagram: Specification of Tokens Using Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-diagram.svg" alt="Diagram: Specification of Tokens Using Regular Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-sticky.svg" alt="Sticky Note: Specification of Tokens Using Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/specification-of-tokens-using-regular-expressions-sticky.svg" alt="Sticky Note: Specification of Tokens Using Regular Expressions" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ A lexical-analyzer generator converts these regular definitions into a determini
 
 ### Regex to NFA: Thompson's Construction
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-handwritten.svg" alt="Handwritten: Regex to NFA: Thompson's Construction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-handwritten.svg" alt="Handwritten: Regex to NFA: Thompson's Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-diagram.svg" alt="Diagram: Regex to NFA: Thompson's Construction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-diagram.svg" alt="Diagram: Regex to NFA: Thompson's Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-sticky.svg" alt="Sticky Note: Regex to NFA: Thompson's Construction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/regex-to-nfa-thompson-s-construction-sticky.svg" alt="Sticky Note: Regex to NFA: Thompson's Construction" width="30%">
 </a>
 
 
@@ -204,14 +204,14 @@ function Thompson(regex):
 
 ### NFA to DFA: Subset Construction
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-handwritten.svg" alt="Handwritten: NFA to DFA: Subset Construction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-handwritten.svg" alt="Handwritten: NFA to DFA: Subset Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-diagram.svg" alt="Diagram: NFA to DFA: Subset Construction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-diagram.svg" alt="Diagram: NFA to DFA: Subset Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-sticky.svg" alt="Sticky Note: NFA to DFA: Subset Construction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/nfa-to-dfa-subset-construction-sticky.svg" alt="Sticky Note: NFA to DFA: Subset Construction" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ function move(states, a):
 
 ### DFA Minimization: Hopcroft's Algorithm
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-handwritten.svg" alt="Handwritten: DFA Minimization: Hopcroft's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-handwritten.svg" alt="Handwritten: DFA Minimization: Hopcroft's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-diagram.svg" alt="Diagram: DFA Minimization: Hopcroft's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-diagram.svg" alt="Diagram: DFA Minimization: Hopcroft's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-sticky.svg" alt="Sticky Note: DFA Minimization: Hopcroft's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/dfa-minimization-hopcroft-s-algorithm-sticky.svg" alt="Sticky Note: DFA Minimization: Hopcroft's Algorithm" width="30%">
 </a>
 
 
@@ -659,14 +659,14 @@ for (const t of tests) {
 
 ### Lookahead and Maximal Munch
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-handwritten.svg" alt="Handwritten: Lookahead and Maximal Munch" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-handwritten.svg" alt="Handwritten: Lookahead and Maximal Munch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-diagram.svg" alt="Diagram: Lookahead and Maximal Munch" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-diagram.svg" alt="Diagram: Lookahead and Maximal Munch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-sticky.svg" alt="Sticky Note: Lookahead and Maximal Munch" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/lookahead-and-maximal-munch-sticky.svg" alt="Sticky Note: Lookahead and Maximal Munch" width="30%">
 </a>
 
 
@@ -678,14 +678,14 @@ However, maximal munch occasionally interacts poorly with lookahead. Consider th
 
 ### Error Recovery in Lexers
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-handwritten.svg" alt="Handwritten: Error Recovery in Lexers" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-handwritten.svg" alt="Handwritten: Error Recovery in Lexers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-diagram.svg" alt="Diagram: Error Recovery in Lexers" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-diagram.svg" alt="Diagram: Error Recovery in Lexers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-sticky.svg" alt="Sticky Note: Error Recovery in Lexers" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/error-recovery-in-lexers-sticky.svg" alt="Sticky Note: Error Recovery in Lexers" width="30%">
 </a>
 
 
@@ -700,14 +700,14 @@ The TypeScript `ErrorRecoveringLexer` from Chapter 1 demonstrates panic mode.
 
 ### Lex and Flex
 
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-handwritten.svg" alt="Handwritten: Lex and Flex" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-handwritten.svg" alt="Handwritten: Lex and Flex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-diagram.svg" alt="Diagram: Lex and Flex" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-diagram.svg" alt="Diagram: Lex and Flex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-sticky.svg" alt="Sticky Note: Lex and Flex" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/02-lexical/lex-and-flex-sticky.svg" alt="Sticky Note: Lex and Flex" width="30%">
 </a>
 
 

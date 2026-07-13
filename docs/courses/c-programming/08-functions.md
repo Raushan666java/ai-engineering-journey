@@ -13,14 +13,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -57,14 +57,14 @@ A **function** is a named, reusable block of code that performs a specific task.
 
 ### Real-World Analogy: Vending Machine
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-handwritten.svg" alt="Handwritten: Real-World Analogy: Vending Machine" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-handwritten.svg" alt="Handwritten: Real-World Analogy: Vending Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-diagram.svg" alt="Diagram: Real-World Analogy: Vending Machine" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-diagram.svg" alt="Diagram: Real-World Analogy: Vending Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-sticky.svg" alt="Sticky Note: Real-World Analogy: Vending Machine" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/real-world-analogy-vending-machine-sticky.svg" alt="Sticky Note: Real-World Analogy: Vending Machine" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ Just as you don't need to know how the vending machine's motor works to press A1
 
 ### 8.1.1 Function Declaration (Prototype)
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-handwritten.svg" alt="Handwritten: 8.1.1 Function Declaration (Prototype)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-handwritten.svg" alt="Handwritten: 8.1.1 Function Declaration (Prototype)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-diagram.svg" alt="Diagram: 8.1.1 Function Declaration (Prototype)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-diagram.svg" alt="Diagram: 8.1.1 Function Declaration (Prototype)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-sticky.svg" alt="Sticky Note: 8.1.1 Function Declaration (Prototype)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-1-function-declaration-prototype-sticky.svg" alt="Sticky Note: 8.1.1 Function Declaration (Prototype)" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ Sum = 30
 
 ### 8.1.2 Function Definition
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-handwritten.svg" alt="Handwritten: 8.1.2 Function Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-handwritten.svg" alt="Handwritten: 8.1.2 Function Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-diagram.svg" alt="Diagram: 8.1.2 Function Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-diagram.svg" alt="Diagram: 8.1.2 Function Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-sticky.svg" alt="Sticky Note: 8.1.2 Function Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-2-function-definition-sticky.svg" alt="Sticky Note: 8.1.2 Function Definition" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ Max = 15
 
 ### 8.1.3 Function Call
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-handwritten.svg" alt="Handwritten: 8.1.3 Function Call" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-handwritten.svg" alt="Handwritten: 8.1.3 Function Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-diagram.svg" alt="Diagram: 8.1.3 Function Call" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-diagram.svg" alt="Diagram: 8.1.3 Function Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-sticky.svg" alt="Sticky Note: 8.1.3 Function Call" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-3-function-call-sticky.svg" alt="Sticky Note: 8.1.3 Function Call" width="30%">
 </a>
 
 
@@ -353,14 +353,14 @@ int main(void)
 
 ### 8.1.4 Function Components Comparison
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-handwritten.svg" alt="Handwritten: 8.1.4 Function Components Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-handwritten.svg" alt="Handwritten: 8.1.4 Function Components Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-diagram.svg" alt="Diagram: 8.1.4 Function Components Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-diagram.svg" alt="Diagram: 8.1.4 Function Components Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-sticky.svg" alt="Sticky Note: 8.1.4 Function Components Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-1-4-function-components-comparison-sticky.svg" alt="Sticky Note: 8.1.4 Function Components Comparison" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ int main(void)
 
 ### 8.2.1 Formal vs Actual Parameters
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-handwritten.svg" alt="Handwritten: 8.2.1 Formal vs Actual Parameters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-handwritten.svg" alt="Handwritten: 8.2.1 Formal vs Actual Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-diagram.svg" alt="Diagram: 8.2.1 Formal vs Actual Parameters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-diagram.svg" alt="Diagram: 8.2.1 Formal vs Actual Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-sticky.svg" alt="Sticky Note: 8.2.1 Formal vs Actual Parameters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-1-formal-vs-actual-parameters-sticky.svg" alt="Sticky Note: 8.2.1 Formal vs Actual Parameters" width="30%">
 </a>
 
 
@@ -450,14 +450,14 @@ Formal params: x = 42, y = d
 
 ### 8.2.2 Pass by Value (Call by Value)
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-handwritten.svg" alt="Handwritten: 8.2.2 Pass by Value (Call by Value)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-handwritten.svg" alt="Handwritten: 8.2.2 Pass by Value (Call by Value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-diagram.svg" alt="Diagram: 8.2.2 Pass by Value (Call by Value)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-diagram.svg" alt="Diagram: 8.2.2 Pass by Value (Call by Value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-sticky.svg" alt="Sticky Note: 8.2.2 Pass by Value (Call by Value)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-2-pass-by-value-call-by-value-sticky.svg" alt="Sticky Note: 8.2.2 Pass by Value (Call by Value)" width="30%">
 </a>
 
 
@@ -540,14 +540,14 @@ After call:  x = 42
 | Modifying in function | Changes lost after return |
 ### 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-handwritten.svg" alt="Handwritten: 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-handwritten.svg" alt="Handwritten: 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-diagram.svg" alt="Diagram: 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-diagram.svg" alt="Diagram: 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-sticky.svg" alt="Sticky Note: 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-3-pass-by-pointer-often-misnamed-pass-by-reference-sticky.svg" alt="Sticky Note: 8.2.3 Pass by Pointer (Often Misnamed "Pass by Reference")" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@ After:  a = 20, b = 10
 
 ### 8.2.4 Parameter Passing Comparison
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-handwritten.svg" alt="Handwritten: 8.2.4 Parameter Passing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-handwritten.svg" alt="Handwritten: 8.2.4 Parameter Passing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-diagram.svg" alt="Diagram: 8.2.4 Parameter Passing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-diagram.svg" alt="Diagram: 8.2.4 Parameter Passing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-sticky.svg" alt="Sticky Note: 8.2.4 Parameter Passing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-2-4-parameter-passing-comparison-sticky.svg" alt="Sticky Note: 8.2.4 Parameter Passing Comparison" width="30%">
 </a>
 
 
@@ -657,14 +657,14 @@ After:  a = 20, b = 10
 
 ### 8.3.1 Returning Basic Types
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-handwritten.svg" alt="Handwritten: 8.3.1 Returning Basic Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-handwritten.svg" alt="Handwritten: 8.3.1 Returning Basic Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-diagram.svg" alt="Diagram: 8.3.1 Returning Basic Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-diagram.svg" alt="Diagram: 8.3.1 Returning Basic Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-sticky.svg" alt="Sticky Note: 8.3.1 Returning Basic Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-1-returning-basic-types-sticky.svg" alt="Sticky Note: 8.3.1 Returning Basic Types" width="30%">
 </a>
 
 
@@ -733,14 +733,14 @@ Area of r=5 = 78.5398
 
 ### 8.3.2 void Functions
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-handwritten.svg" alt="Handwritten: 8.3.2 void Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-handwritten.svg" alt="Handwritten: 8.3.2 void Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-diagram.svg" alt="Diagram: 8.3.2 void Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-diagram.svg" alt="Diagram: 8.3.2 void Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-sticky.svg" alt="Sticky Note: 8.3.2 void Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-2-void-functions-sticky.svg" alt="Sticky Note: 8.3.2 void Functions" width="30%">
 </a>
 
 
@@ -780,14 +780,14 @@ void process(int value)
 
 ### 8.3.3 Returning Pointers
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-handwritten.svg" alt="Handwritten: 8.3.3 Returning Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-handwritten.svg" alt="Handwritten: 8.3.3 Returning Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-diagram.svg" alt="Diagram: 8.3.3 Returning Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-diagram.svg" alt="Diagram: 8.3.3 Returning Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-sticky.svg" alt="Sticky Note: 8.3.3 Returning Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-3-returning-pointers-sticky.svg" alt="Sticky Note: 8.3.3 Returning Pointers" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@ Heap[0] = 100
 
 ### 8.3.4 DANGER: Returning Address of Local Variable
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-handwritten.svg" alt="Handwritten: 8.3.4 DANGER: Returning Address of Local Variable" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-handwritten.svg" alt="Handwritten: 8.3.4 DANGER: Returning Address of Local Variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-diagram.svg" alt="Diagram: 8.3.4 DANGER: Returning Address of Local Variable" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-diagram.svg" alt="Diagram: 8.3.4 DANGER: Returning Address of Local Variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-sticky.svg" alt="Sticky Note: 8.3.4 DANGER: Returning Address of Local Variable" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-4-danger-returning-address-of-local-variable-sticky.svg" alt="Sticky Note: 8.3.4 DANGER: Returning Address of Local Variable" width="30%">
 </a>
 
 
@@ -888,14 +888,14 @@ int main(void)
 
 ### 8.3.5 Return struct vs Return Pointer
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-handwritten.svg" alt="Handwritten: 8.3.5 Return struct vs Return Pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-handwritten.svg" alt="Handwritten: 8.3.5 Return struct vs Return Pointer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-diagram.svg" alt="Diagram: 8.3.5 Return struct vs Return Pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-diagram.svg" alt="Diagram: 8.3.5 Return struct vs Return Pointer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-sticky.svg" alt="Sticky Note: 8.3.5 Return struct vs Return Pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-3-5-return-struct-vs-return-pointer-sticky.svg" alt="Sticky Note: 8.3.5 Return struct vs Return Pointer" width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ A **recursive function** calls itself. Every recursive function needs:
 
 ### 8.5.1 Factorial → Step-by-Step
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-handwritten.svg" alt="Handwritten: 8.5.1 Factorial → Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-handwritten.svg" alt="Handwritten: 8.5.1 Factorial → Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-diagram.svg" alt="Diagram: 8.5.1 Factorial → Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-diagram.svg" alt="Diagram: 8.5.1 Factorial → Step-by-Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-sticky.svg" alt="Sticky Note: 8.5.1 Factorial → Step-by-Step" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-5-1-factorial-step-by-step-sticky.svg" alt="Sticky Note: 8.5.1 Factorial → Step-by-Step" width="30%">
 </a>
 
 
@@ -1098,14 +1098,14 @@ Final: 4! = 24
 
 ### 8.5.2 Fibonacci → Two Recursive Calls
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-handwritten.svg" alt="Handwritten: 8.5.2 Fibonacci → Two Recursive Calls" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-handwritten.svg" alt="Handwritten: 8.5.2 Fibonacci → Two Recursive Calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-diagram.svg" alt="Diagram: 8.5.2 Fibonacci → Two Recursive Calls" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-diagram.svg" alt="Diagram: 8.5.2 Fibonacci → Two Recursive Calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-sticky.svg" alt="Sticky Note: 8.5.2 Fibonacci → Two Recursive Calls" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-5-2-fibonacci-two-recursive-calls-sticky.svg" alt="Sticky Note: 8.5.2 Fibonacci → Two Recursive Calls" width="30%">
 </a>
 
 
@@ -1258,14 +1258,14 @@ average(4, 1.0, 2.0, 3.0, 4.0) = 2.50
 
 ### Custom Printf-style Function
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-handwritten.svg" alt="Handwritten: Custom Printf-style Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-handwritten.svg" alt="Handwritten: Custom Printf-style Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-diagram.svg" alt="Diagram: Custom Printf-style Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-diagram.svg" alt="Diagram: Custom Printf-style Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-sticky.svg" alt="Sticky Note: Custom Printf-style Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/custom-printf-style-function-sticky.svg" alt="Sticky Note: Custom Printf-style Function" width="30%">
 </a>
 
 
@@ -1372,14 +1372,14 @@ clamp(150, 0, 100) = 100
 
 ### Inline Functions vs Macros
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-handwritten.svg" alt="Handwritten: Inline Functions vs Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-handwritten.svg" alt="Handwritten: Inline Functions vs Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-diagram.svg" alt="Diagram: Inline Functions vs Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-diagram.svg" alt="Diagram: Inline Functions vs Macros" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-sticky.svg" alt="Sticky Note: Inline Functions vs Macros" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/inline-functions-vs-macros-sticky.svg" alt="Sticky Note: Inline Functions vs Macros" width="30%">
 </a>
 
 
@@ -1406,14 +1406,14 @@ static inline int square_inline(int x) { return x * x; }
 
 ### When to Use Inline:
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-handwritten.svg" alt="Handwritten: When to Use Inline:" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-handwritten.svg" alt="Handwritten: When to Use Inline:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-diagram.svg" alt="Diagram: When to Use Inline:" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-diagram.svg" alt="Diagram: When to Use Inline:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-sticky.svg" alt="Sticky Note: When to Use Inline:" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/when-to-use-inline-sticky.svg" alt="Sticky Note: When to Use Inline:" width="30%">
 </a>
 
 - Very small functions (2-5 lines)
@@ -1494,14 +1494,14 @@ divide: 4
 
 ### 8.8.1 Function Pointer Array (Dispatch Table)
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-handwritten.svg" alt="Handwritten: 8.8.1 Function Pointer Array (Dispatch Table)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-handwritten.svg" alt="Handwritten: 8.8.1 Function Pointer Array (Dispatch Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-diagram.svg" alt="Diagram: 8.8.1 Function Pointer Array (Dispatch Table)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-diagram.svg" alt="Diagram: 8.8.1 Function Pointer Array (Dispatch Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-sticky.svg" alt="Sticky Note: 8.8.1 Function Pointer Array (Dispatch Table)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-1-function-pointer-array-dispatch-table-sticky.svg" alt="Sticky Note: 8.8.1 Function Pointer Array (Dispatch Table)" width="30%">
 </a>
 
 
@@ -1541,14 +1541,14 @@ divide(20, 5) = 4
 
 ### 8.8.2 Callback with qsort
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-handwritten.svg" alt="Handwritten: 8.8.2 Callback with qsort" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-handwritten.svg" alt="Handwritten: 8.8.2 Callback with qsort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-diagram.svg" alt="Diagram: 8.8.2 Callback with qsort" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-diagram.svg" alt="Diagram: 8.8.2 Callback with qsort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-sticky.svg" alt="Sticky Note: 8.8.2 Callback with qsort" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-2-callback-with-qsort-sticky.svg" alt="Sticky Note: 8.8.2 Callback with qsort" width="30%">
 </a>
 
 
@@ -1603,14 +1603,14 @@ Descending: 99 42 22 15 7 3
 
 ### 8.8.3 Typedef for Function Pointers
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-handwritten.svg" alt="Handwritten: 8.8.3 Typedef for Function Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-handwritten.svg" alt="Handwritten: 8.8.3 Typedef for Function Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-diagram.svg" alt="Diagram: 8.8.3 Typedef for Function Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-diagram.svg" alt="Diagram: 8.8.3 Typedef for Function Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-sticky.svg" alt="Sticky Note: 8.8.3 Typedef for Function Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-8-3-typedef-for-function-pointers-sticky.svg" alt="Sticky Note: 8.8.3 Typedef for Function Pointers" width="30%">
 </a>
 
 
@@ -1727,14 +1727,14 @@ argv[4] = NULL
 
 ### 8.9.1 Argument Parsing Example
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-handwritten.svg" alt="Handwritten: 8.9.1 Argument Parsing Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-handwritten.svg" alt="Handwritten: 8.9.1 Argument Parsing Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-diagram.svg" alt="Diagram: 8.9.1 Argument Parsing Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-diagram.svg" alt="Diagram: 8.9.1 Argument Parsing Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-sticky.svg" alt="Sticky Note: 8.9.1 Argument Parsing Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-9-1-argument-parsing-example-sticky.svg" alt="Sticky Note: 8.9.1 Argument Parsing Example" width="30%">
 </a>
 
 
@@ -1767,14 +1767,14 @@ Number: 42, Name: Alice
 
 ### 8.9.2 main() Variants
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-handwritten.svg" alt="Handwritten: 8.9.2 main() Variants" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-handwritten.svg" alt="Handwritten: 8.9.2 main() Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-diagram.svg" alt="Diagram: 8.9.2 main() Variants" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-diagram.svg" alt="Diagram: 8.9.2 main() Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-sticky.svg" alt="Sticky Note: 8.9.2 main() Variants" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-9-2-main-variants-sticky.svg" alt="Sticky Note: 8.9.2 main() Variants" width="30%">
 </a>
 
 
@@ -1802,14 +1802,14 @@ Number: 42, Name: Alice
 
 ### 8.10.1 Scope Rules
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-handwritten.svg" alt="Handwritten: 8.10.1 Scope Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-handwritten.svg" alt="Handwritten: 8.10.1 Scope Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-diagram.svg" alt="Diagram: 8.10.1 Scope Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-diagram.svg" alt="Diagram: 8.10.1 Scope Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-sticky.svg" alt="Sticky Note: 8.10.1 Scope Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-10-1-scope-rules-sticky.svg" alt="Sticky Note: 8.10.1 Scope Rules" width="30%">
 </a>
 
 
@@ -1840,14 +1840,14 @@ void function(void)
 
 ### 8.10.2 Storage Classes
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-handwritten.svg" alt="Handwritten: 8.10.2 Storage Classes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-handwritten.svg" alt="Handwritten: 8.10.2 Storage Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-diagram.svg" alt="Diagram: 8.10.2 Storage Classes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-diagram.svg" alt="Diagram: 8.10.2 Storage Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-sticky.svg" alt="Sticky Note: 8.10.2 Storage Classes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-10-2-storage-classes-sticky.svg" alt="Sticky Note: 8.10.2 Storage Classes" width="30%">
 </a>
 
 
@@ -1912,14 +1912,14 @@ void quick_sum(int arr[], int n) {
 
 ### Q1: Does C have pass-by-reference?
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-handwritten.svg" alt="Handwritten: Does C have pass-by-reference?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-handwritten.svg" alt="Handwritten: Does C have pass-by-reference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-diagram.svg" alt="Diagram: Does C have pass-by-reference?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-diagram.svg" alt="Diagram: Does C have pass-by-reference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-sticky.svg" alt="Sticky Note: Does C have pass-by-reference?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/does-c-have-pass-by-reference-sticky.svg" alt="Sticky Note: Does C have pass-by-reference?" width="30%">
 </a>
 
 
@@ -1942,14 +1942,14 @@ void swap(int *x, int *y) {
 
 ### Q2: Function pointer vs If-Else chain
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-handwritten.svg" alt="Handwritten: Function pointer vs If-Else chain" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-handwritten.svg" alt="Handwritten: Function pointer vs If-Else chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-diagram.svg" alt="Diagram: Function pointer vs If-Else chain" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-diagram.svg" alt="Diagram: Function pointer vs If-Else chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-sticky.svg" alt="Sticky Note: Function pointer vs If-Else chain" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/function-pointer-vs-if-else-chain-sticky.svg" alt="Sticky Note: Function pointer vs If-Else chain" width="30%">
 </a>
 
 
@@ -1965,14 +1965,14 @@ void swap(int *x, int *y) {
 
 ### Q3: Variadic vs Regular Arguments
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-handwritten.svg" alt="Handwritten: Variadic vs Regular Arguments" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-handwritten.svg" alt="Handwritten: Variadic vs Regular Arguments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-diagram.svg" alt="Diagram: Variadic vs Regular Arguments" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-diagram.svg" alt="Diagram: Variadic vs Regular Arguments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-sticky.svg" alt="Sticky Note: Variadic vs Regular Arguments" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/variadic-vs-regular-arguments-sticky.svg" alt="Sticky Note: Variadic vs Regular Arguments" width="30%">
 </a>
 
 
@@ -1986,14 +1986,14 @@ void swap(int *x, int *y) {
 
 ### Q4: Inline vs Macro
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-handwritten.svg" alt="Handwritten: Inline vs Macro" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-handwritten.svg" alt="Handwritten: Inline vs Macro" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-diagram.svg" alt="Diagram: Inline vs Macro" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-diagram.svg" alt="Diagram: Inline vs Macro" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-sticky.svg" alt="Sticky Note: Inline vs Macro" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/inline-vs-macro-sticky.svg" alt="Sticky Note: Inline vs Macro" width="30%">
 </a>
 
 
@@ -2005,14 +2005,14 @@ Covered in Â§8.7. Key interview points:
 
 ### Q5: Return struct vs Return pointer
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-handwritten.svg" alt="Handwritten: Return struct vs Return pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-handwritten.svg" alt="Handwritten: Return struct vs Return pointer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-diagram.svg" alt="Diagram: Return struct vs Return pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-diagram.svg" alt="Diagram: Return struct vs Return pointer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-sticky.svg" alt="Sticky Note: Return struct vs Return pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/return-struct-vs-return-pointer-sticky.svg" alt="Sticky Note: Return struct vs Return pointer" width="30%">
 </a>
 
 
@@ -2028,14 +2028,14 @@ Covered in Â§8.7. Key interview points:
 
 ### Q6: What happens if you forget the return statement?
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-handwritten.svg" alt="Handwritten: What happens if you forget the return statement?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-handwritten.svg" alt="Handwritten: What happens if you forget the return statement?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-diagram.svg" alt="Diagram: What happens if you forget the return statement?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-diagram.svg" alt="Diagram: What happens if you forget the return statement?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-sticky.svg" alt="Sticky Note: What happens if you forget the return statement?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/what-happens-if-you-forget-the-return-statement-sticky.svg" alt="Sticky Note: What happens if you forget the return statement?" width="30%">
 </a>
 
 
@@ -2056,14 +2056,14 @@ int main(void) {
 
 ### 8.12.1 qsort with Function Pointer Callbacks
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-handwritten.svg" alt="Handwritten: 8.12.1 qsort with Function Pointer Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-handwritten.svg" alt="Handwritten: 8.12.1 qsort with Function Pointer Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-diagram.svg" alt="Diagram: 8.12.1 qsort with Function Pointer Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-diagram.svg" alt="Diagram: 8.12.1 qsort with Function Pointer Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-sticky.svg" alt="Sticky Note: 8.12.1 qsort with Function Pointer Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-1-qsort-with-function-pointer-callbacks-sticky.svg" alt="Sticky Note: 8.12.1 qsort with Function Pointer Callbacks" width="30%">
 </a>
 
 
@@ -2132,14 +2132,14 @@ Desc doubles: 3.14 2.71 1.41 0.57
 
 ### 8.12.2 Signal Handlers
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-handwritten.svg" alt="Handwritten: 8.12.2 Signal Handlers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-handwritten.svg" alt="Handwritten: 8.12.2 Signal Handlers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-diagram.svg" alt="Diagram: 8.12.2 Signal Handlers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-diagram.svg" alt="Diagram: 8.12.2 Signal Handlers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-sticky.svg" alt="Sticky Note: 8.12.2 Signal Handlers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-2-signal-handlers-sticky.svg" alt="Sticky Note: 8.12.2 Signal Handlers" width="30%">
 </a>
 
 
@@ -2185,14 +2185,14 @@ int main(void)
 
 ### 8.12.3 Event-Driven Architecture (Callback Table)
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-handwritten.svg" alt="Handwritten: 8.12.3 Event-Driven Architecture (Callback Table)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-handwritten.svg" alt="Handwritten: 8.12.3 Event-Driven Architecture (Callback Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-diagram.svg" alt="Diagram: 8.12.3 Event-Driven Architecture (Callback Table)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-diagram.svg" alt="Diagram: 8.12.3 Event-Driven Architecture (Callback Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-sticky.svg" alt="Sticky Note: 8.12.3 Event-Driven Architecture (Callback Table)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/8-12-3-event-driven-architecture-callback-table-sticky.svg" alt="Sticky Note: 8.12.3 Event-Driven Architecture (Callback Table)" width="30%">
 </a>
 
 
@@ -2262,14 +2262,14 @@ Mouse moved
 
 ### Function Components
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/function-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/function-components-handwritten.svg" alt="Handwritten: Function Components" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/function-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/function-components-handwritten.svg" alt="Handwritten: Function Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/function-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/function-components-diagram.svg" alt="Diagram: Function Components" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/function-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/function-components-diagram.svg" alt="Diagram: Function Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/function-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/function-components-sticky.svg" alt="Sticky Note: Function Components" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/function-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/function-components-sticky.svg" alt="Sticky Note: Function Components" width="30%">
 </a>
 
 
@@ -2287,14 +2287,14 @@ Mouse moved
 
 ### Parameter Passing
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/parameter-passing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/parameter-passing-handwritten.svg" alt="Handwritten: Parameter Passing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/parameter-passing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/parameter-passing-handwritten.svg" alt="Handwritten: Parameter Passing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/parameter-passing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/parameter-passing-diagram.svg" alt="Diagram: Parameter Passing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/parameter-passing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/parameter-passing-diagram.svg" alt="Diagram: Parameter Passing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/parameter-passing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/parameter-passing-sticky.svg" alt="Sticky Note: Parameter Passing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/parameter-passing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/parameter-passing-sticky.svg" alt="Sticky Note: Parameter Passing" width="30%">
 </a>
 
 
@@ -2311,14 +2311,14 @@ Mouse moved
 
 ### Recursion vs Iteration
 
-<a href="../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-handwritten.svg" alt="Handwritten: Recursion vs Iteration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-handwritten.svg" alt="Handwritten: Recursion vs Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-diagram.svg" alt="Diagram: Recursion vs Iteration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-diagram.svg" alt="Diagram: Recursion vs Iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-sticky.svg" alt="Sticky Note: Recursion vs Iteration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/08-functions/recursion-vs-iteration-sticky.svg" alt="Sticky Note: Recursion vs Iteration" width="30%">
 </a>
 
 

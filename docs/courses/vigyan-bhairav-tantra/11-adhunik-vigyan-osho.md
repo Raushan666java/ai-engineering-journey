@@ -72,14 +72,14 @@ flowchart TB
 
 ### "पदार्थ मिथ्या है — चेतना ही सत्य है"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: "पदार्थ मिथ्या है — चेतना ही सत्य है"" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ flowchart TB
 
 ### ओशो और हाइज़ेनबर्ग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और हाइज़ेनबर्ग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और हाइज़ेनबर्ग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और हाइज़ेनबर्ग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और हाइज़ेनबर्ग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और हाइज़ेनबर्ग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और हाइज़ेनबर्ग" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ flowchart TB
 
 ### ओशो और श्रोडिंजर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और श्रोडिंजर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और श्रोडिंजर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और श्रोडिंजर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और श्रोडिंजर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और श्रोडिंजर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और श्रोडिंजर" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ sequenceDiagram
 
 ### फ्रायड — "आधा सच, पूरा झूठ"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: फ्रायड — "आधा सच, पूरा झूठ"" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ sequenceDiagram
 
 ### जंग — "गहरा, लेकिन अधूरा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: जंग — "गहरा, लेकिन अधूरा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: जंग — "गहरा, लेकिन अधूरा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: जंग — "गहरा, लेकिन अधूरा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: जंग — "गहरा, लेकिन अधूरा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: जंग — "गहरा, लेकिन अधूरा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: जंग — "गहरा, लेकिन अधूरा"" width="30%">
 </a>
 
 
@@ -208,14 +208,14 @@ sequenceDiagram
 
 ### राइख — "सबसे करीब, फिर भी दूर"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: राइख — "सबसे करीब, फिर भी दूर"" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ sequenceDiagram
 
 ### ओशो का पूर्ण मनोविज्ञान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो का पूर्ण मनोविज्ञान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो का पूर्ण मनोविज्ञान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो का पूर्ण मनोविज्ञान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो का पूर्ण मनोविज्ञान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो का पूर्ण मनोविज्ञान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो का पूर्ण मनोविज्ञान" width="30%">
 </a>
 
 
@@ -267,14 +267,14 @@ flowchart TB
 
 ### ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो ने कहा था — "विज्ञान एक दिन ध्यान को सिद्ध करेगा"" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ flowchart TB
 
 ### ओशो के कथन और आधुनिक विज्ञान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो के कथन और आधुनिक विज्ञान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो के कथन और आधुनिक विज्ञान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो के कथन और आधुनिक विज्ञान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो के कथन और आधुनिक विज्ञान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो के कथन और आधुनिक विज्ञान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो के कथन और आधुनिक विज्ञान" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ flowchart TB
 
 ### मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: मस्तिष्क तरंगें और चेतना — ओशो की व्याख्या" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ flowchart LR
 
 ### DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-handwritten.svg" alt="Handwritten: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-handwritten.svg" alt="Handwritten: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-diagram.svg" alt="Diagram: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-diagram.svg" alt="Diagram: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-sticky.svg" alt="Sticky Note: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/dmn-sticky.svg" alt="Sticky Note: DMN — डिफ़ॉल्ट मोड नेटवर्क पर ओशो" width="30%">
 </a>
 
 
@@ -355,14 +355,14 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 
 ### ओशो और न्यूरोप्लास्टिसिटी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: ओशो और न्यूरोप्लास्टिसिटी" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 
 ### भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी १: "ध्यान का वैज्ञानिक प्रमाण मिलेगा"" width="30%">
 </a>
 
 
@@ -397,14 +397,14 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 
 ### भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी २: "पूर्व और पश्चिम का मिलन होगा"" width="30%">
 </a>
 
 
@@ -419,14 +419,14 @@ DMN — डिफ़ॉल्ट मोड नेटवर्क — मस्�
 
 ### भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: भविष्यवाणी ३: "चेतना विज्ञान का अंतिम क्षेत्र होगा"" width="30%">
 </a>
 
 
@@ -473,14 +473,14 @@ flowchart TB
 
 ### मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: मेडिटेशन बनाम मेडिकेशन — ओशो की दृष्टि" width="30%">
 </a>
 
 
@@ -1084,14 +1084,14 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: विज्ञान-तंत्र संवाद — अपना शोध" width="30%">
 </a>
 
 
@@ -1099,14 +1099,14 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास २: फ्रायड, जंग, राइख — तुलना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: फ्रायड, जंग, राइख — तुलना" width="30%">
 </a>
 
 
@@ -1114,14 +1114,14 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: क्वांटम भौतिकी और तंत्र — अपने शब्दों में" width="30%">
 </a>
 
 
@@ -1129,14 +1129,14 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास ४: ध्यान का प्रयोग — स्वयं पर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: ध्यान का प्रयोग — स्वयं पर" width="30%">
 </a>
 
 
@@ -1144,14 +1144,14 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास ५: ओशो की भविष्यवाणियों पर शोध
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: ओशो की भविष्यवाणियों पर शोध" width="30%">
 </a>
 
 
@@ -1159,14 +1159,14 @@ demonstrateOshoScienceTantra();
 
 ### अभ्यास ६: समूह चर्चा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/11-adhunik-vigyan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
 
 

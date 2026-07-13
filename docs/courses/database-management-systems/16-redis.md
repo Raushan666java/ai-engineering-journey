@@ -49,14 +49,14 @@ flowchart LR
 
 ### 16.1 Redis Overview
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-handwritten.svg" alt="Handwritten: 16.1 Redis Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-handwritten.svg" alt="Handwritten: 16.1 Redis Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-diagram.svg" alt="Diagram: 16.1 Redis Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-diagram.svg" alt="Diagram: 16.1 Redis Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-sticky.svg" alt="Sticky Note: 16.1 Redis Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-sticky.svg" alt="Sticky Note: 16.1 Redis Overview" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ Simple string reply: "OK"
 
 ### 16.2 Data Types and Commands
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-handwritten.svg" alt="Handwritten: 16.2 Data Types and Commands" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-handwritten.svg" alt="Handwritten: 16.2 Data Types and Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-diagram.svg" alt="Diagram: 16.2 Data Types and Commands" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-diagram.svg" alt="Diagram: 16.2 Data Types and Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-sticky.svg" alt="Sticky Note: 16.2 Data Types and Commands" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-sticky.svg" alt="Sticky Note: 16.2 Data Types and Commands" width="30%">
 </a>
 
 
@@ -1698,14 +1698,14 @@ time.sleep(10)  # Let consumers process
 
 ### 16.2.10 Data Types Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-handwritten.svg" alt="Handwritten: 16.2.10 Data Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-handwritten.svg" alt="Handwritten: 16.2.10 Data Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-diagram.svg" alt="Diagram: 16.2.10 Data Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-diagram.svg" alt="Diagram: 16.2.10 Data Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-sticky.svg" alt="Sticky Note: 16.2.10 Data Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-sticky.svg" alt="Sticky Note: 16.2.10 Data Types Comparison" width="30%">
 </a>
 
 
@@ -1724,14 +1724,14 @@ time.sleep(10)  # Let consumers process
 | **Worst for** | Field-level access | Random access | Ordered queries | Memory-critical | Nested objects | String data | Exact counts | Exact distance | Low-throughput |
 ### 16.3 Persistence
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-handwritten.svg" alt="Handwritten: 16.3 Persistence" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-handwritten.svg" alt="Handwritten: 16.3 Persistence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-diagram.svg" alt="Diagram: 16.3 Persistence" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-diagram.svg" alt="Diagram: 16.3 Persistence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-sticky.svg" alt="Sticky Note: 16.3 Persistence" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-sticky.svg" alt="Sticky Note: 16.3 Persistence" width="30%">
 </a>
 
 
@@ -1983,14 +1983,14 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 
 ### 16.4 Replication
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-handwritten.svg" alt="Handwritten: 16.4 Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-handwritten.svg" alt="Handwritten: 16.4 Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-diagram.svg" alt="Diagram: 16.4 Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-diagram.svg" alt="Diagram: 16.4 Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-sticky.svg" alt="Sticky Note: 16.4 Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-sticky.svg" alt="Sticky Note: 16.4 Replication" width="30%">
 </a>
 
 
@@ -2144,14 +2144,14 @@ if replica_info['role'] == 'slave':
 
 ### 16.5 Redis Sentinel â†’ High Availability
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-handwritten.svg" alt="Handwritten: 16.5 Redis Sentinel â†’ High Availability" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-handwritten.svg" alt="Handwritten: 16.5 Redis Sentinel â†’ High Availability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-diagram.svg" alt="Diagram: 16.5 Redis Sentinel â†’ High Availability" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-diagram.svg" alt="Diagram: 16.5 Redis Sentinel â†’ High Availability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-sticky.svg" alt="Sticky Note: 16.5 Redis Sentinel â†’ High Availability" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-sticky.svg" alt="Sticky Note: 16.5 Redis Sentinel â†’ High Availability" width="30%">
 </a>
 
 
@@ -2304,14 +2304,14 @@ int main() {
 | Failover during heavy write load | Data loss â†’ unsynced writes on old master | Use WAIT command for synchronous replication |
 ### 16.6 Redis Cluster â†’ Automatic Sharding
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-handwritten.svg" alt="Handwritten: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-handwritten.svg" alt="Handwritten: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-diagram.svg" alt="Diagram: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-diagram.svg" alt="Diagram: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-sticky.svg" alt="Sticky Note: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-sticky.svg" alt="Sticky Note: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
 </a>
 
 
@@ -2461,14 +2461,14 @@ for node in rc.get_nodes():
 
 ### 16.7 Pub/Sub
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-handwritten.svg" alt="Handwritten: 16.7 Pub/Sub" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-handwritten.svg" alt="Handwritten: 16.7 Pub/Sub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-diagram.svg" alt="Diagram: 16.7 Pub/Sub" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-diagram.svg" alt="Diagram: 16.7 Pub/Sub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-sticky.svg" alt="Sticky Note: 16.7 Pub/Sub" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-sticky.svg" alt="Sticky Note: 16.7 Pub/Sub" width="30%">
 </a>
 
 
@@ -2610,14 +2610,14 @@ for message in pubsub.listen():
 
 ### 16.8 Transactions (MULTI/EXEC)
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-handwritten.svg" alt="Handwritten: 16.8 Transactions (MULTI/EXEC)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-handwritten.svg" alt="Handwritten: 16.8 Transactions (MULTI/EXEC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-diagram.svg" alt="Diagram: 16.8 Transactions (MULTI/EXEC)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-diagram.svg" alt="Diagram: 16.8 Transactions (MULTI/EXEC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-sticky.svg" alt="Sticky Note: 16.8 Transactions (MULTI/EXEC)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-sticky.svg" alt="Sticky Note: 16.8 Transactions (MULTI/EXEC)" width="30%">
 </a>
 
 
@@ -2736,14 +2736,14 @@ transfer_funds('account:a', 'account:b', 200)
 
 ### 16.9 Lua Scripting
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-handwritten.svg" alt="Handwritten: 16.9 Lua Scripting" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-handwritten.svg" alt="Handwritten: 16.9 Lua Scripting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-diagram.svg" alt="Diagram: 16.9 Lua Scripting" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-diagram.svg" alt="Diagram: 16.9 Lua Scripting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-sticky.svg" alt="Sticky Note: 16.9 Lua Scripting" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-sticky.svg" alt="Sticky Note: 16.9 Lua Scripting" width="30%">
 </a>
 
 
@@ -2874,14 +2874,14 @@ end
 | Server-side data processing | Scripts use `redis.sha1hex` for hashing; no external calls |
 ### 16.10 Caching Patterns
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-handwritten.svg" alt="Handwritten: 16.10 Caching Patterns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-handwritten.svg" alt="Handwritten: 16.10 Caching Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-diagram.svg" alt="Diagram: 16.10 Caching Patterns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-diagram.svg" alt="Diagram: 16.10 Caching Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-sticky.svg" alt="Sticky Note: 16.10 Caching Patterns" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-sticky.svg" alt="Sticky Note: 16.10 Caching Patterns" width="30%">
 </a>
 
 
@@ -3158,14 +3158,14 @@ class RefreshAheadCache:
 
 ### 16.10.6 Caching Strategies Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-handwritten.svg" alt="Handwritten: 16.10.6 Caching Strategies Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-handwritten.svg" alt="Handwritten: 16.10.6 Caching Strategies Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-diagram.svg" alt="Diagram: 16.10.6 Caching Strategies Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-diagram.svg" alt="Diagram: 16.10.6 Caching Strategies Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-sticky.svg" alt="Sticky Note: 16.10.6 Caching Strategies Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-sticky.svg" alt="Sticky Note: 16.10.6 Caching Strategies Comparison" width="30%">
 </a>
 
 
@@ -3179,14 +3179,14 @@ class RefreshAheadCache:
 
 ### 16.11 Eviction Policies
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-handwritten.svg" alt="Handwritten: 16.11 Eviction Policies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-handwritten.svg" alt="Handwritten: 16.11 Eviction Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-diagram.svg" alt="Diagram: 16.11 Eviction Policies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-diagram.svg" alt="Diagram: 16.11 Eviction Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-sticky.svg" alt="Sticky Note: 16.11 Eviction Policies" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-sticky.svg" alt="Sticky Note: 16.11 Eviction Policies" width="30%">
 </a>
 
 
@@ -3261,14 +3261,14 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 ### 16.12 Redis vs Memcached
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-handwritten.svg" alt="Handwritten: 16.12 Redis vs Memcached" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-handwritten.svg" alt="Handwritten: 16.12 Redis vs Memcached" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-diagram.svg" alt="Diagram: 16.12 Redis vs Memcached" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-diagram.svg" alt="Diagram: 16.12 Redis vs Memcached" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-sticky.svg" alt="Sticky Note: 16.12 Redis vs Memcached" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-sticky.svg" alt="Sticky Note: 16.12 Redis vs Memcached" width="30%">
 </a>
 
 
@@ -3306,14 +3306,14 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 ### 16.13 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-handwritten.svg" alt="Handwritten: 16.13 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-handwritten.svg" alt="Handwritten: 16.13 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-diagram.svg" alt="Diagram: 16.13 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-diagram.svg" alt="Diagram: 16.13 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-sticky.svg" alt="Sticky Note: 16.13 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-sticky.svg" alt="Sticky Note: 16.13 Interview Corner" width="30%">
 </a>
 
 
@@ -3347,14 +3347,14 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 ### 16.14 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-handwritten.svg" alt="Handwritten: 16.14 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-handwritten.svg" alt="Handwritten: 16.14 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-diagram.svg" alt="Diagram: 16.14 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-diagram.svg" alt="Diagram: 16.14 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-sticky.svg" alt="Sticky Note: 16.14 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-sticky.svg" alt="Sticky Note: 16.14 Applications in Real Systems" width="30%">
 </a>
 
 

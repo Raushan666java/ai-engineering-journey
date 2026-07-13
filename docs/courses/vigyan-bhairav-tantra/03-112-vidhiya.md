@@ -26,14 +26,14 @@
 
 ### पारंपरिक वर्गीकरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: पारंपरिक वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: पारंपरिक वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: पारंपरिक वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: पारंपरिक वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: पारंपरिक वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: पारंपरिक वर्गीकरण" width="30%">
 </a>
 
 
@@ -44,14 +44,14 @@
 
 ### ओशो का वर्गीकरण: ५ श्रेणियाँ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का वर्गीकरण: ५ श्रेणियाँ" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ flowchart TB
 
 ### ओशो का परिचय
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ flowchart TB
 
 ### मुख्य तकनीकें (ओशो के अनुसार)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
 </a>
 
 
@@ -186,14 +186,14 @@ flowchart TB
 
 ### ओशो का परिचय
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ flowchart TB
 
 ### मुख्य तकनीकें (ओशो के अनुसार)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मुख्य तकनीकें (ओशो के अनुसार)" width="30%">
 </a>
 
 
@@ -233,14 +233,14 @@ flowchart TB
 
 ### ओशो का परिचय
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ flowchart TB
 
 ### दृष्टि तकनीकें (विधि ३३-४२)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: दृष्टि तकनीकें (विधि ३३-४२)" width="30%">
 </a>
 
 
@@ -271,14 +271,14 @@ flowchart TB
 
 ### श्रवण तकनीकें (विधि ४३-५४)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: श्रवण तकनीकें (विधि ४३-५४)" width="30%">
 </a>
 
 
@@ -293,14 +293,14 @@ flowchart TB
 
 ### स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: स्पर्श/स्वाद/गंध तकनीकें (विधि ५५-६४)" width="30%">
 </a>
 
 
@@ -313,14 +313,14 @@ flowchart TB
 
 ### ओशो का परिचय
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ flowchart TB
 
 ### मन तकनीकें (विधि ६५-७८)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मन तकनीकें (विधि ६५-७८)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: मन तकनीकें (विधि ६५-७८)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मन तकनीकें (विधि ६५-७८)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: मन तकनीकें (विधि ६५-७८)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मन तकनीकें (विधि ६५-७८)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: मन तकनीकें (विधि ६५-७८)" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ flowchart TB
 
 ### भावना तकनीकें (विधि ७९-८९)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: भावना तकनीकें (विधि ७९-८९)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: भावना तकनीकें (विधि ७९-८९)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: भावना तकनीकें (विधि ७९-८९)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: भावना तकनीकें (विधि ७९-८९)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: भावना तकनीकें (विधि ७९-८९)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: भावना तकनीकें (विधि ७९-८९)" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ flowchart TB
 
 ### ओशो का परिचय
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का परिचय" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का परिचय" width="30%">
 </a>
 
 
@@ -397,14 +397,14 @@ flowchart TB
 
 ### चैतन्य तकनीकें (विधि ९०-९७)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: चैतन्य तकनीकें (विधि ९०-९७)" width="30%">
 </a>
 
 
@@ -418,14 +418,14 @@ flowchart TB
 
 ### शून्य तकनीकें (विधि ९८-१०५)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: शून्य तकनीकें (विधि ९८-१०५)" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ flowchart TB
 
 ### उन्मनी/सहज तकनीकें (विधि १०६-११२)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: उन्मनी/सहज तकनीकें (विधि १०६-११२)" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ flowchart TB
 
 ### ओशो का मनोवैज्ञानिक वर्गीकरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो का मनोवैज्ञानिक वर्गीकरण" width="30%">
 </a>
 
 
@@ -484,14 +484,14 @@ flowchart LR
 
 ### ओशो की सलाह: कैसे चुनें तकनीक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: ओशो की सलाह: कैसे चुनें तकनीक" width="30%">
 </a>
 
 
@@ -964,14 +964,14 @@ run112TechniqueBrowser();
 
 ### विधि १: सबसे सरल — श्वास का साक्षी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि १: सबसे सरल — श्वास का साक्षी" width="30%">
 </a>
 
 
@@ -980,14 +980,14 @@ run112TechniqueBrowser();
 
 ### विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि ४२: नाद ब्रह्म — ओशो की पसंदीदा" width="30%">
 </a>
 
 
@@ -996,14 +996,14 @@ run112TechniqueBrowser();
 
 ### विधि ११२: अंतिम विधि — सब कुछ छोड़ देना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: विधि ११२: अंतिम विधि — सब कुछ छोड़ देना" width="30%">
 </a>
 
 
@@ -1029,14 +1029,14 @@ run112TechniqueBrowser();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 ओशो ने ११२ तकनीकों को कितनी श्रेणियों में बाँटा?
@@ -1053,14 +1053,14 @@ b) ५ — श्वास, शारीरिक, इन्द्रिय, म
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 ओशो के अनुसार कौन सी तकनीक सबसे सरल है?
@@ -1077,14 +1077,14 @@ b) विधि १ — सिर्फ श्वास को देखना�
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 श्रेणी ३ (इन्द्रिय तकनीकें) में कितनी तकनीकें हैं?
@@ -1101,14 +1101,14 @@ c) ३२ — विधि ३३ से ६४ तक — दृष्टि (�
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 ओशो के अनुसार, सबसे कठिन तकनीक कौन सी है?
@@ -1125,14 +1125,14 @@ c) विधि ११२ — अंतिम विधि। "सबसे क�
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 ओशो तकनीक चुनने की क्या सलाह देते हैं?
@@ -1149,14 +1149,14 @@ b) "कोई भी तकनीक पढ़ो — अगर वह तुम
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 श्रेणी ५ (परम तकनीकें) किनके लिए हैं?
@@ -1173,14 +1173,14 @@ b) उनके लिए जो पिछली श्रेणियों स
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 "नाद ब्रह्म" किस श्रेणी की तकनीक है?
@@ -1197,14 +1197,14 @@ b) इन्द्रिय श्रेणी — श्रवण तकनी�
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 ओशो के अनुसार, तकनीकों की यात्रा किस दिशा में है?
@@ -1225,14 +1225,14 @@ b) स्थूल से सूक्ष्म — श्वास (स्थ�
 
 ### अभ्यास १: अपनी तकनीक खोजें
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास १: अपनी तकनीक खोजें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास १: अपनी तकनीक खोजें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास १: अपनी तकनीक खोजें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास १: अपनी तकनीक खोजें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास १: अपनी तकनीक खोजें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास १: अपनी तकनीक खोजें" width="30%">
 </a>
 
 
@@ -1259,14 +1259,14 @@ forMe.forEach(t => {
 
 ### अभ्यास २: सप्ताह का अभ्यास शेड्यूल
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास २: सप्ताह का अभ्यास शेड्यूल" width="30%">
 </a>
 
 
@@ -1298,14 +1298,14 @@ console.log(tracker.getOshoEncouragement());
 
 ### अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास ३: तकनीक डायरी — ७ दिनों का अभ्यास" width="30%">
 </a>
 
 
@@ -1323,14 +1323,14 @@ console.log(tracker.getOshoEncouragement());
 
 ### अभ्यास ४: अपना खुद का वर्गीकरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-handwritten.svg" alt="Handwritten: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-diagram.svg" alt="Diagram: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/03-112-vidhiya/-sticky.svg" alt="Sticky Note: अभ्यास ४: अपना खुद का वर्गीकरण" width="30%">
 </a>
 
 

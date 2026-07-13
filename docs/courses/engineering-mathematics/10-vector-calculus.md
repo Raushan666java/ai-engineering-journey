@@ -39,14 +39,14 @@ flowchart LR
 
 ### 10.1 Scalar and Vector Fields
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-handwritten.svg" alt="Handwritten: 10.1 Scalar and Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-handwritten.svg" alt="Handwritten: 10.1 Scalar and Vector Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-diagram.svg" alt="Diagram: 10.1 Scalar and Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-diagram.svg" alt="Diagram: 10.1 Scalar and Vector Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-sticky.svg" alt="Sticky Note: 10.1 Scalar and Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-sticky.svg" alt="Sticky Note: 10.1 Scalar and Vector Fields" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ $$\nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k
 
 ### 10.2 Line Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-handwritten.svg" alt="Handwritten: 10.2 Line Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-handwritten.svg" alt="Handwritten: 10.2 Line Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-diagram.svg" alt="Diagram: 10.2 Line Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-diagram.svg" alt="Diagram: 10.2 Line Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-sticky.svg" alt="Sticky Note: 10.2 Line Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-sticky.svg" alt="Sticky Note: 10.2 Line Integrals" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ Measures the work done by force $\mathbf{F}$ moving along path $C$.
 
 ### 10.3 Conservative Vector Fields
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-handwritten.svg" alt="Handwritten: 10.3 Conservative Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-handwritten.svg" alt="Handwritten: 10.3 Conservative Vector Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-diagram.svg" alt="Diagram: 10.3 Conservative Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-diagram.svg" alt="Diagram: 10.3 Conservative Vector Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-sticky.svg" alt="Sticky Note: 10.3 Conservative Vector Fields" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-sticky.svg" alt="Sticky Note: 10.3 Conservative Vector Fields" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ A vector field $\mathbf{F}$ is **conservative** if $\mathbf{F} = \nabla \phi$ fo
 
 ### 10.4 Surface Integrals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-handwritten.svg" alt="Handwritten: 10.4 Surface Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-handwritten.svg" alt="Handwritten: 10.4 Surface Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-diagram.svg" alt="Diagram: 10.4 Surface Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-diagram.svg" alt="Diagram: 10.4 Surface Integrals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-sticky.svg" alt="Sticky Note: 10.4 Surface Integrals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-sticky.svg" alt="Sticky Note: 10.4 Surface Integrals" width="30%">
 </a>
 
 
@@ -138,14 +138,14 @@ $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \mathbf{F} \cdot \mathbf{n}\,dS
 
 ### 10.5 Green's Theorem
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-handwritten.svg" alt="Handwritten: 10.5 Green's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-handwritten.svg" alt="Handwritten: 10.5 Green's Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-diagram.svg" alt="Diagram: 10.5 Green's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-diagram.svg" alt="Diagram: 10.5 Green's Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-sticky.svg" alt="Sticky Note: 10.5 Green's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-sticky.svg" alt="Sticky Note: 10.5 Green's Theorem" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ $$\oint_C \mathbf{F} \cdot \mathbf{n}\,ds = \iint_D \nabla \cdot \mathbf{F}\,dA$
 
 ### 10.6 Stokes' Theorem
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-handwritten.svg" alt="Handwritten: 10.6 Stokes' Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-handwritten.svg" alt="Handwritten: 10.6 Stokes' Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-diagram.svg" alt="Diagram: 10.6 Stokes' Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-diagram.svg" alt="Diagram: 10.6 Stokes' Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-sticky.svg" alt="Sticky Note: 10.6 Stokes' Theorem" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-sticky.svg" alt="Sticky Note: 10.6 Stokes' Theorem" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ The line integral around a closed curve $C$ equals the flux of curl through any 
 
 ### 10.7 Divergence Theorem (Gauss's Theorem)
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-handwritten.svg" alt="Handwritten: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-handwritten.svg" alt="Handwritten: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-diagram.svg" alt="Diagram: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-diagram.svg" alt="Diagram: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-sticky.svg" alt="Sticky Note: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-sticky.svg" alt="Sticky Note: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
 </a>
 
 
@@ -204,14 +204,14 @@ The net outward flux of $\mathbf{F}$ through closed surface $S$ equals the tripl
 
 ### 10.8 Orthogonal Coordinate Systems
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-handwritten.svg" alt="Handwritten: 10.8 Orthogonal Coordinate Systems" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-handwritten.svg" alt="Handwritten: 10.8 Orthogonal Coordinate Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-diagram.svg" alt="Diagram: 10.8 Orthogonal Coordinate Systems" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-diagram.svg" alt="Diagram: 10.8 Orthogonal Coordinate Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-sticky.svg" alt="Sticky Note: 10.8 Orthogonal Coordinate Systems" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-sticky.svg" alt="Sticky Note: 10.8 Orthogonal Coordinate Systems" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ $$\nabla^2 f = \frac{1}{\rho^2}\frac{\partial}{\partial\rho}\left(\rho^2\frac{\p
 
 ### 10.9 Applications in Physics
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-handwritten.svg" alt="Handwritten: 10.9 Applications in Physics" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-handwritten.svg" alt="Handwritten: 10.9 Applications in Physics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-diagram.svg" alt="Diagram: 10.9 Applications in Physics" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-diagram.svg" alt="Diagram: 10.9 Applications in Physics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-sticky.svg" alt="Sticky Note: 10.9 Applications in Physics" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-sticky.svg" alt="Sticky Note: 10.9 Applications in Physics" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ Faraday's law: $\oint_C \mathbf{E} \cdot d\mathbf{r} = -\frac{d}{dt}\iint_S \mat
 
 ### 10.10 Applications in Machine Learning
 
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-handwritten.svg" alt="Handwritten: 10.10 Applications in Machine Learning" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-handwritten.svg" alt="Handwritten: 10.10 Applications in Machine Learning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-diagram.svg" alt="Diagram: 10.10 Applications in Machine Learning" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-diagram.svg" alt="Diagram: 10.10 Applications in Machine Learning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-sticky.svg" alt="Sticky Note: 10.10 Applications in Machine Learning" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-sticky.svg" alt="Sticky Note: 10.10 Applications in Machine Learning" width="30%">
 </a>
 
 

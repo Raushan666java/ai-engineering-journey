@@ -217,14 +217,14 @@ flowchart TD
 
 ### Q1: Select employees with salary above department average
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-handwritten.svg" alt="Handwritten: Select employees with salary above department average" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-handwritten.svg" alt="Handwritten: Select employees with salary above department average" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-diagram.svg" alt="Diagram: Select employees with salary above department average" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-diagram.svg" alt="Diagram: Select employees with salary above department average" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-sticky.svg" alt="Sticky Note: Select employees with salary above department average" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/select-employees-with-salary-above-department-average-sticky.svg" alt="Sticky Note: Select employees with salary above department average" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ ORDER BY e.dept_id, e.salary DESC;
 
 ### Q2: Second highest salary (3 methods)
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-handwritten.svg" alt="Handwritten: Second highest salary (3 methods)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-handwritten.svg" alt="Handwritten: Second highest salary (3 methods)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-diagram.svg" alt="Diagram: Second highest salary (3 methods)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-diagram.svg" alt="Diagram: Second highest salary (3 methods)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-sticky.svg" alt="Sticky Note: Second highest salary (3 methods)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/second-highest-salary-3-methods-sticky.svg" alt="Sticky Note: Second highest salary (3 methods)" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ WHERE rnk = 2;
 
 ### Q3: Count employees per department
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-handwritten.svg" alt="Handwritten: Count employees per department" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-handwritten.svg" alt="Handwritten: Count employees per department" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-diagram.svg" alt="Diagram: Count employees per department" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-diagram.svg" alt="Diagram: Count employees per department" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-sticky.svg" alt="Sticky Note: Count employees per department" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/count-employees-per-department-sticky.svg" alt="Sticky Note: Count employees per department" width="30%">
 </a>
 
 
@@ -389,14 +389,14 @@ ORDER BY employee_count DESC;
 
 ### Q4: Find duplicate names in employee table
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-handwritten.svg" alt="Handwritten: Find duplicate names in employee table" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-handwritten.svg" alt="Handwritten: Find duplicate names in employee table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-diagram.svg" alt="Diagram: Find duplicate names in employee table" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-diagram.svg" alt="Diagram: Find duplicate names in employee table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-sticky.svg" alt="Sticky Note: Find duplicate names in employee table" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-duplicate-names-in-employee-table-sticky.svg" alt="Sticky Note: Find duplicate names in employee table" width="30%">
 </a>
 
 
@@ -437,14 +437,14 @@ HAVING COUNT(*) > 1;
 
 ### Q5: Find employees hired in last 30 days
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-handwritten.svg" alt="Handwritten: Find employees hired in last 30 days" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-handwritten.svg" alt="Handwritten: Find employees hired in last 30 days" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-diagram.svg" alt="Diagram: Find employees hired in last 30 days" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-diagram.svg" alt="Diagram: Find employees hired in last 30 days" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-sticky.svg" alt="Sticky Note: Find employees hired in last 30 days" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-employees-hired-in-last-30-days-sticky.svg" alt="Sticky Note: Find employees hired in last 30 days" width="30%">
 </a>
 
 
@@ -482,14 +482,14 @@ ORDER BY hire_date DESC;
 
 ### Q6: Update salary by percentage
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-handwritten.svg" alt="Handwritten: Update salary by percentage" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-handwritten.svg" alt="Handwritten: Update salary by percentage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-diagram.svg" alt="Diagram: Update salary by percentage" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-diagram.svg" alt="Diagram: Update salary by percentage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-sticky.svg" alt="Sticky Note: Update salary by percentage" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-salary-by-percentage-sticky.svg" alt="Sticky Note: Update salary by percentage" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ WHERE dept_id = 1;
 
 ### Q7: Delete duplicate rows
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-handwritten.svg" alt="Handwritten: Delete duplicate rows" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-handwritten.svg" alt="Handwritten: Delete duplicate rows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-diagram.svg" alt="Diagram: Delete duplicate rows" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-diagram.svg" alt="Diagram: Delete duplicate rows" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-sticky.svg" alt="Sticky Note: Delete duplicate rows" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/delete-duplicate-rows-sticky.svg" alt="Sticky Note: Delete duplicate rows" width="30%">
 </a>
 
 
@@ -612,14 +612,14 @@ HAVING COUNT(*) > 1;
 
 ### Q8: Find NULL values in a column
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-handwritten.svg" alt="Handwritten: Find NULL values in a column" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-handwritten.svg" alt="Handwritten: Find NULL values in a column" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-diagram.svg" alt="Diagram: Find NULL values in a column" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-diagram.svg" alt="Diagram: Find NULL values in a column" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-sticky.svg" alt="Sticky Note: Find NULL values in a column" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-null-values-in-a-column-sticky.svg" alt="Sticky Note: Find NULL values in a column" width="30%">
 </a>
 
 
@@ -658,14 +658,14 @@ WHERE manager_id IS NULL;
 
 ### Q9: Inner join employees + departments
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-handwritten.svg" alt="Handwritten: Inner join employees + departments" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-handwritten.svg" alt="Handwritten: Inner join employees + departments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-diagram.svg" alt="Diagram: Inner join employees + departments" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-diagram.svg" alt="Diagram: Inner join employees + departments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-sticky.svg" alt="Sticky Note: Inner join employees + departments" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/inner-join-employees-departments-sticky.svg" alt="Sticky Note: Inner join employees + departments" width="30%">
 </a>
 
 
@@ -714,14 +714,14 @@ ORDER BY e.id;
 
 ### Q10: Left join showing all departments even if no employees
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-handwritten.svg" alt="Handwritten: Left join showing all departments even if no employees" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-handwritten.svg" alt="Handwritten: Left join showing all departments even if no employees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-diagram.svg" alt="Diagram: Left join showing all departments even if no employees" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-diagram.svg" alt="Diagram: Left join showing all departments even if no employees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-sticky.svg" alt="Sticky Note: Left join showing all departments even if no employees" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/left-join-showing-all-departments-even-if-no-employees-sticky.svg" alt="Sticky Note: Left join showing all departments even if no employees" width="30%">
 </a>
 
 
@@ -762,14 +762,14 @@ ORDER BY headcount DESC;
 
 ### Q11: Self join to find employees earning more than their managers
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-handwritten.svg" alt="Handwritten: Self join to find employees earning more than their managers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-handwritten.svg" alt="Handwritten: Self join to find employees earning more than their managers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-diagram.svg" alt="Diagram: Self join to find employees earning more than their managers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-diagram.svg" alt="Diagram: Self join to find employees earning more than their managers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-sticky.svg" alt="Sticky Note: Self join to find employees earning more than their managers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/self-join-to-find-employees-earning-more-than-their-managers-sticky.svg" alt="Sticky Note: Self join to find employees earning more than their managers" width="30%">
 </a>
 
 
@@ -834,14 +834,14 @@ DELETE FROM employees WHERE id = 17;
 
 ### Q12: Cross join use case
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-handwritten.svg" alt="Handwritten: Cross join use case" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-handwritten.svg" alt="Handwritten: Cross join use case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-diagram.svg" alt="Diagram: Cross join use case" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-diagram.svg" alt="Diagram: Cross join use case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-sticky.svg" alt="Sticky Note: Cross join use case" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cross-join-use-case-sticky.svg" alt="Sticky Note: Cross join use case" width="30%">
 </a>
 
 
@@ -892,14 +892,14 @@ ORDER BY e.name, d.name;
 
 ### Q13: Full outer join simulation in MySQL
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-handwritten.svg" alt="Handwritten: Full outer join simulation in MySQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-handwritten.svg" alt="Handwritten: Full outer join simulation in MySQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-diagram.svg" alt="Diagram: Full outer join simulation in MySQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-diagram.svg" alt="Diagram: Full outer join simulation in MySQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-sticky.svg" alt="Sticky Note: Full outer join simulation in MySQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/full-outer-join-simulation-in-mysql-sticky.svg" alt="Sticky Note: Full outer join simulation in MySQL" width="30%">
 </a>
 
 
@@ -982,14 +982,14 @@ WHERE e.id IS NULL;
 
 ### Q14: Join 3+ tables
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-handwritten.svg" alt="Handwritten: Join 3+ tables" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-handwritten.svg" alt="Handwritten: Join 3+ tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-diagram.svg" alt="Diagram: Join 3+ tables" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-diagram.svg" alt="Diagram: Join 3+ tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-sticky.svg" alt="Sticky Note: Join 3+ tables" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/join-3-tables-sticky.svg" alt="Sticky Note: Join 3+ tables" width="30%">
 </a>
 
 
@@ -1035,14 +1035,14 @@ ORDER BY o.order_date DESC;
 
 ### Q15: Non-equi join
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-handwritten.svg" alt="Handwritten: Non-equi join" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-handwritten.svg" alt="Handwritten: Non-equi join" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-diagram.svg" alt="Diagram: Non-equi join" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-diagram.svg" alt="Diagram: Non-equi join" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-sticky.svg" alt="Sticky Note: Non-equi join" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-equi-join-sticky.svg" alt="Sticky Note: Non-equi join" width="30%">
 </a>
 
 
@@ -1085,14 +1085,14 @@ ORDER BY ABS(e1.salary - e2.salary);
 
 ### Q16: Natural join vs inner join
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-handwritten.svg" alt="Handwritten: Natural join vs inner join" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-handwritten.svg" alt="Handwritten: Natural join vs inner join" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-diagram.svg" alt="Diagram: Natural join vs inner join" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-diagram.svg" alt="Diagram: Natural join vs inner join" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-sticky.svg" alt="Sticky Note: Natural join vs inner join" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/natural-join-vs-inner-join-sticky.svg" alt="Sticky Note: Natural join vs inner join" width="30%">
 </a>
 
 
@@ -1136,14 +1136,14 @@ INNER JOIN departments d ON e.dept_id = d.id;
 
 ### Q17: Department-wise max/min/avg salary
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-handwritten.svg" alt="Handwritten: Department-wise max/min/avg salary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-handwritten.svg" alt="Handwritten: Department-wise max/min/avg salary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-diagram.svg" alt="Diagram: Department-wise max/min/avg salary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-diagram.svg" alt="Diagram: Department-wise max/min/avg salary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-sticky.svg" alt="Sticky Note: Department-wise max/min/avg salary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/department-wise-max-min-avg-salary-sticky.svg" alt="Sticky Note: Department-wise max/min/avg salary" width="30%">
 </a>
 
 
@@ -1186,14 +1186,14 @@ ORDER BY avg_salary DESC;
 
 ### Q18: HAVING clause examples
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-handwritten.svg" alt="Handwritten: HAVING clause examples" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-handwritten.svg" alt="Handwritten: HAVING clause examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-diagram.svg" alt="Diagram: HAVING clause examples" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-diagram.svg" alt="Diagram: HAVING clause examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-sticky.svg" alt="Sticky Note: HAVING clause examples" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/having-clause-examples-sticky.svg" alt="Sticky Note: HAVING clause examples" width="30%">
 </a>
 
 
@@ -1232,14 +1232,14 @@ ORDER BY avg_salary DESC;
 
 ### Q19: Find departments with >5 employees
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-handwritten.svg" alt="Handwritten: Find departments with >5 employees" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-handwritten.svg" alt="Handwritten: Find departments with >5 employees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-diagram.svg" alt="Diagram: Find departments with >5 employees" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-diagram.svg" alt="Diagram: Find departments with >5 employees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-sticky.svg" alt="Sticky Note: Find departments with >5 employees" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-departments-with-5-employees-sticky.svg" alt="Sticky Note: Find departments with >5 employees" width="30%">
 </a>
 
 
@@ -1271,14 +1271,14 @@ HAVING COUNT(e.id) > 5;
 
 ### Q20: Running total using window functions
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-handwritten.svg" alt="Handwritten: Running total using window functions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-handwritten.svg" alt="Handwritten: Running total using window functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-diagram.svg" alt="Diagram: Running total using window functions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-diagram.svg" alt="Diagram: Running total using window functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-sticky.svg" alt="Sticky Note: Running total using window functions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/running-total-using-window-functions-sticky.svg" alt="Sticky Note: Running total using window functions" width="30%">
 </a>
 
 
@@ -1331,14 +1331,14 @@ ORDER BY dept_id, hire_date;
 
 ### Q21: Rolling average
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-handwritten.svg" alt="Handwritten: Rolling average" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-handwritten.svg" alt="Handwritten: Rolling average" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-diagram.svg" alt="Diagram: Rolling average" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-diagram.svg" alt="Diagram: Rolling average" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-sticky.svg" alt="Sticky Note: Rolling average" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/rolling-average-sticky.svg" alt="Sticky Note: Rolling average" width="30%">
 </a>
 
 
@@ -1381,14 +1381,14 @@ ORDER BY hire_date;
 
 ### Q22: Cumulative sum partitioned by category
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-handwritten.svg" alt="Handwritten: Cumulative sum partitioned by category" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-handwritten.svg" alt="Handwritten: Cumulative sum partitioned by category" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-diagram.svg" alt="Diagram: Cumulative sum partitioned by category" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-diagram.svg" alt="Diagram: Cumulative sum partitioned by category" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-sticky.svg" alt="Sticky Note: Cumulative sum partitioned by category" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cumulative-sum-partitioned-by-category-sticky.svg" alt="Sticky Note: Cumulative sum partitioned by category" width="30%">
 </a>
 
 
@@ -1439,14 +1439,14 @@ ORDER BY status, order_date;
 
 ### Q23: Month-wise sales totals
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-handwritten.svg" alt="Handwritten: Month-wise sales totals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-handwritten.svg" alt="Handwritten: Month-wise sales totals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-diagram.svg" alt="Diagram: Month-wise sales totals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-diagram.svg" alt="Diagram: Month-wise sales totals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-sticky.svg" alt="Sticky Note: Month-wise sales totals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/month-wise-sales-totals-sticky.svg" alt="Sticky Note: Month-wise sales totals" width="30%">
 </a>
 
 
@@ -1491,14 +1491,14 @@ ORDER BY month;
 
 ### Q24: Subquery in SELECT clause
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-handwritten.svg" alt="Handwritten: Subquery in SELECT clause" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-handwritten.svg" alt="Handwritten: Subquery in SELECT clause" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-diagram.svg" alt="Diagram: Subquery in SELECT clause" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-diagram.svg" alt="Diagram: Subquery in SELECT clause" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-sticky.svg" alt="Sticky Note: Subquery in SELECT clause" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-select-clause-sticky.svg" alt="Sticky Note: Subquery in SELECT clause" width="30%">
 </a>
 
 
@@ -1550,14 +1550,14 @@ ORDER BY e.dept_id, pct_of_dept DESC;
 
 ### Q25: Subquery in WHERE with IN / EXISTS
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-handwritten.svg" alt="Handwritten: Subquery in WHERE with IN / EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-handwritten.svg" alt="Handwritten: Subquery in WHERE with IN / EXISTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-diagram.svg" alt="Diagram: Subquery in WHERE with IN / EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-diagram.svg" alt="Diagram: Subquery in WHERE with IN / EXISTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-sticky.svg" alt="Sticky Note: Subquery in WHERE with IN / EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/subquery-in-where-with-in-exists-sticky.svg" alt="Sticky Note: Subquery in WHERE with IN / EXISTS" width="30%">
 </a>
 
 
@@ -1606,14 +1606,14 @@ WHERE EXISTS (
 
 ### Q26: Co-related subquery
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-handwritten.svg" alt="Handwritten: Co-related subquery" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-handwritten.svg" alt="Handwritten: Co-related subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-diagram.svg" alt="Diagram: Co-related subquery" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-diagram.svg" alt="Diagram: Co-related subquery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-sticky.svg" alt="Sticky Note: Co-related subquery" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/co-related-subquery-sticky.svg" alt="Sticky Note: Co-related subquery" width="30%">
 </a>
 
 
@@ -1656,14 +1656,14 @@ ORDER BY e.dept_id, e.salary DESC;
 
 ### Q27: EXISTS vs IN performance difference
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-handwritten.svg" alt="Handwritten: EXISTS vs IN performance difference" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-handwritten.svg" alt="Handwritten: EXISTS vs IN performance difference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-diagram.svg" alt="Diagram: EXISTS vs IN performance difference" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-diagram.svg" alt="Diagram: EXISTS vs IN performance difference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-sticky.svg" alt="Sticky Note: EXISTS vs IN performance difference" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/exists-vs-in-performance-difference-sticky.svg" alt="Sticky Note: EXISTS vs IN performance difference" width="30%">
 </a>
 
 
@@ -1708,14 +1708,14 @@ WHERE c.id NOT IN (
 
 ### Q28: CTE (WITH clause) for recursive hierarchy
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-handwritten.svg" alt="Handwritten: CTE (WITH clause) for recursive hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-handwritten.svg" alt="Handwritten: CTE (WITH clause) for recursive hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-diagram.svg" alt="Diagram: CTE (WITH clause) for recursive hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-diagram.svg" alt="Diagram: CTE (WITH clause) for recursive hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-sticky.svg" alt="Sticky Note: CTE (WITH clause) for recursive hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-with-clause-for-recursive-hierarchy-sticky.svg" alt="Sticky Note: CTE (WITH clause) for recursive hierarchy" width="30%">
 </a>
 
 
@@ -1786,14 +1786,14 @@ ORDER BY level, name;
 
 ### Q29: CTE for readability (multi-step query)
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-handwritten.svg" alt="Handwritten: CTE for readability (multi-step query)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-handwritten.svg" alt="Handwritten: CTE for readability (multi-step query)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-diagram.svg" alt="Diagram: CTE for readability (multi-step query)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-diagram.svg" alt="Diagram: CTE for readability (multi-step query)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-sticky.svg" alt="Sticky Note: CTE for readability (multi-step query)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/cte-for-readability-multi-step-query-sticky.svg" alt="Sticky Note: CTE for readability (multi-step query)" width="30%">
 </a>
 
 
@@ -1844,14 +1844,14 @@ ORDER BY total_revenue DESC;
 
 ### Q30: Nested subqueries
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-handwritten.svg" alt="Handwritten: Nested subqueries" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-handwritten.svg" alt="Handwritten: Nested subqueries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-diagram.svg" alt="Diagram: Nested subqueries" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-diagram.svg" alt="Diagram: Nested subqueries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-sticky.svg" alt="Sticky Note: Nested subqueries" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/nested-subqueries-sticky.svg" alt="Sticky Note: Nested subqueries" width="30%">
 </a>
 
 
@@ -1901,14 +1901,14 @@ WHERE dept_avg.avg_salary = (
 
 ### Q31: ROW_NUMBER, RANK, DENSE_RANK
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-handwritten.svg" alt="Handwritten: ROW_NUMBER, RANK, DENSE_RANK" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-handwritten.svg" alt="Handwritten: ROW_NUMBER, RANK, DENSE_RANK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-diagram.svg" alt="Diagram: ROW_NUMBER, RANK, DENSE_RANK" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-diagram.svg" alt="Diagram: ROW_NUMBER, RANK, DENSE_RANK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-sticky.svg" alt="Sticky Note: ROW_NUMBER, RANK, DENSE_RANK" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/row-number-rank-dense-rank-sticky.svg" alt="Sticky Note: ROW_NUMBER, RANK, DENSE_RANK" width="30%">
 </a>
 
 
@@ -1958,14 +1958,14 @@ ORDER BY dept_id, salary DESC;
 
 ### Q32: Find top 3 earners per department
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-handwritten.svg" alt="Handwritten: Find top 3 earners per department" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-handwritten.svg" alt="Handwritten: Find top 3 earners per department" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-diagram.svg" alt="Diagram: Find top 3 earners per department" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-diagram.svg" alt="Diagram: Find top 3 earners per department" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-sticky.svg" alt="Sticky Note: Find top 3 earners per department" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/find-top-3-earners-per-department-sticky.svg" alt="Sticky Note: Find top 3 earners per department" width="30%">
 </a>
 
 
@@ -2024,14 +2024,14 @@ ORDER BY department, rnk;
 
 ### Q33: LAG and LEAD for comparing values
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-handwritten.svg" alt="Handwritten: LAG and LEAD for comparing values" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-handwritten.svg" alt="Handwritten: LAG and LEAD for comparing values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-diagram.svg" alt="Diagram: LAG and LEAD for comparing values" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-diagram.svg" alt="Diagram: LAG and LEAD for comparing values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-sticky.svg" alt="Sticky Note: LAG and LEAD for comparing values" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lag-and-lead-for-comparing-values-sticky.svg" alt="Sticky Note: LAG and LEAD for comparing values" width="30%">
 </a>
 
 
@@ -2097,14 +2097,14 @@ ORDER BY dept_id, hire_date;
 
 ### Q34: FIRST_VALUE and LAST_VALUE
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-handwritten.svg" alt="Handwritten: FIRST_VALUE and LAST_VALUE" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-handwritten.svg" alt="Handwritten: FIRST_VALUE and LAST_VALUE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-diagram.svg" alt="Diagram: FIRST_VALUE and LAST_VALUE" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-diagram.svg" alt="Diagram: FIRST_VALUE and LAST_VALUE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-sticky.svg" alt="Sticky Note: FIRST_VALUE and LAST_VALUE" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/first-value-and-last-value-sticky.svg" alt="Sticky Note: FIRST_VALUE and LAST_VALUE" width="30%">
 </a>
 
 
@@ -2161,14 +2161,14 @@ ORDER BY dept_id, salary DESC;
 
 ### Q35: NTILE for quartiles
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-handwritten.svg" alt="Handwritten: NTILE for quartiles" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-handwritten.svg" alt="Handwritten: NTILE for quartiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-diagram.svg" alt="Diagram: NTILE for quartiles" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-diagram.svg" alt="Diagram: NTILE for quartiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-sticky.svg" alt="Sticky Note: NTILE for quartiles" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/ntile-for-quartiles-sticky.svg" alt="Sticky Note: NTILE for quartiles" width="30%">
 </a>
 
 
@@ -2222,14 +2222,14 @@ ORDER BY salary DESC;
 
 ### Q36: Percentile calculation
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-handwritten.svg" alt="Handwritten: Percentile calculation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-handwritten.svg" alt="Handwritten: Percentile calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-diagram.svg" alt="Diagram: Percentile calculation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-diagram.svg" alt="Diagram: Percentile calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-sticky.svg" alt="Sticky Note: Percentile calculation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/percentile-calculation-sticky.svg" alt="Sticky Note: Percentile calculation" width="30%">
 </a>
 
 
@@ -2279,14 +2279,14 @@ ORDER BY salary DESC;
 
 ### Q37: Moving average over 3 months
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-handwritten.svg" alt="Handwritten: Moving average over 3 months" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-handwritten.svg" alt="Handwritten: Moving average over 3 months" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-diagram.svg" alt="Diagram: Moving average over 3 months" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-diagram.svg" alt="Diagram: Moving average over 3 months" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-sticky.svg" alt="Sticky Note: Moving average over 3 months" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/moving-average-over-3-months-sticky.svg" alt="Sticky Note: Moving average over 3 months" width="30%">
 </a>
 
 
@@ -2335,14 +2335,14 @@ ORDER BY month;
 
 ### Q38: Difference from previous row
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-handwritten.svg" alt="Handwritten: Difference from previous row" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-handwritten.svg" alt="Handwritten: Difference from previous row" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-diagram.svg" alt="Diagram: Difference from previous row" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-diagram.svg" alt="Diagram: Difference from previous row" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-sticky.svg" alt="Sticky Note: Difference from previous row" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/difference-from-previous-row-sticky.svg" alt="Sticky Note: Difference from previous row" width="30%">
 </a>
 
 
@@ -2399,14 +2399,14 @@ ORDER BY customer_id, order_date;
 
 ### Q39: Extract year/month from dates
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-handwritten.svg" alt="Handwritten: Extract year/month from dates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-handwritten.svg" alt="Handwritten: Extract year/month from dates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-diagram.svg" alt="Diagram: Extract year/month from dates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-diagram.svg" alt="Diagram: Extract year/month from dates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-sticky.svg" alt="Sticky Note: Extract year/month from dates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/extract-year-month-from-dates-sticky.svg" alt="Sticky Note: Extract year/month from dates" width="30%">
 </a>
 
 
@@ -2450,14 +2450,14 @@ LIMIT 6;
 
 ### Q40: Date difference calculations
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-handwritten.svg" alt="Handwritten: Date difference calculations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-handwritten.svg" alt="Handwritten: Date difference calculations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-diagram.svg" alt="Diagram: Date difference calculations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-diagram.svg" alt="Diagram: Date difference calculations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-sticky.svg" alt="Sticky Note: Date difference calculations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/date-difference-calculations-sticky.svg" alt="Sticky Note: Date difference calculations" width="30%">
 </a>
 
 
@@ -2508,14 +2508,14 @@ ORDER BY order_date DESC;
 
 ### Q41: String concatenation, substring, length
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-handwritten.svg" alt="Handwritten: String concatenation, substring, length" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-handwritten.svg" alt="Handwritten: String concatenation, substring, length" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-diagram.svg" alt="Diagram: String concatenation, substring, length" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-diagram.svg" alt="Diagram: String concatenation, substring, length" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-sticky.svg" alt="Sticky Note: String concatenation, substring, length" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-concatenation-substring-length-sticky.svg" alt="Sticky Note: String concatenation, substring, length" width="30%">
 </a>
 
 
@@ -2561,14 +2561,14 @@ LIMIT 5;
 
 ### Q42: Pattern matching with LIKE and REGEXP
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-handwritten.svg" alt="Handwritten: Pattern matching with LIKE and REGEXP" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-handwritten.svg" alt="Handwritten: Pattern matching with LIKE and REGEXP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-diagram.svg" alt="Diagram: Pattern matching with LIKE and REGEXP" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-diagram.svg" alt="Diagram: Pattern matching with LIKE and REGEXP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-sticky.svg" alt="Sticky Note: Pattern matching with LIKE and REGEXP" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pattern-matching-with-like-and-regexp-sticky.svg" alt="Sticky Note: Pattern matching with LIKE and REGEXP" width="30%">
 </a>
 
 
@@ -2633,14 +2633,14 @@ WHERE status LIKE 'S______';
 
 ### Q43: Format dates and numbers
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-handwritten.svg" alt="Handwritten: Format dates and numbers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-handwritten.svg" alt="Handwritten: Format dates and numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-diagram.svg" alt="Diagram: Format dates and numbers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-diagram.svg" alt="Diagram: Format dates and numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-sticky.svg" alt="Sticky Note: Format dates and numbers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/format-dates-and-numbers-sticky.svg" alt="Sticky Note: Format dates and numbers" width="30%">
 </a>
 
 
@@ -2681,14 +2681,14 @@ LIMIT 6;
 
 ### Q44: Case-insensitive search
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-handwritten.svg" alt="Handwritten: Case-insensitive search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-handwritten.svg" alt="Handwritten: Case-insensitive search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-diagram.svg" alt="Diagram: Case-insensitive search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-diagram.svg" alt="Diagram: Case-insensitive search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-sticky.svg" alt="Sticky Note: Case-insensitive search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/case-insensitive-search-sticky.svg" alt="Sticky Note: Case-insensitive search" width="30%">
 </a>
 
 
@@ -2737,14 +2737,14 @@ WHERE name REGEXP 'corp';
 
 ### Q45: Pivot rows to columns
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-handwritten.svg" alt="Handwritten: Pivot rows to columns" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-handwritten.svg" alt="Handwritten: Pivot rows to columns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-diagram.svg" alt="Diagram: Pivot rows to columns" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-diagram.svg" alt="Diagram: Pivot rows to columns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-sticky.svg" alt="Sticky Note: Pivot rows to columns" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/pivot-rows-to-columns-sticky.svg" alt="Sticky Note: Pivot rows to columns" width="30%">
 </a>
 
 
@@ -2783,14 +2783,14 @@ ORDER BY name;
 
 ### Q46: Recursive CTE for org chart hierarchy
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-handwritten.svg" alt="Handwritten: Recursive CTE for org chart hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-handwritten.svg" alt="Handwritten: Recursive CTE for org chart hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-diagram.svg" alt="Diagram: Recursive CTE for org chart hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-diagram.svg" alt="Diagram: Recursive CTE for org chart hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-sticky.svg" alt="Sticky Note: Recursive CTE for org chart hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/recursive-cte-for-org-chart-hierarchy-sticky.svg" alt="Sticky Note: Recursive CTE for org chart hierarchy" width="30%">
 </a>
 
 
@@ -2862,14 +2862,14 @@ ORDER BY path;
 
 ### Q47: Gap detection (missing IDs)
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-handwritten.svg" alt="Handwritten: Gap detection (missing IDs)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-handwritten.svg" alt="Handwritten: Gap detection (missing IDs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-diagram.svg" alt="Diagram: Gap detection (missing IDs)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-diagram.svg" alt="Diagram: Gap detection (missing IDs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-sticky.svg" alt="Sticky Note: Gap detection (missing IDs)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/gap-detection-missing-ids-sticky.svg" alt="Sticky Note: Gap detection (missing IDs)" width="30%">
 </a>
 
 
@@ -2943,14 +2943,14 @@ ORDER BY n;
 
 ### Q48: Consecutive occurrences
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-handwritten.svg" alt="Handwritten: Consecutive occurrences" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-handwritten.svg" alt="Handwritten: Consecutive occurrences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-diagram.svg" alt="Diagram: Consecutive occurrences" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-diagram.svg" alt="Diagram: Consecutive occurrences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-sticky.svg" alt="Sticky Note: Consecutive occurrences" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/consecutive-occurrences-sticky.svg" alt="Sticky Note: Consecutive occurrences" width="30%">
 </a>
 
 
@@ -3018,14 +3018,14 @@ INNER JOIN employees e2 ON e1.id &lt; e2.id
 
 ### Q49: Median calculation without built-in
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-handwritten.svg" alt="Handwritten: Median calculation without built-in" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-handwritten.svg" alt="Handwritten: Median calculation without built-in" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-diagram.svg" alt="Diagram: Median calculation without built-in" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-diagram.svg" alt="Diagram: Median calculation without built-in" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-sticky.svg" alt="Sticky Note: Median calculation without built-in" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/median-calculation-without-built-in-sticky.svg" alt="Sticky Note: Median calculation without built-in" width="30%">
 </a>
 
 
@@ -3064,14 +3064,14 @@ WHERE row_asc IN (row_desc, row_desc - 1, row_desc + 1);
 
 ### Q50: FizzBuzz in SQL
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-handwritten.svg" alt="Handwritten: FizzBuzz in SQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-handwritten.svg" alt="Handwritten: FizzBuzz in SQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-diagram.svg" alt="Diagram: FizzBuzz in SQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-diagram.svg" alt="Diagram: FizzBuzz in SQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-sticky.svg" alt="Sticky Note: FizzBuzz in SQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/fizzbuzz-in-sql-sticky.svg" alt="Sticky Note: FizzBuzz in SQL" width="30%">
 </a>
 
 
@@ -3202,14 +3202,14 @@ MongoDB is a document-oriented NoSQL database. Problems below use MongoDB shell 
 
 ### Q51: Basic CRUD Operations
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-handwritten.svg" alt="Handwritten: Basic CRUD Operations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-handwritten.svg" alt="Handwritten: Basic CRUD Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-diagram.svg" alt="Diagram: Basic CRUD Operations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-diagram.svg" alt="Diagram: Basic CRUD Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-sticky.svg" alt="Sticky Note: Basic CRUD Operations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/basic-crud-operations-sticky.svg" alt="Sticky Note: Basic CRUD Operations" width="30%">
 </a>
 
 
@@ -3267,14 +3267,14 @@ db.products.deleteMany({ inStock: false });
 
 ### Q52: Aggregation Pipeline
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-handwritten.svg" alt="Handwritten: Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-handwritten.svg" alt="Handwritten: Aggregation Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-diagram.svg" alt="Diagram: Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-diagram.svg" alt="Diagram: Aggregation Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-sticky.svg" alt="Sticky Note: Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/aggregation-pipeline-sticky.svg" alt="Sticky Note: Aggregation Pipeline" width="30%">
 </a>
 
 
@@ -3332,14 +3332,14 @@ db.orders.aggregate([
 
 ### Q53: $lookup → MongoDB Equivalent of JOIN
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-handwritten.svg" alt="Handwritten: $lookup → MongoDB Equivalent of JOIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-handwritten.svg" alt="Handwritten: $lookup → MongoDB Equivalent of JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-diagram.svg" alt="Diagram: $lookup → MongoDB Equivalent of JOIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-diagram.svg" alt="Diagram: $lookup → MongoDB Equivalent of JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-sticky.svg" alt="Sticky Note: $lookup → MongoDB Equivalent of JOIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lookup-mongodb-equivalent-of-join-sticky.svg" alt="Sticky Note: $lookup → MongoDB Equivalent of JOIN" width="30%">
 </a>
 
 
@@ -3386,14 +3386,14 @@ db.orders.aggregate([
 
 ### Q54: Array Operations → Tag System with $unwind, $push, $addToSet
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-handwritten.svg" alt="Handwritten: Array Operations → Tag System with $unwind, $push, $addToSet" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-handwritten.svg" alt="Handwritten: Array Operations → Tag System with $unwind, $push, $addToSet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-diagram.svg" alt="Diagram: Array Operations → Tag System with $unwind, $push, $addToSet" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-diagram.svg" alt="Diagram: Array Operations → Tag System with $unwind, $push, $addToSet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-sticky.svg" alt="Sticky Note: Array Operations → Tag System with $unwind, $push, $addToSet" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/array-operations-tag-system-with-unwind-push-addtoset-sticky.svg" alt="Sticky Note: Array Operations → Tag System with $unwind, $push, $addToSet" width="30%">
 </a>
 
 
@@ -3447,14 +3447,14 @@ db.blogPosts.aggregate([
 
 ### Q55: Text Search and Indexes
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-handwritten.svg" alt="Handwritten: Text Search and Indexes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-handwritten.svg" alt="Handwritten: Text Search and Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-diagram.svg" alt="Diagram: Text Search and Indexes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-diagram.svg" alt="Diagram: Text Search and Indexes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-sticky.svg" alt="Sticky Note: Text Search and Indexes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/text-search-and-indexes-sticky.svg" alt="Sticky Note: Text Search and Indexes" width="30%">
 </a>
 
 
@@ -3508,14 +3508,14 @@ db.articles.find({ $text: { $search: "performance" } }).explain("executionStats"
 
 ### Q56: Geospatial Queries
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-handwritten.svg" alt="Handwritten: Geospatial Queries" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-handwritten.svg" alt="Handwritten: Geospatial Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-diagram.svg" alt="Diagram: Geospatial Queries" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-diagram.svg" alt="Diagram: Geospatial Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-sticky.svg" alt="Sticky Note: Geospatial Queries" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/geospatial-queries-sticky.svg" alt="Sticky Note: Geospatial Queries" width="30%">
 </a>
 
 
@@ -3595,14 +3595,14 @@ db.restaurants.aggregate([
 
 ### Q57: Update Operators → $set, $inc, $push with Positional Operator
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-handwritten.svg" alt="Handwritten: Update Operators → $set, $inc, $push with Positional Operator" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-handwritten.svg" alt="Handwritten: Update Operators → $set, $inc, $push with Positional Operator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-diagram.svg" alt="Diagram: Update Operators → $set, $inc, $push with Positional Operator" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-diagram.svg" alt="Diagram: Update Operators → $set, $inc, $push with Positional Operator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-sticky.svg" alt="Sticky Note: Update Operators → $set, $inc, $push with Positional Operator" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/update-operators-set-inc-push-with-positional-operator-sticky.svg" alt="Sticky Note: Update Operators → $set, $inc, $push with Positional Operator" width="30%">
 </a>
 
 
@@ -3677,14 +3677,14 @@ Redis is an in-memory key-value store used for caching, messaging, and real-time
 
 ### Q58: String Operations → Caching Pattern
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-handwritten.svg" alt="Handwritten: String Operations → Caching Pattern" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-handwritten.svg" alt="Handwritten: String Operations → Caching Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-diagram.svg" alt="Diagram: String Operations → Caching Pattern" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-diagram.svg" alt="Diagram: String Operations → Caching Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-sticky.svg" alt="Sticky Note: String Operations → Caching Pattern" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/string-operations-caching-pattern-sticky.svg" alt="Sticky Note: String Operations → Caching Pattern" width="30%">
 </a>
 
 
@@ -3731,14 +3731,14 @@ DEL user:profile:42
 
 ### Q59: List Operations → Message Queue
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-handwritten.svg" alt="Handwritten: List Operations → Message Queue" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-handwritten.svg" alt="Handwritten: List Operations → Message Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-diagram.svg" alt="Diagram: List Operations → Message Queue" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-diagram.svg" alt="Diagram: List Operations → Message Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-sticky.svg" alt="Sticky Note: List Operations → Message Queue" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/list-operations-message-queue-sticky.svg" alt="Sticky Note: List Operations → Message Queue" width="30%">
 </a>
 
 
@@ -3789,14 +3789,14 @@ OK
 
 ### Q60: Set Operations → Mutual Friends
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-handwritten.svg" alt="Handwritten: Set Operations → Mutual Friends" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-handwritten.svg" alt="Handwritten: Set Operations → Mutual Friends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-diagram.svg" alt="Diagram: Set Operations → Mutual Friends" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-diagram.svg" alt="Diagram: Set Operations → Mutual Friends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-sticky.svg" alt="Sticky Note: Set Operations → Mutual Friends" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/set-operations-mutual-friends-sticky.svg" alt="Sticky Note: Set Operations → Mutual Friends" width="30%">
 </a>
 
 
@@ -3853,14 +3853,14 @@ SINTERSTORE mutual:1:2 user:1:friends user:2:friends
 
 ### Q61: Sorted Set → Leaderboard
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-handwritten.svg" alt="Handwritten: Sorted Set → Leaderboard" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-handwritten.svg" alt="Handwritten: Sorted Set → Leaderboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-diagram.svg" alt="Diagram: Sorted Set → Leaderboard" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-diagram.svg" alt="Diagram: Sorted Set → Leaderboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-sticky.svg" alt="Sticky Note: Sorted Set → Leaderboard" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/sorted-set-leaderboard-sticky.svg" alt="Sticky Note: Sorted Set → Leaderboard" width="30%">
 </a>
 
 
@@ -3927,14 +3927,14 @@ ZUNIONSTORE leaderboard:overall 2 leaderboard:weekly leaderboard:monthly WEIGHTS
 
 ### Q62: Hash Operations → Session Store
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-handwritten.svg" alt="Handwritten: Hash Operations → Session Store" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-handwritten.svg" alt="Handwritten: Hash Operations → Session Store" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-diagram.svg" alt="Diagram: Hash Operations → Session Store" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-diagram.svg" alt="Diagram: Hash Operations → Session Store" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-sticky.svg" alt="Sticky Note: Hash Operations → Session Store" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/hash-operations-session-store-sticky.svg" alt="Sticky Note: Hash Operations → Session Store" width="30%">
 </a>
 
 
@@ -4015,14 +4015,14 @@ Understanding query plans is essential for database performance tuning. Problems
 
 ### Q63: EXPLAIN ANALYZE → Identifying Sequential Scans
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-handwritten.svg" alt="Handwritten: EXPLAIN ANALYZE → Identifying Sequential Scans" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-handwritten.svg" alt="Handwritten: EXPLAIN ANALYZE → Identifying Sequential Scans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-diagram.svg" alt="Diagram: EXPLAIN ANALYZE → Identifying Sequential Scans" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-diagram.svg" alt="Diagram: EXPLAIN ANALYZE → Identifying Sequential Scans" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-sticky.svg" alt="Sticky Note: EXPLAIN ANALYZE → Identifying Sequential Scans" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/explain-analyze-identifying-sequential-scans-sticky.svg" alt="Sticky Note: EXPLAIN ANALYZE → Identifying Sequential Scans" width="30%">
 </a>
 
 
@@ -4089,14 +4089,14 @@ Execution Time: 18.230 ms
 
 ### Q64: Index Selection → B-tree vs Hash vs GiST vs GIN
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-handwritten.svg" alt="Handwritten: Index Selection → B-tree vs Hash vs GiST vs GIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-handwritten.svg" alt="Handwritten: Index Selection → B-tree vs Hash vs GiST vs GIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-diagram.svg" alt="Diagram: Index Selection → B-tree vs Hash vs GiST vs GIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-diagram.svg" alt="Diagram: Index Selection → B-tree vs Hash vs GiST vs GIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-sticky.svg" alt="Sticky Note: Index Selection → B-tree vs Hash vs GiST vs GIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/index-selection-b-tree-vs-hash-vs-gist-vs-gin-sticky.svg" alt="Sticky Note: Index Selection → B-tree vs Hash vs GiST vs GIN" width="30%">
 </a>
 
 
@@ -4144,14 +4144,14 @@ SELECT * FROM documents WHERE to_tsvector('english', body) @@ to_tsquery('optimi
 
 ### Q65: Composite Index Column Order → Leftmost Prefix Rule
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-handwritten.svg" alt="Handwritten: Composite Index Column Order → Leftmost Prefix Rule" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-handwritten.svg" alt="Handwritten: Composite Index Column Order → Leftmost Prefix Rule" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-diagram.svg" alt="Diagram: Composite Index Column Order → Leftmost Prefix Rule" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-diagram.svg" alt="Diagram: Composite Index Column Order → Leftmost Prefix Rule" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-sticky.svg" alt="Sticky Note: Composite Index Column Order → Leftmost Prefix Rule" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/composite-index-column-order-leftmost-prefix-rule-sticky.svg" alt="Sticky Note: Composite Index Column Order → Leftmost Prefix Rule" width="30%">
 </a>
 
 
@@ -4211,14 +4211,14 @@ CREATE INDEX idx_emp_dept_status ON employees (department, status);
 
 ### Q66: Covering Index vs Include Index
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-handwritten.svg" alt="Handwritten: Covering Index vs Include Index" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-handwritten.svg" alt="Handwritten: Covering Index vs Include Index" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-diagram.svg" alt="Diagram: Covering Index vs Include Index" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-diagram.svg" alt="Diagram: Covering Index vs Include Index" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-sticky.svg" alt="Sticky Note: Covering Index vs Include Index" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/covering-index-vs-include-index-sticky.svg" alt="Sticky Note: Covering Index vs Include Index" width="30%">
 </a>
 
 
@@ -4285,14 +4285,14 @@ Index Only Scan using idx_users_include on users
 
 ### Q67: Query Rewrite → Correlated Subquery to JOIN
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-handwritten.svg" alt="Handwritten: Query Rewrite → Correlated Subquery to JOIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-handwritten.svg" alt="Handwritten: Query Rewrite → Correlated Subquery to JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-diagram.svg" alt="Diagram: Query Rewrite → Correlated Subquery to JOIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-diagram.svg" alt="Diagram: Query Rewrite → Correlated Subquery to JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-sticky.svg" alt="Sticky Note: Query Rewrite → Correlated Subquery to JOIN" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/query-rewrite-correlated-subquery-to-join-sticky.svg" alt="Sticky Note: Query Rewrite → Correlated Subquery to JOIN" width="30%">
 </a>
 
 
@@ -4383,14 +4383,14 @@ Execution Time: 18.600 ms
 
 ### Q68: Partition Pruning
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-handwritten.svg" alt="Handwritten: Partition Pruning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-handwritten.svg" alt="Handwritten: Partition Pruning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-diagram.svg" alt="Diagram: Partition Pruning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-diagram.svg" alt="Diagram: Partition Pruning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-sticky.svg" alt="Sticky Note: Partition Pruning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/partition-pruning-sticky.svg" alt="Sticky Note: Partition Pruning" width="30%">
 </a>
 
 
@@ -4507,14 +4507,14 @@ Understanding transaction isolation prevents concurrency anomalies. Examples use
 
 ### Q69: Dirty Read → READ UNCOMMITTED vs READ COMMITTED
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-handwritten.svg" alt="Handwritten: Dirty Read → READ UNCOMMITTED vs READ COMMITTED" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-handwritten.svg" alt="Handwritten: Dirty Read → READ UNCOMMITTED vs READ COMMITTED" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-diagram.svg" alt="Diagram: Dirty Read → READ UNCOMMITTED vs READ COMMITTED" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-diagram.svg" alt="Diagram: Dirty Read → READ UNCOMMITTED vs READ COMMITTED" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-sticky.svg" alt="Sticky Note: Dirty Read → READ UNCOMMITTED vs READ COMMITTED" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/dirty-read-read-uncommitted-vs-read-committed-sticky.svg" alt="Sticky Note: Dirty Read → READ UNCOMMITTED vs READ COMMITTED" width="30%">
 </a>
 
 
@@ -4563,14 +4563,14 @@ ROLLBACK;
 
 ### Q70: Non-Repeatable Read → How REPEATABLE READ Prevents It
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-handwritten.svg" alt="Handwritten: Non-Repeatable Read → How REPEATABLE READ Prevents It" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-handwritten.svg" alt="Handwritten: Non-Repeatable Read → How REPEATABLE READ Prevents It" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-diagram.svg" alt="Diagram: Non-Repeatable Read → How REPEATABLE READ Prevents It" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-diagram.svg" alt="Diagram: Non-Repeatable Read → How REPEATABLE READ Prevents It" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-sticky.svg" alt="Sticky Note: Non-Repeatable Read → How REPEATABLE READ Prevents It" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/non-repeatable-read-how-repeatable-read-prevents-it-sticky.svg" alt="Sticky Note: Non-Repeatable Read → How REPEATABLE READ Prevents It" width="30%">
 </a>
 
 
@@ -4635,14 +4635,14 @@ SELECT quantity FROM inventory WHERE id = 1;
 
 ### Q71: Phantom Read → How SERIALIZABLE Prevents It
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-handwritten.svg" alt="Handwritten: Phantom Read → How SERIALIZABLE Prevents It" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-handwritten.svg" alt="Handwritten: Phantom Read → How SERIALIZABLE Prevents It" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-diagram.svg" alt="Diagram: Phantom Read → How SERIALIZABLE Prevents It" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-diagram.svg" alt="Diagram: Phantom Read → How SERIALIZABLE Prevents It" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-sticky.svg" alt="Sticky Note: Phantom Read → How SERIALIZABLE Prevents It" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/phantom-read-how-serializable-prevents-it-sticky.svg" alt="Sticky Note: Phantom Read → How SERIALIZABLE Prevents It" width="30%">
 </a>
 
 
@@ -4733,14 +4733,14 @@ COMMIT;
 
 ### Q72: Lost Update → Optimistic Locking with Version Column
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-handwritten.svg" alt="Handwritten: Lost Update → Optimistic Locking with Version Column" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-handwritten.svg" alt="Handwritten: Lost Update → Optimistic Locking with Version Column" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-diagram.svg" alt="Diagram: Lost Update → Optimistic Locking with Version Column" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-diagram.svg" alt="Diagram: Lost Update → Optimistic Locking with Version Column" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-sticky.svg" alt="Sticky Note: Lost Update → Optimistic Locking with Version Column" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/lost-update-optimistic-locking-with-version-column-sticky.svg" alt="Sticky Note: Lost Update → Optimistic Locking with Version Column" width="30%">
 </a>
 
 
@@ -4811,14 +4811,14 @@ COMMIT;
 
 ### Q73: Deadlock → Scenario and Resolution
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-handwritten.svg" alt="Handwritten: Deadlock → Scenario and Resolution" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-handwritten.svg" alt="Handwritten: Deadlock → Scenario and Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-diagram.svg" alt="Diagram: Deadlock → Scenario and Resolution" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-diagram.svg" alt="Diagram: Deadlock → Scenario and Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-sticky.svg" alt="Sticky Note: Deadlock → Scenario and Resolution" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/deadlock-scenario-and-resolution-sticky.svg" alt="Sticky Note: Deadlock → Scenario and Resolution" width="30%">
 </a>
 
 
@@ -4888,14 +4888,14 @@ COMMIT;
 
 ### Q74: Snapshot Isolation → MVCC with PostgreSQL
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-handwritten.svg" alt="Handwritten: Snapshot Isolation → MVCC with PostgreSQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-handwritten.svg" alt="Handwritten: Snapshot Isolation → MVCC with PostgreSQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-diagram.svg" alt="Diagram: Snapshot Isolation → MVCC with PostgreSQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-diagram.svg" alt="Diagram: Snapshot Isolation → MVCC with PostgreSQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-sticky.svg" alt="Sticky Note: Snapshot Isolation → MVCC with PostgreSQL" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/snapshot-isolation-mvcc-with-postgresql-sticky.svg" alt="Sticky Note: Snapshot Isolation → MVCC with PostgreSQL" width="30%">
 </a>
 
 
@@ -4976,14 +4976,14 @@ COMMIT;
 
 ### Q75: Isolation Level Comparison Table
 
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-handwritten.svg" alt="Handwritten: Isolation Level Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-handwritten.svg" alt="Handwritten: Isolation Level Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-diagram.svg" alt="Diagram: Isolation Level Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-diagram.svg" alt="Diagram: Isolation Level Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-sticky.svg" alt="Sticky Note: Isolation Level Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/03-sql-problem-bank/isolation-level-comparison-table-sticky.svg" alt="Sticky Note: Isolation Level Comparison Table" width="30%">
 </a>
 
 

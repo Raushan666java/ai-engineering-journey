@@ -78,14 +78,14 @@ flowchart LR
 
 ### Problem 1: Assign Cookies
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-handwritten.svg" alt="Handwritten: Problem 1: Assign Cookies" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-handwritten.svg" alt="Handwritten: Problem 1: Assign Cookies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-diagram.svg" alt="Diagram: Problem 1: Assign Cookies" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-diagram.svg" alt="Diagram: Problem 1: Assign Cookies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-sticky.svg" alt="Sticky Note: Problem 1: Assign Cookies" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-1-assign-cookies-sticky.svg" alt="Sticky Note: Problem 1: Assign Cookies" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google]
@@ -130,14 +130,14 @@ console.log(findContentChildren([1, 2], [1, 2, 3])); // 2
 
 ### Problem 2: Lemonade Change
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-handwritten.svg" alt="Handwritten: Problem 2: Lemonade Change" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-handwritten.svg" alt="Handwritten: Problem 2: Lemonade Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-diagram.svg" alt="Diagram: Problem 2: Lemonade Change" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-diagram.svg" alt="Diagram: Problem 2: Lemonade Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-sticky.svg" alt="Sticky Note: Problem 2: Lemonade Change" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-2-lemonade-change-sticky.svg" alt="Sticky Note: Problem 2: Lemonade Change" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google]
@@ -193,14 +193,14 @@ console.log(lemonadeChange([5, 5, 10, 10, 20])); // false
 
 ### Problem 3: Best Time to Buy and Sell Stock II
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-handwritten.svg" alt="Handwritten: Problem 3: Best Time to Buy and Sell Stock II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-handwritten.svg" alt="Handwritten: Problem 3: Best Time to Buy and Sell Stock II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-diagram.svg" alt="Diagram: Problem 3: Best Time to Buy and Sell Stock II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-diagram.svg" alt="Diagram: Problem 3: Best Time to Buy and Sell Stock II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-sticky.svg" alt="Sticky Note: Problem 3: Best Time to Buy and Sell Stock II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-3-best-time-to-buy-and-sell-stock-ii-sticky.svg" alt="Sticky Note: Problem 3: Best Time to Buy and Sell Stock II" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -244,14 +244,14 @@ console.log(maxProfitII([7, 6, 4, 3, 1])); // 0
 
 ### Problem 4: Minimum Number of Arrows to Burst Balloons
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-handwritten.svg" alt="Handwritten: Problem 4: Minimum Number of Arrows to Burst Balloons" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-handwritten.svg" alt="Handwritten: Problem 4: Minimum Number of Arrows to Burst Balloons" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-diagram.svg" alt="Diagram: Problem 4: Minimum Number of Arrows to Burst Balloons" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-diagram.svg" alt="Diagram: Problem 4: Minimum Number of Arrows to Burst Balloons" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-sticky.svg" alt="Sticky Note: Problem 4: Minimum Number of Arrows to Burst Balloons" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-4-minimum-number-of-arrows-to-burst-balloons-sticky.svg" alt="Sticky Note: Problem 4: Minimum Number of Arrows to Burst Balloons" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -298,14 +298,14 @@ console.log(findMinArrowShots([[1,2],[3,4],[5,6],[7,8]])); // 4
 
 ### Problem 5: Maximum Units on a Truck
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-handwritten.svg" alt="Handwritten: Problem 5: Maximum Units on a Truck" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-handwritten.svg" alt="Handwritten: Problem 5: Maximum Units on a Truck" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-diagram.svg" alt="Diagram: Problem 5: Maximum Units on a Truck" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-diagram.svg" alt="Diagram: Problem 5: Maximum Units on a Truck" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-sticky.svg" alt="Sticky Note: Problem 5: Maximum Units on a Truck" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-5-maximum-units-on-a-truck-sticky.svg" alt="Sticky Note: Problem 5: Maximum Units on a Truck" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google]
@@ -353,14 +353,14 @@ console.log(maximumUnits([[5,10],[2,5],[4,7],[3,9]], 10)); // 91
 
 ### Problem 6: Activity Selection (Non-overlapping Intervals)
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-handwritten.svg" alt="Handwritten: Problem 6: Activity Selection (Non-overlapping Intervals)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-handwritten.svg" alt="Handwritten: Problem 6: Activity Selection (Non-overlapping Intervals)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-diagram.svg" alt="Diagram: Problem 6: Activity Selection (Non-overlapping Intervals)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-diagram.svg" alt="Diagram: Problem 6: Activity Selection (Non-overlapping Intervals)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-sticky.svg" alt="Sticky Note: Problem 6: Activity Selection (Non-overlapping Intervals)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-6-activity-selection-non-overlapping-intervals-sticky.svg" alt="Sticky Note: Problem 6: Activity Selection (Non-overlapping Intervals)" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -408,14 +408,14 @@ console.log(eraseOverlapIntervals([[1,2],[1,2],[1,2]])); // 2
 
 ### Problem 7: Minimum Number of Platforms
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-handwritten.svg" alt="Handwritten: Problem 7: Minimum Number of Platforms" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-handwritten.svg" alt="Handwritten: Problem 7: Minimum Number of Platforms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-diagram.svg" alt="Diagram: Problem 7: Minimum Number of Platforms" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-diagram.svg" alt="Diagram: Problem 7: Minimum Number of Platforms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-sticky.svg" alt="Sticky Note: Problem 7: Minimum Number of Platforms" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-7-minimum-number-of-platforms-sticky.svg" alt="Sticky Note: Problem 7: Minimum Number of Platforms" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
@@ -470,14 +470,14 @@ console.log(findPlatform([900, 1000], [910, 1010])); // 1
 
 ### Problem 8: Jump Game II
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-handwritten.svg" alt="Handwritten: Problem 8: Jump Game II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-handwritten.svg" alt="Handwritten: Problem 8: Jump Game II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-diagram.svg" alt="Diagram: Problem 8: Jump Game II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-diagram.svg" alt="Diagram: Problem 8: Jump Game II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-sticky.svg" alt="Sticky Note: Problem 8: Jump Game II" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-8-jump-game-ii-sticky.svg" alt="Sticky Note: Problem 8: Jump Game II" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -524,14 +524,14 @@ console.log(jump([0])); // 0
 
 ### Problem 9: Gas Station
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-handwritten.svg" alt="Handwritten: Problem 9: Gas Station" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-handwritten.svg" alt="Handwritten: Problem 9: Gas Station" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-diagram.svg" alt="Diagram: Problem 9: Gas Station" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-diagram.svg" alt="Diagram: Problem 9: Gas Station" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-sticky.svg" alt="Sticky Note: Problem 9: Gas Station" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-9-gas-station-sticky.svg" alt="Sticky Note: Problem 9: Gas Station" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -582,14 +582,14 @@ console.log(canCompleteCircuit([2, 3, 4], [3, 4, 3])); // -1
 
 ### Problem 10: Candy
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-handwritten.svg" alt="Handwritten: Problem 10: Candy" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-handwritten.svg" alt="Handwritten: Problem 10: Candy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-diagram.svg" alt="Diagram: Problem 10: Candy" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-diagram.svg" alt="Diagram: Problem 10: Candy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-sticky.svg" alt="Sticky Note: Problem 10: Candy" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-10-candy-sticky.svg" alt="Sticky Note: Problem 10: Candy" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -641,14 +641,14 @@ console.log(candy([1, 2, 2])); // 4
 
 ### Problem 11: Queue Reconstruction by Height
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-handwritten.svg" alt="Handwritten: Problem 11: Queue Reconstruction by Height" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-handwritten.svg" alt="Handwritten: Problem 11: Queue Reconstruction by Height" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-diagram.svg" alt="Diagram: Problem 11: Queue Reconstruction by Height" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-diagram.svg" alt="Diagram: Problem 11: Queue Reconstruction by Height" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-sticky.svg" alt="Sticky Note: Problem 11: Queue Reconstruction by Height" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-11-queue-reconstruction-by-height-sticky.svg" alt="Sticky Note: Problem 11: Queue Reconstruction by Height" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -689,14 +689,14 @@ console.log(reconstructQueue([[7,0],[4,4],[7,1],[5,0],[6,1],[5,2]]));
 
 ### Problem 12: Task Scheduler
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-handwritten.svg" alt="Handwritten: Problem 12: Task Scheduler" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-handwritten.svg" alt="Handwritten: Problem 12: Task Scheduler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-diagram.svg" alt="Diagram: Problem 12: Task Scheduler" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-diagram.svg" alt="Diagram: Problem 12: Task Scheduler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-sticky.svg" alt="Sticky Note: Problem 12: Task Scheduler" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-12-task-scheduler-sticky.svg" alt="Sticky Note: Problem 12: Task Scheduler" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -746,14 +746,14 @@ console.log(leastInterval(["A","A","A","B","B","B"], 0)); // 6
 
 ### Problem 13: Partition Labels
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-handwritten.svg" alt="Handwritten: Problem 13: Partition Labels" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-handwritten.svg" alt="Handwritten: Problem 13: Partition Labels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-diagram.svg" alt="Diagram: Problem 13: Partition Labels" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-diagram.svg" alt="Diagram: Problem 13: Partition Labels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-sticky.svg" alt="Sticky Note: Problem 13: Partition Labels" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-13-partition-labels-sticky.svg" alt="Sticky Note: Problem 13: Partition Labels" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -808,14 +808,14 @@ console.log(partitionLabels("eccbbbbdec")); // [10]
 
 ### Problem 14: Maximum Profit in Job Scheduling
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-handwritten.svg" alt="Handwritten: Problem 14: Maximum Profit in Job Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-handwritten.svg" alt="Handwritten: Problem 14: Maximum Profit in Job Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-diagram.svg" alt="Diagram: Problem 14: Maximum Profit in Job Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-diagram.svg" alt="Diagram: Problem 14: Maximum Profit in Job Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-sticky.svg" alt="Sticky Note: Problem 14: Maximum Profit in Job Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-14-maximum-profit-in-job-scheduling-sticky.svg" alt="Sticky Note: Problem 14: Maximum Profit in Job Scheduling" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -877,14 +877,14 @@ console.log(jobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60])); // 150
 
 ### Problem 15: Minimum Cost to Hire K Workers
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-handwritten.svg" alt="Handwritten: Problem 15: Minimum Cost to Hire K Workers" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-handwritten.svg" alt="Handwritten: Problem 15: Minimum Cost to Hire K Workers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-diagram.svg" alt="Diagram: Problem 15: Minimum Cost to Hire K Workers" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-diagram.svg" alt="Diagram: Problem 15: Minimum Cost to Hire K Workers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-sticky.svg" alt="Sticky Note: Problem 15: Minimum Cost to Hire K Workers" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-15-minimum-cost-to-hire-k-workers-sticky.svg" alt="Sticky Note: Problem 15: Minimum Cost to Hire K Workers" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
@@ -975,14 +975,14 @@ console.log(mincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3)); // 30.66667
 
 ### Additional Greedy Problems
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-handwritten.svg" alt="Handwritten: Additional Greedy Problems" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-handwritten.svg" alt="Handwritten: Additional Greedy Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-diagram.svg" alt="Diagram: Additional Greedy Problems" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-diagram.svg" alt="Diagram: Additional Greedy Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-sticky.svg" alt="Sticky Note: Additional Greedy Problems" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/additional-greedy-problems-sticky.svg" alt="Sticky Note: Additional Greedy Problems" width="30%">
 </a>
 
 
@@ -990,14 +990,14 @@ console.log(mincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3)); // 30.66667
 
 ### Problem 16: Jump Game (Greedy)
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-handwritten.svg" alt="Handwritten: Problem 16: Jump Game (Greedy)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-handwritten.svg" alt="Handwritten: Problem 16: Jump Game (Greedy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-diagram.svg" alt="Diagram: Problem 16: Jump Game (Greedy)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-diagram.svg" alt="Diagram: Problem 16: Jump Game (Greedy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-sticky.svg" alt="Sticky Note: Problem 16: Jump Game (Greedy)" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-16-jump-game-greedy-sticky.svg" alt="Sticky Note: Problem 16: Jump Game (Greedy)" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
@@ -1043,14 +1043,14 @@ console.log(canJump([3, 2, 1, 0, 4])); // false
 
 ### Problem 17: Two City Scheduling
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-handwritten.svg" alt="Handwritten: Problem 17: Two City Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-handwritten.svg" alt="Handwritten: Problem 17: Two City Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-diagram.svg" alt="Diagram: Problem 17: Two City Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-diagram.svg" alt="Diagram: Problem 17: Two City Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-sticky.svg" alt="Sticky Note: Problem 17: Two City Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-17-two-city-scheduling-sticky.svg" alt="Sticky Note: Problem 17: Two City Scheduling" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google]
@@ -1097,14 +1097,14 @@ console.log(twoCitySchedCost([[259,770],[448,54],[926,667],[184,139],[840,118],[
 
 ### Problem 18: Split Array into Consecutive Subsequences
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-handwritten.svg" alt="Handwritten: Problem 18: Split Array into Consecutive Subsequences" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-handwritten.svg" alt="Handwritten: Problem 18: Split Array into Consecutive Subsequences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-diagram.svg" alt="Diagram: Problem 18: Split Array into Consecutive Subsequences" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-diagram.svg" alt="Diagram: Problem 18: Split Array into Consecutive Subsequences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-sticky.svg" alt="Sticky Note: Problem 18: Split Array into Consecutive Subsequences" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-18-split-array-into-consecutive-subsequences-sticky.svg" alt="Sticky Note: Problem 18: Split Array into Consecutive Subsequences" width="30%">
 </a>
 
 🏷️ **Companies:** [Amazon] [Google]
@@ -1163,14 +1163,14 @@ console.log(isPossible([1, 2, 3, 4, 4, 5])); // false
 
 ### Algorithm Comparison: Greedy vs DP
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-handwritten.svg" alt="Handwritten: Algorithm Comparison: Greedy vs DP" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-handwritten.svg" alt="Handwritten: Algorithm Comparison: Greedy vs DP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-diagram.svg" alt="Diagram: Algorithm Comparison: Greedy vs DP" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-diagram.svg" alt="Diagram: Algorithm Comparison: Greedy vs DP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-sticky.svg" alt="Sticky Note: Algorithm Comparison: Greedy vs DP" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/algorithm-comparison-greedy-vs-dp-sticky.svg" alt="Sticky Note: Algorithm Comparison: Greedy vs DP" width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ flowchart TD
 
 ### Practical Tips for Greedy Interviews
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-handwritten.svg" alt="Handwritten: Practical Tips for Greedy Interviews" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-handwritten.svg" alt="Handwritten: Practical Tips for Greedy Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-diagram.svg" alt="Diagram: Practical Tips for Greedy Interviews" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-diagram.svg" alt="Diagram: Practical Tips for Greedy Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-sticky.svg" alt="Sticky Note: Practical Tips for Greedy Interviews" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/practical-tips-for-greedy-interviews-sticky.svg" alt="Sticky Note: Practical Tips for Greedy Interviews" width="30%">
 </a>
 
 
@@ -1209,14 +1209,14 @@ flowchart TD
 
 ### Common Greedy Patterns Summary
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-handwritten.svg" alt="Handwritten: Common Greedy Patterns Summary" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-handwritten.svg" alt="Handwritten: Common Greedy Patterns Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-diagram.svg" alt="Diagram: Common Greedy Patterns Summary" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-diagram.svg" alt="Diagram: Common Greedy Patterns Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-sticky.svg" alt="Sticky Note: Common Greedy Patterns Summary" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/common-greedy-patterns-summary-sticky.svg" alt="Sticky Note: Common Greedy Patterns Summary" width="30%">
 </a>
 
 
@@ -1261,14 +1261,14 @@ Unlike Dynamic Programming, greedy algorithms do not reconsider past choices. Th
 
 ### Proving Greedy Correctness
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-handwritten.svg" alt="Handwritten: Proving Greedy Correctness" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-handwritten.svg" alt="Handwritten: Proving Greedy Correctness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-diagram.svg" alt="Diagram: Proving Greedy Correctness" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-diagram.svg" alt="Diagram: Proving Greedy Correctness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-sticky.svg" alt="Sticky Note: Proving Greedy Correctness" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/proving-greedy-correctness-sticky.svg" alt="Sticky Note: Proving Greedy Correctness" width="30%">
 </a>
 
 
@@ -1280,14 +1280,14 @@ To prove a greedy algorithm is correct, use the **exchange argument**:
 
 ### When to Use Greedy vs DP
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-handwritten.svg" alt="Handwritten: When to Use Greedy vs DP" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-handwritten.svg" alt="Handwritten: When to Use Greedy vs DP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-diagram.svg" alt="Diagram: When to Use Greedy vs DP" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-diagram.svg" alt="Diagram: When to Use Greedy vs DP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-sticky.svg" alt="Sticky Note: When to Use Greedy vs DP" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/when-to-use-greedy-vs-dp-sticky.svg" alt="Sticky Note: When to Use Greedy vs DP" width="30%">
 </a>
 
 
@@ -1300,14 +1300,14 @@ To prove a greedy algorithm is correct, use the **exchange argument**:
 
 ### Common Mistakes to Avoid
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-handwritten.svg" alt="Handwritten: Common Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-handwritten.svg" alt="Handwritten: Common Mistakes to Avoid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-diagram.svg" alt="Diagram: Common Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-diagram.svg" alt="Diagram: Common Mistakes to Avoid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-sticky.svg" alt="Sticky Note: Common Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/common-mistakes-to-avoid-sticky.svg" alt="Sticky Note: Common Mistakes to Avoid" width="30%">
 </a>
 
 
@@ -1318,14 +1318,14 @@ To prove a greedy algorithm is correct, use the **exchange argument**:
 
 ### Greedy Algorithm Design Template
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-handwritten.svg" alt="Handwritten: Greedy Algorithm Design Template" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-handwritten.svg" alt="Handwritten: Greedy Algorithm Design Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-diagram.svg" alt="Diagram: Greedy Algorithm Design Template" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-diagram.svg" alt="Diagram: Greedy Algorithm Design Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-sticky.svg" alt="Sticky Note: Greedy Algorithm Design Template" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/greedy-algorithm-design-template-sticky.svg" alt="Sticky Note: Greedy Algorithm Design Template" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ To prove a greedy algorithm is correct, use the **exchange argument**:
 
 ### Problem-Solving Strategy
 
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-handwritten.svg" alt="Handwritten: Problem-Solving Strategy" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-handwritten.svg" alt="Handwritten: Problem-Solving Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-diagram.svg" alt="Diagram: Problem-Solving Strategy" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-diagram.svg" alt="Diagram: Problem-Solving Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-sticky.svg" alt="Sticky Note: Problem-Solving Strategy" width="30%">
+<a href="../../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/coding-problems/08-greedy/problem-solving-strategy-sticky.svg" alt="Sticky Note: Problem-Solving Strategy" width="30%">
 </a>
 
 

@@ -18,14 +18,14 @@ After completing this chapter, the student will be able to:
 
 ### The CIA Triad
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-handwritten.svg" alt="Handwritten: The CIA Triad" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-handwritten.svg" alt="Handwritten: The CIA Triad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-diagram.svg" alt="Diagram: The CIA Triad" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-diagram.svg" alt="Diagram: The CIA Triad" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-sticky.svg" alt="Sticky Note: The CIA Triad" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-cia-triad-sticky.svg" alt="Sticky Note: The CIA Triad" width="30%">
 </a>
 
 
@@ -55,14 +55,14 @@ graph TD
 
 ### Threat Modelling Methodologies
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-handwritten.svg" alt="Handwritten: Threat Modelling Methodologies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-handwritten.svg" alt="Handwritten: Threat Modelling Methodologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-diagram.svg" alt="Diagram: Threat Modelling Methodologies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-diagram.svg" alt="Diagram: Threat Modelling Methodologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-sticky.svg" alt="Sticky Note: Threat Modelling Methodologies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/threat-modelling-methodologies-sticky.svg" alt="Sticky Note: Threat Modelling Methodologies" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ graph TD
 
 ### The OWASP Top 10 (2025)
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-handwritten.svg" alt="Handwritten: The OWASP Top 10 (2025)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-handwritten.svg" alt="Handwritten: The OWASP Top 10 (2025)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-diagram.svg" alt="Diagram: The OWASP Top 10 (2025)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-diagram.svg" alt="Diagram: The OWASP Top 10 (2025)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-sticky.svg" alt="Sticky Note: The OWASP Top 10 (2025)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/the-owasp-top-10-2025-sticky.svg" alt="Sticky Note: The OWASP Top 10 (2025)" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ graph LR
 
 ### Security in the SDLC (SSDLC)
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-handwritten.svg" alt="Handwritten: Security in the SDLC (SSDLC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-handwritten.svg" alt="Handwritten: Security in the SDLC (SSDLC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-diagram.svg" alt="Diagram: Security in the SDLC (SSDLC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-diagram.svg" alt="Diagram: Security in the SDLC (SSDLC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-sticky.svg" alt="Sticky Note: Security in the SDLC (SSDLC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-in-the-sdlc-ssdlc-sticky.svg" alt="Sticky Note: Security in the SDLC (SSDLC)" width="30%">
 </a>
 
 
@@ -441,14 +441,14 @@ graph LR
 
 ### Security Testing Comparison
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-handwritten.svg" alt="Handwritten: Security Testing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-handwritten.svg" alt="Handwritten: Security Testing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-diagram.svg" alt="Diagram: Security Testing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-diagram.svg" alt="Diagram: Security Testing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-sticky.svg" alt="Sticky Note: Security Testing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/security-testing-comparison-sticky.svg" alt="Sticky Note: Security Testing Comparison" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ graph LR
 
 ### Authentication vs Authorisation
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-handwritten.svg" alt="Handwritten: Authentication vs Authorisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-handwritten.svg" alt="Handwritten: Authentication vs Authorisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-diagram.svg" alt="Diagram: Authentication vs Authorisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-diagram.svg" alt="Diagram: Authentication vs Authorisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-sticky.svg" alt="Sticky Note: Authentication vs Authorisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-vs-authorisation-sticky.svg" alt="Sticky Note: Authentication vs Authorisation" width="30%">
 </a>
 
 
@@ -483,14 +483,14 @@ graph LR
 
 ### Authentication Protocols
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-handwritten.svg" alt="Handwritten: Authentication Protocols" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-handwritten.svg" alt="Handwritten: Authentication Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-diagram.svg" alt="Diagram: Authentication Protocols" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-diagram.svg" alt="Diagram: Authentication Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-sticky.svg" alt="Sticky Note: Authentication Protocols" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authentication-protocols-sticky.svg" alt="Sticky Note: Authentication Protocols" width="30%">
 </a>
 
 
@@ -530,14 +530,14 @@ Passwordless authentication using public-key cryptography. User registers a devi
 
 ### Authorisation Models
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-handwritten.svg" alt="Handwritten: Authorisation Models" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-handwritten.svg" alt="Handwritten: Authorisation Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-diagram.svg" alt="Diagram: Authorisation Models" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-diagram.svg" alt="Diagram: Authorisation Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-sticky.svg" alt="Sticky Note: Authorisation Models" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/authorisation-models-sticky.svg" alt="Sticky Note: Authorisation Models" width="30%">
 </a>
 
 
@@ -592,14 +592,14 @@ Uses a policy engine (e.g., OPA - Open Policy Agent) to evaluate access decision
 
 ### Common Attack Vectors
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-handwritten.svg" alt="Handwritten: Common Attack Vectors" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-handwritten.svg" alt="Handwritten: Common Attack Vectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-diagram.svg" alt="Diagram: Common Attack Vectors" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-diagram.svg" alt="Diagram: Common Attack Vectors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-sticky.svg" alt="Sticky Note: Common Attack Vectors" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/common-attack-vectors-sticky.svg" alt="Sticky Note: Common Attack Vectors" width="30%">
 </a>
 
 
@@ -664,14 +664,14 @@ CSRF tricks authenticated users into performing unintended actions.
 
 ### Secure Coding Principles
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-handwritten.svg" alt="Handwritten: Secure Coding Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-handwritten.svg" alt="Handwritten: Secure Coding Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-diagram.svg" alt="Diagram: Secure Coding Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-diagram.svg" alt="Diagram: Secure Coding Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-sticky.svg" alt="Sticky Note: Secure Coding Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/secure-coding-principles-sticky.svg" alt="Sticky Note: Secure Coding Principles" width="30%">
 </a>
 
 
@@ -686,14 +686,14 @@ CSRF tricks authenticated users into performing unintended actions.
 
 ### Cryptographic Primitives
 
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-handwritten.svg" alt="Handwritten: Cryptographic Primitives" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-handwritten.svg" alt="Handwritten: Cryptographic Primitives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-diagram.svg" alt="Diagram: Cryptographic Primitives" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-diagram.svg" alt="Diagram: Cryptographic Primitives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-sticky.svg" alt="Sticky Note: Cryptographic Primitives" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/13-security-engineering/cryptographic-primitives-sticky.svg" alt="Sticky Note: Cryptographic Primitives" width="30%">
 </a>
 
 

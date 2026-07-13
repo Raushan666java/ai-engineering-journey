@@ -11,14 +11,14 @@
 
 ### उपयोग के तरीके
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: उपयोग के तरीके" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: उपयोग के तरीके" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: उपयोग के तरीके" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: उपयोग के तरीके" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: उपयोग के तरीके" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: उपयोग के तरीके" width="30%">
 </a>
 
 
@@ -32,14 +32,14 @@
 
 ### ओशो का निर्देश
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: ओशो का निर्देश" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: ओशो का निर्देश" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: ओशो का निर्देश" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: ओशो का निर्देश" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: ओशो का निर्देश" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: ओशो का निर्देश" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ flowchart TD
 
 ### कठिनाई मापक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: कठिनाई मापक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: कठिनाई मापक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: कठिनाई मापक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: कठिनाई मापक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: कठिनाई मापक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: कठिनाई मापक" width="30%">
 </a>
 
 
@@ -107,14 +107,14 @@ flowchart TD
 
 ### समय मापक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: समय मापक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: समय मापक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: समय मापक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: समय मापक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: समय मापक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: समय मापक" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ flowchart TD
 
 ### आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: आपके स्वभाव के अनुसार सर्वोत्तम तकनीकें" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ flowchart TD
 
 ### ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-handwritten.svg" alt="Handwritten: ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-diagram.svg" alt="Diagram: ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/quick-reference-112/-sticky.svg" alt="Sticky Note: ओशो द्वारा विशेष रूप से सिफारिशित तकनीकें" width="30%">
 </a>
 
 

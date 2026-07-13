@@ -54,14 +54,14 @@ flowchart LR
 
 ### Compose File Structure
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-handwritten.svg" alt="Handwritten: Compose File Structure" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-handwritten.svg" alt="Handwritten: Compose File Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-diagram.svg" alt="Diagram: Compose File Structure" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-diagram.svg" alt="Diagram: Compose File Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-sticky.svg" alt="Sticky Note: Compose File Structure" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/compose-file-structure-sticky.svg" alt="Sticky Note: Compose File Structure" width="30%">
 </a>
 
 
@@ -82,14 +82,14 @@ volumes:
 
 ### Service Configuration Reference
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-handwritten.svg" alt="Handwritten: Service Configuration Reference" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-handwritten.svg" alt="Handwritten: Service Configuration Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-diagram.svg" alt="Diagram: Service Configuration Reference" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-diagram.svg" alt="Diagram: Service Configuration Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-sticky.svg" alt="Sticky Note: Service Configuration Reference" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/service-configuration-reference-sticky.svg" alt="Sticky Note: Service Configuration Reference" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ services:
 
 ### Networking in Compose
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-handwritten.svg" alt="Handwritten: Networking in Compose" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-handwritten.svg" alt="Handwritten: Networking in Compose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-diagram.svg" alt="Diagram: Networking in Compose" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-diagram.svg" alt="Diagram: Networking in Compose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-sticky.svg" alt="Sticky Note: Networking in Compose" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/networking-in-compose-sticky.svg" alt="Sticky Note: Networking in Compose" width="30%">
 </a>
 
 
@@ -187,14 +187,14 @@ networks:
 
 ### Dependency Ordering
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-handwritten.svg" alt="Handwritten: Dependency Ordering" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-handwritten.svg" alt="Handwritten: Dependency Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-diagram.svg" alt="Diagram: Dependency Ordering" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-diagram.svg" alt="Diagram: Dependency Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-sticky.svg" alt="Sticky Note: Dependency Ordering" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/dependency-ordering-sticky.svg" alt="Sticky Note: Dependency Ordering" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ services:
 
 ### Profiles
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/profiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/profiles-handwritten.svg" alt="Handwritten: Profiles" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/profiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/profiles-handwritten.svg" alt="Handwritten: Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/profiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/profiles-diagram.svg" alt="Diagram: Profiles" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/profiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/profiles-diagram.svg" alt="Diagram: Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/profiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/profiles-sticky.svg" alt="Sticky Note: Profiles" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/profiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/profiles-sticky.svg" alt="Sticky Note: Profiles" width="30%">
 </a>
 
 
@@ -244,14 +244,14 @@ Run: `docker compose --profile dev up`
 
 ### Compose Override Files
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-handwritten.svg" alt="Handwritten: Compose Override Files" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-handwritten.svg" alt="Handwritten: Compose Override Files" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-diagram.svg" alt="Diagram: Compose Override Files" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-diagram.svg" alt="Diagram: Compose Override Files" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-sticky.svg" alt="Sticky Note: Compose Override Files" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/compose-override-files-sticky.svg" alt="Sticky Note: Compose Override Files" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ docker compose -f docker-compose.yml -f docker-compose.test.yml run test
 
 ### Environment Variables
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/environment-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/environment-variables-handwritten.svg" alt="Handwritten: Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/environment-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/environment-variables-handwritten.svg" alt="Handwritten: Environment Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/environment-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/environment-variables-diagram.svg" alt="Diagram: Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/environment-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/environment-variables-diagram.svg" alt="Diagram: Environment Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/environment-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/environment-variables-sticky.svg" alt="Sticky Note: Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/environment-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/environment-variables-sticky.svg" alt="Sticky Note: Environment Variables" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ DB_PASSWORD=secret123
 
 ### Resource Management
 
-<a href="../../assets/images/diagrams/devops/06-docker-compose/resource-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/resource-management-handwritten.svg" alt="Handwritten: Resource Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/resource-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/resource-management-handwritten.svg" alt="Handwritten: Resource Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/resource-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/resource-management-diagram.svg" alt="Diagram: Resource Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/resource-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/resource-management-diagram.svg" alt="Diagram: Resource Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/06-docker-compose/resource-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/06-docker-compose/resource-management-sticky.svg" alt="Sticky Note: Resource Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/06-docker-compose/resource-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/06-docker-compose/resource-management-sticky.svg" alt="Sticky Note: Resource Management" width="30%">
 </a>
 
 

@@ -67,14 +67,14 @@ flowchart LR
 
 ### Problem 1: Median of Two Sorted Arrays
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-handwritten.svg" alt="Handwritten: Problem 1: Median of Two Sorted Arrays" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-handwritten.svg" alt="Handwritten: Problem 1: Median of Two Sorted Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-diagram.svg" alt="Diagram: Problem 1: Median of Two Sorted Arrays" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-diagram.svg" alt="Diagram: Problem 1: Median of Two Sorted Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-sticky.svg" alt="Sticky Note: Problem 1: Median of Two Sorted Arrays" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-1-median-of-two-sorted-arrays-sticky.svg" alt="Sticky Note: Problem 1: Median of Two Sorted Arrays" width="30%">
 </a>
 
 
@@ -141,14 +141,14 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 ### Problem 2: Serialize and Deserialize Binary Tree
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Problem 2: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Problem 2: Serialize and Deserialize Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Problem 2: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Problem 2: Serialize and Deserialize Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Problem 2: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-2-serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Problem 2: Serialize and Deserialize Binary Tree" width="30%">
 </a>
 
 
@@ -244,14 +244,14 @@ function serializeBFS(root: TreeNode | null): string {
 
 ### Problem 3: Alien Dictionary
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-handwritten.svg" alt="Handwritten: Problem 3: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-handwritten.svg" alt="Handwritten: Problem 3: Alien Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-diagram.svg" alt="Diagram: Problem 3: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-diagram.svg" alt="Diagram: Problem 3: Alien Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-sticky.svg" alt="Sticky Note: Problem 3: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-3-alien-dictionary-sticky.svg" alt="Sticky Note: Problem 3: Alien Dictionary" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ function alienOrder(words: string[]): string {
 
 ### Problem 4: Word Break II
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-handwritten.svg" alt="Handwritten: Problem 4: Word Break II" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-handwritten.svg" alt="Handwritten: Problem 4: Word Break II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-diagram.svg" alt="Diagram: Problem 4: Word Break II" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-diagram.svg" alt="Diagram: Problem 4: Word Break II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-sticky.svg" alt="Sticky Note: Problem 4: Word Break II" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-4-word-break-ii-sticky.svg" alt="Sticky Note: Problem 4: Word Break II" width="30%">
 </a>
 
 
@@ -406,14 +406,14 @@ function wordBreak(s: string, wordDict: string[]): string[] {
 
 ### Problem 5: Regular Expression Matching
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-handwritten.svg" alt="Handwritten: Problem 5: Regular Expression Matching" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-handwritten.svg" alt="Handwritten: Problem 5: Regular Expression Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-diagram.svg" alt="Diagram: Problem 5: Regular Expression Matching" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-diagram.svg" alt="Diagram: Problem 5: Regular Expression Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-sticky.svg" alt="Sticky Note: Problem 5: Regular Expression Matching" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-5-regular-expression-matching-sticky.svg" alt="Sticky Note: Problem 5: Regular Expression Matching" width="30%">
 </a>
 
 
@@ -486,14 +486,14 @@ function isMatch(s: string, p: string): boolean {
 
 ### Problem 6: Longest Increasing Path in a Matrix
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-handwritten.svg" alt="Handwritten: Problem 6: Longest Increasing Path in a Matrix" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-handwritten.svg" alt="Handwritten: Problem 6: Longest Increasing Path in a Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-diagram.svg" alt="Diagram: Problem 6: Longest Increasing Path in a Matrix" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-diagram.svg" alt="Diagram: Problem 6: Longest Increasing Path in a Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-sticky.svg" alt="Sticky Note: Problem 6: Longest Increasing Path in a Matrix" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-6-longest-increasing-path-in-a-matrix-sticky.svg" alt="Sticky Note: Problem 6: Longest Increasing Path in a Matrix" width="30%">
 </a>
 
 
@@ -563,14 +563,14 @@ function longestIncreasingPath(matrix: number[][]): number {
 
 ### Problem 7: Merge Intervals
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-handwritten.svg" alt="Handwritten: Problem 7: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-handwritten.svg" alt="Handwritten: Problem 7: Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-diagram.svg" alt="Diagram: Problem 7: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-diagram.svg" alt="Diagram: Problem 7: Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-sticky.svg" alt="Sticky Note: Problem 7: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-7-merge-intervals-sticky.svg" alt="Sticky Note: Problem 7: Merge Intervals" width="30%">
 </a>
 
 
@@ -626,14 +626,14 @@ function merge(intervals: number[][]): number[][] {
 
 ### Problem 8: Text Justification
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-handwritten.svg" alt="Handwritten: Problem 8: Text Justification" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-handwritten.svg" alt="Handwritten: Problem 8: Text Justification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-diagram.svg" alt="Diagram: Problem 8: Text Justification" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-diagram.svg" alt="Diagram: Problem 8: Text Justification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-sticky.svg" alt="Sticky Note: Problem 8: Text Justification" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-8-text-justification-sticky.svg" alt="Sticky Note: Problem 8: Text Justification" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ function buildLine(
 
 ### Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-handwritten.svg" alt="Handwritten: Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-handwritten.svg" alt="Handwritten: Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-diagram.svg" alt="Diagram: Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-diagram.svg" alt="Diagram: Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-sticky.svg" alt="Sticky Note: Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-1-design-google-docs-real-time-collaborative-document-editor-sticky.svg" alt="Sticky Note: Problem SD-1: Design Google Docs (Real-time Collaborative Document Editor)" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ Operation {
 
 ### Problem SD-2: Design Google Search
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-handwritten.svg" alt="Handwritten: Problem SD-2: Design Google Search" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-handwritten.svg" alt="Handwritten: Problem SD-2: Design Google Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-diagram.svg" alt="Diagram: Problem SD-2: Design Google Search" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-diagram.svg" alt="Diagram: Problem SD-2: Design Google Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-sticky.svg" alt="Sticky Note: Problem SD-2: Design Google Search" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-2-design-google-search-sticky.svg" alt="Sticky Note: Problem SD-2: Design Google Search" width="30%">
 </a>
 
 
@@ -902,14 +902,14 @@ Term → [ (docId, frequency, positions), ... ]
 
 ### Problem SD-3: Design YouTube
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-handwritten.svg" alt="Handwritten: Problem SD-3: Design YouTube" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-handwritten.svg" alt="Handwritten: Problem SD-3: Design YouTube" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-diagram.svg" alt="Diagram: Problem SD-3: Design YouTube" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-diagram.svg" alt="Diagram: Problem SD-3: Design YouTube" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-sticky.svg" alt="Sticky Note: Problem SD-3: Design YouTube" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/problem-sd-3-design-youtube-sticky.svg" alt="Sticky Note: Problem SD-3: Design YouTube" width="30%">
 </a>
 
 
@@ -1017,14 +1017,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q1: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-handwritten.svg" alt="Handwritten: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-handwritten.svg" alt="Handwritten: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-diagram.svg" alt="Diagram: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-diagram.svg" alt="Diagram: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-sticky.svg" alt="Sticky Note: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-led-through-ambiguity-googleyness-comfort-with-ambiguity-sticky.svg" alt="Sticky Note: Tell me about a time you led through ambiguity. (Googleyness — Comfort with Ambiguity)" width="30%">
 </a>
 
 
@@ -1045,14 +1045,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q2: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-handwritten.svg" alt="Handwritten: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-handwritten.svg" alt="Handwritten: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-diagram.svg" alt="Diagram: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-diagram.svg" alt="Diagram: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-sticky.svg" alt="Sticky Note: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-had-a-disagreement-with-a-peer-googleyness-collaboration-sticky.svg" alt="Sticky Note: Tell me about a time you had a disagreement with a peer. (Googleyness — Collaboration)" width="30%">
 </a>
 
 
@@ -1070,14 +1070,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q3: Describe the most technically challenging problem you've solved. (Problem Solving)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-handwritten.svg" alt="Handwritten: Describe the most technically challenging problem you've solved. (Problem Solving)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-handwritten.svg" alt="Handwritten: Describe the most technically challenging problem you've solved. (Problem Solving)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-diagram.svg" alt="Diagram: Describe the most technically challenging problem you've solved. (Problem Solving)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-diagram.svg" alt="Diagram: Describe the most technically challenging problem you've solved. (Problem Solving)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-sticky.svg" alt="Sticky Note: Describe the most technically challenging problem you've solved. (Problem Solving)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-the-most-technically-challenging-problem-you-ve-solved-problem-solving-sticky.svg" alt="Sticky Note: Describe the most technically challenging problem you've solved. (Problem Solving)" width="30%">
 </a>
 
 
@@ -1089,14 +1089,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q4: How do you stay current with technology? (Learning)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-handwritten.svg" alt="Handwritten: How do you stay current with technology? (Learning)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-handwritten.svg" alt="Handwritten: How do you stay current with technology? (Learning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-diagram.svg" alt="Diagram: How do you stay current with technology? (Learning)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-diagram.svg" alt="Diagram: How do you stay current with technology? (Learning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-sticky.svg" alt="Sticky Note: How do you stay current with technology? (Learning)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-stay-current-with-technology-learning-sticky.svg" alt="Sticky Note: How do you stay current with technology? (Learning)" width="30%">
 </a>
 
 
@@ -1115,14 +1115,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q5: Tell me about a project that failed. What did you learn? (Humility & Learning)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-handwritten.svg" alt="Handwritten: Tell me about a project that failed. What did you learn? (Humility & Learning)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-handwritten.svg" alt="Handwritten: Tell me about a project that failed. What did you learn? (Humility & Learning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-diagram.svg" alt="Diagram: Tell me about a project that failed. What did you learn? (Humility & Learning)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-diagram.svg" alt="Diagram: Tell me about a project that failed. What did you learn? (Humility & Learning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-sticky.svg" alt="Sticky Note: Tell me about a project that failed. What did you learn? (Humility & Learning)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-project-that-failed-what-did-you-learn-humility-learning-sticky.svg" alt="Sticky Note: Tell me about a project that failed. What did you learn? (Humility & Learning)" width="30%">
 </a>
 
 
@@ -1130,14 +1130,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q6: How would you design a feature that's never been built before? (Product Sense)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-handwritten.svg" alt="Handwritten: How would you design a feature that's never been built before? (Product Sense)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-handwritten.svg" alt="Handwritten: How would you design a feature that's never been built before? (Product Sense)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-diagram.svg" alt="Diagram: How would you design a feature that's never been built before? (Product Sense)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-diagram.svg" alt="Diagram: How would you design a feature that's never been built before? (Product Sense)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-sticky.svg" alt="Sticky Note: How would you design a feature that's never been built before? (Product Sense)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-would-you-design-a-feature-that-s-never-been-built-before-product-sense-sticky.svg" alt="Sticky Note: How would you design a feature that's never been built before? (Product Sense)" width="30%">
 </a>
 
 
@@ -1153,14 +1153,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q7: Tell me about a time you influenced someone without authority. (Leadership)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-handwritten.svg" alt="Handwritten: Tell me about a time you influenced someone without authority. (Leadership)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-handwritten.svg" alt="Handwritten: Tell me about a time you influenced someone without authority. (Leadership)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-diagram.svg" alt="Diagram: Tell me about a time you influenced someone without authority. (Leadership)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-diagram.svg" alt="Diagram: Tell me about a time you influenced someone without authority. (Leadership)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-sticky.svg" alt="Sticky Note: Tell me about a time you influenced someone without authority. (Leadership)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/tell-me-about-a-time-you-influenced-someone-without-authority-leadership-sticky.svg" alt="Sticky Note: Tell me about a time you influenced someone without authority. (Leadership)" width="30%">
 </a>
 
 
@@ -1171,14 +1171,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q8: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-handwritten.svg" alt="Handwritten: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-handwritten.svg" alt="Handwritten: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-diagram.svg" alt="Diagram: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-diagram.svg" alt="Diagram: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-sticky.svg" alt="Sticky Note: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/how-do-you-approach-making-decisions-with-incomplete-data-comfort-with-ambiguity-sticky.svg" alt="Sticky Note: How do you approach making decisions with incomplete data? (Comfort with Ambiguity)" width="30%">
 </a>
 
 
@@ -1193,14 +1193,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q9: Describe a time you improved a process or system significantly. (Impact)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-handwritten.svg" alt="Handwritten: Describe a time you improved a process or system significantly. (Impact)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-handwritten.svg" alt="Handwritten: Describe a time you improved a process or system significantly. (Impact)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-diagram.svg" alt="Diagram: Describe a time you improved a process or system significantly. (Impact)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-diagram.svg" alt="Diagram: Describe a time you improved a process or system significantly. (Impact)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-sticky.svg" alt="Sticky Note: Describe a time you improved a process or system significantly. (Impact)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/describe-a-time-you-improved-a-process-or-system-significantly-impact-sticky.svg" alt="Sticky Note: Describe a time you improved a process or system significantly. (Impact)" width="30%">
 </a>
 
 
@@ -1208,14 +1208,14 @@ function scoreVideo(features: VideoFeatures, weights: number[]): number {
 
 ### Q10: Why Google? What would you work on here? (Motivation)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-handwritten.svg" alt="Handwritten: Why Google? What would you work on here? (Motivation)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-handwritten.svg" alt="Handwritten: Why Google? What would you work on here? (Motivation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-diagram.svg" alt="Diagram: Why Google? What would you work on here? (Motivation)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-diagram.svg" alt="Diagram: Why Google? What would you work on here? (Motivation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-sticky.svg" alt="Sticky Note: Why Google? What would you work on here? (Motivation)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/why-google-what-would-you-work-on-here-motivation-sticky.svg" alt="Sticky Note: Why Google? What would you work on here? (Motivation)" width="30%">
 </a>
 
 
@@ -1237,14 +1237,14 @@ Example: "I've been following Google's work on Pathways and the next-gen languag
 
 ### Coding Preparation (8-12 weeks)
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-handwritten.svg" alt="Handwritten: Coding Preparation (8-12 weeks)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-handwritten.svg" alt="Handwritten: Coding Preparation (8-12 weeks)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-diagram.svg" alt="Diagram: Coding Preparation (8-12 weeks)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-diagram.svg" alt="Diagram: Coding Preparation (8-12 weeks)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-sticky.svg" alt="Sticky Note: Coding Preparation (8-12 weeks)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/coding-preparation-8-12-weeks-sticky.svg" alt="Sticky Note: Coding Preparation (8-12 weeks)" width="30%">
 </a>
 
 | Phase | Focus | Problems/Day |
@@ -1258,14 +1258,14 @@ Example: "I've been following Google's work on Pathways and the next-gen languag
 
 ### System Design Focus Areas
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-handwritten.svg" alt="Handwritten: System Design Focus Areas" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-handwritten.svg" alt="Handwritten: System Design Focus Areas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-diagram.svg" alt="Diagram: System Design Focus Areas" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-diagram.svg" alt="Diagram: System Design Focus Areas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-sticky.svg" alt="Sticky Note: System Design Focus Areas" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/system-design-focus-areas-sticky.svg" alt="Sticky Note: System Design Focus Areas" width="30%">
 </a>
 
 | Topic | Google-Specific Cases |
@@ -1278,14 +1278,14 @@ Example: "I've been following Google's work on Pathways and the next-gen languag
 
 ### Behavioral Themes
 
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-handwritten.svg" alt="Handwritten: Behavioral Themes" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-handwritten.svg" alt="Handwritten: Behavioral Themes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-diagram.svg" alt="Diagram: Behavioral Themes" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-diagram.svg" alt="Diagram: Behavioral Themes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-sticky.svg" alt="Sticky Note: Behavioral Themes" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/14-company-google-swe/behavioral-themes-sticky.svg" alt="Sticky Note: Behavioral Themes" width="30%">
 </a>
 
 | Theme | Google Cares About |

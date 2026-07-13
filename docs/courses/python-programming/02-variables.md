@@ -126,14 +126,14 @@ flowchart TD
 
 ### 2.2.1 int
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-handwritten.svg" alt="Handwritten: 2.2.1 int" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-handwritten.svg" alt="Handwritten: 2.2.1 int" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-diagram.svg" alt="Diagram: 2.2.1 int" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-diagram.svg" alt="Diagram: 2.2.1 int" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-sticky.svg" alt="Sticky Note: 2.2.1 int" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-1-int-sticky.svg" alt="Sticky Note: 2.2.1 int" width="30%">
 </a>
 
 
@@ -172,14 +172,14 @@ Python's arbitrary-precision integers can grow to any size limited only by memor
 
 ### 2.2.2 float
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-handwritten.svg" alt="Handwritten: 2.2.2 float" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-handwritten.svg" alt="Handwritten: 2.2.2 float" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-diagram.svg" alt="Diagram: 2.2.2 float" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-diagram.svg" alt="Diagram: 2.2.2 float" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-sticky.svg" alt="Sticky Note: 2.2.2 float" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-2-float-sticky.svg" alt="Sticky Note: 2.2.2 float" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ console.log(isClose);     // true
 
 ### 2.2.3 str
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-handwritten.svg" alt="Handwritten: 2.2.3 str" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-handwritten.svg" alt="Handwritten: 2.2.3 str" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-diagram.svg" alt="Diagram: 2.2.3 str" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-diagram.svg" alt="Diagram: 2.2.3 str" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-sticky.svg" alt="Sticky Note: 2.2.3 str" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-3-str-sticky.svg" alt="Sticky Note: 2.2.3 str" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ let message = `${name} is ${age} years old`;  // f-string equivalent
 
 ### 2.2.4 bool
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-handwritten.svg" alt="Handwritten: 2.2.4 bool" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-handwritten.svg" alt="Handwritten: 2.2.4 bool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-diagram.svg" alt="Diagram: 2.2.4 bool" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-diagram.svg" alt="Diagram: 2.2.4 bool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-sticky.svg" alt="Sticky Note: 2.2.4 bool" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-4-bool-sticky.svg" alt="Sticky Note: 2.2.4 bool" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ let notAssigned: undefined = undefined;
 
 ### 2.2.5 NoneType
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-handwritten.svg" alt="Handwritten: 2.2.5 NoneType" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-handwritten.svg" alt="Handwritten: 2.2.5 NoneType" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-diagram.svg" alt="Diagram: 2.2.5 NoneType" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-diagram.svg" alt="Diagram: 2.2.5 NoneType" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-sticky.svg" alt="Sticky Note: 2.2.5 NoneType" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-5-nonetype-sticky.svg" alt="Sticky Note: 2.2.5 NoneType" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ if (result === null) {
 
 ### 2.2.6 complex
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-handwritten.svg" alt="Handwritten: 2.2.6 complex" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-handwritten.svg" alt="Handwritten: 2.2.6 complex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-diagram.svg" alt="Diagram: 2.2.6 complex" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-diagram.svg" alt="Diagram: 2.2.6 complex" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-sticky.svg" alt="Sticky Note: 2.2.6 complex" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-2-6-complex-sticky.svg" alt="Sticky Note: 2.2.6 complex" width="30%">
 </a>
 
 
@@ -353,14 +353,14 @@ print(abs(c))          # 5.0 (magnitude)
 
 ### Type Comparison Summary
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-handwritten.svg" alt="Handwritten: Type Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-handwritten.svg" alt="Handwritten: Type Comparison Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-diagram.svg" alt="Diagram: Type Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-diagram.svg" alt="Diagram: Type Comparison Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-sticky.svg" alt="Sticky Note: Type Comparison Summary" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/type-comparison-summary-sticky.svg" alt="Sticky Note: Type Comparison Summary" width="30%">
 </a>
 
 
@@ -426,14 +426,14 @@ console.log(Boolean("hello"));        // true (like bool("hello"))
 
 ### 2.4.1 Arithmetic Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-handwritten.svg" alt="Handwritten: 2.4.1 Arithmetic Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-handwritten.svg" alt="Handwritten: 2.4.1 Arithmetic Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-diagram.svg" alt="Diagram: 2.4.1 Arithmetic Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-diagram.svg" alt="Diagram: 2.4.1 Arithmetic Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-sticky.svg" alt="Sticky Note: 2.4.1 Arithmetic Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-1-arithmetic-operators-sticky.svg" alt="Sticky Note: 2.4.1 Arithmetic Operators" width="30%">
 </a>
 
 
@@ -479,14 +479,14 @@ console.log(a ** b);    // 1000  exponentiation (ES2016+)
 
 ### 2.4.2 Comparison Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-handwritten.svg" alt="Handwritten: 2.4.2 Comparison Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-handwritten.svg" alt="Handwritten: 2.4.2 Comparison Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-diagram.svg" alt="Diagram: 2.4.2 Comparison Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-diagram.svg" alt="Diagram: 2.4.2 Comparison Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-sticky.svg" alt="Sticky Note: 2.4.2 Comparison Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-2-comparison-operators-sticky.svg" alt="Sticky Note: 2.4.2 Comparison Operators" width="30%">
 </a>
 
 
@@ -529,14 +529,14 @@ console.log(3 < x && x < 7);  // true (Python: 3 < x < 7)
 
 ### 2.4.3 Logical Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-handwritten.svg" alt="Handwritten: 2.4.3 Logical Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-handwritten.svg" alt="Handwritten: 2.4.3 Logical Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-diagram.svg" alt="Diagram: 2.4.3 Logical Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-diagram.svg" alt="Diagram: 2.4.3 Logical Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-sticky.svg" alt="Sticky Note: 2.4.3 Logical Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-3-logical-operators-sticky.svg" alt="Sticky Note: 2.4.3 Logical Operators" width="30%">
 </a>
 
 
@@ -593,14 +593,14 @@ console.log(3 || 42);   // 3
 
 ### 2.4.4 Assignment Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-handwritten.svg" alt="Handwritten: 2.4.4 Assignment Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-handwritten.svg" alt="Handwritten: 2.4.4 Assignment Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-diagram.svg" alt="Diagram: 2.4.4 Assignment Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-diagram.svg" alt="Diagram: 2.4.4 Assignment Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-sticky.svg" alt="Sticky Note: 2.4.4 Assignment Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-4-assignment-operators-sticky.svg" alt="Sticky Note: 2.4.4 Assignment Operators" width="30%">
 </a>
 
 
@@ -637,14 +637,14 @@ if (n := len("hello")) > 4:
 
 ### 2.4.5 Bitwise Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-handwritten.svg" alt="Handwritten: 2.4.5 Bitwise Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-handwritten.svg" alt="Handwritten: 2.4.5 Bitwise Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-diagram.svg" alt="Diagram: 2.4.5 Bitwise Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-diagram.svg" alt="Diagram: 2.4.5 Bitwise Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-sticky.svg" alt="Sticky Note: 2.4.5 Bitwise Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-5-bitwise-operators-sticky.svg" alt="Sticky Note: 2.4.5 Bitwise Operators" width="30%">
 </a>
 
 
@@ -678,14 +678,14 @@ console.log((a >> 2).toString(2));  // 11
 
 ### 2.4.6 Identity Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-handwritten.svg" alt="Handwritten: 2.4.6 Identity Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-handwritten.svg" alt="Handwritten: 2.4.6 Identity Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-diagram.svg" alt="Diagram: 2.4.6 Identity Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-diagram.svg" alt="Diagram: 2.4.6 Identity Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-sticky.svg" alt="Sticky Note: 2.4.6 Identity Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-6-identity-operators-sticky.svg" alt="Sticky Note: 2.4.6 Identity Operators" width="30%">
 </a>
 
 
@@ -730,14 +730,14 @@ console.log(a === c);   // true  (same object)
 
 ### 2.4.7 Membership Operators
 
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-handwritten.svg" alt="Handwritten: 2.4.7 Membership Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-handwritten.svg" alt="Handwritten: 2.4.7 Membership Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-diagram.svg" alt="Diagram: 2.4.7 Membership Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-diagram.svg" alt="Diagram: 2.4.7 Membership Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-sticky.svg" alt="Sticky Note: 2.4.7 Membership Operators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/02-variables/2-4-7-membership-operators-sticky.svg" alt="Sticky Note: 2.4.7 Membership Operators" width="30%">
 </a>
 
 

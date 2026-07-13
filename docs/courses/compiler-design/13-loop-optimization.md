@@ -48,14 +48,14 @@ flowchart TB
 
 ### The Critical Role of Loops
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-handwritten.svg" alt="Handwritten: The Critical Role of Loops" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-handwritten.svg" alt="Handwritten: The Critical Role of Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-diagram.svg" alt="Diagram: The Critical Role of Loops" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-diagram.svg" alt="Diagram: The Critical Role of Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-sticky.svg" alt="Sticky Note: The Critical Role of Loops" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-sticky.svg" alt="Sticky Note: The Critical Role of Loops" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ The loop optimizations described in this chapter depend on the **natural-loop** 
 
 ### Loop-Invariant Code Motion (LICM)
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-handwritten.svg" alt="Handwritten: Loop-Invariant Code Motion (LICM)" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-handwritten.svg" alt="Handwritten: Loop-Invariant Code Motion (LICM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-diagram.svg" alt="Diagram: Loop-Invariant Code Motion (LICM)" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-diagram.svg" alt="Diagram: Loop-Invariant Code Motion (LICM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-sticky.svg" alt="Sticky Note: Loop-Invariant Code Motion (LICM)" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-sticky.svg" alt="Sticky Note: Loop-Invariant Code Motion (LICM)" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ for (i = 0; i < n; i++) {
 
 ### Induction Variable Detection
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-handwritten.svg" alt="Handwritten: Induction Variable Detection" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-handwritten.svg" alt="Handwritten: Induction Variable Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-diagram.svg" alt="Diagram: Induction Variable Detection" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-diagram.svg" alt="Diagram: Induction Variable Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-sticky.svg" alt="Sticky Note: Induction Variable Detection" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-sticky.svg" alt="Sticky Note: Induction Variable Detection" width="30%">
 </a>
 
 
@@ -160,14 +160,14 @@ function detectInductionVariables(loop):
 
 ### Strength Reduction
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-handwritten.svg" alt="Handwritten: Strength Reduction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-handwritten.svg" alt="Handwritten: Strength Reduction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-diagram.svg" alt="Diagram: Strength Reduction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-diagram.svg" alt="Diagram: Strength Reduction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-sticky.svg" alt="Sticky Note: Strength Reduction" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-sticky.svg" alt="Sticky Note: Strength Reduction" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ function strengthReduce(loop, basicIVs, derivedIVs):
 
 ### Induction Variable Elimination
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-handwritten.svg" alt="Handwritten: Induction Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-handwritten.svg" alt="Handwritten: Induction Variable Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-diagram.svg" alt="Diagram: Induction Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-diagram.svg" alt="Diagram: Induction Variable Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-sticky.svg" alt="Sticky Note: Induction Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-sticky.svg" alt="Sticky Note: Induction Variable Elimination" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ while t < n * 4:
 
 ### Loop Unrolling
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-handwritten.svg" alt="Handwritten: Loop Unrolling" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-handwritten.svg" alt="Handwritten: Loop Unrolling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-diagram.svg" alt="Diagram: Loop Unrolling" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-diagram.svg" alt="Diagram: Loop Unrolling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-sticky.svg" alt="Sticky Note: Loop Unrolling" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-sticky.svg" alt="Sticky Note: Loop Unrolling" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ Profile-guided optimization (Chapter 15) and machine models help compilers selec
 
 ### Loop Fusion and Fission
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-handwritten.svg" alt="Handwritten: Loop Fusion and Fission" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-handwritten.svg" alt="Handwritten: Loop Fusion and Fission" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-diagram.svg" alt="Diagram: Loop Fusion and Fission" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-diagram.svg" alt="Diagram: Loop Fusion and Fission" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-sticky.svg" alt="Sticky Note: Loop Fusion and Fission" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-sticky.svg" alt="Sticky Note: Loop Fusion and Fission" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ for i = 1 to N-1:
 
 ### Loop Interchange
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-handwritten.svg" alt="Handwritten: Loop Interchange" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-handwritten.svg" alt="Handwritten: Loop Interchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-diagram.svg" alt="Diagram: Loop Interchange" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-diagram.svg" alt="Diagram: Loop Interchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-sticky.svg" alt="Sticky Note: Loop Interchange" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-sticky.svg" alt="Sticky Note: Loop Interchange" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ for i = 0 to N-1:
 
 ### Vectorization
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-handwritten.svg" alt="Handwritten: Vectorization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-handwritten.svg" alt="Handwritten: Vectorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-diagram.svg" alt="Diagram: Vectorization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-diagram.svg" alt="Diagram: Vectorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-sticky.svg" alt="Sticky Note: Vectorization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-sticky.svg" alt="Sticky Note: Vectorization" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ sum = horizontal_add(sum_vec)
 
 ### Putting It All Together ? TypeScript Implementation
 
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
 
 

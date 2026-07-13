@@ -50,14 +50,14 @@ flowchart TD
 
 ### 1.1 "Tell Me About Yourself" → Three Templates
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-handwritten.svg" alt="Handwritten: 1.1 "Tell Me About Yourself" → Three Templates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-handwritten.svg" alt="Handwritten: 1.1 "Tell Me About Yourself" → Three Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-diagram.svg" alt="Diagram: 1.1 "Tell Me About Yourself" → Three Templates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-diagram.svg" alt="Diagram: 1.1 "Tell Me About Yourself" → Three Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-sticky.svg" alt="Sticky Note: 1.1 "Tell Me About Yourself" → Three Templates" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-1-tell-me-about-yourself-three-templates-sticky.svg" alt="Sticky Note: 1.1 "Tell Me About Yourself" → Three Templates" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ flowchart TD
 
 ### 1.2 "What Are Your Strengths and Weaknesses?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-handwritten.svg" alt="Handwritten: 1.2 "What Are Your Strengths and Weaknesses?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-handwritten.svg" alt="Handwritten: 1.2 "What Are Your Strengths and Weaknesses?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-diagram.svg" alt="Diagram: 1.2 "What Are Your Strengths and Weaknesses?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-diagram.svg" alt="Diagram: 1.2 "What Are Your Strengths and Weaknesses?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-sticky.svg" alt="Sticky Note: 1.2 "What Are Your Strengths and Weaknesses?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-2-what-are-your-strengths-and-weaknesses-sticky.svg" alt="Sticky Note: 1.2 "What Are Your Strengths and Weaknesses?"" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ flowchart TD
 
 ### 1.3 "Where Do You See Yourself in 5 Years?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: 1.3 "Where Do You See Yourself in 5 Years?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: 1.3 "Where Do You See Yourself in 5 Years?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: 1.3 "Where Do You See Yourself in 5 Years?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: 1.3 "Where Do You See Yourself in 5 Years?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: 1.3 "Where Do You See Yourself in 5 Years?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-3-where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: 1.3 "Where Do You See Yourself in 5 Years?"" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ flowchart TD
 
 ### 1.4 "Why Should We Hire You?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-handwritten.svg" alt="Handwritten: 1.4 "Why Should We Hire You?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-handwritten.svg" alt="Handwritten: 1.4 "Why Should We Hire You?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-diagram.svg" alt="Diagram: 1.4 "Why Should We Hire You?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-diagram.svg" alt="Diagram: 1.4 "Why Should We Hire You?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-sticky.svg" alt="Sticky Note: 1.4 "Why Should We Hire You?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-4-why-should-we-hire-you-sticky.svg" alt="Sticky Note: 1.4 "Why Should We Hire You?"" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ flowchart TD
 
 ### 1.5 "Why Do You Want to Join Our Company?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-handwritten.svg" alt="Handwritten: 1.5 "Why Do You Want to Join Our Company?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-handwritten.svg" alt="Handwritten: 1.5 "Why Do You Want to Join Our Company?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-diagram.svg" alt="Diagram: 1.5 "Why Do You Want to Join Our Company?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-diagram.svg" alt="Diagram: 1.5 "Why Do You Want to Join Our Company?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-sticky.svg" alt="Sticky Note: 1.5 "Why Do You Want to Join Our Company?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-5-why-do-you-want-to-join-our-company-sticky.svg" alt="Sticky Note: 1.5 "Why Do You Want to Join Our Company?"" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ Before the interview, research these aspects:
 
 ### 1.6 "Why Gap in Education / Backlogs?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-handwritten.svg" alt="Handwritten: 1.6 "Why Gap in Education / Backlogs?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-handwritten.svg" alt="Handwritten: 1.6 "Why Gap in Education / Backlogs?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-diagram.svg" alt="Diagram: 1.6 "Why Gap in Education / Backlogs?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-diagram.svg" alt="Diagram: 1.6 "Why Gap in Education / Backlogs?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-sticky.svg" alt="Sticky Note: 1.6 "Why Gap in Education / Backlogs?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-6-why-gap-in-education-backlogs-sticky.svg" alt="Sticky Note: 1.6 "Why Gap in Education / Backlogs?"" width="30%">
 </a>
 
 
@@ -287,14 +287,14 @@ Before the interview, research these aspects:
 
 ### 1.7 "What Salary Are You Expecting?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-handwritten.svg" alt="Handwritten: 1.7 "What Salary Are You Expecting?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-handwritten.svg" alt="Handwritten: 1.7 "What Salary Are You Expecting?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-diagram.svg" alt="Diagram: 1.7 "What Salary Are You Expecting?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-diagram.svg" alt="Diagram: 1.7 "What Salary Are You Expecting?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-sticky.svg" alt="Sticky Note: 1.7 "What Salary Are You Expecting?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-7-what-salary-are-you-expecting-sticky.svg" alt="Sticky Note: 1.7 "What Salary Are You Expecting?"" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ Before the interview, research these aspects:
 
 ### 1.8 "Do You Have Any Questions for Us?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-handwritten.svg" alt="Handwritten: 1.8 "Do You Have Any Questions for Us?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-handwritten.svg" alt="Handwritten: 1.8 "Do You Have Any Questions for Us?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-diagram.svg" alt="Diagram: 1.8 "Do You Have Any Questions for Us?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-diagram.svg" alt="Diagram: 1.8 "Do You Have Any Questions for Us?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-sticky.svg" alt="Sticky Note: 1.8 "Do You Have Any Questions for Us?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-8-do-you-have-any-questions-for-us-sticky.svg" alt="Sticky Note: 1.8 "Do You Have Any Questions for Us?"" width="30%">
 </a>
 
 
@@ -378,14 +378,14 @@ Before the interview, research these aspects:
 
 ### 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-handwritten.svg" alt="Handwritten: 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-handwritten.svg" alt="Handwritten: 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-diagram.svg" alt="Diagram: 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-diagram.svg" alt="Diagram: 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-sticky.svg" alt="Sticky Note: 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-9-are-you-willing-to-relocate-can-you-work-in-night-shifts-sticky.svg" alt="Sticky Note: 1.9 "Are You Willing to Relocate?" / "Can You Work in Night Shifts?"" width="30%">
 </a>
 
 
@@ -404,14 +404,14 @@ Before the interview, research these aspects:
 
 ### 1.10 Comprehensive Q&A Bank (30+ Pairs)
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-handwritten.svg" alt="Handwritten: 1.10 Comprehensive Q&A Bank (30+ Pairs)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-handwritten.svg" alt="Handwritten: 1.10 Comprehensive Q&A Bank (30+ Pairs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-diagram.svg" alt="Diagram: 1.10 Comprehensive Q&A Bank (30+ Pairs)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-diagram.svg" alt="Diagram: 1.10 Comprehensive Q&A Bank (30+ Pairs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-sticky.svg" alt="Sticky Note: 1.10 Comprehensive Q&A Bank (30+ Pairs)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/1-10-comprehensive-q-a-bank-30-pairs-sticky.svg" alt="Sticky Note: 1.10 Comprehensive Q&A Bank (30+ Pairs)" width="30%">
 </a>
 
 
@@ -511,14 +511,14 @@ Before the interview, research these aspects:
 
 ### 2.1 What Evaluators Look For
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-handwritten.svg" alt="Handwritten: 2.1 What Evaluators Look For" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-handwritten.svg" alt="Handwritten: 2.1 What Evaluators Look For" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-diagram.svg" alt="Diagram: 2.1 What Evaluators Look For" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-diagram.svg" alt="Diagram: 2.1 What Evaluators Look For" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-sticky.svg" alt="Sticky Note: 2.1 What Evaluators Look For" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-1-what-evaluators-look-for-sticky.svg" alt="Sticky Note: 2.1 What Evaluators Look For" width="30%">
 </a>
 
 
@@ -543,14 +543,14 @@ Group discussions (GD) test how you function in a group setting → not just wha
 
 ### 2.2 GD Structure
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-handwritten.svg" alt="Handwritten: 2.2 GD Structure" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-handwritten.svg" alt="Handwritten: 2.2 GD Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-diagram.svg" alt="Diagram: 2.2 GD Structure" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-diagram.svg" alt="Diagram: 2.2 GD Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-sticky.svg" alt="Sticky Note: 2.2 GD Structure" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-2-gd-structure-sticky.svg" alt="Sticky Note: 2.2 GD Structure" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ Group discussions (GD) test how you function in a group setting → not just wha
 
 ### 2.3 Common GD Topics for IT Placements
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-handwritten.svg" alt="Handwritten: 2.3 Common GD Topics for IT Placements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-handwritten.svg" alt="Handwritten: 2.3 Common GD Topics for IT Placements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-diagram.svg" alt="Diagram: 2.3 Common GD Topics for IT Placements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-diagram.svg" alt="Diagram: 2.3 Common GD Topics for IT Placements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-sticky.svg" alt="Sticky Note: 2.3 Common GD Topics for IT Placements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-3-common-gd-topics-for-it-placements-sticky.svg" alt="Sticky Note: 2.3 Common GD Topics for IT Placements" width="30%">
 </a>
 
 
@@ -673,14 +673,14 @@ Group discussions (GD) test how you function in a group setting → not just wha
 
 ### 2.4 Do's and Don'ts
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-handwritten.svg" alt="Handwritten: 2.4 Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-handwritten.svg" alt="Handwritten: 2.4 Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-diagram.svg" alt="Diagram: 2.4 Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-diagram.svg" alt="Diagram: 2.4 Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-sticky.svg" alt="Sticky Note: 2.4 Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-4-do-s-and-don-ts-sticky.svg" alt="Sticky Note: 2.4 Do's and Don'ts" width="30%">
 </a>
 
 
@@ -699,14 +699,14 @@ Group discussions (GD) test how you function in a group setting → not just wha
 
 ### 2.5 How to Enter the Discussion Without Interrupting
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-handwritten.svg" alt="Handwritten: 2.5 How to Enter the Discussion Without Interrupting" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-handwritten.svg" alt="Handwritten: 2.5 How to Enter the Discussion Without Interrupting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-diagram.svg" alt="Diagram: 2.5 How to Enter the Discussion Without Interrupting" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-diagram.svg" alt="Diagram: 2.5 How to Enter the Discussion Without Interrupting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-sticky.svg" alt="Sticky Note: 2.5 How to Enter the Discussion Without Interrupting" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-5-how-to-enter-the-discussion-without-interrupting-sticky.svg" alt="Sticky Note: 2.5 How to Enter the Discussion Without Interrupting" width="30%">
 </a>
 
 
@@ -729,14 +729,14 @@ Group discussions (GD) test how you function in a group setting → not just wha
 
 ### 2.6 Sample GD Script
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-handwritten.svg" alt="Handwritten: 2.6 Sample GD Script" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-handwritten.svg" alt="Handwritten: 2.6 Sample GD Script" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-diagram.svg" alt="Diagram: 2.6 Sample GD Script" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-diagram.svg" alt="Diagram: 2.6 Sample GD Script" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-sticky.svg" alt="Sticky Note: 2.6 Sample GD Script" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/2-6-sample-gd-script-sticky.svg" alt="Sticky Note: 2.6 Sample GD Script" width="30%">
 </a>
 
 
@@ -760,14 +760,14 @@ Group discussions (GD) test how you function in a group setting → not just wha
 
 ### 3.1 Verbal Clarity
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-handwritten.svg" alt="Handwritten: 3.1 Verbal Clarity" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-handwritten.svg" alt="Handwritten: 3.1 Verbal Clarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-diagram.svg" alt="Diagram: 3.1 Verbal Clarity" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-diagram.svg" alt="Diagram: 3.1 Verbal Clarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-sticky.svg" alt="Sticky Note: 3.1 Verbal Clarity" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-1-verbal-clarity-sticky.svg" alt="Sticky Note: 3.1 Verbal Clarity" width="30%">
 </a>
 
 
@@ -788,14 +788,14 @@ Record yourself speaking for 2 minutes on any topic. Transcribe it. Count filler
 
 ### 3.2 Active Listening Techniques
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-handwritten.svg" alt="Handwritten: 3.2 Active Listening Techniques" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-handwritten.svg" alt="Handwritten: 3.2 Active Listening Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-diagram.svg" alt="Diagram: 3.2 Active Listening Techniques" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-diagram.svg" alt="Diagram: 3.2 Active Listening Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-sticky.svg" alt="Sticky Note: 3.2 Active Listening Techniques" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-2-active-listening-techniques-sticky.svg" alt="Sticky Note: 3.2 Active Listening Techniques" width="30%">
 </a>
 
 
@@ -810,14 +810,14 @@ Record yourself speaking for 2 minutes on any topic. Transcribe it. Count filler
 
 ### 3.3 Structuring Technical Explanations
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-handwritten.svg" alt="Handwritten: 3.3 Structuring Technical Explanations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-handwritten.svg" alt="Handwritten: 3.3 Structuring Technical Explanations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-diagram.svg" alt="Diagram: 3.3 Structuring Technical Explanations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-diagram.svg" alt="Diagram: 3.3 Structuring Technical Explanations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-sticky.svg" alt="Sticky Note: 3.3 Structuring Technical Explanations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-3-structuring-technical-explanations-sticky.svg" alt="Sticky Note: 3.3 Structuring Technical Explanations" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ Record yourself speaking for 2 minutes on any topic. Transcribe it. Count filler
 
 ### 3.4 Email Etiquette for Professional Communication
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-handwritten.svg" alt="Handwritten: 3.4 Email Etiquette for Professional Communication" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-handwritten.svg" alt="Handwritten: 3.4 Email Etiquette for Professional Communication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-diagram.svg" alt="Diagram: 3.4 Email Etiquette for Professional Communication" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-diagram.svg" alt="Diagram: 3.4 Email Etiquette for Professional Communication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-sticky.svg" alt="Sticky Note: 3.4 Email Etiquette for Professional Communication" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-4-email-etiquette-for-professional-communication-sticky.svg" alt="Sticky Note: 3.4 Email Etiquette for Professional Communication" width="30%">
 </a>
 
 
@@ -896,14 +896,14 @@ Rohan Sharma
 
 ### 3.5 Phone / Video Call Etiquette
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-handwritten.svg" alt="Handwritten: 3.5 Phone / Video Call Etiquette" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-handwritten.svg" alt="Handwritten: 3.5 Phone / Video Call Etiquette" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-diagram.svg" alt="Diagram: 3.5 Phone / Video Call Etiquette" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-diagram.svg" alt="Diagram: 3.5 Phone / Video Call Etiquette" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-sticky.svg" alt="Sticky Note: 3.5 Phone / Video Call Etiquette" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-5-phone-video-call-etiquette-sticky.svg" alt="Sticky Note: 3.5 Phone / Video Call Etiquette" width="30%">
 </a>
 
 
@@ -927,14 +927,14 @@ Rohan Sharma
 
 ### 3.6 Common Grammar Mistakes to Avoid
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-handwritten.svg" alt="Handwritten: 3.6 Common Grammar Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-handwritten.svg" alt="Handwritten: 3.6 Common Grammar Mistakes to Avoid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-diagram.svg" alt="Diagram: 3.6 Common Grammar Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-diagram.svg" alt="Diagram: 3.6 Common Grammar Mistakes to Avoid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-sticky.svg" alt="Sticky Note: 3.6 Common Grammar Mistakes to Avoid" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/3-6-common-grammar-mistakes-to-avoid-sticky.svg" alt="Sticky Note: 3.6 Common Grammar Mistakes to Avoid" width="30%">
 </a>
 
 
@@ -964,14 +964,14 @@ Rohan Sharma
 
 ### 4.1 Dress Code for Interviews
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-handwritten.svg" alt="Handwritten: 4.1 Dress Code for Interviews" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-handwritten.svg" alt="Handwritten: 4.1 Dress Code for Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-diagram.svg" alt="Diagram: 4.1 Dress Code for Interviews" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-diagram.svg" alt="Diagram: 4.1 Dress Code for Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-sticky.svg" alt="Sticky Note: 4.1 Dress Code for Interviews" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-1-dress-code-for-interviews-sticky.svg" alt="Sticky Note: 4.1 Dress Code for Interviews" width="30%">
 </a>
 
 
@@ -1007,14 +1007,14 @@ Rohan Sharma
 
 ### 4.2 Body Language Tips
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-handwritten.svg" alt="Handwritten: 4.2 Body Language Tips" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-handwritten.svg" alt="Handwritten: 4.2 Body Language Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-diagram.svg" alt="Diagram: 4.2 Body Language Tips" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-diagram.svg" alt="Diagram: 4.2 Body Language Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-sticky.svg" alt="Sticky Note: 4.2 Body Language Tips" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-2-body-language-tips-sticky.svg" alt="Sticky Note: 4.2 Body Language Tips" width="30%">
 </a>
 
 
@@ -1049,14 +1049,14 @@ Rohan Sharma
 
 ### 4.3 Confidence Building Techniques
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-handwritten.svg" alt="Handwritten: 4.3 Confidence Building Techniques" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-handwritten.svg" alt="Handwritten: 4.3 Confidence Building Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-diagram.svg" alt="Diagram: 4.3 Confidence Building Techniques" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-diagram.svg" alt="Diagram: 4.3 Confidence Building Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-sticky.svg" alt="Sticky Note: 4.3 Confidence Building Techniques" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-3-confidence-building-techniques-sticky.svg" alt="Sticky Note: 4.3 Confidence Building Techniques" width="30%">
 </a>
 
 
@@ -1083,14 +1083,14 @@ Rohan Sharma
 
 ### 4.4 Handling Stress During Interviews
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-handwritten.svg" alt="Handwritten: 4.4 Handling Stress During Interviews" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-handwritten.svg" alt="Handwritten: 4.4 Handling Stress During Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-diagram.svg" alt="Diagram: 4.4 Handling Stress During Interviews" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-diagram.svg" alt="Diagram: 4.4 Handling Stress During Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-sticky.svg" alt="Sticky Note: 4.4 Handling Stress During Interviews" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-4-handling-stress-during-interviews-sticky.svg" alt="Sticky Note: 4.4 Handling Stress During Interviews" width="30%">
 </a>
 
 
@@ -1114,14 +1114,14 @@ Rohan Sharma
 
 ### 4.5 Follow-Up After Interview
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-handwritten.svg" alt="Handwritten: 4.5 Follow-Up After Interview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-handwritten.svg" alt="Handwritten: 4.5 Follow-Up After Interview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-diagram.svg" alt="Diagram: 4.5 Follow-Up After Interview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-diagram.svg" alt="Diagram: 4.5 Follow-Up After Interview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-sticky.svg" alt="Sticky Note: 4.5 Follow-Up After Interview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-5-follow-up-after-interview-sticky.svg" alt="Sticky Note: 4.5 Follow-Up After Interview" width="30%">
 </a>
 
 
@@ -1174,14 +1174,14 @@ Rohan Sharma
 
 ### 4.6 Professional Ethics and Integrity
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-handwritten.svg" alt="Handwritten: 4.6 Professional Ethics and Integrity" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-handwritten.svg" alt="Handwritten: 4.6 Professional Ethics and Integrity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-diagram.svg" alt="Diagram: 4.6 Professional Ethics and Integrity" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-diagram.svg" alt="Diagram: 4.6 Professional Ethics and Integrity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-sticky.svg" alt="Sticky Note: 4.6 Professional Ethics and Integrity" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/4-6-professional-ethics-and-integrity-sticky.svg" alt="Sticky Note: 4.6 Professional Ethics and Integrity" width="30%">
 </a>
 
 
@@ -1219,14 +1219,14 @@ Rohan Sharma
 
 ### Top 5 HR Questions → Cheat Sheet
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-handwritten.svg" alt="Handwritten: Top 5 HR Questions → Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-handwritten.svg" alt="Handwritten: Top 5 HR Questions → Cheat Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-diagram.svg" alt="Diagram: Top 5 HR Questions → Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-diagram.svg" alt="Diagram: Top 5 HR Questions → Cheat Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-sticky.svg" alt="Sticky Note: Top 5 HR Questions → Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/top-5-hr-questions-cheat-sheet-sticky.svg" alt="Sticky Note: Top 5 HR Questions → Cheat Sheet" width="30%">
 </a>
 
 
@@ -1240,14 +1240,14 @@ Rohan Sharma
 
 ### GD Scorecard (Self-Evaluation)
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-handwritten.svg" alt="Handwritten: GD Scorecard (Self-Evaluation)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-handwritten.svg" alt="Handwritten: GD Scorecard (Self-Evaluation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-diagram.svg" alt="Diagram: GD Scorecard (Self-Evaluation)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-diagram.svg" alt="Diagram: GD Scorecard (Self-Evaluation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-sticky.svg" alt="Sticky Note: GD Scorecard (Self-Evaluation)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/gd-scorecard-self-evaluation-sticky.svg" alt="Sticky Note: GD Scorecard (Self-Evaluation)" width="30%">
 </a>
 
 
@@ -1261,14 +1261,14 @@ Rohan Sharma
 
 ### Email Template Quick Links
 
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-handwritten.svg" alt="Handwritten: Email Template Quick Links" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-handwritten.svg" alt="Handwritten: Email Template Quick Links" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-diagram.svg" alt="Diagram: Email Template Quick Links" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-diagram.svg" alt="Diagram: Email Template Quick Links" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-sticky.svg" alt="Sticky Note: Email Template Quick Links" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/06-hr-gd-soft-skills/email-template-quick-links-sticky.svg" alt="Sticky Note: Email Template Quick Links" width="30%">
 </a>
 
 

@@ -17,14 +17,14 @@ Learning alone is limited. Learning with others compounds. This chapter covers h
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ flowchart LR
 
 ### Q1: How do you form an effective accountability group?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-handwritten.svg" alt="Handwritten: How do you form an effective accountability group?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-handwritten.svg" alt="Handwritten: How do you form an effective accountability group?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-diagram.svg" alt="Diagram: How do you form an effective accountability group?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-diagram.svg" alt="Diagram: How do you form an effective accountability group?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-sticky.svg" alt="Sticky Note: How do you form an effective accountability group?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-form-an-effective-accountability-group-sticky.svg" alt="Sticky Note: How do you form an effective accountability group?" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ class AccountabilityGroupBuilder {
 
 ### Q2: How do you find and evaluate online learning communities?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-handwritten.svg" alt="Handwritten: How do you find and evaluate online learning communities?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-handwritten.svg" alt="Handwritten: How do you find and evaluate online learning communities?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-diagram.svg" alt="Diagram: How do you find and evaluate online learning communities?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-diagram.svg" alt="Diagram: How do you find and evaluate online learning communities?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-sticky.svg" alt="Sticky Note: How do you find and evaluate online learning communities?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-evaluate-online-learning-communities-sticky.svg" alt="Sticky Note: How do you find and evaluate online learning communities?" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ class CommunityEvaluator {
 
 ### Q3: How do you use open-source contribution as a learning tool?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-handwritten.svg" alt="Handwritten: How do you use open-source contribution as a learning tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-handwritten.svg" alt="Handwritten: How do you use open-source contribution as a learning tool?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-diagram.svg" alt="Diagram: How do you use open-source contribution as a learning tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-diagram.svg" alt="Diagram: How do you use open-source contribution as a learning tool?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-sticky.svg" alt="Sticky Note: How do you use open-source contribution as a learning tool?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-open-source-contribution-as-a-learning-tool-sticky.svg" alt="Sticky Note: How do you use open-source contribution as a learning tool?" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ Next: ${merges >= 5 ? 'Move to Phase 5 (feature contributions)' : 'Continue Phas
 
 ### Q4: How do you find and maintain effective study partnerships?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-handwritten.svg" alt="Handwritten: How do you find and maintain effective study partnerships?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-handwritten.svg" alt="Handwritten: How do you find and maintain effective study partnerships?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-diagram.svg" alt="Diagram: How do you find and maintain effective study partnerships?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-diagram.svg" alt="Diagram: How do you find and maintain effective study partnerships?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-sticky.svg" alt="Sticky Note: How do you find and maintain effective study partnerships?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-and-maintain-effective-study-partnerships-sticky.svg" alt="Sticky Note: How do you find and maintain effective study partnerships?" width="30%">
 </a>
 
 
@@ -566,14 +566,14 @@ class StudyPartnerMatcher {
 
 ### Q5: How do you extract maximum value from conferences and meetups?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-handwritten.svg" alt="Handwritten: How do you extract maximum value from conferences and meetups?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-handwritten.svg" alt="Handwritten: How do you extract maximum value from conferences and meetups?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-diagram.svg" alt="Diagram: How do you extract maximum value from conferences and meetups?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-diagram.svg" alt="Diagram: How do you extract maximum value from conferences and meetups?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-sticky.svg" alt="Sticky Note: How do you extract maximum value from conferences and meetups?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-extract-maximum-value-from-conferences-and-meetups-sticky.svg" alt="Sticky Note: How do you extract maximum value from conferences and meetups?" width="30%">
 </a>
 
 
@@ -697,14 +697,14 @@ Consider: is your time better spent elsewhere next year?`;
 
 ### Q6: How does peer review accelerate learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-handwritten.svg" alt="Handwritten: How does peer review accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-handwritten.svg" alt="Handwritten: How does peer review accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-diagram.svg" alt="Diagram: How does peer review accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-diagram.svg" alt="Diagram: How does peer review accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-sticky.svg" alt="Sticky Note: How does peer review accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-does-peer-review-accelerate-learning-sticky.svg" alt="Sticky Note: How does peer review accelerate learning?" width="30%">
 </a>
 
 
@@ -746,53 +746,53 @@ class PeerReviewSystem {
 ## Code Review
 ### Strengths (what's working well)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-handwritten.svg" alt="Handwritten: Strengths (what's working well)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-handwritten.svg" alt="Handwritten: Strengths (what's working well)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-diagram.svg" alt="Diagram: Strengths (what's working well)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-diagram.svg" alt="Diagram: Strengths (what's working well)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-sticky.svg" alt="Sticky Note: Strengths (what's working well)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-what-s-working-well-sticky.svg" alt="Sticky Note: Strengths (what's working well)" width="30%">
 </a>
 
 - 
 ### Suggestions (what could improve)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-handwritten.svg" alt="Handwritten: Suggestions (what could improve)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-handwritten.svg" alt="Handwritten: Suggestions (what could improve)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-diagram.svg" alt="Diagram: Suggestions (what could improve)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-diagram.svg" alt="Diagram: Suggestions (what could improve)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-sticky.svg" alt="Sticky Note: Suggestions (what could improve)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/suggestions-what-could-improve-sticky.svg" alt="Sticky Note: Suggestions (what could improve)" width="30%">
 </a>
 
 - 
 ### Questions (what I don't understand)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-handwritten.svg" alt="Handwritten: Questions (what I don't understand)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-handwritten.svg" alt="Handwritten: Questions (what I don't understand)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-diagram.svg" alt="Diagram: Questions (what I don't understand)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-diagram.svg" alt="Diagram: Questions (what I don't understand)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-sticky.svg" alt="Sticky Note: Questions (what I don't understand)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/questions-what-i-don-t-understand-sticky.svg" alt="Sticky Note: Questions (what I don't understand)" width="30%">
 </a>
 
 - 
 ### Learning (what I learned from reading this)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" alt="Handwritten: Learning (what I learned from reading this)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" alt="Handwritten: Learning (what I learned from reading this)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" alt="Diagram: Learning (what I learned from reading this)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" alt="Diagram: Learning (what I learned from reading this)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" alt="Sticky Note: Learning (what I learned from reading this)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" alt="Sticky Note: Learning (what I learned from reading this)" width="30%">
 </a>
 
 - `,
@@ -800,53 +800,53 @@ class PeerReviewSystem {
 ## Writing Review
 ### Strengths (clarity, structure, examples)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-handwritten.svg" alt="Handwritten: Strengths (clarity, structure, examples)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-handwritten.svg" alt="Handwritten: Strengths (clarity, structure, examples)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-diagram.svg" alt="Diagram: Strengths (clarity, structure, examples)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-diagram.svg" alt="Diagram: Strengths (clarity, structure, examples)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-sticky.svg" alt="Sticky Note: Strengths (clarity, structure, examples)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/strengths-clarity-structure-examples-sticky.svg" alt="Sticky Note: Strengths (clarity, structure, examples)" width="30%">
 </a>
 
 - 
 ### Confusion points (where I got lost)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-handwritten.svg" alt="Handwritten: Confusion points (where I got lost)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-handwritten.svg" alt="Handwritten: Confusion points (where I got lost)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-diagram.svg" alt="Diagram: Confusion points (where I got lost)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-diagram.svg" alt="Diagram: Confusion points (where I got lost)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-sticky.svg" alt="Sticky Note: Confusion points (where I got lost)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/confusion-points-where-i-got-lost-sticky.svg" alt="Sticky Note: Confusion points (where I got lost)" width="30%">
 </a>
 
 - 
 ### Missing elements (what would help)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-handwritten.svg" alt="Handwritten: Missing elements (what would help)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-handwritten.svg" alt="Handwritten: Missing elements (what would help)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-diagram.svg" alt="Diagram: Missing elements (what would help)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-diagram.svg" alt="Diagram: Missing elements (what would help)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-sticky.svg" alt="Sticky Note: Missing elements (what would help)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/missing-elements-what-would-help-sticky.svg" alt="Sticky Note: Missing elements (what would help)" width="30%">
 </a>
 
 - 
 ### Learning (what I learned from reading this)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" alt="Handwritten: Learning (what I learned from reading this)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-handwritten.svg" alt="Handwritten: Learning (what I learned from reading this)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" alt="Diagram: Learning (what I learned from reading this)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-diagram.svg" alt="Diagram: Learning (what I learned from reading this)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" alt="Sticky Note: Learning (what I learned from reading this)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/learning-what-i-learned-from-reading-this-sticky.svg" alt="Sticky Note: Learning (what I learned from reading this)" width="30%">
 </a>
 
 - `,
@@ -899,14 +899,14 @@ class PeerReviewSystem {
 
 ### Q7: How do you find your learning community?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-handwritten.svg" alt="Handwritten: How do you find your learning community?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-handwritten.svg" alt="Handwritten: How do you find your learning community?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-diagram.svg" alt="Diagram: How do you find your learning community?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-diagram.svg" alt="Diagram: How do you find your learning community?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-sticky.svg" alt="Sticky Note: How do you find your learning community?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-find-your-learning-community-sticky.svg" alt="Sticky Note: How do you find your learning community?" width="30%">
 </a>
 
 
@@ -989,14 +989,14 @@ class CommunityFinder {
 
 ### Q8: How do you avoid social learning pitfalls?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-handwritten.svg" alt="Handwritten: How do you avoid social learning pitfalls?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-handwritten.svg" alt="Handwritten: How do you avoid social learning pitfalls?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-diagram.svg" alt="Diagram: How do you avoid social learning pitfalls?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-diagram.svg" alt="Diagram: How do you avoid social learning pitfalls?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-sticky.svg" alt="Sticky Note: How do you avoid social learning pitfalls?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-avoid-social-learning-pitfalls-sticky.svg" alt="Sticky Note: How do you avoid social learning pitfalls?" width="30%">
 </a>
 
 
@@ -1109,14 +1109,14 @@ Rate yourself on each (1 = never, 5 = constantly):
 
 ### Q9: How do you use social media for learning without getting distracted?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-handwritten.svg" alt="Handwritten: How do you use social media for learning without getting distracted?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-handwritten.svg" alt="Handwritten: How do you use social media for learning without getting distracted?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-diagram.svg" alt="Diagram: How do you use social media for learning without getting distracted?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-diagram.svg" alt="Diagram: How do you use social media for learning without getting distracted?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-sticky.svg" alt="Sticky Note: How do you use social media for learning without getting distracted?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-use-social-media-for-learning-without-getting-distracted-sticky.svg" alt="Sticky Note: How do you use social media for learning without getting distracted?" width="30%">
 </a>
 
 
@@ -1228,14 +1228,14 @@ If below target: unfollow accounts that don't teach, set stricter time limits.`;
 
 ### Q10: How do you build a personal board of advisors for your learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-handwritten.svg" alt="Handwritten: How do you build a personal board of advisors for your learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-handwritten.svg" alt="Handwritten: How do you build a personal board of advisors for your learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-diagram.svg" alt="Diagram: How do you build a personal board of advisors for your learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-diagram.svg" alt="Diagram: How do you build a personal board of advisors for your learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-sticky.svg" alt="Sticky Note: How do you build a personal board of advisors for your learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/how-do-you-build-a-personal-board-of-advisors-for-your-learning-sticky.svg" alt="Sticky Note: How do you build a personal board of advisors for your learning?" width="30%">
 </a>
 
 
@@ -1360,14 +1360,14 @@ Best,
 
 ### Self-Assessment Quiz
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
 </a>
 
 

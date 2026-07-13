@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### Private Sector CTC Components
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-handwritten.svg" alt="Handwritten: Private Sector CTC Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-handwritten.svg" alt="Handwritten: Private Sector CTC Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-diagram.svg" alt="Diagram: Private Sector CTC Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-diagram.svg" alt="Diagram: Private Sector CTC Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-sticky.svg" alt="Sticky Note: Private Sector CTC Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-ctc-components-sticky.svg" alt="Sticky Note: Private Sector CTC Components" width="30%">
 </a>
 
 
@@ -50,14 +50,14 @@ flowchart TD
 
 ### Breaking Down a 12 LPA Private Sector Offer
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-handwritten.svg" alt="Handwritten: Breaking Down a 12 LPA Private Sector Offer" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-handwritten.svg" alt="Handwritten: Breaking Down a 12 LPA Private Sector Offer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-diagram.svg" alt="Diagram: Breaking Down a 12 LPA Private Sector Offer" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-diagram.svg" alt="Diagram: Breaking Down a 12 LPA Private Sector Offer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-sticky.svg" alt="Sticky Note: Breaking Down a 12 LPA Private Sector Offer" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/breaking-down-a-12-lpa-private-sector-offer-sticky.svg" alt="Sticky Note: Breaking Down a 12 LPA Private Sector Offer" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ flowchart TD
 
 ### Monthly In-Hand Calculation
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-handwritten.svg" alt="Handwritten: Monthly In-Hand Calculation" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-handwritten.svg" alt="Handwritten: Monthly In-Hand Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-diagram.svg" alt="Diagram: Monthly In-Hand Calculation" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-diagram.svg" alt="Diagram: Monthly In-Hand Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-sticky.svg" alt="Sticky Note: Monthly In-Hand Calculation" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/monthly-in-hand-calculation-sticky.svg" alt="Sticky Note: Monthly In-Hand Calculation" width="30%">
 </a>
 
 
@@ -103,14 +103,14 @@ flowchart TD
 
 ### Government Compensation Structure
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-handwritten.svg" alt="Handwritten: Government Compensation Structure" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-handwritten.svg" alt="Handwritten: Government Compensation Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-diagram.svg" alt="Diagram: Government Compensation Structure" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-diagram.svg" alt="Diagram: Government Compensation Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-sticky.svg" alt="Sticky Note: Government Compensation Structure" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-compensation-structure-sticky.svg" alt="Sticky Note: Government Compensation Structure" width="30%">
 </a>
 
 
@@ -149,14 +149,14 @@ flowchart TD
 
 ### PSU Salary Structure (E0 / Entry Level)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-handwritten.svg" alt="Handwritten: PSU Salary Structure (E0 / Entry Level)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-handwritten.svg" alt="Handwritten: PSU Salary Structure (E0 / Entry Level)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-diagram.svg" alt="Diagram: PSU Salary Structure (E0 / Entry Level)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-diagram.svg" alt="Diagram: PSU Salary Structure (E0 / Entry Level)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-sticky.svg" alt="Sticky Note: PSU Salary Structure (E0 / Entry Level)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-structure-e0-entry-level-sticky.svg" alt="Sticky Note: PSU Salary Structure (E0 / Entry Level)" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ flowchart TD
 
 ### PSU Additional Benefits
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-handwritten.svg" alt="Handwritten: PSU Additional Benefits" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-handwritten.svg" alt="Handwritten: PSU Additional Benefits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-diagram.svg" alt="Diagram: PSU Additional Benefits" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-diagram.svg" alt="Diagram: PSU Additional Benefits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-sticky.svg" alt="Sticky Note: PSU Additional Benefits" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-additional-benefits-sticky.svg" alt="Sticky Note: PSU Additional Benefits" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ flowchart TD
 
 ### When Can You Negotiate?
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-handwritten.svg" alt="Handwritten: When Can You Negotiate?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-handwritten.svg" alt="Handwritten: When Can You Negotiate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-diagram.svg" alt="Diagram: When Can You Negotiate?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-diagram.svg" alt="Diagram: When Can You Negotiate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-sticky.svg" alt="Sticky Note: When Can You Negotiate?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/when-can-you-negotiate-sticky.svg" alt="Sticky Note: When Can You Negotiate?" width="30%">
 </a>
 
 
@@ -225,14 +225,14 @@ flowchart TD
 
 ### Negotiation Timeline
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-handwritten.svg" alt="Handwritten: Negotiation Timeline" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-handwritten.svg" alt="Handwritten: Negotiation Timeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-diagram.svg" alt="Diagram: Negotiation Timeline" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-diagram.svg" alt="Diagram: Negotiation Timeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-sticky.svg" alt="Sticky Note: Negotiation Timeline" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-timeline-sticky.svg" alt="Sticky Note: Negotiation Timeline" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ flowchart LR
 
 ### Negotiation Scripts
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-handwritten.svg" alt="Handwritten: Negotiation Scripts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-handwritten.svg" alt="Handwritten: Negotiation Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-diagram.svg" alt="Diagram: Negotiation Scripts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-diagram.svg" alt="Diagram: Negotiation Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-sticky.svg" alt="Sticky Note: Negotiation Scripts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-scripts-sticky.svg" alt="Sticky Note: Negotiation Scripts" width="30%">
 </a>
 
 
@@ -334,14 +334,14 @@ within 6 months anyway]
 
 ### Negotiation Do's and Don'ts
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-handwritten.svg" alt="Handwritten: Negotiation Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-handwritten.svg" alt="Handwritten: Negotiation Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-diagram.svg" alt="Diagram: Negotiation Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-diagram.svg" alt="Diagram: Negotiation Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-sticky.svg" alt="Sticky Note: Negotiation Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-do-s-and-don-ts-sticky.svg" alt="Sticky Note: Negotiation Do's and Don'ts" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ within 6 months anyway]
 
 ### Negotiation Leverage Points
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-handwritten.svg" alt="Handwritten: Negotiation Leverage Points" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-handwritten.svg" alt="Handwritten: Negotiation Leverage Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-diagram.svg" alt="Diagram: Negotiation Leverage Points" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-diagram.svg" alt="Diagram: Negotiation Leverage Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-sticky.svg" alt="Sticky Note: Negotiation Leverage Points" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-leverage-points-sticky.svg" alt="Sticky Note: Negotiation Leverage Points" width="30%">
 </a>
 
 
@@ -384,14 +384,14 @@ within 6 months anyway]
 
 ### Private Sector Negotiable Components
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-handwritten.svg" alt="Handwritten: Private Sector Negotiable Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-handwritten.svg" alt="Handwritten: Private Sector Negotiable Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-diagram.svg" alt="Diagram: Private Sector Negotiable Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-diagram.svg" alt="Diagram: Private Sector Negotiable Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-sticky.svg" alt="Sticky Note: Private Sector Negotiable Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-negotiable-components-sticky.svg" alt="Sticky Note: Private Sector Negotiable Components" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ within 6 months anyway]
 
 ### Government/PSU Non-Negotiable Components
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-handwritten.svg" alt="Handwritten: Government/PSU Non-Negotiable Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-handwritten.svg" alt="Handwritten: Government/PSU Non-Negotiable Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-diagram.svg" alt="Diagram: Government/PSU Non-Negotiable Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-diagram.svg" alt="Diagram: Government/PSU Non-Negotiable Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-sticky.svg" alt="Sticky Note: Government/PSU Non-Negotiable Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-psu-non-negotiable-components-sticky.svg" alt="Sticky Note: Government/PSU Non-Negotiable Components" width="30%">
 </a>
 
 
@@ -433,14 +433,14 @@ within 6 months anyway]
 
 ### Private Sector Fixed Components (Rarely Negotiable)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-handwritten.svg" alt="Handwritten: Private Sector Fixed Components (Rarely Negotiable)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-handwritten.svg" alt="Handwritten: Private Sector Fixed Components (Rarely Negotiable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-diagram.svg" alt="Diagram: Private Sector Fixed Components (Rarely Negotiable)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-diagram.svg" alt="Diagram: Private Sector Fixed Components (Rarely Negotiable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-sticky.svg" alt="Sticky Note: Private Sector Fixed Components (Rarely Negotiable)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-fixed-components-rarely-negotiable-sticky.svg" alt="Sticky Note: Private Sector Fixed Components (Rarely Negotiable)" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ console.log(comparator.displayComparison(compare2));
 
 ### Private Sector Career Ladder
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-handwritten.svg" alt="Handwritten: Private Sector Career Ladder" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-handwritten.svg" alt="Handwritten: Private Sector Career Ladder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-diagram.svg" alt="Diagram: Private Sector Career Ladder" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-diagram.svg" alt="Diagram: Private Sector Career Ladder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-sticky.svg" alt="Sticky Note: Private Sector Career Ladder" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/private-sector-career-ladder-sticky.svg" alt="Sticky Note: Private Sector Career Ladder" width="30%">
 </a>
 
 
@@ -720,14 +720,14 @@ flowchart TD
 
 ### Salary Progression — Private Sector (by Level)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-handwritten.svg" alt="Handwritten: Salary Progression — Private Sector (by Level)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-handwritten.svg" alt="Handwritten: Salary Progression — Private Sector (by Level)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-diagram.svg" alt="Diagram: Salary Progression — Private Sector (by Level)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-diagram.svg" alt="Diagram: Salary Progression — Private Sector (by Level)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-sticky.svg" alt="Sticky Note: Salary Progression — Private Sector (by Level)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-progression-private-sector-by-level-sticky.svg" alt="Sticky Note: Salary Progression — Private Sector (by Level)" width="30%">
 </a>
 
 
@@ -744,14 +744,14 @@ flowchart TD
 
 ### PSU Career Progression
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-handwritten.svg" alt="Handwritten: PSU Career Progression" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-handwritten.svg" alt="Handwritten: PSU Career Progression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-diagram.svg" alt="Diagram: PSU Career Progression" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-diagram.svg" alt="Diagram: PSU Career Progression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-sticky.svg" alt="Sticky Note: PSU Career Progression" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-career-progression-sticky.svg" alt="Sticky Note: PSU Career Progression" width="30%">
 </a>
 
 
@@ -770,14 +770,14 @@ flowchart TD
 
 ### PSU Salary — Pay Scales by Grade
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-handwritten.svg" alt="Handwritten: PSU Salary — Pay Scales by Grade" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-handwritten.svg" alt="Handwritten: PSU Salary — Pay Scales by Grade" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-diagram.svg" alt="Diagram: PSU Salary — Pay Scales by Grade" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-diagram.svg" alt="Diagram: PSU Salary — Pay Scales by Grade" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-sticky.svg" alt="Sticky Note: PSU Salary — Pay Scales by Grade" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/psu-salary-pay-scales-by-grade-sticky.svg" alt="Sticky Note: PSU Salary — Pay Scales by Grade" width="30%">
 </a>
 
 
@@ -794,14 +794,14 @@ flowchart TD
 
 ### Government (7th CPC) — Career Progression
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-handwritten.svg" alt="Handwritten: Government (7th CPC) — Career Progression" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-handwritten.svg" alt="Handwritten: Government (7th CPC) — Career Progression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-diagram.svg" alt="Diagram: Government (7th CPC) — Career Progression" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-diagram.svg" alt="Diagram: Government (7th CPC) — Career Progression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-sticky.svg" alt="Sticky Note: Government (7th CPC) — Career Progression" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/government-7th-cpc-career-progression-sticky.svg" alt="Sticky Note: Government (7th CPC) — Career Progression" width="30%">
 </a>
 
 
@@ -819,14 +819,14 @@ flowchart TD
 
 ### Horizontal vs Vertical Growth
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-handwritten.svg" alt="Handwritten: Horizontal vs Vertical Growth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-handwritten.svg" alt="Handwritten: Horizontal vs Vertical Growth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-diagram.svg" alt="Diagram: Horizontal vs Vertical Growth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-diagram.svg" alt="Diagram: Horizontal vs Vertical Growth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-sticky.svg" alt="Sticky Note: Horizontal vs Vertical Growth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/horizontal-vs-vertical-growth-sticky.svg" alt="Sticky Note: Horizontal vs Vertical Growth" width="30%">
 </a>
 
 
@@ -866,14 +866,14 @@ flowchart TD
 
 ### Skill Categories for Career Growth
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-handwritten.svg" alt="Handwritten: Skill Categories for Career Growth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-handwritten.svg" alt="Handwritten: Skill Categories for Career Growth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-diagram.svg" alt="Diagram: Skill Categories for Career Growth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-diagram.svg" alt="Diagram: Skill Categories for Career Growth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-sticky.svg" alt="Sticky Note: Skill Categories for Career Growth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/skill-categories-for-career-growth-sticky.svg" alt="Sticky Note: Skill Categories for Career Growth" width="30%">
 </a>
 
 
@@ -903,14 +903,14 @@ flowchart TD
 
 ### Phase-Wise Upskilling Timeline
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-handwritten.svg" alt="Handwritten: Phase-Wise Upskilling Timeline" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-handwritten.svg" alt="Handwritten: Phase-Wise Upskilling Timeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-diagram.svg" alt="Diagram: Phase-Wise Upskilling Timeline" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-diagram.svg" alt="Diagram: Phase-Wise Upskilling Timeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-sticky.svg" alt="Sticky Note: Phase-Wise Upskilling Timeline" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/phase-wise-upskilling-timeline-sticky.svg" alt="Sticky Note: Phase-Wise Upskilling Timeline" width="30%">
 </a>
 
 
@@ -924,14 +924,14 @@ flowchart TD
 
 ### Certifications for Career Growth (2026)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-handwritten.svg" alt="Handwritten: Certifications for Career Growth (2026)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-handwritten.svg" alt="Handwritten: Certifications for Career Growth (2026)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-diagram.svg" alt="Diagram: Certifications for Career Growth (2026)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-diagram.svg" alt="Diagram: Certifications for Career Growth (2026)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-sticky.svg" alt="Sticky Note: Certifications for Career Growth (2026)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/certifications-for-career-growth-2026-sticky.svg" alt="Sticky Note: Certifications for Career Growth (2026)" width="30%">
 </a>
 
 
@@ -963,14 +963,14 @@ flowchart TD
 
 ### Industry-Specific Upskilling
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-handwritten.svg" alt="Handwritten: Industry-Specific Upskilling" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-handwritten.svg" alt="Handwritten: Industry-Specific Upskilling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-diagram.svg" alt="Diagram: Industry-Specific Upskilling" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-diagram.svg" alt="Diagram: Industry-Specific Upskilling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-sticky.svg" alt="Sticky Note: Industry-Specific Upskilling" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/industry-specific-upskilling-sticky.svg" alt="Sticky Note: Industry-Specific Upskilling" width="30%">
 </a>
 
 
@@ -988,14 +988,14 @@ flowchart TD
 
 ### Decision Framework: Private vs Government vs PSU
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-handwritten.svg" alt="Handwritten: Decision Framework: Private vs Government vs PSU" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-handwritten.svg" alt="Handwritten: Decision Framework: Private vs Government vs PSU" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-diagram.svg" alt="Diagram: Decision Framework: Private vs Government vs PSU" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-diagram.svg" alt="Diagram: Decision Framework: Private vs Government vs PSU" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-sticky.svg" alt="Sticky Note: Decision Framework: Private vs Government vs PSU" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-framework-private-vs-government-vs-psu-sticky.svg" alt="Sticky Note: Decision Framework: Private vs Government vs PSU" width="30%">
 </a>
 
 
@@ -1019,14 +1019,14 @@ flowchart TD
 
 ### Decision Matrix Template
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-handwritten.svg" alt="Handwritten: Decision Matrix Template" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-handwritten.svg" alt="Handwritten: Decision Matrix Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-diagram.svg" alt="Diagram: Decision Matrix Template" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-diagram.svg" alt="Diagram: Decision Matrix Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-sticky.svg" alt="Sticky Note: Decision Matrix Template" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/decision-matrix-template-sticky.svg" alt="Sticky Note: Decision Matrix Template" width="30%">
 </a>
 
 
@@ -1049,14 +1049,14 @@ flowchart TD
 
 ### Tax Planning for Salary Components
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-handwritten.svg" alt="Handwritten: Tax Planning for Salary Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-handwritten.svg" alt="Handwritten: Tax Planning for Salary Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-diagram.svg" alt="Diagram: Tax Planning for Salary Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-diagram.svg" alt="Diagram: Tax Planning for Salary Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-sticky.svg" alt="Sticky Note: Tax Planning for Salary Components" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-planning-for-salary-components-sticky.svg" alt="Sticky Note: Tax Planning for Salary Components" width="30%">
 </a>
 
 
@@ -1075,14 +1075,14 @@ flowchart TD
 
 ### Annual CTC Reconciliation
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-handwritten.svg" alt="Handwritten: Annual CTC Reconciliation" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-handwritten.svg" alt="Handwritten: Annual CTC Reconciliation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-diagram.svg" alt="Diagram: Annual CTC Reconciliation" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-diagram.svg" alt="Diagram: Annual CTC Reconciliation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-sticky.svg" alt="Sticky Note: Annual CTC Reconciliation" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/annual-ctc-reconciliation-sticky.svg" alt="Sticky Note: Annual CTC Reconciliation" width="30%">
 </a>
 
 
@@ -1106,14 +1106,14 @@ Effective Tax Rate ≈ (Total Tax / Total CTC) × 100
 
 ### Negotiation Cheat Sheet
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-handwritten.svg" alt="Handwritten: Negotiation Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-handwritten.svg" alt="Handwritten: Negotiation Cheat Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-diagram.svg" alt="Diagram: Negotiation Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-diagram.svg" alt="Diagram: Negotiation Cheat Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-sticky.svg" alt="Sticky Note: Negotiation Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/negotiation-cheat-sheet-sticky.svg" alt="Sticky Note: Negotiation Cheat Sheet" width="30%">
 </a>
 
 
@@ -1130,14 +1130,14 @@ Effective Tax Rate ≈ (Total Tax / Total CTC) × 100
 
 ### Promotion Preparation Checklist
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-handwritten.svg" alt="Handwritten: Promotion Preparation Checklist" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-handwritten.svg" alt="Handwritten: Promotion Preparation Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-diagram.svg" alt="Diagram: Promotion Preparation Checklist" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-diagram.svg" alt="Diagram: Promotion Preparation Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-sticky.svg" alt="Sticky Note: Promotion Preparation Checklist" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-preparation-checklist-sticky.svg" alt="Sticky Note: Promotion Preparation Checklist" width="30%">
 </a>
 
 
@@ -1169,14 +1169,14 @@ Salary negotiation and career growth planning require a strategic approach. For 
 
 ### Understanding Each Component
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-handwritten.svg" alt="Handwritten: Understanding Each Component" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-handwritten.svg" alt="Handwritten: Understanding Each Component" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-diagram.svg" alt="Diagram: Understanding Each Component" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-diagram.svg" alt="Diagram: Understanding Each Component" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-sticky.svg" alt="Sticky Note: Understanding Each Component" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/understanding-each-component-sticky.svg" alt="Sticky Note: Understanding Each Component" width="30%">
 </a>
 
 
@@ -1241,14 +1241,14 @@ Salary negotiation and career growth planning require a strategic approach. For 
 
 ### Tax Optimization Strategies
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-handwritten.svg" alt="Handwritten: Tax Optimization Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-handwritten.svg" alt="Handwritten: Tax Optimization Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-diagram.svg" alt="Diagram: Tax Optimization Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-diagram.svg" alt="Diagram: Tax Optimization Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-sticky.svg" alt="Sticky Note: Tax Optimization Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/tax-optimization-strategies-sticky.svg" alt="Sticky Note: Tax Optimization Strategies" width="30%">
 </a>
 
 
@@ -1285,14 +1285,14 @@ Salary negotiation and career growth planning require a strategic approach. For 
 
 ### Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-handwritten.svg" alt="Handwritten: Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-handwritten.svg" alt="Handwritten: Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-diagram.svg" alt="Diagram: Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-diagram.svg" alt="Diagram: Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-sticky.svg" alt="Sticky Note: Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-1-fresher-campus-offer-4-5-lpa-from-tcs-sticky.svg" alt="Sticky Note: Scenario 1: Fresher Campus Offer (4.5 LPA from TCS)" width="30%">
 </a>
 
 Situation: Standard offer, no competing offers
@@ -1303,14 +1303,14 @@ Expected outcome: Likely no change in base salary. Maybe Rs. 25,000-50,000 joini
 
 ### Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-handwritten.svg" alt="Handwritten: Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-handwritten.svg" alt="Handwritten: Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-diagram.svg" alt="Diagram: Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-diagram.svg" alt="Diagram: Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-sticky.svg" alt="Sticky Note: Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-2-experienced-switch-current-8-lpa-new-offer-12-lpa-sticky.svg" alt="Sticky Note: Scenario 2: Experienced Switch (Current 8 LPA, New Offer 12 LPA)" width="30%">
 </a>
 
 Situation: 3 years experience. Target company offered 12 LPA.
@@ -1321,14 +1321,14 @@ Expected outcome: Likely settle at 13-13.5 LPA
 
 ### Scenario 3: Multiple Competing Offers
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-handwritten.svg" alt="Handwritten: Scenario 3: Multiple Competing Offers" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-handwritten.svg" alt="Handwritten: Scenario 3: Multiple Competing Offers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-diagram.svg" alt="Diagram: Scenario 3: Multiple Competing Offers" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-diagram.svg" alt="Diagram: Scenario 3: Multiple Competing Offers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-sticky.svg" alt="Sticky Note: Scenario 3: Multiple Competing Offers" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-3-multiple-competing-offers-sticky.svg" alt="Sticky Note: Scenario 3: Multiple Competing Offers" width="30%">
 </a>
 
 Situation: Company A offered 20 LPA, Company B offered 22 LPA. Target Company C at 18 LPA.
@@ -1339,14 +1339,14 @@ Expected outcome: Likely 20-22 LPA from C
 
 ### Scenario 4: Government Employee Getting Private Offer
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-handwritten.svg" alt="Handwritten: Scenario 4: Government Employee Getting Private Offer" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-handwritten.svg" alt="Handwritten: Scenario 4: Government Employee Getting Private Offer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-diagram.svg" alt="Diagram: Scenario 4: Government Employee Getting Private Offer" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-diagram.svg" alt="Diagram: Scenario 4: Government Employee Getting Private Offer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-sticky.svg" alt="Sticky Note: Scenario 4: Government Employee Getting Private Offer" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-4-government-employee-getting-private-offer-sticky.svg" alt="Sticky Note: Scenario 4: Government Employee Getting Private Offer" width="30%">
 </a>
 
 Situation: NIC Scientist at Level 7 (~9 LPA). Private offer at 18 LPA.
@@ -1356,14 +1356,14 @@ Expected outcome: 18-22 LPA depending on skills and performance
 
 ### Scenario 5: Internal Promotion Without Adequate Raise
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-handwritten.svg" alt="Handwritten: Scenario 5: Internal Promotion Without Adequate Raise" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-handwritten.svg" alt="Handwritten: Scenario 5: Internal Promotion Without Adequate Raise" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-diagram.svg" alt="Diagram: Scenario 5: Internal Promotion Without Adequate Raise" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-diagram.svg" alt="Diagram: Scenario 5: Internal Promotion Without Adequate Raise" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-sticky.svg" alt="Sticky Note: Scenario 5: Internal Promotion Without Adequate Raise" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/scenario-5-internal-promotion-without-adequate-raise-sticky.svg" alt="Sticky Note: Scenario 5: Internal Promotion Without Adequate Raise" width="30%">
 </a>
 
 Situation: Promoted from Senior to Lead Engineer but offered only 10% hike.
@@ -1375,14 +1375,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Investment Strategy by Career Stage
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-handwritten.svg" alt="Handwritten: Investment Strategy by Career Stage" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-handwritten.svg" alt="Handwritten: Investment Strategy by Career Stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-diagram.svg" alt="Diagram: Investment Strategy by Career Stage" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-diagram.svg" alt="Diagram: Investment Strategy by Career Stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-sticky.svg" alt="Sticky Note: Investment Strategy by Career Stage" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/investment-strategy-by-career-stage-sticky.svg" alt="Sticky Note: Investment Strategy by Career Stage" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Promotion Criteria in PSUs
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-handwritten.svg" alt="Handwritten: Promotion Criteria in PSUs" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-handwritten.svg" alt="Handwritten: Promotion Criteria in PSUs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-diagram.svg" alt="Diagram: Promotion Criteria in PSUs" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-diagram.svg" alt="Diagram: Promotion Criteria in PSUs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-sticky.svg" alt="Sticky Note: Promotion Criteria in PSUs" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/promotion-criteria-in-psus-sticky.svg" alt="Sticky Note: Promotion Criteria in PSUs" width="30%">
 </a>
 
 1. Time-bound promotions up to E3 level typically
@@ -1415,14 +1415,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Transfer Policy
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-handwritten.svg" alt="Handwritten: Transfer Policy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-handwritten.svg" alt="Handwritten: Transfer Policy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-diagram.svg" alt="Diagram: Transfer Policy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-diagram.svg" alt="Diagram: Transfer Policy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-sticky.svg" alt="Sticky Note: Transfer Policy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/transfer-policy-sticky.svg" alt="Sticky Note: Transfer Policy" width="30%">
 </a>
 
 1. Rotational transfers every 3-5 years for PSU officers
@@ -1435,14 +1435,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Notice Period Norms by Sector
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-handwritten.svg" alt="Handwritten: Notice Period Norms by Sector" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-handwritten.svg" alt="Handwritten: Notice Period Norms by Sector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-diagram.svg" alt="Diagram: Notice Period Norms by Sector" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-diagram.svg" alt="Diagram: Notice Period Norms by Sector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-sticky.svg" alt="Sticky Note: Notice Period Norms by Sector" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/notice-period-norms-by-sector-sticky.svg" alt="Sticky Note: Notice Period Norms by Sector" width="30%">
 </a>
 
 | Sector | Typical Notice Period | Buyout Possible? |
@@ -1456,14 +1456,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Resignation Best Practices
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-handwritten.svg" alt="Handwritten: Resignation Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-handwritten.svg" alt="Handwritten: Resignation Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-diagram.svg" alt="Diagram: Resignation Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-diagram.svg" alt="Diagram: Resignation Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-sticky.svg" alt="Sticky Note: Resignation Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/resignation-best-practices-sticky.svg" alt="Sticky Note: Resignation Best Practices" width="30%">
 </a>
 
 1. Give written notice on official email + HR portal
@@ -1479,14 +1479,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Internal Networking Strategy
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-handwritten.svg" alt="Handwritten: Internal Networking Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-handwritten.svg" alt="Handwritten: Internal Networking Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-diagram.svg" alt="Diagram: Internal Networking Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-diagram.svg" alt="Diagram: Internal Networking Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-sticky.svg" alt="Sticky Note: Internal Networking Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/internal-networking-strategy-sticky.svg" alt="Sticky Note: Internal Networking Strategy" width="30%">
 </a>
 
 | Level | Network Size | Key People |
@@ -1498,14 +1498,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### External Networking Plan
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-handwritten.svg" alt="Handwritten: External Networking Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-handwritten.svg" alt="Handwritten: External Networking Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-diagram.svg" alt="Diagram: External Networking Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-diagram.svg" alt="Diagram: External Networking Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-sticky.svg" alt="Sticky Note: External Networking Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/external-networking-plan-sticky.svg" alt="Sticky Note: External Networking Plan" width="30%">
 </a>
 
 1. Attend 2 conferences per year (present at one)
@@ -1520,14 +1520,14 @@ Expected outcome: 15-25% hike or decision to leave
 
 ### Salary Hike Expectations (Job Switch)
 
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-handwritten.svg" alt="Handwritten: Salary Hike Expectations (Job Switch)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-handwritten.svg" alt="Handwritten: Salary Hike Expectations (Job Switch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-diagram.svg" alt="Diagram: Salary Hike Expectations (Job Switch)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-diagram.svg" alt="Diagram: Salary Hike Expectations (Job Switch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-sticky.svg" alt="Sticky Note: Salary Hike Expectations (Job Switch)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/05-offer-negotiation-career-growth/salary-hike-expectations-job-switch-sticky.svg" alt="Sticky Note: Salary Hike Expectations (Job Switch)" width="30%">
 </a>
 
 | Current LPA | Min Hike | Normal Hike | Max Hike |

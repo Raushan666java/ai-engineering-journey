@@ -61,14 +61,14 @@ flowchart LR
 
 ### 6.1 The Greedy Paradigm
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-handwritten.svg" alt="Handwritten: 6.1 The Greedy Paradigm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-handwritten.svg" alt="Handwritten: 6.1 The Greedy Paradigm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-diagram.svg" alt="Diagram: 6.1 The Greedy Paradigm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-diagram.svg" alt="Diagram: 6.1 The Greedy Paradigm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-sticky.svg" alt="Sticky Note: 6.1 The Greedy Paradigm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-1-the-greedy-paradigm-sticky.svg" alt="Sticky Note: 6.1 The Greedy Paradigm" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ A greedy algorithm makes the locally optimal choice at each step, hoping that lo
 
 ### 6.2 Activity Selection
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-handwritten.svg" alt="Handwritten: 6.2 Activity Selection" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-handwritten.svg" alt="Handwritten: 6.2 Activity Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-diagram.svg" alt="Diagram: 6.2 Activity Selection" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-diagram.svg" alt="Diagram: 6.2 Activity Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-sticky.svg" alt="Sticky Note: 6.2 Activity Selection" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-2-activity-selection-sticky.svg" alt="Sticky Note: 6.2 Activity Selection" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ public static List<Integer> activitySelection(List<Activity> acts) {
 
 ### 6.3 Huffman Coding
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-handwritten.svg" alt="Handwritten: 6.3 Huffman Coding" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-handwritten.svg" alt="Handwritten: 6.3 Huffman Coding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-diagram.svg" alt="Diagram: 6.3 Huffman Coding" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-diagram.svg" alt="Diagram: 6.3 Huffman Coding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-sticky.svg" alt="Sticky Note: 6.3 Huffman Coding" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-3-huffman-coding-sticky.svg" alt="Sticky Note: 6.3 Huffman Coding" width="30%">
 </a>
 
 
@@ -471,14 +471,14 @@ static void encode(HuffmanNode n, String s, Map<Character, String> codes) {
 
 ### 6.4 Fractional Knapsack
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-handwritten.svg" alt="Handwritten: 6.4 Fractional Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-handwritten.svg" alt="Handwritten: 6.4 Fractional Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-diagram.svg" alt="Diagram: 6.4 Fractional Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-diagram.svg" alt="Diagram: 6.4 Fractional Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-sticky.svg" alt="Sticky Note: 6.4 Fractional Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-4-fractional-knapsack-sticky.svg" alt="Sticky Note: 6.4 Fractional Knapsack" width="30%">
 </a>
 
 
@@ -643,14 +643,14 @@ public static double fractionalKnapsack(Item[] items, double W) {
 
 ### 6.5 Job Sequencing with Deadlines
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-handwritten.svg" alt="Handwritten: 6.5 Job Sequencing with Deadlines" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-handwritten.svg" alt="Handwritten: 6.5 Job Sequencing with Deadlines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-diagram.svg" alt="Diagram: 6.5 Job Sequencing with Deadlines" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-diagram.svg" alt="Diagram: 6.5 Job Sequencing with Deadlines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-sticky.svg" alt="Sticky Note: 6.5 Job Sequencing with Deadlines" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-5-job-sequencing-with-deadlines-sticky.svg" alt="Sticky Note: 6.5 Job Sequencing with Deadlines" width="30%">
 </a>
 
 
@@ -816,14 +816,14 @@ public static int jobSequencing(Job[] jobs) {
 
 ### 6.6 Canonical Coin Change
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-handwritten.svg" alt="Handwritten: 6.6 Canonical Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-handwritten.svg" alt="Handwritten: 6.6 Canonical Coin Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-diagram.svg" alt="Diagram: 6.6 Canonical Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-diagram.svg" alt="Diagram: 6.6 Canonical Coin Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-sticky.svg" alt="Sticky Note: 6.6 Canonical Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-6-canonical-coin-change-sticky.svg" alt="Sticky Note: 6.6 Canonical Coin Change" width="30%">
 </a>
 
 
@@ -960,14 +960,14 @@ public static int coinChange(int[] denoms, int amount) {
 
 ### 6.7 Greedy vs. Dynamic Programming
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-handwritten.svg" alt="Handwritten: 6.7 Greedy vs. Dynamic Programming" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-handwritten.svg" alt="Handwritten: 6.7 Greedy vs. Dynamic Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-diagram.svg" alt="Diagram: 6.7 Greedy vs. Dynamic Programming" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-diagram.svg" alt="Diagram: 6.7 Greedy vs. Dynamic Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-sticky.svg" alt="Sticky Note: 6.7 Greedy vs. Dynamic Programming" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-7-greedy-vs-dynamic-programming-sticky.svg" alt="Sticky Note: 6.7 Greedy vs. Dynamic Programming" width="30%">
 </a>
 
 
@@ -1004,14 +1004,14 @@ The most common confusion in algorithm design is when to use greedy vs. dynamic 
 
 ### 6.8 Exchange Argument — The Proof Technique
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-handwritten.svg" alt="Handwritten: 6.8 Exchange Argument — The Proof Technique" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-handwritten.svg" alt="Handwritten: 6.8 Exchange Argument — The Proof Technique" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-diagram.svg" alt="Diagram: 6.8 Exchange Argument — The Proof Technique" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-diagram.svg" alt="Diagram: 6.8 Exchange Argument — The Proof Technique" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-sticky.svg" alt="Sticky Note: 6.8 Exchange Argument — The Proof Technique" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-8-exchange-argument-the-proof-technique-sticky.svg" alt="Sticky Note: 6.8 Exchange Argument — The Proof Technique" width="30%">
 </a>
 
 
@@ -1056,14 +1056,14 @@ An exchange argument must show the swap does not break feasibility. This is the 
 
 ### 6.9 Interview Corner
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-handwritten.svg" alt="Handwritten: 6.9 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-handwritten.svg" alt="Handwritten: 6.9 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-diagram.svg" alt="Diagram: 6.9 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-diagram.svg" alt="Diagram: 6.9 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-sticky.svg" alt="Sticky Note: 6.9 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-9-interview-corner-sticky.svg" alt="Sticky Note: 6.9 Interview Corner" width="30%">
 </a>
 
 
@@ -1099,14 +1099,14 @@ Greedy algorithms are a favorite interview topic because they test whether a can
 
 ### 6.10 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-handwritten.svg" alt="Handwritten: 6.10 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-handwritten.svg" alt="Handwritten: 6.10 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-diagram.svg" alt="Diagram: 6.10 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-diagram.svg" alt="Diagram: 6.10 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-sticky.svg" alt="Sticky Note: 6.10 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/06-greedy/6-10-applications-in-real-systems-sticky.svg" alt="Sticky Note: 6.10 Applications in Real Systems" width="30%">
 </a>
 
 

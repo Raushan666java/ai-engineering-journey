@@ -41,14 +41,14 @@ graph LR
 
 ### Project Domain: SmartBuild Construction Management System
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-handwritten.svg" alt="Handwritten: Project Domain: SmartBuild Construction Management System" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-handwritten.svg" alt="Handwritten: Project Domain: SmartBuild Construction Management System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-diagram.svg" alt="Diagram: Project Domain: SmartBuild Construction Management System" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-diagram.svg" alt="Diagram: Project Domain: SmartBuild Construction Management System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-sticky.svg" alt="Sticky Note: Project Domain: SmartBuild Construction Management System" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/project-domain-smartbuild-construction-management-system-sticky.svg" alt="Sticky Note: Project Domain: SmartBuild Construction Management System" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@ graph LR
 
 ### Process Model
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/process-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/process-model-handwritten.svg" alt="Handwritten: Process Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/process-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/process-model-handwritten.svg" alt="Handwritten: Process Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/process-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/process-model-diagram.svg" alt="Diagram: Process Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/process-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/process-model-diagram.svg" alt="Diagram: Process Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/process-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/process-model-sticky.svg" alt="Sticky Note: Process Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/process-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/process-model-sticky.svg" alt="Sticky Note: Process Model" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ gantt
 
 ### Scrum Configuration
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-handwritten.svg" alt="Handwritten: Scrum Configuration" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-handwritten.svg" alt="Handwritten: Scrum Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-diagram.svg" alt="Diagram: Scrum Configuration" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-diagram.svg" alt="Diagram: Scrum Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-sticky.svg" alt="Sticky Note: Scrum Configuration" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/scrum-configuration-sticky.svg" alt="Sticky Note: Scrum Configuration" width="30%">
 </a>
 
 
@@ -134,14 +134,14 @@ gantt
 
 ### Work Breakdown Structure (WBS)
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-handwritten.svg" alt="Handwritten: Work Breakdown Structure (WBS)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-handwritten.svg" alt="Handwritten: Work Breakdown Structure (WBS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-diagram.svg" alt="Diagram: Work Breakdown Structure (WBS)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-diagram.svg" alt="Diagram: Work Breakdown Structure (WBS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-sticky.svg" alt="Sticky Note: Work Breakdown Structure (WBS)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/work-breakdown-structure-wbs-sticky.svg" alt="Sticky Note: Work Breakdown Structure (WBS)" width="30%">
 </a>
 
 
@@ -174,14 +174,14 @@ gantt
 
 ### Milestones
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/milestones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/milestones-handwritten.svg" alt="Handwritten: Milestones" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/milestones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/milestones-handwritten.svg" alt="Handwritten: Milestones" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/milestones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/milestones-diagram.svg" alt="Diagram: Milestones" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/milestones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/milestones-diagram.svg" alt="Diagram: Milestones" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/milestones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/milestones-sticky.svg" alt="Sticky Note: Milestones" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/milestones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/milestones-sticky.svg" alt="Sticky Note: Milestones" width="30%">
 </a>
 
 
@@ -198,14 +198,14 @@ gantt
 
 ### Functional Requirements (20+)
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-handwritten.svg" alt="Handwritten: Functional Requirements (20+)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-handwritten.svg" alt="Handwritten: Functional Requirements (20+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-diagram.svg" alt="Diagram: Functional Requirements (20+)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-diagram.svg" alt="Diagram: Functional Requirements (20+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-sticky.svg" alt="Sticky Note: Functional Requirements (20+)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/functional-requirements-20-sticky.svg" alt="Sticky Note: Functional Requirements (20+)" width="30%">
 </a>
 
 
@@ -236,14 +236,14 @@ gantt
 
 ### Non-Functional Requirements (10+)
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-handwritten.svg" alt="Handwritten: Non-Functional Requirements (10+)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-handwritten.svg" alt="Handwritten: Non-Functional Requirements (10+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-diagram.svg" alt="Diagram: Non-Functional Requirements (10+)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-diagram.svg" alt="Diagram: Non-Functional Requirements (10+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-sticky.svg" alt="Sticky Note: Non-Functional Requirements (10+)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/non-functional-requirements-10-sticky.svg" alt="Sticky Note: Non-Functional Requirements (10+)" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ gantt
 
 ### User Stories
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/user-stories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/user-stories-handwritten.svg" alt="Handwritten: User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/user-stories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/user-stories-handwritten.svg" alt="Handwritten: User Stories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/user-stories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/user-stories-diagram.svg" alt="Diagram: User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/user-stories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/user-stories-diagram.svg" alt="Diagram: User Stories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/user-stories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/user-stories-sticky.svg" alt="Sticky Note: User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/user-stories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/user-stories-sticky.svg" alt="Sticky Note: User Stories" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ US-10: As a contractor, I want to log daily site activities so that I have a rec
 
 ### Use Cases
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/use-cases-handwritten.svg" alt="Handwritten: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/use-cases-diagram.svg" alt="Diagram: Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/use-cases-sticky.svg" alt="Sticky Note: Use Cases" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ US-10: As a contractor, I want to log daily site activities so that I have a rec
 
 ### System Architecture Overview
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-handwritten.svg" alt="Handwritten: System Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-handwritten.svg" alt="Handwritten: System Architecture Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-diagram.svg" alt="Diagram: System Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-diagram.svg" alt="Diagram: System Architecture Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-sticky.svg" alt="Sticky Note: System Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/system-architecture-overview-sticky.svg" alt="Sticky Note: System Architecture Overview" width="30%">
 </a>
 
 
@@ -426,14 +426,14 @@ graph TD
 
 ### Architecture Style: Microservices + Event-Driven + CQRS
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-handwritten.svg" alt="Handwritten: Architecture Style: Microservices + Event-Driven + CQRS" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-handwritten.svg" alt="Handwritten: Architecture Style: Microservices + Event-Driven + CQRS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-diagram.svg" alt="Diagram: Architecture Style: Microservices + Event-Driven + CQRS" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-diagram.svg" alt="Diagram: Architecture Style: Microservices + Event-Driven + CQRS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-sticky.svg" alt="Sticky Note: Architecture Style: Microservices + Event-Driven + CQRS" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/architecture-style-microservices-event-driven-cqrs-sticky.svg" alt="Sticky Note: Architecture Style: Microservices + Event-Driven + CQRS" width="30%">
 </a>
 
 
@@ -448,14 +448,14 @@ graph TD
 
 ### 4-Layer Architecture
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-handwritten.svg" alt="Handwritten: 4-Layer Architecture" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-handwritten.svg" alt="Handwritten: 4-Layer Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-diagram.svg" alt="Diagram: 4-Layer Architecture" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-diagram.svg" alt="Diagram: 4-Layer Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-sticky.svg" alt="Sticky Note: 4-Layer Architecture" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/4-layer-architecture-sticky.svg" alt="Sticky Note: 4-Layer Architecture" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@ graph TD
 
 ### Technology Stack
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-handwritten.svg" alt="Handwritten: Technology Stack" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-handwritten.svg" alt="Handwritten: Technology Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-diagram.svg" alt="Diagram: Technology Stack" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-diagram.svg" alt="Diagram: Technology Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-sticky.svg" alt="Sticky Note: Technology Stack" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/technology-stack-sticky.svg" alt="Sticky Note: Technology Stack" width="30%">
 </a>
 
 
@@ -532,14 +532,14 @@ graph TD
 
 ### Service Boundaries
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-handwritten.svg" alt="Handwritten: Service Boundaries" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-handwritten.svg" alt="Handwritten: Service Boundaries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-diagram.svg" alt="Diagram: Service Boundaries" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-diagram.svg" alt="Diagram: Service Boundaries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-sticky.svg" alt="Sticky Note: Service Boundaries" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/service-boundaries-sticky.svg" alt="Sticky Note: Service Boundaries" width="30%">
 </a>
 
 
@@ -558,14 +558,14 @@ graph TD
 
 ### Domain Model
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/domain-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/domain-model-handwritten.svg" alt="Handwritten: Domain Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/domain-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/domain-model-handwritten.svg" alt="Handwritten: Domain Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/domain-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/domain-model-diagram.svg" alt="Diagram: Domain Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/domain-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/domain-model-diagram.svg" alt="Diagram: Domain Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/domain-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/domain-model-sticky.svg" alt="Sticky Note: Domain Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/domain-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/domain-model-sticky.svg" alt="Sticky Note: Domain Model" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ DailyLog
 
 ### SmartBuildSystem: Core System Orchestrator
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-handwritten.svg" alt="Handwritten: SmartBuildSystem: Core System Orchestrator" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-handwritten.svg" alt="Handwritten: SmartBuildSystem: Core System Orchestrator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-diagram.svg" alt="Diagram: SmartBuildSystem: Core System Orchestrator" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-diagram.svg" alt="Diagram: SmartBuildSystem: Core System Orchestrator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-sticky.svg" alt="Sticky Note: SmartBuildSystem: Core System Orchestrator" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/smartbuildsystem-core-system-orchestrator-sticky.svg" alt="Sticky Note: SmartBuildSystem: Core System Orchestrator" width="30%">
 </a>
 
 
@@ -842,14 +842,14 @@ class AuthController {
 
 ### Budget Service with Event Sourcing
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-handwritten.svg" alt="Handwritten: Budget Service with Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-handwritten.svg" alt="Handwritten: Budget Service with Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-diagram.svg" alt="Diagram: Budget Service with Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-diagram.svg" alt="Diagram: Budget Service with Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-sticky.svg" alt="Sticky Note: Budget Service with Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/budget-service-with-event-sourcing-sticky.svg" alt="Sticky Note: Budget Service with Event Sourcing" width="30%">
 </a>
 
 
@@ -1025,14 +1025,14 @@ class ScheduleService {
 
 ### Notification Service with Template Engine
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-handwritten.svg" alt="Handwritten: Notification Service with Template Engine" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-handwritten.svg" alt="Handwritten: Notification Service with Template Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-diagram.svg" alt="Diagram: Notification Service with Template Engine" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-diagram.svg" alt="Diagram: Notification Service with Template Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-sticky.svg" alt="Sticky Note: Notification Service with Template Engine" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/notification-service-with-template-engine-sticky.svg" alt="Sticky Note: Notification Service with Template Engine" width="30%">
 </a>
 
 
@@ -1125,14 +1125,14 @@ class NotificationService {
 
 ### Risk Assessment Matrix
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-handwritten.svg" alt="Handwritten: Risk Assessment Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-handwritten.svg" alt="Handwritten: Risk Assessment Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-diagram.svg" alt="Diagram: Risk Assessment Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-diagram.svg" alt="Diagram: Risk Assessment Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-sticky.svg" alt="Sticky Note: Risk Assessment Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/risk-assessment-matrix-sticky.svg" alt="Sticky Note: Risk Assessment Matrix" width="30%">
 </a>
 
 
@@ -1175,14 +1175,14 @@ graph TD
 
 ### RiskAssessmentMatrix Class
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-handwritten.svg" alt="Handwritten: RiskAssessmentMatrix Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-handwritten.svg" alt="Handwritten: RiskAssessmentMatrix Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-diagram.svg" alt="Diagram: RiskAssessmentMatrix Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-diagram.svg" alt="Diagram: RiskAssessmentMatrix Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-sticky.svg" alt="Sticky Note: RiskAssessmentMatrix Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/riskassessmentmatrix-class-sticky.svg" alt="Sticky Note: RiskAssessmentMatrix Class" width="30%">
 </a>
 
 
@@ -1262,14 +1262,14 @@ console.log(riskMatrix.getRiskReport());
 
 ### Test Levels
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/test-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/test-levels-handwritten.svg" alt="Handwritten: Test Levels" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/test-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/test-levels-handwritten.svg" alt="Handwritten: Test Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/test-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/test-levels-diagram.svg" alt="Diagram: Test Levels" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/test-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/test-levels-diagram.svg" alt="Diagram: Test Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/test-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/test-levels-sticky.svg" alt="Sticky Note: Test Levels" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/test-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/test-levels-sticky.svg" alt="Sticky Note: Test Levels" width="30%">
 </a>
 
 
@@ -1285,14 +1285,14 @@ console.log(riskMatrix.getRiskReport());
 
 ### CI/CD Gates
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-handwritten.svg" alt="Handwritten: CI/CD Gates" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-handwritten.svg" alt="Handwritten: CI/CD Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-diagram.svg" alt="Diagram: CI/CD Gates" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-diagram.svg" alt="Diagram: CI/CD Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-sticky.svg" alt="Sticky Note: CI/CD Gates" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/ci-cd-gates-sticky.svg" alt="Sticky Note: CI/CD Gates" width="30%">
 </a>
 
 
@@ -1311,14 +1311,14 @@ console.log(riskMatrix.getRiskReport());
 
 ### SprintPlanner Class
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-handwritten.svg" alt="Handwritten: SprintPlanner Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-handwritten.svg" alt="Handwritten: SprintPlanner Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-diagram.svg" alt="Diagram: SprintPlanner Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-diagram.svg" alt="Diagram: SprintPlanner Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-sticky.svg" alt="Sticky Note: SprintPlanner Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/sprintplanner-class-sticky.svg" alt="Sticky Note: SprintPlanner Class" width="30%">
 </a>
 
 
@@ -1434,14 +1434,14 @@ class SprintPlanner {
 
 ### QualityDashboard Class
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-handwritten.svg" alt="Handwritten: QualityDashboard Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-handwritten.svg" alt="Handwritten: QualityDashboard Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-diagram.svg" alt="Diagram: QualityDashboard Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-diagram.svg" alt="Diagram: QualityDashboard Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-sticky.svg" alt="Sticky Note: QualityDashboard Class" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/qualitydashboard-class-sticky.svg" alt="Sticky Note: QualityDashboard Class" width="30%">
 </a>
 
 
@@ -1574,14 +1574,14 @@ console.log(quality.generateReport());
 
 ### Deployment Topology
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-handwritten.svg" alt="Handwritten: Deployment Topology" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-handwritten.svg" alt="Handwritten: Deployment Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-diagram.svg" alt="Diagram: Deployment Topology" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-diagram.svg" alt="Diagram: Deployment Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-sticky.svg" alt="Sticky Note: Deployment Topology" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/deployment-topology-sticky.svg" alt="Sticky Note: Deployment Topology" width="30%">
 </a>
 
 
@@ -1652,14 +1652,14 @@ graph TD
 
 ### Container Deployment
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-handwritten.svg" alt="Handwritten: Container Deployment" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-handwritten.svg" alt="Handwritten: Container Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-diagram.svg" alt="Diagram: Container Deployment" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-diagram.svg" alt="Diagram: Container Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-sticky.svg" alt="Sticky Note: Container Deployment" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/container-deployment-sticky.svg" alt="Sticky Note: Container Deployment" width="30%">
 </a>
 
 
@@ -1780,14 +1780,14 @@ volumes:
 
 ### Blue-Green Deployment Strategy
 
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-handwritten.svg" alt="Handwritten: Blue-Green Deployment Strategy" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-handwritten.svg" alt="Handwritten: Blue-Green Deployment Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-diagram.svg" alt="Diagram: Blue-Green Deployment Strategy" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-diagram.svg" alt="Diagram: Blue-Green Deployment Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-sticky.svg" alt="Sticky Note: Blue-Green Deployment Strategy" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/16-capstone/blue-green-deployment-strategy-sticky.svg" alt="Sticky Note: Blue-Green Deployment Strategy" width="30%">
 </a>
 
 

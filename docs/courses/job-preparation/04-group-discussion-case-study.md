@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### What is a Group Discussion?
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-handwritten.svg" alt="Handwritten: What is a Group Discussion?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-handwritten.svg" alt="Handwritten: What is a Group Discussion?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-diagram.svg" alt="Diagram: What is a Group Discussion?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-diagram.svg" alt="Diagram: What is a Group Discussion?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-sticky.svg" alt="Sticky Note: What is a Group Discussion?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-group-discussion-sticky.svg" alt="Sticky Note: What is a Group Discussion?" width="30%">
 </a>
 
 
@@ -38,14 +38,14 @@ A Group Discussion (GD) is a structured conversation where 8-15 participants dis
 
 ### GD Evaluation Criteria
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-handwritten.svg" alt="Handwritten: GD Evaluation Criteria" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-handwritten.svg" alt="Handwritten: GD Evaluation Criteria" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-diagram.svg" alt="Diagram: GD Evaluation Criteria" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-diagram.svg" alt="Diagram: GD Evaluation Criteria" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-sticky.svg" alt="Sticky Note: GD Evaluation Criteria" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-evaluation-criteria-sticky.svg" alt="Sticky Note: GD Evaluation Criteria" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ A Group Discussion (GD) is a structured conversation where 8-15 participants dis
 
 ### Types of GD Topics
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-handwritten.svg" alt="Handwritten: Types of GD Topics" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-handwritten.svg" alt="Handwritten: Types of GD Topics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-diagram.svg" alt="Diagram: Types of GD Topics" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-diagram.svg" alt="Diagram: Types of GD Topics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-sticky.svg" alt="Sticky Note: Types of GD Topics" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/types-of-gd-topics-sticky.svg" alt="Sticky Note: Types of GD Topics" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ flowchart TD
 
 ### GD Format Comparison: Private vs Government
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-handwritten.svg" alt="Handwritten: GD Format Comparison: Private vs Government" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-handwritten.svg" alt="Handwritten: GD Format Comparison: Private vs Government" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-diagram.svg" alt="Diagram: GD Format Comparison: Private vs Government" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-diagram.svg" alt="Diagram: GD Format Comparison: Private vs Government" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-sticky.svg" alt="Sticky Note: GD Format Comparison: Private vs Government" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-format-comparison-private-vs-government-sticky.svg" alt="Sticky Note: GD Format Comparison: Private vs Government" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ flowchart TD
 
 ### The CORAL Framework for GD Success
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-handwritten.svg" alt="Handwritten: The CORAL Framework for GD Success" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-handwritten.svg" alt="Handwritten: The CORAL Framework for GD Success" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-diagram.svg" alt="Diagram: The CORAL Framework for GD Success" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-diagram.svg" alt="Diagram: The CORAL Framework for GD Success" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-sticky.svg" alt="Sticky Note: The CORAL Framework for GD Success" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/the-coral-framework-for-gd-success-sticky.svg" alt="Sticky Note: The CORAL Framework for GD Success" width="30%">
 </a>
 
 
@@ -149,14 +149,14 @@ flowchart LR
 
 ### Opening Strategies
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-handwritten.svg" alt="Handwritten: Opening Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-handwritten.svg" alt="Handwritten: Opening Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-diagram.svg" alt="Diagram: Opening Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-diagram.svg" alt="Diagram: Opening Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-sticky.svg" alt="Sticky Note: Opening Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/opening-strategies-sticky.svg" alt="Sticky Note: Opening Strategies" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ flowchart LR
 
 ### Middle Game Strategies
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-handwritten.svg" alt="Handwritten: Middle Game Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-handwritten.svg" alt="Handwritten: Middle Game Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-diagram.svg" alt="Diagram: Middle Game Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-diagram.svg" alt="Diagram: Middle Game Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-sticky.svg" alt="Sticky Note: Middle Game Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/middle-game-strategies-sticky.svg" alt="Sticky Note: Middle Game Strategies" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ flowchart LR
 
 ### Concluding Strategies
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-handwritten.svg" alt="Handwritten: Concluding Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-handwritten.svg" alt="Handwritten: Concluding Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-diagram.svg" alt="Diagram: Concluding Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-diagram.svg" alt="Diagram: Concluding Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-sticky.svg" alt="Sticky Note: Concluding Strategies" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/concluding-strategies-sticky.svg" alt="Sticky Note: Concluding Strategies" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ flowchart LR
 
 ### Dos and Don'ts
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-handwritten.svg" alt="Handwritten: Dos and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-handwritten.svg" alt="Handwritten: Dos and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-diagram.svg" alt="Diagram: Dos and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-diagram.svg" alt="Diagram: Dos and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-sticky.svg" alt="Sticky Note: Dos and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/dos-and-don-ts-sticky.svg" alt="Sticky Note: Dos and Don'ts" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ flowchart LR
 
 ### National Issues
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-handwritten.svg" alt="Handwritten: National Issues" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-handwritten.svg" alt="Handwritten: National Issues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-diagram.svg" alt="Diagram: National Issues" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-diagram.svg" alt="Diagram: National Issues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-sticky.svg" alt="Sticky Note: National Issues" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/national-issues-sticky.svg" alt="Sticky Note: National Issues" width="30%">
 </a>
 
 
@@ -265,14 +265,14 @@ flowchart LR
 
 ### Technology Trends
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-handwritten.svg" alt="Handwritten: Technology Trends" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-handwritten.svg" alt="Handwritten: Technology Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-diagram.svg" alt="Diagram: Technology Trends" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-diagram.svg" alt="Diagram: Technology Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-sticky.svg" alt="Sticky Note: Technology Trends" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/technology-trends-sticky.svg" alt="Sticky Note: Technology Trends" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ flowchart LR
 
 ### Social & Ethical Dilemmas
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-handwritten.svg" alt="Handwritten: Social & Ethical Dilemmas" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-handwritten.svg" alt="Handwritten: Social & Ethical Dilemmas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-diagram.svg" alt="Diagram: Social & Ethical Dilemmas" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-diagram.svg" alt="Diagram: Social & Ethical Dilemmas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-sticky.svg" alt="Sticky Note: Social & Ethical Dilemmas" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/social-ethical-dilemmas-sticky.svg" alt="Sticky Note: Social & Ethical Dilemmas" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ flowchart LR
 
 ### What is a Case Study Interview?
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-handwritten.svg" alt="Handwritten: What is a Case Study Interview?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-handwritten.svg" alt="Handwritten: What is a Case Study Interview?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-diagram.svg" alt="Diagram: What is a Case Study Interview?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-diagram.svg" alt="Diagram: What is a Case Study Interview?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-sticky.svg" alt="Sticky Note: What is a Case Study Interview?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/what-is-a-case-study-interview-sticky.svg" alt="Sticky Note: What is a Case Study Interview?" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ Case study interviews present a business problem and ask you to analyze it, deve
 
 ### Case Study Types
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-handwritten.svg" alt="Handwritten: Case Study Types" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-handwritten.svg" alt="Handwritten: Case Study Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-diagram.svg" alt="Diagram: Case Study Types" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-diagram.svg" alt="Diagram: Case Study Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-sticky.svg" alt="Sticky Note: Case Study Types" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-types-sticky.svg" alt="Sticky Note: Case Study Types" width="30%">
 </a>
 
 
@@ -366,14 +366,14 @@ Case study interviews present a business problem and ask you to analyze it, deve
 
 ### Framework 1: SWOT Analysis
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-handwritten.svg" alt="Handwritten: Framework 1: SWOT Analysis" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-handwritten.svg" alt="Handwritten: Framework 1: SWOT Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-diagram.svg" alt="Diagram: Framework 1: SWOT Analysis" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-diagram.svg" alt="Diagram: Framework 1: SWOT Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-sticky.svg" alt="Sticky Note: Framework 1: SWOT Analysis" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-1-swot-analysis-sticky.svg" alt="Sticky Note: Framework 1: SWOT Analysis" width="30%">
 </a>
 
 
@@ -395,14 +395,14 @@ flowchart TD
 
 ### Framework 2: Porter's Five Forces
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-handwritten.svg" alt="Handwritten: Framework 2: Porter's Five Forces" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-handwritten.svg" alt="Handwritten: Framework 2: Porter's Five Forces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-diagram.svg" alt="Diagram: Framework 2: Porter's Five Forces" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-diagram.svg" alt="Diagram: Framework 2: Porter's Five Forces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-sticky.svg" alt="Sticky Note: Framework 2: Porter's Five Forces" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-2-porter-s-five-forces-sticky.svg" alt="Sticky Note: Framework 2: Porter's Five Forces" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ flowchart TD
 
 ### Framework 3: 3Cs Framework
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-handwritten.svg" alt="Handwritten: Framework 3: 3Cs Framework" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-handwritten.svg" alt="Handwritten: Framework 3: 3Cs Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-diagram.svg" alt="Diagram: Framework 3: 3Cs Framework" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-diagram.svg" alt="Diagram: Framework 3: 3Cs Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-sticky.svg" alt="Sticky Note: Framework 3: 3Cs Framework" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-3-3cs-framework-sticky.svg" alt="Sticky Note: Framework 3: 3Cs Framework" width="30%">
 </a>
 
 
@@ -450,14 +450,14 @@ flowchart TD
 
 ### Framework 4: 4Ps of Marketing
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-handwritten.svg" alt="Handwritten: Framework 4: 4Ps of Marketing" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-handwritten.svg" alt="Handwritten: Framework 4: 4Ps of Marketing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-diagram.svg" alt="Diagram: Framework 4: 4Ps of Marketing" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-diagram.svg" alt="Diagram: Framework 4: 4Ps of Marketing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-sticky.svg" alt="Sticky Note: Framework 4: 4Ps of Marketing" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-4-4ps-of-marketing-sticky.svg" alt="Sticky Note: Framework 4: 4Ps of Marketing" width="30%">
 </a>
 
 
@@ -470,14 +470,14 @@ flowchart TD
 
 ### Framework 5: Profitability Framework
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-handwritten.svg" alt="Handwritten: Framework 5: Profitability Framework" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-handwritten.svg" alt="Handwritten: Framework 5: Profitability Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-diagram.svg" alt="Diagram: Framework 5: Profitability Framework" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-diagram.svg" alt="Diagram: Framework 5: Profitability Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-sticky.svg" alt="Sticky Note: Framework 5: Profitability Framework" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-5-profitability-framework-sticky.svg" alt="Sticky Note: Framework 5: Profitability Framework" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ For declining profit, analyze:
 
 ### Framework 6: Issue Tree / MECE Principle
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-handwritten.svg" alt="Handwritten: Framework 6: Issue Tree / MECE Principle" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-handwritten.svg" alt="Handwritten: Framework 6: Issue Tree / MECE Principle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-diagram.svg" alt="Diagram: Framework 6: Issue Tree / MECE Principle" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-diagram.svg" alt="Diagram: Framework 6: Issue Tree / MECE Principle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-sticky.svg" alt="Sticky Note: Framework 6: Issue Tree / MECE Principle" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/framework-6-issue-tree-mece-principle-sticky.svg" alt="Sticky Note: Framework 6: Issue Tree / MECE Principle" width="30%">
 </a>
 
 
@@ -527,14 +527,14 @@ flowchart TD
 
 ### Case Study 1: Declining Profits at a Software Company
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-handwritten.svg" alt="Handwritten: Case Study 1: Declining Profits at a Software Company" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-handwritten.svg" alt="Handwritten: Case Study 1: Declining Profits at a Software Company" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-diagram.svg" alt="Diagram: Case Study 1: Declining Profits at a Software Company" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-diagram.svg" alt="Diagram: Case Study 1: Declining Profits at a Software Company" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-sticky.svg" alt="Sticky Note: Case Study 1: Declining Profits at a Software Company" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-1-declining-profits-at-a-software-company-sticky.svg" alt="Sticky Note: Case Study 1: Declining Profits at a Software Company" width="30%">
 </a>
 
 
@@ -568,14 +568,14 @@ flowchart TD
 
 ### Case Study 2: Market Entry for an EdTech Platform
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-handwritten.svg" alt="Handwritten: Case Study 2: Market Entry for an EdTech Platform" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-handwritten.svg" alt="Handwritten: Case Study 2: Market Entry for an EdTech Platform" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-diagram.svg" alt="Diagram: Case Study 2: Market Entry for an EdTech Platform" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-diagram.svg" alt="Diagram: Case Study 2: Market Entry for an EdTech Platform" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-sticky.svg" alt="Sticky Note: Case Study 2: Market Entry for an EdTech Platform" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-2-market-entry-for-an-edtech-platform-sticky.svg" alt="Sticky Note: Case Study 2: Market Entry for an EdTech Platform" width="30%">
 </a>
 
 
@@ -598,14 +598,14 @@ flowchart TD
 
 ### Case Study 3: Pricing Strategy for a SaaS Product
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-handwritten.svg" alt="Handwritten: Case Study 3: Pricing Strategy for a SaaS Product" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-handwritten.svg" alt="Handwritten: Case Study 3: Pricing Strategy for a SaaS Product" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-diagram.svg" alt="Diagram: Case Study 3: Pricing Strategy for a SaaS Product" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-diagram.svg" alt="Diagram: Case Study 3: Pricing Strategy for a SaaS Product" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-sticky.svg" alt="Sticky Note: Case Study 3: Pricing Strategy for a SaaS Product" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-3-pricing-strategy-for-a-saas-product-sticky.svg" alt="Sticky Note: Case Study 3: Pricing Strategy for a SaaS Product" width="30%">
 </a>
 
 
@@ -625,14 +625,14 @@ flowchart TD
 
 ### Case Study 4: Retail Store Profitability
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-handwritten.svg" alt="Handwritten: Case Study 4: Retail Store Profitability" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-handwritten.svg" alt="Handwritten: Case Study 4: Retail Store Profitability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-diagram.svg" alt="Diagram: Case Study 4: Retail Store Profitability" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-diagram.svg" alt="Diagram: Case Study 4: Retail Store Profitability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-sticky.svg" alt="Sticky Note: Case Study 4: Retail Store Profitability" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-4-retail-store-profitability-sticky.svg" alt="Sticky Note: Case Study 4: Retail Store Profitability" width="30%">
 </a>
 
 
@@ -653,14 +653,14 @@ flowchart TD
 
 ### Case Study 5: New Product Launch Decision
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-handwritten.svg" alt="Handwritten: Case Study 5: New Product Launch Decision" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-handwritten.svg" alt="Handwritten: Case Study 5: New Product Launch Decision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-diagram.svg" alt="Diagram: Case Study 5: New Product Launch Decision" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-diagram.svg" alt="Diagram: Case Study 5: New Product Launch Decision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-sticky.svg" alt="Sticky Note: Case Study 5: New Product Launch Decision" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-5-new-product-launch-decision-sticky.svg" alt="Sticky Note: Case Study 5: New Product Launch Decision" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ flowchart TD
 
 ### Case Study 6: Market Sizing — How Many Petrol Pumps in India?
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-handwritten.svg" alt="Handwritten: Case Study 6: Market Sizing — How Many Petrol Pumps in India?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-handwritten.svg" alt="Handwritten: Case Study 6: Market Sizing — How Many Petrol Pumps in India?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-diagram.svg" alt="Diagram: Case Study 6: Market Sizing — How Many Petrol Pumps in India?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-diagram.svg" alt="Diagram: Case Study 6: Market Sizing — How Many Petrol Pumps in India?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-sticky.svg" alt="Sticky Note: Case Study 6: Market Sizing — How Many Petrol Pumps in India?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-6-market-sizing-how-many-petrol-pumps-in-india-sticky.svg" alt="Sticky Note: Case Study 6: Market Sizing — How Many Petrol Pumps in India?" width="30%">
 </a>
 
 
@@ -714,14 +714,14 @@ Answer: Approximately 65,000-70,000 petrol pumps
 
 ### Case Study 7: Operations Optimization
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-handwritten.svg" alt="Handwritten: Case Study 7: Operations Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-handwritten.svg" alt="Handwritten: Case Study 7: Operations Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-diagram.svg" alt="Diagram: Case Study 7: Operations Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-diagram.svg" alt="Diagram: Case Study 7: Operations Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-sticky.svg" alt="Sticky Note: Case Study 7: Operations Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-7-operations-optimization-sticky.svg" alt="Sticky Note: Case Study 7: Operations Optimization" width="30%">
 </a>
 
 
@@ -749,14 +749,14 @@ System update (45 min): Integrated barcode scanning, automated updates
 
 ### Case Study 8: Should a Company Acquire a Competitor?
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-handwritten.svg" alt="Handwritten: Case Study 8: Should a Company Acquire a Competitor?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-handwritten.svg" alt="Handwritten: Case Study 8: Should a Company Acquire a Competitor?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-diagram.svg" alt="Diagram: Case Study 8: Should a Company Acquire a Competitor?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-diagram.svg" alt="Diagram: Case Study 8: Should a Company Acquire a Competitor?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-sticky.svg" alt="Sticky Note: Case Study 8: Should a Company Acquire a Competitor?" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-8-should-a-company-acquire-a-competitor-sticky.svg" alt="Sticky Note: Case Study 8: Should a Company Acquire a Competitor?" width="30%">
 </a>
 
 
@@ -777,14 +777,14 @@ System update (45 min): Integrated barcode scanning, automated updates
 
 ### Case Study 9: Growth Strategy for a Telecom Company
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-handwritten.svg" alt="Handwritten: Case Study 9: Growth Strategy for a Telecom Company" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-handwritten.svg" alt="Handwritten: Case Study 9: Growth Strategy for a Telecom Company" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-diagram.svg" alt="Diagram: Case Study 9: Growth Strategy for a Telecom Company" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-diagram.svg" alt="Diagram: Case Study 9: Growth Strategy for a Telecom Company" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-sticky.svg" alt="Sticky Note: Case Study 9: Growth Strategy for a Telecom Company" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-9-growth-strategy-for-a-telecom-company-sticky.svg" alt="Sticky Note: Case Study 9: Growth Strategy for a Telecom Company" width="30%">
 </a>
 
 
@@ -805,14 +805,14 @@ System update (45 min): Integrated barcode scanning, automated updates
 
 ### Case Study 10: SaaS Churn Reduction
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-handwritten.svg" alt="Handwritten: Case Study 10: SaaS Churn Reduction" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-handwritten.svg" alt="Handwritten: Case Study 10: SaaS Churn Reduction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-diagram.svg" alt="Diagram: Case Study 10: SaaS Churn Reduction" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-diagram.svg" alt="Diagram: Case Study 10: SaaS Churn Reduction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-sticky.svg" alt="Sticky Note: Case Study 10: SaaS Churn Reduction" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-10-saas-churn-reduction-sticky.svg" alt="Sticky Note: Case Study 10: SaaS Churn Reduction" width="30%">
 </a>
 
 
@@ -837,14 +837,14 @@ System update (45 min): Integrated barcode scanning, automated updates
 
 ### Case Study 11: Public Sector — Improving Government Service Delivery
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-handwritten.svg" alt="Handwritten: Case Study 11: Public Sector — Improving Government Service Delivery" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-handwritten.svg" alt="Handwritten: Case Study 11: Public Sector — Improving Government Service Delivery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-diagram.svg" alt="Diagram: Case Study 11: Public Sector — Improving Government Service Delivery" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-diagram.svg" alt="Diagram: Case Study 11: Public Sector — Improving Government Service Delivery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-sticky.svg" alt="Sticky Note: Case Study 11: Public Sector — Improving Government Service Delivery" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-11-public-sector-improving-government-service-delivery-sticky.svg" alt="Sticky Note: Case Study 11: Public Sector — Improving Government Service Delivery" width="30%">
 </a>
 
 
@@ -871,14 +871,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 12: Hospital Operations Optimization
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-handwritten.svg" alt="Handwritten: Case Study 12: Hospital Operations Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-handwritten.svg" alt="Handwritten: Case Study 12: Hospital Operations Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-diagram.svg" alt="Diagram: Case Study 12: Hospital Operations Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-diagram.svg" alt="Diagram: Case Study 12: Hospital Operations Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-sticky.svg" alt="Sticky Note: Case Study 12: Hospital Operations Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-12-hospital-operations-optimization-sticky.svg" alt="Sticky Note: Case Study 12: Hospital Operations Optimization" width="30%">
 </a>
 
 
@@ -899,14 +899,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 13: E-commerce Logistics Optimization
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-handwritten.svg" alt="Handwritten: Case Study 13: E-commerce Logistics Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-handwritten.svg" alt="Handwritten: Case Study 13: E-commerce Logistics Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-diagram.svg" alt="Diagram: Case Study 13: E-commerce Logistics Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-diagram.svg" alt="Diagram: Case Study 13: E-commerce Logistics Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-sticky.svg" alt="Sticky Note: Case Study 13: E-commerce Logistics Optimization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-13-e-commerce-logistics-optimization-sticky.svg" alt="Sticky Note: Case Study 13: E-commerce Logistics Optimization" width="30%">
 </a>
 
 
@@ -932,14 +932,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 14: PSU Turnaround Strategy
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-handwritten.svg" alt="Handwritten: Case Study 14: PSU Turnaround Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-handwritten.svg" alt="Handwritten: Case Study 14: PSU Turnaround Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-diagram.svg" alt="Diagram: Case Study 14: PSU Turnaround Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-diagram.svg" alt="Diagram: Case Study 14: PSU Turnaround Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-sticky.svg" alt="Sticky Note: Case Study 14: PSU Turnaround Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-14-psu-turnaround-strategy-sticky.svg" alt="Sticky Note: Case Study 14: PSU Turnaround Strategy" width="30%">
 </a>
 
 
@@ -965,14 +965,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 15: Digital Transformation for a Bank
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-handwritten.svg" alt="Handwritten: Case Study 15: Digital Transformation for a Bank" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-handwritten.svg" alt="Handwritten: Case Study 15: Digital Transformation for a Bank" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-diagram.svg" alt="Diagram: Case Study 15: Digital Transformation for a Bank" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-diagram.svg" alt="Diagram: Case Study 15: Digital Transformation for a Bank" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-sticky.svg" alt="Sticky Note: Case Study 15: Digital Transformation for a Bank" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-15-digital-transformation-for-a-bank-sticky.svg" alt="Sticky Note: Case Study 15: Digital Transformation for a Bank" width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 16: Product Feature Prioritization
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-handwritten.svg" alt="Handwritten: Case Study 16: Product Feature Prioritization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-handwritten.svg" alt="Handwritten: Case Study 16: Product Feature Prioritization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-diagram.svg" alt="Diagram: Case Study 16: Product Feature Prioritization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-diagram.svg" alt="Diagram: Case Study 16: Product Feature Prioritization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-sticky.svg" alt="Sticky Note: Case Study 16: Product Feature Prioritization" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-16-product-feature-prioritization-sticky.svg" alt="Sticky Note: Case Study 16: Product Feature Prioritization" width="30%">
 </a>
 
 
@@ -1025,14 +1025,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 17: Crisis Management — Data Breach
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-handwritten.svg" alt="Handwritten: Case Study 17: Crisis Management — Data Breach" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-handwritten.svg" alt="Handwritten: Case Study 17: Crisis Management — Data Breach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-diagram.svg" alt="Diagram: Case Study 17: Crisis Management — Data Breach" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-diagram.svg" alt="Diagram: Case Study 17: Crisis Management — Data Breach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-sticky.svg" alt="Sticky Note: Case Study 17: Crisis Management — Data Breach" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-17-crisis-management-data-breach-sticky.svg" alt="Sticky Note: Case Study 17: Crisis Management — Data Breach" width="30%">
 </a>
 
 
@@ -1054,14 +1054,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 18: Making a Loss-Making Product Profitable
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-handwritten.svg" alt="Handwritten: Case Study 18: Making a Loss-Making Product Profitable" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-handwritten.svg" alt="Handwritten: Case Study 18: Making a Loss-Making Product Profitable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-diagram.svg" alt="Diagram: Case Study 18: Making a Loss-Making Product Profitable" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-diagram.svg" alt="Diagram: Case Study 18: Making a Loss-Making Product Profitable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-sticky.svg" alt="Sticky Note: Case Study 18: Making a Loss-Making Product Profitable" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-18-making-a-loss-making-product-profitable-sticky.svg" alt="Sticky Note: Case Study 18: Making a Loss-Making Product Profitable" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 19: Market Entry — EV Charging in India
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-handwritten.svg" alt="Handwritten: Case Study 19: Market Entry — EV Charging in India" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-handwritten.svg" alt="Handwritten: Case Study 19: Market Entry — EV Charging in India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-diagram.svg" alt="Diagram: Case Study 19: Market Entry — EV Charging in India" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-diagram.svg" alt="Diagram: Case Study 19: Market Entry — EV Charging in India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-sticky.svg" alt="Sticky Note: Case Study 19: Market Entry — EV Charging in India" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-19-market-entry-ev-charging-in-india-sticky.svg" alt="Sticky Note: Case Study 19: Market Entry — EV Charging in India" width="30%">
 </a>
 
 
@@ -1105,14 +1105,14 @@ Bottlenecks: Police verification (30 days - 50% of total time)
 
 ### Case Study 20: Resource Allocation in a Growing Startup
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-handwritten.svg" alt="Handwritten: Case Study 20: Resource Allocation in a Growing Startup" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-handwritten.svg" alt="Handwritten: Case Study 20: Resource Allocation in a Growing Startup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-diagram.svg" alt="Diagram: Case Study 20: Resource Allocation in a Growing Startup" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-diagram.svg" alt="Diagram: Case Study 20: Resource Allocation in a Growing Startup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-sticky.svg" alt="Sticky Note: Case Study 20: Resource Allocation in a Growing Startup" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/case-study-20-resource-allocation-in-a-growing-startup-sticky.svg" alt="Sticky Note: Case Study 20: Resource Allocation in a Growing Startup" width="30%">
 </a>
 
 
@@ -1413,14 +1413,14 @@ console.log('SOM:', marketSize.som);
 
 ### Self-Assessment Scorecard
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-handwritten.svg" alt="Handwritten: Self-Assessment Scorecard" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-handwritten.svg" alt="Handwritten: Self-Assessment Scorecard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-diagram.svg" alt="Diagram: Self-Assessment Scorecard" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-diagram.svg" alt="Diagram: Self-Assessment Scorecard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-sticky.svg" alt="Sticky Note: Self-Assessment Scorecard" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/self-assessment-scorecard-sticky.svg" alt="Sticky Note: Self-Assessment Scorecard" width="30%">
 </a>
 
 
@@ -1438,14 +1438,14 @@ console.log('SOM:', marketSize.som);
 
 ### Mock GD Practice Plan
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-handwritten.svg" alt="Handwritten: Mock GD Practice Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-handwritten.svg" alt="Handwritten: Mock GD Practice Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-diagram.svg" alt="Diagram: Mock GD Practice Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-diagram.svg" alt="Diagram: Mock GD Practice Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-sticky.svg" alt="Sticky Note: Mock GD Practice Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/mock-gd-practice-plan-sticky.svg" alt="Sticky Note: Mock GD Practice Plan" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ console.log('SOM:', marketSize.som);
 
 ### GD Topic Bank (100 Topics)
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-handwritten.svg" alt="Handwritten: GD Topic Bank (100 Topics)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-handwritten.svg" alt="Handwritten: GD Topic Bank (100 Topics)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-diagram.svg" alt="Diagram: GD Topic Bank (100 Topics)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-diagram.svg" alt="Diagram: GD Topic Bank (100 Topics)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-sticky.svg" alt="Sticky Note: GD Topic Bank (100 Topics)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-topic-bank-100-topics-sticky.svg" alt="Sticky Note: GD Topic Bank (100 Topics)" width="30%">
 </a>
 
 
@@ -1487,14 +1487,14 @@ console.log('SOM:', marketSize.som);
 
 ### Key Phrases for GD
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-handwritten.svg" alt="Handwritten: Key Phrases for GD" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-handwritten.svg" alt="Handwritten: Key Phrases for GD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-diagram.svg" alt="Diagram: Key Phrases for GD" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-diagram.svg" alt="Diagram: Key Phrases for GD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-sticky.svg" alt="Sticky Note: Key Phrases for GD" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/key-phrases-for-gd-sticky.svg" alt="Sticky Note: Key Phrases for GD" width="30%">
 </a>
 
 
@@ -1510,14 +1510,14 @@ console.log('SOM:', marketSize.som);
 
 ### Time Management in GD
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-handwritten.svg" alt="Handwritten: Time Management in GD" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-handwritten.svg" alt="Handwritten: Time Management in GD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-diagram.svg" alt="Diagram: Time Management in GD" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-diagram.svg" alt="Diagram: Time Management in GD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-sticky.svg" alt="Sticky Note: Time Management in GD" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/time-management-in-gd-sticky.svg" alt="Sticky Note: Time Management in GD" width="30%">
 </a>
 
 
@@ -1531,14 +1531,14 @@ console.log('SOM:', marketSize.som);
 
 ### GD Body Language Checklist
 
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-handwritten.svg" alt="Handwritten: GD Body Language Checklist" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-handwritten.svg" alt="Handwritten: GD Body Language Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-diagram.svg" alt="Diagram: GD Body Language Checklist" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-diagram.svg" alt="Diagram: GD Body Language Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-sticky.svg" alt="Sticky Note: GD Body Language Checklist" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/04-group-discussion-case-study/gd-body-language-checklist-sticky.svg" alt="Sticky Note: GD Body Language Checklist" width="30%">
 </a>
 
 

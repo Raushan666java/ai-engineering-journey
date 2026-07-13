@@ -41,14 +41,14 @@ flowchart LR
 
 ### 6.1 Foundations of Probability
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-handwritten.svg" alt="Handwritten: 6.1 Foundations of Probability" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-handwritten.svg" alt="Handwritten: 6.1 Foundations of Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-diagram.svg" alt="Diagram: 6.1 Foundations of Probability" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-diagram.svg" alt="Diagram: 6.1 Foundations of Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-sticky.svg" alt="Sticky Note: 6.1 Foundations of Probability" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-1-foundations-of-probability-sticky.svg" alt="Sticky Note: 6.1 Foundations of Probability" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ $$P(B_i|A) = \frac{P(A|B_i)P(B_i)}{\sum_{j=1}^n P(A|B_j)P(B_j)}$$
 
 ### 6.2 Counting (Combinatorics)
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-handwritten.svg" alt="Handwritten: 6.2 Counting (Combinatorics)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-handwritten.svg" alt="Handwritten: 6.2 Counting (Combinatorics)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-diagram.svg" alt="Diagram: 6.2 Counting (Combinatorics)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-diagram.svg" alt="Diagram: 6.2 Counting (Combinatorics)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-sticky.svg" alt="Sticky Note: 6.2 Counting (Combinatorics)" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-2-counting-combinatorics-sticky.svg" alt="Sticky Note: 6.2 Counting (Combinatorics)" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ $$P(B_i|A) = \frac{P(A|B_i)P(B_i)}{\sum_{j=1}^n P(A|B_j)P(B_j)}$$
 
 ### 6.3 Discrete Random Variables
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-handwritten.svg" alt="Handwritten: 6.3 Discrete Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-handwritten.svg" alt="Handwritten: 6.3 Discrete Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-diagram.svg" alt="Diagram: 6.3 Discrete Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-diagram.svg" alt="Diagram: 6.3 Discrete Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-sticky.svg" alt="Sticky Note: 6.3 Discrete Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-3-discrete-random-variables-sticky.svg" alt="Sticky Note: 6.3 Discrete Random Variables" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ $$P(X = x_k) = p_k, \quad \sum_k p_k = 1$$
 
 ### 6.4 Standard Discrete Distributions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-handwritten.svg" alt="Handwritten: 6.4 Standard Discrete Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-handwritten.svg" alt="Handwritten: 6.4 Standard Discrete Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-diagram.svg" alt="Diagram: 6.4 Standard Discrete Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-diagram.svg" alt="Diagram: 6.4 Standard Discrete Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-sticky.svg" alt="Sticky Note: 6.4 Standard Discrete Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-4-standard-discrete-distributions-sticky.svg" alt="Sticky Note: 6.4 Standard Discrete Distributions" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ $$P(X = x_k) = p_k, \quad \sum_k p_k = 1$$
 
 ### 6.5 Continuous Random Variables
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-handwritten.svg" alt="Handwritten: 6.5 Continuous Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-handwritten.svg" alt="Handwritten: 6.5 Continuous Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-diagram.svg" alt="Diagram: 6.5 Continuous Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-diagram.svg" alt="Diagram: 6.5 Continuous Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-sticky.svg" alt="Sticky Note: 6.5 Continuous Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-5-continuous-random-variables-sticky.svg" alt="Sticky Note: 6.5 Continuous Random Variables" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 
 ### 6.6 Standard Continuous Distributions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-handwritten.svg" alt="Handwritten: 6.6 Standard Continuous Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-handwritten.svg" alt="Handwritten: 6.6 Standard Continuous Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-diagram.svg" alt="Diagram: 6.6 Standard Continuous Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-diagram.svg" alt="Diagram: 6.6 Standard Continuous Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-sticky.svg" alt="Sticky Note: 6.6 Standard Continuous Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-6-standard-continuous-distributions-sticky.svg" alt="Sticky Note: 6.6 Standard Continuous Distributions" width="30%">
 </a>
 
 
@@ -237,14 +237,14 @@ $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 
 ### 6.7 Joint Distributions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-handwritten.svg" alt="Handwritten: 6.7 Joint Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-handwritten.svg" alt="Handwritten: 6.7 Joint Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-diagram.svg" alt="Diagram: 6.7 Joint Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-diagram.svg" alt="Diagram: 6.7 Joint Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-sticky.svg" alt="Sticky Note: 6.7 Joint Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-7-joint-distributions-sticky.svg" alt="Sticky Note: 6.7 Joint Distributions" width="30%">
 </a>
 
 
@@ -267,14 +267,14 @@ $$P(a \leq X \leq b) = \int_a^b f(x)\,dx$$
 
 ### 6.8 Functions of Random Variables
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-handwritten.svg" alt="Handwritten: 6.8 Functions of Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-handwritten.svg" alt="Handwritten: 6.8 Functions of Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-diagram.svg" alt="Diagram: 6.8 Functions of Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-diagram.svg" alt="Diagram: 6.8 Functions of Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-sticky.svg" alt="Sticky Note: 6.8 Functions of Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-8-functions-of-random-variables-sticky.svg" alt="Sticky Note: 6.8 Functions of Random Variables" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ $$f_Z(z) = \int_{-\infty}^\infty f_X(x) f_Y(z-x)\,dx$$
 
 ### 6.9 Limit Theorems
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-handwritten.svg" alt="Handwritten: 6.9 Limit Theorems" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-handwritten.svg" alt="Handwritten: 6.9 Limit Theorems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-diagram.svg" alt="Diagram: 6.9 Limit Theorems" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-diagram.svg" alt="Diagram: 6.9 Limit Theorems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-sticky.svg" alt="Sticky Note: 6.9 Limit Theorems" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-9-limit-theorems-sticky.svg" alt="Sticky Note: 6.9 Limit Theorems" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ This explains why the normal distribution appears everywhere in nature and stati
 
 ### 6.10 Sampling Distributions
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-handwritten.svg" alt="Handwritten: 6.10 Sampling Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-handwritten.svg" alt="Handwritten: 6.10 Sampling Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-diagram.svg" alt="Diagram: 6.10 Sampling Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-diagram.svg" alt="Diagram: 6.10 Sampling Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-sticky.svg" alt="Sticky Note: 6.10 Sampling Distributions" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-10-sampling-distributions-sticky.svg" alt="Sticky Note: 6.10 Sampling Distributions" width="30%">
 </a>
 
 
@@ -351,14 +351,14 @@ Used in ANOVA and comparing variances.
 
 ### 6.11 Point Estimation
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-handwritten.svg" alt="Handwritten: 6.11 Point Estimation" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-handwritten.svg" alt="Handwritten: 6.11 Point Estimation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-diagram.svg" alt="Diagram: 6.11 Point Estimation" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-diagram.svg" alt="Diagram: 6.11 Point Estimation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-sticky.svg" alt="Sticky Note: 6.11 Point Estimation" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-11-point-estimation-sticky.svg" alt="Sticky Note: 6.11 Point Estimation" width="30%">
 </a>
 
 
@@ -380,14 +380,14 @@ The MLE is consistent, asymptotically efficient, and asymptotically normal.
 
 ### 6.12 Confidence Intervals
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-handwritten.svg" alt="Handwritten: 6.12 Confidence Intervals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-handwritten.svg" alt="Handwritten: 6.12 Confidence Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-diagram.svg" alt="Diagram: 6.12 Confidence Intervals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-diagram.svg" alt="Diagram: 6.12 Confidence Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-sticky.svg" alt="Sticky Note: 6.12 Confidence Intervals" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-12-confidence-intervals-sticky.svg" alt="Sticky Note: 6.12 Confidence Intervals" width="30%">
 </a>
 
 
@@ -409,14 +409,14 @@ $$\left(\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}, \frac{(n-1)s^2}{\chi^2_{1-\alph
 
 ### 6.13 Hypothesis Testing
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-handwritten.svg" alt="Handwritten: 6.13 Hypothesis Testing" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-handwritten.svg" alt="Handwritten: 6.13 Hypothesis Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-diagram.svg" alt="Diagram: 6.13 Hypothesis Testing" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-diagram.svg" alt="Diagram: 6.13 Hypothesis Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-sticky.svg" alt="Sticky Note: 6.13 Hypothesis Testing" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-13-hypothesis-testing-sticky.svg" alt="Sticky Note: 6.13 Hypothesis Testing" width="30%">
 </a>
 
 
@@ -442,14 +442,14 @@ $$\left(\frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}, \frac{(n-1)s^2}{\chi^2_{1-\alph
 
 ### 6.14 Linear Regression
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-handwritten.svg" alt="Handwritten: 6.14 Linear Regression" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-handwritten.svg" alt="Handwritten: 6.14 Linear Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-diagram.svg" alt="Diagram: 6.14 Linear Regression" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-diagram.svg" alt="Diagram: 6.14 Linear Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-sticky.svg" alt="Sticky Note: 6.14 Linear Regression" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-14-linear-regression-sticky.svg" alt="Sticky Note: 6.14 Linear Regression" width="30%">
 </a>
 
 
@@ -478,14 +478,14 @@ $R^2$ measures the proportion of variance in $Y$ explained by $X$.
 
 ### 6.15 Bayesian Statistics
 
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-handwritten.svg" alt="Handwritten: 6.15 Bayesian Statistics" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-handwritten.svg" alt="Handwritten: 6.15 Bayesian Statistics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-diagram.svg" alt="Diagram: 6.15 Bayesian Statistics" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-diagram.svg" alt="Diagram: 6.15 Bayesian Statistics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-sticky.svg" alt="Sticky Note: 6.15 Bayesian Statistics" width="30%">
+<a href="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/engineering-mathematics/06-probability-statistics/6-15-bayesian-statistics-sticky.svg" alt="Sticky Note: 6.15 Bayesian Statistics" width="30%">
 </a>
 
 

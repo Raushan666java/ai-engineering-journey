@@ -90,14 +90,14 @@ The core insight: **horizontal scaling** (adding more commodity machines) is che
 
 ### 1.3.1 Data Locality
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-handwritten.svg" alt="Handwritten: 1.3.1 Data Locality" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-handwritten.svg" alt="Handwritten: 1.3.1 Data Locality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-diagram.svg" alt="Diagram: 1.3.1 Data Locality" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-diagram.svg" alt="Diagram: 1.3.1 Data Locality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-sticky.svg" alt="Sticky Note: 1.3.1 Data Locality" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-sticky.svg" alt="Sticky Note: 1.3.1 Data Locality" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ print(f"Transfer {data_tb}TB over {bandwidth_gbps*8}GbE: {transfer_time_seconds:
 
 ### 1.3.2 Fault Tolerance
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-handwritten.svg" alt="Handwritten: 1.3.2 Fault Tolerance" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-handwritten.svg" alt="Handwritten: 1.3.2 Fault Tolerance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-diagram.svg" alt="Diagram: 1.3.2 Fault Tolerance" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-diagram.svg" alt="Diagram: 1.3.2 Fault Tolerance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-sticky.svg" alt="Sticky Note: 1.3.2 Fault Tolerance" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-sticky.svg" alt="Sticky Note: 1.3.2 Fault Tolerance" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ print(f"Expected failures/day: {expected_failures_per_day:.1f}")
 
 ### 1.3.3 Consistency vs Availability
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-handwritten.svg" alt="Handwritten: 1.3.3 Consistency vs Availability" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-handwritten.svg" alt="Handwritten: 1.3.3 Consistency vs Availability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-diagram.svg" alt="Diagram: 1.3.3 Consistency vs Availability" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-diagram.svg" alt="Diagram: 1.3.3 Consistency vs Availability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-sticky.svg" alt="Sticky Note: 1.3.3 Consistency vs Availability" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-sticky.svg" alt="Sticky Note: 1.3.3 Consistency vs Availability" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ counts.saveAsTextFile("s3://bucket/output/")
 
 ### 1.7.1 Installing PySpark
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-handwritten.svg" alt="Handwritten: 1.7.1 Installing PySpark" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-handwritten.svg" alt="Handwritten: 1.7.1 Installing PySpark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-diagram.svg" alt="Diagram: 1.7.1 Installing PySpark" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-diagram.svg" alt="Diagram: 1.7.1 Installing PySpark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-sticky.svg" alt="Sticky Note: 1.7.1 Installing PySpark" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-sticky.svg" alt="Sticky Note: 1.7.1 Installing PySpark" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ pip install pyspark jupyter
 
 ### 1.7.2 Running Spark Locally
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-handwritten.svg" alt="Handwritten: 1.7.2 Running Spark Locally" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-handwritten.svg" alt="Handwritten: 1.7.2 Running Spark Locally" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-diagram.svg" alt="Diagram: 1.7.2 Running Spark Locally" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-diagram.svg" alt="Diagram: 1.7.2 Running Spark Locally" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-sticky.svg" alt="Sticky Note: 1.7.2 Running Spark Locally" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-sticky.svg" alt="Sticky Note: 1.7.2 Running Spark Locally" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ The `local[*]` mode runs on your machine using all available cores. This is suff
 
 ### 1.7.3 Docker Cluster for Development
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-handwritten.svg" alt="Handwritten: 1.7.3 Docker Cluster for Development" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-handwritten.svg" alt="Handwritten: 1.7.3 Docker Cluster for Development" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-diagram.svg" alt="Diagram: 1.7.3 Docker Cluster for Development" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-diagram.svg" alt="Diagram: 1.7.3 Docker Cluster for Development" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-sticky.svg" alt="Sticky Note: 1.7.3 Docker Cluster for Development" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-sticky.svg" alt="Sticky Note: 1.7.3 Docker Cluster for Development" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ class DistributedProcessor {
 
 ### Decision Flowchart
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
 </a>
 
 
@@ -655,14 +655,14 @@ DataFormatBenchmark.compareAll(20, 10_000_000);
 
 ### Case Study: Real-Time Fraud Detection Pipeline
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-handwritten.svg" alt="Handwritten: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-handwritten.svg" alt="Handwritten: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-diagram.svg" alt="Diagram: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-diagram.svg" alt="Diagram: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-sticky.svg" alt="Sticky Note: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-sticky.svg" alt="Sticky Note: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
 </a>
 
 
@@ -700,14 +700,14 @@ console.log(`Fraud capture improvement: 60% ? 94%`);
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -719,14 +719,14 @@ console.log(`Fraud capture improvement: 60% ? 94%`);
 
 ### Answer Key (Additional)
 
-<a href="../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-handwritten.svg" alt="Handwritten: Answer Key (Additional)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-handwritten.svg" alt="Handwritten: Answer Key (Additional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-diagram.svg" alt="Diagram: Answer Key (Additional)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-diagram.svg" alt="Diagram: Answer Key (Additional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-sticky.svg" alt="Sticky Note: Answer Key (Additional)" width="30%">
+<a href="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-sticky.svg" alt="Sticky Note: Answer Key (Additional)" width="30%">
 </a>
 
 

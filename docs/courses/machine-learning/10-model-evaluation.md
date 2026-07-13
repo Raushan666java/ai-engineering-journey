@@ -60,14 +60,14 @@ flowchart LR
 
 ### The Bias-Variance Tradeoff
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-handwritten.svg" alt="Handwritten: The Bias-Variance Tradeoff" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-handwritten.svg" alt="Handwritten: The Bias-Variance Tradeoff" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-diagram.svg" alt="Diagram: The Bias-Variance Tradeoff" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-diagram.svg" alt="Diagram: The Bias-Variance Tradeoff" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-sticky.svg" alt="Sticky Note: The Bias-Variance Tradeoff" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/the-bias-variance-tradeoff-sticky.svg" alt="Sticky Note: The Bias-Variance Tradeoff" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ The goal of model selection is to find the "sweet spot" that minimizes the total
 
 ### Bias-Variance Decomposition
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-handwritten.svg" alt="Handwritten: Bias-Variance Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-handwritten.svg" alt="Handwritten: Bias-Variance Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-diagram.svg" alt="Diagram: Bias-Variance Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-diagram.svg" alt="Diagram: Bias-Variance Decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-sticky.svg" alt="Sticky Note: Bias-Variance Decomposition" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/bias-variance-decomposition-sticky.svg" alt="Sticky Note: Bias-Variance Decomposition" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ xychart-beta
 
 ### Cross-Validation
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-handwritten.svg" alt="Handwritten: Cross-Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-handwritten.svg" alt="Handwritten: Cross-Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-diagram.svg" alt="Diagram: Cross-Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-diagram.svg" alt="Diagram: Cross-Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-sticky.svg" alt="Sticky Note: Cross-Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/cross-validation-sticky.svg" alt="Sticky Note: Cross-Validation" width="30%">
 </a>
 
 
@@ -174,14 +174,14 @@ flowchart TD
 
 ### Stratified Cross-Validation
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-handwritten.svg" alt="Handwritten: Stratified Cross-Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-handwritten.svg" alt="Handwritten: Stratified Cross-Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-diagram.svg" alt="Diagram: Stratified Cross-Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-diagram.svg" alt="Diagram: Stratified Cross-Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-sticky.svg" alt="Sticky Note: Stratified Cross-Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/stratified-cross-validation-sticky.svg" alt="Sticky Note: Stratified Cross-Validation" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ In standard K-fold cross-validation, each fold is created by random sampling wit
 
 ### Performance Metrics for Classification
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-handwritten.svg" alt="Handwritten: Performance Metrics for Classification" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-handwritten.svg" alt="Handwritten: Performance Metrics for Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-diagram.svg" alt="Diagram: Performance Metrics for Classification" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-diagram.svg" alt="Diagram: Performance Metrics for Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-sticky.svg" alt="Sticky Note: Performance Metrics for Classification" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/performance-metrics-for-classification-sticky.svg" alt="Sticky Note: Performance Metrics for Classification" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ In standard K-fold cross-validation, each fold is created by random sampling wit
 
 ### Multi-Class Classification Metrics
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-handwritten.svg" alt="Handwritten: Multi-Class Classification Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-handwritten.svg" alt="Handwritten: Multi-Class Classification Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-diagram.svg" alt="Diagram: Multi-Class Classification Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-diagram.svg" alt="Diagram: Multi-Class Classification Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-sticky.svg" alt="Sticky Note: Multi-Class Classification Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/multi-class-classification-metrics-sticky.svg" alt="Sticky Note: Multi-Class Classification Metrics" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ For problems with more than two classes, metrics are averaged across classes:
 
 ### Regression Metrics
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-handwritten.svg" alt="Handwritten: Regression Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-handwritten.svg" alt="Handwritten: Regression Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-diagram.svg" alt="Diagram: Regression Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-diagram.svg" alt="Diagram: Regression Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-sticky.svg" alt="Sticky Note: Regression Metrics" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/regression-metrics-sticky.svg" alt="Sticky Note: Regression Metrics" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ flowchart TD
 
 ### Learning Curves
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-handwritten.svg" alt="Handwritten: Learning Curves" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-handwritten.svg" alt="Handwritten: Learning Curves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-diagram.svg" alt="Diagram: Learning Curves" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-diagram.svg" alt="Diagram: Learning Curves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-sticky.svg" alt="Sticky Note: Learning Curves" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/learning-curves-sticky.svg" alt="Sticky Note: Learning Curves" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ xychart-beta
 
 ### Validation Curves
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-handwritten.svg" alt="Handwritten: Validation Curves" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-handwritten.svg" alt="Handwritten: Validation Curves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-diagram.svg" alt="Diagram: Validation Curves" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-diagram.svg" alt="Diagram: Validation Curves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-sticky.svg" alt="Sticky Note: Validation Curves" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/validation-curves-sticky.svg" alt="Sticky Note: Validation Curves" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ The optimal depth is where validation error is lowest (around 5-6 in this exampl
 
 ### Hyperparameter Tuning
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-handwritten.svg" alt="Handwritten: Hyperparameter Tuning" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-handwritten.svg" alt="Handwritten: Hyperparameter Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-diagram.svg" alt="Diagram: Hyperparameter Tuning" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-diagram.svg" alt="Diagram: Hyperparameter Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-sticky.svg" alt="Sticky Note: Hyperparameter Tuning" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/hyperparameter-tuning-sticky.svg" alt="Sticky Note: Hyperparameter Tuning" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ flowchart TD
 
 ### Imbalanced Classification
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-handwritten.svg" alt="Handwritten: Imbalanced Classification" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-handwritten.svg" alt="Handwritten: Imbalanced Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-diagram.svg" alt="Diagram: Imbalanced Classification" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-diagram.svg" alt="Diagram: Imbalanced Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-sticky.svg" alt="Sticky Note: Imbalanced Classification" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/imbalanced-classification-sticky.svg" alt="Sticky Note: Imbalanced Classification" width="30%">
 </a>
 
 
@@ -404,14 +404,14 @@ When one class significantly outnumbers another, standard metrics and training p
 
 ### Statistical Comparison of Models
 
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-handwritten.svg" alt="Handwritten: Statistical Comparison of Models" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-handwritten.svg" alt="Handwritten: Statistical Comparison of Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-diagram.svg" alt="Diagram: Statistical Comparison of Models" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-diagram.svg" alt="Diagram: Statistical Comparison of Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-sticky.svg" alt="Sticky Note: Statistical Comparison of Models" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/10-model-evaluation/statistical-comparison-of-models-sticky.svg" alt="Sticky Note: Statistical Comparison of Models" width="30%">
 </a>
 
 

@@ -51,14 +51,14 @@ flowchart LR
 
 ### Virtual Memory Concept
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-handwritten.svg" alt="Handwritten: Virtual Memory Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-handwritten.svg" alt="Handwritten: Virtual Memory Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-diagram.svg" alt="Diagram: Virtual Memory Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-diagram.svg" alt="Diagram: Virtual Memory Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-sticky.svg" alt="Sticky Note: Virtual Memory Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/virtual-memory-concept-sticky.svg" alt="Sticky Note: Virtual Memory Concept" width="30%">
 </a>
 
 
@@ -75,14 +75,14 @@ The virtual address space is divided into pages. Only pages that are actively ne
 
 ### Demand Paging
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-handwritten.svg" alt="Handwritten: Demand Paging" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-handwritten.svg" alt="Handwritten: Demand Paging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-diagram.svg" alt="Diagram: Demand Paging" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-diagram.svg" alt="Diagram: Demand Paging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-sticky.svg" alt="Sticky Note: Demand Paging" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/demand-paging-sticky.svg" alt="Sticky Note: Demand Paging" width="30%">
 </a>
 
 
@@ -374,14 +374,14 @@ if __name__ == "__main__":
 
 ### Page Fault Handling - Detailed Flow
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-handwritten.svg" alt="Handwritten: Page Fault Handling - Detailed Flow" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-handwritten.svg" alt="Handwritten: Page Fault Handling - Detailed Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-diagram.svg" alt="Diagram: Page Fault Handling - Detailed Flow" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-diagram.svg" alt="Diagram: Page Fault Handling - Detailed Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-sticky.svg" alt="Sticky Note: Page Fault Handling - Detailed Flow" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-fault-handling-detailed-flow-sticky.svg" alt="Sticky Note: Page Fault Handling - Detailed Flow" width="30%">
 </a>
 
 
@@ -512,14 +512,14 @@ Systems must keep fault rate extremely low (< 0.001%).
 
 ### Copy-on-Write (COW)
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-handwritten.svg" alt="Handwritten: Copy-on-Write (COW)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-handwritten.svg" alt="Handwritten: Copy-on-Write (COW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-diagram.svg" alt="Diagram: Copy-on-Write (COW)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-diagram.svg" alt="Diagram: Copy-on-Write (COW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-sticky.svg" alt="Sticky Note: Copy-on-Write (COW)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/copy-on-write-cow-sticky.svg" alt="Sticky Note: Copy-on-Write (COW)" width="30%">
 </a>
 
 
@@ -674,14 +674,14 @@ sim.print_stats()
 - **WHY O(P) for fork:** Must duplicate every PTE for the child process page table. But actual physical pages are not copied - only meta-data. This is thousands of times faster than copying all pages.
 ### Page Replacement
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-handwritten.svg" alt="Handwritten: Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-handwritten.svg" alt="Handwritten: Page Replacement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-diagram.svg" alt="Diagram: Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-diagram.svg" alt="Diagram: Page Replacement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-sticky.svg" alt="Sticky Note: Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-sticky.svg" alt="Sticky Note: Page Replacement" width="30%">
 </a>
 
 
@@ -691,14 +691,14 @@ When a page fault occurs and no free frames are available, the OS must **replace
 
 ### FIFO (First-In, First-Out)
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-handwritten.svg" alt="Handwritten: FIFO (First-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-handwritten.svg" alt="Handwritten: FIFO (First-In, First-Out)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-diagram.svg" alt="Diagram: FIFO (First-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-diagram.svg" alt="Diagram: FIFO (First-In, First-Out)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-sticky.svg" alt="Sticky Note: FIFO (First-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/fifo-first-in-first-out-sticky.svg" alt="Sticky Note: FIFO (First-In, First-Out)" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ Ref str: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5
 
 ### Optimal Page Replacement (OPT or MIN)
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-handwritten.svg" alt="Handwritten: Optimal Page Replacement (OPT or MIN)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-handwritten.svg" alt="Handwritten: Optimal Page Replacement (OPT or MIN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-diagram.svg" alt="Diagram: Optimal Page Replacement (OPT or MIN)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-diagram.svg" alt="Diagram: Optimal Page Replacement (OPT or MIN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-sticky.svg" alt="Sticky Note: Optimal Page Replacement (OPT or MIN)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/optimal-page-replacement-opt-or-min-sticky.svg" alt="Sticky Note: Optimal Page Replacement (OPT or MIN)" width="30%">
 </a>
 
 
@@ -1128,14 +1128,14 @@ class OptimalReplacement:
 
 ### LRU (Least Recently Used)
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-handwritten.svg" alt="Handwritten: LRU (Least Recently Used)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-handwritten.svg" alt="Handwritten: LRU (Least Recently Used)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-diagram.svg" alt="Diagram: LRU (Least Recently Used)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-diagram.svg" alt="Diagram: LRU (Least Recently Used)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-sticky.svg" alt="Sticky Note: LRU (Least Recently Used)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-least-recently-used-sticky.svg" alt="Sticky Note: LRU (Least Recently Used)" width="30%">
 </a>
 
 
@@ -1327,14 +1327,14 @@ class LRUReplacement:
 
 ### Second-Chance (Clock) Algorithm
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-handwritten.svg" alt="Handwritten: Second-Chance (Clock) Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-handwritten.svg" alt="Handwritten: Second-Chance (Clock) Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-diagram.svg" alt="Diagram: Second-Chance (Clock) Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-diagram.svg" alt="Diagram: Second-Chance (Clock) Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-sticky.svg" alt="Sticky Note: Second-Chance (Clock) Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/second-chance-clock-algorithm-sticky.svg" alt="Sticky Note: Second-Chance (Clock) Algorithm" width="30%">
 </a>
 
 
@@ -1545,14 +1545,14 @@ class ClockReplacement:
 | Used in real systems (Linux, BSD) | Not as good as true LRU for some workloads |
 ### MFU (Most Frequently Used) Page Replacement
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-handwritten.svg" alt="Handwritten: MFU (Most Frequently Used) Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-handwritten.svg" alt="Handwritten: MFU (Most Frequently Used) Page Replacement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-diagram.svg" alt="Diagram: MFU (Most Frequently Used) Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-diagram.svg" alt="Diagram: MFU (Most Frequently Used) Page Replacement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-sticky.svg" alt="Sticky Note: MFU (Most Frequently Used) Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/mfu-most-frequently-used-page-replacement-sticky.svg" alt="Sticky Note: MFU (Most Frequently Used) Page Replacement" width="30%">
 </a>
 
 
@@ -1706,14 +1706,14 @@ class MFUReplacement:
 
 ### LFU (Least Frequently Used) Page Replacement
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-handwritten.svg" alt="Handwritten: LFU (Least Frequently Used) Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-handwritten.svg" alt="Handwritten: LFU (Least Frequently Used) Page Replacement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-diagram.svg" alt="Diagram: LFU (Least Frequently Used) Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-diagram.svg" alt="Diagram: LFU (Least Frequently Used) Page Replacement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-sticky.svg" alt="Sticky Note: LFU (Least Frequently Used) Page Replacement" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lfu-least-frequently-used-page-replacement-sticky.svg" alt="Sticky Note: LFU (Least Frequently Used) Page Replacement" width="30%">
 </a>
 
 
@@ -1895,14 +1895,14 @@ class LFUReplacement:
 
 ### LRU Approximation Algorithms
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-handwritten.svg" alt="Handwritten: LRU Approximation Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-handwritten.svg" alt="Handwritten: LRU Approximation Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-diagram.svg" alt="Diagram: LRU Approximation Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-diagram.svg" alt="Diagram: LRU Approximation Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-sticky.svg" alt="Sticky Note: LRU Approximation Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/lru-approximation-algorithms-sticky.svg" alt="Sticky Note: LRU Approximation Algorithms" width="30%">
 </a>
 
 
@@ -1983,14 +1983,14 @@ After 5 ticks, Page B (01001000 = 72) is older than Page A (01110000 = 112)
 
 ### Page Replacement Algorithms Comparison Table
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-handwritten.svg" alt="Handwritten: Page Replacement Algorithms Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-handwritten.svg" alt="Handwritten: Page Replacement Algorithms Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-diagram.svg" alt="Diagram: Page Replacement Algorithms Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-diagram.svg" alt="Diagram: Page Replacement Algorithms Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-sticky.svg" alt="Sticky Note: Page Replacement Algorithms Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-replacement-algorithms-comparison-table-sticky.svg" alt="Sticky Note: Page Replacement Algorithms Comparison Table" width="30%">
 </a>
 
 
@@ -2007,14 +2007,14 @@ After 5 ticks, Page B (01001000 = 72) is older than Page A (01110000 = 112)
 
 ### Frame Allocation
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-handwritten.svg" alt="Handwritten: Frame Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-handwritten.svg" alt="Handwritten: Frame Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-diagram.svg" alt="Diagram: Frame Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-diagram.svg" alt="Diagram: Frame Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-sticky.svg" alt="Sticky Note: Frame Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/frame-allocation-sticky.svg" alt="Sticky Note: Frame Allocation" width="30%">
 </a>
 
 
@@ -2099,14 +2099,14 @@ efficient from others monitoring
 
 ### Thrashing
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-handwritten.svg" alt="Handwritten: Thrashing" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-handwritten.svg" alt="Handwritten: Thrashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-diagram.svg" alt="Diagram: Thrashing" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-diagram.svg" alt="Diagram: Thrashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-sticky.svg" alt="Sticky Note: Thrashing" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/thrashing-sticky.svg" alt="Sticky Note: Thrashing" width="30%">
 </a>
 
 
@@ -2216,14 +2216,14 @@ Page Fault Rate
 
 ### Working Set Model
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-handwritten.svg" alt="Handwritten: Working Set Model" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-handwritten.svg" alt="Handwritten: Working Set Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-diagram.svg" alt="Diagram: Working Set Model" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-diagram.svg" alt="Diagram: Working Set Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-sticky.svg" alt="Sticky Note: Working Set Model" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/working-set-model-sticky.svg" alt="Sticky Note: Working Set Model" width="30%">
 </a>
 
 
@@ -2292,14 +2292,14 @@ IF total_working_set << physical_memory:
 
 ### Page Size
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-handwritten.svg" alt="Handwritten: Page Size" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-handwritten.svg" alt="Handwritten: Page Size" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-diagram.svg" alt="Diagram: Page Size" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-diagram.svg" alt="Diagram: Page Size" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-sticky.svg" alt="Sticky Note: Page Size" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/page-size-sticky.svg" alt="Sticky Note: Page Size" width="30%">
 </a>
 
 
@@ -2342,14 +2342,14 @@ Packing a suitcase. Small pages = many small boxes (lots of labels to manage, bu
 
 ### Modern Developments
 
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-handwritten.svg" alt="Handwritten: Modern Developments" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-handwritten.svg" alt="Handwritten: Modern Developments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-diagram.svg" alt="Diagram: Modern Developments" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-diagram.svg" alt="Diagram: Modern Developments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-sticky.svg" alt="Sticky Note: Modern Developments" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/09-virtual-memory/modern-developments-sticky.svg" alt="Sticky Note: Modern Developments" width="30%">
 </a>
 
 

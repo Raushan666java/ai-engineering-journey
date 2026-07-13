@@ -11,14 +11,14 @@
 
 ### प्रत्येक अभ्यास सत्र का प्रारूप
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
 </a>
 
 
@@ -34,14 +34,14 @@ flowchart LR
 
 ### अभ्यास के नियम (ओशो के अनुसार)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
 </a>
 
 
@@ -63,14 +63,14 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ flowchart LR
 
 ### दैनिक योजना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: दैनिक योजना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: दैनिक योजना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: दैनिक योजना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: दैनिक योजना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: दैनिक योजना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: दैनिक योजना" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ flowchart LR
 
 ### सप्ताह १ के लिए विशेष निर्देश
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १ के लिए विशेष निर्देश" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १ के लिए विशेष निर्देश" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १ के लिए विशेष निर्देश" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १ के लिए विशेष निर्देश" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १ के लिए विशेष निर्देश" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १ के लिए विशेष निर्देश" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ flowchart LR
 
 ### सप्ताह १: श्वास और शरीर (दिन १-७)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
 </a>
 
 
@@ -171,14 +171,14 @@ flowchart LR
 
 ### सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ flowchart LR
 
 ### सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ flowchart LR
 
 ### २१ दिन के बाद — आत्म-मूल्यांकन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ flowchart LR
 
 ### सप्ताह १-२: श्वास गहन (दिन १-१४)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
 </a>
 
 
@@ -290,14 +290,14 @@ flowchart LR
 
 ### सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ flowchart LR
 
 ### सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ flowchart LR
 
 ### ४० दिन का उपलब्धि स्तर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: ४० दिन का उपलब्धि स्तर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: ४० दिन का उपलब्धि स्तर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: ४० दिन का उपलब्धि स्तर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: ४० दिन का उपलब्धि स्तर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: ४० दिन का उपलब्धि स्तर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: ४० दिन का उपलब्धि स्तर" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
 </a>
 
 
@@ -390,14 +390,14 @@ flowchart LR
 
 ### ११२-दिवसीय गैंट चार्ट
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: ११२-दिवसीय गैंट चार्ट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: ११२-दिवसीय गैंट चार्ट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: ११२-दिवसीय गैंट चार्ट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: ११२-दिवसीय गैंट चार्ट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: ११२-दिवसीय गैंट चार्ट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: ११२-दिवसीय गैंट चार्ट" width="30%">
 </a>
 
 
@@ -444,14 +444,14 @@ gantt
 
 ### क्रमबद्ध तकनीक सूची (११२ दिन)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
 </a>
 
 
@@ -477,14 +477,14 @@ gantt
 
 ### प्रत्येक तकनीक के लिए सत्र संरचना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ gantt
 
 ### सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ gantt
 
 ### दैनिक अभ्यास लॉग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: दैनिक अभ्यास लॉग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: दैनिक अभ्यास लॉग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: दैनिक अभ्यास लॉग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: दैनिक अभ्यास लॉग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: दैनिक अभ्यास लॉग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: दैनिक अभ्यास लॉग" width="30%">
 </a>
 
 
@@ -550,14 +550,14 @@ gantt
 
 ### साप्ताहिक प्रगति मूल्यांकन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: साप्ताहिक प्रगति मूल्यांकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: साप्ताहिक प्रगति मूल्यांकन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: साप्ताहिक प्रगति मूल्यांकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: साप्ताहिक प्रगति मूल्यांकन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: साप्ताहिक प्रगति मूल्यांकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: साप्ताहिक प्रगति मूल्यांकन" width="30%">
 </a>
 
 
@@ -572,14 +572,14 @@ gantt
 
 ### पूरी यात्रा की प्रगति डैशबोर्ड
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
 </a>
 
 
@@ -609,14 +609,14 @@ gantt
 
 ### खाली प्रगति ट्रैकर (प्रिंट करने योग्य)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
 </a>
 
 

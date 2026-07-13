@@ -14,14 +14,14 @@ By the end of this course, you will have three production-grade portfolio projec
 
 ### Hard Requirements
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-handwritten.svg" alt="Handwritten: Hard Requirements" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-handwritten.svg" alt="Handwritten: Hard Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-diagram.svg" alt="Diagram: Hard Requirements" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-diagram.svg" alt="Diagram: Hard Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-sticky.svg" alt="Sticky Note: Hard Requirements" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/hard-requirements-sticky.svg" alt="Sticky Note: Hard Requirements" width="30%">
 </a>
 
 
@@ -36,14 +36,14 @@ By the end of this course, you will have three production-grade portfolio projec
 
 ### Nice-to-Have (not required, but helpful)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-handwritten.svg" alt="Handwritten: Nice-to-Have (not required, but helpful)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-handwritten.svg" alt="Handwritten: Nice-to-Have (not required, but helpful)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-diagram.svg" alt="Diagram: Nice-to-Have (not required, but helpful)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-diagram.svg" alt="Diagram: Nice-to-Have (not required, but helpful)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-sticky.svg" alt="Sticky Note: Nice-to-Have (not required, but helpful)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/nice-to-have-not-required-but-helpful-sticky.svg" alt="Sticky Note: Nice-to-Have (not required, but helpful)" width="30%">
 </a>
 
 
@@ -57,14 +57,14 @@ By the end of this course, you will have three production-grade portfolio projec
 
 ### Tools You'll Need
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-handwritten.svg" alt="Handwritten: Tools You'll Need" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-handwritten.svg" alt="Handwritten: Tools You'll Need" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-diagram.svg" alt="Diagram: Tools You'll Need" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-diagram.svg" alt="Diagram: Tools You'll Need" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-sticky.svg" alt="Sticky Note: Tools You'll Need" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-you-ll-need-sticky.svg" alt="Sticky Note: Tools You'll Need" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Chapter 09 — AI System Design
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-handwritten.svg" alt="Handwritten: Chapter 09 — AI System Design" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-handwritten.svg" alt="Handwritten: Chapter 09 — AI System Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-diagram.svg" alt="Diagram: Chapter 09 — AI System Design" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-diagram.svg" alt="Diagram: Chapter 09 — AI System Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-sticky.svg" alt="Sticky Note: Chapter 09 — AI System Design" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-09-ai-system-design-sticky.svg" alt="Sticky Note: Chapter 09 — AI System Design" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Chapter 10 — Prompt Engineering Mastery
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-handwritten.svg" alt="Handwritten: Chapter 10 — Prompt Engineering Mastery" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-handwritten.svg" alt="Handwritten: Chapter 10 — Prompt Engineering Mastery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-diagram.svg" alt="Diagram: Chapter 10 — Prompt Engineering Mastery" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-diagram.svg" alt="Diagram: Chapter 10 — Prompt Engineering Mastery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-sticky.svg" alt="Sticky Note: Chapter 10 — Prompt Engineering Mastery" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-10-prompt-engineering-mastery-sticky.svg" alt="Sticky Note: Chapter 10 — Prompt Engineering Mastery" width="30%">
 </a>
 
 
@@ -143,14 +143,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Chapter 11 — AI Testing & Evaluation
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-handwritten.svg" alt="Handwritten: Chapter 11 — AI Testing & Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-handwritten.svg" alt="Handwritten: Chapter 11 — AI Testing & Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-diagram.svg" alt="Diagram: Chapter 11 — AI Testing & Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-diagram.svg" alt="Diagram: Chapter 11 — AI Testing & Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-sticky.svg" alt="Sticky Note: Chapter 11 — AI Testing & Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-11-ai-testing-evaluation-sticky.svg" alt="Sticky Note: Chapter 11 — AI Testing & Evaluation" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Chapter 12 — AI Observability & Debugging
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-handwritten.svg" alt="Handwritten: Chapter 12 — AI Observability & Debugging" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-handwritten.svg" alt="Handwritten: Chapter 12 — AI Observability & Debugging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-diagram.svg" alt="Diagram: Chapter 12 — AI Observability & Debugging" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-diagram.svg" alt="Diagram: Chapter 12 — AI Observability & Debugging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-sticky.svg" alt="Sticky Note: Chapter 12 — AI Observability & Debugging" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-12-ai-observability-debugging-sticky.svg" alt="Sticky Note: Chapter 12 — AI Observability & Debugging" width="30%">
 </a>
 
 
@@ -185,14 +185,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Chapter 13 — Advanced Vector Search
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-handwritten.svg" alt="Handwritten: Chapter 13 — Advanced Vector Search" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-handwritten.svg" alt="Handwritten: Chapter 13 — Advanced Vector Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-diagram.svg" alt="Diagram: Chapter 13 — Advanced Vector Search" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-diagram.svg" alt="Diagram: Chapter 13 — Advanced Vector Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-sticky.svg" alt="Sticky Note: Chapter 13 — Advanced Vector Search" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/chapter-13-advanced-vector-search-sticky.svg" alt="Sticky Note: Chapter 13 — Advanced Vector Search" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### How the Advanced Chapters Fit
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-handwritten.svg" alt="Handwritten: How the Advanced Chapters Fit" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-handwritten.svg" alt="Handwritten: How the Advanced Chapters Fit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-diagram.svg" alt="Diagram: How the Advanced Chapters Fit" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-diagram.svg" alt="Diagram: How the Advanced Chapters Fit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-sticky.svg" alt="Sticky Note: How the Advanced Chapters Fit" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/how-the-advanced-chapters-fit-sticky.svg" alt="Sticky Note: How the Advanced Chapters Fit" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-handwritten.svg" alt="Handwritten: Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-handwritten.svg" alt="Handwritten: Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-diagram.svg" alt="Diagram: Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-diagram.svg" alt="Diagram: Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-sticky.svg" alt="Sticky Note: Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-0-backend-gap-fill-week-1-16-hours-sticky.svg" alt="Sticky Note: Phase 0 — Backend Gap-Fill (Week 1, ~16 hours)" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-handwritten.svg" alt="Handwritten: Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-handwritten.svg" alt="Handwritten: Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-diagram.svg" alt="Diagram: Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-diagram.svg" alt="Diagram: Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-sticky.svg" alt="Sticky Note: Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-1-python-fastapi-asyncio-weeks-2-3-30-hours-sticky.svg" alt="Sticky Note: Phase 1 — Python + FastAPI + AsyncIO (Weeks 2-3, ~30 hours)" width="30%">
 </a>
 
 
@@ -300,14 +300,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-handwritten.svg" alt="Handwritten: Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-handwritten.svg" alt="Handwritten: Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-diagram.svg" alt="Diagram: Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-diagram.svg" alt="Diagram: Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-sticky.svg" alt="Sticky Note: Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-2-llm-fundamentals-rag-theory-weeks-4-5-25-hours-sticky.svg" alt="Sticky Note: Phase 2 — LLM Fundamentals + RAG Theory (Weeks 4-5, ~25 hours)" width="30%">
 </a>
 
 
@@ -338,14 +338,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-handwritten.svg" alt="Handwritten: Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-handwritten.svg" alt="Handwritten: Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-diagram.svg" alt="Diagram: Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-diagram.svg" alt="Diagram: Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-sticky.svg" alt="Sticky Note: Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-3-ai-agents-langgraph-crewai-mcp-weeks-6-8-35-hours-sticky.svg" alt="Sticky Note: Phase 3 — AI Agents: LangGraph, CrewAI, MCP (Weeks 6-8, ~35 hours)" width="30%">
 </a>
 
 
@@ -376,14 +376,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-handwritten.svg" alt="Handwritten: Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-handwritten.svg" alt="Handwritten: Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-diagram.svg" alt="Diagram: Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-diagram.svg" alt="Diagram: Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-sticky.svg" alt="Sticky Note: Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-4-production-hardening-weeks-9-10-24-hours-sticky.svg" alt="Sticky Note: Phase 4 — Production Hardening (Weeks 9-10, ~24 hours)" width="30%">
 </a>
 
 
@@ -408,14 +408,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-handwritten.svg" alt="Handwritten: Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-handwritten.svg" alt="Handwritten: Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-diagram.svg" alt="Diagram: Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-diagram.svg" alt="Diagram: Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-sticky.svg" alt="Sticky Note: Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/phase-5-portfolio-market-positioning-weeks-11-12-15-hours-sticky.svg" alt="Sticky Note: Phase 5 — Portfolio + Market Positioning (Weeks 11-12, ~15 hours)" width="30%">
 </a>
 
 
@@ -439,14 +439,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Project 1 — Real Estate Booking Module (FastAPI)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-handwritten.svg" alt="Handwritten: Project 1 — Real Estate Booking Module (FastAPI)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-handwritten.svg" alt="Handwritten: Project 1 — Real Estate Booking Module (FastAPI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-diagram.svg" alt="Diagram: Project 1 — Real Estate Booking Module (FastAPI)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-diagram.svg" alt="Diagram: Project 1 — Real Estate Booking Module (FastAPI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-sticky.svg" alt="Sticky Note: Project 1 — Real Estate Booking Module (FastAPI)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-1-real-estate-booking-module-fastapi-sticky.svg" alt="Sticky Note: Project 1 — Real Estate Booking Module (FastAPI)" width="30%">
 </a>
 
 
@@ -460,14 +460,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Project 2 — RAG Memory API
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-handwritten.svg" alt="Handwritten: Project 2 — RAG Memory API" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-handwritten.svg" alt="Handwritten: Project 2 — RAG Memory API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-diagram.svg" alt="Diagram: Project 2 — RAG Memory API" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-diagram.svg" alt="Diagram: Project 2 — RAG Memory API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-sticky.svg" alt="Sticky Note: Project 2 — RAG Memory API" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-2-rag-memory-api-sticky.svg" alt="Sticky Note: Project 2 — RAG Memory API" width="30%">
 </a>
 
 
@@ -481,14 +481,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Project 3 — LangGraph Agent (Purvanchal Rebuild)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-handwritten.svg" alt="Handwritten: Project 3 — LangGraph Agent (Purvanchal Rebuild)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-handwritten.svg" alt="Handwritten: Project 3 — LangGraph Agent (Purvanchal Rebuild)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-diagram.svg" alt="Diagram: Project 3 — LangGraph Agent (Purvanchal Rebuild)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-diagram.svg" alt="Diagram: Project 3 — LangGraph Agent (Purvanchal Rebuild)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-sticky.svg" alt="Sticky Note: Project 3 — LangGraph Agent (Purvanchal Rebuild)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/project-3-langgraph-agent-purvanchal-rebuild-sticky.svg" alt="Sticky Note: Project 3 — LangGraph Agent (Purvanchal Rebuild)" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Bonus Project Ideas
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-handwritten.svg" alt="Handwritten: Bonus Project Ideas" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-handwritten.svg" alt="Handwritten: Bonus Project Ideas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-diagram.svg" alt="Diagram: Bonus Project Ideas" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-diagram.svg" alt="Diagram: Bonus Project Ideas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-sticky.svg" alt="Sticky Note: Bonus Project Ideas" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/bonus-project-ideas-sticky.svg" alt="Sticky Note: Bonus Project Ideas" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Month 1 — Foundation (Weeks 1-4)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-handwritten.svg" alt="Handwritten: Month 1 — Foundation (Weeks 1-4)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-handwritten.svg" alt="Handwritten: Month 1 — Foundation (Weeks 1-4)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-diagram.svg" alt="Diagram: Month 1 — Foundation (Weeks 1-4)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-diagram.svg" alt="Diagram: Month 1 — Foundation (Weeks 1-4)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-sticky.svg" alt="Sticky Note: Month 1 — Foundation (Weeks 1-4)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-1-foundation-weeks-1-4-sticky.svg" alt="Sticky Note: Month 1 — Foundation (Weeks 1-4)" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Month 2 — Core AI (Weeks 5-8)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-handwritten.svg" alt="Handwritten: Month 2 — Core AI (Weeks 5-8)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-handwritten.svg" alt="Handwritten: Month 2 — Core AI (Weeks 5-8)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-diagram.svg" alt="Diagram: Month 2 — Core AI (Weeks 5-8)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-diagram.svg" alt="Diagram: Month 2 — Core AI (Weeks 5-8)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-sticky.svg" alt="Sticky Note: Month 2 — Core AI (Weeks 5-8)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-2-core-ai-weeks-5-8-sticky.svg" alt="Sticky Note: Month 2 — Core AI (Weeks 5-8)" width="30%">
 </a>
 
 
@@ -568,14 +568,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Month 3 — Hardening + Market (Weeks 9-12)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-handwritten.svg" alt="Handwritten: Month 3 — Hardening + Market (Weeks 9-12)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-handwritten.svg" alt="Handwritten: Month 3 — Hardening + Market (Weeks 9-12)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-diagram.svg" alt="Diagram: Month 3 — Hardening + Market (Weeks 9-12)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-diagram.svg" alt="Diagram: Month 3 — Hardening + Market (Weeks 9-12)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-sticky.svg" alt="Sticky Note: Month 3 — Hardening + Market (Weeks 9-12)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/month-3-hardening-market-weeks-9-12-sticky.svg" alt="Sticky Note: Month 3 — Hardening + Market (Weeks 9-12)" width="30%">
 </a>
 
 
@@ -588,14 +588,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Post-Course — Ongoing (Weeks 13+)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-handwritten.svg" alt="Handwritten: Post-Course — Ongoing (Weeks 13+)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-handwritten.svg" alt="Handwritten: Post-Course — Ongoing (Weeks 13+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-diagram.svg" alt="Diagram: Post-Course — Ongoing (Weeks 13+)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-diagram.svg" alt="Diagram: Post-Course — Ongoing (Weeks 13+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-sticky.svg" alt="Sticky Note: Post-Course — Ongoing (Weeks 13+)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/post-course-ongoing-weeks-13-sticky.svg" alt="Sticky Note: Post-Course — Ongoing (Weeks 13+)" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Role Types
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-handwritten.svg" alt="Handwritten: Role Types" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-handwritten.svg" alt="Handwritten: Role Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-diagram.svg" alt="Diagram: Role Types" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-diagram.svg" alt="Diagram: Role Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-sticky.svg" alt="Sticky Note: Role Types" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/role-types-sticky.svg" alt="Sticky Note: Role Types" width="30%">
 </a>
 
 
@@ -633,14 +633,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Job Sources
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-handwritten.svg" alt="Handwritten: Job Sources" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-handwritten.svg" alt="Handwritten: Job Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-diagram.svg" alt="Diagram: Job Sources" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-diagram.svg" alt="Diagram: Job Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-sticky.svg" alt="Sticky Note: Job Sources" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/job-sources-sticky.svg" alt="Sticky Note: Job Sources" width="30%">
 </a>
 
 
@@ -657,14 +657,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Application Strategy
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-handwritten.svg" alt="Handwritten: Application Strategy" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-handwritten.svg" alt="Handwritten: Application Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-diagram.svg" alt="Diagram: Application Strategy" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-diagram.svg" alt="Diagram: Application Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-sticky.svg" alt="Sticky Note: Application Strategy" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/application-strategy-sticky.svg" alt="Sticky Note: Application Strategy" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Interview Preparation
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-handwritten.svg" alt="Handwritten: Interview Preparation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-handwritten.svg" alt="Handwritten: Interview Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-diagram.svg" alt="Diagram: Interview Preparation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-diagram.svg" alt="Diagram: Interview Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-sticky.svg" alt="Sticky Note: Interview Preparation" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/interview-preparation-sticky.svg" alt="Sticky Note: Interview Preparation" width="30%">
 </a>
 
 
@@ -728,14 +728,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Learning
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/learning-handwritten.svg" alt="Handwritten: Learning" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/learning-handwritten.svg" alt="Handwritten: Learning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/learning-diagram.svg" alt="Diagram: Learning" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/learning-diagram.svg" alt="Diagram: Learning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/learning-sticky.svg" alt="Sticky Note: Learning" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/learning-sticky.svg" alt="Sticky Note: Learning" width="30%">
 </a>
 
 
@@ -750,14 +750,14 @@ The following chapters cover advanced production AI topics. These are standalone
 
 ### Tools
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-handwritten.svg" alt="Handwritten: Tools" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-handwritten.svg" alt="Handwritten: Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-diagram.svg" alt="Diagram: Tools" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-diagram.svg" alt="Diagram: Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/00-index/tools-sticky.svg" alt="Sticky Note: Tools" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/00-index/tools-sticky.svg" alt="Sticky Note: Tools" width="30%">
 </a>
 
 

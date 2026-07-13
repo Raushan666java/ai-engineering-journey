@@ -49,14 +49,14 @@ JPA (Jakarta Persistence API) is the standard Java specification for object-rela
 
 ### 1.1 Field vs Property Access
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-handwritten.svg" alt="Handwritten: 1.1 Field vs Property Access" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-handwritten.svg" alt="Handwritten: 1.1 Field vs Property Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-diagram.svg" alt="Diagram: 1.1 Field vs Property Access" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-diagram.svg" alt="Diagram: 1.1 Field vs Property Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-sticky.svg" alt="Sticky Note: 1.1 Field vs Property Access" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-1-field-vs-property-access-sticky.svg" alt="Sticky Note: 1.1 Field vs Property Access" width="30%">
 </a>
 
 
@@ -128,14 +128,14 @@ public class MixedAccessEntity {
 
 ### 1.2 @Entity and @Table
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-handwritten.svg" alt="Handwritten: 1.2 @Entity and @Table" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-handwritten.svg" alt="Handwritten: 1.2 @Entity and @Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-diagram.svg" alt="Diagram: 1.2 @Entity and @Table" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-diagram.svg" alt="Diagram: 1.2 @Entity and @Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-sticky.svg" alt="Sticky Note: 1.2 @Entity and @Table" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-2-entity-and-table-sticky.svg" alt="Sticky Note: 1.2 @Entity and @Table" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ public class BlogPost {
 
 ### 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-handwritten.svg" alt="Handwritten: 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-handwritten.svg" alt="Handwritten: 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-diagram.svg" alt="Diagram: 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-diagram.svg" alt="Diagram: 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-sticky.svg" alt="Sticky Note: 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-3-id-and-generatedvalue-four-generation-strategies-sticky.svg" alt="Sticky Note: 1.3 @Id and @GeneratedValue Ã¢â‚¬â€ Four Generation Strategies" width="30%">
 </a>
 
 
@@ -257,14 +257,14 @@ public class UuidExample {
 
 ### 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-handwritten.svg" alt="Handwritten: 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-handwritten.svg" alt="Handwritten: 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-diagram.svg" alt="Diagram: 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-diagram.svg" alt="Diagram: 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-sticky.svg" alt="Sticky Note: 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-4-column-fine-tuning-column-definitions-sticky.svg" alt="Sticky Note: 1.4 @Column Ã¢â‚¬â€ Fine-Tuning Column Definitions" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ public class Product {
 
 ### 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-handwritten.svg" alt="Handwritten: 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-handwritten.svg" alt="Handwritten: 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-diagram.svg" alt="Diagram: 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-diagram.svg" alt="Diagram: 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-sticky.svg" alt="Sticky Note: 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-5-basic-fetch-and-optional-sticky.svg" alt="Sticky Note: 1.5 @Basic Ã¢â‚¬â€ Fetch and Optional" width="30%">
 </a>
 
 
@@ -357,14 +357,14 @@ public class Document {
 
 ### 1.6 @Transient
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-handwritten.svg" alt="Handwritten: 1.6 @Transient" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-handwritten.svg" alt="Handwritten: 1.6 @Transient" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-diagram.svg" alt="Diagram: 1.6 @Transient" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-diagram.svg" alt="Diagram: 1.6 @Transient" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-sticky.svg" alt="Sticky Note: 1.6 @Transient" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-6-transient-sticky.svg" alt="Sticky Note: 1.6 @Transient" width="30%">
 </a>
 
 
@@ -400,14 +400,14 @@ public class Invoice {
 
 ### 1.7 @Enumerated
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-handwritten.svg" alt="Handwritten: 1.7 @Enumerated" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-handwritten.svg" alt="Handwritten: 1.7 @Enumerated" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-diagram.svg" alt="Diagram: 1.7 @Enumerated" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-diagram.svg" alt="Diagram: 1.7 @Enumerated" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-sticky.svg" alt="Sticky Note: 1.7 @Enumerated" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-7-enumerated-sticky.svg" alt="Sticky Note: 1.7 @Enumerated" width="30%">
 </a>
 
 
@@ -436,14 +436,14 @@ public class Order {
 
 ### 1.8 @Temporal (Deprecated) vs Java 8 Time API
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-handwritten.svg" alt="Handwritten: 1.8 @Temporal (Deprecated) vs Java 8 Time API" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-handwritten.svg" alt="Handwritten: 1.8 @Temporal (Deprecated) vs Java 8 Time API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-diagram.svg" alt="Diagram: 1.8 @Temporal (Deprecated) vs Java 8 Time API" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-diagram.svg" alt="Diagram: 1.8 @Temporal (Deprecated) vs Java 8 Time API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-sticky.svg" alt="Sticky Note: 1.8 @Temporal (Deprecated) vs Java 8 Time API" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-8-temporal-deprecated-vs-java-8-time-api-sticky.svg" alt="Sticky Note: 1.8 @Temporal (Deprecated) vs Java 8 Time API" width="30%">
 </a>
 
 
@@ -491,14 +491,14 @@ Hibernate 6 automatically handles the Java 8 time types. No annotations needed. 
 
 ### 1.9 @Lob Ã¢â‚¬â€ Large Objects
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-handwritten.svg" alt="Handwritten: 1.9 @Lob Ã¢â‚¬â€ Large Objects" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-handwritten.svg" alt="Handwritten: 1.9 @Lob Ã¢â‚¬â€ Large Objects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-diagram.svg" alt="Diagram: 1.9 @Lob Ã¢â‚¬â€ Large Objects" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-diagram.svg" alt="Diagram: 1.9 @Lob Ã¢â‚¬â€ Large Objects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-sticky.svg" alt="Sticky Note: 1.9 @Lob Ã¢â‚¬â€ Large Objects" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-9-lob-large-objects-sticky.svg" alt="Sticky Note: 1.9 @Lob Ã¢â‚¬â€ Large Objects" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ public class Attachment {
 
 ### 1.10 @CreationTimestamp and @UpdateTimestamp
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-handwritten.svg" alt="Handwritten: 1.10 @CreationTimestamp and @UpdateTimestamp" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-handwritten.svg" alt="Handwritten: 1.10 @CreationTimestamp and @UpdateTimestamp" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-diagram.svg" alt="Diagram: 1.10 @CreationTimestamp and @UpdateTimestamp" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-diagram.svg" alt="Diagram: 1.10 @CreationTimestamp and @UpdateTimestamp" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-sticky.svg" alt="Sticky Note: 1.10 @CreationTimestamp and @UpdateTimestamp" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/1-10-creationtimestamp-and-updatetimestamp-sticky.svg" alt="Sticky Note: 1.10 @CreationTimestamp and @UpdateTimestamp" width="30%">
 </a>
 
 
@@ -563,14 +563,14 @@ These are Hibernate-specific annotations (not JPA standard). For a JPA-standard 
 
 ### 2.1 @OneToOne
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-handwritten.svg" alt="Handwritten: 2.1 @OneToOne" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-handwritten.svg" alt="Handwritten: 2.1 @OneToOne" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-diagram.svg" alt="Diagram: 2.1 @OneToOne" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-diagram.svg" alt="Diagram: 2.1 @OneToOne" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-sticky.svg" alt="Sticky Note: 2.1 @OneToOne" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-1-onetoone-sticky.svg" alt="Sticky Note: 2.1 @OneToOne" width="30%">
 </a>
 
 
@@ -645,14 +645,14 @@ public class Office {
 
 ### 2.2 @OneToMany / @ManyToOne (Bidirectional)
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-handwritten.svg" alt="Handwritten: 2.2 @OneToMany / @ManyToOne (Bidirectional)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-handwritten.svg" alt="Handwritten: 2.2 @OneToMany / @ManyToOne (Bidirectional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-diagram.svg" alt="Diagram: 2.2 @OneToMany / @ManyToOne (Bidirectional)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-diagram.svg" alt="Diagram: 2.2 @OneToMany / @ManyToOne (Bidirectional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-sticky.svg" alt="Sticky Note: 2.2 @OneToMany / @ManyToOne (Bidirectional)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-2-onetomany-manytoone-bidirectional-sticky.svg" alt="Sticky Note: 2.2 @OneToMany / @ManyToOne (Bidirectional)" width="30%">
 </a>
 
 
@@ -705,14 +705,14 @@ public class Product {
 
 ### 2.3 @OneToMany (Unidirectional with @JoinColumn)
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-handwritten.svg" alt="Handwritten: 2.3 @OneToMany (Unidirectional with @JoinColumn)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-handwritten.svg" alt="Handwritten: 2.3 @OneToMany (Unidirectional with @JoinColumn)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-diagram.svg" alt="Diagram: 2.3 @OneToMany (Unidirectional with @JoinColumn)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-diagram.svg" alt="Diagram: 2.3 @OneToMany (Unidirectional with @JoinColumn)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-sticky.svg" alt="Sticky Note: 2.3 @OneToMany (Unidirectional with @JoinColumn)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-3-onetomany-unidirectional-with-joincolumn-sticky.svg" alt="Sticky Note: 2.3 @OneToMany (Unidirectional with @JoinColumn)" width="30%">
 </a>
 
 
@@ -747,14 +747,14 @@ This approach puts the FK on the child table without requiring a `mappedBy` back
 
 ### 2.4 @ManyToMany
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-handwritten.svg" alt="Handwritten: 2.4 @ManyToMany" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-handwritten.svg" alt="Handwritten: 2.4 @ManyToMany" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-diagram.svg" alt="Diagram: 2.4 @ManyToMany" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-diagram.svg" alt="Diagram: 2.4 @ManyToMany" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-sticky.svg" alt="Sticky Note: 2.4 @ManyToMany" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-4-manytomany-sticky.svg" alt="Sticky Note: 2.4 @ManyToMany" width="30%">
 </a>
 
 
@@ -811,14 +811,14 @@ public class Course {
 
 ### 2.5 orphanRemoval
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-handwritten.svg" alt="Handwritten: 2.5 orphanRemoval" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-handwritten.svg" alt="Handwritten: 2.5 orphanRemoval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-diagram.svg" alt="Diagram: 2.5 orphanRemoval" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-diagram.svg" alt="Diagram: 2.5 orphanRemoval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-sticky.svg" alt="Sticky Note: 2.5 orphanRemoval" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-5-orphanremoval-sticky.svg" alt="Sticky Note: 2.5 orphanRemoval" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@ authorRepository.save(author);       // DELETE FROM books WHERE id = ?
 
 ### 2.6 Relationships in equals() and hashCode()
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-handwritten.svg" alt="Handwritten: 2.6 Relationships in equals() and hashCode()" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-handwritten.svg" alt="Handwritten: 2.6 Relationships in equals() and hashCode()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-diagram.svg" alt="Diagram: 2.6 Relationships in equals() and hashCode()" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-diagram.svg" alt="Diagram: 2.6 Relationships in equals() and hashCode()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-sticky.svg" alt="Sticky Note: 2.6 Relationships in equals() and hashCode()" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/2-6-relationships-in-equals-and-hashcode-sticky.svg" alt="Sticky Note: 2.6 Relationships in equals() and hashCode()" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ public class Post {
 
 ### When to Use Each
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
 </a>
 
 
@@ -975,14 +975,14 @@ private List<OwnedEntity> ownedEntities = new ArrayList<>();
 
 ### 4.1 LAZY vs EAGER
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-handwritten.svg" alt="Handwritten: 4.1 LAZY vs EAGER" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-handwritten.svg" alt="Handwritten: 4.1 LAZY vs EAGER" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-diagram.svg" alt="Diagram: 4.1 LAZY vs EAGER" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-diagram.svg" alt="Diagram: 4.1 LAZY vs EAGER" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-sticky.svg" alt="Sticky Note: 4.1 LAZY vs EAGER" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-1-lazy-vs-eager-sticky.svg" alt="Sticky Note: 4.1 LAZY vs EAGER" width="30%">
 </a>
 
 
@@ -1012,14 +1012,14 @@ public class Library {
 
 ### 4.2 The n+1 Problem
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-handwritten.svg" alt="Handwritten: 4.2 The n+1 Problem" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-handwritten.svg" alt="Handwritten: 4.2 The n+1 Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-diagram.svg" alt="Diagram: 4.2 The n+1 Problem" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-diagram.svg" alt="Diagram: 4.2 The n+1 Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-sticky.svg" alt="Sticky Note: 4.2 The n+1 Problem" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-2-the-n-1-problem-sticky.svg" alt="Sticky Note: 4.2 The n+1 Problem" width="30%">
 </a>
 
 
@@ -1145,14 +1145,14 @@ private List<Comment> comments = new ArrayList<>();
 
 ### 4.3 Fetch Profiles
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-handwritten.svg" alt="Handwritten: 4.3 Fetch Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-handwritten.svg" alt="Handwritten: 4.3 Fetch Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-diagram.svg" alt="Diagram: 4.3 Fetch Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-diagram.svg" alt="Diagram: 4.3 Fetch Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-sticky.svg" alt="Sticky Note: 4.3 Fetch Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/4-3-fetch-profiles-sticky.svg" alt="Sticky Note: 4.3 Fetch Profiles" width="30%">
 </a>
 
 
@@ -1181,14 +1181,14 @@ public class Post {
 
 ### 5.1 SINGLE_TABLE (Default)
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-handwritten.svg" alt="Handwritten: 5.1 SINGLE_TABLE (Default)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-handwritten.svg" alt="Handwritten: 5.1 SINGLE_TABLE (Default)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-diagram.svg" alt="Diagram: 5.1 SINGLE_TABLE (Default)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-diagram.svg" alt="Diagram: 5.1 SINGLE_TABLE (Default)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-sticky.svg" alt="Sticky Note: 5.1 SINGLE_TABLE (Default)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-1-single-table-default-sticky.svg" alt="Sticky Note: 5.1 SINGLE_TABLE (Default)" width="30%">
 </a>
 
 
@@ -1238,14 +1238,14 @@ public class Truck extends Vehicle {
 
 ### 5.2 JOINED
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-handwritten.svg" alt="Handwritten: 5.2 JOINED" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-handwritten.svg" alt="Handwritten: 5.2 JOINED" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-diagram.svg" alt="Diagram: 5.2 JOINED" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-diagram.svg" alt="Diagram: 5.2 JOINED" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-sticky.svg" alt="Sticky Note: 5.2 JOINED" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-2-joined-sticky.svg" alt="Sticky Note: 5.2 JOINED" width="30%">
 </a>
 
 
@@ -1294,14 +1294,14 @@ public class PayPalPayment extends Payment {
 
 ### 5.3 TABLE_PER_CLASS
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-handwritten.svg" alt="Handwritten: 5.3 TABLE_PER_CLASS" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-handwritten.svg" alt="Handwritten: 5.3 TABLE_PER_CLASS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-diagram.svg" alt="Diagram: 5.3 TABLE_PER_CLASS" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-diagram.svg" alt="Diagram: 5.3 TABLE_PER_CLASS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-sticky.svg" alt="Sticky Note: 5.3 TABLE_PER_CLASS" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-3-table-per-class-sticky.svg" alt="Sticky Note: 5.3 TABLE_PER_CLASS" width="30%">
 </a>
 
 
@@ -1347,14 +1347,14 @@ public class SavingsAccount extends Account {
 
 ### 5.4 @MappedSuperclass
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-handwritten.svg" alt="Handwritten: 5.4 @MappedSuperclass" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-handwritten.svg" alt="Handwritten: 5.4 @MappedSuperclass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-diagram.svg" alt="Diagram: 5.4 @MappedSuperclass" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-diagram.svg" alt="Diagram: 5.4 @MappedSuperclass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-sticky.svg" alt="Sticky Note: 5.4 @MappedSuperclass" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-4-mappedsuperclass-sticky.svg" alt="Sticky Note: 5.4 @MappedSuperclass" width="30%">
 </a>
 
 
@@ -1398,14 +1398,14 @@ public class Video extends BaseEntity {
 
 ### 5.5 Polymorphic Queries Performance
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-handwritten.svg" alt="Handwritten: 5.5 Polymorphic Queries Performance" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-handwritten.svg" alt="Handwritten: 5.5 Polymorphic Queries Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-diagram.svg" alt="Diagram: 5.5 Polymorphic Queries Performance" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-diagram.svg" alt="Diagram: 5.5 Polymorphic Queries Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-sticky.svg" alt="Sticky Note: 5.5 Polymorphic Queries Performance" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/5-5-polymorphic-queries-performance-sticky.svg" alt="Sticky Note: 5.5 Polymorphic Queries Performance" width="30%">
 </a>
 
 
@@ -1432,14 +1432,14 @@ List<Car> cars = entityManager
 
 ### @MappedSuperclass for Common Fields
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-handwritten.svg" alt="Handwritten: @MappedSuperclass for Common Fields" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-handwritten.svg" alt="Handwritten: @MappedSuperclass for Common Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-diagram.svg" alt="Diagram: @MappedSuperclass for Common Fields" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-diagram.svg" alt="Diagram: @MappedSuperclass for Common Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-sticky.svg" alt="Sticky Note: @MappedSuperclass for Common Fields" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/mappedsuperclass-for-common-fields-sticky.svg" alt="Sticky Note: @MappedSuperclass for Common Fields" width="30%">
 </a>
 
 
@@ -1482,14 +1482,14 @@ public class Tag extends BaseAuditableEntity {
 
 ### @OrderColumn for Ordered Collections
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-handwritten.svg" alt="Handwritten: @OrderColumn for Ordered Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-handwritten.svg" alt="Handwritten: @OrderColumn for Ordered Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-diagram.svg" alt="Diagram: @OrderColumn for Ordered Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-diagram.svg" alt="Diagram: @OrderColumn for Ordered Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-sticky.svg" alt="Sticky Note: @OrderColumn for Ordered Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/ordercolumn-for-ordered-collections-sticky.svg" alt="Sticky Note: @OrderColumn for Ordered Collections" width="30%">
 </a>
 
 
@@ -1534,14 +1534,14 @@ public class Track {
 
 ### 7.1 Configuration
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-handwritten.svg" alt="Handwritten: 7.1 Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-handwritten.svg" alt="Handwritten: 7.1 Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-diagram.svg" alt="Diagram: 7.1 Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-diagram.svg" alt="Diagram: 7.1 Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-sticky.svg" alt="Sticky Note: 7.1 Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-1-configuration-sticky.svg" alt="Sticky Note: 7.1 Configuration" width="30%">
 </a>
 
 
@@ -1555,14 +1555,14 @@ spring.jpa.properties.hibernate.javax.cache.provider=org.ehcache.jsr107.EhcacheC
 
 ### 7.2 Entity Caching
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-handwritten.svg" alt="Handwritten: 7.2 Entity Caching" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-handwritten.svg" alt="Handwritten: 7.2 Entity Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-diagram.svg" alt="Diagram: 7.2 Entity Caching" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-diagram.svg" alt="Diagram: 7.2 Entity Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-sticky.svg" alt="Sticky Note: 7.2 Entity Caching" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-2-entity-caching-sticky.svg" alt="Sticky Note: 7.2 Entity Caching" width="30%">
 </a>
 
 
@@ -1605,14 +1605,14 @@ public class Product {
 
 ### 7.3 CacheConcurrencyStrategy
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-handwritten.svg" alt="Handwritten: 7.3 CacheConcurrencyStrategy" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-handwritten.svg" alt="Handwritten: 7.3 CacheConcurrencyStrategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-diagram.svg" alt="Diagram: 7.3 CacheConcurrencyStrategy" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-diagram.svg" alt="Diagram: 7.3 CacheConcurrencyStrategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-sticky.svg" alt="Sticky Note: 7.3 CacheConcurrencyStrategy" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-3-cacheconcurrencystrategy-sticky.svg" alt="Sticky Note: 7.3 CacheConcurrencyStrategy" width="30%">
 </a>
 
 
@@ -1625,14 +1625,14 @@ public class Product {
 
 ### 7.4 Query Cache
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-handwritten.svg" alt="Handwritten: 7.4 Query Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-handwritten.svg" alt="Handwritten: 7.4 Query Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-diagram.svg" alt="Diagram: 7.4 Query Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-diagram.svg" alt="Diagram: 7.4 Query Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-sticky.svg" alt="Sticky Note: 7.4 Query Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-4-query-cache-sticky.svg" alt="Sticky Note: 7.4 Query Cache" width="30%">
 </a>
 
 
@@ -1653,14 +1653,14 @@ The query cache caches query result identifiers, not the entities themselves. En
 
 ### 7.5 Cache Regions
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-handwritten.svg" alt="Handwritten: 7.5 Cache Regions" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-handwritten.svg" alt="Handwritten: 7.5 Cache Regions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-diagram.svg" alt="Diagram: 7.5 Cache Regions" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-diagram.svg" alt="Diagram: 7.5 Cache Regions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-sticky.svg" alt="Sticky Note: 7.5 Cache Regions" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-5-cache-regions-sticky.svg" alt="Sticky Note: 7.5 Cache Regions" width="30%">
 </a>
 
 
@@ -1698,14 +1698,14 @@ Configure region timeouts in EHCache:
 
 ### 7.6 Cache Providers
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-handwritten.svg" alt="Handwritten: 7.6 Cache Providers" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-handwritten.svg" alt="Handwritten: 7.6 Cache Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-diagram.svg" alt="Diagram: 7.6 Cache Providers" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-diagram.svg" alt="Diagram: 7.6 Cache Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-sticky.svg" alt="Sticky Note: 7.6 Cache Providers" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/7-6-cache-providers-sticky.svg" alt="Sticky Note: 7.6 Cache Providers" width="30%">
 </a>
 
 
@@ -1738,14 +1738,14 @@ public class CacheConfig {
 
 ### 8.1 @Type and Custom Types
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-handwritten.svg" alt="Handwritten: 8.1 @Type and Custom Types" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-handwritten.svg" alt="Handwritten: 8.1 @Type and Custom Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-diagram.svg" alt="Diagram: 8.1 @Type and Custom Types" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-diagram.svg" alt="Diagram: 8.1 @Type and Custom Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-sticky.svg" alt="Sticky Note: 8.1 @Type and Custom Types" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-1-type-and-custom-types-sticky.svg" alt="Sticky Note: 8.1 @Type and Custom Types" width="30%">
 </a>
 
 
@@ -1771,14 +1771,14 @@ public class Document {
 
 ### 8.2 Custom UserType (Hibernate 6)
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-handwritten.svg" alt="Handwritten: 8.2 Custom UserType (Hibernate 6)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-handwritten.svg" alt="Handwritten: 8.2 Custom UserType (Hibernate 6)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-diagram.svg" alt="Diagram: 8.2 Custom UserType (Hibernate 6)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-diagram.svg" alt="Diagram: 8.2 Custom UserType (Hibernate 6)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-sticky.svg" alt="Sticky Note: 8.2 Custom UserType (Hibernate 6)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-2-custom-usertype-hibernate-6-sticky.svg" alt="Sticky Note: 8.2 Custom UserType (Hibernate 6)" width="30%">
 </a>
 
 
@@ -1852,14 +1852,14 @@ public class Contact {
 
 ### 8.3 JSON Mapping in PostgreSQL (Hibernate 6)
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-handwritten.svg" alt="Handwritten: 8.3 JSON Mapping in PostgreSQL (Hibernate 6)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-handwritten.svg" alt="Handwritten: 8.3 JSON Mapping in PostgreSQL (Hibernate 6)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-diagram.svg" alt="Diagram: 8.3 JSON Mapping in PostgreSQL (Hibernate 6)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-diagram.svg" alt="Diagram: 8.3 JSON Mapping in PostgreSQL (Hibernate 6)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-sticky.svg" alt="Sticky Note: 8.3 JSON Mapping in PostgreSQL (Hibernate 6)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-3-json-mapping-in-postgresql-hibernate-6-sticky.svg" alt="Sticky Note: 8.3 JSON Mapping in PostgreSQL (Hibernate 6)" width="30%">
 </a>
 
 
@@ -1907,14 +1907,14 @@ public class AuditEntry {
 
 ### 8.4 Array Types
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-handwritten.svg" alt="Handwritten: 8.4 Array Types" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-handwritten.svg" alt="Handwritten: 8.4 Array Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-diagram.svg" alt="Diagram: 8.4 Array Types" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-diagram.svg" alt="Diagram: 8.4 Array Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-sticky.svg" alt="Sticky Note: 8.4 Array Types" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/8-4-array-types-sticky.svg" alt="Sticky Note: 8.4 Array Types" width="30%">
 </a>
 
 
@@ -1949,14 +1949,14 @@ private List<String> keywords;
 
 ### 9.1 LazyInitializationException
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-handwritten.svg" alt="Handwritten: 9.1 LazyInitializationException" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-handwritten.svg" alt="Handwritten: 9.1 LazyInitializationException" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-diagram.svg" alt="Diagram: 9.1 LazyInitializationException" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-diagram.svg" alt="Diagram: 9.1 LazyInitializationException" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-sticky.svg" alt="Sticky Note: 9.1 LazyInitializationException" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-1-lazyinitializationexception-sticky.svg" alt="Sticky Note: 9.1 LazyInitializationException" width="30%">
 </a>
 
 
@@ -1986,14 +1986,14 @@ for (Post post : posts) {
 
 ### 9.2 OPEN_SESSION_IN_VIEW (OSIV)
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-handwritten.svg" alt="Handwritten: 9.2 OPEN_SESSION_IN_VIEW (OSIV)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-handwritten.svg" alt="Handwritten: 9.2 OPEN_SESSION_IN_VIEW (OSIV)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-diagram.svg" alt="Diagram: 9.2 OPEN_SESSION_IN_VIEW (OSIV)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-diagram.svg" alt="Diagram: 9.2 OPEN_SESSION_IN_VIEW (OSIV)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-sticky.svg" alt="Sticky Note: 9.2 OPEN_SESSION_IN_VIEW (OSIV)" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-2-open-session-in-view-osiv-sticky.svg" alt="Sticky Note: 9.2 OPEN_SESSION_IN_VIEW (OSIV)" width="30%">
 </a>
 
 
@@ -2028,14 +2028,14 @@ public class PostService {
 
 ### 9.3 Identity vs Sequence ID Performance
 
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-handwritten.svg" alt="Handwritten: 9.3 Identity vs Sequence ID Performance" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-handwritten.svg" alt="Handwritten: 9.3 Identity vs Sequence ID Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-diagram.svg" alt="Diagram: 9.3 Identity vs Sequence ID Performance" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-diagram.svg" alt="Diagram: 9.3 Identity vs Sequence ID Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-sticky.svg" alt="Sticky Note: 9.3 Identity vs Sequence ID Performance" width="30%">
+<a href="../../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/20-jpa-hibernate/9-3-identity-vs-sequence-id-performance-sticky.svg" alt="Sticky Note: 9.3 Identity vs Sequence ID Performance" width="30%">
 </a>
 
 

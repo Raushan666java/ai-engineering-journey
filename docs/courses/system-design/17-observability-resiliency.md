@@ -64,14 +64,14 @@ flowchart LR
 
 ### 1. The Three Pillars of Observability
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 1. The Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 1. The Three Pillars of Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-diagram.svg" alt="Diagram: 1. The Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-diagram.svg" alt="Diagram: 1. The Three Pillars of Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 1. The Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/1-the-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 1. The Three Pillars of Observability" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ Observability is the ability to understand a system's internal state from its ex
 
 ### 2. Prometheus
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-handwritten.svg" alt="Handwritten: 2. Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-handwritten.svg" alt="Handwritten: 2. Prometheus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-diagram.svg" alt="Diagram: 2. Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-diagram.svg" alt="Diagram: 2. Prometheus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-sticky.svg" alt="Sticky Note: 2. Prometheus" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/2-prometheus-sticky.svg" alt="Sticky Note: 2. Prometheus" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ groups:
 
 ### 3. Grafana
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-handwritten.svg" alt="Handwritten: 3. Grafana" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-handwritten.svg" alt="Handwritten: 3. Grafana" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-diagram.svg" alt="Diagram: 3. Grafana" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-diagram.svg" alt="Diagram: 3. Grafana" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-sticky.svg" alt="Sticky Note: 3. Grafana" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/3-grafana-sticky.svg" alt="Sticky Note: 3. Grafana" width="30%">
 </a>
 
 
@@ -204,14 +204,14 @@ Dashboard structure:
 
 ### 4. Distributed Tracing
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-handwritten.svg" alt="Handwritten: 4. Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-handwritten.svg" alt="Handwritten: 4. Distributed Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-diagram.svg" alt="Diagram: 4. Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-diagram.svg" alt="Diagram: 4. Distributed Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-sticky.svg" alt="Sticky Note: 4. Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/4-distributed-tracing-sticky.svg" alt="Sticky Note: 4. Distributed Tracing" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ Automatic propagation via OpenTelemetry's HTTP instrumentation libraries — no 
 
 ### 5. Jaeger / Zipkin
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-handwritten.svg" alt="Handwritten: 5. Jaeger / Zipkin" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-handwritten.svg" alt="Handwritten: 5. Jaeger / Zipkin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-diagram.svg" alt="Diagram: 5. Jaeger / Zipkin" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-diagram.svg" alt="Diagram: 5. Jaeger / Zipkin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-sticky.svg" alt="Sticky Note: 5. Jaeger / Zipkin" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/5-jaeger-zipkin-sticky.svg" alt="Sticky Note: 5. Jaeger / Zipkin" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ Both systems ingest spans, index by service/operation/tags/duration, and enable 
 
 ### 6. Structured Logging
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-handwritten.svg" alt="Handwritten: 6. Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-handwritten.svg" alt="Handwritten: 6. Structured Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-diagram.svg" alt="Diagram: 6. Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-diagram.svg" alt="Diagram: 6. Structured Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-sticky.svg" alt="Sticky Note: 6. Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/6-structured-logging-sticky.svg" alt="Sticky Note: 6. Structured Logging" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ logger.info("order_placed",
 
 ### 7. Circuit Breaker Pattern
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: 7. Circuit Breaker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: 7. Circuit Breaker Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-diagram.svg" alt="Diagram: 7. Circuit Breaker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-diagram.svg" alt="Diagram: 7. Circuit Breaker Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: 7. Circuit Breaker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/7-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: 7. Circuit Breaker Pattern" width="30%">
 </a>
 
 
@@ -393,14 +393,14 @@ class CircuitBreaker:
 
 ### 8. Bulkhead Pattern
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-handwritten.svg" alt="Handwritten: 8. Bulkhead Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-handwritten.svg" alt="Handwritten: 8. Bulkhead Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-diagram.svg" alt="Diagram: 8. Bulkhead Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-diagram.svg" alt="Diagram: 8. Bulkhead Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-sticky.svg" alt="Sticky Note: 8. Bulkhead Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/8-bulkhead-pattern-sticky.svg" alt="Sticky Note: 8. Bulkhead Pattern" width="30%">
 </a>
 
 
@@ -437,14 +437,14 @@ class Bulkhead:
 
 ### 9. Retry with Exponential Backoff and Jitter
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-handwritten.svg" alt="Handwritten: 9. Retry with Exponential Backoff and Jitter" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-handwritten.svg" alt="Handwritten: 9. Retry with Exponential Backoff and Jitter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-diagram.svg" alt="Diagram: 9. Retry with Exponential Backoff and Jitter" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-diagram.svg" alt="Diagram: 9. Retry with Exponential Backoff and Jitter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-sticky.svg" alt="Sticky Note: 9. Retry with Exponential Backoff and Jitter" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/9-retry-with-exponential-backoff-and-jitter-sticky.svg" alt="Sticky Note: 9. Retry with Exponential Backoff and Jitter" width="30%">
 </a>
 
 
@@ -465,14 +465,14 @@ def retry_with_jitter(func, max_retries=3, base_delay=0.1, max_delay=10.0):
 
 ### 10. Rate Limiting
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-handwritten.svg" alt="Handwritten: 10. Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-handwritten.svg" alt="Handwritten: 10. Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-diagram.svg" alt="Diagram: 10. Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-diagram.svg" alt="Diagram: 10. Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-sticky.svg" alt="Sticky Note: 10. Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/10-rate-limiting-sticky.svg" alt="Sticky Note: 10. Rate Limiting" width="30%">
 </a>
 
 
@@ -494,14 +494,14 @@ Exceeded quotas receive HTTP 429 with Retry-After header.
 
 ### 11. Graceful Degradation
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-handwritten.svg" alt="Handwritten: 11. Graceful Degradation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-handwritten.svg" alt="Handwritten: 11. Graceful Degradation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-diagram.svg" alt="Diagram: 11. Graceful Degradation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-diagram.svg" alt="Diagram: 11. Graceful Degradation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-sticky.svg" alt="Sticky Note: 11. Graceful Degradation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/11-graceful-degradation-sticky.svg" alt="Sticky Note: 11. Graceful Degradation" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ def get_recommendations(user_id):
 
 ### 12. Load Shedding
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-handwritten.svg" alt="Handwritten: 12. Load Shedding" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-handwritten.svg" alt="Handwritten: 12. Load Shedding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-diagram.svg" alt="Diagram: 12. Load Shedding" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-diagram.svg" alt="Diagram: 12. Load Shedding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-sticky.svg" alt="Sticky Note: 12. Load Shedding" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/12-load-shedding-sticky.svg" alt="Sticky Note: 12. Load Shedding" width="30%">
 </a>
 
 
@@ -538,14 +538,14 @@ if len(work_queue) > MAX_DEPTH: return {"error": "too many requests"}, 503
 
 ### 13. Health Check API
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-handwritten.svg" alt="Handwritten: 13. Health Check API" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-handwritten.svg" alt="Handwritten: 13. Health Check API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-diagram.svg" alt="Diagram: 13. Health Check API" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-diagram.svg" alt="Diagram: 13. Health Check API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-sticky.svg" alt="Sticky Note: 13. Health Check API" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/13-health-check-api-sticky.svg" alt="Sticky Note: 13. Health Check API" width="30%">
 </a>
 
 
@@ -560,14 +560,14 @@ def readiness():
 
 ### 14. Chaos Engineering
 
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-handwritten.svg" alt="Handwritten: 14. Chaos Engineering" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-handwritten.svg" alt="Handwritten: 14. Chaos Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-diagram.svg" alt="Diagram: 14. Chaos Engineering" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-diagram.svg" alt="Diagram: 14. Chaos Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-sticky.svg" alt="Sticky Note: 14. Chaos Engineering" width="30%">
+<a href="../../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/17-observability-resiliency/14-chaos-engineering-sticky.svg" alt="Sticky Note: 14. Chaos Engineering" width="30%">
 </a>
 
 

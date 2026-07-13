@@ -54,14 +54,14 @@ flowchart LR
 
 ### 11.1 Binary Operations
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-handwritten.svg" alt="Handwritten: 11.1 Binary Operations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-handwritten.svg" alt="Handwritten: 11.1 Binary Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-diagram.svg" alt="Diagram: 11.1 Binary Operations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-diagram.svg" alt="Diagram: 11.1 Binary Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-sticky.svg" alt="Sticky Note: 11.1 Binary Operations" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-1-binary-operations-sticky.svg" alt="Sticky Note: 11.1 Binary Operations" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ A **binary operation** on a set $S$ is a function $* : S \times S \rightarrow S$
 
 ### 11.2 Semigroups and Monoids
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-handwritten.svg" alt="Handwritten: 11.2 Semigroups and Monoids" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-handwritten.svg" alt="Handwritten: 11.2 Semigroups and Monoids" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-diagram.svg" alt="Diagram: 11.2 Semigroups and Monoids" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-diagram.svg" alt="Diagram: 11.2 Semigroups and Monoids" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-sticky.svg" alt="Sticky Note: 11.2 Semigroups and Monoids" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-2-semigroups-and-monoids-sticky.svg" alt="Sticky Note: 11.2 Semigroups and Monoids" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ A **binary operation** on a set $S$ is a function $* : S \times S \rightarrow S$
 
 ### 11.3 Groups
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-handwritten.svg" alt="Handwritten: 11.3 Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-handwritten.svg" alt="Handwritten: 11.3 Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-diagram.svg" alt="Diagram: 11.3 Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-diagram.svg" alt="Diagram: 11.3 Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-sticky.svg" alt="Sticky Note: 11.3 Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-3-groups-sticky.svg" alt="Sticky Note: 11.3 Groups" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@ A **group** $(G, *)$ is a set $G$ with a binary operation $*$ satisfying:
 
 ### 11.4 Examples of Groups
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-handwritten.svg" alt="Handwritten: 11.4 Examples of Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-handwritten.svg" alt="Handwritten: 11.4 Examples of Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-diagram.svg" alt="Diagram: 11.4 Examples of Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-diagram.svg" alt="Diagram: 11.4 Examples of Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-sticky.svg" alt="Sticky Note: 11.4 Examples of Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-4-examples-of-groups-sticky.svg" alt="Sticky Note: 11.4 Examples of Groups" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ const swap: Permutation = [1, 0, 2];
 
 ### 11.5 Cyclic Groups
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-handwritten.svg" alt="Handwritten: 11.5 Cyclic Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-handwritten.svg" alt="Handwritten: 11.5 Cyclic Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-diagram.svg" alt="Diagram: 11.5 Cyclic Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-diagram.svg" alt="Diagram: 11.5 Cyclic Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-sticky.svg" alt="Sticky Note: 11.5 Cyclic Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-5-cyclic-groups-sticky.svg" alt="Sticky Note: 11.5 Cyclic Groups" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ A group $G$ is **cyclic** if there exists an element $g \in G$ (a **generator**)
 
 ### 11.6 Permutation Groups
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-handwritten.svg" alt="Handwritten: 11.6 Permutation Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-handwritten.svg" alt="Handwritten: 11.6 Permutation Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-diagram.svg" alt="Diagram: 11.6 Permutation Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-diagram.svg" alt="Diagram: 11.6 Permutation Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-sticky.svg" alt="Sticky Note: 11.6 Permutation Groups" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-6-permutation-groups-sticky.svg" alt="Sticky Note: 11.6 Permutation Groups" width="30%">
 </a>
 
 
@@ -232,14 +232,14 @@ A **permutation** of a set $X$ is a bijection $f: X \rightarrow X$. The set of a
 
 ### 11.7 Rings and Fields
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-handwritten.svg" alt="Handwritten: 11.7 Rings and Fields" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-handwritten.svg" alt="Handwritten: 11.7 Rings and Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-diagram.svg" alt="Diagram: 11.7 Rings and Fields" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-diagram.svg" alt="Diagram: 11.7 Rings and Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-sticky.svg" alt="Sticky Note: 11.7 Rings and Fields" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-7-rings-and-fields-sticky.svg" alt="Sticky Note: 11.7 Rings and Fields" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ function isPrime(n: number): boolean {
 
 ### 11.8 Homomorphisms and Isomorphisms
 
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-handwritten.svg" alt="Handwritten: 11.8 Homomorphisms and Isomorphisms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-handwritten.svg" alt="Handwritten: 11.8 Homomorphisms and Isomorphisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-diagram.svg" alt="Diagram: 11.8 Homomorphisms and Isomorphisms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-diagram.svg" alt="Diagram: 11.8 Homomorphisms and Isomorphisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-sticky.svg" alt="Sticky Note: 11.8 Homomorphisms and Isomorphisms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/11-algebra/11-8-homomorphisms-and-isomorphisms-sticky.svg" alt="Sticky Note: 11.8 Homomorphisms and Isomorphisms" width="30%">
 </a>
 
 

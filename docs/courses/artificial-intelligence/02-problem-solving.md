@@ -59,14 +59,14 @@ Every AI search problem follows this same pattern: **where you are, what you can
 
 ### 2.1.1 What is Problem Formulation?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-handwritten.svg" alt="Handwritten: 2.1.1 What is Problem Formulation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-handwritten.svg" alt="Handwritten: 2.1.1 What is Problem Formulation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-diagram.svg" alt="Diagram: 2.1.1 What is Problem Formulation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-diagram.svg" alt="Diagram: 2.1.1 What is Problem Formulation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-sticky.svg" alt="Sticky Note: 2.1.1 What is Problem Formulation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-sticky.svg" alt="Sticky Note: 2.1.1 What is Problem Formulation?" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ Problem formulation is the process of abstracting a real-world situation into a 
 
 ### 2.1.2 Algorithm — Problem Formulation Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-handwritten.svg" alt="Handwritten: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-handwritten.svg" alt="Handwritten: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-diagram.svg" alt="Diagram: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-diagram.svg" alt="Diagram: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-sticky.svg" alt="Sticky Note: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-sticky.svg" alt="Sticky Note: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
 </a>
 
 
@@ -107,14 +107,14 @@ ALGORITHM: FormulateProblem(realWorldSituation)
 
 ### 2.1.3 Dry Run — Formulating the 8-Puzzle
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-handwritten.svg" alt="Handwritten: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-handwritten.svg" alt="Handwritten: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-diagram.svg" alt="Diagram: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-diagram.svg" alt="Diagram: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-sticky.svg" alt="Sticky Note: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-sticky.svg" alt="Sticky Note: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ Step 7: RETURN (S, s0, Actions, Result, GoalTest, 1)
 
 ### 2.1.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-handwritten.svg" alt="Handwritten: 2.1.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-handwritten.svg" alt="Handwritten: 2.1.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-diagram.svg" alt="Diagram: 2.1.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-diagram.svg" alt="Diagram: 2.1.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-sticky.svg" alt="Sticky Note: 2.1.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-sticky.svg" alt="Sticky Note: 2.1.4 Python Implementation" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ class EightPuzzle(Problem):
 
 ### 2.1.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-diagram.svg" alt="Diagram: 2.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-diagram.svg" alt="Diagram: 2.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.1.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ class EightPuzzle(Problem):
 
 ### 2.1.6 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.1.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.1.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-diagram.svg" alt="Diagram: 2.1.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-diagram.svg" alt="Diagram: 2.1.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.1.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.1.6 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ class EightPuzzle(Problem):
 
 ### 2.1.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-handwritten.svg" alt="Handwritten: 2.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-handwritten.svg" alt="Handwritten: 2.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-diagram.svg" alt="Diagram: 2.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-diagram.svg" alt="Diagram: 2.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-sticky.svg" alt="Sticky Note: 2.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-sticky.svg" alt="Sticky Note: 2.1.7 Edge Cases" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ A subway map shows every station and every connecting line. Given your current s
 
 ### 2.2.1 Formal Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-handwritten.svg" alt="Handwritten: 2.2.1 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-handwritten.svg" alt="Handwritten: 2.2.1 Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-diagram.svg" alt="Diagram: 2.2.1 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-diagram.svg" alt="Diagram: 2.2.1 Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-sticky.svg" alt="Sticky Note: 2.2.1 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-sticky.svg" alt="Sticky Note: 2.2.1 Formal Definition" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ flowchart TD
 
 ### 2.2.2 Algorithm — Building the State-Space Graph
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-handwritten.svg" alt="Handwritten: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-handwritten.svg" alt="Handwritten: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-diagram.svg" alt="Diagram: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-diagram.svg" alt="Diagram: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-sticky.svg" alt="Sticky Note: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-sticky.svg" alt="Sticky Note: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
 </a>
 
 
@@ -341,14 +341,14 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 
 ### 2.2.3 Dry Run — Romanian Road Map (Partial)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-handwritten.svg" alt="Handwritten: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-handwritten.svg" alt="Handwritten: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-diagram.svg" alt="Diagram: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-diagram.svg" alt="Diagram: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-sticky.svg" alt="Sticky Note: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-sticky.svg" alt="Sticky Note: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 
 ### 2.2.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-handwritten.svg" alt="Handwritten: 2.2.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-handwritten.svg" alt="Handwritten: 2.2.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-diagram.svg" alt="Diagram: 2.2.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-diagram.svg" alt="Diagram: 2.2.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-sticky.svg" alt="Sticky Note: 2.2.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-sticky.svg" alt="Sticky Note: 2.2.4 Python Implementation" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ### 2.2.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.2.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.2.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-diagram.svg" alt="Diagram: 2.2.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-diagram.svg" alt="Diagram: 2.2.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.2.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.2.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ### 2.2.6 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.2.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.2.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-diagram.svg" alt="Diagram: 2.2.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-diagram.svg" alt="Diagram: 2.2.6 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.2.6 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.2.6 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -479,14 +479,14 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ### 2.2.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-handwritten.svg" alt="Handwritten: 2.2.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-handwritten.svg" alt="Handwritten: 2.2.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-diagram.svg" alt="Diagram: 2.2.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-diagram.svg" alt="Diagram: 2.2.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-sticky.svg" alt="Sticky Note: 2.2.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-sticky.svg" alt="Sticky Note: 2.2.7 Edge Cases" width="30%">
 </a>
 
 
@@ -507,14 +507,14 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ### 2.3.1 Tree Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-handwritten.svg" alt="Handwritten: 2.3.1 Tree Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-handwritten.svg" alt="Handwritten: 2.3.1 Tree Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-diagram.svg" alt="Diagram: 2.3.1 Tree Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-diagram.svg" alt="Diagram: 2.3.1 Tree Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-sticky.svg" alt="Sticky Note: 2.3.1 Tree Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-sticky.svg" alt="Sticky Note: 2.3.1 Tree Search" width="30%">
 </a>
 
 
@@ -532,14 +532,14 @@ ALGORITHM: TreeSearch(problem)
 
 ### 2.3.2 Graph Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-handwritten.svg" alt="Handwritten: 2.3.2 Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-handwritten.svg" alt="Handwritten: 2.3.2 Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-diagram.svg" alt="Diagram: 2.3.2 Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-diagram.svg" alt="Diagram: 2.3.2 Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-sticky.svg" alt="Sticky Note: 2.3.2 Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-sticky.svg" alt="Sticky Note: 2.3.2 Graph Search" width="30%">
 </a>
 
 
@@ -561,14 +561,14 @@ ALGORITHM: GraphSearch(problem)
 
 ### 2.3.3 Dry Run — Tree Search vs. Graph Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-handwritten.svg" alt="Handwritten: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-handwritten.svg" alt="Handwritten: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-diagram.svg" alt="Diagram: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-diagram.svg" alt="Diagram: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-sticky.svg" alt="Sticky Note: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-sticky.svg" alt="Sticky Note: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
 </a>
 
 
@@ -602,14 +602,14 @@ ALGORITHM: GraphSearch(problem)
 
 ### 2.3.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-handwritten.svg" alt="Handwritten: 2.3.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-handwritten.svg" alt="Handwritten: 2.3.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-diagram.svg" alt="Diagram: 2.3.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-diagram.svg" alt="Diagram: 2.3.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-sticky.svg" alt="Sticky Note: 2.3.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-sticky.svg" alt="Sticky Note: 2.3.4 Python Implementation" width="30%">
 </a>
 
 
@@ -673,14 +673,14 @@ def solution(node):
 
 ### 2.3.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.3.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.3.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-diagram.svg" alt="Diagram: 2.3.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-diagram.svg" alt="Diagram: 2.3.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.3.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.3.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -692,14 +692,14 @@ def solution(node):
 
 ### 2.3.6 Tree Search vs. Graph Search — Comparison Table
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-handwritten.svg" alt="Handwritten: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-handwritten.svg" alt="Handwritten: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-diagram.svg" alt="Diagram: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-diagram.svg" alt="Diagram: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-sticky.svg" alt="Sticky Note: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-sticky.svg" alt="Sticky Note: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
 </a>
 
 
@@ -716,14 +716,14 @@ def solution(node):
 
 ### 2.3.7 Advantages & Disadvantages of Graph Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-handwritten.svg" alt="Handwritten: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-handwritten.svg" alt="Handwritten: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-diagram.svg" alt="Diagram: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-diagram.svg" alt="Diagram: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-sticky.svg" alt="Sticky Note: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-sticky.svg" alt="Sticky Note: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
 </a>
 
 
@@ -736,14 +736,14 @@ def solution(node):
 
 ### 2.3.8 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-handwritten.svg" alt="Handwritten: 2.3.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-handwritten.svg" alt="Handwritten: 2.3.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-diagram.svg" alt="Diagram: 2.3.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-diagram.svg" alt="Diagram: 2.3.8 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-sticky.svg" alt="Sticky Note: 2.3.8 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-sticky.svg" alt="Sticky Note: 2.3.8 Edge Cases" width="30%">
 </a>
 
 
@@ -764,14 +764,14 @@ Imagine you are in a pitch-black warehouse looking for a specific box. You have 
 
 ### 2.4.1 Breadth-First Search (BFS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-handwritten.svg" alt="Handwritten: 2.4.1 Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-handwritten.svg" alt="Handwritten: 2.4.1 Breadth-First Search (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-diagram.svg" alt="Diagram: 2.4.1 Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-diagram.svg" alt="Diagram: 2.4.1 Breadth-First Search (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-sticky.svg" alt="Sticky Note: 2.4.1 Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-sticky.svg" alt="Sticky Note: 2.4.1 Breadth-First Search (BFS)" width="30%">
 </a>
 
 
@@ -842,14 +842,14 @@ def bfs(problem):
 
 ### 2.4.2 Depth-First Search (DFS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-handwritten.svg" alt="Handwritten: 2.4.2 Depth-First Search (DFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-handwritten.svg" alt="Handwritten: 2.4.2 Depth-First Search (DFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-diagram.svg" alt="Diagram: 2.4.2 Depth-First Search (DFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-diagram.svg" alt="Diagram: 2.4.2 Depth-First Search (DFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-sticky.svg" alt="Sticky Note: 2.4.2 Depth-First Search (DFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-sticky.svg" alt="Sticky Note: 2.4.2 Depth-First Search (DFS)" width="30%">
 </a>
 
 
@@ -910,14 +910,14 @@ def dfs(problem):
 
 ### 2.4.3 Iterative Deepening DFS (IDDFS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-handwritten.svg" alt="Handwritten: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-handwritten.svg" alt="Handwritten: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-diagram.svg" alt="Diagram: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-diagram.svg" alt="Diagram: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-sticky.svg" alt="Sticky Note: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-sticky.svg" alt="Sticky Note: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ def iddfs(problem):
 
 ### 2.4.4 Uniform-Cost Search (UCS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-handwritten.svg" alt="Handwritten: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-handwritten.svg" alt="Handwritten: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-diagram.svg" alt="Diagram: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-diagram.svg" alt="Diagram: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-sticky.svg" alt="Sticky Note: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-sticky.svg" alt="Sticky Note: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
 </a>
 
 
@@ -1089,14 +1089,14 @@ Different search strategies are like different tools in a toolbox. BFS is like a
 
 ### 2.5.1 The Four Evaluation Dimensions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-handwritten.svg" alt="Handwritten: 2.5.1 The Four Evaluation Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-handwritten.svg" alt="Handwritten: 2.5.1 The Four Evaluation Dimensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-diagram.svg" alt="Diagram: 2.5.1 The Four Evaluation Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-diagram.svg" alt="Diagram: 2.5.1 The Four Evaluation Dimensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-sticky.svg" alt="Sticky Note: 2.5.1 The Four Evaluation Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-sticky.svg" alt="Sticky Note: 2.5.1 The Four Evaluation Dimensions" width="30%">
 </a>
 
 
@@ -1111,14 +1111,14 @@ Every search algorithm is evaluated along four dimensions:
 
 ### 2.5.2 Complexity Analysis — The "Why" Behind Each Formula
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-handwritten.svg" alt="Handwritten: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-handwritten.svg" alt="Handwritten: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-diagram.svg" alt="Diagram: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-diagram.svg" alt="Diagram: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-sticky.svg" alt="Sticky Note: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-sticky.svg" alt="Sticky Note: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
 </a>
 
 
@@ -1133,14 +1133,14 @@ Every search algorithm is evaluated along four dimensions:
 
 ### 2.5.3 Algorithm — Performance Evaluation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-handwritten.svg" alt="Handwritten: 2.5.3 Algorithm — Performance Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-handwritten.svg" alt="Handwritten: 2.5.3 Algorithm — Performance Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-diagram.svg" alt="Diagram: 2.5.3 Algorithm — Performance Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-diagram.svg" alt="Diagram: 2.5.3 Algorithm — Performance Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-sticky.svg" alt="Sticky Note: 2.5.3 Algorithm — Performance Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-sticky.svg" alt="Sticky Note: 2.5.3 Algorithm — Performance Evaluation" width="30%">
 </a>
 
 
@@ -1166,14 +1166,14 @@ ALGORITHM: EvaluatePerformance(algorithm, problem)
 
 ### 2.5.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-handwritten.svg" alt="Handwritten: 2.5.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-handwritten.svg" alt="Handwritten: 2.5.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-diagram.svg" alt="Diagram: 2.5.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-diagram.svg" alt="Diagram: 2.5.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-sticky.svg" alt="Sticky Note: 2.5.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-sticky.svg" alt="Sticky Note: 2.5.4 Python Implementation" width="30%">
 </a>
 
 
@@ -1225,14 +1225,14 @@ class SearchMetrics:
 
 ### 2.5.5 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.5.5 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.5.5 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-diagram.svg" alt="Diagram: 2.5.5 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-diagram.svg" alt="Diagram: 2.5.5 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.5.5 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.5.5 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1245,14 +1245,14 @@ class SearchMetrics:
 
 ### 2.5.6 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-handwritten.svg" alt="Handwritten: 2.5.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-handwritten.svg" alt="Handwritten: 2.5.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-diagram.svg" alt="Diagram: 2.5.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-diagram.svg" alt="Diagram: 2.5.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-sticky.svg" alt="Sticky Note: 2.5.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-sticky.svg" alt="Sticky Note: 2.5.6 Edge Cases" width="30%">
 </a>
 
 
@@ -1340,14 +1340,14 @@ Problems are classified along three principal dimensions:
 
 ### Q1: Explain search space explosion and how to handle it.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-handwritten.svg" alt="Handwritten: Explain search space explosion and how to handle it." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-handwritten.svg" alt="Handwritten: Explain search space explosion and how to handle it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-diagram.svg" alt="Diagram: Explain search space explosion and how to handle it." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-diagram.svg" alt="Diagram: Explain search space explosion and how to handle it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-sticky.svg" alt="Sticky Note: Explain search space explosion and how to handle it." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-sticky.svg" alt="Sticky Note: Explain search space explosion and how to handle it." width="30%">
 </a>
 
 
@@ -1362,14 +1362,14 @@ Problems are classified along three principal dimensions:
 
 ### Q2: Why are heuristics important in search?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-handwritten.svg" alt="Handwritten: Why are heuristics important in search?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-handwritten.svg" alt="Handwritten: Why are heuristics important in search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-diagram.svg" alt="Diagram: Why are heuristics important in search?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-diagram.svg" alt="Diagram: Why are heuristics important in search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-sticky.svg" alt="Sticky Note: Why are heuristics important in search?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-sticky.svg" alt="Sticky Note: Why are heuristics important in search?" width="30%">
 </a>
 
 
@@ -1377,14 +1377,14 @@ Heuristics (domain-specific knowledge) transform an uninformed exponential searc
 
 ### Q3: What is the difference between completeness and optimality?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-handwritten.svg" alt="Handwritten: What is the difference between completeness and optimality?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-handwritten.svg" alt="Handwritten: What is the difference between completeness and optimality?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-diagram.svg" alt="Diagram: What is the difference between completeness and optimality?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-diagram.svg" alt="Diagram: What is the difference between completeness and optimality?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-sticky.svg" alt="Sticky Note: What is the difference between completeness and optimality?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-sticky.svg" alt="Sticky Note: What is the difference between completeness and optimality?" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ An algorithm can be complete but not optimal (e.g., BFS with varying step costs 
 
 ### Q4: How would you choose between BFS, DFS, and IDDFS?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-handwritten.svg" alt="Handwritten: How would you choose between BFS, DFS, and IDDFS?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-handwritten.svg" alt="Handwritten: How would you choose between BFS, DFS, and IDDFS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-diagram.svg" alt="Diagram: How would you choose between BFS, DFS, and IDDFS?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-diagram.svg" alt="Diagram: How would you choose between BFS, DFS, and IDDFS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-sticky.svg" alt="Sticky Note: How would you choose between BFS, DFS, and IDDFS?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-sticky.svg" alt="Sticky Note: How would you choose between BFS, DFS, and IDDFS?" width="30%">
 </a>
 
 
@@ -1414,14 +1414,14 @@ An algorithm can be complete but not optimal (e.g., BFS with varying step costs 
 
 ### Q5: What is the role of the explored set in graph search?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-handwritten.svg" alt="Handwritten: What is the role of the explored set in graph search?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-handwritten.svg" alt="Handwritten: What is the role of the explored set in graph search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-diagram.svg" alt="Diagram: What is the role of the explored set in graph search?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-diagram.svg" alt="Diagram: What is the role of the explored set in graph search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-sticky.svg" alt="Sticky Note: What is the role of the explored set in graph search?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-sticky.svg" alt="Sticky Note: What is the role of the explored set in graph search?" width="30%">
 </a>
 
 
@@ -1433,14 +1433,14 @@ The explored set prevents revisiting states, reducing the effective branching fa
 
 ### GPS Navigation (Google Maps, Waze, Apple Maps)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-handwritten.svg" alt="Handwritten: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-handwritten.svg" alt="Handwritten: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-diagram.svg" alt="Diagram: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-diagram.svg" alt="Diagram: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-sticky.svg" alt="Sticky Note: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-sticky.svg" alt="Sticky Note: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
 </a>
 
 
@@ -1450,14 +1450,14 @@ Route-finding algorithms (A\* with graph search) power every turn-by-turn naviga
 
 ### Game AI (Chess, Go, Video Games)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-handwritten.svg" alt="Handwritten: Game AI (Chess, Go, Video Games)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-handwritten.svg" alt="Handwritten: Game AI (Chess, Go, Video Games)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-diagram.svg" alt="Diagram: Game AI (Chess, Go, Video Games)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-diagram.svg" alt="Diagram: Game AI (Chess, Go, Video Games)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-sticky.svg" alt="Sticky Note: Game AI (Chess, Go, Video Games)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-sticky.svg" alt="Sticky Note: Game AI (Chess, Go, Video Games)" width="30%">
 </a>
 
 
@@ -1468,14 +1468,14 @@ Game-playing AI is fundamentally search-based:
 
 ### Robotics (Motion Planning)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-handwritten.svg" alt="Handwritten: Robotics (Motion Planning)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-handwritten.svg" alt="Handwritten: Robotics (Motion Planning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-diagram.svg" alt="Diagram: Robotics (Motion Planning)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-diagram.svg" alt="Diagram: Robotics (Motion Planning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-sticky.svg" alt="Sticky Note: Robotics (Motion Planning)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-sticky.svg" alt="Sticky Note: Robotics (Motion Planning)" width="30%">
 </a>
 
 
@@ -1486,14 +1486,14 @@ Robots use search to plan physical movements:
 
 ### Other Real-World Systems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-handwritten.svg" alt="Handwritten: Other Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-handwritten.svg" alt="Handwritten: Other Real-World Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-diagram.svg" alt="Diagram: Other Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-diagram.svg" alt="Diagram: Other Real-World Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-sticky.svg" alt="Sticky Note: Other Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-sticky.svg" alt="Sticky Note: Other Real-World Systems" width="30%">
 </a>
 
 

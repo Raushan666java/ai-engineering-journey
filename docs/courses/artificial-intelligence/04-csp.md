@@ -74,14 +74,14 @@ CSPs differ fundamentally from general search (DFS, BFS, A*):
 
 ### Real-World Analogy — Furniture Assembly
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-handwritten.svg" alt="Handwritten: Real-World Analogy — Furniture Assembly" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-handwritten.svg" alt="Handwritten: Real-World Analogy — Furniture Assembly" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-diagram.svg" alt="Diagram: Real-World Analogy — Furniture Assembly" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-diagram.svg" alt="Diagram: Real-World Analogy — Furniture Assembly" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-sticky.svg" alt="Sticky Note: Real-World Analogy — Furniture Assembly" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-furniture-assembly-sticky.svg" alt="Sticky Note: Real-World Analogy — Furniture Assembly" width="30%">
 </a>
 
 
@@ -89,14 +89,14 @@ You buy a bookshelf from IKEA. The instructions show 12 parts (variables), each 
 
 ### Formal Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Key Definitions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-handwritten.svg" alt="Handwritten: Key Definitions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-handwritten.svg" alt="Handwritten: Key Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-diagram.svg" alt="Diagram: Key Definitions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-diagram.svg" alt="Diagram: Key Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-sticky.svg" alt="Sticky Note: Key Definitions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/key-definitions-sticky.svg" alt="Sticky Note: Key Definitions" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Types of Constraints
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-handwritten.svg" alt="Handwritten: Types of Constraints" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-handwritten.svg" alt="Handwritten: Types of Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-diagram.svg" alt="Diagram: Types of Constraints" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-diagram.svg" alt="Diagram: Types of Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-sticky.svg" alt="Sticky Note: Types of Constraints" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/types-of-constraints-sticky.svg" alt="Sticky Note: Types of Constraints" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Edge Cases in CSP Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-handwritten.svg" alt="Handwritten: Edge Cases in CSP Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-handwritten.svg" alt="Handwritten: Edge Cases in CSP Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-diagram.svg" alt="Diagram: Edge Cases in CSP Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-diagram.svg" alt="Diagram: Edge Cases in CSP Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-sticky.svg" alt="Sticky Note: Edge Cases in CSP Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-in-csp-definition-sticky.svg" alt="Sticky Note: Edge Cases in CSP Definition" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ A **Constraint Satisfaction Problem (CSP)** is defined by a triple $(\mathcal{X}
 
 ### Real-World Analogy — Solving a Crossword Puzzle
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-handwritten.svg" alt="Handwritten: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-handwritten.svg" alt="Handwritten: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-diagram.svg" alt="Diagram: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-diagram.svg" alt="Diagram: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-sticky.svg" alt="Sticky Note: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-solving-a-crossword-puzzle-sticky.svg" alt="Sticky Note: Real-World Analogy — Solving a Crossword Puzzle" width="30%">
 </a>
 
 
@@ -193,14 +193,14 @@ You are filling in a crossword. You pick an empty word (variable), guess a candi
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -216,14 +216,14 @@ You are filling in a crossword. You pick an empty word (variable), guess a candi
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ function BACKTRACK(assignment, csp) returns solution or failure
 
 ### Step-by-Step Dry Run — Australia Map Coloring (3 colors)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-map-coloring-3-colors-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Australia Map Coloring (3 colors)" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ If instead at Step 3 we had SA = R (conflict with WA), backtracking would try SA
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ print("Solution:", sol)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -366,14 +366,14 @@ print("Solution:", sol)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ print("Solution:", sol)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ print("Solution:", sol)
 
 ### Real-World Analogy — Placing Dominoes
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-handwritten.svg" alt="Handwritten: Real-World Analogy — Placing Dominoes" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-handwritten.svg" alt="Handwritten: Real-World Analogy — Placing Dominoes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-diagram.svg" alt="Diagram: Real-World Analogy — Placing Dominoes" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-diagram.svg" alt="Diagram: Real-World Analogy — Placing Dominoes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-sticky.svg" alt="Sticky Note: Real-World Analogy — Placing Dominoes" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-placing-dominoes-sticky.svg" alt="Sticky Note: Real-World Analogy — Placing Dominoes" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ You are placing dominoes on a board. When you place one domino, you eliminate al
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -449,14 +449,14 @@ You are placing dominoes on a board. When you place one domino, you eliminate al
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -486,14 +486,14 @@ function FORWARD-CHECK(csp, var, value) returns boolean
 
 ### Step-by-Step Dry Run — Australia with Forward Checking
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-australia-with-forward-checking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Australia with Forward Checking" width="30%">
 </a>
 
 
@@ -513,14 +513,14 @@ If at step 4 we had tried Q=G (conflict with NT), Q=B (conflict with SA), then Q
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -564,14 +564,14 @@ def backtrack_fc(csp, assignment):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -581,14 +581,14 @@ def backtrack_fc(csp, assignment):
 
 ### Forward Checking vs Backtracking — Search Tree Nodes
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-handwritten.svg" alt="Handwritten: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-handwritten.svg" alt="Handwritten: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-diagram.svg" alt="Diagram: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-diagram.svg" alt="Diagram: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-sticky.svg" alt="Sticky Note: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/forward-checking-vs-backtracking-search-tree-nodes-sticky.svg" alt="Sticky Note: Forward Checking vs Backtracking — Search Tree Nodes" width="30%">
 </a>
 
 
@@ -601,14 +601,14 @@ def backtrack_fc(csp, assignment):
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ def backtrack_fc(csp, assignment):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -647,14 +647,14 @@ def backtrack_fc(csp, assignment):
 
 ### Real-World Analogy — Friends Planning a Dinner
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-handwritten.svg" alt="Handwritten: Real-World Analogy — Friends Planning a Dinner" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-handwritten.svg" alt="Handwritten: Real-World Analogy — Friends Planning a Dinner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-diagram.svg" alt="Diagram: Real-World Analogy — Friends Planning a Dinner" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-diagram.svg" alt="Diagram: Real-World Analogy — Friends Planning a Dinner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-sticky.svg" alt="Sticky Note: Real-World Analogy — Friends Planning a Dinner" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-friends-planning-a-dinner-sticky.svg" alt="Sticky Note: Real-World Analogy — Friends Planning a Dinner" width="30%">
 </a>
 
 
@@ -662,14 +662,14 @@ Alice, Bob, and Charlie want to have dinner. Alice can come Monday or Tuesday. B
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -677,14 +677,14 @@ A binary constraint between variables $X_i$ and $X_j$ is **arc-consistent** if f
 
 ### AC-3 Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-handwritten.svg" alt="Handwritten: AC-3 Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-handwritten.svg" alt="Handwritten: AC-3 Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-diagram.svg" alt="Diagram: AC-3 Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-diagram.svg" alt="Diagram: AC-3 Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-sticky.svg" alt="Sticky Note: AC-3 Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-algorithm-steps-sticky.svg" alt="Sticky Note: AC-3 Algorithm Steps" width="30%">
 </a>
 
 
@@ -698,14 +698,14 @@ A binary constraint between variables $X_i$ and $X_j$ is **arc-consistent** if f
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ function REVISE(csp, X_i, X_j) returns boolean
 
 ### Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-diagram.svg" alt="Diagram: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-diagram.svg" alt="Diagram: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/step-by-step-dry-run-ac-3-on-australia-map-3-colors-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — AC-3 on Australia Map (3 colors)" width="30%">
 </a>
 
 
@@ -770,14 +770,14 @@ Let WA=R be assigned, removing R from NT and SA domains:
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ def revise(csp, Xi, Xj):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ def revise(csp, Xi, Xj):
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -856,14 +856,14 @@ def revise(csp, Xi, Xj):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -878,14 +878,14 @@ def revise(csp, Xi, Xj):
 
 ### Maintaining Arc Consistency (MAC)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-handwritten.svg" alt="Handwritten: Maintaining Arc Consistency (MAC)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-handwritten.svg" alt="Handwritten: Maintaining Arc Consistency (MAC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-diagram.svg" alt="Diagram: Maintaining Arc Consistency (MAC)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-diagram.svg" alt="Diagram: Maintaining Arc Consistency (MAC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-sticky.svg" alt="Sticky Note: Maintaining Arc Consistency (MAC)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/maintaining-arc-consistency-mac-sticky.svg" alt="Sticky Note: Maintaining Arc Consistency (MAC)" width="30%">
 </a>
 
 
@@ -915,14 +915,14 @@ function MAC(assignment, csp) returns solution or failure
 
 ### Real-World Analogy — Emergency Room Triage
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-handwritten.svg" alt="Handwritten: Real-World Analogy — Emergency Room Triage" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-handwritten.svg" alt="Handwritten: Real-World Analogy — Emergency Room Triage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-diagram.svg" alt="Diagram: Real-World Analogy — Emergency Room Triage" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-diagram.svg" alt="Diagram: Real-World Analogy — Emergency Room Triage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-sticky.svg" alt="Sticky Note: Real-World Analogy — Emergency Room Triage" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/real-world-analogy-emergency-room-triage-sticky.svg" alt="Sticky Note: Real-World Analogy — Emergency Room Triage" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ The ER doctor has 20 patients (variables) and limited resources (domains). **MRV
 
 ### Minimum Remaining Values (MRV) Heuristic
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-handwritten.svg" alt="Handwritten: Minimum Remaining Values (MRV) Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-handwritten.svg" alt="Handwritten: Minimum Remaining Values (MRV) Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-diagram.svg" alt="Diagram: Minimum Remaining Values (MRV) Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-diagram.svg" alt="Diagram: Minimum Remaining Values (MRV) Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-sticky.svg" alt="Sticky Note: Minimum Remaining Values (MRV) Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/minimum-remaining-values-mrv-heuristic-sticky.svg" alt="Sticky Note: Minimum Remaining Values (MRV) Heuristic" width="30%">
 </a>
 
 
@@ -952,14 +952,14 @@ Select the variable with the fewest legal values remaining in its domain. Also c
 
 ### Least Constraining Value (LCV) Heuristic
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-handwritten.svg" alt="Handwritten: Least Constraining Value (LCV) Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-handwritten.svg" alt="Handwritten: Least Constraining Value (LCV) Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-diagram.svg" alt="Diagram: Least Constraining Value (LCV) Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-diagram.svg" alt="Diagram: Least Constraining Value (LCV) Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-sticky.svg" alt="Sticky Note: Least Constraining Value (LCV) Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/least-constraining-value-lcv-heuristic-sticky.svg" alt="Sticky Note: Least Constraining Value (LCV) Heuristic" width="30%">
 </a>
 
 
@@ -982,14 +982,14 @@ Given a chosen variable, select the value that rules out the fewest choices for 
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1035,14 +1035,14 @@ def order_domain_values_lcv(csp, var, assignment):
 
 ### Dry Run — MRV on 4-Queens
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-handwritten.svg" alt="Handwritten: Dry Run — MRV on 4-Queens" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-handwritten.svg" alt="Handwritten: Dry Run — MRV on 4-Queens" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-diagram.svg" alt="Diagram: Dry Run — MRV on 4-Queens" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-diagram.svg" alt="Diagram: Dry Run — MRV on 4-Queens" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-sticky.svg" alt="Sticky Note: Dry Run — MRV on 4-Queens" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/dry-run-mrv-on-4-queens-sticky.svg" alt="Sticky Note: Dry Run — MRV on 4-Queens" width="30%">
 </a>
 
 
@@ -1062,14 +1062,14 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 
 ### Complexity Impact
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-handwritten.svg" alt="Handwritten: Complexity Impact" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-handwritten.svg" alt="Handwritten: Complexity Impact" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-diagram.svg" alt="Diagram: Complexity Impact" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-diagram.svg" alt="Diagram: Complexity Impact" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-sticky.svg" alt="Sticky Note: Complexity Impact" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/complexity-impact-sticky.svg" alt="Sticky Note: Complexity Impact" width="30%">
 </a>
 
 
@@ -1079,14 +1079,14 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1098,14 +1098,14 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 
 ### Edge Cases for MRV/LCV
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-handwritten.svg" alt="Handwritten: Edge Cases for MRV/LCV" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-handwritten.svg" alt="Handwritten: Edge Cases for MRV/LCV" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-diagram.svg" alt="Diagram: Edge Cases for MRV/LCV" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-diagram.svg" alt="Diagram: Edge Cases for MRV/LCV" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-sticky.svg" alt="Sticky Note: Edge Cases for MRV/LCV" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/edge-cases-for-mrv-lcv-sticky.svg" alt="Sticky Note: Edge Cases for MRV/LCV" width="30%">
 </a>
 
 
@@ -1123,14 +1123,14 @@ Without MRV, backtracking might try Q1=1, Q2=1 (fail), Q2=2 (fail), Q2=3... MRV 
 
 ### 4.6.1 Tree-Structured CSPs
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-handwritten.svg" alt="Handwritten: 4.6.1 Tree-Structured CSPs" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-handwritten.svg" alt="Handwritten: 4.6.1 Tree-Structured CSPs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-diagram.svg" alt="Diagram: 4.6.1 Tree-Structured CSPs" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-diagram.svg" alt="Diagram: 4.6.1 Tree-Structured CSPs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-sticky.svg" alt="Sticky Note: 4.6.1 Tree-Structured CSPs" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-1-tree-structured-csps-sticky.svg" alt="Sticky Note: 4.6.1 Tree-Structured CSPs" width="30%">
 </a>
 
 
@@ -1143,14 +1143,14 @@ A CSP whose constraint graph is a tree can be solved in $O(n d^2)$ time, where $
 
 ### 4.6.2 Reducing to Tree Structure
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-handwritten.svg" alt="Handwritten: 4.6.2 Reducing to Tree Structure" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-handwritten.svg" alt="Handwritten: 4.6.2 Reducing to Tree Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-diagram.svg" alt="Diagram: 4.6.2 Reducing to Tree Structure" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-diagram.svg" alt="Diagram: 4.6.2 Reducing to Tree Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-sticky.svg" alt="Sticky Note: 4.6.2 Reducing to Tree Structure" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-6-2-reducing-to-tree-structure-sticky.svg" alt="Sticky Note: 4.6.2 Reducing to Tree Structure" width="30%">
 </a>
 
 
@@ -1163,14 +1163,14 @@ If the constraint graph has small treewidth, the CSP can be solved efficiently:
 
 ### 4.7.1 Min-Conflicts Heuristic
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-handwritten.svg" alt="Handwritten: 4.7.1 Min-Conflicts Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-handwritten.svg" alt="Handwritten: 4.7.1 Min-Conflicts Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-diagram.svg" alt="Diagram: 4.7.1 Min-Conflicts Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-diagram.svg" alt="Diagram: 4.7.1 Min-Conflicts Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-sticky.svg" alt="Sticky Note: 4.7.1 Min-Conflicts Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/4-7-1-min-conflicts-heuristic-sticky.svg" alt="Sticky Note: 4.7.1 Min-Conflicts Heuristic" width="30%">
 </a>
 
 
@@ -1195,28 +1195,28 @@ The min-conflicts heuristic is remarkably effective for problems such as $N$-Que
 
 ### Q1: Can you formulate Map Coloring as a CSP?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-handwritten.svg" alt="Handwritten: Can you formulate Map Coloring as a CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-handwritten.svg" alt="Handwritten: Can you formulate Map Coloring as a CSP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-diagram.svg" alt="Diagram: Can you formulate Map Coloring as a CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-diagram.svg" alt="Diagram: Can you formulate Map Coloring as a CSP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-sticky.svg" alt="Sticky Note: Can you formulate Map Coloring as a CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/can-you-formulate-map-coloring-as-a-csp-sticky.svg" alt="Sticky Note: Can you formulate Map Coloring as a CSP?" width="30%">
 </a>
 
 **Answer:** Yes. Variables are the regions (territories, countries). Domains are the available colors (e.g., {red, green, blue}). Constraints are binary inequalities between every pair of adjacent regions: $Adjacent(A, B) \Rightarrow Color(A) \neq Color(B)$. The constraint graph mirrors the map's adjacency graph. This is a canonical CSP example because it maps cleanly to variables, domains, and binary constraints, and illustrates how constraint graphs capture problem structure.
 
 ### Q2: How would you solve N-Queens using CSP?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-handwritten.svg" alt="Handwritten: How would you solve N-Queens using CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-handwritten.svg" alt="Handwritten: How would you solve N-Queens using CSP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-diagram.svg" alt="Diagram: How would you solve N-Queens using CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-diagram.svg" alt="Diagram: How would you solve N-Queens using CSP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-sticky.svg" alt="Sticky Note: How would you solve N-Queens using CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-would-you-solve-n-queens-using-csp-sticky.svg" alt="Sticky Note: How would you solve N-Queens using CSP?" width="30%">
 </a>
 
 **Answer:** Variables are the N queens, one per column: $Q_1, Q_2, \ldots, Q_N$. Each variable's domain is the row number $\{1, 2, \ldots, N\}$. Constraints:
@@ -1226,14 +1226,14 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 
 ### Q3: How is Sudoku a CSP?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-handwritten.svg" alt="Handwritten: How is Sudoku a CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-handwritten.svg" alt="Handwritten: How is Sudoku a CSP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-diagram.svg" alt="Diagram: How is Sudoku a CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-diagram.svg" alt="Diagram: How is Sudoku a CSP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-sticky.svg" alt="Sticky Note: How is Sudoku a CSP?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/how-is-sudoku-a-csp-sticky.svg" alt="Sticky Note: How is Sudoku a CSP?" width="30%">
 </a>
 
 **Answer:** Sudoku is a CSP with:
@@ -1244,14 +1244,14 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 
 ### Q4: AC-3 vs Backtracking — which is better?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-handwritten.svg" alt="Handwritten: AC-3 vs Backtracking — which is better?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-handwritten.svg" alt="Handwritten: AC-3 vs Backtracking — which is better?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-diagram.svg" alt="Diagram: AC-3 vs Backtracking — which is better?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-diagram.svg" alt="Diagram: AC-3 vs Backtracking — which is better?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-sticky.svg" alt="Sticky Note: AC-3 vs Backtracking — which is better?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/ac-3-vs-backtracking-which-is-better-sticky.svg" alt="Sticky Note: AC-3 vs Backtracking — which is better?" width="30%">
 </a>
 
 **Answer:** They are complementary, not competing.
@@ -1261,28 +1261,28 @@ This gives $2 \times \binom{N}{2}$ binary constraints. With forward checking and
 
 ### Q5: What is the complexity of AC-3?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-handwritten.svg" alt="Handwritten: What is the complexity of AC-3?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-handwritten.svg" alt="Handwritten: What is the complexity of AC-3?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-diagram.svg" alt="Diagram: What is the complexity of AC-3?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-diagram.svg" alt="Diagram: What is the complexity of AC-3?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-sticky.svg" alt="Sticky Note: What is the complexity of AC-3?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-complexity-of-ac-3-sticky.svg" alt="Sticky Note: What is the complexity of AC-3?" width="30%">
 </a>
 
 **Answer:** $O(n^2 d^3)$ worst-case time, where $n$ is the number of variables and $d$ the maximum domain size. Explanation: There are $O(n^2)$ ordered arcs. Each arc can be added to the queue at most $d$ times (once per value removed from $D_i$). Each REVISE operation takes $O(d^2)$ to check all pairs of values. Therefore, $n^2 \times d \times d^2 = n^2 d^3$. Space is $O(n^2)$ for the queue.
 
 ### Q6: What is the difference between forward checking and AC-3?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-handwritten.svg" alt="Handwritten: What is the difference between forward checking and AC-3?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-handwritten.svg" alt="Handwritten: What is the difference between forward checking and AC-3?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-diagram.svg" alt="Diagram: What is the difference between forward checking and AC-3?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-diagram.svg" alt="Diagram: What is the difference between forward checking and AC-3?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-sticky.svg" alt="Sticky Note: What is the difference between forward checking and AC-3?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/04-csp/what-is-the-difference-between-forward-checking-and-ac-3-sticky.svg" alt="Sticky Note: What is the difference between forward checking and AC-3?" width="30%">
 </a>
 
 **Answer:** Forward checking is a 1-step lookahead applied after each assignment — it removes values from neighbors' domains that contradict the newly assigned value. AC-3 is a multi-step propagation that enforces arc consistency across all variables globally, recursively rechecking arcs when domains are revised. AC-3 is more powerful (detects more inconsistencies) but more expensive ($O(n^2 d^3)$ per invocation vs $O(n d^2)$ per assignment for forward checking). MAC (Maintaining Arc Consistency) interleaves AC-3 with backtracking, combining the best of both.

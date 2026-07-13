@@ -37,14 +37,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 The SOC Model — People, Process, Technology
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-handwritten.svg" alt="Handwritten: 1.1 The SOC Model — People, Process, Technology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-handwritten.svg" alt="Handwritten: 1.1 The SOC Model — People, Process, Technology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-diagram.svg" alt="Diagram: 1.1 The SOC Model — People, Process, Technology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-diagram.svg" alt="Diagram: 1.1 The SOC Model — People, Process, Technology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-sticky.svg" alt="Sticky Note: 1.1 The SOC Model — People, Process, Technology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-1-the-soc-model-people-process-technology-sticky.svg" alt="Sticky Note: 1.1 The SOC Model — People, Process, Technology" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ Tier 3 — Advanced Threat
 
 ### 1.2 SOC Tools Stack
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-handwritten.svg" alt="Handwritten: 1.2 SOC Tools Stack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-handwritten.svg" alt="Handwritten: 1.2 SOC Tools Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-diagram.svg" alt="Diagram: 1.2 SOC Tools Stack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-diagram.svg" alt="Diagram: 1.2 SOC Tools Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-sticky.svg" alt="Sticky Note: 1.2 SOC Tools Stack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-2-soc-tools-stack-sticky.svg" alt="Sticky Note: 1.2 SOC Tools Stack" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ Tier 3 — Advanced Threat
 
 ### 1.3 SOC Workflow — From Alert to Closure
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-handwritten.svg" alt="Handwritten: 1.3 SOC Workflow — From Alert to Closure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-handwritten.svg" alt="Handwritten: 1.3 SOC Workflow — From Alert to Closure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-diagram.svg" alt="Diagram: 1.3 SOC Workflow — From Alert to Closure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-diagram.svg" alt="Diagram: 1.3 SOC Workflow — From Alert to Closure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-sticky.svg" alt="Sticky Note: 1.3 SOC Workflow — From Alert to Closure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/1-3-soc-workflow-from-alert-to-closure-sticky.svg" alt="Sticky Note: 1.3 SOC Workflow — From Alert to Closure" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ Tier 3 — Advanced Threat
 
 ### 2.1 Architecture Overview
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-handwritten.svg" alt="Handwritten: 2.1 Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-handwritten.svg" alt="Handwritten: 2.1 Architecture Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-diagram.svg" alt="Diagram: 2.1 Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-diagram.svg" alt="Diagram: 2.1 Architecture Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-sticky.svg" alt="Sticky Note: 2.1 Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-1-architecture-overview-sticky.svg" alt="Sticky Note: 2.1 Architecture Overview" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@ Tier 3 — Advanced Threat
 
 ### 2.2 Step-by-Step — Deploy ELK + Wazuh Stack
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-handwritten.svg" alt="Handwritten: 2.2 Step-by-Step — Deploy ELK + Wazuh Stack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-handwritten.svg" alt="Handwritten: 2.2 Step-by-Step — Deploy ELK + Wazuh Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-diagram.svg" alt="Diagram: 2.2 Step-by-Step — Deploy ELK + Wazuh Stack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-diagram.svg" alt="Diagram: 2.2 Step-by-Step — Deploy ELK + Wazuh Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-sticky.svg" alt="Sticky Note: 2.2 Step-by-Step — Deploy ELK + Wazuh Stack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-2-step-by-step-deploy-elk-wazuh-stack-sticky.svg" alt="Sticky Note: 2.2 Step-by-Step — Deploy ELK + Wazuh Stack" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ sudo systemctl start wazuh-agent && sudo systemctl enable wazuh-agent
 
 ### 2.3 Log Sources and Parsing Configuration
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-handwritten.svg" alt="Handwritten: 2.3 Log Sources and Parsing Configuration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-handwritten.svg" alt="Handwritten: 2.3 Log Sources and Parsing Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-diagram.svg" alt="Diagram: 2.3 Log Sources and Parsing Configuration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-diagram.svg" alt="Diagram: 2.3 Log Sources and Parsing Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-sticky.svg" alt="Sticky Note: 2.3 Log Sources and Parsing Configuration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/2-3-log-sources-and-parsing-configuration-sticky.svg" alt="Sticky Note: 2.3 Log Sources and Parsing Configuration" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ output {
 
 ### 3.1 Playbook Automation — TypeScript Incident Response Engine
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-handwritten.svg" alt="Handwritten: 3.1 Playbook Automation — TypeScript Incident Response Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-handwritten.svg" alt="Handwritten: 3.1 Playbook Automation — TypeScript Incident Response Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-diagram.svg" alt="Diagram: 3.1 Playbook Automation — TypeScript Incident Response Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-diagram.svg" alt="Diagram: 3.1 Playbook Automation — TypeScript Incident Response Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-sticky.svg" alt="Sticky Note: 3.1 Playbook Automation — TypeScript Incident Response Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-1-playbook-automation-typescript-incident-response-engine-sticky.svg" alt="Sticky Note: 3.1 Playbook Automation — TypeScript Incident Response Engine" width="30%">
 </a>
 
 
@@ -795,14 +795,14 @@ async function main() {
 
 ### 3.2 Playbook Catalog — Common SOC Playbooks
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-handwritten.svg" alt="Handwritten: 3.2 Playbook Catalog — Common SOC Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-handwritten.svg" alt="Handwritten: 3.2 Playbook Catalog — Common SOC Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-diagram.svg" alt="Diagram: 3.2 Playbook Catalog — Common SOC Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-diagram.svg" alt="Diagram: 3.2 Playbook Catalog — Common SOC Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-sticky.svg" alt="Sticky Note: 3.2 Playbook Catalog — Common SOC Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/3-2-playbook-catalog-common-soc-playbooks-sticky.svg" alt="Sticky Note: 3.2 Playbook Catalog — Common SOC Playbooks" width="30%">
 </a>
 
 
@@ -821,14 +821,14 @@ async function main() {
 
 ### 4.1 The Hunting Maturity Model (HMM)
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-handwritten.svg" alt="Handwritten: 4.1 The Hunting Maturity Model (HMM)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-handwritten.svg" alt="Handwritten: 4.1 The Hunting Maturity Model (HMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-diagram.svg" alt="Diagram: 4.1 The Hunting Maturity Model (HMM)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-diagram.svg" alt="Diagram: 4.1 The Hunting Maturity Model (HMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-sticky.svg" alt="Sticky Note: 4.1 The Hunting Maturity Model (HMM)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-1-the-hunting-maturity-model-hmm-sticky.svg" alt="Sticky Note: 4.1 The Hunting Maturity Model (HMM)" width="30%">
 </a>
 
 
@@ -842,14 +842,14 @@ async function main() {
 
 ### 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-handwritten.svg" alt="Handwritten: 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-handwritten.svg" alt="Handwritten: 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-diagram.svg" alt="Diagram: 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-diagram.svg" alt="Diagram: 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-sticky.svg" alt="Sticky Note: 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-2-hunting-hypothesis-generation-mitre-att-ck-based-sticky.svg" alt="Sticky Note: 4.2 Hunting Hypothesis Generation — MITRE ATT&CK Based" width="30%">
 </a>
 
 
@@ -904,14 +904,14 @@ Detection:    reg.exe save HKLM\\SAM OR vssadmin.*Create.*Shadow OR ntdsutil.*ac
 
 ### 4.3 Hunting Campaign — Full Walkthrough
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-handwritten.svg" alt="Handwritten: 4.3 Hunting Campaign — Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-handwritten.svg" alt="Handwritten: 4.3 Hunting Campaign — Full Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-diagram.svg" alt="Diagram: 4.3 Hunting Campaign — Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-diagram.svg" alt="Diagram: 4.3 Hunting Campaign — Full Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-sticky.svg" alt="Sticky Note: 4.3 Hunting Campaign — Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-3-hunting-campaign-full-walkthrough-sticky.svg" alt="Sticky Note: 4.3 Hunting Campaign — Full Walkthrough" width="30%">
 </a>
 
 
@@ -1103,14 +1103,14 @@ async function huntDemo() {
 
 ### 4.4 Hunting Data Sources Matrix
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-handwritten.svg" alt="Handwritten: 4.4 Hunting Data Sources Matrix" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-handwritten.svg" alt="Handwritten: 4.4 Hunting Data Sources Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-diagram.svg" alt="Diagram: 4.4 Hunting Data Sources Matrix" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-diagram.svg" alt="Diagram: 4.4 Hunting Data Sources Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-sticky.svg" alt="Sticky Note: 4.4 Hunting Data Sources Matrix" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-4-hunting-data-sources-matrix-sticky.svg" alt="Sticky Note: 4.4 Hunting Data Sources Matrix" width="30%">
 </a>
 
 
@@ -1129,14 +1129,14 @@ async function huntDemo() {
 
 ### 4.5 Beaconing Detection Algorithm
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-handwritten.svg" alt="Handwritten: 4.5 Beaconing Detection Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-handwritten.svg" alt="Handwritten: 4.5 Beaconing Detection Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-diagram.svg" alt="Diagram: 4.5 Beaconing Detection Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-diagram.svg" alt="Diagram: 4.5 Beaconing Detection Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-sticky.svg" alt="Sticky Note: 4.5 Beaconing Detection Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/4-5-beaconing-detection-algorithm-sticky.svg" alt="Sticky Note: 4.5 Beaconing Detection Algorithm" width="30%">
 </a>
 
 
@@ -1330,14 +1330,14 @@ function beaconDemo() {
 
 ### 5.1 Intelligence Cycle
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-handwritten.svg" alt="Handwritten: 5.1 Intelligence Cycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-handwritten.svg" alt="Handwritten: 5.1 Intelligence Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-diagram.svg" alt="Diagram: 5.1 Intelligence Cycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-diagram.svg" alt="Diagram: 5.1 Intelligence Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-sticky.svg" alt="Sticky Note: 5.1 Intelligence Cycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-1-intelligence-cycle-sticky.svg" alt="Sticky Note: 5.1 Intelligence Cycle" width="30%">
 </a>
 
 
@@ -1379,14 +1379,14 @@ function beaconDemo() {
 
 ### 5.2 MISP — Malware Information Sharing Platform Setup
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-handwritten.svg" alt="Handwritten: 5.2 MISP — Malware Information Sharing Platform Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-handwritten.svg" alt="Handwritten: 5.2 MISP — Malware Information Sharing Platform Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-diagram.svg" alt="Diagram: 5.2 MISP — Malware Information Sharing Platform Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-diagram.svg" alt="Diagram: 5.2 MISP — Malware Information Sharing Platform Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-sticky.svg" alt="Sticky Note: 5.2 MISP — Malware Information Sharing Platform Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-2-misp-malware-information-sharing-platform-setup-sticky.svg" alt="Sticky Note: 5.2 MISP — Malware Information Sharing Platform Setup" width="30%">
 </a>
 
 
@@ -1559,14 +1559,14 @@ async function feedDemo() {
 
 ### 5.3 STIX/TAXII — Intelligence Sharing Standards
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-handwritten.svg" alt="Handwritten: 5.3 STIX/TAXII — Intelligence Sharing Standards" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-handwritten.svg" alt="Handwritten: 5.3 STIX/TAXII — Intelligence Sharing Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-diagram.svg" alt="Diagram: 5.3 STIX/TAXII — Intelligence Sharing Standards" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-diagram.svg" alt="Diagram: 5.3 STIX/TAXII — Intelligence Sharing Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-sticky.svg" alt="Sticky Note: 5.3 STIX/TAXII — Intelligence Sharing Standards" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/5-3-stix-taxii-intelligence-sharing-standards-sticky.svg" alt="Sticky Note: 5.3 STIX/TAXII — Intelligence Sharing Standards" width="30%">
 </a>
 
 
@@ -1727,14 +1727,14 @@ Sigma is a generic and open signature format for SIEM systems. Write once, run i
 
 ### 6.1 Sigma Rule Structure
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-handwritten.svg" alt="Handwritten: 6.1 Sigma Rule Structure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-handwritten.svg" alt="Handwritten: 6.1 Sigma Rule Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-diagram.svg" alt="Diagram: 6.1 Sigma Rule Structure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-diagram.svg" alt="Diagram: 6.1 Sigma Rule Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-sticky.svg" alt="Sticky Note: 6.1 Sigma Rule Structure" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-1-sigma-rule-structure-sticky.svg" alt="Sticky Note: 6.1 Sigma Rule Structure" width="30%">
 </a>
 
 
@@ -1785,14 +1785,14 @@ level: high
 
 ### 6.2 Detection Rule Engine — TypeScript
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-handwritten.svg" alt="Handwritten: 6.2 Detection Rule Engine — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-handwritten.svg" alt="Handwritten: 6.2 Detection Rule Engine — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-diagram.svg" alt="Diagram: 6.2 Detection Rule Engine — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-diagram.svg" alt="Diagram: 6.2 Detection Rule Engine — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-sticky.svg" alt="Sticky Note: 6.2 Detection Rule Engine — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/6-2-detection-rule-engine-typescript-sticky.svg" alt="Sticky Note: 6.2 Detection Rule Engine — TypeScript" width="30%">
 </a>
 
 
@@ -2015,14 +2015,14 @@ function sigmaDemo() {
 
 ### 7.1 SOC Maturity Model (M0-M4)
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-handwritten.svg" alt="Handwritten: 7.1 SOC Maturity Model (M0-M4)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-handwritten.svg" alt="Handwritten: 7.1 SOC Maturity Model (M0-M4)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-diagram.svg" alt="Diagram: 7.1 SOC Maturity Model (M0-M4)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-diagram.svg" alt="Diagram: 7.1 SOC Maturity Model (M0-M4)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-sticky.svg" alt="Sticky Note: 7.1 SOC Maturity Model (M0-M4)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-1-soc-maturity-model-m0-m4-sticky.svg" alt="Sticky Note: 7.1 SOC Maturity Model (M0-M4)" width="30%">
 </a>
 
 
@@ -2072,14 +2072,14 @@ M4 — OPTIMIZED
 
 ### 7.2 Key SOC Metrics Dashboard
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-handwritten.svg" alt="Handwritten: 7.2 Key SOC Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-handwritten.svg" alt="Handwritten: 7.2 Key SOC Metrics Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-diagram.svg" alt="Diagram: 7.2 Key SOC Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-diagram.svg" alt="Diagram: 7.2 Key SOC Metrics Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-sticky.svg" alt="Sticky Note: 7.2 Key SOC Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/7-2-key-soc-metrics-dashboard-sticky.svg" alt="Sticky Note: 7.2 Key SOC Metrics Dashboard" width="30%">
 </a>
 
 
@@ -2218,14 +2218,14 @@ function metricsDemo() {
 
 ### 8.1 Reducing MTTD — Detection Coverage Gaps
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-handwritten.svg" alt="Handwritten: 8.1 Reducing MTTD — Detection Coverage Gaps" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-handwritten.svg" alt="Handwritten: 8.1 Reducing MTTD — Detection Coverage Gaps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-diagram.svg" alt="Diagram: 8.1 Reducing MTTD — Detection Coverage Gaps" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-diagram.svg" alt="Diagram: 8.1 Reducing MTTD — Detection Coverage Gaps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-sticky.svg" alt="Sticky Note: 8.1 Reducing MTTD — Detection Coverage Gaps" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-1-reducing-mttd-detection-coverage-gaps-sticky.svg" alt="Sticky Note: 8.1 Reducing MTTD — Detection Coverage Gaps" width="30%">
 </a>
 
 
@@ -2239,14 +2239,14 @@ function metricsDemo() {
 
 ### 8.2 Reducing MTTR — Automation Playbooks
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-handwritten.svg" alt="Handwritten: 8.2 Reducing MTTR — Automation Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-handwritten.svg" alt="Handwritten: 8.2 Reducing MTTR — Automation Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-diagram.svg" alt="Diagram: 8.2 Reducing MTTR — Automation Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-diagram.svg" alt="Diagram: 8.2 Reducing MTTR — Automation Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-sticky.svg" alt="Sticky Note: 8.2 Reducing MTTR — Automation Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/8-2-reducing-mttr-automation-playbooks-sticky.svg" alt="Sticky Note: 8.2 Reducing MTTR — Automation Playbooks" width="30%">
 </a>
 
 
@@ -2282,14 +2282,14 @@ Time Saved: ~90-95%
 
 ### 9.1 Memory Acquisition
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-handwritten.svg" alt="Handwritten: 9.1 Memory Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-handwritten.svg" alt="Handwritten: 9.1 Memory Acquisition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-diagram.svg" alt="Diagram: 9.1 Memory Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-diagram.svg" alt="Diagram: 9.1 Memory Acquisition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-sticky.svg" alt="Sticky Note: 9.1 Memory Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-1-memory-acquisition-sticky.svg" alt="Sticky Note: 9.1 Memory Acquisition" width="30%">
 </a>
 
 
@@ -2318,14 +2318,14 @@ sudo ./avml /tmp/memdump.raw
 
 ### 9.2 Volatility 3 Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-handwritten.svg" alt="Handwritten: 9.2 Volatility 3 Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-handwritten.svg" alt="Handwritten: 9.2 Volatility 3 Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-diagram.svg" alt="Diagram: 9.2 Volatility 3 Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-diagram.svg" alt="Diagram: 9.2 Volatility 3 Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-sticky.svg" alt="Sticky Note: 9.2 Volatility 3 Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-2-volatility-3-analysis-sticky.svg" alt="Sticky Note: 9.2 Volatility 3 Analysis" width="30%">
 </a>
 
 
@@ -2387,14 +2387,14 @@ python3 vol.py -f memdump.raw windows.filescan | grep -E "\.exe|\.dll|\.ps1|\.vb
 
 ### 9.3 YARA Rule Writing and Deployment
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-handwritten.svg" alt="Handwritten: 9.3 YARA Rule Writing and Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-handwritten.svg" alt="Handwritten: 9.3 YARA Rule Writing and Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-diagram.svg" alt="Diagram: 9.3 YARA Rule Writing and Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-diagram.svg" alt="Diagram: 9.3 YARA Rule Writing and Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-sticky.svg" alt="Sticky Note: 9.3 YARA Rule Writing and Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/9-3-yara-rule-writing-and-deployment-sticky.svg" alt="Sticky Note: 9.3 YARA Rule Writing and Deployment" width="30%">
 </a>
 
 
@@ -2571,14 +2571,14 @@ ${findings.length > 0 ? '  ■ Immediate containment required' : ''}
 
 ### Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-handwritten.svg" alt="Handwritten: Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-handwritten.svg" alt="Handwritten: Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-diagram.svg" alt="Diagram: Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-diagram.svg" alt="Diagram: Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-sticky.svg" alt="Sticky Note: Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/full-wazuh-integration-filebeat-logstash-elasticsearch-pipeline-sticky.svg" alt="Sticky Note: Full Wazuh Integration — Filebeat, Logstash, Elasticsearch Pipeline" width="30%">
 </a>
 
 
@@ -2619,14 +2619,14 @@ sudo systemctl restart logstash
 
 ### Kibana Detection Rules Configuration
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-handwritten.svg" alt="Handwritten: Kibana Detection Rules Configuration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-handwritten.svg" alt="Handwritten: Kibana Detection Rules Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-diagram.svg" alt="Diagram: Kibana Detection Rules Configuration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-diagram.svg" alt="Diagram: Kibana Detection Rules Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-sticky.svg" alt="Sticky Note: Kibana Detection Rules Configuration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/kibana-detection-rules-configuration-sticky.svg" alt="Sticky Note: Kibana Detection Rules Configuration" width="30%">
 </a>
 
 
@@ -2664,14 +2664,14 @@ curl -X POST "http://localhost:5601/api/detection_engine/rules" \
 
 ### SOC Alert Triage Workflow
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-handwritten.svg" alt="Handwritten: SOC Alert Triage Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-handwritten.svg" alt="Handwritten: SOC Alert Triage Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-diagram.svg" alt="Diagram: SOC Alert Triage Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-diagram.svg" alt="Diagram: SOC Alert Triage Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-sticky.svg" alt="Sticky Note: SOC Alert Triage Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/soc-alert-triage-workflow-sticky.svg" alt="Sticky Note: SOC Alert Triage Workflow" width="30%">
 </a>
 
 
@@ -2697,14 +2697,14 @@ flowchart TD
 
 ### SIEM Data Pipeline Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-handwritten.svg" alt="Handwritten: SIEM Data Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-handwritten.svg" alt="Handwritten: SIEM Data Pipeline Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-diagram.svg" alt="Diagram: SIEM Data Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-diagram.svg" alt="Diagram: SIEM Data Pipeline Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-sticky.svg" alt="Sticky Note: SIEM Data Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/siem-data-pipeline-architecture-sticky.svg" alt="Sticky Note: SIEM Data Pipeline Architecture" width="30%">
 </a>
 
 
@@ -2809,14 +2809,14 @@ The Diamond Model structures intrusion analysis around four vertices: Adversary 
 
 ### Practical Exercises
 
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/11-soc-threat-hunting/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
 </a>
 
 

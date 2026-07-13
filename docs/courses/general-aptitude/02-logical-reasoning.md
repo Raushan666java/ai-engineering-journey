@@ -45,14 +45,14 @@ flowchart LR
 
 ### 2.1 Syllogisms
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-handwritten.svg" alt="Handwritten: 2.1 Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-handwritten.svg" alt="Handwritten: 2.1 Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-diagram.svg" alt="Diagram: 2.1 Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-diagram.svg" alt="Diagram: 2.1 Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-sticky.svg" alt="Sticky Note: 2.1 Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-1-syllogisms-sticky.svg" alt="Sticky Note: 2.1 Syllogisms" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ If neither follows individually but they form a complementary pair, then "Either
 
 ### 2.2 Blood Relations
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-handwritten.svg" alt="Handwritten: 2.2 Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-handwritten.svg" alt="Handwritten: 2.2 Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-diagram.svg" alt="Diagram: 2.2 Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-diagram.svg" alt="Diagram: 2.2 Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-sticky.svg" alt="Sticky Note: 2.2 Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-2-blood-relations-sticky.svg" alt="Sticky Note: 2.2 Blood Relations" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@ If neither follows individually but they form a complementary pair, then "Either
 
 ### 2.3 Direction Sense
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-handwritten.svg" alt="Handwritten: 2.3 Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-handwritten.svg" alt="Handwritten: 2.3 Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-diagram.svg" alt="Diagram: 2.3 Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-diagram.svg" alt="Diagram: 2.3 Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-sticky.svg" alt="Sticky Note: 2.3 Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-3-direction-sense-sticky.svg" alt="Sticky Note: 2.3 Direction Sense" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 ### 2.4 Seating Arrangements
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-handwritten.svg" alt="Handwritten: 2.4 Seating Arrangements" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-handwritten.svg" alt="Handwritten: 2.4 Seating Arrangements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-diagram.svg" alt="Diagram: 2.4 Seating Arrangements" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-diagram.svg" alt="Diagram: 2.4 Seating Arrangements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-sticky.svg" alt="Sticky Note: 2.4 Seating Arrangements" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-4-seating-arrangements-sticky.svg" alt="Sticky Note: 2.4 Seating Arrangements" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 ### 2.5 Puzzles
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-handwritten.svg" alt="Handwritten: 2.5 Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-handwritten.svg" alt="Handwritten: 2.5 Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-diagram.svg" alt="Diagram: 2.5 Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-diagram.svg" alt="Diagram: 2.5 Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-sticky.svg" alt="Sticky Note: 2.5 Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-5-puzzles-sticky.svg" alt="Sticky Note: 2.5 Puzzles" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 ### 2.6 Coding-Decoding
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-handwritten.svg" alt="Handwritten: 2.6 Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-handwritten.svg" alt="Handwritten: 2.6 Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-diagram.svg" alt="Diagram: 2.6 Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-diagram.svg" alt="Diagram: 2.6 Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-sticky.svg" alt="Sticky Note: 2.6 Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-6-coding-decoding-sticky.svg" alt="Sticky Note: 2.6 Coding-Decoding" width="30%">
 </a>
 
 
@@ -287,14 +287,14 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 ### 2.7 Series Completion
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-handwritten.svg" alt="Handwritten: 2.7 Series Completion" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-handwritten.svg" alt="Handwritten: 2.7 Series Completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-diagram.svg" alt="Diagram: 2.7 Series Completion" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-diagram.svg" alt="Diagram: 2.7 Series Completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-sticky.svg" alt="Sticky Note: 2.7 Series Completion" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-7-series-completion-sticky.svg" alt="Sticky Note: 2.7 Series Completion" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 ### 2.8 Odd One Out
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-handwritten.svg" alt="Handwritten: 2.8 Odd One Out" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-handwritten.svg" alt="Handwritten: 2.8 Odd One Out" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-diagram.svg" alt="Diagram: 2.8 Odd One Out" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-diagram.svg" alt="Diagram: 2.8 Odd One Out" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-sticky.svg" alt="Sticky Note: 2.8 Odd One Out" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-8-odd-one-out-sticky.svg" alt="Sticky Note: 2.8 Odd One Out" width="30%">
 </a>
 
 
@@ -355,14 +355,14 @@ $$\text{Net displacement} = \sqrt{(\text{change in } x)^2 + (\text{change in } y
 
 ### 2.9 Input-Output
 
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-handwritten.svg" alt="Handwritten: 2.9 Input-Output" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-handwritten.svg" alt="Handwritten: 2.9 Input-Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-diagram.svg" alt="Diagram: 2.9 Input-Output" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-diagram.svg" alt="Diagram: 2.9 Input-Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-sticky.svg" alt="Sticky Note: 2.9 Input-Output" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/02-logical-reasoning/2-9-input-output-sticky.svg" alt="Sticky Note: 2.9 Input-Output" width="30%">
 </a>
 
 

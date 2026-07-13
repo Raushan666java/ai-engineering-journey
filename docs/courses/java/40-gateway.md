@@ -82,14 +82,14 @@ flowchart TD
 
 ### API Gateway Pattern
 
-<a href="../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-handwritten.svg" alt="Handwritten: API Gateway Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-handwritten.svg" alt="Handwritten: API Gateway Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-diagram.svg" alt="Diagram: API Gateway Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-diagram.svg" alt="Diagram: API Gateway Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-sticky.svg" alt="Sticky Note: API Gateway Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/api-gateway-pattern-sticky.svg" alt="Sticky Note: API Gateway Pattern" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ An API Gateway is a single entry point that routes requests to appropriate backe
 
 ### Spring Cloud Gateway
 
-<a href="../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-handwritten.svg" alt="Handwritten: Spring Cloud Gateway" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-handwritten.svg" alt="Handwritten: Spring Cloud Gateway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-diagram.svg" alt="Diagram: Spring Cloud Gateway" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-diagram.svg" alt="Diagram: Spring Cloud Gateway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-sticky.svg" alt="Sticky Note: Spring Cloud Gateway" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/spring-cloud-gateway-sticky.svg" alt="Sticky Note: Spring Cloud Gateway" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ Spring Cloud Gateway is built on **Spring WebFlux** (Reactor, Netty), making it 
 
 ### Circuit Breaker Integration
 
-<a href="../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-handwritten.svg" alt="Handwritten: Circuit Breaker Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-handwritten.svg" alt="Handwritten: Circuit Breaker Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-diagram.svg" alt="Diagram: Circuit Breaker Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-diagram.svg" alt="Diagram: Circuit Breaker Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-sticky.svg" alt="Sticky Note: Circuit Breaker Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/circuit-breaker-integration-sticky.svg" alt="Sticky Note: Circuit Breaker Integration" width="30%">
 </a>
 
 
@@ -134,14 +134,14 @@ Spring Cloud Gateway integrates with Spring Cloud CircuitBreaker to wrap downstr
 
 ### Rate Limiting
 
-<a href="../../assets/images/diagrams/java/40-gateway/rate-limiting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/rate-limiting-handwritten.svg" alt="Handwritten: Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/rate-limiting-handwritten.svg" alt="Handwritten: Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/rate-limiting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/rate-limiting-diagram.svg" alt="Diagram: Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/rate-limiting-diagram.svg" alt="Diagram: Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/40-gateway/rate-limiting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/40-gateway/rate-limiting-sticky.svg" alt="Sticky Note: Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/java/40-gateway/rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/40-gateway/rate-limiting-sticky.svg" alt="Sticky Note: Rate Limiting" width="30%">
 </a>
 
 

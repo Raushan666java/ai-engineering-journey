@@ -74,14 +74,14 @@ flowchart LR
 
 ### Problem Formulation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-handwritten.svg" alt="Handwritten: Problem Formulation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-handwritten.svg" alt="Handwritten: Problem Formulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-diagram.svg" alt="Diagram: Problem Formulation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-diagram.svg" alt="Diagram: Problem Formulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-sticky.svg" alt="Sticky Note: Problem Formulation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/problem-formulation-sticky.svg" alt="Sticky Note: Problem Formulation" width="30%">
 </a>
 
 > **One-Sentence Takeaway:** Every search problem needs five components: initial state, actions, transition model, goal test, and path cost — getting these right is the foundation of any solution.
@@ -112,14 +112,14 @@ A **solution** is a sequence of actions leading from the initial state to a goal
 
 ### Breadth-First Search (BFS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-handwritten.svg" alt="Handwritten: Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-handwritten.svg" alt="Handwritten: Breadth-First Search (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-diagram.svg" alt="Diagram: Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-diagram.svg" alt="Diagram: Breadth-First Search (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-sticky.svg" alt="Sticky Note: Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/breadth-first-search-bfs-sticky.svg" alt="Sticky Note: Breadth-First Search (BFS)" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ public class BFS {
 
 ### Depth-First Search (DFS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-handwritten.svg" alt="Handwritten: Depth-First Search (DFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-handwritten.svg" alt="Handwritten: Depth-First Search (DFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-diagram.svg" alt="Diagram: Depth-First Search (DFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-diagram.svg" alt="Diagram: Depth-First Search (DFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-sticky.svg" alt="Sticky Note: Depth-First Search (DFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-first-search-dfs-sticky.svg" alt="Sticky Note: Depth-First Search (DFS)" width="30%">
 </a>
 
 
@@ -511,14 +511,14 @@ public class DFS {
 
 ### Uniform-Cost Search (UCS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-handwritten.svg" alt="Handwritten: Uniform-Cost Search (UCS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-handwritten.svg" alt="Handwritten: Uniform-Cost Search (UCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-diagram.svg" alt="Diagram: Uniform-Cost Search (UCS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-diagram.svg" alt="Diagram: Uniform-Cost Search (UCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-sticky.svg" alt="Sticky Note: Uniform-Cost Search (UCS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/uniform-cost-search-ucs-sticky.svg" alt="Sticky Note: Uniform-Cost Search (UCS)" width="30%">
 </a>
 
 
@@ -742,14 +742,14 @@ public class UCS {
 
 ### Depth-Limited Search (DLS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-handwritten.svg" alt="Handwritten: Depth-Limited Search (DLS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-handwritten.svg" alt="Handwritten: Depth-Limited Search (DLS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-diagram.svg" alt="Diagram: Depth-Limited Search (DLS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-diagram.svg" alt="Diagram: Depth-Limited Search (DLS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-sticky.svg" alt="Sticky Note: Depth-Limited Search (DLS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/depth-limited-search-dls-sticky.svg" alt="Sticky Note: Depth-Limited Search (DLS)" width="30%">
 </a>
 
 
@@ -905,14 +905,14 @@ public class DLS {
 
 ### Iterative Deepening Depth-First Search (IDDFS)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-handwritten.svg" alt="Handwritten: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-handwritten.svg" alt="Handwritten: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-diagram.svg" alt="Diagram: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-diagram.svg" alt="Diagram: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-sticky.svg" alt="Sticky Note: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/iterative-deepening-depth-first-search-iddfs-sticky.svg" alt="Sticky Note: Iterative Deepening Depth-First Search (IDDFS)" width="30%">
 </a>
 
 
@@ -1075,14 +1075,14 @@ public class IDDFS {
 
 ### Bidirectional Search
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-handwritten.svg" alt="Handwritten: Bidirectional Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-handwritten.svg" alt="Handwritten: Bidirectional Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-diagram.svg" alt="Diagram: Bidirectional Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-diagram.svg" alt="Diagram: Bidirectional Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-sticky.svg" alt="Sticky Note: Bidirectional Search" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-search/bidirectional-search-sticky.svg" alt="Sticky Note: Bidirectional Search" width="30%">
 </a>
 
 

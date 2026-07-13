@@ -38,14 +38,14 @@ flowchart LR
 
 ### Q1: Explain the Laravel request lifecycle.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-handwritten.svg" alt="Handwritten: Explain the Laravel request lifecycle." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-handwritten.svg" alt="Handwritten: Explain the Laravel request lifecycle." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-diagram.svg" alt="Diagram: Explain the Laravel request lifecycle." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-diagram.svg" alt="Diagram: Explain the Laravel request lifecycle." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-sticky.svg" alt="Sticky Note: Explain the Laravel request lifecycle." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-laravel-request-lifecycle-sticky.svg" alt="Sticky Note: Explain the Laravel request lifecycle." width="30%">
 </a>
 
 **Answer:** Every HTTP request enters via `public/index.php`, which loads Composer's autoloader and bootstraps the application. The HTTP kernel is resolved from the container and the request passes through global middleware. Service providers are registered and booted. The router matches the URI/method to a route. The request traverses the route middleware pipeline, then reaches the controller. The controller returns a Response, which travels back through middleware in reverse and is sent to the browser. Finally, terminable middleware runs.
@@ -59,14 +59,14 @@ $kernel->terminate($request, $response);
 
 ### Q2: What is the service container and how does dependency injection work?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-handwritten.svg" alt="Handwritten: What is the service container and how does dependency injection work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-handwritten.svg" alt="Handwritten: What is the service container and how does dependency injection work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-diagram.svg" alt="Diagram: What is the service container and how does dependency injection work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-diagram.svg" alt="Diagram: What is the service container and how does dependency injection work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-sticky.svg" alt="Sticky Note: What is the service container and how does dependency injection work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-service-container-and-how-does-dependency-injection-work-sticky.svg" alt="Sticky Note: What is the service container and how does dependency injection work?" width="30%">
 </a>
 
 **Answer:** The service container (`Illuminate\Foundation\Application`) is Laravel's dependency injection container. It automatically resolves class dependencies by inspecting constructor type-hints. You register bindings with `bind()`, `singleton()`, or `instance()`, and the container recursively resolves them. It can inject primitives using contextual binding and resolves interfaces to concrete implementations.
@@ -78,14 +78,14 @@ app()->when(ReportController::class)->needs('$perPage')->give(25);
 
 ### Q3: What is the difference between bind, singleton, and instance in the container?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-handwritten.svg" alt="Handwritten: What is the difference between bind, singleton, and instance in the container?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-handwritten.svg" alt="Handwritten: What is the difference between bind, singleton, and instance in the container?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-diagram.svg" alt="Diagram: What is the difference between bind, singleton, and instance in the container?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-diagram.svg" alt="Diagram: What is the difference between bind, singleton, and instance in the container?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-sticky.svg" alt="Sticky Note: What is the difference between bind, singleton, and instance in the container?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-bind-singleton-and-instance-in-the-container-sticky.svg" alt="Sticky Note: What is the difference between bind, singleton, and instance in the container?" width="30%">
 </a>
 
 **Answer:** `bind()` registers a class or interface binding that resolves to a new instance every time. `singleton()` resolves to the same shared instance for the entire request lifecycle. `instance()` places an already-constructed object into the container, effectively replacing any future resolutions with that exact object.
@@ -98,14 +98,14 @@ app()->instance(Request::class, $request);     // pre-built object
 
 ### Q4: Explain middleware in Laravel → how to create and register it.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-handwritten.svg" alt="Handwritten: Explain middleware in Laravel → how to create and register it." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-handwritten.svg" alt="Handwritten: Explain middleware in Laravel → how to create and register it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-diagram.svg" alt="Diagram: Explain middleware in Laravel → how to create and register it." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-diagram.svg" alt="Diagram: Explain middleware in Laravel → how to create and register it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-sticky.svg" alt="Sticky Note: Explain middleware in Laravel → how to create and register it." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-middleware-in-laravel-how-to-create-and-register-it-sticky.svg" alt="Sticky Note: Explain middleware in Laravel → how to create and register it." width="30%">
 </a>
 
 **Answer:** Middleware filters HTTP requests entering and responses leaving the application. Create with `php artisan make:middleware`. Register globally in the `$middleware` property of `App\Http\Kernel`, assign to route groups via `$middlewareGroups`, or use named middleware via `$routeMiddleware`. A middleware class implements `handle($request, Closure $next)`.
@@ -122,14 +122,14 @@ public function handle(Request $request, Closure $next): Response
 
 ### Q5: What are service providers and what is their role?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-handwritten.svg" alt="Handwritten: What are service providers and what is their role?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-handwritten.svg" alt="Handwritten: What are service providers and what is their role?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-diagram.svg" alt="Diagram: What are service providers and what is their role?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-diagram.svg" alt="Diagram: What are service providers and what is their role?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-sticky.svg" alt="Sticky Note: What are service providers and what is their role?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-service-providers-and-what-is-their-role-sticky.svg" alt="Sticky Note: What are service providers and what is their role?" width="30%">
 </a>
 
 **Answer:** Service providers are the central bootstrapping mechanism. Every Laravel startup runs through providers listed in `config/app.php`. The `register()` method binds services into the container. The `boot()` method runs after all providers have registered, so it can safely depend on other container bindings. Providers orchestrate everything → route loading, event registration, queue configuration, and AI SDK setup.
@@ -151,14 +151,14 @@ class AppServiceProvider extends ServiceProvider
 
 ### Q6: Explain named routes, route groups, and route model binding.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-handwritten.svg" alt="Handwritten: Explain named routes, route groups, and route model binding." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-handwritten.svg" alt="Handwritten: Explain named routes, route groups, and route model binding." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-diagram.svg" alt="Diagram: Explain named routes, route groups, and route model binding." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-diagram.svg" alt="Diagram: Explain named routes, route groups, and route model binding." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-sticky.svg" alt="Sticky Note: Explain named routes, route groups, and route model binding." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-named-routes-route-groups-and-route-model-binding-sticky.svg" alt="Sticky Note: Explain named routes, route groups, and route model binding." width="30%">
 </a>
 
 **Answer:** Named routes assign a name for URL generation with `route()`. Route groups share attributes (prefix, middleware, controller namespace). Route model binding automatically injects Eloquent models into controller methods → implicit binding uses a type-hinted `{model}` parameter, explicit binding customizes the resolution via `Route::model()` or `getRouteKeyName()`.
@@ -177,14 +177,14 @@ public function show(Invoice $invoice) { return $invoice; }
 
 ### Q7: How does Eloquent's N+1 problem occur and how do you fix it?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-handwritten.svg" alt="Handwritten: How does Eloquent's N+1 problem occur and how do you fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-handwritten.svg" alt="Handwritten: How does Eloquent's N+1 problem occur and how do you fix it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-diagram.svg" alt="Diagram: How does Eloquent's N+1 problem occur and how do you fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-diagram.svg" alt="Diagram: How does Eloquent's N+1 problem occur and how do you fix it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-sticky.svg" alt="Sticky Note: How does Eloquent's N+1 problem occur and how do you fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-eloquent-s-n-1-problem-occur-and-how-do-you-fix-it-sticky.svg" alt="Sticky Note: How does Eloquent's N+1 problem occur and how do you fix it?" width="30%">
 </a>
 
 **Answer:** The N+1 problem happens when you loop over a collection and access a relationship within the loop, triggering a separate query per iteration. Fix it with eager loading using `with()` or `load()`.
@@ -200,14 +200,14 @@ foreach ($posts as $post) { echo $post->author->name; }
 
 ### Q8: Explain all Eloquent relationship types with examples.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-handwritten.svg" alt="Handwritten: Explain all Eloquent relationship types with examples." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-handwritten.svg" alt="Handwritten: Explain all Eloquent relationship types with examples." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-diagram.svg" alt="Diagram: Explain all Eloquent relationship types with examples." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-diagram.svg" alt="Diagram: Explain all Eloquent relationship types with examples." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-sticky.svg" alt="Sticky Note: Explain all Eloquent relationship types with examples." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-all-eloquent-relationship-types-with-examples-sticky.svg" alt="Sticky Note: Explain all Eloquent relationship types with examples." width="30%">
 </a>
 
 **Answer:** `hasOne` (one-to-one), `hasMany` (one-to-many), `belongsTo` (inverse), `belongsToMany` (many-to-many with pivot), `hasManyThrough` (nested relationship through an intermediate model), `morphOne`/`morphMany`/`morphToMany` (polymorphic relationships where multiple models share a relation). Each returns a relationship instance that can be chained.
@@ -224,14 +224,14 @@ class User extends Model
 
 ### Q9: What are accessors, mutators, and casts?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-handwritten.svg" alt="Handwritten: What are accessors, mutators, and casts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-handwritten.svg" alt="Handwritten: What are accessors, mutators, and casts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-diagram.svg" alt="Diagram: What are accessors, mutators, and casts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-diagram.svg" alt="Diagram: What are accessors, mutators, and casts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-sticky.svg" alt="Sticky Note: What are accessors, mutators, and casts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-accessors-mutators-and-casts-sticky.svg" alt="Sticky Note: What are accessors, mutators, and casts?" width="30%">
 </a>
 
 **Answer:** Accessors format attribute values when retrieved, mutators format them when set, and casts automate type conversion on Eloquent models. In Laravel 13, accessors/mutators use the new `Attribute` return type.
@@ -259,14 +259,14 @@ protected $casts = [
 
 ### Q10: How do you handle authentication and authorization in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-handwritten.svg" alt="Handwritten: How do you handle authentication and authorization in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-handwritten.svg" alt="Handwritten: How do you handle authentication and authorization in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-diagram.svg" alt="Diagram: How do you handle authentication and authorization in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-diagram.svg" alt="Diagram: How do you handle authentication and authorization in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-sticky.svg" alt="Sticky Note: How do you handle authentication and authorization in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-authentication-and-authorization-in-laravel-sticky.svg" alt="Sticky Note: How do you handle authentication and authorization in Laravel?" width="30%">
 </a>
 
 **Answer:** Authentication verifies identity. Laravel provides starter kits (Breeze, Jetstream) that scaffold login, registration, and password reset. Under the hood, authentication uses guards (session for web, token/Sanctum for API) and providers (Eloquent, database). Authorization determines what an authenticated user can do. Laravel provides Gates (Closure-based) and Policies (class-based) for authorization logic, plus Blade directives (`@can`, `@cannot`) and middleware (`can:`).
@@ -284,14 +284,14 @@ public function update(User $user, Post $post): bool
 
 ### Q11: Explain the differences between Sanctum and Passport.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-handwritten.svg" alt="Handwritten: Explain the differences between Sanctum and Passport." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-handwritten.svg" alt="Handwritten: Explain the differences between Sanctum and Passport." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-diagram.svg" alt="Diagram: Explain the differences between Sanctum and Passport." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-diagram.svg" alt="Diagram: Explain the differences between Sanctum and Passport." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-sticky.svg" alt="Sticky Note: Explain the differences between Sanctum and Passport." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-differences-between-sanctum-and-passport-sticky.svg" alt="Sticky Note: Explain the differences between Sanctum and Passport." width="30%">
 </a>
 
 **Answer:** Sanctum is a lightweight API token authentication system supporting token-based auth for SPAs and simple API tokens for mobile apps. It pairs well with cookie-based session auth for first-party frontends. Passport implements OAuth2 → it provides client credentials, authorization codes, and personal access tokens. Sanctum is simpler and preferred for most Laravel applications; Passport is needed when you need a full OAuth2 server for third-party clients.
@@ -310,14 +310,14 @@ $response = $client->post('oauth/token', [
 
 ### Q12: What are gates and policies?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-handwritten.svg" alt="Handwritten: What are gates and policies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-handwritten.svg" alt="Handwritten: What are gates and policies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-diagram.svg" alt="Diagram: What are gates and policies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-diagram.svg" alt="Diagram: What are gates and policies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-sticky.svg" alt="Sticky Note: What are gates and policies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-gates-and-policies-sticky.svg" alt="Sticky Note: What are gates and policies?" width="30%">
 </a>
 
 **Answer:** Gates are Closure-based authorization checks defined in `App\Providers\AuthServiceProvider`. Policies are class-based authorization organized around a model. Both support `before()` hooks that run before all other checks (useful for super-admins). Use `Gate::allows()`, `$user->can()`, or middleware.
@@ -342,14 +342,14 @@ public function update(Request $request, Post $post)
 
 ### Q13: How does Blade work → sections, layouts, components?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-handwritten.svg" alt="Handwritten: How does Blade work → sections, layouts, components?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-handwritten.svg" alt="Handwritten: How does Blade work → sections, layouts, components?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-diagram.svg" alt="Diagram: How does Blade work → sections, layouts, components?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-diagram.svg" alt="Diagram: How does Blade work → sections, layouts, components?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-sticky.svg" alt="Sticky Note: How does Blade work → sections, layouts, components?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-blade-work-sections-layouts-components-sticky.svg" alt="Sticky Note: How does Blade work → sections, layouts, components?" width="30%">
 </a>
 
 **Answer:** Blade provides three approaches for reusable templates. Sections with `@extends` and `@section`/`@yield` define a parent layout and child fills sections. Components use `@component` (legacy) or class-based components with `php artisan make:component`. Anonymous components use `.blade.php` files in `resources/views/components/`. X-components are auto-registered and rendered via `<x-alert type="error" />`.
@@ -370,14 +370,14 @@ public function update(Request $request, Post $post)
 
 ### Q14: Explain Laravel queues, jobs, and the queue worker lifecycle.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-handwritten.svg" alt="Handwritten: Explain Laravel queues, jobs, and the queue worker lifecycle." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-handwritten.svg" alt="Handwritten: Explain Laravel queues, jobs, and the queue worker lifecycle." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-diagram.svg" alt="Diagram: Explain Laravel queues, jobs, and the queue worker lifecycle." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-diagram.svg" alt="Diagram: Explain Laravel queues, jobs, and the queue worker lifecycle." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-sticky.svg" alt="Sticky Note: Explain Laravel queues, jobs, and the queue worker lifecycle." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-queues-jobs-and-the-queue-worker-lifecycle-sticky.svg" alt="Sticky Note: Explain Laravel queues, jobs, and the queue worker lifecycle." width="30%">
 </a>
 
 **Answer:** Queues defer time-consuming tasks (email, report generation) to run asynchronously. Jobs are classes that implement `ShouldQueue` and contain a `handle()` method. Dispatch via `dispatch()` or `dispatch()->onQueue()`. The queue worker (`php artisan queue:work`) polls the queue connection (database, Redis, SQS) for new jobs, processes them, then sleeps briefly before polling again. Failed jobs are stored in the `failed_jobs` table for retry or inspection.
@@ -399,14 +399,14 @@ ProcessPodcast::dispatch($podcast)->onQueue('high');
 
 ### Q15: How do you handle failed jobs and retries?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-handwritten.svg" alt="Handwritten: How do you handle failed jobs and retries?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-handwritten.svg" alt="Handwritten: How do you handle failed jobs and retries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-diagram.svg" alt="Diagram: How do you handle failed jobs and retries?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-diagram.svg" alt="Diagram: How do you handle failed jobs and retries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-sticky.svg" alt="Sticky Note: How do you handle failed jobs and retries?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-failed-jobs-and-retries-sticky.svg" alt="Sticky Note: How do you handle failed jobs and retries?" width="30%">
 </a>
 
 **Answer:** Jobs that throw an exception are automatically released back onto the queue for retry. The `$tries` property or `retryUntil()` method control retry count. Failed jobs are stored in the `failed_jobs` table. Inspect with `php artisan queue:failed`, retry with `queue:retry`, and prune with `queue:prune-failed`. Use `failed()` method on the job for custom cleanup. The `attempts()` method checks retry count.
@@ -434,14 +434,14 @@ class ProcessPodcast implements ShouldQueue
 
 ### Q16: How do you build and version a RESTful API in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-handwritten.svg" alt="Handwritten: How do you build and version a RESTful API in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-handwritten.svg" alt="Handwritten: How do you build and version a RESTful API in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-diagram.svg" alt="Diagram: How do you build and version a RESTful API in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-diagram.svg" alt="Diagram: How do you build and version a RESTful API in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-sticky.svg" alt="Sticky Note: How do you build and version a RESTful API in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-and-version-a-restful-api-in-laravel-sticky.svg" alt="Sticky Note: How do you build and version a RESTful API in Laravel?" width="30%">
 </a>
 
 **Answer:** Use `php artisan make:controller Api/V1/PostController --api` for resource controllers without create/edit views. Define routes in `routes/api.php` grouped by version prefix. Apply API middleware (`throttle:api`, `auth:sanctum`). Version via URI path (`/api/v1/posts`) or request header (`Accept: application/vnd.app.v1+json`). Use API resources for response transformation.
@@ -459,14 +459,14 @@ Route::prefix('v2')->group(function () {
 
 ### Q17: Explain API resources and collections.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-handwritten.svg" alt="Handwritten: Explain API resources and collections." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-handwritten.svg" alt="Handwritten: Explain API resources and collections." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-diagram.svg" alt="Diagram: Explain API resources and collections." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-diagram.svg" alt="Diagram: Explain API resources and collections." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-sticky.svg" alt="Sticky Note: Explain API resources and collections." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-api-resources-and-collections-sticky.svg" alt="Sticky Note: Explain API resources and collections." width="30%">
 </a>
 
 **Answer:** API resources transform Eloquent models into JSON responses. Generate with `php artisan make:resource`. Single models use `UserResource::make($user)`, collections use `UserResource::collection($users)`. Conditional attributes (`when`), relationship inclusion (`whenLoaded`), and sparse fieldsets are supported. In Laravel 13, the JSON:API resource format is the default, following the JSON:API specification with type/id/data structure.
@@ -488,14 +488,14 @@ class UserResource extends JsonResource
 
 ### Q18: How does Laravel Reverb work for WebSockets?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-handwritten.svg" alt="Handwritten: How does Laravel Reverb work for WebSockets?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-handwritten.svg" alt="Handwritten: How does Laravel Reverb work for WebSockets?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-diagram.svg" alt="Diagram: How does Laravel Reverb work for WebSockets?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-diagram.svg" alt="Diagram: How does Laravel Reverb work for WebSockets?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-sticky.svg" alt="Sticky Note: How does Laravel Reverb work for WebSockets?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-reverb-work-for-websockets-sticky.svg" alt="Sticky Note: How does Laravel Reverb work for WebSockets?" width="30%">
 </a>
 
 **Answer:** Laravel Reverb is a first-party, Laravel-native WebSocket server written in PHP. It replaces Pusher for self-hosted real-time broadcasting. Install via `php artisan install:reverb`, configure the `.env` settings for apps and ports, then run `php artisan reverb:start`. Laravel events broadcast via `ShouldBroadcast` and the Echo client receives them. Reverb supports presence channels (user-aware websocket rooms) and private channels with authentication callbacks.
@@ -512,14 +512,14 @@ class OrderShipped implements ShouldBroadcast
 
 ### Q19: How do you develop and distribute a Laravel package?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-handwritten.svg" alt="Handwritten: How do you develop and distribute a Laravel package?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-handwritten.svg" alt="Handwritten: How do you develop and distribute a Laravel package?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-diagram.svg" alt="Diagram: How do you develop and distribute a Laravel package?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-diagram.svg" alt="Diagram: How do you develop and distribute a Laravel package?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-sticky.svg" alt="Sticky Note: How do you develop and distribute a Laravel package?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-develop-and-distribute-a-laravel-package-sticky.svg" alt="Sticky Note: How do you develop and distribute a Laravel package?" width="30%">
 </a>
 
 **Answer:** Create a package structure under `packages/` during development with a service provider, config, migrations, and routes. Register it in `composer.json`'s `autoload.psr-4`. For distribution, publish to Packagist with proper `composer.json` metadata including `require`, `autoload`, and `extra.laravel.providers` for automatic discovery. Packages use `php artisan vendor:publish` to expose config and migration files.
@@ -543,14 +543,14 @@ class AnalyticsServiceProvider extends ServiceProvider
 
 ### Q20: Explain PHPUnit/PEST testing patterns in Laravel.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-handwritten.svg" alt="Handwritten: Explain PHPUnit/PEST testing patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-handwritten.svg" alt="Handwritten: Explain PHPUnit/PEST testing patterns in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-diagram.svg" alt="Diagram: Explain PHPUnit/PEST testing patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-diagram.svg" alt="Diagram: Explain PHPUnit/PEST testing patterns in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-sticky.svg" alt="Sticky Note: Explain PHPUnit/PEST testing patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-phpunit-pest-testing-patterns-in-laravel-sticky.svg" alt="Sticky Note: Explain PHPUnit/PEST testing patterns in Laravel." width="30%">
 </a>
 
 **Answer:** Laravel supports both PHPUnit (traditional) and PEST (fluent, function-based). PEST provides higher-level helpers like `get()`, `post()`, `assertDatabaseHas()`, and `assertStatus()`. Tests live in `tests/Feature` (integration) and `tests/Unit` (isolated). Factories generate test data. `RefreshDatabase` resets state between runs. Pest uses `it()` and `test()` functions with `expect()` and `->toBe()` matchers.
@@ -572,14 +572,14 @@ it('creates a new post', function () {
 
 ### Q21: How do you write HTTP tests and database tests?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-handwritten.svg" alt="Handwritten: How do you write HTTP tests and database tests?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-handwritten.svg" alt="Handwritten: How do you write HTTP tests and database tests?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-diagram.svg" alt="Diagram: How do you write HTTP tests and database tests?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-diagram.svg" alt="Diagram: How do you write HTTP tests and database tests?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-sticky.svg" alt="Sticky Note: How do you write HTTP tests and database tests?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-write-http-tests-and-database-tests-sticky.svg" alt="Sticky Note: How do you write HTTP tests and database tests?" width="30%">
 </a>
 
 **Answer:** HTTP tests use methods like `get()`, `post()`, `put()`, `delete()` with assertions for status, JSON structure, session, and headers. Database tests use `assertDatabaseHas()`, `assertDatabaseMissing()`, and `assertDatabaseCount()`. The `RefreshDatabase` trait wraps each test in a database transaction. Factories create models with sensible defaults. Use `withoutMiddleware()` to skip middleware for isolated controller tests.
@@ -603,14 +603,14 @@ it('updates user profile', function () {
 
 ### Q22: What is Laravel Octane and how does it improve performance?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-handwritten.svg" alt="Handwritten: What is Laravel Octane and how does it improve performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-handwritten.svg" alt="Handwritten: What is Laravel Octane and how does it improve performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-diagram.svg" alt="Diagram: What is Laravel Octane and how does it improve performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-diagram.svg" alt="Diagram: What is Laravel Octane and how does it improve performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-sticky.svg" alt="Sticky Note: What is Laravel Octane and how does it improve performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-octane-and-how-does-it-improve-performance-sticky.svg" alt="Sticky Note: What is Laravel Octane and how does it improve performance?" width="30%">
 </a>
 
 **Answer:** Laravel Octane boots the application once into memory using Swoole or RoadRunner, then serves multiple requests from the same booted instance. This eliminates bootstrapping overhead (config loading, service provider registration) on every request. Octane provides a `WebSocket` server, `Concurrency` facade for parallel execution, and automatic ticker support. Deploy with `php artisan octane:start --server=swoole --host=0.0.0.0 --port=8080`.
@@ -627,14 +627,14 @@ use Laravel\Octane\Facades\Concurrency;
 
 ### Q23: Explain caching strategies in Laravel (drivers, tags, atomic locks).
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-handwritten.svg" alt="Handwritten: Explain caching strategies in Laravel (drivers, tags, atomic locks)." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-handwritten.svg" alt="Handwritten: Explain caching strategies in Laravel (drivers, tags, atomic locks)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-diagram.svg" alt="Diagram: Explain caching strategies in Laravel (drivers, tags, atomic locks)." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-diagram.svg" alt="Diagram: Explain caching strategies in Laravel (drivers, tags, atomic locks)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-sticky.svg" alt="Sticky Note: Explain caching strategies in Laravel (drivers, tags, atomic locks)." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-strategies-in-laravel-drivers-tags-atomic-locks-sticky.svg" alt="Sticky Note: Explain caching strategies in Laravel (drivers, tags, atomic locks)." width="30%">
 </a>
 
 **Answer:** Laravel supports file, database, Redis, DynamoDB, and array cache drivers. Cache tags group related cache items (Redis/Memcached only) for mass invalidation. Atomic locks provide distributed locking via `Cache::lock('key')->get()` → use them for critical sections (deployments, payment processing). `Cache::touch()` in Laravel 13 extends TTL automatically on access for frequently used keys.
@@ -657,14 +657,14 @@ Cache::put('popular-posts', $posts, 60, touch: true);
 
 ### Q24: How does Laravel Horizon help manage queues?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-handwritten.svg" alt="Handwritten: How does Laravel Horizon help manage queues?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-handwritten.svg" alt="Handwritten: How does Laravel Horizon help manage queues?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-diagram.svg" alt="Diagram: How does Laravel Horizon help manage queues?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-diagram.svg" alt="Diagram: How does Laravel Horizon help manage queues?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-sticky.svg" alt="Sticky Note: How does Laravel Horizon help manage queues?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-horizon-help-manage-queues-sticky.svg" alt="Sticky Note: How does Laravel Horizon help manage queues?" width="30%">
 </a>
 
 **Answer:** Horizon provides a dashboard and configuration for Redis-backed queues. It shows job status (running, completed, failed, recent), queue metrics (throughput, wait time), and per-worker monitoring. Configuration in `config/horizon.php` defines worker pools (balanced across queues) and deployment-specific environments. Run `php artisan horizon` to start workers and `/horizon` route for the dashboard.
@@ -687,14 +687,14 @@ Cache::put('popular-posts', $posts, 60, touch: true);
 
 ### Q25: Explain Laravel Telescope and Pulse → what do they monitor?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-handwritten.svg" alt="Handwritten: Explain Laravel Telescope and Pulse → what do they monitor?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-handwritten.svg" alt="Handwritten: Explain Laravel Telescope and Pulse → what do they monitor?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-diagram.svg" alt="Diagram: Explain Laravel Telescope and Pulse → what do they monitor?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-diagram.svg" alt="Diagram: Explain Laravel Telescope and Pulse → what do they monitor?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-sticky.svg" alt="Sticky Note: Explain Laravel Telescope and Pulse → what do they monitor?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-laravel-telescope-and-pulse-what-do-they-monitor-sticky.svg" alt="Sticky Note: Explain Laravel Telescope and Pulse → what do they monitor?" width="30%">
 </a>
 
 **Answer:** Telescope is a debug assistant that monitors incoming requests, commands, scheduled tasks, dumped data, queries (with bindings), mail, notifications, cache operations, jobs, logs, events, and exceptions. Run `php artisan telescope:install` and visit `/telescope`. Pulse provides real-time application health dashboards with system metrics (CPU, memory), slow queries, cache hits/misses, queue throughput, usage tracking, and custom cards. Pulse is production-safe and uses a Redis stream for minimal overhead.
@@ -716,14 +716,14 @@ Telescope::record(new CustomEntry('ai-agent', ['prompt' => $prompt, 'tokens' => 
 
 ### Q26: What is the Laravel AI SDK and what providers does it support?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-handwritten.svg" alt="Handwritten: What is the Laravel AI SDK and what providers does it support?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-handwritten.svg" alt="Handwritten: What is the Laravel AI SDK and what providers does it support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-diagram.svg" alt="Diagram: What is the Laravel AI SDK and what providers does it support?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-diagram.svg" alt="Diagram: What is the Laravel AI SDK and what providers does it support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-sticky.svg" alt="Sticky Note: What is the Laravel AI SDK and what providers does it support?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-laravel-ai-sdk-and-what-providers-does-it-support-sticky.svg" alt="Sticky Note: What is the Laravel AI SDK and what providers does it support?" width="30%">
 </a>
 
 **Answer:** The `laravel/ai` package is a unified, provider-agnostic PHP SDK for interacting with AI services. It abstracts text generation, embeddings, image generation, audio, and transcription behind a single fluent API. Install via `composer require laravel/ai`. It supports over fourteen providers: Anthropic, OpenAI, Google Gemini, Amazon Bedrock, Azure OpenAI, Groq, xAI, DeepSeek, Mistral, Ollama, OpenRouter, Cohere, Jina, VoyageAI, and ElevenLabs.
@@ -736,14 +736,14 @@ $response = Ai::text('Explain quantum computing in one sentence');
 
 ### Q27: How do you create an agent using php artisan make:agent?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-handwritten.svg" alt="Handwritten: How do you create an agent using php artisan make:agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-handwritten.svg" alt="Handwritten: How do you create an agent using php artisan make:agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-diagram.svg" alt="Diagram: How do you create an agent using php artisan make:agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-diagram.svg" alt="Diagram: How do you create an agent using php artisan make:agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-sticky.svg" alt="Sticky Note: How do you create an agent using php artisan make:agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-agent-using-php-artisan-make-agent-sticky.svg" alt="Sticky Note: How do you create an agent using php artisan make:agent?" width="30%">
 </a>
 
 **Answer:** The `php artisan make:agent` command scaffolds an AI agent class in `app/Ai/Agents/`. The generated class implements the `Agent` contract and uses the `Promptable` trait. You define the agent's `instructions()` method to set its system prompt. Agents are invoked via `Agent::chat()` which handles tool execution, conversation context, and structured output automatically.
@@ -766,14 +766,14 @@ $response = Agent::chat(new SupportAgent)->send('How do I reset my password?');
 
 ### Q28: Explain the difference between agents and tools.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-handwritten.svg" alt="Handwritten: Explain the difference between agents and tools." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-handwritten.svg" alt="Handwritten: Explain the difference between agents and tools." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-diagram.svg" alt="Diagram: Explain the difference between agents and tools." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-diagram.svg" alt="Diagram: Explain the difference between agents and tools." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-sticky.svg" alt="Sticky Note: Explain the difference between agents and tools." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-difference-between-agents-and-tools-sticky.svg" alt="Sticky Note: Explain the difference between agents and tools." width="30%">
 </a>
 
 **Answer:** Agents are AI-powered classes that process user prompts, maintain conversational context, and decide which tools to invoke. They contain system instructions and can choose to use zero or more tools to fulfill a request. Tools are discrete, stateless functions that an agent can call → they perform a specific action (look up a user, send an email, query the database). An agent orchestrates; a tool executes. Agents use `Promptable`; tools implement the `Tool` contract with a `handle()` method.
@@ -794,14 +794,14 @@ class LookupUserTool implements Tool
 
 ### Q29: How do you handle structured output from AI agents using JsonSchema?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-handwritten.svg" alt="Handwritten: How do you handle structured output from AI agents using JsonSchema?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-handwritten.svg" alt="Handwritten: How do you handle structured output from AI agents using JsonSchema?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-diagram.svg" alt="Diagram: How do you handle structured output from AI agents using JsonSchema?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-diagram.svg" alt="Diagram: How do you handle structured output from AI agents using JsonSchema?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-sticky.svg" alt="Sticky Note: How do you handle structured output from AI agents using JsonSchema?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-structured-output-from-ai-agents-using-jsonschema-sticky.svg" alt="Sticky Note: How do you handle structured output from AI agents using JsonSchema?" width="30%">
 </a>
 
 **Answer:** Structured output forces the AI to return data in a defined JSON schema using `JsonSchema` builder. The agent's `output()` method or `->output()` on the chat chain defines the expected shape with typed properties, nested objects, arrays, enums, and descriptions. The SDK validates the response against the schema and returns hydrated PHP objects.
@@ -830,14 +830,14 @@ echo $result->total; // typed float
 
 ### Q30: What is the RemembersConversations trait and how does it work?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is the RemembersConversations trait and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is the RemembersConversations trait and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-diagram.svg" alt="Diagram: What is the RemembersConversations trait and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-diagram.svg" alt="Diagram: What is the RemembersConversations trait and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is the RemembersConversations trait and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-remembersconversations-trait-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is the RemembersConversations trait and how does it work?" width="30%">
 </a>
 
 **Answer:** The `RemembersConversations` trait persists multi-turn conversations to the database using the `agent_conversations` and `agent_conversation_messages` tables. Each agent instance gets a conversation ID that carries message history across requests. The trait passes the full conversation history to the AI on every call, enabling coherent multi-turn dialogue. History is automatically pruned to fit within the model's context window.
@@ -857,14 +857,14 @@ $response2 = Agent::chat(new ChatbotAgent)->conversation($conversationId)->send(
 
 ### Q31: How do you stream responses from an AI agent?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-handwritten.svg" alt="Handwritten: How do you stream responses from an AI agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-handwritten.svg" alt="Handwritten: How do you stream responses from an AI agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-diagram.svg" alt="Diagram: How do you stream responses from an AI agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-diagram.svg" alt="Diagram: How do you stream responses from an AI agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-sticky.svg" alt="Sticky Note: How do you stream responses from an AI agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-stream-responses-from-an-ai-agent-sticky.svg" alt="Sticky Note: How do you stream responses from an AI agent?" width="30%">
 </a>
 
 **Answer:** Use `->stream()` instead of `->send()` to receive a `ReadableStream` of text chunks. Each chunk is yielded as it arrives from the provider. This powers real-time UIs with streaming text. For broadcasting, use `->broadcast()` to send streamed chunks to a Reverb channel, enabling server-sent streaming to frontend clients over WebSockets.
@@ -883,14 +883,14 @@ Agent::chat(new WriterAgent)->broadcast()->stream('Write a story...');
 
 ### Q32: How do you queue an agent for background execution?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-handwritten.svg" alt="Handwritten: How do you queue an agent for background execution?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-handwritten.svg" alt="Handwritten: How do you queue an agent for background execution?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-diagram.svg" alt="Diagram: How do you queue an agent for background execution?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-diagram.svg" alt="Diagram: How do you queue an agent for background execution?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-sticky.svg" alt="Sticky Note: How do you queue an agent for background execution?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-queue-an-agent-for-background-execution-sticky.svg" alt="Sticky Note: How do you queue an agent for background execution?" width="30%">
 </a>
 
 **Answer:** Call `->queue()` on the agent chat chain to dispatch execution to Laravel's queue worker. The agent processes asynchronously and the result can be polled or delivered via notification. Queueing is useful for long-running agent tasks like document analysis, report generation, or batch processing. The job is serialized and runs within a queue worker process.
@@ -907,14 +907,14 @@ Agent::chat(new DocumentAnalyzer)
 
 ### Q33: Explain how to create a custom tool with the AI SDK.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-handwritten.svg" alt="Handwritten: Explain how to create a custom tool with the AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-handwritten.svg" alt="Handwritten: Explain how to create a custom tool with the AI SDK." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-diagram.svg" alt="Diagram: Explain how to create a custom tool with the AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-diagram.svg" alt="Diagram: Explain how to create a custom tool with the AI SDK." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-sticky.svg" alt="Sticky Note: Explain how to create a custom tool with the AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-create-a-custom-tool-with-the-ai-sdk-sticky.svg" alt="Sticky Note: Explain how to create a custom tool with the AI SDK." width="30%">
 </a>
 
 **Answer:** Generate a tool with `php artisan make:tool`. The class implements the `Tool` contract with `name()`, `description()`, `inputSchema()`, and `handle()` methods. The input schema defines parameters the AI can pass, and `handle()` receives the parsed input and returns a value back to the agent. Tools can be bound to an agent or provided globally.
@@ -940,14 +940,14 @@ $response = Agent::chat(new TravelAgent)->tools([new WeatherTool])->send('Should
 
 ### Q34: How do you integrate MCP tools with the AI SDK?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-handwritten.svg" alt="Handwritten: How do you integrate MCP tools with the AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-handwritten.svg" alt="Handwritten: How do you integrate MCP tools with the AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-diagram.svg" alt="Diagram: How do you integrate MCP tools with the AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-diagram.svg" alt="Diagram: How do you integrate MCP tools with the AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-sticky.svg" alt="Sticky Note: How do you integrate MCP tools with the AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-mcp-tools-with-the-ai-sdk-sticky.svg" alt="Sticky Note: How do you integrate MCP tools with the AI SDK?" width="30%">
 </a>
 
 **Answer:** The AI SDK can import tools from MCP servers using `Ai::fetchTools('mcp-server-name')` or the `FetchesTools` trait on an agent. This discovers all tools exposed by the MCP server and makes them available to the agent without writing local tool classes. Tools are fetched by name and merged into the agent's tool set.
@@ -970,14 +970,14 @@ class DashboardAgent implements Agent
 
 ### Q35: How does image generation work with the AI SDK?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-handwritten.svg" alt="Handwritten: How does image generation work with the AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-handwritten.svg" alt="Handwritten: How does image generation work with the AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-diagram.svg" alt="Diagram: How does image generation work with the AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-diagram.svg" alt="Diagram: How does image generation work with the AI SDK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-sticky.svg" alt="Sticky Note: How does image generation work with the AI SDK?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-image-generation-work-with-the-ai-sdk-sticky.svg" alt="Sticky Note: How does image generation work with the AI SDK?" width="30%">
 </a>
 
 **Answer:** The SDK provides a fluent `Image` facade for image generation. Configure the provider (OpenAI DALL-E, Bedrock, etc.) in `config/ai.php`. Use `Image::of()->generate()` with a description. The result contains the image URL or base64 data. Options include size, quality, and style parameters depending on the provider.
@@ -993,14 +993,14 @@ echo $image->url; // https://...generated-image.png
 
 ### Q36: How do you generate and query embeddings?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-handwritten.svg" alt="Handwritten: How do you generate and query embeddings?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-handwritten.svg" alt="Handwritten: How do you generate and query embeddings?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-diagram.svg" alt="Diagram: How do you generate and query embeddings?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-diagram.svg" alt="Diagram: How do you generate and query embeddings?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-sticky.svg" alt="Sticky Note: How do you generate and query embeddings?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-generate-and-query-embeddings-sticky.svg" alt="Sticky Note: How do you generate and query embeddings?" width="30%">
 </a>
 
 **Answer:** Embeddings convert text to high-dimensional vectors. Generate them with `Str::toEmbeddings('text')` or `Embeddings::for('text')`. Store the vector in a `vector` column (pgvector) or Redis. Query using `whereVectorSimilarTo()` on an Eloquent model with a trained column. The SDK supports multiple embedding providers and models.
@@ -1024,14 +1024,14 @@ $results = Document::query()
 
 ### Q37: Explain how to build a RAG pipeline using the AI SDK.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-handwritten.svg" alt="Handwritten: Explain how to build a RAG pipeline using the AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-handwritten.svg" alt="Handwritten: Explain how to build a RAG pipeline using the AI SDK." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-diagram.svg" alt="Diagram: Explain how to build a RAG pipeline using the AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-diagram.svg" alt="Diagram: Explain how to build a RAG pipeline using the AI SDK." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-sticky.svg" alt="Sticky Note: Explain how to build a RAG pipeline using the AI SDK." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-build-a-rag-pipeline-using-the-ai-sdk-sticky.svg" alt="Sticky Note: Explain how to build a RAG pipeline using the AI SDK." width="30%">
 </a>
 
 **Answer:** A RAG (Retrieval-Augmented Generation) pipeline retrieves relevant context from a vector store and injects it into the prompt. Steps: (1) Chunk documents, (2) Generate embeddings per chunk, (3) Store in pgvector, (4) On user query, embed the query and find similar chunks, (5) Pass chunks as context to the AI agent. The AI SDK's `SimilaritySearchTool` automates steps 4-5.
@@ -1057,14 +1057,14 @@ class RagAgent implements Agent
 
 ### Q38: How do you use the Reranking feature?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-handwritten.svg" alt="Handwritten: How do you use the Reranking feature?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-handwritten.svg" alt="Handwritten: How do you use the Reranking feature?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-diagram.svg" alt="Diagram: How do you use the Reranking feature?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-diagram.svg" alt="Diagram: How do you use the Reranking feature?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-sticky.svg" alt="Sticky Note: How do you use the Reranking feature?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-the-reranking-feature-sticky.svg" alt="Sticky Note: How do you use the Reranking feature?" width="30%">
 </a>
 
 **Answer:** Reranking improves search relevance by reordering initial results using a cross-encoder model. The AI SDK provides `Reranking::of()` or `Collection::rerank()` to apply reranking to a result set. Reranking considers query-document pair similarity more accurately than embedding cosine similarity alone. It works with any result set and supports limiting the final count.
@@ -1086,14 +1086,14 @@ $reranked = $results->rerank('How many vacation days do I get?')->take(5);
 
 ### Q39: How do you handle AI provider failover?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-handwritten.svg" alt="Handwritten: How do you handle AI provider failover?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-handwritten.svg" alt="Handwritten: How do you handle AI provider failover?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-diagram.svg" alt="Diagram: How do you handle AI provider failover?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-diagram.svg" alt="Diagram: How do you handle AI provider failover?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-sticky.svg" alt="Sticky Note: How do you handle AI provider failover?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-ai-provider-failover-sticky.svg" alt="Sticky Note: How do you handle AI provider failover?" width="30%">
 </a>
 
 **Answer:** The SDK supports failover providers via configuration. If the primary provider returns an error or times out, the SDK automatically tries the next configured provider. Failover is configured in `config/ai.php` using the `fallback` key with a list of alternative provider/model pairs. This ensures high availability for AI-dependent features.
@@ -1114,14 +1114,14 @@ $reranked = $results->rerank('How many vacation days do I get?')->take(5);
 
 ### Q40: How do you test AI features in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-handwritten.svg" alt="Handwritten: How do you test AI features in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-handwritten.svg" alt="Handwritten: How do you test AI features in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-diagram.svg" alt="Diagram: How do you test AI features in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-diagram.svg" alt="Diagram: How do you test AI features in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-sticky.svg" alt="Sticky Note: How do you test AI features in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-ai-features-in-laravel-sticky.svg" alt="Sticky Note: How do you test AI features in Laravel?" width="30%">
 </a>
 
 **Answer:** The AI SDK provides testing helpers via `Ai::fake()` that prevent real API calls during tests. Pass an array of fake responses keyed by prompt. Use `assertAgentSent()` to verify the agent was called with expected prompts. Tools can be mocked like any other class. For integration tests, use `withHeaders()` to simulate AI-specific request data.
@@ -1145,28 +1145,28 @@ it('generates a summary', function () {
 
 ### Q41: What is the Model Context Protocol and why was it created?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-handwritten.svg" alt="Handwritten: What is the Model Context Protocol and why was it created?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-handwritten.svg" alt="Handwritten: What is the Model Context Protocol and why was it created?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-diagram.svg" alt="Diagram: What is the Model Context Protocol and why was it created?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-diagram.svg" alt="Diagram: What is the Model Context Protocol and why was it created?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-sticky.svg" alt="Sticky Note: What is the Model Context Protocol and why was it created?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-model-context-protocol-and-why-was-it-created-sticky.svg" alt="Sticky Note: What is the Model Context Protocol and why was it created?" width="30%">
 </a>
 
 **Answer:** The Model Context Protocol (MCP) is an open standard created by Anthropic for connecting AI applications with external tools, data sources, and services. It defines a JSON-RPC-based protocol where an MCP server exposes tools, resources, and prompts to an MCP client (the AI host). It was created to solve the fragmentation problem → every AI framework had its own tool integration. MCP provides a single, standardized protocol that any MCP-compatible client can use to interact with any MCP server.
 
 ### Q42: How do you create an MCP server in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-handwritten.svg" alt="Handwritten: How do you create an MCP server in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-handwritten.svg" alt="Handwritten: How do you create an MCP server in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-diagram.svg" alt="Diagram: How do you create an MCP server in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-diagram.svg" alt="Diagram: How do you create an MCP server in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-sticky.svg" alt="Sticky Note: How do you create an MCP server in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-an-mcp-server-in-laravel-sticky.svg" alt="Sticky Note: How do you create an MCP server in Laravel?" width="30%">
 </a>
 
 **Answer:** Install the `laravel/mcp` package, then use `php artisan make:mcp-server ServerName`. The generated class extends the MCP server base and defines available tools, resources, and authentication. Run the server via `php artisan mcp:serve` for local development or deploy as a web endpoint. Servers automatically register with Laravel's service container.
@@ -1189,14 +1189,14 @@ class SalesAnalytics extends McpServer
 
 ### Q43: What is the difference between web servers and local servers in MCP?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-handwritten.svg" alt="Handwritten: What is the difference between web servers and local servers in MCP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-handwritten.svg" alt="Handwritten: What is the difference between web servers and local servers in MCP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-diagram.svg" alt="Diagram: What is the difference between web servers and local servers in MCP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-diagram.svg" alt="Diagram: What is the difference between web servers and local servers in MCP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-sticky.svg" alt="Sticky Note: What is the difference between web servers and local servers in MCP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-web-servers-and-local-servers-in-mcp-sticky.svg" alt="Sticky Note: What is the difference between web servers and local servers in MCP?" width="30%">
 </a>
 
 **Answer:** A **local server** runs as a subprocess (via `php artisan mcp:serve`) and communicates over STDIO. It is used for development, CLI tools, and local AI assistants like Claude Code or Cursor → it sends JSON-RPC messages over standard input/output. A **web server** runs as an HTTP endpoint exposed via routes and communicates over HTTP/SSE. Web servers support authentication (OAuth, Sanctum), are deployed to production, and can be used by remote clients. Both expose the same server interface.
@@ -1212,14 +1212,14 @@ Mcp::server('sales-analytics', SalesAnalytics::class);
 
 ### Q44: How do you create MCP tools with input/output schemas?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-handwritten.svg" alt="Handwritten: How do you create MCP tools with input/output schemas?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-handwritten.svg" alt="Handwritten: How do you create MCP tools with input/output schemas?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-diagram.svg" alt="Diagram: How do you create MCP tools with input/output schemas?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-diagram.svg" alt="Diagram: How do you create MCP tools with input/output schemas?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-sticky.svg" alt="Sticky Note: How do you create MCP tools with input/output schemas?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-mcp-tools-with-input-output-schemas-sticky.svg" alt="Sticky Note: How do you create MCP tools with input/output schemas?" width="30%">
 </a>
 
 **Answer:** Use `php artisan make:mcp-tool ToolName`. The tool class defines `name()`, `description()`, `inputSchema()`, `outputSchema()`, and `handle()`. Schemas use JSON Schema format to describe parameters and return values. The AI host uses the schema to determine what arguments to pass.
@@ -1250,14 +1250,14 @@ class GetRevenueTool implements McpTool
 
 ### Q45: What are MCP resources and prompts?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-handwritten.svg" alt="Handwritten: What are MCP resources and prompts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-handwritten.svg" alt="Handwritten: What are MCP resources and prompts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-diagram.svg" alt="Diagram: What are MCP resources and prompts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-diagram.svg" alt="Diagram: What are MCP resources and prompts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-sticky.svg" alt="Sticky Note: What are MCP resources and prompts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-resources-and-prompts-sticky.svg" alt="Sticky Note: What are MCP resources and prompts?" width="30%">
 </a>
 
 **Answer:** **Resources** expose data to the AI host in a URI-addressable way → like files in a virtual filesystem. Each resource has a URI scheme and content type. The AI reads resources for context. **Prompts** are reusable message templates that the host can present to the user. They define structured interactions with parameterized inputs. Both are defined alongside tools in an MCP server.
@@ -1288,14 +1288,14 @@ protected function prompts(): array
 
 ### Q46: How does MCP authentication work with OAuth and Sanctum?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-handwritten.svg" alt="Handwritten: How does MCP authentication work with OAuth and Sanctum?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-handwritten.svg" alt="Handwritten: How does MCP authentication work with OAuth and Sanctum?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-diagram.svg" alt="Diagram: How does MCP authentication work with OAuth and Sanctum?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-diagram.svg" alt="Diagram: How does MCP authentication work with OAuth and Sanctum?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-sticky.svg" alt="Sticky Note: How does MCP authentication work with OAuth and Sanctum?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-mcp-authentication-work-with-oauth-and-sanctum-sticky.svg" alt="Sticky Note: How does MCP authentication work with OAuth and Sanctum?" width="30%">
 </a>
 
 **Answer:** MCP web servers support OAuth 2.0 (authorization code flow) and Sanctum token authentication. The server advertises its auth capabilities in the initialization handshake. For OAuth, the client redirects the user to the authorization endpoint, receives a token, and includes it in subsequent requests. Sanctum authentication validates API tokens from the `Authorization: Bearer` header just like REST routes.
@@ -1312,14 +1312,14 @@ protected function prompts(): array
 
 ### Q47: How do you build an MCP client in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-handwritten.svg" alt="Handwritten: How do you build an MCP client in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-handwritten.svg" alt="Handwritten: How do you build an MCP client in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-diagram.svg" alt="Diagram: How do you build an MCP client in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-diagram.svg" alt="Diagram: How do you build an MCP client in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-sticky.svg" alt="Sticky Note: How do you build an MCP client in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-an-mcp-client-in-laravel-sticky.svg" alt="Sticky Note: How do you build an MCP client in Laravel?" width="30%">
 </a>
 
 **Answer:** Laravel's MCP system includes a client class that connects to remote MCP servers (Laravel or third-party). Use `Mcp::client('server-name')` to establish a connection. The client lists available tools, calls them, and retrieves resources. The client handles the JSON-RPC transport and protocol negotiation automatically.
@@ -1341,14 +1341,14 @@ $revenue = $client->call('get_revenue', [
 
 ### Q48: How do you test MCP servers?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-handwritten.svg" alt="Handwritten: How do you test MCP servers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-handwritten.svg" alt="Handwritten: How do you test MCP servers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-diagram.svg" alt="Diagram: How do you test MCP servers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-diagram.svg" alt="Diagram: How do you test MCP servers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-sticky.svg" alt="Sticky Note: How do you test MCP servers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-mcp-servers-sticky.svg" alt="Sticky Note: How do you test MCP servers?" width="30%">
 </a>
 
 **Answer:** Use the `Mcp::fake()` method to simulate MCP server responses during testing. For integration tests, spawn a test server instance and make real JSON-RPC calls against it. Assert tools were called, responses match expected schemas, and authentication is enforced.
@@ -1368,14 +1368,14 @@ it('returns revenue from MCP server', function () {
 
 ### Q49: How does Boost integrate with MCP?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-handwritten.svg" alt="Handwritten: How does Boost integrate with MCP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-handwritten.svg" alt="Handwritten: How does Boost integrate with MCP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-diagram.svg" alt="Diagram: How does Boost integrate with MCP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-diagram.svg" alt="Diagram: How does Boost integrate with MCP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-sticky.svg" alt="Sticky Note: How does Boost integrate with MCP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-mcp-sticky.svg" alt="Sticky Note: How does Boost integrate with MCP?" width="30%">
 </a>
 
 **Answer:** Laravel Boost automatically generates MCP servers for your application based on its models, routes, and AI guidelines. Running `php artisan boost:mcp` scans your codebase and creates MCP tools for all Eloquent models (CRUD operations) and registered routes. These servers are immediately consumable by Cursor, Claude Code, and other MCP hosts. Boost also creates MCP resources from your `ai-guidelines` directory.
@@ -1392,14 +1392,14 @@ php artisan boost:mcp
 
 ### Q50: What are MCP apps and how do they differ from tools?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-handwritten.svg" alt="Handwritten: What are MCP apps and how do they differ from tools?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-handwritten.svg" alt="Handwritten: What are MCP apps and how do they differ from tools?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-diagram.svg" alt="Diagram: What are MCP apps and how do they differ from tools?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-diagram.svg" alt="Diagram: What are MCP apps and how do they differ from tools?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-sticky.svg" alt="Sticky Note: What are MCP apps and how do they differ from tools?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-mcp-apps-and-how-do-they-differ-from-tools-sticky.svg" alt="Sticky Note: What are MCP apps and how do they differ from tools?" width="30%">
 </a>
 
 **Answer:** MCP **apps** are higher-level compositions that bundle multiple tools, resources, and prompts into a cohesive capability. An app might be "Customer Support Assistant" that includes lookup tools, ticket creation, knowledge base search, and escalation prompts. Apps differ from tools in their scope → tools are single operations while apps are feature bundles. Apps can be shared and installed via MCP registries.
@@ -1420,14 +1420,14 @@ McpApp::make('customer-support')
 
 ### Q51: How do you implement full-text search in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-handwritten.svg" alt="Handwritten: How do you implement full-text search in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-handwritten.svg" alt="Handwritten: How do you implement full-text search in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-diagram.svg" alt="Diagram: How do you implement full-text search in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-diagram.svg" alt="Diagram: How do you implement full-text search in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-sticky.svg" alt="Sticky Note: How do you implement full-text search in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-full-text-search-in-laravel-sticky.svg" alt="Sticky Note: How do you implement full-text search in Laravel?" width="30%">
 </a>
 
 **Answer:** Laravel's `whereFullText()` method provides database-native full-text search using FULLTEXT indexes on MySQL/MariaDB or `tsvector` on PostgreSQL. Define the FULLTEXT index in a migration, then query with `->whereFullText(['title', 'body'], $searchTerm)`. PostgreSQL supports ranking by relevance and tsquery operators. MariaDB/MySQL support natural language mode and Boolean mode.
@@ -1446,14 +1446,14 @@ $posts = Post::whereFullText(['title', 'body'], 'laravel ai sdk')
 
 ### Q52: What is pgvector and how do you use it in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-handwritten.svg" alt="Handwritten: What is pgvector and how do you use it in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-handwritten.svg" alt="Handwritten: What is pgvector and how do you use it in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-diagram.svg" alt="Diagram: What is pgvector and how do you use it in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-diagram.svg" alt="Diagram: What is pgvector and how do you use it in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-sticky.svg" alt="Sticky Note: What is pgvector and how do you use it in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-pgvector-and-how-do-you-use-it-in-laravel-sticky.svg" alt="Sticky Note: What is pgvector and how do you use it in Laravel?" width="30%">
 </a>
 
 **Answer:** pgvector is a PostgreSQL extension that adds vector similarity search capabilities. Install via `CREATE EXTENSION vector;`. In Laravel, add a `vector` column type in migrations, generate embeddings via the AI SDK, and store them alongside your data. Query using `whereVectorSimilarTo()` with cosine distance or other distance operators.
@@ -1480,14 +1480,14 @@ $results = Document::query()
 
 ### Q53: How do you create HNSW indexes for vector search?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-handwritten.svg" alt="Handwritten: How do you create HNSW indexes for vector search?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-handwritten.svg" alt="Handwritten: How do you create HNSW indexes for vector search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-diagram.svg" alt="Diagram: How do you create HNSW indexes for vector search?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-diagram.svg" alt="Diagram: How do you create HNSW indexes for vector search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-sticky.svg" alt="Sticky Note: How do you create HNSW indexes for vector search?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-hnsw-indexes-for-vector-search-sticky.svg" alt="Sticky Note: How do you create HNSW indexes for vector search?" width="30%">
 </a>
 
 **Answer:** HNSW (Hierarchical Navigable Small World) indexes dramatically speed up vector similarity queries on large datasets. Create the index in a migration after populating the vector column. Use the `hnsw` access method with the appropriate distance function. HNSW indexes trade build time for query speed → ideal for read-heavy workloads.
@@ -1505,14 +1505,14 @@ $results = Document::query()
 
 ### Q54: Explain how to use whereVectorSimilarTo for similarity queries.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-handwritten.svg" alt="Handwritten: Explain how to use whereVectorSimilarTo for similarity queries." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-handwritten.svg" alt="Handwritten: Explain how to use whereVectorSimilarTo for similarity queries." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-diagram.svg" alt="Diagram: Explain how to use whereVectorSimilarTo for similarity queries." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-diagram.svg" alt="Diagram: Explain how to use whereVectorSimilarTo for similarity queries." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-sticky.svg" alt="Sticky Note: Explain how to use whereVectorSimilarTo for similarity queries." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-how-to-use-wherevectorsimilarto-for-similarity-queries-sticky.svg" alt="Sticky Note: Explain how to use whereVectorSimilarTo for similarity queries." width="30%">
 </a>
 
 **Answer:** `whereVectorSimilarTo()` is an Eloquent scope on models with a vector column. It takes the column name and the embedding vector, applies the correct distance operator (cosine by default), orders by similarity, and limits results. Internally it generates `ORDER BY embedding <=> ? LIMIT ?` with the query vector bound as a parameter.
@@ -1532,14 +1532,14 @@ $results = Document::query()
 
 ### Q55: What is Laravel Scout and what engines does it support?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-handwritten.svg" alt="Handwritten: What is Laravel Scout and what engines does it support?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-handwritten.svg" alt="Handwritten: What is Laravel Scout and what engines does it support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-diagram.svg" alt="Diagram: What is Laravel Scout and what engines does it support?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-diagram.svg" alt="Diagram: What is Laravel Scout and what engines does it support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-sticky.svg" alt="Sticky Note: What is Laravel Scout and what engines does it support?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-scout-and-what-engines-does-it-support-sticky.svg" alt="Sticky Note: What is Laravel Scout and what engines does it support?" width="30%">
 </a>
 
 **Answer:** Laravel Scout is a search abstraction layer for Eloquent models. It provides a consistent API for full-text search across different engines. In Laravel 13, Scout ships with a first-party **database engine** that leverages MySQL/PostgreSQL full-text indexes (no external service required). Third-party engines include Algolia, Meilisearch, and Typesense. Scout automatically synchronizes model changes to the search index.
@@ -1565,14 +1565,14 @@ $posts = Post::search('laravel ai')->where('published', true)->paginate(20);
 
 ### Q56: How do you build a complete RAG pipeline in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-handwritten.svg" alt="Handwritten: How do you build a complete RAG pipeline in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-handwritten.svg" alt="Handwritten: How do you build a complete RAG pipeline in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-diagram.svg" alt="Diagram: How do you build a complete RAG pipeline in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-diagram.svg" alt="Diagram: How do you build a complete RAG pipeline in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-sticky.svg" alt="Sticky Note: How do you build a complete RAG pipeline in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-complete-rag-pipeline-in-laravel-sticky.svg" alt="Sticky Note: How do you build a complete RAG pipeline in Laravel?" width="30%">
 </a>
 
 **Answer:** A complete RAG pipeline has four stages: (1) **Ingestion** → chunk documents, generate embeddings, store in pgvector; (2) **Retrieval** → embed user query, search nearest neighbors in pgvector; (3) **Augmentation** → inject retrieved chunks into the AI agent prompt; (4) **Generation** → the AI produces an answer grounded in the retrieved context. The AI SDK's `SimilaritySearchTool` automates retrieval and augmentation.
@@ -1611,14 +1611,14 @@ $answer = Agent::chat(new QaAgent)->send('What is the refund policy?');
 
 ### Q57: How do you combine keyword search with vector search?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-handwritten.svg" alt="Handwritten: How do you combine keyword search with vector search?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-handwritten.svg" alt="Handwritten: How do you combine keyword search with vector search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-diagram.svg" alt="Diagram: How do you combine keyword search with vector search?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-diagram.svg" alt="Diagram: How do you combine keyword search with vector search?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-sticky.svg" alt="Sticky Note: How do you combine keyword search with vector search?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-combine-keyword-search-with-vector-search-sticky.svg" alt="Sticky Note: How do you combine keyword search with vector search?" width="30%">
 </a>
 
 **Answer:** The hybrid approach combines `whereFullText()` for keyword matching and `whereVectorSimilarTo()` for semantic matching. Results are merged and deduplicated using Laravel's `Collection` methods. Weighting determines the balance between exact and semantic matching → typically 30% keyword + 70% vector for general content, adjusted per use case. Reranking can further improve final ordering.
@@ -1647,14 +1647,14 @@ function hybridSearch(string $query, int $limit = 10): Collection
 
 ### Q58: How do you cache embeddings for performance?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-handwritten.svg" alt="Handwritten: How do you cache embeddings for performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-handwritten.svg" alt="Handwritten: How do you cache embeddings for performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-diagram.svg" alt="Diagram: How do you cache embeddings for performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-diagram.svg" alt="Diagram: How do you cache embeddings for performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-sticky.svg" alt="Sticky Note: How do you cache embeddings for performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-cache-embeddings-for-performance-sticky.svg" alt="Sticky Note: How do you cache embeddings for performance?" width="30%">
 </a>
 
 **Answer:** Cache embeddings using Laravel's cache system to avoid regenerating vectors for the same text. The AI SDK provides `remember()` helpers and configurable cache store for embeddings. For static content, store embeddings in the database alongside the content. For dynamic or user-generated content, use `Cache::remember()` with a key based on the text hash.
@@ -1681,14 +1681,14 @@ foreach ($chunks as $chunk) {
 
 ### Q59: What is Laravel Boost and what does it provide?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-handwritten.svg" alt="Handwritten: What is Laravel Boost and what does it provide?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-handwritten.svg" alt="Handwritten: What is Laravel Boost and what does it provide?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-diagram.svg" alt="Diagram: What is Laravel Boost and what does it provide?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-diagram.svg" alt="Diagram: What is Laravel Boost and what does it provide?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-sticky.svg" alt="Sticky Note: What is Laravel Boost and what does it provide?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-boost-and-what-does-it-provide-sticky.svg" alt="Sticky Note: What is Laravel Boost and what does it provide?" width="30%">
 </a>
 
 **Answer:** Laravel Boost is an AI-assisted development tool by the Laravel core team. It provides over 15 specialized AI tools, a vectorized knowledge base of 17,000+ Laravel documentation pieces, and custom AI guidelines for consistent code generation. Boost integrates with Cursor, Claude Code, and OpenCode to provide context-aware Laravel assistance directly in the IDE, including real-time linting, code generation, and project-aware autocomplete.
@@ -1700,14 +1700,14 @@ php artisan boost:install
 
 ### Q60: How do you create custom AI guidelines with Boost?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-handwritten.svg" alt="Handwritten: How do you create custom AI guidelines with Boost?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-handwritten.svg" alt="Handwritten: How do you create custom AI guidelines with Boost?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-diagram.svg" alt="Diagram: How do you create custom AI guidelines with Boost?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-diagram.svg" alt="Diagram: How do you create custom AI guidelines with Boost?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-sticky.svg" alt="Sticky Note: How do you create custom AI guidelines with Boost?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-create-custom-ai-guidelines-with-boost-sticky.svg" alt="Sticky Note: How do you create custom AI guidelines with Boost?" width="30%">
 </a>
 
 **Answer:** Create a `.ai/guidelines` directory in your project root. Add markdown files that document your conventions, architecture decisions, naming standards, and any patterns Boost should follow when generating code. Boost reads these files and includes them as context in AI prompts. Guidelines are automatically vectorized and retrieved when relevant.
@@ -1722,14 +1722,14 @@ php artisan boost:install
 
 ### Q61: How does Boost integrate with Cursor and Claude Code?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-handwritten.svg" alt="Handwritten: How does Boost integrate with Cursor and Claude Code?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-handwritten.svg" alt="Handwritten: How does Boost integrate with Cursor and Claude Code?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-diagram.svg" alt="Diagram: How does Boost integrate with Cursor and Claude Code?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-diagram.svg" alt="Diagram: How does Boost integrate with Cursor and Claude Code?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-sticky.svg" alt="Sticky Note: How does Boost integrate with Cursor and Claude Code?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-boost-integrate-with-cursor-and-claude-code-sticky.svg" alt="Sticky Note: How does Boost integrate with Cursor and Claude Code?" width="30%">
 </a>
 
 **Answer:** Boost generates MCP servers and configuration files that Cursor and Claude Code consume automatically. When Boost is installed, it creates `.cursor/rules/` and `CLAUDE.md` entries that reference your AI guidelines. In Cursor, Boost's tools appear as composer commands. In Claude Code, Boost generates an MCP server that provides project-aware context, database schema knowledge, and route information.
@@ -1746,14 +1746,14 @@ php artisan boost:ide
 
 ### Q62: Explain event-driven automation patterns in Laravel.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-handwritten.svg" alt="Handwritten: Explain event-driven automation patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-handwritten.svg" alt="Handwritten: Explain event-driven automation patterns in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-diagram.svg" alt="Diagram: Explain event-driven automation patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-diagram.svg" alt="Diagram: Explain event-driven automation patterns in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-sticky.svg" alt="Sticky Note: Explain event-driven automation patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-event-driven-automation-patterns-in-laravel-sticky.svg" alt="Sticky Note: Explain event-driven automation patterns in Laravel." width="30%">
 </a>
 
 **Answer:** Event-driven automation uses Laravel's event system to trigger actions when domain events occur. Define event classes, listen via listeners or `Event::listen()` closures, and dispatch with `event()`. Events can trigger AI agents, queue jobs, send notifications, update caches, or call webhooks. This pattern decouples the event source from the reaction logic and supports multiple listeners per event.
@@ -1784,14 +1784,14 @@ protected $listen = [
 
 ### Q63: How do you build webhook-driven automation?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-handwritten.svg" alt="Handwritten: How do you build webhook-driven automation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-handwritten.svg" alt="Handwritten: How do you build webhook-driven automation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-diagram.svg" alt="Diagram: How do you build webhook-driven automation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-diagram.svg" alt="Diagram: How do you build webhook-driven automation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-sticky.svg" alt="Sticky Note: How do you build webhook-driven automation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-webhook-driven-automation-sticky.svg" alt="Sticky Note: How do you build webhook-driven automation?" width="30%">
 </a>
 
 **Answer:** Webhooks trigger Laravel actions from external services. Use a route that receives the webhook payload, validates the signature for security, and dispatches a job or event. Expose webhook routes via `post('/webhooks/{provider}', ...)` without CSRF (add to `except` array). Use signed URLs or secret validation for authenticity.
@@ -1821,14 +1821,14 @@ class StripeWebhookController extends Controller
 
 ### Q64: What is human-in-the-loop and how do you implement it?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is human-in-the-loop and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is human-in-the-loop and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is human-in-the-loop and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is human-in-the-loop and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is human-in-the-loop and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-human-in-the-loop-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is human-in-the-loop and how do you implement it?" width="30%">
 </a>
 
 **Answer:** Human-in-the-loop (HITL) pauses automation for human approval before executing a critical action. In Laravel, implement by dispatching a job that creates an approval request, sends a notification, and awaits a response via a dedicated route or Artisan command. The job retries or continues based on the human response. This is critical for financial operations, content publishing, and sensitive data access.
@@ -1863,14 +1863,14 @@ class ApproveRefundJob implements ShouldQueue
 
 ### Q65: How do you scale Laravel to 1M+ users?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-handwritten.svg" alt="Handwritten: How do you scale Laravel to 1M+ users?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-handwritten.svg" alt="Handwritten: How do you scale Laravel to 1M+ users?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-diagram.svg" alt="Diagram: How do you scale Laravel to 1M+ users?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-diagram.svg" alt="Diagram: How do you scale Laravel to 1M+ users?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-sticky.svg" alt="Sticky Note: How do you scale Laravel to 1M+ users?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-scale-laravel-to-1m-users-sticky.svg" alt="Sticky Note: How do you scale Laravel to 1M+ users?" width="30%">
 </a>
 
 **Answer:** Scale horizontally by adding more application servers behind a load balancer. Use Redis for sessions, cache, and queues. Implement read replicas for database reads and distribute writes to the primary. Use Octane (Swoole/RoadRunner) for persistent application memory. Offload static assets to a CDN. Use Laravel Vapor or Cloud for serverless auto-scaling. Profile bottlenecks with Telescope and Pulse.
@@ -1886,14 +1886,14 @@ Load Balancer → App Servers (Ã—N behind ALB)
 
 ### Q66: Explain multi-tenancy strategies in Laravel.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-handwritten.svg" alt="Handwritten: Explain multi-tenancy strategies in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-handwritten.svg" alt="Handwritten: Explain multi-tenancy strategies in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-diagram.svg" alt="Diagram: Explain multi-tenancy strategies in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-diagram.svg" alt="Diagram: Explain multi-tenancy strategies in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-sticky.svg" alt="Sticky Note: Explain multi-tenancy strategies in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-multi-tenancy-strategies-in-laravel-sticky.svg" alt="Sticky Note: Explain multi-tenancy strategies in Laravel." width="30%">
 </a>
 
 **Answer:** Three main strategies: (1) **Single database with tenant_id column** → simplest, all tenants share tables. (2) **Separate database per tenant** → full isolation, each tenant has its own DB. (3) **Separate schema per tenant** (PostgreSQL) → shared connection, isolated schemas. Laravel's multi-tenancy packages (Stancl Tenancy, Laravel Multi-tenancy) use middleware to scope queries automatically via `tenancy()->initialize()`.
@@ -1916,14 +1916,14 @@ DB::purge('tenant');
 
 ### Q67: What is CQRS and how do you implement it in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-handwritten.svg" alt="Handwritten: What is CQRS and how do you implement it in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-handwritten.svg" alt="Handwritten: What is CQRS and how do you implement it in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-diagram.svg" alt="Diagram: What is CQRS and how do you implement it in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-diagram.svg" alt="Diagram: What is CQRS and how do you implement it in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-sticky.svg" alt="Sticky Note: What is CQRS and how do you implement it in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-cqrs-and-how-do-you-implement-it-in-laravel-sticky.svg" alt="Sticky Note: What is CQRS and how do you implement it in Laravel?" width="30%">
 </a>
 
 **Answer:** Command Query Responsibility Segregation separates read models from write models. Commands handle writes (mutations), queries handle reads. This allows optimizing each side independently → use denormalized read tables for fast queries, normalized writes for data integrity. In Laravel, implement CQRS with separate Action classes for commands and separate ReadModel classes for queries. Queue writes for eventual consistency.
@@ -1957,14 +1957,14 @@ class OrderSummaryQuery
 
 ### Q68: Explain the service layer and repository patterns in Laravel.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-handwritten.svg" alt="Handwritten: Explain the service layer and repository patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-handwritten.svg" alt="Handwritten: Explain the service layer and repository patterns in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-diagram.svg" alt="Diagram: Explain the service layer and repository patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-diagram.svg" alt="Diagram: Explain the service layer and repository patterns in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-sticky.svg" alt="Sticky Note: Explain the service layer and repository patterns in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-service-layer-and-repository-patterns-in-laravel-sticky.svg" alt="Sticky Note: Explain the service layer and repository patterns in Laravel." width="30%">
 </a>
 
 **Answer:** The **service layer** encapsulates business logic in dedicated classes (e.g., `PaymentService`, `InvoiceService`), keeping controllers thin. Services are injected via the container. The **repository pattern** abstracts data access behind an interface, allowing you to swap implementations (Eloquent, cache, external API) without changing business code. In practice, most Laravel applications use the service layer directly with Eloquent rather than full repositories, since Eloquent already provides an abstraction over the database.
@@ -1989,14 +1989,14 @@ class OrderService
 
 ### Q69: How do you design a multi-region Laravel deployment?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-handwritten.svg" alt="Handwritten: How do you design a multi-region Laravel deployment?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-handwritten.svg" alt="Handwritten: How do you design a multi-region Laravel deployment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-diagram.svg" alt="Diagram: How do you design a multi-region Laravel deployment?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-diagram.svg" alt="Diagram: How do you design a multi-region Laravel deployment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-sticky.svg" alt="Sticky Note: How do you design a multi-region Laravel deployment?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-design-a-multi-region-laravel-deployment-sticky.svg" alt="Sticky Note: How do you design a multi-region Laravel deployment?" width="30%">
 </a>
 
 **Answer:** Deploy Laravel application servers in each region behind a regional load balancer. Use a global DNS service (Route53, Cloudflare) for latency-based routing. Database writes go to a primary region, with cross-region read replicas. Use Redis Global Datastore or CRDT-based replication for distributed caching. Queue workers run per-region, processing region-specific queues. Stateless application design ensures any region can handle any request.
@@ -2019,14 +2019,14 @@ class OrderService
 
 ### Q70: How do you handle database sharding in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-handwritten.svg" alt="Handwritten: How do you handle database sharding in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-handwritten.svg" alt="Handwritten: How do you handle database sharding in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-diagram.svg" alt="Diagram: How do you handle database sharding in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-diagram.svg" alt="Diagram: How do you handle database sharding in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-sticky.svg" alt="Sticky Note: How do you handle database sharding in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-database-sharding-in-laravel-sticky.svg" alt="Sticky Note: How do you handle database sharding in Laravel?" width="30%">
 </a>
 
 **Answer:** Sharding splits data across multiple databases based on a shard key (user ID, region, tenant). In Laravel, use a database connection resolver that selects the correct shard at runtime. Define shard connections in `config/database.php` and resolve via middleware that sets the connection. For Eloquent, use a trait that overrides `getConnectionName()`.
@@ -2054,14 +2054,14 @@ class User extends Model
 
 ### Q71: Explain caching cascade strategies for read-heavy workloads.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-handwritten.svg" alt="Handwritten: Explain caching cascade strategies for read-heavy workloads." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-handwritten.svg" alt="Handwritten: Explain caching cascade strategies for read-heavy workloads." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-diagram.svg" alt="Diagram: Explain caching cascade strategies for read-heavy workloads." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-diagram.svg" alt="Diagram: Explain caching cascade strategies for read-heavy workloads." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-sticky.svg" alt="Sticky Note: Explain caching cascade strategies for read-heavy workloads." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-caching-cascade-strategies-for-read-heavy-workloads-sticky.svg" alt="Sticky Note: Explain caching cascade strategies for read-heavy workloads." width="30%">
 </a>
 
 **Answer:** A caching cascade places multiple layers of cache before the database. Typical three-tier cascade: L1 (in-memory/Octane memory cache, ~10ns), L2 (Redis, ~1ms), L3 (database, ~10ms). Check L1 first on miss, promote from L2 to L1. On L2 miss, query DB and populate both layers. Stale-while-revalidate patterns serve stale data while refreshing in the background.
@@ -2080,14 +2080,14 @@ function getPopularPosts(): Collection
 
 ### Q72: What are SLI, SLO, and SLA in the context of Laravel apps?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-handwritten.svg" alt="Handwritten: What are SLI, SLO, and SLA in the context of Laravel apps?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-handwritten.svg" alt="Handwritten: What are SLI, SLO, and SLA in the context of Laravel apps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-diagram.svg" alt="Diagram: What are SLI, SLO, and SLA in the context of Laravel apps?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-diagram.svg" alt="Diagram: What are SLI, SLO, and SLA in the context of Laravel apps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-sticky.svg" alt="Sticky Note: What are SLI, SLO, and SLA in the context of Laravel apps?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-sli-slo-and-sla-in-the-context-of-laravel-apps-sticky.svg" alt="Sticky Note: What are SLI, SLO, and SLA in the context of Laravel apps?" width="30%">
 </a>
 
 **Answer:** **SLI** (Service Level Indicator) is the measured metric → e.g., p99 response time, error rate, uptime percentage. **SLO** (Service Level Objective) is the target → e.g., "p99 response time &lt; 200ms" or "99.9% uptime". **SLA** (Service Level Agreement) is the contractual commitment to customers based on SLOs. In Laravel, use Pulse to track SLIs (request duration, error rates), define SLOs in `config/pulse.php`, and expose SLI data via a metrics endpoint for monitoring.
@@ -2106,14 +2106,14 @@ Pulse::record('api_response_time', $duration)->avg();
 
 ### Q73: How do you implement disaster recovery for a Laravel app?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-handwritten.svg" alt="Handwritten: How do you implement disaster recovery for a Laravel app?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-handwritten.svg" alt="Handwritten: How do you implement disaster recovery for a Laravel app?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-diagram.svg" alt="Diagram: How do you implement disaster recovery for a Laravel app?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-diagram.svg" alt="Diagram: How do you implement disaster recovery for a Laravel app?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-sticky.svg" alt="Sticky Note: How do you implement disaster recovery for a Laravel app?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-disaster-recovery-for-a-laravel-app-sticky.svg" alt="Sticky Note: How do you implement disaster recovery for a Laravel app?" width="30%">
 </a>
 
 **Answer:** Implement a multi-region active-passive or active-active architecture. Use RDS cross-region replicas for database DR. Store assets in S3 with cross-region replication. Use Route53 health checks that failover to the standby region. Run `php artisan backup:run` for scheduled database and file backups. Define a runbook with RPO (Recovery Point Objective) and RTO (Recovery Time Objective). Test DR quarterly.
@@ -2136,14 +2136,14 @@ class DatabaseConfigProvider
 
 ### Q74: Explain the Strangler Fig pattern for migrating from monolith to services.
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-handwritten.svg" alt="Handwritten: Explain the Strangler Fig pattern for migrating from monolith to services." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-handwritten.svg" alt="Handwritten: Explain the Strangler Fig pattern for migrating from monolith to services." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-diagram.svg" alt="Diagram: Explain the Strangler Fig pattern for migrating from monolith to services." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-diagram.svg" alt="Diagram: Explain the Strangler Fig pattern for migrating from monolith to services." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-sticky.svg" alt="Sticky Note: Explain the Strangler Fig pattern for migrating from monolith to services." width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/explain-the-strangler-fig-pattern-for-migrating-from-monolith-to-services-sticky.svg" alt="Sticky Note: Explain the Strangler Fig pattern for migrating from monolith to services." width="30%">
 </a>
 
 **Answer:** The Strangler Fig pattern gradually replaces monolith functionality with microservices without a big-bang rewrite. Create a new Laravel service for a specific feature, route traffic to it via a proxy or feature flag, then remove the old code once the new service handles all traffic. Repeat until the monolith is fully replaced. Laravel's routing and middleware make this straightforward → use a reverse proxy (Nginx, Envoy) to route by URI prefix.
@@ -2171,14 +2171,14 @@ if (Feature::active('new-checkout')) {
 
 ### Q75: What is the supervisor/worker pattern for multi-agent systems?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-handwritten.svg" alt="Handwritten: What is the supervisor/worker pattern for multi-agent systems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-handwritten.svg" alt="Handwritten: What is the supervisor/worker pattern for multi-agent systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-diagram.svg" alt="Diagram: What is the supervisor/worker pattern for multi-agent systems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-diagram.svg" alt="Diagram: What is the supervisor/worker pattern for multi-agent systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-sticky.svg" alt="Sticky Note: What is the supervisor/worker pattern for multi-agent systems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-supervisor-worker-pattern-for-multi-agent-systems-sticky.svg" alt="Sticky Note: What is the supervisor/worker pattern for multi-agent systems?" width="30%">
 </a>
 
 **Answer:** The supervisor agent receives a high-level goal, decomposes it into sub-tasks, and dispatches each to a specialized worker agent. The supervisor does not do the work → it plans, delegates, and synthesizes results. Workers are narrowly focused agents with specific tool sets (search, analysis, writing, translation). The pattern enables complex workflows without overloading any single agent.
@@ -2206,14 +2206,14 @@ class SupervisorAgent implements Agent
 
 ### Q76: How do you implement agent handoff in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-handwritten.svg" alt="Handwritten: How do you implement agent handoff in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-handwritten.svg" alt="Handwritten: How do you implement agent handoff in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-diagram.svg" alt="Diagram: How do you implement agent handoff in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-diagram.svg" alt="Diagram: How do you implement agent handoff in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-sticky.svg" alt="Sticky Note: How do you implement agent handoff in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-handoff-in-laravel-sticky.svg" alt="Sticky Note: How do you implement agent handoff in Laravel?" width="30%">
 </a>
 
 **Answer:** Agent handoff transfers a conversation from one agent to another, preserving context. Implement via a tool that returns a structured handoff payload with the receiving agent's identity and the conversation history. The router agent decides which agent should handle based on the current state. Handoff is explicit → the source agent voluntarily passes control.
@@ -2243,14 +2243,14 @@ class RouterAgent implements Agent
 
 ### Q77: How do you run multiple agents in parallel using queues?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-handwritten.svg" alt="Handwritten: How do you run multiple agents in parallel using queues?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-handwritten.svg" alt="Handwritten: How do you run multiple agents in parallel using queues?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-diagram.svg" alt="Diagram: How do you run multiple agents in parallel using queues?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-diagram.svg" alt="Diagram: How do you run multiple agents in parallel using queues?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-sticky.svg" alt="Sticky Note: How do you run multiple agents in parallel using queues?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-run-multiple-agents-in-parallel-using-queues-sticky.svg" alt="Sticky Note: How do you run multiple agents in parallel using queues?" width="30%">
 </a>
 
 **Answer:** Dispatch each agent as a separate queued job using Laravel's `Bus::batch()` for fan-out/fan-in. Each agent runs independently on a queue worker. Collect results when all complete. This is the fan-out/fan-in pattern → split work, process in parallel, merge results. Horizon monitors all parallel agents.
@@ -2272,14 +2272,14 @@ $batch = Bus::batch([
 
 ### Q78: How do you manage shared state across agents?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-handwritten.svg" alt="Handwritten: How do you manage shared state across agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-handwritten.svg" alt="Handwritten: How do you manage shared state across agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-diagram.svg" alt="Diagram: How do you manage shared state across agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-diagram.svg" alt="Diagram: How do you manage shared state across agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-sticky.svg" alt="Sticky Note: How do you manage shared state across agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-manage-shared-state-across-agents-sticky.svg" alt="Sticky Note: How do you manage shared state across agents?" width="30%">
 </a>
 
 **Answer:** Shared state is stored in Redis or the database, keyed by a session or workflow ID. Agents read and write to the shared store via tools. Use atomic locks for write conflicts. The AI SDK's `RemembersConversations` persists per-agent conversation history. For cross-agent state, use a dedicated state store with JSON documents.
@@ -2308,14 +2308,14 @@ class SharedStateStore
 
 ### Q79: What are circuit breakers and how do you apply them to agents?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-handwritten.svg" alt="Handwritten: What are circuit breakers and how do you apply them to agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-handwritten.svg" alt="Handwritten: What are circuit breakers and how do you apply them to agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-diagram.svg" alt="Diagram: What are circuit breakers and how do you apply them to agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-diagram.svg" alt="Diagram: What are circuit breakers and how do you apply them to agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-sticky.svg" alt="Sticky Note: What are circuit breakers and how do you apply them to agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-circuit-breakers-and-how-do-you-apply-them-to-agents-sticky.svg" alt="Sticky Note: What are circuit breakers and how do you apply them to agents?" width="30%">
 </a>
 
 **Answer:** A circuit breaker prevents repeated calls to a failing service. Three states: **Closed** (normal operation), **Open** (calls fail immediately), **Half-Open** (test call to check recovery). For AI agents, circuit breakers prevent cascading failures when an AI provider is down or returning errors. Laravel's cache provides atomic locks that can implement circuit breaker state.
@@ -2351,14 +2351,14 @@ class AgentCircuitBreaker
 
 ### Q80: How do you handle agent orchestration with Laravel's Bus::chain?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-handwritten.svg" alt="Handwritten: How do you handle agent orchestration with Laravel's Bus::chain?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-handwritten.svg" alt="Handwritten: How do you handle agent orchestration with Laravel's Bus::chain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-diagram.svg" alt="Diagram: How do you handle agent orchestration with Laravel's Bus::chain?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-diagram.svg" alt="Diagram: How do you handle agent orchestration with Laravel's Bus::chain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-sticky.svg" alt="Sticky Note: How do you handle agent orchestration with Laravel's Bus::chain?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-orchestration-with-laravel-s-bus-chain-sticky.svg" alt="Sticky Note: How do you handle agent orchestration with Laravel's Bus::chain?" width="30%">
 </a>
 
 **Answer:** `Bus::chain()` runs jobs sequentially → each job receives the previous job's result. For agents, this creates a pipeline where the output of one agent feeds the next. Use `then()` for success handling and `catch()` for failure. Combined with `Bus::batch()` you can model DAG workflows (parallel + sequential steps).
@@ -2378,14 +2378,14 @@ Bus::chain([
 
 ### Q81: How do you implement agent observability (monitoring and logging)?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-handwritten.svg" alt="Handwritten: How do you implement agent observability (monitoring and logging)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-handwritten.svg" alt="Handwritten: How do you implement agent observability (monitoring and logging)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-diagram.svg" alt="Diagram: How do you implement agent observability (monitoring and logging)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-diagram.svg" alt="Diagram: How do you implement agent observability (monitoring and logging)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-sticky.svg" alt="Sticky Note: How do you implement agent observability (monitoring and logging)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-agent-observability-monitoring-and-logging-sticky.svg" alt="Sticky Note: How do you implement agent observability (monitoring and logging)?" width="30%">
 </a>
 
 **Answer:** Use Laravel Telescope to record every agent invocation, prompt, and response. Create a custom Telescope watcher for AI events. Use Pulse for real-time agent metrics → request count, latency, token usage, error rate. Log all agent interactions to the database for audit trails. Track tool usage per agent to analyze behavior patterns.
@@ -2413,14 +2413,14 @@ Pulse::record('agent_tokens', $tokenCount)->avg();
 
 ### Q82: How do you test multi-agent systems in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-handwritten.svg" alt="Handwritten: How do you test multi-agent systems in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-handwritten.svg" alt="Handwritten: How do you test multi-agent systems in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-diagram.svg" alt="Diagram: How do you test multi-agent systems in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-diagram.svg" alt="Diagram: How do you test multi-agent systems in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-sticky.svg" alt="Sticky Note: How do you test multi-agent systems in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-test-multi-agent-systems-in-laravel-sticky.svg" alt="Sticky Note: How do you test multi-agent systems in Laravel?" width="30%">
 </a>
 
 **Answer:** Test agents in isolation by mocking their tools and asserting they receive expected inputs. Use `Ai::fake()` to prevent real API calls. Test workflows by dispatching the chain or batch and asserting state changes. Use PEST's `expect()->toBe()` for output assertions. For integration tests, use real database and Redis but fake AI responses.
@@ -2458,14 +2458,14 @@ it('completes full supervisor pipeline', function () {
 
 ### Q83: What is a business automation agent and how is it built?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-handwritten.svg" alt="Handwritten: What is a business automation agent and how is it built?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-handwritten.svg" alt="Handwritten: What is a business automation agent and how is it built?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-diagram.svg" alt="Diagram: What is a business automation agent and how is it built?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-diagram.svg" alt="Diagram: What is a business automation agent and how is it built?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-sticky.svg" alt="Sticky Note: What is a business automation agent and how is it built?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-a-business-automation-agent-and-how-is-it-built-sticky.svg" alt="Sticky Note: What is a business automation agent and how is it built?" width="30%">
 </a>
 
 **Answer:** A business automation agent executes recurring business tasks autonomously → generating reports, processing invoices, monitoring metrics, onboarding users. It combines scheduled execution (Laravel's scheduler), AI decision-making (AI SDK agent), and tool-based integrations (email, Slack, CRM). Build by creating a command or job that instantiates the agent with relevant tools and runs on a schedule.
@@ -2497,14 +2497,14 @@ class DailyReportAgent implements Agent
 
 ### Q84: How do you implement approval workflows with human-in-the-loop?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-handwritten.svg" alt="Handwritten: How do you implement approval workflows with human-in-the-loop?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-handwritten.svg" alt="Handwritten: How do you implement approval workflows with human-in-the-loop?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-diagram.svg" alt="Diagram: How do you implement approval workflows with human-in-the-loop?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-diagram.svg" alt="Diagram: How do you implement approval workflows with human-in-the-loop?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-sticky.svg" alt="Sticky Note: How do you implement approval workflows with human-in-the-loop?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-approval-workflows-with-human-in-the-loop-sticky.svg" alt="Sticky Note: How do you implement approval workflows with human-in-the-loop?" width="30%">
 </a>
 
 **Answer:** Define states (pending, approved, rejected) and transitions. When a condition requires approval, create an `ApprovalRequest` record, notify the approver via email/Slack, and pause execution. The approval endpoint updates the status → continue if approved, rollback if rejected. Use Laravel notifications for the approval request and signed routes for the approve/reject actions.
@@ -2544,14 +2544,14 @@ class ApprovalWorkflow
 
 ### Q85: How do you log and audit automated agent decisions?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-handwritten.svg" alt="Handwritten: How do you log and audit automated agent decisions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-handwritten.svg" alt="Handwritten: How do you log and audit automated agent decisions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-diagram.svg" alt="Diagram: How do you log and audit automated agent decisions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-diagram.svg" alt="Diagram: How do you log and audit automated agent decisions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-sticky.svg" alt="Sticky Note: How do you log and audit automated agent decisions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-log-and-audit-automated-agent-decisions-sticky.svg" alt="Sticky Note: How do you log and audit automated agent decisions?" width="30%">
 </a>
 
 **Answer:** Create an `agent_audit_logs` table recording agent name, input prompt, output response, tools invoked, timestamps, and the user or system that triggered it. Use Eloquent events or middleware to capture every agent interaction. For compliance, log each decision with a unique ID, store the full context, and provide a dashboard for audit review. Implement retention policies for log data.
@@ -2595,14 +2595,14 @@ class AuditLogAgentMiddleware implements AgentMiddleware
 
 ### Q86: How do you build a scheduled report generation agent?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-handwritten.svg" alt="Handwritten: How do you build a scheduled report generation agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-handwritten.svg" alt="Handwritten: How do you build a scheduled report generation agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-diagram.svg" alt="Diagram: How do you build a scheduled report generation agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-diagram.svg" alt="Diagram: How do you build a scheduled report generation agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-sticky.svg" alt="Sticky Note: How do you build a scheduled report generation agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-scheduled-report-generation-agent-sticky.svg" alt="Sticky Note: How do you build a scheduled report generation agent?" width="30%">
 </a>
 
 **Answer:** Create a Laravel command that instantiates an AI agent with tools for data fetching, formatting, and distribution. Schedule it via `$schedule->command()` in the kernel. The agent fetches raw data via tools, analyzes it, generates a formatted report, and sends it via email, Slack, or a dashboard endpoint.
@@ -2632,14 +2632,14 @@ $schedule->command('report:weekly')->mondays()->at('09:00');
 
 ### Q87: How do you integrate external APIs with business automation agents?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-handwritten.svg" alt="Handwritten: How do you integrate external APIs with business automation agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-handwritten.svg" alt="Handwritten: How do you integrate external APIs with business automation agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-diagram.svg" alt="Diagram: How do you integrate external APIs with business automation agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-diagram.svg" alt="Diagram: How do you integrate external APIs with business automation agents?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-sticky.svg" alt="Sticky Note: How do you integrate external APIs with business automation agents?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-integrate-external-apis-with-business-automation-agents-sticky.svg" alt="Sticky Note: How do you integrate external APIs with business automation agents?" width="30%">
 </a>
 
 **Answer:** Build tools that wrap external API calls. Each tool has a clear name, description, and input/output schema so the AI knows when and how to use it. The tool's `handle()` method makes the HTTP call, handles errors, and returns structured data. For rate-limited APIs, implement queuing and retry logic within the tool.
@@ -2672,14 +2672,14 @@ class SalesforceSyncTool implements Tool
 
 ### Q88: What are common failure modes for automated agents and how do you handle them?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-handwritten.svg" alt="Handwritten: What are common failure modes for automated agents and how do you handle them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-handwritten.svg" alt="Handwritten: What are common failure modes for automated agents and how do you handle them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-diagram.svg" alt="Diagram: What are common failure modes for automated agents and how do you handle them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-diagram.svg" alt="Diagram: What are common failure modes for automated agents and how do you handle them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-sticky.svg" alt="Sticky Note: What are common failure modes for automated agents and how do you handle them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-are-common-failure-modes-for-automated-agents-and-how-do-you-handle-them-sticky.svg" alt="Sticky Note: What are common failure modes for automated agents and how do you handle them?" width="30%">
 </a>
 
 **Answer:** Common failures: (1) **Tool errors** → API timeout, rate limit, bad input. (2) **Hallucination** → agent invents data or makes incorrect assertions. (3) **Runaway loops** → agent keeps calling tools without making progress. (4) **Context overflow** → agent exceeds token limit. Mitigate with: try/catch in tools with graceful error messages, structured output validation, max tool call limits per agent, circuit breakers for external services, and human-in-the-loop approval for high-stakes actions.
@@ -2704,14 +2704,14 @@ class SafeAgentTool implements Tool
 
 ### Q89: How do you handle agent timeout and retry policies?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-handwritten.svg" alt="Handwritten: How do you handle agent timeout and retry policies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-handwritten.svg" alt="Handwritten: How do you handle agent timeout and retry policies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-diagram.svg" alt="Diagram: How do you handle agent timeout and retry policies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-diagram.svg" alt="Diagram: How do you handle agent timeout and retry policies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-sticky.svg" alt="Sticky Note: How do you handle agent timeout and retry policies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-agent-timeout-and-retry-policies-sticky.svg" alt="Sticky Note: How do you handle agent timeout and retry policies?" width="30%">
 </a>
 
 **Answer:** Configure timeouts at multiple levels: HTTP client timeout (seconds), queue job retry (max attempts + backoff), and agent-level max execution time. Use Laravel's `retry()` helper for transient failures. For long-running agents, break work into chunks and use `Bus::chain()` to limit per-job duration. Alert when agents exceed thresholds.
@@ -2745,14 +2745,14 @@ public function instructions(): string
 
 ### Q90: How does Laravel's pipeline pattern work?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-handwritten.svg" alt="Handwritten: How does Laravel's pipeline pattern work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-handwritten.svg" alt="Handwritten: How does Laravel's pipeline pattern work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-diagram.svg" alt="Diagram: How does Laravel's pipeline pattern work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-diagram.svg" alt="Diagram: How does Laravel's pipeline pattern work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-sticky.svg" alt="Sticky Note: How does Laravel's pipeline pattern work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-pipeline-pattern-work-sticky.svg" alt="Sticky Note: How does Laravel's pipeline pattern work?" width="30%">
 </a>
 
 **Answer:** `Illuminate\Pipeline\Pipeline` sends an object through a series of pipes (callables or invokable classes), where each pipe can inspect, modify, or reject it. This powers middleware and is available for custom use. Each pipe receives the object and a `$next` closure, calling `$next($object)` to pass control.
@@ -2770,14 +2770,14 @@ $result = app(Pipeline::class)
 
 ### Q91: What is Laravel Prompts and when would you use it?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is Laravel Prompts and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is Laravel Prompts and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is Laravel Prompts and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is Laravel Prompts and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is Laravel Prompts and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-prompts-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is Laravel Prompts and when would you use it?" width="30%">
 </a>
 
 **Answer:** Laravel Prompts is a package for building beautiful CLI forms with autocomplete, text input, select menus, multi-select, confirmations, and progress bars. Use it in Artisan commands to gather user input interactively. It supports validation, fallback, and theming.
@@ -2790,14 +2790,14 @@ $confirm = confirm('Deploy to production?', default: false);
 
 ### Q92: How do you handle media uploads and file storage in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-handwritten.svg" alt="Handwritten: How do you handle media uploads and file storage in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-handwritten.svg" alt="Handwritten: How do you handle media uploads and file storage in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-diagram.svg" alt="Diagram: How do you handle media uploads and file storage in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-diagram.svg" alt="Diagram: How do you handle media uploads and file storage in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-sticky.svg" alt="Sticky Note: How do you handle media uploads and file storage in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-handle-media-uploads-and-file-storage-in-laravel-sticky.svg" alt="Sticky Note: How do you handle media uploads and file storage in Laravel?" width="30%">
 </a>
 
 **Answer:** Laravel's Filesystem abstraction supports local, S3, and GCS drivers via a unified API. Use `Storage::put()`, `Storage::url()`, and `Storage::delete()`. The `Intervention` library is the standard for image manipulation. For user uploads, use form requests with validation rules (`image`, `mimes:jpg,png`, `max:2048`).
@@ -2815,14 +2815,14 @@ Image::make($request->file('avatar'))
 
 ### Q93: What is Laravel Pennant and how do you use feature flags?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-handwritten.svg" alt="Handwritten: What is Laravel Pennant and how do you use feature flags?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-handwritten.svg" alt="Handwritten: What is Laravel Pennant and how do you use feature flags?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-diagram.svg" alt="Diagram: What is Laravel Pennant and how do you use feature flags?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-diagram.svg" alt="Diagram: What is Laravel Pennant and how do you use feature flags?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-sticky.svg" alt="Sticky Note: What is Laravel Pennant and how do you use feature flags?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-pennant-and-how-do-you-use-feature-flags-sticky.svg" alt="Sticky Note: What is Laravel Pennant and how do you use feature flags?" width="30%">
 </a>
 
 **Answer:** Pennant is Laravel's first-party feature flag package. It supports simple boolean flags, percentage-based rollouts, and custom feature resolvers. Use `Feature::active()` in controllers, Blade (`@feature`), and middleware. Manage via the Pennant UI or API.
@@ -2842,14 +2842,14 @@ Feature::define('beta-feature', Feature::percentage(25));
 
 ### Q94: How do you use Laravel PreCognition for proactive validation?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-handwritten.svg" alt="Handwritten: How do you use Laravel PreCognition for proactive validation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-handwritten.svg" alt="Handwritten: How do you use Laravel PreCognition for proactive validation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-diagram.svg" alt="Diagram: How do you use Laravel PreCognition for proactive validation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-diagram.svg" alt="Diagram: How do you use Laravel PreCognition for proactive validation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-sticky.svg" alt="Sticky Note: How do you use Laravel PreCognition for proactive validation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-laravel-precognition-for-proactive-validation-sticky.svg" alt="Sticky Note: How do you use Laravel PreCognition for proactive validation?" width="30%">
 </a>
 
 **Answer:** PreCognition validates forms before submission by making validation requests as the user types. It returns the same validation rules applied server-side. Use the `usePrecognition()` trait in your form request and add the Alpine.js or Vue plugin on the frontend. This provides instant feedback without waiting for full form submission.
@@ -2874,14 +2874,14 @@ class StorePostRequest extends FormRequest
 
 ### Q95: What is Laravel Folio and how does it work?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Laravel Folio and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Laravel Folio and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-diagram.svg" alt="Diagram: What is Laravel Folio and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-diagram.svg" alt="Diagram: What is Laravel Folio and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Laravel Folio and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-laravel-folio-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Laravel Folio and how does it work?" width="30%">
 </a>
 
 **Answer:** Folio provides file-based routing for pages. Create a Blade files in `resources/views/pages/` and the URL path matches: `pages/users/index.blade.php` maps to `/users`. Supports route parameters via `[User]` file naming, middleware via `middleware` files, and nested layouts. It reduces route file boilerplate for simple page-based applications.
@@ -2901,14 +2901,14 @@ middleware('auth');
 
 ### Q96: How do you use context in AI SDK agents for dynamic behavior?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-handwritten.svg" alt="Handwritten: How do you use context in AI SDK agents for dynamic behavior?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-handwritten.svg" alt="Handwritten: How do you use context in AI SDK agents for dynamic behavior?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-diagram.svg" alt="Diagram: How do you use context in AI SDK agents for dynamic behavior?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-diagram.svg" alt="Diagram: How do you use context in AI SDK agents for dynamic behavior?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-sticky.svg" alt="Sticky Note: How do you use context in AI SDK agents for dynamic behavior?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-use-context-in-ai-sdk-agents-for-dynamic-behavior-sticky.svg" alt="Sticky Note: How do you use context in AI SDK agents for dynamic behavior?" width="30%">
 </a>
 
 **Answer:** The `context()` method passes additional data to an agent that is injected into the system prompt at runtime. Context can be user data, session state, or environmental information. Use `ContextLoader` classes for complex context building. Context is rendered into the prompt before sending to the AI.
@@ -2931,14 +2931,14 @@ public function instructions(): string
 
 ### Q97: How do you build a custom Artisan command for AI operations?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-handwritten.svg" alt="Handwritten: How do you build a custom Artisan command for AI operations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-handwritten.svg" alt="Handwritten: How do you build a custom Artisan command for AI operations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-diagram.svg" alt="Diagram: How do you build a custom Artisan command for AI operations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-diagram.svg" alt="Diagram: How do you build a custom Artisan command for AI operations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-sticky.svg" alt="Sticky Note: How do you build a custom Artisan command for AI operations?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-build-a-custom-artisan-command-for-ai-operations-sticky.svg" alt="Sticky Note: How do you build a custom Artisan command for AI operations?" width="30%">
 </a>
 
 **Answer:** Generate with `php artisan make:command`. Define `$signature` (with arguments and options) and implement `handle()`. For AI operations, the command instantiates an agent, runs it, and outputs the result. Commands can be scheduled or triggered manually.
@@ -2966,14 +2966,14 @@ class ModerateContent extends Command
 
 ### Q98: How does Laravel's deferred service providers work?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-handwritten.svg" alt="Handwritten: How does Laravel's deferred service providers work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-handwritten.svg" alt="Handwritten: How does Laravel's deferred service providers work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-diagram.svg" alt="Diagram: How does Laravel's deferred service providers work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-diagram.svg" alt="Diagram: How does Laravel's deferred service providers work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-sticky.svg" alt="Sticky Note: How does Laravel's deferred service providers work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-does-laravel-s-deferred-service-providers-work-sticky.svg" alt="Sticky Note: How does Laravel's deferred service providers work?" width="30%">
 </a>
 
 **Answer:** Deferred providers delay service registration until a binding or event from that provider is actually requested. Implement `DeferrableProvider` on the provider and define `provides()` to list the bindings it registers. This reduces application boot time by not loading providers that aren't used on the current request.
@@ -2996,14 +2996,14 @@ class AnalyticsServiceProvider extends ServiceProvider implements DeferrableProv
 
 ### Q99: What is the difference between events, listeners, and subscribers?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-handwritten.svg" alt="Handwritten: What is the difference between events, listeners, and subscribers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-handwritten.svg" alt="Handwritten: What is the difference between events, listeners, and subscribers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-diagram.svg" alt="Diagram: What is the difference between events, listeners, and subscribers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-diagram.svg" alt="Diagram: What is the difference between events, listeners, and subscribers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-sticky.svg" alt="Sticky Note: What is the difference between events, listeners, and subscribers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/what-is-the-difference-between-events-listeners-and-subscribers-sticky.svg" alt="Sticky Note: What is the difference between events, listeners, and subscribers?" width="30%">
 </a>
 
 **Answer:** **Events** are simple data classes that describe what happened. **Listeners** handle events → each listener has a `handle()` method and is registered for one or more events. **Subscribers** are classes that subscribe to multiple events internally using `subscribe()` → they organize related event handling in one class.
@@ -3028,14 +3028,14 @@ class UserEventSubscriber
 
 ### Q100: How do you implement rate limiting for AI agent calls?
 
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-handwritten.svg" alt="Handwritten: How do you implement rate limiting for AI agent calls?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-handwritten.svg" alt="Handwritten: How do you implement rate limiting for AI agent calls?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-diagram.svg" alt="Diagram: How do you implement rate limiting for AI agent calls?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-diagram.svg" alt="Diagram: How do you implement rate limiting for AI agent calls?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-sticky.svg" alt="Sticky Note: How do you implement rate limiting for AI agent calls?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/38-interview-general/how-do-you-implement-rate-limiting-for-ai-agent-calls-sticky.svg" alt="Sticky Note: How do you implement rate limiting for AI agent calls?" width="30%">
 </a>
 
 **Answer:** Use Laravel's built-in rate limiter with Redis. Define named rate limiters for different agent types or cost tiers. Apply in middleware for HTTP requests, or check in the agent execution path. For queued agents, adjust `$backoff` based on available rate limit capacity.

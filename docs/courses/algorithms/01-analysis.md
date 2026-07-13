@@ -59,14 +59,14 @@ flowchart LR
 
 ### 1.1 Asymptotic Notation
 
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-handwritten.svg" alt="Handwritten: 1.1 Asymptotic Notation" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-handwritten.svg" alt="Handwritten: 1.1 Asymptotic Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-diagram.svg" alt="Diagram: 1.1 Asymptotic Notation" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-diagram.svg" alt="Diagram: 1.1 Asymptotic Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-sticky.svg" alt="Sticky Note: 1.1 Asymptotic Notation" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-1-asymptotic-notation-sticky.svg" alt="Sticky Note: 1.1 Asymptotic Notation" width="30%">
 </a>
 
 
@@ -267,14 +267,14 @@ public static int binarySearch(int[] arr, int target) {
 
 ### 1.2 Recurrence Relations
 
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-handwritten.svg" alt="Handwritten: 1.2 Recurrence Relations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-handwritten.svg" alt="Handwritten: 1.2 Recurrence Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-diagram.svg" alt="Diagram: 1.2 Recurrence Relations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-diagram.svg" alt="Diagram: 1.2 Recurrence Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-sticky.svg" alt="Sticky Note: 1.2 Recurrence Relations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-2-recurrence-relations-sticky.svg" alt="Sticky Note: 1.2 Recurrence Relations" width="30%">
 </a>
 
 
@@ -539,14 +539,14 @@ private static void merge(int[] arr, int l, int m, int r) {
 
 ### 1.3 Amortized Analysis
 
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-handwritten.svg" alt="Handwritten: 1.3 Amortized Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-handwritten.svg" alt="Handwritten: 1.3 Amortized Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-diagram.svg" alt="Diagram: 1.3 Amortized Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-diagram.svg" alt="Diagram: 1.3 Amortized Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-sticky.svg" alt="Sticky Note: 1.3 Amortized Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/01-analysis/1-3-amortized-analysis-sticky.svg" alt="Sticky Note: 1.3 Amortized Analysis" width="30%">
 </a>
 
 

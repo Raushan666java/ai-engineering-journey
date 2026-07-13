@@ -14,14 +14,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -48,14 +48,14 @@ flowchart LR
 
 ### 16.1.0 Real-World Analogy → A Plate Stack
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-handwritten.svg" alt="Handwritten: 16.1.0 Real-World Analogy → A Plate Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-handwritten.svg" alt="Handwritten: 16.1.0 Real-World Analogy → A Plate Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-diagram.svg" alt="Diagram: 16.1.0 Real-World Analogy → A Plate Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-diagram.svg" alt="Diagram: 16.1.0 Real-World Analogy → A Plate Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-sticky.svg" alt="Sticky Note: 16.1.0 Real-World Analogy → A Plate Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-0-real-world-analogy-a-plate-stack-sticky.svg" alt="Sticky Note: 16.1.0 Real-World Analogy → A Plate Stack" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ You **cannot** pull a plate from the middle or bottom without first removing eve
 
 ### 16.1.1 The Stack ADT → Formal Definition
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-handwritten.svg" alt="Handwritten: 16.1.1 The Stack ADT → Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-handwritten.svg" alt="Handwritten: 16.1.1 The Stack ADT → Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-diagram.svg" alt="Diagram: 16.1.1 The Stack ADT → Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-diagram.svg" alt="Diagram: 16.1.1 The Stack ADT → Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-sticky.svg" alt="Sticky Note: 16.1.1 The Stack ADT → Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-1-the-stack-adt-formal-definition-sticky.svg" alt="Sticky Note: 16.1.1 The Stack ADT → Formal Definition" width="30%">
 </a>
 
 
@@ -109,14 +109,14 @@ A stack is an ordered collection of elements that supports these fundamental ope
 
 ### 16.1.2 Numbered Steps → Stack Push Operation
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-handwritten.svg" alt="Handwritten: 16.1.2 Numbered Steps → Stack Push Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-handwritten.svg" alt="Handwritten: 16.1.2 Numbered Steps → Stack Push Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-diagram.svg" alt="Diagram: 16.1.2 Numbered Steps → Stack Push Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-diagram.svg" alt="Diagram: 16.1.2 Numbered Steps → Stack Push Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-sticky.svg" alt="Sticky Note: 16.1.2 Numbered Steps → Stack Push Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-2-numbered-steps-stack-push-operation-sticky.svg" alt="Sticky Note: 16.1.2 Numbered Steps → Stack Push Operation" width="30%">
 </a>
 
 
@@ -139,14 +139,14 @@ END ALGORITHM
 
 ### 16.1.3 Numbered Steps → Stack Pop Operation
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-handwritten.svg" alt="Handwritten: 16.1.3 Numbered Steps → Stack Pop Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-handwritten.svg" alt="Handwritten: 16.1.3 Numbered Steps → Stack Pop Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-diagram.svg" alt="Diagram: 16.1.3 Numbered Steps → Stack Pop Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-diagram.svg" alt="Diagram: 16.1.3 Numbered Steps → Stack Pop Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-sticky.svg" alt="Sticky Note: 16.1.3 Numbered Steps → Stack Pop Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-3-numbered-steps-stack-pop-operation-sticky.svg" alt="Sticky Note: 16.1.3 Numbered Steps → Stack Pop Operation" width="30%">
 </a>
 
 
@@ -169,14 +169,14 @@ END ALGORITHM
 
 ### 16.1.4 Numbered Steps → Stack Peek Operation
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-handwritten.svg" alt="Handwritten: 16.1.4 Numbered Steps → Stack Peek Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-handwritten.svg" alt="Handwritten: 16.1.4 Numbered Steps → Stack Peek Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-diagram.svg" alt="Diagram: 16.1.4 Numbered Steps → Stack Peek Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-diagram.svg" alt="Diagram: 16.1.4 Numbered Steps → Stack Peek Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-sticky.svg" alt="Sticky Note: 16.1.4 Numbered Steps → Stack Peek Operation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-4-numbered-steps-stack-peek-operation-sticky.svg" alt="Sticky Note: 16.1.4 Numbered Steps → Stack Peek Operation" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ END ALGORITHM
 
 ### 16.1.5 Dry Run → Stack Push and Pop Trace
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-handwritten.svg" alt="Handwritten: 16.1.5 Dry Run → Stack Push and Pop Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-handwritten.svg" alt="Handwritten: 16.1.5 Dry Run → Stack Push and Pop Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-diagram.svg" alt="Diagram: 16.1.5 Dry Run → Stack Push and Pop Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-diagram.svg" alt="Diagram: 16.1.5 Dry Run → Stack Push and Pop Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-sticky.svg" alt="Sticky Note: 16.1.5 Dry Run → Stack Push and Pop Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-5-dry-run-stack-push-and-pop-trace-sticky.svg" alt="Sticky Note: 16.1.5 Dry Run → Stack Push and Pop Trace" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ Initial state: empty stack with `capacity = 5`, `top = -1`.
 
 ### 16.1.6 Edge Cases for Stack
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-handwritten.svg" alt="Handwritten: 16.1.6 Edge Cases for Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-handwritten.svg" alt="Handwritten: 16.1.6 Edge Cases for Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-diagram.svg" alt="Diagram: 16.1.6 Edge Cases for Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-diagram.svg" alt="Diagram: 16.1.6 Edge Cases for Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-sticky.svg" alt="Sticky Note: 16.1.6 Edge Cases for Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-1-6-edge-cases-for-stack-sticky.svg" alt="Sticky Note: 16.1.6 Edge Cases for Stack" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ Initial state: empty stack with `capacity = 5`, `top = -1`.
 
 ### 16.2.0 Analogy → Fixed-Size Plate Rack
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-handwritten.svg" alt="Handwritten: 16.2.0 Analogy → Fixed-Size Plate Rack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-handwritten.svg" alt="Handwritten: 16.2.0 Analogy → Fixed-Size Plate Rack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-diagram.svg" alt="Diagram: 16.2.0 Analogy → Fixed-Size Plate Rack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-diagram.svg" alt="Diagram: 16.2.0 Analogy → Fixed-Size Plate Rack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-sticky.svg" alt="Sticky Note: 16.2.0 Analogy → Fixed-Size Plate Rack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-0-analogy-fixed-size-plate-rack-sticky.svg" alt="Sticky Note: 16.2.0 Analogy → Fixed-Size Plate Rack" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ A fixed-size plate rack holds at most N plates. If the rack is full (N plates), 
 
 ### 16.2.1 Structure Definition
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-handwritten.svg" alt="Handwritten: 16.2.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-handwritten.svg" alt="Handwritten: 16.2.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-diagram.svg" alt="Diagram: 16.2.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-diagram.svg" alt="Diagram: 16.2.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-sticky.svg" alt="Sticky Note: 16.2.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-1-structure-definition-sticky.svg" alt="Sticky Note: 16.2.1 Structure Definition" width="30%">
 </a>
 
 
@@ -297,14 +297,14 @@ Stack struct
 
 ### 16.2.2 C Code → Array-Based Stack (Full Implementation)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-handwritten.svg" alt="Handwritten: 16.2.2 C Code → Array-Based Stack (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-handwritten.svg" alt="Handwritten: 16.2.2 C Code → Array-Based Stack (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-diagram.svg" alt="Diagram: 16.2.2 C Code → Array-Based Stack (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-diagram.svg" alt="Diagram: 16.2.2 C Code → Array-Based Stack (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-sticky.svg" alt="Sticky Note: 16.2.2 C Code → Array-Based Stack (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-2-c-code-array-based-stack-full-implementation-sticky.svg" alt="Sticky Note: 16.2.2 C Code → Array-Based Stack (Full Implementation)" width="30%">
 </a>
 
 
@@ -447,14 +447,14 @@ Stack Underflow: cannot pop from empty stack
 
 ### 16.2.3 Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-handwritten.svg" alt="Handwritten: 16.2.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-handwritten.svg" alt="Handwritten: 16.2.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-diagram.svg" alt="Diagram: 16.2.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-diagram.svg" alt="Diagram: 16.2.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-sticky.svg" alt="Sticky Note: 16.2.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-3-complexity-analysis-sticky.svg" alt="Sticky Note: 16.2.3 Complexity Analysis" width="30%">
 </a>
 
 
@@ -473,14 +473,14 @@ Stack Underflow: cannot pop from empty stack
 
 ### 16.2.4 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-handwritten.svg" alt="Handwritten: 16.2.4 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-handwritten.svg" alt="Handwritten: 16.2.4 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-diagram.svg" alt="Diagram: 16.2.4 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-diagram.svg" alt="Diagram: 16.2.4 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-sticky.svg" alt="Sticky Note: 16.2.4 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-2-4-advantages-disadvantages-sticky.svg" alt="Sticky Note: 16.2.4 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -499,14 +499,14 @@ Stack Underflow: cannot pop from empty stack
 
 ### 16.3.0 Analogy → Growing Tower of Blocks
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-handwritten.svg" alt="Handwritten: 16.3.0 Analogy → Growing Tower of Blocks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-handwritten.svg" alt="Handwritten: 16.3.0 Analogy → Growing Tower of Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-diagram.svg" alt="Diagram: 16.3.0 Analogy → Growing Tower of Blocks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-diagram.svg" alt="Diagram: 16.3.0 Analogy → Growing Tower of Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-sticky.svg" alt="Sticky Note: 16.3.0 Analogy → Growing Tower of Blocks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-0-analogy-growing-tower-of-blocks-sticky.svg" alt="Sticky Note: 16.3.0 Analogy → Growing Tower of Blocks" width="30%">
 </a>
 
 
@@ -514,14 +514,14 @@ You stack blocks one on top of another. Each new block sits on top of the previo
 
 ### 16.3.1 Structure Definition
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-handwritten.svg" alt="Handwritten: 16.3.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-handwritten.svg" alt="Handwritten: 16.3.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-diagram.svg" alt="Diagram: 16.3.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-diagram.svg" alt="Diagram: 16.3.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-sticky.svg" alt="Sticky Note: 16.3.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-1-structure-definition-sticky.svg" alt="Sticky Note: 16.3.1 Structure Definition" width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ Stack
 
 ### 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-handwritten.svg" alt="Handwritten: 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-handwritten.svg" alt="Handwritten: 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-diagram.svg" alt="Diagram: 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-diagram.svg" alt="Diagram: 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-sticky.svg" alt="Sticky Note: 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-2-c-code-linked-list-based-stack-full-implementation-sticky.svg" alt="Sticky Note: 16.3.2 C Code → Linked-List-Based Stack (Full Implementation)" width="30%">
 </a>
 
 
@@ -722,14 +722,14 @@ Size after emptying: 0
 
 ### 16.3.3 Dry Run → Linked-List Stack Trace
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-handwritten.svg" alt="Handwritten: 16.3.3 Dry Run → Linked-List Stack Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-handwritten.svg" alt="Handwritten: 16.3.3 Dry Run → Linked-List Stack Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-diagram.svg" alt="Diagram: 16.3.3 Dry Run → Linked-List Stack Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-diagram.svg" alt="Diagram: 16.3.3 Dry Run → Linked-List Stack Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-sticky.svg" alt="Sticky Note: 16.3.3 Dry Run → Linked-List Stack Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-3-dry-run-linked-list-stack-trace-sticky.svg" alt="Sticky Note: 16.3.3 Dry Run → Linked-List Stack Trace" width="30%">
 </a>
 
 
@@ -744,14 +744,14 @@ Size after emptying: 0
 
 ### 16.3.4 Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-handwritten.svg" alt="Handwritten: 16.3.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-handwritten.svg" alt="Handwritten: 16.3.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-diagram.svg" alt="Diagram: 16.3.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-diagram.svg" alt="Diagram: 16.3.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-sticky.svg" alt="Sticky Note: 16.3.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-4-complexity-analysis-sticky.svg" alt="Sticky Note: 16.3.4 Complexity Analysis" width="30%">
 </a>
 
 
@@ -768,14 +768,14 @@ Size after emptying: 0
 
 ### 16.3.5 Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 16.3.5 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 16.3.5 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-diagram.svg" alt="Diagram: 16.3.5 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-diagram.svg" alt="Diagram: 16.3.5 Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 16.3.5 Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 16.3.5 Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -790,14 +790,14 @@ Size after emptying: 0
 
 ### 16.3.6 Edge Cases → Linked Stack
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-handwritten.svg" alt="Handwritten: 16.3.6 Edge Cases → Linked Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-handwritten.svg" alt="Handwritten: 16.3.6 Edge Cases → Linked Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-diagram.svg" alt="Diagram: 16.3.6 Edge Cases → Linked Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-diagram.svg" alt="Diagram: 16.3.6 Edge Cases → Linked Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-sticky.svg" alt="Sticky Note: 16.3.6 Edge Cases → Linked Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-3-6-edge-cases-linked-stack-sticky.svg" alt="Sticky Note: 16.3.6 Edge Cases → Linked Stack" width="30%">
 </a>
 
 
@@ -826,14 +826,14 @@ Size after emptying: 0
 
 ### 16.5.1 Balanced Parentheses
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-handwritten.svg" alt="Handwritten: 16.5.1 Balanced Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-handwritten.svg" alt="Handwritten: 16.5.1 Balanced Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-diagram.svg" alt="Diagram: 16.5.1 Balanced Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-diagram.svg" alt="Diagram: 16.5.1 Balanced Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-sticky.svg" alt="Sticky Note: 16.5.1 Balanced Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-1-balanced-parentheses-sticky.svg" alt="Sticky Note: 16.5.1 Balanced Parentheses" width="30%">
 </a>
 
 
@@ -998,14 +998,14 @@ Expression   Result
 
 ### 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-handwritten.svg" alt="Handwritten: 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-handwritten.svg" alt="Handwritten: 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-diagram.svg" alt="Diagram: 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-diagram.svg" alt="Diagram: 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-sticky.svg" alt="Sticky Note: 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-2-infix-to-postfix-conversion-shunting-yard-algorithm-sticky.svg" alt="Sticky Note: 16.5.2 Infix to Postfix Conversion (Shunting-Yard Algorithm)" width="30%">
 </a>
 
 
@@ -1198,14 +1198,14 @@ A+B-C*D/E            AB+CD*E/-
 
 ### 16.5.3 Postfix Expression Evaluation
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-handwritten.svg" alt="Handwritten: 16.5.3 Postfix Expression Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-handwritten.svg" alt="Handwritten: 16.5.3 Postfix Expression Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-diagram.svg" alt="Diagram: 16.5.3 Postfix Expression Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-diagram.svg" alt="Diagram: 16.5.3 Postfix Expression Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-sticky.svg" alt="Sticky Note: 16.5.3 Postfix Expression Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-3-postfix-expression-evaluation-sticky.svg" alt="Sticky Note: 16.5.3 Postfix Expression Evaluation" width="30%">
 </a>
 
 
@@ -1337,14 +1337,14 @@ Postfix      Equivalent Infix      Result
 
 ### 16.5.4 Additional Stack Applications
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-handwritten.svg" alt="Handwritten: 16.5.4 Additional Stack Applications" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-handwritten.svg" alt="Handwritten: 16.5.4 Additional Stack Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-diagram.svg" alt="Diagram: 16.5.4 Additional Stack Applications" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-diagram.svg" alt="Diagram: 16.5.4 Additional Stack Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-sticky.svg" alt="Sticky Note: 16.5.4 Additional Stack Applications" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-4-additional-stack-applications-sticky.svg" alt="Sticky Note: 16.5.4 Additional Stack Applications" width="30%">
 </a>
 
 
@@ -1361,14 +1361,14 @@ Postfix      Equivalent Infix      Result
 
 ### 16.5.5 Infix to Postfix → Additional Notes
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-handwritten.svg" alt="Handwritten: 16.5.5 Infix to Postfix → Additional Notes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-handwritten.svg" alt="Handwritten: 16.5.5 Infix to Postfix → Additional Notes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-diagram.svg" alt="Diagram: 16.5.5 Infix to Postfix → Additional Notes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-diagram.svg" alt="Diagram: 16.5.5 Infix to Postfix → Additional Notes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-sticky.svg" alt="Sticky Note: 16.5.5 Infix to Postfix → Additional Notes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-5-5-infix-to-postfix-additional-notes-sticky.svg" alt="Sticky Note: 16.5.5 Infix to Postfix → Additional Notes" width="30%">
 </a>
 
 
@@ -1386,14 +1386,14 @@ Change `>=` to `>` for right-associative operators.
 
 ### 16.6.0 Real-World Analogy → A Waiting Line
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-handwritten.svg" alt="Handwritten: 16.6.0 Real-World Analogy → A Waiting Line" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-handwritten.svg" alt="Handwritten: 16.6.0 Real-World Analogy → A Waiting Line" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-diagram.svg" alt="Diagram: 16.6.0 Real-World Analogy → A Waiting Line" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-diagram.svg" alt="Diagram: 16.6.0 Real-World Analogy → A Waiting Line" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-sticky.svg" alt="Sticky Note: 16.6.0 Real-World Analogy → A Waiting Line" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-0-real-world-analogy-a-waiting-line-sticky.svg" alt="Sticky Note: 16.6.0 Real-World Analogy → A Waiting Line" width="30%">
 </a>
 
 
@@ -1415,14 +1415,14 @@ The first person in line is served first. This is **First-In, First-Out (FIFO)**
 
 ### 16.6.1 The Queue ADT → Formal Definition
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-handwritten.svg" alt="Handwritten: 16.6.1 The Queue ADT → Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-handwritten.svg" alt="Handwritten: 16.6.1 The Queue ADT → Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-diagram.svg" alt="Diagram: 16.6.1 The Queue ADT → Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-diagram.svg" alt="Diagram: 16.6.1 The Queue ADT → Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-sticky.svg" alt="Sticky Note: 16.6.1 The Queue ADT → Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-1-the-queue-adt-formal-definition-sticky.svg" alt="Sticky Note: 16.6.1 The Queue ADT → Formal Definition" width="30%">
 </a>
 
 
@@ -1438,14 +1438,14 @@ The first person in line is served first. This is **First-In, First-Out (FIFO)**
 
 ### 16.6.2 The Problem with Linear Array Queues
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-handwritten.svg" alt="Handwritten: 16.6.2 The Problem with Linear Array Queues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-handwritten.svg" alt="Handwritten: 16.6.2 The Problem with Linear Array Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-diagram.svg" alt="Diagram: 16.6.2 The Problem with Linear Array Queues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-diagram.svg" alt="Diagram: 16.6.2 The Problem with Linear Array Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-sticky.svg" alt="Sticky Note: 16.6.2 The Problem with Linear Array Queues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-6-2-the-problem-with-linear-array-queues-sticky.svg" alt="Sticky Note: 16.6.2 The Problem with Linear Array Queues" width="30%">
 </a>
 
 
@@ -1471,14 +1471,14 @@ After 3 dequeues:     [0:_] [1:_] [2:_] [3:d] [4:e]   front=3, rear=4
 
 ### 16.7.0 Analogy → Round Robin Carousel
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-handwritten.svg" alt="Handwritten: 16.7.0 Analogy → Round Robin Carousel" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-handwritten.svg" alt="Handwritten: 16.7.0 Analogy → Round Robin Carousel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-diagram.svg" alt="Diagram: 16.7.0 Analogy → Round Robin Carousel" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-diagram.svg" alt="Diagram: 16.7.0 Analogy → Round Robin Carousel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-sticky.svg" alt="Sticky Note: 16.7.0 Analogy → Round Robin Carousel" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-0-analogy-round-robin-carousel-sticky.svg" alt="Sticky Note: 16.7.0 Analogy → Round Robin Carousel" width="30%">
 </a>
 
 
@@ -1486,14 +1486,14 @@ Think of a circular sushi bar or a round carousel with N numbered plates. A chef
 
 ### 16.7.1 Structure Definition
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-handwritten.svg" alt="Handwritten: 16.7.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-handwritten.svg" alt="Handwritten: 16.7.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-diagram.svg" alt="Diagram: 16.7.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-diagram.svg" alt="Diagram: 16.7.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-sticky.svg" alt="Sticky Note: 16.7.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-1-structure-definition-sticky.svg" alt="Sticky Note: 16.7.1 Structure Definition" width="30%">
 </a>
 
 
@@ -1511,14 +1511,14 @@ typedef struct {
 
 ### 16.7.2 Numbered Steps → Circular Queue Enqueue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-handwritten.svg" alt="Handwritten: 16.7.2 Numbered Steps → Circular Queue Enqueue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-handwritten.svg" alt="Handwritten: 16.7.2 Numbered Steps → Circular Queue Enqueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-diagram.svg" alt="Diagram: 16.7.2 Numbered Steps → Circular Queue Enqueue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-diagram.svg" alt="Diagram: 16.7.2 Numbered Steps → Circular Queue Enqueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-sticky.svg" alt="Sticky Note: 16.7.2 Numbered Steps → Circular Queue Enqueue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-2-numbered-steps-circular-queue-enqueue-sticky.svg" alt="Sticky Note: 16.7.2 Numbered Steps → Circular Queue Enqueue" width="30%">
 </a>
 
 
@@ -1542,14 +1542,14 @@ END ALGORITHM
 
 ### 16.7.3 Numbered Steps → Circular Queue Dequeue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-handwritten.svg" alt="Handwritten: 16.7.3 Numbered Steps → Circular Queue Dequeue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-handwritten.svg" alt="Handwritten: 16.7.3 Numbered Steps → Circular Queue Dequeue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-diagram.svg" alt="Diagram: 16.7.3 Numbered Steps → Circular Queue Dequeue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-diagram.svg" alt="Diagram: 16.7.3 Numbered Steps → Circular Queue Dequeue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-sticky.svg" alt="Sticky Note: 16.7.3 Numbered Steps → Circular Queue Dequeue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-3-numbered-steps-circular-queue-dequeue-sticky.svg" alt="Sticky Note: 16.7.3 Numbered Steps → Circular Queue Dequeue" width="30%">
 </a>
 
 
@@ -1574,14 +1574,14 @@ END ALGORITHM
 
 ### 16.7.4 Dry Run → Circular Queue Trace
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-handwritten.svg" alt="Handwritten: 16.7.4 Dry Run → Circular Queue Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-handwritten.svg" alt="Handwritten: 16.7.4 Dry Run → Circular Queue Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-diagram.svg" alt="Diagram: 16.7.4 Dry Run → Circular Queue Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-diagram.svg" alt="Diagram: 16.7.4 Dry Run → Circular Queue Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-sticky.svg" alt="Sticky Note: 16.7.4 Dry Run → Circular Queue Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-4-dry-run-circular-queue-trace-sticky.svg" alt="Sticky Note: 16.7.4 Dry Run → Circular Queue Trace" width="30%">
 </a>
 
 
@@ -1611,14 +1611,14 @@ Initial: `capacity = 5`, `front = 0`, `rear = -1`, `size = 0`.
 
 ### 16.7.5 C Code → Circular Queue (Full Implementation)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-handwritten.svg" alt="Handwritten: 16.7.5 C Code → Circular Queue (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-handwritten.svg" alt="Handwritten: 16.7.5 C Code → Circular Queue (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-diagram.svg" alt="Diagram: 16.7.5 C Code → Circular Queue (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-diagram.svg" alt="Diagram: 16.7.5 C Code → Circular Queue (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-sticky.svg" alt="Sticky Note: 16.7.5 C Code → Circular Queue (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-5-c-code-circular-queue-full-implementation-sticky.svg" alt="Sticky Note: 16.7.5 C Code → Circular Queue (Full Implementation)" width="30%">
 </a>
 
 
@@ -1806,14 +1806,14 @@ Queue Underflow: cannot dequeue
 
 ### 16.7.6 Complexity Analysis → Circular Queue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-handwritten.svg" alt="Handwritten: 16.7.6 Complexity Analysis → Circular Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-handwritten.svg" alt="Handwritten: 16.7.6 Complexity Analysis → Circular Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-diagram.svg" alt="Diagram: 16.7.6 Complexity Analysis → Circular Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-diagram.svg" alt="Diagram: 16.7.6 Complexity Analysis → Circular Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-sticky.svg" alt="Sticky Note: 16.7.6 Complexity Analysis → Circular Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-6-complexity-analysis-circular-queue-sticky.svg" alt="Sticky Note: 16.7.6 Complexity Analysis → Circular Queue" width="30%">
 </a>
 
 
@@ -1828,14 +1828,14 @@ Queue Underflow: cannot dequeue
 
 ### 16.7.7 Advantages & Disadvantages of Circular Array Queue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-handwritten.svg" alt="Handwritten: 16.7.7 Advantages & Disadvantages of Circular Array Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-handwritten.svg" alt="Handwritten: 16.7.7 Advantages & Disadvantages of Circular Array Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-diagram.svg" alt="Diagram: 16.7.7 Advantages & Disadvantages of Circular Array Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-diagram.svg" alt="Diagram: 16.7.7 Advantages & Disadvantages of Circular Array Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-sticky.svg" alt="Sticky Note: 16.7.7 Advantages & Disadvantages of Circular Array Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-7-advantages-disadvantages-of-circular-array-queue-sticky.svg" alt="Sticky Note: 16.7.7 Advantages & Disadvantages of Circular Array Queue" width="30%">
 </a>
 
 
@@ -1850,14 +1850,14 @@ Queue Underflow: cannot dequeue
 
 ### 16.7.8 Circular Queue Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-handwritten.svg" alt="Handwritten: 16.7.8 Circular Queue Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-handwritten.svg" alt="Handwritten: 16.7.8 Circular Queue Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-diagram.svg" alt="Diagram: 16.7.8 Circular Queue Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-diagram.svg" alt="Diagram: 16.7.8 Circular Queue Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-sticky.svg" alt="Sticky Note: 16.7.8 Circular Queue Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-7-8-circular-queue-edge-cases-sticky.svg" alt="Sticky Note: 16.7.8 Circular Queue Edge Cases" width="30%">
 </a>
 
 
@@ -1875,14 +1875,14 @@ Queue Underflow: cannot dequeue
 
 ### 16.8.0 Analogy → Conveyor Belt
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-handwritten.svg" alt="Handwritten: 16.8.0 Analogy → Conveyor Belt" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-handwritten.svg" alt="Handwritten: 16.8.0 Analogy → Conveyor Belt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-diagram.svg" alt="Diagram: 16.8.0 Analogy → Conveyor Belt" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-diagram.svg" alt="Diagram: 16.8.0 Analogy → Conveyor Belt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-sticky.svg" alt="Sticky Note: 16.8.0 Analogy → Conveyor Belt" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-0-analogy-conveyor-belt-sticky.svg" alt="Sticky Note: 16.8.0 Analogy → Conveyor Belt" width="30%">
 </a>
 
 
@@ -1890,14 +1890,14 @@ Items move along a conveyor belt. New items are placed at the start of the belt;
 
 ### 16.8.1 Structure Definition
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-handwritten.svg" alt="Handwritten: 16.8.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-handwritten.svg" alt="Handwritten: 16.8.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-diagram.svg" alt="Diagram: 16.8.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-diagram.svg" alt="Diagram: 16.8.1 Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-sticky.svg" alt="Sticky Note: 16.8.1 Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-1-structure-definition-sticky.svg" alt="Sticky Note: 16.8.1 Structure Definition" width="30%">
 </a>
 
 
@@ -1926,14 +1926,14 @@ Queue
 
 ### 16.8.2 Numbered Steps → Linked-List Queue Enqueue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-handwritten.svg" alt="Handwritten: 16.8.2 Numbered Steps → Linked-List Queue Enqueue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-handwritten.svg" alt="Handwritten: 16.8.2 Numbered Steps → Linked-List Queue Enqueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-diagram.svg" alt="Diagram: 16.8.2 Numbered Steps → Linked-List Queue Enqueue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-diagram.svg" alt="Diagram: 16.8.2 Numbered Steps → Linked-List Queue Enqueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-sticky.svg" alt="Sticky Note: 16.8.2 Numbered Steps → Linked-List Queue Enqueue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-2-numbered-steps-linked-list-queue-enqueue-sticky.svg" alt="Sticky Note: 16.8.2 Numbered Steps → Linked-List Queue Enqueue" width="30%">
 </a>
 
 
@@ -1960,14 +1960,14 @@ END ALGORITHM
 
 ### 16.8.3 Numbered Steps → Linked-List Queue Dequeue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-handwritten.svg" alt="Handwritten: 16.8.3 Numbered Steps → Linked-List Queue Dequeue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-handwritten.svg" alt="Handwritten: 16.8.3 Numbered Steps → Linked-List Queue Dequeue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-diagram.svg" alt="Diagram: 16.8.3 Numbered Steps → Linked-List Queue Dequeue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-diagram.svg" alt="Diagram: 16.8.3 Numbered Steps → Linked-List Queue Dequeue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-sticky.svg" alt="Sticky Note: 16.8.3 Numbered Steps → Linked-List Queue Dequeue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-3-numbered-steps-linked-list-queue-dequeue-sticky.svg" alt="Sticky Note: 16.8.3 Numbered Steps → Linked-List Queue Dequeue" width="30%">
 </a>
 
 
@@ -1996,14 +1996,14 @@ END ALGORITHM
 
 ### 16.8.4 C Code → Linked-List Queue (Full Implementation)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-handwritten.svg" alt="Handwritten: 16.8.4 C Code → Linked-List Queue (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-handwritten.svg" alt="Handwritten: 16.8.4 C Code → Linked-List Queue (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-diagram.svg" alt="Diagram: 16.8.4 C Code → Linked-List Queue (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-diagram.svg" alt="Diagram: 16.8.4 C Code → Linked-List Queue (Full Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-sticky.svg" alt="Sticky Note: 16.8.4 C Code → Linked-List Queue (Full Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-4-c-code-linked-list-queue-full-implementation-sticky.svg" alt="Sticky Note: 16.8.4 C Code → Linked-List Queue (Full Implementation)" width="30%">
 </a>
 
 
@@ -2185,14 +2185,14 @@ Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 
 ### 16.8.5 Dry Run → Linked-List Queue Trace
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-handwritten.svg" alt="Handwritten: 16.8.5 Dry Run → Linked-List Queue Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-handwritten.svg" alt="Handwritten: 16.8.5 Dry Run → Linked-List Queue Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-diagram.svg" alt="Diagram: 16.8.5 Dry Run → Linked-List Queue Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-diagram.svg" alt="Diagram: 16.8.5 Dry Run → Linked-List Queue Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-sticky.svg" alt="Sticky Note: 16.8.5 Dry Run → Linked-List Queue Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-5-dry-run-linked-list-queue-trace-sticky.svg" alt="Sticky Note: 16.8.5 Dry Run → Linked-List Queue Trace" width="30%">
 </a>
 
 
@@ -2207,14 +2207,14 @@ Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 
 ### 16.8.6 Complexity Analysis → Linked-List Queue
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-handwritten.svg" alt="Handwritten: 16.8.6 Complexity Analysis → Linked-List Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-handwritten.svg" alt="Handwritten: 16.8.6 Complexity Analysis → Linked-List Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-diagram.svg" alt="Diagram: 16.8.6 Complexity Analysis → Linked-List Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-diagram.svg" alt="Diagram: 16.8.6 Complexity Analysis → Linked-List Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-sticky.svg" alt="Sticky Note: 16.8.6 Complexity Analysis → Linked-List Queue" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-6-complexity-analysis-linked-list-queue-sticky.svg" alt="Sticky Note: 16.8.6 Complexity Analysis → Linked-List Queue" width="30%">
 </a>
 
 
@@ -2229,14 +2229,14 @@ Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 
 ### 16.8.7 Linked-List Queue → Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-handwritten.svg" alt="Handwritten: 16.8.7 Linked-List Queue → Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-handwritten.svg" alt="Handwritten: 16.8.7 Linked-List Queue → Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-diagram.svg" alt="Diagram: 16.8.7 Linked-List Queue → Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-diagram.svg" alt="Diagram: 16.8.7 Linked-List Queue → Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-sticky.svg" alt="Sticky Note: 16.8.7 Linked-List Queue → Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-8-7-linked-list-queue-edge-cases-sticky.svg" alt="Sticky Note: 16.8.7 Linked-List Queue → Edge Cases" width="30%">
 </a>
 
 
@@ -2268,14 +2268,14 @@ Dequeued: 50  Queue [front -> ... -> rear]:   (size=0)
 
 ### 16.10.0 Overview
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-handwritten.svg" alt="Handwritten: 16.10.0 Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-handwritten.svg" alt="Handwritten: 16.10.0 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-diagram.svg" alt="Diagram: 16.10.0 Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-diagram.svg" alt="Diagram: 16.10.0 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-sticky.svg" alt="Sticky Note: 16.10.0 Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-0-overview-sticky.svg" alt="Sticky Note: 16.10.0 Overview" width="30%">
 </a>
 
 
@@ -2283,14 +2283,14 @@ A **deque** (pronounced "deck") allows insertion and deletion at **both** ends �
 
 ### 16.10.1 Operations
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-handwritten.svg" alt="Handwritten: 16.10.1 Operations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-handwritten.svg" alt="Handwritten: 16.10.1 Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-diagram.svg" alt="Diagram: 16.10.1 Operations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-diagram.svg" alt="Diagram: 16.10.1 Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-sticky.svg" alt="Sticky Note: 16.10.1 Operations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-1-operations-sticky.svg" alt="Sticky Note: 16.10.1 Operations" width="30%">
 </a>
 
 
@@ -2305,14 +2305,14 @@ A **deque** (pronounced "deck") allows insertion and deletion at **both** ends �
 
 ### 16.10.2 C Code → Deque Using Doubly Linked List
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-handwritten.svg" alt="Handwritten: 16.10.2 C Code → Deque Using Doubly Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-handwritten.svg" alt="Handwritten: 16.10.2 C Code → Deque Using Doubly Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-diagram.svg" alt="Diagram: 16.10.2 C Code → Deque Using Doubly Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-diagram.svg" alt="Diagram: 16.10.2 C Code → Deque Using Doubly Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-sticky.svg" alt="Sticky Note: 16.10.2 C Code → Deque Using Doubly Linked List" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-10-2-c-code-deque-using-doubly-linked-list-sticky.svg" alt="Sticky Note: 16.10.2 C Code → Deque Using Doubly Linked List" width="30%">
 </a>
 
 
@@ -2477,14 +2477,14 @@ Deque [front ... rear]: 10 20   (size=2)
 
 ### 16.11.0 Overview
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-handwritten.svg" alt="Handwritten: 16.11.0 Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-handwritten.svg" alt="Handwritten: 16.11.0 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-diagram.svg" alt="Diagram: 16.11.0 Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-diagram.svg" alt="Diagram: 16.11.0 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-sticky.svg" alt="Sticky Note: 16.11.0 Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-0-overview-sticky.svg" alt="Sticky Note: 16.11.0 Overview" width="30%">
 </a>
 
 
@@ -2492,14 +2492,14 @@ A priority queue processes elements by **priority** (highest first), not inserti
 
 ### 16.11.1 Operations
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-handwritten.svg" alt="Handwritten: 16.11.1 Operations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-handwritten.svg" alt="Handwritten: 16.11.1 Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-diagram.svg" alt="Diagram: 16.11.1 Operations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-diagram.svg" alt="Diagram: 16.11.1 Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-sticky.svg" alt="Sticky Note: 16.11.1 Operations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-1-operations-sticky.svg" alt="Sticky Note: 16.11.1 Operations" width="30%">
 </a>
 
 
@@ -2513,14 +2513,14 @@ Priority queues are used in Dijkstra's shortest path, Huffman coding, OS task sc
 
 ### 16.11.2 C Code → Simple Unsorted Priority Queue (Array)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-handwritten.svg" alt="Handwritten: 16.11.2 C Code → Simple Unsorted Priority Queue (Array)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-handwritten.svg" alt="Handwritten: 16.11.2 C Code → Simple Unsorted Priority Queue (Array)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-diagram.svg" alt="Diagram: 16.11.2 C Code → Simple Unsorted Priority Queue (Array)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-diagram.svg" alt="Diagram: 16.11.2 C Code → Simple Unsorted Priority Queue (Array)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-sticky.svg" alt="Sticky Note: 16.11.2 C Code → Simple Unsorted Priority Queue (Array)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-11-2-c-code-simple-unsorted-priority-queue-array-sticky.svg" alt="Sticky Note: 16.11.2 C Code → Simple Unsorted Priority Queue (Array)" width="30%">
 </a>
 
 
@@ -2632,14 +2632,14 @@ Dequeue order: 200 300 100
 
 ### When to Use Which
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
 </a>
 
 
@@ -2659,14 +2659,14 @@ Dequeue order: 200 300 100
 
 ### 16.13.1 Breadth-First Search (BFS)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-handwritten.svg" alt="Handwritten: 16.13.1 Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-handwritten.svg" alt="Handwritten: 16.13.1 Breadth-First Search (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-diagram.svg" alt="Diagram: 16.13.1 Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-diagram.svg" alt="Diagram: 16.13.1 Breadth-First Search (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-sticky.svg" alt="Sticky Note: 16.13.1 Breadth-First Search (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-1-breadth-first-search-bfs-sticky.svg" alt="Sticky Note: 16.13.1 Breadth-First Search (BFS)" width="30%">
 </a>
 
 
@@ -2689,14 +2689,14 @@ Algorithm BFS(graph, start):
 
 ### 16.13.2 Print Spooling
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-handwritten.svg" alt="Handwritten: 16.13.2 Print Spooling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-handwritten.svg" alt="Handwritten: 16.13.2 Print Spooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-diagram.svg" alt="Diagram: 16.13.2 Print Spooling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-diagram.svg" alt="Diagram: 16.13.2 Print Spooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-sticky.svg" alt="Sticky Note: 16.13.2 Print Spooling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-2-print-spooling-sticky.svg" alt="Sticky Note: 16.13.2 Print Spooling" width="30%">
 </a>
 
 
@@ -2710,14 +2710,14 @@ Printer Queue:
 
 ### 16.13.3 CPU Scheduling (Round Robin)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-handwritten.svg" alt="Handwritten: 16.13.3 CPU Scheduling (Round Robin)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-handwritten.svg" alt="Handwritten: 16.13.3 CPU Scheduling (Round Robin)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-diagram.svg" alt="Diagram: 16.13.3 CPU Scheduling (Round Robin)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-diagram.svg" alt="Diagram: 16.13.3 CPU Scheduling (Round Robin)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-sticky.svg" alt="Sticky Note: 16.13.3 CPU Scheduling (Round Robin)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-3-cpu-scheduling-round-robin-sticky.svg" alt="Sticky Note: 16.13.3 CPU Scheduling (Round Robin)" width="30%">
 </a>
 
 
@@ -2732,14 +2732,14 @@ P1 runs 10ms → if unfinished, re-enqueue at rear
 
 ### 16.13.4 IO Buffering
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-handwritten.svg" alt="Handwritten: 16.13.4 IO Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-handwritten.svg" alt="Handwritten: 16.13.4 IO Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-diagram.svg" alt="Diagram: 16.13.4 IO Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-diagram.svg" alt="Diagram: 16.13.4 IO Buffering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-sticky.svg" alt="Sticky Note: 16.13.4 IO Buffering" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-4-io-buffering-sticky.svg" alt="Sticky Note: 16.13.4 IO Buffering" width="30%">
 </a>
 
 
@@ -2747,14 +2747,14 @@ Keyboard input is buffered in a queue. Characters typed faster than the program 
 
 ### 16.13.5 Sliding Window Maximum (Using Deque)
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-handwritten.svg" alt="Handwritten: 16.13.5 Sliding Window Maximum (Using Deque)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-handwritten.svg" alt="Handwritten: 16.13.5 Sliding Window Maximum (Using Deque)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-diagram.svg" alt="Diagram: 16.13.5 Sliding Window Maximum (Using Deque)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-diagram.svg" alt="Diagram: 16.13.5 Sliding Window Maximum (Using Deque)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-sticky.svg" alt="Sticky Note: 16.13.5 Sliding Window Maximum (Using Deque)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-13-5-sliding-window-maximum-using-deque-sticky.svg" alt="Sticky Note: 16.13.5 Sliding Window Maximum (Using Deque)" width="30%">
 </a>
 
 
@@ -2836,14 +2836,14 @@ These problems are frequently asked in coding interviews at companies like Googl
 
 ### 16.15.1 Implement a Queue Using Two Stacks
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-handwritten.svg" alt="Handwritten: 16.15.1 Implement a Queue Using Two Stacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-handwritten.svg" alt="Handwritten: 16.15.1 Implement a Queue Using Two Stacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-diagram.svg" alt="Diagram: 16.15.1 Implement a Queue Using Two Stacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-diagram.svg" alt="Diagram: 16.15.1 Implement a Queue Using Two Stacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-sticky.svg" alt="Sticky Note: 16.15.1 Implement a Queue Using Two Stacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-1-implement-a-queue-using-two-stacks-sticky.svg" alt="Sticky Note: 16.15.1 Implement a Queue Using Two Stacks" width="30%">
 </a>
 
 
@@ -2963,14 +2963,14 @@ Dequeue all: 30 40 50
 
 ### 16.15.2 Implement a Stack Using Two Queues
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-handwritten.svg" alt="Handwritten: 16.15.2 Implement a Stack Using Two Queues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-handwritten.svg" alt="Handwritten: 16.15.2 Implement a Stack Using Two Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-diagram.svg" alt="Diagram: 16.15.2 Implement a Stack Using Two Queues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-diagram.svg" alt="Diagram: 16.15.2 Implement a Stack Using Two Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-sticky.svg" alt="Sticky Note: 16.15.2 Implement a Stack Using Two Queues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-2-implement-a-stack-using-two-queues-sticky.svg" alt="Sticky Note: 16.15.2 Implement a Stack Using Two Queues" width="30%">
 </a>
 
 
@@ -3117,14 +3117,14 @@ Pop: 10
 
 ### 16.15.3 Circular Buffer Advantages
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-handwritten.svg" alt="Handwritten: 16.15.3 Circular Buffer Advantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-handwritten.svg" alt="Handwritten: 16.15.3 Circular Buffer Advantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-diagram.svg" alt="Diagram: 16.15.3 Circular Buffer Advantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-diagram.svg" alt="Diagram: 16.15.3 Circular Buffer Advantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-sticky.svg" alt="Sticky Note: 16.15.3 Circular Buffer Advantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-3-circular-buffer-advantages-sticky.svg" alt="Sticky Note: 16.15.3 Circular Buffer Advantages" width="30%">
 </a>
 
 
@@ -3139,14 +3139,14 @@ Pop: 10
 
 ### 16.15.4 Real-World Circular Buffer Uses
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-handwritten.svg" alt="Handwritten: 16.15.4 Real-World Circular Buffer Uses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-handwritten.svg" alt="Handwritten: 16.15.4 Real-World Circular Buffer Uses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-diagram.svg" alt="Diagram: 16.15.4 Real-World Circular Buffer Uses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-diagram.svg" alt="Diagram: 16.15.4 Real-World Circular Buffer Uses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-sticky.svg" alt="Sticky Note: 16.15.4 Real-World Circular Buffer Uses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-4-real-world-circular-buffer-uses-sticky.svg" alt="Sticky Note: 16.15.4 Real-World Circular Buffer Uses" width="30%">
 </a>
 
 
@@ -3160,14 +3160,14 @@ Pop: 10
 
 ### 16.15.5 Check for Palindrome Using Deque
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-handwritten.svg" alt="Handwritten: 16.15.5 Check for Palindrome Using Deque" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-handwritten.svg" alt="Handwritten: 16.15.5 Check for Palindrome Using Deque" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-diagram.svg" alt="Diagram: 16.15.5 Check for Palindrome Using Deque" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-diagram.svg" alt="Diagram: 16.15.5 Check for Palindrome Using Deque" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-sticky.svg" alt="Sticky Note: 16.15.5 Check for Palindrome Using Deque" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/16-15-5-check-for-palindrome-using-deque-sticky.svg" alt="Sticky Note: 16.15.5 Check for Palindrome Using Deque" width="30%">
 </a>
 
 
@@ -3375,14 +3375,14 @@ madam                          -> palindrome
 
 ### Challenge Problem: LRU Cache
 
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-handwritten.svg" alt="Handwritten: Challenge Problem: LRU Cache" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-handwritten.svg" alt="Handwritten: Challenge Problem: LRU Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-diagram.svg" alt="Diagram: Challenge Problem: LRU Cache" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-diagram.svg" alt="Diagram: Challenge Problem: LRU Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-sticky.svg" alt="Sticky Note: Challenge Problem: LRU Cache" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/16-stacks-queues/challenge-problem-lru-cache-sticky.svg" alt="Sticky Note: Challenge Problem: LRU Cache" width="30%">
 </a>
 
 

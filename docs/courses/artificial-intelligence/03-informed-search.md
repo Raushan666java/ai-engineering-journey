@@ -41,14 +41,14 @@ The GPS never tries every street — it uses **domain knowledge** (heuristics) t
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ flowchart TD
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ $$h(n) \approx \text{cost}(n \rightarrow \text{goal})$$
 
 ### Algorithm Steps — Designing a Heuristic
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-handwritten.svg" alt="Handwritten: Algorithm Steps — Designing a Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-handwritten.svg" alt="Handwritten: Algorithm Steps — Designing a Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-diagram.svg" alt="Diagram: Algorithm Steps — Designing a Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-diagram.svg" alt="Diagram: Algorithm Steps — Designing a Heuristic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-sticky.svg" alt="Sticky Note: Algorithm Steps — Designing a Heuristic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-designing-a-heuristic-sticky.svg" alt="Sticky Note: Algorithm Steps — Designing a Heuristic" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ $$h(n) \approx \text{cost}(n \rightarrow \text{goal})$$
 
 ### Pseudocode — Heuristic Function Template
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-handwritten.svg" alt="Handwritten: Pseudocode — Heuristic Function Template" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-handwritten.svg" alt="Handwritten: Pseudocode — Heuristic Function Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-diagram.svg" alt="Diagram: Pseudocode — Heuristic Function Template" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-diagram.svg" alt="Diagram: Pseudocode — Heuristic Function Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-sticky.svg" alt="Sticky Note: Pseudocode — Heuristic Function Template" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-heuristic-function-template-sticky.svg" alt="Sticky Note: Pseudocode — Heuristic Function Template" width="30%">
 </a>
 
 
@@ -139,14 +139,14 @@ function HEURISTIC(state, goal):
 
 ### Step-by-Step Dry Run — 8-Puzzle Heuristic Computation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-diagram.svg" alt="Diagram: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-diagram.svg" alt="Diagram: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-8-puzzle-heuristic-computation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — 8-Puzzle Heuristic Computation" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ Notice $h_2(n) \geq h_1(n)$: Manhattan distance **dominates** misplaced tiles (g
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Advantages & Disadvantages of Heuristic Functions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Heuristic Functions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Heuristic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-diagram.svg" alt="Diagram: Advantages & Disadvantages of Heuristic Functions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-diagram.svg" alt="Diagram: Advantages & Disadvantages of Heuristic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Heuristic Functions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-of-heuristic-functions-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Heuristic Functions" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ print("Manhattan distance (h2):", manhattan_distance(state, goal))  # 5
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -331,14 +331,14 @@ Greedy best-first search expands the node with the **lowest heuristic value** $h
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -355,14 +355,14 @@ Greedy best-first search expands the node with the **lowest heuristic value** $h
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -385,14 +385,14 @@ function GREEDY-BEST-FIRST-SEARCH(problem, h) returns solution or failure
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -437,14 +437,14 @@ Greedy found path S->B->E->G (cost = 2+3+2 = 7), but the **optimal** path is S->
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ print("Greedy path:", path)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -510,14 +510,14 @@ print("Greedy path:", path)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -530,14 +530,14 @@ print("Greedy path:", path)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -554,14 +554,14 @@ print("Greedy path:", path)
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -578,14 +578,14 @@ A* expands nodes in order of increasing $f$, making it both **complete** and **o
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -604,14 +604,14 @@ A* expands nodes in order of increasing $f$, making it both **complete** and **o
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -638,14 +638,14 @@ function A*-SEARCH(problem, h) returns solution or failure
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ All heuristics are admissible AND consistent (verified against triangle inequali
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -742,14 +742,14 @@ print("A* path:", path)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -765,14 +765,14 @@ print("A* path:", path)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -785,14 +785,14 @@ print("A* path:", path)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -807,14 +807,14 @@ print("A* path:", path)
 
 ### 3.3.1 Admissibility
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-handwritten.svg" alt="Handwritten: 3.3.1 Admissibility" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-handwritten.svg" alt="Handwritten: 3.3.1 Admissibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-diagram.svg" alt="Diagram: 3.3.1 Admissibility" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-diagram.svg" alt="Diagram: 3.3.1 Admissibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-sticky.svg" alt="Sticky Note: 3.3.1 Admissibility" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-1-admissibility-sticky.svg" alt="Sticky Note: 3.3.1 Admissibility" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@ where $h^*(n)$ is the true optimal cost from $n$ to the nearest goal. In other w
 
 ### 3.3.2 Consistency (Monotonicity)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-handwritten.svg" alt="Handwritten: 3.3.2 Consistency (Monotonicity)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-handwritten.svg" alt="Handwritten: 3.3.2 Consistency (Monotonicity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-diagram.svg" alt="Diagram: 3.3.2 Consistency (Monotonicity)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-diagram.svg" alt="Diagram: 3.3.2 Consistency (Monotonicity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-sticky.svg" alt="Sticky Note: 3.3.2 Consistency (Monotonicity)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-2-consistency-monotonicity-sticky.svg" alt="Sticky Note: 3.3.2 Consistency (Monotonicity)" width="30%">
 </a>
 
 
@@ -889,14 +889,14 @@ This means A* **never re-opens nodes** from the explored set — when a node is 
 
 ### 3.3.3 Optimality of A*
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-handwritten.svg" alt="Handwritten: 3.3.3 Optimality of A*" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-handwritten.svg" alt="Handwritten: 3.3.3 Optimality of A*" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-diagram.svg" alt="Diagram: 3.3.3 Optimality of A*" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-diagram.svg" alt="Diagram: 3.3.3 Optimality of A*" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-sticky.svg" alt="Sticky Note: 3.3.3 Optimality of A*" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/3-3-3-optimality-of-a-sticky.svg" alt="Sticky Note: 3.3.3 Optimality of A*" width="30%">
 </a>
 
 
@@ -928,14 +928,14 @@ Since A* expands nodes in order of increasing f, and the goal G has f(G) = C > C
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -943,14 +943,14 @@ IDA* combines iterative deepening depth-first search (IDDFS) with A*'s f-cost ev
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -964,14 +964,14 @@ IDA* combines iterative deepening depth-first search (IDDFS) with A*'s f-cost ev
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1000,14 +1000,14 @@ function DFS-CONTOUR(node, g, bound) returns (solution or cutoff, new_bound)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1041,14 +1041,14 @@ Min pruned f = 6. New bound = 6. No solution found in iteration 1.
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1085,14 +1085,14 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1107,14 +1107,14 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1127,14 +1127,14 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1150,14 +1150,14 @@ print("IDA* path:", path)   # S -> B -> F -> G
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1165,14 +1165,14 @@ RBFS performs a recursive depth-first search while tracking the **best alternati
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -1185,14 +1185,14 @@ RBFS performs a recursive depth-first search while tracking the **best alternati
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1215,14 +1215,14 @@ function RBFS(problem, node, f_limit) returns solution or failure
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1237,14 +1237,14 @@ Same graph and heuristic.
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1308,14 +1308,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1328,14 +1328,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1361,14 +1361,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Informedness and Dominance
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-handwritten.svg" alt="Handwritten: Informedness and Dominance" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-handwritten.svg" alt="Handwritten: Informedness and Dominance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-diagram.svg" alt="Diagram: Informedness and Dominance" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-diagram.svg" alt="Diagram: Informedness and Dominance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-sticky.svg" alt="Sticky Note: Informedness and Dominance" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/informedness-and-dominance-sticky.svg" alt="Sticky Note: Informedness and Dominance" width="30%">
 </a>
 
 
@@ -1400,14 +1400,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q1: What conditions guarantee A* is optimal?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-handwritten.svg" alt="Handwritten: What conditions guarantee A* is optimal?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-handwritten.svg" alt="Handwritten: What conditions guarantee A* is optimal?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-diagram.svg" alt="Diagram: What conditions guarantee A* is optimal?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-diagram.svg" alt="Diagram: What conditions guarantee A* is optimal?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-sticky.svg" alt="Sticky Note: What conditions guarantee A* is optimal?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-conditions-guarantee-a-is-optimal-sticky.svg" alt="Sticky Note: What conditions guarantee A* is optimal?" width="30%">
 </a>
 
 
@@ -1418,14 +1418,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q2: How do you design an admissible heuristic?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-handwritten.svg" alt="Handwritten: How do you design an admissible heuristic?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-handwritten.svg" alt="Handwritten: How do you design an admissible heuristic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-diagram.svg" alt="Diagram: How do you design an admissible heuristic?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-diagram.svg" alt="Diagram: How do you design an admissible heuristic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-sticky.svg" alt="Sticky Note: How do you design an admissible heuristic?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/how-do-you-design-an-admissible-heuristic-sticky.svg" alt="Sticky Note: How do you design an admissible heuristic?" width="30%">
 </a>
 
 
@@ -1441,14 +1441,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q3: Can an inadmissible heuristic ever be useful?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-handwritten.svg" alt="Handwritten: Can an inadmissible heuristic ever be useful?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-handwritten.svg" alt="Handwritten: Can an inadmissible heuristic ever be useful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-diagram.svg" alt="Diagram: Can an inadmissible heuristic ever be useful?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-diagram.svg" alt="Diagram: Can an inadmissible heuristic ever be useful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-sticky.svg" alt="Sticky Note: Can an inadmissible heuristic ever be useful?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/can-an-inadmissible-heuristic-ever-be-useful-sticky.svg" alt="Sticky Note: Can an inadmissible heuristic ever be useful?" width="30%">
 </a>
 
 
@@ -1456,14 +1456,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q4: Compare A*, IDA*, and RBFS.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-handwritten.svg" alt="Handwritten: Compare A*, IDA*, and RBFS." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-handwritten.svg" alt="Handwritten: Compare A*, IDA*, and RBFS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-diagram.svg" alt="Diagram: Compare A*, IDA*, and RBFS." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-diagram.svg" alt="Diagram: Compare A*, IDA*, and RBFS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-sticky.svg" alt="Sticky Note: Compare A*, IDA*, and RBFS." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/compare-a-ida-and-rbfs-sticky.svg" alt="Sticky Note: Compare A*, IDA*, and RBFS." width="30%">
 </a>
 
 
@@ -1477,14 +1477,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### Q5: What is the difference between tree search and graph search in A*?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-handwritten.svg" alt="Handwritten: What is the difference between tree search and graph search in A*?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-handwritten.svg" alt="Handwritten: What is the difference between tree search and graph search in A*?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-diagram.svg" alt="Diagram: What is the difference between tree search and graph search in A*?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-diagram.svg" alt="Diagram: What is the difference between tree search and graph search in A*?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-sticky.svg" alt="Sticky Note: What is the difference between tree search and graph search in A*?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/what-is-the-difference-between-tree-search-and-graph-search-in-a-sticky.svg" alt="Sticky Note: What is the difference between tree search and graph search in A*?" width="30%">
 </a>
 
 
@@ -1498,14 +1498,14 @@ print("RBFS path:", path)   # S -> B -> F -> G
 
 ### GPS Navigation (A*)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-handwritten.svg" alt="Handwritten: GPS Navigation (A*)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-handwritten.svg" alt="Handwritten: GPS Navigation (A*)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-diagram.svg" alt="Diagram: GPS Navigation (A*)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-diagram.svg" alt="Diagram: GPS Navigation (A*)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-sticky.svg" alt="Sticky Note: GPS Navigation (A*)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/gps-navigation-a-sticky.svg" alt="Sticky Note: GPS Navigation (A*)" width="30%">
 </a>
 
 
@@ -1519,14 +1519,14 @@ Modern GPS computes optimal routes across 50 million nodes in **milliseconds** �
 
 ### Video Game Pathfinding (A* on Navigation Meshes)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-handwritten.svg" alt="Handwritten: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-handwritten.svg" alt="Handwritten: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-diagram.svg" alt="Diagram: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-diagram.svg" alt="Diagram: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-sticky.svg" alt="Sticky Note: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/video-game-pathfinding-a-on-navigation-meshes-sticky.svg" alt="Sticky Note: Video Game Pathfinding (A* on Navigation Meshes)" width="30%">
 </a>
 
 
@@ -1538,14 +1538,14 @@ Popular game engines (Unreal Engine, Unity) use A* variants:
 
 ### Robotics (D* Lite)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-handwritten.svg" alt="Handwritten: Robotics (D* Lite)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-handwritten.svg" alt="Handwritten: Robotics (D* Lite)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-diagram.svg" alt="Diagram: Robotics (D* Lite)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-diagram.svg" alt="Diagram: Robotics (D* Lite)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-sticky.svg" alt="Sticky Note: Robotics (D* Lite)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/robotics-d-lite-sticky.svg" alt="Sticky Note: Robotics (D* Lite)" width="30%">
 </a>
 
 
@@ -1557,14 +1557,14 @@ Robots use **D* Lite** (A* variant with incremental replanning):
 
 ### Other Domains
 
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-handwritten.svg" alt="Handwritten: Other Domains" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-handwritten.svg" alt="Handwritten: Other Domains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-diagram.svg" alt="Diagram: Other Domains" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-diagram.svg" alt="Diagram: Other Domains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-sticky.svg" alt="Sticky Note: Other Domains" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/03-informed-search/other-domains-sticky.svg" alt="Sticky Note: Other Domains" width="30%">
 </a>
 
 

@@ -466,14 +466,14 @@ const counts = Object.values(stock);  // [5, 3, 10]
 
 ### Key Differences
 
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ const counts = Object.values(stock);  // [5, 3, 10]
 
 ### Dict Performance and Internals
 
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-handwritten.svg" alt="Handwritten: Dict Performance and Internals" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-handwritten.svg" alt="Handwritten: Dict Performance and Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-diagram.svg" alt="Diagram: Dict Performance and Internals" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-diagram.svg" alt="Diagram: Dict Performance and Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-sticky.svg" alt="Sticky Note: Dict Performance and Internals" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-performance-and-internals-sticky.svg" alt="Sticky Note: Dict Performance and Internals" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ print(f"Dict size: {sys.getsizeof(d)} bytes")  # ~41KB for 1000 items
 
 ### Real-World Dict Patterns
 
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-handwritten.svg" alt="Handwritten: Real-World Dict Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-handwritten.svg" alt="Handwritten: Real-World Dict Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-diagram.svg" alt="Diagram: Real-World Dict Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-diagram.svg" alt="Diagram: Real-World Dict Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-sticky.svg" alt="Sticky Note: Real-World Dict Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/real-world-dict-patterns-sticky.svg" alt="Sticky Note: Real-World Dict Patterns" width="30%">
 </a>
 
 
@@ -595,14 +595,14 @@ print(bfs(graph, "A"))  # ['A', 'B', 'C', 'D', 'E', 'F']
 
 ### Dict vs Other Data Structures
 
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-handwritten.svg" alt="Handwritten: Dict vs Other Data Structures" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-handwritten.svg" alt="Handwritten: Dict vs Other Data Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-diagram.svg" alt="Diagram: Dict vs Other Data Structures" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-diagram.svg" alt="Diagram: Dict vs Other Data Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-sticky.svg" alt="Sticky Note: Dict vs Other Data Structures" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/08-dictionaries/dict-vs-other-data-structures-sticky.svg" alt="Sticky Note: Dict vs Other Data Structures" width="30%">
 </a>
 
 

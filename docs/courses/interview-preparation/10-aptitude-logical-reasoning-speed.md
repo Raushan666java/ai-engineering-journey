@@ -13,14 +13,14 @@
 
 ### The Speed Mathematics Mindset
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-handwritten.svg" alt="Handwritten: The Speed Mathematics Mindset" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-handwritten.svg" alt="Handwritten: The Speed Mathematics Mindset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-diagram.svg" alt="Diagram: The Speed Mathematics Mindset" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-diagram.svg" alt="Diagram: The Speed Mathematics Mindset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-sticky.svg" alt="Sticky Note: The Speed Mathematics Mindset" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/the-speed-mathematics-mindset-sticky.svg" alt="Sticky Note: The Speed Mathematics Mindset" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@ flowchart TD
 
 ### Universal Shortcuts
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-handwritten.svg" alt="Handwritten: Universal Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-handwritten.svg" alt="Handwritten: Universal Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-diagram.svg" alt="Diagram: Universal Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-diagram.svg" alt="Diagram: Universal Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-sticky.svg" alt="Sticky Note: Universal Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/universal-shortcuts-sticky.svg" alt="Sticky Note: Universal Shortcuts" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ flowchart TD
 
 ### 1.1 Number Systems
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-handwritten.svg" alt="Handwritten: 1.1 Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-handwritten.svg" alt="Handwritten: 1.1 Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-diagram.svg" alt="Diagram: 1.1 Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-diagram.svg" alt="Diagram: 1.1 Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-sticky.svg" alt="Sticky Note: 1.1 Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-1-number-systems-sticky.svg" alt="Sticky Note: 1.1 Number Systems" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ function squareEndingIn5(n: number): number {
 
 ### 1.2 Percentage
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-handwritten.svg" alt="Handwritten: 1.2 Percentage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-handwritten.svg" alt="Handwritten: 1.2 Percentage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-diagram.svg" alt="Diagram: 1.2 Percentage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-diagram.svg" alt="Diagram: 1.2 Percentage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-sticky.svg" alt="Sticky Note: 1.2 Percentage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-2-percentage-sticky.svg" alt="Sticky Note: 1.2 Percentage" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ So net decrease of 4%
 
 ### 1.3 Profit, Loss, and Discount
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-handwritten.svg" alt="Handwritten: 1.3 Profit, Loss, and Discount" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-handwritten.svg" alt="Handwritten: 1.3 Profit, Loss, and Discount" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-diagram.svg" alt="Diagram: 1.3 Profit, Loss, and Discount" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-diagram.svg" alt="Diagram: 1.3 Profit, Loss, and Discount" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-sticky.svg" alt="Sticky Note: 1.3 Profit, Loss, and Discount" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-3-profit-loss-and-discount-sticky.svg" alt="Sticky Note: 1.3 Profit, Loss, and Discount" width="30%">
 </a>
 
 
@@ -205,14 +205,14 @@ Example: 20% + 10% discount = 20 + 10 - 200/100 = 28%
 
 ### 1.4 Simple and Compound Interest
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-handwritten.svg" alt="Handwritten: 1.4 Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-handwritten.svg" alt="Handwritten: 1.4 Simple and Compound Interest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-diagram.svg" alt="Diagram: 1.4 Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-diagram.svg" alt="Diagram: 1.4 Simple and Compound Interest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-sticky.svg" alt="Sticky Note: 1.4 Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-4-simple-and-compound-interest-sticky.svg" alt="Sticky Note: 1.4 Simple and Compound Interest" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ CI = 10000[0.01 + 0.20] = 10000 × 0.21 = ₹2,100
 
 ### 1.5 Time, Speed, and Distance
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-handwritten.svg" alt="Handwritten: 1.5 Time, Speed, and Distance" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-handwritten.svg" alt="Handwritten: 1.5 Time, Speed, and Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-diagram.svg" alt="Diagram: 1.5 Time, Speed, and Distance" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-diagram.svg" alt="Diagram: 1.5 Time, Speed, and Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-sticky.svg" alt="Sticky Note: 1.5 Time, Speed, and Distance" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-5-time-speed-and-distance-sticky.svg" alt="Sticky Note: 1.5 Time, Speed, and Distance" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ Avg = 2×60×40/(60+40) = 4800/100 = 48 km/h
 
 ### 1.6 Time and Work
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-handwritten.svg" alt="Handwritten: 1.6 Time and Work" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-handwritten.svg" alt="Handwritten: 1.6 Time and Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-diagram.svg" alt="Diagram: 1.6 Time and Work" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-diagram.svg" alt="Diagram: 1.6 Time and Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-sticky.svg" alt="Sticky Note: 1.6 Time and Work" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-6-time-and-work-sticky.svg" alt="Sticky Note: 1.6 Time and Work" width="30%">
 </a>
 
 
@@ -296,14 +296,14 @@ Time = 6 days
 
 ### 1.7 Ratio and Proportion
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-handwritten.svg" alt="Handwritten: 1.7 Ratio and Proportion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-handwritten.svg" alt="Handwritten: 1.7 Ratio and Proportion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-diagram.svg" alt="Diagram: 1.7 Ratio and Proportion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-diagram.svg" alt="Diagram: 1.7 Ratio and Proportion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-sticky.svg" alt="Sticky Note: 1.7 Ratio and Proportion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-7-ratio-and-proportion-sticky.svg" alt="Sticky Note: 1.7 Ratio and Proportion" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ A:B:C = 8:12:15
 
 ### 1.8 Averages
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-handwritten.svg" alt="Handwritten: 1.8 Averages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-handwritten.svg" alt="Handwritten: 1.8 Averages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-diagram.svg" alt="Diagram: 1.8 Averages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-diagram.svg" alt="Diagram: 1.8 Averages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-sticky.svg" alt="Sticky Note: 1.8 Averages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/1-8-averages-sticky.svg" alt="Sticky Note: 1.8 Averages" width="30%">
 </a>
 
 
@@ -360,14 +360,14 @@ New average = 20 + (40-30)/5 = 20 + 2 = 22
 
 ### DI Types
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-handwritten.svg" alt="Handwritten: DI Types" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-handwritten.svg" alt="Handwritten: DI Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-diagram.svg" alt="Diagram: DI Types" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-diagram.svg" alt="Diagram: DI Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-sticky.svg" alt="Sticky Note: DI Types" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-types-sticky.svg" alt="Sticky Note: DI Types" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ New average = 20 + (40-30)/5 = 20 + 2 = 22
 
 ### DI Speed Strategy
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-handwritten.svg" alt="Handwritten: DI Speed Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-handwritten.svg" alt="Handwritten: DI Speed Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-diagram.svg" alt="Diagram: DI Speed Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-diagram.svg" alt="Diagram: DI Speed Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-sticky.svg" alt="Sticky Note: DI Speed Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-speed-strategy-sticky.svg" alt="Sticky Note: DI Speed Strategy" width="30%">
 </a>
 
 
@@ -409,14 +409,14 @@ flowchart TD
 
 ### DI Approximation Examples
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-handwritten.svg" alt="Handwritten: DI Approximation Examples" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-handwritten.svg" alt="Handwritten: DI Approximation Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-diagram.svg" alt="Diagram: DI Approximation Examples" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-diagram.svg" alt="Diagram: DI Approximation Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-sticky.svg" alt="Sticky Note: DI Approximation Examples" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-approximation-examples-sticky.svg" alt="Sticky Note: DI Approximation Examples" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ Choose B) 27%
 
 ### DI Calculation Shortcuts
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-handwritten.svg" alt="Handwritten: DI Calculation Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-handwritten.svg" alt="Handwritten: DI Calculation Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-diagram.svg" alt="Diagram: DI Calculation Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-diagram.svg" alt="Diagram: DI Calculation Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-sticky.svg" alt="Sticky Note: DI Calculation Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/di-calculation-shortcuts-sticky.svg" alt="Sticky Note: DI Calculation Shortcuts" width="30%">
 </a>
 
 
@@ -460,14 +460,14 @@ Choose B) 27%
 
 ### 3.1 Series Completion
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-handwritten.svg" alt="Handwritten: 3.1 Series Completion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-handwritten.svg" alt="Handwritten: 3.1 Series Completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-diagram.svg" alt="Diagram: 3.1 Series Completion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-diagram.svg" alt="Diagram: 3.1 Series Completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-sticky.svg" alt="Sticky Note: 3.1 Series Completion" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-1-series-completion-sticky.svg" alt="Sticky Note: 3.1 Series Completion" width="30%">
 </a>
 
 
@@ -492,14 +492,14 @@ Look for: +n, -n, ×n patterns, vowels/consonants, forward/backward
 
 ### 3.2 Coding-Decoding
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-handwritten.svg" alt="Handwritten: 3.2 Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-handwritten.svg" alt="Handwritten: 3.2 Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-diagram.svg" alt="Diagram: 3.2 Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-diagram.svg" alt="Diagram: 3.2 Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-sticky.svg" alt="Sticky Note: 3.2 Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-2-coding-decoding-sticky.svg" alt="Sticky Note: 3.2 Coding-Decoding" width="30%">
 </a>
 
 
@@ -530,14 +530,14 @@ M ↔ N (13+14)
 
 ### 3.3 Blood Relations
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-handwritten.svg" alt="Handwritten: 3.3 Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-handwritten.svg" alt="Handwritten: 3.3 Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-diagram.svg" alt="Diagram: 3.3 Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-diagram.svg" alt="Diagram: 3.3 Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-sticky.svg" alt="Sticky Note: 3.3 Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-3-blood-relations-sticky.svg" alt="Sticky Note: 3.3 Blood Relations" width="30%">
 </a>
 
 
@@ -567,14 +567,14 @@ flowchart TD
 
 ### 3.4 Direction Sense
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-handwritten.svg" alt="Handwritten: 3.4 Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-handwritten.svg" alt="Handwritten: 3.4 Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-diagram.svg" alt="Diagram: 3.4 Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-diagram.svg" alt="Diagram: 3.4 Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-sticky.svg" alt="Sticky Note: 3.4 Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-4-direction-sense-sticky.svg" alt="Sticky Note: 3.4 Direction Sense" width="30%">
 </a>
 
 
@@ -590,14 +590,14 @@ flowchart TD
 
 ### 3.5 Syllogisms
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-handwritten.svg" alt="Handwritten: 3.5 Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-handwritten.svg" alt="Handwritten: 3.5 Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-diagram.svg" alt="Diagram: 3.5 Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-diagram.svg" alt="Diagram: 3.5 Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-sticky.svg" alt="Sticky Note: 3.5 Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-5-syllogisms-sticky.svg" alt="Sticky Note: 3.5 Syllogisms" width="30%">
 </a>
 
 
@@ -612,14 +612,14 @@ flowchart TD
 
 ### 3.6 Seating Arrangement
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-handwritten.svg" alt="Handwritten: 3.6 Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-handwritten.svg" alt="Handwritten: 3.6 Seating Arrangement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-diagram.svg" alt="Diagram: 3.6 Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-diagram.svg" alt="Diagram: 3.6 Seating Arrangement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-sticky.svg" alt="Sticky Note: 3.6 Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-6-seating-arrangement-sticky.svg" alt="Sticky Note: 3.6 Seating Arrangement" width="30%">
 </a>
 
 
@@ -634,14 +634,14 @@ flowchart TD
 
 ### 3.7 Clock and Calendar
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-handwritten.svg" alt="Handwritten: 3.7 Clock and Calendar" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-handwritten.svg" alt="Handwritten: 3.7 Clock and Calendar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-diagram.svg" alt="Diagram: 3.7 Clock and Calendar" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-diagram.svg" alt="Diagram: 3.7 Clock and Calendar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-sticky.svg" alt="Sticky Note: 3.7 Clock and Calendar" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/3-7-clock-and-calendar-sticky.svg" alt="Sticky Note: 3.7 Clock and Calendar" width="30%">
 </a>
 
 
@@ -691,14 +691,14 @@ January 26, 1950 was a Thursday ✓
 
 ### 4.1 Grammar Rules
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-handwritten.svg" alt="Handwritten: 4.1 Grammar Rules" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-handwritten.svg" alt="Handwritten: 4.1 Grammar Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-diagram.svg" alt="Diagram: 4.1 Grammar Rules" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-diagram.svg" alt="Diagram: 4.1 Grammar Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-sticky.svg" alt="Sticky Note: 4.1 Grammar Rules" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-1-grammar-rules-sticky.svg" alt="Sticky Note: 4.1 Grammar Rules" width="30%">
 </a>
 
 
@@ -712,14 +712,14 @@ January 26, 1950 was a Thursday ✓
 
 ### 4.2 Common Errors
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-handwritten.svg" alt="Handwritten: 4.2 Common Errors" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-handwritten.svg" alt="Handwritten: 4.2 Common Errors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-diagram.svg" alt="Diagram: 4.2 Common Errors" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-diagram.svg" alt="Diagram: 4.2 Common Errors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-sticky.svg" alt="Sticky Note: 4.2 Common Errors" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-2-common-errors-sticky.svg" alt="Sticky Note: 4.2 Common Errors" width="30%">
 </a>
 
 
@@ -736,14 +736,14 @@ January 26, 1950 was a Thursday ✓
 
 ### 4.3 Vocabulary Building
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-handwritten.svg" alt="Handwritten: 4.3 Vocabulary Building" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-handwritten.svg" alt="Handwritten: 4.3 Vocabulary Building" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-diagram.svg" alt="Diagram: 4.3 Vocabulary Building" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-diagram.svg" alt="Diagram: 4.3 Vocabulary Building" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-sticky.svg" alt="Sticky Note: 4.3 Vocabulary Building" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-3-vocabulary-building-sticky.svg" alt="Sticky Note: 4.3 Vocabulary Building" width="30%">
 </a>
 
 
@@ -761,14 +761,14 @@ January 26, 1950 was a Thursday ✓
 
 ### 4.4 Reading Comprehension Strategy
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-handwritten.svg" alt="Handwritten: 4.4 Reading Comprehension Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-handwritten.svg" alt="Handwritten: 4.4 Reading Comprehension Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-diagram.svg" alt="Diagram: 4.4 Reading Comprehension Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-diagram.svg" alt="Diagram: 4.4 Reading Comprehension Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-sticky.svg" alt="Sticky Note: 4.4 Reading Comprehension Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-4-reading-comprehension-strategy-sticky.svg" alt="Sticky Note: 4.4 Reading Comprehension Strategy" width="30%">
 </a>
 
 
@@ -789,14 +789,14 @@ flowchart TD
 
 ### 4.5 Sentence Correction Shortcuts
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-handwritten.svg" alt="Handwritten: 4.5 Sentence Correction Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-handwritten.svg" alt="Handwritten: 4.5 Sentence Correction Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-diagram.svg" alt="Diagram: 4.5 Sentence Correction Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-diagram.svg" alt="Diagram: 4.5 Sentence Correction Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-sticky.svg" alt="Sticky Note: 4.5 Sentence Correction Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/4-5-sentence-correction-shortcuts-sticky.svg" alt="Sticky Note: 4.5 Sentence Correction Shortcuts" width="30%">
 </a>
 
 
@@ -814,14 +814,14 @@ flowchart TD
 
 ### 5.1 Vedic Math Basics
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-handwritten.svg" alt="Handwritten: 5.1 Vedic Math Basics" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-handwritten.svg" alt="Handwritten: 5.1 Vedic Math Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-diagram.svg" alt="Diagram: 5.1 Vedic Math Basics" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-diagram.svg" alt="Diagram: 5.1 Vedic Math Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-sticky.svg" alt="Sticky Note: 5.1 Vedic Math Basics" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-1-vedic-math-basics-sticky.svg" alt="Sticky Note: 5.1 Vedic Math Basics" width="30%">
 </a>
 
 
@@ -850,14 +850,14 @@ Shortcut: 27 × 99 = 2673 (27-1=26, 100-27=73 → 26|73)
 
 ### 5.2 Approximation Techniques
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-handwritten.svg" alt="Handwritten: 5.2 Approximation Techniques" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-handwritten.svg" alt="Handwritten: 5.2 Approximation Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-diagram.svg" alt="Diagram: 5.2 Approximation Techniques" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-diagram.svg" alt="Diagram: 5.2 Approximation Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-sticky.svg" alt="Sticky Note: 5.2 Approximation Techniques" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-2-approximation-techniques-sticky.svg" alt="Sticky Note: 5.2 Approximation Techniques" width="30%">
 </a>
 
 
@@ -871,14 +871,14 @@ Shortcut: 27 × 99 = 2673 (27-1=26, 100-27=73 → 26|73)
 
 ### 5.3 Data Sufficiency Strategy
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-handwritten.svg" alt="Handwritten: 5.3 Data Sufficiency Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-handwritten.svg" alt="Handwritten: 5.3 Data Sufficiency Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-diagram.svg" alt="Diagram: 5.3 Data Sufficiency Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-diagram.svg" alt="Diagram: 5.3 Data Sufficiency Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-sticky.svg" alt="Sticky Note: 5.3 Data Sufficiency Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/5-3-data-sufficiency-strategy-sticky.svg" alt="Sticky Note: 5.3 Data Sufficiency Strategy" width="30%">
 </a>
 
 
@@ -903,14 +903,14 @@ Step 4: Choose from: A) Only 1, B) Only 2, C) Together, D) Either, E) Neither
 
 ### Problem Set 1: Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-handwritten.svg" alt="Handwritten: Problem Set 1: Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-handwritten.svg" alt="Handwritten: Problem Set 1: Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-diagram.svg" alt="Diagram: Problem Set 1: Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-diagram.svg" alt="Diagram: Problem Set 1: Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-sticky.svg" alt="Sticky Note: Problem Set 1: Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-1-quantitative-aptitude-sticky.svg" alt="Sticky Note: Problem Set 1: Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -975,14 +975,14 @@ Shortcut: Profit = (p - d - pd/100)
 
 ### Problem Set 2: Logical Reasoning
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-handwritten.svg" alt="Handwritten: Problem Set 2: Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-handwritten.svg" alt="Handwritten: Problem Set 2: Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-diagram.svg" alt="Diagram: Problem Set 2: Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-diagram.svg" alt="Diagram: Problem Set 2: Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-sticky.svg" alt="Sticky Note: Problem Set 2: Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-2-logical-reasoning-sticky.svg" alt="Sticky Note: Problem Set 2: Logical Reasoning" width="30%">
 </a>
 
 
@@ -1039,14 +1039,14 @@ Smallest angle = 100°
 
 ### Problem Set 3: Verbal Ability
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-handwritten.svg" alt="Handwritten: Problem Set 3: Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-handwritten.svg" alt="Handwritten: Problem Set 3: Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-diagram.svg" alt="Diagram: Problem Set 3: Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-diagram.svg" alt="Diagram: Problem Set 3: Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-sticky.svg" alt="Sticky Note: Problem Set 3: Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-3-verbal-ability-sticky.svg" alt="Sticky Note: Problem Set 3: Verbal Ability" width="30%">
 </a>
 
 
@@ -1097,14 +1097,14 @@ He was convicted of his crime.
 
 ### Problem Set 4: Data Interpretation
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-handwritten.svg" alt="Handwritten: Problem Set 4: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-handwritten.svg" alt="Handwritten: Problem Set 4: Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-diagram.svg" alt="Diagram: Problem Set 4: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-diagram.svg" alt="Diagram: Problem Set 4: Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-sticky.svg" alt="Sticky Note: Problem Set 4: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/problem-set-4-data-interpretation-sticky.svg" alt="Sticky Note: Problem Set 4: Data Interpretation" width="30%">
 </a>
 
 
@@ -1170,14 +1170,14 @@ Company A had highest growth rate (25%)
 
 ### Aptitude Formula Sheet
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-handwritten.svg" alt="Handwritten: Aptitude Formula Sheet" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-handwritten.svg" alt="Handwritten: Aptitude Formula Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-diagram.svg" alt="Diagram: Aptitude Formula Sheet" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-diagram.svg" alt="Diagram: Aptitude Formula Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-sticky.svg" alt="Sticky Note: Aptitude Formula Sheet" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/aptitude-formula-sheet-sticky.svg" alt="Sticky Note: Aptitude Formula Sheet" width="30%">
 </a>
 
 
@@ -1196,14 +1196,14 @@ Company A had highest growth rate (25%)
 
 ### Divisibility Quick Check
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-handwritten.svg" alt="Handwritten: Divisibility Quick Check" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-handwritten.svg" alt="Handwritten: Divisibility Quick Check" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-diagram.svg" alt="Diagram: Divisibility Quick Check" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-diagram.svg" alt="Diagram: Divisibility Quick Check" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-sticky.svg" alt="Sticky Note: Divisibility Quick Check" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/divisibility-quick-check-sticky.svg" alt="Sticky Note: Divisibility Quick Check" width="30%">
 </a>
 
 
@@ -1222,14 +1222,14 @@ Company A had highest growth rate (25%)
 
 ### Common Fraction → Percentage
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-handwritten.svg" alt="Handwritten: Common Fraction → Percentage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-handwritten.svg" alt="Handwritten: Common Fraction → Percentage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-diagram.svg" alt="Diagram: Common Fraction → Percentage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-diagram.svg" alt="Diagram: Common Fraction → Percentage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-sticky.svg" alt="Sticky Note: Common Fraction → Percentage" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/common-fraction-percentage-sticky.svg" alt="Sticky Note: Common Fraction → Percentage" width="30%">
 </a>
 
 
@@ -1244,14 +1244,14 @@ Company A had highest growth rate (25%)
 
 ### Speed Conversions
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-handwritten.svg" alt="Handwritten: Speed Conversions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-handwritten.svg" alt="Handwritten: Speed Conversions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-diagram.svg" alt="Diagram: Speed Conversions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-diagram.svg" alt="Diagram: Speed Conversions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-sticky.svg" alt="Sticky Note: Speed Conversions" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-conversions-sticky.svg" alt="Sticky Note: Speed Conversions" width="30%">
 </a>
 
 
@@ -1264,14 +1264,14 @@ Company A had highest growth rate (25%)
 
 ### Square and Cube Roots
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-handwritten.svg" alt="Handwritten: Square and Cube Roots" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-handwritten.svg" alt="Handwritten: Square and Cube Roots" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-diagram.svg" alt="Diagram: Square and Cube Roots" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-diagram.svg" alt="Diagram: Square and Cube Roots" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-sticky.svg" alt="Sticky Note: Square and Cube Roots" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/square-and-cube-roots-sticky.svg" alt="Sticky Note: Square and Cube Roots" width="30%">
 </a>
 
 
@@ -1293,14 +1293,14 @@ Company A had highest growth rate (25%)
 
 ### Exam Time Management
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-handwritten.svg" alt="Handwritten: Exam Time Management" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-handwritten.svg" alt="Handwritten: Exam Time Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-diagram.svg" alt="Diagram: Exam Time Management" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-diagram.svg" alt="Diagram: Exam Time Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-sticky.svg" alt="Sticky Note: Exam Time Management" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/exam-time-management-sticky.svg" alt="Sticky Note: Exam Time Management" width="30%">
 </a>
 
 
@@ -1314,14 +1314,14 @@ Company A had highest growth rate (25%)
 
 ### Scoring Strategy
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-handwritten.svg" alt="Handwritten: Scoring Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-handwritten.svg" alt="Handwritten: Scoring Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-diagram.svg" alt="Diagram: Scoring Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-diagram.svg" alt="Diagram: Scoring Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-sticky.svg" alt="Sticky Note: Scoring Strategy" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/scoring-strategy-sticky.svg" alt="Sticky Note: Scoring Strategy" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ Company A had highest growth rate (25%)
 
 ### Pattern 1: Work and Wages
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-handwritten.svg" alt="Handwritten: Pattern 1: Work and Wages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-handwritten.svg" alt="Handwritten: Pattern 1: Work and Wages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-diagram.svg" alt="Diagram: Pattern 1: Work and Wages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-diagram.svg" alt="Diagram: Pattern 1: Work and Wages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-sticky.svg" alt="Sticky Note: Pattern 1: Work and Wages" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-1-work-and-wages-sticky.svg" alt="Sticky Note: Pattern 1: Work and Wages" width="30%">
 </a>
 
 
@@ -1366,14 +1366,14 @@ B's time for remaining = (1/6)/(1/15) = 15/6 = 2.5 days
 
 ### Pattern 2: Pipes and Cisterns
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-handwritten.svg" alt="Handwritten: Pattern 2: Pipes and Cisterns" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-handwritten.svg" alt="Handwritten: Pattern 2: Pipes and Cisterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-diagram.svg" alt="Diagram: Pattern 2: Pipes and Cisterns" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-diagram.svg" alt="Diagram: Pattern 2: Pipes and Cisterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-sticky.svg" alt="Sticky Note: Pattern 2: Pipes and Cisterns" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-2-pipes-and-cisterns-sticky.svg" alt="Sticky Note: Pattern 2: Pipes and Cisterns" width="30%">
 </a>
 
 
@@ -1390,14 +1390,14 @@ Time = 120/7 ≈ 17.14 minutes
 
 ### Pattern 3: Boats and Streams
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-handwritten.svg" alt="Handwritten: Pattern 3: Boats and Streams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-handwritten.svg" alt="Handwritten: Pattern 3: Boats and Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-diagram.svg" alt="Diagram: Pattern 3: Boats and Streams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-diagram.svg" alt="Diagram: Pattern 3: Boats and Streams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-sticky.svg" alt="Sticky Note: Pattern 3: Boats and Streams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-3-boats-and-streams-sticky.svg" alt="Sticky Note: Pattern 3: Boats and Streams" width="30%">
 </a>
 
 
@@ -1423,14 +1423,14 @@ Boat speed = 10 km/h
 
 ### Pattern 4: Permutation and Combination Shortcuts
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-handwritten.svg" alt="Handwritten: Pattern 4: Permutation and Combination Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-handwritten.svg" alt="Handwritten: Pattern 4: Permutation and Combination Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-diagram.svg" alt="Diagram: Pattern 4: Permutation and Combination Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-diagram.svg" alt="Diagram: Pattern 4: Permutation and Combination Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-sticky.svg" alt="Sticky Note: Pattern 4: Permutation and Combination Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-4-permutation-and-combination-shortcuts-sticky.svg" alt="Sticky Note: Pattern 4: Permutation and Combination Shortcuts" width="30%">
 </a>
 
 
@@ -1459,14 +1459,14 @@ Total = 48 ways
 
 ### Pattern 5: Probability Shortcuts
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-handwritten.svg" alt="Handwritten: Pattern 5: Probability Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-handwritten.svg" alt="Handwritten: Pattern 5: Probability Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-diagram.svg" alt="Diagram: Pattern 5: Probability Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-diagram.svg" alt="Diagram: Pattern 5: Probability Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-sticky.svg" alt="Sticky Note: Pattern 5: Probability Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-5-probability-shortcuts-sticky.svg" alt="Sticky Note: Pattern 5: Probability Shortcuts" width="30%">
 </a>
 
 
@@ -1494,14 +1494,14 @@ Probability = 10/36 = 5/18 ≈ 27.8%
 
 ### Pattern 6: Mixtures and Alligations
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-handwritten.svg" alt="Handwritten: Pattern 6: Mixtures and Alligations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-handwritten.svg" alt="Handwritten: Pattern 6: Mixtures and Alligations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-diagram.svg" alt="Diagram: Pattern 6: Mixtures and Alligations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-diagram.svg" alt="Diagram: Pattern 6: Mixtures and Alligations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-sticky.svg" alt="Sticky Note: Pattern 6: Mixtures and Alligations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-6-mixtures-and-alligations-sticky.svg" alt="Sticky Note: Pattern 6: Mixtures and Alligations" width="30%">
 </a>
 
 
@@ -1527,14 +1527,14 @@ So mix in ratio 3:2 (cheaper:dearer)
 
 ### Pattern 7: Simple and Compound Interest Advanced
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-handwritten.svg" alt="Handwritten: Pattern 7: Simple and Compound Interest Advanced" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-handwritten.svg" alt="Handwritten: Pattern 7: Simple and Compound Interest Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-diagram.svg" alt="Diagram: Pattern 7: Simple and Compound Interest Advanced" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-diagram.svg" alt="Diagram: Pattern 7: Simple and Compound Interest Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-sticky.svg" alt="Sticky Note: Pattern 7: Simple and Compound Interest Advanced" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/pattern-7-simple-and-compound-interest-advanced-sticky.svg" alt="Sticky Note: Pattern 7: Simple and Compound Interest Advanced" width="30%">
 </a>
 
 
@@ -1566,14 +1566,14 @@ Difference = ₹100 ✓
 
 ### IBPS PO/SO Preliminary Exam
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-handwritten.svg" alt="Handwritten: IBPS PO/SO Preliminary Exam" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-handwritten.svg" alt="Handwritten: IBPS PO/SO Preliminary Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-diagram.svg" alt="Diagram: IBPS PO/SO Preliminary Exam" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-diagram.svg" alt="Diagram: IBPS PO/SO Preliminary Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-sticky.svg" alt="Sticky Note: IBPS PO/SO Preliminary Exam" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ibps-po-so-preliminary-exam-sticky.svg" alt="Sticky Note: IBPS PO/SO Preliminary Exam" width="30%">
 </a>
 
 
@@ -1586,14 +1586,14 @@ Difference = ₹100 ✓
 
 ### SBI PO Prelims
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-handwritten.svg" alt="Handwritten: SBI PO Prelims" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-handwritten.svg" alt="Handwritten: SBI PO Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-diagram.svg" alt="Diagram: SBI PO Prelims" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-diagram.svg" alt="Diagram: SBI PO Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-sticky.svg" alt="Sticky Note: SBI PO Prelims" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/sbi-po-prelims-sticky.svg" alt="Sticky Note: SBI PO Prelims" width="30%">
 </a>
 
 
@@ -1606,14 +1606,14 @@ Difference = ₹100 ✓
 
 ### SSC CGL Tier 1
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-handwritten.svg" alt="Handwritten: SSC CGL Tier 1" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-handwritten.svg" alt="Handwritten: SSC CGL Tier 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-diagram.svg" alt="Diagram: SSC CGL Tier 1" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-diagram.svg" alt="Diagram: SSC CGL Tier 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-sticky.svg" alt="Sticky Note: SSC CGL Tier 1" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ssc-cgl-tier-1-sticky.svg" alt="Sticky Note: SSC CGL Tier 1" width="30%">
 </a>
 
 
@@ -1627,14 +1627,14 @@ Difference = ₹100 ✓
 
 ### PSU Written Test (General)
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-handwritten.svg" alt="Handwritten: PSU Written Test (General)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-handwritten.svg" alt="Handwritten: PSU Written Test (General)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-diagram.svg" alt="Diagram: PSU Written Test (General)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-diagram.svg" alt="Diagram: PSU Written Test (General)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-sticky.svg" alt="Sticky Note: PSU Written Test (General)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/psu-written-test-general-sticky.svg" alt="Sticky Note: PSU Written Test (General)" width="30%">
 </a>
 
 
@@ -1649,14 +1649,14 @@ Difference = ₹100 ✓
 
 ### Time Management by Section
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-handwritten.svg" alt="Handwritten: Time Management by Section" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-handwritten.svg" alt="Handwritten: Time Management by Section" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-diagram.svg" alt="Diagram: Time Management by Section" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-diagram.svg" alt="Diagram: Time Management by Section" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-sticky.svg" alt="Sticky Note: Time Management by Section" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-management-by-section-sticky.svg" alt="Sticky Note: Time Management by Section" width="30%">
 </a>
 
 
@@ -1672,14 +1672,14 @@ Difference = ₹100 ✓
 
 ### Daily Practice Routine (15 minutes)
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-handwritten.svg" alt="Handwritten: Daily Practice Routine (15 minutes)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-handwritten.svg" alt="Handwritten: Daily Practice Routine (15 minutes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-diagram.svg" alt="Diagram: Daily Practice Routine (15 minutes)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-diagram.svg" alt="Diagram: Daily Practice Routine (15 minutes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-sticky.svg" alt="Sticky Note: Daily Practice Routine (15 minutes)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/daily-practice-routine-15-minutes-sticky.svg" alt="Sticky Note: Daily Practice Routine (15 minutes)" width="30%">
 </a>
 
 
@@ -1704,14 +1704,14 @@ function findWhole(part: number, pct: number): number {
 
 ### Speed Addition Technique
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-handwritten.svg" alt="Handwritten: Speed Addition Technique" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-handwritten.svg" alt="Handwritten: Speed Addition Technique" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-diagram.svg" alt="Diagram: Speed Addition Technique" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-diagram.svg" alt="Diagram: Speed Addition Technique" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-sticky.svg" alt="Sticky Note: Speed Addition Technique" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-addition-technique-sticky.svg" alt="Sticky Note: Speed Addition Technique" width="30%">
 </a>
 
 
@@ -1729,14 +1729,14 @@ This is faster for mental math than carrying.
 
 ### Multiplication by Near-100 Numbers
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-handwritten.svg" alt="Handwritten: Multiplication by Near-100 Numbers" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-handwritten.svg" alt="Handwritten: Multiplication by Near-100 Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-diagram.svg" alt="Diagram: Multiplication by Near-100 Numbers" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-diagram.svg" alt="Diagram: Multiplication by Near-100 Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-sticky.svg" alt="Sticky Note: Multiplication by Near-100 Numbers" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/multiplication-by-near-100-numbers-sticky.svg" alt="Sticky Note: Multiplication by Near-100 Numbers" width="30%">
 </a>
 
 
@@ -1757,14 +1757,14 @@ Answer: 8928
 
 ### Division by 5, 25, 125
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-handwritten.svg" alt="Handwritten: Division by 5, 25, 125" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-handwritten.svg" alt="Handwritten: Division by 5, 25, 125" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-diagram.svg" alt="Diagram: Division by 5, 25, 125" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-diagram.svg" alt="Diagram: Division by 5, 25, 125" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-sticky.svg" alt="Sticky Note: Division by 5, 25, 125" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/division-by-5-25-125-sticky.svg" alt="Sticky Note: Division by 5, 25, 125" width="30%">
 </a>
 
 
@@ -1781,14 +1781,14 @@ Divide by 125: Multiply by 8, divide by 1000
 
 ### Percentage Quick Calculations
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-handwritten.svg" alt="Handwritten: Percentage Quick Calculations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-handwritten.svg" alt="Handwritten: Percentage Quick Calculations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-diagram.svg" alt="Diagram: Percentage Quick Calculations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-diagram.svg" alt="Diagram: Percentage Quick Calculations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-sticky.svg" alt="Sticky Note: Percentage Quick Calculations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/percentage-quick-calculations-sticky.svg" alt="Sticky Note: Percentage Quick Calculations" width="30%">
 </a>
 
 
@@ -1809,14 +1809,14 @@ Divide by 125: Multiply by 8, divide by 1000
 
 ### Number System
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-handwritten.svg" alt="Handwritten: Number System" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-handwritten.svg" alt="Handwritten: Number System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-diagram.svg" alt="Diagram: Number System" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-diagram.svg" alt="Diagram: Number System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-sticky.svg" alt="Sticky Note: Number System" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/number-system-sticky.svg" alt="Sticky Note: Number System" width="30%">
 </a>
 
 
@@ -1834,14 +1834,14 @@ Co-prime: HCF = 1 (9 and 16)
 
 ### Speed Summary
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-handwritten.svg" alt="Handwritten: Speed Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-handwritten.svg" alt="Handwritten: Speed Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-diagram.svg" alt="Diagram: Speed Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-diagram.svg" alt="Diagram: Speed Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-sticky.svg" alt="Sticky Note: Speed Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/speed-summary-sticky.svg" alt="Sticky Note: Speed Summary" width="30%">
 </a>
 
 
@@ -1857,14 +1857,14 @@ Train crossing platform: (L₁+L₂)/v
 
 ### Interest Summary
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-handwritten.svg" alt="Handwritten: Interest Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-handwritten.svg" alt="Handwritten: Interest Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-diagram.svg" alt="Diagram: Interest Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-diagram.svg" alt="Diagram: Interest Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-sticky.svg" alt="Sticky Note: Interest Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/interest-summary-sticky.svg" alt="Sticky Note: Interest Summary" width="30%">
 </a>
 
 
@@ -1879,14 +1879,14 @@ CI - SI = P(R/100)²
 
 ### Profit-Loss Summary
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-handwritten.svg" alt="Handwritten: Profit-Loss Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-handwritten.svg" alt="Handwritten: Profit-Loss Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-diagram.svg" alt="Diagram: Profit-Loss Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-diagram.svg" alt="Diagram: Profit-Loss Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-sticky.svg" alt="Sticky Note: Profit-Loss Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/profit-loss-summary-sticky.svg" alt="Sticky Note: Profit-Loss Summary" width="30%">
 </a>
 
 
@@ -1900,14 +1900,14 @@ Successive discounts: a + b - ab/100
 
 ### Time-Work Summary
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-handwritten.svg" alt="Handwritten: Time-Work Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-handwritten.svg" alt="Handwritten: Time-Work Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-diagram.svg" alt="Diagram: Time-Work Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-diagram.svg" alt="Diagram: Time-Work Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-sticky.svg" alt="Sticky Note: Time-Work Summary" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/time-work-summary-sticky.svg" alt="Sticky Note: Time-Work Summary" width="30%">
 </a>
 
 
@@ -1921,14 +1921,14 @@ A leaves after n days: remaining days = (1-n/x)/(1/x+1/y)
 
 ### Ratio-Allegation Table
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-handwritten.svg" alt="Handwritten: Ratio-Allegation Table" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-handwritten.svg" alt="Handwritten: Ratio-Allegation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-diagram.svg" alt="Diagram: Ratio-Allegation Table" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-diagram.svg" alt="Diagram: Ratio-Allegation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-sticky.svg" alt="Sticky Note: Ratio-Allegation Table" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/ratio-allegation-table-sticky.svg" alt="Sticky Note: Ratio-Allegation Table" width="30%">
 </a>
 
 
@@ -1942,14 +1942,14 @@ Weighted avg = Σ(nᵢ×aᵢ)/Σnᵢ
 
 ### Logical Reasoning Patterns
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-handwritten.svg" alt="Handwritten: Logical Reasoning Patterns" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-handwritten.svg" alt="Handwritten: Logical Reasoning Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-diagram.svg" alt="Diagram: Logical Reasoning Patterns" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-diagram.svg" alt="Diagram: Logical Reasoning Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-sticky.svg" alt="Sticky Note: Logical Reasoning Patterns" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/logical-reasoning-patterns-sticky.svg" alt="Sticky Note: Logical Reasoning Patterns" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ Calendar: Odd days → 0=Sun, 1=Mon... (Normal yr=1, Leap yr=2)
 
 ### Data Interpretation Quick Checks
 
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-handwritten.svg" alt="Handwritten: Data Interpretation Quick Checks" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-handwritten.svg" alt="Handwritten: Data Interpretation Quick Checks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-diagram.svg" alt="Diagram: Data Interpretation Quick Checks" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-diagram.svg" alt="Diagram: Data Interpretation Quick Checks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-sticky.svg" alt="Sticky Note: Data Interpretation Quick Checks" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/10-aptitude-logical-reasoning-speed/data-interpretation-quick-checks-sticky.svg" alt="Sticky Note: Data Interpretation Quick Checks" width="30%">
 </a>
 
 

@@ -43,14 +43,14 @@ flowchart LR
 
 ### 15.1 Lexical Analysis and Regular Expressions
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-handwritten.svg" alt="Handwritten: 15.1 Lexical Analysis and Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-handwritten.svg" alt="Handwritten: 15.1 Lexical Analysis and Regular Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-diagram.svg" alt="Diagram: 15.1 Lexical Analysis and Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-diagram.svg" alt="Diagram: 15.1 Lexical Analysis and Regular Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-sticky.svg" alt="Sticky Note: 15.1 Lexical Analysis and Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-1-lexical-analysis-and-regular-expressions-sticky.svg" alt="Sticky Note: 15.1 Lexical Analysis and Regular Expressions" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 
 ### 15.2 Parsing and Context-Free Grammars
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-handwritten.svg" alt="Handwritten: 15.2 Parsing and Context-Free Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-handwritten.svg" alt="Handwritten: 15.2 Parsing and Context-Free Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-diagram.svg" alt="Diagram: 15.2 Parsing and Context-Free Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-diagram.svg" alt="Diagram: 15.2 Parsing and Context-Free Grammars" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-sticky.svg" alt="Sticky Note: 15.2 Parsing and Context-Free Grammars" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-2-parsing-and-context-free-grammars-sticky.svg" alt="Sticky Note: 15.2 Parsing and Context-Free Grammars" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 
 ### 15.3 Formal Verification and Model Checking
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-handwritten.svg" alt="Handwritten: 15.3 Formal Verification and Model Checking" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-handwritten.svg" alt="Handwritten: 15.3 Formal Verification and Model Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-diagram.svg" alt="Diagram: 15.3 Formal Verification and Model Checking" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-diagram.svg" alt="Diagram: 15.3 Formal Verification and Model Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-sticky.svg" alt="Sticky Note: 15.3 Formal Verification and Model Checking" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-3-formal-verification-and-model-checking-sticky.svg" alt="Sticky Note: 15.3 Formal Verification and Model Checking" width="30%">
 </a>
 
 
@@ -149,14 +149,14 @@ Each rule compiles to a DFA. The lexer simulates them in parallel, picking the l
 
 ### 15.4 Cryptography and Computational Complexity
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-handwritten.svg" alt="Handwritten: 15.4 Cryptography and Computational Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-handwritten.svg" alt="Handwritten: 15.4 Cryptography and Computational Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-diagram.svg" alt="Diagram: 15.4 Cryptography and Computational Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-diagram.svg" alt="Diagram: 15.4 Cryptography and Computational Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-sticky.svg" alt="Sticky Note: 15.4 Cryptography and Computational Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-4-cryptography-and-computational-complexity-sticky.svg" alt="Sticky Note: 15.4 Cryptography and Computational Complexity" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 ### 15.5 Automata in Natural Language Processing
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-handwritten.svg" alt="Handwritten: 15.5 Automata in Natural Language Processing" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-handwritten.svg" alt="Handwritten: 15.5 Automata in Natural Language Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-diagram.svg" alt="Diagram: 15.5 Automata in Natural Language Processing" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-diagram.svg" alt="Diagram: 15.5 Automata in Natural Language Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-sticky.svg" alt="Sticky Note: 15.5 Automata in Natural Language Processing" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-5-automata-in-natural-language-processing-sticky.svg" alt="Sticky Note: 15.5 Automata in Natural Language Processing" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 ### 15.6 Programming Language Theory
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-handwritten.svg" alt="Handwritten: 15.6 Programming Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-handwritten.svg" alt="Handwritten: 15.6 Programming Language Theory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-diagram.svg" alt="Diagram: 15.6 Programming Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-diagram.svg" alt="Diagram: 15.6 Programming Language Theory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-sticky.svg" alt="Sticky Note: 15.6 Programming Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-6-programming-language-theory-sticky.svg" alt="Sticky Note: 15.6 Programming Language Theory" width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 ### 15.7 Bioinformatics
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-handwritten.svg" alt="Handwritten: 15.7 Bioinformatics" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-handwritten.svg" alt="Handwritten: 15.7 Bioinformatics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-diagram.svg" alt="Diagram: 15.7 Bioinformatics" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-diagram.svg" alt="Diagram: 15.7 Bioinformatics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-sticky.svg" alt="Sticky Note: 15.7 Bioinformatics" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-7-bioinformatics-sticky.svg" alt="Sticky Note: 15.7 Bioinformatics" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 ### 15.8 Network Security and Intrusion Detection
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-handwritten.svg" alt="Handwritten: 15.8 Network Security and Intrusion Detection" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-handwritten.svg" alt="Handwritten: 15.8 Network Security and Intrusion Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-diagram.svg" alt="Diagram: 15.8 Network Security and Intrusion Detection" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-diagram.svg" alt="Diagram: 15.8 Network Security and Intrusion Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-sticky.svg" alt="Sticky Note: 15.8 Network Security and Intrusion Detection" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-8-network-security-and-intrusion-detection-sticky.svg" alt="Sticky Note: 15.8 Network Security and Intrusion Detection" width="30%">
 </a>
 
 
@@ -268,14 +268,14 @@ Complexity theory provides the foundation for modern cryptography. In particular
 
 ### 15.9 Computability and Software Engineering
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-handwritten.svg" alt="Handwritten: 15.9 Computability and Software Engineering" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-handwritten.svg" alt="Handwritten: 15.9 Computability and Software Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-diagram.svg" alt="Diagram: 15.9 Computability and Software Engineering" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-diagram.svg" alt="Diagram: 15.9 Computability and Software Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-sticky.svg" alt="Sticky Note: 15.9 Computability and Software Engineering" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-9-computability-and-software-engineering-sticky.svg" alt="Sticky Note: 15.9 Computability and Software Engineering" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ Understanding undecidability helps engineers recognize what **cannot** be automa
 
 ### 15.10 Quantum Computing and Complexity
 
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-handwritten.svg" alt="Handwritten: 15.10 Quantum Computing and Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-handwritten.svg" alt="Handwritten: 15.10 Quantum Computing and Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-diagram.svg" alt="Diagram: 15.10 Quantum Computing and Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-diagram.svg" alt="Diagram: 15.10 Quantum Computing and Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-sticky.svg" alt="Sticky Note: 15.10 Quantum Computing and Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/16-applications/15-10-quantum-computing-and-complexity-sticky.svg" alt="Sticky Note: 15.10 Quantum Computing and Complexity" width="30%">
 </a>
 
 

@@ -43,14 +43,14 @@ flowchart LR
 
 ### Authentication Starter Kits
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-handwritten.svg" alt="Handwritten: Authentication Starter Kits" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-handwritten.svg" alt="Handwritten: Authentication Starter Kits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-diagram.svg" alt="Diagram: Authentication Starter Kits" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-diagram.svg" alt="Diagram: Authentication Starter Kits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-sticky.svg" alt="Sticky Note: Authentication Starter Kits" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/authentication-starter-kits-sticky.svg" alt="Sticky Note: Authentication Starter Kits" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ The Bootcamp is not a starter kit but an interactive tutorial that walks through
 
 ### Session-Based Authentication
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-handwritten.svg" alt="Handwritten: Session-Based Authentication" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-handwritten.svg" alt="Handwritten: Session-Based Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-diagram.svg" alt="Diagram: Session-Based Authentication" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-diagram.svg" alt="Diagram: Session-Based Authentication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-sticky.svg" alt="Sticky Note: Session-Based Authentication" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/session-based-authentication-sticky.svg" alt="Sticky Note: Session-Based Authentication" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ auth()->guard('admin')->user();
 
 ### API Authentication with Sanctum
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-handwritten.svg" alt="Handwritten: API Authentication with Sanctum" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-handwritten.svg" alt="Handwritten: API Authentication with Sanctum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-diagram.svg" alt="Diagram: API Authentication with Sanctum" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-diagram.svg" alt="Diagram: API Authentication with Sanctum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-sticky.svg" alt="Sticky Note: API Authentication with Sanctum" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/api-authentication-with-sanctum-sticky.svg" alt="Sticky Note: API Authentication with Sanctum" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ public function store(Request $request)
 
 ### Authorization
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/authorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/authorization-handwritten.svg" alt="Handwritten: Authorization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/authorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/authorization-handwritten.svg" alt="Handwritten: Authorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/authorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/authorization-diagram.svg" alt="Diagram: Authorization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/authorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/authorization-diagram.svg" alt="Diagram: Authorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/authorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/authorization-sticky.svg" alt="Sticky Note: Authorization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/authorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/authorization-sticky.svg" alt="Sticky Note: Authorization" width="30%">
 </a>
 
 
@@ -582,14 +582,14 @@ Route::put('/posts/{post}', function (Post $post) {
 
 ### Blade Authorization
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-handwritten.svg" alt="Handwritten: Blade Authorization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-handwritten.svg" alt="Handwritten: Blade Authorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-diagram.svg" alt="Diagram: Blade Authorization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-diagram.svg" alt="Diagram: Blade Authorization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-sticky.svg" alt="Sticky Note: Blade Authorization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/blade-authorization-sticky.svg" alt="Sticky Note: Blade Authorization" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@ Route::put('/posts/{post}', function (Post $post) {
 
 ### Form Requests & Validation
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-handwritten.svg" alt="Handwritten: Form Requests & Validation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-handwritten.svg" alt="Handwritten: Form Requests & Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-diagram.svg" alt="Diagram: Form Requests & Validation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-diagram.svg" alt="Diagram: Form Requests & Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-sticky.svg" alt="Sticky Note: Form Requests & Validation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/form-requests-validation-sticky.svg" alt="Sticky Note: Form Requests & Validation" width="30%">
 </a>
 
 
@@ -842,14 +842,14 @@ public function messages(): array
 
 ### Security
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/security-handwritten.svg" alt="Handwritten: Security" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/security-handwritten.svg" alt="Handwritten: Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/security-diagram.svg" alt="Diagram: Security" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/security-diagram.svg" alt="Diagram: Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/security-sticky.svg" alt="Sticky Note: Security" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/security-sticky.svg" alt="Sticky Note: Security" width="30%">
 </a>
 
 
@@ -995,14 +995,14 @@ RateLimiter::for('uploads', function (Request $request) {
 
 ### Password Management
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/password-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/password-management-handwritten.svg" alt="Handwritten: Password Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/password-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/password-management-handwritten.svg" alt="Handwritten: Password Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/password-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/password-management-diagram.svg" alt="Diagram: Password Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/password-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/password-management-diagram.svg" alt="Diagram: Password Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/password-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/password-management-sticky.svg" alt="Sticky Note: Password Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/password-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/password-management-sticky.svg" alt="Sticky Note: Password Management" width="30%">
 </a>
 
 
@@ -1106,14 +1106,14 @@ $status = Password::reset(
 
 ### Email Verification
 
-<a href="../../assets/images/diagrams/laravel/05-auth-security/email-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/email-verification-handwritten.svg" alt="Handwritten: Email Verification" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/email-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/email-verification-handwritten.svg" alt="Handwritten: Email Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/email-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/email-verification-diagram.svg" alt="Diagram: Email Verification" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/email-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/email-verification-diagram.svg" alt="Diagram: Email Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/05-auth-security/email-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/05-auth-security/email-verification-sticky.svg" alt="Sticky Note: Email Verification" width="30%">
+<a href="../../../assets/images/diagrams/laravel/05-auth-security/email-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/05-auth-security/email-verification-sticky.svg" alt="Sticky Note: Email Verification" width="30%">
 </a>
 
 

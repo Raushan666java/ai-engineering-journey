@@ -50,14 +50,14 @@ Spring Batch provides a comprehensive framework for batch processing with reusab
 
 ### 1.1 Maven Dependencies
 
-<a href="../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-handwritten.svg" alt="Handwritten: 1.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-handwritten.svg" alt="Handwritten: 1.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-diagram.svg" alt="Diagram: 1.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-diagram.svg" alt="Diagram: 1.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-sticky.svg" alt="Sticky Note: 1.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/1-1-maven-dependencies-sticky.svg" alt="Sticky Note: 1.1 Maven Dependencies" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ Spring Batch provides a comprehensive framework for batch processing with reusab
 
 ### 1.2 Application Configuration
 
-<a href="../../assets/images/diagrams/java/49-batch/1-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/1-2-application-configuration-handwritten.svg" alt="Handwritten: 1.2 Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/1-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/1-2-application-configuration-handwritten.svg" alt="Handwritten: 1.2 Application Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/1-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/1-2-application-configuration-diagram.svg" alt="Diagram: 1.2 Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/1-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/1-2-application-configuration-diagram.svg" alt="Diagram: 1.2 Application Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/1-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/1-2-application-configuration-sticky.svg" alt="Sticky Note: 1.2 Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/1-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/1-2-application-configuration-sticky.svg" alt="Sticky Note: 1.2 Application Configuration" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ public class DailySummary {
 
 ### 3.1 Basic Job Configuration
 
-<a href="../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-handwritten.svg" alt="Handwritten: 3.1 Basic Job Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-handwritten.svg" alt="Handwritten: 3.1 Basic Job Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-diagram.svg" alt="Diagram: 3.1 Basic Job Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-diagram.svg" alt="Diagram: 3.1 Basic Job Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-sticky.svg" alt="Sticky Note: 3.1 Basic Job Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/3-1-basic-job-configuration-sticky.svg" alt="Sticky Note: 3.1 Basic Job Configuration" width="30%">
 </a>
 
 
@@ -526,14 +526,14 @@ public class BatchJobConfig {
 
 ### 3.2 Step Configurations
 
-<a href="../../assets/images/diagrams/java/49-batch/3-2-step-configurations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/3-2-step-configurations-handwritten.svg" alt="Handwritten: 3.2 Step Configurations" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/3-2-step-configurations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/3-2-step-configurations-handwritten.svg" alt="Handwritten: 3.2 Step Configurations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/3-2-step-configurations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/3-2-step-configurations-diagram.svg" alt="Diagram: 3.2 Step Configurations" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/3-2-step-configurations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/3-2-step-configurations-diagram.svg" alt="Diagram: 3.2 Step Configurations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/3-2-step-configurations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/3-2-step-configurations-sticky.svg" alt="Sticky Note: 3.2 Step Configurations" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/3-2-step-configurations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/3-2-step-configurations-sticky.svg" alt="Sticky Note: 3.2 Step Configurations" width="30%">
 </a>
 
 
@@ -726,14 +726,14 @@ public class FileImportStepConfig {
 
 ### 4.1 FlatFileItemReader
 
-<a href="../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-handwritten.svg" alt="Handwritten: 4.1 FlatFileItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-handwritten.svg" alt="Handwritten: 4.1 FlatFileItemReader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-diagram.svg" alt="Diagram: 4.1 FlatFileItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-diagram.svg" alt="Diagram: 4.1 FlatFileItemReader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-sticky.svg" alt="Sticky Note: 4.1 FlatFileItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-1-flatfileitemreader-sticky.svg" alt="Sticky Note: 4.1 FlatFileItemReader" width="30%">
 </a>
 
 
@@ -870,14 +870,14 @@ public class TransactionReaderConfig {
 
 ### 4.2 JdbcCursorItemReader
 
-<a href="../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-handwritten.svg" alt="Handwritten: 4.2 JdbcCursorItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-handwritten.svg" alt="Handwritten: 4.2 JdbcCursorItemReader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-diagram.svg" alt="Diagram: 4.2 JdbcCursorItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-diagram.svg" alt="Diagram: 4.2 JdbcCursorItemReader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-sticky.svg" alt="Sticky Note: 4.2 JdbcCursorItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-2-jdbccursoritemreader-sticky.svg" alt="Sticky Note: 4.2 JdbcCursorItemReader" width="30%">
 </a>
 
 
@@ -971,14 +971,14 @@ public class JdbcReaderConfig {
 
 ### 4.3 JpaPagingItemReader
 
-<a href="../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-handwritten.svg" alt="Handwritten: 4.3 JpaPagingItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-handwritten.svg" alt="Handwritten: 4.3 JpaPagingItemReader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-diagram.svg" alt="Diagram: 4.3 JpaPagingItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-diagram.svg" alt="Diagram: 4.3 JpaPagingItemReader" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-sticky.svg" alt="Sticky Note: 4.3 JpaPagingItemReader" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-3-jpapagingitemreader-sticky.svg" alt="Sticky Note: 4.3 JpaPagingItemReader" width="30%">
 </a>
 
 
@@ -1067,14 +1067,14 @@ public class JpaReaderConfig {
 
 ### 4.4 Additional Readers
 
-<a href="../../assets/images/diagrams/java/49-batch/4-4-additional-readers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-4-additional-readers-handwritten.svg" alt="Handwritten: 4.4 Additional Readers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-4-additional-readers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-4-additional-readers-handwritten.svg" alt="Handwritten: 4.4 Additional Readers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-4-additional-readers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-4-additional-readers-diagram.svg" alt="Diagram: 4.4 Additional Readers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-4-additional-readers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-4-additional-readers-diagram.svg" alt="Diagram: 4.4 Additional Readers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/4-4-additional-readers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/4-4-additional-readers-sticky.svg" alt="Sticky Note: 4.4 Additional Readers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/4-4-additional-readers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/4-4-additional-readers-sticky.svg" alt="Sticky Note: 4.4 Additional Readers" width="30%">
 </a>
 
 
@@ -1166,14 +1166,14 @@ public class AdditionalReaderConfig {
 
 ### 5.1 Transaction Processor
 
-<a href="../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-handwritten.svg" alt="Handwritten: 5.1 Transaction Processor" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-handwritten.svg" alt="Handwritten: 5.1 Transaction Processor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-diagram.svg" alt="Diagram: 5.1 Transaction Processor" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-diagram.svg" alt="Diagram: 5.1 Transaction Processor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-sticky.svg" alt="Sticky Note: 5.1 Transaction Processor" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/5-1-transaction-processor-sticky.svg" alt="Sticky Note: 5.1 Transaction Processor" width="30%">
 </a>
 
 
@@ -1375,14 +1375,14 @@ public class TransactionProcessor implements ItemProcessor<Transaction, Processe
 
 ### 5.2 Composite and Classifier Processors
 
-<a href="../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-handwritten.svg" alt="Handwritten: 5.2 Composite and Classifier Processors" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-handwritten.svg" alt="Handwritten: 5.2 Composite and Classifier Processors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-diagram.svg" alt="Diagram: 5.2 Composite and Classifier Processors" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-diagram.svg" alt="Diagram: 5.2 Composite and Classifier Processors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-sticky.svg" alt="Sticky Note: 5.2 Composite and Classifier Processors" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/5-2-composite-and-classifier-processors-sticky.svg" alt="Sticky Note: 5.2 Composite and Classifier Processors" width="30%">
 </a>
 
 
@@ -1527,14 +1527,14 @@ public class ProcessorConfig {
 
 ### 6.1 FlatFileItemWriter
 
-<a href="../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-handwritten.svg" alt="Handwritten: 6.1 FlatFileItemWriter" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-handwritten.svg" alt="Handwritten: 6.1 FlatFileItemWriter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-diagram.svg" alt="Diagram: 6.1 FlatFileItemWriter" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-diagram.svg" alt="Diagram: 6.1 FlatFileItemWriter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-sticky.svg" alt="Sticky Note: 6.1 FlatFileItemWriter" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-1-flatfileitemwriter-sticky.svg" alt="Sticky Note: 6.1 FlatFileItemWriter" width="30%">
 </a>
 
 
@@ -1627,14 +1627,14 @@ public class FlatFileWriterConfig {
 
 ### 6.2 Database Writers
 
-<a href="../../assets/images/diagrams/java/49-batch/6-2-database-writers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-2-database-writers-handwritten.svg" alt="Handwritten: 6.2 Database Writers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-2-database-writers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-2-database-writers-handwritten.svg" alt="Handwritten: 6.2 Database Writers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/6-2-database-writers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-2-database-writers-diagram.svg" alt="Diagram: 6.2 Database Writers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-2-database-writers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-2-database-writers-diagram.svg" alt="Diagram: 6.2 Database Writers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/6-2-database-writers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-2-database-writers-sticky.svg" alt="Sticky Note: 6.2 Database Writers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-2-database-writers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-2-database-writers-sticky.svg" alt="Sticky Note: 6.2 Database Writers" width="30%">
 </a>
 
 
@@ -1765,14 +1765,14 @@ public class DatabaseWriterConfig {
 
 ### 6.3 Composite and Classifier Writers
 
-<a href="../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-handwritten.svg" alt="Handwritten: 6.3 Composite and Classifier Writers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-handwritten.svg" alt="Handwritten: 6.3 Composite and Classifier Writers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-diagram.svg" alt="Diagram: 6.3 Composite and Classifier Writers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-diagram.svg" alt="Diagram: 6.3 Composite and Classifier Writers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-sticky.svg" alt="Sticky Note: 6.3 Composite and Classifier Writers" width="30%">
+<a href="../../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/49-batch/6-3-composite-and-classifier-writers-sticky.svg" alt="Sticky Note: 6.3 Composite and Classifier Writers" width="30%">
 </a>
 
 

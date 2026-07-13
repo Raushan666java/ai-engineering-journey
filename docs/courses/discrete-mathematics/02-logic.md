@@ -50,14 +50,14 @@ flowchart LR
 
 ### 2.1 Propositions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-handwritten.svg" alt="Handwritten: 2.1 Propositions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-handwritten.svg" alt="Handwritten: 2.1 Propositions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-diagram.svg" alt="Diagram: 2.1 Propositions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-diagram.svg" alt="Diagram: 2.1 Propositions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-sticky.svg" alt="Sticky Note: 2.1 Propositions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-1-propositions-sticky.svg" alt="Sticky Note: 2.1 Propositions" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@ Non-examples: "What time is it?" (question), "Close the door" (command), "This s
 
 ### 2.2 Logical Connectives
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-handwritten.svg" alt="Handwritten: 2.2 Logical Connectives" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-handwritten.svg" alt="Handwritten: 2.2 Logical Connectives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-diagram.svg" alt="Diagram: 2.2 Logical Connectives" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-diagram.svg" alt="Diagram: 2.2 Logical Connectives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-sticky.svg" alt="Sticky Note: 2.2 Logical Connectives" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-2-logical-connectives-sticky.svg" alt="Sticky Note: 2.2 Logical Connectives" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ Let $p$ and $q$ be propositions.
 
 ### 2.3 Truth Tables
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-handwritten.svg" alt="Handwritten: 2.3 Truth Tables" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-handwritten.svg" alt="Handwritten: 2.3 Truth Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-diagram.svg" alt="Diagram: 2.3 Truth Tables" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-diagram.svg" alt="Diagram: 2.3 Truth Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-sticky.svg" alt="Sticky Note: 2.3 Truth Tables" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-3-truth-tables-sticky.svg" alt="Sticky Note: 2.3 Truth Tables" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ Note carefully: $p \rightarrow q$ is false only when $p$ is true and $q$ is fals
 
 ### 2.4 Logical Equivalence
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-handwritten.svg" alt="Handwritten: 2.4 Logical Equivalence" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-handwritten.svg" alt="Handwritten: 2.4 Logical Equivalence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-diagram.svg" alt="Diagram: 2.4 Logical Equivalence" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-diagram.svg" alt="Diagram: 2.4 Logical Equivalence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-sticky.svg" alt="Sticky Note: 2.4 Logical Equivalence" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-4-logical-equivalence-sticky.svg" alt="Sticky Note: 2.4 Logical Equivalence" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ console.log(`p?q = ?p?q: ${allMatch}`); // true
 
 ### 2.5 Conditional and Related Statements
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-handwritten.svg" alt="Handwritten: 2.5 Conditional and Related Statements" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-handwritten.svg" alt="Handwritten: 2.5 Conditional and Related Statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-diagram.svg" alt="Diagram: 2.5 Conditional and Related Statements" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-diagram.svg" alt="Diagram: 2.5 Conditional and Related Statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-sticky.svg" alt="Sticky Note: 2.5 Conditional and Related Statements" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-5-conditional-and-related-statements-sticky.svg" alt="Sticky Note: 2.5 Conditional and Related Statements" width="30%">
 </a>
 
 
@@ -221,14 +221,14 @@ flowchart TD
 
 ### 2.6 Normal Forms
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-handwritten.svg" alt="Handwritten: 2.6 Normal Forms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-handwritten.svg" alt="Handwritten: 2.6 Normal Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-diagram.svg" alt="Diagram: 2.6 Normal Forms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-diagram.svg" alt="Diagram: 2.6 Normal Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-sticky.svg" alt="Sticky Note: 2.6 Normal Forms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-6-normal-forms-sticky.svg" alt="Sticky Note: 2.6 Normal Forms" width="30%">
 </a>
 
 
@@ -270,14 +270,14 @@ function toDNF(truthTable: { vars: boolean[], result: boolean }[]): string {
 
 ### 2.7 Satisfiability and Tautology
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-handwritten.svg" alt="Handwritten: 2.7 Satisfiability and Tautology" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-handwritten.svg" alt="Handwritten: 2.7 Satisfiability and Tautology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-diagram.svg" alt="Diagram: 2.7 Satisfiability and Tautology" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-diagram.svg" alt="Diagram: 2.7 Satisfiability and Tautology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-sticky.svg" alt="Sticky Note: 2.7 Satisfiability and Tautology" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-7-satisfiability-and-tautology-sticky.svg" alt="Sticky Note: 2.7 Satisfiability and Tautology" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ console.log(isSatisfiable(formula, ['p', 'q'])); // true
 
 ### 2.8 Arguments and Validity
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-handwritten.svg" alt="Handwritten: 2.8 Arguments and Validity" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-handwritten.svg" alt="Handwritten: 2.8 Arguments and Validity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-diagram.svg" alt="Diagram: 2.8 Arguments and Validity" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-diagram.svg" alt="Diagram: 2.8 Arguments and Validity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-sticky.svg" alt="Sticky Note: 2.8 Arguments and Validity" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-8-arguments-and-validity-sticky.svg" alt="Sticky Note: 2.8 Arguments and Validity" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ function resolution(p: boolean, q: boolean, r: boolean): boolean {
 
 ### 2.9 Limitations of Propositional Logic
 
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-handwritten.svg" alt="Handwritten: 2.9 Limitations of Propositional Logic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-handwritten.svg" alt="Handwritten: 2.9 Limitations of Propositional Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-diagram.svg" alt="Diagram: 2.9 Limitations of Propositional Logic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-diagram.svg" alt="Diagram: 2.9 Limitations of Propositional Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-sticky.svg" alt="Sticky Note: 2.9 Limitations of Propositional Logic" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/02-logic/2-9-limitations-of-propositional-logic-sticky.svg" alt="Sticky Note: 2.9 Limitations of Propositional Logic" width="30%">
 </a>
 
 

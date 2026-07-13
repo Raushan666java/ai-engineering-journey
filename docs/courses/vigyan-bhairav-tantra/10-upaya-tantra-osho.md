@@ -78,14 +78,14 @@ flowchart TB
 
 ### "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ flowchart TB
 
 ### ओशो की नाव वाली कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो की नाव वाली कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो की नाव वाली कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो की नाव वाली कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो की नाव वाली कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो की नाव वाली कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो की नाव वाली कहानी" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ flowchart TB
 
 ### आणव के लिए कौन उपयुक्त है — ओशो के अनुसार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ flowchart TB
 
 ### आणव उपाय की तकनीकों पर ओशो की टिप्पणी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@ flowchart LR
 
 ### "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ flowchart LR
 
 ### शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ flowchart LR
 
 ### रति-ध्यान — ओशो की व्याख्या
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: रति-ध्यान — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: रति-ध्यान — ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: रति-ध्यान — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: रति-ध्यान — ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: रति-ध्यान — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: रति-ध्यान — ओशो की व्याख्या" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ flowchart TB
 
 ### शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
 </a>
 
 
@@ -295,14 +295,14 @@ flowchart TB
 
 ### "शांभव — उपायों का अंत, चेतना की शुरुआत"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ flowchart TB
 
 ### ओशो की "नो-मेथड मेथड"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो की "नो-मेथड मेथड"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो की "नो-मेथड मेथड"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो की "नो-मेथड मेथड"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो की "नो-मेथड मेथड"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो की "नो-मेथड मेथड"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो की "नो-मेथड मेथड"" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ flowchart TB
 
 ### एक और ज़ेन कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: एक और ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: एक और ज़ेन कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: एक और ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: एक और ज़ेन कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: एक और ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: एक और ज़ेन कहानी" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ flowchart TB
 
 ### "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
 </a>
 
 
@@ -418,14 +418,14 @@ flowchart TB
 
 ### ओशो का उदाहरण — तीरंदाज़ी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
 </a>
 
 
@@ -1073,14 +1073,14 @@ demonstrateOshoUpaya();
 
 ### अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
 </a>
 
 
@@ -1094,14 +1094,14 @@ demonstrateOshoUpaya();
 
 ### अभ्यास २: अपनी नाव को पहचानें
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: अपनी नाव को पहचानें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: अपनी नाव को पहचानें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास २: अपनी नाव को पहचानें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास २: अपनी नाव को पहचानें" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: अपनी नाव को पहचानें" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: अपनी नाव को पहचानें" width="30%">
 </a>
 
 
@@ -1109,14 +1109,14 @@ demonstrateOshoUpaya();
 
 ### अभ्यास ३: प्रयास-सहजता संतुलन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
 </a>
 
 
@@ -1124,14 +1124,14 @@ demonstrateOshoUpaya();
 
 ### अभ्यास ४: शांभव का क्षण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: शांभव का क्षण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: शांभव का क्षण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ४: शांभव का क्षण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ४: शांभव का क्षण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: शांभव का क्षण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: शांभव का क्षण" width="30%">
 </a>
 
 
@@ -1139,14 +1139,14 @@ demonstrateOshoUpaya();
 
 ### अभ्यास ५: ओशो की कहानियों पर ध्यान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
 </a>
 
 
@@ -1154,14 +1154,14 @@ demonstrateOshoUpaya();
 
 ### अभ्यास ६: समूह चर्चा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
 
 

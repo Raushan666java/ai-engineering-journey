@@ -64,14 +64,14 @@ flowchart LR
 
 ### 1. API Gateway vs Load Balancer
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-handwritten.svg" alt="Handwritten: 1. API Gateway vs Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-handwritten.svg" alt="Handwritten: 1. API Gateway vs Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-diagram.svg" alt="Diagram: 1. API Gateway vs Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-diagram.svg" alt="Diagram: 1. API Gateway vs Load Balancer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-sticky.svg" alt="Sticky Note: 1. API Gateway vs Load Balancer" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/1-api-gateway-vs-load-balancer-sticky.svg" alt="Sticky Note: 1. API Gateway vs Load Balancer" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ An **API gateway** sits between clients and microservices and handles:
 
 ### 2. API Gateway Patterns
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-handwritten.svg" alt="Handwritten: 2. API Gateway Patterns" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-handwritten.svg" alt="Handwritten: 2. API Gateway Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-diagram.svg" alt="Diagram: 2. API Gateway Patterns" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-diagram.svg" alt="Diagram: 2. API Gateway Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-sticky.svg" alt="Sticky Note: 2. API Gateway Patterns" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/2-api-gateway-patterns-sticky.svg" alt="Sticky Note: 2. API Gateway Patterns" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ IoT        ? [IoT Gateway]
 
 ### 3. Rate Limiting in Gateways
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-handwritten.svg" alt="Handwritten: 3. Rate Limiting in Gateways" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-handwritten.svg" alt="Handwritten: 3. Rate Limiting in Gateways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-diagram.svg" alt="Diagram: 3. Rate Limiting in Gateways" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-diagram.svg" alt="Diagram: 3. Rate Limiting in Gateways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-sticky.svg" alt="Sticky Note: 3. Rate Limiting in Gateways" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/3-rate-limiting-in-gateways-sticky.svg" alt="Sticky Note: 3. Rate Limiting in Gateways" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ def sliding_window_rate_limit(client_id, max_requests=100, window_ms=1000):
 
 ### 4. Authentication at Gateway
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-handwritten.svg" alt="Handwritten: 4. Authentication at Gateway" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-handwritten.svg" alt="Handwritten: 4. Authentication at Gateway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-diagram.svg" alt="Diagram: 4. Authentication at Gateway" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-diagram.svg" alt="Diagram: 4. Authentication at Gateway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-sticky.svg" alt="Sticky Note: 4. Authentication at Gateway" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/4-authentication-at-gateway-sticky.svg" alt="Sticky Note: 4. Authentication at Gateway" width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@ def gateway_auth(request):
 
 ### 5. Request Aggregation
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-handwritten.svg" alt="Handwritten: 5. Request Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-handwritten.svg" alt="Handwritten: 5. Request Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-diagram.svg" alt="Diagram: 5. Request Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-diagram.svg" alt="Diagram: 5. Request Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-sticky.svg" alt="Sticky Note: 5. Request Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/5-request-aggregation-sticky.svg" alt="Sticky Note: 5. Request Aggregation" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ GraphQL gateways (Apollo Federation, Hasura) push aggregation responsibility to 
 
 ### 6. CQRS Pattern
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-handwritten.svg" alt="Handwritten: 6. CQRS Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-handwritten.svg" alt="Handwritten: 6. CQRS Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-diagram.svg" alt="Diagram: 6. CQRS Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-diagram.svg" alt="Diagram: 6. CQRS Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-sticky.svg" alt="Sticky Note: 6. CQRS Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/6-cqrs-pattern-sticky.svg" alt="Sticky Note: 6. CQRS Pattern" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ class OrderQueryService:
 
 ### 7. CQRS Without Event Sourcing
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-handwritten.svg" alt="Handwritten: 7. CQRS Without Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-handwritten.svg" alt="Handwritten: 7. CQRS Without Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-diagram.svg" alt="Diagram: 7. CQRS Without Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-diagram.svg" alt="Diagram: 7. CQRS Without Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-sticky.svg" alt="Sticky Note: 7. CQRS Without Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/7-cqrs-without-event-sourcing-sticky.svg" alt="Sticky Note: 7. CQRS Without Event Sourcing" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ Client ? Query Handler ? Read DB ? Response
 
 ### 8. Event Sourcing Fundamentals
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-handwritten.svg" alt="Handwritten: 8. Event Sourcing Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-handwritten.svg" alt="Handwritten: 8. Event Sourcing Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-diagram.svg" alt="Diagram: 8. Event Sourcing Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-diagram.svg" alt="Diagram: 8. Event Sourcing Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-sticky.svg" alt="Sticky Note: 8. Event Sourcing Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/8-event-sourcing-fundamentals-sticky.svg" alt="Sticky Note: 8. Event Sourcing Fundamentals" width="30%">
 </a>
 
 
@@ -364,14 +364,14 @@ Events are immutable facts — correction events (e.g., PaymentRefunded) are app
 
 ### 9. Event Store Design
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-handwritten.svg" alt="Handwritten: 9. Event Store Design" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-handwritten.svg" alt="Handwritten: 9. Event Store Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-diagram.svg" alt="Diagram: 9. Event Store Design" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-diagram.svg" alt="Diagram: 9. Event Store Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-sticky.svg" alt="Sticky Note: 9. Event Store Design" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/9-event-store-design-sticky.svg" alt="Sticky Note: 9. Event Store Design" width="30%">
 </a>
 
 
@@ -394,14 +394,14 @@ Upcaster.register("OrderPlaced", 1, lambda e: {**e, "version": 2, "currency": "U
 
 ### 10. Rebuilding State: Projections and Snapshots
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-handwritten.svg" alt="Handwritten: 10. Rebuilding State: Projections and Snapshots" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-handwritten.svg" alt="Handwritten: 10. Rebuilding State: Projections and Snapshots" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-diagram.svg" alt="Diagram: 10. Rebuilding State: Projections and Snapshots" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-diagram.svg" alt="Diagram: 10. Rebuilding State: Projections and Snapshots" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-sticky.svg" alt="Sticky Note: 10. Rebuilding State: Projections and Snapshots" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/10-rebuilding-state-projections-and-snapshots-sticky.svg" alt="Sticky Note: 10. Rebuilding State: Projections and Snapshots" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ class OrderSummaryProjection:
 
 ### 11. Event Sourcing + CQRS Integration
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-handwritten.svg" alt="Handwritten: 11. Event Sourcing + CQRS Integration" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-handwritten.svg" alt="Handwritten: 11. Event Sourcing + CQRS Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-diagram.svg" alt="Diagram: 11. Event Sourcing + CQRS Integration" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-diagram.svg" alt="Diagram: 11. Event Sourcing + CQRS Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-sticky.svg" alt="Sticky Note: 11. Event Sourcing + CQRS Integration" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/11-event-sourcing-cqrs-integration-sticky.svg" alt="Sticky Note: 11. Event Sourcing + CQRS Integration" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ Query Side (Projections):
 
 ### 12. Practical Trade-offs
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-handwritten.svg" alt="Handwritten: 12. Practical Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-handwritten.svg" alt="Handwritten: 12. Practical Trade-offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-diagram.svg" alt="Diagram: 12. Practical Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-diagram.svg" alt="Diagram: 12. Practical Trade-offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-sticky.svg" alt="Sticky Note: 12. Practical Trade-offs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/12-practical-trade-offs-sticky.svg" alt="Sticky Note: 12. Practical Trade-offs" width="30%">
 </a>
 
 
@@ -500,14 +500,14 @@ Query Side (Projections):
 
 ### 13. Real-World Implementations
 
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-handwritten.svg" alt="Handwritten: 13. Real-World Implementations" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-handwritten.svg" alt="Handwritten: 13. Real-World Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-diagram.svg" alt="Diagram: 13. Real-World Implementations" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-diagram.svg" alt="Diagram: 13. Real-World Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-sticky.svg" alt="Sticky Note: 13. Real-World Implementations" width="30%">
+<a href="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/16-api-gateways-cqrs/13-real-world-implementations-sticky.svg" alt="Sticky Note: 13. Real-World Implementations" width="30%">
 </a>
 
 

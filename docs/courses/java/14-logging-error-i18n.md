@@ -50,14 +50,14 @@ flowchart LR
 
 ### 1.1 The Java Logging Landscape
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-handwritten.svg" alt="Handwritten: 1.1 The Java Logging Landscape" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-handwritten.svg" alt="Handwritten: 1.1 The Java Logging Landscape" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-diagram.svg" alt="Diagram: 1.1 The Java Logging Landscape" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-diagram.svg" alt="Diagram: 1.1 The Java Logging Landscape" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-sticky.svg" alt="Sticky Note: 1.1 The Java Logging Landscape" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-1-the-java-logging-landscape-sticky.svg" alt="Sticky Note: 1.1 The Java Logging Landscape" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ Spring Boot uses SLF4J + Logback by default. All internal Spring logging goes th
 
 ### 1.2 SLF4J API Fundamentals
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-handwritten.svg" alt="Handwritten: 1.2 SLF4J API Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-handwritten.svg" alt="Handwritten: 1.2 SLF4J API Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-diagram.svg" alt="Diagram: 1.2 SLF4J API Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-diagram.svg" alt="Diagram: 1.2 SLF4J API Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-sticky.svg" alt="Sticky Note: 1.2 SLF4J API Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-2-slf4j-api-fundamentals-sticky.svg" alt="Sticky Note: 1.2 SLF4J API Fundamentals" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ if (log.isTraceEnabled()) {
 
 ### 1.3 Logback Configuration
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-handwritten.svg" alt="Handwritten: 1.3 Logback Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-handwritten.svg" alt="Handwritten: 1.3 Logback Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-diagram.svg" alt="Diagram: 1.3 Logback Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-diagram.svg" alt="Diagram: 1.3 Logback Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-sticky.svg" alt="Sticky Note: 1.3 Logback Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-3-logback-configuration-sticky.svg" alt="Sticky Note: 1.3 Logback Configuration" width="30%">
 </a>
 
 
@@ -474,14 +474,14 @@ Output:
 
 ### 1.4 Structured JSON Logging
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-handwritten.svg" alt="Handwritten: 1.4 Structured JSON Logging" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-handwritten.svg" alt="Handwritten: 1.4 Structured JSON Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-diagram.svg" alt="Diagram: 1.4 Structured JSON Logging" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-diagram.svg" alt="Diagram: 1.4 Structured JSON Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-sticky.svg" alt="Sticky Note: 1.4 Structured JSON Logging" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-4-structured-json-logging-sticky.svg" alt="Sticky Note: 1.4 Structured JSON Logging" width="30%">
 </a>
 
 
@@ -638,14 +638,14 @@ try {
 
 ### 1.5 Log4j2 Configuration
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-handwritten.svg" alt="Handwritten: 1.5 Log4j2 Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-handwritten.svg" alt="Handwritten: 1.5 Log4j2 Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-diagram.svg" alt="Diagram: 1.5 Log4j2 Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-diagram.svg" alt="Diagram: 1.5 Log4j2 Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-sticky.svg" alt="Sticky Note: 1.5 Log4j2 Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-5-log4j2-configuration-sticky.svg" alt="Sticky Note: 1.5 Log4j2 Configuration" width="30%">
 </a>
 
 
@@ -785,14 +785,14 @@ Log4j2's async loggers use LMAX Disruptor for extremely high throughput:
 
 ### 1.6 Spring Boot Logging Configuration
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-handwritten.svg" alt="Handwritten: 1.6 Spring Boot Logging Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-handwritten.svg" alt="Handwritten: 1.6 Spring Boot Logging Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-diagram.svg" alt="Diagram: 1.6 Spring Boot Logging Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-diagram.svg" alt="Diagram: 1.6 Spring Boot Logging Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-sticky.svg" alt="Sticky Note: 1.6 Spring Boot Logging Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-6-spring-boot-logging-configuration-sticky.svg" alt="Sticky Note: 1.6 Spring Boot Logging Configuration" width="30%">
 </a>
 
 
@@ -851,14 +851,14 @@ logging:
 
 ### 1.7 Global Error Handling with @ControllerAdvice
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-handwritten.svg" alt="Handwritten: 1.7 Global Error Handling with @ControllerAdvice" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-handwritten.svg" alt="Handwritten: 1.7 Global Error Handling with @ControllerAdvice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-diagram.svg" alt="Diagram: 1.7 Global Error Handling with @ControllerAdvice" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-diagram.svg" alt="Diagram: 1.7 Global Error Handling with @ControllerAdvice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-sticky.svg" alt="Sticky Note: 1.7 Global Error Handling with @ControllerAdvice" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-7-global-error-handling-with-controlleradvice-sticky.svg" alt="Sticky Note: 1.7 Global Error Handling with @ControllerAdvice" width="30%">
 </a>
 
 
@@ -1218,14 +1218,14 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
 
 ### 1.8 RFC 7807 Problem Details
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-handwritten.svg" alt="Handwritten: 1.8 RFC 7807 Problem Details" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-handwritten.svg" alt="Handwritten: 1.8 RFC 7807 Problem Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-diagram.svg" alt="Diagram: 1.8 RFC 7807 Problem Details" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-diagram.svg" alt="Diagram: 1.8 RFC 7807 Problem Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-sticky.svg" alt="Sticky Note: 1.8 RFC 7807 Problem Details" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-8-rfc-7807-problem-details-sticky.svg" alt="Sticky Note: 1.8 RFC 7807 Problem Details" width="30%">
 </a>
 
 
@@ -1349,14 +1349,14 @@ public class ValidationProblemDetailHandler extends ResponseEntityExceptionHandl
 
 ### 1.9 Internationalization (i18n)
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-handwritten.svg" alt="Handwritten: 1.9 Internationalization (i18n)" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-handwritten.svg" alt="Handwritten: 1.9 Internationalization (i18n)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-diagram.svg" alt="Diagram: 1.9 Internationalization (i18n)" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-diagram.svg" alt="Diagram: 1.9 Internationalization (i18n)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-sticky.svg" alt="Sticky Note: 1.9 Internationalization (i18n)" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-9-internationalization-i18n-sticky.svg" alt="Sticky Note: 1.9 Internationalization (i18n)" width="30%">
 </a>
 
 
@@ -1826,14 +1826,14 @@ public class LocaleController {
 
 ### 1.10 Thymeleaf i18n Integration
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-handwritten.svg" alt="Handwritten: 1.10 Thymeleaf i18n Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-handwritten.svg" alt="Handwritten: 1.10 Thymeleaf i18n Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-diagram.svg" alt="Diagram: 1.10 Thymeleaf i18n Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-diagram.svg" alt="Diagram: 1.10 Thymeleaf i18n Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-sticky.svg" alt="Sticky Note: 1.10 Thymeleaf i18n Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-10-thymeleaf-i18n-integration-sticky.svg" alt="Sticky Note: 1.10 Thymeleaf i18n Integration" width="30%">
 </a>
 
 
@@ -1900,14 +1900,14 @@ With parameters: `#{user.welcome(${user.name})}` maps `{0}` in the message bundl
 
 ### 1.11 Validation Message Internationalization
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-handwritten.svg" alt="Handwritten: 1.11 Validation Message Internationalization" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-handwritten.svg" alt="Handwritten: 1.11 Validation Message Internationalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-diagram.svg" alt="Diagram: 1.11 Validation Message Internationalization" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-diagram.svg" alt="Diagram: 1.11 Validation Message Internationalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-sticky.svg" alt="Sticky Note: 1.11 Validation Message Internationalization" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-11-validation-message-internationalization-sticky.svg" alt="Sticky Note: 1.11 Validation Message Internationalization" width="30%">
 </a>
 
 
@@ -2054,14 +2054,14 @@ ValidDateRange.orderRequest=La date de fin doit Ãªtre postÃ©rieure Ã  la d
 
 ### 1.12 Programmatic Message Resolution in REST Controllers
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-handwritten.svg" alt="Handwritten: 1.12 Programmatic Message Resolution in REST Controllers" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-handwritten.svg" alt="Handwritten: 1.12 Programmatic Message Resolution in REST Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-diagram.svg" alt="Diagram: 1.12 Programmatic Message Resolution in REST Controllers" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-diagram.svg" alt="Diagram: 1.12 Programmatic Message Resolution in REST Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-sticky.svg" alt="Sticky Note: 1.12 Programmatic Message Resolution in REST Controllers" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-12-programmatic-message-resolution-in-rest-controllers-sticky.svg" alt="Sticky Note: 1.12 Programmatic Message Resolution in REST Controllers" width="30%">
 </a>
 
 
@@ -2138,14 +2138,14 @@ public class LocalizedMessageController {
 
 ### 1.13 Locale Interceptor
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-handwritten.svg" alt="Handwritten: 1.13 Locale Interceptor" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-handwritten.svg" alt="Handwritten: 1.13 Locale Interceptor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-diagram.svg" alt="Diagram: 1.13 Locale Interceptor" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-diagram.svg" alt="Diagram: 1.13 Locale Interceptor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-sticky.svg" alt="Sticky Note: 1.13 Locale Interceptor" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-13-locale-interceptor-sticky.svg" alt="Sticky Note: 1.13 Locale Interceptor" width="30%">
 </a>
 
 
@@ -2213,14 +2213,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 1.14 Date, Number, and Currency Formatting with i18n
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-handwritten.svg" alt="Handwritten: 1.14 Date, Number, and Currency Formatting with i18n" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-handwritten.svg" alt="Handwritten: 1.14 Date, Number, and Currency Formatting with i18n" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-diagram.svg" alt="Diagram: 1.14 Date, Number, and Currency Formatting with i18n" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-diagram.svg" alt="Diagram: 1.14 Date, Number, and Currency Formatting with i18n" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-sticky.svg" alt="Sticky Note: 1.14 Date, Number, and Currency Formatting with i18n" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-14-date-number-and-currency-formatting-with-i18n-sticky.svg" alt="Sticky Note: 1.14 Date, Number, and Currency Formatting with i18n" width="30%">
 </a>
 
 
@@ -2281,14 +2281,14 @@ public class LocalizedFormattingService {
 
 ### 1.15 Complete Error Handling Example with i18n
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-handwritten.svg" alt="Handwritten: 1.15 Complete Error Handling Example with i18n" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-handwritten.svg" alt="Handwritten: 1.15 Complete Error Handling Example with i18n" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-diagram.svg" alt="Diagram: 1.15 Complete Error Handling Example with i18n" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-diagram.svg" alt="Diagram: 1.15 Complete Error Handling Example with i18n" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-sticky.svg" alt="Sticky Note: 1.15 Complete Error Handling Example with i18n" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-15-complete-error-handling-example-with-i18n-sticky.svg" alt="Sticky Note: 1.15 Complete Error Handling Example with i18n" width="30%">
 </a>
 
 
@@ -2403,14 +2403,14 @@ public class I18nExceptionHandler {
 
 ### 1.16 Creating a Logging Aspect for Business Operations
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-handwritten.svg" alt="Handwritten: 1.16 Creating a Logging Aspect for Business Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-handwritten.svg" alt="Handwritten: 1.16 Creating a Logging Aspect for Business Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-diagram.svg" alt="Diagram: 1.16 Creating a Logging Aspect for Business Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-diagram.svg" alt="Diagram: 1.16 Creating a Logging Aspect for Business Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-sticky.svg" alt="Sticky Note: 1.16 Creating a Logging Aspect for Business Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-16-creating-a-logging-aspect-for-business-operations-sticky.svg" alt="Sticky Note: 1.16 Creating a Logging Aspect for Business Operations" width="30%">
 </a>
 
 
@@ -2479,14 +2479,14 @@ public class LoggingAspect {
 
 ### 1.17 Complete Logging Configuration Example
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-handwritten.svg" alt="Handwritten: 1.17 Complete Logging Configuration Example" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-handwritten.svg" alt="Handwritten: 1.17 Complete Logging Configuration Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-diagram.svg" alt="Diagram: 1.17 Complete Logging Configuration Example" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-diagram.svg" alt="Diagram: 1.17 Complete Logging Configuration Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-sticky.svg" alt="Sticky Note: 1.17 Complete Logging Configuration Example" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-17-complete-logging-configuration-example-sticky.svg" alt="Sticky Note: 1.17 Complete Logging Configuration Example" width="30%">
 </a>
 
 
@@ -2610,14 +2610,14 @@ Putting it all together:
 
 ### 1.18 Best Practices
 
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-handwritten.svg" alt="Handwritten: 1.18 Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-handwritten.svg" alt="Handwritten: 1.18 Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-diagram.svg" alt="Diagram: 1.18 Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-diagram.svg" alt="Diagram: 1.18 Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-sticky.svg" alt="Sticky Note: 1.18 Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/14-logging-error-i18n/1-18-best-practices-sticky.svg" alt="Sticky Note: 1.18 Best Practices" width="30%">
 </a>
 
 

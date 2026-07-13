@@ -34,14 +34,14 @@ Generative AI has moved from research curiosity to production infrastructure in 
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ Generative AI has moved from research curiosity to production infrastructure in 
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ Generative models learn the probability distribution $$P(X)$$ of training data a
 
 ### The Generative Family Tree
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-handwritten.svg" alt="Handwritten: The Generative Family Tree" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-handwritten.svg" alt="Handwritten: The Generative Family Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-diagram.svg" alt="Diagram: The Generative Family Tree" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-diagram.svg" alt="Diagram: The Generative Family Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-sticky.svg" alt="Sticky Note: The Generative Family Tree" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/the-generative-family-tree-sticky.svg" alt="Sticky Note: The Generative Family Tree" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ Generative models learn the probability distribution $$P(X)$$ of training data a
 
 ### Mathematical Intuition
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-handwritten.svg" alt="Handwritten: Mathematical Intuition" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-handwritten.svg" alt="Handwritten: Mathematical Intuition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-diagram.svg" alt="Diagram: Mathematical Intuition" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-diagram.svg" alt="Diagram: Mathematical Intuition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-sticky.svg" alt="Sticky Note: Mathematical Intuition" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/mathematical-intuition-sticky.svg" alt="Sticky Note: Mathematical Intuition" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ Autoregressive:     max  Σ log P(x_i | x_<i)
 
 ### Architecture
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ Random Noise (z) ──→ Generator ──→ Fake Image (G(z))
 
 ### How GANs Work (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-handwritten.svg" alt="Handwritten: How GANs Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-handwritten.svg" alt="Handwritten: How GANs Work (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-diagram.svg" alt="Diagram: How GANs Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-diagram.svg" alt="Diagram: How GANs Work (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-sticky.svg" alt="Sticky Note: How GANs Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-gans-work-step-by-step-sticky.svg" alt="Sticky Note: How GANs Work (Step by Step)" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ Random Noise (z) ──→ Generator ──→ Fake Image (G(z))
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -238,14 +238,14 @@ FUNCTION train_gan(G, D, dataset, epochs, batch_size, z_dim):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ After many epochs: D(G(z)) ≈ 0.5 (D cannot tell real from fake → Nash equili
 
 ### Python Implementation (PyTorch)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" alt="Handwritten: Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" alt="Handwritten: Python Implementation (PyTorch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" alt="Diagram: Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" alt="Diagram: Python Implementation (PyTorch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" alt="Sticky Note: Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" alt="Sticky Note: Python Implementation (PyTorch)" width="30%">
 </a>
 
 
@@ -396,14 +396,14 @@ for epoch in range(EPOCHS):
 
 ### Generating Samples
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-handwritten.svg" alt="Handwritten: Generating Samples" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-handwritten.svg" alt="Handwritten: Generating Samples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-diagram.svg" alt="Diagram: Generating Samples" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-diagram.svg" alt="Diagram: Generating Samples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-sticky.svg" alt="Sticky Note: Generating Samples" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/generating-samples-sticky.svg" alt="Sticky Note: Generating Samples" width="30%">
 </a>
 
 
@@ -427,14 +427,14 @@ plt.savefig("output/gan_samples.png")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -448,14 +448,14 @@ plt.savefig("output/gan_samples.png")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -470,14 +470,14 @@ plt.savefig("output/gan_samples.png")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@ plt.savefig("output/gan_samples.png")
 
 ### Architecture
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
 </a>
 
 
@@ -523,14 +523,14 @@ Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N
 
 ### How VAEs Work (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-handwritten.svg" alt="Handwritten: How VAEs Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-handwritten.svg" alt="Handwritten: How VAEs Work (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-diagram.svg" alt="Diagram: How VAEs Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-diagram.svg" alt="Diagram: How VAEs Work (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-sticky.svg" alt="Sticky Note: How VAEs Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-vaes-work-step-by-step-sticky.svg" alt="Sticky Note: How VAEs Work (Step by Step)" width="30%">
 </a>
 
 
@@ -545,14 +545,14 @@ Input Image (x) ──→ Encoder ──→ μ, log(σ²) ──→ Sample z ~ N
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ FUNCTION train_vae(encoder, decoder, dataset, epochs, latent_dim):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -620,14 +620,14 @@ After training: the latent space becomes smooth and continuous. Interpolating be
 
 ### Python Implementation (PyTorch)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" alt="Handwritten: Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-handwritten.svg" alt="Handwritten: Python Implementation (PyTorch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" alt="Diagram: Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-diagram.svg" alt="Diagram: Python Implementation (PyTorch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" alt="Sticky Note: Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-pytorch-sticky.svg" alt="Sticky Note: Python Implementation (PyTorch)" width="30%">
 </a>
 
 
@@ -719,14 +719,14 @@ for epoch in range(EPOCHS):
 
 ### Latent Space Interpolation
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-handwritten.svg" alt="Handwritten: Latent Space Interpolation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-handwritten.svg" alt="Handwritten: Latent Space Interpolation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-diagram.svg" alt="Diagram: Latent Space Interpolation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-diagram.svg" alt="Diagram: Latent Space Interpolation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-sticky.svg" alt="Sticky Note: Latent Space Interpolation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/latent-space-interpolation-sticky.svg" alt="Sticky Note: Latent Space Interpolation" width="30%">
 </a>
 
 
@@ -759,14 +759,14 @@ plt.savefig("output/vae_interpolation.png")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -780,14 +780,14 @@ plt.savefig("output/vae_interpolation.png")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -802,14 +802,14 @@ plt.savefig("output/vae_interpolation.png")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -833,14 +833,14 @@ plt.savefig("output/vae_interpolation.png")
 
 ### Architecture
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ Reverse (p):  x_T → x_{T-1} → ... → x₁ → x₀ (generated sample)
 
 ### How Diffusion Models Work (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-handwritten.svg" alt="Handwritten: How Diffusion Models Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-handwritten.svg" alt="Handwritten: How Diffusion Models Work (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-diagram.svg" alt="Diagram: How Diffusion Models Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-diagram.svg" alt="Diagram: How Diffusion Models Work (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-sticky.svg" alt="Sticky Note: How Diffusion Models Work (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-diffusion-models-work-step-by-step-sticky.svg" alt="Sticky Note: How Diffusion Models Work (Step by Step)" width="30%">
 </a>
 
 
@@ -886,14 +886,14 @@ Reverse (p):  x_T → x_{T-1} → ... → x₁ → x₀ (generated sample)
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -931,14 +931,14 @@ FUNCTION sample_diffusion(unet, prompt_embeds, T=1000, scheduler):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -967,14 +967,14 @@ After training, the U-Net learns to predict the noise at each step. Starting fro
 
 ### Python Implementation (Stable Diffusion with Diffusers)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-handwritten.svg" alt="Handwritten: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-handwritten.svg" alt="Handwritten: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-diagram.svg" alt="Diagram: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-diagram.svg" alt="Diagram: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-sticky.svg" alt="Sticky Note: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-stable-diffusion-with-diffusers-sticky.svg" alt="Sticky Note: Python Implementation (Stable Diffusion with Diffusers)" width="30%">
 </a>
 
 
@@ -1001,14 +1001,14 @@ pipe = pipe.to("cuda")
 
 ### Text-to-Image Generation
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-handwritten.svg" alt="Handwritten: Text-to-Image Generation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-handwritten.svg" alt="Handwritten: Text-to-Image Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-diagram.svg" alt="Diagram: Text-to-Image Generation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-diagram.svg" alt="Diagram: Text-to-Image Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-sticky.svg" alt="Sticky Note: Text-to-Image Generation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/text-to-image-generation-sticky.svg" alt="Sticky Note: Text-to-Image Generation" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ image.save("output/mountain_lake.png")
 
 ### Image-to-Image (Img2Img)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-handwritten.svg" alt="Handwritten: Image-to-Image (Img2Img)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-handwritten.svg" alt="Handwritten: Image-to-Image (Img2Img)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-diagram.svg" alt="Diagram: Image-to-Image (Img2Img)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-diagram.svg" alt="Diagram: Image-to-Image (Img2Img)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-sticky.svg" alt="Sticky Note: Image-to-Image (Img2Img)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/image-to-image-img2img-sticky.svg" alt="Sticky Note: Image-to-Image (Img2Img)" width="30%">
 </a>
 
 
@@ -1068,14 +1068,14 @@ result.save("output/sketch_to_photo.png")
 
 ### Inpainting
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-handwritten.svg" alt="Handwritten: Inpainting" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-handwritten.svg" alt="Handwritten: Inpainting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-diagram.svg" alt="Diagram: Inpainting" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-diagram.svg" alt="Diagram: Inpainting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-sticky.svg" alt="Sticky Note: Inpainting" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/inpainting-sticky.svg" alt="Sticky Note: Inpainting" width="30%">
 </a>
 
 
@@ -1104,14 +1104,14 @@ result.save("output/inpainted.png")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1125,14 +1125,14 @@ result.save("output/inpainted.png")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1147,14 +1147,14 @@ result.save("output/inpainted.png")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1180,14 +1180,14 @@ result.save("output/inpainted.png")
 
 ### Architecture
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
 </a>
 
 
@@ -1218,14 +1218,14 @@ Input:  "The cat sat on the"
 
 ### How Autoregressive Generation Works (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-handwritten.svg" alt="Handwritten: How Autoregressive Generation Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-handwritten.svg" alt="Handwritten: How Autoregressive Generation Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-diagram.svg" alt="Diagram: How Autoregressive Generation Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-diagram.svg" alt="Diagram: How Autoregressive Generation Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-sticky.svg" alt="Sticky Note: How Autoregressive Generation Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-autoregressive-generation-works-step-by-step-sticky.svg" alt="Sticky Note: How Autoregressive Generation Works (Step by Step)" width="30%">
 </a>
 
 
@@ -1241,14 +1241,14 @@ Input:  "The cat sat on the"
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1285,14 +1285,14 @@ FUNCTION generate(model, prompt, max_tokens, temperature):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -1310,14 +1310,14 @@ The attention weights show how the model learns that "cat" is the subject, "sat"
 
 ### Python Implementation (HuggingFace Transformers)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-handwritten.svg" alt="Handwritten: Python Implementation (HuggingFace Transformers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-handwritten.svg" alt="Handwritten: Python Implementation (HuggingFace Transformers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-diagram.svg" alt="Diagram: Python Implementation (HuggingFace Transformers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-diagram.svg" alt="Diagram: Python Implementation (HuggingFace Transformers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-sticky.svg" alt="Sticky Note: Python Implementation (HuggingFace Transformers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-huggingface-transformers-sticky.svg" alt="Sticky Note: Python Implementation (HuggingFace Transformers)" width="30%">
 </a>
 
 
@@ -1348,14 +1348,14 @@ print(generated_text)
 
 ### KV-Cache Optimization (Production Critical)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-handwritten.svg" alt="Handwritten: KV-Cache Optimization (Production Critical)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-handwritten.svg" alt="Handwritten: KV-Cache Optimization (Production Critical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-diagram.svg" alt="Diagram: KV-Cache Optimization (Production Critical)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-diagram.svg" alt="Diagram: KV-Cache Optimization (Production Critical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-sticky.svg" alt="Sticky Note: KV-Cache Optimization (Production Critical)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/kv-cache-optimization-production-critical-sticky.svg" alt="Sticky Note: KV-Cache Optimization (Production Critical)" width="30%">
 </a>
 
 
@@ -1384,14 +1384,14 @@ class CausalLMWithCache:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1406,14 +1406,14 @@ class CausalLMWithCache:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1428,14 +1428,14 @@ class CausalLMWithCache:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1459,14 +1459,14 @@ class CausalLMWithCache:
 
 ### Prompt Structure (SCEQ Framework)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-handwritten.svg" alt="Handwritten: Prompt Structure (SCEQ Framework)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-handwritten.svg" alt="Handwritten: Prompt Structure (SCEQ Framework)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-diagram.svg" alt="Diagram: Prompt Structure (SCEQ Framework)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-diagram.svg" alt="Diagram: Prompt Structure (SCEQ Framework)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-sticky.svg" alt="Sticky Note: Prompt Structure (SCEQ Framework)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-structure-sceq-framework-sticky.svg" alt="Sticky Note: Prompt Structure (SCEQ Framework)" width="30%">
 </a>
 
 
@@ -1486,14 +1486,14 @@ Negative: "blurry, low quality, distorted, ugly, extra limbs, bad anatomy"
 
 ### How Prompt Engineering Works (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-handwritten.svg" alt="Handwritten: How Prompt Engineering Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-handwritten.svg" alt="Handwritten: How Prompt Engineering Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-diagram.svg" alt="Diagram: How Prompt Engineering Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-diagram.svg" alt="Diagram: How Prompt Engineering Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-sticky.svg" alt="Sticky Note: How Prompt Engineering Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-prompt-engineering-works-step-by-step-sticky.svg" alt="Sticky Note: How Prompt Engineering Works (Step by Step)" width="30%">
 </a>
 
 
@@ -1508,14 +1508,14 @@ Negative: "blurry, low quality, distorted, ugly, extra limbs, bad anatomy"
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1542,14 +1542,14 @@ FUNCTION generate_with_prompt(pipe, positive, negative, steps, guidance):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -1563,14 +1563,14 @@ FUNCTION generate_with_prompt(pipe, positive, negative, steps, guidance):
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1630,14 +1630,14 @@ image, pos, neg = generate_with_prompt(
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1651,14 +1651,14 @@ image, pos, neg = generate_with_prompt(
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1672,14 +1672,14 @@ image, pos, neg = generate_with_prompt(
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1703,14 +1703,14 @@ image, pos, neg = generate_with_prompt(
 
 ### Overview
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/overview-diagram.svg" alt="Diagram: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
 </a>
 
 
@@ -1724,14 +1724,14 @@ image, pos, neg = generate_with_prompt(
 
 ### How LoRA Works (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-handwritten.svg" alt="Handwritten: How LoRA Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-handwritten.svg" alt="Handwritten: How LoRA Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-diagram.svg" alt="Diagram: How LoRA Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-diagram.svg" alt="Diagram: How LoRA Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-sticky.svg" alt="Sticky Note: How LoRA Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-lora-works-step-by-step-sticky.svg" alt="Sticky Note: How LoRA Works (Step by Step)" width="30%">
 </a>
 
 
@@ -1750,14 +1750,14 @@ With LoRA:        y = Wx + BAx
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1796,14 +1796,14 @@ FUNCTION train_lora(base_model, dataset, rank=8, epochs=100, lr=1e-4):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -1826,14 +1826,14 @@ FUNCTION train_lora(base_model, dataset, rank=8, epochs=100, lr=1e-4):
 
 ### Python Implementation (LoRA with Diffusers)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-handwritten.svg" alt="Handwritten: Python Implementation (LoRA with Diffusers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-handwritten.svg" alt="Handwritten: Python Implementation (LoRA with Diffusers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-diagram.svg" alt="Diagram: Python Implementation (LoRA with Diffusers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-diagram.svg" alt="Diagram: Python Implementation (LoRA with Diffusers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-sticky.svg" alt="Sticky Note: Python Implementation (LoRA with Diffusers)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-lora-with-diffusers-sticky.svg" alt="Sticky Note: Python Implementation (LoRA with Diffusers)" width="30%">
 </a>
 
 
@@ -1890,14 +1890,14 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1911,14 +1911,14 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1932,14 +1932,14 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ print(f"LoRA weights saved (~5MB) — {lora_layers.num_parameters():,} params tr
 
 ### Architecture
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
 </a>
 
 
@@ -2006,14 +2006,14 @@ User Query
 
 ### How RAG Works (Step by Step)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-handwritten.svg" alt="Handwritten: How RAG Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-handwritten.svg" alt="Handwritten: How RAG Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-diagram.svg" alt="Diagram: How RAG Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-diagram.svg" alt="Diagram: How RAG Works (Step by Step)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-sticky.svg" alt="Sticky Note: How RAG Works (Step by Step)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/how-rag-works-step-by-step-sticky.svg" alt="Sticky Note: How RAG Works (Step by Step)" width="30%">
 </a>
 
 
@@ -2034,14 +2034,14 @@ User Query
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2084,14 +2084,14 @@ FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
 
 ### Step-by-Step Dry Run (Trace Table)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/step-by-step-dry-run-trace-table-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Trace Table)" width="30%">
 </a>
 
 
@@ -2114,14 +2114,14 @@ FUNCTION rag_query(query, embed_model, vector_db, llm, top_k=5):
 
 ### Python Implementation (RAG with LangChain + Chroma)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-handwritten.svg" alt="Handwritten: Python Implementation (RAG with LangChain + Chroma)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-handwritten.svg" alt="Handwritten: Python Implementation (RAG with LangChain + Chroma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-diagram.svg" alt="Diagram: Python Implementation (RAG with LangChain + Chroma)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-diagram.svg" alt="Diagram: Python Implementation (RAG with LangChain + Chroma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-sticky.svg" alt="Sticky Note: Python Implementation (RAG with LangChain + Chroma)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/python-implementation-rag-with-langchain-chroma-sticky.svg" alt="Sticky Note: Python Implementation (RAG with LangChain + Chroma)" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ print(f"Sources: {[d.metadata['source'] for d in result['source_documents']]}")
 
 ### Advanced: Hybrid Search (Dense + Sparse)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-handwritten.svg" alt="Handwritten: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-handwritten.svg" alt="Handwritten: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-diagram.svg" alt="Diagram: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-diagram.svg" alt="Diagram: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-sticky.svg" alt="Sticky Note: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advanced-hybrid-search-dense-sparse-sticky.svg" alt="Sticky Note: Advanced: Hybrid Search (Dense + Sparse)" width="30%">
 </a>
 
 
@@ -2217,14 +2217,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2239,14 +2239,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2261,14 +2261,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2307,14 +2307,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### When to Choose What
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-handwritten.svg" alt="Handwritten: When to Choose What" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-handwritten.svg" alt="Handwritten: When to Choose What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-diagram.svg" alt="Diagram: When to Choose What" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-diagram.svg" alt="Diagram: When to Choose What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-sticky.svg" alt="Sticky Note: When to Choose What" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/when-to-choose-what-sticky.svg" alt="Sticky Note: When to Choose What" width="30%">
 </a>
 
 
@@ -2335,14 +2335,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Prompt Engineering Tips
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-handwritten.svg" alt="Handwritten: Prompt Engineering Tips" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-handwritten.svg" alt="Handwritten: Prompt Engineering Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-diagram.svg" alt="Diagram: Prompt Engineering Tips" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-diagram.svg" alt="Diagram: Prompt Engineering Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-sticky.svg" alt="Sticky Note: Prompt Engineering Tips" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/prompt-engineering-tips-sticky.svg" alt="Sticky Note: Prompt Engineering Tips" width="30%">
 </a>
 
 
@@ -2356,14 +2356,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Fine-Tuning vs RAG
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-handwritten.svg" alt="Handwritten: Fine-Tuning vs RAG" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-handwritten.svg" alt="Handwritten: Fine-Tuning vs RAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-diagram.svg" alt="Diagram: Fine-Tuning vs RAG" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-diagram.svg" alt="Diagram: Fine-Tuning vs RAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-sticky.svg" alt="Sticky Note: Fine-Tuning vs RAG" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/fine-tuning-vs-rag-sticky.svg" alt="Sticky Note: Fine-Tuning vs RAG" width="30%">
 </a>
 
 
@@ -2384,14 +2384,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Safety and Responsibility
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-handwritten.svg" alt="Handwritten: Safety and Responsibility" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-handwritten.svg" alt="Handwritten: Safety and Responsibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-diagram.svg" alt="Diagram: Safety and Responsibility" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-diagram.svg" alt="Diagram: Safety and Responsibility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-sticky.svg" alt="Sticky Note: Safety and Responsibility" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/safety-and-responsibility-sticky.svg" alt="Sticky Note: Safety and Responsibility" width="30%">
 </a>
 
 
@@ -2405,14 +2405,14 @@ results = hybrid_retriever.get_relevant_documents(query)
 
 ### Common Interview Questions
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-handwritten.svg" alt="Handwritten: Common Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-handwritten.svg" alt="Handwritten: Common Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-diagram.svg" alt="Diagram: Common Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-diagram.svg" alt="Diagram: Common Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-sticky.svg" alt="Sticky Note: Common Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/common-interview-questions-sticky.svg" alt="Sticky Note: Common Interview Questions" width="30%">
 </a>
 
 
@@ -2437,14 +2437,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### DALL·E 3 (OpenAI)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-handwritten.svg" alt="Handwritten: DALL·E 3 (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-handwritten.svg" alt="Handwritten: DALL·E 3 (OpenAI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-diagram.svg" alt="Diagram: DALL·E 3 (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-diagram.svg" alt="Diagram: DALL·E 3 (OpenAI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-sticky.svg" alt="Sticky Note: DALL·E 3 (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/dall-e-3-openai-sticky.svg" alt="Sticky Note: DALL·E 3 (OpenAI)" width="30%">
 </a>
 
 
@@ -2456,14 +2456,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### ChatGPT / GPT-4 (OpenAI)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-handwritten.svg" alt="Handwritten: ChatGPT / GPT-4 (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-handwritten.svg" alt="Handwritten: ChatGPT / GPT-4 (OpenAI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-diagram.svg" alt="Diagram: ChatGPT / GPT-4 (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-diagram.svg" alt="Diagram: ChatGPT / GPT-4 (OpenAI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-sticky.svg" alt="Sticky Note: ChatGPT / GPT-4 (OpenAI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/chatgpt-gpt-4-openai-sticky.svg" alt="Sticky Note: ChatGPT / GPT-4 (OpenAI)" width="30%">
 </a>
 
 
@@ -2475,14 +2475,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### Midjourney
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-handwritten.svg" alt="Handwritten: Midjourney" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-handwritten.svg" alt="Handwritten: Midjourney" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-diagram.svg" alt="Diagram: Midjourney" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-diagram.svg" alt="Diagram: Midjourney" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-sticky.svg" alt="Sticky Note: Midjourney" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/midjourney-sticky.svg" alt="Sticky Note: Midjourney" width="30%">
 </a>
 
 
@@ -2494,14 +2494,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### GitHub Copilot
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-handwritten.svg" alt="Handwritten: GitHub Copilot" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-handwritten.svg" alt="Handwritten: GitHub Copilot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-diagram.svg" alt="Diagram: GitHub Copilot" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-diagram.svg" alt="Diagram: GitHub Copilot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-sticky.svg" alt="Sticky Note: GitHub Copilot" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/github-copilot-sticky.svg" alt="Sticky Note: GitHub Copilot" width="30%">
 </a>
 
 
@@ -2513,14 +2513,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### Stable Diffusion (Stability AI)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-handwritten.svg" alt="Handwritten: Stable Diffusion (Stability AI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-handwritten.svg" alt="Handwritten: Stable Diffusion (Stability AI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-diagram.svg" alt="Diagram: Stable Diffusion (Stability AI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-diagram.svg" alt="Diagram: Stable Diffusion (Stability AI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-sticky.svg" alt="Sticky Note: Stable Diffusion (Stability AI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/stable-diffusion-stability-ai-sticky.svg" alt="Sticky Note: Stable Diffusion (Stability AI)" width="30%">
 </a>
 
 
@@ -2532,14 +2532,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### Comparison Table
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
 </a>
 
 
@@ -2557,14 +2557,14 @@ A: (1) Load base diffusion model with fp16, (2) Add LoRA adapters for custom sty
 
 ### 4.12.1 FID Score (Fréchet Inception Distance)
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-handwritten.svg" alt="Handwritten: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-handwritten.svg" alt="Handwritten: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-diagram.svg" alt="Diagram: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-diagram.svg" alt="Diagram: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-sticky.svg" alt="Sticky Note: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/4-12-1-fid-score-fr-chet-inception-distance-sticky.svg" alt="Sticky Note: 4.12.1 FID Score (Fréchet Inception Distance)" width="30%">
 </a>
 
 
@@ -2589,14 +2589,14 @@ def calculate_fid(real_features: np.ndarray, gen_features: np.ndarray) -> float:
 
 ### Other Metrics
 
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-handwritten.svg" alt="Handwritten: Other Metrics" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-handwritten.svg" alt="Handwritten: Other Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-diagram.svg" alt="Diagram: Other Metrics" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-diagram.svg" alt="Diagram: Other Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-sticky.svg" alt="Sticky Note: Other Metrics" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/04-generative-ai/other-metrics-sticky.svg" alt="Sticky Note: Other Metrics" width="30%">
 </a>
 
 

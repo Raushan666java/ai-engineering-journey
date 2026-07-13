@@ -15,14 +15,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)
 
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-handwritten.svg" alt="Handwritten: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-handwritten.svg" alt="Handwritten: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-diagram.svg" alt="Diagram: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-diagram.svg" alt="Diagram: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-sticky.svg" alt="Sticky Note: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-sticky.svg" alt="Sticky Note: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
 </a>
 
 
@@ -37,14 +37,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.2 गद्यांश के प्रकार (Types of Passages)
 
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-handwritten.svg" alt="Handwritten: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-handwritten.svg" alt="Handwritten: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-diagram.svg" alt="Diagram: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-diagram.svg" alt="Diagram: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-sticky.svg" alt="Sticky Note: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-sticky.svg" alt="Sticky Note: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.3 प्रश्नों के प्रकार (Types of Questions)
 
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-handwritten.svg" alt="Handwritten: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-handwritten.svg" alt="Handwritten: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-diagram.svg" alt="Diagram: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-diagram.svg" alt="Diagram: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-sticky.svg" alt="Sticky Note: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-sticky.svg" alt="Sticky Note: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ flowchart TD
 
 ### 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)
 
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-handwritten.svg" alt="Handwritten: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-handwritten.svg" alt="Handwritten: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-diagram.svg" alt="Diagram: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-diagram.svg" alt="Diagram: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-sticky.svg" alt="Sticky Note: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-sticky.svg" alt="Sticky Note: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@ flowchart LR
 
 ### 2.5 समय प्रबंधन (Time Management)
 
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-handwritten.svg" alt="Handwritten: 2.5 समय प्रबंधन (Time Management)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-handwritten.svg" alt="Handwritten: 2.5 समय प्रबंधन (Time Management)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-diagram.svg" alt="Diagram: 2.5 समय प्रबंधन (Time Management)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-diagram.svg" alt="Diagram: 2.5 समय प्रबंधन (Time Management)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-sticky.svg" alt="Sticky Note: 2.5 समय प्रबंधन (Time Management)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-sticky.svg" alt="Sticky Note: 2.5 समय प्रबंधन (Time Management)" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ flowchart LR
 
 ### 2.6 सामान्य गलतियाँ (Common Mistakes)
 
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-handwritten.svg" alt="Handwritten: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-handwritten.svg" alt="Handwritten: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-diagram.svg" alt="Diagram: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-diagram.svg" alt="Diagram: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-sticky.svg" alt="Sticky Note: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-sticky.svg" alt="Sticky Note: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
 </a>
 
 

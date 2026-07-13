@@ -48,14 +48,14 @@ SRAM stores each bit in a **cross-coupled inverter pair** ? a bistable latch tha
 
 ### 9.2.1 6T SRAM Cell
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-handwritten.svg" alt="Handwritten: 9.2.1 6T SRAM Cell" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-handwritten.svg" alt="Handwritten: 9.2.1 6T SRAM Cell" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-diagram.svg" alt="Diagram: 9.2.1 6T SRAM Cell" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-diagram.svg" alt="Diagram: 9.2.1 6T SRAM Cell" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-sticky.svg" alt="Sticky Note: 9.2.1 6T SRAM Cell" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-sticky.svg" alt="Sticky Note: 9.2.1 6T SRAM Cell" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ class SRAM6T {
 
 ### 9.2.2 SRAM Array Architecture
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-handwritten.svg" alt="Handwritten: 9.2.2 SRAM Array Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-handwritten.svg" alt="Handwritten: 9.2.2 SRAM Array Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-diagram.svg" alt="Diagram: 9.2.2 SRAM Array Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-diagram.svg" alt="Diagram: 9.2.2 SRAM Array Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-sticky.svg" alt="Sticky Note: 9.2.2 SRAM Array Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-sticky.svg" alt="Sticky Note: 9.2.2 SRAM Array Architecture" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ console.log(ram.read(0b001001)); // 1
 
 ### 9.2.3 Sense Amplifier
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-handwritten.svg" alt="Handwritten: 9.2.3 Sense Amplifier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-handwritten.svg" alt="Handwritten: 9.2.3 Sense Amplifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-diagram.svg" alt="Diagram: 9.2.3 Sense Amplifier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-diagram.svg" alt="Diagram: 9.2.3 Sense Amplifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-sticky.svg" alt="Sticky Note: 9.2.3 Sense Amplifier" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-sticky.svg" alt="Sticky Note: 9.2.3 Sense Amplifier" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ DRAM stores each bit on a **capacitor** that leaks charge over time, requiring p
 
 ### 9.3.1 1T1C DRAM Cell
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-handwritten.svg" alt="Handwritten: 9.3.1 1T1C DRAM Cell" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-handwritten.svg" alt="Handwritten: 9.3.1 1T1C DRAM Cell" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-diagram.svg" alt="Diagram: 9.3.1 1T1C DRAM Cell" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-diagram.svg" alt="Diagram: 9.3.1 1T1C DRAM Cell" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-sticky.svg" alt="Sticky Note: 9.3.1 1T1C DRAM Cell" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-sticky.svg" alt="Sticky Note: 9.3.1 1T1C DRAM Cell" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ class DRAMCell {
 
 ### 9.3.2 DRAM Timing
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-handwritten.svg" alt="Handwritten: 9.3.2 DRAM Timing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-handwritten.svg" alt="Handwritten: 9.3.2 DRAM Timing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-diagram.svg" alt="Diagram: 9.3.2 DRAM Timing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-diagram.svg" alt="Diagram: 9.3.2 DRAM Timing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-sticky.svg" alt="Sticky Note: 9.3.2 DRAM Timing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-sticky.svg" alt="Sticky Note: 9.3.2 DRAM Timing" width="30%">
 </a>
 
 
@@ -297,14 +297,14 @@ function accessTime(timing: DRAMTiming): number {
 
 ### 9.3.3 DRAM Refresh
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-handwritten.svg" alt="Handwritten: 9.3.3 DRAM Refresh" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-handwritten.svg" alt="Handwritten: 9.3.3 DRAM Refresh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-diagram.svg" alt="Diagram: 9.3.3 DRAM Refresh" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-diagram.svg" alt="Diagram: 9.3.3 DRAM Refresh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-sticky.svg" alt="Sticky Note: 9.3.3 DRAM Refresh" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-sticky.svg" alt="Sticky Note: 9.3.3 DRAM Refresh" width="30%">
 </a>
 
 
@@ -357,14 +357,14 @@ class DRAMController {
 
 ### 9.3.4 SDRAM and DDR
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-handwritten.svg" alt="Handwritten: 9.3.4 SDRAM and DDR" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-handwritten.svg" alt="Handwritten: 9.3.4 SDRAM and DDR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-diagram.svg" alt="Diagram: 9.3.4 SDRAM and DDR" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-diagram.svg" alt="Diagram: 9.3.4 SDRAM and DDR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-sticky.svg" alt="Sticky Note: 9.3.4 SDRAM and DDR" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-sticky.svg" alt="Sticky Note: 9.3.4 SDRAM and DDR" width="30%">
 </a>
 
 
@@ -390,14 +390,14 @@ console.log(`DDR5-6400 ? 64-bit ? 2 ch: ${dramBandwidth(6400, 64, 2)} MB/s`); //
 
 ### 9.4.1 Mask ROM
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-handwritten.svg" alt="Handwritten: 9.4.1 Mask ROM" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-handwritten.svg" alt="Handwritten: 9.4.1 Mask ROM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-diagram.svg" alt="Diagram: 9.4.1 Mask ROM" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-diagram.svg" alt="Diagram: 9.4.1 Mask ROM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-sticky.svg" alt="Sticky Note: 9.4.1 Mask ROM" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-sticky.svg" alt="Sticky Note: 9.4.1 Mask ROM" width="30%">
 </a>
 
 
@@ -424,14 +424,14 @@ const sineLUT = new MaskROM([
 
 ### 9.4.2 PROM, EPROM, EEPROM
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-handwritten.svg" alt="Handwritten: 9.4.2 PROM, EPROM, EEPROM" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-handwritten.svg" alt="Handwritten: 9.4.2 PROM, EPROM, EEPROM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-diagram.svg" alt="Diagram: 9.4.2 PROM, EPROM, EEPROM" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-diagram.svg" alt="Diagram: 9.4.2 PROM, EPROM, EEPROM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-sticky.svg" alt="Sticky Note: 9.4.2 PROM, EPROM, EEPROM" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-sticky.svg" alt="Sticky Note: 9.4.2 PROM, EPROM, EEPROM" width="30%">
 </a>
 
 
@@ -441,14 +441,14 @@ const sineLUT = new MaskROM([
 
 ### 9.4.3 Flash Memory
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-handwritten.svg" alt="Handwritten: 9.4.3 Flash Memory" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-handwritten.svg" alt="Handwritten: 9.4.3 Flash Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-diagram.svg" alt="Diagram: 9.4.3 Flash Memory" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-diagram.svg" alt="Diagram: 9.4.3 Flash Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-sticky.svg" alt="Sticky Note: 9.4.3 Flash Memory" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-sticky.svg" alt="Sticky Note: 9.4.3 Flash Memory" width="30%">
 </a>
 
 
@@ -512,14 +512,14 @@ The address decoder selects one word line from 2? address lines. Two architectur
 
 ### 9.5.1 Single-Level (NAND) Decoder
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-handwritten.svg" alt="Handwritten: 9.5.1 Single-Level (NAND) Decoder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-handwritten.svg" alt="Handwritten: 9.5.1 Single-Level (NAND) Decoder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-diagram.svg" alt="Diagram: 9.5.1 Single-Level (NAND) Decoder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-diagram.svg" alt="Diagram: 9.5.1 Single-Level (NAND) Decoder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-sticky.svg" alt="Sticky Note: 9.5.1 Single-Level (NAND) Decoder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-sticky.svg" alt="Sticky Note: 9.5.1 Single-Level (NAND) Decoder" width="30%">
 </a>
 
 
@@ -533,14 +533,14 @@ WL? = ?(A0 = a0 ? A1 = a1 ? ... ? A??1 = a??1)
 
 ### 9.5.2 Two-Level (Pre-) Decoder
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-handwritten.svg" alt="Handwritten: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-handwritten.svg" alt="Handwritten: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-diagram.svg" alt="Diagram: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-diagram.svg" alt="Diagram: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-sticky.svg" alt="Sticky Note: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-sticky.svg" alt="Sticky Note: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
 </a>
 
 
@@ -591,14 +591,14 @@ class PreDecoder {
 
 ### 9.6.1 Parity
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-handwritten.svg" alt="Handwritten: 9.6.1 Parity" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-handwritten.svg" alt="Handwritten: 9.6.1 Parity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-diagram.svg" alt="Diagram: 9.6.1 Parity" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-diagram.svg" alt="Diagram: 9.6.1 Parity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-sticky.svg" alt="Sticky Note: 9.6.1 Parity" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-sticky.svg" alt="Sticky Note: 9.6.1 Parity" width="30%">
 </a>
 
 
@@ -606,14 +606,14 @@ Single-bit parity detects an odd number of errors. Used in DRAM row-based protec
 
 ### 9.6.2 Hamming Code (SECDED)
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-handwritten.svg" alt="Handwritten: 9.6.2 Hamming Code (SECDED)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-handwritten.svg" alt="Handwritten: 9.6.2 Hamming Code (SECDED)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-diagram.svg" alt="Diagram: 9.6.2 Hamming Code (SECDED)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-diagram.svg" alt="Diagram: 9.6.2 Hamming Code (SECDED)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-sticky.svg" alt="Sticky Note: 9.6.2 Hamming Code (SECDED)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-sticky.svg" alt="Sticky Note: 9.6.2 Hamming Code (SECDED)" width="30%">
 </a>
 
 
@@ -1064,14 +1064,14 @@ d) Higher density
 
 ### Answers
 
-<a href="../../assets/images/diagrams/digital-logic/09-memory/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/answers-diagram.svg" alt="Diagram: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/09-memory/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/09-memory/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/09-memory/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/09-memory/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
 </a>
 
 

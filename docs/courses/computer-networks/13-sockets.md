@@ -17,14 +17,14 @@
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -42,14 +42,14 @@ The kernel is the **telephone exchange**: it routes data between endpoints, buff
 
 ### What Is a Socket?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-handwritten.svg" alt="Handwritten: What Is a Socket?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-handwritten.svg" alt="Handwritten: What Is a Socket?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-diagram.svg" alt="Diagram: What Is a Socket?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-diagram.svg" alt="Diagram: What Is a Socket?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-sticky.svg" alt="Sticky Note: What Is a Socket?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-a-socket-sticky.svg" alt="Sticky Note: What Is a Socket?" width="30%">
 </a>
 
 
@@ -69,14 +69,14 @@ Application (user space)
 
 ### Socket Creation
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-handwritten.svg" alt="Handwritten: Socket Creation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-handwritten.svg" alt="Handwritten: Socket Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-diagram.svg" alt="Diagram: Socket Creation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-diagram.svg" alt="Diagram: Socket Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-sticky.svg" alt="Sticky Note: Socket Creation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/socket-creation-sticky.svg" alt="Sticky Note: Socket Creation" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ int socket(int domain, int type, int protocol);
 
 ### Numbered Steps → Socket Lifecycle
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-handwritten.svg" alt="Handwritten: Numbered Steps → Socket Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-handwritten.svg" alt="Handwritten: Numbered Steps → Socket Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-diagram.svg" alt="Diagram: Numbered Steps → Socket Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-diagram.svg" alt="Diagram: Numbered Steps → Socket Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-sticky.svg" alt="Sticky Note: Numbered Steps → Socket Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-socket-lifecycle-sticky.svg" alt="Sticky Note: Numbered Steps → Socket Lifecycle" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ int socket(int domain, int type, int protocol);
 
 ### Pseudocode → Generic Client/Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-handwritten.svg" alt="Handwritten: Pseudocode → Generic Client/Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-handwritten.svg" alt="Handwritten: Pseudocode → Generic Client/Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-diagram.svg" alt="Diagram: Pseudocode → Generic Client/Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-diagram.svg" alt="Diagram: Pseudocode → Generic Client/Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-sticky.svg" alt="Sticky Note: Pseudocode → Generic Client/Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-generic-client-server-sticky.svg" alt="Sticky Note: Pseudocode → Generic Client/Server" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ close(fd)
 
 ### Dry Run → Socket Creation Trace
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-handwritten.svg" alt="Handwritten: Dry Run → Socket Creation Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-handwritten.svg" alt="Handwritten: Dry Run → Socket Creation Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-diagram.svg" alt="Diagram: Dry Run → Socket Creation Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-diagram.svg" alt="Diagram: Dry Run → Socket Creation Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-sticky.svg" alt="Sticky Note: Dry Run → Socket Creation Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-socket-creation-trace-sticky.svg" alt="Sticky Note: Dry Run → Socket Creation Trace" width="30%">
 </a>
 
 
@@ -171,14 +171,14 @@ close(fd)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ close(fd)
 
 ### A&D Table → Socket API
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-handwritten.svg" alt="Handwritten: A&D Table → Socket API" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-handwritten.svg" alt="Handwritten: A&D Table → Socket API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-diagram.svg" alt="Diagram: A&D Table → Socket API" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-diagram.svg" alt="Diagram: A&D Table → Socket API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-sticky.svg" alt="Sticky Note: A&D Table → Socket API" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-socket-api-sticky.svg" alt="Sticky Note: A&D Table → Socket API" width="30%">
 </a>
 
 
@@ -216,14 +216,14 @@ close(fd)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ close(fd)
 
 ### Real-World Analogy: Restaurant Phone for Reservations
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-handwritten.svg" alt="Handwritten: Real-World Analogy: Restaurant Phone for Reservations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-handwritten.svg" alt="Handwritten: Real-World Analogy: Restaurant Phone for Reservations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-diagram.svg" alt="Diagram: Real-World Analogy: Restaurant Phone for Reservations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-diagram.svg" alt="Diagram: Real-World Analogy: Restaurant Phone for Reservations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-sticky.svg" alt="Sticky Note: Real-World Analogy: Restaurant Phone for Reservations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-phone-for-reservations-sticky.svg" alt="Sticky Note: Real-World Analogy: Restaurant Phone for Reservations" width="30%">
 </a>
 
 
@@ -273,14 +273,14 @@ TCP guarantees: **reliable, in-order, connection-oriented, full-duplex byte stre
 
 ### TCP Server Steps
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-handwritten.svg" alt="Handwritten: TCP Server Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-handwritten.svg" alt="Handwritten: TCP Server Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-diagram.svg" alt="Diagram: TCP Server Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-diagram.svg" alt="Diagram: TCP Server Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-sticky.svg" alt="Sticky Note: TCP Server Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-server-steps-sticky.svg" alt="Sticky Note: TCP Server Steps" width="30%">
 </a>
 
 
@@ -296,14 +296,14 @@ Step 7: close()     → Close client, then server
 
 ### TCP Client Steps
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-handwritten.svg" alt="Handwritten: TCP Client Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-handwritten.svg" alt="Handwritten: TCP Client Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-diagram.svg" alt="Diagram: TCP Client Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-diagram.svg" alt="Diagram: TCP Client Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-sticky.svg" alt="Sticky Note: TCP Client Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-client-steps-sticky.svg" alt="Sticky Note: TCP Client Steps" width="30%">
 </a>
 
 
@@ -316,14 +316,14 @@ Step 4: close()     → Terminate connection
 
 ### Pseudocode → TCP Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-handwritten.svg" alt="Handwritten: Pseudocode → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-handwritten.svg" alt="Handwritten: Pseudocode → TCP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-diagram.svg" alt="Diagram: Pseudocode → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-diagram.svg" alt="Diagram: Pseudocode → TCP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-sticky.svg" alt="Sticky Note: Pseudocode → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-server-sticky.svg" alt="Sticky Note: Pseudocode → TCP Echo Server" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ function tcp_echo_server(port):
 
 ### Pseudocode → TCP Echo Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-handwritten.svg" alt="Handwritten: Pseudocode → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-handwritten.svg" alt="Handwritten: Pseudocode → TCP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-diagram.svg" alt="Diagram: Pseudocode → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-diagram.svg" alt="Diagram: Pseudocode → TCP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-sticky.svg" alt="Sticky Note: Pseudocode → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-tcp-echo-client-sticky.svg" alt="Sticky Note: Pseudocode → TCP Echo Client" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ function tcp_echo_client(host, port, message):
 
 ### Dry Run → TCP 3-Way Handshake
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-handwritten.svg" alt="Handwritten: Dry Run → TCP 3-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-handwritten.svg" alt="Handwritten: Dry Run → TCP 3-Way Handshake" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-diagram.svg" alt="Diagram: Dry Run → TCP 3-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-diagram.svg" alt="Diagram: Dry Run → TCP 3-Way Handshake" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-sticky.svg" alt="Sticky Note: Dry Run → TCP 3-Way Handshake" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-tcp-3-way-handshake-sticky.svg" alt="Sticky Note: Dry Run → TCP 3-Way Handshake" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ function tcp_echo_client(host, port, message):
 
 ### C++ Implementation → TCP Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-handwritten.svg" alt="Handwritten: C++ Implementation → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-handwritten.svg" alt="Handwritten: C++ Implementation → TCP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-diagram.svg" alt="Diagram: C++ Implementation → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-diagram.svg" alt="Diagram: C++ Implementation → TCP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-sticky.svg" alt="Sticky Note: C++ Implementation → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-server-sticky.svg" alt="Sticky Note: C++ Implementation → TCP Echo Server" width="30%">
 </a>
 
 
@@ -530,14 +530,14 @@ int main() {
 
 ### C++ Implementation → TCP Echo Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-handwritten.svg" alt="Handwritten: C++ Implementation → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-handwritten.svg" alt="Handwritten: C++ Implementation → TCP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-diagram.svg" alt="Diagram: C++ Implementation → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-diagram.svg" alt="Diagram: C++ Implementation → TCP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-sticky.svg" alt="Sticky Note: C++ Implementation → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-tcp-echo-client-sticky.svg" alt="Sticky Note: C++ Implementation → TCP Echo Client" width="30%">
 </a>
 
 
@@ -618,14 +618,14 @@ int main(int argc, char* argv[]) {
 
 ### Python Implementation → TCP Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-handwritten.svg" alt="Handwritten: Python Implementation → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-handwritten.svg" alt="Handwritten: Python Implementation → TCP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-diagram.svg" alt="Diagram: Python Implementation → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-diagram.svg" alt="Diagram: Python Implementation → TCP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-sticky.svg" alt="Sticky Note: Python Implementation → TCP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-server-sticky.svg" alt="Sticky Note: Python Implementation → TCP Echo Server" width="30%">
 </a>
 
 
@@ -678,14 +678,14 @@ if __name__ == '__main__':
 
 ### Python Implementation → TCP Echo Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-handwritten.svg" alt="Handwritten: Python Implementation → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-handwritten.svg" alt="Handwritten: Python Implementation → TCP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-diagram.svg" alt="Diagram: Python Implementation → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-diagram.svg" alt="Diagram: Python Implementation → TCP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-sticky.svg" alt="Sticky Note: Python Implementation → TCP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-tcp-echo-client-sticky.svg" alt="Sticky Note: Python Implementation → TCP Echo Client" width="30%">
 </a>
 
 
@@ -725,14 +725,14 @@ if __name__ == '__main__':
 
 ### Complexity Analysis → TCP
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-handwritten.svg" alt="Handwritten: Complexity Analysis → TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-handwritten.svg" alt="Handwritten: Complexity Analysis → TCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-diagram.svg" alt="Diagram: Complexity Analysis → TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-diagram.svg" alt="Diagram: Complexity Analysis → TCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-sticky.svg" alt="Sticky Note: Complexity Analysis → TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-tcp-sticky.svg" alt="Sticky Note: Complexity Analysis → TCP" width="30%">
 </a>
 
 
@@ -751,14 +751,14 @@ if __name__ == '__main__':
 
 ### A&D Table → TCP Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-handwritten.svg" alt="Handwritten: A&D Table → TCP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-handwritten.svg" alt="Handwritten: A&D Table → TCP Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-diagram.svg" alt="Diagram: A&D Table → TCP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-diagram.svg" alt="Diagram: A&D Table → TCP Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-sticky.svg" alt="Sticky Note: A&D Table → TCP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-tcp-sockets-sticky.svg" alt="Sticky Note: A&D Table → TCP Sockets" width="30%">
 </a>
 
 
@@ -773,14 +773,14 @@ if __name__ == '__main__':
 
 ### Edge Cases → TCP
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-handwritten.svg" alt="Handwritten: Edge Cases → TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-handwritten.svg" alt="Handwritten: Edge Cases → TCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-diagram.svg" alt="Diagram: Edge Cases → TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-diagram.svg" alt="Diagram: Edge Cases → TCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-sticky.svg" alt="Sticky Note: Edge Cases → TCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-tcp-sticky.svg" alt="Sticky Note: Edge Cases → TCP" width="30%">
 </a>
 
 
@@ -931,14 +931,14 @@ Output:
 
 ### Real-World Analogy: Post Office Mailbox
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-handwritten.svg" alt="Handwritten: Real-World Analogy: Post Office Mailbox" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-handwritten.svg" alt="Handwritten: Real-World Analogy: Post Office Mailbox" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-diagram.svg" alt="Diagram: Real-World Analogy: Post Office Mailbox" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-diagram.svg" alt="Diagram: Real-World Analogy: Post Office Mailbox" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-sticky.svg" alt="Sticky Note: Real-World Analogy: Post Office Mailbox" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-post-office-mailbox-sticky.svg" alt="Sticky Note: Real-World Analogy: Post Office Mailbox" width="30%">
 </a>
 
 
@@ -956,14 +956,14 @@ UDP characteristics: **unreliable, connectionless, message-oriented, no ordering
 
 ### UDP Server Steps
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-handwritten.svg" alt="Handwritten: UDP Server Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-handwritten.svg" alt="Handwritten: UDP Server Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-diagram.svg" alt="Diagram: UDP Server Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-diagram.svg" alt="Diagram: UDP Server Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-sticky.svg" alt="Sticky Note: UDP Server Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/udp-server-steps-sticky.svg" alt="Sticky Note: UDP Server Steps" width="30%">
 </a>
 
 
@@ -977,14 +977,14 @@ Step 5: close(sock)
 
 ### UDP Client Steps
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-handwritten.svg" alt="Handwritten: UDP Client Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-handwritten.svg" alt="Handwritten: UDP Client Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-diagram.svg" alt="Diagram: UDP Client Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-diagram.svg" alt="Diagram: UDP Client Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-sticky.svg" alt="Sticky Note: UDP Client Steps" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/udp-client-steps-sticky.svg" alt="Sticky Note: UDP Client Steps" width="30%">
 </a>
 
 
@@ -997,14 +997,14 @@ Step 4: close(sock)
 
 ### Pseudocode → UDP Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-handwritten.svg" alt="Handwritten: Pseudocode → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-handwritten.svg" alt="Handwritten: Pseudocode → UDP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-diagram.svg" alt="Diagram: Pseudocode → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-diagram.svg" alt="Diagram: Pseudocode → UDP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-sticky.svg" alt="Sticky Note: Pseudocode → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-server-sticky.svg" alt="Sticky Note: Pseudocode → UDP Echo Server" width="30%">
 </a>
 
 
@@ -1021,14 +1021,14 @@ function udp_echo_server(port):
 
 ### Pseudocode → UDP Echo Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-handwritten.svg" alt="Handwritten: Pseudocode → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-handwritten.svg" alt="Handwritten: Pseudocode → UDP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-diagram.svg" alt="Diagram: Pseudocode → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-diagram.svg" alt="Diagram: Pseudocode → UDP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-sticky.svg" alt="Sticky Note: Pseudocode → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/pseudocode-udp-echo-client-sticky.svg" alt="Sticky Note: Pseudocode → UDP Echo Client" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ function udp_echo_client(host, port, message):
 
 ### Dry Run → UDP Datagram Flow
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-handwritten.svg" alt="Handwritten: Dry Run → UDP Datagram Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-handwritten.svg" alt="Handwritten: Dry Run → UDP Datagram Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-diagram.svg" alt="Diagram: Dry Run → UDP Datagram Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-diagram.svg" alt="Diagram: Dry Run → UDP Datagram Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-sticky.svg" alt="Sticky Note: Dry Run → UDP Datagram Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-udp-datagram-flow-sticky.svg" alt="Sticky Note: Dry Run → UDP Datagram Flow" width="30%">
 </a>
 
 
@@ -1067,14 +1067,14 @@ function udp_echo_client(host, port, message):
 
 ### C++ Implementation → UDP Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-handwritten.svg" alt="Handwritten: C++ Implementation → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-handwritten.svg" alt="Handwritten: C++ Implementation → UDP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-diagram.svg" alt="Diagram: C++ Implementation → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-diagram.svg" alt="Diagram: C++ Implementation → UDP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-sticky.svg" alt="Sticky Note: C++ Implementation → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-server-sticky.svg" alt="Sticky Note: C++ Implementation → UDP Echo Server" width="30%">
 </a>
 
 
@@ -1137,14 +1137,14 @@ int main() {
 
 ### C++ Implementation → UDP Echo Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-handwritten.svg" alt="Handwritten: C++ Implementation → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-handwritten.svg" alt="Handwritten: C++ Implementation → UDP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-diagram.svg" alt="Diagram: C++ Implementation → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-diagram.svg" alt="Diagram: C++ Implementation → UDP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-sticky.svg" alt="Sticky Note: C++ Implementation → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-implementation-udp-echo-client-sticky.svg" alt="Sticky Note: C++ Implementation → UDP Echo Client" width="30%">
 </a>
 
 
@@ -1198,14 +1198,14 @@ int main(int argc, char* argv[]) {
 
 ### Python Implementation → UDP Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-handwritten.svg" alt="Handwritten: Python Implementation → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-handwritten.svg" alt="Handwritten: Python Implementation → UDP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-diagram.svg" alt="Diagram: Python Implementation → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-diagram.svg" alt="Diagram: Python Implementation → UDP Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-sticky.svg" alt="Sticky Note: Python Implementation → UDP Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-server-sticky.svg" alt="Sticky Note: Python Implementation → UDP Echo Server" width="30%">
 </a>
 
 
@@ -1241,14 +1241,14 @@ if __name__ == '__main__':
 
 ### Python Implementation → UDP Echo Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-handwritten.svg" alt="Handwritten: Python Implementation → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-handwritten.svg" alt="Handwritten: Python Implementation → UDP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-diagram.svg" alt="Diagram: Python Implementation → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-diagram.svg" alt="Diagram: Python Implementation → UDP Echo Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-sticky.svg" alt="Sticky Note: Python Implementation → UDP Echo Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-implementation-udp-echo-client-sticky.svg" alt="Sticky Note: Python Implementation → UDP Echo Client" width="30%">
 </a>
 
 
@@ -1280,14 +1280,14 @@ if __name__ == '__main__':
 
 ### Complexity Analysis → UDP
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-handwritten.svg" alt="Handwritten: Complexity Analysis → UDP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-handwritten.svg" alt="Handwritten: Complexity Analysis → UDP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-diagram.svg" alt="Diagram: Complexity Analysis → UDP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-diagram.svg" alt="Diagram: Complexity Analysis → UDP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-sticky.svg" alt="Sticky Note: Complexity Analysis → UDP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-udp-sticky.svg" alt="Sticky Note: Complexity Analysis → UDP" width="30%">
 </a>
 
 
@@ -1303,14 +1303,14 @@ if __name__ == '__main__':
 
 ### A&D Table → UDP Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-handwritten.svg" alt="Handwritten: A&D Table → UDP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-handwritten.svg" alt="Handwritten: A&D Table → UDP Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-diagram.svg" alt="Diagram: A&D Table → UDP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-diagram.svg" alt="Diagram: A&D Table → UDP Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-sticky.svg" alt="Sticky Note: A&D Table → UDP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-udp-sockets-sticky.svg" alt="Sticky Note: A&D Table → UDP Sockets" width="30%">
 </a>
 
 
@@ -1325,14 +1325,14 @@ if __name__ == '__main__':
 
 ### Edge Cases → UDP
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-handwritten.svg" alt="Handwritten: Edge Cases → UDP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-handwritten.svg" alt="Handwritten: Edge Cases → UDP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-diagram.svg" alt="Diagram: Edge Cases → UDP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-diagram.svg" alt="Diagram: Edge Cases → UDP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-sticky.svg" alt="Sticky Note: Edge Cases → UDP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-udp-sticky.svg" alt="Sticky Note: Edge Cases → UDP" width="30%">
 </a>
 
 
@@ -1455,14 +1455,14 @@ Server received: "Hello UDP Server!" from 127.0.0.1:...
 
 ### Real-World Analogy: Restaurant Ordering Styles
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-handwritten.svg" alt="Handwritten: Real-World Analogy: Restaurant Ordering Styles" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-handwritten.svg" alt="Handwritten: Real-World Analogy: Restaurant Ordering Styles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-diagram.svg" alt="Diagram: Real-World Analogy: Restaurant Ordering Styles" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-diagram.svg" alt="Diagram: Real-World Analogy: Restaurant Ordering Styles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-sticky.svg" alt="Sticky Note: Real-World Analogy: Restaurant Ordering Styles" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-restaurant-ordering-styles-sticky.svg" alt="Sticky Note: Real-World Analogy: Restaurant Ordering Styles" width="30%">
 </a>
 
 
@@ -1472,14 +1472,14 @@ Server received: "Hello UDP Server!" from 127.0.0.1:...
 
 ### Detailed Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-handwritten.svg" alt="Handwritten: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-handwritten.svg" alt="Handwritten: Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-diagram.svg" alt="Diagram: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-diagram.svg" alt="Diagram: Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-sticky.svg" alt="Sticky Note: Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/detailed-comparison-sticky.svg" alt="Sticky Note: Detailed Comparison" width="30%">
 </a>
 
 
@@ -1494,14 +1494,14 @@ Server received: "Hello UDP Server!" from 127.0.0.1:...
 
 ### Setting Non-blocking Mode
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-handwritten.svg" alt="Handwritten: Setting Non-blocking Mode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-handwritten.svg" alt="Handwritten: Setting Non-blocking Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-diagram.svg" alt="Diagram: Setting Non-blocking Mode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-diagram.svg" alt="Diagram: Setting Non-blocking Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-sticky.svg" alt="Sticky Note: Setting Non-blocking Mode" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/setting-non-blocking-mode-sticky.svg" alt="Sticky Note: Setting Non-blocking Mode" width="30%">
 </a>
 
 
@@ -1520,14 +1520,14 @@ int fd = socket(AF_INET, SOCK_STREAM | SOCK_NONBLOCK, 0);
 
 ### C++ → Non-blocking TCP Server (Single Client, Polling)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-handwritten.svg" alt="Handwritten: C++ → Non-blocking TCP Server (Single Client, Polling)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-handwritten.svg" alt="Handwritten: C++ → Non-blocking TCP Server (Single Client, Polling)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-diagram.svg" alt="Diagram: C++ → Non-blocking TCP Server (Single Client, Polling)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-diagram.svg" alt="Diagram: C++ → Non-blocking TCP Server (Single Client, Polling)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-sticky.svg" alt="Sticky Note: C++ → Non-blocking TCP Server (Single Client, Polling)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-non-blocking-tcp-server-single-client-polling-sticky.svg" alt="Sticky Note: C++ → Non-blocking TCP Server (Single Client, Polling)" width="30%">
 </a>
 
 
@@ -1586,14 +1586,14 @@ int main() {
 
 ### Python → Non-blocking Socket Example
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-handwritten.svg" alt="Handwritten: Python → Non-blocking Socket Example" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-handwritten.svg" alt="Handwritten: Python → Non-blocking Socket Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-diagram.svg" alt="Diagram: Python → Non-blocking Socket Example" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-diagram.svg" alt="Diagram: Python → Non-blocking Socket Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-sticky.svg" alt="Sticky Note: Python → Non-blocking Socket Example" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-non-blocking-socket-example-sticky.svg" alt="Sticky Note: Python → Non-blocking Socket Example" width="30%">
 </a>
 
 
@@ -1638,14 +1638,14 @@ while True:
 
 ### Dry Run → Blocking vs Non-blocking recv
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-handwritten.svg" alt="Handwritten: Dry Run → Blocking vs Non-blocking recv" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-handwritten.svg" alt="Handwritten: Dry Run → Blocking vs Non-blocking recv" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-diagram.svg" alt="Diagram: Dry Run → Blocking vs Non-blocking recv" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-diagram.svg" alt="Diagram: Dry Run → Blocking vs Non-blocking recv" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-sticky.svg" alt="Sticky Note: Dry Run → Blocking vs Non-blocking recv" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-blocking-vs-non-blocking-recv-sticky.svg" alt="Sticky Note: Dry Run → Blocking vs Non-blocking recv" width="30%">
 </a>
 
 
@@ -1674,14 +1674,14 @@ while True:
 
 ### Complexity Analysis → Blocking vs Non-blocking
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-handwritten.svg" alt="Handwritten: Complexity Analysis → Blocking vs Non-blocking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-handwritten.svg" alt="Handwritten: Complexity Analysis → Blocking vs Non-blocking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-diagram.svg" alt="Diagram: Complexity Analysis → Blocking vs Non-blocking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-diagram.svg" alt="Diagram: Complexity Analysis → Blocking vs Non-blocking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-sticky.svg" alt="Sticky Note: Complexity Analysis → Blocking vs Non-blocking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-blocking-vs-non-blocking-sticky.svg" alt="Sticky Note: Complexity Analysis → Blocking vs Non-blocking" width="30%">
 </a>
 
 
@@ -1697,14 +1697,14 @@ while True:
 
 ### Edge Cases → Blocking/Non-blocking
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-handwritten.svg" alt="Handwritten: Edge Cases → Blocking/Non-blocking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-handwritten.svg" alt="Handwritten: Edge Cases → Blocking/Non-blocking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-diagram.svg" alt="Diagram: Edge Cases → Blocking/Non-blocking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-diagram.svg" alt="Diagram: Edge Cases → Blocking/Non-blocking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-sticky.svg" alt="Sticky Note: Edge Cases → Blocking/Non-blocking" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-blocking-non-blocking-sticky.svg" alt="Sticky Note: Edge Cases → Blocking/Non-blocking" width="30%">
 </a>
 
 
@@ -1874,14 +1874,14 @@ Client sent 22 bytes
 
 ### Real-World Analogy: The MaÃ®tre d'
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-handwritten.svg" alt="Handwritten: Real-World Analogy: The MaÃ®tre d'" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-handwritten.svg" alt="Handwritten: Real-World Analogy: The MaÃ®tre d'" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-diagram.svg" alt="Diagram: Real-World Analogy: The MaÃ®tre d'" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-diagram.svg" alt="Diagram: Real-World Analogy: The MaÃ®tre d'" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-sticky.svg" alt="Sticky Note: Real-World Analogy: The MaÃ®tre d'" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-the-ma-tre-d-sticky.svg" alt="Sticky Note: Real-World Analogy: The MaÃ®tre d'" width="30%">
 </a>
 
 
@@ -1896,14 +1896,14 @@ You're a maÃ®tre d' at a busy restaurant with 50 tables. Each table has a call
 
 ### 13.5.1 select()
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-handwritten.svg" alt="Handwritten: 13.5.1 select()" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-handwritten.svg" alt="Handwritten: 13.5.1 select()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-diagram.svg" alt="Diagram: 13.5.1 select()" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-diagram.svg" alt="Diagram: 13.5.1 select()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-sticky.svg" alt="Sticky Note: 13.5.1 select()" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-1-select-sticky.svg" alt="Sticky Note: 13.5.1 select()" width="30%">
 </a>
 
 
@@ -2119,14 +2119,14 @@ if __name__ == '__main__':
 
 ### 13.5.2 poll()
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-handwritten.svg" alt="Handwritten: 13.5.2 poll()" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-handwritten.svg" alt="Handwritten: 13.5.2 poll()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-diagram.svg" alt="Diagram: 13.5.2 poll()" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-diagram.svg" alt="Diagram: 13.5.2 poll()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-sticky.svg" alt="Sticky Note: 13.5.2 poll()" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-2-poll-sticky.svg" alt="Sticky Note: 13.5.2 poll()" width="30%">
 </a>
 
 
@@ -2251,14 +2251,14 @@ int main() {
 
 ### 13.5.3 epoll() (Linux)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-handwritten.svg" alt="Handwritten: 13.5.3 epoll() (Linux)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-handwritten.svg" alt="Handwritten: 13.5.3 epoll() (Linux)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-diagram.svg" alt="Diagram: 13.5.3 epoll() (Linux)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-diagram.svg" alt="Diagram: 13.5.3 epoll() (Linux)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-sticky.svg" alt="Sticky Note: 13.5.3 epoll() (Linux)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-3-epoll-linux-sticky.svg" alt="Sticky Note: 13.5.3 epoll() (Linux)" width="30%">
 </a>
 
 
@@ -2519,14 +2519,14 @@ if __name__ == '__main__':
 
 ### 13.5.4 kqueue (BSD/macOS)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-handwritten.svg" alt="Handwritten: 13.5.4 kqueue (BSD/macOS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-handwritten.svg" alt="Handwritten: 13.5.4 kqueue (BSD/macOS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-diagram.svg" alt="Diagram: 13.5.4 kqueue (BSD/macOS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-diagram.svg" alt="Diagram: 13.5.4 kqueue (BSD/macOS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-sticky.svg" alt="Sticky Note: 13.5.4 kqueue (BSD/macOS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/13-5-4-kqueue-bsd-macos-sticky.svg" alt="Sticky Note: 13.5.4 kqueue (BSD/macOS)" width="30%">
 </a>
 
 
@@ -2561,14 +2561,14 @@ kqueue vs epoll differences:
 
 ### Complexity Analysis → I/O Multiplexing
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-handwritten.svg" alt="Handwritten: Complexity Analysis → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-handwritten.svg" alt="Handwritten: Complexity Analysis → I/O Multiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-diagram.svg" alt="Diagram: Complexity Analysis → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-diagram.svg" alt="Diagram: Complexity Analysis → I/O Multiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-sticky.svg" alt="Sticky Note: Complexity Analysis → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complexity-analysis-i-o-multiplexing-sticky.svg" alt="Sticky Note: Complexity Analysis → I/O Multiplexing" width="30%">
 </a>
 
 
@@ -2586,14 +2586,14 @@ kqueue vs epoll differences:
 
 ### select vs poll vs epoll vs kqueue → Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-handwritten.svg" alt="Handwritten: select vs poll vs epoll vs kqueue → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-handwritten.svg" alt="Handwritten: select vs poll vs epoll vs kqueue → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-diagram.svg" alt="Diagram: select vs poll vs epoll vs kqueue → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-diagram.svg" alt="Diagram: select vs poll vs epoll vs kqueue → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-sticky.svg" alt="Sticky Note: select vs poll vs epoll vs kqueue → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/select-vs-poll-vs-epoll-vs-kqueue-comparison-sticky.svg" alt="Sticky Note: select vs poll vs epoll vs kqueue → Comparison" width="30%">
 </a>
 
 
@@ -2611,14 +2611,14 @@ kqueue vs epoll differences:
 
 ### A&D Table → I/O Multiplexing
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-handwritten.svg" alt="Handwritten: A&D Table → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-handwritten.svg" alt="Handwritten: A&D Table → I/O Multiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-diagram.svg" alt="Diagram: A&D Table → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-diagram.svg" alt="Diagram: A&D Table → I/O Multiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-sticky.svg" alt="Sticky Note: A&D Table → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-i-o-multiplexing-sticky.svg" alt="Sticky Note: A&D Table → I/O Multiplexing" width="30%">
 </a>
 
 
@@ -2631,14 +2631,14 @@ kqueue vs epoll differences:
 
 ### Edge Cases → I/O Multiplexing
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-handwritten.svg" alt="Handwritten: Edge Cases → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-handwritten.svg" alt="Handwritten: Edge Cases → I/O Multiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-diagram.svg" alt="Diagram: Edge Cases → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-diagram.svg" alt="Diagram: Edge Cases → I/O Multiplexing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-sticky.svg" alt="Sticky Note: Edge Cases → I/O Multiplexing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-i-o-multiplexing-sticky.svg" alt="Sticky Note: Edge Cases → I/O Multiplexing" width="30%">
 </a>
 
 
@@ -2659,14 +2659,14 @@ kqueue vs epoll differences:
 
 ### Overview
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" alt="Diagram: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
 </a>
 
 
@@ -2680,14 +2680,14 @@ Process A  ←→  [ /tmp/app.sock ]  ←→  Process B
 
 ### Types
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/types-handwritten.svg" alt="Handwritten: Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/types-handwritten.svg" alt="Handwritten: Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/types-diagram.svg" alt="Diagram: Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/types-diagram.svg" alt="Diagram: Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/types-sticky.svg" alt="Sticky Note: Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/types-sticky.svg" alt="Sticky Note: Types" width="30%">
 </a>
 
 
@@ -2698,14 +2698,14 @@ Process A  ←→  [ /tmp/app.sock ]  ←→  Process B
 
 ### Key Advantages Over TCP Loopback
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-handwritten.svg" alt="Handwritten: Key Advantages Over TCP Loopback" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-handwritten.svg" alt="Handwritten: Key Advantages Over TCP Loopback" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-diagram.svg" alt="Diagram: Key Advantages Over TCP Loopback" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-diagram.svg" alt="Diagram: Key Advantages Over TCP Loopback" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-sticky.svg" alt="Sticky Note: Key Advantages Over TCP Loopback" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/key-advantages-over-tcp-loopback-sticky.svg" alt="Sticky Note: Key Advantages Over TCP Loopback" width="30%">
 </a>
 
 
@@ -2715,14 +2715,14 @@ Process A  ←→  [ /tmp/app.sock ]  ←→  Process B
 
 ### C++ → Unix Domain Socket Echo Server
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-handwritten.svg" alt="Handwritten: C++ → Unix Domain Socket Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-handwritten.svg" alt="Handwritten: C++ → Unix Domain Socket Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-diagram.svg" alt="Diagram: C++ → Unix Domain Socket Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-diagram.svg" alt="Diagram: C++ → Unix Domain Socket Echo Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-sticky.svg" alt="Sticky Note: C++ → Unix Domain Socket Echo Server" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-unix-domain-socket-echo-server-sticky.svg" alt="Sticky Note: C++ → Unix Domain Socket Echo Server" width="30%">
 </a>
 
 
@@ -2779,14 +2779,14 @@ int main() {
 
 ### Python → Unix Domain Socket Client
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-handwritten.svg" alt="Handwritten: Python → Unix Domain Socket Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-handwritten.svg" alt="Handwritten: Python → Unix Domain Socket Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-diagram.svg" alt="Diagram: Python → Unix Domain Socket Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-diagram.svg" alt="Diagram: Python → Unix Domain Socket Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-sticky.svg" alt="Sticky Note: Python → Unix Domain Socket Client" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/python-unix-domain-socket-client-sticky.svg" alt="Sticky Note: Python → Unix Domain Socket Client" width="30%">
 </a>
 
 
@@ -2818,14 +2818,14 @@ if __name__ == '__main__':
 
 ### Dry Run → Unix Domain Socket
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-handwritten.svg" alt="Handwritten: Dry Run → Unix Domain Socket" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-handwritten.svg" alt="Handwritten: Dry Run → Unix Domain Socket" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-diagram.svg" alt="Diagram: Dry Run → Unix Domain Socket" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-diagram.svg" alt="Diagram: Dry Run → Unix Domain Socket" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-sticky.svg" alt="Sticky Note: Dry Run → Unix Domain Socket" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/dry-run-unix-domain-socket-sticky.svg" alt="Sticky Note: Dry Run → Unix Domain Socket" width="30%">
 </a>
 
 
@@ -2842,14 +2842,14 @@ if __name__ == '__main__':
 
 ### Edge Cases → Unix Domain Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-handwritten.svg" alt="Handwritten: Edge Cases → Unix Domain Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-handwritten.svg" alt="Handwritten: Edge Cases → Unix Domain Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-diagram.svg" alt="Diagram: Edge Cases → Unix Domain Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-diagram.svg" alt="Diagram: Edge Cases → Unix Domain Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-sticky.svg" alt="Sticky Note: Edge Cases → Unix Domain Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-unix-domain-sockets-sticky.svg" alt="Sticky Note: Edge Cases → Unix Domain Sockets" width="30%">
 </a>
 
 
@@ -2867,14 +2867,14 @@ if __name__ == '__main__':
 
 ### Overview
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/overview-handwritten.svg" alt="Handwritten: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" alt="Diagram: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/overview-diagram.svg" alt="Diagram: Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/overview-sticky.svg" alt="Sticky Note: Overview" width="30%">
 </a>
 
 
@@ -2893,14 +2893,14 @@ int fd = socket(AF_INET, SOCK_RAW, 255);  // Custom L4 protocol
 
 ### Numbered Steps → Raw Socket (Ping/ICMP)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-handwritten.svg" alt="Handwritten: Numbered Steps → Raw Socket (Ping/ICMP)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-handwritten.svg" alt="Handwritten: Numbered Steps → Raw Socket (Ping/ICMP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-diagram.svg" alt="Diagram: Numbered Steps → Raw Socket (Ping/ICMP)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-diagram.svg" alt="Diagram: Numbered Steps → Raw Socket (Ping/ICMP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-sticky.svg" alt="Sticky Note: Numbered Steps → Raw Socket (Ping/ICMP)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/numbered-steps-raw-socket-ping-icmp-sticky.svg" alt="Sticky Note: Numbered Steps → Raw Socket (Ping/ICMP)" width="30%">
 </a>
 
 
@@ -2913,14 +2913,14 @@ int fd = socket(AF_INET, SOCK_RAW, 255);  // Custom L4 protocol
 
 ### Security Concerns
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-handwritten.svg" alt="Handwritten: Security Concerns" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-handwritten.svg" alt="Handwritten: Security Concerns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-diagram.svg" alt="Diagram: Security Concerns" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-diagram.svg" alt="Diagram: Security Concerns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-sticky.svg" alt="Sticky Note: Security Concerns" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/security-concerns-sticky.svg" alt="Sticky Note: Security Concerns" width="30%">
 </a>
 
 
@@ -2933,14 +2933,14 @@ int fd = socket(AF_INET, SOCK_RAW, 255);  // Custom L4 protocol
 
 ### C++ → Raw ICMP Ping (Simplified)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-handwritten.svg" alt="Handwritten: C++ → Raw ICMP Ping (Simplified)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-handwritten.svg" alt="Handwritten: C++ → Raw ICMP Ping (Simplified)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-diagram.svg" alt="Diagram: C++ → Raw ICMP Ping (Simplified)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-diagram.svg" alt="Diagram: C++ → Raw ICMP Ping (Simplified)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-sticky.svg" alt="Sticky Note: C++ → Raw ICMP Ping (Simplified)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-raw-icmp-ping-simplified-sticky.svg" alt="Sticky Note: C++ → Raw ICMP Ping (Simplified)" width="30%">
 </a>
 
 
@@ -3005,14 +3005,14 @@ int main(int argc, char* argv[]) {
 
 ### A&D Table → Raw Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-handwritten.svg" alt="Handwritten: A&D Table → Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-handwritten.svg" alt="Handwritten: A&D Table → Raw Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-diagram.svg" alt="Diagram: A&D Table → Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-diagram.svg" alt="Diagram: A&D Table → Raw Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-sticky.svg" alt="Sticky Note: A&D Table → Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/a-d-table-raw-sockets-sticky.svg" alt="Sticky Note: A&D Table → Raw Sockets" width="30%">
 </a>
 
 
@@ -3025,14 +3025,14 @@ int main(int argc, char* argv[]) {
 
 ### Use Cases for Raw Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-handwritten.svg" alt="Handwritten: Use Cases for Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-handwritten.svg" alt="Handwritten: Use Cases for Raw Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-diagram.svg" alt="Diagram: Use Cases for Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-diagram.svg" alt="Diagram: Use Cases for Raw Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-sticky.svg" alt="Sticky Note: Use Cases for Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/use-cases-for-raw-sockets-sticky.svg" alt="Sticky Note: Use Cases for Raw Sockets" width="30%">
 </a>
 
 
@@ -3049,14 +3049,14 @@ int main(int argc, char* argv[]) {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -3069,14 +3069,14 @@ Socket options are like **settings on a home appliance**:
 
 ### setsockopt / getsockopt Signatures
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-handwritten.svg" alt="Handwritten: setsockopt / getsockopt Signatures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-handwritten.svg" alt="Handwritten: setsockopt / getsockopt Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-diagram.svg" alt="Diagram: setsockopt / getsockopt Signatures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-diagram.svg" alt="Diagram: setsockopt / getsockopt Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-sticky.svg" alt="Sticky Note: setsockopt / getsockopt Signatures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/setsockopt-getsockopt-signatures-sticky.svg" alt="Sticky Note: setsockopt / getsockopt Signatures" width="30%">
 </a>
 
 
@@ -3098,14 +3098,14 @@ int getsockopt(int sockfd, int level, int optname,
 
 ### Complete Socket Options Table
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-handwritten.svg" alt="Handwritten: Complete Socket Options Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-handwritten.svg" alt="Handwritten: Complete Socket Options Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-diagram.svg" alt="Diagram: Complete Socket Options Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-diagram.svg" alt="Diagram: Complete Socket Options Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-sticky.svg" alt="Sticky Note: Complete Socket Options Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/complete-socket-options-table-sticky.svg" alt="Sticky Note: Complete Socket Options Table" width="30%">
 </a>
 
 
@@ -3133,14 +3133,14 @@ int getsockopt(int sockfd, int level, int optname,
 
 ### SO_LINGER Behavior
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-handwritten.svg" alt="Handwritten: SO_LINGER Behavior" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-handwritten.svg" alt="Handwritten: SO_LINGER Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-diagram.svg" alt="Diagram: SO_LINGER Behavior" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-diagram.svg" alt="Diagram: SO_LINGER Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-sticky.svg" alt="Sticky Note: SO_LINGER Behavior" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/so-linger-behavior-sticky.svg" alt="Sticky Note: SO_LINGER Behavior" width="30%">
 </a>
 
 
@@ -3159,14 +3159,14 @@ setsockopt(fd, SOL_SOCKET, SO_LINGER, &l, sizeof(l));
 
 ### C++ → Socket Options Utility
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-handwritten.svg" alt="Handwritten: C++ → Socket Options Utility" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-handwritten.svg" alt="Handwritten: C++ → Socket Options Utility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-diagram.svg" alt="Diagram: C++ → Socket Options Utility" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-diagram.svg" alt="Diagram: C++ → Socket Options Utility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-sticky.svg" alt="Sticky Note: C++ → Socket Options Utility" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/c-socket-options-utility-sticky.svg" alt="Sticky Note: C++ → Socket Options Utility" width="30%">
 </a>
 
 
@@ -3220,14 +3220,14 @@ public:
 
 ### Edge Cases → Socket Options
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-handwritten.svg" alt="Handwritten: Edge Cases → Socket Options" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-handwritten.svg" alt="Handwritten: Edge Cases → Socket Options" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-diagram.svg" alt="Diagram: Edge Cases → Socket Options" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-diagram.svg" alt="Diagram: Edge Cases → Socket Options" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-sticky.svg" alt="Sticky Note: Edge Cases → Socket Options" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/edge-cases-socket-options-sticky.svg" alt="Sticky Note: Edge Cases → Socket Options" width="30%">
 </a>
 
 
@@ -3247,14 +3247,14 @@ public:
 
 ### TCP vs UDP Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-handwritten.svg" alt="Handwritten: TCP vs UDP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-handwritten.svg" alt="Handwritten: TCP vs UDP Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-diagram.svg" alt="Diagram: TCP vs UDP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-diagram.svg" alt="Diagram: TCP vs UDP Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-sticky.svg" alt="Sticky Note: TCP vs UDP Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/tcp-vs-udp-sockets-sticky.svg" alt="Sticky Note: TCP vs UDP Sockets" width="30%">
 </a>
 
 
@@ -3278,14 +3278,14 @@ public:
 
 ### Blocking vs Non-blocking Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-handwritten.svg" alt="Handwritten: Blocking vs Non-blocking Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-handwritten.svg" alt="Handwritten: Blocking vs Non-blocking Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-diagram.svg" alt="Diagram: Blocking vs Non-blocking Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-diagram.svg" alt="Diagram: Blocking vs Non-blocking Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-sticky.svg" alt="Sticky Note: Blocking vs Non-blocking Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/blocking-vs-non-blocking-comparison-sticky.svg" alt="Sticky Note: Blocking vs Non-blocking Comparison" width="30%">
 </a>
 
 
@@ -3303,14 +3303,14 @@ public:
 
 ### Stream vs Datagram vs Raw Sockets
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-handwritten.svg" alt="Handwritten: Stream vs Datagram vs Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-handwritten.svg" alt="Handwritten: Stream vs Datagram vs Raw Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-diagram.svg" alt="Diagram: Stream vs Datagram vs Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-diagram.svg" alt="Diagram: Stream vs Datagram vs Raw Sockets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-sticky.svg" alt="Sticky Note: Stream vs Datagram vs Raw Sockets" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/stream-vs-datagram-vs-raw-sockets-sticky.svg" alt="Sticky Note: Stream vs Datagram vs Raw Sockets" width="30%">
 </a>
 
 
@@ -3327,14 +3327,14 @@ public:
 
 ### I/O Multiplexing Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-handwritten.svg" alt="Handwritten: I/O Multiplexing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-handwritten.svg" alt="Handwritten: I/O Multiplexing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-diagram.svg" alt="Diagram: I/O Multiplexing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-diagram.svg" alt="Diagram: I/O Multiplexing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-sticky.svg" alt="Sticky Note: I/O Multiplexing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/i-o-multiplexing-comparison-sticky.svg" alt="Sticky Note: I/O Multiplexing Comparison" width="30%">
 </a>
 
 
@@ -3355,14 +3355,14 @@ public:
 
 ### Q1: epoll vs select → what's the fundamental difference?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-handwritten.svg" alt="Handwritten: epoll vs select → what's the fundamental difference?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-handwritten.svg" alt="Handwritten: epoll vs select → what's the fundamental difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-diagram.svg" alt="Diagram: epoll vs select → what's the fundamental difference?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-diagram.svg" alt="Diagram: epoll vs select → what's the fundamental difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-sticky.svg" alt="Sticky Note: epoll vs select → what's the fundamental difference?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/epoll-vs-select-what-s-the-fundamental-difference-sticky.svg" alt="Sticky Note: epoll vs select → what's the fundamental difference?" width="30%">
 </a>
 
 
@@ -3382,14 +3382,14 @@ Speedup: ~1000x
 
 ### Q2: What is the C10K problem?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-handwritten.svg" alt="Handwritten: What is the C10K problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-handwritten.svg" alt="Handwritten: What is the C10K problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-diagram.svg" alt="Diagram: What is the C10K problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-diagram.svg" alt="Diagram: What is the C10K problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-sticky.svg" alt="Sticky Note: What is the C10K problem?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-c10k-problem-sticky.svg" alt="Sticky Note: What is the C10K problem?" width="30%">
 </a>
 
 
@@ -3408,14 +3408,14 @@ Event-driven epoll:     10,000 clients Ã— 1KB state = 10MB  âœ“
 
 ### Q3: TIME_WAIT and SO_REUSEADDR
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-handwritten.svg" alt="Handwritten: TIME_WAIT and SO_REUSEADDR" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-handwritten.svg" alt="Handwritten: TIME_WAIT and SO_REUSEADDR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-diagram.svg" alt="Diagram: TIME_WAIT and SO_REUSEADDR" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-diagram.svg" alt="Diagram: TIME_WAIT and SO_REUSEADDR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-sticky.svg" alt="Sticky Note: TIME_WAIT and SO_REUSEADDR" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/time-wait-and-so-reuseaddr-sticky.svg" alt="Sticky Note: TIME_WAIT and SO_REUSEADDR" width="30%">
 </a>
 
 
@@ -3440,14 +3440,14 @@ bind(server_fd, ...);  // Won't fail with EADDRINUSE
 
 ### Q4: What is Nagle's algorithm?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-handwritten.svg" alt="Handwritten: What is Nagle's algorithm?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-handwritten.svg" alt="Handwritten: What is Nagle's algorithm?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-diagram.svg" alt="Diagram: What is Nagle's algorithm?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-diagram.svg" alt="Diagram: What is Nagle's algorithm?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-sticky.svg" alt="Sticky Note: What is Nagle's algorithm?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-nagle-s-algorithm-sticky.svg" alt="Sticky Note: What is Nagle's algorithm?" width="30%">
 </a>
 
 
@@ -3478,14 +3478,14 @@ With Nagle (default):
 
 ### Q5: What happens when you write to a closed connection?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-handwritten.svg" alt="Handwritten: What happens when you write to a closed connection?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-handwritten.svg" alt="Handwritten: What happens when you write to a closed connection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-diagram.svg" alt="Diagram: What happens when you write to a closed connection?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-diagram.svg" alt="Diagram: What happens when you write to a closed connection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-sticky.svg" alt="Sticky Note: What happens when you write to a closed connection?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-happens-when-you-write-to-a-closed-connection-sticky.svg" alt="Sticky Note: What happens when you write to a closed connection?" width="30%">
 </a>
 
 
@@ -3502,14 +3502,14 @@ signal(SIGPIPE, SIG_IGN);  // Prevent SIGPIPE from killing the process
 
 ### Q6: What is the difference between EAGAIN and EWOULDBLOCK?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-handwritten.svg" alt="Handwritten: What is the difference between EAGAIN and EWOULDBLOCK?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-handwritten.svg" alt="Handwritten: What is the difference between EAGAIN and EWOULDBLOCK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-diagram.svg" alt="Diagram: What is the difference between EAGAIN and EWOULDBLOCK?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-diagram.svg" alt="Diagram: What is the difference between EAGAIN and EWOULDBLOCK?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-sticky.svg" alt="Sticky Note: What is the difference between EAGAIN and EWOULDBLOCK?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/what-is-the-difference-between-eagain-and-ewouldblock-sticky.svg" alt="Sticky Note: What is the difference between EAGAIN and EWOULDBLOCK?" width="30%">
 </a>
 
 
@@ -3523,14 +3523,14 @@ if (errno == EAGAIN || errno == EWOULDBLOCK) {
 
 ### Q7: How does the kernel implement epoll internally?
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-handwritten.svg" alt="Handwritten: How does the kernel implement epoll internally?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-handwritten.svg" alt="Handwritten: How does the kernel implement epoll internally?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-diagram.svg" alt="Diagram: How does the kernel implement epoll internally?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-diagram.svg" alt="Diagram: How does the kernel implement epoll internally?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-sticky.svg" alt="Sticky Note: How does the kernel implement epoll internally?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/how-does-the-kernel-implement-epoll-internally-sticky.svg" alt="Sticky Note: How does the kernel implement epoll internally?" width="30%">
 </a>
 
 
@@ -3553,14 +3553,14 @@ The callback mechanism makes it O(1): only descriptors with events are examined.
 
 ### Nginx (epoll, kqueue, event ports)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-handwritten.svg" alt="Handwritten: Nginx (epoll, kqueue, event ports)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-handwritten.svg" alt="Handwritten: Nginx (epoll, kqueue, event ports)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-diagram.svg" alt="Diagram: Nginx (epoll, kqueue, event ports)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-diagram.svg" alt="Diagram: Nginx (epoll, kqueue, event ports)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-sticky.svg" alt="Sticky Note: Nginx (epoll, kqueue, event ports)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/nginx-epoll-kqueue-event-ports-sticky.svg" alt="Sticky Note: Nginx (epoll, kqueue, event ports)" width="30%">
 </a>
 
 
@@ -3583,14 +3583,14 @@ Nginx Architecture:
 
 ### Node.js (libuv)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-handwritten.svg" alt="Handwritten: Node.js (libuv)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-handwritten.svg" alt="Handwritten: Node.js (libuv)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-diagram.svg" alt="Diagram: Node.js (libuv)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-diagram.svg" alt="Diagram: Node.js (libuv)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-sticky.svg" alt="Sticky Note: Node.js (libuv)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/node-js-libuv-sticky.svg" alt="Sticky Note: Node.js (libuv)" width="30%">
 </a>
 
 
@@ -3618,14 +3618,14 @@ Node.js Event Loop:
 
 ### HAProxy (epoll, kqueue, splice)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-handwritten.svg" alt="Handwritten: HAProxy (epoll, kqueue, splice)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-handwritten.svg" alt="Handwritten: HAProxy (epoll, kqueue, splice)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-diagram.svg" alt="Diagram: HAProxy (epoll, kqueue, splice)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-diagram.svg" alt="Diagram: HAProxy (epoll, kqueue, splice)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-sticky.svg" alt="Sticky Note: HAProxy (epoll, kqueue, splice)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/haproxy-epoll-kqueue-splice-sticky.svg" alt="Sticky Note: HAProxy (epoll, kqueue, splice)" width="30%">
 </a>
 
 
@@ -3646,14 +3646,14 @@ Zero-copy: data never touches user space on the proxy.
 
 ### Redis (epoll/kqueue + single-threaded event loop)
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-handwritten.svg" alt="Handwritten: Redis (epoll/kqueue + single-threaded event loop)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-handwritten.svg" alt="Handwritten: Redis (epoll/kqueue + single-threaded event loop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-diagram.svg" alt="Diagram: Redis (epoll/kqueue + single-threaded event loop)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-diagram.svg" alt="Diagram: Redis (epoll/kqueue + single-threaded event loop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-sticky.svg" alt="Sticky Note: Redis (epoll/kqueue + single-threaded event loop)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/redis-epoll-kqueue-single-threaded-event-loop-sticky.svg" alt="Sticky Note: Redis (epoll/kqueue + single-threaded event loop)" width="30%">
 </a>
 
 
@@ -3675,14 +3675,14 @@ while (1) {
 
 ### Apache vs Nginx → Architecture Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-handwritten.svg" alt="Handwritten: Apache vs Nginx → Architecture Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-handwritten.svg" alt="Handwritten: Apache vs Nginx → Architecture Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-diagram.svg" alt="Diagram: Apache vs Nginx → Architecture Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-diagram.svg" alt="Diagram: Apache vs Nginx → Architecture Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-sticky.svg" alt="Sticky Note: Apache vs Nginx → Architecture Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/apache-vs-nginx-architecture-comparison-sticky.svg" alt="Sticky Note: Apache vs Nginx → Architecture Comparison" width="30%">
 </a>
 
 
@@ -3697,14 +3697,14 @@ while (1) {
 
 ### libevent / libev / libuv → Library Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-handwritten.svg" alt="Handwritten: libevent / libev / libuv → Library Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-handwritten.svg" alt="Handwritten: libevent / libev / libuv → Library Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-diagram.svg" alt="Diagram: libevent / libev / libuv → Library Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-diagram.svg" alt="Diagram: libevent / libev / libuv → Library Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-sticky.svg" alt="Sticky Note: libevent / libev / libuv → Library Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/13-sockets/libevent-libev-libuv-library-comparison-sticky.svg" alt="Sticky Note: libevent / libev / libuv → Library Comparison" width="30%">
 </a>
 
 

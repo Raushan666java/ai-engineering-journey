@@ -57,14 +57,14 @@ flowchart LR
 
 ### 12.1 Definition
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-handwritten.svg" alt="Handwritten: 12.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-handwritten.svg" alt="Handwritten: 12.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-diagram.svg" alt="Diagram: 12.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-diagram.svg" alt="Diagram: 12.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-sticky.svg" alt="Sticky Note: 12.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-1-definition-sticky.svg" alt="Sticky Note: 12.1 Definition" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ The standard Boolean algebra is $B = \{0, 1\}$ with these operations.
 
 ### 12.2 Basic Identities
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-handwritten.svg" alt="Handwritten: 12.2 Basic Identities" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-handwritten.svg" alt="Handwritten: 12.2 Basic Identities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-diagram.svg" alt="Diagram: 12.2 Basic Identities" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-diagram.svg" alt="Diagram: 12.2 Basic Identities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-sticky.svg" alt="Sticky Note: 12.2 Basic Identities" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-2-basic-identities-sticky.svg" alt="Sticky Note: 12.2 Basic Identities" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ The standard Boolean algebra is $B = \{0, 1\}$ with these operations.
 
 ### 12.3 Duality
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-handwritten.svg" alt="Handwritten: 12.3 Duality" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-handwritten.svg" alt="Handwritten: 12.3 Duality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-diagram.svg" alt="Diagram: 12.3 Duality" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-diagram.svg" alt="Diagram: 12.3 Duality" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-sticky.svg" alt="Sticky Note: 12.3 Duality" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-3-duality-sticky.svg" alt="Sticky Note: 12.3 Duality" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ Dual of $x + 0 = x$ is $x \cdot 1 = x$.
 
 ### 12.4 Boolean Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-handwritten.svg" alt="Handwritten: 12.4 Boolean Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-handwritten.svg" alt="Handwritten: 12.4 Boolean Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-diagram.svg" alt="Diagram: 12.4 Boolean Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-diagram.svg" alt="Diagram: 12.4 Boolean Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-sticky.svg" alt="Sticky Note: 12.4 Boolean Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-4-boolean-functions-sticky.svg" alt="Sticky Note: 12.4 Boolean Functions" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ function evaluateBooleanExpr(
 
 ### 12.5 Logic Gates
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-handwritten.svg" alt="Handwritten: 12.5 Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-handwritten.svg" alt="Handwritten: 12.5 Logic Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-diagram.svg" alt="Diagram: 12.5 Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-diagram.svg" alt="Diagram: 12.5 Logic Gates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-sticky.svg" alt="Sticky Note: 12.5 Logic Gates" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-5-logic-gates-sticky.svg" alt="Sticky Note: 12.5 Logic Gates" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ function fullAdder(a: Bit, b: Bit, carryIn: Bit): { sum: Bit; carryOut: Bit } {
 
 ### 12.6 Minimization with Karnaugh Maps
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-handwritten.svg" alt="Handwritten: 12.6 Minimization with Karnaugh Maps" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-handwritten.svg" alt="Handwritten: 12.6 Minimization with Karnaugh Maps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-diagram.svg" alt="Diagram: 12.6 Minimization with Karnaugh Maps" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-diagram.svg" alt="Diagram: 12.6 Minimization with Karnaugh Maps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-sticky.svg" alt="Sticky Note: 12.6 Minimization with Karnaugh Maps" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-6-minimization-with-karnaugh-maps-sticky.svg" alt="Sticky Note: 12.6 Minimization with Karnaugh Maps" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ Groups: column $y=1$ ? $y$.
 
 ### 12.7 Quine-McCluskey Algorithm
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-handwritten.svg" alt="Handwritten: 12.7 Quine-McCluskey Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-handwritten.svg" alt="Handwritten: 12.7 Quine-McCluskey Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-diagram.svg" alt="Diagram: 12.7 Quine-McCluskey Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-diagram.svg" alt="Diagram: 12.7 Quine-McCluskey Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-sticky.svg" alt="Sticky Note: 12.7 Quine-McCluskey Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-7-quine-mccluskey-algorithm-sticky.svg" alt="Sticky Note: 12.7 Quine-McCluskey Algorithm" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ function quineMcCluskey(minterms: number[], variables: number): number[][] {
 
 ### 12.8 Don't Care Conditions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-handwritten.svg" alt="Handwritten: 12.8 Don't Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-handwritten.svg" alt="Handwritten: 12.8 Don't Care Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-diagram.svg" alt="Diagram: 12.8 Don't Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-diagram.svg" alt="Diagram: 12.8 Don't Care Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-sticky.svg" alt="Sticky Note: 12.8 Don't Care Conditions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/12-boolean/12-8-don-t-care-conditions-sticky.svg" alt="Sticky Note: 12.8 Don't Care Conditions" width="30%">
 </a>
 
 

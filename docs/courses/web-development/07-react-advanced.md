@@ -63,14 +63,14 @@ graph TD
 
 ### 7.1 useRef
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-handwritten.svg" alt="Handwritten: 7.1 useRef" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-handwritten.svg" alt="Handwritten: 7.1 useRef" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-diagram.svg" alt="Diagram: 7.1 useRef" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-diagram.svg" alt="Diagram: 7.1 useRef" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-sticky.svg" alt="Sticky Note: 7.1 useRef" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-1-useref-sticky.svg" alt="Sticky Note: 7.1 useRef" width="30%">
 </a>
 
 
@@ -134,14 +134,14 @@ function RenderCounter() {
 
 ### 7.2 useMemo and useCallback
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-handwritten.svg" alt="Handwritten: 7.2 useMemo and useCallback" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-handwritten.svg" alt="Handwritten: 7.2 useMemo and useCallback" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-diagram.svg" alt="Diagram: 7.2 useMemo and useCallback" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-diagram.svg" alt="Diagram: 7.2 useMemo and useCallback" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-sticky.svg" alt="Sticky Note: 7.2 useMemo and useCallback" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-2-usememo-and-usecallback-sticky.svg" alt="Sticky Note: 7.2 useMemo and useCallback" width="30%">
 </a>
 
 
@@ -209,14 +209,14 @@ function ProductPage({ productId, onAddToCart }) {
 
 ### 7.3 useReducer
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-handwritten.svg" alt="Handwritten: 7.3 useReducer" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-handwritten.svg" alt="Handwritten: 7.3 useReducer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-diagram.svg" alt="Diagram: 7.3 useReducer" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-diagram.svg" alt="Diagram: 7.3 useReducer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-sticky.svg" alt="Sticky Note: 7.3 useReducer" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-3-usereducer-sticky.svg" alt="Sticky Note: 7.3 useReducer" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ function ShoppingCart() {
 
 ### 7.4 useContext
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-handwritten.svg" alt="Handwritten: 7.4 useContext" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-handwritten.svg" alt="Handwritten: 7.4 useContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-diagram.svg" alt="Diagram: 7.4 useContext" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-diagram.svg" alt="Diagram: 7.4 useContext" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-sticky.svg" alt="Sticky Note: 7.4 useContext" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-4-usecontext-sticky.svg" alt="Sticky Note: 7.4 useContext" width="30%">
 </a>
 
 
@@ -368,14 +368,14 @@ function App() {
 
 ### 7.5 Custom Hooks
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-handwritten.svg" alt="Handwritten: 7.5 Custom Hooks" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-handwritten.svg" alt="Handwritten: 7.5 Custom Hooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-diagram.svg" alt="Diagram: 7.5 Custom Hooks" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-diagram.svg" alt="Diagram: 7.5 Custom Hooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-sticky.svg" alt="Sticky Note: 7.5 Custom Hooks" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-5-custom-hooks-sticky.svg" alt="Sticky Note: 7.5 Custom Hooks" width="30%">
 </a>
 
 
@@ -472,14 +472,14 @@ function ResponsiveComponent() {
 
 ### 7.6 React Router
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-handwritten.svg" alt="Handwritten: 7.6 React Router" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-handwritten.svg" alt="Handwritten: 7.6 React Router" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-diagram.svg" alt="Diagram: 7.6 React Router" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-diagram.svg" alt="Diagram: 7.6 React Router" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-sticky.svg" alt="Sticky Note: 7.6 React Router" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-6-react-router-sticky.svg" alt="Sticky Note: 7.6 React Router" width="30%">
 </a>
 
 
@@ -536,14 +536,14 @@ function ProductDetail() {
 
 ### 7.7 Error Boundaries
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-handwritten.svg" alt="Handwritten: 7.7 Error Boundaries" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-handwritten.svg" alt="Handwritten: 7.7 Error Boundaries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-diagram.svg" alt="Diagram: 7.7 Error Boundaries" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-diagram.svg" alt="Diagram: 7.7 Error Boundaries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-sticky.svg" alt="Sticky Note: 7.7 Error Boundaries" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-7-error-boundaries-sticky.svg" alt="Sticky Note: 7.7 Error Boundaries" width="30%">
 </a>
 
 
@@ -587,14 +587,14 @@ class ErrorBoundary extends Component {
 
 ### 7.8 Portals
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-handwritten.svg" alt="Handwritten: 7.8 Portals" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-handwritten.svg" alt="Handwritten: 7.8 Portals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-diagram.svg" alt="Diagram: 7.8 Portals" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-diagram.svg" alt="Diagram: 7.8 Portals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-sticky.svg" alt="Sticky Note: 7.8 Portals" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-8-portals-sticky.svg" alt="Sticky Note: 7.8 Portals" width="30%">
 </a>
 
 
@@ -620,14 +620,14 @@ function Modal({ open, onClose, children }) {
 
 ### 7.9 Performance Optimization
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-handwritten.svg" alt="Handwritten: 7.9 Performance Optimization" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-handwritten.svg" alt="Handwritten: 7.9 Performance Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-diagram.svg" alt="Diagram: 7.9 Performance Optimization" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-diagram.svg" alt="Diagram: 7.9 Performance Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-sticky.svg" alt="Sticky Note: 7.9 Performance Optimization" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-9-performance-optimization-sticky.svg" alt="Sticky Note: 7.9 Performance Optimization" width="30%">
 </a>
 
 
@@ -664,14 +664,14 @@ function Dashboard() {
 
 ### 7.10 React DevTools
 
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-handwritten.svg" alt="Handwritten: 7.10 React DevTools" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-handwritten.svg" alt="Handwritten: 7.10 React DevTools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-diagram.svg" alt="Diagram: 7.10 React DevTools" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-diagram.svg" alt="Diagram: 7.10 React DevTools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-sticky.svg" alt="Sticky Note: 7.10 React DevTools" width="30%">
+<a href="../../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/07-react-advanced/7-10-react-devtools-sticky.svg" alt="Sticky Note: 7.10 React DevTools" width="30%">
 </a>
 
 

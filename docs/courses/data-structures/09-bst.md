@@ -60,14 +60,14 @@ flowchart LR
 
 ### BST Invariant
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-invariant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-invariant-handwritten.svg" alt="Handwritten: BST Invariant" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-invariant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-invariant-handwritten.svg" alt="Handwritten: BST Invariant" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-invariant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-invariant-diagram.svg" alt="Diagram: BST Invariant" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-invariant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-invariant-diagram.svg" alt="Diagram: BST Invariant" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-invariant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-invariant-sticky.svg" alt="Sticky Note: BST Invariant" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-invariant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-invariant-sticky.svg" alt="Sticky Note: BST Invariant" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ Duplicate keys may be handled by convention (left includes less-than-or-equal, o
 
 ### BST Search
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-search-handwritten.svg" alt="Handwritten: BST Search" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-search-handwritten.svg" alt="Handwritten: BST Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-search-diagram.svg" alt="Diagram: BST Search" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-search-diagram.svg" alt="Diagram: BST Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-search-sticky.svg" alt="Sticky Note: BST Search" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-search-sticky.svg" alt="Sticky Note: BST Search" width="30%">
 </a>
 
 
@@ -244,14 +244,14 @@ public boolean searchIterative(Node root, int value) {
 
 ### BST Insertion
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-insertion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-insertion-handwritten.svg" alt="Handwritten: BST Insertion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-insertion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-insertion-handwritten.svg" alt="Handwritten: BST Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-insertion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-insertion-diagram.svg" alt="Diagram: BST Insertion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-insertion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-insertion-diagram.svg" alt="Diagram: BST Insertion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-insertion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-insertion-sticky.svg" alt="Sticky Note: BST Insertion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-insertion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-insertion-sticky.svg" alt="Sticky Note: BST Insertion" width="30%">
 </a>
 
 
@@ -422,14 +422,14 @@ public Node insertIterative(Node root, int value) {
 
 ### BST Deletion
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-deletion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-deletion-handwritten.svg" alt="Handwritten: BST Deletion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-deletion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-deletion-handwritten.svg" alt="Handwritten: BST Deletion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-deletion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-deletion-diagram.svg" alt="Diagram: BST Deletion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-deletion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-deletion-diagram.svg" alt="Diagram: BST Deletion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/bst-deletion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/bst-deletion-sticky.svg" alt="Sticky Note: BST Deletion" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/bst-deletion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/bst-deletion-sticky.svg" alt="Sticky Note: BST Deletion" width="30%">
 </a>
 
 
@@ -646,14 +646,14 @@ public Node findMin(Node node) {
 
 ### Min, Max, Successor, Predecessor
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-handwritten.svg" alt="Handwritten: Min, Max, Successor, Predecessor" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-handwritten.svg" alt="Handwritten: Min, Max, Successor, Predecessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-diagram.svg" alt="Diagram: Min, Max, Successor, Predecessor" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-diagram.svg" alt="Diagram: Min, Max, Successor, Predecessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-sticky.svg" alt="Sticky Note: Min, Max, Successor, Predecessor" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/min-max-successor-predecessor-sticky.svg" alt="Sticky Note: Min, Max, Successor, Predecessor" width="30%">
 </a>
 
 
@@ -905,14 +905,14 @@ public Node predecessor(Node root, Node target) {
 
 ### Floor and Ceiling in BST
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-handwritten.svg" alt="Handwritten: Floor and Ceiling in BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-handwritten.svg" alt="Handwritten: Floor and Ceiling in BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-diagram.svg" alt="Diagram: Floor and Ceiling in BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-diagram.svg" alt="Diagram: Floor and Ceiling in BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-sticky.svg" alt="Sticky Note: Floor and Ceiling in BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/floor-and-ceiling-in-bst-sticky.svg" alt="Sticky Note: Floor and Ceiling in BST" width="30%">
 </a>
 
 
@@ -1064,14 +1064,14 @@ public Node ceil(Node root, int key) {
 
 ### Range Queries (Print keys in [L, R])
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-handwritten.svg" alt="Handwritten: Range Queries (Print keys in [L, R])" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-handwritten.svg" alt="Handwritten: Range Queries (Print keys in [L, R])" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-diagram.svg" alt="Diagram: Range Queries (Print keys in [L, R])" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-diagram.svg" alt="Diagram: Range Queries (Print keys in [L, R])" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-sticky.svg" alt="Sticky Note: Range Queries (Print keys in [L, R])" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/range-queries-print-keys-in-l-r-sticky.svg" alt="Sticky Note: Range Queries (Print keys in [L, R])" width="30%">
 </a>
 
 
@@ -1183,14 +1183,14 @@ public void rangeQuery(Node root, int L, int R, List<Integer> result) {
 
 ### Check if a Tree is a BST
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-handwritten.svg" alt="Handwritten: Check if a Tree is a BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-handwritten.svg" alt="Handwritten: Check if a Tree is a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-diagram.svg" alt="Diagram: Check if a Tree is a BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-diagram.svg" alt="Diagram: Check if a Tree is a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-sticky.svg" alt="Sticky Note: Check if a Tree is a BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/check-if-a-tree-is-a-bst-sticky.svg" alt="Sticky Note: Check if a Tree is a BST" width="30%">
 </a>
 
 
@@ -1370,14 +1370,14 @@ public boolean isBSTInorder(Node root) {
 
 ### Sorted Array to Balanced BST
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-handwritten.svg" alt="Handwritten: Sorted Array to Balanced BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-handwritten.svg" alt="Handwritten: Sorted Array to Balanced BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-diagram.svg" alt="Diagram: Sorted Array to Balanced BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-diagram.svg" alt="Diagram: Sorted Array to Balanced BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-sticky.svg" alt="Sticky Note: Sorted Array to Balanced BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/sorted-array-to-balanced-bst-sticky.svg" alt="Sticky Note: Sorted Array to Balanced BST" width="30%">
 </a>
 
 
@@ -1491,14 +1491,14 @@ public Node sortedArrayToBST(int[] arr, int left, int right) {
 
 ### Lowest Common Ancestor in BST
 
-<a href="../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-handwritten.svg" alt="Handwritten: Lowest Common Ancestor in BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-handwritten.svg" alt="Handwritten: Lowest Common Ancestor in BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-diagram.svg" alt="Diagram: Lowest Common Ancestor in BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-diagram.svg" alt="Diagram: Lowest Common Ancestor in BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-sticky.svg" alt="Sticky Note: Lowest Common Ancestor in BST" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/09-bst/lowest-common-ancestor-in-bst-sticky.svg" alt="Sticky Note: Lowest Common Ancestor in BST" width="30%">
 </a>
 
 

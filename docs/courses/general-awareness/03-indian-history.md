@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 Ancient India
 
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-handwritten.svg" alt="Handwritten: 3.1 Ancient India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-handwritten.svg" alt="Handwritten: 3.1 Ancient India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-diagram.svg" alt="Diagram: 3.1 Ancient India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-diagram.svg" alt="Diagram: 3.1 Ancient India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-sticky.svg" alt="Sticky Note: 3.1 Ancient India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-1-ancient-india-sticky.svg" alt="Sticky Note: 3.1 Ancient India" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ flowchart LR
 
 ### 3.2 Medieval India
 
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-handwritten.svg" alt="Handwritten: 3.2 Medieval India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-handwritten.svg" alt="Handwritten: 3.2 Medieval India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-diagram.svg" alt="Diagram: 3.2 Medieval India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-diagram.svg" alt="Diagram: 3.2 Medieval India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-sticky.svg" alt="Sticky Note: 3.2 Medieval India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-2-medieval-india-sticky.svg" alt="Sticky Note: 3.2 Medieval India" width="30%">
 </a>
 
 
@@ -214,14 +214,14 @@ flowchart TD
 
 ### 3.3 Modern India
 
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-handwritten.svg" alt="Handwritten: 3.3 Modern India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-handwritten.svg" alt="Handwritten: 3.3 Modern India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-diagram.svg" alt="Diagram: 3.3 Modern India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-diagram.svg" alt="Diagram: 3.3 Modern India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-sticky.svg" alt="Sticky Note: 3.3 Modern India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-3-modern-india-sticky.svg" alt="Sticky Note: 3.3 Modern India" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ timeline
 
 ### 3.4 Indian Culture & Heritage
 
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-handwritten.svg" alt="Handwritten: 3.4 Indian Culture & Heritage" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-handwritten.svg" alt="Handwritten: 3.4 Indian Culture & Heritage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-diagram.svg" alt="Diagram: 3.4 Indian Culture & Heritage" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-diagram.svg" alt="Diagram: 3.4 Indian Culture & Heritage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-sticky.svg" alt="Sticky Note: 3.4 Indian Culture & Heritage" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/03-indian-history/3-4-indian-culture-heritage-sticky.svg" alt="Sticky Note: 3.4 Indian Culture & Heritage" width="30%">
 </a>
 
 

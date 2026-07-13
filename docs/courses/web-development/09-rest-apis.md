@@ -62,14 +62,14 @@ REST (Representational State Transfer) is an architectural style for designing n
 
 ### Core Constraints
 
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-handwritten.svg" alt="Handwritten: Core Constraints" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-handwritten.svg" alt="Handwritten: Core Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-diagram.svg" alt="Diagram: Core Constraints" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-diagram.svg" alt="Diagram: Core Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-sticky.svg" alt="Sticky Note: Core Constraints" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/core-constraints-sticky.svg" alt="Sticky Note: Core Constraints" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ REST (Representational State Transfer) is an architectural style for designing n
 
 ### Resource Naming
 
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-handwritten.svg" alt="Handwritten: Resource Naming" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-handwritten.svg" alt="Handwritten: Resource Naming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-diagram.svg" alt="Diagram: Resource Naming" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-diagram.svg" alt="Diagram: Resource Naming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-sticky.svg" alt="Sticky Note: Resource Naming" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/resource-naming-sticky.svg" alt="Sticky Note: Resource Naming" width="30%">
 </a>
 
 
@@ -559,14 +559,14 @@ Test your understanding with these quick questions.
 
 ### Pagination Best Practices
 
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-handwritten.svg" alt="Handwritten: Pagination Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-handwritten.svg" alt="Handwritten: Pagination Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-diagram.svg" alt="Diagram: Pagination Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-diagram.svg" alt="Diagram: Pagination Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-sticky.svg" alt="Sticky Note: Pagination Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/pagination-best-practices-sticky.svg" alt="Sticky Note: Pagination Best Practices" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ app.get("/api/posts", async (req, res) => {
 
 ### Error Handling API Pattern
 
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-handwritten.svg" alt="Handwritten: Error Handling API Pattern" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-handwritten.svg" alt="Handwritten: Error Handling API Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-diagram.svg" alt="Diagram: Error Handling API Pattern" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-diagram.svg" alt="Diagram: Error Handling API Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-sticky.svg" alt="Sticky Note: Error Handling API Pattern" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/error-handling-api-pattern-sticky.svg" alt="Sticky Note: Error Handling API Pattern" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ REST API design follows resource-oriented principles with consistent URI naming,
 
 ### Application Projects
 
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
 </a>
 
 
@@ -937,14 +937,14 @@ REST API design follows resource-oriented principles with consistent URI naming,
 
 ### Challenge Project
 
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/09-rest-apis/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
 </a>
 
 

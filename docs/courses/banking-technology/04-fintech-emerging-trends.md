@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Account Aggregator (AA) Framework
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-handwritten.svg" alt="Handwritten: 1. Account Aggregator (AA) Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-handwritten.svg" alt="Handwritten: 1. Account Aggregator (AA) Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-diagram.svg" alt="Diagram: 1. Account Aggregator (AA) Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-diagram.svg" alt="Diagram: 1. Account Aggregator (AA) Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-sticky.svg" alt="Sticky Note: 1. Account Aggregator (AA) Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/1-account-aggregator-aa-framework-sticky.svg" alt="Sticky Note: 1. Account Aggregator (AA) Framework" width="30%">
 </a>
 
 
@@ -143,14 +143,14 @@ The consent artefact is the core technical mechanism of the AA framework — a m
 
 ### 2. Open Banking and NDHP (National Data Health Platform)
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-handwritten.svg" alt="Handwritten: 2. Open Banking and NDHP (National Data Health Platform)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-handwritten.svg" alt="Handwritten: 2. Open Banking and NDHP (National Data Health Platform)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-diagram.svg" alt="Diagram: 2. Open Banking and NDHP (National Data Health Platform)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-diagram.svg" alt="Diagram: 2. Open Banking and NDHP (National Data Health Platform)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-sticky.svg" alt="Sticky Note: 2. Open Banking and NDHP (National Data Health Platform)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/2-open-banking-and-ndhp-national-data-health-platform-sticky.svg" alt="Sticky Note: 2. Open Banking and NDHP (National Data Health Platform)" width="30%">
 </a>
 
 
@@ -205,14 +205,14 @@ NDHP Components:
 
 ### 3. Digital Rupee / e-Rupee (CBDC)
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-handwritten.svg" alt="Handwritten: 3. Digital Rupee / e-Rupee (CBDC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-handwritten.svg" alt="Handwritten: 3. Digital Rupee / e-Rupee (CBDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-diagram.svg" alt="Diagram: 3. Digital Rupee / e-Rupee (CBDC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-diagram.svg" alt="Diagram: 3. Digital Rupee / e-Rupee (CBDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-sticky.svg" alt="Sticky Note: 3. Digital Rupee / e-Rupee (CBDC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/3-digital-rupee-e-rupee-cbdc-sticky.svg" alt="Sticky Note: 3. Digital Rupee / e-Rupee (CBDC)" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ A key feature of CBDC is the ability to transact without internet connectivity �
 
 ### 4. RegTech and SupTech
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-handwritten.svg" alt="Handwritten: 4. RegTech and SupTech" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-handwritten.svg" alt="Handwritten: 4. RegTech and SupTech" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-diagram.svg" alt="Diagram: 4. RegTech and SupTech" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-diagram.svg" alt="Diagram: 4. RegTech and SupTech" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-sticky.svg" alt="Sticky Note: 4. RegTech and SupTech" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/4-regtech-and-suptech-sticky.svg" alt="Sticky Note: 4. RegTech and SupTech" width="30%">
 </a>
 
 
@@ -442,14 +442,14 @@ DAKSH Modules:
 
 ### 5. Neo Banks
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-handwritten.svg" alt="Handwritten: 5. Neo Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-handwritten.svg" alt="Handwritten: 5. Neo Banks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-diagram.svg" alt="Diagram: 5. Neo Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-diagram.svg" alt="Diagram: 5. Neo Banks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-sticky.svg" alt="Sticky Note: 5. Neo Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/5-neo-banks-sticky.svg" alt="Sticky Note: 5. Neo Banks" width="30%">
 </a>
 
 
@@ -538,14 +538,14 @@ Fi Tech Stack (Representative):
 
 ### 6. Lending Technology
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-handwritten.svg" alt="Handwritten: 6. Lending Technology" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-handwritten.svg" alt="Handwritten: 6. Lending Technology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-diagram.svg" alt="Diagram: 6. Lending Technology" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-diagram.svg" alt="Diagram: 6. Lending Technology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-sticky.svg" alt="Sticky Note: 6. Lending Technology" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/6-lending-technology-sticky.svg" alt="Sticky Note: 6. Lending Technology" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ Feature Engineering for UPI-based Score:
 
 ### 7. Blockchain in Trade Finance
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-handwritten.svg" alt="Handwritten: 7. Blockchain in Trade Finance" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-handwritten.svg" alt="Handwritten: 7. Blockchain in Trade Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-diagram.svg" alt="Diagram: 7. Blockchain in Trade Finance" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-diagram.svg" alt="Diagram: 7. Blockchain in Trade Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-sticky.svg" alt="Sticky Note: 7. Blockchain in Trade Finance" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/7-blockchain-in-trade-finance-sticky.svg" alt="Sticky Note: 7. Blockchain in Trade Finance" width="30%">
 </a>
 
 
@@ -689,14 +689,14 @@ Blockchain Trade Finance:
 
 ### 8. UPI-ATM Interoperability
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-handwritten.svg" alt="Handwritten: 8. UPI-ATM Interoperability" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-handwritten.svg" alt="Handwritten: 8. UPI-ATM Interoperability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-diagram.svg" alt="Diagram: 8. UPI-ATM Interoperability" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-diagram.svg" alt="Diagram: 8. UPI-ATM Interoperability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-sticky.svg" alt="Sticky Note: 8. UPI-ATM Interoperability" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/8-upi-atm-interoperability-sticky.svg" alt="Sticky Note: 8. UPI-ATM Interoperability" width="30%">
 </a>
 
 
@@ -740,14 +740,14 @@ RBI and NPCI have enabled UPI-based ATM withdrawals — customers can withdraw c
 
 ### 9. 3D Secure 2.0
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-handwritten.svg" alt="Handwritten: 9. 3D Secure 2.0" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-handwritten.svg" alt="Handwritten: 9. 3D Secure 2.0" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-diagram.svg" alt="Diagram: 9. 3D Secure 2.0" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-diagram.svg" alt="Diagram: 9. 3D Secure 2.0" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-sticky.svg" alt="Sticky Note: 9. 3D Secure 2.0" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/9-3d-secure-2-0-sticky.svg" alt="Sticky Note: 9. 3D Secure 2.0" width="30%">
 </a>
 
 
@@ -804,14 +804,14 @@ RBI and NPCI have enabled UPI-based ATM withdrawals — customers can withdraw c
 
 ### 10. IoT in Banking
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-handwritten.svg" alt="Handwritten: 10. IoT in Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-handwritten.svg" alt="Handwritten: 10. IoT in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-diagram.svg" alt="Diagram: 10. IoT in Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-diagram.svg" alt="Diagram: 10. IoT in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-sticky.svg" alt="Sticky Note: 10. IoT in Banking" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/10-iot-in-banking-sticky.svg" alt="Sticky Note: 10. IoT in Banking" width="30%">
 </a>
 
 
@@ -874,14 +874,14 @@ IoT Security Considerations:
 
 ### 11. Architecture Diagrams
 
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-handwritten.svg" alt="Handwritten: 11. Architecture Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-handwritten.svg" alt="Handwritten: 11. Architecture Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-diagram.svg" alt="Diagram: 11. Architecture Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-diagram.svg" alt="Diagram: 11. Architecture Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-sticky.svg" alt="Sticky Note: 11. Architecture Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-technology/04-fintech-emerging-trends/11-architecture-diagrams-sticky.svg" alt="Sticky Note: 11. Architecture Diagrams" width="30%">
 </a>
 
 

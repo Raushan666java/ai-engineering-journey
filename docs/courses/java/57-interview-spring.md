@@ -25,14 +25,14 @@ flowchart LR
 
 ### Q1: What types of dependency injection does Spring support?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-handwritten.svg" alt="Handwritten: What types of dependency injection does Spring support?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-handwritten.svg" alt="Handwritten: What types of dependency injection does Spring support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-diagram.svg" alt="Diagram: What types of dependency injection does Spring support?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-diagram.svg" alt="Diagram: What types of dependency injection does Spring support?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-sticky.svg" alt="Sticky Note: What types of dependency injection does Spring support?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-sticky.svg" alt="Sticky Note: What types of dependency injection does Spring support?" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ Constructor injection: required deps, immutable fields, no null checks. Setter: 
 
 ### Q2: How does @Autowired work? What if there are multiple matching beans?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-handwritten.svg" alt="Handwritten: How does @Autowired work? What if there are multiple matching beans?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-handwritten.svg" alt="Handwritten: How does @Autowired work? What if there are multiple matching beans?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-diagram.svg" alt="Diagram: How does @Autowired work? What if there are multiple matching beans?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-diagram.svg" alt="Diagram: How does @Autowired work? What if there are multiple matching beans?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-sticky.svg" alt="Sticky Note: How does @Autowired work? What if there are multiple matching beans?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-sticky.svg" alt="Sticky Note: How does @Autowired work? What if there are multiple matching beans?" width="30%">
 </a>
 
 
@@ -228,14 +228,14 @@ interface AuditService {}
 
 ### Q3: Circular dependencies → how does Spring handle them?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-handwritten.svg" alt="Handwritten: Circular dependencies → how does Spring handle them?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-handwritten.svg" alt="Handwritten: Circular dependencies → how does Spring handle them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-diagram.svg" alt="Diagram: Circular dependencies → how does Spring handle them?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-diagram.svg" alt="Diagram: Circular dependencies → how does Spring handle them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-sticky.svg" alt="Sticky Note: Circular dependencies → how does Spring handle them?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-sticky.svg" alt="Sticky Note: Circular dependencies → how does Spring handle them?" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ Spring singleton cache: singletonObjects (fully created) -> earlySingletonObject
 
 ### Q4: Bean lifecycle → from creation to destruction.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-handwritten.svg" alt="Handwritten: Bean lifecycle → from creation to destruction." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-handwritten.svg" alt="Handwritten: Bean lifecycle → from creation to destruction." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-diagram.svg" alt="Diagram: Bean lifecycle → from creation to destruction." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-diagram.svg" alt="Diagram: Bean lifecycle → from creation to destruction." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-sticky.svg" alt="Sticky Note: Bean lifecycle → from creation to destruction." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-sticky.svg" alt="Sticky Note: Bean lifecycle → from creation to destruction." width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ Full order: constructor -> DI -> *Aware interfaces -> postProcessBeforeInit -> @
 
 ### Q5: Bean scopes in Spring.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-handwritten.svg" alt="Handwritten: Bean scopes in Spring." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-handwritten.svg" alt="Handwritten: Bean scopes in Spring." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-diagram.svg" alt="Diagram: Bean scopes in Spring." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-diagram.svg" alt="Diagram: Bean scopes in Spring." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-sticky.svg" alt="Sticky Note: Bean scopes in Spring." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-sticky.svg" alt="Sticky Note: Bean scopes in Spring." width="30%">
 </a>
 
 
@@ -535,14 +535,14 @@ Singleton: shared, thread-safe consideration. Prototype: full lifecycle not mana
 
 ### Q6: Spring Boot auto-configuration.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-handwritten.svg" alt="Handwritten: Spring Boot auto-configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-handwritten.svg" alt="Handwritten: Spring Boot auto-configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-diagram.svg" alt="Diagram: Spring Boot auto-configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-diagram.svg" alt="Diagram: Spring Boot auto-configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-sticky.svg" alt="Sticky Note: Spring Boot auto-configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-sticky.svg" alt="Sticky Note: Spring Boot auto-configuration." width="30%">
 </a>
 
 
@@ -632,14 +632,14 @@ Auto-configuration triggers: @SpringBootApplication (which includes @EnableAutoC
 
 ### Q7: How does DispatcherServlet work in Spring MVC?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-handwritten.svg" alt="Handwritten: How does DispatcherServlet work in Spring MVC?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-handwritten.svg" alt="Handwritten: How does DispatcherServlet work in Spring MVC?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-diagram.svg" alt="Diagram: How does DispatcherServlet work in Spring MVC?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-diagram.svg" alt="Diagram: How does DispatcherServlet work in Spring MVC?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-sticky.svg" alt="Sticky Note: How does DispatcherServlet work in Spring MVC?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-sticky.svg" alt="Sticky Note: How does DispatcherServlet work in Spring MVC?" width="30%">
 </a>
 
 
@@ -796,14 +796,14 @@ Key interfaces: HandlerMapping (URL->handler mapping), HandlerAdapter (invokes h
 
 ### Q8: N+1 query problem in Spring Data JPA.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-handwritten.svg" alt="Handwritten: N+1 query problem in Spring Data JPA." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-handwritten.svg" alt="Handwritten: N+1 query problem in Spring Data JPA." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-diagram.svg" alt="Diagram: N+1 query problem in Spring Data JPA." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-diagram.svg" alt="Diagram: N+1 query problem in Spring Data JPA." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-sticky.svg" alt="Sticky Note: N+1 query problem in Spring Data JPA." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-sticky.svg" alt="Sticky Note: N+1 query problem in Spring Data JPA." width="30%">
 </a>
 
 
@@ -899,14 +899,14 @@ N+1 detection: enable SQL logging (spring.jpa.show-sql=true), use datasource-pro
 
 ### Q9: Fetch strategies → EAGER vs LAZY.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-handwritten.svg" alt="Handwritten: Fetch strategies → EAGER vs LAZY." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-handwritten.svg" alt="Handwritten: Fetch strategies → EAGER vs LAZY." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-diagram.svg" alt="Diagram: Fetch strategies → EAGER vs LAZY." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-diagram.svg" alt="Diagram: Fetch strategies → EAGER vs LAZY." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-sticky.svg" alt="Sticky Note: Fetch strategies → EAGER vs LAZY." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-sticky.svg" alt="Sticky Note: Fetch strategies → EAGER vs LAZY." width="30%">
 </a>
 
 
@@ -995,14 +995,14 @@ EAGER is dangerous in practice: it forces unnecessary joins, causes cartesian pr
 
 ### Q10: Cascade types in JPA.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-handwritten.svg" alt="Handwritten: Cascade types in JPA." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-handwritten.svg" alt="Handwritten: Cascade types in JPA." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-diagram.svg" alt="Diagram: Cascade types in JPA." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-diagram.svg" alt="Diagram: Cascade types in JPA." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-sticky.svg" alt="Sticky Note: Cascade types in JPA." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-sticky.svg" alt="Sticky Note: Cascade types in JPA." width="30%">
 </a>
 
 
@@ -1111,14 +1111,14 @@ CascadeType.ALL: convenience for all operations. orphanRemoval: deletes children
 
 ### Q11: Transaction management → @Transactional propagation.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-handwritten.svg" alt="Handwritten: Transaction management → @Transactional propagation." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-handwritten.svg" alt="Handwritten: Transaction management → @Transactional propagation." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-diagram.svg" alt="Diagram: Transaction management → @Transactional propagation." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-diagram.svg" alt="Diagram: Transaction management → @Transactional propagation." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-sticky.svg" alt="Sticky Note: Transaction management → @Transactional propagation." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-sticky.svg" alt="Sticky Note: Transaction management → @Transactional propagation." width="30%">
 </a>
 
 
@@ -1258,14 +1258,14 @@ Propagation comparison: REQUIRES_NEW each gets independent connection (connectio
 
 ### Q12: Transaction isolation levels and read phenomena.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-handwritten.svg" alt="Handwritten: Transaction isolation levels and read phenomena." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-handwritten.svg" alt="Handwritten: Transaction isolation levels and read phenomena." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-diagram.svg" alt="Diagram: Transaction isolation levels and read phenomena." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-diagram.svg" alt="Diagram: Transaction isolation levels and read phenomena." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-sticky.svg" alt="Sticky Note: Transaction isolation levels and read phenomena." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-sticky.svg" alt="Sticky Note: Transaction isolation levels and read phenomena." width="30%">
 </a>
 
 
@@ -1359,14 +1359,14 @@ MVCC details: each row has visibility information (transaction ID, commit timest
 
 ### Q13: Optimistic vs Pessimistic locking.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-handwritten.svg" alt="Handwritten: Optimistic vs Pessimistic locking." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-handwritten.svg" alt="Handwritten: Optimistic vs Pessimistic locking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-diagram.svg" alt="Diagram: Optimistic vs Pessimistic locking." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-diagram.svg" alt="Diagram: Optimistic vs Pessimistic locking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-sticky.svg" alt="Sticky Note: Optimistic vs Pessimistic locking." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-sticky.svg" alt="Sticky Note: Optimistic vs Pessimistic locking." width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ Optimistic: good for low contention, high performance, no connection held. Pessi
 
 ### Q14: @Transactional → readOnly flag.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-handwritten.svg" alt="Handwritten: @Transactional → readOnly flag." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-handwritten.svg" alt="Handwritten: @Transactional → readOnly flag." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-diagram.svg" alt="Diagram: @Transactional → readOnly flag." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-diagram.svg" alt="Diagram: @Transactional → readOnly flag." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-sticky.svg" alt="Sticky Note: @Transactional → readOnly flag." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-sticky.svg" alt="Sticky Note: @Transactional → readOnly flag." width="30%">
 </a>
 
 
@@ -1589,14 +1589,14 @@ readOnly at service layer vs query level: service @Transactional(readOnly=true) 
 
 ### Q15: Spring Data JPA → custom queries and projections.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-handwritten.svg" alt="Handwritten: Spring Data JPA → custom queries and projections." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-handwritten.svg" alt="Handwritten: Spring Data JPA → custom queries and projections." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-diagram.svg" alt="Diagram: Spring Data JPA → custom queries and projections." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-diagram.svg" alt="Diagram: Spring Data JPA → custom queries and projections." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-sticky.svg" alt="Sticky Note: Spring Data JPA → custom queries and projections." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-sticky.svg" alt="Sticky Note: Spring Data JPA → custom queries and projections." width="30%">
 </a>
 
 
@@ -1707,14 +1707,14 @@ Derived query keywords: And, Or, Between, LessThan, GreaterThan, Like, In, Ignor
 
 ### Q16: Spring Security → SecurityFilterChain.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-handwritten.svg" alt="Handwritten: Spring Security → SecurityFilterChain." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-handwritten.svg" alt="Handwritten: Spring Security → SecurityFilterChain." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-diagram.svg" alt="Diagram: Spring Security → SecurityFilterChain." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-diagram.svg" alt="Diagram: Spring Security → SecurityFilterChain." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-sticky.svg" alt="Sticky Note: Spring Security → SecurityFilterChain." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-sticky.svg" alt="Sticky Note: Spring Security → SecurityFilterChain." width="30%">
 </a>
 
 
@@ -1877,14 +1877,14 @@ SecurityFilterChain replaced WebSecurityConfigurerAdapter in Spring Security 5.7
 
 ### Q17: Spring Security → OAuth2 client and resource server.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-handwritten.svg" alt="Handwritten: Spring Security → OAuth2 client and resource server." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-handwritten.svg" alt="Handwritten: Spring Security → OAuth2 client and resource server." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-diagram.svg" alt="Diagram: Spring Security → OAuth2 client and resource server." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-diagram.svg" alt="Diagram: Spring Security → OAuth2 client and resource server." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-sticky.svg" alt="Sticky Note: Spring Security → OAuth2 client and resource server." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-sticky.svg" alt="Sticky Note: Spring Security → OAuth2 client and resource server." width="30%">
 </a>
 
 
@@ -2060,14 +2060,14 @@ OAuth2 client handles authorization code flow. Resource server validates JWT sig
 
 ### Q18: @ControllerAdvice and exception handling.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-handwritten.svg" alt="Handwritten: @ControllerAdvice and exception handling." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-handwritten.svg" alt="Handwritten: @ControllerAdvice and exception handling." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-diagram.svg" alt="Diagram: @ControllerAdvice and exception handling." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-diagram.svg" alt="Diagram: @ControllerAdvice and exception handling." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-sticky.svg" alt="Sticky Note: @ControllerAdvice and exception handling." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-sticky.svg" alt="Sticky Note: @ControllerAdvice and exception handling." width="30%">
 </a>
 
 
@@ -2199,14 +2199,14 @@ Problem Details (RFC 7807): standardized error response format. Spring 6+ provid
 
 ### Q19: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-handwritten.svg" alt="Handwritten: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-handwritten.svg" alt="Handwritten: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-diagram.svg" alt="Diagram: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-diagram.svg" alt="Diagram: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-sticky.svg" alt="Sticky Note: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-sticky.svg" alt="Sticky Note: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
 </a>
 
 
@@ -2381,14 +2381,14 @@ class UserService {
 @WebMvcTest auto-configures MockMvc. @DataJpaTest auto-configures TestEntityManager, repositories. @SpringBootTest loads full context → use for integration tests. @MockBean replaces beans with Mockito mocks. Testcontainers for real database testing.
 ### Q20: What is AOP in Spring and how does it work?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is AOP in Spring and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is AOP in Spring and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-diagram.svg" alt="Diagram: What is AOP in Spring and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-diagram.svg" alt="Diagram: What is AOP in Spring and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is AOP in Spring and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is AOP in Spring and how does it work?" width="30%">
 </a>
 
 
@@ -2550,14 +2550,14 @@ AOP guide: `@EnableAspectJAutoProxy` enables annotation-driven AOP. JDK dynamic 
 
 ### Q21: Spring Boot Actuator → endpoints and metrics.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-handwritten.svg" alt="Handwritten: Spring Boot Actuator → endpoints and metrics." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-handwritten.svg" alt="Handwritten: Spring Boot Actuator → endpoints and metrics." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-diagram.svg" alt="Diagram: Spring Boot Actuator → endpoints and metrics." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-diagram.svg" alt="Diagram: Spring Boot Actuator → endpoints and metrics." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-sticky.svg" alt="Sticky Note: Spring Boot Actuator → endpoints and metrics." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-sticky.svg" alt="Sticky Note: Spring Boot Actuator → endpoints and metrics." width="30%">
 </a>
 
 
@@ -2768,14 +2768,14 @@ Actuator endpoints can be exposed over JMX (default) and HTTP. Use `management.e
 
 ### Q22: Caching with Spring → @Cacheable, @CacheEvict, @CachePut.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-handwritten.svg" alt="Handwritten: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-handwritten.svg" alt="Handwritten: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-diagram.svg" alt="Diagram: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-diagram.svg" alt="Diagram: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-sticky.svg" alt="Sticky Note: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-sticky.svg" alt="Sticky Note: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
 </a>
 
 
@@ -3011,14 +3011,14 @@ class StringUtils {
 
 ### Q23: Spring Scheduling → @Scheduled and @Async.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-handwritten.svg" alt="Handwritten: Spring Scheduling → @Scheduled and @Async." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-handwritten.svg" alt="Handwritten: Spring Scheduling → @Scheduled and @Async." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-diagram.svg" alt="Diagram: Spring Scheduling → @Scheduled and @Async." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-diagram.svg" alt="Diagram: Spring Scheduling → @Scheduled and @Async." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-sticky.svg" alt="Sticky Note: Spring Scheduling → @Scheduled and @Async." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-sticky.svg" alt="Sticky Note: Spring Scheduling → @Scheduled and @Async." width="30%">
 </a>
 
 
@@ -3273,14 +3273,14 @@ Cron triggers use system timezone by default. fixedRate tasks pile up if they ta
 
 ### Q24: @ConfigurationProperties and type-safe configuration.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-handwritten.svg" alt="Handwritten: @ConfigurationProperties and type-safe configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-handwritten.svg" alt="Handwritten: @ConfigurationProperties and type-safe configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-diagram.svg" alt="Diagram: @ConfigurationProperties and type-safe configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-diagram.svg" alt="Diagram: @ConfigurationProperties and type-safe configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-sticky.svg" alt="Sticky Note: @ConfigurationProperties and type-safe configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-sticky.svg" alt="Sticky Note: @ConfigurationProperties and type-safe configuration." width="30%">
 </a>
 
 
@@ -3566,14 +3566,14 @@ app.datasource.url            → lowercase
 
 ### Q25: Spring Profiles → environment-specific configuration.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-handwritten.svg" alt="Handwritten: Spring Profiles → environment-specific configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-handwritten.svg" alt="Handwritten: Spring Profiles → environment-specific configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-diagram.svg" alt="Diagram: Spring Profiles → environment-specific configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-diagram.svg" alt="Diagram: Spring Profiles → environment-specific configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-sticky.svg" alt="Sticky Note: Spring Profiles → environment-specific configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-sticky.svg" alt="Sticky Note: Spring Profiles → environment-specific configuration." width="30%">
 </a>
 
 
@@ -3841,14 +3841,14 @@ Profile groups simplify multi-profile environments. Use `spring.profiles.include
 
 ### Q26: Spring Events → ApplicationEventPublisher.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-handwritten.svg" alt="Handwritten: Spring Events → ApplicationEventPublisher." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-handwritten.svg" alt="Handwritten: Spring Events → ApplicationEventPublisher." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-diagram.svg" alt="Diagram: Spring Events → ApplicationEventPublisher." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-diagram.svg" alt="Diagram: Spring Events → ApplicationEventPublisher." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-sticky.svg" alt="Sticky Note: Spring Events → ApplicationEventPublisher." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-sticky.svg" alt="Sticky Note: Spring Events → ApplicationEventPublisher." width="30%">
 </a>
 
 
@@ -4148,14 +4148,14 @@ Events decouple publishers from listeners. Transactional events prevent sending 
 
 ### Q27: Spring Boot validation → @Valid, @Validated, and custom validators.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-handwritten.svg" alt="Handwritten: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-handwritten.svg" alt="Handwritten: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-diagram.svg" alt="Diagram: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-diagram.svg" alt="Diagram: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-sticky.svg" alt="Sticky Note: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-sticky.svg" alt="Sticky Note: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
 </a>
 
 
@@ -4490,14 +4490,14 @@ Validation groups enable different rules per operation (create vs update). @Vali
 
 ### Q28: CORS configuration in Spring Boot.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-handwritten.svg" alt="Handwritten: CORS configuration in Spring Boot." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-handwritten.svg" alt="Handwritten: CORS configuration in Spring Boot." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-diagram.svg" alt="Diagram: CORS configuration in Spring Boot." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-diagram.svg" alt="Diagram: CORS configuration in Spring Boot." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-sticky.svg" alt="Sticky Note: CORS configuration in Spring Boot." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-sticky.svg" alt="Sticky Note: CORS configuration in Spring Boot." width="30%">
 </a>
 
 
@@ -4686,14 +4686,14 @@ CORS config in Spring Security must precede authorization rules. Use exact origi
 
 ### Q29: WebSocket support in Spring Boot.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-handwritten.svg" alt="Handwritten: WebSocket support in Spring Boot." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-handwritten.svg" alt="Handwritten: WebSocket support in Spring Boot." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-diagram.svg" alt="Diagram: WebSocket support in Spring Boot." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-diagram.svg" alt="Diagram: WebSocket support in Spring Boot." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-sticky.svg" alt="Sticky Note: WebSocket support in Spring Boot." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-sticky.svg" alt="Sticky Note: WebSocket support in Spring Boot." width="30%">
 </a>
 
 
@@ -4984,14 +4984,14 @@ WebSocket with STOMP provides pub/sub messaging on top of raw WebSocket. Simple 
 
 ### Q30: Spring Boot embedded container customization.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-handwritten.svg" alt="Handwritten: Spring Boot embedded container customization." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-handwritten.svg" alt="Handwritten: Spring Boot embedded container customization." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-diagram.svg" alt="Diagram: Spring Boot embedded container customization." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-diagram.svg" alt="Diagram: Spring Boot embedded container customization." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-sticky.svg" alt="Sticky Note: Spring Boot embedded container customization." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-sticky.svg" alt="Sticky Note: Spring Boot embedded container customization." width="30%">
 </a>
 
 
@@ -5247,14 +5247,14 @@ Embedded container choice affects memory, startup time, and throughput. Tomcat: 
 
 ### Q31: Spring Boot DevTools → restarts, LiveReload, and remote debugging.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-handwritten.svg" alt="Handwritten: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-handwritten.svg" alt="Handwritten: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-diagram.svg" alt="Diagram: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-diagram.svg" alt="Diagram: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-sticky.svg" alt="Sticky Note: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-sticky.svg" alt="Sticky Note: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
 </a>
 
 
@@ -5398,14 +5398,14 @@ DevTools restart relies on classloader splitting → application code changes tr
 
 ### Q32: Content negotiation in Spring MVC.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-handwritten.svg" alt="Handwritten: Content negotiation in Spring MVC." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-handwritten.svg" alt="Handwritten: Content negotiation in Spring MVC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-diagram.svg" alt="Diagram: Content negotiation in Spring MVC." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-diagram.svg" alt="Diagram: Content negotiation in Spring MVC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-sticky.svg" alt="Sticky Note: Content negotiation in Spring MVC." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-sticky.svg" alt="Sticky Note: Content negotiation in Spring MVC." width="30%">
 </a>
 
 
@@ -5672,14 +5672,14 @@ Content negotiation enables REST API versioning through Accept header (vnd.myapp
 
 ### Q33: Spring Boot externalized configuration → Environment, @PropertySource, and property binding.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-handwritten.svg" alt="Handwritten: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-handwritten.svg" alt="Handwritten: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-diagram.svg" alt="Diagram: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-diagram.svg" alt="Diagram: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-sticky.svg" alt="Sticky Note: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-sticky.svg" alt="Sticky Note: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
 </a>
 
 
@@ -5929,14 +5929,14 @@ Use @Value for simple properties, @ConfigurationProperties for structured groups
 
 ### Q34: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-handwritten.svg" alt="Handwritten: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-handwritten.svg" alt="Handwritten: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-diagram.svg" alt="Diagram: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-diagram.svg" alt="Diagram: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-sticky.svg" alt="Sticky Note: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-sticky.svg" alt="Sticky Note: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
 </a>
 
 
@@ -6363,14 +6363,14 @@ JdbcTemplate: explicit SQL, manual mapping, best for complex queries. JPA: autom
 
 ### Q35: Spring Boot logging configuration.
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-handwritten.svg" alt="Handwritten: Spring Boot logging configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-handwritten.svg" alt="Handwritten: Spring Boot logging configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-diagram.svg" alt="Diagram: Spring Boot logging configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-diagram.svg" alt="Diagram: Spring Boot logging configuration." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-sticky.svg" alt="Sticky Note: Spring Boot logging configuration." width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-sticky.svg" alt="Sticky Note: Spring Boot logging configuration." width="30%">
 </a>
 
 
@@ -6652,14 +6652,14 @@ OFF  → No logging
 Logback is default and sufficient for most applications. MDC provides contextual logging without passing state through method calls. Use structured logging (JSON) for log aggregation systems (ELK, Datadog, Splunk). Async appender prevents logging I/O from blocking application threads.
 ### Q36: What is Spring Cloud and how does it enable microservice communication?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-handwritten.svg" alt="Handwritten: What is Spring Cloud and how does it enable microservice communication?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-handwritten.svg" alt="Handwritten: What is Spring Cloud and how does it enable microservice communication?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-diagram.svg" alt="Diagram: What is Spring Cloud and how does it enable microservice communication?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-diagram.svg" alt="Diagram: What is Spring Cloud and how does it enable microservice communication?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-sticky.svg" alt="Sticky Note: What is Spring Cloud and how does it enable microservice communication?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-sticky.svg" alt="Sticky Note: What is Spring Cloud and how does it enable microservice communication?" width="30%">
 </a>
 
 
@@ -6776,14 +6776,14 @@ class OrderService {
 Spring Cloud abstracts distributed system complexity. The 2023.0.x release aligns with Spring Boot 3.x and Jakarta EE. Micrometer Tracing replaces the deprecated Sleuth project.
 ### Q37: How do you implement service discovery with Eureka?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-handwritten.svg" alt="Handwritten: How do you implement service discovery with Eureka?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-handwritten.svg" alt="Handwritten: How do you implement service discovery with Eureka?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-diagram.svg" alt="Diagram: How do you implement service discovery with Eureka?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-diagram.svg" alt="Diagram: How do you implement service discovery with Eureka?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-sticky.svg" alt="Sticky Note: How do you implement service discovery with Eureka?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-sticky.svg" alt="Sticky Note: How do you implement service discovery with Eureka?" width="30%">
 </a>
 
 
@@ -6890,14 +6890,14 @@ Preferred when running outside Kubernetes.
 Eureka provides client-side service discovery. Self-preservation mode prevents cascade evictions during network partitions. For Kubernetes deployments, consider spring-cloud-kubernetes instead.
 ### Q38: How does Spring Cloud Config manage external configuration?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-handwritten.svg" alt="Handwritten: How does Spring Cloud Config manage external configuration?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-handwritten.svg" alt="Handwritten: How does Spring Cloud Config manage external configuration?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-diagram.svg" alt="Diagram: How does Spring Cloud Config manage external configuration?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-diagram.svg" alt="Diagram: How does Spring Cloud Config manage external configuration?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-sticky.svg" alt="Sticky Note: How does Spring Cloud Config manage external configuration?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-sticky.svg" alt="Sticky Note: How does Spring Cloud Config manage external configuration?" width="30%">
 </a>
 
 
@@ -7051,14 +7051,14 @@ curl -X POST http://localhost:8888/encrypt -d 'db-password'
 Spring Cloud Config centralizes configuration with environment-specific property sources. Use @RefreshScope combined with /actuator/refresh for dynamic updates without restart. Secure the Config Server with Spring Security and HTTPS in production.
 ### Q39: How do you implement API Gateway with Spring Cloud Gateway?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-handwritten.svg" alt="Handwritten: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-handwritten.svg" alt="Handwritten: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-diagram.svg" alt="Diagram: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-diagram.svg" alt="Diagram: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-sticky.svg" alt="Sticky Note: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-sticky.svg" alt="Sticky Note: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
 </a>
 
 
@@ -7213,14 +7213,14 @@ class FallbackController {
 Spring Cloud Gateway is non-blocking end-to-end (Netty runtime). Key advantages over Zuul: no blocking I/O, WebFlux-native, better performance under high concurrency, built-in rate limiting with Redis, and seamless WebSocket proxying. Use the Java DSL for type safety over YAML.
 ### Q40: How do you use Resilience4j for fault tolerance?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-handwritten.svg" alt="Handwritten: How do you use Resilience4j for fault tolerance?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-handwritten.svg" alt="Handwritten: How do you use Resilience4j for fault tolerance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-diagram.svg" alt="Diagram: How do you use Resilience4j for fault tolerance?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-diagram.svg" alt="Diagram: How do you use Resilience4j for fault tolerance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-sticky.svg" alt="Sticky Note: How do you use Resilience4j for fault tolerance?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-sticky.svg" alt="Sticky Note: How do you use Resilience4j for fault tolerance?" width="30%">
 </a>
 
 
@@ -7416,14 +7416,14 @@ class CircuitBreakerLogger {
 Resilience4j follows the decorator pattern. Modules are composable (RateLimiter → CircuitBreaker → Retry). Use Micrometer integration for Prometheus/Grafana dashboards. Always test circuit breaker transitions in integration tests by simulating failures.
 ### Q41: How does WebClient differ from RestTemplate?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-handwritten.svg" alt="Handwritten: How does WebClient differ from RestTemplate?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-handwritten.svg" alt="Handwritten: How does WebClient differ from RestTemplate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-diagram.svg" alt="Diagram: How does WebClient differ from RestTemplate?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-diagram.svg" alt="Diagram: How does WebClient differ from RestTemplate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-sticky.svg" alt="Sticky Note: How does WebClient differ from RestTemplate?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-sticky.svg" alt="Sticky Note: How does WebClient differ from RestTemplate?" width="30%">
 </a>
 
 
@@ -7578,14 +7578,14 @@ Timeouts             setConnectTimeout           HttpClient config
 Use WebClient for all new development. For existing RestTemplate code, migrate incrementally → the reactive API can be adapted to blocking with `.block()` when necessary. WebClient works equally well in both WebFlux and traditional Spring MVC applications.
 ### Q42: What is Spring Batch and how does it work?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Spring Batch and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Spring Batch and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-diagram.svg" alt="Diagram: What is Spring Batch and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-diagram.svg" alt="Diagram: What is Spring Batch and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Spring Batch and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Spring Batch and how does it work?" width="30%">
 </a>
 
 
@@ -7782,14 +7782,14 @@ BATCH_STEP_EXECUTION     → Step-level execution details
 Spring Batch excels at high-volume, scheduled data processing. Chunk-oriented processing prevents memory exhaustion, metadata tables enable restart from failure points, and partitioning allows horizontal scaling. Use with Spring Cloud Task for short-lived batch jobs in cloud environments.
 ### Q43: How do you implement data caching with Redis in Spring Boot?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement data caching with Redis in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement data caching with Redis in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-diagram.svg" alt="Diagram: How do you implement data caching with Redis in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-diagram.svg" alt="Diagram: How do you implement data caching with Redis in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement data caching with Redis in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement data caching with Redis in Spring Boot?" width="30%">
 </a>
 
 
@@ -7986,14 +7986,14 @@ Distributed       Yes              No                Yes (clustered)
 Use @Cacheable(sync=true) for hot keys to prevent cache stampede. Monitor cache hit ratios via Actuator metrics → ratios below 80% indicate poor cache configuration. For production, configure Redis Sentinel or Cluster for high availability.
 ### Q44: How do you use MongoDB with Spring Data?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-handwritten.svg" alt="Handwritten: How do you use MongoDB with Spring Data?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-handwritten.svg" alt="Handwritten: How do you use MongoDB with Spring Data?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-diagram.svg" alt="Diagram: How do you use MongoDB with Spring Data?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-diagram.svg" alt="Diagram: How do you use MongoDB with Spring Data?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-sticky.svg" alt="Sticky Note: How do you use MongoDB with Spring Data?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-sticky.svg" alt="Sticky Note: How do you use MongoDB with Spring Data?" width="30%">
 </a>
 
 
@@ -8164,14 +8164,14 @@ Aggregation     GROUP BY            $group pipeline
 Design documents around query patterns, not normalization rules. Use embedded documents for bounded, frequently-read subcollections. Reference unbounded collections like audit logs. Always create indexes for query patterns before production.
 ### Q45: How do you use Docker with Spring Boot applications?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-handwritten.svg" alt="Handwritten: How do you use Docker with Spring Boot applications?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-handwritten.svg" alt="Handwritten: How do you use Docker with Spring Boot applications?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-diagram.svg" alt="Diagram: How do you use Docker with Spring Boot applications?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-diagram.svg" alt="Diagram: How do you use Docker with Spring Boot applications?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-sticky.svg" alt="Sticky Note: How do you use Docker with Spring Boot applications?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-sticky.svg" alt="Sticky Note: How do you use Docker with Spring Boot applications?" width="30%">
 </a>
 
 
@@ -8358,14 +8358,14 @@ target/
 Docker containerizes apps for consistent environments. Layered JAR is most efficient for iterative development → dependency layers cached, only app code changes. Buildpacks offer zero-config images. For production: health checks, non-root user, proper JVM memory settings.
 ### Q46: What are custom Actuator endpoints and health indicators?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-handwritten.svg" alt="Handwritten: What are custom Actuator endpoints and health indicators?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-handwritten.svg" alt="Handwritten: What are custom Actuator endpoints and health indicators?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-diagram.svg" alt="Diagram: What are custom Actuator endpoints and health indicators?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-diagram.svg" alt="Diagram: What are custom Actuator endpoints and health indicators?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-sticky.svg" alt="Sticky Note: What are custom Actuator endpoints and health indicators?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-sticky.svg" alt="Sticky Note: What are custom Actuator endpoints and health indicators?" width="30%">
 </a>
 
 
@@ -8551,14 +8551,14 @@ Heapdump         heapdump        No       JVM heap dump
 Health indicators should implement lightweight, fast checks → never make heavy computation in a health check. Use custom endpoints for administrative operations (feature flags, cache warming) that don't belong in the main API surface.
 ### Q47: Filter vs Interceptor vs AOP → when to use which?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-handwritten.svg" alt="Handwritten: Filter vs Interceptor vs AOP → when to use which?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-handwritten.svg" alt="Handwritten: Filter vs Interceptor vs AOP → when to use which?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-diagram.svg" alt="Diagram: Filter vs Interceptor vs AOP → when to use which?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-diagram.svg" alt="Diagram: Filter vs Interceptor vs AOP → when to use which?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-sticky.svg" alt="Sticky Note: Filter vs Interceptor vs AOP → when to use which?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-sticky.svg" alt="Sticky Note: Filter vs Interceptor vs AOP → when to use which?" width="30%">
 </a>
 
 
@@ -8720,14 +8720,14 @@ FormContentFilter       FormContentFilter        PUT/DELETE form data
 Choose the right layer: Filters for HTTP, Interceptors for MVC, AOP for method-level concerns. Overusing AOP makes code harder to debug. Filter if no handler needed, Interceptor if handler needed, AOP if method internals needed.
 ### Q48: Spring Boot 3.x migration → key changes and considerations?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-handwritten.svg" alt="Handwritten: Spring Boot 3.x migration → key changes and considerations?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-handwritten.svg" alt="Handwritten: Spring Boot 3.x migration → key changes and considerations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-diagram.svg" alt="Diagram: Spring Boot 3.x migration → key changes and considerations?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-diagram.svg" alt="Diagram: Spring Boot 3.x migration → key changes and considerations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-sticky.svg" alt="Sticky Note: Spring Boot 3.x migration → key changes and considerations?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-sticky.svg" alt="Sticky Note: Spring Boot 3.x migration → key changes and considerations?" width="30%">
 </a>
 
 
@@ -8870,14 +8870,14 @@ JUnit              5.8.x           5.10.x
 Use OpenRewrite to automate the javax→jakarta migration. AOT/native compilation is optional but provides dramatic startup improvements (100ms vs 3-5s). ProblemDetail standardizes error responses. Plan 2-4 weeks migration for enterprise apps.
 ### Q49: BeanFactory vs ApplicationContext → what's the difference?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-handwritten.svg" alt="Handwritten: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-handwritten.svg" alt="Handwritten: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-diagram.svg" alt="Diagram: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-diagram.svg" alt="Diagram: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-sticky.svg" alt="Sticky Note: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-sticky.svg" alt="Sticky Note: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
 </a>
 
 
@@ -9054,14 +9054,14 @@ ApplicationContext adds:
 ApplicationContext is the container you should always use. BeanFactory is an implementation detail → Spring Boot never exposes it directly. The lazy vs eager distinction affects startup time, but ApplicationContext's features (AOP, events, @Autowired) are essential for any non-trivial application.
 ### Q50: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?
 
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-handwritten.svg" alt="Handwritten: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-handwritten.svg" alt="Handwritten: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-diagram.svg" alt="Diagram: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-diagram.svg" alt="Diagram: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-sticky.svg" alt="Sticky Note: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
+<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-sticky.svg" alt="Sticky Note: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
 </a>
 
 

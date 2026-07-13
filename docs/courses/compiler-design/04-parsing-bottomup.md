@@ -44,14 +44,14 @@ flowchart LR
 
 ### Bottom-Up Parsing and the Handle
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-handwritten.svg" alt="Handwritten: Bottom-Up Parsing and the Handle" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-handwritten.svg" alt="Handwritten: Bottom-Up Parsing and the Handle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-diagram.svg" alt="Diagram: Bottom-Up Parsing and the Handle" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-diagram.svg" alt="Diagram: Bottom-Up Parsing and the Handle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-sticky.svg" alt="Sticky Note: Bottom-Up Parsing and the Handle" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-sticky.svg" alt="Sticky Note: Bottom-Up Parsing and the Handle" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ Formally, for a rightmost derivation `S ?*_rm aAw ?_rm a?w`, the handle is `A ? 
 
 ### Shift-Reduce Parsing
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-handwritten.svg" alt="Handwritten: Shift-Reduce Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-handwritten.svg" alt="Handwritten: Shift-Reduce Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-diagram.svg" alt="Diagram: Shift-Reduce Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-diagram.svg" alt="Diagram: Shift-Reduce Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-sticky.svg" alt="Sticky Note: Shift-Reduce Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-sticky.svg" alt="Sticky Note: Shift-Reduce Parsing" width="30%">
 </a>
 
 
@@ -89,14 +89,14 @@ A shift-reduce parser uses a stack for grammar symbols and an input buffer. Four
 
 ### LR Parsing Framework
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-handwritten.svg" alt="Handwritten: LR Parsing Framework" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-handwritten.svg" alt="Handwritten: LR Parsing Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-diagram.svg" alt="Diagram: LR Parsing Framework" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-diagram.svg" alt="Diagram: LR Parsing Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-sticky.svg" alt="Sticky Note: LR Parsing Framework" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-sticky.svg" alt="Sticky Note: LR Parsing Framework" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ while true:
 
 ### LR(0) Items and the LR(0) Automaton
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-handwritten.svg" alt="Handwritten: LR(0) Items and the LR(0) Automaton" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-handwritten.svg" alt="Handwritten: LR(0) Items and the LR(0) Automaton" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-diagram.svg" alt="Diagram: LR(0) Items and the LR(0) Automaton" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-diagram.svg" alt="Diagram: LR(0) Items and the LR(0) Automaton" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-sticky.svg" alt="Sticky Note: LR(0) Items and the LR(0) Automaton" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-sticky.svg" alt="Sticky Note: LR(0) Items and the LR(0) Automaton" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ while worklist is not empty:
 
 ### SLR(1) Parsing
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-handwritten.svg" alt="Handwritten: SLR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-handwritten.svg" alt="Handwritten: SLR(1) Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-diagram.svg" alt="Diagram: SLR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-diagram.svg" alt="Diagram: SLR(1) Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-sticky.svg" alt="Sticky Note: SLR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-sticky.svg" alt="Sticky Note: SLR(1) Parsing" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ function BuildSLR1(grammar, LR0automaton, FOLLOW):
 
 ### CLR(1) ? Canonical LR(1) Parsing
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-handwritten.svg" alt="Handwritten: CLR(1) ? Canonical LR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-handwritten.svg" alt="Handwritten: CLR(1) ? Canonical LR(1) Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-diagram.svg" alt="Diagram: CLR(1) ? Canonical LR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-diagram.svg" alt="Diagram: CLR(1) ? Canonical LR(1) Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-sticky.svg" alt="Sticky Note: CLR(1) ? Canonical LR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-sticky.svg" alt="Sticky Note: CLR(1) ? Canonical LR(1) Parsing" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ CLR(1) tables are large (often thousands of states) but eliminate virtually all 
 
 ### LALR(1) Parsing
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-handwritten.svg" alt="Handwritten: LALR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-handwritten.svg" alt="Handwritten: LALR(1) Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-diagram.svg" alt="Diagram: LALR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-diagram.svg" alt="Diagram: LALR(1) Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-sticky.svg" alt="Sticky Note: LALR(1) Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-sticky.svg" alt="Sticky Note: LALR(1) Parsing" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ LALR(1) is the algorithm used by Yacc and Bison. Merging can introduce reduce-re
 
 ### Complete TypeScript LR Parser Implementation
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-handwritten.svg" alt="Handwritten: Complete TypeScript LR Parser Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-handwritten.svg" alt="Handwritten: Complete TypeScript LR Parser Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-diagram.svg" alt="Diagram: Complete TypeScript LR Parser Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-diagram.svg" alt="Diagram: Complete TypeScript LR Parser Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-sticky.svg" alt="Sticky Note: Complete TypeScript LR Parser Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-sticky.svg" alt="Sticky Note: Complete TypeScript LR Parser Implementation" width="30%">
 </a>
 
 
@@ -648,14 +648,14 @@ lr.parse(["id", "+", "id", "*", "id"]);
 
 ### Precedence and Associativity
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-handwritten.svg" alt="Handwritten: Precedence and Associativity" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-handwritten.svg" alt="Handwritten: Precedence and Associativity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-diagram.svg" alt="Diagram: Precedence and Associativity" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-diagram.svg" alt="Diagram: Precedence and Associativity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-sticky.svg" alt="Sticky Note: Precedence and Associativity" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-sticky.svg" alt="Sticky Note: Precedence and Associativity" width="30%">
 </a>
 
 
@@ -677,14 +677,14 @@ The parser generator assigns each token a precedence level and direction. For a 
 
 ### Yacc and Bison
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-handwritten.svg" alt="Handwritten: Yacc and Bison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-handwritten.svg" alt="Handwritten: Yacc and Bison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-diagram.svg" alt="Diagram: Yacc and Bison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-diagram.svg" alt="Diagram: Yacc and Bison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-sticky.svg" alt="Sticky Note: Yacc and Bison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-sticky.svg" alt="Sticky Note: Yacc and Bison" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ Bison generates `yyparse()` which calls `yylex()` for tokens. The `-v` flag prod
 
 ### Error Handling in LR Parsing
 
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-handwritten.svg" alt="Handwritten: Error Handling in LR Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-handwritten.svg" alt="Handwritten: Error Handling in LR Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-diagram.svg" alt="Diagram: Error Handling in LR Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-diagram.svg" alt="Diagram: Error Handling in LR Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-sticky.svg" alt="Sticky Note: Error Handling in LR Parsing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-sticky.svg" alt="Sticky Note: Error Handling in LR Parsing" width="30%">
 </a>
 
 

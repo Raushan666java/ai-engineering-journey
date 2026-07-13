@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 Introduction to Banking Marketing
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-handwritten.svg" alt="Handwritten: 4.1 Introduction to Banking Marketing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-handwritten.svg" alt="Handwritten: 4.1 Introduction to Banking Marketing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-diagram.svg" alt="Diagram: 4.1 Introduction to Banking Marketing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-diagram.svg" alt="Diagram: 4.1 Introduction to Banking Marketing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-sticky.svg" alt="Sticky Note: 4.1 Introduction to Banking Marketing" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-1-introduction-to-banking-marketing-sticky.svg" alt="Sticky Note: 4.1 Introduction to Banking Marketing" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ mindmap
 
 ### 4.2 Retail Banking Products
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-handwritten.svg" alt="Handwritten: 4.2 Retail Banking Products" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-handwritten.svg" alt="Handwritten: 4.2 Retail Banking Products" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-diagram.svg" alt="Diagram: 4.2 Retail Banking Products" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-diagram.svg" alt="Diagram: 4.2 Retail Banking Products" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-sticky.svg" alt="Sticky Note: 4.2 Retail Banking Products" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-2-retail-banking-products-sticky.svg" alt="Sticky Note: 4.2 Retail Banking Products" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ Key differentiators banks use for savings accounts:
 
 ### 4.3 Corporate Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-handwritten.svg" alt="Handwritten: 4.3 Corporate Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-handwritten.svg" alt="Handwritten: 4.3 Corporate Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-diagram.svg" alt="Diagram: 4.3 Corporate Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-diagram.svg" alt="Diagram: 4.3 Corporate Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-sticky.svg" alt="Sticky Note: 4.3 Corporate Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-3-corporate-banking-sticky.svg" alt="Sticky Note: 4.3 Corporate Banking" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ Corporate banking (business banking) serves companies, from SMEs to large corpor
 
 ### 4.4 Wealth Management
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-handwritten.svg" alt="Handwritten: 4.4 Wealth Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-handwritten.svg" alt="Handwritten: 4.4 Wealth Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-diagram.svg" alt="Diagram: 4.4 Wealth Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-diagram.svg" alt="Diagram: 4.4 Wealth Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-sticky.svg" alt="Sticky Note: 4.4 Wealth Management" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-4-wealth-management-sticky.svg" alt="Sticky Note: 4.4 Wealth Management" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ Wealth management provides high-net-worth individuals (HNIs) with comprehensive 
 
 ### 4.5 Customer Lifecycle in Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-handwritten.svg" alt="Handwritten: 4.5 Customer Lifecycle in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-handwritten.svg" alt="Handwritten: 4.5 Customer Lifecycle in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-diagram.svg" alt="Diagram: 4.5 Customer Lifecycle in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-diagram.svg" alt="Diagram: 4.5 Customer Lifecycle in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-sticky.svg" alt="Sticky Note: 4.5 Customer Lifecycle in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-5-customer-lifecycle-in-banking-sticky.svg" alt="Sticky Note: 4.5 Customer Lifecycle in Banking" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ flowchart TD
 
 ### 4.6 Customer Acquisition in Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-handwritten.svg" alt="Handwritten: 4.6 Customer Acquisition in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-handwritten.svg" alt="Handwritten: 4.6 Customer Acquisition in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-diagram.svg" alt="Diagram: 4.6 Customer Acquisition in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-diagram.svg" alt="Diagram: 4.6 Customer Acquisition in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-sticky.svg" alt="Sticky Note: 4.6 Customer Acquisition in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-6-customer-acquisition-in-banking-sticky.svg" alt="Sticky Note: 4.6 Customer Acquisition in Banking" width="30%">
 </a>
 
 
@@ -221,14 +221,14 @@ flowchart TD
 
 ### 4.7 Cross-Selling and Upselling
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-handwritten.svg" alt="Handwritten: 4.7 Cross-Selling and Upselling" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-handwritten.svg" alt="Handwritten: 4.7 Cross-Selling and Upselling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-diagram.svg" alt="Diagram: 4.7 Cross-Selling and Upselling" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-diagram.svg" alt="Diagram: 4.7 Cross-Selling and Upselling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-sticky.svg" alt="Sticky Note: 4.7 Cross-Selling and Upselling" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-7-cross-selling-and-upselling-sticky.svg" alt="Sticky Note: 4.7 Cross-Selling and Upselling" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ console.log(CrossSellEngine.recommend(customer));
 
 ### 4.8 Service Quality in Banking: SERVQUAL Model
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-handwritten.svg" alt="Handwritten: 4.8 Service Quality in Banking: SERVQUAL Model" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-handwritten.svg" alt="Handwritten: 4.8 Service Quality in Banking: SERVQUAL Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-diagram.svg" alt="Diagram: 4.8 Service Quality in Banking: SERVQUAL Model" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-diagram.svg" alt="Diagram: 4.8 Service Quality in Banking: SERVQUAL Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-sticky.svg" alt="Sticky Note: 4.8 Service Quality in Banking: SERVQUAL Model" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-8-service-quality-in-banking-servqual-model-sticky.svg" alt="Sticky Note: 4.8 Service Quality in Banking: SERVQUAL Model" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ graph TD
 
 ### 4.9 Customer Satisfaction in Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-handwritten.svg" alt="Handwritten: 4.9 Customer Satisfaction in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-handwritten.svg" alt="Handwritten: 4.9 Customer Satisfaction in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-diagram.svg" alt="Diagram: 4.9 Customer Satisfaction in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-diagram.svg" alt="Diagram: 4.9 Customer Satisfaction in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-sticky.svg" alt="Sticky Note: 4.9 Customer Satisfaction in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-9-customer-satisfaction-in-banking-sticky.svg" alt="Sticky Note: 4.9 Customer Satisfaction in Banking" width="30%">
 </a>
 
 
@@ -427,14 +427,14 @@ console.log(calculateNPS(branchSurvey));
 
 ### 4.10 Digital Banking Adoption
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-handwritten.svg" alt="Handwritten: 4.10 Digital Banking Adoption" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-handwritten.svg" alt="Handwritten: 4.10 Digital Banking Adoption" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-diagram.svg" alt="Diagram: 4.10 Digital Banking Adoption" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-diagram.svg" alt="Diagram: 4.10 Digital Banking Adoption" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-sticky.svg" alt="Sticky Note: 4.10 Digital Banking Adoption" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-10-digital-banking-adoption-sticky.svg" alt="Sticky Note: 4.10 Digital Banking Adoption" width="30%">
 </a>
 
 
@@ -485,14 +485,14 @@ Neo banks are digital-only banks without physical branches (e.g., Jupiter, Niyo,
 
 ### 4.11 RBI Guidelines on Marketing of Financial Products
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-handwritten.svg" alt="Handwritten: 4.11 RBI Guidelines on Marketing of Financial Products" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-handwritten.svg" alt="Handwritten: 4.11 RBI Guidelines on Marketing of Financial Products" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-diagram.svg" alt="Diagram: 4.11 RBI Guidelines on Marketing of Financial Products" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-diagram.svg" alt="Diagram: 4.11 RBI Guidelines on Marketing of Financial Products" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-sticky.svg" alt="Sticky Note: 4.11 RBI Guidelines on Marketing of Financial Products" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-11-rbi-guidelines-on-marketing-of-financial-products-sticky.svg" alt="Sticky Note: 4.11 RBI Guidelines on Marketing of Financial Products" width="30%">
 </a>
 
 
@@ -582,14 +582,14 @@ console.log(MarketingCompliance.checkCompliance(ad));
 
 ### 4.12 Marketing Metrics for Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-handwritten.svg" alt="Handwritten: 4.12 Marketing Metrics for Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-handwritten.svg" alt="Handwritten: 4.12 Marketing Metrics for Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-diagram.svg" alt="Diagram: 4.12 Marketing Metrics for Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-diagram.svg" alt="Diagram: 4.12 Marketing Metrics for Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-sticky.svg" alt="Sticky Note: 4.12 Marketing Metrics for Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-12-marketing-metrics-for-banking-sticky.svg" alt="Sticky Note: 4.12 Marketing Metrics for Banking" width="30%">
 </a>
 
 
@@ -606,14 +606,14 @@ console.log(MarketingCompliance.checkCompliance(ad));
 
 ### 4.13 Liability vs Asset Marketing in Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-handwritten.svg" alt="Handwritten: 4.13 Liability vs Asset Marketing in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-handwritten.svg" alt="Handwritten: 4.13 Liability vs Asset Marketing in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-diagram.svg" alt="Diagram: 4.13 Liability vs Asset Marketing in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-diagram.svg" alt="Diagram: 4.13 Liability vs Asset Marketing in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-sticky.svg" alt="Sticky Note: 4.13 Liability vs Asset Marketing in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-13-liability-vs-asset-marketing-in-banking-sticky.svg" alt="Sticky Note: 4.13 Liability vs Asset Marketing in Banking" width="30%">
 </a>
 
 
@@ -650,14 +650,14 @@ graph TD
 
 ### 4.14 Bancassurance
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-handwritten.svg" alt="Handwritten: 4.14 Bancassurance" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-handwritten.svg" alt="Handwritten: 4.14 Bancassurance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-diagram.svg" alt="Diagram: 4.14 Bancassurance" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-diagram.svg" alt="Diagram: 4.14 Bancassurance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-sticky.svg" alt="Sticky Note: 4.14 Bancassurance" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-14-bancassurance-sticky.svg" alt="Sticky Note: 4.14 Bancassurance" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ graph LR
 
 ### 4.15 Customer Segmentation in Banking
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-handwritten.svg" alt="Handwritten: 4.15 Customer Segmentation in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-handwritten.svg" alt="Handwritten: 4.15 Customer Segmentation in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-diagram.svg" alt="Diagram: 4.15 Customer Segmentation in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-diagram.svg" alt="Diagram: 4.15 Customer Segmentation in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-sticky.svg" alt="Sticky Note: 4.15 Customer Segmentation in Banking" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-15-customer-segmentation-in-banking-sticky.svg" alt="Sticky Note: 4.15 Customer Segmentation in Banking" width="30%">
 </a>
 
 
@@ -756,14 +756,14 @@ console.log("Segment for C002:", segmentCustomer(customer2)); // Mass
 
 ### 4.16 Comparison Tables
 
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-handwritten.svg" alt="Handwritten: 4.16 Comparison Tables" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-handwritten.svg" alt="Handwritten: 4.16 Comparison Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-diagram.svg" alt="Diagram: 4.16 Comparison Tables" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-diagram.svg" alt="Diagram: 4.16 Comparison Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-sticky.svg" alt="Sticky Note: 4.16 Comparison Tables" width="30%">
+<a href="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/marketing-aptitude/04-banking-marketing/4-16-comparison-tables-sticky.svg" alt="Sticky Note: 4.16 Comparison Tables" width="30%">
 </a>
 
 

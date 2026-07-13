@@ -50,14 +50,14 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ Think of a chessboard at the start of a match. The board is the **state**, the r
 
 ### Formal Definition of a Game
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-handwritten.svg" alt="Handwritten: Formal Definition of a Game" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-handwritten.svg" alt="Handwritten: Formal Definition of a Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-diagram.svg" alt="Diagram: Formal Definition of a Game" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-diagram.svg" alt="Diagram: Formal Definition of a Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-sticky.svg" alt="Sticky Note: Formal Definition of a Game" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-sticky.svg" alt="Sticky Note: Formal Definition of a Game" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ The **game tree** represents all possible play sequences. The root is the initia
 
 ### 5.1.1 Types of Games
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-handwritten.svg" alt="Handwritten: 5.1.1 Types of Games" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-handwritten.svg" alt="Handwritten: 5.1.1 Types of Games" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-diagram.svg" alt="Diagram: 5.1.1 Types of Games" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-diagram.svg" alt="Diagram: 5.1.1 Types of Games" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-sticky.svg" alt="Sticky Note: 5.1.1 Types of Games" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-sticky.svg" alt="Sticky Note: 5.1.1 Types of Games" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ Games in AI are classified along three axes:
 
 ### 5.1.2 Game Complexity
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-handwritten.svg" alt="Handwritten: 5.1.2 Game Complexity" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-handwritten.svg" alt="Handwritten: 5.1.2 Game Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-diagram.svg" alt="Diagram: 5.1.2 Game Complexity" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-diagram.svg" alt="Diagram: 5.1.2 Game Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-sticky.svg" alt="Sticky Note: 5.1.2 Game Complexity" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-sticky.svg" alt="Sticky Note: 5.1.2 Game Complexity" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ Games in AI are classified along three axes:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ A chess grandmaster doesn't just ask "what's my best move?" — she asks "if I m
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ A chess grandmaster doesn't just ask "what's my best move?" — she asks "if I m
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -214,14 +214,14 @@ function MIN-VALUE(state) returns value
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -290,14 +290,14 @@ Trace table showing recursive backpropagation:
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ def tic_tac_toe_example():
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -371,14 +371,14 @@ def tic_tac_toe_example():
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ def tic_tac_toe_example():
 
 ### Depth-Limited Minimax & Evaluation Functions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-handwritten.svg" alt="Handwritten: Depth-Limited Minimax & Evaluation Functions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-handwritten.svg" alt="Handwritten: Depth-Limited Minimax & Evaluation Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-diagram.svg" alt="Diagram: Depth-Limited Minimax & Evaluation Functions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-diagram.svg" alt="Diagram: Depth-Limited Minimax & Evaluation Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-sticky.svg" alt="Sticky Note: Depth-Limited Minimax & Evaluation Functions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-sticky.svg" alt="Sticky Note: Depth-Limited Minimax & Evaluation Functions" width="30%">
 </a>
 
 
@@ -420,14 +420,14 @@ The evaluation function `EVAL(state)` estimates the utility without exploring to
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -445,14 +445,14 @@ The evaluation function `EVAL(state)` estimates the utility without exploring to
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -460,14 +460,14 @@ A detective investigating a crime doesn't need to read every page of every docum
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -479,14 +479,14 @@ A detective investigating a crime doesn't need to read every page of every docum
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -522,14 +522,14 @@ function MIN-VALUE(state, α, β) returns value
 
 ### Step-by-Step Dry Run (With Pruning)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (With Pruning)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (With Pruning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-diagram.svg" alt="Diagram: Step-by-Step Dry Run (With Pruning)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-diagram.svg" alt="Diagram: Step-by-Step Dry Run (With Pruning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (With Pruning)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (With Pruning)" width="30%">
 </a>
 
 
@@ -735,14 +735,14 @@ Now let me revise the dry run trace:
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -793,14 +793,14 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -815,14 +815,14 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -836,14 +836,14 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 ### Move Ordering Heuristics
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-handwritten.svg" alt="Handwritten: Move Ordering Heuristics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-handwritten.svg" alt="Handwritten: Move Ordering Heuristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-diagram.svg" alt="Diagram: Move Ordering Heuristics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-diagram.svg" alt="Diagram: Move Ordering Heuristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-sticky.svg" alt="Sticky Note: Move Ordering Heuristics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-sticky.svg" alt="Sticky Note: Move Ordering Heuristics" width="30%">
 </a>
 
 
@@ -855,14 +855,14 @@ Pruning efficiency depends critically on the order moves are examined. The three
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ Pruning efficiency depends critically on the order moves are examined. The three
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -895,14 +895,14 @@ A backgammon player doesn't know what numbers the dice will show, but they know 
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@ A backgammon player doesn't know what numbers the dice will show, but they know 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -953,14 +953,14 @@ function EXPECTIMINIMAX(state) returns value
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1030,14 +1030,14 @@ Trace table:
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1098,14 +1098,14 @@ def dice_game_example():
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1117,14 +1117,14 @@ def dice_game_example():
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1137,14 +1137,14 @@ def dice_game_example():
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1162,14 +1162,14 @@ def dice_game_example():
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1177,14 +1177,14 @@ Imagine learning to play a new board game. You don't read the rulebook cover-to-
 
 ### The Four-Phase MCTS Loop
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-handwritten.svg" alt="Handwritten: The Four-Phase MCTS Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-handwritten.svg" alt="Handwritten: The Four-Phase MCTS Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-diagram.svg" alt="Diagram: The Four-Phase MCTS Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-diagram.svg" alt="Diagram: The Four-Phase MCTS Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-sticky.svg" alt="Sticky Note: The Four-Phase MCTS Loop" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-sticky.svg" alt="Sticky Note: The Four-Phase MCTS Loop" width="30%">
 </a>
 
 
@@ -1202,14 +1202,14 @@ These four steps repeat until a computational budget (time or iterations) is exh
 
 ### UCT Selection Formula
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-handwritten.svg" alt="Handwritten: UCT Selection Formula" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-handwritten.svg" alt="Handwritten: UCT Selection Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-diagram.svg" alt="Diagram: UCT Selection Formula" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-diagram.svg" alt="Diagram: UCT Selection Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-sticky.svg" alt="Sticky Note: UCT Selection Formula" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-sticky.svg" alt="Sticky Note: UCT Selection Formula" width="30%">
 </a>
 
 
@@ -1227,14 +1227,14 @@ The first term (exploitation / win rate) favors moves that have performed well. 
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -1248,14 +1248,14 @@ The first term (exploitation / win rate) favors moves that have performed well. 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1299,14 +1299,14 @@ function BACKPROPAGATE(node, result)
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1377,14 +1377,14 @@ Trace table after 5 iterations:
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1468,14 +1468,14 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1487,14 +1487,14 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1508,14 +1508,14 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1530,14 +1530,14 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 ### MCTS with Neural Networks
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-handwritten.svg" alt="Handwritten: MCTS with Neural Networks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-handwritten.svg" alt="Handwritten: MCTS with Neural Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-diagram.svg" alt="Diagram: MCTS with Neural Networks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-diagram.svg" alt="Diagram: MCTS with Neural Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-sticky.svg" alt="Sticky Note: MCTS with Neural Networks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-sticky.svg" alt="Sticky Note: MCTS with Neural Networks" width="30%">
 </a>
 
 
@@ -1640,14 +1640,14 @@ Alpha-beta pruning relies on the **order-preserving** property of min and max ov
 
 ### Chess — Stockfish & Leela Chess Zero (Lc0)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-handwritten.svg" alt="Handwritten: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-handwritten.svg" alt="Handwritten: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-diagram.svg" alt="Diagram: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-diagram.svg" alt="Diagram: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-sticky.svg" alt="Sticky Note: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-sticky.svg" alt="Sticky Note: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
 </a>
 
 
@@ -1661,14 +1661,14 @@ Stockfish uses alpha-beta with **negamax** framework, **iterative deepening**, *
 
 ### Go — AlphaGo, AlphaGo Zero, KataGo
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-handwritten.svg" alt="Handwritten: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-handwritten.svg" alt="Handwritten: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-diagram.svg" alt="Diagram: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-diagram.svg" alt="Diagram: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-sticky.svg" alt="Sticky Note: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-sticky.svg" alt="Sticky Note: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
 </a>
 
 
@@ -1682,14 +1682,14 @@ AlphaGo's MCTS used a **dual neural network**: a policy network (suggesting good
 
 ### Poker — Pluribus (2019)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-handwritten.svg" alt="Handwritten: Poker — Pluribus (2019)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-handwritten.svg" alt="Handwritten: Poker — Pluribus (2019)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-diagram.svg" alt="Diagram: Poker — Pluribus (2019)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-diagram.svg" alt="Diagram: Poker — Pluribus (2019)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-sticky.svg" alt="Sticky Note: Poker — Pluribus (2019)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-sticky.svg" alt="Sticky Note: Poker — Pluribus (2019)" width="30%">
 </a>
 
 
@@ -1701,14 +1701,14 @@ Pluribus achieved superhuman performance in six-player no-limit Texas Hold'em us
 
 ### Atari — DQN and Beyond
 
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-handwritten.svg" alt="Handwritten: Atari — DQN and Beyond" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-handwritten.svg" alt="Handwritten: Atari — DQN and Beyond" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-diagram.svg" alt="Diagram: Atari — DQN and Beyond" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-diagram.svg" alt="Diagram: Atari — DQN and Beyond" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-sticky.svg" alt="Sticky Note: Atari — DQN and Beyond" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-sticky.svg" alt="Sticky Note: Atari — DQN and Beyond" width="30%">
 </a>
 
 

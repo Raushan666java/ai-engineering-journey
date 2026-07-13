@@ -29,14 +29,14 @@ After completing this chapter, you will be able to:
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ flowchart LR
 
 ### Q21: What is active recall and why does it beat passive review?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-handwritten.svg" alt="Handwritten: What is active recall and why does it beat passive review?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-handwritten.svg" alt="Handwritten: What is active recall and why does it beat passive review?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-diagram.svg" alt="Diagram: What is active recall and why does it beat passive review?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-diagram.svg" alt="Diagram: What is active recall and why does it beat passive review?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-sticky.svg" alt="Sticky Note: What is active recall and why does it beat passive review?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-active-recall-and-why-does-it-beat-passive-review-sticky.svg" alt="Sticky Note: What is active recall and why does it beat passive review?" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ public class ActiveRecallDemo {
 
 ### Q22: What is the blank page method and how do you use it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-handwritten.svg" alt="Handwritten: What is the blank page method and how do you use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-handwritten.svg" alt="Handwritten: What is the blank page method and how do you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-diagram.svg" alt="Diagram: What is the blank page method and how do you use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-diagram.svg" alt="Diagram: What is the blank page method and how do you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-sticky.svg" alt="Sticky Note: What is the blank page method and how do you use it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-blank-page-method-and-how-do-you-use-it-sticky.svg" alt="Sticky Note: What is the blank page method and how do you use it?" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ public class BlankPageDiagnostic {
 
 ### Q23: What's the difference between recall and recognition?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-handwritten.svg" alt="Handwritten: What's the difference between recall and recognition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-handwritten.svg" alt="Handwritten: What's the difference between recall and recognition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-diagram.svg" alt="Diagram: What's the difference between recall and recognition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-diagram.svg" alt="Diagram: What's the difference between recall and recognition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-sticky.svg" alt="Sticky Note: What's the difference between recall and recognition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-difference-between-recall-and-recognition-sticky.svg" alt="Sticky Note: What's the difference between recall and recognition?" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ public class RecallVsRecognition {
 
 ### Q24: Why does teaching others count as active recall?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-handwritten.svg" alt="Handwritten: Why does teaching others count as active recall?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-handwritten.svg" alt="Handwritten: Why does teaching others count as active recall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-diagram.svg" alt="Diagram: Why does teaching others count as active recall?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-diagram.svg" alt="Diagram: Why does teaching others count as active recall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-sticky.svg" alt="Sticky Note: Why does teaching others count as active recall?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/why-does-teaching-others-count-as-active-recall-sticky.svg" alt="Sticky Note: Why does teaching others count as active recall?" width="30%">
 </a>
 
 
@@ -451,14 +451,14 @@ public class TeachingAsRecall {
 
 ### Q25: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-handwritten.svg" alt="Handwritten: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-handwritten.svg" alt="Handwritten: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-diagram.svg" alt="Diagram: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-diagram.svg" alt="Diagram: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-sticky.svg" alt="Sticky Note: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-counteract-it-sticky.svg" alt="Sticky Note: What is the Ebbinghaus forgetting curve and how does spaced repetition counteract it?" width="30%">
 </a>
 
 
@@ -556,14 +556,14 @@ public class EbbinghausSimulation {
 
 ### Q26: How do I set up Anki for effective learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-handwritten.svg" alt="Handwritten: How do I set up Anki for effective learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-handwritten.svg" alt="Handwritten: How do I set up Anki for effective learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-diagram.svg" alt="Diagram: How do I set up Anki for effective learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-diagram.svg" alt="Diagram: How do I set up Anki for effective learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-sticky.svg" alt="Sticky Note: How do I set up Anki for effective learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-set-up-anki-for-effective-learning-sticky.svg" alt="Sticky Note: How do I set up Anki for effective learning?" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ public class SM2Algorithm {
 
 ### Q27: What's the optimal Anki review schedule?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-handwritten.svg" alt="Handwritten: What's the optimal Anki review schedule?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-handwritten.svg" alt="Handwritten: What's the optimal Anki review schedule?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-diagram.svg" alt="Diagram: What's the optimal Anki review schedule?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-diagram.svg" alt="Diagram: What's the optimal Anki review schedule?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-sticky.svg" alt="Sticky Note: What's the optimal Anki review schedule?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/what-s-the-optimal-anki-review-schedule-sticky.svg" alt="Sticky Note: What's the optimal Anki review schedule?" width="30%">
 </a>
 
 
@@ -797,14 +797,14 @@ Set your SM-2 algorithm to aim for **90% retention** — meaning you answer "Goo
 
 ### Q28: How do I design effective Anki cards?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-handwritten.svg" alt="Handwritten: How do I design effective Anki cards?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-handwritten.svg" alt="Handwritten: How do I design effective Anki cards?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-diagram.svg" alt="Diagram: How do I design effective Anki cards?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-diagram.svg" alt="Diagram: How do I design effective Anki cards?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-sticky.svg" alt="Sticky Note: How do I design effective Anki cards?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-design-effective-anki-cards-sticky.svg" alt="Sticky Note: How do I design effective Anki cards?" width="30%">
 </a>
 
 
@@ -923,14 +923,14 @@ public class CardQualityAnalyzer {
 
 ### Q29: How do I integrate Anki into my daily workflow?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-handwritten.svg" alt="Handwritten: How do I integrate Anki into my daily workflow?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-handwritten.svg" alt="Handwritten: How do I integrate Anki into my daily workflow?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-diagram.svg" alt="Diagram: How do I integrate Anki into my daily workflow?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-diagram.svg" alt="Diagram: How do I integrate Anki into my daily workflow?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-sticky.svg" alt="Sticky Note: How do I integrate Anki into my daily workflow?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-integrate-anki-into-my-daily-workflow-sticky.svg" alt="Sticky Note: How do I integrate Anki into my daily workflow?" width="30%">
 </a>
 
 
@@ -1081,14 +1081,14 @@ public class AnkiHabitTracker {
 
 ### Q30: How do I handle complex topics that don't fit on a flashcard?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-handwritten.svg" alt="Handwritten: How do I handle complex topics that don't fit on a flashcard?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-handwritten.svg" alt="Handwritten: How do I handle complex topics that don't fit on a flashcard?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-diagram.svg" alt="Diagram: How do I handle complex topics that don't fit on a flashcard?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-diagram.svg" alt="Diagram: How do I handle complex topics that don't fit on a flashcard?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-sticky.svg" alt="Sticky Note: How do I handle complex topics that don't fit on a flashcard?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/how-do-i-handle-complex-topics-that-don-t-fit-on-a-flashcard-sticky.svg" alt="Sticky Note: How do I handle complex topics that don't fit on a flashcard?" width="30%">
 </a>
 
 
@@ -1198,14 +1198,14 @@ public class ComplexTopicHandler {
 
 ### Self-Assessment Quiz
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-03-active-recall-spaced-repetition/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
 </a>
 
 

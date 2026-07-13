@@ -25,14 +25,14 @@ flowchart LR
 
 ### Q1: Explain the testing pyramid. What should you test at each level?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-handwritten.svg" alt="Handwritten: Explain the testing pyramid. What should you test at each level?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-handwritten.svg" alt="Handwritten: Explain the testing pyramid. What should you test at each level?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-diagram.svg" alt="Diagram: Explain the testing pyramid. What should you test at each level?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-diagram.svg" alt="Diagram: Explain the testing pyramid. What should you test at each level?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-sticky.svg" alt="Sticky Note: Explain the testing pyramid. What should you test at each level?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/explain-the-testing-pyramid-what-should-you-test-at-each-level-sticky.svg" alt="Sticky Note: Explain the testing pyramid. What should you test at each level?" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ void advancedAssertions() {
 
 ### Q3: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification.
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-handwritten.svg" alt="Handwritten: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-handwritten.svg" alt="Handwritten: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-diagram.svg" alt="Diagram: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-diagram.svg" alt="Diagram: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-sticky.svg" alt="Sticky Note: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-does-mockito-work-explain-mock-spy-injectmocks-argument-matchers-and-verification-sticky.svg" alt="Sticky Note: How does Mockito work? Explain mock, spy, @InjectMocks, argument matchers, and verification." width="30%">
 </a>
 
 
@@ -1252,14 +1252,14 @@ class OrderFullIntegrationTest {
 
 ### Q7: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-handwritten.svg" alt="Handwritten: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-handwritten.svg" alt="Handwritten: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-diagram.svg" alt="Diagram: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-diagram.svg" alt="Diagram: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-sticky.svg" alt="Sticky Note: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/explain-the-f-i-r-s-t-principles-of-unit-testing-how-do-you-apply-them-in-practice-sticky.svg" alt="Sticky Note: Explain the F.I.R.S.T. principles of unit testing. How do you apply them in practice?" width="30%">
 </a>
 
 
@@ -1569,14 +1569,14 @@ Reports are generated in `target/site/jacoco/index.html`.
 
 ### Q9: What is mutation testing? How do you configure Pitest in a Spring Boot project?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-handwritten.svg" alt="Handwritten: What is mutation testing? How do you configure Pitest in a Spring Boot project?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-handwritten.svg" alt="Handwritten: What is mutation testing? How do you configure Pitest in a Spring Boot project?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-diagram.svg" alt="Diagram: What is mutation testing? How do you configure Pitest in a Spring Boot project?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-diagram.svg" alt="Diagram: What is mutation testing? How do you configure Pitest in a Spring Boot project?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-sticky.svg" alt="Sticky Note: What is mutation testing? How do you configure Pitest in a Spring Boot project?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-mutation-testing-how-do-you-configure-pitest-in-a-spring-boot-project-sticky.svg" alt="Sticky Note: What is mutation testing? How do you configure Pitest in a Spring Boot project?" width="30%">
 </a>
 
 
@@ -1740,14 +1740,14 @@ Pitest also generates a HTML report in `target/pit-reports/` showing exactly whi
 
 ### Q10: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-handwritten.svg" alt="Handwritten: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-handwritten.svg" alt="Handwritten: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-diagram.svg" alt="Diagram: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-diagram.svg" alt="Diagram: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-sticky.svg" alt="Sticky Note: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-parameterized-and-dynamic-tests-in-junit-5-when-would-you-use-each-sticky.svg" alt="Sticky Note: How do you write parameterized and dynamic tests in JUnit 5? When would you use each?" width="30%">
 </a>
 
 
@@ -2200,14 +2200,14 @@ class AsyncEventListenerTest {
 
 ### Q12: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6.
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-handwritten.svg" alt="Handwritten: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-handwritten.svg" alt="Handwritten: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-diagram.svg" alt="Diagram: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-diagram.svg" alt="Diagram: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-sticky.svg" alt="Sticky Note: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-write-performance-tests-for-a-spring-boot-application-describe-jmh-gatling-and-k6-sticky.svg" alt="Sticky Note: How do you write performance tests for a Spring Boot application? Describe JMH, Gatling, and k6." width="30%">
 </a>
 
 
@@ -2476,14 +2476,14 @@ k6 run k6-test.js
 
 ### Q13: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle.
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-handwritten.svg" alt="Handwritten: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-handwritten.svg" alt="Handwritten: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-diagram.svg" alt="Diagram: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-diagram.svg" alt="Diagram: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-sticky.svg" alt="Sticky Note: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-tdd-how-do-you-apply-it-in-a-spring-boot-project-show-the-red-green-refactor-cycle-sticky.svg" alt="Sticky Note: What is TDD? How do you apply it in a Spring Boot project? Show the red-green-refactor cycle." width="30%">
 </a>
 
 
@@ -2669,14 +2669,14 @@ public class OrderService {
 
 ### Q14: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5.
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-handwritten.svg" alt="Handwritten: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-handwritten.svg" alt="Handwritten: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-diagram.svg" alt="Diagram: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-diagram.svg" alt="Diagram: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5." width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-sticky.svg" alt="Sticky Note: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5." width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-is-bdd-how-does-it-differ-from-tdd-explain-given-when-then-with-cucumber-and-junit-5-sticky.svg" alt="Sticky Note: What is BDD? How does it differ from TDD? Explain Given-When-Then with Cucumber and JUnit 5." width="30%">
 </a>
 
 
@@ -2879,14 +2879,14 @@ public class CucumberRunnerTest {
 
 ### Q15: How do you test database migrations with Flyway or Liquibase in Spring Boot?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-handwritten.svg" alt="Handwritten: How do you test database migrations with Flyway or Liquibase in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-handwritten.svg" alt="Handwritten: How do you test database migrations with Flyway or Liquibase in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-diagram.svg" alt="Diagram: How do you test database migrations with Flyway or Liquibase in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-diagram.svg" alt="Diagram: How do you test database migrations with Flyway or Liquibase in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-sticky.svg" alt="Sticky Note: How do you test database migrations with Flyway or Liquibase in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-database-migrations-with-flyway-or-liquibase-in-spring-boot-sticky.svg" alt="Sticky Note: How do you test database migrations with Flyway or Liquibase in Spring Boot?" width="30%">
 </a>
 
 
@@ -3088,14 +3088,14 @@ class LiquibaseMigrationTest {
 
 ### Q16: What are best practices for test naming conventions? How do you structure test classes?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-handwritten.svg" alt="Handwritten: What are best practices for test naming conventions? How do you structure test classes?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-handwritten.svg" alt="Handwritten: What are best practices for test naming conventions? How do you structure test classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-diagram.svg" alt="Diagram: What are best practices for test naming conventions? How do you structure test classes?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-diagram.svg" alt="Diagram: What are best practices for test naming conventions? How do you structure test classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-sticky.svg" alt="Sticky Note: What are best practices for test naming conventions? How do you structure test classes?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/what-are-best-practices-for-test-naming-conventions-how-do-you-structure-test-classes-sticky.svg" alt="Sticky Note: What are best practices for test naming conventions? How do you structure test classes?" width="30%">
 </a>
 
 
@@ -3226,14 +3226,14 @@ class OrderServiceTest {
 
 ### Q17: How do you test exception handling and error scenarios in Spring Boot?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-handwritten.svg" alt="Handwritten: How do you test exception handling and error scenarios in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-handwritten.svg" alt="Handwritten: How do you test exception handling and error scenarios in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-diagram.svg" alt="Diagram: How do you test exception handling and error scenarios in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-diagram.svg" alt="Diagram: How do you test exception handling and error scenarios in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-sticky.svg" alt="Sticky Note: How do you test exception handling and error scenarios in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-exception-handling-and-error-scenarios-in-spring-boot-sticky.svg" alt="Sticky Note: How do you test exception handling and error scenarios in Spring Boot?" width="30%">
 </a>
 
 
@@ -3397,14 +3397,14 @@ class GlobalExceptionHandlerTest {
 
 ### Q18: How do you test file upload and download in Spring Boot?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-handwritten.svg" alt="Handwritten: How do you test file upload and download in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-handwritten.svg" alt="Handwritten: How do you test file upload and download in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-diagram.svg" alt="Diagram: How do you test file upload and download in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-diagram.svg" alt="Diagram: How do you test file upload and download in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-sticky.svg" alt="Sticky Note: How do you test file upload and download in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-file-upload-and-download-in-spring-boot-sticky.svg" alt="Sticky Note: How do you test file upload and download in Spring Boot?" width="30%">
 </a>
 
 
@@ -3506,14 +3506,14 @@ class FileDownloadTest {
 
 ### Q19: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-handwritten.svg" alt="Handwritten: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-handwritten.svg" alt="Handwritten: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-diagram.svg" alt="Diagram: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-diagram.svg" alt="Diagram: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-sticky.svg" alt="Sticky Note: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-security-configurations-in-spring-boot-how-do-you-test-preauthorize-annotations-sticky.svg" alt="Sticky Note: How do you test security configurations in Spring Boot? How do you test @PreAuthorize annotations?" width="30%">
 </a>
 
 
@@ -3644,14 +3644,14 @@ class CsrfTest {
 
 ### Q20: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?
 
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-handwritten.svg" alt="Handwritten: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-handwritten.svg" alt="Handwritten: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-diagram.svg" alt="Diagram: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-diagram.svg" alt="Diagram: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-sticky.svg" alt="Sticky Note: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?" width="30%">
+<a href="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/62-interview-testing/how-do-you-test-scheduled-tasks-in-spring-boot-how-do-you-verify-scheduled-behavior-sticky.svg" alt="Sticky Note: How do you test scheduled tasks in Spring Boot? How do you verify @Scheduled behavior?" width="30%">
 </a>
 
 

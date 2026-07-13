@@ -14,14 +14,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Time & Work
 
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-handwritten.svg" alt="Handwritten: 1. Time & Work" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-handwritten.svg" alt="Handwritten: 1. Time & Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-diagram.svg" alt="Diagram: 1. Time & Work" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-diagram.svg" alt="Diagram: 1. Time & Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-sticky.svg" alt="Sticky Note: 1. Time & Work" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/1-time-work-sticky.svg" alt="Sticky Note: 1. Time & Work" width="30%">
 </a>
 
 
@@ -62,14 +62,14 @@ Time = Total Work / Combined Efficiency
 
 ### 2. Time, Speed & Distance
 
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-handwritten.svg" alt="Handwritten: 2. Time, Speed & Distance" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-handwritten.svg" alt="Handwritten: 2. Time, Speed & Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-diagram.svg" alt="Diagram: 2. Time, Speed & Distance" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-diagram.svg" alt="Diagram: 2. Time, Speed & Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-sticky.svg" alt="Sticky Note: 2. Time, Speed & Distance" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/2-time-speed-distance-sticky.svg" alt="Sticky Note: 2. Time, Speed & Distance" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ Average Speed = (a + b) / 2
 
 ### 3. Mixtures & Alligations
 
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-handwritten.svg" alt="Handwritten: 3. Mixtures & Alligations" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-handwritten.svg" alt="Handwritten: 3. Mixtures & Alligations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-diagram.svg" alt="Diagram: 3. Mixtures & Alligations" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-diagram.svg" alt="Diagram: 3. Mixtures & Alligations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-sticky.svg" alt="Sticky Note: 3. Mixtures & Alligations" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/3-mixtures-alligations-sticky.svg" alt="Sticky Note: 3. Mixtures & Alligations" width="30%">
 </a>
 
 
@@ -168,14 +168,14 @@ Ratio of A to B = (c - b) / (a - c)
 
 ### 4. Partnership
 
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-handwritten.svg" alt="Handwritten: 4. Partnership" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-handwritten.svg" alt="Handwritten: 4. Partnership" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-diagram.svg" alt="Diagram: 4. Partnership" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-diagram.svg" alt="Diagram: 4. Partnership" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-sticky.svg" alt="Sticky Note: 4. Partnership" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/4-partnership-sticky.svg" alt="Sticky Note: 4. Partnership" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ A's Profit : B's Profit = x × m : y × n
 
 ### 5. Problems on Ages
 
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-handwritten.svg" alt="Handwritten: 5. Problems on Ages" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-handwritten.svg" alt="Handwritten: 5. Problems on Ages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-diagram.svg" alt="Diagram: 5. Problems on Ages" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-diagram.svg" alt="Diagram: 5. Problems on Ages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-sticky.svg" alt="Sticky Note: 5. Problems on Ages" width="30%">
+<a href="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/quantitative-aptitude/02-advanced-arithmetic/5-problems-on-ages-sticky.svg" alt="Sticky Note: 5. Problems on Ages" width="30%">
 </a>
 
 

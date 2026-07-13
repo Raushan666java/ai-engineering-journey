@@ -19,14 +19,14 @@
 
 ### Verification and Validation
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-handwritten.svg" alt="Handwritten: Verification and Validation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-handwritten.svg" alt="Handwritten: Verification and Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-diagram.svg" alt="Diagram: Verification and Validation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-diagram.svg" alt="Diagram: Verification and Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-sticky.svg" alt="Sticky Note: Verification and Validation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/verification-and-validation-sticky.svg" alt="Sticky Note: Verification and Validation" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ graph TD
 
 ### The Test Pyramid
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-handwritten.svg" alt="Handwritten: The Test Pyramid" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-handwritten.svg" alt="Handwritten: The Test Pyramid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-diagram.svg" alt="Diagram: The Test Pyramid" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-diagram.svg" alt="Diagram: The Test Pyramid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-sticky.svg" alt="Sticky Note: The Test Pyramid" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/the-test-pyramid-sticky.svg" alt="Sticky Note: The Test Pyramid" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ graph TD
 
 ### Levels of Testing
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-handwritten.svg" alt="Handwritten: Levels of Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-handwritten.svg" alt="Handwritten: Levels of Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-diagram.svg" alt="Diagram: Levels of Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-diagram.svg" alt="Diagram: Levels of Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-sticky.svg" alt="Sticky Note: Levels of Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/levels-of-testing-sticky.svg" alt="Sticky Note: Levels of Testing" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ graph LR
 
 ### White-Box Testing Techniques
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-handwritten.svg" alt="Handwritten: White-Box Testing Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-handwritten.svg" alt="Handwritten: White-Box Testing Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-diagram.svg" alt="Diagram: White-Box Testing Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-diagram.svg" alt="Diagram: White-Box Testing Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-sticky.svg" alt="Sticky Note: White-Box Testing Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/white-box-testing-techniques-sticky.svg" alt="Sticky Note: White-Box Testing Techniques" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ function calculateDiscount(price: number, isMember: boolean, couponCode?: string
 
 ### Black-Box Testing Techniques
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-handwritten.svg" alt="Handwritten: Black-Box Testing Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-handwritten.svg" alt="Handwritten: Black-Box Testing Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-diagram.svg" alt="Diagram: Black-Box Testing Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-diagram.svg" alt="Diagram: Black-Box Testing Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-sticky.svg" alt="Sticky Note: Black-Box Testing Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/black-box-testing-techniques-sticky.svg" alt="Sticky Note: Black-Box Testing Techniques" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ class StateTransitionTester {
 
 ### Test Doubles
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/test-doubles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/test-doubles-handwritten.svg" alt="Handwritten: Test Doubles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/test-doubles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/test-doubles-handwritten.svg" alt="Handwritten: Test Doubles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/test-doubles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/test-doubles-diagram.svg" alt="Diagram: Test Doubles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/test-doubles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/test-doubles-diagram.svg" alt="Diagram: Test Doubles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/test-doubles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/test-doubles-sticky.svg" alt="Sticky Note: Test Doubles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/test-doubles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/test-doubles-sticky.svg" alt="Sticky Note: Test Doubles" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ class MockUserRepository implements UserRepository {
 
 ### TDD Cycle: Red-Green-Refactor
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-handwritten.svg" alt="Handwritten: TDD Cycle: Red-Green-Refactor" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-handwritten.svg" alt="Handwritten: TDD Cycle: Red-Green-Refactor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-diagram.svg" alt="Diagram: TDD Cycle: Red-Green-Refactor" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-diagram.svg" alt="Diagram: TDD Cycle: Red-Green-Refactor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-sticky.svg" alt="Sticky Note: TDD Cycle: Red-Green-Refactor" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/tdd-cycle-red-green-refactor-sticky.svg" alt="Sticky Note: TDD Cycle: Red-Green-Refactor" width="30%">
 </a>
 
 
@@ -480,14 +480,14 @@ function sumNumbers(numbers: number[]): number {
 
 ### BDD (Behavior-Driven Development)
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-handwritten.svg" alt="Handwritten: BDD (Behavior-Driven Development)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-handwritten.svg" alt="Handwritten: BDD (Behavior-Driven Development)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-diagram.svg" alt="Diagram: BDD (Behavior-Driven Development)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-diagram.svg" alt="Diagram: BDD (Behavior-Driven Development)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-sticky.svg" alt="Sticky Note: BDD (Behavior-Driven Development)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/bdd-behavior-driven-development-sticky.svg" alt="Sticky Note: BDD (Behavior-Driven Development)" width="30%">
 </a>
 
 
@@ -513,14 +513,14 @@ describe('Shopping Cart', () => {
 
 ### Property-Based Testing
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-handwritten.svg" alt="Handwritten: Property-Based Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-handwritten.svg" alt="Handwritten: Property-Based Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-diagram.svg" alt="Diagram: Property-Based Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-diagram.svg" alt="Diagram: Property-Based Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-sticky.svg" alt="Sticky Note: Property-Based Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/property-based-testing-sticky.svg" alt="Sticky Note: Property-Based Testing" width="30%">
 </a>
 
 
@@ -573,14 +573,14 @@ describe('reverse properties', () => {
 
 ### Mutation Testing
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-handwritten.svg" alt="Handwritten: Mutation Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-handwritten.svg" alt="Handwritten: Mutation Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-diagram.svg" alt="Diagram: Mutation Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-diagram.svg" alt="Diagram: Mutation Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-sticky.svg" alt="Sticky Note: Mutation Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/mutation-testing-sticky.svg" alt="Sticky Note: Mutation Testing" width="30%">
 </a>
 
 
@@ -659,14 +659,14 @@ class MutationTester {
 
 ### Non-Functional Testing
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-handwritten.svg" alt="Handwritten: Non-Functional Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-handwritten.svg" alt="Handwritten: Non-Functional Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-diagram.svg" alt="Diagram: Non-Functional Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-diagram.svg" alt="Diagram: Non-Functional Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-sticky.svg" alt="Sticky Note: Non-Functional Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/non-functional-testing-sticky.svg" alt="Sticky Note: Non-Functional Testing" width="30%">
 </a>
 
 
@@ -680,14 +680,14 @@ class MutationTester {
 
 ### CI/CD Test Pipeline
 
-<a href="../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-handwritten.svg" alt="Handwritten: CI/CD Test Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-handwritten.svg" alt="Handwritten: CI/CD Test Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-diagram.svg" alt="Diagram: CI/CD Test Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-diagram.svg" alt="Diagram: CI/CD Test Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-sticky.svg" alt="Sticky Note: CI/CD Test Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/06-testing/ci-cd-test-pipeline-sticky.svg" alt="Sticky Note: CI/CD Test Pipeline" width="30%">
 </a>
 
 

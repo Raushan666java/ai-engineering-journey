@@ -90,14 +90,14 @@ Testcontainers is a Java library that wraps Docker containers inside your test l
 
 ### 1.1 How It Works
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-handwritten.svg" alt="Handwritten: 1.1 How It Works" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-handwritten.svg" alt="Handwritten: 1.1 How It Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-diagram.svg" alt="Diagram: 1.1 How It Works" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-diagram.svg" alt="Diagram: 1.1 How It Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-sticky.svg" alt="Sticky Note: 1.1 How It Works" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/1-1-how-it-works-sticky.svg" alt="Sticky Note: 1.1 How It Works" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ Testcontainers is a Java library that wraps Docker containers inside your test l
 
 ### 1.2 Core Abstractions
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-handwritten.svg" alt="Handwritten: 1.2 Core Abstractions" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-handwritten.svg" alt="Handwritten: 1.2 Core Abstractions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-diagram.svg" alt="Diagram: 1.2 Core Abstractions" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-diagram.svg" alt="Diagram: 1.2 Core Abstractions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-sticky.svg" alt="Sticky Note: 1.2 Core Abstractions" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/1-2-core-abstractions-sticky.svg" alt="Sticky Note: 1.2 Core Abstractions" width="30%">
 </a>
 
 
@@ -196,14 +196,14 @@ System.out.println("Docker available: " + dockerAvailable);
 
 ### 2.1 Basic Usage
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-handwritten.svg" alt="Handwritten: 2.1 Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-handwritten.svg" alt="Handwritten: 2.1 Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-diagram.svg" alt="Diagram: 2.1 Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-diagram.svg" alt="Diagram: 2.1 Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-sticky.svg" alt="Sticky Note: 2.1 Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-1-basic-usage-sticky.svg" alt="Sticky Note: 2.1 Basic Usage" width="30%">
 </a>
 
 
@@ -237,14 +237,14 @@ class GenericContainerExampleTest {
 
 ### 2.2 Container Lifecycle
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-handwritten.svg" alt="Handwritten: 2.2 Container Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-handwritten.svg" alt="Handwritten: 2.2 Container Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-diagram.svg" alt="Diagram: 2.2 Container Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-diagram.svg" alt="Diagram: 2.2 Container Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-sticky.svg" alt="Sticky Note: 2.2 Container Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-2-container-lifecycle-sticky.svg" alt="Sticky Note: 2.2 Container Lifecycle" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@ class LifecycleTest {
 
 ### 2.3 Manual Start/Stop Without @Testcontainers
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-handwritten.svg" alt="Handwritten: 2.3 Manual Start/Stop Without @Testcontainers" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-handwritten.svg" alt="Handwritten: 2.3 Manual Start/Stop Without @Testcontainers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-diagram.svg" alt="Diagram: 2.3 Manual Start/Stop Without @Testcontainers" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-diagram.svg" alt="Diagram: 2.3 Manual Start/Stop Without @Testcontainers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-sticky.svg" alt="Sticky Note: 2.3 Manual Start/Stop Without @Testcontainers" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/2-3-manual-start-stop-without-testcontainers-sticky.svg" alt="Sticky Note: 2.3 Manual Start/Stop Without @Testcontainers" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ Testcontainers provides specialized subclasses for every major database. They pr
 
 ### 3.1 PostgreSQLContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-handwritten.svg" alt="Handwritten: 3.1 PostgreSQLContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-handwritten.svg" alt="Handwritten: 3.1 PostgreSQLContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-diagram.svg" alt="Diagram: 3.1 PostgreSQLContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-diagram.svg" alt="Diagram: 3.1 PostgreSQLContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-sticky.svg" alt="Sticky Note: 3.1 PostgreSQLContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-1-postgresqlcontainer-sticky.svg" alt="Sticky Note: 3.1 PostgreSQLContainer" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ class PostgreSQLTest {
 
 ### 3.2 MySQLContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-handwritten.svg" alt="Handwritten: 3.2 MySQLContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-handwritten.svg" alt="Handwritten: 3.2 MySQLContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-diagram.svg" alt="Diagram: 3.2 MySQLContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-diagram.svg" alt="Diagram: 3.2 MySQLContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-sticky.svg" alt="Sticky Note: 3.2 MySQLContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-2-mysqlcontainer-sticky.svg" alt="Sticky Note: 3.2 MySQLContainer" width="30%">
 </a>
 
 
@@ -420,14 +420,14 @@ class MySQLTest {
 
 ### 3.3 MSSQLServerContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-handwritten.svg" alt="Handwritten: 3.3 MSSQLServerContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-handwritten.svg" alt="Handwritten: 3.3 MSSQLServerContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-diagram.svg" alt="Diagram: 3.3 MSSQLServerContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-diagram.svg" alt="Diagram: 3.3 MSSQLServerContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-sticky.svg" alt="Sticky Note: 3.3 MSSQLServerContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-3-mssqlservercontainer-sticky.svg" alt="Sticky Note: 3.3 MSSQLServerContainer" width="30%">
 </a>
 
 
@@ -456,14 +456,14 @@ class MSSQLTest {
 
 ### 3.4 OracleContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-handwritten.svg" alt="Handwritten: 3.4 OracleContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-handwritten.svg" alt="Handwritten: 3.4 OracleContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-diagram.svg" alt="Diagram: 3.4 OracleContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-diagram.svg" alt="Diagram: 3.4 OracleContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-sticky.svg" alt="Sticky Note: 3.4 OracleContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-4-oraclecontainer-sticky.svg" alt="Sticky Note: 3.4 OracleContainer" width="30%">
 </a>
 
 
@@ -494,14 +494,14 @@ class OracleTest {
 
 ### 3.5 Init Scripts
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-handwritten.svg" alt="Handwritten: 3.5 Init Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-handwritten.svg" alt="Handwritten: 3.5 Init Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-diagram.svg" alt="Diagram: 3.5 Init Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-diagram.svg" alt="Diagram: 3.5 Init Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-sticky.svg" alt="Sticky Note: 3.5 Init Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-5-init-scripts-sticky.svg" alt="Sticky Note: 3.5 Init Scripts" width="30%">
 </a>
 
 
@@ -550,14 +550,14 @@ static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-
 
 ### 3.6 JDBC URL with the tc Driver
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-handwritten.svg" alt="Handwritten: 3.6 JDBC URL with the tc Driver" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-handwritten.svg" alt="Handwritten: 3.6 JDBC URL with the tc Driver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-diagram.svg" alt="Diagram: 3.6 JDBC URL with the tc Driver" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-diagram.svg" alt="Diagram: 3.6 JDBC URL with the tc Driver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-sticky.svg" alt="Sticky Note: 3.6 JDBC URL with the tc Driver" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-6-jdbc-url-with-the-tc-driver-sticky.svg" alt="Sticky Note: 3.6 JDBC URL with the tc Driver" width="30%">
 </a>
 
 
@@ -603,14 +603,14 @@ jdbc:tc:mssql-server:2022-latest:///testdb
 
 ### 3.7 @DynamicPropertySource
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-handwritten.svg" alt="Handwritten: 3.7 @DynamicPropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-handwritten.svg" alt="Handwritten: 3.7 @DynamicPropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-diagram.svg" alt="Diagram: 3.7 @DynamicPropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-diagram.svg" alt="Diagram: 3.7 @DynamicPropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-sticky.svg" alt="Sticky Note: 3.7 @DynamicPropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/3-7-dynamicpropertysource-sticky.svg" alt="Sticky Note: 3.7 @DynamicPropertySource" width="30%">
 </a>
 
 
@@ -661,14 +661,14 @@ Containers take time to start. Wait strategies define when a container is "ready
 
 ### 4.1 Wait.forListeningPort
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-handwritten.svg" alt="Handwritten: 4.1 Wait.forListeningPort" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-handwritten.svg" alt="Handwritten: 4.1 Wait.forListeningPort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-diagram.svg" alt="Diagram: 4.1 Wait.forListeningPort" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-diagram.svg" alt="Diagram: 4.1 Wait.forListeningPort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-sticky.svg" alt="Sticky Note: 4.1 Wait.forListeningPort" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-1-wait-forlisteningport-sticky.svg" alt="Sticky Note: 4.1 Wait.forListeningPort" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ static GenericContainer<?> nginx = new GenericContainer<>("nginx:alpine")
 
 ### 4.2 Wait.forLogMessage
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-handwritten.svg" alt="Handwritten: 4.2 Wait.forLogMessage" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-handwritten.svg" alt="Handwritten: 4.2 Wait.forLogMessage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-diagram.svg" alt="Diagram: 4.2 Wait.forLogMessage" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-diagram.svg" alt="Diagram: 4.2 Wait.forLogMessage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-sticky.svg" alt="Sticky Note: 4.2 Wait.forLogMessage" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-2-wait-forlogmessage-sticky.svg" alt="Sticky Note: 4.2 Wait.forLogMessage" width="30%">
 </a>
 
 
@@ -709,14 +709,14 @@ static GenericContainer<?> kafka = new GenericContainer<>("confluentinc/cp-kafka
 
 ### 4.3 Wait.forHttp
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-handwritten.svg" alt="Handwritten: 4.3 Wait.forHttp" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-handwritten.svg" alt="Handwritten: 4.3 Wait.forHttp" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-diagram.svg" alt="Diagram: 4.3 Wait.forHttp" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-diagram.svg" alt="Diagram: 4.3 Wait.forHttp" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-sticky.svg" alt="Sticky Note: 4.3 Wait.forHttp" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-3-wait-forhttp-sticky.svg" alt="Sticky Note: 4.3 Wait.forHttp" width="30%">
 </a>
 
 
@@ -739,14 +739,14 @@ static GenericContainer<?> elasticsearch = new GenericContainer<>("elasticsearch
 
 ### 4.4 Custom Wait Strategies
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-handwritten.svg" alt="Handwritten: 4.4 Custom Wait Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-handwritten.svg" alt="Handwritten: 4.4 Custom Wait Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-diagram.svg" alt="Diagram: 4.4 Custom Wait Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-diagram.svg" alt="Diagram: 4.4 Custom Wait Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-sticky.svg" alt="Sticky Note: 4.4 Custom Wait Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-4-custom-wait-strategies-sticky.svg" alt="Sticky Note: 4.4 Custom Wait Strategies" width="30%">
 </a>
 
 
@@ -771,14 +771,14 @@ static GenericContainer<?> custom = new GenericContainer<>("my-service:1.0")
 
 ### 4.5 Startup Timeout
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-handwritten.svg" alt="Handwritten: 4.5 Startup Timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-handwritten.svg" alt="Handwritten: 4.5 Startup Timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-diagram.svg" alt="Diagram: 4.5 Startup Timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-diagram.svg" alt="Diagram: 4.5 Startup Timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-sticky.svg" alt="Sticky Note: 4.5 Startup Timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/4-5-startup-timeout-sticky.svg" alt="Sticky Note: 4.5 Startup Timeout" width="30%">
 </a>
 
 
@@ -798,14 +798,14 @@ Testcontainers provides specialized containers for common middleware services.
 
 ### 5.1 KafkaContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-handwritten.svg" alt="Handwritten: 5.1 KafkaContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-handwritten.svg" alt="Handwritten: 5.1 KafkaContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-diagram.svg" alt="Diagram: 5.1 KafkaContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-diagram.svg" alt="Diagram: 5.1 KafkaContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-sticky.svg" alt="Sticky Note: 5.1 KafkaContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-1-kafkacontainer-sticky.svg" alt="Sticky Note: 5.1 KafkaContainer" width="30%">
 </a>
 
 
@@ -847,14 +847,14 @@ static KafkaContainer kafka = new KafkaContainer(
 
 ### 5.2 RedpandaContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-handwritten.svg" alt="Handwritten: 5.2 RedpandaContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-handwritten.svg" alt="Handwritten: 5.2 RedpandaContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-diagram.svg" alt="Diagram: 5.2 RedpandaContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-diagram.svg" alt="Diagram: 5.2 RedpandaContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-sticky.svg" alt="Sticky Note: 5.2 RedpandaContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-2-redpandacontainer-sticky.svg" alt="Sticky Note: 5.2 RedpandaContainer" width="30%">
 </a>
 
 
@@ -914,14 +914,14 @@ class KafkaSpringTest {
 
 ### 5.3 RabbitMQContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-handwritten.svg" alt="Handwritten: 5.3 RabbitMQContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-handwritten.svg" alt="Handwritten: 5.3 RabbitMQContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-diagram.svg" alt="Diagram: 5.3 RabbitMQContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-diagram.svg" alt="Diagram: 5.3 RabbitMQContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-sticky.svg" alt="Sticky Note: 5.3 RabbitMQContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-3-rabbitmqcontainer-sticky.svg" alt="Sticky Note: 5.3 RabbitMQContainer" width="30%">
 </a>
 
 
@@ -966,14 +966,14 @@ class RabbitMQTest {
 
 ### 5.4 RedisContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-handwritten.svg" alt="Handwritten: 5.4 RedisContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-handwritten.svg" alt="Handwritten: 5.4 RedisContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-diagram.svg" alt="Diagram: 5.4 RedisContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-diagram.svg" alt="Diagram: 5.4 RedisContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-sticky.svg" alt="Sticky Note: 5.4 RedisContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-4-rediscontainer-sticky.svg" alt="Sticky Note: 5.4 RedisContainer" width="30%">
 </a>
 
 
@@ -1026,14 +1026,14 @@ class RedisSpringTest {
 
 ### 5.5 ElasticsearchContainer
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-handwritten.svg" alt="Handwritten: 5.5 ElasticsearchContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-handwritten.svg" alt="Handwritten: 5.5 ElasticsearchContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-diagram.svg" alt="Diagram: 5.5 ElasticsearchContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-diagram.svg" alt="Diagram: 5.5 ElasticsearchContainer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-sticky.svg" alt="Sticky Note: 5.5 ElasticsearchContainer" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-5-elasticsearchcontainer-sticky.svg" alt="Sticky Note: 5.5 ElasticsearchContainer" width="30%">
 </a>
 
 
@@ -1100,14 +1100,14 @@ class ElasticsearchSpringTest {
 
 ### 5.6 LocalStackContainer (AWS)
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-handwritten.svg" alt="Handwritten: 5.6 LocalStackContainer (AWS)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-handwritten.svg" alt="Handwritten: 5.6 LocalStackContainer (AWS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-diagram.svg" alt="Diagram: 5.6 LocalStackContainer (AWS)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-diagram.svg" alt="Diagram: 5.6 LocalStackContainer (AWS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-sticky.svg" alt="Sticky Note: 5.6 LocalStackContainer (AWS)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/5-6-localstackcontainer-aws-sticky.svg" alt="Sticky Note: 5.6 LocalStackContainer (AWS)" width="30%">
 </a>
 
 
@@ -1219,14 +1219,14 @@ class AwsSpringTest {
 
 ### 6.1 Environment Variables
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-handwritten.svg" alt="Handwritten: 6.1 Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-handwritten.svg" alt="Handwritten: 6.1 Environment Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-diagram.svg" alt="Diagram: 6.1 Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-diagram.svg" alt="Diagram: 6.1 Environment Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-sticky.svg" alt="Sticky Note: 6.1 Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-1-environment-variables-sticky.svg" alt="Sticky Note: 6.1 Environment Variables" width="30%">
 </a>
 
 
@@ -1243,14 +1243,14 @@ static GenericContainer<?> app = new GenericContainer<>("my-app:latest")
 
 ### 6.2 Exposed Ports
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-handwritten.svg" alt="Handwritten: 6.2 Exposed Ports" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-handwritten.svg" alt="Handwritten: 6.2 Exposed Ports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-diagram.svg" alt="Diagram: 6.2 Exposed Ports" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-diagram.svg" alt="Diagram: 6.2 Exposed Ports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-sticky.svg" alt="Sticky Note: 6.2 Exposed Ports" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-2-exposed-ports-sticky.svg" alt="Sticky Note: 6.2 Exposed Ports" width="30%">
 </a>
 
 
@@ -1267,14 +1267,14 @@ static GenericContainer<?> app = new GenericContainer<>("my-app:latest")
 
 ### 6.3 Command Override
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-handwritten.svg" alt="Handwritten: 6.3 Command Override" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-handwritten.svg" alt="Handwritten: 6.3 Command Override" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-diagram.svg" alt="Diagram: 6.3 Command Override" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-diagram.svg" alt="Diagram: 6.3 Command Override" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-sticky.svg" alt="Sticky Note: 6.3 Command Override" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-3-command-override-sticky.svg" alt="Sticky Note: 6.3 Command Override" width="30%">
 </a>
 
 
@@ -1292,14 +1292,14 @@ static GenericContainer<?> postgres = new GenericContainer<>("postgres:16-alpine
 
 ### 6.4 Network Configuration
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-handwritten.svg" alt="Handwritten: 6.4 Network Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-handwritten.svg" alt="Handwritten: 6.4 Network Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-diagram.svg" alt="Diagram: 6.4 Network Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-diagram.svg" alt="Diagram: 6.4 Network Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-sticky.svg" alt="Sticky Note: 6.4 Network Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-4-network-configuration-sticky.svg" alt="Sticky Note: 6.4 Network Configuration" width="30%">
 </a>
 
 
@@ -1323,14 +1323,14 @@ static PostgreSQLContainer<?> db = new PostgreSQLContainer<>("postgres:16-alpine
 
 ### 6.5 Copy Files Into Container
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-handwritten.svg" alt="Handwritten: 6.5 Copy Files Into Container" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-handwritten.svg" alt="Handwritten: 6.5 Copy Files Into Container" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-diagram.svg" alt="Diagram: 6.5 Copy Files Into Container" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-diagram.svg" alt="Diagram: 6.5 Copy Files Into Container" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-sticky.svg" alt="Sticky Note: 6.5 Copy Files Into Container" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-5-copy-files-into-container-sticky.svg" alt="Sticky Note: 6.5 Copy Files Into Container" width="30%">
 </a>
 
 
@@ -1351,14 +1351,14 @@ static GenericContainer<?> app = new GenericContainer<>("my-app:latest")
 
 ### 6.6 Working Directory and User
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-handwritten.svg" alt="Handwritten: 6.6 Working Directory and User" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-handwritten.svg" alt="Handwritten: 6.6 Working Directory and User" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-diagram.svg" alt="Diagram: 6.6 Working Directory and User" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-diagram.svg" alt="Diagram: 6.6 Working Directory and User" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-sticky.svg" alt="Sticky Note: 6.6 Working Directory and User" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/6-6-working-directory-and-user-sticky.svg" alt="Sticky Note: 6.6 Working Directory and User" width="30%">
 </a>
 
 
@@ -1377,14 +1377,14 @@ Networks let containers communicate by alias, avoiding `localhost` confusion.
 
 ### 7.1 Creating a Network
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-handwritten.svg" alt="Handwritten: 7.1 Creating a Network" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-handwritten.svg" alt="Handwritten: 7.1 Creating a Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-diagram.svg" alt="Diagram: 7.1 Creating a Network" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-diagram.svg" alt="Diagram: 7.1 Creating a Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-sticky.svg" alt="Sticky Note: 7.1 Creating a Network" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-1-creating-a-network-sticky.svg" alt="Sticky Note: 7.1 Creating a Network" width="30%">
 </a>
 
 
@@ -1410,14 +1410,14 @@ Network custom = Network.builder()
 
 ### 7.2 Container Aliases
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-handwritten.svg" alt="Handwritten: 7.2 Container Aliases" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-handwritten.svg" alt="Handwritten: 7.2 Container Aliases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-diagram.svg" alt="Diagram: 7.2 Container Aliases" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-diagram.svg" alt="Diagram: 7.2 Container Aliases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-sticky.svg" alt="Sticky Note: 7.2 Container Aliases" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-2-container-aliases-sticky.svg" alt="Sticky Note: 7.2 Container Aliases" width="30%">
 </a>
 
 
@@ -1454,14 +1454,14 @@ class NetworkIsolationTest {
 
 ### 7.3 Composing Containers Together
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-handwritten.svg" alt="Handwritten: 7.3 Composing Containers Together" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-handwritten.svg" alt="Handwritten: 7.3 Composing Containers Together" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-diagram.svg" alt="Diagram: 7.3 Composing Containers Together" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-diagram.svg" alt="Diagram: 7.3 Composing Containers Together" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-sticky.svg" alt="Sticky Note: 7.3 Composing Containers Together" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/7-3-composing-containers-together-sticky.svg" alt="Sticky Note: 7.3 Composing Containers Together" width="30%">
 </a>
 
 
@@ -1508,14 +1508,14 @@ For multi-service topologies, `DockerComposeContainer` manages a `docker-compose
 
 ### 8.1 Basic Compose Container
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-handwritten.svg" alt="Handwritten: 8.1 Basic Compose Container" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-handwritten.svg" alt="Handwritten: 8.1 Basic Compose Container" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-diagram.svg" alt="Diagram: 8.1 Basic Compose Container" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-diagram.svg" alt="Diagram: 8.1 Basic Compose Container" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-sticky.svg" alt="Sticky Note: 8.1 Basic Compose Container" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-1-basic-compose-container-sticky.svg" alt="Sticky Note: 8.1 Basic Compose Container" width="30%">
 </a>
 
 
@@ -1581,14 +1581,14 @@ class DockerComposeTest {
 
 ### 8.2 Service Instances
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-handwritten.svg" alt="Handwritten: 8.2 Service Instances" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-handwritten.svg" alt="Handwritten: 8.2 Service Instances" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-diagram.svg" alt="Diagram: 8.2 Service Instances" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-diagram.svg" alt="Diagram: 8.2 Service Instances" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-sticky.svg" alt="Sticky Note: 8.2 Service Instances" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-2-service-instances-sticky.svg" alt="Sticky Note: 8.2 Service Instances" width="30%">
 </a>
 
 
@@ -1616,14 +1616,14 @@ static DockerComposeContainer<?> environment =
 
 ### 8.3 Custom Docker Compose File Names
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-handwritten.svg" alt="Handwritten: 8.3 Custom Docker Compose File Names" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-handwritten.svg" alt="Handwritten: 8.3 Custom Docker Compose File Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-diagram.svg" alt="Diagram: 8.3 Custom Docker Compose File Names" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-diagram.svg" alt="Diagram: 8.3 Custom Docker Compose File Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-sticky.svg" alt="Sticky Note: 8.3 Custom Docker Compose File Names" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-3-custom-docker-compose-file-names-sticky.svg" alt="Sticky Note: 8.3 Custom Docker Compose File Names" width="30%">
 </a>
 
 
@@ -1636,14 +1636,14 @@ static DockerComposeContainer<?> environment =
 
 ### 8.4 Scaling Services
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-handwritten.svg" alt="Handwritten: 8.4 Scaling Services" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-handwritten.svg" alt="Handwritten: 8.4 Scaling Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-diagram.svg" alt="Diagram: 8.4 Scaling Services" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-diagram.svg" alt="Diagram: 8.4 Scaling Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-sticky.svg" alt="Sticky Note: 8.4 Scaling Services" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/8-4-scaling-services-sticky.svg" alt="Sticky Note: 8.4 Scaling Services" width="30%">
 </a>
 
 
@@ -1661,14 +1661,14 @@ static DockerComposeContainer<?> environment =
 
 ### 9.1 @ServiceConnection (Spring Boot 3.1+)
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-handwritten.svg" alt="Handwritten: 9.1 @ServiceConnection (Spring Boot 3.1+)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-handwritten.svg" alt="Handwritten: 9.1 @ServiceConnection (Spring Boot 3.1+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-diagram.svg" alt="Diagram: 9.1 @ServiceConnection (Spring Boot 3.1+)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-diagram.svg" alt="Diagram: 9.1 @ServiceConnection (Spring Boot 3.1+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-sticky.svg" alt="Sticky Note: 9.1 @ServiceConnection (Spring Boot 3.1+)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-1-serviceconnection-spring-boot-3-1-sticky.svg" alt="Sticky Note: 9.1 @ServiceConnection (Spring Boot 3.1+)" width="30%">
 </a>
 
 
@@ -1706,14 +1706,14 @@ class ServiceConnectionTest {
 
 ### 9.2 @ServiceConnection with Connection Factories
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-handwritten.svg" alt="Handwritten: 9.2 @ServiceConnection with Connection Factories" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-handwritten.svg" alt="Handwritten: 9.2 @ServiceConnection with Connection Factories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-diagram.svg" alt="Diagram: 9.2 @ServiceConnection with Connection Factories" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-diagram.svg" alt="Diagram: 9.2 @ServiceConnection with Connection Factories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-sticky.svg" alt="Sticky Note: 9.2 @ServiceConnection with Connection Factories" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-2-serviceconnection-with-connection-factories-sticky.svg" alt="Sticky Note: 9.2 @ServiceConnection with Connection Factories" width="30%">
 </a>
 
 
@@ -1787,14 +1787,14 @@ PostgresContainerConnectionDetails postgresContainerConnectionDetails(
 
 ### 9.3 JDBC with tc Driver (Revisited for Spring Boot)
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-handwritten.svg" alt="Handwritten: 9.3 JDBC with tc Driver (Revisited for Spring Boot)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-handwritten.svg" alt="Handwritten: 9.3 JDBC with tc Driver (Revisited for Spring Boot)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-diagram.svg" alt="Diagram: 9.3 JDBC with tc Driver (Revisited for Spring Boot)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-diagram.svg" alt="Diagram: 9.3 JDBC with tc Driver (Revisited for Spring Boot)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-sticky.svg" alt="Sticky Note: 9.3 JDBC with tc Driver (Revisited for Spring Boot)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/9-3-jdbc-with-tc-driver-revisited-for-spring-boot-sticky.svg" alt="Sticky Note: 9.3 JDBC with tc Driver (Revisited for Spring Boot)" width="30%">
 </a>
 
 
@@ -1842,14 +1842,14 @@ class TcDriverSpringTest {
 
 ### 10.1 withReuse
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-handwritten.svg" alt="Handwritten: 10.1 withReuse" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-handwritten.svg" alt="Handwritten: 10.1 withReuse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-diagram.svg" alt="Diagram: 10.1 withReuse" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-diagram.svg" alt="Diagram: 10.1 withReuse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-sticky.svg" alt="Sticky Note: 10.1 withReuse" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-1-withreuse-sticky.svg" alt="Sticky Note: 10.1 withReuse" width="30%">
 </a>
 
 
@@ -1865,14 +1865,14 @@ static PostgreSQLContainer<?> postgres = new PostgreSQLContainer<>("postgres:16-
 
 ### 10.2 .testcontainers.properties
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-handwritten.svg" alt="Handwritten: 10.2 .testcontainers.properties" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-handwritten.svg" alt="Handwritten: 10.2 .testcontainers.properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-diagram.svg" alt="Diagram: 10.2 .testcontainers.properties" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-diagram.svg" alt="Diagram: 10.2 .testcontainers.properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-sticky.svg" alt="Sticky Note: 10.2 .testcontainers.properties" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-2-testcontainers-properties-sticky.svg" alt="Sticky Note: 10.2 .testcontainers.properties" width="30%">
 </a>
 
 
@@ -1901,14 +1901,14 @@ testcontainers.reuse.enable=true
 
 ### 10.3 Reusable Containers in CI (Ryuk)
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-handwritten.svg" alt="Handwritten: 10.3 Reusable Containers in CI (Ryuk)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-handwritten.svg" alt="Handwritten: 10.3 Reusable Containers in CI (Ryuk)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-diagram.svg" alt="Diagram: 10.3 Reusable Containers in CI (Ryuk)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-diagram.svg" alt="Diagram: 10.3 Reusable Containers in CI (Ryuk)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-sticky.svg" alt="Sticky Note: 10.3 Reusable Containers in CI (Ryuk)" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-3-reusable-containers-in-ci-ryuk-sticky.svg" alt="Sticky Note: 10.3 Reusable Containers in CI (Ryuk)" width="30%">
 </a>
 
 
@@ -1932,14 +1932,14 @@ testcontainers.reuse.enable=false   # Don't reuse Ã¢â‚¬â€ fresh each 
 
 ### 10.4 Singleton Container Pattern
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-handwritten.svg" alt="Handwritten: 10.4 Singleton Container Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-handwritten.svg" alt="Handwritten: 10.4 Singleton Container Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-diagram.svg" alt="Diagram: 10.4 Singleton Container Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-diagram.svg" alt="Diagram: 10.4 Singleton Container Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-sticky.svg" alt="Sticky Note: 10.4 Singleton Container Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-4-singleton-container-pattern-sticky.svg" alt="Sticky Note: 10.4 Singleton Container Pattern" width="30%">
 </a>
 
 
@@ -1982,14 +1982,14 @@ class UserRepositoryTest extends AbstractIntegrationTest {
 
 ### 10.5 Hybrid Mode: Reuse Locally, Fresh in CI
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-handwritten.svg" alt="Handwritten: 10.5 Hybrid Mode: Reuse Locally, Fresh in CI" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-handwritten.svg" alt="Handwritten: 10.5 Hybrid Mode: Reuse Locally, Fresh in CI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-diagram.svg" alt="Diagram: 10.5 Hybrid Mode: Reuse Locally, Fresh in CI" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-diagram.svg" alt="Diagram: 10.5 Hybrid Mode: Reuse Locally, Fresh in CI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-sticky.svg" alt="Sticky Note: 10.5 Hybrid Mode: Reuse Locally, Fresh in CI" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/10-5-hybrid-mode-reuse-locally-fresh-in-ci-sticky.svg" alt="Sticky Note: 10.5 Hybrid Mode: Reuse Locally, Fresh in CI" width="30%">
 </a>
 
 
@@ -2017,14 +2017,14 @@ A complete, real-world example tying everything together.
 
 ### 11.1 Application Code
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-handwritten.svg" alt="Handwritten: 11.1 Application Code" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-handwritten.svg" alt="Handwritten: 11.1 Application Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-diagram.svg" alt="Diagram: 11.1 Application Code" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-diagram.svg" alt="Diagram: 11.1 Application Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-sticky.svg" alt="Sticky Note: 11.1 Application Code" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-1-application-code-sticky.svg" alt="Sticky Note: 11.1 Application Code" width="30%">
 </a>
 
 
@@ -2116,14 +2116,14 @@ public class OrderService {
 
 ### 11.2 Integration Test
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-handwritten.svg" alt="Handwritten: 11.2 Integration Test" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-handwritten.svg" alt="Handwritten: 11.2 Integration Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-diagram.svg" alt="Diagram: 11.2 Integration Test" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-diagram.svg" alt="Diagram: 11.2 Integration Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-sticky.svg" alt="Sticky Note: 11.2 Integration Test" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-2-integration-test-sticky.svg" alt="Sticky Note: 11.2 Integration Test" width="30%">
 </a>
 
 
@@ -2241,14 +2241,14 @@ class OrderServiceIntegrationTest {
 
 ### 11.3 Kafka + Database Combined Test
 
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-handwritten.svg" alt="Handwritten: 11.3 Kafka + Database Combined Test" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-handwritten.svg" alt="Handwritten: 11.3 Kafka + Database Combined Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-diagram.svg" alt="Diagram: 11.3 Kafka + Database Combined Test" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-diagram.svg" alt="Diagram: 11.3 Kafka + Database Combined Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-sticky.svg" alt="Sticky Note: 11.3 Kafka + Database Combined Test" width="30%">
+<a href="../../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/32-testcontainers/11-3-kafka-database-combined-test-sticky.svg" alt="Sticky Note: 11.3 Kafka + Database Combined Test" width="30%">
 </a>
 
 

@@ -42,14 +42,14 @@ flowchart LR
 
 ### Q1: What is PHP and how does it differ from JavaScript on the backend?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-handwritten.svg" alt="Handwritten: What is PHP and how does it differ from JavaScript on the backend?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-handwritten.svg" alt="Handwritten: What is PHP and how does it differ from JavaScript on the backend?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-diagram.svg" alt="Diagram: What is PHP and how does it differ from JavaScript on the backend?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-diagram.svg" alt="Diagram: What is PHP and how does it differ from JavaScript on the backend?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-sticky.svg" alt="Sticky Note: What is PHP and how does it differ from JavaScript on the backend?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-php-and-how-does-it-differ-from-javascript-on-the-backend-sticky.svg" alt="Sticky Note: What is PHP and how does it differ from JavaScript on the backend?" width="30%">
 </a>
 
 **Answer:** PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development. Unlike JavaScript (which runs in the browser or via Node.js), PHP executes entirely on the server, generates HTML sent to the client, and is naturally synchronous and blocking per-request. PHP's shared-nothing architecture means each request starts fresh with no in-memory state, unlike Node.js which maintains a persistent process.
@@ -61,14 +61,14 @@ flowchart LR
 
 ### Q2: How do PHP variables work? What are the type system basics?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-handwritten.svg" alt="Handwritten: How do PHP variables work? What are the type system basics?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-handwritten.svg" alt="Handwritten: How do PHP variables work? What are the type system basics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-diagram.svg" alt="Diagram: How do PHP variables work? What are the type system basics?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-diagram.svg" alt="Diagram: How do PHP variables work? What are the type system basics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-sticky.svg" alt="Sticky Note: How do PHP variables work? What are the type system basics?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-php-variables-work-what-are-the-type-system-basics-sticky.svg" alt="Sticky Note: How do PHP variables work? What are the type system basics?" width="30%">
 </a>
 
 **Answer:** PHP is a dynamically typed language. Variables are prefixed with `$`, require no explicit type declaration, and can change type at runtime. PHP 8 introduces union types in function signatures but the underlying engine still juggles types internally.
@@ -87,14 +87,14 @@ $age = "thirty";           // allowed → type changed at runtime
 
 ### Q3: What are the primitive types in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-handwritten.svg" alt="Handwritten: What are the primitive types in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-handwritten.svg" alt="Handwritten: What are the primitive types in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-diagram.svg" alt="Diagram: What are the primitive types in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-diagram.svg" alt="Diagram: What are the primitive types in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-sticky.svg" alt="Sticky Note: What are the primitive types in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-primitive-types-in-php-sticky.svg" alt="Sticky Note: What are the primitive types in PHP?" width="30%">
 </a>
 
 **Answer:** PHP has 10 primitive types: 4 scalar (`bool`, `int`, `float`, `string`), 4 compound (`array`, `object`, `callable`, `iterable`), and 2 special (`null`, `resource`). PHP 8 added `mixed` and `never` as pseudo-types, and `false`/`null` can now appear as standalone types in union type declarations.
@@ -107,14 +107,14 @@ function find(string $id): User|null { /* ... */ }
 
 ### Q4: What is type juggling and how can it cause bugs?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-handwritten.svg" alt="Handwritten: What is type juggling and how can it cause bugs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-handwritten.svg" alt="Handwritten: What is type juggling and how can it cause bugs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-diagram.svg" alt="Diagram: What is type juggling and how can it cause bugs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-diagram.svg" alt="Diagram: What is type juggling and how can it cause bugs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-sticky.svg" alt="Sticky Note: What is type juggling and how can it cause bugs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-type-juggling-and-how-can-it-cause-bugs-sticky.svg" alt="Sticky Note: What is type juggling and how can it cause bugs?" width="30%">
 </a>
 
 **Answer:** PHP automatically coerces types when operators expect specific types. This "type juggling" can lead to surprising comparisons, especially with loose equality (`==`). Always use strict comparison (`===`) unless coercion is intentional.
@@ -128,14 +128,14 @@ var_dump(0 == "abc");    // false (PHP 8, string-to-int comparison is numeric)
 
 ### Q5: What are the different array types in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-handwritten.svg" alt="Handwritten: What are the different array types in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-handwritten.svg" alt="Handwritten: What are the different array types in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-diagram.svg" alt="Diagram: What are the different array types in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-diagram.svg" alt="Diagram: What are the different array types in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-sticky.svg" alt="Sticky Note: What are the different array types in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-the-different-array-types-in-php-sticky.svg" alt="Sticky Note: What are the different array types in PHP?" width="30%">
 </a>
 
 **Answer:** PHP has one array type → `array` → which can be either indexed (sequential integer keys) or associative (string keys). Both can mix within the same array. PHP 8.1 adds `array_is_list()` to distinguish sequential arrays.
@@ -151,14 +151,14 @@ var_dump(array_is_list($assoc));   // false
 
 ### Q6: How do `isset()`, `empty()`, and `is_null()` differ?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-handwritten.svg" alt="Handwritten: How do `isset()`, `empty()`, and `is_null()` differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-handwritten.svg" alt="Handwritten: How do `isset()`, `empty()`, and `is_null()` differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-diagram.svg" alt="Diagram: How do `isset()`, `empty()`, and `is_null()` differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-diagram.svg" alt="Diagram: How do `isset()`, `empty()`, and `is_null()` differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-sticky.svg" alt="Sticky Note: How do `isset()`, `empty()`, and `is_null()` differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-isset-empty-and-is-null-differ-sticky.svg" alt="Sticky Note: How do `isset()`, `empty()`, and `is_null()` differ?" width="30%">
 </a>
 
 **Answer:** `isset()` returns `true` if a variable is set and not `null`. `empty()` returns `true` if a variable is falsy (`''`, `0`, `'0'`, `null`, `false`, `[]`). `is_null()` returns `true` only if the variable is `null` or unset (with a warning).
@@ -177,14 +177,14 @@ var_dump(is_null($y));  // true
 
 ### Q7: Explain the string concatenation operator and how it differs from JavaScript.
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-handwritten.svg" alt="Handwritten: Explain the string concatenation operator and how it differs from JavaScript." width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-handwritten.svg" alt="Handwritten: Explain the string concatenation operator and how it differs from JavaScript." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-diagram.svg" alt="Diagram: Explain the string concatenation operator and how it differs from JavaScript." width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-diagram.svg" alt="Diagram: Explain the string concatenation operator and how it differs from JavaScript." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-sticky.svg" alt="Sticky Note: Explain the string concatenation operator and how it differs from JavaScript." width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/explain-the-string-concatenation-operator-and-how-it-differs-from-javascript-sticky.svg" alt="Sticky Note: Explain the string concatenation operator and how it differs from JavaScript." width="30%">
 </a>
 
 **Answer:** PHP uses `.` (dot) for string concatenation, unlike JavaScript's `+`. PHP uses `+` only for numeric addition. Complex strings can use double-quoted interpolation or `sprintf()`.
@@ -197,14 +197,14 @@ $formatted = sprintf('Hello %s, you have %d new messages', $name, $count);
 
 ### Q8: What is the difference between single and double quotes in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-handwritten.svg" alt="Handwritten: What is the difference between single and double quotes in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-handwritten.svg" alt="Handwritten: What is the difference between single and double quotes in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-diagram.svg" alt="Diagram: What is the difference between single and double quotes in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-diagram.svg" alt="Diagram: What is the difference between single and double quotes in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-sticky.svg" alt="Sticky Note: What is the difference between single and double quotes in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-single-and-double-quotes-in-php-sticky.svg" alt="Sticky Note: What is the difference between single and double quotes in PHP?" width="30%">
 </a>
 
 **Answer:** Single-quoted strings are literal → only `\\` and `\'` are interpreted as escape sequences. Double-quoted strings interpret variable interpolation (`$var`, `{$var}`) and escape sequences (`\n`, `\t`, `\$`, etc.). Double quotes are slightly slower but rarely a concern.
@@ -218,14 +218,14 @@ echo "Line1\nLine2";    // newline in output
 
 ### Q9: What operators does PHP support for array comparison?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-handwritten.svg" alt="Handwritten: What operators does PHP support for array comparison?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-handwritten.svg" alt="Handwritten: What operators does PHP support for array comparison?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-diagram.svg" alt="Diagram: What operators does PHP support for array comparison?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-diagram.svg" alt="Diagram: What operators does PHP support for array comparison?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-sticky.svg" alt="Sticky Note: What operators does PHP support for array comparison?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-operators-does-php-support-for-array-comparison-sticky.svg" alt="Sticky Note: What operators does PHP support for array comparison?" width="30%">
 </a>
 
 **Answer:** `+` union merges arrays (left-hand keys take precedence). `==` loose equality checks same key/value pairs regardless of order. `===` strict equality requires same key/value pairs in same order and same types.
@@ -244,14 +244,14 @@ $d = $a + ['x', 'y']; // ['a', 'b'] → union ignores right duplicates
 
 ### Q10: How do `++$i` and `$i++` differ in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-handwritten.svg" alt="Handwritten: How do `++$i` and `$i++` differ in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-handwritten.svg" alt="Handwritten: How do `++$i` and `$i++` differ in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-diagram.svg" alt="Diagram: How do `++$i` and `$i++` differ in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-diagram.svg" alt="Diagram: How do `++$i` and `$i++` differ in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-sticky.svg" alt="Sticky Note: How do `++$i` and `$i++` differ in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-i-and-i-differ-in-php-sticky.svg" alt="Sticky Note: How do `++$i` and `$i++` differ in PHP?" width="30%">
 </a>
 
 **Answer:** `++$i` (pre-increment) increments the variable and returns the new value. `$i++` (post-increment) returns the current value then increments. The same applies to decrement operators.
@@ -268,14 +268,14 @@ echo $j;    // 6
 
 ### Q11: How does the `switch` statement work in PHP? What is the fallthrough behavior?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-handwritten.svg" alt="Handwritten: How does the `switch` statement work in PHP? What is the fallthrough behavior?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-handwritten.svg" alt="Handwritten: How does the `switch` statement work in PHP? What is the fallthrough behavior?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-diagram.svg" alt="Diagram: How does the `switch` statement work in PHP? What is the fallthrough behavior?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-diagram.svg" alt="Diagram: How does the `switch` statement work in PHP? What is the fallthrough behavior?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-sticky.svg" alt="Sticky Note: How does the `switch` statement work in PHP? What is the fallthrough behavior?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-switch-statement-work-in-php-what-is-the-fallthrough-behavior-sticky.svg" alt="Sticky Note: How does the `switch` statement work in PHP? What is the fallthrough behavior?" width="30%">
 </a>
 
 **Answer:** `switch` compares loosely (`==`). Each `case` execution falls through to the next unless terminated by `break`. Missing `break` is a common bug. PHP 8.0 introduces `match` which is strict (`===`) and returns values without fallthrough.
@@ -297,14 +297,14 @@ switch ($status) {
 
 ### Q12: What is the null coalescing operator `??`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-handwritten.svg" alt="Handwritten: What is the null coalescing operator `??`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-handwritten.svg" alt="Handwritten: What is the null coalescing operator `??`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-diagram.svg" alt="Diagram: What is the null coalescing operator `??`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-diagram.svg" alt="Diagram: What is the null coalescing operator `??`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-sticky.svg" alt="Sticky Note: What is the null coalescing operator `??`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-null-coalescing-operator-sticky.svg" alt="Sticky Note: What is the null coalescing operator `??`?" width="30%">
 </a>
 
 **Answer:** The `??` operator returns the left operand if it exists and is not `null`; otherwise returns the right operand. It suppresses undefined-key notices. PHP 7.4 introduced the null coalescing assignment `??=`.
@@ -317,14 +317,14 @@ $data['key'] ??= 'default';                   // assigns only if null
 
 ### Q13: What is the spaceship operator `<=>`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-handwritten.svg" alt="Handwritten: What is the spaceship operator `<=>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-handwritten.svg" alt="Handwritten: What is the spaceship operator `<=>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-diagram.svg" alt="Diagram: What is the spaceship operator `<=>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-diagram.svg" alt="Diagram: What is the spaceship operator `<=>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-sticky.svg" alt="Sticky Note: What is the spaceship operator `<=>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spaceship-operator-sticky.svg" alt="Sticky Note: What is the spaceship operator `<=>`?" width="30%">
 </a>
 
 **Answer:** The spaceship operator performs combined comparison: returns `-1` if left &lt; right, `0` if equal, `1` if left &gt; right. It's essential for custom sort callbacks.
@@ -340,14 +340,14 @@ usort($users, fn($a, $b) => $a <=> $b); // ['Alice', 'Bob', 'Charlie']
 
 ### Q14: How do you define and call a function in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-handwritten.svg" alt="Handwritten: How do you define and call a function in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-handwritten.svg" alt="Handwritten: How do you define and call a function in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-diagram.svg" alt="Diagram: How do you define and call a function in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-diagram.svg" alt="Diagram: How do you define and call a function in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-sticky.svg" alt="Sticky Note: How do you define and call a function in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-and-call-a-function-in-php-sticky.svg" alt="Sticky Note: How do you define and call a function in PHP?" width="30%">
 </a>
 
 **Answer:** Functions are defined with the `function` keyword, can have type hints for parameters and return types, and support default values, variadic arguments, and nullable types.
@@ -368,14 +368,14 @@ echo calculateTotal(100, 1, 15.0);             // 85.00
 
 ### Q15: What are strict types and how do you enable them?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-handwritten.svg" alt="Handwritten: What are strict types and how do you enable them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-handwritten.svg" alt="Handwritten: What are strict types and how do you enable them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-diagram.svg" alt="Diagram: What are strict types and how do you enable them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-diagram.svg" alt="Diagram: What are strict types and how do you enable them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-sticky.svg" alt="Sticky Note: What are strict types and how do you enable them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-strict-types-and-how-do-you-enable-them-sticky.svg" alt="Sticky Note: What are strict types and how do you enable them?" width="30%">
 </a>
 
 **Answer:** `declare(strict_types=1)` placed at the top of a PHP file enforces strict type checking for function calls within that file. Without it, PHP coerces argument types → `int` arguments accept `float` and coerce `"42"` strings silently. Strict types throw a `TypeError` on mismatch.
@@ -393,14 +393,14 @@ sum(3, 4.5);    // TypeError: must be of type int
 
 ### Q16: How does variable scope work in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-handwritten.svg" alt="Handwritten: How does variable scope work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-handwritten.svg" alt="Handwritten: How does variable scope work in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-diagram.svg" alt="Diagram: How does variable scope work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-diagram.svg" alt="Diagram: How does variable scope work in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-sticky.svg" alt="Sticky Note: How does variable scope work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-variable-scope-work-in-php-sticky.svg" alt="Sticky Note: How does variable scope work in PHP?" width="30%">
 </a>
 
 **Answer:** PHP has function scope → variables defined outside a function are not accessible inside unless explicitly `global` or passed via parameters. The `global` keyword imports a reference to the outer scope. Static variables persist across function calls within the same request.
@@ -421,14 +421,14 @@ echo increment(); // 2 (count=2, counter=2)
 
 ### Q17: What are variable variables?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-handwritten.svg" alt="Handwritten: What are variable variables?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-handwritten.svg" alt="Handwritten: What are variable variables?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-diagram.svg" alt="Diagram: What are variable variables?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-diagram.svg" alt="Diagram: What are variable variables?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-sticky.svg" alt="Sticky Note: What are variable variables?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variable-variables-sticky.svg" alt="Sticky Note: What are variable variables?" width="30%">
 </a>
 
 **Answer:** Variable variables use `$$name` to access a variable whose name is the value of another variable. They are rarely used in modern PHP due to readability concerns → use arrays or dynamic access instead.
@@ -446,14 +446,14 @@ echo $props[$name]; // red
 
 ### Q18: How does the `foreach` loop work with arrays and objects?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-handwritten.svg" alt="Handwritten: How does the `foreach` loop work with arrays and objects?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-handwritten.svg" alt="Handwritten: How does the `foreach` loop work with arrays and objects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-diagram.svg" alt="Diagram: How does the `foreach` loop work with arrays and objects?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-diagram.svg" alt="Diagram: How does the `foreach` loop work with arrays and objects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-sticky.svg" alt="Sticky Note: How does the `foreach` loop work with arrays and objects?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-foreach-loop-work-with-arrays-and-objects-sticky.svg" alt="Sticky Note: How does the `foreach` loop work with arrays and objects?" width="30%">
 </a>
 
 **Answer:** `foreach` iterates over arrays and traversable objects. By default it copies the array (unless the array is a reference or has large internals). Use `&$value` for by-reference iteration to modify the original.
@@ -475,14 +475,14 @@ var_dump($items); // ['A', 'B', 'C']
 
 ### Q19: What is `list()` or short array destructuring?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-handwritten.svg" alt="Handwritten: What is `list()` or short array destructuring?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-handwritten.svg" alt="Handwritten: What is `list()` or short array destructuring?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-diagram.svg" alt="Diagram: What is `list()` or short array destructuring?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-diagram.svg" alt="Diagram: What is `list()` or short array destructuring?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-sticky.svg" alt="Sticky Note: What is `list()` or short array destructuring?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-list-or-short-array-destructuring-sticky.svg" alt="Sticky Note: What is `list()` or short array destructuring?" width="30%">
 </a>
 
 **Answer:** `list()` and its short `[]` syntax unpack array values into variables. Works for indexed and associative arrays (PHP 7.1+). Nested destructuring is also supported.
@@ -504,14 +504,14 @@ foreach ($matrix as [$a, $b]) {
 
 ### Q20: How do you pass arguments by reference?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-handwritten.svg" alt="Handwritten: How do you pass arguments by reference?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-handwritten.svg" alt="Handwritten: How do you pass arguments by reference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-diagram.svg" alt="Diagram: How do you pass arguments by reference?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-diagram.svg" alt="Diagram: How do you pass arguments by reference?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-sticky.svg" alt="Sticky Note: How do you pass arguments by reference?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-pass-arguments-by-reference-sticky.svg" alt="Sticky Note: How do you pass arguments by reference?" width="30%">
 </a>
 
 **Answer:** Prepend `&` to the parameter in the function definition. The caller passes the variable normally; any mutation inside the function affects the original variable. References prevent copying large data.
@@ -528,14 +528,14 @@ echo $html; // contains footer text
 
 ### Q21: What are variadic functions in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-handwritten.svg" alt="Handwritten: What are variadic functions in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-handwritten.svg" alt="Handwritten: What are variadic functions in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-diagram.svg" alt="Diagram: What are variadic functions in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-diagram.svg" alt="Diagram: What are variadic functions in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-sticky.svg" alt="Sticky Note: What are variadic functions in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-variadic-functions-in-php-sticky.svg" alt="Sticky Note: What are variadic functions in PHP?" width="30%">
 </a>
 
 **Answer:** Variadic functions use `...` (splat operator) in the parameter list to accept any number of arguments, which are collected into an array. The splat operator also unpacks arrays when calling a function.
@@ -554,14 +554,14 @@ echo sumAll(...$args); // 60
 
 ### Q22: What is the difference between `require`, `require_once`, `include`, and `include_once`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-handwritten.svg" alt="Handwritten: What is the difference between `require`, `require_once`, `include`, and `include_once`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-handwritten.svg" alt="Handwritten: What is the difference between `require`, `require_once`, `include`, and `include_once`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-diagram.svg" alt="Diagram: What is the difference between `require`, `require_once`, `include`, and `include_once`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-diagram.svg" alt="Diagram: What is the difference between `require`, `require_once`, `include`, and `include_once`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-sticky.svg" alt="Sticky Note: What is the difference between `require`, `require_once`, `include`, and `include_once`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-require-once-include-and-include-once-sticky.svg" alt="Sticky Note: What is the difference between `require`, `require_once`, `include`, and `include_once`?" width="30%">
 </a>
 
 **Answer:** All four import a PHP file. `require` causes a fatal error if the file is missing; `include` emits a warning and continues. The `_once` variants use an internal tracker to prevent the same file from being loaded more than once, which avoids redeclaration errors.
@@ -575,14 +575,14 @@ include_once 'helpers.php';    // load once, warning if missing
 
 ### Q23: How do you work with dates and times in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-handwritten.svg" alt="Handwritten: How do you work with dates and times in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-handwritten.svg" alt="Handwritten: How do you work with dates and times in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-diagram.svg" alt="Diagram: How do you work with dates and times in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-diagram.svg" alt="Diagram: How do you work with dates and times in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-sticky.svg" alt="Sticky Note: How do you work with dates and times in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-work-with-dates-and-times-in-php-sticky.svg" alt="Sticky Note: How do you work with dates and times in PHP?" width="30%">
 </a>
 
 **Answer:** The `DateTime` class (and its immutable sibling `DateTimeImmutable`) provide object-oriented date manipulation. `Carbon` is the community standard in Laravel, extending `DateTimeImmutable`.
@@ -598,14 +598,14 @@ echo $interval->days; // days until Jan 1 2026
 
 ### Q24: What are PHP errors and exceptions? How do they differ?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-handwritten.svg" alt="Handwritten: What are PHP errors and exceptions? How do they differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-handwritten.svg" alt="Handwritten: What are PHP errors and exceptions? How do they differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-diagram.svg" alt="Diagram: What are PHP errors and exceptions? How do they differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-diagram.svg" alt="Diagram: What are PHP errors and exceptions? How do they differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-sticky.svg" alt="Sticky Note: What are PHP errors and exceptions? How do they differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-errors-and-exceptions-how-do-they-differ-sticky.svg" alt="Sticky Note: What are PHP errors and exceptions? How do they differ?" width="30%">
 </a>
 
 **Answer:** Errors (E_WARNING, E_NOTICE, E_PARSE) are legacy PHP-level issues. Exceptions are objects you can throw and catch. Since PHP 7, most errors can be caught via `Error` or `Throwable`. Exceptions should represent recoverable application problems; errors represent runtime problems.
@@ -622,14 +622,14 @@ try {
 
 ### Q25: What is the `@` error control operator?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-handwritten.svg" alt="Handwritten: What is the `@` error control operator?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-handwritten.svg" alt="Handwritten: What is the `@` error control operator?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-diagram.svg" alt="Diagram: What is the `@` error control operator?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-diagram.svg" alt="Diagram: What is the `@` error control operator?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-sticky.svg" alt="Sticky Note: What is the `@` error control operator?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-error-control-operator-sticky.svg" alt="Sticky Note: What is the `@` error control operator?" width="30%">
 </a>
 
 **Answer:** The `@` operator suppresses errors and warnings from an expression. It is generally discouraged because it masks real problems makes debugging difficult. Use proper error handling instead.
@@ -648,14 +648,14 @@ if ($content === false) {
 
 ### Q26: How do you define a class with properties and methods?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-handwritten.svg" alt="Handwritten: How do you define a class with properties and methods?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-handwritten.svg" alt="Handwritten: How do you define a class with properties and methods?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-diagram.svg" alt="Diagram: How do you define a class with properties and methods?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-diagram.svg" alt="Diagram: How do you define a class with properties and methods?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-sticky.svg" alt="Sticky Note: How do you define a class with properties and methods?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-define-a-class-with-properties-and-methods-sticky.svg" alt="Sticky Note: How do you define a class with properties and methods?" width="30%">
 </a>
 
 **Answer:** Classes use the `class` keyword. Properties have visibility modifiers (`public`, `protected`, `private`). Methods are functions inside the class. PHP 8.0+ supports constructor promotion for concise property declarations.
@@ -686,14 +686,14 @@ echo $user->getName(); // Alice
 
 ### Q27: What is constructor promotion in PHP 8?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-handwritten.svg" alt="Handwritten: What is constructor promotion in PHP 8?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-handwritten.svg" alt="Handwritten: What is constructor promotion in PHP 8?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-diagram.svg" alt="Diagram: What is constructor promotion in PHP 8?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-diagram.svg" alt="Diagram: What is constructor promotion in PHP 8?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-sticky.svg" alt="Sticky Note: What is constructor promotion in PHP 8?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-constructor-promotion-in-php-8-sticky.svg" alt="Sticky Note: What is constructor promotion in PHP 8?" width="30%">
 </a>
 
 **Answer:** Constructor promotion combines property declaration, constructor parameter, and assignment into one syntax. Public, protected, or private on the parameter automatically creates and assigns the property. It reduces boilerplate significantly.
@@ -720,14 +720,14 @@ class Order {
 
 ### Q28: Explain `public`, `protected`, and `private` visibility.
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-handwritten.svg" alt="Handwritten: Explain `public`, `protected`, and `private` visibility." width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-handwritten.svg" alt="Handwritten: Explain `public`, `protected`, and `private` visibility." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-diagram.svg" alt="Diagram: Explain `public`, `protected`, and `private` visibility." width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-diagram.svg" alt="Diagram: Explain `public`, `protected`, and `private` visibility." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-sticky.svg" alt="Sticky Note: Explain `public`, `protected`, and `private` visibility." width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/explain-public-protected-and-private-visibility-sticky.svg" alt="Sticky Note: Explain `public`, `protected`, and `private` visibility." width="30%">
 </a>
 
 **Answer:** `public` → accessible from anywhere. `protected` → accessible only within the class itself and its child classes. `private` → accessible only within the defining class, not from children. This applies to both properties and methods.
@@ -750,14 +750,14 @@ class Child extends ParentClass {
 
 ### Q29: How does inheritance work in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-handwritten.svg" alt="Handwritten: How does inheritance work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-handwritten.svg" alt="Handwritten: How does inheritance work in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-diagram.svg" alt="Diagram: How does inheritance work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-diagram.svg" alt="Diagram: How does inheritance work in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-sticky.svg" alt="Sticky Note: How does inheritance work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-inheritance-work-in-php-sticky.svg" alt="Sticky Note: How does inheritance work in PHP?" width="30%">
 </a>
 
 **Answer:** PHP supports single class inheritance using `extends`. A child class inherits all public and protected methods/properties from the parent. The child can override methods, call parent methods with `parent::`, and add new functionality.
@@ -786,14 +786,14 @@ echo $dog->speak(); // Rex says Woof!
 
 ### Q30: What are abstract classes and when should you use them?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-handwritten.svg" alt="Handwritten: What are abstract classes and when should you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-handwritten.svg" alt="Handwritten: What are abstract classes and when should you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-diagram.svg" alt="Diagram: What are abstract classes and when should you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-diagram.svg" alt="Diagram: What are abstract classes and when should you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-sticky.svg" alt="Sticky Note: What are abstract classes and when should you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-abstract-classes-and-when-should-you-use-them-sticky.svg" alt="Sticky Note: What are abstract classes and when should you use them?" width="30%">
 </a>
 
 **Answer:** Abstract classes (declared `abstract`) cannot be instantiated directly. They define a base template with some implemented methods and some abstract method signatures that children must implement. Use when classes share state or behavior but need to enforce certain method contracts.
@@ -822,14 +822,14 @@ class StripeGateway extends PaymentGateway
 
 ### Q31: What is an interface and how does it differ from an abstract class?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-handwritten.svg" alt="Handwritten: What is an interface and how does it differ from an abstract class?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-handwritten.svg" alt="Handwritten: What is an interface and how does it differ from an abstract class?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-diagram.svg" alt="Diagram: What is an interface and how does it differ from an abstract class?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-diagram.svg" alt="Diagram: What is an interface and how does it differ from an abstract class?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-sticky.svg" alt="Sticky Note: What is an interface and how does it differ from an abstract class?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-interface-and-how-does-it-differ-from-an-abstract-class-sticky.svg" alt="Sticky Note: What is an interface and how does it differ from an abstract class?" width="30%">
 </a>
 
 **Answer:** An interface defines a contract → method signatures without any implementation. A class can implement multiple interfaces (unlike classes which extend only one). Abstract classes can have properties, implemented methods, and constructor logic. Use interfaces when you only want to enforce a shape, not share logic.
@@ -855,14 +855,14 @@ class UserService implements LoggerInterface, Cacheable {
 
 ### Q32: What are traits and why would you use them?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-handwritten.svg" alt="Handwritten: What are traits and why would you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-handwritten.svg" alt="Handwritten: What are traits and why would you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-diagram.svg" alt="Diagram: What are traits and why would you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-diagram.svg" alt="Diagram: What are traits and why would you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-sticky.svg" alt="Sticky Note: What are traits and why would you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-traits-and-why-would-you-use-them-sticky.svg" alt="Sticky Note: What are traits and why would you use them?" width="30%">
 </a>
 
 **Answer:** Traits are reusable code snippets that can be composed into classes, solving PHP's single-inheritance limitation. A trait cannot be instantiated alone → it's mixed into a class. Traits can have properties, methods, abstract methods, and even use other traits.
@@ -901,14 +901,14 @@ class Post
 
 ### Q33: How does trait conflict resolution work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-handwritten.svg" alt="Handwritten: How does trait conflict resolution work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-handwritten.svg" alt="Handwritten: How does trait conflict resolution work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-diagram.svg" alt="Diagram: How does trait conflict resolution work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-diagram.svg" alt="Diagram: How does trait conflict resolution work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-sticky.svg" alt="Sticky Note: How does trait conflict resolution work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-trait-conflict-resolution-work-sticky.svg" alt="Sticky Note: How does trait conflict resolution work?" width="30%">
 </a>
 
 **Answer:** When two traits define the same method, PHP requires explicit resolution. Use `insteadof` to choose one trait's method, or `as` to alias a method (keeping both available under different names).
@@ -931,14 +931,14 @@ echo $g->greetFromB(); // Hi from B
 
 ### Q34: What is the `final` keyword used for?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-handwritten.svg" alt="Handwritten: What is the `final` keyword used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-handwritten.svg" alt="Handwritten: What is the `final` keyword used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-diagram.svg" alt="Diagram: What is the `final` keyword used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-diagram.svg" alt="Diagram: What is the `final` keyword used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-sticky.svg" alt="Sticky Note: What is the `final` keyword used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-final-keyword-used-for-sticky.svg" alt="Sticky Note: What is the `final` keyword used for?" width="30%">
 </a>
 
 **Answer:** `final` prevents a method from being overridden in child classes, or prevents a class from being extended at all. Use it when the implementation is complete and should not be altered by subclasses → it signals design intent.
@@ -958,14 +958,14 @@ class PaymentProcessor {
 
 ### Q35: What are magic methods in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-handwritten.svg" alt="Handwritten: What are magic methods in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-handwritten.svg" alt="Handwritten: What are magic methods in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-diagram.svg" alt="Diagram: What are magic methods in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-diagram.svg" alt="Diagram: What are magic methods in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-sticky.svg" alt="Sticky Note: What are magic methods in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-magic-methods-in-php-sticky.svg" alt="Sticky Note: What are magic methods in PHP?" width="30%">
 </a>
 
 **Answer:** Magic methods are special methods prefixed with `__` that PHP calls implicitly. Key ones: `__construct`, `__destruct`, `__get`, `__set`, `__call`, `__callStatic`, `__toString`, `__invoke`, `__clone`, `__isset`, `__unset`, `__sleep`, `__wakeup`, `__serialize`, `__unserialize`.
@@ -1014,14 +1014,14 @@ echo $bag('name');  // Alice (via __invoke)
 
 ### Q36: What does `__clone` do?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-handwritten.svg" alt="Handwritten: What does `__clone` do?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-handwritten.svg" alt="Handwritten: What does `__clone` do?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-diagram.svg" alt="Diagram: What does `__clone` do?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-diagram.svg" alt="Diagram: What does `__clone` do?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-sticky.svg" alt="Sticky Note: What does `__clone` do?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-does-clone-do-sticky.svg" alt="Sticky Note: What does `__clone` do?" width="30%">
 </a>
 
 **Answer:** `__clone` is called after an object is cloned with `clone`. It allows deep-copying referenced properties; otherwise PHP performs a shallow copy (references remain shared).
@@ -1048,14 +1048,14 @@ print_r($original->settings['theme']); // dark (unchanged)
 
 ### Q37: How does `__serialize` / `__unserialize` work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-handwritten.svg" alt="Handwritten: How does `__serialize` / `__unserialize` work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-handwritten.svg" alt="Handwritten: How does `__serialize` / `__unserialize` work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-diagram.svg" alt="Diagram: How does `__serialize` / `__unserialize` work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-diagram.svg" alt="Diagram: How does `__serialize` / `__unserialize` work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-sticky.svg" alt="Sticky Note: How does `__serialize` / `__unserialize` work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-serialize-unserialize-work-sticky.svg" alt="Sticky Note: How does `__serialize` / `__unserialize` work?" width="30%">
 </a>
 
 **Answer:** Added in PHP 7.4, these replace `__sleep` / `__wakeup`. `__serialize` returns an array of data to be serialized. `__unserialize` receives that array and restores the object state. They are cleaner and avoid the ambiguous return value of `__sleep`.
@@ -1084,14 +1084,14 @@ class SessionUser
 
 ### Q38: What is the static keyword and late static binding?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-handwritten.svg" alt="Handwritten: What is the static keyword and late static binding?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-handwritten.svg" alt="Handwritten: What is the static keyword and late static binding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-diagram.svg" alt="Diagram: What is the static keyword and late static binding?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-diagram.svg" alt="Diagram: What is the static keyword and late static binding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-sticky.svg" alt="Sticky Note: What is the static keyword and late static binding?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-static-keyword-and-late-static-binding-sticky.svg" alt="Sticky Note: What is the static keyword and late static binding?" width="30%">
 </a>
 
 **Answer:** `static::` enables late static binding → the referenced class is determined at runtime based on the actual class called, not the class where the method is defined. `self::` always resolves to the class where the method is written.
@@ -1113,14 +1113,14 @@ echo Child::testStatic(); // Child (static resolves at runtime)
 
 ### Q39: How does `instanceof` work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-handwritten.svg" alt="Handwritten: How does `instanceof` work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-handwritten.svg" alt="Handwritten: How does `instanceof` work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-diagram.svg" alt="Diagram: How does `instanceof` work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-diagram.svg" alt="Diagram: How does `instanceof` work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-sticky.svg" alt="Sticky Note: How does `instanceof` work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-instanceof-work-sticky.svg" alt="Sticky Note: How does `instanceof` work?" width="30%">
 </a>
 
 **Answer:** `instanceof` checks whether an object is an instance of a class, or implements an interface, or extends a parent class. It also supports class name strings.
@@ -1144,14 +1144,14 @@ var_dump($admin instanceof $class); // true
 
 ### Q40: What is the `::class` constant?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-handwritten.svg" alt="Handwritten: What is the `::class` constant?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-handwritten.svg" alt="Handwritten: What is the `::class` constant?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-diagram.svg" alt="Diagram: What is the `::class` constant?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-diagram.svg" alt="Diagram: What is the `::class` constant?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-sticky.svg" alt="Sticky Note: What is the `::class` constant?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-class-constant-sticky.svg" alt="Sticky Note: What is the `::class` constant?" width="30%">
 </a>
 
 **Answer:** `ClassName::class` returns the fully qualified class name as a string. It's resolved at compile time, making refactoring safe (IDE rename updates it). It's widely used in Laravel for service container bindings and route controller definitions.
@@ -1171,14 +1171,14 @@ Route::get('/products', [ProductController::class, 'index']);
 
 ### Q41: What is an anonymous class?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-handwritten.svg" alt="Handwritten: What is an anonymous class?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-handwritten.svg" alt="Handwritten: What is an anonymous class?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-diagram.svg" alt="Diagram: What is an anonymous class?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-diagram.svg" alt="Diagram: What is an anonymous class?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-sticky.svg" alt="Sticky Note: What is an anonymous class?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-an-anonymous-class-sticky.svg" alt="Sticky Note: What is an anonymous class?" width="30%">
 </a>
 
 **Answer:** Anonymous classes are defined inline without a name, useful for one-off objects, mocks in tests, or simple implementations. They can extend classes, implement interfaces, and use traits.
@@ -1201,14 +1201,14 @@ sayHello(new class implements Greeter {
 
 ### Q42: How does type hinting work for object parameters?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-handwritten.svg" alt="Handwritten: How does type hinting work for object parameters?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-handwritten.svg" alt="Handwritten: How does type hinting work for object parameters?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-diagram.svg" alt="Diagram: How does type hinting work for object parameters?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-diagram.svg" alt="Diagram: How does type hinting work for object parameters?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-sticky.svg" alt="Sticky Note: How does type hinting work for object parameters?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-type-hinting-work-for-object-parameters-sticky.svg" alt="Sticky Note: How does type hinting work for object parameters?" width="30%">
 </a>
 
 **Answer:** PHP supports type hinting for classes, interfaces, arrays, callables, iterables, and primitives (int, float, string, bool, void, never, mixed). Nullable types use `?Type` syntax. Union types (PHP 8) allow multiple types.
@@ -1227,14 +1227,14 @@ function handle(mixed $input): int|false {}          // mixed + union return
 
 ### Q43: What are namespaces and how do you use them?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-handwritten.svg" alt="Handwritten: What are namespaces and how do you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-handwritten.svg" alt="Handwritten: What are namespaces and how do you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-diagram.svg" alt="Diagram: What are namespaces and how do you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-diagram.svg" alt="Diagram: What are namespaces and how do you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-sticky.svg" alt="Sticky Note: What are namespaces and how do you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-namespaces-and-how-do-you-use-them-sticky.svg" alt="Sticky Note: What are namespaces and how do you use them?" width="30%">
 </a>
 
 **Answer:** Namespaces organize code into logical groups, prevent class name collisions, and follow the directory structure. Declared with `namespace` at the top of a file. Fully qualified names start with `\`.
@@ -1259,14 +1259,14 @@ class PaymentController {
 
 ### Q44: How do `use`, `use function`, and `use const` differ?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-handwritten.svg" alt="Handwritten: How do `use`, `use function`, and `use const` differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-handwritten.svg" alt="Handwritten: How do `use`, `use function`, and `use const` differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-diagram.svg" alt="Diagram: How do `use`, `use function`, and `use const` differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-diagram.svg" alt="Diagram: How do `use`, `use function`, and `use const` differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-sticky.svg" alt="Sticky Note: How do `use`, `use function`, and `use const` differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-use-use-function-and-use-const-differ-sticky.svg" alt="Sticky Note: How do `use`, `use function`, and `use const` differ?" width="30%">
 </a>
 
 **Answer:** `use` imports classes/interfaces/traits. `use function` imports functions. `use const` imports constants. All can alias with `as`. Grouped imports (PHP 7) reduce repetition.
@@ -1280,14 +1280,14 @@ use App\Exceptions\HttpException as HttpError;
 
 ### Q45: How does exception handling work in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-handwritten.svg" alt="Handwritten: How does exception handling work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-handwritten.svg" alt="Handwritten: How does exception handling work in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-diagram.svg" alt="Diagram: How does exception handling work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-diagram.svg" alt="Diagram: How does exception handling work in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-sticky.svg" alt="Sticky Note: How does exception handling work in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-exception-handling-work-in-php-sticky.svg" alt="Sticky Note: How does exception handling work in PHP?" width="30%">
 </a>
 
 **Answer:** `try` blocks wrap risky code. `catch` blocks handle specific exception types (multiple allowed). `finally` runs regardless of exception. PHP 8.0+ lets you capture the exception as nullable and use `match`-style catch.
@@ -1309,14 +1309,14 @@ try {
 
 ### Q46: What is `set_exception_handler` and when would you use it?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is `set_exception_handler` and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is `set_exception_handler` and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is `set_exception_handler` and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is `set_exception_handler` and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is `set_exception_handler` and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-set-exception-handler-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is `set_exception_handler` and when would you use it?" width="30%">
 </a>
 
 **Answer:** `set_exception_handler` sets a global catch-all for uncaught exceptions, allowing a centralized error response (e.g., JSON error for an API). It's called as the last resort before PHP terminates.
@@ -1337,14 +1337,14 @@ set_exception_handler(function (\Throwable $e): void {
 
 ### Q47: What is the SPL (Standard PHP Library) and what are its most useful classes?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-handwritten.svg" alt="Handwritten: What is the SPL (Standard PHP Library) and what are its most useful classes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-handwritten.svg" alt="Handwritten: What is the SPL (Standard PHP Library) and what are its most useful classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-diagram.svg" alt="Diagram: What is the SPL (Standard PHP Library) and what are its most useful classes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-diagram.svg" alt="Diagram: What is the SPL (Standard PHP Library) and what are its most useful classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-sticky.svg" alt="Sticky Note: What is the SPL (Standard PHP Library) and what are its most useful classes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-spl-standard-php-library-and-what-are-its-most-useful-classes-sticky.svg" alt="Sticky Note: What is the SPL (Standard PHP Library) and what are its most useful classes?" width="30%">
 </a>
 
 **Answer:** SPL provides data structures, iterators, file handling, and interfaces. Key classes: `ArrayObject`, `SplStack`, `SplQueue`, `SplPriorityQueue`, `SplFileInfo`, `SplObjectStorage`, `DirectoryIterator`.
@@ -1366,14 +1366,14 @@ $storage[$user] = ['visits' => 42];
 
 ### Q48: How do generators work and why are they useful?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-handwritten.svg" alt="Handwritten: How do generators work and why are they useful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-handwritten.svg" alt="Handwritten: How do generators work and why are they useful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-diagram.svg" alt="Diagram: How do generators work and why are they useful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-diagram.svg" alt="Diagram: How do generators work and why are they useful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-sticky.svg" alt="Sticky Note: How do generators work and why are they useful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-generators-work-and-why-are-they-useful-sticky.svg" alt="Sticky Note: How do generators work and why are they useful?" width="30%">
 </a>
 
 **Answer:** Generators use `yield` to produce values lazily without building the entire result set in memory. The function pauses at each `yield` and resumes when the next value is requested. Critical for processing large datasets.
@@ -1398,14 +1398,14 @@ foreach (processLargeFile('huge.log') as $line) {
 
 ### Q49: What is the difference between `yield` and `yield from`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-handwritten.svg" alt="Handwritten: What is the difference between `yield` and `yield from`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-handwritten.svg" alt="Handwritten: What is the difference between `yield` and `yield from`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-diagram.svg" alt="Diagram: What is the difference between `yield` and `yield from`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-diagram.svg" alt="Diagram: What is the difference between `yield` and `yield from`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-sticky.svg" alt="Sticky Note: What is the difference between `yield` and `yield from`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-yield-and-yield-from-sticky.svg" alt="Sticky Note: What is the difference between `yield` and `yield from`?" width="30%">
 </a>
 
 **Answer:** `yield` emits a single value (and optionally a key). `yield from` delegates to another generator, traversable, or array, yielding all its values transparently. It also supports recursion.
@@ -1432,14 +1432,14 @@ foreach (combined() as $value) {
 
 ### Q50: What are closures and how do they capture variables?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-handwritten.svg" alt="Handwritten: What are closures and how do they capture variables?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-handwritten.svg" alt="Handwritten: What are closures and how do they capture variables?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-diagram.svg" alt="Diagram: What are closures and how do they capture variables?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-diagram.svg" alt="Diagram: What are closures and how do they capture variables?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-sticky.svg" alt="Sticky Note: What are closures and how do they capture variables?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-closures-and-how-do-they-capture-variables-sticky.svg" alt="Sticky Note: What are closures and how do they capture variables?" width="30%">
 </a>
 
 **Answer:** Closures are anonymous functions that can capture variables from the surrounding scope via `use`. By default, captured variables are copied (value capture); use `&` for reference capture. PHP 7.4 introduced arrow functions which implicitly capture by value.
@@ -1464,14 +1464,14 @@ echo $counter; // 1
 
 ### Q51: How do arrow functions differ from closures?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-handwritten.svg" alt="Handwritten: How do arrow functions differ from closures?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-handwritten.svg" alt="Handwritten: How do arrow functions differ from closures?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-diagram.svg" alt="Diagram: How do arrow functions differ from closures?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-diagram.svg" alt="Diagram: How do arrow functions differ from closures?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-sticky.svg" alt="Sticky Note: How do arrow functions differ from closures?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-arrow-functions-differ-from-closures-sticky.svg" alt="Sticky Note: How do arrow functions differ from closures?" width="30%">
 </a>
 
 **Answer:** Arrow functions (`fn`) are a shorter syntax for closures that automatically capture outer variables by value and cannot use `use`. They are limited to a single expression (the return value). They cannot modify captured variables or use `&` reference.
@@ -1494,14 +1494,14 @@ $doubled = array_map(fn(int $n) => $n * $factor, $numbers);
 
 ### Q52: What are callables and how are they used?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-handwritten.svg" alt="Handwritten: What are callables and how are they used?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-handwritten.svg" alt="Handwritten: What are callables and how are they used?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-diagram.svg" alt="Diagram: What are callables and how are they used?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-diagram.svg" alt="Diagram: What are callables and how are they used?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-sticky.svg" alt="Sticky Note: What are callables and how are they used?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-callables-and-how-are-they-used-sticky.svg" alt="Sticky Note: What are callables and how are they used?" width="30%">
 </a>
 
 **Answer:** A callable is anything that can be called as a function: a closure, a function name string, an array `[$object, 'method']`, an invokable object, or a static call `['ClassName', 'method']`. Functions accepting callables use `callable` type hint or `is_callable()`.
@@ -1519,14 +1519,14 @@ echo execute(['MathHelper', 'square'], 4);  // 16 (static method)
 
 ### Q53: What is `array_map`, `array_filter`, and `array_reduce`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-handwritten.svg" alt="Handwritten: What is `array_map`, `array_filter`, and `array_reduce`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-handwritten.svg" alt="Handwritten: What is `array_map`, `array_filter`, and `array_reduce`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-diagram.svg" alt="Diagram: What is `array_map`, `array_filter`, and `array_reduce`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-diagram.svg" alt="Diagram: What is `array_map`, `array_filter`, and `array_reduce`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-sticky.svg" alt="Sticky Note: What is `array_map`, `array_filter`, and `array_reduce`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-array-map-array-filter-and-array-reduce-sticky.svg" alt="Sticky Note: What is `array_map`, `array_filter`, and `array_reduce`?" width="30%">
 </a>
 
 **Answer:** These are higher-order array functions. `array_map` transforms each element. `array_filter` keeps elements passing a truth test. `array_reduce` iteratively accumulates a value.
@@ -1546,14 +1546,14 @@ $sum = array_reduce($items, fn(int $carry, int $n): int => $carry + $n, 0);
 
 ### Q54: How do you handle file uploads in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-handwritten.svg" alt="Handwritten: How do you handle file uploads in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-handwritten.svg" alt="Handwritten: How do you handle file uploads in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-diagram.svg" alt="Diagram: How do you handle file uploads in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-diagram.svg" alt="Diagram: How do you handle file uploads in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-sticky.svg" alt="Sticky Note: How do you handle file uploads in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-handle-file-uploads-in-php-sticky.svg" alt="Sticky Note: How do you handle file uploads in PHP?" width="30%">
 </a>
 
 **Answer:** Files arrive in the `$_FILES` superglobal. Each file is an array with `name`, `tmp_name`, `size`, `error`, `type`. Use `move_uploaded_file()` to relocate safely. Always validate extension, MIME type, and size.
@@ -1580,14 +1580,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['avatar'])) {
 
 ### Q55: What is output buffering?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-handwritten.svg" alt="Handwritten: What is output buffering?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-handwritten.svg" alt="Handwritten: What is output buffering?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-diagram.svg" alt="Diagram: What is output buffering?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-diagram.svg" alt="Diagram: What is output buffering?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-sticky.svg" alt="Sticky Note: What is output buffering?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-output-buffering-sticky.svg" alt="Sticky Note: What is output buffering?" width="30%">
 </a>
 
 **Answer:** `ob_start()` captures all output (echo, HTML, etc.) into a buffer instead of sending it immediately. `ob_get_clean()` retrieves and discards the buffer. Used for template rendering, preventing header errors, and manipulating response content.
@@ -1605,14 +1605,14 @@ echo $content;
 
 ### Q56: How does PHP handle sessions?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-handwritten.svg" alt="Handwritten: How does PHP handle sessions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-handwritten.svg" alt="Handwritten: How does PHP handle sessions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-diagram.svg" alt="Diagram: How does PHP handle sessions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-diagram.svg" alt="Diagram: How does PHP handle sessions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-sticky.svg" alt="Sticky Note: How does PHP handle sessions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-php-handle-sessions-sticky.svg" alt="Sticky Note: How does PHP handle sessions?" width="30%">
 </a>
 
 **Answer:** Sessions use a server-side storage (files by default) identified by a cookie (usually `PHPSESSID`). `session_start()` loads the session data into `$_SESSION`. Session data persists across requests. For APIs, token-based auth (JWT, Sanctum) is preferred.
@@ -1630,14 +1630,14 @@ echo "You've visited {$_SESSION['visits']} times.";
 
 ### Q57: What are resources in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-handwritten.svg" alt="Handwritten: What are resources in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-handwritten.svg" alt="Handwritten: What are resources in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-diagram.svg" alt="Diagram: What are resources in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-diagram.svg" alt="Diagram: What are resources in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-sticky.svg" alt="Sticky Note: What are resources in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-resources-in-php-sticky.svg" alt="Sticky Note: What are resources in PHP?" width="30%">
 </a>
 
 **Answer:** Resources are a special type holding a reference to an external resource (file handle, database connection, curl handle). They are automatically garbage collected when no longer referenced. PHP 8 deprecated the `is_resource()` emphasis; many resources became objects in modern PHP.
@@ -1657,14 +1657,14 @@ $redis = new Redis();
 
 ### Q58: What are named arguments?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-handwritten.svg" alt="Handwritten: What are named arguments?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-handwritten.svg" alt="Handwritten: What are named arguments?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-diagram.svg" alt="Diagram: What are named arguments?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-diagram.svg" alt="Diagram: What are named arguments?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-sticky.svg" alt="Sticky Note: What are named arguments?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-named-arguments-sticky.svg" alt="Sticky Note: What are named arguments?" width="30%">
 </a>
 
 **Answer:** Named arguments (PHP 8) let you pass arguments by parameter name instead of position. This makes self-documenting calls, skips optional parameters, and doesn't break when parameter order changes.
@@ -1687,14 +1687,14 @@ createUser(
 
 ### Q59: What are attributes and how do you define custom ones?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-handwritten.svg" alt="Handwritten: What are attributes and how do you define custom ones?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-handwritten.svg" alt="Handwritten: What are attributes and how do you define custom ones?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-diagram.svg" alt="Diagram: What are attributes and how do you define custom ones?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-diagram.svg" alt="Diagram: What are attributes and how do you define custom ones?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-sticky.svg" alt="Sticky Note: What are attributes and how do you define custom ones?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-attributes-and-how-do-you-define-custom-ones-sticky.svg" alt="Sticky Note: What are attributes and how do you define custom ones?" width="30%">
 </a>
 
 **Answer:** Attributes (PHP 8) are structured metadata for classes, methods, properties, etc. Built-in: `#[Attribute]`, `#[Route]`, `#[Deprecated]`. Custom attributes are classes with the `#[Attribute]` attribute.
@@ -1727,14 +1727,14 @@ foreach ($attrs as $attr) {
 
 ### Q60: What are readonly properties and classes?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-handwritten.svg" alt="Handwritten: What are readonly properties and classes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-handwritten.svg" alt="Handwritten: What are readonly properties and classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-diagram.svg" alt="Diagram: What are readonly properties and classes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-diagram.svg" alt="Diagram: What are readonly properties and classes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-sticky.svg" alt="Sticky Note: What are readonly properties and classes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-readonly-properties-and-classes-sticky.svg" alt="Sticky Note: What are readonly properties and classes?" width="30%">
 </a>
 
 **Answer:** `readonly` (PHP 8.1 on properties, PHP 8.2 on classes) ensures a property can only be set once. Readonly classes implicitly make all properties readonly. Attempting to modify a readonly property throws an error.
@@ -1764,14 +1764,14 @@ readonly class Config
 
 ### Q61: What are enums in PHP 8.1?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-handwritten.svg" alt="Handwritten: What are enums in PHP 8.1?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-handwritten.svg" alt="Handwritten: What are enums in PHP 8.1?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-diagram.svg" alt="Diagram: What are enums in PHP 8.1?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-diagram.svg" alt="Diagram: What are enums in PHP 8.1?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-sticky.svg" alt="Sticky Note: What are enums in PHP 8.1?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-enums-in-php-8-1-sticky.svg" alt="Sticky Note: What are enums in PHP 8.1?" width="30%">
 </a>
 
 **Answer:** Enums are first-class types with optional backed (string/int) values. They can have methods, implement interfaces, and use traits. Pure enums have no scalar value; backed enums map to a database- or API-friendly value.
@@ -1812,14 +1812,14 @@ $status = OrderStatus::from($row['status']);
 
 ### Q62: What are union and intersection types?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-handwritten.svg" alt="Handwritten: What are union and intersection types?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-handwritten.svg" alt="Handwritten: What are union and intersection types?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-diagram.svg" alt="Diagram: What are union and intersection types?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-diagram.svg" alt="Diagram: What are union and intersection types?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-sticky.svg" alt="Sticky Note: What are union and intersection types?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-union-and-intersection-types-sticky.svg" alt="Sticky Note: What are union and intersection types?" width="30%">
 </a>
 
 **Answer:** Union types (PHP 8.0) accept any of the listed types, separated by `|`. Intersection types (PHP 8.1) accept types satisfying all listed types, separated by `&`. `false` and `null` can be standalone in unions.
@@ -1844,14 +1844,14 @@ function format((Countable&Traversable)|array $data): string { /* ... */ }
 
 ### Q63: How does the `match` expression differ from `switch`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-handwritten.svg" alt="Handwritten: How does the `match` expression differ from `switch`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-handwritten.svg" alt="Handwritten: How does the `match` expression differ from `switch`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-diagram.svg" alt="Diagram: How does the `match` expression differ from `switch`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-diagram.svg" alt="Diagram: How does the `match` expression differ from `switch`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-sticky.svg" alt="Sticky Note: How does the `match` expression differ from `switch`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-match-expression-differ-from-switch-sticky.svg" alt="Sticky Note: How does the `match` expression differ from `switch`?" width="30%">
 </a>
 
 **Answer:** `match` (PHP 8.0) is an expression that returns a value, uses strict comparison (`===`), supports multiple comma-separated arms, throws `UnhandledMatchError` if no arm matches. No fallthrough → it never needs `break`.
@@ -1878,14 +1878,14 @@ switch ($statusCode) {
 
 ### Q64: What is the `nullsafe` operator?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-handwritten.svg" alt="Handwritten: What is the `nullsafe` operator?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-handwritten.svg" alt="Handwritten: What is the `nullsafe` operator?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-diagram.svg" alt="Diagram: What is the `nullsafe` operator?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-diagram.svg" alt="Diagram: What is the `nullsafe` operator?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-sticky.svg" alt="Sticky Note: What is the `nullsafe` operator?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-nullsafe-operator-sticky.svg" alt="Sticky Note: What is the `nullsafe` operator?" width="30%">
 </a>
 
 **Answer:** `?->` (PHP 8.0) short-circuits method/property chains when an intermediate value is null. Instead of nested null checks, the chain stops and returns null at the first null encounter.
@@ -1912,14 +1912,14 @@ $city = $user?->address?->city; // null (short-circuits)
 
 ### Q65: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-handwritten.svg" alt="Handwritten: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-handwritten.svg" alt="Handwritten: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-diagram.svg" alt="Diagram: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-diagram.svg" alt="Diagram: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-sticky.svg" alt="Sticky Note: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-str-contains-str-starts-with-and-str-ends-with-functions-sticky.svg" alt="Sticky Note: What is the `str_contains`, `str_starts_with`, and `str_ends_with` functions?" width="30%">
 </a>
 
 **Answer:** Added in PHP 8.0, these functions provide boolean string checks without needing `strpos` !== false comparisons. They are fast, intuitive, and encode intent directly.
@@ -1937,14 +1937,14 @@ var_dump(strpos($url, 'api') !== false);
 
 ### Q66: How does `mixed` type work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-handwritten.svg" alt="Handwritten: How does `mixed` type work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-handwritten.svg" alt="Handwritten: How does `mixed` type work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-diagram.svg" alt="Diagram: How does `mixed` type work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-diagram.svg" alt="Diagram: How does `mixed` type work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-sticky.svg" alt="Sticky Note: How does `mixed` type work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-mixed-type-work-sticky.svg" alt="Sticky Note: How does `mixed` type work?" width="30%">
 </a>
 
 **Answer:** `mixed` (PHP 8.0) is a pseudo-type meaning the parameter or return can be any type. It's equivalent to `string|int|float|bool|null|array|object|callable|resource`. Use it only when truly anything is acceptable → prefer explicit union types for clarity.
@@ -1963,14 +1963,14 @@ function logValue(mixed $value): void
 
 ### Q67: What are first-class callable syntax and `...$args` improvements?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-handwritten.svg" alt="Handwritten: What are first-class callable syntax and `...$args` improvements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-handwritten.svg" alt="Handwritten: What are first-class callable syntax and `...$args` improvements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-diagram.svg" alt="Diagram: What are first-class callable syntax and `...$args` improvements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-diagram.svg" alt="Diagram: What are first-class callable syntax and `...$args` improvements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-sticky.svg" alt="Sticky Note: What are first-class callable syntax and `...$args` improvements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-first-class-callable-syntax-and-args-improvements-sticky.svg" alt="Sticky Note: What are first-class callable syntax and `...$args` improvements?" width="30%">
 </a>
 
 **Answer:** PHP 8.1 lets you create callables from any function/method using `(...)` syntax. This avoids verbose closures when passing functions.
@@ -1990,14 +1990,14 @@ $upper = array_map(strtoupper(...), ['a', 'b']); // ['A', 'B']
 
 ### Q68: What is `fibers` in PHP 8.1?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-handwritten.svg" alt="Handwritten: What is `fibers` in PHP 8.1?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-handwritten.svg" alt="Handwritten: What is `fibers` in PHP 8.1?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-diagram.svg" alt="Diagram: What is `fibers` in PHP 8.1?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-diagram.svg" alt="Diagram: What is `fibers` in PHP 8.1?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-sticky.svg" alt="Sticky Note: What is `fibers` in PHP 8.1?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-fibers-in-php-8-1-sticky.svg" alt="Sticky Note: What is `fibers` in PHP 8.1?" width="30%">
 </a>
 
 **Answer:** Fibers are interruptible functions for cooperative multitasking → a function can suspend (`Fiber::suspend()`) and the caller can resume it (`$fiber->resume()`). They enable non-blocking code without callbacks or async/await keywords (which PHP does not have). Used internally by Laravel Octane and ReactPHP.
@@ -2016,14 +2016,14 @@ $fiber->resume('hello'); // output: Resumed with: hello
 
 ### Q69: What is the `never` return type?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-handwritten.svg" alt="Handwritten: What is the `never` return type?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-handwritten.svg" alt="Handwritten: What is the `never` return type?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-diagram.svg" alt="Diagram: What is the `never` return type?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-diagram.svg" alt="Diagram: What is the `never` return type?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-sticky.svg" alt="Sticky Note: What is the `never` return type?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-never-return-type-sticky.svg" alt="Sticky Note: What is the `never` return type?" width="30%">
 </a>
 
 **Answer:** `never` (PHP 8.1) indicates a function that never returns → it either throws an exception or calls `exit()`/`die()`. The type checker enforces no return value and no reachable point after the call.
@@ -2045,14 +2045,14 @@ function redirect(string $url): never
 
 ### Q70: What are `array_is_list` and array spread in PHP 8.1/8.2?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-handwritten.svg" alt="Handwritten: What are `array_is_list` and array spread in PHP 8.1/8.2?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-handwritten.svg" alt="Handwritten: What are `array_is_list` and array spread in PHP 8.1/8.2?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-diagram.svg" alt="Diagram: What are `array_is_list` and array spread in PHP 8.1/8.2?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-diagram.svg" alt="Diagram: What are `array_is_list` and array spread in PHP 8.1/8.2?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-sticky.svg" alt="Sticky Note: What are `array_is_list` and array spread in PHP 8.1/8.2?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-array-is-list-and-array-spread-in-php-8-1-8-2-sticky.svg" alt="Sticky Note: What are `array_is_list` and array spread in PHP 8.1/8.2?" width="30%">
 </a>
 
 **Answer:** `array_is_list()` (PHP 8.1) determines if an array has sequential 0-based integer keys. Array spread (`...`) inside arrays (PHP 8.1) unpacks arrays inline, like `array_merge` but in expression context.
@@ -2071,14 +2071,14 @@ $merged = array_merge($base, [4, 5], $more);
 
 ### Q71: What are random extension improvements in PHP 8.2/8.3?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-handwritten.svg" alt="Handwritten: What are random extension improvements in PHP 8.2/8.3?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-handwritten.svg" alt="Handwritten: What are random extension improvements in PHP 8.2/8.3?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-diagram.svg" alt="Diagram: What are random extension improvements in PHP 8.2/8.3?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-diagram.svg" alt="Diagram: What are random extension improvements in PHP 8.2/8.3?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-sticky.svg" alt="Sticky Note: What are random extension improvements in PHP 8.2/8.3?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-random-extension-improvements-in-php-8-2-8-3-sticky.svg" alt="Sticky Note: What are random extension improvements in PHP 8.2/8.3?" width="30%">
 </a>
 
 **Answer:** PHP 8.2 introduced a new random extension with dedicated classes: `\Random\Randomizer` with methods like `getBytesFromString()`, `shuffleArray()`, `pickArrayKeys()`. PHP 8.3 added `Randomizer::getFloat()` and `nextFloat()`.
@@ -2101,14 +2101,14 @@ $keys = $random->pickArrayKeys(['a' => 1, 'b' => 2, 'c' => 3], 2);
 
 ### Q72: What are PHP 8.4 property hooks?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-handwritten.svg" alt="Handwritten: What are PHP 8.4 property hooks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-handwritten.svg" alt="Handwritten: What are PHP 8.4 property hooks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-diagram.svg" alt="Diagram: What are PHP 8.4 property hooks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-diagram.svg" alt="Diagram: What are PHP 8.4 property hooks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-sticky.svg" alt="Sticky Note: What are PHP 8.4 property hooks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-php-8-4-property-hooks-sticky.svg" alt="Sticky Note: What are PHP 8.4 property hooks?" width="30%">
 </a>
 
 **Answer:** Property hooks (PHP 8.4) add `get`/`set` behavior directly on properties, similar to C#. They eliminate boilerplate getter/setter methods while keeping property-access syntax. Still in active RFC discussion → check version availability.
@@ -2134,14 +2134,14 @@ class User
 
 ### Q73: What is Composer and why is it essential for modern PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-handwritten.svg" alt="Handwritten: What is Composer and why is it essential for modern PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-handwritten.svg" alt="Handwritten: What is Composer and why is it essential for modern PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-diagram.svg" alt="Diagram: What is Composer and why is it essential for modern PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-diagram.svg" alt="Diagram: What is Composer and why is it essential for modern PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-sticky.svg" alt="Sticky Note: What is Composer and why is it essential for modern PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-and-why-is-it-essential-for-modern-php-sticky.svg" alt="Sticky Note: What is Composer and why is it essential for modern PHP?" width="30%">
 </a>
 
 **Answer:** Composer is the dependency manager for PHP. It declares libraries your project depends on, resolves versions, and generates an autoloader. It's essential because it standardizes package management, enables the Packagist ecosystem (150k+ packages), and powers PSR-4 autoloading.
@@ -2162,14 +2162,14 @@ composer update
 
 ### Q74: How does PSR-4 autoloading work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-handwritten.svg" alt="Handwritten: How does PSR-4 autoloading work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-handwritten.svg" alt="Handwritten: How does PSR-4 autoloading work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-diagram.svg" alt="Diagram: How does PSR-4 autoloading work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-diagram.svg" alt="Diagram: How does PSR-4 autoloading work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-sticky.svg" alt="Sticky Note: How does PSR-4 autoloading work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-psr-4-autoloading-work-sticky.svg" alt="Sticky Note: How does PSR-4 autoloading work?" width="30%">
 </a>
 
 **Answer:** PSR-4 maps namespace prefixes to directory paths. Composer generates a classmap and autoloader from the `autoload` section of `composer.json`. When PHP encounters `App\Models\User`, the autoloader converts it to `App\Models\User.php` and prepends the mapped directory prefix.
@@ -2195,14 +2195,14 @@ class User {}
 
 ### Q75: What is the difference between `composer install` and `composer update`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-handwritten.svg" alt="Handwritten: What is the difference between `composer install` and `composer update`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-handwritten.svg" alt="Handwritten: What is the difference between `composer install` and `composer update`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-diagram.svg" alt="Diagram: What is the difference between `composer install` and `composer update`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-diagram.svg" alt="Diagram: What is the difference between `composer install` and `composer update`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-sticky.svg" alt="Sticky Note: What is the difference between `composer install` and `composer update`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-composer-install-and-composer-update-sticky.svg" alt="Sticky Note: What is the difference between `composer install` and `composer update`?" width="30%">
 </a>
 
 **Answer:** `composer install` reads `composer.lock` and installs the exact versions recorded there. Use it for deployment → produces identical dependency sets across environments. `composer update` reads `composer.json`, resolves the latest compatible versions, writes them to `composer.lock`, and installs. Use it when adding/changing dependencies.
@@ -2223,14 +2223,14 @@ composer install --no-dev --optimize-autoloader
 
 ### Q76: What sections exist in `composer.json`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-handwritten.svg" alt="Handwritten: What sections exist in `composer.json`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-handwritten.svg" alt="Handwritten: What sections exist in `composer.json`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-diagram.svg" alt="Diagram: What sections exist in `composer.json`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-diagram.svg" alt="Diagram: What sections exist in `composer.json`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-sticky.svg" alt="Sticky Note: What sections exist in `composer.json`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-sections-exist-in-composer-json-sticky.svg" alt="Sticky Note: What sections exist in `composer.json`?" width="30%">
 </a>
 
 **Answer:** Key sections: `require` (runtime deps), `require-dev` (dev-only), `autoload` (PSR-4/PSR-0/classmap/files), `scripts` (lifecycle hooks), `extra` (framework metadata), `config` (platform, preferred-install), `repositories` (custom package sources). Laravel typically adds `extra.laravel.dont-discover` and `extra.laravel.dumps`.
@@ -2265,14 +2265,14 @@ composer install --no-dev --optimize-autoloader
 
 ### Q77: How do you specify PHP version constraints?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-handwritten.svg" alt="Handwritten: How do you specify PHP version constraints?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-handwritten.svg" alt="Handwritten: How do you specify PHP version constraints?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-diagram.svg" alt="Diagram: How do you specify PHP version constraints?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-diagram.svg" alt="Diagram: How do you specify PHP version constraints?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-sticky.svg" alt="Sticky Note: How do you specify PHP version constraints?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-specify-php-version-constraints-sticky.svg" alt="Sticky Note: How do you specify PHP version constraints?" width="30%">
 </a>
 
 **Answer:** Use semantic versioning operators: `^` (compatible with major), `~` (approximately → minor bumps), `>=`, `<=`, `!=`, `*` (any), `||` (OR). `^8.2` means >=8.2.0 and &lt;9.0.0.
@@ -2295,14 +2295,14 @@ composer install --no-dev --optimize-autoloader
 
 ### Q78: What is `composer.lock` and why should you commit it?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-handwritten.svg" alt="Handwritten: What is `composer.lock` and why should you commit it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-handwritten.svg" alt="Handwritten: What is `composer.lock` and why should you commit it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-diagram.svg" alt="Diagram: What is `composer.lock` and why should you commit it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-diagram.svg" alt="Diagram: What is `composer.lock` and why should you commit it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-sticky.svg" alt="Sticky Note: What is `composer.lock` and why should you commit it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-composer-lock-and-why-should-you-commit-it-sticky.svg" alt="Sticky Note: What is `composer.lock` and why should you commit it?" width="30%">
 </a>
 
 **Answer:** `composer.lock` records the exact version of every installed package and its dependencies. Committing it ensures everyone (devs, CI, deployment) gets identical packages. Without it, `composer install` falls back to `composer.json` and may resolve different versions. Always commit `composer.lock` for applications (not libraries).
@@ -2317,14 +2317,14 @@ composer install --no-dev --optimize-autoloader --no-interaction
 
 ### Q79: What is the autoloader optimization for production?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-handwritten.svg" alt="Handwritten: What is the autoloader optimization for production?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-handwritten.svg" alt="Handwritten: What is the autoloader optimization for production?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-diagram.svg" alt="Diagram: What is the autoloader optimization for production?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-diagram.svg" alt="Diagram: What is the autoloader optimization for production?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-sticky.svg" alt="Sticky Note: What is the autoloader optimization for production?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-autoloader-optimization-for-production-sticky.svg" alt="Sticky Note: What is the autoloader optimization for production?" width="30%">
 </a>
 
 **Answer:** `--optimize-autoloader` (or `-o`) converts PSR-4/PSR-0 prefixes into a classmap, producing a single array lookup instead of filesystem checks. `--classmap-authoritative` (or `-a`) skips filesystem checks entirely, assuming the classmap is complete. Use in production for faster autoloading.
@@ -2343,14 +2343,14 @@ composer dump-autoload -o  # same as --optimize
 
 ### Q80: How do Composer scripts work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-handwritten.svg" alt="Handwritten: How do Composer scripts work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-handwritten.svg" alt="Handwritten: How do Composer scripts work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-diagram.svg" alt="Diagram: How do Composer scripts work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-diagram.svg" alt="Diagram: How do Composer scripts work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-sticky.svg" alt="Sticky Note: How do Composer scripts work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-composer-scripts-work-sticky.svg" alt="Sticky Note: How do Composer scripts work?" width="30%">
 </a>
 
 **Answer:** Composer scripts run PHP callables or shell commands at lifecycle events: `pre-install-cmd`, `post-install-cmd`, `pre-update-cmd`, `post-update-cmd`, `pre-autoload-dump`, `post-autoload-dump`, and custom scripts via `composer run-script`.
@@ -2374,14 +2374,14 @@ composer dump-autoload -o  # same as --optimize
 
 ### Q81: What is the difference between `require` and `require-dev`?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-handwritten.svg" alt="Handwritten: What is the difference between `require` and `require-dev`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-handwritten.svg" alt="Handwritten: What is the difference between `require` and `require-dev`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-diagram.svg" alt="Diagram: What is the difference between `require` and `require-dev`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-diagram.svg" alt="Diagram: What is the difference between `require` and `require-dev`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-sticky.svg" alt="Sticky Note: What is the difference between `require` and `require-dev`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-require-and-require-dev-sticky.svg" alt="Sticky Note: What is the difference between `require` and `require-dev`?" width="30%">
 </a>
 
 **Answer:** `require` lists packages needed in production (framework, database driver, logging). `require-dev` lists packages only for development and testing (PHPUnit/Pest, debugbar, ide-helper, PHPStan). Running `composer install --no-dev` in production skips dev dependencies.
@@ -2402,14 +2402,14 @@ composer dump-autoload -o  # same as --optimize
 
 ### Q82: What is a custom repository in Composer?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-handwritten.svg" alt="Handwritten: What is a custom repository in Composer?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-handwritten.svg" alt="Handwritten: What is a custom repository in Composer?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-diagram.svg" alt="Diagram: What is a custom repository in Composer?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-diagram.svg" alt="Diagram: What is a custom repository in Composer?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-sticky.svg" alt="Sticky Note: What is a custom repository in Composer?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-a-custom-repository-in-composer-sticky.svg" alt="Sticky Note: What is a custom repository in Composer?" width="30%">
 </a>
 
 **Answer:** Custom repositories tell Composer where to find packages that aren't on Packagist. Common types: `vcs` (GitHub, GitLab, Bitbucket), `path` (local directory), `composer` (custom Packagist instance), `artifact` (zip archives).
@@ -2438,14 +2438,14 @@ composer dump-autoload -o  # same as --optimize
 
 ### Q83: What is the difference between PSR-0 and PSR-4?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-handwritten.svg" alt="Handwritten: What is the difference between PSR-0 and PSR-4?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-handwritten.svg" alt="Handwritten: What is the difference between PSR-0 and PSR-4?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-diagram.svg" alt="Diagram: What is the difference between PSR-0 and PSR-4?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-diagram.svg" alt="Diagram: What is the difference between PSR-0 and PSR-4?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-sticky.svg" alt="Sticky Note: What is the difference between PSR-0 and PSR-4?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-difference-between-psr-0-and-psr-4-sticky.svg" alt="Sticky Note: What is the difference between PSR-0 and PSR-4?" width="30%">
 </a>
 
 **Answer:** PSR-0 maps namespace to directory using underscores as directory separators (e.g., `Some_Class` → `Some/Class.php`). PSR-4 is simpler → it strips the namespace prefix before mapping to the directory. PSR-4 is the modern standard. PSR-0 is effectively deprecated.
@@ -2465,14 +2465,14 @@ composer dump-autoload -o  # same as --optimize
 
 ### Q84: How do you implement a Singleton in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-handwritten.svg" alt="Handwritten: How do you implement a Singleton in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-handwritten.svg" alt="Handwritten: How do you implement a Singleton in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-diagram.svg" alt="Diagram: How do you implement a Singleton in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-diagram.svg" alt="Diagram: How do you implement a Singleton in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-sticky.svg" alt="Sticky Note: How do you implement a Singleton in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-singleton-in-php-sticky.svg" alt="Sticky Note: How do you implement a Singleton in PHP?" width="30%">
 </a>
 
 **Answer:** The Singleton pattern ensures only one instance exists. It uses a private constructor, a static `getInstance()` method, and prevents cloning/unserialization. Modern PHP often uses the service container instead (bind as singleton), making the raw pattern less common.
@@ -2507,14 +2507,14 @@ $db = DatabaseConnection::getInstance();
 
 ### Q85: How do you implement a Factory pattern in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-handwritten.svg" alt="Handwritten: How do you implement a Factory pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-handwritten.svg" alt="Handwritten: How do you implement a Factory pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-diagram.svg" alt="Diagram: How do you implement a Factory pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-diagram.svg" alt="Diagram: How do you implement a Factory pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-sticky.svg" alt="Sticky Note: How do you implement a Factory pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-a-factory-pattern-in-php-sticky.svg" alt="Sticky Note: How do you implement a Factory pattern in PHP?" width="30%">
 </a>
 
 **Answer:** A Factory centralizes object creation, encapsulating complex instantiation logic. Parameterized factories switch on input to return different concrete implementations.
@@ -2549,14 +2549,14 @@ $sender->send('alice@example.com', 'Welcome!');
 
 ### Q86: How do you implement the Repository pattern?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-handwritten.svg" alt="Handwritten: How do you implement the Repository pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-handwritten.svg" alt="Handwritten: How do you implement the Repository pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-diagram.svg" alt="Diagram: How do you implement the Repository pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-diagram.svg" alt="Diagram: How do you implement the Repository pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-sticky.svg" alt="Sticky Note: How do you implement the Repository pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-repository-pattern-sticky.svg" alt="Sticky Note: How do you implement the Repository pattern?" width="30%">
 </a>
 
 **Answer:** The Repository pattern abstracts data access behind a collection-like interface. Your business logic depends on the interface, not the specific ORM or storage engine. This allows swapping implementations (Eloquent, file-based, external API) without changing callers.
@@ -2600,14 +2600,14 @@ $this->app->bind(UserRepositoryInterface::class, EloquentUserRepository::class);
 
 ### Q87: How do you implement the Strategy pattern?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-handwritten.svg" alt="Handwritten: How do you implement the Strategy pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-handwritten.svg" alt="Handwritten: How do you implement the Strategy pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-diagram.svg" alt="Diagram: How do you implement the Strategy pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-diagram.svg" alt="Diagram: How do you implement the Strategy pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-sticky.svg" alt="Sticky Note: How do you implement the Strategy pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-strategy-pattern-sticky.svg" alt="Sticky Note: How do you implement the Strategy pattern?" width="30%">
 </a>
 
 **Answer:** Strategy defines interchangeable algorithms. Each strategy implements the same interface, and the context selects one at runtime. Common uses: pricing calculations, shipping cost, file export formats.
@@ -2662,14 +2662,14 @@ echo $order->calculateTotal(100); // 80
 
 ### Q88: How do you implement the Observer pattern in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-handwritten.svg" alt="Handwritten: How do you implement the Observer pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-handwritten.svg" alt="Handwritten: How do you implement the Observer pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-diagram.svg" alt="Diagram: How do you implement the Observer pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-diagram.svg" alt="Diagram: How do you implement the Observer pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-sticky.svg" alt="Sticky Note: How do you implement the Observer pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-observer-pattern-in-php-sticky.svg" alt="Sticky Note: How do you implement the Observer pattern in PHP?" width="30%">
 </a>
 
 **Answer:** Observer (or publish-subscribe) lets one object notify multiple dependents of state changes. PHP has built-in `SplSubject` and `SplObserver` interfaces. For decoupled systems, event dispatchers (like Laravel's) are preferred.
@@ -2740,14 +2740,14 @@ $newsletter->publishIssue('PHP 8.4 Released!');
 
 ### Q89: What is the Dependency Injection pattern and how does PHP implement it?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-handwritten.svg" alt="Handwritten: What is the Dependency Injection pattern and how does PHP implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-handwritten.svg" alt="Handwritten: What is the Dependency Injection pattern and how does PHP implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-diagram.svg" alt="Diagram: What is the Dependency Injection pattern and how does PHP implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-diagram.svg" alt="Diagram: What is the Dependency Injection pattern and how does PHP implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-sticky.svg" alt="Sticky Note: What is the Dependency Injection pattern and how does PHP implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dependency-injection-pattern-and-how-does-php-implement-it-sticky.svg" alt="Sticky Note: What is the Dependency Injection pattern and how does PHP implement it?" width="30%">
 </a>
 
 **Answer:** Dependency Injection passes an object's dependencies into it rather than having the object create them. Constructor injection is most common. PHP's reflection-based containers (like Laravel's) auto-resolve type-hinted parameters. Manual DI without a container is straightforward.
@@ -2782,14 +2782,14 @@ $generator = new ReportGenerator($pdo, $formatter, $logger);
 
 ### Q90: What is the Adapter pattern in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-handwritten.svg" alt="Handwritten: What is the Adapter pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-handwritten.svg" alt="Handwritten: What is the Adapter pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-diagram.svg" alt="Diagram: What is the Adapter pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-diagram.svg" alt="Diagram: What is the Adapter pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-sticky.svg" alt="Sticky Note: What is the Adapter pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-adapter-pattern-in-php-sticky.svg" alt="Sticky Note: What is the Adapter pattern in PHP?" width="30%">
 </a>
 
 **Answer:** Adapter converts one interface to another that the client expects. Useful when integrating third-party libraries that don't match your application's interface contracts.
@@ -2832,14 +2832,14 @@ $result = $processor->pay(50.00);
 
 ### Q91: What is the Decorator pattern in PHP?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-handwritten.svg" alt="Handwritten: What is the Decorator pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-handwritten.svg" alt="Handwritten: What is the Decorator pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-diagram.svg" alt="Diagram: What is the Decorator pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-diagram.svg" alt="Diagram: What is the Decorator pattern in PHP?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-sticky.svg" alt="Sticky Note: What is the Decorator pattern in PHP?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-decorator-pattern-in-php-sticky.svg" alt="Sticky Note: What is the Decorator pattern in PHP?" width="30%">
 </a>
 
 **Answer:** Decorator adds behavior to an object dynamically without altering its class. The decorator wraps the original object, implementing the same interface while delegating and extending.
@@ -2897,14 +2897,14 @@ echo $booking->cost();        // 140.0
 
 ### Q92: What is the Chain of Responsibility pattern?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-handwritten.svg" alt="Handwritten: What is the Chain of Responsibility pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-handwritten.svg" alt="Handwritten: What is the Chain of Responsibility pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-diagram.svg" alt="Diagram: What is the Chain of Responsibility pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-diagram.svg" alt="Diagram: What is the Chain of Responsibility pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-sticky.svg" alt="Sticky Note: What is the Chain of Responsibility pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-chain-of-responsibility-pattern-sticky.svg" alt="Sticky Note: What is the Chain of Responsibility pattern?" width="30%">
 </a>
 
 **Answer:** Chain of Responsibility passes a request along a chain of handlers until one handles it. Each handler decides to process or pass to the next. Laravel's middleware pipeline is a classic example.
@@ -2982,14 +2982,14 @@ var_dump($error2); // 'Invalid email format' (stops at second handler)
 
 ### Q93: What is the DTO (Data Transfer Object) pattern?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-handwritten.svg" alt="Handwritten: What is the DTO (Data Transfer Object) pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-handwritten.svg" alt="Handwritten: What is the DTO (Data Transfer Object) pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-diagram.svg" alt="Diagram: What is the DTO (Data Transfer Object) pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-diagram.svg" alt="Diagram: What is the DTO (Data Transfer Object) pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-sticky.svg" alt="Sticky Note: What is the DTO (Data Transfer Object) pattern?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-dto-data-transfer-object-pattern-sticky.svg" alt="Sticky Note: What is the DTO (Data Transfer Object) pattern?" width="30%">
 </a>
 
 **Answer:** A DTO is a simple object that carries data between processes or layers, typically with no business logic. PHP 8's readonly properties and constructor promotion make DTOs concise. They provide type safety and structure compared to plain arrays.
@@ -3036,14 +3036,14 @@ $user = (new UserService())->register($dto);
 
 ### Q94: How does Laravel's service container resolve dependencies?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-handwritten.svg" alt="Handwritten: How does Laravel's service container resolve dependencies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-handwritten.svg" alt="Handwritten: How does Laravel's service container resolve dependencies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-diagram.svg" alt="Diagram: How does Laravel's service container resolve dependencies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-diagram.svg" alt="Diagram: How does Laravel's service container resolve dependencies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-sticky.svg" alt="Sticky Note: How does Laravel's service container resolve dependencies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-service-container-resolve-dependencies-sticky.svg" alt="Sticky Note: How does Laravel's service container resolve dependencies?" width="30%">
 </a>
 
 **Answer:** The container uses PHP's `ReflectionClass` to inspect constructor type-hints. It recursively resolves each dependency, building a tree of objects. Bindings tell the container how to resolve interfaces or configure complex objects. This auto-resolution powers constructor injection throughout Laravel.
@@ -3070,14 +3070,14 @@ $this->app->singleton(LoggerInterface::class, FileLogger::class);
 
 ### Q95: What is dependency injection and how does Laravel implement it?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-handwritten.svg" alt="Handwritten: What is dependency injection and how does Laravel implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-handwritten.svg" alt="Handwritten: What is dependency injection and how does Laravel implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-diagram.svg" alt="Diagram: What is dependency injection and how does Laravel implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-diagram.svg" alt="Diagram: What is dependency injection and how does Laravel implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-sticky.svg" alt="Sticky Note: What is dependency injection and how does Laravel implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-dependency-injection-and-how-does-laravel-implement-it-sticky.svg" alt="Sticky Note: What is dependency injection and how does Laravel implement it?" width="30%">
 </a>
 
 **Answer:** Dependency injection means a class receives its dependencies rather than creating them. Laravel implements this through its auto-resolving container → constructor type-hints are automatically resolved. You can also use `app()->make()`, the `resolve()` helper, or `app()->call()` for method injection.
@@ -3119,14 +3119,14 @@ app()->call([$pipeline, 'process']);
 
 ### Q96: How do Laravel facades work under the hood?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-handwritten.svg" alt="Handwritten: How do Laravel facades work under the hood?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-handwritten.svg" alt="Handwritten: How do Laravel facades work under the hood?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-diagram.svg" alt="Diagram: How do Laravel facades work under the hood?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-diagram.svg" alt="Diagram: How do Laravel facades work under the hood?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-sticky.svg" alt="Sticky Note: How do Laravel facades work under the hood?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-laravel-facades-work-under-the-hood-sticky.svg" alt="Sticky Note: How do Laravel facades work under the hood?" width="30%">
 </a>
 
 **Answer:** Facades provide a static-like interface to classes resolved from the container. Each facade extends `Illuminate\Support\Facades\Facade` and implements `getFacadeAccessor()` to return the container binding key. When you call a static method, the facade resolves the underlying instance from the container and proxies the call.
@@ -3158,14 +3158,14 @@ app('cache')->get('key');
 
 ### Q97: What are contracts in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-handwritten.svg" alt="Handwritten: What are contracts in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-handwritten.svg" alt="Handwritten: What are contracts in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-diagram.svg" alt="Diagram: What are contracts in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-diagram.svg" alt="Diagram: What are contracts in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-sticky.svg" alt="Sticky Note: What are contracts in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-are-contracts-in-laravel-sticky.svg" alt="Sticky Note: What are contracts in Laravel?" width="30%">
 </a>
 
 **Answer:** Contracts are interfaces that define Laravel's core services. Using contracts instead of facades or concrete classes decouples your code from Laravel's implementation. The contract is the interface; the implementation is bound in the container.
@@ -3202,14 +3202,14 @@ $this->app->bind(
 
 ### Q98: What is contextual binding and how does it solve real problems?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-handwritten.svg" alt="Handwritten: What is contextual binding and how does it solve real problems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-handwritten.svg" alt="Handwritten: What is contextual binding and how does it solve real problems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-diagram.svg" alt="Diagram: What is contextual binding and how does it solve real problems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-diagram.svg" alt="Diagram: What is contextual binding and how does it solve real problems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-sticky.svg" alt="Sticky Note: What is contextual binding and how does it solve real problems?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-contextual-binding-and-how-does-it-solve-real-problems-sticky.svg" alt="Sticky Note: What is contextual binding and how does it solve real problems?" width="30%">
 </a>
 
 **Answer:** Contextual binding lets you resolve the same interface differently based on which class requests it. Laravel's container provides `when()` → `needs()` → `give()` for this. Essential when different classes need different implementations or primitive values.
@@ -3243,14 +3243,14 @@ $this->app
 
 ### Q99: How does Laravel's pipeline work and why is it powerful?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-handwritten.svg" alt="Handwritten: How does Laravel's pipeline work and why is it powerful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-handwritten.svg" alt="Handwritten: How does Laravel's pipeline work and why is it powerful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-diagram.svg" alt="Diagram: How does Laravel's pipeline work and why is it powerful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-diagram.svg" alt="Diagram: How does Laravel's pipeline work and why is it powerful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-sticky.svg" alt="Sticky Note: How does Laravel's pipeline work and why is it powerful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-laravel-s-pipeline-work-and-why-is-it-powerful-sticky.svg" alt="Sticky Note: How does Laravel's pipeline work and why is it powerful?" width="30%">
 </a>
 
 **Answer:** The Pipeline pattern sends an object through a series of callable "pipes," each of which can inspect, modify, or short-circuit the object. It's the engine behind middleware and is available to developers via `app(Pipeline::class)`.
@@ -3281,14 +3281,14 @@ $pipeline = app(Pipeline::class)
 
 ### Q100: How does the service provider boot order work?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-handwritten.svg" alt="Handwritten: How does the service provider boot order work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-handwritten.svg" alt="Handwritten: How does the service provider boot order work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-diagram.svg" alt="Diagram: How does the service provider boot order work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-diagram.svg" alt="Diagram: How does the service provider boot order work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-sticky.svg" alt="Sticky Note: How does the service provider boot order work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-the-service-provider-boot-order-work-sticky.svg" alt="Sticky Note: How does the service provider boot order work?" width="30%">
 </a>
 
 **Answer:** Laravel registers all service providers, then boots them. During `register()`, providers only bind services → no usage of other providers' bindings (risky). During `boot()`, all providers are registered, so you can safely use any binding, call `$this->app->make()`, register routes, or register event listeners.
@@ -3326,14 +3326,14 @@ class AppServiceProvider extends ServiceProvider
 
 ### Q101: How does `app()->bind()` vs `app()->singleton()` affect shared state?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-handwritten.svg" alt="Handwritten: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-handwritten.svg" alt="Handwritten: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-diagram.svg" alt="Diagram: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-diagram.svg" alt="Diagram: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-sticky.svg" alt="Sticky Note: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-does-app-bind-vs-app-singleton-affect-shared-state-sticky.svg" alt="Sticky Note: How does `app()->bind()` vs `app()->singleton()` affect shared state?" width="30%">
 </a>
 
 **Answer:** `bind()` resolves a new instance every time → each resolution gets a fresh object. `singleton()` shares one instance across all resolutions within the same request. Use singleton for stateless services (logger, cache manager, payment gateway) where creating multiple instances wastes resources. Use bind for stateful services where each caller needs isolated state.
@@ -3364,14 +3364,14 @@ app()->make(Logger::class)->log('Second');
 
 ### Q102: What is the `defer` property on service providers?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-handwritten.svg" alt="Handwritten: What is the `defer` property on service providers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-handwritten.svg" alt="Handwritten: What is the `defer` property on service providers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-diagram.svg" alt="Diagram: What is the `defer` property on service providers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-diagram.svg" alt="Diagram: What is the `defer` property on service providers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-sticky.svg" alt="Sticky Note: What is the `defer` property on service providers?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/what-is-the-defer-property-on-service-providers-sticky.svg" alt="Sticky Note: What is the `defer` property on service providers?" width="30%">
 </a>
 
 **Answer:** The `$defer` property and `provides()` method let a service provider register lazily → it's only loaded when one of its listed bindings is actually resolved. This improves performance by skipping unnecessary provider bootstrapping.
@@ -3400,14 +3400,14 @@ class AnalyticsServiceProvider extends ServiceProvider implements DeferrableProv
 
 ### Q103: How do you implement the service container pattern without Laravel?
 
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-handwritten.svg" alt="Handwritten: How do you implement the service container pattern without Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-handwritten.svg" alt="Handwritten: How do you implement the service container pattern without Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-diagram.svg" alt="Diagram: How do you implement the service container pattern without Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-diagram.svg" alt="Diagram: How do you implement the service container pattern without Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-sticky.svg" alt="Sticky Note: How do you implement the service container pattern without Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/49-interview-php/how-do-you-implement-the-service-container-pattern-without-laravel-sticky.svg" alt="Sticky Note: How do you implement the service container pattern without Laravel?" width="30%">
 </a>
 
 **Answer:** A simple dependency injection container uses `ReflectionClass` to auto-resolve constructor parameters. This demonstrates the core concept behind Laravel's container in about 50 lines of PHP.

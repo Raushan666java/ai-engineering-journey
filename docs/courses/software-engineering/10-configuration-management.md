@@ -15,14 +15,14 @@
 
 ### What is Software Configuration Management?
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-handwritten.svg" alt="Handwritten: What is Software Configuration Management?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-handwritten.svg" alt="Handwritten: What is Software Configuration Management?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-diagram.svg" alt="Diagram: What is Software Configuration Management?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-diagram.svg" alt="Diagram: What is Software Configuration Management?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-sticky.svg" alt="Sticky Note: What is Software Configuration Management?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/what-is-software-configuration-management-sticky.svg" alt="Sticky Note: What is Software Configuration Management?" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@ graph TD
 
 ### Configuration Items
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-handwritten.svg" alt="Handwritten: Configuration Items" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-handwritten.svg" alt="Handwritten: Configuration Items" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-diagram.svg" alt="Diagram: Configuration Items" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-diagram.svg" alt="Diagram: Configuration Items" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-sticky.svg" alt="Sticky Note: Configuration Items" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-items-sticky.svg" alt="Sticky Note: Configuration Items" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ A **Configuration Item (CI)** is any software artifact that is placed under conf
 
 ### Baselines
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-handwritten.svg" alt="Handwritten: Baselines" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-handwritten.svg" alt="Handwritten: Baselines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-diagram.svg" alt="Diagram: Baselines" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-diagram.svg" alt="Diagram: Baselines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-sticky.svg" alt="Sticky Note: Baselines" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/baselines-sticky.svg" alt="Sticky Note: Baselines" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ graph LR
 
 ### Version Control Strategies
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-handwritten.svg" alt="Handwritten: Version Control Strategies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-handwritten.svg" alt="Handwritten: Version Control Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-diagram.svg" alt="Diagram: Version Control Strategies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-diagram.svg" alt="Diagram: Version Control Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-sticky.svg" alt="Sticky Note: Version Control Strategies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/version-control-strategies-sticky.svg" alt="Sticky Note: Version Control Strategies" width="30%">
 </a>
 
 
@@ -238,14 +238,14 @@ sequenceDiagram
 
 ### Change Control
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-handwritten.svg" alt="Handwritten: Change Control" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-handwritten.svg" alt="Handwritten: Change Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-diagram.svg" alt="Diagram: Change Control" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-diagram.svg" alt="Diagram: Change Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-sticky.svg" alt="Sticky Note: Change Control" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/change-control-sticky.svg" alt="Sticky Note: Change Control" width="30%">
 </a>
 
 
@@ -307,14 +307,14 @@ Submitted → Under Review → Approved / Rejected → Implemented → Verified 
 
 ### Build Management
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-handwritten.svg" alt="Handwritten: Build Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-handwritten.svg" alt="Handwritten: Build Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-diagram.svg" alt="Diagram: Build Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-diagram.svg" alt="Diagram: Build Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-sticky.svg" alt="Sticky Note: Build Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/build-management-sticky.svg" alt="Sticky Note: Build Management" width="30%">
 </a>
 
 
@@ -355,14 +355,14 @@ Example: auth-service-release-1.0-45-a1b2c3d
 
 ### Release Management
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-handwritten.svg" alt="Handwritten: Release Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-handwritten.svg" alt="Handwritten: Release Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-diagram.svg" alt="Diagram: Release Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-diagram.svg" alt="Diagram: Release Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-sticky.svg" alt="Sticky Note: Release Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/release-management-sticky.svg" alt="Sticky Note: Release Management" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ Release management coordinates the deployment of software to production.
 
 ### Status Accounting
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-handwritten.svg" alt="Handwritten: Status Accounting" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-handwritten.svg" alt="Handwritten: Status Accounting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-diagram.svg" alt="Diagram: Status Accounting" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-diagram.svg" alt="Diagram: Status Accounting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-sticky.svg" alt="Sticky Note: Status Accounting" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/status-accounting-sticky.svg" alt="Sticky Note: Status Accounting" width="30%">
 </a>
 
 
@@ -436,14 +436,14 @@ Status accounting tracks the state of all CIs throughout the project lifecycle.
 
 ### Configuration Auditing
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-handwritten.svg" alt="Handwritten: Configuration Auditing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-handwritten.svg" alt="Handwritten: Configuration Auditing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-diagram.svg" alt="Diagram: Configuration Auditing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-diagram.svg" alt="Diagram: Configuration Auditing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-sticky.svg" alt="Sticky Note: Configuration Auditing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/configuration-auditing-sticky.svg" alt="Sticky Note: Configuration Auditing" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ A **configuration audit** verifies that the product matches its documentation an
 
 ### CI/CD Integration for Configuration Management
 
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-handwritten.svg" alt="Handwritten: CI/CD Integration for Configuration Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-handwritten.svg" alt="Handwritten: CI/CD Integration for Configuration Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-diagram.svg" alt="Diagram: CI/CD Integration for Configuration Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-diagram.svg" alt="Diagram: CI/CD Integration for Configuration Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-sticky.svg" alt="Sticky Note: CI/CD Integration for Configuration Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/10-configuration-management/ci-cd-integration-for-configuration-management-sticky.svg" alt="Sticky Note: CI/CD Integration for Configuration Management" width="30%">
 </a>
 
 

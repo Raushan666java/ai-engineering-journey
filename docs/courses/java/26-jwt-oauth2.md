@@ -91,14 +91,14 @@ A JWT is a compact, URL-safe token format for representing claims between two pa
 
 ### JWT Structure
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-handwritten.svg" alt="Handwritten: JWT Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-handwritten.svg" alt="Handwritten: JWT Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-diagram.svg" alt="Diagram: JWT Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-diagram.svg" alt="Diagram: JWT Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-sticky.svg" alt="Sticky Note: JWT Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-structure-sticky.svg" alt="Sticky Note: JWT Structure" width="30%">
 </a>
 
 
@@ -143,14 +143,14 @@ HMACSHA256(
 
 ### JWS vs JWE
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-handwritten.svg" alt="Handwritten: JWS vs JWE" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-handwritten.svg" alt="Handwritten: JWS vs JWE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-diagram.svg" alt="Diagram: JWS vs JWE" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-diagram.svg" alt="Diagram: JWS vs JWE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-sticky.svg" alt="Sticky Note: JWS vs JWE" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jws-vs-jwe-sticky.svg" alt="Sticky Note: JWS vs JWE" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ Most OAuth2 deployments use JWS (signed JWTs). JWE is used when the token payloa
 
 ### Nimbus JOSE + JWT
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-handwritten.svg" alt="Handwritten: Nimbus JOSE + JWT" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-handwritten.svg" alt="Handwritten: Nimbus JOSE + JWT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-diagram.svg" alt="Diagram: Nimbus JOSE + JWT" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-diagram.svg" alt="Diagram: Nimbus JOSE + JWT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-sticky.svg" alt="Sticky Note: Nimbus JOSE + JWT" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/nimbus-jose-jwt-sticky.svg" alt="Sticky Note: Nimbus JOSE + JWT" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ public class NimbusJwtDemo {
 
 ### jjwt Library
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-handwritten.svg" alt="Handwritten: jjwt Library" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-handwritten.svg" alt="Handwritten: jjwt Library" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-diagram.svg" alt="Diagram: jjwt Library" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-diagram.svg" alt="Diagram: jjwt Library" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-sticky.svg" alt="Sticky Note: jjwt Library" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jjwt-library-sticky.svg" alt="Sticky Note: jjwt Library" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ The jjwt library (io.jsonwebtoken) provides a fluent, builder-based API:
 
 ### Token Creation with jjwt
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-handwritten.svg" alt="Handwritten: Token Creation with jjwt" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-handwritten.svg" alt="Handwritten: Token Creation with jjwt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-diagram.svg" alt="Diagram: Token Creation with jjwt" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-diagram.svg" alt="Diagram: Token Creation with jjwt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-sticky.svg" alt="Sticky Note: Token Creation with jjwt" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-creation-with-jjwt-sticky.svg" alt="Sticky Note: Token Creation with jjwt" width="30%">
 </a>
 
 
@@ -367,14 +367,14 @@ public class JjwtTokenCreator {
 
 ### Token Validation with jjwt
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-handwritten.svg" alt="Handwritten: Token Validation with jjwt" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-handwritten.svg" alt="Handwritten: Token Validation with jjwt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-diagram.svg" alt="Diagram: Token Validation with jjwt" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-diagram.svg" alt="Diagram: Token Validation with jjwt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-sticky.svg" alt="Sticky Note: Token Validation with jjwt" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-validation-with-jjwt-sticky.svg" alt="Sticky Note: Token Validation with jjwt" width="30%">
 </a>
 
 
@@ -473,14 +473,14 @@ public record JwtValidationResult(
 
 ### Exception Handling
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-handwritten.svg" alt="Handwritten: Exception Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-handwritten.svg" alt="Handwritten: Exception Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-diagram.svg" alt="Diagram: Exception Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-diagram.svg" alt="Diagram: Exception Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-sticky.svg" alt="Sticky Note: Exception Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/exception-handling-sticky.svg" alt="Sticky Note: Exception Handling" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ The jjwt library throws specific exceptions for different failure modes:
 
 ### Refresh Tokens
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-handwritten.svg" alt="Handwritten: Refresh Tokens" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-handwritten.svg" alt="Handwritten: Refresh Tokens" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-diagram.svg" alt="Diagram: Refresh Tokens" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-diagram.svg" alt="Diagram: Refresh Tokens" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-sticky.svg" alt="Sticky Note: Refresh Tokens" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-tokens-sticky.svg" alt="Sticky Note: Refresh Tokens" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ public class RefreshTokenService {
 
 ### Token Revocation Strategies
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-handwritten.svg" alt="Handwritten: Token Revocation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-handwritten.svg" alt="Handwritten: Token Revocation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-diagram.svg" alt="Diagram: Token Revocation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-diagram.svg" alt="Diagram: Token Revocation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-sticky.svg" alt="Sticky Note: Token Revocation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-revocation-strategies-sticky.svg" alt="Sticky Note: Token Revocation Strategies" width="30%">
 </a>
 
 
@@ -656,14 +656,14 @@ public class TokenBlacklist {
 
 ### Token Service Ã¢â‚¬â€ Complete
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-handwritten.svg" alt="Handwritten: Token Service Ã¢â‚¬â€ Complete" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-handwritten.svg" alt="Handwritten: Token Service Ã¢â‚¬â€ Complete" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-diagram.svg" alt="Diagram: Token Service Ã¢â‚¬â€ Complete" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-diagram.svg" alt="Diagram: Token Service Ã¢â‚¬â€ Complete" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-sticky.svg" alt="Sticky Note: Token Service Ã¢â‚¬â€ Complete" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/token-service-complete-sticky.svg" alt="Sticky Note: Token Service Ã¢â‚¬â€ Complete" width="30%">
 </a>
 
 
@@ -759,14 +759,14 @@ OAuth2 is an authorization framework that enables applications to obtain limited
 
 ### Terminology
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/terminology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/terminology-handwritten.svg" alt="Handwritten: Terminology" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/terminology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/terminology-handwritten.svg" alt="Handwritten: Terminology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/terminology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/terminology-diagram.svg" alt="Diagram: Terminology" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/terminology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/terminology-diagram.svg" alt="Diagram: Terminology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/terminology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/terminology-sticky.svg" alt="Sticky Note: Terminology" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/terminology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/terminology-sticky.svg" alt="Sticky Note: Terminology" width="30%">
 </a>
 
 
@@ -783,14 +783,14 @@ OAuth2 is an authorization framework that enables applications to obtain limited
 
 ### Authorization Code + PKCE
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-handwritten.svg" alt="Handwritten: Authorization Code + PKCE" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-handwritten.svg" alt="Handwritten: Authorization Code + PKCE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-diagram.svg" alt="Diagram: Authorization Code + PKCE" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-diagram.svg" alt="Diagram: Authorization Code + PKCE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-sticky.svg" alt="Sticky Note: Authorization Code + PKCE" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-pkce-sticky.svg" alt="Sticky Note: Authorization Code + PKCE" width="30%">
 </a>
 
 
@@ -925,14 +925,14 @@ public class AuthorizationCodePkceFlow {
 
 ### Client Credentials Flow
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-handwritten.svg" alt="Handwritten: Client Credentials Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-handwritten.svg" alt="Handwritten: Client Credentials Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-diagram.svg" alt="Diagram: Client Credentials Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-diagram.svg" alt="Diagram: Client Credentials Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-sticky.svg" alt="Sticky Note: Client Credentials Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/client-credentials-flow-sticky.svg" alt="Sticky Note: Client Credentials Flow" width="30%">
 </a>
 
 
@@ -1001,14 +1001,14 @@ public class ClientCredentialsFlow {
 
 ### Refresh Token Flow
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-handwritten.svg" alt="Handwritten: Refresh Token Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-handwritten.svg" alt="Handwritten: Refresh Token Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-diagram.svg" alt="Diagram: Refresh Token Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-diagram.svg" alt="Diagram: Refresh Token Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-sticky.svg" alt="Sticky Note: Refresh Token Flow" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/refresh-token-flow-sticky.svg" alt="Sticky Note: Refresh Token Flow" width="30%">
 </a>
 
 
@@ -1063,14 +1063,14 @@ public class RefreshTokenFlow {
 
 ### Resource Owner Password Credentials (Deprecated)
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-handwritten.svg" alt="Handwritten: Resource Owner Password Credentials (Deprecated)" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-handwritten.svg" alt="Handwritten: Resource Owner Password Credentials (Deprecated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-diagram.svg" alt="Diagram: Resource Owner Password Credentials (Deprecated)" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-diagram.svg" alt="Diagram: Resource Owner Password Credentials (Deprecated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-sticky.svg" alt="Sticky Note: Resource Owner Password Credentials (Deprecated)" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/resource-owner-password-credentials-deprecated-sticky.svg" alt="Sticky Note: Resource Owner Password Credentials (Deprecated)" width="30%">
 </a>
 
 
@@ -1129,14 +1129,14 @@ public class RopcFlow {
 
 ### Authorization Code (Server-Side Web Apps)
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-handwritten.svg" alt="Handwritten: Authorization Code (Server-Side Web Apps)" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-handwritten.svg" alt="Handwritten: Authorization Code (Server-Side Web Apps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-diagram.svg" alt="Diagram: Authorization Code (Server-Side Web Apps)" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-diagram.svg" alt="Diagram: Authorization Code (Server-Side Web Apps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-sticky.svg" alt="Sticky Note: Authorization Code (Server-Side Web Apps)" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/authorization-code-server-side-web-apps-sticky.svg" alt="Sticky Note: Authorization Code (Server-Side Web Apps)" width="30%">
 </a>
 
 
@@ -1219,14 +1219,14 @@ Spring Security's OAuth2 client support handles the Authorization Code flow (wit
 
 ### Dependencies
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" alt="Handwritten: Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" alt="Handwritten: Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" alt="Diagram: Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" alt="Diagram: Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" alt="Sticky Note: Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" alt="Sticky Note: Dependencies" width="30%">
 </a>
 
 
@@ -1247,14 +1247,14 @@ Spring Security's OAuth2 client support handles the Authorization Code flow (wit
 
 ### Registration Properties
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-handwritten.svg" alt="Handwritten: Registration Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-handwritten.svg" alt="Handwritten: Registration Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-diagram.svg" alt="Diagram: Registration Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-diagram.svg" alt="Diagram: Registration Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-sticky.svg" alt="Sticky Note: Registration Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/registration-properties-sticky.svg" alt="Sticky Note: Registration Properties" width="30%">
 </a>
 
 
@@ -1305,14 +1305,14 @@ spring:
 
 ### Security Configuration
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-handwritten.svg" alt="Handwritten: Security Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-handwritten.svg" alt="Handwritten: Security Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-diagram.svg" alt="Diagram: Security Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-diagram.svg" alt="Diagram: Security Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-sticky.svg" alt="Sticky Note: Security Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/security-configuration-sticky.svg" alt="Sticky Note: Security Configuration" width="30%">
 </a>
 
 
@@ -1353,14 +1353,14 @@ public class OAuth2ClientConfig {
 
 ### OAuth2AuthorizedClientManager
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-handwritten.svg" alt="Handwritten: OAuth2AuthorizedClientManager" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-handwritten.svg" alt="Handwritten: OAuth2AuthorizedClientManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-diagram.svg" alt="Diagram: OAuth2AuthorizedClientManager" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-diagram.svg" alt="Diagram: OAuth2AuthorizedClientManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-sticky.svg" alt="Sticky Note: OAuth2AuthorizedClientManager" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/oauth2authorizedclientmanager-sticky.svg" alt="Sticky Note: OAuth2AuthorizedClientManager" width="30%">
 </a>
 
 
@@ -1425,14 +1425,14 @@ class UserController {
 
 ### Making API Calls with the Client
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-handwritten.svg" alt="Handwritten: Making API Calls with the Client" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-handwritten.svg" alt="Handwritten: Making API Calls with the Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-diagram.svg" alt="Diagram: Making API Calls with the Client" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-diagram.svg" alt="Diagram: Making API Calls with the Client" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-sticky.svg" alt="Sticky Note: Making API Calls with the Client" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/making-api-calls-with-the-client-sticky.svg" alt="Sticky Note: Making API Calls with the Client" width="30%">
 </a>
 
 
@@ -1492,14 +1492,14 @@ An OAuth2 resource server validates access tokens and extracts user information 
 
 ### Dependencies
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" alt="Handwritten: Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-handwritten.svg" alt="Handwritten: Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" alt="Diagram: Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-diagram.svg" alt="Diagram: Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" alt="Sticky Note: Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/dependencies-sticky.svg" alt="Sticky Note: Dependencies" width="30%">
 </a>
 
 
@@ -1512,14 +1512,14 @@ An OAuth2 resource server validates access tokens and extracts user information 
 
 ### JWT Decoder with JWK Set URI
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-handwritten.svg" alt="Handwritten: JWT Decoder with JWK Set URI" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-handwritten.svg" alt="Handwritten: JWT Decoder with JWK Set URI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-diagram.svg" alt="Diagram: JWT Decoder with JWK Set URI" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-diagram.svg" alt="Diagram: JWT Decoder with JWK Set URI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-sticky.svg" alt="Sticky Note: JWT Decoder with JWK Set URI" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/jwt-decoder-with-jwk-set-uri-sticky.svg" alt="Sticky Note: JWT Decoder with JWK Set URI" width="30%">
 </a>
 
 
@@ -1586,14 +1586,14 @@ public class ResourceServerConfig {
 
 ### Custom JWT Authentication Converter
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-handwritten.svg" alt="Handwritten: Custom JWT Authentication Converter" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-handwritten.svg" alt="Handwritten: Custom JWT Authentication Converter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-diagram.svg" alt="Diagram: Custom JWT Authentication Converter" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-diagram.svg" alt="Diagram: Custom JWT Authentication Converter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-sticky.svg" alt="Sticky Note: Custom JWT Authentication Converter" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-jwt-authentication-converter-sticky.svg" alt="Sticky Note: Custom JWT Authentication Converter" width="30%">
 </a>
 
 
@@ -1686,14 +1686,14 @@ class KeycloakRolesConverter
 
 ### Opaque Token Introspection
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-handwritten.svg" alt="Handwritten: Opaque Token Introspection" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-handwritten.svg" alt="Handwritten: Opaque Token Introspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-diagram.svg" alt="Diagram: Opaque Token Introspection" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-diagram.svg" alt="Diagram: Opaque Token Introspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-sticky.svg" alt="Sticky Note: Opaque Token Introspection" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/opaque-token-introspection-sticky.svg" alt="Sticky Note: Opaque Token Introspection" width="30%">
 </a>
 
 
@@ -1849,14 +1849,14 @@ public class CustomOpaqueTokenIntrospector implements OpaqueTokenIntrospector {
 
 ### Bearer Token Resolver
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-handwritten.svg" alt="Handwritten: Bearer Token Resolver" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-handwritten.svg" alt="Handwritten: Bearer Token Resolver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-diagram.svg" alt="Diagram: Bearer Token Resolver" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-diagram.svg" alt="Diagram: Bearer Token Resolver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-sticky.svg" alt="Sticky Note: Bearer Token Resolver" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/bearer-token-resolver-sticky.svg" alt="Sticky Note: Bearer Token Resolver" width="30%">
 </a>
 
 
@@ -1917,14 +1917,14 @@ OIDC is an identity layer built on top of OAuth2. It adds authentication semanti
 
 ### OpenID Connect Discovery
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-handwritten.svg" alt="Handwritten: OpenID Connect Discovery" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-handwritten.svg" alt="Handwritten: OpenID Connect Discovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-diagram.svg" alt="Diagram: OpenID Connect Discovery" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-diagram.svg" alt="Diagram: OpenID Connect Discovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-sticky.svg" alt="Sticky Note: OpenID Connect Discovery" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/openid-connect-discovery-sticky.svg" alt="Sticky Note: OpenID Connect Discovery" width="30%">
 </a>
 
 
@@ -1988,14 +1988,14 @@ public class OidcDiscovery {
 
 ### ID Token
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/id-token-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/id-token-handwritten.svg" alt="Handwritten: ID Token" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/id-token-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/id-token-handwritten.svg" alt="Handwritten: ID Token" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/id-token-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/id-token-diagram.svg" alt="Diagram: ID Token" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/id-token-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/id-token-diagram.svg" alt="Diagram: ID Token" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/id-token-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/id-token-sticky.svg" alt="Sticky Note: ID Token" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/id-token-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/id-token-sticky.svg" alt="Sticky Note: ID Token" width="30%">
 </a>
 
 
@@ -2062,14 +2062,14 @@ public class IdTokenValidator {
 
 ### UserInfo Endpoint
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-handwritten.svg" alt="Handwritten: UserInfo Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-handwritten.svg" alt="Handwritten: UserInfo Endpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-diagram.svg" alt="Diagram: UserInfo Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-diagram.svg" alt="Diagram: UserInfo Endpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-sticky.svg" alt="Sticky Note: UserInfo Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/userinfo-endpoint-sticky.svg" alt="Sticky Note: UserInfo Endpoint" width="30%">
 </a>
 
 
@@ -2121,14 +2121,14 @@ public class UserInfoClient {
 
 ### Spring Security OIDC Support
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-handwritten.svg" alt="Handwritten: Spring Security OIDC Support" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-handwritten.svg" alt="Handwritten: Spring Security OIDC Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-diagram.svg" alt="Diagram: Spring Security OIDC Support" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-diagram.svg" alt="Diagram: Spring Security OIDC Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-sticky.svg" alt="Sticky Note: Spring Security OIDC Support" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/spring-security-oidc-support-sticky.svg" alt="Sticky Note: Spring Security OIDC Support" width="30%">
 </a>
 
 
@@ -2186,14 +2186,14 @@ public class OidcUserController {
 
 ### Custom OidcUserService
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-handwritten.svg" alt="Handwritten: Custom OidcUserService" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-handwritten.svg" alt="Handwritten: Custom OidcUserService" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-diagram.svg" alt="Diagram: Custom OidcUserService" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-diagram.svg" alt="Diagram: Custom OidcUserService" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-sticky.svg" alt="Sticky Note: Custom OidcUserService" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oidcuserservice-sticky.svg" alt="Sticky Note: Custom OidcUserService" width="30%">
 </a>
 
 
@@ -2258,14 +2258,14 @@ Social login allows users to authenticate with their existing accounts on Google
 
 ### Google Login
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/google-login-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/google-login-handwritten.svg" alt="Handwritten: Google Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/google-login-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/google-login-handwritten.svg" alt="Handwritten: Google Login" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/google-login-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/google-login-diagram.svg" alt="Diagram: Google Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/google-login-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/google-login-diagram.svg" alt="Diagram: Google Login" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/google-login-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/google-login-sticky.svg" alt="Sticky Note: Google Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/google-login-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/google-login-sticky.svg" alt="Sticky Note: Google Login" width="30%">
 </a>
 
 
@@ -2323,14 +2323,14 @@ public class SocialLoginConfig {
 
 ### GitHub Login
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/github-login-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/github-login-handwritten.svg" alt="Handwritten: GitHub Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/github-login-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/github-login-handwritten.svg" alt="Handwritten: GitHub Login" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/github-login-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/github-login-diagram.svg" alt="Diagram: GitHub Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/github-login-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/github-login-diagram.svg" alt="Diagram: GitHub Login" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/github-login-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/github-login-sticky.svg" alt="Sticky Note: GitHub Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/github-login-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/github-login-sticky.svg" alt="Sticky Note: GitHub Login" width="30%">
 </a>
 
 
@@ -2350,14 +2350,14 @@ spring:
 
 ### Facebook Login
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-handwritten.svg" alt="Handwritten: Facebook Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-handwritten.svg" alt="Handwritten: Facebook Login" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-diagram.svg" alt="Diagram: Facebook Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-diagram.svg" alt="Diagram: Facebook Login" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-sticky.svg" alt="Sticky Note: Facebook Login" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/facebook-login-sticky.svg" alt="Sticky Note: Facebook Login" width="30%">
 </a>
 
 
@@ -2377,14 +2377,14 @@ spring:
 
 ### Custom OAuth2UserService
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-handwritten.svg" alt="Handwritten: Custom OAuth2UserService" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-handwritten.svg" alt="Handwritten: Custom OAuth2UserService" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-diagram.svg" alt="Diagram: Custom OAuth2UserService" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-diagram.svg" alt="Diagram: Custom OAuth2UserService" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-sticky.svg" alt="Sticky Note: Custom OAuth2UserService" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-sticky.svg" alt="Sticky Note: Custom OAuth2UserService" width="30%">
 </a>
 
 
@@ -2488,14 +2488,14 @@ public class CustomOAuth2UserService
 
 ### Custom OAuth2UserService Registration
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-handwritten.svg" alt="Handwritten: Custom OAuth2UserService Registration" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-handwritten.svg" alt="Handwritten: Custom OAuth2UserService Registration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-diagram.svg" alt="Diagram: Custom OAuth2UserService Registration" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-diagram.svg" alt="Diagram: Custom OAuth2UserService Registration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-sticky.svg" alt="Sticky Note: Custom OAuth2UserService Registration" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/custom-oauth2userservice-registration-sticky.svg" alt="Sticky Note: Custom OAuth2UserService Registration" width="30%">
 </a>
 
 
@@ -2549,14 +2549,14 @@ public class CustomSocialLoginConfig {
 
 ### Account Linking
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-handwritten.svg" alt="Handwritten: Account Linking" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-handwritten.svg" alt="Handwritten: Account Linking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-diagram.svg" alt="Diagram: Account Linking" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-diagram.svg" alt="Diagram: Account Linking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-sticky.svg" alt="Sticky Note: Account Linking" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/account-linking-sticky.svg" alt="Sticky Note: Account Linking" width="30%">
 </a>
 
 
@@ -2721,14 +2721,14 @@ public class ProviderLink {
 
 ### Login Controller
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-handwritten.svg" alt="Handwritten: Login Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-handwritten.svg" alt="Handwritten: Login Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-diagram.svg" alt="Diagram: Login Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-diagram.svg" alt="Diagram: Login Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-sticky.svg" alt="Sticky Note: Login Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/login-controller-sticky.svg" alt="Sticky Note: Login Controller" width="30%">
 </a>
 
 
@@ -2772,14 +2772,14 @@ public class LoginController {
 
 ### Login Page Template
 
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-handwritten.svg" alt="Handwritten: Login Page Template" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-handwritten.svg" alt="Handwritten: Login Page Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-diagram.svg" alt="Diagram: Login Page Template" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-diagram.svg" alt="Diagram: Login Page Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-sticky.svg" alt="Sticky Note: Login Page Template" width="30%">
+<a href="../../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/26-jwt-oauth2/login-page-template-sticky.svg" alt="Sticky Note: Login Page Template" width="30%">
 </a>
 
 

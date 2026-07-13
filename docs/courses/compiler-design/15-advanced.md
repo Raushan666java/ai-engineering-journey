@@ -52,14 +52,14 @@ flowchart TB
 
 ### Just-In-Time Compilation
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-handwritten.svg" alt="Handwritten: Just-In-Time Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-handwritten.svg" alt="Handwritten: Just-In-Time Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-diagram.svg" alt="Diagram: Just-In-Time Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-diagram.svg" alt="Diagram: Just-In-Time Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-sticky.svg" alt="Sticky Note: Just-In-Time Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-sticky.svg" alt="Sticky Note: Just-In-Time Compilation" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ int result = obj.compute();   // virtual dispatch
 
 ### Oracle HotSpot JVM: A Case Study
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-handwritten.svg" alt="Handwritten: Oracle HotSpot JVM: A Case Study" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-handwritten.svg" alt="Handwritten: Oracle HotSpot JVM: A Case Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-diagram.svg" alt="Diagram: Oracle HotSpot JVM: A Case Study" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-diagram.svg" alt="Diagram: Oracle HotSpot JVM: A Case Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-sticky.svg" alt="Sticky Note: Oracle HotSpot JVM: A Case Study" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-sticky.svg" alt="Sticky Note: Oracle HotSpot JVM: A Case Study" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ HotSpot's C2 compiler is one of the most sophisticated JIT compilers ever built.
 
 ### Google V8 JavaScript Engine: A Case Study
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-handwritten.svg" alt="Handwritten: Google V8 JavaScript Engine: A Case Study" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-handwritten.svg" alt="Handwritten: Google V8 JavaScript Engine: A Case Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-diagram.svg" alt="Diagram: Google V8 JavaScript Engine: A Case Study" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-diagram.svg" alt="Diagram: Google V8 JavaScript Engine: A Case Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-sticky.svg" alt="Sticky Note: Google V8 JavaScript Engine: A Case Study" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-sticky.svg" alt="Sticky Note: Google V8 JavaScript Engine: A Case Study" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ Highly optimized native code (very hot)
 
 ### Interprocedural Analysis and Optimization
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-handwritten.svg" alt="Handwritten: Interprocedural Analysis and Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-handwritten.svg" alt="Handwritten: Interprocedural Analysis and Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-diagram.svg" alt="Diagram: Interprocedural Analysis and Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-diagram.svg" alt="Diagram: Interprocedural Analysis and Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-sticky.svg" alt="Sticky Note: Interprocedural Analysis and Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-sticky.svg" alt="Sticky Note: Interprocedural Analysis and Optimization" width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@ Inlining decisions are based on heuristics:
 
 ### Profile-Guided Optimization
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-handwritten.svg" alt="Handwritten: Profile-Guided Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-handwritten.svg" alt="Handwritten: Profile-Guided Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-diagram.svg" alt="Diagram: Profile-Guided Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-diagram.svg" alt="Diagram: Profile-Guided Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-sticky.svg" alt="Sticky Note: Profile-Guided Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-sticky.svg" alt="Sticky Note: Profile-Guided Optimization" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ PGO typically yields 10?30% performance improvement over static optimization alo
 
 ### Static Single Assignment (SSA) Form
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-handwritten.svg" alt="Handwritten: Static Single Assignment (SSA) Form" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-handwritten.svg" alt="Handwritten: Static Single Assignment (SSA) Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-diagram.svg" alt="Diagram: Static Single Assignment (SSA) Form" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-diagram.svg" alt="Diagram: Static Single Assignment (SSA) Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-sticky.svg" alt="Sticky Note: Static Single Assignment (SSA) Form" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-sticky.svg" alt="Sticky Note: Static Single Assignment (SSA) Form" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ SSA simplifies many optimizations because each variable has a single definition 
 
 ### The Sea-of-Nodes IR
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-handwritten.svg" alt="Handwritten: The Sea-of-Nodes IR" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-handwritten.svg" alt="Handwritten: The Sea-of-Nodes IR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-diagram.svg" alt="Diagram: The Sea-of-Nodes IR" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-diagram.svg" alt="Diagram: The Sea-of-Nodes IR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-sticky.svg" alt="Sticky Note: The Sea-of-Nodes IR" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-sticky.svg" alt="Sticky Note: The Sea-of-Nodes IR" width="30%">
 </a>
 
 
@@ -397,14 +397,14 @@ The sea-of-nodes enables **global code motion**: an operation can be placed at a
 
 ### Auto-Parallelization
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-handwritten.svg" alt="Handwritten: Auto-Parallelization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-handwritten.svg" alt="Handwritten: Auto-Parallelization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-diagram.svg" alt="Diagram: Auto-Parallelization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-diagram.svg" alt="Diagram: Auto-Parallelization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-sticky.svg" alt="Sticky Note: Auto-Parallelization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-sticky.svg" alt="Sticky Note: Auto-Parallelization" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ Modern processors can speculatively execute loop iterations out of order (hardwa
 
 ### Putting It All Together ? TypeScript Implementation
 
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
 
 

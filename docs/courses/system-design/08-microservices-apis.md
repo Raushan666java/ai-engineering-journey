@@ -39,14 +39,14 @@ flowchart LR
 
 ### Monolith vs Microservices
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-handwritten.svg" alt="Handwritten: Monolith vs Microservices" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-handwritten.svg" alt="Handwritten: Monolith vs Microservices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-diagram.svg" alt="Diagram: Monolith vs Microservices" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-diagram.svg" alt="Diagram: Monolith vs Microservices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-sticky.svg" alt="Sticky Note: Monolith vs Microservices" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/monolith-vs-microservices-sticky.svg" alt="Sticky Note: Monolith vs Microservices" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ A **monolith** is a single deployable unit containing all application logic. A *
 
 ### Bounded Contexts (Domain-Driven Design)
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-handwritten.svg" alt="Handwritten: Bounded Contexts (Domain-Driven Design)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-handwritten.svg" alt="Handwritten: Bounded Contexts (Domain-Driven Design)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-diagram.svg" alt="Diagram: Bounded Contexts (Domain-Driven Design)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-diagram.svg" alt="Diagram: Bounded Contexts (Domain-Driven Design)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-sticky.svg" alt="Sticky Note: Bounded Contexts (Domain-Driven Design)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/bounded-contexts-domain-driven-design-sticky.svg" alt="Sticky Note: Bounded Contexts (Domain-Driven Design)" width="30%">
 </a>
 
 
@@ -115,14 +115,14 @@ E-commerce bounded contexts:
 
 ### API Gateway Pattern
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-handwritten.svg" alt="Handwritten: API Gateway Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-handwritten.svg" alt="Handwritten: API Gateway Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-diagram.svg" alt="Diagram: API Gateway Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-diagram.svg" alt="Diagram: API Gateway Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-sticky.svg" alt="Sticky Note: API Gateway Pattern" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/api-gateway-pattern-sticky.svg" alt="Sticky Note: API Gateway Pattern" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ async def get_product_detail(product_id):
 
 ### RESTful API Design
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-handwritten.svg" alt="Handwritten: RESTful API Design" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-handwritten.svg" alt="Handwritten: RESTful API Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-diagram.svg" alt="Diagram: RESTful API Design" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-diagram.svg" alt="Diagram: RESTful API Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-sticky.svg" alt="Sticky Note: RESTful API Design" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/restful-api-design-sticky.svg" alt="Sticky Note: RESTful API Design" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ GET /orders?created_at[gte]=2024-01-01&created_at[lte]=2024-12-31
 
 ### gRPC
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/grpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/grpc-handwritten.svg" alt="Handwritten: gRPC" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/grpc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/grpc-handwritten.svg" alt="Handwritten: gRPC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/grpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/grpc-diagram.svg" alt="Diagram: gRPC" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/grpc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/grpc-diagram.svg" alt="Diagram: gRPC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/grpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/grpc-sticky.svg" alt="Sticky Note: gRPC" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/grpc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/grpc-sticky.svg" alt="Sticky Note: gRPC" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ message User {
 
 ### GraphQL
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/graphql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/graphql-handwritten.svg" alt="Handwritten: GraphQL" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/graphql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/graphql-handwritten.svg" alt="Handwritten: GraphQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/graphql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/graphql-diagram.svg" alt="Diagram: GraphQL" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/graphql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/graphql-diagram.svg" alt="Diagram: GraphQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/graphql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/graphql-sticky.svg" alt="Sticky Note: GraphQL" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/graphql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/graphql-sticky.svg" alt="Sticky Note: GraphQL" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ Now 100 queries become 1 batch query (`WHERE user_id IN (...)`).
 
 ### Service Mesh
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-handwritten.svg" alt="Handwritten: Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-handwritten.svg" alt="Handwritten: Service Mesh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-diagram.svg" alt="Diagram: Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-diagram.svg" alt="Diagram: Service Mesh" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-sticky.svg" alt="Sticky Note: Service Mesh" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/service-mesh-sticky.svg" alt="Sticky Note: Service Mesh" width="30%">
 </a>
 
 
@@ -384,14 +384,14 @@ spec:
 
 ### Distributed Transactions
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-handwritten.svg" alt="Handwritten: Distributed Transactions" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-handwritten.svg" alt="Handwritten: Distributed Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-diagram.svg" alt="Diagram: Distributed Transactions" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-diagram.svg" alt="Diagram: Distributed Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-sticky.svg" alt="Sticky Note: Distributed Transactions" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/distributed-transactions-sticky.svg" alt="Sticky Note: Distributed Transactions" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ class OrderSagaOrchestrator:
 
 ### Idempotency Keys
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-handwritten.svg" alt="Handwritten: Idempotency Keys" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-handwritten.svg" alt="Handwritten: Idempotency Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-diagram.svg" alt="Diagram: Idempotency Keys" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-diagram.svg" alt="Diagram: Idempotency Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-sticky.svg" alt="Sticky Note: Idempotency Keys" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/idempotency-keys-sticky.svg" alt="Sticky Note: Idempotency Keys" width="30%">
 </a>
 
 
@@ -492,14 +492,14 @@ def process_payment(request):
 
 ### Service Versioning
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-handwritten.svg" alt="Handwritten: Service Versioning" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-handwritten.svg" alt="Handwritten: Service Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-diagram.svg" alt="Diagram: Service Versioning" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-diagram.svg" alt="Diagram: Service Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-sticky.svg" alt="Sticky Note: Service Versioning" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/service-versioning-sticky.svg" alt="Sticky Note: Service Versioning" width="30%">
 </a>
 
 
@@ -517,14 +517,14 @@ def process_payment(request):
 
 ### Contract Testing (Pact)
 
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-handwritten.svg" alt="Handwritten: Contract Testing (Pact)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-handwritten.svg" alt="Handwritten: Contract Testing (Pact)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-diagram.svg" alt="Diagram: Contract Testing (Pact)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-diagram.svg" alt="Diagram: Contract Testing (Pact)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-sticky.svg" alt="Sticky Note: Contract Testing (Pact)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/08-microservices-apis/contract-testing-pact-sticky.svg" alt="Sticky Note: Contract Testing (Pact)" width="30%">
 </a>
 
 

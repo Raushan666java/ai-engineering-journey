@@ -19,14 +19,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims
 
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/1-importance-of-syllogism-and-coding-decoding-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Syllogism and Coding-Decoding in IBPS SO IT Officer Prelims" width="30%">
 </a>
 
 
@@ -42,14 +42,14 @@ flowchart LR
 
 ### 2. Syllogism — Systematic Approach
 
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-handwritten.svg" alt="Handwritten: 2. Syllogism — Systematic Approach" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-handwritten.svg" alt="Handwritten: 2. Syllogism — Systematic Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-diagram.svg" alt="Diagram: 2. Syllogism — Systematic Approach" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-diagram.svg" alt="Diagram: 2. Syllogism — Systematic Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-sticky.svg" alt="Sticky Note: 2. Syllogism — Systematic Approach" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/2-syllogism-systematic-approach-sticky.svg" alt="Sticky Note: 2. Syllogism — Systematic Approach" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ From the statements, we cannot determine the relationship between A and C. "Some
 
 ### 3. Coding-Decoding — Systematic Approach
 
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-handwritten.svg" alt="Handwritten: 3. Coding-Decoding — Systematic Approach" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-handwritten.svg" alt="Handwritten: 3. Coding-Decoding — Systematic Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-diagram.svg" alt="Diagram: 3. Coding-Decoding — Systematic Approach" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-diagram.svg" alt="Diagram: 3. Coding-Decoding — Systematic Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-sticky.svg" alt="Sticky Note: 3. Coding-Decoding — Systematic Approach" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/03-syllogism-coding-decoding/3-coding-decoding-systematic-approach-sticky.svg" alt="Sticky Note: 3. Coding-Decoding — Systematic Approach" width="30%">
 </a>
 
 

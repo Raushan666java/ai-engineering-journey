@@ -18,14 +18,14 @@
 
 ### 1. Horizontal Scaling Fundamentals
 
-<a href="../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-handwritten.svg" alt="Handwritten: 1. Horizontal Scaling Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-handwritten.svg" alt="Handwritten: 1. Horizontal Scaling Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-diagram.svg" alt="Diagram: 1. Horizontal Scaling Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-diagram.svg" alt="Diagram: 1. Horizontal Scaling Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-sticky.svg" alt="Sticky Note: 1. Horizontal Scaling Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/20-scaling-laravel/1-horizontal-scaling-fundamentals-sticky.svg" alt="Sticky Note: 1. Horizontal Scaling Fundamentals" width="30%">
 </a>
 
 

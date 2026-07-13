@@ -47,14 +47,14 @@ flowchart LR
 
 ### 1. The Service Layer Pattern
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-handwritten.svg" alt="Handwritten: 1. The Service Layer Pattern" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-handwritten.svg" alt="Handwritten: 1. The Service Layer Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-diagram.svg" alt="Diagram: 1. The Service Layer Pattern" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-diagram.svg" alt="Diagram: 1. The Service Layer Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-sticky.svg" alt="Sticky Note: 1. The Service Layer Pattern" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/1-the-service-layer-pattern-sticky.svg" alt="Sticky Note: 1. The Service Layer Pattern" width="30%">
 </a>
 
 
@@ -214,14 +214,14 @@ public function register(): void
 
 ### 2. The Repository Pattern
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-handwritten.svg" alt="Handwritten: 2. The Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-handwritten.svg" alt="Handwritten: 2. The Repository Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-diagram.svg" alt="Diagram: 2. The Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-diagram.svg" alt="Diagram: 2. The Repository Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-sticky.svg" alt="Sticky Note: 2. The Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/2-the-repository-pattern-sticky.svg" alt="Sticky Note: 2. The Repository Pattern" width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ class SubscriptionServiceTest extends TestCase
 
 ### 3. Action Classes
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-handwritten.svg" alt="Handwritten: 3. Action Classes" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-handwritten.svg" alt="Handwritten: 3. Action Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-diagram.svg" alt="Diagram: 3. Action Classes" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-diagram.svg" alt="Diagram: 3. Action Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-sticky.svg" alt="Sticky Note: 3. Action Classes" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/3-action-classes-sticky.svg" alt="Sticky Note: 3. Action Classes" width="30%">
 </a>
 
 
@@ -667,14 +667,14 @@ app/Actions/
 
 ### 4. Data Transfer Objects (DTOs)
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-handwritten.svg" alt="Handwritten: 4. Data Transfer Objects (DTOs)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-handwritten.svg" alt="Handwritten: 4. Data Transfer Objects (DTOs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-diagram.svg" alt="Diagram: 4. Data Transfer Objects (DTOs)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-diagram.svg" alt="Diagram: 4. Data Transfer Objects (DTOs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-sticky.svg" alt="Sticky Note: 4. Data Transfer Objects (DTOs)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/4-data-transfer-objects-dtos-sticky.svg" alt="Sticky Note: 4. Data Transfer Objects (DTOs)" width="30%">
 </a>
 
 
@@ -804,14 +804,14 @@ public function startTrial(StartTrialRequest $request, StartTrialAction $action)
 
 ### 5. Domain-Driven Design in Laravel
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-handwritten.svg" alt="Handwritten: 5. Domain-Driven Design in Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-handwritten.svg" alt="Handwritten: 5. Domain-Driven Design in Laravel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-diagram.svg" alt="Diagram: 5. Domain-Driven Design in Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-diagram.svg" alt="Diagram: 5. Domain-Driven Design in Laravel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-sticky.svg" alt="Sticky Note: 5. Domain-Driven Design in Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/5-domain-driven-design-in-laravel-sticky.svg" alt="Sticky Note: 5. Domain-Driven Design in Laravel" width="30%">
 </a>
 
 
@@ -1027,14 +1027,14 @@ class Invoice extends Model
 
 ### 6. Hexagonal Architecture (Ports and Adapters)
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-handwritten.svg" alt="Handwritten: 6. Hexagonal Architecture (Ports and Adapters)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-handwritten.svg" alt="Handwritten: 6. Hexagonal Architecture (Ports and Adapters)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-diagram.svg" alt="Diagram: 6. Hexagonal Architecture (Ports and Adapters)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-diagram.svg" alt="Diagram: 6. Hexagonal Architecture (Ports and Adapters)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-sticky.svg" alt="Sticky Note: 6. Hexagonal Architecture (Ports and Adapters)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/6-hexagonal-architecture-ports-and-adapters-sticky.svg" alt="Sticky Note: 6. Hexagonal Architecture (Ports and Adapters)" width="30%">
 </a>
 
 
@@ -1165,14 +1165,14 @@ public function register(): void
 
 ### 7. Event Sourcing & CQRS
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-handwritten.svg" alt="Handwritten: 7. Event Sourcing & CQRS" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-handwritten.svg" alt="Handwritten: 7. Event Sourcing & CQRS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-diagram.svg" alt="Diagram: 7. Event Sourcing & CQRS" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-diagram.svg" alt="Diagram: 7. Event Sourcing & CQRS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-sticky.svg" alt="Sticky Note: 7. Event Sourcing & CQRS" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/7-event-sourcing-cqrs-sticky.svg" alt="Sticky Note: 7. Event Sourcing & CQRS" width="30%">
 </a>
 
 
@@ -1401,14 +1401,14 @@ class SubscriptionReadModel extends Model
 
 ### 8. Multi-Tenancy
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-handwritten.svg" alt="Handwritten: 8. Multi-Tenancy" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-handwritten.svg" alt="Handwritten: 8. Multi-Tenancy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-diagram.svg" alt="Diagram: 8. Multi-Tenancy" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-diagram.svg" alt="Diagram: 8. Multi-Tenancy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-sticky.svg" alt="Sticky Note: 8. Multi-Tenancy" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/8-multi-tenancy-sticky.svg" alt="Sticky Note: 8. Multi-Tenancy" width="30%">
 </a>
 
 
@@ -1543,14 +1543,14 @@ dispatch(new ProcessSubscription($subscription))
 
 ### 9. The Modular Monolith
 
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-handwritten.svg" alt="Handwritten: 9. The Modular Monolith" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-handwritten.svg" alt="Handwritten: 9. The Modular Monolith" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-diagram.svg" alt="Diagram: 9. The Modular Monolith" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-diagram.svg" alt="Diagram: 9. The Modular Monolith" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-sticky.svg" alt="Sticky Note: 9. The Modular Monolith" width="30%">
+<a href="../../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/19-architecture-patterns/9-the-modular-monolith-sticky.svg" alt="Sticky Note: 9. The Modular Monolith" width="30%">
 </a>
 
 

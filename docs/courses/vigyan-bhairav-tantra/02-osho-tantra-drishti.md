@@ -26,14 +26,14 @@
 
 ### तंत्र शब्द का अर्थ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तंत्र शब्द का अर्थ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तंत्र शब्द का अर्थ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तंत्र शब्द का अर्थ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तंत्र शब्द का अर्थ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तंत्र शब्द का अर्थ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तंत्र शब्द का अर्थ" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@
 
 ### ओशो तंत्र को कैसे देखते हैं?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: ओशो तंत्र को कैसे देखते हैं?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: ओशो तंत्र को कैसे देखते हैं?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: ओशो तंत्र को कैसे देखते हैं?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: ओशो तंत्र को कैसे देखते हैं?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: ओशो तंत्र को कैसे देखते हैं?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: ओशो तंत्र को कैसे देखते हैं?" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ flowchart TB
 
 ### योग की मानसिकता — ओशो के शब्दों में
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: योग की मानसिकता — ओशो के शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: योग की मानसिकता — ओशो के शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: योग की मानसिकता — ओशो के शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: योग की मानसिकता — ओशो के शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: योग की मानसिकता — ओशो के शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: योग की मानसिकता — ओशो के शब्दों में" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ flowchart TB
 
 ### तंत्र की मानसिकता — ओशो के शब्दों में
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तंत्र की मानसिकता — ओशो के शब्दों में" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ flowchart TB
 
 ### तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: तुलनात्मक तालिका: योग और तंत्र — ओशो की नज़र से" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ flowchart TB
 
 ### पहला स्तंभ: कोई दमन नहीं (No Repression)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-handwritten.svg" alt="Handwritten: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-handwritten.svg" alt="Handwritten: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-diagram.svg" alt="Diagram: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-diagram.svg" alt="Diagram: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-sticky.svg" alt="Sticky Note: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/no-repression-sticky.svg" alt="Sticky Note: पहला स्तंभ: कोई दमन नहीं (No Repression)" width="30%">
 </a>
 
 
@@ -204,14 +204,14 @@ flowchart TB
 
 ### दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-handwritten.svg" alt="Handwritten: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-handwritten.svg" alt="Handwritten: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-diagram.svg" alt="Diagram: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-diagram.svg" alt="Diagram: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-sticky.svg" alt="Sticky Note: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/total-acceptance-sticky.svg" alt="Sticky Note: दूसरा स्तंभ: सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ flowchart LR
 
 ### तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-handwritten.svg" alt="Handwritten: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-handwritten.svg" alt="Handwritten: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-diagram.svg" alt="Diagram: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-diagram.svg" alt="Diagram: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-sticky.svg" alt="Sticky Note: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/transformation-through-awareness-sticky.svg" alt="Sticky Note: तीसरा स्तंभ: जागरूकता के माध्यम से परिवर्तन (Transformation Through Awareness)" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ flowchart LR
 
 ### आणव उपाय — Osho's Interpretation
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: आणव उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: आणव उपाय — Osho's Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: आणव उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: आणव उपाय — Osho's Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: आणव उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: आणव उपाय — Osho's Interpretation" width="30%">
 </a>
 
 
@@ -295,14 +295,14 @@ flowchart LR
 
 ### शाक्त उपाय — Osho's Interpretation
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: शाक्त उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: शाक्त उपाय — Osho's Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: शाक्त उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: शाक्त उपाय — Osho's Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: शाक्त उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: शाक्त उपाय — Osho's Interpretation" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ flowchart LR
 
 ### शांभव उपाय — Osho's Interpretation
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: शांभव उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-handwritten.svg" alt="Handwritten: शांभव उपाय — Osho's Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: शांभव उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-diagram.svg" alt="Diagram: शांभव उपाय — Osho's Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: शांभव उपाय — Osho's Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/osho-s-interpretation-sticky.svg" alt="Sticky Note: शांभव उपाय — Osho's Interpretation" width="30%">
 </a>
 
 
@@ -375,14 +375,14 @@ flowchart TB
 
 ### 1. तंत्र प्रयोगशाला है, चर्च नहीं
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-handwritten.svg" alt="Handwritten: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-handwritten.svg" alt="Handwritten: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-diagram.svg" alt="Diagram: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-diagram.svg" alt="Diagram: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-sticky.svg" alt="Sticky Note: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/1-sticky.svg" alt="Sticky Note: 1. तंत्र प्रयोगशाला है, चर्च नहीं" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ flowchart TB
 
 ### 2. तंत्र इस जीवन को स्वीकार करता है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-handwritten.svg" alt="Handwritten: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-handwritten.svg" alt="Handwritten: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-diagram.svg" alt="Diagram: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-diagram.svg" alt="Diagram: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-sticky.svg" alt="Sticky Note: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/2-sticky.svg" alt="Sticky Note: 2. तंत्र इस जीवन को स्वीकार करता है" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ flowchart TB
 
 ### 3. तंत्र कोई नैतिकता नहीं सिखाता
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-handwritten.svg" alt="Handwritten: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-handwritten.svg" alt="Handwritten: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-diagram.svg" alt="Diagram: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-diagram.svg" alt="Diagram: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-sticky.svg" alt="Sticky Note: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/3-sticky.svg" alt="Sticky Note: 3. तंत्र कोई नैतिकता नहीं सिखाता" width="30%">
 </a>
 
 
@@ -423,14 +423,14 @@ flowchart TB
 
 ### 4. तंत्र समग्रता सिखाता है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-handwritten.svg" alt="Handwritten: 4. तंत्र समग्रता सिखाता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-handwritten.svg" alt="Handwritten: 4. तंत्र समग्रता सिखाता है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-diagram.svg" alt="Diagram: 4. तंत्र समग्रता सिखाता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-diagram.svg" alt="Diagram: 4. तंत्र समग्रता सिखाता है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-sticky.svg" alt="Sticky Note: 4. तंत्र समग्रता सिखाता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/4-sticky.svg" alt="Sticky Note: 4. तंत्र समग्रता सिखाता है" width="30%">
 </a>
 
 
@@ -812,14 +812,14 @@ runTantraYogaComparison();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 ओशो के अनुसार योग और तंत्र में मुख्य अंतर क्या है?
@@ -836,14 +836,14 @@ b) ओशो कहते हैं — "योग संघर्ष है, �
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 तंत्र शब्द का मूल अर्थ क्या है?
@@ -860,14 +860,14 @@ b) तंत्र का अर्थ है विस्तार करना
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 ओशो के अनुसार तंत्र का पहला स्तंभ क्या है?
@@ -884,14 +884,14 @@ b) कोई दमन नहीं — जो कुछ भी है, उस�
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 पारंपरिक तीन उपायों में सबसे ऊँचा कौन सा है?
@@ -908,14 +908,14 @@ c) शांभव उपाय — जहाँ केवल चैतन्य
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 ओशो शरीर को क्या मानते हैं?
@@ -932,14 +932,14 @@ b) एक मंदिर — तंत्र शरीर को परमा�
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 ओशो के अनुसार काम-वासना को कैसे देखना चाहिए?
@@ -956,14 +956,14 @@ c) प्राकृतिक ऊर्जा — उसे समझो और
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 तंत्र के अनुसार जागरूकता क्या करती है?
@@ -980,14 +980,14 @@ c) ऊर्जा को रूपांतरित करती है — �
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 "योग चढ़ाई है — तंत्र उतराई है" — यह किसका कथन है?
@@ -1008,14 +1008,14 @@ c) ओशो — वे योग को चढ़ाई और तंत्र 
 
 ### अभ्यास १: तुलनात्मक विश्लेषण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास १: तुलनात्मक विश्लेषण" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ highPolarity.forEach(d => {
 
 ### अभ्यास २: मार्ग सुझाव
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास २: मार्ग सुझाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास २: मार्ग सुझाव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास २: मार्ग सुझाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास २: मार्ग सुझाव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास २: मार्ग सुझाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास २: मार्ग सुझाव" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ console.log(`कारण: ${mySuggestion.reason}`);
 
 ### अभ्यास ३: तीन उपाय — अपनी यात्रा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास ३: तीन उपाय — अपनी यात्रा" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ reflectOnUpayas('आणव');
 
 ### अभ्यास ४: अपनी तंत्र डायरी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-handwritten.svg" alt="Handwritten: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-diagram.svg" alt="Diagram: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/02-osho-tantra-drishti/-sticky.svg" alt="Sticky Note: अभ्यास ४: अपनी तंत्र डायरी" width="30%">
 </a>
 
 

@@ -52,14 +52,14 @@ flowchart LR
 
 ### 8.1.1 The Old Way
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-handwritten.svg" alt="Handwritten: 8.1.1 The Old Way" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-handwritten.svg" alt="Handwritten: 8.1.1 The Old Way" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-diagram.svg" alt="Diagram: 8.1.1 The Old Way" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-diagram.svg" alt="Diagram: 8.1.1 The Old Way" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-sticky.svg" alt="Sticky Note: 8.1.1 The Old Way" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-1-the-old-way-sticky.svg" alt="Sticky Note: 8.1.1 The Old Way" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ int find_in_array(const int* arr, size_t size, int value) {
 
 ### 8.1.2 Problems with Traditional Approaches
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-handwritten.svg" alt="Handwritten: 8.1.2 Problems with Traditional Approaches" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-handwritten.svg" alt="Handwritten: 8.1.2 Problems with Traditional Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-diagram.svg" alt="Diagram: 8.1.2 Problems with Traditional Approaches" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-diagram.svg" alt="Diagram: 8.1.2 Problems with Traditional Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-sticky.svg" alt="Sticky Note: 8.1.2 Problems with Traditional Approaches" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-2-problems-with-traditional-approaches-sticky.svg" alt="Sticky Note: 8.1.2 Problems with Traditional Approaches" width="30%">
 </a>
 
 
@@ -141,14 +141,14 @@ int find_in_array(const int* arr, size_t size, int value) {
 
 ### 8.1.3 Analogy: Safety Net vs. Hand Signals
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-handwritten.svg" alt="Handwritten: 8.1.3 Analogy: Safety Net vs. Hand Signals" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-handwritten.svg" alt="Handwritten: 8.1.3 Analogy: Safety Net vs. Hand Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-diagram.svg" alt="Diagram: 8.1.3 Analogy: Safety Net vs. Hand Signals" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-diagram.svg" alt="Diagram: 8.1.3 Analogy: Safety Net vs. Hand Signals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-sticky.svg" alt="Sticky Note: 8.1.3 Analogy: Safety Net vs. Hand Signals" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-1-3-analogy-safety-net-vs-hand-signals-sticky.svg" alt="Sticky Note: 8.1.3 Analogy: Safety Net vs. Hand Signals" width="30%">
 </a>
 
 
@@ -169,14 +169,14 @@ Step 4: check return   Step 4: just climb
 
 ### 8.2.1 The Three Keywords
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-handwritten.svg" alt="Handwritten: 8.2.1 The Three Keywords" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-handwritten.svg" alt="Handwritten: 8.2.1 The Three Keywords" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-diagram.svg" alt="Diagram: 8.2.1 The Three Keywords" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-diagram.svg" alt="Diagram: 8.2.1 The Three Keywords" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-sticky.svg" alt="Sticky Note: 8.2.1 The Three Keywords" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-1-the-three-keywords-sticky.svg" alt="Sticky Note: 8.2.1 The Three Keywords" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ The C++ exception mechanism consists of three keywords:
 
 ### 8.2.2 How `throw` Works
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-handwritten.svg" alt="Handwritten: 8.2.2 How `throw` Works" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-handwritten.svg" alt="Handwritten: 8.2.2 How `throw` Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-diagram.svg" alt="Diagram: 8.2.2 How `throw` Works" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-diagram.svg" alt="Diagram: 8.2.2 How `throw` Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-sticky.svg" alt="Sticky Note: 8.2.2 How `throw` Works" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-2-how-throw-works-sticky.svg" alt="Sticky Note: 8.2.2 How `throw` Works" width="30%">
 </a>
 
 
@@ -259,14 +259,14 @@ Error caught: Division by zero: denominator is 0
 
 ### 8.2.3 The `try` Block
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-handwritten.svg" alt="Handwritten: 8.2.3 The `try` Block" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-handwritten.svg" alt="Handwritten: 8.2.3 The `try` Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-diagram.svg" alt="Diagram: 8.2.3 The `try` Block" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-diagram.svg" alt="Diagram: 8.2.3 The `try` Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-sticky.svg" alt="Sticky Note: 8.2.3 The `try` Block" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-3-the-try-block-sticky.svg" alt="Sticky Note: 8.2.3 The `try` Block" width="30%">
 </a>
 
 
@@ -282,14 +282,14 @@ try {
 
 ### 8.2.4 The `catch` Clause
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-handwritten.svg" alt="Handwritten: 8.2.4 The `catch` Clause" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-handwritten.svg" alt="Handwritten: 8.2.4 The `catch` Clause" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-diagram.svg" alt="Diagram: 8.2.4 The `catch` Clause" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-diagram.svg" alt="Diagram: 8.2.4 The `catch` Clause" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-sticky.svg" alt="Sticky Note: 8.2.4 The `catch` Clause" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-4-the-catch-clause-sticky.svg" alt="Sticky Note: 8.2.4 The `catch` Clause" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ catch (const Type& parameter) {
 
 ### 8.2.5 Multiple Catch Blocks
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-handwritten.svg" alt="Handwritten: 8.2.5 Multiple Catch Blocks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-handwritten.svg" alt="Handwritten: 8.2.5 Multiple Catch Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-diagram.svg" alt="Diagram: 8.2.5 Multiple Catch Blocks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-diagram.svg" alt="Diagram: 8.2.5 Multiple Catch Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-sticky.svg" alt="Sticky Note: 8.2.5 Multiple Catch Blocks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-5-multiple-catch-blocks-sticky.svg" alt="Sticky Note: 8.2.5 Multiple Catch Blocks" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ try {
 
 ### 8.2.6 Catch-All Handler
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-handwritten.svg" alt="Handwritten: 8.2.6 Catch-All Handler" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-handwritten.svg" alt="Handwritten: 8.2.6 Catch-All Handler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-diagram.svg" alt="Diagram: 8.2.6 Catch-All Handler" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-diagram.svg" alt="Diagram: 8.2.6 Catch-All Handler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-sticky.svg" alt="Sticky Note: 8.2.6 Catch-All Handler" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-6-catch-all-handler-sticky.svg" alt="Sticky Note: 8.2.6 Catch-All Handler" width="30%">
 </a>
 
 
@@ -433,14 +433,14 @@ try {
 
 ### 8.2.7 Rethrowing
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-handwritten.svg" alt="Handwritten: 8.2.7 Rethrowing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-handwritten.svg" alt="Handwritten: 8.2.7 Rethrowing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-diagram.svg" alt="Diagram: 8.2.7 Rethrowing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-diagram.svg" alt="Diagram: 8.2.7 Rethrowing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-sticky.svg" alt="Sticky Note: 8.2.7 Rethrowing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-7-rethrowing-sticky.svg" alt="Sticky Note: 8.2.7 Rethrowing" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ level1 caught: Error in level 3
 
 ### 8.2.8 Function Try Blocks
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-handwritten.svg" alt="Handwritten: 8.2.8 Function Try Blocks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-handwritten.svg" alt="Handwritten: 8.2.8 Function Try Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-diagram.svg" alt="Diagram: 8.2.8 Function Try Blocks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-diagram.svg" alt="Diagram: 8.2.8 Function Try Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-sticky.svg" alt="Sticky Note: 8.2.8 Function Try Blocks" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-2-8-function-try-blocks-sticky.svg" alt="Sticky Note: 8.2.8 Function Try Blocks" width="30%">
 </a>
 
 
@@ -572,14 +572,14 @@ Container destroyed
 
 ### 8.3.1 The Slicing Problem
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-handwritten.svg" alt="Handwritten: 8.3.1 The Slicing Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-handwritten.svg" alt="Handwritten: 8.3.1 The Slicing Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-diagram.svg" alt="Diagram: 8.3.1 The Slicing Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-diagram.svg" alt="Diagram: 8.3.1 The Slicing Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-sticky.svg" alt="Sticky Note: 8.3.1 The Slicing Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-1-the-slicing-problem-sticky.svg" alt="Sticky Note: 8.3.1 The Slicing Problem" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ int main() {
 
 ### 8.3.2 Why Slicing Happens
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-handwritten.svg" alt="Handwritten: 8.3.2 Why Slicing Happens" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-handwritten.svg" alt="Handwritten: 8.3.2 Why Slicing Happens" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-diagram.svg" alt="Diagram: 8.3.2 Why Slicing Happens" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-diagram.svg" alt="Diagram: 8.3.2 Why Slicing Happens" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-sticky.svg" alt="Sticky Note: 8.3.2 Why Slicing Happens" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-2-why-slicing-happens-sticky.svg" alt="Sticky Note: 8.3.2 Why Slicing Happens" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ When catching by value, the catch parameter is **copy-constructed** from the exc
 
 ### 8.3.3 The Fix: Catch by const Reference
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-handwritten.svg" alt="Handwritten: 8.3.3 The Fix: Catch by const Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-handwritten.svg" alt="Handwritten: 8.3.3 The Fix: Catch by const Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-diagram.svg" alt="Diagram: 8.3.3 The Fix: Catch by const Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-diagram.svg" alt="Diagram: 8.3.3 The Fix: Catch by const Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-sticky.svg" alt="Sticky Note: 8.3.3 The Fix: Catch by const Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-3-the-fix-catch-by-const-reference-sticky.svg" alt="Sticky Note: 8.3.3 The Fix: Catch by const Reference" width="30%">
 </a>
 
 
@@ -652,14 +652,14 @@ try {
 
 ### 8.3.4 Comparison Table: Catch by Value vs Reference
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-handwritten.svg" alt="Handwritten: 8.3.4 Comparison Table: Catch by Value vs Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-handwritten.svg" alt="Handwritten: 8.3.4 Comparison Table: Catch by Value vs Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-diagram.svg" alt="Diagram: 8.3.4 Comparison Table: Catch by Value vs Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-diagram.svg" alt="Diagram: 8.3.4 Comparison Table: Catch by Value vs Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-sticky.svg" alt="Sticky Note: 8.3.4 Comparison Table: Catch by Value vs Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-4-comparison-table-catch-by-value-vs-reference-sticky.svg" alt="Sticky Note: 8.3.4 Comparison Table: Catch by Value vs Reference" width="30%">
 </a>
 
 
@@ -675,14 +675,14 @@ try {
 
 ### 8.3.5 Catch by Pointer -- Why Not?
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-handwritten.svg" alt="Handwritten: 8.3.5 Catch by Pointer -- Why Not?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-handwritten.svg" alt="Handwritten: 8.3.5 Catch by Pointer -- Why Not?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-diagram.svg" alt="Diagram: 8.3.5 Catch by Pointer -- Why Not?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-diagram.svg" alt="Diagram: 8.3.5 Catch by Pointer -- Why Not?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-sticky.svg" alt="Sticky Note: 8.3.5 Catch by Pointer -- Why Not?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-5-catch-by-pointer-why-not-sticky.svg" alt="Sticky Note: 8.3.5 Catch by Pointer -- Why Not?" width="30%">
 </a>
 
 
@@ -705,14 +705,14 @@ try {
 
 ### 8.3.6 Rule of Thumb
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-handwritten.svg" alt="Handwritten: 8.3.6 Rule of Thumb" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-handwritten.svg" alt="Handwritten: 8.3.6 Rule of Thumb" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-diagram.svg" alt="Diagram: 8.3.6 Rule of Thumb" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-diagram.svg" alt="Diagram: 8.3.6 Rule of Thumb" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-sticky.svg" alt="Sticky Note: 8.3.6 Rule of Thumb" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-3-6-rule-of-thumb-sticky.svg" alt="Sticky Note: 8.3.6 Rule of Thumb" width="30%">
 </a>
 
 
@@ -737,14 +737,14 @@ catch (...) { ... }
 
 ### 8.4.1 What Is Stack Unwinding?
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-handwritten.svg" alt="Handwritten: 8.4.1 What Is Stack Unwinding?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-handwritten.svg" alt="Handwritten: 8.4.1 What Is Stack Unwinding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-diagram.svg" alt="Diagram: 8.4.1 What Is Stack Unwinding?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-diagram.svg" alt="Diagram: 8.4.1 What Is Stack Unwinding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-sticky.svg" alt="Sticky Note: 8.4.1 What Is Stack Unwinding?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-1-what-is-stack-unwinding-sticky.svg" alt="Sticky Note: 8.4.1 What Is Stack Unwinding?" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@ When an exception is thrown, the runtime system **unwinds** the call stack:
 
 ### 8.4.2 Detailed Trace Example
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-handwritten.svg" alt="Handwritten: 8.4.2 Detailed Trace Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-handwritten.svg" alt="Handwritten: 8.4.2 Detailed Trace Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-diagram.svg" alt="Diagram: 8.4.2 Detailed Trace Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-diagram.svg" alt="Diagram: 8.4.2 Detailed Trace Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-sticky.svg" alt="Sticky Note: 8.4.2 Detailed Trace Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-2-detailed-trace-example-sticky.svg" alt="Sticky Note: 8.4.2 Detailed Trace Example" width="30%">
 </a>
 
 
@@ -834,14 +834,14 @@ int main() {
 
 ### 8.4.3 Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-handwritten.svg" alt="Handwritten: 8.4.3 Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-handwritten.svg" alt="Handwritten: 8.4.3 Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-diagram.svg" alt="Diagram: 8.4.3 Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-diagram.svg" alt="Diagram: 8.4.3 Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-sticky.svg" alt="Sticky Note: 8.4.3 Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-3-dry-run-trace-table-sticky.svg" alt="Sticky Note: 8.4.3 Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -865,14 +865,14 @@ int main() {
 
 ### 8.4.4 What Happens During Unwinding
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-handwritten.svg" alt="Handwritten: 8.4.4 What Happens During Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-handwritten.svg" alt="Handwritten: 8.4.4 What Happens During Unwinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-diagram.svg" alt="Diagram: 8.4.4 What Happens During Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-diagram.svg" alt="Diagram: 8.4.4 What Happens During Unwinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-sticky.svg" alt="Sticky Note: 8.4.4 What Happens During Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-4-what-happens-during-unwinding-sticky.svg" alt="Sticky Note: 8.4.4 What Happens During Unwinding" width="30%">
 </a>
 
 
@@ -887,14 +887,14 @@ During stack unwinding, the runtime performs these steps for each stack frame:
 
 ### 8.4.5 Objects Not Destroyed During Unwinding
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-handwritten.svg" alt="Handwritten: 8.4.5 Objects Not Destroyed During Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-handwritten.svg" alt="Handwritten: 8.4.5 Objects Not Destroyed During Unwinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-diagram.svg" alt="Diagram: 8.4.5 Objects Not Destroyed During Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-diagram.svg" alt="Diagram: 8.4.5 Objects Not Destroyed During Unwinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-sticky.svg" alt="Sticky Note: 8.4.5 Objects Not Destroyed During Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-5-objects-not-destroyed-during-unwinding-sticky.svg" alt="Sticky Note: 8.4.5 Objects Not Destroyed During Unwinding" width="30%">
 </a>
 
 
@@ -946,14 +946,14 @@ Caught -- heap_resource was leaked!
 
 ### 8.4.6 Complexity Analysis of Stack Unwinding
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-handwritten.svg" alt="Handwritten: 8.4.6 Complexity Analysis of Stack Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-handwritten.svg" alt="Handwritten: 8.4.6 Complexity Analysis of Stack Unwinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-diagram.svg" alt="Diagram: 8.4.6 Complexity Analysis of Stack Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-diagram.svg" alt="Diagram: 8.4.6 Complexity Analysis of Stack Unwinding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-sticky.svg" alt="Sticky Note: 8.4.6 Complexity Analysis of Stack Unwinding" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-4-6-complexity-analysis-of-stack-unwinding-sticky.svg" alt="Sticky Note: 8.4.6 Complexity Analysis of Stack Unwinding" width="30%">
 </a>
 
 
@@ -977,14 +977,14 @@ Modern compilers use **table-based exception handling** (Itanium C++ ABI / SEH o
 
 ### 8.5.1 What RAII Provides
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-handwritten.svg" alt="Handwritten: 8.5.1 What RAII Provides" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-handwritten.svg" alt="Handwritten: 8.5.1 What RAII Provides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-diagram.svg" alt="Diagram: 8.5.1 What RAII Provides" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-diagram.svg" alt="Diagram: 8.5.1 What RAII Provides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-sticky.svg" alt="Sticky Note: 8.5.1 What RAII Provides" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-1-what-raii-provides-sticky.svg" alt="Sticky Note: 8.5.1 What RAII Provides" width="30%">
 </a>
 
 
@@ -998,14 +998,14 @@ RAII (Resource Acquisition Is Initialization) is the single most important techn
 
 ### 8.5.2 RAII Wrapper Examples
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-handwritten.svg" alt="Handwritten: 8.5.2 RAII Wrapper Examples" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-handwritten.svg" alt="Handwritten: 8.5.2 RAII Wrapper Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-diagram.svg" alt="Diagram: 8.5.2 RAII Wrapper Examples" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-diagram.svg" alt="Diagram: 8.5.2 RAII Wrapper Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-sticky.svg" alt="Sticky Note: 8.5.2 RAII Wrapper Examples" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-2-raii-wrapper-examples-sticky.svg" alt="Sticky Note: 8.5.2 RAII Wrapper Examples" width="30%">
 </a>
 
 
@@ -1105,14 +1105,14 @@ void update_shared() {
 
 ### 8.5.3 Smart Pointers as RAII
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-handwritten.svg" alt="Handwritten: 8.5.3 Smart Pointers as RAII" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-handwritten.svg" alt="Handwritten: 8.5.3 Smart Pointers as RAII" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-diagram.svg" alt="Diagram: 8.5.3 Smart Pointers as RAII" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-diagram.svg" alt="Diagram: 8.5.3 Smart Pointers as RAII" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-sticky.svg" alt="Sticky Note: 8.5.3 Smart Pointers as RAII" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-3-smart-pointers-as-raii-sticky.svg" alt="Sticky Note: 8.5.3 Smart Pointers as RAII" width="30%">
 </a>
 
 
@@ -1162,14 +1162,14 @@ int main() {
 
 ### 8.5.4 RAII Guideline
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-handwritten.svg" alt="Handwritten: 8.5.4 RAII Guideline" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-handwritten.svg" alt="Handwritten: 8.5.4 RAII Guideline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-diagram.svg" alt="Diagram: 8.5.4 RAII Guideline" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-diagram.svg" alt="Diagram: 8.5.4 RAII Guideline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-sticky.svg" alt="Sticky Note: 8.5.4 RAII Guideline" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-4-raii-guideline-sticky.svg" alt="Sticky Note: 8.5.4 RAII Guideline" width="30%">
 </a>
 
 
@@ -1177,14 +1177,14 @@ int main() {
 
 ### 8.5.5 Transaction Safety with RAII
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-handwritten.svg" alt="Handwritten: 8.5.5 Transaction Safety with RAII" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-handwritten.svg" alt="Handwritten: 8.5.5 Transaction Safety with RAII" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-diagram.svg" alt="Diagram: 8.5.5 Transaction Safety with RAII" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-diagram.svg" alt="Diagram: 8.5.5 Transaction Safety with RAII" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-sticky.svg" alt="Sticky Note: 8.5.5 Transaction Safety with RAII" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-5-5-transaction-safety-with-raii-sticky.svg" alt="Sticky Note: 8.5.5 Transaction Safety with RAII" width="30%">
 </a>
 
 
@@ -1258,14 +1258,14 @@ Transfer failed: Requires manager approval
 
 ### 8.6.1 The Constructor Exception Problem
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-handwritten.svg" alt="Handwritten: 8.6.1 The Constructor Exception Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-handwritten.svg" alt="Handwritten: 8.6.1 The Constructor Exception Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-diagram.svg" alt="Diagram: 8.6.1 The Constructor Exception Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-diagram.svg" alt="Diagram: 8.6.1 The Constructor Exception Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-sticky.svg" alt="Sticky Note: 8.6.1 The Constructor Exception Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-1-the-constructor-exception-problem-sticky.svg" alt="Sticky Note: 8.6.1 The Constructor Exception Problem" width="30%">
 </a>
 
 
@@ -1313,14 +1313,14 @@ int main() {
 
 ### 8.6.2 The Fix: Use RAII Members
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-handwritten.svg" alt="Handwritten: 8.6.2 The Fix: Use RAII Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-handwritten.svg" alt="Handwritten: 8.6.2 The Fix: Use RAII Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-diagram.svg" alt="Diagram: 8.6.2 The Fix: Use RAII Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-diagram.svg" alt="Diagram: 8.6.2 The Fix: Use RAII Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-sticky.svg" alt="Sticky Note: 8.6.2 The Fix: Use RAII Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-2-the-fix-use-raii-members-sticky.svg" alt="Sticky Note: 8.6.2 The Fix: Use RAII Members" width="30%">
 </a>
 
 
@@ -1374,14 +1374,14 @@ No leak -- unique_ptr handled cleanup
 
 ### 8.6.3 Two-Phase Construction
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-handwritten.svg" alt="Handwritten: 8.6.3 Two-Phase Construction" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-handwritten.svg" alt="Handwritten: 8.6.3 Two-Phase Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-diagram.svg" alt="Diagram: 8.6.3 Two-Phase Construction" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-diagram.svg" alt="Diagram: 8.6.3 Two-Phase Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-sticky.svg" alt="Sticky Note: 8.6.3 Two-Phase Construction" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-3-two-phase-construction-sticky.svg" alt="Sticky Note: 8.6.3 Two-Phase Construction" width="30%">
 </a>
 
 
@@ -1417,14 +1417,14 @@ private:
 
 ### 8.6.4 The Destructor Exception Problem
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-handwritten.svg" alt="Handwritten: 8.6.4 The Destructor Exception Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-handwritten.svg" alt="Handwritten: 8.6.4 The Destructor Exception Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-diagram.svg" alt="Diagram: 8.6.4 The Destructor Exception Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-diagram.svg" alt="Diagram: 8.6.4 The Destructor Exception Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-sticky.svg" alt="Sticky Note: 8.6.4 The Destructor Exception Problem" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-4-the-destructor-exception-problem-sticky.svg" alt="Sticky Note: 8.6.4 The Destructor Exception Problem" width="30%">
 </a>
 
 
@@ -1464,14 +1464,14 @@ terminate called after throwing an instance of std::runtime_error
 
 ### 8.6.5 Destructor Exception Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-handwritten.svg" alt="Handwritten: 8.6.5 Destructor Exception Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-handwritten.svg" alt="Handwritten: 8.6.5 Destructor Exception Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-diagram.svg" alt="Diagram: 8.6.5 Destructor Exception Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-diagram.svg" alt="Diagram: 8.6.5 Destructor Exception Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-sticky.svg" alt="Sticky Note: 8.6.5 Destructor Exception Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-5-destructor-exception-rules-sticky.svg" alt="Sticky Note: 8.6.5 Destructor Exception Rules" width="30%">
 </a>
 
 
@@ -1484,14 +1484,14 @@ terminate called after throwing an instance of std::runtime_error
 
 ### 8.6.6 Handling Destructor Errors Safely
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-handwritten.svg" alt="Handwritten: 8.6.6 Handling Destructor Errors Safely" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-handwritten.svg" alt="Handwritten: 8.6.6 Handling Destructor Errors Safely" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-diagram.svg" alt="Diagram: 8.6.6 Handling Destructor Errors Safely" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-diagram.svg" alt="Diagram: 8.6.6 Handling Destructor Errors Safely" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-sticky.svg" alt="Sticky Note: 8.6.6 Handling Destructor Errors Safely" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-6-6-handling-destructor-errors-safely-sticky.svg" alt="Sticky Note: 8.6.6 Handling Destructor Errors Safely" width="30%">
 </a>
 
 
@@ -1552,14 +1552,14 @@ int main() {
 
 ### 8.7.1 The Three Levels
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-handwritten.svg" alt="Handwritten: 8.7.1 The Three Levels" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-handwritten.svg" alt="Handwritten: 8.7.1 The Three Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-diagram.svg" alt="Diagram: 8.7.1 The Three Levels" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-diagram.svg" alt="Diagram: 8.7.1 The Three Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-sticky.svg" alt="Sticky Note: 8.7.1 The Three Levels" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-1-the-three-levels-sticky.svg" alt="Sticky Note: 8.7.1 The Three Levels" width="30%">
 </a>
 
 
@@ -1572,14 +1572,14 @@ int main() {
 
 ### 8.7.2 No-throw Guarantee
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-handwritten.svg" alt="Handwritten: 8.7.2 No-throw Guarantee" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-handwritten.svg" alt="Handwritten: 8.7.2 No-throw Guarantee" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-diagram.svg" alt="Diagram: 8.7.2 No-throw Guarantee" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-diagram.svg" alt="Diagram: 8.7.2 No-throw Guarantee" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-sticky.svg" alt="Sticky Note: 8.7.2 No-throw Guarantee" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-2-no-throw-guarantee-sticky.svg" alt="Sticky Note: 8.7.2 No-throw Guarantee" width="30%">
 </a>
 
 
@@ -1601,14 +1601,14 @@ void safe_swap(int& a, int& b) noexcept {
 
 ### 8.7.3 Strong Guarantee (Commit or Rollback)
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-handwritten.svg" alt="Handwritten: 8.7.3 Strong Guarantee (Commit or Rollback)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-handwritten.svg" alt="Handwritten: 8.7.3 Strong Guarantee (Commit or Rollback)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-diagram.svg" alt="Diagram: 8.7.3 Strong Guarantee (Commit or Rollback)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-diagram.svg" alt="Diagram: 8.7.3 Strong Guarantee (Commit or Rollback)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-sticky.svg" alt="Sticky Note: 8.7.3 Strong Guarantee (Commit or Rollback)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-3-strong-guarantee-commit-or-rollback-sticky.svg" alt="Sticky Note: 8.7.3 Strong Guarantee (Commit or Rollback)" width="30%">
 </a>
 
 
@@ -1715,14 +1715,14 @@ private:
 
 ### 8.7.4 Basic Guarantee (No Leaks, Valid State)
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-handwritten.svg" alt="Handwritten: 8.7.4 Basic Guarantee (No Leaks, Valid State)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-handwritten.svg" alt="Handwritten: 8.7.4 Basic Guarantee (No Leaks, Valid State)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-diagram.svg" alt="Diagram: 8.7.4 Basic Guarantee (No Leaks, Valid State)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-diagram.svg" alt="Diagram: 8.7.4 Basic Guarantee (No Leaks, Valid State)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-sticky.svg" alt="Sticky Note: 8.7.4 Basic Guarantee (No Leaks, Valid State)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-4-basic-guarantee-no-leaks-valid-state-sticky.svg" alt="Sticky Note: 8.7.4 Basic Guarantee (No Leaks, Valid State)" width="30%">
 </a>
 
 
@@ -1764,14 +1764,14 @@ private:
 
 ### 8.7.5 Safety Level Comparison Table
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-handwritten.svg" alt="Handwritten: 8.7.5 Safety Level Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-handwritten.svg" alt="Handwritten: 8.7.5 Safety Level Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-diagram.svg" alt="Diagram: 8.7.5 Safety Level Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-diagram.svg" alt="Diagram: 8.7.5 Safety Level Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-sticky.svg" alt="Sticky Note: 8.7.5 Safety Level Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-5-safety-level-comparison-table-sticky.svg" alt="Sticky Note: 8.7.5 Safety Level Comparison Table" width="30%">
 </a>
 
 
@@ -1786,14 +1786,14 @@ private:
 
 ### 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-handwritten.svg" alt="Handwritten: 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-handwritten.svg" alt="Handwritten: 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-diagram.svg" alt="Diagram: 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-diagram.svg" alt="Diagram: 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-sticky.svg" alt="Sticky Note: 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-7-6-achieving-strong-guarantee-the-copy-and-swap-idiom-sticky.svg" alt="Sticky Note: 8.7.6 Achieving Strong Guarantee: The Copy-and-Swap Idiom" width="30%">
 </a>
 
 
@@ -1852,14 +1852,14 @@ private:
 
 ### 8.8.1 noexcept Syntax
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-handwritten.svg" alt="Handwritten: 8.8.1 noexcept Syntax" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-handwritten.svg" alt="Handwritten: 8.8.1 noexcept Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-diagram.svg" alt="Diagram: 8.8.1 noexcept Syntax" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-diagram.svg" alt="Diagram: 8.8.1 noexcept Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-sticky.svg" alt="Sticky Note: 8.8.1 noexcept Syntax" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-1-noexcept-syntax-sticky.svg" alt="Sticky Note: 8.8.1 noexcept Syntax" width="30%">
 </a>
 
 
@@ -1872,14 +1872,14 @@ void function4() noexcept(condition); // conditional noexcept
 
 ### 8.8.2 What noexcept Means
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-handwritten.svg" alt="Handwritten: 8.8.2 What noexcept Means" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-handwritten.svg" alt="Handwritten: 8.8.2 What noexcept Means" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-diagram.svg" alt="Diagram: 8.8.2 What noexcept Means" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-diagram.svg" alt="Diagram: 8.8.2 What noexcept Means" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-sticky.svg" alt="Sticky Note: 8.8.2 What noexcept Means" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-2-what-noexcept-means-sticky.svg" alt="Sticky Note: 8.8.2 What noexcept Means" width="30%">
 </a>
 
 
@@ -1890,14 +1890,14 @@ void function4() noexcept(condition); // conditional noexcept
 
 ### 8.8.3 noexcept vs throw() vs Nothing
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-handwritten.svg" alt="Handwritten: 8.8.3 noexcept vs throw() vs Nothing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-handwritten.svg" alt="Handwritten: 8.8.3 noexcept vs throw() vs Nothing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-diagram.svg" alt="Diagram: 8.8.3 noexcept vs throw() vs Nothing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-diagram.svg" alt="Diagram: 8.8.3 noexcept vs throw() vs Nothing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-sticky.svg" alt="Sticky Note: 8.8.3 noexcept vs throw() vs Nothing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-3-noexcept-vs-throw-vs-nothing-sticky.svg" alt="Sticky Note: 8.8.3 noexcept vs throw() vs Nothing" width="30%">
 </a>
 
 
@@ -1914,14 +1914,14 @@ void function4() noexcept(condition); // conditional noexcept
 
 ### 8.8.4 Conditional noexcept
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-handwritten.svg" alt="Handwritten: 8.8.4 Conditional noexcept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-handwritten.svg" alt="Handwritten: 8.8.4 Conditional noexcept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-diagram.svg" alt="Diagram: 8.8.4 Conditional noexcept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-diagram.svg" alt="Diagram: 8.8.4 Conditional noexcept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-sticky.svg" alt="Sticky Note: 8.8.4 Conditional noexcept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-4-conditional-noexcept-sticky.svg" alt="Sticky Note: 8.8.4 Conditional noexcept" width="30%">
 </a>
 
 
@@ -1960,14 +1960,14 @@ int main() {
 
 ### 8.8.5 The noexcept Operator
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-handwritten.svg" alt="Handwritten: 8.8.5 The noexcept Operator" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-handwritten.svg" alt="Handwritten: 8.8.5 The noexcept Operator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-diagram.svg" alt="Diagram: 8.8.5 The noexcept Operator" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-diagram.svg" alt="Diagram: 8.8.5 The noexcept Operator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-sticky.svg" alt="Sticky Note: 8.8.5 The noexcept Operator" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-5-the-noexcept-operator-sticky.svg" alt="Sticky Note: 8.8.5 The noexcept Operator" width="30%">
 </a>
 
 
@@ -1994,14 +1994,14 @@ int main() {
 
 ### 8.8.6 When to Use noexcept
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-handwritten.svg" alt="Handwritten: 8.8.6 When to Use noexcept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-handwritten.svg" alt="Handwritten: 8.8.6 When to Use noexcept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-diagram.svg" alt="Diagram: 8.8.6 When to Use noexcept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-diagram.svg" alt="Diagram: 8.8.6 When to Use noexcept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-sticky.svg" alt="Sticky Note: 8.8.6 When to Use noexcept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-6-when-to-use-noexcept-sticky.svg" alt="Sticky Note: 8.8.6 When to Use noexcept" width="30%">
 </a>
 
 
@@ -2019,14 +2019,14 @@ int main() {
 
 ### 8.8.7 The Vector Reallocation Optimization
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-handwritten.svg" alt="Handwritten: 8.8.7 The Vector Reallocation Optimization" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-handwritten.svg" alt="Handwritten: 8.8.7 The Vector Reallocation Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-diagram.svg" alt="Diagram: 8.8.7 The Vector Reallocation Optimization" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-diagram.svg" alt="Diagram: 8.8.7 The Vector Reallocation Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-sticky.svg" alt="Sticky Note: 8.8.7 The Vector Reallocation Optimization" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-7-the-vector-reallocation-optimization-sticky.svg" alt="Sticky Note: 8.8.7 The Vector Reallocation Optimization" width="30%">
 </a>
 
 
@@ -2083,14 +2083,14 @@ The difference can be 10x-100x for types with expensive copies.
 
 ### 8.8.8 Common noexcept Mistakes
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-handwritten.svg" alt="Handwritten: 8.8.8 Common noexcept Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-handwritten.svg" alt="Handwritten: 8.8.8 Common noexcept Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-diagram.svg" alt="Diagram: 8.8.8 Common noexcept Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-diagram.svg" alt="Diagram: 8.8.8 Common noexcept Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-sticky.svg" alt="Sticky Note: 8.8.8 Common noexcept Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-8-8-common-noexcept-mistakes-sticky.svg" alt="Sticky Note: 8.8.8 Common noexcept Mistakes" width="30%">
 </a>
 
 
@@ -2126,14 +2126,14 @@ void wrap_correct(T&& value) noexcept(noexcept(value = T{})) {
 
 ### 8.9.1 Full Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-handwritten.svg" alt="Handwritten: 8.9.1 Full Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-handwritten.svg" alt="Handwritten: 8.9.1 Full Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-diagram.svg" alt="Diagram: 8.9.1 Full Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-diagram.svg" alt="Diagram: 8.9.1 Full Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-sticky.svg" alt="Sticky Note: 8.9.1 Full Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-1-full-hierarchy-sticky.svg" alt="Sticky Note: 8.9.1 Full Hierarchy" width="30%">
 </a>
 
 
@@ -2164,14 +2164,14 @@ std::exception
 
 ### 8.9.2 Exception Categories
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-handwritten.svg" alt="Handwritten: 8.9.2 Exception Categories" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-handwritten.svg" alt="Handwritten: 8.9.2 Exception Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-diagram.svg" alt="Diagram: 8.9.2 Exception Categories" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-diagram.svg" alt="Diagram: 8.9.2 Exception Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-sticky.svg" alt="Sticky Note: 8.9.2 Exception Categories" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-2-exception-categories-sticky.svg" alt="Sticky Note: 8.9.2 Exception Categories" width="30%">
 </a>
 
 
@@ -2194,14 +2194,14 @@ std::exception
 
 ### 8.9.3 Code: Using the Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-handwritten.svg" alt="Handwritten: 8.9.3 Code: Using the Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-handwritten.svg" alt="Handwritten: 8.9.3 Code: Using the Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-diagram.svg" alt="Diagram: 8.9.3 Code: Using the Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-diagram.svg" alt="Diagram: 8.9.3 Code: Using the Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-sticky.svg" alt="Sticky Note: 8.9.3 Code: Using the Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-3-code-using-the-hierarchy-sticky.svg" alt="Sticky Note: 8.9.3 Code: Using the Hierarchy" width="30%">
 </a>
 
 
@@ -2242,14 +2242,14 @@ int main() {
 
 ### 8.9.4 The `what()` Method
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-handwritten.svg" alt="Handwritten: 8.9.4 The `what()` Method" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-handwritten.svg" alt="Handwritten: 8.9.4 The `what()` Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-diagram.svg" alt="Diagram: 8.9.4 The `what()` Method" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-diagram.svg" alt="Diagram: 8.9.4 The `what()` Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-sticky.svg" alt="Sticky Note: 8.9.4 The `what()` Method" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-9-4-the-what-method-sticky.svg" alt="Sticky Note: 8.9.4 The `what()` Method" width="30%">
 </a>
 
 
@@ -2281,14 +2281,14 @@ int main() {
 
 ### 8.10.1 Design Guidelines
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-handwritten.svg" alt="Handwritten: 8.10.1 Design Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-handwritten.svg" alt="Handwritten: 8.10.1 Design Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-diagram.svg" alt="Diagram: 8.10.1 Design Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-diagram.svg" alt="Diagram: 8.10.1 Design Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-sticky.svg" alt="Sticky Note: 8.10.1 Design Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-1-design-guidelines-sticky.svg" alt="Sticky Note: 8.10.1 Design Guidelines" width="30%">
 </a>
 
 
@@ -2305,14 +2305,14 @@ int main() {
 
 ### 8.10.2 Complete Custom Exception Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-handwritten.svg" alt="Handwritten: 8.10.2 Complete Custom Exception Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-handwritten.svg" alt="Handwritten: 8.10.2 Complete Custom Exception Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-diagram.svg" alt="Diagram: 8.10.2 Complete Custom Exception Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-diagram.svg" alt="Diagram: 8.10.2 Complete Custom Exception Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-sticky.svg" alt="Sticky Note: 8.10.2 Complete Custom Exception Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-2-complete-custom-exception-hierarchy-sticky.svg" alt="Sticky Note: 8.10.2 Complete Custom Exception Hierarchy" width="30%">
 </a>
 
 
@@ -2481,14 +2481,14 @@ Query failed [23000]: [Database] Query failed with code 1062
 
 ### 8.10.3 Exception Class Checklist
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-handwritten.svg" alt="Handwritten: 8.10.3 Exception Class Checklist" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-handwritten.svg" alt="Handwritten: 8.10.3 Exception Class Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-diagram.svg" alt="Diagram: 8.10.3 Exception Class Checklist" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-diagram.svg" alt="Diagram: 8.10.3 Exception Class Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-sticky.svg" alt="Sticky Note: 8.10.3 Exception Class Checklist" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-10-3-exception-class-checklist-sticky.svg" alt="Sticky Note: 8.10.3 Exception Class Checklist" width="30%">
 </a>
 
 
@@ -2739,14 +2739,14 @@ public:
 
 ### 8.12.1 STL Exception Behavior
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-handwritten.svg" alt="Handwritten: 8.12.1 STL Exception Behavior" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-handwritten.svg" alt="Handwritten: 8.12.1 STL Exception Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-diagram.svg" alt="Diagram: 8.12.1 STL Exception Behavior" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-diagram.svg" alt="Diagram: 8.12.1 STL Exception Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-sticky.svg" alt="Sticky Note: 8.12.1 STL Exception Behavior" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-1-stl-exception-behavior-sticky.svg" alt="Sticky Note: 8.12.1 STL Exception Behavior" width="30%">
 </a>
 
 
@@ -2764,14 +2764,14 @@ The C++ Standard Library uses exceptions extensively. Every container operation 
 
 ### 8.12.2 Smart Pointer Exception Safety
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-handwritten.svg" alt="Handwritten: 8.12.2 Smart Pointer Exception Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-handwritten.svg" alt="Handwritten: 8.12.2 Smart Pointer Exception Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-diagram.svg" alt="Diagram: 8.12.2 Smart Pointer Exception Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-diagram.svg" alt="Diagram: 8.12.2 Smart Pointer Exception Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-sticky.svg" alt="Sticky Note: 8.12.2 Smart Pointer Exception Safety" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-2-smart-pointer-exception-safety-sticky.svg" alt="Sticky Note: 8.12.2 Smart Pointer Exception Safety" width="30%">
 </a>
 
 
@@ -2825,14 +2825,14 @@ Error: Cannot send empty data
 
 ### 8.12.3 Transaction Processing Systems
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-handwritten.svg" alt="Handwritten: 8.12.3 Transaction Processing Systems" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-handwritten.svg" alt="Handwritten: 8.12.3 Transaction Processing Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-diagram.svg" alt="Diagram: 8.12.3 Transaction Processing Systems" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-diagram.svg" alt="Diagram: 8.12.3 Transaction Processing Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-sticky.svg" alt="Sticky Note: 8.12.3 Transaction Processing Systems" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-3-transaction-processing-systems-sticky.svg" alt="Sticky Note: 8.12.3 Transaction Processing Systems" width="30%">
 </a>
 
 
@@ -2925,14 +2925,14 @@ Alice: $800, Bob: $700
 
 ### 8.12.4 Server Request Handling
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-handwritten.svg" alt="Handwritten: 8.12.4 Server Request Handling" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-handwritten.svg" alt="Handwritten: 8.12.4 Server Request Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-diagram.svg" alt="Diagram: 8.12.4 Server Request Handling" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-diagram.svg" alt="Diagram: 8.12.4 Server Request Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-sticky.svg" alt="Sticky Note: 8.12.4 Server Request Handling" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-4-server-request-handling-sticky.svg" alt="Sticky Note: 8.12.4 Server Request Handling" width="30%">
 </a>
 
 
@@ -2985,14 +2985,14 @@ private:
 
 ### 8.12.5 noexcept in Real-World Code
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-handwritten.svg" alt="Handwritten: 8.12.5 noexcept in Real-World Code" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-handwritten.svg" alt="Handwritten: 8.12.5 noexcept in Real-World Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-diagram.svg" alt="Diagram: 8.12.5 noexcept in Real-World Code" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-diagram.svg" alt="Diagram: 8.12.5 noexcept in Real-World Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-sticky.svg" alt="Sticky Note: 8.12.5 noexcept in Real-World Code" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-5-noexcept-in-real-world-code-sticky.svg" alt="Sticky Note: 8.12.5 noexcept in Real-World Code" width="30%">
 </a>
 
 
@@ -3023,14 +3023,14 @@ void vector_growth_example() {
 
 ### 8.12.6 Exception-Safe Logger
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-handwritten.svg" alt="Handwritten: 8.12.6 Exception-Safe Logger" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-handwritten.svg" alt="Handwritten: 8.12.6 Exception-Safe Logger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-diagram.svg" alt="Diagram: 8.12.6 Exception-Safe Logger" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-diagram.svg" alt="Diagram: 8.12.6 Exception-Safe Logger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-sticky.svg" alt="Sticky Note: 8.12.6 Exception-Safe Logger" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-6-exception-safe-logger-sticky.svg" alt="Sticky Note: 8.12.6 Exception-Safe Logger" width="30%">
 </a>
 
 
@@ -3075,14 +3075,14 @@ private:
 
 ### 8.12.7 Performance Considerations
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-handwritten.svg" alt="Handwritten: 8.12.7 Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-handwritten.svg" alt="Handwritten: 8.12.7 Performance Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-diagram.svg" alt="Diagram: 8.12.7 Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-diagram.svg" alt="Diagram: 8.12.7 Performance Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-sticky.svg" alt="Sticky Note: 8.12.7 Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/8-12-7-performance-considerations-sticky.svg" alt="Sticky Note: 8.12.7 Performance Considerations" width="30%">
 </a>
 
 
@@ -3115,14 +3115,14 @@ private:
 
 ### noexcept Decision Flowchart
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-handwritten.svg" alt="Handwritten: noexcept Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-handwritten.svg" alt="Handwritten: noexcept Decision Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-diagram.svg" alt="Diagram: noexcept Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-diagram.svg" alt="Diagram: noexcept Decision Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-sticky.svg" alt="Sticky Note: noexcept Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/noexcept-decision-flowchart-sticky.svg" alt="Sticky Note: noexcept Decision Flowchart" width="30%">
 </a>
 
 
@@ -3167,14 +3167,14 @@ private:
 
 ### Common Pitfalls
 
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/08-exceptions/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
 </a>
 
 

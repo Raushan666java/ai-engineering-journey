@@ -42,14 +42,14 @@ flowchart LR
 
 ### 4.1 The Pumping Lemma for Regular Languages
 
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-handwritten.svg" alt="Handwritten: 4.1 The Pumping Lemma for Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-handwritten.svg" alt="Handwritten: 4.1 The Pumping Lemma for Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-diagram.svg" alt="Diagram: 4.1 The Pumping Lemma for Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-diagram.svg" alt="Diagram: 4.1 The Pumping Lemma for Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-sticky.svg" alt="Sticky Note: 4.1 The Pumping Lemma for Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-sticky.svg" alt="Sticky Note: 4.1 The Pumping Lemma for Regular Languages" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@ If L is a regular language, then there exists an integer **p â‰¥ 1** (the pu
 
 ### 4.2 Using the Pumping Lemma to Prove Non-Regularity
 
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-handwritten.svg" alt="Handwritten: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-handwritten.svg" alt="Handwritten: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-diagram.svg" alt="Diagram: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-diagram.svg" alt="Diagram: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-sticky.svg" alt="Sticky Note: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-sticky.svg" alt="Sticky Note: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
 </a>
 
 
@@ -87,14 +87,14 @@ To prove L is not regular:
 
 ### 4.3 Closure Properties of Regular Languages
 
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 4.3 Closure Properties of Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 4.3 Closure Properties of Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-diagram.svg" alt="Diagram: 4.3 Closure Properties of Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-diagram.svg" alt="Diagram: 4.3 Closure Properties of Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 4.3 Closure Properties of Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 4.3 Closure Properties of Regular Languages" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ The class of regular languages is closed under the following operations. If Lâ�
 
 ### 4.4 Myhill-Nerode Theorem
 
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-handwritten.svg" alt="Handwritten: 4.4 Myhill-Nerode Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-handwritten.svg" alt="Handwritten: 4.4 Myhill-Nerode Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-diagram.svg" alt="Diagram: 4.4 Myhill-Nerode Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-diagram.svg" alt="Diagram: 4.4 Myhill-Nerode Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-sticky.svg" alt="Sticky Note: 4.4 Myhill-Nerode Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-sticky.svg" alt="Sticky Note: 4.4 Myhill-Nerode Theorem" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ When L is regular, the number of equivalence classes of â‰¡â‚— equals t
 
 ### 4.5 DFA Minimization
 
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-handwritten.svg" alt="Handwritten: 4.5 DFA Minimization" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-handwritten.svg" alt="Handwritten: 4.5 DFA Minimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-diagram.svg" alt="Diagram: 4.5 DFA Minimization" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-diagram.svg" alt="Diagram: 4.5 DFA Minimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-sticky.svg" alt="Sticky Note: 4.5 DFA Minimization" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-sticky.svg" alt="Sticky Note: 4.5 DFA Minimization" width="30%">
 </a>
 
 
@@ -172,14 +172,14 @@ The **table-filling algorithm** (also called the Moore or Hopcroft-Ullman algori
 
 ### 4.6 Decision Properties of Regular Languages
 
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 4.6 Decision Properties of Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 4.6 Decision Properties of Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-diagram.svg" alt="Diagram: 4.6 Decision Properties of Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-diagram.svg" alt="Diagram: 4.6 Decision Properties of Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 4.6 Decision Properties of Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 4.6 Decision Properties of Regular Languages" width="30%">
 </a>
 
 

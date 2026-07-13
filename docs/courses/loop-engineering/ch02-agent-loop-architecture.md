@@ -25,14 +25,14 @@ After completing this chapter you will be able to:
 
 ### 1. The ReAct Pattern (Thought → Action → Observation)
 
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-handwritten.svg" alt="Handwritten: 1. The ReAct Pattern (Thought → Action → Observation)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-handwritten.svg" alt="Handwritten: 1. The ReAct Pattern (Thought → Action → Observation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-diagram.svg" alt="Diagram: 1. The ReAct Pattern (Thought → Action → Observation)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-diagram.svg" alt="Diagram: 1. The ReAct Pattern (Thought → Action → Observation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-sticky.svg" alt="Sticky Note: 1. The ReAct Pattern (Thought → Action → Observation)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/1-the-react-pattern-thought-action-observation-sticky.svg" alt="Sticky Note: 1. The ReAct Pattern (Thought → Action → Observation)" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ ReAct is the **default pattern** for most agentic AI systems because it tightly 
 
 ### 2. The ReWoo Pattern (Plan → Execute)
 
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-handwritten.svg" alt="Handwritten: 2. The ReWoo Pattern (Plan → Execute)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-handwritten.svg" alt="Handwritten: 2. The ReWoo Pattern (Plan → Execute)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-diagram.svg" alt="Diagram: 2. The ReWoo Pattern (Plan → Execute)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-diagram.svg" alt="Diagram: 2. The ReWoo Pattern (Plan → Execute)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-sticky.svg" alt="Sticky Note: 2. The ReWoo Pattern (Plan → Execute)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/2-the-rewoo-pattern-plan-execute-sticky.svg" alt="Sticky Note: 2. The ReWoo Pattern (Plan → Execute)" width="30%">
 </a>
 
 
@@ -118,14 +118,14 @@ ReWoo (Reasoning WithOut Observation), introduced by Xu et al. (2023), separates
 
 ### 3. The Reflexion Pattern (Critique → Refine)
 
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-handwritten.svg" alt="Handwritten: 3. The Reflexion Pattern (Critique → Refine)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-handwritten.svg" alt="Handwritten: 3. The Reflexion Pattern (Critique → Refine)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-diagram.svg" alt="Diagram: 3. The Reflexion Pattern (Critique → Refine)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-diagram.svg" alt="Diagram: 3. The Reflexion Pattern (Critique → Refine)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-sticky.svg" alt="Sticky Note: 3. The Reflexion Pattern (Critique → Refine)" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/3-the-reflexion-pattern-critique-refine-sticky.svg" alt="Sticky Note: 3. The Reflexion Pattern (Critique → Refine)" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ repeat:
 
 ### 4. Tree-of-Thoughts and LLM Compiler
 
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-handwritten.svg" alt="Handwritten: 4. Tree-of-Thoughts and LLM Compiler" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-handwritten.svg" alt="Handwritten: 4. Tree-of-Thoughts and LLM Compiler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-diagram.svg" alt="Diagram: 4. Tree-of-Thoughts and LLM Compiler" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-diagram.svg" alt="Diagram: 4. Tree-of-Thoughts and LLM Compiler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-sticky.svg" alt="Sticky Note: 4. Tree-of-Thoughts and LLM Compiler" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/4-tree-of-thoughts-and-llm-compiler-sticky.svg" alt="Sticky Note: 4. Tree-of-Thoughts and LLM Compiler" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ repeat:
 
 ### 5. When to Use Each Pattern
 
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-handwritten.svg" alt="Handwritten: 5. When to Use Each Pattern" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-handwritten.svg" alt="Handwritten: 5. When to Use Each Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-diagram.svg" alt="Diagram: 5. When to Use Each Pattern" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-diagram.svg" alt="Diagram: 5. When to Use Each Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-sticky.svg" alt="Sticky Note: 5. When to Use Each Pattern" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch02-agent-loop-architecture/5-when-to-use-each-pattern-sticky.svg" alt="Sticky Note: 5. When to Use Each Pattern" width="30%">
 </a>
 
 

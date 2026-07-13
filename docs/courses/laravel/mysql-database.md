@@ -123,14 +123,14 @@ flowchart LR
 
 ### 1 Relational Database Fundamentals
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-handwritten.svg" alt="Handwritten: 1 Relational Database Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-handwritten.svg" alt="Handwritten: 1 Relational Database Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-diagram.svg" alt="Diagram: 1 Relational Database Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-diagram.svg" alt="Diagram: 1 Relational Database Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-sticky.svg" alt="Sticky Note: 1 Relational Database Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/1-relational-database-fundamentals-sticky.svg" alt="Sticky Note: 1 Relational Database Fundamentals" width="30%">
 </a>
 
 
@@ -321,14 +321,14 @@ In Laravel, many-to-many relationships use `belongsToMany` and convention expect
 
 ### 2 SQL Queries
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-handwritten.svg" alt="Handwritten: 2 SQL Queries" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-handwritten.svg" alt="Handwritten: 2 SQL Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-diagram.svg" alt="Diagram: 2 SQL Queries" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-diagram.svg" alt="Diagram: 2 SQL Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-sticky.svg" alt="Sticky Note: 2 SQL Queries" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/2-sql-queries-sticky.svg" alt="Sticky Note: 2 SQL Queries" width="30%">
 </a>
 
 
@@ -774,14 +774,14 @@ ORDER BY type, last_name;
 
 ### 3 Data Definition Language (DDL)
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-handwritten.svg" alt="Handwritten: 3 Data Definition Language (DDL)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-handwritten.svg" alt="Handwritten: 3 Data Definition Language (DDL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-diagram.svg" alt="Diagram: 3 Data Definition Language (DDL)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-diagram.svg" alt="Diagram: 3 Data Definition Language (DDL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-sticky.svg" alt="Sticky Note: 3 Data Definition Language (DDL)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/3-data-definition-language-ddl-sticky.svg" alt="Sticky Note: 3 Data Definition Language (DDL)" width="30%">
 </a>
 
 
@@ -988,14 +988,14 @@ DROP INDEX idx_employees_last_name ON employees;
 
 ### 4 Data Manipulation Language (DML)
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-handwritten.svg" alt="Handwritten: 4 Data Manipulation Language (DML)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-handwritten.svg" alt="Handwritten: 4 Data Manipulation Language (DML)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-diagram.svg" alt="Diagram: 4 Data Manipulation Language (DML)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-diagram.svg" alt="Diagram: 4 Data Manipulation Language (DML)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-sticky.svg" alt="Sticky Note: 4 Data Manipulation Language (DML)" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/4-data-manipulation-language-dml-sticky.svg" alt="Sticky Note: 4 Data Manipulation Language (DML)" width="30%">
 </a>
 
 
@@ -1132,14 +1132,14 @@ SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
 
 ### 5 Indexing Deep Dive
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-handwritten.svg" alt="Handwritten: 5 Indexing Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-handwritten.svg" alt="Handwritten: 5 Indexing Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-diagram.svg" alt="Diagram: 5 Indexing Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-diagram.svg" alt="Diagram: 5 Indexing Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-sticky.svg" alt="Sticky Note: 5 Indexing Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/5-indexing-deep-dive-sticky.svg" alt="Sticky Note: 5 Indexing Deep Dive" width="30%">
 </a>
 
 
@@ -1303,14 +1303,14 @@ STRAIGHT_JOIN departments d ON e.department_id = d.id;
 
 ### 6 Normalization
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/6-normalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/6-normalization-handwritten.svg" alt="Handwritten: 6 Normalization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/6-normalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/6-normalization-handwritten.svg" alt="Handwritten: 6 Normalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/6-normalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/6-normalization-diagram.svg" alt="Diagram: 6 Normalization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/6-normalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/6-normalization-diagram.svg" alt="Diagram: 6 Normalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/6-normalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/6-normalization-sticky.svg" alt="Sticky Note: 6 Normalization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/6-normalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/6-normalization-sticky.svg" alt="Sticky Note: 6 Normalization" width="30%">
 </a>
 
 
@@ -1591,14 +1591,14 @@ WHERE o.order_date > COALESCE(
 
 ### 7 Transactions & Locking
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-handwritten.svg" alt="Handwritten: 7 Transactions & Locking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-handwritten.svg" alt="Handwritten: 7 Transactions & Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-diagram.svg" alt="Diagram: 7 Transactions & Locking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-diagram.svg" alt="Diagram: 7 Transactions & Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-sticky.svg" alt="Sticky Note: 7 Transactions & Locking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/7-transactions-locking-sticky.svg" alt="Sticky Note: 7 Transactions & Locking" width="30%">
 </a>
 
 
@@ -1745,14 +1745,14 @@ SET GLOBAL innodb_print_all_deadlocks = 1;
 
 ### 8 Database Design Patterns for Laravel
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-handwritten.svg" alt="Handwritten: 8 Database Design Patterns for Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-handwritten.svg" alt="Handwritten: 8 Database Design Patterns for Laravel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-diagram.svg" alt="Diagram: 8 Database Design Patterns for Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-diagram.svg" alt="Diagram: 8 Database Design Patterns for Laravel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-sticky.svg" alt="Sticky Note: 8 Database Design Patterns for Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/8-database-design-patterns-for-laravel-sticky.svg" alt="Sticky Note: 8 Database Design Patterns for Laravel" width="30%">
 </a>
 
 
@@ -2054,14 +2054,14 @@ CREATE TABLE products (
 
 ### 9 Migration Concepts
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-handwritten.svg" alt="Handwritten: 9 Migration Concepts" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-handwritten.svg" alt="Handwritten: 9 Migration Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-diagram.svg" alt="Diagram: 9 Migration Concepts" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-diagram.svg" alt="Diagram: 9 Migration Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-sticky.svg" alt="Sticky Note: 9 Migration Concepts" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/9-migration-concepts-sticky.svg" alt="Sticky Note: 9 Migration Concepts" width="30%">
 </a>
 
 
@@ -2206,14 +2206,14 @@ INSERT INTO order_items (order_id, product_id, quantity, unit_price) VALUES
 
 ### 10 Performance Optimization
 
-<a href="../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-handwritten.svg" alt="Handwritten: 10 Performance Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-handwritten.svg" alt="Handwritten: 10 Performance Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-diagram.svg" alt="Diagram: 10 Performance Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-diagram.svg" alt="Diagram: 10 Performance Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-sticky.svg" alt="Sticky Note: 10 Performance Optimization" width="30%">
+<a href="../../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/mysql-database/10-performance-optimization-sticky.svg" alt="Sticky Note: 10 Performance Optimization" width="30%">
 </a>
 
 

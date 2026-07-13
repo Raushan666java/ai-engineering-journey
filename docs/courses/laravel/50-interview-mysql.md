@@ -40,14 +40,14 @@ flowchart LR
 
 ### Q1: Write a query to find the second-highest salary from an `employees` table.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-handwritten.svg" alt="Handwritten: Write a query to find the second-highest salary from an `employees` table." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-handwritten.svg" alt="Handwritten: Write a query to find the second-highest salary from an `employees` table." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-diagram.svg" alt="Diagram: Write a query to find the second-highest salary from an `employees` table." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-diagram.svg" alt="Diagram: Write a query to find the second-highest salary from an `employees` table." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-sticky.svg" alt="Sticky Note: Write a query to find the second-highest salary from an `employees` table." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-second-highest-salary-from-an-employees-table-sticky.svg" alt="Sticky Note: Write a query to find the second-highest salary from an `employees` table." width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ WHERE salary < (SELECT MAX(salary) FROM employees);
 
 ### Q2: What is the difference between `INNER JOIN` and `LEFT JOIN`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-handwritten.svg" alt="Handwritten: What is the difference between `INNER JOIN` and `LEFT JOIN`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-handwritten.svg" alt="Handwritten: What is the difference between `INNER JOIN` and `LEFT JOIN`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-diagram.svg" alt="Diagram: What is the difference between `INNER JOIN` and `LEFT JOIN`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-diagram.svg" alt="Diagram: What is the difference between `INNER JOIN` and `LEFT JOIN`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-sticky.svg" alt="Sticky Note: What is the difference between `INNER JOIN` and `LEFT JOIN`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-inner-join-and-left-join-sticky.svg" alt="Sticky Note: What is the difference between `INNER JOIN` and `LEFT JOIN`?" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ LEFT JOIN departments d ON e.dept_id = d.id;
 
 ### Q3: How does `GROUP BY` work? Give an example with `HAVING`.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-handwritten.svg" alt="Handwritten: How does `GROUP BY` work? Give an example with `HAVING`." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-handwritten.svg" alt="Handwritten: How does `GROUP BY` work? Give an example with `HAVING`." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-diagram.svg" alt="Diagram: How does `GROUP BY` work? Give an example with `HAVING`." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-diagram.svg" alt="Diagram: How does `GROUP BY` work? Give an example with `HAVING`." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-sticky.svg" alt="Sticky Note: How does `GROUP BY` work? Give an example with `HAVING`." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-group-by-work-give-an-example-with-having-sticky.svg" alt="Sticky Note: How does `GROUP BY` work? Give an example with `HAVING`." width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ HAVING COUNT(*) > 5;
 
 ### Q4: What is the difference between `WHERE` and `HAVING`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-handwritten.svg" alt="Handwritten: What is the difference between `WHERE` and `HAVING`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-handwritten.svg" alt="Handwritten: What is the difference between `WHERE` and `HAVING`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-diagram.svg" alt="Diagram: What is the difference between `WHERE` and `HAVING`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-diagram.svg" alt="Diagram: What is the difference between `WHERE` and `HAVING`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-sticky.svg" alt="Sticky Note: What is the difference between `WHERE` and `HAVING`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-where-and-having-sticky.svg" alt="Sticky Note: What is the difference between `WHERE` and `HAVING`?" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ WHERE e1.salary > (
 
 ### Q6: What is the difference between `UNION` and `UNION ALL`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-handwritten.svg" alt="Handwritten: What is the difference between `UNION` and `UNION ALL`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-handwritten.svg" alt="Handwritten: What is the difference between `UNION` and `UNION ALL`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-diagram.svg" alt="Diagram: What is the difference between `UNION` and `UNION ALL`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-diagram.svg" alt="Diagram: What is the difference between `UNION` and `UNION ALL`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-sticky.svg" alt="Sticky Note: What is the difference between `UNION` and `UNION ALL`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-union-and-union-all-sticky.svg" alt="Sticky Note: What is the difference between `UNION` and `UNION ALL`?" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ SELECT name, email FROM leads;
 
 ### Q7: Write a query using a window function to rank employees by salary within each department.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-handwritten.svg" alt="Handwritten: Write a query using a window function to rank employees by salary within each department." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-handwritten.svg" alt="Handwritten: Write a query using a window function to rank employees by salary within each department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-diagram.svg" alt="Diagram: Write a query using a window function to rank employees by salary within each department." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-diagram.svg" alt="Diagram: Write a query using a window function to rank employees by salary within each department." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-sticky.svg" alt="Sticky Note: Write a query using a window function to rank employees by salary within each department." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-a-window-function-to-rank-employees-by-salary-within-each-department-sticky.svg" alt="Sticky Note: Write a query using a window function to rank employees by salary within each department." width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ FROM employees;
 
 ### Q8: Use `ROW_NUMBER()` to deduplicate a table.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-handwritten.svg" alt="Handwritten: Use `ROW_NUMBER()` to deduplicate a table." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-handwritten.svg" alt="Handwritten: Use `ROW_NUMBER()` to deduplicate a table." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-diagram.svg" alt="Diagram: Use `ROW_NUMBER()` to deduplicate a table." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-diagram.svg" alt="Diagram: Use `ROW_NUMBER()` to deduplicate a table." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-sticky.svg" alt="Sticky Note: Use `ROW_NUMBER()` to deduplicate a table." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-row-number-to-deduplicate-a-table-sticky.svg" alt="Sticky Note: Use `ROW_NUMBER()` to deduplicate a table." width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ WHERE id IN (SELECT id FROM numbered WHERE rn > 1);
 
 ### Q9: Write a query to find employees who have never placed an order.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-handwritten.svg" alt="Handwritten: Write a query to find employees who have never placed an order." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-handwritten.svg" alt="Handwritten: Write a query to find employees who have never placed an order." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-diagram.svg" alt="Diagram: Write a query to find employees who have never placed an order." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-diagram.svg" alt="Diagram: Write a query to find employees who have never placed an order." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-sticky.svg" alt="Sticky Note: Write a query to find employees who have never placed an order." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-employees-who-have-never-placed-an-order-sticky.svg" alt="Sticky Note: Write a query to find employees who have never placed an order." width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ WHERE NOT EXISTS (
 
 ### Q10: What does `EXISTS` do and when should you prefer it over `IN`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-handwritten.svg" alt="Handwritten: What does `EXISTS` do and when should you prefer it over `IN`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-handwritten.svg" alt="Handwritten: What does `EXISTS` do and when should you prefer it over `IN`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-diagram.svg" alt="Diagram: What does `EXISTS` do and when should you prefer it over `IN`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-diagram.svg" alt="Diagram: What does `EXISTS` do and when should you prefer it over `IN`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-sticky.svg" alt="Sticky Note: What does `EXISTS` do and when should you prefer it over `IN`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-does-exists-do-and-when-should-you-prefer-it-over-in-sticky.svg" alt="Sticky Note: What does `EXISTS` do and when should you prefer it over `IN`?" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ WHERE id IN (SELECT dept_id FROM employees);
 
 ### Q11: Write a query using `CASE` inside an aggregate to pivot rows into columns.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-handwritten.svg" alt="Handwritten: Write a query using `CASE` inside an aggregate to pivot rows into columns." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-handwritten.svg" alt="Handwritten: Write a query using `CASE` inside an aggregate to pivot rows into columns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-diagram.svg" alt="Diagram: Write a query using `CASE` inside an aggregate to pivot rows into columns." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-diagram.svg" alt="Diagram: Write a query using `CASE` inside an aggregate to pivot rows into columns." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-sticky.svg" alt="Sticky Note: Write a query using `CASE` inside an aggregate to pivot rows into columns." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-case-inside-an-aggregate-to-pivot-rows-into-columns-sticky.svg" alt="Sticky Note: Write a query using `CASE` inside an aggregate to pivot rows into columns." width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ GROUP BY YEAR(order_date);
 
 ### Q12: Write a recursive CTE to generate a sequence of numbers from 1 to 10.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-handwritten.svg" alt="Handwritten: Write a recursive CTE to generate a sequence of numbers from 1 to 10." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-handwritten.svg" alt="Handwritten: Write a recursive CTE to generate a sequence of numbers from 1 to 10." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-diagram.svg" alt="Diagram: Write a recursive CTE to generate a sequence of numbers from 1 to 10." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-diagram.svg" alt="Diagram: Write a recursive CTE to generate a sequence of numbers from 1 to 10." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-sticky.svg" alt="Sticky Note: Write a recursive CTE to generate a sequence of numbers from 1 to 10." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-recursive-cte-to-generate-a-sequence-of-numbers-from-1-to-10-sticky.svg" alt="Sticky Note: Write a recursive CTE to generate a sequence of numbers from 1 to 10." width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ SELECT n FROM numbers;
 
 ### Q13: Find departments whose total salary spend exceeds 100,000.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-handwritten.svg" alt="Handwritten: Find departments whose total salary spend exceeds 100,000." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-handwritten.svg" alt="Handwritten: Find departments whose total salary spend exceeds 100,000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-diagram.svg" alt="Diagram: Find departments whose total salary spend exceeds 100,000." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-diagram.svg" alt="Diagram: Find departments whose total salary spend exceeds 100,000." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-sticky.svg" alt="Sticky Note: Find departments whose total salary spend exceeds 100,000." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/find-departments-whose-total-salary-spend-exceeds-100-000-sticky.svg" alt="Sticky Note: Find departments whose total salary spend exceeds 100,000." width="30%">
 </a>
 
 
@@ -345,14 +345,14 @@ HAVING SUM(e.salary) > 100000;
 
 ### Q14: Write a self-join to find employees who share the same manager.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-handwritten.svg" alt="Handwritten: Write a self-join to find employees who share the same manager." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-handwritten.svg" alt="Handwritten: Write a self-join to find employees who share the same manager." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-diagram.svg" alt="Diagram: Write a self-join to find employees who share the same manager." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-diagram.svg" alt="Diagram: Write a self-join to find employees who share the same manager." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-sticky.svg" alt="Sticky Note: Write a self-join to find employees who share the same manager." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-self-join-to-find-employees-who-share-the-same-manager-sticky.svg" alt="Sticky Note: Write a self-join to find employees who share the same manager." width="30%">
 </a>
 
 
@@ -367,14 +367,14 @@ WHERE e1.id < e2.id;
 
 ### Q15: What is the difference between `CHAR` and `VARCHAR`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-handwritten.svg" alt="Handwritten: What is the difference between `CHAR` and `VARCHAR`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-handwritten.svg" alt="Handwritten: What is the difference between `CHAR` and `VARCHAR`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-diagram.svg" alt="Diagram: What is the difference between `CHAR` and `VARCHAR`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-diagram.svg" alt="Diagram: What is the difference between `CHAR` and `VARCHAR`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-sticky.svg" alt="Sticky Note: What is the difference between `CHAR` and `VARCHAR`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-char-and-varchar-sticky.svg" alt="Sticky Note: What is the difference between `CHAR` and `VARCHAR`?" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ WHERE e1.id < e2.id;
 
 ### Q16: Write a query using `LATERAL JOIN` (MySQL 8.0.14+).
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-handwritten.svg" alt="Handwritten: Write a query using `LATERAL JOIN` (MySQL 8.0.14+)." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-handwritten.svg" alt="Handwritten: Write a query using `LATERAL JOIN` (MySQL 8.0.14+)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-diagram.svg" alt="Diagram: Write a query using `LATERAL JOIN` (MySQL 8.0.14+)." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-diagram.svg" alt="Diagram: Write a query using `LATERAL JOIN` (MySQL 8.0.14+)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-sticky.svg" alt="Sticky Note: Write a query using `LATERAL JOIN` (MySQL 8.0.14+)." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-lateral-join-mysql-8-0-14-sticky.svg" alt="Sticky Note: Write a query using `LATERAL JOIN` (MySQL 8.0.14+)." width="30%">
 </a>
 
 
@@ -409,14 +409,14 @@ LEFT JOIN LATERAL (
 
 ### Q17: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-handwritten.svg" alt="Handwritten: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-handwritten.svg" alt="Handwritten: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-diagram.svg" alt="Diagram: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-diagram.svg" alt="Diagram: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-sticky.svg" alt="Sticky Note: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-lead-and-lag-to-compare-an-employee-s-salary-with-the-previous-hire-sticky.svg" alt="Sticky Note: Use `LEAD` and `LAG` to compare an employee's salary with the previous hire." width="30%">
 </a>
 
 
@@ -431,14 +431,14 @@ FROM employees;
 
 ### Q18: Write a query to find the most recent order for each customer.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-handwritten.svg" alt="Handwritten: Write a query to find the most recent order for each customer." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-handwritten.svg" alt="Handwritten: Write a query to find the most recent order for each customer." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-diagram.svg" alt="Diagram: Write a query to find the most recent order for each customer." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-diagram.svg" alt="Diagram: Write a query to find the most recent order for each customer." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-sticky.svg" alt="Sticky Note: Write a query to find the most recent order for each customer." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-the-most-recent-order-for-each-customer-sticky.svg" alt="Sticky Note: Write a query to find the most recent order for each customer." width="30%">
 </a>
 
 
@@ -456,14 +456,14 @@ WHERE rn = 1;
 
 ### Q19: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-handwritten.svg" alt="Handwritten: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-handwritten.svg" alt="Handwritten: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-diagram.svg" alt="Diagram: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-diagram.svg" alt="Diagram: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-sticky.svg" alt="Sticky Note: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-count-count-column-and-count-distinct-column-sticky.svg" alt="Sticky Note: What is the difference between `COUNT(*)`, `COUNT(column)`, and `COUNT(DISTINCT column)`?" width="30%">
 </a>
 
 
@@ -482,14 +482,14 @@ FROM users;
 
 ### Q20: Write a query to find gaps in a sequence of invoice numbers.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-handwritten.svg" alt="Handwritten: Write a query to find gaps in a sequence of invoice numbers." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-handwritten.svg" alt="Handwritten: Write a query to find gaps in a sequence of invoice numbers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-diagram.svg" alt="Diagram: Write a query to find gaps in a sequence of invoice numbers." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-diagram.svg" alt="Diagram: Write a query to find gaps in a sequence of invoice numbers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-sticky.svg" alt="Sticky Note: Write a query to find gaps in a sequence of invoice numbers." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-to-find-gaps-in-a-sequence-of-invoice-numbers-sticky.svg" alt="Sticky Note: Write a query to find gaps in a sequence of invoice numbers." width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ WHERE i2.invoice_num > i1.invoice_num + 1;
 
 ### Q21: Write a query using `ROLLUP` to add subtotals and a grand total.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-handwritten.svg" alt="Handwritten: Write a query using `ROLLUP` to add subtotals and a grand total." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-handwritten.svg" alt="Handwritten: Write a query using `ROLLUP` to add subtotals and a grand total." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-diagram.svg" alt="Diagram: Write a query using `ROLLUP` to add subtotals and a grand total." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-diagram.svg" alt="Diagram: Write a query using `ROLLUP` to add subtotals and a grand total." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-sticky.svg" alt="Sticky Note: Write a query using `ROLLUP` to add subtotals and a grand total." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/write-a-query-using-rollup-to-add-subtotals-and-a-grand-total-sticky.svg" alt="Sticky Note: Write a query using `ROLLUP` to add subtotals and a grand total." width="30%">
 </a>
 
 
@@ -527,14 +527,14 @@ GROUP BY dept_id, status WITH ROLLUP;
 
 ### Q22: Use `COALESCE` to handle NULLs in a report.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-handwritten.svg" alt="Handwritten: Use `COALESCE` to handle NULLs in a report." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-handwritten.svg" alt="Handwritten: Use `COALESCE` to handle NULLs in a report." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-diagram.svg" alt="Diagram: Use `COALESCE` to handle NULLs in a report." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-diagram.svg" alt="Diagram: Use `COALESCE` to handle NULLs in a report." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-sticky.svg" alt="Sticky Note: Use `COALESCE` to handle NULLs in a report." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/use-coalesce-to-handle-nulls-in-a-report-sticky.svg" alt="Sticky Note: Use `COALESCE` to handle NULLs in a report." width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ FROM customers;
 
 ### Q23: What are the normal forms? Explain 1NF, 2NF, and 3NF.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-handwritten.svg" alt="Handwritten: What are the normal forms? Explain 1NF, 2NF, and 3NF." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-handwritten.svg" alt="Handwritten: What are the normal forms? Explain 1NF, 2NF, and 3NF." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-diagram.svg" alt="Diagram: What are the normal forms? Explain 1NF, 2NF, and 3NF." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-diagram.svg" alt="Diagram: What are the normal forms? Explain 1NF, 2NF, and 3NF." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-sticky.svg" alt="Sticky Note: What are the normal forms? Explain 1NF, 2NF, and 3NF." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-normal-forms-explain-1nf-2nf-and-3nf-sticky.svg" alt="Sticky Note: What are the normal forms? Explain 1NF, 2NF, and 3NF." width="30%">
 </a>
 
 
@@ -581,14 +581,14 @@ CREATE TABLE employee_phones (
 
 ### Q24: What is denormalization and when should you use it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is denormalization and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is denormalization and when should you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is denormalization and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is denormalization and when should you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is denormalization and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-denormalization-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is denormalization and when should you use it?" width="30%">
 </a>
 
 
@@ -605,14 +605,14 @@ CREATE TABLE products (
 
 ### Q25: Explain the difference between a primary key and a unique key.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-handwritten.svg" alt="Handwritten: Explain the difference between a primary key and a unique key." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-handwritten.svg" alt="Handwritten: Explain the difference between a primary key and a unique key." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-diagram.svg" alt="Diagram: Explain the difference between a primary key and a unique key." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-diagram.svg" alt="Diagram: Explain the difference between a primary key and a unique key." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-sticky.svg" alt="Sticky Note: Explain the difference between a primary key and a unique key." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-difference-between-a-primary-key-and-a-unique-key-sticky.svg" alt="Sticky Note: Explain the difference between a primary key and a unique key." width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ CREATE TABLE users (
 
 ### Q26: What is a foreign key and what referential actions exist?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-handwritten.svg" alt="Handwritten: What is a foreign key and what referential actions exist?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-handwritten.svg" alt="Handwritten: What is a foreign key and what referential actions exist?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-diagram.svg" alt="Diagram: What is a foreign key and what referential actions exist?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-diagram.svg" alt="Diagram: What is a foreign key and what referential actions exist?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-sticky.svg" alt="Sticky Note: What is a foreign key and what referential actions exist?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-foreign-key-and-what-referential-actions-exist-sticky.svg" alt="Sticky Note: What is a foreign key and what referential actions exist?" width="30%">
 </a>
 
 
@@ -653,14 +653,14 @@ CREATE TABLE orders (
 
 ### Q27: What is the difference between a logical delete and a physical delete?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-handwritten.svg" alt="Handwritten: What is the difference between a logical delete and a physical delete?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-handwritten.svg" alt="Handwritten: What is the difference between a logical delete and a physical delete?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-diagram.svg" alt="Diagram: What is the difference between a logical delete and a physical delete?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-diagram.svg" alt="Diagram: What is the difference between a logical delete and a physical delete?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-sticky.svg" alt="Sticky Note: What is the difference between a logical delete and a physical delete?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-a-logical-delete-and-a-physical-delete-sticky.svg" alt="Sticky Note: What is the difference between a logical delete and a physical delete?" width="30%">
 </a>
 
 
@@ -676,14 +676,14 @@ DELETE FROM users WHERE id = 123;
 
 ### Q28: Explain one-to-one, one-to-many, and many-to-many relationships with examples.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-handwritten.svg" alt="Handwritten: Explain one-to-one, one-to-many, and many-to-many relationships with examples." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-handwritten.svg" alt="Handwritten: Explain one-to-one, one-to-many, and many-to-many relationships with examples." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-diagram.svg" alt="Diagram: Explain one-to-one, one-to-many, and many-to-many relationships with examples." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-diagram.svg" alt="Diagram: Explain one-to-one, one-to-many, and many-to-many relationships with examples." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-sticky.svg" alt="Sticky Note: Explain one-to-one, one-to-many, and many-to-many relationships with examples." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-one-to-one-one-to-many-and-many-to-many-relationships-with-examples-sticky.svg" alt="Sticky Note: Explain one-to-one, one-to-many, and many-to-many relationships with examples." width="30%">
 </a>
 
 
@@ -716,14 +716,14 @@ CREATE TABLE course_student (
 
 ### Q29: What is a surrogate key? When would you use it over a natural key?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-handwritten.svg" alt="Handwritten: What is a surrogate key? When would you use it over a natural key?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-handwritten.svg" alt="Handwritten: What is a surrogate key? When would you use it over a natural key?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-diagram.svg" alt="Diagram: What is a surrogate key? When would you use it over a natural key?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-diagram.svg" alt="Diagram: What is a surrogate key? When would you use it over a natural key?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-sticky.svg" alt="Sticky Note: What is a surrogate key? When would you use it over a natural key?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-surrogate-key-when-would-you-use-it-over-a-natural-key-sticky.svg" alt="Sticky Note: What is a surrogate key? When would you use it over a natural key?" width="30%">
 </a>
 
 
@@ -745,14 +745,14 @@ CREATE TABLE phones (
 
 ### Q31: What is an ER diagram and what are its core components?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-handwritten.svg" alt="Handwritten: What is an ER diagram and what are its core components?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-handwritten.svg" alt="Handwritten: What is an ER diagram and what are its core components?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-diagram.svg" alt="Diagram: What is an ER diagram and what are its core components?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-diagram.svg" alt="Diagram: What is an ER diagram and what are its core components?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-sticky.svg" alt="Sticky Note: What is an ER diagram and what are its core components?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-er-diagram-and-what-are-its-core-components-sticky.svg" alt="Sticky Note: What is an ER diagram and what are its core components?" width="30%">
 </a>
 
 
@@ -760,14 +760,14 @@ CREATE TABLE phones (
 
 ### Q32: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-handwritten.svg" alt="Handwritten: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-handwritten.svg" alt="Handwritten: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-diagram.svg" alt="Diagram: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-diagram.svg" alt="Diagram: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-sticky.svg" alt="Sticky Note: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-tinyint-smallint-mediumint-int-and-bigint-sticky.svg" alt="Sticky Note: What is the difference between `TINYINT`, `SMALLINT`, `MEDIUMINT`, `INT`, and `BIGINT`?" width="30%">
 </a>
 
 
@@ -775,14 +775,14 @@ CREATE TABLE phones (
 
 ### Q33: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-handwritten.svg" alt="Handwritten: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-handwritten.svg" alt="Handwritten: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-diagram.svg" alt="Diagram: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-diagram.svg" alt="Diagram: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-sticky.svg" alt="Sticky Note: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-model-hierarchical-data-e-g-categories-with-subcategories-in-mysql-sticky.svg" alt="Sticky Note: How do you model hierarchical data (e.g., categories with subcategories) in MySQL?" width="30%">
 </a>
 
 
@@ -803,14 +803,14 @@ SELECT * FROM categories WHERE parent_id = 5;
 
 ### Q34: What is the difference between `DECIMAL` and `FLOAT`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-handwritten.svg" alt="Handwritten: What is the difference between `DECIMAL` and `FLOAT`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-handwritten.svg" alt="Handwritten: What is the difference between `DECIMAL` and `FLOAT`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-diagram.svg" alt="Diagram: What is the difference between `DECIMAL` and `FLOAT`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-diagram.svg" alt="Diagram: What is the difference between `DECIMAL` and `FLOAT`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-sticky.svg" alt="Sticky Note: What is the difference between `DECIMAL` and `FLOAT`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-decimal-and-float-sticky.svg" alt="Sticky Note: What is the difference between `DECIMAL` and `FLOAT`?" width="30%">
 </a>
 
 
@@ -825,14 +825,14 @@ CREATE TABLE transactions (
 
 ### Q35: Should you store images or files in the database? Why or why not?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-handwritten.svg" alt="Handwritten: Should you store images or files in the database? Why or why not?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-handwritten.svg" alt="Handwritten: Should you store images or files in the database? Why or why not?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-diagram.svg" alt="Diagram: Should you store images or files in the database? Why or why not?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-diagram.svg" alt="Diagram: Should you store images or files in the database? Why or why not?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-sticky.svg" alt="Sticky Note: Should you store images or files in the database? Why or why not?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/should-you-store-images-or-files-in-the-database-why-or-why-not-sticky.svg" alt="Sticky Note: Should you store images or files in the database? Why or why not?" width="30%">
 </a>
 
 
@@ -840,14 +840,14 @@ CREATE TABLE transactions (
 
 ### Q36: What is an enum column and what are its drawbacks?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-handwritten.svg" alt="Handwritten: What is an enum column and what are its drawbacks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-handwritten.svg" alt="Handwritten: What is an enum column and what are its drawbacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-diagram.svg" alt="Diagram: What is an enum column and what are its drawbacks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-diagram.svg" alt="Diagram: What is an enum column and what are its drawbacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-sticky.svg" alt="Sticky Note: What is an enum column and what are its drawbacks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-an-enum-column-and-what-are-its-drawbacks-sticky.svg" alt="Sticky Note: What is an enum column and what are its drawbacks?" width="30%">
 </a>
 
 
@@ -861,14 +861,14 @@ CREATE TABLE orders (
 
 ### Q37: Explain the `ON DELETE CASCADE` behavior in foreign keys.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-handwritten.svg" alt="Handwritten: Explain the `ON DELETE CASCADE` behavior in foreign keys." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-handwritten.svg" alt="Handwritten: Explain the `ON DELETE CASCADE` behavior in foreign keys." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-diagram.svg" alt="Diagram: Explain the `ON DELETE CASCADE` behavior in foreign keys." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-diagram.svg" alt="Diagram: Explain the `ON DELETE CASCADE` behavior in foreign keys." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-sticky.svg" alt="Sticky Note: Explain the `ON DELETE CASCADE` behavior in foreign keys." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-the-on-delete-cascade-behavior-in-foreign-keys-sticky.svg" alt="Sticky Note: Explain the `ON DELETE CASCADE` behavior in foreign keys." width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ CREATE TABLE orders (
 
 ### Q38: How does a B-tree index work in MySQL?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-handwritten.svg" alt="Handwritten: How does a B-tree index work in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-handwritten.svg" alt="Handwritten: How does a B-tree index work in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-diagram.svg" alt="Diagram: How does a B-tree index work in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-diagram.svg" alt="Diagram: How does a B-tree index work in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-sticky.svg" alt="Sticky Note: How does a B-tree index work in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-a-b-tree-index-work-in-mysql-sticky.svg" alt="Sticky Note: How does a B-tree index work in MySQL?" width="30%">
 </a>
 
 
@@ -895,14 +895,14 @@ CREATE TABLE orders (
 
 ### Q39: What is a composite index and what is the leftmost prefix rule?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-handwritten.svg" alt="Handwritten: What is a composite index and what is the leftmost prefix rule?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-handwritten.svg" alt="Handwritten: What is a composite index and what is the leftmost prefix rule?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-diagram.svg" alt="Diagram: What is a composite index and what is the leftmost prefix rule?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-diagram.svg" alt="Diagram: What is a composite index and what is the leftmost prefix rule?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-sticky.svg" alt="Sticky Note: What is a composite index and what is the leftmost prefix rule?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-composite-index-and-what-is-the-leftmost-prefix-rule-sticky.svg" alt="Sticky Note: What is a composite index and what is the leftmost prefix rule?" width="30%">
 </a>
 
 
@@ -923,14 +923,14 @@ SELECT * FROM employees WHERE dept_id = 5;
 
 ### Q40: How do you use `EXPLAIN` to diagnose a slow query?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-handwritten.svg" alt="Handwritten: How do you use `EXPLAIN` to diagnose a slow query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-handwritten.svg" alt="Handwritten: How do you use `EXPLAIN` to diagnose a slow query?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-diagram.svg" alt="Diagram: How do you use `EXPLAIN` to diagnose a slow query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-diagram.svg" alt="Diagram: How do you use `EXPLAIN` to diagnose a slow query?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-sticky.svg" alt="Sticky Note: How do you use `EXPLAIN` to diagnose a slow query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-explain-to-diagnose-a-slow-query-sticky.svg" alt="Sticky Note: How do you use `EXPLAIN` to diagnose a slow query?" width="30%">
 </a>
 
 
@@ -942,14 +942,14 @@ EXPLAIN SELECT * FROM orders WHERE customer_id = 42\G
 
 ### Q41: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-handwritten.svg" alt="Handwritten: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-handwritten.svg" alt="Handwritten: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-diagram.svg" alt="Diagram: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-diagram.svg" alt="Diagram: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-sticky.svg" alt="Sticky Note: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-causes-a-using-filesort-in-explain-and-how-do-you-fix-it-sticky.svg" alt="Sticky Note: What causes a `Using filesort` in `EXPLAIN` and how do you fix it?" width="30%">
 </a>
 
 
@@ -965,14 +965,14 @@ CREATE INDEX idx_orders_created_at ON orders (created_at);
 
 ### Q42: What is a covering index?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-handwritten.svg" alt="Handwritten: What is a covering index?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-handwritten.svg" alt="Handwritten: What is a covering index?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-diagram.svg" alt="Diagram: What is a covering index?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-diagram.svg" alt="Diagram: What is a covering index?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-sticky.svg" alt="Sticky Note: What is a covering index?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-covering-index-sticky.svg" alt="Sticky Note: What is a covering index?" width="30%">
 </a>
 
 
@@ -987,14 +987,14 @@ SELECT dept_id, name, salary FROM employees WHERE dept_id = 5;
 
 ### Q43: When would an index hurt performance?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-handwritten.svg" alt="Handwritten: When would an index hurt performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-handwritten.svg" alt="Handwritten: When would an index hurt performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-diagram.svg" alt="Diagram: When would an index hurt performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-diagram.svg" alt="Diagram: When would an index hurt performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-sticky.svg" alt="Sticky Note: When would an index hurt performance?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/when-would-an-index-hurt-performance-sticky.svg" alt="Sticky Note: When would an index hurt performance?" width="30%">
 </a>
 
 
@@ -1002,14 +1002,14 @@ SELECT dept_id, name, salary FROM employees WHERE dept_id = 5;
 
 ### Q44: What is cardinality and why does it matter for indexing?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-handwritten.svg" alt="Handwritten: What is cardinality and why does it matter for indexing?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-handwritten.svg" alt="Handwritten: What is cardinality and why does it matter for indexing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-diagram.svg" alt="Diagram: What is cardinality and why does it matter for indexing?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-diagram.svg" alt="Diagram: What is cardinality and why does it matter for indexing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-sticky.svg" alt="Sticky Note: What is cardinality and why does it matter for indexing?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-cardinality-and-why-does-it-matter-for-indexing-sticky.svg" alt="Sticky Note: What is cardinality and why does it matter for indexing?" width="30%">
 </a>
 
 
@@ -1017,14 +1017,14 @@ SELECT dept_id, name, salary FROM employees WHERE dept_id = 5;
 
 ### Q45: What is a full table scan and when does MySQL choose one?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-handwritten.svg" alt="Handwritten: What is a full table scan and when does MySQL choose one?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-handwritten.svg" alt="Handwritten: What is a full table scan and when does MySQL choose one?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-diagram.svg" alt="Diagram: What is a full table scan and when does MySQL choose one?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-diagram.svg" alt="Diagram: What is a full table scan and when does MySQL choose one?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-sticky.svg" alt="Sticky Note: What is a full table scan and when does MySQL choose one?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-full-table-scan-and-when-does-mysql-choose-one-sticky.svg" alt="Sticky Note: What is a full table scan and when does MySQL choose one?" width="30%">
 </a>
 
 
@@ -1032,14 +1032,14 @@ SELECT dept_id, name, salary FROM employees WHERE dept_id = 5;
 
 ### Q46: How do you optimize a `LIKE '%term'` query?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-handwritten.svg" alt="Handwritten: How do you optimize a `LIKE '%term'` query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-handwritten.svg" alt="Handwritten: How do you optimize a `LIKE '%term'` query?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-diagram.svg" alt="Diagram: How do you optimize a `LIKE '%term'` query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-diagram.svg" alt="Diagram: How do you optimize a `LIKE '%term'` query?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-sticky.svg" alt="Sticky Note: How do you optimize a `LIKE '%term'` query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-optimize-a-like-term-query-sticky.svg" alt="Sticky Note: How do you optimize a `LIKE '%term'` query?" width="30%">
 </a>
 
 
@@ -1056,14 +1056,14 @@ SELECT * FROM articles WHERE MATCH(body) AGAINST('database' IN BOOLEAN MODE);
 
 ### Q47: What is a `SPATIAL` index and when do you use it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-handwritten.svg" alt="Handwritten: What is a `SPATIAL` index and when do you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-handwritten.svg" alt="Handwritten: What is a `SPATIAL` index and when do you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-diagram.svg" alt="Diagram: What is a `SPATIAL` index and when do you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-diagram.svg" alt="Diagram: What is a `SPATIAL` index and when do you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-sticky.svg" alt="Sticky Note: What is a `SPATIAL` index and when do you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-spatial-index-and-when-do-you-use-it-sticky.svg" alt="Sticky Note: What is a `SPATIAL` index and when do you use it?" width="30%">
 </a>
 
 
@@ -1084,14 +1084,14 @@ WHERE ST_Distance_Sphere(coords, ST_SRID(POINT(-122.4, 37.8), 4326)) <= 10000;
 
 ### Q48: What is index cardinality and how do you check it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-handwritten.svg" alt="Handwritten: What is index cardinality and how do you check it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-handwritten.svg" alt="Handwritten: What is index cardinality and how do you check it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-diagram.svg" alt="Diagram: What is index cardinality and how do you check it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-diagram.svg" alt="Diagram: What is index cardinality and how do you check it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-sticky.svg" alt="Sticky Note: What is index cardinality and how do you check it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-index-cardinality-and-how-do-you-check-it-sticky.svg" alt="Sticky Note: What is index cardinality and how do you check it?" width="30%">
 </a>
 
 
@@ -1104,14 +1104,14 @@ SHOW INDEX FROM employees;
 
 ### Q49: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-handwritten.svg" alt="Handwritten: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-handwritten.svg" alt="Handwritten: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-diagram.svg" alt="Diagram: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-diagram.svg" alt="Diagram: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-sticky.svg" alt="Sticky Note: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-explain-and-explain-analyze-mysql-8-0-18-sticky.svg" alt="Sticky Note: What is the difference between `EXPLAIN` and `EXPLAIN ANALYZE` (MySQL 8.0.18+)?" width="30%">
 </a>
 
 
@@ -1124,14 +1124,14 @@ EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
 
 ### Q50: How do you detect and fix unused indexes?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-handwritten.svg" alt="Handwritten: How do you detect and fix unused indexes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-handwritten.svg" alt="Handwritten: How do you detect and fix unused indexes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-diagram.svg" alt="Diagram: How do you detect and fix unused indexes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-diagram.svg" alt="Diagram: How do you detect and fix unused indexes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-sticky.svg" alt="Sticky Note: How do you detect and fix unused indexes?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-detect-and-fix-unused-indexes-sticky.svg" alt="Sticky Note: How do you detect and fix unused indexes?" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ ORDER BY count_write DESC;
 
 ### Q51: What is `MRR` (Multi-Range Read) optimization?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-handwritten.svg" alt="Handwritten: What is `MRR` (Multi-Range Read) optimization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-handwritten.svg" alt="Handwritten: What is `MRR` (Multi-Range Read) optimization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-diagram.svg" alt="Diagram: What is `MRR` (Multi-Range Read) optimization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-diagram.svg" alt="Diagram: What is `MRR` (Multi-Range Read) optimization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-sticky.svg" alt="Sticky Note: What is `MRR` (Multi-Range Read) optimization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mrr-multi-range-read-optimization-sticky.svg" alt="Sticky Note: What is `MRR` (Multi-Range Read) optimization?" width="30%">
 </a>
 
 
@@ -1161,14 +1161,14 @@ ORDER BY count_write DESC;
 
 ### Q52: What is `ICP` (Index Condition Pushdown)?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-handwritten.svg" alt="Handwritten: What is `ICP` (Index Condition Pushdown)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-handwritten.svg" alt="Handwritten: What is `ICP` (Index Condition Pushdown)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-diagram.svg" alt="Diagram: What is `ICP` (Index Condition Pushdown)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-diagram.svg" alt="Diagram: What is `ICP` (Index Condition Pushdown)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-sticky.svg" alt="Sticky Note: What is `ICP` (Index Condition Pushdown)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-icp-index-condition-pushdown-sticky.svg" alt="Sticky Note: What is `ICP` (Index Condition Pushdown)?" width="30%">
 </a>
 
 
@@ -1180,14 +1180,14 @@ ORDER BY count_write DESC;
 
 ### Q53: Explain ACID properties.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-handwritten.svg" alt="Handwritten: Explain ACID properties." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-handwritten.svg" alt="Handwritten: Explain ACID properties." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-diagram.svg" alt="Diagram: Explain ACID properties." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-diagram.svg" alt="Diagram: Explain ACID properties." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-sticky.svg" alt="Sticky Note: Explain ACID properties." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-acid-properties-sticky.svg" alt="Sticky Note: Explain ACID properties." width="30%">
 </a>
 
 
@@ -1199,14 +1199,14 @@ ORDER BY count_write DESC;
 
 ### Q54: What are the four transaction isolation levels in MySQL?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-handwritten.svg" alt="Handwritten: What are the four transaction isolation levels in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-handwritten.svg" alt="Handwritten: What are the four transaction isolation levels in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-diagram.svg" alt="Diagram: What are the four transaction isolation levels in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-diagram.svg" alt="Diagram: What are the four transaction isolation levels in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-sticky.svg" alt="Sticky Note: What are the four transaction isolation levels in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-the-four-transaction-isolation-levels-in-mysql-sticky.svg" alt="Sticky Note: What are the four transaction isolation levels in MySQL?" width="30%">
 </a>
 
 
@@ -1222,14 +1222,14 @@ SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED;
 
 ### Q55: What is a dirty read? Give an example.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-handwritten.svg" alt="Handwritten: What is a dirty read? Give an example." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-handwritten.svg" alt="Handwritten: What is a dirty read? Give an example." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-diagram.svg" alt="Diagram: What is a dirty read? Give an example." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-diagram.svg" alt="Diagram: What is a dirty read? Give an example." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-sticky.svg" alt="Sticky Note: What is a dirty read? Give an example." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-dirty-read-give-an-example-sticky.svg" alt="Sticky Note: What is a dirty read? Give an example." width="30%">
 </a>
 
 
@@ -1243,14 +1243,14 @@ Transaction A: ROLLBACK;                                         -- balance is b
 
 ### Q56: What is a deadlock and how does MySQL resolve it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-handwritten.svg" alt="Handwritten: What is a deadlock and how does MySQL resolve it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-handwritten.svg" alt="Handwritten: What is a deadlock and how does MySQL resolve it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-diagram.svg" alt="Diagram: What is a deadlock and how does MySQL resolve it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-diagram.svg" alt="Diagram: What is a deadlock and how does MySQL resolve it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-sticky.svg" alt="Sticky Note: What is a deadlock and how does MySQL resolve it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-deadlock-and-how-does-mysql-resolve-it-sticky.svg" alt="Sticky Note: What is a deadlock and how does MySQL resolve it?" width="30%">
 </a>
 
 
@@ -1266,14 +1266,14 @@ UPDATE products SET stock = stock - 1 WHERE id = 2;  -- waits for B's lock
 
 ### Q57: Explain pessimistic vs. optimistic locking.
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-handwritten.svg" alt="Handwritten: Explain pessimistic vs. optimistic locking." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-handwritten.svg" alt="Handwritten: Explain pessimistic vs. optimistic locking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-diagram.svg" alt="Diagram: Explain pessimistic vs. optimistic locking." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-diagram.svg" alt="Diagram: Explain pessimistic vs. optimistic locking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-sticky.svg" alt="Sticky Note: Explain pessimistic vs. optimistic locking." width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-pessimistic-vs-optimistic-locking-sticky.svg" alt="Sticky Note: Explain pessimistic vs. optimistic locking." width="30%">
 </a>
 
 
@@ -1295,14 +1295,14 @@ WHERE id = 1 AND version = 5;
 
 ### Q58: What is a gap lock in InnoDB?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-handwritten.svg" alt="Handwritten: What is a gap lock in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-handwritten.svg" alt="Handwritten: What is a gap lock in InnoDB?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-diagram.svg" alt="Diagram: What is a gap lock in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-diagram.svg" alt="Diagram: What is a gap lock in InnoDB?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-sticky.svg" alt="Sticky Note: What is a gap lock in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-gap-lock-in-innodb-sticky.svg" alt="Sticky Note: What is a gap lock in InnoDB?" width="30%">
 </a>
 
 
@@ -1316,14 +1316,14 @@ SELECT * FROM products WHERE id BETWEEN 10 AND 20 FOR UPDATE;
 
 ### Q59: What is `SELECT ... FOR UPDATE` and when would you use it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is `SELECT ... FOR UPDATE` and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is `SELECT ... FOR UPDATE` and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is `SELECT ... FOR UPDATE` and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is `SELECT ... FOR UPDATE` and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is `SELECT ... FOR UPDATE` and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-select-for-update-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is `SELECT ... FOR UPDATE` and when would you use it?" width="30%">
 </a>
 
 
@@ -1340,14 +1340,14 @@ COMMIT;
 
 ### Q60: What is `NOWAIT` and `SKIP LOCKED`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-handwritten.svg" alt="Handwritten: What is `NOWAIT` and `SKIP LOCKED`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-handwritten.svg" alt="Handwritten: What is `NOWAIT` and `SKIP LOCKED`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-diagram.svg" alt="Diagram: What is `NOWAIT` and `SKIP LOCKED`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-diagram.svg" alt="Diagram: What is `NOWAIT` and `SKIP LOCKED`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-sticky.svg" alt="Sticky Note: What is `NOWAIT` and `SKIP LOCKED`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-nowait-and-skip-locked-sticky.svg" alt="Sticky Note: What is `NOWAIT` and `SKIP LOCKED`?" width="30%">
 </a>
 
 
@@ -1364,14 +1364,14 @@ FOR UPDATE SKIP LOCKED;
 
 ### Q61: How do transaction logs (redo log, undo log) work?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-handwritten.svg" alt="Handwritten: How do transaction logs (redo log, undo log) work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-handwritten.svg" alt="Handwritten: How do transaction logs (redo log, undo log) work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-diagram.svg" alt="Diagram: How do transaction logs (redo log, undo log) work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-diagram.svg" alt="Diagram: How do transaction logs (redo log, undo log) work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-sticky.svg" alt="Sticky Note: How do transaction logs (redo log, undo log) work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-transaction-logs-redo-log-undo-log-work-sticky.svg" alt="Sticky Note: How do transaction logs (redo log, undo log) work?" width="30%">
 </a>
 
 
@@ -1379,14 +1379,14 @@ FOR UPDATE SKIP LOCKED;
 
 ### Q62: What is the difference between `LOCK TABLES` and row-level locking?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-handwritten.svg" alt="Handwritten: What is the difference between `LOCK TABLES` and row-level locking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-handwritten.svg" alt="Handwritten: What is the difference between `LOCK TABLES` and row-level locking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-diagram.svg" alt="Diagram: What is the difference between `LOCK TABLES` and row-level locking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-diagram.svg" alt="Diagram: What is the difference between `LOCK TABLES` and row-level locking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-sticky.svg" alt="Sticky Note: What is the difference between `LOCK TABLES` and row-level locking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-lock-tables-and-row-level-locking-sticky.svg" alt="Sticky Note: What is the difference between `LOCK TABLES` and row-level locking?" width="30%">
 </a>
 
 
@@ -1394,14 +1394,14 @@ FOR UPDATE SKIP LOCKED;
 
 ### Q63: What is MVCC and how does it enable consistent reads without locks?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-handwritten.svg" alt="Handwritten: What is MVCC and how does it enable consistent reads without locks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-handwritten.svg" alt="Handwritten: What is MVCC and how does it enable consistent reads without locks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-diagram.svg" alt="Diagram: What is MVCC and how does it enable consistent reads without locks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-diagram.svg" alt="Diagram: What is MVCC and how does it enable consistent reads without locks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-sticky.svg" alt="Sticky Note: What is MVCC and how does it enable consistent reads without locks?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mvcc-and-how-does-it-enable-consistent-reads-without-locks-sticky.svg" alt="Sticky Note: What is MVCC and how does it enable consistent reads without locks?" width="30%">
 </a>
 
 
@@ -1413,14 +1413,14 @@ FOR UPDATE SKIP LOCKED;
 
 ### Q64: What is the difference between the Laravel Query Builder and Eloquent ORM?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-handwritten.svg" alt="Handwritten: What is the difference between the Laravel Query Builder and Eloquent ORM?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-handwritten.svg" alt="Handwritten: What is the difference between the Laravel Query Builder and Eloquent ORM?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-diagram.svg" alt="Diagram: What is the difference between the Laravel Query Builder and Eloquent ORM?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-diagram.svg" alt="Diagram: What is the difference between the Laravel Query Builder and Eloquent ORM?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-sticky.svg" alt="Sticky Note: What is the difference between the Laravel Query Builder and Eloquent ORM?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-the-laravel-query-builder-and-eloquent-orm-sticky.svg" alt="Sticky Note: What is the difference between the Laravel Query Builder and Eloquent ORM?" width="30%">
 </a>
 
 
@@ -1436,14 +1436,14 @@ $users = User::where('active', true)->get();
 
 ### Q65: How do you prevent SQL injection in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-handwritten.svg" alt="Handwritten: How do you prevent SQL injection in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-handwritten.svg" alt="Handwritten: How do you prevent SQL injection in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-diagram.svg" alt="Diagram: How do you prevent SQL injection in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-diagram.svg" alt="Diagram: How do you prevent SQL injection in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-sticky.svg" alt="Sticky Note: How do you prevent SQL injection in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-prevent-sql-injection-in-laravel-sticky.svg" alt="Sticky Note: How do you prevent SQL injection in Laravel?" width="30%">
 </a>
 
 
@@ -1459,14 +1459,14 @@ DB::statement("SELECT * FROM users WHERE email = '$userInput'");
 
 ### Q66: What is the N+1 query problem and how do you fix it in Eloquent?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-handwritten.svg" alt="Handwritten: What is the N+1 query problem and how do you fix it in Eloquent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-handwritten.svg" alt="Handwritten: What is the N+1 query problem and how do you fix it in Eloquent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-diagram.svg" alt="Diagram: What is the N+1 query problem and how do you fix it in Eloquent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-diagram.svg" alt="Diagram: What is the N+1 query problem and how do you fix it in Eloquent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-sticky.svg" alt="Sticky Note: What is the N+1 query problem and how do you fix it in Eloquent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-n-1-query-problem-and-how-do-you-fix-it-in-eloquent-sticky.svg" alt="Sticky Note: What is the N+1 query problem and how do you fix it in Eloquent?" width="30%">
 </a>
 
 
@@ -1488,14 +1488,14 @@ foreach ($posts as $post) {
 
 ### Q67: What is lazy eager loading and when is it useful?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-handwritten.svg" alt="Handwritten: What is lazy eager loading and when is it useful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-handwritten.svg" alt="Handwritten: What is lazy eager loading and when is it useful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-diagram.svg" alt="Diagram: What is lazy eager loading and when is it useful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-diagram.svg" alt="Diagram: What is lazy eager loading and when is it useful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-sticky.svg" alt="Sticky Note: What is lazy eager loading and when is it useful?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-lazy-eager-loading-and-when-is-it-useful-sticky.svg" alt="Sticky Note: What is lazy eager loading and when is it useful?" width="30%">
 </a>
 
 
@@ -1510,14 +1510,14 @@ if (auth()->user()->canSeeComments()) {
 
 ### Q68: How do you write a raw query in Laravel safely?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-handwritten.svg" alt="Handwritten: How do you write a raw query in Laravel safely?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-handwritten.svg" alt="Handwritten: How do you write a raw query in Laravel safely?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-diagram.svg" alt="Diagram: How do you write a raw query in Laravel safely?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-diagram.svg" alt="Diagram: How do you write a raw query in Laravel safely?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-sticky.svg" alt="Sticky Note: How do you write a raw query in Laravel safely?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-write-a-raw-query-in-laravel-safely-sticky.svg" alt="Sticky Note: How do you write a raw query in Laravel safely?" width="30%">
 </a>
 
 
@@ -1533,14 +1533,14 @@ $users = DB::table('users')
 
 ### Q69: Explain Laravel migrations → what are `up()` and `down()`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-handwritten.svg" alt="Handwritten: Explain Laravel migrations → what are `up()` and `down()`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-handwritten.svg" alt="Handwritten: Explain Laravel migrations → what are `up()` and `down()`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-diagram.svg" alt="Diagram: Explain Laravel migrations → what are `up()` and `down()`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-diagram.svg" alt="Diagram: Explain Laravel migrations → what are `up()` and `down()`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-sticky.svg" alt="Sticky Note: Explain Laravel migrations → what are `up()` and `down()`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/explain-laravel-migrations-what-are-up-and-down-sticky.svg" alt="Sticky Note: Explain Laravel migrations → what are `up()` and `down()`?" width="30%">
 </a>
 
 
@@ -1567,14 +1567,14 @@ public function down(): void
 
 ### Q70: How do you seed a database with relationships in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-handwritten.svg" alt="Handwritten: How do you seed a database with relationships in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-handwritten.svg" alt="Handwritten: How do you seed a database with relationships in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-diagram.svg" alt="Diagram: How do you seed a database with relationships in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-diagram.svg" alt="Diagram: How do you seed a database with relationships in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-sticky.svg" alt="Sticky Note: How do you seed a database with relationships in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-seed-a-database-with-relationships-in-laravel-sticky.svg" alt="Sticky Note: How do you seed a database with relationships in Laravel?" width="30%">
 </a>
 
 
@@ -1595,14 +1595,14 @@ class DatabaseSeeder extends Seeder
 
 ### Q71: What is the difference between `withCount` and `loadCount`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-handwritten.svg" alt="Handwritten: What is the difference between `withCount` and `loadCount`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-handwritten.svg" alt="Handwritten: What is the difference between `withCount` and `loadCount`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-diagram.svg" alt="Diagram: What is the difference between `withCount` and `loadCount`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-diagram.svg" alt="Diagram: What is the difference between `withCount` and `loadCount`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-sticky.svg" alt="Sticky Note: What is the difference between `withCount` and `loadCount`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-withcount-and-loadcount-sticky.svg" alt="Sticky Note: What is the difference between `withCount` and `loadCount`?" width="30%">
 </a>
 
 
@@ -1621,14 +1621,14 @@ echo $post->comments_count;
 
 ### Q72: How do you use database transactions in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-handwritten.svg" alt="Handwritten: How do you use database transactions in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-handwritten.svg" alt="Handwritten: How do you use database transactions in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-diagram.svg" alt="Diagram: How do you use database transactions in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-diagram.svg" alt="Diagram: How do you use database transactions in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-sticky.svg" alt="Sticky Note: How do you use database transactions in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-database-transactions-in-laravel-sticky.svg" alt="Sticky Note: How do you use database transactions in Laravel?" width="30%">
 </a>
 
 
@@ -1644,14 +1644,14 @@ DB::transaction(function () {
 
 ### Q73: What is the difference between `chunk()` and `cursor()` for processing large datasets?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-handwritten.svg" alt="Handwritten: What is the difference between `chunk()` and `cursor()` for processing large datasets?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-handwritten.svg" alt="Handwritten: What is the difference between `chunk()` and `cursor()` for processing large datasets?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-diagram.svg" alt="Diagram: What is the difference between `chunk()` and `cursor()` for processing large datasets?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-diagram.svg" alt="Diagram: What is the difference between `chunk()` and `cursor()` for processing large datasets?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-sticky.svg" alt="Sticky Note: What is the difference between `chunk()` and `cursor()` for processing large datasets?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-chunk-and-cursor-for-processing-large-datasets-sticky.svg" alt="Sticky Note: What is the difference between `chunk()` and `cursor()` for processing large datasets?" width="30%">
 </a>
 
 
@@ -1673,14 +1673,14 @@ foreach (Post::cursor() as $post) {
 
 ### Q74: How do you use scopes to DRY up query logic?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-handwritten.svg" alt="Handwritten: How do you use scopes to DRY up query logic?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-handwritten.svg" alt="Handwritten: How do you use scopes to DRY up query logic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-diagram.svg" alt="Diagram: How do you use scopes to DRY up query logic?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-diagram.svg" alt="Diagram: How do you use scopes to DRY up query logic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-sticky.svg" alt="Sticky Note: How do you use scopes to DRY up query logic?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-scopes-to-dry-up-query-logic-sticky.svg" alt="Sticky Note: How do you use scopes to DRY up query logic?" width="30%">
 </a>
 
 
@@ -1706,14 +1706,14 @@ $posts = Post::published()->byCategory(5)->get();
 
 ### Q75: What is the difference between `belongsTo` and `hasMany`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-handwritten.svg" alt="Handwritten: What is the difference between `belongsTo` and `hasMany`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-handwritten.svg" alt="Handwritten: What is the difference between `belongsTo` and `hasMany`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-diagram.svg" alt="Diagram: What is the difference between `belongsTo` and `hasMany`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-diagram.svg" alt="Diagram: What is the difference between `belongsTo` and `hasMany`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-sticky.svg" alt="Sticky Note: What is the difference between `belongsTo` and `hasMany`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-belongsto-and-hasmany-sticky.svg" alt="Sticky Note: What is the difference between `belongsTo` and `hasMany`?" width="30%">
 </a>
 
 
@@ -1740,14 +1740,14 @@ class User extends Model
 
 ### Q76: How do you define a many-to-many relationship in Eloquent?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-handwritten.svg" alt="Handwritten: How do you define a many-to-many relationship in Eloquent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-handwritten.svg" alt="Handwritten: How do you define a many-to-many relationship in Eloquent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-diagram.svg" alt="Diagram: How do you define a many-to-many relationship in Eloquent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-diagram.svg" alt="Diagram: How do you define a many-to-many relationship in Eloquent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-sticky.svg" alt="Sticky Note: How do you define a many-to-many relationship in Eloquent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-define-a-many-to-many-relationship-in-eloquent-sticky.svg" alt="Sticky Note: How do you define a many-to-many relationship in Eloquent?" width="30%">
 </a>
 
 
@@ -1774,14 +1774,14 @@ class Tag extends Model
 
 ### Q77: What is the purpose of `$guarded` and `$fillable`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-handwritten.svg" alt="Handwritten: What is the purpose of `$guarded` and `$fillable`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-handwritten.svg" alt="Handwritten: What is the purpose of `$guarded` and `$fillable`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-diagram.svg" alt="Diagram: What is the purpose of `$guarded` and `$fillable`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-diagram.svg" alt="Diagram: What is the purpose of `$guarded` and `$fillable`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-sticky.svg" alt="Sticky Note: What is the purpose of `$guarded` and `$fillable`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-guarded-and-fillable-sticky.svg" alt="Sticky Note: What is the purpose of `$guarded` and `$fillable`?" width="30%">
 </a>
 
 
@@ -1799,14 +1799,14 @@ class User extends Model
 
 ### Q78: How do you use `updateOrCreate` and `firstOrCreate`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-handwritten.svg" alt="Handwritten: How do you use `updateOrCreate` and `firstOrCreate`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-handwritten.svg" alt="Handwritten: How do you use `updateOrCreate` and `firstOrCreate`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-diagram.svg" alt="Diagram: How do you use `updateOrCreate` and `firstOrCreate`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-diagram.svg" alt="Diagram: How do you use `updateOrCreate` and `firstOrCreate`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-sticky.svg" alt="Sticky Note: How do you use `updateOrCreate` and `firstOrCreate`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-updateorcreate-and-firstorcreate-sticky.svg" alt="Sticky Note: How do you use `updateOrCreate` and `firstOrCreate`?" width="30%">
 </a>
 
 
@@ -1828,14 +1828,14 @@ $user = User::updateOrCreate(
 
 ### Q79: What is the purpose of the `$appends` property on an Eloquent model?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-handwritten.svg" alt="Handwritten: What is the purpose of the `$appends` property on an Eloquent model?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-handwritten.svg" alt="Handwritten: What is the purpose of the `$appends` property on an Eloquent model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-diagram.svg" alt="Diagram: What is the purpose of the `$appends` property on an Eloquent model?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-diagram.svg" alt="Diagram: What is the purpose of the `$appends` property on an Eloquent model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-sticky.svg" alt="Sticky Note: What is the purpose of the `$appends` property on an Eloquent model?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-purpose-of-the-appends-property-on-an-eloquent-model-sticky.svg" alt="Sticky Note: What is the purpose of the `$appends` property on an Eloquent model?" width="30%">
 </a>
 
 
@@ -1857,14 +1857,14 @@ class User extends Model
 
 ### Q80: How do you use `load` to conditionally eager-load relationships?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-handwritten.svg" alt="Handwritten: How do you use `load` to conditionally eager-load relationships?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-handwritten.svg" alt="Handwritten: How do you use `load` to conditionally eager-load relationships?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-diagram.svg" alt="Diagram: How do you use `load` to conditionally eager-load relationships?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-diagram.svg" alt="Diagram: How do you use `load` to conditionally eager-load relationships?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-sticky.svg" alt="Sticky Note: How do you use `load` to conditionally eager-load relationships?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-load-to-conditionally-eager-load-relationships-sticky.svg" alt="Sticky Note: How do you use `load` to conditionally eager-load relationships?" width="30%">
 </a>
 
 
@@ -1887,14 +1887,14 @@ $post->load(['comments.user', 'tags']);
 
 ### Q81: What is MySQL partitioning and what types exist?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-handwritten.svg" alt="Handwritten: What is MySQL partitioning and what types exist?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-handwritten.svg" alt="Handwritten: What is MySQL partitioning and what types exist?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-diagram.svg" alt="Diagram: What is MySQL partitioning and what types exist?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-diagram.svg" alt="Diagram: What is MySQL partitioning and what types exist?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-sticky.svg" alt="Sticky Note: What is MySQL partitioning and what types exist?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-mysql-partitioning-and-what-types-exist-sticky.svg" alt="Sticky Note: What is MySQL partitioning and what types exist?" width="30%">
 </a>
 
 
@@ -1916,14 +1916,14 @@ PARTITION BY RANGE (YEAR(order_date)) (
 
 ### Q82: What is the difference between vertical and horizontal sharding?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-handwritten.svg" alt="Handwritten: What is the difference between vertical and horizontal sharding?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-handwritten.svg" alt="Handwritten: What is the difference between vertical and horizontal sharding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-diagram.svg" alt="Diagram: What is the difference between vertical and horizontal sharding?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-diagram.svg" alt="Diagram: What is the difference between vertical and horizontal sharding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-sticky.svg" alt="Sticky Note: What is the difference between vertical and horizontal sharding?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-vertical-and-horizontal-sharding-sticky.svg" alt="Sticky Note: What is the difference between vertical and horizontal sharding?" width="30%">
 </a>
 
 
@@ -1931,14 +1931,14 @@ PARTITION BY RANGE (YEAR(order_date)) (
 
 ### Q83: How does MySQL replication work (source-replica)?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-handwritten.svg" alt="Handwritten: How does MySQL replication work (source-replica)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-handwritten.svg" alt="Handwritten: How does MySQL replication work (source-replica)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-diagram.svg" alt="Diagram: How does MySQL replication work (source-replica)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-diagram.svg" alt="Diagram: How does MySQL replication work (source-replica)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-sticky.svg" alt="Sticky Note: How does MySQL replication work (source-replica)?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-does-mysql-replication-work-source-replica-sticky.svg" alt="Sticky Note: How does MySQL replication work (source-replica)?" width="30%">
 </a>
 
 
@@ -1946,14 +1946,14 @@ PARTITION BY RANGE (YEAR(order_date)) (
 
 ### Q84: What are JSON columns in MySQL and how do you query them?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-handwritten.svg" alt="Handwritten: What are JSON columns in MySQL and how do you query them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-handwritten.svg" alt="Handwritten: What are JSON columns in MySQL and how do you query them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-diagram.svg" alt="Diagram: What are JSON columns in MySQL and how do you query them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-diagram.svg" alt="Diagram: What are JSON columns in MySQL and how do you query them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-sticky.svg" alt="Sticky Note: What are JSON columns in MySQL and how do you query them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-json-columns-in-mysql-and-how-do-you-query-them-sticky.svg" alt="Sticky Note: What are JSON columns in MySQL and how do you query them?" width="30%">
 </a>
 
 
@@ -1978,14 +1978,14 @@ SELECT name, JSON_EXTRACT(attributes, '$.storage') AS storage FROM products;
 
 ### Q85: How do you set up a full-text search index in MySQL and query it?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-handwritten.svg" alt="Handwritten: How do you set up a full-text search index in MySQL and query it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-handwritten.svg" alt="Handwritten: How do you set up a full-text search index in MySQL and query it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-diagram.svg" alt="Diagram: How do you set up a full-text search index in MySQL and query it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-diagram.svg" alt="Diagram: How do you set up a full-text search index in MySQL and query it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-sticky.svg" alt="Sticky Note: How do you set up a full-text search index in MySQL and query it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-set-up-a-full-text-search-index-in-mysql-and-query-it-sticky.svg" alt="Sticky Note: How do you set up a full-text search index in MySQL and query it?" width="30%">
 </a>
 
 
@@ -2010,14 +2010,14 @@ WHERE MATCH(title, body) AGAINST('+database -nosql' IN BOOLEAN MODE);
 
 ### Q86: What is the query cache in MySQL and why was it removed in 8.0?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-handwritten.svg" alt="Handwritten: What is the query cache in MySQL and why was it removed in 8.0?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-handwritten.svg" alt="Handwritten: What is the query cache in MySQL and why was it removed in 8.0?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-diagram.svg" alt="Diagram: What is the query cache in MySQL and why was it removed in 8.0?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-diagram.svg" alt="Diagram: What is the query cache in MySQL and why was it removed in 8.0?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-sticky.svg" alt="Sticky Note: What is the query cache in MySQL and why was it removed in 8.0?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-query-cache-in-mysql-and-why-was-it-removed-in-8-0-sticky.svg" alt="Sticky Note: What is the query cache in MySQL and why was it removed in 8.0?" width="30%">
 </a>
 
 
@@ -2025,14 +2025,14 @@ WHERE MATCH(title, body) AGAINST('+database -nosql' IN BOOLEAN MODE);
 
 ### Q87: What is the doublewrite buffer in InnoDB?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-handwritten.svg" alt="Handwritten: What is the doublewrite buffer in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-handwritten.svg" alt="Handwritten: What is the doublewrite buffer in InnoDB?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-diagram.svg" alt="Diagram: What is the doublewrite buffer in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-diagram.svg" alt="Diagram: What is the doublewrite buffer in InnoDB?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-sticky.svg" alt="Sticky Note: What is the doublewrite buffer in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-doublewrite-buffer-in-innodb-sticky.svg" alt="Sticky Note: What is the doublewrite buffer in InnoDB?" width="30%">
 </a>
 
 
@@ -2040,14 +2040,14 @@ WHERE MATCH(title, body) AGAINST('+database -nosql' IN BOOLEAN MODE);
 
 ### Q88: What are generated columns (virtual and stored) in MySQL?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-handwritten.svg" alt="Handwritten: What are generated columns (virtual and stored) in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-handwritten.svg" alt="Handwritten: What are generated columns (virtual and stored) in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-diagram.svg" alt="Diagram: What are generated columns (virtual and stored) in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-diagram.svg" alt="Diagram: What are generated columns (virtual and stored) in MySQL?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-sticky.svg" alt="Sticky Note: What are generated columns (virtual and stored) in MySQL?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-are-generated-columns-virtual-and-stored-in-mysql-sticky.svg" alt="Sticky Note: What are generated columns (virtual and stored) in MySQL?" width="30%">
 </a>
 
 
@@ -2063,14 +2063,14 @@ CREATE TABLE invoices (
 
 ### Q89: How do you use common table expressions to simplify complex queries?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-handwritten.svg" alt="Handwritten: How do you use common table expressions to simplify complex queries?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-handwritten.svg" alt="Handwritten: How do you use common table expressions to simplify complex queries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-diagram.svg" alt="Diagram: How do you use common table expressions to simplify complex queries?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-diagram.svg" alt="Diagram: How do you use common table expressions to simplify complex queries?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-sticky.svg" alt="Sticky Note: How do you use common table expressions to simplify complex queries?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-use-common-table-expressions-to-simplify-complex-queries-sticky.svg" alt="Sticky Note: How do you use common table expressions to simplify complex queries?" width="30%">
 </a>
 
 
@@ -2090,14 +2090,14 @@ WHERE ds.avg_sal > 60000;
 
 ### Q90: What is the `information_schema` database used for?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-handwritten.svg" alt="Handwritten: What is the `information_schema` database used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-handwritten.svg" alt="Handwritten: What is the `information_schema` database used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-diagram.svg" alt="Diagram: What is the `information_schema` database used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-diagram.svg" alt="Diagram: What is the `information_schema` database used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-sticky.svg" alt="Sticky Note: What is the `information_schema` database used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-information-schema-database-used-for-sticky.svg" alt="Sticky Note: What is the `information_schema` database used for?" width="30%">
 </a>
 
 
@@ -2122,14 +2122,14 @@ WHERE t.table_schema = 'my_database' AND t.table_type = 'BASE TABLE'
 
 ### Q91: What is the difference between `MyISAM` and `InnoDB`?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-handwritten.svg" alt="Handwritten: What is the difference between `MyISAM` and `InnoDB`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-handwritten.svg" alt="Handwritten: What is the difference between `MyISAM` and `InnoDB`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-diagram.svg" alt="Diagram: What is the difference between `MyISAM` and `InnoDB`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-diagram.svg" alt="Diagram: What is the difference between `MyISAM` and `InnoDB`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-sticky.svg" alt="Sticky Note: What is the difference between `MyISAM` and `InnoDB`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-difference-between-myisam-and-innodb-sticky.svg" alt="Sticky Note: What is the difference between `MyISAM` and `InnoDB`?" width="30%">
 </a>
 
 
@@ -2137,14 +2137,14 @@ WHERE t.table_schema = 'my_database' AND t.table_type = 'BASE TABLE'
 
 ### Q92: How do you implement soft deletes in the database layer?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-handwritten.svg" alt="Handwritten: How do you implement soft deletes in the database layer?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-handwritten.svg" alt="Handwritten: How do you implement soft deletes in the database layer?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-diagram.svg" alt="Diagram: How do you implement soft deletes in the database layer?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-diagram.svg" alt="Diagram: How do you implement soft deletes in the database layer?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-sticky.svg" alt="Sticky Note: How do you implement soft deletes in the database layer?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/how-do-you-implement-soft-deletes-in-the-database-layer-sticky.svg" alt="Sticky Note: How do you implement soft deletes in the database layer?" width="30%">
 </a>
 
 
@@ -2161,14 +2161,14 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 
 ### Q93: What is the adaptive hash index in InnoDB?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-handwritten.svg" alt="Handwritten: What is the adaptive hash index in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-handwritten.svg" alt="Handwritten: What is the adaptive hash index in InnoDB?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-diagram.svg" alt="Diagram: What is the adaptive hash index in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-diagram.svg" alt="Diagram: What is the adaptive hash index in InnoDB?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-sticky.svg" alt="Sticky Note: What is the adaptive hash index in InnoDB?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-the-adaptive-hash-index-in-innodb-sticky.svg" alt="Sticky Note: What is the adaptive hash index in InnoDB?" width="30%">
 </a>
 
 
@@ -2176,14 +2176,14 @@ SELECT * FROM users WHERE deleted_at IS NULL;
 
 ### Q94: What is a CTE and how is it different from a subquery?
 
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-handwritten.svg" alt="Handwritten: What is a CTE and how is it different from a subquery?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-handwritten.svg" alt="Handwritten: What is a CTE and how is it different from a subquery?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-diagram.svg" alt="Diagram: What is a CTE and how is it different from a subquery?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-diagram.svg" alt="Diagram: What is a CTE and how is it different from a subquery?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-sticky.svg" alt="Sticky Note: What is a CTE and how is it different from a subquery?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/50-interview-mysql/what-is-a-cte-and-how-is-it-different-from-a-subquery-sticky.svg" alt="Sticky Note: What is a CTE and how is it different from a subquery?" width="30%">
 </a>
 
 

@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 Banking System Structure in India
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-handwritten.svg" alt="Handwritten: 2.1 Banking System Structure in India" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-handwritten.svg" alt="Handwritten: 2.1 Banking System Structure in India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-diagram.svg" alt="Diagram: 2.1 Banking System Structure in India" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-diagram.svg" alt="Diagram: 2.1 Banking System Structure in India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-sticky.svg" alt="Sticky Note: 2.1 Banking System Structure in India" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-1-banking-system-structure-in-india-sticky.svg" alt="Sticky Note: 2.1 Banking System Structure in India" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ mindmap
 
 ### 2.2 Types of Banks
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-handwritten.svg" alt="Handwritten: 2.2 Types of Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-handwritten.svg" alt="Handwritten: 2.2 Types of Banks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-diagram.svg" alt="Diagram: 2.2 Types of Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-diagram.svg" alt="Diagram: 2.2 Types of Banks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-sticky.svg" alt="Sticky Note: 2.2 Types of Banks" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-2-types-of-banks-sticky.svg" alt="Sticky Note: 2.2 Types of Banks" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ Licensed in 2015 to extend **financial inclusion** by providing basic banking se
 
 ### 2.3 Banking Regulation Act, 1949
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-handwritten.svg" alt="Handwritten: 2.3 Banking Regulation Act, 1949" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-handwritten.svg" alt="Handwritten: 2.3 Banking Regulation Act, 1949" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-diagram.svg" alt="Diagram: 2.3 Banking Regulation Act, 1949" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-diagram.svg" alt="Diagram: 2.3 Banking Regulation Act, 1949" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-sticky.svg" alt="Sticky Note: 2.3 Banking Regulation Act, 1949" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-3-banking-regulation-act-1949-sticky.svg" alt="Sticky Note: 2.3 Banking Regulation Act, 1949" width="30%">
 </a>
 
 
@@ -196,14 +196,14 @@ The **Banking Regulation Act, 1949** (as amended) provides the legal framework f
 
 ### 2.4 SARFAESI Act, 2002
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-handwritten.svg" alt="Handwritten: 2.4 SARFAESI Act, 2002" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-handwritten.svg" alt="Handwritten: 2.4 SARFAESI Act, 2002" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-diagram.svg" alt="Diagram: 2.4 SARFAESI Act, 2002" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-diagram.svg" alt="Diagram: 2.4 SARFAESI Act, 2002" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-sticky.svg" alt="Sticky Note: 2.4 SARFAESI Act, 2002" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-4-sarfaesi-act-2002-sticky.svg" alt="Sticky Note: 2.4 SARFAESI Act, 2002" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ The **Banking Regulation Act, 1949** (as amended) provides the legal framework f
 
 ### 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-handwritten.svg" alt="Handwritten: 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-handwritten.svg" alt="Handwritten: 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-diagram.svg" alt="Diagram: 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-diagram.svg" alt="Diagram: 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-sticky.svg" alt="Sticky Note: 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-5-deposit-insurance-and-credit-guarantee-corporation-dicgc-sticky.svg" alt="Sticky Note: 2.5 Deposit Insurance and Credit Guarantee Corporation (DICGC)" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ Established in 1978 through the merger of Deposit Insurance Corporation (1962) a
 
 ### 2.6 Basel Norms
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-handwritten.svg" alt="Handwritten: 2.6 Basel Norms" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-handwritten.svg" alt="Handwritten: 2.6 Basel Norms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-diagram.svg" alt="Diagram: 2.6 Basel Norms" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-diagram.svg" alt="Diagram: 2.6 Basel Norms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-sticky.svg" alt="Sticky Note: 2.6 Basel Norms" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-6-basel-norms-sticky.svg" alt="Sticky Note: 2.6 Basel Norms" width="30%">
 </a>
 
 
@@ -297,14 +297,14 @@ CAR = (Tier 1 Capital + Tier 2 Capital) / Risk-Weighted Assets (RWA)
 
 ### 2.7 Prompt Corrective Action (PCA) Framework
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-handwritten.svg" alt="Handwritten: 2.7 Prompt Corrective Action (PCA) Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-handwritten.svg" alt="Handwritten: 2.7 Prompt Corrective Action (PCA) Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-diagram.svg" alt="Diagram: 2.7 Prompt Corrective Action (PCA) Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-diagram.svg" alt="Diagram: 2.7 Prompt Corrective Action (PCA) Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-sticky.svg" alt="Sticky Note: 2.7 Prompt Corrective Action (PCA) Framework" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-7-prompt-corrective-action-pca-framework-sticky.svg" alt="Sticky Note: 2.7 Prompt Corrective Action (PCA) Framework" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ Introduced by RBI in **2002** (revised in 2017) to **supervise and discipline** 
 
 ### 2.8 RBI's Supervisory Functions
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-handwritten.svg" alt="Handwritten: 2.8 RBI's Supervisory Functions" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-handwritten.svg" alt="Handwritten: 2.8 RBI's Supervisory Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-diagram.svg" alt="Diagram: 2.8 RBI's Supervisory Functions" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-diagram.svg" alt="Diagram: 2.8 RBI's Supervisory Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-sticky.svg" alt="Sticky Note: 2.8 RBI's Supervisory Functions" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-8-rbi-s-supervisory-functions-sticky.svg" alt="Sticky Note: 2.8 RBI's Supervisory Functions" width="30%">
 </a>
 
 
@@ -397,14 +397,14 @@ flowchart TD
 
 ### 2.9 Other Important Regulatory Frameworks
 
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-handwritten.svg" alt="Handwritten: 2.9 Other Important Regulatory Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-handwritten.svg" alt="Handwritten: 2.9 Other Important Regulatory Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-diagram.svg" alt="Diagram: 2.9 Other Important Regulatory Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-diagram.svg" alt="Diagram: 2.9 Other Important Regulatory Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-sticky.svg" alt="Sticky Note: 2.9 Other Important Regulatory Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/banking-financial-awareness/02-banking-system-regulations/2-9-other-important-regulatory-frameworks-sticky.svg" alt="Sticky Note: 2.9 Other Important Regulatory Frameworks" width="30%">
 </a>
 
 

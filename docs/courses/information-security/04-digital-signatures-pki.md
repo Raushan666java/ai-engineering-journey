@@ -25,14 +25,14 @@ After completing this chapter you will be able to:
 
 ### 4.1 Digital Signatures
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-handwritten.svg" alt="Handwritten: 4.1 Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-handwritten.svg" alt="Handwritten: 4.1 Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-diagram.svg" alt="Diagram: 4.1 Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-diagram.svg" alt="Diagram: 4.1 Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-sticky.svg" alt="Sticky Note: 4.1 Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-1-digital-signatures-sticky.svg" alt="Sticky Note: 4.1 Digital Signatures" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ flowchart TD
 
 ### 4.2 PKI (Public Key Infrastructure)
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-handwritten.svg" alt="Handwritten: 4.2 PKI (Public Key Infrastructure)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-handwritten.svg" alt="Handwritten: 4.2 PKI (Public Key Infrastructure)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-diagram.svg" alt="Diagram: 4.2 PKI (Public Key Infrastructure)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-diagram.svg" alt="Diagram: 4.2 PKI (Public Key Infrastructure)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-sticky.svg" alt="Sticky Note: 4.2 PKI (Public Key Infrastructure)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-2-pki-public-key-infrastructure-sticky.svg" alt="Sticky Note: 4.2 PKI (Public Key Infrastructure)" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ flowchart TD
 
 ### 4.3 X.509 Digital Certificates
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-handwritten.svg" alt="Handwritten: 4.3 X.509 Digital Certificates" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-handwritten.svg" alt="Handwritten: 4.3 X.509 Digital Certificates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-diagram.svg" alt="Diagram: 4.3 X.509 Digital Certificates" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-diagram.svg" alt="Diagram: 4.3 X.509 Digital Certificates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-sticky.svg" alt="Sticky Note: 4.3 X.509 Digital Certificates" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-3-x-509-digital-certificates-sticky.svg" alt="Sticky Note: 4.3 X.509 Digital Certificates" width="30%">
 </a>
 
 
@@ -237,14 +237,14 @@ X.509 is the standard defining the format of public key certificates. Version 3 
 
 ### 4.4 OAuth 2.0
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-handwritten.svg" alt="Handwritten: 4.4 OAuth 2.0" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-handwritten.svg" alt="Handwritten: 4.4 OAuth 2.0" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-diagram.svg" alt="Diagram: 4.4 OAuth 2.0" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-diagram.svg" alt="Diagram: 4.4 OAuth 2.0" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-sticky.svg" alt="Sticky Note: 4.4 OAuth 2.0" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-4-oauth-2-0-sticky.svg" alt="Sticky Note: 4.4 OAuth 2.0" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@ OAuth 2.0 is an authorization framework that enables applications to obtain limi
 
 ### 4.5 SAML (Security Assertion Markup Language)
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-handwritten.svg" alt="Handwritten: 4.5 SAML (Security Assertion Markup Language)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-handwritten.svg" alt="Handwritten: 4.5 SAML (Security Assertion Markup Language)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-diagram.svg" alt="Diagram: 4.5 SAML (Security Assertion Markup Language)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-diagram.svg" alt="Diagram: 4.5 SAML (Security Assertion Markup Language)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-sticky.svg" alt="Sticky Note: 4.5 SAML (Security Assertion Markup Language)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-5-saml-security-assertion-markup-language-sticky.svg" alt="Sticky Note: 4.5 SAML (Security Assertion Markup Language)" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ SAML 2.0 is an XML-based framework for exchanging authentication and authorizati
 
 ### 4.6 Kerberos
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-handwritten.svg" alt="Handwritten: 4.6 Kerberos" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-handwritten.svg" alt="Handwritten: 4.6 Kerberos" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-diagram.svg" alt="Diagram: 4.6 Kerberos" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-diagram.svg" alt="Diagram: 4.6 Kerberos" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-sticky.svg" alt="Sticky Note: 4.6 Kerberos" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-6-kerberos-sticky.svg" alt="Sticky Note: 4.6 Kerberos" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ flowchart LR
 
 ### 4.7 Solved MCQs (Exam Style)
 
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 4.7 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 4.7 Solved MCQs (Exam Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 4.7 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 4.7 Solved MCQs (Exam Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 4.7 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/04-digital-signatures-pki/4-7-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 4.7 Solved MCQs (Exam Style)" width="30%">
 </a>
 
 

@@ -47,14 +47,14 @@
 
 ### Q1 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
 
 If 2Ãƒâ€¹Ã‚Â£ = 8ÃƒÅ Ã‚Â¸ = 64, what is 1/x + 1/y?
@@ -80,14 +80,14 @@ Hmm, that gives 2/3. Let me check: 1/6 + 1/2 = 1/6 + 3/6 = 4/6 = 2/3. So answer 
 
 ### Q2 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
 
 A number when increased by 20% becomes 180. The number is:
@@ -109,14 +109,14 @@ A number when increased by 20% becomes 180. The number is:
 
 ### Q3 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
 </a>
 
 Which of the following words is an adjective?
@@ -138,14 +138,14 @@ Which of the following words is an adjective?
 
 ### Q4 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
 </a>
 
 Find the odd one out: 121, 169, 256, 289
@@ -167,14 +167,14 @@ Find the odd one out: 121, 169, 256, 289
 
 ### Q5 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
 
 The average of 10 numbers is 20. If 5 is added to each number, the new average is:
@@ -196,14 +196,14 @@ If we add 5 to each number, the sum increases by 50. New sum = 200+50=250. New a
 
 ### Q6 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
 
 A man invests ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹5000 at 6% simple interest and ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹6000 at 8% simple interest. The total interest after 2 years is:
@@ -234,14 +234,14 @@ console.log(totalInterest(5000, 6, 6000, 8, 2)); // 1560
 
 ### Q7 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Data Interpretation" width="30%">
 </a>
 
 The mode of: 3, 5, 7, 3, 5, 3, 7, 8, 5, 5 is:
@@ -263,14 +263,14 @@ Frequency: 3 appears 3 times, 5 appears 4 times, 7 appears 2 times, 8 appears 1 
 
 ### Q8 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Logical Reasoning" width="30%">
 </a>
 
 Seven people sit in a row facing north. A sits at one end. B sits third to the left of C. D sits between A and B. E sits immediate right of C. Who sits at the other end?
@@ -307,14 +307,14 @@ Answer = (C) E.
 
 ### Q9 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Numerical Ability" width="30%">
 </a>
 
 A pipe can fill a tank in 6 hours. Another pipe can empty it in 8 hours. If both are opened alternatively starting with the filling pipe, how long to fill the tank?
@@ -444,14 +444,14 @@ Hmm, 41 isn't exactly 40. But in some GATE problems they round or the values are
 
 ### Q10 [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� Verbal Ability" width="30%">
 </a>
 
 Choose the word opposite in meaning to "LOQUACIOUS":
@@ -646,14 +646,14 @@ The lexical analyzer (scanner) reads source characters and groups them into toke
 
 ### Q10 [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â� ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã¢â‚¬Å¡ Digital Logic | ÃƒÂ°Ã…Â¸Ã‚Â�Ã‚Â·ÃƒÂ¯Ã‚Â¸Ã‚Â� Easy" width="30%">
 </a>
 
 The output of a 2-input NAND gate is 0 when:
@@ -1727,14 +1727,14 @@ pie title "Difficulty Distribution - GATE CS 2017"
 
 ### Paper Analysis
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
 </a>
 
 
@@ -1742,14 +1742,14 @@ GATE 2017 Computer Science paper maintained the established format of 65 questio
 
 ### Difficulty Trends
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
 </a>
 
 
@@ -1757,14 +1757,14 @@ GATE 2017 had a difficulty distribution of approximately 35% Easy, 47% Medium, a
 
 ### Key Concepts Tested
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
 </a>
 
 
@@ -1945,14 +1945,14 @@ Test your understanding of GATE 2017 concepts with these 5 questions.
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/gate-cs-preparation/31-gate-2017-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 
@@ -1975,4 +1975,4 @@ Test your understanding of GATE 2017 concepts with these 5 questions.
 4. **CFG to PDA Conversion**: Convert the context-free grammar S Ã¢â€ â€™ aS | bS | aSbS | ÃŽÂµ to an equivalent PDA that accepts by empty stack. Show the PDA construction step by step, including the state transitions and stack operations. Demonstrate acceptance of the string "ab" by tracing the PDA computation.
 
 5. **Interrupt Priority Handling**: A computer system has 5 hardware interrupt lines: IRQ0 (clock, priority 1-highest), IRQ1 (keyboard, priority 2), IRQ2 (disk, priority 3), IRQ3 (network, priority 4), IRQ4 (printer, priority 5-lowest). During the execution of the disk ISR, the clock and keyboard interrupts occur simultaneously. Show the interrupt handling sequence, including when each ISR starts and completes. What is the total time to service all interrupts if each ISR takes 50 microseconds and context switching takes 10 microseconds?
-
+

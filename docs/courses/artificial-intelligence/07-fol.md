@@ -68,14 +68,14 @@ flowchart LR
 
 ### Propositional Logic vs First-Order Logic
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-handwritten.svg" alt="Handwritten: Propositional Logic vs First-Order Logic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-handwritten.svg" alt="Handwritten: Propositional Logic vs First-Order Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-diagram.svg" alt="Diagram: Propositional Logic vs First-Order Logic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-diagram.svg" alt="Diagram: Propositional Logic vs First-Order Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-sticky.svg" alt="Sticky Note: Propositional Logic vs First-Order Logic" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/propositional-logic-vs-first-order-logic-sticky.svg" alt="Sticky Note: Propositional Logic vs First-Order Logic" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ flowchart LR
 
 ### Why First-Order Logic?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-handwritten.svg" alt="Handwritten: Why First-Order Logic?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-handwritten.svg" alt="Handwritten: Why First-Order Logic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-diagram.svg" alt="Diagram: Why First-Order Logic?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-diagram.svg" alt="Diagram: Why First-Order Logic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-sticky.svg" alt="Sticky Note: Why First-Order Logic?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/why-first-order-logic-sticky.svg" alt="Sticky Note: Why First-Order Logic?" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ This allows for much more expressive power, especially when combined with **quan
 
 ### Syntax of FOL
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-handwritten.svg" alt="Handwritten: Syntax of FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-handwritten.svg" alt="Handwritten: Syntax of FOL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-diagram.svg" alt="Diagram: Syntax of FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-diagram.svg" alt="Diagram: Syntax of FOL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-sticky.svg" alt="Sticky Note: Syntax of FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/syntax-of-fol-sticky.svg" alt="Sticky Note: Syntax of FOL" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ print(is_wff("∀ ∀x Px"))
 
 ### Semantics of FOL
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-handwritten.svg" alt="Handwritten: Semantics of FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-handwritten.svg" alt="Handwritten: Semantics of FOL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-diagram.svg" alt="Diagram: Semantics of FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-diagram.svg" alt="Diagram: Semantics of FOL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-sticky.svg" alt="Sticky Note: Semantics of FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/semantics-of-fol-sticky.svg" alt="Sticky Note: Semantics of FOL" width="30%">
 </a>
 
 
@@ -273,14 +273,14 @@ An **interpretation** (model) *M* consists of:
 
 ### Quantifiers: Universal and Existential
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-handwritten.svg" alt="Handwritten: Quantifiers: Universal and Existential" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-handwritten.svg" alt="Handwritten: Quantifiers: Universal and Existential" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-diagram.svg" alt="Diagram: Quantifiers: Universal and Existential" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-diagram.svg" alt="Diagram: Quantifiers: Universal and Existential" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-sticky.svg" alt="Sticky Note: Quantifiers: Universal and Existential" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/quantifiers-universal-and-existential-sticky.svg" alt="Sticky Note: Quantifiers: Universal and Existential" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ An **interpretation** (model) *M* consists of:
 
 ### Substitution
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-handwritten.svg" alt="Handwritten: Substitution" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-handwritten.svg" alt="Handwritten: Substitution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-diagram.svg" alt="Diagram: Substitution" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-diagram.svg" alt="Diagram: Substitution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-sticky.svg" alt="Sticky Note: Substitution" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/substitution-sticky.svg" alt="Sticky Note: Substitution" width="30%">
 </a>
 
 
@@ -396,14 +396,14 @@ print(result)
 
 ### Unification
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-handwritten.svg" alt="Handwritten: Unification" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/unification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/unification-handwritten.svg" alt="Handwritten: Unification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-diagram.svg" alt="Diagram: Unification" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/unification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/unification-diagram.svg" alt="Diagram: Unification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/unification-sticky.svg" alt="Sticky Note: Unification" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/unification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/unification-sticky.svg" alt="Sticky Note: Unification" width="30%">
 </a>
 
 
@@ -558,14 +558,14 @@ print(f"MGU: {result}")
 
 ### Skolemization
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-handwritten.svg" alt="Handwritten: Skolemization" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-handwritten.svg" alt="Handwritten: Skolemization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-diagram.svg" alt="Diagram: Skolemization" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-diagram.svg" alt="Diagram: Skolemization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-sticky.svg" alt="Sticky Note: Skolemization" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/skolemization-sticky.svg" alt="Sticky Note: Skolemization" width="30%">
 </a>
 
 
@@ -690,14 +690,14 @@ print(f"Skolemized: {skolemize(f2)}")
 
 ### CNF Conversion (Conjunctive Normal Form)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-handwritten.svg" alt="Handwritten: CNF Conversion (Conjunctive Normal Form)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-handwritten.svg" alt="Handwritten: CNF Conversion (Conjunctive Normal Form)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-diagram.svg" alt="Diagram: CNF Conversion (Conjunctive Normal Form)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-diagram.svg" alt="Diagram: CNF Conversion (Conjunctive Normal Form)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-sticky.svg" alt="Sticky Note: CNF Conversion (Conjunctive Normal Form)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/cnf-conversion-conjunctive-normal-form-sticky.svg" alt="Sticky Note: CNF Conversion (Conjunctive Normal Form)" width="30%">
 </a>
 
 
@@ -808,14 +808,14 @@ def to_cnf(formula):
 
 ### FOL Inference Methods
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-handwritten.svg" alt="Handwritten: FOL Inference Methods" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-handwritten.svg" alt="Handwritten: FOL Inference Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-diagram.svg" alt="Diagram: FOL Inference Methods" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-diagram.svg" alt="Diagram: FOL Inference Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-sticky.svg" alt="Sticky Note: FOL Inference Methods" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/fol-inference-methods-sticky.svg" alt="Sticky Note: FOL Inference Methods" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ def to_cnf(formula):
 
 ### Lifting Lemma
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-handwritten.svg" alt="Handwritten: Lifting Lemma" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-handwritten.svg" alt="Handwritten: Lifting Lemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-diagram.svg" alt="Diagram: Lifting Lemma" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-diagram.svg" alt="Diagram: Lifting Lemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-sticky.svg" alt="Sticky Note: Lifting Lemma" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/lifting-lemma-sticky.svg" alt="Sticky Note: Lifting Lemma" width="30%">
 </a>
 
 
@@ -854,14 +854,14 @@ The **Lifting Lemma** states that any inference made at the ground (propositiona
 
 ### Resolution Principle in FOL
 
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-handwritten.svg" alt="Handwritten: Resolution Principle in FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-handwritten.svg" alt="Handwritten: Resolution Principle in FOL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-diagram.svg" alt="Diagram: Resolution Principle in FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-diagram.svg" alt="Diagram: Resolution Principle in FOL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-sticky.svg" alt="Sticky Note: Resolution Principle in FOL" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/07-fol/resolution-principle-in-fol-sticky.svg" alt="Sticky Note: Resolution Principle in FOL" width="30%">
 </a>
 
 

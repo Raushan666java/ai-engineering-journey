@@ -51,14 +51,14 @@ flowchart LR
 
 ### Terraform Workspaces
 
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-workspaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-workspaces-handwritten.svg" alt="Handwritten: Terraform Workspaces" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-workspaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-workspaces-handwritten.svg" alt="Handwritten: Terraform Workspaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-workspaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-workspaces-diagram.svg" alt="Diagram: Terraform Workspaces" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-workspaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-workspaces-diagram.svg" alt="Diagram: Terraform Workspaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-workspaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-workspaces-sticky.svg" alt="Sticky Note: Terraform Workspaces" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-workspaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-workspaces-sticky.svg" alt="Sticky Note: Terraform Workspaces" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ terraform apply
 
 ### Data Sources
 
-<a href="../../assets/images/diagrams/devops/09-iac/data-sources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/data-sources-handwritten.svg" alt="Handwritten: Data Sources" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/data-sources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/data-sources-handwritten.svg" alt="Handwritten: Data Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/data-sources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/data-sources-diagram.svg" alt="Diagram: Data Sources" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/data-sources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/data-sources-diagram.svg" alt="Diagram: Data Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/data-sources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/data-sources-sticky.svg" alt="Sticky Note: Data Sources" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/data-sources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/data-sources-sticky.svg" alt="Sticky Note: Data Sources" width="30%">
 </a>
 
 
@@ -138,14 +138,14 @@ resource "aws_ecs_service" "app" {
 
 ### Terraform Provisioners
 
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-provisioners-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-provisioners-handwritten.svg" alt="Handwritten: Terraform Provisioners" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-provisioners-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-provisioners-handwritten.svg" alt="Handwritten: Terraform Provisioners" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-provisioners-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-provisioners-diagram.svg" alt="Diagram: Terraform Provisioners" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-provisioners-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-provisioners-diagram.svg" alt="Diagram: Terraform Provisioners" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-provisioners-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-provisioners-sticky.svg" alt="Sticky Note: Terraform Provisioners" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-provisioners-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-provisioners-sticky.svg" alt="Sticky Note: Terraform Provisioners" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ resource "aws_instance" "web" {
 
 ### Terraform Modules from Registry
 
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-handwritten.svg" alt="Handwritten: Terraform Modules from Registry" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-handwritten.svg" alt="Handwritten: Terraform Modules from Registry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-diagram.svg" alt="Diagram: Terraform Modules from Registry" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-diagram.svg" alt="Diagram: Terraform Modules from Registry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-sticky.svg" alt="Sticky Note: Terraform Modules from Registry" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-modules-from-registry-sticky.svg" alt="Sticky Note: Terraform Modules from Registry" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ module "vpc" {
 
 ### Terraform Cloud
 
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-cloud-handwritten.svg" alt="Handwritten: Terraform Cloud" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-cloud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-cloud-handwritten.svg" alt="Handwritten: Terraform Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-cloud-diagram.svg" alt="Diagram: Terraform Cloud" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-cloud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-cloud-diagram.svg" alt="Diagram: Terraform Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-cloud-sticky.svg" alt="Sticky Note: Terraform Cloud" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-cloud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-cloud-sticky.svg" alt="Sticky Note: Terraform Cloud" width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ terraform {
 
 ### Pulumi (TypeScript IaC)
 
-<a href="../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-handwritten.svg" alt="Handwritten: Pulumi (TypeScript IaC)" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-handwritten.svg" alt="Handwritten: Pulumi (TypeScript IaC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-diagram.svg" alt="Diagram: Pulumi (TypeScript IaC)" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-diagram.svg" alt="Diagram: Pulumi (TypeScript IaC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-sticky.svg" alt="Sticky Note: Pulumi (TypeScript IaC)" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/pulumi-typescript-iac-sticky.svg" alt="Sticky Note: Pulumi (TypeScript IaC)" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ export const clusterName = cluster.name;
 
 ### Cross-Cloud Infrastructure
 
-<a href="../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-handwritten.svg" alt="Handwritten: Cross-Cloud Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-handwritten.svg" alt="Handwritten: Cross-Cloud Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-diagram.svg" alt="Diagram: Cross-Cloud Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-diagram.svg" alt="Diagram: Cross-Cloud Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-sticky.svg" alt="Sticky Note: Cross-Cloud Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/cross-cloud-infrastructure-sticky.svg" alt="Sticky Note: Cross-Cloud Infrastructure" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ resource "aws_route53_record" "app" {
 
 ### Terraform Best Practices
 
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-best-practices-handwritten.svg" alt="Handwritten: Terraform Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-best-practices-handwritten.svg" alt="Handwritten: Terraform Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-best-practices-diagram.svg" alt="Diagram: Terraform Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-best-practices-diagram.svg" alt="Diagram: Terraform Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terraform-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terraform-best-practices-sticky.svg" alt="Sticky Note: Terraform Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terraform-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terraform-best-practices-sticky.svg" alt="Sticky Note: Terraform Best Practices" width="30%">
 </a>
 
 
@@ -357,14 +357,14 @@ resource "aws_route53_record" "app" {
 
 ### Terragrunt
 
-<a href="../../assets/images/diagrams/devops/09-iac/terragrunt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terragrunt-handwritten.svg" alt="Handwritten: Terragrunt" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terragrunt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terragrunt-handwritten.svg" alt="Handwritten: Terragrunt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terragrunt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terragrunt-diagram.svg" alt="Diagram: Terragrunt" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terragrunt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terragrunt-diagram.svg" alt="Diagram: Terragrunt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/09-iac/terragrunt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/09-iac/terragrunt-sticky.svg" alt="Sticky Note: Terragrunt" width="30%">
+<a href="../../../assets/images/diagrams/devops/09-iac/terragrunt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/09-iac/terragrunt-sticky.svg" alt="Sticky Note: Terragrunt" width="30%">
 </a>
 
 

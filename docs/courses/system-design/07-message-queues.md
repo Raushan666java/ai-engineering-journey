@@ -38,14 +38,14 @@ flowchart LR
 
 ### Synchronous vs Asynchronous Communication
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-handwritten.svg" alt="Handwritten: Synchronous vs Asynchronous Communication" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-handwritten.svg" alt="Handwritten: Synchronous vs Asynchronous Communication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-diagram.svg" alt="Diagram: Synchronous vs Asynchronous Communication" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-diagram.svg" alt="Diagram: Synchronous vs Asynchronous Communication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-sticky.svg" alt="Sticky Note: Synchronous vs Asynchronous Communication" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/synchronous-vs-asynchronous-communication-sticky.svg" alt="Sticky Note: Synchronous vs Asynchronous Communication" width="30%">
 </a>
 
 
@@ -84,14 +84,14 @@ Client ? ? ? ? 202 Accepted (immediate)
 
 ### Point-to-Point vs Publish-Subscribe
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-handwritten.svg" alt="Handwritten: Point-to-Point vs Publish-Subscribe" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-handwritten.svg" alt="Handwritten: Point-to-Point vs Publish-Subscribe" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-diagram.svg" alt="Diagram: Point-to-Point vs Publish-Subscribe" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-diagram.svg" alt="Diagram: Point-to-Point vs Publish-Subscribe" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-sticky.svg" alt="Sticky Note: Point-to-Point vs Publish-Subscribe" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/point-to-point-vs-publish-subscribe-sticky.svg" alt="Sticky Note: Point-to-Point vs Publish-Subscribe" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ Producer ? [Topic] ? Subscriber A
 
 ### Apache Kafka
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-handwritten.svg" alt="Handwritten: Apache Kafka" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-handwritten.svg" alt="Handwritten: Apache Kafka" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-diagram.svg" alt="Diagram: Apache Kafka" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-diagram.svg" alt="Diagram: Apache Kafka" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-sticky.svg" alt="Sticky Note: Apache Kafka" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/apache-kafka-sticky.svg" alt="Sticky Note: Apache Kafka" width="30%">
 </a>
 
 
@@ -208,14 +208,14 @@ acks=all (or -1): Leader waits for all ISR replicas to acknowledge.
 
 ### RabbitMQ
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-handwritten.svg" alt="Handwritten: RabbitMQ" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-handwritten.svg" alt="Handwritten: RabbitMQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-diagram.svg" alt="Diagram: RabbitMQ" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-diagram.svg" alt="Diagram: RabbitMQ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-sticky.svg" alt="Sticky Note: RabbitMQ" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/rabbitmq-sticky.svg" alt="Sticky Note: RabbitMQ" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ channel.basic_publish(
 
 ### AWS SQS and SNS
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-handwritten.svg" alt="Handwritten: AWS SQS and SNS" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-handwritten.svg" alt="Handwritten: AWS SQS and SNS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-diagram.svg" alt="Diagram: AWS SQS and SNS" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-diagram.svg" alt="Diagram: AWS SQS and SNS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-sticky.svg" alt="Sticky Note: AWS SQS and SNS" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/aws-sqs-and-sns-sticky.svg" alt="Sticky Note: AWS SQS and SNS" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ This combines SNS fan-out (each service gets all events) with SQS buffering (ser
 
 ### Delivery Guarantees
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-handwritten.svg" alt="Handwritten: Delivery Guarantees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-handwritten.svg" alt="Handwritten: Delivery Guarantees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-diagram.svg" alt="Diagram: Delivery Guarantees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-diagram.svg" alt="Diagram: Delivery Guarantees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-sticky.svg" alt="Sticky Note: Delivery Guarantees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/delivery-guarantees-sticky.svg" alt="Sticky Note: Delivery Guarantees" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ Kafka exactly-once flow:
 
 ### Kafka Partitioning and Ordering Guarantees
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-handwritten.svg" alt="Handwritten: Kafka Partitioning and Ordering Guarantees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-handwritten.svg" alt="Handwritten: Kafka Partitioning and Ordering Guarantees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-diagram.svg" alt="Diagram: Kafka Partitioning and Ordering Guarantees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-diagram.svg" alt="Diagram: Kafka Partitioning and Ordering Guarantees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-sticky.svg" alt="Sticky Note: Kafka Partitioning and Ordering Guarantees" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/kafka-partitioning-and-ordering-guarantees-sticky.svg" alt="Sticky Note: Kafka Partitioning and Ordering Guarantees" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ There is NO ordering guarantee between partition 0 and partition 1.
 
 ### Dead-Letter Queues
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-handwritten.svg" alt="Handwritten: Dead-Letter Queues" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-handwritten.svg" alt="Handwritten: Dead-Letter Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-diagram.svg" alt="Diagram: Dead-Letter Queues" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-diagram.svg" alt="Diagram: Dead-Letter Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-sticky.svg" alt="Sticky Note: Dead-Letter Queues" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/dead-letter-queues-sticky.svg" alt="Sticky Note: Dead-Letter Queues" width="30%">
 </a>
 
 
@@ -444,14 +444,14 @@ Consumer ? processing fails ? retry_queue (with delay)
 
 ### Event Sourcing
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-handwritten.svg" alt="Handwritten: Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-handwritten.svg" alt="Handwritten: Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-diagram.svg" alt="Diagram: Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-diagram.svg" alt="Diagram: Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-sticky.svg" alt="Sticky Note: Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/event-sourcing-sticky.svg" alt="Sticky Note: Event Sourcing" width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ Rebuild after snapshot:
 
 ### Change Data Capture (CDC)
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-handwritten.svg" alt="Handwritten: Change Data Capture (CDC)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-handwritten.svg" alt="Handwritten: Change Data Capture (CDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-diagram.svg" alt="Diagram: Change Data Capture (CDC)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-diagram.svg" alt="Diagram: Change Data Capture (CDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-sticky.svg" alt="Sticky Note: Change Data Capture (CDC)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/change-data-capture-cdc-sticky.svg" alt="Sticky Note: Change Data Capture (CDC)" width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ MySQL ? Debezium ? Kafka Topic "db.orders.orders"
 
 ### Backpressure
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/backpressure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/backpressure-handwritten.svg" alt="Handwritten: Backpressure" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/backpressure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/backpressure-handwritten.svg" alt="Handwritten: Backpressure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/backpressure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/backpressure-diagram.svg" alt="Diagram: Backpressure" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/backpressure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/backpressure-diagram.svg" alt="Diagram: Backpressure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/backpressure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/backpressure-sticky.svg" alt="Sticky Note: Backpressure" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/backpressure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/backpressure-sticky.svg" alt="Sticky Note: Backpressure" width="30%">
 </a>
 
 
@@ -595,14 +595,14 @@ Observable.range(1, 1000)
 
 ### Priority Queues
 
-<a href="../../assets/images/diagrams/system-design/07-message-queues/priority-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/priority-queues-handwritten.svg" alt="Handwritten: Priority Queues" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/priority-queues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/priority-queues-handwritten.svg" alt="Handwritten: Priority Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/priority-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/priority-queues-diagram.svg" alt="Diagram: Priority Queues" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/priority-queues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/priority-queues-diagram.svg" alt="Diagram: Priority Queues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/07-message-queues/priority-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/07-message-queues/priority-queues-sticky.svg" alt="Sticky Note: Priority Queues" width="30%">
+<a href="../../../assets/images/diagrams/system-design/07-message-queues/priority-queues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/07-message-queues/priority-queues-sticky.svg" alt="Sticky Note: Priority Queues" width="30%">
 </a>
 
 

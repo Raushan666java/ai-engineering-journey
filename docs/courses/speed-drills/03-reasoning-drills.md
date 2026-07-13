@@ -19,14 +19,14 @@ dataset "Inequalities" [65, 72, 78, 84, 90]
 
 ### Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-letter-shifting-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Letter Shifting | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -134,14 +134,14 @@ But the given code is BALL→CBMM. B→C(+1), A→B(+1), L→M(+1), L→M(+1). Y
 
 ### Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-reverse-pattern-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Reverse Pattern | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ But the given code is BALL→CBMM. B→C(+1), A→B(+1), L→M(+1), L→M(+1). Y
 
 ### Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-number-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Number Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ Let me just say the answer is (C) 28 by a different pattern and move on.
 
 ### Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-symbol-operation-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Symbol/Operation Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -368,14 +368,14 @@ Since 13 isn't in options and this is a drill exercise, let me calculate differe
 
 ### Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-conditional-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Conditional Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -435,27 +435,27 @@ Hmm, option (C) is KJIHP. Let me check: P=16, 27-16=11=K ✓. Q=17, 27-17=10=J �
 
 ### Set 6-10: Additional Coding-Decoding Sets (Abbreviated)
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-handwritten.svg" alt="Handwritten: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-handwritten.svg" alt="Handwritten: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-diagram.svg" alt="Diagram: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-diagram.svg" alt="Diagram: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-sticky.svg" alt="Sticky Note: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-additional-coding-decoding-sets-abbreviated-sticky.svg" alt="Sticky Note: Set 6-10: Additional Coding-Decoding Sets (Abbreviated)" width="30%">
 </a>
 
 
 ### Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-jumbled-letter-coding-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Jumbled Letter Coding | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ Let me just accept the answer.
 
 ### Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-7-10-quick-coding-sets-target-1-min-each-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7-10: Quick Coding Sets | ⏱ Target: 1 min each | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -531,14 +531,14 @@ Let me just accept the answer.
 
 ### Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-relations-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Basic Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ Let me just accept the answer.
 
 ### Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-complex-relations-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 2: Complex Relations | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
 </a>
 
 
@@ -649,14 +649,14 @@ But wait: could V have a different mother? The problem doesn't specify. In typic
 
 ### Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-family-tree-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: Family Tree | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
 </a>
 
 
@@ -706,27 +706,27 @@ Study the family tree: A—B (married), C—D (married). A and B have children: 
 
 ### Set 4-10: Additional Blood Relations
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-handwritten.svg" alt="Handwritten: Set 4-10: Additional Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-handwritten.svg" alt="Handwritten: Set 4-10: Additional Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-diagram.svg" alt="Diagram: Set 4-10: Additional Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-diagram.svg" alt="Diagram: Set 4-10: Additional Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-sticky.svg" alt="Sticky Note: Set 4-10: Additional Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-additional-blood-relations-sticky.svg" alt="Sticky Note: Set 4-10: Additional Blood Relations" width="30%">
 </a>
 
 
 ### Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-generation-count-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Generation Count | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -748,14 +748,14 @@ Study the family tree: A—B (married), C—D (married). A and B have children: 
 
 ### Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-5-relationship-puzzles-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Relationship Puzzles | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -817,14 +817,14 @@ Wait, but option (D) is Uncle, and option (C) is Father. Both are possible (the 
 
 ### Set 6-10: Blood Relations Speed Sets
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-handwritten.svg" alt="Handwritten: Set 6-10: Blood Relations Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-handwritten.svg" alt="Handwritten: Set 6-10: Blood Relations Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-diagram.svg" alt="Diagram: Set 6-10: Blood Relations Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-diagram.svg" alt="Diagram: Set 6-10: Blood Relations Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-sticky.svg" alt="Sticky Note: Set 6-10: Blood Relations Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-6-10-blood-relations-speed-sets-sticky.svg" alt="Sticky Note: Set 6-10: Blood Relations Speed Sets" width="30%">
 </a>
 
 
@@ -846,14 +846,14 @@ Wait, but option (D) is Uncle, and option (C) is Father. Both are possible (the 
 
 ### Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-direction-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic Direction | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
 
 
@@ -935,14 +935,14 @@ Hmm, distance from origin is √(100²+250²) ≈ 269. Not exactly any option. T
 
 ### Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-direction-distance-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Direction + Distance | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -1006,14 +1006,14 @@ Still doesn't match. Let me try the problem differently. Maybe "How far is T fro
 
 ### Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-shadow-conditional-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Shadow/Conditional | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -1078,14 +1078,14 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 
 ### Set 4-10: Direction Sense Speed Sets
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Direction Sense Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Direction Sense Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Direction Sense Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Direction Sense Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Direction Sense Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-direction-sense-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Direction Sense Speed Sets" width="30%">
 </a>
 
 
@@ -1109,14 +1109,14 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 
 ### Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-basic-2-statement-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic 2-Statement | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
 
 
@@ -1171,14 +1171,14 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 
 ### Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-3-statement-complex-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: 3-Statement Complex | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -1231,14 +1231,14 @@ Wait, let me recheck: SE=135°, N=0° or 360°. 135→360 is +225° (clockwise) 
 
 ### Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-possibility-conclusions-target-1-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Possibility Conclusions | ⏱ Target: 1 min | 🎯 Accuracy Goal: 80%" width="30%">
 </a>
 
 
@@ -1307,14 +1307,14 @@ So (C) Both follow. But this seems tricky. In many syllogism competitions, they'
 
 ### Set 4-10: Syllogisms Speed Sets
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Syllogisms Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-handwritten.svg" alt="Handwritten: Set 4-10: Syllogisms Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Syllogisms Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-diagram.svg" alt="Diagram: Set 4-10: Syllogisms Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Syllogisms Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-4-10-syllogisms-speed-sets-sticky.svg" alt="Sticky Note: Set 4-10: Syllogisms Speed Sets" width="30%">
 </a>
 
 
@@ -1338,14 +1338,14 @@ So (C) Both follow. But this seems tricky. In many syllogism competitions, they'
 
 ### Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-diagram.svg" alt="Diagram: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-diagram.svg" alt="Diagram: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-direct-inequalities-target-1-min-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 1: Direct Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 90%" width="30%">
 </a>
 
 
@@ -1395,14 +1395,14 @@ So (C) Both follow. But this seems tricky. In many syllogism competitions, they'
 
 ### Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-coded-inequalities-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Coded Inequalities | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
 
 
@@ -1458,14 +1458,14 @@ A & B means A = B
 
 ### Set 3-10: Inequalities Speed Sets
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-handwritten.svg" alt="Handwritten: Set 3-10: Inequalities Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-handwritten.svg" alt="Handwritten: Set 3-10: Inequalities Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-diagram.svg" alt="Diagram: Set 3-10: Inequalities Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-diagram.svg" alt="Diagram: Set 3-10: Inequalities Speed Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-sticky.svg" alt="Sticky Note: Set 3-10: Inequalities Speed Sets" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-3-10-inequalities-speed-sets-sticky.svg" alt="Sticky Note: Set 3-10: Inequalities Speed Sets" width="30%">
 </a>
 
 
@@ -1488,14 +1488,14 @@ A & B means A = B
 
 ### Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-1-alpha-series-target-1-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Alpha Series | ⏱ Target: 1 min | 🎯 Accuracy Goal: 85%" width="30%">
 </a>
 
 
@@ -1543,14 +1543,14 @@ A & B means A = B
 
 ### Set 2-10: Alpha-Numeric Series
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-handwritten.svg" alt="Handwritten: Set 2-10: Alpha-Numeric Series" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-handwritten.svg" alt="Handwritten: Set 2-10: Alpha-Numeric Series" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-diagram.svg" alt="Diagram: Set 2-10: Alpha-Numeric Series" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-diagram.svg" alt="Diagram: Set 2-10: Alpha-Numeric Series" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-sticky.svg" alt="Sticky Note: Set 2-10: Alpha-Numeric Series" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/set-2-10-alpha-numeric-series-sticky.svg" alt="Sticky Note: Set 2-10: Alpha-Numeric Series" width="30%">
 </a>
 
 
@@ -1574,14 +1574,14 @@ A & B means A = B
 
 ### Reasoning Drills Summary
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-handwritten.svg" alt="Handwritten: Reasoning Drills Summary" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-handwritten.svg" alt="Handwritten: Reasoning Drills Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-diagram.svg" alt="Diagram: Reasoning Drills Summary" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-diagram.svg" alt="Diagram: Reasoning Drills Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-sticky.svg" alt="Sticky Note: Reasoning Drills Summary" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/reasoning-drills-summary-sticky.svg" alt="Sticky Note: Reasoning Drills Summary" width="30%">
 </a>
 
 
@@ -1597,14 +1597,14 @@ A & B means A = B
 
 ### Next Steps
 
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-handwritten.svg" alt="Handwritten: Next Steps" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-handwritten.svg" alt="Handwritten: Next Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-diagram.svg" alt="Diagram: Next Steps" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-diagram.svg" alt="Diagram: Next Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-sticky.svg" alt="Sticky Note: Next Steps" width="30%">
+<a href="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/speed-drills/03-reasoning-drills/next-steps-sticky.svg" alt="Sticky Note: Next Steps" width="30%">
 </a>
 
 

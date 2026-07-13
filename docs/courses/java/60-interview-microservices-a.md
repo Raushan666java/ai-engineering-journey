@@ -23,14 +23,14 @@ flowchart LR
 
 ### Q1: What is microservice architecture and how does it differ from monolithic architecture?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-handwritten.svg" alt="Handwritten: What is microservice architecture and how does it differ from monolithic architecture?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-handwritten.svg" alt="Handwritten: What is microservice architecture and how does it differ from monolithic architecture?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-diagram.svg" alt="Diagram: What is microservice architecture and how does it differ from monolithic architecture?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-diagram.svg" alt="Diagram: What is microservice architecture and how does it differ from monolithic architecture?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-sticky.svg" alt="Sticky Note: What is microservice architecture and how does it differ from monolithic architecture?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-microservice-architecture-and-how-does-it-differ-from-monolithic-architecture-sticky.svg" alt="Sticky Note: What is microservice architecture and how does it differ from monolithic architecture?" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ Start monolithic. Split into microservices only when you need independent scalin
 
 ### Q2: How do you decompose a monolith into microservices?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-handwritten.svg" alt="Handwritten: How do you decompose a monolith into microservices?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-handwritten.svg" alt="Handwritten: How do you decompose a monolith into microservices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-diagram.svg" alt="Diagram: How do you decompose a monolith into microservices?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-diagram.svg" alt="Diagram: How do you decompose a monolith into microservices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-sticky.svg" alt="Sticky Note: How do you decompose a monolith into microservices?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-decompose-a-monolith-into-microservices-sticky.svg" alt="Sticky Note: How do you decompose a monolith into microservices?" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ Extraction order: start with the bounded context that changes most frequently, h
 
 ### Q3: Compare synchronous and asynchronous communication between microservices
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-handwritten.svg" alt="Handwritten: Compare synchronous and asynchronous communication between microservices" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-handwritten.svg" alt="Handwritten: Compare synchronous and asynchronous communication between microservices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-diagram.svg" alt="Diagram: Compare synchronous and asynchronous communication between microservices" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-diagram.svg" alt="Diagram: Compare synchronous and asynchronous communication between microservices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-sticky.svg" alt="Sticky Note: Compare synchronous and asynchronous communication between microservices" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/compare-synchronous-and-asynchronous-communication-between-microservices-sticky.svg" alt="Sticky Note: Compare synchronous and asynchronous communication between microservices" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ Use synchronous for reads and commands where immediate response is required. Use
 
 ### Q4: How do you implement an API Gateway with Spring Cloud Gateway?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-handwritten.svg" alt="Handwritten: How do you implement an API Gateway with Spring Cloud Gateway?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-handwritten.svg" alt="Handwritten: How do you implement an API Gateway with Spring Cloud Gateway?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-diagram.svg" alt="Diagram: How do you implement an API Gateway with Spring Cloud Gateway?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-diagram.svg" alt="Diagram: How do you implement an API Gateway with Spring Cloud Gateway?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-sticky.svg" alt="Sticky Note: How do you implement an API Gateway with Spring Cloud Gateway?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-an-api-gateway-with-spring-cloud-gateway-sticky.svg" alt="Sticky Note: How do you implement an API Gateway with Spring Cloud Gateway?" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ API Gateway responsibilities: routing, authentication, rate limiting, request/re
 
 ### Q5: How does service discovery work with Eureka?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-handwritten.svg" alt="Handwritten: How does service discovery work with Eureka?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-handwritten.svg" alt="Handwritten: How does service discovery work with Eureka?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-diagram.svg" alt="Diagram: How does service discovery work with Eureka?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-diagram.svg" alt="Diagram: How does service discovery work with Eureka?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-sticky.svg" alt="Sticky Note: How does service discovery work with Eureka?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-does-service-discovery-work-with-eureka-sticky.svg" alt="Sticky Note: How does service discovery work with Eureka?" width="30%">
 </a>
 
 
@@ -468,14 +468,14 @@ For production, run at least 2 Eureka servers in a multi-DC setup. Eureka is AP 
 
 ### Q6: How do you externalize configuration with Spring Cloud Config?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-handwritten.svg" alt="Handwritten: How do you externalize configuration with Spring Cloud Config?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-handwritten.svg" alt="Handwritten: How do you externalize configuration with Spring Cloud Config?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-diagram.svg" alt="Diagram: How do you externalize configuration with Spring Cloud Config?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-diagram.svg" alt="Diagram: How do you externalize configuration with Spring Cloud Config?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-sticky.svg" alt="Sticky Note: How do you externalize configuration with Spring Cloud Config?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-externalize-configuration-with-spring-cloud-config-sticky.svg" alt="Sticky Note: How do you externalize configuration with Spring Cloud Config?" width="30%">
 </a>
 
 
@@ -577,14 +577,14 @@ Config server enables centralized management, version history (through Git), and
 
 ### Q7: How do you implement distributed tracing with Micrometer and Zipkin?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-handwritten.svg" alt="Handwritten: How do you implement distributed tracing with Micrometer and Zipkin?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-handwritten.svg" alt="Handwritten: How do you implement distributed tracing with Micrometer and Zipkin?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-diagram.svg" alt="Diagram: How do you implement distributed tracing with Micrometer and Zipkin?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-diagram.svg" alt="Diagram: How do you implement distributed tracing with Micrometer and Zipkin?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-sticky.svg" alt="Sticky Note: How do you implement distributed tracing with Micrometer and Zipkin?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-implement-distributed-tracing-with-micrometer-and-zipkin-sticky.svg" alt="Sticky Note: How do you implement distributed tracing with Micrometer and Zipkin?" width="30%">
 </a>
 
 
@@ -679,14 +679,14 @@ With 100% sampling in dev (1.0) and 1-10% in prod, tracing adds negligible overh
 
 ### Q8: Explain the Saga pattern with a code example
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-handwritten.svg" alt="Handwritten: Explain the Saga pattern with a code example" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-handwritten.svg" alt="Handwritten: Explain the Saga pattern with a code example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-diagram.svg" alt="Diagram: Explain the Saga pattern with a code example" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-diagram.svg" alt="Diagram: Explain the Saga pattern with a code example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-sticky.svg" alt="Sticky Note: Explain the Saga pattern with a code example" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/explain-the-saga-pattern-with-a-code-example-sticky.svg" alt="Sticky Note: Explain the Saga pattern with a code example" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ Saga handles long-running transactions without locking resources. Choreography w
 
 ### Q6: What is the Strangler Fig pattern and when should you use it?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is the Strangler Fig pattern and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is the Strangler Fig pattern and when should you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is the Strangler Fig pattern and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is the Strangler Fig pattern and when should you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is the Strangler Fig pattern and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/what-is-the-strangler-fig-pattern-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is the Strangler Fig pattern and when should you use it?" width="30%">
 </a>
 
 
@@ -885,14 +885,14 @@ public class MonolithRoutingFilter implements Filter {
 
 ### Q7: How do you handle distributed caching in microservices?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-handwritten.svg" alt="Handwritten: How do you handle distributed caching in microservices?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-handwritten.svg" alt="Handwritten: How do you handle distributed caching in microservices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-diagram.svg" alt="Diagram: How do you handle distributed caching in microservices?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-diagram.svg" alt="Diagram: How do you handle distributed caching in microservices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-sticky.svg" alt="Sticky Note: How do you handle distributed caching in microservices?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/how-do-you-handle-distributed-caching-in-microservices-sticky.svg" alt="Sticky Note: How do you handle distributed caching in microservices?" width="30%">
 </a>
 
 
@@ -972,14 +972,14 @@ public class ProductEventConsumer {
 
 ### Mistake 1: Not implementing compensating transactions
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-handwritten.svg" alt="Handwritten: Mistake 1: Not implementing compensating transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-handwritten.svg" alt="Handwritten: Mistake 1: Not implementing compensating transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-diagram.svg" alt="Diagram: Mistake 1: Not implementing compensating transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-diagram.svg" alt="Diagram: Mistake 1: Not implementing compensating transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-sticky.svg" alt="Sticky Note: Mistake 1: Not implementing compensating transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-1-not-implementing-compensating-transactions-sticky.svg" alt="Sticky Note: Mistake 1: Not implementing compensating transactions" width="30%">
 </a>
 
 ```java
@@ -1007,14 +1007,14 @@ public class OrderSagaOrchestrator {
 
 ### Mistake 2: Using synchronous communication for saga steps
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-handwritten.svg" alt="Handwritten: Mistake 2: Using synchronous communication for saga steps" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-handwritten.svg" alt="Handwritten: Mistake 2: Using synchronous communication for saga steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-diagram.svg" alt="Diagram: Mistake 2: Using synchronous communication for saga steps" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-diagram.svg" alt="Diagram: Mistake 2: Using synchronous communication for saga steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-sticky.svg" alt="Sticky Note: Mistake 2: Using synchronous communication for saga steps" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-2-using-synchronous-communication-for-saga-steps-sticky.svg" alt="Sticky Note: Mistake 2: Using synchronous communication for saga steps" width="30%">
 </a>
 
 ```java
@@ -1028,14 +1028,14 @@ public class OrderSagaOrchestrator {
 
 ### Mistake 3: Not handling duplicate saga events
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-handwritten.svg" alt="Handwritten: Mistake 3: Not handling duplicate saga events" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-handwritten.svg" alt="Handwritten: Mistake 3: Not handling duplicate saga events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-diagram.svg" alt="Diagram: Mistake 3: Not handling duplicate saga events" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-diagram.svg" alt="Diagram: Mistake 3: Not handling duplicate saga events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-sticky.svg" alt="Sticky Note: Mistake 3: Not handling duplicate saga events" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-a/mistake-3-not-handling-duplicate-saga-events-sticky.svg" alt="Sticky Note: Mistake 3: Not handling duplicate saga events" width="30%">
 </a>
 
 ```java

@@ -47,14 +47,14 @@ flowchart LR
 
 ### 1.1 Physical Anatomy
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-handwritten.svg" alt="Handwritten: 1.1 Physical Anatomy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-handwritten.svg" alt="Handwritten: 1.1 Physical Anatomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-diagram.svg" alt="Diagram: 1.1 Physical Anatomy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-diagram.svg" alt="Diagram: 1.1 Physical Anatomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-sticky.svg" alt="Sticky Note: 1.1 Physical Anatomy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-1-physical-anatomy-sticky.svg" alt="Sticky Note: 1.1 Physical Anatomy" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ Magnetic hard disk drives (HDDs) consist of:
 
 ### 1.2 Disk Geometry Terms
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-handwritten.svg" alt="Handwritten: 1.2 Disk Geometry Terms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-handwritten.svg" alt="Handwritten: 1.2 Disk Geometry Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-diagram.svg" alt="Diagram: 1.2 Disk Geometry Terms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-diagram.svg" alt="Diagram: 1.2 Disk Geometry Terms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-sticky.svg" alt="Sticky Note: 1.2 Disk Geometry Terms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-2-disk-geometry-terms-sticky.svg" alt="Sticky Note: 1.2 Disk Geometry Terms" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ Magnetic hard disk drives (HDDs) consist of:
 
 ### 1.3 Disk Access Time
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-handwritten.svg" alt="Handwritten: 1.3 Disk Access Time" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-handwritten.svg" alt="Handwritten: 1.3 Disk Access Time" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-diagram.svg" alt="Diagram: 1.3 Disk Access Time" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-diagram.svg" alt="Diagram: 1.3 Disk Access Time" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-sticky.svg" alt="Sticky Note: 1.3 Disk Access Time" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-3-disk-access-time-sticky.svg" alt="Sticky Note: 1.3 Disk Access Time" width="30%">
 </a>
 
 
@@ -142,14 +142,14 @@ Access Time = Seek Time + Rotational Latency + Transfer Time
 
 ### 1.4 Real-World Analogy: Library Bookshelf
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-handwritten.svg" alt="Handwritten: 1.4 Real-World Analogy: Library Bookshelf" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-handwritten.svg" alt="Handwritten: 1.4 Real-World Analogy: Library Bookshelf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-diagram.svg" alt="Diagram: 1.4 Real-World Analogy: Library Bookshelf" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-diagram.svg" alt="Diagram: 1.4 Real-World Analogy: Library Bookshelf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-sticky.svg" alt="Sticky Note: 1.4 Real-World Analogy: Library Bookshelf" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-4-real-world-analogy-library-bookshelf-sticky.svg" alt="Sticky Note: 1.4 Real-World Analogy: Library Bookshelf" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ An elevator zigzagging between random floors (FCFS) wastes time. Moving directio
 
 ### 1.5 Advantages & Disadvantages of HDDs
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-handwritten.svg" alt="Handwritten: 1.5 Advantages & Disadvantages of HDDs" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-handwritten.svg" alt="Handwritten: 1.5 Advantages & Disadvantages of HDDs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-diagram.svg" alt="Diagram: 1.5 Advantages & Disadvantages of HDDs" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-diagram.svg" alt="Diagram: 1.5 Advantages & Disadvantages of HDDs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-sticky.svg" alt="Sticky Note: 1.5 Advantages & Disadvantages of HDDs" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-5-advantages-disadvantages-of-hdds-sticky.svg" alt="Sticky Note: 1.5 Advantages & Disadvantages of HDDs" width="30%">
 </a>
 
 
@@ -187,14 +187,14 @@ An elevator zigzagging between random floors (FCFS) wastes time. Moving directio
 
 ### 1.6 Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-handwritten.svg" alt="Handwritten: 1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-handwritten.svg" alt="Handwritten: 1.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-diagram.svg" alt="Diagram: 1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-diagram.svg" alt="Diagram: 1.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-sticky.svg" alt="Sticky Note: 1.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/1-6-edge-cases-sticky.svg" alt="Sticky Note: 1.6 Edge Cases" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ Reorder pending I/O request queue to minimize seek time (dominant component).
 
 ### Common Benchmark Queue
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-handwritten.svg" alt="Handwritten: Common Benchmark Queue" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-handwritten.svg" alt="Handwritten: Common Benchmark Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-diagram.svg" alt="Diagram: Common Benchmark Queue" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-diagram.svg" alt="Diagram: Common Benchmark Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-sticky.svg" alt="Sticky Note: Common Benchmark Queue" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/common-benchmark-queue-sticky.svg" alt="Sticky Note: Common Benchmark Queue" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ All examples: `[98, 183, 37, 122, 14, 124, 65, 67]`, head=53, disk 0â€“199.
 
 ### 2.1 FCFS (First-Come, First-Served)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-handwritten.svg" alt="Handwritten: 2.1 FCFS (First-Come, First-Served)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-handwritten.svg" alt="Handwritten: 2.1 FCFS (First-Come, First-Served)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-diagram.svg" alt="Diagram: 2.1 FCFS (First-Come, First-Served)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-diagram.svg" alt="Diagram: 2.1 FCFS (First-Come, First-Served)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-sticky.svg" alt="Sticky Note: 2.1 FCFS (First-Come, First-Served)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-1-fcfs-first-come-first-served-sticky.svg" alt="Sticky Note: 2.1 FCFS (First-Come, First-Served)" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ fcfs(requests, 53)
 
 ### 2.2 SSTF (Shortest Seek Time First)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-handwritten.svg" alt="Handwritten: 2.2 SSTF (Shortest Seek Time First)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-handwritten.svg" alt="Handwritten: 2.2 SSTF (Shortest Seek Time First)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-diagram.svg" alt="Diagram: 2.2 SSTF (Shortest Seek Time First)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-diagram.svg" alt="Diagram: 2.2 SSTF (Shortest Seek Time First)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-sticky.svg" alt="Sticky Note: 2.2 SSTF (Shortest Seek Time First)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-2-sstf-shortest-seek-time-first-sticky.svg" alt="Sticky Note: 2.2 SSTF (Shortest Seek Time First)" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ sstf([98, 183, 37, 122, 14, 124, 65, 67], 53)
 
 ### 2.3 SCAN (Elevator Algorithm)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-handwritten.svg" alt="Handwritten: 2.3 SCAN (Elevator Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-handwritten.svg" alt="Handwritten: 2.3 SCAN (Elevator Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-diagram.svg" alt="Diagram: 2.3 SCAN (Elevator Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-diagram.svg" alt="Diagram: 2.3 SCAN (Elevator Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-sticky.svg" alt="Sticky Note: 2.3 SCAN (Elevator Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-3-scan-elevator-algorithm-sticky.svg" alt="Sticky Note: 2.3 SCAN (Elevator Algorithm)" width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ scan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200, True)
 
 ### 2.4 C-SCAN (Circular SCAN)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-handwritten.svg" alt="Handwritten: 2.4 C-SCAN (Circular SCAN)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-handwritten.svg" alt="Handwritten: 2.4 C-SCAN (Circular SCAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-diagram.svg" alt="Diagram: 2.4 C-SCAN (Circular SCAN)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-diagram.svg" alt="Diagram: 2.4 C-SCAN (Circular SCAN)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-sticky.svg" alt="Sticky Note: 2.4 C-SCAN (Circular SCAN)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-4-c-scan-circular-scan-sticky.svg" alt="Sticky Note: 2.4 C-SCAN (Circular SCAN)" width="30%">
 </a>
 
 
@@ -662,14 +662,14 @@ cscan([98, 183, 37, 122, 14, 124, 65, 67], 53, 200)
 
 ### 2.5 LOOK (Elevator, Early Turnaround)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-handwritten.svg" alt="Handwritten: 2.5 LOOK (Elevator, Early Turnaround)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-handwritten.svg" alt="Handwritten: 2.5 LOOK (Elevator, Early Turnaround)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-diagram.svg" alt="Diagram: 2.5 LOOK (Elevator, Early Turnaround)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-diagram.svg" alt="Diagram: 2.5 LOOK (Elevator, Early Turnaround)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-sticky.svg" alt="Sticky Note: 2.5 LOOK (Elevator, Early Turnaround)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-5-look-elevator-early-turnaround-sticky.svg" alt="Sticky Note: 2.5 LOOK (Elevator, Early Turnaround)" width="30%">
 </a>
 
 
@@ -762,14 +762,14 @@ look([98, 183, 37, 122, 14, 124, 65, 67], 53)
 
 ### 2.6 C-LOOK (Circular LOOK)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-handwritten.svg" alt="Handwritten: 2.6 C-LOOK (Circular LOOK)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-handwritten.svg" alt="Handwritten: 2.6 C-LOOK (Circular LOOK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-diagram.svg" alt="Diagram: 2.6 C-LOOK (Circular LOOK)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-diagram.svg" alt="Diagram: 2.6 C-LOOK (Circular LOOK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-sticky.svg" alt="Sticky Note: 2.6 C-LOOK (Circular LOOK)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-6-c-look-circular-look-sticky.svg" alt="Sticky Note: 2.6 C-LOOK (Circular LOOK)" width="30%">
 </a>
 
 
@@ -868,14 +868,14 @@ clook([98, 183, 37, 122, 14, 124, 65, 67], 53)
 
 ### 2.7 Comparison Table
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-handwritten.svg" alt="Handwritten: 2.7 Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-handwritten.svg" alt="Handwritten: 2.7 Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-diagram.svg" alt="Diagram: 2.7 Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-diagram.svg" alt="Diagram: 2.7 Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-sticky.svg" alt="Sticky Note: 2.7 Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-7-comparison-table-sticky.svg" alt="Sticky Note: 2.7 Comparison Table" width="30%">
 </a>
 
 
@@ -894,14 +894,14 @@ LOOK has lowest seek (208). C-LOOK/C-SCAN provide best fairness. Choice depends 
 
 ### 2.8 SSTF vs SCAN Starvation Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-handwritten.svg" alt="Handwritten: 2.8 SSTF vs SCAN Starvation Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-handwritten.svg" alt="Handwritten: 2.8 SSTF vs SCAN Starvation Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-diagram.svg" alt="Diagram: 2.8 SSTF vs SCAN Starvation Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-diagram.svg" alt="Diagram: 2.8 SSTF vs SCAN Starvation Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-sticky.svg" alt="Sticky Note: 2.8 SSTF vs SCAN Starvation Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-8-sstf-vs-scan-starvation-analysis-sticky.svg" alt="Sticky Note: 2.8 SSTF vs SCAN Starvation Analysis" width="30%">
 </a>
 
 
@@ -915,14 +915,14 @@ LOOK has lowest seek (208). C-LOOK/C-SCAN provide best fairness. Choice depends 
 
 ### 2.9 Complexity Summary
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-handwritten.svg" alt="Handwritten: 2.9 Complexity Summary" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-handwritten.svg" alt="Handwritten: 2.9 Complexity Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-diagram.svg" alt="Diagram: 2.9 Complexity Summary" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-diagram.svg" alt="Diagram: 2.9 Complexity Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-sticky.svg" alt="Sticky Note: 2.9 Complexity Summary" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-9-complexity-summary-sticky.svg" alt="Sticky Note: 2.9 Complexity Summary" width="30%">
 </a>
 
 
@@ -939,14 +939,14 @@ SSTF O(nÂ²) becomes prohibitive at scale (10K req → ~50M distance calcs).
 
 ### 2.10 Combined Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-handwritten.svg" alt="Handwritten: 2.10 Combined Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-handwritten.svg" alt="Handwritten: 2.10 Combined Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-diagram.svg" alt="Diagram: 2.10 Combined Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-diagram.svg" alt="Diagram: 2.10 Combined Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-sticky.svg" alt="Sticky Note: 2.10 Combined Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/2-10-combined-edge-cases-sticky.svg" alt="Sticky Note: 2.10 Combined Edge Cases" width="30%">
 </a>
 
 
@@ -964,14 +964,14 @@ SSTF O(nÂ²) becomes prohibitive at scale (10K req → ~50M distance calcs).
 
 ### 3.1 Formatting
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-handwritten.svg" alt="Handwritten: 3.1 Formatting" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-handwritten.svg" alt="Handwritten: 3.1 Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-diagram.svg" alt="Diagram: 3.1 Formatting" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-diagram.svg" alt="Diagram: 3.1 Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-sticky.svg" alt="Sticky Note: 3.1 Formatting" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-1-formatting-sticky.svg" alt="Sticky Note: 3.1 Formatting" width="30%">
 </a>
 
 
@@ -994,14 +994,14 @@ Disk Layout:
 
 ### 3.2 Boot Block
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-handwritten.svg" alt="Handwritten: 3.2 Boot Block" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-handwritten.svg" alt="Handwritten: 3.2 Boot Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-diagram.svg" alt="Diagram: 3.2 Boot Block" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-diagram.svg" alt="Diagram: 3.2 Boot Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-sticky.svg" alt="Sticky Note: 3.2 Boot Block" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-2-boot-block-sticky.svg" alt="Sticky Note: 3.2 Boot Block" width="30%">
 </a>
 
 
@@ -1017,14 +1017,14 @@ Disk Layout:
 - UEFI firmware standard. Supports >2 TB and unlimited partitions (128 by convention).
 ### 3.3 Bad Block Handling
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-handwritten.svg" alt="Handwritten: 3.3 Bad Block Handling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-handwritten.svg" alt="Handwritten: 3.3 Bad Block Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-diagram.svg" alt="Diagram: 3.3 Bad Block Handling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-diagram.svg" alt="Diagram: 3.3 Bad Block Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-sticky.svg" alt="Sticky Note: 3.3 Bad Block Handling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-3-bad-block-handling-sticky.svg" alt="Sticky Note: 3.3 Bad Block Handling" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ Bad sector detected → controller remaps LBA to spare sector → OS none the wi
 
 ### 3.4 Disk Management Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-handwritten.svg" alt="Handwritten: 3.4 Disk Management Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-handwritten.svg" alt="Handwritten: 3.4 Disk Management Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-diagram.svg" alt="Diagram: 3.4 Disk Management Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-diagram.svg" alt="Diagram: 3.4 Disk Management Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-sticky.svg" alt="Sticky Note: 3.4 Disk Management Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/3-4-disk-management-edge-cases-sticky.svg" alt="Sticky Note: 3.4 Disk Management Edge Cases" width="30%">
 </a>
 
 
@@ -1074,14 +1074,14 @@ Bad sector detected → controller remaps LBA to spare sector → OS none the wi
 
 ### 4.1 RAID Levels
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-handwritten.svg" alt="Handwritten: 4.1 RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-handwritten.svg" alt="Handwritten: 4.1 RAID Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-diagram.svg" alt="Diagram: 4.1 RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-diagram.svg" alt="Diagram: 4.1 RAID Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-sticky.svg" alt="Sticky Note: 4.1 RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-1-raid-levels-sticky.svg" alt="Sticky Note: 4.1 RAID Levels" width="30%">
 </a>
 
 
@@ -1164,14 +1164,14 @@ Mirror pairs (RAID 1) striped together (RAID 0).
 
 ### 4.2 RAID Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-handwritten.svg" alt="Handwritten: 4.2 RAID Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-handwritten.svg" alt="Handwritten: 4.2 RAID Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-diagram.svg" alt="Diagram: 4.2 RAID Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-diagram.svg" alt="Diagram: 4.2 RAID Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-sticky.svg" alt="Sticky Note: 4.2 RAID Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-2-raid-comparison-sticky.svg" alt="Sticky Note: 4.2 RAID Comparison" width="30%">
 </a>
 
 
@@ -1195,14 +1195,14 @@ Mirror pairs (RAID 1) striped together (RAID 0).
 
 ### 4.3 RAID Reliability Calculation
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-handwritten.svg" alt="Handwritten: 4.3 RAID Reliability Calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-handwritten.svg" alt="Handwritten: 4.3 RAID Reliability Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-diagram.svg" alt="Diagram: 4.3 RAID Reliability Calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-diagram.svg" alt="Diagram: 4.3 RAID Reliability Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-sticky.svg" alt="Sticky Note: 4.3 RAID Reliability Calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-3-raid-reliability-calculation-sticky.svg" alt="Sticky Note: 4.3 RAID Reliability Calculation" width="30%">
 </a>
 
 
@@ -1225,14 +1225,14 @@ MTTF of one disk = M (say 1M hours â‰ˆ 114 years).
 
 ### 4.4 RAID Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-handwritten.svg" alt="Handwritten: 4.4 RAID Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-handwritten.svg" alt="Handwritten: 4.4 RAID Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-diagram.svg" alt="Diagram: 4.4 RAID Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-diagram.svg" alt="Diagram: 4.4 RAID Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-sticky.svg" alt="Sticky Note: 4.4 RAID Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/4-4-raid-edge-cases-sticky.svg" alt="Sticky Note: 4.4 RAID Edge Cases" width="30%">
 </a>
 
 
@@ -1255,14 +1255,14 @@ Extends physical memory by providing paging area on disk.
 
 ### 5.1 Swap Partition vs Swap File
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-handwritten.svg" alt="Handwritten: 5.1 Swap Partition vs Swap File" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-handwritten.svg" alt="Handwritten: 5.1 Swap Partition vs Swap File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-diagram.svg" alt="Diagram: 5.1 Swap Partition vs Swap File" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-diagram.svg" alt="Diagram: 5.1 Swap Partition vs Swap File" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-sticky.svg" alt="Sticky Note: 5.1 Swap Partition vs Swap File" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-1-swap-partition-vs-swap-file-sticky.svg" alt="Sticky Note: 5.1 Swap Partition vs Swap File" width="30%">
 </a>
 
 
@@ -1277,14 +1277,14 @@ Extends physical memory by providing paging area on disk.
 
 ### 5.2 Swap Sizing
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-handwritten.svg" alt="Handwritten: 5.2 Swap Sizing" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-handwritten.svg" alt="Handwritten: 5.2 Swap Sizing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-diagram.svg" alt="Diagram: 5.2 Swap Sizing" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-diagram.svg" alt="Diagram: 5.2 Swap Sizing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-sticky.svg" alt="Sticky Note: 5.2 Swap Sizing" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-2-swap-sizing-sticky.svg" alt="Sticky Note: 5.2 Swap Sizing" width="30%">
 </a>
 
 
@@ -1298,14 +1298,14 @@ Extends physical memory by providing paging area on disk.
 
 ### 5.3 Swap Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-handwritten.svg" alt="Handwritten: 5.3 Swap Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-handwritten.svg" alt="Handwritten: 5.3 Swap Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-diagram.svg" alt="Diagram: 5.3 Swap Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-diagram.svg" alt="Diagram: 5.3 Swap Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-sticky.svg" alt="Sticky Note: 5.3 Swap Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-3-swap-pseudocode-sticky.svg" alt="Sticky Note: 5.3 Swap Pseudocode" width="30%">
 </a>
 
 
@@ -1324,14 +1324,14 @@ SWAP-OUT(page):
 
 ### 5.4 Swap Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-handwritten.svg" alt="Handwritten: 5.4 Swap Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-handwritten.svg" alt="Handwritten: 5.4 Swap Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-diagram.svg" alt="Diagram: 5.4 Swap Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-diagram.svg" alt="Diagram: 5.4 Swap Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-sticky.svg" alt="Sticky Note: 5.4 Swap Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/5-4-swap-edge-cases-sticky.svg" alt="Sticky Note: 5.4 Swap Edge Cases" width="30%">
 </a>
 
 
@@ -1350,14 +1350,14 @@ SWAP-OUT(page):
 
 ### 6.1 Scheduling Selection Criteria
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-handwritten.svg" alt="Handwritten: 6.1 Scheduling Selection Criteria" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-handwritten.svg" alt="Handwritten: 6.1 Scheduling Selection Criteria" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-diagram.svg" alt="Diagram: 6.1 Scheduling Selection Criteria" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-diagram.svg" alt="Diagram: 6.1 Scheduling Selection Criteria" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-sticky.svg" alt="Sticky Note: 6.1 Scheduling Selection Criteria" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-1-scheduling-selection-criteria-sticky.svg" alt="Sticky Note: 6.1 Scheduling Selection Criteria" width="30%">
 </a>
 
 
@@ -1373,14 +1373,14 @@ SWAP-OUT(page):
 
 ### 6.2 RAID Reliability → Interview Answer
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-handwritten.svg" alt="Handwritten: 6.2 RAID Reliability → Interview Answer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-handwritten.svg" alt="Handwritten: 6.2 RAID Reliability → Interview Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-diagram.svg" alt="Diagram: 6.2 RAID Reliability → Interview Answer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-diagram.svg" alt="Diagram: 6.2 RAID Reliability → Interview Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-sticky.svg" alt="Sticky Note: 6.2 RAID Reliability → Interview Answer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-2-raid-reliability-interview-answer-sticky.svg" alt="Sticky Note: 6.2 RAID Reliability → Interview Answer" width="30%">
 </a>
 
 
@@ -1401,14 +1401,14 @@ SWAP-OUT(page):
 
 ### 6.3 Swap Sizing → Interview Answer
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-handwritten.svg" alt="Handwritten: 6.3 Swap Sizing → Interview Answer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-handwritten.svg" alt="Handwritten: 6.3 Swap Sizing → Interview Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-diagram.svg" alt="Diagram: 6.3 Swap Sizing → Interview Answer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-diagram.svg" alt="Diagram: 6.3 Swap Sizing → Interview Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-sticky.svg" alt="Sticky Note: 6.3 Swap Sizing → Interview Answer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-3-swap-sizing-interview-answer-sticky.svg" alt="Sticky Note: 6.3 Swap Sizing → Interview Answer" width="30%">
 </a>
 
 
@@ -1417,14 +1417,14 @@ SWAP-OUT(page):
 
 ### 6.4 Common Q&A
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-handwritten.svg" alt="Handwritten: 6.4 Common Q&A" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-handwritten.svg" alt="Handwritten: 6.4 Common Q&A" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-diagram.svg" alt="Diagram: 6.4 Common Q&A" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-diagram.svg" alt="Diagram: 6.4 Common Q&A" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-sticky.svg" alt="Sticky Note: 6.4 Common Q&A" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/6-4-common-q-a-sticky.svg" alt="Sticky Note: 6.4 Common Q&A" width="30%">
 </a>
 
 
@@ -1446,14 +1446,14 @@ SWAP-OUT(page):
 
 ### 7.1 Linux I/O Schedulers
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-handwritten.svg" alt="Handwritten: 7.1 Linux I/O Schedulers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-handwritten.svg" alt="Handwritten: 7.1 Linux I/O Schedulers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-diagram.svg" alt="Diagram: 7.1 Linux I/O Schedulers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-diagram.svg" alt="Diagram: 7.1 Linux I/O Schedulers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-sticky.svg" alt="Sticky Note: 7.1 Linux I/O Schedulers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-1-linux-i-o-schedulers-sticky.svg" alt="Sticky Note: 7.1 Linux I/O Schedulers" width="30%">
 </a>
 
 
@@ -1481,14 +1481,14 @@ Select per device: `echo <scheduler> > /sys/block/<dev>/queue/scheduler`
 
 ### 7.2 Windows Storage Stack
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-handwritten.svg" alt="Handwritten: 7.2 Windows Storage Stack" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-handwritten.svg" alt="Handwritten: 7.2 Windows Storage Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-diagram.svg" alt="Diagram: 7.2 Windows Storage Stack" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-diagram.svg" alt="Diagram: 7.2 Windows Storage Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-sticky.svg" alt="Sticky Note: 7.2 Windows Storage Stack" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-2-windows-storage-stack-sticky.svg" alt="Sticky Note: 7.2 Windows Storage Stack" width="30%">
 </a>
 
 
@@ -1507,14 +1507,14 @@ Windows: I/O Manager → Volume Manager → Class Driver → Port Driver → Sto
 
 ### 7.3 Hardware RAID Controllers
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-handwritten.svg" alt="Handwritten: 7.3 Hardware RAID Controllers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-handwritten.svg" alt="Handwritten: 7.3 Hardware RAID Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-diagram.svg" alt="Diagram: 7.3 Hardware RAID Controllers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-diagram.svg" alt="Diagram: 7.3 Hardware RAID Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-sticky.svg" alt="Sticky Note: 7.3 Hardware RAID Controllers" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-3-hardware-raid-controllers-sticky.svg" alt="Sticky Note: 7.3 Hardware RAID Controllers" width="30%">
 </a>
 
 
@@ -1529,14 +1529,14 @@ Windows: I/O Manager → Volume Manager → Class Driver → Port Driver → Sto
 
 ### 7.4 Real-World Configurations
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-handwritten.svg" alt="Handwritten: 7.4 Real-World Configurations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-handwritten.svg" alt="Handwritten: 7.4 Real-World Configurations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-diagram.svg" alt="Diagram: 7.4 Real-World Configurations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-diagram.svg" alt="Diagram: 7.4 Real-World Configurations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-sticky.svg" alt="Sticky Note: 7.4 Real-World Configurations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/7-4-real-world-configurations-sticky.svg" alt="Sticky Note: 7.4 Real-World Configurations" width="30%">
 </a>
 
 
@@ -1990,14 +1990,14 @@ calc.compare(configs);
 
 ### Basic
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -2007,14 +2007,14 @@ calc.compare(configs);
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -2024,14 +2024,14 @@ calc.compare(configs);
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 
@@ -2042,14 +2042,14 @@ calc.compare(configs);
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -2075,14 +2075,14 @@ calc.compare(configs);
 
 ### A.1 SSTF Starvation → Full Worked Example
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-handwritten.svg" alt="Handwritten: A.1 SSTF Starvation → Full Worked Example" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-handwritten.svg" alt="Handwritten: A.1 SSTF Starvation → Full Worked Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-diagram.svg" alt="Diagram: A.1 SSTF Starvation → Full Worked Example" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-diagram.svg" alt="Diagram: A.1 SSTF Starvation → Full Worked Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-sticky.svg" alt="Sticky Note: A.1 SSTF Starvation → Full Worked Example" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-1-sstf-starvation-full-worked-example-sticky.svg" alt="Sticky Note: A.1 SSTF Starvation → Full Worked Example" width="30%">
 </a>
 
 
@@ -2107,14 +2107,14 @@ Consider this dynamic scenario where requests arrive over time:
 
 ### A.2 Head Movement Calculation Formula
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-handwritten.svg" alt="Handwritten: A.2 Head Movement Calculation Formula" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-handwritten.svg" alt="Handwritten: A.2 Head Movement Calculation Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-diagram.svg" alt="Diagram: A.2 Head Movement Calculation Formula" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-diagram.svg" alt="Diagram: A.2 Head Movement Calculation Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-sticky.svg" alt="Sticky Note: A.2 Head Movement Calculation Formula" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-2-head-movement-calculation-formula-sticky.svg" alt="Sticky Note: A.2 Head Movement Calculation Formula" width="30%">
 </a>
 
 
@@ -2133,14 +2133,14 @@ For FCFS, pos(i) follows arrival order. For SCAN/LOOK, pos(i) follows the direct
 
 ### A.3 Average Seek Time Approximation
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-handwritten.svg" alt="Handwritten: A.3 Average Seek Time Approximation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-handwritten.svg" alt="Handwritten: A.3 Average Seek Time Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-diagram.svg" alt="Diagram: A.3 Average Seek Time Approximation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-diagram.svg" alt="Diagram: A.3 Average Seek Time Approximation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-sticky.svg" alt="Sticky Note: A.3 Average Seek Time Approximation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/a-3-average-seek-time-approximation-sticky.svg" alt="Sticky Note: A.3 Average Seek Time Approximation" width="30%">
 </a>
 
 
@@ -2152,14 +2152,14 @@ The average seek distance â‰ˆ (1/3) Ã— full stroke. If full stroke = 199 
 
 ### B.1 NUMA-Aware Scheduling
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-handwritten.svg" alt="Handwritten: B.1 NUMA-Aware Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-handwritten.svg" alt="Handwritten: B.1 NUMA-Aware Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-diagram.svg" alt="Diagram: B.1 NUMA-Aware Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-diagram.svg" alt="Diagram: B.1 NUMA-Aware Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-sticky.svg" alt="Sticky Note: B.1 NUMA-Aware Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-1-numa-aware-scheduling-sticky.svg" alt="Sticky Note: B.1 NUMA-Aware Scheduling" width="30%">
 </a>
 
 
@@ -2170,14 +2170,14 @@ Modern multi-socket servers may have storage controllers attached to specific NU
 
 ### B.2 Multi-Queue Block Layer (blk-mq)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-handwritten.svg" alt="Handwritten: B.2 Multi-Queue Block Layer (blk-mq)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-handwritten.svg" alt="Handwritten: B.2 Multi-Queue Block Layer (blk-mq)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-diagram.svg" alt="Diagram: B.2 Multi-Queue Block Layer (blk-mq)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-diagram.svg" alt="Diagram: B.2 Multi-Queue Block Layer (blk-mq)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-sticky.svg" alt="Sticky Note: B.2 Multi-Queue Block Layer (blk-mq)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-2-multi-queue-block-layer-blk-mq-sticky.svg" alt="Sticky Note: B.2 Multi-Queue Block Layer (blk-mq)" width="30%">
 </a>
 
 
@@ -2189,14 +2189,14 @@ Linux's multi-queue block layer (blk-mq) replaces the single-queue elevator for 
 
 ### B.3 NVMe SSD Considerations
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-handwritten.svg" alt="Handwritten: B.3 NVMe SSD Considerations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-handwritten.svg" alt="Handwritten: B.3 NVMe SSD Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-diagram.svg" alt="Diagram: B.3 NVMe SSD Considerations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-diagram.svg" alt="Diagram: B.3 NVMe SSD Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-sticky.svg" alt="Sticky Note: B.3 NVMe SSD Considerations" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/b-3-nvme-ssd-considerations-sticky.svg" alt="Sticky Note: B.3 NVMe SSD Considerations" width="30%">
 </a>
 
 
@@ -2212,14 +2212,14 @@ NVMe SSDs have no seek time → scheduling algorithms that minimize seek (SCAN, 
 
 ### C.1 Compute Seek Distance in Python (All Algorithms)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-handwritten.svg" alt="Handwritten: C.1 Compute Seek Distance in Python (All Algorithms)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-handwritten.svg" alt="Handwritten: C.1 Compute Seek Distance in Python (All Algorithms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-diagram.svg" alt="Diagram: C.1 Compute Seek Distance in Python (All Algorithms)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-diagram.svg" alt="Diagram: C.1 Compute Seek Distance in Python (All Algorithms)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-sticky.svg" alt="Sticky Note: C.1 Compute Seek Distance in Python (All Algorithms)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-1-compute-seek-distance-in-python-all-algorithms-sticky.svg" alt="Sticky Note: C.1 Compute Seek Distance in Python (All Algorithms)" width="30%">
 </a>
 
 
@@ -2259,14 +2259,14 @@ print(f"C-LOOK seek: {compute_seek(clook_path)}")  # 326
 
 ### C.2 Random Queue Generator
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-handwritten.svg" alt="Handwritten: C.2 Random Queue Generator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-handwritten.svg" alt="Handwritten: C.2 Random Queue Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-diagram.svg" alt="Diagram: C.2 Random Queue Generator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-diagram.svg" alt="Diagram: C.2 Random Queue Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-sticky.svg" alt="Sticky Note: C.2 Random Queue Generator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-2-random-queue-generator-sticky.svg" alt="Sticky Note: C.2 Random Queue Generator" width="30%">
 </a>
 
 
@@ -2285,14 +2285,14 @@ print(f"Head: {head}")
 
 ### C.3 Full Simulation Runner
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-handwritten.svg" alt="Handwritten: C.3 Full Simulation Runner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-handwritten.svg" alt="Handwritten: C.3 Full Simulation Runner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-diagram.svg" alt="Diagram: C.3 Full Simulation Runner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-diagram.svg" alt="Diagram: C.3 Full Simulation Runner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-sticky.svg" alt="Sticky Note: C.3 Full Simulation Runner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/c-3-full-simulation-runner-sticky.svg" alt="Sticky Note: C.3 Full Simulation Runner" width="30%">
 </a>
 
 
@@ -2374,14 +2374,14 @@ for _ in range(5):
 
 ### D.1 Nested RAID Levels
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-handwritten.svg" alt="Handwritten: D.1 Nested RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-handwritten.svg" alt="Handwritten: D.1 Nested RAID Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-diagram.svg" alt="Diagram: D.1 Nested RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-diagram.svg" alt="Diagram: D.1 Nested RAID Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-sticky.svg" alt="Sticky Note: D.1 Nested RAID Levels" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-1-nested-raid-levels-sticky.svg" alt="Sticky Note: D.1 Nested RAID Levels" width="30%">
 </a>
 
 
@@ -2398,14 +2398,14 @@ Beyond the standard levels, nested RAID combines multiple levels:
 
 ### D.2 RAID Controller Cache Strategies
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-handwritten.svg" alt="Handwritten: D.2 RAID Controller Cache Strategies" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-handwritten.svg" alt="Handwritten: D.2 RAID Controller Cache Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-diagram.svg" alt="Diagram: D.2 RAID Controller Cache Strategies" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-diagram.svg" alt="Diagram: D.2 RAID Controller Cache Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-sticky.svg" alt="Sticky Note: D.2 RAID Controller Cache Strategies" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-2-raid-controller-cache-strategies-sticky.svg" alt="Sticky Note: D.2 RAID Controller Cache Strategies" width="30%">
 </a>
 
 
@@ -2419,14 +2419,14 @@ Beyond the standard levels, nested RAID combines multiple levels:
 
 ### D.3 RAID Rebuild Time Factors
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-handwritten.svg" alt="Handwritten: D.3 RAID Rebuild Time Factors" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-handwritten.svg" alt="Handwritten: D.3 RAID Rebuild Time Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-diagram.svg" alt="Diagram: D.3 RAID Rebuild Time Factors" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-diagram.svg" alt="Diagram: D.3 RAID Rebuild Time Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-sticky.svg" alt="Sticky Note: D.3 RAID Rebuild Time Factors" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-3-raid-rebuild-time-factors-sticky.svg" alt="Sticky Note: D.3 RAID Rebuild Time Factors" width="30%">
 </a>
 
 
@@ -2441,14 +2441,14 @@ Typical rebuild speeds: 50â€“200 MB/s. For a 4 TB disk: 4 TB / 100 MB/s â�
 
 ### D.4 RAID vs Erasure Coding
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-handwritten.svg" alt="Handwritten: D.4 RAID vs Erasure Coding" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-handwritten.svg" alt="Handwritten: D.4 RAID vs Erasure Coding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-diagram.svg" alt="Diagram: D.4 RAID vs Erasure Coding" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-diagram.svg" alt="Diagram: D.4 RAID vs Erasure Coding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-sticky.svg" alt="Sticky Note: D.4 RAID vs Erasure Coding" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/d-4-raid-vs-erasure-coding-sticky.svg" alt="Sticky Note: D.4 RAID vs Erasure Coding" width="30%">
 </a>
 
 
@@ -2468,14 +2468,14 @@ For large-scale storage (>100 disks), erasure coding (Reed-Solomon, LRC) is pref
 
 ### E.1 Log-Structured File Systems
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-handwritten.svg" alt="Handwritten: E.1 Log-Structured File Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-handwritten.svg" alt="Handwritten: E.1 Log-Structured File Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-diagram.svg" alt="Diagram: E.1 Log-Structured File Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-diagram.svg" alt="Diagram: E.1 Log-Structured File Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-sticky.svg" alt="Sticky Note: E.1 Log-Structured File Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-1-log-structured-file-systems-sticky.svg" alt="Sticky Note: E.1 Log-Structured File Systems" width="30%">
 </a>
 
 
@@ -2487,14 +2487,14 @@ Log-structured file systems (LFS, F2FS) treat the entire disk as a circular log:
 
 ### E.2 Zoned Storage (SMR, ZNS)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-handwritten.svg" alt="Handwritten: E.2 Zoned Storage (SMR, ZNS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-handwritten.svg" alt="Handwritten: E.2 Zoned Storage (SMR, ZNS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-diagram.svg" alt="Diagram: E.2 Zoned Storage (SMR, ZNS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-diagram.svg" alt="Diagram: E.2 Zoned Storage (SMR, ZNS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-sticky.svg" alt="Sticky Note: E.2 Zoned Storage (SMR, ZNS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-2-zoned-storage-smr-zns-sticky.svg" alt="Sticky Note: E.2 Zoned Storage (SMR, ZNS)" width="30%">
 </a>
 
 
@@ -2511,14 +2511,14 @@ Log-structured file systems (LFS, F2FS) treat the entire disk as a circular log:
 
 ### E.3 Persistent Memory (PMEM)
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-handwritten.svg" alt="Handwritten: E.3 Persistent Memory (PMEM)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-handwritten.svg" alt="Handwritten: E.3 Persistent Memory (PMEM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-diagram.svg" alt="Diagram: E.3 Persistent Memory (PMEM)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-diagram.svg" alt="Diagram: E.3 Persistent Memory (PMEM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-sticky.svg" alt="Sticky Note: E.3 Persistent Memory (PMEM)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/e-3-persistent-memory-pmem-sticky.svg" alt="Sticky Note: E.3 Persistent Memory (PMEM)" width="30%">
 </a>
 
 
@@ -2579,14 +2579,14 @@ Intel Optane DC Persistent Memory (discontinued) and CXL-attached memory:
 
 ### H.1 Given a request sequence, find total seek
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-handwritten.svg" alt="Handwritten: H.1 Given a request sequence, find total seek" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-handwritten.svg" alt="Handwritten: H.1 Given a request sequence, find total seek" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-diagram.svg" alt="Diagram: H.1 Given a request sequence, find total seek" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-diagram.svg" alt="Diagram: H.1 Given a request sequence, find total seek" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-sticky.svg" alt="Sticky Note: H.1 Given a request sequence, find total seek" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-1-given-a-request-sequence-find-total-seek-sticky.svg" alt="Sticky Note: H.1 Given a request sequence, find total seek" width="30%">
 </a>
 
 
@@ -2600,14 +2600,14 @@ Total = 36+61+135+83+82+154+32+49 = 632 cylinders
 
 ### H.2 Given head movement, find scheduling algorithm
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-handwritten.svg" alt="Handwritten: H.2 Given head movement, find scheduling algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-handwritten.svg" alt="Handwritten: H.2 Given head movement, find scheduling algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-diagram.svg" alt="Diagram: H.2 Given head movement, find scheduling algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-diagram.svg" alt="Diagram: H.2 Given head movement, find scheduling algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-sticky.svg" alt="Sticky Note: H.2 Given head movement, find scheduling algorithm" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-2-given-head-movement-find-scheduling-algorithm-sticky.svg" alt="Sticky Note: H.2 Given head movement, find scheduling algorithm" width="30%">
 </a>
 
 
@@ -2617,14 +2617,14 @@ Total = 36+61+135+83+82+154+32+49 = 632 cylinders
 
 ### H.3 Disk access time calculation
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-handwritten.svg" alt="Handwritten: H.3 Disk access time calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-handwritten.svg" alt="Handwritten: H.3 Disk access time calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-diagram.svg" alt="Diagram: H.3 Disk access time calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-diagram.svg" alt="Diagram: H.3 Disk access time calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-sticky.svg" alt="Sticky Note: H.3 Disk access time calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-3-disk-access-time-calculation-sticky.svg" alt="Sticky Note: H.3 Disk access time calculation" width="30%">
 </a>
 
 
@@ -2640,14 +2640,14 @@ Sequential (1 MB) = 3 + 0 + 5.12 ms = 8.12 ms → 123 MB/s
 
 ### H.4 RAID capacity calculation
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-handwritten.svg" alt="Handwritten: H.4 RAID capacity calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-handwritten.svg" alt="Handwritten: H.4 RAID capacity calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-diagram.svg" alt="Diagram: H.4 RAID capacity calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-diagram.svg" alt="Diagram: H.4 RAID capacity calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-sticky.svg" alt="Sticky Note: H.4 RAID capacity calculation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-4-raid-capacity-calculation-sticky.svg" alt="Sticky Note: H.4 RAID capacity calculation" width="30%">
 </a>
 
 
@@ -2662,14 +2662,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### H.5 Swap sizing decision
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-handwritten.svg" alt="Handwritten: H.5 Swap sizing decision" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-handwritten.svg" alt="Handwritten: H.5 Swap sizing decision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-diagram.svg" alt="Diagram: H.5 Swap sizing decision" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-diagram.svg" alt="Diagram: H.5 Swap sizing decision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-sticky.svg" alt="Sticky Note: H.5 Swap sizing decision" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/h-5-swap-sizing-decision-sticky.svg" alt="Sticky Note: H.5 Swap sizing decision" width="30%">
 </a>
 
 
@@ -2683,14 +2683,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### Disk Structure
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-handwritten.svg" alt="Handwritten: Disk Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-handwritten.svg" alt="Handwritten: Disk Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-diagram.svg" alt="Diagram: Disk Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-diagram.svg" alt="Diagram: Disk Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-sticky.svg" alt="Sticky Note: Disk Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-structure-sticky.svg" alt="Sticky Note: Disk Structure" width="30%">
 </a>
 
 - Seek time dominates access latency (70â€“80% of total)
@@ -2699,14 +2699,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### Disk Scheduling
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-handwritten.svg" alt="Handwritten: Disk Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-handwritten.svg" alt="Handwritten: Disk Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-diagram.svg" alt="Diagram: Disk Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-diagram.svg" alt="Diagram: Disk Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-sticky.svg" alt="Sticky Note: Disk Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-scheduling-sticky.svg" alt="Sticky Note: Disk Scheduling" width="30%">
 </a>
 
 - FCFS: Simple but worst seek; no starvation
@@ -2719,14 +2719,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### Disk Management
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-handwritten.svg" alt="Handwritten: Disk Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-handwritten.svg" alt="Handwritten: Disk Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-diagram.svg" alt="Diagram: Disk Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-diagram.svg" alt="Diagram: Disk Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-sticky.svg" alt="Sticky Note: Disk Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/disk-management-sticky.svg" alt="Sticky Note: Disk Management" width="30%">
 </a>
 
 - MBR: Legacy, â‰¤2 TB, â‰¤4 partitions, no redundancy
@@ -2735,14 +2735,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### RAID
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-handwritten.svg" alt="Handwritten: RAID" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-handwritten.svg" alt="Handwritten: RAID" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-diagram.svg" alt="Diagram: RAID" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-diagram.svg" alt="Diagram: RAID" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-sticky.svg" alt="Sticky Note: RAID" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/raid-sticky.svg" alt="Sticky Note: RAID" width="30%">
 </a>
 
 - RAID 0: Speed, no safety (scratch only)
@@ -2753,14 +2753,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### Swap Space
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-handwritten.svg" alt="Handwritten: Swap Space" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-handwritten.svg" alt="Handwritten: Swap Space" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-diagram.svg" alt="Diagram: Swap Space" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-diagram.svg" alt="Diagram: Swap Space" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-sticky.svg" alt="Sticky Note: Swap Space" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/swap-space-sticky.svg" alt="Sticky Note: Swap Space" width="30%">
 </a>
 
 - Partition: Faster, fixed size, needed for hibernation on many OS
@@ -2770,14 +2770,14 @@ RAID 10: 6/2 Ã— 2 TB = 6 TB usable (50%)
 
 ### Real Systems
 
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-handwritten.svg" alt="Handwritten: Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-handwritten.svg" alt="Handwritten: Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-diagram.svg" alt="Diagram: Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-diagram.svg" alt="Diagram: Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-sticky.svg" alt="Sticky Note: Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/12-secondary-storage/real-systems-sticky.svg" alt="Sticky Note: Real Systems" width="30%">
 </a>
 
 - Linux: CFQ (fairness), Deadline (predictable latency), NOOP (SSD/fast devices)

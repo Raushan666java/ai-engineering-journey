@@ -60,14 +60,14 @@ flowchart LR
 
 ### 7.1 The Dynamic Programming Paradigm
 
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-handwritten.svg" alt="Handwritten: 7.1 The Dynamic Programming Paradigm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-handwritten.svg" alt="Handwritten: 7.1 The Dynamic Programming Paradigm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-diagram.svg" alt="Diagram: 7.1 The Dynamic Programming Paradigm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-diagram.svg" alt="Diagram: 7.1 The Dynamic Programming Paradigm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-sticky.svg" alt="Sticky Note: 7.1 The Dynamic Programming Paradigm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-sticky.svg" alt="Sticky Note: 7.1 The Dynamic Programming Paradigm" width="30%">
 </a>
 
 
@@ -118,14 +118,14 @@ The same subproblems recur multiple times, and the total number of distinct subp
 
 ### 7.2 Fibonacci Numbers
 
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-handwritten.svg" alt="Handwritten: 7.2 Fibonacci Numbers" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-handwritten.svg" alt="Handwritten: 7.2 Fibonacci Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-diagram.svg" alt="Diagram: 7.2 Fibonacci Numbers" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-diagram.svg" alt="Diagram: 7.2 Fibonacci Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-sticky.svg" alt="Sticky Note: 7.2 Fibonacci Numbers" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-sticky.svg" alt="Sticky Note: 7.2 Fibonacci Numbers" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ int fib(int n) {
 
 ### 7.3 Rod Cutting
 
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-handwritten.svg" alt="Handwritten: 7.3 Rod Cutting" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-handwritten.svg" alt="Handwritten: 7.3 Rod Cutting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-diagram.svg" alt="Diagram: 7.3 Rod Cutting" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-diagram.svg" alt="Diagram: 7.3 Rod Cutting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-sticky.svg" alt="Sticky Note: 7.3 Rod Cutting" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-sticky.svg" alt="Sticky Note: 7.3 Rod Cutting" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ class RodCutting {
 
 ### 7.4 Steps for DP Problem Solving
 
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-handwritten.svg" alt="Handwritten: 7.4 Steps for DP Problem Solving" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-handwritten.svg" alt="Handwritten: 7.4 Steps for DP Problem Solving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-diagram.svg" alt="Diagram: 7.4 Steps for DP Problem Solving" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-diagram.svg" alt="Diagram: 7.4 Steps for DP Problem Solving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-sticky.svg" alt="Sticky Note: 7.4 Steps for DP Problem Solving" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-sticky.svg" alt="Sticky Note: 7.4 Steps for DP Problem Solving" width="30%">
 </a>
 
 

@@ -59,14 +59,14 @@ flowchart LR
 
 ### 11.1 Dijkstra's Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-handwritten.svg" alt="Handwritten: 11.1 Dijkstra's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-handwritten.svg" alt="Handwritten: 11.1 Dijkstra's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-diagram.svg" alt="Diagram: 11.1 Dijkstra's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-diagram.svg" alt="Diagram: 11.1 Dijkstra's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-sticky.svg" alt="Sticky Note: 11.1 Dijkstra's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-1-dijkstra-s-algorithm-sticky.svg" alt="Sticky Note: 11.1 Dijkstra's Algorithm" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ public class Dijkstra {
 
 ### 11.2 Bellman-Ford Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-handwritten.svg" alt="Handwritten: 11.2 Bellman-Ford Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-handwritten.svg" alt="Handwritten: 11.2 Bellman-Ford Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-diagram.svg" alt="Diagram: 11.2 Bellman-Ford Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-diagram.svg" alt="Diagram: 11.2 Bellman-Ford Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-sticky.svg" alt="Sticky Note: 11.2 Bellman-Ford Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-2-bellman-ford-algorithm-sticky.svg" alt="Sticky Note: 11.2 Bellman-Ford Algorithm" width="30%">
 </a>
 
 
@@ -442,14 +442,14 @@ public class BellmanFord {
 
 ### 11.3 Floyd-Warshall Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-handwritten.svg" alt="Handwritten: 11.3 Floyd-Warshall Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-handwritten.svg" alt="Handwritten: 11.3 Floyd-Warshall Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-diagram.svg" alt="Diagram: 11.3 Floyd-Warshall Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-diagram.svg" alt="Diagram: 11.3 Floyd-Warshall Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-sticky.svg" alt="Sticky Note: 11.3 Floyd-Warshall Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-3-floyd-warshall-algorithm-sticky.svg" alt="Sticky Note: 11.3 Floyd-Warshall Algorithm" width="30%">
 </a>
 
 
@@ -635,14 +635,14 @@ public class FloydWarshall {
 
 ### 11.4 Shortest Path in DAG
 
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-handwritten.svg" alt="Handwritten: 11.4 Shortest Path in DAG" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-handwritten.svg" alt="Handwritten: 11.4 Shortest Path in DAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-diagram.svg" alt="Diagram: 11.4 Shortest Path in DAG" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-diagram.svg" alt="Diagram: 11.4 Shortest Path in DAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-sticky.svg" alt="Sticky Note: 11.4 Shortest Path in DAG" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-4-shortest-path-in-dag-sticky.svg" alt="Sticky Note: 11.4 Shortest Path in DAG" width="30%">
 </a>
 
 
@@ -840,14 +840,14 @@ public class DAGShortest {
 
 ### 11.5 A* Search
 
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-handwritten.svg" alt="Handwritten: 11.5 A* Search" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-handwritten.svg" alt="Handwritten: 11.5 A* Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-diagram.svg" alt="Diagram: 11.5 A* Search" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-diagram.svg" alt="Diagram: 11.5 A* Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-sticky.svg" alt="Sticky Note: 11.5 A* Search" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/11-graph-shortest/11-5-a-search-sticky.svg" alt="Sticky Note: 11.5 A* Search" width="30%">
 </a>
 
 

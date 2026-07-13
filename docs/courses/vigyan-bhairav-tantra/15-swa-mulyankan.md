@@ -35,14 +35,14 @@
 
 ### १.१ निर्णय बनाम अवलोकन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: १.१ निर्णय बनाम अवलोकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: १.१ निर्णय बनाम अवलोकन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: १.१ निर्णय बनाम अवलोकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: १.१ निर्णय बनाम अवलोकन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: १.१ निर्णय बनाम अवलोकन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: १.१ निर्णय बनाम अवलोकन" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@
 
 ### १.२ प्रगति का ओशो का पैमाना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: १.२ प्रगति का ओशो का पैमाना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: १.२ प्रगति का ओशो का पैमाना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: १.२ प्रगति का ओशो का पैमाना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: १.२ प्रगति का ओशो का पैमाना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: १.२ प्रगति का ओशो का पैमाना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: १.२ प्रगति का ओशो का पैमाना" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ flowchart LR
 
 ### २.१ अनुभवों का मोह
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: २.१ अनुभवों का मोह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: २.१ अनुभवों का मोह" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: २.१ अनुभवों का मोह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: २.१ अनुभवों का मोह" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: २.१ अनुभवों का मोह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: २.१ अनुभवों का मोह" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ mindmap
 
 ### २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: २.२ ओशो के "रेड फ़्लैग्स" — चेतावनी के संकेत" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ mindmap
 
 ### ३.१ दस प्रश्न — सिर्फ अपने आप से
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: ३.१ दस प्रश्न — सिर्फ अपने आप से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: ३.१ दस प्रश्न — सिर्फ अपने आप से" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: ३.१ दस प्रश्न — सिर्फ अपने आप से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: ३.१ दस प्रश्न — सिर्फ अपने आप से" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: ३.१ दस प्रश्न — सिर्फ अपने आप से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: ३.१ दस प्रश्न — सिर्फ अपने आप से" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ flowchart TD
 
 ### ३.२ ओशो के प्रश्नों की व्याख्या
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: ३.२ ओशो के प्रश्नों की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: ३.२ ओशो के प्रश्नों की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: ३.२ ओशो के प्रश्नों की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: ३.२ ओशो के प्रश्नों की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: ३.२ ओशो के प्रश्नों की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: ३.२ ओशो के प्रश्नों की व्याख्या" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ flowchart TD
 
 ### ४.१ सबसे गहरा सत्य
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: ४.१ सबसे गहरा सत्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: ४.१ सबसे गहरा सत्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: ४.१ सबसे गहरा सत्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: ४.१ सबसे गहरा सत्य" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: ४.१ सबसे गहरा सत्य" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: ४.१ सबसे गहरा सत्य" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ flowchart TD
 
 ### ४.2 इस विरोधाभास को कैसे समझें?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" alt="Handwritten: ४.2 इस विरोधाभास को कैसे समझें?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" alt="Handwritten: ४.2 इस विरोधाभास को कैसे समझें?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" alt="Diagram: ४.2 इस विरोधाभास को कैसे समझें?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" alt="Diagram: ४.2 इस विरोधाभास को कैसे समझें?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" alt="Sticky Note: ४.2 इस विरोधाभास को कैसे समझें?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" alt="Sticky Note: ४.2 इस विरोधाभास को कैसे समझें?" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ flowchart LR
 
 ### ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-handwritten.svg" alt="Handwritten: ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-handwritten.svg" alt="Handwritten: ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-diagram.svg" alt="Diagram: ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-diagram.svg" alt="Diagram: ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-sticky.svg" alt="Sticky Note: ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/3-sticky.svg" alt="Sticky Note: ४.3 अभ्यास और कोई अभ्यास नहीं — दोनों" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ flowchart LR
 
 ### ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-handwritten.svg" alt="Handwritten: ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-handwritten.svg" alt="Handwritten: ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-diagram.svg" alt="Diagram: ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-diagram.svg" alt="Diagram: ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-sticky.svg" alt="Sticky Note: ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/1-sticky.svg" alt="Sticky Note: ५.1 पारंपरिक पत्रिका बनाम ओशो की पत्रिका" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ flowchart LR
 
 ### ५.2 ओशो की पत्रिका का प्रारूप
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" alt="Handwritten: ५.2 ओशो की पत्रिका का प्रारूप" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-handwritten.svg" alt="Handwritten: ५.2 ओशो की पत्रिका का प्रारूप" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" alt="Diagram: ५.2 ओशो की पत्रिका का प्रारूप" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-diagram.svg" alt="Diagram: ५.2 ओशो की पत्रिका का प्रारूप" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" alt="Sticky Note: ५.2 ओशो की पत्रिका का प्रारूप" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/2-sticky.svg" alt="Sticky Note: ५.2 ओशो की पत्रिका का प्रारूप" width="30%">
 </a>
 
 
@@ -768,70 +768,70 @@ export {
 
 ### सूत्र १: कोई तुलना नहीं
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र १: कोई तुलना नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र १: कोई तुलना नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र १: कोई तुलना नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र १: कोई तुलना नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र १: कोई तुलना नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र १: कोई तुलना नहीं" width="30%">
 </a>
 
 > *"अपनी तुलना किसी से मत करो — न उनसे जो तुमसे आगे हैं, न उनसे जो पीछे हैं। तुलना अहंकार को जन्म देती है। तुम बस वही हो जो तुम हो — यही काफी है।"*
 
 ### सूत्र २: कोई अपेक्षा नहीं
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र २: कोई अपेक्षा नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र २: कोई अपेक्षा नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र २: कोई अपेक्षा नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र २: कोई अपेक्षा नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र २: कोई अपेक्षा नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र २: कोई अपेक्षा नहीं" width="30%">
 </a>
 
 > *"अपेक्षा रखना मतलब भविष्य में जीना है। और ध्यान वर्तमान में होता है। बिना किसी अपेक्षा के बैठो — देखो क्या होता है।"*
 
 ### सूत्र ३: कोई निर्णय नहीं
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र ३: कोई निर्णय नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र ३: कोई निर्णय नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र ३: कोई निर्णय नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र ३: कोई निर्णय नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र ३: कोई निर्णय नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र ३: कोई निर्णय नहीं" width="30%">
 </a>
 
 > *"अच्छा ध्यान, बुरा ध्यान — ये सब निर्णय हैं। ध्यान तो बस ध्यान है। जैसे सूरज — वह न अच्छा है, न बुरा। वह बस है।"*
 
 ### सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र ४: ईमानदारी — पूरी, बिल्कुल पूरी" width="30%">
 </a>
 
 > *"अपने से झूठ मत बोलो। तुम कहाँ हो, वहाँ हो। वहाँ से शुरू करो। जहाँ हो, वहीं से — वहीं सही जगह है।"*
 
 ### सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: सूत्र ५: स्वीकार — जो है, उसे वैसे ही रहने दो" width="30%">
 </a>
 
 > *"जो है, उसे वैसे ही रहने दो। यही स्वीकार है। और स्वीकार ही सबसे बड़ा परिवर्तन है। जब तुम स्वीकार करते हो, तो बदलाव अपने आप आता है।"*
@@ -842,56 +842,56 @@ export {
 
 ### अभ्यास १: ७ दिन का प्रयोग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास १: ७ दिन का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास १: ७ दिन का प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास १: ७ दिन का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास १: ७ दिन का प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास १: ७ दिन का प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास १: ७ दिन का प्रयोग" width="30%">
 </a>
 
 हर रात सोने से पहले, ओशो के दस प्रश्नों में से किसी एक पर विचार करो। सिर्फ तीन मिनट। कोई निर्णय नहीं — बस देखो।
 
 ### अभ्यास २: आज का एक प्रश्न
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास २: आज का एक प्रश्न" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास २: आज का एक प्रश्न" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास २: आज का एक प्रश्न" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास २: आज का एक प्रश्न" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास २: आज का एक प्रश्न" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास २: आज का एक प्रश्न" width="30%">
 </a>
 
 आज पूरे दिन सिर्फ एक प्रश्न को अपने साथ रखो: "क्या मैं जागरूक हूँ?" — इस प्रश्न को बार-बार याद करो।
 
 ### अभ्यास ३: बिना निर्णय के दिन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास ३: बिना निर्णय के दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास ३: बिना निर्णय के दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास ३: बिना निर्णय के दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास ३: बिना निर्णय के दिन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास ३: बिना निर्णय के दिन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास ३: बिना निर्णय के दिन" width="30%">
 </a>
 
 कल पूरे दिन — किसी भी चीज़ का निर्णय मत करो। न अच्छा, न बुरा। बस देखो। शाम को लिखो — यह कैसा रहा?
 
 ### अभ्यास ४: कोडिंग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/15-swa-mulyankan/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
 </a>
 
 OshoJournal में एक नई मेथड जोड़ो जो सप्ताह के अंत में एक सारांश दे — लेकिन याद रखो, कोई स्कोर नहीं, सिर्फ अवलोकन।

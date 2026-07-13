@@ -31,14 +31,14 @@ By the end of this chapter, students will be able to:
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ flowchart LR
 
 ### Definition
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ The simplest searching algorithm: traverse the array sequentially until the targ
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ The simplest searching algorithm: traverse the array sequentially until the targ
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ LinearSearch(A, n, key):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -142,14 +142,14 @@ Input: `A = [4, 2, 9, 7, 5]`, `key = 7`
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -163,14 +163,14 @@ Input: `A = [4, 2, 9, 7, 5]`, `key = 7`
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ public static int linearSearch(int[] arr, int key) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ public static int linearSearch(int[] arr, int key) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ public static int linearSearch(int[] arr, int key) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -265,14 +265,14 @@ Binary search operates on a **sorted** array by repeatedly dividing the search i
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -286,14 +286,14 @@ Binary search operates on a **sorted** array by repeatedly dividing the search i
 
 ### Pseudocode (Recursive)
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-handwritten.svg" alt="Handwritten: Pseudocode (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-handwritten.svg" alt="Handwritten: Pseudocode (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-diagram.svg" alt="Diagram: Pseudocode (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-diagram.svg" alt="Diagram: Pseudocode (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-sticky.svg" alt="Sticky Note: Pseudocode (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-sticky.svg" alt="Sticky Note: Pseudocode (Recursive)" width="30%">
 </a>
 
 
@@ -312,14 +312,14 @@ BinarySearch(A, low, high, key):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ Input: `A = [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]`, `key = 23`
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -360,14 +360,14 @@ By the master theorem (case 2): T(n) = O(log n)
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -472,14 +472,14 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Variations
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/variations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/variations-handwritten.svg" alt="Handwritten: Variations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/variations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/variations-handwritten.svg" alt="Handwritten: Variations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/variations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/variations-diagram.svg" alt="Diagram: Variations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/variations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/variations-diagram.svg" alt="Diagram: Variations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/variations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/variations-sticky.svg" alt="Sticky Note: Variations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/variations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/variations-sticky.svg" alt="Sticky Note: Variations" width="30%">
 </a>
 
 
@@ -490,14 +490,14 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Applications
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" alt="Diagram: Applications" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" alt="Diagram: Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
 </a>
 
 
@@ -516,14 +516,14 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -531,14 +531,14 @@ Interpolation search improves on binary search when the data is uniformly distri
 
 ### Probe Formula
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/probe-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/probe-formula-handwritten.svg" alt="Handwritten: Probe Formula" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-handwritten.svg" alt="Handwritten: Probe Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/probe-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/probe-formula-diagram.svg" alt="Diagram: Probe Formula" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-diagram.svg" alt="Diagram: Probe Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/probe-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/probe-formula-sticky.svg" alt="Sticky Note: Probe Formula" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-sticky.svg" alt="Sticky Note: Probe Formula" width="30%">
 </a>
 
 
@@ -550,14 +550,14 @@ This is the equation of a line through (low, A[low]) and (high, A[high]), evalua
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -570,14 +570,14 @@ This is the equation of a line through (low, A[low]) and (high, A[high]), evalua
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -600,14 +600,14 @@ Key 85 not found — algorithm correctly determined it's between 80 and 90 (woul
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -621,14 +621,14 @@ Key 85 not found — algorithm correctly determined it's between 80 and 90 (woul
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -666,14 +666,14 @@ def interpolation_search(arr, key):
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -693,14 +693,14 @@ def interpolation_search(arr, key):
 
 ### Definition
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -708,14 +708,14 @@ Exponential search finds the range containing the target by doubling the search 
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -725,14 +725,14 @@ Exponential search finds the range containing the target by doubling the search 
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -756,14 +756,14 @@ Total comparisons for doubling + binary search: 4 + 2 = 6. Binary search alone w
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -777,14 +777,14 @@ Total comparisons for doubling + binary search: 4 + 2 = 6. Binary search alone w
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -822,14 +822,14 @@ def exponential_search(arr, key):
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -841,14 +841,14 @@ def exponential_search(arr, key):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -858,14 +858,14 @@ def exponential_search(arr, key):
 
 ### Applications
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" alt="Diagram: Applications" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" alt="Diagram: Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
 </a>
 
 
@@ -883,14 +883,14 @@ def exponential_search(arr, key):
 
 ### Definition
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ Ternary search divides the array into three equal parts using two midpoints.
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -918,14 +918,14 @@ Ternary search divides the array into three equal parts using two midpoints.
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -942,14 +942,14 @@ Ternary search does **more total comparisons** despite fewer steps.
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -972,14 +972,14 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -996,14 +996,14 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 
 ### Performance Comparison (n = 1,000,000)
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-handwritten.svg" alt="Handwritten: Performance Comparison (n = 1,000,000)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-handwritten.svg" alt="Handwritten: Performance Comparison (n = 1,000,000)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-diagram.svg" alt="Diagram: Performance Comparison (n = 1,000,000)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-diagram.svg" alt="Diagram: Performance Comparison (n = 1,000,000)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-sticky.svg" alt="Sticky Note: Performance Comparison (n = 1,000,000)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-sticky.svg" alt="Sticky Note: Performance Comparison (n = 1,000,000)" width="30%">
 </a>
 
 
@@ -1017,14 +1017,14 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 
 ### When to Choose What
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-handwritten.svg" alt="Handwritten: When to Choose What" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-handwritten.svg" alt="Handwritten: When to Choose What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-diagram.svg" alt="Diagram: When to Choose What" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-diagram.svg" alt="Diagram: When to Choose What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-sticky.svg" alt="Sticky Note: When to Choose What" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-sticky.svg" alt="Sticky Note: When to Choose What" width="30%">
 </a>
 
 
@@ -1042,14 +1042,14 @@ Finding max of unimodal f(x): → Ternary Search
 
 ### Common Questions
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/common-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/common-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/common-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/common-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/common-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/common-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
 </a>
 
 
@@ -1063,14 +1063,14 @@ Finding max of unimodal f(x): → Ternary Search
 
 ### Common Pitfalls
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
 </a>
 
 
@@ -1106,14 +1106,14 @@ Finding max of unimodal f(x): → Ternary Search
 
 ### Key Takeaway
 
-<a href="../../assets/images/diagrams/algorithms/02-searching/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/key-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/02-searching/key-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/02-searching/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
 </a>
 
 

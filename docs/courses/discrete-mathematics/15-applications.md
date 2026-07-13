@@ -70,14 +70,14 @@ flowchart LR
 
 ### 15.1 Network Flow
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-handwritten.svg" alt="Handwritten: 15.1 Network Flow" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-handwritten.svg" alt="Handwritten: 15.1 Network Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-diagram.svg" alt="Diagram: 15.1 Network Flow" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-diagram.svg" alt="Diagram: 15.1 Network Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-sticky.svg" alt="Sticky Note: 15.1 Network Flow" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-sticky.svg" alt="Sticky Note: 15.1 Network Flow" width="30%">
 </a>
 
 
@@ -168,14 +168,14 @@ class Dinic {
 
 ### 15.2 Matching
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-handwritten.svg" alt="Handwritten: 15.2 Matching" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-handwritten.svg" alt="Handwritten: 15.2 Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-diagram.svg" alt="Diagram: 15.2 Matching" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-diagram.svg" alt="Diagram: 15.2 Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-sticky.svg" alt="Sticky Note: 15.2 Matching" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-sticky.svg" alt="Sticky Note: 15.2 Matching" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ function bipartiteMatch(
 
 ### 15.3 Graph Coloring
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-handwritten.svg" alt="Handwritten: 15.3 Graph Coloring" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-handwritten.svg" alt="Handwritten: 15.3 Graph Coloring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-diagram.svg" alt="Diagram: 15.3 Graph Coloring" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-diagram.svg" alt="Diagram: 15.3 Graph Coloring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-sticky.svg" alt="Sticky Note: 15.3 Graph Coloring" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-sticky.svg" alt="Sticky Note: 15.3 Graph Coloring" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ A **proper $k$-coloring** assigns each vertex one of $k$ colors such that adjace
 
 ### 15.4 Error-Correcting Codes
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-handwritten.svg" alt="Handwritten: 15.4 Error-Correcting Codes" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-handwritten.svg" alt="Handwritten: 15.4 Error-Correcting Codes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-diagram.svg" alt="Diagram: 15.4 Error-Correcting Codes" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-diagram.svg" alt="Diagram: 15.4 Error-Correcting Codes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-sticky.svg" alt="Sticky Note: 15.4 Error-Correcting Codes" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-sticky.svg" alt="Sticky Note: 15.4 Error-Correcting Codes" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ console.log(hammingDistance("10101", "10011")); // 2
 
 ### 15.5 Randomized Algorithms
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-handwritten.svg" alt="Handwritten: 15.5 Randomized Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-handwritten.svg" alt="Handwritten: 15.5 Randomized Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-diagram.svg" alt="Diagram: 15.5 Randomized Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-diagram.svg" alt="Diagram: 15.5 Randomized Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-sticky.svg" alt="Sticky Note: 15.5 Randomized Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-sticky.svg" alt="Sticky Note: 15.5 Randomized Algorithms" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ function modPow(base: number, exp: number, mod: number): number {
 
 ### 15.6 Finite Automata
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-handwritten.svg" alt="Handwritten: 15.6 Finite Automata" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-handwritten.svg" alt="Handwritten: 15.6 Finite Automata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-diagram.svg" alt="Diagram: 15.6 Finite Automata" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-diagram.svg" alt="Diagram: 15.6 Finite Automata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-sticky.svg" alt="Sticky Note: 15.6 Finite Automata" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-sticky.svg" alt="Sticky Note: 15.6 Finite Automata" width="30%">
 </a>
 
 
@@ -421,14 +421,14 @@ console.log(dfa.accepts("100"));   // false
 
 ### 15.7 Formal Languages
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-handwritten.svg" alt="Handwritten: 15.7 Formal Languages" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-handwritten.svg" alt="Handwritten: 15.7 Formal Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-diagram.svg" alt="Diagram: 15.7 Formal Languages" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-diagram.svg" alt="Diagram: 15.7 Formal Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-sticky.svg" alt="Sticky Note: 15.7 Formal Languages" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-sticky.svg" alt="Sticky Note: 15.7 Formal Languages" width="30%">
 </a>
 
 
@@ -452,14 +452,14 @@ A **formal language** is a set of strings over an alphabet. **Grammars** generat
 
 ### 15.8 Number Theory in Cryptography
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-handwritten.svg" alt="Handwritten: 15.8 Number Theory in Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-handwritten.svg" alt="Handwritten: 15.8 Number Theory in Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-diagram.svg" alt="Diagram: 15.8 Number Theory in Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-diagram.svg" alt="Diagram: 15.8 Number Theory in Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-sticky.svg" alt="Sticky Note: 15.8 Number Theory in Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-sticky.svg" alt="Sticky Note: 15.8 Number Theory in Cryptography" width="30%">
 </a>
 
 
@@ -479,14 +479,14 @@ Beyond RSA, number theory enables:
 
 ### 15.9 Digital Logic Design
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-handwritten.svg" alt="Handwritten: 15.9 Digital Logic Design" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-handwritten.svg" alt="Handwritten: 15.9 Digital Logic Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-diagram.svg" alt="Diagram: 15.9 Digital Logic Design" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-diagram.svg" alt="Diagram: 15.9 Digital Logic Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-sticky.svg" alt="Sticky Note: 15.9 Digital Logic Design" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-sticky.svg" alt="Sticky Note: 15.9 Digital Logic Design" width="30%">
 </a>
 
 
@@ -536,14 +536,14 @@ console.log(result.sum.join("")); // "0000" (with carry 1 = 10000 = 16)
 
 ### 15.10 Constraint Satisfaction and Optimization
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-handwritten.svg" alt="Handwritten: 15.10 Constraint Satisfaction and Optimization" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-handwritten.svg" alt="Handwritten: 15.10 Constraint Satisfaction and Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-diagram.svg" alt="Diagram: 15.10 Constraint Satisfaction and Optimization" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-diagram.svg" alt="Diagram: 15.10 Constraint Satisfaction and Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-sticky.svg" alt="Sticky Note: 15.10 Constraint Satisfaction and Optimization" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-sticky.svg" alt="Sticky Note: 15.10 Constraint Satisfaction and Optimization" width="30%">
 </a>
 
 
@@ -604,14 +604,14 @@ console.log(knapsack(
 
 ### 15.11 Application Domains Matrix
 
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-handwritten.svg" alt="Handwritten: 15.11 Application Domains Matrix" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-handwritten.svg" alt="Handwritten: 15.11 Application Domains Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-diagram.svg" alt="Diagram: 15.11 Application Domains Matrix" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-diagram.svg" alt="Diagram: 15.11 Application Domains Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-sticky.svg" alt="Sticky Note: 15.11 Application Domains Matrix" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-sticky.svg" alt="Sticky Note: 15.11 Application Domains Matrix" width="30%">
 </a>
 
 

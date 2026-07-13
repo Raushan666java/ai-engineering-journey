@@ -81,14 +81,14 @@ flowchart TD
 
 ### 1. Domain Events
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-handwritten.svg" alt="Handwritten: 1. Domain Events" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-handwritten.svg" alt="Handwritten: 1. Domain Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-diagram.svg" alt="Diagram: 1. Domain Events" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-diagram.svg" alt="Diagram: 1. Domain Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-sticky.svg" alt="Sticky Note: 1. Domain Events" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/1-domain-events-sticky.svg" alt="Sticky Note: 1. Domain Events" width="30%">
 </a>
 
 
@@ -245,14 +245,14 @@ public class ShippedEvent extends BaseDomainEvent {
 
 ### 2. Event Sourcing
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-handwritten.svg" alt="Handwritten: 2. Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-handwritten.svg" alt="Handwritten: 2. Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-diagram.svg" alt="Diagram: 2. Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-diagram.svg" alt="Diagram: 2. Event Sourcing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-sticky.svg" alt="Sticky Note: 2. Event Sourcing" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/2-event-sourcing-sticky.svg" alt="Sticky Note: 2. Event Sourcing" width="30%">
 </a>
 
 
@@ -697,14 +697,14 @@ public enum OrderStatus {
 
 ### 3. CQRS Pattern
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-handwritten.svg" alt="Handwritten: 3. CQRS Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-handwritten.svg" alt="Handwritten: 3. CQRS Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-diagram.svg" alt="Diagram: 3. CQRS Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-diagram.svg" alt="Diagram: 3. CQRS Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-sticky.svg" alt="Sticky Note: 3. CQRS Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/3-cqrs-pattern-sticky.svg" alt="Sticky Note: 3. CQRS Pattern" width="30%">
 </a>
 
 
@@ -968,14 +968,14 @@ public class OrderEventProjector {
 
 ### 4. Choreography Saga
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-handwritten.svg" alt="Handwritten: 4. Choreography Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-handwritten.svg" alt="Handwritten: 4. Choreography Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-diagram.svg" alt="Diagram: 4. Choreography Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-diagram.svg" alt="Diagram: 4. Choreography Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-sticky.svg" alt="Sticky Note: 4. Choreography Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/4-choreography-saga-sticky.svg" alt="Sticky Note: 4. Choreography Saga" width="30%">
 </a>
 
 
@@ -1261,14 +1261,14 @@ public class ShippingSagaService {
 
 ### 5. Orchestration Saga
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-handwritten.svg" alt="Handwritten: 5. Orchestration Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-handwritten.svg" alt="Handwritten: 5. Orchestration Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-diagram.svg" alt="Diagram: 5. Orchestration Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-diagram.svg" alt="Diagram: 5. Orchestration Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-sticky.svg" alt="Sticky Note: 5. Orchestration Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/5-orchestration-saga-sticky.svg" alt="Sticky Note: 5. Orchestration Saga" width="30%">
 </a>
 
 
@@ -1528,14 +1528,14 @@ public class MessageSender {
 
 ### 6. Axon Framework
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-handwritten.svg" alt="Handwritten: 6. Axon Framework" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-handwritten.svg" alt="Handwritten: 6. Axon Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-diagram.svg" alt="Diagram: 6. Axon Framework" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-diagram.svg" alt="Diagram: 6. Axon Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-sticky.svg" alt="Sticky Note: 6. Axon Framework" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/6-axon-framework-sticky.svg" alt="Sticky Note: 6. Axon Framework" width="30%">
 </a>
 
 
@@ -1877,14 +1877,14 @@ public class AxonConfig {
 
 ### 7. Compensating Transactions
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-handwritten.svg" alt="Handwritten: 7. Compensating Transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-handwritten.svg" alt="Handwritten: 7. Compensating Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-diagram.svg" alt="Diagram: 7. Compensating Transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-diagram.svg" alt="Diagram: 7. Compensating Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-sticky.svg" alt="Sticky Note: 7. Compensating Transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/7-compensating-transactions-sticky.svg" alt="Sticky Note: 7. Compensating Transactions" width="30%">
 </a>
 
 
@@ -2069,14 +2069,14 @@ public class SagaCompensationRegistry {
 
 ### 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example
 
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-handwritten.svg" alt="Handwritten: 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-handwritten.svg" alt="Handwritten: 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-diagram.svg" alt="Diagram: 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-diagram.svg" alt="Diagram: 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-sticky.svg" alt="Sticky Note: 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example" width="30%">
+<a href="../../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/37-event-driven-saga/8-complete-saga-flow-end-to-end-example-sticky.svg" alt="Sticky Note: 8. Complete Saga Flow Ã¢â‚¬â€ End-to-End Example" width="30%">
 </a>
 
 

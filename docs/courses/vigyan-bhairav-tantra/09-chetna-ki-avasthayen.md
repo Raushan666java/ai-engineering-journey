@@ -71,14 +71,14 @@ flowchart TB
 
 ### ओशो की मछली वाली कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो की मछली वाली कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो की मछली वाली कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो की मछली वाली कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो की मछली वाली कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो की मछली वाली कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो की मछली वाली कहानी" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ flowchart TB
 
 ### "जाग्रत भी एक सपना है"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "जाग्रत भी एक सपना है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "जाग्रत भी एक सपना है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "जाग्रत भी एक सपना है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "जाग्रत भी एक सपना है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "जाग्रत भी एक सपना है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "जाग्रत भी एक सपना है"" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ flowchart TB
 
 ### जाग्रत के लिए ओशो की तकनीक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: जाग्रत के लिए ओशो की तकनीक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: जाग्रत के लिए ओशो की तकनीक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: जाग्रत के लिए ओशो की तकनीक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: जाग्रत के लिए ओशो की तकनीक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: जाग्रत के लिए ओशो की तकनीक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: जाग्रत के लिए ओशो की तकनीक" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ flowchart TB
 
 ### एक ज़ेन कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: एक ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: एक ज़ेन कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ sequenceDiagram
 
 ### "स्वप्न से भागो मत, स्वप्न में जागो"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ sequenceDiagram
 
 ### स्वप्न-योग — ओशो की विधि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: स्वप्न-योग — ओशो की विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: स्वप्न-योग — ओशो की विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: स्वप्न-योग — ओशो की विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: स्वप्न-योग — ओशो की विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: स्वप्न-योग — ओशो की विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: स्वप्न-योग — ओशो की विधि" width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@ sequenceDiagram
 
 ### ओशो और फ्रायड — एक तुलना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो और फ्रायड — एक तुलना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो और फ्रायड — एक तुलना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो और फ्रायड — एक तुलना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो और फ्रायड — एक तुलना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो और फ्रायड — एक तुलना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो और फ्रायड — एक तुलना" width="30%">
 </a>
 
 
@@ -257,14 +257,14 @@ sequenceDiagram
 
 ### "सुषुप्ति तुरीय का द्वार है"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "सुषुप्ति तुरीय का द्वार है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "सुषुप्ति तुरीय का द्वार है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "सुषुप्ति तुरीय का द्वार है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "सुषुप्ति तुरीय का द्वार है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "सुषुप्ति तुरीय का द्वार है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "सुषुप्ति तुरीय का द्वार है"" width="30%">
 </a>
 
 
@@ -283,14 +283,14 @@ sequenceDiagram
 
 ### सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ flowchart LR
 
 ### एक सूफी कहानी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: एक सूफी कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: एक सूफी कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: एक सूफी कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: एक सूफी कहानी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: एक सूफी कहानी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: एक सूफी कहानी" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ flowchart LR
 
 ### "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
 </a>
 
 
@@ -390,14 +390,14 @@ stateDiagram-v2
 
 ### ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ stateDiagram-v2
 
 ### ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
 </a>
 
 
@@ -432,14 +432,14 @@ stateDiagram-v2
 
 ### "अवस्था से परे की अवस्था"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "अवस्था से परे की अवस्था"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "अवस्था से परे की अवस्था"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "अवस्था से परे की अवस्था"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "अवस्था से परे की अवस्था"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "अवस्था से परे की अवस्था"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "अवस्था से परे की अवस्था"" width="30%">
 </a>
 
 
@@ -478,14 +478,14 @@ flowchart TB
 
 ### चरण १: शरीर को देखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण १: शरीर को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण १: शरीर को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण १: शरीर को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण १: शरीर को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण १: शरीर को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण १: शरीर को देखो" width="30%">
 </a>
 
 
@@ -500,14 +500,14 @@ flowchart TB
 
 ### चरण २: विचारों को देखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण २: विचारों को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण २: विचारों को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण २: विचारों को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण २: विचारों को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण २: विचारों को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण २: विचारों को देखो" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@ flowchart TB
 
 ### चरण ३: भावनाओं को देखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण ३: भावनाओं को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण ३: भावनाओं को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण ३: भावनाओं को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण ३: भावनाओं को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण ३: भावनाओं को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण ३: भावनाओं को देखो" width="30%">
 </a>
 
 
@@ -542,14 +542,14 @@ flowchart TB
 
 ### चरण ४: देखने वाले को देखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण ४: देखने वाले को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण ४: देखने वाले को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण ४: देखने वाले को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण ४: देखने वाले को देखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण ४: देखने वाले को देखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण ४: देखने वाले को देखो" width="30%">
 </a>
 
 
@@ -1205,14 +1205,14 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
 </a>
 
 
@@ -1227,14 +1227,14 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
 </a>
 
 
@@ -1242,14 +1242,14 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास ३: ओशो की कहानी पर ध्यान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
 </a>
 
 
@@ -1257,14 +1257,14 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास ४: चेतन निद्रा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ४: चेतन निद्रा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ४: चेतन निद्रा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ४: चेतन निद्रा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ४: चेतन निद्रा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ४: चेतन निद्रा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ४: चेतन निद्रा" width="30%">
 </a>
 
 
@@ -1272,14 +1272,14 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास ५: स्वप्न-योग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ५: स्वप्न-योग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ५: स्वप्न-योग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ५: स्वप्न-योग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ५: स्वप्न-योग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ५: स्वप्न-योग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ५: स्वप्न-योग" width="30%">
 </a>
 
 
@@ -1291,14 +1291,14 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास ६: समूह चर्चा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
 </a>
 
 

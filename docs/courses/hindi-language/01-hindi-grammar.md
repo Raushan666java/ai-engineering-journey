@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 वर्णमाला (Hindi Alphabet)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-handwritten.svg" alt="Handwritten: 1.1 वर्णमाला (Hindi Alphabet)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-handwritten.svg" alt="Handwritten: 1.1 वर्णमाला (Hindi Alphabet)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-diagram.svg" alt="Diagram: 1.1 वर्णमाला (Hindi Alphabet)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-diagram.svg" alt="Diagram: 1.1 वर्णमाला (Hindi Alphabet)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-sticky.svg" alt="Sticky Note: 1.1 वर्णमाला (Hindi Alphabet)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-1-hindi-alphabet-sticky.svg" alt="Sticky Note: 1.1 वर्णमाला (Hindi Alphabet)" width="30%">
 </a>
 
 
@@ -57,14 +57,14 @@ flowchart TD
 
 ### 1.2 संधि (Sandhi — Joining of Sounds)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-handwritten.svg" alt="Handwritten: 1.2 संधि (Sandhi — Joining of Sounds)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-handwritten.svg" alt="Handwritten: 1.2 संधि (Sandhi — Joining of Sounds)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-diagram.svg" alt="Diagram: 1.2 संधि (Sandhi — Joining of Sounds)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-diagram.svg" alt="Diagram: 1.2 संधि (Sandhi — Joining of Sounds)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-sticky.svg" alt="Sticky Note: 1.2 संधि (Sandhi — Joining of Sounds)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-2-sandhi-joining-of-sounds-sticky.svg" alt="Sticky Note: 1.2 संधि (Sandhi — Joining of Sounds)" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ Sandhi is the phonetic change that occurs when two words or sounds are combined.
 
 ### 1.3 समास (Samas — Compound Words)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-handwritten.svg" alt="Handwritten: 1.3 समास (Samas — Compound Words)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-handwritten.svg" alt="Handwritten: 1.3 समास (Samas — Compound Words)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-diagram.svg" alt="Diagram: 1.3 समास (Samas — Compound Words)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-diagram.svg" alt="Diagram: 1.3 समास (Samas — Compound Words)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-sticky.svg" alt="Sticky Note: 1.3 समास (Samas — Compound Words)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-3-samas-compound-words-sticky.svg" alt="Sticky Note: 1.3 समास (Samas — Compound Words)" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ mindmap
 
 ### 1.4 शब्द भेद (Parts of Speech)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-handwritten.svg" alt="Handwritten: 1.4 शब्द भेद (Parts of Speech)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-handwritten.svg" alt="Handwritten: 1.4 शब्द भेद (Parts of Speech)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-diagram.svg" alt="Diagram: 1.4 शब्द भेद (Parts of Speech)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-diagram.svg" alt="Diagram: 1.4 शब्द भेद (Parts of Speech)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-sticky.svg" alt="Sticky Note: 1.4 शब्द भेद (Parts of Speech)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-4-parts-of-speech-sticky.svg" alt="Sticky Note: 1.4 शब्द भेद (Parts of Speech)" width="30%">
 </a>
 
 
@@ -208,14 +208,14 @@ Hindi has 8 primary parts of speech:
 
 ### 1.5 काल (Tense — Time of Action)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-handwritten.svg" alt="Handwritten: 1.5 काल (Tense — Time of Action)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-handwritten.svg" alt="Handwritten: 1.5 काल (Tense — Time of Action)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-diagram.svg" alt="Diagram: 1.5 काल (Tense — Time of Action)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-diagram.svg" alt="Diagram: 1.5 काल (Tense — Time of Action)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-sticky.svg" alt="Sticky Note: 1.5 काल (Tense — Time of Action)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-5-tense-time-of-action-sticky.svg" alt="Sticky Note: 1.5 काल (Tense — Time of Action)" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ flowchart LR
 
 ### 1.6 वाच्य (Voice)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-handwritten.svg" alt="Handwritten: 1.6 वाच्य (Voice)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-handwritten.svg" alt="Handwritten: 1.6 वाच्य (Voice)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-diagram.svg" alt="Diagram: 1.6 वाच्य (Voice)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-diagram.svg" alt="Diagram: 1.6 वाच्य (Voice)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-sticky.svg" alt="Sticky Note: 1.6 वाच्य (Voice)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-6-voice-sticky.svg" alt="Sticky Note: 1.6 वाच्य (Voice)" width="30%">
 </a>
 
 
@@ -270,14 +270,14 @@ flowchart LR
 
 ### 1.7 कारक (Case/Case Relations)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-handwritten.svg" alt="Handwritten: 1.7 कारक (Case/Case Relations)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-handwritten.svg" alt="Handwritten: 1.7 कारक (Case/Case Relations)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-diagram.svg" alt="Diagram: 1.7 कारक (Case/Case Relations)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-diagram.svg" alt="Diagram: 1.7 कारक (Case/Case Relations)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-sticky.svg" alt="Sticky Note: 1.7 कारक (Case/Case Relations)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-7-case-case-relations-sticky.svg" alt="Sticky Note: 1.7 कारक (Case/Case Relations)" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ flowchart LR
 
 ### 1.8 लिंग और वचन (Gender and Number)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-handwritten.svg" alt="Handwritten: 1.8 लिंग और वचन (Gender and Number)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-handwritten.svg" alt="Handwritten: 1.8 लिंग और वचन (Gender and Number)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-diagram.svg" alt="Diagram: 1.8 लिंग और वचन (Gender and Number)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-diagram.svg" alt="Diagram: 1.8 लिंग और वचन (Gender and Number)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-sticky.svg" alt="Sticky Note: 1.8 लिंग और वचन (Gender and Number)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-8-gender-and-number-sticky.svg" alt="Sticky Note: 1.8 लिंग और वचन (Gender and Number)" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ flowchart LR
 
 ### 1.9 अलंकार (Figures of Speech)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-handwritten.svg" alt="Handwritten: 1.9 अलंकार (Figures of Speech)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-handwritten.svg" alt="Handwritten: 1.9 अलंकार (Figures of Speech)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-diagram.svg" alt="Diagram: 1.9 अलंकार (Figures of Speech)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-diagram.svg" alt="Diagram: 1.9 अलंकार (Figures of Speech)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-sticky.svg" alt="Sticky Note: 1.9 अलंकार (Figures of Speech)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-9-figures-of-speech-sticky.svg" alt="Sticky Note: 1.9 अलंकार (Figures of Speech)" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ flowchart LR
 
 ### 1.10 रस (Ras — Aesthetic Emotions)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-handwritten.svg" alt="Handwritten: 1.10 रस (Ras — Aesthetic Emotions)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-handwritten.svg" alt="Handwritten: 1.10 रस (Ras — Aesthetic Emotions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-diagram.svg" alt="Diagram: 1.10 रस (Ras — Aesthetic Emotions)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-diagram.svg" alt="Diagram: 1.10 रस (Ras — Aesthetic Emotions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-sticky.svg" alt="Sticky Note: 1.10 रस (Ras — Aesthetic Emotions)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-10-ras-aesthetic-emotions-sticky.svg" alt="Sticky Note: 1.10 रस (Ras — Aesthetic Emotions)" width="30%">
 </a>
 
 
@@ -376,14 +376,14 @@ flowchart LR
 
 ### 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-handwritten.svg" alt="Handwritten: 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-handwritten.svg" alt="Handwritten: 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-diagram.svg" alt="Diagram: 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-diagram.svg" alt="Diagram: 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-sticky.svg" alt="Sticky Note: 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-11-detailed-alankar-classification-sticky.svg" alt="Sticky Note: 1.11 अलंकार का विस्तृत वर्गीकरण (Detailed Alankar Classification)" width="30%">
 </a>
 
 
@@ -427,14 +427,14 @@ flowchart TD
 
 ### 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-handwritten.svg" alt="Handwritten: 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-handwritten.svg" alt="Handwritten: 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-diagram.svg" alt="Diagram: 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-diagram.svg" alt="Diagram: 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-sticky.svg" alt="Sticky Note: 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-12-prefixes-and-suffixes-sticky.svg" alt="Sticky Note: 1.12 उपसर्ग और प्रत्यय (Prefixes and Suffixes)" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ flowchart TD
 
 ### 1.13 वाक्य शुद्धीकरण (Sentence Correction)
 
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-handwritten.svg" alt="Handwritten: 1.13 वाक्य शुद्धीकरण (Sentence Correction)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-handwritten.svg" alt="Handwritten: 1.13 वाक्य शुद्धीकरण (Sentence Correction)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-diagram.svg" alt="Diagram: 1.13 वाक्य शुद्धीकरण (Sentence Correction)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-diagram.svg" alt="Diagram: 1.13 वाक्य शुद्धीकरण (Sentence Correction)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-sticky.svg" alt="Sticky Note: 1.13 वाक्य शुद्धीकरण (Sentence Correction)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/01-hindi-grammar/1-13-sentence-correction-sticky.svg" alt="Sticky Note: 1.13 वाक्य शुद्धीकरण (Sentence Correction)" width="30%">
 </a>
 
 

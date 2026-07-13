@@ -56,14 +56,14 @@ flowchart LR
 
 ### 12.1 Minimum Spanning Tree: Definition
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-handwritten.svg" alt="Handwritten: 12.1 Minimum Spanning Tree: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-handwritten.svg" alt="Handwritten: 12.1 Minimum Spanning Tree: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-diagram.svg" alt="Diagram: 12.1 Minimum Spanning Tree: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-diagram.svg" alt="Diagram: 12.1 Minimum Spanning Tree: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-sticky.svg" alt="Sticky Note: 12.1 Minimum Spanning Tree: Definition" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-sticky.svg" alt="Sticky Note: 12.1 Minimum Spanning Tree: Definition" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ flowchart LR
 
 ### 12.2 Fundamental Properties
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-handwritten.svg" alt="Handwritten: 12.2 Fundamental Properties" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-handwritten.svg" alt="Handwritten: 12.2 Fundamental Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-diagram.svg" alt="Diagram: 12.2 Fundamental Properties" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-diagram.svg" alt="Diagram: 12.2 Fundamental Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-sticky.svg" alt="Sticky Note: 12.2 Fundamental Properties" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-sticky.svg" alt="Sticky Note: 12.2 Fundamental Properties" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ flowchart LR
 
 ### 12.3 Kruskal's Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-handwritten.svg" alt="Handwritten: 12.3 Kruskal's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-handwritten.svg" alt="Handwritten: 12.3 Kruskal's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-diagram.svg" alt="Diagram: 12.3 Kruskal's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-diagram.svg" alt="Diagram: 12.3 Kruskal's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-sticky.svg" alt="Sticky Note: 12.3 Kruskal's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-sticky.svg" alt="Sticky Note: 12.3 Kruskal's Algorithm" width="30%">
 </a>
 
 
@@ -321,14 +321,14 @@ Since \(E \le V^2\) in the worst case, \(O(E \log E) = O(E \log V)\) because \(\
 
 ### 12.4 Prim's Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-handwritten.svg" alt="Handwritten: 12.4 Prim's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-handwritten.svg" alt="Handwritten: 12.4 Prim's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-diagram.svg" alt="Diagram: 12.4 Prim's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-diagram.svg" alt="Diagram: 12.4 Prim's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-sticky.svg" alt="Sticky Note: 12.4 Prim's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-sticky.svg" alt="Sticky Note: 12.4 Prim's Algorithm" width="30%">
 </a>
 
 
@@ -512,14 +512,14 @@ With a simple array (dense graphs): extract-min scans \(V\) elements in \(O(V)\)
 
 ### 12.5 Boruvka's Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-handwritten.svg" alt="Handwritten: 12.5 Boruvka's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-handwritten.svg" alt="Handwritten: 12.5 Boruvka's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-diagram.svg" alt="Diagram: 12.5 Boruvka's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-diagram.svg" alt="Diagram: 12.5 Boruvka's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-sticky.svg" alt="Sticky Note: 12.5 Boruvka's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-sticky.svg" alt="Sticky Note: 12.5 Boruvka's Algorithm" width="30%">
 </a>
 
 
@@ -740,14 +740,14 @@ The key insight: each component must have at least one outgoing edge (or the gra
 
 ### 12.6 Reverse-Delete Algorithm
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-handwritten.svg" alt="Handwritten: 12.6 Reverse-Delete Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-handwritten.svg" alt="Handwritten: 12.6 Reverse-Delete Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-diagram.svg" alt="Diagram: 12.6 Reverse-Delete Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-diagram.svg" alt="Diagram: 12.6 Reverse-Delete Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-sticky.svg" alt="Sticky Note: 12.6 Reverse-Delete Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-sticky.svg" alt="Sticky Note: 12.6 Reverse-Delete Algorithm" width="30%">
 </a>
 
 
@@ -775,14 +775,14 @@ ReverseDelete(G):
 
 ### 12.7 MST Algorithm Comparison
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-handwritten.svg" alt="Handwritten: 12.7 MST Algorithm Comparison" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-handwritten.svg" alt="Handwritten: 12.7 MST Algorithm Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-diagram.svg" alt="Diagram: 12.7 MST Algorithm Comparison" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-diagram.svg" alt="Diagram: 12.7 MST Algorithm Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-sticky.svg" alt="Sticky Note: 12.7 MST Algorithm Comparison" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-sticky.svg" alt="Sticky Note: 12.7 MST Algorithm Comparison" width="30%">
 </a>
 
 
@@ -801,14 +801,14 @@ ReverseDelete(G):
 
 ### 12.8 Interview Corner
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-handwritten.svg" alt="Handwritten: 12.8 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-handwritten.svg" alt="Handwritten: 12.8 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-diagram.svg" alt="Diagram: 12.8 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-diagram.svg" alt="Diagram: 12.8 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-sticky.svg" alt="Sticky Note: 12.8 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-sticky.svg" alt="Sticky Note: 12.8 Interview Corner" width="30%">
 </a>
 
 
@@ -847,14 +847,14 @@ Both maintain a key array and use a priority queue. Prim's key is the minimum ed
 
 ### 12.9 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-handwritten.svg" alt="Handwritten: 12.9 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-handwritten.svg" alt="Handwritten: 12.9 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-diagram.svg" alt="Diagram: 12.9 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-diagram.svg" alt="Diagram: 12.9 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-sticky.svg" alt="Sticky Note: 12.9 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-sticky.svg" alt="Sticky Note: 12.9 Applications in Real Systems" width="30%">
 </a>
 
 

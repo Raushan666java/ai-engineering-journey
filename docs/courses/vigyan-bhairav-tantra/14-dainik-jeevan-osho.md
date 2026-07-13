@@ -37,14 +37,14 @@
 
 ### १.१ आधुनिक मनुष्य की समस्या
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: १.१ आधुनिक मनुष्य की समस्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: १.१ आधुनिक मनुष्य की समस्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: १.१ आधुनिक मनुष्य की समस्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: १.१ आधुनिक मनुष्य की समस्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: १.१ आधुनिक मनुष्य की समस्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: १.१ आधुनिक मनुष्य की समस्या" width="30%">
 </a>
 
 
@@ -54,14 +54,14 @@
 
 ### १.२ सक्रिय ध्यान की आवश्यकता
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: १.२ सक्रिय ध्यान की आवश्यकता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: १.२ सक्रिय ध्यान की आवश्यकता" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: १.२ सक्रिय ध्यान की आवश्यकता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: १.२ सक्रिय ध्यान की आवश्यकता" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: १.२ सक्रिय ध्यान की आवश्यकता" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: १.२ सक्रिय ध्यान की आवश्यकता" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ flowchart TD
 
 ### २.१ डायनामिक मेडिटेशन (Dynamic Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-handwritten.svg" alt="Handwritten: २.१ डायनामिक मेडिटेशन (Dynamic Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-handwritten.svg" alt="Handwritten: २.१ डायनामिक मेडिटेशन (Dynamic Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-diagram.svg" alt="Diagram: २.१ डायनामिक मेडिटेशन (Dynamic Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-diagram.svg" alt="Diagram: २.१ डायनामिक मेडिटेशन (Dynamic Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-sticky.svg" alt="Sticky Note: २.१ डायनामिक मेडिटेशन (Dynamic Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/dynamic-meditation-sticky.svg" alt="Sticky Note: २.१ डायनामिक मेडिटेशन (Dynamic Meditation)" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ flowchart LR
 
 ### २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-handwritten.svg" alt="Handwritten: २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-handwritten.svg" alt="Handwritten: २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-diagram.svg" alt="Diagram: २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-diagram.svg" alt="Diagram: २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-sticky.svg" alt="Sticky Note: २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/kundalini-meditation-sticky.svg" alt="Sticky Note: २.२ कुंडलिनी मेडिटेशन (Kundalini Meditation)" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ flowchart LR
 
 ### २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-handwritten.svg" alt="Handwritten: २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-handwritten.svg" alt="Handwritten: २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-diagram.svg" alt="Diagram: २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-diagram.svg" alt="Diagram: २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-sticky.svg" alt="Sticky Note: २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/nadabrahma-meditation-sticky.svg" alt="Sticky Note: २.३ नादब्रह्म मेडिटेशन (Nadabrahma Meditation)" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ flowchart TD
 
 ### २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-handwritten.svg" alt="Handwritten: २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-handwritten.svg" alt="Handwritten: २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-diagram.svg" alt="Diagram: २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-diagram.svg" alt="Diagram: २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-sticky.svg" alt="Sticky Note: २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/gourishankar-meditation-sticky.svg" alt="Sticky Note: २.४ गुरुशिष्य मेडिटेशन (Gourishankar Meditation)" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ flowchart TD
 
 ### ३.१ चलने का ध्यान (Walking Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-handwritten.svg" alt="Handwritten: ३.१ चलने का ध्यान (Walking Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-handwritten.svg" alt="Handwritten: ३.१ चलने का ध्यान (Walking Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-diagram.svg" alt="Diagram: ३.१ चलने का ध्यान (Walking Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-diagram.svg" alt="Diagram: ३.१ चलने का ध्यान (Walking Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-sticky.svg" alt="Sticky Note: ३.१ चलने का ध्यान (Walking Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/walking-meditation-sticky.svg" alt="Sticky Note: ३.१ चलने का ध्यान (Walking Meditation)" width="30%">
 </a>
 
 
@@ -253,14 +253,14 @@ flowchart TD
 
 ### ३.२ खाने का ध्यान (Eating Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-handwritten.svg" alt="Handwritten: ३.२ खाने का ध्यान (Eating Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-handwritten.svg" alt="Handwritten: ३.२ खाने का ध्यान (Eating Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-diagram.svg" alt="Diagram: ३.२ खाने का ध्यान (Eating Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-diagram.svg" alt="Diagram: ३.२ खाने का ध्यान (Eating Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-sticky.svg" alt="Sticky Note: ३.२ खाने का ध्यान (Eating Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/eating-meditation-sticky.svg" alt="Sticky Note: ३.२ खाने का ध्यान (Eating Meditation)" width="30%">
 </a>
 
 
@@ -293,14 +293,14 @@ flowchart LR
 
 ### ३.३ सोने का ध्यान (Sleeping Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-handwritten.svg" alt="Handwritten: ३.३ सोने का ध्यान (Sleeping Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-handwritten.svg" alt="Handwritten: ३.३ सोने का ध्यान (Sleeping Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-diagram.svg" alt="Diagram: ३.३ सोने का ध्यान (Sleeping Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-diagram.svg" alt="Diagram: ३.३ सोने का ध्यान (Sleeping Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-sticky.svg" alt="Sticky Note: ३.३ सोने का ध्यान (Sleeping Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/sleeping-meditation-sticky.svg" alt="Sticky Note: ३.३ सोने का ध्यान (Sleeping Meditation)" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ flowchart LR
 
 ### ३.४ साँस लेने का ध्यान (Breathing Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-handwritten.svg" alt="Handwritten: ३.४ साँस लेने का ध्यान (Breathing Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-handwritten.svg" alt="Handwritten: ३.४ साँस लेने का ध्यान (Breathing Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-diagram.svg" alt="Diagram: ३.४ साँस लेने का ध्यान (Breathing Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-diagram.svg" alt="Diagram: ३.४ साँस लेने का ध्यान (Breathing Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-sticky.svg" alt="Sticky Note: ३.४ साँस लेने का ध्यान (Breathing Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/breathing-meditation-sticky.svg" alt="Sticky Note: ३.४ साँस लेने का ध्यान (Breathing Meditation)" width="30%">
 </a>
 
 
@@ -334,14 +334,14 @@ flowchart LR
 
 ### ४.१ पूरे दिन का खाका
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ४.१ पूरे दिन का खाका" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ४.१ पूरे दिन का खाका" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ४.१ पूरे दिन का खाका" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ४.१ पूरे दिन का खाका" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ४.१ पूरे दिन का खाका" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ४.१ पूरे दिन का खाका" width="30%">
 </a>
 
 
@@ -373,14 +373,14 @@ flowchart TD
 
 ### ४.२ ओशो के तीन सुनहरे नियम
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ४.२ ओशो के तीन सुनहरे नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ४.२ ओशो के तीन सुनहरे नियम" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ४.२ ओशो के तीन सुनहरे नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ४.२ ओशो के तीन सुनहरे नियम" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ४.२ ओशो के तीन सुनहरे नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ४.२ ओशो के तीन सुनहरे नियम" width="30%">
 </a>
 
 
@@ -399,14 +399,14 @@ flowchart TD
 
 ### ५.१ "सडन स्टॉप" — अचानक रुक जाओ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ५.१ "सडन स्टॉप" — अचानक रुक जाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ५.१ "सडन स्टॉप" — अचानक रुक जाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ५.१ "सडन स्टॉप" — अचानक रुक जाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ५.१ "सडन स्टॉप" — अचानक रुक जाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ५.१ "सडन स्टॉप" — अचानक रुक जाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ५.१ "सडन स्टॉप" — अचानक रुक जाओ" width="30%">
 </a>
 
 
@@ -414,14 +414,14 @@ flowchart TD
 
 ### ५.२ "वन ब्रेथ" — एक साँस का ध्यान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ५.२ "वन ब्रेथ" — एक साँस का ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ५.२ "वन ब्रेथ" — एक साँस का ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ५.२ "वन ब्रेथ" — एक साँस का ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ५.२ "वन ब्रेथ" — एक साँस का ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ५.२ "वन ब्रेथ" — एक साँस का ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ५.२ "वन ब्रेथ" — एक साँस का ध्यान" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ flowchart TD
 
 ### ५.३ "लूकिंग" — बिना नाम दिए देखना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ५.३ "लूकिंग" — बिना नाम दिए देखना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: ५.३ "लूकिंग" — बिना नाम दिए देखना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ५.३ "लूकिंग" — बिना नाम दिए देखना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: ५.३ "लूकिंग" — बिना नाम दिए देखना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ५.३ "लूकिंग" — बिना नाम दिए देखना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: ५.३ "लूकिंग" — बिना नाम दिए देखना" width="30%">
 </a>
 
 
@@ -937,70 +937,70 @@ export {
 
 ### नियम १: कोई नियम नहीं है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम १: कोई नियम नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम १: कोई नियम नहीं है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम १: कोई नियम नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम १: कोई नियम नहीं है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम १: कोई नियम नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम १: कोई नियम नहीं है" width="30%">
 </a>
 
 > *"ध्यान का कोई नियम नहीं है। अगर कोई तुमसे कहे कि ध्यान इस तरह करना चाहिए, तो भाग जाओ। ध्यान तो स्वतंत्रता है — नियमों का जाल नहीं।"*
 
 ### नियम २: जहाँ हो, वहीं शुरू करो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम २: जहाँ हो, वहीं शुरू करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम २: जहाँ हो, वहीं शुरू करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम २: जहाँ हो, वहीं शुरू करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम २: जहाँ हो, वहीं शुरू करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम २: जहाँ हो, वहीं शुरू करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम २: जहाँ हो, वहीं शुरू करो" width="30%">
 </a>
 
 > *"इंतज़ार मत करो कि कल से शुरू करोगे। कल कभी नहीं आता। अभी, इसी क्षण, जहाँ हो — वहीं शुरू करो। चाहे बाज़ार हो या बस स्टॉप।"*
 
 ### नियम ३: हँसना मत भूलो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम ३: हँसना मत भूलो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम ३: हँसना मत भूलो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम ३: हँसना मत भूलो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम ३: हँसना मत भूलो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम ३: हँसना मत भूलो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम ३: हँसना मत भूलो" width="30%">
 </a>
 
 > *"ध्यान को बहुत गंभीर मत बनाओ। हँसो, खेलो, मज़े करो। परमात्मा गंभीर नहीं है — वह तो एक उत्सव है।"*
 
 ### नियम ४: अपने शरीर को मत भूलो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम ४: अपने शरीर को मत भूलो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम ४: अपने शरीर को मत भूलो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम ४: अपने शरीर को मत भूलो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम ४: अपने शरीर को मत भूलो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम ४: अपने शरीर को मत भूलो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम ४: अपने शरीर को मत भूलो" width="30%">
 </a>
 
 > *"शरीर तुम्हारा मंदिर है। उसे भूखा मत रखो, उसे प्रताड़ित मत करो। उससे प्यार करो, उसका ख्याल रखो। एक स्वस्थ शरीर में ही ध्यान खिल सकता है।"*
 
 ### नियम ५: अभ्यास करो, लेकिन आसक्त मत हो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम ५: अभ्यास करो, लेकिन आसक्त मत हो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: नियम ५: अभ्यास करो, लेकिन आसक्त मत हो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम ५: अभ्यास करो, लेकिन आसक्त मत हो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: नियम ५: अभ्यास करो, लेकिन आसक्त मत हो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम ५: अभ्यास करो, लेकिन आसक्त मत हो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: नियम ५: अभ्यास करो, लेकिन आसक्त मत हो" width="30%">
 </a>
 
 > *"अभ्यास करो — नियमित रूप से। लेकिन उससे चिपको मत। जब सही लगे, करो। जब न लगे, मत करो। ध्यान कोई कर्तव्य नहीं है — वह तो एक प्रेम-प्रसंग है।"*
@@ -1011,56 +1011,56 @@ export {
 
 ### अभ्यास १: एक दिन का ध्यान प्रयोग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: एक दिन का ध्यान प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: एक दिन का ध्यान प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास १: एक दिन का ध्यान प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास १: एक दिन का ध्यान प्रयोग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: एक दिन का ध्यान प्रयोग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: एक दिन का ध्यान प्रयोग" width="30%">
 </a>
 
 कल पूरे दिन — हर काम को पूरी जागरूकता से करो। दाँत साफ करते हुए — सिर्फ दाँत साफ करो, कुछ और मत सोचो। खाते हुए — सिर्फ खाओ। चलते हुए — सिर्फ चलो। शाम को लिखो — क्या बदलाव महसूस हुआ?
 
 ### अभ्यास २: घंटे की घंटी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: घंटे की घंटी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: घंटे की घंटी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास २: घंटे की घंटी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास २: घंटे की घंटी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: घंटे की घंटी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: घंटे की घंटी" width="30%">
 </a>
 
 अपने फोन पर हर घंटे का अलार्म लगाओ। जब बजे — रुको। एक गहरी साँस लो। पूरे शरीर को महसूस करो। फिर अगले घंटे के लिए तैयार हो जाओ।
 
 ### अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो का कोई भी सक्रिय ध्यान" width="30%">
 </a>
 
 इस सप्ताह कम से कम एक बार कोई सक्रिय ध्यान (डायनामिक, कुंडलिनी, या नादब्रह्म) करो। पूरी ऊर्जा से करो — आधा-अधूरा नहीं।
 
 ### अभ्यास ४: कोडिंग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/14-dainik-jeevan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
 </a>
 
 TypeScript `OshoDailyPlanner` में एक नई मेथड जोड़ो जो सप्ताह की पूरी योजना बना सके — जिसमें हर दिन के लिए एक अलग सक्रिय ध्यान विधि हो।

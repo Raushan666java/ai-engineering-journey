@@ -81,14 +81,14 @@ A **Red-Black tree** is a self-balancing BST with one extra attribute per node: 
 
 ### Black-Height and Height Bound
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-handwritten.svg" alt="Handwritten: Black-Height and Height Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-handwritten.svg" alt="Handwritten: Black-Height and Height Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-diagram.svg" alt="Diagram: Black-Height and Height Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-diagram.svg" alt="Diagram: Black-Height and Height Bound" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-sticky.svg" alt="Sticky Note: Black-Height and Height Bound" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/black-height-and-height-bound-sticky.svg" alt="Sticky Note: Black-Height and Height Bound" width="30%">
 </a>
 
 
@@ -819,14 +819,14 @@ A "double-black" node represents a position that owes one manager to the path â€
 
 ### Step 1: BST Delete
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-handwritten.svg" alt="Handwritten: Step 1: BST Delete" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-handwritten.svg" alt="Handwritten: Step 1: BST Delete" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-diagram.svg" alt="Diagram: Step 1: BST Delete" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-diagram.svg" alt="Diagram: Step 1: BST Delete" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-sticky.svg" alt="Sticky Note: Step 1: BST Delete" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/step-1-bst-delete-sticky.svg" alt="Sticky Note: Step 1: BST Delete" width="30%">
 </a>
 
 1. Find the node `z` to delete.
@@ -841,14 +841,14 @@ A "double-black" node represents a position that owes one manager to the path â€
 
 ### Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-handwritten.svg" alt="Handwritten: Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-handwritten.svg" alt="Handwritten: Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-diagram.svg" alt="Diagram: Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-diagram.svg" alt="Diagram: Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-sticky.svg" alt="Sticky Note: Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/step-2-fix-up-when-original-color-of-removed-transplanted-node-was-black-sticky.svg" alt="Sticky Note: Step 2: Fix-Up (when original color of removed/transplanted node was BLACK)" width="30%">
 </a>
 
 
@@ -1348,14 +1348,14 @@ LLRB trees add one extra constraint: **no red node can be a right child** (equiv
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1469,14 +1469,14 @@ FLIP-COLORS(h):
 
 ### When to Use Which
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-handwritten.svg" alt="Handwritten: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-diagram.svg" alt="Diagram: When to Use Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/when-to-use-which-sticky.svg" alt="Sticky Note: When to Use Which" width="30%">
 </a>
 
 
@@ -1497,14 +1497,14 @@ FLIP-COLORS(h):
 
 ### Q1: Why does Java's HashMap use Red-Black trees for collision chains?
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-handwritten.svg" alt="Handwritten: Why does Java's HashMap use Red-Black trees for collision chains?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-handwritten.svg" alt="Handwritten: Why does Java's HashMap use Red-Black trees for collision chains?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-diagram.svg" alt="Diagram: Why does Java's HashMap use Red-Black trees for collision chains?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-diagram.svg" alt="Diagram: Why does Java's HashMap use Red-Black trees for collision chains?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-sticky.svg" alt="Sticky Note: Why does Java's HashMap use Red-Black trees for collision chains?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/why-does-java-s-hashmap-use-red-black-trees-for-collision-chains-sticky.svg" alt="Sticky Note: Why does Java's HashMap use Red-Black trees for collision chains?" width="30%">
 </a>
 
 
@@ -1512,14 +1512,14 @@ FLIP-COLORS(h):
 
 ### Q2: Compare Red-Black trees and AVL trees. When would you use each?
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare Red-Black trees and AVL trees. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare Red-Black trees and AVL trees. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-diagram.svg" alt="Diagram: Compare Red-Black trees and AVL trees. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-diagram.svg" alt="Diagram: Compare Red-Black trees and AVL trees. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare Red-Black trees and AVL trees. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/compare-red-black-trees-and-avl-trees-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare Red-Black trees and AVL trees. When would you use each?" width="30%">
 </a>
 
 
@@ -1532,14 +1532,14 @@ FLIP-COLORS(h):
 
 ### Q3: Verify if a given tree is a valid Red-Black tree.
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-handwritten.svg" alt="Handwritten: Verify if a given tree is a valid Red-Black tree." width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-handwritten.svg" alt="Handwritten: Verify if a given tree is a valid Red-Black tree." width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-diagram.svg" alt="Diagram: Verify if a given tree is a valid Red-Black tree." width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-diagram.svg" alt="Diagram: Verify if a given tree is a valid Red-Black tree." width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-sticky.svg" alt="Sticky Note: Verify if a given tree is a valid Red-Black tree." width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/verify-if-a-given-tree-is-a-valid-red-black-tree-sticky.svg" alt="Sticky Note: Verify if a given tree is a valid Red-Black tree." width="30%">
 </a>
 
 
@@ -1552,14 +1552,14 @@ FLIP-COLORS(h):
 
 ### Q4: How many rotations can a Red-Black insertion require?
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-handwritten.svg" alt="Handwritten: How many rotations can a Red-Black insertion require?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-handwritten.svg" alt="Handwritten: How many rotations can a Red-Black insertion require?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-diagram.svg" alt="Diagram: How many rotations can a Red-Black insertion require?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-diagram.svg" alt="Diagram: How many rotations can a Red-Black insertion require?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-sticky.svg" alt="Sticky Note: How many rotations can a Red-Black insertion require?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/how-many-rotations-can-a-red-black-insertion-require-sticky.svg" alt="Sticky Note: How many rotations can a Red-Black insertion require?" width="30%">
 </a>
 
 
@@ -1567,14 +1567,14 @@ FLIP-COLORS(h):
 
 ### Q5: What is the "black-height" of a Red-Black tree with n nodes?
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-handwritten.svg" alt="Handwritten: What is the "black-height" of a Red-Black tree with n nodes?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-handwritten.svg" alt="Handwritten: What is the "black-height" of a Red-Black tree with n nodes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-diagram.svg" alt="Diagram: What is the "black-height" of a Red-Black tree with n nodes?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-diagram.svg" alt="Diagram: What is the "black-height" of a Red-Black tree with n nodes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-sticky.svg" alt="Sticky Note: What is the "black-height" of a Red-Black tree with n nodes?" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/what-is-the-black-height-of-a-red-black-tree-with-n-nodes-sticky.svg" alt="Sticky Note: What is the "black-height" of a Red-Black tree with n nodes?" width="30%">
 </a>
 
 
@@ -1781,14 +1781,14 @@ Red-Black trees power:
 
 ### Common Mistakes (GFG-Style)
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
 </a>
 
 
@@ -1967,14 +1967,14 @@ class RedBlackTree {
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2018,14 +2018,14 @@ class RedBlackTree {
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2047,14 +2047,14 @@ class RedBlackTree {
 
 ### Advanced Comparison: RB vs AVL vs B-Tree
 
-<a href="../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-handwritten.svg" alt="Handwritten: Advanced Comparison: RB vs AVL vs B-Tree" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-handwritten.svg" alt="Handwritten: Advanced Comparison: RB vs AVL vs B-Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-diagram.svg" alt="Diagram: Advanced Comparison: RB vs AVL vs B-Tree" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-diagram.svg" alt="Diagram: Advanced Comparison: RB vs AVL vs B-Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-sticky.svg" alt="Sticky Note: Advanced Comparison: RB vs AVL vs B-Tree" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/14-red-black/advanced-comparison-rb-vs-avl-vs-b-tree-sticky.svg" alt="Sticky Note: Advanced Comparison: RB vs AVL vs B-Tree" width="30%">
 </a>
 
 

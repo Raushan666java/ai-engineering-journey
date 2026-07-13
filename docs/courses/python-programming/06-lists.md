@@ -165,14 +165,14 @@ console.log(b);                // [10, 20, 30, 100, 40, 50]
 
 ### 6.3.1 Adding Elements
 
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-handwritten.svg" alt="Handwritten: 6.3.1 Adding Elements" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-handwritten.svg" alt="Handwritten: 6.3.1 Adding Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-diagram.svg" alt="Diagram: 6.3.1 Adding Elements" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-diagram.svg" alt="Diagram: 6.3.1 Adding Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-sticky.svg" alt="Sticky Note: 6.3.1 Adding Elements" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-1-adding-elements-sticky.svg" alt="Sticky Note: 6.3.1 Adding Elements" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ items.unshift(-1);             // [-1, 0, 1, 2, 2.5, ...]  (O(n) like Python)
 
 ### 6.3.2 Removing Elements
 
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-handwritten.svg" alt="Handwritten: 6.3.2 Removing Elements" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-handwritten.svg" alt="Handwritten: 6.3.2 Removing Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-diagram.svg" alt="Diagram: 6.3.2 Removing Elements" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-diagram.svg" alt="Diagram: 6.3.2 Removing Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-sticky.svg" alt="Sticky Note: 6.3.2 Removing Elements" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-2-removing-elements-sticky.svg" alt="Sticky Note: 6.3.2 Removing Elements" width="30%">
 </a>
 
 
@@ -239,14 +239,14 @@ items = items.filter(x => x !== 20);  // removes ALL 20s
 
 ### 6.3.3 Searching and Counting
 
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-handwritten.svg" alt="Handwritten: 6.3.3 Searching and Counting" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-handwritten.svg" alt="Handwritten: 6.3.3 Searching and Counting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-diagram.svg" alt="Diagram: 6.3.3 Searching and Counting" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-diagram.svg" alt="Diagram: 6.3.3 Searching and Counting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-sticky.svg" alt="Sticky Note: 6.3.3 Searching and Counting" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-3-searching-and-counting-sticky.svg" alt="Sticky Note: 6.3.3 Searching and Counting" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ console.log(a.includes(6));  // false
 
 ### 6.3.4 Sorting and Reversing
 
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-handwritten.svg" alt="Handwritten: 6.3.4 Sorting and Reversing" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-handwritten.svg" alt="Handwritten: 6.3.4 Sorting and Reversing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-diagram.svg" alt="Diagram: 6.3.4 Sorting and Reversing" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-diagram.svg" alt="Diagram: 6.3.4 Sorting and Reversing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-sticky.svg" alt="Sticky Note: 6.3.4 Sorting and Reversing" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-4-sorting-and-reversing-sticky.svg" alt="Sticky Note: 6.3.4 Sorting and Reversing" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ console.log(original, sortedCopy);  // [3, 1, 2] [1, 2, 3]
 
 ### 6.3.5 Copying
 
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-handwritten.svg" alt="Handwritten: 6.3.5 Copying" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-handwritten.svg" alt="Handwritten: 6.3.5 Copying" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-diagram.svg" alt="Diagram: 6.3.5 Copying" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-diagram.svg" alt="Diagram: 6.3.5 Copying" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-sticky.svg" alt="Sticky Note: 6.3.5 Copying" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/6-3-5-copying-sticky.svg" alt="Sticky Note: 6.3.5 Copying" width="30%">
 </a>
 
 
@@ -671,14 +671,14 @@ console.log(numbers.length);
 
 ### More TypeScript Array Patterns
 
-<a href="../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-handwritten.svg" alt="Handwritten: More TypeScript Array Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-handwritten.svg" alt="Handwritten: More TypeScript Array Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-diagram.svg" alt="Diagram: More TypeScript Array Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-diagram.svg" alt="Diagram: More TypeScript Array Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-sticky.svg" alt="Sticky Note: More TypeScript Array Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/06-lists/more-typescript-array-patterns-sticky.svg" alt="Sticky Note: More TypeScript Array Patterns" width="30%">
 </a>
 
 

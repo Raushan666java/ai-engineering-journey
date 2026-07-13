@@ -50,14 +50,14 @@ pie title SSC CGL Tier 1 — Section Weightage (by marks)
 
 ### Q1. [Analogy] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q1. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q1. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q1. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q1. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q1. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q1-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q1. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ A) Paper  B) Tobacco  C) Leaves  D) Jute
 
 ### Q2. [Analogy] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q2. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q2. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q2. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q2. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q2. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q2-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q2. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ A) 170  B) 172  C) 168  D) 174
 
 ### Q3. [Analogy] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q3. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q3. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q3. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q3. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q3. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q3-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q3. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ A) SUW  B) TVX  C) RSU  D) UWY
 
 ### Q4. [Analogy] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q4. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q4. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q4. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q4. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q4. [Analogy] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q4-analogy-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q4. [Analogy] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ A) Touch  B) Feel  C) Pressure  D) Pain
 
 ### Q5. [Classification] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q5. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q5. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q5. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q5. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q5. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q5-classification-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q5. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ A) 125  B) 343  C) 512  D) 729
 
 ### Q6. [Classification] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q6. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q6. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q6. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q6. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q6. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q6-classification-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q6. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -228,14 +228,14 @@ A) Square  B) Rhombus  C) Rectangle  D) Triangle
 
 ### Q7. [Classification] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q7. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q7. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q7. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q7. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q7. [Classification] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q7-classification-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q7. [Classification] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -257,14 +257,14 @@ A) Mercury  B) Venus  C) Earth  D) Jupiter
 
 ### Q8. [Coding-Decoding] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q8. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q8. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q8. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q8. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q8. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q8-coding-decoding-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q8. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -286,14 +286,14 @@ A) NVNCBJ  B) NVOCBK  C) NUNCBJ  D) NVNCBK
 
 ### Q9. [Coding-Decoding] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q9. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q9. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q9. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q9. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q9. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q9-coding-decoding-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q9. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ A) BQQMF  B) ZOKD  C) ZOKDV  D) ZQKMF
 
 ### Q10. [Coding-Decoding] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q10. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q10. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q10. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q10. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q10. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q10-coding-decoding-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q10. [Coding-Decoding] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ A) 1  B) 3  C) 5  D) 6
 
 ### Q11. [Blood Relation] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q11. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q11. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q11. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q11. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q11. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q11-blood-relation-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q11. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ A) Aunt  B) Uncle  C) Cousin  D) Nephew
 
 ### Q12. [Blood Relation] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q12. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q12. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q12. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q12. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q12. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q12-blood-relation-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q12. [Blood Relation] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -411,14 +411,14 @@ A) Mother  B) Sister  C) Wife  D) Daughter
 
 ### Q13. [Direction Sense] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q13. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q13. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q13. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q13. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q13. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q13-direction-sense-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q13. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -443,14 +443,14 @@ A) 5 km, East  B) 5 km, North-East  C) 7 km, East  D) 7 km, North-East
 
 ### Q14. [Direction Sense] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q14. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q14. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q14. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q14. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q14. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q14-direction-sense-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q14. [Direction Sense] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ A) North  B) South  C) East  D) West
 
 ### Q15. [Syllogism] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q15. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q15. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q15. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q15. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q15. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q15-syllogism-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q15. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -517,14 +517,14 @@ A) Only I  B) Only I and II  C) Only II and III  D) All I, II, III
 
 ### Q16. [Syllogism] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q16. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q16. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q16. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q16. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q16. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q16-syllogism-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q16. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -559,14 +559,14 @@ A) Only I  B) Only I and II  C) Only II and III  D) All I, II, III
 
 ### Q17. [Syllogism] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q17. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q17. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q17. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q17. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q17. [Syllogism] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q17-syllogism-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q17. [Syllogism] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -601,14 +601,14 @@ A) Only I  B) Only II  C) Only II and III  D) Only I and III
 
 ### Q18. [Order & Ranking] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q18. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q18. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q18. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q18. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q18. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q18-order-ranking-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q18. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -632,14 +632,14 @@ Formula: Rank from bottom = Total - Rank from top + 1 = 45 - 12 + 1 = 34.
 
 ### Q19. [Order & Ranking] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q19. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q19. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q19. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q19. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q19. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q19-order-ranking-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q19. [Order & Ranking] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -663,14 +663,14 @@ Total = B's left position + B's right position - 1 = 20 + 15 - 1 = 34.
 
 ### Q20. [Missing Number] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q20. [Missing Number] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q20. [Missing Number] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q20. [Missing Number] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q20. [Missing Number] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q20. [Missing Number] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q20-missing-number-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q20. [Missing Number] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -693,14 +693,14 @@ OR differences: +5, +7, +9, +11, +13.
 
 ### Q21. [Missing Number] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q21. [Missing Number] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q21. [Missing Number] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q21. [Missing Number] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q21. [Missing Number] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q21. [Missing Number] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q21-missing-number-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q21. [Missing Number] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -723,14 +723,14 @@ OR n^2+n: 1+1=2, 4+2=6, 9+3=12, 16+4=20, 25+5=30, 36+6=42.
 
 ### Q22. [Puzzle] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q22. [Puzzle] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q22. [Puzzle] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q22. [Puzzle] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q22. [Puzzle] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q22. [Puzzle] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q22-puzzle-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q22. [Puzzle] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@ A) P  B) Q  C) T  D) S
 
 ### Q23. [Puzzle] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q23. [Puzzle] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q23. [Puzzle] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q23. [Puzzle] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q23. [Puzzle] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q23. [Puzzle] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q23-puzzle-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q23. [Puzzle] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -788,14 +788,14 @@ A) A  B) B  C) C  D) D
 
 ### Q24. [Venn Diagram] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q24. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q24. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q24. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q24. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q24. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q24-venn-diagram-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q24. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ Neither = 20
 
 ### Q25. [Venn Diagram] | 2 Marks | General Intelligence
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q25. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-handwritten.svg" alt="Handwritten: Q25. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q25. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-diagram.svg" alt="Diagram: Q25. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q25. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q25-venn-diagram-2-marks-general-intelligence-sticky.svg" alt="Sticky Note: Q25. [Venn Diagram] | 2 Marks | General Intelligence" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ Exactly one = 80 + 60 = 140.
 
 ### Q26. [History] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q26. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q26. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q26. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q26. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q26. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q26-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q26. [History] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -886,14 +886,14 @@ A) Lord Canning  B) Lord William Bentinck  C) Warren Hastings  D) Lord Dalhousie
 
 ### Q27. [History] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q27. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q27. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q27. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q27. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q27. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q27-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q27. [History] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -915,14 +915,14 @@ A) 1757  B) 1764  C) 1776  D) 1789
 
 ### Q28. [History] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q28. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q28. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q28. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q28. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q28. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q28-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q28. [History] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -944,14 +944,14 @@ A) Mahatma Gandhi  B) Jawaharlal Nehru  C) A.O. Hume  D) Bal Gangadhar Tilak
 
 ### Q29. [History] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q29. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q29. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q29. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q29. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q29. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q29-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q29. [History] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -973,14 +973,14 @@ A) Land Tax  B) Salt Tax  C) Income Tax  D) Customs Duty
 
 ### Q30. [History] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q30. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q30. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q30. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-diagram.svg" alt="Diagram: Q30. [History] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q30. [History] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q30-history-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q30. [History] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1002,14 +1002,14 @@ A) Lord Mountbatten  B) C. Rajagopalachari  C) Lord Wavell  D) Dr. Rajendra Pras
 
 ### Q31. [Geography] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q31. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q31. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q31. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q31. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q31. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q31-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q31. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1031,14 +1031,14 @@ A) Ganga  B) Yamuna  C) Brahmaputra  D) Godavari
 
 ### Q32. [Geography] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q32. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q32. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q32. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q32. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q32. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q32-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q32. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1060,14 +1060,14 @@ A) Mount Everest  B) Kanchenjunga  C) Nanda Devi  D) K2
 
 ### Q33. [Geography] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q33. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q33. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q33. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q33. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q33. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q33-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q33. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1089,14 +1089,14 @@ A) Kerala  B) Assam  C) Meghalaya  D) West Bengal
 
 ### Q34. [Geography] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q34. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q34. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q34. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q34. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q34. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q34-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q34. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1118,14 +1118,14 @@ A) 6  B) 7  C) 8  D) 9
 
 ### Q35. [Geography] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q35. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q35. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q35. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-diagram.svg" alt="Diagram: Q35. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q35. [Geography] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q35-geography-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q35. [Geography] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1147,14 +1147,14 @@ A) Sunderbans  B) Nilgiri  C) Silent Valley  D) All of the above
 
 ### Q36. [Polity] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q36. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q36. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q36. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q36. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q36. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q36-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q36. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1176,14 +1176,14 @@ A) President  B) Vice President  C) Prime Minister  D) Speaker of Lok Sabha
 
 ### Q37. [Polity] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q37. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q37. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q37. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q37. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q37. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q37-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q37. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1205,14 +1205,14 @@ A) 9  B) 10  C) 11  D) 12
 
 ### Q38. [Polity] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q38. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q38. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q38. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q38. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q38. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q38-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q38. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1234,14 +1234,14 @@ A) Prime Minister  B) President  C) CJI (by seniority)  D) Law Minister
 
 ### Q39. [Polity] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q39. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q39. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q39. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q39. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q39. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q39-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q39. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1263,14 +1263,14 @@ A) USA  B) UK  C) Canada  D) Australia
 
 ### Q40. [Polity] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q40. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q40. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q40. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-diagram.svg" alt="Diagram: Q40. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q40. [Polity] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q40-polity-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q40. [Polity] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1292,14 +1292,14 @@ A) Article 14  B) Article 15  C) Article 17  D) Article 18
 
 ### Q41. [Economy] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q41. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q41. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q41. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q41. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q41. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q41-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q41. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1321,14 +1321,14 @@ A) Goods and Services Tax  B) General Sales Tax  C) Goods Supply Tax  D) Governm
 
 ### Q42. [Economy] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q42. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q42. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q42. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q42. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q42. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q42-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q42. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1350,14 +1350,14 @@ A) 2013  B) 2014  C) 2015  D) 2016
 
 ### Q43. [Economy] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q43. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q43. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q43. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q43. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q43. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q43-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q43. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1379,14 +1379,14 @@ A) RBI lending rate to banks  B) RBI borrowing rate from banks  C) Bank lending 
 
 ### Q44. [Economy] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q44. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q44. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q44. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-diagram.svg" alt="Diagram: Q44. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q44. [Economy] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q44-economy-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q44. [Economy] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1408,14 +1408,14 @@ A) Income Tax  B) Corporate Tax  C) Goods and Services Tax  D) Wealth Tax
 
 ### Q45. [Science] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q45. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q45. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q45. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q45. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q45. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q45-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q45. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1437,14 +1437,14 @@ A) CO2  B) CH4  C) N2  D) H2O vapor
 
 ### Q46. [Science] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q46. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q46. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q46. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q46. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q46. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q46-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q46. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1466,14 +1466,14 @@ A) Vitamin A  B) Vitamin B  C) Vitamin C  D) Vitamin D
 
 ### Q47. [Science] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q47. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q47. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q47. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q47. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q47. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q47-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q47. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1495,14 +1495,14 @@ A) NaCl  B) KCl  C) CaCl2  D) Na2CO3
 
 ### Q48. [Science] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q48. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q48. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q48. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-diagram.svg" alt="Diagram: Q48. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q48. [Science] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q48-science-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q48. [Science] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1524,14 +1524,14 @@ A) 2  B) 3  C) 4  D) 5
 
 ### Q49. [Current Affairs] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q49. [Current Affairs] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q49. [Current Affairs] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-diagram.svg" alt="Diagram: Q49. [Current Affairs] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-diagram.svg" alt="Diagram: Q49. [Current Affairs] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q49. [Current Affairs] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q49-current-affairs-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q49. [Current Affairs] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1553,14 +1553,14 @@ A) New Delhi, India  B) Paris, France  C) Abu Dhabi, UAE  D) Geneva, Switzerland
 
 ### Q50. [Current Affairs] | 2 Marks | General Awareness
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q50. [Current Affairs] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-handwritten.svg" alt="Handwritten: Q50. [Current Affairs] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-diagram.svg" alt="Diagram: Q50. [Current Affairs] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-diagram.svg" alt="Diagram: Q50. [Current Affairs] | 2 Marks | General Awareness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q50. [Current Affairs] | 2 Marks | General Awareness" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q50-current-affairs-2-marks-general-awareness-sticky.svg" alt="Sticky Note: Q50. [Current Affairs] | 2 Marks | General Awareness" width="30%">
 </a>
 
 
@@ -1588,14 +1588,14 @@ A) Uttar Pradesh  B) Madhya Pradesh  C) Rajasthan  D) Gujarat
 
 ### Q51. [Number System] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q51. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q51. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q51. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q51. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q51. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q51-number-system-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q51. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1619,14 +1619,14 @@ LCM = 2^4 x 3^2 = 16 x 9 = 144.
 
 ### Q52. [Number System] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q52. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q52. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q52. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q52. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q52. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q52-number-system-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q52. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1649,14 +1649,14 @@ Sum = n(n+1)/2 = 20 x 21 / 2 = 210.
 
 ### Q53. [Number System] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q53. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q53. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q53. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q53. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q53. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q53-number-system-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q53. [Number System] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1679,14 +1679,14 @@ N = 56k + 29 = 7(8k) + 28 + 1 = 7(8k+4) + 1. Remainder = 29 mod 7 = 1.
 
 ### Q54. [Percentage] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q54. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q54. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q54. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q54. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q54. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q54-percentage-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q54. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1710,14 +1710,14 @@ Formula: x/(100+x) x 100% = 25/125 x 100 = 20%.
 
 ### Q55. [Percentage] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q55. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q55. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q55. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q55. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q55. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q55-percentage-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q55. [Percentage] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1741,14 +1741,14 @@ Formula: x + y + xy/100 = 20 + (-20) + (-400/100) = -4%.
 
 ### Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q56-profit-loss-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q56. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1771,14 +1771,14 @@ CP = SP x 100/(100 + P%) = 360 x 100/120 = Rs.300.
 
 ### Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q57-profit-loss-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q57. [Profit & Loss] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1802,14 +1802,14 @@ Formula: Markup% - Discount% - (Markup% x Discount%)/100 = 30 - 10 - 3 = 17%.
 
 ### Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q58-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q58. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1832,14 +1832,14 @@ SI = P x R x T / 100 = 5000 x 8 x 3 / 100 = Rs.1,200.
 
 ### Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q59-simple-compound-interest-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q59. [Simple & Compound Interest] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1863,14 +1863,14 @@ Effective rate for 2 years at 10%: 10+10+1 = 21%.
 
 ### Q60. [Time & Work] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q60. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q60. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q60. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q60. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q60. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q60-time-work-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q60. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1894,14 +1894,14 @@ Formula: (a x b)/(a + b) = 150/25 = 6.
 
 ### Q61. [Time & Work] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q61. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q61. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q61. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q61. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q61. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q61-time-work-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q61. [Time & Work] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1924,14 +1924,14 @@ Net fill per hour = 1/12 - 1/15 = 5/60 - 4/60 = 1/60. Time = 60 hours.
 
 ### Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q62-speed-distance-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q62. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1954,14 +1954,14 @@ Speed = 150/15 = 10 m/s. 10 x 18/5 = 36 km/h.
 
 ### Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q63-speed-distance-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q63. [Speed & Distance] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -1985,14 +1985,14 @@ NOT (40+60)/2 = 50.
 
 ### Q64. [Algebra] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q64. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q64. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q64. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q64. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q64. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q64-algebra-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q64. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2015,14 +2015,14 @@ A) 5  B) 7  C) 9  D) 11
 
 ### Q65. [Algebra] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q65. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q65. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q65. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q65. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q65. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q65-algebra-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q65. [Algebra] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2045,14 +2045,14 @@ a^2 + b^2 = (a+b)^2 - 2ab = 64 - 30 = 34.
 
 ### Q66. [Geometry] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q66. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q66. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q66. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q66. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q66. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q66-geometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q66. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2075,14 +2075,14 @@ Sum of angles = 180 deg. C = 180 - 130 = 50 deg.
 
 ### Q67. [Geometry] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q67. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q67. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q67. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q67. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q67. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q67-geometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q67. [Geometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2105,14 +2105,14 @@ Area = pi x r^2 = 22/7 x 7 x 7 = 154 cm^2.
 
 ### Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q68-trigonometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q68. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2135,14 +2135,14 @@ sin 30 = 1/2, cos 60 = 1/2. Sum = 1.
 
 ### Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q69-trigonometry-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q69. [Trigonometry] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2165,14 +2165,14 @@ tan 45 = 1. tan30=1/sqrt(3), tan60=sqrt(3), tan90=undefined.
 
 ### Q70. [Mensuration] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q70. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q70. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q70. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q70. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q70. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q70-mensuration-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q70. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2195,14 +2195,14 @@ Volume = side^3 = 125 cm^3. Surface area = 6 x side^2 = 150 cm^2.
 
 ### Q71. [Mensuration] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q71. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q71. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q71. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q71. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q71. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q71-mensuration-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q71. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2226,14 +2226,14 @@ TSA = 2 pi r (r+h) = 44 x 17 = 748 cm^2.
 
 ### Q72. [Mensuration] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q72. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q72. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q72. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q72. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q72. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q72-mensuration-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q72. [Mensuration] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2256,14 +2256,14 @@ Area = 1/2 x base x height = 1/2 x 12 x 8 = 48 cm^2.
 
 ### Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q73-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q73. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2296,14 +2296,14 @@ Increase = 400 - 200 = 200. % increase = (200/200) x 100 = 100%.
 
 ### Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q74-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q74. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2326,14 +2326,14 @@ A) 2:3  B) 3:4  C) 4:5  D) 5:6
 
 ### Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-handwritten.svg" alt="Handwritten: Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-diagram.svg" alt="Diagram: Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q75-data-interpretation-2-marks-quantitative-aptitude-sticky.svg" alt="Sticky Note: Q75. [Data Interpretation] | 2 Marks | Quantitative Aptitude" width="30%">
 </a>
 
 
@@ -2368,14 +2368,14 @@ Average = (200+250+300+350+400)/5 = 1500/5 = 300.
 
 ### Q76. [RC] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q76. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q76. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q76. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q76. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q76. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q76-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q76. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2397,14 +2397,14 @@ A) Causes of climate change  B) Challenges and responses to climate change  C) R
 
 ### Q77. [RC] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q77. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q77. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q77. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q77. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q77. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q77-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q77. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2426,14 +2426,14 @@ A) Developing countries  B) Developed nations  C) All equally  D) Industrial sec
 
 ### Q78. [RC] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q78. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q78. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q78. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q78. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q78. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q78-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q78. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2455,14 +2455,14 @@ A) Below 1C  B) Below 1.5C  C) Below 2C  D) Below 2.5C
 
 ### Q79. [RC] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q79. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q79. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q79. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q79. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q79. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q79-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q79. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ A) Melting polar ice caps  B) Rising sea levels  C) Deforestation  D) Extreme we
 
 ### Q80. [RC] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q80. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q80. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q80. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q80. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q80. [RC] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q80-rc-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q80. [RC] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2513,14 +2513,14 @@ A) Optimistic  B) Pessimistic  C) Critical yet hopeful  D) Indifferent
 
 ### Q81. [Cloze Test] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q81. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q81. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q81. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q81. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q81. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q81-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q81. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2542,14 +2542,14 @@ A) enacted  B) acted  C) done  D) made
 
 ### Q82. [Cloze Test] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q82. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q82. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q82. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q82. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q82. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q82-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q82. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2571,14 +2571,14 @@ A) simple  B) abstruse  C) clear  D) evident
 
 ### Q83. [Cloze Test] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q83. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q83. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q83. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q83. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q83. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q83-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q83. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2600,14 +2600,14 @@ A) implementation  B) implication  C) improvisation  D) importation
 
 ### Q84. [Cloze Test] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q84. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q84. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q84. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q84. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q84. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q84-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q84. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2629,14 +2629,14 @@ A) apathy  B) antipathy  C) penchant  D) disdain
 
 ### Q85. [Cloze Test] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q85. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q85. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q85. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q85. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q85. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q85-cloze-test-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q85. [Cloze Test] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2658,14 +2658,14 @@ A) sporadically  B) intermittently  C) seamlessly  D) reluctantly
 
 ### Q86. [Error Spotting] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q86. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q86. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q86. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q86. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q86. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q86-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q86. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2687,14 +2687,14 @@ A) Neither the teacher nor the students  B) was aware of  C) the changes in  D) 
 
 ### Q87. [Error Spotting] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q87. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q87. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q87. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q87. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q87. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q87-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q87. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2716,14 +2716,14 @@ A) One of the most important  B) aspect of the proposal  C) has been overlooked 
 
 ### Q88. [Error Spotting] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q88. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q88. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q88. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q88. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q88. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q88-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q88. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2745,14 +2745,14 @@ A) The committee  B) have decided  C) to implement  D) No error
 
 ### Q89. [Error Spotting] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q89. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q89. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q89. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q89. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q89. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q89-error-spotting-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q89. [Error Spotting] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2774,14 +2774,14 @@ A) She is  B) one of those  C) who is  D) No error
 
 ### Q90. [Fill in the Blanks] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q90. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q90. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q90. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q90. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q90. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q90-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q90. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2803,14 +2803,14 @@ A) commended  B) commenced  C) commented  D) commanded
 
 ### Q91. [Fill in the Blanks] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q91. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q91. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q91. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q91. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q91. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q91-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q91. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2832,14 +2832,14 @@ A) corroborated  B) contradicted  C) collaborated  D) correlated
 
 ### Q92. [Fill in the Blanks] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q92. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q92. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q92. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q92. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q92. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q92-fill-in-the-blanks-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q92. [Fill in the Blanks] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2861,14 +2861,14 @@ A) animosity  B) rapprochement  C) estrangement  D) hostility
 
 ### Q93. [Para Jumbles] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q93. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q93. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q93. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q93. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q93. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q93-para-jumbles-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q93. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2895,14 +2895,14 @@ A) 2, 4, 1, 3  B) 1, 2, 3, 4  C) 2, 1, 4, 3  D) 4, 2, 1, 3
 
 ### Q94. [Para Jumbles] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q94. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q94. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q94. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q94. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q94. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q94-para-jumbles-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q94. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2929,14 +2929,14 @@ A) 2, 4, 1, 3  B) 2, 1, 3, 4  C) 2, 3, 1, 4  D) 2, 1, 4, 3
 
 ### Q95. [Para Jumbles] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q95. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q95. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q95. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q95. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q95. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q95-para-jumbles-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q95. [Para Jumbles] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2963,14 +2963,14 @@ A) 2, 4, 3, 1  B) 2, 1, 4, 3  C) 2, 3, 1, 4  D) 2, 4, 1, 3
 
 ### Q96. [Synonyms] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q96. [Synonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q96. [Synonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q96. [Synonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q96. [Synonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q96. [Synonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q96-synonyms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q96. [Synonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -2992,14 +2992,14 @@ A) Malevolent  B) Charitable  C) Hostile  D) Cruel
 
 ### Q97. [Antonyms] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q97. [Antonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q97. [Antonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q97. [Antonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q97. [Antonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q97. [Antonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q97-antonyms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q97. [Antonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -3021,14 +3021,14 @@ A) Transient  B) Fleeting  C) Permanent  D) Brief
 
 ### Q98. [Synonyms] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q98. [Synonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q98. [Synonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q98. [Synonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q98. [Synonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q98. [Synonyms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q98-synonyms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q98. [Synonyms] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -3050,14 +3050,14 @@ A) Modest  B) Showy  C) Humble  D) Simple
 
 ### Q99. [Idioms] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q99. [Idioms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q99. [Idioms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q99. [Idioms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q99. [Idioms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q99. [Idioms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q99-idioms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q99. [Idioms] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 
@@ -3079,14 +3079,14 @@ A) Waste resources  B) Work late into the night  C) Start a fire  D) Read in the
 
 ### Q100. [Idioms] | 2 Marks | English Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q100. [Idioms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-handwritten.svg" alt="Handwritten: Q100. [Idioms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q100. [Idioms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-diagram.svg" alt="Diagram: Q100. [Idioms] | 2 Marks | English Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q100. [Idioms] | 2 Marks | English Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/05-ssc-cgl-tier1/q100-idioms-2-marks-english-comprehension-sticky.svg" alt="Sticky Note: Q100. [Idioms] | 2 Marks | English Comprehension" width="30%">
 </a>
 
 

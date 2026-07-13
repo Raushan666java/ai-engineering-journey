@@ -19,14 +19,14 @@
 
 ### The Purpose of System Modelling
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-handwritten.svg" alt="Handwritten: The Purpose of System Modelling" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-handwritten.svg" alt="Handwritten: The Purpose of System Modelling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-diagram.svg" alt="Diagram: The Purpose of System Modelling" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-diagram.svg" alt="Diagram: The Purpose of System Modelling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-sticky.svg" alt="Sticky Note: The Purpose of System Modelling" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-purpose-of-system-modelling-sticky.svg" alt="Sticky Note: The Purpose of System Modelling" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ graph TD
 
 ### The Unified Modeling Language
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-handwritten.svg" alt="Handwritten: The Unified Modeling Language" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-handwritten.svg" alt="Handwritten: The Unified Modeling Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-diagram.svg" alt="Diagram: The Unified Modeling Language" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-diagram.svg" alt="Diagram: The Unified Modeling Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-sticky.svg" alt="Sticky Note: The Unified Modeling Language" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/the-unified-modeling-language-sticky.svg" alt="Sticky Note: The Unified Modeling Language" width="30%">
 </a>
 
 
@@ -100,14 +100,14 @@ UML is extensible through:
 
 ### Use Case Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-handwritten.svg" alt="Handwritten: Use Case Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-handwritten.svg" alt="Handwritten: Use Case Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-diagram.svg" alt="Diagram: Use Case Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-diagram.svg" alt="Diagram: Use Case Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-sticky.svg" alt="Sticky Note: Use Case Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/use-case-diagrams-sticky.svg" alt="Sticky Note: Use Case Diagrams" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ graph TD
 
 ### Class Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-handwritten.svg" alt="Handwritten: Class Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-handwritten.svg" alt="Handwritten: Class Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-diagram.svg" alt="Diagram: Class Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-diagram.svg" alt="Diagram: Class Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-sticky.svg" alt="Sticky Note: Class Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/class-diagrams-sticky.svg" alt="Sticky Note: Class Diagrams" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ classDiagram
 
 ### Sequence Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-handwritten.svg" alt="Handwritten: Sequence Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-handwritten.svg" alt="Handwritten: Sequence Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-diagram.svg" alt="Diagram: Sequence Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-diagram.svg" alt="Diagram: Sequence Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-sticky.svg" alt="Sticky Note: Sequence Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/sequence-diagrams-sticky.svg" alt="Sticky Note: Sequence Diagrams" width="30%">
 </a>
 
 
@@ -331,14 +331,14 @@ sequenceDiagram
 
 ### Activity Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-handwritten.svg" alt="Handwritten: Activity Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-handwritten.svg" alt="Handwritten: Activity Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-diagram.svg" alt="Diagram: Activity Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-diagram.svg" alt="Diagram: Activity Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-sticky.svg" alt="Sticky Note: Activity Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/activity-diagrams-sticky.svg" alt="Sticky Note: Activity Diagrams" width="30%">
 </a>
 
 
@@ -386,14 +386,14 @@ graph TD
 
 ### State Machine Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-handwritten.svg" alt="Handwritten: State Machine Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-handwritten.svg" alt="Handwritten: State Machine Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-diagram.svg" alt="Diagram: State Machine Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-diagram.svg" alt="Diagram: State Machine Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-sticky.svg" alt="Sticky Note: State Machine Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/state-machine-diagrams-sticky.svg" alt="Sticky Note: State Machine Diagrams" width="30%">
 </a>
 
 
@@ -443,14 +443,14 @@ stateDiagram-v2
 
 ### Component Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-handwritten.svg" alt="Handwritten: Component Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-handwritten.svg" alt="Handwritten: Component Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-diagram.svg" alt="Diagram: Component Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-diagram.svg" alt="Diagram: Component Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-sticky.svg" alt="Sticky Note: Component Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/component-diagrams-sticky.svg" alt="Sticky Note: Component Diagrams" width="30%">
 </a>
 
 
@@ -494,14 +494,14 @@ graph TD
 
 ### Deployment Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-handwritten.svg" alt="Handwritten: Deployment Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-handwritten.svg" alt="Handwritten: Deployment Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-diagram.svg" alt="Diagram: Deployment Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-diagram.svg" alt="Diagram: Deployment Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-sticky.svg" alt="Sticky Note: Deployment Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/deployment-diagrams-sticky.svg" alt="Sticky Note: Deployment Diagrams" width="30%">
 </a>
 
 
@@ -559,14 +559,14 @@ graph TD
 
 ### Data Flow Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-handwritten.svg" alt="Handwritten: Data Flow Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-handwritten.svg" alt="Handwritten: Data Flow Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-diagram.svg" alt="Diagram: Data Flow Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-diagram.svg" alt="Diagram: Data Flow Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-sticky.svg" alt="Sticky Note: Data Flow Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/data-flow-diagrams-sticky.svg" alt="Sticky Note: Data Flow Diagrams" width="30%">
 </a>
 
 
@@ -583,14 +583,14 @@ Data flow diagrams (DFDs) model the flow of data through a system. They are hier
 
 ### Entity-Relationship Diagrams
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-handwritten.svg" alt="Handwritten: Entity-Relationship Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-handwritten.svg" alt="Handwritten: Entity-Relationship Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-diagram.svg" alt="Diagram: Entity-Relationship Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-diagram.svg" alt="Diagram: Entity-Relationship Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-sticky.svg" alt="Sticky Note: Entity-Relationship Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/entity-relationship-diagrams-sticky.svg" alt="Sticky Note: Entity-Relationship Diagrams" width="30%">
 </a>
 
 
@@ -652,14 +652,14 @@ erDiagram
 
 ### Design Patterns in Modelling Context
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-handwritten.svg" alt="Handwritten: Design Patterns in Modelling Context" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-handwritten.svg" alt="Handwritten: Design Patterns in Modelling Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-diagram.svg" alt="Diagram: Design Patterns in Modelling Context" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-diagram.svg" alt="Diagram: Design Patterns in Modelling Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-sticky.svg" alt="Sticky Note: Design Patterns in Modelling Context" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/design-patterns-in-modelling-context-sticky.svg" alt="Sticky Note: Design Patterns in Modelling Context" width="30%">
 </a>
 
 
@@ -673,14 +673,14 @@ Design patterns can be represented in UML to document recurring architectural so
 
 ### Object Constraint Language
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-handwritten.svg" alt="Handwritten: Object Constraint Language" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-handwritten.svg" alt="Handwritten: Object Constraint Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-diagram.svg" alt="Diagram: Object Constraint Language" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-diagram.svg" alt="Diagram: Object Constraint Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-sticky.svg" alt="Sticky Note: Object Constraint Language" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/object-constraint-language-sticky.svg" alt="Sticky Note: Object Constraint Language" width="30%">
 </a>
 
 
@@ -707,14 +707,14 @@ OCL is a formal language for expressing constraints on UML models. It is declara
 
 ### Model-Driven Engineering
 
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-handwritten.svg" alt="Handwritten: Model-Driven Engineering" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-handwritten.svg" alt="Handwritten: Model-Driven Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-diagram.svg" alt="Diagram: Model-Driven Engineering" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-diagram.svg" alt="Diagram: Model-Driven Engineering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-sticky.svg" alt="Sticky Note: Model-Driven Engineering" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/03-system-modeling/model-driven-engineering-sticky.svg" alt="Sticky Note: Model-Driven Engineering" width="30%">
 </a>
 
 

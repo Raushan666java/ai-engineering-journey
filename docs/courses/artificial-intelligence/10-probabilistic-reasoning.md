@@ -40,14 +40,14 @@ flowchart LR
 
 ### Real-World Analogy -- Diagnosing Car Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-handwritten.svg" alt="Handwritten: Real-World Analogy -- Diagnosing Car Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-handwritten.svg" alt="Handwritten: Real-World Analogy -- Diagnosing Car Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-diagram.svg" alt="Diagram: Real-World Analogy -- Diagnosing Car Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-diagram.svg" alt="Diagram: Real-World Analogy -- Diagnosing Car Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-sticky.svg" alt="Sticky Note: Real-World Analogy -- Diagnosing Car Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-sticky.svg" alt="Sticky Note: Real-World Analogy -- Diagnosing Car Problems" width="30%">
 </a>
 
 
@@ -63,14 +63,14 @@ Probabilistic reasoning gives us the mathematical tools to quantify this kind of
 
 ### Real-World Analogy -- Family Medical History
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-handwritten.svg" alt="Handwritten: Real-World Analogy -- Family Medical History" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-handwritten.svg" alt="Handwritten: Real-World Analogy -- Family Medical History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-diagram.svg" alt="Diagram: Real-World Analogy -- Family Medical History" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-diagram.svg" alt="Diagram: Real-World Analogy -- Family Medical History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-sticky.svg" alt="Sticky Note: Real-World Analogy -- Family Medical History" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-sticky.svg" alt="Sticky Note: Real-World Analogy -- Family Medical History" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ A doctor wants to assess a patient's risk of developing hereditary heart disease
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ $$P(X_1, X_2, \ldots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$
 
 ### Algorithm: Constructing a Bayesian Network
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-handwritten.svg" alt="Handwritten: Algorithm: Constructing a Bayesian Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-handwritten.svg" alt="Handwritten: Algorithm: Constructing a Bayesian Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-diagram.svg" alt="Diagram: Algorithm: Constructing a Bayesian Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-diagram.svg" alt="Diagram: Algorithm: Constructing a Bayesian Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-sticky.svg" alt="Sticky Note: Algorithm: Constructing a Bayesian Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-sticky.svg" alt="Sticky Note: Algorithm: Constructing a Bayesian Network" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ $$P(X_1, X_2, \ldots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ function BUILD-BAYESIAN-NETWORK(vars, ordering, domain_knowledge) returns BN
 
 ### Step-by-Step Dry Run -- Alarm Network
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ Total parameters: $1 + 1 + 4 + 2 + 2 = 10$ versus $2^5 - 1 = 31$ for the full jo
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 
 ### Real-World Analogy -- Weather and Clothing Choices
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-handwritten.svg" alt="Handwritten: Real-World Analogy -- Weather and Clothing Choices" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-handwritten.svg" alt="Handwritten: Real-World Analogy -- Weather and Clothing Choices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-diagram.svg" alt="Diagram: Real-World Analogy -- Weather and Clothing Choices" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-diagram.svg" alt="Diagram: Real-World Analogy -- Weather and Clothing Choices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-sticky.svg" alt="Sticky Note: Real-World Analogy -- Weather and Clothing Choices" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-sticky.svg" alt="Sticky Note: Real-World Analogy -- Weather and Clothing Choices" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ This idea -- that variables become independent once we condition on their common
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -417,14 +417,14 @@ Equivalently: $P(X \mid Y, \mathcal{Z}) = P(X \mid \mathcal{Z})$ -- knowing $Y$ 
 
 ### The Markov Blanket
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-handwritten.svg" alt="Handwritten: The Markov Blanket" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-handwritten.svg" alt="Handwritten: The Markov Blanket" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-diagram.svg" alt="Diagram: The Markov Blanket" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-diagram.svg" alt="Diagram: The Markov Blanket" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-sticky.svg" alt="Sticky Note: The Markov Blanket" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-sticky.svg" alt="Sticky Note: The Markov Blanket" width="30%">
 </a>
 
 
@@ -439,14 +439,14 @@ This property is critical for Gibbs sampling (Section 10.5): to resample $X$, we
 
 ### Algorithm: Testing Conditional Independence
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-handwritten.svg" alt="Handwritten: Algorithm: Testing Conditional Independence" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-handwritten.svg" alt="Handwritten: Algorithm: Testing Conditional Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-diagram.svg" alt="Diagram: Algorithm: Testing Conditional Independence" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-diagram.svg" alt="Diagram: Algorithm: Testing Conditional Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-sticky.svg" alt="Sticky Note: Algorithm: Testing Conditional Independence" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-sticky.svg" alt="Sticky Note: Algorithm: Testing Conditional Independence" width="30%">
 </a>
 
 
@@ -466,14 +466,14 @@ This property is critical for Gibbs sampling (Section 10.5): to resample $X$, we
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -497,14 +497,14 @@ function CHECK-CONDITIONAL-INDEPENDENCE(BN, X, Y, Z) returns boolean
 
 ### Step-by-Step Dry Run -- Alarm Network Independence
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
 </a>
 
 
@@ -541,14 +541,14 @@ P(J=true) * P(M=true) = 0.05214 * 0.01174 = 0.000612
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -643,14 +643,14 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -663,14 +663,14 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -685,14 +685,14 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 ### Real-World Analogy -- Family Genetics
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-handwritten.svg" alt="Handwritten: Real-World Analogy -- Family Genetics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-handwritten.svg" alt="Handwritten: Real-World Analogy -- Family Genetics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-diagram.svg" alt="Diagram: Real-World Analogy -- Family Genetics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-diagram.svg" alt="Diagram: Real-World Analogy -- Family Genetics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-sticky.svg" alt="Sticky Note: Real-World Analogy -- Family Genetics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-sticky.svg" alt="Sticky Note: Real-World Analogy -- Family Genetics" width="30%">
 </a>
 
 
@@ -702,14 +702,14 @@ Now consider a trait influenced by two independent genes from Mother and Father,
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -723,14 +723,14 @@ $X$ and $Y$ are **d-separated** by $\mathcal{Z}$ if **every** undirected path be
 
 ### Algorithm: d-Separation Test
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-handwritten.svg" alt="Handwritten: Algorithm: d-Separation Test" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-handwritten.svg" alt="Handwritten: Algorithm: d-Separation Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-diagram.svg" alt="Diagram: Algorithm: d-Separation Test" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-diagram.svg" alt="Diagram: Algorithm: d-Separation Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-sticky.svg" alt="Sticky Note: Algorithm: d-Separation Test" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-sticky.svg" alt="Sticky Note: Algorithm: d-Separation Test" width="30%">
 </a>
 
 
@@ -752,14 +752,14 @@ $X$ and $Y$ are **d-separated** by $\mathcal{Z}$ if **every** undirected path be
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -810,14 +810,14 @@ function HAS-BLOCKING-TRIPLE(path, A, B, Z, ev_desc) returns boolean
 
 ### Step-by-Step Dry Run -- d-Separation in Alarm Network
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ This captures the intuition: if the alarm goes off, knowing whether a burglary o
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -984,14 +984,14 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -999,14 +999,14 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1019,14 +1019,14 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 
 ### Real-World Analogy -- Accounting Ledger
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-handwritten.svg" alt="Handwritten: Real-World Analogy -- Accounting Ledger" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-handwritten.svg" alt="Handwritten: Real-World Analogy -- Accounting Ledger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-diagram.svg" alt="Diagram: Real-World Analogy -- Accounting Ledger" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-diagram.svg" alt="Diagram: Real-World Analogy -- Accounting Ledger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-sticky.svg" alt="Sticky Note: Real-World Analogy -- Accounting Ledger" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-sticky.svg" alt="Sticky Note: Real-World Analogy -- Accounting Ledger" width="30%">
 </a>
 
 
@@ -1058,14 +1058,14 @@ Imagine you have a large accounting ledger with 50 columns of financial data. Yo
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ The algorithm operates on **factors** -- multi-dimensional arrays that represent
 
 ### Algorithm: Variable Elimination
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-handwritten.svg" alt="Handwritten: Algorithm: Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-handwritten.svg" alt="Handwritten: Algorithm: Variable Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-diagram.svg" alt="Diagram: Algorithm: Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-diagram.svg" alt="Diagram: Algorithm: Variable Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-sticky.svg" alt="Sticky Note: Algorithm: Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-sticky.svg" alt="Sticky Note: Algorithm: Variable Elimination" width="30%">
 </a>
 
 
@@ -1109,14 +1109,14 @@ The algorithm operates on **factors** -- multi-dimensional arrays that represent
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1150,14 +1150,14 @@ function VARIABLE-ELIMINATION(BN, Q, E, e) returns distribution P(Q | E=e)
 
 ### Step-by-Step Dry Run -- Alarm Network Variable Elimination
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
 </a>
 
 
@@ -1224,14 +1224,14 @@ Step 5: Multiply with P(B) and normalize
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1393,14 +1393,14 @@ P(Burglary | JohnCalls=true, MaryCalls=true):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1413,14 +1413,14 @@ Finding the optimal elimination order is NP-hard, but heuristics (min-degree, mi
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1434,14 +1434,14 @@ Finding the optimal elimination order is NP-hard, but heuristics (min-degree, mi
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1458,14 +1458,14 @@ Finding the optimal elimination order is NP-hard, but heuristics (min-degree, mi
 
 ### Real-World Analogy -- Opinion Polling
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-handwritten.svg" alt="Handwritten: Real-World Analogy -- Opinion Polling" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-handwritten.svg" alt="Handwritten: Real-World Analogy -- Opinion Polling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-diagram.svg" alt="Diagram: Real-World Analogy -- Opinion Polling" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-diagram.svg" alt="Diagram: Real-World Analogy -- Opinion Polling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-sticky.svg" alt="Sticky Note: Real-World Analogy -- Opinion Polling" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-sticky.svg" alt="Sticky Note: Real-World Analogy -- Opinion Polling" width="30%">
 </a>
 
 
@@ -1475,14 +1475,14 @@ Gibbs sampling does the same for probability distributions. Instead of computing
 
 ### Definition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1494,14 +1494,14 @@ After a **burn-in** period, the samples converge to the true posterior.
 
 ### Algorithm: Gibbs Sampling
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-handwritten.svg" alt="Handwritten: Algorithm: Gibbs Sampling" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-handwritten.svg" alt="Handwritten: Algorithm: Gibbs Sampling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-diagram.svg" alt="Diagram: Algorithm: Gibbs Sampling" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-diagram.svg" alt="Diagram: Algorithm: Gibbs Sampling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-sticky.svg" alt="Sticky Note: Algorithm: Gibbs Sampling" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-sticky.svg" alt="Sticky Note: Algorithm: Gibbs Sampling" width="30%">
 </a>
 
 
@@ -1529,14 +1529,14 @@ After a **burn-in** period, the samples converge to the true posterior.
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1568,14 +1568,14 @@ function GIBBS-SAMPLING(BN, evidence, N, B) returns samples
 
 ### Step-by-Step Dry Run -- Gibbs on Alarm Network
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
 </a>
 
 
@@ -1621,14 +1621,14 @@ function GIBBS-SAMPLING(BN, evidence, N, B) returns samples
 
 ### Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
 </a>
 
 
@@ -1743,14 +1743,14 @@ Error: 0.0017
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1763,14 +1763,14 @@ This is **linear** in the graph size, unlike variable elimination which is expon
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1784,14 +1784,14 @@ This is **linear** in the graph size, unlike variable elimination which is expon
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1906,14 +1906,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Q1: How do you know when MCMC (Gibbs sampling) has converged?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-handwritten.svg" alt="Handwritten: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-handwritten.svg" alt="Handwritten: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-diagram.svg" alt="Diagram: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-diagram.svg" alt="Diagram: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-sticky.svg" alt="Sticky Note: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-sticky.svg" alt="Sticky Note: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
 </a>
 
 
@@ -1936,14 +1936,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Q2: Can Bayesian network structure be learned from data? What are the main challenges?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-handwritten.svg" alt="Handwritten: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-handwritten.svg" alt="Handwritten: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-diagram.svg" alt="Diagram: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-diagram.svg" alt="Diagram: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-sticky.svg" alt="Sticky Note: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-sticky.svg" alt="Sticky Note: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Q3: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-handwritten.svg" alt="Handwritten: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-handwritten.svg" alt="Handwritten: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-diagram.svg" alt="Diagram: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-diagram.svg" alt="Diagram: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-sticky.svg" alt="Sticky Note: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-sticky.svg" alt="Sticky Note: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
 </a>
 
 
@@ -1996,14 +1996,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Medical Diagnosis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-handwritten.svg" alt="Handwritten: Medical Diagnosis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-handwritten.svg" alt="Handwritten: Medical Diagnosis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-diagram.svg" alt="Diagram: Medical Diagnosis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-diagram.svg" alt="Diagram: Medical Diagnosis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-sticky.svg" alt="Sticky Note: Medical Diagnosis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-sticky.svg" alt="Sticky Note: Medical Diagnosis" width="30%">
 </a>
 
 
@@ -2017,14 +2017,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Fault Diagnosis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-handwritten.svg" alt="Handwritten: Fault Diagnosis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-handwritten.svg" alt="Handwritten: Fault Diagnosis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-diagram.svg" alt="Diagram: Fault Diagnosis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-diagram.svg" alt="Diagram: Fault Diagnosis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-sticky.svg" alt="Sticky Note: Fault Diagnosis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-sticky.svg" alt="Sticky Note: Fault Diagnosis" width="30%">
 </a>
 
 
@@ -2040,14 +2040,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Bioinformatics
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-handwritten.svg" alt="Handwritten: Bioinformatics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-handwritten.svg" alt="Handwritten: Bioinformatics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-diagram.svg" alt="Diagram: Bioinformatics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-diagram.svg" alt="Diagram: Bioinformatics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-sticky.svg" alt="Sticky Note: Bioinformatics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-sticky.svg" alt="Sticky Note: Bioinformatics" width="30%">
 </a>
 
 
@@ -2061,14 +2061,14 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Other Real-World Applications
 
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-handwritten.svg" alt="Handwritten: Other Real-World Applications" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-handwritten.svg" alt="Handwritten: Other Real-World Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-diagram.svg" alt="Diagram: Other Real-World Applications" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-diagram.svg" alt="Diagram: Other Real-World Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-sticky.svg" alt="Sticky Note: Other Real-World Applications" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-sticky.svg" alt="Sticky Note: Other Real-World Applications" width="30%">
 </a>
 
 

@@ -46,14 +46,14 @@ flowchart LR
 
 ### 12.1 The AI SDK Architecture
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-handwritten.svg" alt="Handwritten: 12.1 The AI SDK Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-handwritten.svg" alt="Handwritten: 12.1 The AI SDK Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-diagram.svg" alt="Diagram: 12.1 The AI SDK Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-diagram.svg" alt="Diagram: 12.1 The AI SDK Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-sticky.svg" alt="Sticky Note: 12.1 The AI SDK Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-1-the-ai-sdk-architecture-sticky.svg" alt="Sticky Note: 12.1 The AI SDK Architecture" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@ The package ships with two migration files that create the `agent_conversations`
 
 ### 12.2 Installation and Configuration
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-handwritten.svg" alt="Handwritten: 12.2 Installation and Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-handwritten.svg" alt="Handwritten: 12.2 Installation and Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-diagram.svg" alt="Diagram: 12.2 Installation and Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-diagram.svg" alt="Diagram: 12.2 Installation and Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-sticky.svg" alt="Sticky Note: 12.2 Installation and Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-2-installation-and-configuration-sticky.svg" alt="Sticky Note: 12.2 Installation and Configuration" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ class GenerateConceptArt extends Command
 }
 ### 12.3 Provider Support Matrix
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-handwritten.svg" alt="Handwritten: 12.3 Provider Support Matrix" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-handwritten.svg" alt="Handwritten: 12.3 Provider Support Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-diagram.svg" alt="Diagram: 12.3 Provider Support Matrix" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-diagram.svg" alt="Diagram: 12.3 Provider Support Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-sticky.svg" alt="Sticky Note: 12.3 Provider Support Matrix" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-3-provider-support-matrix-sticky.svg" alt="Sticky Note: 12.3 Provider Support Matrix" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ class GenerateConceptArt extends Command
 
 ### 12.4 Creating Agents
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-handwritten.svg" alt="Handwritten: 12.4 Creating Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-handwritten.svg" alt="Handwritten: 12.4 Creating Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-diagram.svg" alt="Diagram: 12.4 Creating Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-diagram.svg" alt="Diagram: 12.4 Creating Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-sticky.svg" alt="Sticky Note: 12.4 Creating Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-4-creating-agents-sticky.svg" alt="Sticky Note: 12.4 Creating Agents" width="30%">
 </a>
 
 
@@ -246,14 +246,14 @@ class SalesCoach implements Agent
 
 ### 12.5 Prompting Agents
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-handwritten.svg" alt="Handwritten: 12.5 Prompting Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-handwritten.svg" alt="Handwritten: 12.5 Prompting Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-diagram.svg" alt="Diagram: 12.5 Prompting Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-diagram.svg" alt="Diagram: 12.5 Prompting Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-sticky.svg" alt="Sticky Note: 12.5 Prompting Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-5-prompting-agents-sticky.svg" alt="Sticky Note: 12.5 Prompting Agents" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ class CoachingController extends Controller
 
 ### 12.6 Conversation Context
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-handwritten.svg" alt="Handwritten: 12.6 Conversation Context" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-handwritten.svg" alt="Handwritten: 12.6 Conversation Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-diagram.svg" alt="Diagram: 12.6 Conversation Context" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-diagram.svg" alt="Diagram: 12.6 Conversation Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-sticky.svg" alt="Sticky Note: 12.6 Conversation Context" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-6-conversation-context-sticky.svg" alt="Sticky Note: 12.6 Conversation Context" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ class User extends Authenticatable
 
 ### 12.7 Structured Output
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-handwritten.svg" alt="Handwritten: 12.7 Structured Output" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-handwritten.svg" alt="Handwritten: 12.7 Structured Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-diagram.svg" alt="Diagram: 12.7 Structured Output" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-diagram.svg" alt="Diagram: 12.7 Structured Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-sticky.svg" alt="Sticky Note: 12.7 Structured Output" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-7-structured-output-sticky.svg" alt="Sticky Note: 12.7 Structured Output" width="30%">
 </a>
 
 
@@ -532,14 +532,14 @@ class InvoiceController extends Controller
 
 ### 12.8 Streaming Responses
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-handwritten.svg" alt="Handwritten: 12.8 Streaming Responses" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-handwritten.svg" alt="Handwritten: 12.8 Streaming Responses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-diagram.svg" alt="Diagram: 12.8 Streaming Responses" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-diagram.svg" alt="Diagram: 12.8 Streaming Responses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-sticky.svg" alt="Sticky Note: 12.8 Streaming Responses" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-8-streaming-responses-sticky.svg" alt="Sticky Note: 12.8 Streaming Responses" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ class VercelChatController extends Controller
 
 ### 12.9 Broadcasting
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-handwritten.svg" alt="Handwritten: 12.9 Broadcasting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-handwritten.svg" alt="Handwritten: 12.9 Broadcasting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-diagram.svg" alt="Diagram: 12.9 Broadcasting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-diagram.svg" alt="Diagram: 12.9 Broadcasting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-sticky.svg" alt="Sticky Note: 12.9 Broadcasting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-9-broadcasting-sticky.svg" alt="Sticky Note: 12.9 Broadcasting" width="30%">
 </a>
 
 
@@ -746,14 +746,14 @@ class BroadcastChatController extends Controller
 
 ### 12.10 Queueing Agent Work
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-handwritten.svg" alt="Handwritten: 12.10 Queueing Agent Work" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-handwritten.svg" alt="Handwritten: 12.10 Queueing Agent Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-diagram.svg" alt="Diagram: 12.10 Queueing Agent Work" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-diagram.svg" alt="Diagram: 12.10 Queueing Agent Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-sticky.svg" alt="Sticky Note: 12.10 Queueing Agent Work" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-10-queueing-agent-work-sticky.svg" alt="Sticky Note: 12.10 Queueing Agent Work" width="30%">
 </a>
 
 
@@ -806,14 +806,14 @@ class QueueController extends Controller
 
 ### 12.11 Agent Attachments
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-handwritten.svg" alt="Handwritten: 12.11 Agent Attachments" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-handwritten.svg" alt="Handwritten: 12.11 Agent Attachments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-diagram.svg" alt="Diagram: 12.11 Agent Attachments" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-diagram.svg" alt="Diagram: 12.11 Agent Attachments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-sticky.svg" alt="Sticky Note: 12.11 Agent Attachments" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-11-agent-attachments-sticky.svg" alt="Sticky Note: 12.11 Agent Attachments" width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ class ImageAnalysisController extends Controller
 
 ### 12.12 Anonymous Agents
 
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-handwritten.svg" alt="Handwritten: 12.12 Anonymous Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-handwritten.svg" alt="Handwritten: 12.12 Anonymous Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-diagram.svg" alt="Diagram: 12.12 Anonymous Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-diagram.svg" alt="Diagram: 12.12 Anonymous Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-sticky.svg" alt="Sticky Note: 12.12 Anonymous Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/12-ai-sdk-agents/12-12-anonymous-agents-sticky.svg" alt="Sticky Note: 12.12 Anonymous Agents" width="30%">
 </a>
 
 

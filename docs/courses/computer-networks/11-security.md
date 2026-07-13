@@ -19,14 +19,14 @@ Network security encompasses the policies and mechanisms that protect the confid
 
 ### 11.1.1 Passive Attacks
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-handwritten.svg" alt="Handwritten: 11.1.1 Passive Attacks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-handwritten.svg" alt="Handwritten: 11.1.1 Passive Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-diagram.svg" alt="Diagram: 11.1.1 Passive Attacks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-diagram.svg" alt="Diagram: 11.1.1 Passive Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-sticky.svg" alt="Sticky Note: 11.1.1 Passive Attacks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-1-1-passive-attacks-sticky.svg" alt="Sticky Note: 11.1.1 Passive Attacks" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ std::vector<Packet> capturePackets(const std::string& iface, int count) {
 
 ### 11.1.2 Active Attacks
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-handwritten.svg" alt="Handwritten: 11.1.2 Active Attacks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-handwritten.svg" alt="Handwritten: 11.1.2 Active Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-diagram.svg" alt="Diagram: 11.1.2 Active Attacks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-diagram.svg" alt="Diagram: 11.1.2 Active Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-sticky.svg" alt="Sticky Note: 11.1.2 Active Attacks" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-1-2-active-attacks-sticky.svg" alt="Sticky Note: 11.1.2 Active Attacks" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ END
 
 ### 11.2.1 Symmetric Key Cryptography
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-handwritten.svg" alt="Handwritten: 11.2.1 Symmetric Key Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-handwritten.svg" alt="Handwritten: 11.2.1 Symmetric Key Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-diagram.svg" alt="Diagram: 11.2.1 Symmetric Key Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-diagram.svg" alt="Diagram: 11.2.1 Symmetric Key Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-sticky.svg" alt="Sticky Note: 11.2.1 Symmetric Key Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-1-symmetric-key-cryptography-sticky.svg" alt="Sticky Note: 11.2.1 Symmetric Key Cryptography" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ int main() {
 
 ### 11.2.2 Asymmetric Key Cryptography
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-handwritten.svg" alt="Handwritten: 11.2.2 Asymmetric Key Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-handwritten.svg" alt="Handwritten: 11.2.2 Asymmetric Key Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-diagram.svg" alt="Diagram: 11.2.2 Asymmetric Key Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-diagram.svg" alt="Diagram: 11.2.2 Asymmetric Key Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-sticky.svg" alt="Sticky Note: 11.2.2 Asymmetric Key Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-2-asymmetric-key-cryptography-sticky.svg" alt="Sticky Note: 11.2.2 Asymmetric Key Cryptography" width="30%">
 </a>
 
 
@@ -499,14 +499,14 @@ int main() {
 
 ### 11.2.3 Diffie-Hellman Key Exchange
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-handwritten.svg" alt="Handwritten: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-handwritten.svg" alt="Handwritten: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-diagram.svg" alt="Diagram: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-diagram.svg" alt="Diagram: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-sticky.svg" alt="Sticky Note: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-3-diffie-hellman-key-exchange-sticky.svg" alt="Sticky Note: 11.2.3 Diffie-Hellman Key Exchange" width="30%">
 </a>
 
 
@@ -536,14 +536,14 @@ DH is vulnerable to MITM unless public values are authenticated. Elliptic Curve 
 
 ### 11.2.4 Symmetric vs Asymmetric Cryptography
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-handwritten.svg" alt="Handwritten: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-handwritten.svg" alt="Handwritten: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-diagram.svg" alt="Diagram: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-diagram.svg" alt="Diagram: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-sticky.svg" alt="Sticky Note: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-2-4-symmetric-vs-asymmetric-cryptography-sticky.svg" alt="Sticky Note: 11.2.4 Symmetric vs Asymmetric Cryptography" width="30%">
 </a>
 
 
@@ -564,14 +564,14 @@ DH is vulnerable to MITM unless public values are authenticated. Elliptic Curve 
 
 ### 11.3.1 Cryptographic Hash Functions
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-handwritten.svg" alt="Handwritten: 11.3.1 Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-handwritten.svg" alt="Handwritten: 11.3.1 Cryptographic Hash Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-diagram.svg" alt="Diagram: 11.3.1 Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-diagram.svg" alt="Diagram: 11.3.1 Cryptographic Hash Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-sticky.svg" alt="Sticky Note: 11.3.1 Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-1-cryptographic-hash-functions-sticky.svg" alt="Sticky Note: 11.3.1 Cryptographic Hash Functions" width="30%">
 </a>
 
 
@@ -601,14 +601,14 @@ END
 
 ### 11.3.2 Message Authentication Code (MAC)
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-handwritten.svg" alt="Handwritten: 11.3.2 Message Authentication Code (MAC)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-handwritten.svg" alt="Handwritten: 11.3.2 Message Authentication Code (MAC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-diagram.svg" alt="Diagram: 11.3.2 Message Authentication Code (MAC)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-diagram.svg" alt="Diagram: 11.3.2 Message Authentication Code (MAC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-sticky.svg" alt="Sticky Note: 11.3.2 Message Authentication Code (MAC)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-2-message-authentication-code-mac-sticky.svg" alt="Sticky Note: 11.3.2 Message Authentication Code (MAC)" width="30%">
 </a>
 
 
@@ -624,14 +624,14 @@ HMAC (Hash-based MAC, RFC 2104): HMAC(K, M) = H((K XOR opad) || H((K XOR ipad) |
 
 ### 11.3.3 Digital Signatures
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-handwritten.svg" alt="Handwritten: 11.3.3 Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-handwritten.svg" alt="Handwritten: 11.3.3 Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-diagram.svg" alt="Diagram: 11.3.3 Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-diagram.svg" alt="Diagram: 11.3.3 Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-sticky.svg" alt="Sticky Note: 11.3.3 Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-3-digital-signatures-sticky.svg" alt="Sticky Note: 11.3.3 Digital Signatures" width="30%">
 </a>
 
 
@@ -649,14 +649,14 @@ RSA signatures work analogously to encryption but with the roles of public and p
 
 ### 11.3.4 Certificates and PKI
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-handwritten.svg" alt="Handwritten: 11.3.4 Certificates and PKI" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-handwritten.svg" alt="Handwritten: 11.3.4 Certificates and PKI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-diagram.svg" alt="Diagram: 11.3.4 Certificates and PKI" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-diagram.svg" alt="Diagram: 11.3.4 Certificates and PKI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-sticky.svg" alt="Sticky Note: 11.3.4 Certificates and PKI" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-3-4-certificates-and-pki-sticky.svg" alt="Sticky Note: 11.3.4 Certificates and PKI" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ A firewall is a system that controls network traffic based on a security policy.
 
 ### 11.4.1 Packet-Filter Firewalls
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-handwritten.svg" alt="Handwritten: 11.4.1 Packet-Filter Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-handwritten.svg" alt="Handwritten: 11.4.1 Packet-Filter Firewalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-diagram.svg" alt="Diagram: 11.4.1 Packet-Filter Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-diagram.svg" alt="Diagram: 11.4.1 Packet-Filter Firewalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-sticky.svg" alt="Sticky Note: 11.4.1 Packet-Filter Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-1-packet-filter-firewalls-sticky.svg" alt="Sticky Note: 11.4.1 Packet-Filter Firewalls" width="30%">
 </a>
 
 
@@ -877,14 +877,14 @@ for t in tests:
 
 ### 11.4.2 Stateful Firewalls
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-handwritten.svg" alt="Handwritten: 11.4.2 Stateful Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-handwritten.svg" alt="Handwritten: 11.4.2 Stateful Firewalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-diagram.svg" alt="Diagram: 11.4.2 Stateful Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-diagram.svg" alt="Diagram: 11.4.2 Stateful Firewalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-sticky.svg" alt="Sticky Note: 11.4.2 Stateful Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-2-stateful-firewalls-sticky.svg" alt="Sticky Note: 11.4.2 Stateful Firewalls" width="30%">
 </a>
 
 
@@ -901,14 +901,14 @@ Stateful firewalls track connection state. A connection table records (src IP, s
 
 ### 11.4.3 Application-Layer Firewalls (Proxies)
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-handwritten.svg" alt="Handwritten: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-handwritten.svg" alt="Handwritten: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-diagram.svg" alt="Diagram: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-diagram.svg" alt="Diagram: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-sticky.svg" alt="Sticky Note: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-3-application-layer-firewalls-proxies-sticky.svg" alt="Sticky Note: 11.4.3 Application-Layer Firewalls (Proxies)" width="30%">
 </a>
 
 
@@ -916,14 +916,14 @@ Application firewalls (proxies) inspect application-layer content. An HTTP proxy
 
 ### 11.4.4 Next-Generation Firewalls (NGFW)
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-handwritten.svg" alt="Handwritten: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-handwritten.svg" alt="Handwritten: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-diagram.svg" alt="Diagram: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-diagram.svg" alt="Diagram: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-sticky.svg" alt="Sticky Note: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-4-4-next-generation-firewalls-ngfw-sticky.svg" alt="Sticky Note: 11.4.4 Next-Generation Firewalls (NGFW)" width="30%">
 </a>
 
 
@@ -1037,14 +1037,14 @@ A Virtual Private Network (VPN) secures communication over an untrusted network 
 
 ### 11.5.1 IPSec
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-handwritten.svg" alt="Handwritten: 11.5.1 IPSec" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-handwritten.svg" alt="Handwritten: 11.5.1 IPSec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-diagram.svg" alt="Diagram: 11.5.1 IPSec" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-diagram.svg" alt="Diagram: 11.5.1 IPSec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-sticky.svg" alt="Sticky Note: 11.5.1 IPSec" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-1-ipsec-sticky.svg" alt="Sticky Note: 11.5.1 IPSec" width="30%">
 </a>
 
 
@@ -1196,14 +1196,14 @@ int main() {
 
 ### 11.5.2 SSL/TLS VPN
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-handwritten.svg" alt="Handwritten: 11.5.2 SSL/TLS VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-handwritten.svg" alt="Handwritten: 11.5.2 SSL/TLS VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-diagram.svg" alt="Diagram: 11.5.2 SSL/TLS VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-diagram.svg" alt="Diagram: 11.5.2 SSL/TLS VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-sticky.svg" alt="Sticky Note: 11.5.2 SSL/TLS VPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-2-ssl-tls-vpn-sticky.svg" alt="Sticky Note: 11.5.2 SSL/TLS VPN" width="30%">
 </a>
 
 
@@ -1371,14 +1371,14 @@ std::string tlsClient(const std::string& hostname, int port = 443) {
 
 ### 11.5.3 VPN Types Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-handwritten.svg" alt="Handwritten: 11.5.3 VPN Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-handwritten.svg" alt="Handwritten: 11.5.3 VPN Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-diagram.svg" alt="Diagram: 11.5.3 VPN Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-diagram.svg" alt="Diagram: 11.5.3 VPN Types Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-sticky.svg" alt="Sticky Note: 11.5.3 VPN Types Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-5-3-vpn-types-comparison-sticky.svg" alt="Sticky Note: 11.5.3 VPN Types Comparison" width="30%">
 </a>
 
 
@@ -1484,14 +1484,14 @@ Decapsulated: GET /index.html HTTP/1.1\r\nHost: example.com\r\n\r\n
 
 ### 11.6.1 TLS 1.3 vs 1.2 Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-handwritten.svg" alt="Handwritten: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-handwritten.svg" alt="Handwritten: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-diagram.svg" alt="Diagram: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-diagram.svg" alt="Diagram: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-sticky.svg" alt="Sticky Note: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/11-6-1-tls-1-3-vs-1-2-comparison-sticky.svg" alt="Sticky Note: 11.6.1 TLS 1.3 vs 1.2 Comparison" width="30%">
 </a>
 
 
@@ -1646,14 +1646,14 @@ Intrusion Detection Systems (IDS) monitor traffic for suspicious patterns. Intru
 
 ### Detection Methods:
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/detection-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/detection-methods-handwritten.svg" alt="Handwritten: Detection Methods:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/detection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/detection-methods-handwritten.svg" alt="Handwritten: Detection Methods:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/detection-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/detection-methods-diagram.svg" alt="Diagram: Detection Methods:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/detection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/detection-methods-diagram.svg" alt="Diagram: Detection Methods:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/detection-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/detection-methods-sticky.svg" alt="Sticky Note: Detection Methods:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/detection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/detection-methods-sticky.svg" alt="Sticky Note: Detection Methods:" width="30%">
 </a>
 
 - **Signature-based:** matches known attack patterns (Snort, Suricata). Fast, low false positives, but cannot detect zero-days.
@@ -1731,14 +1731,14 @@ public:
 
 ### IDS vs IPS vs Firewall Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-handwritten.svg" alt="Handwritten: IDS vs IPS vs Firewall Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-handwritten.svg" alt="Handwritten: IDS vs IPS vs Firewall Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-diagram.svg" alt="Diagram: IDS vs IPS vs Firewall Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-diagram.svg" alt="Diagram: IDS vs IPS vs Firewall Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-sticky.svg" alt="Sticky Note: IDS vs IPS vs Firewall Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ids-vs-ips-vs-firewall-comparison-sticky.svg" alt="Sticky Note: IDS vs IPS vs Firewall Comparison" width="30%">
 </a>
 
 
@@ -1760,14 +1760,14 @@ Distributed Denial of Service (DDoS) attacks overwhelm a target with traffic fro
 
 ### DDoS Attack Types with Mitigation
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-handwritten.svg" alt="Handwritten: DDoS Attack Types with Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-handwritten.svg" alt="Handwritten: DDoS Attack Types with Mitigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-diagram.svg" alt="Diagram: DDoS Attack Types with Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-diagram.svg" alt="Diagram: DDoS Attack Types with Mitigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-sticky.svg" alt="Sticky Note: DDoS Attack Types with Mitigation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ddos-attack-types-with-mitigation-sticky.svg" alt="Sticky Note: DDoS Attack Types with Mitigation" width="30%">
 </a>
 
 
@@ -1824,14 +1824,14 @@ WPA3 (Wi-Fi Protected Access 3) is the latest Wi-Fi security standard, replacing
 
 ### Key Features:
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/key-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/key-features-handwritten.svg" alt="Handwritten: Key Features:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/key-features-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/key-features-handwritten.svg" alt="Handwritten: Key Features:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/key-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/key-features-diagram.svg" alt="Diagram: Key Features:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/key-features-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/key-features-diagram.svg" alt="Diagram: Key Features:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/key-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/key-features-sticky.svg" alt="Sticky Note: Key Features:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/key-features-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/key-features-sticky.svg" alt="Sticky Note: Key Features:" width="30%">
 </a>
 
 - **Simultaneous Authentication of Equals (SAE):** Replaces WPA2's PSK 4-way handshake with a password-authenticated key exchange based on Diffie-Hellman. Resists offline dictionary attacks.
@@ -1842,14 +1842,14 @@ WPA3 (Wi-Fi Protected Access 3) is the latest Wi-Fi security standard, replacing
 
 ### WPA2 vs WPA3 Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-handwritten.svg" alt="Handwritten: WPA2 vs WPA3 Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-handwritten.svg" alt="Handwritten: WPA2 vs WPA3 Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-diagram.svg" alt="Diagram: WPA2 vs WPA3 Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-diagram.svg" alt="Diagram: WPA2 vs WPA3 Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-sticky.svg" alt="Sticky Note: WPA2 vs WPA3 Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/wpa2-vs-wpa3-comparison-sticky.svg" alt="Sticky Note: WPA2 vs WPA3 Comparison" width="30%">
 </a>
 
 
@@ -1870,14 +1870,14 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 
 ### How it works:
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/how-it-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/how-it-works-handwritten.svg" alt="Handwritten: How it works:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/how-it-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/how-it-works-handwritten.svg" alt="Handwritten: How it works:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/how-it-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/how-it-works-diagram.svg" alt="Diagram: How it works:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/how-it-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/how-it-works-diagram.svg" alt="Diagram: How it works:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/how-it-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/how-it-works-sticky.svg" alt="Sticky Note: How it works:" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/how-it-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/how-it-works-sticky.svg" alt="Sticky Note: How it works:" width="30%">
 </a>
 
 - Each DNS zone signs its resource record sets (RRsets) using the zone's private key (Zone Signing Key, ZSK).
@@ -1898,14 +1898,14 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 
 ### Q1: Explain the TLS handshake steps.
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-handwritten.svg" alt="Handwritten: Explain the TLS handshake steps." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-handwritten.svg" alt="Handwritten: Explain the TLS handshake steps." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-diagram.svg" alt="Diagram: Explain the TLS handshake steps." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-diagram.svg" alt="Diagram: Explain the TLS handshake steps." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-sticky.svg" alt="Sticky Note: Explain the TLS handshake steps." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/explain-the-tls-handshake-steps-sticky.svg" alt="Sticky Note: Explain the TLS handshake steps." width="30%">
 </a>
 
 **A.** The TLS 1.2 handshake has 4 phases: (1) ClientHello → client sends supported versions, cipher suites, random nonce. (2) ServerHello + Certificate + ServerKeyExchange → server selects cipher suite, sends certificate chain and DH params. (3) ClientKeyExchange + ChangeCipherSpec + Finished → client sends DH share, both derive session keys, client sends encrypted verification. (4) Server ChangeCipherSpec + Finished → server sends encrypted verification. Application data follows encrypted with symmetric keys.
@@ -1913,56 +1913,56 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 
 ### Q2: Where should a firewall be placed in a network?
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-handwritten.svg" alt="Handwritten: Where should a firewall be placed in a network?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-handwritten.svg" alt="Handwritten: Where should a firewall be placed in a network?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-diagram.svg" alt="Diagram: Where should a firewall be placed in a network?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-diagram.svg" alt="Diagram: Where should a firewall be placed in a network?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-sticky.svg" alt="Sticky Note: Where should a firewall be placed in a network?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/where-should-a-firewall-be-placed-in-a-network-sticky.svg" alt="Sticky Note: Where should a firewall be placed in a network?" width="30%">
 </a>
 
 **A.** Firewalls deploy at these chokepoints: (1) **Internet edge** → between WAN router and internal network (perimeter firewall). (2) **DMZ** → between internet and DMZ (external firewall) and between DMZ and internal network (internal firewall). (3) **Internal segments** → between different security zones (finance, HR, engineering). (4) **Data center edge** → at the data center aggregation layer. (5) **Cloud** → cloud firewalls (AWS Security Groups, Azure NSGs) at VPC/subnet boundaries.
 
 ### Q3: Compare VPN vs MPLS.
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-handwritten.svg" alt="Handwritten: Compare VPN vs MPLS." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-handwritten.svg" alt="Handwritten: Compare VPN vs MPLS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-diagram.svg" alt="Diagram: Compare VPN vs MPLS." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-diagram.svg" alt="Diagram: Compare VPN vs MPLS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-sticky.svg" alt="Sticky Note: Compare VPN vs MPLS." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/compare-vpn-vs-mpls-sticky.svg" alt="Sticky Note: Compare VPN vs MPLS." width="30%">
 </a>
 
 **A.** VPN (IPSec/SSL) encrypts traffic over an untrusted network (typically the internet). It is cheaper (no dedicated circuits) but performance depends on ISP and encryption overhead. MPLS is a private WAN technology with traffic engineering (QoS), SLAs, and no encryption by default. MPLS is more expensive, provides better performance guarantees, but requires dedicated circuits. Modern approach: use SD-WAN over VPN with MPLS as a backup.
 
 ### Q4: Explain 802.1X authentication flow.
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-handwritten.svg" alt="Handwritten: Explain 802.1X authentication flow." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-handwritten.svg" alt="Handwritten: Explain 802.1X authentication flow." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-diagram.svg" alt="Diagram: Explain 802.1X authentication flow." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-diagram.svg" alt="Diagram: Explain 802.1X authentication flow." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-sticky.svg" alt="Sticky Note: Explain 802.1X authentication flow." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/explain-802-1x-authentication-flow-sticky.svg" alt="Sticky Note: Explain 802.1X authentication flow." width="30%">
 </a>
 
 **A.** (1) Client (supplicant) connects to switch/AP (authenticator). Port is blocked. (2) Authenticator sends EAP-Request Identity. (3) Client responds with EAP-Response Identity, forwarded via RADIUS to authentication server. (4) EAP method exchange (e.g., EAP-TLS with certificates). (5) RADIUS sends Access-Accept or Access-Reject. (6) On accept, authenticator opens the port; client gets DHCP lease. On reject, port stays blocked.
 
 ### Q5: How does DNSSEC prevent cache poisoning?
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" alt="Handwritten: How does DNSSEC prevent cache poisoning?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" alt="Handwritten: How does DNSSEC prevent cache poisoning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" alt="Diagram: How does DNSSEC prevent cache poisoning?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" alt="Diagram: How does DNSSEC prevent cache poisoning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" alt="Sticky Note: How does DNSSEC prevent cache poisoning?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" alt="Sticky Note: How does DNSSEC prevent cache poisoning?" width="30%">
 </a>
 
 **A.** DNS cache poisoning (e.g., Kaminsky attack) injects fake DNS records into a resolver's cache. DNSSEC prevents this by requiring every DNS response to include a digital signature (RRSIG) that the resolver verifies against the zone's public key (DNSKEY). If the data has been tampered with, signature verification fails and the resolver discards the response.
@@ -1971,42 +1971,42 @@ DNSSEC (DNS Security Extensions, RFC 4033-4035) provides data origin authenticat
 
 ### OpenVPN
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/openvpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/openvpn-handwritten.svg" alt="Handwritten: OpenVPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/openvpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/openvpn-handwritten.svg" alt="Handwritten: OpenVPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/openvpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/openvpn-diagram.svg" alt="Diagram: OpenVPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/openvpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/openvpn-diagram.svg" alt="Diagram: OpenVPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/openvpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/openvpn-sticky.svg" alt="Sticky Note: OpenVPN" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/openvpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/openvpn-sticky.svg" alt="Sticky Note: OpenVPN" width="30%">
 </a>
 
 OpenVPN uses TLS for control channel authentication (certificate exchange) and IPSec-like ESP for the data channel. It typically uses UDP port 1194 with AES-256-GCM encryption. Operates in userspace via tun/tap interfaces. Supports TCP as a fallback. Works well across NAT due to single UDP port.
 
 ### IPsec (strongSwan, Libreswan, Windows built-in)
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-handwritten.svg" alt="Handwritten: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-handwritten.svg" alt="Handwritten: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-diagram.svg" alt="Diagram: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-diagram.svg" alt="Diagram: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-sticky.svg" alt="Sticky Note: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/ipsec-strongswan-libreswan-windows-built-in-sticky.svg" alt="Sticky Note: IPsec (strongSwan, Libreswan, Windows built-in)" width="30%">
 </a>
 
 IPsec is the standard for site-to-site VPN. Most implementations use IKEv2 with ECDHE key exchange, AES-256-GCM encryption, and certificate authentication. IPsec tunnel mode encapsulates entire IP packets, making it suitable for routing between entire networks (e.g., AWS VPC to on-premises data center via AWS VPN Gateway).
 
 ### Let's Encrypt
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-handwritten.svg" alt="Handwritten: Let's Encrypt" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-handwritten.svg" alt="Handwritten: Let's Encrypt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-diagram.svg" alt="Diagram: Let's Encrypt" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-diagram.svg" alt="Diagram: Let's Encrypt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-sticky.svg" alt="Sticky Note: Let's Encrypt" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/let-s-encrypt-sticky.svg" alt="Sticky Note: Let's Encrypt" width="30%">
 </a>
 
 Let's Encrypt is a free, automated, and open Certificate Authority using the ACME (Automated Certificate Management Environment) protocol. It validates domain control before issuing certificates. Certificates are valid for 90 days, encouraging automation. The ACME flow:
@@ -2017,14 +2017,14 @@ Let's Encrypt is a free, automated, and open Certificate Authority using the ACM
 
 ### Cloudflare DDoS Protection
 
-<a href="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-handwritten.svg" alt="Handwritten: Cloudflare DDoS Protection" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-handwritten.svg" alt="Handwritten: Cloudflare DDoS Protection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-diagram.svg" alt="Diagram: Cloudflare DDoS Protection" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-diagram.svg" alt="Diagram: Cloudflare DDoS Protection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-sticky.svg" alt="Sticky Note: Cloudflare DDoS Protection" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/11-security/cloudflare-ddos-protection-sticky.svg" alt="Sticky Note: Cloudflare DDoS Protection" width="30%">
 </a>
 
 Cloudflare operates one of the largest anycast networks. Their DDoS mitigation strategy includes:

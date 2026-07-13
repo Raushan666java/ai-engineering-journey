@@ -72,14 +72,14 @@ graph TD
 
 ### Environment Variables
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/environment-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/environment-variables-handwritten.svg" alt="Handwritten: Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/environment-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/environment-variables-handwritten.svg" alt="Handwritten: Environment Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/environment-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/environment-variables-diagram.svg" alt="Diagram: Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/environment-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/environment-variables-diagram.svg" alt="Diagram: Environment Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/environment-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/environment-variables-sticky.svg" alt="Sticky Note: Environment Variables" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/environment-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/environment-variables-sticky.svg" alt="Sticky Note: Environment Variables" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ vercel env add DATABASE_URL production
 
 ### `vercel.json`
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/vercel-json-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/vercel-json-handwritten.svg" alt="Handwritten: `vercel.json`" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/vercel-json-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/vercel-json-handwritten.svg" alt="Handwritten: `vercel.json`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/vercel-json-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/vercel-json-diagram.svg" alt="Diagram: `vercel.json`" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/vercel-json-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/vercel-json-diagram.svg" alt="Diagram: `vercel.json`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/vercel-json-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/vercel-json-sticky.svg" alt="Sticky Note: `vercel.json`" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/vercel-json-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/vercel-json-sticky.svg" alt="Sticky Note: `vercel.json`" width="30%">
 </a>
 
 
@@ -179,14 +179,14 @@ railway logs
 
 ### `railway.json`
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/railway-json-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/railway-json-handwritten.svg" alt="Handwritten: `railway.json`" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/railway-json-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/railway-json-handwritten.svg" alt="Handwritten: `railway.json`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/railway-json-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/railway-json-diagram.svg" alt="Diagram: `railway.json`" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/railway-json-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/railway-json-diagram.svg" alt="Diagram: `railway.json`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/railway-json-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/railway-json-sticky.svg" alt="Sticky Note: `railway.json`" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/railway-json-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/railway-json-sticky.svg" alt="Sticky Note: `railway.json`" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ app.use((req, res, next) => {
 
 ### Deployment Pipeline Architecture
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-handwritten.svg" alt="Handwritten: Deployment Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-handwritten.svg" alt="Handwritten: Deployment Pipeline Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-diagram.svg" alt="Diagram: Deployment Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-diagram.svg" alt="Diagram: Deployment Pipeline Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-sticky.svg" alt="Sticky Note: Deployment Pipeline Architecture" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/deployment-pipeline-architecture-sticky.svg" alt="Sticky Note: Deployment Pipeline Architecture" width="30%">
 </a>
 
 
@@ -443,14 +443,14 @@ graph LR
 
 ### Health Check Endpoint
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-handwritten.svg" alt="Handwritten: Health Check Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-handwritten.svg" alt="Handwritten: Health Check Endpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-diagram.svg" alt="Diagram: Health Check Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-diagram.svg" alt="Diagram: Health Check Endpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-sticky.svg" alt="Sticky Note: Health Check Endpoint" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/health-check-endpoint-sticky.svg" alt="Sticky Note: Health Check Endpoint" width="30%">
 </a>
 
 
@@ -826,14 +826,14 @@ Deployment transforms development code into production services. Modern platform
 
 ### Rollback Strategies
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-handwritten.svg" alt="Handwritten: Rollback Strategies" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-handwritten.svg" alt="Handwritten: Rollback Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-diagram.svg" alt="Diagram: Rollback Strategies" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-diagram.svg" alt="Diagram: Rollback Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-sticky.svg" alt="Sticky Note: Rollback Strategies" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/rollback-strategies-sticky.svg" alt="Sticky Note: Rollback Strategies" width="30%">
 </a>
 
 
@@ -869,14 +869,14 @@ async function getPricingPage() {
 
 ### Feature Flags with LaunchDarkly Pattern
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-handwritten.svg" alt="Handwritten: Feature Flags with LaunchDarkly Pattern" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-handwritten.svg" alt="Handwritten: Feature Flags with LaunchDarkly Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-diagram.svg" alt="Diagram: Feature Flags with LaunchDarkly Pattern" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-diagram.svg" alt="Diagram: Feature Flags with LaunchDarkly Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-sticky.svg" alt="Sticky Note: Feature Flags with LaunchDarkly Pattern" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/feature-flags-with-launchdarkly-pattern-sticky.svg" alt="Sticky Note: Feature Flags with LaunchDarkly Pattern" width="30%">
 </a>
 
 
@@ -912,14 +912,14 @@ router.get("/checkout", async (req, res) => {
 
 ### Canary Deployment
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/canary-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/canary-deployment-handwritten.svg" alt="Handwritten: Canary Deployment" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/canary-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/canary-deployment-handwritten.svg" alt="Handwritten: Canary Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/canary-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/canary-deployment-diagram.svg" alt="Diagram: Canary Deployment" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/canary-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/canary-deployment-diagram.svg" alt="Diagram: Canary Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/canary-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/canary-deployment-sticky.svg" alt="Sticky Note: Canary Deployment" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/canary-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/canary-deployment-sticky.svg" alt="Sticky Note: Canary Deployment" width="30%">
 </a>
 
 
@@ -954,14 +954,14 @@ services:
 
 ### Application Projects
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
 </a>
 
 
@@ -976,14 +976,14 @@ services:
 
 ### Challenge Project
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
 </a>
 
 
@@ -991,14 +991,14 @@ Deploy a full-stack application (Next.js frontend + Express API + PostgreSQL) us
 
 ### Practical Takeaways
 
-<a href="../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/12-deployment/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
 </a>
 
 

@@ -50,14 +50,14 @@ n-Tier: [Browser] ←→ [Load Balancer] ←→ [Web Server] ←→ [App Server]
 
 ### CSS Selector Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-handwritten.svg" alt="Handwritten: CSS Selector Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-handwritten.svg" alt="Handwritten: CSS Selector Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-diagram.svg" alt="Diagram: CSS Selector Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-diagram.svg" alt="Diagram: CSS Selector Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-sticky.svg" alt="Sticky Note: CSS Selector Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-selector-types-sticky.svg" alt="Sticky Note: CSS Selector Types" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ n-Tier: [Browser] ←→ [Load Balancer] ←→ [Web Server] ←→ [App Server]
 
 ### Specificity Calculation
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-handwritten.svg" alt="Handwritten: Specificity Calculation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-handwritten.svg" alt="Handwritten: Specificity Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-diagram.svg" alt="Diagram: Specificity Calculation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-diagram.svg" alt="Diagram: Specificity Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-sticky.svg" alt="Sticky Note: Specificity Calculation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/specificity-calculation-sticky.svg" alt="Sticky Note: Specificity Calculation" width="30%">
 </a>
 
 
@@ -105,14 +105,14 @@ div p → (0, 0, 2) → specificity = 0-0-2
 
 ### DOM Traversal &amp; Manipulation
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-handwritten.svg" alt="Handwritten: DOM Traversal &amp; Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-handwritten.svg" alt="Handwritten: DOM Traversal &amp; Manipulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-diagram.svg" alt="Diagram: DOM Traversal &amp; Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-diagram.svg" alt="Diagram: DOM Traversal &amp; Manipulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-sticky.svg" alt="Sticky Note: DOM Traversal &amp; Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-traversal-amp-manipulation-sticky.svg" alt="Sticky Note: DOM Traversal &amp; Manipulation" width="30%">
 </a>
 
 ```javascript
@@ -140,14 +140,14 @@ element.classList.toggle('visible');
 
 ### Event Handling
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-handwritten.svg" alt="Handwritten: Event Handling" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-handwritten.svg" alt="Handwritten: Event Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-diagram.svg" alt="Diagram: Event Handling" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-diagram.svg" alt="Diagram: Event Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-sticky.svg" alt="Sticky Note: Event Handling" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-handling-sticky.svg" alt="Sticky Note: Event Handling" width="30%">
 </a>
 
 ```javascript
@@ -171,14 +171,14 @@ document.querySelector('ul').addEventListener('click', function(e) {
 
 ### Event Phases
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-handwritten.svg" alt="Handwritten: Event Phases" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-handwritten.svg" alt="Handwritten: Event Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-diagram.svg" alt="Diagram: Event Phases" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-diagram.svg" alt="Diagram: Event Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-sticky.svg" alt="Sticky Note: Event Phases" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/event-phases-sticky.svg" alt="Sticky Note: Event Phases" width="30%">
 </a>
 
 1. **Capturing phase:** Window → Document → ... → Target
@@ -263,14 +263,14 @@ document.querySelector('ul').addEventListener('click', function(e) {
 
 ### Cookie Attributes
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-handwritten.svg" alt="Handwritten: Cookie Attributes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-handwritten.svg" alt="Handwritten: Cookie Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-diagram.svg" alt="Diagram: Cookie Attributes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-diagram.svg" alt="Diagram: Cookie Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-sticky.svg" alt="Sticky Note: Cookie Attributes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cookie-attributes-sticky.svg" alt="Sticky Note: Cookie Attributes" width="30%">
 </a>
 
 ```
@@ -296,14 +296,14 @@ Set-Cookie: sessionId=abc123; Expires=Wed, 21 Oct 2026 07:28:00 GMT;
 
 ### REST API Design Example
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-handwritten.svg" alt="Handwritten: REST API Design Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-handwritten.svg" alt="Handwritten: REST API Design Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-diagram.svg" alt="Diagram: REST API Design Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-diagram.svg" alt="Diagram: REST API Design Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-sticky.svg" alt="Sticky Note: REST API Design Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-api-design-example-sticky.svg" alt="Sticky Note: REST API Design Example" width="30%">
 </a>
 
 ```
@@ -318,14 +318,14 @@ GET    /users/{id}/orders  → Get user's orders
 
 ### REST vs SOAP
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-handwritten.svg" alt="Handwritten: REST vs SOAP" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-handwritten.svg" alt="Handwritten: REST vs SOAP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-diagram.svg" alt="Diagram: REST vs SOAP" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-diagram.svg" alt="Diagram: REST vs SOAP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-sticky.svg" alt="Sticky Note: REST vs SOAP" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/rest-vs-soap-sticky.svg" alt="Sticky Note: REST vs SOAP" width="30%">
 </a>
 
 | Aspect | REST | SOAP |
@@ -371,14 +371,14 @@ Compositing — layers assembled for display
 
 ### Critical Rendering Path Optimizations
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-handwritten.svg" alt="Handwritten: Critical Rendering Path Optimizations" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-handwritten.svg" alt="Handwritten: Critical Rendering Path Optimizations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-diagram.svg" alt="Diagram: Critical Rendering Path Optimizations" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-diagram.svg" alt="Diagram: Critical Rendering Path Optimizations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-sticky.svg" alt="Sticky Note: Critical Rendering Path Optimizations" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-optimizations-sticky.svg" alt="Sticky Note: Critical Rendering Path Optimizations" width="30%">
 </a>
 
 1. **Minimize critical resources:** Inline CSS, defer JS
@@ -447,14 +447,14 @@ Actually I'll simplify the MCQ.
 
 ### Traditional AJAX (XMLHttpRequest)
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-handwritten.svg" alt="Handwritten: Traditional AJAX (XMLHttpRequest)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-handwritten.svg" alt="Handwritten: Traditional AJAX (XMLHttpRequest)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-diagram.svg" alt="Diagram: Traditional AJAX (XMLHttpRequest)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-diagram.svg" alt="Diagram: Traditional AJAX (XMLHttpRequest)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-sticky.svg" alt="Sticky Note: Traditional AJAX (XMLHttpRequest)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/traditional-ajax-xmlhttprequest-sticky.svg" alt="Sticky Note: Traditional AJAX (XMLHttpRequest)" width="30%">
 </a>
 
 ```javascript
@@ -470,14 +470,14 @@ xhr.send();
 
 ### Modern Fetch API
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-handwritten.svg" alt="Handwritten: Modern Fetch API" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-handwritten.svg" alt="Handwritten: Modern Fetch API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-diagram.svg" alt="Diagram: Modern Fetch API" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-diagram.svg" alt="Diagram: Modern Fetch API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-sticky.svg" alt="Sticky Note: Modern Fetch API" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/modern-fetch-api-sticky.svg" alt="Sticky Note: Modern Fetch API" width="30%">
 </a>
 
 ```javascript
@@ -496,14 +496,14 @@ fetch('/api/users', {
 
 ### Async/Await
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-handwritten.svg" alt="Handwritten: Async/Await" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-handwritten.svg" alt="Handwritten: Async/Await" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-diagram.svg" alt="Diagram: Async/Await" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-diagram.svg" alt="Diagram: Async/Await" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-sticky.svg" alt="Sticky Note: Async/Await" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/async-await-sticky.svg" alt="Sticky Note: Async/Await" width="30%">
 </a>
 
 ```javascript
@@ -520,14 +520,14 @@ async function getUsers() {
 
 ### readyState Values
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-handwritten.svg" alt="Handwritten: readyState Values" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-handwritten.svg" alt="Handwritten: readyState Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-diagram.svg" alt="Diagram: readyState Values" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-diagram.svg" alt="Diagram: readyState Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-sticky.svg" alt="Sticky Note: readyState Values" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/readystate-values-sticky.svg" alt="Sticky Note: readyState Values" width="30%">
 </a>
 
 | Value | State | Description |
@@ -542,14 +542,14 @@ async function getUsers() {
 
 ### Flexbox (1D layout — row or column)
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-handwritten.svg" alt="Handwritten: Flexbox (1D layout — row or column)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-handwritten.svg" alt="Handwritten: Flexbox (1D layout — row or column)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-diagram.svg" alt="Diagram: Flexbox (1D layout — row or column)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-diagram.svg" alt="Diagram: Flexbox (1D layout — row or column)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-sticky.svg" alt="Sticky Note: Flexbox (1D layout — row or column)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-1d-layout-row-or-column-sticky.svg" alt="Sticky Note: Flexbox (1D layout — row or column)" width="30%">
 </a>
 
 ```css
@@ -568,14 +568,14 @@ async function getUsers() {
 
 ### CSS Grid (2D layout — rows and columns)
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-handwritten.svg" alt="Handwritten: CSS Grid (2D layout — rows and columns)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-handwritten.svg" alt="Handwritten: CSS Grid (2D layout — rows and columns)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-diagram.svg" alt="Diagram: CSS Grid (2D layout — rows and columns)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-diagram.svg" alt="Diagram: CSS Grid (2D layout — rows and columns)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-sticky.svg" alt="Sticky Note: CSS Grid (2D layout — rows and columns)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/css-grid-2d-layout-rows-and-columns-sticky.svg" alt="Sticky Note: CSS Grid (2D layout — rows and columns)" width="30%">
 </a>
 
 ```css
@@ -593,14 +593,14 @@ async function getUsers() {
 
 ### Flexbox vs Grid
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-handwritten.svg" alt="Handwritten: Flexbox vs Grid" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-handwritten.svg" alt="Handwritten: Flexbox vs Grid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-diagram.svg" alt="Diagram: Flexbox vs Grid" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-diagram.svg" alt="Diagram: Flexbox vs Grid" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-sticky.svg" alt="Sticky Note: Flexbox vs Grid" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/flexbox-vs-grid-sticky.svg" alt="Sticky Note: Flexbox vs Grid" width="30%">
 </a>
 
 | Aspect | Flexbox | Grid |
@@ -614,14 +614,14 @@ async function getUsers() {
 
 ### Media Queries
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-handwritten.svg" alt="Handwritten: Media Queries" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-handwritten.svg" alt="Handwritten: Media Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-diagram.svg" alt="Diagram: Media Queries" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-diagram.svg" alt="Diagram: Media Queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-sticky.svg" alt="Sticky Note: Media Queries" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/media-queries-sticky.svg" alt="Sticky Note: Media Queries" width="30%">
 </a>
 
 ```css
@@ -643,14 +643,14 @@ body { font-size: 16px; }
 
 ### Responsive Design Principles
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-handwritten.svg" alt="Handwritten: Responsive Design Principles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-handwritten.svg" alt="Handwritten: Responsive Design Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-diagram.svg" alt="Diagram: Responsive Design Principles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-diagram.svg" alt="Diagram: Responsive Design Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-sticky.svg" alt="Sticky Note: Responsive Design Principles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/responsive-design-principles-sticky.svg" alt="Sticky Note: Responsive Design Principles" width="30%">
 </a>
 
 1. **Fluid grids:** Use relative units (%, em, rem, vw, vh) instead of fixed px
@@ -660,14 +660,14 @@ body { font-size: 16px; }
 
 ### Common Breakpoints
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-handwritten.svg" alt="Handwritten: Common Breakpoints" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-handwritten.svg" alt="Handwritten: Common Breakpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-diagram.svg" alt="Diagram: Common Breakpoints" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-diagram.svg" alt="Diagram: Common Breakpoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-sticky.svg" alt="Sticky Note: Common Breakpoints" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/common-breakpoints-sticky.svg" alt="Sticky Note: Common Breakpoints" width="30%">
 </a>
 
 | Device | Width |
@@ -681,28 +681,28 @@ body { font-size: 16px; }
 
 ### Same-Origin Policy
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-handwritten.svg" alt="Handwritten: Same-Origin Policy" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-handwritten.svg" alt="Handwritten: Same-Origin Policy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-diagram.svg" alt="Diagram: Same-Origin Policy" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-diagram.svg" alt="Diagram: Same-Origin Policy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-sticky.svg" alt="Sticky Note: Same-Origin Policy" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/same-origin-policy-sticky.svg" alt="Sticky Note: Same-Origin Policy" width="30%">
 </a>
 
 Browser blocks cross-origin requests (different protocol, domain, or port) by default.
 
 ### CORS Headers
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-handwritten.svg" alt="Handwritten: CORS Headers" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-handwritten.svg" alt="Handwritten: CORS Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-diagram.svg" alt="Diagram: CORS Headers" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-diagram.svg" alt="Diagram: CORS Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-sticky.svg" alt="Sticky Note: CORS Headers" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-headers-sticky.svg" alt="Sticky Note: CORS Headers" width="30%">
 </a>
 
 ```
@@ -714,14 +714,14 @@ Access-Control-Allow-Credentials: true
 
 ### Request Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-handwritten.svg" alt="Handwritten: Request Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-handwritten.svg" alt="Handwritten: Request Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-diagram.svg" alt="Diagram: Request Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-diagram.svg" alt="Diagram: Request Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-sticky.svg" alt="Sticky Note: Request Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/request-types-sticky.svg" alt="Sticky Note: Request Types" width="30%">
 </a>
 
 | Type | Conditions | Behavior |
@@ -733,14 +733,14 @@ Access-Control-Allow-Credentials: true
 
 ### Critical Rendering Path Metrics
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-handwritten.svg" alt="Handwritten: Critical Rendering Path Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-handwritten.svg" alt="Handwritten: Critical Rendering Path Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-diagram.svg" alt="Diagram: Critical Rendering Path Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-diagram.svg" alt="Diagram: Critical Rendering Path Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-sticky.svg" alt="Sticky Note: Critical Rendering Path Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/critical-rendering-path-metrics-sticky.svg" alt="Sticky Note: Critical Rendering Path Metrics" width="30%">
 </a>
 
 | Metric | Target | Description |
@@ -753,14 +753,14 @@ Access-Control-Allow-Credentials: true
 
 ### Optimization Techniques
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-handwritten.svg" alt="Handwritten: Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-handwritten.svg" alt="Handwritten: Optimization Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-diagram.svg" alt="Diagram: Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-diagram.svg" alt="Diagram: Optimization Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-sticky.svg" alt="Sticky Note: Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/optimization-techniques-sticky.svg" alt="Sticky Note: Optimization Techniques" width="30%">
 </a>
 
 1. **Minify** CSS/JS/HTML (remove whitespace, comments)
@@ -780,14 +780,14 @@ Access-Control-Allow-Credentials: true
 
 ### HTTP Server Simulation — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-handwritten.svg" alt="Handwritten: HTTP Server Simulation — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-handwritten.svg" alt="Handwritten: HTTP Server Simulation — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-diagram.svg" alt="Diagram: HTTP Server Simulation — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-diagram.svg" alt="Diagram: HTTP Server Simulation — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-sticky.svg" alt="Sticky Note: HTTP Server Simulation — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-server-simulation-typescript-sticky.svg" alt="Sticky Note: HTTP Server Simulation — TypeScript" width="30%">
 </a>
 
 
@@ -875,14 +875,14 @@ server.route('POST', '/api/users', (req) => ({
 
 ### DOM Tree Builder — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-handwritten.svg" alt="Handwritten: DOM Tree Builder — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-handwritten.svg" alt="Handwritten: DOM Tree Builder — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-diagram.svg" alt="Diagram: DOM Tree Builder — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-diagram.svg" alt="Diagram: DOM Tree Builder — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-sticky.svg" alt="Sticky Note: DOM Tree Builder — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/dom-tree-builder-typescript-sticky.svg" alt="Sticky Note: DOM Tree Builder — TypeScript" width="30%">
 </a>
 
 
@@ -951,14 +951,14 @@ class DOMParser {
 
 ### JSON/XML Parser — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-handwritten.svg" alt="Handwritten: JSON/XML Parser — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-handwritten.svg" alt="Handwritten: JSON/XML Parser — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-diagram.svg" alt="Diagram: JSON/XML Parser — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-diagram.svg" alt="Diagram: JSON/XML Parser — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-sticky.svg" alt="Sticky Note: JSON/XML Parser — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/json-xml-parser-typescript-sticky.svg" alt="Sticky Note: JSON/XML Parser — TypeScript" width="30%">
 </a>
 
 
@@ -999,14 +999,14 @@ class XMLSimpleParser {
 
 ### HTTP Methods and Status Codes — Comprehensive Reference
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-handwritten.svg" alt="Handwritten: HTTP Methods and Status Codes — Comprehensive Reference" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-handwritten.svg" alt="Handwritten: HTTP Methods and Status Codes — Comprehensive Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-diagram.svg" alt="Diagram: HTTP Methods and Status Codes — Comprehensive Reference" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-diagram.svg" alt="Diagram: HTTP Methods and Status Codes — Comprehensive Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-sticky.svg" alt="Sticky Note: HTTP Methods and Status Codes — Comprehensive Reference" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/http-methods-and-status-codes-comprehensive-reference-sticky.svg" alt="Sticky Note: HTTP Methods and Status Codes — Comprehensive Reference" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ sequenceDiagram
 
 ### Browser Rendering Pipeline — In-Depth
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-handwritten.svg" alt="Handwritten: Browser Rendering Pipeline — In-Depth" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-handwritten.svg" alt="Handwritten: Browser Rendering Pipeline — In-Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-diagram.svg" alt="Diagram: Browser Rendering Pipeline — In-Depth" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-diagram.svg" alt="Diagram: Browser Rendering Pipeline — In-Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-sticky.svg" alt="Sticky Note: Browser Rendering Pipeline — In-Depth" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/browser-rendering-pipeline-in-depth-sticky.svg" alt="Sticky Note: Browser Rendering Pipeline — In-Depth" width="30%">
 </a>
 
 
@@ -1093,14 +1093,14 @@ class RenderPipelineSimulator {
 
 ### CORS — Complete TypeScript Handler
 
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-handwritten.svg" alt="Handwritten: CORS — Complete TypeScript Handler" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-handwritten.svg" alt="Handwritten: CORS — Complete TypeScript Handler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-diagram.svg" alt="Diagram: CORS — Complete TypeScript Handler" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-diagram.svg" alt="Diagram: CORS — Complete TypeScript Handler" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-sticky.svg" alt="Sticky Note: CORS — Complete TypeScript Handler" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/07-web-technologies/cors-complete-typescript-handler-sticky.svg" alt="Sticky Note: CORS — Complete TypeScript Handler" width="30%">
 </a>
 
 

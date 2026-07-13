@@ -19,14 +19,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ flowchart LR
 
 ### Real-World Analogy: Office Mailroom
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-handwritten.svg" alt="Handwritten: Real-World Analogy: Office Mailroom" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-handwritten.svg" alt="Handwritten: Real-World Analogy: Office Mailroom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-diagram.svg" alt="Diagram: Real-World Analogy: Office Mailroom" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-diagram.svg" alt="Diagram: Real-World Analogy: Office Mailroom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-sticky.svg" alt="Sticky Note: Real-World Analogy: Office Mailroom" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-office-mailroom-sticky.svg" alt="Sticky Note: Real-World Analogy: Office Mailroom" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ Imagine an **office mailroom**. You have:
 
 ### Numbered Steps for File I/O
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-handwritten.svg" alt="Handwritten: Numbered Steps for File I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-handwritten.svg" alt="Handwritten: Numbered Steps for File I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-diagram.svg" alt="Diagram: Numbered Steps for File I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-diagram.svg" alt="Diagram: Numbered Steps for File I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-sticky.svg" alt="Sticky Note: Numbered Steps for File I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-file-i-o-sticky.svg" alt="Sticky Note: Numbered Steps for File I/O" width="30%">
 </a>
 
 
@@ -105,14 +105,14 @@ Imagine an **office mailroom**. You have:
 
 ### Key Functions Reference
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" alt="Handwritten: Key Functions Reference" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" alt="Handwritten: Key Functions Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" alt="Diagram: Key Functions Reference" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" alt="Diagram: Key Functions Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" alt="Sticky Note: Key Functions Reference" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" alt="Sticky Note: Key Functions Reference" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ Imagine an **office mailroom**. You have:
 
 ### Code: snprintf, sscanf, and File Copy
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-handwritten.svg" alt="Handwritten: Code: snprintf, sscanf, and File Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-handwritten.svg" alt="Handwritten: Code: snprintf, sscanf, and File Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-diagram.svg" alt="Diagram: Code: snprintf, sscanf, and File Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-diagram.svg" alt="Diagram: Code: snprintf, sscanf, and File Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-sticky.svg" alt="Sticky Note: Code: snprintf, sscanf, and File Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-snprintf-sscanf-and-file-copy-sticky.svg" alt="Sticky Note: Code: snprintf, sscanf, and File Copy" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ Parsed 3 items: 101 Alice 3.85
 
 ### Dry Run: fread/fwrite Copy Loop
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-handwritten.svg" alt="Handwritten: Dry Run: fread/fwrite Copy Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-handwritten.svg" alt="Handwritten: Dry Run: fread/fwrite Copy Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-diagram.svg" alt="Diagram: Dry Run: fread/fwrite Copy Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-diagram.svg" alt="Diagram: Dry Run: fread/fwrite Copy Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-sticky.svg" alt="Sticky Note: Dry Run: fread/fwrite Copy Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-fread-fwrite-copy-loop-sticky.svg" alt="Sticky Note: Dry Run: fread/fwrite Copy Loop" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ Assume `input.txt` contains exactly 5000 bytes.
 
 ### Pseudocode for snprintf Safety
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-handwritten.svg" alt="Handwritten: Pseudocode for snprintf Safety" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-handwritten.svg" alt="Handwritten: Pseudocode for snprintf Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-diagram.svg" alt="Diagram: Pseudocode for snprintf Safety" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-diagram.svg" alt="Diagram: Pseudocode for snprintf Safety" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-sticky.svg" alt="Sticky Note: Pseudocode for snprintf Safety" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-snprintf-safety-sticky.svg" alt="Sticky Note: Pseudocode for snprintf Safety" width="30%">
 </a>
 
 
@@ -241,14 +241,14 @@ END FUNCTION
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ END FUNCTION
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ END FUNCTION
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ END FUNCTION
 
 ### errno with stdio
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-handwritten.svg" alt="Handwritten: errno with stdio" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-handwritten.svg" alt="Handwritten: errno with stdio" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-diagram.svg" alt="Diagram: errno with stdio" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-diagram.svg" alt="Diagram: errno with stdio" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-sticky.svg" alt="Sticky Note: errno with stdio" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/errno-with-stdio-sticky.svg" alt="Sticky Note: errno with stdio" width="30%">
 </a>
 
 
@@ -336,14 +336,14 @@ int main(void)
 
 ### Real-World Analogy: Hardware Store
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-handwritten.svg" alt="Handwritten: Real-World Analogy: Hardware Store" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-handwritten.svg" alt="Handwritten: Real-World Analogy: Hardware Store" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-diagram.svg" alt="Diagram: Real-World Analogy: Hardware Store" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-diagram.svg" alt="Diagram: Real-World Analogy: Hardware Store" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-sticky.svg" alt="Sticky Note: Real-World Analogy: Hardware Store" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-hardware-store-sticky.svg" alt="Sticky Note: Real-World Analogy: Hardware Store" width="30%">
 </a>
 
 
@@ -356,14 +356,14 @@ int main(void)
 
 ### Numbered Steps for Safe String-to-Integer Conversion
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-handwritten.svg" alt="Handwritten: Numbered Steps for Safe String-to-Integer Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-handwritten.svg" alt="Handwritten: Numbered Steps for Safe String-to-Integer Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-diagram.svg" alt="Diagram: Numbered Steps for Safe String-to-Integer Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-diagram.svg" alt="Diagram: Numbered Steps for Safe String-to-Integer Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-sticky.svg" alt="Sticky Note: Numbered Steps for Safe String-to-Integer Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-to-integer-conversion-sticky.svg" alt="Sticky Note: Numbered Steps for Safe String-to-Integer Conversion" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ int main(void)
 
 ### 17.2.1 Memory Allocation
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-handwritten.svg" alt="Handwritten: 17.2.1 Memory Allocation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-handwritten.svg" alt="Handwritten: 17.2.1 Memory Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-diagram.svg" alt="Diagram: 17.2.1 Memory Allocation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-diagram.svg" alt="Diagram: 17.2.1 Memory Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-sticky.svg" alt="Sticky Note: 17.2.1 Memory Allocation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-1-memory-allocation-sticky.svg" alt="Sticky Note: 17.2.1 Memory Allocation" width="30%">
 </a>
 
 
@@ -399,14 +399,14 @@ void free(void *ptr);
 
 ### 17.2.2 Numeric Conversion
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-handwritten.svg" alt="Handwritten: 17.2.2 Numeric Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-handwritten.svg" alt="Handwritten: 17.2.2 Numeric Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-diagram.svg" alt="Diagram: 17.2.2 Numeric Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-diagram.svg" alt="Diagram: 17.2.2 Numeric Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-sticky.svg" alt="Sticky Note: 17.2.2 Numeric Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-2-numeric-conversion-sticky.svg" alt="Sticky Note: 17.2.2 Numeric Conversion" width="30%">
 </a>
 
 
@@ -468,14 +468,14 @@ strtod: 3.14159
 
 ### Dry Run: strtol Parsing "42abc"
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-handwritten.svg" alt="Handwritten: Dry Run: strtol Parsing "42abc"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-handwritten.svg" alt="Handwritten: Dry Run: strtol Parsing "42abc"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-diagram.svg" alt="Diagram: Dry Run: strtol Parsing "42abc"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-diagram.svg" alt="Diagram: Dry Run: strtol Parsing "42abc"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-sticky.svg" alt="Sticky Note: Dry Run: strtol Parsing "42abc"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strtol-parsing-42abc-sticky.svg" alt="Sticky Note: Dry Run: strtol Parsing "42abc"" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ strtod: 3.14159
 
 ### Comparison: atoi vs strtol vs sscanf
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" alt="Handwritten: Comparison: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" alt="Handwritten: Comparison: atoi vs strtol vs sscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" alt="Diagram: Comparison: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" alt="Diagram: Comparison: atoi vs strtol vs sscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" alt="Sticky Note: Comparison: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" alt="Sticky Note: Comparison: atoi vs strtol vs sscanf" width="30%">
 </a>
 
 
@@ -515,14 +515,14 @@ strtod: 3.14159
 
 ### Complexity Analysis — Numeric Conversion
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-handwritten.svg" alt="Handwritten: Complexity Analysis — Numeric Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-handwritten.svg" alt="Handwritten: Complexity Analysis — Numeric Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-diagram.svg" alt="Diagram: Complexity Analysis — Numeric Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-diagram.svg" alt="Diagram: Complexity Analysis — Numeric Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-sticky.svg" alt="Sticky Note: Complexity Analysis — Numeric Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-numeric-conversion-sticky.svg" alt="Sticky Note: Complexity Analysis — Numeric Conversion" width="30%">
 </a>
 
 
@@ -535,14 +535,14 @@ strtod: 3.14159
 
 ### 17.2.3 Pseudo-Random Numbers
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-handwritten.svg" alt="Handwritten: 17.2.3 Pseudo-Random Numbers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-handwritten.svg" alt="Handwritten: 17.2.3 Pseudo-Random Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-diagram.svg" alt="Diagram: 17.2.3 Pseudo-Random Numbers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-diagram.svg" alt="Diagram: 17.2.3 Pseudo-Random Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-sticky.svg" alt="Sticky Note: 17.2.3 Pseudo-Random Numbers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-3-pseudo-random-numbers-sticky.svg" alt="Sticky Note: 17.2.3 Pseudo-Random Numbers" width="30%">
 </a>
 
 
@@ -592,14 +592,14 @@ int fair_rand(int n) {
 
 ### 17.2.4 Sorting and Searching
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-handwritten.svg" alt="Handwritten: 17.2.4 Sorting and Searching" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-handwritten.svg" alt="Handwritten: 17.2.4 Sorting and Searching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-diagram.svg" alt="Diagram: 17.2.4 Sorting and Searching" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-diagram.svg" alt="Diagram: 17.2.4 Sorting and Searching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-sticky.svg" alt="Sticky Note: 17.2.4 Sorting and Searching" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-4-sorting-and-searching-sticky.svg" alt="Sticky Note: 17.2.4 Sorting and Searching" width="30%">
 </a>
 
 
@@ -649,14 +649,14 @@ Found 15 at index 4
 
 ### Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-handwritten.svg" alt="Handwritten: Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-handwritten.svg" alt="Handwritten: Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-diagram.svg" alt="Diagram: Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-diagram.svg" alt="Diagram: Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-sticky.svg" alt="Sticky Note: Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-qsort-on-42-7-15-8-23-3-11-sticky.svg" alt="Sticky Note: Dry Run: qsort on [42, 7, 15, 8, 23, 3, 11]" width="30%">
 </a>
 
 
@@ -671,14 +671,14 @@ Using `compare_int` (ascending). The exact steps depend on the implementation (u
 
 ### Complexity Analysis — qsort and bsearch
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-handwritten.svg" alt="Handwritten: Complexity Analysis — qsort and bsearch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-handwritten.svg" alt="Handwritten: Complexity Analysis — qsort and bsearch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-diagram.svg" alt="Diagram: Complexity Analysis — qsort and bsearch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-diagram.svg" alt="Diagram: Complexity Analysis — qsort and bsearch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-sticky.svg" alt="Sticky Note: Complexity Analysis — qsort and bsearch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-qsort-and-bsearch-sticky.svg" alt="Sticky Note: Complexity Analysis — qsort and bsearch" width="30%">
 </a>
 
 
@@ -690,14 +690,14 @@ Using `compare_int` (ascending). The exact steps depend on the implementation (u
 
 ### 17.2.5 Process Control
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-handwritten.svg" alt="Handwritten: 17.2.5 Process Control" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-handwritten.svg" alt="Handwritten: 17.2.5 Process Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-diagram.svg" alt="Diagram: 17.2.5 Process Control" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-diagram.svg" alt="Diagram: 17.2.5 Process Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-sticky.svg" alt="Sticky Note: 17.2.5 Process Control" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-5-process-control-sticky.svg" alt="Sticky Note: 17.2.5 Process Control" width="30%">
 </a>
 
 
@@ -738,14 +738,14 @@ Cleanup function called
 
 ### 17.2.6 Integer Arithmetic
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-handwritten.svg" alt="Handwritten: 17.2.6 Integer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-handwritten.svg" alt="Handwritten: 17.2.6 Integer Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-diagram.svg" alt="Diagram: 17.2.6 Integer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-diagram.svg" alt="Diagram: 17.2.6 Integer Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-sticky.svg" alt="Sticky Note: 17.2.6 Integer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-2-6-integer-arithmetic-sticky.svg" alt="Sticky Note: 17.2.6 Integer Arithmetic" width="30%">
 </a>
 
 
@@ -782,14 +782,14 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Advantages and Disadvantages of stdlib.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of stdlib.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of stdlib.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of stdlib.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of stdlib.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of stdlib.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdlib-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of stdlib.h" width="30%">
 </a>
 
 
@@ -803,14 +803,14 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -828,14 +828,14 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Real-World Analogy: Library Card Catalog
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Card Catalog" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Card Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-diagram.svg" alt="Diagram: Real-World Analogy: Library Card Catalog" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-diagram.svg" alt="Diagram: Real-World Analogy: Library Card Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Card Catalog" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-library-card-catalog-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Card Catalog" width="30%">
 </a>
 
 
@@ -849,14 +849,14 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Numbered Steps for Safe String Copy
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-handwritten.svg" alt="Handwritten: Numbered Steps for Safe String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-handwritten.svg" alt="Handwritten: Numbered Steps for Safe String Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-diagram.svg" alt="Diagram: Numbered Steps for Safe String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-diagram.svg" alt="Diagram: Numbered Steps for Safe String Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-sticky.svg" alt="Sticky Note: Numbered Steps for Safe String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-string-copy-sticky.svg" alt="Sticky Note: Numbered Steps for Safe String Copy" width="30%">
 </a>
 
 
@@ -868,14 +868,14 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Key Functions Reference
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" alt="Handwritten: Key Functions Reference" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-handwritten.svg" alt="Handwritten: Key Functions Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" alt="Diagram: Key Functions Reference" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-diagram.svg" alt="Diagram: Key Functions Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" alt="Sticky Note: Key Functions Reference" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/key-functions-reference-sticky.svg" alt="Sticky Note: Key Functions Reference" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ INT_MIN = -2147483648, -INT_MIN = -2147483648 (overflow!)
 
 ### Code: memcpy vs memmove and memset
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-handwritten.svg" alt="Handwritten: Code: memcpy vs memmove and memset" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-handwritten.svg" alt="Handwritten: Code: memcpy vs memmove and memset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-diagram.svg" alt="Diagram: Code: memcpy vs memmove and memset" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-diagram.svg" alt="Diagram: Code: memcpy vs memmove and memset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-sticky.svg" alt="Sticky Note: Code: memcpy vs memmove and memset" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-memcpy-vs-memmove-and-memset-sticky.svg" alt="Sticky Note: Code: memcpy vs memmove and memset" width="30%">
 </a>
 
 
@@ -947,14 +947,14 @@ memmove: Hello, Hello!
 
 ### Dry Run: memmove Overlap
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-handwritten.svg" alt="Handwritten: Dry Run: memmove Overlap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-handwritten.svg" alt="Handwritten: Dry Run: memmove Overlap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-diagram.svg" alt="Diagram: Dry Run: memmove Overlap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-diagram.svg" alt="Diagram: Dry Run: memmove Overlap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-sticky.svg" alt="Sticky Note: Dry Run: memmove Overlap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-memmove-overlap-sticky.svg" alt="Sticky Note: Dry Run: memmove Overlap" width="30%">
 </a>
 
 
@@ -982,14 +982,14 @@ Operation: `memmove(str + 7, str, 6)` — copy 6 bytes from index 0 to index 7.
 
 ### Pseudocode for memmove Overlap Handling
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-handwritten.svg" alt="Handwritten: Pseudocode for memmove Overlap Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-handwritten.svg" alt="Handwritten: Pseudocode for memmove Overlap Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-diagram.svg" alt="Diagram: Pseudocode for memmove Overlap Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-diagram.svg" alt="Diagram: Pseudocode for memmove Overlap Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-sticky.svg" alt="Sticky Note: Pseudocode for memmove Overlap Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-for-memmove-overlap-handling-sticky.svg" alt="Sticky Note: Pseudocode for memmove Overlap Handling" width="30%">
 </a>
 
 
@@ -1011,14 +1011,14 @@ END FUNCTION
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1039,14 +1039,14 @@ END FUNCTION
 
 ### string.h vs stdlib.h String Functions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-handwritten.svg" alt="Handwritten: string.h vs stdlib.h String Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-handwritten.svg" alt="Handwritten: string.h vs stdlib.h String Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-diagram.svg" alt="Diagram: string.h vs stdlib.h String Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-diagram.svg" alt="Diagram: string.h vs stdlib.h String Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-sticky.svg" alt="Sticky Note: string.h vs stdlib.h String Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/string-h-vs-stdlib-h-string-functions-sticky.svg" alt="Sticky Note: string.h vs stdlib.h String Functions" width="30%">
 </a>
 
 
@@ -1069,14 +1069,14 @@ END FUNCTION
 
 ### Advantages and Disadvantages of string.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of string.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of string.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of string.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of string.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of string.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-string-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of string.h" width="30%">
 </a>
 
 
@@ -1089,14 +1089,14 @@ END FUNCTION
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1113,14 +1113,14 @@ END FUNCTION
 
 ### Real-World Analogy: Pocket Calculator
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-handwritten.svg" alt="Handwritten: Real-World Analogy: Pocket Calculator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-handwritten.svg" alt="Handwritten: Real-World Analogy: Pocket Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-diagram.svg" alt="Diagram: Real-World Analogy: Pocket Calculator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-diagram.svg" alt="Diagram: Real-World Analogy: Pocket Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-sticky.svg" alt="Sticky Note: Real-World Analogy: Pocket Calculator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pocket-calculator-sticky.svg" alt="Sticky Note: Real-World Analogy: Pocket Calculator" width="30%">
 </a>
 
 
@@ -1134,14 +1134,14 @@ END FUNCTION
 
 ### Numbered Steps for Safe Math Computation
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-handwritten.svg" alt="Handwritten: Numbered Steps for Safe Math Computation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-handwritten.svg" alt="Handwritten: Numbered Steps for Safe Math Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-diagram.svg" alt="Diagram: Numbered Steps for Safe Math Computation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-diagram.svg" alt="Diagram: Numbered Steps for Safe Math Computation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-sticky.svg" alt="Sticky Note: Numbered Steps for Safe Math Computation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-math-computation-sticky.svg" alt="Sticky Note: Numbered Steps for Safe Math Computation" width="30%">
 </a>
 
 
@@ -1153,14 +1153,14 @@ END FUNCTION
 
 ### Code: Comprehensive Math Example
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-handwritten.svg" alt="Handwritten: Code: Comprehensive Math Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-handwritten.svg" alt="Handwritten: Code: Comprehensive Math Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-diagram.svg" alt="Diagram: Code: Comprehensive Math Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-diagram.svg" alt="Diagram: Code: Comprehensive Math Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-sticky.svg" alt="Sticky Note: Code: Comprehensive Math Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/code-comprehensive-math-example-sticky.svg" alt="Sticky Note: Code: Comprehensive Math Example" width="30%">
 </a>
 
 
@@ -1226,14 +1226,14 @@ exp(1000): Range error (ERANGE), result = inf
 
 ### Pseudocode: hypot Implementation
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-handwritten.svg" alt="Handwritten: Pseudocode: hypot Implementation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-handwritten.svg" alt="Handwritten: Pseudocode: hypot Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-diagram.svg" alt="Diagram: Pseudocode: hypot Implementation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-diagram.svg" alt="Diagram: Pseudocode: hypot Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-sticky.svg" alt="Sticky Note: Pseudocode: hypot Implementation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-hypot-implementation-sticky.svg" alt="Sticky Note: Pseudocode: hypot Implementation" width="30%">
 </a>
 
 
@@ -1253,14 +1253,14 @@ END FUNCTION
 
 ### Dry Run: hypot(3.0, 4.0)
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-handwritten.svg" alt="Handwritten: Dry Run: hypot(3.0, 4.0)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-handwritten.svg" alt="Handwritten: Dry Run: hypot(3.0, 4.0)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-diagram.svg" alt="Diagram: Dry Run: hypot(3.0, 4.0)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-diagram.svg" alt="Diagram: Dry Run: hypot(3.0, 4.0)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-sticky.svg" alt="Sticky Note: Dry Run: hypot(3.0, 4.0)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-hypot-3-0-4-0-sticky.svg" alt="Sticky Note: Dry Run: hypot(3.0, 4.0)" width="30%">
 </a>
 
 
@@ -1275,14 +1275,14 @@ END FUNCTION
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1298,14 +1298,14 @@ END FUNCTION
 
 ### Advantages and Disadvantages of math.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of math.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of math.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of math.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of math.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of math.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-math-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of math.h" width="30%">
 </a>
 
 
@@ -1319,14 +1319,14 @@ END FUNCTION
 
 ### Header Groups: Standard Math Functions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-handwritten.svg" alt="Handwritten: Header Groups: Standard Math Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-handwritten.svg" alt="Handwritten: Header Groups: Standard Math Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-diagram.svg" alt="Diagram: Header Groups: Standard Math Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-diagram.svg" alt="Diagram: Header Groups: Standard Math Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-sticky.svg" alt="Sticky Note: Header Groups: Standard Math Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-standard-math-functions-sticky.svg" alt="Sticky Note: Header Groups: Standard Math Functions" width="30%">
 </a>
 
 
@@ -1344,14 +1344,14 @@ END FUNCTION
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1377,14 +1377,14 @@ printf("fmod(-5, 2)     = %.0f\n", fmod(-5.0, 2.0));       /* -1 */
 
 ### Real-World Analogy: Airport Security Checkpoint
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-handwritten.svg" alt="Handwritten: Real-World Analogy: Airport Security Checkpoint" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-handwritten.svg" alt="Handwritten: Real-World Analogy: Airport Security Checkpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-diagram.svg" alt="Diagram: Real-World Analogy: Airport Security Checkpoint" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-diagram.svg" alt="Diagram: Real-World Analogy: Airport Security Checkpoint" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-sticky.svg" alt="Sticky Note: Real-World Analogy: Airport Security Checkpoint" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-airport-security-checkpoint-sticky.svg" alt="Sticky Note: Real-World Analogy: Airport Security Checkpoint" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ printf("fmod(-5, 2)     = %.0f\n", fmod(-5.0, 2.0));       /* -1 */
 
 ### Numbered Steps for Character Classification
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-handwritten.svg" alt="Handwritten: Numbered Steps for Character Classification" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-handwritten.svg" alt="Handwritten: Numbered Steps for Character Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-diagram.svg" alt="Diagram: Numbered Steps for Character Classification" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-diagram.svg" alt="Diagram: Numbered Steps for Character Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-sticky.svg" alt="Sticky Note: Numbered Steps for Character Classification" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-character-classification-sticky.svg" alt="Sticky Note: Numbered Steps for Character Classification" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ toupper('A') = 'A'
 
 ### Dry Run: Character Classification of '9'
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-handwritten.svg" alt="Handwritten: Dry Run: Character Classification of '9'" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-handwritten.svg" alt="Handwritten: Dry Run: Character Classification of '9'" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-diagram.svg" alt="Diagram: Dry Run: Character Classification of '9'" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-diagram.svg" alt="Diagram: Dry Run: Character Classification of '9'" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-sticky.svg" alt="Sticky Note: Dry Run: Character Classification of '9'" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-character-classification-of-9-sticky.svg" alt="Sticky Note: Dry Run: Character Classification of '9'" width="30%">
 </a>
 
 
@@ -1483,14 +1483,14 @@ toupper('A') = 'A'
 
 ### Pseudocode: isdigit and tolower
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-handwritten.svg" alt="Handwritten: Pseudocode: isdigit and tolower" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-handwritten.svg" alt="Handwritten: Pseudocode: isdigit and tolower" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-diagram.svg" alt="Diagram: Pseudocode: isdigit and tolower" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-diagram.svg" alt="Diagram: Pseudocode: isdigit and tolower" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-sticky.svg" alt="Sticky Note: Pseudocode: isdigit and tolower" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/pseudocode-isdigit-and-tolower-sticky.svg" alt="Sticky Note: Pseudocode: isdigit and tolower" width="30%">
 </a>
 
 
@@ -1508,14 +1508,14 @@ END FUNCTION
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1526,14 +1526,14 @@ END FUNCTION
 
 ### Advantages and Disadvantages of ctype.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of ctype.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of ctype.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of ctype.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of ctype.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of ctype.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-ctype-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of ctype.h" width="30%">
 </a>
 
 
@@ -1546,14 +1546,14 @@ END FUNCTION
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1569,14 +1569,14 @@ END FUNCTION
 
 ### Real-World Analogy: Wall Clock and Stopwatch
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-handwritten.svg" alt="Handwritten: Real-World Analogy: Wall Clock and Stopwatch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-handwritten.svg" alt="Handwritten: Real-World Analogy: Wall Clock and Stopwatch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-diagram.svg" alt="Diagram: Real-World Analogy: Wall Clock and Stopwatch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-diagram.svg" alt="Diagram: Real-World Analogy: Wall Clock and Stopwatch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-sticky.svg" alt="Sticky Note: Real-World Analogy: Wall Clock and Stopwatch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-wall-clock-and-stopwatch-sticky.svg" alt="Sticky Note: Real-World Analogy: Wall Clock and Stopwatch" width="30%">
 </a>
 
 
@@ -1589,14 +1589,14 @@ END FUNCTION
 
 ### Numbered Steps for Timing Code
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-handwritten.svg" alt="Handwritten: Numbered Steps for Timing Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-handwritten.svg" alt="Handwritten: Numbered Steps for Timing Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-diagram.svg" alt="Diagram: Numbered Steps for Timing Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-diagram.svg" alt="Diagram: Numbered Steps for Timing Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-sticky.svg" alt="Sticky Note: Numbered Steps for Timing Code" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-timing-code-sticky.svg" alt="Sticky Note: Numbered Steps for Timing Code" width="30%">
 </a>
 
 
@@ -1656,14 +1656,14 @@ Elapsed: 0.2340 seconds
 
 ### Time Structures
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/time-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/time-structures-handwritten.svg" alt="Handwritten: Time Structures" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/time-structures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/time-structures-handwritten.svg" alt="Handwritten: Time Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/time-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/time-structures-diagram.svg" alt="Diagram: Time Structures" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/time-structures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/time-structures-diagram.svg" alt="Diagram: Time Structures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/time-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/time-structures-sticky.svg" alt="Sticky Note: Time Structures" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/time-structures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/time-structures-sticky.svg" alt="Sticky Note: Time Structures" width="30%">
 </a>
 
 
@@ -1691,14 +1691,14 @@ printf("Date: %04d-%02d-%02d\n",
 
 ### Dry Run: strftime with "%Y-%m-%d %H:%M:%S"
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-handwritten.svg" alt="Handwritten: Dry Run: strftime with "%Y-%m-%d %H:%M:%S"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-handwritten.svg" alt="Handwritten: Dry Run: strftime with "%Y-%m-%d %H:%M:%S"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-diagram.svg" alt="Diagram: Dry Run: strftime with "%Y-%m-%d %H:%M:%S"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-diagram.svg" alt="Diagram: Dry Run: strftime with "%Y-%m-%d %H:%M:%S"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-sticky.svg" alt="Sticky Note: Dry Run: strftime with "%Y-%m-%d %H:%M:%S"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-strftime-with-y-m-d-h-m-s-sticky.svg" alt="Sticky Note: Dry Run: strftime with "%Y-%m-%d %H:%M:%S"" width="30%">
 </a>
 
 
@@ -1722,14 +1722,14 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1745,14 +1745,14 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### Advantages and Disadvantages of time.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of time.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of time.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of time.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of time.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of time.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-time-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of time.h" width="30%">
 </a>
 
 
@@ -1765,14 +1765,14 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1789,27 +1789,27 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### 17.7.1 `<errno.h>` — Error Numbers
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-handwritten.svg" alt="Handwritten: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-handwritten.svg" alt="Handwritten: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-diagram.svg" alt="Diagram: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-diagram.svg" alt="Diagram: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-sticky.svg" alt="Sticky Note: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-1-errno-h-error-numbers-sticky.svg" alt="Sticky Note: 17.7.1 `<errno.h>` — Error Numbers" width="30%">
 </a>
 
 
 ### Real-World Analogy: Train Station Announcement Board
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-handwritten.svg" alt="Handwritten: Real-World Analogy: Train Station Announcement Board" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-handwritten.svg" alt="Handwritten: Real-World Analogy: Train Station Announcement Board" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-diagram.svg" alt="Diagram: Real-World Analogy: Train Station Announcement Board" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-diagram.svg" alt="Diagram: Real-World Analogy: Train Station Announcement Board" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-sticky.svg" alt="Sticky Note: Real-World Analogy: Train Station Announcement Board" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-train-station-announcement-board-sticky.svg" alt="Sticky Note: Real-World Analogy: Train Station Announcement Board" width="30%">
 </a>
 
 
@@ -1817,14 +1817,14 @@ Given: `now = 1838500000` (approx June 9, 2026, 16:20:00 UTC).
 
 ### Numbered Steps for errno Usage
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-handwritten.svg" alt="Handwritten: Numbered Steps for errno Usage" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-handwritten.svg" alt="Handwritten: Numbered Steps for errno Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-diagram.svg" alt="Diagram: Numbered Steps for errno Usage" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-diagram.svg" alt="Diagram: Numbered Steps for errno Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-sticky.svg" alt="Sticky Note: Numbered Steps for errno Usage" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-errno-usage-sticky.svg" alt="Sticky Note: Numbered Steps for errno Usage" width="30%">
 </a>
 
 
@@ -1868,14 +1868,14 @@ errno = 2: No such file or directory
 
 ### Common errno Values
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-handwritten.svg" alt="Handwritten: Common errno Values" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-handwritten.svg" alt="Handwritten: Common errno Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-diagram.svg" alt="Diagram: Common errno Values" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-diagram.svg" alt="Diagram: Common errno Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-sticky.svg" alt="Sticky Note: Common errno Values" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/common-errno-values-sticky.svg" alt="Sticky Note: Common errno Values" width="30%">
 </a>
 
 
@@ -1893,27 +1893,27 @@ errno = 2: No such file or directory
 
 ### 17.7.2 `<assert.h>` — Runtime Assertions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-handwritten.svg" alt="Handwritten: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-handwritten.svg" alt="Handwritten: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-diagram.svg" alt="Diagram: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-diagram.svg" alt="Diagram: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-sticky.svg" alt="Sticky Note: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-7-2-assert-h-runtime-assertions-sticky.svg" alt="Sticky Note: 17.7.2 `<assert.h>` — Runtime Assertions" width="30%">
 </a>
 
 
 ### Real-World Analogy: Building Inspector
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-handwritten.svg" alt="Handwritten: Real-World Analogy: Building Inspector" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-handwritten.svg" alt="Handwritten: Real-World Analogy: Building Inspector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-diagram.svg" alt="Diagram: Real-World Analogy: Building Inspector" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-diagram.svg" alt="Diagram: Real-World Analogy: Building Inspector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-sticky.svg" alt="Sticky Note: Real-World Analogy: Building Inspector" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-building-inspector-sticky.svg" alt="Sticky Note: Real-World Analogy: Building Inspector" width="30%">
 </a>
 
 
@@ -1952,14 +1952,14 @@ To disable assertions in release builds:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1971,14 +1971,14 @@ To disable assertions in release builds:
 
 ### Advantages and Disadvantages of assert.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of assert.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of assert.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of assert.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of assert.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of assert.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-assert-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of assert.h" width="30%">
 </a>
 
 
@@ -1990,14 +1990,14 @@ To disable assertions in release builds:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2012,14 +2012,14 @@ To disable assertions in release builds:
 
 ### Real-World Analogy: Emergency Eject Button
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-handwritten.svg" alt="Handwritten: Real-World Analogy: Emergency Eject Button" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-handwritten.svg" alt="Handwritten: Real-World Analogy: Emergency Eject Button" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-diagram.svg" alt="Diagram: Real-World Analogy: Emergency Eject Button" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-diagram.svg" alt="Diagram: Real-World Analogy: Emergency Eject Button" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-sticky.svg" alt="Sticky Note: Real-World Analogy: Emergency Eject Button" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-emergency-eject-button-sticky.svg" alt="Sticky Note: Real-World Analogy: Emergency Eject Button" width="30%">
 </a>
 
 
@@ -2030,14 +2030,14 @@ To disable assertions in release builds:
 
 ### How It Works
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-handwritten.svg" alt="Handwritten: How It Works" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-handwritten.svg" alt="Handwritten: How It Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-diagram.svg" alt="Diagram: How It Works" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-diagram.svg" alt="Diagram: How It Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-sticky.svg" alt="Sticky Note: How It Works" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/how-it-works-sticky.svg" alt="Sticky Note: How It Works" width="30%">
 </a>
 
 
@@ -2083,14 +2083,14 @@ Back in main() via longjmp (ret = 42)
 
 ### Dry Run: setjmp/longjmp
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-handwritten.svg" alt="Handwritten: Dry Run: setjmp/longjmp" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-handwritten.svg" alt="Handwritten: Dry Run: setjmp/longjmp" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-diagram.svg" alt="Diagram: Dry Run: setjmp/longjmp" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-diagram.svg" alt="Diagram: Dry Run: setjmp/longjmp" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-sticky.svg" alt="Sticky Note: Dry Run: setjmp/longjmp" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/dry-run-setjmp-longjmp-sticky.svg" alt="Sticky Note: Dry Run: setjmp/longjmp" width="30%">
 </a>
 
 
@@ -2106,14 +2106,14 @@ Back in main() via longjmp (ret = 42)
 
 ### Numbered Steps for Safe longjmp Use
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-handwritten.svg" alt="Handwritten: Numbered Steps for Safe longjmp Use" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-handwritten.svg" alt="Handwritten: Numbered Steps for Safe longjmp Use" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-diagram.svg" alt="Diagram: Numbered Steps for Safe longjmp Use" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-diagram.svg" alt="Diagram: Numbered Steps for Safe longjmp Use" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-sticky.svg" alt="Sticky Note: Numbered Steps for Safe longjmp Use" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-safe-longjmp-use-sticky.svg" alt="Sticky Note: Numbered Steps for Safe longjmp Use" width="30%">
 </a>
 
 
@@ -2125,14 +2125,14 @@ Back in main() via longjmp (ret = 42)
 
 ### Limitations and Dangers
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-handwritten.svg" alt="Handwritten: Limitations and Dangers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-handwritten.svg" alt="Handwritten: Limitations and Dangers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-diagram.svg" alt="Diagram: Limitations and Dangers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-diagram.svg" alt="Diagram: Limitations and Dangers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-sticky.svg" alt="Sticky Note: Limitations and Dangers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/limitations-and-dangers-sticky.svg" alt="Sticky Note: Limitations and Dangers" width="30%">
 </a>
 
 
@@ -2166,14 +2166,14 @@ void risky(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ void risky(void)
 
 ### Advantages and Disadvantages of setjmp.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of setjmp.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of setjmp.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of setjmp.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of setjmp.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of setjmp.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-setjmp-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of setjmp.h" width="30%">
 </a>
 
 
@@ -2203,14 +2203,14 @@ void risky(void)
 
 ### Comparison: longjmp vs Alternatives
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-handwritten.svg" alt="Handwritten: Comparison: longjmp vs Alternatives" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-handwritten.svg" alt="Handwritten: Comparison: longjmp vs Alternatives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-diagram.svg" alt="Diagram: Comparison: longjmp vs Alternatives" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-diagram.svg" alt="Diagram: Comparison: longjmp vs Alternatives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-sticky.svg" alt="Sticky Note: Comparison: longjmp vs Alternatives" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/comparison-longjmp-vs-alternatives-sticky.svg" alt="Sticky Note: Comparison: longjmp vs Alternatives" width="30%">
 </a>
 
 
@@ -2228,14 +2228,14 @@ void risky(void)
 
 ### Real-World Analogy: Fire Alarm
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-handwritten.svg" alt="Handwritten: Real-World Analogy: Fire Alarm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-handwritten.svg" alt="Handwritten: Real-World Analogy: Fire Alarm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-diagram.svg" alt="Diagram: Real-World Analogy: Fire Alarm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-diagram.svg" alt="Diagram: Real-World Analogy: Fire Alarm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-sticky.svg" alt="Sticky Note: Real-World Analogy: Fire Alarm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-fire-alarm-sticky.svg" alt="Sticky Note: Real-World Analogy: Fire Alarm" width="30%">
 </a>
 
 
@@ -2249,14 +2249,14 @@ Signals are like **building alarms**:
 
 ### Numbered Steps for Signal Handling
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-handwritten.svg" alt="Handwritten: Numbered Steps for Signal Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-handwritten.svg" alt="Handwritten: Numbered Steps for Signal Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-diagram.svg" alt="Diagram: Numbered Steps for Signal Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-diagram.svg" alt="Diagram: Numbered Steps for Signal Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-sticky.svg" alt="Sticky Note: Numbered Steps for Signal Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-signal-handling-sticky.svg" alt="Sticky Note: Numbered Steps for Signal Handling" width="30%">
 </a>
 
 
@@ -2312,14 +2312,14 @@ Interrupted after 4234567 iterations!
 
 ### Async-Signal-Safe Functions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-handwritten.svg" alt="Handwritten: Async-Signal-Safe Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-handwritten.svg" alt="Handwritten: Async-Signal-Safe Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-diagram.svg" alt="Diagram: Async-Signal-Safe Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-diagram.svg" alt="Diagram: Async-Signal-Safe Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-sticky.svg" alt="Sticky Note: Async-Signal-Safe Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/async-signal-safe-functions-sticky.svg" alt="Sticky Note: Async-Signal-Safe Functions" width="30%">
 </a>
 
 
@@ -2336,14 +2336,14 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Signal Table
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/signal-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/signal-table-handwritten.svg" alt="Handwritten: Signal Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/signal-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/signal-table-handwritten.svg" alt="Handwritten: Signal Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/signal-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/signal-table-diagram.svg" alt="Diagram: Signal Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/signal-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/signal-table-diagram.svg" alt="Diagram: Signal Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/signal-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/signal-table-sticky.svg" alt="Sticky Note: Signal Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/signal-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/signal-table-sticky.svg" alt="Sticky Note: Signal Table" width="30%">
 </a>
 
 
@@ -2360,14 +2360,14 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2379,14 +2379,14 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Advantages and Disadvantages of signal.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of signal.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of signal.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of signal.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of signal.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of signal.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-signal-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of signal.h" width="30%">
 </a>
 
 
@@ -2399,14 +2399,14 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2421,14 +2421,14 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Real-World Analogy: Pizza Order
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-handwritten.svg" alt="Handwritten: Real-World Analogy: Pizza Order" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-handwritten.svg" alt="Handwritten: Real-World Analogy: Pizza Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-diagram.svg" alt="Diagram: Real-World Analogy: Pizza Order" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-diagram.svg" alt="Diagram: Real-World Analogy: Pizza Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-sticky.svg" alt="Sticky Note: Real-World Analogy: Pizza Order" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/real-world-analogy-pizza-order-sticky.svg" alt="Sticky Note: Real-World Analogy: Pizza Order" width="30%">
 </a>
 
 
@@ -2442,14 +2442,14 @@ Only these functions are guaranteed safe to call from a signal handler:
 
 ### Numbered Steps for Variadic Functions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-handwritten.svg" alt="Handwritten: Numbered Steps for Variadic Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-handwritten.svg" alt="Handwritten: Numbered Steps for Variadic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-diagram.svg" alt="Diagram: Numbered Steps for Variadic Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-diagram.svg" alt="Diagram: Numbered Steps for Variadic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-sticky.svg" alt="Sticky Note: Numbered Steps for Variadic Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/numbered-steps-for-variadic-functions-sticky.svg" alt="Sticky Note: Numbered Steps for Variadic Functions" width="30%">
 </a>
 
 
@@ -2494,14 +2494,14 @@ Average of 5 numbers = 30.00
 
 ### How printf Uses stdarg
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-handwritten.svg" alt="Handwritten: How printf Uses stdarg" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-handwritten.svg" alt="Handwritten: How printf Uses stdarg" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-diagram.svg" alt="Diagram: How printf Uses stdarg" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-diagram.svg" alt="Diagram: How printf Uses stdarg" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-sticky.svg" alt="Sticky Note: How printf Uses stdarg" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/how-printf-uses-stdarg-sticky.svg" alt="Sticky Note: How printf Uses stdarg" width="30%">
 </a>
 
 
@@ -2526,14 +2526,14 @@ int main(void)
 
 ### Safety Rules for Variadic Functions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-handwritten.svg" alt="Handwritten: Safety Rules for Variadic Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-handwritten.svg" alt="Handwritten: Safety Rules for Variadic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-diagram.svg" alt="Diagram: Safety Rules for Variadic Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-diagram.svg" alt="Diagram: Safety Rules for Variadic Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-sticky.svg" alt="Sticky Note: Safety Rules for Variadic Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/safety-rules-for-variadic-functions-sticky.svg" alt="Sticky Note: Safety Rules for Variadic Functions" width="30%">
 </a>
 
 
@@ -2547,14 +2547,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2566,14 +2566,14 @@ int main(void)
 
 ### Advantages and Disadvantages of stdarg.h
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of stdarg.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of stdarg.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of stdarg.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-diagram.svg" alt="Diagram: Advantages and Disadvantages of stdarg.h" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of stdarg.h" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/advantages-and-disadvantages-of-stdarg-h-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of stdarg.h" width="30%">
 </a>
 
 
@@ -2589,14 +2589,14 @@ int main(void)
 
 ### 17.11.1 `<stdint.h>` — Fixed-Width Integer Types
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-handwritten.svg" alt="Handwritten: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-handwritten.svg" alt="Handwritten: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-diagram.svg" alt="Diagram: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-diagram.svg" alt="Diagram: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-sticky.svg" alt="Sticky Note: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-1-stdint-h-fixed-width-integer-types-sticky.svg" alt="Sticky Note: 17.11.1 `<stdint.h>` — Fixed-Width Integer Types" width="30%">
 </a>
 
 
@@ -2634,14 +2634,14 @@ UINT64_MAX: 18446744073709551615
 
 ### 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-handwritten.svg" alt="Handwritten: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-handwritten.svg" alt="Handwritten: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-diagram.svg" alt="Diagram: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-diagram.svg" alt="Diagram: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-sticky.svg" alt="Sticky Note: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-2-limits-h-and-float-h-platform-limits-sticky.svg" alt="Sticky Note: 17.11.2 `<limits.h>` and `<float.h>` — Platform Limits" width="30%">
 </a>
 
 
@@ -2701,14 +2701,14 @@ DBL_MIN      = 2.225074e-308
 
 ### 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-handwritten.svg" alt="Handwritten: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-handwritten.svg" alt="Handwritten: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-diagram.svg" alt="Diagram: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-diagram.svg" alt="Diagram: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-sticky.svg" alt="Sticky Note: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-3-inttypes-h-format-specifiers-for-fixed-types-sticky.svg" alt="Sticky Note: 17.11.3 `<inttypes.h>` — Format Specifiers for Fixed Types" width="30%">
 </a>
 
 
@@ -2736,14 +2736,14 @@ int main(void)
 
 ### 17.11.4 `<stddef.h>` — Common Definitions
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-handwritten.svg" alt="Handwritten: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-handwritten.svg" alt="Handwritten: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-diagram.svg" alt="Diagram: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-diagram.svg" alt="Diagram: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-sticky.svg" alt="Sticky Note: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/17-11-4-stddef-h-common-definitions-sticky.svg" alt="Sticky Note: 17.11.4 `<stddef.h>` — Common Definitions" width="30%">
 </a>
 
 
@@ -2780,14 +2780,14 @@ Offset of z: 8
 
 ### Header Groups Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-handwritten.svg" alt="Handwritten: Header Groups Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-handwritten.svg" alt="Handwritten: Header Groups Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-diagram.svg" alt="Diagram: Header Groups Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-diagram.svg" alt="Diagram: Header Groups Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-sticky.svg" alt="Sticky Note: Header Groups Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/header-groups-comparison-table-sticky.svg" alt="Sticky Note: Header Groups Comparison Table" width="30%">
 </a>
 
 
@@ -2815,14 +2815,14 @@ Offset of z: 8
 
 ### Q1: What is the difference between atoi and strtol? When would you use each?
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-handwritten.svg" alt="Handwritten: What is the difference between atoi and strtol? When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-handwritten.svg" alt="Handwritten: What is the difference between atoi and strtol? When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-diagram.svg" alt="Diagram: What is the difference between atoi and strtol? When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-diagram.svg" alt="Diagram: What is the difference between atoi and strtol? When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-sticky.svg" alt="Sticky Note: What is the difference between atoi and strtol? When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-atoi-and-strtol-when-would-you-use-each-sticky.svg" alt="Sticky Note: What is the difference between atoi and strtol? When would you use each?" width="30%">
 </a>
 
 
@@ -2921,14 +2921,14 @@ int main(void)
 
 ### Q4: What is the difference between memcpy and memmove?
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-handwritten.svg" alt="Handwritten: What is the difference between memcpy and memmove?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-handwritten.svg" alt="Handwritten: What is the difference between memcpy and memmove?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-diagram.svg" alt="Diagram: What is the difference between memcpy and memmove?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-diagram.svg" alt="Diagram: What is the difference between memcpy and memmove?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-sticky.svg" alt="Sticky Note: What is the difference between memcpy and memmove?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-difference-between-memcpy-and-memmove-sticky.svg" alt="Sticky Note: What is the difference between memcpy and memmove?" width="30%">
 </a>
 
 
@@ -2942,14 +2942,14 @@ memmove(buf + 2, buf, 6);     /* OK — result: "ababcdefgh" */
 
 ### Q5: What is the 2038 problem, and how does it relate to time.h?
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-handwritten.svg" alt="Handwritten: What is the 2038 problem, and how does it relate to time.h?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-handwritten.svg" alt="Handwritten: What is the 2038 problem, and how does it relate to time.h?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-diagram.svg" alt="Diagram: What is the 2038 problem, and how does it relate to time.h?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-diagram.svg" alt="Diagram: What is the 2038 problem, and how does it relate to time.h?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-sticky.svg" alt="Sticky Note: What is the 2038 problem, and how does it relate to time.h?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/what-is-the-2038-problem-and-how-does-it-relate-to-time-h-sticky.svg" alt="Sticky Note: What is the 2038 problem, and how does it relate to time.h?" width="30%">
 </a>
 
 
@@ -2965,14 +2965,14 @@ memmove(buf + 2, buf, 6);     /* OK — result: "ababcdefgh" */
 
 ### Q8: Explain the difference between `fmod` and `remainder`.
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-handwritten.svg" alt="Handwritten: Explain the difference between `fmod` and `remainder`." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-handwritten.svg" alt="Handwritten: Explain the difference between `fmod` and `remainder`." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-diagram.svg" alt="Diagram: Explain the difference between `fmod` and `remainder`." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-diagram.svg" alt="Diagram: Explain the difference between `fmod` and `remainder`." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-sticky.svg" alt="Sticky Note: Explain the difference between `fmod` and `remainder`." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/explain-the-difference-between-fmod-and-remainder-sticky.svg" alt="Sticky Note: Explain the difference between `fmod` and `remainder`." width="30%">
 </a>
 
 
@@ -2988,14 +2988,14 @@ memmove(buf + 2, buf, 6);     /* OK — result: "ababcdefgh" */
 
 ### Application 1: Shell/Terminal Emulator
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-handwritten.svg" alt="Handwritten: Application 1: Shell/Terminal Emulator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-handwritten.svg" alt="Handwritten: Application 1: Shell/Terminal Emulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-diagram.svg" alt="Diagram: Application 1: Shell/Terminal Emulator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-diagram.svg" alt="Diagram: Application 1: Shell/Terminal Emulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-sticky.svg" alt="Sticky Note: Application 1: Shell/Terminal Emulator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-1-shell-terminal-emulator-sticky.svg" alt="Sticky Note: Application 1: Shell/Terminal Emulator" width="30%">
 </a>
 
 
@@ -3041,14 +3041,14 @@ int main(void)
 
 ### Application 2: Scientific Data Processing
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-handwritten.svg" alt="Handwritten: Application 2: Scientific Data Processing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-handwritten.svg" alt="Handwritten: Application 2: Scientific Data Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-diagram.svg" alt="Diagram: Application 2: Scientific Data Processing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-diagram.svg" alt="Diagram: Application 2: Scientific Data Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-sticky.svg" alt="Sticky Note: Application 2: Scientific Data Processing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-2-scientific-data-processing-sticky.svg" alt="Sticky Note: Application 2: Scientific Data Processing" width="30%">
 </a>
 
 
@@ -3107,14 +3107,14 @@ int main(void)
 
 ### Application 3: Embedded Sensor Logger
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-handwritten.svg" alt="Handwritten: Application 3: Embedded Sensor Logger" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-handwritten.svg" alt="Handwritten: Application 3: Embedded Sensor Logger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-diagram.svg" alt="Diagram: Application 3: Embedded Sensor Logger" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-diagram.svg" alt="Diagram: Application 3: Embedded Sensor Logger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-sticky.svg" alt="Sticky Note: Application 3: Embedded Sensor Logger" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-3-embedded-sensor-logger-sticky.svg" alt="Sticky Note: Application 3: Embedded Sensor Logger" width="30%">
 </a>
 
 
@@ -3127,14 +3127,14 @@ A weather station data logger uses:
 
 ### Application 4: Memory Pool Allocator
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-handwritten.svg" alt="Handwritten: Application 4: Memory Pool Allocator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-handwritten.svg" alt="Handwritten: Application 4: Memory Pool Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-diagram.svg" alt="Diagram: Application 4: Memory Pool Allocator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-diagram.svg" alt="Diagram: Application 4: Memory Pool Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-sticky.svg" alt="Sticky Note: Application 4: Memory Pool Allocator" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-4-memory-pool-allocator-sticky.svg" alt="Sticky Note: Application 4: Memory Pool Allocator" width="30%">
 </a>
 
 
@@ -3147,14 +3147,14 @@ A custom allocator uses:
 
 ### Application 5: HTTP Server
 
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-handwritten.svg" alt="Handwritten: Application 5: HTTP Server" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-handwritten.svg" alt="Handwritten: Application 5: HTTP Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-diagram.svg" alt="Diagram: Application 5: HTTP Server" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-diagram.svg" alt="Diagram: Application 5: HTTP Server" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-sticky.svg" alt="Sticky Note: Application 5: HTTP Server" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/17-standard-library/application-5-http-server-sticky.svg" alt="Sticky Note: Application 5: HTTP Server" width="30%">
 </a>
 
 

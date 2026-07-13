@@ -54,14 +54,14 @@ The \( \Omega(n \log n) \) lower bound for comparison sorting (Theorem 3.1) appl
 
 ### 4.1 Counting Sort
 
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-handwritten.svg" alt="Handwritten: 4.1 Counting Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-handwritten.svg" alt="Handwritten: 4.1 Counting Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-diagram.svg" alt="Diagram: 4.1 Counting Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-diagram.svg" alt="Diagram: 4.1 Counting Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-sticky.svg" alt="Sticky Note: 4.1 Counting Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-1-counting-sort-sticky.svg" alt="Sticky Note: 4.1 Counting Sort" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ public static int[] countingSort(int[] arr, int k) {
 
 ### 4.2 Radix Sort
 
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-handwritten.svg" alt="Handwritten: 4.2 Radix Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-handwritten.svg" alt="Handwritten: 4.2 Radix Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-diagram.svg" alt="Diagram: 4.2 Radix Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-diagram.svg" alt="Diagram: 4.2 Radix Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-sticky.svg" alt="Sticky Note: 4.2 Radix Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-2-radix-sort-sticky.svg" alt="Sticky Note: 4.2 Radix Sort" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ public static void radixSort(int[] arr) {
 
 ### 4.3 Bucket Sort
 
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-handwritten.svg" alt="Handwritten: 4.3 Bucket Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-handwritten.svg" alt="Handwritten: 4.3 Bucket Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-diagram.svg" alt="Diagram: 4.3 Bucket Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-diagram.svg" alt="Diagram: 4.3 Bucket Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-sticky.svg" alt="Sticky Note: 4.3 Bucket Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/04-sorting-linear/4-3-bucket-sort-sticky.svg" alt="Sticky Note: 4.3 Bucket Sort" width="30%">
 </a>
 
 

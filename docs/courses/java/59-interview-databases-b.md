@@ -19,14 +19,14 @@ flowchart LR
 
 ### Q9: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-handwritten.svg" alt="Handwritten: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-handwritten.svg" alt="Handwritten: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-diagram.svg" alt="Diagram: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-diagram.svg" alt="Diagram: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-sticky.svg" alt="Sticky Note: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-sticky.svg" alt="Sticky Note: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ Rules:
 
 ### Q10: How do you map inheritance hierarchies in JPA?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-handwritten.svg" alt="Handwritten: How do you map inheritance hierarchies in JPA?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-handwritten.svg" alt="Handwritten: How do you map inheritance hierarchies in JPA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-diagram.svg" alt="Diagram: How do you map inheritance hierarchies in JPA?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-diagram.svg" alt="Diagram: How do you map inheritance hierarchies in JPA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-sticky.svg" alt="Sticky Note: How do you map inheritance hierarchies in JPA?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-inheritance-hierarchies-in-jpa-sticky.svg" alt="Sticky Note: How do you map inheritance hierarchies in JPA?" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when sub
 
 ### Q11: What is a projection in Spring Data JPA, and why use DTO projections over entities?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-handwritten.svg" alt="Handwritten: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-handwritten.svg" alt="Handwritten: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-diagram.svg" alt="Diagram: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-diagram.svg" alt="Diagram: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-sticky.svg" alt="Sticky Note: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-sticky.svg" alt="Sticky Note: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ EntityGraph can help with partial entity loading, but DTO projections give you t
 
 ### Q12: How do you implement database migrations with Flyway in Spring Boot?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-diagram.svg" alt="Diagram: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-diagram.svg" alt="Diagram: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ Flyway tracks applied migrations in a `flyway_schema_history` table. Never modif
 
 ### Q13: How do you handle concurrent updates to the same row without data loss?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-handwritten.svg" alt="Handwritten: How do you handle concurrent updates to the same row without data loss?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-handwritten.svg" alt="Handwritten: How do you handle concurrent updates to the same row without data loss?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-diagram.svg" alt="Diagram: How do you handle concurrent updates to the same row without data loss?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-diagram.svg" alt="Diagram: How do you handle concurrent updates to the same row without data loss?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-sticky.svg" alt="Sticky Note: How do you handle concurrent updates to the same row without data loss?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-sticky.svg" alt="Sticky Note: How do you handle concurrent updates to the same row without data loss?" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ The single-UPDATE approach is the most performant for high-contention counters b
 
 ### Q14: How do you test database code with TestContainers?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-handwritten.svg" alt="Handwritten: How do you test database code with TestContainers?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-handwritten.svg" alt="Handwritten: How do you test database code with TestContainers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-diagram.svg" alt="Diagram: How do you test database code with TestContainers?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-diagram.svg" alt="Diagram: How do you test database code with TestContainers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-sticky.svg" alt="Sticky Note: How do you test database code with TestContainers?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-test-database-code-with-testcontainers-sticky.svg" alt="Sticky Note: How do you test database code with TestContainers?" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ Add `@Testcontainers` + static `@Container` for a shared container across tests 
 
 ### Q15: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-handwritten.svg" alt="Handwritten: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-handwritten.svg" alt="Handwritten: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-diagram.svg" alt="Diagram: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-diagram.svg" alt="Diagram: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-sticky.svg" alt="Sticky Note: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-sticky.svg" alt="Sticky Note: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ CREATE SEQUENCE order_sequence INCREMENT BY 50 START WITH 1;
 
 ### Q17: How do you map PostgreSQL `jsonb` columns with Hibernate 6?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-handwritten.svg" alt="Handwritten: How do you map PostgreSQL `jsonb` columns with Hibernate 6?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-handwritten.svg" alt="Handwritten: How do you map PostgreSQL `jsonb` columns with Hibernate 6?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-diagram.svg" alt="Diagram: How do you map PostgreSQL `jsonb` columns with Hibernate 6?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-diagram.svg" alt="Diagram: How do you map PostgreSQL `jsonb` columns with Hibernate 6?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-sticky.svg" alt="Sticky Note: How do you map PostgreSQL `jsonb` columns with Hibernate 6?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-map-postgresql-jsonb-columns-with-hibernate-6-sticky.svg" alt="Sticky Note: How do you map PostgreSQL `jsonb` columns with Hibernate 6?" width="30%">
 </a>
 
 
@@ -618,14 +618,14 @@ List<Document> findActiveDocuments();
 
 ### Q18: How do you handle database migrations in a distributed team without conflicts?
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-handwritten.svg" alt="Handwritten: How do you handle database migrations in a distributed team without conflicts?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-handwritten.svg" alt="Handwritten: How do you handle database migrations in a distributed team without conflicts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-diagram.svg" alt="Diagram: How do you handle database migrations in a distributed team without conflicts?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-diagram.svg" alt="Diagram: How do you handle database migrations in a distributed team without conflicts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-sticky.svg" alt="Sticky Note: How do you handle database migrations in a distributed team without conflicts?" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/how-do-you-handle-database-migrations-in-a-distributed-team-without-conflicts-sticky.svg" alt="Sticky Note: How do you handle database migrations in a distributed team without conflicts?" width="30%">
 </a>
 
 
@@ -705,14 +705,14 @@ This allows Flyway to start tracking migrations on a database that already has t
 
 ### Mistake 1: Editing an already-applied migration
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-handwritten.svg" alt="Handwritten: Mistake 1: Editing an already-applied migration" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-handwritten.svg" alt="Handwritten: Mistake 1: Editing an already-applied migration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-diagram.svg" alt="Diagram: Mistake 1: Editing an already-applied migration" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-diagram.svg" alt="Diagram: Mistake 1: Editing an already-applied migration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-sticky.svg" alt="Sticky Note: Mistake 1: Editing an already-applied migration" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-1-editing-an-already-applied-migration-sticky.svg" alt="Sticky Note: Mistake 1: Editing an already-applied migration" width="30%">
 </a>
 
 ```sql
@@ -727,14 +727,14 @@ ALTER TABLE users ALTER COLUMN email TYPE VARCHAR(320);
 
 ### Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-handwritten.svg" alt="Handwritten: Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-handwritten.svg" alt="Handwritten: Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-diagram.svg" alt="Diagram: Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-diagram.svg" alt="Diagram: Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-sticky.svg" alt="Sticky Note: Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-2-forgetting-the-if-exists-clause-on-destructive-operations-sticky.svg" alt="Sticky Note: Mistake 2: Forgetting the `IF EXISTS` clause on destructive operations" width="30%">
 </a>
 
 ```sql
@@ -747,14 +747,14 @@ ALTER TABLE users DROP COLUMN IF EXISTS temp_field;
 
 ### Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-handwritten.svg" alt="Handwritten: Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-handwritten.svg" alt="Handwritten: Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-diagram.svg" alt="Diagram: Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-diagram.svg" alt="Diagram: Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-sticky.svg" alt="Sticky Note: Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-3-using-spring-jpa-hibernate-ddl-auto-update-in-production-sticky.svg" alt="Sticky Note: Mistake 3: Using `spring.jpa.hibernate.ddl-auto=update` in production" width="30%">
 </a>
 
 ```properties
@@ -768,14 +768,14 @@ spring.flyway.enabled=true
 
 ### Mistake 4: Not testing migrations against a real database
 
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-handwritten.svg" alt="Handwritten: Mistake 4: Not testing migrations against a real database" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-handwritten.svg" alt="Handwritten: Mistake 4: Not testing migrations against a real database" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-diagram.svg" alt="Diagram: Mistake 4: Not testing migrations against a real database" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-diagram.svg" alt="Diagram: Mistake 4: Not testing migrations against a real database" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-sticky.svg" alt="Sticky Note: Mistake 4: Not testing migrations against a real database" width="30%">
+<a href="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/59-interview-databases-b/mistake-4-not-testing-migrations-against-a-real-database-sticky.svg" alt="Sticky Note: Mistake 4: Not testing migrations against a real database" width="30%">
 </a>
 
 ```java

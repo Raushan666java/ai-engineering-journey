@@ -44,14 +44,14 @@ flowchart LR
 
 ### 2.1 Introduction to Virtualization
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-handwritten.svg" alt="Handwritten: 2.1 Introduction to Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-handwritten.svg" alt="Handwritten: 2.1 Introduction to Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-diagram.svg" alt="Diagram: 2.1 Introduction to Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-diagram.svg" alt="Diagram: 2.1 Introduction to Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-sticky.svg" alt="Sticky Note: 2.1 Introduction to Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-sticky.svg" alt="Sticky Note: 2.1 Introduction to Virtualization" width="30%">
 </a>
 
 
@@ -61,14 +61,14 @@ The concept of virtualization dates to the 1960s with IBM's CP-40 and CP-67 main
 
 ### 2.2 Hypervisors
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-handwritten.svg" alt="Handwritten: 2.2 Hypervisors" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-handwritten.svg" alt="Handwritten: 2.2 Hypervisors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-diagram.svg" alt="Diagram: 2.2 Hypervisors" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-diagram.svg" alt="Diagram: 2.2 Hypervisors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-sticky.svg" alt="Sticky Note: 2.2 Hypervisors" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-sticky.svg" alt="Sticky Note: 2.2 Hypervisors" width="30%">
 </a>
 
 
@@ -90,14 +90,14 @@ VMware Workstation and VMware Fusion are Type 2 hypervisors for Windows/Linux an
 
 ### 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-handwritten.svg" alt="Handwritten: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-handwritten.svg" alt="Handwritten: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-diagram.svg" alt="Diagram: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-diagram.svg" alt="Diagram: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-sticky.svg" alt="Sticky Note: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-sticky.svg" alt="Sticky Note: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ Modern hypervisors use a hybrid approach. For most operations, hardware-assisted
 
 ### 2.4 KVM vs Xen vs VMware
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-handwritten.svg" alt="Handwritten: 2.4 KVM vs Xen vs VMware" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-handwritten.svg" alt="Handwritten: 2.4 KVM vs Xen vs VMware" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-diagram.svg" alt="Diagram: 2.4 KVM vs Xen vs VMware" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-diagram.svg" alt="Diagram: 2.4 KVM vs Xen vs VMware" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-sticky.svg" alt="Sticky Note: 2.4 KVM vs Xen vs VMware" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-sticky.svg" alt="Sticky Note: 2.4 KVM vs Xen vs VMware" width="30%">
 </a>
 
 
@@ -163,14 +163,14 @@ KVM dominates public cloud because it is open source, integrated into Linux (lev
 
 ### 2.5 Server Virtualization
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-handwritten.svg" alt="Handwritten: 2.5 Server Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-handwritten.svg" alt="Handwritten: 2.5 Server Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-diagram.svg" alt="Diagram: 2.5 Server Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-diagram.svg" alt="Diagram: 2.5 Server Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-sticky.svg" alt="Sticky Note: 2.5 Server Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-sticky.svg" alt="Sticky Note: 2.5 Server Virtualization" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ Annual Savings: $6,000
 
 ### 2.6 Storage Virtualization
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-handwritten.svg" alt="Handwritten: 2.6 Storage Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-handwritten.svg" alt="Handwritten: 2.6 Storage Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-diagram.svg" alt="Diagram: 2.6 Storage Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-diagram.svg" alt="Diagram: 2.6 Storage Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-sticky.svg" alt="Sticky Note: 2.6 Storage Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-sticky.svg" alt="Sticky Note: 2.6 Storage Virtualization" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ Object storage virtualization abstracts storage at the object level, where data 
 
 ### 2.7 Network Virtualization
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-handwritten.svg" alt="Handwritten: 2.7 Network Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-handwritten.svg" alt="Handwritten: 2.7 Network Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-diagram.svg" alt="Diagram: 2.7 Network Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-diagram.svg" alt="Diagram: 2.7 Network Virtualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-sticky.svg" alt="Sticky Note: 2.7 Network Virtualization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-sticky.svg" alt="Sticky Note: 2.7 Network Virtualization" width="30%">
 </a>
 
 
@@ -271,14 +271,14 @@ Network functions virtualization (NFV) replaces dedicated network appliances (ro
 
 ### 2.8 Containers vs Virtual Machines
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-handwritten.svg" alt="Handwritten: 2.8 Containers vs Virtual Machines" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-handwritten.svg" alt="Handwritten: 2.8 Containers vs Virtual Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-diagram.svg" alt="Diagram: 2.8 Containers vs Virtual Machines" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-diagram.svg" alt="Diagram: 2.8 Containers vs Virtual Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-sticky.svg" alt="Sticky Note: 2.8 Containers vs Virtual Machines" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-sticky.svg" alt="Sticky Note: 2.8 Containers vs Virtual Machines" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ graph TB
 
 ### 2.9 Docker Architecture
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-handwritten.svg" alt="Handwritten: 2.9 Docker Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-handwritten.svg" alt="Handwritten: 2.9 Docker Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-diagram.svg" alt="Diagram: 2.9 Docker Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-diagram.svg" alt="Diagram: 2.9 Docker Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-sticky.svg" alt="Sticky Note: 2.9 Docker Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-sticky.svg" alt="Sticky Note: 2.9 Docker Architecture" width="30%">
 </a>
 
 
@@ -371,14 +371,14 @@ Layers are cached: rebuilding after changing `src/` only rebuilds Layer 5 and la
 
 ### 2.10 Namespaces and Control Groups
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-handwritten.svg" alt="Handwritten: 2.10 Namespaces and Control Groups" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-handwritten.svg" alt="Handwritten: 2.10 Namespaces and Control Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-diagram.svg" alt="Diagram: 2.10 Namespaces and Control Groups" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-diagram.svg" alt="Diagram: 2.10 Namespaces and Control Groups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-sticky.svg" alt="Sticky Note: 2.10 Namespaces and Control Groups" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-sticky.svg" alt="Sticky Note: 2.10 Namespaces and Control Groups" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ PIDs: 128 max processes
 
 ### 2.11 Virtualization vs Bare Metal
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-handwritten.svg" alt="Handwritten: 2.11 Virtualization vs Bare Metal" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-handwritten.svg" alt="Handwritten: 2.11 Virtualization vs Bare Metal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-diagram.svg" alt="Diagram: 2.11 Virtualization vs Bare Metal" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-diagram.svg" alt="Diagram: 2.11 Virtualization vs Bare Metal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-sticky.svg" alt="Sticky Note: 2.11 Virtualization vs Bare Metal" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-sticky.svg" alt="Sticky Note: 2.11 Virtualization vs Bare Metal" width="30%">
 </a>
 
 
@@ -461,14 +461,14 @@ Many cloud providers offer both options. AWS offers bare-metal EC2 instances (i3
 
 ### 2.12 Performance Considerations
 
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-handwritten.svg" alt="Handwritten: 2.12 Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-handwritten.svg" alt="Handwritten: 2.12 Performance Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-diagram.svg" alt="Diagram: 2.12 Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-diagram.svg" alt="Diagram: 2.12 Performance Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-sticky.svg" alt="Sticky Note: 2.12 Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-sticky.svg" alt="Sticky Note: 2.12 Performance Considerations" width="30%">
 </a>
 
 

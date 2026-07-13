@@ -53,14 +53,14 @@ flowchart LR
 
 ### 28.1 Financial Data Models & Compliance
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-handwritten.svg" alt="Handwritten: 28.1 Financial Data Models & Compliance" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-handwritten.svg" alt="Handwritten: 28.1 Financial Data Models & Compliance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-diagram.svg" alt="Diagram: 28.1 Financial Data Models & Compliance" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-diagram.svg" alt="Diagram: 28.1 Financial Data Models & Compliance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-sticky.svg" alt="Sticky Note: 28.1 Financial Data Models & Compliance" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-1-financial-data-models-compliance-sticky.svg" alt="Sticky Note: 28.1 Financial Data Models & Compliance" width="30%">
 </a>
 
 
@@ -428,14 +428,14 @@ class FinancialEncryption
 
 ### 28.2 Fraud Detection Agents
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-handwritten.svg" alt="Handwritten: 28.2 Fraud Detection Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-handwritten.svg" alt="Handwritten: 28.2 Fraud Detection Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-diagram.svg" alt="Diagram: 28.2 Fraud Detection Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-diagram.svg" alt="Diagram: 28.2 Fraud Detection Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-sticky.svg" alt="Sticky Note: 28.2 Fraud Detection Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-2-fraud-detection-agents-sticky.svg" alt="Sticky Note: 28.2 Fraud Detection Agents" width="30%">
 </a>
 
 
@@ -680,14 +680,14 @@ class TransactionMonitor
 
 ### 28.3 Transaction Monitoring & Alerting
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-handwritten.svg" alt="Handwritten: 28.3 Transaction Monitoring & Alerting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-handwritten.svg" alt="Handwritten: 28.3 Transaction Monitoring & Alerting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-diagram.svg" alt="Diagram: 28.3 Transaction Monitoring & Alerting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-diagram.svg" alt="Diagram: 28.3 Transaction Monitoring & Alerting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-sticky.svg" alt="Sticky Note: 28.3 Transaction Monitoring & Alerting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-3-transaction-monitoring-alerting-sticky.svg" alt="Sticky Note: 28.3 Transaction Monitoring & Alerting" width="30%">
 </a>
 
 
@@ -899,14 +899,14 @@ PROMPT;
 
 ### 28.4 KYC/AML Verification Agents
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-handwritten.svg" alt="Handwritten: 28.4 KYC/AML Verification Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-handwritten.svg" alt="Handwritten: 28.4 KYC/AML Verification Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-diagram.svg" alt="Diagram: 28.4 KYC/AML Verification Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-diagram.svg" alt="Diagram: 28.4 KYC/AML Verification Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-sticky.svg" alt="Sticky Note: 28.4 KYC/AML Verification Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-4-kyc-aml-verification-agents-sticky.svg" alt="Sticky Note: 28.4 KYC/AML Verification Agents" width="30%">
 </a>
 
 
@@ -1262,14 +1262,14 @@ class WatchlistEntry extends Model
 
 ### 28.5 Credit Scoring Pipelines
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-handwritten.svg" alt="Handwritten: 28.5 Credit Scoring Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-handwritten.svg" alt="Handwritten: 28.5 Credit Scoring Pipelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-diagram.svg" alt="Diagram: 28.5 Credit Scoring Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-diagram.svg" alt="Diagram: 28.5 Credit Scoring Pipelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-sticky.svg" alt="Sticky Note: 28.5 Credit Scoring Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-5-credit-scoring-pipelines-sticky.svg" alt="Sticky Note: 28.5 Credit Scoring Pipelines" width="30%">
 </a>
 
 
@@ -1502,14 +1502,14 @@ PROMPT;
 
 ### 28.6 Trading Signal Automation
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-handwritten.svg" alt="Handwritten: 28.6 Trading Signal Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-handwritten.svg" alt="Handwritten: 28.6 Trading Signal Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-diagram.svg" alt="Diagram: 28.6 Trading Signal Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-diagram.svg" alt="Diagram: 28.6 Trading Signal Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-sticky.svg" alt="Sticky Note: 28.6 Trading Signal Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-6-trading-signal-automation-sticky.svg" alt="Sticky Note: 28.6 Trading Signal Automation" width="30%">
 </a>
 
 
@@ -1835,14 +1835,14 @@ PROMPT;
 
 ### 28.7 Portfolio Management Agents
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-handwritten.svg" alt="Handwritten: 28.7 Portfolio Management Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-handwritten.svg" alt="Handwritten: 28.7 Portfolio Management Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-diagram.svg" alt="Diagram: 28.7 Portfolio Management Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-diagram.svg" alt="Diagram: 28.7 Portfolio Management Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-sticky.svg" alt="Sticky Note: 28.7 Portfolio Management Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-7-portfolio-management-agents-sticky.svg" alt="Sticky Note: 28.7 Portfolio Management Agents" width="30%">
 </a>
 
 
@@ -2179,14 +2179,14 @@ class RebalanceTrade extends Model
 
 ### 28.8 Regulatory Reporting Automation
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-handwritten.svg" alt="Handwritten: 28.8 Regulatory Reporting Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-handwritten.svg" alt="Handwritten: 28.8 Regulatory Reporting Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-diagram.svg" alt="Diagram: 28.8 Regulatory Reporting Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-diagram.svg" alt="Diagram: 28.8 Regulatory Reporting Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-sticky.svg" alt="Sticky Note: 28.8 Regulatory Reporting Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-8-regulatory-reporting-automation-sticky.svg" alt="Sticky Note: 28.8 Regulatory Reporting Automation" width="30%">
 </a>
 
 
@@ -2427,14 +2427,14 @@ class RegulatoryReport extends Model
 
 ### 28.9 Payment Processing Automation
 
-<a href="../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-handwritten.svg" alt="Handwritten: 28.9 Payment Processing Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-handwritten.svg" alt="Handwritten: 28.9 Payment Processing Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-diagram.svg" alt="Diagram: 28.9 Payment Processing Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-diagram.svg" alt="Diagram: 28.9 Payment Processing Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-sticky.svg" alt="Sticky Note: 28.9 Payment Processing Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/28-finance/28-9-payment-processing-automation-sticky.svg" alt="Sticky Note: 28.9 Payment Processing Automation" width="30%">
 </a>
 
 

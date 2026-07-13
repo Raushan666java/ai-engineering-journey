@@ -128,14 +128,14 @@ flowchart LR
 
 ### 32.1 Marketing Data Models
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-handwritten.svg" alt="Handwritten: 32.1 Marketing Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-handwritten.svg" alt="Handwritten: 32.1 Marketing Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-diagram.svg" alt="Diagram: 32.1 Marketing Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-diagram.svg" alt="Diagram: 32.1 Marketing Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-sticky.svg" alt="Sticky Note: 32.1 Marketing Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-sticky.svg" alt="Sticky Note: 32.1 Marketing Data Models" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ class ContentAsset extends Model
 
 ### 32.2 Campaign Optimization Agents
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-handwritten.svg" alt="Handwritten: 32.2 Campaign Optimization Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-handwritten.svg" alt="Handwritten: 32.2 Campaign Optimization Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-diagram.svg" alt="Diagram: 32.2 Campaign Optimization Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-diagram.svg" alt="Diagram: 32.2 Campaign Optimization Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-sticky.svg" alt="Sticky Note: 32.2 Campaign Optimization Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-sticky.svg" alt="Sticky Note: 32.2 Campaign Optimization Agents" width="30%">
 </a>
 
 
@@ -809,14 +809,14 @@ class OptimizeCampaignsCommand extends Command
 
 ### 32.3 Audience Segmentation & Targeting
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-handwritten.svg" alt="Handwritten: 32.3 Audience Segmentation & Targeting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-handwritten.svg" alt="Handwritten: 32.3 Audience Segmentation & Targeting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-diagram.svg" alt="Diagram: 32.3 Audience Segmentation & Targeting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-diagram.svg" alt="Diagram: 32.3 Audience Segmentation & Targeting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-sticky.svg" alt="Sticky Note: 32.3 Audience Segmentation & Targeting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-sticky.svg" alt="Sticky Note: 32.3 Audience Segmentation & Targeting" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ PROMPT;
 
 ### 32.4 Content Generation Pipelines
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-handwritten.svg" alt="Handwritten: 32.4 Content Generation Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-handwritten.svg" alt="Handwritten: 32.4 Content Generation Pipelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-diagram.svg" alt="Diagram: 32.4 Content Generation Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-diagram.svg" alt="Diagram: 32.4 Content Generation Pipelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-sticky.svg" alt="Sticky Note: 32.4 Content Generation Pipelines" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-sticky.svg" alt="Sticky Note: 32.4 Content Generation Pipelines" width="30%">
 </a>
 
 
@@ -1498,14 +1498,14 @@ class GenerateMarketingContentCommand extends Command
 
 ### 32.5 A/B Testing Automation
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-handwritten.svg" alt="Handwritten: 32.5 A/B Testing Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-handwritten.svg" alt="Handwritten: 32.5 A/B Testing Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-diagram.svg" alt="Diagram: 32.5 A/B Testing Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-diagram.svg" alt="Diagram: 32.5 A/B Testing Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-sticky.svg" alt="Sticky Note: 32.5 A/B Testing Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-sticky.svg" alt="Sticky Note: 32.5 A/B Testing Automation" width="30%">
 </a>
 
 
@@ -1802,14 +1802,14 @@ PROMPT;
 
 ### 32.6 SEO Analysis Agents
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-handwritten.svg" alt="Handwritten: 32.6 SEO Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-handwritten.svg" alt="Handwritten: 32.6 SEO Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-diagram.svg" alt="Diagram: 32.6 SEO Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-diagram.svg" alt="Diagram: 32.6 SEO Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-sticky.svg" alt="Sticky Note: 32.6 SEO Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-sticky.svg" alt="Sticky Note: 32.6 SEO Analysis Agents" width="30%">
 </a>
 
 
@@ -2186,14 +2186,14 @@ PROMPT;
 
 ### 32.7 Social Media Scheduling & Management
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-handwritten.svg" alt="Handwritten: 32.7 Social Media Scheduling & Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-handwritten.svg" alt="Handwritten: 32.7 Social Media Scheduling & Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-diagram.svg" alt="Diagram: 32.7 Social Media Scheduling & Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-diagram.svg" alt="Diagram: 32.7 Social Media Scheduling & Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-sticky.svg" alt="Sticky Note: 32.7 Social Media Scheduling & Management" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-sticky.svg" alt="Sticky Note: 32.7 Social Media Scheduling & Management" width="30%">
 </a>
 
 
@@ -2484,14 +2484,14 @@ PROMPT;
 
 ### 32.8 Lead Scoring & Nurturing
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-handwritten.svg" alt="Handwritten: 32.8 Lead Scoring & Nurturing" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-handwritten.svg" alt="Handwritten: 32.8 Lead Scoring & Nurturing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-diagram.svg" alt="Diagram: 32.8 Lead Scoring & Nurturing" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-diagram.svg" alt="Diagram: 32.8 Lead Scoring & Nurturing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-sticky.svg" alt="Sticky Note: 32.8 Lead Scoring & Nurturing" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-sticky.svg" alt="Sticky Note: 32.8 Lead Scoring & Nurturing" width="30%">
 </a>
 
 
@@ -2868,14 +2868,14 @@ PROMPT;
 
 ### 32.9 Marketing Analytics & Reporting
 
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-handwritten.svg" alt="Handwritten: 32.9 Marketing Analytics & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-handwritten.svg" alt="Handwritten: 32.9 Marketing Analytics & Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-diagram.svg" alt="Diagram: 32.9 Marketing Analytics & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-diagram.svg" alt="Diagram: 32.9 Marketing Analytics & Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-sticky.svg" alt="Sticky Note: 32.9 Marketing Analytics & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-sticky.svg" alt="Sticky Note: 32.9 Marketing Analytics & Reporting" width="30%">
 </a>
 
 

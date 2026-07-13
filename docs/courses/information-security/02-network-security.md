@@ -25,14 +25,14 @@ After completing this chapter you will be able to:
 
 ### 2.1 Firewalls
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-handwritten.svg" alt="Handwritten: 2.1 Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-handwritten.svg" alt="Handwritten: 2.1 Firewalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-diagram.svg" alt="Diagram: 2.1 Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-diagram.svg" alt="Diagram: 2.1 Firewalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-sticky.svg" alt="Sticky Note: 2.1 Firewalls" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-1-firewalls-sticky.svg" alt="Sticky Note: 2.1 Firewalls" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ flowchart LR
 
 ### 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-handwritten.svg" alt="Handwritten: 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-handwritten.svg" alt="Handwritten: 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-diagram.svg" alt="Diagram: 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-diagram.svg" alt="Diagram: 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-sticky.svg" alt="Sticky Note: 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-2-ids-ips-intrusion-detection-prevention-systems-sticky.svg" alt="Sticky Note: 2.2 IDS/IPS (Intrusion Detection / Prevention Systems)" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ flowchart LR
 
 ### 2.3 VPN (Virtual Private Network)
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-handwritten.svg" alt="Handwritten: 2.3 VPN (Virtual Private Network)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-handwritten.svg" alt="Handwritten: 2.3 VPN (Virtual Private Network)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-diagram.svg" alt="Diagram: 2.3 VPN (Virtual Private Network)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-diagram.svg" alt="Diagram: 2.3 VPN (Virtual Private Network)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-sticky.svg" alt="Sticky Note: 2.3 VPN (Virtual Private Network)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-3-vpn-virtual-private-network-sticky.svg" alt="Sticky Note: 2.3 VPN (Virtual Private Network)" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ flowchart TD
 
 ### 2.4 SSL/TLS Protocol
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-handwritten.svg" alt="Handwritten: 2.4 SSL/TLS Protocol" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-handwritten.svg" alt="Handwritten: 2.4 SSL/TLS Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-diagram.svg" alt="Diagram: 2.4 SSL/TLS Protocol" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-diagram.svg" alt="Diagram: 2.4 SSL/TLS Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-sticky.svg" alt="Sticky Note: 2.4 SSL/TLS Protocol" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-4-ssl-tls-protocol-sticky.svg" alt="Sticky Note: 2.4 SSL/TLS Protocol" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@ sequenceDiagram
 
 ### 2.5 HTTPS vs HTTP
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-handwritten.svg" alt="Handwritten: 2.5 HTTPS vs HTTP" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-handwritten.svg" alt="Handwritten: 2.5 HTTPS vs HTTP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-diagram.svg" alt="Diagram: 2.5 HTTPS vs HTTP" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-diagram.svg" alt="Diagram: 2.5 HTTPS vs HTTP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-sticky.svg" alt="Sticky Note: 2.5 HTTPS vs HTTP" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-5-https-vs-http-sticky.svg" alt="Sticky Note: 2.5 HTTPS vs HTTP" width="30%">
 </a>
 
 
@@ -331,14 +331,14 @@ sequenceDiagram
 
 ### 2.6 SSH (Secure Shell)
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-handwritten.svg" alt="Handwritten: 2.6 SSH (Secure Shell)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-handwritten.svg" alt="Handwritten: 2.6 SSH (Secure Shell)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-diagram.svg" alt="Diagram: 2.6 SSH (Secure Shell)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-diagram.svg" alt="Diagram: 2.6 SSH (Secure Shell)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-sticky.svg" alt="Sticky Note: 2.6 SSH (Secure Shell)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-6-ssh-secure-shell-sticky.svg" alt="Sticky Note: 2.6 SSH (Secure Shell)" width="30%">
 </a>
 
 
@@ -366,14 +366,14 @@ sequenceDiagram
 
 ### 2.7 Secure Email: PGP and S/MIME
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-handwritten.svg" alt="Handwritten: 2.7 Secure Email: PGP and S/MIME" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-handwritten.svg" alt="Handwritten: 2.7 Secure Email: PGP and S/MIME" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-diagram.svg" alt="Diagram: 2.7 Secure Email: PGP and S/MIME" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-diagram.svg" alt="Diagram: 2.7 Secure Email: PGP and S/MIME" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-sticky.svg" alt="Sticky Note: 2.7 Secure Email: PGP and S/MIME" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-7-secure-email-pgp-and-s-mime-sticky.svg" alt="Sticky Note: 2.7 Secure Email: PGP and S/MIME" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ flowchart TD
 
 ### 2.8 Solved MCQs (Exam Style)
 
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 2.8 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 2.8 Solved MCQs (Exam Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 2.8 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 2.8 Solved MCQs (Exam Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 2.8 Solved MCQs (Exam Style)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/02-network-security/2-8-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 2.8 Solved MCQs (Exam Style)" width="30%">
 </a>
 
 

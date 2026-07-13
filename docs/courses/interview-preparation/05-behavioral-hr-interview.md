@@ -13,14 +13,14 @@
 
 ### The STAR Method
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-handwritten.svg" alt="Handwritten: The STAR Method" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-handwritten.svg" alt="Handwritten: The STAR Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-diagram.svg" alt="Diagram: The STAR Method" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-diagram.svg" alt="Diagram: The STAR Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-sticky.svg" alt="Sticky Note: The STAR Method" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-star-method-sticky.svg" alt="Sticky Note: The STAR Method" width="30%">
 </a>
 
 
@@ -42,14 +42,14 @@ flowchart LR
 
 ### The CAR/STARR Framework (for Group Discussions & Situational Tests)
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-handwritten.svg" alt="Handwritten: The CAR/STARR Framework (for Group Discussions & Situational Tests)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-handwritten.svg" alt="Handwritten: The CAR/STARR Framework (for Group Discussions & Situational Tests)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-diagram.svg" alt="Diagram: The CAR/STARR Framework (for Group Discussions & Situational Tests)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-diagram.svg" alt="Diagram: The CAR/STARR Framework (for Group Discussions & Situational Tests)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-sticky.svg" alt="Sticky Note: The CAR/STARR Framework (for Group Discussions & Situational Tests)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/the-car-starr-framework-for-group-discussions-situational-tests-sticky.svg" alt="Sticky Note: The CAR/STARR Framework (for Group Discussions & Situational Tests)" width="30%">
 </a>
 
 
@@ -63,14 +63,14 @@ flowchart LR
 
 ### Common Behavioral Question Categories
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-handwritten.svg" alt="Handwritten: Common Behavioral Question Categories" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-handwritten.svg" alt="Handwritten: Common Behavioral Question Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-diagram.svg" alt="Diagram: Common Behavioral Question Categories" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-diagram.svg" alt="Diagram: Common Behavioral Question Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-sticky.svg" alt="Sticky Note: Common Behavioral Question Categories" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-question-categories-sticky.svg" alt="Sticky Note: Common Behavioral Question Categories" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ flowchart LR
 
 ### Q1: Tell me about a time you had a conflict with a team member.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-handwritten.svg" alt="Handwritten: Tell me about a time you had a conflict with a team member." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-handwritten.svg" alt="Handwritten: Tell me about a time you had a conflict with a team member." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-diagram.svg" alt="Diagram: Tell me about a time you had a conflict with a team member." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-diagram.svg" alt="Diagram: Tell me about a time you had a conflict with a team member." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-sticky.svg" alt="Sticky Note: Tell me about a time you had a conflict with a team member." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-a-conflict-with-a-team-member-sticky.svg" alt="Sticky Note: Tell me about a time you had a conflict with a team member." width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ flowchart LR
 
 ### Q2: Describe a time you had to work with a difficult team member.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-handwritten.svg" alt="Handwritten: Describe a time you had to work with a difficult team member." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-handwritten.svg" alt="Handwritten: Describe a time you had to work with a difficult team member." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-diagram.svg" alt="Diagram: Describe a time you had to work with a difficult team member." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-diagram.svg" alt="Diagram: Describe a time you had to work with a difficult team member." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-sticky.svg" alt="Sticky Note: Describe a time you had to work with a difficult team member." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-work-with-a-difficult-team-member-sticky.svg" alt="Sticky Note: Describe a time you had to work with a difficult team member." width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ flowchart LR
 
 ### Q3: Give an example of a successful teamwork experience.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-handwritten.svg" alt="Handwritten: Give an example of a successful teamwork experience." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-handwritten.svg" alt="Handwritten: Give an example of a successful teamwork experience." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-diagram.svg" alt="Diagram: Give an example of a successful teamwork experience." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-diagram.svg" alt="Diagram: Give an example of a successful teamwork experience." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-sticky.svg" alt="Sticky Note: Give an example of a successful teamwork experience." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-successful-teamwork-experience-sticky.svg" alt="Sticky Note: Give an example of a successful teamwork experience." width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ flowchart LR
 
 ### Q4: How do you handle disagreements in technical design decisions?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-handwritten.svg" alt="Handwritten: How do you handle disagreements in technical design decisions?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-handwritten.svg" alt="Handwritten: How do you handle disagreements in technical design decisions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-diagram.svg" alt="Diagram: How do you handle disagreements in technical design decisions?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-diagram.svg" alt="Diagram: How do you handle disagreements in technical design decisions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-sticky.svg" alt="Sticky Note: How do you handle disagreements in technical design decisions?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-disagreements-in-technical-design-decisions-sticky.svg" alt="Sticky Note: How do you handle disagreements in technical design decisions?" width="30%">
 </a>
 
 
@@ -216,14 +216,14 @@ flowchart LR
 
 ### Q5: Describe a time you helped a teammate who was struggling.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-handwritten.svg" alt="Handwritten: Describe a time you helped a teammate who was struggling." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-handwritten.svg" alt="Handwritten: Describe a time you helped a teammate who was struggling." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-diagram.svg" alt="Diagram: Describe a time you helped a teammate who was struggling." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-diagram.svg" alt="Diagram: Describe a time you helped a teammate who was struggling." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-sticky.svg" alt="Sticky Note: Describe a time you helped a teammate who was struggling." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-helped-a-teammate-who-was-struggling-sticky.svg" alt="Sticky Note: Describe a time you helped a teammate who was struggling." width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ flowchart LR
 
 ### Q6: Describe a time you demonstrated leadership.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-handwritten.svg" alt="Handwritten: Describe a time you demonstrated leadership." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-handwritten.svg" alt="Handwritten: Describe a time you demonstrated leadership." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-diagram.svg" alt="Diagram: Describe a time you demonstrated leadership." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-diagram.svg" alt="Diagram: Describe a time you demonstrated leadership." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-sticky.svg" alt="Sticky Note: Describe a time you demonstrated leadership." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-demonstrated-leadership-sticky.svg" alt="Sticky Note: Describe a time you demonstrated leadership." width="30%">
 </a>
 
 
@@ -282,14 +282,14 @@ flowchart LR
 
 ### Q7: Tell me about a time you went above and beyond your job description.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-handwritten.svg" alt="Handwritten: Tell me about a time you went above and beyond your job description." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-handwritten.svg" alt="Handwritten: Tell me about a time you went above and beyond your job description." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-diagram.svg" alt="Diagram: Tell me about a time you went above and beyond your job description." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-diagram.svg" alt="Diagram: Tell me about a time you went above and beyond your job description." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-sticky.svg" alt="Sticky Note: Tell me about a time you went above and beyond your job description." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-went-above-and-beyond-your-job-description-sticky.svg" alt="Sticky Note: Tell me about a time you went above and beyond your job description." width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ flowchart LR
 
 ### Q8: Describe a situation where you had to influence someone to see things your way.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-handwritten.svg" alt="Handwritten: Describe a situation where you had to influence someone to see things your way." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-handwritten.svg" alt="Handwritten: Describe a situation where you had to influence someone to see things your way." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-diagram.svg" alt="Diagram: Describe a situation where you had to influence someone to see things your way." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-diagram.svg" alt="Diagram: Describe a situation where you had to influence someone to see things your way." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-sticky.svg" alt="Sticky Note: Describe a situation where you had to influence someone to see things your way." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-situation-where-you-had-to-influence-someone-to-see-things-your-way-sticky.svg" alt="Sticky Note: Describe a situation where you had to influence someone to see things your way." width="30%">
 </a>
 
 
@@ -344,14 +344,14 @@ flowchart LR
 
 ### Q9: Tell me about a time you had to make a decision with incomplete information.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-handwritten.svg" alt="Handwritten: Tell me about a time you had to make a decision with incomplete information." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-handwritten.svg" alt="Handwritten: Tell me about a time you had to make a decision with incomplete information." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-diagram.svg" alt="Diagram: Tell me about a time you had to make a decision with incomplete information." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-diagram.svg" alt="Diagram: Tell me about a time you had to make a decision with incomplete information." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-sticky.svg" alt="Sticky Note: Tell me about a time you had to make a decision with incomplete information." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-make-a-decision-with-incomplete-information-sticky.svg" alt="Sticky Note: Tell me about a time you had to make a decision with incomplete information." width="30%">
 </a>
 
 
@@ -376,14 +376,14 @@ flowchart LR
 
 ### Q10: Describe a time you mentored someone.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-handwritten.svg" alt="Handwritten: Describe a time you mentored someone." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-handwritten.svg" alt="Handwritten: Describe a time you mentored someone." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-diagram.svg" alt="Diagram: Describe a time you mentored someone." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-diagram.svg" alt="Diagram: Describe a time you mentored someone." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-sticky.svg" alt="Sticky Note: Describe a time you mentored someone." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-mentored-someone-sticky.svg" alt="Sticky Note: Describe a time you mentored someone." width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ flowchart LR
 
 ### Q11: Tell me about the most challenging technical problem you've solved.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-handwritten.svg" alt="Handwritten: Tell me about the most challenging technical problem you've solved." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-handwritten.svg" alt="Handwritten: Tell me about the most challenging technical problem you've solved." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-diagram.svg" alt="Diagram: Tell me about the most challenging technical problem you've solved." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-diagram.svg" alt="Diagram: Tell me about the most challenging technical problem you've solved." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-sticky.svg" alt="Sticky Note: Tell me about the most challenging technical problem you've solved." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-the-most-challenging-technical-problem-you-ve-solved-sticky.svg" alt="Sticky Note: Tell me about the most challenging technical problem you've solved." width="30%">
 </a>
 
 
@@ -443,14 +443,14 @@ flowchart LR
 
 ### Q12: Describe a time you had to debug a complex production issue.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-handwritten.svg" alt="Handwritten: Describe a time you had to debug a complex production issue." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-handwritten.svg" alt="Handwritten: Describe a time you had to debug a complex production issue." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-diagram.svg" alt="Diagram: Describe a time you had to debug a complex production issue." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-diagram.svg" alt="Diagram: Describe a time you had to debug a complex production issue." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-sticky.svg" alt="Sticky Note: Describe a time you had to debug a complex production issue." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-debug-a-complex-production-issue-sticky.svg" alt="Sticky Note: Describe a time you had to debug a complex production issue." width="30%">
 </a>
 
 
@@ -474,14 +474,14 @@ flowchart LR
 
 ### Q13: Tell me about a project you're particularly proud of.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-handwritten.svg" alt="Handwritten: Tell me about a project you're particularly proud of." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-handwritten.svg" alt="Handwritten: Tell me about a project you're particularly proud of." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-diagram.svg" alt="Diagram: Tell me about a project you're particularly proud of." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-diagram.svg" alt="Diagram: Tell me about a project you're particularly proud of." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-sticky.svg" alt="Sticky Note: Tell me about a project you're particularly proud of." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-project-you-re-particularly-proud-of-sticky.svg" alt="Sticky Note: Tell me about a project you're particularly proud of." width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ flowchart LR
 
 ### Q14: Describe a time you had to learn a new technology quickly.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-handwritten.svg" alt="Handwritten: Describe a time you had to learn a new technology quickly." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-handwritten.svg" alt="Handwritten: Describe a time you had to learn a new technology quickly." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-diagram.svg" alt="Diagram: Describe a time you had to learn a new technology quickly." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-diagram.svg" alt="Diagram: Describe a time you had to learn a new technology quickly." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-sticky.svg" alt="Sticky Note: Describe a time you had to learn a new technology quickly." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-learn-a-new-technology-quickly-sticky.svg" alt="Sticky Note: Describe a time you had to learn a new technology quickly." width="30%">
 </a>
 
 
@@ -537,14 +537,14 @@ flowchart LR
 
 ### Q15: Tell me about a time you improved an existing process.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-handwritten.svg" alt="Handwritten: Tell me about a time you improved an existing process." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-handwritten.svg" alt="Handwritten: Tell me about a time you improved an existing process." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-diagram.svg" alt="Diagram: Tell me about a time you improved an existing process." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-diagram.svg" alt="Diagram: Tell me about a time you improved an existing process." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-sticky.svg" alt="Sticky Note: Tell me about a time you improved an existing process." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-improved-an-existing-process-sticky.svg" alt="Sticky Note: Tell me about a time you improved an existing process." width="30%">
 </a>
 
 
@@ -574,14 +574,14 @@ flowchart LR
 
 ### Q16: Tell me about a time you failed.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-handwritten.svg" alt="Handwritten: Tell me about a time you failed." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-handwritten.svg" alt="Handwritten: Tell me about a time you failed." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-diagram.svg" alt="Diagram: Tell me about a time you failed." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-diagram.svg" alt="Diagram: Tell me about a time you failed." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-sticky.svg" alt="Sticky Note: Tell me about a time you failed." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-failed-sticky.svg" alt="Sticky Note: Tell me about a time you failed." width="30%">
 </a>
 
 
@@ -611,14 +611,14 @@ flowchart LR
 
 ### Q17: Describe a time you made a mistake that affected a customer.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-handwritten.svg" alt="Handwritten: Describe a time you made a mistake that affected a customer." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-handwritten.svg" alt="Handwritten: Describe a time you made a mistake that affected a customer." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-diagram.svg" alt="Diagram: Describe a time you made a mistake that affected a customer." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-diagram.svg" alt="Diagram: Describe a time you made a mistake that affected a customer." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-sticky.svg" alt="Sticky Note: Describe a time you made a mistake that affected a customer." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-made-a-mistake-that-affected-a-customer-sticky.svg" alt="Sticky Note: Describe a time you made a mistake that affected a customer." width="30%">
 </a>
 
 
@@ -643,14 +643,14 @@ flowchart LR
 
 ### Q18: Tell me about a time you received negative feedback.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-handwritten.svg" alt="Handwritten: Tell me about a time you received negative feedback." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-handwritten.svg" alt="Handwritten: Tell me about a time you received negative feedback." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-diagram.svg" alt="Diagram: Tell me about a time you received negative feedback." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-diagram.svg" alt="Diagram: Tell me about a time you received negative feedback." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-sticky.svg" alt="Sticky Note: Tell me about a time you received negative feedback." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-negative-feedback-sticky.svg" alt="Sticky Note: Tell me about a time you received negative feedback." width="30%">
 </a>
 
 
@@ -673,14 +673,14 @@ flowchart LR
 
 ### Q19: Describe a project that didn't go as planned.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-handwritten.svg" alt="Handwritten: Describe a project that didn't go as planned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-handwritten.svg" alt="Handwritten: Describe a project that didn't go as planned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-diagram.svg" alt="Diagram: Describe a project that didn't go as planned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-diagram.svg" alt="Diagram: Describe a project that didn't go as planned." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-sticky.svg" alt="Sticky Note: Describe a project that didn't go as planned." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-project-that-didn-t-go-as-planned-sticky.svg" alt="Sticky Note: Describe a project that didn't go as planned." width="30%">
 </a>
 
 
@@ -706,14 +706,14 @@ flowchart LR
 
 ### Q20: Describe a time you had to adapt to a significant change at work.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-handwritten.svg" alt="Handwritten: Describe a time you had to adapt to a significant change at work." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-handwritten.svg" alt="Handwritten: Describe a time you had to adapt to a significant change at work." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-diagram.svg" alt="Diagram: Describe a time you had to adapt to a significant change at work." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-diagram.svg" alt="Diagram: Describe a time you had to adapt to a significant change at work." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-sticky.svg" alt="Sticky Note: Describe a time you had to adapt to a significant change at work." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-had-to-adapt-to-a-significant-change-at-work-sticky.svg" alt="Sticky Note: Describe a time you had to adapt to a significant change at work." width="30%">
 </a>
 
 
@@ -736,14 +736,14 @@ flowchart LR
 
 ### Q21: Tell me about a time you had to work outside your comfort zone.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-handwritten.svg" alt="Handwritten: Tell me about a time you had to work outside your comfort zone." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-handwritten.svg" alt="Handwritten: Tell me about a time you had to work outside your comfort zone." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-diagram.svg" alt="Diagram: Tell me about a time you had to work outside your comfort zone." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-diagram.svg" alt="Diagram: Tell me about a time you had to work outside your comfort zone." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-sticky.svg" alt="Sticky Note: Tell me about a time you had to work outside your comfort zone." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-work-outside-your-comfort-zone-sticky.svg" alt="Sticky Note: Tell me about a time you had to work outside your comfort zone." width="30%">
 </a>
 
 
@@ -766,14 +766,14 @@ flowchart LR
 
 ### Q22: Give an example of a skill you taught yourself.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-handwritten.svg" alt="Handwritten: Give an example of a skill you taught yourself." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-handwritten.svg" alt="Handwritten: Give an example of a skill you taught yourself." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-diagram.svg" alt="Diagram: Give an example of a skill you taught yourself." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-diagram.svg" alt="Diagram: Give an example of a skill you taught yourself." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-sticky.svg" alt="Sticky Note: Give an example of a skill you taught yourself." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/give-an-example-of-a-skill-you-taught-yourself-sticky.svg" alt="Sticky Note: Give an example of a skill you taught yourself." width="30%">
 </a>
 
 
@@ -800,14 +800,14 @@ flowchart LR
 
 ### Q23: Tell me about a time you had to explain a technical concept to a non-technical person.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-handwritten.svg" alt="Handwritten: Tell me about a time you had to explain a technical concept to a non-technical person." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-handwritten.svg" alt="Handwritten: Tell me about a time you had to explain a technical concept to a non-technical person." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-diagram.svg" alt="Diagram: Tell me about a time you had to explain a technical concept to a non-technical person." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-diagram.svg" alt="Diagram: Tell me about a time you had to explain a technical concept to a non-technical person." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-sticky.svg" alt="Sticky Note: Tell me about a time you had to explain a technical concept to a non-technical person." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-explain-a-technical-concept-to-a-non-technical-person-sticky.svg" alt="Sticky Note: Tell me about a time you had to explain a technical concept to a non-technical person." width="30%">
 </a>
 
 
@@ -830,14 +830,14 @@ flowchart LR
 
 ### Q24: Describe a time you dealt with a difficult client or stakeholder.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-handwritten.svg" alt="Handwritten: Describe a time you dealt with a difficult client or stakeholder." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-handwritten.svg" alt="Handwritten: Describe a time you dealt with a difficult client or stakeholder." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-diagram.svg" alt="Diagram: Describe a time you dealt with a difficult client or stakeholder." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-diagram.svg" alt="Diagram: Describe a time you dealt with a difficult client or stakeholder." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-sticky.svg" alt="Sticky Note: Describe a time you dealt with a difficult client or stakeholder." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/describe-a-time-you-dealt-with-a-difficult-client-or-stakeholder-sticky.svg" alt="Sticky Note: Describe a time you dealt with a difficult client or stakeholder." width="30%">
 </a>
 
 
@@ -861,14 +861,14 @@ flowchart LR
 
 ### Q25: Tell me about a time you had to persuade a group to adopt your idea.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-handwritten.svg" alt="Handwritten: Tell me about a time you had to persuade a group to adopt your idea." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-handwritten.svg" alt="Handwritten: Tell me about a time you had to persuade a group to adopt your idea." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-diagram.svg" alt="Diagram: Tell me about a time you had to persuade a group to adopt your idea." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-diagram.svg" alt="Diagram: Tell me about a time you had to persuade a group to adopt your idea." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-sticky.svg" alt="Sticky Note: Tell me about a time you had to persuade a group to adopt your idea." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-had-to-persuade-a-group-to-adopt-your-idea-sticky.svg" alt="Sticky Note: Tell me about a time you had to persuade a group to adopt your idea." width="30%">
 </a>
 
 
@@ -895,14 +895,14 @@ flowchart LR
 
 ### Q26: Tell me about yourself.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-handwritten.svg" alt="Handwritten: Tell me about yourself." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-handwritten.svg" alt="Handwritten: Tell me about yourself." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-diagram.svg" alt="Diagram: Tell me about yourself." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-diagram.svg" alt="Diagram: Tell me about yourself." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-sticky.svg" alt="Sticky Note: Tell me about yourself." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-yourself-sticky.svg" alt="Sticky Note: Tell me about yourself." width="30%">
 </a>
 
 
@@ -922,14 +922,14 @@ I am looking for roles where I can work on challenging distributed systems probl
 
 ### Q27: What are your strengths and weaknesses?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-handwritten.svg" alt="Handwritten: What are your strengths and weaknesses?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-handwritten.svg" alt="Handwritten: What are your strengths and weaknesses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-diagram.svg" alt="Diagram: What are your strengths and weaknesses?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-diagram.svg" alt="Diagram: What are your strengths and weaknesses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-sticky.svg" alt="Sticky Note: What are your strengths and weaknesses?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-are-your-strengths-and-weaknesses-sticky.svg" alt="Sticky Note: What are your strengths and weaknesses?" width="30%">
 </a>
 
 
@@ -949,14 +949,14 @@ I am looking for roles where I can work on challenging distributed systems probl
 
 ### Q28: Why do you want to work at this company?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-handwritten.svg" alt="Handwritten: Why do you want to work at this company?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-handwritten.svg" alt="Handwritten: Why do you want to work at this company?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-diagram.svg" alt="Diagram: Why do you want to work at this company?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-diagram.svg" alt="Diagram: Why do you want to work at this company?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-sticky.svg" alt="Sticky Note: Why do you want to work at this company?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-do-you-want-to-work-at-this-company-sticky.svg" alt="Sticky Note: Why do you want to work at this company?" width="30%">
 </a>
 
 
@@ -974,14 +974,14 @@ I am looking for roles where I can work on challenging distributed systems probl
 
 ### Q29: Where do you see yourself in 5 years?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: Where do you see yourself in 5 years?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: Where do you see yourself in 5 years?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: Where do you see yourself in 5 years?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: Where do you see yourself in 5 years?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: Where do you see yourself in 5 years?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: Where do you see yourself in 5 years?" width="30%">
 </a>
 
 
@@ -1001,14 +1001,14 @@ I'm open to both IC and management tracks, depending on where I can add the most
 
 ### Q30: Why did you leave your previous job?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-handwritten.svg" alt="Handwritten: Why did you leave your previous job?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-handwritten.svg" alt="Handwritten: Why did you leave your previous job?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-diagram.svg" alt="Diagram: Why did you leave your previous job?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-diagram.svg" alt="Diagram: Why did you leave your previous job?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-sticky.svg" alt="Sticky Note: Why did you leave your previous job?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/why-did-you-leave-your-previous-job-sticky.svg" alt="Sticky Note: Why did you leave your previous job?" width="30%">
 </a>
 
 
@@ -1030,14 +1030,14 @@ Your company offers all three, which is why I applied."
 
 ### Q31: What is your expected salary?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-handwritten.svg" alt="Handwritten: What is your expected salary?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-handwritten.svg" alt="Handwritten: What is your expected salary?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-diagram.svg" alt="Diagram: What is your expected salary?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-diagram.svg" alt="Diagram: What is your expected salary?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-sticky.svg" alt="Sticky Note: What is your expected salary?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-is-your-expected-salary-sticky.svg" alt="Sticky Note: What is your expected salary?" width="30%">
 </a>
 
 
@@ -1058,14 +1058,14 @@ Your company offers all three, which is why I applied."
 
 ### Q32: Do you have any questions for me?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-handwritten.svg" alt="Handwritten: Do you have any questions for me?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-handwritten.svg" alt="Handwritten: Do you have any questions for me?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-diagram.svg" alt="Diagram: Do you have any questions for me?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-diagram.svg" alt="Diagram: Do you have any questions for me?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-sticky.svg" alt="Sticky Note: Do you have any questions for me?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/do-you-have-any-questions-for-me-sticky.svg" alt="Sticky Note: Do you have any questions for me?" width="30%">
 </a>
 
 
@@ -1094,14 +1094,14 @@ Your company offers all three, which is why I applied."
 
 ### Q33: Tell me about a time you received appreciation or recognition.
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-handwritten.svg" alt="Handwritten: Tell me about a time you received appreciation or recognition." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-handwritten.svg" alt="Handwritten: Tell me about a time you received appreciation or recognition." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-diagram.svg" alt="Diagram: Tell me about a time you received appreciation or recognition." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-diagram.svg" alt="Diagram: Tell me about a time you received appreciation or recognition." width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-sticky.svg" alt="Sticky Note: Tell me about a time you received appreciation or recognition." width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/tell-me-about-a-time-you-received-appreciation-or-recognition-sticky.svg" alt="Sticky Note: Tell me about a time you received appreciation or recognition." width="30%">
 </a>
 
 
@@ -1119,14 +1119,14 @@ Your company offers all three, which is why I applied."
 
 ### Q34: How do you handle stress and pressure?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-handwritten.svg" alt="Handwritten: How do you handle stress and pressure?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-handwritten.svg" alt="Handwritten: How do you handle stress and pressure?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-diagram.svg" alt="Diagram: How do you handle stress and pressure?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-diagram.svg" alt="Diagram: How do you handle stress and pressure?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-sticky.svg" alt="Sticky Note: How do you handle stress and pressure?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/how-do-you-handle-stress-and-pressure-sticky.svg" alt="Sticky Note: How do you handle stress and pressure?" width="30%">
 </a>
 
 
@@ -1145,14 +1145,14 @@ During the 2022 flash sale, our system was under 10x normal load. Instead of pan
 
 ### Q35: What motivates you?
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-handwritten.svg" alt="Handwritten: What motivates you?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-handwritten.svg" alt="Handwritten: What motivates you?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-diagram.svg" alt="Diagram: What motivates you?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-diagram.svg" alt="Diagram: What motivates you?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-sticky.svg" alt="Sticky Note: What motivates you?" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-motivates-you-sticky.svg" alt="Sticky Note: What motivates you?" width="30%">
 </a>
 
 
@@ -1174,14 +1174,14 @@ I find that roles combining all three — like the one I'm interviewing for — 
 
 ### GD Framework
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-handwritten.svg" alt="Handwritten: GD Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-handwritten.svg" alt="Handwritten: GD Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-diagram.svg" alt="Diagram: GD Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-diagram.svg" alt="Diagram: GD Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-sticky.svg" alt="Sticky Note: GD Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-framework-sticky.svg" alt="Sticky Note: GD Framework" width="30%">
 </a>
 
 
@@ -1196,14 +1196,14 @@ flowchart LR
 
 ### GD Do's and Don'ts
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-handwritten.svg" alt="Handwritten: GD Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-handwritten.svg" alt="Handwritten: GD Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-diagram.svg" alt="Diagram: GD Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-diagram.svg" alt="Diagram: GD Do's and Don'ts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-sticky.svg" alt="Sticky Note: GD Do's and Don'ts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/gd-do-s-and-don-ts-sticky.svg" alt="Sticky Note: GD Do's and Don'ts" width="30%">
 </a>
 
 
@@ -1219,14 +1219,14 @@ flowchart LR
 
 ### Common GD Topics for IT/Gov Exams
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-handwritten.svg" alt="Handwritten: Common GD Topics for IT/Gov Exams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-handwritten.svg" alt="Handwritten: Common GD Topics for IT/Gov Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-diagram.svg" alt="Diagram: Common GD Topics for IT/Gov Exams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-diagram.svg" alt="Diagram: Common GD Topics for IT/Gov Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-sticky.svg" alt="Sticky Note: Common GD Topics for IT/Gov Exams" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-gd-topics-for-it-gov-exams-sticky.svg" alt="Sticky Note: Common GD Topics for IT/Gov Exams" width="30%">
 </a>
 
 
@@ -1240,14 +1240,14 @@ flowchart LR
 
 ### Sample GD Script: "Does AI Replace Software Engineers?"
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-handwritten.svg" alt="Handwritten: Sample GD Script: "Does AI Replace Software Engineers?"" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-handwritten.svg" alt="Handwritten: Sample GD Script: "Does AI Replace Software Engineers?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-diagram.svg" alt="Diagram: Sample GD Script: "Does AI Replace Software Engineers?"" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-diagram.svg" alt="Diagram: Sample GD Script: "Does AI Replace Software Engineers?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-sticky.svg" alt="Sticky Note: Sample GD Script: "Does AI Replace Software Engineers?"" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sample-gd-script-does-ai-replace-software-engineers-sticky.svg" alt="Sticky Note: Sample GD Script: "Does AI Replace Software Engineers?"" width="30%">
 </a>
 
 
@@ -1267,14 +1267,14 @@ flowchart LR
 
 ### STAR Story Matrix
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-handwritten.svg" alt="Handwritten: STAR Story Matrix" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-handwritten.svg" alt="Handwritten: STAR Story Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-diagram.svg" alt="Diagram: STAR Story Matrix" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-diagram.svg" alt="Diagram: STAR Story Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-sticky.svg" alt="Sticky Note: STAR Story Matrix" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/star-story-matrix-sticky.svg" alt="Sticky Note: STAR Story Matrix" width="30%">
 </a>
 
 
@@ -1290,14 +1290,14 @@ Prepare stories that cover multiple categories with a single experience:
 
 ### Common Behavioral Questions by Role
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-handwritten.svg" alt="Handwritten: Common Behavioral Questions by Role" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-handwritten.svg" alt="Handwritten: Common Behavioral Questions by Role" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-diagram.svg" alt="Diagram: Common Behavioral Questions by Role" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-diagram.svg" alt="Diagram: Common Behavioral Questions by Role" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-sticky.svg" alt="Sticky Note: Common Behavioral Questions by Role" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-behavioral-questions-by-role-sticky.svg" alt="Sticky Note: Common Behavioral Questions by Role" width="30%">
 </a>
 
 
@@ -1311,14 +1311,14 @@ Prepare stories that cover multiple categories with a single experience:
 
 ### HR Interview Checklist
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-handwritten.svg" alt="Handwritten: HR Interview Checklist" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-handwritten.svg" alt="Handwritten: HR Interview Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-diagram.svg" alt="Diagram: HR Interview Checklist" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-diagram.svg" alt="Diagram: HR Interview Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-sticky.svg" alt="Sticky Note: HR Interview Checklist" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/hr-interview-checklist-sticky.svg" alt="Sticky Note: HR Interview Checklist" width="30%">
 </a>
 
 
@@ -1332,14 +1332,14 @@ Prepare stories that cover multiple categories with a single experience:
 
 ### Salary Negotiation Framework
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-handwritten.svg" alt="Handwritten: Salary Negotiation Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-handwritten.svg" alt="Handwritten: Salary Negotiation Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-diagram.svg" alt="Diagram: Salary Negotiation Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-diagram.svg" alt="Diagram: Salary Negotiation Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-sticky.svg" alt="Sticky Note: Salary Negotiation Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/salary-negotiation-framework-sticky.svg" alt="Sticky Note: Salary Negotiation Framework" width="30%">
 </a>
 
 
@@ -1361,14 +1361,14 @@ Prepare stories that cover multiple categories with a single experience:
 
 ### Understanding SJT Format
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-handwritten.svg" alt="Handwritten: Understanding SJT Format" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-handwritten.svg" alt="Handwritten: Understanding SJT Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-diagram.svg" alt="Diagram: Understanding SJT Format" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-diagram.svg" alt="Diagram: Understanding SJT Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-sticky.svg" alt="Sticky Note: Understanding SJT Format" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/understanding-sjt-format-sticky.svg" alt="Sticky Note: Understanding SJT Format" width="30%">
 </a>
 
 
@@ -1376,14 +1376,14 @@ SJTs present workplace scenarios with multiple possible responses. You must choo
 
 ### SJT Scoring Framework
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-handwritten.svg" alt="Handwritten: SJT Scoring Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-handwritten.svg" alt="Handwritten: SJT Scoring Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-diagram.svg" alt="Diagram: SJT Scoring Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-diagram.svg" alt="Diagram: SJT Scoring Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-sticky.svg" alt="Sticky Note: SJT Scoring Framework" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-scoring-framework-sticky.svg" alt="Sticky Note: SJT Scoring Framework" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ SJTs present workplace scenarios with multiple possible responses. You must choo
 
 ### Common SJT Scenarios
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-handwritten.svg" alt="Handwritten: Common SJT Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-handwritten.svg" alt="Handwritten: Common SJT Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-diagram.svg" alt="Diagram: Common SJT Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-diagram.svg" alt="Diagram: Common SJT Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-sticky.svg" alt="Sticky Note: Common SJT Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/common-sjt-scenarios-sticky.svg" alt="Sticky Note: Common SJT Scenarios" width="30%">
 </a>
 
 
@@ -1482,14 +1482,14 @@ Response D: Stay late to both test and meet the deadline
 
 ### SJT Tips
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-handwritten.svg" alt="Handwritten: SJT Tips" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-handwritten.svg" alt="Handwritten: SJT Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-diagram.svg" alt="Diagram: SJT Tips" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-diagram.svg" alt="Diagram: SJT Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-sticky.svg" alt="Sticky Note: SJT Tips" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/sjt-tips-sticky.svg" alt="Sticky Note: SJT Tips" width="30%">
 </a>
 
 
@@ -1508,14 +1508,14 @@ Response D: Stay late to both test and meet the deadline
 
 ### Before the Offer
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-handwritten.svg" alt="Handwritten: Before the Offer" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-handwritten.svg" alt="Handwritten: Before the Offer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-diagram.svg" alt="Diagram: Before the Offer" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-diagram.svg" alt="Diagram: Before the Offer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-sticky.svg" alt="Sticky Note: Before the Offer" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/before-the-offer-sticky.svg" alt="Sticky Note: Before the Offer" width="30%">
 </a>
 
 
@@ -1529,14 +1529,14 @@ Response D: Stay late to both test and meet the deadline
 
 ### Negotiation Scripts
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-handwritten.svg" alt="Handwritten: Negotiation Scripts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-handwritten.svg" alt="Handwritten: Negotiation Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-diagram.svg" alt="Diagram: Negotiation Scripts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-diagram.svg" alt="Diagram: Negotiation Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-sticky.svg" alt="Sticky Note: Negotiation Scripts" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/negotiation-scripts-sticky.svg" alt="Sticky Note: Negotiation Scripts" width="30%">
 </a>
 
 
@@ -1573,14 +1573,14 @@ easier."
 
 ### What NOT to Do in Salary Negotiation
 
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-handwritten.svg" alt="Handwritten: What NOT to Do in Salary Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-handwritten.svg" alt="Handwritten: What NOT to Do in Salary Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-diagram.svg" alt="Diagram: What NOT to Do in Salary Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-diagram.svg" alt="Diagram: What NOT to Do in Salary Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-sticky.svg" alt="Sticky Note: What NOT to Do in Salary Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/05-behavioral-hr-interview/what-not-to-do-in-salary-negotiation-sticky.svg" alt="Sticky Note: What NOT to Do in Salary Negotiation" width="30%">
 </a>
 
 

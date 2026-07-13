@@ -14,14 +14,14 @@
 
 ### 1.1 What Is a DBMS?
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-handwritten.svg" alt="Handwritten: 1.1 What Is a DBMS?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-handwritten.svg" alt="Handwritten: 1.1 What Is a DBMS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-diagram.svg" alt="Diagram: 1.1 What Is a DBMS?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-diagram.svg" alt="Diagram: 1.1 What Is a DBMS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-sticky.svg" alt="Sticky Note: 1.1 What Is a DBMS?" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-1-what-is-a-dbms-sticky.svg" alt="Sticky Note: 1.1 What Is a DBMS?" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ if __name__ == "__main__":
 
 ### 1.2 File System vs. DBMS
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-handwritten.svg" alt="Handwritten: 1.2 File System vs. DBMS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-handwritten.svg" alt="Handwritten: 1.2 File System vs. DBMS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-diagram.svg" alt="Diagram: 1.2 File System vs. DBMS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-diagram.svg" alt="Diagram: 1.2 File System vs. DBMS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-sticky.svg" alt="Sticky Note: 1.2 File System vs. DBMS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-2-file-system-vs-dbms-sticky.svg" alt="Sticky Note: 1.2 File System vs. DBMS" width="30%">
 </a>
 
 
@@ -777,14 +777,14 @@ if __name__ == "__main__":
 ---
 ### 1.3 Three-Schema Architecture
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-handwritten.svg" alt="Handwritten: 1.3 Three-Schema Architecture" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-handwritten.svg" alt="Handwritten: 1.3 Three-Schema Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-diagram.svg" alt="Diagram: 1.3 Three-Schema Architecture" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-diagram.svg" alt="Diagram: 1.3 Three-Schema Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-sticky.svg" alt="Sticky Note: 1.3 Three-Schema Architecture" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-3-three-schema-architecture-sticky.svg" alt="Sticky Note: 1.3 Three-Schema Architecture" width="30%">
 </a>
 
 
@@ -1245,14 +1245,14 @@ if __name__ == "__main__":
 
 ### 1.4 Data Independence
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-handwritten.svg" alt="Handwritten: 1.4 Data Independence" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-handwritten.svg" alt="Handwritten: 1.4 Data Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-diagram.svg" alt="Diagram: 1.4 Data Independence" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-diagram.svg" alt="Diagram: 1.4 Data Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-sticky.svg" alt="Sticky Note: 1.4 Data Independence" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-4-data-independence-sticky.svg" alt="Sticky Note: 1.4 Data Independence" width="30%">
 </a>
 
 
@@ -1536,14 +1536,14 @@ if __name__ == "__main__":
 
 ### 1.5 DBMS Languages (DDL / DML / DCL / TCL)
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-handwritten.svg" alt="Handwritten: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-handwritten.svg" alt="Handwritten: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-diagram.svg" alt="Diagram: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-diagram.svg" alt="Diagram: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-sticky.svg" alt="Sticky Note: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-5-dbms-languages-ddl-dml-dcl-tcl-sticky.svg" alt="Sticky Note: 1.5 DBMS Languages (DDL / DML / DCL / TCL)" width="30%">
 </a>
 
 
@@ -1886,14 +1886,14 @@ if __name__ == "__main__":
 ---
 ### 1.6 DBMS Users
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-handwritten.svg" alt="Handwritten: 1.6 DBMS Users" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-handwritten.svg" alt="Handwritten: 1.6 DBMS Users" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-diagram.svg" alt="Diagram: 1.6 DBMS Users" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-diagram.svg" alt="Diagram: 1.6 DBMS Users" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-sticky.svg" alt="Sticky Note: 1.6 DBMS Users" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-6-dbms-users-sticky.svg" alt="Sticky Note: 1.6 DBMS Users" width="30%">
 </a>
 
 
@@ -1933,14 +1933,14 @@ if __name__ == "__main__":
 
 ### 1.7 Data Models
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-handwritten.svg" alt="Handwritten: 1.7 Data Models" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-handwritten.svg" alt="Handwritten: 1.7 Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-diagram.svg" alt="Diagram: 1.7 Data Models" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-diagram.svg" alt="Diagram: 1.7 Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-sticky.svg" alt="Sticky Note: 1.7 Data Models" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-7-data-models-sticky.svg" alt="Sticky Note: 1.7 Data Models" width="30%">
 </a>
 
 
@@ -2302,14 +2302,14 @@ if __name__ == "__main__":
 
 ### 1.8 DBMS Architecture Components
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-handwritten.svg" alt="Handwritten: 1.8 DBMS Architecture Components" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-handwritten.svg" alt="Handwritten: 1.8 DBMS Architecture Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-diagram.svg" alt="Diagram: 1.8 DBMS Architecture Components" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-diagram.svg" alt="Diagram: 1.8 DBMS Architecture Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-sticky.svg" alt="Sticky Note: 1.8 DBMS Architecture Components" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-8-dbms-architecture-components-sticky.svg" alt="Sticky Note: 1.8 DBMS Architecture Components" width="30%">
 </a>
 
 
@@ -2350,14 +2350,14 @@ User Query (SQL)
 
 ### 1.9 Database System Architecture Types
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-handwritten.svg" alt="Handwritten: 1.9 Database System Architecture Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-handwritten.svg" alt="Handwritten: 1.9 Database System Architecture Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-diagram.svg" alt="Diagram: 1.9 Database System Architecture Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-diagram.svg" alt="Diagram: 1.9 Database System Architecture Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-sticky.svg" alt="Sticky Note: 1.9 Database System Architecture Types" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-9-database-system-architecture-types-sticky.svg" alt="Sticky Note: 1.9 Database System Architecture Types" width="30%">
 </a>
 
 
@@ -2374,14 +2374,14 @@ User Query (SQL)
 
 ### 1.10 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-handwritten.svg" alt="Handwritten: 1.10 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-handwritten.svg" alt="Handwritten: 1.10 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-diagram.svg" alt="Diagram: 1.10 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-diagram.svg" alt="Diagram: 1.10 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-sticky.svg" alt="Sticky Note: 1.10 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-10-applications-in-real-systems-sticky.svg" alt="Sticky Note: 1.10 Applications in Real Systems" width="30%">
 </a>
 
 
@@ -2410,14 +2410,14 @@ User Query (SQL)
 
 ### 1.11 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-handwritten.svg" alt="Handwritten: 1.11 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-handwritten.svg" alt="Handwritten: 1.11 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-diagram.svg" alt="Diagram: 1.11 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-diagram.svg" alt="Diagram: 1.11 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-sticky.svg" alt="Sticky Note: 1.11 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/01-introduction/1-11-interview-corner-sticky.svg" alt="Sticky Note: 1.11 Interview Corner" width="30%">
 </a>
 
 

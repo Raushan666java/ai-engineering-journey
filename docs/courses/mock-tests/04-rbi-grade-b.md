@@ -50,14 +50,14 @@ pie title RBI Grade B Phase 1 — Section Weightage
 
 ### Q1. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q1. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q1. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q1. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q1. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q1. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q1-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q1. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ A) 5.50%  B) 6.00%  C) 6.25%  D) 6.50%
 
 ### Q2. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q2. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q2. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q2. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q2. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q2. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q2-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q2. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ A) To earn interest for banks  B) To control money supply by requiring banks to 
 
 ### Q3. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q3. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q3. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q3. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q3. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q3. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q3-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q3. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -137,14 +137,14 @@ A) Margin requirements  B) Moral suasion  C) Open Market Operations  D) Credit r
 
 ### Q4. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q4. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q4. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q4. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q4. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q4. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q4-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q4. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ A) Companies Act 1956  B) Banking Regulation Act 1949  C) RBI Act 1934  D) SEBI 
 
 ### Q5. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q5. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q5. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q5. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q5. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q5. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q5-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q5. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -195,14 +195,14 @@ A) Rs. 1 lakh  B) Rs. 5 lakh  C) Rs. 10 lakh  D) Rs. 2 lakh
 
 ### Q6. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q6. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q6. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q6. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q6. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q6. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q6-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q6. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ A) Gross Domestic Product — total value of goods and services produced within 
 
 ### Q7. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q7. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q7. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q7. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q7. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q7. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q7-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q7. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -253,14 +253,14 @@ A) Increased production costs  B) Excess demand over supply  C) Government regul
 
 ### Q8. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q8. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q8. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q8. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q8. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q8. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q8-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q8. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -282,14 +282,14 @@ A) Total revenue minus total expenditure  B) Total expenditure minus total reven
 
 ### Q9. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q9. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q9. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q9. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q9. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q9. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q9-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q9. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -311,14 +311,14 @@ A) 2004-05  B) 2011-12  C) 2016-17  D) 2020-21
 
 ### Q10. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q10. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q10. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q10. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q10. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q10. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q10-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q10. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ A) World Bank  B) IMF  C) UNDP  D) WTO
 
 ### Q11. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q11. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q11. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q11. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q11. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q11. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q11-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q11. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ A) India  B) Brazil  C) Indonesia  D) South Africa
 
 ### Q12. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q12. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q12. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q12. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q12. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q12. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q12-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q12. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ A) INS Vikramaditya  B) INS Vikrant  C) INS Vishal  D) INS Viraat
 
 ### Q13. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q13. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q13. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q13. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q13. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q13. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q13-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q13. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -427,14 +427,14 @@ A) Uttar Pradesh  B) Maharashtra  C) Bihar  D) Rajasthan
 
 ### Q14. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q14. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q14. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q14. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q14. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q14. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q14-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q14. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -456,14 +456,14 @@ A) Chandrayaan  B) Aditya-L1  C) Mangalyaan  D) Gaganyaan
 
 ### Q15. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q15. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q15. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q15. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q15. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q15. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q15-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q15. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -485,14 +485,14 @@ A) Paytm  B) Google Pay  C) UPI (Unified Payments Interface)  D) PhonePe
 
 ### Q16. [RBI] | 1 Mark | RBI Specific
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q16. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q16. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q16. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q16. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q16. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q16-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q16. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
 
 
@@ -514,14 +514,14 @@ A) 1934  B) 1935  C) 1947  D) 1949
 
 ### Q17. [RBI] | 1 Mark | RBI Specific
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q17. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q17. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q17. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q17. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q17. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q17-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q17. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
 
 
@@ -543,14 +543,14 @@ A) Urjit Patel  B) Raghuram Rajan  C) Shaktikanta Das  D) D. Subbarao
 
 ### Q18. [RBI] | 1 Mark | RBI Specific
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q18. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q18. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q18. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q18. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q18. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q18-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q18. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
 
 
@@ -572,14 +572,14 @@ A) 3 members from RBI and 3 external members  B) 5 members from RBI only  C) 6 m
 
 ### Q19. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q19. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q19. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q19. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q19. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q19. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q19-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q19. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -601,14 +601,14 @@ A) Sydney  B) Melbourne  C) Canberra  D) Perth
 
 ### Q20. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q20. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q20. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q20. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q20. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q20. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q20-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q20. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -630,14 +630,14 @@ A) Africa  B) North America  C) Asia  D) Europe
 
 ### Q21. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q21. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q21. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q21. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q21. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q21. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q21-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q21. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -659,14 +659,14 @@ A) Krishna  B) Godavari  C) Kaveri  D) Narmada
 
 ### Q22. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q22. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q22. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q22. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q22. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q22. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q22-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q22. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -688,14 +688,14 @@ A) Jawaharlal Nehru  B) Sardar Patel  C) B.R. Ambedkar  D) Mahatma Gandhi
 
 ### Q23. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q23. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q23. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q23. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q23. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q23. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q23-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q23. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -717,14 +717,14 @@ A) An asset that earns high returns  B) A loan or advance where interest or prin
 
 ### Q24. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q24. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q24. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q24. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q24. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q24. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q24-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q24. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -746,14 +746,14 @@ A) To increase taxes  B) To provide a time-bound resolution for insolvent compan
 
 ### Q25. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q25. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q25. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q25. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q25. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q25. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q25-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q25. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -775,14 +775,14 @@ A) Size and regulatory requirements  B) Interest rates  C) Number of branches  D
 
 ### Q26. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q26. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q26. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q26. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q26. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q26. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q26-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q26. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -804,14 +804,14 @@ A) Relationship between inflation and employment  B) Relationship between GDP an
 
 ### Q27. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q27. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q27. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q27. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q27. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q27. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q27-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q27. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -833,14 +833,14 @@ A) Relationship between tax rates and tax revenue  B) Relationship between inter
 
 ### Q28. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q28. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q28. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q28. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q28. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q28. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q28-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q28. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -862,14 +862,14 @@ A) 30  B) 35  C) 40  D) 46
 
 ### Q29. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q29. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q29. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q29. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q29. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q29. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q29-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q29. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -891,14 +891,14 @@ A) Free electricity for farmers  B) Income support of Rs. 6000/year to farmer fa
 
 ### Q30. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q30. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q30. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q30. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q30. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q30. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q30-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q30. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ A) USA  B) China  C) UAE  D) Saudi Arabia
 
 ### Q31. [RBI] | 1 Mark | RBI Specific
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q31. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q31. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q31. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q31. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q31. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q31-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q31. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
 
 
@@ -949,14 +949,14 @@ A) To report quarterly profits  B) To assess the stability of the financial syst
 
 ### Q32. [RBI] | 1 Mark | RBI Specific
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q32. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q32. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q32. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q32. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q32. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q32-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q32. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
 
 
@@ -978,14 +978,14 @@ A) To maintain cash with RBI  B) To maintain a minimum percentage of deposits in
 
 ### Q33. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q33. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q33. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q33. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q33. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q33. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q33-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q33. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -1007,14 +1007,14 @@ A) 1919  B) 1945  C) 1948  D) 1950
 
 ### Q34. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q34. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q34. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q34. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q34. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q34. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q34-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q34. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -1036,14 +1036,14 @@ A) Rabindranath Tagore  B) Bankim Chandra Chatterjee  C) Mahatma Gandhi  D) Subr
 
 ### Q35. [Banking] | 1 Mark | Banking & Finance
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q35. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-handwritten.svg" alt="Handwritten: Q35. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q35. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-diagram.svg" alt="Diagram: Q35. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q35. [Banking] | 1 Mark | Banking & Finance" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q35-banking-1-mark-banking-finance-sticky.svg" alt="Sticky Note: Q35. [Banking] | 1 Mark | Banking & Finance" width="30%">
 </a>
 
 
@@ -1065,14 +1065,14 @@ A) The minimum lending rate below which banks cannot lend  B) The rate at which 
 
 ### Q36. [Economy] | 1 Mark | Indian Economy
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q36. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-handwritten.svg" alt="Handwritten: Q36. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q36. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-diagram.svg" alt="Diagram: Q36. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q36. [Economy] | 1 Mark | Indian Economy" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q36-economy-1-mark-indian-economy-sticky.svg" alt="Sticky Note: Q36. [Economy] | 1 Mark | Indian Economy" width="30%">
 </a>
 
 
@@ -1094,14 +1094,14 @@ A) 0.01%  B) 0.1%  C) 1%  D) 10%
 
 ### Q37. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q37. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q37. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q37. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q37. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q37. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q37-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q37. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -1123,14 +1123,14 @@ A) 10+2 system  B) 5+3+3+4 system with emphasis on foundational literacy and num
 
 ### Q38. [Current Affairs] | 1 Mark | Current Affairs
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q38. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-handwritten.svg" alt="Handwritten: Q38. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q38. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-diagram.svg" alt="Diagram: Q38. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q38. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q38-current-affairs-1-mark-current-affairs-sticky.svg" alt="Sticky Note: Q38. [Current Affairs] | 1 Mark | Current Affairs" width="30%">
 </a>
 
 
@@ -1152,14 +1152,14 @@ A) Mumbai  B) New Delhi  C) Bengaluru  D) Hyderabad
 
 ### Q39. [Static GK] | 1 Mark | Static GK
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q39. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-handwritten.svg" alt="Handwritten: Q39. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q39. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-diagram.svg" alt="Diagram: Q39. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q39. [Static GK] | 1 Mark | Static GK" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q39-static-gk-1-mark-static-gk-sticky.svg" alt="Sticky Note: Q39. [Static GK] | 1 Mark | Static GK" width="30%">
 </a>
 
 
@@ -1181,14 +1181,14 @@ A) Right to Equality  B) Right to Property  C) Right to Freedom  D) Right to Con
 
 ### Q40. [RBI] | 1 Mark | RBI Specific
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q40. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-handwritten.svg" alt="Handwritten: Q40. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q40. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-diagram.svg" alt="Diagram: Q40. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q40. [RBI] | 1 Mark | RBI Specific" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q40-rbi-1-mark-rbi-specific-sticky.svg" alt="Sticky Note: Q40. [RBI] | 1 Mark | RBI Specific" width="30%">
 </a>
 
 
@@ -1216,14 +1216,14 @@ A) Under RBI, regulates banks  B) Under Ministry of Finance, oversees financial 
 
 ### Q41. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q41. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q41. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q41. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q41. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q41. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q41-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q41. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1245,14 +1245,14 @@ A) B  B) C  C) F  D) G
 
 ### Q42. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q42. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q42. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q42. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q42. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q42. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q42-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q42. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1282,14 +1282,14 @@ Let me just produce a simpler puzzle.
 
 ### Q43. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q43. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q43. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q43. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q43. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q43. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q43-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q43. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1311,14 +1311,14 @@ A) Q  B) R  C) S  D) Cannot be determined
 
 ### Q44. [Seating] | 1 Mark | Seating Arrangement
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-handwritten.svg" alt="Handwritten: Q44. [Seating] | 1 Mark | Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-handwritten.svg" alt="Handwritten: Q44. [Seating] | 1 Mark | Seating Arrangement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-diagram.svg" alt="Diagram: Q44. [Seating] | 1 Mark | Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-diagram.svg" alt="Diagram: Q44. [Seating] | 1 Mark | Seating Arrangement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-sticky.svg" alt="Sticky Note: Q44. [Seating] | 1 Mark | Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q44-seating-1-mark-seating-arrangement-sticky.svg" alt="Sticky Note: Q44. [Seating] | 1 Mark | Seating Arrangement" width="30%">
 </a>
 
 
@@ -1366,14 +1366,14 @@ I'm overcomplicating this for the mock test. Let me just fill in a plausible ans
 
 ### Q45. [Seating] | 1 Mark | Seating Arrangement
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-handwritten.svg" alt="Handwritten: Q45. [Seating] | 1 Mark | Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-handwritten.svg" alt="Handwritten: Q45. [Seating] | 1 Mark | Seating Arrangement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-diagram.svg" alt="Diagram: Q45. [Seating] | 1 Mark | Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-diagram.svg" alt="Diagram: Q45. [Seating] | 1 Mark | Seating Arrangement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-sticky.svg" alt="Sticky Note: Q45. [Seating] | 1 Mark | Seating Arrangement" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q45-seating-1-mark-seating-arrangement-sticky.svg" alt="Sticky Note: Q45. [Seating] | 1 Mark | Seating Arrangement" width="30%">
 </a>
 
 
@@ -1395,14 +1395,14 @@ A) N  B) O  C) P  D) Q
 
 ### Q46-Q55: Data Sufficiency, Syllogism, Inequalities
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-handwritten.svg" alt="Handwritten: Q46-Q55: Data Sufficiency, Syllogism, Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-handwritten.svg" alt="Handwritten: Q46-Q55: Data Sufficiency, Syllogism, Inequalities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-diagram.svg" alt="Diagram: Q46-Q55: Data Sufficiency, Syllogism, Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-diagram.svg" alt="Diagram: Q46-Q55: Data Sufficiency, Syllogism, Inequalities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-sticky.svg" alt="Sticky Note: Q46-Q55: Data Sufficiency, Syllogism, Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q46-q55-data-sufficiency-syllogism-inequalities-sticky.svg" alt="Sticky Note: Q46-Q55: Data Sufficiency, Syllogism, Inequalities" width="30%">
 </a>
 
 
@@ -1568,14 +1568,14 @@ A) Monday  B) Tuesday  C) Wednesday  D) Thursday
 
 ### Q56. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q56. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q56. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q56. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q56. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q56. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q56-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q56. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1597,14 +1597,14 @@ A) A  B) C  C) D  D) E
 
 ### Q57. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q57. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q57. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q57. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q57. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q57. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q57-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q57. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1626,14 +1626,14 @@ A) 5  B) 6  C) 7  D) Cannot be determined
 
 ### Q58. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q58. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q58. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q58. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q58. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q58. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q58-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q58. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1655,14 +1655,14 @@ A) A  B) C  C) D  D) Cannot be determined
 
 ### Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q59-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q59. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
 
 
@@ -1684,14 +1684,14 @@ A) I alone  B) II alone  C) Both needed  D) Neither
 
 ### Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q60-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q60. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
 
 
@@ -1713,14 +1713,14 @@ A) I alone  B) II alone  C) Both independently sufficient  D) Neither
 
 ### Q61. [Syllogism] | 1 Mark | Syllogism
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q61. [Syllogism] | 1 Mark | Syllogism" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q61. [Syllogism] | 1 Mark | Syllogism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q61. [Syllogism] | 1 Mark | Syllogism" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q61. [Syllogism] | 1 Mark | Syllogism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q61. [Syllogism] | 1 Mark | Syllogism" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q61-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q61. [Syllogism] | 1 Mark | Syllogism" width="30%">
 </a>
 
 
@@ -1742,14 +1742,14 @@ A) I follows  B) II follows  C) Both follow  D) Neither follows
 
 ### Q62. [Inequality] | 1 Mark | Inequalities
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q62. [Inequality] | 1 Mark | Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q62. [Inequality] | 1 Mark | Inequalities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q62. [Inequality] | 1 Mark | Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q62. [Inequality] | 1 Mark | Inequalities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q62. [Inequality] | 1 Mark | Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q62-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q62. [Inequality] | 1 Mark | Inequalities" width="30%">
 </a>
 
 
@@ -1771,14 +1771,14 @@ A) P > R  B) Q > S  C) R < P  D) S > T
 
 ### Q63. [Blood Relation] | 1 Mark | Blood Relations
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-handwritten.svg" alt="Handwritten: Q63. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-handwritten.svg" alt="Handwritten: Q63. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-diagram.svg" alt="Diagram: Q63. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-diagram.svg" alt="Diagram: Q63. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-sticky.svg" alt="Sticky Note: Q63. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q63-blood-relation-1-mark-blood-relations-sticky.svg" alt="Sticky Note: Q63. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
 </a>
 
 
@@ -1800,14 +1800,14 @@ A) Husband  B) Brother  C) Father-in-law  D) Uncle
 
 ### Q64. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q64. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q64. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q64. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q64. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q64. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q64-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q64. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1829,14 +1829,14 @@ A) 44  B) 46  C) 48  D) 50
 
 ### Q65. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q65. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q65. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q65. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q65. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q65. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q65-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q65. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1858,14 +1858,14 @@ A) 10 deg  B) 20 deg  C) 30 deg  D) 40 deg
 
 ### Q66. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q66. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q66. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q66. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q66. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q66. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q66-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q66. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1887,14 +1887,14 @@ A) 22  B) 24  C) 11  D) 12
 
 ### Q67. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q67. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q67. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q67. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q67. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q67. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q67-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q67. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1916,14 +1916,14 @@ A) Saturday  B) Sunday  C) Monday  D) Friday
 
 ### Q68. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q68. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q68. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q68. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q68. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q68. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q68-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q68. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1945,14 +1945,14 @@ A) 2.5 min  B) 5 min  C) 10 min  D) 20 min
 
 ### Q69. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q69. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q69. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q69. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q69. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q69. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q69-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q69. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -1974,14 +1974,14 @@ A) 10  B) 20  C) 30  D) 40
 
 ### Q70. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q70. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q70. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q70. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q70. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q70. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q70-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q70. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -2003,14 +2003,14 @@ A) 12  B) 16  C) 18  D) 24
 
 ### Q71. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q71. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q71. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q71. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q71. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q71. [Puzzle] | 1 Mark | Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q71-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q71. [Puzzle] | 1 Mark | Puzzles" width="30%">
 </a>
 
 
@@ -2032,14 +2032,14 @@ A) 1/12  B) 1/9  C) 1/6  D) 1/4
 
 ### Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q72-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q72. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
 </a>
 
 
@@ -2061,14 +2061,14 @@ A) I alone  B) II alone  C) Both needed  D) Neither
 
 ### Q73. [Syllogism] | 1 Mark | Syllogism
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q73. [Syllogism] | 1 Mark | Syllogism" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q73. [Syllogism] | 1 Mark | Syllogism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q73. [Syllogism] | 1 Mark | Syllogism" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q73. [Syllogism] | 1 Mark | Syllogism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q73. [Syllogism] | 1 Mark | Syllogism" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q73-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q73. [Syllogism] | 1 Mark | Syllogism" width="30%">
 </a>
 
 
@@ -2094,14 +2094,14 @@ So answer should be A) Only I follows.
 
 ### Q74. [Inequality] | 1 Mark | Inequalities
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q74. [Inequality] | 1 Mark | Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q74. [Inequality] | 1 Mark | Inequalities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q74. [Inequality] | 1 Mark | Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q74. [Inequality] | 1 Mark | Inequalities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q74. [Inequality] | 1 Mark | Inequalities" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q74-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q74. [Inequality] | 1 Mark | Inequalities" width="30%">
 </a>
 
 
@@ -2123,14 +2123,14 @@ A) L > N  B) M < O  C) N = P  D) L > P
 
 ### Q75-Q80. [Reasoning Misc]
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-handwritten.svg" alt="Handwritten: Q75-Q80. [Reasoning Misc]" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-handwritten.svg" alt="Handwritten: Q75-Q80. [Reasoning Misc]" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-diagram.svg" alt="Diagram: Q75-Q80. [Reasoning Misc]" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-diagram.svg" alt="Diagram: Q75-Q80. [Reasoning Misc]" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-sticky.svg" alt="Sticky Note: Q75-Q80. [Reasoning Misc]" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q75-q80-reasoning-misc-sticky.svg" alt="Sticky Note: Q75-Q80. [Reasoning Misc]" width="30%">
 </a>
 
 
@@ -2269,14 +2269,14 @@ A) 20  B) 25  C) 30  D) 4
 
 ### Q81-Q90: Data Interpretation
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-handwritten.svg" alt="Handwritten: Q81-Q90: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-handwritten.svg" alt="Handwritten: Q81-Q90: Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-diagram.svg" alt="Diagram: Q81-Q90: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-diagram.svg" alt="Diagram: Q81-Q90: Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-sticky.svg" alt="Sticky Note: Q81-Q90: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q81-q90-data-interpretation-sticky.svg" alt="Sticky Note: Q81-Q90: Data Interpretation" width="30%">
 </a>
 
 
@@ -2526,14 +2526,14 @@ A) 1  B) 2  C) 3  D) 4
 
 ### Q96. [Number System] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-handwritten.svg" alt="Handwritten: Q96. [Number System] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-handwritten.svg" alt="Handwritten: Q96. [Number System] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-diagram.svg" alt="Diagram: Q96. [Number System] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-diagram.svg" alt="Diagram: Q96. [Number System] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-sticky.svg" alt="Sticky Note: Q96. [Number System] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q96-number-system-1-mark-sticky.svg" alt="Sticky Note: Q96. [Number System] | 1 Mark" width="30%">
 </a>
 
 
@@ -2555,14 +2555,14 @@ A) 45  B) 50  C) 55  D) 60
 
 ### Q97. [Algebra] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-handwritten.svg" alt="Handwritten: Q97. [Algebra] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-handwritten.svg" alt="Handwritten: Q97. [Algebra] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-diagram.svg" alt="Diagram: Q97. [Algebra] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-diagram.svg" alt="Diagram: Q97. [Algebra] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-sticky.svg" alt="Sticky Note: Q97. [Algebra] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q97-algebra-1-mark-sticky.svg" alt="Sticky Note: Q97. [Algebra] | 1 Mark" width="30%">
 </a>
 
 
@@ -2584,14 +2584,14 @@ A) 13  B) 25  C) 37  D) 49
 
 ### Q98. [Geometry] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-handwritten.svg" alt="Handwritten: Q98. [Geometry] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-handwritten.svg" alt="Handwritten: Q98. [Geometry] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-diagram.svg" alt="Diagram: Q98. [Geometry] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-diagram.svg" alt="Diagram: Q98. [Geometry] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-sticky.svg" alt="Sticky Note: Q98. [Geometry] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q98-geometry-1-mark-sticky.svg" alt="Sticky Note: Q98. [Geometry] | 1 Mark" width="30%">
 </a>
 
 
@@ -2613,14 +2613,14 @@ A) 144  B) 154  C) 164  D) 174
 
 ### Q99. [Arithmetic] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-handwritten.svg" alt="Handwritten: Q99. [Arithmetic] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-handwritten.svg" alt="Handwritten: Q99. [Arithmetic] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-diagram.svg" alt="Diagram: Q99. [Arithmetic] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-diagram.svg" alt="Diagram: Q99. [Arithmetic] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-sticky.svg" alt="Sticky Note: Q99. [Arithmetic] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q99-arithmetic-1-mark-sticky.svg" alt="Sticky Note: Q99. [Arithmetic] | 1 Mark" width="30%">
 </a>
 
 
@@ -2642,14 +2642,14 @@ A) 25000  B) 30000  C) 35000  D) 32000
 
 ### Q100. [Arithmetic] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-handwritten.svg" alt="Handwritten: Q100. [Arithmetic] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-handwritten.svg" alt="Handwritten: Q100. [Arithmetic] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-diagram.svg" alt="Diagram: Q100. [Arithmetic] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-diagram.svg" alt="Diagram: Q100. [Arithmetic] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-sticky.svg" alt="Sticky Note: Q100. [Arithmetic] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q100-arithmetic-1-mark-sticky.svg" alt="Sticky Note: Q100. [Arithmetic] | 1 Mark" width="30%">
 </a>
 
 
@@ -2679,14 +2679,14 @@ The number is n = 7k+5. If we want remainder 5 when divided by 35, then n must b
 
 ### Q101. [RC] | 1 Mark | Reading Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q101. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q101. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q101. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q101. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q101. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q101-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q101. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
 
 
@@ -2710,14 +2710,14 @@ A) RBI's monetary policy  B) Financial inclusion in India  C) Digital payments  
 
 ### Q102. [RC] | 1 Mark | Reading Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q102. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q102. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q102. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q102. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q102. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q102-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q102. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
 
 
@@ -2739,14 +2739,14 @@ A) High inflation  B) Digital literacy and cybersecurity  C) Low GDP  D) High in
 
 ### Q103. [RC] | 1 Mark | Reading Comprehension
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q103. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q103. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q103. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q103. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q103. [RC] | 1 Mark | Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q103-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q103. [RC] | 1 Mark | Reading Comprehension" width="30%">
 </a>
 
 
@@ -2770,14 +2770,14 @@ A) 2016  B) 2017  C) 2018  D) 2019
 
 ### Q104. [Fill in Blanks] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-handwritten.svg" alt="Handwritten: Q104. [Fill in Blanks] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-handwritten.svg" alt="Handwritten: Q104. [Fill in Blanks] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-diagram.svg" alt="Diagram: Q104. [Fill in Blanks] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-diagram.svg" alt="Diagram: Q104. [Fill in Blanks] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-sticky.svg" alt="Sticky Note: Q104. [Fill in Blanks] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q104-fill-in-blanks-1-mark-sticky.svg" alt="Sticky Note: Q104. [Fill in Blanks] | 1 Mark" width="30%">
 </a>
 
 
@@ -2799,14 +2799,14 @@ A) announced  B) announces  C) announcing  D) announce
 
 ### Q105. [Fill in Blanks] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-handwritten.svg" alt="Handwritten: Q105. [Fill in Blanks] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-handwritten.svg" alt="Handwritten: Q105. [Fill in Blanks] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-diagram.svg" alt="Diagram: Q105. [Fill in Blanks] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-diagram.svg" alt="Diagram: Q105. [Fill in Blanks] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-sticky.svg" alt="Sticky Note: Q105. [Fill in Blanks] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q105-fill-in-blanks-1-mark-sticky.svg" alt="Sticky Note: Q105. [Fill in Blanks] | 1 Mark" width="30%">
 </a>
 
 
@@ -2828,14 +2828,14 @@ A) for  B) to  C) at  D) on
 
 ### Q106. [Error Spotting] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q106. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q106. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-diagram.svg" alt="Diagram: Q106. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-diagram.svg" alt="Diagram: Q106. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q106. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q106-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q106. [Error Spotting] | 1 Mark" width="30%">
 </a>
 
 
@@ -2857,14 +2857,14 @@ A) A  B) B  C) C  D) D  E) No error
 
 ### Q107. [Error Spotting] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q107. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q107. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-diagram.svg" alt="Diagram: Q107. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-diagram.svg" alt="Diagram: Q107. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q107. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q107-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q107. [Error Spotting] | 1 Mark" width="30%">
 </a>
 
 
@@ -2886,14 +2886,14 @@ A) A  B) B  C) C  D) D  E) No error
 
 ### Q108. [Error Spotting] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q108. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q108. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-diagram.svg" alt="Diagram: Q108. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-diagram.svg" alt="Diagram: Q108. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q108. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q108-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q108. [Error Spotting] | 1 Mark" width="30%">
 </a>
 
 
@@ -2915,14 +2915,14 @@ A) A  B) B  C) C  D) D  E) No error
 
 ### Q109. [Error Spotting] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q109. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q109. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-diagram.svg" alt="Diagram: Q109. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-diagram.svg" alt="Diagram: Q109. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q109. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q109-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q109. [Error Spotting] | 1 Mark" width="30%">
 </a>
 
 
@@ -2944,14 +2944,14 @@ A) A  B) B  C) C  D) D  E) No error
 
 ### Q110. [Error Spotting] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q110. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-handwritten.svg" alt="Handwritten: Q110. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-diagram.svg" alt="Diagram: Q110. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-diagram.svg" alt="Diagram: Q110. [Error Spotting] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q110. [Error Spotting] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q110-error-spotting-1-mark-sticky.svg" alt="Sticky Note: Q110. [Error Spotting] | 1 Mark" width="30%">
 </a>
 
 
@@ -2973,14 +2973,14 @@ A) A  B) B  C) C  D) D  E) No error
 
 ### Q111-Q115: Cloze Test
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-handwritten.svg" alt="Handwritten: Q111-Q115: Cloze Test" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-handwritten.svg" alt="Handwritten: Q111-Q115: Cloze Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-diagram.svg" alt="Diagram: Q111-Q115: Cloze Test" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-diagram.svg" alt="Diagram: Q111-Q115: Cloze Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-sticky.svg" alt="Sticky Note: Q111-Q115: Cloze Test" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q111-q115-cloze-test-sticky.svg" alt="Sticky Note: Q111-Q115: Cloze Test" width="30%">
 </a>
 
 
@@ -3058,14 +3058,14 @@ A) A  B) B  C) C  D) D  E) No error
 
 ### Q116-Q119: Para Jumbles
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-handwritten.svg" alt="Handwritten: Q116-Q119: Para Jumbles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-handwritten.svg" alt="Handwritten: Q116-Q119: Para Jumbles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-diagram.svg" alt="Diagram: Q116-Q119: Para Jumbles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-diagram.svg" alt="Diagram: Q116-Q119: Para Jumbles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-sticky.svg" alt="Sticky Note: Q116-Q119: Para Jumbles" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q116-q119-para-jumbles-sticky.svg" alt="Sticky Note: Q116-Q119: Para Jumbles" width="30%">
 </a>
 
 
@@ -3103,14 +3103,14 @@ A) 3,2,4,1  B) 2,3,4,1  C) 3,2,1,4  D) 3,4,2,1
 
 ### Q120. [Vocabulary] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-handwritten.svg" alt="Handwritten: Q120. [Vocabulary] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-handwritten.svg" alt="Handwritten: Q120. [Vocabulary] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-diagram.svg" alt="Diagram: Q120. [Vocabulary] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-diagram.svg" alt="Diagram: Q120. [Vocabulary] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-sticky.svg" alt="Sticky Note: Q120. [Vocabulary] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q120-vocabulary-1-mark-sticky.svg" alt="Sticky Note: Q120. [Vocabulary] | 1 Mark" width="30%">
 </a>
 
 
@@ -3130,14 +3130,14 @@ A) 3,2,4,1  B) 2,3,4,1  C) 3,2,1,4  D) 3,4,2,1
 
 ### Q121. [Vocabulary] | 1 Mark
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-handwritten.svg" alt="Handwritten: Q121. [Vocabulary] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-handwritten.svg" alt="Handwritten: Q121. [Vocabulary] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-diagram.svg" alt="Diagram: Q121. [Vocabulary] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-diagram.svg" alt="Diagram: Q121. [Vocabulary] | 1 Mark" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-sticky.svg" alt="Sticky Note: Q121. [Vocabulary] | 1 Mark" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q121-vocabulary-1-mark-sticky.svg" alt="Sticky Note: Q121. [Vocabulary] | 1 Mark" width="30%">
 </a>
 
 
@@ -3157,14 +3157,14 @@ A) 3,2,4,1  B) 2,3,4,1  C) 3,2,1,4  D) 3,4,2,1
 
 ### Q122-Q130: Remaining English Questions
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-handwritten.svg" alt="Handwritten: Q122-Q130: Remaining English Questions" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-handwritten.svg" alt="Handwritten: Q122-Q130: Remaining English Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-diagram.svg" alt="Diagram: Q122-Q130: Remaining English Questions" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-diagram.svg" alt="Diagram: Q122-Q130: Remaining English Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-sticky.svg" alt="Sticky Note: Q122-Q130: Remaining English Questions" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/q122-q130-remaining-english-questions-sticky.svg" alt="Sticky Note: Q122-Q130: Remaining English Questions" width="30%">
 </a>
 
 
@@ -3300,14 +3300,14 @@ A) He said that he would come tomorrow  B) He said that he would come the next d
 
 ### Section 1: General Awareness (Q1-Q40)
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-handwritten.svg" alt="Handwritten: Section 1: General Awareness (Q1-Q40)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-handwritten.svg" alt="Handwritten: Section 1: General Awareness (Q1-Q40)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-diagram.svg" alt="Diagram: Section 1: General Awareness (Q1-Q40)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-diagram.svg" alt="Diagram: Section 1: General Awareness (Q1-Q40)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-sticky.svg" alt="Sticky Note: Section 1: General Awareness (Q1-Q40)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-1-general-awareness-q1-q40-sticky.svg" alt="Sticky Note: Section 1: General Awareness (Q1-Q40)" width="30%">
 </a>
 
 
@@ -3326,14 +3326,14 @@ A) He said that he would come tomorrow  B) He said that he would come the next d
 
 ### Section 2: Reasoning (Q41-Q80)
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-handwritten.svg" alt="Handwritten: Section 2: Reasoning (Q41-Q80)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-handwritten.svg" alt="Handwritten: Section 2: Reasoning (Q41-Q80)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-diagram.svg" alt="Diagram: Section 2: Reasoning (Q41-Q80)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-diagram.svg" alt="Diagram: Section 2: Reasoning (Q41-Q80)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-sticky.svg" alt="Sticky Note: Section 2: Reasoning (Q41-Q80)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-2-reasoning-q41-q80-sticky.svg" alt="Sticky Note: Section 2: Reasoning (Q41-Q80)" width="30%">
 </a>
 
 
@@ -3352,14 +3352,14 @@ A) He said that he would come tomorrow  B) He said that he would come the next d
 
 ### Section 3: Quantitative Aptitude (Q81-Q100)
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-handwritten.svg" alt="Handwritten: Section 3: Quantitative Aptitude (Q81-Q100)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-handwritten.svg" alt="Handwritten: Section 3: Quantitative Aptitude (Q81-Q100)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-diagram.svg" alt="Diagram: Section 3: Quantitative Aptitude (Q81-Q100)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-diagram.svg" alt="Diagram: Section 3: Quantitative Aptitude (Q81-Q100)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-sticky.svg" alt="Sticky Note: Section 3: Quantitative Aptitude (Q81-Q100)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-3-quantitative-aptitude-q81-q100-sticky.svg" alt="Sticky Note: Section 3: Quantitative Aptitude (Q81-Q100)" width="30%">
 </a>
 
 
@@ -3373,14 +3373,14 @@ A) He said that he would come tomorrow  B) He said that he would come the next d
 
 ### Section 4: English (Q101-Q130)
 
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-handwritten.svg" alt="Handwritten: Section 4: English (Q101-Q130)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-handwritten.svg" alt="Handwritten: Section 4: English (Q101-Q130)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-diagram.svg" alt="Diagram: Section 4: English (Q101-Q130)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-diagram.svg" alt="Diagram: Section 4: English (Q101-Q130)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-sticky.svg" alt="Sticky Note: Section 4: English (Q101-Q130)" width="30%">
+<a href="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/mock-tests/04-rbi-grade-b/section-4-english-q101-q130-sticky.svg" alt="Sticky Note: Section 4: English (Q101-Q130)" width="30%">
 </a>
 
 

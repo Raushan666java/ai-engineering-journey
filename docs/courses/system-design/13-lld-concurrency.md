@@ -33,14 +33,14 @@ flowchart LR
 > **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### Thread Safety Fundamentals
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-handwritten.svg" alt="Handwritten: Thread Safety Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-handwritten.svg" alt="Handwritten: Thread Safety Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-diagram.svg" alt="Diagram: Thread Safety Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-diagram.svg" alt="Diagram: Thread Safety Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-sticky.svg" alt="Sticky Note: Thread Safety Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-safety-fundamentals-sticky.svg" alt="Sticky Note: Thread Safety Fundamentals" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ def increment():
 
 ### Deadlock
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-handwritten.svg" alt="Handwritten: Deadlock" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-handwritten.svg" alt="Handwritten: Deadlock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-diagram.svg" alt="Diagram: Deadlock" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-diagram.svg" alt="Diagram: Deadlock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-sticky.svg" alt="Sticky Note: Deadlock" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/deadlock-sticky.svg" alt="Sticky Note: Deadlock" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ A **lock order** prevents circular wait by ensuring that all threads acquire loc
 
 ### Lock-Free Programming
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-handwritten.svg" alt="Handwritten: Lock-Free Programming" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-handwritten.svg" alt="Handwritten: Lock-Free Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-diagram.svg" alt="Diagram: Lock-Free Programming" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-diagram.svg" alt="Diagram: Lock-Free Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-sticky.svg" alt="Sticky Note: Lock-Free Programming" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/lock-free-programming-sticky.svg" alt="Sticky Note: Lock-Free Programming" width="30%">
 </a>
 
 
@@ -171,14 +171,14 @@ If another thread modifies the counter between the read and the CAS, the CAS fai
 
 ### Amdahl's Law and Gustafson's Law
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-handwritten.svg" alt="Handwritten: Amdahl's Law and Gustafson's Law" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-handwritten.svg" alt="Handwritten: Amdahl's Law and Gustafson's Law" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-diagram.svg" alt="Diagram: Amdahl's Law and Gustafson's Law" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-diagram.svg" alt="Diagram: Amdahl's Law and Gustafson's Law" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-sticky.svg" alt="Sticky Note: Amdahl's Law and Gustafson's Law" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/amdahl-s-law-and-gustafson-s-law-sticky.svg" alt="Sticky Note: Amdahl's Law and Gustafson's Law" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ Amdahl's Law describes strong scaling (fixed problem, more cores). Gustafson's L
 
 ### Thread Pools
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-handwritten.svg" alt="Handwritten: Thread Pools" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-handwritten.svg" alt="Handwritten: Thread Pools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-diagram.svg" alt="Diagram: Thread Pools" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-diagram.svg" alt="Diagram: Thread Pools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-sticky.svg" alt="Sticky Note: Thread Pools" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/thread-pools-sticky.svg" alt="Sticky Note: Thread Pools" width="30%">
 </a>
 
 
@@ -237,14 +237,14 @@ with ThreadPoolExecutor(max_workers=10) as executor:
 
 ### Async/Await Internals
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-handwritten.svg" alt="Handwritten: Async/Await Internals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-handwritten.svg" alt="Handwritten: Async/Await Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-diagram.svg" alt="Diagram: Async/Await Internals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-diagram.svg" alt="Diagram: Async/Await Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-sticky.svg" alt="Sticky Note: Async/Await Internals" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/async-await-internals-sticky.svg" alt="Sticky Note: Async/Await Internals" width="30%">
 </a>
 
 
@@ -276,14 +276,14 @@ The JavaScript event loop is similar but runs on a single thread with a callback
 
 ### Actor Model
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-handwritten.svg" alt="Handwritten: Actor Model" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-handwritten.svg" alt="Handwritten: Actor Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-diagram.svg" alt="Diagram: Actor Model" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-diagram.svg" alt="Diagram: Actor Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-sticky.svg" alt="Sticky Note: Actor Model" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/actor-model-sticky.svg" alt="Sticky Note: Actor Model" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ Erlang's "let it crash" philosophy treats crashes as first-class failures to be 
 
 ### Go Goroutines and CSP
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-handwritten.svg" alt="Handwritten: Go Goroutines and CSP" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-handwritten.svg" alt="Handwritten: Go Goroutines and CSP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-diagram.svg" alt="Diagram: Go Goroutines and CSP" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-diagram.svg" alt="Diagram: Go Goroutines and CSP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-sticky.svg" alt="Sticky Note: Go Goroutines and CSP" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/go-goroutines-and-csp-sticky.svg" alt="Sticky Note: Go Goroutines and CSP" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ Goroutine leaks occur when a goroutine is blocked forever on a send or receive. 
 
 ### Dining Philosophers
 
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/13-lld-concurrency/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
 </a>
 
 

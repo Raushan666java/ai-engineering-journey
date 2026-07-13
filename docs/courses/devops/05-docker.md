@@ -52,14 +52,14 @@ flowchart LR
 
 ### Docker Architecture
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-architecture-handwritten.svg" alt="Handwritten: Docker Architecture" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-architecture-handwritten.svg" alt="Handwritten: Docker Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-architecture-diagram.svg" alt="Diagram: Docker Architecture" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-architecture-diagram.svg" alt="Diagram: Docker Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-architecture-sticky.svg" alt="Sticky Note: Docker Architecture" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-architecture-sticky.svg" alt="Sticky Note: Docker Architecture" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ flowchart TD
 
 ### Dockerfile Best Practices
 
-<a href="../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-handwritten.svg" alt="Handwritten: Dockerfile Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-handwritten.svg" alt="Handwritten: Dockerfile Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-diagram.svg" alt="Diagram: Dockerfile Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-diagram.svg" alt="Diagram: Dockerfile Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-sticky.svg" alt="Sticky Note: Dockerfile Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/dockerfile-best-practices-sticky.svg" alt="Sticky Note: Dockerfile Best Practices" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ CMD ["node", "dist/index.js"]
 
 ### Container Lifecycle Management
 
-<a href="../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-handwritten.svg" alt="Handwritten: Container Lifecycle Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-handwritten.svg" alt="Handwritten: Container Lifecycle Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-diagram.svg" alt="Diagram: Container Lifecycle Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-diagram.svg" alt="Diagram: Container Lifecycle Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-sticky.svg" alt="Sticky Note: Container Lifecycle Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/container-lifecycle-management-sticky.svg" alt="Sticky Note: Container Lifecycle Management" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ docker cp app:/app/log.txt ./                    # Copy files
 
 ### Volumes and Storage
 
-<a href="../../assets/images/diagrams/devops/05-docker/volumes-and-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/volumes-and-storage-handwritten.svg" alt="Handwritten: Volumes and Storage" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/volumes-and-storage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/volumes-and-storage-handwritten.svg" alt="Handwritten: Volumes and Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/volumes-and-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/volumes-and-storage-diagram.svg" alt="Diagram: Volumes and Storage" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/volumes-and-storage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/volumes-and-storage-diagram.svg" alt="Diagram: Volumes and Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/volumes-and-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/volumes-and-storage-sticky.svg" alt="Sticky Note: Volumes and Storage" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/volumes-and-storage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/volumes-and-storage-sticky.svg" alt="Sticky Note: Volumes and Storage" width="30%">
 </a>
 
 
@@ -213,14 +213,14 @@ docker run --tmpfs /tmp:noexec,nosuid,size=64m myapp
 
 ### Docker Networking
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-networking-handwritten.svg" alt="Handwritten: Docker Networking" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-networking-handwritten.svg" alt="Handwritten: Docker Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-networking-diagram.svg" alt="Diagram: Docker Networking" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-networking-diagram.svg" alt="Diagram: Docker Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-networking-sticky.svg" alt="Sticky Note: Docker Networking" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-networking-sticky.svg" alt="Sticky Note: Docker Networking" width="30%">
 </a>
 
 
@@ -241,14 +241,14 @@ docker run --network mynet --name web myweb
 
 ### Docker Compose
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-compose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-compose-handwritten.svg" alt="Handwritten: Docker Compose" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-compose-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-compose-handwritten.svg" alt="Handwritten: Docker Compose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-compose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-compose-diagram.svg" alt="Diagram: Docker Compose" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-compose-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-compose-diagram.svg" alt="Diagram: Docker Compose" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-compose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-compose-sticky.svg" alt="Sticky Note: Docker Compose" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-compose-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-compose-sticky.svg" alt="Sticky Note: Docker Compose" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ volumes:
 
 ### Docker BuildKit
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-buildkit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-buildkit-handwritten.svg" alt="Handwritten: Docker BuildKit" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-buildkit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-buildkit-handwritten.svg" alt="Handwritten: Docker BuildKit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-buildkit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-buildkit-diagram.svg" alt="Diagram: Docker BuildKit" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-buildkit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-buildkit-diagram.svg" alt="Diagram: Docker BuildKit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-buildkit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-buildkit-sticky.svg" alt="Sticky Note: Docker BuildKit" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-buildkit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-buildkit-sticky.svg" alt="Sticky Note: Docker BuildKit" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ RUN --mount=type=ssh \
 
 ### Docker Security
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-security-handwritten.svg" alt="Handwritten: Docker Security" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-security-handwritten.svg" alt="Handwritten: Docker Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-security-diagram.svg" alt="Diagram: Docker Security" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-security-diagram.svg" alt="Diagram: Docker Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-security-sticky.svg" alt="Sticky Note: Docker Security" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-security-sticky.svg" alt="Sticky Note: Docker Security" width="30%">
 </a>
 
 
@@ -368,14 +368,14 @@ docker run --security-opt apparmor=myprofile myapp
 
 ### Docker Compose for Development vs Production
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-handwritten.svg" alt="Handwritten: Docker Compose for Development vs Production" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-handwritten.svg" alt="Handwritten: Docker Compose for Development vs Production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-diagram.svg" alt="Diagram: Docker Compose for Development vs Production" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-diagram.svg" alt="Diagram: Docker Compose for Development vs Production" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-sticky.svg" alt="Sticky Note: Docker Compose for Development vs Production" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-compose-for-development-vs-production-sticky.svg" alt="Sticky Note: Docker Compose for Development vs Production" width="30%">
 </a>
 
 
@@ -416,14 +416,14 @@ services:
 
 ### Docker Health Check Patterns
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-handwritten.svg" alt="Handwritten: Docker Health Check Patterns" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-handwritten.svg" alt="Handwritten: Docker Health Check Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-diagram.svg" alt="Diagram: Docker Health Check Patterns" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-diagram.svg" alt="Diagram: Docker Health Check Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-sticky.svg" alt="Sticky Note: Docker Health Check Patterns" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-health-check-patterns-sticky.svg" alt="Sticky Note: Docker Health Check Patterns" width="30%">
 </a>
 
 
@@ -443,14 +443,14 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
 
 ### Docker Image Optimization
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-image-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-image-optimization-handwritten.svg" alt="Handwritten: Docker Image Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-image-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-image-optimization-handwritten.svg" alt="Handwritten: Docker Image Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-image-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-image-optimization-diagram.svg" alt="Diagram: Docker Image Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-image-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-image-optimization-diagram.svg" alt="Diagram: Docker Image Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-image-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-image-optimization-sticky.svg" alt="Sticky Note: Docker Image Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-image-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-image-optimization-sticky.svg" alt="Sticky Note: Docker Image Optimization" width="30%">
 </a>
 
 
@@ -537,14 +537,14 @@ class ImageSizeBudget {
 
 ### Docker in CI/CD
 
-<a href="../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-handwritten.svg" alt="Handwritten: Docker in CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-handwritten.svg" alt="Handwritten: Docker in CI/CD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-diagram.svg" alt="Diagram: Docker in CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-diagram.svg" alt="Diagram: Docker in CI/CD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-sticky.svg" alt="Sticky Note: Docker in CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/05-docker/docker-in-ci-cd-sticky.svg" alt="Sticky Note: Docker in CI/CD" width="30%">
 </a>
 
 

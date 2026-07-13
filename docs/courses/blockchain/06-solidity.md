@@ -47,36 +47,36 @@ flowchart LR
 
 ### Solidity Overview
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" alt="Handwritten: Solidity Overview" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" alt="Handwritten: Solidity Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" alt="Diagram: Solidity Overview" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" alt="Diagram: Solidity Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" alt="Sticky Note: Solidity Overview" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" alt="Handwritten: Solidity Overview" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" alt="Diagram: Solidity Overview" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" alt="Sticky Note: Solidity Overview" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" alt="Sticky Note: Solidity Overview" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" alt="Handwritten: Solidity Overview" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" alt="Handwritten: Solidity Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" alt="Diagram: Solidity Overview" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" alt="Diagram: Solidity Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" alt="Sticky Note: Solidity Overview" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" alt="Sticky Note: Solidity Overview" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-handwritten.svg" alt="Handwritten: Solidity Overview" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-diagram.svg" alt="Diagram: Solidity Overview" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/solidity-overview-sticky.svg" alt="Sticky Note: Solidity Overview" width="30%">
 </a>
 
 
@@ -109,36 +109,36 @@ contract HelloWorld {
 
 ### Data Types and Storage Locations
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" alt="Handwritten: Data Types and Storage Locations" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" alt="Handwritten: Data Types and Storage Locations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" alt="Diagram: Data Types and Storage Locations" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" alt="Diagram: Data Types and Storage Locations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" alt="Sticky Note: Data Types and Storage Locations" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" alt="Handwritten: Data Types and Storage Locations" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" alt="Diagram: Data Types and Storage Locations" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" alt="Sticky Note: Data Types and Storage Locations" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" alt="Sticky Note: Data Types and Storage Locations" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" alt="Handwritten: Data Types and Storage Locations" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" alt="Handwritten: Data Types and Storage Locations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" alt="Diagram: Data Types and Storage Locations" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" alt="Diagram: Data Types and Storage Locations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" alt="Sticky Note: Data Types and Storage Locations" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" alt="Sticky Note: Data Types and Storage Locations" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-handwritten.svg" alt="Handwritten: Data Types and Storage Locations" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-diagram.svg" alt="Diagram: Data Types and Storage Locations" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/data-types-and-storage-locations-sticky.svg" alt="Sticky Note: Data Types and Storage Locations" width="30%">
 </a>
 
 
@@ -167,36 +167,36 @@ contract HelloWorld {
 
 ### Token Standards
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" alt="Handwritten: Token Standards" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" alt="Handwritten: Token Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" alt="Diagram: Token Standards" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" alt="Diagram: Token Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" alt="Sticky Note: Token Standards" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" alt="Handwritten: Token Standards" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" alt="Diagram: Token Standards" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" alt="Sticky Note: Token Standards" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" alt="Sticky Note: Token Standards" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" alt="Handwritten: Token Standards" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" alt="Handwritten: Token Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" alt="Diagram: Token Standards" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" alt="Diagram: Token Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" alt="Sticky Note: Token Standards" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" alt="Sticky Note: Token Standards" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-handwritten.svg" alt="Handwritten: Token Standards" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-diagram.svg" alt="Diagram: Token Standards" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/token-standards-sticky.svg" alt="Sticky Note: Token Standards" width="30%">
 </a>
 
 
@@ -272,36 +272,36 @@ interface IERC1155 {
 
 ### Security Patterns
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" alt="Handwritten: Security Patterns" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" alt="Handwritten: Security Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" alt="Diagram: Security Patterns" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" alt="Diagram: Security Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" alt="Sticky Note: Security Patterns" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" alt="Handwritten: Security Patterns" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" alt="Diagram: Security Patterns" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" alt="Sticky Note: Security Patterns" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" alt="Sticky Note: Security Patterns" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" alt="Handwritten: Security Patterns" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" alt="Handwritten: Security Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" alt="Diagram: Security Patterns" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" alt="Diagram: Security Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" alt="Sticky Note: Security Patterns" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" alt="Sticky Note: Security Patterns" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-handwritten.svg" alt="Handwritten: Security Patterns" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-diagram.svg" alt="Diagram: Security Patterns" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/security-patterns-sticky.svg" alt="Sticky Note: Security Patterns" width="30%">
 </a>
 
 
@@ -364,36 +364,36 @@ contract ReentrancyGuard {
 
 ### Upgradeable Contracts (Proxy Pattern)
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" alt="Handwritten: Upgradeable Contracts (Proxy Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" alt="Handwritten: Upgradeable Contracts (Proxy Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" alt="Diagram: Upgradeable Contracts (Proxy Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" alt="Diagram: Upgradeable Contracts (Proxy Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" alt="Sticky Note: Upgradeable Contracts (Proxy Pattern)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" alt="Handwritten: Upgradeable Contracts (Proxy Pattern)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" alt="Diagram: Upgradeable Contracts (Proxy Pattern)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" alt="Sticky Note: Upgradeable Contracts (Proxy Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" alt="Sticky Note: Upgradeable Contracts (Proxy Pattern)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" alt="Handwritten: Upgradeable Contracts (Proxy Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" alt="Handwritten: Upgradeable Contracts (Proxy Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" alt="Diagram: Upgradeable Contracts (Proxy Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" alt="Diagram: Upgradeable Contracts (Proxy Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" alt="Sticky Note: Upgradeable Contracts (Proxy Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" alt="Sticky Note: Upgradeable Contracts (Proxy Pattern)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-handwritten.svg" alt="Handwritten: Upgradeable Contracts (Proxy Pattern)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-diagram.svg" alt="Diagram: Upgradeable Contracts (Proxy Pattern)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/upgradeable-contracts-proxy-pattern-sticky.svg" alt="Sticky Note: Upgradeable Contracts (Proxy Pattern)" width="30%">
 </a>
 
 
@@ -452,36 +452,36 @@ abstract contract UUPSUpgradeable {
 
 ### Gas Optimization Techniques
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" alt="Handwritten: Gas Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" alt="Handwritten: Gas Optimization Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" alt="Diagram: Gas Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" alt="Diagram: Gas Optimization Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" alt="Sticky Note: Gas Optimization Techniques" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" alt="Handwritten: Gas Optimization Techniques" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" alt="Diagram: Gas Optimization Techniques" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" alt="Sticky Note: Gas Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" alt="Sticky Note: Gas Optimization Techniques" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" alt="Handwritten: Gas Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" alt="Handwritten: Gas Optimization Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" alt="Diagram: Gas Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" alt="Diagram: Gas Optimization Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" alt="Sticky Note: Gas Optimization Techniques" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" alt="Sticky Note: Gas Optimization Techniques" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-handwritten.svg" alt="Handwritten: Gas Optimization Techniques" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-diagram.svg" alt="Diagram: Gas Optimization Techniques" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/gas-optimization-techniques-sticky.svg" alt="Sticky Note: Gas Optimization Techniques" width="30%">
 </a>
 
 
@@ -528,36 +528,36 @@ contract GasOptimized {
 
 ### Common Vulnerabilities
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" alt="Handwritten: Common Vulnerabilities" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" alt="Handwritten: Common Vulnerabilities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" alt="Diagram: Common Vulnerabilities" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" alt="Diagram: Common Vulnerabilities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" alt="Sticky Note: Common Vulnerabilities" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" alt="Handwritten: Common Vulnerabilities" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" alt="Diagram: Common Vulnerabilities" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" alt="Sticky Note: Common Vulnerabilities" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" alt="Sticky Note: Common Vulnerabilities" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" alt="Handwritten: Common Vulnerabilities" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" alt="Handwritten: Common Vulnerabilities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" alt="Diagram: Common Vulnerabilities" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" alt="Diagram: Common Vulnerabilities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" alt="Sticky Note: Common Vulnerabilities" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" alt="Sticky Note: Common Vulnerabilities" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-handwritten.svg" alt="Handwritten: Common Vulnerabilities" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-diagram.svg" alt="Diagram: Common Vulnerabilities" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/common-vulnerabilities-sticky.svg" alt="Sticky Note: Common Vulnerabilities" width="30%">
 </a>
 
 
@@ -574,36 +574,36 @@ contract GasOptimized {
 
 ### Flash Loan Attack Pattern
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" alt="Handwritten: Flash Loan Attack Pattern" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" alt="Handwritten: Flash Loan Attack Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" alt="Diagram: Flash Loan Attack Pattern" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" alt="Diagram: Flash Loan Attack Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" alt="Sticky Note: Flash Loan Attack Pattern" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" alt="Handwritten: Flash Loan Attack Pattern" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" alt="Diagram: Flash Loan Attack Pattern" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" alt="Sticky Note: Flash Loan Attack Pattern" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" alt="Sticky Note: Flash Loan Attack Pattern" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" alt="Handwritten: Flash Loan Attack Pattern" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" alt="Handwritten: Flash Loan Attack Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" alt="Diagram: Flash Loan Attack Pattern" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" alt="Diagram: Flash Loan Attack Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" alt="Sticky Note: Flash Loan Attack Pattern" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" alt="Sticky Note: Flash Loan Attack Pattern" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-handwritten.svg" alt="Handwritten: Flash Loan Attack Pattern" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-diagram.svg" alt="Diagram: Flash Loan Attack Pattern" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/flash-loan-attack-pattern-sticky.svg" alt="Sticky Note: Flash Loan Attack Pattern" width="30%">
 </a>
 
 
@@ -630,36 +630,36 @@ sequenceDiagram
 
 ### Formal Verification
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" alt="Handwritten: Formal Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" alt="Handwritten: Formal Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" alt="Diagram: Formal Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" alt="Diagram: Formal Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" alt="Sticky Note: Formal Verification" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" alt="Handwritten: Formal Verification" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" alt="Diagram: Formal Verification" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" alt="Sticky Note: Formal Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" alt="Sticky Note: Formal Verification" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" alt="Handwritten: Formal Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" alt="Handwritten: Formal Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" alt="Diagram: Formal Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" alt="Diagram: Formal Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" alt="Sticky Note: Formal Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" alt="Sticky Note: Formal Verification" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-handwritten.svg" alt="Handwritten: Formal Verification" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-diagram.svg" alt="Diagram: Formal Verification" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/06-solidity/formal-verification-sticky.svg" alt="Sticky Note: Formal Verification" width="30%">
 </a>
 
 

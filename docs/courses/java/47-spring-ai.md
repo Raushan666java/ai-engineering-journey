@@ -49,14 +49,14 @@ Spring AI is a framework that brings AI capabilities to Spring Boot applications
 
 ### 1.1 Maven Dependencies
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-handwritten.svg" alt="Handwritten: 1.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-handwritten.svg" alt="Handwritten: 1.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-diagram.svg" alt="Diagram: 1.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-diagram.svg" alt="Diagram: 1.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-sticky.svg" alt="Sticky Note: 1.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/1-1-maven-dependencies-sticky.svg" alt="Sticky Note: 1.1 Maven Dependencies" width="30%">
 </a>
 
 
@@ -161,14 +161,14 @@ Spring AI is a framework that brings AI capabilities to Spring Boot applications
 
 ### 1.2 Application Properties
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-handwritten.svg" alt="Handwritten: 1.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-handwritten.svg" alt="Handwritten: 1.2 Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-diagram.svg" alt="Diagram: 1.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-diagram.svg" alt="Diagram: 1.2 Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-sticky.svg" alt="Sticky Note: 1.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/1-2-application-properties-sticky.svg" alt="Sticky Note: 1.2 Application Properties" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ ChatClient is the central abstraction for interacting with LLMs. It supports syn
 
 ### 2.1 Basic ChatClient Configuration
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-handwritten.svg" alt="Handwritten: 2.1 Basic ChatClient Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-handwritten.svg" alt="Handwritten: 2.1 Basic ChatClient Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-diagram.svg" alt="Diagram: 2.1 Basic ChatClient Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-diagram.svg" alt="Diagram: 2.1 Basic ChatClient Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-sticky.svg" alt="Sticky Note: 2.1 Basic ChatClient Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-1-basic-chatclient-configuration-sticky.svg" alt="Sticky Note: 2.1 Basic ChatClient Configuration" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ public class ChatClientConfig {
 
 ### 2.2 ChatService → Sync, Stream, Multi-Turn
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-handwritten.svg" alt="Handwritten: 2.2 ChatService → Sync, Stream, Multi-Turn" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-handwritten.svg" alt="Handwritten: 2.2 ChatService → Sync, Stream, Multi-Turn" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-diagram.svg" alt="Diagram: 2.2 ChatService → Sync, Stream, Multi-Turn" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-diagram.svg" alt="Diagram: 2.2 ChatService → Sync, Stream, Multi-Turn" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-sticky.svg" alt="Sticky Note: 2.2 ChatService → Sync, Stream, Multi-Turn" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-2-chatservice-sync-stream-multi-turn-sticky.svg" alt="Sticky Note: 2.2 ChatService → Sync, Stream, Multi-Turn" width="30%">
 </a>
 
 
@@ -453,14 +453,14 @@ public class ChatService {
 
 ### 2.3 Conversation Model and Repository
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-handwritten.svg" alt="Handwritten: 2.3 Conversation Model and Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-handwritten.svg" alt="Handwritten: 2.3 Conversation Model and Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-diagram.svg" alt="Diagram: 2.3 Conversation Model and Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-diagram.svg" alt="Diagram: 2.3 Conversation Model and Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-sticky.svg" alt="Sticky Note: 2.3 Conversation Model and Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/2-3-conversation-model-and-repository-sticky.svg" alt="Sticky Note: 2.3 Conversation Model and Repository" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ public class ChatModelConfig {
 
 ### 3.1 Provider Factory
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-handwritten.svg" alt="Handwritten: 3.1 Provider Factory" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-handwritten.svg" alt="Handwritten: 3.1 Provider Factory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-diagram.svg" alt="Diagram: 3.1 Provider Factory" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-diagram.svg" alt="Diagram: 3.1 Provider Factory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-sticky.svg" alt="Sticky Note: 3.1 Provider Factory" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/3-1-provider-factory-sticky.svg" alt="Sticky Note: 3.1 Provider Factory" width="30%">
 </a>
 
 
@@ -960,14 +960,14 @@ public class StructuredOutputService {
 
 ### 4.1 Generic Structured Output Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-handwritten.svg" alt="Handwritten: 4.1 Generic Structured Output Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-handwritten.svg" alt="Handwritten: 4.1 Generic Structured Output Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-diagram.svg" alt="Diagram: 4.1 Generic Structured Output Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-diagram.svg" alt="Diagram: 4.1 Generic Structured Output Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-sticky.svg" alt="Sticky Note: 4.1 Generic Structured Output Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/4-1-generic-structured-output-controller-sticky.svg" alt="Sticky Note: 4.1 Generic Structured Output Controller" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ Tools allow LLMs to call external functions. Spring AI provides the `@Tool` anno
 
 ### 5.1 Tool Definitions
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-handwritten.svg" alt="Handwritten: 5.1 Tool Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-handwritten.svg" alt="Handwritten: 5.1 Tool Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-diagram.svg" alt="Diagram: 5.1 Tool Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-diagram.svg" alt="Diagram: 5.1 Tool Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-sticky.svg" alt="Sticky Note: 5.1 Tool Definitions" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-1-tool-definitions-sticky.svg" alt="Sticky Note: 5.1 Tool Definitions" width="30%">
 </a>
 
 
@@ -1270,14 +1270,14 @@ public class DataTools {
 
 ### 5.2 Tool Execution Service
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-handwritten.svg" alt="Handwritten: 5.2 Tool Execution Service" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-handwritten.svg" alt="Handwritten: 5.2 Tool Execution Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-diagram.svg" alt="Diagram: 5.2 Tool Execution Service" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-diagram.svg" alt="Diagram: 5.2 Tool Execution Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-sticky.svg" alt="Sticky Note: 5.2 Tool Execution Service" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-2-tool-execution-service-sticky.svg" alt="Sticky Note: 5.2 Tool Execution Service" width="30%">
 </a>
 
 
@@ -1366,14 +1366,14 @@ public class ToolService {
 
 ### 5.3 Tool Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-handwritten.svg" alt="Handwritten: 5.3 Tool Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-handwritten.svg" alt="Handwritten: 5.3 Tool Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-diagram.svg" alt="Diagram: 5.3 Tool Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-diagram.svg" alt="Diagram: 5.3 Tool Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-sticky.svg" alt="Sticky Note: 5.3 Tool Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/5-3-tool-controller-sticky.svg" alt="Sticky Note: 5.3 Tool Controller" width="30%">
 </a>
 
 
@@ -1428,14 +1428,14 @@ Vector stores enable semantic search by storing and querying embeddings. Spring 
 
 ### 6.1 Vector Store Configuration
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-handwritten.svg" alt="Handwritten: 6.1 Vector Store Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-handwritten.svg" alt="Handwritten: 6.1 Vector Store Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-diagram.svg" alt="Diagram: 6.1 Vector Store Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-diagram.svg" alt="Diagram: 6.1 Vector Store Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-sticky.svg" alt="Sticky Note: 6.1 Vector Store Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-1-vector-store-configuration-sticky.svg" alt="Sticky Note: 6.1 Vector Store Configuration" width="30%">
 </a>
 
 
@@ -1494,14 +1494,14 @@ public class VectorStoreConfig {
 
 ### 6.2 Vector Store Service
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-handwritten.svg" alt="Handwritten: 6.2 Vector Store Service" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-handwritten.svg" alt="Handwritten: 6.2 Vector Store Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-diagram.svg" alt="Diagram: 6.2 Vector Store Service" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-diagram.svg" alt="Diagram: 6.2 Vector Store Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-sticky.svg" alt="Sticky Note: 6.2 Vector Store Service" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-2-vector-store-service-sticky.svg" alt="Sticky Note: 6.2 Vector Store Service" width="30%">
 </a>
 
 
@@ -1616,14 +1616,14 @@ public class VectorStoreService {
 
 ### 6.3 Vector Store Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-handwritten.svg" alt="Handwritten: 6.3 Vector Store Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-handwritten.svg" alt="Handwritten: 6.3 Vector Store Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-diagram.svg" alt="Diagram: 6.3 Vector Store Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-diagram.svg" alt="Diagram: 6.3 Vector Store Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-sticky.svg" alt="Sticky Note: 6.3 Vector Store Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/6-3-vector-store-controller-sticky.svg" alt="Sticky Note: 6.3 Vector Store Controller" width="30%">
 </a>
 
 
@@ -1838,14 +1838,14 @@ public class EmbeddingService {
 
 ### 7.1 Embedding Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-handwritten.svg" alt="Handwritten: 7.1 Embedding Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-handwritten.svg" alt="Handwritten: 7.1 Embedding Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-diagram.svg" alt="Diagram: 7.1 Embedding Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-diagram.svg" alt="Diagram: 7.1 Embedding Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-sticky.svg" alt="Sticky Note: 7.1 Embedding Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/7-1-embedding-controller-sticky.svg" alt="Sticky Note: 7.1 Embedding Controller" width="30%">
 </a>
 
 
@@ -2287,14 +2287,14 @@ public class RagPipelineService {
 
 ### 9.1 RAG Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-handwritten.svg" alt="Handwritten: 9.1 RAG Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-handwritten.svg" alt="Handwritten: 9.1 RAG Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-diagram.svg" alt="Diagram: 9.1 RAG Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-diagram.svg" alt="Diagram: 9.1 RAG Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-sticky.svg" alt="Sticky Note: 9.1 RAG Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/9-1-rag-controller-sticky.svg" alt="Sticky Note: 9.1 RAG Controller" width="30%">
 </a>
 
 
@@ -2548,14 +2548,14 @@ public class PromptTemplateService {
 
 ### 10.1 Prompt Template Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-handwritten.svg" alt="Handwritten: 10.1 Prompt Template Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-handwritten.svg" alt="Handwritten: 10.1 Prompt Template Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-diagram.svg" alt="Diagram: 10.1 Prompt Template Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-diagram.svg" alt="Diagram: 10.1 Prompt Template Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-sticky.svg" alt="Sticky Note: 10.1 Prompt Template Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/10-1-prompt-template-controller-sticky.svg" alt="Sticky Note: 10.1 Prompt Template Controller" width="30%">
 </a>
 
 
@@ -2996,14 +2996,14 @@ public class ArchitectureAgent implements Agent {
 
 ### 11.1 Agent Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-handwritten.svg" alt="Handwritten: 11.1 Agent Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-handwritten.svg" alt="Handwritten: 11.1 Agent Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-diagram.svg" alt="Diagram: 11.1 Agent Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-diagram.svg" alt="Diagram: 11.1 Agent Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-sticky.svg" alt="Sticky Note: 11.1 Agent Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/11-1-agent-controller-sticky.svg" alt="Sticky Note: 11.1 Agent Controller" width="30%">
 </a>
 
 
@@ -3159,14 +3159,14 @@ public class AdvisorService {
 
 ### 12.1 Advisor Controller
 
-<a href="../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-handwritten.svg" alt="Handwritten: 12.1 Advisor Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-handwritten.svg" alt="Handwritten: 12.1 Advisor Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-diagram.svg" alt="Diagram: 12.1 Advisor Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-diagram.svg" alt="Diagram: 12.1 Advisor Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-sticky.svg" alt="Sticky Note: 12.1 Advisor Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/47-spring-ai/12-1-advisor-controller-sticky.svg" alt="Sticky Note: 12.1 Advisor Controller" width="30%">
 </a>
 
 

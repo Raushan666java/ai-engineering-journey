@@ -46,14 +46,14 @@ flowchart LR
 
 ### 8.1 What is Serverless Computing?
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-handwritten.svg" alt="Handwritten: 8.1 What is Serverless Computing?" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-handwritten.svg" alt="Handwritten: 8.1 What is Serverless Computing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-diagram.svg" alt="Diagram: 8.1 What is Serverless Computing?" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-diagram.svg" alt="Diagram: 8.1 What is Serverless Computing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-sticky.svg" alt="Sticky Note: 8.1 What is Serverless Computing?" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-1-what-is-serverless-computing-sticky.svg" alt="Sticky Note: 8.1 What is Serverless Computing?" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ graph TB
 
 ### 8.2 AWS Lambda Deep Dive
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-handwritten.svg" alt="Handwritten: 8.2 AWS Lambda Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-handwritten.svg" alt="Handwritten: 8.2 AWS Lambda Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-diagram.svg" alt="Diagram: 8.2 AWS Lambda Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-diagram.svg" alt="Diagram: 8.2 AWS Lambda Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-sticky.svg" alt="Sticky Note: 8.2 AWS Lambda Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-2-aws-lambda-deep-dive-sticky.svg" alt="Sticky Note: 8.2 AWS Lambda Deep Dive" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ sequenceDiagram
 
 ### 8.3 Event Sources and Triggers
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-handwritten.svg" alt="Handwritten: 8.3 Event Sources and Triggers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-handwritten.svg" alt="Handwritten: 8.3 Event Sources and Triggers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-diagram.svg" alt="Diagram: 8.3 Event Sources and Triggers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-diagram.svg" alt="Diagram: 8.3 Event Sources and Triggers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-sticky.svg" alt="Sticky Note: 8.3 Event Sources and Triggers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-3-event-sources-and-triggers-sticky.svg" alt="Sticky Note: 8.3 Event Sources and Triggers" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ sequenceDiagram
 
 ### 8.4 Serverless Application Model (SAM)
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-handwritten.svg" alt="Handwritten: 8.4 Serverless Application Model (SAM)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-handwritten.svg" alt="Handwritten: 8.4 Serverless Application Model (SAM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-diagram.svg" alt="Diagram: 8.4 Serverless Application Model (SAM)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-diagram.svg" alt="Diagram: 8.4 Serverless Application Model (SAM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-sticky.svg" alt="Sticky Note: 8.4 Serverless Application Model (SAM)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-4-serverless-application-model-sam-sticky.svg" alt="Sticky Note: 8.4 Serverless Application Model (SAM)" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ Resources:
 
 ### 8.5 State Management in Serverless
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-handwritten.svg" alt="Handwritten: 8.5 State Management in Serverless" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-handwritten.svg" alt="Handwritten: 8.5 State Management in Serverless" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-diagram.svg" alt="Diagram: 8.5 State Management in Serverless" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-diagram.svg" alt="Diagram: 8.5 State Management in Serverless" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-sticky.svg" alt="Sticky Note: 8.5 State Management in Serverless" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-5-state-management-in-serverless-sticky.svg" alt="Sticky Note: 8.5 State Management in Serverless" width="30%">
 </a>
 
 
@@ -268,14 +268,14 @@ graph TB
 
 ### 8.6 Cold Start Optimization
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-handwritten.svg" alt="Handwritten: 8.6 Cold Start Optimization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-handwritten.svg" alt="Handwritten: 8.6 Cold Start Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-diagram.svg" alt="Diagram: 8.6 Cold Start Optimization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-diagram.svg" alt="Diagram: 8.6 Cold Start Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-sticky.svg" alt="Sticky Note: 8.6 Cold Start Optimization" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-6-cold-start-optimization-sticky.svg" alt="Sticky Note: 8.6 Cold Start Optimization" width="30%">
 </a>
 
 
@@ -353,14 +353,14 @@ console.log("Monthly cost estimate:", thumbnailFunction.estimateMonthlyCost(1000
 
 ### 8.7 Serverless Security
 
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-handwritten.svg" alt="Handwritten: 8.7 Serverless Security" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-handwritten.svg" alt="Handwritten: 8.7 Serverless Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-diagram.svg" alt="Diagram: 8.7 Serverless Security" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-diagram.svg" alt="Diagram: 8.7 Serverless Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-sticky.svg" alt="Sticky Note: 8.7 Serverless Security" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/08-serverless/8-7-serverless-security-sticky.svg" alt="Sticky Note: 8.7 Serverless Security" width="30%">
 </a>
 
 

@@ -1,4 +1,4 @@
-﻿# Aptitude Test Preparation for IT Companies &amp; PSUs
+# Aptitude Test Preparation for IT Companies &amp; PSUs
 
 ## Learning Objectives
 
@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### Test Patterns: Private Sector vs Government
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-handwritten.svg" alt="Handwritten: Test Patterns: Private Sector vs Government" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-handwritten.svg" alt="Handwritten: Test Patterns: Private Sector vs Government" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-diagram.svg" alt="Diagram: Test Patterns: Private Sector vs Government" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-diagram.svg" alt="Diagram: Test Patterns: Private Sector vs Government" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-sticky.svg" alt="Sticky Note: Test Patterns: Private Sector vs Government" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/test-patterns-private-sector-vs-government-sticky.svg" alt="Sticky Note: Test Patterns: Private Sector vs Government" width="30%">
 </a>
 
 
@@ -41,27 +41,27 @@ By the end of this chapter, you will be able to:
 
 ### Sectional Weightage Comparison
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-handwritten.svg" alt="Handwritten: Sectional Weightage Comparison" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-handwritten.svg" alt="Handwritten: Sectional Weightage Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-diagram.svg" alt="Diagram: Sectional Weightage Comparison" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-diagram.svg" alt="Diagram: Sectional Weightage Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-sticky.svg" alt="Sticky Note: Sectional Weightage Comparison" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/sectional-weightage-comparison-sticky.svg" alt="Sticky Note: Sectional Weightage Comparison" width="30%">
 </a>
 
 
 ### Time Management Strategy
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-handwritten.svg" alt="Handwritten: Time Management Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-handwritten.svg" alt="Handwritten: Time Management Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-diagram.svg" alt="Diagram: Time Management Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-diagram.svg" alt="Diagram: Time Management Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-sticky.svg" alt="Sticky Note: Time Management Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-management-strategy-sticky.svg" alt="Sticky Note: Time Management Strategy" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ By the end of this chapter, you will be able to:
 
 ### Number Systems and HCF-LCM
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-handwritten.svg" alt="Handwritten: Number Systems and HCF-LCM" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-handwritten.svg" alt="Handwritten: Number Systems and HCF-LCM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-diagram.svg" alt="Diagram: Number Systems and HCF-LCM" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-diagram.svg" alt="Diagram: Number Systems and HCF-LCM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-sticky.svg" alt="Sticky Note: Number Systems and HCF-LCM" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-systems-and-hcf-lcm-sticky.svg" alt="Sticky Note: Number Systems and HCF-LCM" width="30%">
 </a>
 
 | Formula | Description |
@@ -100,14 +100,14 @@ By the end of this chapter, you will be able to:
 
 ### Percentages
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-handwritten.svg" alt="Handwritten: Percentages" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-handwritten.svg" alt="Handwritten: Percentages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-diagram.svg" alt="Diagram: Percentages" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-diagram.svg" alt="Diagram: Percentages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-sticky.svg" alt="Sticky Note: Percentages" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentages-sticky.svg" alt="Sticky Note: Percentages" width="30%">
 </a>
 
 | Formula | Description |
@@ -122,14 +122,14 @@ By the end of this chapter, you will be able to:
 
 ### Profit and Loss
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-handwritten.svg" alt="Handwritten: Profit and Loss" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-handwritten.svg" alt="Handwritten: Profit and Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-diagram.svg" alt="Diagram: Profit and Loss" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-diagram.svg" alt="Diagram: Profit and Loss" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-sticky.svg" alt="Sticky Note: Profit and Loss" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-and-loss-sticky.svg" alt="Sticky Note: Profit and Loss" width="30%">
 </a>
 
 | Formula | Description |
@@ -145,14 +145,14 @@ By the end of this chapter, you will be able to:
 
 ### Simple and Compound Interest
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-handwritten.svg" alt="Handwritten: Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-handwritten.svg" alt="Handwritten: Simple and Compound Interest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-diagram.svg" alt="Diagram: Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-diagram.svg" alt="Diagram: Simple and Compound Interest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-sticky.svg" alt="Sticky Note: Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/simple-and-compound-interest-sticky.svg" alt="Sticky Note: Simple and Compound Interest" width="30%">
 </a>
 
 | Formula | Description |
@@ -165,14 +165,14 @@ By the end of this chapter, you will be able to:
 
 ### Ratio and Proportion
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-handwritten.svg" alt="Handwritten: Ratio and Proportion" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-handwritten.svg" alt="Handwritten: Ratio and Proportion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-diagram.svg" alt="Diagram: Ratio and Proportion" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-diagram.svg" alt="Diagram: Ratio and Proportion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-sticky.svg" alt="Sticky Note: Ratio and Proportion" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/ratio-and-proportion-sticky.svg" alt="Sticky Note: Ratio and Proportion" width="30%">
 </a>
 
 | Formula | Description |
@@ -185,14 +185,14 @@ By the end of this chapter, you will be able to:
 
 ### Time, Speed and Distance
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-handwritten.svg" alt="Handwritten: Time, Speed and Distance" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-handwritten.svg" alt="Handwritten: Time, Speed and Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-diagram.svg" alt="Diagram: Time, Speed and Distance" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-diagram.svg" alt="Diagram: Time, Speed and Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-sticky.svg" alt="Sticky Note: Time, Speed and Distance" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-and-distance-sticky.svg" alt="Sticky Note: Time, Speed and Distance" width="30%">
 </a>
 
 | Formula | Description |
@@ -206,14 +206,14 @@ By the end of this chapter, you will be able to:
 
 ### Time and Work
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-handwritten.svg" alt="Handwritten: Time and Work" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-handwritten.svg" alt="Handwritten: Time and Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-diagram.svg" alt="Diagram: Time and Work" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-diagram.svg" alt="Diagram: Time and Work" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-sticky.svg" alt="Sticky Note: Time and Work" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-and-work-sticky.svg" alt="Sticky Note: Time and Work" width="30%">
 </a>
 
 | Formula | Description |
@@ -226,14 +226,14 @@ By the end of this chapter, you will be able to:
 
 ### Averages
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-handwritten.svg" alt="Handwritten: Averages" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-handwritten.svg" alt="Handwritten: Averages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-diagram.svg" alt="Diagram: Averages" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-diagram.svg" alt="Diagram: Averages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-sticky.svg" alt="Sticky Note: Averages" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/averages-sticky.svg" alt="Sticky Note: Averages" width="30%">
 </a>
 
 | Formula | Description |
@@ -244,14 +244,14 @@ By the end of this chapter, you will be able to:
 
 ### Permutations and Combinations
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-handwritten.svg" alt="Handwritten: Permutations and Combinations" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-handwritten.svg" alt="Handwritten: Permutations and Combinations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-diagram.svg" alt="Diagram: Permutations and Combinations" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-diagram.svg" alt="Diagram: Permutations and Combinations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-sticky.svg" alt="Sticky Note: Permutations and Combinations" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutations-and-combinations-sticky.svg" alt="Sticky Note: Permutations and Combinations" width="30%">
 </a>
 
 | Formula | Description |
@@ -263,14 +263,14 @@ By the end of this chapter, you will be able to:
 
 ### Probability
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-handwritten.svg" alt="Handwritten: Probability" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-handwritten.svg" alt="Handwritten: Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-diagram.svg" alt="Diagram: Probability" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-diagram.svg" alt="Diagram: Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-sticky.svg" alt="Sticky Note: Probability" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-sticky.svg" alt="Sticky Note: Probability" width="30%">
 </a>
 
 | Formula | Description |
@@ -281,14 +281,14 @@ By the end of this chapter, you will be able to:
 
 ### Mensuration
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-handwritten.svg" alt="Handwritten: Mensuration" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-handwritten.svg" alt="Handwritten: Mensuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-diagram.svg" alt="Diagram: Mensuration" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-diagram.svg" alt="Diagram: Mensuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-sticky.svg" alt="Sticky Note: Mensuration" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/mensuration-sticky.svg" alt="Sticky Note: Mensuration" width="30%">
 </a>
 
 | Shape | Formula |
@@ -303,14 +303,14 @@ By the end of this chapter, you will be able to:
 
 ### Algebra
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-handwritten.svg" alt="Handwritten: Algebra" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-handwritten.svg" alt="Handwritten: Algebra" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-diagram.svg" alt="Diagram: Algebra" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-diagram.svg" alt="Diagram: Algebra" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-sticky.svg" alt="Sticky Note: Algebra" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/algebra-sticky.svg" alt="Sticky Note: Algebra" width="30%">
 </a>
 
 | Formula | Description |
@@ -327,14 +327,14 @@ By the end of this chapter, you will be able to:
 
 ### Classification
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-handwritten.svg" alt="Handwritten: Classification" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-handwritten.svg" alt="Handwritten: Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-diagram.svg" alt="Diagram: Classification" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-diagram.svg" alt="Diagram: Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-sticky.svg" alt="Sticky Note: Classification" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/classification-sticky.svg" alt="Sticky Note: Classification" width="30%">
 </a>
 
 | Category | Types | Frequency |
@@ -346,14 +346,14 @@ By the end of this chapter, you will be able to:
 
 ### Syllogisms
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-handwritten.svg" alt="Handwritten: Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-handwritten.svg" alt="Handwritten: Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-diagram.svg" alt="Diagram: Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-diagram.svg" alt="Diagram: Syllogisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-sticky.svg" alt="Sticky Note: Syllogisms" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/syllogisms-sticky.svg" alt="Sticky Note: Syllogisms" width="30%">
 </a>
 
 | Rule | Description |
@@ -369,14 +369,14 @@ By the end of this chapter, you will be able to:
 
 ### Coding-Decoding
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-handwritten.svg" alt="Handwritten: Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-handwritten.svg" alt="Handwritten: Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-diagram.svg" alt="Diagram: Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-diagram.svg" alt="Diagram: Coding-Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-sticky.svg" alt="Sticky Note: Coding-Decoding" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/coding-decoding-sticky.svg" alt="Sticky Note: Coding-Decoding" width="30%">
 </a>
 
 | Type | Example |
@@ -388,14 +388,14 @@ By the end of this chapter, you will be able to:
 
 ### Blood Relations
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-handwritten.svg" alt="Handwritten: Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-handwritten.svg" alt="Handwritten: Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-diagram.svg" alt="Diagram: Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-diagram.svg" alt="Diagram: Blood Relations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-sticky.svg" alt="Sticky Note: Blood Relations" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/blood-relations-sticky.svg" alt="Sticky Note: Blood Relations" width="30%">
 </a>
 
 | Relation | Term |
@@ -411,14 +411,14 @@ By the end of this chapter, you will be able to:
 
 ### Direction Sense
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-handwritten.svg" alt="Handwritten: Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-handwritten.svg" alt="Handwritten: Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-diagram.svg" alt="Diagram: Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-diagram.svg" alt="Diagram: Direction Sense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-sticky.svg" alt="Sticky Note: Direction Sense" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/direction-sense-sticky.svg" alt="Sticky Note: Direction Sense" width="30%">
 </a>
 
 | Action | Result |
@@ -434,14 +434,14 @@ By the end of this chapter, you will be able to:
 
 ### Order and Ranking
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-handwritten.svg" alt="Handwritten: Order and Ranking" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-handwritten.svg" alt="Handwritten: Order and Ranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-diagram.svg" alt="Diagram: Order and Ranking" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-diagram.svg" alt="Diagram: Order and Ranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-sticky.svg" alt="Sticky Note: Order and Ranking" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/order-and-ranking-sticky.svg" alt="Sticky Note: Order and Ranking" width="30%">
 </a>
 
 | Formula | Description |
@@ -452,14 +452,14 @@ By the end of this chapter, you will be able to:
 
 ### Non-Verbal Quick Reference
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-handwritten.svg" alt="Handwritten: Non-Verbal Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-handwritten.svg" alt="Handwritten: Non-Verbal Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-diagram.svg" alt="Diagram: Non-Verbal Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-diagram.svg" alt="Diagram: Non-Verbal Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-sticky.svg" alt="Sticky Note: Non-Verbal Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/non-verbal-quick-reference-sticky.svg" alt="Sticky Note: Non-Verbal Quick Reference" width="30%">
 </a>
 
 | Type | Strategy |
@@ -474,14 +474,14 @@ By the end of this chapter, you will be able to:
 
 ### Common Errors
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-handwritten.svg" alt="Handwritten: Common Errors" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-handwritten.svg" alt="Handwritten: Common Errors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-diagram.svg" alt="Diagram: Common Errors" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-diagram.svg" alt="Diagram: Common Errors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-sticky.svg" alt="Sticky Note: Common Errors" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-errors-sticky.svg" alt="Sticky Note: Common Errors" width="30%">
 </a>
 
 | Error Type | Wrong | Correct |
@@ -495,14 +495,14 @@ By the end of this chapter, you will be able to:
 
 ### Vocabulary
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-handwritten.svg" alt="Handwritten: Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-handwritten.svg" alt="Handwritten: Vocabulary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-diagram.svg" alt="Diagram: Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-diagram.svg" alt="Diagram: Vocabulary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-sticky.svg" alt="Sticky Note: Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/vocabulary-sticky.svg" alt="Sticky Note: Vocabulary" width="30%">
 </a>
 
 | Word | Meaning | Sentence |
@@ -524,14 +524,14 @@ By the end of this chapter, you will be able to:
 
 ### Reading Comprehension Strategy
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-handwritten.svg" alt="Handwritten: Reading Comprehension Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-handwritten.svg" alt="Handwritten: Reading Comprehension Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-diagram.svg" alt="Diagram: Reading Comprehension Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-diagram.svg" alt="Diagram: Reading Comprehension Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-sticky.svg" alt="Sticky Note: Reading Comprehension Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reading-comprehension-strategy-sticky.svg" alt="Sticky Note: Reading Comprehension Strategy" width="30%">
 </a>
 
 1. Read questions first (30 sec)
@@ -544,14 +544,14 @@ By the end of this chapter, you will be able to:
 
 ### Operating Systems
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
 </a>
 
 | Topic | Key Points |
@@ -564,14 +564,14 @@ By the end of this chapter, you will be able to:
 
 ### Database Management Systems
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-handwritten.svg" alt="Handwritten: Database Management Systems" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-handwritten.svg" alt="Handwritten: Database Management Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-diagram.svg" alt="Diagram: Database Management Systems" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-diagram.svg" alt="Diagram: Database Management Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-sticky.svg" alt="Sticky Note: Database Management Systems" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/database-management-systems-sticky.svg" alt="Sticky Note: Database Management Systems" width="30%">
 </a>
 
 | Topic | Key Points |
@@ -584,14 +584,14 @@ By the end of this chapter, you will be able to:
 
 ### Computer Networks
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-handwritten.svg" alt="Handwritten: Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-handwritten.svg" alt="Handwritten: Computer Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-diagram.svg" alt="Diagram: Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-diagram.svg" alt="Diagram: Computer Networks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-sticky.svg" alt="Sticky Note: Computer Networks" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/computer-networks-sticky.svg" alt="Sticky Note: Computer Networks" width="30%">
 </a>
 
 | Topic | Key Points |
@@ -603,14 +603,14 @@ By the end of this chapter, you will be able to:
 
 ### DSA
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-handwritten.svg" alt="Handwritten: DSA" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-handwritten.svg" alt="Handwritten: DSA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-diagram.svg" alt="Diagram: DSA" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-diagram.svg" alt="Diagram: DSA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-sticky.svg" alt="Sticky Note: DSA" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/dsa-sticky.svg" alt="Sticky Note: DSA" width="30%">
 </a>
 
 | Topic | Key Points |
@@ -625,14 +625,14 @@ By the end of this chapter, you will be able to:
 
 ### Programming Concepts
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-handwritten.svg" alt="Handwritten: Programming Concepts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-handwritten.svg" alt="Handwritten: Programming Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-diagram.svg" alt="Diagram: Programming Concepts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-diagram.svg" alt="Diagram: Programming Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-sticky.svg" alt="Sticky Note: Programming Concepts" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/programming-concepts-sticky.svg" alt="Sticky Note: Programming Concepts" width="30%">
 </a>
 
 | Topic | Key Points |
@@ -647,14 +647,14 @@ By the end of this chapter, you will be able to:
 
 ### Quantitative Aptitude (25)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-handwritten.svg" alt="Handwritten: Quantitative Aptitude (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-handwritten.svg" alt="Handwritten: Quantitative Aptitude (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-diagram.svg" alt="Diagram: Quantitative Aptitude (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-diagram.svg" alt="Diagram: Quantitative Aptitude (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-sticky.svg" alt="Sticky Note: Quantitative Aptitude (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-aptitude-25-sticky.svg" alt="Sticky Note: Quantitative Aptitude (25)" width="30%">
 </a>
 
 1. Train 150m passes pole in 15s. Speed? b) 36 km/h
@@ -685,14 +685,14 @@ By the end of this chapter, you will be able to:
 
 ### Logical Reasoning (25)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-handwritten.svg" alt="Handwritten: Logical Reasoning (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-handwritten.svg" alt="Handwritten: Logical Reasoning (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-diagram.svg" alt="Diagram: Logical Reasoning (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-diagram.svg" alt="Diagram: Logical Reasoning (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-sticky.svg" alt="Sticky Note: Logical Reasoning (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-25-sticky.svg" alt="Sticky Note: Logical Reasoning (25)" width="30%">
 </a>
 
 26-50: Answers key at end of section
@@ -725,14 +725,14 @@ By the end of this chapter, you will be able to:
 
 ### Verbal Ability (25)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-handwritten.svg" alt="Handwritten: Verbal Ability (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-handwritten.svg" alt="Handwritten: Verbal Ability (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-diagram.svg" alt="Diagram: Verbal Ability (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-diagram.svg" alt="Diagram: Verbal Ability (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-sticky.svg" alt="Sticky Note: Verbal Ability (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-25-sticky.svg" alt="Sticky Note: Verbal Ability (25)" width="30%">
 </a>
 
 51. Spelling? a) Accommodate
@@ -763,14 +763,14 @@ By the end of this chapter, you will be able to:
 
 ### Technical Aptitude (25)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-handwritten.svg" alt="Handwritten: Technical Aptitude (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-handwritten.svg" alt="Handwritten: Technical Aptitude (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-diagram.svg" alt="Diagram: Technical Aptitude (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-diagram.svg" alt="Diagram: Technical Aptitude (25)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-sticky.svg" alt="Sticky Note: Technical Aptitude (25)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-25-sticky.svg" alt="Sticky Note: Technical Aptitude (25)" width="30%">
 </a>
 
 76. LIFO? b) Stack
@@ -803,14 +803,14 @@ By the end of this chapter, you will be able to:
 
 ### Quantitative (50 MCQs)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-handwritten.svg" alt="Handwritten: Quantitative (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-handwritten.svg" alt="Handwritten: Quantitative (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-diagram.svg" alt="Diagram: Quantitative (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-diagram.svg" alt="Diagram: Quantitative (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-sticky.svg" alt="Sticky Note: Quantitative (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-50-mcqs-sticky.svg" alt="Sticky Note: Quantitative (50 MCQs)" width="30%">
 </a>
 
 Number Systems(5), Percentages(5), Profit/Loss(5), SI/CI(5),
@@ -819,14 +819,14 @@ Permutation-Combination(5), Probability(5). 10/day, 10min each.
 
 ### Logical Reasoning (50 MCQs)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-handwritten.svg" alt="Handwritten: Logical Reasoning (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-handwritten.svg" alt="Handwritten: Logical Reasoning (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-diagram.svg" alt="Diagram: Logical Reasoning (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-diagram.svg" alt="Diagram: Logical Reasoning (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-sticky.svg" alt="Sticky Note: Logical Reasoning (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/logical-reasoning-50-mcqs-sticky.svg" alt="Sticky Note: Logical Reasoning (50 MCQs)" width="30%">
 </a>
 
 Syllogisms(8), Coding-Decoding(6), Blood Relations(6),
@@ -835,14 +835,14 @@ Input-Output(4), Data Sufficiency(4), Non-Verbal(6).
 
 ### Verbal Ability (50 MCQs)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-handwritten.svg" alt="Handwritten: Verbal Ability (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-handwritten.svg" alt="Handwritten: Verbal Ability (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-diagram.svg" alt="Diagram: Verbal Ability (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-diagram.svg" alt="Diagram: Verbal Ability (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-sticky.svg" alt="Sticky Note: Verbal Ability (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-ability-50-mcqs-sticky.svg" alt="Sticky Note: Verbal Ability (50 MCQs)" width="30%">
 </a>
 
 Grammar(12), Vocabulary(10), RC(10), Cloze(6),
@@ -850,14 +850,14 @@ Para Jumbles(6), Sentence Correction(6).
 
 ### Technical Aptitude (50 MCQs)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-handwritten.svg" alt="Handwritten: Technical Aptitude (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-handwritten.svg" alt="Handwritten: Technical Aptitude (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-diagram.svg" alt="Diagram: Technical Aptitude (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-diagram.svg" alt="Diagram: Technical Aptitude (50 MCQs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-sticky.svg" alt="Sticky Note: Technical Aptitude (50 MCQs)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-aptitude-50-mcqs-sticky.svg" alt="Sticky Note: Technical Aptitude (50 MCQs)" width="30%">
 </a>
 
 OS(8), DBMS(8), Networks(8), DSA(8), Programming(8),
@@ -913,14 +913,14 @@ console.log('Weak areas:', a.weakAreas([
 
 ### Time-Saving Techniques
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-handwritten.svg" alt="Handwritten: Time-Saving Techniques" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-handwritten.svg" alt="Handwritten: Time-Saving Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-diagram.svg" alt="Diagram: Time-Saving Techniques" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-diagram.svg" alt="Diagram: Time-Saving Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-sticky.svg" alt="Sticky Note: Time-Saving Techniques" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-saving-techniques-sticky.svg" alt="Sticky Note: Time-Saving Techniques" width="30%">
 </a>
 
 | Technique | Application | Time Saved |
@@ -933,14 +933,14 @@ console.log('Weak areas:', a.weakAreas([
 
 ### Cutoff Strategy
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-handwritten.svg" alt="Handwritten: Cutoff Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-handwritten.svg" alt="Handwritten: Cutoff Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-diagram.svg" alt="Diagram: Cutoff Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-diagram.svg" alt="Diagram: Cutoff Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-sticky.svg" alt="Sticky Note: Cutoff Strategy" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/cutoff-strategy-sticky.svg" alt="Sticky Note: Cutoff Strategy" width="30%">
 </a>
 
 | Section | Target Accuracy | Target Attempt |
@@ -952,14 +952,14 @@ console.log('Weak areas:', a.weakAreas([
 
 ### Common Mistakes
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-handwritten.svg" alt="Handwritten: Common Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-handwritten.svg" alt="Handwritten: Common Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-diagram.svg" alt="Diagram: Common Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-diagram.svg" alt="Diagram: Common Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-sticky.svg" alt="Sticky Note: Common Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/common-mistakes-sticky.svg" alt="Sticky Note: Common Mistakes" width="30%">
 </a>
 
 1. Spending too much time per question
@@ -971,14 +971,14 @@ console.log('Weak areas:', a.weakAreas([
 
 ### 30-Day Plan
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-handwritten.svg" alt="Handwritten: 30-Day Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-handwritten.svg" alt="Handwritten: 30-Day Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-diagram.svg" alt="Diagram: 30-Day Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-diagram.svg" alt="Diagram: 30-Day Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-sticky.svg" alt="Sticky Note: 30-Day Plan" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/30-day-plan-sticky.svg" alt="Sticky Note: 30-Day Plan" width="30%">
 </a>
 
 Week 1: Number systems, Percentages, Syllogisms, Coding, Grammar, OS
@@ -1011,14 +1011,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Number System Shortcuts (Detailed)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-handwritten.svg" alt="Handwritten: Number System Shortcuts (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-handwritten.svg" alt="Handwritten: Number System Shortcuts (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-diagram.svg" alt="Diagram: Number System Shortcuts (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-diagram.svg" alt="Diagram: Number System Shortcuts (Detailed)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-sticky.svg" alt="Sticky Note: Number System Shortcuts (Detailed)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/number-system-shortcuts-detailed-sticky.svg" alt="Sticky Note: Number System Shortcuts (Detailed)" width="30%">
 </a>
 
 1. To find unit digit of a power: cyclicity of 2 is 4 (2,4,8,6), 3 is 4 (3,9,7,1), 4 is 2 (4,6), 7 is 4 (7,9,3,1), 8 is 4 (8,4,2,6), 9 is 2 (9,1). Divide exponent by cyclicity, use remainder.
@@ -1029,14 +1029,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Percentage Shortcuts in Depth
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-handwritten.svg" alt="Handwritten: Percentage Shortcuts in Depth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-handwritten.svg" alt="Handwritten: Percentage Shortcuts in Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-diagram.svg" alt="Diagram: Percentage Shortcuts in Depth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-diagram.svg" alt="Diagram: Percentage Shortcuts in Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-sticky.svg" alt="Sticky Note: Percentage Shortcuts in Depth" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/percentage-shortcuts-in-depth-sticky.svg" alt="Sticky Note: Percentage Shortcuts in Depth" width="30%">
 </a>
 
 1. If A is x% of B and B is y% of C, then A is (xy/100)% of C
@@ -1047,14 +1047,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Profit-Loss Advanced
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-handwritten.svg" alt="Handwritten: Profit-Loss Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-handwritten.svg" alt="Handwritten: Profit-Loss Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-diagram.svg" alt="Diagram: Profit-Loss Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-diagram.svg" alt="Diagram: Profit-Loss Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-sticky.svg" alt="Sticky Note: Profit-Loss Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/profit-loss-advanced-sticky.svg" alt="Sticky Note: Profit-Loss Advanced" width="30%">
 </a>
 
 1. If two items are sold at same price, one at x% gain and other at x% loss, overall loss% = (x^2/100)%
@@ -1065,14 +1065,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### SI-CI Advanced
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-handwritten.svg" alt="Handwritten: SI-CI Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-handwritten.svg" alt="Handwritten: SI-CI Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-diagram.svg" alt="Diagram: SI-CI Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-diagram.svg" alt="Diagram: SI-CI Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-sticky.svg" alt="Sticky Note: SI-CI Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/si-ci-advanced-sticky.svg" alt="Sticky Note: SI-CI Advanced" width="30%">
 </a>
 
 1. For same rate, CI for 2 years = SI(1 + R/200)
@@ -1083,14 +1083,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Time-Speed-Distance Advanced
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-handwritten.svg" alt="Handwritten: Time-Speed-Distance Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-handwritten.svg" alt="Handwritten: Time-Speed-Distance Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-diagram.svg" alt="Diagram: Time-Speed-Distance Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-diagram.svg" alt="Diagram: Time-Speed-Distance Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-sticky.svg" alt="Sticky Note: Time-Speed-Distance Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-speed-distance-advanced-sticky.svg" alt="Sticky Note: Time-Speed-Distance Advanced" width="30%">
 </a>
 
 1. If two trains cross each other, time = (L1+L2)/(S1+S2) for opposite direction
@@ -1101,14 +1101,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Time-Work Advanced
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-handwritten.svg" alt="Handwritten: Time-Work Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-handwritten.svg" alt="Handwritten: Time-Work Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-diagram.svg" alt="Diagram: Time-Work Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-diagram.svg" alt="Diagram: Time-Work Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-sticky.svg" alt="Sticky Note: Time-Work Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/time-work-advanced-sticky.svg" alt="Sticky Note: Time-Work Advanced" width="30%">
 </a>
 
 1. If A is x% more efficient than B, time ratio = 100:(100+x) (A takes less time)
@@ -1119,14 +1119,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Permutation-Combination Advanced
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-handwritten.svg" alt="Handwritten: Permutation-Combination Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-handwritten.svg" alt="Handwritten: Permutation-Combination Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-diagram.svg" alt="Diagram: Permutation-Combination Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-diagram.svg" alt="Diagram: Permutation-Combination Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-sticky.svg" alt="Sticky Note: Permutation-Combination Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/permutation-combination-advanced-sticky.svg" alt="Sticky Note: Permutation-Combination Advanced" width="30%">
 </a>
 
 1. Number of ways to arrange n items with p alike, q alike, r alike = n!/(p! q! r!)
@@ -1137,14 +1137,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Probability Advanced
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-handwritten.svg" alt="Handwritten: Probability Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-handwritten.svg" alt="Handwritten: Probability Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-diagram.svg" alt="Diagram: Probability Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-diagram.svg" alt="Diagram: Probability Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-sticky.svg" alt="Sticky Note: Probability Advanced" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/probability-advanced-sticky.svg" alt="Sticky Note: Probability Advanced" width="30%">
 </a>
 
 1. P(A and B) = P(A) x P(B) for independent events
@@ -1155,14 +1155,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Data Interpretation Quick Methods
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-handwritten.svg" alt="Handwritten: Data Interpretation Quick Methods" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-handwritten.svg" alt="Handwritten: Data Interpretation Quick Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-diagram.svg" alt="Diagram: Data Interpretation Quick Methods" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-diagram.svg" alt="Diagram: Data Interpretation Quick Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-sticky.svg" alt="Sticky Note: Data Interpretation Quick Methods" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-interpretation-quick-methods-sticky.svg" alt="Sticky Note: Data Interpretation Quick Methods" width="30%">
 </a>
 
 1. For pie chart: sector angle = (value/total) x 360
@@ -1175,14 +1175,14 @@ Track progress with the TypeScript analyzer. Consistent daily practice
 
 ### Input-Output Patterns
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-handwritten.svg" alt="Handwritten: Input-Output Patterns" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-handwritten.svg" alt="Handwritten: Input-Output Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-diagram.svg" alt="Diagram: Input-Output Patterns" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-diagram.svg" alt="Diagram: Input-Output Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-sticky.svg" alt="Sticky Note: Input-Output Patterns" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/input-output-patterns-sticky.svg" alt="Sticky Note: Input-Output Patterns" width="30%">
 </a>
 
 Step 1: Usually arranges numbers in ascending/descending order
@@ -1193,14 +1193,14 @@ Step 5: Machine stops when all elements are in order
 
 ### Data Sufficiency Techniques
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-handwritten.svg" alt="Handwritten: Data Sufficiency Techniques" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-handwritten.svg" alt="Handwritten: Data Sufficiency Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-diagram.svg" alt="Diagram: Data Sufficiency Techniques" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-diagram.svg" alt="Diagram: Data Sufficiency Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-sticky.svg" alt="Sticky Note: Data Sufficiency Techniques" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/data-sufficiency-techniques-sticky.svg" alt="Sticky Note: Data Sufficiency Techniques" width="30%">
 </a>
 
 1. Statement alone sufficient: Answer is A or B
@@ -1211,14 +1211,14 @@ Step 5: Machine stops when all elements are in order
 
 ### Puzzle Types for Exams
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-handwritten.svg" alt="Handwritten: Puzzle Types for Exams" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-handwritten.svg" alt="Handwritten: Puzzle Types for Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-diagram.svg" alt="Diagram: Puzzle Types for Exams" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-diagram.svg" alt="Diagram: Puzzle Types for Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-sticky.svg" alt="Sticky Note: Puzzle Types for Exams" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/puzzle-types-for-exams-sticky.svg" alt="Sticky Note: Puzzle Types for Exams" width="30%">
 </a>
 
 1. Classification: Group items based on common properties
@@ -1229,14 +1229,14 @@ Step 5: Machine stops when all elements are in order
 
 ### Critical Reasoning Patterns
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-handwritten.svg" alt="Handwritten: Critical Reasoning Patterns" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-handwritten.svg" alt="Handwritten: Critical Reasoning Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-diagram.svg" alt="Diagram: Critical Reasoning Patterns" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-diagram.svg" alt="Diagram: Critical Reasoning Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-sticky.svg" alt="Sticky Note: Critical Reasoning Patterns" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/critical-reasoning-patterns-sticky.svg" alt="Sticky Note: Critical Reasoning Patterns" width="30%">
 </a>
 
 1. Statement-Assumption: Assumption is unstated premise
@@ -1249,14 +1249,14 @@ Step 5: Machine stops when all elements are in order
 
 ### Quantitative (15)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" alt="Handwritten: Quantitative (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" alt="Handwritten: Quantitative (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" alt="Diagram: Quantitative (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" alt="Diagram: Quantitative (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" alt="Sticky Note: Quantitative (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" alt="Sticky Note: Quantitative (15)" width="30%">
 </a>
 
 Q101. Find the unit digit of 7^345. Answer: 7 (cyclicity 4, 345 mod 4 = 1)
@@ -1277,14 +1277,14 @@ Q115. If x^2 + y^2 = 25 and xy = 12, find x+y. Answer: (x+y)^2 = x^2+y^2+2xy = 2
 
 ### Reasoning (15)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" alt="Handwritten: Reasoning (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" alt="Handwritten: Reasoning (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" alt="Diagram: Reasoning (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" alt="Diagram: Reasoning (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" alt="Sticky Note: Reasoning (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" alt="Sticky Note: Reasoning (15)" width="30%">
 </a>
 
 Q116. Statements: No book is pen. All pens are pencils. Conclusions: I. No book is pencil. II. Some pencils are not books. Which follows? Answer: II only (No B is P, All P are Pc => Some Pc are not B is valid)
@@ -1306,14 +1306,14 @@ Q130. How many triangles in a figure with 4x4 grid? Answer: 16 small + 9 (2x2) +
 
 ### Verbal (10)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" alt="Handwritten: Verbal (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" alt="Handwritten: Verbal (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" alt="Diagram: Verbal (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" alt="Diagram: Verbal (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" alt="Sticky Note: Verbal (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" alt="Sticky Note: Verbal (10)" width="30%">
 </a>
 
 Q131. Select the correct: (a) He laid on the bed (b) He lay on the bed (c) He lied on the bed (d) He lays on the bed. Answer: b) He lay on the bed (past of lie)
@@ -1329,14 +1329,14 @@ Q140. Fill: 'The committee ___ decided to postpone the meeting.' (has/have) Answ
 
 ### Technical (10)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" alt="Handwritten: Technical (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" alt="Handwritten: Technical (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" alt="Diagram: Technical (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" alt="Diagram: Technical (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" alt="Sticky Note: Technical (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" alt="Sticky Note: Technical (10)" width="30%">
 </a>
 
 Q141. Which OSI layer handles routing? Answer: Network layer (Layer 3)
@@ -1354,14 +1354,14 @@ Q150. What is the primary function of an operating system? Answer: Manage hardwa
 
 ### Divisibility Rules Summary
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-handwritten.svg" alt="Handwritten: Divisibility Rules Summary" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-handwritten.svg" alt="Handwritten: Divisibility Rules Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-diagram.svg" alt="Diagram: Divisibility Rules Summary" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-diagram.svg" alt="Diagram: Divisibility Rules Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-sticky.svg" alt="Sticky Note: Divisibility Rules Summary" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/divisibility-rules-summary-sticky.svg" alt="Sticky Note: Divisibility Rules Summary" width="30%">
 </a>
 
 | Divisor | Rule |
@@ -1378,14 +1378,14 @@ Q150. What is the primary function of an operating system? Answer: Manage hardwa
 
 ### Squares and Cubes to Remember
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-handwritten.svg" alt="Handwritten: Squares and Cubes to Remember" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-handwritten.svg" alt="Handwritten: Squares and Cubes to Remember" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-diagram.svg" alt="Diagram: Squares and Cubes to Remember" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-diagram.svg" alt="Diagram: Squares and Cubes to Remember" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-sticky.svg" alt="Sticky Note: Squares and Cubes to Remember" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/squares-and-cubes-to-remember-sticky.svg" alt="Sticky Note: Squares and Cubes to Remember" width="30%">
 </a>
 
 | Number | Square | Cube |
@@ -1404,14 +1404,14 @@ Q150. What is the primary function of an operating system? Answer: Manage hardwa
 
 ### Fraction to Percentage Conversion
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-handwritten.svg" alt="Handwritten: Fraction to Percentage Conversion" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-handwritten.svg" alt="Handwritten: Fraction to Percentage Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-diagram.svg" alt="Diagram: Fraction to Percentage Conversion" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-diagram.svg" alt="Diagram: Fraction to Percentage Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-sticky.svg" alt="Sticky Note: Fraction to Percentage Conversion" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/fraction-to-percentage-conversion-sticky.svg" alt="Sticky Note: Fraction to Percentage Conversion" width="30%">
 </a>
 
 | Fraction | % | Fraction | % |
@@ -1428,14 +1428,14 @@ Q150. What is the primary function of an operating system? Answer: Manage hardwa
 
 ### Speed Calculation Table
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-handwritten.svg" alt="Handwritten: Speed Calculation Table" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-handwritten.svg" alt="Handwritten: Speed Calculation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-diagram.svg" alt="Diagram: Speed Calculation Table" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-diagram.svg" alt="Diagram: Speed Calculation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-sticky.svg" alt="Sticky Note: Speed Calculation Table" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/speed-calculation-table-sticky.svg" alt="Sticky Note: Speed Calculation Table" width="30%">
 </a>
 
 | km/h | m/s | m/s | km/h |
@@ -1453,14 +1453,14 @@ This chapter provides comprehensive preparation for aptitude tests across IT com
 
 ### Quantitative (15)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" alt="Handwritten: Quantitative (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-handwritten.svg" alt="Handwritten: Quantitative (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" alt="Diagram: Quantitative (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-diagram.svg" alt="Diagram: Quantitative (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" alt="Sticky Note: Quantitative (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/quantitative-15-sticky.svg" alt="Sticky Note: Quantitative (15)" width="30%">
 </a>
 
 Q101. Find unit digit of 7^345. Answer: 7 (cyclicity 4, 345 mod 4 = 1)
@@ -1481,14 +1481,14 @@ Q115. x^2+y^2=25 and xy=12, find x+y. Answer: (x+y)^2 = 25+24=49, x+y=7
 
 ### Reasoning (15)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" alt="Handwritten: Reasoning (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-handwritten.svg" alt="Handwritten: Reasoning (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" alt="Diagram: Reasoning (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-diagram.svg" alt="Diagram: Reasoning (15)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" alt="Sticky Note: Reasoning (15)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/reasoning-15-sticky.svg" alt="Sticky Note: Reasoning (15)" width="30%">
 </a>
 
 Q116. No book is pen. All pens are pencils. Concl: I. No book is pencil. II. Some pencils not books. Answer: II only
@@ -1509,14 +1509,14 @@ Q130. In a code, 1=A, 2=B, 26=Z. Code for INDIA? Answer: I=9, N=14, D=4, I=9, A=
 
 ### Verbal (10)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" alt="Handwritten: Verbal (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-handwritten.svg" alt="Handwritten: Verbal (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" alt="Diagram: Verbal (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-diagram.svg" alt="Diagram: Verbal (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" alt="Sticky Note: Verbal (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/verbal-10-sticky.svg" alt="Sticky Note: Verbal (10)" width="30%">
 </a>
 
 Q131. Laid vs Lay vs Lied? Answer: He lay on the bed (past of lie)
@@ -1532,14 +1532,14 @@ Q140. Committee (has/have) decided? Answer: has
 
 ### Technical (10)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" alt="Handwritten: Technical (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-handwritten.svg" alt="Handwritten: Technical (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" alt="Diagram: Technical (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-diagram.svg" alt="Diagram: Technical (10)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" alt="Sticky Note: Technical (10)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/technical-10-sticky.svg" alt="Sticky Note: Technical (10)" width="30%">
 </a>
 
 Q141. OSI layer for routing? Answer: Network (Layer 3)
@@ -1557,14 +1557,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### For TCS NQT (National Qualifier Test)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-handwritten.svg" alt="Handwritten: For TCS NQT (National Qualifier Test)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-handwritten.svg" alt="Handwritten: For TCS NQT (National Qualifier Test)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-diagram.svg" alt="Diagram: For TCS NQT (National Qualifier Test)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-diagram.svg" alt="Diagram: For TCS NQT (National Qualifier Test)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-sticky.svg" alt="Sticky Note: For TCS NQT (National Qualifier Test)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-tcs-nqt-national-qualifier-test-sticky.svg" alt="Sticky Note: For TCS NQT (National Qualifier Test)" width="30%">
 </a>
 
 | Section | Questions | Time | Focus Areas |
@@ -1576,14 +1576,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### For SSC CGL 2026
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-handwritten.svg" alt="Handwritten: For SSC CGL 2026" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-handwritten.svg" alt="Handwritten: For SSC CGL 2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-diagram.svg" alt="Diagram: For SSC CGL 2026" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-diagram.svg" alt="Diagram: For SSC CGL 2026" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-sticky.svg" alt="Sticky Note: For SSC CGL 2026" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ssc-cgl-2026-sticky.svg" alt="Sticky Note: For SSC CGL 2026" width="30%">
 </a>
 
 | Section | Questions | Marks | Focus Areas |
@@ -1596,14 +1596,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### For IBPS SO (IT)
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-handwritten.svg" alt="Handwritten: For IBPS SO (IT)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-handwritten.svg" alt="Handwritten: For IBPS SO (IT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-diagram.svg" alt="Diagram: For IBPS SO (IT)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-diagram.svg" alt="Diagram: For IBPS SO (IT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-sticky.svg" alt="Sticky Note: For IBPS SO (IT)" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-ibps-so-it-sticky.svg" alt="Sticky Note: For IBPS SO (IT)" width="30%">
 </a>
 
 | Section | Questions | Marks | Focus Areas |
@@ -1616,14 +1616,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### For GATE CS 2027
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-handwritten.svg" alt="Handwritten: For GATE CS 2027" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-handwritten.svg" alt="Handwritten: For GATE CS 2027" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-diagram.svg" alt="Diagram: For GATE CS 2027" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-diagram.svg" alt="Diagram: For GATE CS 2027" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-sticky.svg" alt="Sticky Note: For GATE CS 2027" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/for-gate-cs-2027-sticky.svg" alt="Sticky Note: For GATE CS 2027" width="30%">
 </a>
 
 | Subject | Weightage | Questions to Target |
@@ -1655,14 +1655,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### Before Exam
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-handwritten.svg" alt="Handwritten: Before Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-handwritten.svg" alt="Handwritten: Before Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-diagram.svg" alt="Diagram: Before Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-diagram.svg" alt="Diagram: Before Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-sticky.svg" alt="Sticky Note: Before Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/before-exam-sticky.svg" alt="Sticky Note: Before Exam" width="30%">
 </a>
 
 1. Print 2 copies of admit card (colored if required)
@@ -1678,14 +1678,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### During Exam
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-handwritten.svg" alt="Handwritten: During Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-handwritten.svg" alt="Handwritten: During Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-diagram.svg" alt="Diagram: During Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-diagram.svg" alt="Diagram: During Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-sticky.svg" alt="Sticky Note: During Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/during-exam-sticky.svg" alt="Sticky Note: During Exam" width="30%">
 </a>
 
 1. Read instructions carefully at start
@@ -1701,14 +1701,14 @@ Q150. Primary OS function? Answer: Manage hardware and software resources
 
 ### After Exam
 
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-handwritten.svg" alt="Handwritten: After Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-handwritten.svg" alt="Handwritten: After Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-diagram.svg" alt="Diagram: After Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-diagram.svg" alt="Diagram: After Exam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-sticky.svg" alt="Sticky Note: After Exam" width="30%">
+<a href="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/job-preparation/03-aptitude-test-preparation/after-exam-sticky.svg" alt="Sticky Note: After Exam" width="30%">
 </a>
 
 1. Note down your answers for future reference

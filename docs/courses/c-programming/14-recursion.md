@@ -14,14 +14,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -58,14 +58,14 @@ flowchart LR
 
 ### Real-World Analogy: Russian Nesting Dolls (Matryoshka)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-handwritten.svg" alt="Handwritten: Real-World Analogy: Russian Nesting Dolls (Matryoshka)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-handwritten.svg" alt="Handwritten: Real-World Analogy: Russian Nesting Dolls (Matryoshka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-diagram.svg" alt="Diagram: Real-World Analogy: Russian Nesting Dolls (Matryoshka)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-diagram.svg" alt="Diagram: Real-World Analogy: Russian Nesting Dolls (Matryoshka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-sticky.svg" alt="Sticky Note: Real-World Analogy: Russian Nesting Dolls (Matryoshka)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-russian-nesting-dolls-matryoshka-sticky.svg" alt="Sticky Note: Real-World Analogy: Russian Nesting Dolls (Matryoshka)" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ Recursion follows the exact same pattern: a function calls itself on a smaller v
 
 ### Definition
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ A **recursive function** is one that calls itself, directly or indirectly, to so
 
 ### Generalized Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-handwritten.svg" alt="Handwritten: Generalized Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-handwritten.svg" alt="Handwritten: Generalized Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-diagram.svg" alt="Diagram: Generalized Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-diagram.svg" alt="Diagram: Generalized Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-sticky.svg" alt="Sticky Note: Generalized Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/generalized-pseudocode-sticky.svg" alt="Sticky Note: Generalized Pseudocode" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ function recursive(input):
 
 ### Simple C Example: Countdown
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-handwritten.svg" alt="Handwritten: Simple C Example: Countdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-handwritten.svg" alt="Handwritten: Simple C Example: Countdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-diagram.svg" alt="Diagram: Simple C Example: Countdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-diagram.svg" alt="Diagram: Simple C Example: Countdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-sticky.svg" alt="Sticky Note: Simple C Example: Countdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/simple-c-example-countdown-sticky.svg" alt="Sticky Note: Simple C Example: Countdown" width="30%">
 </a>
 
 
@@ -173,14 +173,14 @@ Liftoff!
 
 ### Full Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-handwritten.svg" alt="Handwritten: Full Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-handwritten.svg" alt="Handwritten: Full Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-diagram.svg" alt="Diagram: Full Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-diagram.svg" alt="Diagram: Full Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-sticky.svg" alt="Sticky Note: Full Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/full-dry-run-trace-sticky.svg" alt="Sticky Note: Full Dry Run Trace" width="30%">
 </a>
 
 
@@ -198,14 +198,14 @@ Liftoff!
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ Liftoff!
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -239,14 +239,14 @@ Liftoff!
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ Liftoff!
 
 ### Detailed Breakdown
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-handwritten.svg" alt="Handwritten: Detailed Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-handwritten.svg" alt="Handwritten: Detailed Breakdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-diagram.svg" alt="Diagram: Detailed Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-diagram.svg" alt="Diagram: Detailed Breakdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-sticky.svg" alt="Sticky Note: Detailed Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/detailed-breakdown-sticky.svg" alt="Sticky Note: Detailed Breakdown" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ Every recursive function must have precisely these two components. One without t
 
 ### The Base Case
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/the-base-case-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/the-base-case-handwritten.svg" alt="Handwritten: The Base Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/the-base-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/the-base-case-handwritten.svg" alt="Handwritten: The Base Case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/the-base-case-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/the-base-case-diagram.svg" alt="Diagram: The Base Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/the-base-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/the-base-case-diagram.svg" alt="Diagram: The Base Case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/the-base-case-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/the-base-case-sticky.svg" alt="Sticky Note: The Base Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/the-base-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/the-base-case-sticky.svg" alt="Sticky Note: The Base Case" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ int fibonacci(int n)
 
 ### The Recursive Case
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-handwritten.svg" alt="Handwritten: The Recursive Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-handwritten.svg" alt="Handwritten: The Recursive Case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-diagram.svg" alt="Diagram: The Recursive Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-diagram.svg" alt="Diagram: The Recursive Case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-sticky.svg" alt="Sticky Note: The Recursive Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/the-recursive-case-sticky.svg" alt="Sticky Note: The Recursive Case" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ int sum(int n)
 
 ### What Happens When Each Is Missing
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-handwritten.svg" alt="Handwritten: What Happens When Each Is Missing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-handwritten.svg" alt="Handwritten: What Happens When Each Is Missing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-diagram.svg" alt="Diagram: What Happens When Each Is Missing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-diagram.svg" alt="Diagram: What Happens When Each Is Missing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-sticky.svg" alt="Sticky Note: What Happens When Each Is Missing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/what-happens-when-each-is-missing-sticky.svg" alt="Sticky Note: What Happens When Each Is Missing" width="30%">
 </a>
 
 
@@ -361,14 +361,14 @@ int sum(int n)
 
 ### Dry Run: Base Case Check
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-handwritten.svg" alt="Handwritten: Dry Run: Base Case Check" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-handwritten.svg" alt="Handwritten: Dry Run: Base Case Check" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-diagram.svg" alt="Diagram: Dry Run: Base Case Check" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-diagram.svg" alt="Diagram: Dry Run: Base Case Check" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-sticky.svg" alt="Sticky Note: Dry Run: Base Case Check" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/dry-run-base-case-check-sticky.svg" alt="Sticky Note: Dry Run: Base Case Check" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ For `sum(3)` with implementation `if (n <= 0) return 0; else return n + sum(n - 
 
 ### Multiple Base Cases in One Function
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-handwritten.svg" alt="Handwritten: Multiple Base Cases in One Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-handwritten.svg" alt="Handwritten: Multiple Base Cases in One Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-diagram.svg" alt="Diagram: Multiple Base Cases in One Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-diagram.svg" alt="Diagram: Multiple Base Cases in One Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-sticky.svg" alt="Sticky Note: Multiple Base Cases in One Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/multiple-base-cases-in-one-function-sticky.svg" alt="Sticky Note: Multiple Base Cases in One Function" width="30%">
 </a>
 
 
@@ -431,14 +431,14 @@ trib(10) = 81
 
 ### Edge Cases for Base/Recursive Cases
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-handwritten.svg" alt="Handwritten: Edge Cases for Base/Recursive Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-handwritten.svg" alt="Handwritten: Edge Cases for Base/Recursive Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-diagram.svg" alt="Diagram: Edge Cases for Base/Recursive Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-diagram.svg" alt="Diagram: Edge Cases for Base/Recursive Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-sticky.svg" alt="Sticky Note: Edge Cases for Base/Recursive Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-base-recursive-cases-sticky.svg" alt="Sticky Note: Edge Cases for Base/Recursive Cases" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ trib(10) = 81
 
 ### Real-World Analogy: Stack of Plates
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-handwritten.svg" alt="Handwritten: Real-World Analogy: Stack of Plates" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-handwritten.svg" alt="Handwritten: Real-World Analogy: Stack of Plates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-diagram.svg" alt="Diagram: Real-World Analogy: Stack of Plates" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-diagram.svg" alt="Diagram: Real-World Analogy: Stack of Plates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-sticky.svg" alt="Sticky Note: Real-World Analogy: Stack of Plates" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-stack-of-plates-sticky.svg" alt="Sticky Note: Real-World Analogy: Stack of Plates" width="30%">
 </a>
 
 
@@ -474,14 +474,14 @@ The last plate pushed is always the first plate popped → this is **LIFO** (Las
 
 ### Stack Frame Layout
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-handwritten.svg" alt="Handwritten: Stack Frame Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-handwritten.svg" alt="Handwritten: Stack Frame Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-diagram.svg" alt="Diagram: Stack Frame Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-diagram.svg" alt="Diagram: Stack Frame Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-sticky.svg" alt="Sticky Note: Stack Frame Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-frame-layout-sticky.svg" alt="Sticky Note: Stack Frame Layout" width="30%">
 </a>
 
 
@@ -497,14 +497,14 @@ Each function call creates a **stack frame** containing:
 
 ### Visualization of countdown(3) Call Stack
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-handwritten.svg" alt="Handwritten: Visualization of countdown(3) Call Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-handwritten.svg" alt="Handwritten: Visualization of countdown(3) Call Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-diagram.svg" alt="Diagram: Visualization of countdown(3) Call Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-diagram.svg" alt="Diagram: Visualization of countdown(3) Call Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-sticky.svg" alt="Sticky Note: Visualization of countdown(3) Call Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/visualization-of-countdown-3-call-stack-sticky.svg" alt="Sticky Note: Visualization of countdown(3) Call Stack" width="30%">
 </a>
 
 
@@ -539,14 +539,14 @@ Each function call creates a **stack frame** containing:
 
 ### Code to Visualize Stack Frame Addresses
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-handwritten.svg" alt="Handwritten: Code to Visualize Stack Frame Addresses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-handwritten.svg" alt="Handwritten: Code to Visualize Stack Frame Addresses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-diagram.svg" alt="Diagram: Code to Visualize Stack Frame Addresses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-diagram.svg" alt="Diagram: Code to Visualize Stack Frame Addresses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-sticky.svg" alt="Sticky Note: Code to Visualize Stack Frame Addresses" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/code-to-visualize-stack-frame-addresses-sticky.svg" alt="Sticky Note: Code to Visualize Stack Frame Addresses" width="30%">
 </a>
 
 
@@ -594,14 +594,14 @@ Depth 1: returning, &depth = 0x7fff5fbff6dc
 
 ### Stack Overflow Demonstration
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-handwritten.svg" alt="Handwritten: Stack Overflow Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-handwritten.svg" alt="Handwritten: Stack Overflow Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-diagram.svg" alt="Diagram: Stack Overflow Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-diagram.svg" alt="Diagram: Stack Overflow Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-sticky.svg" alt="Sticky Note: Stack Overflow Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-overflow-demonstration-sticky.svg" alt="Sticky Note: Stack Overflow Demonstration" width="30%">
 </a>
 
 
@@ -636,14 +636,14 @@ Segmentation fault (core dumped)
 
 ### Stack Size Limits by Platform
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-handwritten.svg" alt="Handwritten: Stack Size Limits by Platform" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-handwritten.svg" alt="Handwritten: Stack Size Limits by Platform" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-diagram.svg" alt="Diagram: Stack Size Limits by Platform" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-diagram.svg" alt="Diagram: Stack Size Limits by Platform" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-sticky.svg" alt="Sticky Note: Stack Size Limits by Platform" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/stack-size-limits-by-platform-sticky.svg" alt="Sticky Note: Stack Size Limits by Platform" width="30%">
 </a>
 
 
@@ -657,14 +657,14 @@ Segmentation fault (core dumped)
 
 ### Understanding Stack Growth and Return
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-handwritten.svg" alt="Handwritten: Understanding Stack Growth and Return" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-handwritten.svg" alt="Handwritten: Understanding Stack Growth and Return" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-diagram.svg" alt="Diagram: Understanding Stack Growth and Return" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-diagram.svg" alt="Diagram: Understanding Stack Growth and Return" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-sticky.svg" alt="Sticky Note: Understanding Stack Growth and Return" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/understanding-stack-growth-and-return-sticky.svg" alt="Sticky Note: Understanding Stack Growth and Return" width="30%">
 </a>
 
 
@@ -704,14 +704,14 @@ UNWINDING: leaving frame n=3
 
 ### Winding vs Unwinding Phase
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-handwritten.svg" alt="Handwritten: Winding vs Unwinding Phase" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-handwritten.svg" alt="Handwritten: Winding vs Unwinding Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-diagram.svg" alt="Diagram: Winding vs Unwinding Phase" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-diagram.svg" alt="Diagram: Winding vs Unwinding Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-sticky.svg" alt="Sticky Note: Winding vs Unwinding Phase" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/winding-vs-unwinding-phase-sticky.svg" alt="Sticky Note: Winding vs Unwinding Phase" width="30%">
 </a>
 
 
@@ -722,14 +722,14 @@ UNWINDING: leaving frame n=3
 
 ### Edge Cases for Call Stack
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-handwritten.svg" alt="Handwritten: Edge Cases for Call Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-handwritten.svg" alt="Handwritten: Edge Cases for Call Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-diagram.svg" alt="Diagram: Edge Cases for Call Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-diagram.svg" alt="Diagram: Edge Cases for Call Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-sticky.svg" alt="Sticky Note: Edge Cases for Call Stack" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-for-call-stack-sticky.svg" alt="Sticky Note: Edge Cases for Call Stack" width="30%">
 </a>
 
 
@@ -746,14 +746,14 @@ UNWINDING: leaving frame n=3
 
 ### Six Types of Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-handwritten.svg" alt="Handwritten: Six Types of Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-handwritten.svg" alt="Handwritten: Six Types of Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-diagram.svg" alt="Diagram: Six Types of Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-diagram.svg" alt="Diagram: Six Types of Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-sticky.svg" alt="Sticky Note: Six Types of Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/six-types-of-recursion-sticky.svg" alt="Sticky Note: Six Types of Recursion" width="30%">
 </a>
 
 
@@ -768,14 +768,14 @@ UNWINDING: leaving frame n=3
 
 ### 1. Direct Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-handwritten.svg" alt="Handwritten: 1. Direct Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-handwritten.svg" alt="Handwritten: 1. Direct Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-diagram.svg" alt="Diagram: 1. Direct Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-diagram.svg" alt="Diagram: 1. Direct Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-sticky.svg" alt="Sticky Note: 1. Direct Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/1-direct-recursion-sticky.svg" alt="Sticky Note: 1. Direct Recursion" width="30%">
 </a>
 
 
@@ -793,14 +793,14 @@ int factorial(int n)
 
 ### 2. Indirect Recursion (Mutual Recursion)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-handwritten.svg" alt="Handwritten: 2. Indirect Recursion (Mutual Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-handwritten.svg" alt="Handwritten: 2. Indirect Recursion (Mutual Recursion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-diagram.svg" alt="Diagram: 2. Indirect Recursion (Mutual Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-diagram.svg" alt="Diagram: 2. Indirect Recursion (Mutual Recursion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-sticky.svg" alt="Sticky Note: 2. Indirect Recursion (Mutual Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/2-indirect-recursion-mutual-recursion-sticky.svg" alt="Sticky Note: 2. Indirect Recursion (Mutual Recursion)" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ is_even(4) -> is_odd(3) -> is_even(2) -> is_odd(1) -> is_even(0) -> true
 
 ### 3. Tail Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-handwritten.svg" alt="Handwritten: 3. Tail Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-handwritten.svg" alt="Handwritten: 3. Tail Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-diagram.svg" alt="Diagram: 3. Tail Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-diagram.svg" alt="Diagram: 3. Tail Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-sticky.svg" alt="Sticky Note: 3. Tail Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/3-tail-recursion-sticky.svg" alt="Sticky Note: 3. Tail Recursion" width="30%">
 </a>
 
 
@@ -882,14 +882,14 @@ int tail_fact(int n, int acc)
 
 ### 4. Head Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-handwritten.svg" alt="Handwritten: 4. Head Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-handwritten.svg" alt="Handwritten: 4. Head Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-diagram.svg" alt="Diagram: 4. Head Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-diagram.svg" alt="Diagram: 4. Head Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-sticky.svg" alt="Sticky Note: 4. Head Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/4-head-recursion-sticky.svg" alt="Sticky Note: 4. Head Recursion" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ void non_head_print(int n)
 
 ### 5. Linear Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-handwritten.svg" alt="Handwritten: 5. Linear Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-handwritten.svg" alt="Handwritten: 5. Linear Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-diagram.svg" alt="Diagram: 5. Linear Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-diagram.svg" alt="Diagram: 5. Linear Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-sticky.svg" alt="Sticky Note: 5. Linear Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/5-linear-recursion-sticky.svg" alt="Sticky Note: 5. Linear Recursion" width="30%">
 </a>
 
 
@@ -947,14 +947,14 @@ int linear_sum(int n)
 
 ### 6. Tree Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-handwritten.svg" alt="Handwritten: 6. Tree Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-handwritten.svg" alt="Handwritten: 6. Tree Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-diagram.svg" alt="Diagram: 6. Tree Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-diagram.svg" alt="Diagram: 6. Tree Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-sticky.svg" alt="Sticky Note: 6. Tree Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/6-tree-recursion-sticky.svg" alt="Sticky Note: 6. Tree Recursion" width="30%">
 </a>
 
 
@@ -983,14 +983,14 @@ int tree_fib(int n)
 
 ### Recursion Types Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-handwritten.svg" alt="Handwritten: Recursion Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-handwritten.svg" alt="Handwritten: Recursion Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-diagram.svg" alt="Diagram: Recursion Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-diagram.svg" alt="Diagram: Recursion Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-sticky.svg" alt="Sticky Note: Recursion Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/recursion-types-comparison-table-sticky.svg" alt="Sticky Note: Recursion Types Comparison Table" width="30%">
 </a>
 
 
@@ -1009,14 +1009,14 @@ int tree_fib(int n)
 
 ### Definition Side by Side
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-handwritten.svg" alt="Handwritten: Definition Side by Side" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-handwritten.svg" alt="Handwritten: Definition Side by Side" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-diagram.svg" alt="Diagram: Definition Side by Side" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-diagram.svg" alt="Diagram: Definition Side by Side" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-sticky.svg" alt="Sticky Note: Definition Side by Side" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-side-by-side-sticky.svg" alt="Sticky Note: Definition Side by Side" width="30%">
 </a>
 
 
@@ -1030,14 +1030,14 @@ int tree_fib(int n)
 
 ### Head Recursion Example: Print Numbers Ascending
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-handwritten.svg" alt="Handwritten: Head Recursion Example: Print Numbers Ascending" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-handwritten.svg" alt="Handwritten: Head Recursion Example: Print Numbers Ascending" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-diagram.svg" alt="Diagram: Head Recursion Example: Print Numbers Ascending" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-diagram.svg" alt="Diagram: Head Recursion Example: Print Numbers Ascending" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-sticky.svg" alt="Sticky Note: Head Recursion Example: Print Numbers Ascending" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/head-recursion-example-print-numbers-ascending-sticky.svg" alt="Sticky Note: Head Recursion Example: Print Numbers Ascending" width="30%">
 </a>
 
 
@@ -1080,14 +1080,14 @@ int main(void)
 
 ### Tail Recursion Example: Print Numbers Ascending (Accumulator Style)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-handwritten.svg" alt="Handwritten: Tail Recursion Example: Print Numbers Ascending (Accumulator Style)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-handwritten.svg" alt="Handwritten: Tail Recursion Example: Print Numbers Ascending (Accumulator Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-diagram.svg" alt="Diagram: Tail Recursion Example: Print Numbers Ascending (Accumulator Style)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-diagram.svg" alt="Diagram: Tail Recursion Example: Print Numbers Ascending (Accumulator Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-sticky.svg" alt="Sticky Note: Tail Recursion Example: Print Numbers Ascending (Accumulator Style)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-example-print-numbers-ascending-accumulator-style-sticky.svg" alt="Sticky Note: Tail Recursion Example: Print Numbers Ascending (Accumulator Style)" width="30%">
 </a>
 
 
@@ -1115,14 +1115,14 @@ int main(void)
 
 ### Memory Comparison
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-handwritten.svg" alt="Handwritten: Memory Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-handwritten.svg" alt="Handwritten: Memory Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-diagram.svg" alt="Diagram: Memory Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-diagram.svg" alt="Diagram: Memory Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-sticky.svg" alt="Sticky Note: Memory Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/memory-comparison-sticky.svg" alt="Sticky Note: Memory Comparison" width="30%">
 </a>
 
 
@@ -1163,14 +1163,14 @@ int main(void)
 
 ### Transformation Pattern: Head -> Tail
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-handwritten.svg" alt="Handwritten: Transformation Pattern: Head -> Tail" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-handwritten.svg" alt="Handwritten: Transformation Pattern: Head -> Tail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-diagram.svg" alt="Diagram: Transformation Pattern: Head -> Tail" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-diagram.svg" alt="Diagram: Transformation Pattern: Head -> Tail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-sticky.svg" alt="Sticky Note: Transformation Pattern: Head -> Tail" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/transformation-pattern-head-tail-sticky.svg" alt="Sticky Note: Transformation Pattern: Head -> Tail" width="30%">
 </a>
 
 
@@ -1200,14 +1200,14 @@ int factorial(int n)
 
 ### When to Use Each
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
 </a>
 
 
@@ -1226,14 +1226,14 @@ int factorial(int n)
 
 ### Direct Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-handwritten.svg" alt="Handwritten: Direct Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-handwritten.svg" alt="Handwritten: Direct Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-diagram.svg" alt="Diagram: Direct Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-diagram.svg" alt="Diagram: Direct Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-sticky.svg" alt="Sticky Note: Direct Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/direct-recursion-sticky.svg" alt="Sticky Note: Direct Recursion" width="30%">
 </a>
 
 
@@ -1255,14 +1255,14 @@ direct(5) -> direct(4) -> direct(3) -> direct(2) -> direct(1) -> direct(0) -> re
 
 ### Indirect Recursion (Mutual Recursion)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-handwritten.svg" alt="Handwritten: Indirect Recursion (Mutual Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-handwritten.svg" alt="Handwritten: Indirect Recursion (Mutual Recursion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-diagram.svg" alt="Diagram: Indirect Recursion (Mutual Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-diagram.svg" alt="Diagram: Indirect Recursion (Mutual Recursion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-sticky.svg" alt="Sticky Note: Indirect Recursion (Mutual Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/indirect-recursion-mutual-recursion-sticky.svg" alt="Sticky Note: Indirect Recursion (Mutual Recursion)" width="30%">
 </a>
 
 
@@ -1314,14 +1314,14 @@ Base A
 
 ### Three-Function Mutual Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-handwritten.svg" alt="Handwritten: Three-Function Mutual Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-handwritten.svg" alt="Handwritten: Three-Function Mutual Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-diagram.svg" alt="Diagram: Three-Function Mutual Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-diagram.svg" alt="Diagram: Three-Function Mutual Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-sticky.svg" alt="Sticky Note: Three-Function Mutual Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/three-function-mutual-recursion-sticky.svg" alt="Sticky Note: Three-Function Mutual Recursion" width="30%">
 </a>
 
 
@@ -1373,14 +1373,14 @@ Done!
 
 ### Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
 </a>
 
 
@@ -1396,14 +1396,14 @@ Done!
 
 ### Detecting Recursion Cycles
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-handwritten.svg" alt="Handwritten: Detecting Recursion Cycles" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-handwritten.svg" alt="Handwritten: Detecting Recursion Cycles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-diagram.svg" alt="Diagram: Detecting Recursion Cycles" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-diagram.svg" alt="Diagram: Detecting Recursion Cycles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-sticky.svg" alt="Sticky Note: Detecting Recursion Cycles" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/detecting-recursion-cycles-sticky.svg" alt="Sticky Note: Detecting Recursion Cycles" width="30%">
 </a>
 
 
@@ -1433,14 +1433,14 @@ int is_odd(int n) {
 
 ### 14.7.1 Factorial
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-handwritten.svg" alt="Handwritten: 14.7.1 Factorial" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-handwritten.svg" alt="Handwritten: 14.7.1 Factorial" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-diagram.svg" alt="Diagram: 14.7.1 Factorial" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-diagram.svg" alt="Diagram: 14.7.1 Factorial" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-sticky.svg" alt="Sticky Note: 14.7.1 Factorial" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-1-factorial-sticky.svg" alt="Sticky Note: 14.7.1 Factorial" width="30%">
 </a>
 
 
@@ -1576,14 +1576,14 @@ Step 1 (winding):                Step 2 (unwinding):
 
 ### 14.7.2 Fibonacci Sequence
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-handwritten.svg" alt="Handwritten: 14.7.2 Fibonacci Sequence" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-handwritten.svg" alt="Handwritten: 14.7.2 Fibonacci Sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-diagram.svg" alt="Diagram: 14.7.2 Fibonacci Sequence" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-diagram.svg" alt="Diagram: 14.7.2 Fibonacci Sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-sticky.svg" alt="Sticky Note: 14.7.2 Fibonacci Sequence" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-2-fibonacci-sequence-sticky.svg" alt="Sticky Note: 14.7.2 Fibonacci Sequence" width="30%">
 </a>
 
 
@@ -1809,14 +1809,14 @@ fib(90) = 2880067194370816120
 
 ### 14.7.3 Tower of Hanoi
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-handwritten.svg" alt="Handwritten: 14.7.3 Tower of Hanoi" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-handwritten.svg" alt="Handwritten: 14.7.3 Tower of Hanoi" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-diagram.svg" alt="Diagram: 14.7.3 Tower of Hanoi" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-diagram.svg" alt="Diagram: 14.7.3 Tower of Hanoi" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-sticky.svg" alt="Sticky Note: 14.7.3 Tower of Hanoi" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-3-tower-of-hanoi-sticky.svg" alt="Sticky Note: 14.7.3 Tower of Hanoi" width="30%">
 </a>
 
 
@@ -1974,14 +1974,14 @@ Total moves: 15 (2^4 - 1 = 15)
 | 64 | 1.8 x 10^19 moves | Would take 585 billion years at 1 move/sec |
 ### 14.7.4 Binary Search (Recursive)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-handwritten.svg" alt="Handwritten: 14.7.4 Binary Search (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-handwritten.svg" alt="Handwritten: 14.7.4 Binary Search (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-diagram.svg" alt="Diagram: 14.7.4 Binary Search (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-diagram.svg" alt="Diagram: 14.7.4 Binary Search (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-sticky.svg" alt="Sticky Note: 14.7.4 Binary Search (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-4-binary-search-recursive-sticky.svg" alt="Sticky Note: 14.7.4 Binary Search (Recursive)" width="30%">
 </a>
 
 
@@ -2121,14 +2121,14 @@ Array: 2 5 8 12 16 23 38 45 56 72
 
 ### 14.7.5 Merge Sort (Recursive)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-handwritten.svg" alt="Handwritten: 14.7.5 Merge Sort (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-handwritten.svg" alt="Handwritten: 14.7.5 Merge Sort (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-diagram.svg" alt="Diagram: 14.7.5 Merge Sort (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-diagram.svg" alt="Diagram: 14.7.5 Merge Sort (Recursive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-sticky.svg" alt="Sticky Note: 14.7.5 Merge Sort (Recursive)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/14-7-5-merge-sort-recursive-sticky.svg" alt="Sticky Note: 14.7.5 Merge Sort (Recursive)" width="30%">
 </a>
 
 
@@ -2318,14 +2318,14 @@ Sorted:   3 9 10 27 38 43 82
 
 ### Definition
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -2347,14 +2347,14 @@ int fact_tail(int n, int acc) {
 
 ### Tail-Call Optimization (TCO)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-handwritten.svg" alt="Handwritten: Tail-Call Optimization (TCO)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-handwritten.svg" alt="Handwritten: Tail-Call Optimization (TCO)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-diagram.svg" alt="Diagram: Tail-Call Optimization (TCO)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-diagram.svg" alt="Diagram: Tail-Call Optimization (TCO)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-sticky.svg" alt="Sticky Note: Tail-Call Optimization (TCO)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-call-optimization-tco-sticky.svg" alt="Sticky Note: Tail-Call Optimization (TCO)" width="30%">
 </a>
 
 
@@ -2415,14 +2415,14 @@ fact_tail:
 
 ### Compiler Support for TCO
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-handwritten.svg" alt="Handwritten: Compiler Support for TCO" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-handwritten.svg" alt="Handwritten: Compiler Support for TCO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-diagram.svg" alt="Diagram: Compiler Support for TCO" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-diagram.svg" alt="Diagram: Compiler Support for TCO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-sticky.svg" alt="Sticky Note: Compiler Support for TCO" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/compiler-support-for-tco-sticky.svg" alt="Sticky Note: Compiler Support for TCO" width="30%">
 </a>
 
 
@@ -2437,14 +2437,14 @@ fact_tail:
 
 ### Verifying TCO in GCC/Clang
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-handwritten.svg" alt="Handwritten: Verifying TCO in GCC/Clang" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-handwritten.svg" alt="Handwritten: Verifying TCO in GCC/Clang" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-diagram.svg" alt="Diagram: Verifying TCO in GCC/Clang" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-diagram.svg" alt="Diagram: Verifying TCO in GCC/Clang" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-sticky.svg" alt="Sticky Note: Verifying TCO in GCC/Clang" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/verifying-tco-in-gcc-clang-sticky.svg" alt="Sticky Note: Verifying TCO in GCC/Clang" width="30%">
 </a>
 
 
@@ -2477,14 +2477,14 @@ gcc -O0 -o tail_test tail_test.c && ./tail_test
 
 ### Tail Recursion in Non-Void Functions
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-handwritten.svg" alt="Handwritten: Tail Recursion in Non-Void Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-handwritten.svg" alt="Handwritten: Tail Recursion in Non-Void Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-diagram.svg" alt="Diagram: Tail Recursion in Non-Void Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-diagram.svg" alt="Diagram: Tail Recursion in Non-Void Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-sticky.svg" alt="Sticky Note: Tail Recursion in Non-Void Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/tail-recursion-in-non-void-functions-sticky.svg" alt="Sticky Note: Tail Recursion in Non-Void Functions" width="30%">
 </a>
 
 
@@ -2496,14 +2496,14 @@ The recursive call must be in **tail position**:
 
 ### Converting Any Recursion to Tail Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-handwritten.svg" alt="Handwritten: Converting Any Recursion to Tail Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-handwritten.svg" alt="Handwritten: Converting Any Recursion to Tail Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-diagram.svg" alt="Diagram: Converting Any Recursion to Tail Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-diagram.svg" alt="Diagram: Converting Any Recursion to Tail Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-sticky.svg" alt="Sticky Note: Converting Any Recursion to Tail Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/converting-any-recursion-to-tail-recursion-sticky.svg" alt="Sticky Note: Converting Any Recursion to Tail Recursion" width="30%">
 </a>
 
 
@@ -2518,14 +2518,14 @@ The recursive call must be in **tail position**:
 
 ### When TCO Cannot Be Applied
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-handwritten.svg" alt="Handwritten: When TCO Cannot Be Applied" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-handwritten.svg" alt="Handwritten: When TCO Cannot Be Applied" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-diagram.svg" alt="Diagram: When TCO Cannot Be Applied" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-diagram.svg" alt="Diagram: When TCO Cannot Be Applied" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-sticky.svg" alt="Sticky Note: When TCO Cannot Be Applied" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-tco-cannot-be-applied-sticky.svg" alt="Sticky Note: When TCO Cannot Be Applied" width="30%">
 </a>
 
 
@@ -2539,14 +2539,14 @@ The recursive call must be in **tail position**:
 
 ### Side-by-Side Code Comparison
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-handwritten.svg" alt="Handwritten: Side-by-Side Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-handwritten.svg" alt="Handwritten: Side-by-Side Code Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-diagram.svg" alt="Diagram: Side-by-Side Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-diagram.svg" alt="Diagram: Side-by-Side Code Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-sticky.svg" alt="Sticky Note: Side-by-Side Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/side-by-side-code-comparison-sticky.svg" alt="Sticky Note: Side-by-Side Code Comparison" width="30%">
 </a>
 
 
@@ -2594,14 +2594,14 @@ int bs_iter(int arr[], int n, int t) {
 
 ### 15-Dimension Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-handwritten.svg" alt="Handwritten: 15-Dimension Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-handwritten.svg" alt="Handwritten: 15-Dimension Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-diagram.svg" alt="Diagram: 15-Dimension Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-diagram.svg" alt="Diagram: 15-Dimension Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-sticky.svg" alt="Sticky Note: 15-Dimension Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/15-dimension-comparison-table-sticky.svg" alt="Sticky Note: 15-Dimension Comparison Table" width="30%">
 </a>
 
 
@@ -2625,14 +2625,14 @@ int bs_iter(int arr[], int n, int t) {
 
 ### Performance Benchmark Comparison
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-handwritten.svg" alt="Handwritten: Performance Benchmark Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-handwritten.svg" alt="Handwritten: Performance Benchmark Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-diagram.svg" alt="Diagram: Performance Benchmark Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-diagram.svg" alt="Diagram: Performance Benchmark Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-sticky.svg" alt="Sticky Note: Performance Benchmark Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/performance-benchmark-comparison-sticky.svg" alt="Sticky Note: Performance Benchmark Comparison" width="30%">
 </a>
 
 
@@ -2700,14 +2700,14 @@ Speedup: 7.42x
 
 ### When to Choose Which
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-handwritten.svg" alt="Handwritten: When to Choose Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-handwritten.svg" alt="Handwritten: When to Choose Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-diagram.svg" alt="Diagram: When to Choose Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-diagram.svg" alt="Diagram: When to Choose Which" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-sticky.svg" alt="Sticky Note: When to Choose Which" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/when-to-choose-which-sticky.svg" alt="Sticky Note: When to Choose Which" width="30%">
 </a>
 
 
@@ -2732,14 +2732,14 @@ Speedup: 7.42x
 
 ### Concept: What Is Backtracking?
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-handwritten.svg" alt="Handwritten: Concept: What Is Backtracking?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-handwritten.svg" alt="Handwritten: Concept: What Is Backtracking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-diagram.svg" alt="Diagram: Concept: What Is Backtracking?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-diagram.svg" alt="Diagram: Concept: What Is Backtracking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-sticky.svg" alt="Sticky Note: Concept: What Is Backtracking?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/concept-what-is-backtracking-sticky.svg" alt="Sticky Note: Concept: What Is Backtracking?" width="30%">
 </a>
 
 
@@ -2747,14 +2747,14 @@ Speedup: 7.42x
 
 ### Real-World Analogy: Maze Solving
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-handwritten.svg" alt="Handwritten: Real-World Analogy: Maze Solving" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-handwritten.svg" alt="Handwritten: Real-World Analogy: Maze Solving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-diagram.svg" alt="Diagram: Real-World Analogy: Maze Solving" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-diagram.svg" alt="Diagram: Real-World Analogy: Maze Solving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-sticky.svg" alt="Sticky Note: Real-World Analogy: Maze Solving" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-analogy-maze-solving-sticky.svg" alt="Sticky Note: Real-World Analogy: Maze Solving" width="30%">
 </a>
 
 
@@ -2762,14 +2762,14 @@ You walk through a maze. At each intersection, you choose a path. If you hit a d
 
 ### General Backtracking Algorithm
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-handwritten.svg" alt="Handwritten: General Backtracking Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-handwritten.svg" alt="Handwritten: General Backtracking Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-diagram.svg" alt="Diagram: General Backtracking Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-diagram.svg" alt="Diagram: General Backtracking Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-sticky.svg" alt="Sticky Note: General Backtracking Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/general-backtracking-algorithm-sticky.svg" alt="Sticky Note: General Backtracking Algorithm" width="30%">
 </a>
 
 
@@ -3025,14 +3025,14 @@ P P . # .
 
 ### Backtracking vs Brute Force
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-handwritten.svg" alt="Handwritten: Backtracking vs Brute Force" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-handwritten.svg" alt="Handwritten: Backtracking vs Brute Force" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-diagram.svg" alt="Diagram: Backtracking vs Brute Force" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-diagram.svg" alt="Diagram: Backtracking vs Brute Force" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-sticky.svg" alt="Sticky Note: Backtracking vs Brute Force" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/backtracking-vs-brute-force-sticky.svg" alt="Sticky Note: Backtracking vs Brute Force" width="30%">
 </a>
 
 
@@ -3046,14 +3046,14 @@ P P . # .
 
 ### Applications of Backtracking
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-handwritten.svg" alt="Handwritten: Applications of Backtracking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-handwritten.svg" alt="Handwritten: Applications of Backtracking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-diagram.svg" alt="Diagram: Applications of Backtracking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-diagram.svg" alt="Diagram: Applications of Backtracking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-sticky.svg" alt="Sticky Note: Applications of Backtracking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/applications-of-backtracking-sticky.svg" alt="Sticky Note: Applications of Backtracking" width="30%">
 </a>
 
 
@@ -3073,14 +3073,14 @@ P P . # .
 
 ### Pitfall 1: Missing or Incorrect Base Case
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-handwritten.svg" alt="Handwritten: Pitfall 1: Missing or Incorrect Base Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-handwritten.svg" alt="Handwritten: Pitfall 1: Missing or Incorrect Base Case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-diagram.svg" alt="Diagram: Pitfall 1: Missing or Incorrect Base Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-diagram.svg" alt="Diagram: Pitfall 1: Missing or Incorrect Base Case" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-sticky.svg" alt="Sticky Note: Pitfall 1: Missing or Incorrect Base Case" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-1-missing-or-incorrect-base-case-sticky.svg" alt="Sticky Note: Pitfall 1: Missing or Incorrect Base Case" width="30%">
 </a>
 
 
@@ -3110,14 +3110,14 @@ int fixed_base(int n)
 
 ### Pitfall 2: Stack Overflow from Deep Recursion
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-handwritten.svg" alt="Handwritten: Pitfall 2: Stack Overflow from Deep Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-handwritten.svg" alt="Handwritten: Pitfall 2: Stack Overflow from Deep Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-diagram.svg" alt="Diagram: Pitfall 2: Stack Overflow from Deep Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-diagram.svg" alt="Diagram: Pitfall 2: Stack Overflow from Deep Recursion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-sticky.svg" alt="Sticky Note: Pitfall 2: Stack Overflow from Deep Recursion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-2-stack-overflow-from-deep-recursion-sticky.svg" alt="Sticky Note: Pitfall 2: Stack Overflow from Deep Recursion" width="30%">
 </a>
 
 
@@ -3140,14 +3140,14 @@ unsigned long long factorial_iter(int n)
 
 ### Pitfall 3: Exponential Blowup (Naive Fibonacci)
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-handwritten.svg" alt="Handwritten: Pitfall 3: Exponential Blowup (Naive Fibonacci)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-handwritten.svg" alt="Handwritten: Pitfall 3: Exponential Blowup (Naive Fibonacci)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-diagram.svg" alt="Diagram: Pitfall 3: Exponential Blowup (Naive Fibonacci)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-diagram.svg" alt="Diagram: Pitfall 3: Exponential Blowup (Naive Fibonacci)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-sticky.svg" alt="Sticky Note: Pitfall 3: Exponential Blowup (Naive Fibonacci)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-3-exponential-blowup-naive-fibonacci-sticky.svg" alt="Sticky Note: Pitfall 3: Exponential Blowup (Naive Fibonacci)" width="30%">
 </a>
 
 
@@ -3164,14 +3164,14 @@ int fib(int n)
 
 ### Pitfall 4: Side Effects in Recursive Functions
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-handwritten.svg" alt="Handwritten: Pitfall 4: Side Effects in Recursive Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-handwritten.svg" alt="Handwritten: Pitfall 4: Side Effects in Recursive Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-diagram.svg" alt="Diagram: Pitfall 4: Side Effects in Recursive Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-diagram.svg" alt="Diagram: Pitfall 4: Side Effects in Recursive Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-sticky.svg" alt="Sticky Note: Pitfall 4: Side Effects in Recursive Functions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-4-side-effects-in-recursive-functions-sticky.svg" alt="Sticky Note: Pitfall 4: Side Effects in Recursive Functions" width="30%">
 </a>
 
 
@@ -3189,14 +3189,14 @@ int bad_recursion(int n)
 
 ### Pitfall 5: Using Recursion Where Iteration Is Better
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-handwritten.svg" alt="Handwritten: Pitfall 5: Using Recursion Where Iteration Is Better" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-handwritten.svg" alt="Handwritten: Pitfall 5: Using Recursion Where Iteration Is Better" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-diagram.svg" alt="Diagram: Pitfall 5: Using Recursion Where Iteration Is Better" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-diagram.svg" alt="Diagram: Pitfall 5: Using Recursion Where Iteration Is Better" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-sticky.svg" alt="Sticky Note: Pitfall 5: Using Recursion Where Iteration Is Better" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/pitfall-5-using-recursion-where-iteration-is-better-sticky.svg" alt="Sticky Note: Pitfall 5: Using Recursion Where Iteration Is Better" width="30%">
 </a>
 
 
@@ -3219,14 +3219,14 @@ int sum_array_iter(int arr[], int n)
 
 ### Edge Cases Checklist
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-handwritten.svg" alt="Handwritten: Edge Cases Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-handwritten.svg" alt="Handwritten: Edge Cases Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-diagram.svg" alt="Diagram: Edge Cases Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-diagram.svg" alt="Diagram: Edge Cases Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-sticky.svg" alt="Sticky Note: Edge Cases Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/edge-cases-checklist-sticky.svg" alt="Sticky Note: Edge Cases Checklist" width="30%">
 </a>
 
 
@@ -3246,14 +3246,14 @@ int sum_array_iter(int arr[], int n)
 
 ### Top Recursion Interview Questions
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-handwritten.svg" alt="Handwritten: Top Recursion Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-handwritten.svg" alt="Handwritten: Top Recursion Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-diagram.svg" alt="Diagram: Top Recursion Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-diagram.svg" alt="Diagram: Top Recursion Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-sticky.svg" alt="Sticky Note: Top Recursion Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/top-recursion-interview-questions-sticky.svg" alt="Sticky Note: Top Recursion Interview Questions" width="30%">
 </a>
 
 
@@ -3272,14 +3272,14 @@ int sum_array_iter(int arr[], int n)
 
 ### Common Interview Mistakes
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-handwritten.svg" alt="Handwritten: Common Interview Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-handwritten.svg" alt="Handwritten: Common Interview Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-diagram.svg" alt="Diagram: Common Interview Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-diagram.svg" alt="Diagram: Common Interview Mistakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-sticky.svg" alt="Sticky Note: Common Interview Mistakes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/common-interview-mistakes-sticky.svg" alt="Sticky Note: Common Interview Mistakes" width="30%">
 </a>
 
 
@@ -3292,14 +3292,14 @@ int sum_array_iter(int arr[], int n)
 
 ### Key Concepts to Demonstrate in Interviews
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-handwritten.svg" alt="Handwritten: Key Concepts to Demonstrate in Interviews" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-handwritten.svg" alt="Handwritten: Key Concepts to Demonstrate in Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-diagram.svg" alt="Diagram: Key Concepts to Demonstrate in Interviews" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-diagram.svg" alt="Diagram: Key Concepts to Demonstrate in Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-sticky.svg" alt="Sticky Note: Key Concepts to Demonstrate in Interviews" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/key-concepts-to-demonstrate-in-interviews-sticky.svg" alt="Sticky Note: Key Concepts to Demonstrate in Interviews" width="30%">
 </a>
 
 
@@ -3314,14 +3314,14 @@ int sum_array_iter(int arr[], int n)
 
 ### Discussion Questions
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-handwritten.svg" alt="Handwritten: Discussion Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-handwritten.svg" alt="Handwritten: Discussion Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-diagram.svg" alt="Diagram: Discussion Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-diagram.svg" alt="Diagram: Discussion Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-sticky.svg" alt="Sticky Note: Discussion Questions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/discussion-questions-sticky.svg" alt="Sticky Note: Discussion Questions" width="30%">
 </a>
 
 
@@ -3351,14 +3351,14 @@ A: Memoization is top-down (recursive with caching), computing values on demand.
 
 ### Quick Code Snippets for Interviews
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-handwritten.svg" alt="Handwritten: Quick Code Snippets for Interviews" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-handwritten.svg" alt="Handwritten: Quick Code Snippets for Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-diagram.svg" alt="Diagram: Quick Code Snippets for Interviews" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-diagram.svg" alt="Diagram: Quick Code Snippets for Interviews" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-sticky.svg" alt="Sticky Note: Quick Code Snippets for Interviews" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/quick-code-snippets-for-interviews-sticky.svg" alt="Sticky Note: Quick Code Snippets for Interviews" width="30%">
 </a>
 
 
@@ -3437,14 +3437,14 @@ int main(void)
 
 ### 1. Operating Systems → File System Traversal
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-handwritten.svg" alt="Handwritten: 1. Operating Systems → File System Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-handwritten.svg" alt="Handwritten: 1. Operating Systems → File System Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-diagram.svg" alt="Diagram: 1. Operating Systems → File System Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-diagram.svg" alt="Diagram: 1. Operating Systems → File System Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-sticky.svg" alt="Sticky Note: 1. Operating Systems → File System Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/1-operating-systems-file-system-traversal-sticky.svg" alt="Sticky Note: 1. Operating Systems → File System Traversal" width="30%">
 </a>
 
 
@@ -3486,14 +3486,14 @@ void traverse_directory(const char *path, int depth)
 
 ### 2. Compilers → Recursive Descent Parsing
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-handwritten.svg" alt="Handwritten: 2. Compilers → Recursive Descent Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-handwritten.svg" alt="Handwritten: 2. Compilers → Recursive Descent Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-diagram.svg" alt="Diagram: 2. Compilers → Recursive Descent Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-diagram.svg" alt="Diagram: 2. Compilers → Recursive Descent Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-sticky.svg" alt="Sticky Note: 2. Compilers → Recursive Descent Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/2-compilers-recursive-descent-parsing-sticky.svg" alt="Sticky Note: 2. Compilers → Recursive Descent Parsing" width="30%">
 </a>
 
 
@@ -3565,14 +3565,14 @@ int main(void)
 
 ### 3. Graphics → Subdivision Surfaces
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-handwritten.svg" alt="Handwritten: 3. Graphics → Subdivision Surfaces" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-handwritten.svg" alt="Handwritten: 3. Graphics → Subdivision Surfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-diagram.svg" alt="Diagram: 3. Graphics → Subdivision Surfaces" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-diagram.svg" alt="Diagram: 3. Graphics → Subdivision Surfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-sticky.svg" alt="Sticky Note: 3. Graphics → Subdivision Surfaces" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/3-graphics-subdivision-surfaces-sticky.svg" alt="Sticky Note: 3. Graphics → Subdivision Surfaces" width="30%">
 </a>
 
 
@@ -3621,14 +3621,14 @@ Line from (7.5, 0.0) to (10.0, 0.0)
 
 ### 4. Artificial Intelligence → Minimax Game Tree
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-handwritten.svg" alt="Handwritten: 4. Artificial Intelligence → Minimax Game Tree" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-handwritten.svg" alt="Handwritten: 4. Artificial Intelligence → Minimax Game Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-diagram.svg" alt="Diagram: 4. Artificial Intelligence → Minimax Game Tree" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-diagram.svg" alt="Diagram: 4. Artificial Intelligence → Minimax Game Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-sticky.svg" alt="Sticky Note: 4. Artificial Intelligence → Minimax Game Tree" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/4-artificial-intelligence-minimax-game-tree-sticky.svg" alt="Sticky Note: 4. Artificial Intelligence → Minimax Game Tree" width="30%">
 </a>
 
 
@@ -3703,14 +3703,14 @@ int minimax(char board[3][3], int is_maximizing)
 
 ### 5. Network Routing → Bellman-Ford Algorithm
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-handwritten.svg" alt="Handwritten: 5. Network Routing → Bellman-Ford Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-handwritten.svg" alt="Handwritten: 5. Network Routing → Bellman-Ford Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-diagram.svg" alt="Diagram: 5. Network Routing → Bellman-Ford Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-diagram.svg" alt="Diagram: 5. Network Routing → Bellman-Ford Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-sticky.svg" alt="Sticky Note: 5. Network Routing → Bellman-Ford Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/5-network-routing-bellman-ford-algorithm-sticky.svg" alt="Sticky Note: 5. Network Routing → Bellman-Ford Algorithm" width="30%">
 </a>
 
 
@@ -3720,14 +3720,14 @@ The Bellman-Ford shortest-path algorithm has a natural recursive formulation:
 
 ### Real-World Recursion Use Cases Summary
 
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-handwritten.svg" alt="Handwritten: Real-World Recursion Use Cases Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-handwritten.svg" alt="Handwritten: Real-World Recursion Use Cases Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-diagram.svg" alt="Diagram: Real-World Recursion Use Cases Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-diagram.svg" alt="Diagram: Real-World Recursion Use Cases Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-sticky.svg" alt="Sticky Note: Real-World Recursion Use Cases Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/14-recursion/real-world-recursion-use-cases-summary-sticky.svg" alt="Sticky Note: Real-World Recursion Use Cases Summary" width="30%">
 </a>
 
 

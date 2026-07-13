@@ -63,14 +63,14 @@ P(w_{1:n}) = \prod_{i=1}^n P(w_i | w_{1:i-1})
 
 ### 12.1.1 N-Gram Models
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-handwritten.svg" alt="Handwritten: 12.1.1 N-Gram Models" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-handwritten.svg" alt="Handwritten: 12.1.1 N-Gram Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-diagram.svg" alt="Diagram: 12.1.1 N-Gram Models" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-diagram.svg" alt="Diagram: 12.1.1 N-Gram Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-sticky.svg" alt="Sticky Note: 12.1.1 N-Gram Models" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-sticky.svg" alt="Sticky Note: 12.1.1 N-Gram Models" width="30%">
 </a>
 
 
@@ -186,14 +186,14 @@ print("Perplexity:", lm.perplexity("the cat ran"))
 
 ### 12.1.2 Perplexity
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-handwritten.svg" alt="Handwritten: 12.1.2 Perplexity" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-handwritten.svg" alt="Handwritten: 12.1.2 Perplexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-diagram.svg" alt="Diagram: 12.1.2 Perplexity" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-diagram.svg" alt="Diagram: 12.1.2 Perplexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-sticky.svg" alt="Sticky Note: 12.1.2 Perplexity" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-sticky.svg" alt="Sticky Note: 12.1.2 Perplexity" width="30%">
 </a>
 
 
@@ -211,14 +211,14 @@ Text classification assigns a document to one or more predefined categories.
 
 ### 12.2.1 Naive Bayes Classifier
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-handwritten.svg" alt="Handwritten: 12.2.1 Naive Bayes Classifier" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-handwritten.svg" alt="Handwritten: 12.2.1 Naive Bayes Classifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-diagram.svg" alt="Diagram: 12.2.1 Naive Bayes Classifier" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-diagram.svg" alt="Diagram: 12.2.1 Naive Bayes Classifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-sticky.svg" alt="Sticky Note: 12.2.1 Naive Bayes Classifier" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-sticky.svg" alt="Sticky Note: 12.2.1 Naive Bayes Classifier" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ print("Prediction:", nb.predict("awful film"))
 
 ### 12.2.2 Logistic Regression
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-handwritten.svg" alt="Handwritten: 12.2.2 Logistic Regression" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-handwritten.svg" alt="Handwritten: 12.2.2 Logistic Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-diagram.svg" alt="Diagram: 12.2.2 Logistic Regression" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-diagram.svg" alt="Diagram: 12.2.2 Logistic Regression" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-sticky.svg" alt="Sticky Note: 12.2.2 Logistic Regression" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-sticky.svg" alt="Sticky Note: 12.2.2 Logistic Regression" width="30%">
 </a>
 
 
@@ -371,14 +371,14 @@ Tokenization is the process of splitting text into smaller units called tokens (
 
 ### 12.3.1 Word Tokenization
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-handwritten.svg" alt="Handwritten: 12.3.1 Word Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-handwritten.svg" alt="Handwritten: 12.3.1 Word Tokenization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-diagram.svg" alt="Diagram: 12.3.1 Word Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-diagram.svg" alt="Diagram: 12.3.1 Word Tokenization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-sticky.svg" alt="Sticky Note: 12.3.1 Word Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-sticky.svg" alt="Sticky Note: 12.3.1 Word Tokenization" width="30%">
 </a>
 
 
@@ -468,14 +468,14 @@ print("Char tokens (first 15):", char_tokens[:15])
 
 ### 12.3.2 Subword Tokenization (BPE)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-handwritten.svg" alt="Handwritten: 12.3.2 Subword Tokenization (BPE)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-handwritten.svg" alt="Handwritten: 12.3.2 Subword Tokenization (BPE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-diagram.svg" alt="Diagram: 12.3.2 Subword Tokenization (BPE)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-diagram.svg" alt="Diagram: 12.3.2 Subword Tokenization (BPE)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-sticky.svg" alt="Sticky Note: 12.3.2 Subword Tokenization (BPE)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-sticky.svg" alt="Sticky Note: 12.3.2 Subword Tokenization (BPE)" width="30%">
 </a>
 
 
@@ -604,14 +604,14 @@ Stemming chops off affixes heuristically; lemmatization uses vocabulary and morp
 
 ### 12.4.1 Porter Stemmer
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-handwritten.svg" alt="Handwritten: 12.4.1 Porter Stemmer" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-handwritten.svg" alt="Handwritten: 12.4.1 Porter Stemmer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-diagram.svg" alt="Diagram: 12.4.1 Porter Stemmer" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-diagram.svg" alt="Diagram: 12.4.1 Porter Stemmer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-sticky.svg" alt="Sticky Note: 12.4.1 Porter Stemmer" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-sticky.svg" alt="Sticky Note: 12.4.1 Porter Stemmer" width="30%">
 </a>
 
 
@@ -708,14 +708,14 @@ POS tagging assigns a grammatical tag (e.g., noun, verb, adjective, adverb) to e
 
 ### 12.5.1 HMM-Based POS Tagging
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-handwritten.svg" alt="Handwritten: 12.5.1 HMM-Based POS Tagging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-handwritten.svg" alt="Handwritten: 12.5.1 HMM-Based POS Tagging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-diagram.svg" alt="Diagram: 12.5.1 HMM-Based POS Tagging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-diagram.svg" alt="Diagram: 12.5.1 HMM-Based POS Tagging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-sticky.svg" alt="Sticky Note: 12.5.1 HMM-Based POS Tagging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-sticky.svg" alt="Sticky Note: 12.5.1 HMM-Based POS Tagging" width="30%">
 </a>
 
 
@@ -808,14 +808,14 @@ for token in doc:
 
 ### 12.5.2 CRF-Based Tagging
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-handwritten.svg" alt="Handwritten: 12.5.2 CRF-Based Tagging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-handwritten.svg" alt="Handwritten: 12.5.2 CRF-Based Tagging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-diagram.svg" alt="Diagram: 12.5.2 CRF-Based Tagging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-diagram.svg" alt="Diagram: 12.5.2 CRF-Based Tagging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-sticky.svg" alt="Sticky Note: 12.5.2 CRF-Based Tagging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-sticky.svg" alt="Sticky Note: 12.5.2 CRF-Based Tagging" width="30%">
 </a>
 
 
@@ -945,14 +945,14 @@ print("\n".join(f"  - {p}" for p in people))
 
 ### 12.7.1 Constituency Parsing (CKY Algorithm)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-handwritten.svg" alt="Handwritten: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-handwritten.svg" alt="Handwritten: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-diagram.svg" alt="Diagram: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-diagram.svg" alt="Diagram: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-sticky.svg" alt="Sticky Note: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-sticky.svg" alt="Sticky Note: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
 </a>
 
 
@@ -1101,14 +1101,14 @@ for tree in parser.parse(sentence):
 
 ### 12.7.2 Statistical Parsing (PCFG)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-handwritten.svg" alt="Handwritten: 12.7.2 Statistical Parsing (PCFG)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-handwritten.svg" alt="Handwritten: 12.7.2 Statistical Parsing (PCFG)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-diagram.svg" alt="Diagram: 12.7.2 Statistical Parsing (PCFG)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-diagram.svg" alt="Diagram: 12.7.2 Statistical Parsing (PCFG)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-sticky.svg" alt="Sticky Note: 12.7.2 Statistical Parsing (PCFG)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-sticky.svg" alt="Sticky Note: 12.7.2 Statistical Parsing (PCFG)" width="30%">
 </a>
 
 
@@ -1134,14 +1134,14 @@ print(f"Learned {len(grammar.productions())} productions from Treebank")
 
 ### 12.7.3 Dependency Parsing
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-handwritten.svg" alt="Handwritten: 12.7.3 Dependency Parsing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-handwritten.svg" alt="Handwritten: 12.7.3 Dependency Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-diagram.svg" alt="Diagram: 12.7.3 Dependency Parsing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-diagram.svg" alt="Diagram: 12.7.3 Dependency Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-sticky.svg" alt="Sticky Note: 12.7.3 Dependency Parsing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-sticky.svg" alt="Sticky Note: 12.7.3 Dependency Parsing" width="30%">
 </a>
 
 
@@ -1177,14 +1177,14 @@ displacy.render(doc, style="dep", jupyter=False)
 
 ### 12.8.1 Word2Vec (Skip-Gram)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-handwritten.svg" alt="Handwritten: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-handwritten.svg" alt="Handwritten: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-diagram.svg" alt="Diagram: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-diagram.svg" alt="Diagram: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-sticky.svg" alt="Sticky Note: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-sticky.svg" alt="Sticky Note: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
 </a>
 
 
@@ -1263,14 +1263,14 @@ print("Similarity(cat, the):", model.wv.similarity("cat", "the"))
 
 ### 12.8.2 GloVe (Global Vectors)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-handwritten.svg" alt="Handwritten: 12.8.2 GloVe (Global Vectors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-handwritten.svg" alt="Handwritten: 12.8.2 GloVe (Global Vectors)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-diagram.svg" alt="Diagram: 12.8.2 GloVe (Global Vectors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-diagram.svg" alt="Diagram: 12.8.2 GloVe (Global Vectors)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-sticky.svg" alt="Sticky Note: 12.8.2 GloVe (Global Vectors)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-sticky.svg" alt="Sticky Note: 12.8.2 GloVe (Global Vectors)" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ GloVe learns embeddings by factorizing the word co-occurrence matrix.
 
 ### 12.8.3 FastText
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-handwritten.svg" alt="Handwritten: 12.8.3 FastText" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-handwritten.svg" alt="Handwritten: 12.8.3 FastText" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-diagram.svg" alt="Diagram: 12.8.3 FastText" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-diagram.svg" alt="Diagram: 12.8.3 FastText" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-sticky.svg" alt="Sticky Note: 12.8.3 FastText" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-sticky.svg" alt="Sticky Note: 12.8.3 FastText" width="30%">
 </a>
 
 
@@ -1342,14 +1342,14 @@ print("Most similar to 'cat':", ft_model.wv.most_similar("cat", topn=3))
 
 ### 12.9.1 The Transformer Architecture
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-handwritten.svg" alt="Handwritten: 12.9.1 The Transformer Architecture" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-handwritten.svg" alt="Handwritten: 12.9.1 The Transformer Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-diagram.svg" alt="Diagram: 12.9.1 The Transformer Architecture" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-diagram.svg" alt="Diagram: 12.9.1 The Transformer Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-sticky.svg" alt="Sticky Note: 12.9.1 The Transformer Architecture" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-sticky.svg" alt="Sticky Note: 12.9.1 The Transformer Architecture" width="30%">
 </a>
 
 
@@ -1465,14 +1465,14 @@ print(f"Max position embeddings: {config.max_position_embeddings}")
 
 ### 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-handwritten.svg" alt="Handwritten: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-handwritten.svg" alt="Handwritten: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-diagram.svg" alt="Diagram: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-diagram.svg" alt="Diagram: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-sticky.svg" alt="Sticky Note: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-sticky.svg" alt="Sticky Note: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
 </a>
 
 
@@ -1514,14 +1514,14 @@ print(f"\nAnswer: {result['answer']} (confidence: {result['score']:.3f})")
 
 ### 12.9.3 GPT (Generative Pre-trained Transformer)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-handwritten.svg" alt="Handwritten: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-handwritten.svg" alt="Handwritten: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-diagram.svg" alt="Diagram: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-diagram.svg" alt="Diagram: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-sticky.svg" alt="Sticky Note: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-sticky.svg" alt="Sticky Note: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
 </a>
 
 
@@ -1559,14 +1559,14 @@ unmasker = pipeline("fill-mask", model="distilbert-base-uncased")
 
 ### 12.9.4 BERT vs GPT
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-handwritten.svg" alt="Handwritten: 12.9.4 BERT vs GPT" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-handwritten.svg" alt="Handwritten: 12.9.4 BERT vs GPT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-diagram.svg" alt="Diagram: 12.9.4 BERT vs GPT" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-diagram.svg" alt="Diagram: 12.9.4 BERT vs GPT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-sticky.svg" alt="Sticky Note: 12.9.4 BERT vs GPT" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-sticky.svg" alt="Sticky Note: 12.9.4 BERT vs GPT" width="30%">
 </a>
 
 
@@ -1712,14 +1712,14 @@ print("BERT:", ner(text)[:3])
 
 ### Q1: Explain the attention mechanism in Transformers.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-handwritten.svg" alt="Handwritten: Explain the attention mechanism in Transformers." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-handwritten.svg" alt="Handwritten: Explain the attention mechanism in Transformers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-diagram.svg" alt="Diagram: Explain the attention mechanism in Transformers." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-diagram.svg" alt="Diagram: Explain the attention mechanism in Transformers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-sticky.svg" alt="Sticky Note: Explain the attention mechanism in Transformers." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-sticky.svg" alt="Sticky Note: Explain the attention mechanism in Transformers." width="30%">
 </a>
 
 
@@ -1734,14 +1734,14 @@ The scaling factor is critical — without it, large values push softmax to near
 
 ### Q2: Compare BERT and GPT. When would you use each?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare BERT and GPT. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare BERT and GPT. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-diagram.svg" alt="Diagram: Compare BERT and GPT. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-diagram.svg" alt="Diagram: Compare BERT and GPT. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare BERT and GPT. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare BERT and GPT. When would you use each?" width="30%">
 </a>
 
 
@@ -1753,14 +1753,14 @@ BERT requires fine-tuning per task; GPT works with prompting (few-shot or zero-s
 
 ### Q3: How do modern NLP systems handle out-of-vocabulary (OOV) words?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-handwritten.svg" alt="Handwritten: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-handwritten.svg" alt="Handwritten: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-diagram.svg" alt="Diagram: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-diagram.svg" alt="Diagram: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-sticky.svg" alt="Sticky Note: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-sticky.svg" alt="Sticky Note: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
 </a>
 
 
@@ -1772,14 +1772,14 @@ BERT requires fine-tuning per task; GPT works with prompting (few-shot or zero-s
 
 ### Q4: What is the difference between static and contextual embeddings?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-handwritten.svg" alt="Handwritten: What is the difference between static and contextual embeddings?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-handwritten.svg" alt="Handwritten: What is the difference between static and contextual embeddings?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-diagram.svg" alt="Diagram: What is the difference between static and contextual embeddings?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-diagram.svg" alt="Diagram: What is the difference between static and contextual embeddings?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-sticky.svg" alt="Sticky Note: What is the difference between static and contextual embeddings?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-sticky.svg" alt="Sticky Note: What is the difference between static and contextual embeddings?" width="30%">
 </a>
 
 
@@ -1787,14 +1787,14 @@ Static embeddings (Word2Vec, GloVe, FastText) assign one fixed vector per word r
 
 ### Q5: Why does the Transformer use multi-head attention instead of single-head?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-handwritten.svg" alt="Handwritten: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-handwritten.svg" alt="Handwritten: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-diagram.svg" alt="Diagram: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-diagram.svg" alt="Diagram: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-sticky.svg" alt="Sticky Note: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-sticky.svg" alt="Sticky Note: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
 </a>
 
 
@@ -1802,14 +1802,14 @@ Different attention heads learn different relationship types. In "The cat sat on
 
 ### Q6: Explain the significance of positional encoding in Transformers.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-handwritten.svg" alt="Handwritten: Explain the significance of positional encoding in Transformers." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-handwritten.svg" alt="Handwritten: Explain the significance of positional encoding in Transformers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-diagram.svg" alt="Diagram: Explain the significance of positional encoding in Transformers." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-diagram.svg" alt="Diagram: Explain the significance of positional encoding in Transformers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-sticky.svg" alt="Sticky Note: Explain the significance of positional encoding in Transformers." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-sticky.svg" alt="Sticky Note: Explain the significance of positional encoding in Transformers." width="30%">
 </a>
 
 
@@ -1834,14 +1834,14 @@ Unlike RNNs which process tokens sequentially (inherently ordered), Transformers
 
 ### Case Study: Google Search BERT Integration
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-handwritten.svg" alt="Handwritten: Case Study: Google Search BERT Integration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-handwritten.svg" alt="Handwritten: Case Study: Google Search BERT Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-diagram.svg" alt="Diagram: Case Study: Google Search BERT Integration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-diagram.svg" alt="Diagram: Case Study: Google Search BERT Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-sticky.svg" alt="Sticky Note: Case Study: Google Search BERT Integration" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-sticky.svg" alt="Sticky Note: Case Study: Google Search BERT Integration" width="30%">
 </a>
 
 
@@ -1849,14 +1849,14 @@ Before BERT, Google Search struggled with prepositions. For "2019 brazil travele
 
 ### Case Study: Gmail Spam Filter
 
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-handwritten.svg" alt="Handwritten: Case Study: Gmail Spam Filter" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-handwritten.svg" alt="Handwritten: Case Study: Gmail Spam Filter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-diagram.svg" alt="Diagram: Case Study: Gmail Spam Filter" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-diagram.svg" alt="Diagram: Case Study: Gmail Spam Filter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-sticky.svg" alt="Sticky Note: Case Study: Gmail Spam Filter" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-sticky.svg" alt="Sticky Note: Case Study: Gmail Spam Filter" width="30%">
 </a>
 
 

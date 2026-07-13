@@ -30,14 +30,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### Creational Patterns
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-handwritten.svg" alt="Handwritten: Creational Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-handwritten.svg" alt="Handwritten: Creational Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-diagram.svg" alt="Diagram: Creational Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-diagram.svg" alt="Diagram: Creational Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-sticky.svg" alt="Sticky Note: Creational Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-sticky.svg" alt="Sticky Note: Creational Patterns" width="30%">
 </a>
 
 
@@ -51,14 +51,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### Structural Patterns
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-handwritten.svg" alt="Handwritten: Structural Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-handwritten.svg" alt="Handwritten: Structural Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-diagram.svg" alt="Diagram: Structural Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-diagram.svg" alt="Diagram: Structural Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-sticky.svg" alt="Sticky Note: Structural Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/structural-patterns-sticky.svg" alt="Sticky Note: Structural Patterns" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### Behavioral Patterns
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-handwritten.svg" alt="Handwritten: Behavioral Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-handwritten.svg" alt="Handwritten: Behavioral Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-diagram.svg" alt="Diagram: Behavioral Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-diagram.svg" alt="Diagram: Behavioral Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-sticky.svg" alt="Sticky Note: Behavioral Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/behavioral-patterns-sticky.svg" alt="Sticky Note: Behavioral Patterns" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### Pattern Scope
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-handwritten.svg" alt="Handwritten: Pattern Scope" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-handwritten.svg" alt="Handwritten: Pattern Scope" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-diagram.svg" alt="Diagram: Pattern Scope" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-diagram.svg" alt="Diagram: Pattern Scope" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-sticky.svg" alt="Sticky Note: Pattern Scope" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/pattern-scope-sticky.svg" alt="Sticky Note: Pattern Scope" width="30%">
 </a>
 
 
@@ -119,14 +119,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### Relationships Between Patterns
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-handwritten.svg" alt="Handwritten: Relationships Between Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-handwritten.svg" alt="Handwritten: Relationships Between Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-diagram.svg" alt="Diagram: Relationships Between Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-diagram.svg" alt="Diagram: Relationships Between Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-sticky.svg" alt="Sticky Note: Relationships Between Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/relationships-between-patterns-sticky.svg" alt="Sticky Note: Relationships Between Patterns" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### SOLID Principles
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-handwritten.svg" alt="Handwritten: SOLID Principles" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-handwritten.svg" alt="Handwritten: SOLID Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-diagram.svg" alt="Diagram: SOLID Principles" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-diagram.svg" alt="Diagram: SOLID Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-sticky.svg" alt="Sticky Note: SOLID Principles" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/solid-principles-sticky.svg" alt="Sticky Note: SOLID Principles" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ The Gang of Four (Gamma, Helm, Johnson, Vlissides, 1994) catalogued 23 patterns 
 
 ### GRASP Principles
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-handwritten.svg" alt="Handwritten: GRASP Principles" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-handwritten.svg" alt="Handwritten: GRASP Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-diagram.svg" alt="Diagram: GRASP Principles" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-diagram.svg" alt="Diagram: GRASP Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-sticky.svg" alt="Sticky Note: GRASP Principles" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/grasp-principles-sticky.svg" alt="Sticky Note: GRASP Principles" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ class Logger:
 
 ### Thread-Safe Implementations
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-handwritten.svg" alt="Handwritten: Thread-Safe Implementations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-handwritten.svg" alt="Handwritten: Thread-Safe Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-diagram.svg" alt="Diagram: Thread-Safe Implementations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-diagram.svg" alt="Diagram: Thread-Safe Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-sticky.svg" alt="Sticky Note: Thread-Safe Implementations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/thread-safe-implementations-sticky.svg" alt="Sticky Note: Thread-Safe Implementations" width="30%">
 </a>
 
 
@@ -744,14 +744,14 @@ furnishRoom(victorian):
 
 ### Factory Method vs Abstract Factory → Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-handwritten.svg" alt="Handwritten: Factory Method vs Abstract Factory → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-handwritten.svg" alt="Handwritten: Factory Method vs Abstract Factory → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-diagram.svg" alt="Diagram: Factory Method vs Abstract Factory → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-diagram.svg" alt="Diagram: Factory Method vs Abstract Factory → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-sticky.svg" alt="Sticky Note: Factory Method vs Abstract Factory → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/factory-method-vs-abstract-factory-comparison-sticky.svg" alt="Sticky Note: Factory Method vs Abstract Factory → Comparison" width="30%">
 </a>
 
 
@@ -768,14 +768,14 @@ furnishRoom(victorian):
 
 ### Creational Patterns at a Glance
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-handwritten.svg" alt="Handwritten: Creational Patterns at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-handwritten.svg" alt="Handwritten: Creational Patterns at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-diagram.svg" alt="Diagram: Creational Patterns at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-diagram.svg" alt="Diagram: Creational Patterns at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-sticky.svg" alt="Sticky Note: Creational Patterns at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-patterns-at-a-glance-sticky.svg" alt="Sticky Note: Creational Patterns at a Glance" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ s1->render() -> "Rectangle(0,0) 200x100"
 
 ### Creational Summary
 
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-handwritten.svg" alt="Handwritten: Creational Summary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-handwritten.svg" alt="Handwritten: Creational Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-diagram.svg" alt="Diagram: Creational Summary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-diagram.svg" alt="Diagram: Creational Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-sticky.svg" alt="Sticky Note: Creational Summary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/16-design-patterns/creational-summary-sticky.svg" alt="Sticky Note: Creational Summary" width="30%">
 </a>
 
 

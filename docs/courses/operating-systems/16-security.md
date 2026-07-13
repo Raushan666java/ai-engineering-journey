@@ -46,14 +46,14 @@ flowchart LR
 
 ### Security Goals
 
-<a href="../../assets/images/diagrams/operating-systems/16-security/security-goals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/16-security/security-goals-handwritten.svg" alt="Handwritten: Security Goals" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/16-security/security-goals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/16-security/security-goals-handwritten.svg" alt="Handwritten: Security Goals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/16-security/security-goals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/16-security/security-goals-diagram.svg" alt="Diagram: Security Goals" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/16-security/security-goals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/16-security/security-goals-diagram.svg" alt="Diagram: Security Goals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/16-security/security-goals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/16-security/security-goals-sticky.svg" alt="Sticky Note: Security Goals" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/16-security/security-goals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/16-security/security-goals-sticky.svg" alt="Sticky Note: Security Goals" width="30%">
 </a>
 
 

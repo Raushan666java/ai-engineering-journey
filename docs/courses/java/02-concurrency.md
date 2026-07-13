@@ -88,14 +88,14 @@ A thread in Java is an instance of `java.lang.Thread`. When it runs, it executes
 
 ### Thread API → start, join, sleep, yield, interrupt
 
-<a href="../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-handwritten.svg" alt="Handwritten: Thread API → start, join, sleep, yield, interrupt" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-handwritten.svg" alt="Handwritten: Thread API → start, join, sleep, yield, interrupt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-diagram.svg" alt="Diagram: Thread API → start, join, sleep, yield, interrupt" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-diagram.svg" alt="Diagram: Thread API → start, join, sleep, yield, interrupt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-sticky.svg" alt="Sticky Note: Thread API → start, join, sleep, yield, interrupt" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thread-api-start-join-sleep-yield-interrupt-sticky.svg" alt="Sticky Note: Thread API → start, join, sleep, yield, interrupt" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ public class ThreadApiDemo {
 
 ### Thread states → a monitor-based walk
 
-<a href="../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-handwritten.svg" alt="Handwritten: Thread states → a monitor-based walk" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-handwritten.svg" alt="Handwritten: Thread states → a monitor-based walk" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-diagram.svg" alt="Diagram: Thread states → a monitor-based walk" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-diagram.svg" alt="Diagram: Thread states → a monitor-based walk" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-sticky.svg" alt="Sticky Note: Thread states → a monitor-based walk" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thread-states-a-monitor-based-walk-sticky.svg" alt="Sticky Note: Thread states → a monitor-based walk" width="30%">
 </a>
 
 
@@ -213,14 +213,14 @@ A **race condition** occurs when two or more threads access shared mutable state
 
 ### Unsafe counter → three threads, one int
 
-<a href="../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-handwritten.svg" alt="Handwritten: Unsafe counter → three threads, one int" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-handwritten.svg" alt="Handwritten: Unsafe counter → three threads, one int" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-diagram.svg" alt="Diagram: Unsafe counter → three threads, one int" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-diagram.svg" alt="Diagram: Unsafe counter → three threads, one int" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-sticky.svg" alt="Sticky Note: Unsafe counter → three threads, one int" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/unsafe-counter-three-threads-one-int-sticky.svg" alt="Sticky Note: Unsafe counter → three threads, one int" width="30%">
 </a>
 
 
@@ -282,14 +282,14 @@ public class RaceConditionDemo {
 
 ### Synchronized
 
-<a href="../../assets/images/diagrams/java/02-concurrency/synchronized-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/synchronized-handwritten.svg" alt="Handwritten: Synchronized" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/synchronized-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/synchronized-handwritten.svg" alt="Handwritten: Synchronized" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/synchronized-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/synchronized-diagram.svg" alt="Diagram: Synchronized" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/synchronized-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/synchronized-diagram.svg" alt="Diagram: Synchronized" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/synchronized-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/synchronized-sticky.svg" alt="Sticky Note: Synchronized" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/synchronized-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/synchronized-sticky.svg" alt="Sticky Note: Synchronized" width="30%">
 </a>
 
 
@@ -341,14 +341,14 @@ public class SynchronizedMethodDemo {
 
 ### Synchronized block (finer granularity)
 
-<a href="../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-handwritten.svg" alt="Handwritten: Synchronized block (finer granularity)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-handwritten.svg" alt="Handwritten: Synchronized block (finer granularity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-diagram.svg" alt="Diagram: Synchronized block (finer granularity)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-diagram.svg" alt="Diagram: Synchronized block (finer granularity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-sticky.svg" alt="Sticky Note: Synchronized block (finer granularity)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/synchronized-block-finer-granularity-sticky.svg" alt="Sticky Note: Synchronized block (finer granularity)" width="30%">
 </a>
 
 
@@ -399,14 +399,14 @@ class SynchronizedBlockDemo {
 
 ### Reentrancy
 
-<a href="../../assets/images/diagrams/java/02-concurrency/reentrancy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/reentrancy-handwritten.svg" alt="Handwritten: Reentrancy" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/reentrancy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/reentrancy-handwritten.svg" alt="Handwritten: Reentrancy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/reentrancy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/reentrancy-diagram.svg" alt="Diagram: Reentrancy" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/reentrancy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/reentrancy-diagram.svg" alt="Diagram: Reentrancy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/reentrancy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/reentrancy-sticky.svg" alt="Sticky Note: Reentrancy" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/reentrancy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/reentrancy-sticky.svg" alt="Sticky Note: Reentrancy" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ public class ReentrancyDemo {
 
 ### Visibility and happens-before
 
-<a href="../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-handwritten.svg" alt="Handwritten: Visibility and happens-before" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-handwritten.svg" alt="Handwritten: Visibility and happens-before" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-diagram.svg" alt="Diagram: Visibility and happens-before" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-diagram.svg" alt="Diagram: Visibility and happens-before" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-sticky.svg" alt="Sticky Note: Visibility and happens-before" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/visibility-and-happens-before-sticky.svg" alt="Sticky Note: Visibility and happens-before" width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ Without synchronization, the JIT compiler and CPU can reorder instructions, and 
 
 ### Visibility failure demo
 
-<a href="../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-handwritten.svg" alt="Handwritten: Visibility failure demo" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-handwritten.svg" alt="Handwritten: Visibility failure demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-diagram.svg" alt="Diagram: Visibility failure demo" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-diagram.svg" alt="Diagram: Visibility failure demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-sticky.svg" alt="Sticky Note: Visibility failure demo" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/visibility-failure-demo-sticky.svg" alt="Sticky Note: Visibility failure demo" width="30%">
 </a>
 
 
@@ -517,14 +517,14 @@ The `java.util.concurrent.locks` package provides more flexible locking than `sy
 
 ### ReentrantLock
 
-<a href="../../assets/images/diagrams/java/02-concurrency/reentrantlock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/reentrantlock-handwritten.svg" alt="Handwritten: ReentrantLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/reentrantlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/reentrantlock-handwritten.svg" alt="Handwritten: ReentrantLock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/reentrantlock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/reentrantlock-diagram.svg" alt="Diagram: ReentrantLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/reentrantlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/reentrantlock-diagram.svg" alt="Diagram: ReentrantLock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/reentrantlock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/reentrantlock-sticky.svg" alt="Sticky Note: ReentrantLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/reentrantlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/reentrantlock-sticky.svg" alt="Sticky Note: ReentrantLock" width="30%">
 </a>
 
 
@@ -616,14 +616,14 @@ class ReentrantLockDemo {
 
 ### ReadWriteLock
 
-<a href="../../assets/images/diagrams/java/02-concurrency/readwritelock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/readwritelock-handwritten.svg" alt="Handwritten: ReadWriteLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/readwritelock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/readwritelock-handwritten.svg" alt="Handwritten: ReadWriteLock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/readwritelock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/readwritelock-diagram.svg" alt="Diagram: ReadWriteLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/readwritelock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/readwritelock-diagram.svg" alt="Diagram: ReadWriteLock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/readwritelock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/readwritelock-sticky.svg" alt="Sticky Note: ReadWriteLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/readwritelock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/readwritelock-sticky.svg" alt="Sticky Note: ReadWriteLock" width="30%">
 </a>
 
 
@@ -708,14 +708,14 @@ class ReadWriteLockDemo {
 
 ### StampedLock
 
-<a href="../../assets/images/diagrams/java/02-concurrency/stampedlock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/stampedlock-handwritten.svg" alt="Handwritten: StampedLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/stampedlock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/stampedlock-handwritten.svg" alt="Handwritten: StampedLock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/stampedlock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/stampedlock-diagram.svg" alt="Diagram: StampedLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/stampedlock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/stampedlock-diagram.svg" alt="Diagram: StampedLock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/stampedlock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/stampedlock-sticky.svg" alt="Sticky Note: StampedLock" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/stampedlock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/stampedlock-sticky.svg" alt="Sticky Note: StampedLock" width="30%">
 </a>
 
 
@@ -783,14 +783,14 @@ class StampedLockDemo {
 
 ### Condition
 
-<a href="../../assets/images/diagrams/java/02-concurrency/condition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/condition-handwritten.svg" alt="Handwritten: Condition" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/condition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/condition-handwritten.svg" alt="Handwritten: Condition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/condition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/condition-diagram.svg" alt="Diagram: Condition" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/condition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/condition-diagram.svg" alt="Diagram: Condition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/condition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/condition-sticky.svg" alt="Sticky Note: Condition" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/condition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/condition-sticky.svg" alt="Sticky Note: Condition" width="30%">
 </a>
 
 
@@ -883,14 +883,14 @@ Atomic classes in `java.util.concurrent.atomic` provide lock-free, thread-safe o
 
 ### CAS semantics
 
-<a href="../../assets/images/diagrams/java/02-concurrency/cas-semantics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/cas-semantics-handwritten.svg" alt="Handwritten: CAS semantics" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/cas-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/cas-semantics-handwritten.svg" alt="Handwritten: CAS semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/cas-semantics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/cas-semantics-diagram.svg" alt="Diagram: CAS semantics" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/cas-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/cas-semantics-diagram.svg" alt="Diagram: CAS semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/cas-semantics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/cas-semantics-sticky.svg" alt="Sticky Note: CAS semantics" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/cas-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/cas-semantics-sticky.svg" alt="Sticky Note: CAS semantics" width="30%">
 </a>
 
 
@@ -908,14 +908,14 @@ CAS is non-blocking → the caller can retry in a loop (spin-wait).
 
 ### AtomicInteger
 
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicinteger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicinteger-handwritten.svg" alt="Handwritten: AtomicInteger" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicinteger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicinteger-handwritten.svg" alt="Handwritten: AtomicInteger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicinteger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicinteger-diagram.svg" alt="Diagram: AtomicInteger" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicinteger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicinteger-diagram.svg" alt="Diagram: AtomicInteger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicinteger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicinteger-sticky.svg" alt="Sticky Note: AtomicInteger" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicinteger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicinteger-sticky.svg" alt="Sticky Note: AtomicInteger" width="30%">
 </a>
 
 
@@ -968,14 +968,14 @@ class AtomicIntegerDemo {
 
 ### AtomicLong, AtomicBoolean, AtomicReference
 
-<a href="../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-handwritten.svg" alt="Handwritten: AtomicLong, AtomicBoolean, AtomicReference" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-handwritten.svg" alt="Handwritten: AtomicLong, AtomicBoolean, AtomicReference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-diagram.svg" alt="Diagram: AtomicLong, AtomicBoolean, AtomicReference" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-diagram.svg" alt="Diagram: AtomicLong, AtomicBoolean, AtomicReference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-sticky.svg" alt="Sticky Note: AtomicLong, AtomicBoolean, AtomicReference" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomiclong-atomicboolean-atomicreference-sticky.svg" alt="Sticky Note: AtomicLong, AtomicBoolean, AtomicReference" width="30%">
 </a>
 
 
@@ -1019,14 +1019,14 @@ class AtomicTypesDemo {
 
 ### ABA problem
 
-<a href="../../assets/images/diagrams/java/02-concurrency/aba-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/aba-problem-handwritten.svg" alt="Handwritten: ABA problem" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/aba-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/aba-problem-handwritten.svg" alt="Handwritten: ABA problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/aba-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/aba-problem-diagram.svg" alt="Diagram: ABA problem" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/aba-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/aba-problem-diagram.svg" alt="Diagram: ABA problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/aba-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/aba-problem-sticky.svg" alt="Sticky Note: ABA problem" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/aba-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/aba-problem-sticky.svg" alt="Sticky Note: ABA problem" width="30%">
 </a>
 
 
@@ -1108,14 +1108,14 @@ class AbaSolutionDemo {
 
 ### AtomicIntegerArray
 
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-handwritten.svg" alt="Handwritten: AtomicIntegerArray" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-handwritten.svg" alt="Handwritten: AtomicIntegerArray" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-diagram.svg" alt="Diagram: AtomicIntegerArray" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-diagram.svg" alt="Diagram: AtomicIntegerArray" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-sticky.svg" alt="Sticky Note: AtomicIntegerArray" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicintegerarray-sticky.svg" alt="Sticky Note: AtomicIntegerArray" width="30%">
 </a>
 
 
@@ -1155,14 +1155,14 @@ class AtomicIntegerArrayDemo {
 
 ### AtomicReferenceFieldUpdater
 
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-handwritten.svg" alt="Handwritten: AtomicReferenceFieldUpdater" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-handwritten.svg" alt="Handwritten: AtomicReferenceFieldUpdater" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-diagram.svg" alt="Diagram: AtomicReferenceFieldUpdater" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-diagram.svg" alt="Diagram: AtomicReferenceFieldUpdater" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-sticky.svg" alt="Sticky Note: AtomicReferenceFieldUpdater" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/atomicreferencefieldupdater-sticky.svg" alt="Sticky Note: AtomicReferenceFieldUpdater" width="30%">
 </a>
 
 
@@ -1213,14 +1213,14 @@ The `volatile` keyword guarantees **visibility** of a field across threads. Ever
 
 ### Volatile flag pattern
 
-<a href="../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-handwritten.svg" alt="Handwritten: Volatile flag pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-handwritten.svg" alt="Handwritten: Volatile flag pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-diagram.svg" alt="Diagram: Volatile flag pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-diagram.svg" alt="Diagram: Volatile flag pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-sticky.svg" alt="Sticky Note: Volatile flag pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/volatile-flag-pattern-sticky.svg" alt="Sticky Note: Volatile flag pattern" width="30%">
 </a>
 
 
@@ -1252,14 +1252,14 @@ class VolatileFlagDemo {
 
 ### Double-checked locking (volatile required)
 
-<a href="../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-handwritten.svg" alt="Handwritten: Double-checked locking (volatile required)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-handwritten.svg" alt="Handwritten: Double-checked locking (volatile required)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-diagram.svg" alt="Diagram: Double-checked locking (volatile required)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-diagram.svg" alt="Diagram: Double-checked locking (volatile required)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-sticky.svg" alt="Sticky Note: Double-checked locking (volatile required)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/double-checked-locking-volatile-required-sticky.svg" alt="Sticky Note: Double-checked locking (volatile required)" width="30%">
 </a>
 
 
@@ -1304,14 +1304,14 @@ public class DoubleCheckedLockingDemo {
 
 ### Volatile piggybacking
 
-<a href="../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-handwritten.svg" alt="Handwritten: Volatile piggybacking" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-handwritten.svg" alt="Handwritten: Volatile piggybacking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-diagram.svg" alt="Diagram: Volatile piggybacking" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-diagram.svg" alt="Diagram: Volatile piggybacking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-sticky.svg" alt="Sticky Note: Volatile piggybacking" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/volatile-piggybacking-sticky.svg" alt="Sticky Note: Volatile piggybacking" width="30%">
 </a>
 
 
@@ -1364,14 +1364,14 @@ The `java.util.concurrent` package provides collections designed for concurrent 
 
 ### ConcurrentHashMap
 
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-handwritten.svg" alt="Handwritten: ConcurrentHashMap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-handwritten.svg" alt="Handwritten: ConcurrentHashMap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-diagram.svg" alt="Diagram: ConcurrentHashMap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-diagram.svg" alt="Diagram: ConcurrentHashMap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-sticky.svg" alt="Sticky Note: ConcurrentHashMap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrenthashmap-sticky.svg" alt="Sticky Note: ConcurrentHashMap" width="30%">
 </a>
 
 
@@ -1441,14 +1441,14 @@ class ConcurrentHashMapDemo {
 
 ### CopyOnWriteArrayList
 
-<a href="../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-handwritten.svg" alt="Handwritten: CopyOnWriteArrayList" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-handwritten.svg" alt="Handwritten: CopyOnWriteArrayList" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-diagram.svg" alt="Diagram: CopyOnWriteArrayList" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-diagram.svg" alt="Diagram: CopyOnWriteArrayList" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-sticky.svg" alt="Sticky Note: CopyOnWriteArrayList" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/copyonwritearraylist-sticky.svg" alt="Sticky Note: CopyOnWriteArrayList" width="30%">
 </a>
 
 
@@ -1493,14 +1493,14 @@ class CopyOnWriteArrayListDemo {
 
 ### ConcurrentLinkedQueue
 
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-handwritten.svg" alt="Handwritten: ConcurrentLinkedQueue" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-handwritten.svg" alt="Handwritten: ConcurrentLinkedQueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-diagram.svg" alt="Diagram: ConcurrentLinkedQueue" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-diagram.svg" alt="Diagram: ConcurrentLinkedQueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-sticky.svg" alt="Sticky Note: ConcurrentLinkedQueue" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrentlinkedqueue-sticky.svg" alt="Sticky Note: ConcurrentLinkedQueue" width="30%">
 </a>
 
 
@@ -1551,14 +1551,14 @@ class ConcurrentLinkedQueueDemo {
 
 ### ConcurrentSkipListMap
 
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-handwritten.svg" alt="Handwritten: ConcurrentSkipListMap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-handwritten.svg" alt="Handwritten: ConcurrentSkipListMap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-diagram.svg" alt="Diagram: ConcurrentSkipListMap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-diagram.svg" alt="Diagram: ConcurrentSkipListMap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-sticky.svg" alt="Sticky Note: ConcurrentSkipListMap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/concurrentskiplistmap-sticky.svg" alt="Sticky Note: ConcurrentSkipListMap" width="30%">
 </a>
 
 
@@ -1593,14 +1593,14 @@ class ConcurrentSkipListMapDemo {
 
 ### BlockingQueue implementations
 
-<a href="../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-handwritten.svg" alt="Handwritten: BlockingQueue implementations" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-handwritten.svg" alt="Handwritten: BlockingQueue implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-diagram.svg" alt="Diagram: BlockingQueue implementations" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-diagram.svg" alt="Diagram: BlockingQueue implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-sticky.svg" alt="Sticky Note: BlockingQueue implementations" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/blockingqueue-implementations-sticky.svg" alt="Sticky Note: BlockingQueue implementations" width="30%">
 </a>
 
 
@@ -1729,14 +1729,14 @@ class DelayedTask implements Delayed {
 
 ### TransferQueue
 
-<a href="../../assets/images/diagrams/java/02-concurrency/transferqueue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/transferqueue-handwritten.svg" alt="Handwritten: TransferQueue" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/transferqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/transferqueue-handwritten.svg" alt="Handwritten: TransferQueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/transferqueue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/transferqueue-diagram.svg" alt="Diagram: TransferQueue" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/transferqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/transferqueue-diagram.svg" alt="Diagram: TransferQueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/transferqueue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/transferqueue-sticky.svg" alt="Sticky Note: TransferQueue" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/transferqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/transferqueue-sticky.svg" alt="Sticky Note: TransferQueue" width="30%">
 </a>
 
 
@@ -1790,14 +1790,14 @@ Creating and destroying threads manually is expensive and error-prone. `Executor
 
 ### ThreadPoolExecutor → every parameter explained
 
-<a href="../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-handwritten.svg" alt="Handwritten: ThreadPoolExecutor → every parameter explained" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-handwritten.svg" alt="Handwritten: ThreadPoolExecutor → every parameter explained" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-diagram.svg" alt="Diagram: ThreadPoolExecutor → every parameter explained" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-diagram.svg" alt="Diagram: ThreadPoolExecutor → every parameter explained" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-sticky.svg" alt="Sticky Note: ThreadPoolExecutor → every parameter explained" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/threadpoolexecutor-every-parameter-explained-sticky.svg" alt="Sticky Note: ThreadPoolExecutor → every parameter explained" width="30%">
 </a>
 
 
@@ -1878,14 +1878,14 @@ class ThreadPoolExecutorDemo {
 
 ### Rejected Execution Handler strategies
 
-<a href="../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-handwritten.svg" alt="Handwritten: Rejected Execution Handler strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-handwritten.svg" alt="Handwritten: Rejected Execution Handler strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-diagram.svg" alt="Diagram: Rejected Execution Handler strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-diagram.svg" alt="Diagram: Rejected Execution Handler strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-sticky.svg" alt="Sticky Note: Rejected Execution Handler strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/rejected-execution-handler-strategies-sticky.svg" alt="Sticky Note: Rejected Execution Handler strategies" width="30%">
 </a>
 
 
@@ -1925,14 +1925,14 @@ class CallerRunsPolicyDemo {
 
 ### ScheduledThreadPoolExecutor
 
-<a href="../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-handwritten.svg" alt="Handwritten: ScheduledThreadPoolExecutor" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-handwritten.svg" alt="Handwritten: ScheduledThreadPoolExecutor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-diagram.svg" alt="Diagram: ScheduledThreadPoolExecutor" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-diagram.svg" alt="Diagram: ScheduledThreadPoolExecutor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-sticky.svg" alt="Sticky Note: ScheduledThreadPoolExecutor" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/scheduledthreadpoolexecutor-sticky.svg" alt="Sticky Note: ScheduledThreadPoolExecutor" width="30%">
 </a>
 
 
@@ -1980,14 +1980,14 @@ class ScheduledExecutorDemo {
 
 ### Executors factory methods
 
-<a href="../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-handwritten.svg" alt="Handwritten: Executors factory methods" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-handwritten.svg" alt="Handwritten: Executors factory methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-diagram.svg" alt="Diagram: Executors factory methods" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-diagram.svg" alt="Diagram: Executors factory methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-sticky.svg" alt="Sticky Note: Executors factory methods" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/executors-factory-methods-sticky.svg" alt="Sticky Note: Executors factory methods" width="30%">
 </a>
 
 
@@ -2036,14 +2036,14 @@ class ExecutorsFactoryDemo {
 
 ### invokeAll, invokeAny, submit(Callable)
 
-<a href="../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-handwritten.svg" alt="Handwritten: invokeAll, invokeAny, submit(Callable)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-handwritten.svg" alt="Handwritten: invokeAll, invokeAny, submit(Callable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-diagram.svg" alt="Diagram: invokeAll, invokeAny, submit(Callable)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-diagram.svg" alt="Diagram: invokeAll, invokeAny, submit(Callable)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-sticky.svg" alt="Sticky Note: invokeAll, invokeAny, submit(Callable)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/invokeall-invokeany-submit-callable-sticky.svg" alt="Sticky Note: invokeAll, invokeAny, submit(Callable)" width="30%">
 </a>
 
 
@@ -2098,14 +2098,14 @@ class InvokeAllAnyDemo {
 
 ### shutdown vs shutdownNow
 
-<a href="../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-handwritten.svg" alt="Handwritten: shutdown vs shutdownNow" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-handwritten.svg" alt="Handwritten: shutdown vs shutdownNow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-diagram.svg" alt="Diagram: shutdown vs shutdownNow" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-diagram.svg" alt="Diagram: shutdown vs shutdownNow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-sticky.svg" alt="Sticky Note: shutdown vs shutdownNow" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/shutdown-vs-shutdownnow-sticky.svg" alt="Sticky Note: shutdown vs shutdownNow" width="30%">
 </a>
 
 
@@ -2161,14 +2161,14 @@ class ShutdownDemo {
 
 ### RecursiveTask → compute-intensive parallel decomposition
 
-<a href="../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-handwritten.svg" alt="Handwritten: RecursiveTask → compute-intensive parallel decomposition" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-handwritten.svg" alt="Handwritten: RecursiveTask → compute-intensive parallel decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-diagram.svg" alt="Diagram: RecursiveTask → compute-intensive parallel decomposition" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-diagram.svg" alt="Diagram: RecursiveTask → compute-intensive parallel decomposition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-sticky.svg" alt="Sticky Note: RecursiveTask → compute-intensive parallel decomposition" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/recursivetask-compute-intensive-parallel-decomposition-sticky.svg" alt="Sticky Note: RecursiveTask → compute-intensive parallel decomposition" width="30%">
 </a>
 
 
@@ -2234,14 +2234,14 @@ class SumTask extends RecursiveTask<Long> {
 
 ### RecursiveAction → parallel side-effects (no return value)
 
-<a href="../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-handwritten.svg" alt="Handwritten: RecursiveAction → parallel side-effects (no return value)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-handwritten.svg" alt="Handwritten: RecursiveAction → parallel side-effects (no return value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-diagram.svg" alt="Diagram: RecursiveAction → parallel side-effects (no return value)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-diagram.svg" alt="Diagram: RecursiveAction → parallel side-effects (no return value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-sticky.svg" alt="Sticky Note: RecursiveAction → parallel side-effects (no return value)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/recursiveaction-parallel-side-effects-no-return-value-sticky.svg" alt="Sticky Note: RecursiveAction → parallel side-effects (no return value)" width="30%">
 </a>
 
 
@@ -2297,14 +2297,14 @@ class ParallelArrayTransform extends RecursiveAction {
 
 ### Common pool
 
-<a href="../../assets/images/diagrams/java/02-concurrency/common-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/common-pool-handwritten.svg" alt="Handwritten: Common pool" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/common-pool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/common-pool-handwritten.svg" alt="Handwritten: Common pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/common-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/common-pool-diagram.svg" alt="Diagram: Common pool" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/common-pool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/common-pool-diagram.svg" alt="Diagram: Common pool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/common-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/common-pool-sticky.svg" alt="Sticky Note: Common pool" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/common-pool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/common-pool-sticky.svg" alt="Sticky Note: Common pool" width="30%">
 </a>
 
 
@@ -2341,14 +2341,14 @@ class CommonPoolDemo {
 
 ### Basic creation and completion
 
-<a href="../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-handwritten.svg" alt="Handwritten: Basic creation and completion" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-handwritten.svg" alt="Handwritten: Basic creation and completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-diagram.svg" alt="Diagram: Basic creation and completion" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-diagram.svg" alt="Diagram: Basic creation and completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-sticky.svg" alt="Sticky Note: Basic creation and completion" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/basic-creation-and-completion-sticky.svg" alt="Sticky Note: Basic creation and completion" width="30%">
 </a>
 
 
@@ -2391,14 +2391,14 @@ class BasicCompletableFutureDemo {
 
 ### Chaining: thenApply, thenAccept, thenRun
 
-<a href="../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-handwritten.svg" alt="Handwritten: Chaining: thenApply, thenAccept, thenRun" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-handwritten.svg" alt="Handwritten: Chaining: thenApply, thenAccept, thenRun" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-diagram.svg" alt="Diagram: Chaining: thenApply, thenAccept, thenRun" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-diagram.svg" alt="Diagram: Chaining: thenApply, thenAccept, thenRun" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-sticky.svg" alt="Sticky Note: Chaining: thenApply, thenAccept, thenRun" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/chaining-thenapply-thenaccept-thenrun-sticky.svg" alt="Sticky Note: Chaining: thenApply, thenAccept, thenRun" width="30%">
 </a>
 
 
@@ -2422,14 +2422,14 @@ class ChainingDemo {
 
 ### thenCompose → flatMap for futures
 
-<a href="../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-handwritten.svg" alt="Handwritten: thenCompose → flatMap for futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-handwritten.svg" alt="Handwritten: thenCompose → flatMap for futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-diagram.svg" alt="Diagram: thenCompose → flatMap for futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-diagram.svg" alt="Diagram: thenCompose → flatMap for futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-sticky.svg" alt="Sticky Note: thenCompose → flatMap for futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thencompose-flatmap-for-futures-sticky.svg" alt="Sticky Note: thenCompose → flatMap for futures" width="30%">
 </a>
 
 
@@ -2464,14 +2464,14 @@ class ThenComposeDemo {
 
 ### thenCombine → combine two independent futures
 
-<a href="../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-handwritten.svg" alt="Handwritten: thenCombine → combine two independent futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-handwritten.svg" alt="Handwritten: thenCombine → combine two independent futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-diagram.svg" alt="Diagram: thenCombine → combine two independent futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-diagram.svg" alt="Diagram: thenCombine → combine two independent futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-sticky.svg" alt="Sticky Note: thenCombine → combine two independent futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/thencombine-combine-two-independent-futures-sticky.svg" alt="Sticky Note: thenCombine → combine two independent futures" width="30%">
 </a>
 
 
@@ -2494,14 +2494,14 @@ class ThenCombineDemo {
 
 ### allOf → wait for multiple futures
 
-<a href="../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-handwritten.svg" alt="Handwritten: allOf → wait for multiple futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-handwritten.svg" alt="Handwritten: allOf → wait for multiple futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-diagram.svg" alt="Diagram: allOf → wait for multiple futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-diagram.svg" alt="Diagram: allOf → wait for multiple futures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-sticky.svg" alt="Sticky Note: allOf → wait for multiple futures" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/allof-wait-for-multiple-futures-sticky.svg" alt="Sticky Note: allOf → wait for multiple futures" width="30%">
 </a>
 
 
@@ -2540,14 +2540,14 @@ class AllOfDemo {
 
 ### anyOf → first result wins
 
-<a href="../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-handwritten.svg" alt="Handwritten: anyOf → first result wins" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-handwritten.svg" alt="Handwritten: anyOf → first result wins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-diagram.svg" alt="Diagram: anyOf → first result wins" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-diagram.svg" alt="Diagram: anyOf → first result wins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-sticky.svg" alt="Sticky Note: anyOf → first result wins" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/anyof-first-result-wins-sticky.svg" alt="Sticky Note: anyOf → first result wins" width="30%">
 </a>
 
 
@@ -2577,14 +2577,14 @@ class AnyOfDemo {
 
 ### exceptionally → error recovery
 
-<a href="../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-handwritten.svg" alt="Handwritten: exceptionally → error recovery" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-handwritten.svg" alt="Handwritten: exceptionally → error recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-diagram.svg" alt="Diagram: exceptionally → error recovery" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-diagram.svg" alt="Diagram: exceptionally → error recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-sticky.svg" alt="Sticky Note: exceptionally → error recovery" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/exceptionally-error-recovery-sticky.svg" alt="Sticky Note: exceptionally → error recovery" width="30%">
 </a>
 
 
@@ -2613,14 +2613,14 @@ class ExceptionallyDemo {
 
 ### handle → recovery regardless of outcome
 
-<a href="../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-handwritten.svg" alt="Handwritten: handle → recovery regardless of outcome" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-handwritten.svg" alt="Handwritten: handle → recovery regardless of outcome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-diagram.svg" alt="Diagram: handle → recovery regardless of outcome" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-diagram.svg" alt="Diagram: handle → recovery regardless of outcome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-sticky.svg" alt="Sticky Note: handle → recovery regardless of outcome" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/handle-recovery-regardless-of-outcome-sticky.svg" alt="Sticky Note: handle → recovery regardless of outcome" width="30%">
 </a>
 
 
@@ -2654,14 +2654,14 @@ class HandleDemo {
 
 ### whenComplete → observe completion
 
-<a href="../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-handwritten.svg" alt="Handwritten: whenComplete → observe completion" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-handwritten.svg" alt="Handwritten: whenComplete → observe completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-diagram.svg" alt="Diagram: whenComplete → observe completion" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-diagram.svg" alt="Diagram: whenComplete → observe completion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-sticky.svg" alt="Sticky Note: whenComplete → observe completion" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/whencomplete-observe-completion-sticky.svg" alt="Sticky Note: whenComplete → observe completion" width="30%">
 </a>
 
 
@@ -2689,14 +2689,14 @@ class WhenCompleteDemo {
 
 ### Timeouts → completeOnTimeout, orTimeout
 
-<a href="../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-handwritten.svg" alt="Handwritten: Timeouts → completeOnTimeout, orTimeout" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-handwritten.svg" alt="Handwritten: Timeouts → completeOnTimeout, orTimeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-diagram.svg" alt="Diagram: Timeouts → completeOnTimeout, orTimeout" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-diagram.svg" alt="Diagram: Timeouts → completeOnTimeout, orTimeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-sticky.svg" alt="Sticky Note: Timeouts → completeOnTimeout, orTimeout" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/timeouts-completeontimeout-ortimeout-sticky.svg" alt="Sticky Note: Timeouts → completeOnTimeout, orTimeout" width="30%">
 </a>
 
 
@@ -2738,14 +2738,14 @@ class TimeoutDemo {
 
 ### CompletableFuture pipeline → full example
 
-<a href="../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-handwritten.svg" alt="Handwritten: CompletableFuture pipeline → full example" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-handwritten.svg" alt="Handwritten: CompletableFuture pipeline → full example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-diagram.svg" alt="Diagram: CompletableFuture pipeline → full example" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-diagram.svg" alt="Diagram: CompletableFuture pipeline → full example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-sticky.svg" alt="Sticky Note: CompletableFuture pipeline → full example" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/completablefuture-pipeline-full-example-sticky.svg" alt="Sticky Note: CompletableFuture pipeline → full example" width="30%">
 </a>
 
 
@@ -2818,14 +2818,14 @@ Virtual threads are lightweight threads managed by the JVM rather than the OS. M
 
 ### Creating virtual threads
 
-<a href="../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-handwritten.svg" alt="Handwritten: Creating virtual threads" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-handwritten.svg" alt="Handwritten: Creating virtual threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-diagram.svg" alt="Diagram: Creating virtual threads" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-diagram.svg" alt="Diagram: Creating virtual threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-sticky.svg" alt="Sticky Note: Creating virtual threads" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/creating-virtual-threads-sticky.svg" alt="Sticky Note: Creating virtual threads" width="30%">
 </a>
 
 
@@ -2869,14 +2869,14 @@ class VirtualThreadCreationDemo {
 
 ### Virtual threads are cheap
 
-<a href="../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-handwritten.svg" alt="Handwritten: Virtual threads are cheap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-handwritten.svg" alt="Handwritten: Virtual threads are cheap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-diagram.svg" alt="Diagram: Virtual threads are cheap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-diagram.svg" alt="Diagram: Virtual threads are cheap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-sticky.svg" alt="Sticky Note: Virtual threads are cheap" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-are-cheap-sticky.svg" alt="Sticky Note: Virtual threads are cheap" width="30%">
 </a>
 
 
@@ -2916,14 +2916,14 @@ class MillionVirtualThreads {
 
 ### Pinng: when virtual threads cannot be unmounted
 
-<a href="../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-handwritten.svg" alt="Handwritten: Pinng: when virtual threads cannot be unmounted" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-handwritten.svg" alt="Handwritten: Pinng: when virtual threads cannot be unmounted" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-diagram.svg" alt="Diagram: Pinng: when virtual threads cannot be unmounted" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-diagram.svg" alt="Diagram: Pinng: when virtual threads cannot be unmounted" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-sticky.svg" alt="Sticky Note: Pinng: when virtual threads cannot be unmounted" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/pinng-when-virtual-threads-cannot-be-unmounted-sticky.svg" alt="Sticky Note: Pinng: when virtual threads cannot be unmounted" width="30%">
 </a>
 
 
@@ -2976,14 +2976,14 @@ class PinningDemo {
 
 ### Carrier threads
 
-<a href="../../assets/images/diagrams/java/02-concurrency/carrier-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/carrier-threads-handwritten.svg" alt="Handwritten: Carrier threads" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/carrier-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/carrier-threads-handwritten.svg" alt="Handwritten: Carrier threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/carrier-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/carrier-threads-diagram.svg" alt="Diagram: Carrier threads" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/carrier-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/carrier-threads-diagram.svg" alt="Diagram: Carrier threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/carrier-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/carrier-threads-sticky.svg" alt="Sticky Note: Carrier threads" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/carrier-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/carrier-threads-sticky.svg" alt="Sticky Note: Carrier threads" width="30%">
 </a>
 
 
@@ -3014,14 +3014,14 @@ class CarrierThreadDemo {
 
 ### Structured concurrency (java 21+)
 
-<a href="../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-handwritten.svg" alt="Handwritten: Structured concurrency (java 21+)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-handwritten.svg" alt="Handwritten: Structured concurrency (java 21+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-diagram.svg" alt="Diagram: Structured concurrency (java 21+)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-diagram.svg" alt="Diagram: Structured concurrency (java 21+)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-sticky.svg" alt="Sticky Note: Structured concurrency (java 21+)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/structured-concurrency-java-21-sticky.svg" alt="Sticky Note: Structured concurrency (java 21+)" width="30%">
 </a>
 
 
@@ -3072,14 +3072,14 @@ class StructuredConcurrencyDemo {
 
 ### StructuredTaskScope.Subtask → collecting results
 
-<a href="../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-handwritten.svg" alt="Handwritten: StructuredTaskScope.Subtask → collecting results" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-handwritten.svg" alt="Handwritten: StructuredTaskScope.Subtask → collecting results" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-diagram.svg" alt="Diagram: StructuredTaskScope.Subtask → collecting results" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-diagram.svg" alt="Diagram: StructuredTaskScope.Subtask → collecting results" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-sticky.svg" alt="Sticky Note: StructuredTaskScope.Subtask → collecting results" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/structuredtaskscope-subtask-collecting-results-sticky.svg" alt="Sticky Note: StructuredTaskScope.Subtask → collecting results" width="30%">
 </a>
 
 
@@ -3128,14 +3128,14 @@ class StructuredTaskScopeCollector {
 
 ### Virtual threads with ThreadLocal
 
-<a href="../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-handwritten.svg" alt="Handwritten: Virtual threads with ThreadLocal" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-handwritten.svg" alt="Handwritten: Virtual threads with ThreadLocal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-diagram.svg" alt="Diagram: Virtual threads with ThreadLocal" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-diagram.svg" alt="Diagram: Virtual threads with ThreadLocal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-sticky.svg" alt="Sticky Note: Virtual threads with ThreadLocal" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/virtual-threads-with-threadlocal-sticky.svg" alt="Sticky Note: Virtual threads with ThreadLocal" width="30%">
 </a>
 
 
@@ -3172,14 +3172,14 @@ class VirtualThreadWithThreadLocal {
 
 ### Annotations
 
-<a href="../../assets/images/diagrams/java/02-concurrency/annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/annotations-handwritten.svg" alt="Handwritten: Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/annotations-handwritten.svg" alt="Handwritten: Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/annotations-diagram.svg" alt="Diagram: Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/annotations-diagram.svg" alt="Diagram: Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/annotations-sticky.svg" alt="Sticky Note: Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/annotations-sticky.svg" alt="Sticky Note: Annotations" width="30%">
 </a>
 
 
@@ -3233,14 +3233,14 @@ class UnsafeListBuilder {
 
 ### Confinement
 
-<a href="../../assets/images/diagrams/java/02-concurrency/confinement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/confinement-handwritten.svg" alt="Handwritten: Confinement" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/confinement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/confinement-handwritten.svg" alt="Handwritten: Confinement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/confinement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/confinement-diagram.svg" alt="Diagram: Confinement" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/confinement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/confinement-diagram.svg" alt="Diagram: Confinement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/confinement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/confinement-sticky.svg" alt="Sticky Note: Confinement" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/confinement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/confinement-sticky.svg" alt="Sticky Note: Confinement" width="30%">
 </a>
 
 
@@ -3274,14 +3274,14 @@ class StackConfinementDemo {
 
 ### ThreadLocal
 
-<a href="../../assets/images/diagrams/java/02-concurrency/threadlocal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/threadlocal-handwritten.svg" alt="Handwritten: ThreadLocal" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/threadlocal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/threadlocal-handwritten.svg" alt="Handwritten: ThreadLocal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/threadlocal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/threadlocal-diagram.svg" alt="Diagram: ThreadLocal" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/threadlocal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/threadlocal-diagram.svg" alt="Diagram: ThreadLocal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/threadlocal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/threadlocal-sticky.svg" alt="Sticky Note: ThreadLocal" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/threadlocal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/threadlocal-sticky.svg" alt="Sticky Note: ThreadLocal" width="30%">
 </a>
 
 
@@ -3368,14 +3368,14 @@ class SimpleDeadlock {
 
 ### Detection → jstack
 
-<a href="../../assets/images/diagrams/java/02-concurrency/detection-jstack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/detection-jstack-handwritten.svg" alt="Handwritten: Detection → jstack" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/detection-jstack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/detection-jstack-handwritten.svg" alt="Handwritten: Detection → jstack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/detection-jstack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/detection-jstack-diagram.svg" alt="Diagram: Detection → jstack" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/detection-jstack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/detection-jstack-diagram.svg" alt="Diagram: Detection → jstack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/detection-jstack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/detection-jstack-sticky.svg" alt="Sticky Note: Detection → jstack" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/detection-jstack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/detection-jstack-sticky.svg" alt="Sticky Note: Detection → jstack" width="30%">
 </a>
 
 
@@ -3398,14 +3398,14 @@ Found one Java-level deadlock:
 
 ### Detection → ThreadMXBean (programmatic)
 
-<a href="../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-handwritten.svg" alt="Handwritten: Detection → ThreadMXBean (programmatic)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-handwritten.svg" alt="Handwritten: Detection → ThreadMXBean (programmatic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-diagram.svg" alt="Diagram: Detection → ThreadMXBean (programmatic)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-diagram.svg" alt="Diagram: Detection → ThreadMXBean (programmatic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-sticky.svg" alt="Sticky Note: Detection → ThreadMXBean (programmatic)" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/detection-threadmxbean-programmatic-sticky.svg" alt="Sticky Note: Detection → ThreadMXBean (programmatic)" width="30%">
 </a>
 
 
@@ -3474,14 +3474,14 @@ class DeadlockDetector {
 
 ### Prevention → lock ordering
 
-<a href="../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-handwritten.svg" alt="Handwritten: Prevention → lock ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-handwritten.svg" alt="Handwritten: Prevention → lock ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-diagram.svg" alt="Diagram: Prevention → lock ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-diagram.svg" alt="Diagram: Prevention → lock ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-sticky.svg" alt="Sticky Note: Prevention → lock ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/prevention-lock-ordering-sticky.svg" alt="Sticky Note: Prevention → lock ordering" width="30%">
 </a>
 
 
@@ -3532,14 +3532,14 @@ class LockOrderingDemo {
 
 ### Prevention → tryLock with timeout
 
-<a href="../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-handwritten.svg" alt="Handwritten: Prevention → tryLock with timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-handwritten.svg" alt="Handwritten: Prevention → tryLock with timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-diagram.svg" alt="Diagram: Prevention → tryLock with timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-diagram.svg" alt="Diagram: Prevention → tryLock with timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-sticky.svg" alt="Sticky Note: Prevention → tryLock with timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/prevention-trylock-with-timeout-sticky.svg" alt="Sticky Note: Prevention → tryLock with timeout" width="30%">
 </a>
 
 
@@ -3594,14 +3594,14 @@ class TryLockDeadlockPrevention {
 
 ### Dining Philosophers
 
-<a href="../../assets/images/diagrams/java/02-concurrency/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
 </a>
 
 
@@ -3819,14 +3819,14 @@ class DiningPhilosophers {
 
 ### 1. Thread-safe Bounded Cache
 
-<a href="../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-handwritten.svg" alt="Handwritten: 1. Thread-safe Bounded Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-handwritten.svg" alt="Handwritten: 1. Thread-safe Bounded Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-diagram.svg" alt="Diagram: 1. Thread-safe Bounded Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-diagram.svg" alt="Diagram: 1. Thread-safe Bounded Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-sticky.svg" alt="Sticky Note: 1. Thread-safe Bounded Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/1-thread-safe-bounded-cache-sticky.svg" alt="Sticky Note: 1. Thread-safe Bounded Cache" width="30%">
 </a>
 
 
@@ -3839,14 +3839,14 @@ class DiningPhilosophers {
 
 ### 2. Parallel File word counter
 
-<a href="../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-handwritten.svg" alt="Handwritten: 2. Parallel File word counter" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-handwritten.svg" alt="Handwritten: 2. Parallel File word counter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-diagram.svg" alt="Diagram: 2. Parallel File word counter" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-diagram.svg" alt="Diagram: 2. Parallel File word counter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-sticky.svg" alt="Sticky Note: 2. Parallel File word counter" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/2-parallel-file-word-counter-sticky.svg" alt="Sticky Note: 2. Parallel File word counter" width="30%">
 </a>
 
 
@@ -3861,14 +3861,14 @@ class DiningPhilosophers {
 
 ### 3. Producer-Consumer with Back-pressure
 
-<a href="../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-handwritten.svg" alt="Handwritten: 3. Producer-Consumer with Back-pressure" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-handwritten.svg" alt="Handwritten: 3. Producer-Consumer with Back-pressure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-diagram.svg" alt="Diagram: 3. Producer-Consumer with Back-pressure" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-diagram.svg" alt="Diagram: 3. Producer-Consumer with Back-pressure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-sticky.svg" alt="Sticky Note: 3. Producer-Consumer with Back-pressure" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/3-producer-consumer-with-back-pressure-sticky.svg" alt="Sticky Note: 3. Producer-Consumer with Back-pressure" width="30%">
 </a>
 
 
@@ -3882,14 +3882,14 @@ class DiningPhilosophers {
 
 ### 4. Deadlock Reproduction and Fix
 
-<a href="../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-handwritten.svg" alt="Handwritten: 4. Deadlock Reproduction and Fix" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-handwritten.svg" alt="Handwritten: 4. Deadlock Reproduction and Fix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-diagram.svg" alt="Diagram: 4. Deadlock Reproduction and Fix" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-diagram.svg" alt="Diagram: 4. Deadlock Reproduction and Fix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-sticky.svg" alt="Sticky Note: 4. Deadlock Reproduction and Fix" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/4-deadlock-reproduction-and-fix-sticky.svg" alt="Sticky Note: 4. Deadlock Reproduction and Fix" width="30%">
 </a>
 
 
@@ -3901,14 +3901,14 @@ class DiningPhilosophers {
 
 ### 5. CompletableFuture Pipeline
 
-<a href="../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-handwritten.svg" alt="Handwritten: 5. CompletableFuture Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-handwritten.svg" alt="Handwritten: 5. CompletableFuture Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-diagram.svg" alt="Diagram: 5. CompletableFuture Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-diagram.svg" alt="Diagram: 5. CompletableFuture Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-sticky.svg" alt="Sticky Note: 5. CompletableFuture Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/5-completablefuture-pipeline-sticky.svg" alt="Sticky Note: 5. CompletableFuture Pipeline" width="30%">
 </a>
 
 
@@ -3923,14 +3923,14 @@ All steps must be non-blocking. Use `thenCompose`, `thenCombine`, and `allOf`. A
 
 ### 6. Virtual Thread Web Scraper
 
-<a href="../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-handwritten.svg" alt="Handwritten: 6. Virtual Thread Web Scraper" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-handwritten.svg" alt="Handwritten: 6. Virtual Thread Web Scraper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-diagram.svg" alt="Diagram: 6. Virtual Thread Web Scraper" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-diagram.svg" alt="Diagram: 6. Virtual Thread Web Scraper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-sticky.svg" alt="Sticky Note: 6. Virtual Thread Web Scraper" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/6-virtual-thread-web-scraper-sticky.svg" alt="Sticky Note: 6. Virtual Thread Web Scraper" width="30%">
 </a>
 
 
@@ -3944,14 +3944,14 @@ All steps must be non-blocking. Use `thenCompose`, `thenCombine`, and `allOf`. A
 
 ### 7. Thread-safe Decorator
 
-<a href="../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-handwritten.svg" alt="Handwritten: 7. Thread-safe Decorator" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-handwritten.svg" alt="Handwritten: 7. Thread-safe Decorator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-diagram.svg" alt="Diagram: 7. Thread-safe Decorator" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-diagram.svg" alt="Diagram: 7. Thread-safe Decorator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-sticky.svg" alt="Sticky Note: 7. Thread-safe Decorator" width="30%">
+<a href="../../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/02-concurrency/7-thread-safe-decorator-sticky.svg" alt="Sticky Note: 7. Thread-safe Decorator" width="30%">
 </a>
 
 

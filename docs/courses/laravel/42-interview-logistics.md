@@ -44,14 +44,14 @@ flowchart LR
 
 ### Q1: What are the core components of a supply chain management system, and how do they interact?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-handwritten.svg" alt="Handwritten: What are the core components of a supply chain management system, and how do they interact?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-handwritten.svg" alt="Handwritten: What are the core components of a supply chain management system, and how do they interact?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-diagram.svg" alt="Diagram: What are the core components of a supply chain management system, and how do they interact?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-diagram.svg" alt="Diagram: What are the core components of a supply chain management system, and how do they interact?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-sticky.svg" alt="Sticky Note: What are the core components of a supply chain management system, and how do they interact?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-are-the-core-components-of-a-supply-chain-management-system-and-how-do-they-interact-sticky.svg" alt="Sticky Note: What are the core components of a supply chain management system, and how do they interact?" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ The `lockForUpdate()` prevents race conditions when multiple requests try to res
 
 ### Q3: What is safety stock, and how do you calculate it?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-handwritten.svg" alt="Handwritten: What is safety stock, and how do you calculate it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-handwritten.svg" alt="Handwritten: What is safety stock, and how do you calculate it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-diagram.svg" alt="Diagram: What is safety stock, and how do you calculate it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-diagram.svg" alt="Diagram: What is safety stock, and how do you calculate it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-sticky.svg" alt="Sticky Note: What is safety stock, and how do you calculate it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-safety-stock-and-how-do-you-calculate-it-sticky.svg" alt="Sticky Note: What is safety stock, and how do you calculate it?" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@ class SafetyStockCalculator
 
 ### Q4: Describe the different transportation modes in logistics and their tradeoffs.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-handwritten.svg" alt="Handwritten: Describe the different transportation modes in logistics and their tradeoffs." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-handwritten.svg" alt="Handwritten: Describe the different transportation modes in logistics and their tradeoffs." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-diagram.svg" alt="Diagram: Describe the different transportation modes in logistics and their tradeoffs." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-diagram.svg" alt="Diagram: Describe the different transportation modes in logistics and their tradeoffs." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-sticky.svg" alt="Sticky Note: Describe the different transportation modes in logistics and their tradeoffs." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-different-transportation-modes-in-logistics-and-their-tradeoffs-sticky.svg" alt="Sticky Note: Describe the different transportation modes in logistics and their tradeoffs." width="30%">
 </a>
 
 
@@ -185,14 +185,14 @@ Laravel logistics platforms often implement a **carrier selection agent** that e
 
 ### Q5: What is the difference between FTL, LTL, and parcel shipping in trucking?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-handwritten.svg" alt="Handwritten: What is the difference between FTL, LTL, and parcel shipping in trucking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-handwritten.svg" alt="Handwritten: What is the difference between FTL, LTL, and parcel shipping in trucking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-diagram.svg" alt="Diagram: What is the difference between FTL, LTL, and parcel shipping in trucking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-diagram.svg" alt="Diagram: What is the difference between FTL, LTL, and parcel shipping in trucking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-sticky.svg" alt="Sticky Note: What is the difference between FTL, LTL, and parcel shipping in trucking?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-the-difference-between-ftl-ltl-and-parcel-shipping-in-trucking-sticky.svg" alt="Sticky Note: What is the difference between FTL, LTL, and parcel shipping in trucking?" width="30%">
 </a>
 
 
@@ -220,14 +220,14 @@ return $rates->sortBy('rate')->values();
 
 ### Q6: What is a Bill of Lading (BOL), and what information does it contain?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-handwritten.svg" alt="Handwritten: What is a Bill of Lading (BOL), and what information does it contain?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-handwritten.svg" alt="Handwritten: What is a Bill of Lading (BOL), and what information does it contain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-diagram.svg" alt="Diagram: What is a Bill of Lading (BOL), and what information does it contain?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-diagram.svg" alt="Diagram: What is a Bill of Lading (BOL), and what information does it contain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-sticky.svg" alt="Sticky Note: What is a Bill of Lading (BOL), and what information does it contain?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/what-is-a-bill-of-lading-bol-and-what-information-does-it-contain-sticky.svg" alt="Sticky Note: What is a Bill of Lading (BOL), and what information does it contain?" width="30%">
 </a>
 
 
@@ -241,14 +241,14 @@ In a Laravel application, BOLs are typically generated as PDFs using Laravel's B
 
 ### Q7: Explain the concept of freight class and how it affects pricing.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-handwritten.svg" alt="Handwritten: Explain the concept of freight class and how it affects pricing." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-handwritten.svg" alt="Handwritten: Explain the concept of freight class and how it affects pricing." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-diagram.svg" alt="Diagram: Explain the concept of freight class and how it affects pricing." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-diagram.svg" alt="Diagram: Explain the concept of freight class and how it affects pricing." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-sticky.svg" alt="Sticky Note: Explain the concept of freight class and how it affects pricing." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/explain-the-concept-of-freight-class-and-how-it-affects-pricing-sticky.svg" alt="Sticky Note: Explain the concept of freight class and how it affects pricing." width="30%">
 </a>
 
 
@@ -268,14 +268,14 @@ $rate = $chargeableWeight * $baseRate * $classMultiplier;
 
 ### Q8: How would you build an inventory prediction agent in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build an inventory prediction agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-handwritten.svg" alt="Handwritten: How would you build an inventory prediction agent in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-diagram.svg" alt="Diagram: How would you build an inventory prediction agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-diagram.svg" alt="Diagram: How would you build an inventory prediction agent in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build an inventory prediction agent in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-agent-in-laravel-sticky.svg" alt="Sticky Note: How would you build an inventory prediction agent in Laravel?" width="30%">
 </a>
 
 
@@ -342,14 +342,14 @@ class InventoryPredictionAgent extends Agent
 
 ### Q9: Implement a route optimization agent that minimizes delivery distance.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-handwritten.svg" alt="Handwritten: Implement a route optimization agent that minimizes delivery distance." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-handwritten.svg" alt="Handwritten: Implement a route optimization agent that minimizes delivery distance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-diagram.svg" alt="Diagram: Implement a route optimization agent that minimizes delivery distance." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-diagram.svg" alt="Diagram: Implement a route optimization agent that minimizes delivery distance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-sticky.svg" alt="Sticky Note: Implement a route optimization agent that minimizes delivery distance." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/implement-a-route-optimization-agent-that-minimizes-delivery-distance-sticky.svg" alt="Sticky Note: Implement a route optimization agent that minimizes delivery distance." width="30%">
 </a>
 
 
@@ -447,14 +447,14 @@ class RouteOptimizationAgent extends Agent
 
 ### Q10: How would you automate shipment tracking with carrier API polling?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-handwritten.svg" alt="Handwritten: How would you automate shipment tracking with carrier API polling?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-handwritten.svg" alt="Handwritten: How would you automate shipment tracking with carrier API polling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-diagram.svg" alt="Diagram: How would you automate shipment tracking with carrier API polling?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-diagram.svg" alt="Diagram: How would you automate shipment tracking with carrier API polling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-sticky.svg" alt="Sticky Note: How would you automate shipment tracking with carrier API polling?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-automate-shipment-tracking-with-carrier-api-polling-sticky.svg" alt="Sticky Note: How would you automate shipment tracking with carrier API polling?" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ The `CarrierAdapterFactory` pattern lets you add new carriers without modifying 
 
 ### Q11: Design a supplier management agent that evaluates and tiers suppliers.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-handwritten.svg" alt="Handwritten: Design a supplier management agent that evaluates and tiers suppliers." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-handwritten.svg" alt="Handwritten: Design a supplier management agent that evaluates and tiers suppliers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-diagram.svg" alt="Diagram: Design a supplier management agent that evaluates and tiers suppliers." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-diagram.svg" alt="Diagram: Design a supplier management agent that evaluates and tiers suppliers." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-sticky.svg" alt="Sticky Note: Design a supplier management agent that evaluates and tiers suppliers." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supplier-management-agent-that-evaluates-and-tiers-suppliers-sticky.svg" alt="Sticky Note: Design a supplier management agent that evaluates and tiers suppliers." width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ class SupplierEvaluationAgent extends Agent
 
 ### Q12: How would you implement a warehouse automation agent for pick/pack optimization?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-handwritten.svg" alt="Handwritten: How would you implement a warehouse automation agent for pick/pack optimization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-handwritten.svg" alt="Handwritten: How would you implement a warehouse automation agent for pick/pack optimization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-diagram.svg" alt="Diagram: How would you implement a warehouse automation agent for pick/pack optimization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-diagram.svg" alt="Diagram: How would you implement a warehouse automation agent for pick/pack optimization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-sticky.svg" alt="Sticky Note: How would you implement a warehouse automation agent for pick/pack optimization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-warehouse-automation-agent-for-pick-pack-optimization-sticky.svg" alt="Sticky Note: How would you implement a warehouse automation agent for pick/pack optimization?" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ class WarehouseAutomationAgent extends Agent
 
 ### Q13: Build a demand forecasting agent with seasonal analysis.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-handwritten.svg" alt="Handwritten: Build a demand forecasting agent with seasonal analysis." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-handwritten.svg" alt="Handwritten: Build a demand forecasting agent with seasonal analysis." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-diagram.svg" alt="Diagram: Build a demand forecasting agent with seasonal analysis." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-diagram.svg" alt="Diagram: Build a demand forecasting agent with seasonal analysis." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-sticky.svg" alt="Sticky Note: Build a demand forecasting agent with seasonal analysis." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/build-a-demand-forecasting-agent-with-seasonal-analysis-sticky.svg" alt="Sticky Note: Build a demand forecasting agent with seasonal analysis." width="30%">
 </a>
 
 
@@ -818,14 +818,14 @@ class DemandForecastAgent extends Agent
 
 ### Q14: How would you implement a fleet management agent for maintenance prediction?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-handwritten.svg" alt="Handwritten: How would you implement a fleet management agent for maintenance prediction?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-handwritten.svg" alt="Handwritten: How would you implement a fleet management agent for maintenance prediction?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-diagram.svg" alt="Diagram: How would you implement a fleet management agent for maintenance prediction?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-diagram.svg" alt="Diagram: How would you implement a fleet management agent for maintenance prediction?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-sticky.svg" alt="Sticky Note: How would you implement a fleet management agent for maintenance prediction?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-implement-a-fleet-management-agent-for-maintenance-prediction-sticky.svg" alt="Sticky Note: How would you implement a fleet management agent for maintenance prediction?" width="30%">
 </a>
 
 
@@ -908,14 +908,14 @@ class FleetManagementAgent extends Agent
 
 ### Q15: Design a supply chain visibility agent that generates executive reports.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-handwritten.svg" alt="Handwritten: Design a supply chain visibility agent that generates executive reports." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-handwritten.svg" alt="Handwritten: Design a supply chain visibility agent that generates executive reports." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-diagram.svg" alt="Diagram: Design a supply chain visibility agent that generates executive reports." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-diagram.svg" alt="Diagram: Design a supply chain visibility agent that generates executive reports." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-sticky.svg" alt="Sticky Note: Design a supply chain visibility agent that generates executive reports." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-supply-chain-visibility-agent-that-generates-executive-reports-sticky.svg" alt="Sticky Note: Design a supply chain visibility agent that generates executive reports." width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ class SupplyChainVisibilityAgent extends Agent
 
 ### Q16: Design a real-time shipment tracking architecture using Laravel.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-handwritten.svg" alt="Handwritten: Design a real-time shipment tracking architecture using Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-handwritten.svg" alt="Handwritten: Design a real-time shipment tracking architecture using Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-diagram.svg" alt="Diagram: Design a real-time shipment tracking architecture using Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-diagram.svg" alt="Diagram: Design a real-time shipment tracking architecture using Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-sticky.svg" alt="Sticky Note: Design a real-time shipment tracking architecture using Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-architecture-using-laravel-sticky.svg" alt="Sticky Note: Design a real-time shipment tracking architecture using Laravel." width="30%">
 </a>
 
 
@@ -1063,14 +1063,14 @@ Cache::put("tracking:{$trackingNumber}", $latestStatus, 300);
 
 ### Q17: How would you architect a scalable order and inventory system that handles flash sales?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-handwritten.svg" alt="Handwritten: How would you architect a scalable order and inventory system that handles flash sales?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-handwritten.svg" alt="Handwritten: How would you architect a scalable order and inventory system that handles flash sales?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-diagram.svg" alt="Diagram: How would you architect a scalable order and inventory system that handles flash sales?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-diagram.svg" alt="Diagram: How would you architect a scalable order and inventory system that handles flash sales?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-sticky.svg" alt="Sticky Note: How would you architect a scalable order and inventory system that handles flash sales?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-architect-a-scalable-order-and-inventory-system-that-handles-flash-sales-sticky.svg" alt="Sticky Note: How would you architect a scalable order and inventory system that handles flash sales?" width="30%">
 </a>
 
 
@@ -1137,14 +1137,14 @@ public function reserveQuick(string $sku, int $qty): bool
 
 ### Q18: Design an IoT data ingestion pipeline for logistics sensor data.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-handwritten.svg" alt="Handwritten: Design an IoT data ingestion pipeline for logistics sensor data." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-handwritten.svg" alt="Handwritten: Design an IoT data ingestion pipeline for logistics sensor data." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-diagram.svg" alt="Diagram: Design an IoT data ingestion pipeline for logistics sensor data." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-diagram.svg" alt="Diagram: Design an IoT data ingestion pipeline for logistics sensor data." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-sticky.svg" alt="Sticky Note: Design an IoT data ingestion pipeline for logistics sensor data." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-an-iot-data-ingestion-pipeline-for-logistics-sensor-data-sticky.svg" alt="Sticky Note: Design an IoT data ingestion pipeline for logistics sensor data." width="30%">
 </a>
 
 
@@ -1232,14 +1232,14 @@ class ProcessTelemetryBatch implements ShouldQueue
 
 ### Q19: How would you design a multi-warehouse inventory allocation system?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-handwritten.svg" alt="Handwritten: How would you design a multi-warehouse inventory allocation system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-handwritten.svg" alt="Handwritten: How would you design a multi-warehouse inventory allocation system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-diagram.svg" alt="Diagram: How would you design a multi-warehouse inventory allocation system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-diagram.svg" alt="Diagram: How would you design a multi-warehouse inventory allocation system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-sticky.svg" alt="Sticky Note: How would you design a multi-warehouse inventory allocation system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-design-a-multi-warehouse-inventory-allocation-system-sticky.svg" alt="Sticky Note: How would you design a multi-warehouse inventory allocation system?" width="30%">
 </a>
 
 
@@ -1283,14 +1283,14 @@ The allocation strategy can be swapped at runtime via Laravel's service containe
 
 ### Q20: How do you handle idempotency in logistics payment and shipment APIs?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-handwritten.svg" alt="Handwritten: How do you handle idempotency in logistics payment and shipment APIs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-handwritten.svg" alt="Handwritten: How do you handle idempotency in logistics payment and shipment APIs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-diagram.svg" alt="Diagram: How do you handle idempotency in logistics payment and shipment APIs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-diagram.svg" alt="Diagram: How do you handle idempotency in logistics payment and shipment APIs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-sticky.svg" alt="Sticky Note: How do you handle idempotency in logistics payment and shipment APIs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-do-you-handle-idempotency-in-logistics-payment-and-shipment-apis-sticky.svg" alt="Sticky Note: How do you handle idempotency in logistics payment and shipment APIs?" width="30%">
 </a>
 
 
@@ -1344,14 +1344,14 @@ The `idempotency_key` is stored in the database with a unique index, ensuring ev
 
 ### Q21: Describe the architecture for a carrier rate shopping system.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-handwritten.svg" alt="Handwritten: Describe the architecture for a carrier rate shopping system." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-handwritten.svg" alt="Handwritten: Describe the architecture for a carrier rate shopping system." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-diagram.svg" alt="Diagram: Describe the architecture for a carrier rate shopping system." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-diagram.svg" alt="Diagram: Describe the architecture for a carrier rate shopping system." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-sticky.svg" alt="Sticky Note: Describe the architecture for a carrier rate shopping system." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/describe-the-architecture-for-a-carrier-rate-shopping-system-sticky.svg" alt="Sticky Note: Describe the architecture for a carrier rate shopping system." width="30%">
 </a>
 
 
@@ -1413,14 +1413,14 @@ Using Laravel's concurrent HTTP client (`Http::pool()`) improves response time b
 
 ### Q22: Design a real-time shipment tracking platform from scratch.
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-handwritten.svg" alt="Handwritten: Design a real-time shipment tracking platform from scratch." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-handwritten.svg" alt="Handwritten: Design a real-time shipment tracking platform from scratch." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-diagram.svg" alt="Diagram: Design a real-time shipment tracking platform from scratch." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-diagram.svg" alt="Diagram: Design a real-time shipment tracking platform from scratch." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-sticky.svg" alt="Sticky Note: Design a real-time shipment tracking platform from scratch." width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/design-a-real-time-shipment-tracking-platform-from-scratch-sticky.svg" alt="Sticky Note: Design a real-time shipment tracking platform from scratch." width="30%">
 </a>
 
 
@@ -1470,14 +1470,14 @@ Echo.private(`shipment.${trackingNumber}`)
 
 ### Q23: How would you build an inventory prediction system that prevents stockouts?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-handwritten.svg" alt="Handwritten: How would you build an inventory prediction system that prevents stockouts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-handwritten.svg" alt="Handwritten: How would you build an inventory prediction system that prevents stockouts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-diagram.svg" alt="Diagram: How would you build an inventory prediction system that prevents stockouts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-diagram.svg" alt="Diagram: How would you build an inventory prediction system that prevents stockouts?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-sticky.svg" alt="Sticky Note: How would you build an inventory prediction system that prevents stockouts?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/how-would-you-build-an-inventory-prediction-system-that-prevents-stockouts-sticky.svg" alt="Sticky Note: How would you build an inventory prediction system that prevents stockouts?" width="30%">
 </a>
 
 
@@ -1604,14 +1604,14 @@ Tenant C ──►            │   (Rate Limiting,    │
 
 ### Q25: Your team is building a last-mile delivery optimization system. How do you approach it?
 
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-handwritten.svg" alt="Handwritten: Your team is building a last-mile delivery optimization system. How do you approach it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-handwritten.svg" alt="Handwritten: Your team is building a last-mile delivery optimization system. How do you approach it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-diagram.svg" alt="Diagram: Your team is building a last-mile delivery optimization system. How do you approach it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-diagram.svg" alt="Diagram: Your team is building a last-mile delivery optimization system. How do you approach it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-sticky.svg" alt="Sticky Note: Your team is building a last-mile delivery optimization system. How do you approach it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/42-interview-logistics/your-team-is-building-a-last-mile-delivery-optimization-system-how-do-you-approach-it-sticky.svg" alt="Sticky Note: Your team is building a last-mile delivery optimization system. How do you approach it?" width="30%">
 </a>
 
 

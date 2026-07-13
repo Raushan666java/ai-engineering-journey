@@ -49,14 +49,14 @@ flowchart LR
 
 ### 1.1 What is a Semaphore?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-handwritten.svg" alt="Handwritten: 1.1 What is a Semaphore?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-handwritten.svg" alt="Handwritten: 1.1 What is a Semaphore?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-diagram.svg" alt="Diagram: 1.1 What is a Semaphore?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-diagram.svg" alt="Diagram: 1.1 What is a Semaphore?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-sticky.svg" alt="Sticky Note: 1.1 What is a Semaphore?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-1-what-is-a-semaphore-sticky.svg" alt="Sticky Note: 1.1 What is a Semaphore?" width="30%">
 </a>
 
 
@@ -258,14 +258,14 @@ print(f"Final value: {shared}")
 
 ### 1.2 Wait (P) and Signal (V) Operations → Deep Dive
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-handwritten.svg" alt="Handwritten: 1.2 Wait (P) and Signal (V) Operations → Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-handwritten.svg" alt="Handwritten: 1.2 Wait (P) and Signal (V) Operations → Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-diagram.svg" alt="Diagram: 1.2 Wait (P) and Signal (V) Operations → Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-diagram.svg" alt="Diagram: 1.2 Wait (P) and Signal (V) Operations → Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-sticky.svg" alt="Sticky Note: 1.2 Wait (P) and Signal (V) Operations → Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-2-wait-p-and-signal-v-operations-deep-dive-sticky.svg" alt="Sticky Note: 1.2 Wait (P) and Signal (V) Operations → Deep Dive" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ Setup: `sem = 1` (binary). Two threads: T1 (producer), T2 (consumer).
 
 ### 1.3 Binary vs Counting Semaphore → Detailed Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-handwritten.svg" alt="Handwritten: 1.3 Binary vs Counting Semaphore → Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-handwritten.svg" alt="Handwritten: 1.3 Binary vs Counting Semaphore → Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-diagram.svg" alt="Diagram: 1.3 Binary vs Counting Semaphore → Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-diagram.svg" alt="Diagram: 1.3 Binary vs Counting Semaphore → Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-sticky.svg" alt="Sticky Note: 1.3 Binary vs Counting Semaphore → Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/1-3-binary-vs-counting-semaphore-detailed-comparison-sticky.svg" alt="Sticky Note: 1.3 Binary vs Counting Semaphore → Detailed Comparison" width="30%">
 </a>
 
 
@@ -457,14 +457,14 @@ A mutex would detect this: unlocking from the wrong thread returns an error or c
 
 ### 3.1 Producer-Consumer (Bounded Buffer)
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-handwritten.svg" alt="Handwritten: 3.1 Producer-Consumer (Bounded Buffer)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-handwritten.svg" alt="Handwritten: 3.1 Producer-Consumer (Bounded Buffer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-diagram.svg" alt="Diagram: 3.1 Producer-Consumer (Bounded Buffer)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-diagram.svg" alt="Diagram: 3.1 Producer-Consumer (Bounded Buffer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-sticky.svg" alt="Sticky Note: 3.1 Producer-Consumer (Bounded Buffer)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-1-producer-consumer-bounded-buffer-sticky.svg" alt="Sticky Note: 3.1 Producer-Consumer (Bounded Buffer)" width="30%">
 </a>
 
 
@@ -721,14 +721,14 @@ for t in threads:
 
 ### 3.2 Readers-Writers Problem
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-handwritten.svg" alt="Handwritten: 3.2 Readers-Writers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-handwritten.svg" alt="Handwritten: 3.2 Readers-Writers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-diagram.svg" alt="Diagram: 3.2 Readers-Writers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-diagram.svg" alt="Diagram: 3.2 Readers-Writers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-sticky.svg" alt="Sticky Note: 3.2 Readers-Writers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-2-readers-writers-problem-sticky.svg" alt="Sticky Note: 3.2 Readers-Writers Problem" width="30%">
 </a>
 
 
@@ -967,14 +967,14 @@ for t in threads: t.join()
 
 ### 3.3 Dining Philosophers Problem
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-handwritten.svg" alt="Handwritten: 3.3 Dining Philosophers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-handwritten.svg" alt="Handwritten: 3.3 Dining Philosophers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-diagram.svg" alt="Diagram: 3.3 Dining Philosophers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-diagram.svg" alt="Diagram: 3.3 Dining Philosophers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-sticky.svg" alt="Sticky Note: 3.3 Dining Philosophers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-3-dining-philosophers-problem-sticky.svg" alt="Sticky Note: 3.3 Dining Philosophers Problem" width="30%">
 </a>
 
 
@@ -1174,14 +1174,14 @@ for t in threads: t.join()
 
 ### 3.4 Sleeping Barber Problem
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-handwritten.svg" alt="Handwritten: 3.4 Sleeping Barber Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-handwritten.svg" alt="Handwritten: 3.4 Sleeping Barber Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-diagram.svg" alt="Diagram: 3.4 Sleeping Barber Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-diagram.svg" alt="Diagram: 3.4 Sleeping Barber Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-sticky.svg" alt="Sticky Note: 3.4 Sleeping Barber Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-4-sleeping-barber-problem-sticky.svg" alt="Sticky Note: 3.4 Sleeping Barber Problem" width="30%">
 </a>
 
 
@@ -1412,14 +1412,14 @@ time.sleep(0.5)
 
 ### 3.5 Cigarette Smokers Problem
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-handwritten.svg" alt="Handwritten: 3.5 Cigarette Smokers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-handwritten.svg" alt="Handwritten: 3.5 Cigarette Smokers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-diagram.svg" alt="Diagram: 3.5 Cigarette Smokers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-diagram.svg" alt="Diagram: 3.5 Cigarette Smokers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-sticky.svg" alt="Sticky Note: 3.5 Cigarette Smokers Problem" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/3-5-cigarette-smokers-problem-sticky.svg" alt="Sticky Note: 3.5 Cigarette Smokers Problem" width="30%">
 </a>
 
 
@@ -1655,14 +1655,14 @@ for t in threads: t.join()
 
 ### 5.1 Monitor Definition and Structure
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-handwritten.svg" alt="Handwritten: 5.1 Monitor Definition and Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-handwritten.svg" alt="Handwritten: 5.1 Monitor Definition and Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-diagram.svg" alt="Diagram: 5.1 Monitor Definition and Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-diagram.svg" alt="Diagram: 5.1 Monitor Definition and Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-sticky.svg" alt="Sticky Note: 5.1 Monitor Definition and Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-1-monitor-definition-and-structure-sticky.svg" alt="Sticky Note: 5.1 Monitor Definition and Structure" width="30%">
 </a>
 
 
@@ -1704,14 +1704,14 @@ monitor MonitorName {
 
 ### 5.2 Condition Variables
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-handwritten.svg" alt="Handwritten: 5.2 Condition Variables" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-handwritten.svg" alt="Handwritten: 5.2 Condition Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-diagram.svg" alt="Diagram: 5.2 Condition Variables" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-diagram.svg" alt="Diagram: 5.2 Condition Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-sticky.svg" alt="Sticky Note: 5.2 Condition Variables" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-2-condition-variables-sticky.svg" alt="Sticky Note: 5.2 Condition Variables" width="30%">
 </a>
 
 
@@ -1729,14 +1729,14 @@ A **condition variable** is a queue of threads waiting for a specific condition 
 
 ### 5.3 Mesa vs Hoare Semantics
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-handwritten.svg" alt="Handwritten: 5.3 Mesa vs Hoare Semantics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-handwritten.svg" alt="Handwritten: 5.3 Mesa vs Hoare Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-diagram.svg" alt="Diagram: 5.3 Mesa vs Hoare Semantics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-diagram.svg" alt="Diagram: 5.3 Mesa vs Hoare Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-sticky.svg" alt="Sticky Note: 5.3 Mesa vs Hoare Semantics" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-3-mesa-vs-hoare-semantics-sticky.svg" alt="Sticky Note: 5.3 Mesa vs Hoare Semantics" width="30%">
 </a>
 
 
@@ -1785,14 +1785,14 @@ Thread A (inside monitor):          Thread B (inside monitor):
 
 ### 5.4 Monitor-based Solutions
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-handwritten.svg" alt="Handwritten: 5.4 Monitor-based Solutions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-handwritten.svg" alt="Handwritten: 5.4 Monitor-based Solutions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-diagram.svg" alt="Diagram: 5.4 Monitor-based Solutions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-diagram.svg" alt="Diagram: 5.4 Monitor-based Solutions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-sticky.svg" alt="Sticky Note: 5.4 Monitor-based Solutions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/5-4-monitor-based-solutions-sticky.svg" alt="Sticky Note: 5.4 Monitor-based Solutions" width="30%">
 </a>
 
 
@@ -2002,14 +2002,14 @@ def writer(id, val):
 
 ### 6.1 Linux Kernel Semaphores
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-handwritten.svg" alt="Handwritten: 6.1 Linux Kernel Semaphores" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-handwritten.svg" alt="Handwritten: 6.1 Linux Kernel Semaphores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-diagram.svg" alt="Diagram: 6.1 Linux Kernel Semaphores" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-diagram.svg" alt="Diagram: 6.1 Linux Kernel Semaphores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-sticky.svg" alt="Sticky Note: 6.1 Linux Kernel Semaphores" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-1-linux-kernel-semaphores-sticky.svg" alt="Sticky Note: 6.1 Linux Kernel Semaphores" width="30%">
 </a>
 
 
@@ -2061,14 +2061,14 @@ complete_all(&comp);  // Signal all current and future waiters
 
 ### 6.2 POSIX Semaphores
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-handwritten.svg" alt="Handwritten: 6.2 POSIX Semaphores" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-handwritten.svg" alt="Handwritten: 6.2 POSIX Semaphores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-diagram.svg" alt="Diagram: 6.2 POSIX Semaphores" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-diagram.svg" alt="Diagram: 6.2 POSIX Semaphores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-sticky.svg" alt="Sticky Note: 6.2 POSIX Semaphores" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-2-posix-semaphores-sticky.svg" alt="Sticky Note: 6.2 POSIX Semaphores" width="30%">
 </a>
 
 
@@ -2101,14 +2101,14 @@ sem_unlink("/mysem");  // Remove when no longer needed
 
 ### 6.3 Java Synchronization: synchronized, wait(), notify()
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-handwritten.svg" alt="Handwritten: 6.3 Java Synchronization: synchronized, wait(), notify()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-handwritten.svg" alt="Handwritten: 6.3 Java Synchronization: synchronized, wait(), notify()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-diagram.svg" alt="Diagram: 6.3 Java Synchronization: synchronized, wait(), notify()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-diagram.svg" alt="Diagram: 6.3 Java Synchronization: synchronized, wait(), notify()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-sticky.svg" alt="Sticky Note: 6.3 Java Synchronization: synchronized, wait(), notify()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-3-java-synchronization-synchronized-wait-notify-sticky.svg" alt="Sticky Note: 6.3 Java Synchronization: synchronized, wait(), notify()" width="30%">
 </a>
 
 
@@ -2213,14 +2213,14 @@ class BoundedBuffer {
 
 ### 6.4 C++ std::condition_variable
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-handwritten.svg" alt="Handwritten: 6.4 C++ std::condition_variable" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-handwritten.svg" alt="Handwritten: 6.4 C++ std::condition_variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-diagram.svg" alt="Diagram: 6.4 C++ std::condition_variable" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-diagram.svg" alt="Diagram: 6.4 C++ std::condition_variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-sticky.svg" alt="Sticky Note: 6.4 C++ std::condition_variable" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/6-4-c-std-condition-variable-sticky.svg" alt="Sticky Note: 6.4 C++ std::condition_variable" width="30%">
 </a>
 
 
@@ -2343,14 +2343,14 @@ int main() {
 
 ### Q1: Can a binary semaphore be used as a mutex?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-handwritten.svg" alt="Handwritten: Can a binary semaphore be used as a mutex?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-handwritten.svg" alt="Handwritten: Can a binary semaphore be used as a mutex?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-diagram.svg" alt="Diagram: Can a binary semaphore be used as a mutex?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-diagram.svg" alt="Diagram: Can a binary semaphore be used as a mutex?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-sticky.svg" alt="Sticky Note: Can a binary semaphore be used as a mutex?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/can-a-binary-semaphore-be-used-as-a-mutex-sticky.svg" alt="Sticky Note: Can a binary semaphore be used as a mutex?" width="30%">
 </a>
 
 
@@ -2368,14 +2368,14 @@ int main() {
 
 ### Q2: What is the difference between a semaphore and a condition variable?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-handwritten.svg" alt="Handwritten: What is the difference between a semaphore and a condition variable?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-handwritten.svg" alt="Handwritten: What is the difference between a semaphore and a condition variable?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-diagram.svg" alt="Diagram: What is the difference between a semaphore and a condition variable?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-diagram.svg" alt="Diagram: What is the difference between a semaphore and a condition variable?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-sticky.svg" alt="Sticky Note: What is the difference between a semaphore and a condition variable?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-a-semaphore-and-a-condition-variable-sticky.svg" alt="Sticky Note: What is the difference between a semaphore and a condition variable?" width="30%">
 </a>
 
 
@@ -2393,14 +2393,14 @@ int main() {
 
 ### Q3: What happens if you reverse the order of wait() operations in bounded buffer?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-handwritten.svg" alt="Handwritten: What happens if you reverse the order of wait() operations in bounded buffer?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-handwritten.svg" alt="Handwritten: What happens if you reverse the order of wait() operations in bounded buffer?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-diagram.svg" alt="Diagram: What happens if you reverse the order of wait() operations in bounded buffer?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-diagram.svg" alt="Diagram: What happens if you reverse the order of wait() operations in bounded buffer?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-sticky.svg" alt="Sticky Note: What happens if you reverse the order of wait() operations in bounded buffer?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-happens-if-you-reverse-the-order-of-wait-operations-in-bounded-buffer-sticky.svg" alt="Sticky Note: What happens if you reverse the order of wait() operations in bounded buffer?" width="30%">
 </a>
 
 
@@ -2420,14 +2420,14 @@ Correct order: `wait(empty)` then `wait(mutex)`.
 
 ### Q4: Why must you use while() not if() with condition variables?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-handwritten.svg" alt="Handwritten: Why must you use while() not if() with condition variables?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-handwritten.svg" alt="Handwritten: Why must you use while() not if() with condition variables?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-diagram.svg" alt="Diagram: Why must you use while() not if() with condition variables?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-diagram.svg" alt="Diagram: Why must you use while() not if() with condition variables?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-sticky.svg" alt="Sticky Note: Why must you use while() not if() with condition variables?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/why-must-you-use-while-not-if-with-condition-variables-sticky.svg" alt="Sticky Note: Why must you use while() not if() with condition variables?" width="30%">
 </a>
 
 
@@ -2448,14 +2448,14 @@ Reasons:
 
 ### Q5: How do you prevent deadlock in the dining philosophers problem?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-handwritten.svg" alt="Handwritten: How do you prevent deadlock in the dining philosophers problem?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-handwritten.svg" alt="Handwritten: How do you prevent deadlock in the dining philosophers problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-diagram.svg" alt="Diagram: How do you prevent deadlock in the dining philosophers problem?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-diagram.svg" alt="Diagram: How do you prevent deadlock in the dining philosophers problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-sticky.svg" alt="Sticky Note: How do you prevent deadlock in the dining philosophers problem?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/how-do-you-prevent-deadlock-in-the-dining-philosophers-problem-sticky.svg" alt="Sticky Note: How do you prevent deadlock in the dining philosophers problem?" width="30%">
 </a>
 
 
@@ -2469,14 +2469,14 @@ Reasons:
 
 ### Q6: What is the difference between notify() and notifyAll()?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-handwritten.svg" alt="Handwritten: What is the difference between notify() and notifyAll()?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-handwritten.svg" alt="Handwritten: What is the difference between notify() and notifyAll()?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-diagram.svg" alt="Diagram: What is the difference between notify() and notifyAll()?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-diagram.svg" alt="Diagram: What is the difference between notify() and notifyAll()?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-sticky.svg" alt="Sticky Note: What is the difference between notify() and notifyAll()?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-the-difference-between-notify-and-notifyall-sticky.svg" alt="Sticky Note: What is the difference between notify() and notifyAll()?" width="30%">
 </a>
 
 
@@ -2491,14 +2491,14 @@ Reasons:
 
 ### Q7: What is a spurious wakeup and how do you handle it?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-handwritten.svg" alt="Handwritten: What is a spurious wakeup and how do you handle it?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-handwritten.svg" alt="Handwritten: What is a spurious wakeup and how do you handle it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-diagram.svg" alt="Diagram: What is a spurious wakeup and how do you handle it?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-diagram.svg" alt="Diagram: What is a spurious wakeup and how do you handle it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-sticky.svg" alt="Sticky Note: What is a spurious wakeup and how do you handle it?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/what-is-a-spurious-wakeup-and-how-do-you-handle-it-sticky.svg" alt="Sticky Note: What is a spurious wakeup and how do you handle it?" width="30%">
 </a>
 
 
@@ -2508,14 +2508,14 @@ A **spurious wakeup** occurs when a thread waiting on a condition variable wakes
 
 ### Q8: Semaphore vs mutex → which is faster?
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-handwritten.svg" alt="Handwritten: Semaphore vs mutex → which is faster?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-handwritten.svg" alt="Handwritten: Semaphore vs mutex → which is faster?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-diagram.svg" alt="Diagram: Semaphore vs mutex → which is faster?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-diagram.svg" alt="Diagram: Semaphore vs mutex → which is faster?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-sticky.svg" alt="Sticky Note: Semaphore vs mutex → which is faster?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/semaphore-vs-mutex-which-is-faster-sticky.svg" alt="Sticky Note: Semaphore vs mutex → which is faster?" width="30%">
 </a>
 
 
@@ -2768,14 +2768,14 @@ console.log('  All philosophers finished eating — no deadlock');
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
 </a>
 
 
@@ -2813,14 +2813,14 @@ console.log('  All philosophers finished eating — no deadlock');
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 
@@ -2854,14 +2854,14 @@ console.log('  All philosophers finished eating — no deadlock');
 
 ### Basic
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -2873,14 +2873,14 @@ console.log('  All philosophers finished eating — no deadlock');
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -2892,14 +2892,14 @@ console.log('  All philosophers finished eating — no deadlock');
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/06-semaphores-monitors/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 

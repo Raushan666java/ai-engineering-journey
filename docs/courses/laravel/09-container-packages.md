@@ -45,14 +45,14 @@ flowchart LR
 
 ### Service Container Deep Dive
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-handwritten.svg" alt="Handwritten: Service Container Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-handwritten.svg" alt="Handwritten: Service Container Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-diagram.svg" alt="Diagram: Service Container Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-diagram.svg" alt="Diagram: Service Container Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-sticky.svg" alt="Sticky Note: Service Container Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-sticky.svg" alt="Sticky Note: Service Container Deep Dive" width="30%">
 </a>
 
 
@@ -127,14 +127,14 @@ $this->app->afterResolving(PaymentGateway::class, function ($gateway, $app) { /*
 
 ### Service Providers
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/service-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/service-providers-handwritten.svg" alt="Handwritten: Service Providers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-handwritten.svg" alt="Handwritten: Service Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/service-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/service-providers-diagram.svg" alt="Diagram: Service Providers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-diagram.svg" alt="Diagram: Service Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/service-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/service-providers-sticky.svg" alt="Sticky Note: Service Providers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-sticky.svg" alt="Sticky Note: Service Providers" width="30%">
 </a>
 
 
@@ -186,14 +186,14 @@ class PaymentServiceProvider extends ServiceProvider implements DeferrableProvid
 
 ### Facades
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/facades-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/facades-handwritten.svg" alt="Handwritten: Facades" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/facades-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/facades-handwritten.svg" alt="Handwritten: Facades" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/facades-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/facades-diagram.svg" alt="Diagram: Facades" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/facades-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/facades-diagram.svg" alt="Diagram: Facades" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/facades-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/facades-sticky.svg" alt="Sticky Note: Facades" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/facades-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/facades-sticky.svg" alt="Sticky Note: Facades" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ Use facades for framework utilities (Cache, Log, Redis). Use DI for custom domai
 
 ### Package Development
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/package-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/package-development-handwritten.svg" alt="Handwritten: Package Development" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/package-development-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/package-development-handwritten.svg" alt="Handwritten: Package Development" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/package-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/package-development-diagram.svg" alt="Diagram: Package Development" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/package-development-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/package-development-diagram.svg" alt="Diagram: Package Development" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/package-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/package-development-sticky.svg" alt="Sticky Note: Package Development" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/package-development-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/package-development-sticky.svg" alt="Sticky Note: Package Development" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ php artisan vendor:publish --tag=analytics-migrations
 
 ### Custom Artisan Commands
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-handwritten.svg" alt="Handwritten: Custom Artisan Commands" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-handwritten.svg" alt="Handwritten: Custom Artisan Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-diagram.svg" alt="Diagram: Custom Artisan Commands" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-diagram.svg" alt="Diagram: Custom Artisan Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-sticky.svg" alt="Sticky Note: Custom Artisan Commands" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-sticky.svg" alt="Sticky Note: Custom Artisan Commands" width="30%">
 </a>
 
 
@@ -386,14 +386,14 @@ Artisan::command('app:cleanup', function () {
 
 ### Scheduled Tasks
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-handwritten.svg" alt="Handwritten: Scheduled Tasks" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-handwritten.svg" alt="Handwritten: Scheduled Tasks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-diagram.svg" alt="Diagram: Scheduled Tasks" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-diagram.svg" alt="Diagram: Scheduled Tasks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-sticky.svg" alt="Sticky Note: Scheduled Tasks" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-sticky.svg" alt="Sticky Note: Scheduled Tasks" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ Requires a shared cache driver (Redis, Memcached, database).
 
 ### Process & Concurrency
 
-<a href="../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-handwritten.svg" alt="Handwritten: Process & Concurrency" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-handwritten.svg" alt="Handwritten: Process & Concurrency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-diagram.svg" alt="Diagram: Process & Concurrency" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-diagram.svg" alt="Diagram: Process & Concurrency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-sticky.svg" alt="Sticky Note: Process & Concurrency" width="30%">
+<a href="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-sticky.svg" alt="Sticky Note: Process & Concurrency" width="30%">
 </a>
 
 

@@ -64,14 +64,14 @@ flowchart LR
 
 ### 5.1 Maximum Subarray Problem
 
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-handwritten.svg" alt="Handwritten: 5.1 Maximum Subarray Problem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-handwritten.svg" alt="Handwritten: 5.1 Maximum Subarray Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-diagram.svg" alt="Diagram: 5.1 Maximum Subarray Problem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-diagram.svg" alt="Diagram: 5.1 Maximum Subarray Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-sticky.svg" alt="Sticky Note: 5.1 Maximum Subarray Problem" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-1-maximum-subarray-problem-sticky.svg" alt="Sticky Note: 5.1 Maximum Subarray Problem" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ Result: \( T(n) = \Theta(n^{\log_b a} \log n) = \Theta(n \log n) \).
 
 ### 5.2 Strassen's Matrix Multiplication
 
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-handwritten.svg" alt="Handwritten: 5.2 Strassen's Matrix Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-handwritten.svg" alt="Handwritten: 5.2 Strassen's Matrix Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-diagram.svg" alt="Diagram: 5.2 Strassen's Matrix Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-diagram.svg" alt="Diagram: 5.2 Strassen's Matrix Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-sticky.svg" alt="Sticky Note: 5.2 Strassen's Matrix Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-2-strassen-s-matrix-multiplication-sticky.svg" alt="Sticky Note: 5.2 Strassen's Matrix Multiplication" width="30%">
 </a>
 
 
@@ -583,14 +583,14 @@ Result: \( T(n) = \Theta(n^{\log_2 7}) = \Theta(n^{2.807}) \).
 
 ### 5.3 Closest Pair of Points
 
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-handwritten.svg" alt="Handwritten: 5.3 Closest Pair of Points" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-handwritten.svg" alt="Handwritten: 5.3 Closest Pair of Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-diagram.svg" alt="Diagram: 5.3 Closest Pair of Points" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-diagram.svg" alt="Diagram: 5.3 Closest Pair of Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-sticky.svg" alt="Sticky Note: 5.3 Closest Pair of Points" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-3-closest-pair-of-points-sticky.svg" alt="Sticky Note: 5.3 Closest Pair of Points" width="30%">
 </a>
 
 
@@ -846,14 +846,14 @@ Result: \( T(n) = \Theta(n \log n) \).
 
 ### 5.4 Karatsuba Multiplication
 
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-handwritten.svg" alt="Handwritten: 5.4 Karatsuba Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-handwritten.svg" alt="Handwritten: 5.4 Karatsuba Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-diagram.svg" alt="Diagram: 5.4 Karatsuba Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-diagram.svg" alt="Diagram: 5.4 Karatsuba Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-sticky.svg" alt="Sticky Note: 5.4 Karatsuba Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-4-karatsuba-multiplication-sticky.svg" alt="Sticky Note: 5.4 Karatsuba Multiplication" width="30%">
 </a>
 
 
@@ -1051,14 +1051,14 @@ Result: \( T(n) = \Theta(n^{\log_2 3}) = \Theta(n^{1.585}) \).
 
 ### 5.5 When Divide and Conquer Fails
 
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-handwritten.svg" alt="Handwritten: 5.5 When Divide and Conquer Fails" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-handwritten.svg" alt="Handwritten: 5.5 When Divide and Conquer Fails" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-diagram.svg" alt="Diagram: 5.5 When Divide and Conquer Fails" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-diagram.svg" alt="Diagram: 5.5 When Divide and Conquer Fails" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-sticky.svg" alt="Sticky Note: 5.5 When Divide and Conquer Fails" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/05-divide-conquer/5-5-when-divide-and-conquer-fails-sticky.svg" alt="Sticky Note: 5.5 When Divide and Conquer Fails" width="30%">
 </a>
 
 

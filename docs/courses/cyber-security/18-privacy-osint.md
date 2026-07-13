@@ -48,14 +48,14 @@ Digital privacy is the ability to control what personal information is collected
 
 ### 1.1 Threat Modeling for Privacy
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-handwritten.svg" alt="Handwritten: 1.1 Threat Modeling for Privacy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-handwritten.svg" alt="Handwritten: 1.1 Threat Modeling for Privacy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-diagram.svg" alt="Diagram: 1.1 Threat Modeling for Privacy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-diagram.svg" alt="Diagram: 1.1 Threat Modeling for Privacy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-sticky.svg" alt="Sticky Note: 1.1 Threat Modeling for Privacy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-1-threat-modeling-for-privacy-sticky.svg" alt="Sticky Note: 1.1 Threat Modeling for Privacy" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ Privacy Risk = (Data Sensitivity × Data Volume × Adversary Capability) / (Priv
 
 ### 1.2 Data Minimization
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-handwritten.svg" alt="Handwritten: 1.2 Data Minimization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-handwritten.svg" alt="Handwritten: 1.2 Data Minimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-diagram.svg" alt="Diagram: 1.2 Data Minimization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-diagram.svg" alt="Diagram: 1.2 Data Minimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-sticky.svg" alt="Sticky Note: 1.2 Data Minimization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-2-data-minimization-sticky.svg" alt="Sticky Note: 1.2 Data Minimization" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ Data minimization is the principle of collecting and sharing only the minimum da
 
 ### 1.3 Metadata
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-handwritten.svg" alt="Handwritten: 1.3 Metadata" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-handwritten.svg" alt="Handwritten: 1.3 Metadata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-diagram.svg" alt="Diagram: 1.3 Metadata" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-diagram.svg" alt="Diagram: 1.3 Metadata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-sticky.svg" alt="Sticky Note: 1.3 Metadata" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-3-metadata-sticky.svg" alt="Sticky Note: 1.3 Metadata" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ Metadata is "data about data" and is often more revealing than content itself:
 
 ### 1.4 Browser Fingerprinting
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-handwritten.svg" alt="Handwritten: 1.4 Browser Fingerprinting" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-handwritten.svg" alt="Handwritten: 1.4 Browser Fingerprinting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-diagram.svg" alt="Diagram: 1.4 Browser Fingerprinting" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-diagram.svg" alt="Diagram: 1.4 Browser Fingerprinting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-sticky.svg" alt="Sticky Note: 1.4 Browser Fingerprinting" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/1-4-browser-fingerprinting-sticky.svg" alt="Sticky Note: 1.4 Browser Fingerprinting" width="30%">
 </a>
 
 
@@ -446,14 +446,14 @@ Tor (The Onion Router) is a decentralized anonymity network that protects agains
 
 ### 2.1 Onion Routing Protocol
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-handwritten.svg" alt="Handwritten: 2.1 Onion Routing Protocol" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-handwritten.svg" alt="Handwritten: 2.1 Onion Routing Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-diagram.svg" alt="Diagram: 2.1 Onion Routing Protocol" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-diagram.svg" alt="Diagram: 2.1 Onion Routing Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-sticky.svg" alt="Sticky Note: 2.1 Onion Routing Protocol" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-1-onion-routing-protocol-sticky.svg" alt="Sticky Note: 2.1 Onion Routing Protocol" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ flowchart TB
 
 ### 2.2 Tor Hidden Services (.onion)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-handwritten.svg" alt="Handwritten: 2.2 Tor Hidden Services (.onion)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-handwritten.svg" alt="Handwritten: 2.2 Tor Hidden Services (.onion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-diagram.svg" alt="Diagram: 2.2 Tor Hidden Services (.onion)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-diagram.svg" alt="Diagram: 2.2 Tor Hidden Services (.onion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-sticky.svg" alt="Sticky Note: 2.2 Tor Hidden Services (.onion)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-2-tor-hidden-services-onion-sticky.svg" alt="Sticky Note: 2.2 Tor Hidden Services (.onion)" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ Hidden services (onion services) allow a server to be reachable without revealin
 
 ### 2.3 Tor Browser vs Tor Daemon
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-handwritten.svg" alt="Handwritten: 2.3 Tor Browser vs Tor Daemon" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-handwritten.svg" alt="Handwritten: 2.3 Tor Browser vs Tor Daemon" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-diagram.svg" alt="Diagram: 2.3 Tor Browser vs Tor Daemon" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-diagram.svg" alt="Diagram: 2.3 Tor Browser vs Tor Daemon" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-sticky.svg" alt="Sticky Note: 2.3 Tor Browser vs Tor Daemon" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-3-tor-browser-vs-tor-daemon-sticky.svg" alt="Sticky Note: 2.3 Tor Browser vs Tor Daemon" width="30%">
 </a>
 
 
@@ -540,14 +540,14 @@ Hidden services (onion services) allow a server to be reachable without revealin
 
 ### 2.4 Bridges & Pluggable Transports
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-handwritten.svg" alt="Handwritten: 2.4 Bridges & Pluggable Transports" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-handwritten.svg" alt="Handwritten: 2.4 Bridges & Pluggable Transports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-diagram.svg" alt="Diagram: 2.4 Bridges & Pluggable Transports" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-diagram.svg" alt="Diagram: 2.4 Bridges & Pluggable Transports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-sticky.svg" alt="Sticky Note: 2.4 Bridges & Pluggable Transports" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/2-4-bridges-pluggable-transports-sticky.svg" alt="Sticky Note: 2.4 Bridges & Pluggable Transports" width="30%">
 </a>
 
 
@@ -611,14 +611,14 @@ Tor relies on a global network of volunteers running relays. Each relay type pla
 
 ### 3.1 Relay Types
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-handwritten.svg" alt="Handwritten: 3.1 Relay Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-handwritten.svg" alt="Handwritten: 3.1 Relay Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-diagram.svg" alt="Diagram: 3.1 Relay Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-diagram.svg" alt="Diagram: 3.1 Relay Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-sticky.svg" alt="Sticky Note: 3.1 Relay Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-1-relay-types-sticky.svg" alt="Sticky Note: 3.1 Relay Types" width="30%">
 </a>
 
 
@@ -637,14 +637,14 @@ Tor relies on a global network of volunteers running relays. Each relay type pla
 
 ### 3.2 Bandwidth Contributions
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-handwritten.svg" alt="Handwritten: 3.2 Bandwidth Contributions" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-handwritten.svg" alt="Handwritten: 3.2 Bandwidth Contributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-diagram.svg" alt="Diagram: 3.2 Bandwidth Contributions" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-diagram.svg" alt="Diagram: 3.2 Bandwidth Contributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-sticky.svg" alt="Sticky Note: 3.2 Bandwidth Contributions" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-2-bandwidth-contributions-sticky.svg" alt="Sticky Note: 3.2 Bandwidth Contributions" width="30%">
 </a>
 
 
@@ -674,14 +674,14 @@ RelayBandwidthBurst 10 MB         # 10 MB/s burst
 
 ### 3.3 Directory Authorities
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-handwritten.svg" alt="Handwritten: 3.3 Directory Authorities" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-handwritten.svg" alt="Handwritten: 3.3 Directory Authorities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-diagram.svg" alt="Diagram: 3.3 Directory Authorities" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-diagram.svg" alt="Diagram: 3.3 Directory Authorities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-sticky.svg" alt="Sticky Note: 3.3 Directory Authorities" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/3-3-directory-authorities-sticky.svg" alt="Sticky Note: 3.3 Directory Authorities" width="30%">
 </a>
 
 
@@ -702,14 +702,14 @@ I2P (Invisible Internet Project) is an anonymous overlay network focused on hidd
 
 ### 4.1 Garlic Routing
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-handwritten.svg" alt="Handwritten: 4.1 Garlic Routing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-handwritten.svg" alt="Handwritten: 4.1 Garlic Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-diagram.svg" alt="Diagram: 4.1 Garlic Routing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-diagram.svg" alt="Diagram: 4.1 Garlic Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-sticky.svg" alt="Sticky Note: 4.1 Garlic Routing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-1-garlic-routing-sticky.svg" alt="Sticky Note: 4.1 Garlic Routing" width="30%">
 </a>
 
 
@@ -748,14 +748,14 @@ flowchart TB
 
 ### 4.2 I2P vs Tor Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-handwritten.svg" alt="Handwritten: 4.2 I2P vs Tor Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-handwritten.svg" alt="Handwritten: 4.2 I2P vs Tor Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-diagram.svg" alt="Diagram: 4.2 I2P vs Tor Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-diagram.svg" alt="Diagram: 4.2 I2P vs Tor Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-sticky.svg" alt="Sticky Note: 4.2 I2P vs Tor Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-2-i2p-vs-tor-comparison-sticky.svg" alt="Sticky Note: 4.2 I2P vs Tor Comparison" width="30%">
 </a>
 
 
@@ -773,14 +773,14 @@ flowchart TB
 
 ### 4.3 Eepsites
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-handwritten.svg" alt="Handwritten: 4.3 Eepsites" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-handwritten.svg" alt="Handwritten: 4.3 Eepsites" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-diagram.svg" alt="Diagram: 4.3 Eepsites" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-diagram.svg" alt="Diagram: 4.3 Eepsites" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-sticky.svg" alt="Sticky Note: 4.3 Eepsites" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-3-eepsites-sticky.svg" alt="Sticky Note: 4.3 Eepsites" width="30%">
 </a>
 
 
@@ -796,14 +796,14 @@ To browse eepsites, users must configure their browser to use the I2P HTTP proxy
 
 ### 4.4 Tunnels
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-handwritten.svg" alt="Handwritten: 4.4 Tunnels" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-handwritten.svg" alt="Handwritten: 4.4 Tunnels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-diagram.svg" alt="Diagram: 4.4 Tunnels" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-diagram.svg" alt="Diagram: 4.4 Tunnels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-sticky.svg" alt="Sticky Note: 4.4 Tunnels" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/4-4-tunnels-sticky.svg" alt="Sticky Note: 4.4 Tunnels" width="30%">
 </a>
 
 
@@ -821,14 +821,14 @@ VPNs (Virtual Private Networks) create an encrypted tunnel between the user and 
 
 ### 5.1 Protocol Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-handwritten.svg" alt="Handwritten: 5.1 Protocol Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-handwritten.svg" alt="Handwritten: 5.1 Protocol Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-diagram.svg" alt="Diagram: 5.1 Protocol Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-diagram.svg" alt="Diagram: 5.1 Protocol Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-sticky.svg" alt="Sticky Note: 5.1 Protocol Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-1-protocol-comparison-sticky.svg" alt="Sticky Note: 5.1 Protocol Comparison" width="30%">
 </a>
 
 
@@ -842,14 +842,14 @@ VPNs (Virtual Private Networks) create an encrypted tunnel between the user and 
 
 ### 5.2 Logging Policies
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-handwritten.svg" alt="Handwritten: 5.2 Logging Policies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-handwritten.svg" alt="Handwritten: 5.2 Logging Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-diagram.svg" alt="Diagram: 5.2 Logging Policies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-diagram.svg" alt="Diagram: 5.2 Logging Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-sticky.svg" alt="Sticky Note: 5.2 Logging Policies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-2-logging-policies-sticky.svg" alt="Sticky Note: 5.2 Logging Policies" width="30%">
 </a>
 
 
@@ -865,14 +865,14 @@ A VPN's privacy guarantee depends entirely on its logging policy. The three cate
 
 ### 5.3 Kill Switch
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-handwritten.svg" alt="Handwritten: 5.3 Kill Switch" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-handwritten.svg" alt="Handwritten: 5.3 Kill Switch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-diagram.svg" alt="Diagram: 5.3 Kill Switch" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-diagram.svg" alt="Diagram: 5.3 Kill Switch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-sticky.svg" alt="Sticky Note: 5.3 Kill Switch" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-3-kill-switch-sticky.svg" alt="Sticky Note: 5.3 Kill Switch" width="30%">
 </a>
 
 
@@ -883,14 +883,14 @@ A kill switch prevents traffic leaking if the VPN connection drops:
 
 ### 5.4 DNS Leak Testing
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-handwritten.svg" alt="Handwritten: 5.4 DNS Leak Testing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-handwritten.svg" alt="Handwritten: 5.4 DNS Leak Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-diagram.svg" alt="Diagram: 5.4 DNS Leak Testing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-diagram.svg" alt="Diagram: 5.4 DNS Leak Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-sticky.svg" alt="Sticky Note: 5.4 DNS Leak Testing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/5-4-dns-leak-testing-sticky.svg" alt="Sticky Note: 5.4 DNS Leak Testing" width="30%">
 </a>
 
 
@@ -1132,14 +1132,14 @@ Operational Security (OPSEC) is the process of protecting sensitive information 
 
 ### 6.1 The OPSEC Process
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-handwritten.svg" alt="Handwritten: 6.1 The OPSEC Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-handwritten.svg" alt="Handwritten: 6.1 The OPSEC Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-diagram.svg" alt="Diagram: 6.1 The OPSEC Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-diagram.svg" alt="Diagram: 6.1 The OPSEC Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-sticky.svg" alt="Sticky Note: 6.1 The OPSEC Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-1-the-opsec-process-sticky.svg" alt="Sticky Note: 6.1 The OPSEC Process" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ Operational Security (OPSEC) is the process of protecting sensitive information 
 
 ### 6.2 Compartmentalization
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-handwritten.svg" alt="Handwritten: 6.2 Compartmentalization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-handwritten.svg" alt="Handwritten: 6.2 Compartmentalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-diagram.svg" alt="Diagram: 6.2 Compartmentalization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-diagram.svg" alt="Diagram: 6.2 Compartmentalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-sticky.svg" alt="Sticky Note: 6.2 Compartmentalization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-2-compartmentalization-sticky.svg" alt="Sticky Note: 6.2 Compartmentalization" width="30%">
 </a>
 
 
@@ -1173,14 +1173,14 @@ Compartmentalization means separating identities, activities, and data so that c
 
 ### 6.3 Cover Identities
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-handwritten.svg" alt="Handwritten: 6.3 Cover Identities" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-handwritten.svg" alt="Handwritten: 6.3 Cover Identities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-diagram.svg" alt="Diagram: 6.3 Cover Identities" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-diagram.svg" alt="Diagram: 6.3 Cover Identities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-sticky.svg" alt="Sticky Note: 6.3 Cover Identities" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-3-cover-identities-sticky.svg" alt="Sticky Note: 6.3 Cover Identities" width="30%">
 </a>
 
 
@@ -1193,14 +1193,14 @@ Building a credible cover identity requires crafting a consistent digital footpr
 
 ### 6.4 Burner Communications
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-handwritten.svg" alt="Handwritten: 6.4 Burner Communications" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-handwritten.svg" alt="Handwritten: 6.4 Burner Communications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-diagram.svg" alt="Diagram: 6.4 Burner Communications" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-diagram.svg" alt="Diagram: 6.4 Burner Communications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-sticky.svg" alt="Sticky Note: 6.4 Burner Communications" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-4-burner-communications-sticky.svg" alt="Sticky Note: 6.4 Burner Communications" width="30%">
 </a>
 
 
@@ -1215,14 +1215,14 @@ Building a credible cover identity requires crafting a consistent digital footpr
 
 ### 6.5 OPSEC Checklist for Journalists
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-handwritten.svg" alt="Handwritten: 6.5 OPSEC Checklist for Journalists" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-handwritten.svg" alt="Handwritten: 6.5 OPSEC Checklist for Journalists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-diagram.svg" alt="Diagram: 6.5 OPSEC Checklist for Journalists" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-diagram.svg" alt="Diagram: 6.5 OPSEC Checklist for Journalists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-sticky.svg" alt="Sticky Note: 6.5 OPSEC Checklist for Journalists" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/6-5-opsec-checklist-for-journalists-sticky.svg" alt="Sticky Note: 6.5 OPSEC Checklist for Journalists" width="30%">
 </a>
 
 
@@ -1266,14 +1266,14 @@ Open-Source Intelligence (OSINT) is the collection and analysis of publicly avai
 
 ### 7.1 The OSINT Intelligence Cycle
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-handwritten.svg" alt="Handwritten: 7.1 The OSINT Intelligence Cycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-handwritten.svg" alt="Handwritten: 7.1 The OSINT Intelligence Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-diagram.svg" alt="Diagram: 7.1 The OSINT Intelligence Cycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-diagram.svg" alt="Diagram: 7.1 The OSINT Intelligence Cycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-sticky.svg" alt="Sticky Note: 7.1 The OSINT Intelligence Cycle" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-1-the-osint-intelligence-cycle-sticky.svg" alt="Sticky Note: 7.1 The OSINT Intelligence Cycle" width="30%">
 </a>
 
 
@@ -1300,14 +1300,14 @@ flowchart TB
 
 ### 7.2 Google Dorking
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-handwritten.svg" alt="Handwritten: 7.2 Google Dorking" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-handwritten.svg" alt="Handwritten: 7.2 Google Dorking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-diagram.svg" alt="Diagram: 7.2 Google Dorking" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-diagram.svg" alt="Diagram: 7.2 Google Dorking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-sticky.svg" alt="Sticky Note: 7.2 Google Dorking" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-2-google-dorking-sticky.svg" alt="Sticky Note: 7.2 Google Dorking" width="30%">
 </a>
 
 
@@ -1345,14 +1345,14 @@ inurl:wp-admin intitle:"WordPress › Login"
 
 ### 7.3 Shodan & Censys
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-handwritten.svg" alt="Handwritten: 7.3 Shodan & Censys" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-handwritten.svg" alt="Handwritten: 7.3 Shodan & Censys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-diagram.svg" alt="Diagram: 7.3 Shodan & Censys" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-diagram.svg" alt="Diagram: 7.3 Shodan & Censys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-sticky.svg" alt="Sticky Note: 7.3 Shodan & Censys" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-3-shodan-censys-sticky.svg" alt="Sticky Note: 7.3 Shodan & Censys" width="30%">
 </a>
 
 
@@ -1370,14 +1370,14 @@ inurl:wp-admin intitle:"WordPress › Login"
 
 ### 7.4 theHarvester, Maltego & Recon-ng
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-handwritten.svg" alt="Handwritten: 7.4 theHarvester, Maltego & Recon-ng" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-handwritten.svg" alt="Handwritten: 7.4 theHarvester, Maltego & Recon-ng" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-diagram.svg" alt="Diagram: 7.4 theHarvester, Maltego & Recon-ng" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-diagram.svg" alt="Diagram: 7.4 theHarvester, Maltego & Recon-ng" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-sticky.svg" alt="Sticky Note: 7.4 theHarvester, Maltego & Recon-ng" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-4-theharvester-maltego-recon-ng-sticky.svg" alt="Sticky Note: 7.4 theHarvester, Maltego & Recon-ng" width="30%">
 </a>
 
 
@@ -1406,14 +1406,14 @@ theHarvester -d example.com -b google,linkedin,bing,yahoo,pgp -l 500
 
 ### 7.5 TypeScript: OSINT Data Aggregator
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-handwritten.svg" alt="Handwritten: 7.5 TypeScript: OSINT Data Aggregator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-handwritten.svg" alt="Handwritten: 7.5 TypeScript: OSINT Data Aggregator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-diagram.svg" alt="Diagram: 7.5 TypeScript: OSINT Data Aggregator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-diagram.svg" alt="Diagram: 7.5 TypeScript: OSINT Data Aggregator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-sticky.svg" alt="Sticky Note: 7.5 TypeScript: OSINT Data Aggregator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/7-5-typescript-osint-data-aggregator-sticky.svg" alt="Sticky Note: 7.5 TypeScript: OSINT Data Aggregator" width="30%">
 </a>
 
 
@@ -1727,14 +1727,14 @@ Social media platforms are among the richest sources of OSINT data: posts, metad
 
 ### 8.1 Twitter API Scraping
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-handwritten.svg" alt="Handwritten: 8.1 Twitter API Scraping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-handwritten.svg" alt="Handwritten: 8.1 Twitter API Scraping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-diagram.svg" alt="Diagram: 8.1 Twitter API Scraping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-diagram.svg" alt="Diagram: 8.1 Twitter API Scraping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-sticky.svg" alt="Sticky Note: 8.1 Twitter API Scraping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-1-twitter-api-scraping-sticky.svg" alt="Sticky Note: 8.1 Twitter API Scraping" width="30%">
 </a>
 
 
@@ -2037,14 +2037,14 @@ Inferred networks:
 
 ### 8.2 LinkedIn Enumeration
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-handwritten.svg" alt="Handwritten: 8.2 LinkedIn Enumeration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-handwritten.svg" alt="Handwritten: 8.2 LinkedIn Enumeration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-diagram.svg" alt="Diagram: 8.2 LinkedIn Enumeration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-diagram.svg" alt="Diagram: 8.2 LinkedIn Enumeration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-sticky.svg" alt="Sticky Note: 8.2 LinkedIn Enumeration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-2-linkedin-enumeration-sticky.svg" alt="Sticky Note: 8.2 LinkedIn Enumeration" width="30%">
 </a>
 
 
@@ -2057,14 +2057,14 @@ LinkedIn is a primary target for OSINT due to career and education details:
 
 ### 8.3 Facebook Graph Search
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-handwritten.svg" alt="Handwritten: 8.3 Facebook Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-handwritten.svg" alt="Handwritten: 8.3 Facebook Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-diagram.svg" alt="Diagram: 8.3 Facebook Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-diagram.svg" alt="Diagram: 8.3 Facebook Graph Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-sticky.svg" alt="Sticky Note: 8.3 Facebook Graph Search" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-3-facebook-graph-search-sticky.svg" alt="Sticky Note: 8.3 Facebook Graph Search" width="30%">
 </a>
 
 
@@ -2077,14 +2077,14 @@ Facebook's Graph API (even with reduced access after Cambridge Analytica) still 
 
 ### 8.4 Instagram Metadata
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-handwritten.svg" alt="Handwritten: 8.4 Instagram Metadata" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-handwritten.svg" alt="Handwritten: 8.4 Instagram Metadata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-diagram.svg" alt="Diagram: 8.4 Instagram Metadata" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-diagram.svg" alt="Diagram: 8.4 Instagram Metadata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-sticky.svg" alt="Sticky Note: 8.4 Instagram Metadata" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/8-4-instagram-metadata-sticky.svg" alt="Sticky Note: 8.4 Instagram Metadata" width="30%">
 </a>
 
 
@@ -2103,14 +2103,14 @@ The dark web refers to overlay networks (primarily Tor, I2P, and Freenet) that a
 
 ### 9.1 Tor Hidden Services in Practice
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-handwritten.svg" alt="Handwritten: 9.1 Tor Hidden Services in Practice" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-handwritten.svg" alt="Handwritten: 9.1 Tor Hidden Services in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-diagram.svg" alt="Diagram: 9.1 Tor Hidden Services in Practice" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-diagram.svg" alt="Diagram: 9.1 Tor Hidden Services in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-sticky.svg" alt="Sticky Note: 9.1 Tor Hidden Services in Practice" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-1-tor-hidden-services-in-practice-sticky.svg" alt="Sticky Note: 9.1 Tor Hidden Services in Practice" width="30%">
 </a>
 
 
@@ -2126,14 +2126,14 @@ Hidden services are used for legitimate privacy reasons (journalist tips via Sec
 
 ### 9.2 Ahmia — Search Engine for Hidden Services
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-handwritten.svg" alt="Handwritten: 9.2 Ahmia — Search Engine for Hidden Services" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-handwritten.svg" alt="Handwritten: 9.2 Ahmia — Search Engine for Hidden Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-diagram.svg" alt="Diagram: 9.2 Ahmia — Search Engine for Hidden Services" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-diagram.svg" alt="Diagram: 9.2 Ahmia — Search Engine for Hidden Services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-sticky.svg" alt="Sticky Note: 9.2 Ahmia — Search Engine for Hidden Services" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-2-ahmia-search-engine-for-hidden-services-sticky.svg" alt="Sticky Note: 9.2 Ahmia — Search Engine for Hidden Services" width="30%">
 </a>
 
 
@@ -2145,14 +2145,14 @@ Ahmia (`ahmia.fi`, accessible at `juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankd
 
 ### 9.3 Illicit Market Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-handwritten.svg" alt="Handwritten: 9.3 Illicit Market Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-handwritten.svg" alt="Handwritten: 9.3 Illicit Market Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-diagram.svg" alt="Diagram: 9.3 Illicit Market Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-diagram.svg" alt="Diagram: 9.3 Illicit Market Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-sticky.svg" alt="Sticky Note: 9.3 Illicit Market Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/9-3-illicit-market-analysis-sticky.svg" alt="Sticky Note: 9.3 Illicit Market Analysis" width="30%">
 </a>
 
 
@@ -2179,14 +2179,14 @@ Email is the most universally used but least secure communication channel. Every
 
 ### 10.1 PGP/GPG Encryption
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-handwritten.svg" alt="Handwritten: 10.1 PGP/GPG Encryption" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-handwritten.svg" alt="Handwritten: 10.1 PGP/GPG Encryption" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-diagram.svg" alt="Diagram: 10.1 PGP/GPG Encryption" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-diagram.svg" alt="Diagram: 10.1 PGP/GPG Encryption" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-sticky.svg" alt="Sticky Note: 10.1 PGP/GPG Encryption" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-1-pgp-gpg-encryption-sticky.svg" alt="Sticky Note: 10.1 PGP/GPG Encryption" width="30%">
 </a>
 
 
@@ -2257,14 +2257,14 @@ gpg --verify message.txt.asc message.txt
 
 ### 10.2 Signal Protocol
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-handwritten.svg" alt="Handwritten: 10.2 Signal Protocol" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-handwritten.svg" alt="Handwritten: 10.2 Signal Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-diagram.svg" alt="Diagram: 10.2 Signal Protocol" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-diagram.svg" alt="Diagram: 10.2 Signal Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-sticky.svg" alt="Sticky Note: 10.2 Signal Protocol" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-2-signal-protocol-sticky.svg" alt="Sticky Note: 10.2 Signal Protocol" width="30%">
 </a>
 
 
@@ -2289,14 +2289,14 @@ Signal (developed by Signal Foundation & Open Whisper Systems) is the gold stand
 
 ### 10.3 OMEMO
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-handwritten.svg" alt="Handwritten: 10.3 OMEMO" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-handwritten.svg" alt="Handwritten: 10.3 OMEMO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-diagram.svg" alt="Diagram: 10.3 OMEMO" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-diagram.svg" alt="Diagram: 10.3 OMEMO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-sticky.svg" alt="Sticky Note: 10.3 OMEMO" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-3-omemo-sticky.svg" alt="Sticky Note: 10.3 OMEMO" width="30%">
 </a>
 
 
@@ -2308,14 +2308,14 @@ OMEMO (XMPP Extension 0384) brings Signal's Double Ratchet to XMPP (Jabber):
 
 ### 10.4 Email Header Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-handwritten.svg" alt="Handwritten: 10.4 Email Header Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-handwritten.svg" alt="Handwritten: 10.4 Email Header Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-diagram.svg" alt="Diagram: 10.4 Email Header Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-diagram.svg" alt="Diagram: 10.4 Email Header Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-sticky.svg" alt="Sticky Note: 10.4 Email Header Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/10-4-email-header-analysis-sticky.svg" alt="Sticky Note: 10.4 Email Header Analysis" width="30%">
 </a>
 
 
@@ -2697,14 +2697,14 @@ Metadata is hidden data embedded in files that can identify creators, locations,
 
 ### 11.1 EXIF Removal (Images)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-handwritten.svg" alt="Handwritten: 11.1 EXIF Removal (Images)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-handwritten.svg" alt="Handwritten: 11.1 EXIF Removal (Images)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-diagram.svg" alt="Diagram: 11.1 EXIF Removal (Images)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-diagram.svg" alt="Diagram: 11.1 EXIF Removal (Images)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-sticky.svg" alt="Sticky Note: 11.1 EXIF Removal (Images)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-1-exif-removal-images-sticky.svg" alt="Sticky Note: 11.1 EXIF Removal (Images)" width="30%">
 </a>
 
 
@@ -2736,14 +2736,14 @@ exiftool -r -all= directory/         # Recursively strip all files in directory
 
 ### 11.2 Document Metadata Removal (MAT)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-handwritten.svg" alt="Handwritten: 11.2 Document Metadata Removal (MAT)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-handwritten.svg" alt="Handwritten: 11.2 Document Metadata Removal (MAT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-diagram.svg" alt="Diagram: 11.2 Document Metadata Removal (MAT)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-diagram.svg" alt="Diagram: 11.2 Document Metadata Removal (MAT)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-sticky.svg" alt="Sticky Note: 11.2 Document Metadata Removal (MAT)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-2-document-metadata-removal-mat-sticky.svg" alt="Sticky Note: 11.2 Document Metadata Removal (MAT)" width="30%">
 </a>
 
 
@@ -2773,14 +2773,14 @@ mat2 --show document.cleaned.docx
 
 ### 11.3 PDF Sanitization
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-handwritten.svg" alt="Handwritten: 11.3 PDF Sanitization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-handwritten.svg" alt="Handwritten: 11.3 PDF Sanitization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-diagram.svg" alt="Diagram: 11.3 PDF Sanitization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-diagram.svg" alt="Diagram: 11.3 PDF Sanitization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-sticky.svg" alt="Sticky Note: 11.3 PDF Sanitization" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/11-3-pdf-sanitization-sticky.svg" alt="Sticky Note: 11.3 PDF Sanitization" width="30%">
 </a>
 
 
@@ -3154,14 +3154,14 @@ Total tags: 13
 
 ### Phase 1: Email Header Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-handwritten.svg" alt="Handwritten: Phase 1: Email Header Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-handwritten.svg" alt="Handwritten: Phase 1: Email Header Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-diagram.svg" alt="Diagram: Phase 1: Email Header Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-diagram.svg" alt="Diagram: Phase 1: Email Header Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-sticky.svg" alt="Sticky Note: Phase 1: Email Header Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-1-email-header-analysis-sticky.svg" alt="Sticky Note: Phase 1: Email Header Analysis" width="30%">
 </a>
 
 
@@ -3172,14 +3172,14 @@ Total tags: 13
 
 ### Phase 2: Domain OSINT
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-handwritten.svg" alt="Handwritten: Phase 2: Domain OSINT" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-handwritten.svg" alt="Handwritten: Phase 2: Domain OSINT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-diagram.svg" alt="Diagram: Phase 2: Domain OSINT" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-diagram.svg" alt="Diagram: Phase 2: Domain OSINT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-sticky.svg" alt="Sticky Note: Phase 2: Domain OSINT" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-2-domain-osint-sticky.svg" alt="Sticky Note: Phase 2: Domain OSINT" width="30%">
 </a>
 
 
@@ -3193,14 +3193,14 @@ Total tags: 13
 
 ### Phase 3: Email Address Tracing
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-handwritten.svg" alt="Handwritten: Phase 3: Email Address Tracing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-handwritten.svg" alt="Handwritten: Phase 3: Email Address Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-diagram.svg" alt="Diagram: Phase 3: Email Address Tracing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-diagram.svg" alt="Diagram: Phase 3: Email Address Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-sticky.svg" alt="Sticky Note: Phase 3: Email Address Tracing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-3-email-address-tracing-sticky.svg" alt="Sticky Note: Phase 3: Email Address Tracing" width="30%">
 </a>
 
 
@@ -3212,14 +3212,14 @@ Using Hunter.io and emailrep.io:
 
 ### Phase 4: Infrastructure Mapping
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-handwritten.svg" alt="Handwritten: Phase 4: Infrastructure Mapping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-handwritten.svg" alt="Handwritten: Phase 4: Infrastructure Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-diagram.svg" alt="Diagram: Phase 4: Infrastructure Mapping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-diagram.svg" alt="Diagram: Phase 4: Infrastructure Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-sticky.svg" alt="Sticky Note: Phase 4: Infrastructure Mapping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-4-infrastructure-mapping-sticky.svg" alt="Sticky Note: Phase 4: Infrastructure Mapping" width="30%">
 </a>
 
 
@@ -3244,14 +3244,14 @@ Attacker Infrastructure:
 
 ### Phase 5: Indicators of Compromise (IOCs)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-handwritten.svg" alt="Handwritten: Phase 5: Indicators of Compromise (IOCs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-handwritten.svg" alt="Handwritten: Phase 5: Indicators of Compromise (IOCs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-diagram.svg" alt="Diagram: Phase 5: Indicators of Compromise (IOCs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-diagram.svg" alt="Diagram: Phase 5: Indicators of Compromise (IOCs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-sticky.svg" alt="Sticky Note: Phase 5: Indicators of Compromise (IOCs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/phase-5-indicators-of-compromise-iocs-sticky.svg" alt="Sticky Note: Phase 5: Indicators of Compromise (IOCs)" width="30%">
 </a>
 
 
@@ -3346,14 +3346,14 @@ Digital privacy, anonymity, and OSINT form a three-legged foundation for secure 
 
 ### Review (Fundamental)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-handwritten.svg" alt="Handwritten: Review (Fundamental)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-handwritten.svg" alt="Handwritten: Review (Fundamental)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-diagram.svg" alt="Diagram: Review (Fundamental)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-diagram.svg" alt="Diagram: Review (Fundamental)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-sticky.svg" alt="Sticky Note: Review (Fundamental)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/review-fundamental-sticky.svg" alt="Sticky Note: Review (Fundamental)" width="30%">
 </a>
 
 
@@ -3365,14 +3365,14 @@ Digital privacy, anonymity, and OSINT form a three-legged foundation for secure 
 
 ### Application (Hands-On)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-handwritten.svg" alt="Handwritten: Application (Hands-On)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-handwritten.svg" alt="Handwritten: Application (Hands-On)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-diagram.svg" alt="Diagram: Application (Hands-On)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-diagram.svg" alt="Diagram: Application (Hands-On)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-sticky.svg" alt="Sticky Note: Application (Hands-On)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/application-hands-on-sticky.svg" alt="Sticky Note: Application (Hands-On)" width="30%">
 </a>
 
 
@@ -3391,14 +3391,14 @@ Digital privacy, anonymity, and OSINT form a three-legged foundation for secure 
 
 ### Challenge (Advanced)
 
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-handwritten.svg" alt="Handwritten: Challenge (Advanced)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-handwritten.svg" alt="Handwritten: Challenge (Advanced)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-diagram.svg" alt="Diagram: Challenge (Advanced)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-diagram.svg" alt="Diagram: Challenge (Advanced)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-sticky.svg" alt="Sticky Note: Challenge (Advanced)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/18-privacy-osint/challenge-advanced-sticky.svg" alt="Sticky Note: Challenge (Advanced)" width="30%">
 </a>
 
 

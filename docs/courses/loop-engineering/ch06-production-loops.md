@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 6.1 Production Deployment Pipeline
 
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-handwritten.svg" alt="Handwritten: 6.1 Production Deployment Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-handwritten.svg" alt="Handwritten: 6.1 Production Deployment Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-diagram.svg" alt="Diagram: 6.1 Production Deployment Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-diagram.svg" alt="Diagram: 6.1 Production Deployment Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-sticky.svg" alt="Sticky Note: 6.1 Production Deployment Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-sticky.svg" alt="Sticky Note: 6.1 Production Deployment Pipeline" width="30%">
 </a>
 
 
@@ -53,14 +53,14 @@ Each phase has specific responsibilities:
 
 ### 6.2 Shadow and Canary Deployment
 
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-handwritten.svg" alt="Handwritten: 6.2 Shadow and Canary Deployment" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-handwritten.svg" alt="Handwritten: 6.2 Shadow and Canary Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-diagram.svg" alt="Diagram: 6.2 Shadow and Canary Deployment" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-diagram.svg" alt="Diagram: 6.2 Shadow and Canary Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-sticky.svg" alt="Sticky Note: 6.2 Shadow and Canary Deployment" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-sticky.svg" alt="Sticky Note: 6.2 Shadow and Canary Deployment" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ Traffic: [████████████████░░░░] 80% prod
 
 ### 6.3 Cost Governor Loops
 
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-handwritten.svg" alt="Handwritten: 6.3 Cost Governor Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-handwritten.svg" alt="Handwritten: 6.3 Cost Governor Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-diagram.svg" alt="Diagram: 6.3 Cost Governor Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-diagram.svg" alt="Diagram: 6.3 Cost Governor Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-sticky.svg" alt="Sticky Note: 6.3 Cost Governor Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-sticky.svg" alt="Sticky Note: 6.3 Cost Governor Loops" width="30%">
 </a>
 
 
@@ -121,14 +121,14 @@ Agent loops can execute hundreds of LLM calls per task. Without a cost governor,
 
 ### 6.4 Observability Loops
 
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-handwritten.svg" alt="Handwritten: 6.4 Observability Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-handwritten.svg" alt="Handwritten: 6.4 Observability Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-diagram.svg" alt="Diagram: 6.4 Observability Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-diagram.svg" alt="Diagram: 6.4 Observability Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-sticky.svg" alt="Sticky Note: 6.4 Observability Loops" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-sticky.svg" alt="Sticky Note: 6.4 Observability Loops" width="30%">
 </a>
 
 
@@ -150,14 +150,14 @@ Observability for AI systems goes beyond traditional application monitoring. The
 
 ### 6.5 SRE for AI Systems
 
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-handwritten.svg" alt="Handwritten: 6.5 SRE for AI Systems" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-handwritten.svg" alt="Handwritten: 6.5 SRE for AI Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-diagram.svg" alt="Diagram: 6.5 SRE for AI Systems" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-diagram.svg" alt="Diagram: 6.5 SRE for AI Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-sticky.svg" alt="Sticky Note: 6.5 SRE for AI Systems" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-sticky.svg" alt="Sticky Note: 6.5 SRE for AI Systems" width="30%">
 </a>
 
 

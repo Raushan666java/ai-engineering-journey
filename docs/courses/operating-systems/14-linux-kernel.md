@@ -77,14 +77,14 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ Think of the Linux kernel as **a car factory with modular assembly lines**:
 
 ### Monolithic vs Modular: Deep Dive
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-handwritten.svg" alt="Handwritten: Monolithic vs Modular: Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-handwritten.svg" alt="Handwritten: Monolithic vs Modular: Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-diagram.svg" alt="Diagram: Monolithic vs Modular: Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-diagram.svg" alt="Diagram: Monolithic vs Modular: Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-sticky.svg" alt="Sticky Note: Monolithic vs Modular: Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/monolithic-vs-modular-deep-dive-sticky.svg" alt="Sticky Note: Monolithic vs Modular: Deep Dive" width="30%">
 </a>
 
 
@@ -123,14 +123,14 @@ Linux is a **monolithic kernel** (all core services run in kernel space) with **
 
 ### Kernel Space vs User Space
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-handwritten.svg" alt="Handwritten: Kernel Space vs User Space" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-handwritten.svg" alt="Handwritten: Kernel Space vs User Space" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-diagram.svg" alt="Diagram: Kernel Space vs User Space" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-diagram.svg" alt="Diagram: Kernel Space vs User Space" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-sticky.svg" alt="Sticky Note: Kernel Space vs User Space" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-space-vs-user-space-sticky.svg" alt="Sticky Note: Kernel Space vs User Space" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ Linux is a **monolithic kernel** (all core services run in kernel space) with **
 
 ### Kernel Subsystem Map
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-handwritten.svg" alt="Handwritten: Kernel Subsystem Map" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-handwritten.svg" alt="Handwritten: Kernel Subsystem Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-diagram.svg" alt="Diagram: Kernel Subsystem Map" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-diagram.svg" alt="Diagram: Kernel Subsystem Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-sticky.svg" alt="Sticky Note: Kernel Subsystem Map" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-subsystem-map-sticky.svg" alt="Sticky Note: Kernel Subsystem Map" width="30%">
 </a>
 
 
@@ -191,14 +191,14 @@ Linux is a **monolithic kernel** (all core services run in kernel space) with **
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ Linux is a **monolithic kernel** (all core services run in kernel space) with **
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -237,14 +237,14 @@ Linux is a **monolithic kernel** (all core services run in kernel space) with **
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ A **task_struct** is like a **hospital patient record**:
 
 ### task_struct: The Process Control Block
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-handwritten.svg" alt="Handwritten: task_struct: The Process Control Block" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-handwritten.svg" alt="Handwritten: task_struct: The Process Control Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-diagram.svg" alt="Diagram: task_struct: The Process Control Block" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-diagram.svg" alt="Diagram: task_struct: The Process Control Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-sticky.svg" alt="Sticky Note: task_struct: The Process Control Block" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/task-struct-the-process-control-block-sticky.svg" alt="Sticky Note: task_struct: The Process Control Block" width="30%">
 </a>
 
 
@@ -338,14 +338,14 @@ struct task_struct {
 
 ### Process States in Linux
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-handwritten.svg" alt="Handwritten: Process States in Linux" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-handwritten.svg" alt="Handwritten: Process States in Linux" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-diagram.svg" alt="Diagram: Process States in Linux" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-diagram.svg" alt="Diagram: Process States in Linux" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-sticky.svg" alt="Sticky Note: Process States in Linux" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/process-states-in-linux-sticky.svg" alt="Sticky Note: Process States in Linux" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ struct task_struct {
 
 ### State Transition Diagram
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-handwritten.svg" alt="Handwritten: State Transition Diagram" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-handwritten.svg" alt="Handwritten: State Transition Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-diagram.svg" alt="Diagram: State Transition Diagram" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-diagram.svg" alt="Diagram: State Transition Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-sticky.svg" alt="Sticky Note: State Transition Diagram" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/state-transition-diagram-sticky.svg" alt="Sticky Note: State Transition Diagram" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ struct task_struct {
 
 ### The clone() System Call
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-handwritten.svg" alt="Handwritten: The clone() System Call" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-handwritten.svg" alt="Handwritten: The clone() System Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-diagram.svg" alt="Diagram: The clone() System Call" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-diagram.svg" alt="Diagram: The clone() System Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-sticky.svg" alt="Sticky Note: The clone() System Call" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/the-clone-system-call-sticky.svg" alt="Sticky Note: The clone() System Call" width="30%">
 </a>
 
 
@@ -481,14 +481,14 @@ pid_t clone(int (*fn)(void *), void *child_stack, int flags, void *arg, ...);
 
 ### Kernel Threads
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-handwritten.svg" alt="Handwritten: Kernel Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-handwritten.svg" alt="Handwritten: Kernel Threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-diagram.svg" alt="Diagram: Kernel Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-diagram.svg" alt="Diagram: Kernel Threads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-sticky.svg" alt="Sticky Note: Kernel Threads" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-threads-sticky.svg" alt="Sticky Note: Kernel Threads" width="30%">
 </a>
 
 
@@ -506,14 +506,14 @@ struct task_struct *kthread_create(int (*threadfn)(void *data),
 
 ### Complexity Analysis of fork()
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-handwritten.svg" alt="Handwritten: Complexity Analysis of fork()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-handwritten.svg" alt="Handwritten: Complexity Analysis of fork()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-diagram.svg" alt="Diagram: Complexity Analysis of fork()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-diagram.svg" alt="Diagram: Complexity Analysis of fork()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-sticky.svg" alt="Sticky Note: Complexity Analysis of fork()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-of-fork-sticky.svg" alt="Sticky Note: Complexity Analysis of fork()" width="30%">
 </a>
 
 
@@ -527,14 +527,14 @@ struct task_struct *kthread_create(int (*threadfn)(void *data),
 
 ### Edge Cases in Process Management
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-handwritten.svg" alt="Handwritten: Edge Cases in Process Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-handwritten.svg" alt="Handwritten: Edge Cases in Process Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-diagram.svg" alt="Diagram: Edge Cases in Process Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-diagram.svg" alt="Diagram: Edge Cases in Process Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-sticky.svg" alt="Sticky Note: Edge Cases in Process Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-process-management-sticky.svg" alt="Sticky Note: Edge Cases in Process Management" width="30%">
 </a>
 
 
@@ -552,14 +552,14 @@ struct task_struct *kthread_create(int (*threadfn)(void *data),
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -574,14 +574,14 @@ CFS is like a **round-robin pizza party** where:
 
 ### CFS Core Concepts
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-handwritten.svg" alt="Handwritten: CFS Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-handwritten.svg" alt="Handwritten: CFS Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-diagram.svg" alt="Diagram: CFS Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-diagram.svg" alt="Diagram: CFS Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-sticky.svg" alt="Sticky Note: CFS Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-core-concepts-sticky.svg" alt="Sticky Note: CFS Core Concepts" width="30%">
 </a>
 
 
@@ -597,14 +597,14 @@ CFS (`kernel/sched/fair.c`, by Ingo Molnar, 2007) replaced the O(1) scheduler. I
 
 ### nice Value Weight Table
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-handwritten.svg" alt="Handwritten: nice Value Weight Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-handwritten.svg" alt="Handwritten: nice Value Weight Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-diagram.svg" alt="Diagram: nice Value Weight Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-diagram.svg" alt="Diagram: nice Value Weight Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-sticky.svg" alt="Sticky Note: nice Value Weight Table" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/nice-value-weight-table-sticky.svg" alt="Sticky Note: nice Value Weight Table" width="30%">
 </a>
 
 
@@ -620,14 +620,14 @@ CFS (`kernel/sched/fair.c`, by Ingo Molnar, 2007) replaced the O(1) scheduler. I
 
 ### CFS Red-Black Tree
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-handwritten.svg" alt="Handwritten: CFS Red-Black Tree" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-handwritten.svg" alt="Handwritten: CFS Red-Black Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-diagram.svg" alt="Diagram: CFS Red-Black Tree" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-diagram.svg" alt="Diagram: CFS Red-Black Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-sticky.svg" alt="Sticky Note: CFS Red-Black Tree" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-red-black-tree-sticky.svg" alt="Sticky Note: CFS Red-Black Tree" width="30%">
 </a>
 
 
@@ -656,14 +656,14 @@ Properties:
 
 ### CFS Scheduling Tick Pseudocode
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-handwritten.svg" alt="Handwritten: CFS Scheduling Tick Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-handwritten.svg" alt="Handwritten: CFS Scheduling Tick Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-diagram.svg" alt="Diagram: CFS Scheduling Tick Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-diagram.svg" alt="Diagram: CFS Scheduling Tick Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-sticky.svg" alt="Sticky Note: CFS Scheduling Tick Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-scheduling-tick-pseudocode-sticky.svg" alt="Sticky Note: CFS Scheduling Tick Pseudocode" width="30%">
 </a>
 
 
@@ -690,14 +690,14 @@ pick_next_task_fair():
 
 ### Dry Run: Three Processes Under CFS
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-handwritten.svg" alt="Handwritten: Dry Run: Three Processes Under CFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-handwritten.svg" alt="Handwritten: Dry Run: Three Processes Under CFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-diagram.svg" alt="Diagram: Dry Run: Three Processes Under CFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-diagram.svg" alt="Diagram: Dry Run: Three Processes Under CFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-sticky.svg" alt="Sticky Note: Dry Run: Three Processes Under CFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dry-run-three-processes-under-cfs-sticky.svg" alt="Sticky Note: Dry Run: Three Processes Under CFS" width="30%">
 </a>
 
 
@@ -715,14 +715,14 @@ Each process gets exactly 6.67ms per round (20ms / 3 processes). Perfect fairnes
 
 ### CFS with Different Nice Values
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-handwritten.svg" alt="Handwritten: CFS with Different Nice Values" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-handwritten.svg" alt="Handwritten: CFS with Different Nice Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-diagram.svg" alt="Diagram: CFS with Different Nice Values" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-diagram.svg" alt="Diagram: CFS with Different Nice Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-sticky.svg" alt="Sticky Note: CFS with Different Nice Values" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cfs-with-different-nice-values-sticky.svg" alt="Sticky Note: CFS with Different Nice Values" width="30%">
 </a>
 
 
@@ -738,14 +738,14 @@ B gets 16.4ms vs A gets 5ms (B weight 3355 vs A weight 1024 = 3.3x ratio). That 
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -760,14 +760,14 @@ B gets 16.4ms vs A gets 5ms (B weight 3355 vs A weight 1024 = 3.3x ratio). That 
 
 ### Edge Cases in CFS
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-handwritten.svg" alt="Handwritten: Edge Cases in CFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-handwritten.svg" alt="Handwritten: Edge Cases in CFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-diagram.svg" alt="Diagram: Edge Cases in CFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-diagram.svg" alt="Diagram: Edge Cases in CFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-sticky.svg" alt="Sticky Note: Edge Cases in CFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cfs-sticky.svg" alt="Sticky Note: Edge Cases in CFS" width="30%">
 </a>
 
 
@@ -781,14 +781,14 @@ B gets 16.4ms vs A gets 5ms (B weight 3355 vs A weight 1024 = 3.3x ratio). That 
 
 ### User-Space View: sched_setscheduler()
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-handwritten.svg" alt="Handwritten: User-Space View: sched_setscheduler()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-handwritten.svg" alt="Handwritten: User-Space View: sched_setscheduler()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-diagram.svg" alt="Diagram: User-Space View: sched_setscheduler()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-diagram.svg" alt="Diagram: User-Space View: sched_setscheduler()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-sticky.svg" alt="Sticky Note: User-Space View: sched_setscheduler()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/user-space-view-sched-setscheduler-sticky.svg" alt="Sticky Note: User-Space View: sched_setscheduler()" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ print(f"PID {pid} min/max RT priority: "
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -855,14 +855,14 @@ Linux memory management is like **a warehouse logistics system**:
 
 ### Memory Allocation Hierarchy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-handwritten.svg" alt="Handwritten: Memory Allocation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-handwritten.svg" alt="Handwritten: Memory Allocation Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-diagram.svg" alt="Diagram: Memory Allocation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-diagram.svg" alt="Diagram: Memory Allocation Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-sticky.svg" alt="Sticky Note: Memory Allocation Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/memory-allocation-hierarchy-sticky.svg" alt="Sticky Note: Memory Allocation Hierarchy" width="30%">
 </a>
 
 
@@ -906,14 +906,14 @@ Linux memory management is like **a warehouse logistics system**:
 
 ### Buddy Allocator
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-handwritten.svg" alt="Handwritten: Buddy Allocator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-handwritten.svg" alt="Handwritten: Buddy Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-diagram.svg" alt="Diagram: Buddy Allocator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-diagram.svg" alt="Diagram: Buddy Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-sticky.svg" alt="Sticky Note: Buddy Allocator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/buddy-allocator-sticky.svg" alt="Sticky Note: Buddy Allocator" width="30%">
 </a>
 
 
@@ -1000,14 +1000,14 @@ State after free: order 2 empty, order 3 has [8-15]
 
 ### SLAB/SLUB Allocator
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-handwritten.svg" alt="Handwritten: SLAB/SLUB Allocator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-handwritten.svg" alt="Handwritten: SLAB/SLUB Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-diagram.svg" alt="Diagram: SLAB/SLUB Allocator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-diagram.svg" alt="Diagram: SLAB/SLUB Allocator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-sticky.svg" alt="Sticky Note: SLAB/SLUB Allocator" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/slab-slub-allocator-sticky.svg" alt="Sticky Note: SLAB/SLUB Allocator" width="30%">
 </a>
 
 
@@ -1074,14 +1074,14 @@ kmem_cache_destroy(cache);
 
 ### Kernel Same-Page Merging (KSM)
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-handwritten.svg" alt="Handwritten: Kernel Same-Page Merging (KSM)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-handwritten.svg" alt="Handwritten: Kernel Same-Page Merging (KSM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-diagram.svg" alt="Diagram: Kernel Same-Page Merging (KSM)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-diagram.svg" alt="Diagram: Kernel Same-Page Merging (KSM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-sticky.svg" alt="Sticky Note: Kernel Same-Page Merging (KSM)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/kernel-same-page-merging-ksm-sticky.svg" alt="Sticky Note: Kernel Same-Page Merging (KSM)" width="30%">
 </a>
 
 
@@ -1098,14 +1098,14 @@ $ cat /sys/kernel/mm/ksm/pages_shared            # merged pages
 
 ### OOM Killer
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-handwritten.svg" alt="Handwritten: OOM Killer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-handwritten.svg" alt="Handwritten: OOM Killer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-diagram.svg" alt="Diagram: OOM Killer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-diagram.svg" alt="Diagram: OOM Killer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-sticky.svg" alt="Sticky Note: OOM Killer" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/oom-killer-sticky.svg" alt="Sticky Note: OOM Killer" width="30%">
 </a>
 
 
@@ -1149,14 +1149,14 @@ $ echo 1000 > /proc/$(pidof memory_hog)/oom_score_adj
 
 ### Edge Cases in Memory Management
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-handwritten.svg" alt="Handwritten: Edge Cases in Memory Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-handwritten.svg" alt="Handwritten: Edge Cases in Memory Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-diagram.svg" alt="Diagram: Edge Cases in Memory Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-diagram.svg" alt="Diagram: Edge Cases in Memory Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-sticky.svg" alt="Sticky Note: Edge Cases in Memory Management" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-memory-management-sticky.svg" alt="Sticky Note: Edge Cases in Memory Management" width="30%">
 </a>
 
 
@@ -1173,14 +1173,14 @@ $ echo 1000 > /proc/$(pidof memory_hog)/oom_score_adj
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1196,14 +1196,14 @@ No matter who delivers the mail (ext4, XFS, NFS), the postal worker uses the sam
 
 ### VFS Object Model
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-handwritten.svg" alt="Handwritten: VFS Object Model" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-handwritten.svg" alt="Handwritten: VFS Object Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-diagram.svg" alt="Diagram: VFS Object Model" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-diagram.svg" alt="Diagram: VFS Object Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-sticky.svg" alt="Sticky Note: VFS Object Model" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-object-model-sticky.svg" alt="Sticky Note: VFS Object Model" width="30%">
 </a>
 
 
@@ -1262,14 +1262,14 @@ struct file {
 
 ### System Call Flow: read()
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-handwritten.svg" alt="Handwritten: System Call Flow: read()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-handwritten.svg" alt="Handwritten: System Call Flow: read()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-diagram.svg" alt="Diagram: System Call Flow: read()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-diagram.svg" alt="Diagram: System Call Flow: read()" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-sticky.svg" alt="Sticky Note: System Call Flow: read()" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/system-call-flow-read-sticky.svg" alt="Sticky Note: System Call Flow: read()" width="30%">
 </a>
 
 
@@ -1320,14 +1320,14 @@ User space:                        Kernel space:
 
 ### VFS Path Walk: /home/user/docs/file.txt
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-handwritten.svg" alt="Handwritten: VFS Path Walk: /home/user/docs/file.txt" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-handwritten.svg" alt="Handwritten: VFS Path Walk: /home/user/docs/file.txt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-diagram.svg" alt="Diagram: VFS Path Walk: /home/user/docs/file.txt" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-diagram.svg" alt="Diagram: VFS Path Walk: /home/user/docs/file.txt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-sticky.svg" alt="Sticky Note: VFS Path Walk: /home/user/docs/file.txt" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-path-walk-home-user-docs-file-txt-sticky.svg" alt="Sticky Note: VFS Path Walk: /home/user/docs/file.txt" width="30%">
 </a>
 
 
@@ -1355,14 +1355,14 @@ Step 6: Open: dentry->d_inode->i_fop->open()
 
 ### Dentry Cache (dcache)
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-handwritten.svg" alt="Handwritten: Dentry Cache (dcache)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-handwritten.svg" alt="Handwritten: Dentry Cache (dcache)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-diagram.svg" alt="Diagram: Dentry Cache (dcache)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-diagram.svg" alt="Diagram: Dentry Cache (dcache)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-sticky.svg" alt="Sticky Note: Dentry Cache (dcache)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/dentry-cache-dcache-sticky.svg" alt="Sticky Note: Dentry Cache (dcache)" width="30%">
 </a>
 
 
@@ -1385,14 +1385,14 @@ Each dentry has:
 
 ### VFS Complexity Analysis
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-handwritten.svg" alt="Handwritten: VFS Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-handwritten.svg" alt="Handwritten: VFS Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-diagram.svg" alt="Diagram: VFS Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-diagram.svg" alt="Diagram: VFS Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-sticky.svg" alt="Sticky Note: VFS Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/vfs-complexity-analysis-sticky.svg" alt="Sticky Note: VFS Complexity Analysis" width="30%">
 </a>
 
 
@@ -1406,14 +1406,14 @@ Each dentry has:
 
 ### Edge Cases in VFS
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-handwritten.svg" alt="Handwritten: Edge Cases in VFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-handwritten.svg" alt="Handwritten: Edge Cases in VFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-diagram.svg" alt="Diagram: Edge Cases in VFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-diagram.svg" alt="Diagram: Edge Cases in VFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-sticky.svg" alt="Sticky Note: Edge Cases in VFS" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-vfs-sticky.svg" alt="Sticky Note: Edge Cases in VFS" width="30%">
 </a>
 
 
@@ -1432,14 +1432,14 @@ Each dentry has:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1452,14 +1452,14 @@ Interrupt handling is like **a restaurant with a host and a chef**:
 
 ### Interrupt Flow
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-handwritten.svg" alt="Handwritten: Interrupt Flow" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-handwritten.svg" alt="Handwritten: Interrupt Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-diagram.svg" alt="Diagram: Interrupt Flow" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-diagram.svg" alt="Diagram: Interrupt Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-sticky.svg" alt="Sticky Note: Interrupt Flow" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/interrupt-flow-sticky.svg" alt="Sticky Note: Interrupt Flow" width="30%">
 </a>
 
 
@@ -1489,14 +1489,14 @@ Hardware Event (e.g., network packet arrives):
 
 ### Top Half vs Bottom Half
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-handwritten.svg" alt="Handwritten: Top Half vs Bottom Half" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-handwritten.svg" alt="Handwritten: Top Half vs Bottom Half" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-diagram.svg" alt="Diagram: Top Half vs Bottom Half" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-diagram.svg" alt="Diagram: Top Half vs Bottom Half" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-sticky.svg" alt="Sticky Note: Top Half vs Bottom Half" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/top-half-vs-bottom-half-sticky.svg" alt="Sticky Note: Top Half vs Bottom Half" width="30%">
 </a>
 
 
@@ -1512,14 +1512,14 @@ Hardware Event (e.g., network packet arrives):
 
 ### Bottom Half Mechanisms
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-handwritten.svg" alt="Handwritten: Bottom Half Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-handwritten.svg" alt="Handwritten: Bottom Half Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-diagram.svg" alt="Diagram: Bottom Half Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-diagram.svg" alt="Diagram: Bottom Half Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-sticky.svg" alt="Sticky Note: Bottom Half Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/bottom-half-mechanisms-sticky.svg" alt="Sticky Note: Bottom Half Mechanisms" width="30%">
 </a>
 
 
@@ -1532,14 +1532,14 @@ Hardware Event (e.g., network packet arrives):
 
 ### Edge Cases in Interrupt Handling
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-handwritten.svg" alt="Handwritten: Edge Cases in Interrupt Handling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-handwritten.svg" alt="Handwritten: Edge Cases in Interrupt Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-diagram.svg" alt="Diagram: Edge Cases in Interrupt Handling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-diagram.svg" alt="Diagram: Edge Cases in Interrupt Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-sticky.svg" alt="Sticky Note: Edge Cases in Interrupt Handling" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-interrupt-handling-sticky.svg" alt="Sticky Note: Edge Cases in Interrupt Handling" width="30%">
 </a>
 
 
@@ -1556,14 +1556,14 @@ Hardware Event (e.g., network packet arrives):
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1576,14 +1576,14 @@ Synchronization in the kernel is like **access control in a busy office building
 
 ### Synchronization Primitive Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-handwritten.svg" alt="Handwritten: Synchronization Primitive Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-handwritten.svg" alt="Handwritten: Synchronization Primitive Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-diagram.svg" alt="Diagram: Synchronization Primitive Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-diagram.svg" alt="Diagram: Synchronization Primitive Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-sticky.svg" alt="Sticky Note: Synchronization Primitive Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/synchronization-primitive-comparison-sticky.svg" alt="Sticky Note: Synchronization Primitive Comparison" width="30%">
 </a>
 
 
@@ -1599,14 +1599,14 @@ Synchronization in the kernel is like **access control in a busy office building
 
 ### Spinlock Usage
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-handwritten.svg" alt="Handwritten: Spinlock Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-handwritten.svg" alt="Handwritten: Spinlock Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-diagram.svg" alt="Diagram: Spinlock Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-diagram.svg" alt="Diagram: Spinlock Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-sticky.svg" alt="Sticky Note: Spinlock Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/spinlock-usage-sticky.svg" alt="Sticky Note: Spinlock Usage" width="30%">
 </a>
 
 
@@ -1639,14 +1639,14 @@ void critical_section(void)
 
 ### Mutex Usage
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-handwritten.svg" alt="Handwritten: Mutex Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-handwritten.svg" alt="Handwritten: Mutex Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-diagram.svg" alt="Diagram: Mutex Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-diagram.svg" alt="Diagram: Mutex Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-sticky.svg" alt="Sticky Note: Mutex Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/mutex-usage-sticky.svg" alt="Sticky Note: Mutex Usage" width="30%">
 </a>
 
 
@@ -1678,14 +1678,14 @@ Can the critical section sleep?
 
 ### Read-Copy-Update (RCU)
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-handwritten.svg" alt="Handwritten: Read-Copy-Update (RCU)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-handwritten.svg" alt="Handwritten: Read-Copy-Update (RCU)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-diagram.svg" alt="Diagram: Read-Copy-Update (RCU)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-diagram.svg" alt="Diagram: Read-Copy-Update (RCU)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-sticky.svg" alt="Sticky Note: Read-Copy-Update (RCU)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/read-copy-update-rcu-sticky.svg" alt="Sticky Note: Read-Copy-Update (RCU)" width="30%">
 </a>
 
 
@@ -1739,14 +1739,14 @@ kfree(old);                  // safe to free old data
 
 ### Priority Inversion
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-handwritten.svg" alt="Handwritten: Priority Inversion" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-handwritten.svg" alt="Handwritten: Priority Inversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-diagram.svg" alt="Diagram: Priority Inversion" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-diagram.svg" alt="Diagram: Priority Inversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-sticky.svg" alt="Sticky Note: Priority Inversion" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/priority-inversion-sticky.svg" alt="Sticky Note: Priority Inversion" width="30%">
 </a>
 
 
@@ -1788,14 +1788,14 @@ struct rt_mutex {
 
 ### Edge Cases in Kernel Synchronization
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-handwritten.svg" alt="Handwritten: Edge Cases in Kernel Synchronization" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-handwritten.svg" alt="Handwritten: Edge Cases in Kernel Synchronization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-diagram.svg" alt="Diagram: Edge Cases in Kernel Synchronization" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-diagram.svg" alt="Diagram: Edge Cases in Kernel Synchronization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-sticky.svg" alt="Sticky Note: Edge Cases in Kernel Synchronization" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-synchronization-sticky.svg" alt="Sticky Note: Edge Cases in Kernel Synchronization" width="30%">
 </a>
 
 
@@ -1813,14 +1813,14 @@ struct rt_mutex {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1834,14 +1834,14 @@ Kernel modules are like **USB peripherals for the operating system**:
 
 ### Complete Kernel Module Example
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-handwritten.svg" alt="Handwritten: Complete Kernel Module Example" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-handwritten.svg" alt="Handwritten: Complete Kernel Module Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-diagram.svg" alt="Diagram: Complete Kernel Module Example" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-diagram.svg" alt="Diagram: Complete Kernel Module Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-sticky.svg" alt="Sticky Note: Complete Kernel Module Example" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/complete-kernel-module-example-sticky.svg" alt="Sticky Note: Complete Kernel Module Example" width="30%">
 </a>
 
 
@@ -1921,14 +1921,14 @@ MODULE_DESCRIPTION("/proc device example - read/write string storage");
 
 ### Makefile
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-handwritten.svg" alt="Handwritten: Makefile" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-handwritten.svg" alt="Handwritten: Makefile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-diagram.svg" alt="Diagram: Makefile" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-diagram.svg" alt="Diagram: Makefile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-sticky.svg" alt="Sticky Note: Makefile" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/makefile-sticky.svg" alt="Sticky Note: Makefile" width="30%">
 </a>
 
 
@@ -1947,14 +1947,14 @@ clean:
 
 ### Build and Test
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-handwritten.svg" alt="Handwritten: Build and Test" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-handwritten.svg" alt="Handwritten: Build and Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-diagram.svg" alt="Diagram: Build and Test" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-diagram.svg" alt="Diagram: Build and Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-sticky.svg" alt="Sticky Note: Build and Test" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/build-and-test-sticky.svg" alt="Sticky Note: Build and Test" width="30%">
 </a>
 
 
@@ -1993,14 +1993,14 @@ $ dmesg | tail -1
 
 ### Module Loading Steps
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-handwritten.svg" alt="Handwritten: Module Loading Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-handwritten.svg" alt="Handwritten: Module Loading Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-diagram.svg" alt="Diagram: Module Loading Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-diagram.svg" alt="Diagram: Module Loading Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-sticky.svg" alt="Sticky Note: Module Loading Steps" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-loading-steps-sticky.svg" alt="Sticky Note: Module Loading Steps" width="30%">
 </a>
 
 
@@ -2013,14 +2013,14 @@ $ dmesg | tail -1
 
 ### Module Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-handwritten.svg" alt="Handwritten: Module Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-handwritten.svg" alt="Handwritten: Module Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-diagram.svg" alt="Diagram: Module Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-diagram.svg" alt="Diagram: Module Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-sticky.svg" alt="Sticky Note: Module Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/module-advantages-disadvantages-sticky.svg" alt="Sticky Note: Module Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2034,14 +2034,14 @@ $ dmesg | tail -1
 
 ### Edge Cases in Kernel Modules
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-handwritten.svg" alt="Handwritten: Edge Cases in Kernel Modules" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-handwritten.svg" alt="Handwritten: Edge Cases in Kernel Modules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-diagram.svg" alt="Diagram: Edge Cases in Kernel Modules" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-diagram.svg" alt="Diagram: Edge Cases in Kernel Modules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-sticky.svg" alt="Sticky Note: Edge Cases in Kernel Modules" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-kernel-modules-sticky.svg" alt="Sticky Note: Edge Cases in Kernel Modules" width="30%">
 </a>
 
 
@@ -2059,14 +2059,14 @@ $ dmesg | tail -1
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2075,14 +2075,14 @@ $ dmesg | tail -1
 
 ### cgroups (Control Groups)
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-handwritten.svg" alt="Handwritten: cgroups (Control Groups)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-handwritten.svg" alt="Handwritten: cgroups (Control Groups)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-diagram.svg" alt="Diagram: cgroups (Control Groups)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-diagram.svg" alt="Diagram: cgroups (Control Groups)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-sticky.svg" alt="Sticky Note: cgroups (Control Groups)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-control-groups-sticky.svg" alt="Sticky Note: cgroups (Control Groups)" width="30%">
 </a>
 
 
@@ -2102,14 +2102,14 @@ cgroups limit, account for, and isolate resource usage of process collections. T
 
 ### cgroup Usage
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-handwritten.svg" alt="Handwritten: cgroup Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-handwritten.svg" alt="Handwritten: cgroup Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-diagram.svg" alt="Diagram: cgroup Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-diagram.svg" alt="Diagram: cgroup Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-sticky.svg" alt="Sticky Note: cgroup Usage" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroup-usage-sticky.svg" alt="Sticky Note: cgroup Usage" width="30%">
 </a>
 
 
@@ -2143,14 +2143,14 @@ oom_kill 0
 
 ### Namespaces
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-handwritten.svg" alt="Handwritten: Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-handwritten.svg" alt="Handwritten: Namespaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-diagram.svg" alt="Diagram: Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-diagram.svg" alt="Diagram: Namespaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-sticky.svg" alt="Sticky Note: Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/namespaces-sticky.svg" alt="Sticky Note: Namespaces" width="30%">
 </a>
 
 
@@ -2169,14 +2169,14 @@ Namespaces provide **isolation of global system resources**. Each namespace type
 
 ### cgroups vs Namespaces: Comparison
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-handwritten.svg" alt="Handwritten: cgroups vs Namespaces: Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-handwritten.svg" alt="Handwritten: cgroups vs Namespaces: Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-diagram.svg" alt="Diagram: cgroups vs Namespaces: Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-diagram.svg" alt="Diagram: cgroups vs Namespaces: Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-sticky.svg" alt="Sticky Note: cgroups vs Namespaces: Comparison" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/cgroups-vs-namespaces-comparison-sticky.svg" alt="Sticky Note: cgroups vs Namespaces: Comparison" width="30%">
 </a>
 
 
@@ -2194,14 +2194,14 @@ Namespaces provide **isolation of global system resources**. Each namespace type
 
 ### How Docker Uses cgroups and Namespaces
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-handwritten.svg" alt="Handwritten: How Docker Uses cgroups and Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-handwritten.svg" alt="Handwritten: How Docker Uses cgroups and Namespaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-diagram.svg" alt="Diagram: How Docker Uses cgroups and Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-diagram.svg" alt="Diagram: How Docker Uses cgroups and Namespaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-sticky.svg" alt="Sticky Note: How Docker Uses cgroups and Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-docker-uses-cgroups-and-namespaces-sticky.svg" alt="Sticky Note: How Docker Uses cgroups and Namespaces" width="30%">
 </a>
 
 
@@ -2230,14 +2230,14 @@ Each Docker container is a **set of namespaces + cgroup limits** sharing the hos
 
 ### Edge Cases in cgroups and Namespaces
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-handwritten.svg" alt="Handwritten: Edge Cases in cgroups and Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-handwritten.svg" alt="Handwritten: Edge Cases in cgroups and Namespaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-diagram.svg" alt="Diagram: Edge Cases in cgroups and Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-diagram.svg" alt="Diagram: Edge Cases in cgroups and Namespaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-sticky.svg" alt="Sticky Note: Edge Cases in cgroups and Namespaces" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/edge-cases-in-cgroups-and-namespaces-sticky.svg" alt="Sticky Note: Edge Cases in cgroups and Namespaces" width="30%">
 </a>
 
 
@@ -2254,14 +2254,14 @@ Each Docker container is a **set of namespaces + cgroup limits** sharing the hos
 
 ### Q1: What is the cost of switching between user mode and kernel mode?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-handwritten.svg" alt="Handwritten: What is the cost of switching between user mode and kernel mode?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-handwritten.svg" alt="Handwritten: What is the cost of switching between user mode and kernel mode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-diagram.svg" alt="Diagram: What is the cost of switching between user mode and kernel mode?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-diagram.svg" alt="Diagram: What is the cost of switching between user mode and kernel mode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-sticky.svg" alt="Sticky Note: What is the cost of switching between user mode and kernel mode?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-cost-of-switching-between-user-mode-and-kernel-mode-sticky.svg" alt="Sticky Note: What is the cost of switching between user mode and kernel mode?" width="30%">
 </a>
 
 
@@ -2290,14 +2290,14 @@ $ perf stat -e cycles,instructions -r 1000 python3 -c "import os; os.getpid()"
 
 ### Q2: How does the kernel handle a system call?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-handwritten.svg" alt="Handwritten: How does the kernel handle a system call?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-handwritten.svg" alt="Handwritten: How does the kernel handle a system call?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-diagram.svg" alt="Diagram: How does the kernel handle a system call?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-diagram.svg" alt="Diagram: How does the kernel handle a system call?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-sticky.svg" alt="Sticky Note: How does the kernel handle a system call?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-does-the-kernel-handle-a-system-call-sticky.svg" alt="Sticky Note: How does the kernel handle a system call?" width="30%">
 </a>
 
 
@@ -2330,14 +2330,14 @@ $ perf stat -e cycles,instructions -r 1000 python3 -c "import os; os.getpid()"
 
 ### Q3: When does the OOM killer trigger, and how does it select victims?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-handwritten.svg" alt="Handwritten: When does the OOM killer trigger, and how does it select victims?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-handwritten.svg" alt="Handwritten: When does the OOM killer trigger, and how does it select victims?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-diagram.svg" alt="Diagram: When does the OOM killer trigger, and how does it select victims?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-diagram.svg" alt="Diagram: When does the OOM killer trigger, and how does it select victims?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-sticky.svg" alt="Sticky Note: When does the OOM killer trigger, and how does it select victims?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/when-does-the-oom-killer-trigger-and-how-does-it-select-victims-sticky.svg" alt="Sticky Note: When does the OOM killer trigger, and how does it select victims?" width="30%">
 </a>
 
 
@@ -2363,14 +2363,14 @@ $ cat /proc/*/oom_score 2>/dev/null | sort -rn | head -5
 
 ### Q4: What is the difference between a process and a thread in Linux?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-handwritten.svg" alt="Handwritten: What is the difference between a process and a thread in Linux?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-handwritten.svg" alt="Handwritten: What is the difference between a process and a thread in Linux?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-diagram.svg" alt="Diagram: What is the difference between a process and a thread in Linux?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-diagram.svg" alt="Diagram: What is the difference between a process and a thread in Linux?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-sticky.svg" alt="Sticky Note: What is the difference between a process and a thread in Linux?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-difference-between-a-process-and-a-thread-in-linux-sticky.svg" alt="Sticky Note: What is the difference between a process and a thread in Linux?" width="30%">
 </a>
 
 
@@ -2391,14 +2391,14 @@ In Linux, there is **no structural difference** between a process and a thread. 
 
 ### Q5: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-handwritten.svg" alt="Handwritten: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-handwritten.svg" alt="Handwritten: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-diagram.svg" alt="Diagram: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-diagram.svg" alt="Diagram: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-sticky.svg" alt="Sticky Note: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/explain-the-proc-filesystem-why-is-it-called-a-pseudo-filesystem-sticky.svg" alt="Sticky Note: Explain the /proc filesystem. Why is it called a "pseudo" filesystem?" width="30%">
 </a>
 
 
@@ -2423,14 +2423,14 @@ static const struct proc_ops my_fops = {
 
 ### Q6: What is priority inversion and how does Linux solve it?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-handwritten.svg" alt="Handwritten: What is priority inversion and how does Linux solve it?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-handwritten.svg" alt="Handwritten: What is priority inversion and how does Linux solve it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-diagram.svg" alt="Diagram: What is priority inversion and how does Linux solve it?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-diagram.svg" alt="Diagram: What is priority inversion and how does Linux solve it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-sticky.svg" alt="Sticky Note: What is priority inversion and how does Linux solve it?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-priority-inversion-and-how-does-linux-solve-it-sticky.svg" alt="Sticky Note: What is priority inversion and how does Linux solve it?" width="30%">
 </a>
 
 
@@ -2449,14 +2449,14 @@ Priority inversion: a high-priority (H) task is blocked waiting for a low-priori
 
 ### Q7: How do I measure context switch overhead?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-handwritten.svg" alt="Handwritten: How do I measure context switch overhead?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-handwritten.svg" alt="Handwritten: How do I measure context switch overhead?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-diagram.svg" alt="Diagram: How do I measure context switch overhead?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-diagram.svg" alt="Diagram: How do I measure context switch overhead?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-sticky.svg" alt="Sticky Note: How do I measure context switch overhead?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/how-do-i-measure-context-switch-overhead-sticky.svg" alt="Sticky Note: How do I measure context switch overhead?" width="30%">
 </a>
 
 
@@ -2480,14 +2480,14 @@ $ perf bench sched pipe
 
 ### Q8: What is the relationship between nice value and CFS vruntime?
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-handwritten.svg" alt="Handwritten: What is the relationship between nice value and CFS vruntime?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-handwritten.svg" alt="Handwritten: What is the relationship between nice value and CFS vruntime?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-diagram.svg" alt="Diagram: What is the relationship between nice value and CFS vruntime?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-diagram.svg" alt="Diagram: What is the relationship between nice value and CFS vruntime?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-sticky.svg" alt="Sticky Note: What is the relationship between nice value and CFS vruntime?" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/what-is-the-relationship-between-nice-value-and-cfs-vruntime-sticky.svg" alt="Sticky Note: What is the relationship between nice value and CFS vruntime?" width="30%">
 </a>
 
 
@@ -2511,14 +2511,14 @@ The weight table ensures that each nice value step changes CPU share by about 10
 
 ### Android (Linux-based Mobile OS)
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-handwritten.svg" alt="Handwritten: Android (Linux-based Mobile OS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-handwritten.svg" alt="Handwritten: Android (Linux-based Mobile OS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-diagram.svg" alt="Diagram: Android (Linux-based Mobile OS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-diagram.svg" alt="Diagram: Android (Linux-based Mobile OS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-sticky.svg" alt="Sticky Note: Android (Linux-based Mobile OS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/android-linux-based-mobile-os-sticky.svg" alt="Sticky Note: Android (Linux-based Mobile OS)" width="30%">
 </a>
 
 
@@ -2550,14 +2550,14 @@ $ cat /proc/<pid>/cgroup
 
 ### Embedded Linux
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-handwritten.svg" alt="Handwritten: Embedded Linux" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-handwritten.svg" alt="Handwritten: Embedded Linux" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-diagram.svg" alt="Diagram: Embedded Linux" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-diagram.svg" alt="Diagram: Embedded Linux" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-sticky.svg" alt="Sticky Note: Embedded Linux" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/embedded-linux-sticky.svg" alt="Sticky Note: Embedded Linux" width="30%">
 </a>
 
 
@@ -2580,14 +2580,14 @@ $ cat /proc/timer_list | grep "jiffies"   # system uptime in jiffies
 
 ### Containers (Docker, Podman, LXC)
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-handwritten.svg" alt="Handwritten: Containers (Docker, Podman, LXC)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-handwritten.svg" alt="Handwritten: Containers (Docker, Podman, LXC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-diagram.svg" alt="Diagram: Containers (Docker, Podman, LXC)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-diagram.svg" alt="Diagram: Containers (Docker, Podman, LXC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-sticky.svg" alt="Sticky Note: Containers (Docker, Podman, LXC)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/containers-docker-podman-lxc-sticky.svg" alt="Sticky Note: Containers (Docker, Podman, LXC)" width="30%">
 </a>
 
 
@@ -2614,14 +2614,14 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
 
 ### Concept Comparison: Linux vs Windows NT vs macOS/XNU
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-handwritten.svg" alt="Handwritten: Concept Comparison: Linux vs Windows NT vs macOS/XNU" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-handwritten.svg" alt="Handwritten: Concept Comparison: Linux vs Windows NT vs macOS/XNU" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-diagram.svg" alt="Diagram: Concept Comparison: Linux vs Windows NT vs macOS/XNU" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-diagram.svg" alt="Diagram: Concept Comparison: Linux vs Windows NT vs macOS/XNU" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-sticky.svg" alt="Sticky Note: Concept Comparison: Linux vs Windows NT vs macOS/XNU" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/concept-comparison-linux-vs-windows-nt-vs-macos-xnu-sticky.svg" alt="Sticky Note: Concept Comparison: Linux vs Windows NT vs macOS/XNU" width="30%">
 </a>
 
 
@@ -2644,14 +2644,14 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
 
 ### Key Takeaways
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
 </a>
 
 
@@ -2681,14 +2681,14 @@ Containers leverage cgroups + namespaces for lightweight virtualization:
 
 ### Common Pitfalls
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
 </a>
 
 
@@ -2903,14 +2903,14 @@ cfs.run(20);
 
 ### Basic
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-diagram.svg" alt="Diagram: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-diagram.svg" alt="Diagram: Basic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
 </a>
 
 
@@ -2920,14 +2920,14 @@ cfs.run(20);
 
 ### Intermediate
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
 </a>
 
 
@@ -2938,14 +2938,14 @@ cfs.run(20);
 
 ### Advanced
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
 </a>
 
 
@@ -2957,14 +2957,14 @@ cfs.run(20);
 
 ### Additional Exercises
 
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/14-linux-kernel/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
 </a>
 
 

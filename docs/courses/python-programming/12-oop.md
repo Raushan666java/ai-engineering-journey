@@ -316,14 +316,14 @@ print(p1.is_adult)       # True
 
 ### 12.7.1 dataclass Parameters
 
-<a href="../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-handwritten.svg" alt="Handwritten: 12.7.1 dataclass Parameters" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-handwritten.svg" alt="Handwritten: 12.7.1 dataclass Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-diagram.svg" alt="Diagram: 12.7.1 dataclass Parameters" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-diagram.svg" alt="Diagram: 12.7.1 dataclass Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-sticky.svg" alt="Sticky Note: 12.7.1 dataclass Parameters" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/12-7-1-dataclass-parameters-sticky.svg" alt="Sticky Note: 12.7.1 dataclass Parameters" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ p = Point(3, 4)
 
 ### 12.7.2 Inheritance with dataclass
 
-<a href="../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-handwritten.svg" alt="Handwritten: 12.7.2 Inheritance with dataclass" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-handwritten.svg" alt="Handwritten: 12.7.2 Inheritance with dataclass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-diagram.svg" alt="Diagram: 12.7.2 Inheritance with dataclass" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-diagram.svg" alt="Diagram: 12.7.2 Inheritance with dataclass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-sticky.svg" alt="Sticky Note: 12.7.2 Inheritance with dataclass" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/12-7-2-inheritance-with-dataclass-sticky.svg" alt="Sticky Note: 12.7.2 Inheritance with dataclass" width="30%">
 </a>
 
 
@@ -546,14 +546,14 @@ class BookClass {
 
 ### Python vs TypeScript OOP
 
-<a href="../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-handwritten.svg" alt="Handwritten: Python vs TypeScript OOP" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-handwritten.svg" alt="Handwritten: Python vs TypeScript OOP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-diagram.svg" alt="Diagram: Python vs TypeScript OOP" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-diagram.svg" alt="Diagram: Python vs TypeScript OOP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-sticky.svg" alt="Sticky Note: Python vs TypeScript OOP" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/python-vs-typescript-oop-sticky.svg" alt="Sticky Note: Python vs TypeScript OOP" width="30%">
 </a>
 
 
@@ -569,14 +569,14 @@ class BookClass {
 
 ### OOP Design Best Practices
 
-<a href="../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-handwritten.svg" alt="Handwritten: OOP Design Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-handwritten.svg" alt="Handwritten: OOP Design Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-diagram.svg" alt="Diagram: OOP Design Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-diagram.svg" alt="Diagram: OOP Design Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-sticky.svg" alt="Sticky Note: OOP Design Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/oop-design-best-practices-sticky.svg" alt="Sticky Note: OOP Design Best Practices" width="30%">
 </a>
 
 
@@ -715,14 +715,14 @@ console.log(MathUtils.clamp(150, 0, 100));  // 100
 
 ### More TypeScript OOP Patterns
 
-<a href="../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-handwritten.svg" alt="Handwritten: More TypeScript OOP Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-handwritten.svg" alt="Handwritten: More TypeScript OOP Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-diagram.svg" alt="Diagram: More TypeScript OOP Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-diagram.svg" alt="Diagram: More TypeScript OOP Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-sticky.svg" alt="Sticky Note: More TypeScript OOP Patterns" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/12-oop/more-typescript-oop-patterns-sticky.svg" alt="Sticky Note: More TypeScript OOP Patterns" width="30%">
 </a>
 
 

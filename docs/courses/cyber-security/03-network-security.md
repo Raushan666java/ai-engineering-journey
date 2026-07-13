@@ -44,14 +44,14 @@
 
 ### 1.1 The OSI Model Security Map
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-handwritten.svg" alt="Handwritten: 1.1 The OSI Model Security Map" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-handwritten.svg" alt="Handwritten: 1.1 The OSI Model Security Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-diagram.svg" alt="Diagram: 1.1 The OSI Model Security Map" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-diagram.svg" alt="Diagram: 1.1 The OSI Model Security Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-sticky.svg" alt="Sticky Note: 1.1 The OSI Model Security Map" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-1-the-osi-model-security-map-sticky.svg" alt="Sticky Note: 1.1 The OSI Model Security Map" width="30%">
 </a>
 
 
@@ -69,14 +69,14 @@ Network security must be applied at every layer of the OSI model. Each layer has
 
 ### 1.2 CIA Triad in Network Context
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-handwritten.svg" alt="Handwritten: 1.2 CIA Triad in Network Context" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-handwritten.svg" alt="Handwritten: 1.2 CIA Triad in Network Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-diagram.svg" alt="Diagram: 1.2 CIA Triad in Network Context" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-diagram.svg" alt="Diagram: 1.2 CIA Triad in Network Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-sticky.svg" alt="Sticky Note: 1.2 CIA Triad in Network Context" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-2-cia-triad-in-network-context-sticky.svg" alt="Sticky Note: 1.2 CIA Triad in Network Context" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ Network security must be applied at every layer of the OSI model. Each layer has
 
 ### 1.3 Defense-in-Depth (Layered Security)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-handwritten.svg" alt="Handwritten: 1.3 Defense-in-Depth (Layered Security)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-handwritten.svg" alt="Handwritten: 1.3 Defense-in-Depth (Layered Security)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-diagram.svg" alt="Diagram: 1.3 Defense-in-Depth (Layered Security)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-diagram.svg" alt="Diagram: 1.3 Defense-in-Depth (Layered Security)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-sticky.svg" alt="Sticky Note: 1.3 Defense-in-Depth (Layered Security)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-3-defense-in-depth-layered-security-sticky.svg" alt="Sticky Note: 1.3 Defense-in-Depth (Layered Security)" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ Internet
 
 ### 2.1 What Is a Firewall?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-handwritten.svg" alt="Handwritten: 2.1 What Is a Firewall?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-handwritten.svg" alt="Handwritten: 2.1 What Is a Firewall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-diagram.svg" alt="Diagram: 2.1 What Is a Firewall?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-diagram.svg" alt="Diagram: 2.1 What Is a Firewall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-sticky.svg" alt="Sticky Note: 2.1 What Is a Firewall?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-1-what-is-a-firewall-sticky.svg" alt="Sticky Note: 2.1 What Is a Firewall?" width="30%">
 </a>
 
 
@@ -142,14 +142,14 @@ A firewall is a network security device that monitors and controls incoming and 
 
 ### 2.2 Packet Filter Firewall (Stateless)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-handwritten.svg" alt="Handwritten: 2.2 Packet Filter Firewall (Stateless)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-handwritten.svg" alt="Handwritten: 2.2 Packet Filter Firewall (Stateless)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-diagram.svg" alt="Diagram: 2.2 Packet Filter Firewall (Stateless)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-diagram.svg" alt="Diagram: 2.2 Packet Filter Firewall (Stateless)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-sticky.svg" alt="Sticky Note: 2.2 Packet Filter Firewall (Stateless)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-2-packet-filter-firewall-stateless-sticky.svg" alt="Sticky Note: 2.2 Packet Filter Firewall (Stateless)" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ Rule 5: -p tcp --dport 80? Yes → ACCEPT
 
 ### 2.3 Stateful Firewall
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-handwritten.svg" alt="Handwritten: 2.3 Stateful Firewall" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-handwritten.svg" alt="Handwritten: 2.3 Stateful Firewall" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-diagram.svg" alt="Diagram: 2.3 Stateful Firewall" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-diagram.svg" alt="Diagram: 2.3 Stateful Firewall" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-sticky.svg" alt="Sticky Note: 2.3 Stateful Firewall" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-3-stateful-firewall-sticky.svg" alt="Sticky Note: 2.3 Stateful Firewall" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ conntrack -D -s 10.0.0.5
 
 ### 2.4 Proxy Firewall (Application Gateway)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-handwritten.svg" alt="Handwritten: 2.4 Proxy Firewall (Application Gateway)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-handwritten.svg" alt="Handwritten: 2.4 Proxy Firewall (Application Gateway)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-diagram.svg" alt="Diagram: 2.4 Proxy Firewall (Application Gateway)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-diagram.svg" alt="Diagram: 2.4 Proxy Firewall (Application Gateway)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-sticky.svg" alt="Sticky Note: 2.4 Proxy Firewall (Application Gateway)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-4-proxy-firewall-application-gateway-sticky.svg" alt="Sticky Note: 2.4 Proxy Firewall (Application Gateway)" width="30%">
 </a>
 
 
@@ -376,14 +376,14 @@ http_port 3128
 
 ### 2.5 Next-Generation Firewall (NGFW)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-handwritten.svg" alt="Handwritten: 2.5 Next-Generation Firewall (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-handwritten.svg" alt="Handwritten: 2.5 Next-Generation Firewall (NGFW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-diagram.svg" alt="Diagram: 2.5 Next-Generation Firewall (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-diagram.svg" alt="Diagram: 2.5 Next-Generation Firewall (NGFW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-sticky.svg" alt="Sticky Note: 2.5 Next-Generation Firewall (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-5-next-generation-firewall-ngfw-sticky.svg" alt="Sticky Note: 2.5 Next-Generation Firewall (NGFW)" width="30%">
 </a>
 
 
@@ -432,14 +432,14 @@ An NGFW identifies Facebook traffic even if it uses port 443 (HTTPS):
 
 ### 2.6 Web Application Firewall (WAF)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-handwritten.svg" alt="Handwritten: 2.6 Web Application Firewall (WAF)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-handwritten.svg" alt="Handwritten: 2.6 Web Application Firewall (WAF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-diagram.svg" alt="Diagram: 2.6 Web Application Firewall (WAF)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-diagram.svg" alt="Diagram: 2.6 Web Application Firewall (WAF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-sticky.svg" alt="Sticky Note: 2.6 Web Application Firewall (WAF)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-6-web-application-firewall-waf-sticky.svg" alt="Sticky Note: 2.6 Web Application Firewall (WAF)" width="30%">
 </a>
 
 
@@ -491,14 +491,14 @@ SecRule ARGS "@rx (?i:<script|javascript:|onload=|onerror=)" \
 
 ### 2.7 Firewall Types Comparison Table
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-handwritten.svg" alt="Handwritten: 2.7 Firewall Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-handwritten.svg" alt="Handwritten: 2.7 Firewall Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-diagram.svg" alt="Diagram: 2.7 Firewall Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-diagram.svg" alt="Diagram: 2.7 Firewall Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-sticky.svg" alt="Sticky Note: 2.7 Firewall Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-7-firewall-types-comparison-table-sticky.svg" alt="Sticky Note: 2.7 Firewall Types Comparison Table" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ SecRule ARGS "@rx (?i:<script|javascript:|onload=|onerror=)" \
 
 ### 3.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-handwritten.svg" alt="Handwritten: 3.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-handwritten.svg" alt="Handwritten: 3.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-diagram.svg" alt="Diagram: 3.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-diagram.svg" alt="Diagram: 3.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-sticky.svg" alt="Sticky Note: 3.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-1-overview-sticky.svg" alt="Sticky Note: 3.1 Overview" width="30%">
 </a>
 
 
@@ -537,14 +537,14 @@ SecRule ARGS "@rx (?i:<script|javascript:|onload=|onerror=)" \
 
 ### 3.2 Detection Methods
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-handwritten.svg" alt="Handwritten: 3.2 Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-handwritten.svg" alt="Handwritten: 3.2 Detection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-diagram.svg" alt="Diagram: 3.2 Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-diagram.svg" alt="Diagram: 3.2 Detection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-sticky.svg" alt="Sticky Note: 3.2 Detection Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-2-detection-methods-sticky.svg" alt="Sticky Note: 3.2 Detection Methods" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ Anomaly Alert:
 
 ### 3.3 Snort Rule Writing
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-handwritten.svg" alt="Handwritten: 3.3 Snort Rule Writing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-handwritten.svg" alt="Handwritten: 3.3 Snort Rule Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-diagram.svg" alt="Diagram: 3.3 Snort Rule Writing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-diagram.svg" alt="Diagram: 3.3 Snort Rule Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-sticky.svg" alt="Sticky Note: 3.3 Snort Rule Writing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-3-snort-rule-writing-sticky.svg" alt="Sticky Note: 3.3 Snort Rule Writing" width="30%">
 </a>
 
 
@@ -671,14 +671,14 @@ alert udp $EXTERNAL_NET 53 -> $HOME_NET any
 
 ### 3.4 Suricata Rule Writing
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-handwritten.svg" alt="Handwritten: 3.4 Suricata Rule Writing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-handwritten.svg" alt="Handwritten: 3.4 Suricata Rule Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-diagram.svg" alt="Diagram: 3.4 Suricata Rule Writing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-diagram.svg" alt="Diagram: 3.4 Suricata Rule Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-sticky.svg" alt="Sticky Note: 3.4 Suricata Rule Writing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-4-suricata-rule-writing-sticky.svg" alt="Sticky Note: 3.4 Suricata Rule Writing" width="30%">
 </a>
 
 
@@ -740,14 +740,14 @@ snort -T -c /etc/snort/snort.conf
 
 ### 3.5 IDS vs IPS Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-handwritten.svg" alt="Handwritten: 3.5 IDS vs IPS Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-handwritten.svg" alt="Handwritten: 3.5 IDS vs IPS Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-diagram.svg" alt="Diagram: 3.5 IDS vs IPS Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-diagram.svg" alt="Diagram: 3.5 IDS vs IPS Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-sticky.svg" alt="Sticky Note: 3.5 IDS vs IPS Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-5-ids-vs-ips-comparison-sticky.svg" alt="Sticky Note: 3.5 IDS vs IPS Comparison" width="30%">
 </a>
 
 
@@ -774,14 +774,14 @@ Do you need to block attacks in real time?
 
 ### 3.6 HIDS vs NIDS
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-handwritten.svg" alt="Handwritten: 3.6 HIDS vs NIDS" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-handwritten.svg" alt="Handwritten: 3.6 HIDS vs NIDS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-diagram.svg" alt="Diagram: 3.6 HIDS vs NIDS" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-diagram.svg" alt="Diagram: 3.6 HIDS vs NIDS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-sticky.svg" alt="Sticky Note: 3.6 HIDS vs NIDS" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-6-hids-vs-nids-sticky.svg" alt="Sticky Note: 3.6 HIDS vs NIDS" width="30%">
 </a>
 
 
@@ -796,14 +796,14 @@ Do you need to block attacks in real time?
 
 ### 3.7 Snort/Suricata → Live Detection Dry Run
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-handwritten.svg" alt="Handwritten: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-handwritten.svg" alt="Handwritten: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-diagram.svg" alt="Diagram: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-diagram.svg" alt="Diagram: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-sticky.svg" alt="Sticky Note: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/3-7-snort-suricata-live-detection-dry-run-sticky.svg" alt="Sticky Note: 3.7 Snort/Suricata → Live Detection Dry Run" width="30%">
 </a>
 
 
@@ -842,14 +842,14 @@ Scenario: A machine on the internal network attempts to connect to a known malwa
 
 ### 4.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-handwritten.svg" alt="Handwritten: 4.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-handwritten.svg" alt="Handwritten: 4.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-diagram.svg" alt="Diagram: 4.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-diagram.svg" alt="Diagram: 4.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-sticky.svg" alt="Sticky Note: 4.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-1-overview-sticky.svg" alt="Sticky Note: 4.1 Overview" width="30%">
 </a>
 
 
@@ -863,14 +863,14 @@ A VPN creates an encrypted tunnel between two endpoints over an untrusted networ
 
 ### 4.2 VPN Types
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-handwritten.svg" alt="Handwritten: 4.2 VPN Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-handwritten.svg" alt="Handwritten: 4.2 VPN Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-diagram.svg" alt="Diagram: 4.2 VPN Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-diagram.svg" alt="Diagram: 4.2 VPN Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-sticky.svg" alt="Sticky Note: 4.2 VPN Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-2-vpn-types-sticky.svg" alt="Sticky Note: 4.2 VPN Types" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ Individual users connect to corporate network.
 
 ### 4.3 IPsec VPN
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-handwritten.svg" alt="Handwritten: 4.3 IPsec VPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-handwritten.svg" alt="Handwritten: 4.3 IPsec VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-diagram.svg" alt="Diagram: 4.3 IPsec VPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-diagram.svg" alt="Diagram: 4.3 IPsec VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-sticky.svg" alt="Sticky Note: 4.3 IPsec VPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-3-ipsec-vpn-sticky.svg" alt="Sticky Note: 4.3 IPsec VPN" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ ipsec statusall
 
 ### 4.4 WireGuard VPN
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-handwritten.svg" alt="Handwritten: 4.4 WireGuard VPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-handwritten.svg" alt="Handwritten: 4.4 WireGuard VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-diagram.svg" alt="Diagram: 4.4 WireGuard VPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-diagram.svg" alt="Diagram: 4.4 WireGuard VPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-sticky.svg" alt="Sticky Note: 4.4 WireGuard VPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-4-wireguard-vpn-sticky.svg" alt="Sticky Note: 4.4 WireGuard VPN" width="30%">
 </a>
 
 
@@ -1049,14 +1049,14 @@ wg show wg0 transfer
 
 ### 4.5 OpenVPN Setup
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-handwritten.svg" alt="Handwritten: 4.5 OpenVPN Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-handwritten.svg" alt="Handwritten: 4.5 OpenVPN Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-diagram.svg" alt="Diagram: 4.5 OpenVPN Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-diagram.svg" alt="Diagram: 4.5 OpenVPN Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-sticky.svg" alt="Sticky Note: 4.5 OpenVPN Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-5-openvpn-setup-sticky.svg" alt="Sticky Note: 4.5 OpenVPN Setup" width="30%">
 </a>
 
 
@@ -1100,14 +1100,14 @@ systemctl enable openvpn@server
 
 ### 4.6 IPsec vs WireGuard vs OpenVPN Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-handwritten.svg" alt="Handwritten: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-handwritten.svg" alt="Handwritten: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-diagram.svg" alt="Diagram: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-diagram.svg" alt="Diagram: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-sticky.svg" alt="Sticky Note: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/4-6-ipsec-vs-wireguard-vs-openvpn-comparison-sticky.svg" alt="Sticky Note: 4.6 IPsec vs WireGuard vs OpenVPN Comparison" width="30%">
 </a>
 
 
@@ -1133,14 +1133,14 @@ systemctl enable openvpn@server
 
 ### 5.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-handwritten.svg" alt="Handwritten: 5.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-handwritten.svg" alt="Handwritten: 5.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-diagram.svg" alt="Diagram: 5.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-diagram.svg" alt="Diagram: 5.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-sticky.svg" alt="Sticky Note: 5.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-1-overview-sticky.svg" alt="Sticky Note: 5.1 Overview" width="30%">
 </a>
 
 
@@ -1154,14 +1154,14 @@ Network segmentation divides a network into smaller logical or physical segments
 
 ### 5.2 VLANs (Virtual LANs)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-handwritten.svg" alt="Handwritten: 5.2 VLANs (Virtual LANs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-handwritten.svg" alt="Handwritten: 5.2 VLANs (Virtual LANs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-diagram.svg" alt="Diagram: 5.2 VLANs (Virtual LANs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-diagram.svg" alt="Diagram: 5.2 VLANs (Virtual LANs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-sticky.svg" alt="Sticky Note: 5.2 VLANs (Virtual LANs)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-2-vlans-virtual-lans-sticky.svg" alt="Sticky Note: 5.2 VLANs (Virtual LANs)" width="30%">
 </a>
 
 
@@ -1202,14 +1202,14 @@ vlan access-map BLOCK-VLAN20 10
 
 ### 5.3 DMZ (Demilitarized Zone)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-handwritten.svg" alt="Handwritten: 5.3 DMZ (Demilitarized Zone)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-handwritten.svg" alt="Handwritten: 5.3 DMZ (Demilitarized Zone)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-diagram.svg" alt="Diagram: 5.3 DMZ (Demilitarized Zone)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-diagram.svg" alt="Diagram: 5.3 DMZ (Demilitarized Zone)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-sticky.svg" alt="Sticky Note: 5.3 DMZ (Demilitarized Zone)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-3-dmz-demilitarized-zone-sticky.svg" alt="Sticky Note: 5.3 DMZ (Demilitarized Zone)" width="30%">
 </a>
 
 
@@ -1235,14 +1235,14 @@ DMZ → Internet: Allow updates (apt, yum)
 
 ### 5.4 Micro-Segmentation
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-handwritten.svg" alt="Handwritten: 5.4 Micro-Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-handwritten.svg" alt="Handwritten: 5.4 Micro-Segmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-diagram.svg" alt="Diagram: 5.4 Micro-Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-diagram.svg" alt="Diagram: 5.4 Micro-Segmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-sticky.svg" alt="Sticky Note: 5.4 Micro-Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/5-4-micro-segmentation-sticky.svg" alt="Sticky Note: 5.4 Micro-Segmentation" width="30%">
 </a>
 
 
@@ -1297,14 +1297,14 @@ This ensures ONLY pods labeled `api-server` can connect to `database` pods on po
 
 ### 6.1 DNS Security
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-handwritten.svg" alt="Handwritten: 6.1 DNS Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-handwritten.svg" alt="Handwritten: 6.1 DNS Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-diagram.svg" alt="Diagram: 6.1 DNS Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-diagram.svg" alt="Diagram: 6.1 DNS Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-sticky.svg" alt="Sticky Note: 6.1 DNS Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-1-dns-security-sticky.svg" alt="Sticky Note: 6.1 DNS Security" width="30%">
 </a>
 
 
@@ -1358,14 +1358,14 @@ options {
 
 ### 6.2 DHCP Security
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-handwritten.svg" alt="Handwritten: 6.2 DHCP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-handwritten.svg" alt="Handwritten: 6.2 DHCP Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-diagram.svg" alt="Diagram: 6.2 DHCP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-diagram.svg" alt="Diagram: 6.2 DHCP Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-sticky.svg" alt="Sticky Note: 6.2 DHCP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-2-dhcp-security-sticky.svg" alt="Sticky Note: 6.2 DHCP Security" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ ip dhcp snooping information option
 
 ### 6.3 BGP Security
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-handwritten.svg" alt="Handwritten: 6.3 BGP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-handwritten.svg" alt="Handwritten: 6.3 BGP Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-diagram.svg" alt="Diagram: 6.3 BGP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-diagram.svg" alt="Diagram: 6.3 BGP Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-sticky.svg" alt="Sticky Note: 6.3 BGP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-3-bgp-security-sticky.svg" alt="Sticky Note: 6.3 BGP Security" width="30%">
 </a>
 
 
@@ -1444,14 +1444,14 @@ route-map RPKI-FILTER permit 10
 
 ### 6.4 SNMP Security
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-handwritten.svg" alt="Handwritten: 6.4 SNMP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-handwritten.svg" alt="Handwritten: 6.4 SNMP Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-diagram.svg" alt="Diagram: 6.4 SNMP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-diagram.svg" alt="Diagram: 6.4 SNMP Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-sticky.svg" alt="Sticky Note: 6.4 SNMP Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/6-4-snmp-security-sticky.svg" alt="Sticky Note: 6.4 SNMP Security" width="30%">
 </a>
 
 
@@ -1515,14 +1515,14 @@ access MyUserGroup "" any noauth exact system-only none none
 
 ### 7.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-handwritten.svg" alt="Handwritten: 7.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-handwritten.svg" alt="Handwritten: 7.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-diagram.svg" alt="Diagram: 7.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-diagram.svg" alt="Diagram: 7.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-sticky.svg" alt="Sticky Note: 7.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-1-overview-sticky.svg" alt="Sticky Note: 7.1 Overview" width="30%">
 </a>
 
 
@@ -1536,14 +1536,14 @@ Wireless networks use radio waves, which propagate through walls and are inheren
 
 ### 7.2 WPA2 vs WPA3
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: 7.2 WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: 7.2 WPA2 vs WPA3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-diagram.svg" alt="Diagram: 7.2 WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-diagram.svg" alt="Diagram: 7.2 WPA2 vs WPA3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: 7.2 WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-2-wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: 7.2 WPA2 vs WPA3" width="30%">
 </a>
 
 
@@ -1562,14 +1562,14 @@ Wireless networks use radio waves, which propagate through walls and are inheren
 
 ### 7.3 802.1X / EAP
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-handwritten.svg" alt="Handwritten: 7.3 802.1X / EAP" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-handwritten.svg" alt="Handwritten: 7.3 802.1X / EAP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-diagram.svg" alt="Diagram: 7.3 802.1X / EAP" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-diagram.svg" alt="Diagram: 7.3 802.1X / EAP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-sticky.svg" alt="Sticky Note: 7.3 802.1X / EAP" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-3-802-1x-eap-sticky.svg" alt="Sticky Note: 7.3 802.1X / EAP" width="30%">
 </a>
 
 
@@ -1615,14 +1615,14 @@ eap {
 
 ### 7.4 Rogue AP Detection
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-handwritten.svg" alt="Handwritten: 7.4 Rogue AP Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-handwritten.svg" alt="Handwritten: 7.4 Rogue AP Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-diagram.svg" alt="Diagram: 7.4 Rogue AP Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-diagram.svg" alt="Diagram: 7.4 Rogue AP Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-sticky.svg" alt="Sticky Note: 7.4 Rogue AP Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-4-rogue-ap-detection-sticky.svg" alt="Sticky Note: 7.4 Rogue AP Detection" width="30%">
 </a>
 
 
@@ -1652,14 +1652,14 @@ kismet -c wlan0
 
 ### 7.5 Wireless Attacks
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-handwritten.svg" alt="Handwritten: 7.5 Wireless Attacks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-handwritten.svg" alt="Handwritten: 7.5 Wireless Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-diagram.svg" alt="Diagram: 7.5 Wireless Attacks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-diagram.svg" alt="Diagram: 7.5 Wireless Attacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-sticky.svg" alt="Sticky Note: 7.5 Wireless Attacks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-5-wireless-attacks-sticky.svg" alt="Sticky Note: 7.5 Wireless Attacks" width="30%">
 </a>
 
 
@@ -1695,14 +1695,14 @@ aircrack-ng -w rockyou.txt capture-01.cap
 
 ### 7.6 WPA3 Security
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-handwritten.svg" alt="Handwritten: 7.6 WPA3 Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-handwritten.svg" alt="Handwritten: 7.6 WPA3 Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-diagram.svg" alt="Diagram: 7.6 WPA3 Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-diagram.svg" alt="Diagram: 7.6 WPA3 Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-sticky.svg" alt="Sticky Note: 7.6 WPA3 Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/7-6-wpa3-security-sticky.svg" alt="Sticky Note: 7.6 WPA3 Security" width="30%">
 </a>
 
 
@@ -1731,14 +1731,14 @@ For public Wi-Fi: each client gets a unique per-connection encryption key withou
 
 ### 8.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-handwritten.svg" alt="Handwritten: 8.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-handwritten.svg" alt="Handwritten: 8.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-diagram.svg" alt="Diagram: 8.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-diagram.svg" alt="Diagram: 8.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-sticky.svg" alt="Sticky Note: 8.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/8-1-overview-sticky.svg" alt="Sticky Note: 8.1 Overview" width="30%">
 </a>
 
 
@@ -1789,14 +1789,14 @@ normal = 1
 
 ### 8.2 NAC Edge Cases
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-handwritten.svg" alt="Handwritten: 8.2 NAC Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-handwritten.svg" alt="Handwritten: 8.2 NAC Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-diagram.svg" alt="Diagram: 8.2 NAC Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-diagram.svg" alt="Diagram: 8.2 NAC Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-sticky.svg" alt="Sticky Note: 8.2 NAC Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/8-2-nac-edge-cases-sticky.svg" alt="Sticky Note: 8.2 NAC Edge Cases" width="30%">
 </a>
 
 
@@ -1812,14 +1812,14 @@ normal = 1
 
 ### 9.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-handwritten.svg" alt="Handwritten: 9.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-handwritten.svg" alt="Handwritten: 9.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-diagram.svg" alt="Diagram: 9.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-diagram.svg" alt="Diagram: 9.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-sticky.svg" alt="Sticky Note: 9.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-1-overview-sticky.svg" alt="Sticky Note: 9.1 Overview" width="30%">
 </a>
 
 
@@ -1829,14 +1829,14 @@ A Distributed Denial of Service (DDoS) attack overwhelms a target with traffic f
 
 ### 9.2 DDoS Attack Types
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-handwritten.svg" alt="Handwritten: 9.2 DDoS Attack Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-handwritten.svg" alt="Handwritten: 9.2 DDoS Attack Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-diagram.svg" alt="Diagram: 9.2 DDoS Attack Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-diagram.svg" alt="Diagram: 9.2 DDoS Attack Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-sticky.svg" alt="Sticky Note: 9.2 DDoS Attack Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-2-ddos-attack-types-sticky.svg" alt="Sticky Note: 9.2 DDoS Attack Types" width="30%">
 </a>
 
 
@@ -1853,14 +1853,14 @@ A Distributed Denial of Service (DDoS) attack overwhelms a target with traffic f
 
 ### 9.3 Mitigation Strategies
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-handwritten.svg" alt="Handwritten: 9.3 Mitigation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-handwritten.svg" alt="Handwritten: 9.3 Mitigation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-diagram.svg" alt="Diagram: 9.3 Mitigation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-diagram.svg" alt="Diagram: 9.3 Mitigation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-sticky.svg" alt="Sticky Note: 9.3 Mitigation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-3-mitigation-strategies-sticky.svg" alt="Sticky Note: 9.3 Mitigation Strategies" width="30%">
 </a>
 
 
@@ -1922,14 +1922,14 @@ Always-on detection + on-demand mitigation:
 
 ### 9.4 DDoS Mitigation Comparison Table
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-handwritten.svg" alt="Handwritten: 9.4 DDoS Mitigation Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-handwritten.svg" alt="Handwritten: 9.4 DDoS Mitigation Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-diagram.svg" alt="Diagram: 9.4 DDoS Mitigation Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-diagram.svg" alt="Diagram: 9.4 DDoS Mitigation Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-sticky.svg" alt="Sticky Note: 9.4 DDoS Mitigation Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/9-4-ddos-mitigation-comparison-table-sticky.svg" alt="Sticky Note: 9.4 DDoS Mitigation Comparison Table" width="30%">
 </a>
 
 
@@ -1948,14 +1948,14 @@ Always-on detection + on-demand mitigation:
 
 ### 10.1 Overview
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-handwritten.svg" alt="Handwritten: 10.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-handwritten.svg" alt="Handwritten: 10.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-diagram.svg" alt="Diagram: 10.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-diagram.svg" alt="Diagram: 10.1 Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-sticky.svg" alt="Sticky Note: 10.1 Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-1-overview-sticky.svg" alt="Sticky Note: 10.1 Overview" width="30%">
 </a>
 
 
@@ -1973,14 +1973,14 @@ Always-on detection + on-demand mitigation:
 
 ### 10.2 Zero Trust Architecture Components
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-handwritten.svg" alt="Handwritten: 10.2 Zero Trust Architecture Components" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-handwritten.svg" alt="Handwritten: 10.2 Zero Trust Architecture Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-diagram.svg" alt="Diagram: 10.2 Zero Trust Architecture Components" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-diagram.svg" alt="Diagram: 10.2 Zero Trust Architecture Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-sticky.svg" alt="Sticky Note: 10.2 Zero Trust Architecture Components" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-2-zero-trust-architecture-components-sticky.svg" alt="Sticky Note: 10.2 Zero Trust Architecture Components" width="30%">
 </a>
 
 
@@ -1995,14 +1995,14 @@ Always-on detection + on-demand mitigation:
 
 ### 10.3 Zero Trust Implementation: BeyondCorp (Google)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-handwritten.svg" alt="Handwritten: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-handwritten.svg" alt="Handwritten: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-diagram.svg" alt="Diagram: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-diagram.svg" alt="Diagram: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-sticky.svg" alt="Sticky Note: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-3-zero-trust-implementation-beyondcorp-google-sticky.svg" alt="Sticky Note: 10.3 Zero Trust Implementation: BeyondCorp (Google)" width="30%">
 </a>
 
 
@@ -2031,14 +2031,14 @@ Step 7: Monitor continuously (logs, anomaly detection)
 
 ### 10.4 Zero Trust Edge Cases
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-handwritten.svg" alt="Handwritten: 10.4 Zero Trust Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-handwritten.svg" alt="Handwritten: 10.4 Zero Trust Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-diagram.svg" alt="Diagram: 10.4 Zero Trust Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-diagram.svg" alt="Diagram: 10.4 Zero Trust Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-sticky.svg" alt="Sticky Note: 10.4 Zero Trust Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/10-4-zero-trust-edge-cases-sticky.svg" alt="Sticky Note: 10.4 Zero Trust Edge Cases" width="30%">
 </a>
 
 
@@ -2054,14 +2054,14 @@ Step 7: Monitor continuously (logs, anomaly detection)
 
 ### 11.1 WannaCry Ransomware (May 2017)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-handwritten.svg" alt="Handwritten: 11.1 WannaCry Ransomware (May 2017)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-handwritten.svg" alt="Handwritten: 11.1 WannaCry Ransomware (May 2017)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-diagram.svg" alt="Diagram: 11.1 WannaCry Ransomware (May 2017)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-diagram.svg" alt="Diagram: 11.1 WannaCry Ransomware (May 2017)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-sticky.svg" alt="Sticky Note: 11.1 WannaCry Ransomware (May 2017)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-1-wannacry-ransomware-may-2017-sticky.svg" alt="Sticky Note: 11.1 WannaCry Ransomware (May 2017)" width="30%">
 </a>
 
 
@@ -2118,14 +2118,14 @@ alert tcp $HOME_NET 445 -> $EXTERNAL_NET any
 
 ### 11.2 Mirai Botnet (October 2016)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-handwritten.svg" alt="Handwritten: 11.2 Mirai Botnet (October 2016)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-handwritten.svg" alt="Handwritten: 11.2 Mirai Botnet (October 2016)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-diagram.svg" alt="Diagram: 11.2 Mirai Botnet (October 2016)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-diagram.svg" alt="Diagram: 11.2 Mirai Botnet (October 2016)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-sticky.svg" alt="Sticky Note: 11.2 Mirai Botnet (October 2016)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-2-mirai-botnet-october-2016-sticky.svg" alt="Sticky Note: 11.2 Mirai Botnet (October 2016)" width="30%">
 </a>
 
 
@@ -2183,14 +2183,14 @@ alert tcp $EXTERNAL_NET any -> $HOME_NET 23
 
 ### 11.3 Stuxnet (2010)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-handwritten.svg" alt="Handwritten: 11.3 Stuxnet (2010)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-handwritten.svg" alt="Handwritten: 11.3 Stuxnet (2010)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-diagram.svg" alt="Diagram: 11.3 Stuxnet (2010)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-diagram.svg" alt="Diagram: 11.3 Stuxnet (2010)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-sticky.svg" alt="Sticky Note: 11.3 Stuxnet (2010)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/11-3-stuxnet-2010-sticky.svg" alt="Sticky Note: 11.3 Stuxnet (2010)" width="30%">
 </a>
 
 
@@ -2256,14 +2256,14 @@ Phase 4 → PLC sabotage:
 
 ### 12.1 Lab Setup
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-handwritten.svg" alt="Handwritten: 12.1 Lab Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-handwritten.svg" alt="Handwritten: 12.1 Lab Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-diagram.svg" alt="Diagram: 12.1 Lab Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-diagram.svg" alt="Diagram: 12.1 Lab Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-sticky.svg" alt="Sticky Note: 12.1 Lab Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-1-lab-setup-sticky.svg" alt="Sticky Note: 12.1 Lab Setup" width="30%">
 </a>
 
 
@@ -2271,14 +2271,14 @@ All labs below assume a Kali Linux or Ubuntu system. For Windows users, use WSL2
 
 ### 12.2 iptables/nftables → Basic Firewall Implementation
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-handwritten.svg" alt="Handwritten: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-handwritten.svg" alt="Handwritten: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-diagram.svg" alt="Diagram: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-diagram.svg" alt="Diagram: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-sticky.svg" alt="Sticky Note: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-2-iptables-nftables-basic-firewall-implementation-sticky.svg" alt="Sticky Note: 12.2 iptables/nftables → Basic Firewall Implementation" width="30%">
 </a>
 
 
@@ -2388,14 +2388,14 @@ curl -I http://192.168.1.1
 
 ### 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-handwritten.svg" alt="Handwritten: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-handwritten.svg" alt="Handwritten: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-diagram.svg" alt="Diagram: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-diagram.svg" alt="Diagram: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-sticky.svg" alt="Sticky Note: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-3-nmap-service-detection-os-fingerprinting-nse-scripts-sticky.svg" alt="Sticky Note: 12.3 Nmap → Service Detection, OS Fingerprinting, NSE Scripts" width="30%">
 </a>
 
 
@@ -2472,14 +2472,14 @@ Cisco IOS: TTL=255, Window=4128, No TS, No WS
 
 ### 12.4 Wireshark/tshark → Deep Packet Inspection
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-handwritten.svg" alt="Handwritten: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-handwritten.svg" alt="Handwritten: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-diagram.svg" alt="Diagram: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-diagram.svg" alt="Diagram: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-sticky.svg" alt="Sticky Note: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-4-wireshark-tshark-deep-packet-inspection-sticky.svg" alt="Sticky Note: 12.4 Wireshark/tshark → Deep Packet Inspection" width="30%">
 </a>
 
 
@@ -2526,14 +2526,14 @@ tshark -r capture.pcap -Y "tls.handshake.type == 1" -T fields -e tls.handshake.e
 
 ### 12.5 tcpdump → Packet Capture and Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-handwritten.svg" alt="Handwritten: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-handwritten.svg" alt="Handwritten: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-diagram.svg" alt="Diagram: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-diagram.svg" alt="Diagram: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-sticky.svg" alt="Sticky Note: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-5-tcpdump-packet-capture-and-analysis-sticky.svg" alt="Sticky Note: 12.5 tcpdump → Packet Capture and Analysis" width="30%">
 </a>
 
 
@@ -2592,14 +2592,14 @@ tcpdump -i eth0 -n "tcp[13] & 2 != 0 and tcp[13] & 16 == 0"
 
 ### 12.6 OpenVPN Setup
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-handwritten.svg" alt="Handwritten: 12.6 OpenVPN Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-handwritten.svg" alt="Handwritten: 12.6 OpenVPN Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-diagram.svg" alt="Diagram: 12.6 OpenVPN Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-diagram.svg" alt="Diagram: 12.6 OpenVPN Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-sticky.svg" alt="Sticky Note: 12.6 OpenVPN Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-6-openvpn-setup-sticky.svg" alt="Sticky Note: 12.6 OpenVPN Setup" width="30%">
 </a>
 
 
@@ -2677,14 +2677,14 @@ journalctl -u openvpn@server
 
 ### 12.7 WireGuard Quick Setup
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-handwritten.svg" alt="Handwritten: 12.7 WireGuard Quick Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-handwritten.svg" alt="Handwritten: 12.7 WireGuard Quick Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-diagram.svg" alt="Diagram: 12.7 WireGuard Quick Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-diagram.svg" alt="Diagram: 12.7 WireGuard Quick Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-sticky.svg" alt="Sticky Note: 12.7 WireGuard Quick Setup" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-7-wireguard-quick-setup-sticky.svg" alt="Sticky Note: 12.7 WireGuard Quick Setup" width="30%">
 </a>
 
 
@@ -2736,14 +2736,14 @@ wg show
 
 ### 12.8 ZAP Proxy → Web Traffic Inspection
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-handwritten.svg" alt="Handwritten: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-handwritten.svg" alt="Handwritten: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-diagram.svg" alt="Diagram: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-diagram.svg" alt="Diagram: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-sticky.svg" alt="Sticky Note: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-8-zap-proxy-web-traffic-inspection-sticky.svg" alt="Sticky Note: 12.8 ZAP Proxy → Web Traffic Inspection" width="30%">
 </a>
 
 
@@ -2803,14 +2803,14 @@ python3 zap-scan.py
 
 ### 12.9 BetterCAP → ARP Spoofing Detection
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-handwritten.svg" alt="Handwritten: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-handwritten.svg" alt="Handwritten: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-diagram.svg" alt="Diagram: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-diagram.svg" alt="Diagram: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-sticky.svg" alt="Sticky Note: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-9-bettercap-arp-spoofing-detection-sticky.svg" alt="Sticky Note: 12.9 BetterCAP → ARP Spoofing Detection" width="30%">
 </a>
 
 
@@ -2848,14 +2848,14 @@ arp -s 192.168.1.1 00:11:22:33:44:55
 
 ### 12.10 Airodump/aireplay → Wireless Testing
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-handwritten.svg" alt="Handwritten: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-handwritten.svg" alt="Handwritten: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-diagram.svg" alt="Diagram: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-diagram.svg" alt="Diagram: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-sticky.svg" alt="Sticky Note: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/12-10-airodump-aireplay-wireless-testing-sticky.svg" alt="Sticky Note: 12.10 Airodump/aireplay → Wireless Testing" width="30%">
 </a>
 
 
@@ -2895,14 +2895,14 @@ aircrack-ng capture-01.cap
 
 ### 13.1 Firewall Type Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-handwritten.svg" alt="Handwritten: 13.1 Firewall Type Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-handwritten.svg" alt="Handwritten: 13.1 Firewall Type Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-diagram.svg" alt="Diagram: 13.1 Firewall Type Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-diagram.svg" alt="Diagram: 13.1 Firewall Type Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-sticky.svg" alt="Sticky Note: 13.1 Firewall Type Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-1-firewall-type-comparison-sticky.svg" alt="Sticky Note: 13.1 Firewall Type Comparison" width="30%">
 </a>
 
 
@@ -2921,14 +2921,14 @@ aircrack-ng capture-01.cap
 
 ### 13.2 IDS vs IPS vs WAF
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-handwritten.svg" alt="Handwritten: 13.2 IDS vs IPS vs WAF" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-handwritten.svg" alt="Handwritten: 13.2 IDS vs IPS vs WAF" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-diagram.svg" alt="Diagram: 13.2 IDS vs IPS vs WAF" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-diagram.svg" alt="Diagram: 13.2 IDS vs IPS vs WAF" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-sticky.svg" alt="Sticky Note: 13.2 IDS vs IPS vs WAF" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-2-ids-vs-ips-vs-waf-sticky.svg" alt="Sticky Note: 13.2 IDS vs IPS vs WAF" width="30%">
 </a>
 
 
@@ -2943,14 +2943,14 @@ aircrack-ng capture-01.cap
 
 ### 13.3 IPsec vs WireGuard vs OpenVPN
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-handwritten.svg" alt="Handwritten: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-handwritten.svg" alt="Handwritten: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-diagram.svg" alt="Diagram: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-diagram.svg" alt="Diagram: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-sticky.svg" alt="Sticky Note: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-3-ipsec-vs-wireguard-vs-openvpn-sticky.svg" alt="Sticky Note: 13.3 IPsec vs WireGuard vs OpenVPN" width="30%">
 </a>
 
 
@@ -2969,14 +2969,14 @@ aircrack-ng capture-01.cap
 
 ### 13.4 WPA2 vs WPA3
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: 13.4 WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-handwritten.svg" alt="Handwritten: 13.4 WPA2 vs WPA3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-diagram.svg" alt="Diagram: 13.4 WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-diagram.svg" alt="Diagram: 13.4 WPA2 vs WPA3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: 13.4 WPA2 vs WPA3" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/13-4-wpa2-vs-wpa3-sticky.svg" alt="Sticky Note: 13.4 WPA2 vs WPA3" width="30%">
 </a>
 
 
@@ -2997,14 +2997,14 @@ aircrack-ng capture-01.cap
 
 ### 14.1 AWS Security Groups (Cloud Firewall)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-handwritten.svg" alt="Handwritten: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-handwritten.svg" alt="Handwritten: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-diagram.svg" alt="Diagram: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-diagram.svg" alt="Diagram: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-sticky.svg" alt="Sticky Note: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-1-aws-security-groups-cloud-firewall-sticky.svg" alt="Sticky Note: 14.1 AWS Security Groups (Cloud Firewall)" width="30%">
 </a>
 
 
@@ -3039,14 +3039,14 @@ AWS Security Groups act as stateful virtual firewalls for EC2 instances and othe
 
 ### 14.2 Cisco Firepower (NGFW)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-handwritten.svg" alt="Handwritten: 14.2 Cisco Firepower (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-handwritten.svg" alt="Handwritten: 14.2 Cisco Firepower (NGFW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-diagram.svg" alt="Diagram: 14.2 Cisco Firepower (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-diagram.svg" alt="Diagram: 14.2 Cisco Firepower (NGFW)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-sticky.svg" alt="Sticky Note: 14.2 Cisco Firepower (NGFW)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-2-cisco-firepower-ngfw-sticky.svg" alt="Sticky Note: 14.2 Cisco Firepower (NGFW)" width="30%">
 </a>
 
 
@@ -3059,14 +3059,14 @@ Enterprise NGFW with:
 
 ### 14.3 Cloudflare DDoS Protection
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-handwritten.svg" alt="Handwritten: 14.3 Cloudflare DDoS Protection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-handwritten.svg" alt="Handwritten: 14.3 Cloudflare DDoS Protection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-diagram.svg" alt="Diagram: 14.3 Cloudflare DDoS Protection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-diagram.svg" alt="Diagram: 14.3 Cloudflare DDoS Protection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-sticky.svg" alt="Sticky Note: 14.3 Cloudflare DDoS Protection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-3-cloudflare-ddos-protection-sticky.svg" alt="Sticky Note: 14.3 Cloudflare DDoS Protection" width="30%">
 </a>
 
 
@@ -3082,14 +3082,14 @@ At edge:
 
 ### 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-handwritten.svg" alt="Handwritten: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-handwritten.svg" alt="Handwritten: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-diagram.svg" alt="Diagram: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-diagram.svg" alt="Diagram: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-sticky.svg" alt="Sticky Note: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-4-enterprise-zero-trust-beyondcorp-zscaler-sticky.svg" alt="Sticky Note: 14.4 Enterprise Zero Trust (BeyondCorp / Zscaler)" width="30%">
 </a>
 
 
@@ -3108,14 +3108,14 @@ Zero Trust Exchange (Zscaler):
 
 ### 14.5 Open Source Security Onion
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-handwritten.svg" alt="Handwritten: 14.5 Open Source Security Onion" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-handwritten.svg" alt="Handwritten: 14.5 Open Source Security Onion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-diagram.svg" alt="Diagram: 14.5 Open Source Security Onion" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-diagram.svg" alt="Diagram: 14.5 Open Source Security Onion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-sticky.svg" alt="Sticky Note: 14.5 Open Source Security Onion" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/14-5-open-source-security-onion-sticky.svg" alt="Sticky Note: 14.5 Open Source Security Onion" width="30%">
 </a>
 
 
@@ -3150,14 +3150,14 @@ so-status
 
 ### Q1: What is the difference between a stateful and stateless firewall?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-handwritten.svg" alt="Handwritten: What is the difference between a stateful and stateless firewall?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-handwritten.svg" alt="Handwritten: What is the difference between a stateful and stateless firewall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-diagram.svg" alt="Diagram: What is the difference between a stateful and stateless firewall?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-diagram.svg" alt="Diagram: What is the difference between a stateful and stateless firewall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-sticky.svg" alt="Sticky Note: What is the difference between a stateful and stateless firewall?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-stateful-and-stateless-firewall-sticky.svg" alt="Sticky Note: What is the difference between a stateful and stateless firewall?" width="30%">
 </a>
 
 
@@ -3165,14 +3165,14 @@ so-status
 
 ### Q2: How does a stateful firewall handle FTP traffic?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-handwritten.svg" alt="Handwritten: How does a stateful firewall handle FTP traffic?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-handwritten.svg" alt="Handwritten: How does a stateful firewall handle FTP traffic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-diagram.svg" alt="Diagram: How does a stateful firewall handle FTP traffic?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-diagram.svg" alt="Diagram: How does a stateful firewall handle FTP traffic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-sticky.svg" alt="Sticky Note: How does a stateful firewall handle FTP traffic?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-stateful-firewall-handle-ftp-traffic-sticky.svg" alt="Sticky Note: How does a stateful firewall handle FTP traffic?" width="30%">
 </a>
 
 
@@ -3180,14 +3180,14 @@ so-status
 
 ### Q3: Explain the difference between IDS and IPS.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-handwritten.svg" alt="Handwritten: Explain the difference between IDS and IPS." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-handwritten.svg" alt="Handwritten: Explain the difference between IDS and IPS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-diagram.svg" alt="Diagram: Explain the difference between IDS and IPS." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-diagram.svg" alt="Diagram: Explain the difference between IDS and IPS." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-sticky.svg" alt="Sticky Note: Explain the difference between IDS and IPS." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-difference-between-ids-and-ips-sticky.svg" alt="Sticky Note: Explain the difference between IDS and IPS." width="30%">
 </a>
 
 
@@ -3195,14 +3195,14 @@ so-status
 
 ### Q4: What are the advantages of anomaly-based detection over signature-based detection?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-handwritten.svg" alt="Handwritten: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-handwritten.svg" alt="Handwritten: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-diagram.svg" alt="Diagram: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-diagram.svg" alt="Diagram: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-sticky.svg" alt="Sticky Note: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-are-the-advantages-of-anomaly-based-detection-over-signature-based-detection-sticky.svg" alt="Sticky Note: What are the advantages of anomaly-based detection over signature-based detection?" width="30%">
 </a>
 
 
@@ -3210,14 +3210,14 @@ so-status
 
 ### Q5: What is the WPA3-Personal improvement over WPA2-Personal?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-handwritten.svg" alt="Handwritten: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-handwritten.svg" alt="Handwritten: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-diagram.svg" alt="Diagram: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-diagram.svg" alt="Diagram: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-sticky.svg" alt="Sticky Note: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-wpa3-personal-improvement-over-wpa2-personal-sticky.svg" alt="Sticky Note: What is the WPA3-Personal improvement over WPA2-Personal?" width="30%">
 </a>
 
 
@@ -3225,14 +3225,14 @@ so-status
 
 ### Q6: What is the KRACK attack?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-handwritten.svg" alt="Handwritten: What is the KRACK attack?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-handwritten.svg" alt="Handwritten: What is the KRACK attack?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-diagram.svg" alt="Diagram: What is the KRACK attack?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-diagram.svg" alt="Diagram: What is the KRACK attack?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-sticky.svg" alt="Sticky Note: What is the KRACK attack?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-krack-attack-sticky.svg" alt="Sticky Note: What is the KRACK attack?" width="30%">
 </a>
 
 
@@ -3240,14 +3240,14 @@ so-status
 
 ### Q7: How does DNSSEC prevent cache poisoning?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" alt="Handwritten: How does DNSSEC prevent cache poisoning?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-handwritten.svg" alt="Handwritten: How does DNSSEC prevent cache poisoning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" alt="Diagram: How does DNSSEC prevent cache poisoning?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-diagram.svg" alt="Diagram: How does DNSSEC prevent cache poisoning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" alt="Sticky Note: How does DNSSEC prevent cache poisoning?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-dnssec-prevent-cache-poisoning-sticky.svg" alt="Sticky Note: How does DNSSEC prevent cache poisoning?" width="30%">
 </a>
 
 
@@ -3255,14 +3255,14 @@ so-status
 
 ### Q8: What is BGP hijacking and how can it be mitigated?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-handwritten.svg" alt="Handwritten: What is BGP hijacking and how can it be mitigated?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-handwritten.svg" alt="Handwritten: What is BGP hijacking and how can it be mitigated?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-diagram.svg" alt="Diagram: What is BGP hijacking and how can it be mitigated?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-diagram.svg" alt="Diagram: What is BGP hijacking and how can it be mitigated?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-sticky.svg" alt="Sticky Note: What is BGP hijacking and how can it be mitigated?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-bgp-hijacking-and-how-can-it-be-mitigated-sticky.svg" alt="Sticky Note: What is BGP hijacking and how can it be mitigated?" width="30%">
 </a>
 
 
@@ -3270,14 +3270,14 @@ so-status
 
 ### Q9: How does a SYN flood work and what are mitigation techniques?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-handwritten.svg" alt="Handwritten: How does a SYN flood work and what are mitigation techniques?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-handwritten.svg" alt="Handwritten: How does a SYN flood work and what are mitigation techniques?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-diagram.svg" alt="Diagram: How does a SYN flood work and what are mitigation techniques?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-diagram.svg" alt="Diagram: How does a SYN flood work and what are mitigation techniques?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-sticky.svg" alt="Sticky Note: How does a SYN flood work and what are mitigation techniques?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-a-syn-flood-work-and-what-are-mitigation-techniques-sticky.svg" alt="Sticky Note: How does a SYN flood work and what are mitigation techniques?" width="30%">
 </a>
 
 
@@ -3285,14 +3285,14 @@ so-status
 
 ### Q10: What is the difference between VLAN and VXLAN?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-handwritten.svg" alt="Handwritten: What is the difference between VLAN and VXLAN?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-handwritten.svg" alt="Handwritten: What is the difference between VLAN and VXLAN?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-diagram.svg" alt="Diagram: What is the difference between VLAN and VXLAN?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-diagram.svg" alt="Diagram: What is the difference between VLAN and VXLAN?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-sticky.svg" alt="Sticky Note: What is the difference between VLAN and VXLAN?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-vlan-and-vxlan-sticky.svg" alt="Sticky Note: What is the difference between VLAN and VXLAN?" width="30%">
 </a>
 
 
@@ -3300,14 +3300,14 @@ so-status
 
 ### Q11: Describe the WannaCry infection chain.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-handwritten.svg" alt="Handwritten: Describe the WannaCry infection chain." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-handwritten.svg" alt="Handwritten: Describe the WannaCry infection chain." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-diagram.svg" alt="Diagram: Describe the WannaCry infection chain." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-diagram.svg" alt="Diagram: Describe the WannaCry infection chain." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-sticky.svg" alt="Sticky Note: Describe the WannaCry infection chain." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-wannacry-infection-chain-sticky.svg" alt="Sticky Note: Describe the WannaCry infection chain." width="30%">
 </a>
 
 
@@ -3315,14 +3315,14 @@ so-status
 
 ### Q12: How does Mirai infect IoT devices?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-handwritten.svg" alt="Handwritten: How does Mirai infect IoT devices?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-handwritten.svg" alt="Handwritten: How does Mirai infect IoT devices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-diagram.svg" alt="Diagram: How does Mirai infect IoT devices?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-diagram.svg" alt="Diagram: How does Mirai infect IoT devices?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-sticky.svg" alt="Sticky Note: How does Mirai infect IoT devices?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-mirai-infect-iot-devices-sticky.svg" alt="Sticky Note: How does Mirai infect IoT devices?" width="30%">
 </a>
 
 
@@ -3330,14 +3330,14 @@ so-status
 
 ### Q13: How is micro-segmentation different from traditional VLAN segmentation?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-handwritten.svg" alt="Handwritten: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-handwritten.svg" alt="Handwritten: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-diagram.svg" alt="Diagram: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-diagram.svg" alt="Diagram: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-sticky.svg" alt="Sticky Note: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-is-micro-segmentation-different-from-traditional-vlan-segmentation-sticky.svg" alt="Sticky Note: How is micro-segmentation different from traditional VLAN segmentation?" width="30%">
 </a>
 
 
@@ -3345,14 +3345,14 @@ so-status
 
 ### Q14: What is the best practice for deploying wireless in an enterprise?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-handwritten.svg" alt="Handwritten: What is the best practice for deploying wireless in an enterprise?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-handwritten.svg" alt="Handwritten: What is the best practice for deploying wireless in an enterprise?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-diagram.svg" alt="Diagram: What is the best practice for deploying wireless in an enterprise?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-diagram.svg" alt="Diagram: What is the best practice for deploying wireless in an enterprise?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-sticky.svg" alt="Sticky Note: What is the best practice for deploying wireless in an enterprise?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-best-practice-for-deploying-wireless-in-an-enterprise-sticky.svg" alt="Sticky Note: What is the best practice for deploying wireless in an enterprise?" width="30%">
 </a>
 
 
@@ -3360,14 +3360,14 @@ so-status
 
 ### Q15: How does zero trust differ from traditional perimeter security?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-handwritten.svg" alt="Handwritten: How does zero trust differ from traditional perimeter security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-handwritten.svg" alt="Handwritten: How does zero trust differ from traditional perimeter security?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-diagram.svg" alt="Diagram: How does zero trust differ from traditional perimeter security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-diagram.svg" alt="Diagram: How does zero trust differ from traditional perimeter security?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-sticky.svg" alt="Sticky Note: How does zero trust differ from traditional perimeter security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-zero-trust-differ-from-traditional-perimeter-security-sticky.svg" alt="Sticky Note: How does zero trust differ from traditional perimeter security?" width="30%">
 </a>
 
 
@@ -3497,14 +3497,14 @@ Default: deny all inter-VLAN
 
 ### Case Study Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-handwritten.svg" alt="Handwritten: Case Study Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-handwritten.svg" alt="Handwritten: Case Study Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-diagram.svg" alt="Diagram: Case Study Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-diagram.svg" alt="Diagram: Case Study Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-sticky.svg" alt="Sticky Note: Case Study Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/case-study-analysis-sticky.svg" alt="Sticky Note: Case Study Analysis" width="30%">
 </a>
 
 
@@ -3584,14 +3584,14 @@ table inet filter {
 
 ### 17.1 Netfilter Hooks (Linux Kernel)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-handwritten.svg" alt="Handwritten: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-handwritten.svg" alt="Handwritten: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-diagram.svg" alt="Diagram: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-diagram.svg" alt="Diagram: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-sticky.svg" alt="Sticky Note: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-1-netfilter-hooks-linux-kernel-sticky.svg" alt="Sticky Note: 17.1 Netfilter Hooks (Linux Kernel)" width="30%">
 </a>
 
 
@@ -3635,14 +3635,14 @@ table inet filter {
 
 ### 17.2 Connection Tracking Internals
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-handwritten.svg" alt="Handwritten: 17.2 Connection Tracking Internals" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-handwritten.svg" alt="Handwritten: 17.2 Connection Tracking Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-diagram.svg" alt="Diagram: 17.2 Connection Tracking Internals" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-diagram.svg" alt="Diagram: 17.2 Connection Tracking Internals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-sticky.svg" alt="Sticky Note: 17.2 Connection Tracking Internals" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-2-connection-tracking-internals-sticky.svg" alt="Sticky Note: 17.2 Connection Tracking Internals" width="30%">
 </a>
 
 
@@ -3690,14 +3690,14 @@ Client (10.0.0.5:50000)          Server (93.184.216.34:80)
 
 ### 17.3 BPF-based Firewalls (eBPF/XDP)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-handwritten.svg" alt="Handwritten: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-handwritten.svg" alt="Handwritten: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-diagram.svg" alt="Diagram: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-diagram.svg" alt="Diagram: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-sticky.svg" alt="Sticky Note: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/17-3-bpf-based-firewalls-ebpf-xdp-sticky.svg" alt="Sticky Note: 17.3 BPF-based Firewalls (eBPF/XDP)" width="30%">
 </a>
 
 
@@ -3736,14 +3736,14 @@ int xdp_drop_prog(struct xdp_md *ctx) {
 
 ### 18.1 Suricata Multi-Threading Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-handwritten.svg" alt="Handwritten: 18.1 Suricata Multi-Threading Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-handwritten.svg" alt="Handwritten: 18.1 Suricata Multi-Threading Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-diagram.svg" alt="Diagram: 18.1 Suricata Multi-Threading Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-diagram.svg" alt="Diagram: 18.1 Suricata Multi-Threading Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-sticky.svg" alt="Sticky Note: 18.1 Suricata Multi-Threading Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-1-suricata-multi-threading-architecture-sticky.svg" alt="Sticky Note: 18.1 Suricata Multi-Threading Architecture" width="30%">
 </a>
 
 
@@ -3782,14 +3782,14 @@ flow_bypass: yes
 
 ### 18.2 PCRE Rules → Advanced Pattern Matching
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-handwritten.svg" alt="Handwritten: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-handwritten.svg" alt="Handwritten: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-diagram.svg" alt="Diagram: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-diagram.svg" alt="Diagram: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-sticky.svg" alt="Sticky Note: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-2-pcre-rules-advanced-pattern-matching-sticky.svg" alt="Sticky Note: 18.2 PCRE Rules → Advanced Pattern Matching" width="30%">
 </a>
 
 
@@ -3815,14 +3815,14 @@ alert http $EXTERNAL_NET any -> $HOME_NET any
 
 ### 18.3 Zeek (formerly Bro) Scripting
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-handwritten.svg" alt="Handwritten: 18.3 Zeek (formerly Bro) Scripting" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-handwritten.svg" alt="Handwritten: 18.3 Zeek (formerly Bro) Scripting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-diagram.svg" alt="Diagram: 18.3 Zeek (formerly Bro) Scripting" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-diagram.svg" alt="Diagram: 18.3 Zeek (formerly Bro) Scripting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-sticky.svg" alt="Sticky Note: 18.3 Zeek (formerly Bro) Scripting" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/18-3-zeek-formerly-bro-scripting-sticky.svg" alt="Sticky Note: 18.3 Zeek (formerly Bro) Scripting" width="30%">
 </a>
 
 
@@ -3876,14 +3876,14 @@ cat notice.log | zeek-cut ts note msg
 
 ### 19.1 How DPI Identifies VPN Traffic
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-handwritten.svg" alt="Handwritten: 19.1 How DPI Identifies VPN Traffic" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-handwritten.svg" alt="Handwritten: 19.1 How DPI Identifies VPN Traffic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-diagram.svg" alt="Diagram: 19.1 How DPI Identifies VPN Traffic" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-diagram.svg" alt="Diagram: 19.1 How DPI Identifies VPN Traffic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-sticky.svg" alt="Sticky Note: 19.1 How DPI Identifies VPN Traffic" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/19-1-how-dpi-identifies-vpn-traffic-sticky.svg" alt="Sticky Note: 19.1 How DPI Identifies VPN Traffic" width="30%">
 </a>
 
 
@@ -3919,14 +3919,14 @@ tcpdump -i eth0 port 1194
 
 ### 19.2 VPN Detection Evasion
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-handwritten.svg" alt="Handwritten: 19.2 VPN Detection Evasion" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-handwritten.svg" alt="Handwritten: 19.2 VPN Detection Evasion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-diagram.svg" alt="Diagram: 19.2 VPN Detection Evasion" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-diagram.svg" alt="Diagram: 19.2 VPN Detection Evasion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-sticky.svg" alt="Sticky Note: 19.2 VPN Detection Evasion" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/19-2-vpn-detection-evasion-sticky.svg" alt="Sticky Note: 19.2 VPN Detection Evasion" width="30%">
 </a>
 
 
@@ -3954,14 +3954,14 @@ PSKsecrets = /etc/stunnel/psk.txt
 
 ### 20.1 DNS Amplification Attack
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-handwritten.svg" alt="Handwritten: 20.1 DNS Amplification Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-handwritten.svg" alt="Handwritten: 20.1 DNS Amplification Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-diagram.svg" alt="Diagram: 20.1 DNS Amplification Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-diagram.svg" alt="Diagram: 20.1 DNS Amplification Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-sticky.svg" alt="Sticky Note: 20.1 DNS Amplification Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/20-1-dns-amplification-attack-sticky.svg" alt="Sticky Note: 20.1 DNS Amplification Attack" width="30%">
 </a>
 
 
@@ -4014,14 +4014,14 @@ sysctl -w net.ipv4.conf.default.rp_filter=1
 
 ### 21.1 802.1X Full Deployment Topology
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-handwritten.svg" alt="Handwritten: 21.1 802.1X Full Deployment Topology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-handwritten.svg" alt="Handwritten: 21.1 802.1X Full Deployment Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-diagram.svg" alt="Diagram: 21.1 802.1X Full Deployment Topology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-diagram.svg" alt="Diagram: 21.1 802.1X Full Deployment Topology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-sticky.svg" alt="Sticky Note: 21.1 802.1X Full Deployment Topology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/21-1-802-1x-full-deployment-topology-sticky.svg" alt="Sticky Note: 21.1 802.1X Full Deployment Topology" width="30%">
 </a>
 
 
@@ -4071,14 +4071,14 @@ Supplicant                     AP (Authz)              RADIUS Server
 
 ### 21.2 RADIUS Server Logs
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-handwritten.svg" alt="Handwritten: 21.2 RADIUS Server Logs" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-handwritten.svg" alt="Handwritten: 21.2 RADIUS Server Logs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-diagram.svg" alt="Diagram: 21.2 RADIUS Server Logs" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-diagram.svg" alt="Diagram: 21.2 RADIUS Server Logs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-sticky.svg" alt="Sticky Note: 21.2 RADIUS Server Logs" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/21-2-radius-server-logs-sticky.svg" alt="Sticky Note: 21.2 RADIUS Server Logs" width="30%">
 </a>
 
 
@@ -4105,14 +4105,14 @@ tail -f /var/log/freeradius/radius.log
 
 ### 22.1 BeyondCorp Principles
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-handwritten.svg" alt="Handwritten: 22.1 BeyondCorp Principles" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-handwritten.svg" alt="Handwritten: 22.1 BeyondCorp Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-diagram.svg" alt="Diagram: 22.1 BeyondCorp Principles" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-diagram.svg" alt="Diagram: 22.1 BeyondCorp Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-sticky.svg" alt="Sticky Note: 22.1 BeyondCorp Principles" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/22-1-beyondcorp-principles-sticky.svg" alt="Sticky Note: 22.1 BeyondCorp Principles" width="30%">
 </a>
 
 
@@ -4163,14 +4163,14 @@ allow {
 
 ### 22.2 BeyondCorp Implementation (Step CA + Pomerium)
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-handwritten.svg" alt="Handwritten: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-handwritten.svg" alt="Handwritten: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-diagram.svg" alt="Diagram: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-diagram.svg" alt="Diagram: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-sticky.svg" alt="Sticky Note: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/22-2-beyondcorp-implementation-step-ca-pomerium-sticky.svg" alt="Sticky Note: 22.2 BeyondCorp Implementation (Step CA + Pomerium)" width="30%">
 </a>
 
 
@@ -4229,14 +4229,14 @@ curl --cert api.crt --key api.key \
 
 ### 23.1 DHCP Starvation Attack → Full Walkthrough
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-handwritten.svg" alt="Handwritten: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-handwritten.svg" alt="Handwritten: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-diagram.svg" alt="Diagram: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-diagram.svg" alt="Diagram: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-sticky.svg" alt="Sticky Note: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/23-1-dhcp-starvation-attack-full-walkthrough-sticky.svg" alt="Sticky Note: 23.1 DHCP Starvation Attack → Full Walkthrough" width="30%">
 </a>
 
 
@@ -4299,14 +4299,14 @@ ip dhcp snooping log mismatch
 
 ### 23.2 ARP Spoofing Detection → Detailed
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-handwritten.svg" alt="Handwritten: 23.2 ARP Spoofing Detection → Detailed" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-handwritten.svg" alt="Handwritten: 23.2 ARP Spoofing Detection → Detailed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-diagram.svg" alt="Diagram: 23.2 ARP Spoofing Detection → Detailed" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-diagram.svg" alt="Diagram: 23.2 ARP Spoofing Detection → Detailed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-sticky.svg" alt="Sticky Note: 23.2 ARP Spoofing Detection → Detailed" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/23-2-arp-spoofing-detection-detailed-sticky.svg" alt="Sticky Note: 23.2 ARP Spoofing Detection → Detailed" width="30%">
 </a>
 
 
@@ -4362,14 +4362,14 @@ interface GigabitEthernet0/1
 
 ### 24.1 Full NSM Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-handwritten.svg" alt="Handwritten: 24.1 Full NSM Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-handwritten.svg" alt="Handwritten: 24.1 Full NSM Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-diagram.svg" alt="Diagram: 24.1 Full NSM Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-diagram.svg" alt="Diagram: 24.1 Full NSM Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-sticky.svg" alt="Sticky Note: 24.1 Full NSM Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/24-1-full-nsm-architecture-sticky.svg" alt="Sticky Note: 24.1 Full NSM Architecture" width="30%">
 </a>
 
 
@@ -4411,14 +4411,14 @@ softflowd -i eth0 -n collector.local:2055 -t maxlife=3600
 
 ### 24.2 Security Onion → All-in-One NSM
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-handwritten.svg" alt="Handwritten: 24.2 Security Onion → All-in-One NSM" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-handwritten.svg" alt="Handwritten: 24.2 Security Onion → All-in-One NSM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-diagram.svg" alt="Diagram: 24.2 Security Onion → All-in-One NSM" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-diagram.svg" alt="Diagram: 24.2 Security Onion → All-in-One NSM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-sticky.svg" alt="Sticky Note: 24.2 Security Onion → All-in-One NSM" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/24-2-security-onion-all-in-one-nsm-sticky.svg" alt="Sticky Note: 24.2 Security Onion → All-in-One NSM" width="30%">
 </a>
 
 
@@ -4449,14 +4449,14 @@ sudo so-pcap -d 'host 10.0.0.5 and port 443'
 
 ### Q16: How does IPsec tunnel mode differ from transport mode? Show packet structure.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-handwritten.svg" alt="Handwritten: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-handwritten.svg" alt="Handwritten: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-diagram.svg" alt="Diagram: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-diagram.svg" alt="Diagram: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-sticky.svg" alt="Sticky Note: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-ipsec-tunnel-mode-differ-from-transport-mode-show-packet-structure-sticky.svg" alt="Sticky Note: How does IPsec tunnel mode differ from transport mode? Show packet structure." width="30%">
 </a>
 
 
@@ -4476,14 +4476,14 @@ Tunnel mode packet:
 
 ### Q17: What is the difference between a reverse proxy and a forward proxy in network security?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-handwritten.svg" alt="Handwritten: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-handwritten.svg" alt="Handwritten: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-diagram.svg" alt="Diagram: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-diagram.svg" alt="Diagram: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-sticky.svg" alt="Sticky Note: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-a-reverse-proxy-and-a-forward-proxy-in-network-security-sticky.svg" alt="Sticky Note: What is the difference between a reverse proxy and a forward proxy in network security?" width="30%">
 </a>
 
 
@@ -4491,14 +4491,14 @@ Tunnel mode packet:
 
 ### Q18: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-handwritten.svg" alt="Handwritten: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-handwritten.svg" alt="Handwritten: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-diagram.svg" alt="Diagram: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-diagram.svg" alt="Diagram: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-sticky.svg" alt="Sticky Note: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-tls-1-3-handshake-and-its-security-improvements-over-tls-1-2-sticky.svg" alt="Sticky Note: Explain the TLS 1.3 handshake and its security improvements over TLS 1.2." width="30%">
 </a>
 
 
@@ -4529,14 +4529,14 @@ Improvements over TLS 1.2:
 
 ### Q19: What is the role of entropy in detecting DNS tunneling?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-handwritten.svg" alt="Handwritten: What is the role of entropy in detecting DNS tunneling?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-handwritten.svg" alt="Handwritten: What is the role of entropy in detecting DNS tunneling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-diagram.svg" alt="Diagram: What is the role of entropy in detecting DNS tunneling?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-diagram.svg" alt="Diagram: What is the role of entropy in detecting DNS tunneling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-sticky.svg" alt="Sticky Note: What is the role of entropy in detecting DNS tunneling?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-role-of-entropy-in-detecting-dns-tunneling-sticky.svg" alt="Sticky Note: What is the role of entropy in detecting DNS tunneling?" width="30%">
 </a>
 
 
@@ -4554,14 +4554,14 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 
 ### Q20: How does SQL injection bypass a packet filter firewall but not a WAF?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-handwritten.svg" alt="Handwritten: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-handwritten.svg" alt="Handwritten: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-diagram.svg" alt="Diagram: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-diagram.svg" alt="Diagram: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-sticky.svg" alt="Sticky Note: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-sql-injection-bypass-a-packet-filter-firewall-but-not-a-waf-sticky.svg" alt="Sticky Note: How does SQL injection bypass a packet filter firewall but not a WAF?" width="30%">
 </a>
 
 
@@ -4569,14 +4569,14 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 
 ### Q21: Describe the full flow of a DDoS mitigation using Cloudflare.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-handwritten.svg" alt="Handwritten: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-handwritten.svg" alt="Handwritten: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-diagram.svg" alt="Diagram: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-diagram.svg" alt="Diagram: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-sticky.svg" alt="Sticky Note: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-full-flow-of-a-ddos-mitigation-using-cloudflare-sticky.svg" alt="Sticky Note: Describe the full flow of a DDoS mitigation using Cloudflare." width="30%">
 </a>
 
 
@@ -4584,14 +4584,14 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 
 ### Q22: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-handwritten.svg" alt="Handwritten: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-handwritten.svg" alt="Handwritten: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-diagram.svg" alt="Diagram: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-diagram.svg" alt="Diagram: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-sticky.svg" alt="Sticky Note: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-difference-between-802-1x-and-mac-authentication-bypass-mab-sticky.svg" alt="Sticky Note: What is the difference between 802.1X and MAC Authentication Bypass (MAB)?" width="30%">
 </a>
 
 
@@ -4599,14 +4599,14 @@ tunnel = shannon_entropy("3f7a2b9c1d5e8f0a")  # ~4.0
 
 ### Q23: Explain the NIST SP 800-207 zero trust architecture core components.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-handwritten.svg" alt="Handwritten: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-handwritten.svg" alt="Handwritten: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-diagram.svg" alt="Diagram: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-diagram.svg" alt="Diagram: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-sticky.svg" alt="Sticky Note: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-nist-sp-800-207-zero-trust-architecture-core-components-sticky.svg" alt="Sticky Note: Explain the NIST SP 800-207 zero trust architecture core components." width="30%">
 </a>
 
 
@@ -4622,14 +4622,14 @@ Communication flow: User → PEP (requests access) → PE evaluates (identity + 
 
 ### Q24: How does the WPA3 SAE handshake prevent offline dictionary attacks?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-handwritten.svg" alt="Handwritten: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-handwritten.svg" alt="Handwritten: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-diagram.svg" alt="Diagram: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-diagram.svg" alt="Diagram: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-sticky.svg" alt="Sticky Note: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/how-does-the-wpa3-sae-handshake-prevent-offline-dictionary-attacks-sticky.svg" alt="Sticky Note: How does the WPA3 SAE handshake prevent offline dictionary attacks?" width="30%">
 </a>
 
 
@@ -4637,14 +4637,14 @@ Communication flow: User → PEP (requests access) → PE evaluates (identity + 
 
 ### Q25: What is the TCP three-way handshake and how does it enable SYN flood attacks?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-handwritten.svg" alt="Handwritten: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-handwritten.svg" alt="Handwritten: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-diagram.svg" alt="Diagram: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-diagram.svg" alt="Diagram: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-sticky.svg" alt="Sticky Note: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-is-the-tcp-three-way-handshake-and-how-does-it-enable-syn-flood-attacks-sticky.svg" alt="Sticky Note: What is the TCP three-way handshake and how does it enable SYN flood attacks?" width="30%">
 </a>
 
 
@@ -4657,14 +4657,14 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 
 ### Q26: Compare Snort and Suricata rule languages. When would you use each?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-diagram.svg" alt="Diagram: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-diagram.svg" alt="Diagram: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/compare-snort-and-suricata-rule-languages-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare Snort and Suricata rule languages. When would you use each?" width="30%">
 </a>
 
 
@@ -4677,14 +4677,14 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 
 ### Q27: Explain how BGP route leaks happen and the difference from BGP hijacking.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-handwritten.svg" alt="Handwritten: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-handwritten.svg" alt="Handwritten: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-diagram.svg" alt="Diagram: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-diagram.svg" alt="Diagram: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-sticky.svg" alt="Sticky Note: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-how-bgp-route-leaks-happen-and-the-difference-from-bgp-hijacking-sticky.svg" alt="Sticky Note: Explain how BGP route leaks happen and the difference from BGP hijacking." width="30%">
 </a>
 
 
@@ -4692,14 +4692,14 @@ In a SYN flood, the attacker sends thousands of SYN packets with spoofed source 
 
 ### Q28: Describe the contents of the Snort/Suricata rule header and options.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-handwritten.svg" alt="Handwritten: Describe the contents of the Snort/Suricata rule header and options." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-handwritten.svg" alt="Handwritten: Describe the contents of the Snort/Suricata rule header and options." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-diagram.svg" alt="Diagram: Describe the contents of the Snort/Suricata rule header and options." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-diagram.svg" alt="Diagram: Describe the contents of the Snort/Suricata rule header and options." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-sticky.svg" alt="Sticky Note: Describe the contents of the Snort/Suricata rule header and options." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/describe-the-contents-of-the-snort-suricata-rule-header-and-options-sticky.svg" alt="Sticky Note: Describe the contents of the Snort/Suricata rule header and options." width="30%">
 </a>
 
 
@@ -4724,14 +4724,14 @@ Options (partial list):
 
 ### Q29: What network security controls would you implement at each layer of the OSI model?
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-handwritten.svg" alt="Handwritten: What network security controls would you implement at each layer of the OSI model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-handwritten.svg" alt="Handwritten: What network security controls would you implement at each layer of the OSI model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-diagram.svg" alt="Diagram: What network security controls would you implement at each layer of the OSI model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-diagram.svg" alt="Diagram: What network security controls would you implement at each layer of the OSI model?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-sticky.svg" alt="Sticky Note: What network security controls would you implement at each layer of the OSI model?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/what-network-security-controls-would-you-implement-at-each-layer-of-the-osi-model-sticky.svg" alt="Sticky Note: What network security controls would you implement at each layer of the OSI model?" width="30%">
 </a>
 
 
@@ -4745,14 +4745,14 @@ Options (partial list):
 
 ### Q30: Explain the full Stuxnet attack chain and why it was so significant.
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-handwritten.svg" alt="Handwritten: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-handwritten.svg" alt="Handwritten: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-diagram.svg" alt="Diagram: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-diagram.svg" alt="Diagram: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-sticky.svg" alt="Sticky Note: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/explain-the-full-stuxnet-attack-chain-and-why-it-was-so-significant-sticky.svg" alt="Sticky Note: Explain the full Stuxnet attack chain and why it was so significant." width="30%">
 </a>
 
 
@@ -4764,14 +4764,14 @@ Options (partial list):
 
 ### 26.1 Complete Network Security Test Lab
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-handwritten.svg" alt="Handwritten: 26.1 Complete Network Security Test Lab" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-handwritten.svg" alt="Handwritten: 26.1 Complete Network Security Test Lab" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-diagram.svg" alt="Diagram: 26.1 Complete Network Security Test Lab" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-diagram.svg" alt="Diagram: 26.1 Complete Network Security Test Lab" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-sticky.svg" alt="Sticky Note: 26.1 Complete Network Security Test Lab" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/26-1-complete-network-security-test-lab-sticky.svg" alt="Sticky Note: 26.1 Complete Network Security Test Lab" width="30%">
 </a>
 
 
@@ -4822,14 +4822,14 @@ tshark -r capture.pcap -Y "dns.qry.name" -T fields -e dns.qry.name | awk '{print
 
 ### 1. Firewall Rule Analyzer
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-handwritten.svg" alt="Handwritten: 1. Firewall Rule Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-handwritten.svg" alt="Handwritten: 1. Firewall Rule Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-diagram.svg" alt="Diagram: 1. Firewall Rule Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-diagram.svg" alt="Diagram: 1. Firewall Rule Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-sticky.svg" alt="Sticky Note: 1. Firewall Rule Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-rule-analyzer-sticky.svg" alt="Sticky Note: 1. Firewall Rule Analyzer" width="30%">
 </a>
 
 
@@ -4936,14 +4936,14 @@ result.recommendations.forEach(r => console.log(`  • ${r}`));
 
 ### 2. IDS/IPS Rule Engine
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-handwritten.svg" alt="Handwritten: 2. IDS/IPS Rule Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-handwritten.svg" alt="Handwritten: 2. IDS/IPS Rule Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-diagram.svg" alt="Diagram: 2. IDS/IPS Rule Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-diagram.svg" alt="Diagram: 2. IDS/IPS Rule Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-sticky.svg" alt="Sticky Note: 2. IDS/IPS Rule Engine" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-ids-ips-rule-engine-sticky.svg" alt="Sticky Note: 2. IDS/IPS Rule Engine" width="30%">
 </a>
 
 
@@ -5121,14 +5121,14 @@ alerts.forEach(a => console.log(`  [${a.severity}] ${a.description} → action: 
 
 ### 1. Firewall Architecture — DMZ with Layered Defense
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-handwritten.svg" alt="Handwritten: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-handwritten.svg" alt="Handwritten: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-diagram.svg" alt="Diagram: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-diagram.svg" alt="Diagram: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-sticky.svg" alt="Sticky Note: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/1-firewall-architecture-dmz-with-layered-defense-sticky.svg" alt="Sticky Note: 1. Firewall Architecture — DMZ with Layered Defense" width="30%">
 </a>
 
 
@@ -5188,14 +5188,14 @@ flowchart TB
 
 ### 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode
 
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-handwritten.svg" alt="Handwritten: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-handwritten.svg" alt="Handwritten: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-diagram.svg" alt="Diagram: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-diagram.svg" alt="Diagram: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-sticky.svg" alt="Sticky Note: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/03-network-security/2-vpn-tunnel-establishment-ipsec-ikev1-main-mode-sticky.svg" alt="Sticky Note: 2. VPN Tunnel Establishment — IPSec IKEv1 Main Mode" width="30%">
 </a>
 
 

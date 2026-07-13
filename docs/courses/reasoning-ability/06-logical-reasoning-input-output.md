@@ -20,14 +20,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance in IBPS SO IT Officer Prelims
 
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
 </a>
 
 
@@ -42,14 +42,14 @@ These questions are generally less time-consuming than puzzles and can be solved
 
 ### 2. Statement-Conclusion (Analytical Reasoning)
 
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-handwritten.svg" alt="Handwritten: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-handwritten.svg" alt="Handwritten: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-diagram.svg" alt="Diagram: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-diagram.svg" alt="Diagram: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-sticky.svg" alt="Sticky Note: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-sticky.svg" alt="Sticky Note: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ Invalid conclusion: "Company A has higher profits than Company C."
 
 ### 3. Statement-Assumptions
 
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-handwritten.svg" alt="Handwritten: 3. Statement-Assumptions" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-handwritten.svg" alt="Handwritten: 3. Statement-Assumptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-diagram.svg" alt="Diagram: 3. Statement-Assumptions" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-diagram.svg" alt="Diagram: 3. Statement-Assumptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-sticky.svg" alt="Sticky Note: 3. Statement-Assumptions" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-sticky.svg" alt="Sticky Note: 3. Statement-Assumptions" width="30%">
 </a>
 
 
@@ -167,14 +167,14 @@ Negation test: "The government does NOT have the money to invest." — Even if t
 
 ### 4. Cause-Effect Reasoning
 
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-handwritten.svg" alt="Handwritten: 4. Cause-Effect Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-handwritten.svg" alt="Handwritten: 4. Cause-Effect Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-diagram.svg" alt="Diagram: 4. Cause-Effect Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-diagram.svg" alt="Diagram: 4. Cause-Effect Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-sticky.svg" alt="Sticky Note: 4. Cause-Effect Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-sticky.svg" alt="Sticky Note: 4. Cause-Effect Reasoning" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ A cause-effect question presents a pair of events (I and II) and asks about the 
 
 ### 5. Statement-Arguments
 
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-handwritten.svg" alt="Handwritten: 5. Statement-Arguments" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-handwritten.svg" alt="Handwritten: 5. Statement-Arguments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-diagram.svg" alt="Diagram: 5. Statement-Arguments" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-diagram.svg" alt="Diagram: 5. Statement-Arguments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-sticky.svg" alt="Sticky Note: 5. Statement-Arguments" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-sticky.svg" alt="Sticky Note: 5. Statement-Arguments" width="30%">
 </a>
 
 
@@ -295,14 +295,14 @@ A statement is given followed by two arguments (for and against). The candidate 
 
 ### 6. Input-Output Machines
 
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-handwritten.svg" alt="Handwritten: 6. Input-Output Machines" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-handwritten.svg" alt="Handwritten: 6. Input-Output Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-diagram.svg" alt="Diagram: 6. Input-Output Machines" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-diagram.svg" alt="Diagram: 6. Input-Output Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-sticky.svg" alt="Sticky Note: 6. Input-Output Machines" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-sticky.svg" alt="Sticky Note: 6. Input-Output Machines" width="30%">
 </a>
 
 

@@ -46,14 +46,14 @@ flowchart LR
 
 ### 5.1 The CAP Theorem
 
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-handwritten.svg" alt="Handwritten: 5.1 The CAP Theorem" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-handwritten.svg" alt="Handwritten: 5.1 The CAP Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-diagram.svg" alt="Diagram: 5.1 The CAP Theorem" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-diagram.svg" alt="Diagram: 5.1 The CAP Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-sticky.svg" alt="Sticky Note: 5.1 The CAP Theorem" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-1-the-cap-theorem-sticky.svg" alt="Sticky Note: 5.1 The CAP Theorem" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ graph TB
 
 ### 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)
 
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-handwritten.svg" alt="Handwritten: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-handwritten.svg" alt="Handwritten: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-diagram.svg" alt="Diagram: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-diagram.svg" alt="Diagram: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-sticky.svg" alt="Sticky Note: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-2-managed-relational-databases-rds-cloud-sql-azure-sql-sticky.svg" alt="Sticky Note: 5.2 Managed Relational Databases (RDS, Cloud SQL, Azure SQL)" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ graph TB
 
 ### 5.3 NoSQL Databases
 
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-handwritten.svg" alt="Handwritten: 5.3 NoSQL Databases" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-handwritten.svg" alt="Handwritten: 5.3 NoSQL Databases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-diagram.svg" alt="Diagram: 5.3 NoSQL Databases" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-diagram.svg" alt="Diagram: 5.3 NoSQL Databases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-sticky.svg" alt="Sticky Note: 5.3 NoSQL Databases" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-3-nosql-databases-sticky.svg" alt="Sticky Note: 5.3 NoSQL Databases" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ console.log("Estimated monthly cost:", sessionTable.estimateMonthlyCost(), "USD"
 
 ### 5.4 In-Memory Caching
 
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-handwritten.svg" alt="Handwritten: 5.4 In-Memory Caching" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-handwritten.svg" alt="Handwritten: 5.4 In-Memory Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-diagram.svg" alt="Diagram: 5.4 In-Memory Caching" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-diagram.svg" alt="Diagram: 5.4 In-Memory Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-sticky.svg" alt="Sticky Note: 5.4 In-Memory Caching" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-4-in-memory-caching-sticky.svg" alt="Sticky Note: 5.4 In-Memory Caching" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ run();
 
 ### 5.5 Data Warehousing
 
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-handwritten.svg" alt="Handwritten: 5.5 Data Warehousing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-handwritten.svg" alt="Handwritten: 5.5 Data Warehousing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-diagram.svg" alt="Diagram: 5.5 Data Warehousing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-diagram.svg" alt="Diagram: 5.5 Data Warehousing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-sticky.svg" alt="Sticky Note: 5.5 Data Warehousing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-5-data-warehousing-sticky.svg" alt="Sticky Note: 5.5 Data Warehousing" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ run();
 
 ### 5.6 Multi-Tenancy Models
 
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-handwritten.svg" alt="Handwritten: 5.6 Multi-Tenancy Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-handwritten.svg" alt="Handwritten: 5.6 Multi-Tenancy Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-diagram.svg" alt="Diagram: 5.6 Multi-Tenancy Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-diagram.svg" alt="Diagram: 5.6 Multi-Tenancy Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-sticky.svg" alt="Sticky Note: 5.6 Multi-Tenancy Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/05-cloud-database/5-6-multi-tenancy-models-sticky.svg" alt="Sticky Note: 5.6 Multi-Tenancy Models" width="30%">
 </a>
 
 

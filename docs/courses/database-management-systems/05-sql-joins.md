@@ -46,14 +46,14 @@ flowchart LR
 
 ### 5.1 Introduction to Joins
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-handwritten.svg" alt="Handwritten: 5.1 Introduction to Joins" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-handwritten.svg" alt="Handwritten: 5.1 Introduction to Joins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-diagram.svg" alt="Diagram: 5.1 Introduction to Joins" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-diagram.svg" alt="Diagram: 5.1 Introduction to Joins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-sticky.svg" alt="Sticky Note: 5.1 Introduction to Joins" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-1-introduction-to-joins-sticky.svg" alt="Sticky Note: 5.1 Introduction to Joins" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ Joins are the heart of relational querying. Understanding them deeply is essenti
 
 ### Sample Tables Used Throughout This Chapter
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-handwritten.svg" alt="Handwritten: Sample Tables Used Throughout This Chapter" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-handwritten.svg" alt="Handwritten: Sample Tables Used Throughout This Chapter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-diagram.svg" alt="Diagram: Sample Tables Used Throughout This Chapter" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-diagram.svg" alt="Diagram: Sample Tables Used Throughout This Chapter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-sticky.svg" alt="Sticky Note: Sample Tables Used Throughout This Chapter" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/sample-tables-used-throughout-this-chapter-sticky.svg" alt="Sticky Note: Sample Tables Used Throughout This Chapter" width="30%">
 </a>
 
 
@@ -143,14 +143,14 @@ INSERT INTO departments VALUES
 
 ### 5.2 INNER JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-handwritten.svg" alt="Handwritten: 5.2 INNER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-handwritten.svg" alt="Handwritten: 5.2 INNER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-diagram.svg" alt="Diagram: 5.2 INNER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-diagram.svg" alt="Diagram: 5.2 INNER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-sticky.svg" alt="Sticky Note: 5.2 INNER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-2-inner-join-sticky.svg" alt="Sticky Note: 5.2 INNER JOIN" width="30%">
 </a>
 
 
@@ -432,14 +432,14 @@ for name, dept in hash_inner_join(employees, departments):
 
 ### 5.3 LEFT OUTER JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-handwritten.svg" alt="Handwritten: 5.3 LEFT OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-handwritten.svg" alt="Handwritten: 5.3 LEFT OUTER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-diagram.svg" alt="Diagram: 5.3 LEFT OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-diagram.svg" alt="Diagram: 5.3 LEFT OUTER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-sticky.svg" alt="Sticky Note: 5.3 LEFT OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-3-left-outer-join-sticky.svg" alt="Sticky Note: 5.3 LEFT OUTER JOIN" width="30%">
 </a>
 
 
@@ -675,14 +675,14 @@ Same complexity as INNER JOIN â†’ the difference is in **result cardinality
 
 ### 5.4 RIGHT OUTER JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-handwritten.svg" alt="Handwritten: 5.4 RIGHT OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-handwritten.svg" alt="Handwritten: 5.4 RIGHT OUTER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-diagram.svg" alt="Diagram: 5.4 RIGHT OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-diagram.svg" alt="Diagram: 5.4 RIGHT OUTER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-sticky.svg" alt="Sticky Note: 5.4 RIGHT OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-4-right-outer-join-sticky.svg" alt="Sticky Note: 5.4 RIGHT OUTER JOIN" width="30%">
 </a>
 
 
@@ -854,14 +854,14 @@ def right_join(employees, departments):
 
 ### 5.5 FULL OUTER JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-handwritten.svg" alt="Handwritten: 5.5 FULL OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-handwritten.svg" alt="Handwritten: 5.5 FULL OUTER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-diagram.svg" alt="Diagram: 5.5 FULL OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-diagram.svg" alt="Diagram: 5.5 FULL OUTER JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-sticky.svg" alt="Sticky Note: 5.5 FULL OUTER JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-5-full-outer-join-sticky.svg" alt="Sticky Note: 5.5 FULL OUTER JOIN" width="30%">
 </a>
 
 
@@ -1097,14 +1097,14 @@ def full_outer_join(employees, departments):
 
 ### 5.6 CROSS JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-handwritten.svg" alt="Handwritten: 5.6 CROSS JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-handwritten.svg" alt="Handwritten: 5.6 CROSS JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-diagram.svg" alt="Diagram: 5.6 CROSS JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-diagram.svg" alt="Diagram: 5.6 CROSS JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-sticky.svg" alt="Sticky Note: 5.6 CROSS JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-6-cross-join-sticky.svg" alt="Sticky Note: 5.6 CROSS JOIN" width="30%">
 </a>
 
 
@@ -1267,14 +1267,14 @@ def cross_join(employees, departments):
 
 ### 5.7 NATURAL JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-handwritten.svg" alt="Handwritten: 5.7 NATURAL JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-handwritten.svg" alt="Handwritten: 5.7 NATURAL JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-diagram.svg" alt="Diagram: 5.7 NATURAL JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-diagram.svg" alt="Diagram: 5.7 NATURAL JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-sticky.svg" alt="Sticky Note: 5.7 NATURAL JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-7-natural-join-sticky.svg" alt="Sticky Note: 5.7 NATURAL JOIN" width="30%">
 </a>
 
 
@@ -1439,14 +1439,14 @@ The join itself has the same complexity as INNER JOIN. The extra work is schema 
 
 ### 5.8 SELF JOIN
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-handwritten.svg" alt="Handwritten: 5.8 SELF JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-handwritten.svg" alt="Handwritten: 5.8 SELF JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-diagram.svg" alt="Diagram: 5.8 SELF JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-diagram.svg" alt="Diagram: 5.8 SELF JOIN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-sticky.svg" alt="Sticky Note: 5.8 SELF JOIN" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-8-self-join-sticky.svg" alt="Sticky Note: 5.8 SELF JOIN" width="30%">
 </a>
 
 
@@ -1632,14 +1632,14 @@ def self_join(employees):
 
 ### 5.9 SEMI JOIN (Logical)
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-handwritten.svg" alt="Handwritten: 5.9 SEMI JOIN (Logical)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-handwritten.svg" alt="Handwritten: 5.9 SEMI JOIN (Logical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-diagram.svg" alt="Diagram: 5.9 SEMI JOIN (Logical)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-diagram.svg" alt="Diagram: 5.9 SEMI JOIN (Logical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-sticky.svg" alt="Sticky Note: 5.9 SEMI JOIN (Logical)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-9-semi-join-logical-sticky.svg" alt="Sticky Note: 5.9 SEMI JOIN (Logical)" width="30%">
 </a>
 
 
@@ -1809,14 +1809,14 @@ def semi_join(employees, departments):
 
 ### 5.10 ANTI JOIN (Logical)
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-handwritten.svg" alt="Handwritten: 5.10 ANTI JOIN (Logical)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-handwritten.svg" alt="Handwritten: 5.10 ANTI JOIN (Logical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-diagram.svg" alt="Diagram: 5.10 ANTI JOIN (Logical)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-diagram.svg" alt="Diagram: 5.10 ANTI JOIN (Logical)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-sticky.svg" alt="Sticky Note: 5.10 ANTI JOIN (Logical)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-10-anti-join-logical-sticky.svg" alt="Sticky Note: 5.10 ANTI JOIN (Logical)" width="30%">
 </a>
 
 
@@ -2015,14 +2015,14 @@ def anti_join_left_is_null(employees, departments):
 
 ### 5.11 JOIN Types Comparison Table
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-handwritten.svg" alt="Handwritten: 5.11 JOIN Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-handwritten.svg" alt="Handwritten: 5.11 JOIN Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-diagram.svg" alt="Diagram: 5.11 JOIN Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-diagram.svg" alt="Diagram: 5.11 JOIN Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-sticky.svg" alt="Sticky Note: 5.11 JOIN Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-11-join-types-comparison-table-sticky.svg" alt="Sticky Note: 5.11 JOIN Types Comparison Table" width="30%">
 </a>
 
 
@@ -2043,14 +2043,14 @@ def anti_join_left_is_null(employees, departments):
 
 ### 5.12 JOIN vs Subquery Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-handwritten.svg" alt="Handwritten: 5.12 JOIN vs Subquery Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-handwritten.svg" alt="Handwritten: 5.12 JOIN vs Subquery Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-diagram.svg" alt="Diagram: 5.12 JOIN vs Subquery Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-diagram.svg" alt="Diagram: 5.12 JOIN vs Subquery Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-sticky.svg" alt="Sticky Note: 5.12 JOIN vs Subquery Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-12-join-vs-subquery-comparison-sticky.svg" alt="Sticky Note: 5.12 JOIN vs Subquery Comparison" width="30%">
 </a>
 
 
@@ -2092,14 +2092,14 @@ def anti_join_left_is_null(employees, departments):
 
 ### 5.13 Join Algorithms Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-handwritten.svg" alt="Handwritten: 5.13 Join Algorithms Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-handwritten.svg" alt="Handwritten: 5.13 Join Algorithms Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-diagram.svg" alt="Diagram: 5.13 Join Algorithms Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-diagram.svg" alt="Diagram: 5.13 Join Algorithms Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-sticky.svg" alt="Sticky Note: 5.13 Join Algorithms Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-13-join-algorithms-comparison-sticky.svg" alt="Sticky Note: 5.13 Join Algorithms Comparison" width="30%">
 </a>
 
 
@@ -2195,14 +2195,14 @@ WHILE i < outer_size AND j < inner_size:
 
 ### 5.14 SQL Execution with Joins (Optimizer Details)
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-handwritten.svg" alt="Handwritten: 5.14 SQL Execution with Joins (Optimizer Details)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-handwritten.svg" alt="Handwritten: 5.14 SQL Execution with Joins (Optimizer Details)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-diagram.svg" alt="Diagram: 5.14 SQL Execution with Joins (Optimizer Details)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-diagram.svg" alt="Diagram: 5.14 SQL Execution with Joins (Optimizer Details)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-sticky.svg" alt="Sticky Note: 5.14 SQL Execution with Joins (Optimizer Details)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-14-sql-execution-with-joins-optimizer-details-sticky.svg" alt="Sticky Note: 5.14 SQL Execution with Joins (Optimizer Details)" width="30%">
 </a>
 
 
@@ -2293,14 +2293,14 @@ EXPLAIN SELECT * FROM employees e JOIN departments d ON e.dept_id = d.dept_id;
 
 ### 5.15 Subqueries (Original content preserved and expanded)
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-handwritten.svg" alt="Handwritten: 5.15 Subqueries (Original content preserved and expanded)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-handwritten.svg" alt="Handwritten: 5.15 Subqueries (Original content preserved and expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-diagram.svg" alt="Diagram: 5.15 Subqueries (Original content preserved and expanded)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-diagram.svg" alt="Diagram: 5.15 Subqueries (Original content preserved and expanded)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-sticky.svg" alt="Sticky Note: 5.15 Subqueries (Original content preserved and expanded)" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-15-subqueries-original-content-preserved-and-expanded-sticky.svg" alt="Sticky Note: 5.15 Subqueries (Original content preserved and expanded)" width="30%">
 </a>
 
 
@@ -2354,14 +2354,14 @@ LIMIT 3;
 
 ### 5.16 EXISTS and NOT EXISTS
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-handwritten.svg" alt="Handwritten: 5.16 EXISTS and NOT EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-handwritten.svg" alt="Handwritten: 5.16 EXISTS and NOT EXISTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-diagram.svg" alt="Diagram: 5.16 EXISTS and NOT EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-diagram.svg" alt="Diagram: 5.16 EXISTS and NOT EXISTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-sticky.svg" alt="Sticky Note: 5.16 EXISTS and NOT EXISTS" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-16-exists-and-not-exists-sticky.svg" alt="Sticky Note: 5.16 EXISTS and NOT EXISTS" width="30%">
 </a>
 
 
@@ -2397,14 +2397,14 @@ WHERE NOT EXISTS (
 
 ### 5.17 Correlated Subqueries
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-handwritten.svg" alt="Handwritten: 5.17 Correlated Subqueries" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-handwritten.svg" alt="Handwritten: 5.17 Correlated Subqueries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-diagram.svg" alt="Diagram: 5.17 Correlated Subqueries" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-diagram.svg" alt="Diagram: 5.17 Correlated Subqueries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-sticky.svg" alt="Sticky Note: 5.17 Correlated Subqueries" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-17-correlated-subqueries-sticky.svg" alt="Sticky Note: 5.17 Correlated Subqueries" width="30%">
 </a>
 
 
@@ -2433,14 +2433,14 @@ WHERE p.price > (
 
 ### 5.18 ANY and ALL Operators
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-handwritten.svg" alt="Handwritten: 5.18 ANY and ALL Operators" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-handwritten.svg" alt="Handwritten: 5.18 ANY and ALL Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-diagram.svg" alt="Diagram: 5.18 ANY and ALL Operators" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-diagram.svg" alt="Diagram: 5.18 ANY and ALL Operators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-sticky.svg" alt="Sticky Note: 5.18 ANY and ALL Operators" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-18-any-and-all-operators-sticky.svg" alt="Sticky Note: 5.18 ANY and ALL Operators" width="30%">
 </a>
 
 
@@ -2471,14 +2471,14 @@ WHERE salary > ALL (
 
 ### 5.19 Join Performance Considerations
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-handwritten.svg" alt="Handwritten: 5.19 Join Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-handwritten.svg" alt="Handwritten: 5.19 Join Performance Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-diagram.svg" alt="Diagram: 5.19 Join Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-diagram.svg" alt="Diagram: 5.19 Join Performance Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-sticky.svg" alt="Sticky Note: 5.19 Join Performance Considerations" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-19-join-performance-considerations-sticky.svg" alt="Sticky Note: 5.19 Join Performance Considerations" width="30%">
 </a>
 
 
@@ -2522,14 +2522,14 @@ WHERE o.order_id IS NULL;
 
 ### 5.20 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-handwritten.svg" alt="Handwritten: 5.20 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-handwritten.svg" alt="Handwritten: 5.20 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-diagram.svg" alt="Diagram: 5.20 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-diagram.svg" alt="Diagram: 5.20 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-sticky.svg" alt="Sticky Note: 5.20 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-20-interview-corner-sticky.svg" alt="Sticky Note: 5.20 Interview Corner" width="30%">
 </a>
 
 
@@ -2606,14 +2606,14 @@ It's dangerous when **accidentally** produced by forgetting a WHERE clause in th
 
 ### 5.21 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-handwritten.svg" alt="Handwritten: 5.21 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-handwritten.svg" alt="Handwritten: 5.21 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-diagram.svg" alt="Diagram: 5.21 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-diagram.svg" alt="Diagram: 5.21 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-sticky.svg" alt="Sticky Note: 5.21 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/05-sql-joins/5-21-applications-in-real-systems-sticky.svg" alt="Sticky Note: 5.21 Applications in Real Systems" width="30%">
 </a>
 
 

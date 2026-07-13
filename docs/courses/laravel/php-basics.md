@@ -125,14 +125,14 @@ By the end of this chapter, students will be able to:
 
 ### 1.1 PHP Syntax and Variables
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-handwritten.svg" alt="Handwritten: 1.1 PHP Syntax and Variables" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-handwritten.svg" alt="Handwritten: 1.1 PHP Syntax and Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-diagram.svg" alt="Diagram: 1.1 PHP Syntax and Variables" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-diagram.svg" alt="Diagram: 1.1 PHP Syntax and Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-sticky.svg" alt="Sticky Note: 1.1 PHP Syntax and Variables" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-1-php-syntax-and-variables-sticky.svg" alt="Sticky Note: 1.1 PHP Syntax and Variables" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ for ($i = 0; $i < 10; $i++) {
 
 ### 1.2 Arrays
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-2-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-2-arrays-handwritten.svg" alt="Handwritten: 1.2 Arrays" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-2-arrays-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-2-arrays-handwritten.svg" alt="Handwritten: 1.2 Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-2-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-2-arrays-diagram.svg" alt="Diagram: 1.2 Arrays" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-2-arrays-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-2-arrays-diagram.svg" alt="Diagram: 1.2 Arrays" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-2-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-2-arrays-sticky.svg" alt="Sticky Note: 1.2 Arrays" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-2-arrays-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-2-arrays-sticky.svg" alt="Sticky Note: 1.2 Arrays" width="30%">
 </a>
 
 
@@ -740,14 +740,14 @@ echo "$head, [" . implode(',', $tail) . "]"; // 1, [2,3,4,5]
 
 ### 1.3 Functions
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-3-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-3-functions-handwritten.svg" alt="Handwritten: 1.3 Functions" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-3-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-3-functions-handwritten.svg" alt="Handwritten: 1.3 Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-3-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-3-functions-diagram.svg" alt="Diagram: 1.3 Functions" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-3-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-3-functions-diagram.svg" alt="Diagram: 1.3 Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-3-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-3-functions-sticky.svg" alt="Sticky Note: 1.3 Functions" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-3-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-3-functions-sticky.svg" alt="Sticky Note: 1.3 Functions" width="30%">
 </a>
 
 
@@ -1118,14 +1118,14 @@ $cubes = array_map(MathHelper::cube(...), [1, 2, 3]);
 
 ### 1.4 Object-Oriented Programming
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-handwritten.svg" alt="Handwritten: 1.4 Object-Oriented Programming" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-handwritten.svg" alt="Handwritten: 1.4 Object-Oriented Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-diagram.svg" alt="Diagram: 1.4 Object-Oriented Programming" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-diagram.svg" alt="Diagram: 1.4 Object-Oriented Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-sticky.svg" alt="Sticky Note: 1.4 Object-Oriented Programming" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-4-object-oriented-programming-sticky.svg" alt="Sticky Note: 1.4 Object-Oriented Programming" width="30%">
 </a>
 
 
@@ -1719,14 +1719,14 @@ echo $obj('x', 'y');        // Calls __invoke
 
 ### 1.5 Namespaces and Autoloading
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-handwritten.svg" alt="Handwritten: 1.5 Namespaces and Autoloading" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-handwritten.svg" alt="Handwritten: 1.5 Namespaces and Autoloading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-diagram.svg" alt="Diagram: 1.5 Namespaces and Autoloading" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-diagram.svg" alt="Diagram: 1.5 Namespaces and Autoloading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-sticky.svg" alt="Sticky Note: 1.5 Namespaces and Autoloading" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-5-namespaces-and-autoloading-sticky.svg" alt="Sticky Note: 1.5 Namespaces and Autoloading" width="30%">
 </a>
 
 
@@ -1863,14 +1863,14 @@ Laravel's `composer.json` maps `App\` to `app/`. When you create a class at `app
 
 ### 1.6 Error Handling
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-handwritten.svg" alt="Handwritten: 1.6 Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-handwritten.svg" alt="Handwritten: 1.6 Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-diagram.svg" alt="Diagram: 1.6 Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-diagram.svg" alt="Diagram: 1.6 Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-sticky.svg" alt="Sticky Note: 1.6 Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-6-error-handling-sticky.svg" alt="Sticky Note: 1.6 Error Handling" width="30%">
 </a>
 
 
@@ -2115,14 +2115,14 @@ try {
 
 ### 1.7 Composer
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-7-composer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-7-composer-handwritten.svg" alt="Handwritten: 1.7 Composer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-7-composer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-7-composer-handwritten.svg" alt="Handwritten: 1.7 Composer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-7-composer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-7-composer-diagram.svg" alt="Diagram: 1.7 Composer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-7-composer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-7-composer-diagram.svg" alt="Diagram: 1.7 Composer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-7-composer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-7-composer-sticky.svg" alt="Sticky Note: 1.7 Composer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-7-composer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-7-composer-sticky.svg" alt="Sticky Note: 1.7 Composer" width="30%">
 </a>
 
 
@@ -2315,14 +2315,14 @@ composer outdated
 
 ### 1.8 PHP 8.3 Features
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-handwritten.svg" alt="Handwritten: 1.8 PHP 8.3 Features" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-handwritten.svg" alt="Handwritten: 1.8 PHP 8.3 Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-diagram.svg" alt="Diagram: 1.8 PHP 8.3 Features" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-diagram.svg" alt="Diagram: 1.8 PHP 8.3 Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-sticky.svg" alt="Sticky Note: 1.8 PHP 8.3 Features" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-8-php-8-3-features-sticky.svg" alt="Sticky Note: 1.8 PHP 8.3 Features" width="30%">
 </a>
 
 
@@ -2780,14 +2780,14 @@ $fiber->resume('hello'); // Resumed with: hello
 
 ### 1.9 Design Patterns for Laravel Developers
 
-<a href="../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-handwritten.svg" alt="Handwritten: 1.9 Design Patterns for Laravel Developers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-handwritten.svg" alt="Handwritten: 1.9 Design Patterns for Laravel Developers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-diagram.svg" alt="Diagram: 1.9 Design Patterns for Laravel Developers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-diagram.svg" alt="Diagram: 1.9 Design Patterns for Laravel Developers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-sticky.svg" alt="Sticky Note: 1.9 Design Patterns for Laravel Developers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/php-basics/1-9-design-patterns-for-laravel-developers-sticky.svg" alt="Sticky Note: 1.9 Design Patterns for Laravel Developers" width="30%">
 </a>
 
 

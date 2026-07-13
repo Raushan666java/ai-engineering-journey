@@ -16,14 +16,14 @@ After completing this chapter, you will be able to:
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@ After completing this chapter, you will be able to:
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ Imagine an invisible chef living in your kitchen. Every morning, this chef learn
 
 ### What is Each One?
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-handwritten.svg" alt="Handwritten: What is Each One?" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-handwritten.svg" alt="Handwritten: What is Each One?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-diagram.svg" alt="Diagram: What is Each One?" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-diagram.svg" alt="Diagram: What is Each One?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-sticky.svg" alt="Sticky Note: What is Each One?" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/what-is-each-one-sticky.svg" alt="Sticky Note: What is Each One?" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ Imagine an invisible chef living in your kitchen. Every morning, this chef learn
 
 ### Venn Diagram
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-handwritten.svg" alt="Handwritten: Venn Diagram" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-handwritten.svg" alt="Handwritten: Venn Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-diagram.svg" alt="Diagram: Venn Diagram" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-diagram.svg" alt="Diagram: Venn Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-sticky.svg" alt="Sticky Note: Venn Diagram" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/venn-diagram-sticky.svg" alt="Sticky Note: Venn Diagram" width="30%">
 </a>
 
 
@@ -128,14 +128,14 @@ graph TB
 
 ### Comparison Table
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ graph TB
 
 ### Simple Implementation: Linear Regression in C++, Python, Java
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-handwritten.svg" alt="Handwritten: Simple Implementation: Linear Regression in C++, Python, Java" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-handwritten.svg" alt="Handwritten: Simple Implementation: Linear Regression in C++, Python, Java" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-diagram.svg" alt="Diagram: Simple Implementation: Linear Regression in C++, Python, Java" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-diagram.svg" alt="Diagram: Simple Implementation: Linear Regression in C++, Python, Java" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-sticky.svg" alt="Sticky Note: Simple Implementation: Linear Regression in C++, Python, Java" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/simple-implementation-linear-regression-in-c-python-java-sticky.svg" alt="Sticky Note: Simple Implementation: Linear Regression in C++, Python, Java" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ public class LinearRegression {
 
 ### Step-by-Step Dry Run: Gradient Descent Trace
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Gradient Descent Trace" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Gradient Descent Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Gradient Descent Trace" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Gradient Descent Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Gradient Descent Trace" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-gradient-descent-trace-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Gradient Descent Trace" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ Initial state: m=0.0, b=0.0, lr=0.01, data=[(1,50), (2,55), (3,65), (4,70), (5,7
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -345,14 +345,14 @@ Initial state: m=0.0, b=0.0, lr=0.01, data=[(1,50), (2,55), (3,65), (4,70), (5,7
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -367,14 +367,14 @@ Initial state: m=0.0, b=0.0, lr=0.01, data=[(1,50), (2,55), (3,65), (4,70), (5,7
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -395,14 +395,14 @@ Initial state: m=0.0, b=0.0, lr=0.01, data=[(1,50), (2,55), (3,65), (4,70), (5,7
 
 ### Recommendation Systems
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-handwritten.svg" alt="Handwritten: Recommendation Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-handwritten.svg" alt="Handwritten: Recommendation Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-diagram.svg" alt="Diagram: Recommendation Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-diagram.svg" alt="Diagram: Recommendation Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-sticky.svg" alt="Sticky Note: Recommendation Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/recommendation-systems-sticky.svg" alt="Sticky Note: Recommendation Systems" width="30%">
 </a>
 
 
@@ -434,14 +434,14 @@ FUNCTION recommend(user_id, all_items, user_item_matrix):
 
 ### Fraud Detection
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-handwritten.svg" alt="Handwritten: Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-handwritten.svg" alt="Handwritten: Fraud Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-diagram.svg" alt="Diagram: Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-diagram.svg" alt="Diagram: Fraud Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-sticky.svg" alt="Sticky Note: Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/fraud-detection-sticky.svg" alt="Sticky Note: Fraud Detection" width="30%">
 </a>
 
 
@@ -481,14 +481,14 @@ FUNCTION score_transaction(transaction, user_history, global_stats):
 
 ### Computer Vision
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-handwritten.svg" alt="Handwritten: Computer Vision" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-handwritten.svg" alt="Handwritten: Computer Vision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-diagram.svg" alt="Diagram: Computer Vision" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-diagram.svg" alt="Diagram: Computer Vision" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-sticky.svg" alt="Sticky Note: Computer Vision" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/computer-vision-sticky.svg" alt="Sticky Note: Computer Vision" width="30%">
 </a>
 
 
@@ -520,14 +520,14 @@ def classify_image(image_path):
 
 ### Natural Language Processing
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-handwritten.svg" alt="Handwritten: Natural Language Processing" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-handwritten.svg" alt="Handwritten: Natural Language Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-diagram.svg" alt="Diagram: Natural Language Processing" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-diagram.svg" alt="Diagram: Natural Language Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-sticky.svg" alt="Sticky Note: Natural Language Processing" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/natural-language-processing-sticky.svg" alt="Sticky Note: Natural Language Processing" width="30%">
 </a>
 
 
@@ -553,14 +553,14 @@ print(preprocess_text("Check out my blog at https://example.com! It's great."))
 
 ### Advantages & Disadvantages of AI Systems
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of AI Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of AI Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-diagram.svg" alt="Diagram: Advantages & Disadvantages of AI Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-diagram.svg" alt="Diagram: Advantages & Disadvantages of AI Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of AI Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-systems-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of AI Systems" width="30%">
 </a>
 
 
@@ -575,14 +575,14 @@ print(preprocess_text("Check out my blog at https://example.com! It's great."))
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -602,14 +602,14 @@ print(preprocess_text("Check out my blog at https://example.com! It's great."))
 
 ### The 7 Stages
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-handwritten.svg" alt="Handwritten: The 7 Stages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-handwritten.svg" alt="Handwritten: The 7 Stages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-diagram.svg" alt="Diagram: The 7 Stages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-diagram.svg" alt="Diagram: The 7 Stages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-sticky.svg" alt="Sticky Note: The 7 Stages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/the-7-stages-sticky.svg" alt="Sticky Note: The 7 Stages" width="30%">
 </a>
 
 
@@ -626,14 +626,14 @@ flowchart TB
 
 ### Stage Details
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/stage-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/stage-details-handwritten.svg" alt="Handwritten: Stage Details" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/stage-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/stage-details-handwritten.svg" alt="Handwritten: Stage Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/stage-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/stage-details-diagram.svg" alt="Diagram: Stage Details" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/stage-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/stage-details-diagram.svg" alt="Diagram: Stage Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/stage-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/stage-details-sticky.svg" alt="Sticky Note: Stage Details" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/stage-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/stage-details-sticky.svg" alt="Sticky Note: Stage Details" width="30%">
 </a>
 
 
@@ -653,14 +653,14 @@ flowchart TB
 
 ### Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-handwritten.svg" alt="Handwritten: Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-handwritten.svg" alt="Handwritten: Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-diagram.svg" alt="Diagram: Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-diagram.svg" alt="Diagram: Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-sticky.svg" alt="Sticky Note: Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/pipeline-pseudocode-sticky.svg" alt="Sticky Note: Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -705,14 +705,14 @@ FUNCTION ai_pipeline(raw_data_path, config):
 
 ### Step-by-Step Dry Run: AI Pipeline Trace
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: AI Pipeline Trace" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: AI Pipeline Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-diagram.svg" alt="Diagram: Step-by-Step Dry Run: AI Pipeline Trace" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-diagram.svg" alt="Diagram: Step-by-Step Dry Run: AI Pipeline Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: AI Pipeline Trace" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/step-by-step-dry-run-ai-pipeline-trace-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: AI Pipeline Trace" width="30%">
 </a>
 
 
@@ -733,14 +733,14 @@ FUNCTION ai_pipeline(raw_data_path, config):
 
 ### Complexity Analysis per Stage
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-handwritten.svg" alt="Handwritten: Complexity Analysis per Stage" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-handwritten.svg" alt="Handwritten: Complexity Analysis per Stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-diagram.svg" alt="Diagram: Complexity Analysis per Stage" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-diagram.svg" alt="Diagram: Complexity Analysis per Stage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-sticky.svg" alt="Sticky Note: Complexity Analysis per Stage" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/complexity-analysis-per-stage-sticky.svg" alt="Sticky Note: Complexity Analysis per Stage" width="30%">
 </a>
 
 
@@ -756,14 +756,14 @@ FUNCTION ai_pipeline(raw_data_path, config):
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -777,14 +777,14 @@ FUNCTION ai_pipeline(raw_data_path, config):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -806,14 +806,14 @@ FUNCTION ai_pipeline(raw_data_path, config):
 
 ### Sources and Collection Methods
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-handwritten.svg" alt="Handwritten: Sources and Collection Methods" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-handwritten.svg" alt="Handwritten: Sources and Collection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-diagram.svg" alt="Diagram: Sources and Collection Methods" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-diagram.svg" alt="Diagram: Sources and Collection Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-sticky.svg" alt="Sticky Note: Sources and Collection Methods" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/sources-and-collection-methods-sticky.svg" alt="Sticky Note: Sources and Collection Methods" width="30%">
 </a>
 
 
@@ -828,14 +828,14 @@ FUNCTION ai_pipeline(raw_data_path, config):
 
 ### Data Validation in C++, Python, Java
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-handwritten.svg" alt="Handwritten: Data Validation in C++, Python, Java" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-handwritten.svg" alt="Handwritten: Data Validation in C++, Python, Java" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-diagram.svg" alt="Diagram: Data Validation in C++, Python, Java" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-diagram.svg" alt="Diagram: Data Validation in C++, Python, Java" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-sticky.svg" alt="Sticky Note: Data Validation in C++, Python, Java" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/data-validation-in-c-python-java-sticky.svg" alt="Sticky Note: Data Validation in C++, Python, Java" width="30%">
 </a>
 
 
@@ -974,14 +974,14 @@ public class DataValidator {
 
 ### Handling Missing Data → Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-handwritten.svg" alt="Handwritten: Handling Missing Data → Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-handwritten.svg" alt="Handwritten: Handling Missing Data → Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-diagram.svg" alt="Diagram: Handling Missing Data → Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-diagram.svg" alt="Diagram: Handling Missing Data → Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-sticky.svg" alt="Sticky Note: Handling Missing Data → Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/handling-missing-data-pseudocode-sticky.svg" alt="Sticky Note: Handling Missing Data → Pseudocode" width="30%">
 </a>
 
 
@@ -1018,14 +1018,14 @@ FUNCTION handle_missing_data(df, strategy_per_column):
 
 ### Advantages & Disadvantages of Data Preparation
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Data Preparation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Data Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-diagram.svg" alt="Diagram: Advantages & Disadvantages of Data Preparation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-diagram.svg" alt="Diagram: Advantages & Disadvantages of Data Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Data Preparation" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-data-preparation-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Data Preparation" width="30%">
 </a>
 
 
@@ -1039,14 +1039,14 @@ FUNCTION handle_missing_data(df, strategy_per_column):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1067,14 +1067,14 @@ FUNCTION handle_missing_data(df, strategy_per_column):
 
 ### Deployment Strategies
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-handwritten.svg" alt="Handwritten: Deployment Strategies" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-handwritten.svg" alt="Handwritten: Deployment Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-diagram.svg" alt="Diagram: Deployment Strategies" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-diagram.svg" alt="Diagram: Deployment Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-sticky.svg" alt="Sticky Note: Deployment Strategies" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/deployment-strategies-sticky.svg" alt="Sticky Note: Deployment Strategies" width="30%">
 </a>
 
 
@@ -1088,14 +1088,14 @@ FUNCTION handle_missing_data(df, strategy_per_column):
 
 ### Monitoring Metrics
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-handwritten.svg" alt="Handwritten: Monitoring Metrics" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-handwritten.svg" alt="Handwritten: Monitoring Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-diagram.svg" alt="Diagram: Monitoring Metrics" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-diagram.svg" alt="Diagram: Monitoring Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-sticky.svg" alt="Sticky Note: Monitoring Metrics" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/monitoring-metrics-sticky.svg" alt="Sticky Note: Monitoring Metrics" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ FUNCTION handle_missing_data(df, strategy_per_column):
 
 ### REST API Deployment (Python → FastAPI)
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-handwritten.svg" alt="Handwritten: REST API Deployment (Python → FastAPI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-handwritten.svg" alt="Handwritten: REST API Deployment (Python → FastAPI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-diagram.svg" alt="Diagram: REST API Deployment (Python → FastAPI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-diagram.svg" alt="Diagram: REST API Deployment (Python → FastAPI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-sticky.svg" alt="Sticky Note: REST API Deployment (Python → FastAPI)" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/rest-api-deployment-python-fastapi-sticky.svg" alt="Sticky Note: REST API Deployment (Python → FastAPI)" width="30%">
 </a>
 
 
@@ -1187,14 +1187,14 @@ async def health():
 
 ### Java → Simple Model Serving Sketch
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-handwritten.svg" alt="Handwritten: Java → Simple Model Serving Sketch" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-handwritten.svg" alt="Handwritten: Java → Simple Model Serving Sketch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-diagram.svg" alt="Diagram: Java → Simple Model Serving Sketch" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-diagram.svg" alt="Diagram: Java → Simple Model Serving Sketch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-sticky.svg" alt="Sticky Note: Java → Simple Model Serving Sketch" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/java-simple-model-serving-sketch-sticky.svg" alt="Sticky Note: Java → Simple Model Serving Sketch" width="30%">
 </a>
 
 
@@ -1228,14 +1228,14 @@ public class ChurnController {
 
 ### C++ → On-Device Inference Sketch
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-handwritten.svg" alt="Handwritten: C++ → On-Device Inference Sketch" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-handwritten.svg" alt="Handwritten: C++ → On-Device Inference Sketch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-diagram.svg" alt="Diagram: C++ → On-Device Inference Sketch" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-diagram.svg" alt="Diagram: C++ → On-Device Inference Sketch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-sticky.svg" alt="Sticky Note: C++ → On-Device Inference Sketch" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/c-on-device-inference-sketch-sticky.svg" alt="Sticky Note: C++ → On-Device Inference Sketch" width="30%">
 </a>
 
 
@@ -1264,14 +1264,14 @@ public:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1293,14 +1293,14 @@ public:
 
 ### Key Principles
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/key-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/key-principles-handwritten.svg" alt="Handwritten: Key Principles" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/key-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/key-principles-handwritten.svg" alt="Handwritten: Key Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/key-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/key-principles-diagram.svg" alt="Diagram: Key Principles" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/key-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/key-principles-diagram.svg" alt="Diagram: Key Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/key-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/key-principles-sticky.svg" alt="Sticky Note: Key Principles" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/key-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/key-principles-sticky.svg" alt="Sticky Note: Key Principles" width="30%">
 </a>
 
 
@@ -1315,14 +1315,14 @@ public:
 
 ### Bias Detection Pseudocode
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-handwritten.svg" alt="Handwritten: Bias Detection Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-handwritten.svg" alt="Handwritten: Bias Detection Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-diagram.svg" alt="Diagram: Bias Detection Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-diagram.svg" alt="Diagram: Bias Detection Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-sticky.svg" alt="Sticky Note: Bias Detection Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/bias-detection-pseudocode-sticky.svg" alt="Sticky Note: Bias Detection Pseudocode" width="30%">
 </a>
 
 
@@ -1353,14 +1353,14 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 ### Advantages & Disadvantages of AI Ethics Integration
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of AI Ethics Integration" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of AI Ethics Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-diagram.svg" alt="Diagram: Advantages & Disadvantages of AI Ethics Integration" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-diagram.svg" alt="Diagram: Advantages & Disadvantages of AI Ethics Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of AI Ethics Integration" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/advantages-disadvantages-of-ai-ethics-integration-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of AI Ethics Integration" width="30%">
 </a>
 
 
@@ -1374,14 +1374,14 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1399,14 +1399,14 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 ### Common AI Interview Questions
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-handwritten.svg" alt="Handwritten: Common AI Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-handwritten.svg" alt="Handwritten: Common AI Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-diagram.svg" alt="Diagram: Common AI Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-diagram.svg" alt="Diagram: Common AI Interview Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-sticky.svg" alt="Sticky Note: Common AI Interview Questions" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/common-ai-interview-questions-sticky.svg" alt="Sticky Note: Common AI Interview Questions" width="30%">
 </a>
 
 
@@ -1452,14 +1452,14 @@ FUNCTION audit_model_for_bias(model, test_data, sensitive_attributes, metric):
 
 ### Model Selection Criteria Checklist
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-handwritten.svg" alt="Handwritten: Model Selection Criteria Checklist" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-handwritten.svg" alt="Handwritten: Model Selection Criteria Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-diagram.svg" alt="Diagram: Model Selection Criteria Checklist" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-diagram.svg" alt="Diagram: Model Selection Criteria Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-sticky.svg" alt="Sticky Note: Model Selection Criteria Checklist" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/model-selection-criteria-checklist-sticky.svg" alt="Sticky Note: Model Selection Criteria Checklist" width="30%">
 </a>
 
 
@@ -1504,14 +1504,14 @@ pip install numpy pandas scikit-learn matplotlib jupyter
 
 ### LangChain Quick Start
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-handwritten.svg" alt="Handwritten: LangChain Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-handwritten.svg" alt="Handwritten: LangChain Quick Start" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-diagram.svg" alt="Diagram: LangChain Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-diagram.svg" alt="Diagram: LangChain Quick Start" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-sticky.svg" alt="Sticky Note: LangChain Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/langchain-quick-start-sticky.svg" alt="Sticky Note: LangChain Quick Start" width="30%">
 </a>
 
 
@@ -1526,14 +1526,14 @@ print(response.content)
 
 ### OpenCV Quick Start
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-handwritten.svg" alt="Handwritten: OpenCV Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-handwritten.svg" alt="Handwritten: OpenCV Quick Start" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-diagram.svg" alt="Diagram: OpenCV Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-diagram.svg" alt="Diagram: OpenCV Quick Start" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-sticky.svg" alt="Sticky Note: OpenCV Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/opencv-quick-start-sticky.svg" alt="Sticky Note: OpenCV Quick Start" width="30%">
 </a>
 
 
@@ -1550,14 +1550,14 @@ print("OpenCV test image created")
 
 ### Generative AI Quick Start
 
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-handwritten.svg" alt="Handwritten: Generative AI Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-handwritten.svg" alt="Handwritten: Generative AI Quick Start" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-diagram.svg" alt="Diagram: Generative AI Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-diagram.svg" alt="Diagram: Generative AI Quick Start" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-sticky.svg" alt="Sticky Note: Generative AI Quick Start" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/01-introduction/generative-ai-quick-start-sticky.svg" alt="Sticky Note: Generative AI Quick Start" width="30%">
 </a>
 
 

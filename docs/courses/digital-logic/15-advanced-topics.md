@@ -39,14 +39,14 @@ graph TD
 
 ### 15.1.1 Key Milestones
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-handwritten.svg" alt="Handwritten: 15.1.1 Key Milestones" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-handwritten.svg" alt="Handwritten: 15.1.1 Key Milestones" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-diagram.svg" alt="Diagram: 15.1.1 Key Milestones" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-diagram.svg" alt="Diagram: 15.1.1 Key Milestones" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-sticky.svg" alt="Sticky Note: 15.1.1 Key Milestones" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-1-1-key-milestones-sticky.svg" alt="Sticky Note: 15.1.1 Key Milestones" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ Power has become the primary design constraint in modern digital systems.
 
 ### 15.2.1 Power Components
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-handwritten.svg" alt="Handwritten: 15.2.1 Power Components" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-handwritten.svg" alt="Handwritten: 15.2.1 Power Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-diagram.svg" alt="Diagram: 15.2.1 Power Components" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-diagram.svg" alt="Diagram: 15.2.1 Power Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-sticky.svg" alt="Sticky Note: 15.2.1 Power Components" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-1-power-components-sticky.svg" alt="Sticky Note: 15.2.1 Power Components" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ console.log(`Leakage: ${leakP.toFixed(2)} W`);
 
 ### 15.2.2 Power Reduction Techniques
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-handwritten.svg" alt="Handwritten: 15.2.2 Power Reduction Techniques" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-handwritten.svg" alt="Handwritten: 15.2.2 Power Reduction Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-diagram.svg" alt="Diagram: 15.2.2 Power Reduction Techniques" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-diagram.svg" alt="Diagram: 15.2.2 Power Reduction Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-sticky.svg" alt="Sticky Note: 15.2.2 Power Reduction Techniques" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-2-power-reduction-techniques-sticky.svg" alt="Sticky Note: 15.2.2 Power Reduction Techniques" width="30%">
 </a>
 
 
@@ -198,14 +198,14 @@ console.log(`After power gating (30% active): ${PowerSaving.powerGating(30, 0.3)
 
 ### 15.2.3 Multi-Vt Design
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-handwritten.svg" alt="Handwritten: 15.2.3 Multi-Vt Design" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-handwritten.svg" alt="Handwritten: 15.2.3 Multi-Vt Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-diagram.svg" alt="Diagram: 15.2.3 Multi-Vt Design" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-diagram.svg" alt="Diagram: 15.2.3 Multi-Vt Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-sticky.svg" alt="Sticky Note: 15.2.3 Multi-Vt Design" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-2-3-multi-vt-design-sticky.svg" alt="Sticky Note: 15.2.3 Multi-Vt Design" width="30%">
 </a>
 
 
@@ -238,14 +238,14 @@ Testing ensures that manufactured chips are defect-free. DFT adds hardware to ma
 
 ### 15.3.1 Scan Chains
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-handwritten.svg" alt="Handwritten: 15.3.1 Scan Chains" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-handwritten.svg" alt="Handwritten: 15.3.1 Scan Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-diagram.svg" alt="Diagram: 15.3.1 Scan Chains" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-diagram.svg" alt="Diagram: 15.3.1 Scan Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-sticky.svg" alt="Sticky Note: 15.3.1 Scan Chains" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-1-scan-chains-sticky.svg" alt="Sticky Note: 15.3.1 Scan Chains" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ class ScanChain {
 
 ### 15.3.2 Built-In Self-Test (BIST)
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-handwritten.svg" alt="Handwritten: 15.3.2 Built-In Self-Test (BIST)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-handwritten.svg" alt="Handwritten: 15.3.2 Built-In Self-Test (BIST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-diagram.svg" alt="Diagram: 15.3.2 Built-In Self-Test (BIST)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-diagram.svg" alt="Diagram: 15.3.2 Built-In Self-Test (BIST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-sticky.svg" alt="Sticky Note: 15.3.2 Built-In Self-Test (BIST)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-2-built-in-self-test-bist-sticky.svg" alt="Sticky Note: 15.3.2 Built-In Self-Test (BIST)" width="30%">
 </a>
 
 
@@ -364,14 +364,14 @@ class LFSR_BIST {
 
 ### 15.3.3 Fault Models
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-handwritten.svg" alt="Handwritten: 15.3.3 Fault Models" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-handwritten.svg" alt="Handwritten: 15.3.3 Fault Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-diagram.svg" alt="Diagram: 15.3.3 Fault Models" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-diagram.svg" alt="Diagram: 15.3.3 Fault Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-sticky.svg" alt="Sticky Note: 15.3.3 Fault Models" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-3-3-fault-models-sticky.svg" alt="Sticky Note: 15.3.3 Fault Models" width="30%">
 </a>
 
 
@@ -419,14 +419,14 @@ graph LR
 
 ### 15.4.1 Handshake Protocols
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-handwritten.svg" alt="Handwritten: 15.4.1 Handshake Protocols" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-handwritten.svg" alt="Handwritten: 15.4.1 Handshake Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-diagram.svg" alt="Diagram: 15.4.1 Handshake Protocols" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-diagram.svg" alt="Diagram: 15.4.1 Handshake Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-sticky.svg" alt="Sticky Note: 15.4.1 Handshake Protocols" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-1-handshake-protocols-sticky.svg" alt="Sticky Note: 15.4.1 Handshake Protocols" width="30%">
 </a>
 
 
@@ -464,14 +464,14 @@ class BundledDataChannel {
 
 ### 15.4.2 Synchronous vs Asynchronous
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-handwritten.svg" alt="Handwritten: 15.4.2 Synchronous vs Asynchronous" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-handwritten.svg" alt="Handwritten: 15.4.2 Synchronous vs Asynchronous" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-diagram.svg" alt="Diagram: 15.4.2 Synchronous vs Asynchronous" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-diagram.svg" alt="Diagram: 15.4.2 Synchronous vs Asynchronous" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-sticky.svg" alt="Sticky Note: 15.4.2 Synchronous vs Asynchronous" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-4-2-synchronous-vs-asynchronous-sticky.svg" alt="Sticky Note: 15.4.2 Synchronous vs Asynchronous" width="30%">
 </a>
 
 
@@ -492,14 +492,14 @@ Beyond FPGAs, reconfigurable computing includes coarse-grained reconfigurable ar
 
 ### 15.5.1 CGRA Architecture
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-handwritten.svg" alt="Handwritten: 15.5.1 CGRA Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-handwritten.svg" alt="Handwritten: 15.5.1 CGRA Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-diagram.svg" alt="Diagram: 15.5.1 CGRA Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-diagram.svg" alt="Diagram: 15.5.1 CGRA Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-sticky.svg" alt="Sticky Note: 15.5.1 CGRA Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-1-cgra-architecture-sticky.svg" alt="Sticky Note: 15.5.1 CGRA Architecture" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ class CGRA_PE {
 
 ### 15.5.2 Partial Reconfiguration
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-handwritten.svg" alt="Handwritten: 15.5.2 Partial Reconfiguration" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-handwritten.svg" alt="Handwritten: 15.5.2 Partial Reconfiguration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-diagram.svg" alt="Diagram: 15.5.2 Partial Reconfiguration" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-diagram.svg" alt="Diagram: 15.5.2 Partial Reconfiguration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-sticky.svg" alt="Sticky Note: 15.5.2 Partial Reconfiguration" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-5-2-partial-reconfiguration-sticky.svg" alt="Sticky Note: 15.5.2 Partial Reconfiguration" width="30%">
 </a>
 
 
@@ -596,14 +596,14 @@ console.log(`PR time (500 KB @ 400 MB/s): ${pr.reconfigurationTime(500, 400).toF
 
 ### 15.6.1 Quantum Computing
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-handwritten.svg" alt="Handwritten: 15.6.1 Quantum Computing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-handwritten.svg" alt="Handwritten: 15.6.1 Quantum Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-diagram.svg" alt="Diagram: 15.6.1 Quantum Computing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-diagram.svg" alt="Diagram: 15.6.1 Quantum Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-sticky.svg" alt="Sticky Note: 15.6.1 Quantum Computing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-1-quantum-computing-sticky.svg" alt="Sticky Note: 15.6.1 Quantum Computing" width="30%">
 </a>
 
 
@@ -647,14 +647,14 @@ console.log(`Bell state: |F??`);
 
 ### 15.6.2 Neuromorphic Computing
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-handwritten.svg" alt="Handwritten: 15.6.2 Neuromorphic Computing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-handwritten.svg" alt="Handwritten: 15.6.2 Neuromorphic Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-diagram.svg" alt="Diagram: 15.6.2 Neuromorphic Computing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-diagram.svg" alt="Diagram: 15.6.2 Neuromorphic Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-sticky.svg" alt="Sticky Note: 15.6.2 Neuromorphic Computing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-2-neuromorphic-computing-sticky.svg" alt="Sticky Note: 15.6.2 Neuromorphic Computing" width="30%">
 </a>
 
 
@@ -709,14 +709,14 @@ class NeuromorphicLayer {
 
 ### 15.6.3 Silicon Photonics
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-handwritten.svg" alt="Handwritten: 15.6.3 Silicon Photonics" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-handwritten.svg" alt="Handwritten: 15.6.3 Silicon Photonics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-diagram.svg" alt="Diagram: 15.6.3 Silicon Photonics" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-diagram.svg" alt="Diagram: 15.6.3 Silicon Photonics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-sticky.svg" alt="Sticky Note: 15.6.3 Silicon Photonics" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-6-3-silicon-photonics-sticky.svg" alt="Sticky Note: 15.6.3 Silicon Photonics" width="30%">
 </a>
 
 
@@ -817,14 +817,14 @@ class PropertyChecker {
 
 ### 15.8.1 Technology Nodes
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-handwritten.svg" alt="Handwritten: 15.8.1 Technology Nodes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-handwritten.svg" alt="Handwritten: 15.8.1 Technology Nodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-diagram.svg" alt="Diagram: 15.8.1 Technology Nodes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-diagram.svg" alt="Diagram: 15.8.1 Technology Nodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-sticky.svg" alt="Sticky Note: 15.8.1 Technology Nodes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/15-8-1-technology-nodes-sticky.svg" alt="Sticky Note: 15.8.1 Technology Nodes" width="30%">
 </a>
 
 
@@ -1030,14 +1030,14 @@ d) Increasing supply voltage
 
 ### Answers
 
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-diagram.svg" alt="Diagram: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/15-advanced-topics/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
 </a>
 
 

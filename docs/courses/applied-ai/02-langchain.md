@@ -27,14 +27,14 @@ LangChain is the most popular LLM orchestration framework (400K+ GitHub stars) a
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -50,14 +50,14 @@ LangChain is the most popular LLM orchestration framework (400K+ GitHub stars) a
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -105,14 +105,14 @@ LangChain is a framework for building LLM-powered applications. Its core abstrac
 
 ### 2.2.1 Basic LLM Call
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-handwritten.svg" alt="Handwritten: 2.2.1 Basic LLM Call" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-handwritten.svg" alt="Handwritten: 2.2.1 Basic LLM Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-diagram.svg" alt="Diagram: 2.2.1 Basic LLM Call" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-diagram.svg" alt="Diagram: 2.2.1 Basic LLM Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-sticky.svg" alt="Sticky Note: 2.2.1 Basic LLM Call" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-1-basic-llm-call-sticky.svg" alt="Sticky Note: 2.2.1 Basic LLM Call" width="30%">
 </a>
 
 
@@ -168,14 +168,14 @@ print(response.content)
 
 ### 2.2.2 Prompt Templates
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-handwritten.svg" alt="Handwritten: 2.2.2 Prompt Templates" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-handwritten.svg" alt="Handwritten: 2.2.2 Prompt Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-diagram.svg" alt="Diagram: 2.2.2 Prompt Templates" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-diagram.svg" alt="Diagram: 2.2.2 Prompt Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-sticky.svg" alt="Sticky Note: 2.2.2 Prompt Templates" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-2-prompt-templates-sticky.svg" alt="Sticky Note: 2.2.2 Prompt Templates" width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ print(prompt.messages)
 
 ### 2.2.3 Output Parsers
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-handwritten.svg" alt="Handwritten: 2.2.3 Output Parsers" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-handwritten.svg" alt="Handwritten: 2.2.3 Output Parsers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-diagram.svg" alt="Diagram: 2.2.3 Output Parsers" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-diagram.svg" alt="Diagram: 2.2.3 Output Parsers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-sticky.svg" alt="Sticky Note: 2.2.3 Output Parsers" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-2-3-output-parsers-sticky.svg" alt="Sticky Note: 2.2.3 Output Parsers" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ print(f"Sentiment: {result.sentiment}, Confidence: {result.confidence:.2f}")
 
 ### 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-handwritten.svg" alt="Handwritten: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-handwritten.svg" alt="Handwritten: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-diagram.svg" alt="Diagram: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-diagram.svg" alt="Diagram: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-sticky.svg" alt="Sticky Note: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-1-llmchain-legacy-and-modern-pipe-syntax-sticky.svg" alt="Sticky Note: 2.3.1 LLMChain (Legacy) and Modern Pipe Syntax" width="30%">
 </a>
 
 
@@ -404,14 +404,14 @@ print(result)
 
 ### 2.3.2 Sequential Chains
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-handwritten.svg" alt="Handwritten: 2.3.2 Sequential Chains" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-handwritten.svg" alt="Handwritten: 2.3.2 Sequential Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-diagram.svg" alt="Diagram: 2.3.2 Sequential Chains" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-diagram.svg" alt="Diagram: 2.3.2 Sequential Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-sticky.svg" alt="Sticky Note: 2.3.2 Sequential Chains" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-2-sequential-chains-sticky.svg" alt="Sticky Note: 2.3.2 Sequential Chains" width="30%">
 </a>
 
 
@@ -458,14 +458,14 @@ FUNCTION joke_and_rate(topic):
 
 ### 2.3.3 RunnablePassthrough for Data Flow
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-handwritten.svg" alt="Handwritten: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-handwritten.svg" alt="Handwritten: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-diagram.svg" alt="Diagram: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-diagram.svg" alt="Diagram: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-sticky.svg" alt="Sticky Note: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-3-3-runnablepassthrough-for-data-flow-sticky.svg" alt="Sticky Note: 2.3.3 RunnablePassthrough for Data Flow" width="30%">
 </a>
 
 
@@ -522,14 +522,14 @@ print(f"Joke: {result['joke'].content}")
 
 ### 2.4.1 Document Loading & Chunking
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-handwritten.svg" alt="Handwritten: 2.4.1 Document Loading & Chunking" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-handwritten.svg" alt="Handwritten: 2.4.1 Document Loading & Chunking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-diagram.svg" alt="Diagram: 2.4.1 Document Loading & Chunking" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-diagram.svg" alt="Diagram: 2.4.1 Document Loading & Chunking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-sticky.svg" alt="Sticky Note: 2.4.1 Document Loading & Chunking" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-1-document-loading-chunking-sticky.svg" alt="Sticky Note: 2.4.1 Document Loading & Chunking" width="30%">
 </a>
 
 
@@ -599,14 +599,14 @@ print(f"Loaded {len(documents)} docs, split into {len(chunks)} chunks")
 
 ### 2.4.2 Vector Store with Chroma
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-handwritten.svg" alt="Handwritten: 2.4.2 Vector Store with Chroma" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-handwritten.svg" alt="Handwritten: 2.4.2 Vector Store with Chroma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-diagram.svg" alt="Diagram: 2.4.2 Vector Store with Chroma" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-diagram.svg" alt="Diagram: 2.4.2 Vector Store with Chroma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-sticky.svg" alt="Sticky Note: 2.4.2 Vector Store with Chroma" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-2-vector-store-with-chroma-sticky.svg" alt="Sticky Note: 2.4.2 Vector Store with Chroma" width="30%">
 </a>
 
 
@@ -662,14 +662,14 @@ for r in results:
 
 ### 2.4.3 Complete RAG Chain
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-handwritten.svg" alt="Handwritten: 2.4.3 Complete RAG Chain" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-handwritten.svg" alt="Handwritten: 2.4.3 Complete RAG Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-diagram.svg" alt="Diagram: 2.4.3 Complete RAG Chain" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-diagram.svg" alt="Diagram: 2.4.3 Complete RAG Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-sticky.svg" alt="Sticky Note: 2.4.3 Complete RAG Chain" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-4-3-complete-rag-chain-sticky.svg" alt="Sticky Note: 2.4.3 Complete RAG Chain" width="30%">
 </a>
 
 
@@ -769,14 +769,14 @@ print(answer.content)
 
 ### 2.5.1 Custom Tools
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-handwritten.svg" alt="Handwritten: 2.5.1 Custom Tools" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-handwritten.svg" alt="Handwritten: 2.5.1 Custom Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-diagram.svg" alt="Diagram: 2.5.1 Custom Tools" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-diagram.svg" alt="Diagram: 2.5.1 Custom Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-sticky.svg" alt="Sticky Note: 2.5.1 Custom Tools" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-1-custom-tools-sticky.svg" alt="Sticky Note: 2.5.1 Custom Tools" width="30%">
 </a>
 
 
@@ -829,14 +829,14 @@ tools = [calculate, get_weather]
 
 ### 2.5.2 Creating an Agent
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-handwritten.svg" alt="Handwritten: 2.5.2 Creating an Agent" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-handwritten.svg" alt="Handwritten: 2.5.2 Creating an Agent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-diagram.svg" alt="Diagram: 2.5.2 Creating an Agent" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-diagram.svg" alt="Diagram: 2.5.2 Creating an Agent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-sticky.svg" alt="Sticky Note: 2.5.2 Creating an Agent" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-2-creating-an-agent-sticky.svg" alt="Sticky Note: 2.5.2 Creating an Agent" width="30%">
 </a>
 
 
@@ -895,14 +895,14 @@ print(response)
 
 ### 2.5.3 Wikipedia Search Tool
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-handwritten.svg" alt="Handwritten: 2.5.3 Wikipedia Search Tool" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-handwritten.svg" alt="Handwritten: 2.5.3 Wikipedia Search Tool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-diagram.svg" alt="Diagram: 2.5.3 Wikipedia Search Tool" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-diagram.svg" alt="Diagram: 2.5.3 Wikipedia Search Tool" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-sticky.svg" alt="Sticky Note: 2.5.3 Wikipedia Search Tool" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-5-3-wikipedia-search-tool-sticky.svg" alt="Sticky Note: 2.5.3 Wikipedia Search Tool" width="30%">
 </a>
 
 
@@ -976,14 +976,14 @@ response = agent_executor.invoke({
 
 ### 2.6.1 Conversation Buffer Memory
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-handwritten.svg" alt="Handwritten: 2.6.1 Conversation Buffer Memory" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-handwritten.svg" alt="Handwritten: 2.6.1 Conversation Buffer Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-diagram.svg" alt="Diagram: 2.6.1 Conversation Buffer Memory" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-diagram.svg" alt="Diagram: 2.6.1 Conversation Buffer Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-sticky.svg" alt="Sticky Note: 2.6.1 Conversation Buffer Memory" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/2-6-1-conversation-buffer-memory-sticky.svg" alt="Sticky Note: 2.6.1 Conversation Buffer Memory" width="30%">
 </a>
 
 
@@ -1351,14 +1351,14 @@ Defenses:
 
 ### Chatbots & Conversational AI
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-handwritten.svg" alt="Handwritten: Chatbots & Conversational AI" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-handwritten.svg" alt="Handwritten: Chatbots & Conversational AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-diagram.svg" alt="Diagram: Chatbots & Conversational AI" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-diagram.svg" alt="Diagram: Chatbots & Conversational AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-sticky.svg" alt="Sticky Note: Chatbots & Conversational AI" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/chatbots-conversational-ai-sticky.svg" alt="Sticky Note: Chatbots & Conversational AI" width="30%">
 </a>
 
 - **Customer support chatbots** → RAG retrieves FAQ/knowledge base answers; memory tracks conversation state; agents escalate to human agents when needed
@@ -1367,14 +1367,14 @@ Defenses:
 
 ### Document Q&A Systems
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-handwritten.svg" alt="Handwritten: Document Q&A Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-handwritten.svg" alt="Handwritten: Document Q&A Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-diagram.svg" alt="Diagram: Document Q&A Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-diagram.svg" alt="Diagram: Document Q&A Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-sticky.svg" alt="Sticky Note: Document Q&A Systems" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/document-q-a-systems-sticky.svg" alt="Sticky Note: Document Q&A Systems" width="30%">
 </a>
 
 - **Enterprise knowledge base** → Employees ask natural language questions about internal policies, HR documents, engineering specs
@@ -1383,14 +1383,14 @@ Defenses:
 
 ### Code Assistants
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-handwritten.svg" alt="Handwritten: Code Assistants" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-handwritten.svg" alt="Handwritten: Code Assistants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-diagram.svg" alt="Diagram: Code Assistants" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-diagram.svg" alt="Diagram: Code Assistants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-sticky.svg" alt="Sticky Note: Code Assistants" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/code-assistants-sticky.svg" alt="Sticky Note: Code Assistants" width="30%">
 </a>
 
 - **AI-powered IDE plugins** → Chain: read current file context → generate code suggestion → format with AST parser
@@ -1399,14 +1399,14 @@ Defenses:
 
 ### Data Extraction & Processing
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-handwritten.svg" alt="Handwritten: Data Extraction & Processing" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-handwritten.svg" alt="Handwritten: Data Extraction & Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-diagram.svg" alt="Diagram: Data Extraction & Processing" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-diagram.svg" alt="Diagram: Data Extraction & Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-sticky.svg" alt="Sticky Note: Data Extraction & Processing" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/data-extraction-processing-sticky.svg" alt="Sticky Note: Data Extraction & Processing" width="30%">
 </a>
 
 - **Invoice/Receipt parsing** → PydanticOutputParser extracts invoice number, date, total, line items from unstructured text
@@ -1415,14 +1415,14 @@ Defenses:
 
 ### Enterprise Search
 
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-handwritten.svg" alt="Handwritten: Enterprise Search" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-handwritten.svg" alt="Handwritten: Enterprise Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-diagram.svg" alt="Diagram: Enterprise Search" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-diagram.svg" alt="Diagram: Enterprise Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-sticky.svg" alt="Sticky Note: Enterprise Search" width="30%">
+<a href="../../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/applied-ai/02-langchain/enterprise-search-sticky.svg" alt="Sticky Note: Enterprise Search" width="30%">
 </a>
 
 - **Internal wiki search** → RAG on Confluence/Notion exports with hybrid search (keyword + semantic)

@@ -56,14 +56,14 @@ flowchart LR
 
 ### 8.1 Definition
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-handwritten.svg" alt="Handwritten: 8.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-handwritten.svg" alt="Handwritten: 8.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-diagram.svg" alt="Diagram: 8.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-diagram.svg" alt="Diagram: 8.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-sticky.svg" alt="Sticky Note: 8.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-sticky.svg" alt="Sticky Note: 8.1 Definition" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ Two functions $f$ and $g$ are **equal** if they have the same domain and $f(a) =
 
 ### 8.2 Injective, Surjective, Bijective
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-handwritten.svg" alt="Handwritten: 8.2 Injective, Surjective, Bijective" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-handwritten.svg" alt="Handwritten: 8.2 Injective, Surjective, Bijective" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-diagram.svg" alt="Diagram: 8.2 Injective, Surjective, Bijective" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-diagram.svg" alt="Diagram: 8.2 Injective, Surjective, Bijective" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-sticky.svg" alt="Sticky Note: 8.2 Injective, Surjective, Bijective" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-sticky.svg" alt="Sticky Note: 8.2 Injective, Surjective, Bijective" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ console.log(isInjective(domain, x => Math.floor(x / 2))); // false
 
 ### 8.3 Composition
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-handwritten.svg" alt="Handwritten: 8.3 Composition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-handwritten.svg" alt="Handwritten: 8.3 Composition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-diagram.svg" alt="Diagram: 8.3 Composition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-diagram.svg" alt="Diagram: 8.3 Composition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-sticky.svg" alt="Sticky Note: 8.3 Composition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-sticky.svg" alt="Sticky Note: 8.3 Composition" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ Composition is associative: $(h \circ g) \circ f = h \circ (g \circ f)$.
 
 ### 8.4 Inverse Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-handwritten.svg" alt="Handwritten: 8.4 Inverse Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-handwritten.svg" alt="Handwritten: 8.4 Inverse Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-diagram.svg" alt="Diagram: 8.4 Inverse Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-diagram.svg" alt="Diagram: 8.4 Inverse Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-sticky.svg" alt="Sticky Note: 8.4 Inverse Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-sticky.svg" alt="Sticky Note: 8.4 Inverse Functions" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ Properties:
 
 ### 8.5 Special Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-handwritten.svg" alt="Handwritten: 8.5 Special Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-handwritten.svg" alt="Handwritten: 8.5 Special Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-diagram.svg" alt="Diagram: 8.5 Special Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-diagram.svg" alt="Diagram: 8.5 Special Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-sticky.svg" alt="Sticky Note: 8.5 Special Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-sticky.svg" alt="Sticky Note: 8.5 Special Functions" width="30%">
 </a>
 
 
@@ -213,14 +213,14 @@ Properties:
 
 ### 8.6 Growth of Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-handwritten.svg" alt="Handwritten: 8.6 Growth of Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-handwritten.svg" alt="Handwritten: 8.6 Growth of Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-diagram.svg" alt="Diagram: 8.6 Growth of Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-diagram.svg" alt="Diagram: 8.6 Growth of Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-sticky.svg" alt="Sticky Note: 8.6 Growth of Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-sticky.svg" alt="Sticky Note: 8.6 Growth of Functions" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ console.log(isQuadraticGrowth(n => 3 * n * n + 2 * n + 1)); // roughly true
 
 ### 8.7 Partial Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-handwritten.svg" alt="Handwritten: 8.7 Partial Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-handwritten.svg" alt="Handwritten: 8.7 Partial Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-diagram.svg" alt="Diagram: 8.7 Partial Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-diagram.svg" alt="Diagram: 8.7 Partial Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-sticky.svg" alt="Sticky Note: 8.7 Partial Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-sticky.svg" alt="Sticky Note: 8.7 Partial Functions" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
 
 ### 8.8 Recursive Functions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-handwritten.svg" alt="Handwritten: 8.8 Recursive Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-handwritten.svg" alt="Handwritten: 8.8 Recursive Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-diagram.svg" alt="Diagram: 8.8 Recursive Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-diagram.svg" alt="Diagram: 8.8 Recursive Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-sticky.svg" alt="Sticky Note: 8.8 Recursive Functions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-sticky.svg" alt="Sticky Note: 8.8 Recursive Functions" width="30%">
 </a>
 
 

@@ -51,14 +51,14 @@ flowchart LR
 
 ### 10.1 Definition
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-handwritten.svg" alt="Handwritten: 10.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-handwritten.svg" alt="Handwritten: 10.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-diagram.svg" alt="Diagram: 10.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-diagram.svg" alt="Diagram: 10.1 Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-sticky.svg" alt="Sticky Note: 10.1 Definition" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-1-definition-sticky.svg" alt="Sticky Note: 10.1 Definition" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ A **tree** is a connected acyclic undirected graph. A **forest** is an acyclic g
 
 ### 10.2 Rooted Trees
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-handwritten.svg" alt="Handwritten: 10.2 Rooted Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-handwritten.svg" alt="Handwritten: 10.2 Rooted Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-diagram.svg" alt="Diagram: 10.2 Rooted Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-diagram.svg" alt="Diagram: 10.2 Rooted Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-sticky.svg" alt="Sticky Note: 10.2 Rooted Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-2-rooted-trees-sticky.svg" alt="Sticky Note: 10.2 Rooted Trees" width="30%">
 </a>
 
 
@@ -103,14 +103,14 @@ A **rooted tree** designates one vertex as the **root**, establishing a hierarch
 
 ### 10.3 Binary Trees
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-handwritten.svg" alt="Handwritten: 10.3 Binary Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-handwritten.svg" alt="Handwritten: 10.3 Binary Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-diagram.svg" alt="Diagram: 10.3 Binary Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-diagram.svg" alt="Diagram: 10.3 Binary Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-sticky.svg" alt="Sticky Note: 10.3 Binary Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-3-binary-trees-sticky.svg" alt="Sticky Note: 10.3 Binary Trees" width="30%">
 </a>
 
 
@@ -169,14 +169,14 @@ class BinarySearchTree<T> {
 
 ### 10.4 Tree Traversals
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-handwritten.svg" alt="Handwritten: 10.4 Tree Traversals" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-handwritten.svg" alt="Handwritten: 10.4 Tree Traversals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-diagram.svg" alt="Diagram: 10.4 Tree Traversals" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-diagram.svg" alt="Diagram: 10.4 Tree Traversals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-sticky.svg" alt="Sticky Note: 10.4 Tree Traversals" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-4-tree-traversals-sticky.svg" alt="Sticky Note: 10.4 Tree Traversals" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ function levelOrder<T>(root: TreeNode<T> | null): T[] {
 
 ### 10.5 Spanning Trees
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-handwritten.svg" alt="Handwritten: 10.5 Spanning Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-handwritten.svg" alt="Handwritten: 10.5 Spanning Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-diagram.svg" alt="Diagram: 10.5 Spanning Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-diagram.svg" alt="Diagram: 10.5 Spanning Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-sticky.svg" alt="Sticky Note: 10.5 Spanning Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-5-spanning-trees-sticky.svg" alt="Sticky Note: 10.5 Spanning Trees" width="30%">
 </a>
 
 
@@ -256,14 +256,14 @@ A **spanning tree** of a connected graph $G$ is a subgraph that is a tree and in
 
 ### 10.6 Decision Trees
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-handwritten.svg" alt="Handwritten: 10.6 Decision Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-handwritten.svg" alt="Handwritten: 10.6 Decision Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-diagram.svg" alt="Diagram: 10.6 Decision Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-diagram.svg" alt="Diagram: 10.6 Decision Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-sticky.svg" alt="Sticky Note: 10.6 Decision Trees" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-6-decision-trees-sticky.svg" alt="Sticky Note: 10.6 Decision Trees" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ A **decision tree** models a decision process as a binary tree where internal no
 
 ### 10.7 Huffman Coding
 
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-handwritten.svg" alt="Handwritten: 10.7 Huffman Coding" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-handwritten.svg" alt="Handwritten: 10.7 Huffman Coding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-diagram.svg" alt="Diagram: 10.7 Huffman Coding" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-diagram.svg" alt="Diagram: 10.7 Huffman Coding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-sticky.svg" alt="Sticky Note: 10.7 Huffman Coding" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/10-trees/10-7-huffman-coding-sticky.svg" alt="Sticky Note: 10.7 Huffman Coding" width="30%">
 </a>
 
 

@@ -57,14 +57,14 @@ flowchart LR
 
 ### The Analysis-Synthesis Model
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-handwritten.svg" alt="Handwritten: The Analysis-Synthesis Model" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-handwritten.svg" alt="Handwritten: The Analysis-Synthesis Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-diagram.svg" alt="Diagram: The Analysis-Synthesis Model" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-diagram.svg" alt="Diagram: The Analysis-Synthesis Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-sticky.svg" alt="Sticky Note: The Analysis-Synthesis Model" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-analysis-synthesis-model-sticky.svg" alt="Sticky Note: The Analysis-Synthesis Model" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ The rationale for this division is modularity. The front end depends only on the
 
 ### Phases of Compilation
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-handwritten.svg" alt="Handwritten: Phases of Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-handwritten.svg" alt="Handwritten: Phases of Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-diagram.svg" alt="Diagram: Phases of Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-diagram.svg" alt="Diagram: Phases of Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-sticky.svg" alt="Sticky Note: Phases of Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/phases-of-compilation-sticky.svg" alt="Sticky Note: Phases of Compilation" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ movss   [result], xmm0
 
 ### Symbol Table Management
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-handwritten.svg" alt="Handwritten: Symbol Table Management" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-handwritten.svg" alt="Handwritten: Symbol Table Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-diagram.svg" alt="Diagram: Symbol Table Management" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-diagram.svg" alt="Diagram: Symbol Table Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-sticky.svg" alt="Sticky Note: Symbol Table Management" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/symbol-table-management-sticky.svg" alt="Sticky Note: Symbol Table Management" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ console.log(symtab.lookup("x")?.type); // "int" (restored)
 
 ### Interpreters vs Compilers vs JIT
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-handwritten.svg" alt="Handwritten: Interpreters vs Compilers vs JIT" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-handwritten.svg" alt="Handwritten: Interpreters vs Compilers vs JIT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-diagram.svg" alt="Diagram: Interpreters vs Compilers vs JIT" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-diagram.svg" alt="Diagram: Interpreters vs Compilers vs JIT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-sticky.svg" alt="Sticky Note: Interpreters vs Compilers vs JIT" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/interpreters-vs-compilers-vs-jit-sticky.svg" alt="Sticky Note: Interpreters vs Compilers vs JIT" width="30%">
 </a>
 
 
@@ -284,14 +284,14 @@ Modern virtual machine implementations for Java (HotSpot) and .NET (RyuJIT) empl
 
 ### Bootstrapping and Cross-Compilation
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-handwritten.svg" alt="Handwritten: Bootstrapping and Cross-Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-handwritten.svg" alt="Handwritten: Bootstrapping and Cross-Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-diagram.svg" alt="Diagram: Bootstrapping and Cross-Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-diagram.svg" alt="Diagram: Bootstrapping and Cross-Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-sticky.svg" alt="Sticky Note: Bootstrapping and Cross-Compilation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/bootstrapping-and-cross-compilation-sticky.svg" alt="Sticky Note: Bootstrapping and Cross-Compilation" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ A **T-diagram** is a three-cornered notation: the top corner is the source langu
 
 ### Compiler Construction Tools
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-handwritten.svg" alt="Handwritten: Compiler Construction Tools" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-handwritten.svg" alt="Handwritten: Compiler Construction Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-diagram.svg" alt="Diagram: Compiler Construction Tools" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-diagram.svg" alt="Diagram: Compiler Construction Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-sticky.svg" alt="Sticky Note: Compiler Construction Tools" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/compiler-construction-tools-sticky.svg" alt="Sticky Note: Compiler Construction Tools" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ A variety of specialized tools automate the construction of compiler components:
 
 ### The Role of Formal Language Theory
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-handwritten.svg" alt="Handwritten: The Role of Formal Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-handwritten.svg" alt="Handwritten: The Role of Formal Language Theory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-diagram.svg" alt="Diagram: The Role of Formal Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-diagram.svg" alt="Diagram: The Role of Formal Language Theory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-sticky.svg" alt="Sticky Note: The Role of Formal Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-role-of-formal-language-theory-sticky.svg" alt="Sticky Note: The Role of Formal Language Theory" width="30%">
 </a>
 
 
@@ -376,14 +376,14 @@ The **Chomsky hierarchy** situates these language classes within a broader theor
 
 ### The Evolution of Compiler Architecture
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-handwritten.svg" alt="Handwritten: The Evolution of Compiler Architecture" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-handwritten.svg" alt="Handwritten: The Evolution of Compiler Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-diagram.svg" alt="Diagram: The Evolution of Compiler Architecture" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-diagram.svg" alt="Diagram: The Evolution of Compiler Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-sticky.svg" alt="Sticky Note: The Evolution of Compiler Architecture" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/the-evolution-of-compiler-architecture-sticky.svg" alt="Sticky Note: The Evolution of Compiler Architecture" width="30%">
 </a>
 
 
@@ -593,14 +593,14 @@ pipeline.run();
 
 ### Error Handling Strategies
 
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-handwritten.svg" alt="Handwritten: Error Handling Strategies" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-handwritten.svg" alt="Handwritten: Error Handling Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-diagram.svg" alt="Diagram: Error Handling Strategies" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-diagram.svg" alt="Diagram: Error Handling Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-sticky.svg" alt="Sticky Note: Error Handling Strategies" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/01-introduction/error-handling-strategies-sticky.svg" alt="Sticky Note: Error Handling Strategies" width="30%">
 </a>
 
 

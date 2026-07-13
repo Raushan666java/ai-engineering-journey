@@ -53,14 +53,14 @@ flowchart LR
 
 ### Queue ADT
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/queue-adt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/queue-adt-handwritten.svg" alt="Handwritten: Queue ADT" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-handwritten.svg" alt="Handwritten: Queue ADT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/queue-adt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/queue-adt-diagram.svg" alt="Diagram: Queue ADT" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-diagram.svg" alt="Diagram: Queue ADT" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/queue-adt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/queue-adt-sticky.svg" alt="Sticky Note: Queue ADT" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-sticky.svg" alt="Sticky Note: Queue ADT" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ A queue follows the **First-In-First-Out (FIFO)** discipline: elements are inser
 
 ### 1. Simple Array Queue (Naive)
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-handwritten.svg" alt="Handwritten: 1. Simple Array Queue (Naive)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-handwritten.svg" alt="Handwritten: 1. Simple Array Queue (Naive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-diagram.svg" alt="Diagram: 1. Simple Array Queue (Naive)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-diagram.svg" alt="Diagram: 1. Simple Array Queue (Naive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-sticky.svg" alt="Sticky Note: 1. Simple Array Queue (Naive)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-sticky.svg" alt="Sticky Note: 1. Simple Array Queue (Naive)" width="30%">
 </a>
 
 
@@ -345,14 +345,14 @@ public class SimpleArrayQueue<T> {
 
 ### 2. Circular Queue (Circular Array Queue)
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-handwritten.svg" alt="Handwritten: 2. Circular Queue (Circular Array Queue)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-handwritten.svg" alt="Handwritten: 2. Circular Queue (Circular Array Queue)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-diagram.svg" alt="Diagram: 2. Circular Queue (Circular Array Queue)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-diagram.svg" alt="Diagram: 2. Circular Queue (Circular Array Queue)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-sticky.svg" alt="Sticky Note: 2. Circular Queue (Circular Array Queue)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-sticky.svg" alt="Sticky Note: 2. Circular Queue (Circular Array Queue)" width="30%">
 </a>
 
 
@@ -674,14 +674,14 @@ public class CircularQueue<T> {
 
 ### 3. Linked-List Queue
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-handwritten.svg" alt="Handwritten: 3. Linked-List Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-handwritten.svg" alt="Handwritten: 3. Linked-List Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-diagram.svg" alt="Diagram: 3. Linked-List Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-diagram.svg" alt="Diagram: 3. Linked-List Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-sticky.svg" alt="Sticky Note: 3. Linked-List Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-sticky.svg" alt="Sticky Note: 3. Linked-List Queue" width="30%">
 </a>
 
 
@@ -966,14 +966,14 @@ public class LinkedQueue<T> {
 
 ### 4. Deque (Double-Ended Queue)
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-handwritten.svg" alt="Handwritten: 4. Deque (Double-Ended Queue)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-handwritten.svg" alt="Handwritten: 4. Deque (Double-Ended Queue)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-diagram.svg" alt="Diagram: 4. Deque (Double-Ended Queue)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-diagram.svg" alt="Diagram: 4. Deque (Double-Ended Queue)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-sticky.svg" alt="Sticky Note: 4. Deque (Double-Ended Queue)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-sticky.svg" alt="Sticky Note: 4. Deque (Double-Ended Queue)" width="30%">
 </a>
 
 
@@ -1149,14 +1149,14 @@ public class DequeExample {
 
 ### 5. Priority Queue
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-handwritten.svg" alt="Handwritten: 5. Priority Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-handwritten.svg" alt="Handwritten: 5. Priority Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-diagram.svg" alt="Diagram: 5. Priority Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-diagram.svg" alt="Diagram: 5. Priority Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-sticky.svg" alt="Sticky Note: 5. Priority Queue" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-sticky.svg" alt="Sticky Note: 5. Priority Queue" width="30%">
 </a>
 
 
@@ -1354,14 +1354,14 @@ public class PriorityQueueExample {
 
 ### Queue Family Comparison
 
-<a href="../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-handwritten.svg" alt="Handwritten: Queue Family Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-handwritten.svg" alt="Handwritten: Queue Family Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-diagram.svg" alt="Diagram: Queue Family Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-diagram.svg" alt="Diagram: Queue Family Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-sticky.svg" alt="Sticky Note: Queue Family Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-sticky.svg" alt="Sticky Note: Queue Family Comparison" width="30%">
 </a>
 
 

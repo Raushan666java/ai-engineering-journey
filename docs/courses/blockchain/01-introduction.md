@@ -50,36 +50,36 @@ The term "blockchain" describes the core data structure: blocks of transactions 
 
 ### Centralization vs. Decentralization
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" alt="Handwritten: Centralization vs. Decentralization" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" alt="Handwritten: Centralization vs. Decentralization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" alt="Diagram: Centralization vs. Decentralization" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" alt="Diagram: Centralization vs. Decentralization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" alt="Sticky Note: Centralization vs. Decentralization" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" alt="Handwritten: Centralization vs. Decentralization" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" alt="Diagram: Centralization vs. Decentralization" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" alt="Sticky Note: Centralization vs. Decentralization" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" alt="Sticky Note: Centralization vs. Decentralization" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" alt="Handwritten: Centralization vs. Decentralization" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" alt="Handwritten: Centralization vs. Decentralization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" alt="Diagram: Centralization vs. Decentralization" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" alt="Diagram: Centralization vs. Decentralization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" alt="Sticky Note: Centralization vs. Decentralization" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" alt="Sticky Note: Centralization vs. Decentralization" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-handwritten.svg" alt="Handwritten: Centralization vs. Decentralization" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-diagram.svg" alt="Diagram: Centralization vs. Decentralization" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/centralization-vs-decentralization-sticky.svg" alt="Sticky Note: Centralization vs. Decentralization" width="30%">
 </a>
 
 
@@ -96,36 +96,36 @@ Traditional systems rely on trusted intermediaries. In a centralized system, the
 
 ### The Anatomy of a Block
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" alt="Handwritten: The Anatomy of a Block" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" alt="Handwritten: The Anatomy of a Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" alt="Diagram: The Anatomy of a Block" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" alt="Diagram: The Anatomy of a Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" alt="Sticky Note: The Anatomy of a Block" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" alt="Handwritten: The Anatomy of a Block" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" alt="Diagram: The Anatomy of a Block" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" alt="Sticky Note: The Anatomy of a Block" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" alt="Sticky Note: The Anatomy of a Block" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" alt="Handwritten: The Anatomy of a Block" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" alt="Handwritten: The Anatomy of a Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" alt="Diagram: The Anatomy of a Block" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" alt="Diagram: The Anatomy of a Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" alt="Sticky Note: The Anatomy of a Block" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" alt="Sticky Note: The Anatomy of a Block" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-handwritten.svg" alt="Handwritten: The Anatomy of a Block" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-diagram.svg" alt="Diagram: The Anatomy of a Block" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-anatomy-of-a-block-sticky.svg" alt="Sticky Note: The Anatomy of a Block" width="30%">
 </a>
 
 
@@ -165,36 +165,36 @@ flowchart TB
 
 ### Types of Blockchains
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" alt="Handwritten: Types of Blockchains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" alt="Handwritten: Types of Blockchains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" alt="Diagram: Types of Blockchains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" alt="Diagram: Types of Blockchains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" alt="Sticky Note: Types of Blockchains" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" alt="Handwritten: Types of Blockchains" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" alt="Diagram: Types of Blockchains" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" alt="Sticky Note: Types of Blockchains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" alt="Sticky Note: Types of Blockchains" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" alt="Handwritten: Types of Blockchains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" alt="Handwritten: Types of Blockchains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" alt="Diagram: Types of Blockchains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" alt="Diagram: Types of Blockchains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" alt="Sticky Note: Types of Blockchains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" alt="Sticky Note: Types of Blockchains" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-handwritten.svg" alt="Handwritten: Types of Blockchains" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-diagram.svg" alt="Diagram: Types of Blockchains" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/types-of-blockchains-sticky.svg" alt="Sticky Note: Types of Blockchains" width="30%">
 </a>
 
 
@@ -225,36 +225,36 @@ flowchart TD
 
 ### The Byzantine Generals Problem
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals Problem" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals Problem" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals Problem" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals Problem" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals Problem" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-handwritten.svg" alt="Handwritten: The Byzantine Generals Problem" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-diagram.svg" alt="Diagram: The Byzantine Generals Problem" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-byzantine-generals-problem-sticky.svg" alt="Sticky Note: The Byzantine Generals Problem" width="30%">
 </a>
 
 
@@ -270,36 +270,36 @@ For a system with `n` total nodes, Byzantine Fault Tolerance typically requires 
 
 ### CAP Theorem in Blockchain Context
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" alt="Handwritten: CAP Theorem in Blockchain Context" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" alt="Handwritten: CAP Theorem in Blockchain Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" alt="Diagram: CAP Theorem in Blockchain Context" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" alt="Diagram: CAP Theorem in Blockchain Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" alt="Sticky Note: CAP Theorem in Blockchain Context" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" alt="Handwritten: CAP Theorem in Blockchain Context" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" alt="Diagram: CAP Theorem in Blockchain Context" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" alt="Sticky Note: CAP Theorem in Blockchain Context" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" alt="Sticky Note: CAP Theorem in Blockchain Context" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" alt="Handwritten: CAP Theorem in Blockchain Context" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" alt="Handwritten: CAP Theorem in Blockchain Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" alt="Diagram: CAP Theorem in Blockchain Context" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" alt="Diagram: CAP Theorem in Blockchain Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" alt="Sticky Note: CAP Theorem in Blockchain Context" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" alt="Sticky Note: CAP Theorem in Blockchain Context" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-handwritten.svg" alt="Handwritten: CAP Theorem in Blockchain Context" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-diagram.svg" alt="Diagram: CAP Theorem in Blockchain Context" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/cap-theorem-in-blockchain-context-sticky.svg" alt="Sticky Note: CAP Theorem in Blockchain Context" width="30%">
 </a>
 
 
@@ -319,36 +319,36 @@ Blockchains typically prioritize Partition Tolerance and Consistency over Availa
 
 ### The Blockchain Trilemma
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" alt="Handwritten: The Blockchain Trilemma" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" alt="Handwritten: The Blockchain Trilemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" alt="Diagram: The Blockchain Trilemma" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" alt="Diagram: The Blockchain Trilemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" alt="Sticky Note: The Blockchain Trilemma" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" alt="Handwritten: The Blockchain Trilemma" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" alt="Diagram: The Blockchain Trilemma" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" alt="Sticky Note: The Blockchain Trilemma" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" alt="Sticky Note: The Blockchain Trilemma" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" alt="Handwritten: The Blockchain Trilemma" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" alt="Handwritten: The Blockchain Trilemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" alt="Diagram: The Blockchain Trilemma" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" alt="Diagram: The Blockchain Trilemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" alt="Sticky Note: The Blockchain Trilemma" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" alt="Sticky Note: The Blockchain Trilemma" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-handwritten.svg" alt="Handwritten: The Blockchain Trilemma" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-diagram.svg" alt="Diagram: The Blockchain Trilemma" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/the-blockchain-trilemma-sticky.svg" alt="Sticky Note: The Blockchain Trilemma" width="30%">
 </a>
 
 
@@ -383,36 +383,36 @@ flowchart TB
 
 ### Transaction Lifecycle
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" alt="Handwritten: Transaction Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" alt="Handwritten: Transaction Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" alt="Diagram: Transaction Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" alt="Diagram: Transaction Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" alt="Sticky Note: Transaction Lifecycle" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" alt="Handwritten: Transaction Lifecycle" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" alt="Diagram: Transaction Lifecycle" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" alt="Sticky Note: Transaction Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" alt="Sticky Note: Transaction Lifecycle" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" alt="Handwritten: Transaction Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" alt="Handwritten: Transaction Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" alt="Diagram: Transaction Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" alt="Diagram: Transaction Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" alt="Sticky Note: Transaction Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" alt="Sticky Note: Transaction Lifecycle" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-handwritten.svg" alt="Handwritten: Transaction Lifecycle" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-diagram.svg" alt="Diagram: Transaction Lifecycle" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/transaction-lifecycle-sticky.svg" alt="Sticky Note: Transaction Lifecycle" width="30%">
 </a>
 
 
@@ -441,36 +441,36 @@ sequenceDiagram
 
 ### Real-World Use Cases
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" alt="Handwritten: Real-World Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" alt="Handwritten: Real-World Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" alt="Diagram: Real-World Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" alt="Diagram: Real-World Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" alt="Sticky Note: Real-World Use Cases" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" alt="Handwritten: Real-World Use Cases" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" alt="Diagram: Real-World Use Cases" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" alt="Sticky Note: Real-World Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" alt="Sticky Note: Real-World Use Cases" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" alt="Handwritten: Real-World Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" alt="Handwritten: Real-World Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" alt="Diagram: Real-World Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" alt="Diagram: Real-World Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" alt="Sticky Note: Real-World Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" alt="Sticky Note: Real-World Use Cases" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-handwritten.svg" alt="Handwritten: Real-World Use Cases" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-diagram.svg" alt="Diagram: Real-World Use Cases" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/real-world-use-cases-sticky.svg" alt="Sticky Note: Real-World Use Cases" width="30%">
 </a>
 
 
@@ -489,36 +489,36 @@ sequenceDiagram
 
 ### History of Blockchain
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" alt="Handwritten: History of Blockchain" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" alt="Handwritten: History of Blockchain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" alt="Diagram: History of Blockchain" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" alt="Diagram: History of Blockchain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" alt="Sticky Note: History of Blockchain" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" alt="Handwritten: History of Blockchain" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" alt="Diagram: History of Blockchain" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" alt="Sticky Note: History of Blockchain" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" alt="Sticky Note: History of Blockchain" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" alt="Handwritten: History of Blockchain" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" alt="Handwritten: History of Blockchain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" alt="Diagram: History of Blockchain" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" alt="Diagram: History of Blockchain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" alt="Sticky Note: History of Blockchain" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" alt="Sticky Note: History of Blockchain" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-handwritten.svg" alt="Handwritten: History of Blockchain" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-diagram.svg" alt="Diagram: History of Blockchain" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/01-introduction/history-of-blockchain-sticky.svg" alt="Sticky Note: History of Blockchain" width="30%">
 </a>
 
 

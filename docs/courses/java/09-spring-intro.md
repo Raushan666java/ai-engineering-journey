@@ -69,14 +69,14 @@ Spring began in 2004 as a response to the complexity of Enterprise JavaBeans (EJ
 
 ### 1.1 The Problem Spring Solved
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-handwritten.svg" alt="Handwritten: 1.1 The Problem Spring Solved" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-handwritten.svg" alt="Handwritten: 1.1 The Problem Spring Solved" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-diagram.svg" alt="Diagram: 1.1 The Problem Spring Solved" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-diagram.svg" alt="Diagram: 1.1 The Problem Spring Solved" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-sticky.svg" alt="Sticky Note: 1.1 The Problem Spring Solved" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-1-the-problem-spring-solved-sticky.svg" alt="Sticky Note: 1.1 The Problem Spring Solved" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ public class UserManager {
 
 ### 1.2 Spring Framework Release History
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-handwritten.svg" alt="Handwritten: 1.2 Spring Framework Release History" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-handwritten.svg" alt="Handwritten: 1.2 Spring Framework Release History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-diagram.svg" alt="Diagram: 1.2 Spring Framework Release History" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-diagram.svg" alt="Diagram: 1.2 Spring Framework Release History" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-sticky.svg" alt="Sticky Note: 1.2 Spring Framework Release History" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-2-spring-framework-release-history-sticky.svg" alt="Sticky Note: 1.2 Spring Framework Release History" width="30%">
 </a>
 
 
@@ -174,14 +174,14 @@ public class UserManager {
 
 ### 1.3 The Spring Projects → A Modular Ecosystem
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-handwritten.svg" alt="Handwritten: 1.3 The Spring Projects → A Modular Ecosystem" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-handwritten.svg" alt="Handwritten: 1.3 The Spring Projects → A Modular Ecosystem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-diagram.svg" alt="Diagram: 1.3 The Spring Projects → A Modular Ecosystem" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-diagram.svg" alt="Diagram: 1.3 The Spring Projects → A Modular Ecosystem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-sticky.svg" alt="Sticky Note: 1.3 The Spring Projects → A Modular Ecosystem" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-3-the-spring-projects-a-modular-ecosystem-sticky.svg" alt="Sticky Note: 1.3 The Spring Projects → A Modular Ecosystem" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ Each project follows the same philosophy: **POJO-centric, annotation-driven, con
 
 ### 1.4 Detailed Project Descriptions
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-handwritten.svg" alt="Handwritten: 1.4 Detailed Project Descriptions" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-handwritten.svg" alt="Handwritten: 1.4 Detailed Project Descriptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-diagram.svg" alt="Diagram: 1.4 Detailed Project Descriptions" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-diagram.svg" alt="Diagram: 1.4 Detailed Project Descriptions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-sticky.svg" alt="Sticky Note: 1.4 Detailed Project Descriptions" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-4-detailed-project-descriptions-sticky.svg" alt="Sticky Note: 1.4 Detailed Project Descriptions" width="30%">
 </a>
 
 
@@ -245,14 +245,14 @@ Each project follows the same philosophy: **POJO-centric, annotation-driven, con
 
 ### 1.5 When to Use What
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-handwritten.svg" alt="Handwritten: 1.5 When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-handwritten.svg" alt="Handwritten: 1.5 When to Use What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-diagram.svg" alt="Diagram: 1.5 When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-diagram.svg" alt="Diagram: 1.5 When to Use What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-sticky.svg" alt="Sticky Note: 1.5 When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-5-when-to-use-what-sticky.svg" alt="Sticky Note: 1.5 When to Use What" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ GraphQL API                          | Spring Boot + Spring GraphQL + Spring Dat
 
 ### 1.6 Spring Community & Governance
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-handwritten.svg" alt="Handwritten: 1.6 Spring Community & Governance" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-handwritten.svg" alt="Handwritten: 1.6 Spring Community & Governance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-diagram.svg" alt="Diagram: 1.6 Spring Community & Governance" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-diagram.svg" alt="Diagram: 1.6 Spring Community & Governance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-sticky.svg" alt="Sticky Note: 1.6 Spring Community & Governance" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/1-6-spring-community-governance-sticky.svg" alt="Sticky Note: 1.6 Spring Community & Governance" width="30%">
 </a>
 
 
@@ -300,14 +300,14 @@ The community is vast: 900+ contributors, 40,000+ stars on GitHub, and the large
 
 ### 2.1 The Hollywood Principle
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-handwritten.svg" alt="Handwritten: 2.1 The Hollywood Principle" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-handwritten.svg" alt="Handwritten: 2.1 The Hollywood Principle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-diagram.svg" alt="Diagram: 2.1 The Hollywood Principle" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-diagram.svg" alt="Diagram: 2.1 The Hollywood Principle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-sticky.svg" alt="Sticky Note: 2.1 The Hollywood Principle" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-1-the-hollywood-principle-sticky.svg" alt="Sticky Note: 2.1 The Hollywood Principle" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ IoC container:
 
 ### 2.2 Traditional (Tightly Coupled) Approach
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-handwritten.svg" alt="Handwritten: 2.2 Traditional (Tightly Coupled) Approach" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-handwritten.svg" alt="Handwritten: 2.2 Traditional (Tightly Coupled) Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-diagram.svg" alt="Diagram: 2.2 Traditional (Tightly Coupled) Approach" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-diagram.svg" alt="Diagram: 2.2 Traditional (Tightly Coupled) Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-sticky.svg" alt="Sticky Note: 2.2 Traditional (Tightly Coupled) Approach" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-2-traditional-tightly-coupled-approach-sticky.svg" alt="Sticky Note: 2.2 Traditional (Tightly Coupled) Approach" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ Problems with this approach:
 
 ### 2.3 Dependency Injection (the IoC Implementation)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-handwritten.svg" alt="Handwritten: 2.3 Dependency Injection (the IoC Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-handwritten.svg" alt="Handwritten: 2.3 Dependency Injection (the IoC Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-diagram.svg" alt="Diagram: 2.3 Dependency Injection (the IoC Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-diagram.svg" alt="Diagram: 2.3 Dependency Injection (the IoC Implementation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-sticky.svg" alt="Sticky Note: 2.3 Dependency Injection (the IoC Implementation)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-3-dependency-injection-the-ioc-implementation-sticky.svg" alt="Sticky Note: 2.3 Dependency Injection (the IoC Implementation)" width="30%">
 </a>
 
 
@@ -393,14 +393,14 @@ public class EmailService {
 
 ### 2.4 The Three Forms of Injection
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-handwritten.svg" alt="Handwritten: 2.4 The Three Forms of Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-handwritten.svg" alt="Handwritten: 2.4 The Three Forms of Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-diagram.svg" alt="Diagram: 2.4 The Three Forms of Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-diagram.svg" alt="Diagram: 2.4 The Three Forms of Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-sticky.svg" alt="Sticky Note: 2.4 The Three Forms of Injection" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-4-the-three-forms-of-injection-sticky.svg" alt="Sticky Note: 2.4 The Three Forms of Injection" width="30%">
 </a>
 
 
@@ -461,14 +461,14 @@ Problems: no way to create the object without the container, violates encapsulat
 
 ### 2.5 Spring IoC Container → Inside Out
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-handwritten.svg" alt="Handwritten: 2.5 Spring IoC Container → Inside Out" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-handwritten.svg" alt="Handwritten: 2.5 Spring IoC Container → Inside Out" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-diagram.svg" alt="Diagram: 2.5 Spring IoC Container → Inside Out" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-diagram.svg" alt="Diagram: 2.5 Spring IoC Container → Inside Out" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-sticky.svg" alt="Sticky Note: 2.5 Spring IoC Container → Inside Out" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-5-spring-ioc-container-inside-out-sticky.svg" alt="Sticky Note: 2.5 Spring IoC Container → Inside Out" width="30%">
 </a>
 
 
@@ -494,14 +494,14 @@ The `ApplicationContext` (the most commonly used) provides:
 
 ### 2.6 XML-Based Configuration (Legacy)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-handwritten.svg" alt="Handwritten: 2.6 XML-Based Configuration (Legacy)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-handwritten.svg" alt="Handwritten: 2.6 XML-Based Configuration (Legacy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-diagram.svg" alt="Diagram: 2.6 XML-Based Configuration (Legacy)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-diagram.svg" alt="Diagram: 2.6 XML-Based Configuration (Legacy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-sticky.svg" alt="Sticky Note: 2.6 XML-Based Configuration (Legacy)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-6-xml-based-configuration-legacy-sticky.svg" alt="Sticky Note: 2.6 XML-Based Configuration (Legacy)" width="30%">
 </a>
 
 
@@ -545,14 +545,14 @@ EmailService service = ctx.getBean(EmailService.class);
 
 ### 2.7 Java-Based Configuration (Modern)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-handwritten.svg" alt="Handwritten: 2.7 Java-Based Configuration (Modern)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-handwritten.svg" alt="Handwritten: 2.7 Java-Based Configuration (Modern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-diagram.svg" alt="Diagram: 2.7 Java-Based Configuration (Modern)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-diagram.svg" alt="Diagram: 2.7 Java-Based Configuration (Modern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-sticky.svg" alt="Sticky Note: 2.7 Java-Based Configuration (Modern)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-7-java-based-configuration-modern-sticky.svg" alt="Sticky Note: 2.7 Java-Based Configuration (Modern)" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ public class AppConfig {
 
 ### 2.8 Benefits of IoC/DI → Detailed
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-handwritten.svg" alt="Handwritten: 2.8 Benefits of IoC/DI → Detailed" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-handwritten.svg" alt="Handwritten: 2.8 Benefits of IoC/DI → Detailed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-diagram.svg" alt="Diagram: 2.8 Benefits of IoC/DI → Detailed" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-diagram.svg" alt="Diagram: 2.8 Benefits of IoC/DI → Detailed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-sticky.svg" alt="Sticky Note: 2.8 Benefits of IoC/DI → Detailed" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-8-benefits-of-ioc-di-detailed-sticky.svg" alt="Sticky Note: 2.8 Benefits of IoC/DI → Detailed" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ public class RequestBuilder { ... }
 
 ### 2.9 Spring IoC Container Internals → Simplified
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-handwritten.svg" alt="Handwritten: 2.9 Spring IoC Container Internals → Simplified" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-handwritten.svg" alt="Handwritten: 2.9 Spring IoC Container Internals → Simplified" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-diagram.svg" alt="Diagram: 2.9 Spring IoC Container Internals → Simplified" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-diagram.svg" alt="Diagram: 2.9 Spring IoC Container Internals → Simplified" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-sticky.svg" alt="Sticky Note: 2.9 Spring IoC Container Internals → Simplified" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/2-9-spring-ioc-container-internals-simplified-sticky.svg" alt="Sticky Note: 2.9 Spring IoC Container Internals → Simplified" width="30%">
 </a>
 
 
@@ -742,14 +742,14 @@ public class RequestBuilder { ... }
 
 ### 3.1 The Problem Spring Boot Solves
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-handwritten.svg" alt="Handwritten: 3.1 The Problem Spring Boot Solves" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-handwritten.svg" alt="Handwritten: 3.1 The Problem Spring Boot Solves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-diagram.svg" alt="Diagram: 3.1 The Problem Spring Boot Solves" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-diagram.svg" alt="Diagram: 3.1 The Problem Spring Boot Solves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-sticky.svg" alt="Sticky Note: 3.1 The Problem Spring Boot Solves" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-1-the-problem-spring-boot-solves-sticky.svg" alt="Sticky Note: 3.1 The Problem Spring Boot Solves" width="30%">
 </a>
 
 
@@ -807,14 +807,14 @@ Plus XML configuration for component scanning, annotation-driven MVC, view resol
 
 ### 3.2 Core Tenets of Spring Boot
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-handwritten.svg" alt="Handwritten: 3.2 Core Tenets of Spring Boot" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-handwritten.svg" alt="Handwritten: 3.2 Core Tenets of Spring Boot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-diagram.svg" alt="Diagram: 3.2 Core Tenets of Spring Boot" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-diagram.svg" alt="Diagram: 3.2 Core Tenets of Spring Boot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-sticky.svg" alt="Sticky Note: 3.2 Core Tenets of Spring Boot" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-2-core-tenets-of-spring-boot-sticky.svg" alt="Sticky Note: 3.2 Core Tenets of Spring Boot" width="30%">
 </a>
 
 
@@ -908,14 +908,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 3.3 Production-Ready Features
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-handwritten.svg" alt="Handwritten: 3.3 Production-Ready Features" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-handwritten.svg" alt="Handwritten: 3.3 Production-Ready Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-diagram.svg" alt="Diagram: 3.3 Production-Ready Features" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-diagram.svg" alt="Diagram: 3.3 Production-Ready Features" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-sticky.svg" alt="Sticky Note: 3.3 Production-Ready Features" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-3-production-ready-features-sticky.svg" alt="Sticky Note: 3.3 Production-Ready Features" width="30%">
 </a>
 
 
@@ -944,14 +944,14 @@ curl http://localhost:8080/actuator/metrics
 
 ### 3.4 Spring Boot Versus Spring Framework
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-handwritten.svg" alt="Handwritten: 3.4 Spring Boot Versus Spring Framework" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-handwritten.svg" alt="Handwritten: 3.4 Spring Boot Versus Spring Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-diagram.svg" alt="Diagram: 3.4 Spring Boot Versus Spring Framework" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-diagram.svg" alt="Diagram: 3.4 Spring Boot Versus Spring Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-sticky.svg" alt="Sticky Note: 3.4 Spring Boot Versus Spring Framework" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/3-4-spring-boot-versus-spring-framework-sticky.svg" alt="Sticky Note: 3.4 Spring Boot Versus Spring Framework" width="30%">
 </a>
 
 
@@ -974,14 +974,14 @@ Flexibility         | Maximum control         | Opinionated (configurable)
 
 ### 4.1 Spring Initializr (start.spring.io)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-handwritten.svg" alt="Handwritten: 4.1 Spring Initializr (start.spring.io)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-handwritten.svg" alt="Handwritten: 4.1 Spring Initializr (start.spring.io)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-diagram.svg" alt="Diagram: 4.1 Spring Initializr (start.spring.io)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-diagram.svg" alt="Diagram: 4.1 Spring Initializr (start.spring.io)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-sticky.svg" alt="Sticky Note: 4.1 Spring Initializr (start.spring.io)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-1-spring-initializr-start-spring-io-sticky.svg" alt="Sticky Note: 4.1 Spring Initializr (start.spring.io)" width="30%">
 </a>
 
 
@@ -1016,14 +1016,14 @@ Click **Generate** to download a ZIP with the full project skeleton.
 
 ### 4.2 IntelliJ IDEA Ultimate
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-handwritten.svg" alt="Handwritten: 4.2 IntelliJ IDEA Ultimate" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-handwritten.svg" alt="Handwritten: 4.2 IntelliJ IDEA Ultimate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-diagram.svg" alt="Diagram: 4.2 IntelliJ IDEA Ultimate" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-diagram.svg" alt="Diagram: 4.2 IntelliJ IDEA Ultimate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-sticky.svg" alt="Sticky Note: 4.2 IntelliJ IDEA Ultimate" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-2-intellij-idea-ultimate-sticky.svg" alt="Sticky Note: 4.2 IntelliJ IDEA Ultimate" width="30%">
 </a>
 
 
@@ -1051,14 +1051,14 @@ IntelliJ downloads the same Initializr template and opens it as a ready-to-run p
 
 ### 4.3 VS Code with Spring Boot Extension Pack
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-handwritten.svg" alt="Handwritten: 4.3 VS Code with Spring Boot Extension Pack" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-handwritten.svg" alt="Handwritten: 4.3 VS Code with Spring Boot Extension Pack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-diagram.svg" alt="Diagram: 4.3 VS Code with Spring Boot Extension Pack" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-diagram.svg" alt="Diagram: 4.3 VS Code with Spring Boot Extension Pack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-sticky.svg" alt="Sticky Note: 4.3 VS Code with Spring Boot Extension Pack" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-3-vs-code-with-spring-boot-extension-pack-sticky.svg" alt="Sticky Note: 4.3 VS Code with Spring Boot Extension Pack" width="30%">
 </a>
 
 
@@ -1085,14 +1085,14 @@ Ctrl+Shift+P → Spring Initializr → Create a Maven/Gradle Project
 
 ### 4.4 Spring Boot CLI
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-handwritten.svg" alt="Handwritten: 4.4 Spring Boot CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-handwritten.svg" alt="Handwritten: 4.4 Spring Boot CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-diagram.svg" alt="Diagram: 4.4 Spring Boot CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-diagram.svg" alt="Diagram: 4.4 Spring Boot CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-sticky.svg" alt="Sticky Note: 4.4 Spring Boot CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-4-spring-boot-cli-sticky.svg" alt="Sticky Note: 4.4 Spring Boot CLI" width="30%">
 </a>
 
 
@@ -1140,14 +1140,14 @@ spring shell         # Interactive shell
 
 ### 4.5 Manual Maven Project Setup
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-handwritten.svg" alt="Handwritten: 4.5 Manual Maven Project Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-handwritten.svg" alt="Handwritten: 4.5 Manual Maven Project Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-diagram.svg" alt="Diagram: 4.5 Manual Maven Project Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-diagram.svg" alt="Diagram: 4.5 Manual Maven Project Setup" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-sticky.svg" alt="Sticky Note: 4.5 Manual Maven Project Setup" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/4-5-manual-maven-project-setup-sticky.svg" alt="Sticky Note: 4.5 Manual Maven Project Setup" width="30%">
 </a>
 
 
@@ -1228,14 +1228,14 @@ public class MyAppApplication {
 
 ### 5.1 Standard Maven/Gradle Layout
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-handwritten.svg" alt="Handwritten: 5.1 Standard Maven/Gradle Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-handwritten.svg" alt="Handwritten: 5.1 Standard Maven/Gradle Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-diagram.svg" alt="Diagram: 5.1 Standard Maven/Gradle Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-diagram.svg" alt="Diagram: 5.1 Standard Maven/Gradle Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-sticky.svg" alt="Sticky Note: 5.1 Standard Maven/Gradle Layout" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-1-standard-maven-gradle-layout-sticky.svg" alt="Sticky Note: 5.1 Standard Maven/Gradle Layout" width="30%">
 </a>
 
 
@@ -1299,14 +1299,14 @@ my-app/
 
 ### 5.2 The main/java Directory
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-handwritten.svg" alt="Handwritten: 5.2 The main/java Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-handwritten.svg" alt="Handwritten: 5.2 The main/java Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-diagram.svg" alt="Diagram: 5.2 The main/java Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-diagram.svg" alt="Diagram: 5.2 The main/java Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-sticky.svg" alt="Sticky Note: 5.2 The main/java Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-2-the-main-java-directory-sticky.svg" alt="Sticky Note: 5.2 The main/java Directory" width="30%">
 </a>
 
 
@@ -1332,14 +1332,14 @@ com.example.myapp/
 
 ### 5.3 The main/resources Directory
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-handwritten.svg" alt="Handwritten: 5.3 The main/resources Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-handwritten.svg" alt="Handwritten: 5.3 The main/resources Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-diagram.svg" alt="Diagram: 5.3 The main/resources Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-diagram.svg" alt="Diagram: 5.3 The main/resources Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-sticky.svg" alt="Sticky Note: 5.3 The main/resources Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-3-the-main-resources-directory-sticky.svg" alt="Sticky Note: 5.3 The main/resources Directory" width="30%">
 </a>
 
 
@@ -1416,14 +1416,14 @@ logging:
 
 ### 5.4 The static/ Directory
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-handwritten.svg" alt="Handwritten: 5.4 The static/ Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-handwritten.svg" alt="Handwritten: 5.4 The static/ Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-diagram.svg" alt="Diagram: 5.4 The static/ Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-diagram.svg" alt="Diagram: 5.4 The static/ Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-sticky.svg" alt="Sticky Note: 5.4 The static/ Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-4-the-static-directory-sticky.svg" alt="Sticky Note: 5.4 The static/ Directory" width="30%">
 </a>
 
 
@@ -1444,14 +1444,14 @@ static/
 
 ### 5.5 The templates/ Directory
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-handwritten.svg" alt="Handwritten: 5.5 The templates/ Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-handwritten.svg" alt="Handwritten: 5.5 The templates/ Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-diagram.svg" alt="Diagram: 5.5 The templates/ Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-diagram.svg" alt="Diagram: 5.5 The templates/ Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-sticky.svg" alt="Sticky Note: 5.5 The templates/ Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-5-the-templates-directory-sticky.svg" alt="Sticky Note: 5.5 The templates/ Directory" width="30%">
 </a>
 
 
@@ -1485,14 +1485,14 @@ public class GreetingWebController {
 
 ### 5.6 The test/java Directory
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-handwritten.svg" alt="Handwritten: 5.6 The test/java Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-handwritten.svg" alt="Handwritten: 5.6 The test/java Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-diagram.svg" alt="Diagram: 5.6 The test/java Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-diagram.svg" alt="Diagram: 5.6 The test/java Directory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-sticky.svg" alt="Sticky Note: 5.6 The test/java Directory" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-6-the-test-java-directory-sticky.svg" alt="Sticky Note: 5.6 The test/java Directory" width="30%">
 </a>
 
 
@@ -1516,14 +1516,14 @@ class MyAppApplicationTests {
 
 ### 5.7 The Maven Wrapper (mvnw/mvnw.cmd)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-handwritten.svg" alt="Handwritten: 5.7 The Maven Wrapper (mvnw/mvnw.cmd)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-handwritten.svg" alt="Handwritten: 5.7 The Maven Wrapper (mvnw/mvnw.cmd)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-diagram.svg" alt="Diagram: 5.7 The Maven Wrapper (mvnw/mvnw.cmd)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-diagram.svg" alt="Diagram: 5.7 The Maven Wrapper (mvnw/mvnw.cmd)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-sticky.svg" alt="Sticky Note: 5.7 The Maven Wrapper (mvnw/mvnw.cmd)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/5-7-the-maven-wrapper-mvnw-mvnw-cmd-sticky.svg" alt="Sticky Note: 5.7 The Maven Wrapper (mvnw/mvnw.cmd)" width="30%">
 </a>
 
 
@@ -1545,14 +1545,14 @@ mvnw.cmd clean package
 
 ### 6.1 What Is a Starter?
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-handwritten.svg" alt="Handwritten: 6.1 What Is a Starter?" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-handwritten.svg" alt="Handwritten: 6.1 What Is a Starter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-diagram.svg" alt="Diagram: 6.1 What Is a Starter?" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-diagram.svg" alt="Diagram: 6.1 What Is a Starter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-sticky.svg" alt="Sticky Note: 6.1 What Is a Starter?" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-1-what-is-a-starter-sticky.svg" alt="Sticky Note: 6.1 What Is a Starter?" width="30%">
 </a>
 
 
@@ -1618,14 +1618,14 @@ The starter's own `pom.xml` (the **starter POM**) bundles all required transitiv
 
 ### 6.2 Essential Starters
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-handwritten.svg" alt="Handwritten: 6.2 Essential Starters" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-handwritten.svg" alt="Handwritten: 6.2 Essential Starters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-diagram.svg" alt="Diagram: 6.2 Essential Starters" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-diagram.svg" alt="Diagram: 6.2 Essential Starters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-sticky.svg" alt="Sticky Note: 6.2 Essential Starters" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-2-essential-starters-sticky.svg" alt="Sticky Note: 6.2 Essential Starters" width="30%">
 </a>
 
 
@@ -1824,14 +1824,14 @@ This single starter includes:
 
 ### 6.3 The spring-boot-starter (Meta-Starter)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-handwritten.svg" alt="Handwritten: 6.3 The spring-boot-starter (Meta-Starter)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-handwritten.svg" alt="Handwritten: 6.3 The spring-boot-starter (Meta-Starter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-diagram.svg" alt="Diagram: 6.3 The spring-boot-starter (Meta-Starter)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-diagram.svg" alt="Diagram: 6.3 The spring-boot-starter (Meta-Starter)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-sticky.svg" alt="Sticky Note: 6.3 The spring-boot-starter (Meta-Starter)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-3-the-spring-boot-starter-meta-starter-sticky.svg" alt="Sticky Note: 6.3 The spring-boot-starter (Meta-Starter)" width="30%">
 </a>
 
 
@@ -1858,14 +1858,14 @@ It brings in:
 
 ### 6.4 DevTools → Developer Experience Starter
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-handwritten.svg" alt="Handwritten: 6.4 DevTools → Developer Experience Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-handwritten.svg" alt="Handwritten: 6.4 DevTools → Developer Experience Starter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-diagram.svg" alt="Diagram: 6.4 DevTools → Developer Experience Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-diagram.svg" alt="Diagram: 6.4 DevTools → Developer Experience Starter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-sticky.svg" alt="Sticky Note: 6.4 DevTools → Developer Experience Starter" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/6-4-devtools-developer-experience-starter-sticky.svg" alt="Sticky Note: 6.4 DevTools → Developer Experience Starter" width="30%">
 </a>
 
 
@@ -1893,14 +1893,14 @@ Features:
 
 ### 7.1 The spring-boot-starter-parent
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-handwritten.svg" alt="Handwritten: 7.1 The spring-boot-starter-parent" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-handwritten.svg" alt="Handwritten: 7.1 The spring-boot-starter-parent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-diagram.svg" alt="Diagram: 7.1 The spring-boot-starter-parent" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-diagram.svg" alt="Diagram: 7.1 The spring-boot-starter-parent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-sticky.svg" alt="Sticky Note: 7.1 The spring-boot-starter-parent" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-1-the-spring-boot-starter-parent-sticky.svg" alt="Sticky Note: 7.1 The spring-boot-starter-parent" width="30%">
 </a>
 
 
@@ -1924,14 +1924,14 @@ The `spring-boot-starter-parent` is a **Maven parent POM** that provides:
 
 ### 7.2 What the Parent Provides
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-handwritten.svg" alt="Handwritten: 7.2 What the Parent Provides" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-handwritten.svg" alt="Handwritten: 7.2 What the Parent Provides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-diagram.svg" alt="Diagram: 7.2 What the Parent Provides" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-diagram.svg" alt="Diagram: 7.2 What the Parent Provides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-sticky.svg" alt="Sticky Note: 7.2 What the Parent Provides" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-2-what-the-parent-provides-sticky.svg" alt="Sticky Note: 7.2 What the Parent Provides" width="30%">
 </a>
 
 
@@ -2008,14 +2008,14 @@ The parent POM's `<dependencyManagement>` section declares versions for hundreds
 
 ### 7.3 Overriding a Managed Version
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-handwritten.svg" alt="Handwritten: 7.3 Overriding a Managed Version" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-handwritten.svg" alt="Handwritten: 7.3 Overriding a Managed Version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-diagram.svg" alt="Diagram: 7.3 Overriding a Managed Version" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-diagram.svg" alt="Diagram: 7.3 Overriding a Managed Version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-sticky.svg" alt="Sticky Note: 7.3 Overriding a Managed Version" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-3-overriding-a-managed-version-sticky.svg" alt="Sticky Note: 7.3 Overriding a Managed Version" width="30%">
 </a>
 
 
@@ -2033,14 +2033,14 @@ You only specify versions when you need something different from the parent:
 
 ### 7.4 Without the Parent (Corporate POM)
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-handwritten.svg" alt="Handwritten: 7.4 Without the Parent (Corporate POM)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-handwritten.svg" alt="Handwritten: 7.4 Without the Parent (Corporate POM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-diagram.svg" alt="Diagram: 7.4 Without the Parent (Corporate POM)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-diagram.svg" alt="Diagram: 7.4 Without the Parent (Corporate POM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-sticky.svg" alt="Sticky Note: 7.4 Without the Parent (Corporate POM)" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-4-without-the-parent-corporate-pom-sticky.svg" alt="Sticky Note: 7.4 Without the Parent (Corporate POM)" width="30%">
 </a>
 
 
@@ -2063,14 +2063,14 @@ If your organization has its own parent POM, use **dependency management import*
 
 ### 7.5 Spring Boot Maven Plugin
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-handwritten.svg" alt="Handwritten: 7.5 Spring Boot Maven Plugin" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-handwritten.svg" alt="Handwritten: 7.5 Spring Boot Maven Plugin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-diagram.svg" alt="Diagram: 7.5 Spring Boot Maven Plugin" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-diagram.svg" alt="Diagram: 7.5 Spring Boot Maven Plugin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-sticky.svg" alt="Sticky Note: 7.5 Spring Boot Maven Plugin" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-5-spring-boot-maven-plugin-sticky.svg" alt="Sticky Note: 7.5 Spring Boot Maven Plugin" width="30%">
 </a>
 
 
@@ -2126,14 +2126,14 @@ my-app-0.0.1-SNAPSHOT.jar
 
 ### 7.7 Gradle Equivalent
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-handwritten.svg" alt="Handwritten: 7.7 Gradle Equivalent" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-handwritten.svg" alt="Handwritten: 7.7 Gradle Equivalent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-diagram.svg" alt="Diagram: 7.7 Gradle Equivalent" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-diagram.svg" alt="Diagram: 7.7 Gradle Equivalent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-sticky.svg" alt="Sticky Note: 7.7 Gradle Equivalent" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/7-7-gradle-equivalent-sticky.svg" alt="Sticky Note: 7.7 Gradle Equivalent" width="30%">
 </a>
 
 
@@ -2201,14 +2201,14 @@ tasks.withType<Test> {
 
 ### 8.1 One Annotation to Rule Them All
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-handwritten.svg" alt="Handwritten: 8.1 One Annotation to Rule Them All" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-handwritten.svg" alt="Handwritten: 8.1 One Annotation to Rule Them All" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-diagram.svg" alt="Diagram: 8.1 One Annotation to Rule Them All" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-diagram.svg" alt="Diagram: 8.1 One Annotation to Rule Them All" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-sticky.svg" alt="Sticky Note: 8.1 One Annotation to Rule Them All" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-1-one-annotation-to-rule-them-all-sticky.svg" alt="Sticky Note: 8.1 One Annotation to Rule Them All" width="30%">
 </a>
 
 
@@ -2241,14 +2241,14 @@ public @interface SpringBootApplication {
 
 ### 8.2 The Three Constituent Annotations
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-handwritten.svg" alt="Handwritten: 8.2 The Three Constituent Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-handwritten.svg" alt="Handwritten: 8.2 The Three Constituent Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-diagram.svg" alt="Diagram: 8.2 The Three Constituent Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-diagram.svg" alt="Diagram: 8.2 The Three Constituent Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-sticky.svg" alt="Sticky Note: 8.2 The Three Constituent Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-2-the-three-constituent-annotations-sticky.svg" alt="Sticky Note: 8.2 The Three Constituent Annotations" width="30%">
 </a>
 
 
@@ -2333,14 +2333,14 @@ Beans discovered:
 
 ### 8.3 Putting It All Together
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-handwritten.svg" alt="Handwritten: 8.3 Putting It All Together" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-handwritten.svg" alt="Handwritten: 8.3 Putting It All Together" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-diagram.svg" alt="Diagram: 8.3 Putting It All Together" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-diagram.svg" alt="Diagram: 8.3 Putting It All Together" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-sticky.svg" alt="Sticky Note: 8.3 Putting It All Together" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-3-putting-it-all-together-sticky.svg" alt="Sticky Note: 8.3 Putting It All Together" width="30%">
 </a>
 
 
@@ -2371,14 +2371,14 @@ public class MyAppApplication {
 
 ### 8.4 Customizing the Application
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-handwritten.svg" alt="Handwritten: 8.4 Customizing the Application" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-handwritten.svg" alt="Handwritten: 8.4 Customizing the Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-diagram.svg" alt="Diagram: 8.4 Customizing the Application" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-diagram.svg" alt="Diagram: 8.4 Customizing the Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-sticky.svg" alt="Sticky Note: 8.4 Customizing the Application" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-4-customizing-the-application-sticky.svg" alt="Sticky Note: 8.4 Customizing the Application" width="30%">
 </a>
 
 
@@ -2411,14 +2411,14 @@ public class MyAppApplication { ... }
 
 ### 8.5 The SpringApplication.run() Method
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-handwritten.svg" alt="Handwritten: 8.5 The SpringApplication.run() Method" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-handwritten.svg" alt="Handwritten: 8.5 The SpringApplication.run() Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-diagram.svg" alt="Diagram: 8.5 The SpringApplication.run() Method" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-diagram.svg" alt="Diagram: 8.5 The SpringApplication.run() Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-sticky.svg" alt="Sticky Note: 8.5 The SpringApplication.run() Method" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-5-the-springapplication-run-method-sticky.svg" alt="Sticky Note: 8.5 The SpringApplication.run() Method" width="30%">
 </a>
 
 
@@ -2468,14 +2468,14 @@ public class MyAppApplication {
 
 ### 8.6 Using a Builder
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-handwritten.svg" alt="Handwritten: 8.6 Using a Builder" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-handwritten.svg" alt="Handwritten: 8.6 Using a Builder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-diagram.svg" alt="Diagram: 8.6 Using a Builder" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-diagram.svg" alt="Diagram: 8.6 Using a Builder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-sticky.svg" alt="Sticky Note: 8.6 Using a Builder" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/8-6-using-a-builder-sticky.svg" alt="Sticky Note: 8.6 Using a Builder" width="30%">
 </a>
 
 
@@ -2501,14 +2501,14 @@ public class MyAppApplication {
 
 ### 9.1 The Embedded Server Concept
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-handwritten.svg" alt="Handwritten: 9.1 The Embedded Server Concept" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-handwritten.svg" alt="Handwritten: 9.1 The Embedded Server Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-diagram.svg" alt="Diagram: 9.1 The Embedded Server Concept" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-diagram.svg" alt="Diagram: 9.1 The Embedded Server Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-sticky.svg" alt="Sticky Note: 9.1 The Embedded Server Concept" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-1-the-embedded-server-concept-sticky.svg" alt="Sticky Note: 9.1 The Embedded Server Concept" width="30%">
 </a>
 
 
@@ -2522,14 +2522,14 @@ Traditional Java web applications are packaged as **WAR** files and deployed to 
 
 ### 9.2 Supported Embedded Servers
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-handwritten.svg" alt="Handwritten: 9.2 Supported Embedded Servers" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-handwritten.svg" alt="Handwritten: 9.2 Supported Embedded Servers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-diagram.svg" alt="Diagram: 9.2 Supported Embedded Servers" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-diagram.svg" alt="Diagram: 9.2 Supported Embedded Servers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-sticky.svg" alt="Sticky Note: 9.2 Supported Embedded Servers" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-2-supported-embedded-servers-sticky.svg" alt="Sticky Note: 9.2 Supported Embedded Servers" width="30%">
 </a>
 
 
@@ -2542,14 +2542,14 @@ Traditional Java web applications are packaged as **WAR** files and deployed to 
 
 ### 9.3 Switching to Jetty
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-handwritten.svg" alt="Handwritten: 9.3 Switching to Jetty" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-handwritten.svg" alt="Handwritten: 9.3 Switching to Jetty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-diagram.svg" alt="Diagram: 9.3 Switching to Jetty" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-diagram.svg" alt="Diagram: 9.3 Switching to Jetty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-sticky.svg" alt="Sticky Note: 9.3 Switching to Jetty" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-3-switching-to-jetty-sticky.svg" alt="Sticky Note: 9.3 Switching to Jetty" width="30%">
 </a>
 
 
@@ -2577,14 +2577,14 @@ Traditional Java web applications are packaged as **WAR** files and deployed to 
 
 ### 9.4 Switching to Undertow
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-handwritten.svg" alt="Handwritten: 9.4 Switching to Undertow" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-handwritten.svg" alt="Handwritten: 9.4 Switching to Undertow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-diagram.svg" alt="Diagram: 9.4 Switching to Undertow" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-diagram.svg" alt="Diagram: 9.4 Switching to Undertow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-sticky.svg" alt="Sticky Note: 9.4 Switching to Undertow" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-4-switching-to-undertow-sticky.svg" alt="Sticky Note: 9.4 Switching to Undertow" width="30%">
 </a>
 
 
@@ -2610,14 +2610,14 @@ Traditional Java web applications are packaged as **WAR** files and deployed to 
 
 ### 9.5 Server Configuration via Properties
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-handwritten.svg" alt="Handwritten: 9.5 Server Configuration via Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-handwritten.svg" alt="Handwritten: 9.5 Server Configuration via Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-diagram.svg" alt="Diagram: 9.5 Server Configuration via Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-diagram.svg" alt="Diagram: 9.5 Server Configuration via Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-sticky.svg" alt="Sticky Note: 9.5 Server Configuration via Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-5-server-configuration-via-properties-sticky.svg" alt="Sticky Note: 9.5 Server Configuration via Properties" width="30%">
 </a>
 
 
@@ -2714,14 +2714,14 @@ spring.lifecycle.timeout-per-shutdown-phase=30s
 
 ### 9.6 Programmatic Server Configuration
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-handwritten.svg" alt="Handwritten: 9.6 Programmatic Server Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-handwritten.svg" alt="Handwritten: 9.6 Programmatic Server Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-diagram.svg" alt="Diagram: 9.6 Programmatic Server Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-diagram.svg" alt="Diagram: 9.6 Programmatic Server Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-sticky.svg" alt="Sticky Note: 9.6 Programmatic Server Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-6-programmatic-server-configuration-sticky.svg" alt="Sticky Note: 9.6 Programmatic Server Configuration" width="30%">
 </a>
 
 
@@ -2783,14 +2783,14 @@ public class UndertowConfig {
 
 ### 9.7 HTTP/2 Support
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-handwritten.svg" alt="Handwritten: 9.7 HTTP/2 Support" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-handwritten.svg" alt="Handwritten: 9.7 HTTP/2 Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-diagram.svg" alt="Diagram: 9.7 HTTP/2 Support" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-diagram.svg" alt="Diagram: 9.7 HTTP/2 Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-sticky.svg" alt="Sticky Note: 9.7 HTTP/2 Support" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-7-http-2-support-sticky.svg" alt="Sticky Note: 9.7 HTTP/2 Support" width="30%">
 </a>
 
 
@@ -2829,14 +2829,14 @@ public WebServerFactoryCustomizer<TomcatServletWebServerFactory> h2cCustomizer()
 
 ### 9.8 Embedded Server Comparison
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-handwritten.svg" alt="Handwritten: 9.8 Embedded Server Comparison" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-handwritten.svg" alt="Handwritten: 9.8 Embedded Server Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-diagram.svg" alt="Diagram: 9.8 Embedded Server Comparison" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-diagram.svg" alt="Diagram: 9.8 Embedded Server Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-sticky.svg" alt="Sticky Note: 9.8 Embedded Server Comparison" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/9-8-embedded-server-comparison-sticky.svg" alt="Sticky Note: 9.8 Embedded Server Comparison" width="30%">
 </a>
 
 
@@ -2860,14 +2860,14 @@ For most applications, the default **Tomcat** is perfectly adequate. Choose Jett
 
 ### 10.1 What Is the Spring Boot CLI?
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-handwritten.svg" alt="Handwritten: 10.1 What Is the Spring Boot CLI?" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-handwritten.svg" alt="Handwritten: 10.1 What Is the Spring Boot CLI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-diagram.svg" alt="Diagram: 10.1 What Is the Spring Boot CLI?" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-diagram.svg" alt="Diagram: 10.1 What Is the Spring Boot CLI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-sticky.svg" alt="Sticky Note: 10.1 What Is the Spring Boot CLI?" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-1-what-is-the-spring-boot-cli-sticky.svg" alt="Sticky Note: 10.1 What Is the Spring Boot CLI?" width="30%">
 </a>
 
 
@@ -2898,14 +2898,14 @@ spring run hello.groovy
 
 ### 10.2 Installation
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-2-installation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-2-installation-handwritten.svg" alt="Handwritten: 10.2 Installation" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-2-installation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-2-installation-handwritten.svg" alt="Handwritten: 10.2 Installation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-2-installation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-2-installation-diagram.svg" alt="Diagram: 10.2 Installation" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-2-installation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-2-installation-diagram.svg" alt="Diagram: 10.2 Installation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-2-installation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-2-installation-sticky.svg" alt="Sticky Note: 10.2 Installation" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-2-installation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-2-installation-sticky.svg" alt="Sticky Note: 10.2 Installation" width="30%">
 </a>
 
 
@@ -2925,14 +2925,14 @@ choco install springboot
 
 ### 10.3 Groovy Magic → The Grab Annotations
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-handwritten.svg" alt="Handwritten: 10.3 Groovy Magic → The Grab Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-handwritten.svg" alt="Handwritten: 10.3 Groovy Magic → The Grab Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-diagram.svg" alt="Diagram: 10.3 Groovy Magic → The Grab Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-diagram.svg" alt="Diagram: 10.3 Groovy Magic → The Grab Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-sticky.svg" alt="Sticky Note: 10.3 Groovy Magic → The Grab Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-3-groovy-magic-the-grab-annotations-sticky.svg" alt="Sticky Note: 10.3 Groovy Magic → The Grab Annotations" width="30%">
 </a>
 
 
@@ -2967,14 +2967,14 @@ class DemoController {
 
 ### 10.4 Complete CLI Application Example
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-handwritten.svg" alt="Handwritten: 10.4 Complete CLI Application Example" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-handwritten.svg" alt="Handwritten: 10.4 Complete CLI Application Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-diagram.svg" alt="Diagram: 10.4 Complete CLI Application Example" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-diagram.svg" alt="Diagram: 10.4 Complete CLI Application Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-sticky.svg" alt="Sticky Note: 10.4 Complete CLI Application Example" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-4-complete-cli-application-example-sticky.svg" alt="Sticky Note: 10.4 Complete CLI Application Example" width="30%">
 </a>
 
 
@@ -3009,14 +3009,14 @@ spring run app.groovy
 
 ### 10.5 CLI with Profiles and Properties
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-handwritten.svg" alt="Handwritten: 10.5 CLI with Profiles and Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-handwritten.svg" alt="Handwritten: 10.5 CLI with Profiles and Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-diagram.svg" alt="Diagram: 10.5 CLI with Profiles and Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-diagram.svg" alt="Diagram: 10.5 CLI with Profiles and Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-sticky.svg" alt="Sticky Note: 10.5 CLI with Profiles and Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-5-cli-with-profiles-and-properties-sticky.svg" alt="Sticky Note: 10.5 CLI with Profiles and Properties" width="30%">
 </a>
 
 
@@ -3047,14 +3047,14 @@ class App {
 
 ### 10.6 Multi-File Applications
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-handwritten.svg" alt="Handwritten: 10.6 Multi-File Applications" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-handwritten.svg" alt="Handwritten: 10.6 Multi-File Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-diagram.svg" alt="Diagram: 10.6 Multi-File Applications" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-diagram.svg" alt="Diagram: 10.6 Multi-File Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-sticky.svg" alt="Sticky Note: 10.6 Multi-File Applications" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-6-multi-file-applications-sticky.svg" alt="Sticky Note: 10.6 Multi-File Applications" width="30%">
 </a>
 
 
@@ -3068,14 +3068,14 @@ spring run config.groovy services.groovy controllers.groovy
 
 ### 10.7 Testing with the CLI
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-handwritten.svg" alt="Handwritten: 10.7 Testing with the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-handwritten.svg" alt="Handwritten: 10.7 Testing with the CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-diagram.svg" alt="Diagram: 10.7 Testing with the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-diagram.svg" alt="Diagram: 10.7 Testing with the CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-sticky.svg" alt="Sticky Note: 10.7 Testing with the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-7-testing-with-the-cli-sticky.svg" alt="Sticky Note: 10.7 Testing with the CLI" width="30%">
 </a>
 
 
@@ -3099,14 +3099,14 @@ class AppTests {
 
 ### 10.8 Creating Executable JARs with the CLI
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-handwritten.svg" alt="Handwritten: 10.8 Creating Executable JARs with the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-handwritten.svg" alt="Handwritten: 10.8 Creating Executable JARs with the CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-diagram.svg" alt="Diagram: 10.8 Creating Executable JARs with the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-diagram.svg" alt="Diagram: 10.8 Creating Executable JARs with the CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-sticky.svg" alt="Sticky Note: 10.8 Creating Executable JARs with the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-8-creating-executable-jars-with-the-cli-sticky.svg" alt="Sticky Note: 10.8 Creating Executable JARs with the CLI" width="30%">
 </a>
 
 
@@ -3120,14 +3120,14 @@ spring war app.war *.groovy
 
 ### 10.9 When to Use the CLI
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-handwritten.svg" alt="Handwritten: 10.9 When to Use the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-handwritten.svg" alt="Handwritten: 10.9 When to Use the CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-diagram.svg" alt="Diagram: 10.9 When to Use the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-diagram.svg" alt="Diagram: 10.9 When to Use the CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-sticky.svg" alt="Sticky Note: 10.9 When to Use the CLI" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/10-9-when-to-use-the-cli-sticky.svg" alt="Sticky Note: 10.9 When to Use the CLI" width="30%">
 </a>
 
 
@@ -3149,14 +3149,14 @@ Let's build a complete **Hello World** REST application step by step. This is th
 
 ### 11.1 Step 1: Create the Project
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-handwritten.svg" alt="Handwritten: 11.1 Step 1: Create the Project" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-handwritten.svg" alt="Handwritten: 11.1 Step 1: Create the Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-diagram.svg" alt="Diagram: 11.1 Step 1: Create the Project" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-diagram.svg" alt="Diagram: 11.1 Step 1: Create the Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-sticky.svg" alt="Sticky Note: 11.1 Step 1: Create the Project" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-1-step-1-create-the-project-sticky.svg" alt="Sticky Note: 11.1 Step 1: Create the Project" width="30%">
 </a>
 
 
@@ -3180,14 +3180,14 @@ cd hello-world
 
 ### 11.2 Step 2: Examine the Generated Files
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-handwritten.svg" alt="Handwritten: 11.2 Step 2: Examine the Generated Files" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-handwritten.svg" alt="Handwritten: 11.2 Step 2: Examine the Generated Files" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-diagram.svg" alt="Diagram: 11.2 Step 2: Examine the Generated Files" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-diagram.svg" alt="Diagram: 11.2 Step 2: Examine the Generated Files" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-sticky.svg" alt="Sticky Note: 11.2 Step 2: Examine the Generated Files" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-2-step-2-examine-the-generated-files-sticky.svg" alt="Sticky Note: 11.2 Step 2: Examine the Generated Files" width="30%">
 </a>
 
 
@@ -3316,14 +3316,14 @@ class HelloWorldApplicationTests {
 
 ### 11.3 Step 3: Create the REST Controller
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-handwritten.svg" alt="Handwritten: 11.3 Step 3: Create the REST Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-handwritten.svg" alt="Handwritten: 11.3 Step 3: Create the REST Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-diagram.svg" alt="Diagram: 11.3 Step 3: Create the REST Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-diagram.svg" alt="Diagram: 11.3 Step 3: Create the REST Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-sticky.svg" alt="Sticky Note: 11.3 Step 3: Create the REST Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-3-step-3-create-the-rest-controller-sticky.svg" alt="Sticky Note: 11.3 Step 3: Create the REST Controller" width="30%">
 </a>
 
 
@@ -3377,14 +3377,14 @@ public class GreetingController {
 
 ### 11.4 Step 4: Add Application Properties
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-handwritten.svg" alt="Handwritten: 11.4 Step 4: Add Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-handwritten.svg" alt="Handwritten: 11.4 Step 4: Add Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-diagram.svg" alt="Diagram: 11.4 Step 4: Add Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-diagram.svg" alt="Diagram: 11.4 Step 4: Add Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-sticky.svg" alt="Sticky Note: 11.4 Step 4: Add Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-4-step-4-add-application-properties-sticky.svg" alt="Sticky Note: 11.4 Step 4: Add Application Properties" width="30%">
 </a>
 
 
@@ -3442,14 +3442,14 @@ management:
 
 ### 11.5 Step 5: Add a Custom Banner
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-handwritten.svg" alt="Handwritten: 11.5 Step 5: Add a Custom Banner" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-handwritten.svg" alt="Handwritten: 11.5 Step 5: Add a Custom Banner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-diagram.svg" alt="Diagram: 11.5 Step 5: Add a Custom Banner" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-diagram.svg" alt="Diagram: 11.5 Step 5: Add a Custom Banner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-sticky.svg" alt="Sticky Note: 11.5 Step 5: Add a Custom Banner" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-5-step-5-add-a-custom-banner-sticky.svg" alt="Sticky Note: 11.5 Step 5: Add a Custom Banner" width="30%">
 </a>
 
 
@@ -3470,14 +3470,14 @@ ${AnsiColor.DEFAULT}
 
 ### 11.6 Step 6: Build and Run
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-handwritten.svg" alt="Handwritten: 11.6 Step 6: Build and Run" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-handwritten.svg" alt="Handwritten: 11.6 Step 6: Build and Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-diagram.svg" alt="Diagram: 11.6 Step 6: Build and Run" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-diagram.svg" alt="Diagram: 11.6 Step 6: Build and Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-sticky.svg" alt="Sticky Note: 11.6 Step 6: Build and Run" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-6-step-6-build-and-run-sticky.svg" alt="Sticky Note: 11.6 Step 6: Build and Run" width="30%">
 </a>
 
 
@@ -3501,14 +3501,14 @@ mvnw.cmd spring-boot:run
 
 ### 11.7 Step 7: Verify
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-handwritten.svg" alt="Handwritten: 11.7 Step 7: Verify" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-handwritten.svg" alt="Handwritten: 11.7 Step 7: Verify" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-diagram.svg" alt="Diagram: 11.7 Step 7: Verify" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-diagram.svg" alt="Diagram: 11.7 Step 7: Verify" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-sticky.svg" alt="Sticky Note: 11.7 Step 7: Verify" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-7-step-7-verify-sticky.svg" alt="Sticky Note: 11.7 Step 7: Verify" width="30%">
 </a>
 
 
@@ -3539,14 +3539,14 @@ curl http://localhost:8080/actuator/info
 
 ### 11.8 Full Application Structure
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-handwritten.svg" alt="Handwritten: 11.8 Full Application Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-handwritten.svg" alt="Handwritten: 11.8 Full Application Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-diagram.svg" alt="Diagram: 11.8 Full Application Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-diagram.svg" alt="Diagram: 11.8 Full Application Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-sticky.svg" alt="Sticky Note: 11.8 Full Application Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-8-full-application-structure-sticky.svg" alt="Sticky Note: 11.8 Full Application Structure" width="30%">
 </a>
 
 
@@ -3578,14 +3578,14 @@ hello-world/
 
 ### 11.9 Adding a Static Welcome Page
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-handwritten.svg" alt="Handwritten: 11.9 Adding a Static Welcome Page" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-handwritten.svg" alt="Handwritten: 11.9 Adding a Static Welcome Page" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-diagram.svg" alt="Diagram: 11.9 Adding a Static Welcome Page" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-diagram.svg" alt="Diagram: 11.9 Adding a Static Welcome Page" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-sticky.svg" alt="Sticky Note: 11.9 Adding a Static Welcome Page" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-9-adding-a-static-welcome-page-sticky.svg" alt="Sticky Note: 11.9 Adding a Static Welcome Page" width="30%">
 </a>
 
 
@@ -3670,14 +3670,14 @@ hello-world/
 
 ### 11.10 Adding a Service Layer
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-handwritten.svg" alt="Handwritten: 11.10 Adding a Service Layer" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-handwritten.svg" alt="Handwritten: 11.10 Adding a Service Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-diagram.svg" alt="Diagram: 11.10 Adding a Service Layer" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-diagram.svg" alt="Diagram: 11.10 Adding a Service Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-sticky.svg" alt="Sticky Note: 11.10 Adding a Service Layer" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-10-adding-a-service-layer-sticky.svg" alt="Sticky Note: 11.10 Adding a Service Layer" width="30%">
 </a>
 
 
@@ -3771,14 +3771,14 @@ public class GreetingController {
 
 ### 11.11 Unit Testing
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-handwritten.svg" alt="Handwritten: 11.11 Unit Testing" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-handwritten.svg" alt="Handwritten: 11.11 Unit Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-diagram.svg" alt="Diagram: 11.11 Unit Testing" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-diagram.svg" alt="Diagram: 11.11 Unit Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-sticky.svg" alt="Sticky Note: 11.11 Unit Testing" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-11-unit-testing-sticky.svg" alt="Sticky Note: 11.11 Unit Testing" width="30%">
 </a>
 
 
@@ -3905,14 +3905,14 @@ class GreetingControllerTest {
 
 ### 11.12 Integration Test
 
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-handwritten.svg" alt="Handwritten: 11.12 Integration Test" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-handwritten.svg" alt="Handwritten: 11.12 Integration Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-diagram.svg" alt="Diagram: 11.12 Integration Test" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-diagram.svg" alt="Diagram: 11.12 Integration Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-sticky.svg" alt="Sticky Note: 11.12 Integration Test" width="30%">
+<a href="../../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/09-spring-intro/11-12-integration-test-sticky.svg" alt="Sticky Note: 11.12 Integration Test" width="30%">
 </a>
 
 

@@ -76,14 +76,14 @@ flowchart TD
 
 ### 1. Graph Types: Directed, Undirected, Weighted
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-handwritten.svg" alt="Handwritten: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-handwritten.svg" alt="Handwritten: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-diagram.svg" alt="Diagram: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-diagram.svg" alt="Diagram: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-sticky.svg" alt="Sticky Note: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-sticky.svg" alt="Sticky Note: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
 </a>
 
 
@@ -258,14 +258,14 @@ class Main {
 
 ### 2. Adjacency Matrix
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-handwritten.svg" alt="Handwritten: 2. Adjacency Matrix" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-handwritten.svg" alt="Handwritten: 2. Adjacency Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-diagram.svg" alt="Diagram: 2. Adjacency Matrix" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-diagram.svg" alt="Diagram: 2. Adjacency Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-sticky.svg" alt="Sticky Note: 2. Adjacency Matrix" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-sticky.svg" alt="Sticky Note: 2. Adjacency Matrix" width="30%">
 </a>
 
 
@@ -583,14 +583,14 @@ class AdjacencyMatrix {
 
 ### 3. Adjacency List
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-handwritten.svg" alt="Handwritten: 3. Adjacency List" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-handwritten.svg" alt="Handwritten: 3. Adjacency List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-diagram.svg" alt="Diagram: 3. Adjacency List" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-diagram.svg" alt="Diagram: 3. Adjacency List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-sticky.svg" alt="Sticky Note: 3. Adjacency List" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-sticky.svg" alt="Sticky Note: 3. Adjacency List" width="30%">
 </a>
 
 
@@ -903,14 +903,14 @@ class AdjacencyList {
 
 ### 4. Edge List
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-handwritten.svg" alt="Handwritten: 4. Edge List" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-handwritten.svg" alt="Handwritten: 4. Edge List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-diagram.svg" alt="Diagram: 4. Edge List" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-diagram.svg" alt="Diagram: 4. Edge List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-sticky.svg" alt="Sticky Note: 4. Edge List" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-sticky.svg" alt="Sticky Note: 4. Edge List" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ class EdgeList {
 
 ### 5. Degree Calculation
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-handwritten.svg" alt="Handwritten: 5. Degree Calculation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-handwritten.svg" alt="Handwritten: 5. Degree Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-diagram.svg" alt="Diagram: 5. Degree Calculation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-diagram.svg" alt="Diagram: 5. Degree Calculation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-sticky.svg" alt="Sticky Note: 5. Degree Calculation" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-sticky.svg" alt="Sticky Note: 5. Degree Calculation" width="30%">
 </a>
 
 
@@ -1363,14 +1363,14 @@ class DegreeCalc {
 
 ### 6. Complete Graph
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-handwritten.svg" alt="Handwritten: 6. Complete Graph" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-handwritten.svg" alt="Handwritten: 6. Complete Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-diagram.svg" alt="Diagram: 6. Complete Graph" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-diagram.svg" alt="Diagram: 6. Complete Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-sticky.svg" alt="Sticky Note: 6. Complete Graph" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-sticky.svg" alt="Sticky Note: 6. Complete Graph" width="30%">
 </a>
 
 
@@ -1528,14 +1528,14 @@ class CompleteGraph {
 
 ### 7. Bipartite Graph
 
-<a href="../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-handwritten.svg" alt="Handwritten: 7. Bipartite Graph" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-handwritten.svg" alt="Handwritten: 7. Bipartite Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-diagram.svg" alt="Diagram: 7. Bipartite Graph" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-diagram.svg" alt="Diagram: 7. Bipartite Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-sticky.svg" alt="Sticky Note: 7. Bipartite Graph" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-sticky.svg" alt="Sticky Note: 7. Bipartite Graph" width="30%">
 </a>
 
 

@@ -49,14 +49,14 @@ flowchart LR
 
 ### 13.1 The Three Pillars of Observability
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 13.1 The Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-handwritten.svg" alt="Handwritten: 13.1 The Three Pillars of Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-diagram.svg" alt="Diagram: 13.1 The Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-diagram.svg" alt="Diagram: 13.1 The Three Pillars of Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 13.1 The Three Pillars of Observability" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-1-the-three-pillars-of-observability-sticky.svg" alt="Sticky Note: 13.1 The Three Pillars of Observability" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@ The pillars are interconnected. A metric alert leads to a dashboard, which revea
 
 ### 13.2 OpenTelemetry
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-handwritten.svg" alt="Handwritten: 13.2 OpenTelemetry" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-handwritten.svg" alt="Handwritten: 13.2 OpenTelemetry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-diagram.svg" alt="Diagram: 13.2 OpenTelemetry" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-diagram.svg" alt="Diagram: 13.2 OpenTelemetry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-sticky.svg" alt="Sticky Note: 13.2 OpenTelemetry" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-2-opentelemetry-sticky.svg" alt="Sticky Note: 13.2 OpenTelemetry" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ This header is automatically injected into outgoing HTTP requests and extracted 
 
 ### 13.3 Distributed Tracing
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-handwritten.svg" alt="Handwritten: 13.3 Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-handwritten.svg" alt="Handwritten: 13.3 Distributed Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-diagram.svg" alt="Diagram: 13.3 Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-diagram.svg" alt="Diagram: 13.3 Distributed Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-sticky.svg" alt="Sticky Note: 13.3 Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-3-distributed-tracing-sticky.svg" alt="Sticky Note: 13.3 Distributed Tracing" width="30%">
 </a>
 
 
@@ -168,14 +168,14 @@ async function processPayment(paymentId: string, amount: number) {
 
 ### 13.4 Service Maps and Dependency Analysis
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-handwritten.svg" alt="Handwritten: 13.4 Service Maps and Dependency Analysis" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-handwritten.svg" alt="Handwritten: 13.4 Service Maps and Dependency Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-diagram.svg" alt="Diagram: 13.4 Service Maps and Dependency Analysis" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-diagram.svg" alt="Diagram: 13.4 Service Maps and Dependency Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-sticky.svg" alt="Sticky Note: 13.4 Service Maps and Dependency Analysis" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-4-service-maps-and-dependency-analysis-sticky.svg" alt="Sticky Note: 13.4 Service Maps and Dependency Analysis" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ Service maps reveal unknown dependencies, single points of failure, unexpected t
 
 ### 13.5 RED Metrics and the USE Method
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-handwritten.svg" alt="Handwritten: 13.5 RED Metrics and the USE Method" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-handwritten.svg" alt="Handwritten: 13.5 RED Metrics and the USE Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-diagram.svg" alt="Diagram: 13.5 RED Metrics and the USE Method" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-diagram.svg" alt="Diagram: 13.5 RED Metrics and the USE Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-sticky.svg" alt="Sticky Note: 13.5 RED Metrics and the USE Method" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-5-red-metrics-and-the-use-method-sticky.svg" alt="Sticky Note: 13.5 RED Metrics and the USE Method" width="30%">
 </a>
 
 
@@ -217,14 +217,14 @@ USE applies to every resource in the system: CPU, memory, disk, network, and sys
 
 ### 13.6 SLOs and Error Budgets
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-handwritten.svg" alt="Handwritten: 13.6 SLOs and Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-handwritten.svg" alt="Handwritten: 13.6 SLOs and Error Budgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-diagram.svg" alt="Diagram: 13.6 SLOs and Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-diagram.svg" alt="Diagram: 13.6 SLOs and Error Budgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-sticky.svg" alt="Sticky Note: 13.6 SLOs and Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-6-slos-and-error-budgets-sticky.svg" alt="Sticky Note: 13.6 SLOs and Error Budgets" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ groups:
 
 ### 13.7 Observability Cost Optimization
 
-<a href="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-handwritten.svg" alt="Handwritten: 13.7 Observability Cost Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-handwritten.svg" alt="Handwritten: 13.7 Observability Cost Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-diagram.svg" alt="Diagram: 13.7 Observability Cost Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-diagram.svg" alt="Diagram: 13.7 Observability Cost Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-sticky.svg" alt="Sticky Note: 13.7 Observability Cost Optimization" width="30%">
+<a href="../../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/13-observability/13-7-observability-cost-optimization-sticky.svg" alt="Sticky Note: 13.7 Observability Cost Optimization" width="30%">
 </a>
 
 

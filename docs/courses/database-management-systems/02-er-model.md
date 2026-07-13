@@ -42,14 +42,14 @@ flowchart LR
 ```
 ### 2.1 The Entity-Relationship Model
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-handwritten.svg" alt="Handwritten: 2.1 The Entity-Relationship Model" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-handwritten.svg" alt="Handwritten: 2.1 The Entity-Relationship Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-diagram.svg" alt="Diagram: 2.1 The Entity-Relationship Model" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-diagram.svg" alt="Diagram: 2.1 The Entity-Relationship Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-sticky.svg" alt="Sticky Note: 2.1 The Entity-Relationship Model" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-sticky.svg" alt="Sticky Note: 2.1 The Entity-Relationship Model" width="30%">
 </a>
 
 ```
@@ -557,14 +557,14 @@ A weak entity needs a discriminator to distinguish entities within the same owne
 ```
 ### 2.2 Entities and Entity Sets
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-handwritten.svg" alt="Handwritten: 2.2 Entities and Entity Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-handwritten.svg" alt="Handwritten: 2.2 Entities and Entity Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-diagram.svg" alt="Diagram: 2.2 Entities and Entity Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-diagram.svg" alt="Diagram: 2.2 Entities and Entity Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-sticky.svg" alt="Sticky Note: 2.2 Entities and Entity Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-sticky.svg" alt="Sticky Note: 2.2 Entities and Entity Sets" width="30%">
 </a>
 
 ```
@@ -617,14 +617,14 @@ END PROCEDURE
 ```
 ### 2.3 Attributes
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-handwritten.svg" alt="Handwritten: 2.3 Attributes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-handwritten.svg" alt="Handwritten: 2.3 Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-diagram.svg" alt="Diagram: 2.3 Attributes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-diagram.svg" alt="Diagram: 2.3 Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-sticky.svg" alt="Sticky Note: 2.3 Attributes" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-sticky.svg" alt="Sticky Note: 2.3 Attributes" width="30%">
 </a>
 
 ```
@@ -792,14 +792,14 @@ if __name__ == "__main__":
 ```
 ### 2.4 Relationship Types and Relationship Sets
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-handwritten.svg" alt="Handwritten: 2.4 Relationship Types and Relationship Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-handwritten.svg" alt="Handwritten: 2.4 Relationship Types and Relationship Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-diagram.svg" alt="Diagram: 2.4 Relationship Types and Relationship Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-diagram.svg" alt="Diagram: 2.4 Relationship Types and Relationship Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-sticky.svg" alt="Sticky Note: 2.4 Relationship Types and Relationship Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-sticky.svg" alt="Sticky Note: 2.4 Relationship Types and Relationship Sets" width="30%">
 </a>
 
 ```
@@ -1088,14 +1088,14 @@ if __name__ == "__main__":
 ```
 ### 2.5 Weak Entity Sets
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-handwritten.svg" alt="Handwritten: 2.5 Weak Entity Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-handwritten.svg" alt="Handwritten: 2.5 Weak Entity Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-diagram.svg" alt="Diagram: 2.5 Weak Entity Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-diagram.svg" alt="Diagram: 2.5 Weak Entity Sets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-sticky.svg" alt="Sticky Note: 2.5 Weak Entity Sets" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-sticky.svg" alt="Sticky Note: 2.5 Weak Entity Sets" width="30%">
 </a>
 
 ```
@@ -1381,14 +1381,14 @@ A weak entity can participate in relationships with other entities.
 ```
 ### 2.6 ER Diagram Notation
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-handwritten.svg" alt="Handwritten: 2.6 ER Diagram Notation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-handwritten.svg" alt="Handwritten: 2.6 ER Diagram Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-diagram.svg" alt="Diagram: 2.6 ER Diagram Notation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-diagram.svg" alt="Diagram: 2.6 ER Diagram Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-sticky.svg" alt="Sticky Note: 2.6 ER Diagram Notation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-sticky.svg" alt="Sticky Note: 2.6 ER Diagram Notation" width="30%">
 </a>
 
 ```
@@ -1540,14 +1540,14 @@ int main() {
 ```
 ### 2.7 Generalization, Specialization, and Aggregation
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-handwritten.svg" alt="Handwritten: 2.7 Generalization, Specialization, and Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-handwritten.svg" alt="Handwritten: 2.7 Generalization, Specialization, and Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-diagram.svg" alt="Diagram: 2.7 Generalization, Specialization, and Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-diagram.svg" alt="Diagram: 2.7 Generalization, Specialization, and Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-sticky.svg" alt="Sticky Note: 2.7 Generalization, Specialization, and Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-sticky.svg" alt="Sticky Note: 2.7 Generalization, Specialization, and Aggregation" width="30%">
 </a>
 
 ```
@@ -1824,14 +1824,14 @@ if __name__ == "__main__":
 ```
 ### 2.8 From ER to Relational Mapping
 
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-handwritten.svg" alt="Handwritten: 2.8 From ER to Relational Mapping" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-handwritten.svg" alt="Handwritten: 2.8 From ER to Relational Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-diagram.svg" alt="Diagram: 2.8 From ER to Relational Mapping" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-diagram.svg" alt="Diagram: 2.8 From ER to Relational Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-sticky.svg" alt="Sticky Note: 2.8 From ER to Relational Mapping" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-sticky.svg" alt="Sticky Note: 2.8 From ER to Relational Mapping" width="30%">
 </a>
 
 ```

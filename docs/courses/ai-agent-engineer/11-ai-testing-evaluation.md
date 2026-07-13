@@ -26,14 +26,14 @@
 
 ### Testing Tool Selection
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-handwritten.svg" alt="Handwritten: Testing Tool Selection" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-handwritten.svg" alt="Handwritten: Testing Tool Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-diagram.svg" alt="Diagram: Testing Tool Selection" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-diagram.svg" alt="Diagram: Testing Tool Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-sticky.svg" alt="Sticky Note: Testing Tool Selection" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-tool-selection-sticky.svg" alt="Sticky Note: Testing Tool Selection" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ class TestAgentToolSelection:
 
 ### Testing State Transitions (LangGraph)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-handwritten.svg" alt="Handwritten: Testing State Transitions (LangGraph)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-handwritten.svg" alt="Handwritten: Testing State Transitions (LangGraph)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-diagram.svg" alt="Diagram: Testing State Transitions (LangGraph)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-diagram.svg" alt="Diagram: Testing State Transitions (LangGraph)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-sticky.svg" alt="Sticky Note: Testing State Transitions (LangGraph)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/testing-state-transitions-langgraph-sticky.svg" alt="Sticky Note: Testing State Transitions (LangGraph)" width="30%">
 </a>
 
 
@@ -577,14 +577,14 @@ for detail in report.details:
 
 ### Creating Ground-Truth Data
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-handwritten.svg" alt="Handwritten: Creating Ground-Truth Data" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-handwritten.svg" alt="Handwritten: Creating Ground-Truth Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-diagram.svg" alt="Diagram: Creating Ground-Truth Data" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-diagram.svg" alt="Diagram: Creating Ground-Truth Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-sticky.svg" alt="Sticky Note: Creating Ground-Truth Data" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/creating-ground-truth-data-sticky.svg" alt="Sticky Note: Creating Ground-Truth Data" width="30%">
 </a>
 
 
@@ -714,14 +714,14 @@ jobs:
 
 ### Python CI Eval Runner
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-handwritten.svg" alt="Handwritten: Python CI Eval Runner" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-handwritten.svg" alt="Handwritten: Python CI Eval Runner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-diagram.svg" alt="Diagram: Python CI Eval Runner" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-diagram.svg" alt="Diagram: Python CI Eval Runner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-sticky.svg" alt="Sticky Note: Python CI Eval Runner" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/11-ai-testing-evaluation/python-ci-eval-runner-sticky.svg" alt="Sticky Note: Python CI Eval Runner" width="30%">
 </a>
 
 

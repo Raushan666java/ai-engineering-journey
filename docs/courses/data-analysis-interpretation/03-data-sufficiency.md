@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 3.1 What is Data Sufficiency?
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-handwritten.svg" alt="Handwritten: 3.1 What is Data Sufficiency?" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-handwritten.svg" alt="Handwritten: 3.1 What is Data Sufficiency?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-diagram.svg" alt="Diagram: 3.1 What is Data Sufficiency?" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-diagram.svg" alt="Diagram: 3.1 What is Data Sufficiency?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-sticky.svg" alt="Sticky Note: 3.1 What is Data Sufficiency?" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-1-what-is-data-sufficiency-sticky.svg" alt="Sticky Note: 3.1 What is Data Sufficiency?" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ flowchart TD
 
 ### 3.2 The Five Answer Choices Explained
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-handwritten.svg" alt="Handwritten: 3.2 The Five Answer Choices Explained" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-handwritten.svg" alt="Handwritten: 3.2 The Five Answer Choices Explained" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-diagram.svg" alt="Diagram: 3.2 The Five Answer Choices Explained" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-diagram.svg" alt="Diagram: 3.2 The Five Answer Choices Explained" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-sticky.svg" alt="Sticky Note: 3.2 The Five Answer Choices Explained" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-2-the-five-answer-choices-explained-sticky.svg" alt="Sticky Note: 3.2 The Five Answer Choices Explained" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ flowchart TD
 
 ### 3.3 The Decision Process â€”tep by Step
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-handwritten.svg" alt="Handwritten: 3.3 The Decision Process â€”tep by Step" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-handwritten.svg" alt="Handwritten: 3.3 The Decision Process â€”tep by Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-diagram.svg" alt="Diagram: 3.3 The Decision Process â€”tep by Step" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-diagram.svg" alt="Diagram: 3.3 The Decision Process â€”tep by Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-sticky.svg" alt="Sticky Note: 3.3 The Decision Process â€”tep by Step" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-3-the-decision-process-tep-by-step-sticky.svg" alt="Sticky Note: 3.3 The Decision Process â€”tep by Step" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ flowchart TD
 
 ### 3.4 Types of Data Sufficiency Questions
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-handwritten.svg" alt="Handwritten: 3.4 Types of Data Sufficiency Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-handwritten.svg" alt="Handwritten: 3.4 Types of Data Sufficiency Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-diagram.svg" alt="Diagram: 3.4 Types of Data Sufficiency Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-diagram.svg" alt="Diagram: 3.4 Types of Data Sufficiency Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-sticky.svg" alt="Sticky Note: 3.4 Types of Data Sufficiency Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-4-types-of-data-sufficiency-questions-sticky.svg" alt="Sticky Note: 3.4 Types of Data Sufficiency Questions" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ The question asks for a comparison that can be answered "yes" or "no".
 
 ### 3.5 Common Trick Questions and How to Avoid Them
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-handwritten.svg" alt="Handwritten: 3.5 Common Trick Questions and How to Avoid Them" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-handwritten.svg" alt="Handwritten: 3.5 Common Trick Questions and How to Avoid Them" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-diagram.svg" alt="Diagram: 3.5 Common Trick Questions and How to Avoid Them" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-diagram.svg" alt="Diagram: 3.5 Common Trick Questions and How to Avoid Them" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-sticky.svg" alt="Sticky Note: 3.5 Common Trick Questions and How to Avoid Them" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-5-common-trick-questions-and-how-to-avoid-them-sticky.svg" alt="Sticky Note: 3.5 Common Trick Questions and How to Avoid Them" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ The question asks for a comparison that can be answered "yes" or "no".
 
 ### 3.6 When Is Data Sufficient? â€”he Criteria
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-handwritten.svg" alt="Handwritten: 3.6 When Is Data Sufficient? â€”he Criteria" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-handwritten.svg" alt="Handwritten: 3.6 When Is Data Sufficient? â€”he Criteria" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-diagram.svg" alt="Diagram: 3.6 When Is Data Sufficient? â€”he Criteria" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-diagram.svg" alt="Diagram: 3.6 When Is Data Sufficient? â€”he Criteria" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-sticky.svg" alt="Sticky Note: 3.6 When Is Data Sufficient? â€”he Criteria" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-6-when-is-data-sufficient-he-criteria-sticky.svg" alt="Sticky Note: 3.6 When Is Data Sufficient? â€”he Criteria" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ Data is **insufficient** when:
 
 ### 3.7 Systematic Testing Approach
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-handwritten.svg" alt="Handwritten: 3.7 Systematic Testing Approach" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-handwritten.svg" alt="Handwritten: 3.7 Systematic Testing Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-diagram.svg" alt="Diagram: 3.7 Systematic Testing Approach" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-diagram.svg" alt="Diagram: 3.7 Systematic Testing Approach" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-sticky.svg" alt="Sticky Note: 3.7 Systematic Testing Approach" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-7-systematic-testing-approach-sticky.svg" alt="Sticky Note: 3.7 Systematic Testing Approach" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 
 ### 3.8 Data Sufficiency in Different Contexts
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-handwritten.svg" alt="Handwritten: 3.8 Data Sufficiency in Different Contexts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-handwritten.svg" alt="Handwritten: 3.8 Data Sufficiency in Different Contexts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-diagram.svg" alt="Diagram: 3.8 Data Sufficiency in Different Contexts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-diagram.svg" alt="Diagram: 3.8 Data Sufficiency in Different Contexts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-sticky.svg" alt="Sticky Note: 3.8 Data Sufficiency in Different Contexts" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8-data-sufficiency-in-different-contexts-sticky.svg" alt="Sticky Note: 3.8 Data Sufficiency in Different Contexts" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 
 ### 3.8a Data Sufficiency in Time-Speed-Distance Context
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-handwritten.svg" alt="Handwritten: 3.8a Data Sufficiency in Time-Speed-Distance Context" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-handwritten.svg" alt="Handwritten: 3.8a Data Sufficiency in Time-Speed-Distance Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-diagram.svg" alt="Diagram: 3.8a Data Sufficiency in Time-Speed-Distance Context" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-diagram.svg" alt="Diagram: 3.8a Data Sufficiency in Time-Speed-Distance Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-sticky.svg" alt="Sticky Note: 3.8a Data Sufficiency in Time-Speed-Distance Context" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8a-data-sufficiency-in-time-speed-distance-context-sticky.svg" alt="Sticky Note: 3.8a Data Sufficiency in Time-Speed-Distance Context" width="30%">
 </a>
 
 
@@ -308,14 +308,14 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 
 ### 3.8b Data Sufficiency in Profit-Loss Context
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-handwritten.svg" alt="Handwritten: 3.8b Data Sufficiency in Profit-Loss Context" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-handwritten.svg" alt="Handwritten: 3.8b Data Sufficiency in Profit-Loss Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-diagram.svg" alt="Diagram: 3.8b Data Sufficiency in Profit-Loss Context" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-diagram.svg" alt="Diagram: 3.8b Data Sufficiency in Profit-Loss Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-sticky.svg" alt="Sticky Note: 3.8b Data Sufficiency in Profit-Loss Context" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8b-data-sufficiency-in-profit-loss-context-sticky.svg" alt="Sticky Note: 3.8b Data Sufficiency in Profit-Loss Context" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 
 ### 3.8c Data Sufficiency in Number Systems
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-handwritten.svg" alt="Handwritten: 3.8c Data Sufficiency in Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-handwritten.svg" alt="Handwritten: 3.8c Data Sufficiency in Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-diagram.svg" alt="Diagram: 3.8c Data Sufficiency in Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-diagram.svg" alt="Diagram: 3.8c Data Sufficiency in Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-sticky.svg" alt="Sticky Note: 3.8c Data Sufficiency in Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8c-data-sufficiency-in-number-systems-sticky.svg" alt="Sticky Note: 3.8c Data Sufficiency in Number Systems" width="30%">
 </a>
 
 
@@ -368,14 +368,14 @@ For "Is/Does" (Yes/No) questions, use this testing method:
 
 ### 3.8d Advanced Strategies for Yes/No Questions
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-handwritten.svg" alt="Handwritten: 3.8d Advanced Strategies for Yes/No Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-handwritten.svg" alt="Handwritten: 3.8d Advanced Strategies for Yes/No Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-diagram.svg" alt="Diagram: 3.8d Advanced Strategies for Yes/No Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-diagram.svg" alt="Diagram: 3.8d Advanced Strategies for Yes/No Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-sticky.svg" alt="Sticky Note: 3.8d Advanced Strategies for Yes/No Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8d-advanced-strategies-for-yes-no-questions-sticky.svg" alt="Sticky Note: 3.8d Advanced Strategies for Yes/No Questions" width="30%">
 </a>
 
 
@@ -400,14 +400,14 @@ For "What is X?" questions, if a statement yields exactly one possible value, it
 
 ### 3.8e Mock DS Question Set with Detailed Reasoning
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-handwritten.svg" alt="Handwritten: 3.8e Mock DS Question Set with Detailed Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-handwritten.svg" alt="Handwritten: 3.8e Mock DS Question Set with Detailed Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-diagram.svg" alt="Diagram: 3.8e Mock DS Question Set with Detailed Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-diagram.svg" alt="Diagram: 3.8e Mock DS Question Set with Detailed Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-sticky.svg" alt="Sticky Note: 3.8e Mock DS Question Set with Detailed Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8e-mock-ds-question-set-with-detailed-reasoning-sticky.svg" alt="Sticky Note: 3.8e Mock DS Question Set with Detailed Reasoning" width="30%">
 </a>
 
 
@@ -445,14 +445,14 @@ For "What is X?" questions, if a statement yields exactly one possible value, it
 
 ### 3.8f One-Statement vs Two-Statement Problems
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-handwritten.svg" alt="Handwritten: 3.8f One-Statement vs Two-Statement Problems" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-handwritten.svg" alt="Handwritten: 3.8f One-Statement vs Two-Statement Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-diagram.svg" alt="Diagram: 3.8f One-Statement vs Two-Statement Problems" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-diagram.svg" alt="Diagram: 3.8f One-Statement vs Two-Statement Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-sticky.svg" alt="Sticky Note: 3.8f One-Statement vs Two-Statement Problems" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8f-one-statement-vs-two-statement-problems-sticky.svg" alt="Sticky Note: 3.8f One-Statement vs Two-Statement Problems" width="30%">
 </a>
 
 
@@ -484,14 +484,14 @@ A common misconception is that "No" means insufficient. This is WRONG.
 
 ### 3.8g Data Sufficiency in Geometry
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-handwritten.svg" alt="Handwritten: 3.8g Data Sufficiency in Geometry" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-handwritten.svg" alt="Handwritten: 3.8g Data Sufficiency in Geometry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-diagram.svg" alt="Diagram: 3.8g Data Sufficiency in Geometry" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-diagram.svg" alt="Diagram: 3.8g Data Sufficiency in Geometry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-sticky.svg" alt="Sticky Note: 3.8g Data Sufficiency in Geometry" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8g-data-sufficiency-in-geometry-sticky.svg" alt="Sticky Note: 3.8g Data Sufficiency in Geometry" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ A common misconception is that "No" means insufficient. This is WRONG.
 
 ### 3.8h Data Sufficiency in Probability
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-handwritten.svg" alt="Handwritten: 3.8h Data Sufficiency in Probability" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-handwritten.svg" alt="Handwritten: 3.8h Data Sufficiency in Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-diagram.svg" alt="Diagram: 3.8h Data Sufficiency in Probability" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-diagram.svg" alt="Diagram: 3.8h Data Sufficiency in Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-sticky.svg" alt="Sticky Note: 3.8h Data Sufficiency in Probability" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8h-data-sufficiency-in-probability-sticky.svg" alt="Sticky Note: 3.8h Data Sufficiency in Probability" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ A common misconception is that "No" means insufficient. This is WRONG.
 
 ### 3.8i Practice Drills for Data Sufficiency
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-handwritten.svg" alt="Handwritten: 3.8i Practice Drills for Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-handwritten.svg" alt="Handwritten: 3.8i Practice Drills for Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-diagram.svg" alt="Diagram: 3.8i Practice Drills for Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-diagram.svg" alt="Diagram: 3.8i Practice Drills for Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-sticky.svg" alt="Sticky Note: 3.8i Practice Drills for Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-8i-practice-drills-for-data-sufficiency-sticky.svg" alt="Sticky Note: 3.8i Practice Drills for Data Sufficiency" width="30%">
 </a>
 
 
@@ -596,14 +596,14 @@ For each, evaluate in 20 seconds:
 
 ### 3.9 Time Management for Data Sufficiency
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-handwritten.svg" alt="Handwritten: 3.9 Time Management for Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-handwritten.svg" alt="Handwritten: 3.9 Time Management for Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-diagram.svg" alt="Diagram: 3.9 Time Management for Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-diagram.svg" alt="Diagram: 3.9 Time Management for Data Sufficiency" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-sticky.svg" alt="Sticky Note: 3.9 Time Management for Data Sufficiency" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/03-data-sufficiency/3-9-time-management-for-data-sufficiency-sticky.svg" alt="Sticky Note: 3.9 Time Management for Data Sufficiency" width="30%">
 </a>
 
 
@@ -1289,4 +1289,4 @@ Combined: a + b = 12 and a - b = 2 ? a = 7, b = 5 ? number = 75. Unique. Suffici
 
 
 ## Summary and Chart Analysis*
-
+

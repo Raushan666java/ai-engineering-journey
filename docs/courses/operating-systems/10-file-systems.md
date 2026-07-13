@@ -49,14 +49,14 @@ flowchart LR
 
 ### File Concept
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-handwritten.svg" alt="Handwritten: File Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-handwritten.svg" alt="Handwritten: File Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-diagram.svg" alt="Diagram: File Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-diagram.svg" alt="Diagram: File Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-sticky.svg" alt="Sticky Note: File Concept" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/file-concept-sticky.svg" alt="Sticky Note: File Concept" width="30%">
 </a>
 
 
@@ -679,14 +679,14 @@ if __name__ == "__main__":
 
 ### Access Methods
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" alt="Handwritten: Access Methods" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" alt="Handwritten: Access Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" alt="Diagram: Access Methods" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" alt="Diagram: Access Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" alt="Sticky Note: Access Methods" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" alt="Sticky Note: Access Methods" width="30%">
 </a>
 
 
@@ -1269,14 +1269,14 @@ if __name__ == "__main__":
 
 ### Directory Structure
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-handwritten.svg" alt="Handwritten: Directory Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-handwritten.svg" alt="Handwritten: Directory Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-diagram.svg" alt="Diagram: Directory Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-diagram.svg" alt="Diagram: Directory Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-sticky.svg" alt="Sticky Note: Directory Structure" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/directory-structure-sticky.svg" alt="Sticky Note: Directory Structure" width="30%">
 </a>
 
 
@@ -1879,14 +1879,14 @@ if __name__ == "__main__":
 
 ### Mounting
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-handwritten.svg" alt="Handwritten: Mounting" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/mounting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/mounting-handwritten.svg" alt="Handwritten: Mounting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-diagram.svg" alt="Diagram: Mounting" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/mounting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/mounting-diagram.svg" alt="Diagram: Mounting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/mounting-sticky.svg" alt="Sticky Note: Mounting" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/mounting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/mounting-sticky.svg" alt="Sticky Note: Mounting" width="30%">
 </a>
 
 
@@ -2052,14 +2052,14 @@ if __name__ == "__main__":
 
 ### File Allocation Overview
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-handwritten.svg" alt="Handwritten: File Allocation Overview" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-handwritten.svg" alt="Handwritten: File Allocation Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-diagram.svg" alt="Diagram: File Allocation Overview" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-diagram.svg" alt="Diagram: File Allocation Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-sticky.svg" alt="Sticky Note: File Allocation Overview" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/file-allocation-overview-sticky.svg" alt="Sticky Note: File Allocation Overview" width="30%">
 </a>
 
 
@@ -2093,14 +2093,14 @@ File allocation strategies determine how disk blocks are assigned to files. Thes
 
 ### Protection
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/protection-handwritten.svg" alt="Handwritten: Protection" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/protection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/protection-handwritten.svg" alt="Handwritten: Protection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/protection-diagram.svg" alt="Diagram: Protection" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/protection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/protection-diagram.svg" alt="Diagram: Protection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/protection-sticky.svg" alt="Sticky Note: Protection" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/protection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/protection-sticky.svg" alt="Sticky Note: Protection" width="30%">
 </a>
 
 
@@ -2211,14 +2211,14 @@ if __name__ == "__main__":
 
 ### Interview Corner
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
 </a>
 
 
@@ -2285,14 +2285,14 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 
 ### Applications in Real Systems
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
 </a>
 
 
@@ -2358,14 +2358,14 @@ An inode (index node) is the on-disk metadata structure for a file. It stores ev
 
 ### Virtual File Systems (VFS)
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-handwritten.svg" alt="Handwritten: Virtual File Systems (VFS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-handwritten.svg" alt="Handwritten: Virtual File Systems (VFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-diagram.svg" alt="Diagram: Virtual File Systems (VFS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-diagram.svg" alt="Diagram: Virtual File Systems (VFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-sticky.svg" alt="Sticky Note: Virtual File Systems (VFS)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/virtual-file-systems-vfs-sticky.svg" alt="Sticky Note: Virtual File Systems (VFS)" width="30%">
 </a>
 
 
@@ -2619,14 +2619,14 @@ int main(int argc, char* argv[]) {
 
 ### Access Methods
 
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" alt="Handwritten: Access Methods" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-handwritten.svg" alt="Handwritten: Access Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" alt="Diagram: Access Methods" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-diagram.svg" alt="Diagram: Access Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" alt="Sticky Note: Access Methods" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/10-file-systems/access-methods-sticky.svg" alt="Sticky Note: Access Methods" width="30%">
 </a>
 
 

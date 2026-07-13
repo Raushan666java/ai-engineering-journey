@@ -88,14 +88,14 @@ flowchart TD
 
 ### 1.1 What is Laravel?
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-handwritten.svg" alt="Handwritten: 1.1 What is Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-handwritten.svg" alt="Handwritten: 1.1 What is Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-diagram.svg" alt="Diagram: 1.1 What is Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-diagram.svg" alt="Diagram: 1.1 What is Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-sticky.svg" alt="Sticky Note: 1.1 What is Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-1-what-is-laravel-sticky.svg" alt="Sticky Note: 1.1 What is Laravel?" width="30%">
 </a>
 
 
@@ -121,14 +121,14 @@ Laravel also brands itself as a *progressive framework*. You can adopt only the 
 
 ### 1.2 Laravel 13 Specifics
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-handwritten.svg" alt="Handwritten: 1.2 Laravel 13 Specifics" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-handwritten.svg" alt="Handwritten: 1.2 Laravel 13 Specifics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-diagram.svg" alt="Diagram: 1.2 Laravel 13 Specifics" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-diagram.svg" alt="Diagram: 1.2 Laravel 13 Specifics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-sticky.svg" alt="Sticky Note: 1.2 Laravel 13 Specifics" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-2-laravel-13-specifics-sticky.svg" alt="Sticky Note: 1.2 Laravel 13 Specifics" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ Laravel follows an annual major release cadence, shipping each August. Laravel 1
 
 ### 1.3 Creating Laravel Applications
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-handwritten.svg" alt="Handwritten: 1.3 Creating Laravel Applications" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-handwritten.svg" alt="Handwritten: 1.3 Creating Laravel Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-diagram.svg" alt="Diagram: 1.3 Creating Laravel Applications" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-diagram.svg" alt="Diagram: 1.3 Creating Laravel Applications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-sticky.svg" alt="Sticky Note: 1.3 Creating Laravel Applications" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-3-creating-laravel-applications-sticky.svg" alt="Sticky Note: 1.3 Creating Laravel Applications" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ This downloads the latest skeleton, installs dependencies, and copies `.env.exam
 
 ### 1.4 Directory Structure
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-handwritten.svg" alt="Handwritten: 1.4 Directory Structure" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-handwritten.svg" alt="Handwritten: 1.4 Directory Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-diagram.svg" alt="Diagram: 1.4 Directory Structure" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-diagram.svg" alt="Diagram: 1.4 Directory Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-sticky.svg" alt="Sticky Note: 1.4 Directory Structure" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-4-directory-structure-sticky.svg" alt="Sticky Note: 1.4 Directory Structure" width="30%">
 </a>
 
 
@@ -276,14 +276,14 @@ The `app/Models` directory is notable. Models live under `app/Models/` by conven
 
 ### 1.5 Artisan CLI
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-handwritten.svg" alt="Handwritten: 1.5 Artisan CLI" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-handwritten.svg" alt="Handwritten: 1.5 Artisan CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-diagram.svg" alt="Diagram: 1.5 Artisan CLI" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-diagram.svg" alt="Diagram: 1.5 Artisan CLI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-sticky.svg" alt="Sticky Note: 1.5 Artisan CLI" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-5-artisan-cli-sticky.svg" alt="Sticky Note: 1.5 Artisan CLI" width="30%">
 </a>
 
 
@@ -344,14 +344,14 @@ Each scaffolded file follows the correct namespace, imports framework base class
 
 ### 1.6 Environment Configuration
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-handwritten.svg" alt="Handwritten: 1.6 Environment Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-handwritten.svg" alt="Handwritten: 1.6 Environment Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-diagram.svg" alt="Diagram: 1.6 Environment Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-diagram.svg" alt="Diagram: 1.6 Environment Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-sticky.svg" alt="Sticky Note: 1.6 Environment Configuration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-6-environment-configuration-sticky.svg" alt="Sticky Note: 1.6 Environment Configuration" width="30%">
 </a>
 
 
@@ -430,14 +430,14 @@ The golden rule: never hardcode sensitive values. Use `.env` in development and 
 
 ### 1.7 Laravel and AI
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-handwritten.svg" alt="Handwritten: 1.7 Laravel and AI" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-handwritten.svg" alt="Handwritten: 1.7 Laravel and AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-diagram.svg" alt="Diagram: 1.7 Laravel and AI" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-diagram.svg" alt="Diagram: 1.7 Laravel and AI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-sticky.svg" alt="Sticky Note: 1.7 Laravel and AI" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-7-laravel-and-ai-sticky.svg" alt="Sticky Note: 1.7 Laravel and AI" width="30%">
 </a>
 
 
@@ -451,14 +451,14 @@ Laravel 13 is explicitly designed to work well with AI coding assistants. This i
 
 ### 1.8 Hello World → Complete Walkthrough
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-handwritten.svg" alt="Handwritten: 1.8 Hello World → Complete Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-handwritten.svg" alt="Handwritten: 1.8 Hello World → Complete Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-diagram.svg" alt="Diagram: 1.8 Hello World → Complete Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-diagram.svg" alt="Diagram: 1.8 Hello World → Complete Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-sticky.svg" alt="Sticky Note: 1.8 Hello World → Complete Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-8-hello-world-complete-walkthrough-sticky.svg" alt="Sticky Note: 1.8 Hello World → Complete Walkthrough" width="30%">
 </a>
 
 
@@ -582,14 +582,14 @@ This is the classic Model-View-Controller pattern in action: the route delegates
 
 ### 1.9 Package Ecosystem Overview
 
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-handwritten.svg" alt="Handwritten: 1.9 Package Ecosystem Overview" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-handwritten.svg" alt="Handwritten: 1.9 Package Ecosystem Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-diagram.svg" alt="Diagram: 1.9 Package Ecosystem Overview" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-diagram.svg" alt="Diagram: 1.9 Package Ecosystem Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-sticky.svg" alt="Sticky Note: 1.9 Package Ecosystem Overview" width="30%">
+<a href="../../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/01-introduction/1-9-package-ecosystem-overview-sticky.svg" alt="Sticky Note: 1.9 Package Ecosystem Overview" width="30%">
 </a>
 
 

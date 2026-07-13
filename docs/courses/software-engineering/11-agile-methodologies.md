@@ -15,14 +15,14 @@
 
 ### The Agile Manifesto
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-handwritten.svg" alt="Handwritten: The Agile Manifesto" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-handwritten.svg" alt="Handwritten: The Agile Manifesto" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-diagram.svg" alt="Diagram: The Agile Manifesto" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-diagram.svg" alt="Diagram: The Agile Manifesto" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-sticky.svg" alt="Sticky Note: The Agile Manifesto" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-agile-manifesto-sticky.svg" alt="Sticky Note: The Agile Manifesto" width="30%">
 </a>
 
 
@@ -52,14 +52,14 @@ graph TD
 
 ### The Twelve Principles
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-handwritten.svg" alt="Handwritten: The Twelve Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-handwritten.svg" alt="Handwritten: The Twelve Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-diagram.svg" alt="Diagram: The Twelve Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-diagram.svg" alt="Diagram: The Twelve Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-sticky.svg" alt="Sticky Note: The Twelve Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/the-twelve-principles-sticky.svg" alt="Sticky Note: The Twelve Principles" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ graph TD
 
 ### Scrum
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-handwritten.svg" alt="Handwritten: Scrum" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-handwritten.svg" alt="Handwritten: Scrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-diagram.svg" alt="Diagram: Scrum" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-diagram.svg" alt="Diagram: Scrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-sticky.svg" alt="Sticky Note: Scrum" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scrum-sticky.svg" alt="Sticky Note: Scrum" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ timeline
 
 ### Extreme Programming (XP)
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-handwritten.svg" alt="Handwritten: Extreme Programming (XP)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-handwritten.svg" alt="Handwritten: Extreme Programming (XP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-diagram.svg" alt="Diagram: Extreme Programming (XP)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-diagram.svg" alt="Diagram: Extreme Programming (XP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-sticky.svg" alt="Sticky Note: Extreme Programming (XP)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/extreme-programming-xp-sticky.svg" alt="Sticky Note: Extreme Programming (XP)" width="30%">
 </a>
 
 
@@ -173,14 +173,14 @@ XP takes Agile practices to an engineering extreme:
 
 ### Kanban
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-handwritten.svg" alt="Handwritten: Kanban" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-handwritten.svg" alt="Handwritten: Kanban" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-diagram.svg" alt="Diagram: Kanban" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-diagram.svg" alt="Diagram: Kanban" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-sticky.svg" alt="Sticky Note: Kanban" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/kanban-sticky.svg" alt="Sticky Note: Kanban" width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ graph LR
 
 ### User Stories
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-handwritten.svg" alt="Handwritten: User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-handwritten.svg" alt="Handwritten: User Stories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-diagram.svg" alt="Diagram: User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-diagram.svg" alt="Diagram: User Stories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-sticky.svg" alt="Sticky Note: User Stories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/user-stories-sticky.svg" alt="Sticky Note: User Stories" width="30%">
 </a>
 
 
@@ -273,14 +273,14 @@ Feature: User Login
 
 ### Estimation in Agile
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-handwritten.svg" alt="Handwritten: Estimation in Agile" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-handwritten.svg" alt="Handwritten: Estimation in Agile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-diagram.svg" alt="Diagram: Estimation in Agile" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-diagram.svg" alt="Diagram: Estimation in Agile" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-sticky.svg" alt="Sticky Note: Estimation in Agile" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/estimation-in-agile-sticky.svg" alt="Sticky Note: Estimation in Agile" width="30%">
 </a>
 
 
@@ -322,14 +322,14 @@ Forecasted Sprints = Remaining Backlog Points / Average Velocity
 
 ### Scaled Agile Frameworks
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-handwritten.svg" alt="Handwritten: Scaled Agile Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-handwritten.svg" alt="Handwritten: Scaled Agile Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-diagram.svg" alt="Diagram: Scaled Agile Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-diagram.svg" alt="Diagram: Scaled Agile Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-sticky.svg" alt="Sticky Note: Scaled Agile Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/scaled-agile-frameworks-sticky.svg" alt="Sticky Note: Scaled Agile Frameworks" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ flowchart TD
 
 ### Agile Testing
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-handwritten.svg" alt="Handwritten: Agile Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-handwritten.svg" alt="Handwritten: Agile Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-diagram.svg" alt="Diagram: Agile Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-diagram.svg" alt="Diagram: Agile Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-sticky.svg" alt="Sticky Note: Agile Testing" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-testing-sticky.svg" alt="Sticky Note: Agile Testing" width="30%">
 </a>
 
 
@@ -453,14 +453,14 @@ Feature: Shopping Cart
 
 ### Agile Metrics
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-handwritten.svg" alt="Handwritten: Agile Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-handwritten.svg" alt="Handwritten: Agile Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-diagram.svg" alt="Diagram: Agile Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-diagram.svg" alt="Diagram: Agile Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-sticky.svg" alt="Sticky Note: Agile Metrics" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/agile-metrics-sticky.svg" alt="Sticky Note: Agile Metrics" width="30%">
 </a>
 
 
@@ -493,14 +493,14 @@ flowchart TD
 
 ### Burndown Charts
 
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-handwritten.svg" alt="Handwritten: Burndown Charts" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-handwritten.svg" alt="Handwritten: Burndown Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-diagram.svg" alt="Diagram: Burndown Charts" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-diagram.svg" alt="Diagram: Burndown Charts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-sticky.svg" alt="Sticky Note: Burndown Charts" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/11-agile-methodologies/burndown-charts-sticky.svg" alt="Sticky Note: Burndown Charts" width="30%">
 </a>
 
 

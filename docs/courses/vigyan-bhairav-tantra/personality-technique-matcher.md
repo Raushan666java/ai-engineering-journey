@@ -60,14 +60,14 @@ flowchart TB
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 जब आप किसी समस्या का सामना करते हैं, तो आप सबसे पहले क्या करते हैं?
@@ -81,14 +81,14 @@ flowchart TB
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 छुट्टी के दिन आप सबसे अधिक क्या करना पसंद करते हैं?
@@ -102,14 +102,14 @@ flowchart TB
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 आपके दोस्त आपको कैसे वर्णित करेंगे?
@@ -123,14 +123,14 @@ flowchart TB
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 जब आप क्रोधित होते हैं, तो आपकी सामान्य प्रतिक्रिया क्या होती है?
@@ -144,14 +144,14 @@ flowchart TB
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 ध्यान के बारे में सुनकर आपकी पहली प्रतिक्रिया क्या होती है?
@@ -165,14 +165,14 @@ flowchart TB
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 आपके लिए सबसे अधिक आध्यात्मिक अनुभव क्या है?
@@ -186,14 +186,14 @@ flowchart TB
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 आपकी सबसे बड़ी कमजोरी क्या है?
@@ -207,14 +207,14 @@ flowchart TB
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 आप किस वातावरण में सबसे अधिक सहज महसूस करते हैं?
@@ -228,14 +228,14 @@ flowchart TB
 
 ### प्रश्न ९
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
 </a>
 
 जब आप कोई नई चीज़ सीखते हैं, तो आप कैसे सीखते हैं?
@@ -249,14 +249,14 @@ flowchart TB
 
 ### प्रश्न १०
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
 </a>
 
 आपके अनुसार आध्यात्मिकता का सबसे अच्छा मार्ग क्या है?
@@ -289,14 +289,14 @@ flowchart TB
 
 ### यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **बुद्धि प्रधान** हैं (सर्वोच्च स्कोर: बुद्धि)" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ flowchart TB
 
 ### यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **भावना प्रधान** हैं (सर्वोच्च स्कोर: भावना)" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ flowchart TB
 
 ### यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **कर्म प्रधान** हैं (सर्वोच्च स्कोर: कर्म)" width="30%">
 </a>
 
 
@@ -427,14 +427,14 @@ flowchart TB
 
 ### यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: यदि आप **योग प्रधान** हैं (सर्वोच्च स्कोर: योग)" width="30%">
 </a>
 
 
@@ -480,14 +480,14 @@ flowchart TB
 
 ### मिश्रण के अनुसार सुझाव
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: मिश्रण के अनुसार सुझाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: मिश्रण के अनुसार सुझाव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: मिश्रण के अनुसार सुझाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: मिश्रण के अनुसार सुझाव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: मिश्रण के अनुसार सुझाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: मिश्रण के अनुसार सुझाव" width="30%">
 </a>
 
 
@@ -558,56 +558,56 @@ flowchart TB
 
 ### नियम १: तकनीक तुम्हें खींचे
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम १: तकनीक तुम्हें खींचे" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम १: तकनीक तुम्हें खींचे" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम १: तकनीक तुम्हें खींचे" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम १: तकनीक तुम्हें खींचे" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम १: तकनीक तुम्हें खींचे" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम १: तकनीक तुम्हें खींचे" width="30%">
 </a>
 
 जो तकनीक पढ़ते ही तुम्हारे भीतर कुछ कहती है — "हाँ, यह मेरे लिए है" — वह तुम्हारी तकनीक है। यदि कोई तकनीक उबाऊ लगती है, तो छोड़ दो।
 
 ### नियम २: तीन दिन का नियम
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम २: तीन दिन का नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम २: तीन दिन का नियम" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम २: तीन दिन का नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम २: तीन दिन का नियम" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम २: तीन दिन का नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम २: तीन दिन का नियम" width="30%">
 </a>
 
 किसी तकनीक को कम से कम तीन दिन लगातार करो। ओशो कहते हैं — पहले दिन अजीब लगती है, दूसरे दिन थोड़ी समझ आती है, तीसरे दिन कुछ घटित होता है।
 
 ### नियम ३: सरल से शुरू करो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम ३: सरल से शुरू करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम ३: सरल से शुरू करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम ३: सरल से शुरू करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम ३: सरल से शुरू करो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम ३: सरल से शुरू करो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम ३: सरल से शुरू करो" width="30%">
 </a>
 
 सबसे सरल तकनीक से शुरू करो। ओशो कहते हैं — विधि १ (श्वास देखना) सबसे सरल और सबसे गहरी है। अगर वह काम करे, तो और कुछ चाहिए ही नहीं।
 
 ### नियम ४: तकनीक को छोड़ना भी सीखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम ४: तकनीक को छोड़ना भी सीखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-handwritten.svg" alt="Handwritten: नियम ४: तकनीक को छोड़ना भी सीखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम ४: तकनीक को छोड़ना भी सीखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-diagram.svg" alt="Diagram: नियम ४: तकनीक को छोड़ना भी सीखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम ४: तकनीक को छोड़ना भी सीखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/personality-technique-matcher/-sticky.svg" alt="Sticky Note: नियम ४: तकनीक को छोड़ना भी सीखो" width="30%">
 </a>
 
 जब तकनीक काम करने लगे — जब वह स्वाभाविक हो जाए — तब उसे भी छोड़ दो। तकनीक नाव है — पार उतरने के बाद उसे छोड़ दो।

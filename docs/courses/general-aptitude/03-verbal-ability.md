@@ -40,14 +40,14 @@ flowchart LR
 
 ### 3.1 Grammar Fundamentals
 
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-handwritten.svg" alt="Handwritten: 3.1 Grammar Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-handwritten.svg" alt="Handwritten: 3.1 Grammar Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-diagram.svg" alt="Diagram: 3.1 Grammar Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-diagram.svg" alt="Diagram: 3.1 Grammar Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-sticky.svg" alt="Sticky Note: 3.1 Grammar Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-sticky.svg" alt="Sticky Note: 3.1 Grammar Fundamentals" width="30%">
 </a>
 
 
@@ -155,14 +155,14 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.2 Vocabulary
 
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-handwritten.svg" alt="Handwritten: 3.2 Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-handwritten.svg" alt="Handwritten: 3.2 Vocabulary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-diagram.svg" alt="Diagram: 3.2 Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-diagram.svg" alt="Diagram: 3.2 Vocabulary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-sticky.svg" alt="Sticky Note: 3.2 Vocabulary" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-sticky.svg" alt="Sticky Note: 3.2 Vocabulary" width="30%">
 </a>
 
 
@@ -278,14 +278,14 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.3 Sentence Correction
 
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-handwritten.svg" alt="Handwritten: 3.3 Sentence Correction" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-handwritten.svg" alt="Handwritten: 3.3 Sentence Correction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-diagram.svg" alt="Diagram: 3.3 Sentence Correction" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-diagram.svg" alt="Diagram: 3.3 Sentence Correction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-sticky.svg" alt="Sticky Note: 3.3 Sentence Correction" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-sticky.svg" alt="Sticky Note: 3.3 Sentence Correction" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.4 Para-Jumbles
 
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-handwritten.svg" alt="Handwritten: 3.4 Para-Jumbles" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-handwritten.svg" alt="Handwritten: 3.4 Para-Jumbles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-diagram.svg" alt="Diagram: 3.4 Para-Jumbles" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-diagram.svg" alt="Diagram: 3.4 Para-Jumbles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-sticky.svg" alt="Sticky Note: 3.4 Para-Jumbles" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-sticky.svg" alt="Sticky Note: 3.4 Para-Jumbles" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.5 Reading Comprehension
 
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-handwritten.svg" alt="Handwritten: 3.5 Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-handwritten.svg" alt="Handwritten: 3.5 Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-diagram.svg" alt="Diagram: 3.5 Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-diagram.svg" alt="Diagram: 3.5 Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-sticky.svg" alt="Sticky Note: 3.5 Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-sticky.svg" alt="Sticky Note: 3.5 Reading Comprehension" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.6 Cloze Test
 
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-handwritten.svg" alt="Handwritten: 3.6 Cloze Test" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-handwritten.svg" alt="Handwritten: 3.6 Cloze Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-diagram.svg" alt="Diagram: 3.6 Cloze Test" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-diagram.svg" alt="Diagram: 3.6 Cloze Test" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-sticky.svg" alt="Sticky Note: 3.6 Cloze Test" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-sticky.svg" alt="Sticky Note: 3.6 Cloze Test" width="30%">
 </a>
 
 

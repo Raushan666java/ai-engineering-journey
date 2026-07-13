@@ -49,14 +49,14 @@ flowchart LR
 
 ### 12.1 Monitoring Principles
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-handwritten.svg" alt="Handwritten: 12.1 Monitoring Principles" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-handwritten.svg" alt="Handwritten: 12.1 Monitoring Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-diagram.svg" alt="Diagram: 12.1 Monitoring Principles" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-diagram.svg" alt="Diagram: 12.1 Monitoring Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-sticky.svg" alt="Sticky Note: 12.1 Monitoring Principles" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-1-monitoring-principles-sticky.svg" alt="Sticky Note: 12.1 Monitoring Principles" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ Monitoring is the systematic collection, analysis, and visualization of system d
 
 ### 12.2 Prometheus Architecture
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-handwritten.svg" alt="Handwritten: 12.2 Prometheus Architecture" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-handwritten.svg" alt="Handwritten: 12.2 Prometheus Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-diagram.svg" alt="Diagram: 12.2 Prometheus Architecture" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-diagram.svg" alt="Diagram: 12.2 Prometheus Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-sticky.svg" alt="Sticky Note: 12.2 Prometheus Architecture" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-2-prometheus-architecture-sticky.svg" alt="Sticky Note: 12.2 Prometheus Architecture" width="30%">
 </a>
 
 
@@ -113,14 +113,14 @@ Metrics are identified by a metric name and key-value label pairs. Prometheus st
 
 ### 12.3 PromQL (Prometheus Query Language)
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-handwritten.svg" alt="Handwritten: 12.3 PromQL (Prometheus Query Language)" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-handwritten.svg" alt="Handwritten: 12.3 PromQL (Prometheus Query Language)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-diagram.svg" alt="Diagram: 12.3 PromQL (Prometheus Query Language)" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-diagram.svg" alt="Diagram: 12.3 PromQL (Prometheus Query Language)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-sticky.svg" alt="Sticky Note: 12.3 PromQL (Prometheus Query Language)" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-3-promql-prometheus-query-language-sticky.svg" alt="Sticky Note: 12.3 PromQL (Prometheus Query Language)" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by 
 
 ### 12.4 Recording Rules
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-handwritten.svg" alt="Handwritten: 12.4 Recording Rules" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-handwritten.svg" alt="Handwritten: 12.4 Recording Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-diagram.svg" alt="Diagram: 12.4 Recording Rules" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-diagram.svg" alt="Diagram: 12.4 Recording Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-sticky.svg" alt="Sticky Note: 12.4 Recording Rules" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-4-recording-rules-sticky.svg" alt="Sticky Note: 12.4 Recording Rules" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ groups:
 
 ### 12.5 Alerting Rules
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-handwritten.svg" alt="Handwritten: 12.5 Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-handwritten.svg" alt="Handwritten: 12.5 Alerting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-diagram.svg" alt="Diagram: 12.5 Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-diagram.svg" alt="Diagram: 12.5 Alerting Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-sticky.svg" alt="Sticky Note: 12.5 Alerting Rules" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-5-alerting-rules-sticky.svg" alt="Sticky Note: 12.5 Alerting Rules" width="30%">
 </a>
 
 
@@ -214,14 +214,14 @@ groups:
 
 ### 12.6 Alertmanager Configuration
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-handwritten.svg" alt="Handwritten: 12.6 Alertmanager Configuration" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-handwritten.svg" alt="Handwritten: 12.6 Alertmanager Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-diagram.svg" alt="Diagram: 12.6 Alertmanager Configuration" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-diagram.svg" alt="Diagram: 12.6 Alertmanager Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-sticky.svg" alt="Sticky Note: 12.6 Alertmanager Configuration" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-6-alertmanager-configuration-sticky.svg" alt="Sticky Note: 12.6 Alertmanager Configuration" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ receivers:
 
 ### 12.7 Grafana Dashboard Design
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-handwritten.svg" alt="Handwritten: 12.7 Grafana Dashboard Design" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-handwritten.svg" alt="Handwritten: 12.7 Grafana Dashboard Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-diagram.svg" alt="Diagram: 12.7 Grafana Dashboard Design" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-diagram.svg" alt="Diagram: 12.7 Grafana Dashboard Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-sticky.svg" alt="Sticky Note: 12.7 Grafana Dashboard Design" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-7-grafana-dashboard-design-sticky.svg" alt="Sticky Note: 12.7 Grafana Dashboard Design" width="30%">
 </a>
 
 
@@ -282,14 +282,14 @@ Grafana visualizes metrics from multiple data sources (Prometheus, Loki, Elastic
 
 ### 12.8 Loki for Log Aggregation
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-handwritten.svg" alt="Handwritten: 12.8 Loki for Log Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-handwritten.svg" alt="Handwritten: 12.8 Loki for Log Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-diagram.svg" alt="Diagram: 12.8 Loki for Log Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-diagram.svg" alt="Diagram: 12.8 Loki for Log Aggregation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-sticky.svg" alt="Sticky Note: 12.8 Loki for Log Aggregation" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-8-loki-for-log-aggregation-sticky.svg" alt="Sticky Note: 12.8 Loki for Log Aggregation" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ topk(5, sum by (service) (count_over_time({job="api"}[1h])))
 
 ### 12.9 ELK Stack (Elastic Stack)
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-handwritten.svg" alt="Handwritten: 12.9 ELK Stack (Elastic Stack)" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-handwritten.svg" alt="Handwritten: 12.9 ELK Stack (Elastic Stack)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-diagram.svg" alt="Diagram: 12.9 ELK Stack (Elastic Stack)" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-diagram.svg" alt="Diagram: 12.9 ELK Stack (Elastic Stack)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-sticky.svg" alt="Sticky Note: 12.9 ELK Stack (Elastic Stack)" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-9-elk-stack-elastic-stack-sticky.svg" alt="Sticky Note: 12.9 ELK Stack (Elastic Stack)" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ topk(5, sum by (service) (count_over_time({job="api"}[1h])))
 
 ### 12.10 Structured Logging
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-handwritten.svg" alt="Handwritten: 12.10 Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-handwritten.svg" alt="Handwritten: 12.10 Structured Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-diagram.svg" alt="Diagram: 12.10 Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-diagram.svg" alt="Diagram: 12.10 Structured Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-sticky.svg" alt="Sticky Note: 12.10 Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-10-structured-logging-sticky.svg" alt="Sticky Note: 12.10 Structured Logging" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ Structured logging outputs logs as machine-parseable structured data (JSON) rath
 
 ### 12.11 Log Levels
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-handwritten.svg" alt="Handwritten: 12.11 Log Levels" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-handwritten.svg" alt="Handwritten: 12.11 Log Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-diagram.svg" alt="Diagram: 12.11 Log Levels" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-diagram.svg" alt="Diagram: 12.11 Log Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-sticky.svg" alt="Sticky Note: 12.11 Log Levels" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-11-log-levels-sticky.svg" alt="Sticky Note: 12.11 Log Levels" width="30%">
 </a>
 
 
@@ -401,14 +401,14 @@ Structured logging outputs logs as machine-parseable structured data (JSON) rath
 
 ### 12.12 Monitoring as Code
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-handwritten.svg" alt="Handwritten: 12.12 Monitoring as Code" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-handwritten.svg" alt="Handwritten: 12.12 Monitoring as Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-diagram.svg" alt="Diagram: 12.12 Monitoring as Code" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-diagram.svg" alt="Diagram: 12.12 Monitoring as Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-sticky.svg" alt="Sticky Note: 12.12 Monitoring as Code" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-12-monitoring-as-code-sticky.svg" alt="Sticky Note: 12.12 Monitoring as Code" width="30%">
 </a>
 
 
@@ -448,14 +448,14 @@ grafana:
 
 ### 12.13 Log Sampling and Cost Management
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-handwritten.svg" alt="Handwritten: 12.13 Log Sampling and Cost Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-handwritten.svg" alt="Handwritten: 12.13 Log Sampling and Cost Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-diagram.svg" alt="Diagram: 12.13 Log Sampling and Cost Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-diagram.svg" alt="Diagram: 12.13 Log Sampling and Cost Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-sticky.svg" alt="Sticky Note: 12.13 Log Sampling and Cost Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-13-log-sampling-and-cost-management-sticky.svg" alt="Sticky Note: 12.13 Log Sampling and Cost Management" width="30%">
 </a>
 
 
@@ -494,14 +494,14 @@ class LogSampler {
 
 ### 12.14 Observability Maturity Model
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-handwritten.svg" alt="Handwritten: 12.14 Observability Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-handwritten.svg" alt="Handwritten: 12.14 Observability Maturity Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-diagram.svg" alt="Diagram: 12.14 Observability Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-diagram.svg" alt="Diagram: 12.14 Observability Maturity Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-sticky.svg" alt="Sticky Note: 12.14 Observability Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-14-observability-maturity-model-sticky.svg" alt="Sticky Note: 12.14 Observability Maturity Model" width="30%">
 </a>
 
 
@@ -515,14 +515,14 @@ class LogSampler {
 
 ### 12.15 Logging Best Practices
 
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-handwritten.svg" alt="Handwritten: 12.15 Logging Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-handwritten.svg" alt="Handwritten: 12.15 Logging Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-diagram.svg" alt="Diagram: 12.15 Logging Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-diagram.svg" alt="Diagram: 12.15 Logging Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-sticky.svg" alt="Sticky Note: 12.15 Logging Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/12-monitoring-logging/12-15-logging-best-practices-sticky.svg" alt="Sticky Note: 12.15 Logging Best Practices" width="30%">
 </a>
 
 

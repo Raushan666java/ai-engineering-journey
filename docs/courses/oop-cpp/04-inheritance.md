@@ -49,14 +49,14 @@ flowchart LR
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ Inheritance lets a derived class reuse and extend a base class's interface and i
 
 ### Real-World Analogy: The Animal Kingdom
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-handwritten.svg" alt="Handwritten: Real-World Analogy: The Animal Kingdom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-handwritten.svg" alt="Handwritten: Real-World Analogy: The Animal Kingdom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-diagram.svg" alt="Diagram: Real-World Analogy: The Animal Kingdom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-diagram.svg" alt="Diagram: Real-World Analogy: The Animal Kingdom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-sticky.svg" alt="Sticky Note: Real-World Analogy: The Animal Kingdom" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/real-world-analogy-the-animal-kingdom-sticky.svg" alt="Sticky Note: Real-World Analogy: The Animal Kingdom" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ A **Dog is-an Animal**. Everything an Animal can do, a Dog can do (plus more). T
 
 ### Why Inheritance?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-handwritten.svg" alt="Handwritten: Why Inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-handwritten.svg" alt="Handwritten: Why Inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-diagram.svg" alt="Diagram: Why Inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-diagram.svg" alt="Diagram: Why Inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-sticky.svg" alt="Sticky Note: Why Inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/why-inheritance-sticky.svg" alt="Sticky Note: Why Inheritance?" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ A **Dog is-an Animal**. Everything an Animal can do, a Dog can do (plus more). T
 
 ### Numbered Steps to Model Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-handwritten.svg" alt="Handwritten: Numbered Steps to Model Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-handwritten.svg" alt="Handwritten: Numbered Steps to Model Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-diagram.svg" alt="Diagram: Numbered Steps to Model Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-diagram.svg" alt="Diagram: Numbered Steps to Model Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-sticky.svg" alt="Sticky Note: Numbered Steps to Model Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/numbered-steps-to-model-inheritance-sticky.svg" alt="Sticky Note: Numbered Steps to Model Inheritance" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ A **Dog is-an Animal**. Everything an Animal can do, a Dog can do (plus more). T
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -169,14 +169,14 @@ END MAIN
 
 ### C++ Code
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-handwritten.svg" alt="Handwritten: C++ Code" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-handwritten.svg" alt="Handwritten: C++ Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-diagram.svg" alt="Diagram: C++ Code" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-diagram.svg" alt="Diagram: C++ Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-sticky.svg" alt="Sticky Note: C++ Code" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/c-code-sticky.svg" alt="Sticky Note: C++ Code" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ Woof! Woof!
 
 ### Syntax and Semantics
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-handwritten.svg" alt="Handwritten: Syntax and Semantics" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-handwritten.svg" alt="Handwritten: Syntax and Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-diagram.svg" alt="Diagram: Syntax and Semantics" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-diagram.svg" alt="Diagram: Syntax and Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-sticky.svg" alt="Sticky Note: Syntax and Semantics" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/syntax-and-semantics-sticky.svg" alt="Sticky Note: Syntax and Semantics" width="30%">
 </a>
 
 
@@ -243,14 +243,14 @@ The `access-specifier` controls how base class members are seen through the deri
 
 ### What Inheritance Actually Provides
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-handwritten.svg" alt="Handwritten: What Inheritance Actually Provides" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-handwritten.svg" alt="Handwritten: What Inheritance Actually Provides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-diagram.svg" alt="Diagram: What Inheritance Actually Provides" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-diagram.svg" alt="Diagram: What Inheritance Actually Provides" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-sticky.svg" alt="Sticky Note: What Inheritance Actually Provides" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-inheritance-actually-provides-sticky.svg" alt="Sticky Note: What Inheritance Actually Provides" width="30%">
 </a>
 
 
@@ -263,14 +263,14 @@ When `Derived` inherits from `Base`:
 
 ### Memory Layout of a Derived Object
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-handwritten.svg" alt="Handwritten: Memory Layout of a Derived Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-handwritten.svg" alt="Handwritten: Memory Layout of a Derived Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-diagram.svg" alt="Diagram: Memory Layout of a Derived Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-diagram.svg" alt="Diagram: Memory Layout of a Derived Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-sticky.svg" alt="Sticky Note: Memory Layout of a Derived Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/memory-layout-of-a-derived-object-sticky.svg" alt="Sticky Note: Memory Layout of a Derived Object" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ Memory Layout:
 
 ### Key Points
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-handwritten.svg" alt="Handwritten: Key Points" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-handwritten.svg" alt="Handwritten: Key Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-diagram.svg" alt="Diagram: Key Points" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-diagram.svg" alt="Diagram: Key Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-sticky.svg" alt="Sticky Note: Key Points" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/key-points-sticky.svg" alt="Sticky Note: Key Points" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ Memory Layout:
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ The inheritance access specifier determines the minimum access level of inherite
 
 ### The Three Access Specifiers in Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-handwritten.svg" alt="Handwritten: The Three Access Specifiers in Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-handwritten.svg" alt="Handwritten: The Three Access Specifiers in Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-diagram.svg" alt="Diagram: The Three Access Specifiers in Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-diagram.svg" alt="Diagram: The Three Access Specifiers in Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-sticky.svg" alt="Sticky Note: The Three Access Specifiers in Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/the-three-access-specifiers-in-inheritance-sticky.svg" alt="Sticky Note: The Three Access Specifiers in Inheritance" width="30%">
 </a>
 
 
@@ -384,14 +384,14 @@ The inheritance access specifier determines the minimum access level of inherite
 
 ### Complete Access Control Table
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-handwritten.svg" alt="Handwritten: Complete Access Control Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-handwritten.svg" alt="Handwritten: Complete Access Control Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-diagram.svg" alt="Diagram: Complete Access Control Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-diagram.svg" alt="Diagram: Complete Access Control Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-sticky.svg" alt="Sticky Note: Complete Access Control Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/complete-access-control-table-sticky.svg" alt="Sticky Note: Complete Access Control Table" width="30%">
 </a>
 
 
@@ -411,14 +411,14 @@ This table shows how base class members (with their original access level) appea
 
 ### Comprehensive Demo
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-handwritten.svg" alt="Handwritten: Comprehensive Demo" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-handwritten.svg" alt="Handwritten: Comprehensive Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-diagram.svg" alt="Diagram: Comprehensive Demo" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-diagram.svg" alt="Diagram: Comprehensive Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-sticky.svg" alt="Sticky Note: Comprehensive Demo" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-demo-sticky.svg" alt="Sticky Note: Comprehensive Demo" width="30%">
 </a>
 
 
@@ -489,14 +489,14 @@ Private derived: pub=1, prot=2
 
 ### Access Specifier Comparison Table
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-handwritten.svg" alt="Handwritten: Access Specifier Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-handwritten.svg" alt="Handwritten: Access Specifier Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-diagram.svg" alt="Diagram: Access Specifier Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-diagram.svg" alt="Diagram: Access Specifier Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-sticky.svg" alt="Sticky Note: Access Specifier Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/access-specifier-comparison-table-sticky.svg" alt="Sticky Note: Access Specifier Comparison Table" width="30%">
 </a>
 
 
@@ -511,14 +511,14 @@ Private derived: pub=1, prot=2
 
 ### Runtime Type Identification with Different Inheritances
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-handwritten.svg" alt="Handwritten: Runtime Type Identification with Different Inheritances" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-handwritten.svg" alt="Handwritten: Runtime Type Identification with Different Inheritances" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-diagram.svg" alt="Diagram: Runtime Type Identification with Different Inheritances" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-diagram.svg" alt="Diagram: Runtime Type Identification with Different Inheritances" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-sticky.svg" alt="Sticky Note: Runtime Type Identification with Different Inheritances" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/runtime-type-identification-with-different-inheritances-sticky.svg" alt="Sticky Note: Runtime Type Identification with Different Inheritances" width="30%">
 </a>
 
 
@@ -555,14 +555,14 @@ Private: upcast does NOT work
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -570,14 +570,14 @@ C++ supports five inheritance types: single, multilevel, multiple, hierarchical,
 
 ### Comprehensive Type Comparison Table
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-handwritten.svg" alt="Handwritten: Comprehensive Type Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-handwritten.svg" alt="Handwritten: Comprehensive Type Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-diagram.svg" alt="Diagram: Comprehensive Type Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-diagram.svg" alt="Diagram: Comprehensive Type Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-sticky.svg" alt="Sticky Note: Comprehensive Type Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/comprehensive-type-comparison-table-sticky.svg" alt="Sticky Note: Comprehensive Type Comparison Table" width="30%">
 </a>
 
 
@@ -593,14 +593,14 @@ C++ supports five inheritance types: single, multilevel, multiple, hierarchical,
 
 ### 4.4.1 Single Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-handwritten.svg" alt="Handwritten: 4.4.1 Single Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-handwritten.svg" alt="Handwritten: 4.4.1 Single Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-diagram.svg" alt="Diagram: 4.4.1 Single Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-diagram.svg" alt="Diagram: 4.4.1 Single Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-sticky.svg" alt="Sticky Note: 4.4.1 Single Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-1-single-inheritance-sticky.svg" alt="Sticky Note: 4.4.1 Single Inheritance" width="30%">
 </a>
 
 
@@ -695,14 +695,14 @@ Beep beep!
 
 ### 4.4.2 Multilevel Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-handwritten.svg" alt="Handwritten: 4.4.2 Multilevel Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-handwritten.svg" alt="Handwritten: 4.4.2 Multilevel Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-diagram.svg" alt="Diagram: 4.4.2 Multilevel Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-diagram.svg" alt="Diagram: 4.4.2 Multilevel Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-sticky.svg" alt="Sticky Note: 4.4.2 Multilevel Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-2-multilevel-inheritance-sticky.svg" alt="Sticky Note: 4.4.2 Multilevel Inheritance" width="30%">
 </a>
 
 
@@ -827,14 +827,14 @@ Golden Retriever says Woof!
 
 ### 4.4.3 Multiple Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-handwritten.svg" alt="Handwritten: 4.4.3 Multiple Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-handwritten.svg" alt="Handwritten: 4.4.3 Multiple Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-diagram.svg" alt="Diagram: 4.4.3 Multiple Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-diagram.svg" alt="Diagram: 4.4.3 Multiple Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-sticky.svg" alt="Sticky Note: 4.4.3 Multiple Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-3-multiple-inheritance-sticky.svg" alt="Sticky Note: 4.4.3 Multiple Inheritance" width="30%">
 </a>
 
 
@@ -969,14 +969,14 @@ int main() {
 
 ### 4.4.4 Hierarchical Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-handwritten.svg" alt="Handwritten: 4.4.4 Hierarchical Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-handwritten.svg" alt="Handwritten: 4.4.4 Hierarchical Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-diagram.svg" alt="Diagram: 4.4.4 Hierarchical Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-diagram.svg" alt="Diagram: 4.4.4 Hierarchical Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-sticky.svg" alt="Sticky Note: 4.4.4 Hierarchical Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-4-4-hierarchical-inheritance-sticky.svg" alt="Sticky Note: 4.4.4 Hierarchical Inheritance" width="30%">
 </a>
 
 
@@ -1124,14 +1124,14 @@ Circle:               Rectangle:            Triangle:
 
 ### 4.5.1 Hybrid Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-handwritten.svg" alt="Handwritten: 4.5.1 Hybrid Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-handwritten.svg" alt="Handwritten: 4.5.1 Hybrid Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-diagram.svg" alt="Diagram: 4.5.1 Hybrid Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-diagram.svg" alt="Diagram: 4.5.1 Hybrid Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-sticky.svg" alt="Sticky Note: 4.5.1 Hybrid Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-1-hybrid-inheritance-sticky.svg" alt="Sticky Note: 4.5.1 Hybrid Inheritance" width="30%">
 </a>
 
 
@@ -1151,14 +1151,14 @@ Circle:               Rectangle:            Triangle:
 
 ### 4.5.2 The Diamond Problem → Without Virtual Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-handwritten.svg" alt="Handwritten: 4.5.2 The Diamond Problem → Without Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-handwritten.svg" alt="Handwritten: 4.5.2 The Diamond Problem → Without Virtual Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-diagram.svg" alt="Diagram: 4.5.2 The Diamond Problem → Without Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-diagram.svg" alt="Diagram: 4.5.2 The Diamond Problem → Without Virtual Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-sticky.svg" alt="Sticky Note: 4.5.2 The Diamond Problem → Without Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-2-the-diamond-problem-without-virtual-inheritance-sticky.svg" alt="Sticky Note: 4.5.2 The Diamond Problem → Without Virtual Inheritance" width="30%">
 </a>
 
 
@@ -1246,14 +1246,14 @@ The two A subobjects are at different offsets, and `d.value` is ambiguous becaus
 
 ### 4.5.3 Virtual Inheritance → The Solution
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-handwritten.svg" alt="Handwritten: 4.5.3 Virtual Inheritance → The Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-handwritten.svg" alt="Handwritten: 4.5.3 Virtual Inheritance → The Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-diagram.svg" alt="Diagram: 4.5.3 Virtual Inheritance → The Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-diagram.svg" alt="Diagram: 4.5.3 Virtual Inheritance → The Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-sticky.svg" alt="Sticky Note: 4.5.3 Virtual Inheritance → The Solution" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-3-virtual-inheritance-the-solution-sticky.svg" alt="Sticky Note: 4.5.3 Virtual Inheritance → The Solution" width="30%">
 </a>
 
 
@@ -1319,14 +1319,14 @@ Size of D: 16+ bytes    // varies by compiler; includes vbase pointers
 
 ### 4.5.4 Memory Layout with Virtual Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-handwritten.svg" alt="Handwritten: 4.5.4 Memory Layout with Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-handwritten.svg" alt="Handwritten: 4.5.4 Memory Layout with Virtual Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-diagram.svg" alt="Diagram: 4.5.4 Memory Layout with Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-diagram.svg" alt="Diagram: 4.5.4 Memory Layout with Virtual Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-sticky.svg" alt="Sticky Note: 4.5.4 Memory Layout with Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-4-memory-layout-with-virtual-inheritance-sticky.svg" alt="Sticky Note: 4.5.4 Memory Layout with Virtual Inheritance" width="30%">
 </a>
 
 
@@ -1354,14 +1354,14 @@ Object D (with virtual inheritance):
 
 ### 4.5.5 Virtual Base Initialisation Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-handwritten.svg" alt="Handwritten: 4.5.5 Virtual Base Initialisation Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-handwritten.svg" alt="Handwritten: 4.5.5 Virtual Base Initialisation Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-diagram.svg" alt="Diagram: 4.5.5 Virtual Base Initialisation Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-diagram.svg" alt="Diagram: 4.5.5 Virtual Base Initialisation Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-sticky.svg" alt="Sticky Note: 4.5.5 Virtual Base Initialisation Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-5-virtual-base-initialisation-rules-sticky.svg" alt="Sticky Note: 4.5.5 Virtual Base Initialisation Rules" width="30%">
 </a>
 
 
@@ -1429,14 +1429,14 @@ d.value = 99
 
 ### 4.5.6 Virtual Inheritance with Non-Default Constructor
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-handwritten.svg" alt="Handwritten: 4.5.6 Virtual Inheritance with Non-Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-handwritten.svg" alt="Handwritten: 4.5.6 Virtual Inheritance with Non-Default Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-diagram.svg" alt="Diagram: 4.5.6 Virtual Inheritance with Non-Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-diagram.svg" alt="Diagram: 4.5.6 Virtual Inheritance with Non-Default Constructor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-sticky.svg" alt="Sticky Note: 4.5.6 Virtual Inheritance with Non-Default Constructor" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-6-virtual-inheritance-with-non-default-constructor-sticky.svg" alt="Sticky Note: 4.5.6 Virtual Inheritance with Non-Default Constructor" width="30%">
 </a>
 
 
@@ -1484,14 +1484,14 @@ b.id = 0
 
 ### 4.5.7 When Is Virtual Inheritance Needed?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-handwritten.svg" alt="Handwritten: 4.5.7 When Is Virtual Inheritance Needed?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-handwritten.svg" alt="Handwritten: 4.5.7 When Is Virtual Inheritance Needed?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-diagram.svg" alt="Diagram: 4.5.7 When Is Virtual Inheritance Needed?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-diagram.svg" alt="Diagram: 4.5.7 When Is Virtual Inheritance Needed?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-sticky.svg" alt="Sticky Note: 4.5.7 When Is Virtual Inheritance Needed?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-7-when-is-virtual-inheritance-needed-sticky.svg" alt="Sticky Note: 4.5.7 When Is Virtual Inheritance Needed?" width="30%">
 </a>
 
 
@@ -1506,14 +1506,14 @@ b.id = 0
 
 ### 4.5.8 Performance Implications of Virtual Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-handwritten.svg" alt="Handwritten: 4.5.8 Performance Implications of Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-handwritten.svg" alt="Handwritten: 4.5.8 Performance Implications of Virtual Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-diagram.svg" alt="Diagram: 4.5.8 Performance Implications of Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-diagram.svg" alt="Diagram: 4.5.8 Performance Implications of Virtual Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-sticky.svg" alt="Sticky Note: 4.5.8 Performance Implications of Virtual Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-5-8-performance-implications-of-virtual-inheritance-sticky.svg" alt="Sticky Note: 4.5.8 Performance Implications of Virtual Inheritance" width="30%">
 </a>
 
 
@@ -1531,14 +1531,14 @@ b.id = 0
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -1546,14 +1546,14 @@ Construction proceeds from base to derived (virtual bases first, then regular ba
 
 ### 4.6.1 Construction Order Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-handwritten.svg" alt="Handwritten: 4.6.1 Construction Order Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-handwritten.svg" alt="Handwritten: 4.6.1 Construction Order Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-diagram.svg" alt="Diagram: 4.6.1 Construction Order Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-diagram.svg" alt="Diagram: 4.6.1 Construction Order Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-sticky.svg" alt="Sticky Note: 4.6.1 Construction Order Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-1-construction-order-rules-sticky.svg" alt="Sticky Note: 4.6.1 Construction Order Rules" width="30%">
 </a>
 
 
@@ -1566,14 +1566,14 @@ For a derived class object, constructors execute in this precise order:
 
 ### 4.6.2 Destruction Order Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-handwritten.svg" alt="Handwritten: 4.6.2 Destruction Order Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-handwritten.svg" alt="Handwritten: 4.6.2 Destruction Order Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-diagram.svg" alt="Diagram: 4.6.2 Destruction Order Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-diagram.svg" alt="Diagram: 4.6.2 Destruction Order Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-sticky.svg" alt="Sticky Note: 4.6.2 Destruction Order Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-2-destruction-order-rules-sticky.svg" alt="Sticky Note: 4.6.2 Destruction Order Rules" width="30%">
 </a>
 
 
@@ -1586,14 +1586,14 @@ Destruction is the **exact reverse** of construction:
 
 ### 4.6.3 Complete Demonstration → All Cases
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-handwritten.svg" alt="Handwritten: 4.6.3 Complete Demonstration → All Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-handwritten.svg" alt="Handwritten: 4.6.3 Complete Demonstration → All Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-diagram.svg" alt="Diagram: 4.6.3 Complete Demonstration → All Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-diagram.svg" alt="Diagram: 4.6.3 Complete Demonstration → All Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-sticky.svg" alt="Sticky Note: 4.6.3 Complete Demonstration → All Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-3-complete-demonstration-all-cases-sticky.svg" alt="Sticky Note: 4.6.3 Complete Demonstration → All Cases" width="30%">
 </a>
 
 
@@ -1692,14 +1692,14 @@ VB VirtualBase destroyed
 
 ### 4.6.4 Practical Consequences
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-handwritten.svg" alt="Handwritten: 4.6.4 Practical Consequences" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-handwritten.svg" alt="Handwritten: 4.6.4 Practical Consequences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-diagram.svg" alt="Diagram: 4.6.4 Practical Consequences" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-diagram.svg" alt="Diagram: 4.6.4 Practical Consequences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-sticky.svg" alt="Sticky Note: 4.6.4 Practical Consequences" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-4-practical-consequences-sticky.svg" alt="Sticky Note: 4.6.4 Practical Consequences" width="30%">
 </a>
 
 
@@ -1712,14 +1712,14 @@ VB VirtualBase destroyed
 
 ### 4.6.5 Calling Virtual Functions in Constructor → Demonstration
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-handwritten.svg" alt="Handwritten: 4.6.5 Calling Virtual Functions in Constructor → Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-handwritten.svg" alt="Handwritten: 4.6.5 Calling Virtual Functions in Constructor → Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-diagram.svg" alt="Diagram: 4.6.5 Calling Virtual Functions in Constructor → Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-diagram.svg" alt="Diagram: 4.6.5 Calling Virtual Functions in Constructor → Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-sticky.svg" alt="Sticky Note: 4.6.5 Calling Virtual Functions in Constructor → Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-6-5-calling-virtual-functions-in-constructor-demonstration-sticky.svg" alt="Sticky Note: 4.6.5 Calling Virtual Functions in Constructor → Demonstration" width="30%">
 </a>
 
 
@@ -1759,14 +1759,14 @@ Derived::print
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -1774,14 +1774,14 @@ IS-A models inheritance (subtype polymorphism); HAS-A models composition (contai
 
 ### 4.7.1 Definitions
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-handwritten.svg" alt="Handwritten: 4.7.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-handwritten.svg" alt="Handwritten: 4.7.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-diagram.svg" alt="Diagram: 4.7.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-diagram.svg" alt="Diagram: 4.7.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-sticky.svg" alt="Sticky Note: 4.7.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-1-definitions-sticky.svg" alt="Sticky Note: 4.7.1 Definitions" width="30%">
 </a>
 
 
@@ -1792,14 +1792,14 @@ IS-A models inheritance (subtype polymorphism); HAS-A models composition (contai
 
 ### 4.7.2 Complete Comparison Table
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-handwritten.svg" alt="Handwritten: 4.7.2 Complete Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-handwritten.svg" alt="Handwritten: 4.7.2 Complete Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-diagram.svg" alt="Diagram: 4.7.2 Complete Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-diagram.svg" alt="Diagram: 4.7.2 Complete Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-sticky.svg" alt="Sticky Note: 4.7.2 Complete Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-2-complete-comparison-table-sticky.svg" alt="Sticky Note: 4.7.2 Complete Comparison Table" width="30%">
 </a>
 
 
@@ -1819,14 +1819,14 @@ IS-A models inheritance (subtype polymorphism); HAS-A models composition (contai
 
 ### 4.7.3 Correct IS-A Example
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-handwritten.svg" alt="Handwritten: 4.7.3 Correct IS-A Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-handwritten.svg" alt="Handwritten: 4.7.3 Correct IS-A Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-diagram.svg" alt="Diagram: 4.7.3 Correct IS-A Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-diagram.svg" alt="Diagram: 4.7.3 Correct IS-A Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-sticky.svg" alt="Sticky Note: 4.7.3 Correct IS-A Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-3-correct-is-a-example-sticky.svg" alt="Sticky Note: 4.7.3 Correct IS-A Example" width="30%">
 </a>
 
 
@@ -1868,14 +1868,14 @@ Sparrow flying swiftly
 
 ### 4.7.4 Correct HAS-A Example
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-handwritten.svg" alt="Handwritten: 4.7.4 Correct HAS-A Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-handwritten.svg" alt="Handwritten: 4.7.4 Correct HAS-A Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-diagram.svg" alt="Diagram: 4.7.4 Correct HAS-A Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-diagram.svg" alt="Diagram: 4.7.4 Correct HAS-A Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-sticky.svg" alt="Sticky Note: 4.7.4 Correct HAS-A Example" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-4-correct-has-a-example-sticky.svg" alt="Sticky Note: 4.7.4 Correct HAS-A Example" width="30%">
 </a>
 
 
@@ -1920,14 +1920,14 @@ Sedan: Engine (200HP) started
 
 ### 4.7.5 When Inheritance is WRONG (IS-A Mistake)
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-handwritten.svg" alt="Handwritten: 4.7.5 When Inheritance is WRONG (IS-A Mistake)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-handwritten.svg" alt="Handwritten: 4.7.5 When Inheritance is WRONG (IS-A Mistake)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-diagram.svg" alt="Diagram: 4.7.5 When Inheritance is WRONG (IS-A Mistake)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-diagram.svg" alt="Diagram: 4.7.5 When Inheritance is WRONG (IS-A Mistake)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-sticky.svg" alt="Sticky Note: 4.7.5 When Inheritance is WRONG (IS-A Mistake)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-5-when-inheritance-is-wrong-is-a-mistake-sticky.svg" alt="Sticky Note: 4.7.5 When Inheritance is WRONG (IS-A Mistake)" width="30%">
 </a>
 
 
@@ -1960,14 +1960,14 @@ public:
 
 ### 4.7.6 HAS-A over Private Inheritance
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-handwritten.svg" alt="Handwritten: 4.7.6 HAS-A over Private Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-handwritten.svg" alt="Handwritten: 4.7.6 HAS-A over Private Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-diagram.svg" alt="Diagram: 4.7.6 HAS-A over Private Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-diagram.svg" alt="Diagram: 4.7.6 HAS-A over Private Inheritance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-sticky.svg" alt="Sticky Note: 4.7.6 HAS-A over Private Inheritance" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-6-has-a-over-private-inheritance-sticky.svg" alt="Sticky Note: 4.7.6 HAS-A over Private Inheritance" width="30%">
 </a>
 
 
@@ -2004,14 +2004,14 @@ Is it a true subtype?
 
 ### 4.7.7 IS-A vs HAS-A Code Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-handwritten.svg" alt="Handwritten: 4.7.7 IS-A vs HAS-A Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-handwritten.svg" alt="Handwritten: 4.7.7 IS-A vs HAS-A Code Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-diagram.svg" alt="Diagram: 4.7.7 IS-A vs HAS-A Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-diagram.svg" alt="Diagram: 4.7.7 IS-A vs HAS-A Code Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-sticky.svg" alt="Sticky Note: 4.7.7 IS-A vs HAS-A Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-7-7-is-a-vs-has-a-code-comparison-sticky.svg" alt="Sticky Note: 4.7.7 IS-A vs HAS-A Code Comparison" width="30%">
 </a>
 
 
@@ -2097,14 +2097,14 @@ Total payroll for Engineering: $101000
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -2112,14 +2112,14 @@ Upcasting (derived → base) is always safe and implicit; downcasting (base → 
 
 ### 4.8.1 Definitions
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-handwritten.svg" alt="Handwritten: 4.8.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-handwritten.svg" alt="Handwritten: 4.8.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-diagram.svg" alt="Diagram: 4.8.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-diagram.svg" alt="Diagram: 4.8.1 Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-sticky.svg" alt="Sticky Note: 4.8.1 Definitions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-1-definitions-sticky.svg" alt="Sticky Note: 4.8.1 Definitions" width="30%">
 </a>
 
 
@@ -2130,14 +2130,14 @@ Upcasting (derived → base) is always safe and implicit; downcasting (base → 
 
 ### 4.8.2 Why Upcasting is Safe
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-handwritten.svg" alt="Handwritten: 4.8.2 Why Upcasting is Safe" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-handwritten.svg" alt="Handwritten: 4.8.2 Why Upcasting is Safe" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-diagram.svg" alt="Diagram: 4.8.2 Why Upcasting is Safe" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-diagram.svg" alt="Diagram: 4.8.2 Why Upcasting is Safe" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-sticky.svg" alt="Sticky Note: 4.8.2 Why Upcasting is Safe" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-2-why-upcasting-is-safe-sticky.svg" alt="Sticky Note: 4.8.2 Why Upcasting is Safe" width="30%">
 </a>
 
 
@@ -2187,14 +2187,14 @@ Base function
 
 ### 4.8.3 Why Downcasting is Dangerous
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-handwritten.svg" alt="Handwritten: 4.8.3 Why Downcasting is Dangerous" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-handwritten.svg" alt="Handwritten: 4.8.3 Why Downcasting is Dangerous" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-diagram.svg" alt="Diagram: 4.8.3 Why Downcasting is Dangerous" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-diagram.svg" alt="Diagram: 4.8.3 Why Downcasting is Dangerous" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-sticky.svg" alt="Sticky Note: 4.8.3 Why Downcasting is Dangerous" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-3-why-downcasting-is-dangerous-sticky.svg" alt="Sticky Note: 4.8.3 Why Downcasting is Dangerous" width="30%">
 </a>
 
 
@@ -2209,14 +2209,14 @@ Base* bp2 = new Base();      // actually points to Base (no Derived!)
 
 ### 4.8.4 Downcasting with dynamic_cast (Safe)
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-handwritten.svg" alt="Handwritten: 4.8.4 Downcasting with dynamic_cast (Safe)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-handwritten.svg" alt="Handwritten: 4.8.4 Downcasting with dynamic_cast (Safe)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-diagram.svg" alt="Diagram: 4.8.4 Downcasting with dynamic_cast (Safe)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-diagram.svg" alt="Diagram: 4.8.4 Downcasting with dynamic_cast (Safe)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-sticky.svg" alt="Sticky Note: 4.8.4 Downcasting with dynamic_cast (Safe)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-4-downcasting-with-dynamic-cast-safe-sticky.svg" alt="Sticky Note: 4.8.4 Downcasting with dynamic_cast (Safe)" width="30%">
 </a>
 
 
@@ -2275,14 +2275,14 @@ Downcast to Derived succeeded: Derived-specific function
 
 ### 4.8.5 Downcasting with static_cast (Unsafe)
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-handwritten.svg" alt="Handwritten: 4.8.5 Downcasting with static_cast (Unsafe)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-handwritten.svg" alt="Handwritten: 4.8.5 Downcasting with static_cast (Unsafe)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-diagram.svg" alt="Diagram: 4.8.5 Downcasting with static_cast (Unsafe)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-diagram.svg" alt="Diagram: 4.8.5 Downcasting with static_cast (Unsafe)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-sticky.svg" alt="Sticky Note: 4.8.5 Downcasting with static_cast (Unsafe)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-5-downcasting-with-static-cast-unsafe-sticky.svg" alt="Sticky Note: 4.8.5 Downcasting with static_cast (Unsafe)" width="30%">
 </a>
 
 
@@ -2296,14 +2296,14 @@ Base* bp = new Base();
 
 ### 4.8.6 Upcasting vs Downcasting → Complete Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-handwritten.svg" alt="Handwritten: 4.8.6 Upcasting vs Downcasting → Complete Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-handwritten.svg" alt="Handwritten: 4.8.6 Upcasting vs Downcasting → Complete Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-diagram.svg" alt="Diagram: 4.8.6 Upcasting vs Downcasting → Complete Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-diagram.svg" alt="Diagram: 4.8.6 Upcasting vs Downcasting → Complete Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-sticky.svg" alt="Sticky Note: 4.8.6 Upcasting vs Downcasting → Complete Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-6-upcasting-vs-downcasting-complete-comparison-sticky.svg" alt="Sticky Note: 4.8.6 Upcasting vs Downcasting → Complete Comparison" width="30%">
 </a>
 
 
@@ -2319,14 +2319,14 @@ Base* bp = new Base();
 
 ### 4.8.7 Multiple Inheritance and Casting
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-handwritten.svg" alt="Handwritten: 4.8.7 Multiple Inheritance and Casting" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-handwritten.svg" alt="Handwritten: 4.8.7 Multiple Inheritance and Casting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-diagram.svg" alt="Diagram: 4.8.7 Multiple Inheritance and Casting" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-diagram.svg" alt="Diagram: 4.8.7 Multiple Inheritance and Casting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-sticky.svg" alt="Sticky Note: 4.8.7 Multiple Inheritance and Casting" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-7-multiple-inheritance-and-casting-sticky.svg" alt="Sticky Note: 4.8.7 Multiple Inheritance and Casting" width="30%">
 </a>
 
 
@@ -2382,14 +2382,14 @@ The compiler automatically adjusts the pointer when casting to B → the B subob
 
 ### 4.8.8 cross_cast Pattern
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-handwritten.svg" alt="Handwritten: 4.8.8 cross_cast Pattern" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-handwritten.svg" alt="Handwritten: 4.8.8 cross_cast Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-diagram.svg" alt="Diagram: 4.8.8 cross_cast Pattern" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-diagram.svg" alt="Diagram: 4.8.8 cross_cast Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-sticky.svg" alt="Sticky Note: 4.8.8 cross_cast Pattern" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-8-cross-cast-pattern-sticky.svg" alt="Sticky Note: 4.8.8 cross_cast Pattern" width="30%">
 </a>
 
 
@@ -2406,14 +2406,14 @@ class C : public A, public B {};  // inherits Base twice!
 
 ### 4.8.9 Dynamic Cast Cost Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-handwritten.svg" alt="Handwritten: 4.8.9 Dynamic Cast Cost Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-handwritten.svg" alt="Handwritten: 4.8.9 Dynamic Cast Cost Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-diagram.svg" alt="Diagram: 4.8.9 Dynamic Cast Cost Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-diagram.svg" alt="Diagram: 4.8.9 Dynamic Cast Cost Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-sticky.svg" alt="Sticky Note: 4.8.9 Dynamic Cast Cost Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-8-9-dynamic-cast-cost-analysis-sticky.svg" alt="Sticky Note: 4.8.9 Dynamic Cast Cost Analysis" width="30%">
 </a>
 
 
@@ -2430,14 +2430,14 @@ class C : public A, public B {};  // inherits Base twice!
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -2447,14 +2447,14 @@ These are the most commonly asked C++ inheritance interview questions, covering 
 
 ### Q1: What is the diamond problem and how does virtual inheritance solve it?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-handwritten.svg" alt="Handwritten: What is the diamond problem and how does virtual inheritance solve it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-handwritten.svg" alt="Handwritten: What is the diamond problem and how does virtual inheritance solve it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-diagram.svg" alt="Diagram: What is the diamond problem and how does virtual inheritance solve it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-diagram.svg" alt="Diagram: What is the diamond problem and how does virtual inheritance solve it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-sticky.svg" alt="Sticky Note: What is the diamond problem and how does virtual inheritance solve it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-diamond-problem-and-how-does-virtual-inheritance-solve-it-sticky.svg" alt="Sticky Note: What is the diamond problem and how does virtual inheritance solve it?" width="30%">
 </a>
 
 
@@ -2498,14 +2498,14 @@ class D : public B, public C {};
 
 ### Q2: What is object slicing and how do you prevent it?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-handwritten.svg" alt="Handwritten: What is object slicing and how do you prevent it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-handwritten.svg" alt="Handwritten: What is object slicing and how do you prevent it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-diagram.svg" alt="Diagram: What is object slicing and how do you prevent it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-diagram.svg" alt="Diagram: What is object slicing and how do you prevent it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-sticky.svg" alt="Sticky Note: What is object slicing and how do you prevent it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-object-slicing-and-how-do-you-prevent-it-sticky.svg" alt="Sticky Note: What is object slicing and how do you prevent it?" width="30%">
 </a>
 
 
@@ -2582,14 +2582,14 @@ vec2.push_back(&d);  // OK
 
 ### Q3: Explain virtual inheritance memory layout. How does the compiler implement it?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-handwritten.svg" alt="Handwritten: Explain virtual inheritance memory layout. How does the compiler implement it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-handwritten.svg" alt="Handwritten: Explain virtual inheritance memory layout. How does the compiler implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-diagram.svg" alt="Diagram: Explain virtual inheritance memory layout. How does the compiler implement it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-diagram.svg" alt="Diagram: Explain virtual inheritance memory layout. How does the compiler implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-sticky.svg" alt="Sticky Note: Explain virtual inheritance memory layout. How does the compiler implement it?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-virtual-inheritance-memory-layout-how-does-the-compiler-implement-it-sticky.svg" alt="Sticky Note: Explain virtual inheritance memory layout. How does the compiler implement it?" width="30%">
 </a>
 
 
@@ -2657,14 +2657,14 @@ d.A::x = 42;
 
 ### Q4: Can you call a virtual function from a constructor or destructor? What happens?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-handwritten.svg" alt="Handwritten: Can you call a virtual function from a constructor or destructor? What happens?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-handwritten.svg" alt="Handwritten: Can you call a virtual function from a constructor or destructor? What happens?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-diagram.svg" alt="Diagram: Can you call a virtual function from a constructor or destructor? What happens?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-diagram.svg" alt="Diagram: Can you call a virtual function from a constructor or destructor? What happens?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-sticky.svg" alt="Sticky Note: Can you call a virtual function from a constructor or destructor? What happens?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/can-you-call-a-virtual-function-from-a-constructor-or-destructor-what-happens-sticky.svg" alt="Sticky Note: Can you call a virtual function from a constructor or destructor? What happens?" width="30%">
 </a>
 
 
@@ -2714,14 +2714,14 @@ Derived::print
 
 ### Q5: What is the difference between `public`, `protected`, and `private` inheritance?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-handwritten.svg" alt="Handwritten: What is the difference between `public`, `protected`, and `private` inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-handwritten.svg" alt="Handwritten: What is the difference between `public`, `protected`, and `private` inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-diagram.svg" alt="Diagram: What is the difference between `public`, `protected`, and `private` inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-diagram.svg" alt="Diagram: What is the difference between `public`, `protected`, and `private` inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-sticky.svg" alt="Sticky Note: What is the difference between `public`, `protected`, and `private` inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-public-protected-and-private-inheritance-sticky.svg" alt="Sticky Note: What is the difference between `public`, `protected`, and `private` inheritance?" width="30%">
 </a>
 
 
@@ -2748,14 +2748,14 @@ Derived::print
 
 ### Q6: What does the `final` specifier do in inheritance?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-handwritten.svg" alt="Handwritten: What does the `final` specifier do in inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-handwritten.svg" alt="Handwritten: What does the `final` specifier do in inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-diagram.svg" alt="Diagram: What does the `final` specifier do in inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-diagram.svg" alt="Diagram: What does the `final` specifier do in inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-sticky.svg" alt="Sticky Note: What does the `final` specifier do in inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-does-the-final-specifier-do-in-inheritance-sticky.svg" alt="Sticky Note: What does the `final` specifier do in inheritance?" width="30%">
 </a>
 
 
@@ -2801,14 +2801,14 @@ class FinalClass final : public Base {
 
 ### Q7: Explain the Liskov Substitution Principle in the context of inheritance.
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-handwritten.svg" alt="Handwritten: Explain the Liskov Substitution Principle in the context of inheritance." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-handwritten.svg" alt="Handwritten: Explain the Liskov Substitution Principle in the context of inheritance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-diagram.svg" alt="Diagram: Explain the Liskov Substitution Principle in the context of inheritance." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-diagram.svg" alt="Diagram: Explain the Liskov Substitution Principle in the context of inheritance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-sticky.svg" alt="Sticky Note: Explain the Liskov Substitution Principle in the context of inheritance." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/explain-the-liskov-substitution-principle-in-the-context-of-inheritance-sticky.svg" alt="Sticky Note: Explain the Liskov Substitution Principle in the context of inheritance." width="30%">
 </a>
 
 
@@ -2882,14 +2882,14 @@ private:
 
 ### Q8: How do you prevent a class from being inherited in C++?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-handwritten.svg" alt="Handwritten: How do you prevent a class from being inherited in C++?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-handwritten.svg" alt="Handwritten: How do you prevent a class from being inherited in C++?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-diagram.svg" alt="Diagram: How do you prevent a class from being inherited in C++?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-diagram.svg" alt="Diagram: How do you prevent a class from being inherited in C++?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-sticky.svg" alt="Sticky Note: How do you prevent a class from being inherited in C++?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/how-do-you-prevent-a-class-from-being-inherited-in-c-sticky.svg" alt="Sticky Note: How do you prevent a class from being inherited in C++?" width="30%">
 </a>
 
 
@@ -2954,14 +2954,14 @@ public:
 
 ### Q9: What is the difference between early (static) binding and late (dynamic) binding in inheritance?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-handwritten.svg" alt="Handwritten: What is the difference between early (static) binding and late (dynamic) binding in inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-handwritten.svg" alt="Handwritten: What is the difference between early (static) binding and late (dynamic) binding in inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-diagram.svg" alt="Diagram: What is the difference between early (static) binding and late (dynamic) binding in inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-diagram.svg" alt="Diagram: What is the difference between early (static) binding and late (dynamic) binding in inheritance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-sticky.svg" alt="Sticky Note: What is the difference between early (static) binding and late (dynamic) binding in inheritance?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-is-the-difference-between-early-static-binding-and-late-dynamic-binding-in-inheritance-sticky.svg" alt="Sticky Note: What is the difference between early (static) binding and late (dynamic) binding in inheritance?" width="30%">
 </a>
 
 
@@ -3008,14 +3008,14 @@ Derived::isVirtual
 
 ### Q10: What happens if a destructor is not virtual in a base class?
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-handwritten.svg" alt="Handwritten: What happens if a destructor is not virtual in a base class?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-handwritten.svg" alt="Handwritten: What happens if a destructor is not virtual in a base class?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-diagram.svg" alt="Diagram: What happens if a destructor is not virtual in a base class?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-diagram.svg" alt="Diagram: What happens if a destructor is not virtual in a base class?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-sticky.svg" alt="Sticky Note: What happens if a destructor is not virtual in a base class?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/what-happens-if-a-destructor-is-not-virtual-in-a-base-class-sticky.svg" alt="Sticky Note: What happens if a destructor is not virtual in a base class?" width="30%">
 </a>
 
 
@@ -3066,14 +3066,14 @@ public:
 
 ### One-Sentence Takeaway
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-handwritten.svg" alt="Handwritten: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-diagram.svg" alt="Diagram: One-Sentence Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/one-sentence-takeaway-sticky.svg" alt="Sticky Note: One-Sentence Takeaway" width="30%">
 </a>
 
 
@@ -3081,14 +3081,14 @@ Inheritance is the backbone of major C++ frameworks; understanding real-world hi
 
 ### 4.10.1 Qt Widget Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-handwritten.svg" alt="Handwritten: 4.10.1 Qt Widget Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-handwritten.svg" alt="Handwritten: 4.10.1 Qt Widget Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-diagram.svg" alt="Diagram: 4.10.1 Qt Widget Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-diagram.svg" alt="Diagram: 4.10.1 Qt Widget Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-sticky.svg" alt="Sticky Note: 4.10.1 Qt Widget Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-1-qt-widget-hierarchy-sticky.svg" alt="Sticky Note: 4.10.1 Qt Widget Hierarchy" width="30%">
 </a>
 
 
@@ -3177,14 +3177,14 @@ public:
 
 ### 4.10.2 C++ iostream Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-handwritten.svg" alt="Handwritten: 4.10.2 C++ iostream Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-handwritten.svg" alt="Handwritten: 4.10.2 C++ iostream Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-diagram.svg" alt="Diagram: 4.10.2 C++ iostream Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-diagram.svg" alt="Diagram: 4.10.2 C++ iostream Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-sticky.svg" alt="Sticky Note: 4.10.2 C++ iostream Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-2-c-iostream-hierarchy-sticky.svg" alt="Sticky Note: 4.10.2 C++ iostream Hierarchy" width="30%">
 </a>
 
 
@@ -3236,14 +3236,14 @@ class iostream : public istream, public ostream { /* ... */ };
 
 ### 4.10.3 Exception Class Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-handwritten.svg" alt="Handwritten: 4.10.3 Exception Class Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-handwritten.svg" alt="Handwritten: 4.10.3 Exception Class Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-diagram.svg" alt="Diagram: 4.10.3 Exception Class Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-diagram.svg" alt="Diagram: 4.10.3 Exception Class Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-sticky.svg" alt="Sticky Note: 4.10.3 Exception Class Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-3-exception-class-hierarchy-sticky.svg" alt="Sticky Note: 4.10.3 Exception Class Hierarchy" width="30%">
 </a>
 
 
@@ -3296,14 +3296,14 @@ Invalid argument: Age cannot be negative
 
 ### 4.10.4 Game Development Entity Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-handwritten.svg" alt="Handwritten: 4.10.4 Game Development Entity Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-handwritten.svg" alt="Handwritten: 4.10.4 Game Development Entity Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-diagram.svg" alt="Diagram: 4.10.4 Game Development Entity Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-diagram.svg" alt="Diagram: 4.10.4 Game Development Entity Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-sticky.svg" alt="Sticky Note: 4.10.4 Game Development Entity Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-4-game-development-entity-hierarchy-sticky.svg" alt="Sticky Note: 4.10.4 Game Development Entity Hierarchy" width="30%">
 </a>
 
 
@@ -3395,14 +3395,14 @@ int main() {
 
 ### 4.10.5 Device Driver Abstraction
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-handwritten.svg" alt="Handwritten: 4.10.5 Device Driver Abstraction" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-handwritten.svg" alt="Handwritten: 4.10.5 Device Driver Abstraction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-diagram.svg" alt="Diagram: 4.10.5 Device Driver Abstraction" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-diagram.svg" alt="Diagram: 4.10.5 Device Driver Abstraction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-sticky.svg" alt="Sticky Note: 4.10.5 Device Driver Abstraction" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/4-10-5-device-driver-abstraction-sticky.svg" alt="Sticky Note: 4.10.5 Device Driver Abstraction" width="30%">
 </a>
 
 
@@ -3479,14 +3479,14 @@ public:
 
 ### Must-Remember Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-handwritten.svg" alt="Handwritten: Must-Remember Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-handwritten.svg" alt="Handwritten: Must-Remember Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-diagram.svg" alt="Diagram: Must-Remember Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-diagram.svg" alt="Diagram: Must-Remember Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-sticky.svg" alt="Sticky Note: Must-Remember Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/must-remember-rules-sticky.svg" alt="Sticky Note: Must-Remember Rules" width="30%">
 </a>
 
 
@@ -3503,14 +3503,14 @@ public:
 
 ### Common Pitfalls
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
 </a>
 
 
@@ -3526,14 +3526,14 @@ public:
 
 ### Inheritance Design Checklist
 
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-handwritten.svg" alt="Handwritten: Inheritance Design Checklist" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-handwritten.svg" alt="Handwritten: Inheritance Design Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-diagram.svg" alt="Diagram: Inheritance Design Checklist" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-diagram.svg" alt="Diagram: Inheritance Design Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-sticky.svg" alt="Sticky Note: Inheritance Design Checklist" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/04-inheritance/inheritance-design-checklist-sticky.svg" alt="Sticky Note: Inheritance Design Checklist" width="30%">
 </a>
 
 

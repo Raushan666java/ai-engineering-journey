@@ -50,14 +50,14 @@ flowchart LR
 
 ### 5.1 Figure Series
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-handwritten.svg" alt="Handwritten: 5.1 Figure Series" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-handwritten.svg" alt="Handwritten: 5.1 Figure Series" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-diagram.svg" alt="Diagram: 5.1 Figure Series" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-diagram.svg" alt="Diagram: 5.1 Figure Series" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-sticky.svg" alt="Sticky Note: 5.1 Figure Series" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-1-figure-series-sticky.svg" alt="Sticky Note: 5.1 Figure Series" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ A sequence of figures follows a rule or pattern. Identify the next figure.
 
 ### 5.2 Figure Analogy
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-handwritten.svg" alt="Handwritten: 5.2 Figure Analogy" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-handwritten.svg" alt="Handwritten: 5.2 Figure Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-diagram.svg" alt="Diagram: 5.2 Figure Analogy" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-diagram.svg" alt="Diagram: 5.2 Figure Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-sticky.svg" alt="Sticky Note: 5.2 Figure Analogy" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-2-figure-analogy-sticky.svg" alt="Sticky Note: 5.2 Figure Analogy" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ Figure B is related to Figure A in a specific way. Apply the same transformation
 
 ### 5.3 Figure Matrix
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-handwritten.svg" alt="Handwritten: 5.3 Figure Matrix" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-handwritten.svg" alt="Handwritten: 5.3 Figure Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-diagram.svg" alt="Diagram: 5.3 Figure Matrix" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-diagram.svg" alt="Diagram: 5.3 Figure Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-sticky.svg" alt="Sticky Note: 5.3 Figure Matrix" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-3-figure-matrix-sticky.svg" alt="Sticky Note: 5.3 Figure Matrix" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ A 3?3 grid with 8 figures and one missing. Each row (or column) follows a rule.
 
 ### 5.4 Odd One Out
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-handwritten.svg" alt="Handwritten: 5.4 Odd One Out" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-handwritten.svg" alt="Handwritten: 5.4 Odd One Out" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-diagram.svg" alt="Diagram: 5.4 Odd One Out" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-diagram.svg" alt="Diagram: 5.4 Odd One Out" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-sticky.svg" alt="Sticky Note: 5.4 Odd One Out" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-4-odd-one-out-sticky.svg" alt="Sticky Note: 5.4 Odd One Out" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ Four or five figures where one is different from the rest.
 
 ### 5.5 Counting Figures
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-handwritten.svg" alt="Handwritten: 5.5 Counting Figures" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-handwritten.svg" alt="Handwritten: 5.5 Counting Figures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-diagram.svg" alt="Diagram: 5.5 Counting Figures" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-diagram.svg" alt="Diagram: 5.5 Counting Figures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-sticky.svg" alt="Sticky Note: 5.5 Counting Figures" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-5-counting-figures-sticky.svg" alt="Sticky Note: 5.5 Counting Figures" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ Four or five figures where one is different from the rest.
 
 ### 5.6 Embedded Figures
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-handwritten.svg" alt="Handwritten: 5.6 Embedded Figures" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-handwritten.svg" alt="Handwritten: 5.6 Embedded Figures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-diagram.svg" alt="Diagram: 5.6 Embedded Figures" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-diagram.svg" alt="Diagram: 5.6 Embedded Figures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-sticky.svg" alt="Sticky Note: 5.6 Embedded Figures" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-6-embedded-figures-sticky.svg" alt="Sticky Note: 5.6 Embedded Figures" width="30%">
 </a>
 
 
@@ -224,14 +224,14 @@ A complex figure contains a simpler figure hidden within it.
 
 ### 5.7 Mirror and Water Images
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-handwritten.svg" alt="Handwritten: 5.7 Mirror and Water Images" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-handwritten.svg" alt="Handwritten: 5.7 Mirror and Water Images" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-diagram.svg" alt="Diagram: 5.7 Mirror and Water Images" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-diagram.svg" alt="Diagram: 5.7 Mirror and Water Images" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-sticky.svg" alt="Sticky Note: 5.7 Mirror and Water Images" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-7-mirror-and-water-images-sticky.svg" alt="Sticky Note: 5.7 Mirror and Water Images" width="30%">
 </a>
 
 
@@ -271,14 +271,14 @@ A complex figure contains a simpler figure hidden within it.
 
 ### 5.8 Paper Folding
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-handwritten.svg" alt="Handwritten: 5.8 Paper Folding" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-handwritten.svg" alt="Handwritten: 5.8 Paper Folding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-diagram.svg" alt="Diagram: 5.8 Paper Folding" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-diagram.svg" alt="Diagram: 5.8 Paper Folding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-sticky.svg" alt="Sticky Note: 5.8 Paper Folding" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-8-paper-folding-sticky.svg" alt="Sticky Note: 5.8 Paper Folding" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ A paper is folded and cut. Determine how it looks when unfolded.
 
 ### 5.9 Cubes and Dice
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-handwritten.svg" alt="Handwritten: 5.9 Cubes and Dice" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-handwritten.svg" alt="Handwritten: 5.9 Cubes and Dice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-diagram.svg" alt="Diagram: 5.9 Cubes and Dice" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-diagram.svg" alt="Diagram: 5.9 Cubes and Dice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-sticky.svg" alt="Sticky Note: 5.9 Cubes and Dice" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-9-cubes-and-dice-sticky.svg" alt="Sticky Note: 5.9 Cubes and Dice" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ A paper is folded and cut. Determine how it looks when unfolded.
 
 ### 5.10 Venn Diagrams
 
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-handwritten.svg" alt="Handwritten: 5.10 Venn Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-handwritten.svg" alt="Handwritten: 5.10 Venn Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-diagram.svg" alt="Diagram: 5.10 Venn Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-diagram.svg" alt="Diagram: 5.10 Venn Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-sticky.svg" alt="Sticky Note: 5.10 Venn Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-aptitude/05-non-verbal-reasoning/5-10-venn-diagrams-sticky.svg" alt="Sticky Note: 5.10 Venn Diagrams" width="30%">
 </a>
 
 

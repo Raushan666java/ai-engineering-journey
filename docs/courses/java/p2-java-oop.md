@@ -44,14 +44,14 @@ Java is an object-oriented language: every piece of data except primitive types 
 
 ### 1.1 Defining a Class
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-handwritten.svg" alt="Handwritten: 1.1 Defining a Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-handwritten.svg" alt="Handwritten: 1.1 Defining a Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-diagram.svg" alt="Diagram: 1.1 Defining a Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-diagram.svg" alt="Diagram: 1.1 Defining a Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-sticky.svg" alt="Sticky Note: 1.1 Defining a Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-1-defining-a-class-sticky.svg" alt="Sticky Note: 1.1 Defining a Class" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ Fields `name`, `age`, and `studentId` hold the state of each `Student` object. M
 
 ### 1.2 Creating Objects
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-handwritten.svg" alt="Handwritten: 1.2 Creating Objects" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-handwritten.svg" alt="Handwritten: 1.2 Creating Objects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-diagram.svg" alt="Diagram: 1.2 Creating Objects" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-diagram.svg" alt="Diagram: 1.2 Creating Objects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-sticky.svg" alt="Sticky Note: 1.2 Creating Objects" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-2-creating-objects-sticky.svg" alt="Sticky Note: 1.2 Creating Objects" width="30%">
 </a>
 
 
@@ -113,14 +113,14 @@ S1001: Alice (20)
 
 ### 1.3 Constructors
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-handwritten.svg" alt="Handwritten: 1.3 Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-handwritten.svg" alt="Handwritten: 1.3 Constructors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-diagram.svg" alt="Diagram: 1.3 Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-diagram.svg" alt="Diagram: 1.3 Constructors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-sticky.svg" alt="Sticky Note: 1.3 Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-3-constructors-sticky.svg" alt="Sticky Note: 1.3 Constructors" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ public class Student {
 
 ### 1.4 The `this` Keyword
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-handwritten.svg" alt="Handwritten: 1.4 The `this` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-handwritten.svg" alt="Handwritten: 1.4 The `this` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-diagram.svg" alt="Diagram: 1.4 The `this` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-diagram.svg" alt="Diagram: 1.4 The `this` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-sticky.svg" alt="Sticky Note: 1.4 The `this` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-4-the-this-keyword-sticky.svg" alt="Sticky Note: 1.4 The `this` Keyword" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ The first statement in a constructor can call `this(...)` to invoke a sibling co
 
 ### 1.5 Method Overloading
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-handwritten.svg" alt="Handwritten: 1.5 Method Overloading" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-handwritten.svg" alt="Handwritten: 1.5 Method Overloading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-diagram.svg" alt="Diagram: 1.5 Method Overloading" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-diagram.svg" alt="Diagram: 1.5 Method Overloading" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-sticky.svg" alt="Sticky Note: 1.5 Method Overloading" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-5-method-overloading-sticky.svg" alt="Sticky Note: 1.5 Method Overloading" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ Overloading rules: methods must differ in the **number**, **type**, or **order**
 
 ### 1.6 Varargs
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-handwritten.svg" alt="Handwritten: 1.6 Varargs" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-handwritten.svg" alt="Handwritten: 1.6 Varargs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-diagram.svg" alt="Diagram: 1.6 Varargs" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-diagram.svg" alt="Diagram: 1.6 Varargs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-sticky.svg" alt="Sticky Note: 1.6 Varargs" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/1-6-varargs-sticky.svg" alt="Sticky Note: 1.6 Varargs" width="30%">
 </a>
 
 
@@ -299,14 +299,14 @@ Encapsulation hides internal state and requires all interaction to happen throug
 
 ### 2.1 Access Modifiers
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-handwritten.svg" alt="Handwritten: 2.1 Access Modifiers" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-handwritten.svg" alt="Handwritten: 2.1 Access Modifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-diagram.svg" alt="Diagram: 2.1 Access Modifiers" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-diagram.svg" alt="Diagram: 2.1 Access Modifiers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-sticky.svg" alt="Sticky Note: 2.1 Access Modifiers" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-1-access-modifiers-sticky.svg" alt="Sticky Note: 2.1 Access Modifiers" width="30%">
 </a>
 
 
@@ -378,14 +378,14 @@ public class EncapsulationDemo {
 
 ### 2.2 Getters and Setters
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-handwritten.svg" alt="Handwritten: 2.2 Getters and Setters" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-handwritten.svg" alt="Handwritten: 2.2 Getters and Setters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-diagram.svg" alt="Diagram: 2.2 Getters and Setters" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-diagram.svg" alt="Diagram: 2.2 Getters and Setters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-sticky.svg" alt="Sticky Note: 2.2 Getters and Setters" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-2-getters-and-setters-sticky.svg" alt="Sticky Note: 2.2 Getters and Setters" width="30%">
 </a>
 
 
@@ -439,14 +439,14 @@ public class Person {
 
 ### 2.3 JavaBeans Convention
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-handwritten.svg" alt="Handwritten: 2.3 JavaBeans Convention" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-handwritten.svg" alt="Handwritten: 2.3 JavaBeans Convention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-diagram.svg" alt="Diagram: 2.3 JavaBeans Convention" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-diagram.svg" alt="Diagram: 2.3 JavaBeans Convention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-sticky.svg" alt="Sticky Note: 2.3 JavaBeans Convention" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/2-3-javabeans-convention-sticky.svg" alt="Sticky Note: 2.3 JavaBeans Convention" width="30%">
 </a>
 
 
@@ -536,14 +536,14 @@ Inheritance models an **is-a** relationship. A subclass inherits fields and meth
 
 ### 3.1 The `extends` Keyword
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-handwritten.svg" alt="Handwritten: 3.1 The `extends` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-handwritten.svg" alt="Handwritten: 3.1 The `extends` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-diagram.svg" alt="Diagram: 3.1 The `extends` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-diagram.svg" alt="Diagram: 3.1 The `extends` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-sticky.svg" alt="Sticky Note: 3.1 The `extends` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-1-the-extends-keyword-sticky.svg" alt="Sticky Note: 3.1 The `extends` Keyword" width="30%">
 </a>
 
 
@@ -595,14 +595,14 @@ public class InheritanceDemo {
 
 ### 3.2 The `super` Keyword
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-handwritten.svg" alt="Handwritten: 3.2 The `super` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-handwritten.svg" alt="Handwritten: 3.2 The `super` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-diagram.svg" alt="Diagram: 3.2 The `super` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-diagram.svg" alt="Diagram: 3.2 The `super` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-sticky.svg" alt="Sticky Note: 3.2 The `super` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-2-the-super-keyword-sticky.svg" alt="Sticky Note: 3.2 The `super` Keyword" width="30%">
 </a>
 
 
@@ -630,14 +630,14 @@ public class Cat extends Animal {
 
 ### 3.3 Method Overriding
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-handwritten.svg" alt="Handwritten: 3.3 Method Overriding" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-handwritten.svg" alt="Handwritten: 3.3 Method Overriding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-diagram.svg" alt="Diagram: 3.3 Method Overriding" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-diagram.svg" alt="Diagram: 3.3 Method Overriding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-sticky.svg" alt="Sticky Note: 3.3 Method Overriding" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-3-method-overriding-sticky.svg" alt="Sticky Note: 3.3 Method Overriding" width="30%">
 </a>
 
 
@@ -687,14 +687,14 @@ public class Car extends Vehicle {
 
 ### 3.4 The `@Override` Annotation
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-handwritten.svg" alt="Handwritten: 3.4 The `@Override` Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-handwritten.svg" alt="Handwritten: 3.4 The `@Override` Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-diagram.svg" alt="Diagram: 3.4 The `@Override` Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-diagram.svg" alt="Diagram: 3.4 The `@Override` Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-sticky.svg" alt="Sticky Note: 3.4 The `@Override` Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-4-the-override-annotation-sticky.svg" alt="Sticky Note: 3.4 The `@Override` Annotation" width="30%">
 </a>
 
 
@@ -719,14 +719,14 @@ public class Motorcycle extends Vehicle {
 
 ### 3.5 `final` Classes and Methods
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-handwritten.svg" alt="Handwritten: 3.5 `final` Classes and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-handwritten.svg" alt="Handwritten: 3.5 `final` Classes and Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-diagram.svg" alt="Diagram: 3.5 `final` Classes and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-diagram.svg" alt="Diagram: 3.5 `final` Classes and Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-sticky.svg" alt="Sticky Note: 3.5 `final` Classes and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-5-final-classes-and-methods-sticky.svg" alt="Sticky Note: 3.5 `final` Classes and Methods" width="30%">
 </a>
 
 
@@ -771,14 +771,14 @@ public class Child extends Parent {
 
 ### 3.6 `protected` Access in Practice
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-handwritten.svg" alt="Handwritten: 3.6 `protected` Access in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-handwritten.svg" alt="Handwritten: 3.6 `protected` Access in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-diagram.svg" alt="Diagram: 3.6 `protected` Access in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-diagram.svg" alt="Diagram: 3.6 `protected` Access in Practice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-sticky.svg" alt="Sticky Note: 3.6 `protected` Access in Practice" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/3-6-protected-access-in-practice-sticky.svg" alt="Sticky Note: 3.6 `protected` Access in Practice" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@ Polymorphism means "many forms." Java supports two kinds: **compile-time** (meth
 
 ### 4.1 Compile-Time Polymorphism (Overloading)
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-handwritten.svg" alt="Handwritten: 4.1 Compile-Time Polymorphism (Overloading)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-handwritten.svg" alt="Handwritten: 4.1 Compile-Time Polymorphism (Overloading)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-diagram.svg" alt="Diagram: 4.1 Compile-Time Polymorphism (Overloading)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-diagram.svg" alt="Diagram: 4.1 Compile-Time Polymorphism (Overloading)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-sticky.svg" alt="Sticky Note: 4.1 Compile-Time Polymorphism (Overloading)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-1-compile-time-polymorphism-overloading-sticky.svg" alt="Sticky Note: 4.1 Compile-Time Polymorphism (Overloading)" width="30%">
 </a>
 
 
@@ -920,14 +920,14 @@ public class OverloadResolution {
 
 ### 4.2 Runtime Polymorphism (Overriding)
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-handwritten.svg" alt="Handwritten: 4.2 Runtime Polymorphism (Overriding)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-handwritten.svg" alt="Handwritten: 4.2 Runtime Polymorphism (Overriding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-diagram.svg" alt="Diagram: 4.2 Runtime Polymorphism (Overriding)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-diagram.svg" alt="Diagram: 4.2 Runtime Polymorphism (Overriding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-sticky.svg" alt="Sticky Note: 4.2 Runtime Polymorphism (Overriding)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-2-runtime-polymorphism-overriding-sticky.svg" alt="Sticky Note: 4.2 Runtime Polymorphism (Overriding)" width="30%">
 </a>
 
 
@@ -987,14 +987,14 @@ Despite all three references being of type `Payment[]`, the JVM calls the actual
 
 ### 4.3 Covariant Return Types
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-handwritten.svg" alt="Handwritten: 4.3 Covariant Return Types" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-handwritten.svg" alt="Handwritten: 4.3 Covariant Return Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-diagram.svg" alt="Diagram: 4.3 Covariant Return Types" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-diagram.svg" alt="Diagram: 4.3 Covariant Return Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-sticky.svg" alt="Sticky Note: 4.3 Covariant Return Types" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/4-3-covariant-return-types-sticky.svg" alt="Sticky Note: 4.3 Covariant Return Types" width="30%">
 </a>
 
 
@@ -1058,14 +1058,14 @@ An **abstract class** is a class declared with the `abstract` modifier. It may c
 
 ### 5.1 Abstract Methods and Base Implementation
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-handwritten.svg" alt="Handwritten: 5.1 Abstract Methods and Base Implementation" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-handwritten.svg" alt="Handwritten: 5.1 Abstract Methods and Base Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-diagram.svg" alt="Diagram: 5.1 Abstract Methods and Base Implementation" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-diagram.svg" alt="Diagram: 5.1 Abstract Methods and Base Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-sticky.svg" alt="Sticky Note: 5.1 Abstract Methods and Base Implementation" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/5-1-abstract-methods-and-base-implementation-sticky.svg" alt="Sticky Note: 5.1 Abstract Methods and Base Implementation" width="30%">
 </a>
 
 
@@ -1153,14 +1153,14 @@ public class AbstractDemo {
 
 ### 5.2 Abstract Classes vs. Interfaces
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-handwritten.svg" alt="Handwritten: 5.2 Abstract Classes vs. Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-handwritten.svg" alt="Handwritten: 5.2 Abstract Classes vs. Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-diagram.svg" alt="Diagram: 5.2 Abstract Classes vs. Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-diagram.svg" alt="Diagram: 5.2 Abstract Classes vs. Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-sticky.svg" alt="Sticky Note: 5.2 Abstract Classes vs. Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/5-2-abstract-classes-vs-interfaces-sticky.svg" alt="Sticky Note: 5.2 Abstract Classes vs. Interfaces" width="30%">
 </a>
 
 
@@ -1242,14 +1242,14 @@ An **interface** is a reference type that defines a contract: a set of abstract 
 
 ### 6.1 Basic Interface
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-handwritten.svg" alt="Handwritten: 6.1 Basic Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-handwritten.svg" alt="Handwritten: 6.1 Basic Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-diagram.svg" alt="Diagram: 6.1 Basic Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-diagram.svg" alt="Diagram: 6.1 Basic Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-sticky.svg" alt="Sticky Note: 6.1 Basic Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-1-basic-interface-sticky.svg" alt="Sticky Note: 6.1 Basic Interface" width="30%">
 </a>
 
 
@@ -1273,14 +1273,14 @@ public interface Drawable {
 
 ### 6.2 Default Methods
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-handwritten.svg" alt="Handwritten: 6.2 Default Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-handwritten.svg" alt="Handwritten: 6.2 Default Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-diagram.svg" alt="Diagram: 6.2 Default Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-diagram.svg" alt="Diagram: 6.2 Default Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-sticky.svg" alt="Sticky Note: 6.2 Default Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-2-default-methods-sticky.svg" alt="Sticky Note: 6.2 Default Methods" width="30%">
 </a>
 
 
@@ -1334,14 +1334,14 @@ public class Car2 implements Vehicle {
 
 ### 6.3 Static Methods
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-handwritten.svg" alt="Handwritten: 6.3 Static Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-handwritten.svg" alt="Handwritten: 6.3 Static Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-diagram.svg" alt="Diagram: 6.3 Static Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-diagram.svg" alt="Diagram: 6.3 Static Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-sticky.svg" alt="Sticky Note: 6.3 Static Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-3-static-methods-sticky.svg" alt="Sticky Note: 6.3 Static Methods" width="30%">
 </a>
 
 
@@ -1379,14 +1379,14 @@ public class StaticMethodDemo {
 
 ### 6.4 Private Methods
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-handwritten.svg" alt="Handwritten: 6.4 Private Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-handwritten.svg" alt="Handwritten: 6.4 Private Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-diagram.svg" alt="Diagram: 6.4 Private Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-diagram.svg" alt="Diagram: 6.4 Private Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-sticky.svg" alt="Sticky Note: 6.4 Private Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-4-private-methods-sticky.svg" alt="Sticky Note: 6.4 Private Methods" width="30%">
 </a>
 
 
@@ -1415,14 +1415,14 @@ public interface DataProcessor {
 
 ### 6.5 Constants in Interfaces
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-handwritten.svg" alt="Handwritten: 6.5 Constants in Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-handwritten.svg" alt="Handwritten: 6.5 Constants in Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-diagram.svg" alt="Diagram: 6.5 Constants in Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-diagram.svg" alt="Diagram: 6.5 Constants in Interfaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-sticky.svg" alt="Sticky Note: 6.5 Constants in Interfaces" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-5-constants-in-interfaces-sticky.svg" alt="Sticky Note: 6.5 Constants in Interfaces" width="30%">
 </a>
 
 
@@ -1451,14 +1451,14 @@ public class ConstantsDemo {
 
 ### 6.6 Multiple Inheritance of Type
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-handwritten.svg" alt="Handwritten: 6.6 Multiple Inheritance of Type" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-handwritten.svg" alt="Handwritten: 6.6 Multiple Inheritance of Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-diagram.svg" alt="Diagram: 6.6 Multiple Inheritance of Type" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-diagram.svg" alt="Diagram: 6.6 Multiple Inheritance of Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-sticky.svg" alt="Sticky Note: 6.6 Multiple Inheritance of Type" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-6-multiple-inheritance-of-type-sticky.svg" alt="Sticky Note: 6.6 Multiple Inheritance of Type" width="30%">
 </a>
 
 
@@ -1507,14 +1507,14 @@ public class Document implements Readable, Writable, Storable {
 
 ### 6.7 Diamond Problem Resolution
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-handwritten.svg" alt="Handwritten: 6.7 Diamond Problem Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-handwritten.svg" alt="Handwritten: 6.7 Diamond Problem Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-diagram.svg" alt="Diagram: 6.7 Diamond Problem Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-diagram.svg" alt="Diagram: 6.7 Diamond Problem Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-sticky.svg" alt="Sticky Note: 6.7 Diamond Problem Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-7-diamond-problem-resolution-sticky.svg" alt="Sticky Note: 6.7 Diamond Problem Resolution" width="30%">
 </a>
 
 
@@ -1555,14 +1555,14 @@ public class DiamondDemo {
 
 ### 6.8 Functional Interfaces and `@FunctionalInterface`
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-handwritten.svg" alt="Handwritten: 6.8 Functional Interfaces and `@FunctionalInterface`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-handwritten.svg" alt="Handwritten: 6.8 Functional Interfaces and `@FunctionalInterface`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-diagram.svg" alt="Diagram: 6.8 Functional Interfaces and `@FunctionalInterface`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-diagram.svg" alt="Diagram: 6.8 Functional Interfaces and `@FunctionalInterface`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-sticky.svg" alt="Sticky Note: 6.8 Functional Interfaces and `@FunctionalInterface`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/6-8-functional-interfaces-and-functionalinterface-sticky.svg" alt="Sticky Note: 6.8 Functional Interfaces and `@FunctionalInterface`" width="30%">
 </a>
 
 
@@ -1631,14 +1631,14 @@ Common built-in functional interfaces in `java.util.function`:
 
 ### 7.1 Basic Sealed Class
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-handwritten.svg" alt="Handwritten: 7.1 Basic Sealed Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-handwritten.svg" alt="Handwritten: 7.1 Basic Sealed Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-diagram.svg" alt="Diagram: 7.1 Basic Sealed Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-diagram.svg" alt="Diagram: 7.1 Basic Sealed Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-sticky.svg" alt="Sticky Note: 7.1 Basic Sealed Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-1-basic-sealed-class-sticky.svg" alt="Sticky Note: 7.1 Basic Sealed Class" width="30%">
 </a>
 
 
@@ -1703,14 +1703,14 @@ A permitted subclass must be `final`, `sealed`, or `non-sealed`.
 
 ### 7.2 Sealed Interface Hierarchy
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-handwritten.svg" alt="Handwritten: 7.2 Sealed Interface Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-handwritten.svg" alt="Handwritten: 7.2 Sealed Interface Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-diagram.svg" alt="Diagram: 7.2 Sealed Interface Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-diagram.svg" alt="Diagram: 7.2 Sealed Interface Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-sticky.svg" alt="Sticky Note: 7.2 Sealed Interface Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-2-sealed-interface-hierarchy-sticky.svg" alt="Sticky Note: 7.2 Sealed Interface Hierarchy" width="30%">
 </a>
 
 
@@ -1771,14 +1771,14 @@ public final class UpdateUser implements Command {
 
 ### 7.3 Exhaustive `switch` with Sealed Classes
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-handwritten.svg" alt="Handwritten: 7.3 Exhaustive `switch` with Sealed Classes" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-handwritten.svg" alt="Handwritten: 7.3 Exhaustive `switch` with Sealed Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-diagram.svg" alt="Diagram: 7.3 Exhaustive `switch` with Sealed Classes" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-diagram.svg" alt="Diagram: 7.3 Exhaustive `switch` with Sealed Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-sticky.svg" alt="Sticky Note: 7.3 Exhaustive `switch` with Sealed Classes" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/7-3-exhaustive-switch-with-sealed-classes-sticky.svg" alt="Sticky Note: 7.3 Exhaustive `switch` with Sealed Classes" width="30%">
 </a>
 
 
@@ -1826,14 +1826,14 @@ public class SealedTotalDemo {
 
 ### 8.1 Basic Record
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-handwritten.svg" alt="Handwritten: 8.1 Basic Record" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-handwritten.svg" alt="Handwritten: 8.1 Basic Record" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-diagram.svg" alt="Diagram: 8.1 Basic Record" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-diagram.svg" alt="Diagram: 8.1 Basic Record" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-sticky.svg" alt="Sticky Note: 8.1 Basic Record" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-1-basic-record-sticky.svg" alt="Sticky Note: 8.1 Basic Record" width="30%">
 </a>
 
 
@@ -1866,14 +1866,14 @@ public class RecordDemo {
 
 ### 8.2 Canonical and Compact Constructors
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-handwritten.svg" alt="Handwritten: 8.2 Canonical and Compact Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-handwritten.svg" alt="Handwritten: 8.2 Canonical and Compact Constructors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-diagram.svg" alt="Diagram: 8.2 Canonical and Compact Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-diagram.svg" alt="Diagram: 8.2 Canonical and Compact Constructors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-sticky.svg" alt="Sticky Note: 8.2 Canonical and Compact Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-2-canonical-and-compact-constructors-sticky.svg" alt="Sticky Note: 8.2 Canonical and Compact Constructors" width="30%">
 </a>
 
 
@@ -1909,14 +1909,14 @@ public record Person(String name, int age) {
 
 ### 8.3 Custom Methods
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-handwritten.svg" alt="Handwritten: 8.3 Custom Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-handwritten.svg" alt="Handwritten: 8.3 Custom Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-diagram.svg" alt="Diagram: 8.3 Custom Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-diagram.svg" alt="Diagram: 8.3 Custom Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-sticky.svg" alt="Sticky Note: 8.3 Custom Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-3-custom-methods-sticky.svg" alt="Sticky Note: 8.3 Custom Methods" width="30%">
 </a>
 
 
@@ -1982,14 +1982,14 @@ public class RecordMethodsDemo {
 
 ### 8.4 Records with Pattern Matching
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-handwritten.svg" alt="Handwritten: 8.4 Records with Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-handwritten.svg" alt="Handwritten: 8.4 Records with Pattern Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-diagram.svg" alt="Diagram: 8.4 Records with Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-diagram.svg" alt="Diagram: 8.4 Records with Pattern Matching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-sticky.svg" alt="Sticky Note: 8.4 Records with Pattern Matching" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/8-4-records-with-pattern-matching-sticky.svg" alt="Sticky Note: 8.4 Records with Pattern Matching" width="30%">
 </a>
 
 
@@ -2058,14 +2058,14 @@ An **enum** (enumeration) defines a fixed set of named constants. Java's `enum` 
 
 ### 9.1 Basic Enum
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-handwritten.svg" alt="Handwritten: 9.1 Basic Enum" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-handwritten.svg" alt="Handwritten: 9.1 Basic Enum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-diagram.svg" alt="Diagram: 9.1 Basic Enum" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-diagram.svg" alt="Diagram: 9.1 Basic Enum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-sticky.svg" alt="Sticky Note: 9.1 Basic Enum" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-1-basic-enum-sticky.svg" alt="Sticky Note: 9.1 Basic Enum" width="30%">
 </a>
 
 
@@ -2098,14 +2098,14 @@ public class EnumBasicDemo {
 
 ### 9.2 Enum with Fields, Constructors, and Methods
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-handwritten.svg" alt="Handwritten: 9.2 Enum with Fields, Constructors, and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-handwritten.svg" alt="Handwritten: 9.2 Enum with Fields, Constructors, and Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-diagram.svg" alt="Diagram: 9.2 Enum with Fields, Constructors, and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-diagram.svg" alt="Diagram: 9.2 Enum with Fields, Constructors, and Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-sticky.svg" alt="Sticky Note: 9.2 Enum with Fields, Constructors, and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-2-enum-with-fields-constructors-and-methods-sticky.svg" alt="Sticky Note: 9.2 Enum with Fields, Constructors, and Methods" width="30%">
 </a>
 
 
@@ -2164,14 +2164,14 @@ public class EnumPlanetDemo {
 
 ### 9.3 Enum-Specific Body
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-handwritten.svg" alt="Handwritten: 9.3 Enum-Specific Body" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-handwritten.svg" alt="Handwritten: 9.3 Enum-Specific Body" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-diagram.svg" alt="Diagram: 9.3 Enum-Specific Body" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-diagram.svg" alt="Diagram: 9.3 Enum-Specific Body" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-sticky.svg" alt="Sticky Note: 9.3 Enum-Specific Body" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-3-enum-specific-body-sticky.svg" alt="Sticky Note: 9.3 Enum-Specific Body" width="30%">
 </a>
 
 
@@ -2234,14 +2234,14 @@ Output:
 
 ### 9.4 EnumMap
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-handwritten.svg" alt="Handwritten: 9.4 EnumMap" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-handwritten.svg" alt="Handwritten: 9.4 EnumMap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-diagram.svg" alt="Diagram: 9.4 EnumMap" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-diagram.svg" alt="Diagram: 9.4 EnumMap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-sticky.svg" alt="Sticky Note: 9.4 EnumMap" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-4-enummap-sticky.svg" alt="Sticky Note: 9.4 EnumMap" width="30%">
 </a>
 
 
@@ -2274,14 +2274,14 @@ public class EnumMapDemo {
 
 ### 9.5 EnumSet
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-handwritten.svg" alt="Handwritten: 9.5 EnumSet" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-handwritten.svg" alt="Handwritten: 9.5 EnumSet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-diagram.svg" alt="Diagram: 9.5 EnumSet" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-diagram.svg" alt="Diagram: 9.5 EnumSet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-sticky.svg" alt="Sticky Note: 9.5 EnumSet" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/9-5-enumset-sticky.svg" alt="Sticky Note: 9.5 EnumSet" width="30%">
 </a>
 
 
@@ -2333,14 +2333,14 @@ Annotations provide metadata about code. They can influence compilation, generat
 
 ### 10.1 Built-In Standard Annotations
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-handwritten.svg" alt="Handwritten: 10.1 Built-In Standard Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-handwritten.svg" alt="Handwritten: 10.1 Built-In Standard Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-diagram.svg" alt="Diagram: 10.1 Built-In Standard Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-diagram.svg" alt="Diagram: 10.1 Built-In Standard Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-sticky.svg" alt="Sticky Note: 10.1 Built-In Standard Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-1-built-in-standard-annotations-sticky.svg" alt="Sticky Note: 10.1 Built-In Standard Annotations" width="30%">
 </a>
 
 
@@ -2454,14 +2454,14 @@ public class SafeVarargsDemo {
 
 ### 10.2 Custom Annotations
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-handwritten.svg" alt="Handwritten: 10.2 Custom Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-handwritten.svg" alt="Handwritten: 10.2 Custom Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-diagram.svg" alt="Diagram: 10.2 Custom Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-diagram.svg" alt="Diagram: 10.2 Custom Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-sticky.svg" alt="Sticky Note: 10.2 Custom Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-2-custom-annotations-sticky.svg" alt="Sticky Note: 10.2 Custom Annotations" width="30%">
 </a>
 
 
@@ -2498,14 +2498,14 @@ public @interface Column {
 
 ### 10.3 Processing Annotations at Runtime
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-handwritten.svg" alt="Handwritten: 10.3 Processing Annotations at Runtime" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-handwritten.svg" alt="Handwritten: 10.3 Processing Annotations at Runtime" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-diagram.svg" alt="Diagram: 10.3 Processing Annotations at Runtime" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-diagram.svg" alt="Diagram: 10.3 Processing Annotations at Runtime" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-sticky.svg" alt="Sticky Note: 10.3 Processing Annotations at Runtime" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/10-3-processing-annotations-at-runtime-sticky.svg" alt="Sticky Note: 10.3 Processing Annotations at Runtime" width="30%">
 </a>
 
 
@@ -2610,14 +2610,14 @@ A **nested class** is a class defined inside another class. There are four categ
 
 ### 11.1 Static Nested Class
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-handwritten.svg" alt="Handwritten: 11.1 Static Nested Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-handwritten.svg" alt="Handwritten: 11.1 Static Nested Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-diagram.svg" alt="Diagram: 11.1 Static Nested Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-diagram.svg" alt="Diagram: 11.1 Static Nested Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-sticky.svg" alt="Sticky Note: 11.1 Static Nested Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-1-static-nested-class-sticky.svg" alt="Sticky Note: 11.1 Static Nested Class" width="30%">
 </a>
 
 
@@ -2685,14 +2685,14 @@ public class StaticNestedDemo {
 
 ### 11.2 Inner Class (Member Class)
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-handwritten.svg" alt="Handwritten: 11.2 Inner Class (Member Class)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-handwritten.svg" alt="Handwritten: 11.2 Inner Class (Member Class)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-diagram.svg" alt="Diagram: 11.2 Inner Class (Member Class)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-diagram.svg" alt="Diagram: 11.2 Inner Class (Member Class)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-sticky.svg" alt="Sticky Note: 11.2 Inner Class (Member Class)" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-2-inner-class-member-class-sticky.svg" alt="Sticky Note: 11.2 Inner Class (Member Class)" width="30%">
 </a>
 
 
@@ -2767,14 +2767,14 @@ public class InnerClassDemo {
 
 ### 11.3 Local Class
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-handwritten.svg" alt="Handwritten: 11.3 Local Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-handwritten.svg" alt="Handwritten: 11.3 Local Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-diagram.svg" alt="Diagram: 11.3 Local Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-diagram.svg" alt="Diagram: 11.3 Local Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-sticky.svg" alt="Sticky Note: 11.3 Local Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-3-local-class-sticky.svg" alt="Sticky Note: 11.3 Local Class" width="30%">
 </a>
 
 
@@ -2821,14 +2821,14 @@ public class LocalClassDemo {
 
 ### 11.4 Anonymous Class
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-handwritten.svg" alt="Handwritten: 11.4 Anonymous Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-handwritten.svg" alt="Handwritten: 11.4 Anonymous Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-diagram.svg" alt="Diagram: 11.4 Anonymous Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-diagram.svg" alt="Diagram: 11.4 Anonymous Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-sticky.svg" alt="Sticky Note: 11.4 Anonymous Class" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-4-anonymous-class-sticky.svg" alt="Sticky Note: 11.4 Anonymous Class" width="30%">
 </a>
 
 
@@ -2876,14 +2876,14 @@ public class AnonymousClassDemo {
 
 ### 11.5 Anonymous Class vs. Lambda
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-handwritten.svg" alt="Handwritten: 11.5 Anonymous Class vs. Lambda" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-handwritten.svg" alt="Handwritten: 11.5 Anonymous Class vs. Lambda" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-diagram.svg" alt="Diagram: 11.5 Anonymous Class vs. Lambda" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-diagram.svg" alt="Diagram: 11.5 Anonymous Class vs. Lambda" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-sticky.svg" alt="Sticky Note: 11.5 Anonymous Class vs. Lambda" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/11-5-anonymous-class-vs-lambda-sticky.svg" alt="Sticky Note: 11.5 Anonymous Class vs. Lambda" width="30%">
 </a>
 
 
@@ -2929,14 +2929,14 @@ Lambda differences from anonymous classes:
 
 ### 12.1 The `equals`/`hashCode` Contract
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-handwritten.svg" alt="Handwritten: 12.1 The `equals`/`hashCode` Contract" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-handwritten.svg" alt="Handwritten: 12.1 The `equals`/`hashCode` Contract" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-diagram.svg" alt="Diagram: 12.1 The `equals`/`hashCode` Contract" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-diagram.svg" alt="Diagram: 12.1 The `equals`/`hashCode` Contract" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-sticky.svg" alt="Sticky Note: 12.1 The `equals`/`hashCode` Contract" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-1-the-equals-hashcode-contract-sticky.svg" alt="Sticky Note: 12.1 The `equals`/`hashCode` Contract" width="30%">
 </a>
 
 
@@ -3012,14 +3012,14 @@ public class EqualsDemo {
 
 ### 12.2 Best Practices for `equals`
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-handwritten.svg" alt="Handwritten: 12.2 Best Practices for `equals`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-handwritten.svg" alt="Handwritten: 12.2 Best Practices for `equals`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-diagram.svg" alt="Diagram: 12.2 Best Practices for `equals`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-diagram.svg" alt="Diagram: 12.2 Best Practices for `equals`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-sticky.svg" alt="Sticky Note: 12.2 Best Practices for `equals`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-2-best-practices-for-equals-sticky.svg" alt="Sticky Note: 12.2 Best Practices for `equals`" width="30%">
 </a>
 
 
@@ -3065,14 +3065,14 @@ public final class ComplexNumber {
 
 ### 12.3 `toString`
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-handwritten.svg" alt="Handwritten: 12.3 `toString`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-handwritten.svg" alt="Handwritten: 12.3 `toString`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-diagram.svg" alt="Diagram: 12.3 `toString`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-diagram.svg" alt="Diagram: 12.3 `toString`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-sticky.svg" alt="Sticky Note: 12.3 `toString`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-3-tostring-sticky.svg" alt="Sticky Note: 12.3 `toString`" width="30%">
 </a>
 
 
@@ -3112,14 +3112,14 @@ Many build tools (Lombok) and IDEs generate `toString` automatically. Records pr
 
 ### 12.4 `clone`
 
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-4-clone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-4-clone-handwritten.svg" alt="Handwritten: 12.4 `clone`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-4-clone-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-4-clone-handwritten.svg" alt="Handwritten: 12.4 `clone`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-4-clone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-4-clone-diagram.svg" alt="Diagram: 12.4 `clone`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-4-clone-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-4-clone-diagram.svg" alt="Diagram: 12.4 `clone`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/p2-java-oop/12-4-clone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/p2-java-oop/12-4-clone-sticky.svg" alt="Sticky Note: 12.4 `clone`" width="30%">
+<a href="../../../assets/images/diagrams/java/p2-java-oop/12-4-clone-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/p2-java-oop/12-4-clone-sticky.svg" alt="Sticky Note: 12.4 `clone`" width="30%">
 </a>
 
 

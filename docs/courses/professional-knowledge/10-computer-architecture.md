@@ -25,14 +25,14 @@
 
 ### Quick Conversion Table
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-handwritten.svg" alt="Handwritten: Quick Conversion Table" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-handwritten.svg" alt="Handwritten: Quick Conversion Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-diagram.svg" alt="Diagram: Quick Conversion Table" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-diagram.svg" alt="Diagram: Quick Conversion Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-sticky.svg" alt="Sticky Note: Quick Conversion Table" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/quick-conversion-table-sticky.svg" alt="Sticky Note: Quick Conversion Table" width="30%">
 </a>
 
 
@@ -57,14 +57,14 @@
 
 ### Conversion Rules
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-handwritten.svg" alt="Handwritten: Conversion Rules" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-handwritten.svg" alt="Handwritten: Conversion Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-diagram.svg" alt="Diagram: Conversion Rules" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-diagram.svg" alt="Diagram: Conversion Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-sticky.svg" alt="Sticky Note: Conversion Rules" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/conversion-rules-sticky.svg" alt="Sticky Note: Conversion Rules" width="30%">
 </a>
 
 - **Dec → Bin:** Divide by 2, collect remainders (LSB first)
@@ -102,14 +102,14 @@
 
 ### Canonical Forms
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-handwritten.svg" alt="Handwritten: Canonical Forms" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-handwritten.svg" alt="Handwritten: Canonical Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-diagram.svg" alt="Diagram: Canonical Forms" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-diagram.svg" alt="Diagram: Canonical Forms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-sticky.svg" alt="Sticky Note: Canonical Forms" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/canonical-forms-sticky.svg" alt="Sticky Note: Canonical Forms" width="30%">
 </a>
 
 - **SOP (Sum of Products):** OR of AND terms (minterms)
@@ -123,14 +123,14 @@
 
 ### CPU Internal Components
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-handwritten.svg" alt="Handwritten: CPU Internal Components" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-handwritten.svg" alt="Handwritten: CPU Internal Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-diagram.svg" alt="Diagram: CPU Internal Components" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-diagram.svg" alt="Diagram: CPU Internal Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-sticky.svg" alt="Sticky Note: CPU Internal Components" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cpu-internal-components-sticky.svg" alt="Sticky Note: CPU Internal Components" width="30%">
 </a>
 
 | Component | Function |
@@ -143,14 +143,14 @@
 
 ### Register Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-handwritten.svg" alt="Handwritten: Register Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-handwritten.svg" alt="Handwritten: Register Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-diagram.svg" alt="Diagram: Register Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-diagram.svg" alt="Diagram: Register Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-sticky.svg" alt="Sticky Note: Register Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/register-types-sticky.svg" alt="Sticky Note: Register Types" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@
 
 ### Flags Register
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-handwritten.svg" alt="Handwritten: Flags Register" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-handwritten.svg" alt="Handwritten: Flags Register" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-diagram.svg" alt="Diagram: Flags Register" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-diagram.svg" alt="Diagram: Flags Register" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-sticky.svg" alt="Sticky Note: Flags Register" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/flags-register-sticky.svg" alt="Sticky Note: Flags Register" width="30%">
 </a>
 
 | Flag | Meaning | Set when |
@@ -198,14 +198,14 @@
 
 ### Step Details
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-handwritten.svg" alt="Handwritten: Step Details" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-handwritten.svg" alt="Handwritten: Step Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-diagram.svg" alt="Diagram: Step Details" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-diagram.svg" alt="Diagram: Step Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-sticky.svg" alt="Sticky Note: Step Details" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/step-details-sticky.svg" alt="Sticky Note: Step Details" width="30%">
 </a>
 
 1. **Fetch:** IR ← M[PC]; PC ← PC + 4 (32-bit)
@@ -216,14 +216,14 @@
 
 ### Control Unit Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-handwritten.svg" alt="Handwritten: Control Unit Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-handwritten.svg" alt="Handwritten: Control Unit Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-diagram.svg" alt="Diagram: Control Unit Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-diagram.svg" alt="Diagram: Control Unit Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-sticky.svg" alt="Sticky Note: Control Unit Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-unit-types-sticky.svg" alt="Sticky Note: Control Unit Types" width="30%">
 </a>
 
 | Type | Speed | Complexity | Implementation |
@@ -266,14 +266,14 @@
 
 ### Modern Trend: CISC cores with RISC micro-ops
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-handwritten.svg" alt="Handwritten: Modern Trend: CISC cores with RISC micro-ops" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-handwritten.svg" alt="Handwritten: Modern Trend: CISC cores with RISC micro-ops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-diagram.svg" alt="Diagram: Modern Trend: CISC cores with RISC micro-ops" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-diagram.svg" alt="Diagram: Modern Trend: CISC cores with RISC micro-ops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-sticky.svg" alt="Sticky Note: Modern Trend: CISC cores with RISC micro-ops" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/modern-trend-cisc-cores-with-risc-micro-ops-sticky.svg" alt="Sticky Note: Modern Trend: CISC cores with RISC micro-ops" width="30%">
 </a>
 
 Modern x86 processors decode CISC instructions into RISC-like micro-ops internally, combining CISC code density with RISC pipeline efficiency.
@@ -284,14 +284,14 @@ Modern x86 processors decode CISC instructions into RISC-like micro-ops internal
 
 ### Cache Organization
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-handwritten.svg" alt="Handwritten: Cache Organization" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-handwritten.svg" alt="Handwritten: Cache Organization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-diagram.svg" alt="Diagram: Cache Organization" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-diagram.svg" alt="Diagram: Cache Organization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-sticky.svg" alt="Sticky Note: Cache Organization" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-organization-sticky.svg" alt="Sticky Note: Cache Organization" width="30%">
 </a>
 
 ```
@@ -304,14 +304,14 @@ Offset: Selects byte within block
 
 ### Direct Mapping
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-handwritten.svg" alt="Handwritten: Direct Mapping" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-handwritten.svg" alt="Handwritten: Direct Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-diagram.svg" alt="Diagram: Direct Mapping" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-diagram.svg" alt="Diagram: Direct Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-sticky.svg" alt="Sticky Note: Direct Mapping" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/direct-mapping-sticky.svg" alt="Sticky Note: Direct Mapping" width="30%">
 </a>
 
 - Each memory block maps to exactly one cache line
@@ -320,14 +320,14 @@ Offset: Selects byte within block
 
 ### Fully Associative
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-handwritten.svg" alt="Handwritten: Fully Associative" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-handwritten.svg" alt="Handwritten: Fully Associative" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-diagram.svg" alt="Diagram: Fully Associative" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-diagram.svg" alt="Diagram: Fully Associative" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-sticky.svg" alt="Sticky Note: Fully Associative" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/fully-associative-sticky.svg" alt="Sticky Note: Fully Associative" width="30%">
 </a>
 
 - Any memory block can go anywhere in cache
@@ -335,14 +335,14 @@ Offset: Selects byte within block
 
 ### Set-Associative (n-way)
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-handwritten.svg" alt="Handwritten: Set-Associative (n-way)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-handwritten.svg" alt="Handwritten: Set-Associative (n-way)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-diagram.svg" alt="Diagram: Set-Associative (n-way)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-diagram.svg" alt="Diagram: Set-Associative (n-way)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-sticky.svg" alt="Sticky Note: Set-Associative (n-way)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/set-associative-n-way-sticky.svg" alt="Sticky Note: Set-Associative (n-way)" width="30%">
 </a>
 
 - Cache divided into sets; each set has n lines
@@ -352,14 +352,14 @@ Offset: Selects byte within block
 
 ### Numerical Example
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-handwritten.svg" alt="Handwritten: Numerical Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-handwritten.svg" alt="Handwritten: Numerical Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-diagram.svg" alt="Diagram: Numerical Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-diagram.svg" alt="Diagram: Numerical Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-sticky.svg" alt="Sticky Note: Numerical Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/numerical-example-sticky.svg" alt="Sticky Note: Numerical Example" width="30%">
 </a>
 
 **Problem:** 64 KB cache, 16-byte blocks, 32-bit address. Compute for direct, 2-way, 4-way, fully associative.
@@ -376,14 +376,14 @@ Offset: Selects byte within block
 
 ### AMAT (Average Memory Access Time)
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-handwritten.svg" alt="Handwritten: AMAT (Average Memory Access Time)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-handwritten.svg" alt="Handwritten: AMAT (Average Memory Access Time)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-diagram.svg" alt="Diagram: AMAT (Average Memory Access Time)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-diagram.svg" alt="Diagram: AMAT (Average Memory Access Time)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-sticky.svg" alt="Sticky Note: AMAT (Average Memory Access Time)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/amat-average-memory-access-time-sticky.svg" alt="Sticky Note: AMAT (Average Memory Access Time)" width="30%">
 </a>
 
 ```
@@ -402,14 +402,14 @@ AMAT = 2 + 0.05 × 50 = 2 + 2.5 = **4.5 ns**
 
 ### Stages
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-handwritten.svg" alt="Handwritten: Stages" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-handwritten.svg" alt="Handwritten: Stages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-diagram.svg" alt="Diagram: Stages" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-diagram.svg" alt="Diagram: Stages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-sticky.svg" alt="Sticky Note: Stages" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/stages-sticky.svg" alt="Sticky Note: Stages" width="30%">
 </a>
 
 | Stage | Name | Operation |
@@ -422,14 +422,14 @@ AMAT = 2 + 0.05 × 50 = 2 + 2.5 = **4.5 ns**
 
 ### Pipeline Hazards
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-handwritten.svg" alt="Handwritten: Pipeline Hazards" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-handwritten.svg" alt="Handwritten: Pipeline Hazards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-diagram.svg" alt="Diagram: Pipeline Hazards" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-diagram.svg" alt="Diagram: Pipeline Hazards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-sticky.svg" alt="Sticky Note: Pipeline Hazards" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazards-sticky.svg" alt="Sticky Note: Pipeline Hazards" width="30%">
 </a>
 
 
@@ -441,14 +441,14 @@ AMAT = 2 + 0.05 × 50 = 2 + 2.5 = **4.5 ns**
 
 ### Data Hazard Resolution — Forwarding
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-handwritten.svg" alt="Handwritten: Data Hazard Resolution — Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-handwritten.svg" alt="Handwritten: Data Hazard Resolution — Forwarding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-diagram.svg" alt="Diagram: Data Hazard Resolution — Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-diagram.svg" alt="Diagram: Data Hazard Resolution — Forwarding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-sticky.svg" alt="Sticky Note: Data Hazard Resolution — Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/data-hazard-resolution-forwarding-sticky.svg" alt="Sticky Note: Data Hazard Resolution — Forwarding" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ WAW (Write After Write): Output dependency — multiple writes to same register
 
 ### Control Hazard — Branch Penalty
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-handwritten.svg" alt="Handwritten: Control Hazard — Branch Penalty" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-handwritten.svg" alt="Handwritten: Control Hazard — Branch Penalty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-diagram.svg" alt="Diagram: Control Hazard — Branch Penalty" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-diagram.svg" alt="Diagram: Control Hazard — Branch Penalty" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-sticky.svg" alt="Sticky Note: Control Hazard — Branch Penalty" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/control-hazard-branch-penalty-sticky.svg" alt="Sticky Note: Control Hazard — Branch Penalty" width="30%">
 </a>
 
 - **Always-taken:** Predict taken, 1 cycle penalty if wrong
@@ -519,14 +519,14 @@ WAW (Write After Write): Output dependency — multiple writes to same register
 
 ### Locality Principles
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-handwritten.svg" alt="Handwritten: Locality Principles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-handwritten.svg" alt="Handwritten: Locality Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-diagram.svg" alt="Diagram: Locality Principles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-diagram.svg" alt="Diagram: Locality Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-sticky.svg" alt="Sticky Note: Locality Principles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/locality-principles-sticky.svg" alt="Sticky Note: Locality Principles" width="30%">
 </a>
 
 - **Temporal locality:** Recently accessed data will be accessed again soon (loops)
@@ -538,14 +538,14 @@ WAW (Write After Write): Output dependency — multiple writes to same register
 
 ### DMA Transfer Modes
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-handwritten.svg" alt="Handwritten: DMA Transfer Modes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-handwritten.svg" alt="Handwritten: DMA Transfer Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-diagram.svg" alt="Diagram: DMA Transfer Modes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-diagram.svg" alt="Diagram: DMA Transfer Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-sticky.svg" alt="Sticky Note: DMA Transfer Modes" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-transfer-modes-sticky.svg" alt="Sticky Note: DMA Transfer Modes" width="30%">
 </a>
 
 | Mode | Description | Bus Utilization |
@@ -556,14 +556,14 @@ WAW (Write After Write): Output dependency — multiple writes to same register
 
 ### DMA Process
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-handwritten.svg" alt="Handwritten: DMA Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-handwritten.svg" alt="Handwritten: DMA Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-diagram.svg" alt="Diagram: DMA Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-diagram.svg" alt="Diagram: DMA Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-sticky.svg" alt="Sticky Note: DMA Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/dma-process-sticky.svg" alt="Sticky Note: DMA Process" width="30%">
 </a>
 
 1. CPU programs DMA controller: source address, destination address, count
@@ -642,14 +642,14 @@ Let me change the question to match the answer.
 
 ### Cache Mapping Calculator — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-handwritten.svg" alt="Handwritten: Cache Mapping Calculator — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-handwritten.svg" alt="Handwritten: Cache Mapping Calculator — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-diagram.svg" alt="Diagram: Cache Mapping Calculator — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-diagram.svg" alt="Diagram: Cache Mapping Calculator — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-sticky.svg" alt="Sticky Note: Cache Mapping Calculator — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/cache-mapping-calculator-typescript-sticky.svg" alt="Sticky Note: Cache Mapping Calculator — TypeScript" width="30%">
 </a>
 
 
@@ -750,14 +750,14 @@ function simulateCacheAccess(
 
 ### Pipeline Hazard Detector — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-handwritten.svg" alt="Handwritten: Pipeline Hazard Detector — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-handwritten.svg" alt="Handwritten: Pipeline Hazard Detector — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-diagram.svg" alt="Diagram: Pipeline Hazard Detector — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-diagram.svg" alt="Diagram: Pipeline Hazard Detector — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-sticky.svg" alt="Sticky Note: Pipeline Hazard Detector — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/pipeline-hazard-detector-typescript-sticky.svg" alt="Sticky Note: Pipeline Hazard Detector — TypeScript" width="30%">
 </a>
 
 
@@ -865,14 +865,14 @@ class PipelineSimulator {
 
 ### Number System Converter — TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-handwritten.svg" alt="Handwritten: Number System Converter — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-handwritten.svg" alt="Handwritten: Number System Converter — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-diagram.svg" alt="Diagram: Number System Converter — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-diagram.svg" alt="Diagram: Number System Converter — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-sticky.svg" alt="Sticky Note: Number System Converter — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-converter-typescript-sticky.svg" alt="Sticky Note: Number System Converter — TypeScript" width="30%">
 </a>
 
 
@@ -968,14 +968,14 @@ console.log(NumberConverter.fromTwosComplement('11010110')); // -42
 
 ### Floating Point Representation — IEEE 754
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-handwritten.svg" alt="Handwritten: Floating Point Representation — IEEE 754" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-handwritten.svg" alt="Handwritten: Floating Point Representation — IEEE 754" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-diagram.svg" alt="Diagram: Floating Point Representation — IEEE 754" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-diagram.svg" alt="Diagram: Floating Point Representation — IEEE 754" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-sticky.svg" alt="Sticky Note: Floating Point Representation — IEEE 754" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/floating-point-representation-ieee-754-sticky.svg" alt="Sticky Note: Floating Point Representation — IEEE 754" width="30%">
 </a>
 
 
@@ -1012,14 +1012,14 @@ class IEEE754Converter {
 
 ### Number System — Advanced Problems
 
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-handwritten.svg" alt="Handwritten: Number System — Advanced Problems" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-handwritten.svg" alt="Handwritten: Number System — Advanced Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-diagram.svg" alt="Diagram: Number System — Advanced Problems" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-diagram.svg" alt="Diagram: Number System — Advanced Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-sticky.svg" alt="Sticky Note: Number System — Advanced Problems" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/10-computer-architecture/number-system-advanced-problems-sticky.svg" alt="Sticky Note: Number System — Advanced Problems" width="30%">
 </a>
 
 

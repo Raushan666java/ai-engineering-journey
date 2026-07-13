@@ -57,14 +57,14 @@ flowchart LR
 
 ### Basic Usage
 
-<a href="../../assets/images/diagrams/java/24-transactions/basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/basic-usage-handwritten.svg" alt="Handwritten: Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/basic-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/basic-usage-handwritten.svg" alt="Handwritten: Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/basic-usage-diagram.svg" alt="Diagram: Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/basic-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/basic-usage-diagram.svg" alt="Diagram: Basic Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/basic-usage-sticky.svg" alt="Sticky Note: Basic Usage" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/basic-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/basic-usage-sticky.svg" alt="Sticky Note: Basic Usage" width="30%">
 </a>
 
 
@@ -113,14 +113,14 @@ public class PaymentService {
 
 ### How @Transactional Works
 
-<a href="../../assets/images/diagrams/java/24-transactions/how-transactional-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/how-transactional-works-handwritten.svg" alt="Handwritten: How @Transactional Works" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/how-transactional-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/how-transactional-works-handwritten.svg" alt="Handwritten: How @Transactional Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/how-transactional-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/how-transactional-works-diagram.svg" alt="Diagram: How @Transactional Works" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/how-transactional-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/how-transactional-works-diagram.svg" alt="Diagram: How @Transactional Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/how-transactional-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/how-transactional-works-sticky.svg" alt="Sticky Note: How @Transactional Works" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/how-transactional-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/how-transactional-works-sticky.svg" alt="Sticky Note: How @Transactional Works" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ public class SelfInvocationFix {
 
 ### Propagation Behaviors
 
-<a href="../../assets/images/diagrams/java/24-transactions/propagation-behaviors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/propagation-behaviors-handwritten.svg" alt="Handwritten: Propagation Behaviors" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/propagation-behaviors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/propagation-behaviors-handwritten.svg" alt="Handwritten: Propagation Behaviors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/propagation-behaviors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/propagation-behaviors-diagram.svg" alt="Diagram: Propagation Behaviors" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/propagation-behaviors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/propagation-behaviors-diagram.svg" alt="Diagram: Propagation Behaviors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/propagation-behaviors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/propagation-behaviors-sticky.svg" alt="Sticky Note: Propagation Behaviors" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/propagation-behaviors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/propagation-behaviors-sticky.svg" alt="Sticky Note: Propagation Behaviors" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ public class PropagationDemoService {
 
 ### REQUIRES_NEW In-Depth
 
-<a href="../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-handwritten.svg" alt="Handwritten: REQUIRES_NEW In-Depth" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-handwritten.svg" alt="Handwritten: REQUIRES_NEW In-Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-diagram.svg" alt="Diagram: REQUIRES_NEW In-Depth" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-diagram.svg" alt="Diagram: REQUIRES_NEW In-Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-sticky.svg" alt="Sticky Note: REQUIRES_NEW In-Depth" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/requires-new-in-depth-sticky.svg" alt="Sticky Note: REQUIRES_NEW In-Depth" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ public class AuditService {
 
 ### NESTED Behavior with Savepoints
 
-<a href="../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-handwritten.svg" alt="Handwritten: NESTED Behavior with Savepoints" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-handwritten.svg" alt="Handwritten: NESTED Behavior with Savepoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-diagram.svg" alt="Diagram: NESTED Behavior with Savepoints" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-diagram.svg" alt="Diagram: NESTED Behavior with Savepoints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-sticky.svg" alt="Sticky Note: NESTED Behavior with Savepoints" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/nested-behavior-with-savepoints-sticky.svg" alt="Sticky Note: NESTED Behavior with Savepoints" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ public class BulkImportService {
 
 ### Isolation Levels
 
-<a href="../../assets/images/diagrams/java/24-transactions/isolation-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/isolation-levels-handwritten.svg" alt="Handwritten: Isolation Levels" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/isolation-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/isolation-levels-handwritten.svg" alt="Handwritten: Isolation Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/isolation-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/isolation-levels-diagram.svg" alt="Diagram: Isolation Levels" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/isolation-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/isolation-levels-diagram.svg" alt="Diagram: Isolation Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/isolation-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/isolation-levels-sticky.svg" alt="Sticky Note: Isolation Levels" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/isolation-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/isolation-levels-sticky.svg" alt="Sticky Note: Isolation Levels" width="30%">
 </a>
 
 
@@ -470,14 +470,14 @@ public class InventoryService {
 
 ### rollbackFor and noRollbackFor
 
-<a href="../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-handwritten.svg" alt="Handwritten: rollbackFor and noRollbackFor" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-handwritten.svg" alt="Handwritten: rollbackFor and noRollbackFor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-diagram.svg" alt="Diagram: rollbackFor and noRollbackFor" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-diagram.svg" alt="Diagram: rollbackFor and noRollbackFor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-sticky.svg" alt="Sticky Note: rollbackFor and noRollbackFor" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/rollbackfor-and-norollbackfor-sticky.svg" alt="Sticky Note: rollbackFor and noRollbackFor" width="30%">
 </a>
 
 
@@ -528,14 +528,14 @@ public class RollbackControlService {
 
 ### readOnly Flag
 
-<a href="../../assets/images/diagrams/java/24-transactions/readonly-flag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/readonly-flag-handwritten.svg" alt="Handwritten: readOnly Flag" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/readonly-flag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/readonly-flag-handwritten.svg" alt="Handwritten: readOnly Flag" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/readonly-flag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/readonly-flag-diagram.svg" alt="Diagram: readOnly Flag" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/readonly-flag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/readonly-flag-diagram.svg" alt="Diagram: readOnly Flag" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/readonly-flag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/readonly-flag-sticky.svg" alt="Sticky Note: readOnly Flag" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/readonly-flag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/readonly-flag-sticky.svg" alt="Sticky Note: readOnly Flag" width="30%">
 </a>
 
 
@@ -584,14 +584,14 @@ public class ReadOnlyDemoService {
 
 ### timeout
 
-<a href="../../assets/images/diagrams/java/24-transactions/timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/timeout-handwritten.svg" alt="Handwritten: timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/timeout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/timeout-handwritten.svg" alt="Handwritten: timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/timeout-diagram.svg" alt="Diagram: timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/timeout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/timeout-diagram.svg" alt="Diagram: timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/timeout-sticky.svg" alt="Sticky Note: timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/timeout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/timeout-sticky.svg" alt="Sticky Note: timeout" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ public class TimeoutDemoService {
 
 ### Complete @Transactional Example
 
-<a href="../../assets/images/diagrams/java/24-transactions/complete-transactional-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/complete-transactional-example-handwritten.svg" alt="Handwritten: Complete @Transactional Example" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/complete-transactional-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/complete-transactional-example-handwritten.svg" alt="Handwritten: Complete @Transactional Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/complete-transactional-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/complete-transactional-example-diagram.svg" alt="Diagram: Complete @Transactional Example" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/complete-transactional-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/complete-transactional-example-diagram.svg" alt="Diagram: Complete @Transactional Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/complete-transactional-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/complete-transactional-example-sticky.svg" alt="Sticky Note: Complete @Transactional Example" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/complete-transactional-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/complete-transactional-example-sticky.svg" alt="Sticky Note: Complete @Transactional Example" width="30%">
 </a>
 
 
@@ -735,14 +735,14 @@ When you need fine-grained control over transaction boundaries Ã¢â‚¬â€�
 
 ### Basic TransactionTemplate
 
-<a href="../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-handwritten.svg" alt="Handwritten: Basic TransactionTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-handwritten.svg" alt="Handwritten: Basic TransactionTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-diagram.svg" alt="Diagram: Basic TransactionTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-diagram.svg" alt="Diagram: Basic TransactionTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-sticky.svg" alt="Sticky Note: Basic TransactionTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/basic-transactiontemplate-sticky.svg" alt="Sticky Note: Basic TransactionTemplate" width="30%">
 </a>
 
 
@@ -809,14 +809,14 @@ public class TransactionTemplateService {
 
 ### TransactionCallback with Return Value
 
-<a href="../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-handwritten.svg" alt="Handwritten: TransactionCallback with Return Value" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-handwritten.svg" alt="Handwritten: TransactionCallback with Return Value" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-diagram.svg" alt="Diagram: TransactionCallback with Return Value" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-diagram.svg" alt="Diagram: TransactionCallback with Return Value" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-sticky.svg" alt="Sticky Note: TransactionCallback with Return Value" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactioncallback-with-return-value-sticky.svg" alt="Sticky Note: TransactionCallback with Return Value" width="30%">
 </a>
 
 
@@ -872,14 +872,14 @@ public class TransactionCallbackService {
 
 ### Lambda Syntax
 
-<a href="../../assets/images/diagrams/java/24-transactions/lambda-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lambda-syntax-handwritten.svg" alt="Handwritten: Lambda Syntax" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lambda-syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lambda-syntax-handwritten.svg" alt="Handwritten: Lambda Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lambda-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lambda-syntax-diagram.svg" alt="Diagram: Lambda Syntax" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lambda-syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lambda-syntax-diagram.svg" alt="Diagram: Lambda Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lambda-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lambda-syntax-sticky.svg" alt="Sticky Note: Lambda Syntax" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lambda-syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lambda-syntax-sticky.svg" alt="Sticky Note: Lambda Syntax" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ public class LambdaTransactionService {
 
 ### Per-Item Transactions with TransactionTemplate
 
-<a href="../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-handwritten.svg" alt="Handwritten: Per-Item Transactions with TransactionTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-handwritten.svg" alt="Handwritten: Per-Item Transactions with TransactionTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-diagram.svg" alt="Diagram: Per-Item Transactions with TransactionTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-diagram.svg" alt="Diagram: Per-Item Transactions with TransactionTemplate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-sticky.svg" alt="Sticky Note: Per-Item Transactions with TransactionTemplate" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/per-item-transactions-with-transactiontemplate-sticky.svg" alt="Sticky Note: Per-Item Transactions with TransactionTemplate" width="30%">
 </a>
 
 
@@ -993,14 +993,14 @@ public class PerItemTransactionService {
 
 ### Dynamic Transaction Attributes
 
-<a href="../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-handwritten.svg" alt="Handwritten: Dynamic Transaction Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-handwritten.svg" alt="Handwritten: Dynamic Transaction Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-diagram.svg" alt="Diagram: Dynamic Transaction Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-diagram.svg" alt="Diagram: Dynamic Transaction Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-sticky.svg" alt="Sticky Note: Dynamic Transaction Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/dynamic-transaction-attributes-sticky.svg" alt="Sticky Note: Dynamic Transaction Attributes" width="30%">
 </a>
 
 
@@ -1093,14 +1093,14 @@ Spring's `PlatformTransactionManager` is the strategy interface that all transac
 
 ### Interface Hierarchy
 
-<a href="../../assets/images/diagrams/java/24-transactions/interface-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/interface-hierarchy-handwritten.svg" alt="Handwritten: Interface Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/interface-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/interface-hierarchy-handwritten.svg" alt="Handwritten: Interface Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/interface-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/interface-hierarchy-diagram.svg" alt="Diagram: Interface Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/interface-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/interface-hierarchy-diagram.svg" alt="Diagram: Interface Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/interface-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/interface-hierarchy-sticky.svg" alt="Sticky Note: Interface Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/interface-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/interface-hierarchy-sticky.svg" alt="Sticky Note: Interface Hierarchy" width="30%">
 </a>
 
 
@@ -1118,14 +1118,14 @@ PlatformTransactionManager
 
 ### DataSourceTransactionManager
 
-<a href="../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-handwritten.svg" alt="Handwritten: DataSourceTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-handwritten.svg" alt="Handwritten: DataSourceTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-diagram.svg" alt="Diagram: DataSourceTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-diagram.svg" alt="Diagram: DataSourceTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-sticky.svg" alt="Sticky Note: DataSourceTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/datasourcetransactionmanager-sticky.svg" alt="Sticky Note: DataSourceTransactionManager" width="30%">
 </a>
 
 
@@ -1155,14 +1155,14 @@ public class DataSourceTxConfig {
 
 ### JpaTransactionManager
 
-<a href="../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-handwritten.svg" alt="Handwritten: JpaTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-handwritten.svg" alt="Handwritten: JpaTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-diagram.svg" alt="Diagram: JpaTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-diagram.svg" alt="Diagram: JpaTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-sticky.svg" alt="Sticky Note: JpaTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jpatransactionmanager-sticky.svg" alt="Sticky Note: JpaTransactionManager" width="30%">
 </a>
 
 
@@ -1190,14 +1190,14 @@ public class JpaTxConfig {
 
 ### JtaTransactionManager
 
-<a href="../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-handwritten.svg" alt="Handwritten: JtaTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-handwritten.svg" alt="Handwritten: JtaTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-diagram.svg" alt="Diagram: JtaTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-diagram.svg" alt="Diagram: JtaTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-sticky.svg" alt="Sticky Note: JtaTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jtatransactionmanager-sticky.svg" alt="Sticky Note: JtaTransactionManager" width="30%">
 </a>
 
 
@@ -1232,14 +1232,14 @@ public class JtaTxConfig {
 
 ### ChainedTransactionManager
 
-<a href="../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-handwritten.svg" alt="Handwritten: ChainedTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-handwritten.svg" alt="Handwritten: ChainedTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-diagram.svg" alt="Diagram: ChainedTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-diagram.svg" alt="Diagram: ChainedTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-sticky.svg" alt="Sticky Note: ChainedTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/chainedtransactionmanager-sticky.svg" alt="Sticky Note: ChainedTransactionManager" width="30%">
 </a>
 
 
@@ -1276,14 +1276,14 @@ public class ChainedTxConfig {
 
 ### Custom PlatformTransactionManager
 
-<a href="../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-handwritten.svg" alt="Handwritten: Custom PlatformTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-handwritten.svg" alt="Handwritten: Custom PlatformTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-diagram.svg" alt="Diagram: Custom PlatformTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-diagram.svg" alt="Diagram: Custom PlatformTransactionManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-sticky.svg" alt="Sticky Note: Custom PlatformTransactionManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/custom-platformtransactionmanager-sticky.svg" alt="Sticky Note: Custom PlatformTransactionManager" width="30%">
 </a>
 
 
@@ -1395,14 +1395,14 @@ Spring's transaction synchronization allows you to register callbacks that execu
 
 ### @TransactionalEventListener
 
-<a href="../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-handwritten.svg" alt="Handwritten: @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-handwritten.svg" alt="Handwritten: @TransactionalEventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-diagram.svg" alt="Diagram: @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-diagram.svg" alt="Diagram: @TransactionalEventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-sticky.svg" alt="Sticky Note: @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactionaleventlistener-sticky.svg" alt="Sticky Note: @TransactionalEventListener" width="30%">
 </a>
 
 
@@ -1456,14 +1456,14 @@ public class OrderEventListeners {
 
 ### TransactionSynchronizationManager
 
-<a href="../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-handwritten.svg" alt="Handwritten: TransactionSynchronizationManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-handwritten.svg" alt="Handwritten: TransactionSynchronizationManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-diagram.svg" alt="Diagram: TransactionSynchronizationManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-diagram.svg" alt="Diagram: TransactionSynchronizationManager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-sticky.svg" alt="Sticky Note: TransactionSynchronizationManager" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transactionsynchronizationmanager-sticky.svg" alt="Sticky Note: TransactionSynchronizationManager" width="30%">
 </a>
 
 
@@ -1546,14 +1546,14 @@ public class TransactionContextService {
 
 ### Registering Synchronization from @Transactional Methods
 
-<a href="../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-handwritten.svg" alt="Handwritten: Registering Synchronization from @Transactional Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-handwritten.svg" alt="Handwritten: Registering Synchronization from @Transactional Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-diagram.svg" alt="Diagram: Registering Synchronization from @Transactional Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-diagram.svg" alt="Diagram: Registering Synchronization from @Transactional Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-sticky.svg" alt="Sticky Note: Registering Synchronization from @Transactional Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/registering-synchronization-from-transactional-methods-sticky.svg" alt="Sticky Note: Registering Synchronization from @Transactional Methods" width="30%">
 </a>
 
 
@@ -1590,14 +1590,14 @@ public class SynchronizationRegistrationService {
 
 ### Resource Binding
 
-<a href="../../assets/images/diagrams/java/24-transactions/resource-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/resource-binding-handwritten.svg" alt="Handwritten: Resource Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/resource-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/resource-binding-handwritten.svg" alt="Handwritten: Resource Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/resource-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/resource-binding-diagram.svg" alt="Diagram: Resource Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/resource-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/resource-binding-diagram.svg" alt="Diagram: Resource Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/resource-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/resource-binding-sticky.svg" alt="Sticky Note: Resource Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/resource-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/resource-binding-sticky.svg" alt="Sticky Note: Resource Binding" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ When an operation spans multiple databases, message brokers, or services, a loca
 
 ### JTA and the Two-Phase Commit Protocol
 
-<a href="../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-handwritten.svg" alt="Handwritten: JTA and the Two-Phase Commit Protocol" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-handwritten.svg" alt="Handwritten: JTA and the Two-Phase Commit Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-diagram.svg" alt="Diagram: JTA and the Two-Phase Commit Protocol" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-diagram.svg" alt="Diagram: JTA and the Two-Phase Commit Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-sticky.svg" alt="Sticky Note: JTA and the Two-Phase Commit Protocol" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/jta-and-the-two-phase-commit-protocol-sticky.svg" alt="Sticky Note: JTA and the Two-Phase Commit Protocol" width="30%">
 </a>
 
 
@@ -1867,14 +1867,14 @@ public class JtaDemoService {
 
 ### Atomikos Configuration
 
-<a href="../../assets/images/diagrams/java/24-transactions/atomikos-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/atomikos-configuration-handwritten.svg" alt="Handwritten: Atomikos Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/atomikos-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/atomikos-configuration-handwritten.svg" alt="Handwritten: Atomikos Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/atomikos-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/atomikos-configuration-diagram.svg" alt="Diagram: Atomikos Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/atomikos-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/atomikos-configuration-diagram.svg" alt="Diagram: Atomikos Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/atomikos-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/atomikos-configuration-sticky.svg" alt="Sticky Note: Atomikos Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/atomikos-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/atomikos-configuration-sticky.svg" alt="Sticky Note: Atomikos Configuration" width="30%">
 </a>
 
 
@@ -1961,14 +1961,14 @@ public class AtomikosConfig {
 
 ### Narayana Configuration
 
-<a href="../../assets/images/diagrams/java/24-transactions/narayana-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/narayana-configuration-handwritten.svg" alt="Handwritten: Narayana Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/narayana-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/narayana-configuration-handwritten.svg" alt="Handwritten: Narayana Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/narayana-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/narayana-configuration-diagram.svg" alt="Diagram: Narayana Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/narayana-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/narayana-configuration-diagram.svg" alt="Diagram: Narayana Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/narayana-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/narayana-configuration-sticky.svg" alt="Sticky Note: Narayana Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/narayana-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/narayana-configuration-sticky.svg" alt="Sticky Note: Narayana Configuration" width="30%">
 </a>
 
 
@@ -2000,14 +2000,14 @@ public class NarayanaConfig {
 
 ### Limitations of 2PC / XA
 
-<a href="../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-handwritten.svg" alt="Handwritten: Limitations of 2PC / XA" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-handwritten.svg" alt="Handwritten: Limitations of 2PC / XA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-diagram.svg" alt="Diagram: Limitations of 2PC / XA" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-diagram.svg" alt="Diagram: Limitations of 2PC / XA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-sticky.svg" alt="Sticky Note: Limitations of 2PC / XA" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/limitations-of-2pc-xa-sticky.svg" alt="Sticky Note: Limitations of 2PC / XA" width="30%">
 </a>
 
 
@@ -2050,14 +2050,14 @@ The Saga pattern manages distributed transactions across microservices without 2
 
 ### Choreography Saga
 
-<a href="../../assets/images/diagrams/java/24-transactions/choreography-saga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/choreography-saga-handwritten.svg" alt="Handwritten: Choreography Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/choreography-saga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/choreography-saga-handwritten.svg" alt="Handwritten: Choreography Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/choreography-saga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/choreography-saga-diagram.svg" alt="Diagram: Choreography Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/choreography-saga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/choreography-saga-diagram.svg" alt="Diagram: Choreography Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/choreography-saga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/choreography-saga-sticky.svg" alt="Sticky Note: Choreography Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/choreography-saga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/choreography-saga-sticky.svg" alt="Sticky Note: Choreography Saga" width="30%">
 </a>
 
 
@@ -2178,14 +2178,14 @@ public class InventorySagaService {
 
 ### Orchestration Saga
 
-<a href="../../assets/images/diagrams/java/24-transactions/orchestration-saga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/orchestration-saga-handwritten.svg" alt="Handwritten: Orchestration Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/orchestration-saga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/orchestration-saga-handwritten.svg" alt="Handwritten: Orchestration Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/orchestration-saga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/orchestration-saga-diagram.svg" alt="Diagram: Orchestration Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/orchestration-saga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/orchestration-saga-diagram.svg" alt="Diagram: Orchestration Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/orchestration-saga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/orchestration-saga-sticky.svg" alt="Sticky Note: Orchestration Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/orchestration-saga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/orchestration-saga-sticky.svg" alt="Sticky Note: Orchestration Saga" width="30%">
 </a>
 
 
@@ -2284,14 +2284,14 @@ public class OrderSagaCoordinator {
 
 ### Saga with Kafka
 
-<a href="../../assets/images/diagrams/java/24-transactions/saga-with-kafka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/saga-with-kafka-handwritten.svg" alt="Handwritten: Saga with Kafka" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/saga-with-kafka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/saga-with-kafka-handwritten.svg" alt="Handwritten: Saga with Kafka" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/saga-with-kafka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/saga-with-kafka-diagram.svg" alt="Diagram: Saga with Kafka" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/saga-with-kafka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/saga-with-kafka-diagram.svg" alt="Diagram: Saga with Kafka" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/saga-with-kafka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/saga-with-kafka-sticky.svg" alt="Sticky Note: Saga with Kafka" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/saga-with-kafka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/saga-with-kafka-sticky.svg" alt="Sticky Note: Saga with Kafka" width="30%">
 </a>
 
 
@@ -2467,14 +2467,14 @@ public class KafkaSagaCoordinator {
 
 ### Compensating Transaction Pattern
 
-<a href="../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-handwritten.svg" alt="Handwritten: Compensating Transaction Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-handwritten.svg" alt="Handwritten: Compensating Transaction Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-diagram.svg" alt="Diagram: Compensating Transaction Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-diagram.svg" alt="Diagram: Compensating Transaction Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-sticky.svg" alt="Sticky Note: Compensating Transaction Pattern" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/compensating-transaction-pattern-sticky.svg" alt="Sticky Note: Compensating Transaction Pattern" width="30%">
 </a>
 
 
@@ -2546,14 +2546,14 @@ public class CompensatingActionService {
 
 ### Eventuate Tram
 
-<a href="../../assets/images/diagrams/java/24-transactions/eventuate-tram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/eventuate-tram-handwritten.svg" alt="Handwritten: Eventuate Tram" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/eventuate-tram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/eventuate-tram-handwritten.svg" alt="Handwritten: Eventuate Tram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/eventuate-tram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/eventuate-tram-diagram.svg" alt="Diagram: Eventuate Tram" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/eventuate-tram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/eventuate-tram-diagram.svg" alt="Diagram: Eventuate Tram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/eventuate-tram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/eventuate-tram-sticky.svg" alt="Sticky Note: Eventuate Tram" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/eventuate-tram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/eventuate-tram-sticky.svg" alt="Sticky Note: Eventuate Tram" width="30%">
 </a>
 
 
@@ -2613,14 +2613,14 @@ public class OrderFulfillmentSaga implements SimpleSaga<OrderSagaData> {
 
 ### Axon Saga
 
-<a href="../../assets/images/diagrams/java/24-transactions/axon-saga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/axon-saga-handwritten.svg" alt="Handwritten: Axon Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/axon-saga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/axon-saga-handwritten.svg" alt="Handwritten: Axon Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/axon-saga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/axon-saga-diagram.svg" alt="Diagram: Axon Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/axon-saga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/axon-saga-diagram.svg" alt="Diagram: Axon Saga" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/axon-saga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/axon-saga-sticky.svg" alt="Sticky Note: Axon Saga" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/axon-saga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/axon-saga-sticky.svg" alt="Sticky Note: Axon Saga" width="30%">
 </a>
 
 
@@ -2692,14 +2692,14 @@ public class OrderSaga {
 
 ### Saga with REST Callbacks
 
-<a href="../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-handwritten.svg" alt="Handwritten: Saga with REST Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-handwritten.svg" alt="Handwritten: Saga with REST Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-diagram.svg" alt="Diagram: Saga with REST Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-diagram.svg" alt="Diagram: Saga with REST Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-sticky.svg" alt="Sticky Note: Saga with REST Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/saga-with-rest-callbacks-sticky.svg" alt="Sticky Note: Saga with REST Callbacks" width="30%">
 </a>
 
 
@@ -2842,14 +2842,14 @@ Pessimistic locking acquires a database lock on the data before any operation, p
 
 ### @Lock Annotations
 
-<a href="../../assets/images/diagrams/java/24-transactions/lock-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-annotations-handwritten.svg" alt="Handwritten: @Lock Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-annotations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-annotations-handwritten.svg" alt="Handwritten: @Lock Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lock-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-annotations-diagram.svg" alt="Diagram: @Lock Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-annotations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-annotations-diagram.svg" alt="Diagram: @Lock Annotations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lock-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-annotations-sticky.svg" alt="Sticky Note: @Lock Annotations" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-annotations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-annotations-sticky.svg" alt="Sticky Note: @Lock Annotations" width="30%">
 </a>
 
 
@@ -2895,14 +2895,14 @@ public interface AccountLockingRepository extends JpaRepository<Account, Long> {
 
 ### Lock Modes
 
-<a href="../../assets/images/diagrams/java/24-transactions/lock-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-modes-handwritten.svg" alt="Handwritten: Lock Modes" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-modes-handwritten.svg" alt="Handwritten: Lock Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lock-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-modes-diagram.svg" alt="Diagram: Lock Modes" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-modes-diagram.svg" alt="Diagram: Lock Modes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lock-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-modes-sticky.svg" alt="Sticky Note: Lock Modes" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-modes-sticky.svg" alt="Sticky Note: Lock Modes" width="30%">
 </a>
 
 
@@ -2914,14 +2914,14 @@ public interface AccountLockingRepository extends JpaRepository<Account, Long> {
 
 ### Pessimistic Locking in a Service
 
-<a href="../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-handwritten.svg" alt="Handwritten: Pessimistic Locking in a Service" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-handwritten.svg" alt="Handwritten: Pessimistic Locking in a Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-diagram.svg" alt="Diagram: Pessimistic Locking in a Service" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-diagram.svg" alt="Diagram: Pessimistic Locking in a Service" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-sticky.svg" alt="Sticky Note: Pessimistic Locking in a Service" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/pessimistic-locking-in-a-service-sticky.svg" alt="Sticky Note: Pessimistic Locking in a Service" width="30%">
 </a>
 
 
@@ -2975,14 +2975,14 @@ public class PessimisticLockingService {
 
 ### Lock Timeout
 
-<a href="../../assets/images/diagrams/java/24-transactions/lock-timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-timeout-handwritten.svg" alt="Handwritten: Lock Timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-timeout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-timeout-handwritten.svg" alt="Handwritten: Lock Timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lock-timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-timeout-diagram.svg" alt="Diagram: Lock Timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-timeout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-timeout-diagram.svg" alt="Diagram: Lock Timeout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/lock-timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/lock-timeout-sticky.svg" alt="Sticky Note: Lock Timeout" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/lock-timeout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/lock-timeout-sticky.svg" alt="Sticky Note: Lock Timeout" width="30%">
 </a>
 
 
@@ -3030,14 +3030,14 @@ public class LockTimeoutService {
 
 ### Deadlock Handling
 
-<a href="../../assets/images/diagrams/java/24-transactions/deadlock-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/deadlock-handling-handwritten.svg" alt="Handwritten: Deadlock Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/deadlock-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/deadlock-handling-handwritten.svg" alt="Handwritten: Deadlock Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/deadlock-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/deadlock-handling-diagram.svg" alt="Diagram: Deadlock Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/deadlock-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/deadlock-handling-diagram.svg" alt="Diagram: Deadlock Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/deadlock-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/deadlock-handling-sticky.svg" alt="Sticky Note: Deadlock Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/deadlock-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/deadlock-handling-sticky.svg" alt="Sticky Note: Deadlock Handling" width="30%">
 </a>
 
 
@@ -3119,14 +3119,14 @@ public class DeadlockResilientService {
 
 ### Deadlock Prevention Strategy
 
-<a href="../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-handwritten.svg" alt="Handwritten: Deadlock Prevention Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-handwritten.svg" alt="Handwritten: Deadlock Prevention Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-diagram.svg" alt="Diagram: Deadlock Prevention Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-diagram.svg" alt="Diagram: Deadlock Prevention Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-sticky.svg" alt="Sticky Note: Deadlock Prevention Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/deadlock-prevention-strategy-sticky.svg" alt="Sticky Note: Deadlock Prevention Strategy" width="30%">
 </a>
 
 
@@ -3206,14 +3206,14 @@ Optimistic locking assumes conflicts are rare. Instead of acquiring locks upfron
 
 ### @Version
 
-<a href="../../assets/images/diagrams/java/24-transactions/version-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/version-handwritten.svg" alt="Handwritten: @Version" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/version-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/version-handwritten.svg" alt="Handwritten: @Version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/version-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/version-diagram.svg" alt="Diagram: @Version" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/version-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/version-diagram.svg" alt="Diagram: @Version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/version-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/version-sticky.svg" alt="Sticky Note: @Version" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/version-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/version-sticky.svg" alt="Sticky Note: @Version" width="30%">
 </a>
 
 
@@ -3274,14 +3274,14 @@ public class Account {
 
 ### How Version Checking Works
 
-<a href="../../assets/images/diagrams/java/24-transactions/how-version-checking-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/how-version-checking-works-handwritten.svg" alt="Handwritten: How Version Checking Works" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/how-version-checking-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/how-version-checking-works-handwritten.svg" alt="Handwritten: How Version Checking Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/how-version-checking-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/how-version-checking-works-diagram.svg" alt="Diagram: How Version Checking Works" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/how-version-checking-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/how-version-checking-works-diagram.svg" alt="Diagram: How Version Checking Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/how-version-checking-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/how-version-checking-works-sticky.svg" alt="Sticky Note: How Version Checking Works" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/how-version-checking-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/how-version-checking-works-sticky.svg" alt="Sticky Note: How Version Checking Works" width="30%">
 </a>
 
 
@@ -3301,14 +3301,14 @@ WHERE id = 1 AND version = 5;
 
 ### OptimisticLockException Handling
 
-<a href="../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-handwritten.svg" alt="Handwritten: OptimisticLockException Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-handwritten.svg" alt="Handwritten: OptimisticLockException Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-diagram.svg" alt="Diagram: OptimisticLockException Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-diagram.svg" alt="Diagram: OptimisticLockException Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-sticky.svg" alt="Sticky Note: OptimisticLockException Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/optimisticlockexception-handling-sticky.svg" alt="Sticky Note: OptimisticLockException Handling" width="30%">
 </a>
 
 
@@ -3352,14 +3352,14 @@ public class OptimisticLockingService {
 
 ### Retry Pattern for Optimistic Locking
 
-<a href="../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-handwritten.svg" alt="Handwritten: Retry Pattern for Optimistic Locking" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-handwritten.svg" alt="Handwritten: Retry Pattern for Optimistic Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-diagram.svg" alt="Diagram: Retry Pattern for Optimistic Locking" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-diagram.svg" alt="Diagram: Retry Pattern for Optimistic Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-sticky.svg" alt="Sticky Note: Retry Pattern for Optimistic Locking" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/retry-pattern-for-optimistic-locking-sticky.svg" alt="Sticky Note: Retry Pattern for Optimistic Locking" width="30%">
 </a>
 
 
@@ -3434,14 +3434,14 @@ public class RetryOptimisticLockingService {
 
 ### Version Management in REST Controllers
 
-<a href="../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-handwritten.svg" alt="Handwritten: Version Management in REST Controllers" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-handwritten.svg" alt="Handwritten: Version Management in REST Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-diagram.svg" alt="Diagram: Version Management in REST Controllers" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-diagram.svg" alt="Diagram: Version Management in REST Controllers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-sticky.svg" alt="Sticky Note: Version Management in REST Controllers" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/version-management-in-rest-controllers-sticky.svg" alt="Sticky Note: Version Management in REST Controllers" width="30%">
 </a>
 
 
@@ -3503,14 +3503,14 @@ public class AccountController {
 
 ### Optimistic vs Pessimistic Comparison
 
-<a href="../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-handwritten.svg" alt="Handwritten: Optimistic vs Pessimistic Comparison" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-handwritten.svg" alt="Handwritten: Optimistic vs Pessimistic Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-diagram.svg" alt="Diagram: Optimistic vs Pessimistic Comparison" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-diagram.svg" alt="Diagram: Optimistic vs Pessimistic Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-sticky.svg" alt="Sticky Note: Optimistic vs Pessimistic Comparison" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/optimistic-vs-pessimistic-comparison-sticky.svg" alt="Sticky Note: Optimistic vs Pessimistic Comparison" width="30%">
 </a>
 
 
@@ -3555,14 +3555,14 @@ flowchart LR
 
 ### Enabling Transaction Management
 
-<a href="../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-handwritten.svg" alt="Handwritten: Enabling Transaction Management" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-handwritten.svg" alt="Handwritten: Enabling Transaction Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-diagram.svg" alt="Diagram: Enabling Transaction Management" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-diagram.svg" alt="Diagram: Enabling Transaction Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-sticky.svg" alt="Sticky Note: Enabling Transaction Management" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/enabling-transaction-management-sticky.svg" alt="Sticky Note: Enabling Transaction Management" width="30%">
 </a>
 
 
@@ -3582,14 +3582,14 @@ public class TransactionConfig {
 
 ### Custom Transaction Attributes with @Transactional
 
-<a href="../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-handwritten.svg" alt="Handwritten: Custom Transaction Attributes with @Transactional" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-handwritten.svg" alt="Handwritten: Custom Transaction Attributes with @Transactional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-diagram.svg" alt="Diagram: Custom Transaction Attributes with @Transactional" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-diagram.svg" alt="Diagram: Custom Transaction Attributes with @Transactional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-sticky.svg" alt="Sticky Note: Custom Transaction Attributes with @Transactional" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/custom-transaction-attributes-with-transactional-sticky.svg" alt="Sticky Note: Custom Transaction Attributes with @Transactional" width="30%">
 </a>
 
 
@@ -3626,14 +3626,14 @@ public @interface CustomTransactional {
 
 ### Transaction Configuration with Properties
 
-<a href="../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-handwritten.svg" alt="Handwritten: Transaction Configuration with Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-handwritten.svg" alt="Handwritten: Transaction Configuration with Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-diagram.svg" alt="Diagram: Transaction Configuration with Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-diagram.svg" alt="Diagram: Transaction Configuration with Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-sticky.svg" alt="Sticky Note: Transaction Configuration with Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transaction-configuration-with-properties-sticky.svg" alt="Sticky Note: Transaction Configuration with Properties" width="30%">
 </a>
 
 
@@ -3647,14 +3647,14 @@ spring:
 
 ### Transaction Template with Custom Configuration
 
-<a href="../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-handwritten.svg" alt="Handwritten: Transaction Template with Custom Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-handwritten.svg" alt="Handwritten: Transaction Template with Custom Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-diagram.svg" alt="Diagram: Transaction Template with Custom Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-diagram.svg" alt="Diagram: Transaction Template with Custom Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-sticky.svg" alt="Sticky Note: Transaction Template with Custom Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/transaction-template-with-custom-configuration-sticky.svg" alt="Sticky Note: Transaction Template with Custom Configuration" width="30%">
 </a>
 
 
@@ -3709,14 +3709,14 @@ public class TransactionTemplateConfig {
 
 ### Multi-DataSource Transaction Configuration
 
-<a href="../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-handwritten.svg" alt="Handwritten: Multi-DataSource Transaction Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-handwritten.svg" alt="Handwritten: Multi-DataSource Transaction Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-diagram.svg" alt="Diagram: Multi-DataSource Transaction Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-diagram.svg" alt="Diagram: Multi-DataSource Transaction Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-sticky.svg" alt="Sticky Note: Multi-DataSource Transaction Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/multi-datasource-transaction-configuration-sticky.svg" alt="Sticky Note: Multi-DataSource Transaction Configuration" width="30%">
 </a>
 
 
@@ -4089,14 +4089,14 @@ public class ConcurrentOperationException extends RuntimeException {
 
 ### Application Entry Point
 
-<a href="../../assets/images/diagrams/java/24-transactions/application-entry-point-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/application-entry-point-handwritten.svg" alt="Handwritten: Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/application-entry-point-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/application-entry-point-handwritten.svg" alt="Handwritten: Application Entry Point" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/application-entry-point-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/application-entry-point-diagram.svg" alt="Diagram: Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/application-entry-point-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/application-entry-point-diagram.svg" alt="Diagram: Application Entry Point" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/24-transactions/application-entry-point-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/24-transactions/application-entry-point-sticky.svg" alt="Sticky Note: Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/24-transactions/application-entry-point-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/24-transactions/application-entry-point-sticky.svg" alt="Sticky Note: Application Entry Point" width="30%">
 </a>
 
 

@@ -68,14 +68,14 @@ A Gradle build is defined by three key files in the project root:
 
 ### 1.1 Groovy DSL vs Kotlin DSL
 
-<a href="../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-handwritten.svg" alt="Handwritten: 1.1 Groovy DSL vs Kotlin DSL" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-handwritten.svg" alt="Handwritten: 1.1 Groovy DSL vs Kotlin DSL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-diagram.svg" alt="Diagram: 1.1 Groovy DSL vs Kotlin DSL" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-diagram.svg" alt="Diagram: 1.1 Groovy DSL vs Kotlin DSL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-sticky.svg" alt="Sticky Note: 1.1 Groovy DSL vs Kotlin DSL" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-1-groovy-dsl-vs-kotlin-dsl-sticky.svg" alt="Sticky Note: 1.1 Groovy DSL vs Kotlin DSL" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ dependencies {
 
 ### 1.2 settings.gradle.kts
 
-<a href="../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-handwritten.svg" alt="Handwritten: 1.2 settings.gradle.kts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-handwritten.svg" alt="Handwritten: 1.2 settings.gradle.kts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-diagram.svg" alt="Diagram: 1.2 settings.gradle.kts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-diagram.svg" alt="Diagram: 1.2 settings.gradle.kts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-sticky.svg" alt="Sticky Note: 1.2 settings.gradle.kts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-2-settings-gradle-kts-sticky.svg" alt="Sticky Note: 1.2 settings.gradle.kts" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ include("domain", "application", "infrastructure", "presentation")
 
 ### 1.3 gradle.properties
 
-<a href="../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-handwritten.svg" alt="Handwritten: 1.3 gradle.properties" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-handwritten.svg" alt="Handwritten: 1.3 gradle.properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-diagram.svg" alt="Diagram: 1.3 gradle.properties" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-diagram.svg" alt="Diagram: 1.3 gradle.properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-sticky.svg" alt="Sticky Note: 1.3 gradle.properties" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-3-gradle-properties-sticky.svg" alt="Sticky Note: 1.3 gradle.properties" width="30%">
 </a>
 
 
@@ -232,14 +232,14 @@ systemProp.http.nonProxyHosts=*.local|localhost|10.*
 
 ### 1.4 Gradle Wrapper
 
-<a href="../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-handwritten.svg" alt="Handwritten: 1.4 Gradle Wrapper" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-handwritten.svg" alt="Handwritten: 1.4 Gradle Wrapper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-diagram.svg" alt="Diagram: 1.4 Gradle Wrapper" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-diagram.svg" alt="Diagram: 1.4 Gradle Wrapper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-sticky.svg" alt="Sticky Note: 1.4 Gradle Wrapper" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/1-4-gradle-wrapper-sticky.svg" alt="Sticky Note: 1.4 Gradle Wrapper" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ A Gradle build is a **directed acyclic graph (DAG) of tasks**. Every action Ã¢
 
 ### 2.1 Task Lifecycle Phase
 
-<a href="../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-handwritten.svg" alt="Handwritten: 2.1 Task Lifecycle Phase" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-handwritten.svg" alt="Handwritten: 2.1 Task Lifecycle Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-diagram.svg" alt="Diagram: 2.1 Task Lifecycle Phase" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-diagram.svg" alt="Diagram: 2.1 Task Lifecycle Phase" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-sticky.svg" alt="Sticky Note: 2.1 Task Lifecycle Phase" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-1-task-lifecycle-phase-sticky.svg" alt="Sticky Note: 2.1 Task Lifecycle Phase" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ Execution phase: hello task is running
 
 ### 2.2 Ad Hoc Tasks with doLast and doFirst
 
-<a href="../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-handwritten.svg" alt="Handwritten: 2.2 Ad Hoc Tasks with doLast and doFirst" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-handwritten.svg" alt="Handwritten: 2.2 Ad Hoc Tasks with doLast and doFirst" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-diagram.svg" alt="Diagram: 2.2 Ad Hoc Tasks with doLast and doFirst" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-diagram.svg" alt="Diagram: 2.2 Ad Hoc Tasks with doLast and doFirst" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-sticky.svg" alt="Sticky Note: 2.2 Ad Hoc Tasks with doLast and doFirst" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-2-ad-hoc-tasks-with-dolast-and-dofirst-sticky.svg" alt="Sticky Note: 2.2 Ad Hoc Tasks with doLast and doFirst" width="30%">
 </a>
 
 
@@ -405,14 +405,14 @@ tasks.register('prepare') {
 
 ### 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies
 
-<a href="../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-handwritten.svg" alt="Handwritten: 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-handwritten.svg" alt="Handwritten: 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-diagram.svg" alt="Diagram: 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-diagram.svg" alt="Diagram: 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-sticky.svg" alt="Sticky Note: 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-3-dependson-task-dependencies-sticky.svg" alt="Sticky Note: 2.3 dependsOn Ã¢â‚¬â€ Task Dependencies" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ tasks.named("compile") {
 
 ### 2.4 Task Graph Hooks
 
-<a href="../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-handwritten.svg" alt="Handwritten: 2.4 Task Graph Hooks" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-handwritten.svg" alt="Handwritten: 2.4 Task Graph Hooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-diagram.svg" alt="Diagram: 2.4 Task Graph Hooks" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-diagram.svg" alt="Diagram: 2.4 Task Graph Hooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-sticky.svg" alt="Sticky Note: 2.4 Task Graph Hooks" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-4-task-graph-hooks-sticky.svg" alt="Sticky Note: 2.4 Task Graph Hooks" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ gradle.taskGraph.afterTask {
 
 ### 2.5 Built-in Task Types
 
-<a href="../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-handwritten.svg" alt="Handwritten: 2.5 Built-in Task Types" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-handwritten.svg" alt="Handwritten: 2.5 Built-in Task Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-diagram.svg" alt="Diagram: 2.5 Built-in Task Types" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-diagram.svg" alt="Diagram: 2.5 Built-in Task Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-sticky.svg" alt="Sticky Note: 2.5 Built-in Task Types" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-5-built-in-task-types-sticky.svg" alt="Sticky Note: 2.5 Built-in Task Types" width="30%">
 </a>
 
 
@@ -635,14 +635,14 @@ tasks.register('runBatchJob', JavaExec) {
 
 ### 2.6 Custom Task Type
 
-<a href="../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-handwritten.svg" alt="Handwritten: 2.6 Custom Task Type" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-handwritten.svg" alt="Handwritten: 2.6 Custom Task Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-diagram.svg" alt="Diagram: 2.6 Custom Task Type" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-diagram.svg" alt="Diagram: 2.6 Custom Task Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-sticky.svg" alt="Sticky Note: 2.6 Custom Task Type" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/2-6-custom-task-type-sticky.svg" alt="Sticky Note: 2.6 Custom Task Type" width="30%">
 </a>
 
 
@@ -744,14 +744,14 @@ Plugins package reusable build logic. Gradle has two kinds: **binary plugins** (
 
 ### 3.1 The plugins Block
 
-<a href="../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-handwritten.svg" alt="Handwritten: 3.1 The plugins Block" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-handwritten.svg" alt="Handwritten: 3.1 The plugins Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-diagram.svg" alt="Diagram: 3.1 The plugins Block" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-diagram.svg" alt="Diagram: 3.1 The plugins Block" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-sticky.svg" alt="Sticky Note: 3.1 The plugins Block" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-1-the-plugins-block-sticky.svg" alt="Sticky Note: 3.1 The plugins Block" width="30%">
 </a>
 
 
@@ -787,14 +787,14 @@ plugins {
 
 ### 3.2 Essential Plugins
 
-<a href="../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-handwritten.svg" alt="Handwritten: 3.2 Essential Plugins" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-handwritten.svg" alt="Handwritten: 3.2 Essential Plugins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-diagram.svg" alt="Diagram: 3.2 Essential Plugins" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-diagram.svg" alt="Diagram: 3.2 Essential Plugins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-sticky.svg" alt="Sticky Note: 3.2 Essential Plugins" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-2-essential-plugins-sticky.svg" alt="Sticky Note: 3.2 Essential Plugins" width="30%">
 </a>
 
 
@@ -1169,14 +1169,14 @@ tasks.withType<com.github.spotbugs.snom.SpotBugsTask>().configureEach {
 
 ### 3.3 Applying Plugins Conditionally
 
-<a href="../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-handwritten.svg" alt="Handwritten: 3.3 Applying Plugins Conditionally" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-handwritten.svg" alt="Handwritten: 3.3 Applying Plugins Conditionally" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-diagram.svg" alt="Diagram: 3.3 Applying Plugins Conditionally" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-diagram.svg" alt="Diagram: 3.3 Applying Plugins Conditionally" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-sticky.svg" alt="Sticky Note: 3.3 Applying Plugins Conditionally" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/3-3-applying-plugins-conditionally-sticky.svg" alt="Sticky Note: 3.3 Applying Plugins Conditionally" width="30%">
 </a>
 
 
@@ -1205,14 +1205,14 @@ Gradle's dependency management is richer than Maven's. The key concept is **conf
 
 ### 4.1 Configuration Hierarchy
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-handwritten.svg" alt="Handwritten: 4.1 Configuration Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-handwritten.svg" alt="Handwritten: 4.1 Configuration Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-diagram.svg" alt="Diagram: 4.1 Configuration Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-diagram.svg" alt="Diagram: 4.1 Configuration Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-sticky.svg" alt="Sticky Note: 4.1 Configuration Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-1-configuration-hierarchy-sticky.svg" alt="Sticky Note: 4.1 Configuration Hierarchy" width="30%">
 </a>
 
 
@@ -1230,14 +1230,14 @@ testRuntimeOnly     Ã¢â€ â€™  testRuntimeClasspath only
 
 ### 4.2 Configuration Matrix
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-handwritten.svg" alt="Handwritten: 4.2 Configuration Matrix" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-handwritten.svg" alt="Handwritten: 4.2 Configuration Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-diagram.svg" alt="Diagram: 4.2 Configuration Matrix" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-diagram.svg" alt="Diagram: 4.2 Configuration Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-sticky.svg" alt="Sticky Note: 4.2 Configuration Matrix" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-2-configuration-matrix-sticky.svg" alt="Sticky Note: 4.2 Configuration Matrix" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ dependencies {
 
 ### 4.3 Dependency Constraints
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-handwritten.svg" alt="Handwritten: 4.3 Dependency Constraints" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-handwritten.svg" alt="Handwritten: 4.3 Dependency Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-diagram.svg" alt="Diagram: 4.3 Dependency Constraints" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-diagram.svg" alt="Diagram: 4.3 Dependency Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-sticky.svg" alt="Sticky Note: 4.3 Dependency Constraints" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-3-dependency-constraints-sticky.svg" alt="Sticky Note: 4.3 Dependency Constraints" width="30%">
 </a>
 
 
@@ -1316,14 +1316,14 @@ dependencies {
 
 ### 4.4 Enforced Platforms (Spring Boot BOM)
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-handwritten.svg" alt="Handwritten: 4.4 Enforced Platforms (Spring Boot BOM)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-handwritten.svg" alt="Handwritten: 4.4 Enforced Platforms (Spring Boot BOM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-diagram.svg" alt="Diagram: 4.4 Enforced Platforms (Spring Boot BOM)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-diagram.svg" alt="Diagram: 4.4 Enforced Platforms (Spring Boot BOM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-sticky.svg" alt="Sticky Note: 4.4 Enforced Platforms (Spring Boot BOM)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-4-enforced-platforms-spring-boot-bom-sticky.svg" alt="Sticky Note: 4.4 Enforced Platforms (Spring Boot BOM)" width="30%">
 </a>
 
 
@@ -1356,14 +1356,14 @@ dependencies {
 
 ### 4.5 Version Catalogs (libs.versions.toml)
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-handwritten.svg" alt="Handwritten: 4.5 Version Catalogs (libs.versions.toml)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-handwritten.svg" alt="Handwritten: 4.5 Version Catalogs (libs.versions.toml)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-diagram.svg" alt="Diagram: 4.5 Version Catalogs (libs.versions.toml)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-diagram.svg" alt="Diagram: 4.5 Version Catalogs (libs.versions.toml)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-sticky.svg" alt="Sticky Note: 4.5 Version Catalogs (libs.versions.toml)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-5-version-catalogs-libs-versions-toml-sticky.svg" alt="Sticky Note: 4.5 Version Catalogs (libs.versions.toml)" width="30%">
 </a>
 
 
@@ -1445,14 +1445,14 @@ The type-safe accessors are generated automatically. The convention maps dots to
 
 ### 4.6 Dependency Locking
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-handwritten.svg" alt="Handwritten: 4.6 Dependency Locking" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-handwritten.svg" alt="Handwritten: 4.6 Dependency Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-diagram.svg" alt="Diagram: 4.6 Dependency Locking" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-diagram.svg" alt="Diagram: 4.6 Dependency Locking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-sticky.svg" alt="Sticky Note: 4.6 Dependency Locking" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-6-dependency-locking-sticky.svg" alt="Sticky Note: 4.6 Dependency Locking" width="30%">
 </a>
 
 
@@ -1492,14 +1492,14 @@ org.springframework:spring-web:6.2.1
 
 ### 4.7 Centralized Dependency Resolution
 
-<a href="../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-handwritten.svg" alt="Handwritten: 4.7 Centralized Dependency Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-handwritten.svg" alt="Handwritten: 4.7 Centralized Dependency Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-diagram.svg" alt="Diagram: 4.7 Centralized Dependency Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-diagram.svg" alt="Diagram: 4.7 Centralized Dependency Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-sticky.svg" alt="Sticky Note: 4.7 Centralized Dependency Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/4-7-centralized-dependency-resolution-sticky.svg" alt="Sticky Note: 4.7 Centralized Dependency Resolution" width="30%">
 </a>
 
 
@@ -1527,14 +1527,14 @@ Real-world applications are organized as multi-project builds. Gradle handles th
 
 ### 5.1 Project Structure
 
-<a href="../../assets/images/diagrams/java/08-gradle/5-1-project-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-1-project-structure-handwritten.svg" alt="Handwritten: 5.1 Project Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-1-project-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-1-project-structure-handwritten.svg" alt="Handwritten: 5.1 Project Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-1-project-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-1-project-structure-diagram.svg" alt="Diagram: 5.1 Project Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-1-project-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-1-project-structure-diagram.svg" alt="Diagram: 5.1 Project Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-1-project-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-1-project-structure-sticky.svg" alt="Sticky Note: 5.1 Project Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-1-project-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-1-project-structure-sticky.svg" alt="Sticky Note: 5.1 Project Structure" width="30%">
 </a>
 
 
@@ -1561,14 +1561,14 @@ my-app/
 
 ### 5.2 settings.gradle.kts Ã¢â‚¬â€ includes
 
-<a href="../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-handwritten.svg" alt="Handwritten: 5.2 settings.gradle.kts Ã¢â‚¬â€ includes" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-handwritten.svg" alt="Handwritten: 5.2 settings.gradle.kts Ã¢â‚¬â€ includes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-diagram.svg" alt="Diagram: 5.2 settings.gradle.kts Ã¢â‚¬â€ includes" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-diagram.svg" alt="Diagram: 5.2 settings.gradle.kts Ã¢â‚¬â€ includes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-sticky.svg" alt="Sticky Note: 5.2 settings.gradle.kts Ã¢â‚¬â€ includes" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-2-settings-gradle-kts-includes-sticky.svg" alt="Sticky Note: 5.2 settings.gradle.kts Ã¢â‚¬â€ includes" width="30%">
 </a>
 
 
@@ -1583,14 +1583,14 @@ project(":domain").projectDir = file("modules/domain")
 
 ### 5.3 Subprojects and Allprojects
 
-<a href="../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-handwritten.svg" alt="Handwritten: 5.3 Subprojects and Allprojects" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-handwritten.svg" alt="Handwritten: 5.3 Subprojects and Allprojects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-diagram.svg" alt="Diagram: 5.3 Subprojects and Allprojects" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-diagram.svg" alt="Diagram: 5.3 Subprojects and Allprojects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-sticky.svg" alt="Sticky Note: 5.3 Subprojects and Allprojects" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-3-subprojects-and-allprojects-sticky.svg" alt="Sticky Note: 5.3 Subprojects and Allprojects" width="30%">
 </a>
 
 
@@ -1649,14 +1649,14 @@ subprojects {
 
 ### 5.4 Cross-Project Dependencies
 
-<a href="../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-handwritten.svg" alt="Handwritten: 5.4 Cross-Project Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-handwritten.svg" alt="Handwritten: 5.4 Cross-Project Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-diagram.svg" alt="Diagram: 5.4 Cross-Project Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-diagram.svg" alt="Diagram: 5.4 Cross-Project Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-sticky.svg" alt="Sticky Note: 5.4 Cross-Project Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-4-cross-project-dependencies-sticky.svg" alt="Sticky Note: 5.4 Cross-Project Dependencies" width="30%">
 </a>
 
 
@@ -1708,14 +1708,14 @@ dependencies {
 
 ### 5.5 Composite Builds
 
-<a href="../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-handwritten.svg" alt="Handwritten: 5.5 Composite Builds" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-handwritten.svg" alt="Handwritten: 5.5 Composite Builds" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-diagram.svg" alt="Diagram: 5.5 Composite Builds" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-diagram.svg" alt="Diagram: 5.5 Composite Builds" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-sticky.svg" alt="Sticky Note: 5.5 Composite Builds" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/5-5-composite-builds-sticky.svg" alt="Sticky Note: 5.5 Composite Builds" width="30%">
 </a>
 
 
@@ -1746,14 +1746,14 @@ The build cache stores task outputs so that identical inputs produce instant res
 
 ### 6.1 Local Build Cache
 
-<a href="../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-handwritten.svg" alt="Handwritten: 6.1 Local Build Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-handwritten.svg" alt="Handwritten: 6.1 Local Build Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-diagram.svg" alt="Diagram: 6.1 Local Build Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-diagram.svg" alt="Diagram: 6.1 Local Build Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-sticky.svg" alt="Sticky Note: 6.1 Local Build Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-1-local-build-cache-sticky.svg" alt="Sticky Note: 6.1 Local Build Cache" width="30%">
 </a>
 
 
@@ -1766,14 +1766,14 @@ By default, the local cache is at `~/.gradle/caches/build-cache-1`. It is a cont
 
 ### 6.2 Remote Build Cache (HTTP)
 
-<a href="../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-handwritten.svg" alt="Handwritten: 6.2 Remote Build Cache (HTTP)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-handwritten.svg" alt="Handwritten: 6.2 Remote Build Cache (HTTP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-diagram.svg" alt="Diagram: 6.2 Remote Build Cache (HTTP)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-diagram.svg" alt="Diagram: 6.2 Remote Build Cache (HTTP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-sticky.svg" alt="Sticky Note: 6.2 Remote Build Cache (HTTP)" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-2-remote-build-cache-http-sticky.svg" alt="Sticky Note: 6.2 Remote Build Cache (HTTP)" width="30%">
 </a>
 
 
@@ -1799,14 +1799,14 @@ buildCache {
 
 ### 6.3 Cacheable Tasks
 
-<a href="../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-handwritten.svg" alt="Handwritten: 6.3 Cacheable Tasks" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-handwritten.svg" alt="Handwritten: 6.3 Cacheable Tasks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-diagram.svg" alt="Diagram: 6.3 Cacheable Tasks" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-diagram.svg" alt="Diagram: 6.3 Cacheable Tasks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-sticky.svg" alt="Sticky Note: 6.3 Cacheable Tasks" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-3-cacheable-tasks-sticky.svg" alt="Sticky Note: 6.3 Cacheable Tasks" width="30%">
 </a>
 
 
@@ -1857,14 +1857,14 @@ Cache keys include:
 
 ### 6.4 Cache Hit Verification
 
-<a href="../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-handwritten.svg" alt="Handwritten: 6.4 Cache Hit Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-handwritten.svg" alt="Handwritten: 6.4 Cache Hit Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-diagram.svg" alt="Diagram: 6.4 Cache Hit Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-diagram.svg" alt="Diagram: 6.4 Cache Hit Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-sticky.svg" alt="Sticky Note: 6.4 Cache Hit Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/6-4-cache-hit-verification-sticky.svg" alt="Sticky Note: 6.4 Cache Hit Verification" width="30%">
 </a>
 
 
@@ -1887,14 +1887,14 @@ The Gradle Daemon is a long-lived JVM process that keeps build data in memory, d
 
 ### 7.1 Daemon Lifecycle
 
-<a href="../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-handwritten.svg" alt="Handwritten: 7.1 Daemon Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-handwritten.svg" alt="Handwritten: 7.1 Daemon Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-diagram.svg" alt="Diagram: 7.1 Daemon Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-diagram.svg" alt="Diagram: 7.1 Daemon Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-sticky.svg" alt="Sticky Note: 7.1 Daemon Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-1-daemon-lifecycle-sticky.svg" alt="Sticky Note: 7.1 Daemon Lifecycle" width="30%">
 </a>
 
 
@@ -1915,14 +1915,14 @@ sequenceDiagram
 
 ### 7.2 Daemon Configuration
 
-<a href="../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-handwritten.svg" alt="Handwritten: 7.2 Daemon Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-handwritten.svg" alt="Handwritten: 7.2 Daemon Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-diagram.svg" alt="Diagram: 7.2 Daemon Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-diagram.svg" alt="Diagram: 7.2 Daemon Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-sticky.svg" alt="Sticky Note: 7.2 Daemon Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-2-daemon-configuration-sticky.svg" alt="Sticky Note: 7.2 Daemon Configuration" width="30%">
 </a>
 
 
@@ -1942,14 +1942,14 @@ org.gradle.daemon.idletimeout=14400
 
 ### 7.3 Stopping the Daemon
 
-<a href="../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-handwritten.svg" alt="Handwritten: 7.3 Stopping the Daemon" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-handwritten.svg" alt="Handwritten: 7.3 Stopping the Daemon" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-diagram.svg" alt="Diagram: 7.3 Stopping the Daemon" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-diagram.svg" alt="Diagram: 7.3 Stopping the Daemon" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-sticky.svg" alt="Sticky Note: 7.3 Stopping the Daemon" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/7-3-stopping-the-daemon-sticky.svg" alt="Sticky Note: 7.3 Stopping the Daemon" width="30%">
 </a>
 
 
@@ -1972,14 +1972,14 @@ Gradle is fast when configured correctly. The following techniques combine for d
 
 ### 8.1 Configuration Avoidance
 
-<a href="../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-handwritten.svg" alt="Handwritten: 8.1 Configuration Avoidance" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-handwritten.svg" alt="Handwritten: 8.1 Configuration Avoidance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-diagram.svg" alt="Diagram: 8.1 Configuration Avoidance" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-diagram.svg" alt="Diagram: 8.1 Configuration Avoidance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-sticky.svg" alt="Sticky Note: 8.1 Configuration Avoidance" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-1-configuration-avoidance-sticky.svg" alt="Sticky Note: 8.1 Configuration Avoidance" width="30%">
 </a>
 
 
@@ -2009,14 +2009,14 @@ tasks.register<Copy>("copyAssets") {
 
 ### 8.2 Lazy Task Configuration with Providers
 
-<a href="../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-handwritten.svg" alt="Handwritten: 8.2 Lazy Task Configuration with Providers" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-handwritten.svg" alt="Handwritten: 8.2 Lazy Task Configuration with Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-diagram.svg" alt="Diagram: 8.2 Lazy Task Configuration with Providers" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-diagram.svg" alt="Diagram: 8.2 Lazy Task Configuration with Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-sticky.svg" alt="Sticky Note: 8.2 Lazy Task Configuration with Providers" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-2-lazy-task-configuration-with-providers-sticky.svg" alt="Sticky Note: 8.2 Lazy Task Configuration with Providers" width="30%">
 </a>
 
 
@@ -2045,14 +2045,14 @@ tasks.register<Copy>("transformData") {
 
 ### 8.3 Parallel Execution
 
-<a href="../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-handwritten.svg" alt="Handwritten: 8.3 Parallel Execution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-handwritten.svg" alt="Handwritten: 8.3 Parallel Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-diagram.svg" alt="Diagram: 8.3 Parallel Execution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-diagram.svg" alt="Diagram: 8.3 Parallel Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-sticky.svg" alt="Sticky Note: 8.3 Parallel Execution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-3-parallel-execution-sticky.svg" alt="Sticky Note: 8.3 Parallel Execution" width="30%">
 </a>
 
 
@@ -2074,14 +2074,14 @@ tasks.withType<JavaCompile>().configureEach {
 
 ### 8.4 Worker API
 
-<a href="../../assets/images/diagrams/java/08-gradle/8-4-worker-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-4-worker-api-handwritten.svg" alt="Handwritten: 8.4 Worker API" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-4-worker-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-4-worker-api-handwritten.svg" alt="Handwritten: 8.4 Worker API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-4-worker-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-4-worker-api-diagram.svg" alt="Diagram: 8.4 Worker API" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-4-worker-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-4-worker-api-diagram.svg" alt="Diagram: 8.4 Worker API" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-4-worker-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-4-worker-api-sticky.svg" alt="Sticky Note: 8.4 Worker API" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-4-worker-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-4-worker-api-sticky.svg" alt="Sticky Note: 8.4 Worker API" width="30%">
 </a>
 
 
@@ -2136,14 +2136,14 @@ abstract class ParallelProcessorTask : DefaultTask() {
 
 ### 8.5 Configuration Cache
 
-<a href="../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-handwritten.svg" alt="Handwritten: 8.5 Configuration Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-handwritten.svg" alt="Handwritten: 8.5 Configuration Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-diagram.svg" alt="Diagram: 8.5 Configuration Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-diagram.svg" alt="Diagram: 8.5 Configuration Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-sticky.svg" alt="Sticky Note: 8.5 Configuration Cache" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-5-configuration-cache-sticky.svg" alt="Sticky Note: 8.5 Configuration Cache" width="30%">
 </a>
 
 
@@ -2169,14 +2169,14 @@ org.gradle.configuration-cache=true
 
 ### 8.6 Incremental Builds
 
-<a href="../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-handwritten.svg" alt="Handwritten: 8.6 Incremental Builds" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-handwritten.svg" alt="Handwritten: 8.6 Incremental Builds" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-diagram.svg" alt="Diagram: 8.6 Incremental Builds" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-diagram.svg" alt="Diagram: 8.6 Incremental Builds" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-sticky.svg" alt="Sticky Note: 8.6 Incremental Builds" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/8-6-incremental-builds-sticky.svg" alt="Sticky Note: 8.6 Incremental Builds" width="30%">
 </a>
 
 
@@ -2213,14 +2213,14 @@ Beyond the basics in Ã‚Â§3.2, here are advanced publishing patterns.
 
 ### 9.1 Publishing with Artifacts
 
-<a href="../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-handwritten.svg" alt="Handwritten: 9.1 Publishing with Artifacts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-handwritten.svg" alt="Handwritten: 9.1 Publishing with Artifacts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-diagram.svg" alt="Diagram: 9.1 Publishing with Artifacts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-diagram.svg" alt="Diagram: 9.1 Publishing with Artifacts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-sticky.svg" alt="Sticky Note: 9.1 Publishing with Artifacts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/9-1-publishing-with-artifacts-sticky.svg" alt="Sticky Note: 9.1 Publishing with Artifacts" width="30%">
 </a>
 
 
@@ -2311,14 +2311,14 @@ signing {
 
 ### 9.2 Conditional Publishing
 
-<a href="../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-handwritten.svg" alt="Handwritten: 9.2 Conditional Publishing" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-handwritten.svg" alt="Handwritten: 9.2 Conditional Publishing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-diagram.svg" alt="Diagram: 9.2 Conditional Publishing" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-diagram.svg" alt="Diagram: 9.2 Conditional Publishing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-sticky.svg" alt="Sticky Note: 9.2 Conditional Publishing" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/9-2-conditional-publishing-sticky.svg" alt="Sticky Note: 9.2 Conditional Publishing" width="30%">
 </a>
 
 
@@ -2339,14 +2339,14 @@ The Spring Boot Gradle plugin provides first-class support for building, running
 
 ### 10.1 Plugin Application
 
-<a href="../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-handwritten.svg" alt="Handwritten: 10.1 Plugin Application" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-handwritten.svg" alt="Handwritten: 10.1 Plugin Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-diagram.svg" alt="Diagram: 10.1 Plugin Application" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-diagram.svg" alt="Diagram: 10.1 Plugin Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-sticky.svg" alt="Sticky Note: 10.1 Plugin Application" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-1-plugin-application-sticky.svg" alt="Sticky Note: 10.1 Plugin Application" width="30%">
 </a>
 
 
@@ -2373,14 +2373,14 @@ dependencies {
 
 ### 10.2 bootJar
 
-<a href="../../assets/images/diagrams/java/08-gradle/10-2-bootjar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-2-bootjar-handwritten.svg" alt="Handwritten: 10.2 bootJar" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-2-bootjar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-2-bootjar-handwritten.svg" alt="Handwritten: 10.2 bootJar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-2-bootjar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-2-bootjar-diagram.svg" alt="Diagram: 10.2 bootJar" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-2-bootjar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-2-bootjar-diagram.svg" alt="Diagram: 10.2 bootJar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-2-bootjar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-2-bootjar-sticky.svg" alt="Sticky Note: 10.2 bootJar" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-2-bootjar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-2-bootjar-sticky.svg" alt="Sticky Note: 10.2 bootJar" width="30%">
 </a>
 
 
@@ -2426,14 +2426,14 @@ java -jar build/libs/my-app-1.0.0.jar
 
 ### 10.3 bootRun
 
-<a href="../../assets/images/diagrams/java/08-gradle/10-3-bootrun-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-3-bootrun-handwritten.svg" alt="Handwritten: 10.3 bootRun" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-3-bootrun-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-3-bootrun-handwritten.svg" alt="Handwritten: 10.3 bootRun" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-3-bootrun-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-3-bootrun-diagram.svg" alt="Diagram: 10.3 bootRun" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-3-bootrun-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-3-bootrun-diagram.svg" alt="Diagram: 10.3 bootRun" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-3-bootrun-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-3-bootrun-sticky.svg" alt="Sticky Note: 10.3 bootRun" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-3-bootrun-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-3-bootrun-sticky.svg" alt="Sticky Note: 10.3 bootRun" width="30%">
 </a>
 
 
@@ -2470,14 +2470,14 @@ SPRING_PROFILES_ACTIVE=production ./gradlew bootRun
 
 ### 10.4 bootBuildImage
 
-<a href="../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-handwritten.svg" alt="Handwritten: 10.4 bootBuildImage" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-handwritten.svg" alt="Handwritten: 10.4 bootBuildImage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-diagram.svg" alt="Diagram: 10.4 bootBuildImage" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-diagram.svg" alt="Diagram: 10.4 bootBuildImage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-sticky.svg" alt="Sticky Note: 10.4 bootBuildImage" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-4-bootbuildimage-sticky.svg" alt="Sticky Note: 10.4 bootBuildImage" width="30%">
 </a>
 
 
@@ -2522,14 +2522,14 @@ docker push registry.example.com/my-app:1.0.0
 
 ### 10.5 Dependency Management Plugin
 
-<a href="../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-handwritten.svg" alt="Handwritten: 10.5 Dependency Management Plugin" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-handwritten.svg" alt="Handwritten: 10.5 Dependency Management Plugin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-diagram.svg" alt="Diagram: 10.5 Dependency Management Plugin" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-diagram.svg" alt="Diagram: 10.5 Dependency Management Plugin" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-sticky.svg" alt="Sticky Note: 10.5 Dependency Management Plugin" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-5-dependency-management-plugin-sticky.svg" alt="Sticky Note: 10.5 Dependency Management Plugin" width="30%">
 </a>
 
 
@@ -2555,14 +2555,14 @@ dependencies {
 
 ### 10.6 Spring Boot Starters Resolution
 
-<a href="../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-handwritten.svg" alt="Handwritten: 10.6 Spring Boot Starters Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-handwritten.svg" alt="Handwritten: 10.6 Spring Boot Starters Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-diagram.svg" alt="Diagram: 10.6 Spring Boot Starters Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-diagram.svg" alt="Diagram: 10.6 Spring Boot Starters Resolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-sticky.svg" alt="Sticky Note: 10.6 Spring Boot Starters Resolution" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/10-6-spring-boot-starters-resolution-sticky.svg" alt="Sticky Note: 10.6 Spring Boot Starters Resolution" width="30%">
 </a>
 
 
@@ -2691,14 +2691,14 @@ Version catalogs are the modern, scalable dependency management approach for Gra
 
 ### 11.1 TOML Structure
 
-<a href="../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-handwritten.svg" alt="Handwritten: 11.1 TOML Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-handwritten.svg" alt="Handwritten: 11.1 TOML Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-diagram.svg" alt="Diagram: 11.1 TOML Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-diagram.svg" alt="Diagram: 11.1 TOML Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-sticky.svg" alt="Sticky Note: 11.1 TOML Structure" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-1-toml-structure-sticky.svg" alt="Sticky Note: 11.1 TOML Structure" width="30%">
 </a>
 
 
@@ -2759,14 +2759,14 @@ jacoco = { id = "jacoco" }        # no version Ã¢â‚¬â€ Gradle built-i
 
 ### 11.2 Type-Safe Accessor Generation
 
-<a href="../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-handwritten.svg" alt="Handwritten: 11.2 Type-Safe Accessor Generation" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-handwritten.svg" alt="Handwritten: 11.2 Type-Safe Accessor Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-diagram.svg" alt="Diagram: 11.2 Type-Safe Accessor Generation" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-diagram.svg" alt="Diagram: 11.2 Type-Safe Accessor Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-sticky.svg" alt="Sticky Note: 11.2 Type-Safe Accessor Generation" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-2-type-safe-accessor-generation-sticky.svg" alt="Sticky Note: 11.2 Type-Safe Accessor Generation" width="30%">
 </a>
 
 
@@ -2784,14 +2784,14 @@ Dashes in TOML keys become dots in accessors. The accessors are generated at bui
 
 ### 11.3 Consuming in Build Scripts
 
-<a href="../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-handwritten.svg" alt="Handwritten: 11.3 Consuming in Build Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-handwritten.svg" alt="Handwritten: 11.3 Consuming in Build Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-diagram.svg" alt="Diagram: 11.3 Consuming in Build Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-diagram.svg" alt="Diagram: 11.3 Consuming in Build Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-sticky.svg" alt="Sticky Note: 11.3 Consuming in Build Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-3-consuming-in-build-scripts-sticky.svg" alt="Sticky Note: 11.3 Consuming in Build Scripts" width="30%">
 </a>
 
 
@@ -2834,14 +2834,14 @@ tasks.withType<Test>().configureEach {
 
 ### 11.4 Multi-Project Catalog
 
-<a href="../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-handwritten.svg" alt="Handwritten: 11.4 Multi-Project Catalog" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-handwritten.svg" alt="Handwritten: 11.4 Multi-Project Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-diagram.svg" alt="Diagram: 11.4 Multi-Project Catalog" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-diagram.svg" alt="Diagram: 11.4 Multi-Project Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-sticky.svg" alt="Sticky Note: 11.4 Multi-Project Catalog" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-4-multi-project-catalog-sticky.svg" alt="Sticky Note: 11.4 Multi-Project Catalog" width="30%">
 </a>
 
 
@@ -2861,14 +2861,14 @@ dependencies {
 
 ### 11.5 Custom Catalog Declaration
 
-<a href="../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-handwritten.svg" alt="Handwritten: 11.5 Custom Catalog Declaration" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-handwritten.svg" alt="Handwritten: 11.5 Custom Catalog Declaration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-diagram.svg" alt="Diagram: 11.5 Custom Catalog Declaration" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-diagram.svg" alt="Diagram: 11.5 Custom Catalog Declaration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-sticky.svg" alt="Sticky Note: 11.5 Custom Catalog Declaration" width="30%">
+<a href="../../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/08-gradle/11-5-custom-catalog-declaration-sticky.svg" alt="Sticky Note: 11.5 Custom Catalog Declaration" width="30%">
 </a>
 
 

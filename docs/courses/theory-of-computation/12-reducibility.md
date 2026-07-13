@@ -43,14 +43,14 @@ flowchart LR
 
 ### 11.1 Mapping Reductions (Many-One Reductions)
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-handwritten.svg" alt="Handwritten: 11.1 Mapping Reductions (Many-One Reductions)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-handwritten.svg" alt="Handwritten: 11.1 Mapping Reductions (Many-One Reductions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-diagram.svg" alt="Diagram: 11.1 Mapping Reductions (Many-One Reductions)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-diagram.svg" alt="Diagram: 11.1 Mapping Reductions (Many-One Reductions)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-sticky.svg" alt="Sticky Note: 11.1 Mapping Reductions (Many-One Reductions)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-1-mapping-reductions-many-one-reductions-sticky.svg" alt="Sticky Note: 11.1 Mapping Reductions (Many-One Reductions)" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ A_TM is the canonical RE-complete language.
 
 ### 11.2 Rice's Theorem in Depth
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-handwritten.svg" alt="Handwritten: 11.2 Rice's Theorem in Depth" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-handwritten.svg" alt="Handwritten: 11.2 Rice's Theorem in Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-diagram.svg" alt="Diagram: 11.2 Rice's Theorem in Depth" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-diagram.svg" alt="Diagram: 11.2 Rice's Theorem in Depth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-sticky.svg" alt="Sticky Note: 11.2 Rice's Theorem in Depth" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-2-rice-s-theorem-in-depth-sticky.svg" alt="Sticky Note: 11.2 Rice's Theorem in Depth" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ Then L_P = { âŸ¨MâŸ© | L(M) âˆˆ P } is undecidable.
 
 ### 11.3 Turing Reductions
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-handwritten.svg" alt="Handwritten: 11.3 Turing Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-handwritten.svg" alt="Handwritten: 11.3 Turing Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-diagram.svg" alt="Diagram: 11.3 Turing Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-diagram.svg" alt="Diagram: 11.3 Turing Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-sticky.svg" alt="Sticky Note: 11.3 Turing Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-3-turing-reductions-sticky.svg" alt="Sticky Note: 11.3 Turing Reductions" width="30%">
 </a>
 
 
@@ -121,14 +121,14 @@ A **Turing reduction** from A to B (written A â‰¤_T B) means there is an ora
 
 ### 11.4 The Post Correspondence Problem (PCP)
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-handwritten.svg" alt="Handwritten: 11.4 The Post Correspondence Problem (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-handwritten.svg" alt="Handwritten: 11.4 The Post Correspondence Problem (PCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-diagram.svg" alt="Diagram: 11.4 The Post Correspondence Problem (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-diagram.svg" alt="Diagram: 11.4 The Post Correspondence Problem (PCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-sticky.svg" alt="Sticky Note: 11.4 The Post Correspondence Problem (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-4-the-post-correspondence-problem-pcp-sticky.svg" alt="Sticky Note: 11.4 The Post Correspondence Problem (PCP)" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ The undecidability of PCP is significant because PCP is a purely combinatorial p
 
 ### 11.5 Undecidable Problems in Formal Language Theory
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-handwritten.svg" alt="Handwritten: 11.5 Undecidable Problems in Formal Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-handwritten.svg" alt="Handwritten: 11.5 Undecidable Problems in Formal Language Theory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-diagram.svg" alt="Diagram: 11.5 Undecidable Problems in Formal Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-diagram.svg" alt="Diagram: 11.5 Undecidable Problems in Formal Language Theory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-sticky.svg" alt="Sticky Note: 11.5 Undecidable Problems in Formal Language Theory" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-5-undecidable-problems-in-formal-language-theory-sticky.svg" alt="Sticky Note: 11.5 Undecidable Problems in Formal Language Theory" width="30%">
 </a>
 
 
@@ -181,14 +181,14 @@ Using PCP and other reductions, we can prove undecidability of:
 
 ### 11.6 Complete Problems for RE
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-handwritten.svg" alt="Handwritten: 11.6 Complete Problems for RE" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-handwritten.svg" alt="Handwritten: 11.6 Complete Problems for RE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-diagram.svg" alt="Diagram: 11.6 Complete Problems for RE" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-diagram.svg" alt="Diagram: 11.6 Complete Problems for RE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-sticky.svg" alt="Sticky Note: 11.6 Complete Problems for RE" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-6-complete-problems-for-re-sticky.svg" alt="Sticky Note: 11.6 Complete Problems for RE" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ A problem is **RE-complete** if it is in RE and every RE problem reduces to it.
 
 ### 11.7 Oracle Separations and the Limits of Diagonalization
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-handwritten.svg" alt="Handwritten: 11.7 Oracle Separations and the Limits of Diagonalization" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-handwritten.svg" alt="Handwritten: 11.7 Oracle Separations and the Limits of Diagonalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-diagram.svg" alt="Diagram: 11.7 Oracle Separations and the Limits of Diagonalization" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-diagram.svg" alt="Diagram: 11.7 Oracle Separations and the Limits of Diagonalization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-sticky.svg" alt="Sticky Note: 11.7 Oracle Separations and the Limits of Diagonalization" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-7-oracle-separations-and-the-limits-of-diagonalization-sticky.svg" alt="Sticky Note: 11.7 Oracle Separations and the Limits of Diagonalization" width="30%">
 </a>
 
 
@@ -236,14 +236,14 @@ flowchart TD
 
 ### 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)
 
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-handwritten.svg" alt="Handwritten: 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-handwritten.svg" alt="Handwritten: 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-diagram.svg" alt="Diagram: 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-diagram.svg" alt="Diagram: 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-sticky.svg" alt="Sticky Note: 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/12-reducibility/11-9-the-fixed-point-theorem-kleene-s-recursion-theorem-sticky.svg" alt="Sticky Note: 11.9 The Fixed-Point Theorem (Kleene's Recursion Theorem)" width="30%">
 </a>
 
 

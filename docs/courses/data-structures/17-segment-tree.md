@@ -36,14 +36,14 @@ This pattern — **precompute aggregations in a balanced binary tree** — is th
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -71,14 +71,14 @@ flowchart TD
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ A **segment tree** is a binary tree where each node represents a contiguous segm
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ A **segment tree** is a binary tree where each node represents a contiguous segm
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ BUILD-REC(node, l, r):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ Value:     36   9  27   4   5  16  11   1   3   -   -   7   9   -   -   -
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -225,14 +225,14 @@ Each node does O(1) work (two recursive calls + one addition). With ~2n nodes to
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ public class SegmentTree {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ public class SegmentTree {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ public class SegmentTree {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ A range query computes the aggregate (sum, minimum, maximum, etc.) of elements i
 
 ### Algorithm Steps (Range Sum Query)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-handwritten.svg" alt="Handwritten: Algorithm Steps (Range Sum Query)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-handwritten.svg" alt="Handwritten: Algorithm Steps (Range Sum Query)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-diagram.svg" alt="Diagram: Algorithm Steps (Range Sum Query)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-diagram.svg" alt="Diagram: Algorithm Steps (Range Sum Query)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-sticky.svg" alt="Sticky Note: Algorithm Steps (Range Sum Query)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-sum-query-sticky.svg" alt="Sticky Note: Algorithm Steps (Range Sum Query)" width="30%">
 </a>
 
 
@@ -413,14 +413,14 @@ A range query computes the aggregate (sum, minimum, maximum, etc.) of elements i
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -439,14 +439,14 @@ QUERY(node, l, r, ql, qr):
 
 ### Step-by-Step Dry Run (Range Sum)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Range Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Range Sum)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Range Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Range Sum)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Range Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-range-sum-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Range Sum)" width="30%">
 </a>
 
 
@@ -482,14 +482,14 @@ Manual verification: `arr[1]+arr[2]+arr[3]+arr[4] = 3+5+7+9 = 24`. ✅
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -505,14 +505,14 @@ For n = 1,000,000: at most 4 × 20 = 80 node visits vs 1,000,000 for a linear sc
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -590,14 +590,14 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -610,14 +610,14 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -636,14 +636,14 @@ int queryMax(int node, int l, int r, int ql, int qr) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -651,14 +651,14 @@ A point update changes the value of a single element `arr[idx]` to a new value. 
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -672,14 +672,14 @@ A point update changes the value of a single element `arr[idx]` to a new value. 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -698,14 +698,14 @@ UPDATE(node, l, r, idx, newVal):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -737,14 +737,14 @@ Verification: New sum of all elements = 1+3+10+7+9+11 = 41 ✅. Old sum was 36, 
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -758,14 +758,14 @@ Compare to naively rebuilding the entire tree: O(n). A point update is exponenti
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -828,14 +828,14 @@ public void pointUpdate(int idx, int value) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -847,14 +847,14 @@ public void pointUpdate(int idx, int value) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -872,14 +872,14 @@ public void pointUpdate(int idx, int value) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -893,14 +893,14 @@ This keeps both range updates and range queries at O(log n).
 
 ### Algorithm Steps (Range Add + Range Sum)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-handwritten.svg" alt="Handwritten: Algorithm Steps (Range Add + Range Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-handwritten.svg" alt="Handwritten: Algorithm Steps (Range Add + Range Sum)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-diagram.svg" alt="Diagram: Algorithm Steps (Range Add + Range Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-diagram.svg" alt="Diagram: Algorithm Steps (Range Add + Range Sum)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-sticky.svg" alt="Sticky Note: Algorithm Steps (Range Add + Range Sum)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-range-add-range-sum-sticky.svg" alt="Sticky Note: Algorithm Steps (Range Add + Range Sum)" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ This keeps both range updates and range queries at O(log n).
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -975,14 +975,14 @@ RANGE-SUM(node, l, r, ql, qr):
 
 ### Step-by-Step Dry Run (Lazy Propagation)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-diagram.svg" alt="Diagram: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-lazy-propagation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (Lazy Propagation)" width="30%">
 </a>
 
 
@@ -1053,14 +1053,14 @@ Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 ✅. The lazy value was
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1074,14 +1074,14 @@ Result: `sum(2, 2) = 13`. Manual: arr[2] was 3, +10 = 13 ✅. The lazy value was
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -1297,14 +1297,14 @@ public class LazySegmentTree {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1317,14 +1317,14 @@ public class LazySegmentTree {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1344,14 +1344,14 @@ public class LazySegmentTree {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1361,14 +1361,14 @@ A **Fenwick tree** (Binary Indexed Tree, BIT) is a data structure that supports 
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -1386,14 +1386,14 @@ A **Fenwick tree** (Binary Indexed Tree, BIT) is a data structure that supports 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1418,14 +1418,14 @@ RANGE-SUM(l, r):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1457,14 +1457,14 @@ Manual: 1+3+5+7+9 = 25 ✅.
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -1590,14 +1590,14 @@ public class FenwickTree {
 
 ### BIT Limitations
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-handwritten.svg" alt="Handwritten: BIT Limitations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-handwritten.svg" alt="Handwritten: BIT Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-diagram.svg" alt="Diagram: BIT Limitations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-diagram.svg" alt="Diagram: BIT Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-sticky.svg" alt="Sticky Note: BIT Limitations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/bit-limitations-sticky.svg" alt="Sticky Note: BIT Limitations" width="30%">
 </a>
 
 
@@ -1625,14 +1625,14 @@ public class FenwickTree {
 
 ### Decision Flowchart
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
 </a>
 
 
@@ -1651,14 +1651,14 @@ Need range queries?
 
 ### Common Problems and Solutions
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-handwritten.svg" alt="Handwritten: Common Problems and Solutions" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-handwritten.svg" alt="Handwritten: Common Problems and Solutions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-diagram.svg" alt="Diagram: Common Problems and Solutions" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-diagram.svg" alt="Diagram: Common Problems and Solutions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-sticky.svg" alt="Sticky Note: Common Problems and Solutions" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-problems-and-solutions-sticky.svg" alt="Sticky Note: Common Problems and Solutions" width="30%">
 </a>
 
 
@@ -1696,14 +1696,14 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 ### Common Pitfalls
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
 </a>
 
 
@@ -1719,14 +1719,14 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 ### Time Comparison (n = 100,000, q = 100,000 queries)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-handwritten.svg" alt="Handwritten: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-handwritten.svg" alt="Handwritten: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-diagram.svg" alt="Diagram: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-diagram.svg" alt="Diagram: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-sticky.svg" alt="Sticky Note: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/time-comparison-n-100-000-q-100-000-queries-sticky.svg" alt="Sticky Note: Time Comparison (n = 100,000, q = 100,000 queries)" width="30%">
 </a>
 
 
@@ -1799,14 +1799,14 @@ Key insight: Lazy propagation is essential for any problem where range updates a
 
 ### Common Mistakes (GFG-Style)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
 </a>
 
 
@@ -1945,14 +1945,14 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
 </a>
 
 
@@ -1996,14 +1996,14 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2027,14 +2027,14 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Segment Tree Variants Comparison
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-handwritten.svg" alt="Handwritten: Segment Tree Variants Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-handwritten.svg" alt="Handwritten: Segment Tree Variants Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-diagram.svg" alt="Diagram: Segment Tree Variants Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-diagram.svg" alt="Diagram: Segment Tree Variants Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-sticky.svg" alt="Sticky Note: Segment Tree Variants Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/segment-tree-variants-comparison-sticky.svg" alt="Sticky Note: Segment Tree Variants Comparison" width="30%">
 </a>
 
 
@@ -2188,14 +2188,14 @@ class BIT { // Binary Indexed Tree / Fenwick Tree
 
 ### Key Takeaway
 
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/17-segment-tree/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
 </a>
 
 

@@ -459,14 +459,14 @@ router.post("/mfa/verify", authenticate, async (req, res) => {
 
 ### Session Management Best Practices
 
-<a href="../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-handwritten.svg" alt="Handwritten: Session Management Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-handwritten.svg" alt="Handwritten: Session Management Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-diagram.svg" alt="Diagram: Session Management Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-diagram.svg" alt="Diagram: Session Management Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-sticky.svg" alt="Sticky Note: Session Management Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/session-management-best-practices-sticky.svg" alt="Sticky Note: Session Management Best Practices" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ app.use((req, res, next) => {
 
 ### Passwordless Authentication with WebAuthn
 
-<a href="../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-handwritten.svg" alt="Handwritten: Passwordless Authentication with WebAuthn" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-handwritten.svg" alt="Handwritten: Passwordless Authentication with WebAuthn" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-diagram.svg" alt="Diagram: Passwordless Authentication with WebAuthn" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-diagram.svg" alt="Diagram: Passwordless Authentication with WebAuthn" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-sticky.svg" alt="Sticky Note: Passwordless Authentication with WebAuthn" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/passwordless-authentication-with-webauthn-sticky.svg" alt="Sticky Note: Passwordless Authentication with WebAuthn" width="30%">
 </a>
 
 
@@ -883,14 +883,14 @@ Authentication verifies identity while authorization controls access. JWTs provi
 
 ### Application Projects
 
-<a href="../../assets/images/diagrams/web-development/10-auth/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
 </a>
 
 
@@ -903,14 +903,14 @@ Authentication verifies identity while authorization controls access. JWTs provi
 
 ### Challenge Project
 
-<a href="../../assets/images/diagrams/web-development/10-auth/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
 </a>
 
 
@@ -918,14 +918,14 @@ Build a complete auth system with Google OAuth, MFA/TOTP, role-based permissions
 
 ### Practical Takeaways
 
-<a href="../../assets/images/diagrams/web-development/10-auth/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/10-auth/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/10-auth/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/10-auth/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/10-auth/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
 </a>
 
 

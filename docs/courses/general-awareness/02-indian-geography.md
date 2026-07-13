@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 2.1 India — Physical Overview
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-handwritten.svg" alt="Handwritten: 2.1 India — Physical Overview" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-handwritten.svg" alt="Handwritten: 2.1 India — Physical Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-diagram.svg" alt="Diagram: 2.1 India — Physical Overview" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-diagram.svg" alt="Diagram: 2.1 India — Physical Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-sticky.svg" alt="Sticky Note: 2.1 India — Physical Overview" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-sticky.svg" alt="Sticky Note: 2.1 India — Physical Overview" width="30%">
 </a>
 
 
@@ -62,14 +62,14 @@ mindmap
 
 ### 2.2 The Himalayas
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-handwritten.svg" alt="Handwritten: 2.2 The Himalayas" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-handwritten.svg" alt="Handwritten: 2.2 The Himalayas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-diagram.svg" alt="Diagram: 2.2 The Himalayas" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-diagram.svg" alt="Diagram: 2.2 The Himalayas" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-sticky.svg" alt="Sticky Note: 2.2 The Himalayas" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-sticky.svg" alt="Sticky Note: 2.2 The Himalayas" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ The Himalayan mountain range stretches 2,500 km from the Indus River in the west
 
 ### 2.3 The Peninsular Plateau
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-handwritten.svg" alt="Handwritten: 2.3 The Peninsular Plateau" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-handwritten.svg" alt="Handwritten: 2.3 The Peninsular Plateau" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-diagram.svg" alt="Diagram: 2.3 The Peninsular Plateau" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-diagram.svg" alt="Diagram: 2.3 The Peninsular Plateau" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-sticky.svg" alt="Sticky Note: 2.3 The Peninsular Plateau" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-sticky.svg" alt="Sticky Note: 2.3 The Peninsular Plateau" width="30%">
 </a>
 
 
@@ -127,14 +127,14 @@ The Peninsular Plateau is the oldest landmass of India (part of Gondwanaland). I
 
 ### 2.4 River Systems of India
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-handwritten.svg" alt="Handwritten: 2.4 River Systems of India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-handwritten.svg" alt="Handwritten: 2.4 River Systems of India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-diagram.svg" alt="Diagram: 2.4 River Systems of India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-diagram.svg" alt="Diagram: 2.4 River Systems of India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-sticky.svg" alt="Sticky Note: 2.4 River Systems of India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-sticky.svg" alt="Sticky Note: 2.4 River Systems of India" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ flowchart TD
 
 ### 2.5 Climate — The Indian Monsoon
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-handwritten.svg" alt="Handwritten: 2.5 Climate — The Indian Monsoon" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-handwritten.svg" alt="Handwritten: 2.5 Climate — The Indian Monsoon" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-diagram.svg" alt="Diagram: 2.5 Climate — The Indian Monsoon" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-diagram.svg" alt="Diagram: 2.5 Climate — The Indian Monsoon" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-sticky.svg" alt="Sticky Note: 2.5 Climate — The Indian Monsoon" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-sticky.svg" alt="Sticky Note: 2.5 Climate — The Indian Monsoon" width="30%">
 </a>
 
 
@@ -228,14 +228,14 @@ flowchart TD
 
 ### 2.6 Soils of India
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-handwritten.svg" alt="Handwritten: 2.6 Soils of India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-handwritten.svg" alt="Handwritten: 2.6 Soils of India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-diagram.svg" alt="Diagram: 2.6 Soils of India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-diagram.svg" alt="Diagram: 2.6 Soils of India" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-sticky.svg" alt="Sticky Note: 2.6 Soils of India" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-sticky.svg" alt="Sticky Note: 2.6 Soils of India" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ pie title Soil Distribution in India
 
 ### 2.7 Natural Vegetation & Forests
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-handwritten.svg" alt="Handwritten: 2.7 Natural Vegetation & Forests" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-handwritten.svg" alt="Handwritten: 2.7 Natural Vegetation & Forests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-diagram.svg" alt="Diagram: 2.7 Natural Vegetation & Forests" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-diagram.svg" alt="Diagram: 2.7 Natural Vegetation & Forests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-sticky.svg" alt="Sticky Note: 2.7 Natural Vegetation & Forests" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-sticky.svg" alt="Sticky Note: 2.7 Natural Vegetation & Forests" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ pie title Soil Distribution in India
 
 ### 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-handwritten.svg" alt="Handwritten: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-handwritten.svg" alt="Handwritten: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-diagram.svg" alt="Diagram: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-diagram.svg" alt="Diagram: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-sticky.svg" alt="Sticky Note: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-sticky.svg" alt="Sticky Note: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
 </a>
 
 
@@ -324,14 +324,14 @@ pie title Soil Distribution in India
 
 ### 2.9 Agriculture & Irrigation
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-handwritten.svg" alt="Handwritten: 2.9 Agriculture & Irrigation" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-handwritten.svg" alt="Handwritten: 2.9 Agriculture & Irrigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-diagram.svg" alt="Diagram: 2.9 Agriculture & Irrigation" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-diagram.svg" alt="Diagram: 2.9 Agriculture & Irrigation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-sticky.svg" alt="Sticky Note: 2.9 Agriculture & Irrigation" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-sticky.svg" alt="Sticky Note: 2.9 Agriculture & Irrigation" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ pie title Soil Distribution in India
 
 ### 2.10 Minerals & Energy Resources
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-handwritten.svg" alt="Handwritten: 2.10 Minerals & Energy Resources" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-handwritten.svg" alt="Handwritten: 2.10 Minerals & Energy Resources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-diagram.svg" alt="Diagram: 2.10 Minerals & Energy Resources" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-diagram.svg" alt="Diagram: 2.10 Minerals & Energy Resources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-sticky.svg" alt="Sticky Note: 2.10 Minerals & Energy Resources" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-sticky.svg" alt="Sticky Note: 2.10 Minerals & Energy Resources" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ pie title Soil Distribution in India
 
 ### 2.11 Population Geography
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-handwritten.svg" alt="Handwritten: 2.11 Population Geography" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-handwritten.svg" alt="Handwritten: 2.11 Population Geography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-diagram.svg" alt="Diagram: 2.11 Population Geography" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-diagram.svg" alt="Diagram: 2.11 Population Geography" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-sticky.svg" alt="Sticky Note: 2.11 Population Geography" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-sticky.svg" alt="Sticky Note: 2.11 Population Geography" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ pie title Soil Distribution in India
 
 ### 2.12 Environment, Biodiversity & Conservation
 
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-handwritten.svg" alt="Handwritten: 2.12 Environment, Biodiversity & Conservation" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-handwritten.svg" alt="Handwritten: 2.12 Environment, Biodiversity & Conservation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-diagram.svg" alt="Diagram: 2.12 Environment, Biodiversity & Conservation" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-diagram.svg" alt="Diagram: 2.12 Environment, Biodiversity & Conservation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-sticky.svg" alt="Sticky Note: 2.12 Environment, Biodiversity & Conservation" width="30%">
+<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-sticky.svg" alt="Sticky Note: 2.12 Environment, Biodiversity & Conservation" width="30%">
 </a>
 
 

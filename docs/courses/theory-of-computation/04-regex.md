@@ -43,14 +43,14 @@ flowchart LR
 
 ### 3.1 What is a Regular Expression?
 
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-handwritten.svg" alt="Handwritten: 3.1 What is a Regular Expression?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-handwritten.svg" alt="Handwritten: 3.1 What is a Regular Expression?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-diagram.svg" alt="Diagram: 3.1 What is a Regular Expression?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-diagram.svg" alt="Diagram: 3.1 What is a Regular Expression?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-sticky.svg" alt="Sticky Note: 3.1 What is a Regular Expression?" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-1-what-is-a-regular-expression-sticky.svg" alt="Sticky Note: 3.1 What is a Regular Expression?" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ A regular expression **r** denotes a language **L(r)**, which is a set of string
 
 ### 3.2 Formal Definition
 
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-handwritten.svg" alt="Handwritten: 3.2 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-handwritten.svg" alt="Handwritten: 3.2 Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-diagram.svg" alt="Diagram: 3.2 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-diagram.svg" alt="Diagram: 3.2 Formal Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-sticky.svg" alt="Sticky Note: 3.2 Formal Definition" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-2-formal-definition-sticky.svg" alt="Sticky Note: 3.2 Formal Definition" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ Additional derived operators:
 
 ### 3.3 Operator Precedence
 
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-handwritten.svg" alt="Handwritten: 3.3 Operator Precedence" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-handwritten.svg" alt="Handwritten: 3.3 Operator Precedence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-diagram.svg" alt="Diagram: 3.3 Operator Precedence" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-diagram.svg" alt="Diagram: 3.3 Operator Precedence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-sticky.svg" alt="Sticky Note: 3.3 Operator Precedence" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-3-operator-precedence-sticky.svg" alt="Sticky Note: 3.3 Operator Precedence" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ So `ab*c` means `a(b*)c`, not `(ab)*c` or `ab(*c)`.
 
 ### 3.4 Algebraic Laws of Regular Expressions
 
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-handwritten.svg" alt="Handwritten: 3.4 Algebraic Laws of Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-handwritten.svg" alt="Handwritten: 3.4 Algebraic Laws of Regular Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-diagram.svg" alt="Diagram: 3.4 Algebraic Laws of Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-diagram.svg" alt="Diagram: 3.4 Algebraic Laws of Regular Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-sticky.svg" alt="Sticky Note: 3.4 Algebraic Laws of Regular Expressions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-4-algebraic-laws-of-regular-expressions-sticky.svg" alt="Sticky Note: 3.4 Algebraic Laws of Regular Expressions" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ Regular expressions satisfy algebraic laws that can be used to simplify and mani
 
 ### 3.5 Equivalence of Regular Expressions and Finite Automata
 
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-handwritten.svg" alt="Handwritten: 3.5 Equivalence of Regular Expressions and Finite Automata" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-handwritten.svg" alt="Handwritten: 3.5 Equivalence of Regular Expressions and Finite Automata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-diagram.svg" alt="Diagram: 3.5 Equivalence of Regular Expressions and Finite Automata" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-diagram.svg" alt="Diagram: 3.5 Equivalence of Regular Expressions and Finite Automata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-sticky.svg" alt="Sticky Note: 3.5 Equivalence of Regular Expressions and Finite Automata" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-5-equivalence-of-regular-expressions-and-finite-automata-sticky.svg" alt="Sticky Note: 3.5 Equivalence of Regular Expressions and Finite Automata" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ Let Nâ‚ and Nâ‚‚ be the NFAs for r and s with start states sâ‚, s
 
 ### 3.6 Arden's Lemma
 
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-handwritten.svg" alt="Handwritten: 3.6 Arden's Lemma" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-handwritten.svg" alt="Handwritten: 3.6 Arden's Lemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-diagram.svg" alt="Diagram: 3.6 Arden's Lemma" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-diagram.svg" alt="Diagram: 3.6 Arden's Lemma" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-sticky.svg" alt="Sticky Note: 3.6 Arden's Lemma" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/04-regex/3-6-arden-s-lemma-sticky.svg" alt="Sticky Note: 3.6 Arden's Lemma" width="30%">
 </a>
 
 

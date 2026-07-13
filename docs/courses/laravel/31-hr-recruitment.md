@@ -128,14 +128,14 @@ flowchart LR
 
 ### 31.1 HR Data Models
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-handwritten.svg" alt="Handwritten: 31.1 HR Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-handwritten.svg" alt="Handwritten: 31.1 HR Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-diagram.svg" alt="Diagram: 31.1 HR Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-diagram.svg" alt="Diagram: 31.1 HR Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-sticky.svg" alt="Sticky Note: 31.1 HR Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-sticky.svg" alt="Sticky Note: 31.1 HR Data Models" width="30%">
 </a>
 
 
@@ -491,14 +491,14 @@ class HrDocument extends Model
 
 ### 31.2 Resume Screening & Ranking Agents
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-handwritten.svg" alt="Handwritten: 31.2 Resume Screening & Ranking Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-handwritten.svg" alt="Handwritten: 31.2 Resume Screening & Ranking Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-diagram.svg" alt="Diagram: 31.2 Resume Screening & Ranking Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-diagram.svg" alt="Diagram: 31.2 Resume Screening & Ranking Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-sticky.svg" alt="Sticky Note: 31.2 Resume Screening & Ranking Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-sticky.svg" alt="Sticky Note: 31.2 Resume Screening & Ranking Agents" width="30%">
 </a>
 
 
@@ -705,14 +705,14 @@ class ResumeScreeningAgent
 
 ### 31.3 Interview Scheduling Automation
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-handwritten.svg" alt="Handwritten: 31.3 Interview Scheduling Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-handwritten.svg" alt="Handwritten: 31.3 Interview Scheduling Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-diagram.svg" alt="Diagram: 31.3 Interview Scheduling Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-diagram.svg" alt="Diagram: 31.3 Interview Scheduling Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-sticky.svg" alt="Sticky Note: 31.3 Interview Scheduling Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-sticky.svg" alt="Sticky Note: 31.3 Interview Scheduling Automation" width="30%">
 </a>
 
 
@@ -982,14 +982,14 @@ class InterviewSchedulingAgent
 
 ### 31.4 Candidate Matching Agents
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-handwritten.svg" alt="Handwritten: 31.4 Candidate Matching Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-handwritten.svg" alt="Handwritten: 31.4 Candidate Matching Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-diagram.svg" alt="Diagram: 31.4 Candidate Matching Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-diagram.svg" alt="Diagram: 31.4 Candidate Matching Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-sticky.svg" alt="Sticky Note: 31.4 Candidate Matching Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-sticky.svg" alt="Sticky Note: 31.4 Candidate Matching Agents" width="30%">
 </a>
 
 
@@ -1188,14 +1188,14 @@ class CandidateMatchingAgent
 
 ### 31.5 Onboarding Workflow Agents
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-handwritten.svg" alt="Handwritten: 31.5 Onboarding Workflow Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-handwritten.svg" alt="Handwritten: 31.5 Onboarding Workflow Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-diagram.svg" alt="Diagram: 31.5 Onboarding Workflow Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-diagram.svg" alt="Diagram: 31.5 Onboarding Workflow Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-sticky.svg" alt="Sticky Note: 31.5 Onboarding Workflow Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-sticky.svg" alt="Sticky Note: 31.5 Onboarding Workflow Agents" width="30%">
 </a>
 
 
@@ -1393,14 +1393,14 @@ class OnboardingAgent
 
 ### 31.6 Performance Review Analysis
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-handwritten.svg" alt="Handwritten: 31.6 Performance Review Analysis" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-handwritten.svg" alt="Handwritten: 31.6 Performance Review Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-diagram.svg" alt="Diagram: 31.6 Performance Review Analysis" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-diagram.svg" alt="Diagram: 31.6 Performance Review Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-sticky.svg" alt="Sticky Note: 31.6 Performance Review Analysis" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-sticky.svg" alt="Sticky Note: 31.6 Performance Review Analysis" width="30%">
 </a>
 
 
@@ -1615,14 +1615,14 @@ class PerformanceReviewAgent
 
 ### 31.7 Employee Sentiment Monitoring
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-handwritten.svg" alt="Handwritten: 31.7 Employee Sentiment Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-handwritten.svg" alt="Handwritten: 31.7 Employee Sentiment Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-diagram.svg" alt="Diagram: 31.7 Employee Sentiment Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-diagram.svg" alt="Diagram: 31.7 Employee Sentiment Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-sticky.svg" alt="Sticky Note: 31.7 Employee Sentiment Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-sticky.svg" alt="Sticky Note: 31.7 Employee Sentiment Monitoring" width="30%">
 </a>
 
 
@@ -1903,14 +1903,14 @@ class SentimentAgent
 
 ### 31.8 Training & Development Recommendation
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-handwritten.svg" alt="Handwritten: 31.8 Training & Development Recommendation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-handwritten.svg" alt="Handwritten: 31.8 Training & Development Recommendation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-diagram.svg" alt="Diagram: 31.8 Training & Development Recommendation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-diagram.svg" alt="Diagram: 31.8 Training & Development Recommendation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-sticky.svg" alt="Sticky Note: 31.8 Training & Development Recommendation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-sticky.svg" alt="Sticky Note: 31.8 Training & Development Recommendation" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ class TrainingRecommendationAgent
 
 ### 31.9 Compliance & Reporting
 
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-handwritten.svg" alt="Handwritten: 31.9 Compliance & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-handwritten.svg" alt="Handwritten: 31.9 Compliance & Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-diagram.svg" alt="Diagram: 31.9 Compliance & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-diagram.svg" alt="Diagram: 31.9 Compliance & Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-sticky.svg" alt="Sticky Note: 31.9 Compliance & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-sticky.svg" alt="Sticky Note: 31.9 Compliance & Reporting" width="30%">
 </a>
 
 

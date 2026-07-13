@@ -58,14 +58,14 @@ flowchart LR
 
 ### Address Binding
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-handwritten.svg" alt="Handwritten: Address Binding" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-handwritten.svg" alt="Handwritten: Address Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-diagram.svg" alt="Diagram: Address Binding" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-diagram.svg" alt="Diagram: Address Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-sticky.svg" alt="Sticky Note: Address Binding" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/address-binding-sticky.svg" alt="Sticky Note: Address Binding" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ if __name__ == "__main__":
 
 ### Logical vs Physical Address
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-handwritten.svg" alt="Handwritten: Logical vs Physical Address" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-handwritten.svg" alt="Handwritten: Logical vs Physical Address" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-diagram.svg" alt="Diagram: Logical vs Physical Address" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-diagram.svg" alt="Diagram: Logical vs Physical Address" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-sticky.svg" alt="Sticky Note: Logical vs Physical Address" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/logical-vs-physical-address-sticky.svg" alt="Sticky Note: Logical vs Physical Address" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ Physical Address (32 bits):
 
 ### MMU — Memory Management Unit
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-handwritten.svg" alt="Handwritten: MMU — Memory Management Unit" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-handwritten.svg" alt="Handwritten: MMU — Memory Management Unit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-diagram.svg" alt="Diagram: MMU — Memory Management Unit" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-diagram.svg" alt="Diagram: MMU — Memory Management Unit" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-sticky.svg" alt="Sticky Note: MMU — Memory Management Unit" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/mmu-memory-management-unit-sticky.svg" alt="Sticky Note: MMU — Memory Management Unit" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ END PROCEDURE
 
 ### Contiguous Allocation
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-handwritten.svg" alt="Handwritten: Contiguous Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-handwritten.svg" alt="Handwritten: Contiguous Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-diagram.svg" alt="Diagram: Contiguous Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-diagram.svg" alt="Diagram: Contiguous Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-sticky.svg" alt="Sticky Note: Contiguous Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/contiguous-allocation-sticky.svg" alt="Sticky Note: Contiguous Allocation" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ Step 6: Process P4 (size 500) arrives
 
 ### Dynamic Storage Allocation
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-handwritten.svg" alt="Handwritten: Dynamic Storage Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-handwritten.svg" alt="Handwritten: Dynamic Storage Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-diagram.svg" alt="Diagram: Dynamic Storage Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-diagram.svg" alt="Diagram: Dynamic Storage Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-sticky.svg" alt="Sticky Note: Dynamic Storage Allocation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/dynamic-storage-allocation-sticky.svg" alt="Sticky Note: Dynamic Storage Allocation" width="30%">
 </a>
 
 
@@ -1052,14 +1052,14 @@ Allocation sequence: A(200), B(150), C(100), free A, D(80), free C, E(300)
 
 ### Fragmentation
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-handwritten.svg" alt="Handwritten: Fragmentation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-handwritten.svg" alt="Handwritten: Fragmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-diagram.svg" alt="Diagram: Fragmentation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-diagram.svg" alt="Diagram: Fragmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-sticky.svg" alt="Sticky Note: Fragmentation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/fragmentation-sticky.svg" alt="Sticky Note: Fragmentation" width="30%">
 </a>
 
 
@@ -1156,14 +1156,14 @@ Total: 330 MB used, 50 MB free (contiguous)
 
 ### Paging
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/paging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/paging-handwritten.svg" alt="Handwritten: Paging" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/paging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/paging-handwritten.svg" alt="Handwritten: Paging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/paging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/paging-diagram.svg" alt="Diagram: Paging" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/paging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/paging-diagram.svg" alt="Diagram: Paging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/paging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/paging-sticky.svg" alt="Sticky Note: Paging" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/paging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/paging-sticky.svg" alt="Sticky Note: Paging" width="30%">
 </a>
 
 
@@ -1777,14 +1777,14 @@ int main() {
 
 ### Segmentation
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-handwritten.svg" alt="Handwritten: Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-handwritten.svg" alt="Handwritten: Segmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-diagram.svg" alt="Diagram: Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-diagram.svg" alt="Diagram: Segmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-sticky.svg" alt="Sticky Note: Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-sticky.svg" alt="Sticky Note: Segmentation" width="30%">
 </a>
 
 
@@ -1951,14 +1951,14 @@ int main() {
 
 ### Segmentation with Paging (x86 Architecture)
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-handwritten.svg" alt="Handwritten: Segmentation with Paging (x86 Architecture)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-handwritten.svg" alt="Handwritten: Segmentation with Paging (x86 Architecture)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-diagram.svg" alt="Diagram: Segmentation with Paging (x86 Architecture)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-diagram.svg" alt="Diagram: Segmentation with Paging (x86 Architecture)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-sticky.svg" alt="Sticky Note: Segmentation with Paging (x86 Architecture)" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/segmentation-with-paging-x86-architecture-sticky.svg" alt="Sticky Note: Segmentation with Paging (x86 Architecture)" width="30%">
 </a>
 
 
@@ -2040,14 +2040,14 @@ Linux uses:
 
 ### Swapping
 
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/swapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/swapping-handwritten.svg" alt="Handwritten: Swapping" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/swapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/swapping-handwritten.svg" alt="Handwritten: Swapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/swapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/swapping-diagram.svg" alt="Diagram: Swapping" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/swapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/swapping-diagram.svg" alt="Diagram: Swapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/operating-systems/08-memory-management/swapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/operating-systems/08-memory-management/swapping-sticky.svg" alt="Sticky Note: Swapping" width="30%">
+<a href="../../../assets/images/diagrams/operating-systems/08-memory-management/swapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/operating-systems/08-memory-management/swapping-sticky.svg" alt="Sticky Note: Swapping" width="30%">
 </a>
 
 

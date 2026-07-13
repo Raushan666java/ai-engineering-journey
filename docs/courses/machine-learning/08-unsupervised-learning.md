@@ -66,28 +66,28 @@ flowchart LR
 
 ### What is Unsupervised Learning?
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-handwritten.svg" alt="Handwritten: What is Unsupervised Learning?" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-handwritten.svg" alt="Handwritten: What is Unsupervised Learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-diagram.svg" alt="Diagram: What is Unsupervised Learning?" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-diagram.svg" alt="Diagram: What is Unsupervised Learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-sticky.svg" alt="Sticky Note: What is Unsupervised Learning?" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/what-is-unsupervised-learning-sticky.svg" alt="Sticky Note: What is Unsupervised Learning?" width="30%">
 </a>
 
 Unsupervised Learning involves training models on data that does not have explicit labels or targets. The goal is to discover underlying structures, patterns, or groupings within the data. Unlike supervised learning, there is no "correct" answer to compare against; instead, we look for data-driven insights. Common use cases include customer segmentation, anomaly detection, dimensionality reduction, and exploratory data analysis.
 
 ### K-means Clustering
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-handwritten.svg" alt="Handwritten: K-means Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-handwritten.svg" alt="Handwritten: K-means Clustering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-diagram.svg" alt="Diagram: K-means Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-diagram.svg" alt="Diagram: K-means Clustering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-sticky.svg" alt="Sticky Note: K-means Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-clustering-sticky.svg" alt="Sticky Note: K-means Clustering" width="30%">
 </a>
 
 K-means is a popular centroid-based clustering algorithm. It partitions $n$ observations into $K$ clusters, where each observation belongs to the cluster with the nearest mean (centroid).
@@ -102,14 +102,14 @@ K-means is a popular centroid-based clustering algorithm. It partitions $n$ obse
 
 ### K-means++ Initialization
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-handwritten.svg" alt="Handwritten: K-means++ Initialization" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-handwritten.svg" alt="Handwritten: K-means++ Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-diagram.svg" alt="Diagram: K-means++ Initialization" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-diagram.svg" alt="Diagram: K-means++ Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-sticky.svg" alt="Sticky Note: K-means++ Initialization" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/k-means-initialization-sticky.svg" alt="Sticky Note: K-means++ Initialization" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ flowchart TD
 
 ### DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-handwritten.svg" alt="Handwritten: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-handwritten.svg" alt="Handwritten: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-diagram.svg" alt="Diagram: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-diagram.svg" alt="Diagram: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-sticky.svg" alt="Sticky Note: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/dbscan-density-based-spatial-clustering-of-applications-with-noise-sticky.svg" alt="Sticky Note: DBSCAN (Density-Based Spatial Clustering of Applications with Noise)" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ flowchart LR
 
 ### Gaussian Mixture Models (GMM)
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-handwritten.svg" alt="Handwritten: Gaussian Mixture Models (GMM)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-handwritten.svg" alt="Handwritten: Gaussian Mixture Models (GMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-diagram.svg" alt="Diagram: Gaussian Mixture Models (GMM)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-diagram.svg" alt="Diagram: Gaussian Mixture Models (GMM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-sticky.svg" alt="Sticky Note: Gaussian Mixture Models (GMM)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/gaussian-mixture-models-gmm-sticky.svg" alt="Sticky Note: Gaussian Mixture Models (GMM)" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ GMM assumes the data is generated from a mixture of $K$ Gaussian distributions, 
 
 ### Cluster Validation
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-handwritten.svg" alt="Handwritten: Cluster Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-handwritten.svg" alt="Handwritten: Cluster Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-diagram.svg" alt="Diagram: Cluster Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-diagram.svg" alt="Diagram: Cluster Validation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-sticky.svg" alt="Sticky Note: Cluster Validation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/cluster-validation-sticky.svg" alt="Sticky Note: Cluster Validation" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ flowchart LR
 
 ### Feature Scaling for Clustering
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-handwritten.svg" alt="Handwritten: Feature Scaling for Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-handwritten.svg" alt="Handwritten: Feature Scaling for Clustering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-diagram.svg" alt="Diagram: Feature Scaling for Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-diagram.svg" alt="Diagram: Feature Scaling for Clustering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-sticky.svg" alt="Sticky Note: Feature Scaling for Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/feature-scaling-for-clustering-sticky.svg" alt="Sticky Note: Feature Scaling for Clustering" width="30%">
 </a>
 
 
@@ -311,14 +311,14 @@ Distance-based clustering algorithms (K-means, DBSCAN, hierarchical) are highly 
 
 ### Curse of Dimensionality for Clustering
 
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-handwritten.svg" alt="Handwritten: Curse of Dimensionality for Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-handwritten.svg" alt="Handwritten: Curse of Dimensionality for Clustering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-diagram.svg" alt="Diagram: Curse of Dimensionality for Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-diagram.svg" alt="Diagram: Curse of Dimensionality for Clustering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-sticky.svg" alt="Sticky Note: Curse of Dimensionality for Clustering" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/08-unsupervised-learning/curse-of-dimensionality-for-clustering-sticky.svg" alt="Sticky Note: Curse of Dimensionality for Clustering" width="30%">
 </a>
 
 

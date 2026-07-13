@@ -51,14 +51,14 @@ flowchart LR
 
 ### Hash Table Concept
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-handwritten.svg" alt="Handwritten: Hash Table Concept" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-handwritten.svg" alt="Handwritten: Hash Table Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-diagram.svg" alt="Diagram: Hash Table Concept" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-diagram.svg" alt="Diagram: Hash Table Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-sticky.svg" alt="Sticky Note: Hash Table Concept" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-table-concept-sticky.svg" alt="Sticky Note: Hash Table Concept" width="30%">
 </a>
 
 
@@ -74,14 +74,14 @@ A hash table maps keys to values using a **hash function** \( h(k) \) that compu
 
 ### Hash Function
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-handwritten.svg" alt="Handwritten: Hash Function" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-handwritten.svg" alt="Handwritten: Hash Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-diagram.svg" alt="Diagram: Hash Function" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-diagram.svg" alt="Diagram: Hash Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-sticky.svg" alt="Sticky Note: Hash Function" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/hash-function-sticky.svg" alt="Sticky Note: Hash Function" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ public class HashUtils {
 
 ### Chaining
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-handwritten.svg" alt="Handwritten: Chaining" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/chaining-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/chaining-handwritten.svg" alt="Handwritten: Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-diagram.svg" alt="Diagram: Chaining" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/chaining-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/chaining-diagram.svg" alt="Diagram: Chaining" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/chaining-sticky.svg" alt="Sticky Note: Chaining" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/chaining-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/chaining-sticky.svg" alt="Sticky Note: Chaining" width="30%">
 </a>
 
 
@@ -546,14 +546,14 @@ class HashTableChaining<K, V> {
 
 ### Open Addressing
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-handwritten.svg" alt="Handwritten: Open Addressing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-handwritten.svg" alt="Handwritten: Open Addressing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-diagram.svg" alt="Diagram: Open Addressing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-diagram.svg" alt="Diagram: Open Addressing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-sticky.svg" alt="Sticky Note: Open Addressing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/open-addressing-sticky.svg" alt="Sticky Note: Open Addressing" width="30%">
 </a>
 
 
@@ -1293,14 +1293,14 @@ class HashTableOpen<K, V> {
 
 ### Rehashing
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-handwritten.svg" alt="Handwritten: Rehashing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-handwritten.svg" alt="Handwritten: Rehashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-diagram.svg" alt="Diagram: Rehashing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-diagram.svg" alt="Diagram: Rehashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-sticky.svg" alt="Sticky Note: Rehashing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/rehashing-sticky.svg" alt="Sticky Note: Rehashing" width="30%">
 </a>
 
 
@@ -1365,14 +1365,14 @@ New table: [22][ ][ ][ ][4][ ][ ][ ][ ][31][10] — all indices recomputed.
 
 ### Cuckoo Hashing
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-handwritten.svg" alt="Handwritten: Cuckoo Hashing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-handwritten.svg" alt="Handwritten: Cuckoo Hashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-diagram.svg" alt="Diagram: Cuckoo Hashing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-diagram.svg" alt="Diagram: Cuckoo Hashing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-sticky.svg" alt="Sticky Note: Cuckoo Hashing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/cuckoo-hashing-sticky.svg" alt="Sticky Note: Cuckoo Hashing" width="30%">
 </a>
 
 
@@ -1760,14 +1760,14 @@ class CuckooHashTable<K, V> {
 
 ### Comparison: Chaining vs Open Addressing
 
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-handwritten.svg" alt="Handwritten: Comparison: Chaining vs Open Addressing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-handwritten.svg" alt="Handwritten: Comparison: Chaining vs Open Addressing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-diagram.svg" alt="Diagram: Comparison: Chaining vs Open Addressing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-diagram.svg" alt="Diagram: Comparison: Chaining vs Open Addressing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-sticky.svg" alt="Sticky Note: Comparison: Chaining vs Open Addressing" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/07-hash-tables/comparison-chaining-vs-open-addressing-sticky.svg" alt="Sticky Note: Comparison: Chaining vs Open Addressing" width="30%">
 </a>
 
 

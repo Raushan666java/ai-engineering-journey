@@ -23,14 +23,14 @@
 
 ### The Software Process
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-handwritten.svg" alt="Handwritten: The Software Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-handwritten.svg" alt="Handwritten: The Software Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-diagram.svg" alt="Diagram: The Software Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-diagram.svg" alt="Diagram: The Software Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-sticky.svg" alt="Sticky Note: The Software Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-software-process-sticky.svg" alt="Sticky Note: The Software Process" width="30%">
 </a>
 
 
@@ -62,14 +62,14 @@ graph TD
 
 ### The Waterfall Model
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-handwritten.svg" alt="Handwritten: The Waterfall Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-handwritten.svg" alt="Handwritten: The Waterfall Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-diagram.svg" alt="Diagram: The Waterfall Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-diagram.svg" alt="Diagram: The Waterfall Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-sticky.svg" alt="Sticky Note: The Waterfall Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-waterfall-model-sticky.svg" alt="Sticky Note: The Waterfall Model" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ graph LR
 
 ### Waterfall vs Agile — Detailed Comparison
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-handwritten.svg" alt="Handwritten: Waterfall vs Agile — Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-handwritten.svg" alt="Handwritten: Waterfall vs Agile — Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-diagram.svg" alt="Diagram: Waterfall vs Agile — Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-diagram.svg" alt="Diagram: Waterfall vs Agile — Detailed Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-sticky.svg" alt="Sticky Note: Waterfall vs Agile — Detailed Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/waterfall-vs-agile-detailed-comparison-sticky.svg" alt="Sticky Note: Waterfall vs Agile — Detailed Comparison" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ graph LR
 
 ### The V-Model
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-handwritten.svg" alt="Handwritten: The V-Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-handwritten.svg" alt="Handwritten: The V-Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-diagram.svg" alt="Diagram: The V-Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-diagram.svg" alt="Diagram: The V-Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-sticky.svg" alt="Sticky Note: The V-Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-v-model-sticky.svg" alt="Sticky Note: The V-Model" width="30%">
 </a>
 
 
@@ -177,14 +177,14 @@ The V-model is particularly prevalent in safety-critical and regulated domains w
 
 ### Incremental and Iterative Development
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-handwritten.svg" alt="Handwritten: Incremental and Iterative Development" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-handwritten.svg" alt="Handwritten: Incremental and Iterative Development" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-diagram.svg" alt="Diagram: Incremental and Iterative Development" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-diagram.svg" alt="Diagram: Incremental and Iterative Development" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-sticky.svg" alt="Sticky Note: Incremental and Iterative Development" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/incremental-and-iterative-development-sticky.svg" alt="Sticky Note: Incremental and Iterative Development" width="30%">
 </a>
 
 
@@ -216,14 +216,14 @@ Many modern processes combine both approaches: the system is built incrementally
 
 ### The Spiral Model
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-handwritten.svg" alt="Handwritten: The Spiral Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-handwritten.svg" alt="Handwritten: The Spiral Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-diagram.svg" alt="Diagram: The Spiral Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-diagram.svg" alt="Diagram: The Spiral Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-sticky.svg" alt="Sticky Note: The Spiral Model" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-spiral-model-sticky.svg" alt="Sticky Note: The Spiral Model" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ Each loop has four quadrants:
 
 ### The Unified Process
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-handwritten.svg" alt="Handwritten: The Unified Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-handwritten.svg" alt="Handwritten: The Unified Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-diagram.svg" alt="Diagram: The Unified Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-diagram.svg" alt="Diagram: The Unified Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-sticky.svg" alt="Sticky Note: The Unified Process" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-unified-process-sticky.svg" alt="Sticky Note: The Unified Process" width="30%">
 </a>
 
 
@@ -313,14 +313,14 @@ Each phase consists of iterations, and each iteration encompasses activities fro
 
 ### The Agile Manifesto
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-handwritten.svg" alt="Handwritten: The Agile Manifesto" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-handwritten.svg" alt="Handwritten: The Agile Manifesto" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-diagram.svg" alt="Diagram: The Agile Manifesto" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-diagram.svg" alt="Diagram: The Agile Manifesto" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-sticky.svg" alt="Sticky Note: The Agile Manifesto" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-agile-manifesto-sticky.svg" alt="Sticky Note: The Agile Manifesto" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ The accompanying **twelve principles** emphasise:
 
 ### Extreme Programming
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-handwritten.svg" alt="Handwritten: Extreme Programming" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-handwritten.svg" alt="Handwritten: Extreme Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-diagram.svg" alt="Diagram: Extreme Programming" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-diagram.svg" alt="Diagram: Extreme Programming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-sticky.svg" alt="Sticky Note: Extreme Programming" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/extreme-programming-sticky.svg" alt="Sticky Note: Extreme Programming" width="30%">
 </a>
 
 
@@ -386,14 +386,14 @@ Extreme Programming (XP), developed by Beck, is an agile methodology that takes 
 
 ### Scrum
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/scrum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/scrum-handwritten.svg" alt="Handwritten: Scrum" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/scrum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/scrum-handwritten.svg" alt="Handwritten: Scrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/scrum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/scrum-diagram.svg" alt="Diagram: Scrum" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/scrum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/scrum-diagram.svg" alt="Diagram: Scrum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/scrum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/scrum-sticky.svg" alt="Sticky Note: Scrum" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/scrum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/scrum-sticky.svg" alt="Sticky Note: Scrum" width="30%">
 </a>
 
 
@@ -441,14 +441,14 @@ graph TD
 
 ### The Hybrid Model: Water-Scrum-Fall
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-handwritten.svg" alt="Handwritten: The Hybrid Model: Water-Scrum-Fall" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-handwritten.svg" alt="Handwritten: The Hybrid Model: Water-Scrum-Fall" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-diagram.svg" alt="Diagram: The Hybrid Model: Water-Scrum-Fall" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-diagram.svg" alt="Diagram: The Hybrid Model: Water-Scrum-Fall" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-sticky.svg" alt="Sticky Note: The Hybrid Model: Water-Scrum-Fall" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/the-hybrid-model-water-scrum-fall-sticky.svg" alt="Sticky Note: The Hybrid Model: Water-Scrum-Fall" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ Many real-world organisations adopt a **Water-Scrum-Fall** hybrid: upfront Water
 
 ### Kanban
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/kanban-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/kanban-handwritten.svg" alt="Handwritten: Kanban" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/kanban-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/kanban-handwritten.svg" alt="Handwritten: Kanban" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/kanban-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/kanban-diagram.svg" alt="Diagram: Kanban" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/kanban-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/kanban-diagram.svg" alt="Diagram: Kanban" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/kanban-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/kanban-sticky.svg" alt="Sticky Note: Kanban" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/kanban-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/kanban-sticky.svg" alt="Sticky Note: Kanban" width="30%">
 </a>
 
 
@@ -484,14 +484,14 @@ Kanban is a flow-based method that focuses on visualising work, limiting work in
 
 ### DevSecOps
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/devsecops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/devsecops-handwritten.svg" alt="Handwritten: DevSecOps" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/devsecops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/devsecops-handwritten.svg" alt="Handwritten: DevSecOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/devsecops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/devsecops-diagram.svg" alt="Diagram: DevSecOps" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/devsecops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/devsecops-diagram.svg" alt="Diagram: DevSecOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/devsecops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/devsecops-sticky.svg" alt="Sticky Note: DevSecOps" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/devsecops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/devsecops-sticky.svg" alt="Sticky Note: DevSecOps" width="30%">
 </a>
 
 
@@ -507,14 +507,14 @@ DevSecOps extends DevOps by integrating security practices throughout the softwa
 
 ### Process Model Selection Decision Flow
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-handwritten.svg" alt="Handwritten: Process Model Selection Decision Flow" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-handwritten.svg" alt="Handwritten: Process Model Selection Decision Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-diagram.svg" alt="Diagram: Process Model Selection Decision Flow" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-diagram.svg" alt="Diagram: Process Model Selection Decision Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-sticky.svg" alt="Sticky Note: Process Model Selection Decision Flow" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-decision-flow-sticky.svg" alt="Sticky Note: Process Model Selection Decision Flow" width="30%">
 </a>
 
 
@@ -563,14 +563,14 @@ graph TD
 
 ### Process Model Selection Matrix
 
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-handwritten.svg" alt="Handwritten: Process Model Selection Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-handwritten.svg" alt="Handwritten: Process Model Selection Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-diagram.svg" alt="Diagram: Process Model Selection Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-diagram.svg" alt="Diagram: Process Model Selection Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-sticky.svg" alt="Sticky Note: Process Model Selection Matrix" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/01-process-models/process-model-selection-matrix-sticky.svg" alt="Sticky Note: Process Model Selection Matrix" width="30%">
 </a>
 
 

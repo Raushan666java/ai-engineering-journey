@@ -9,14 +9,14 @@
 
 ### Q1: What are focused and diffuse modes of thinking, and when should you use each?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" alt="Diagram: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" alt="Diagram: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
 </a>
 
 
@@ -50,14 +50,14 @@ public class SubnetCalculator {
 
 ### Q2: How do you know when to switch between focused and diffuse modes?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" alt="Handwritten: How do you know when to switch between focused and diffuse modes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" alt="Handwritten: How do you know when to switch between focused and diffuse modes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" alt="Diagram: How do you know when to switch between focused and diffuse modes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" alt="Diagram: How do you know when to switch between focused and diffuse modes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" alt="Sticky Note: How do you know when to switch between focused and diffuse modes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" alt="Sticky Note: How do you know when to switch between focused and diffuse modes?" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ Stop. Take a walk. Let your brain's diffuse networks re-organize what you've lea
 
 ### Q3: What is the 4-chunk limit, and how does it affect studying?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is the 4-chunk limit, and how does it affect studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is the 4-chunk limit, and how does it affect studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is the 4-chunk limit, and how does it affect studying?" width="30%">
 </a>
 
 
@@ -113,14 +113,14 @@ public class ChunkExample {
 
 ### Q4: How do you build a chunk from new material?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-handwritten.svg" alt="Handwritten: How do you build a chunk from new material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-handwritten.svg" alt="Handwritten: How do you build a chunk from new material?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-diagram.svg" alt="Diagram: How do you build a chunk from new material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-diagram.svg" alt="Diagram: How do you build a chunk from new material?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-sticky.svg" alt="Sticky Note: How do you build a chunk from new material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-build-a-chunk-from-new-material-sticky.svg" alt="Sticky Note: How do you build a chunk from new material?" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ class BST {
 
 ### Q5: How does chunk hierarchy help you understand layered systems?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" alt="Handwritten: How does chunk hierarchy help you understand layered systems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" alt="Handwritten: How does chunk hierarchy help you understand layered systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" alt="Diagram: How does chunk hierarchy help you understand layered systems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" alt="Diagram: How does chunk hierarchy help you understand layered systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" alt="Sticky Note: How does chunk hierarchy help you understand layered systems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" alt="Sticky Note: How does chunk hierarchy help you understand layered systems?" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ public enum OsiLayer {
 
 ### Q6: What's the difference between procedural and declarative knowledge, and why does it matter?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" alt="Diagram: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" alt="Diagram: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ Many students read the code and think "I understand" → that's declarative. But
 
 ### Q7: How does sleep affect memory consolidation?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-handwritten.svg" alt="Handwritten: How does sleep affect memory consolidation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-handwritten.svg" alt="Handwritten: How does sleep affect memory consolidation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-diagram.svg" alt="Diagram: How does sleep affect memory consolidation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-diagram.svg" alt="Diagram: How does sleep affect memory consolidation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-sticky.svg" alt="Sticky Note: How does sleep affect memory consolidation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-sleep-affect-memory-consolidation-sticky.svg" alt="Sticky Note: How does sleep affect memory consolidation?" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ public class MemoryConsolidation {
 
 ### Q8: What is deliberate practice, and how do you apply it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-handwritten.svg" alt="Handwritten: What is deliberate practice, and how do you apply it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-handwritten.svg" alt="Handwritten: What is deliberate practice, and how do you apply it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-diagram.svg" alt="Diagram: What is deliberate practice, and how do you apply it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-diagram.svg" alt="Diagram: What is deliberate practice, and how do you apply it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-sticky.svg" alt="Sticky Note: What is deliberate practice, and how do you apply it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-deliberate-practice-and-how-do-you-apply-it-sticky.svg" alt="Sticky Note: What is deliberate practice, and how do you apply it?" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ public double findMedianSortedArrays(int[] nums1, int[] nums2) {
 
 ### Q9: What are illusions of competence, and how do you avoid them?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-handwritten.svg" alt="Handwritten: What are illusions of competence, and how do you avoid them?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-handwritten.svg" alt="Handwritten: What are illusions of competence, and how do you avoid them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-diagram.svg" alt="Diagram: What are illusions of competence, and how do you avoid them?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-diagram.svg" alt="Diagram: What are illusions of competence, and how do you avoid them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-sticky.svg" alt="Sticky Note: What are illusions of competence, and how do you avoid them?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-illusions-of-competence-and-how-do-you-avoid-them-sticky.svg" alt="Sticky Note: What are illusions of competence, and how do you avoid them?" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ public class CompetenceIllusion {
 
 ### Q10: What is the recall test truth, and why is it the most effective study technique?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-handwritten.svg" alt="Handwritten: What is the recall test truth, and why is it the most effective study technique?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-handwritten.svg" alt="Handwritten: What is the recall test truth, and why is it the most effective study technique?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-diagram.svg" alt="Diagram: What is the recall test truth, and why is it the most effective study technique?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-diagram.svg" alt="Diagram: What is the recall test truth, and why is it the most effective study technique?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-sticky.svg" alt="Sticky Note: What is the recall test truth, and why is it the most effective study technique?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-recall-test-truth-and-why-is-it-the-most-effective-study-technique-sticky.svg" alt="Sticky Note: What is the recall test truth, and why is it the most effective study technique?" width="30%">
 </a>
 
 
@@ -395,14 +395,14 @@ public class RecallTest {
 
 ### Q11: What is the Einstellung Effect, and how does it block learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-handwritten.svg" alt="Handwritten: What is the Einstellung Effect, and how does it block learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-handwritten.svg" alt="Handwritten: What is the Einstellung Effect, and how does it block learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-diagram.svg" alt="Diagram: What is the Einstellung Effect, and how does it block learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-diagram.svg" alt="Diagram: What is the Einstellung Effect, and how does it block learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-sticky.svg" alt="Sticky Note: What is the Einstellung Effect, and how does it block learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-einstellung-effect-and-how-does-it-block-learning-sticky.svg" alt="Sticky Note: What is the Einstellung Effect, and how does it block learning?" width="30%">
 </a>
 
 
@@ -439,14 +439,14 @@ public int maxArea(int[] height) {
 
 ### Q12: How does knowledge transfer work between different frameworks and languages?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-handwritten.svg" alt="Handwritten: How does knowledge transfer work between different frameworks and languages?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-handwritten.svg" alt="Handwritten: How does knowledge transfer work between different frameworks and languages?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-diagram.svg" alt="Diagram: How does knowledge transfer work between different frameworks and languages?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-diagram.svg" alt="Diagram: How does knowledge transfer work between different frameworks and languages?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-sticky.svg" alt="Sticky Note: How does knowledge transfer work between different frameworks and languages?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-transfer-work-between-different-frameworks-and-languages-sticky.svg" alt="Sticky Note: How does knowledge transfer work between different frameworks and languages?" width="30%">
 </a>
 
 
@@ -479,14 +479,14 @@ public class User {
 
 ### Q13: What is attention residue, and why does multitasking hurt learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-handwritten.svg" alt="Handwritten: What is attention residue, and why does multitasking hurt learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-handwritten.svg" alt="Handwritten: What is attention residue, and why does multitasking hurt learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-diagram.svg" alt="Diagram: What is attention residue, and why does multitasking hurt learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-diagram.svg" alt="Diagram: What is attention residue, and why does multitasking hurt learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-sticky.svg" alt="Sticky Note: What is attention residue, and why does multitasking hurt learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-attention-residue-and-why-does-multitasking-hurt-learning-sticky.svg" alt="Sticky Note: What is attention residue, and why does multitasking hurt learning?" width="30%">
 </a>
 
 
@@ -513,14 +513,14 @@ public class AttentionResidue {
 
 ### Q14: How does arousal level affect learning and performance?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-handwritten.svg" alt="Handwritten: How does arousal level affect learning and performance?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-handwritten.svg" alt="Handwritten: How does arousal level affect learning and performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-diagram.svg" alt="Diagram: How does arousal level affect learning and performance?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-diagram.svg" alt="Diagram: How does arousal level affect learning and performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-sticky.svg" alt="Sticky Note: How does arousal level affect learning and performance?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-arousal-level-affect-learning-and-performance-sticky.svg" alt="Sticky Note: How does arousal level affect learning and performance?" width="30%">
 </a>
 
 
@@ -546,14 +546,14 @@ During a GATE mock test (from [`docs/courses/gate-cs-preparation/index.md`](http
 
 ### Q15: How does stress affect learning, and what can you do about it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-handwritten.svg" alt="Handwritten: How does stress affect learning, and what can you do about it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-handwritten.svg" alt="Handwritten: How does stress affect learning, and what can you do about it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-diagram.svg" alt="Diagram: How does stress affect learning, and what can you do about it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-diagram.svg" alt="Diagram: How does stress affect learning, and what can you do about it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-sticky.svg" alt="Sticky Note: How does stress affect learning, and what can you do about it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-stress-affect-learning-and-what-can-you-do-about-it-sticky.svg" alt="Sticky Note: How does stress affect learning, and what can you do about it?" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ public class StressInoculation {
 
 ### Q16: What is a growth mindset, and how does it apply to CS learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-handwritten.svg" alt="Handwritten: What is a growth mindset, and how does it apply to CS learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-handwritten.svg" alt="Handwritten: What is a growth mindset, and how does it apply to CS learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-diagram.svg" alt="Diagram: What is a growth mindset, and how does it apply to CS learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-diagram.svg" alt="Diagram: What is a growth mindset, and how does it apply to CS learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-sticky.svg" alt="Sticky Note: What is a growth mindset, and how does it apply to CS learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-a-growth-mindset-and-how-does-it-apply-to-cs-learning-sticky.svg" alt="Sticky Note: What is a growth mindset, and how does it apply to CS learning?" width="30%">
 </a>
 
 
@@ -631,14 +631,14 @@ public class GrowthMindset {
 
 ### Q17: What is neuroplasticity, and how does learning Laravel change your brain?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-handwritten.svg" alt="Handwritten: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-handwritten.svg" alt="Handwritten: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-diagram.svg" alt="Diagram: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-diagram.svg" alt="Diagram: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-sticky.svg" alt="Sticky Note: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-neuroplasticity-and-how-does-learning-laravel-change-your-brain-sticky.svg" alt="Sticky Note: What is neuroplasticity, and how does learning Laravel change your brain?" width="30%">
 </a>
 
 
@@ -654,14 +654,14 @@ Now when you approach Java's Stream API from [`docs/courses/java/p6-lambdas-stre
 
 ### Q18: Is the 10,000-hour rule real? How long does it take to become competent?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-handwritten.svg" alt="Handwritten: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-handwritten.svg" alt="Handwritten: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-diagram.svg" alt="Diagram: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-diagram.svg" alt="Diagram: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-sticky.svg" alt="Sticky Note: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/is-the-10-000-hour-rule-real-how-long-does-it-take-to-become-competent-sticky.svg" alt="Sticky Note: Is the 10,000-hour rule real? How long does it take to become competent?" width="30%">
 </a>
 
 
@@ -693,14 +693,14 @@ public class TwentyHourRule {
 
 ### Q19: What is the Pygmalion Effect in learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-handwritten.svg" alt="Handwritten: What is the Pygmalion Effect in learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-handwritten.svg" alt="Handwritten: What is the Pygmalion Effect in learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-diagram.svg" alt="Diagram: What is the Pygmalion Effect in learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-diagram.svg" alt="Diagram: What is the Pygmalion Effect in learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-sticky.svg" alt="Sticky Note: What is the Pygmalion Effect in learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-pygmalion-effect-in-learning-sticky.svg" alt="Sticky Note: What is the Pygmalion Effect in learning?" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ public class Pygmalion {
 
 ### Q20: How does brain health (exercise, nutrition, caffeine) affect learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-handwritten.svg" alt="Handwritten: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-handwritten.svg" alt="Handwritten: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-diagram.svg" alt="Diagram: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-diagram.svg" alt="Diagram: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-sticky.svg" alt="Sticky Note: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-brain-health-exercise-nutrition-caffeine-affect-learning-sticky.svg" alt="Sticky Note: How does brain health (exercise, nutrition, caffeine) affect learning?" width="30%">
 </a>
 
 
@@ -769,14 +769,14 @@ public class BrainOptimization {
 
 ### Q21: What is active recall, and why is it the most powerful learning technique?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-handwritten.svg" alt="Handwritten: What is active recall, and why is it the most powerful learning technique?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-handwritten.svg" alt="Handwritten: What is active recall, and why is it the most powerful learning technique?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-diagram.svg" alt="Diagram: What is active recall, and why is it the most powerful learning technique?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-diagram.svg" alt="Diagram: What is active recall, and why is it the most powerful learning technique?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-sticky.svg" alt="Sticky Note: What is active recall, and why is it the most powerful learning technique?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-active-recall-and-why-is-it-the-most-powerful-learning-technique-sticky.svg" alt="Sticky Note: What is active recall, and why is it the most powerful learning technique?" width="30%">
 </a>
 
 
@@ -812,14 +812,14 @@ public class ActiveRecall {
 
 ### Q22: How do you practice active recall during reading?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-handwritten.svg" alt="Handwritten: How do you practice active recall during reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-handwritten.svg" alt="Handwritten: How do you practice active recall during reading?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-diagram.svg" alt="Diagram: How do you practice active recall during reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-diagram.svg" alt="Diagram: How do you practice active recall during reading?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-sticky.svg" alt="Sticky Note: How do you practice active recall during reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-practice-active-recall-during-reading-sticky.svg" alt="Sticky Note: How do you practice active recall during reading?" width="30%">
 </a>
 
 
@@ -851,14 +851,14 @@ public class ReadRecallVerify {
 
 ### Q23: What is the Blank Page Method, and how does it surface your knowledge gaps?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-handwritten.svg" alt="Handwritten: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-handwritten.svg" alt="Handwritten: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-diagram.svg" alt="Diagram: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-diagram.svg" alt="Diagram: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-sticky.svg" alt="Sticky Note: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-blank-page-method-and-how-does-it-surface-your-knowledge-gaps-sticky.svg" alt="Sticky Note: What is the Blank Page Method, and how does it surface your knowledge gaps?" width="30%">
 </a>
 
 
@@ -881,14 +881,14 @@ That last item is your gap. Now when you read about TCP Reno, your brain is prim
 
 ### Q24: What's the difference between recall and recognition, and which builds stronger memory?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-handwritten.svg" alt="Handwritten: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-handwritten.svg" alt="Handwritten: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-diagram.svg" alt="Diagram: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-diagram.svg" alt="Diagram: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-sticky.svg" alt="Sticky Note: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-recall-and-recognition-and-which-builds-stronger-memory-sticky.svg" alt="Sticky Note: What's the difference between recall and recognition, and which builds stronger memory?" width="30%">
 </a>
 
 
@@ -926,14 +926,14 @@ public class RecallVersusRecognition {
 
 ### Q25: How does teaching someone else serve as active recall?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-handwritten.svg" alt="Handwritten: How does teaching someone else serve as active recall?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-handwritten.svg" alt="Handwritten: How does teaching someone else serve as active recall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-diagram.svg" alt="Diagram: How does teaching someone else serve as active recall?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-diagram.svg" alt="Diagram: How does teaching someone else serve as active recall?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-sticky.svg" alt="Sticky Note: How does teaching someone else serve as active recall?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-teaching-someone-else-serve-as-active-recall-sticky.svg" alt="Sticky Note: How does teaching someone else serve as active recall?" width="30%">
 </a>
 
 
@@ -971,14 +971,14 @@ void bfs(Map<Integer, List<Integer>> graph, int start) {
 
 ### Q26: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-handwritten.svg" alt="Handwritten: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-handwritten.svg" alt="Handwritten: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-diagram.svg" alt="Diagram: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-diagram.svg" alt="Diagram: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-sticky.svg" alt="Sticky Note: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-ebbinghaus-forgetting-curve-and-how-does-spaced-repetition-defeat-it-sticky.svg" alt="Sticky Note: What is the Ebbinghaus Forgetting Curve, and how does spaced repetition defeat it?" width="30%">
 </a>
 
 
@@ -1015,14 +1015,14 @@ public class ForgettingCurve {
 
 ### Q27: How do you set up Anki for this course repository?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-handwritten.svg" alt="Handwritten: How do you set up Anki for this course repository?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-handwritten.svg" alt="Handwritten: How do you set up Anki for this course repository?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-diagram.svg" alt="Diagram: How do you set up Anki for this course repository?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-diagram.svg" alt="Diagram: How do you set up Anki for this course repository?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-sticky.svg" alt="Sticky Note: How do you set up Anki for this course repository?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-set-up-anki-for-this-course-repository-sticky.svg" alt="Sticky Note: How do you set up Anki for this course repository?" width="30%">
 </a>
 
 
@@ -1062,14 +1062,14 @@ public record AnkiCard(String front, String back, Date nextReview) {
 
 ### Q28: What is the optimal review schedule for spaced repetition?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-handwritten.svg" alt="Handwritten: What is the optimal review schedule for spaced repetition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-handwritten.svg" alt="Handwritten: What is the optimal review schedule for spaced repetition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-diagram.svg" alt="Diagram: What is the optimal review schedule for spaced repetition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-diagram.svg" alt="Diagram: What is the optimal review schedule for spaced repetition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-sticky.svg" alt="Sticky Note: What is the optimal review schedule for spaced repetition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-optimal-review-schedule-for-spaced-repetition-sticky.svg" alt="Sticky Note: What is the optimal review schedule for spaced repetition?" width="30%">
 </a>
 
 
@@ -1104,14 +1104,14 @@ public class ReviewSchedule {
 
 ### Q29: How do you design effective Anki cards for technical content?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-handwritten.svg" alt="Handwritten: How do you design effective Anki cards for technical content?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-handwritten.svg" alt="Handwritten: How do you design effective Anki cards for technical content?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-diagram.svg" alt="Diagram: How do you design effective Anki cards for technical content?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-diagram.svg" alt="Diagram: How do you design effective Anki cards for technical content?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-sticky.svg" alt="Sticky Note: How do you design effective Anki cards for technical content?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-design-effective-anki-cards-for-technical-content-sticky.svg" alt="Sticky Note: How do you design effective Anki cards for technical content?" width="30%">
 </a>
 
 
@@ -1140,14 +1140,14 @@ Reference: [`docs/courses/database-management-systems/09-transactions.md`](https
 
 ### Q30: How do you integrate spaced repetition into a daily study schedule?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-handwritten.svg" alt="Handwritten: How do you integrate spaced repetition into a daily study schedule?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-handwritten.svg" alt="Handwritten: How do you integrate spaced repetition into a daily study schedule?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-diagram.svg" alt="Diagram: How do you integrate spaced repetition into a daily study schedule?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-diagram.svg" alt="Diagram: How do you integrate spaced repetition into a daily study schedule?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-sticky.svg" alt="Sticky Note: How do you integrate spaced repetition into a daily study schedule?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-integrate-spaced-repetition-into-a-daily-study-schedule-sticky.svg" alt="Sticky Note: How do you integrate spaced repetition into a daily study schedule?" width="30%">
 </a>
 
 
@@ -1172,14 +1172,14 @@ The key insight: Anki is not *extra* work → it replaces re-reading. Those 15 m
 
 ### Q31: How does the standard Pomodoro technique work for theory subjects?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-handwritten.svg" alt="Handwritten: How does the standard Pomodoro technique work for theory subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-handwritten.svg" alt="Handwritten: How does the standard Pomodoro technique work for theory subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-diagram.svg" alt="Diagram: How does the standard Pomodoro technique work for theory subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-diagram.svg" alt="Diagram: How does the standard Pomodoro technique work for theory subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-sticky.svg" alt="Sticky Note: How does the standard Pomodoro technique work for theory subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-standard-pomodoro-technique-work-for-theory-subjects-sticky.svg" alt="Sticky Note: How does the standard Pomodoro technique work for theory subjects?" width="30%">
 </a>
 
 
@@ -1219,14 +1219,14 @@ public class Pomodoro {
 
 ### Q32: How do you adapt Pomodoro for coding and problem-solving?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-handwritten.svg" alt="Handwritten: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-handwritten.svg" alt="Handwritten: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-diagram.svg" alt="Diagram: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-diagram.svg" alt="Diagram: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-sticky.svg" alt="Sticky Note: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-adapt-pomodoro-for-coding-and-problem-solving-sticky.svg" alt="Sticky Note: How do you adapt Pomodoro for coding and problem-solving?" width="30%">
 </a>
 
 
@@ -1289,14 +1289,14 @@ class LRUCache {
 
 ### Q33: How do you deal with interruptions during a Pomodoro?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-handwritten.svg" alt="Handwritten: How do you deal with interruptions during a Pomodoro?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-handwritten.svg" alt="Handwritten: How do you deal with interruptions during a Pomodoro?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-diagram.svg" alt="Diagram: How do you deal with interruptions during a Pomodoro?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-diagram.svg" alt="Diagram: How do you deal with interruptions during a Pomodoro?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-sticky.svg" alt="Sticky Note: How do you deal with interruptions during a Pomodoro?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-deal-with-interruptions-during-a-pomodoro-sticky.svg" alt="Sticky Note: How do you deal with interruptions during a Pomodoro?" width="30%">
 </a>
 
 
@@ -1327,14 +1327,14 @@ public class DistractionManager {
 
 ### Q34: How do you chunk a theory-of-computation chapter into Pomodoro pieces?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-handwritten.svg" alt="Handwritten: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-handwritten.svg" alt="Handwritten: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-diagram.svg" alt="Diagram: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-diagram.svg" alt="Diagram: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-sticky.svg" alt="Sticky Note: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-chunk-a-theory-of-computation-chapter-into-pomodoro-pieces-sticky.svg" alt="Sticky Note: How do you chunk a theory-of-computation chapter into Pomodoro pieces?" width="30%">
 </a>
 
 
@@ -1357,14 +1357,14 @@ Each Pomodoro has a concrete deliverable. Abstract theory becomes tangible when 
 
 ### Q35: How do you structure Pomodoro sessions for coding practice?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-handwritten.svg" alt="Handwritten: How do you structure Pomodoro sessions for coding practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-handwritten.svg" alt="Handwritten: How do you structure Pomodoro sessions for coding practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-diagram.svg" alt="Diagram: How do you structure Pomodoro sessions for coding practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-diagram.svg" alt="Diagram: How do you structure Pomodoro sessions for coding practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-sticky.svg" alt="Sticky Note: How do you structure Pomodoro sessions for coding practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-structure-pomodoro-sessions-for-coding-practice-sticky.svg" alt="Sticky Note: How do you structure Pomodoro sessions for coding practice?" width="30%">
 </a>
 
 
@@ -1409,14 +1409,14 @@ public int robCircular(int[] nums) {
 
 ### Q36: Why does interleaving (mixing topics) improve learning more than blocking?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-handwritten.svg" alt="Handwritten: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-handwritten.svg" alt="Handwritten: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-diagram.svg" alt="Diagram: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-diagram.svg" alt="Diagram: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-sticky.svg" alt="Sticky Note: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-does-interleaving-mixing-topics-improve-learning-more-than-blocking-sticky.svg" alt="Sticky Note: Why does interleaving (mixing topics) improve learning more than blocking?" width="30%">
 </a>
 
 
@@ -1445,14 +1445,14 @@ Now every problem requires fresh analysis. Which technique fits? Your brain prac
 
 ### Q37: How do you create an interleaving study schedule across courses?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-handwritten.svg" alt="Handwritten: How do you create an interleaving study schedule across courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-handwritten.svg" alt="Handwritten: How do you create an interleaving study schedule across courses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-diagram.svg" alt="Diagram: How do you create an interleaving study schedule across courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-diagram.svg" alt="Diagram: How do you create an interleaving study schedule across courses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-sticky.svg" alt="Sticky Note: How do you create an interleaving study schedule across courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-create-an-interleaving-study-schedule-across-courses-sticky.svg" alt="Sticky Note: How do you create an interleaving study schedule across courses?" width="30%">
 </a>
 
 
@@ -1478,14 +1478,14 @@ Notice Friday: mixed PYQs across all 4 subjects within a single session. That's 
 
 ### Q38: What's the difference between blocked and mixed practice, and when should you use each?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-diagram.svg" alt="Diagram: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-diagram.svg" alt="Diagram: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-s-the-difference-between-blocked-and-mixed-practice-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What's the difference between blocked and mixed practice, and when should you use each?" width="30%">
 </a>
 
 
@@ -1522,14 +1522,14 @@ public class PracticeMode {
 
 ### Q39: How do you interleave GATE preparation across subjects?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-handwritten.svg" alt="Handwritten: How do you interleave GATE preparation across subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-handwritten.svg" alt="Handwritten: How do you interleave GATE preparation across subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-diagram.svg" alt="Diagram: How do you interleave GATE preparation across subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-diagram.svg" alt="Diagram: How do you interleave GATE preparation across subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-sticky.svg" alt="Sticky Note: How do you interleave GATE preparation across subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-gate-preparation-across-subjects-sticky.svg" alt="Sticky Note: How do you interleave GATE preparation across subjects?" width="30%">
 </a>
 
 
@@ -1570,14 +1570,14 @@ public class GateInterleaving {
 
 ### Q40: How do you interleave DSA problem types for coding interviews?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-handwritten.svg" alt="Handwritten: How do you interleave DSA problem types for coding interviews?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-handwritten.svg" alt="Handwritten: How do you interleave DSA problem types for coding interviews?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-diagram.svg" alt="Diagram: How do you interleave DSA problem types for coding interviews?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-diagram.svg" alt="Diagram: How do you interleave DSA problem types for coding interviews?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-sticky.svg" alt="Sticky Note: How do you interleave DSA problem types for coding interviews?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-interleave-dsa-problem-types-for-coding-interviews-sticky.svg" alt="Sticky Note: How do you interleave DSA problem types for coding interviews?" width="30%">
 </a>
 
 
@@ -1615,14 +1615,14 @@ public class ProblemCycle {
 
 ### Q41: What is the Feynman Technique, and how do you apply it?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-handwritten.svg" alt="Handwritten: What is the Feynman Technique, and how do you apply it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-handwritten.svg" alt="Handwritten: What is the Feynman Technique, and how do you apply it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-diagram.svg" alt="Diagram: What is the Feynman Technique, and how do you apply it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-diagram.svg" alt="Diagram: What is the Feynman Technique, and how do you apply it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-sticky.svg" alt="Sticky Note: What is the Feynman Technique, and how do you apply it?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-feynman-technique-and-how-do-you-apply-it-sticky.svg" alt="Sticky Note: What is the Feynman Technique, and how do you apply it?" width="30%">
 </a>
 
 
@@ -1661,14 +1661,14 @@ public class FeynmanTest {
 
 ### Q42: What is gap analysis in the Feynman Technique, and how do you identify gaps?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-handwritten.svg" alt="Handwritten: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-handwritten.svg" alt="Handwritten: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-diagram.svg" alt="Diagram: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-diagram.svg" alt="Diagram: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-sticky.svg" alt="Sticky Note: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-gap-analysis-in-the-feynman-technique-and-how-do-you-identify-gaps-sticky.svg" alt="Sticky Note: What is gap analysis in the Feynman Technique, and how do you identify gaps?" width="30%">
 </a>
 
 
@@ -1691,14 +1691,14 @@ Each gap is a specific thing to study. Record again after filling the gaps.
 
 ### Q43: How does rubber duck debugging help you learn DSA?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-handwritten.svg" alt="Handwritten: How does rubber duck debugging help you learn DSA?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-handwritten.svg" alt="Handwritten: How does rubber duck debugging help you learn DSA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-diagram.svg" alt="Diagram: How does rubber duck debugging help you learn DSA?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-diagram.svg" alt="Diagram: How does rubber duck debugging help you learn DSA?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-sticky.svg" alt="Sticky Note: How does rubber duck debugging help you learn DSA?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-rubber-duck-debugging-help-you-learn-dsa-sticky.svg" alt="Sticky Note: How does rubber duck debugging help you learn DSA?" width="30%">
 </a>
 
 
@@ -1734,14 +1734,14 @@ public class RubberDuck {
 
 ### Q44: How does writing as thinking deepen your understanding?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-handwritten.svg" alt="Handwritten: How does writing as thinking deepen your understanding?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-handwritten.svg" alt="Handwritten: How does writing as thinking deepen your understanding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-diagram.svg" alt="Diagram: How does writing as thinking deepen your understanding?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-diagram.svg" alt="Diagram: How does writing as thinking deepen your understanding?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-sticky.svg" alt="Sticky Note: How does writing as thinking deepen your understanding?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-writing-as-thinking-deepen-your-understanding-sticky.svg" alt="Sticky Note: How does writing as thinking deepen your understanding?" width="30%">
 </a>
 
 
@@ -1761,14 +1761,14 @@ Now check: did I mention the difference between FIFO and LRU? Did I explain Bela
 
 ### Q45: How do you use peer teaching to solidify learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-handwritten.svg" alt="Handwritten: How do you use peer teaching to solidify learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-handwritten.svg" alt="Handwritten: How do you use peer teaching to solidify learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-diagram.svg" alt="Diagram: How do you use peer teaching to solidify learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-diagram.svg" alt="Diagram: How do you use peer teaching to solidify learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-sticky.svg" alt="Sticky Note: How do you use peer teaching to solidify learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-you-use-peer-teaching-to-solidify-learning-sticky.svg" alt="Sticky Note: How do you use peer teaching to solidify learning?" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ The peer's questions force you to think about edge cases, justify design decisio
 
 ### Q46: Method of Loci → Can I Really Store the OSI Model in My Kitchen?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-handwritten.svg" alt="Handwritten: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-handwritten.svg" alt="Handwritten: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-diagram.svg" alt="Diagram: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-diagram.svg" alt="Diagram: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-sticky.svg" alt="Sticky Note: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/method-of-loci-can-i-really-store-the-osi-model-in-my-kitchen-sticky.svg" alt="Sticky Note: Method of Loci → Can I Really Store the OSI Model in My Kitchen?" width="30%">
 </a>
 
 
@@ -1847,14 +1847,14 @@ public enum OsiLayer {
 
 ### Q47: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-handwritten.svg" alt="Handwritten: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-handwritten.svg" alt="Handwritten: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-diagram.svg" alt="Diagram: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-diagram.svg" alt="Diagram: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-sticky.svg" alt="Sticky Note: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/building-your-first-palace-how-do-i-store-10-sorting-algorithms-in-my-room-sticky.svg" alt="Sticky Note: Building Your First Palace → How Do I Store 10 Sorting Algorithms in My Room?" width="30%">
 </a>
 
 
@@ -1892,14 +1892,14 @@ public class SortingPalace {
 
 ### Q48: Visual Mnemonics → How Do I Picture the CAP Theorem?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-handwritten.svg" alt="Handwritten: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-handwritten.svg" alt="Handwritten: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-diagram.svg" alt="Diagram: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-diagram.svg" alt="Diagram: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-sticky.svg" alt="Sticky Note: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/visual-mnemonics-how-do-i-picture-the-cap-theorem-sticky.svg" alt="Sticky Note: Visual Mnemonics → How Do I Picture the CAP Theorem?" width="30%">
 </a>
 
 
@@ -1925,14 +1925,14 @@ public enum CapTradeoff {
 
 ### Q49: Chaining Mnemonics → ACID Properties in One Story
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-handwritten.svg" alt="Handwritten: Chaining Mnemonics → ACID Properties in One Story" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-handwritten.svg" alt="Handwritten: Chaining Mnemonics → ACID Properties in One Story" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-diagram.svg" alt="Diagram: Chaining Mnemonics → ACID Properties in One Story" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-diagram.svg" alt="Diagram: Chaining Mnemonics → ACID Properties in One Story" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-sticky.svg" alt="Sticky Note: Chaining Mnemonics → ACID Properties in One Story" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/chaining-mnemonics-acid-properties-in-one-story-sticky.svg" alt="Sticky Note: Chaining Mnemonics → ACID Properties in One Story" width="30%">
 </a>
 
 
@@ -1957,14 +1957,14 @@ The GATE DBMS PYQ file ([`docs/courses/gate-cs-preparation/08-database-managemen
 
 ### Q50: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-handwritten.svg" alt="Handwritten: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-handwritten.svg" alt="Handwritten: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-diagram.svg" alt="Diagram: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-diagram.svg" alt="Diagram: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-sticky.svg" alt="Sticky Note: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/peg-system-1-bun-2-shoe-3-tree-for-unix-commands-sticky.svg" alt="Sticky Note: Peg System → 1-Bun, 2-Shoe, 3-Tree for UNIX Commands" width="30%">
 </a>
 
 
@@ -2000,14 +2000,14 @@ public class PegSystem {
 
 ### Q51: Memory Compression → Can I Compress Quicksort into 3 Words?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-handwritten.svg" alt="Handwritten: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-handwritten.svg" alt="Handwritten: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-diagram.svg" alt="Diagram: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-diagram.svg" alt="Diagram: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-sticky.svg" alt="Sticky Note: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/memory-compression-can-i-compress-quicksort-into-3-words-sticky.svg" alt="Sticky Note: Memory Compression → Can I Compress Quicksort into 3 Words?" width="30%">
 </a>
 
 
@@ -2042,14 +2042,14 @@ public class MemoryCompression {
 
 ### Q52: The Memory Palace for GATE → One Palace per Subject
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-handwritten.svg" alt="Handwritten: The Memory Palace for GATE → One Palace per Subject" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-handwritten.svg" alt="Handwritten: The Memory Palace for GATE → One Palace per Subject" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-diagram.svg" alt="Diagram: The Memory Palace for GATE → One Palace per Subject" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-diagram.svg" alt="Diagram: The Memory Palace for GATE → One Palace per Subject" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-sticky.svg" alt="Sticky Note: The Memory Palace for GATE → One Palace per Subject" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-memory-palace-for-gate-one-palace-per-subject-sticky.svg" alt="Sticky Note: The Memory Palace for GATE → One Palace per Subject" width="30%">
 </a>
 
 
@@ -2096,14 +2096,14 @@ public class GatePalace {
 
 ### Q53: Encoding Specificity → Why Should I Study in a Mock-Test Environment?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-handwritten.svg" alt="Handwritten: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-handwritten.svg" alt="Handwritten: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-diagram.svg" alt="Diagram: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-diagram.svg" alt="Diagram: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-sticky.svg" alt="Sticky Note: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/encoding-specificity-why-should-i-study-in-a-mock-test-environment-sticky.svg" alt="Sticky Note: Encoding Specificity → Why Should I Study in a Mock-Test Environment?" width="30%">
 </a>
 
 
@@ -2122,14 +2122,14 @@ Three practical implementations:
 
 ### Q54: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-handwritten.svg" alt="Handwritten: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-handwritten.svg" alt="Handwritten: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-diagram.svg" alt="Diagram: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-diagram.svg" alt="Diagram: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-sticky.svg" alt="Sticky Note: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/state-dependent-memory-does-chewing-gum-help-me-ace-gate-sticky.svg" alt="Sticky Note: State-Dependent Memory → Does Chewing Gum Help Me Ace GATE?" width="30%">
 </a>
 
 
@@ -2159,14 +2159,14 @@ public class StateDependentLearning {
 
 ### Q55: Context-Dependent Recall → Should I Only Study CN in the Library?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-handwritten.svg" alt="Handwritten: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-handwritten.svg" alt="Handwritten: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-diagram.svg" alt="Diagram: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-diagram.svg" alt="Diagram: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-sticky.svg" alt="Sticky Note: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/context-dependent-recall-should-i-only-study-cn-in-the-library-sticky.svg" alt="Sticky Note: Context-Dependent Recall → Should I Only Study CN in the Library?" width="30%">
 </a>
 
 
@@ -2186,14 +2186,14 @@ The 54 DSA PYQs in [`docs/courses/gate-cs-preparation/10-data-structures-algorit
 
 ### Q56: The Generation Effect → Why Do I Remember My Own Examples Better?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-handwritten.svg" alt="Handwritten: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-handwritten.svg" alt="Handwritten: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-diagram.svg" alt="Diagram: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-diagram.svg" alt="Diagram: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-sticky.svg" alt="Sticky Note: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-generation-effect-why-do-i-remember-my-own-examples-better-sticky.svg" alt="Sticky Note: The Generation Effect → Why Do I Remember My Own Examples Better?" width="30%">
 </a>
 
 
@@ -2234,14 +2234,14 @@ public class GenerationEffect {
 
 ### Q57: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-handwritten.svg" alt="Handwritten: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-handwritten.svg" alt="Handwritten: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-diagram.svg" alt="Diagram: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-diagram.svg" alt="Diagram: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-sticky.svg" alt="Sticky Note: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-testing-effect-why-is-self-testing-50-better-than-re-reading-sticky.svg" alt="Sticky Note: The Testing Effect → Why Is Self-Testing 50% Better Than Re-Reading?" width="30%">
 </a>
 
 
@@ -2278,14 +2278,14 @@ public class TestingEffect {
 
 ### Q58: Desirable Difficulties → Why Should I Close the Solution Before Solving?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-handwritten.svg" alt="Handwritten: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-handwritten.svg" alt="Handwritten: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-diagram.svg" alt="Diagram: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-diagram.svg" alt="Diagram: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-sticky.svg" alt="Sticky Note: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/desirable-difficulties-why-should-i-close-the-solution-before-solving-sticky.svg" alt="Sticky Note: Desirable Difficulties → Why Should I Close the Solution Before Solving?" width="30%">
 </a>
 
 
@@ -2315,14 +2315,14 @@ public class DesirableDifficulties {
 
 ### Q59: Overlearning → How Do I Know When I've Studied Enough?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-handwritten.svg" alt="Handwritten: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-handwritten.svg" alt="Handwritten: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-diagram.svg" alt="Diagram: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-diagram.svg" alt="Diagram: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-sticky.svg" alt="Sticky Note: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/overlearning-how-do-i-know-when-i-ve-studied-enough-sticky.svg" alt="Sticky Note: Overlearning → How Do I Know When I've Studied Enough?" width="30%">
 </a>
 
 
@@ -2351,14 +2351,14 @@ This directly applies to the [`docs/courses/placement-preparation/03-sql-problem
 
 ### Q60: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-handwritten.svg" alt="Handwritten: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-handwritten.svg" alt="Handwritten: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-diagram.svg" alt="Diagram: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-diagram.svg" alt="Diagram: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-sticky.svg" alt="Sticky Note: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/mnemonic-cheat-sheet-10-patterns-i-can-apply-to-any-course-sticky.svg" alt="Sticky Note: Mnemonic Cheat Sheet → 10 Patterns I Can Apply to Any Course" width="30%">
 </a>
 
 
@@ -2385,14 +2385,14 @@ Combine multiple patterns for the strongest effect. The ACID chain (pattern 4) i
 
 ### Q61: Why We Procrastinate → Why Can't I Start the Hard DP Problem?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-handwritten.svg" alt="Handwritten: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-handwritten.svg" alt="Handwritten: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-diagram.svg" alt="Diagram: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-diagram.svg" alt="Diagram: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-sticky.svg" alt="Sticky Note: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-we-procrastinate-why-can-t-i-start-the-hard-dp-problem-sticky.svg" alt="Sticky Note: Why We Procrastinate → Why Can't I Start the Hard DP Problem?" width="30%">
 </a>
 
 
@@ -2419,14 +2419,14 @@ The DSA problem bank ([`docs/courses/placement-preparation/02-dsa-problem-bank.m
 
 ### Q62: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-handwritten.svg" alt="Handwritten: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-handwritten.svg" alt="Handwritten: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-diagram.svg" alt="Diagram: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-diagram.svg" alt="Diagram: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-sticky.svg" alt="Sticky Note: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-procrastination-loop-cue-routine-reward-how-do-i-break-it-sticky.svg" alt="Sticky Note: The Procrastination Loop → Cue, Routine, Reward → How Do I Break It?" width="30%">
 </a>
 
 
@@ -2448,14 +2448,14 @@ The SQL bank has 75 problems. S22-S30 involve advanced joins, correlated subquer
 
 ### Q63: The 2-Minute Rule → What's the Smallest Commit I Can Make?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-handwritten.svg" alt="Handwritten: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-handwritten.svg" alt="Handwritten: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-diagram.svg" alt="Diagram: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-diagram.svg" alt="Diagram: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-sticky.svg" alt="Sticky Note: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-2-minute-rule-what-s-the-smallest-commit-i-can-make-sticky.svg" alt="Sticky Note: The 2-Minute Rule → What's the Smallest Commit I Can Make?" width="30%">
 </a>
 
 
@@ -2488,14 +2488,14 @@ public class TwoMinuteRule {
 
 ### Q64: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-handwritten.svg" alt="Handwritten: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-handwritten.svg" alt="Handwritten: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-diagram.svg" alt="Diagram: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-diagram.svg" alt="Diagram: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-sticky.svg" alt="Sticky Note: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/implementation-intentions-how-do-i-stop-saying-i-ll-study-later-sticky.svg" alt="Sticky Note: Implementation Intentions → How Do I Stop Saying "I'll Study Later"?" width="30%">
 </a>
 
 
@@ -2530,14 +2530,14 @@ public class ImplementationIntention {
 
 ### Q65: Temptation Bundling → How Do I Make DSA Problems Less Painful?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-handwritten.svg" alt="Handwritten: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-handwritten.svg" alt="Handwritten: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-diagram.svg" alt="Diagram: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-diagram.svg" alt="Diagram: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-sticky.svg" alt="Sticky Note: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/temptation-bundling-how-do-i-make-dsa-problems-less-painful-sticky.svg" alt="Sticky Note: Temptation Bundling → How Do I Make DSA Problems Less Painful?" width="30%">
 </a>
 
 
@@ -2560,14 +2560,14 @@ For GATE prep, bundle:
 
 ### Q66: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-handwritten.svg" alt="Handwritten: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-handwritten.svg" alt="Handwritten: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-diagram.svg" alt="Diagram: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-diagram.svg" alt="Diagram: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-sticky.svg" alt="Sticky Note: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/zeigarnik-effect-why-should-i-leave-a-problem-half-solved-sticky.svg" alt="Sticky Note: Zeigarnik Effect → Why Should I Leave a Problem Half-Solved?" width="30%">
 </a>
 
 
@@ -2595,14 +2595,14 @@ Next morning, the first thing you want to do is finish that `Need` vs `Allocatio
 
 ### Q67: The 20-Second Rule → How Much Friction Do I Need?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-handwritten.svg" alt="Handwritten: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-handwritten.svg" alt="Handwritten: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-diagram.svg" alt="Diagram: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-diagram.svg" alt="Diagram: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-sticky.svg" alt="Sticky Note: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-20-second-rule-how-much-friction-do-i-need-sticky.svg" alt="Sticky Note: The 20-Second Rule → How Much Friction Do I Need?" width="30%">
 </a>
 
 
@@ -2636,14 +2636,14 @@ For the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/15-mock-test-1.md`
 
 ### Q68: Habit Stacking → How Do I Chain Study to Something I Already Do?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-handwritten.svg" alt="Handwritten: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-handwritten.svg" alt="Handwritten: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-diagram.svg" alt="Diagram: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-diagram.svg" alt="Diagram: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-sticky.svg" alt="Sticky Note: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/habit-stacking-how-do-i-chain-study-to-something-i-already-do-sticky.svg" alt="Sticky Note: Habit Stacking → How Do I Chain Study to Something I Already Do?" width="30%">
 </a>
 
 
@@ -2677,14 +2677,14 @@ public class HabitStack {
 
 ### Q69: Keystone Habits → Which ONE Habit Changes Everything?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-handwritten.svg" alt="Handwritten: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-handwritten.svg" alt="Handwritten: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-diagram.svg" alt="Diagram: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-diagram.svg" alt="Diagram: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-sticky.svg" alt="Sticky Note: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/keystone-habits-which-one-habit-changes-everything-sticky.svg" alt="Sticky Note: Keystone Habits → Which ONE Habit Changes Everything?" width="30%">
 </a>
 
 
@@ -2724,14 +2724,14 @@ public class KeystoneHabit {
 
 ### Q70: Willpower Depletion → Why Can't I Study Hard Theory at Night?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-handwritten.svg" alt="Handwritten: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-handwritten.svg" alt="Handwritten: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-diagram.svg" alt="Diagram: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-diagram.svg" alt="Diagram: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-sticky.svg" alt="Sticky Note: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/willpower-depletion-why-can-t-i-study-hard-theory-at-night-sticky.svg" alt="Sticky Note: Willpower Depletion → Why Can't I Study Hard Theory at Night?" width="30%">
 </a>
 
 
@@ -2766,14 +2766,14 @@ public class WillpowerSchedule {
 
 ### Q71: Deep Work Definition → What Counts as Deep Work for GATE Prep?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-handwritten.svg" alt="Handwritten: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-handwritten.svg" alt="Handwritten: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-diagram.svg" alt="Diagram: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-diagram.svg" alt="Diagram: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-sticky.svg" alt="Sticky Note: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-definition-what-counts-as-deep-work-for-gate-prep-sticky.svg" alt="Sticky Note: Deep Work Definition → What Counts as Deep Work for GATE Prep?" width="30%">
 </a>
 
 
@@ -2808,14 +2808,14 @@ public class DeepWork {
 
 ### Q72: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-handwritten.svg" alt="Handwritten: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-handwritten.svg" alt="Handwritten: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-diagram.svg" alt="Diagram: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-diagram.svg" alt="Diagram: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-sticky.svg" alt="Sticky Note: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-4-disciplines-of-execution-how-do-i-actually-execute-my-gate-plan-sticky.svg" alt="Sticky Note: The 4 Disciplines of Execution → How Do I Actually Execute My GATE Plan?" width="30%">
 </a>
 
 
@@ -2849,14 +2849,14 @@ public class FourDisciplines {
 
 ### Q73: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-handwritten.svg" alt="Handwritten: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-handwritten.svg" alt="Handwritten: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-diagram.svg" alt="Diagram: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-diagram.svg" alt="Diagram: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-sticky.svg" alt="Sticky Note: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/deep-work-for-working-devs-when-should-a-php-laravel-developer-study-sticky.svg" alt="Sticky Note: Deep Work for Working Devs → When Should a PHP/Laravel Developer Study?" width="30%">
 </a>
 
 
@@ -2889,14 +2889,14 @@ public class WorkingDevSchedule {
 
 ### Q74: Attention Residue → Why Should I Journal Between Topics?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-handwritten.svg" alt="Handwritten: Attention Residue → Why Should I Journal Between Topics?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-handwritten.svg" alt="Handwritten: Attention Residue → Why Should I Journal Between Topics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-diagram.svg" alt="Diagram: Attention Residue → Why Should I Journal Between Topics?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-diagram.svg" alt="Diagram: Attention Residue → Why Should I Journal Between Topics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-sticky.svg" alt="Sticky Note: Attention Residue → Why Should I Journal Between Topics?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/attention-residue-why-should-i-journal-between-topics-sticky.svg" alt="Sticky Note: Attention Residue → Why Should I Journal Between Topics?" width="30%">
 </a>
 
 
@@ -2919,14 +2919,14 @@ This 60-second ritual clears the residue. Studies show it improves performance o
 
 ### Q75: The Grand Central Station Error → Why Can't I Study in Coffee Shops?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-handwritten.svg" alt="Handwritten: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-handwritten.svg" alt="Handwritten: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-diagram.svg" alt="Diagram: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-diagram.svg" alt="Diagram: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-sticky.svg" alt="Sticky Note: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-grand-central-station-error-why-can-t-i-study-in-coffee-shops-sticky.svg" alt="Sticky Note: The Grand Central Station Error → Why Can't I Study in Coffee Shops?" width="30%">
 </a>
 
 
@@ -2959,14 +2959,14 @@ Good environments for the 8 GATE mock tests ([`docs/courses/gate-cs-preparation/
 
 ### Q76: Weekly Review → What Should I Review Every Sunday?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-handwritten.svg" alt="Handwritten: Weekly Review → What Should I Review Every Sunday?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-handwritten.svg" alt="Handwritten: Weekly Review → What Should I Review Every Sunday?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-diagram.svg" alt="Diagram: Weekly Review → What Should I Review Every Sunday?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-diagram.svg" alt="Diagram: Weekly Review → What Should I Review Every Sunday?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-sticky.svg" alt="Sticky Note: Weekly Review → What Should I Review Every Sunday?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/weekly-review-what-should-i-review-every-sunday-sticky.svg" alt="Sticky Note: Weekly Review → What Should I Review Every Sunday?" width="30%">
 </a>
 
 
@@ -3009,14 +3009,14 @@ public class WeeklyReview {
 
 ### Q77: Monthly Retrospective → What Questions Should I Ask Myself?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-handwritten.svg" alt="Handwritten: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-handwritten.svg" alt="Handwritten: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-diagram.svg" alt="Diagram: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-diagram.svg" alt="Diagram: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-sticky.svg" alt="Sticky Note: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/monthly-retrospective-what-questions-should-i-ask-myself-sticky.svg" alt="Sticky Note: Monthly Retrospective → What Questions Should I Ask Myself?" width="30%">
 </a>
 
 
@@ -3047,14 +3047,14 @@ Reference the 16 case studies in [`docs/courses/system-design/18-case-studies-cl
 
 ### Q78: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-handwritten.svg" alt="Handwritten: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-handwritten.svg" alt="Handwritten: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-diagram.svg" alt="Diagram: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-diagram.svg" alt="Diagram: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-sticky.svg" alt="Sticky Note: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/tracking-progress-how-do-i-build-a-github-style-study-streak-tracker-sticky.svg" alt="Sticky Note: Tracking Progress → How Do I Build a GitHub-Style Study Streak Tracker?" width="30%">
 </a>
 
 
@@ -3102,14 +3102,14 @@ public class StreakTracker {
 
 ### Q79: Dealing with Slumps → Is a 3-Day Break Catastrophic?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-handwritten.svg" alt="Handwritten: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-handwritten.svg" alt="Handwritten: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-diagram.svg" alt="Diagram: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-diagram.svg" alt="Diagram: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-sticky.svg" alt="Sticky Note: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/dealing-with-slumps-is-a-3-day-break-catastrophic-sticky.svg" alt="Sticky Note: Dealing with Slumps → Is a 3-Day Break Catastrophic?" width="30%">
 </a>
 
 
@@ -3138,14 +3138,14 @@ public class SlumpBuster {
 
 ### Q80: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-handwritten.svg" alt="Handwritten: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-handwritten.svg" alt="Handwritten: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-diagram.svg" alt="Diagram: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-diagram.svg" alt="Diagram: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-sticky.svg" alt="Sticky Note: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/the-compound-effect-can-1-hour-day-really-make-me-an-expert-sticky.svg" alt="Sticky Note: The Compound Effect → Can 1 Hour/Day Really Make Me an Expert?" width="30%">
 </a>
 
 
@@ -3189,14 +3189,14 @@ public class CompoundEffect {
 
 ### Q81: What is the 3-pass method for LeetCode practice?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-handwritten.svg" alt="Handwritten: What is the 3-pass method for LeetCode practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-handwritten.svg" alt="Handwritten: What is the 3-pass method for LeetCode practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-diagram.svg" alt="Diagram: What is the 3-pass method for LeetCode practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-diagram.svg" alt="Diagram: What is the 3-pass method for LeetCode practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-sticky.svg" alt="Sticky Note: What is the 3-pass method for LeetCode practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-3-pass-method-for-leetcode-practice-sticky.svg" alt="Sticky Note: What is the 3-pass method for LeetCode practice?" width="30%">
 </a>
 
 
@@ -3222,14 +3222,14 @@ Pass 1: solve with nested loops (O(nÂ²)). Pass 2: find the hashmap solution (O
 
 ### Q82: How should I classify DSA problems by pattern?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-handwritten.svg" alt="Handwritten: How should I classify DSA problems by pattern?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-handwritten.svg" alt="Handwritten: How should I classify DSA problems by pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-diagram.svg" alt="Diagram: How should I classify DSA problems by pattern?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-diagram.svg" alt="Diagram: How should I classify DSA problems by pattern?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-sticky.svg" alt="Sticky Note: How should I classify DSA problems by pattern?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-classify-dsa-problems-by-pattern-sticky.svg" alt="Sticky Note: How should I classify DSA problems by pattern?" width="30%">
 </a>
 
 
@@ -3244,14 +3244,14 @@ For each new problem, ask: "Which of the 125 existing DSA bank problems does thi
 
 ### Q83: How do I build a pattern-recognition Anki deck?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-handwritten.svg" alt="Handwritten: How do I build a pattern-recognition Anki deck?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-handwritten.svg" alt="Handwritten: How do I build a pattern-recognition Anki deck?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-diagram.svg" alt="Diagram: How do I build a pattern-recognition Anki deck?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-diagram.svg" alt="Diagram: How do I build a pattern-recognition Anki deck?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-sticky.svg" alt="Sticky Note: How do I build a pattern-recognition Anki deck?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-pattern-recognition-anki-deck-sticky.svg" alt="Sticky Note: How do I build a pattern-recognition Anki deck?" width="30%">
 </a>
 
 
@@ -3267,14 +3267,14 @@ Three example cards:
 
 ### Q84: How do I solve a DP problem using the DSA bank step by step?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-handwritten.svg" alt="Handwritten: How do I solve a DP problem using the DSA bank step by step?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-handwritten.svg" alt="Handwritten: How do I solve a DP problem using the DSA bank step by step?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-diagram.svg" alt="Diagram: How do I solve a DP problem using the DSA bank step by step?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-diagram.svg" alt="Diagram: How do I solve a DP problem using the DSA bank step by step?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-sticky.svg" alt="Sticky Note: How do I solve a DP problem using the DSA bank step by step?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-solve-a-dp-problem-using-the-dsa-bank-step-by-step-sticky.svg" alt="Sticky Note: How do I solve a DP problem using the DSA bank step by step?" width="30%">
 </a>
 
 
@@ -3310,14 +3310,14 @@ public int coinChange(int[] coins, int amount) {
 
 ### Q85: How do I use the DSA bank solutions effectively?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-handwritten.svg" alt="Handwritten: How do I use the DSA bank solutions effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-handwritten.svg" alt="Handwritten: How do I use the DSA bank solutions effectively?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-diagram.svg" alt="Diagram: How do I use the DSA bank solutions effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-diagram.svg" alt="Diagram: How do I use the DSA bank solutions effectively?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-sticky.svg" alt="Sticky Note: How do I use the DSA bank solutions effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-dsa-bank-solutions-effectively-sticky.svg" alt="Sticky Note: How do I use the DSA bank solutions effectively?" width="30%">
 </a>
 
 
@@ -3347,14 +3347,14 @@ Workflow:
 
 ### Q86: How do I build time complexity intuition?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-handwritten.svg" alt="Handwritten: How do I build time complexity intuition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-handwritten.svg" alt="Handwritten: How do I build time complexity intuition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-diagram.svg" alt="Diagram: How do I build time complexity intuition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-diagram.svg" alt="Diagram: How do I build time complexity intuition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-sticky.svg" alt="Sticky Note: How do I build time complexity intuition?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-time-complexity-intuition-sticky.svg" alt="Sticky Note: How do I build time complexity intuition?" width="30%">
 </a>
 
 
@@ -3391,14 +3391,14 @@ Train your eye: Any loop over n inside another loop over n is O(nÂ²). Any loop
 
 ### Q87: How do I evaluate space-time tradeoffs with DP memoization?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-handwritten.svg" alt="Handwritten: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-handwritten.svg" alt="Handwritten: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-diagram.svg" alt="Diagram: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-diagram.svg" alt="Diagram: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-sticky.svg" alt="Sticky Note: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-evaluate-space-time-tradeoffs-with-dp-memoization-sticky.svg" alt="Sticky Note: How do I evaluate space-time tradeoffs with DP memoization?" width="30%">
 </a>
 
 
@@ -3445,14 +3445,14 @@ Tradeoff: Memoization uses O(2â¿) stack space worst-case, tabulation uses O(
 
 ### Q88: How do I learn SQL from the SQL problem bank?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-handwritten.svg" alt="Handwritten: How do I learn SQL from the SQL problem bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-handwritten.svg" alt="Handwritten: How do I learn SQL from the SQL problem bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-diagram.svg" alt="Diagram: How do I learn SQL from the SQL problem bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-diagram.svg" alt="Diagram: How do I learn SQL from the SQL problem bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-sticky.svg" alt="Sticky Note: How do I learn SQL from the SQL problem bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-sql-from-the-sql-problem-bank-sticky.svg" alt="Sticky Note: How do I learn SQL from the SQL problem bank?" width="30%">
 </a>
 
 
@@ -3480,14 +3480,14 @@ Key learning: The subquery computes per-department averages via `GROUP BY`. The 
 
 ### Q89: How do I learn NoSQL from the SQL problem bank?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-handwritten.svg" alt="Handwritten: How do I learn NoSQL from the SQL problem bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-handwritten.svg" alt="Handwritten: How do I learn NoSQL from the SQL problem bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-diagram.svg" alt="Diagram: How do I learn NoSQL from the SQL problem bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-diagram.svg" alt="Diagram: How do I learn NoSQL from the SQL problem bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-sticky.svg" alt="Sticky Note: How do I learn NoSQL from the SQL problem bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-nosql-from-the-sql-problem-bank-sticky.svg" alt="Sticky Note: How do I learn NoSQL from the SQL problem bank?" width="30%">
 </a>
 
 
@@ -3525,14 +3525,14 @@ Compare with the SQL bank's relational approach: JOIN-based queries vs Redis's k
 
 ### Q90: How do I learn system design from the repo?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-handwritten.svg" alt="Handwritten: How do I learn system design from the repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-handwritten.svg" alt="Handwritten: How do I learn system design from the repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-diagram.svg" alt="Diagram: How do I learn system design from the repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-diagram.svg" alt="Diagram: How do I learn system design from the repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-sticky.svg" alt="Sticky Note: How do I learn system design from the repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-system-design-from-the-repo-sticky.svg" alt="Sticky Note: How do I learn system design from the repo?" width="30%">
 </a>
 
 
@@ -3550,14 +3550,14 @@ Company-specific tips from `04-company-specific.md`: Google asks system design f
 
 ### Q91: How do I memorize design patterns with simple mental models?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-handwritten.svg" alt="Handwritten: How do I memorize design patterns with simple mental models?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-handwritten.svg" alt="Handwritten: How do I memorize design patterns with simple mental models?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-diagram.svg" alt="Diagram: How do I memorize design patterns with simple mental models?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-diagram.svg" alt="Diagram: How do I memorize design patterns with simple mental models?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-sticky.svg" alt="Sticky Note: How do I memorize design patterns with simple mental models?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-memorize-design-patterns-with-simple-mental-models-sticky.svg" alt="Sticky Note: How do I memorize design patterns with simple mental models?" width="30%">
 </a>
 
 
@@ -3605,14 +3605,14 @@ Review these patterns by reading the LLD section of the DSA bank (Q101-Q115) whi
 
 ### Q92: How should I learn from code review of Java examples?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-handwritten.svg" alt="Handwritten: How should I learn from code review of Java examples?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-handwritten.svg" alt="Handwritten: How should I learn from code review of Java examples?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-diagram.svg" alt="Diagram: How should I learn from code review of Java examples?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-diagram.svg" alt="Diagram: How should I learn from code review of Java examples?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-sticky.svg" alt="Sticky Note: How should I learn from code review of Java examples?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-should-i-learn-from-code-review-of-java-examples-sticky.svg" alt="Sticky Note: How should I learn from code review of Java examples?" width="30%">
 </a>
 
 
@@ -3642,14 +3642,14 @@ Code review checklist from the DSA bank solutions:
 
 ### Q93: How do I learn LLD from the DSA bank?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-handwritten.svg" alt="Handwritten: How do I learn LLD from the DSA bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-handwritten.svg" alt="Handwritten: How do I learn LLD from the DSA bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-diagram.svg" alt="Diagram: How do I learn LLD from the DSA bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-diagram.svg" alt="Diagram: How do I learn LLD from the DSA bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-sticky.svg" alt="Sticky Note: How do I learn LLD from the DSA bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-lld-from-the-dsa-bank-sticky.svg" alt="Sticky Note: How do I learn LLD from the DSA bank?" width="30%">
 </a>
 
 
@@ -3684,14 +3684,14 @@ Each LLD problem in Q101-Q115 builds on the same OOP patterns: inheritance for s
 
 ### Q94: How do I learn concurrency from the DSA bank?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-handwritten.svg" alt="Handwritten: How do I learn concurrency from the DSA bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-handwritten.svg" alt="Handwritten: How do I learn concurrency from the DSA bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-diagram.svg" alt="Diagram: How do I learn concurrency from the DSA bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-diagram.svg" alt="Diagram: How do I learn concurrency from the DSA bank?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-sticky.svg" alt="Sticky Note: How do I learn concurrency from the DSA bank?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-concurrency-from-the-dsa-bank-sticky.svg" alt="Sticky Note: How do I learn concurrency from the DSA bank?" width="30%">
 </a>
 
 
@@ -3725,14 +3725,14 @@ Lesson: Always prefer `java.util.concurrent` high-level constructs (`BlockingQue
 
 ### Q95: What is the full interview preparation workflow using this repo?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-handwritten.svg" alt="Handwritten: What is the full interview preparation workflow using this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-handwritten.svg" alt="Handwritten: What is the full interview preparation workflow using this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-diagram.svg" alt="Diagram: What is the full interview preparation workflow using this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-diagram.svg" alt="Diagram: What is the full interview preparation workflow using this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-sticky.svg" alt="Sticky Note: What is the full interview preparation workflow using this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-full-interview-preparation-workflow-using-this-repo-sticky.svg" alt="Sticky Note: What is the full interview preparation workflow using this repo?" width="30%">
 </a>
 
 
@@ -3764,14 +3764,14 @@ Lesson: Always prefer `java.util.concurrent` high-level constructs (`BlockingQue
 
 ### Q96: How does theory learning differ from coding practice?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-handwritten.svg" alt="Handwritten: How does theory learning differ from coding practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-handwritten.svg" alt="Handwritten: How does theory learning differ from coding practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-diagram.svg" alt="Diagram: How does theory learning differ from coding practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-diagram.svg" alt="Diagram: How does theory learning differ from coding practice?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-sticky.svg" alt="Sticky Note: How does theory learning differ from coding practice?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-theory-learning-differ-from-coding-practice-sticky.svg" alt="Sticky Note: How does theory learning differ from coding practice?" width="30%">
 </a>
 
 
@@ -3800,14 +3800,14 @@ You don't code this in GATE → you apply it to find the complexity class. Study
 
 ### Q97: How do I create formula cheat sheets from GATE chapters?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-handwritten.svg" alt="Handwritten: How do I create formula cheat sheets from GATE chapters?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-handwritten.svg" alt="Handwritten: How do I create formula cheat sheets from GATE chapters?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-diagram.svg" alt="Diagram: How do I create formula cheat sheets from GATE chapters?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-diagram.svg" alt="Diagram: How do I create formula cheat sheets from GATE chapters?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-sticky.svg" alt="Sticky Note: How do I create formula cheat sheets from GATE chapters?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-create-formula-cheat-sheets-from-gate-chapters-sticky.svg" alt="Sticky Note: How do I create formula cheat sheets from GATE chapters?" width="30%">
 </a>
 
 
@@ -3837,14 +3837,14 @@ Create flashcards for each table. The ROIC for memorizing these is enormous → 
 
 ### Q98: How do GATE subjects interlink with each other?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-handwritten.svg" alt="Handwritten: How do GATE subjects interlink with each other?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-handwritten.svg" alt="Handwritten: How do GATE subjects interlink with each other?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-diagram.svg" alt="Diagram: How do GATE subjects interlink with each other?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-diagram.svg" alt="Diagram: How do GATE subjects interlink with each other?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-sticky.svg" alt="Sticky Note: How do GATE subjects interlink with each other?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-gate-subjects-interlink-with-each-other-sticky.svg" alt="Sticky Note: How do GATE subjects interlink with each other?" width="30%">
 </a>
 
 
@@ -3862,14 +3862,14 @@ When studying a GATE subject, always ask: "Where else in the syllabus does this 
 
 ### Q99: What is the GATE PYQ solving strategy?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-handwritten.svg" alt="Handwritten: What is the GATE PYQ solving strategy?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-handwritten.svg" alt="Handwritten: What is the GATE PYQ solving strategy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-diagram.svg" alt="Diagram: What is the GATE PYQ solving strategy?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-diagram.svg" alt="Diagram: What is the GATE PYQ solving strategy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-sticky.svg" alt="Sticky Note: What is the GATE PYQ solving strategy?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-gate-pyq-solving-strategy-sticky.svg" alt="Sticky Note: What is the GATE PYQ solving strategy?" width="30%">
 </a>
 
 
@@ -3898,14 +3898,14 @@ Review: "I got this right because I drew the Gantt chart before computing. Mista
 
 ### Q100: How does the 3-pass method apply to theory subjects?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-handwritten.svg" alt="Handwritten: How does the 3-pass method apply to theory subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-handwritten.svg" alt="Handwritten: How does the 3-pass method apply to theory subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-diagram.svg" alt="Diagram: How does the 3-pass method apply to theory subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-diagram.svg" alt="Diagram: How does the 3-pass method apply to theory subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-sticky.svg" alt="Sticky Note: How does the 3-pass method apply to theory subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-the-3-pass-method-apply-to-theory-subjects-sticky.svg" alt="Sticky Note: How does the 3-pass method apply to theory subjects?" width="30%">
 </a>
 
 
@@ -3936,14 +3936,14 @@ Pass 3: Solve PYQ and verify.
 
 ### Q101: How do I use diagrams to learn GATE subjects?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-handwritten.svg" alt="Handwritten: How do I use diagrams to learn GATE subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-handwritten.svg" alt="Handwritten: How do I use diagrams to learn GATE subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-diagram.svg" alt="Diagram: How do I use diagrams to learn GATE subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-diagram.svg" alt="Diagram: How do I use diagrams to learn GATE subjects?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-sticky.svg" alt="Sticky Note: How do I use diagrams to learn GATE subjects?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-diagrams-to-learn-gate-subjects-sticky.svg" alt="Sticky Note: How do I use diagrams to learn GATE subjects?" width="30%">
 </a>
 
 
@@ -3988,14 +3988,14 @@ Draw each diagram from memory until it's perfect. Then add the formulas next to 
 
 ### Q102: How do I approach the mathematical foundation for GATE?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-handwritten.svg" alt="Handwritten: How do I approach the mathematical foundation for GATE?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-handwritten.svg" alt="Handwritten: How do I approach the mathematical foundation for GATE?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-diagram.svg" alt="Diagram: How do I approach the mathematical foundation for GATE?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-diagram.svg" alt="Diagram: How do I approach the mathematical foundation for GATE?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-sticky.svg" alt="Sticky Note: How do I approach the mathematical foundation for GATE?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-approach-the-mathematical-foundation-for-gate-sticky.svg" alt="Sticky Note: How do I approach the mathematical foundation for GATE?" width="30%">
 </a>
 
 
@@ -4018,14 +4018,14 @@ Study approach: Solve the math PYQs first. They follow predictable patterns. Onl
 
 ### Q103: How do I prioritize GATE subjects by ROI?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-handwritten.svg" alt="Handwritten: How do I prioritize GATE subjects by ROI?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-handwritten.svg" alt="Handwritten: How do I prioritize GATE subjects by ROI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-diagram.svg" alt="Diagram: How do I prioritize GATE subjects by ROI?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-diagram.svg" alt="Diagram: How do I prioritize GATE subjects by ROI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-sticky.svg" alt="Sticky Note: How do I prioritize GATE subjects by ROI?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-prioritize-gate-subjects-by-roi-sticky.svg" alt="Sticky Note: How do I prioritize GATE subjects by ROI?" width="30%">
 </a>
 
 
@@ -4047,14 +4047,14 @@ Strategy: Master OS + DBMS + CN + COA first (ROI rank 1-4) → they account for 
 
 ### Q104: How do I manage time in GATE exams?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-handwritten.svg" alt="Handwritten: How do I manage time in GATE exams?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-handwritten.svg" alt="Handwritten: How do I manage time in GATE exams?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-diagram.svg" alt="Diagram: How do I manage time in GATE exams?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-diagram.svg" alt="Diagram: How do I manage time in GATE exams?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-sticky.svg" alt="Sticky Note: How do I manage time in GATE exams?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-manage-time-in-gate-exams-sticky.svg" alt="Sticky Note: How do I manage time in GATE exams?" width="30%">
 </a>
 
 
@@ -4077,14 +4077,14 @@ The difference between a 65 and a 75 in GATE is often time management, not knowl
 
 ### Q105: How do I analyze and fix common GATE mistakes?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-handwritten.svg" alt="Handwritten: How do I analyze and fix common GATE mistakes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-handwritten.svg" alt="Handwritten: How do I analyze and fix common GATE mistakes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-diagram.svg" alt="Diagram: How do I analyze and fix common GATE mistakes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-diagram.svg" alt="Diagram: How do I analyze and fix common GATE mistakes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-sticky.svg" alt="Sticky Note: How do I analyze and fix common GATE mistakes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-and-fix-common-gate-mistakes-sticky.svg" alt="Sticky Note: How do I analyze and fix common GATE mistakes?" width="30%">
 </a>
 
 
@@ -4114,14 +4114,14 @@ Corrective action: Re-do Gantt chart practice on 10 scheduling problems.
 
 ### Q106: How do I build a memory palace for OS theory?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-handwritten.svg" alt="Handwritten: How do I build a memory palace for OS theory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-handwritten.svg" alt="Handwritten: How do I build a memory palace for OS theory?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-diagram.svg" alt="Diagram: How do I build a memory palace for OS theory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-diagram.svg" alt="Diagram: How do I build a memory palace for OS theory?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-sticky.svg" alt="Sticky Note: How do I build a memory palace for OS theory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-memory-palace-for-os-theory-sticky.svg" alt="Sticky Note: How do I build a memory palace for OS theory?" width="30%">
 </a>
 
 
@@ -4145,14 +4145,14 @@ Walk through your house mentally. Each room triggers state recall. This turns an
 
 ### Q107: How do I run a dual GATE + placement preparation track?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-handwritten.svg" alt="Handwritten: How do I run a dual GATE + placement preparation track?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-handwritten.svg" alt="Handwritten: How do I run a dual GATE + placement preparation track?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-diagram.svg" alt="Diagram: How do I run a dual GATE + placement preparation track?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-diagram.svg" alt="Diagram: How do I run a dual GATE + placement preparation track?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-sticky.svg" alt="Sticky Note: How do I run a dual GATE + placement preparation track?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-run-a-dual-gate-placement-preparation-track-sticky.svg" alt="Sticky Note: How do I run a dual GATE + placement preparation track?" width="30%">
 </a>
 
 
@@ -4177,14 +4177,14 @@ Overlap between the tracks reduces total study time. The same concept in OS (pro
 
 ### Q108: How do I use the cheat sheets at the end of each GATE chapter?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-handwritten.svg" alt="Handwritten: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-handwritten.svg" alt="Handwritten: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-diagram.svg" alt="Diagram: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-diagram.svg" alt="Diagram: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-sticky.svg" alt="Sticky Note: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-use-the-cheat-sheets-at-the-end-of-each-gate-chapter-sticky.svg" alt="Sticky Note: How do I use the cheat sheets at the end of each GATE chapter?" width="30%">
 </a>
 
 
@@ -4212,14 +4212,14 @@ By exam week, you should be able to mentally visualize every formula table. This
 
 ### Q109: How do I analyze mock tests effectively?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-handwritten.svg" alt="Handwritten: How do I analyze mock tests effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-handwritten.svg" alt="Handwritten: How do I analyze mock tests effectively?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-diagram.svg" alt="Diagram: How do I analyze mock tests effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-diagram.svg" alt="Diagram: How do I analyze mock tests effectively?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-sticky.svg" alt="Sticky Note: How do I analyze mock tests effectively?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-analyze-mock-tests-effectively-sticky.svg" alt="Sticky Note: How do I analyze mock tests effectively?" width="30%">
 </a>
 
 
@@ -4252,14 +4252,14 @@ This analysis reveals which sections to re-study and which to skip. Don't waste 
 
 ### Q110: What is the 30-day GATE final strategy?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-handwritten.svg" alt="Handwritten: What is the 30-day GATE final strategy?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-handwritten.svg" alt="Handwritten: What is the 30-day GATE final strategy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-diagram.svg" alt="Diagram: What is the 30-day GATE final strategy?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-diagram.svg" alt="Diagram: What is the 30-day GATE final strategy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-sticky.svg" alt="Sticky Note: What is the 30-day GATE final strategy?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-30-day-gate-final-strategy-sticky.svg" alt="Sticky Note: What is the 30-day GATE final strategy?" width="30%">
 </a>
 
 
@@ -4292,14 +4292,14 @@ During this phase, use the company-specific chapter (`04-company-specific.md`) o
 
 ### Q111: What is the universal framework learning blueprint?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-handwritten.svg" alt="Handwritten: What is the universal framework learning blueprint?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-handwritten.svg" alt="Handwritten: What is the universal framework learning blueprint?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-diagram.svg" alt="Diagram: What is the universal framework learning blueprint?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-diagram.svg" alt="Diagram: What is the universal framework learning blueprint?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-sticky.svg" alt="Sticky Note: What is the universal framework learning blueprint?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-universal-framework-learning-blueprint-sticky.svg" alt="Sticky Note: What is the universal framework learning blueprint?" width="30%">
 </a>
 
 
@@ -4319,14 +4319,14 @@ The 27 courses in this repo follow this blueprint: each starts with learning obj
 
 ### Q112: How do I learn Java from this repo?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Java from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Java from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-diagram.svg" alt="Diagram: How do I learn Java from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-diagram.svg" alt="Diagram: How do I learn Java from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Java from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-java-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Java from this repo?" width="30%">
 </a>
 
 
@@ -4358,14 +4358,14 @@ class UserService {
 
 ### Q113: How do I learn Python from this repo?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Python from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Python from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-diagram.svg" alt="Diagram: How do I learn Python from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-diagram.svg" alt="Diagram: How do I learn Python from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Python from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-python-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Python from this repo?" width="30%">
 </a>
 
 
@@ -4405,14 +4405,14 @@ def two_sum(nums, target):
 
 ### Q114: How do I learn DevOps from this repo?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn DevOps from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn DevOps from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-diagram.svg" alt="Diagram: How do I learn DevOps from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-diagram.svg" alt="Diagram: How do I learn DevOps from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn DevOps from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-devops-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn DevOps from this repo?" width="30%">
 </a>
 
 
@@ -4443,14 +4443,14 @@ After Docker, learn Docker Compose (multi-container), then Kubernetes (chapter 6
 
 ### Q115: How do I learn Laravel from this repo?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Laravel from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-handwritten.svg" alt="Handwritten: How do I learn Laravel from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-diagram.svg" alt="Diagram: How do I learn Laravel from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-diagram.svg" alt="Diagram: How do I learn Laravel from this repo?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Laravel from this repo?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-learn-laravel-from-this-repo-sticky.svg" alt="Sticky Note: How do I learn Laravel from this repo?" width="30%">
 </a>
 
 
@@ -4486,14 +4486,14 @@ After CRUD, add authentication (chapter 5 → Breeze/Jetstream), then API endpoi
 
 ### Q116: Why shouldn't I learn two new frameworks at once?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" alt="Handwritten: Why shouldn't I learn two new frameworks at once?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-handwritten.svg" alt="Handwritten: Why shouldn't I learn two new frameworks at once?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" alt="Diagram: Why shouldn't I learn two new frameworks at once?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-diagram.svg" alt="Diagram: Why shouldn't I learn two new frameworks at once?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" alt="Sticky Note: Why shouldn't I learn two new frameworks at once?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/why-shouldn-t-i-learn-two-new-frameworks-at-once-sticky.svg" alt="Sticky Note: Why shouldn't I learn two new frameworks at once?" width="30%">
 </a>
 
 
@@ -4512,14 +4512,14 @@ Evidence: After mastering the Spring chapter (57), learning Laravel's service co
 
 ### Q117: What is the Minimal Viable Project pattern for learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" alt="Handwritten: What is the Minimal Viable Project pattern for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-handwritten.svg" alt="Handwritten: What is the Minimal Viable Project pattern for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" alt="Diagram: What is the Minimal Viable Project pattern for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-diagram.svg" alt="Diagram: What is the Minimal Viable Project pattern for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" alt="Sticky Note: What is the Minimal Viable Project pattern for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-minimal-viable-project-pattern-for-learning-sticky.svg" alt="Sticky Note: What is the Minimal Viable Project pattern for learning?" width="30%">
 </a>
 
 
@@ -4580,14 +4580,14 @@ Build this one project in the new framework. Skip everything else until the CRUD
 
 ### Q118: How do I read documentation effectively vs tutorials?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" alt="Handwritten: How do I read documentation effectively vs tutorials?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-handwritten.svg" alt="Handwritten: How do I read documentation effectively vs tutorials?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" alt="Diagram: How do I read documentation effectively vs tutorials?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-diagram.svg" alt="Diagram: How do I read documentation effectively vs tutorials?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" alt="Sticky Note: How do I read documentation effectively vs tutorials?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-read-documentation-effectively-vs-tutorials-sticky.svg" alt="Sticky Note: How do I read documentation effectively vs tutorials?" width="30%">
 </a>
 
 
@@ -4621,14 +4621,14 @@ The doc tells you *why* (immutability, testability). The code tells you *how*. R
 
 ### Q119: How do I debug using StackOverflow and systematic methods?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" alt="Handwritten: How do I debug using StackOverflow and systematic methods?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-handwritten.svg" alt="Handwritten: How do I debug using StackOverflow and systematic methods?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" alt="Diagram: How do I debug using StackOverflow and systematic methods?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-diagram.svg" alt="Diagram: How do I debug using StackOverflow and systematic methods?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" alt="Sticky Note: How do I debug using StackOverflow and systematic methods?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-debug-using-stackoverflow-and-systematic-methods-sticky.svg" alt="Sticky Note: How do I debug using StackOverflow and systematic methods?" width="30%">
 </a>
 
 
@@ -4664,14 +4664,14 @@ Always look for the *accepted* answer with the most upvotes. Read the explanatio
 
 ### Q120: How does "Building in Public" accelerate learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does "Building in Public" accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-handwritten.svg" alt="Handwritten: How does "Building in Public" accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does "Building in Public" accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-diagram.svg" alt="Diagram: How does "Building in Public" accelerate learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does "Building in Public" accelerate learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-building-in-public-accelerate-learning-sticky.svg" alt="Sticky Note: How does "Building in Public" accelerate learning?" width="30%">
 </a>
 
 
@@ -4696,14 +4696,14 @@ Contributing workflow: fork → clone → branch → commit → PR. Even fixing 
 
 ### Q121: What is meta-learning and why does it matter?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is meta-learning and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is meta-learning and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-diagram.svg" alt="Diagram: What is meta-learning and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-diagram.svg" alt="Diagram: What is meta-learning and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is meta-learning and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-meta-learning-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is meta-learning and why does it matter?" width="30%">
 </a>
 
 
@@ -4728,14 +4728,14 @@ The most effective learners in this repo aren't necessarily the ones with the hi
 
 ### Q122: What are Josh Waitzkin's 3 stages of learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" alt="Handwritten: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-handwritten.svg" alt="Handwritten: What are Josh Waitzkin's 3 stages of learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" alt="Diagram: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-diagram.svg" alt="Diagram: What are Josh Waitzkin's 3 stages of learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" alt="Sticky Note: What are Josh Waitzkin's 3 stages of learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-are-josh-waitzkin-s-3-stages-of-learning-sticky.svg" alt="Sticky Note: What are Josh Waitzkin's 3 stages of learning?" width="30%">
 </a>
 
 
@@ -4765,14 +4765,14 @@ Each of the 27 courses follows this arc. The Interview chapters (56-66 in the Ja
 
 ### Q123: What is the 80/20 rule for CS interview preparation?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" alt="Handwritten: What is the 80/20 rule for CS interview preparation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-handwritten.svg" alt="Handwritten: What is the 80/20 rule for CS interview preparation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" alt="Diagram: What is the 80/20 rule for CS interview preparation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-diagram.svg" alt="Diagram: What is the 80/20 rule for CS interview preparation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" alt="Sticky Note: What is the 80/20 rule for CS interview preparation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-80-20-rule-for-cs-interview-preparation-sticky.svg" alt="Sticky Note: What is the 80/20 rule for CS interview preparation?" width="30%">
 </a>
 
 
@@ -4795,14 +4795,14 @@ Identify your personal 20%: which 5 of the 27 courses matter most for your targe
 
 ### Q124: How do I build a personal skill tree?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-handwritten.svg" alt="Handwritten: How do I build a personal skill tree?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-handwritten.svg" alt="Handwritten: How do I build a personal skill tree?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-diagram.svg" alt="Diagram: How do I build a personal skill tree?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-diagram.svg" alt="Diagram: How do I build a personal skill tree?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-sticky.svg" alt="Sticky Note: How do I build a personal skill tree?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-personal-skill-tree-sticky.svg" alt="Sticky Note: How do I build a personal skill tree?" width="30%">
 </a>
 
 
@@ -4841,14 +4841,14 @@ Each node represents a measurable skill. Complete a node when you can solve rela
 
 ### Q125: Where do I fall on the Dunning-Kruger curve for each skill?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" alt="Handwritten: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-handwritten.svg" alt="Handwritten: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" alt="Diagram: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-diagram.svg" alt="Diagram: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" alt="Sticky Note: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/where-do-i-fall-on-the-dunning-kruger-curve-for-each-skill-sticky.svg" alt="Sticky Note: Where do I fall on the Dunning-Kruger curve for each skill?" width="30%">
 </a>
 
 
@@ -4875,14 +4875,14 @@ Update this table every month. The Dunning-Kruger curve is a map, not a judgment
 
 ### Q126: How do I handle imposter syndrome when learning new tech?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" alt="Handwritten: How do I handle imposter syndrome when learning new tech?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-handwritten.svg" alt="Handwritten: How do I handle imposter syndrome when learning new tech?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" alt="Diagram: How do I handle imposter syndrome when learning new tech?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-diagram.svg" alt="Diagram: How do I handle imposter syndrome when learning new tech?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" alt="Sticky Note: How do I handle imposter syndrome when learning new tech?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-handle-imposter-syndrome-when-learning-new-tech-sticky.svg" alt="Sticky Note: How do I handle imposter syndrome when learning new tech?" width="30%">
 </a>
 
 
@@ -4919,14 +4919,14 @@ You're not starting from zero. You're starting from a different platform with tr
 
 ### Q127: How does knowledge compound across courses?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-handwritten.svg" alt="Handwritten: How does knowledge compound across courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-handwritten.svg" alt="Handwritten: How does knowledge compound across courses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-diagram.svg" alt="Diagram: How does knowledge compound across courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-diagram.svg" alt="Diagram: How does knowledge compound across courses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-sticky.svg" alt="Sticky Note: How does knowledge compound across courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-does-knowledge-compound-across-courses-sticky.svg" alt="Sticky Note: How does knowledge compound across courses?" width="30%">
 </a>
 
 
@@ -4950,14 +4950,14 @@ The total time to study all 27 courses is not the sum of individual times → it
 
 ### Q128: How do I build a Second Brain across 27 courses?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" alt="Handwritten: How do I build a Second Brain across 27 courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-handwritten.svg" alt="Handwritten: How do I build a Second Brain across 27 courses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" alt="Diagram: How do I build a Second Brain across 27 courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-diagram.svg" alt="Diagram: How do I build a Second Brain across 27 courses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" alt="Sticky Note: How do I build a Second Brain across 27 courses?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/how-do-i-build-a-second-brain-across-27-courses-sticky.svg" alt="Sticky Note: How do I build a Second Brain across 27 courses?" width="30%">
 </a>
 
 
@@ -4985,14 +4985,14 @@ For this repo, the simplest Second Brain is a folder structure mirroring the cou
 
 ### Q129: What is your post-interview roadmap?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-handwritten.svg" alt="Handwritten: What is your post-interview roadmap?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-handwritten.svg" alt="Handwritten: What is your post-interview roadmap?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-diagram.svg" alt="Diagram: What is your post-interview roadmap?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-diagram.svg" alt="Diagram: What is your post-interview roadmap?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-sticky.svg" alt="Sticky Note: What is your post-interview roadmap?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-your-post-interview-roadmap-sticky.svg" alt="Sticky Note: What is your post-interview roadmap?" width="30%">
 </a>
 
 
@@ -5024,14 +5024,14 @@ The 27 courses are not just for interviews. They form a complete CS education pa
 
 ### Q130: What is the final stage → teaching others?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-handwritten.svg" alt="Handwritten: What is the final stage → teaching others?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-handwritten.svg" alt="Handwritten: What is the final stage → teaching others?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-diagram.svg" alt="Diagram: What is the final stage → teaching others?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-diagram.svg" alt="Diagram: What is the final stage → teaching others?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-sticky.svg" alt="Sticky Note: What is the final stage → teaching others?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/archive-complete-reference/what-is-the-final-stage-teaching-others-sticky.svg" alt="Sticky Note: What is the final stage → teaching others?" width="30%">
 </a>
 
 

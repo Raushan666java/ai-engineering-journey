@@ -20,14 +20,14 @@ Production agent loops require more than correct logic — they need **tooling**
 
 ### 9.1 Durable Execution
 
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-handwritten.svg" alt="Handwritten: 9.1 Durable Execution" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-handwritten.svg" alt="Handwritten: 9.1 Durable Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-diagram.svg" alt="Diagram: 9.1 Durable Execution" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-diagram.svg" alt="Diagram: 9.1 Durable Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-sticky.svg" alt="Sticky Note: 9.1 Durable Execution" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-1-durable-execution-sticky.svg" alt="Sticky Note: 9.1 Durable Execution" width="30%">
 </a>
 
 
@@ -48,14 +48,14 @@ Step 3: deploy     → compensation: rollbackDeploy  ← FAIL
 
 ### 9.2 Checkpoint / Restore
 
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-handwritten.svg" alt="Handwritten: 9.2 Checkpoint / Restore" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-handwritten.svg" alt="Handwritten: 9.2 Checkpoint / Restore" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-diagram.svg" alt="Diagram: 9.2 Checkpoint / Restore" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-diagram.svg" alt="Diagram: 9.2 Checkpoint / Restore" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-sticky.svg" alt="Sticky Note: 9.2 Checkpoint / Restore" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-2-checkpoint-restore-sticky.svg" alt="Sticky Note: 9.2 Checkpoint / Restore" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ Checkpointing saves the complete agent context — conversation history, tool re
 
 ### 9.3 Rate Limiting
 
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-handwritten.svg" alt="Handwritten: 9.3 Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-handwritten.svg" alt="Handwritten: 9.3 Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-diagram.svg" alt="Diagram: 9.3 Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-diagram.svg" alt="Diagram: 9.3 Rate Limiting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-sticky.svg" alt="Sticky Note: 9.3 Rate Limiting" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-3-rate-limiting-sticky.svg" alt="Sticky Note: 9.3 Rate Limiting" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ Agent loops can burn through tokens and money at alarming speed. A runaway loop 
 
 ### 9.4 Observability
 
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-handwritten.svg" alt="Handwritten: 9.4 Observability" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-handwritten.svg" alt="Handwritten: 9.4 Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-diagram.svg" alt="Diagram: 9.4 Observability" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-diagram.svg" alt="Diagram: 9.4 Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-sticky.svg" alt="Sticky Note: 9.4 Observability" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-4-observability-sticky.svg" alt="Sticky Note: 9.4 Observability" width="30%">
 </a>
 
 
@@ -138,14 +138,14 @@ Debugging an agent loop is harder than debugging a synchronous program because t
 
 ### 9.5 Loop Testing
 
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-handwritten.svg" alt="Handwritten: 9.5 Loop Testing" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-handwritten.svg" alt="Handwritten: 9.5 Loop Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-diagram.svg" alt="Diagram: 9.5 Loop Testing" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-diagram.svg" alt="Diagram: 9.5 Loop Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-sticky.svg" alt="Sticky Note: 9.5 Loop Testing" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch09-loop-tooling/9-5-loop-testing-sticky.svg" alt="Sticky Note: 9.5 Loop Testing" width="30%">
 </a>
 
 

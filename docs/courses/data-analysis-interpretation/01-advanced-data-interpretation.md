@@ -17,14 +17,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 The DI Problem-Solving Framework
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-handwritten.svg" alt="Handwritten: 1.1 The DI Problem-Solving Framework" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-handwritten.svg" alt="Handwritten: 1.1 The DI Problem-Solving Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-diagram.svg" alt="Diagram: 1.1 The DI Problem-Solving Framework" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-diagram.svg" alt="Diagram: 1.1 The DI Problem-Solving Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-sticky.svg" alt="Sticky Note: 1.1 The DI Problem-Solving Framework" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-sticky.svg" alt="Sticky Note: 1.1 The DI Problem-Solving Framework" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ flowchart TD
 
 ### 1.2 Tabular Data Interpretation
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-handwritten.svg" alt="Handwritten: 1.2 Tabular Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-handwritten.svg" alt="Handwritten: 1.2 Tabular Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-diagram.svg" alt="Diagram: 1.2 Tabular Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-diagram.svg" alt="Diagram: 1.2 Tabular Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-sticky.svg" alt="Sticky Note: 1.2 Tabular Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-sticky.svg" alt="Sticky Note: 1.2 Tabular Data Interpretation" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ Some questions present two or three related tables. You must cross-reference dat
 
 ### 1.3 Bar Graph Analysis
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-handwritten.svg" alt="Handwritten: 1.3 Bar Graph Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-handwritten.svg" alt="Handwritten: 1.3 Bar Graph Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-diagram.svg" alt="Diagram: 1.3 Bar Graph Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-diagram.svg" alt="Diagram: 1.3 Bar Graph Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-sticky.svg" alt="Sticky Note: 1.3 Bar Graph Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-sticky.svg" alt="Sticky Note: 1.3 Bar Graph Analysis" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ Each bar represents 100%, and segments show the percentage distribution. The tot
 
 ### 1.4 Line Chart Analysis
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-handwritten.svg" alt="Handwritten: 1.4 Line Chart Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-handwritten.svg" alt="Handwritten: 1.4 Line Chart Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-diagram.svg" alt="Diagram: 1.4 Line Chart Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-diagram.svg" alt="Diagram: 1.4 Line Chart Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-sticky.svg" alt="Sticky Note: 1.4 Line Chart Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-sticky.svg" alt="Sticky Note: 1.4 Line Chart Analysis" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ Shows cumulative growth over time, often with a base year index of 100.
 
 ### 1.5 Pie Chart Analysis
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-handwritten.svg" alt="Handwritten: 1.5 Pie Chart Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-handwritten.svg" alt="Handwritten: 1.5 Pie Chart Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-diagram.svg" alt="Diagram: 1.5 Pie Chart Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-diagram.svg" alt="Diagram: 1.5 Pie Chart Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-sticky.svg" alt="Sticky Note: 1.5 Pie Chart Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-sticky.svg" alt="Sticky Note: 1.5 Pie Chart Analysis" width="30%">
 </a>
 
 
@@ -221,14 +221,14 @@ A pie chart shows the proportional distribution of a whole. Each sector's centra
 
 ### 1.6 Combining Multiple Chart Types
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-handwritten.svg" alt="Handwritten: 1.6 Combining Multiple Chart Types" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-handwritten.svg" alt="Handwritten: 1.6 Combining Multiple Chart Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-diagram.svg" alt="Diagram: 1.6 Combining Multiple Chart Types" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-diagram.svg" alt="Diagram: 1.6 Combining Multiple Chart Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-sticky.svg" alt="Sticky Note: 1.6 Combining Multiple Chart Types" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-sticky.svg" alt="Sticky Note: 1.6 Combining Multiple Chart Types" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ A single question set may include a table, a bar graph, and a pie chart. The que
 
 ### 1.7 Approximation and Estimation Strategies
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-handwritten.svg" alt="Handwritten: 1.7 Approximation and Estimation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-handwritten.svg" alt="Handwritten: 1.7 Approximation and Estimation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-diagram.svg" alt="Diagram: 1.7 Approximation and Estimation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-diagram.svg" alt="Diagram: 1.7 Approximation and Estimation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-sticky.svg" alt="Sticky Note: 1.7 Approximation and Estimation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-sticky.svg" alt="Sticky Note: 1.7 Approximation and Estimation Strategies" width="30%">
 </a>
 
 
@@ -273,14 +273,14 @@ In competitive exams, exact calculation is not always necessary. Approximation s
 
 ### 1.8 CAGR and Growth Rate Calculations
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-handwritten.svg" alt="Handwritten: 1.8 CAGR and Growth Rate Calculations" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-handwritten.svg" alt="Handwritten: 1.8 CAGR and Growth Rate Calculations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-diagram.svg" alt="Diagram: 1.8 CAGR and Growth Rate Calculations" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-diagram.svg" alt="Diagram: 1.8 CAGR and Growth Rate Calculations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-sticky.svg" alt="Sticky Note: 1.8 CAGR and Growth Rate Calculations" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-sticky.svg" alt="Sticky Note: 1.8 CAGR and Growth Rate Calculations" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ For quick estimation: Use the rule of 72 for doubling time.
 
 ### 1.9 Percentage, Ratio, and Average Concepts in DI
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-handwritten.svg" alt="Handwritten: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-handwritten.svg" alt="Handwritten: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-diagram.svg" alt="Diagram: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-diagram.svg" alt="Diagram: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-sticky.svg" alt="Sticky Note: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-sticky.svg" alt="Sticky Note: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ For quick estimation: Use the rule of 72 for doubling time.
 
 ### 1.10 Common Traps and Pitfalls
 
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-handwritten.svg" alt="Handwritten: 1.10 Common Traps and Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-handwritten.svg" alt="Handwritten: 1.10 Common Traps and Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-diagram.svg" alt="Diagram: 1.10 Common Traps and Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-diagram.svg" alt="Diagram: 1.10 Common Traps and Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-sticky.svg" alt="Sticky Note: 1.10 Common Traps and Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-sticky.svg" alt="Sticky Note: 1.10 Common Traps and Pitfalls" width="30%">
 </a>
 
 

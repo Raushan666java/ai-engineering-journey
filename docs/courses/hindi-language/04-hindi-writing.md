@@ -1,4 +1,4 @@
-﻿# Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)
+# Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)
 
 ## Learning Objectives
 
@@ -15,14 +15,14 @@ By the end of this chapter, you will be able to:
 
 ### 4.1 Importance of Hindi Writing in Competitive Exams
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-handwritten.svg" alt="Handwritten: 4.1 Importance of Hindi Writing in Competitive Exams" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-handwritten.svg" alt="Handwritten: 4.1 Importance of Hindi Writing in Competitive Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-diagram.svg" alt="Diagram: 4.1 Importance of Hindi Writing in Competitive Exams" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-diagram.svg" alt="Diagram: 4.1 Importance of Hindi Writing in Competitive Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-sticky.svg" alt="Sticky Note: 4.1 Importance of Hindi Writing in Competitive Exams" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-1-importance-of-hindi-writing-in-competitive-exams-sticky.svg" alt="Sticky Note: 4.1 Importance of Hindi Writing in Competitive Exams" width="30%">
 </a>
 
 
@@ -35,14 +35,14 @@ Hindi writing is a high-scoring section in many government exams:
 
 ### 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-handwritten.svg" alt="Handwritten: 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-handwritten.svg" alt="Handwritten: 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-diagram.svg" alt="Diagram: 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-diagram.svg" alt="Diagram: 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-sticky.svg" alt="Sticky Note: 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-2-letter-writing-sticky.svg" alt="Sticky Note: 4.2 Letter Writing (à¤ªà¤¤à¥à¤° à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ _______________
 
 ### 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-handwritten.svg" alt="Handwritten: 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-handwritten.svg" alt="Handwritten: 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-diagram.svg" alt="Diagram: 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-diagram.svg" alt="Diagram: 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-sticky.svg" alt="Sticky Note: 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-3-application-writing-sticky.svg" alt="Sticky Note: 4.3 Application Writing (à¤ªà¥à¤°à¤¾à¤°à¥à¤¥à¤¨à¤¾ à¤ªà¤¤à¥à¤°)" width="30%">
 </a>
 
 
@@ -156,14 +156,14 @@ _______________
 
 ### 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-handwritten.svg" alt="Handwritten: 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-handwritten.svg" alt="Handwritten: 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-diagram.svg" alt="Diagram: 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-diagram.svg" alt="Diagram: 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-sticky.svg" alt="Sticky Note: 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-4-essay-writing-sticky.svg" alt="Sticky Note: 4.4 Essay Writing (à¤¨à¤¿à¤¬à¤‚à¤§ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-handwritten.svg" alt="Handwritten: 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-handwritten.svg" alt="Handwritten: 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-diagram.svg" alt="Diagram: 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-diagram.svg" alt="Diagram: 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-sticky.svg" alt="Sticky Note: 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-5-report-writing-sticky.svg" alt="Sticky Note: 4.5 Report Writing (à¤°à¤¿à¤ªà¥‹à¤°à¥à¤Ÿ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-handwritten.svg" alt="Handwritten: 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-handwritten.svg" alt="Handwritten: 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-diagram.svg" alt="Diagram: 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-diagram.svg" alt="Diagram: 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-sticky.svg" alt="Sticky Note: 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-6-summary-writing-sticky.svg" alt="Sticky Note: 4.6 Summary Writing (à¤¸à¤¾à¤°à¤¾à¤‚à¤¶ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-handwritten.svg" alt="Handwritten: 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-handwritten.svg" alt="Handwritten: 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-diagram.svg" alt="Diagram: 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-diagram.svg" alt="Diagram: 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-sticky.svg" alt="Sticky Note: 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-7-dialogue-writing-sticky.svg" alt="Sticky Note: 4.7 Dialogue Writing (à¤¸à¤‚à¤µà¤¾à¤¦ à¤²à¥‡à¤–à¤¨)" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-handwritten.svg" alt="Handwritten: 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-handwritten.svg" alt="Handwritten: 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-diagram.svg" alt="Diagram: 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-diagram.svg" alt="Diagram: 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-sticky.svg" alt="Sticky Note: 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-8-office-hindi-sticky.svg" alt="Sticky Note: 4.8 Office Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€)" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.9 ईमेल लेखन (Email Writing in Hindi)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-handwritten.svg" alt="Handwritten: 4.9 ईमेल लेखन (Email Writing in Hindi)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-handwritten.svg" alt="Handwritten: 4.9 ईमेल लेखन (Email Writing in Hindi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-diagram.svg" alt="Diagram: 4.9 ईमेल लेखन (Email Writing in Hindi)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-diagram.svg" alt="Diagram: 4.9 ईमेल लेखन (Email Writing in Hindi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-sticky.svg" alt="Sticky Note: 4.9 ईमेल लेखन (Email Writing in Hindi)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-email-writing-in-hindi-sticky.svg" alt="Sticky Note: 4.9 ईमेल लेखन (Email Writing in Hindi)" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.10 कार्यालयी पत्र (Official Letters — Extended)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-handwritten.svg" alt="Handwritten: 4.10 कार्यालयी पत्र (Official Letters — Extended)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-handwritten.svg" alt="Handwritten: 4.10 कार्यालयी पत्र (Official Letters — Extended)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-diagram.svg" alt="Diagram: 4.10 कार्यालयी पत्र (Official Letters — Extended)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-diagram.svg" alt="Diagram: 4.10 कार्यालयी पत्र (Official Letters — Extended)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-sticky.svg" alt="Sticky Note: 4.10 कार्यालयी पत्र (Official Letters — Extended)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-10-official-letters-extended-sticky.svg" alt="Sticky Note: 4.10 कार्यालयी पत्र (Official Letters — Extended)" width="30%">
 </a>
 
 
@@ -424,14 +424,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-handwritten.svg" alt="Handwritten: 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-handwritten.svg" alt="Handwritten: 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-diagram.svg" alt="Diagram: 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-diagram.svg" alt="Diagram: 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-sticky.svg" alt="Sticky Note: 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-11-extended-essay-samples-sticky.svg" alt="Sticky Note: 4.11 निबंध — विस्तृत नमूने (Extended Essay Samples)" width="30%">
 </a>
 
 
@@ -453,14 +453,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-handwritten.svg" alt="Handwritten: 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-handwritten.svg" alt="Handwritten: 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-diagram.svg" alt="Diagram: 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-diagram.svg" alt="Diagram: 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-sticky.svg" alt="Sticky Note: 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-12-official-report-sample-sticky.svg" alt="Sticky Note: 4.12 आधिकारिक रिपोर्ट नमूना (Official Report Sample)" width="30%">
 </a>
 
 
@@ -495,14 +495,14 @@ aana hoga. Kiwi nahi chhodna, ilaaj chuna hoga.
 
 ### 4.9 Precis Writing (Precis / Saransh)
 
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-handwritten.svg" alt="Handwritten: 4.9 Precis Writing (Precis / Saransh)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-handwritten.svg" alt="Handwritten: 4.9 Precis Writing (Precis / Saransh)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-diagram.svg" alt="Diagram: 4.9 Precis Writing (Precis / Saransh)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-diagram.svg" alt="Diagram: 4.9 Precis Writing (Precis / Saransh)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-sticky.svg" alt="Sticky Note: 4.9 Precis Writing (Precis / Saransh)" width="30%">
+<a href="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/hindi-language/04-hindi-writing/4-9-precis-writing-precis-saransh-sticky.svg" alt="Sticky Note: 4.9 Precis Writing (Precis / Saransh)" width="30%">
 </a>
 
 

@@ -23,14 +23,14 @@ AI applications require different deployment strategies depending on latency req
 
 ### Real-Time Inference
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-handwritten.svg" alt="Handwritten: Real-Time Inference" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-handwritten.svg" alt="Handwritten: Real-Time Inference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-diagram.svg" alt="Diagram: Real-Time Inference" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-diagram.svg" alt="Diagram: Real-Time Inference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-sticky.svg" alt="Sticky Note: Real-Time Inference" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/real-time-inference-sticky.svg" alt="Sticky Note: Real-Time Inference" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ async function callRealTimeInference(
 
 ### Batch Processing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-handwritten.svg" alt="Handwritten: Batch Processing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-handwritten.svg" alt="Handwritten: Batch Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-diagram.svg" alt="Diagram: Batch Processing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-diagram.svg" alt="Diagram: Batch Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-sticky.svg" alt="Sticky Note: Batch Processing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/batch-processing-sticky.svg" alt="Sticky Note: Batch Processing" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ class BatchProcessor {
 
 ### Streaming
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-handwritten.svg" alt="Handwritten: Streaming" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-handwritten.svg" alt="Handwritten: Streaming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-diagram.svg" alt="Diagram: Streaming" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-diagram.svg" alt="Diagram: Streaming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-sticky.svg" alt="Sticky Note: Streaming" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/streaming-sticky.svg" alt="Sticky Note: Streaming" width="30%">
 </a>
 
 
@@ -249,14 +249,14 @@ async function* streamInference(
 
 ### Edge Deployment
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-handwritten.svg" alt="Handwritten: Edge Deployment" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-handwritten.svg" alt="Handwritten: Edge Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-diagram.svg" alt="Diagram: Edge Deployment" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-diagram.svg" alt="Diagram: Edge Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-sticky.svg" alt="Sticky Note: Edge Deployment" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/edge-deployment-sticky.svg" alt="Sticky Note: Edge Deployment" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ Edge deployment runs inference on devices or edge servers close to the user, red
 
 ### Deployment Strategy Comparison
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-handwritten.svg" alt="Handwritten: Deployment Strategy Comparison" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-handwritten.svg" alt="Handwritten: Deployment Strategy Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-diagram.svg" alt="Diagram: Deployment Strategy Comparison" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-diagram.svg" alt="Diagram: Deployment Strategy Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-sticky.svg" alt="Sticky Note: Deployment Strategy Comparison" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/deployment-strategy-comparison-sticky.svg" alt="Sticky Note: Deployment Strategy Comparison" width="30%">
 </a>
 
 
@@ -293,14 +293,14 @@ Caching is the most effective technique for reducing both latency and cost in AI
 
 ### Semantic Caching
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-handwritten.svg" alt="Handwritten: Semantic Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-handwritten.svg" alt="Handwritten: Semantic Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-diagram.svg" alt="Diagram: Semantic Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-diagram.svg" alt="Diagram: Semantic Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-sticky.svg" alt="Sticky Note: Semantic Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/semantic-caching-sticky.svg" alt="Sticky Note: Semantic Caching" width="30%">
 </a>
 
 
@@ -390,14 +390,14 @@ class SemanticCache {
 
 ### KV Caching
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-handwritten.svg" alt="Handwritten: KV Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-handwritten.svg" alt="Handwritten: KV Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-diagram.svg" alt="Diagram: KV Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-diagram.svg" alt="Diagram: KV Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-sticky.svg" alt="Sticky Note: KV Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/kv-caching-sticky.svg" alt="Sticky Note: KV Caching" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ class KVCache {
 
 ### Response Caching
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-handwritten.svg" alt="Handwritten: Response Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-handwritten.svg" alt="Handwritten: Response Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-diagram.svg" alt="Diagram: Response Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-diagram.svg" alt="Diagram: Response Caching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-sticky.svg" alt="Sticky Note: Response Caching" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/response-caching-sticky.svg" alt="Sticky Note: Response Caching" width="30%">
 </a>
 
 
@@ -450,14 +450,14 @@ Response caching stores the complete model response, including metadata about to
 
 ### Cache Invalidation Strategies
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-handwritten.svg" alt="Handwritten: Cache Invalidation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-handwritten.svg" alt="Handwritten: Cache Invalidation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-diagram.svg" alt="Diagram: Cache Invalidation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-diagram.svg" alt="Diagram: Cache Invalidation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-sticky.svg" alt="Sticky Note: Cache Invalidation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cache-invalidation-strategies-sticky.svg" alt="Sticky Note: Cache Invalidation Strategies" width="30%">
 </a>
 
 
@@ -470,14 +470,14 @@ Response caching stores the complete model response, including metadata about to
 
 ### Caching Architecture
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-handwritten.svg" alt="Handwritten: Caching Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-handwritten.svg" alt="Handwritten: Caching Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-diagram.svg" alt="Diagram: Caching Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-diagram.svg" alt="Diagram: Caching Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-sticky.svg" alt="Sticky Note: Caching Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/caching-architecture-sticky.svg" alt="Sticky Note: Caching Architecture" width="30%">
 </a>
 
 
@@ -520,14 +520,14 @@ Rate limiting protects your AI application from abuse, controls costs, and ensur
 
 ### Rate Limiting Dimensions
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-handwritten.svg" alt="Handwritten: Rate Limiting Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-handwritten.svg" alt="Handwritten: Rate Limiting Dimensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-diagram.svg" alt="Diagram: Rate Limiting Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-diagram.svg" alt="Diagram: Rate Limiting Dimensions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-sticky.svg" alt="Sticky Note: Rate Limiting Dimensions" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/rate-limiting-dimensions-sticky.svg" alt="Sticky Note: Rate Limiting Dimensions" width="30%">
 </a>
 
 
@@ -541,14 +541,14 @@ Rate limiting protects your AI application from abuse, controls costs, and ensur
 
 ### Token Bucket Algorithm
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-handwritten.svg" alt="Handwritten: Token Bucket Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-handwritten.svg" alt="Handwritten: Token Bucket Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-diagram.svg" alt="Diagram: Token Bucket Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-diagram.svg" alt="Diagram: Token Bucket Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-sticky.svg" alt="Sticky Note: Token Bucket Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/token-bucket-algorithm-sticky.svg" alt="Sticky Note: Token Bucket Algorithm" width="30%">
 </a>
 
 
@@ -598,14 +598,14 @@ class TokenBucket {
 
 ### Sliding Window Algorithm
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-handwritten.svg" alt="Handwritten: Sliding Window Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-handwritten.svg" alt="Handwritten: Sliding Window Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-diagram.svg" alt="Diagram: Sliding Window Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-diagram.svg" alt="Diagram: Sliding Window Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-sticky.svg" alt="Sticky Note: Sliding Window Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/sliding-window-algorithm-sticky.svg" alt="Sticky Note: Sliding Window Algorithm" width="30%">
 </a>
 
 
@@ -650,14 +650,14 @@ class SlidingWindowRateLimiter {
 
 ### Multi-Layer Rate Limiter
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-handwritten.svg" alt="Handwritten: Multi-Layer Rate Limiter" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-handwritten.svg" alt="Handwritten: Multi-Layer Rate Limiter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-diagram.svg" alt="Diagram: Multi-Layer Rate Limiter" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-diagram.svg" alt="Diagram: Multi-Layer Rate Limiter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-sticky.svg" alt="Sticky Note: Multi-Layer Rate Limiter" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/multi-layer-rate-limiter-sticky.svg" alt="Sticky Note: Multi-Layer Rate Limiter" width="30%">
 </a>
 
 
@@ -718,14 +718,14 @@ class MultiLayerRateLimiter {
 
 ### Priority Queuing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-handwritten.svg" alt="Handwritten: Priority Queuing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-handwritten.svg" alt="Handwritten: Priority Queuing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-diagram.svg" alt="Diagram: Priority Queuing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-diagram.svg" alt="Diagram: Priority Queuing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-sticky.svg" alt="Sticky Note: Priority Queuing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/priority-queuing-sticky.svg" alt="Sticky Note: Priority Queuing" width="30%">
 </a>
 
 
@@ -799,14 +799,14 @@ AI costs can grow rapidly in production. Systematic cost management strategies a
 
 ### Cost Optimization Strategies
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-handwritten.svg" alt="Handwritten: Cost Optimization Strategies" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-handwritten.svg" alt="Handwritten: Cost Optimization Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-diagram.svg" alt="Diagram: Cost Optimization Strategies" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-diagram.svg" alt="Diagram: Cost Optimization Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-sticky.svg" alt="Sticky Note: Cost Optimization Strategies" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-strategies-sticky.svg" alt="Sticky Note: Cost Optimization Strategies" width="30%">
 </a>
 
 
@@ -822,14 +822,14 @@ AI costs can grow rapidly in production. Systematic cost management strategies a
 
 ### Model Selection Strategy
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-handwritten.svg" alt="Handwritten: Model Selection Strategy" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-handwritten.svg" alt="Handwritten: Model Selection Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-diagram.svg" alt="Diagram: Model Selection Strategy" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-diagram.svg" alt="Diagram: Model Selection Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-sticky.svg" alt="Sticky Note: Model Selection Strategy" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/model-selection-strategy-sticky.svg" alt="Sticky Note: Model Selection Strategy" width="30%">
 </a>
 
 
@@ -932,14 +932,14 @@ class CostManager {
 
 ### Cost Optimization Flow
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-handwritten.svg" alt="Handwritten: Cost Optimization Flow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-handwritten.svg" alt="Handwritten: Cost Optimization Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-diagram.svg" alt="Diagram: Cost Optimization Flow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-diagram.svg" alt="Diagram: Cost Optimization Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-sticky.svg" alt="Sticky Note: Cost Optimization Flow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/cost-optimization-flow-sticky.svg" alt="Sticky Note: Cost Optimization Flow" width="30%">
 </a>
 
 
@@ -982,14 +982,14 @@ graph TB
 
 ### Prompt Optimization for Cost
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-handwritten.svg" alt="Handwritten: Prompt Optimization for Cost" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-handwritten.svg" alt="Handwritten: Prompt Optimization for Cost" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-diagram.svg" alt="Diagram: Prompt Optimization for Cost" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-diagram.svg" alt="Diagram: Prompt Optimization for Cost" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-sticky.svg" alt="Sticky Note: Prompt Optimization for Cost" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/prompt-optimization-for-cost-sticky.svg" alt="Sticky Note: Prompt Optimization for Cost" width="30%">
 </a>
 
 
@@ -1027,14 +1027,14 @@ As AI applications scale, load balancing and autoscaling ensure consistent perfo
 
 ### Horizontal Scaling
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-handwritten.svg" alt="Handwritten: Horizontal Scaling" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-handwritten.svg" alt="Handwritten: Horizontal Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-diagram.svg" alt="Diagram: Horizontal Scaling" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-diagram.svg" alt="Diagram: Horizontal Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-sticky.svg" alt="Sticky Note: Horizontal Scaling" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/horizontal-scaling-sticky.svg" alt="Sticky Note: Horizontal Scaling" width="30%">
 </a>
 
 
@@ -1102,14 +1102,14 @@ class AutoScaler {
 
 ### Request Routing
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-handwritten.svg" alt="Handwritten: Request Routing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-handwritten.svg" alt="Handwritten: Request Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-diagram.svg" alt="Diagram: Request Routing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-diagram.svg" alt="Diagram: Request Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-sticky.svg" alt="Sticky Note: Request Routing" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/request-routing-sticky.svg" alt="Sticky Note: Request Routing" width="30%">
 </a>
 
 
@@ -1162,14 +1162,14 @@ class LoadBalancer {
 
 ### Circuit Breaker
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-handwritten.svg" alt="Handwritten: Circuit Breaker" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-handwritten.svg" alt="Handwritten: Circuit Breaker" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-diagram.svg" alt="Diagram: Circuit Breaker" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-diagram.svg" alt="Diagram: Circuit Breaker" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-sticky.svg" alt="Sticky Note: Circuit Breaker" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/circuit-breaker-sticky.svg" alt="Sticky Note: Circuit Breaker" width="30%">
 </a>
 
 
@@ -1227,14 +1227,14 @@ class CircuitBreaker {
 
 ### Connection Pooling
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-handwritten.svg" alt="Handwritten: Connection Pooling" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-handwritten.svg" alt="Handwritten: Connection Pooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-diagram.svg" alt="Diagram: Connection Pooling" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-diagram.svg" alt="Diagram: Connection Pooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-sticky.svg" alt="Sticky Note: Connection Pooling" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/connection-pooling-sticky.svg" alt="Sticky Note: Connection Pooling" width="30%">
 </a>
 
 
@@ -1275,14 +1275,14 @@ A/B testing enables data-driven decisions about prompt variants, model versions,
 
 ### A/B Testing Framework
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-handwritten.svg" alt="Handwritten: A/B Testing Framework" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-handwritten.svg" alt="Handwritten: A/B Testing Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-diagram.svg" alt="Diagram: A/B Testing Framework" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-diagram.svg" alt="Diagram: A/B Testing Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-sticky.svg" alt="Sticky Note: A/B Testing Framework" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-framework-sticky.svg" alt="Sticky Note: A/B Testing Framework" width="30%">
 </a>
 
 
@@ -1441,14 +1441,14 @@ class ABTestingFramework {
 
 ### A/B Testing Pipeline
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-handwritten.svg" alt="Handwritten: A/B Testing Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-handwritten.svg" alt="Handwritten: A/B Testing Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-diagram.svg" alt="Diagram: A/B Testing Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-diagram.svg" alt="Diagram: A/B Testing Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-sticky.svg" alt="Sticky Note: A/B Testing Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/a-b-testing-pipeline-sticky.svg" alt="Sticky Note: A/B Testing Pipeline" width="30%">
 </a>
 
 
@@ -1489,14 +1489,14 @@ graph TB
 
 ### Experiment Scenarios
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-handwritten.svg" alt="Handwritten: Experiment Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-handwritten.svg" alt="Handwritten: Experiment Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-diagram.svg" alt="Diagram: Experiment Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-diagram.svg" alt="Diagram: Experiment Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-sticky.svg" alt="Sticky Note: Experiment Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/experiment-scenarios-sticky.svg" alt="Sticky Note: Experiment Scenarios" width="30%">
 </a>
 
 
@@ -1516,14 +1516,14 @@ Production AI systems require comprehensive monitoring across multiple dimension
 
 ### Key Metrics
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-handwritten.svg" alt="Handwritten: Key Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-handwritten.svg" alt="Handwritten: Key Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-diagram.svg" alt="Diagram: Key Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-diagram.svg" alt="Diagram: Key Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-sticky.svg" alt="Sticky Note: Key Metrics" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/key-metrics-sticky.svg" alt="Sticky Note: Key Metrics" width="30%">
 </a>
 
 
@@ -1539,14 +1539,14 @@ Production AI systems require comprehensive monitoring across multiple dimension
 
 ### Monitoring Dashboard Architecture
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-handwritten.svg" alt="Handwritten: Monitoring Dashboard Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-handwritten.svg" alt="Handwritten: Monitoring Dashboard Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-diagram.svg" alt="Diagram: Monitoring Dashboard Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-diagram.svg" alt="Diagram: Monitoring Dashboard Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-sticky.svg" alt="Sticky Note: Monitoring Dashboard Architecture" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/monitoring-dashboard-architecture-sticky.svg" alt="Sticky Note: Monitoring Dashboard Architecture" width="30%">
 </a>
 
 
@@ -1593,14 +1593,14 @@ graph TB
 
 ### Structured Logging
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-handwritten.svg" alt="Handwritten: Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-handwritten.svg" alt="Handwritten: Structured Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-diagram.svg" alt="Diagram: Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-diagram.svg" alt="Diagram: Structured Logging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-sticky.svg" alt="Sticky Note: Structured Logging" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/structured-logging-sticky.svg" alt="Sticky Note: Structured Logging" width="30%">
 </a>
 
 
@@ -1683,14 +1683,14 @@ class AILogger {
 
 ### Alert Configuration
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-handwritten.svg" alt="Handwritten: Alert Configuration" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-handwritten.svg" alt="Handwritten: Alert Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-diagram.svg" alt="Diagram: Alert Configuration" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-diagram.svg" alt="Diagram: Alert Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-sticky.svg" alt="Sticky Note: Alert Configuration" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/alert-configuration-sticky.svg" alt="Sticky Note: Alert Configuration" width="30%">
 </a>
 
 
@@ -1757,14 +1757,14 @@ Incident response for AI systems requires specialized playbooks that address AI-
 
 ### Incident Response Workflow
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-handwritten.svg" alt="Handwritten: Incident Response Workflow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-handwritten.svg" alt="Handwritten: Incident Response Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-diagram.svg" alt="Diagram: Incident Response Workflow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-diagram.svg" alt="Diagram: Incident Response Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-sticky.svg" alt="Sticky Note: Incident Response Workflow" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/incident-response-workflow-sticky.svg" alt="Sticky Note: Incident Response Workflow" width="30%">
 </a>
 
 
@@ -1779,14 +1779,14 @@ Incident response for AI systems requires specialized playbooks that address AI-
 
 ### AI-Specific Incident Types
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-handwritten.svg" alt="Handwritten: AI-Specific Incident Types" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-handwritten.svg" alt="Handwritten: AI-Specific Incident Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-diagram.svg" alt="Diagram: AI-Specific Incident Types" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-diagram.svg" alt="Diagram: AI-Specific Incident Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-sticky.svg" alt="Sticky Note: AI-Specific Incident Types" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/ai-specific-incident-types-sticky.svg" alt="Sticky Note: AI-Specific Incident Types" width="30%">
 </a>
 
 
@@ -2243,14 +2243,14 @@ Test your understanding of production AI systems concepts.
 
 ### Question 1
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-handwritten.svg" alt="Handwritten: Question 1" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-handwritten.svg" alt="Handwritten: Question 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-diagram.svg" alt="Diagram: Question 1" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-diagram.svg" alt="Diagram: Question 1" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-sticky.svg" alt="Sticky Note: Question 1" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-1-sticky.svg" alt="Sticky Note: Question 1" width="30%">
 </a>
 
 Which caching strategy stores responses based on meaning similarity rather than exact string matching?
@@ -2262,14 +2262,14 @@ D) Write-through caching
 
 ### Question 2
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-handwritten.svg" alt="Handwritten: Question 2" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-handwritten.svg" alt="Handwritten: Question 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-diagram.svg" alt="Diagram: Question 2" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-diagram.svg" alt="Diagram: Question 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-sticky.svg" alt="Sticky Note: Question 2" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-2-sticky.svg" alt="Sticky Note: Question 2" width="30%">
 </a>
 
 A user sends 100 requests in 10 seconds. The rate limiter allows 50 requests per 60 seconds using a sliding window. What happens to request #101?
@@ -2281,14 +2281,14 @@ D) It falls back to a different model
 
 ### Question 3
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-handwritten.svg" alt="Handwritten: Question 3" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-handwritten.svg" alt="Handwritten: Question 3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-diagram.svg" alt="Diagram: Question 3" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-diagram.svg" alt="Diagram: Question 3" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-sticky.svg" alt="Sticky Note: Question 3" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-3-sticky.svg" alt="Sticky Note: Question 3" width="30%">
 </a>
 
 Which cost optimization strategy typically provides the highest savings potential?
@@ -2300,14 +2300,14 @@ D) Quantization
 
 ### Question 4
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-handwritten.svg" alt="Handwritten: Question 4" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-handwritten.svg" alt="Handwritten: Question 4" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-diagram.svg" alt="Diagram: Question 4" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-diagram.svg" alt="Diagram: Question 4" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-sticky.svg" alt="Sticky Note: Question 4" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-4-sticky.svg" alt="Sticky Note: Question 4" width="30%">
 </a>
 
 In an A/B test, you observe a z-statistic of 2.1 comparing control and treatment variants. What should you conclude?
@@ -2319,14 +2319,14 @@ D) The control variant is worse
 
 ### Question 5
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-handwritten.svg" alt="Handwritten: Question 5" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-handwritten.svg" alt="Handwritten: Question 5" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-diagram.svg" alt="Diagram: Question 5" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-diagram.svg" alt="Diagram: Question 5" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-sticky.svg" alt="Sticky Note: Question 5" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/question-5-sticky.svg" alt="Sticky Note: Question 5" width="30%">
 </a>
 
 An AI system's hallucination rate suddenly increases from 2% to 15%. According to incident response best practices, what is the FIRST action?
@@ -2338,14 +2338,14 @@ D) Notify all users of degraded quality
 
 ### Answer Key
 
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
 </a>
-<a href="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
+<a href="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/modern-ai-engineering/10-production-ai-systems/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
 </a>
 
 

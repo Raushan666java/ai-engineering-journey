@@ -104,14 +104,14 @@ import mymodule  # no output → already cached
 
 ### 11.2.1 Basic Import
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-handwritten.svg" alt="Handwritten: 11.2.1 Basic Import" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-handwritten.svg" alt="Handwritten: 11.2.1 Basic Import" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-diagram.svg" alt="Diagram: 11.2.1 Basic Import" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-diagram.svg" alt="Diagram: 11.2.1 Basic Import" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-sticky.svg" alt="Sticky Note: 11.2.1 Basic Import" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-1-basic-import-sticky.svg" alt="Sticky Note: 11.2.1 Basic Import" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ print(math.sqrt(16))   # 4.0
 
 ### 11.2.2 Import with Alias
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-handwritten.svg" alt="Handwritten: 11.2.2 Import with Alias" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-handwritten.svg" alt="Handwritten: 11.2.2 Import with Alias" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-diagram.svg" alt="Diagram: 11.2.2 Import with Alias" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-diagram.svg" alt="Diagram: 11.2.2 Import with Alias" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-sticky.svg" alt="Sticky Note: 11.2.2 Import with Alias" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-2-import-with-alias-sticky.svg" alt="Sticky Note: 11.2.2 Import with Alias" width="30%">
 </a>
 
 
@@ -140,14 +140,14 @@ print(np.array([1, 2, 3]))
 
 ### 11.2.3 Import Specific Names
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-handwritten.svg" alt="Handwritten: 11.2.3 Import Specific Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-handwritten.svg" alt="Handwritten: 11.2.3 Import Specific Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-diagram.svg" alt="Diagram: 11.2.3 Import Specific Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-diagram.svg" alt="Diagram: 11.2.3 Import Specific Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-sticky.svg" alt="Sticky Note: 11.2.3 Import Specific Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-3-import-specific-names-sticky.svg" alt="Sticky Note: 11.2.3 Import Specific Names" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@ print(pi)         # 3.14159
 
 ### 11.2.4 Import All Names
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-handwritten.svg" alt="Handwritten: 11.2.4 Import All Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-handwritten.svg" alt="Handwritten: 11.2.4 Import All Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-diagram.svg" alt="Diagram: 11.2.4 Import All Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-diagram.svg" alt="Diagram: 11.2.4 Import All Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-sticky.svg" alt="Sticky Note: 11.2.4 Import All Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-4-import-all-names-sticky.svg" alt="Sticky Note: 11.2.4 Import All Names" width="30%">
 </a>
 
 
@@ -179,14 +179,14 @@ Avoid `import *` because it pollutes the namespace and can silently override exi
 
 ### 11.2.5 Import with Alias for Specific Names
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-handwritten.svg" alt="Handwritten: 11.2.5 Import with Alias for Specific Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-handwritten.svg" alt="Handwritten: 11.2.5 Import with Alias for Specific Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-diagram.svg" alt="Diagram: 11.2.5 Import with Alias for Specific Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-diagram.svg" alt="Diagram: 11.2.5 Import with Alias for Specific Names" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-sticky.svg" alt="Sticky Note: 11.2.5 Import with Alias for Specific Names" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-2-5-import-with-alias-for-specific-names-sticky.svg" alt="Sticky Note: 11.2.5 Import with Alias for Specific Names" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ In Python 3.3+, `__init__.py` is optional for namespace packages (used for split
 
 ### 11.5.1 Absolute Imports
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-handwritten.svg" alt="Handwritten: 11.5.1 Absolute Imports" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-handwritten.svg" alt="Handwritten: 11.5.1 Absolute Imports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-diagram.svg" alt="Diagram: 11.5.1 Absolute Imports" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-diagram.svg" alt="Diagram: 11.5.1 Absolute Imports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-sticky.svg" alt="Sticky Note: 11.5.1 Absolute Imports" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-5-1-absolute-imports-sticky.svg" alt="Sticky Note: 11.5.1 Absolute Imports" width="30%">
 </a>
 
 
@@ -301,14 +301,14 @@ Absolute imports are explicit and unambiguous.
 
 ### 11.5.2 Relative Imports
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-handwritten.svg" alt="Handwritten: 11.5.2 Relative Imports" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-handwritten.svg" alt="Handwritten: 11.5.2 Relative Imports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-diagram.svg" alt="Diagram: 11.5.2 Relative Imports" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-diagram.svg" alt="Diagram: 11.5.2 Relative Imports" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-sticky.svg" alt="Sticky Note: 11.5.2 Relative Imports" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/11-5-2-relative-imports-sticky.svg" alt="Sticky Note: 11.5.2 Relative Imports" width="30%">
 </a>
 
 
@@ -370,14 +370,14 @@ pip install numpy pandas matplotlib
 
 ### requirements.txt
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/requirements-txt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/requirements-txt-handwritten.svg" alt="Handwritten: requirements.txt" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/requirements-txt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/requirements-txt-handwritten.svg" alt="Handwritten: requirements.txt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/requirements-txt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/requirements-txt-diagram.svg" alt="Diagram: requirements.txt" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/requirements-txt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/requirements-txt-diagram.svg" alt="Diagram: requirements.txt" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/requirements-txt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/requirements-txt-sticky.svg" alt="Sticky Note: requirements.txt" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/requirements-txt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/requirements-txt-sticky.svg" alt="Sticky Note: requirements.txt" width="30%">
 </a>
 
 
@@ -394,14 +394,14 @@ pip freeze > requirements.txt  # snapshot current environment
 
 ### Common Commands
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/common-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/common-commands-handwritten.svg" alt="Handwritten: Common Commands" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/common-commands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/common-commands-handwritten.svg" alt="Handwritten: Common Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/common-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/common-commands-diagram.svg" alt="Diagram: Common Commands" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/common-commands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/common-commands-diagram.svg" alt="Diagram: Common Commands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/common-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/common-commands-sticky.svg" alt="Sticky Note: Common Commands" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/common-commands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/common-commands-sticky.svg" alt="Sticky Note: Common Commands" width="30%">
 </a>
 
 
@@ -1005,14 +1005,14 @@ console.log("Module graph:", JSON.stringify(buildDependencyGraph("."), null, 2))
 
 ### Publishing a Package to PyPI
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-handwritten.svg" alt="Handwritten: Publishing a Package to PyPI" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-handwritten.svg" alt="Handwritten: Publishing a Package to PyPI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-diagram.svg" alt="Diagram: Publishing a Package to PyPI" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-diagram.svg" alt="Diagram: Publishing a Package to PyPI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-sticky.svg" alt="Sticky Note: Publishing a Package to PyPI" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/publishing-a-package-to-pypi-sticky.svg" alt="Sticky Note: Publishing a Package to PyPI" width="30%">
 </a>
 
 
@@ -1051,14 +1051,14 @@ dependencies = [
 
 ### Python Package Ecosystem
 
-<a href="../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-handwritten.svg" alt="Handwritten: Python Package Ecosystem" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-handwritten.svg" alt="Handwritten: Python Package Ecosystem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-diagram.svg" alt="Diagram: Python Package Ecosystem" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-diagram.svg" alt="Diagram: Python Package Ecosystem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-sticky.svg" alt="Sticky Note: Python Package Ecosystem" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/11-modules/python-package-ecosystem-sticky.svg" alt="Sticky Note: Python Package Ecosystem" width="30%">
 </a>
 
 

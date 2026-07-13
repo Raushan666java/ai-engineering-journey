@@ -384,14 +384,14 @@ type UserGetters = Getters<{ name: string; age: number }>;
 
 ### Branded Types and Nominal Typing
 
-<a href="../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-handwritten.svg" alt="Handwritten: Branded Types and Nominal Typing" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-handwritten.svg" alt="Handwritten: Branded Types and Nominal Typing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-diagram.svg" alt="Diagram: Branded Types and Nominal Typing" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-diagram.svg" alt="Diagram: Branded Types and Nominal Typing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-sticky.svg" alt="Sticky Note: Branded Types and Nominal Typing" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/branded-types-and-nominal-typing-sticky.svg" alt="Sticky Note: Branded Types and Nominal Typing" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ travel(100 as Meters, 9.58 as Seconds);
 
 ### satisfies Operator Deep Dive
 
-<a href="../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-handwritten.svg" alt="Handwritten: satisfies Operator Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-handwritten.svg" alt="Handwritten: satisfies Operator Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-diagram.svg" alt="Diagram: satisfies Operator Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-diagram.svg" alt="Diagram: satisfies Operator Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-sticky.svg" alt="Sticky Note: satisfies Operator Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/satisfies-operator-deep-dive-sticky.svg" alt="Sticky Note: satisfies Operator Deep Dive" width="30%">
 </a>
 
 
@@ -852,14 +852,14 @@ TypeScript adds static type checking to JavaScript, catching errors at compile t
 
 ### Application Projects
 
-<a href="../../assets/images/diagrams/web-development/14-typescript/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/application-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/application-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/application-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
 </a>
 
 
@@ -875,14 +875,14 @@ TypeScript adds static type checking to JavaScript, catching errors at compile t
 
 ### Challenge Project
 
-<a href="../../assets/images/diagrams/web-development/14-typescript/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/challenge-project-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/challenge-project-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/challenge-project-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
 </a>
 
 
@@ -890,14 +890,14 @@ Build a type-safe ORM-like query builder using TypeScript generics, template lit
 
 ### Practical Takeaways
 
-<a href="../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/14-typescript/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
 </a>
 
 

@@ -19,14 +19,14 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -54,14 +54,14 @@ flowchart LR
 
 ### Q1: What are focused and diffuse modes of thinking, and when should you use each?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" alt="Diagram: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" alt="Diagram: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
 </a>
 
 
@@ -116,14 +116,14 @@ public class SubnetCalculator {
 
 ### Q2: How do you know when to switch between focused and diffuse modes?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" alt="Handwritten: How do you know when to switch between focused and diffuse modes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" alt="Handwritten: How do you know when to switch between focused and diffuse modes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" alt="Diagram: How do you know when to switch between focused and diffuse modes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" alt="Diagram: How do you know when to switch between focused and diffuse modes?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" alt="Sticky Note: How do you know when to switch between focused and diffuse modes?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" alt="Sticky Note: How do you know when to switch between focused and diffuse modes?" width="30%">
 </a>
 
 
@@ -143,14 +143,14 @@ Stop. Take a walk. Let your brain's diffuse networks re-organize what you've lea
 
 ### Q3: What is the 4-chunk limit, and how does it affect studying?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is the 4-chunk limit, and how does it affect studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is the 4-chunk limit, and how does it affect studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is the 4-chunk limit, and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is the 4-chunk limit, and how does it affect studying?" width="30%">
 </a>
 
 
@@ -196,14 +196,14 @@ public class ChunkExample {
 
 ### Q4: How do you build a chunk from new material?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-handwritten.svg" alt="Handwritten: How do you build a chunk from new material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-handwritten.svg" alt="Handwritten: How do you build a chunk from new material?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-diagram.svg" alt="Diagram: How do you build a chunk from new material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-diagram.svg" alt="Diagram: How do you build a chunk from new material?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-sticky.svg" alt="Sticky Note: How do you build a chunk from new material?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-sticky.svg" alt="Sticky Note: How do you build a chunk from new material?" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ Choose BST when you need **order** — sorted traversal, range queries, nearest 
 
 ### Q5: How does chunk hierarchy help you understand layered systems?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" alt="Handwritten: How does chunk hierarchy help you understand layered systems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" alt="Handwritten: How does chunk hierarchy help you understand layered systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" alt="Diagram: How does chunk hierarchy help you understand layered systems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" alt="Diagram: How does chunk hierarchy help you understand layered systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" alt="Sticky Note: How does chunk hierarchy help you understand layered systems?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" alt="Sticky Note: How does chunk hierarchy help you understand layered systems?" width="30%">
 </a>
 
 
@@ -316,14 +316,14 @@ public enum OsiLayer {
 
 ### Q6: What's the difference between procedural and declarative knowledge, and why does it matter?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" alt="Diagram: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" alt="Diagram: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
 </a>
 
 
@@ -352,14 +352,14 @@ Many students read the code and think "I understand" — that's declarative. But
 
 ### Q7: How does sleep affect memory consolidation?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-handwritten.svg" alt="Handwritten: How does sleep affect memory consolidation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-handwritten.svg" alt="Handwritten: How does sleep affect memory consolidation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-diagram.svg" alt="Diagram: How does sleep affect memory consolidation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-diagram.svg" alt="Diagram: How does sleep affect memory consolidation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-sticky.svg" alt="Sticky Note: How does sleep affect memory consolidation?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-sticky.svg" alt="Sticky Note: How does sleep affect memory consolidation?" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ public class MemoryConsolidation {
 
 ### Q8: What is neuroplasticity and how does it enable lifelong learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-handwritten.svg" alt="Handwritten: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-handwritten.svg" alt="Handwritten: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-diagram.svg" alt="Diagram: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-diagram.svg" alt="Diagram: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-sticky.svg" alt="Sticky Note: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-sticky.svg" alt="Sticky Note: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
 </a>
 
 
@@ -462,14 +462,14 @@ public class NeuralJITAnalogy {
 
 ### Q9: What is the Default Mode Network and how does it support diffuse thinking?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-handwritten.svg" alt="Handwritten: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-handwritten.svg" alt="Handwritten: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-diagram.svg" alt="Diagram: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-diagram.svg" alt="Diagram: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-sticky.svg" alt="Sticky Note: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-sticky.svg" alt="Sticky Note: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
 </a>
 
 
@@ -515,14 +515,14 @@ public class DefaultModeNetwork {
 
 ### Q10: What is Cognitive Load Theory and how does it affect studying?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is Cognitive Load Theory and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is Cognitive Load Theory and how does it affect studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is Cognitive Load Theory and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is Cognitive Load Theory and how does it affect studying?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is Cognitive Load Theory and how does it affect studying?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is Cognitive Load Theory and how does it affect studying?" width="30%">
 </a>
 
 
@@ -596,14 +596,14 @@ From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://githu
 
 ### Q11: What are the different types of attention and how do they affect learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-handwritten.svg" alt="Handwritten: What are the different types of attention and how do they affect learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-handwritten.svg" alt="Handwritten: What are the different types of attention and how do they affect learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-diagram.svg" alt="Diagram: What are the different types of attention and how do they affect learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-diagram.svg" alt="Diagram: What are the different types of attention and how do they affect learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-sticky.svg" alt="Sticky Note: What are the different types of attention and how do they affect learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-sticky.svg" alt="Sticky Note: What are the different types of attention and how do they affect learning?" width="30%">
 </a>
 
 
@@ -655,14 +655,14 @@ public class AttentionSystem {
 
 ### Q12: Why is multitasking a myth for learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-handwritten.svg" alt="Handwritten: Why is multitasking a myth for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-handwritten.svg" alt="Handwritten: Why is multitasking a myth for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-diagram.svg" alt="Diagram: Why is multitasking a myth for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-diagram.svg" alt="Diagram: Why is multitasking a myth for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-sticky.svg" alt="Sticky Note: Why is multitasking a myth for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-sticky.svg" alt="Sticky Note: Why is multitasking a myth for learning?" width="30%">
 </a>
 
 
@@ -721,14 +721,14 @@ public class TaskScheduler {
 
 ### Q13: How does stress (cortisol) affect learning and memory?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-handwritten.svg" alt="Handwritten: How does stress (cortisol) affect learning and memory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-handwritten.svg" alt="Handwritten: How does stress (cortisol) affect learning and memory?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-diagram.svg" alt="Diagram: How does stress (cortisol) affect learning and memory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-diagram.svg" alt="Diagram: How does stress (cortisol) affect learning and memory?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-sticky.svg" alt="Sticky Note: How does stress (cortisol) affect learning and memory?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-sticky.svg" alt="Sticky Note: How does stress (cortisol) affect learning and memory?" width="30%">
 </a>
 
 
@@ -786,14 +786,14 @@ public class StressResponse {
 
 ### Q14: How does exercise boost neurogenesis and learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-handwritten.svg" alt="Handwritten: How does exercise boost neurogenesis and learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-handwritten.svg" alt="Handwritten: How does exercise boost neurogenesis and learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-diagram.svg" alt="Diagram: How does exercise boost neurogenesis and learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-diagram.svg" alt="Diagram: How does exercise boost neurogenesis and learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-sticky.svg" alt="Sticky Note: How does exercise boost neurogenesis and learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-sticky.svg" alt="Sticky Note: How does exercise boost neurogenesis and learning?" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ public class ExerciseAndLearning {
 
 ### Q15: How do circadian rhythms affect optimal study timing?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-handwritten.svg" alt="Handwritten: How do circadian rhythms affect optimal study timing?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-handwritten.svg" alt="Handwritten: How do circadian rhythms affect optimal study timing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-diagram.svg" alt="Diagram: How do circadian rhythms affect optimal study timing?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-diagram.svg" alt="Diagram: How do circadian rhythms affect optimal study timing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-sticky.svg" alt="Sticky Note: How do circadian rhythms affect optimal study timing?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-sticky.svg" alt="Sticky Note: How do circadian rhythms affect optimal study timing?" width="30%">
 </a>
 
 
@@ -946,14 +946,14 @@ public class CircadianStudyPlanner {
 
 ### Q16: How does sleep architecture work and how can you optimize it for learning?
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-handwritten.svg" alt="Handwritten: How does sleep architecture work and how can you optimize it for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-handwritten.svg" alt="Handwritten: How does sleep architecture work and how can you optimize it for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-diagram.svg" alt="Diagram: How does sleep architecture work and how can you optimize it for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-diagram.svg" alt="Diagram: How does sleep architecture work and how can you optimize it for learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-sticky.svg" alt="Sticky Note: How does sleep architecture work and how can you optimize it for learning?" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-sticky.svg" alt="Sticky Note: How does sleep architecture work and how can you optimize it for learning?" width="30%">
 </a>
 
 
@@ -1036,14 +1036,14 @@ public class SleepArchitecture {
 
 ### Self-Assessment Quiz
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
 </a>
 
 

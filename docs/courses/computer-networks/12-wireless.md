@@ -15,14 +15,14 @@ Wireless communication faces fundamental challenges that wired networks avoid. T
 
 ### 12.1.1 Key Challenges
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-handwritten.svg" alt="Handwritten: 12.1.1 Key Challenges" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-handwritten.svg" alt="Handwritten: 12.1.1 Key Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-diagram.svg" alt="Diagram: 12.1.1 Key Challenges" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-diagram.svg" alt="Diagram: 12.1.1 Key Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-sticky.svg" alt="Sticky Note: 12.1.1 Key Challenges" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-1-key-challenges-sticky.svg" alt="Sticky Note: 12.1.1 Key Challenges" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@ Wireless communication faces fundamental challenges that wired networks avoid. T
 
 ### 12.1.2 Real-World Analogy: The Noisy Room
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-handwritten.svg" alt="Handwritten: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-handwritten.svg" alt="Handwritten: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-diagram.svg" alt="Diagram: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-diagram.svg" alt="Diagram: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-sticky.svg" alt="Sticky Note: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-2-real-world-analogy-the-noisy-room-sticky.svg" alt="Sticky Note: 12.1.2 Real-World Analogy: The Noisy Room" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.1.3 Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-handwritten.svg" alt="Handwritten: 12.1.3 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-handwritten.svg" alt="Handwritten: 12.1.3 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-diagram.svg" alt="Diagram: 12.1.3 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-diagram.svg" alt="Diagram: 12.1.3 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-sticky.svg" alt="Sticky Note: 12.1.3 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-3-edge-cases-sticky.svg" alt="Sticky Note: 12.1.3 Edge Cases" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.1.4 A&D of Wireless Communication
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-handwritten.svg" alt="Handwritten: 12.1.4 A&D of Wireless Communication" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-handwritten.svg" alt="Handwritten: 12.1.4 A&D of Wireless Communication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-diagram.svg" alt="Diagram: 12.1.4 A&D of Wireless Communication" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-diagram.svg" alt="Diagram: 12.1.4 A&D of Wireless Communication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-sticky.svg" alt="Sticky Note: 12.1.4 A&D of Wireless Communication" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-1-4-a-d-of-wireless-communication-sticky.svg" alt="Sticky Note: 12.1.4 A&D of Wireless Communication" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.2.1 Components
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-handwritten.svg" alt="Handwritten: 12.2.1 Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-handwritten.svg" alt="Handwritten: 12.2.1 Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-diagram.svg" alt="Diagram: 12.2.1 Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-diagram.svg" alt="Diagram: 12.2.1 Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-sticky.svg" alt="Sticky Note: 12.2.1 Components" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-1-components-sticky.svg" alt="Sticky Note: 12.2.1 Components" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.2.2 Real-World Analogy: Office Building
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-handwritten.svg" alt="Handwritten: 12.2.2 Real-World Analogy: Office Building" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-handwritten.svg" alt="Handwritten: 12.2.2 Real-World Analogy: Office Building" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-diagram.svg" alt="Diagram: 12.2.2 Real-World Analogy: Office Building" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-diagram.svg" alt="Diagram: 12.2.2 Real-World Analogy: Office Building" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-sticky.svg" alt="Sticky Note: 12.2.2 Real-World Analogy: Office Building" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-2-real-world-analogy-office-building-sticky.svg" alt="Sticky Note: 12.2.2 Real-World Analogy: Office Building" width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ Imagine a large room where people are trying to have conversations:
 
 ### 12.2.3 Wi-Fi Association Process (Numbered Steps)
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-handwritten.svg" alt="Handwritten: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-handwritten.svg" alt="Handwritten: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-diagram.svg" alt="Diagram: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-diagram.svg" alt="Diagram: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-sticky.svg" alt="Sticky Note: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-3-wi-fi-association-process-numbered-steps-sticky.svg" alt="Sticky Note: 12.2.3 Wi-Fi Association Process (Numbered Steps)" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ After Step 6, if WPA2/WPA3 is used, the 4-way handshake occurs for key exchange 
 
 ### 12.2.4 Pseudocode: Wi-Fi Association
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-handwritten.svg" alt="Handwritten: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-handwritten.svg" alt="Handwritten: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-diagram.svg" alt="Diagram: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-diagram.svg" alt="Diagram: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-sticky.svg" alt="Sticky Note: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-4-pseudocode-wi-fi-association-sticky.svg" alt="Sticky Note: 12.2.4 Pseudocode: Wi-Fi Association" width="30%">
 </a>
 
 
@@ -235,14 +235,14 @@ procedure wifi_association(sta, ap)
 
 ### 12.2.5 Dry Run Trace: Wi-Fi Association
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-handwritten.svg" alt="Handwritten: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-handwritten.svg" alt="Handwritten: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-diagram.svg" alt="Diagram: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-diagram.svg" alt="Diagram: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-sticky.svg" alt="Sticky Note: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-2-5-dry-run-trace-wi-fi-association-sticky.svg" alt="Sticky Note: 12.2.5 Dry Run Trace: Wi-Fi Association" width="30%">
 </a>
 
 
@@ -384,14 +384,14 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 ### 12.3.1 Detailed Standards Table
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-handwritten.svg" alt="Handwritten: 12.3.1 Detailed Standards Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-handwritten.svg" alt="Handwritten: 12.3.1 Detailed Standards Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-diagram.svg" alt="Diagram: 12.3.1 Detailed Standards Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-diagram.svg" alt="Diagram: 12.3.1 Detailed Standards Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-sticky.svg" alt="Sticky Note: 12.3.1 Detailed Standards Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-1-detailed-standards-table-sticky.svg" alt="Sticky Note: 12.3.1 Detailed Standards Table" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 ### 12.3.2 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-handwritten.svg" alt="Handwritten: 12.3.2 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-handwritten.svg" alt="Handwritten: 12.3.2 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-diagram.svg" alt="Diagram: 12.3.2 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-diagram.svg" alt="Diagram: 12.3.2 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-sticky.svg" alt="Sticky Note: 12.3.2 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-2-complexity-analysis-sticky.svg" alt="Sticky Note: 12.3.2 Complexity Analysis" width="30%">
 </a>
 
 
@@ -428,14 +428,14 @@ The IEEE 802.11 family has evolved over 25 years from 1-2 Mbps to 46 Gbps. Each 
 
 ### 12.3.3 A&D of Wi-Fi Standards
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-handwritten.svg" alt="Handwritten: 12.3.3 A&D of Wi-Fi Standards" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-handwritten.svg" alt="Handwritten: 12.3.3 A&D of Wi-Fi Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-diagram.svg" alt="Diagram: 12.3.3 A&D of Wi-Fi Standards" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-diagram.svg" alt="Diagram: 12.3.3 A&D of Wi-Fi Standards" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-sticky.svg" alt="Sticky Note: 12.3.3 A&D of Wi-Fi Standards" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-3-3-a-d-of-wi-fi-standards-sticky.svg" alt="Sticky Note: 12.3.3 A&D of Wi-Fi Standards" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen
 
 ### 12.4.1 The NAV and Backoff Mechanism
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-handwritten.svg" alt="Handwritten: 12.4.1 The NAV and Backoff Mechanism" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-handwritten.svg" alt="Handwritten: 12.4.1 The NAV and Backoff Mechanism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-diagram.svg" alt="Diagram: 12.4.1 The NAV and Backoff Mechanism" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-diagram.svg" alt="Diagram: 12.4.1 The NAV and Backoff Mechanism" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-sticky.svg" alt="Sticky Note: 12.4.1 The NAV and Backoff Mechanism" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-1-the-nav-and-backoff-mechanism-sticky.svg" alt="Sticky Note: 12.4.1 The NAV and Backoff Mechanism" width="30%">
 </a>
 
 
@@ -483,14 +483,14 @@ WiFi uses CSMA/CA instead of CSMA/CD because wireless transceivers cannot listen
 
 ### 12.4.2 Real-World Analogy: Courteous Conversation
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-handwritten.svg" alt="Handwritten: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-handwritten.svg" alt="Handwritten: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-diagram.svg" alt="Diagram: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-diagram.svg" alt="Diagram: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-sticky.svg" alt="Sticky Note: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-2-real-world-analogy-courteous-conversation-sticky.svg" alt="Sticky Note: 12.4.2 Real-World Analogy: Courteous Conversation" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@ Imagine a group conversation where only one person speaks at a time:
 
 ### 12.4.3 Numbered Steps: CSMA/CA Transmission
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-handwritten.svg" alt="Handwritten: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-handwritten.svg" alt="Handwritten: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-diagram.svg" alt="Diagram: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-diagram.svg" alt="Diagram: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-sticky.svg" alt="Sticky Note: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-3-numbered-steps-csma-ca-transmission-sticky.svg" alt="Sticky Note: 12.4.3 Numbered Steps: CSMA/CA Transmission" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ Imagine a group conversation where only one person speaks at a time:
 
 ### 12.4.4 Pseudocode: CSMA/CA with Backoff
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-handwritten.svg" alt="Handwritten: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-handwritten.svg" alt="Handwritten: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-diagram.svg" alt="Diagram: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-diagram.svg" alt="Diagram: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-sticky.svg" alt="Sticky Note: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-4-pseudocode-csma-ca-with-backoff-sticky.svg" alt="Sticky Note: 12.4.4 Pseudocode: CSMA/CA with Backoff" width="30%">
 </a>
 
 
@@ -586,14 +586,14 @@ procedure csma_ca_transmit(frame, sta)
 
 ### 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-handwritten.svg" alt="Handwritten: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-handwritten.svg" alt="Handwritten: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-diagram.svg" alt="Diagram: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-diagram.svg" alt="Diagram: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-sticky.svg" alt="Sticky Note: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-5-dry-run-trace-csma-ca-backoff-with-3-stations-sticky.svg" alt="Sticky Note: 12.4.5 Dry Run Trace: CSMA/CA Backoff with 3 Stations" width="30%">
 </a>
 
 
@@ -631,14 +631,14 @@ Total time for 3 stations: 672 Âµs. Without CSMA/CA (all transmitting simultan
 
 ### 12.4.6 C++ Implementation: CSMA/CA Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-handwritten.svg" alt="Handwritten: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-handwritten.svg" alt="Handwritten: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-diagram.svg" alt="Diagram: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-diagram.svg" alt="Diagram: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-sticky.svg" alt="Sticky Note: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-6-c-implementation-csma-ca-simulator-sticky.svg" alt="Sticky Note: 12.4.6 C++ Implementation: CSMA/CA Simulator" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ int main() {
 
 ### 12.4.7 Python Implementation: CSMA/CA Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-handwritten.svg" alt="Handwritten: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-handwritten.svg" alt="Handwritten: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-diagram.svg" alt="Diagram: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-diagram.svg" alt="Diagram: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-sticky.svg" alt="Sticky Note: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-7-python-implementation-csma-ca-simulator-sticky.svg" alt="Sticky Note: 12.4.7 Python Implementation: CSMA/CA Simulator" width="30%">
 </a>
 
 
@@ -973,14 +973,14 @@ if __name__ == "__main__":
 
 ### 12.4.8 Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-handwritten.svg" alt="Handwritten: 12.4.8 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-handwritten.svg" alt="Handwritten: 12.4.8 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-diagram.svg" alt="Diagram: 12.4.8 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-diagram.svg" alt="Diagram: 12.4.8 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-sticky.svg" alt="Sticky Note: 12.4.8 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-8-complexity-analysis-sticky.svg" alt="Sticky Note: 12.4.8 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1001,14 +1001,14 @@ if __name__ == "__main__":
 
 ### 12.4.9 Edge Cases in CSMA/CA
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-handwritten.svg" alt="Handwritten: 12.4.9 Edge Cases in CSMA/CA" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-handwritten.svg" alt="Handwritten: 12.4.9 Edge Cases in CSMA/CA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-diagram.svg" alt="Diagram: 12.4.9 Edge Cases in CSMA/CA" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-diagram.svg" alt="Diagram: 12.4.9 Edge Cases in CSMA/CA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-sticky.svg" alt="Sticky Note: 12.4.9 Edge Cases in CSMA/CA" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-4-9-edge-cases-in-csma-ca-sticky.svg" alt="Sticky Note: 12.4.9 Edge Cases in CSMA/CA" width="30%">
 </a>
 
 
@@ -1118,14 +1118,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.5.1 Frame Fields Detail
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-handwritten.svg" alt="Handwritten: 12.5.1 Frame Fields Detail" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-handwritten.svg" alt="Handwritten: 12.5.1 Frame Fields Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-diagram.svg" alt="Diagram: 12.5.1 Frame Fields Detail" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-diagram.svg" alt="Diagram: 12.5.1 Frame Fields Detail" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-sticky.svg" alt="Sticky Note: 12.5.1 Frame Fields Detail" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-1-frame-fields-detail-sticky.svg" alt="Sticky Note: 12.5.1 Frame Fields Detail" width="30%">
 </a>
 
 
@@ -1154,14 +1154,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.5.2 Frame Types
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-handwritten.svg" alt="Handwritten: 12.5.2 Frame Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-handwritten.svg" alt="Handwritten: 12.5.2 Frame Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-diagram.svg" alt="Diagram: 12.5.2 Frame Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-diagram.svg" alt="Diagram: 12.5.2 Frame Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-sticky.svg" alt="Sticky Note: 12.5.2 Frame Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-5-2-frame-types-sticky.svg" alt="Sticky Note: 12.5.2 Frame Types" width="30%">
 </a>
 
 
@@ -1187,14 +1187,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.1 Hidden Terminal Problem
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-handwritten.svg" alt="Handwritten: 12.6.1 Hidden Terminal Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-handwritten.svg" alt="Handwritten: 12.6.1 Hidden Terminal Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-diagram.svg" alt="Diagram: 12.6.1 Hidden Terminal Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-diagram.svg" alt="Diagram: 12.6.1 Hidden Terminal Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-sticky.svg" alt="Sticky Note: 12.6.1 Hidden Terminal Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-1-hidden-terminal-problem-sticky.svg" alt="Sticky Note: 12.6.1 Hidden Terminal Problem" width="30%">
 </a>
 
 
@@ -1206,14 +1206,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.2 Exposed Terminal Problem
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-handwritten.svg" alt="Handwritten: 12.6.2 Exposed Terminal Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-handwritten.svg" alt="Handwritten: 12.6.2 Exposed Terminal Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-diagram.svg" alt="Diagram: 12.6.2 Exposed Terminal Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-diagram.svg" alt="Diagram: 12.6.2 Exposed Terminal Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-sticky.svg" alt="Sticky Note: 12.6.2 Exposed Terminal Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-2-exposed-terminal-problem-sticky.svg" alt="Sticky Note: 12.6.2 Exposed Terminal Problem" width="30%">
 </a>
 
 
@@ -1225,14 +1225,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.3 Comparison Table
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-handwritten.svg" alt="Handwritten: 12.6.3 Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-handwritten.svg" alt="Handwritten: 12.6.3 Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-diagram.svg" alt="Diagram: 12.6.3 Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-diagram.svg" alt="Diagram: 12.6.3 Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-sticky.svg" alt="Sticky Note: 12.6.3 Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-3-comparison-table-sticky.svg" alt="Sticky Note: 12.6.3 Comparison Table" width="30%">
 </a>
 
 
@@ -1248,14 +1248,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.4 RTS/CTS Exchange (Numbered Steps)
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-handwritten.svg" alt="Handwritten: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-handwritten.svg" alt="Handwritten: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-diagram.svg" alt="Diagram: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-diagram.svg" alt="Diagram: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-sticky.svg" alt="Sticky Note: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-4-rts-cts-exchange-numbered-steps-sticky.svg" alt="Sticky Note: 12.6.4 RTS/CTS Exchange (Numbered Steps)" width="30%">
 </a>
 
 
@@ -1268,14 +1268,14 @@ Time: 5000µs | Total sent: 3 | Collisions: 0
 
 ### 12.6.5 Dry Run Trace: RTS/CTS Exchange
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-handwritten.svg" alt="Handwritten: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-handwritten.svg" alt="Handwritten: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-diagram.svg" alt="Diagram: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-diagram.svg" alt="Diagram: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-sticky.svg" alt="Sticky Note: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-5-dry-run-trace-rts-cts-exchange-sticky.svg" alt="Sticky Note: 12.6.5 Dry Run Trace: RTS/CTS Exchange" width="30%">
 </a>
 
 
@@ -1299,14 +1299,14 @@ During the entire exchange (0-370 Âµs), Station C defers because its NAV > 0. 
 
 ### 12.6.6 Pseudocode: RTS/CTS Protocol
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-handwritten.svg" alt="Handwritten: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-handwritten.svg" alt="Handwritten: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-diagram.svg" alt="Diagram: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-diagram.svg" alt="Diagram: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-sticky.svg" alt="Sticky Note: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-6-pseudocode-rts-cts-protocol-sticky.svg" alt="Sticky Note: 12.6.6 Pseudocode: RTS/CTS Protocol" width="30%">
 </a>
 
 
@@ -1343,14 +1343,14 @@ procedure rts_cts_send(data_frame, receiver)
 
 ### 12.6.7 Edge Cases in Hidden/Exposed Terminal
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-handwritten.svg" alt="Handwritten: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-handwritten.svg" alt="Handwritten: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-diagram.svg" alt="Diagram: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-diagram.svg" alt="Diagram: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-sticky.svg" alt="Sticky Note: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-7-edge-cases-in-hidden-exposed-terminal-sticky.svg" alt="Sticky Note: 12.6.7 Edge Cases in Hidden/Exposed Terminal" width="30%">
 </a>
 
 
@@ -1365,14 +1365,14 @@ Two hidden stations (A and C) both sense the medium as idle (neither hears the o
 
 ### 12.6.8 A&D of RTS/CTS
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-handwritten.svg" alt="Handwritten: 12.6.8 A&D of RTS/CTS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-handwritten.svg" alt="Handwritten: 12.6.8 A&D of RTS/CTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-diagram.svg" alt="Diagram: 12.6.8 A&D of RTS/CTS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-diagram.svg" alt="Diagram: 12.6.8 A&D of RTS/CTS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-sticky.svg" alt="Sticky Note: 12.6.8 A&D of RTS/CTS" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-6-8-a-d-of-rts-cts-sticky.svg" alt="Sticky Note: 12.6.8 A&D of RTS/CTS" width="30%">
 </a>
 
 
@@ -1387,14 +1387,14 @@ Two hidden stations (A and C) both sense the medium as idle (neither hears the o
 
 ### 12.7.1 TIM and PS-Poll
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-handwritten.svg" alt="Handwritten: 12.7.1 TIM and PS-Poll" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-handwritten.svg" alt="Handwritten: 12.7.1 TIM and PS-Poll" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-diagram.svg" alt="Diagram: 12.7.1 TIM and PS-Poll" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-diagram.svg" alt="Diagram: 12.7.1 TIM and PS-Poll" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-sticky.svg" alt="Sticky Note: 12.7.1 TIM and PS-Poll" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-1-tim-and-ps-poll-sticky.svg" alt="Sticky Note: 12.7.1 TIM and PS-Poll" width="30%">
 </a>
 
 
@@ -1412,14 +1412,14 @@ Wireless stations conserve power by entering doze (sleep) state. The AP buffers 
 
 ### 12.7.2 Real-World Analogy: Office Mailroom
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-handwritten.svg" alt="Handwritten: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-handwritten.svg" alt="Handwritten: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-diagram.svg" alt="Diagram: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-diagram.svg" alt="Diagram: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-sticky.svg" alt="Sticky Note: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-2-real-world-analogy-office-mailroom-sticky.svg" alt="Sticky Note: 12.7.2 Real-World Analogy: Office Mailroom" width="30%">
 </a>
 
 
@@ -1431,14 +1431,14 @@ Wireless stations conserve power by entering doze (sleep) state. The AP buffers 
 
 ### 12.7.3 Numbered Steps: Power-Save Operation
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-handwritten.svg" alt="Handwritten: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-handwritten.svg" alt="Handwritten: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-diagram.svg" alt="Diagram: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-diagram.svg" alt="Diagram: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-sticky.svg" alt="Sticky Note: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-7-3-numbered-steps-power-save-operation-sticky.svg" alt="Sticky Note: 12.7.3 Numbered Steps: Power-Save Operation" width="30%">
 </a>
 
 
@@ -1458,14 +1458,14 @@ Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 
 
 ### 12.8.1 Piconet and Scatternet
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-handwritten.svg" alt="Handwritten: 12.8.1 Piconet and Scatternet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-handwritten.svg" alt="Handwritten: 12.8.1 Piconet and Scatternet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-diagram.svg" alt="Diagram: 12.8.1 Piconet and Scatternet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-diagram.svg" alt="Diagram: 12.8.1 Piconet and Scatternet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-sticky.svg" alt="Sticky Note: 12.8.1 Piconet and Scatternet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-1-piconet-and-scatternet-sticky.svg" alt="Sticky Note: 12.8.1 Piconet and Scatternet" width="30%">
 </a>
 
 
@@ -1489,14 +1489,14 @@ Bluetooth (IEEE 802.15.1) is a short-range wireless technology operating in the 
 
 ### 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-handwritten.svg" alt="Handwritten: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-handwritten.svg" alt="Handwritten: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-diagram.svg" alt="Diagram: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-diagram.svg" alt="Diagram: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-sticky.svg" alt="Sticky Note: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-2-l2cap-logical-link-control-and-adaptation-protocol-sticky.svg" alt="Sticky Note: 12.8.2 L2CAP (Logical Link Control and Adaptation Protocol)" width="30%">
 </a>
 
 
@@ -1514,14 +1514,14 @@ L2CAP channel identifiers (CIDs):
 
 ### 12.8.3 Real-World Analogy: Classroom
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-handwritten.svg" alt="Handwritten: 12.8.3 Real-World Analogy: Classroom" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-handwritten.svg" alt="Handwritten: 12.8.3 Real-World Analogy: Classroom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-diagram.svg" alt="Diagram: 12.8.3 Real-World Analogy: Classroom" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-diagram.svg" alt="Diagram: 12.8.3 Real-World Analogy: Classroom" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-sticky.svg" alt="Sticky Note: 12.8.3 Real-World Analogy: Classroom" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-3-real-world-analogy-classroom-sticky.svg" alt="Sticky Note: 12.8.3 Real-World Analogy: Classroom" width="30%">
 </a>
 
 
@@ -1535,14 +1535,14 @@ L2CAP channel identifiers (CIDs):
 
 ### 12.8.4 C++ Implementation: Bluetooth Piconet
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-handwritten.svg" alt="Handwritten: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-handwritten.svg" alt="Handwritten: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-diagram.svg" alt="Diagram: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-diagram.svg" alt="Diagram: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-sticky.svg" alt="Sticky Note: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-4-c-implementation-bluetooth-piconet-sticky.svg" alt="Sticky Note: 12.8.4 C++ Implementation: Bluetooth Piconet" width="30%">
 </a>
 
 
@@ -1693,14 +1693,14 @@ int main() {
 
 ### 12.8.5 Python Implementation: Bluetooth Piconet
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-handwritten.svg" alt="Handwritten: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-handwritten.svg" alt="Handwritten: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-diagram.svg" alt="Diagram: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-diagram.svg" alt="Diagram: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-sticky.svg" alt="Sticky Note: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-5-python-implementation-bluetooth-piconet-sticky.svg" alt="Sticky Note: 12.8.5 Python Implementation: Bluetooth Piconet" width="30%">
 </a>
 
 
@@ -1883,14 +1883,14 @@ if __name__ == "__main__":
 
 ### 12.8.6 A&D of Bluetooth
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-handwritten.svg" alt="Handwritten: 12.8.6 A&D of Bluetooth" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-handwritten.svg" alt="Handwritten: 12.8.6 A&D of Bluetooth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-diagram.svg" alt="Diagram: 12.8.6 A&D of Bluetooth" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-diagram.svg" alt="Diagram: 12.8.6 A&D of Bluetooth" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-sticky.svg" alt="Sticky Note: 12.8.6 A&D of Bluetooth" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-8-6-a-d-of-bluetooth-sticky.svg" alt="Sticky Note: 12.8.6 A&D of Bluetooth" width="30%">
 </a>
 
 
@@ -1907,14 +1907,14 @@ if __name__ == "__main__":
 
 ### 12.9.1 4G/LTE
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-handwritten.svg" alt="Handwritten: 12.9.1 4G/LTE" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-handwritten.svg" alt="Handwritten: 12.9.1 4G/LTE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-diagram.svg" alt="Diagram: 12.9.1 4G/LTE" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-diagram.svg" alt="Diagram: 12.9.1 4G/LTE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-sticky.svg" alt="Sticky Note: 12.9.1 4G/LTE" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-1-4g-lte-sticky.svg" alt="Sticky Note: 12.9.1 4G/LTE" width="30%">
 </a>
 
 
@@ -1938,14 +1938,14 @@ if __name__ == "__main__":
 
 ### 12.9.2 5G NR
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-handwritten.svg" alt="Handwritten: 12.9.2 5G NR" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-handwritten.svg" alt="Handwritten: 12.9.2 5G NR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-diagram.svg" alt="Diagram: 12.9.2 5G NR" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-diagram.svg" alt="Diagram: 12.9.2 5G NR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-sticky.svg" alt="Sticky Note: 12.9.2 5G NR" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-2-5g-nr-sticky.svg" alt="Sticky Note: 12.9.2 5G NR" width="30%">
 </a>
 
 
@@ -1980,14 +1980,14 @@ if __name__ == "__main__":
 
 ### 12.9.3 4G vs 5G Comparison
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-handwritten.svg" alt="Handwritten: 12.9.3 4G vs 5G Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-handwritten.svg" alt="Handwritten: 12.9.3 4G vs 5G Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-diagram.svg" alt="Diagram: 12.9.3 4G vs 5G Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-diagram.svg" alt="Diagram: 12.9.3 4G vs 5G Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-sticky.svg" alt="Sticky Note: 12.9.3 4G vs 5G Comparison" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-3-4g-vs-5g-comparison-sticky.svg" alt="Sticky Note: 12.9.3 4G vs 5G Comparison" width="30%">
 </a>
 
 
@@ -2012,14 +2012,14 @@ if __name__ == "__main__":
 
 ### 12.9.4 Real-World Analogy: Highway System
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-handwritten.svg" alt="Handwritten: 12.9.4 Real-World Analogy: Highway System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-handwritten.svg" alt="Handwritten: 12.9.4 Real-World Analogy: Highway System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-diagram.svg" alt="Diagram: 12.9.4 Real-World Analogy: Highway System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-diagram.svg" alt="Diagram: 12.9.4 Real-World Analogy: Highway System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-sticky.svg" alt="Sticky Note: 12.9.4 Real-World Analogy: Highway System" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-9-4-real-world-analogy-highway-system-sticky.svg" alt="Sticky Note: 12.9.4 Real-World Analogy: Highway System" width="30%">
 </a>
 
 
@@ -2143,14 +2143,14 @@ Total handoffs: 2
 
 ### 12.10.1 Selection Guide
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-handwritten.svg" alt="Handwritten: 12.10.1 Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-handwritten.svg" alt="Handwritten: 12.10.1 Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-diagram.svg" alt="Diagram: 12.10.1 Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-diagram.svg" alt="Diagram: 12.10.1 Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-sticky.svg" alt="Sticky Note: 12.10.1 Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-10-1-selection-guide-sticky.svg" alt="Sticky Note: 12.10.1 Selection Guide" width="30%">
 </a>
 
 
@@ -2169,14 +2169,14 @@ Total handoffs: 2
 
 ### Q1: Why does WiFi use CSMA/CA instead of CSMA/CD?
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-handwritten.svg" alt="Handwritten: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-handwritten.svg" alt="Handwritten: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-diagram.svg" alt="Diagram: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-diagram.svg" alt="Diagram: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-sticky.svg" alt="Sticky Note: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/why-does-wifi-use-csma-ca-instead-of-csma-cd-sticky.svg" alt="Sticky Note: Why does WiFi use CSMA/CA instead of CSMA/CD?" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ Total handoffs: 2
 
 ### Q2: What is NAV and why is it important?
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is NAV and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is NAV and why is it important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-diagram.svg" alt="Diagram: What is NAV and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-diagram.svg" alt="Diagram: What is NAV and why is it important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is NAV and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-nav-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is NAV and why is it important?" width="30%">
 </a>
 
 
@@ -2199,14 +2199,14 @@ Total handoffs: 2
 
 ### Q3: Explain the difference between WiFi handoff and cellular handover.
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-handwritten.svg" alt="Handwritten: Explain the difference between WiFi handoff and cellular handover." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-handwritten.svg" alt="Handwritten: Explain the difference between WiFi handoff and cellular handover." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-diagram.svg" alt="Diagram: Explain the difference between WiFi handoff and cellular handover." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-diagram.svg" alt="Diagram: Explain the difference between WiFi handoff and cellular handover." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-sticky.svg" alt="Sticky Note: Explain the difference between WiFi handoff and cellular handover." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/explain-the-difference-between-wifi-handoff-and-cellular-handover-sticky.svg" alt="Sticky Note: Explain the difference between WiFi handoff and cellular handover." width="30%">
 </a>
 
 
@@ -2214,14 +2214,14 @@ Total handoffs: 2
 
 ### Q4: How does MIMO improve wireless performance?
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-handwritten.svg" alt="Handwritten: How does MIMO improve wireless performance?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-handwritten.svg" alt="Handwritten: How does MIMO improve wireless performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-diagram.svg" alt="Diagram: How does MIMO improve wireless performance?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-diagram.svg" alt="Diagram: How does MIMO improve wireless performance?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-sticky.svg" alt="Sticky Note: How does MIMO improve wireless performance?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/how-does-mimo-improve-wireless-performance-sticky.svg" alt="Sticky Note: How does MIMO improve wireless performance?" width="30%">
 </a>
 
 
@@ -2232,14 +2232,14 @@ Total handoffs: 2
 
 ### Q5: What is OFDMA and why is it important in WiFi 6/7?
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-handwritten.svg" alt="Handwritten: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-handwritten.svg" alt="Handwritten: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-diagram.svg" alt="Diagram: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-diagram.svg" alt="Diagram: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-sticky.svg" alt="Sticky Note: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-ofdma-and-why-is-it-important-in-wifi-6-7-sticky.svg" alt="Sticky Note: What is OFDMA and why is it important in WiFi 6/7?" width="30%">
 </a>
 
 
@@ -2249,14 +2249,14 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### Q6: Compare WiFi and LTE for voice over wireless.
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-handwritten.svg" alt="Handwritten: Compare WiFi and LTE for voice over wireless." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-handwritten.svg" alt="Handwritten: Compare WiFi and LTE for voice over wireless." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-diagram.svg" alt="Diagram: Compare WiFi and LTE for voice over wireless." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-diagram.svg" alt="Diagram: Compare WiFi and LTE for voice over wireless." width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-sticky.svg" alt="Sticky Note: Compare WiFi and LTE for voice over wireless." width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/compare-wifi-and-lte-for-voice-over-wireless-sticky.svg" alt="Sticky Note: Compare WiFi and LTE for voice over wireless." width="30%">
 </a>
 
 
@@ -2264,14 +2264,14 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### Q7: What is the range vs. rate trade-off in wireless?
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-handwritten.svg" alt="Handwritten: What is the range vs. rate trade-off in wireless?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-handwritten.svg" alt="Handwritten: What is the range vs. rate trade-off in wireless?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-diagram.svg" alt="Diagram: What is the range vs. rate trade-off in wireless?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-diagram.svg" alt="Diagram: What is the range vs. rate trade-off in wireless?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-sticky.svg" alt="Sticky Note: What is the range vs. rate trade-off in wireless?" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/what-is-the-range-vs-rate-trade-off-in-wireless-sticky.svg" alt="Sticky Note: What is the range vs. rate trade-off in wireless?" width="30%">
 </a>
 
 
@@ -2281,14 +2281,14 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### 12.12.1 WiFi 6/7 Deployments
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-handwritten.svg" alt="Handwritten: 12.12.1 WiFi 6/7 Deployments" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-handwritten.svg" alt="Handwritten: 12.12.1 WiFi 6/7 Deployments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-diagram.svg" alt="Diagram: 12.12.1 WiFi 6/7 Deployments" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-diagram.svg" alt="Diagram: 12.12.1 WiFi 6/7 Deployments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-sticky.svg" alt="Sticky Note: 12.12.1 WiFi 6/7 Deployments" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-1-wifi-6-7-deployments-sticky.svg" alt="Sticky Note: 12.12.1 WiFi 6/7 Deployments" width="30%">
 </a>
 
 
@@ -2302,14 +2302,14 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### 12.12.2 Cellular Infrastructure
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-handwritten.svg" alt="Handwritten: 12.12.2 Cellular Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-handwritten.svg" alt="Handwritten: 12.12.2 Cellular Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-diagram.svg" alt="Diagram: 12.12.2 Cellular Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-diagram.svg" alt="Diagram: 12.12.2 Cellular Infrastructure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-sticky.svg" alt="Sticky Note: 12.12.2 Cellular Infrastructure" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-2-cellular-infrastructure-sticky.svg" alt="Sticky Note: 12.12.2 Cellular Infrastructure" width="30%">
 </a>
 
 
@@ -2319,14 +2319,14 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### 12.12.3 IoT Wireless Technologies
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-handwritten.svg" alt="Handwritten: 12.12.3 IoT Wireless Technologies" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-handwritten.svg" alt="Handwritten: 12.12.3 IoT Wireless Technologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-diagram.svg" alt="Diagram: 12.12.3 IoT Wireless Technologies" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-diagram.svg" alt="Diagram: 12.12.3 IoT Wireless Technologies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-sticky.svg" alt="Sticky Note: 12.12.3 IoT Wireless Technologies" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-12-3-iot-wireless-technologies-sticky.svg" alt="Sticky Note: 12.12.3 IoT Wireless Technologies" width="30%">
 </a>
 
 
@@ -2353,14 +2353,14 @@ Real-world benefit: In a crowded office, OFDMA handles many small packets effici
 
 ### 12.13.1 Handover
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-handwritten.svg" alt="Handwritten: 12.13.1 Handover" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-handwritten.svg" alt="Handwritten: 12.13.1 Handover" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-diagram.svg" alt="Diagram: 12.13.1 Handover" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-diagram.svg" alt="Diagram: 12.13.1 Handover" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-sticky.svg" alt="Sticky Note: 12.13.1 Handover" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-1-handover-sticky.svg" alt="Sticky Note: 12.13.1 Handover" width="30%">
 </a>
 
 
@@ -2374,14 +2374,14 @@ Handover (handoff) transfers an active connection from one base station (or acce
 
 ### 12.13.2 Location Management
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-handwritten.svg" alt="Handwritten: 12.13.2 Location Management" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-handwritten.svg" alt="Handwritten: 12.13.2 Location Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-diagram.svg" alt="Diagram: 12.13.2 Location Management" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-diagram.svg" alt="Diagram: 12.13.2 Location Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-sticky.svg" alt="Sticky Note: 12.13.2 Location Management" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-2-location-management-sticky.svg" alt="Sticky Note: 12.13.2 Location Management" width="30%">
 </a>
 
 
@@ -2391,14 +2391,14 @@ Cellular networks track mobile devices through location areas and paging. The ne
 
 ### 12.13.3 Roaming
 
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-handwritten.svg" alt="Handwritten: 12.13.3 Roaming" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-handwritten.svg" alt="Handwritten: 12.13.3 Roaming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-diagram.svg" alt="Diagram: 12.13.3 Roaming" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-diagram.svg" alt="Diagram: 12.13.3 Roaming" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-sticky.svg" alt="Sticky Note: 12.13.3 Roaming" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/12-wireless/12-13-3-roaming-sticky.svg" alt="Sticky Note: 12.13.3 Roaming" width="30%">
 </a>
 
 

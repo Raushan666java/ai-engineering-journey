@@ -70,14 +70,14 @@ A **pointer** is a variable that stores the memory address of another variable. 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ Think of memory as a large apartment building. Each apartment (variable) has a u
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -125,14 +125,14 @@ int *p = &x;      /* declare and initialize */
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -147,14 +147,14 @@ PRINT "Value at p:" VALUE AT ADDRESS p
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ Assume `x` is stored at address `0x1000` and occupies bytes `0x1000-0x1003` (4-b
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -213,14 +213,14 @@ After *p = 100, x = 100
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -232,14 +232,14 @@ After *p = 100, x = 100
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -253,14 +253,14 @@ After *p = 100, x = 100
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ After *p = 100, x = 100
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -297,14 +297,14 @@ If your friend lives in Apartment 5B, `&friend` returns `"5B"` and `*ptr_to_frie
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ If your friend lives in Apartment 5B, `&friend` returns `"5B"` and `*ptr_to_frie
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ OPERATOR * (pointer)
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -363,14 +363,14 @@ int *ptr = &a;
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -419,14 +419,14 @@ pp  = 0x7fff5fbff710  (same as &p)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -438,14 +438,14 @@ pp  = 0x7fff5fbff710  (same as &p)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ pp  = 0x7fff5fbff710  (same as &p)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -478,14 +478,14 @@ A pointer is an apartment number on a long hallway. Adding 1 to the apartment nu
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -497,14 +497,14 @@ A pointer is an apartment number on a long hallway. Adding 1 to the apartment nu
 
 ### Pointer Arithmetic Rules
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-handwritten.svg" alt="Handwritten: Pointer Arithmetic Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-handwritten.svg" alt="Handwritten: Pointer Arithmetic Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-diagram.svg" alt="Diagram: Pointer Arithmetic Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-diagram.svg" alt="Diagram: Pointer Arithmetic Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-sticky.svg" alt="Sticky Note: Pointer Arithmetic Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pointer-arithmetic-rules-sticky.svg" alt="Sticky Note: Pointer Arithmetic Rules" width="30%">
 </a>
 
 
@@ -519,14 +519,14 @@ A pointer is an apartment number on a long hallway. Adding 1 to the apartment nu
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -543,14 +543,14 @@ FUNCTION pointer_difference(p, q):
 
 ### Dry Run Trace Table — Full Walkthrough
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-handwritten.svg" alt="Handwritten: Dry Run Trace Table — Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-handwritten.svg" alt="Handwritten: Dry Run Trace Table — Full Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-diagram.svg" alt="Diagram: Dry Run Trace Table — Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-diagram.svg" alt="Diagram: Dry Run Trace Table — Full Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-sticky.svg" alt="Sticky Note: Dry Run Trace Table — Full Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-walkthrough-sticky.svg" alt="Sticky Note: Dry Run Trace Table — Full Walkthrough" width="30%">
 </a>
 
 
@@ -569,14 +569,14 @@ Assume `int arr[] = {10, 20, 30, 40, 50}` starting at address `0x1000` and `size
 
 ### Complete Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-handwritten.svg" alt="Handwritten: Complete Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-handwritten.svg" alt="Handwritten: Complete Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-diagram.svg" alt="Diagram: Complete Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-diagram.svg" alt="Diagram: Complete Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-sticky.svg" alt="Sticky Note: Complete Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-examples-sticky.svg" alt="Sticky Note: Complete Code Examples" width="30%">
 </a>
 
 
@@ -671,14 +671,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -692,14 +692,14 @@ int main(void)
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -712,14 +712,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -739,14 +739,14 @@ int main(void)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -754,14 +754,14 @@ An array name is like the address of a street. If you live on "Oak Street", the 
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -773,14 +773,14 @@ An array name is like the address of a street. If you live on "Oak Street", the 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -798,14 +798,14 @@ arr + 1  -> advances by sizeof(element)
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -824,14 +824,14 @@ Assume `int arr[3] = {10, 20, 30}` at address `0x1000`.
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ arr[2] = 30, *(arr + 2) = 30, SAME
 
 ### The sizeof Exception
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-handwritten.svg" alt="Handwritten: The sizeof Exception" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-handwritten.svg" alt="Handwritten: The sizeof Exception" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-diagram.svg" alt="Diagram: The sizeof Exception" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-diagram.svg" alt="Diagram: The sizeof Exception" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-sticky.svg" alt="Sticky Note: The sizeof Exception" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-sizeof-exception-sticky.svg" alt="Sticky Note: The sizeof Exception" width="30%">
 </a>
 
 
@@ -901,14 +901,14 @@ printf("%zu\n", sizeof(&arr[0])); /* prints 8 (pointer size) */
 
 ### The & Exception
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-exception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-exception-handwritten.svg" alt="Handwritten: The & Exception" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-exception-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-exception-handwritten.svg" alt="Handwritten: The & Exception" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-exception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-exception-diagram.svg" alt="Diagram: The & Exception" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-exception-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-exception-diagram.svg" alt="Diagram: The & Exception" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-exception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-exception-sticky.svg" alt="Sticky Note: The & Exception" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-exception-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-exception-sticky.svg" alt="Sticky Note: The & Exception" width="30%">
 </a>
 
 
@@ -922,14 +922,14 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -941,14 +941,14 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -961,14 +961,14 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -986,14 +986,14 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1002,14 +1002,14 @@ int *q = arr;          /* valid: pointer to int (decayed) */
 
 ### 9.5.1 Pointer to Array
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-handwritten.svg" alt="Handwritten: 9.5.1 Pointer to Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-handwritten.svg" alt="Handwritten: 9.5.1 Pointer to Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-diagram.svg" alt="Diagram: 9.5.1 Pointer to Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-diagram.svg" alt="Diagram: 9.5.1 Pointer to Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-sticky.svg" alt="Sticky Note: 9.5.1 Pointer to Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-5-1-pointer-to-array-sticky.svg" alt="Sticky Note: 9.5.1 Pointer to Array" width="30%">
 </a>
 
 
@@ -1024,14 +1024,14 @@ Syntax breakdown: `int (*p)[5]` — parentheses are required. Without them, `int
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1071,14 +1071,14 @@ p + 1  = 0x7fff5fbff6f4  (skip entire array)
 
 ### 9.5.2 Array of Pointers
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-handwritten.svg" alt="Handwritten: 9.5.2 Array of Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-handwritten.svg" alt="Handwritten: 9.5.2 Array of Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-diagram.svg" alt="Diagram: 9.5.2 Array of Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-diagram.svg" alt="Diagram: 9.5.2 Array of Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-sticky.svg" alt="Sticky Note: 9.5.2 Array of Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-5-2-array-of-pointers-sticky.svg" alt="Sticky Note: 9.5.2 Array of Pointers" width="30%">
 </a>
 
 
@@ -1119,14 +1119,14 @@ arr[2] = 0x7fff5fbff714, *arr[2] = 30
 
 ### Common Use: Array of Strings
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-handwritten.svg" alt="Handwritten: Common Use: Array of Strings" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-handwritten.svg" alt="Handwritten: Common Use: Array of Strings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-diagram.svg" alt="Diagram: Common Use: Array of Strings" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-diagram.svg" alt="Diagram: Common Use: Array of Strings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-sticky.svg" alt="Sticky Note: Common Use: Array of Strings" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/common-use-array-of-strings-sticky.svg" alt="Sticky Note: Common Use: Array of Strings" width="30%">
 </a>
 
 
@@ -1155,14 +1155,14 @@ fruits[3] = date
 
 ### Comparison: Pointer to Array vs Array of Pointers
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-handwritten.svg" alt="Handwritten: Comparison: Pointer to Array vs Array of Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-handwritten.svg" alt="Handwritten: Comparison: Pointer to Array vs Array of Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-diagram.svg" alt="Diagram: Comparison: Pointer to Array vs Array of Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-diagram.svg" alt="Diagram: Comparison: Pointer to Array vs Array of Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-sticky.svg" alt="Sticky Note: Comparison: Pointer to Array vs Array of Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-pointer-to-array-vs-array-of-pointers-sticky.svg" alt="Sticky Note: Comparison: Pointer to Array vs Array of Pointers" width="30%">
 </a>
 
 
@@ -1177,14 +1177,14 @@ fruits[3] = date
 
 ### Dry Run Trace
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-handwritten.svg" alt="Handwritten: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-diagram.svg" alt="Diagram: Dry Run Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-sticky.svg" alt="Sticky Note: Dry Run Trace" width="30%">
 </a>
 
 
@@ -1205,14 +1205,14 @@ ap[2] = &data[2];
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1229,14 +1229,14 @@ ap[2] = &data[2];
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1249,14 +1249,14 @@ This is `**ptr` — first `*` gets the intermediate pointer, second `*` gets the
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1268,14 +1268,14 @@ This is `**ptr` — first `*` gets the intermediate pointer, second `*` gets the
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1296,14 +1296,14 @@ SET **pp = 99  -> x is now 99
 
 ### Dry Run Trace Table — Full Dereference Chain
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-handwritten.svg" alt="Handwritten: Dry Run Trace Table — Full Dereference Chain" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-handwritten.svg" alt="Handwritten: Dry Run Trace Table — Full Dereference Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-diagram.svg" alt="Diagram: Dry Run Trace Table — Full Dereference Chain" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-diagram.svg" alt="Diagram: Dry Run Trace Table — Full Dereference Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-sticky.svg" alt="Sticky Note: Dry Run Trace Table — Full Dereference Chain" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dry-run-trace-table-full-dereference-chain-sticky.svg" alt="Sticky Note: Dry Run Trace Table — Full Dereference Chain" width="30%">
 </a>
 
 
@@ -1319,14 +1319,14 @@ Assume addresses: x at `0x1000`, p at `0x2000`, pp at `0x3000`.
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -1384,14 +1384,14 @@ ppp = 0x7fff5fbff718  (address of pp)
 
 ### Practical Example: Allocating 2D Array
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-handwritten.svg" alt="Handwritten: Practical Example: Allocating 2D Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-handwritten.svg" alt="Handwritten: Practical Example: Allocating 2D Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-diagram.svg" alt="Diagram: Practical Example: Allocating 2D Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-diagram.svg" alt="Diagram: Practical Example: Allocating 2D Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-sticky.svg" alt="Sticky Note: Practical Example: Allocating 2D Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-allocating-2d-array-sticky.svg" alt="Sticky Note: Practical Example: Allocating 2D Array" width="30%">
 </a>
 
 
@@ -1435,14 +1435,14 @@ int main(void)
 
 ### Practical Example: Swapping Pointers
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-handwritten.svg" alt="Handwritten: Practical Example: Swapping Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-handwritten.svg" alt="Handwritten: Practical Example: Swapping Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-diagram.svg" alt="Diagram: Practical Example: Swapping Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-diagram.svg" alt="Diagram: Practical Example: Swapping Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-sticky.svg" alt="Sticky Note: Practical Example: Swapping Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practical-example-swapping-pointers-sticky.svg" alt="Sticky Note: Practical Example: Swapping Pointers" width="30%">
 </a>
 
 
@@ -1477,14 +1477,14 @@ After:  p1->20, p2->10
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ After:  p1->20, p2->10
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1520,14 +1520,14 @@ After:  p1->20, p2->10
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1535,14 +1535,14 @@ A function pointer is like a remote control button. You can program the "action"
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1553,14 +1553,14 @@ A function pointer is like a remote control button. You can program the "action"
 
 ### Syntax Breakdown
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-handwritten.svg" alt="Handwritten: Syntax Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-handwritten.svg" alt="Handwritten: Syntax Breakdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-diagram.svg" alt="Diagram: Syntax Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-diagram.svg" alt="Diagram: Syntax Breakdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-sticky.svg" alt="Sticky Note: Syntax Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/syntax-breakdown-sticky.svg" alt="Sticky Note: Syntax Breakdown" width="30%">
 </a>
 
 
@@ -1573,14 +1573,14 @@ A function pointer is like a remote control button. You can program the "action"
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1597,14 +1597,14 @@ SET result TO CALL operation(5, 3)
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -1644,14 +1644,14 @@ mul(5, 3) = 15
 
 ### Dispatch Table Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-handwritten.svg" alt="Handwritten: Dispatch Table Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-handwritten.svg" alt="Handwritten: Dispatch Table Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-diagram.svg" alt="Diagram: Dispatch Table Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-diagram.svg" alt="Diagram: Dispatch Table Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-sticky.svg" alt="Sticky Note: Dispatch Table Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/dispatch-table-example-sticky.svg" alt="Sticky Note: Dispatch Table Example" width="30%">
 </a>
 
 
@@ -1692,14 +1692,14 @@ mod         2
 
 ### Function Pointer as Parameter (Callback)
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-handwritten.svg" alt="Handwritten: Function Pointer as Parameter (Callback)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-handwritten.svg" alt="Handwritten: Function Pointer as Parameter (Callback)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-diagram.svg" alt="Diagram: Function Pointer as Parameter (Callback)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-diagram.svg" alt="Diagram: Function Pointer as Parameter (Callback)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-sticky.svg" alt="Sticky Note: Function Pointer as Parameter (Callback)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/function-pointer-as-parameter-callback-sticky.svg" alt="Sticky Note: Function Pointer as Parameter (Callback)" width="30%">
 </a>
 
 
@@ -1744,14 +1744,14 @@ Squared: 4 16 36 64 100
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1764,14 +1764,14 @@ Squared: 4 16 36 64 100
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -1784,14 +1784,14 @@ Squared: 4 16 36 64 100
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1810,14 +1810,14 @@ A `void*` is a generic pointer that can hold the address of any data type. It is
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1825,14 +1825,14 @@ A void pointer is like a universal mailbox key. The key fits any mailbox (can po
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -1843,14 +1843,14 @@ A void pointer is like a universal mailbox key. The key fits any mailbox (can po
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1869,14 +1869,14 @@ SET result TO VALUE AT (CAST ptr TO POINTER TO actual_type)
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -1916,14 +1916,14 @@ char:   Z
 
 ### Generic Swap Function
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-handwritten.svg" alt="Handwritten: Generic Swap Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-handwritten.svg" alt="Handwritten: Generic Swap Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-diagram.svg" alt="Diagram: Generic Swap Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-diagram.svg" alt="Diagram: Generic Swap Function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-sticky.svg" alt="Sticky Note: Generic Swap Function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/generic-swap-function-sticky.svg" alt="Sticky Note: Generic Swap Function" width="30%">
 </a>
 
 
@@ -1967,14 +1967,14 @@ double: 9.9 1.5
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1993,14 +1993,14 @@ A NULL pointer is a pointer that explicitly points to nothing. It is a defined c
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2008,14 +2008,14 @@ A NULL pointer is like a business card that is intentionally left blank. It does
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -2056,14 +2056,14 @@ p is NULL, cannot dereference
 
 ### NULL vs 0 vs '\0' vs nullptr
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-handwritten.svg" alt="Handwritten: NULL vs 0 vs '\0' vs nullptr" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-handwritten.svg" alt="Handwritten: NULL vs 0 vs '\0' vs nullptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-diagram.svg" alt="Diagram: NULL vs 0 vs '\0' vs nullptr" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-diagram.svg" alt="Diagram: NULL vs 0 vs '\0' vs nullptr" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-sticky.svg" alt="Sticky Note: NULL vs 0 vs '\0' vs nullptr" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/null-vs-0-vs-0-vs-nullptr-sticky.svg" alt="Sticky Note: NULL vs 0 vs '\0' vs nullptr" width="30%">
 </a>
 
 
@@ -2076,14 +2076,14 @@ p is NULL, cannot dereference
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2103,14 +2103,14 @@ A **dangling pointer** is a pointer that continues to hold the address of memory
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2118,14 +2118,14 @@ You have a friend's apartment number on a sticky note. Your friend moves out and
 
 ### Three Types of Dangling Pointers
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-handwritten.svg" alt="Handwritten: Three Types of Dangling Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-handwritten.svg" alt="Handwritten: Three Types of Dangling Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-diagram.svg" alt="Diagram: Three Types of Dangling Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-diagram.svg" alt="Diagram: Three Types of Dangling Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-sticky.svg" alt="Sticky Note: Three Types of Dangling Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/three-types-of-dangling-pointers-sticky.svg" alt="Sticky Note: Three Types of Dangling Pointers" width="30%">
 </a>
 
 
@@ -2137,14 +2137,14 @@ You have a friend's apartment number on a sticky note. Your friend moves out and
 
 ### Numbered Steps for Heap Dangling
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-handwritten.svg" alt="Handwritten: Numbered Steps for Heap Dangling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-handwritten.svg" alt="Handwritten: Numbered Steps for Heap Dangling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-diagram.svg" alt="Diagram: Numbered Steps for Heap Dangling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-diagram.svg" alt="Diagram: Numbered Steps for Heap Dangling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-sticky.svg" alt="Sticky Note: Numbered Steps for Heap Dangling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-for-heap-dangling-sticky.svg" alt="Sticky Note: Numbered Steps for Heap Dangling" width="30%">
 </a>
 
 
@@ -2155,14 +2155,14 @@ You have a friend's apartment number on a sticky note. Your friend moves out and
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -2207,14 +2207,14 @@ int main(void)
 
 ### Prevention Techniques
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-handwritten.svg" alt="Handwritten: Prevention Techniques" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-handwritten.svg" alt="Handwritten: Prevention Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-diagram.svg" alt="Diagram: Prevention Techniques" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-diagram.svg" alt="Diagram: Prevention Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-sticky.svg" alt="Sticky Note: Prevention Techniques" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/prevention-techniques-sticky.svg" alt="Sticky Note: Prevention Techniques" width="30%">
 </a>
 
 
@@ -2250,14 +2250,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2276,14 +2276,14 @@ A **wild pointer** (also called an uninitialized pointer) is a pointer that has 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2291,14 +2291,14 @@ A wild pointer is like finding a random address on a scrap of paper in the stree
 
 ### Numbered Steps
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
 </a>
 
 
@@ -2309,14 +2309,14 @@ A wild pointer is like finding a random address on a scrap of paper in the stree
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -2348,14 +2348,14 @@ int main(void)
 
 ### Prevention Rules
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-handwritten.svg" alt="Handwritten: Prevention Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-handwritten.svg" alt="Handwritten: Prevention Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-diagram.svg" alt="Diagram: Prevention Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-diagram.svg" alt="Diagram: Prevention Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-sticky.svg" alt="Sticky Note: Prevention Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/prevention-rules-sticky.svg" alt="Sticky Note: Prevention Rules" width="30%">
 </a>
 
 
@@ -2377,14 +2377,14 @@ int *p = malloc(sizeof(int));
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2400,14 +2400,14 @@ int *p = malloc(sizeof(int));
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2420,14 +2420,14 @@ Pointer safety is like neighborhood safety rules for handling apartment addresse
 
 ### The Five Golden Rules
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-handwritten.svg" alt="Handwritten: The Five Golden Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-handwritten.svg" alt="Handwritten: The Five Golden Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-diagram.svg" alt="Diagram: The Five Golden Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-diagram.svg" alt="Diagram: The Five Golden Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-sticky.svg" alt="Sticky Note: The Five Golden Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-five-golden-rules-sticky.svg" alt="Sticky Note: The Five Golden Rules" width="30%">
 </a>
 
 
@@ -2439,14 +2439,14 @@ Pointer safety is like neighborhood safety rules for handling apartment addresse
 
 ### Safety Checklist
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-handwritten.svg" alt="Handwritten: Safety Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-handwritten.svg" alt="Handwritten: Safety Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-diagram.svg" alt="Diagram: Safety Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-diagram.svg" alt="Diagram: Safety Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-sticky.svg" alt="Sticky Note: Safety Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/safety-checklist-sticky.svg" alt="Sticky Note: Safety Checklist" width="30%">
 </a>
 
 
@@ -2493,14 +2493,14 @@ int main(void)
 
 ### Common Safety Violations and Fixes
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-handwritten.svg" alt="Handwritten: Common Safety Violations and Fixes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-handwritten.svg" alt="Handwritten: Common Safety Violations and Fixes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-diagram.svg" alt="Diagram: Common Safety Violations and Fixes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-diagram.svg" alt="Diagram: Common Safety Violations and Fixes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-sticky.svg" alt="Sticky Note: Common Safety Violations and Fixes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/common-safety-violations-and-fixes-sticky.svg" alt="Sticky Note: Common Safety Violations and Fixes" width="30%">
 </a>
 
 
@@ -2515,14 +2515,14 @@ int main(void)
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -2541,14 +2541,14 @@ int main(void)
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2559,14 +2559,14 @@ A `const` pointer is like a sealed envelope:
 
 ### The Four Combinations
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-handwritten.svg" alt="Handwritten: The Four Combinations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-handwritten.svg" alt="Handwritten: The Four Combinations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-diagram.svg" alt="Diagram: The Four Combinations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-diagram.svg" alt="Diagram: The Four Combinations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-sticky.svg" alt="Sticky Note: The Four Combinations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-four-combinations-sticky.svg" alt="Sticky Note: The Four Combinations" width="30%">
 </a>
 
 
@@ -2580,14 +2580,14 @@ int  x = 10, y = 20;
 
 ### Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
 </a>
 
 
@@ -2601,14 +2601,14 @@ int  x = 10, y = 20;
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -2647,14 +2647,14 @@ x = 30, y = 20
 
 ### const in Function Parameters
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-handwritten.svg" alt="Handwritten: const in Function Parameters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-handwritten.svg" alt="Handwritten: const in Function Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-diagram.svg" alt="Diagram: const in Function Parameters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-diagram.svg" alt="Diagram: const in Function Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-sticky.svg" alt="Sticky Note: const in Function Parameters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/const-in-function-parameters-sticky.svg" alt="Sticky Note: const in Function Parameters" width="30%">
 </a>
 
 
@@ -2690,14 +2690,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2715,14 +2715,14 @@ The term **"three-star programmer"** (or "three-star problem") refers to a progr
 
 ### What It Means
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-it-means-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-it-means-handwritten.svg" alt="Handwritten: What It Means" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-it-means-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-it-means-handwritten.svg" alt="Handwritten: What It Means" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-it-means-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-it-means-diagram.svg" alt="Diagram: What It Means" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-it-means-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-it-means-diagram.svg" alt="Diagram: What It Means" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-it-means-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-it-means-sticky.svg" alt="Sticky Note: What It Means" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-it-means-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-it-means-sticky.svg" alt="Sticky Note: What It Means" width="30%">
 </a>
 
 
@@ -2736,14 +2736,14 @@ The term **"three-star programmer"** (or "three-star problem") refers to a progr
 
 ### When Might You Actually Need Three Stars?
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-handwritten.svg" alt="Handwritten: When Might You Actually Need Three Stars?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-handwritten.svg" alt="Handwritten: When Might You Actually Need Three Stars?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-diagram.svg" alt="Diagram: When Might You Actually Need Three Stars?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-diagram.svg" alt="Diagram: When Might You Actually Need Three Stars?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-sticky.svg" alt="Sticky Note: When Might You Actually Need Three Stars?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/when-might-you-actually-need-three-stars-sticky.svg" alt="Sticky Note: When Might You Actually Need Three Stars?" width="30%">
 </a>
 
 
@@ -2797,14 +2797,14 @@ file_2
 
 ### The Warning
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-warning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-warning-handwritten.svg" alt="Handwritten: The Warning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-warning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-warning-handwritten.svg" alt="Handwritten: The Warning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-warning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-warning-diagram.svg" alt="Diagram: The Warning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-warning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-warning-diagram.svg" alt="Diagram: The Warning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-warning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-warning-sticky.svg" alt="Sticky Note: The Warning" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-warning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-warning-sticky.svg" alt="Sticky Note: The Warning" width="30%">
 </a>
 
 
@@ -2821,14 +2821,14 @@ If you find yourself writing `***` in application-level code, pause and ask:
 
 ### Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
 </a>
 
 
@@ -2846,14 +2846,14 @@ If you find yourself writing `***` in application-level code, pause and ask:
 
 ### Key Differences
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/key-differences-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/key-differences-handwritten.svg" alt="Handwritten: Key Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/key-differences-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/key-differences-diagram.svg" alt="Diagram: Key Differences" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/key-differences-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/key-differences-sticky.svg" alt="Sticky Note: Key Differences" width="30%">
 </a>
 
 
@@ -2885,14 +2885,14 @@ If you find yourself writing `***` in application-level code, pause and ask:
 
 ### Code to Demonstrate
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-handwritten.svg" alt="Handwritten: Code to Demonstrate" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-handwritten.svg" alt="Handwritten: Code to Demonstrate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-diagram.svg" alt="Diagram: Code to Demonstrate" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-diagram.svg" alt="Diagram: Code to Demonstrate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-sticky.svg" alt="Sticky Note: Code to Demonstrate" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/code-to-demonstrate-sticky.svg" alt="Sticky Note: Code to Demonstrate" width="30%">
 </a>
 
 
@@ -2945,14 +2945,14 @@ sizeof(arr) in function: 8 (pointer size!)
 
 ### Memory Diagram
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-handwritten.svg" alt="Handwritten: Memory Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-handwritten.svg" alt="Handwritten: Memory Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-diagram.svg" alt="Diagram: Memory Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-diagram.svg" alt="Diagram: Memory Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-sticky.svg" alt="Sticky Note: Memory Diagram" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/memory-diagram-sticky.svg" alt="Sticky Note: Memory Diagram" width="30%">
 </a>
 
 
@@ -2979,14 +2979,14 @@ sizeof(arr) in function: 8 (pointer size!)
 
 ### Step 1: Understand sizeof Scaling
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-handwritten.svg" alt="Handwritten: Step 1: Understand sizeof Scaling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-handwritten.svg" alt="Handwritten: Step 1: Understand sizeof Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-diagram.svg" alt="Diagram: Step 1: Understand sizeof Scaling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-diagram.svg" alt="Diagram: Step 1: Understand sizeof Scaling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-sticky.svg" alt="Sticky Note: Step 1: Understand sizeof Scaling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-1-understand-sizeof-scaling-sticky.svg" alt="Sticky Note: Step 1: Understand sizeof Scaling" width="30%">
 </a>
 
 
@@ -2998,14 +2998,14 @@ double *dp;  /* dp + 1 adds 8 bytes */
 
 ### Step 2: Visual Memory Layout
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-handwritten.svg" alt="Handwritten: Step 2: Visual Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-handwritten.svg" alt="Handwritten: Step 2: Visual Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-diagram.svg" alt="Diagram: Step 2: Visual Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-diagram.svg" alt="Diagram: Step 2: Visual Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-sticky.svg" alt="Sticky Note: Step 2: Visual Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-2-visual-memory-layout-sticky.svg" alt="Sticky Note: Step 2: Visual Memory Layout" width="30%">
 </a>
 
 
@@ -3021,14 +3021,14 @@ For `int arr[] = {10, 20}`, `int *ip = arr`:
 
 ### Step 3: Pre-increment vs Post-increment on Pointers
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-handwritten.svg" alt="Handwritten: Step 3: Pre-increment vs Post-increment on Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-handwritten.svg" alt="Handwritten: Step 3: Pre-increment vs Post-increment on Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-diagram.svg" alt="Diagram: Step 3: Pre-increment vs Post-increment on Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-diagram.svg" alt="Diagram: Step 3: Pre-increment vs Post-increment on Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-sticky.svg" alt="Sticky Note: Step 3: Pre-increment vs Post-increment on Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-3-pre-increment-vs-post-increment-on-pointers-sticky.svg" alt="Sticky Note: Step 3: Pre-increment vs Post-increment on Pointers" width="30%">
 </a>
 
 
@@ -3080,14 +3080,14 @@ Pre-increment:
 
 ### Step 4: Pointer Difference Formula
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-handwritten.svg" alt="Handwritten: Step 4: Pointer Difference Formula" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-handwritten.svg" alt="Handwritten: Step 4: Pointer Difference Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-diagram.svg" alt="Diagram: Step 4: Pointer Difference Formula" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-diagram.svg" alt="Diagram: Step 4: Pointer Difference Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-sticky.svg" alt="Sticky Note: Step 4: Pointer Difference Formula" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-4-pointer-difference-formula-sticky.svg" alt="Sticky Note: Step 4: Pointer Difference Formula" width="30%">
 </a>
 
 
@@ -3100,14 +3100,14 @@ q - p = (0x1010 - 0x1000) / 4 = 16 / 4 = 4 elements apart
 
 ### Step 5: Comparison Operators on Pointers
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-handwritten.svg" alt="Handwritten: Step 5: Comparison Operators on Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-handwritten.svg" alt="Handwritten: Step 5: Comparison Operators on Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-diagram.svg" alt="Diagram: Step 5: Comparison Operators on Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-diagram.svg" alt="Diagram: Step 5: Comparison Operators on Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-sticky.svg" alt="Sticky Note: Step 5: Comparison Operators on Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-5-comparison-operators-on-pointers-sticky.svg" alt="Sticky Note: Step 5: Comparison Operators on Pointers" width="30%">
 </a>
 
 
@@ -3148,14 +3148,14 @@ p == q : 0  (different address)
 
 ### Q1: What is the difference between arrays and pointers in C?
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-handwritten.svg" alt="Handwritten: What is the difference between arrays and pointers in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-handwritten.svg" alt="Handwritten: What is the difference between arrays and pointers in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-diagram.svg" alt="Diagram: What is the difference between arrays and pointers in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-diagram.svg" alt="Diagram: What is the difference between arrays and pointers in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-sticky.svg" alt="Sticky Note: What is the difference between arrays and pointers in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-difference-between-arrays-and-pointers-in-c-sticky.svg" alt="Sticky Note: What is the difference between arrays and pointers in C?" width="30%">
 </a>
 
 
@@ -3169,14 +3169,14 @@ p == q : 0  (different address)
 
 ### Q2: Should you cast the return of malloc?
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-handwritten.svg" alt="Handwritten: Should you cast the return of malloc?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-handwritten.svg" alt="Handwritten: Should you cast the return of malloc?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-diagram.svg" alt="Diagram: Should you cast the return of malloc?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-diagram.svg" alt="Diagram: Should you cast the return of malloc?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-sticky.svg" alt="Sticky Note: Should you cast the return of malloc?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/should-you-cast-the-return-of-malloc-sticky.svg" alt="Sticky Note: Should you cast the return of malloc?" width="30%">
 </a>
 
 
@@ -3191,14 +3191,14 @@ If you forget `#include <stdlib.h>`, an implicit declaration assumes `malloc` re
 
 ### Q3: What is the syntax for a function pointer that takes a function pointer as a parameter?
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-handwritten.svg" alt="Handwritten: What is the syntax for a function pointer that takes a function pointer as a parameter?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-handwritten.svg" alt="Handwritten: What is the syntax for a function pointer that takes a function pointer as a parameter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-diagram.svg" alt="Diagram: What is the syntax for a function pointer that takes a function pointer as a parameter?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-diagram.svg" alt="Diagram: What is the syntax for a function pointer that takes a function pointer as a parameter?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-sticky.svg" alt="Sticky Note: What is the syntax for a function pointer that takes a function pointer as a parameter?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-syntax-for-a-function-pointer-that-takes-a-function-pointer-as-a-parameter-sticky.svg" alt="Sticky Note: What is the syntax for a function pointer that takes a function pointer as a parameter?" width="30%">
 </a>
 
 
@@ -3214,14 +3214,14 @@ The declaration `int (*fp)(int)` reads: "fp is a pointer to a function that take
 
 ### Q4: How do you implement a generic pointer? Show with void*
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-handwritten.svg" alt="Handwritten: How do you implement a generic pointer? Show with void*" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-handwritten.svg" alt="Handwritten: How do you implement a generic pointer? Show with void*" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-diagram.svg" alt="Diagram: How do you implement a generic pointer? Show with void*" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-diagram.svg" alt="Diagram: How do you implement a generic pointer? Show with void*" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-sticky.svg" alt="Sticky Note: How do you implement a generic pointer? Show with void*" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/how-do-you-implement-a-generic-pointer-show-with-void-sticky.svg" alt="Sticky Note: How do you implement a generic pointer? Show with void*" width="30%">
 </a>
 
 
@@ -3272,14 +3272,14 @@ Max value: 88
 
 ### Q5: What does *(int*)ptr do when ptr is void*?
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-handwritten.svg" alt="Handwritten: What does *(int*)ptr do when ptr is void*?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-handwritten.svg" alt="Handwritten: What does *(int*)ptr do when ptr is void*?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-diagram.svg" alt="Diagram: What does *(int*)ptr do when ptr is void*?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-diagram.svg" alt="Diagram: What does *(int*)ptr do when ptr is void*?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-sticky.svg" alt="Sticky Note: What does *(int*)ptr do when ptr is void*?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-does-int-ptr-do-when-ptr-is-void-sticky.svg" alt="Sticky Note: What does *(int*)ptr do when ptr is void*?" width="30%">
 </a>
 
 
@@ -3287,14 +3287,14 @@ It casts `ptr` to `int*` (a pointer to int), then dereferences that pointer to r
 
 ### Q6: Explain pointer aliasing and the restrict keyword
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-handwritten.svg" alt="Handwritten: Explain pointer aliasing and the restrict keyword" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-handwritten.svg" alt="Handwritten: Explain pointer aliasing and the restrict keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-diagram.svg" alt="Diagram: Explain pointer aliasing and the restrict keyword" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-diagram.svg" alt="Diagram: Explain pointer aliasing and the restrict keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-sticky.svg" alt="Sticky Note: Explain pointer aliasing and the restrict keyword" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/explain-pointer-aliasing-and-the-restrict-keyword-sticky.svg" alt="Sticky Note: Explain pointer aliasing and the restrict keyword" width="30%">
 </a>
 
 
@@ -3313,14 +3313,14 @@ Without `restrict`, the compiler must assume dest and src might overlap, prevent
 
 ### Q7: What is the output of this code?
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-handwritten.svg" alt="Handwritten: What is the output of this code?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-handwritten.svg" alt="Handwritten: What is the output of this code?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-diagram.svg" alt="Diagram: What is the output of this code?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-diagram.svg" alt="Diagram: What is the output of this code?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-sticky.svg" alt="Sticky Note: What is the output of this code?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/what-is-the-output-of-this-code-sticky.svg" alt="Sticky Note: What is the output of this code?" width="30%">
 </a>
 
 
@@ -3345,14 +3345,14 @@ int main(void)
 
 ### 9.20.1 Linux Kernel: linked list (list_head)
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-handwritten.svg" alt="Handwritten: 9.20.1 Linux Kernel: linked list (list_head)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-handwritten.svg" alt="Handwritten: 9.20.1 Linux Kernel: linked list (list_head)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-diagram.svg" alt="Diagram: 9.20.1 Linux Kernel: linked list (list_head)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-diagram.svg" alt="Diagram: 9.20.1 Linux Kernel: linked list (list_head)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-sticky.svg" alt="Sticky Note: 9.20.1 Linux Kernel: linked list (list_head)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-1-linux-kernel-linked-list-list-head-sticky.svg" alt="Sticky Note: 9.20.1 Linux Kernel: linked list (list_head)" width="30%">
 </a>
 
 
@@ -3378,14 +3378,14 @@ The `container_of` macro subtracts the offset of the member from the member poin
 
 ### 9.20.2 Function Pointers for Callbacks
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-handwritten.svg" alt="Handwritten: 9.20.2 Function Pointers for Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-handwritten.svg" alt="Handwritten: 9.20.2 Function Pointers for Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-diagram.svg" alt="Diagram: 9.20.2 Function Pointers for Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-diagram.svg" alt="Diagram: 9.20.2 Function Pointers for Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-sticky.svg" alt="Sticky Note: 9.20.2 Function Pointers for Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-2-function-pointers-for-callbacks-sticky.svg" alt="Sticky Note: 9.20.2 Function Pointers for Callbacks" width="30%">
 </a>
 
 
@@ -3431,14 +3431,14 @@ Cleanup called
 
 ### 9.20.3 JIT Compilation
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-handwritten.svg" alt="Handwritten: 9.20.3 JIT Compilation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-handwritten.svg" alt="Handwritten: 9.20.3 JIT Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-diagram.svg" alt="Diagram: 9.20.3 JIT Compilation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-diagram.svg" alt="Diagram: 9.20.3 JIT Compilation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-sticky.svg" alt="Sticky Note: 9.20.3 JIT Compilation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-3-jit-compilation-sticky.svg" alt="Sticky Note: 9.20.3 JIT Compilation" width="30%">
 </a>
 
 
@@ -3481,14 +3481,14 @@ int main(void)
 
 ### 9.20.4 Embedded Systems: Memory-Mapped I/O
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-handwritten.svg" alt="Handwritten: 9.20.4 Embedded Systems: Memory-Mapped I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-handwritten.svg" alt="Handwritten: 9.20.4 Embedded Systems: Memory-Mapped I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-diagram.svg" alt="Diagram: 9.20.4 Embedded Systems: Memory-Mapped I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-diagram.svg" alt="Diagram: 9.20.4 Embedded Systems: Memory-Mapped I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-sticky.svg" alt="Sticky Note: 9.20.4 Embedded Systems: Memory-Mapped I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-4-embedded-systems-memory-mapped-i-o-sticky.svg" alt="Sticky Note: 9.20.4 Embedded Systems: Memory-Mapped I/O" width="30%">
 </a>
 
 
@@ -3515,14 +3515,14 @@ void gpio_toggle(void)
 
 ### 9.20.5 Virtual Method Tables (Vtables) in C
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-handwritten.svg" alt="Handwritten: 9.20.5 Virtual Method Tables (Vtables) in C" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-handwritten.svg" alt="Handwritten: 9.20.5 Virtual Method Tables (Vtables) in C" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-diagram.svg" alt="Diagram: 9.20.5 Virtual Method Tables (Vtables) in C" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-diagram.svg" alt="Diagram: 9.20.5 Virtual Method Tables (Vtables) in C" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-sticky.svg" alt="Sticky Note: 9.20.5 Virtual Method Tables (Vtables) in C" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/9-20-5-virtual-method-tables-vtables-in-c-sticky.svg" alt="Sticky Note: 9.20.5 Virtual Method Tables (Vtables) in C" width="30%">
 </a>
 
 
@@ -3586,14 +3586,14 @@ Rex says: Woof!
 
 ### Mistake 1: Uninitialized Pointer (Wild Pointer)
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-handwritten.svg" alt="Handwritten: Mistake 1: Uninitialized Pointer (Wild Pointer)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-handwritten.svg" alt="Handwritten: Mistake 1: Uninitialized Pointer (Wild Pointer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-diagram.svg" alt="Diagram: Mistake 1: Uninitialized Pointer (Wild Pointer)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-diagram.svg" alt="Diagram: Mistake 1: Uninitialized Pointer (Wild Pointer)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-sticky.svg" alt="Sticky Note: Mistake 1: Uninitialized Pointer (Wild Pointer)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-1-uninitialized-pointer-wild-pointer-sticky.svg" alt="Sticky Note: Mistake 1: Uninitialized Pointer (Wild Pointer)" width="30%">
 </a>
 
 
@@ -3606,14 +3606,14 @@ int *p;
 
 ### Mistake 2: Dangling Pointer (Use-After-Free)
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-handwritten.svg" alt="Handwritten: Mistake 2: Dangling Pointer (Use-After-Free)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-handwritten.svg" alt="Handwritten: Mistake 2: Dangling Pointer (Use-After-Free)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-diagram.svg" alt="Diagram: Mistake 2: Dangling Pointer (Use-After-Free)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-diagram.svg" alt="Diagram: Mistake 2: Dangling Pointer (Use-After-Free)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-sticky.svg" alt="Sticky Note: Mistake 2: Dangling Pointer (Use-After-Free)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-2-dangling-pointer-use-after-free-sticky.svg" alt="Sticky Note: Mistake 2: Dangling Pointer (Use-After-Free)" width="30%">
 </a>
 
 
@@ -3627,14 +3627,14 @@ free(p);
 
 ### Mistake 3: Buffer Overflow via Pointer Arithmetic
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-handwritten.svg" alt="Handwritten: Mistake 3: Buffer Overflow via Pointer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-handwritten.svg" alt="Handwritten: Mistake 3: Buffer Overflow via Pointer Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-diagram.svg" alt="Diagram: Mistake 3: Buffer Overflow via Pointer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-diagram.svg" alt="Diagram: Mistake 3: Buffer Overflow via Pointer Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-sticky.svg" alt="Sticky Note: Mistake 3: Buffer Overflow via Pointer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-3-buffer-overflow-via-pointer-arithmetic-sticky.svg" alt="Sticky Note: Mistake 3: Buffer Overflow via Pointer Arithmetic" width="30%">
 </a>
 
 
@@ -3648,14 +3648,14 @@ int *p = arr;
 
 ### Mistake 4: Returning Address of Local Variable
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-handwritten.svg" alt="Handwritten: Mistake 4: Returning Address of Local Variable" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-handwritten.svg" alt="Handwritten: Mistake 4: Returning Address of Local Variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-diagram.svg" alt="Diagram: Mistake 4: Returning Address of Local Variable" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-diagram.svg" alt="Diagram: Mistake 4: Returning Address of Local Variable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-sticky.svg" alt="Sticky Note: Mistake 4: Returning Address of Local Variable" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-4-returning-address-of-local-variable-sticky.svg" alt="Sticky Note: Mistake 4: Returning Address of Local Variable" width="30%">
 </a>
 
 
@@ -3670,14 +3670,14 @@ int* bad(void) {
 
 ### Mistake 5: Forgetting to Check malloc Return
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-handwritten.svg" alt="Handwritten: Mistake 5: Forgetting to Check malloc Return" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-handwritten.svg" alt="Handwritten: Mistake 5: Forgetting to Check malloc Return" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-diagram.svg" alt="Diagram: Mistake 5: Forgetting to Check malloc Return" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-diagram.svg" alt="Diagram: Mistake 5: Forgetting to Check malloc Return" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-sticky.svg" alt="Sticky Note: Mistake 5: Forgetting to Check malloc Return" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-5-forgetting-to-check-malloc-return-sticky.svg" alt="Sticky Note: Mistake 5: Forgetting to Check malloc Return" width="30%">
 </a>
 
 
@@ -3691,14 +3691,14 @@ int *p = malloc(1000000000000 * sizeof(int));
 
 ### Mistake 6: Off-by-One in Pointer Arithmetic
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-handwritten.svg" alt="Handwritten: Mistake 6: Off-by-One in Pointer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-handwritten.svg" alt="Handwritten: Mistake 6: Off-by-One in Pointer Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-diagram.svg" alt="Diagram: Mistake 6: Off-by-One in Pointer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-diagram.svg" alt="Diagram: Mistake 6: Off-by-One in Pointer Arithmetic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-sticky.svg" alt="Sticky Note: Mistake 6: Off-by-One in Pointer Arithmetic" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-6-off-by-one-in-pointer-arithmetic-sticky.svg" alt="Sticky Note: Mistake 6: Off-by-One in Pointer Arithmetic" width="30%">
 </a>
 
 
@@ -3710,14 +3710,14 @@ int *p = arr;
 
 ### Mistake 7: Confusing Pointers and Arrays with sizeof
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-handwritten.svg" alt="Handwritten: Mistake 7: Confusing Pointers and Arrays with sizeof" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-handwritten.svg" alt="Handwritten: Mistake 7: Confusing Pointers and Arrays with sizeof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-diagram.svg" alt="Diagram: Mistake 7: Confusing Pointers and Arrays with sizeof" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-diagram.svg" alt="Diagram: Mistake 7: Confusing Pointers and Arrays with sizeof" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-sticky.svg" alt="Sticky Note: Mistake 7: Confusing Pointers and Arrays with sizeof" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-7-confusing-pointers-and-arrays-with-sizeof-sticky.svg" alt="Sticky Note: Mistake 7: Confusing Pointers and Arrays with sizeof" width="30%">
 </a>
 
 
@@ -3732,14 +3732,14 @@ void func(int arr[])  /* arr is actually int* */
 
 ### Mistake 8: Type Mismatch with void*
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-handwritten.svg" alt="Handwritten: Mistake 8: Type Mismatch with void*" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-handwritten.svg" alt="Handwritten: Mistake 8: Type Mismatch with void*" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-diagram.svg" alt="Diagram: Mistake 8: Type Mismatch with void*" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-diagram.svg" alt="Diagram: Mistake 8: Type Mismatch with void*" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-sticky.svg" alt="Sticky Note: Mistake 8: Type Mismatch with void*" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-8-type-mismatch-with-void-sticky.svg" alt="Sticky Note: Mistake 8: Type Mismatch with void*" width="30%">
 </a>
 
 
@@ -3751,14 +3751,14 @@ printf("%f\n", *(double*)vp);  /* WRONG: interprets int bits as double */
 
 ### Mistake 9: Dereferencing Incomplete Type
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-handwritten.svg" alt="Handwritten: Mistake 9: Dereferencing Incomplete Type" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-handwritten.svg" alt="Handwritten: Mistake 9: Dereferencing Incomplete Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-diagram.svg" alt="Diagram: Mistake 9: Dereferencing Incomplete Type" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-diagram.svg" alt="Diagram: Mistake 9: Dereferencing Incomplete Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-sticky.svg" alt="Sticky Note: Mistake 9: Dereferencing Incomplete Type" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-9-dereferencing-incomplete-type-sticky.svg" alt="Sticky Note: Mistake 9: Dereferencing Incomplete Type" width="30%">
 </a>
 
 
@@ -3769,14 +3769,14 @@ struct Node *p;
 
 ### Mistake 10: Double Free
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-handwritten.svg" alt="Handwritten: Mistake 10: Double Free" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-handwritten.svg" alt="Handwritten: Mistake 10: Double Free" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-diagram.svg" alt="Diagram: Mistake 10: Double Free" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-diagram.svg" alt="Diagram: Mistake 10: Double Free" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-sticky.svg" alt="Sticky Note: Mistake 10: Double Free" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/mistake-10-double-free-sticky.svg" alt="Sticky Note: Mistake 10: Double Free" width="30%">
 </a>
 
 
@@ -3979,14 +3979,14 @@ Understanding what happens at the hardware level during a pointer dereference he
 
 ### Step-by-Step Hardware View
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-handwritten.svg" alt="Handwritten: Step-by-Step Hardware View" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-handwritten.svg" alt="Handwritten: Step-by-Step Hardware View" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-diagram.svg" alt="Diagram: Step-by-Step Hardware View" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-diagram.svg" alt="Diagram: Step-by-Step Hardware View" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-sticky.svg" alt="Sticky Note: Step-by-Step Hardware View" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/step-by-step-hardware-view-sticky.svg" alt="Sticky Note: Step-by-Step Hardware View" width="30%">
 </a>
 
 
@@ -4007,14 +4007,14 @@ int *p = &x;    /* p is at address 0x2000, stores 0x1000 */
 
 ### Multi-Level Dereference Trace
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-handwritten.svg" alt="Handwritten: Multi-Level Dereference Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-handwritten.svg" alt="Handwritten: Multi-Level Dereference Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-diagram.svg" alt="Diagram: Multi-Level Dereference Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-diagram.svg" alt="Diagram: Multi-Level Dereference Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-sticky.svg" alt="Sticky Note: Multi-Level Dereference Trace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/multi-level-dereference-trace-sticky.svg" alt="Sticky Note: Multi-Level Dereference Trace" width="30%">
 </a>
 
 
@@ -4042,14 +4042,14 @@ Each star adds one memory read. Three stars = three pointer chases + one value r
 
 ### Alignment
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/alignment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/alignment-handwritten.svg" alt="Handwritten: Alignment" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/alignment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/alignment-handwritten.svg" alt="Handwritten: Alignment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/alignment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/alignment-diagram.svg" alt="Diagram: Alignment" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/alignment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/alignment-diagram.svg" alt="Diagram: Alignment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/alignment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/alignment-sticky.svg" alt="Sticky Note: Alignment" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/alignment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/alignment-sticky.svg" alt="Sticky Note: Alignment" width="30%">
 </a>
 
 
@@ -4076,14 +4076,14 @@ int main(void)
 
 ### Strict Aliasing Rule (C99 §6.5)
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-handwritten.svg" alt="Handwritten: Strict Aliasing Rule (C99 §6.5)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-handwritten.svg" alt="Handwritten: Strict Aliasing Rule (C99 §6.5)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-diagram.svg" alt="Diagram: Strict Aliasing Rule (C99 §6.5)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-diagram.svg" alt="Diagram: Strict Aliasing Rule (C99 §6.5)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-sticky.svg" alt="Sticky Note: Strict Aliasing Rule (C99 §6.5)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/strict-aliasing-rule-c99-6-5-sticky.svg" alt="Sticky Note: Strict Aliasing Rule (C99 §6.5)" width="30%">
 </a>
 
 
@@ -4121,14 +4121,14 @@ Array-to-pointer decay happens in these contexts:
 
 ### Memory Layout Comparison
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-handwritten.svg" alt="Handwritten: Memory Layout Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-handwritten.svg" alt="Handwritten: Memory Layout Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-diagram.svg" alt="Diagram: Memory Layout Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-diagram.svg" alt="Diagram: Memory Layout Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-sticky.svg" alt="Sticky Note: Memory Layout Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/memory-layout-comparison-sticky.svg" alt="Sticky Note: Memory Layout Comparison" width="30%">
 </a>
 
 
@@ -4147,14 +4147,14 @@ Pointer:      ┌────────────┐
 
 ### sizeof(arr) vs sizeof(p) in function
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-handwritten.svg" alt="Handwritten: sizeof(arr) vs sizeof(p) in function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-handwritten.svg" alt="Handwritten: sizeof(arr) vs sizeof(p) in function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-diagram.svg" alt="Diagram: sizeof(arr) vs sizeof(p) in function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-diagram.svg" alt="Diagram: sizeof(arr) vs sizeof(p) in function" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-sticky.svg" alt="Sticky Note: sizeof(arr) vs sizeof(p) in function" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/sizeof-arr-vs-sizeof-p-in-function-sticky.svg" alt="Sticky Note: sizeof(arr) vs sizeof(p) in function" width="30%">
 </a>
 
 
@@ -4195,14 +4195,14 @@ sum = 15
 
 ### The Right-Left (Spiral) Rule
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-handwritten.svg" alt="Handwritten: The Right-Left (Spiral) Rule" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-handwritten.svg" alt="Handwritten: The Right-Left (Spiral) Rule" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-diagram.svg" alt="Diagram: The Right-Left (Spiral) Rule" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-diagram.svg" alt="Diagram: The Right-Left (Spiral) Rule" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-sticky.svg" alt="Sticky Note: The Right-Left (Spiral) Rule" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/the-right-left-spiral-rule-sticky.svg" alt="Sticky Note: The Right-Left (Spiral) Rule" width="30%">
 </a>
 
 
@@ -4220,14 +4220,14 @@ To decode any C declaration, read it right-to-left (or in a spiral).
 
 ### Practice Decoding
 
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-handwritten.svg" alt="Handwritten: Practice Decoding" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-handwritten.svg" alt="Handwritten: Practice Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-diagram.svg" alt="Diagram: Practice Decoding" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-diagram.svg" alt="Diagram: Practice Decoding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-sticky.svg" alt="Sticky Note: Practice Decoding" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/09-pointers/practice-decoding-sticky.svg" alt="Sticky Note: Practice Decoding" width="30%">
 </a>
 
 

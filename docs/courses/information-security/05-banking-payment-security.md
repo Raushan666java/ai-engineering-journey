@@ -28,14 +28,14 @@ After completing this chapter you will be able to:
 
 ### 5.1 RBI Cybersecurity Guidelines
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-handwritten.svg" alt="Handwritten: 5.1 RBI Cybersecurity Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-handwritten.svg" alt="Handwritten: 5.1 RBI Cybersecurity Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-diagram.svg" alt="Diagram: 5.1 RBI Cybersecurity Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-diagram.svg" alt="Diagram: 5.1 RBI Cybersecurity Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-sticky.svg" alt="Sticky Note: 5.1 RBI Cybersecurity Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-sticky.svg" alt="Sticky Note: 5.1 RBI Cybersecurity Guidelines" width="30%">
 </a>
 
 
@@ -91,14 +91,14 @@ flowchart TD
 
 ### 5.2 PCI DSS (Payment Card Industry Data Security Standard)
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-handwritten.svg" alt="Handwritten: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-handwritten.svg" alt="Handwritten: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-diagram.svg" alt="Diagram: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-diagram.svg" alt="Diagram: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-sticky.svg" alt="Sticky Note: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-sticky.svg" alt="Sticky Note: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ PCI DSS is a set of security standards for organizations handling branded credit
 
 ### 5.3 3D Secure (3DS)
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-handwritten.svg" alt="Handwritten: 5.3 3D Secure (3DS)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-handwritten.svg" alt="Handwritten: 5.3 3D Secure (3DS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-diagram.svg" alt="Diagram: 5.3 3D Secure (3DS)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-diagram.svg" alt="Diagram: 5.3 3D Secure (3DS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-sticky.svg" alt="Sticky Note: 5.3 3D Secure (3DS)" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-sticky.svg" alt="Sticky Note: 5.3 3D Secure (3DS)" width="30%">
 </a>
 
 
@@ -192,14 +192,14 @@ PCI DSS is a set of security standards for organizations handling branded credit
 
 ### 5.4 EMV Chip Technology
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-handwritten.svg" alt="Handwritten: 5.4 EMV Chip Technology" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-handwritten.svg" alt="Handwritten: 5.4 EMV Chip Technology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-diagram.svg" alt="Diagram: 5.4 EMV Chip Technology" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-diagram.svg" alt="Diagram: 5.4 EMV Chip Technology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-sticky.svg" alt="Sticky Note: 5.4 EMV Chip Technology" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-sticky.svg" alt="Sticky Note: 5.4 EMV Chip Technology" width="30%">
 </a>
 
 
@@ -238,14 +238,14 @@ EMV (Europay, Mastercard, Visa) is the global standard for chip-based payment ca
 
 ### 5.5 Tokenization
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-handwritten.svg" alt="Handwritten: 5.5 Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-handwritten.svg" alt="Handwritten: 5.5 Tokenization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-diagram.svg" alt="Diagram: 5.5 Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-diagram.svg" alt="Diagram: 5.5 Tokenization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-sticky.svg" alt="Sticky Note: 5.5 Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-sticky.svg" alt="Sticky Note: 5.5 Tokenization" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 
 ### 5.6 Secure Element and TEE
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-handwritten.svg" alt="Handwritten: 5.6 Secure Element and TEE" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-handwritten.svg" alt="Handwritten: 5.6 Secure Element and TEE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-diagram.svg" alt="Diagram: 5.6 Secure Element and TEE" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-diagram.svg" alt="Diagram: 5.6 Secure Element and TEE" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-sticky.svg" alt="Sticky Note: 5.6 Secure Element and TEE" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-sticky.svg" alt="Sticky Note: 5.6 Secure Element and TEE" width="30%">
 </a>
 
 
@@ -357,14 +357,14 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 
 ### 5.7 Mobile Banking Security — OWASP Mobile Top 10
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-handwritten.svg" alt="Handwritten: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-handwritten.svg" alt="Handwritten: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-diagram.svg" alt="Diagram: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-diagram.svg" alt="Diagram: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-sticky.svg" alt="Sticky Note: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-sticky.svg" alt="Sticky Note: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
 </a>
 
 
@@ -391,14 +391,14 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 
 ### 5.8 UPI Security Architecture
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-handwritten.svg" alt="Handwritten: 5.8 UPI Security Architecture" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-handwritten.svg" alt="Handwritten: 5.8 UPI Security Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-diagram.svg" alt="Diagram: 5.8 UPI Security Architecture" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-diagram.svg" alt="Diagram: 5.8 UPI Security Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-sticky.svg" alt="Sticky Note: 5.8 UPI Security Architecture" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-sticky.svg" alt="Sticky Note: 5.8 UPI Security Architecture" width="30%">
 </a>
 
 
@@ -472,14 +472,14 @@ sequenceDiagram
 
 ### 5.9 Digital Payment Fraud Detection
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-handwritten.svg" alt="Handwritten: 5.9 Digital Payment Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-handwritten.svg" alt="Handwritten: 5.9 Digital Payment Fraud Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-diagram.svg" alt="Diagram: 5.9 Digital Payment Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-diagram.svg" alt="Diagram: 5.9 Digital Payment Fraud Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-sticky.svg" alt="Sticky Note: 5.9 Digital Payment Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-sticky.svg" alt="Sticky Note: 5.9 Digital Payment Fraud Detection" width="30%">
 </a>
 
 
@@ -522,14 +522,14 @@ Transaction                         Rules          Decision
 
 ### 5.10 Biometric Authentication in Banking
 
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-handwritten.svg" alt="Handwritten: 5.10 Biometric Authentication in Banking" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-handwritten.svg" alt="Handwritten: 5.10 Biometric Authentication in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-diagram.svg" alt="Diagram: 5.10 Biometric Authentication in Banking" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-diagram.svg" alt="Diagram: 5.10 Biometric Authentication in Banking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-sticky.svg" alt="Sticky Note: 5.10 Biometric Authentication in Banking" width="30%">
+<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-sticky.svg" alt="Sticky Note: 5.10 Biometric Authentication in Banking" width="30%">
 </a>
 
 

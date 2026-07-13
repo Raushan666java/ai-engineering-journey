@@ -15,14 +15,14 @@
 
 ### What is Software Quality?
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-handwritten.svg" alt="Handwritten: What is Software Quality?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-handwritten.svg" alt="Handwritten: What is Software Quality?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-diagram.svg" alt="Diagram: What is Software Quality?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-diagram.svg" alt="Diagram: What is Software Quality?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-sticky.svg" alt="Sticky Note: What is Software Quality?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/what-is-software-quality-sticky.svg" alt="Sticky Note: What is Software Quality?" width="30%">
 </a>
 
 
@@ -44,14 +44,14 @@ graph TD
 
 ### The Three Components of Quality Management
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-handwritten.svg" alt="Handwritten: The Three Components of Quality Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-handwritten.svg" alt="Handwritten: The Three Components of Quality Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-diagram.svg" alt="Diagram: The Three Components of Quality Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-diagram.svg" alt="Diagram: The Three Components of Quality Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-sticky.svg" alt="Sticky Note: The Three Components of Quality Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/the-three-components-of-quality-management-sticky.svg" alt="Sticky Note: The Three Components of Quality Management" width="30%">
 </a>
 
 
@@ -63,14 +63,14 @@ graph TD
 
 ### Quality Models Comparison
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-handwritten.svg" alt="Handwritten: Quality Models Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-handwritten.svg" alt="Handwritten: Quality Models Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-diagram.svg" alt="Diagram: Quality Models Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-diagram.svg" alt="Diagram: Quality Models Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-sticky.svg" alt="Sticky Note: Quality Models Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-models-comparison-sticky.svg" alt="Sticky Note: Quality Models Comparison" width="30%">
 </a>
 
 
@@ -109,14 +109,14 @@ FURPS+ extends the basic FURPS categories with a `+` for design constraints:
 
 ### Quality Standards and Models
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-handwritten.svg" alt="Handwritten: Quality Standards and Models" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-handwritten.svg" alt="Handwritten: Quality Standards and Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-diagram.svg" alt="Diagram: Quality Standards and Models" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-diagram.svg" alt="Diagram: Quality Standards and Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-sticky.svg" alt="Sticky Note: Quality Standards and Models" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-standards-and-models-sticky.svg" alt="Sticky Note: Quality Standards and Models" width="30%">
 </a>
 
 
@@ -226,14 +226,14 @@ graph TD
 
 ### Quality Assurance vs Quality Control
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-handwritten.svg" alt="Handwritten: Quality Assurance vs Quality Control" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-handwritten.svg" alt="Handwritten: Quality Assurance vs Quality Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-diagram.svg" alt="Diagram: Quality Assurance vs Quality Control" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-diagram.svg" alt="Diagram: Quality Assurance vs Quality Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-sticky.svg" alt="Sticky Note: Quality Assurance vs Quality Control" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-assurance-vs-quality-control-sticky.svg" alt="Sticky Note: Quality Assurance vs Quality Control" width="30%">
 </a>
 
 
@@ -250,14 +250,14 @@ graph TD
 
 ### Quality Reviews: Inspections and Walkthroughs
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-handwritten.svg" alt="Handwritten: Quality Reviews: Inspections and Walkthroughs" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-handwritten.svg" alt="Handwritten: Quality Reviews: Inspections and Walkthroughs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-diagram.svg" alt="Diagram: Quality Reviews: Inspections and Walkthroughs" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-diagram.svg" alt="Diagram: Quality Reviews: Inspections and Walkthroughs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-sticky.svg" alt="Sticky Note: Quality Reviews: Inspections and Walkthroughs" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-reviews-inspections-and-walkthroughs-sticky.svg" alt="Sticky Note: Quality Reviews: Inspections and Walkthroughs" width="30%">
 </a>
 
 
@@ -328,14 +328,14 @@ sequenceDiagram
 
 ### Static Analysis
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-handwritten.svg" alt="Handwritten: Static Analysis" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-handwritten.svg" alt="Handwritten: Static Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-diagram.svg" alt="Diagram: Static Analysis" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-diagram.svg" alt="Diagram: Static Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-sticky.svg" alt="Sticky Note: Static Analysis" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/static-analysis-sticky.svg" alt="Sticky Note: Static Analysis" width="30%">
 </a>
 
 
@@ -364,14 +364,14 @@ Where E = number of edges, N = number of nodes, P = number of connected componen
 
 ### Statistical Process Control (SPC)
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-handwritten.svg" alt="Handwritten: Statistical Process Control (SPC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-handwritten.svg" alt="Handwritten: Statistical Process Control (SPC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-diagram.svg" alt="Diagram: Statistical Process Control (SPC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-diagram.svg" alt="Diagram: Statistical Process Control (SPC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-sticky.svg" alt="Sticky Note: Statistical Process Control (SPC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/statistical-process-control-spc-sticky.svg" alt="Sticky Note: Statistical Process Control (SPC)" width="30%">
 </a>
 
 
@@ -411,14 +411,14 @@ graph LR
 
 ### Process Quality Frameworks
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-handwritten.svg" alt="Handwritten: Process Quality Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-handwritten.svg" alt="Handwritten: Process Quality Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-diagram.svg" alt="Diagram: Process Quality Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-diagram.svg" alt="Diagram: Process Quality Frameworks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-sticky.svg" alt="Sticky Note: Process Quality Frameworks" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/process-quality-frameworks-sticky.svg" alt="Sticky Note: Process Quality Frameworks" width="30%">
 </a>
 
 
@@ -451,14 +451,14 @@ graph LR
 
 ### Quality Metrics Framework
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-handwritten.svg" alt="Handwritten: Quality Metrics Framework" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-handwritten.svg" alt="Handwritten: Quality Metrics Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-diagram.svg" alt="Diagram: Quality Metrics Framework" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-diagram.svg" alt="Diagram: Quality Metrics Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-sticky.svg" alt="Sticky Note: Quality Metrics Framework" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-metrics-framework-sticky.svg" alt="Sticky Note: Quality Metrics Framework" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ A comprehensive quality measurement program should span multiple dimensions:
 
 ### Quality Gates in CI/CD
 
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-handwritten.svg" alt="Handwritten: Quality Gates in CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-handwritten.svg" alt="Handwritten: Quality Gates in CI/CD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-diagram.svg" alt="Diagram: Quality Gates in CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-diagram.svg" alt="Diagram: Quality Gates in CI/CD" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-sticky.svg" alt="Sticky Note: Quality Gates in CI/CD" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/09-quality-management/quality-gates-in-ci-cd-sticky.svg" alt="Sticky Note: Quality Gates in CI/CD" width="30%">
 </a>
 
 

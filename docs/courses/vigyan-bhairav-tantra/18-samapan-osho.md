@@ -49,14 +49,14 @@ mindmap
 
 ### १.१ "जब तकनीक गिरती है, तब ध्यान होता है"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १.१ "जब तकनीक गिरती है, तब ध्यान होता है"" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ mindmap
 
 ### १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १.२ सभी तकनीकें — एक ही कमरे के दरवाज़े" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ mindmap
 
 ### १.३ ओशो का VBT को समझने का अनूठा ढंग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-handwritten.svg" alt="Handwritten: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-handwritten.svg" alt="Handwritten: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-diagram.svg" alt="Diagram: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-diagram.svg" alt="Diagram: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-sticky.svg" alt="Sticky Note: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/vbt-sticky.svg" alt="Sticky Note: १.३ ओशो का VBT को समझने का अनूठा ढंग" width="30%">
 </a>
 
 
@@ -128,14 +128,14 @@ mindmap
 
 ### २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.१ ओशो का ५-भागीय वर्गीकरण — एक समग्र दृष्टि" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ flowchart TB
 
 ### २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.२ पाँच श्रेणियाँ — पाँच प्रकार के साधक" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ flowchart TB
 
 ### २.३ सभी मार्ग — एक ही शिखर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.३ सभी मार्ग — एक ही शिखर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: २.३ सभी मार्ग — एक ही शिखर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.३ सभी मार्ग — एक ही शिखर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: २.३ सभी मार्ग — एक ही शिखर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.३ सभी मार्ग — एक ही शिखर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: २.३ सभी मार्ग — एक ही शिखर" width="30%">
 </a>
 
 
@@ -275,14 +275,14 @@ flowchart RL
 
 ### ३.१ मूल श्लोक — ओशो की व्याख्या में
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.१ मूल श्लोक — ओशो की व्याख्या में" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@ flowchart RL
 
 ### ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.२ मुक्ति कोई उपलब्धि नहीं — यह पहचान है" width="30%">
 </a>
 
 
@@ -327,14 +327,14 @@ flowchart RL
 
 ### ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.३ आखिरी तकनीक: सभी तकनीकों को छोड़ना" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ flowchart TB
 
 ### ३.४ ओशो का मुक्ति मॉडल
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.४ ओशो का मुक्ति मॉडल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: ३.४ ओशो का मुक्ति मॉडल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.४ ओशो का मुक्ति मॉडल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: ३.४ ओशो का मुक्ति मॉडल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.४ ओशो का मुक्ति मॉडल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: ३.४ ओशो का मुक्ति मॉडल" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ export {
 
 ### १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: १० प्रश्न — संपूर्ण पाठ्यक्रम, ओशो की दृष्टि से" width="30%">
 </a>
 
 
@@ -1004,14 +1004,14 @@ export {
 
 ### अभ्यास १: अपना ओशो-शैली प्रवचन लिखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: अपना ओशो-शैली प्रवचन लिखो" width="30%">
 </a>
 
 
@@ -1047,14 +1047,14 @@ function writeOshoDiscourse(techNum: number): OshoDiscourse {
 
 ### अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: ४० दिन का अभ्यास कार्यक्रम बनाओ" width="30%">
 </a>
 
 
@@ -1087,14 +1087,14 @@ function create40DayProgram(): void {
 
 ### अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: "साक्षी मैराथन" — २४ घंटे की चुनौती" width="30%">
 </a>
 
 
@@ -1120,14 +1120,14 @@ function create40DayProgram(): void {
 
 ### अभ्यास ४: किसी और को एक तकनीक सिखाओ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: किसी और को एक तकनीक सिखाओ" width="30%">
 </a>
 
 
@@ -1158,14 +1158,14 @@ function teachATechnique(): TeachingSession {
 
 ### अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: संपूर्ण पाठ्यक्रम की समीक्षा — अपने शब्दों में" width="30%">
 </a>
 
 
@@ -1181,14 +1181,14 @@ function teachATechnique(): TeachingSession {
 
 ### अभ्यास ६: TypeScript OshoQuote Generator
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-handwritten.svg" alt="Handwritten: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-handwritten.svg" alt="Handwritten: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-diagram.svg" alt="Diagram: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-diagram.svg" alt="Diagram: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-sticky.svg" alt="Sticky Note: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/typescript-oshoquote-generator-sticky.svg" alt="Sticky Note: अभ्यास ६: TypeScript OshoQuote Generator" width="30%">
 </a>
 
 
@@ -1224,14 +1224,14 @@ function generateDailyOshoWisdom(): OshoQuote {
 
 ### अभ्यास ७: ओशो को एक पत्र लिखो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-handwritten.svg" alt="Handwritten: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-diagram.svg" alt="Diagram: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/18-samapan-osho/-sticky.svg" alt="Sticky Note: अभ्यास ७: ओशो को एक पत्र लिखो" width="30%">
 </a>
 
 

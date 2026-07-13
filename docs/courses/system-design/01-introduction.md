@@ -61,14 +61,14 @@ flowchart LR
 
 ### What Is System Design?
 
-<a href="../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-handwritten.svg" alt="Handwritten: What Is System Design?" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-handwritten.svg" alt="Handwritten: What Is System Design?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-diagram.svg" alt="Diagram: What Is System Design?" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-diagram.svg" alt="Diagram: What Is System Design?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-sticky.svg" alt="Sticky Note: What Is System Design?" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/what-is-system-design-sticky.svg" alt="Sticky Note: What Is System Design?" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ System design is the discipline of defining the architecture, components, module
 
 ### Non-Functional Requirements
 
-<a href="../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-handwritten.svg" alt="Handwritten: Non-Functional Requirements" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-handwritten.svg" alt="Handwritten: Non-Functional Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-diagram.svg" alt="Diagram: Non-Functional Requirements" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-diagram.svg" alt="Diagram: Non-Functional Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-sticky.svg" alt="Sticky Note: Non-Functional Requirements" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/non-functional-requirements-sticky.svg" alt="Sticky Note: Non-Functional Requirements" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ Cost efficiency measures the operational expense per unit of useful work (e.g., 
 
 ### The Four-Phase Design Process
 
-<a href="../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-handwritten.svg" alt="Handwritten: The Four-Phase Design Process" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-handwritten.svg" alt="Handwritten: The Four-Phase Design Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-diagram.svg" alt="Diagram: The Four-Phase Design Process" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-diagram.svg" alt="Diagram: The Four-Phase Design Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-sticky.svg" alt="Sticky Note: The Four-Phase Design Process" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/the-four-phase-design-process-sticky.svg" alt="Sticky Note: The Four-Phase Design Process" width="30%">
 </a>
 
 
@@ -309,14 +309,14 @@ Select one or two components and analyze them in depth. Identify bottlenecks and
 
 ### Trade-Offs
 
-<a href="../../assets/images/diagrams/system-design/01-introduction/trade-offs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/trade-offs-handwritten.svg" alt="Handwritten: Trade-Offs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/trade-offs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/trade-offs-handwritten.svg" alt="Handwritten: Trade-Offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/trade-offs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/trade-offs-diagram.svg" alt="Diagram: Trade-Offs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/trade-offs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/trade-offs-diagram.svg" alt="Diagram: Trade-Offs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/trade-offs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/trade-offs-sticky.svg" alt="Sticky Note: Trade-Offs" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/trade-offs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/trade-offs-sticky.svg" alt="Sticky Note: Trade-Offs" width="30%">
 </a>
 
 
@@ -334,14 +334,14 @@ Every design decision is a trade-off. Recognizing and articulating trade-offs is
 
 ### Capacity Estimation Examples
 
-<a href="../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-handwritten.svg" alt="Handwritten: Capacity Estimation Examples" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-handwritten.svg" alt="Handwritten: Capacity Estimation Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-diagram.svg" alt="Diagram: Capacity Estimation Examples" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-diagram.svg" alt="Diagram: Capacity Estimation Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-sticky.svg" alt="Sticky Note: Capacity Estimation Examples" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/capacity-estimation-examples-sticky.svg" alt="Sticky Note: Capacity Estimation Examples" width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ This fits on a handful of SSDs. The bottleneck is not storage — it is write QP
 
 ### Real-World Systems
 
-<a href="../../assets/images/diagrams/system-design/01-introduction/real-world-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/real-world-systems-handwritten.svg" alt="Handwritten: Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/real-world-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/real-world-systems-handwritten.svg" alt="Handwritten: Real-World Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/real-world-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/real-world-systems-diagram.svg" alt="Diagram: Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/real-world-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/real-world-systems-diagram.svg" alt="Diagram: Real-World Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/01-introduction/real-world-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/01-introduction/real-world-systems-sticky.svg" alt="Sticky Note: Real-World Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/01-introduction/real-world-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/01-introduction/real-world-systems-sticky.svg" alt="Sticky Note: Real-World Systems" width="30%">
 </a>
 
 

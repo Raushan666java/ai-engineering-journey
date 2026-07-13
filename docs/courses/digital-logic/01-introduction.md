@@ -50,14 +50,14 @@ flowchart LR
 
 ### 1.1 Analog vs Digital Systems
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-handwritten.svg" alt="Handwritten: 1.1 Analog vs Digital Systems" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-handwritten.svg" alt="Handwritten: 1.1 Analog vs Digital Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-diagram.svg" alt="Diagram: 1.1 Analog vs Digital Systems" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-diagram.svg" alt="Diagram: 1.1 Analog vs Digital Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-sticky.svg" alt="Sticky Note: 1.1 Analog vs Digital Systems" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-1-analog-vs-digital-systems-sticky.svg" alt="Sticky Note: 1.1 Analog vs Digital Systems" width="30%">
 </a>
 
 
@@ -88,14 +88,14 @@ graph LR
 
 ### 1.2 Positional Number Systems
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-handwritten.svg" alt="Handwritten: 1.2 Positional Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-handwritten.svg" alt="Handwritten: 1.2 Positional Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-diagram.svg" alt="Diagram: 1.2 Positional Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-diagram.svg" alt="Diagram: 1.2 Positional Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-sticky.svg" alt="Sticky Note: 1.2 Positional Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-2-positional-number-systems-sticky.svg" alt="Sticky Note: 1.2 Positional Number Systems" width="30%">
 </a>
 
 
@@ -127,14 +127,14 @@ The hexadecimal system employs sixteen digits {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, 
 
 ### 1.3 Base Conversion
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-handwritten.svg" alt="Handwritten: 1.3 Base Conversion" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-handwritten.svg" alt="Handwritten: 1.3 Base Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-diagram.svg" alt="Diagram: 1.3 Base Conversion" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-diagram.svg" alt="Diagram: 1.3 Base Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-sticky.svg" alt="Sticky Note: 1.3 Base Conversion" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-3-base-conversion-sticky.svg" alt="Sticky Note: 1.3 Base Conversion" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ flowchart LR
 
 ### 1.4 Signed Number Representations
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-handwritten.svg" alt="Handwritten: 1.4 Signed Number Representations" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-handwritten.svg" alt="Handwritten: 1.4 Signed Number Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-diagram.svg" alt="Diagram: 1.4 Signed Number Representations" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-diagram.svg" alt="Diagram: 1.4 Signed Number Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-sticky.svg" alt="Sticky Note: 1.4 Signed Number Representations" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-4-signed-number-representations-sticky.svg" alt="Sticky Note: 1.4 Signed Number Representations" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ Example: Extend 1011 (-5 in 4 bits) to 8 bits: 11111011. The value remains -5.
 
 ### 1.5 Overflow Detection
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-handwritten.svg" alt="Handwritten: 1.5 Overflow Detection" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-handwritten.svg" alt="Handwritten: 1.5 Overflow Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-diagram.svg" alt="Diagram: 1.5 Overflow Detection" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-diagram.svg" alt="Diagram: 1.5 Overflow Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-sticky.svg" alt="Sticky Note: 1.5 Overflow Detection" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-5-overflow-detection-sticky.svg" alt="Sticky Note: 1.5 Overflow Detection" width="30%">
 </a>
 
 
@@ -295,14 +295,14 @@ function detectOverflow(a: number, b: number, result: number, bits: number): boo
 
 ### 1.6 Binary-Coded Decimal (BCD)
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-handwritten.svg" alt="Handwritten: 1.6 Binary-Coded Decimal (BCD)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-handwritten.svg" alt="Handwritten: 1.6 Binary-Coded Decimal (BCD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-diagram.svg" alt="Diagram: 1.6 Binary-Coded Decimal (BCD)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-diagram.svg" alt="Diagram: 1.6 Binary-Coded Decimal (BCD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-sticky.svg" alt="Sticky Note: 1.6 Binary-Coded Decimal (BCD)" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-6-binary-coded-decimal-bcd-sticky.svg" alt="Sticky Note: 1.6 Binary-Coded Decimal (BCD)" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ function bcdAdd(a: number, b: number): { sum: number; carry: number } {
 
 ### 1.7 Gray Code
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-handwritten.svg" alt="Handwritten: 1.7 Gray Code" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-handwritten.svg" alt="Handwritten: 1.7 Gray Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-diagram.svg" alt="Diagram: 1.7 Gray Code" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-diagram.svg" alt="Diagram: 1.7 Gray Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-sticky.svg" alt="Sticky Note: 1.7 Gray Code" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-7-gray-code-sticky.svg" alt="Sticky Note: 1.7 Gray Code" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ function grayToBinary(gray: string): string {
 
 ### 1.8 Error Detection and Correction Codes
 
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-handwritten.svg" alt="Handwritten: 1.8 Error Detection and Correction Codes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-handwritten.svg" alt="Handwritten: 1.8 Error Detection and Correction Codes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-diagram.svg" alt="Diagram: 1.8 Error Detection and Correction Codes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-diagram.svg" alt="Diagram: 1.8 Error Detection and Correction Codes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-sticky.svg" alt="Sticky Note: 1.8 Error Detection and Correction Codes" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/01-introduction/1-8-error-detection-and-correction-codes-sticky.svg" alt="Sticky Note: 1.8 Error Detection and Correction Codes" width="30%">
 </a>
 
 

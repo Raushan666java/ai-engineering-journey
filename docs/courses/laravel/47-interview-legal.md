@@ -38,14 +38,14 @@ flowchart LR
 
 ### Q1: What are the core entities in a legal practice management system?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-handwritten.svg" alt="Handwritten: What are the core entities in a legal practice management system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-handwritten.svg" alt="Handwritten: What are the core entities in a legal practice management system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-diagram.svg" alt="Diagram: What are the core entities in a legal practice management system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-diagram.svg" alt="Diagram: What are the core entities in a legal practice management system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-sticky.svg" alt="Sticky Note: What are the core entities in a legal practice management system?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-the-core-entities-in-a-legal-practice-management-system-sticky.svg" alt="Sticky Note: What are the core entities in a legal practice management system?" width="30%">
 </a>
 
 
@@ -57,14 +57,14 @@ flowchart LR
 
 ### Q3: What is e-discovery and what are the key stages?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-handwritten.svg" alt="Handwritten: What is e-discovery and what are the key stages?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-handwritten.svg" alt="Handwritten: What is e-discovery and what are the key stages?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-diagram.svg" alt="Diagram: What is e-discovery and what are the key stages?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-diagram.svg" alt="Diagram: What is e-discovery and what are the key stages?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-sticky.svg" alt="Sticky Note: What is e-discovery and what are the key stages?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-e-discovery-and-what-are-the-key-stages-sticky.svg" alt="Sticky Note: What is e-discovery and what are the key stages?" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@ flowchart LR
 
 ### Q4: What compliance frameworks are commonly encountered in legal technology?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-handwritten.svg" alt="Handwritten: What compliance frameworks are commonly encountered in legal technology?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-handwritten.svg" alt="Handwritten: What compliance frameworks are commonly encountered in legal technology?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-diagram.svg" alt="Diagram: What compliance frameworks are commonly encountered in legal technology?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-diagram.svg" alt="Diagram: What compliance frameworks are commonly encountered in legal technology?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-sticky.svg" alt="Sticky Note: What compliance frameworks are commonly encountered in legal technology?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-compliance-frameworks-are-commonly-encountered-in-legal-technology-sticky.svg" alt="Sticky Note: What compliance frameworks are commonly encountered in legal technology?" width="30%">
 </a>
 
 
@@ -87,14 +87,14 @@ flowchart LR
 
 ### Q5: What is a privilege log and how does it work in document review?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-handwritten.svg" alt="Handwritten: What is a privilege log and how does it work in document review?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-handwritten.svg" alt="Handwritten: What is a privilege log and how does it work in document review?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-diagram.svg" alt="Diagram: What is a privilege log and how does it work in document review?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-diagram.svg" alt="Diagram: What is a privilege log and how does it work in document review?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-sticky.svg" alt="Sticky Note: What is a privilege log and how does it work in document review?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-is-a-privilege-log-and-how-does-it-work-in-document-review-sticky.svg" alt="Sticky Note: What is a privilege log and how does it work in document review?" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ flowchart LR
 
 ### Q6: What are legal holds and how do they affect data management?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-handwritten.svg" alt="Handwritten: What are legal holds and how do they affect data management?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-handwritten.svg" alt="Handwritten: What are legal holds and how do they affect data management?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-diagram.svg" alt="Diagram: What are legal holds and how do they affect data management?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-diagram.svg" alt="Diagram: What are legal holds and how do they affect data management?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-sticky.svg" alt="Sticky Note: What are legal holds and how do they affect data management?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/what-are-legal-holds-and-how-do-they-affect-data-management-sticky.svg" alt="Sticky Note: What are legal holds and how do they affect data management?" width="30%">
 </a>
 
 
@@ -121,14 +121,14 @@ flowchart LR
 
 ### Q7: How would you implement a contract review agent that detects risky clauses?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-handwritten.svg" alt="Handwritten: How would you implement a contract review agent that detects risky clauses?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-handwritten.svg" alt="Handwritten: How would you implement a contract review agent that detects risky clauses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-diagram.svg" alt="Diagram: How would you implement a contract review agent that detects risky clauses?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-diagram.svg" alt="Diagram: How would you implement a contract review agent that detects risky clauses?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-sticky.svg" alt="Sticky Note: How would you implement a contract review agent that detects risky clauses?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-contract-review-agent-that-detects-risky-clauses-sticky.svg" alt="Sticky Note: How would you implement a contract review agent that detects risky clauses?" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ flowchart LR
 
 ### Q8: Build a discovery agent that classifies documents for e-discovery.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-handwritten.svg" alt="Handwritten: Build a discovery agent that classifies documents for e-discovery." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-handwritten.svg" alt="Handwritten: Build a discovery agent that classifies documents for e-discovery." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-diagram.svg" alt="Diagram: Build a discovery agent that classifies documents for e-discovery." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-diagram.svg" alt="Diagram: Build a discovery agent that classifies documents for e-discovery." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-sticky.svg" alt="Sticky Note: Build a discovery agent that classifies documents for e-discovery." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/build-a-discovery-agent-that-classifies-documents-for-e-discovery-sticky.svg" alt="Sticky Note: Build a discovery agent that classifies documents for e-discovery." width="30%">
 </a>
 
 
@@ -151,14 +151,14 @@ flowchart LR
 
 ### Q9: How would you implement a compliance monitoring agent?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-handwritten.svg" alt="Handwritten: How would you implement a compliance monitoring agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-handwritten.svg" alt="Handwritten: How would you implement a compliance monitoring agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-diagram.svg" alt="Diagram: How would you implement a compliance monitoring agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-diagram.svg" alt="Diagram: How would you implement a compliance monitoring agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-sticky.svg" alt="Sticky Note: How would you implement a compliance monitoring agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-a-compliance-monitoring-agent-sticky.svg" alt="Sticky Note: How would you implement a compliance monitoring agent?" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ flowchart LR
 
 ### Q10: Design a case management agent that tracks deadlines.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-handwritten.svg" alt="Handwritten: Design a case management agent that tracks deadlines." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-handwritten.svg" alt="Handwritten: Design a case management agent that tracks deadlines." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-diagram.svg" alt="Diagram: Design a case management agent that tracks deadlines." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-diagram.svg" alt="Diagram: Design a case management agent that tracks deadlines." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-sticky.svg" alt="Sticky Note: Design a case management agent that tracks deadlines." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-a-case-management-agent-that-tracks-deadlines-sticky.svg" alt="Sticky Note: Design a case management agent that tracks deadlines." width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ $agent->escalateOverdue();  // Escalates to supervising attorneys
 
 ### Q11: How would you build a legal research agent?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-handwritten.svg" alt="Handwritten: How would you build a legal research agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-handwritten.svg" alt="Handwritten: How would you build a legal research agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-diagram.svg" alt="Diagram: How would you build a legal research agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-diagram.svg" alt="Diagram: How would you build a legal research agent?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-sticky.svg" alt="Sticky Note: How would you build a legal research agent?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-legal-research-agent-sticky.svg" alt="Sticky Note: How would you build a legal research agent?" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ $agent->escalateOverdue();  // Escalates to supervising attorneys
 
 ### Q12: Describe an e-discovery processing pipeline in Laravel.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-handwritten.svg" alt="Handwritten: Describe an e-discovery processing pipeline in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-handwritten.svg" alt="Handwritten: Describe an e-discovery processing pipeline in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-diagram.svg" alt="Diagram: Describe an e-discovery processing pipeline in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-diagram.svg" alt="Diagram: Describe an e-discovery processing pipeline in Laravel." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-sticky.svg" alt="Sticky Note: Describe an e-discovery processing pipeline in Laravel." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-in-laravel-sticky.svg" alt="Sticky Note: Describe an e-discovery processing pipeline in Laravel." width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@ Bus::chain($chain)->onQueue('discovery')->dispatch();
 
 ### Q13: How do you automate legal report generation?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-handwritten.svg" alt="Handwritten: How do you automate legal report generation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-handwritten.svg" alt="Handwritten: How do you automate legal report generation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-diagram.svg" alt="Diagram: How do you automate legal report generation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-diagram.svg" alt="Diagram: How do you automate legal report generation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-sticky.svg" alt="Sticky Note: How do you automate legal report generation?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-automate-legal-report-generation-sticky.svg" alt="Sticky Note: How do you automate legal report generation?" width="30%">
 </a>
 
 
@@ -254,14 +254,14 @@ $report->setMatter($matter)
 
 ### Q14: How would you implement document versioning with chain of custody?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-handwritten.svg" alt="Handwritten: How would you implement document versioning with chain of custody?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-handwritten.svg" alt="Handwritten: How would you implement document versioning with chain of custody?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-diagram.svg" alt="Diagram: How would you implement document versioning with chain of custody?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-diagram.svg" alt="Diagram: How would you implement document versioning with chain of custody?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-sticky.svg" alt="Sticky Note: How would you implement document versioning with chain of custody?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-implement-document-versioning-with-chain-of-custody-sticky.svg" alt="Sticky Note: How would you implement document versioning with chain of custody?" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ $report->setMatter($matter)
 
 ### Q15: How can AI agents assist with privilege review during document production?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-handwritten.svg" alt="Handwritten: How can AI agents assist with privilege review during document production?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-handwritten.svg" alt="Handwritten: How can AI agents assist with privilege review during document production?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-diagram.svg" alt="Diagram: How can AI agents assist with privilege review during document production?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-diagram.svg" alt="Diagram: How can AI agents assist with privilege review during document production?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-sticky.svg" alt="Sticky Note: How can AI agents assist with privilege review during document production?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-can-ai-agents-assist-with-privilege-review-during-document-production-sticky.svg" alt="Sticky Note: How can AI agents assist with privilege review during document production?" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ $report->setMatter($matter)
 
 ### Q16: Design the architecture for a document management system in legal tech.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-handwritten.svg" alt="Handwritten: Design the architecture for a document management system in legal tech." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-handwritten.svg" alt="Handwritten: Design the architecture for a document management system in legal tech." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-diagram.svg" alt="Diagram: Design the architecture for a document management system in legal tech." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-diagram.svg" alt="Diagram: Design the architecture for a document management system in legal tech." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-sticky.svg" alt="Sticky Note: Design the architecture for a document management system in legal tech." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-the-architecture-for-a-document-management-system-in-legal-tech-sticky.svg" alt="Sticky Note: Design the architecture for a document management system in legal tech." width="30%">
 </a>
 
 
@@ -303,14 +303,14 @@ $report->setMatter($matter)
 
 ### Q17: How do you implement secure document storage and access control in a legal application?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-handwritten.svg" alt="Handwritten: How do you implement secure document storage and access control in a legal application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-handwritten.svg" alt="Handwritten: How do you implement secure document storage and access control in a legal application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-diagram.svg" alt="Diagram: How do you implement secure document storage and access control in a legal application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-diagram.svg" alt="Diagram: How do you implement secure document storage and access control in a legal application?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-sticky.svg" alt="Sticky Note: How do you implement secure document storage and access control in a legal application?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-implement-secure-document-storage-and-access-control-in-a-legal-application-sticky.svg" alt="Sticky Note: How do you implement secure document storage and access control in a legal application?" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ $report->setMatter($matter)
 
 ### Q18: Describe the audit trail and chain of custody requirements for legal systems.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-handwritten.svg" alt="Handwritten: Describe the audit trail and chain of custody requirements for legal systems." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-handwritten.svg" alt="Handwritten: Describe the audit trail and chain of custody requirements for legal systems." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-diagram.svg" alt="Diagram: Describe the audit trail and chain of custody requirements for legal systems." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-diagram.svg" alt="Diagram: Describe the audit trail and chain of custody requirements for legal systems." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-sticky.svg" alt="Sticky Note: Describe the audit trail and chain of custody requirements for legal systems." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-the-audit-trail-and-chain-of-custody-requirements-for-legal-systems-sticky.svg" alt="Sticky Note: Describe the audit trail and chain of custody requirements for legal systems." width="30%">
 </a>
 
 
@@ -333,14 +333,14 @@ $report->setMatter($matter)
 
 ### Q19: How do you handle multi-tenancy in a legal practice management platform?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-handwritten.svg" alt="Handwritten: How do you handle multi-tenancy in a legal practice management platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-handwritten.svg" alt="Handwritten: How do you handle multi-tenancy in a legal practice management platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-diagram.svg" alt="Diagram: How do you handle multi-tenancy in a legal practice management platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-diagram.svg" alt="Diagram: How do you handle multi-tenancy in a legal practice management platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-sticky.svg" alt="Sticky Note: How do you handle multi-tenancy in a legal practice management platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-do-you-handle-multi-tenancy-in-a-legal-practice-management-platform-sticky.svg" alt="Sticky Note: How do you handle multi-tenancy in a legal practice management platform?" width="30%">
 </a>
 
 
@@ -348,14 +348,14 @@ $report->setMatter($matter)
 
 ### Q20: How would you design a contract lifecycle management (CLM) system in Laravel?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-handwritten.svg" alt="Handwritten: How would you design a contract lifecycle management (CLM) system in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-handwritten.svg" alt="Handwritten: How would you design a contract lifecycle management (CLM) system in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-diagram.svg" alt="Diagram: How would you design a contract lifecycle management (CLM) system in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-diagram.svg" alt="Diagram: How would you design a contract lifecycle management (CLM) system in Laravel?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-sticky.svg" alt="Sticky Note: How would you design a contract lifecycle management (CLM) system in Laravel?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-design-a-contract-lifecycle-management-clm-system-in-laravel-sticky.svg" alt="Sticky Note: How would you design a contract lifecycle management (CLM) system in Laravel?" width="30%">
 </a>
 
 
@@ -367,14 +367,14 @@ $report->setMatter($matter)
 
 ### Q21: Design an AI-powered legal document review platform from scratch.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-handwritten.svg" alt="Handwritten: Design an AI-powered legal document review platform from scratch." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-handwritten.svg" alt="Handwritten: Design an AI-powered legal document review platform from scratch." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-diagram.svg" alt="Diagram: Design an AI-powered legal document review platform from scratch." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-diagram.svg" alt="Diagram: Design an AI-powered legal document review platform from scratch." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-sticky.svg" alt="Sticky Note: Design an AI-powered legal document review platform from scratch." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/design-an-ai-powered-legal-document-review-platform-from-scratch-sticky.svg" alt="Sticky Note: Design an AI-powered legal document review platform from scratch." width="30%">
 </a>
 
 
@@ -382,14 +382,14 @@ $report->setMatter($matter)
 
 ### Q22: How would you build a compliance monitoring system for a corporate legal department?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-handwritten.svg" alt="Handwritten: How would you build a compliance monitoring system for a corporate legal department?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-handwritten.svg" alt="Handwritten: How would you build a compliance monitoring system for a corporate legal department?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-diagram.svg" alt="Diagram: How would you build a compliance monitoring system for a corporate legal department?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-diagram.svg" alt="Diagram: How would you build a compliance monitoring system for a corporate legal department?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-sticky.svg" alt="Sticky Note: How would you build a compliance monitoring system for a corporate legal department?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-build-a-compliance-monitoring-system-for-a-corporate-legal-department-sticky.svg" alt="Sticky Note: How would you build a compliance monitoring system for a corporate legal department?" width="30%">
 </a>
 
 
@@ -397,14 +397,14 @@ $report->setMatter($matter)
 
 ### Q23: Describe an e-discovery processing pipeline and its failure modes.
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-handwritten.svg" alt="Handwritten: Describe an e-discovery processing pipeline and its failure modes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-handwritten.svg" alt="Handwritten: Describe an e-discovery processing pipeline and its failure modes." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-diagram.svg" alt="Diagram: Describe an e-discovery processing pipeline and its failure modes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-diagram.svg" alt="Diagram: Describe an e-discovery processing pipeline and its failure modes." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-sticky.svg" alt="Sticky Note: Describe an e-discovery processing pipeline and its failure modes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/describe-an-e-discovery-processing-pipeline-and-its-failure-modes-sticky.svg" alt="Sticky Note: Describe an e-discovery processing pipeline and its failure modes." width="30%">
 </a>
 
 
@@ -420,14 +420,14 @@ $report->setMatter($matter)
 
 ### Q26: How would you handle a subpoena for documents stored in your legal platform?
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-handwritten.svg" alt="Handwritten: How would you handle a subpoena for documents stored in your legal platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-handwritten.svg" alt="Handwritten: How would you handle a subpoena for documents stored in your legal platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-diagram.svg" alt="Diagram: How would you handle a subpoena for documents stored in your legal platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-diagram.svg" alt="Diagram: How would you handle a subpoena for documents stored in your legal platform?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-sticky.svg" alt="Sticky Note: How would you handle a subpoena for documents stored in your legal platform?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/how-would-you-handle-a-subpoena-for-documents-stored-in-your-legal-platform-sticky.svg" alt="Sticky Note: How would you handle a subpoena for documents stored in your legal platform?" width="30%">
 </a>
 
 
@@ -438,14 +438,14 @@ $report->setMatter($matter)
 
 ### Legal Interview Question Generator
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-handwritten.svg" alt="Handwritten: Legal Interview Question Generator" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-handwritten.svg" alt="Handwritten: Legal Interview Question Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-diagram.svg" alt="Diagram: Legal Interview Question Generator" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-diagram.svg" alt="Diagram: Legal Interview Question Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-sticky.svg" alt="Sticky Note: Legal Interview Question Generator" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/legal-interview-question-generator-sticky.svg" alt="Sticky Note: Legal Interview Question Generator" width="30%">
 </a>
 
 
@@ -553,14 +553,14 @@ class LegalInterviewQuestionGenerator {
 
 ### Document Redaction Engine
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-handwritten.svg" alt="Handwritten: Document Redaction Engine" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-handwritten.svg" alt="Handwritten: Document Redaction Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-diagram.svg" alt="Diagram: Document Redaction Engine" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-diagram.svg" alt="Diagram: Document Redaction Engine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-sticky.svg" alt="Sticky Note: Document Redaction Engine" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/document-redaction-engine-sticky.svg" alt="Sticky Note: Document Redaction Engine" width="30%">
 </a>
 
 
@@ -620,14 +620,14 @@ class DocumentRedactionEngine {
 
 ### Contract Risk Analyzer
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-handwritten.svg" alt="Handwritten: Contract Risk Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-handwritten.svg" alt="Handwritten: Contract Risk Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-diagram.svg" alt="Diagram: Contract Risk Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-diagram.svg" alt="Diagram: Contract Risk Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-sticky.svg" alt="Sticky Note: Contract Risk Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/contract-risk-analyzer-sticky.svg" alt="Sticky Note: Contract Risk Analyzer" width="30%">
 </a>
 
 
@@ -719,14 +719,14 @@ class ContractRiskAnalyzer {
 
 ### Compliance Schedule Runner
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-handwritten.svg" alt="Handwritten: Compliance Schedule Runner" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-handwritten.svg" alt="Handwritten: Compliance Schedule Runner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-diagram.svg" alt="Diagram: Compliance Schedule Runner" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-diagram.svg" alt="Diagram: Compliance Schedule Runner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-sticky.svg" alt="Sticky Note: Compliance Schedule Runner" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-schedule-runner-sticky.svg" alt="Sticky Note: Compliance Schedule Runner" width="30%">
 </a>
 
 
@@ -834,14 +834,14 @@ class ComplianceScheduleRunner {
 
 ### E-Discovery Processing Pipeline
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-handwritten.svg" alt="Handwritten: E-Discovery Processing Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-handwritten.svg" alt="Handwritten: E-Discovery Processing Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-diagram.svg" alt="Diagram: E-Discovery Processing Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-diagram.svg" alt="Diagram: E-Discovery Processing Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-sticky.svg" alt="Sticky Note: E-Discovery Processing Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/e-discovery-processing-pipeline-sticky.svg" alt="Sticky Note: E-Discovery Processing Pipeline" width="30%">
 </a>
 
 
@@ -874,14 +874,14 @@ flowchart LR
 
 ### Compliance Monitoring Workflow
 
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-handwritten.svg" alt="Handwritten: Compliance Monitoring Workflow" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-handwritten.svg" alt="Handwritten: Compliance Monitoring Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-diagram.svg" alt="Diagram: Compliance Monitoring Workflow" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-diagram.svg" alt="Diagram: Compliance Monitoring Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-sticky.svg" alt="Sticky Note: Compliance Monitoring Workflow" width="30%">
+<a href="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/47-interview-legal/compliance-monitoring-workflow-sticky.svg" alt="Sticky Note: Compliance Monitoring Workflow" width="30%">
 </a>
 
 

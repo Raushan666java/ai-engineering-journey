@@ -25,14 +25,14 @@ Before studying this chapter, you should be comfortable with:
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ In C, a **string** is a sequence of characters terminated by a null character (`
 
 ### Real-World Analogy: Beads on a Necklace
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-handwritten.svg" alt="Handwritten: Real-World Analogy: Beads on a Necklace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-handwritten.svg" alt="Handwritten: Real-World Analogy: Beads on a Necklace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-diagram.svg" alt="Diagram: Real-World Analogy: Beads on a Necklace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-diagram.svg" alt="Diagram: Real-World Analogy: Beads on a Necklace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-sticky.svg" alt="Sticky Note: Real-World Analogy: Beads on a Necklace" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-beads-on-a-necklace-sticky.svg" alt="Sticky Note: Real-World Analogy: Beads on a Necklace" width="30%">
 </a>
 
 
@@ -87,14 +87,14 @@ The knot tells you "stop here." If you lose the knot, you will keep counting bea
 
 ### What Is a String?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-handwritten.svg" alt="Handwritten: What Is a String?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-handwritten.svg" alt="Handwritten: What Is a String?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-diagram.svg" alt="Diagram: What Is a String?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-diagram.svg" alt="Diagram: What Is a String?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-sticky.svg" alt="Sticky Note: What Is a String?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-a-string-sticky.svg" alt="Sticky Note: What Is a String?" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ The array has **6 elements** (indices 0-5), but the **string length** is **5** c
 
 ### How Null Termination Works
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-handwritten.svg" alt="Handwritten: How Null Termination Works" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-handwritten.svg" alt="Handwritten: How Null Termination Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-diagram.svg" alt="Diagram: How Null Termination Works" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-diagram.svg" alt="Diagram: How Null Termination Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-sticky.svg" alt="Sticky Note: How Null Termination Works" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-null-termination-works-sticky.svg" alt="Sticky Note: How Null Termination Works" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ Empty string size: 1 byte(s)
 
 ### Numbered Steps to Create a String
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-handwritten.svg" alt="Handwritten: Numbered Steps to Create a String" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-handwritten.svg" alt="Handwritten: Numbered Steps to Create a String" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-diagram.svg" alt="Diagram: Numbered Steps to Create a String" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-diagram.svg" alt="Diagram: Numbered Steps to Create a String" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-sticky.svg" alt="Sticky Note: Numbered Steps to Create a String" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-to-create-a-string-sticky.svg" alt="Sticky Note: Numbered Steps to Create a String" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ printf("Hello, %s\n", name2);     /* prints "Hello, John" */
 
 ### Pseudocode for String Traversal
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-handwritten.svg" alt="Handwritten: Pseudocode for String Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-handwritten.svg" alt="Handwritten: Pseudocode for String Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-diagram.svg" alt="Diagram: Pseudocode for String Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-diagram.svg" alt="Diagram: Pseudocode for String Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-sticky.svg" alt="Sticky Note: Pseudocode for String Traversal" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-for-string-traversal-sticky.svg" alt="Sticky Note: Pseudocode for String Traversal" width="30%">
 </a>
 
 
@@ -213,14 +213,14 @@ END FUNCTION
 
 ### Dry Run: strlen Traversal of "Hello"
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-handwritten.svg" alt="Handwritten: Dry Run: strlen Traversal of "Hello"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-handwritten.svg" alt="Handwritten: Dry Run: strlen Traversal of "Hello"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-diagram.svg" alt="Diagram: Dry Run: strlen Traversal of "Hello"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-diagram.svg" alt="Diagram: Dry Run: strlen Traversal of "Hello"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-sticky.svg" alt="Sticky Note: Dry Run: strlen Traversal of "Hello"" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-strlen-traversal-of-hello-sticky.svg" alt="Sticky Note: Dry Run: strlen Traversal of "Hello"" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ Array size (sizeof): 6
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ Array size (sizeof): 6
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ Array size (sizeof): 6
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -345,14 +345,14 @@ C strings cannot represent embedded null characters. `strlen` and `printf` will 
 
 ### Real-World Analogy: Engraved Plaque vs. Whiteboard
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-handwritten.svg" alt="Handwritten: Real-World Analogy: Engraved Plaque vs. Whiteboard" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-handwritten.svg" alt="Handwritten: Real-World Analogy: Engraved Plaque vs. Whiteboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-diagram.svg" alt="Diagram: Real-World Analogy: Engraved Plaque vs. Whiteboard" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-diagram.svg" alt="Diagram: Real-World Analogy: Engraved Plaque vs. Whiteboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-sticky.svg" alt="Sticky Note: Real-World Analogy: Engraved Plaque vs. Whiteboard" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/real-world-analogy-engraved-plaque-vs-whiteboard-sticky.svg" alt="Sticky Note: Real-World Analogy: Engraved Plaque vs. Whiteboard" width="30%">
 </a>
 
 
@@ -370,14 +370,14 @@ A **character array** is like a **whiteboard** - you can write, erase, and rewri
 
 ### String Literal Memory
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-handwritten.svg" alt="Handwritten: String Literal Memory" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-handwritten.svg" alt="Handwritten: String Literal Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-diagram.svg" alt="Diagram: String Literal Memory" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-diagram.svg" alt="Diagram: String Literal Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-sticky.svg" alt="Sticky Note: String Literal Memory" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/string-literal-memory-sticky.svg" alt="Sticky Note: String Literal Memory" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ sizeof(array):    6 (6 bytes)
 
 ### Numbered Steps for String Literal Behavior
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-handwritten.svg" alt="Handwritten: Numbered Steps for String Literal Behavior" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-handwritten.svg" alt="Handwritten: Numbered Steps for String Literal Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-diagram.svg" alt="Diagram: Numbered Steps for String Literal Behavior" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-diagram.svg" alt="Diagram: Numbered Steps for String Literal Behavior" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-sticky.svg" alt="Sticky Note: Numbered Steps for String Literal Behavior" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-for-string-literal-behavior-sticky.svg" alt="Sticky Note: Numbered Steps for String Literal Behavior" width="30%">
 </a>
 
 
@@ -444,14 +444,14 @@ sizeof(array):    6 (6 bytes)
 
 ### String Literal vs Char Array Comparison
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-handwritten.svg" alt="Handwritten: String Literal vs Char Array Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-handwritten.svg" alt="Handwritten: String Literal vs Char Array Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-diagram.svg" alt="Diagram: String Literal vs Char Array Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-diagram.svg" alt="Diagram: String Literal vs Char Array Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-sticky.svg" alt="Sticky Note: String Literal vs Char Array Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/string-literal-vs-char-array-comparison-sticky.svg" alt="Sticky Note: String Literal vs Char Array Comparison" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ sizeof(array):    6 (6 bytes)
 
 ### Pseudocode: String Initialization
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-handwritten.svg" alt="Handwritten: Pseudocode: String Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-handwritten.svg" alt="Handwritten: Pseudocode: String Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-diagram.svg" alt="Diagram: Pseudocode: String Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-diagram.svg" alt="Diagram: Pseudocode: String Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-sticky.svg" alt="Sticky Note: Pseudocode: String Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-string-initialization-sticky.svg" alt="Sticky Note: Pseudocode: String Initialization" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ END FUNCTION
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -587,14 +587,14 @@ Month 12: December
 
 ### Why Use const char * Instead of char *?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-handwritten.svg" alt="Handwritten: Why Use const char * Instead of char *?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-handwritten.svg" alt="Handwritten: Why Use const char * Instead of char *?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-diagram.svg" alt="Diagram: Why Use const char * Instead of char *?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-diagram.svg" alt="Diagram: Why Use const char * Instead of char *?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-sticky.svg" alt="Sticky Note: Why Use const char * Instead of char *?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-use-const-char-instead-of-char-sticky.svg" alt="Sticky Note: Why Use const char * Instead of char *?" width="30%">
 </a>
 
 
@@ -617,14 +617,14 @@ String I/O is where many C programs first encounter buffer overflow vulnerabilit
 
 ### 7.4.1 `puts` - Simple Output
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-handwritten.svg" alt="Handwritten: 7.4.1 `puts` - Simple Output" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-handwritten.svg" alt="Handwritten: 7.4.1 `puts` - Simple Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-diagram.svg" alt="Diagram: 7.4.1 `puts` - Simple Output" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-diagram.svg" alt="Diagram: 7.4.1 `puts` - Simple Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-sticky.svg" alt="Sticky Note: 7.4.1 `puts` - Simple Output" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-1-puts-simple-output-sticky.svg" alt="Sticky Note: 7.4.1 `puts` - Simple Output" width="30%">
 </a>
 
 
@@ -653,14 +653,14 @@ Another
 
 ### 7.4.2 `printf` with `%s`
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-handwritten.svg" alt="Handwritten: 7.4.2 `printf` with `%s`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-handwritten.svg" alt="Handwritten: 7.4.2 `printf` with `%s`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-diagram.svg" alt="Diagram: 7.4.2 `printf` with `%s`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-diagram.svg" alt="Diagram: 7.4.2 `printf` with `%s`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-sticky.svg" alt="Sticky Note: 7.4.2 `printf` with `%s`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-2-printf-with-s-sticky.svg" alt="Sticky Note: 7.4.2 `printf` with `%s`" width="30%">
 </a>
 
 
@@ -680,14 +680,14 @@ printf("%s", user_input); /* SAFE - user data is an argument, not the format */
 
 ### 7.4.3 `gets` - The Dangerous One
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-handwritten.svg" alt="Handwritten: 7.4.3 `gets` - The Dangerous One" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-handwritten.svg" alt="Handwritten: 7.4.3 `gets` - The Dangerous One" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-diagram.svg" alt="Diagram: 7.4.3 `gets` - The Dangerous One" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-diagram.svg" alt="Diagram: 7.4.3 `gets` - The Dangerous One" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-sticky.svg" alt="Sticky Note: 7.4.3 `gets` - The Dangerous One" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-3-gets-the-dangerous-one-sticky.svg" alt="Sticky Note: 7.4.3 `gets` - The Dangerous One" width="30%">
 </a>
 
 
@@ -713,14 +713,14 @@ Step 5: Program "returns" to attacker-controlled code (shellcode).
 
 ### 7.4.4 `fgets` - Safe Line Input (Preferred)
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-handwritten.svg" alt="Handwritten: 7.4.4 `fgets` - Safe Line Input (Preferred)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-handwritten.svg" alt="Handwritten: 7.4.4 `fgets` - Safe Line Input (Preferred)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-diagram.svg" alt="Diagram: 7.4.4 `fgets` - Safe Line Input (Preferred)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-diagram.svg" alt="Diagram: 7.4.4 `fgets` - Safe Line Input (Preferred)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-sticky.svg" alt="Sticky Note: 7.4.4 `fgets` - Safe Line Input (Preferred)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-4-fgets-safe-line-input-preferred-sticky.svg" alt="Sticky Note: 7.4.4 `fgets` - Safe Line Input (Preferred)" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@ You entered: "Hello, C language!"
 
 ### 7.4.5 `scanf` with `%s`
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-handwritten.svg" alt="Handwritten: 7.4.5 `scanf` with `%s`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-handwritten.svg" alt="Handwritten: 7.4.5 `scanf` with `%s`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-diagram.svg" alt="Diagram: 7.4.5 `scanf` with `%s`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-diagram.svg" alt="Diagram: 7.4.5 `scanf` with `%s`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-sticky.svg" alt="Sticky Note: 7.4.5 `scanf` with `%s`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-4-5-scanf-with-s-sticky.svg" alt="Sticky Note: 7.4.5 `scanf` with `%s`" width="30%">
 </a>
 
 
@@ -784,14 +784,14 @@ scanf("%s", word);     /* DANGEROUS: no limit - overflow on long input */
 
 ### Numbered Steps: Safe String Input
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-handwritten.svg" alt="Handwritten: Numbered Steps: Safe String Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-handwritten.svg" alt="Handwritten: Numbered Steps: Safe String Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-diagram.svg" alt="Diagram: Numbered Steps: Safe String Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-diagram.svg" alt="Diagram: Numbered Steps: Safe String Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-sticky.svg" alt="Sticky Note: Numbered Steps: Safe String Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/numbered-steps-safe-string-input-sticky.svg" alt="Sticky Note: Numbered Steps: Safe String Input" width="30%">
 </a>
 
 
@@ -804,14 +804,14 @@ scanf("%s", word);     /* DANGEROUS: no limit - overflow on long input */
 
 ### Pseudocode: Safe Input
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-handwritten.svg" alt="Handwritten: Pseudocode: Safe Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-handwritten.svg" alt="Handwritten: Pseudocode: Safe Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-diagram.svg" alt="Diagram: Pseudocode: Safe Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-diagram.svg" alt="Diagram: Pseudocode: Safe Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-sticky.svg" alt="Sticky Note: Pseudocode: Safe Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/pseudocode-safe-input-sticky.svg" alt="Sticky Note: Pseudocode: Safe Input" width="30%">
 </a>
 
 
@@ -831,14 +831,14 @@ END FUNCTION
 
 ### Dry Run: fgets with Buffer
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-handwritten.svg" alt="Handwritten: Dry Run: fgets with Buffer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-handwritten.svg" alt="Handwritten: Dry Run: fgets with Buffer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-diagram.svg" alt="Diagram: Dry Run: fgets with Buffer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-diagram.svg" alt="Diagram: Dry Run: fgets with Buffer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-sticky.svg" alt="Sticky Note: Dry Run: fgets with Buffer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-buffer-sticky.svg" alt="Sticky Note: Dry Run: fgets with Buffer" width="30%">
 </a>
 
 
@@ -862,14 +862,14 @@ Input: `"Hello, World!\n"` (14 chars + newline), buffer size = 10
 
 ### Dry Run: fgets with Short Input
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-handwritten.svg" alt="Handwritten: Dry Run: fgets with Short Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-handwritten.svg" alt="Handwritten: Dry Run: fgets with Short Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-diagram.svg" alt="Diagram: Dry Run: fgets with Short Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-diagram.svg" alt="Diagram: Dry Run: fgets with Short Input" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-sticky.svg" alt="Sticky Note: Dry Run: fgets with Short Input" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/dry-run-fgets-with-short-input-sticky.svg" alt="Sticky Note: Dry Run: fgets with Short Input" width="30%">
 </a>
 
 
@@ -887,14 +887,14 @@ Input: `"Hi\n"` (3 chars), buffer size = 10
 
 ### Edge Cases in String I/O
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-handwritten.svg" alt="Handwritten: Edge Cases in String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-handwritten.svg" alt="Handwritten: Edge Cases in String I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-diagram.svg" alt="Diagram: Edge Cases in String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-diagram.svg" alt="Diagram: Edge Cases in String I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-sticky.svg" alt="Sticky Note: Edge Cases in String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/edge-cases-in-string-i-o-sticky.svg" alt="Sticky Note: Edge Cases in String I/O" width="30%">
 </a>
 
 
@@ -928,14 +928,14 @@ scanf("%s", name);   /* user types "John Smith" */
 
 ### gets vs fgets vs scanf: Comparison
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-handwritten.svg" alt="Handwritten: gets vs fgets vs scanf: Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-handwritten.svg" alt="Handwritten: gets vs fgets vs scanf: Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-diagram.svg" alt="Diagram: gets vs fgets vs scanf: Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-diagram.svg" alt="Diagram: gets vs fgets vs scanf: Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-sticky.svg" alt="Sticky Note: gets vs fgets vs scanf: Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/gets-vs-fgets-vs-scanf-comparison-sticky.svg" alt="Sticky Note: gets vs fgets vs scanf: Comparison" width="30%">
 </a>
 
 
@@ -952,14 +952,14 @@ scanf("%s", name);   /* user types "John Smith" */
 
 ### Complexity Analysis for String I/O
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-handwritten.svg" alt="Handwritten: Complexity Analysis for String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-handwritten.svg" alt="Handwritten: Complexity Analysis for String I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-diagram.svg" alt="Diagram: Complexity Analysis for String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-diagram.svg" alt="Diagram: Complexity Analysis for String I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-sticky.svg" alt="Sticky Note: Complexity Analysis for String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/complexity-analysis-for-string-i-o-sticky.svg" alt="Sticky Note: Complexity Analysis for String I/O" width="30%">
 </a>
 
 
@@ -973,14 +973,14 @@ scanf("%s", name);   /* user types "John Smith" */
 
 ### Advantages and Disadvantages of Each Input Method
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of Each Input Method" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of Each Input Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-diagram.svg" alt="Diagram: Advantages and Disadvantages of Each Input Method" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-diagram.svg" alt="Diagram: Advantages and Disadvantages of Each Input Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of Each Input Method" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/advantages-and-disadvantages-of-each-input-method-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of Each Input Method" width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ scanf("%s", name);   /* user types "John Smith" */
 
 ### Best Practices for String I/O
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-handwritten.svg" alt="Handwritten: Best Practices for String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-handwritten.svg" alt="Handwritten: Best Practices for String I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-diagram.svg" alt="Diagram: Best Practices for String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-diagram.svg" alt="Diagram: Best Practices for String I/O" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-sticky.svg" alt="Sticky Note: Best Practices for String I/O" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/best-practices-for-string-i-o-sticky.svg" alt="Sticky Note: Best Practices for String I/O" width="30%">
 </a>
 
 
@@ -1017,14 +1017,14 @@ The C standard library provides a rich set of functions for string manipulation,
 
 ### 7.5.1 `strlen` - String Length
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-handwritten.svg" alt="Handwritten: 7.5.1 `strlen` - String Length" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-handwritten.svg" alt="Handwritten: 7.5.1 `strlen` - String Length" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-diagram.svg" alt="Diagram: 7.5.1 `strlen` - String Length" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-diagram.svg" alt="Diagram: 7.5.1 `strlen` - String Length" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-sticky.svg" alt="Sticky Note: 7.5.1 `strlen` - String Length" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-1-strlen-string-length-sticky.svg" alt="Sticky Note: 7.5.1 `strlen` - String Length" width="30%">
 </a>
 
 
@@ -1107,14 +1107,14 @@ strlen("Hello, World!" ) = 13
 
 ### 7.5.2 `strcpy` - String Copy
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-handwritten.svg" alt="Handwritten: 7.5.2 `strcpy` - String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-handwritten.svg" alt="Handwritten: 7.5.2 `strcpy` - String Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-diagram.svg" alt="Diagram: 7.5.2 `strcpy` - String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-diagram.svg" alt="Diagram: 7.5.2 `strcpy` - String Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-sticky.svg" alt="Sticky Note: 7.5.2 `strcpy` - String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-2-strcpy-string-copy-sticky.svg" alt="Sticky Note: 7.5.2 `strcpy` - String Copy" width="30%">
 </a>
 
 
@@ -1207,14 +1207,14 @@ After copy: `dest = {'H','e','l','l','o','\0', ...}`. The remaining bytes of `de
 
 ### 7.5.3 `strncpy` - Bounded String Copy
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-handwritten.svg" alt="Handwritten: 7.5.3 `strncpy` - Bounded String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-handwritten.svg" alt="Handwritten: 7.5.3 `strncpy` - Bounded String Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-diagram.svg" alt="Diagram: 7.5.3 `strncpy` - Bounded String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-diagram.svg" alt="Diagram: 7.5.3 `strncpy` - Bounded String Copy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-sticky.svg" alt="Sticky Note: 7.5.3 `strncpy` - Bounded String Copy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-3-strncpy-bounded-string-copy-sticky.svg" alt="Sticky Note: 7.5.3 `strncpy` - Bounded String Copy" width="30%">
 </a>
 
 
@@ -1317,14 +1317,14 @@ After copy: `dest = {'H','i','\0','\0','\0','\0'}` - null-padded.
 
 ### 7.5.4 `strcat` - String Concatenation
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-handwritten.svg" alt="Handwritten: 7.5.4 `strcat` - String Concatenation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-handwritten.svg" alt="Handwritten: 7.5.4 `strcat` - String Concatenation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-diagram.svg" alt="Diagram: 7.5.4 `strcat` - String Concatenation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-diagram.svg" alt="Diagram: 7.5.4 `strcat` - String Concatenation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-sticky.svg" alt="Sticky Note: 7.5.4 `strcat` - String Concatenation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-4-strcat-string-concatenation-sticky.svg" alt="Sticky Note: 7.5.4 `strcat` - String Concatenation" width="30%">
 </a>
 
 
@@ -1426,14 +1426,14 @@ if (strlen(buf) + strlen(", world!") + 1 <= sizeof(buf)) {
 
 ### 7.5.5 `strncat` - Bounded String Concatenation
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-handwritten.svg" alt="Handwritten: 7.5.5 `strncat` - Bounded String Concatenation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-handwritten.svg" alt="Handwritten: 7.5.5 `strncat` - Bounded String Concatenation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-diagram.svg" alt="Diagram: 7.5.5 `strncat` - Bounded String Concatenation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-diagram.svg" alt="Diagram: 7.5.5 `strncat` - Bounded String Concatenation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-sticky.svg" alt="Sticky Note: 7.5.5 `strncat` - Bounded String Concatenation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-5-strncat-bounded-string-concatenation-sticky.svg" alt="Sticky Note: 7.5.5 `strncat` - Bounded String Concatenation" width="30%">
 </a>
 
 
@@ -1502,14 +1502,14 @@ Final: `dest = "ABCD\0..."` - always null-terminated.
 
 ### 7.5.6 `strcmp` - String Comparison
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-handwritten.svg" alt="Handwritten: 7.5.6 `strcmp` - String Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-handwritten.svg" alt="Handwritten: 7.5.6 `strcmp` - String Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-diagram.svg" alt="Diagram: 7.5.6 `strcmp` - String Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-diagram.svg" alt="Diagram: 7.5.6 `strcmp` - String Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-sticky.svg" alt="Sticky Note: 7.5.6 `strcmp` - String Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-6-strcmp-string-comparison-sticky.svg" alt="Sticky Note: 7.5.6 `strcmp` - String Comparison" width="30%">
 </a>
 
 
@@ -1631,14 +1631,14 @@ Result: returns **-97**. "cat" < "catalog" because it is a prefix (shorter = sma
 
 ### 7.5.7 `strncmp` - Bounded String Comparison
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-handwritten.svg" alt="Handwritten: 7.5.7 `strncmp` - Bounded String Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-handwritten.svg" alt="Handwritten: 7.5.7 `strncmp` - Bounded String Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-diagram.svg" alt="Diagram: 7.5.7 `strncmp` - Bounded String Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-diagram.svg" alt="Diagram: 7.5.7 `strncmp` - Bounded String Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-sticky.svg" alt="Sticky Note: 7.5.7 `strncmp` - Bounded String Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-7-strncmp-bounded-string-comparison-sticky.svg" alt="Sticky Note: 7.5.7 `strncmp` - Bounded String Comparison" width="30%">
 </a>
 
 
@@ -1707,14 +1707,14 @@ Result: returns **-20**. Even though only 4 chars were compared, the 4th char di
 
 ### 7.5.8 `strchr` - Find First Character
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-handwritten.svg" alt="Handwritten: 7.5.8 `strchr` - Find First Character" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-handwritten.svg" alt="Handwritten: 7.5.8 `strchr` - Find First Character" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-diagram.svg" alt="Diagram: 7.5.8 `strchr` - Find First Character" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-diagram.svg" alt="Diagram: 7.5.8 `strchr` - Find First Character" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-sticky.svg" alt="Sticky Note: 7.5.8 `strchr` - Find First Character" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-8-strchr-find-first-character-sticky.svg" alt="Sticky Note: 7.5.8 `strchr` - Find First Character" width="30%">
 </a>
 
 
@@ -1812,14 +1812,14 @@ Result: Returns pointer to `s[2]` (the first `'l'`).
 
 ### 7.5.9 `strrchr` - Find Last Character
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-handwritten.svg" alt="Handwritten: 7.5.9 `strrchr` - Find Last Character" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-handwritten.svg" alt="Handwritten: 7.5.9 `strrchr` - Find Last Character" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-diagram.svg" alt="Diagram: 7.5.9 `strrchr` - Find Last Character" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-diagram.svg" alt="Diagram: 7.5.9 `strrchr` - Find Last Character" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-sticky.svg" alt="Sticky Note: 7.5.9 `strrchr` - Find Last Character" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-9-strrchr-find-last-character-sticky.svg" alt="Sticky Note: 7.5.9 `strrchr` - Find Last Character" width="30%">
 </a>
 
 
@@ -1903,14 +1903,14 @@ Result: Returns pointer to `s[3]` (the second/last `'l'`).
 
 ### 7.5.10 `strstr` - Find Substring
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-handwritten.svg" alt="Handwritten: 7.5.10 `strstr` - Find Substring" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-handwritten.svg" alt="Handwritten: 7.5.10 `strstr` - Find Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-diagram.svg" alt="Diagram: 7.5.10 `strstr` - Find Substring" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-diagram.svg" alt="Diagram: 7.5.10 `strstr` - Find Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-sticky.svg" alt="Sticky Note: 7.5.10 `strstr` - Find Substring" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-10-strstr-find-substring-sticky.svg" alt="Sticky Note: 7.5.10 `strstr` - Find Substring" width="30%">
 </a>
 
 
@@ -2007,14 +2007,14 @@ Result: Returns `&haystack[2]` - pointer to "cde".
 
 ### 7.5.11 `strtok` - String Tokenization
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-handwritten.svg" alt="Handwritten: 7.5.11 `strtok` - String Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-handwritten.svg" alt="Handwritten: 7.5.11 `strtok` - String Tokenization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-diagram.svg" alt="Diagram: 7.5.11 `strtok` - String Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-diagram.svg" alt="Diagram: 7.5.11 `strtok` - String Tokenization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-sticky.svg" alt="Sticky Note: 7.5.11 `strtok` - String Tokenization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-11-strtok-string-tokenization-sticky.svg" alt="Sticky Note: 7.5.11 `strtok` - String Tokenization" width="30%">
 </a>
 
 
@@ -2147,14 +2147,14 @@ while (token) {
 
 ### 7.5.12 `sprintf` - String Formatting
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-handwritten.svg" alt="Handwritten: 7.5.12 `sprintf` - String Formatting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-handwritten.svg" alt="Handwritten: 7.5.12 `sprintf` - String Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-diagram.svg" alt="Diagram: 7.5.12 `sprintf` - String Formatting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-diagram.svg" alt="Diagram: 7.5.12 `sprintf` - String Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-sticky.svg" alt="Sticky Note: 7.5.12 `sprintf` - String Formatting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-12-sprintf-string-formatting-sticky.svg" alt="Sticky Note: 7.5.12 `sprintf` - String Formatting" width="30%">
 </a>
 
 
@@ -2209,14 +2209,14 @@ Buffer size: 100
 
 ### 7.5.13 `snprintf` - Safe String Formatting
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-handwritten.svg" alt="Handwritten: 7.5.13 `snprintf` - Safe String Formatting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-handwritten.svg" alt="Handwritten: 7.5.13 `snprintf` - Safe String Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-diagram.svg" alt="Diagram: 7.5.13 `snprintf` - Safe String Formatting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-diagram.svg" alt="Diagram: 7.5.13 `snprintf` - Safe String Formatting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-sticky.svg" alt="Sticky Note: 7.5.13 `snprintf` - Safe String Formatting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-13-snprintf-safe-string-formatting-sticky.svg" alt="Sticky Note: 7.5.13 `snprintf` - Safe String Formatting" width="30%">
 </a>
 
 
@@ -2292,14 +2292,14 @@ snprintf(buf, sizeof(buf), "%s=%s&%s=%d", key1, val1, key2, val2);
 
 ### 7.5.14 `sscanf` - String Parsing
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-handwritten.svg" alt="Handwritten: 7.5.14 `sscanf` - String Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-handwritten.svg" alt="Handwritten: 7.5.14 `sscanf` - String Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-diagram.svg" alt="Diagram: 7.5.14 `sscanf` - String Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-diagram.svg" alt="Diagram: 7.5.14 `sscanf` - String Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-sticky.svg" alt="Sticky Note: 7.5.14 `sscanf` - String Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-5-14-sscanf-string-parsing-sticky.svg" alt="Sticky Note: 7.5.14 `sscanf` - String Parsing" width="30%">
 </a>
 
 
@@ -2395,14 +2395,14 @@ C provides several functions to convert string representations of numbers to the
 
 ### 7.6.1 `atoi` - String to Integer
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-handwritten.svg" alt="Handwritten: 7.6.1 `atoi` - String to Integer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-handwritten.svg" alt="Handwritten: 7.6.1 `atoi` - String to Integer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-diagram.svg" alt="Diagram: 7.6.1 `atoi` - String to Integer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-diagram.svg" alt="Diagram: 7.6.1 `atoi` - String to Integer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-sticky.svg" alt="Sticky Note: 7.6.1 `atoi` - String to Integer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-1-atoi-string-to-integer-sticky.svg" alt="Sticky Note: 7.6.1 `atoi` - String to Integer" width="30%">
 </a>
 
 
@@ -2501,14 +2501,14 @@ Return: 42 * (-1) = -42
 
 ### 7.6.2 `atol` - String to Long
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-handwritten.svg" alt="Handwritten: 7.6.2 `atol` - String to Long" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-handwritten.svg" alt="Handwritten: 7.6.2 `atol` - String to Long" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-diagram.svg" alt="Diagram: 7.6.2 `atol` - String to Long" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-diagram.svg" alt="Diagram: 7.6.2 `atol` - String to Long" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-sticky.svg" alt="Sticky Note: 7.6.2 `atol` - String to Long" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-2-atol-string-to-long-sticky.svg" alt="Sticky Note: 7.6.2 `atol` - String to Long" width="30%">
 </a>
 
 
@@ -2520,14 +2520,14 @@ long val = atol("1234567890");
 
 ### 7.6.3 `atof` - String to Double
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-handwritten.svg" alt="Handwritten: 7.6.3 `atof` - String to Double" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-handwritten.svg" alt="Handwritten: 7.6.3 `atof` - String to Double" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-diagram.svg" alt="Diagram: 7.6.3 `atof` - String to Double" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-diagram.svg" alt="Diagram: 7.6.3 `atof` - String to Double" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-sticky.svg" alt="Sticky Note: 7.6.3 `atof` - String to Double" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-3-atof-string-to-double-sticky.svg" alt="Sticky Note: 7.6.3 `atof` - String to Double" width="30%">
 </a>
 
 
@@ -2558,14 +2558,14 @@ atof("abc"):        0.0
 
 ### 7.6.4 `strtol` - String to Long (with Error Detection)
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-handwritten.svg" alt="Handwritten: 7.6.4 `strtol` - String to Long (with Error Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-handwritten.svg" alt="Handwritten: 7.6.4 `strtol` - String to Long (with Error Detection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-diagram.svg" alt="Diagram: 7.6.4 `strtol` - String to Long (with Error Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-diagram.svg" alt="Diagram: 7.6.4 `strtol` - String to Long (with Error Detection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-sticky.svg" alt="Sticky Note: 7.6.4 `strtol` - String to Long (with Error Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-4-strtol-string-to-long-with-error-detection-sticky.svg" alt="Sticky Note: 7.6.4 `strtol` - String to Long (with Error Detection)" width="30%">
 </a>
 
 
@@ -2699,14 +2699,14 @@ Auto   "123":         123 (auto, defaults to decimal)
 
 ### 7.6.5 `strtod` - String to Double (with Error Detection)
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-handwritten.svg" alt="Handwritten: 7.6.5 `strtod` - String to Double (with Error Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-handwritten.svg" alt="Handwritten: 7.6.5 `strtod` - String to Double (with Error Detection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-diagram.svg" alt="Diagram: 7.6.5 `strtod` - String to Double (with Error Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-diagram.svg" alt="Diagram: 7.6.5 `strtod` - String to Double (with Error Detection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-sticky.svg" alt="Sticky Note: 7.6.5 `strtod` - String to Double (with Error Detection)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-6-5-strtod-string-to-double-with-error-detection-sticky.svg" alt="Sticky Note: 7.6.5 `strtod` - String to Double (with Error Detection)" width="30%">
 </a>
 
 
@@ -2752,14 +2752,14 @@ strtod("abc"): NO CONVERSION
 
 ### Comparison: atoi vs strtol vs sscanf
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" alt="Handwritten: Comparison: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-handwritten.svg" alt="Handwritten: Comparison: atoi vs strtol vs sscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" alt="Diagram: Comparison: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-diagram.svg" alt="Diagram: Comparison: atoi vs strtol vs sscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" alt="Sticky Note: Comparison: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/comparison-atoi-vs-strtol-vs-sscanf-sticky.svg" alt="Sticky Note: Comparison: atoi vs strtol vs sscanf" width="30%">
 </a>
 
 
@@ -2781,14 +2781,14 @@ In C, an "array of strings" is typically implemented as an array of `char *` poi
 
 ### 7.7.1 Array of Character Pointers
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-handwritten.svg" alt="Handwritten: 7.7.1 Array of Character Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-handwritten.svg" alt="Handwritten: 7.7.1 Array of Character Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-diagram.svg" alt="Diagram: 7.7.1 Array of Character Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-diagram.svg" alt="Diagram: 7.7.1 Array of Character Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-sticky.svg" alt="Sticky Note: 7.7.1 Array of Character Pointers" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-1-array-of-character-pointers-sticky.svg" alt="Sticky Note: 7.7.1 Array of Character Pointers" width="30%">
 </a>
 
 
@@ -2868,14 +2868,14 @@ Memory (stack):
 
 ### 7.7.2 2D Char Array (Fixed Buffer per String)
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-handwritten.svg" alt="Handwritten: 7.7.2 2D Char Array (Fixed Buffer per String)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-handwritten.svg" alt="Handwritten: 7.7.2 2D Char Array (Fixed Buffer per String)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-diagram.svg" alt="Diagram: 7.7.2 2D Char Array (Fixed Buffer per String)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-diagram.svg" alt="Diagram: 7.7.2 2D Char Array (Fixed Buffer per String)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-sticky.svg" alt="Sticky Note: 7.7.2 2D Char Array (Fixed Buffer per String)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-2-2d-char-array-fixed-buffer-per-string-sticky.svg" alt="Sticky Note: 7.7.2 2D Char Array (Fixed Buffer per String)" width="30%">
 </a>
 
 
@@ -2940,14 +2940,14 @@ Address      Content
 
 ### 7.7.3 Dynamic Array of Strings
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-handwritten.svg" alt="Handwritten: 7.7.3 Dynamic Array of Strings" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-handwritten.svg" alt="Handwritten: 7.7.3 Dynamic Array of Strings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-diagram.svg" alt="Diagram: 7.7.3 Dynamic Array of Strings" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-diagram.svg" alt="Diagram: 7.7.3 Dynamic Array of Strings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-sticky.svg" alt="Sticky Note: 7.7.3 Dynamic Array of Strings" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-7-3-dynamic-array-of-strings-sticky.svg" alt="Sticky Note: 7.7.3 Dynamic Array of Strings" width="30%">
 </a>
 
 
@@ -3007,14 +3007,14 @@ Dynamic string array (3 items):
 
 ### Comparison: Array of Strings Approaches
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-handwritten.svg" alt="Handwritten: Comparison: Array of Strings Approaches" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-handwritten.svg" alt="Handwritten: Comparison: Array of Strings Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-diagram.svg" alt="Diagram: Comparison: Array of Strings Approaches" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-diagram.svg" alt="Diagram: Comparison: Array of Strings Approaches" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-sticky.svg" alt="Sticky Note: Comparison: Array of Strings Approaches" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/comparison-array-of-strings-approaches-sticky.svg" alt="Sticky Note: Comparison: Array of Strings Approaches" width="30%">
 </a>
 
 
@@ -3031,14 +3031,14 @@ Dynamic string array (3 items):
 
 ### 7.8.1 String Input: gets vs fgets vs scanf
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-handwritten.svg" alt="Handwritten: 7.8.1 String Input: gets vs fgets vs scanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-handwritten.svg" alt="Handwritten: 7.8.1 String Input: gets vs fgets vs scanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-diagram.svg" alt="Diagram: 7.8.1 String Input: gets vs fgets vs scanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-diagram.svg" alt="Diagram: 7.8.1 String Input: gets vs fgets vs scanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-sticky.svg" alt="Sticky Note: 7.8.1 String Input: gets vs fgets vs scanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-1-string-input-gets-vs-fgets-vs-scanf-sticky.svg" alt="Sticky Note: 7.8.1 String Input: gets vs fgets vs scanf" width="30%">
 </a>
 
 
@@ -3070,14 +3070,14 @@ scanf("%9s", buf);  /* read at most 9 chars + null terminator */
 
 ### 7.8.2 String Copy: strcpy vs strncpy vs snprintf
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-handwritten.svg" alt="Handwritten: 7.8.2 String Copy: strcpy vs strncpy vs snprintf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-handwritten.svg" alt="Handwritten: 7.8.2 String Copy: strcpy vs strncpy vs snprintf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-diagram.svg" alt="Diagram: 7.8.2 String Copy: strcpy vs strncpy vs snprintf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-diagram.svg" alt="Diagram: 7.8.2 String Copy: strcpy vs strncpy vs snprintf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-sticky.svg" alt="Sticky Note: 7.8.2 String Copy: strcpy vs strncpy vs snprintf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-2-string-copy-strcpy-vs-strncpy-vs-snprintf-sticky.svg" alt="Sticky Note: 7.8.2 String Copy: strcpy vs strncpy vs snprintf" width="30%">
 </a>
 
 
@@ -3109,14 +3109,14 @@ snprintf(dst, sizeof(dst), "%s", src);
 
 ### 7.8.3 String to Number: atoi vs strtol vs sscanf
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-handwritten.svg" alt="Handwritten: 7.8.3 String to Number: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-handwritten.svg" alt="Handwritten: 7.8.3 String to Number: atoi vs strtol vs sscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-diagram.svg" alt="Diagram: 7.8.3 String to Number: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-diagram.svg" alt="Diagram: 7.8.3 String to Number: atoi vs strtol vs sscanf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-sticky.svg" alt="Sticky Note: 7.8.3 String to Number: atoi vs strtol vs sscanf" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-3-string-to-number-atoi-vs-strtol-vs-sscanf-sticky.svg" alt="Sticky Note: 7.8.3 String to Number: atoi vs strtol vs sscanf" width="30%">
 </a>
 
 
@@ -3124,14 +3124,14 @@ snprintf(dst, sizeof(dst), "%s", src);
 
 ### 7.8.4 String Literal vs Char Array
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-handwritten.svg" alt="Handwritten: 7.8.4 String Literal vs Char Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-handwritten.svg" alt="Handwritten: 7.8.4 String Literal vs Char Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-diagram.svg" alt="Diagram: 7.8.4 String Literal vs Char Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-diagram.svg" alt="Diagram: 7.8.4 String Literal vs Char Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-sticky.svg" alt="Sticky Note: 7.8.4 String Literal vs Char Array" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-8-4-string-literal-vs-char-array-sticky.svg" alt="Sticky Note: 7.8.4 String Literal vs Char Array" width="30%">
 </a>
 
 
@@ -3177,14 +3177,14 @@ Stack (for char a[]):
 
 ### Q1: What is the difference between `char *s` and `char s[]`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-handwritten.svg" alt="Handwritten: What is the difference between `char *s` and `char s[]`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-handwritten.svg" alt="Handwritten: What is the difference between `char *s` and `char s[]`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-diagram.svg" alt="Diagram: What is the difference between `char *s` and `char s[]`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-diagram.svg" alt="Diagram: What is the difference between `char *s` and `char s[]`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-sticky.svg" alt="Sticky Note: What is the difference between `char *s` and `char s[]`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-s-and-char-s-sticky.svg" alt="Sticky Note: What is the difference between `char *s` and `char s[]`?" width="30%">
 </a>
 
 
@@ -3192,14 +3192,14 @@ Stack (for char a[]):
 
 ### Q2: Why is `gets` dangerous?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-handwritten.svg" alt="Handwritten: Why is `gets` dangerous?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-handwritten.svg" alt="Handwritten: Why is `gets` dangerous?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-diagram.svg" alt="Diagram: Why is `gets` dangerous?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-diagram.svg" alt="Diagram: Why is `gets` dangerous?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-sticky.svg" alt="Sticky Note: Why is `gets` dangerous?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-is-gets-dangerous-sticky.svg" alt="Sticky Note: Why is `gets` dangerous?" width="30%">
 </a>
 
 
@@ -3207,14 +3207,14 @@ Stack (for char a[]):
 
 ### Q3: What is the N+1 problem (not SQL — string-related)?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-handwritten.svg" alt="Handwritten: What is the N+1 problem (not SQL — string-related)?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-handwritten.svg" alt="Handwritten: What is the N+1 problem (not SQL — string-related)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-diagram.svg" alt="Diagram: What is the N+1 problem (not SQL — string-related)?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-diagram.svg" alt="Diagram: What is the N+1 problem (not SQL — string-related)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-sticky.svg" alt="Sticky Note: What is the N+1 problem (not SQL — string-related)?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-n-1-problem-not-sql-string-related-sticky.svg" alt="Sticky Note: What is the N+1 problem (not SQL — string-related)?" width="30%">
 </a>
 
 
@@ -3222,14 +3222,14 @@ Stack (for char a[]):
 
 ### Q4: How would you implement `strlen` without using library functions?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-handwritten.svg" alt="Handwritten: How would you implement `strlen` without using library functions?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-handwritten.svg" alt="Handwritten: How would you implement `strlen` without using library functions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-diagram.svg" alt="Diagram: How would you implement `strlen` without using library functions?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-diagram.svg" alt="Diagram: How would you implement `strlen` without using library functions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-sticky.svg" alt="Sticky Note: How would you implement `strlen` without using library functions?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-would-you-implement-strlen-without-using-library-functions-sticky.svg" alt="Sticky Note: How would you implement `strlen` without using library functions?" width="30%">
 </a>
 
 
@@ -3251,14 +3251,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q5: What happens if you pass NULL to `strlen`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-handwritten.svg" alt="Handwritten: What happens if you pass NULL to `strlen`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-handwritten.svg" alt="Handwritten: What happens if you pass NULL to `strlen`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-diagram.svg" alt="Diagram: What happens if you pass NULL to `strlen`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-diagram.svg" alt="Diagram: What happens if you pass NULL to `strlen`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-sticky.svg" alt="Sticky Note: What happens if you pass NULL to `strlen`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-happens-if-you-pass-null-to-strlen-sticky.svg" alt="Sticky Note: What happens if you pass NULL to `strlen`?" width="30%">
 </a>
 
 
@@ -3266,14 +3266,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q6: How does `strtok` work internally? What are its limitations?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-handwritten.svg" alt="Handwritten: How does `strtok` work internally? What are its limitations?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-handwritten.svg" alt="Handwritten: How does `strtok` work internally? What are its limitations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-diagram.svg" alt="Diagram: How does `strtok` work internally? What are its limitations?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-diagram.svg" alt="Diagram: How does `strtok` work internally? What are its limitations?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-sticky.svg" alt="Sticky Note: How does `strtok` work internally? What are its limitations?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-does-strtok-work-internally-what-are-its-limitations-sticky.svg" alt="Sticky Note: How does `strtok` work internally? What are its limitations?" width="30%">
 </a>
 
 
@@ -3281,14 +3281,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q7: What is the difference between `strcmp` and `strncmp`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-handwritten.svg" alt="Handwritten: What is the difference between `strcmp` and `strncmp`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-handwritten.svg" alt="Handwritten: What is the difference between `strcmp` and `strncmp`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-diagram.svg" alt="Diagram: What is the difference between `strcmp` and `strncmp`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-diagram.svg" alt="Diagram: What is the difference between `strcmp` and `strncmp`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-sticky.svg" alt="Sticky Note: What is the difference between `strcmp` and `strncmp`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-strcmp-and-strncmp-sticky.svg" alt="Sticky Note: What is the difference between `strcmp` and `strncmp`?" width="30%">
 </a>
 
 
@@ -3296,14 +3296,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q8: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-handwritten.svg" alt="Handwritten: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-handwritten.svg" alt="Handwritten: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-diagram.svg" alt="Diagram: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-diagram.svg" alt="Diagram: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-sticky.svg" alt="Sticky Note: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/why-would-snprintf-dest-n-s-src-be-preferred-over-strcpy-sticky.svg" alt="Sticky Note: Why would `snprintf(dest, n, "%s", src)` be preferred over `strcpy`?" width="30%">
 </a>
 
 
@@ -3311,14 +3311,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q9: What is the output of `printf("%s", "hello" + 2)`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-handwritten.svg" alt="Handwritten: What is the output of `printf("%s", "hello" + 2)`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-handwritten.svg" alt="Handwritten: What is the output of `printf("%s", "hello" + 2)`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-diagram.svg" alt="Diagram: What is the output of `printf("%s", "hello" + 2)`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-diagram.svg" alt="Diagram: What is the output of `printf("%s", "hello" + 2)`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-sticky.svg" alt="Sticky Note: What is the output of `printf("%s", "hello" + 2)`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-output-of-printf-s-hello-2-sticky.svg" alt="Sticky Note: What is the output of `printf("%s", "hello" + 2)`?" width="30%">
 </a>
 
 
@@ -3326,14 +3326,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q10: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-handwritten.svg" alt="Handwritten: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-handwritten.svg" alt="Handwritten: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-diagram.svg" alt="Diagram: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-diagram.svg" alt="Diagram: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-sticky.svg" alt="Sticky Note: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-does-sscanf-42-d-x-differ-from-atoi-42-sticky.svg" alt="Sticky Note: How does `sscanf("42", "%d", &x)` differ from `atoi("42")`?" width="30%">
 </a>
 
 
@@ -3341,14 +3341,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q11: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-handwritten.svg" alt="Handwritten: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-handwritten.svg" alt="Handwritten: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-diagram.svg" alt="Diagram: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-diagram.svg" alt="Diagram: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-sticky.svg" alt="Sticky Note: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-is-the-difference-between-char-a-10-hello-and-char-a-10-a-hello-sticky.svg" alt="Sticky Note: What is the difference between `char a[10] = "hello"` and `char a[10]; a = "hello"`?" width="30%">
 </a>
 
 
@@ -3356,14 +3356,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q12: Can you use `strlen` to determine if a string was truncated after `strncpy`?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-handwritten.svg" alt="Handwritten: Can you use `strlen` to determine if a string was truncated after `strncpy`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-handwritten.svg" alt="Handwritten: Can you use `strlen` to determine if a string was truncated after `strncpy`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-diagram.svg" alt="Diagram: Can you use `strlen` to determine if a string was truncated after `strncpy`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-diagram.svg" alt="Diagram: Can you use `strlen` to determine if a string was truncated after `strncpy`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-sticky.svg" alt="Sticky Note: Can you use `strlen` to determine if a string was truncated after `strncpy`?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/can-you-use-strlen-to-determine-if-a-string-was-truncated-after-strncpy-sticky.svg" alt="Sticky Note: Can you use `strlen` to determine if a string was truncated after `strncpy`?" width="30%">
 </a>
 
 
@@ -3371,14 +3371,14 @@ size_t my_strlen_fast(const char *s) {
 
 ### Q13: How do you safely concatenate strings in C?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-handwritten.svg" alt="Handwritten: How do you safely concatenate strings in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-handwritten.svg" alt="Handwritten: How do you safely concatenate strings in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-diagram.svg" alt="Diagram: How do you safely concatenate strings in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-diagram.svg" alt="Diagram: How do you safely concatenate strings in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-sticky.svg" alt="Sticky Note: How do you safely concatenate strings in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/how-do-you-safely-concatenate-strings-in-c-sticky.svg" alt="Sticky Note: How do you safely concatenate strings in C?" width="30%">
 </a>
 
 
@@ -3395,14 +3395,14 @@ snprintf(dest + len, dest_size - len, "%s", src);
 
 ### Q14: What does `sizeof("hello")` evaluate to?
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-handwritten.svg" alt="Handwritten: What does `sizeof("hello")` evaluate to?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-handwritten.svg" alt="Handwritten: What does `sizeof("hello")` evaluate to?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-diagram.svg" alt="Diagram: What does `sizeof("hello")` evaluate to?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-diagram.svg" alt="Diagram: What does `sizeof("hello")` evaluate to?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-sticky.svg" alt="Sticky Note: What does `sizeof("hello")` evaluate to?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/what-does-sizeof-hello-evaluate-to-sticky.svg" alt="Sticky Note: What does `sizeof("hello")` evaluate to?" width="30%">
 </a>
 
 
@@ -3410,14 +3410,14 @@ snprintf(dest + len, dest_size - len, "%s", src);
 
 ### Q15: Implement a function that reverses a string in place.
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-handwritten.svg" alt="Handwritten: Implement a function that reverses a string in place." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-handwritten.svg" alt="Handwritten: Implement a function that reverses a string in place." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-diagram.svg" alt="Diagram: Implement a function that reverses a string in place." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-diagram.svg" alt="Diagram: Implement a function that reverses a string in place." width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-sticky.svg" alt="Sticky Note: Implement a function that reverses a string in place." width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/implement-a-function-that-reverses-a-string-in-place-sticky.svg" alt="Sticky Note: Implement a function that reverses a string in place." width="30%">
 </a>
 
 
@@ -3459,14 +3459,14 @@ int main(void) {
 
 ### 7.10.1 String Parsing in Network Protocols
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-handwritten.svg" alt="Handwritten: 7.10.1 String Parsing in Network Protocols" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-handwritten.svg" alt="Handwritten: 7.10.1 String Parsing in Network Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-diagram.svg" alt="Diagram: 7.10.1 String Parsing in Network Protocols" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-diagram.svg" alt="Diagram: 7.10.1 String Parsing in Network Protocols" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-sticky.svg" alt="Sticky Note: 7.10.1 String Parsing in Network Protocols" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-1-string-parsing-in-network-protocols-sticky.svg" alt="Sticky Note: 7.10.1 String Parsing in Network Protocols" width="30%">
 </a>
 
 
@@ -3527,14 +3527,14 @@ Version: HTTP/1.1
 
 ### 7.10.2 URL Query String Parsing
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-handwritten.svg" alt="Handwritten: 7.10.2 URL Query String Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-handwritten.svg" alt="Handwritten: 7.10.2 URL Query String Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-diagram.svg" alt="Diagram: 7.10.2 URL Query String Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-diagram.svg" alt="Diagram: 7.10.2 URL Query String Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-sticky.svg" alt="Sticky Note: 7.10.2 URL Query String Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-2-url-query-string-parsing-sticky.svg" alt="Sticky Note: 7.10.2 URL Query String Parsing" width="30%">
 </a>
 
 
@@ -3597,14 +3597,14 @@ Query parameters:
 
 ### 7.10.3 CSV File Parsing
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-handwritten.svg" alt="Handwritten: 7.10.3 CSV File Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-handwritten.svg" alt="Handwritten: 7.10.3 CSV File Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-diagram.svg" alt="Diagram: 7.10.3 CSV File Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-diagram.svg" alt="Diagram: 7.10.3 CSV File Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-sticky.svg" alt="Sticky Note: 7.10.3 CSV File Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-3-csv-file-parsing-sticky.svg" alt="Sticky Note: 7.10.3 CSV File Parsing" width="30%">
 </a>
 
 
@@ -3667,14 +3667,14 @@ Fields (5):
 
 ### 7.10.4 File Path Parsing (dirname/basename)
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-handwritten.svg" alt="Handwritten: 7.10.4 File Path Parsing (dirname/basename)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-handwritten.svg" alt="Handwritten: 7.10.4 File Path Parsing (dirname/basename)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-diagram.svg" alt="Diagram: 7.10.4 File Path Parsing (dirname/basename)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-diagram.svg" alt="Diagram: 7.10.4 File Path Parsing (dirname/basename)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-sticky.svg" alt="Sticky Note: 7.10.4 File Path Parsing (dirname/basename)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-4-file-path-parsing-dirname-basename-sticky.svg" alt="Sticky Note: 7.10.4 File Path Parsing (dirname/basename)" width="30%">
 </a>
 
 
@@ -3733,14 +3733,14 @@ Filename:  file.txt
 
 ### 7.10.5 String Trimming (whitespace removal)
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-handwritten.svg" alt="Handwritten: 7.10.5 String Trimming (whitespace removal)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-handwritten.svg" alt="Handwritten: 7.10.5 String Trimming (whitespace removal)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-diagram.svg" alt="Diagram: 7.10.5 String Trimming (whitespace removal)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-diagram.svg" alt="Diagram: 7.10.5 String Trimming (whitespace removal)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-sticky.svg" alt="Sticky Note: 7.10.5 String Trimming (whitespace removal)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/7-10-5-string-trimming-whitespace-removal-sticky.svg" alt="Sticky Note: 7.10.5 String Trimming (whitespace removal)" width="30%">
 </a>
 
 
@@ -3793,14 +3793,14 @@ CSV field trimmed: "John Doe"
 
 ### Summary
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/summary-diagram.svg" alt="Diagram: Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/summary-diagram.svg" alt="Diagram: Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
 </a>
 
 
@@ -3836,14 +3836,14 @@ CSV field trimmed: "John Doe"
 
 ### Common Pitfalls Checklist
 
-<a href="../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-handwritten.svg" alt="Handwritten: Common Pitfalls Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-handwritten.svg" alt="Handwritten: Common Pitfalls Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-diagram.svg" alt="Diagram: Common Pitfalls Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-diagram.svg" alt="Diagram: Common Pitfalls Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-sticky.svg" alt="Sticky Note: Common Pitfalls Checklist" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/07-strings/common-pitfalls-checklist-sticky.svg" alt="Sticky Note: Common Pitfalls Checklist" width="30%">
 </a>
 
 

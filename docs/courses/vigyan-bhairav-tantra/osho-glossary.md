@@ -84,14 +84,14 @@ mindmap
 
 ### १. अजपा जप (Ajapa Japa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-handwritten.svg" alt="Handwritten: १. अजपा जप (Ajapa Japa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-handwritten.svg" alt="Handwritten: १. अजपा जप (Ajapa Japa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-diagram.svg" alt="Diagram: १. अजपा जप (Ajapa Japa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-diagram.svg" alt="Diagram: १. अजपा जप (Ajapa Japa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-sticky.svg" alt="Sticky Note: १. अजपा जप (Ajapa Japa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ajapa-japa-sticky.svg" alt="Sticky Note: १. अजपा जप (Ajapa Japa)" width="30%">
 </a>
 
 
@@ -107,14 +107,14 @@ mindmap
 
 ### २. अणिमा (Anima)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-handwritten.svg" alt="Handwritten: २. अणिमा (Anima)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-handwritten.svg" alt="Handwritten: २. अणिमा (Anima)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-diagram.svg" alt="Diagram: २. अणिमा (Anima)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-diagram.svg" alt="Diagram: २. अणिमा (Anima)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-sticky.svg" alt="Sticky Note: २. अणिमा (Anima)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anima-sticky.svg" alt="Sticky Note: २. अणिमा (Anima)" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ mindmap
 
 ### ३. अद्वैत (Advaita)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-handwritten.svg" alt="Handwritten: ३. अद्वैत (Advaita)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-handwritten.svg" alt="Handwritten: ३. अद्वैत (Advaita)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-diagram.svg" alt="Diagram: ३. अद्वैत (Advaita)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-diagram.svg" alt="Diagram: ३. अद्वैत (Advaita)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-sticky.svg" alt="Sticky Note: ३. अद्वैत (Advaita)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/advaita-sticky.svg" alt="Sticky Note: ३. अद्वैत (Advaita)" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ mindmap
 
 ### ४. अनाहत नाद (Anahata Nada)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-handwritten.svg" alt="Handwritten: ४. अनाहत नाद (Anahata Nada)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-handwritten.svg" alt="Handwritten: ४. अनाहत नाद (Anahata Nada)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-diagram.svg" alt="Diagram: ४. अनाहत नाद (Anahata Nada)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-diagram.svg" alt="Diagram: ४. अनाहत नाद (Anahata Nada)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-sticky.svg" alt="Sticky Note: ४. अनाहत नाद (Anahata Nada)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anahata-nada-sticky.svg" alt="Sticky Note: ४. अनाहत नाद (Anahata Nada)" width="30%">
 </a>
 
 
@@ -176,14 +176,14 @@ mindmap
 
 ### ५. अपान (Apana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-handwritten.svg" alt="Handwritten: ५. अपान (Apana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-handwritten.svg" alt="Handwritten: ५. अपान (Apana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-diagram.svg" alt="Diagram: ५. अपान (Apana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-diagram.svg" alt="Diagram: ५. अपान (Apana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-sticky.svg" alt="Sticky Note: ५. अपान (Apana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/apana-sticky.svg" alt="Sticky Note: ५. अपान (Apana)" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ mindmap
 
 ### ६. अभ्यास (Abhyasa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-handwritten.svg" alt="Handwritten: ६. अभ्यास (Abhyasa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-handwritten.svg" alt="Handwritten: ६. अभ्यास (Abhyasa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-diagram.svg" alt="Diagram: ६. अभ्यास (Abhyasa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-diagram.svg" alt="Diagram: ६. अभ्यास (Abhyasa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-sticky.svg" alt="Sticky Note: ६. अभ्यास (Abhyasa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/abhyasa-sticky.svg" alt="Sticky Note: ६. अभ्यास (Abhyasa)" width="30%">
 </a>
 
 
@@ -222,14 +222,14 @@ mindmap
 
 ### ७. अहंकार (Ahankara)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-handwritten.svg" alt="Handwritten: ७. अहंकार (Ahankara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-handwritten.svg" alt="Handwritten: ७. अहंकार (Ahankara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-diagram.svg" alt="Diagram: ७. अहंकार (Ahankara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-diagram.svg" alt="Diagram: ७. अहंकार (Ahankara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-sticky.svg" alt="Sticky Note: ७. अहंकार (Ahankara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/ahankara-sticky.svg" alt="Sticky Note: ७. अहंकार (Ahankara)" width="30%">
 </a>
 
 
@@ -245,14 +245,14 @@ mindmap
 
 ### ८. आत्मा (Atma)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-handwritten.svg" alt="Handwritten: ८. आत्मा (Atma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-handwritten.svg" alt="Handwritten: ८. आत्मा (Atma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-diagram.svg" alt="Diagram: ८. आत्मा (Atma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-diagram.svg" alt="Diagram: ८. आत्मा (Atma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-sticky.svg" alt="Sticky Note: ८. आत्मा (Atma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/atma-sticky.svg" alt="Sticky Note: ८. आत्मा (Atma)" width="30%">
 </a>
 
 
@@ -268,14 +268,14 @@ mindmap
 
 ### ९. आणव उपाय (Anava Upaya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-handwritten.svg" alt="Handwritten: ९. आणव उपाय (Anava Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-handwritten.svg" alt="Handwritten: ९. आणव उपाय (Anava Upaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-diagram.svg" alt="Diagram: ९. आणव उपाय (Anava Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-diagram.svg" alt="Diagram: ९. आणव उपाय (Anava Upaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-sticky.svg" alt="Sticky Note: ९. आणव उपाय (Anava Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/anava-upaya-sticky.svg" alt="Sticky Note: ९. आणव उपाय (Anava Upaya)" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ mindmap
 
 ### १०. इच्छा (Iccha)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-handwritten.svg" alt="Handwritten: १०. इच्छा (Iccha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-handwritten.svg" alt="Handwritten: १०. इच्छा (Iccha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-diagram.svg" alt="Diagram: १०. इच्छा (Iccha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-diagram.svg" alt="Diagram: १०. इच्छा (Iccha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-sticky.svg" alt="Sticky Note: १०. इच्छा (Iccha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/iccha-sticky.svg" alt="Sticky Note: १०. इच्छा (Iccha)" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@ mindmap
 
 ### ११. उन्मनी (Unmani)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-handwritten.svg" alt="Handwritten: ११. उन्मनी (Unmani)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-handwritten.svg" alt="Handwritten: ११. उन्मनी (Unmani)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-diagram.svg" alt="Diagram: ११. उन्मनी (Unmani)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-diagram.svg" alt="Diagram: ११. उन्मनी (Unmani)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-sticky.svg" alt="Sticky Note: ११. उन्मनी (Unmani)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/unmani-sticky.svg" alt="Sticky Note: ११. उन्मनी (Unmani)" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ mindmap
 
 ### १२. उपाय (Upaya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-handwritten.svg" alt="Handwritten: १२. उपाय (Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-handwritten.svg" alt="Handwritten: १२. उपाय (Upaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-diagram.svg" alt="Diagram: १२. उपाय (Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-diagram.svg" alt="Diagram: १२. उपाय (Upaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-sticky.svg" alt="Sticky Note: १२. उपाय (Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upaya-sticky.svg" alt="Sticky Note: १२. उपाय (Upaya)" width="30%">
 </a>
 
 
@@ -360,14 +360,14 @@ mindmap
 
 ### १३. उपाधि (Upadhi)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-handwritten.svg" alt="Handwritten: १३. उपाधि (Upadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-handwritten.svg" alt="Handwritten: १३. उपाधि (Upadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-diagram.svg" alt="Diagram: १३. उपाधि (Upadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-diagram.svg" alt="Diagram: १३. उपाधि (Upadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-sticky.svg" alt="Sticky Note: १३. उपाधि (Upadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/upadhi-sticky.svg" alt="Sticky Note: १३. उपाधि (Upadhi)" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ mindmap
 
 ### १४. ऊर्ध्वरेता (Urdhvareta)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-handwritten.svg" alt="Handwritten: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-handwritten.svg" alt="Handwritten: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-diagram.svg" alt="Diagram: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-diagram.svg" alt="Diagram: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-sticky.svg" alt="Sticky Note: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/urdhvareta-sticky.svg" alt="Sticky Note: १४. ऊर्ध्वरेता (Urdhvareta)" width="30%">
 </a>
 
 
@@ -406,14 +406,14 @@ mindmap
 
 ### १५. कंचुक (Kancuka)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-handwritten.svg" alt="Handwritten: १५. कंचुक (Kancuka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-handwritten.svg" alt="Handwritten: १५. कंचुक (Kancuka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-diagram.svg" alt="Diagram: १५. कंचुक (Kancuka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-diagram.svg" alt="Diagram: १५. कंचुक (Kancuka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-sticky.svg" alt="Sticky Note: १५. कंचुक (Kancuka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kancuka-sticky.svg" alt="Sticky Note: १५. कंचुक (Kancuka)" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ mindmap
 
 ### १६. कर्म (Karma)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-handwritten.svg" alt="Handwritten: १६. कर्म (Karma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-handwritten.svg" alt="Handwritten: १६. कर्म (Karma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-diagram.svg" alt="Diagram: १६. कर्म (Karma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-diagram.svg" alt="Diagram: १६. कर्म (Karma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-sticky.svg" alt="Sticky Note: १६. कर्म (Karma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/karma-sticky.svg" alt="Sticky Note: १६. कर्म (Karma)" width="30%">
 </a>
 
 
@@ -452,14 +452,14 @@ mindmap
 
 ### १७. कल्पना (Kalpana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-handwritten.svg" alt="Handwritten: १७. कल्पना (Kalpana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-handwritten.svg" alt="Handwritten: १७. कल्पना (Kalpana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-diagram.svg" alt="Diagram: १७. कल्पना (Kalpana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-diagram.svg" alt="Diagram: १७. कल्पना (Kalpana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-sticky.svg" alt="Sticky Note: १७. कल्पना (Kalpana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kalpana-sticky.svg" alt="Sticky Note: १७. कल्पना (Kalpana)" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ mindmap
 
 ### १८. कुंडलिनी (Kundalini)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-handwritten.svg" alt="Handwritten: १८. कुंडलिनी (Kundalini)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-handwritten.svg" alt="Handwritten: १८. कुंडलिनी (Kundalini)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-diagram.svg" alt="Diagram: १८. कुंडलिनी (Kundalini)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-diagram.svg" alt="Diagram: १८. कुंडलिनी (Kundalini)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-sticky.svg" alt="Sticky Note: १८. कुंडलिनी (Kundalini)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kundalini-sticky.svg" alt="Sticky Note: १८. कुंडलिनी (Kundalini)" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ mindmap
 
 ### १९. कुंभक (Kumbhaka)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-handwritten.svg" alt="Handwritten: १९. कुंभक (Kumbhaka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-handwritten.svg" alt="Handwritten: १९. कुंभक (Kumbhaka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-diagram.svg" alt="Diagram: १९. कुंभक (Kumbhaka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-diagram.svg" alt="Diagram: १९. कुंभक (Kumbhaka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-sticky.svg" alt="Sticky Note: १९. कुंभक (Kumbhaka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kumbhaka-sticky.svg" alt="Sticky Note: १९. कुंभक (Kumbhaka)" width="30%">
 </a>
 
 
@@ -521,14 +521,14 @@ mindmap
 
 ### २०. कृपा (Kripa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-handwritten.svg" alt="Handwritten: २०. कृपा (Kripa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-handwritten.svg" alt="Handwritten: २०. कृपा (Kripa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-diagram.svg" alt="Diagram: २०. कृपा (Kripa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-diagram.svg" alt="Diagram: २०. कृपा (Kripa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-sticky.svg" alt="Sticky Note: २०. कृपा (Kripa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/kripa-sticky.svg" alt="Sticky Note: २०. कृपा (Kripa)" width="30%">
 </a>
 
 
@@ -544,14 +544,14 @@ mindmap
 
 ### २१. गुरु (Guru)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-handwritten.svg" alt="Handwritten: २१. गुरु (Guru)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-handwritten.svg" alt="Handwritten: २१. गुरु (Guru)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-diagram.svg" alt="Diagram: २१. गुरु (Guru)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-diagram.svg" alt="Diagram: २१. गुरु (Guru)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-sticky.svg" alt="Sticky Note: २१. गुरु (Guru)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/guru-sticky.svg" alt="Sticky Note: २१. गुरु (Guru)" width="30%">
 </a>
 
 
@@ -567,14 +567,14 @@ mindmap
 
 ### २२. गुरुमुख (Gurumukha)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-handwritten.svg" alt="Handwritten: २२. गुरुमुख (Gurumukha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-handwritten.svg" alt="Handwritten: २२. गुरुमुख (Gurumukha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-diagram.svg" alt="Diagram: २२. गुरुमुख (Gurumukha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-diagram.svg" alt="Diagram: २२. गुरुमुख (Gurumukha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-sticky.svg" alt="Sticky Note: २२. गुरुमुख (Gurumukha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/gurumukha-sticky.svg" alt="Sticky Note: २२. गुरुमुख (Gurumukha)" width="30%">
 </a>
 
 
@@ -590,14 +590,14 @@ mindmap
 
 ### २३. चक्र (Cakra)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-handwritten.svg" alt="Handwritten: २३. चक्र (Cakra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-handwritten.svg" alt="Handwritten: २३. चक्र (Cakra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-diagram.svg" alt="Diagram: २३. चक्र (Cakra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-diagram.svg" alt="Diagram: २३. चक्र (Cakra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-sticky.svg" alt="Sticky Note: २३. चक्र (Cakra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cakra-sticky.svg" alt="Sticky Note: २३. चक्र (Cakra)" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ mindmap
 
 ### २४. चेतना (Cetana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-handwritten.svg" alt="Handwritten: २४. चेतना (Cetana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-handwritten.svg" alt="Handwritten: २४. चेतना (Cetana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-diagram.svg" alt="Diagram: २४. चेतना (Cetana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-diagram.svg" alt="Diagram: २४. चेतना (Cetana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-sticky.svg" alt="Sticky Note: २४. चेतना (Cetana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/cetana-sticky.svg" alt="Sticky Note: २४. चेतना (Cetana)" width="30%">
 </a>
 
 
@@ -636,14 +636,14 @@ mindmap
 
 ### २५. जागरूकता (Jagarukata)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-handwritten.svg" alt="Handwritten: २५. जागरूकता (Jagarukata)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-handwritten.svg" alt="Handwritten: २५. जागरूकता (Jagarukata)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-diagram.svg" alt="Diagram: २५. जागरूकता (Jagarukata)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-diagram.svg" alt="Diagram: २५. जागरूकता (Jagarukata)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-sticky.svg" alt="Sticky Note: २५. जागरूकता (Jagarukata)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jagarukata-sticky.svg" alt="Sticky Note: २५. जागरूकता (Jagarukata)" width="30%">
 </a>
 
 
@@ -659,14 +659,14 @@ mindmap
 
 ### २६. ज्ञान (Jnana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-handwritten.svg" alt="Handwritten: २६. ज्ञान (Jnana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-handwritten.svg" alt="Handwritten: २६. ज्ञान (Jnana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-diagram.svg" alt="Diagram: २६. ज्ञान (Jnana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-diagram.svg" alt="Diagram: २६. ज्ञान (Jnana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-sticky.svg" alt="Sticky Note: २६. ज्ञान (Jnana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/jnana-sticky.svg" alt="Sticky Note: २६. ज्ञान (Jnana)" width="30%">
 </a>
 
 
@@ -682,14 +682,14 @@ mindmap
 
 ### २७. तंत्र (Tantra)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-handwritten.svg" alt="Handwritten: २७. तंत्र (Tantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-handwritten.svg" alt="Handwritten: २७. तंत्र (Tantra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-diagram.svg" alt="Diagram: २७. तंत्र (Tantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-diagram.svg" alt="Diagram: २७. तंत्र (Tantra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-sticky.svg" alt="Sticky Note: २७. तंत्र (Tantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tantra-sticky.svg" alt="Sticky Note: २७. तंत्र (Tantra)" width="30%">
 </a>
 
 
@@ -705,14 +705,14 @@ mindmap
 
 ### २८. तत्त्व (Tattva)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-handwritten.svg" alt="Handwritten: २८. तत्त्व (Tattva)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-handwritten.svg" alt="Handwritten: २८. तत्त्व (Tattva)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-diagram.svg" alt="Diagram: २८. तत्त्व (Tattva)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-diagram.svg" alt="Diagram: २८. तत्त्व (Tattva)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-sticky.svg" alt="Sticky Note: २८. तत्त्व (Tattva)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tattva-sticky.svg" alt="Sticky Note: २८. तत्त्व (Tattva)" width="30%">
 </a>
 
 
@@ -728,14 +728,14 @@ mindmap
 
 ### २९. तुरीय (Turiya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-handwritten.svg" alt="Handwritten: २९. तुरीय (Turiya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-handwritten.svg" alt="Handwritten: २९. तुरीय (Turiya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-diagram.svg" alt="Diagram: २९. तुरीय (Turiya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-diagram.svg" alt="Diagram: २९. तुरीय (Turiya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-sticky.svg" alt="Sticky Note: २९. तुरीय (Turiya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/turiya-sticky.svg" alt="Sticky Note: २९. तुरीय (Turiya)" width="30%">
 </a>
 
 
@@ -751,14 +751,14 @@ mindmap
 
 ### ३०. त्याग (Tyaga)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-handwritten.svg" alt="Handwritten: ३०. त्याग (Tyaga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-handwritten.svg" alt="Handwritten: ३०. त्याग (Tyaga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-diagram.svg" alt="Diagram: ३०. त्याग (Tyaga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-diagram.svg" alt="Diagram: ३०. त्याग (Tyaga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-sticky.svg" alt="Sticky Note: ३०. त्याग (Tyaga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/tyaga-sticky.svg" alt="Sticky Note: ३०. त्याग (Tyaga)" width="30%">
 </a>
 
 
@@ -774,14 +774,14 @@ mindmap
 
 ### ३१. दीक्षा (Diksa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-handwritten.svg" alt="Handwritten: ३१. दीक्षा (Diksa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-handwritten.svg" alt="Handwritten: ३१. दीक्षा (Diksa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-diagram.svg" alt="Diagram: ३१. दीक्षा (Diksa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-diagram.svg" alt="Diagram: ३१. दीक्षा (Diksa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-sticky.svg" alt="Sticky Note: ३१. दीक्षा (Diksa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/diksa-sticky.svg" alt="Sticky Note: ३१. दीक्षा (Diksa)" width="30%">
 </a>
 
 
@@ -797,14 +797,14 @@ mindmap
 
 ### ३२. द्वैत (Dvaita)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-handwritten.svg" alt="Handwritten: ३२. द्वैत (Dvaita)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-handwritten.svg" alt="Handwritten: ३२. द्वैत (Dvaita)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-diagram.svg" alt="Diagram: ३२. द्वैत (Dvaita)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-diagram.svg" alt="Diagram: ३२. द्वैत (Dvaita)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-sticky.svg" alt="Sticky Note: ३२. द्वैत (Dvaita)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dvaita-sticky.svg" alt="Sticky Note: ३२. द्वैत (Dvaita)" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ mindmap
 
 ### ३३. धारणा (Dharana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-handwritten.svg" alt="Handwritten: ३३. धारणा (Dharana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-handwritten.svg" alt="Handwritten: ३३. धारणा (Dharana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-diagram.svg" alt="Diagram: ३३. धारणा (Dharana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-diagram.svg" alt="Diagram: ३३. धारणा (Dharana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-sticky.svg" alt="Sticky Note: ३३. धारणा (Dharana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharana-sticky.svg" alt="Sticky Note: ३३. धारणा (Dharana)" width="30%">
 </a>
 
 
@@ -843,14 +843,14 @@ mindmap
 
 ### ३४. ध्यान (Dhyana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-handwritten.svg" alt="Handwritten: ३४. ध्यान (Dhyana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-handwritten.svg" alt="Handwritten: ३४. ध्यान (Dhyana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-diagram.svg" alt="Diagram: ३४. ध्यान (Dhyana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-diagram.svg" alt="Diagram: ३४. ध्यान (Dhyana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-sticky.svg" alt="Sticky Note: ३४. ध्यान (Dhyana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dhyana-sticky.svg" alt="Sticky Note: ३४. ध्यान (Dhyana)" width="30%">
 </a>
 
 
@@ -866,14 +866,14 @@ mindmap
 
 ### ३५. धर्म (Dharma)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-handwritten.svg" alt="Handwritten: ३५. धर्म (Dharma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-handwritten.svg" alt="Handwritten: ३५. धर्म (Dharma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-diagram.svg" alt="Diagram: ३५. धर्म (Dharma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-diagram.svg" alt="Diagram: ३५. धर्म (Dharma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-sticky.svg" alt="Sticky Note: ३५. धर्म (Dharma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/dharma-sticky.svg" alt="Sticky Note: ३५. धर्म (Dharma)" width="30%">
 </a>
 
 
@@ -889,14 +889,14 @@ mindmap
 
 ### ३६. नाद (Nada)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-handwritten.svg" alt="Handwritten: ३६. नाद (Nada)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-handwritten.svg" alt="Handwritten: ३६. नाद (Nada)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-diagram.svg" alt="Diagram: ३६. नाद (Nada)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-diagram.svg" alt="Diagram: ३६. नाद (Nada)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-sticky.svg" alt="Sticky Note: ३६. नाद (Nada)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nada-sticky.svg" alt="Sticky Note: ३६. नाद (Nada)" width="30%">
 </a>
 
 
@@ -912,14 +912,14 @@ mindmap
 
 ### ३७. निरुपाय (Nirupaya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-handwritten.svg" alt="Handwritten: ३७. निरुपाय (Nirupaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-handwritten.svg" alt="Handwritten: ३७. निरुपाय (Nirupaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-diagram.svg" alt="Diagram: ३७. निरुपाय (Nirupaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-diagram.svg" alt="Diagram: ३७. निरुपाय (Nirupaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-sticky.svg" alt="Sticky Note: ३७. निरुपाय (Nirupaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirupaya-sticky.svg" alt="Sticky Note: ३७. निरुपाय (Nirupaya)" width="30%">
 </a>
 
 
@@ -935,14 +935,14 @@ mindmap
 
 ### ३८. निर्वाण (Nirvana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-handwritten.svg" alt="Handwritten: ३८. निर्वाण (Nirvana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-handwritten.svg" alt="Handwritten: ३८. निर्वाण (Nirvana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-diagram.svg" alt="Diagram: ३८. निर्वाण (Nirvana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-diagram.svg" alt="Diagram: ३८. निर्वाण (Nirvana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-sticky.svg" alt="Sticky Note: ३८. निर्वाण (Nirvana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvana-sticky.svg" alt="Sticky Note: ३८. निर्वाण (Nirvana)" width="30%">
 </a>
 
 
@@ -958,14 +958,14 @@ mindmap
 
 ### ३९. निर्विकल्प (Nirvikalpa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-handwritten.svg" alt="Handwritten: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-handwritten.svg" alt="Handwritten: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-diagram.svg" alt="Diagram: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-diagram.svg" alt="Diagram: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-sticky.svg" alt="Sticky Note: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/nirvikalpa-sticky.svg" alt="Sticky Note: ३९. निर्विकल्प (Nirvikalpa)" width="30%">
 </a>
 
 
@@ -981,14 +981,14 @@ mindmap
 
 ### ४०. नो-माइंड (No-Mind)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-handwritten.svg" alt="Handwritten: ४०. नो-माइंड (No-Mind)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-handwritten.svg" alt="Handwritten: ४०. नो-माइंड (No-Mind)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-diagram.svg" alt="Diagram: ४०. नो-माइंड (No-Mind)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-diagram.svg" alt="Diagram: ४०. नो-माइंड (No-Mind)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-sticky.svg" alt="Sticky Note: ४०. नो-माइंड (No-Mind)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/no-mind-sticky.svg" alt="Sticky Note: ४०. नो-माइंड (No-Mind)" width="30%">
 </a>
 
 
@@ -1004,14 +1004,14 @@ mindmap
 
 ### ४१. पदार्थ (Padartha)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-handwritten.svg" alt="Handwritten: ४१. पदार्थ (Padartha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-handwritten.svg" alt="Handwritten: ४१. पदार्थ (Padartha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-diagram.svg" alt="Diagram: ४१. पदार्थ (Padartha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-diagram.svg" alt="Diagram: ४१. पदार्थ (Padartha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-sticky.svg" alt="Sticky Note: ४१. पदार्थ (Padartha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/padartha-sticky.svg" alt="Sticky Note: ४१. पदार्थ (Padartha)" width="30%">
 </a>
 
 
@@ -1027,14 +1027,14 @@ mindmap
 
 ### ४२. परमात्मा (Paramatma)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-handwritten.svg" alt="Handwritten: ४२. परमात्मा (Paramatma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-handwritten.svg" alt="Handwritten: ४२. परमात्मा (Paramatma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-diagram.svg" alt="Diagram: ४२. परमात्मा (Paramatma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-diagram.svg" alt="Diagram: ४२. परमात्मा (Paramatma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-sticky.svg" alt="Sticky Note: ४२. परमात्मा (Paramatma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/paramatma-sticky.svg" alt="Sticky Note: ४२. परमात्मा (Paramatma)" width="30%">
 </a>
 
 
@@ -1050,14 +1050,14 @@ mindmap
 
 ### ४३. पुरुष (Purusa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-handwritten.svg" alt="Handwritten: ४३. पुरुष (Purusa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-handwritten.svg" alt="Handwritten: ४३. पुरुष (Purusa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-diagram.svg" alt="Diagram: ४३. पुरुष (Purusa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-diagram.svg" alt="Diagram: ४३. पुरुष (Purusa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-sticky.svg" alt="Sticky Note: ४३. पुरुष (Purusa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purusa-sticky.svg" alt="Sticky Note: ४३. पुरुष (Purusa)" width="30%">
 </a>
 
 
@@ -1073,14 +1073,14 @@ mindmap
 
 ### ४४. पूर्णता (Purnata)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-handwritten.svg" alt="Handwritten: ४४. पूर्णता (Purnata)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-handwritten.svg" alt="Handwritten: ४४. पूर्णता (Purnata)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-diagram.svg" alt="Diagram: ४४. पूर्णता (Purnata)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-diagram.svg" alt="Diagram: ४४. पूर्णता (Purnata)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-sticky.svg" alt="Sticky Note: ४४. पूर्णता (Purnata)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/purnata-sticky.svg" alt="Sticky Note: ४४. पूर्णता (Purnata)" width="30%">
 </a>
 
 
@@ -1096,14 +1096,14 @@ mindmap
 
 ### ४५. प्रकृति (Prakrti)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-handwritten.svg" alt="Handwritten: ४५. प्रकृति (Prakrti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-handwritten.svg" alt="Handwritten: ४५. प्रकृति (Prakrti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-diagram.svg" alt="Diagram: ४५. प्रकृति (Prakrti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-diagram.svg" alt="Diagram: ४५. प्रकृति (Prakrti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-sticky.svg" alt="Sticky Note: ४५. प्रकृति (Prakrti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prakrti-sticky.svg" alt="Sticky Note: ४५. प्रकृति (Prakrti)" width="30%">
 </a>
 
 
@@ -1119,14 +1119,14 @@ mindmap
 
 ### ४६. प्रज्ञा (Prajna)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-handwritten.svg" alt="Handwritten: ४६. प्रज्ञा (Prajna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-handwritten.svg" alt="Handwritten: ४६. प्रज्ञा (Prajna)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-diagram.svg" alt="Diagram: ४६. प्रज्ञा (Prajna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-diagram.svg" alt="Diagram: ४६. प्रज्ञा (Prajna)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-sticky.svg" alt="Sticky Note: ४६. प्रज्ञा (Prajna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prajna-sticky.svg" alt="Sticky Note: ४६. प्रज्ञा (Prajna)" width="30%">
 </a>
 
 
@@ -1142,14 +1142,14 @@ mindmap
 
 ### ४७. प्रणव (Pranava)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-handwritten.svg" alt="Handwritten: ४७. प्रणव (Pranava)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-handwritten.svg" alt="Handwritten: ४७. प्रणव (Pranava)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-diagram.svg" alt="Diagram: ४७. प्रणव (Pranava)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-diagram.svg" alt="Diagram: ४७. प्रणव (Pranava)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-sticky.svg" alt="Sticky Note: ४७. प्रणव (Pranava)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranava-sticky.svg" alt="Sticky Note: ४७. प्रणव (Pranava)" width="30%">
 </a>
 
 
@@ -1165,14 +1165,14 @@ mindmap
 
 ### ४८. प्राण (Prana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-handwritten.svg" alt="Handwritten: ४८. प्राण (Prana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-handwritten.svg" alt="Handwritten: ४८. प्राण (Prana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-diagram.svg" alt="Diagram: ४८. प्राण (Prana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-diagram.svg" alt="Diagram: ४८. प्राण (Prana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-sticky.svg" alt="Sticky Note: ४८. प्राण (Prana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prana-sticky.svg" alt="Sticky Note: ४८. प्राण (Prana)" width="30%">
 </a>
 
 
@@ -1188,14 +1188,14 @@ mindmap
 
 ### ४९. प्राणायाम (Pranayama)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-handwritten.svg" alt="Handwritten: ४९. प्राणायाम (Pranayama)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-handwritten.svg" alt="Handwritten: ४९. प्राणायाम (Pranayama)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-diagram.svg" alt="Diagram: ४९. प्राणायाम (Pranayama)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-diagram.svg" alt="Diagram: ४९. प्राणायाम (Pranayama)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-sticky.svg" alt="Sticky Note: ४९. प्राणायाम (Pranayama)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/pranayama-sticky.svg" alt="Sticky Note: ४९. प्राणायाम (Pranayama)" width="30%">
 </a>
 
 
@@ -1211,14 +1211,14 @@ mindmap
 
 ### ५०. प्रारब्ध (Prarabdha)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-handwritten.svg" alt="Handwritten: ५०. प्रारब्ध (Prarabdha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-handwritten.svg" alt="Handwritten: ५०. प्रारब्ध (Prarabdha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-diagram.svg" alt="Diagram: ५०. प्रारब्ध (Prarabdha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-diagram.svg" alt="Diagram: ५०. प्रारब्ध (Prarabdha)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-sticky.svg" alt="Sticky Note: ५०. प्रारब्ध (Prarabdha)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prarabdha-sticky.svg" alt="Sticky Note: ५०. प्रारब्ध (Prarabdha)" width="30%">
 </a>
 
 
@@ -1234,14 +1234,14 @@ mindmap
 
 ### ५१. प्रेम (Prema)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-handwritten.svg" alt="Handwritten: ५१. प्रेम (Prema)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-handwritten.svg" alt="Handwritten: ५१. प्रेम (Prema)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-diagram.svg" alt="Diagram: ५१. प्रेम (Prema)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-diagram.svg" alt="Diagram: ५१. प्रेम (Prema)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-sticky.svg" alt="Sticky Note: ५१. प्रेम (Prema)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/prema-sticky.svg" alt="Sticky Note: ५१. प्रेम (Prema)" width="30%">
 </a>
 
 
@@ -1257,14 +1257,14 @@ mindmap
 
 ### ५२. बिंदु (Bindu)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-handwritten.svg" alt="Handwritten: ५२. बिंदु (Bindu)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-handwritten.svg" alt="Handwritten: ५२. बिंदु (Bindu)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-diagram.svg" alt="Diagram: ५२. बिंदु (Bindu)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-diagram.svg" alt="Diagram: ५२. बिंदु (Bindu)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-sticky.svg" alt="Sticky Note: ५२. बिंदु (Bindu)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bindu-sticky.svg" alt="Sticky Note: ५२. बिंदु (Bindu)" width="30%">
 </a>
 
 
@@ -1280,14 +1280,14 @@ mindmap
 
 ### ५३. ब्रह्म (Brahma)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-handwritten.svg" alt="Handwritten: ५३. ब्रह्म (Brahma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-handwritten.svg" alt="Handwritten: ५३. ब्रह्म (Brahma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-diagram.svg" alt="Diagram: ५३. ब्रह्म (Brahma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-diagram.svg" alt="Diagram: ५३. ब्रह्म (Brahma)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-sticky.svg" alt="Sticky Note: ५३. ब्रह्म (Brahma)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/brahma-sticky.svg" alt="Sticky Note: ५३. ब्रह्म (Brahma)" width="30%">
 </a>
 
 
@@ -1303,14 +1303,14 @@ mindmap
 
 ### ५४. भक्ति (Bhakti)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-handwritten.svg" alt="Handwritten: ५४. भक्ति (Bhakti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-handwritten.svg" alt="Handwritten: ५४. भक्ति (Bhakti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-diagram.svg" alt="Diagram: ५४. भक्ति (Bhakti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-diagram.svg" alt="Diagram: ५४. भक्ति (Bhakti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-sticky.svg" alt="Sticky Note: ५४. भक्ति (Bhakti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhakti-sticky.svg" alt="Sticky Note: ५४. भक्ति (Bhakti)" width="30%">
 </a>
 
 
@@ -1326,14 +1326,14 @@ mindmap
 
 ### ५५. भावना (Bhavana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-handwritten.svg" alt="Handwritten: ५५. भावना (Bhavana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-handwritten.svg" alt="Handwritten: ५५. भावना (Bhavana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-diagram.svg" alt="Diagram: ५५. भावना (Bhavana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-diagram.svg" alt="Diagram: ५५. भावना (Bhavana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-sticky.svg" alt="Sticky Note: ५५. भावना (Bhavana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhavana-sticky.svg" alt="Sticky Note: ५५. भावना (Bhavana)" width="30%">
 </a>
 
 
@@ -1349,14 +1349,14 @@ mindmap
 
 ### ५६. भ्रमरी (Bhramari)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-handwritten.svg" alt="Handwritten: ५६. भ्रमरी (Bhramari)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-handwritten.svg" alt="Handwritten: ५६. भ्रमरी (Bhramari)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-diagram.svg" alt="Diagram: ५६. भ्रमरी (Bhramari)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-diagram.svg" alt="Diagram: ५६. भ्रमरी (Bhramari)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-sticky.svg" alt="Sticky Note: ५६. भ्रमरी (Bhramari)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/bhramari-sticky.svg" alt="Sticky Note: ५६. भ्रमरी (Bhramari)" width="30%">
 </a>
 
 
@@ -1372,14 +1372,14 @@ mindmap
 
 ### ५७. मंत्र (Mantra)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-handwritten.svg" alt="Handwritten: ५७. मंत्र (Mantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-handwritten.svg" alt="Handwritten: ५७. मंत्र (Mantra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-diagram.svg" alt="Diagram: ५७. मंत्र (Mantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-diagram.svg" alt="Diagram: ५७. मंत्र (Mantra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-sticky.svg" alt="Sticky Note: ५७. मंत्र (Mantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mantra-sticky.svg" alt="Sticky Note: ५७. मंत्र (Mantra)" width="30%">
 </a>
 
 
@@ -1395,14 +1395,14 @@ mindmap
 
 ### ५८. मंडल (Mandala)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-handwritten.svg" alt="Handwritten: ५८. मंडल (Mandala)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-handwritten.svg" alt="Handwritten: ५८. मंडल (Mandala)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-diagram.svg" alt="Diagram: ५८. मंडल (Mandala)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-diagram.svg" alt="Diagram: ५८. मंडल (Mandala)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-sticky.svg" alt="Sticky Note: ५८. मंडल (Mandala)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mandala-sticky.svg" alt="Sticky Note: ५८. मंडल (Mandala)" width="30%">
 </a>
 
 
@@ -1418,14 +1418,14 @@ mindmap
 
 ### ५९. माया (Maya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-handwritten.svg" alt="Handwritten: ५९. माया (Maya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-handwritten.svg" alt="Handwritten: ५९. माया (Maya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-diagram.svg" alt="Diagram: ५९. माया (Maya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-diagram.svg" alt="Diagram: ५९. माया (Maya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-sticky.svg" alt="Sticky Note: ५९. माया (Maya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maya-sticky.svg" alt="Sticky Note: ५९. माया (Maya)" width="30%">
 </a>
 
 
@@ -1441,14 +1441,14 @@ mindmap
 
 ### ६०. मिथ्या (Mithya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-handwritten.svg" alt="Handwritten: ६०. मिथ्या (Mithya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-handwritten.svg" alt="Handwritten: ६०. मिथ्या (Mithya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-diagram.svg" alt="Diagram: ६०. मिथ्या (Mithya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-diagram.svg" alt="Diagram: ६०. मिथ्या (Mithya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-sticky.svg" alt="Sticky Note: ६०. मिथ्या (Mithya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mithya-sticky.svg" alt="Sticky Note: ६०. मिथ्या (Mithya)" width="30%">
 </a>
 
 
@@ -1464,14 +1464,14 @@ mindmap
 
 ### ६१. मुक्ति (Mukti)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-handwritten.svg" alt="Handwritten: ६१. मुक्ति (Mukti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-handwritten.svg" alt="Handwritten: ६१. मुक्ति (Mukti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-diagram.svg" alt="Diagram: ६१. मुक्ति (Mukti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-diagram.svg" alt="Diagram: ६१. मुक्ति (Mukti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-sticky.svg" alt="Sticky Note: ६१. मुक्ति (Mukti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mukti-sticky.svg" alt="Sticky Note: ६१. मुक्ति (Mukti)" width="30%">
 </a>
 
 
@@ -1487,14 +1487,14 @@ mindmap
 
 ### ६२. मैत्री (Maitri)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-handwritten.svg" alt="Handwritten: ६२. मैत्री (Maitri)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-handwritten.svg" alt="Handwritten: ६२. मैत्री (Maitri)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-diagram.svg" alt="Diagram: ६२. मैत्री (Maitri)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-diagram.svg" alt="Diagram: ६२. मैत्री (Maitri)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-sticky.svg" alt="Sticky Note: ६२. मैत्री (Maitri)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/maitri-sticky.svg" alt="Sticky Note: ६२. मैत्री (Maitri)" width="30%">
 </a>
 
 
@@ -1510,14 +1510,14 @@ mindmap
 
 ### ६३. मोक्ष (Moksa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-handwritten.svg" alt="Handwritten: ६३. मोक्ष (Moksa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-handwritten.svg" alt="Handwritten: ६३. मोक्ष (Moksa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-diagram.svg" alt="Diagram: ६३. मोक्ष (Moksa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-diagram.svg" alt="Diagram: ६३. मोक्ष (Moksa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-sticky.svg" alt="Sticky Note: ६३. मोक्ष (Moksa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/moksa-sticky.svg" alt="Sticky Note: ६३. मोक्ष (Moksa)" width="30%">
 </a>
 
 
@@ -1533,14 +1533,14 @@ mindmap
 
 ### ६४. मौन (Mauna)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-handwritten.svg" alt="Handwritten: ६४. मौन (Mauna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-handwritten.svg" alt="Handwritten: ६४. मौन (Mauna)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-diagram.svg" alt="Diagram: ६४. मौन (Mauna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-diagram.svg" alt="Diagram: ६४. मौन (Mauna)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-sticky.svg" alt="Sticky Note: ६४. मौन (Mauna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/mauna-sticky.svg" alt="Sticky Note: ६४. मौन (Mauna)" width="30%">
 </a>
 
 
@@ -1556,14 +1556,14 @@ mindmap
 
 ### ६५. यंत्र (Yantra)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-handwritten.svg" alt="Handwritten: ६५. यंत्र (Yantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-handwritten.svg" alt="Handwritten: ६५. यंत्र (Yantra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-diagram.svg" alt="Diagram: ६५. यंत्र (Yantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-diagram.svg" alt="Diagram: ६५. यंत्र (Yantra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-sticky.svg" alt="Sticky Note: ६५. यंत्र (Yantra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yantra-sticky.svg" alt="Sticky Note: ६५. यंत्र (Yantra)" width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ mindmap
 
 ### ६६. योग (Yoga)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-handwritten.svg" alt="Handwritten: ६६. योग (Yoga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-handwritten.svg" alt="Handwritten: ६६. योग (Yoga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-diagram.svg" alt="Diagram: ६६. योग (Yoga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-diagram.svg" alt="Diagram: ६६. योग (Yoga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-sticky.svg" alt="Sticky Note: ६६. योग (Yoga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/yoga-sticky.svg" alt="Sticky Note: ६६. योग (Yoga)" width="30%">
 </a>
 
 
@@ -1602,14 +1602,14 @@ mindmap
 
 ### ६७. राग (Raga)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-handwritten.svg" alt="Handwritten: ६७. राग (Raga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-handwritten.svg" alt="Handwritten: ६७. राग (Raga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-diagram.svg" alt="Diagram: ६७. राग (Raga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-diagram.svg" alt="Diagram: ६७. राग (Raga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-sticky.svg" alt="Sticky Note: ६७. राग (Raga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/raga-sticky.svg" alt="Sticky Note: ६७. राग (Raga)" width="30%">
 </a>
 
 
@@ -1625,14 +1625,14 @@ mindmap
 
 ### ६८. लीला (Lila)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-handwritten.svg" alt="Handwritten: ६८. लीला (Lila)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-handwritten.svg" alt="Handwritten: ६८. लीला (Lila)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-diagram.svg" alt="Diagram: ६८. लीला (Lila)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-diagram.svg" alt="Diagram: ६८. लीला (Lila)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-sticky.svg" alt="Sticky Note: ६८. लीला (Lila)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/lila-sticky.svg" alt="Sticky Note: ६८. लीला (Lila)" width="30%">
 </a>
 
 
@@ -1648,14 +1648,14 @@ mindmap
 
 ### ६९. वासना (Vasana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-handwritten.svg" alt="Handwritten: ६९. वासना (Vasana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-handwritten.svg" alt="Handwritten: ६९. वासना (Vasana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-diagram.svg" alt="Diagram: ६९. वासना (Vasana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-diagram.svg" alt="Diagram: ६९. वासना (Vasana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-sticky.svg" alt="Sticky Note: ६९. वासना (Vasana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/vasana-sticky.svg" alt="Sticky Note: ६९. वासना (Vasana)" width="30%">
 </a>
 
 
@@ -1671,14 +1671,14 @@ mindmap
 
 ### ७०. विवेक (Viveka)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-handwritten.svg" alt="Handwritten: ७०. विवेक (Viveka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-handwritten.svg" alt="Handwritten: ७०. विवेक (Viveka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-diagram.svg" alt="Diagram: ७०. विवेक (Viveka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-diagram.svg" alt="Diagram: ७०. विवेक (Viveka)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-sticky.svg" alt="Sticky Note: ७०. विवेक (Viveka)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/viveka-sticky.svg" alt="Sticky Note: ७०. विवेक (Viveka)" width="30%">
 </a>
 
 
@@ -1694,14 +1694,14 @@ mindmap
 
 ### ७१. शक्ति (Sakti)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-handwritten.svg" alt="Handwritten: ७१. शक्ति (Sakti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-handwritten.svg" alt="Handwritten: ७१. शक्ति (Sakti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-diagram.svg" alt="Diagram: ७१. शक्ति (Sakti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-diagram.svg" alt="Diagram: ७१. शक्ति (Sakti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-sticky.svg" alt="Sticky Note: ७१. शक्ति (Sakti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sakti-sticky.svg" alt="Sticky Note: ७१. शक्ति (Sakti)" width="30%">
 </a>
 
 
@@ -1717,14 +1717,14 @@ mindmap
 
 ### ७२. शांभव उपाय (Sambhava Upaya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-handwritten.svg" alt="Handwritten: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-handwritten.svg" alt="Handwritten: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-diagram.svg" alt="Diagram: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-diagram.svg" alt="Diagram: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-sticky.svg" alt="Sticky Note: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sambhava-upaya-sticky.svg" alt="Sticky Note: ७२. शांभव उपाय (Sambhava Upaya)" width="30%">
 </a>
 
 
@@ -1740,14 +1740,14 @@ mindmap
 
 ### ७३. शिव (Siva)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-handwritten.svg" alt="Handwritten: ७३. शिव (Siva)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-handwritten.svg" alt="Handwritten: ७३. शिव (Siva)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-diagram.svg" alt="Diagram: ७३. शिव (Siva)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-diagram.svg" alt="Diagram: ७३. शिव (Siva)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-sticky.svg" alt="Sticky Note: ७३. शिव (Siva)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siva-sticky.svg" alt="Sticky Note: ७३. शिव (Siva)" width="30%">
 </a>
 
 
@@ -1763,14 +1763,14 @@ mindmap
 
 ### ७४. शून्य (Sunya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-handwritten.svg" alt="Handwritten: ७४. शून्य (Sunya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-handwritten.svg" alt="Handwritten: ७४. शून्य (Sunya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-diagram.svg" alt="Diagram: ७४. शून्य (Sunya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-diagram.svg" alt="Diagram: ७४. शून्य (Sunya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-sticky.svg" alt="Sticky Note: ७४. शून्य (Sunya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sunya-sticky.svg" alt="Sticky Note: ७४. शून्य (Sunya)" width="30%">
 </a>
 
 
@@ -1786,14 +1786,14 @@ mindmap
 
 ### ७५. श्वास (Svasa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-handwritten.svg" alt="Handwritten: ७५. श्वास (Svasa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-handwritten.svg" alt="Handwritten: ७५. श्वास (Svasa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-diagram.svg" alt="Diagram: ७५. श्वास (Svasa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-diagram.svg" alt="Diagram: ७५. श्वास (Svasa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-sticky.svg" alt="Sticky Note: ७५. श्वास (Svasa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svasa-sticky.svg" alt="Sticky Note: ७५. श्वास (Svasa)" width="30%">
 </a>
 
 
@@ -1809,14 +1809,14 @@ mindmap
 
 ### ७६. षट्चक्र (Satcakra)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-handwritten.svg" alt="Handwritten: ७६. षट्चक्र (Satcakra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-handwritten.svg" alt="Handwritten: ७६. षट्चक्र (Satcakra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-diagram.svg" alt="Diagram: ७६. षट्चक्र (Satcakra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-diagram.svg" alt="Diagram: ७६. षट्चक्र (Satcakra)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-sticky.svg" alt="Sticky Note: ७६. षट्चक्र (Satcakra)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/satcakra-sticky.svg" alt="Sticky Note: ७६. षट्चक्र (Satcakra)" width="30%">
 </a>
 
 
@@ -1832,14 +1832,14 @@ mindmap
 
 ### ७७. संकल्प (Sankalpa)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-handwritten.svg" alt="Handwritten: ७७. संकल्प (Sankalpa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-handwritten.svg" alt="Handwritten: ७७. संकल्प (Sankalpa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-diagram.svg" alt="Diagram: ७७. संकल्प (Sankalpa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-diagram.svg" alt="Diagram: ७७. संकल्प (Sankalpa)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-sticky.svg" alt="Sticky Note: ७७. संकल्प (Sankalpa)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sankalpa-sticky.svg" alt="Sticky Note: ७७. संकल्प (Sankalpa)" width="30%">
 </a>
 
 
@@ -1855,14 +1855,14 @@ mindmap
 
 ### ७८. संसार (Samsara)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-handwritten.svg" alt="Handwritten: ७८. संसार (Samsara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-handwritten.svg" alt="Handwritten: ७८. संसार (Samsara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-diagram.svg" alt="Diagram: ७८. संसार (Samsara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-diagram.svg" alt="Diagram: ७८. संसार (Samsara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-sticky.svg" alt="Sticky Note: ७८. संसार (Samsara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samsara-sticky.svg" alt="Sticky Note: ७८. संसार (Samsara)" width="30%">
 </a>
 
 
@@ -1878,14 +1878,14 @@ mindmap
 
 ### ७९. साक्षी (Saksi)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-handwritten.svg" alt="Handwritten: ७९. साक्षी (Saksi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-handwritten.svg" alt="Handwritten: ७९. साक्षी (Saksi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-diagram.svg" alt="Diagram: ७९. साक्षी (Saksi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-diagram.svg" alt="Diagram: ७९. साक्षी (Saksi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-sticky.svg" alt="Sticky Note: ७९. साक्षी (Saksi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksi-sticky.svg" alt="Sticky Note: ७९. साक्षी (Saksi)" width="30%">
 </a>
 
 
@@ -1901,14 +1901,14 @@ mindmap
 
 ### ८०. साक्षीभाव (Saksibhava)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-handwritten.svg" alt="Handwritten: ८०. साक्षीभाव (Saksibhava)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-handwritten.svg" alt="Handwritten: ८०. साक्षीभाव (Saksibhava)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-diagram.svg" alt="Diagram: ८०. साक्षीभाव (Saksibhava)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-diagram.svg" alt="Diagram: ८०. साक्षीभाव (Saksibhava)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-sticky.svg" alt="Sticky Note: ८०. साक्षीभाव (Saksibhava)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksibhava-sticky.svg" alt="Sticky Note: ८०. साक्षीभाव (Saksibhava)" width="30%">
 </a>
 
 
@@ -1924,14 +1924,14 @@ mindmap
 
 ### ८१. साक्षात्कार (Saksatkara)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-handwritten.svg" alt="Handwritten: ८१. साक्षात्कार (Saksatkara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-handwritten.svg" alt="Handwritten: ८१. साक्षात्कार (Saksatkara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-diagram.svg" alt="Diagram: ८१. साक्षात्कार (Saksatkara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-diagram.svg" alt="Diagram: ८१. साक्षात्कार (Saksatkara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-sticky.svg" alt="Sticky Note: ८१. साक्षात्कार (Saksatkara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/saksatkara-sticky.svg" alt="Sticky Note: ८१. साक्षात्कार (Saksatkara)" width="30%">
 </a>
 
 
@@ -1947,14 +1947,14 @@ mindmap
 
 ### ८२. साधना (Sadhana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-handwritten.svg" alt="Handwritten: ८२. साधना (Sadhana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-handwritten.svg" alt="Handwritten: ८२. साधना (Sadhana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-diagram.svg" alt="Diagram: ८२. साधना (Sadhana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-diagram.svg" alt="Diagram: ८२. साधना (Sadhana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-sticky.svg" alt="Sticky Note: ८२. साधना (Sadhana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sadhana-sticky.svg" alt="Sticky Note: ८२. साधना (Sadhana)" width="30%">
 </a>
 
 
@@ -1970,14 +1970,14 @@ mindmap
 
 ### ८३. समर्पण (Samarpana)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-handwritten.svg" alt="Handwritten: ८३. समर्पण (Samarpana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-handwritten.svg" alt="Handwritten: ८३. समर्पण (Samarpana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-diagram.svg" alt="Diagram: ८३. समर्पण (Samarpana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-diagram.svg" alt="Diagram: ८३. समर्पण (Samarpana)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-sticky.svg" alt="Sticky Note: ८३. समर्पण (Samarpana)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samarpana-sticky.svg" alt="Sticky Note: ८३. समर्पण (Samarpana)" width="30%">
 </a>
 
 
@@ -1993,14 +1993,14 @@ mindmap
 
 ### ८४. समाधि (Samadhi)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-handwritten.svg" alt="Handwritten: ८४. समाधि (Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-handwritten.svg" alt="Handwritten: ८४. समाधि (Samadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-diagram.svg" alt="Diagram: ८४. समाधि (Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-diagram.svg" alt="Diagram: ८४. समाधि (Samadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-sticky.svg" alt="Sticky Note: ८४. समाधि (Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samadhi-sticky.svg" alt="Sticky Note: ८४. समाधि (Samadhi)" width="30%">
 </a>
 
 
@@ -2016,14 +2016,14 @@ mindmap
 
 ### ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-handwritten.svg" alt="Handwritten: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-handwritten.svg" alt="Handwritten: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-diagram.svg" alt="Diagram: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-diagram.svg" alt="Diagram: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-sticky.svg" alt="Sticky Note: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sampurna-svikara-sticky.svg" alt="Sticky Note: ८५. सम्पूर्ण स्वीकार (Sampurna Svikara)" width="30%">
 </a>
 
 
@@ -2039,14 +2039,14 @@ mindmap
 
 ### ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-handwritten.svg" alt="Handwritten: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-handwritten.svg" alt="Handwritten: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-diagram.svg" alt="Diagram: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-diagram.svg" alt="Diagram: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-sticky.svg" alt="Sticky Note: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/samprajnata-samadhi-sticky.svg" alt="Sticky Note: ८६. सम्प्रज्ञात समाधि (Samprajnata Samadhi)" width="30%">
 </a>
 
 
@@ -2062,14 +2062,14 @@ mindmap
 
 ### ८७. सहज समाधि (Sahaja Samadhi)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-handwritten.svg" alt="Handwritten: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-handwritten.svg" alt="Handwritten: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-diagram.svg" alt="Diagram: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-diagram.svg" alt="Diagram: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-sticky.svg" alt="Sticky Note: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/sahaja-samadhi-sticky.svg" alt="Sticky Note: ८७. सहज समाधि (Sahaja Samadhi)" width="30%">
 </a>
 
 
@@ -2085,14 +2085,14 @@ mindmap
 
 ### ८८. सिद्धि (Siddhi)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-handwritten.svg" alt="Handwritten: ८८. सिद्धि (Siddhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-handwritten.svg" alt="Handwritten: ८८. सिद्धि (Siddhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-diagram.svg" alt="Diagram: ८८. सिद्धि (Siddhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-diagram.svg" alt="Diagram: ८८. सिद्धि (Siddhi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-sticky.svg" alt="Sticky Note: ८८. सिद्धि (Siddhi)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/siddhi-sticky.svg" alt="Sticky Note: ८८. सिद्धि (Siddhi)" width="30%">
 </a>
 
 
@@ -2108,14 +2108,14 @@ mindmap
 
 ### ८९. सुषुप्ति (Susupti)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-handwritten.svg" alt="Handwritten: ८९. सुषुप्ति (Susupti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-handwritten.svg" alt="Handwritten: ८९. सुषुप्ति (Susupti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-diagram.svg" alt="Diagram: ८९. सुषुप्ति (Susupti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-diagram.svg" alt="Diagram: ८९. सुषुप्ति (Susupti)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-sticky.svg" alt="Sticky Note: ८९. सुषुप्ति (Susupti)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/susupti-sticky.svg" alt="Sticky Note: ८९. सुषुप्ति (Susupti)" width="30%">
 </a>
 
 
@@ -2131,14 +2131,14 @@ mindmap
 
 ### ९०. सूक्ष्म शरीर (Suksma Sarira)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-handwritten.svg" alt="Handwritten: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-handwritten.svg" alt="Handwritten: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-diagram.svg" alt="Diagram: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-diagram.svg" alt="Diagram: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-sticky.svg" alt="Sticky Note: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/suksma-sarira-sticky.svg" alt="Sticky Note: ९०. सूक्ष्म शरीर (Suksma Sarira)" width="30%">
 </a>
 
 
@@ -2154,14 +2154,14 @@ mindmap
 
 ### ९१. स्पंद (Spanda)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-handwritten.svg" alt="Handwritten: ९१. स्पंद (Spanda)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-handwritten.svg" alt="Handwritten: ९१. स्पंद (Spanda)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-diagram.svg" alt="Diagram: ९१. स्पंद (Spanda)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-diagram.svg" alt="Diagram: ९१. स्पंद (Spanda)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-sticky.svg" alt="Sticky Note: ९१. स्पंद (Spanda)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/spanda-sticky.svg" alt="Sticky Note: ९१. स्पंद (Spanda)" width="30%">
 </a>
 
 
@@ -2177,14 +2177,14 @@ mindmap
 
 ### ९२. स्वप्न (Svapna)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-handwritten.svg" alt="Handwritten: ९२. स्वप्न (Svapna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-handwritten.svg" alt="Handwritten: ९२. स्वप्न (Svapna)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-diagram.svg" alt="Diagram: ९२. स्वप्न (Svapna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-diagram.svg" alt="Diagram: ९२. स्वप्न (Svapna)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-sticky.svg" alt="Sticky Note: ९२. स्वप्न (Svapna)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svapna-sticky.svg" alt="Sticky Note: ९२. स्वप्न (Svapna)" width="30%">
 </a>
 
 
@@ -2200,14 +2200,14 @@ mindmap
 
 ### ९३. स्वाध्याय (Svadhyaya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-handwritten.svg" alt="Handwritten: ९३. स्वाध्याय (Svadhyaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-handwritten.svg" alt="Handwritten: ९३. स्वाध्याय (Svadhyaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-diagram.svg" alt="Diagram: ९३. स्वाध्याय (Svadhyaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-diagram.svg" alt="Diagram: ९३. स्वाध्याय (Svadhyaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-sticky.svg" alt="Sticky Note: ९३. स्वाध्याय (Svadhyaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/svadhyaya-sticky.svg" alt="Sticky Note: ९३. स्वाध्याय (Svadhyaya)" width="30%">
 </a>
 
 
@@ -2223,14 +2223,14 @@ mindmap
 
 ### ९४. हठ योग (Hatha Yoga)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-handwritten.svg" alt="Handwritten: ९४. हठ योग (Hatha Yoga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-handwritten.svg" alt="Handwritten: ९४. हठ योग (Hatha Yoga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-diagram.svg" alt="Diagram: ९४. हठ योग (Hatha Yoga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-diagram.svg" alt="Diagram: ९४. हठ योग (Hatha Yoga)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-sticky.svg" alt="Sticky Note: ९४. हठ योग (Hatha Yoga)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hatha-yoga-sticky.svg" alt="Sticky Note: ९४. हठ योग (Hatha Yoga)" width="30%">
 </a>
 
 
@@ -2246,14 +2246,14 @@ mindmap
 
 ### ९५. हृदय (Hrdaya)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-handwritten.svg" alt="Handwritten: ९५. हृदय (Hrdaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-handwritten.svg" alt="Handwritten: ९५. हृदय (Hrdaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-diagram.svg" alt="Diagram: ९५. हृदय (Hrdaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-diagram.svg" alt="Diagram: ९५. हृदय (Hrdaya)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-sticky.svg" alt="Sticky Note: ९५. हृदय (Hrdaya)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/osho-glossary/hrdaya-sticky.svg" alt="Sticky Note: ९५. हृदय (Hrdaya)" width="30%">
 </a>
 
 

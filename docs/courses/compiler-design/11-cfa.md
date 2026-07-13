@@ -41,14 +41,14 @@ flowchart LR
 
 ### Basic Blocks Revisited
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-handwritten.svg" alt="Handwritten: Basic Blocks Revisited" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-handwritten.svg" alt="Handwritten: Basic Blocks Revisited" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-diagram.svg" alt="Diagram: Basic Blocks Revisited" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-diagram.svg" alt="Diagram: Basic Blocks Revisited" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-sticky.svg" alt="Sticky Note: Basic Blocks Revisited" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/basic-blocks-revisited-sticky.svg" alt="Sticky Note: Basic Blocks Revisited" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ for each leader, extend block to the next leader
 
 ### Complete TypeScript CFA Implementation
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-handwritten.svg" alt="Handwritten: Complete TypeScript CFA Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-handwritten.svg" alt="Handwritten: Complete TypeScript CFA Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-diagram.svg" alt="Diagram: Complete TypeScript CFA Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-diagram.svg" alt="Diagram: Complete TypeScript CFA Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-sticky.svg" alt="Sticky Note: Complete TypeScript CFA Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/complete-typescript-cfa-implementation-sticky.svg" alt="Sticky Note: Complete TypeScript CFA Implementation" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ class FlowGraph {
 
 ### Dominators
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/dominators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/dominators-handwritten.svg" alt="Handwritten: Dominators" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/dominators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/dominators-handwritten.svg" alt="Handwritten: Dominators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/dominators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/dominators-diagram.svg" alt="Diagram: Dominators" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/dominators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/dominators-diagram.svg" alt="Diagram: Dominators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/dominators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/dominators-sticky.svg" alt="Sticky Note: Dominators" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/dominators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/dominators-sticky.svg" alt="Sticky Note: Dominators" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ class DominatorAnalysis {
 
 ### Lengauer-Tarjan Algorithm
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-handwritten.svg" alt="Handwritten: Lengauer-Tarjan Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-handwritten.svg" alt="Handwritten: Lengauer-Tarjan Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-diagram.svg" alt="Diagram: Lengauer-Tarjan Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-diagram.svg" alt="Diagram: Lengauer-Tarjan Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-sticky.svg" alt="Sticky Note: Lengauer-Tarjan Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/lengauer-tarjan-algorithm-sticky.svg" alt="Sticky Note: Lengauer-Tarjan Algorithm" width="30%">
 </a>
 
 
@@ -591,14 +591,14 @@ class LengauerTarjan {
 
 ### Depth-First Spanning Tree
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-handwritten.svg" alt="Handwritten: Depth-First Spanning Tree" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-handwritten.svg" alt="Handwritten: Depth-First Spanning Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-diagram.svg" alt="Diagram: Depth-First Spanning Tree" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-diagram.svg" alt="Diagram: Depth-First Spanning Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-sticky.svg" alt="Sticky Note: Depth-First Spanning Tree" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/depth-first-spanning-tree-sticky.svg" alt="Sticky Note: Depth-First Spanning Tree" width="30%">
 </a>
 
 
@@ -677,14 +677,14 @@ class DFSTBuilder {
 
 ### Natural Loops
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-handwritten.svg" alt="Handwritten: Natural Loops" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-handwritten.svg" alt="Handwritten: Natural Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-diagram.svg" alt="Diagram: Natural Loops" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-diagram.svg" alt="Diagram: Natural Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-sticky.svg" alt="Sticky Note: Natural Loops" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/natural-loops-sticky.svg" alt="Sticky Note: Natural Loops" width="30%">
 </a>
 
 
@@ -780,14 +780,14 @@ class LoopDetector {
 
 ### Reducible Flow Graphs
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-handwritten.svg" alt="Handwritten: Reducible Flow Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-handwritten.svg" alt="Handwritten: Reducible Flow Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-diagram.svg" alt="Diagram: Reducible Flow Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-diagram.svg" alt="Diagram: Reducible Flow Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-sticky.svg" alt="Sticky Note: Reducible Flow Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/reducible-flow-graphs-sticky.svg" alt="Sticky Note: Reducible Flow Graphs" width="30%">
 </a>
 
 
@@ -853,14 +853,14 @@ class ReducibilityCheck {
 
 ### Complete Demo
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-handwritten.svg" alt="Handwritten: Complete Demo" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-handwritten.svg" alt="Handwritten: Complete Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-diagram.svg" alt="Diagram: Complete Demo" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-diagram.svg" alt="Diagram: Complete Demo" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-sticky.svg" alt="Sticky Note: Complete Demo" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/complete-demo-sticky.svg" alt="Sticky Note: Complete Demo" width="30%">
 </a>
 
 
@@ -921,14 +921,14 @@ console.log(`\nReducible: ${red.isReducible(fg)}`);
 
 ### Concept Comparison
 
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/11-cfa/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
 </a>
 
 

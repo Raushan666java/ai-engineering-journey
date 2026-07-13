@@ -18,14 +18,14 @@ By the end of this chapter, you will be able to:
 
 ### 1. Importance of Puzzles in IBPS SO IT Officer Prelims
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/1-importance-of-puzzles-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance of Puzzles in IBPS SO IT Officer Prelims" width="30%">
 </a>
 
 
@@ -61,14 +61,14 @@ flowchart LR
 
 ### 2. Types of Constraints
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-handwritten.svg" alt="Handwritten: 2. Types of Constraints" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-handwritten.svg" alt="Handwritten: 2. Types of Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-diagram.svg" alt="Diagram: 2. Types of Constraints" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-diagram.svg" alt="Diagram: 2. Types of Constraints" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-sticky.svg" alt="Sticky Note: 2. Types of Constraints" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/2-types-of-constraints-sticky.svg" alt="Sticky Note: 2. Types of Constraints" width="30%">
 </a>
 
 
@@ -94,14 +94,14 @@ Understanding the types of constraints is the first step toward systematic puzzl
 
 ### 3. Floor-Based Puzzles
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-handwritten.svg" alt="Handwritten: 3. Floor-Based Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-handwritten.svg" alt="Handwritten: 3. Floor-Based Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-diagram.svg" alt="Diagram: 3. Floor-Based Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-diagram.svg" alt="Diagram: 3. Floor-Based Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-sticky.svg" alt="Sticky Note: 3. Floor-Based Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/3-floor-based-puzzles-sticky.svg" alt="Sticky Note: 3. Floor-Based Puzzles" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ Floor 1 | _____ | _____ | _____
 
 ### 4. Box-Based Puzzles
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-handwritten.svg" alt="Handwritten: 4. Box-Based Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-handwritten.svg" alt="Handwritten: 4. Box-Based Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-diagram.svg" alt="Diagram: 4. Box-Based Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-diagram.svg" alt="Diagram: 4. Box-Based Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-sticky.svg" alt="Sticky Note: 4. Box-Based Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/4-box-based-puzzles-sticky.svg" alt="Sticky Note: 4. Box-Based Puzzles" width="30%">
 </a>
 
 
@@ -186,14 +186,14 @@ When both position and weight are involved, maintain two separate representation
 
 ### 5. Scheduling Puzzles
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-handwritten.svg" alt="Handwritten: 5. Scheduling Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-handwritten.svg" alt="Handwritten: 5. Scheduling Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-diagram.svg" alt="Diagram: 5. Scheduling Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-diagram.svg" alt="Diagram: 5. Scheduling Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-sticky.svg" alt="Sticky Note: 5. Scheduling Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/5-scheduling-puzzles-sticky.svg" alt="Sticky Note: 5. Scheduling Puzzles" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ December  | _____
 
 ### 6. Comparison and Ordering Puzzles
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-handwritten.svg" alt="Handwritten: 6. Comparison and Ordering Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-handwritten.svg" alt="Handwritten: 6. Comparison and Ordering Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-diagram.svg" alt="Diagram: 6. Comparison and Ordering Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-diagram.svg" alt="Diagram: 6. Comparison and Ordering Puzzles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-sticky.svg" alt="Sticky Note: 6. Comparison and Ordering Puzzles" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/6-comparison-and-ordering-puzzles-sticky.svg" alt="Sticky Note: 6. Comparison and Ordering Puzzles" width="30%">
 </a>
 
 
@@ -284,14 +284,14 @@ flowchart TD
 
 ### 7. Advanced Puzzle-Solving Techniques
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-handwritten.svg" alt="Handwritten: 7. Advanced Puzzle-Solving Techniques" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-handwritten.svg" alt="Handwritten: 7. Advanced Puzzle-Solving Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-diagram.svg" alt="Diagram: 7. Advanced Puzzle-Solving Techniques" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-diagram.svg" alt="Diagram: 7. Advanced Puzzle-Solving Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-sticky.svg" alt="Sticky Note: 7. Advanced Puzzle-Solving Techniques" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/7-advanced-puzzle-solving-techniques-sticky.svg" alt="Sticky Note: 7. Advanced Puzzle-Solving Techniques" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@ H     |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    | 
 
 ### 8. Common Traps and Pitfalls
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-handwritten.svg" alt="Handwritten: 8. Common Traps and Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-handwritten.svg" alt="Handwritten: 8. Common Traps and Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-diagram.svg" alt="Diagram: 8. Common Traps and Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-diagram.svg" alt="Diagram: 8. Common Traps and Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-sticky.svg" alt="Sticky Note: 8. Common Traps and Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/8-common-traps-and-pitfalls-sticky.svg" alt="Sticky Note: 8. Common Traps and Pitfalls" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ H     |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    | 
 
 ### 9. Time Management Strategy for Puzzle Questions
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-handwritten.svg" alt="Handwritten: 9. Time Management Strategy for Puzzle Questions" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-handwritten.svg" alt="Handwritten: 9. Time Management Strategy for Puzzle Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-diagram.svg" alt="Diagram: 9. Time Management Strategy for Puzzle Questions" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-diagram.svg" alt="Diagram: 9. Time Management Strategy for Puzzle Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-sticky.svg" alt="Sticky Note: 9. Time Management Strategy for Puzzle Questions" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/9-time-management-strategy-for-puzzle-questions-sticky.svg" alt="Sticky Note: 9. Time Management Strategy for Puzzle Questions" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ H     |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    |    ✗    | 
 
 ### 10. Practice Strategy for IBPS SO IT Officer Prelims
 
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
 </a>
-<a href="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
+<a href="../../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/reasoning-ability/01-puzzles/10-practice-strategy-for-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 10. Practice Strategy for IBPS SO IT Officer Prelims" width="30%">
 </a>
 
 

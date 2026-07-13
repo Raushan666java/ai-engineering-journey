@@ -128,14 +128,14 @@ flowchart LR
 
 ### 34.1 Real Estate Data Models
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-handwritten.svg" alt="Handwritten: 34.1 Real Estate Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-handwritten.svg" alt="Handwritten: 34.1 Real Estate Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-diagram.svg" alt="Diagram: 34.1 Real Estate Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-diagram.svg" alt="Diagram: 34.1 Real Estate Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-sticky.svg" alt="Sticky Note: 34.1 Real Estate Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-1-real-estate-data-models-sticky.svg" alt="Sticky Note: 34.1 Real Estate Data Models" width="30%">
 </a>
 
 
@@ -736,14 +736,14 @@ class MaintenanceRequest extends Model
 
 ### 34.2 Property Listing Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-handwritten.svg" alt="Handwritten: 34.2 Property Listing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-handwritten.svg" alt="Handwritten: 34.2 Property Listing Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-diagram.svg" alt="Diagram: 34.2 Property Listing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-diagram.svg" alt="Diagram: 34.2 Property Listing Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-sticky.svg" alt="Sticky Note: 34.2 Property Listing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-2-property-listing-agents-sticky.svg" alt="Sticky Note: 34.2 Property Listing Agents" width="30%">
 </a>
 
 
@@ -1083,14 +1083,14 @@ class PropertyListingAgent
 
 ### 34.3 Valuation Prediction Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-handwritten.svg" alt="Handwritten: 34.3 Valuation Prediction Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-handwritten.svg" alt="Handwritten: 34.3 Valuation Prediction Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-diagram.svg" alt="Diagram: 34.3 Valuation Prediction Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-diagram.svg" alt="Diagram: 34.3 Valuation Prediction Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-sticky.svg" alt="Sticky Note: 34.3 Valuation Prediction Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-3-valuation-prediction-agents-sticky.svg" alt="Sticky Note: 34.3 Valuation Prediction Agents" width="30%">
 </a>
 
 
@@ -1460,14 +1460,14 @@ class ValuationAgent
 
 ### 34.4 Tour Scheduling Automation
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-handwritten.svg" alt="Handwritten: 34.4 Tour Scheduling Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-handwritten.svg" alt="Handwritten: 34.4 Tour Scheduling Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-diagram.svg" alt="Diagram: 34.4 Tour Scheduling Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-diagram.svg" alt="Diagram: 34.4 Tour Scheduling Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-sticky.svg" alt="Sticky Note: 34.4 Tour Scheduling Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-4-tour-scheduling-automation-sticky.svg" alt="Sticky Note: 34.4 Tour Scheduling Automation" width="30%">
 </a>
 
 
@@ -1813,14 +1813,14 @@ class TourSchedulingAgent
 
 ### 34.5 Document Processing Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-handwritten.svg" alt="Handwritten: 34.5 Document Processing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-handwritten.svg" alt="Handwritten: 34.5 Document Processing Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-diagram.svg" alt="Diagram: 34.5 Document Processing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-diagram.svg" alt="Diagram: 34.5 Document Processing Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-sticky.svg" alt="Sticky Note: 34.5 Document Processing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-5-document-processing-agents-sticky.svg" alt="Sticky Note: 34.5 Document Processing Agents" width="30%">
 </a>
 
 
@@ -2207,14 +2207,14 @@ class DocumentProcessingAgent
 
 ### 34.6 Lead Qualification Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-handwritten.svg" alt="Handwritten: 34.6 Lead Qualification Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-handwritten.svg" alt="Handwritten: 34.6 Lead Qualification Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-diagram.svg" alt="Diagram: 34.6 Lead Qualification Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-diagram.svg" alt="Diagram: 34.6 Lead Qualification Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-sticky.svg" alt="Sticky Note: 34.6 Lead Qualification Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-6-lead-qualification-agents-sticky.svg" alt="Sticky Note: 34.6 Lead Qualification Agents" width="30%">
 </a>
 
 
@@ -2617,14 +2617,14 @@ class LeadQualificationAgent
 
 ### 34.7 Market Analysis Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-handwritten.svg" alt="Handwritten: 34.7 Market Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-handwritten.svg" alt="Handwritten: 34.7 Market Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-diagram.svg" alt="Diagram: 34.7 Market Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-diagram.svg" alt="Diagram: 34.7 Market Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-sticky.svg" alt="Sticky Note: 34.7 Market Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-7-market-analysis-agents-sticky.svg" alt="Sticky Note: 34.7 Market Analysis Agents" width="30%">
 </a>
 
 
@@ -2954,14 +2954,14 @@ class MarketAnalysisAgent
 
 ### 34.8 Rental Management Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-handwritten.svg" alt="Handwritten: 34.8 Rental Management Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-handwritten.svg" alt="Handwritten: 34.8 Rental Management Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-diagram.svg" alt="Diagram: 34.8 Rental Management Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-diagram.svg" alt="Diagram: 34.8 Rental Management Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-sticky.svg" alt="Sticky Note: 34.8 Rental Management Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-8-rental-management-agents-sticky.svg" alt="Sticky Note: 34.8 Rental Management Agents" width="30%">
 </a>
 
 
@@ -3305,14 +3305,14 @@ class RentalManagementAgent
 
 ### 34.9 CRM for Real Estate Agents
 
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-handwritten.svg" alt="Handwritten: 34.9 CRM for Real Estate Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-handwritten.svg" alt="Handwritten: 34.9 CRM for Real Estate Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-diagram.svg" alt="Diagram: 34.9 CRM for Real Estate Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-diagram.svg" alt="Diagram: 34.9 CRM for Real Estate Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-sticky.svg" alt="Sticky Note: 34.9 CRM for Real Estate Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/34-real-estate/34-9-crm-for-real-estate-agents-sticky.svg" alt="Sticky Note: 34.9 CRM for Real Estate Agents" width="30%">
 </a>
 
 

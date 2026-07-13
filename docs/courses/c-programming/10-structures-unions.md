@@ -17,14 +17,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ flowchart LR
 
 ### Real-World Analogy: Employee Record Form
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-handwritten.svg" alt="Handwritten: Real-World Analogy: Employee Record Form" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-handwritten.svg" alt="Handwritten: Real-World Analogy: Employee Record Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-diagram.svg" alt="Diagram: Real-World Analogy: Employee Record Form" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-diagram.svg" alt="Diagram: Real-World Analogy: Employee Record Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-sticky.svg" alt="Sticky Note: Real-World Analogy: Employee Record Form" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-employee-record-form-sticky.svg" alt="Sticky Note: Real-World Analogy: Employee Record Form" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ When HR designs the blank form (the **struct definition**), they decide what slo
 
 ### Syntax of a Structure Definition
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-handwritten.svg" alt="Handwritten: Syntax of a Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-handwritten.svg" alt="Handwritten: Syntax of a Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-diagram.svg" alt="Diagram: Syntax of a Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-diagram.svg" alt="Diagram: Syntax of a Structure Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-sticky.svg" alt="Sticky Note: Syntax of a Structure Definition" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-of-a-structure-definition-sticky.svg" alt="Sticky Note: Syntax of a Structure Definition" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ struct tag_name {
 
 ### Declaring Structure Variables
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-handwritten.svg" alt="Handwritten: Declaring Structure Variables" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-handwritten.svg" alt="Handwritten: Declaring Structure Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-diagram.svg" alt="Diagram: Declaring Structure Variables" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-diagram.svg" alt="Diagram: Declaring Structure Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-sticky.svg" alt="Sticky Note: Declaring Structure Variables" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaring-structure-variables-sticky.svg" alt="Sticky Note: Declaring Structure Variables" width="30%">
 </a>
 
 
@@ -162,14 +162,14 @@ struct {
 
 ### Memory Allocation at Declaration
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-handwritten.svg" alt="Handwritten: Memory Allocation at Declaration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-handwritten.svg" alt="Handwritten: Memory Allocation at Declaration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-diagram.svg" alt="Diagram: Memory Allocation at Declaration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-diagram.svg" alt="Diagram: Memory Allocation at Declaration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-sticky.svg" alt="Sticky Note: Memory Allocation at Declaration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-allocation-at-declaration-sticky.svg" alt="Sticky Note: Memory Allocation at Declaration" width="30%">
 </a>
 
 
@@ -187,14 +187,14 @@ struct employee {
 
 ### Numbered Steps to Define and Use a Struct
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-handwritten.svg" alt="Handwritten: Numbered Steps to Define and Use a Struct" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-handwritten.svg" alt="Handwritten: Numbered Steps to Define and Use a Struct" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-diagram.svg" alt="Diagram: Numbered Steps to Define and Use a Struct" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-diagram.svg" alt="Diagram: Numbered Steps to Define and Use a Struct" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-sticky.svg" alt="Sticky Note: Numbered Steps to Define and Use a Struct" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/numbered-steps-to-define-and-use-a-struct-sticky.svg" alt="Sticky Note: Numbered Steps to Define and Use a Struct" width="30%">
 </a>
 
 
@@ -209,14 +209,14 @@ struct employee {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ PRINT ptr->name, ptr->age, ptr->height
 
 ### Complete Example with Dry Run
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-handwritten.svg" alt="Handwritten: Complete Example with Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-handwritten.svg" alt="Handwritten: Complete Example with Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-diagram.svg" alt="Diagram: Complete Example with Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-diagram.svg" alt="Diagram: Complete Example with Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-sticky.svg" alt="Sticky Note: Complete Example with Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-example-with-dry-run-sticky.svg" alt="Sticky Note: Complete Example with Dry Run" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ Size of struct: 64 bytes
 
 ### Dry Run Trace Table (Memory Layout)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Memory Layout)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-handwritten.svg" alt="Handwritten: Dry Run Trace Table (Memory Layout)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-diagram.svg" alt="Diagram: Dry Run Trace Table (Memory Layout)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-diagram.svg" alt="Diagram: Dry Run Trace Table (Memory Layout)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Memory Layout)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-table-memory-layout-sticky.svg" alt="Sticky Note: Dry Run Trace Table (Memory Layout)" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ Total: 4 + 50 + 1 + 1(pad) + 8 = **64 bytes**
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ Total: 4 + 50 + 1 + 1(pad) + 8 = **64 bytes**
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ Total: 4 + 50 + 1 + 1(pad) + 8 = **64 bytes**
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ A structure variable can be initialized in several ways:
 
 ### 10.2.1 Initializer List (Positional)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-handwritten.svg" alt="Handwritten: 10.2.1 Initializer List (Positional)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-handwritten.svg" alt="Handwritten: 10.2.1 Initializer List (Positional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-diagram.svg" alt="Diagram: 10.2.1 Initializer List (Positional)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-diagram.svg" alt="Diagram: 10.2.1 Initializer List (Positional)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-sticky.svg" alt="Sticky Note: 10.2.1 Initializer List (Positional)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-1-initializer-list-positional-sticky.svg" alt="Sticky Note: 10.2.1 Initializer List (Positional)" width="30%">
 </a>
 
 
@@ -425,14 +425,14 @@ struct employee emp1 = {1001, "Alice Johnson", 'E', 75000.50};
 
 ### 10.2.2 Designated Initializers (C99)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-handwritten.svg" alt="Handwritten: 10.2.2 Designated Initializers (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-handwritten.svg" alt="Handwritten: 10.2.2 Designated Initializers (C99)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-diagram.svg" alt="Diagram: 10.2.2 Designated Initializers (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-diagram.svg" alt="Diagram: 10.2.2 Designated Initializers (C99)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-sticky.svg" alt="Sticky Note: 10.2.2 Designated Initializers (C99)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-2-designated-initializers-c99-sticky.svg" alt="Sticky Note: 10.2.2 Designated Initializers (C99)" width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ struct employee emp3 = {1003, .name = "Carol Lee", .salary = 91000.00};
 
 ### 10.2.3 Zero Initialization
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-handwritten.svg" alt="Handwritten: 10.2.3 Zero Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-handwritten.svg" alt="Handwritten: 10.2.3 Zero Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-diagram.svg" alt="Diagram: 10.2.3 Zero Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-diagram.svg" alt="Diagram: 10.2.3 Zero Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-sticky.svg" alt="Sticky Note: 10.2.3 Zero Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-3-zero-initialization-sticky.svg" alt="Sticky Note: 10.2.3 Zero Initialization" width="30%">
 </a>
 
 
@@ -477,14 +477,14 @@ static struct employee emp5;    /* static storage -> zero-initialized automatica
 
 ### 10.2.4 Copy Initialization
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-handwritten.svg" alt="Handwritten: 10.2.4 Copy Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-handwritten.svg" alt="Handwritten: 10.2.4 Copy Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-diagram.svg" alt="Diagram: 10.2.4 Copy Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-diagram.svg" alt="Diagram: 10.2.4 Copy Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-sticky.svg" alt="Sticky Note: 10.2.4 Copy Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-4-copy-initialization-sticky.svg" alt="Sticky Note: 10.2.4 Copy Initialization" width="30%">
 </a>
 
 
@@ -498,14 +498,14 @@ emp7 = emp1;                    /* assignment also copies member-by-member */
 
 ### 10.2.5 Dynamic Allocation Initialization
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-handwritten.svg" alt="Handwritten: 10.2.5 Dynamic Allocation Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-handwritten.svg" alt="Handwritten: 10.2.5 Dynamic Allocation Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-diagram.svg" alt="Diagram: 10.2.5 Dynamic Allocation Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-diagram.svg" alt="Diagram: 10.2.5 Dynamic Allocation Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-sticky.svg" alt="Sticky Note: 10.2.5 Dynamic Allocation Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/10-2-5-dynamic-allocation-initialization-sticky.svg" alt="Sticky Note: 10.2.5 Dynamic Allocation Initialization" width="30%">
 </a>
 
 
@@ -524,14 +524,14 @@ if (p != NULL) {
 
 ### Code Example with Output
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-handwritten.svg" alt="Handwritten: Code Example with Output" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-handwritten.svg" alt="Handwritten: Code Example with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-diagram.svg" alt="Diagram: Code Example with Output" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-diagram.svg" alt="Diagram: Code Example with Output" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-sticky.svg" alt="Sticky Note: Code Example with Output" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-with-output-sticky.svg" alt="Sticky Note: Code Example with Output" width="30%">
 </a>
 
 
@@ -584,14 +584,14 @@ e5 (copy of e1): 1001, Alice Johnson, E, 75000.50
 
 ### Dry Run Trace for Designated Initializer
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-handwritten.svg" alt="Handwritten: Dry Run Trace for Designated Initializer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-handwritten.svg" alt="Handwritten: Dry Run Trace for Designated Initializer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-diagram.svg" alt="Diagram: Dry Run Trace for Designated Initializer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-diagram.svg" alt="Diagram: Dry Run Trace for Designated Initializer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-sticky.svg" alt="Sticky Note: Dry Run Trace for Designated Initializer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-trace-for-designated-initializer-sticky.svg" alt="Sticky Note: Dry Run Trace for Designated Initializer" width="30%">
 </a>
 
 
@@ -605,14 +605,14 @@ e5 (copy of e1): 1001, Alice Johnson, E, 75000.50
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@ e5 (copy of e1): 1001, Alice Johnson, E, 75000.50
 
 ### Real-World Analogy: Form Fields
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-handwritten.svg" alt="Handwritten: Real-World Analogy: Form Fields" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-handwritten.svg" alt="Handwritten: Real-World Analogy: Form Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-diagram.svg" alt="Diagram: Real-World Analogy: Form Fields" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-diagram.svg" alt="Diagram: Real-World Analogy: Form Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-sticky.svg" alt="Sticky Note: Real-World Analogy: Form Fields" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-form-fields-sticky.svg" alt="Sticky Note: Real-World Analogy: Form Fields" width="30%">
 </a>
 
 
@@ -644,14 +644,14 @@ If `emp1` is a physical employee folder, then `emp1.id` is the "Employee ID" fie
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -663,14 +663,14 @@ The dot operator has the **highest precedence** among binary operators (along wi
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ Address of emp.salary:0x7FFD3A38
 
 ### Dry Run: Member Access Pattern
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-handwritten.svg" alt="Handwritten: Dry Run: Member Access Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-handwritten.svg" alt="Handwritten: Dry Run: Member Access Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-diagram.svg" alt="Diagram: Dry Run: Member Access Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-diagram.svg" alt="Diagram: Dry Run: Member Access Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-sticky.svg" alt="Sticky Note: Dry Run: Member Access Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-member-access-pattern-sticky.svg" alt="Sticky Note: Dry Run: Member Access Pattern" width="30%">
 </a>
 
 
@@ -754,14 +754,14 @@ Step 5: Read 8 bytes (double) from 0x7FFD3A38
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -777,14 +777,14 @@ Step 5: Read 8 bytes (double) from 0x7FFD3A38
 
 ### Real-World Analogy: Address Inside Employee
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-handwritten.svg" alt="Handwritten: Real-World Analogy: Address Inside Employee" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-handwritten.svg" alt="Handwritten: Real-World Analogy: Address Inside Employee" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-diagram.svg" alt="Diagram: Real-World Analogy: Address Inside Employee" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-diagram.svg" alt="Diagram: Real-World Analogy: Address Inside Employee" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-sticky.svg" alt="Sticky Note: Real-World Analogy: Address Inside Employee" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-address-inside-employee-sticky.svg" alt="Sticky Note: Real-World Analogy: Address Inside Employee" width="30%">
 </a>
 
 
@@ -807,14 +807,14 @@ An employee form has an "Address" section that itself contains Street, City, Zip
 
 ### Declaration and Initialization
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" alt="Handwritten: Declaration and Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" alt="Handwritten: Declaration and Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" alt="Diagram: Declaration and Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" alt="Diagram: Declaration and Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" alt="Sticky Note: Declaration and Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" alt="Sticky Note: Declaration and Initialization" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ typedef struct {
 
 ### Accessing Nested Members
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-handwritten.svg" alt="Handwritten: Accessing Nested Members" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-handwritten.svg" alt="Handwritten: Accessing Nested Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-diagram.svg" alt="Diagram: Accessing Nested Members" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-diagram.svg" alt="Diagram: Accessing Nested Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-sticky.svg" alt="Sticky Note: Accessing Nested Members" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-nested-members-sticky.svg" alt="Sticky Note: Accessing Nested Members" width="30%">
 </a>
 
 
@@ -850,14 +850,14 @@ Use the dot operator **chained**: `emp.addr.zip`
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -935,14 +935,14 @@ sizeof(Employee) = 224
 
 ### Dry Run: Nested Structure Memory Layout
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-handwritten.svg" alt="Handwritten: Dry Run: Nested Structure Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-handwritten.svg" alt="Handwritten: Dry Run: Nested Structure Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-diagram.svg" alt="Diagram: Dry Run: Nested Structure Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-diagram.svg" alt="Diagram: Dry Run: Nested Structure Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-sticky.svg" alt="Sticky Note: Dry Run: Nested Structure Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-nested-structure-memory-layout-sticky.svg" alt="Sticky Note: Dry Run: Nested Structure Memory Layout" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ Offset: 0    4                   54      56               212   216       224
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -1002,14 +1002,14 @@ Offset: 0    4                   54      56               212   216       224
 
 ### Real-World Analogy: Library Catalog
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Catalog" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-handwritten.svg" alt="Handwritten: Real-World Analogy: Library Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-diagram.svg" alt="Diagram: Real-World Analogy: Library Catalog" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-diagram.svg" alt="Diagram: Real-World Analogy: Library Catalog" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Catalog" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-library-catalog-sticky.svg" alt="Sticky Note: Real-World Analogy: Library Catalog" width="30%">
 </a>
 
 
@@ -1032,14 +1032,14 @@ A library has hundreds of books. Each book has a title, author, ISBN, and year. 
 
 ### Declaration and Initialization
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" alt="Handwritten: Declaration and Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-handwritten.svg" alt="Handwritten: Declaration and Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" alt="Diagram: Declaration and Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-diagram.svg" alt="Diagram: Declaration and Initialization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" alt="Sticky Note: Declaration and Initialization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-initialization-sticky.svg" alt="Sticky Note: Declaration and Initialization" width="30%">
 </a>
 
 
@@ -1061,14 +1061,14 @@ Book library[3] = {
 
 ### Accessing Array Elements
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-handwritten.svg" alt="Handwritten: Accessing Array Elements" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-handwritten.svg" alt="Handwritten: Accessing Array Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-diagram.svg" alt="Diagram: Accessing Array Elements" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-diagram.svg" alt="Diagram: Accessing Array Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-sticky.svg" alt="Sticky Note: Accessing Array Elements" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/accessing-array-elements-sticky.svg" alt="Sticky Note: Accessing Array Elements" width="30%">
 </a>
 
 
@@ -1080,14 +1080,14 @@ library[i].title  /* i-th book's title */
 
 ### Code Example: Full Program
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-handwritten.svg" alt="Handwritten: Code Example: Full Program" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-handwritten.svg" alt="Handwritten: Code Example: Full Program" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-diagram.svg" alt="Diagram: Code Example: Full Program" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-diagram.svg" alt="Diagram: Code Example: Full Program" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-sticky.svg" alt="Sticky Note: Code Example: Full Program" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-full-program-sticky.svg" alt="Sticky Note: Code Example: Full Program" width="30%">
 </a>
 
 
@@ -1162,14 +1162,14 @@ sizeof(library)= 800 bytes (5 x 160)
 
 ### Dry Run: Array Element Access
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-handwritten.svg" alt="Handwritten: Dry Run: Array Element Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-handwritten.svg" alt="Handwritten: Dry Run: Array Element Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-diagram.svg" alt="Diagram: Dry Run: Array Element Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-diagram.svg" alt="Diagram: Dry Run: Array Element Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-sticky.svg" alt="Sticky Note: Dry Run: Array Element Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-array-element-access-sticky.svg" alt="Sticky Note: Dry Run: Array Element Access" width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ Step 5: Read null-terminated string from that address -> "Frank Herbert"
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -1213,14 +1213,14 @@ Step 5: Read null-terminated string from that address -> "Frank Herbert"
 
 ### Real-World Analogy: Business Card Pointer
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-handwritten.svg" alt="Handwritten: Real-World Analogy: Business Card Pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-handwritten.svg" alt="Handwritten: Real-World Analogy: Business Card Pointer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-diagram.svg" alt="Diagram: Real-World Analogy: Business Card Pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-diagram.svg" alt="Diagram: Real-World Analogy: Business Card Pointer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-sticky.svg" alt="Sticky Note: Real-World Analogy: Business Card Pointer" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-business-card-pointer-sticky.svg" alt="Sticky Note: Real-World Analogy: Business Card Pointer" width="30%">
 </a>
 
 
@@ -1231,14 +1231,14 @@ You have a business card (the struct) on a table. Someone gives you a slip of pa
 
 ### Why Use a Pointer to Struct?
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-handwritten.svg" alt="Handwritten: Why Use a Pointer to Struct?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-handwritten.svg" alt="Handwritten: Why Use a Pointer to Struct?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-diagram.svg" alt="Diagram: Why Use a Pointer to Struct?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-diagram.svg" alt="Diagram: Why Use a Pointer to Struct?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-sticky.svg" alt="Sticky Note: Why Use a Pointer to Struct?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/why-use-a-pointer-to-struct-sticky.svg" alt="Sticky Note: Why Use a Pointer to Struct?" width="30%">
 </a>
 
 
@@ -1250,14 +1250,14 @@ You have a business card (the struct) on a table. Someone gives you a slip of pa
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1269,14 +1269,14 @@ ptr->member = value;  /* access member through pointer */
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -1354,14 +1354,14 @@ sizeof(Employee) = 64 bytes
 
 ### Dry Run: Arrow Operator Evaluation
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-handwritten.svg" alt="Handwritten: Dry Run: Arrow Operator Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-handwritten.svg" alt="Handwritten: Dry Run: Arrow Operator Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-diagram.svg" alt="Diagram: Dry Run: Arrow Operator Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-diagram.svg" alt="Diagram: Dry Run: Arrow Operator Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-sticky.svg" alt="Sticky Note: Dry Run: Arrow Operator Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-arrow-operator-evaluation-sticky.svg" alt="Sticky Note: Dry Run: Arrow Operator Evaluation" width="30%">
 </a>
 
 
@@ -1382,14 +1382,14 @@ Step 4: Read 8 bytes from 0x7FFD3A38 as a double -> 75000.00
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -1402,14 +1402,14 @@ Step 4: Read 8 bytes from 0x7FFD3A38 as a double -> 75000.00
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1433,14 +1433,14 @@ void safe_print(Employee *ptr) {
 
 ### Real-World Analogy: Mailbox Sizes
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-handwritten.svg" alt="Handwritten: Real-World Analogy: Mailbox Sizes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-handwritten.svg" alt="Handwritten: Real-World Analogy: Mailbox Sizes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-diagram.svg" alt="Diagram: Real-World Analogy: Mailbox Sizes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-diagram.svg" alt="Diagram: Real-World Analogy: Mailbox Sizes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-sticky.svg" alt="Sticky Note: Real-World Analogy: Mailbox Sizes" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-mailbox-sizes-sticky.svg" alt="Sticky Note: Real-World Analogy: Mailbox Sizes" width="30%">
 </a>
 
 
@@ -1465,14 +1465,14 @@ If an int is at address 2, the CPU must do TWO reads and merge — slow!
 
 ### Why Padding Exists
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-handwritten.svg" alt="Handwritten: Why Padding Exists" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-handwritten.svg" alt="Handwritten: Why Padding Exists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-diagram.svg" alt="Diagram: Why Padding Exists" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-diagram.svg" alt="Diagram: Why Padding Exists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-sticky.svg" alt="Sticky Note: Why Padding Exists" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/why-padding-exists-sticky.svg" alt="Sticky Note: Why Padding Exists" width="30%">
 </a>
 
 
@@ -1482,14 +1482,14 @@ If an int is at address 2, the CPU must do TWO reads and merge — slow!
 
 ### Alignment Rules (typical x86-64, GCC/MSVC)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-handwritten.svg" alt="Handwritten: Alignment Rules (typical x86-64, GCC/MSVC)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-handwritten.svg" alt="Handwritten: Alignment Rules (typical x86-64, GCC/MSVC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-diagram.svg" alt="Diagram: Alignment Rules (typical x86-64, GCC/MSVC)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-diagram.svg" alt="Diagram: Alignment Rules (typical x86-64, GCC/MSVC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-sticky.svg" alt="Sticky Note: Alignment Rules (typical x86-64, GCC/MSVC)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-typical-x86-64-gcc-msvc-sticky.svg" alt="Sticky Note: Alignment Rules (typical x86-64, GCC/MSVC)" width="30%">
 </a>
 
 
@@ -1534,14 +1534,14 @@ struct badly_ordered {
 
 ### Code Example: Padding Visualization
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-handwritten.svg" alt="Handwritten: Code Example: Padding Visualization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-handwritten.svg" alt="Handwritten: Code Example: Padding Visualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-diagram.svg" alt="Diagram: Code Example: Padding Visualization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-diagram.svg" alt="Diagram: Code Example: Padding Visualization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-sticky.svg" alt="Sticky Note: Code Example: Padding Visualization" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-padding-visualization-sticky.svg" alt="Sticky Note: Code Example: Padding Visualization" width="30%">
 </a>
 
 
@@ -1619,14 +1619,14 @@ sizeof(struct packed_struct) = 15
 
 ### Memory Layout Diagrams
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-handwritten.svg" alt="Handwritten: Memory Layout Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-handwritten.svg" alt="Handwritten: Memory Layout Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-diagram.svg" alt="Diagram: Memory Layout Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-diagram.svg" alt="Diagram: Memory Layout Diagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-sticky.svg" alt="Sticky Note: Memory Layout Diagrams" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/memory-layout-diagrams-sticky.svg" alt="Sticky Note: Memory Layout Diagrams" width="30%">
 </a>
 
 
@@ -1659,14 +1659,14 @@ Offset: 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14
 
 ### Minimizing Padding: Best Practices
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-handwritten.svg" alt="Handwritten: Minimizing Padding: Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-handwritten.svg" alt="Handwritten: Minimizing Padding: Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-diagram.svg" alt="Diagram: Minimizing Padding: Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-diagram.svg" alt="Diagram: Minimizing Padding: Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-sticky.svg" alt="Sticky Note: Minimizing Padding: Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/minimizing-padding-best-practices-sticky.svg" alt="Sticky Note: Minimizing Padding: Best Practices" width="30%">
 </a>
 
 
@@ -1677,14 +1677,14 @@ Offset: 0  1  2  3  4  5  6  7  8  9  10 11 12 13 14
 
 ### Packing Directives
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-handwritten.svg" alt="Handwritten: Packing Directives" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-handwritten.svg" alt="Handwritten: Packing Directives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-diagram.svg" alt="Diagram: Packing Directives" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-diagram.svg" alt="Diagram: Packing Directives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-sticky.svg" alt="Sticky Note: Packing Directives" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/packing-directives-sticky.svg" alt="Sticky Note: Packing Directives" width="30%">
 </a>
 
 
@@ -1706,14 +1706,14 @@ struct my_packed_msvc {
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -1726,14 +1726,14 @@ struct my_packed_msvc {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1749,14 +1749,14 @@ struct my_packed_msvc {
 
 ### Real-World Analogy: Luggage Tags
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-handwritten.svg" alt="Handwritten: Real-World Analogy: Luggage Tags" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-handwritten.svg" alt="Handwritten: Real-World Analogy: Luggage Tags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-diagram.svg" alt="Diagram: Real-World Analogy: Luggage Tags" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-diagram.svg" alt="Diagram: Real-World Analogy: Luggage Tags" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-sticky.svg" alt="Sticky Note: Real-World Analogy: Luggage Tags" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-luggage-tags-sticky.svg" alt="Sticky Note: Real-World Analogy: Luggage Tags" width="30%">
 </a>
 
 
@@ -1776,14 +1776,14 @@ With bit fields (4 bytes):
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1797,14 +1797,14 @@ Where `type` must be `int`, `unsigned int`, `signed int`, or `_Bool` (C99). Some
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -1875,14 +1875,14 @@ After overflow: mode = 0 (expected 0)
 
 ### Alignment Rules for Bit Fields
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-handwritten.svg" alt="Handwritten: Alignment Rules for Bit Fields" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-handwritten.svg" alt="Handwritten: Alignment Rules for Bit Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-diagram.svg" alt="Diagram: Alignment Rules for Bit Fields" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-diagram.svg" alt="Diagram: Alignment Rules for Bit Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-sticky.svg" alt="Sticky Note: Alignment Rules for Bit Fields" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/alignment-rules-for-bit-fields-sticky.svg" alt="Sticky Note: Alignment Rules for Bit Fields" width="30%">
 </a>
 
 
@@ -1906,14 +1906,14 @@ typedef struct {
 
 ### Bit Field Portability Issues
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-handwritten.svg" alt="Handwritten: Bit Field Portability Issues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-handwritten.svg" alt="Handwritten: Bit Field Portability Issues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-diagram.svg" alt="Diagram: Bit Field Portability Issues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-diagram.svg" alt="Diagram: Bit Field Portability Issues" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-sticky.svg" alt="Sticky Note: Bit Field Portability Issues" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-issues-sticky.svg" alt="Sticky Note: Bit Field Portability Issues" width="30%">
 </a>
 
 
@@ -1928,14 +1928,14 @@ typedef struct {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1950,14 +1950,14 @@ typedef struct {
 
 ### Real-World Analogy: Giving a Nickname
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-handwritten.svg" alt="Handwritten: Real-World Analogy: Giving a Nickname" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-handwritten.svg" alt="Handwritten: Real-World Analogy: Giving a Nickname" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-diagram.svg" alt="Diagram: Real-World Analogy: Giving a Nickname" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-diagram.svg" alt="Diagram: Real-World Analogy: Giving a Nickname" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-sticky.svg" alt="Sticky Note: Real-World Analogy: Giving a Nickname" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-giving-a-nickname-sticky.svg" alt="Sticky Note: Real-World Analogy: Giving a Nickname" width="30%">
 </a>
 
 
@@ -1965,14 +1965,14 @@ When you always call your friend "Robert" you have to say the full 6 letters. Wh
 
 ### Four Common Patterns
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-handwritten.svg" alt="Handwritten: Four Common Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-handwritten.svg" alt="Handwritten: Four Common Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-diagram.svg" alt="Diagram: Four Common Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-diagram.svg" alt="Diagram: Four Common Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-sticky.svg" alt="Sticky Note: Four Common Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/four-common-patterns-sticky.svg" alt="Sticky Note: Four Common Patterns" width="30%">
 </a>
 
 
@@ -2005,14 +2005,14 @@ typedef struct {
 
 ### When to Use typedef
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-handwritten.svg" alt="Handwritten: When to Use typedef" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-handwritten.svg" alt="Handwritten: When to Use typedef" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-diagram.svg" alt="Diagram: When to Use typedef" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-diagram.svg" alt="Diagram: When to Use typedef" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-sticky.svg" alt="Sticky Note: When to Use typedef" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/when-to-use-typedef-sticky.svg" alt="Sticky Note: When to Use typedef" width="30%">
 </a>
 
 
@@ -2025,14 +2025,14 @@ typedef struct {
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -2087,14 +2087,14 @@ Rect: 100x50
 
 ### Real-World Analogy: Parking Spot
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-handwritten.svg" alt="Handwritten: Real-World Analogy: Parking Spot" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-handwritten.svg" alt="Handwritten: Real-World Analogy: Parking Spot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-diagram.svg" alt="Diagram: Real-World Analogy: Parking Spot" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-diagram.svg" alt="Diagram: Real-World Analogy: Parking Spot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-sticky.svg" alt="Sticky Note: Real-World Analogy: Parking Spot" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-parking-spot-sticky.svg" alt="Sticky Note: Real-World Analogy: Parking Spot" width="30%">
 </a>
 
 
@@ -2120,14 +2120,14 @@ After removing SUV and parking motorcycle:
 
 ### Declaration and Memory Layout
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-handwritten.svg" alt="Handwritten: Declaration and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-handwritten.svg" alt="Handwritten: Declaration and Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-diagram.svg" alt="Diagram: Declaration and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-diagram.svg" alt="Diagram: Declaration and Memory Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-sticky.svg" alt="Sticky Note: Declaration and Memory Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/declaration-and-memory-layout-sticky.svg" alt="Sticky Note: Declaration and Memory Layout" width="30%">
 </a>
 
 
@@ -2161,14 +2161,14 @@ Offset:  0                                   7
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -2238,14 +2238,14 @@ sizeof(Data) = 4 bytes
 
 ### Dry Run: Union Memory Overwrite
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-handwritten.svg" alt="Handwritten: Dry Run: Union Memory Overwrite" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-handwritten.svg" alt="Handwritten: Dry Run: Union Memory Overwrite" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-diagram.svg" alt="Diagram: Dry Run: Union Memory Overwrite" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-diagram.svg" alt="Diagram: Dry Run: Union Memory Overwrite" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-sticky.svg" alt="Sticky Note: Dry Run: Union Memory Overwrite" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/dry-run-union-memory-overwrite-sticky.svg" alt="Sticky Note: Dry Run: Union Memory Overwrite" width="30%">
 </a>
 
 
@@ -2266,14 +2266,14 @@ Step 5: printf("%d", d.i); — reads 4 bytes -> 0x4048F5C3 = 1078523331
 
 ### Type Punning (Legal and Illegal Uses)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-handwritten.svg" alt="Handwritten: Type Punning (Legal and Illegal Uses)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-handwritten.svg" alt="Handwritten: Type Punning (Legal and Illegal Uses)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-diagram.svg" alt="Diagram: Type Punning (Legal and Illegal Uses)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-diagram.svg" alt="Diagram: Type Punning (Legal and Illegal Uses)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-sticky.svg" alt="Sticky Note: Type Punning (Legal and Illegal Uses)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/type-punning-legal-and-illegal-uses-sticky.svg" alt="Sticky Note: Type Punning (Legal and Illegal Uses)" width="30%">
 </a>
 
 
@@ -2295,14 +2295,14 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 ### Complexity
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-handwritten.svg" alt="Handwritten: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-diagram.svg" alt="Diagram: Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complexity-sticky.svg" alt="Sticky Note: Complexity" width="30%">
 </a>
 
 
@@ -2314,14 +2314,14 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 ### Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -2334,14 +2334,14 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2356,14 +2356,14 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 ### Decision Guide
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-handwritten.svg" alt="Handwritten: Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-handwritten.svg" alt="Handwritten: Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-diagram.svg" alt="Diagram: Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-diagram.svg" alt="Diagram: Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-sticky.svg" alt="Sticky Note: Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/decision-guide-sticky.svg" alt="Sticky Note: Decision Guide" width="30%">
 </a>
 
 
@@ -2372,14 +2372,14 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 ### Detailed Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-handwritten.svg" alt="Handwritten: Detailed Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-handwritten.svg" alt="Handwritten: Detailed Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-diagram.svg" alt="Diagram: Detailed Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-diagram.svg" alt="Diagram: Detailed Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-sticky.svg" alt="Sticky Note: Detailed Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/detailed-comparison-table-sticky.svg" alt="Sticky Note: Detailed Comparison Table" width="30%">
 </a>
 
 
@@ -2398,14 +2398,14 @@ uint32_t bits = *(uint32_t*)&f;   /* UNDEFINED BEHAVIOR */
 
 ### Code Comparison
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-handwritten.svg" alt="Handwritten: Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-handwritten.svg" alt="Handwritten: Code Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-diagram.svg" alt="Diagram: Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-diagram.svg" alt="Diagram: Code Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-sticky.svg" alt="Sticky Note: Code Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/code-comparison-sticky.svg" alt="Sticky Note: Code Comparison" width="30%">
 </a>
 
 
@@ -2481,14 +2481,14 @@ Union:   &u=0x7FFD3A10 &u.i=0x7FFD3A10 &u.f=0x7FFD3A10 &u.c=0x7FFD3A10
 
 ### Real-World Analogy: Unlabeled Section
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-handwritten.svg" alt="Handwritten: Real-World Analogy: Unlabeled Section" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-handwritten.svg" alt="Handwritten: Real-World Analogy: Unlabeled Section" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-diagram.svg" alt="Diagram: Real-World Analogy: Unlabeled Section" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-diagram.svg" alt="Diagram: Real-World Analogy: Unlabeled Section" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-sticky.svg" alt="Sticky Note: Real-World Analogy: Unlabeled Section" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/real-world-analogy-unlabeled-section-sticky.svg" alt="Sticky Note: Real-World Analogy: Unlabeled Section" width="30%">
 </a>
 
 
@@ -2496,14 +2496,14 @@ A form might have an unlabeled "Notes" section that you write directly in withou
 
 ### Syntax (C11 and later)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-handwritten.svg" alt="Handwritten: Syntax (C11 and later)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-handwritten.svg" alt="Handwritten: Syntax (C11 and later)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-diagram.svg" alt="Diagram: Syntax (C11 and later)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-diagram.svg" alt="Diagram: Syntax (C11 and later)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-sticky.svg" alt="Sticky Note: Syntax (C11 and later)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/syntax-c11-and-later-sticky.svg" alt="Sticky Note: Syntax (C11 and later)" width="30%">
 </a>
 
 
@@ -2523,14 +2523,14 @@ v.type = 'i';
 
 ### Complete Code Example
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-handwritten.svg" alt="Handwritten: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-diagram.svg" alt="Diagram: Complete Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/complete-code-example-sticky.svg" alt="Sticky Note: Complete Code Example" width="30%">
 </a>
 
 
@@ -2587,14 +2587,14 @@ Circle: radius=25
 
 ### Advantages
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-handwritten.svg" alt="Handwritten: Advantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-handwritten.svg" alt="Handwritten: Advantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-diagram.svg" alt="Diagram: Advantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-diagram.svg" alt="Diagram: Advantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/advantages-sticky.svg" alt="Sticky Note: Advantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/advantages-sticky.svg" alt="Sticky Note: Advantages" width="30%">
 </a>
 
 
@@ -2605,14 +2605,14 @@ Circle: radius=25
 
 ### Limitations
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/limitations-handwritten.svg" alt="Handwritten: Limitations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/limitations-handwritten.svg" alt="Handwritten: Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/limitations-diagram.svg" alt="Diagram: Limitations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/limitations-diagram.svg" alt="Diagram: Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/limitations-sticky.svg" alt="Sticky Note: Limitations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/limitations-sticky.svg" alt="Sticky Note: Limitations" width="30%">
 </a>
 
 
@@ -2626,14 +2626,14 @@ Circle: radius=25
 
 ### Struct vs Union
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-handwritten.svg" alt="Handwritten: Struct vs Union" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-handwritten.svg" alt="Handwritten: Struct vs Union" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-diagram.svg" alt="Diagram: Struct vs Union" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-diagram.svg" alt="Diagram: Struct vs Union" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-sticky.svg" alt="Sticky Note: Struct vs Union" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/struct-vs-union-sticky.svg" alt="Sticky Note: Struct vs Union" width="30%">
 </a>
 
 
@@ -2654,14 +2654,14 @@ Circle: radius=25
 
 ### Padding vs Packing Comparison
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-handwritten.svg" alt="Handwritten: Padding vs Packing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-handwritten.svg" alt="Handwritten: Padding vs Packing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-diagram.svg" alt="Diagram: Padding vs Packing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-diagram.svg" alt="Diagram: Padding vs Packing Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-sticky.svg" alt="Sticky Note: Padding vs Packing Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/padding-vs-packing-comparison-sticky.svg" alt="Sticky Note: Padding vs Packing Comparison" width="30%">
 </a>
 
 
@@ -2677,14 +2677,14 @@ Circle: radius=25
 
 ### typedef struct Patterns
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-handwritten.svg" alt="Handwritten: typedef struct Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-handwritten.svg" alt="Handwritten: typedef struct Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-diagram.svg" alt="Diagram: typedef struct Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-diagram.svg" alt="Diagram: typedef struct Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-sticky.svg" alt="Sticky Note: typedef struct Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/typedef-struct-patterns-sticky.svg" alt="Sticky Note: typedef struct Patterns" width="30%">
 </a>
 
 
@@ -2701,14 +2701,14 @@ Circle: radius=25
 
 ### Q1: Calculate Struct Size (Padding)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-handwritten.svg" alt="Handwritten: Calculate Struct Size (Padding)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-handwritten.svg" alt="Handwritten: Calculate Struct Size (Padding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-diagram.svg" alt="Diagram: Calculate Struct Size (Padding)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-diagram.svg" alt="Diagram: Calculate Struct Size (Padding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-sticky.svg" alt="Sticky Note: Calculate Struct Size (Padding)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/calculate-struct-size-padding-sticky.svg" alt="Sticky Note: Calculate Struct Size (Padding)" width="30%">
 </a>
 
 
@@ -2730,14 +2730,14 @@ Optimized reorder: `struct A_opt { double d; int i; char c; };` -> 16 bytes.
 
 ### Q2: Using Union in Networking
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-handwritten.svg" alt="Handwritten: Using Union in Networking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-handwritten.svg" alt="Handwritten: Using Union in Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-diagram.svg" alt="Diagram: Using Union in Networking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-diagram.svg" alt="Diagram: Using Union in Networking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-sticky.svg" alt="Sticky Note: Using Union in Networking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/using-union-in-networking-sticky.svg" alt="Sticky Note: Using Union in Networking" width="30%">
 </a>
 
 
@@ -2770,14 +2770,14 @@ printf("Version: %u, IHL: %u\n",
 
 ### Q3: Bit Field Portability
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-handwritten.svg" alt="Handwritten: Bit Field Portability" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-handwritten.svg" alt="Handwritten: Bit Field Portability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-diagram.svg" alt="Diagram: Bit Field Portability" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-diagram.svg" alt="Diagram: Bit Field Portability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-sticky.svg" alt="Sticky Note: Bit Field Portability" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/bit-field-portability-sticky.svg" alt="Sticky Note: Bit Field Portability" width="30%">
 </a>
 
 
@@ -2804,14 +2804,14 @@ typedef struct {
 
 ### Q4: Flexible Array Member
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-handwritten.svg" alt="Handwritten: Flexible Array Member" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-handwritten.svg" alt="Handwritten: Flexible Array Member" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-diagram.svg" alt="Diagram: Flexible Array Member" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-diagram.svg" alt="Diagram: Flexible Array Member" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-sticky.svg" alt="Sticky Note: Flexible Array Member" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/flexible-array-member-sticky.svg" alt="Sticky Note: Flexible Array Member" width="30%">
 </a>
 
 
@@ -2889,14 +2889,14 @@ Allocated = 4 + 20 = 24 bytes
 
 ### Network Protocol Headers as Structs
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-handwritten.svg" alt="Handwritten: Network Protocol Headers as Structs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-handwritten.svg" alt="Handwritten: Network Protocol Headers as Structs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-diagram.svg" alt="Diagram: Network Protocol Headers as Structs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-diagram.svg" alt="Diagram: Network Protocol Headers as Structs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-sticky.svg" alt="Sticky Note: Network Protocol Headers as Structs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/network-protocol-headers-as-structs-sticky.svg" alt="Sticky Note: Network Protocol Headers as Structs" width="30%">
 </a>
 
 
@@ -2942,14 +2942,14 @@ struct __attribute__((packed)) tcp_hdr {
 
 ### Union for Type Punning (IEEE 754 Exploration)
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-handwritten.svg" alt="Handwritten: Union for Type Punning (IEEE 754 Exploration)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-handwritten.svg" alt="Handwritten: Union for Type Punning (IEEE 754 Exploration)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-diagram.svg" alt="Diagram: Union for Type Punning (IEEE 754 Exploration)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-diagram.svg" alt="Diagram: Union for Type Punning (IEEE 754 Exploration)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-sticky.svg" alt="Sticky Note: Union for Type Punning (IEEE 754 Exploration)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/union-for-type-punning-ieee-754-exploration-sticky.svg" alt="Sticky Note: Union for Type Punning (IEEE 754 Exploration)" width="30%">
 </a>
 
 
@@ -2993,14 +2993,14 @@ mantissa: 0x48F5C3 (4781507)
 
 ### Hardware Register Mapping
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-handwritten.svg" alt="Handwritten: Hardware Register Mapping" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-handwritten.svg" alt="Handwritten: Hardware Register Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-diagram.svg" alt="Diagram: Hardware Register Mapping" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-diagram.svg" alt="Diagram: Hardware Register Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-sticky.svg" alt="Sticky Note: Hardware Register Mapping" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/hardware-register-mapping-sticky.svg" alt="Sticky Note: Hardware Register Mapping" width="30%">
 </a>
 
 
@@ -3036,14 +3036,14 @@ void uart_init(void) {
 
 ### Database Record Layout
 
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-handwritten.svg" alt="Handwritten: Database Record Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-handwritten.svg" alt="Handwritten: Database Record Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-diagram.svg" alt="Diagram: Database Record Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-diagram.svg" alt="Diagram: Database Record Layout" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-sticky.svg" alt="Sticky Note: Database Record Layout" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/10-structures-unions/database-record-layout-sticky.svg" alt="Sticky Note: Database Record Layout" width="30%">
 </a>
 
 

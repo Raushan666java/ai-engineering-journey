@@ -17,14 +17,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ flowchart LR
 
 ### IPv4 Packet Header Structure
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-handwritten.svg" alt="Handwritten: IPv4 Packet Header Structure" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-handwritten.svg" alt="Handwritten: IPv4 Packet Header Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-diagram.svg" alt="Diagram: IPv4 Packet Header Structure" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-diagram.svg" alt="Diagram: IPv4 Packet Header Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-sticky.svg" alt="Sticky Note: IPv4 Packet Header Structure" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-packet-header-structure-sticky.svg" alt="Sticky Note: IPv4 Packet Header Structure" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ The network layer provides host-to-host communication across multiple links. Its
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -159,14 +159,14 @@ The network layer is like a country's postal system. The IP address is the stree
 
 ### Services Provided
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-handwritten.svg" alt="Handwritten: Services Provided" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-handwritten.svg" alt="Handwritten: Services Provided" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-diagram.svg" alt="Diagram: Services Provided" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-diagram.svg" alt="Diagram: Services Provided" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-sticky.svg" alt="Sticky Note: Services Provided" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/services-provided-sticky.svg" alt="Sticky Note: Services Provided" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ The network layer is like a country's postal system. The IP address is the stree
 
 ### Numbered Steps: Network Layer Delivery
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-handwritten.svg" alt="Handwritten: Numbered Steps: Network Layer Delivery" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-handwritten.svg" alt="Handwritten: Numbered Steps: Network Layer Delivery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-diagram.svg" alt="Diagram: Numbered Steps: Network Layer Delivery" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-diagram.svg" alt="Diagram: Numbered Steps: Network Layer Delivery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-sticky.svg" alt="Sticky Note: Numbered Steps: Network Layer Delivery" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-network-layer-delivery-sticky.svg" alt="Sticky Note: Numbered Steps: Network Layer Delivery" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ The network layer is like a country's postal system. The IP address is the stree
 
 ### Pseudocode: Network Layer Forwarding
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-handwritten.svg" alt="Handwritten: Pseudocode: Network Layer Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-handwritten.svg" alt="Handwritten: Pseudocode: Network Layer Forwarding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-diagram.svg" alt="Diagram: Pseudocode: Network Layer Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-diagram.svg" alt="Diagram: Pseudocode: Network Layer Forwarding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-sticky.svg" alt="Sticky Note: Pseudocode: Network Layer Forwarding" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-network-layer-forwarding-sticky.svg" alt="Sticky Note: Pseudocode: Network Layer Forwarding" width="30%">
 </a>
 
 
@@ -235,14 +235,14 @@ function forward_packet(datagram, routing_table):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ The IPv4 header is 20 bytes (minimum) to 60 bytes (with options).
 
 ### 6.1.1 Header Fields
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-handwritten.svg" alt="Handwritten: 6.1.1 Header Fields" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-handwritten.svg" alt="Handwritten: 6.1.1 Header Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-diagram.svg" alt="Diagram: 6.1.1 Header Fields" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-diagram.svg" alt="Diagram: 6.1.1 Header Fields" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-sticky.svg" alt="Sticky Note: 6.1.1 Header Fields" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-1-1-header-fields-sticky.svg" alt="Sticky Note: 6.1.1 Header Fields" width="30%">
 </a>
 
 
@@ -290,14 +290,14 @@ The IPv4 header is 20 bytes (minimum) to 60 bytes (with options).
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@ An IPv4 header is like a shipping label on a package: Version = shipping company
 
 ### Numbered Steps: Parsing an IPv4 Header
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-handwritten.svg" alt="Handwritten: Numbered Steps: Parsing an IPv4 Header" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-handwritten.svg" alt="Handwritten: Numbered Steps: Parsing an IPv4 Header" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-diagram.svg" alt="Diagram: Numbered Steps: Parsing an IPv4 Header" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-diagram.svg" alt="Diagram: Numbered Steps: Parsing an IPv4 Header" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-sticky.svg" alt="Sticky Note: Numbered Steps: Parsing an IPv4 Header" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-parsing-an-ipv4-header-sticky.svg" alt="Sticky Note: Numbered Steps: Parsing an IPv4 Header" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ An IPv4 header is like a shipping label on a package: Version = shipping company
 
 ### Pseudocode: parse_ipv4_header
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-handwritten.svg" alt="Handwritten: Pseudocode: parse_ipv4_header" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-handwritten.svg" alt="Handwritten: Pseudocode: parse_ipv4_header" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-diagram.svg" alt="Diagram: Pseudocode: parse_ipv4_header" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-diagram.svg" alt="Diagram: Pseudocode: parse_ipv4_header" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-sticky.svg" alt="Sticky Note: Pseudocode: parse_ipv4_header" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-parse-ipv4-header-sticky.svg" alt="Sticky Note: Pseudocode: parse_ipv4_header" width="30%">
 </a>
 
 
@@ -365,14 +365,14 @@ function parse_ipv4_header(data):
 
 ### Dry Run: Hex Dump Trace
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-handwritten.svg" alt="Handwritten: Dry Run: Hex Dump Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-handwritten.svg" alt="Handwritten: Dry Run: Hex Dump Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-diagram.svg" alt="Diagram: Dry Run: Hex Dump Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-diagram.svg" alt="Diagram: Dry Run: Hex Dump Trace" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-sticky.svg" alt="Sticky Note: Dry Run: Hex Dump Trace" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-hex-dump-trace-sticky.svg" alt="Sticky Note: Dry Run: Hex Dump Trace" width="30%">
 </a>
 
 
@@ -394,14 +394,14 @@ Hex dump: `45 00 00 3C 1A 2B 40 00 40 06 1E 2E C0 A8 01 01 C0 A8 01 02`
 
 ### C++ Implementation: IPv4 Header Parser
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-handwritten.svg" alt="Handwritten: C++ Implementation: IPv4 Header Parser" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-handwritten.svg" alt="Handwritten: C++ Implementation: IPv4 Header Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-diagram.svg" alt="Diagram: C++ Implementation: IPv4 Header Parser" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-diagram.svg" alt="Diagram: C++ Implementation: IPv4 Header Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-sticky.svg" alt="Sticky Note: C++ Implementation: IPv4 Header Parser" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-ipv4-header-parser-sticky.svg" alt="Sticky Note: C++ Implementation: IPv4 Header Parser" width="30%">
 </a>
 
 
@@ -464,14 +464,14 @@ int main() {
 
 ### Python Implementation: IPv4 Header Parser
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-handwritten.svg" alt="Handwritten: Python Implementation: IPv4 Header Parser" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-handwritten.svg" alt="Handwritten: Python Implementation: IPv4 Header Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-diagram.svg" alt="Diagram: Python Implementation: IPv4 Header Parser" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-diagram.svg" alt="Diagram: Python Implementation: IPv4 Header Parser" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-sticky.svg" alt="Sticky Note: Python Implementation: IPv4 Header Parser" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-ipv4-header-parser-sticky.svg" alt="Sticky Note: Python Implementation: IPv4 Header Parser" width="30%">
 </a>
 
 
@@ -529,14 +529,14 @@ for key, val in parsed.items():
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ for key, val in parsed.items():
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -568,14 +568,14 @@ for key, val in parsed.items():
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -592,14 +592,14 @@ When a datagram exceeds the Maximum Transmission Unit (MTU) of an outgoing link,
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -607,14 +607,14 @@ Fragmentation is like sending a large textbook through the mail. The post office
 
 ### Numbered Steps: Fragmentation Algorithm
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-handwritten.svg" alt="Handwritten: Numbered Steps: Fragmentation Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-handwritten.svg" alt="Handwritten: Numbered Steps: Fragmentation Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-diagram.svg" alt="Diagram: Numbered Steps: Fragmentation Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-diagram.svg" alt="Diagram: Numbered Steps: Fragmentation Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-sticky.svg" alt="Sticky Note: Numbered Steps: Fragmentation Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-fragmentation-algorithm-sticky.svg" alt="Sticky Note: Numbered Steps: Fragmentation Algorithm" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ Fragmentation is like sending a large textbook through the mail. The post office
 
 ### Pseudocode: fragment_datagram
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-handwritten.svg" alt="Handwritten: Pseudocode: fragment_datagram" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-handwritten.svg" alt="Handwritten: Pseudocode: fragment_datagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-diagram.svg" alt="Diagram: Pseudocode: fragment_datagram" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-diagram.svg" alt="Diagram: Pseudocode: fragment_datagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-sticky.svg" alt="Sticky Note: Pseudocode: fragment_datagram" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-fragment-datagram-sticky.svg" alt="Sticky Note: Pseudocode: fragment_datagram" width="30%">
 </a>
 
 
@@ -661,14 +661,14 @@ function fragment_datagram(datagram, mtu):
 
 ### Dry Run: 4000-byte Datagram, MTU 1500
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-handwritten.svg" alt="Handwritten: Dry Run: 4000-byte Datagram, MTU 1500" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-handwritten.svg" alt="Handwritten: Dry Run: 4000-byte Datagram, MTU 1500" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-diagram.svg" alt="Diagram: Dry Run: 4000-byte Datagram, MTU 1500" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-diagram.svg" alt="Diagram: Dry Run: 4000-byte Datagram, MTU 1500" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-sticky.svg" alt="Sticky Note: Dry Run: 4000-byte Datagram, MTU 1500" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-4000-byte-datagram-mtu-1500-sticky.svg" alt="Sticky Note: Dry Run: 4000-byte Datagram, MTU 1500" width="30%">
 </a>
 
 
@@ -686,14 +686,14 @@ Per-fragment payload = ((1500 - 20) / 8) * 8 = (1480 / 8) * 8 = 185 * 8 = 1480 b
 
 ### C++ Implementation: Fragmentation Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Fragmentation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Fragmentation Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-diagram.svg" alt="Diagram: C++ Implementation: Fragmentation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-diagram.svg" alt="Diagram: C++ Implementation: Fragmentation Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Fragmentation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-fragmentation-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Fragmentation Simulator" width="30%">
 </a>
 
 
@@ -753,14 +753,14 @@ int main() {
 
 ### Python Implementation: Fragmentation Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Fragmentation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Fragmentation Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-diagram.svg" alt="Diagram: Python Implementation: Fragmentation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-diagram.svg" alt="Diagram: Python Implementation: Fragmentation Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Fragmentation Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-fragmentation-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Fragmentation Simulator" width="30%">
 </a>
 
 
@@ -816,14 +816,14 @@ print(f"Reassembled payload size: {len(reassemble(frags))} (expected: 3980)")
 
 ### Path MTU Discovery (PMTUD)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-handwritten.svg" alt="Handwritten: Path MTU Discovery (PMTUD)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-handwritten.svg" alt="Handwritten: Path MTU Discovery (PMTUD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-diagram.svg" alt="Diagram: Path MTU Discovery (PMTUD)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-diagram.svg" alt="Diagram: Path MTU Discovery (PMTUD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-sticky.svg" alt="Sticky Note: Path MTU Discovery (PMTUD)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/path-mtu-discovery-pmtud-sticky.svg" alt="Sticky Note: Path MTU Discovery (PMTUD)" width="30%">
 </a>
 
 
@@ -835,14 +835,14 @@ print(f"Reassembled payload size: {len(reassemble(frags))} (expected: 3980)")
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -854,14 +854,14 @@ print(f"Reassembled payload size: {len(reassemble(frags))} (expected: 3980)")
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -874,14 +874,14 @@ print(f"Reassembled payload size: {len(reassemble(frags))} (expected: 3980)")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ Every IPv4 interface has a 32-bit address, typically written in dotted-decimal n
 
 ### 6.3.1 Classful Addressing
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-handwritten.svg" alt="Handwritten: 6.3.1 Classful Addressing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-handwritten.svg" alt="Handwritten: 6.3.1 Classful Addressing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-diagram.svg" alt="Diagram: 6.3.1 Classful Addressing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-diagram.svg" alt="Diagram: 6.3.1 Classful Addressing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-sticky.svg" alt="Sticky Note: 6.3.1 Classful Addressing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-1-classful-addressing-sticky.svg" alt="Sticky Note: 6.3.1 Classful Addressing" width="30%">
 </a>
 
 
@@ -919,14 +919,14 @@ Every IPv4 interface has a 32-bit address, typically written in dotted-decimal n
 
 ### 6.3.2 Subnetting
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-handwritten.svg" alt="Handwritten: 6.3.2 Subnetting" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-handwritten.svg" alt="Handwritten: 6.3.2 Subnetting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-diagram.svg" alt="Diagram: 6.3.2 Subnetting" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-diagram.svg" alt="Diagram: 6.3.2 Subnetting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-sticky.svg" alt="Sticky Note: 6.3.2 Subnetting" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-2-subnetting-sticky.svg" alt="Sticky Note: 6.3.2 Subnetting" width="30%">
 </a>
 
 
@@ -994,14 +994,14 @@ function calculate_subnets(base_network, prefix_len, num_subnets, min_hosts):
 
 ### C++ Implementation: Subnet Calculator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Subnet Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Subnet Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-diagram.svg" alt="Diagram: C++ Implementation: Subnet Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-diagram.svg" alt="Diagram: C++ Implementation: Subnet Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Subnet Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-subnet-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Subnet Calculator" width="30%">
 </a>
 
 
@@ -1066,14 +1066,14 @@ int main() {
 
 ### Python Implementation: Subnet Calculator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-handwritten.svg" alt="Handwritten: Python Implementation: Subnet Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-handwritten.svg" alt="Handwritten: Python Implementation: Subnet Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-diagram.svg" alt="Diagram: Python Implementation: Subnet Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-diagram.svg" alt="Diagram: Python Implementation: Subnet Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-sticky.svg" alt="Sticky Note: Python Implementation: Subnet Calculator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-subnet-calculator-sticky.svg" alt="Sticky Note: Python Implementation: Subnet Calculator" width="30%">
 </a>
 
 
@@ -1111,14 +1111,14 @@ for i, s in enumerate(subnets):
 
 ### 6.3.3 CIDR (Classless Inter-Domain Routing)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-handwritten.svg" alt="Handwritten: 6.3.3 CIDR (Classless Inter-Domain Routing)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-handwritten.svg" alt="Handwritten: 6.3.3 CIDR (Classless Inter-Domain Routing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-diagram.svg" alt="Diagram: 6.3.3 CIDR (Classless Inter-Domain Routing)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-diagram.svg" alt="Diagram: 6.3.3 CIDR (Classless Inter-Domain Routing)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-sticky.svg" alt="Sticky Note: 6.3.3 CIDR (Classless Inter-Domain Routing)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-3-3-cidr-classless-inter-domain-routing-sticky.svg" alt="Sticky Note: 6.3.3 CIDR (Classless Inter-Domain Routing)" width="30%">
 </a>
 
 
@@ -1288,14 +1288,14 @@ NAT (RFC 3022) maps private IP addresses to a public IP address using port multi
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1303,14 +1303,14 @@ NAT is like a company switchboard operator (PBX). Everyone inside has an extensi
 
 ### Private Address Ranges (RFC 1918)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-handwritten.svg" alt="Handwritten: Private Address Ranges (RFC 1918)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-handwritten.svg" alt="Handwritten: Private Address Ranges (RFC 1918)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-diagram.svg" alt="Diagram: Private Address Ranges (RFC 1918)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-diagram.svg" alt="Diagram: Private Address Ranges (RFC 1918)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-sticky.svg" alt="Sticky Note: Private Address Ranges (RFC 1918)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/private-address-ranges-rfc-1918-sticky.svg" alt="Sticky Note: Private Address Ranges (RFC 1918)" width="30%">
 </a>
 
 
@@ -1320,14 +1320,14 @@ NAT is like a company switchboard operator (PBX). Everyone inside has an extensi
 
 ### NAT Types
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-handwritten.svg" alt="Handwritten: NAT Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-handwritten.svg" alt="Handwritten: NAT Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-diagram.svg" alt="Diagram: NAT Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-diagram.svg" alt="Diagram: NAT Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-sticky.svg" alt="Sticky Note: NAT Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-types-sticky.svg" alt="Sticky Note: NAT Types" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ NAT is like a company switchboard operator (PBX). Everyone inside has an extensi
 
 ### Numbered Steps: PAT (Most Common Form)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-handwritten.svg" alt="Handwritten: Numbered Steps: PAT (Most Common Form)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-handwritten.svg" alt="Handwritten: Numbered Steps: PAT (Most Common Form)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-diagram.svg" alt="Diagram: Numbered Steps: PAT (Most Common Form)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-diagram.svg" alt="Diagram: Numbered Steps: PAT (Most Common Form)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-sticky.svg" alt="Sticky Note: Numbered Steps: PAT (Most Common Form)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-pat-most-common-form-sticky.svg" alt="Sticky Note: Numbered Steps: PAT (Most Common Form)" width="30%">
 </a>
 
 
@@ -1364,14 +1364,14 @@ NAT is like a company switchboard operator (PBX). Everyone inside has an extensi
 
 ### Pseudocode: nat_translate
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-handwritten.svg" alt="Handwritten: Pseudocode: nat_translate" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-handwritten.svg" alt="Handwritten: Pseudocode: nat_translate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-diagram.svg" alt="Diagram: Pseudocode: nat_translate" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-diagram.svg" alt="Diagram: Pseudocode: nat_translate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-sticky.svg" alt="Sticky Note: Pseudocode: nat_translate" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-nat-translate-sticky.svg" alt="Sticky Note: Pseudocode: nat_translate" width="30%">
 </a>
 
 
@@ -1396,14 +1396,14 @@ function nat_translate(packet, nat_table, public_ip):
 
 ### Dry Run: PAT Translation Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-handwritten.svg" alt="Handwritten: Dry Run: PAT Translation Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-handwritten.svg" alt="Handwritten: Dry Run: PAT Translation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-diagram.svg" alt="Diagram: Dry Run: PAT Translation Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-diagram.svg" alt="Diagram: Dry Run: PAT Translation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-sticky.svg" alt="Sticky Note: Dry Run: PAT Translation Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-pat-translation-table-sticky.svg" alt="Sticky Note: Dry Run: PAT Translation Table" width="30%">
 </a>
 
 
@@ -1426,14 +1426,14 @@ NAT Table after steps 1-3:
 
 ### C++ Implementation: NAT Table Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: NAT Table Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: NAT Table Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-diagram.svg" alt="Diagram: C++ Implementation: NAT Table Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-diagram.svg" alt="Diagram: C++ Implementation: NAT Table Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: NAT Table Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-nat-table-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: NAT Table Simulator" width="30%">
 </a>
 
 
@@ -1500,14 +1500,14 @@ int main() {
 
 ### Python Implementation: NAT Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-handwritten.svg" alt="Handwritten: Python Implementation: NAT Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-handwritten.svg" alt="Handwritten: Python Implementation: NAT Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-diagram.svg" alt="Diagram: Python Implementation: NAT Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-diagram.svg" alt="Diagram: Python Implementation: NAT Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-sticky.svg" alt="Sticky Note: Python Implementation: NAT Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-nat-simulator-sticky.svg" alt="Sticky Note: Python Implementation: NAT Simulator" width="30%">
 </a>
 
 
@@ -1562,14 +1562,14 @@ nat.print_table()
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1582,14 +1582,14 @@ nat.print_table()
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1602,14 +1602,14 @@ nat.print_table()
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1627,14 +1627,14 @@ IPv6 (RFC 2460) solves IPv4 address exhaustion with 128-bit addresses.
 
 ### 6.5.1 IPv6 Header Format
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-handwritten.svg" alt="Handwritten: 6.5.1 IPv6 Header Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-handwritten.svg" alt="Handwritten: 6.5.1 IPv6 Header Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-diagram.svg" alt="Diagram: 6.5.1 IPv6 Header Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-diagram.svg" alt="Diagram: 6.5.1 IPv6 Header Format" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-sticky.svg" alt="Sticky Note: 6.5.1 IPv6 Header Format" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-1-ipv6-header-format-sticky.svg" alt="Sticky Note: 6.5.1 IPv6 Header Format" width="30%">
 </a>
 
 
@@ -1655,14 +1655,14 @@ The simplified IPv6 header is 40 bytes:
 
 ### 6.5.2 IPv6 Address Types
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-handwritten.svg" alt="Handwritten: 6.5.2 IPv6 Address Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-handwritten.svg" alt="Handwritten: 6.5.2 IPv6 Address Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-diagram.svg" alt="Diagram: 6.5.2 IPv6 Address Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-diagram.svg" alt="Diagram: 6.5.2 IPv6 Address Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-sticky.svg" alt="Sticky Note: 6.5.2 IPv6 Address Types" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-2-ipv6-address-types-sticky.svg" alt="Sticky Note: 6.5.2 IPv6 Address Types" width="30%">
 </a>
 
 
@@ -1672,14 +1672,14 @@ The simplified IPv6 header is 40 bytes:
 
 ### 6.5.3 IPv6 Address Shortening Rules
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-handwritten.svg" alt="Handwritten: 6.5.3 IPv6 Address Shortening Rules" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-handwritten.svg" alt="Handwritten: 6.5.3 IPv6 Address Shortening Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-diagram.svg" alt="Diagram: 6.5.3 IPv6 Address Shortening Rules" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-diagram.svg" alt="Diagram: 6.5.3 IPv6 Address Shortening Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-sticky.svg" alt="Sticky Note: 6.5.3 IPv6 Address Shortening Rules" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-3-ipv6-address-shortening-rules-sticky.svg" alt="Sticky Note: 6.5.3 IPv6 Address Shortening Rules" width="30%">
 </a>
 
 
@@ -1693,14 +1693,14 @@ Examples:
 
 ### 6.5.4 Transition Mechanisms
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-handwritten.svg" alt="Handwritten: 6.5.4 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-handwritten.svg" alt="Handwritten: 6.5.4 Transition Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-diagram.svg" alt="Diagram: 6.5.4 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-diagram.svg" alt="Diagram: 6.5.4 Transition Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-sticky.svg" alt="Sticky Note: 6.5.4 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-5-4-transition-mechanisms-sticky.svg" alt="Sticky Note: 6.5.4 Transition Mechanisms" width="30%">
 </a>
 
 
@@ -1718,14 +1718,14 @@ Examples:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1733,14 +1733,14 @@ Tunneling is like putting a letter in an envelope (inner packet), then putting t
 
 ### Numbered Steps: Tunneling
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-handwritten.svg" alt="Handwritten: Numbered Steps: Tunneling" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-handwritten.svg" alt="Handwritten: Numbered Steps: Tunneling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-diagram.svg" alt="Diagram: Numbered Steps: Tunneling" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-diagram.svg" alt="Diagram: Numbered Steps: Tunneling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-sticky.svg" alt="Sticky Note: Numbered Steps: Tunneling" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/numbered-steps-tunneling-sticky.svg" alt="Sticky Note: Numbered Steps: Tunneling" width="30%">
 </a>
 
 
@@ -1754,14 +1754,14 @@ Tunneling is like putting a letter in an envelope (inner packet), then putting t
 
 ### Pseudocode: tunnel_encapsulate
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-handwritten.svg" alt="Handwritten: Pseudocode: tunnel_encapsulate" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-handwritten.svg" alt="Handwritten: Pseudocode: tunnel_encapsulate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-diagram.svg" alt="Diagram: Pseudocode: tunnel_encapsulate" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-diagram.svg" alt="Diagram: Pseudocode: tunnel_encapsulate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-sticky.svg" alt="Sticky Note: Pseudocode: tunnel_encapsulate" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/pseudocode-tunnel-encapsulate-sticky.svg" alt="Sticky Note: Pseudocode: tunnel_encapsulate" width="30%">
 </a>
 
 
@@ -1783,14 +1783,14 @@ function tunnel_encapsulate(packet, tunnel_endpoint, tunnel_type):
 
 ### Dry Run: IP-in-IP Tunneling
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-handwritten.svg" alt="Handwritten: Dry Run: IP-in-IP Tunneling" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-handwritten.svg" alt="Handwritten: Dry Run: IP-in-IP Tunneling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-diagram.svg" alt="Diagram: Dry Run: IP-in-IP Tunneling" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-diagram.svg" alt="Diagram: Dry Run: IP-in-IP Tunneling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-sticky.svg" alt="Sticky Note: Dry Run: IP-in-IP Tunneling" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dry-run-ip-in-ip-tunneling-sticky.svg" alt="Sticky Note: Dry Run: IP-in-IP Tunneling" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ function tunnel_encapsulate(packet, tunnel_endpoint, tunnel_type):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1822,14 +1822,14 @@ function tunnel_encapsulate(packet, tunnel_endpoint, tunnel_type):
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -1846,14 +1846,14 @@ function tunnel_encapsulate(packet, tunnel_endpoint, tunnel_type):
 
 ### 6.7.1 ARP (Address Resolution Protocol)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-handwritten.svg" alt="Handwritten: 6.7.1 ARP (Address Resolution Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-handwritten.svg" alt="Handwritten: 6.7.1 ARP (Address Resolution Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-diagram.svg" alt="Diagram: 6.7.1 ARP (Address Resolution Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-diagram.svg" alt="Diagram: 6.7.1 ARP (Address Resolution Protocol)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-sticky.svg" alt="Sticky Note: 6.7.1 ARP (Address Resolution Protocol)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-1-arp-address-resolution-protocol-sticky.svg" alt="Sticky Note: 6.7.1 ARP (Address Resolution Protocol)" width="30%">
 </a>
 
 
@@ -1934,14 +1934,14 @@ function arp_resolve(target_ip, arp_cache, interface):
 
 ### C++ Implementation: ARP Cache
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-handwritten.svg" alt="Handwritten: C++ Implementation: ARP Cache" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-handwritten.svg" alt="Handwritten: C++ Implementation: ARP Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-diagram.svg" alt="Diagram: C++ Implementation: ARP Cache" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-diagram.svg" alt="Diagram: C++ Implementation: ARP Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-sticky.svg" alt="Sticky Note: C++ Implementation: ARP Cache" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-arp-cache-sticky.svg" alt="Sticky Note: C++ Implementation: ARP Cache" width="30%">
 </a>
 
 
@@ -1996,14 +1996,14 @@ int main() {
 
 ### Python Implementation: ARP Cache with Request/Reply Simulation
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-handwritten.svg" alt="Handwritten: Python Implementation: ARP Cache with Request/Reply Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-handwritten.svg" alt="Handwritten: Python Implementation: ARP Cache with Request/Reply Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-diagram.svg" alt="Diagram: Python Implementation: ARP Cache with Request/Reply Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-diagram.svg" alt="Diagram: Python Implementation: ARP Cache with Request/Reply Simulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-sticky.svg" alt="Sticky Note: Python Implementation: ARP Cache with Request/Reply Simulation" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-arp-cache-with-request-reply-simulation-sticky.svg" alt="Sticky Note: Python Implementation: ARP Cache with Request/Reply Simulation" width="30%">
 </a>
 
 
@@ -2069,14 +2069,14 @@ cache.print_cache()
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2088,14 +2088,14 @@ cache.print_cache()
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -2107,14 +2107,14 @@ cache.print_cache()
 
 ### Edge Cases: ARP Spoofing
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-handwritten.svg" alt="Handwritten: Edge Cases: ARP Spoofing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-handwritten.svg" alt="Handwritten: Edge Cases: ARP Spoofing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-diagram.svg" alt="Diagram: Edge Cases: ARP Spoofing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-diagram.svg" alt="Diagram: Edge Cases: ARP Spoofing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-sticky.svg" alt="Sticky Note: Edge Cases: ARP Spoofing" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-arp-spoofing-sticky.svg" alt="Sticky Note: Edge Cases: ARP Spoofing" width="30%">
 </a>
 
 
@@ -2231,14 +2231,14 @@ console.log(`Gratuitous ARP: ${gratuitous.senderIp} is at ${gratuitous.senderMac
 
 ### 6.7.2 DHCP
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-handwritten.svg" alt="Handwritten: 6.7.2 DHCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-handwritten.svg" alt="Handwritten: 6.7.2 DHCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-diagram.svg" alt="Diagram: 6.7.2 DHCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-diagram.svg" alt="Diagram: 6.7.2 DHCP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-sticky.svg" alt="Sticky Note: 6.7.2 DHCP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-2-dhcp-sticky.svg" alt="Sticky Note: 6.7.2 DHCP" width="30%">
 </a>
 
 
@@ -2286,14 +2286,14 @@ function dhcp_dora(client_mac, server_ip, subnet):
 
 ### C++ Implementation: DHCP Lease Manager
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-handwritten.svg" alt="Handwritten: C++ Implementation: DHCP Lease Manager" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-handwritten.svg" alt="Handwritten: C++ Implementation: DHCP Lease Manager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-diagram.svg" alt="Diagram: C++ Implementation: DHCP Lease Manager" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-diagram.svg" alt="Diagram: C++ Implementation: DHCP Lease Manager" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-sticky.svg" alt="Sticky Note: C++ Implementation: DHCP Lease Manager" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/c-implementation-dhcp-lease-manager-sticky.svg" alt="Sticky Note: C++ Implementation: DHCP Lease Manager" width="30%">
 </a>
 
 
@@ -2352,14 +2352,14 @@ int main() {
 
 ### Python Implementation: DHCP DORA Simulator
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-handwritten.svg" alt="Handwritten: Python Implementation: DHCP DORA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-handwritten.svg" alt="Handwritten: Python Implementation: DHCP DORA Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-diagram.svg" alt="Diagram: Python Implementation: DHCP DORA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-diagram.svg" alt="Diagram: Python Implementation: DHCP DORA Simulator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-sticky.svg" alt="Sticky Note: Python Implementation: DHCP DORA Simulator" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/python-implementation-dhcp-dora-simulator-sticky.svg" alt="Sticky Note: Python Implementation: DHCP DORA Simulator" width="30%">
 </a>
 
 
@@ -2414,14 +2414,14 @@ dora("AA:BB:CC:DD:EE:01", servers)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2434,14 +2434,14 @@ dora("AA:BB:CC:DD:EE:01", servers)
 
 ### A&D Table
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-handwritten.svg" alt="Handwritten: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-diagram.svg" alt="Diagram: A&D Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/a-d-table-sticky.svg" alt="Sticky Note: A&D Table" width="30%">
 </a>
 
 
@@ -2453,14 +2453,14 @@ dora("AA:BB:CC:DD:EE:01", servers)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2472,14 +2472,14 @@ dora("AA:BB:CC:DD:EE:01", servers)
 
 ### 6.7.3 ICMP
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-handwritten.svg" alt="Handwritten: 6.7.3 ICMP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-handwritten.svg" alt="Handwritten: 6.7.3 ICMP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-diagram.svg" alt="Diagram: 6.7.3 ICMP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-diagram.svg" alt="Diagram: 6.7.3 ICMP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-sticky.svg" alt="Sticky Note: 6.7.3 ICMP" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/6-7-3-icmp-sticky.svg" alt="Sticky Note: 6.7.3 ICMP" width="30%">
 </a>
 
 
@@ -2698,14 +2698,14 @@ pings.forEach(p => console.log(p));
 
 ### GRE Encapsulation Details
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-handwritten.svg" alt="Handwritten: GRE Encapsulation Details" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-handwritten.svg" alt="Handwritten: GRE Encapsulation Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-diagram.svg" alt="Diagram: GRE Encapsulation Details" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-diagram.svg" alt="Diagram: GRE Encapsulation Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-sticky.svg" alt="Sticky Note: GRE Encapsulation Details" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/gre-encapsulation-details-sticky.svg" alt="Sticky Note: GRE Encapsulation Details" width="30%">
 </a>
 
 
@@ -2825,14 +2825,14 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 ### IPv4 Exhaustion
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-handwritten.svg" alt="Handwritten: IPv4 Exhaustion" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-handwritten.svg" alt="Handwritten: IPv4 Exhaustion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-diagram.svg" alt="Diagram: IPv4 Exhaustion" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-diagram.svg" alt="Diagram: IPv4 Exhaustion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-sticky.svg" alt="Sticky Note: IPv4 Exhaustion" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv4-exhaustion-sticky.svg" alt="Sticky Note: IPv4 Exhaustion" width="30%">
 </a>
 
 
@@ -2841,14 +2841,14 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 ### NAT Traversal
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-handwritten.svg" alt="Handwritten: NAT Traversal" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-handwritten.svg" alt="Handwritten: NAT Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-diagram.svg" alt="Diagram: NAT Traversal" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-diagram.svg" alt="Diagram: NAT Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-sticky.svg" alt="Sticky Note: NAT Traversal" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-sticky.svg" alt="Sticky Note: NAT Traversal" width="30%">
 </a>
 
 
@@ -2861,14 +2861,14 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 ### IPv6 Transition Mechanisms
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-handwritten.svg" alt="Handwritten: IPv6 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-handwritten.svg" alt="Handwritten: IPv6 Transition Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-diagram.svg" alt="Diagram: IPv6 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-diagram.svg" alt="Diagram: IPv6 Transition Mechanisms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-sticky.svg" alt="Sticky Note: IPv6 Transition Mechanisms" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/ipv6-transition-mechanisms-sticky.svg" alt="Sticky Note: IPv6 Transition Mechanisms" width="30%">
 </a>
 
 
@@ -2880,14 +2880,14 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 ### Subnetting Shortcuts
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-handwritten.svg" alt="Handwritten: Subnetting Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-handwritten.svg" alt="Handwritten: Subnetting Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-diagram.svg" alt="Diagram: Subnetting Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-diagram.svg" alt="Diagram: Subnetting Shortcuts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-sticky.svg" alt="Sticky Note: Subnetting Shortcuts" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/subnetting-shortcuts-sticky.svg" alt="Sticky Note: Subnetting Shortcuts" width="30%">
 </a>
 
 
@@ -2904,14 +2904,14 @@ N = routing entries, P = payload bytes, F = fragments, E = NAT entries, L = DHCP
 
 ### Quick VLSM Reference
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-handwritten.svg" alt="Handwritten: Quick VLSM Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-handwritten.svg" alt="Handwritten: Quick VLSM Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-diagram.svg" alt="Diagram: Quick VLSM Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-diagram.svg" alt="Diagram: Quick VLSM Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-sticky.svg" alt="Sticky Note: Quick VLSM Reference" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/quick-vlsm-reference-sticky.svg" alt="Sticky Note: Quick VLSM Reference" width="30%">
 </a>
 
 
@@ -2920,14 +2920,14 @@ Example: need 100 hosts → 2^7 - 2 = 126 >= 100 → /25 (128 addresses).
 
 ### NAT Traversal Deep Dive
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-handwritten.svg" alt="Handwritten: NAT Traversal Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-handwritten.svg" alt="Handwritten: NAT Traversal Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-diagram.svg" alt="Diagram: NAT Traversal Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-diagram.svg" alt="Diagram: NAT Traversal Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-sticky.svg" alt="Sticky Note: NAT Traversal Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/nat-traversal-deep-dive-sticky.svg" alt="Sticky Note: NAT Traversal Deep Dive" width="30%">
 </a>
 
 
@@ -2972,14 +2972,14 @@ function ice_connectivity_check(local_candidates, remote_candidates):
 
 ### Fragmentation Attack Details
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-handwritten.svg" alt="Handwritten: Fragmentation Attack Details" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-handwritten.svg" alt="Handwritten: Fragmentation Attack Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-diagram.svg" alt="Diagram: Fragmentation Attack Details" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-diagram.svg" alt="Diagram: Fragmentation Attack Details" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-sticky.svg" alt="Sticky Note: Fragmentation Attack Details" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/fragmentation-attack-details-sticky.svg" alt="Sticky Note: Fragmentation Attack Details" width="30%">
 </a>
 
 
@@ -3003,14 +3003,14 @@ function ice_connectivity_check(local_candidates, remote_candidates):
 
 ### DHCP Deep Dive
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-handwritten.svg" alt="Handwritten: DHCP Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-handwritten.svg" alt="Handwritten: DHCP Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-diagram.svg" alt="Diagram: DHCP Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-diagram.svg" alt="Diagram: DHCP Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-sticky.svg" alt="Sticky Note: DHCP Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/dhcp-deep-dive-sticky.svg" alt="Sticky Note: DHCP Deep Dive" width="30%">
 </a>
 
 
@@ -3057,14 +3057,14 @@ Cisco router DHCP relay configuration:
 
 ### Linux netfilter/iptables
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-handwritten.svg" alt="Handwritten: Linux netfilter/iptables" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-handwritten.svg" alt="Handwritten: Linux netfilter/iptables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-diagram.svg" alt="Diagram: Linux netfilter/iptables" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-diagram.svg" alt="Diagram: Linux netfilter/iptables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-sticky.svg" alt="Sticky Note: Linux netfilter/iptables" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-netfilter-iptables-sticky.svg" alt="Sticky Note: Linux netfilter/iptables" width="30%">
 </a>
 
 
@@ -3083,14 +3083,14 @@ arp -s 192.168.1.100 00:11:22:33:44:55  # static ARP
 
 ### Windows TCP/IP Stack
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-handwritten.svg" alt="Handwritten: Windows TCP/IP Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-handwritten.svg" alt="Handwritten: Windows TCP/IP Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-diagram.svg" alt="Diagram: Windows TCP/IP Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-diagram.svg" alt="Diagram: Windows TCP/IP Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-sticky.svg" alt="Sticky Note: Windows TCP/IP Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-tcp-ip-stack-sticky.svg" alt="Sticky Note: Windows TCP/IP Stack" width="30%">
 </a>
 
 
@@ -3109,14 +3109,14 @@ Get-NetIPAddress | Select-Object InterfaceAlias, IPAddress, PrefixLength
 
 ### Router ACLs (Cisco IOS)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-handwritten.svg" alt="Handwritten: Router ACLs (Cisco IOS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-handwritten.svg" alt="Handwritten: Router ACLs (Cisco IOS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-diagram.svg" alt="Diagram: Router ACLs (Cisco IOS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-diagram.svg" alt="Diagram: Router ACLs (Cisco IOS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-sticky.svg" alt="Sticky Note: Router ACLs (Cisco IOS)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/router-acls-cisco-ios-sticky.svg" alt="Sticky Note: Router ACLs (Cisco IOS)" width="30%">
 </a>
 
 
@@ -3138,14 +3138,14 @@ Apply: interface GigabitEthernet0/0
 
 ### macOS Network Stack
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-handwritten.svg" alt="Handwritten: macOS Network Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-handwritten.svg" alt="Handwritten: macOS Network Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-diagram.svg" alt="Diagram: macOS Network Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-diagram.svg" alt="Diagram: macOS Network Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-sticky.svg" alt="Sticky Note: macOS Network Stack" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/macos-network-stack-sticky.svg" alt="Sticky Note: macOS Network Stack" width="30%">
 </a>
 
 
@@ -3171,14 +3171,14 @@ sudo pfctl -s rules
 
 ### AWS VPC Networking (Cloud Analogs)
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-handwritten.svg" alt="Handwritten: AWS VPC Networking (Cloud Analogs)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-handwritten.svg" alt="Handwritten: AWS VPC Networking (Cloud Analogs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-diagram.svg" alt="Diagram: AWS VPC Networking (Cloud Analogs)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-diagram.svg" alt="Diagram: AWS VPC Networking (Cloud Analogs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-sticky.svg" alt="Sticky Note: AWS VPC Networking (Cloud Analogs)" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/aws-vpc-networking-cloud-analogs-sticky.svg" alt="Sticky Note: AWS VPC Networking (Cloud Analogs)" width="30%">
 </a>
 
 
@@ -3199,14 +3199,14 @@ AWS VPCs use an overlay network (Geneve encapsulation) where traditional ARP doe
 
 ### Windows netstat and Network Diagnostics
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-handwritten.svg" alt="Handwritten: Windows netstat and Network Diagnostics" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-handwritten.svg" alt="Handwritten: Windows netstat and Network Diagnostics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-diagram.svg" alt="Diagram: Windows netstat and Network Diagnostics" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-diagram.svg" alt="Diagram: Windows netstat and Network Diagnostics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-sticky.svg" alt="Sticky Note: Windows netstat and Network Diagnostics" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/windows-netstat-and-network-diagnostics-sticky.svg" alt="Sticky Note: Windows netstat and Network Diagnostics" width="30%">
 </a>
 
 
@@ -3243,14 +3243,14 @@ Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" `
 
 ### Linux sysctl Network Layer Tuning
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-handwritten.svg" alt="Handwritten: Linux sysctl Network Layer Tuning" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-handwritten.svg" alt="Handwritten: Linux sysctl Network Layer Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-diagram.svg" alt="Diagram: Linux sysctl Network Layer Tuning" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-diagram.svg" alt="Diagram: Linux sysctl Network Layer Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-sticky.svg" alt="Sticky Note: Linux sysctl Network Layer Tuning" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/linux-sysctl-network-layer-tuning-sticky.svg" alt="Sticky Note: Linux sysctl Network Layer Tuning" width="30%">
 </a>
 
 
@@ -3286,14 +3286,14 @@ sysctl -w net.ipv4.neigh.default.gc_thresh3=1024
 
 ### Complete Network Layer Diagnostic Flow
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-handwritten.svg" alt="Handwritten: Complete Network Layer Diagnostic Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-handwritten.svg" alt="Handwritten: Complete Network Layer Diagnostic Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-diagram.svg" alt="Diagram: Complete Network Layer Diagnostic Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-diagram.svg" alt="Diagram: Complete Network Layer Diagnostic Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-sticky.svg" alt="Sticky Note: Complete Network Layer Diagnostic Flow" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/complete-network-layer-diagnostic-flow-sticky.svg" alt="Sticky Note: Complete Network Layer Diagnostic Flow" width="30%">
 </a>
 
 
@@ -3312,14 +3312,14 @@ When troubleshooting network layer issues, follow this systematic approach:
 
 ### Network Layer Troubleshooting Cheat Sheet
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-handwritten.svg" alt="Handwritten: Network Layer Troubleshooting Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-handwritten.svg" alt="Handwritten: Network Layer Troubleshooting Cheat Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-diagram.svg" alt="Diagram: Network Layer Troubleshooting Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-diagram.svg" alt="Diagram: Network Layer Troubleshooting Cheat Sheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-sticky.svg" alt="Sticky Note: Network Layer Troubleshooting Cheat Sheet" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/network-layer-troubleshooting-cheat-sheet-sticky.svg" alt="Sticky Note: Network Layer Troubleshooting Cheat Sheet" width="30%">
 </a>
 
 
@@ -3357,14 +3357,14 @@ When troubleshooting network layer issues, follow this systematic approach:
 
 ### Problem
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/problem-diagram.svg" alt="Diagram: Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/problem-diagram.svg" alt="Diagram: Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
 </a>
 
 
@@ -3372,14 +3372,14 @@ A mid-sized company with 500 employees is expanding from a single office to 12 r
 
 ### Solution
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/solution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/solution-diagram.svg" alt="Diagram: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/solution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/solution-diagram.svg" alt="Diagram: Solution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/solution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
 </a>
 
 
@@ -3387,14 +3387,14 @@ Using VLSM (Variable Length Subnet Masking) from the /16 base, the team designs 
 
 ### Outcome
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/outcome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/outcome-handwritten.svg" alt="Handwritten: Outcome" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/outcome-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/outcome-handwritten.svg" alt="Handwritten: Outcome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/outcome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/outcome-diagram.svg" alt="Diagram: Outcome" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/outcome-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/outcome-diagram.svg" alt="Diagram: Outcome" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/outcome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/outcome-sticky.svg" alt="Sticky Note: Outcome" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/outcome-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/outcome-sticky.svg" alt="Sticky Note: Outcome" width="30%">
 </a>
 
 
@@ -3522,14 +3522,14 @@ Total concurrent connections: 500 × 40 = 20,000. Available ports per public IP:
 
 ### Implementation Problems
 
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-handwritten.svg" alt="Handwritten: Implementation Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-handwritten.svg" alt="Handwritten: Implementation Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-diagram.svg" alt="Diagram: Implementation Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-diagram.svg" alt="Diagram: Implementation Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-sticky.svg" alt="Sticky Note: Implementation Problems" width="30%">
+<a href="../../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/computer-networks/06-network-layer/implementation-problems-sticky.svg" alt="Sticky Note: Implementation Problems" width="30%">
 </a>
 
 

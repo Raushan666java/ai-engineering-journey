@@ -44,14 +44,14 @@ flowchart LR
 
 ### 14.1 The BQP Complexity Class
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-handwritten.svg" alt="Handwritten: 14.1 The BQP Complexity Class" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-handwritten.svg" alt="Handwritten: 14.1 The BQP Complexity Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-diagram.svg" alt="Diagram: 14.1 The BQP Complexity Class" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-diagram.svg" alt="Diagram: 14.1 The BQP Complexity Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-sticky.svg" alt="Sticky Note: 14.1 The BQP Complexity Class" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-1-the-bqp-complexity-class-sticky.svg" alt="Sticky Note: 14.1 The BQP Complexity Class" width="30%">
 </a>
 
 
@@ -68,14 +68,14 @@ flowchart LR
 
 ### 14.3 Log-Space Reductions and Completeness
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-handwritten.svg" alt="Handwritten: 14.3 Log-Space Reductions and Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-handwritten.svg" alt="Handwritten: 14.3 Log-Space Reductions and Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-diagram.svg" alt="Diagram: 14.3 Log-Space Reductions and Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-diagram.svg" alt="Diagram: 14.3 Log-Space Reductions and Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-sticky.svg" alt="Sticky Note: 14.3 Log-Space Reductions and Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-3-log-space-reductions-and-completeness-sticky.svg" alt="Sticky Note: 14.3 Log-Space Reductions and Completeness" width="30%">
 </a>
 
 
@@ -90,14 +90,14 @@ A **log-space reduction** (A =_L B) is a reduction computable in O(log n) space 
 
 ### 14.4 The Polynomial Hierarchy (PH)
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-handwritten.svg" alt="Handwritten: 14.4 The Polynomial Hierarchy (PH)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-handwritten.svg" alt="Handwritten: 14.4 The Polynomial Hierarchy (PH)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-diagram.svg" alt="Diagram: 14.4 The Polynomial Hierarchy (PH)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-diagram.svg" alt="Diagram: 14.4 The Polynomial Hierarchy (PH)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-sticky.svg" alt="Sticky Note: 14.4 The Polynomial Hierarchy (PH)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-4-the-polynomial-hierarchy-ph-sticky.svg" alt="Sticky Note: 14.4 The Polynomial Hierarchy (PH)" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ The polynomial hierarchy extends the concepts of P, NP, and co-NP using **oracle
 
 ### 14.5 co-NP
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-handwritten.svg" alt="Handwritten: 14.5 co-NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-handwritten.svg" alt="Handwritten: 14.5 co-NP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-diagram.svg" alt="Diagram: 14.5 co-NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-diagram.svg" alt="Diagram: 14.5 co-NP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-sticky.svg" alt="Sticky Note: 14.5 co-NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-5-co-np-sticky.svg" alt="Sticky Note: 14.5 co-NP" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ A problem is in co-NP if "no" instances have short proofs (certificates for reje
 
 ### 14.6 Circuit Complexity
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-handwritten.svg" alt="Handwritten: 14.6 Circuit Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-handwritten.svg" alt="Handwritten: 14.6 Circuit Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-diagram.svg" alt="Diagram: 14.6 Circuit Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-diagram.svg" alt="Diagram: 14.6 Circuit Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-sticky.svg" alt="Sticky Note: 14.6 Circuit Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-6-circuit-complexity-sticky.svg" alt="Sticky Note: 14.6 Circuit Complexity" width="30%">
 </a>
 
 
@@ -194,14 +194,14 @@ Proving that certain functions require large circuits is notoriously difficult.
 
 ### 14.7 Interactive Proofs (IP)
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-handwritten.svg" alt="Handwritten: 14.7 Interactive Proofs (IP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-handwritten.svg" alt="Handwritten: 14.7 Interactive Proofs (IP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-diagram.svg" alt="Diagram: 14.7 Interactive Proofs (IP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-diagram.svg" alt="Diagram: 14.7 Interactive Proofs (IP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-sticky.svg" alt="Sticky Note: 14.7 Interactive Proofs (IP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-7-interactive-proofs-ip-sticky.svg" alt="Sticky Note: 14.7 Interactive Proofs (IP)" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 
 ### 14.8 Probabilistic Complexity (BPP)
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-handwritten.svg" alt="Handwritten: 14.8 Probabilistic Complexity (BPP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-handwritten.svg" alt="Handwritten: 14.8 Probabilistic Complexity (BPP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-diagram.svg" alt="Diagram: 14.8 Probabilistic Complexity (BPP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-diagram.svg" alt="Diagram: 14.8 Probabilistic Complexity (BPP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-sticky.svg" alt="Sticky Note: 14.8 Probabilistic Complexity (BPP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-8-probabilistic-complexity-bpp-sticky.svg" alt="Sticky Note: 14.8 Probabilistic Complexity (BPP)" width="30%">
 </a>
 
 
@@ -239,14 +239,14 @@ An **interactive proof system** consists of a prover (P, unbounded computational
 
 ### 14.9 Probabilistically Checkable Proofs (PCP)
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-handwritten.svg" alt="Handwritten: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-handwritten.svg" alt="Handwritten: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-diagram.svg" alt="Diagram: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-diagram.svg" alt="Diagram: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-sticky.svg" alt="Sticky Note: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-9-probabilistically-checkable-proofs-pcp-sticky.svg" alt="Sticky Note: 14.9 Probabilistically Checkable Proofs (PCP)" width="30%">
 </a>
 
 
@@ -263,14 +263,14 @@ NP = PCP(log n, 1)
 
 ### 14.10 The Landscape of Complexity Classes
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-handwritten.svg" alt="Handwritten: 14.10 The Landscape of Complexity Classes" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-handwritten.svg" alt="Handwritten: 14.10 The Landscape of Complexity Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-diagram.svg" alt="Diagram: 14.10 The Landscape of Complexity Classes" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-diagram.svg" alt="Diagram: 14.10 The Landscape of Complexity Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-sticky.svg" alt="Sticky Note: 14.10 The Landscape of Complexity Classes" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-10-the-landscape-of-complexity-classes-sticky.svg" alt="Sticky Note: 14.10 The Landscape of Complexity Classes" width="30%">
 </a>
 
 
@@ -298,14 +298,14 @@ Note: Many containments are not known to be strict.
 
 ### 14.11 MA and AM: Merlin-Arthur Games
 
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-handwritten.svg" alt="Handwritten: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-handwritten.svg" alt="Handwritten: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-diagram.svg" alt="Diagram: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-diagram.svg" alt="Diagram: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-sticky.svg" alt="Sticky Note: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/15-advanced-complexity/14-11-ma-and-am-merlin-arthur-games-sticky.svg" alt="Sticky Note: 14.11 MA and AM: Merlin-Arthur Games" width="30%">
 </a>
 
 

@@ -16,14 +16,14 @@ By the end of this chapter, you will be able to:
 
 ### 5.1 Descriptive English in Government Exams
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-handwritten.svg" alt="Handwritten: 5.1 Descriptive English in Government Exams" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-handwritten.svg" alt="Handwritten: 5.1 Descriptive English in Government Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-diagram.svg" alt="Diagram: 5.1 Descriptive English in Government Exams" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-diagram.svg" alt="Diagram: 5.1 Descriptive English in Government Exams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-sticky.svg" alt="Sticky Note: 5.1 Descriptive English in Government Exams" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-1-descriptive-english-in-government-exams-sticky.svg" alt="Sticky Note: 5.1 Descriptive English in Government Exams" width="30%">
 </a>
 
 
@@ -39,14 +39,14 @@ Unlike the objective Prelims paper, the **Mains examination** in IBPS SO, SBI PO
 
 ### 5.2 Essay Writing
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-handwritten.svg" alt="Handwritten: 5.2 Essay Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-handwritten.svg" alt="Handwritten: 5.2 Essay Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-diagram.svg" alt="Diagram: 5.2 Essay Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-diagram.svg" alt="Diagram: 5.2 Essay Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-sticky.svg" alt="Sticky Note: 5.2 Essay Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-2-essay-writing-sticky.svg" alt="Sticky Note: 5.2 Essay Writing" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ While challenges like the digital divide and cybersecurity concerns remain, the 
 
 ### 5.3 Letter Writing
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-handwritten.svg" alt="Handwritten: 5.3 Letter Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-handwritten.svg" alt="Handwritten: 5.3 Letter Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-diagram.svg" alt="Diagram: 5.3 Letter Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-diagram.svg" alt="Diagram: 5.3 Letter Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-sticky.svg" alt="Sticky Note: 5.3 Letter Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-3-letter-writing-sticky.svg" alt="Sticky Note: 5.3 Letter Writing" width="30%">
 </a>
 
 
@@ -277,14 +277,14 @@ Employee ID: PNB/IT/2341
 
 ### 5.4 Precis Writing
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-handwritten.svg" alt="Handwritten: 5.4 Precis Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-handwritten.svg" alt="Handwritten: 5.4 Precis Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-diagram.svg" alt="Diagram: 5.4 Precis Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-diagram.svg" alt="Diagram: 5.4 Precis Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-sticky.svg" alt="Sticky Note: 5.4 Precis Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-4-precis-writing-sticky.svg" alt="Sticky Note: 5.4 Precis Writing" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ The rapid digitisation of financial services has made Indian banks prime targets
 
 ### 5.5 Report Writing
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-handwritten.svg" alt="Handwritten: 5.5 Report Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-handwritten.svg" alt="Handwritten: 5.5 Report Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-diagram.svg" alt="Diagram: 5.5 Report Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-diagram.svg" alt="Diagram: 5.5 Report Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-sticky.svg" alt="Sticky Note: 5.5 Report Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-5-report-writing-sticky.svg" alt="Sticky Note: 5.5 Report Writing" width="30%">
 </a>
 
 
@@ -386,14 +386,14 @@ Date: [Date]
 
 ### 5.6 Time Management for the Descriptive Paper
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-handwritten.svg" alt="Handwritten: 5.6 Time Management for the Descriptive Paper" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-handwritten.svg" alt="Handwritten: 5.6 Time Management for the Descriptive Paper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-diagram.svg" alt="Diagram: 5.6 Time Management for the Descriptive Paper" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-diagram.svg" alt="Diagram: 5.6 Time Management for the Descriptive Paper" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-sticky.svg" alt="Sticky Note: 5.6 Time Management for the Descriptive Paper" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-6-time-management-for-the-descriptive-paper-sticky.svg" alt="Sticky Note: 5.6 Time Management for the Descriptive Paper" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ Date: [Date]
 
 ### 5.7 Vocabulary for Descriptive Writing
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-handwritten.svg" alt="Handwritten: 5.7 Vocabulary for Descriptive Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-handwritten.svg" alt="Handwritten: 5.7 Vocabulary for Descriptive Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-diagram.svg" alt="Diagram: 5.7 Vocabulary for Descriptive Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-diagram.svg" alt="Diagram: 5.7 Vocabulary for Descriptive Writing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-sticky.svg" alt="Sticky Note: 5.7 Vocabulary for Descriptive Writing" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-7-vocabulary-for-descriptive-writing-sticky.svg" alt="Sticky Note: 5.7 Vocabulary for Descriptive Writing" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ Date: [Date]
 
 ### 5.8 Presentation Tips
 
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-handwritten.svg" alt="Handwritten: 5.8 Presentation Tips" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-handwritten.svg" alt="Handwritten: 5.8 Presentation Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-diagram.svg" alt="Diagram: 5.8 Presentation Tips" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-diagram.svg" alt="Diagram: 5.8 Presentation Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-sticky.svg" alt="Sticky Note: 5.8 Presentation Tips" width="30%">
+<a href="../../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/05-descriptive-english/5-8-presentation-tips-sticky.svg" alt="Sticky Note: 5.8 Presentation Tips" width="30%">
 </a>
 
 

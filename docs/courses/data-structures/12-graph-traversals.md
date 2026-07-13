@@ -44,14 +44,14 @@ Graph traversals power: **web crawling** (Google discovers pages level by level)
 
 ### Chapter Roadmap
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ flowchart TD
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ Depth-First Search (DFS) explores as far as possible along each branch before ba
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ Depth-First Search (DFS) explores as far as possible along each branch before ba
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -136,14 +136,14 @@ DFS(G, v):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -178,14 +178,14 @@ Start: vertex 0. Neighbors visited in ascending order.
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -202,14 +202,14 @@ Start: vertex 0. Neighbors visited in ascending order.
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -306,14 +306,14 @@ class Graph {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ class Graph {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -349,14 +349,14 @@ class Graph {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -364,14 +364,14 @@ Iterative DFS uses an explicit stack (LIFO) instead of the call stack. This avoi
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ Iterative DFS uses an explicit stack (LIFO) instead of the call stack. This avoi
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -409,14 +409,14 @@ DFS_Iterative(G, s):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -446,14 +446,14 @@ Start: vertex 0.
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -466,14 +466,14 @@ Start: vertex 0.
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -540,14 +540,14 @@ void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -559,14 +559,14 @@ void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -580,14 +580,14 @@ void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -595,14 +595,14 @@ BFS visits vertices in order of increasing distance from the source using a **qu
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -614,14 +614,14 @@ BFS visits vertices in order of increasing distance from the source using a **qu
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -642,14 +642,14 @@ BFS(G, s):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -678,14 +678,14 @@ Start: vertex 0.
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -700,14 +700,14 @@ Start: vertex 0.
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -774,14 +774,14 @@ List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -793,14 +793,14 @@ List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -817,14 +817,14 @@ List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -832,14 +832,14 @@ A **connected component** in an undirected graph is a maximal set of vertices wh
 
 ### Algorithm Steps
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
 </a>
 
 
@@ -850,14 +850,14 @@ A **connected component** in an undirected graph is a maximal set of vertices wh
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ DFS_Label(G, v, comp, id):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@ Component 0:     Component 1:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -937,14 +937,14 @@ Component 0:     Component 1:
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -1024,14 +1024,14 @@ int[] findComponents(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1043,14 +1043,14 @@ int[] findComponents(List&lt;List<Integer&gt;> adj) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1066,14 +1066,14 @@ int[] findComponents(List&lt;List<Integer&gt;> adj) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1084,14 +1084,14 @@ A **cycle** is a path of length >= 3 that starts and ends at the same vertex wit
 
 ### Algorithm Steps — Undirected
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-handwritten.svg" alt="Handwritten: Algorithm Steps — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-handwritten.svg" alt="Handwritten: Algorithm Steps — Undirected" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-diagram.svg" alt="Diagram: Algorithm Steps — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-diagram.svg" alt="Diagram: Algorithm Steps — Undirected" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-sticky.svg" alt="Sticky Note: Algorithm Steps — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-sticky.svg" alt="Sticky Note: Algorithm Steps — Undirected" width="30%">
 </a>
 
 
@@ -1102,14 +1102,14 @@ A **cycle** is a path of length >= 3 that starts and ends at the same vertex wit
 
 ### Algorithm Steps — Directed
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-handwritten.svg" alt="Handwritten: Algorithm Steps — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-handwritten.svg" alt="Handwritten: Algorithm Steps — Directed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-diagram.svg" alt="Diagram: Algorithm Steps — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-diagram.svg" alt="Diagram: Algorithm Steps — Directed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-sticky.svg" alt="Sticky Note: Algorithm Steps — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-sticky.svg" alt="Sticky Note: Algorithm Steps — Directed" width="30%">
 </a>
 
 
@@ -1122,14 +1122,14 @@ A **cycle** is a path of length >= 3 that starts and ends at the same vertex wit
 
 ### Pseudocode — Undirected
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-handwritten.svg" alt="Handwritten: Pseudocode — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-handwritten.svg" alt="Handwritten: Pseudocode — Undirected" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-diagram.svg" alt="Diagram: Pseudocode — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-diagram.svg" alt="Diagram: Pseudocode — Undirected" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-sticky.svg" alt="Sticky Note: Pseudocode — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-sticky.svg" alt="Sticky Note: Pseudocode — Undirected" width="30%">
 </a>
 
 
@@ -1155,14 +1155,14 @@ DFS_Cycle_Undirected(G, v, parent, visited):
 
 ### Pseudocode — Directed
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-handwritten.svg" alt="Handwritten: Pseudocode — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-handwritten.svg" alt="Handwritten: Pseudocode — Directed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-diagram.svg" alt="Diagram: Pseudocode — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-diagram.svg" alt="Diagram: Pseudocode — Directed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-sticky.svg" alt="Sticky Note: Pseudocode — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-sticky.svg" alt="Sticky Note: Pseudocode — Directed" width="30%">
 </a>
 
 
@@ -1191,14 +1191,14 @@ DFS_Cycle_Directed(G, v, visited, recStack):
 
 ### Step-by-Step Dry Run — Directed
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Directed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Directed" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Directed" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Directed" width="30%">
 </a>
 
 
@@ -1214,14 +1214,14 @@ Graph: 0 -> 1 -> 2 -> 0
 
 ### Step-by-Step Dry Run — Undirected
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Undirected" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Undirected" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Undirected" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Undirected" width="30%">
 </a>
 
 
@@ -1236,14 +1236,14 @@ Graph: 0-1-2-0 (triangle)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1256,14 +1256,14 @@ Graph: 0-1-2-0 (triangle)
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -1386,14 +1386,14 @@ boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1405,14 +1405,14 @@ boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1429,14 +1429,14 @@ boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1444,14 +1444,14 @@ A graph is **bipartite** if vertices can be divided into two disjoint sets such 
 
 ### Algorithm Steps (BFS)
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-handwritten.svg" alt="Handwritten: Algorithm Steps (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-handwritten.svg" alt="Handwritten: Algorithm Steps (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-diagram.svg" alt="Diagram: Algorithm Steps (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-diagram.svg" alt="Diagram: Algorithm Steps (BFS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-sticky.svg" alt="Sticky Note: Algorithm Steps (BFS)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-sticky.svg" alt="Sticky Note: Algorithm Steps (BFS)" width="30%">
 </a>
 
 
@@ -1466,14 +1466,14 @@ A graph is **bipartite** if vertices can be divided into two disjoint sets such 
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1497,14 +1497,14 @@ IsBipartite(G):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -1541,14 +1541,14 @@ Now test a triangle (3-cycle — NOT bipartite):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1563,14 +1563,14 @@ Now test a triangle (3-cycle — NOT bipartite):
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -1653,14 +1653,14 @@ boolean isBipartite(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1672,14 +1672,14 @@ boolean isBipartite(List&lt;List<Integer&gt;> adj) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1697,14 +1697,14 @@ boolean isBipartite(List&lt;List<Integer&gt;> adj) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -1715,14 +1715,14 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 
 ### Algorithm Steps — Kahn's
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-handwritten.svg" alt="Handwritten: Algorithm Steps — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-handwritten.svg" alt="Handwritten: Algorithm Steps — Kahn's" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-diagram.svg" alt="Diagram: Algorithm Steps — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-diagram.svg" alt="Diagram: Algorithm Steps — Kahn's" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-sticky.svg" alt="Sticky Note: Algorithm Steps — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-sticky.svg" alt="Sticky Note: Algorithm Steps — Kahn's" width="30%">
 </a>
 
 
@@ -1735,14 +1735,14 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 
 ### Algorithm Steps — DFS
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-handwritten.svg" alt="Handwritten: Algorithm Steps — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-handwritten.svg" alt="Handwritten: Algorithm Steps — DFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-diagram.svg" alt="Diagram: Algorithm Steps — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-diagram.svg" alt="Diagram: Algorithm Steps — DFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-sticky.svg" alt="Sticky Note: Algorithm Steps — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-sticky.svg" alt="Sticky Note: Algorithm Steps — DFS" width="30%">
 </a>
 
 
@@ -1753,14 +1753,14 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 
 ### Pseudocode — Kahn's
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-handwritten.svg" alt="Handwritten: Pseudocode — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-handwritten.svg" alt="Handwritten: Pseudocode — Kahn's" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-diagram.svg" alt="Diagram: Pseudocode — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-diagram.svg" alt="Diagram: Pseudocode — Kahn's" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-sticky.svg" alt="Sticky Note: Pseudocode — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-sticky.svg" alt="Sticky Note: Pseudocode — Kahn's" width="30%">
 </a>
 
 
@@ -1792,14 +1792,14 @@ KahnTopologicalSort(G):
 
 ### Pseudocode — DFS
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-handwritten.svg" alt="Handwritten: Pseudocode — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-handwritten.svg" alt="Handwritten: Pseudocode — DFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-diagram.svg" alt="Diagram: Pseudocode — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-diagram.svg" alt="Diagram: Pseudocode — DFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-sticky.svg" alt="Sticky Note: Pseudocode — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-sticky.svg" alt="Sticky Note: Pseudocode — DFS" width="30%">
 </a>
 
 
@@ -1822,14 +1822,14 @@ DFS_Topo(G, v, visited, stack):
 
 ### Step-by-Step Dry Run — Kahn's
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Kahn's" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Kahn's" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Kahn's" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Kahn's" width="30%">
 </a>
 
 
@@ -1861,14 +1861,14 @@ Initial in-degrees: in[0]=2, in[1]=2, in[2]=1, in[3]=1, in[4]=0, in[5]=0
 
 ### Step-by-Step Dry Run — DFS
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — DFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-diagram.svg" alt="Diagram: Step-by-Step Dry Run — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-diagram.svg" alt="Diagram: Step-by-Step Dry Run — DFS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — DFS" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — DFS" width="30%">
 </a>
 
 
@@ -1900,14 +1900,14 @@ Both 4, 5, 0, 2, 3, 1 (Kahn's) and 5, 4, 2, 3, 1, 0 (DFS) are valid topological 
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1921,14 +1921,14 @@ Both 4, 5, 0, 2, 3, 1 (Kahn's) and 5, 4, 2, 3, 1, 0 (DFS) are valid topological 
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -2056,14 +2056,14 @@ List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2074,14 +2074,14 @@ List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2097,14 +2097,14 @@ List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
 
 ### Definition
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
 </a>
 
 
@@ -2112,14 +2112,14 @@ A **strongly connected component (SCC)** of a directed graph is a maximal set of
 
 ### Kosaraju's Algorithm — Steps
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-handwritten.svg" alt="Handwritten: Kosaraju's Algorithm — Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-handwritten.svg" alt="Handwritten: Kosaraju's Algorithm — Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-diagram.svg" alt="Diagram: Kosaraju's Algorithm — Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-diagram.svg" alt="Diagram: Kosaraju's Algorithm — Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-sticky.svg" alt="Sticky Note: Kosaraju's Algorithm — Steps" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-sticky.svg" alt="Sticky Note: Kosaraju's Algorithm — Steps" width="30%">
 </a>
 
 
@@ -2129,14 +2129,14 @@ A **strongly connected component (SCC)** of a directed graph is a maximal set of
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -2179,14 +2179,14 @@ DFS_Collect(G, v, visited):
 
 ### Step-by-Step Dry Run
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
 </a>
 
 
@@ -2251,14 +2251,14 @@ Transpose adj:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2273,14 +2273,14 @@ Transpose adj:
 
 ### Implementations
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
 </a>
 
 
@@ -2418,14 +2418,14 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2437,14 +2437,14 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2480,14 +2480,14 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Common Questions
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
 </a>
 
 
@@ -2513,14 +2513,14 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Pro Tips
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
 </a>
 
 
@@ -2532,14 +2532,14 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Common Pitfalls
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
 </a>
 
 
@@ -2625,14 +2625,14 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Common Mistakes (GFG-Style)
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
 </a>
 
 
@@ -2762,14 +2762,14 @@ function bidirectionalBFS(graph: Graph, start: number, target: number): number[]
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2813,14 +2813,14 @@ function bidirectionalBFS(graph: Graph, start: number, target: number): number[]
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
 </a>
 
 
@@ -2846,14 +2846,14 @@ function bidirectionalBFS(graph: Graph, start: number, target: number): number[]
 
 ### Traversal Comparison
 
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-handwritten.svg" alt="Handwritten: Traversal Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-handwritten.svg" alt="Handwritten: Traversal Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-diagram.svg" alt="Diagram: Traversal Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-diagram.svg" alt="Diagram: Traversal Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-sticky.svg" alt="Sticky Note: Traversal Comparison" width="30%">
+<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-sticky.svg" alt="Sticky Note: Traversal Comparison" width="30%">
 </a>
 
 

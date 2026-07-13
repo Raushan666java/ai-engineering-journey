@@ -22,14 +22,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ Digital forensics is the application of computer science and investigative proce
 
 ### Phase 1: Identification
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-handwritten.svg" alt="Handwritten: Phase 1: Identification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-handwritten.svg" alt="Handwritten: Phase 1: Identification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-diagram.svg" alt="Diagram: Phase 1: Identification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-diagram.svg" alt="Diagram: Phase 1: Identification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-sticky.svg" alt="Sticky Note: Phase 1: Identification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-1-identification-sticky.svg" alt="Sticky Note: Phase 1: Identification" width="30%">
 </a>
 
 
@@ -135,14 +135,14 @@ Step 5: Log → created case-2024-001-evidence.csv with entries for each device
 
 ### Phase 2: Preservation
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-handwritten.svg" alt="Handwritten: Phase 2: Preservation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-handwritten.svg" alt="Handwritten: Phase 2: Preservation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-diagram.svg" alt="Diagram: Phase 2: Preservation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-diagram.svg" alt="Diagram: Phase 2: Preservation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-sticky.svg" alt="Sticky Note: Phase 2: Preservation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-2-preservation-sticky.svg" alt="Sticky Note: Phase 2: Preservation" width="30%">
 </a>
 
 
@@ -196,14 +196,14 @@ Step 5: Secure → evidence stored in safe #2, access logged in Chain of Custody
 
 ### Phase 3: Collection
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-handwritten.svg" alt="Handwritten: Phase 3: Collection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-handwritten.svg" alt="Handwritten: Phase 3: Collection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-diagram.svg" alt="Diagram: Phase 3: Collection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-diagram.svg" alt="Diagram: Phase 3: Collection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-sticky.svg" alt="Sticky Note: Phase 3: Collection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-3-collection-sticky.svg" alt="Sticky Note: Phase 3: Collection" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ Step 5: Logged → all items timestamped in collection manifest
 
 ### Phase 4: Examination
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-handwritten.svg" alt="Handwritten: Phase 4: Examination" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-handwritten.svg" alt="Handwritten: Phase 4: Examination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-diagram.svg" alt="Diagram: Phase 4: Examination" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-diagram.svg" alt="Diagram: Phase 4: Examination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-sticky.svg" alt="Sticky Note: Phase 4: Examination" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-4-examination-sticky.svg" alt="Sticky Note: Phase 4: Examination" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ Step 5: Carving → PhotoRec recovered 284 files including 12 JPEG, 3 PDF, 1 ZIP
 
 ### Phase 5: Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-handwritten.svg" alt="Handwritten: Phase 5: Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-handwritten.svg" alt="Handwritten: Phase 5: Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-diagram.svg" alt="Diagram: Phase 5: Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-diagram.svg" alt="Diagram: Phase 5: Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-sticky.svg" alt="Sticky Note: Phase 5: Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-5-analysis-sticky.svg" alt="Sticky Note: Phase 5: Analysis" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ Step 5: Attribution → Email originated from spoofed vendor domain with Russian
 
 ### Phase 6: Presentation
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-handwritten.svg" alt="Handwritten: Phase 6: Presentation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-handwritten.svg" alt="Handwritten: Phase 6: Presentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-diagram.svg" alt="Diagram: Phase 6: Presentation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-diagram.svg" alt="Diagram: Phase 6: Presentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-sticky.svg" alt="Sticky Note: Phase 6: Presentation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/phase-6-presentation-sticky.svg" alt="Sticky Note: Phase 6: Presentation" width="30%">
 </a>
 
 
@@ -463,14 +463,14 @@ Chain of custody (CoC) is a formal document that tracks the seizure, custody, co
 
 ### Required Components of a Chain of Custody Form
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-handwritten.svg" alt="Handwritten: Required Components of a Chain of Custody Form" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-handwritten.svg" alt="Handwritten: Required Components of a Chain of Custody Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-diagram.svg" alt="Diagram: Required Components of a Chain of Custody Form" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-diagram.svg" alt="Diagram: Required Components of a Chain of Custody Form" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-sticky.svg" alt="Sticky Note: Required Components of a Chain of Custody Form" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/required-components-of-a-chain-of-custody-form-sticky.svg" alt="Sticky Note: Required Components of a Chain of Custody Form" width="30%">
 </a>
 
 
@@ -485,14 +485,14 @@ Chain of custody (CoC) is a formal document that tracks the seizure, custody, co
 
 ### Sample Chain of Custody Form (Text Format)
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-handwritten.svg" alt="Handwritten: Sample Chain of Custody Form (Text Format)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-handwritten.svg" alt="Handwritten: Sample Chain of Custody Form (Text Format)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-diagram.svg" alt="Diagram: Sample Chain of Custody Form (Text Format)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-diagram.svg" alt="Diagram: Sample Chain of Custody Form (Text Format)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-sticky.svg" alt="Sticky Note: Sample Chain of Custody Form (Text Format)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/sample-chain-of-custody-form-text-format-sticky.svg" alt="Sticky Note: Sample Chain of Custody Form (Text Format)" width="30%">
 </a>
 
 
@@ -541,14 +541,14 @@ EVIDENCE OFFICER: _______________________  Date: _____________
 
 ### Legal Standards for Chain of Custody
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-handwritten.svg" alt="Handwritten: Legal Standards for Chain of Custody" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-handwritten.svg" alt="Handwritten: Legal Standards for Chain of Custody" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-diagram.svg" alt="Diagram: Legal Standards for Chain of Custody" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-diagram.svg" alt="Diagram: Legal Standards for Chain of Custody" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-sticky.svg" alt="Sticky Note: Legal Standards for Chain of Custody" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/legal-standards-for-chain-of-custody-sticky.svg" alt="Sticky Note: Legal Standards for Chain of Custody" width="30%">
 </a>
 
 
@@ -559,14 +559,14 @@ EVIDENCE OFFICER: _______________________  Date: _____________
 
 ### Chain of Custody Violations That Invalidate Evidence
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-handwritten.svg" alt="Handwritten: Chain of Custody Violations That Invalidate Evidence" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-handwritten.svg" alt="Handwritten: Chain of Custody Violations That Invalidate Evidence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-diagram.svg" alt="Diagram: Chain of Custody Violations That Invalidate Evidence" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-diagram.svg" alt="Diagram: Chain of Custody Violations That Invalidate Evidence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-sticky.svg" alt="Sticky Note: Chain of Custody Violations That Invalidate Evidence" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-violations-that-invalidate-evidence-sticky.svg" alt="Sticky Note: Chain of Custody Violations That Invalidate Evidence" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ EVIDENCE OFFICER: _______________________  Date: _____________
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -605,14 +605,14 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 
 ### The Order of Volatility Table
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-handwritten.svg" alt="Handwritten: The Order of Volatility Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-handwritten.svg" alt="Handwritten: The Order of Volatility Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-diagram.svg" alt="Diagram: The Order of Volatility Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-diagram.svg" alt="Diagram: The Order of Volatility Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-sticky.svg" alt="Sticky Note: The Order of Volatility Table" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/the-order-of-volatility-table-sticky.svg" alt="Sticky Note: The Order of Volatility Table" width="30%">
 </a>
 
 
@@ -630,14 +630,14 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 
 ### Collection Timing Guidelines
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-handwritten.svg" alt="Handwritten: Collection Timing Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-handwritten.svg" alt="Handwritten: Collection Timing Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-diagram.svg" alt="Diagram: Collection Timing Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-diagram.svg" alt="Diagram: Collection Timing Guidelines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-sticky.svg" alt="Sticky Note: Collection Timing Guidelines" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/collection-timing-guidelines-sticky.svg" alt="Sticky Note: Collection Timing Guidelines" width="30%">
 </a>
 
 
@@ -654,14 +654,14 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 
 ### Anti-Forensics Impact on Volatility
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-handwritten.svg" alt="Handwritten: Anti-Forensics Impact on Volatility" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-handwritten.svg" alt="Handwritten: Anti-Forensics Impact on Volatility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-diagram.svg" alt="Diagram: Anti-Forensics Impact on Volatility" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-diagram.svg" alt="Diagram: Anti-Forensics Impact on Volatility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-sticky.svg" alt="Sticky Note: Anti-Forensics Impact on Volatility" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/anti-forensics-impact-on-volatility-sticky.svg" alt="Sticky Note: Anti-Forensics Impact on Volatility" width="30%">
 </a>
 
 
@@ -676,14 +676,14 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 
 ### Edge Cases in Order of Volatility
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-handwritten.svg" alt="Handwritten: Edge Cases in Order of Volatility" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-handwritten.svg" alt="Handwritten: Edge Cases in Order of Volatility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-diagram.svg" alt="Diagram: Edge Cases in Order of Volatility" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-diagram.svg" alt="Diagram: Edge Cases in Order of Volatility" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-sticky.svg" alt="Sticky Note: Edge Cases in Order of Volatility" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/edge-cases-in-order-of-volatility-sticky.svg" alt="Sticky Note: Edge Cases in Order of Volatility" width="30%">
 </a>
 
 
@@ -701,14 +701,14 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 
 ### 4.1 File System Overview
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-handwritten.svg" alt="Handwritten: 4.1 File System Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-handwritten.svg" alt="Handwritten: 4.1 File System Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-diagram.svg" alt="Diagram: 4.1 File System Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-diagram.svg" alt="Diagram: 4.1 File System Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-sticky.svg" alt="Sticky Note: 4.1 File System Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-1-file-system-overview-sticky.svg" alt="Sticky Note: 4.1 File System Overview" width="30%">
 </a>
 
 
@@ -768,14 +768,14 @@ The Order of Volatility (OOV) dictates the sequence in which digital evidence mu
 
 ### 4.2 Master File Table (MFT) Deep Dive
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-handwritten.svg" alt="Handwritten: 4.2 Master File Table (MFT) Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-handwritten.svg" alt="Handwritten: 4.2 Master File Table (MFT) Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-diagram.svg" alt="Diagram: 4.2 Master File Table (MFT) Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-diagram.svg" alt="Diagram: 4.2 Master File Table (MFT) Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-sticky.svg" alt="Sticky Note: 4.2 Master File Table (MFT) Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-2-master-file-table-mft-deep-dive-sticky.svg" alt="Sticky Note: 4.2 Master File Table (MFT) Deep Dive" width="30%">
 </a>
 
 
@@ -827,14 +827,14 @@ Offset  | Size | Field              | Description
 
 ### 4.3 Analyzing MFT for Forensic Evidence
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-handwritten.svg" alt="Handwritten: 4.3 Analyzing MFT for Forensic Evidence" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-handwritten.svg" alt="Handwritten: 4.3 Analyzing MFT for Forensic Evidence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-diagram.svg" alt="Diagram: 4.3 Analyzing MFT for Forensic Evidence" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-diagram.svg" alt="Diagram: 4.3 Analyzing MFT for Forensic Evidence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-sticky.svg" alt="Sticky Note: 4.3 Analyzing MFT for Forensic Evidence" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-3-analyzing-mft-for-forensic-evidence-sticky.svg" alt="Sticky Note: 4.3 Analyzing MFT for Forensic Evidence" width="30%">
 </a>
 
 
@@ -881,14 +881,14 @@ From this output, we can see:
 
 ### 4.4 Deleted File Recovery
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-handwritten.svg" alt="Handwritten: 4.4 Deleted File Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-handwritten.svg" alt="Handwritten: 4.4 Deleted File Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-diagram.svg" alt="Diagram: 4.4 Deleted File Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-diagram.svg" alt="Diagram: 4.4 Deleted File Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-sticky.svg" alt="Sticky Note: 4.4 Deleted File Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-4-deleted-file-recovery-sticky.svg" alt="Sticky Note: 4.4 Deleted File Recovery" width="30%">
 </a>
 
 
@@ -962,14 +962,14 @@ scalpel /evidence/disk.dd -o /evidence/carved/
 
 ### 4.5 File Carving
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-handwritten.svg" alt="Handwritten: 4.5 File Carving" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-handwritten.svg" alt="Handwritten: 4.5 File Carving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-diagram.svg" alt="Diagram: 4.5 File Carving" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-diagram.svg" alt="Diagram: 4.5 File Carving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-sticky.svg" alt="Sticky Note: 4.5 File Carving" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-5-file-carving-sticky.svg" alt="Sticky Note: 4.5 File Carving" width="30%">
 </a>
 
 
@@ -1003,14 +1003,14 @@ scalpel /evidence/disk.dd -o /evidence/carved/
 
 ### 4.6 SSD and TRIM Considerations
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-handwritten.svg" alt="Handwritten: 4.6 SSD and TRIM Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-handwritten.svg" alt="Handwritten: 4.6 SSD and TRIM Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-diagram.svg" alt="Diagram: 4.6 SSD and TRIM Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-diagram.svg" alt="Diagram: 4.6 SSD and TRIM Considerations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-sticky.svg" alt="Sticky Note: 4.6 SSD and TRIM Considerations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-6-ssd-and-trim-considerations-sticky.svg" alt="Sticky Note: 4.6 SSD and TRIM Considerations" width="30%">
 </a>
 
 
@@ -1033,14 +1033,14 @@ SSDs pose significant challenges for traditional forensics:
 
 ### 4.7 Data Recovery Tools Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-handwritten.svg" alt="Handwritten: 4.7 Data Recovery Tools Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-handwritten.svg" alt="Handwritten: 4.7 Data Recovery Tools Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-diagram.svg" alt="Diagram: 4.7 Data Recovery Tools Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-diagram.svg" alt="Diagram: 4.7 Data Recovery Tools Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-sticky.svg" alt="Sticky Note: 4.7 Data Recovery Tools Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-7-data-recovery-tools-comparison-sticky.svg" alt="Sticky Note: 4.7 Data Recovery Tools Comparison" width="30%">
 </a>
 
 
@@ -1061,14 +1061,14 @@ SSDs pose significant challenges for traditional forensics:
 
 ### 4.8 Disk Forensics Edge Cases
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-handwritten.svg" alt="Handwritten: 4.8 Disk Forensics Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-handwritten.svg" alt="Handwritten: 4.8 Disk Forensics Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-diagram.svg" alt="Diagram: 4.8 Disk Forensics Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-diagram.svg" alt="Diagram: 4.8 Disk Forensics Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-sticky.svg" alt="Sticky Note: 4.8 Disk Forensics Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/4-8-disk-forensics-edge-cases-sticky.svg" alt="Sticky Note: 4.8 Disk Forensics Edge Cases" width="30%">
 </a>
 
 
@@ -1088,14 +1088,14 @@ SSDs pose significant challenges for traditional forensics:
 
 ### 5.1 Why Memory Forensics Matters
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-handwritten.svg" alt="Handwritten: 5.1 Why Memory Forensics Matters" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-handwritten.svg" alt="Handwritten: 5.1 Why Memory Forensics Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-diagram.svg" alt="Diagram: 5.1 Why Memory Forensics Matters" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-diagram.svg" alt="Diagram: 5.1 Why Memory Forensics Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-sticky.svg" alt="Sticky Note: 5.1 Why Memory Forensics Matters" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-1-why-memory-forensics-matters-sticky.svg" alt="Sticky Note: 5.1 Why Memory Forensics Matters" width="30%">
 </a>
 
 
@@ -1123,14 +1123,14 @@ SSDs pose significant challenges for traditional forensics:
 
 ### 5.2 Memory Acquisition Methods
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-handwritten.svg" alt="Handwritten: 5.2 Memory Acquisition Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-handwritten.svg" alt="Handwritten: 5.2 Memory Acquisition Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-diagram.svg" alt="Diagram: 5.2 Memory Acquisition Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-diagram.svg" alt="Diagram: 5.2 Memory Acquisition Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-sticky.svg" alt="Sticky Note: 5.2 Memory Acquisition Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-2-memory-acquisition-methods-sticky.svg" alt="Sticky Note: 5.2 Memory Acquisition Methods" width="30%">
 </a>
 
 
@@ -1216,14 +1216,14 @@ virsh dump SuspiciousVM /evidence/VM-memory.dump --memory-only --format elf
 
 ### 5.3 Volatility 3 → Memory Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-handwritten.svg" alt="Handwritten: 5.3 Volatility 3 → Memory Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-handwritten.svg" alt="Handwritten: 5.3 Volatility 3 → Memory Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-diagram.svg" alt="Diagram: 5.3 Volatility 3 → Memory Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-diagram.svg" alt="Diagram: 5.3 Volatility 3 → Memory Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-sticky.svg" alt="Sticky Note: 5.3 Volatility 3 → Memory Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-3-volatility-3-memory-analysis-sticky.svg" alt="Sticky Note: 5.3 Volatility 3 → Memory Analysis" width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ python3 vol.py -f memory.macho mac.pstree
 
 ### 5.4 Analyzing Specific Malware Artifacts in Memory
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-handwritten.svg" alt="Handwritten: 5.4 Analyzing Specific Malware Artifacts in Memory" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-handwritten.svg" alt="Handwritten: 5.4 Analyzing Specific Malware Artifacts in Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-diagram.svg" alt="Diagram: 5.4 Analyzing Specific Malware Artifacts in Memory" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-diagram.svg" alt="Diagram: 5.4 Analyzing Specific Malware Artifacts in Memory" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-sticky.svg" alt="Sticky Note: 5.4 Analyzing Specific Malware Artifacts in Memory" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-4-analyzing-specific-malware-artifacts-in-memory-sticky.svg" alt="Sticky Note: 5.4 Analyzing Specific Malware Artifacts in Memory" width="30%">
 </a>
 
 
@@ -1555,14 +1555,14 @@ Volatility Commands:
 
 ### 5.5 Memory Forensics Challenges and Anti-Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-handwritten.svg" alt="Handwritten: 5.5 Memory Forensics Challenges and Anti-Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-handwritten.svg" alt="Handwritten: 5.5 Memory Forensics Challenges and Anti-Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-diagram.svg" alt="Diagram: 5.5 Memory Forensics Challenges and Anti-Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-diagram.svg" alt="Diagram: 5.5 Memory Forensics Challenges and Anti-Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-sticky.svg" alt="Sticky Note: 5.5 Memory Forensics Challenges and Anti-Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-5-memory-forensics-challenges-and-anti-forensics-sticky.svg" alt="Sticky Note: 5.5 Memory Forensics Challenges and Anti-Forensics" width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ Volatility Commands:
 
 ### 5.6 Memory Forensics → Complexity & Performance
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-handwritten.svg" alt="Handwritten: 5.6 Memory Forensics → Complexity & Performance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-handwritten.svg" alt="Handwritten: 5.6 Memory Forensics → Complexity & Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-diagram.svg" alt="Diagram: 5.6 Memory Forensics → Complexity & Performance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-diagram.svg" alt="Diagram: 5.6 Memory Forensics → Complexity & Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-sticky.svg" alt="Sticky Note: 5.6 Memory Forensics → Complexity & Performance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/5-6-memory-forensics-complexity-performance-sticky.svg" alt="Sticky Note: 5.6 Memory Forensics → Complexity & Performance" width="30%">
 </a>
 
 
@@ -1606,14 +1606,14 @@ Volatility Commands:
 
 ### 6.1 PCAP Analysis Fundamentals
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-handwritten.svg" alt="Handwritten: 6.1 PCAP Analysis Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-handwritten.svg" alt="Handwritten: 6.1 PCAP Analysis Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-diagram.svg" alt="Diagram: 6.1 PCAP Analysis Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-diagram.svg" alt="Diagram: 6.1 PCAP Analysis Fundamentals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-sticky.svg" alt="Sticky Note: 6.1 PCAP Analysis Fundamentals" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-1-pcap-analysis-fundamentals-sticky.svg" alt="Sticky Note: 6.1 PCAP Analysis Fundamentals" width="30%">
 </a>
 
 
@@ -1631,14 +1631,14 @@ Volatility Commands:
 
 ### 6.2 Wireshark Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-handwritten.svg" alt="Handwritten: 6.2 Wireshark Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-handwritten.svg" alt="Handwritten: 6.2 Wireshark Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-diagram.svg" alt="Diagram: 6.2 Wireshark Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-diagram.svg" alt="Diagram: 6.2 Wireshark Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-sticky.svg" alt="Sticky Note: 6.2 Wireshark Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-2-wireshark-analysis-sticky.svg" alt="Sticky Note: 6.2 Wireshark Analysis" width="30%">
 </a>
 
 
@@ -1753,14 +1753,14 @@ The same request every 60 seconds with the same file, same cookie structure → 
 
 ### 6.3 Zeek (Bro) Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-handwritten.svg" alt="Handwritten: 6.3 Zeek (Bro) Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-handwritten.svg" alt="Handwritten: 6.3 Zeek (Bro) Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-diagram.svg" alt="Diagram: 6.3 Zeek (Bro) Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-diagram.svg" alt="Diagram: 6.3 Zeek (Bro) Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-sticky.svg" alt="Sticky Note: 6.3 Zeek (Bro) Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-3-zeek-bro-analysis-sticky.svg" alt="Sticky Note: 6.3 Zeek (Bro) Analysis" width="30%">
 </a>
 
 
@@ -1869,14 +1869,14 @@ sha256sum files/* | tee extracted_file_hashes.txt
 
 ### 6.4 Zeek Scripting for Custom Detection
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-handwritten.svg" alt="Handwritten: 6.4 Zeek Scripting for Custom Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-handwritten.svg" alt="Handwritten: 6.4 Zeek Scripting for Custom Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-diagram.svg" alt="Diagram: 6.4 Zeek Scripting for Custom Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-diagram.svg" alt="Diagram: 6.4 Zeek Scripting for Custom Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-sticky.svg" alt="Sticky Note: 6.4 Zeek Scripting for Custom Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-4-zeek-scripting-for-custom-detection-sticky.svg" alt="Sticky Note: 6.4 Zeek Scripting for Custom Detection" width="30%">
 </a>
 
 
@@ -1911,14 +1911,14 @@ event http_request(c: connection, method: string, original_uri: string,
 
 ### 6.5 Network Forensics → Complexity and Performance
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-handwritten.svg" alt="Handwritten: 6.5 Network Forensics → Complexity and Performance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-handwritten.svg" alt="Handwritten: 6.5 Network Forensics → Complexity and Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-diagram.svg" alt="Diagram: 6.5 Network Forensics → Complexity and Performance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-diagram.svg" alt="Diagram: 6.5 Network Forensics → Complexity and Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-sticky.svg" alt="Sticky Note: 6.5 Network Forensics → Complexity and Performance" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/6-5-network-forensics-complexity-and-performance-sticky.svg" alt="Sticky Note: 6.5 Network Forensics → Complexity and Performance" width="30%">
 </a>
 
 
@@ -1937,14 +1937,14 @@ event http_request(c: connection, method: string, original_uri: string,
 
 ### 7.1 Mobile Forensics Acquisition Types
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-handwritten.svg" alt="Handwritten: 7.1 Mobile Forensics Acquisition Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-handwritten.svg" alt="Handwritten: 7.1 Mobile Forensics Acquisition Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-diagram.svg" alt="Diagram: 7.1 Mobile Forensics Acquisition Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-diagram.svg" alt="Diagram: 7.1 Mobile Forensics Acquisition Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-sticky.svg" alt="Sticky Note: 7.1 Mobile Forensics Acquisition Types" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-1-mobile-forensics-acquisition-types-sticky.svg" alt="Sticky Note: 7.1 Mobile Forensics Acquisition Types" width="30%">
 </a>
 
 
@@ -1959,14 +1959,14 @@ event http_request(c: connection, method: string, original_uri: string,
 
 ### 7.2 Android Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-handwritten.svg" alt="Handwritten: 7.2 Android Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-handwritten.svg" alt="Handwritten: 7.2 Android Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-diagram.svg" alt="Diagram: 7.2 Android Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-diagram.svg" alt="Diagram: 7.2 Android Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-sticky.svg" alt="Sticky Note: 7.2 Android Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-2-android-forensics-sticky.svg" alt="Sticky Note: 7.2 Android Forensics" width="30%">
 </a>
 
 
@@ -2053,14 +2053,14 @@ tar -xvf backup.tar
 
 ### 7.3 iOS Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-handwritten.svg" alt="Handwritten: 7.3 iOS Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-handwritten.svg" alt="Handwritten: 7.3 iOS Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-diagram.svg" alt="Diagram: 7.3 iOS Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-diagram.svg" alt="Diagram: 7.3 iOS Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-sticky.svg" alt="Sticky Note: 7.3 iOS Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-3-ios-forensics-sticky.svg" alt="Sticky Note: 7.3 iOS Forensics" width="30%">
 </a>
 
 
@@ -2133,14 +2133,14 @@ ssh root@127.0.0.1 -p 2222
 
 ### 7.4 Mobile Forensics → Key Challenges
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-handwritten.svg" alt="Handwritten: 7.4 Mobile Forensics → Key Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-handwritten.svg" alt="Handwritten: 7.4 Mobile Forensics → Key Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-diagram.svg" alt="Diagram: 7.4 Mobile Forensics → Key Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-diagram.svg" alt="Diagram: 7.4 Mobile Forensics → Key Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-sticky.svg" alt="Sticky Note: 7.4 Mobile Forensics → Key Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-4-mobile-forensics-key-challenges-sticky.svg" alt="Sticky Note: 7.4 Mobile Forensics → Key Challenges" width="30%">
 </a>
 
 
@@ -2157,14 +2157,14 @@ ssh root@127.0.0.1 -p 2222
 
 ### 7.5 Mobile Forensics Tools Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-handwritten.svg" alt="Handwritten: 7.5 Mobile Forensics Tools Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-handwritten.svg" alt="Handwritten: 7.5 Mobile Forensics Tools Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-diagram.svg" alt="Diagram: 7.5 Mobile Forensics Tools Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-diagram.svg" alt="Diagram: 7.5 Mobile Forensics Tools Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-sticky.svg" alt="Sticky Note: 7.5 Mobile Forensics Tools Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-5-mobile-forensics-tools-comparison-sticky.svg" alt="Sticky Note: 7.5 Mobile Forensics Tools Comparison" width="30%">
 </a>
 
 
@@ -2182,14 +2182,14 @@ ssh root@127.0.0.1 -p 2222
 
 ### 7.6 Mobile Forensics Workflow
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-handwritten.svg" alt="Handwritten: 7.6 Mobile Forensics Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-handwritten.svg" alt="Handwritten: 7.6 Mobile Forensics Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-diagram.svg" alt="Diagram: 7.6 Mobile Forensics Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-diagram.svg" alt="Diagram: 7.6 Mobile Forensics Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-sticky.svg" alt="Sticky Note: 7.6 Mobile Forensics Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/7-6-mobile-forensics-workflow-sticky.svg" alt="Sticky Note: 7.6 Mobile Forensics Workflow" width="30%">
 </a>
 
 
@@ -2212,14 +2212,14 @@ ssh root@127.0.0.1 -p 2222
 
 ### 8.1 Cloud Forensics Challenges
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-handwritten.svg" alt="Handwritten: 8.1 Cloud Forensics Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-handwritten.svg" alt="Handwritten: 8.1 Cloud Forensics Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-diagram.svg" alt="Diagram: 8.1 Cloud Forensics Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-diagram.svg" alt="Diagram: 8.1 Cloud Forensics Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-sticky.svg" alt="Sticky Note: 8.1 Cloud Forensics Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-1-cloud-forensics-challenges-sticky.svg" alt="Sticky Note: 8.1 Cloud Forensics Challenges" width="30%">
 </a>
 
 
@@ -2236,14 +2236,14 @@ ssh root@127.0.0.1 -p 2222
 
 ### 8.2 AWS Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-handwritten.svg" alt="Handwritten: 8.2 AWS Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-handwritten.svg" alt="Handwritten: 8.2 AWS Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-diagram.svg" alt="Diagram: 8.2 AWS Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-diagram.svg" alt="Diagram: 8.2 AWS Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-sticky.svg" alt="Sticky Note: 8.2 AWS Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-2-aws-forensics-sticky.svg" alt="Sticky Note: 8.2 AWS Forensics" width="30%">
 </a>
 
 
@@ -2326,14 +2326,14 @@ aws lambda get-function --function-name suspicious-function --query 'Code.Locati
 
 ### 8.3 Azure Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-handwritten.svg" alt="Handwritten: 8.3 Azure Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-handwritten.svg" alt="Handwritten: 8.3 Azure Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-diagram.svg" alt="Diagram: 8.3 Azure Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-diagram.svg" alt="Diagram: 8.3 Azure Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-sticky.svg" alt="Sticky Note: 8.3 Azure Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-3-azure-forensics-sticky.svg" alt="Sticky Note: 8.3 Azure Forensics" width="30%">
 </a>
 
 
@@ -2382,14 +2382,14 @@ az monitor diagnostic-settings list --resource /subscriptions/SUBSCRIPTION_ID/re
 
 ### 8.4 GCP Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-handwritten.svg" alt="Handwritten: 8.4 GCP Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-handwritten.svg" alt="Handwritten: 8.4 GCP Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-diagram.svg" alt="Diagram: 8.4 GCP Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-diagram.svg" alt="Diagram: 8.4 GCP Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-sticky.svg" alt="Sticky Note: 8.4 GCP Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-4-gcp-forensics-sticky.svg" alt="Sticky Note: 8.4 GCP Forensics" width="30%">
 </a>
 
 
@@ -2438,14 +2438,14 @@ gsutil logging set on -b forensic-logs-bucket -o access-log gs://TARGET_BUCKET
 
 ### 8.5 Cloud Forensic Workflow
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-handwritten.svg" alt="Handwritten: 8.5 Cloud Forensic Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-handwritten.svg" alt="Handwritten: 8.5 Cloud Forensic Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-diagram.svg" alt="Diagram: 8.5 Cloud Forensic Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-diagram.svg" alt="Diagram: 8.5 Cloud Forensic Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-sticky.svg" alt="Sticky Note: 8.5 Cloud Forensic Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-5-cloud-forensic-workflow-sticky.svg" alt="Sticky Note: 8.5 Cloud Forensic Workflow" width="30%">
 </a>
 
 
@@ -2461,14 +2461,14 @@ gsutil logging set on -b forensic-logs-bucket -o access-log gs://TARGET_BUCKET
 
 ### 8.6 Container Forensics (Docker/Kubernetes)
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-handwritten.svg" alt="Handwritten: 8.6 Container Forensics (Docker/Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-handwritten.svg" alt="Handwritten: 8.6 Container Forensics (Docker/Kubernetes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-diagram.svg" alt="Diagram: 8.6 Container Forensics (Docker/Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-diagram.svg" alt="Diagram: 8.6 Container Forensics (Docker/Kubernetes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-sticky.svg" alt="Sticky Note: 8.6 Container Forensics (Docker/Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/8-6-container-forensics-docker-kubernetes-sticky.svg" alt="Sticky Note: 8.6 Container Forensics (Docker/Kubernetes)" width="30%">
 </a>
 
 
@@ -2522,14 +2522,14 @@ ETCDCTL_API=3 etcdctl --endpoints=https://127.0.0.1:2379 \
 
 ### 9.1 The Four Phases
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-handwritten.svg" alt="Handwritten: 9.1 The Four Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-handwritten.svg" alt="Handwritten: 9.1 The Four Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-diagram.svg" alt="Diagram: 9.1 The Four Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-diagram.svg" alt="Diagram: 9.1 The Four Phases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-sticky.svg" alt="Sticky Note: 9.1 The Four Phases" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-1-the-four-phases-sticky.svg" alt="Sticky Note: 9.1 The Four Phases" width="30%">
 </a>
 
 
@@ -2765,14 +2765,14 @@ aws ec2 create-network-acl-entry \
 
 ### 9.2 SOC Operations
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-handwritten.svg" alt="Handwritten: 9.2 SOC Operations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-handwritten.svg" alt="Handwritten: 9.2 SOC Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-diagram.svg" alt="Diagram: 9.2 SOC Operations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-diagram.svg" alt="Diagram: 9.2 SOC Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-sticky.svg" alt="Sticky Note: 9.2 SOC Operations" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-2-soc-operations-sticky.svg" alt="Sticky Note: 9.2 SOC Operations" width="30%">
 </a>
 
 
@@ -2801,14 +2801,14 @@ aws ec2 create-network-acl-entry \
 
 ### 9.3 SIEM vs SOAR vs XDR
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-handwritten.svg" alt="Handwritten: 9.3 SIEM vs SOAR vs XDR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-handwritten.svg" alt="Handwritten: 9.3 SIEM vs SOAR vs XDR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-diagram.svg" alt="Diagram: 9.3 SIEM vs SOAR vs XDR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-diagram.svg" alt="Diagram: 9.3 SIEM vs SOAR vs XDR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-sticky.svg" alt="Sticky Note: 9.3 SIEM vs SOAR vs XDR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/9-3-siem-vs-soar-vs-xdr-sticky.svg" alt="Sticky Note: 9.3 SIEM vs SOAR vs XDR" width="30%">
 </a>
 
 
@@ -2842,14 +2842,14 @@ aws ec2 create-network-acl-entry \
 
 ### 10.1 Threat Hunting Methodology
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-handwritten.svg" alt="Handwritten: 10.1 Threat Hunting Methodology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-handwritten.svg" alt="Handwritten: 10.1 Threat Hunting Methodology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-diagram.svg" alt="Diagram: 10.1 Threat Hunting Methodology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-diagram.svg" alt="Diagram: 10.1 Threat Hunting Methodology" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-sticky.svg" alt="Sticky Note: 10.1 Threat Hunting Methodology" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-1-threat-hunting-methodology-sticky.svg" alt="Sticky Note: 10.1 Threat Hunting Methodology" width="30%">
 </a>
 
 
@@ -2891,14 +2891,14 @@ Hypothesis → Data Collection → Investigation → Pattern Recognition → Res
 
 ### 10.2 YARA Rule Writing for Malware Detection
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-handwritten.svg" alt="Handwritten: 10.2 YARA Rule Writing for Malware Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-handwritten.svg" alt="Handwritten: 10.2 YARA Rule Writing for Malware Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-diagram.svg" alt="Diagram: 10.2 YARA Rule Writing for Malware Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-diagram.svg" alt="Diagram: 10.2 YARA Rule Writing for Malware Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-sticky.svg" alt="Sticky Note: 10.2 YARA Rule Writing for Malware Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-2-yara-rule-writing-for-malware-detection-sticky.svg" alt="Sticky Note: 10.2 YARA Rule Writing for Malware Detection" width="30%">
 </a>
 
 
@@ -3072,14 +3072,14 @@ yara -C rules.yarac file.exe
 
 ### 10.3 IOC Extraction
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-handwritten.svg" alt="Handwritten: 10.3 IOC Extraction" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-handwritten.svg" alt="Handwritten: 10.3 IOC Extraction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-diagram.svg" alt="Diagram: 10.3 IOC Extraction" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-diagram.svg" alt="Diagram: 10.3 IOC Extraction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-sticky.svg" alt="Sticky Note: 10.3 IOC Extraction" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-3-ioc-extraction-sticky.svg" alt="Sticky Note: 10.3 IOC Extraction" width="30%">
 </a>
 
 
@@ -3150,14 +3150,14 @@ rip.exe -r C:\evidence\SYSTEM -f system > system_info.txt
 
 ### 10.4 Plaso (log2timeline) → Timeline Creation
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-handwritten.svg" alt="Handwritten: 10.4 Plaso (log2timeline) → Timeline Creation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-handwritten.svg" alt="Handwritten: 10.4 Plaso (log2timeline) → Timeline Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-diagram.svg" alt="Diagram: 10.4 Plaso (log2timeline) → Timeline Creation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-diagram.svg" alt="Diagram: 10.4 Plaso (log2timeline) → Timeline Creation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-sticky.svg" alt="Sticky Note: 10.4 Plaso (log2timeline) → Timeline Creation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-4-plaso-log2timeline-timeline-creation-sticky.svg" alt="Sticky Note: 10.4 Plaso (log2timeline) → Timeline Creation" width="30%">
 </a>
 
 
@@ -3220,14 +3220,14 @@ date,time,timezone,MACB,source,sourcetype,type,user,description,filename,inode,n
 
 ### 10.5 RegRipper → Registry Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-handwritten.svg" alt="Handwritten: 10.5 RegRipper → Registry Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-handwritten.svg" alt="Handwritten: 10.5 RegRipper → Registry Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-diagram.svg" alt="Diagram: 10.5 RegRipper → Registry Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-diagram.svg" alt="Diagram: 10.5 RegRipper → Registry Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-sticky.svg" alt="Sticky Note: 10.5 RegRipper → Registry Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-5-regripper-registry-analysis-sticky.svg" alt="Sticky Note: 10.5 RegRipper → Registry Analysis" width="30%">
 </a>
 
 
@@ -3274,14 +3274,14 @@ rip.exe -r C:\evidence\NTUSER.DAT -a > full_ntuser_analysis.txt
 
 ### 10.6 Windows Event Log Analysis
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-handwritten.svg" alt="Handwritten: 10.6 Windows Event Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-handwritten.svg" alt="Handwritten: 10.6 Windows Event Log Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-diagram.svg" alt="Diagram: 10.6 Windows Event Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-diagram.svg" alt="Diagram: 10.6 Windows Event Log Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-sticky.svg" alt="Sticky Note: 10.6 Windows Event Log Analysis" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-6-windows-event-log-analysis-sticky.svg" alt="Sticky Note: 10.6 Windows Event Log Analysis" width="30%">
 </a>
 
 
@@ -3449,14 +3449,14 @@ GET /sysmon-logs-*/_search
 
 ### 10.7 MFTECmd → MFT Parsing
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-handwritten.svg" alt="Handwritten: 10.7 MFTECmd → MFT Parsing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-handwritten.svg" alt="Handwritten: 10.7 MFTECmd → MFT Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-diagram.svg" alt="Diagram: 10.7 MFTECmd → MFT Parsing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-diagram.svg" alt="Diagram: 10.7 MFTECmd → MFT Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-sticky.svg" alt="Sticky Note: 10.7 MFTECmd → MFT Parsing" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-7-mftecmd-mft-parsing-sticky.svg" alt="Sticky Note: 10.7 MFTECmd → MFT Parsing" width="30%">
 </a>
 
 
@@ -3500,14 +3500,14 @@ MFTECmd.exe -f "C:\evidence\$MFT" --csv "C:\evidence\mft_output.csv" --fn "beaco
 
 ### 10.8 Incident Response Playbooks
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-handwritten.svg" alt="Handwritten: 10.8 Incident Response Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-handwritten.svg" alt="Handwritten: 10.8 Incident Response Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-diagram.svg" alt="Diagram: 10.8 Incident Response Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-diagram.svg" alt="Diagram: 10.8 Incident Response Playbooks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-sticky.svg" alt="Sticky Note: 10.8 Incident Response Playbooks" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-8-incident-response-playbooks-sticky.svg" alt="Sticky Note: 10.8 Incident Response Playbooks" width="30%">
 </a>
 
 
@@ -3631,14 +3631,14 @@ DECISION POINTS:
 
 ### 10.9 Incident Severity Classification
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-handwritten.svg" alt="Handwritten: 10.9 Incident Severity Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-handwritten.svg" alt="Handwritten: 10.9 Incident Severity Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-diagram.svg" alt="Diagram: 10.9 Incident Severity Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-diagram.svg" alt="Diagram: 10.9 Incident Severity Classification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-sticky.svg" alt="Sticky Note: 10.9 Incident Severity Classification" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/10-9-incident-severity-classification-sticky.svg" alt="Sticky Note: 10.9 Incident Severity Classification" width="30%">
 </a>
 
 
@@ -3658,14 +3658,14 @@ DECISION POINTS:
 
 ### 11.1 FTK Imager / dd → Disk Image Acquisition
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-handwritten.svg" alt="Handwritten: 11.1 FTK Imager / dd → Disk Image Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-handwritten.svg" alt="Handwritten: 11.1 FTK Imager / dd → Disk Image Acquisition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-diagram.svg" alt="Diagram: 11.1 FTK Imager / dd → Disk Image Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-diagram.svg" alt="Diagram: 11.1 FTK Imager / dd → Disk Image Acquisition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-sticky.svg" alt="Sticky Note: 11.1 FTK Imager / dd → Disk Image Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-1-ftk-imager-dd-disk-image-acquisition-sticky.svg" alt="Sticky Note: 11.1 FTK Imager / dd → Disk Image Acquisition" width="30%">
 </a>
 
 
@@ -3732,14 +3732,14 @@ fcapture.exe \
 
 ### 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-handwritten.svg" alt="Handwritten: 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-handwritten.svg" alt="Handwritten: 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-diagram.svg" alt="Diagram: 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-diagram.svg" alt="Diagram: 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-sticky.svg" alt="Sticky Note: 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-2-autopsy-sleuth-kit-file-system-analysis-and-recovery-sticky.svg" alt="Sticky Note: 11.2 Autopsy / Sleuth Kit → File System Analysis and Recovery" width="30%">
 </a>
 
 
@@ -3830,14 +3830,14 @@ tsk_recover -o 2048 -e /evidence/case-001/hr-01.dd /evidence/case-001/recovered/
 
 ### 11.3 Volatility 3 → Full Memory Analysis Walkthrough
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-handwritten.svg" alt="Handwritten: 11.3 Volatility 3 → Full Memory Analysis Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-handwritten.svg" alt="Handwritten: 11.3 Volatility 3 → Full Memory Analysis Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-diagram.svg" alt="Diagram: 11.3 Volatility 3 → Full Memory Analysis Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-diagram.svg" alt="Diagram: 11.3 Volatility 3 → Full Memory Analysis Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-sticky.svg" alt="Sticky Note: 11.3 Volatility 3 → Full Memory Analysis Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-3-volatility-3-full-memory-analysis-walkthrough-sticky.svg" alt="Sticky Note: 11.3 Volatility 3 → Full Memory Analysis Walkthrough" width="30%">
 </a>
 
 
@@ -3922,14 +3922,14 @@ python3 vol.py -f memory.raw windows.malfind --pid 3456 --dump
 
 ### 11.4 Wireshark → Network Traffic Analysis Walkthrough
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-handwritten.svg" alt="Handwritten: 11.4 Wireshark → Network Traffic Analysis Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-handwritten.svg" alt="Handwritten: 11.4 Wireshark → Network Traffic Analysis Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-diagram.svg" alt="Diagram: 11.4 Wireshark → Network Traffic Analysis Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-diagram.svg" alt="Diagram: 11.4 Wireshark → Network Traffic Analysis Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-sticky.svg" alt="Sticky Note: 11.4 Wireshark → Network Traffic Analysis Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-4-wireshark-network-traffic-analysis-walkthrough-sticky.svg" alt="Sticky Note: 11.4 Wireshark → Network Traffic Analysis Walkthrough" width="30%">
 </a>
 
 
@@ -3997,14 +3997,14 @@ tshark -r evidence/capture.pcap -Y "ip.dst == 198.51.100.50 and ftp" -T fields -
 
 ### 11.5 Zeek → Network Log Generation and Beaconing Detection
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-handwritten.svg" alt="Handwritten: 11.5 Zeek → Network Log Generation and Beaconing Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-handwritten.svg" alt="Handwritten: 11.5 Zeek → Network Log Generation and Beaconing Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-diagram.svg" alt="Diagram: 11.5 Zeek → Network Log Generation and Beaconing Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-diagram.svg" alt="Diagram: 11.5 Zeek → Network Log Generation and Beaconing Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-sticky.svg" alt="Sticky Note: 11.5 Zeek → Network Log Generation and Beaconing Detection" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/11-5-zeek-network-log-generation-and-beaconing-detection-sticky.svg" alt="Sticky Note: 11.5 Zeek → Network Log Generation and Beaconing Detection" width="30%">
 </a>
 
 
@@ -4069,14 +4069,14 @@ cat notice.log
 
 ### 12.1 Sony Pictures Entertainment 2014
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-handwritten.svg" alt="Handwritten: 12.1 Sony Pictures Entertainment 2014" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-handwritten.svg" alt="Handwritten: 12.1 Sony Pictures Entertainment 2014" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-diagram.svg" alt="Diagram: 12.1 Sony Pictures Entertainment 2014" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-diagram.svg" alt="Diagram: 12.1 Sony Pictures Entertainment 2014" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-sticky.svg" alt="Sticky Note: 12.1 Sony Pictures Entertainment 2014" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-1-sony-pictures-entertainment-2014-sticky.svg" alt="Sticky Note: 12.1 Sony Pictures Entertainment 2014" width="30%">
 </a>
 
 
@@ -4157,14 +4157,14 @@ Lessons Learned:
 
 ### 12.2 Colonial Pipeline 2021
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-handwritten.svg" alt="Handwritten: 12.2 Colonial Pipeline 2021" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-handwritten.svg" alt="Handwritten: 12.2 Colonial Pipeline 2021" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-diagram.svg" alt="Diagram: 12.2 Colonial Pipeline 2021" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-diagram.svg" alt="Diagram: 12.2 Colonial Pipeline 2021" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-sticky.svg" alt="Sticky Note: 12.2 Colonial Pipeline 2021" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-2-colonial-pipeline-2021-sticky.svg" alt="Sticky Note: 12.2 Colonial Pipeline 2021" width="30%">
 </a>
 
 
@@ -4250,14 +4250,14 @@ Lessons Learned (critical for US infrastructure):
 
 ### 12.3 Uber 2022
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-handwritten.svg" alt="Handwritten: 12.3 Uber 2022" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-handwritten.svg" alt="Handwritten: 12.3 Uber 2022" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-diagram.svg" alt="Diagram: 12.3 Uber 2022" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-diagram.svg" alt="Diagram: 12.3 Uber 2022" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-sticky.svg" alt="Sticky Note: 12.3 Uber 2022" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-3-uber-2022-sticky.svg" alt="Sticky Note: 12.3 Uber 2022" width="30%">
 </a>
 
 
@@ -4358,14 +4358,14 @@ Lessons Learned:
 
 ### 12.4 Target 2013
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-handwritten.svg" alt="Handwritten: 12.4 Target 2013" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-handwritten.svg" alt="Handwritten: 12.4 Target 2013" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-diagram.svg" alt="Diagram: 12.4 Target 2013" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-diagram.svg" alt="Diagram: 12.4 Target 2013" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-sticky.svg" alt="Sticky Note: 12.4 Target 2013" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/12-4-target-2013-sticky.svg" alt="Sticky Note: 12.4 Target 2013" width="30%">
 </a>
 
 
@@ -4489,14 +4489,14 @@ Lessons Learned (industry-transforming):
 
 ### 13.1 Forensic Process Phases Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-handwritten.svg" alt="Handwritten: 13.1 Forensic Process Phases Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-handwritten.svg" alt="Handwritten: 13.1 Forensic Process Phases Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-diagram.svg" alt="Diagram: 13.1 Forensic Process Phases Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-diagram.svg" alt="Diagram: 13.1 Forensic Process Phases Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-sticky.svg" alt="Sticky Note: 13.1 Forensic Process Phases Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-1-forensic-process-phases-comparison-sticky.svg" alt="Sticky Note: 13.1 Forensic Process Phases Comparison" width="30%">
 </a>
 
 
@@ -4511,14 +4511,14 @@ Lessons Learned (industry-transforming):
 
 ### 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-handwritten.svg" alt="Handwritten: 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-handwritten.svg" alt="Handwritten: 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-diagram.svg" alt="Diagram: 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-diagram.svg" alt="Diagram: 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-sticky.svg" alt="Sticky Note: 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-2-disk-vs-memory-vs-network-vs-mobile-forensics-comparison-sticky.svg" alt="Sticky Note: 13.2 Disk vs Memory vs Network vs Mobile Forensics Comparison" width="30%">
 </a>
 
 
@@ -4538,14 +4538,14 @@ Lessons Learned (industry-transforming):
 
 ### 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-handwritten.svg" alt="Handwritten: 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-handwritten.svg" alt="Handwritten: 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-diagram.svg" alt="Diagram: 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-diagram.svg" alt="Diagram: 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-sticky.svg" alt="Sticky Note: 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-3-ir-lifecycle-crosswalk-nist-sp-800-61-sticky.svg" alt="Sticky Note: 13.3 IR Lifecycle Crosswalk (NIST SP 800-61)" width="30%">
 </a>
 
 
@@ -4560,14 +4560,14 @@ Lessons Learned (industry-transforming):
 
 ### 13.4 SIEM vs SOAR vs XDR Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-handwritten.svg" alt="Handwritten: 13.4 SIEM vs SOAR vs XDR Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-handwritten.svg" alt="Handwritten: 13.4 SIEM vs SOAR vs XDR Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-diagram.svg" alt="Diagram: 13.4 SIEM vs SOAR vs XDR Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-diagram.svg" alt="Diagram: 13.4 SIEM vs SOAR vs XDR Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-sticky.svg" alt="Sticky Note: 13.4 SIEM vs SOAR vs XDR Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-4-siem-vs-soar-vs-xdr-comparison-sticky.svg" alt="Sticky Note: 13.4 SIEM vs SOAR vs XDR Comparison" width="30%">
 </a>
 
 
@@ -4587,14 +4587,14 @@ Lessons Learned (industry-transforming):
 
 ### 13.5 Threat Hunting Methodology Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-handwritten.svg" alt="Handwritten: 13.5 Threat Hunting Methodology Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-handwritten.svg" alt="Handwritten: 13.5 Threat Hunting Methodology Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-diagram.svg" alt="Diagram: 13.5 Threat Hunting Methodology Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-diagram.svg" alt="Diagram: 13.5 Threat Hunting Methodology Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-sticky.svg" alt="Sticky Note: 13.5 Threat Hunting Methodology Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/13-5-threat-hunting-methodology-comparison-sticky.svg" alt="Sticky Note: 13.5 Threat Hunting Methodology Comparison" width="30%">
 </a>
 
 
@@ -4612,14 +4612,14 @@ Lessons Learned (industry-transforming):
 
 ### Q1: What is the order of volatility and why is it important?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is the order of volatility and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is the order of volatility and why is it important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-diagram.svg" alt="Diagram: What is the order of volatility and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-diagram.svg" alt="Diagram: What is the order of volatility and why is it important?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is the order of volatility and why is it important?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-order-of-volatility-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is the order of volatility and why is it important?" width="30%">
 </a>
 
 
@@ -4627,14 +4627,14 @@ Lessons Learned (industry-transforming):
 
 ### Q2: What are the key differences between disk forensics and memory forensics?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-handwritten.svg" alt="Handwritten: What are the key differences between disk forensics and memory forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-handwritten.svg" alt="Handwritten: What are the key differences between disk forensics and memory forensics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-diagram.svg" alt="Diagram: What are the key differences between disk forensics and memory forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-diagram.svg" alt="Diagram: What are the key differences between disk forensics and memory forensics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-sticky.svg" alt="Sticky Note: What are the key differences between disk forensics and memory forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-key-differences-between-disk-forensics-and-memory-forensics-sticky.svg" alt="Sticky Note: What are the key differences between disk forensics and memory forensics?" width="30%">
 </a>
 
 
@@ -4642,14 +4642,14 @@ Lessons Learned (industry-transforming):
 
 ### Q3: Explain chain of custody and what happens if it is broken.
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-handwritten.svg" alt="Handwritten: Explain chain of custody and what happens if it is broken." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-handwritten.svg" alt="Handwritten: Explain chain of custody and what happens if it is broken." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-diagram.svg" alt="Diagram: Explain chain of custody and what happens if it is broken." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-diagram.svg" alt="Diagram: Explain chain of custody and what happens if it is broken." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-sticky.svg" alt="Sticky Note: Explain chain of custody and what happens if it is broken." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-chain-of-custody-and-what-happens-if-it-is-broken-sticky.svg" alt="Sticky Note: Explain chain of custody and what happens if it is broken." width="30%">
 </a>
 
 
@@ -4657,14 +4657,14 @@ Lessons Learned (industry-transforming):
 
 ### Q4: How do you detect a rootkit during memory forensics?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-handwritten.svg" alt="Handwritten: How do you detect a rootkit during memory forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-handwritten.svg" alt="Handwritten: How do you detect a rootkit during memory forensics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-diagram.svg" alt="Diagram: How do you detect a rootkit during memory forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-diagram.svg" alt="Diagram: How do you detect a rootkit during memory forensics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-sticky.svg" alt="Sticky Note: How do you detect a rootkit during memory forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-do-you-detect-a-rootkit-during-memory-forensics-sticky.svg" alt="Sticky Note: How do you detect a rootkit during memory forensics?" width="30%">
 </a>
 
 
@@ -4679,14 +4679,14 @@ Lessons Learned (industry-transforming):
 
 ### Q5: What is file carving and when would you use it?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is file carving and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is file carving and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is file carving and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is file carving and when would you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is file carving and when would you use it?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-file-carving-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is file carving and when would you use it?" width="30%">
 </a>
 
 
@@ -4694,14 +4694,14 @@ Lessons Learned (industry-transforming):
 
 ### Q6: What are the four phases of the NIST Incident Response lifecycle?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-handwritten.svg" alt="Handwritten: What are the four phases of the NIST Incident Response lifecycle?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-handwritten.svg" alt="Handwritten: What are the four phases of the NIST Incident Response lifecycle?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-diagram.svg" alt="Diagram: What are the four phases of the NIST Incident Response lifecycle?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-diagram.svg" alt="Diagram: What are the four phases of the NIST Incident Response lifecycle?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-sticky.svg" alt="Sticky Note: What are the four phases of the NIST Incident Response lifecycle?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-are-the-four-phases-of-the-nist-incident-response-lifecycle-sticky.svg" alt="Sticky Note: What are the four phases of the NIST Incident Response lifecycle?" width="30%">
 </a>
 
 
@@ -4709,14 +4709,14 @@ Lessons Learned (industry-transforming):
 
 ### Q7: What is the difference between MTTD, MTTR, and MTTC?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-handwritten.svg" alt="Handwritten: What is the difference between MTTD, MTTR, and MTTC?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-handwritten.svg" alt="Handwritten: What is the difference between MTTD, MTTR, and MTTC?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-diagram.svg" alt="Diagram: What is the difference between MTTD, MTTR, and MTTC?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-diagram.svg" alt="Diagram: What is the difference between MTTD, MTTR, and MTTC?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-sticky.svg" alt="Sticky Note: What is the difference between MTTD, MTTR, and MTTC?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-mttd-mttr-and-mttc-sticky.svg" alt="Sticky Note: What is the difference between MTTD, MTTR, and MTTC?" width="30%">
 </a>
 
 
@@ -4727,14 +4727,14 @@ Lessons Learned (industry-transforming):
 
 ### Q8: How would you investigate a potential data exfiltration incident?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-handwritten.svg" alt="Handwritten: How would you investigate a potential data exfiltration incident?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-handwritten.svg" alt="Handwritten: How would you investigate a potential data exfiltration incident?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-diagram.svg" alt="Diagram: How would you investigate a potential data exfiltration incident?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-diagram.svg" alt="Diagram: How would you investigate a potential data exfiltration incident?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-sticky.svg" alt="Sticky Note: How would you investigate a potential data exfiltration incident?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/how-would-you-investigate-a-potential-data-exfiltration-incident-sticky.svg" alt="Sticky Note: How would you investigate a potential data exfiltration incident?" width="30%">
 </a>
 
 
@@ -4742,14 +4742,14 @@ Lessons Learned (industry-transforming):
 
 ### Q9: Explain how YARA rules work and give an example of when you would write one.
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-handwritten.svg" alt="Handwritten: Explain how YARA rules work and give an example of when you would write one." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-handwritten.svg" alt="Handwritten: Explain how YARA rules work and give an example of when you would write one." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-diagram.svg" alt="Diagram: Explain how YARA rules work and give an example of when you would write one." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-diagram.svg" alt="Diagram: Explain how YARA rules work and give an example of when you would write one." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-sticky.svg" alt="Sticky Note: Explain how YARA rules work and give an example of when you would write one." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/explain-how-yara-rules-work-and-give-an-example-of-when-you-would-write-one-sticky.svg" alt="Sticky Note: Explain how YARA rules work and give an example of when you would write one." width="30%">
 </a>
 
 
@@ -4757,14 +4757,14 @@ Lessons Learned (industry-transforming):
 
 ### Q10: What is the difference between logical and physical mobile acquisition?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-handwritten.svg" alt="Handwritten: What is the difference between logical and physical mobile acquisition?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-handwritten.svg" alt="Handwritten: What is the difference between logical and physical mobile acquisition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-diagram.svg" alt="Diagram: What is the difference between logical and physical mobile acquisition?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-diagram.svg" alt="Diagram: What is the difference between logical and physical mobile acquisition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-sticky.svg" alt="Sticky Note: What is the difference between logical and physical mobile acquisition?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-difference-between-logical-and-physical-mobile-acquisition-sticky.svg" alt="Sticky Note: What is the difference between logical and physical mobile acquisition?" width="30%">
 </a>
 
 
@@ -4772,14 +4772,14 @@ Lessons Learned (industry-transforming):
 
 ### Q11: Describe a time when the chain of custody was crucial in a digital forensics case.
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-handwritten.svg" alt="Handwritten: Describe a time when the chain of custody was crucial in a digital forensics case." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-handwritten.svg" alt="Handwritten: Describe a time when the chain of custody was crucial in a digital forensics case." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-diagram.svg" alt="Diagram: Describe a time when the chain of custody was crucial in a digital forensics case." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-diagram.svg" alt="Diagram: Describe a time when the chain of custody was crucial in a digital forensics case." width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-sticky.svg" alt="Sticky Note: Describe a time when the chain of custody was crucial in a digital forensics case." width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/describe-a-time-when-the-chain-of-custody-was-crucial-in-a-digital-forensics-case-sticky.svg" alt="Sticky Note: Describe a time when the chain of custody was crucial in a digital forensics case." width="30%">
 </a>
 
 
@@ -4787,14 +4787,14 @@ Lessons Learned (industry-transforming):
 
 ### Q12: What is the significance of the MFT in NTFS forensics?
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-handwritten.svg" alt="Handwritten: What is the significance of the MFT in NTFS forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-handwritten.svg" alt="Handwritten: What is the significance of the MFT in NTFS forensics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-diagram.svg" alt="Diagram: What is the significance of the MFT in NTFS forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-diagram.svg" alt="Diagram: What is the significance of the MFT in NTFS forensics?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-sticky.svg" alt="Sticky Note: What is the significance of the MFT in NTFS forensics?" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/what-is-the-significance-of-the-mft-in-ntfs-forensics-sticky.svg" alt="Sticky Note: What is the significance of the MFT in NTFS forensics?" width="30%">
 </a>
 
 
@@ -4806,14 +4806,14 @@ Lessons Learned (industry-transforming):
 
 ### Enterprise SOC Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-handwritten.svg" alt="Handwritten: Enterprise SOC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-handwritten.svg" alt="Handwritten: Enterprise SOC Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-diagram.svg" alt="Diagram: Enterprise SOC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-diagram.svg" alt="Diagram: Enterprise SOC Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-sticky.svg" alt="Sticky Note: Enterprise SOC Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/enterprise-soc-architecture-sticky.svg" alt="Sticky Note: Enterprise SOC Architecture" width="30%">
 </a>
 
 
@@ -4844,14 +4844,14 @@ A typical enterprise SOC integrates multiple tools and processes for forensics a
 
 ### Forensics in Cloud-Native Environments
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-handwritten.svg" alt="Handwritten: Forensics in Cloud-Native Environments" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-handwritten.svg" alt="Handwritten: Forensics in Cloud-Native Environments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-diagram.svg" alt="Diagram: Forensics in Cloud-Native Environments" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-diagram.svg" alt="Diagram: Forensics in Cloud-Native Environments" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-sticky.svg" alt="Sticky Note: Forensics in Cloud-Native Environments" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensics-in-cloud-native-environments-sticky.svg" alt="Sticky Note: Forensics in Cloud-Native Environments" width="30%">
 </a>
 
 
@@ -4864,14 +4864,14 @@ Modern forensics must account for:
 
 ### Automated Forensics → DFIR Orchestration
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-handwritten.svg" alt="Handwritten: Automated Forensics → DFIR Orchestration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-handwritten.svg" alt="Handwritten: Automated Forensics → DFIR Orchestration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-diagram.svg" alt="Diagram: Automated Forensics → DFIR Orchestration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-diagram.svg" alt="Diagram: Automated Forensics → DFIR Orchestration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-sticky.svg" alt="Sticky Note: Automated Forensics → DFIR Orchestration" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/automated-forensics-dfir-orchestration-sticky.svg" alt="Sticky Note: Automated Forensics → DFIR Orchestration" width="30%">
 </a>
 
 
@@ -4949,14 +4949,14 @@ def automated_forensics(alert):
 
 ### Compliance Frameworks Referencing Forensics & IR
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-handwritten.svg" alt="Handwritten: Compliance Frameworks Referencing Forensics & IR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-handwritten.svg" alt="Handwritten: Compliance Frameworks Referencing Forensics & IR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-diagram.svg" alt="Diagram: Compliance Frameworks Referencing Forensics & IR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-diagram.svg" alt="Diagram: Compliance Frameworks Referencing Forensics & IR" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-sticky.svg" alt="Sticky Note: Compliance Frameworks Referencing Forensics & IR" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/compliance-frameworks-referencing-forensics-ir-sticky.svg" alt="Sticky Note: Compliance Frameworks Referencing Forensics & IR" width="30%">
 </a>
 
 
@@ -4973,14 +4973,14 @@ def automated_forensics(alert):
 
 ### Career Paths in Forensics & Incident Response
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-handwritten.svg" alt="Handwritten: Career Paths in Forensics & Incident Response" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-handwritten.svg" alt="Handwritten: Career Paths in Forensics & Incident Response" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-diagram.svg" alt="Diagram: Career Paths in Forensics & Incident Response" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-diagram.svg" alt="Diagram: Career Paths in Forensics & Incident Response" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-sticky.svg" alt="Sticky Note: Career Paths in Forensics & Incident Response" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/career-paths-in-forensics-incident-response-sticky.svg" alt="Sticky Note: Career Paths in Forensics & Incident Response" width="30%">
 </a>
 
 
@@ -5029,14 +5029,14 @@ def automated_forensics(alert):
 
 ### Forensic Timeline Analyzer
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-handwritten.svg" alt="Handwritten: Forensic Timeline Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-handwritten.svg" alt="Handwritten: Forensic Timeline Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-diagram.svg" alt="Diagram: Forensic Timeline Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-diagram.svg" alt="Diagram: Forensic Timeline Analyzer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-sticky.svg" alt="Sticky Note: Forensic Timeline Analyzer" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/forensic-timeline-analyzer-sticky.svg" alt="Sticky Note: Forensic Timeline Analyzer" width="30%">
 </a>
 
 
@@ -5273,14 +5273,14 @@ console.log(analyzer.generateNarrative(timeline));
 
 ### Hash Set Validator
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-handwritten.svg" alt="Handwritten: Hash Set Validator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-handwritten.svg" alt="Handwritten: Hash Set Validator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-diagram.svg" alt="Diagram: Hash Set Validator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-diagram.svg" alt="Diagram: Hash Set Validator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-sticky.svg" alt="Sticky Note: Hash Set Validator" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/hash-set-validator-sticky.svg" alt="Sticky Note: Hash Set Validator" width="30%">
 </a>
 
 
@@ -5521,14 +5521,14 @@ console.log(
 
 ### Incident Response Lifecycle (NIST SP 800-61)
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-handwritten.svg" alt="Handwritten: Incident Response Lifecycle (NIST SP 800-61)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-handwritten.svg" alt="Handwritten: Incident Response Lifecycle (NIST SP 800-61)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-diagram.svg" alt="Diagram: Incident Response Lifecycle (NIST SP 800-61)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-diagram.svg" alt="Diagram: Incident Response Lifecycle (NIST SP 800-61)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-sticky.svg" alt="Sticky Note: Incident Response Lifecycle (NIST SP 800-61)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/incident-response-lifecycle-nist-sp-800-61-sticky.svg" alt="Sticky Note: Incident Response Lifecycle (NIST SP 800-61)" width="30%">
 </a>
 
 
@@ -5544,14 +5544,14 @@ flowchart TD
 
 ### Chain of Custody Workflow
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-handwritten.svg" alt="Handwritten: Chain of Custody Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-handwritten.svg" alt="Handwritten: Chain of Custody Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-diagram.svg" alt="Diagram: Chain of Custody Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-diagram.svg" alt="Diagram: Chain of Custody Workflow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-sticky.svg" alt="Sticky Note: Chain of Custody Workflow" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/chain-of-custody-workflow-sticky.svg" alt="Sticky Note: Chain of Custody Workflow" width="30%">
 </a>
 
 
@@ -5643,14 +5643,14 @@ NIST SP 800-61: Preparation → Detection & Analysis → Containment/Eradication
 
 ### Practical Exercises
 
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/08-forensics-ir/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
 </a>
 
 

@@ -41,14 +41,14 @@
 
 ### १.१ रोग की जड़
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: १.१ रोग की जड़" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: १.१ रोग की जड़" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: १.१ रोग की जड़" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: १.१ रोग की जड़" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: १.१ रोग की जड़" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: १.१ रोग की जड़" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ flowchart TD
 
 ### १.2 चेतना के तीन स्तरों पर चिकित्सा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: १.2 चेतना के तीन स्तरों पर चिकित्सा" width="30%">
 </a>
 
 
@@ -112,14 +112,14 @@ flowchart TD
 
 ### २.1 एनकाउंटर ग्रुप्स का जन्म
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: २.1 एनकाउंटर ग्रुप्स का जन्म" width="30%">
 </a>
 
 
@@ -129,14 +129,14 @@ flowchart TD
 
 ### २.2 समूह चिकित्सा की ओशो की विधि
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: २.2 समूह चिकित्सा की ओशो की विधि" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ flowchart LR
 
 ### २.3 ओशो के प्रमुख चिकित्सा समूह
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-handwritten.svg" alt="Handwritten: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-handwritten.svg" alt="Handwritten: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-diagram.svg" alt="Diagram: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-diagram.svg" alt="Diagram: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-sticky.svg" alt="Sticky Note: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-sticky.svg" alt="Sticky Note: २.3 ओशो के प्रमुख चिकित्सा समूह" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ flowchart LR
 
 ### ३.1 अवसाद — उदासी का तंत्र
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ३.1 अवसाद — उदासी का तंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ३.1 अवसाद — उदासी का तंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ३.1 अवसाद — उदासी का तंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ३.1 अवसाद — उदासी का तंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ३.1 अवसाद — उदासी का तंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ३.1 अवसाद — उदासी का तंत्र" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ flowchart LR
 
 ### ३.2 चिंता — बेचैनी का तंत्र
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ३.2 चिंता — बेचैनी का तंत्र" width="30%">
 </a>
 
 
@@ -240,14 +240,14 @@ flowchart TD
 
 ### ३.3 PTSD और आघात
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-handwritten.svg" alt="Handwritten: ३.3 PTSD और आघात" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-handwritten.svg" alt="Handwritten: ३.3 PTSD और आघात" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-diagram.svg" alt="Diagram: ३.3 PTSD और आघात" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-diagram.svg" alt="Diagram: ३.3 PTSD और आघात" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-sticky.svg" alt="Sticky Note: ३.3 PTSD और आघात" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/3-ptsd-sticky.svg" alt="Sticky Note: ३.3 PTSD और आघात" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ flowchart TD
 
 ### ४.1 मन और शरीर का जुड़ाव
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ४.1 मन और शरीर का जुड़ाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ४.1 मन और शरीर का जुड़ाव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ४.1 मन और शरीर का जुड़ाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ४.1 मन और शरीर का जुड़ाव" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ४.1 मन और शरीर का जुड़ाव" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ४.1 मन और शरीर का जुड़ाव" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ flowchart LR
 
 ### ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ४.2 ओशो के प्रमुख साइकोसोमैटिक निदान" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ flowchart LR
 
 ### ५.1 चार स्तरों की चिकित्सा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ५.1 चार स्तरों की चिकित्सा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-handwritten.svg" alt="Handwritten: ५.1 चार स्तरों की चिकित्सा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ५.1 चार स्तरों की चिकित्सा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-diagram.svg" alt="Diagram: ५.1 चार स्तरों की चिकित्सा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ५.1 चार स्तरों की चिकित्सा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/1-sticky.svg" alt="Sticky Note: ५.1 चार स्तरों की चिकित्सा" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ flowchart TD
 
 ### ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-handwritten.svg" alt="Handwritten: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-diagram.svg" alt="Diagram: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/2-sticky.svg" alt="Sticky Note: ५.2 संपूर्ण चिकित्सा के लिए ओशो के सात नियम" width="30%">
 </a>
 
 
@@ -952,70 +952,70 @@ export {
 
 ### सूत्र १: जागरूकता ही चिकित्सा है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र १: जागरूकता ही चिकित्सा है" width="30%">
 </a>
 
 > *"कोई दवा तुम्हें ठीक नहीं कर सकती — सिर्फ जागरूकता। दवा लक्षण दबाती है, जागरूकता जड़ मिटाती है।"*
 
 ### सूत्र २: शरीर को सुनो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र २: शरीर को सुनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र २: शरीर को सुनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र २: शरीर को सुनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र २: शरीर को सुनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र २: शरीर को सुनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र २: शरीर को सुनो" width="30%">
 </a>
 
 > *"शरीर तुम्हारा दुश्मन नहीं है — वह तुम्हारा मित्र है। वह तुमसे हर पल बात कर रहा है। सुनो उसे। वह जो कह रहा है, वही तुम्हारी चिकित्सा है।"*
 
 ### सूत्र ३: दबाओ मत, छोड़ो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ३: दबाओ मत, छोड़ो" width="30%">
 </a>
 
 > *"हर बीमारी के पीछे कोई दबी हुई भावना है। उसे दबाओ मत — उसे बाहर आने दो। रोओ, चिल्लाओ, हँसो, नाचो — जो भी हो, उसे होने दो। यही कैथार्सिस है। यही चिकित्सा है।"*
 
 ### सूत्र ४: बीमारी को गले लगाओ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ४: बीमारी को गले लगाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ४: बीमारी को गले लगाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ४: बीमारी को गले लगाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ४: बीमारी को गले लगाओ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ४: बीमारी को गले लगाओ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ४: बीमारी को गले लगाओ" width="30%">
 </a>
 
 > *"बीमारी से लड़ो मत — उसे गले लगाओ। वह तुम्हारी दुश्मन नहीं है — वह एक संदेशवाहक है। उसने तुम्हें जगाने की कोशिश की है। उसे धन्यवाद दो — और सुनो वह क्या कह रही है।"*
 
 ### सूत्र ५: हँसो — यह सबसे अच्छी दवा है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: सूत्र ५: हँसो — यह सबसे अच्छी दवा है" width="30%">
 </a>
 
 > *"हँसी कोई दवा नहीं है — हँसी तो स्वास्थ्य ही है। जब तुम सच में हँसते हो, तो तुम कुछ पल के लिए पूरे होते हो। वही पूर्णता — वही स्वास्थ्य है।"*
@@ -1026,56 +1026,56 @@ export {
 
 ### अभ्यास १: शरीर स्कैन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: शरीर स्कैन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: शरीर स्कैन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास १: शरीर स्कैन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास १: शरीर स्कैन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: शरीर स्कैन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: शरीर स्कैन" width="30%">
 </a>
 
 लेट जाओ। सिर से पैर तक — हर अंग को देखो। कहाँ तनाव है? कहाँ दर्द है? बस देखो — बिना बदलने की कोशिश के। १० मिनट।
 
 ### अभ्यास २: कैथार्सिस
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: कैथार्सिस" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: कैथार्सिस" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास २: कैथार्सिस" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास २: कैथार्सिस" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: कैथार्सिस" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: कैथार्सिस" width="30%">
 </a>
 
 एक कमरे में अकेले। तकिया लो। उस पर अपना सारा गुस्सा निकालो — मारो, चिल्लाओ, रोओ। फिर थक जाओ — और मौन में बैठो। २० मिनट।
 
 ### अभ्यास ३: हँसी ध्यान
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: हँसी ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: हँसी ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास ३: हँसी ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास ३: हँसी ध्यान" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: हँसी ध्यान" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: हँसी ध्यान" width="30%">
 </a>
 
 सुबह उठते ही — बिना किसी कारण के — ५ मिनट हँसो। पहले जबरदस्ती, फिर असली। देखो — क्या बदलता है।
 
 ### अभ्यास ४: कोडिंग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-diagram.svg" alt="Diagram: अभ्यास ४: कोडिंग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/17-chikitsa-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: कोडिंग" width="30%">
 </a>
 
 `OshoTherapist` में एक नई मेथड जोड़ो जो तुम्हारे सप्ताह भर के लक्षणों को ट्रैक करे और बताए कि कौन सी भावना सबसे ज़्यादा दबी हुई है।

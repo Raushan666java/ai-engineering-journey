@@ -58,14 +58,14 @@ flowchart LR
 
 ### What Are STL Containers?
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-handwritten.svg" alt="Handwritten: What Are STL Containers?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-handwritten.svg" alt="Handwritten: What Are STL Containers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-diagram.svg" alt="Diagram: What Are STL Containers?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-diagram.svg" alt="Diagram: What Are STL Containers?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-sticky.svg" alt="Sticky Note: What Are STL Containers?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-are-stl-containers-sticky.svg" alt="Sticky Note: What Are STL Containers?" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ Every STL container provides:
 
 ### Container Taxonomy Overview
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-handwritten.svg" alt="Handwritten: Container Taxonomy Overview" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-handwritten.svg" alt="Handwritten: Container Taxonomy Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-diagram.svg" alt="Diagram: Container Taxonomy Overview" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-diagram.svg" alt="Diagram: Container Taxonomy Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-sticky.svg" alt="Sticky Note: Container Taxonomy Overview" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-taxonomy-overview-sticky.svg" alt="Sticky Note: Container Taxonomy Overview" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ The C++ standard divides containers into four families:
 
 ### Why Container Choice Matters
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-handwritten.svg" alt="Handwritten: Why Container Choice Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-handwritten.svg" alt="Handwritten: Why Container Choice Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-diagram.svg" alt="Diagram: Why Container Choice Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-diagram.svg" alt="Diagram: Why Container Choice Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-sticky.svg" alt="Sticky Note: Why Container Choice Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-container-choice-matters-sticky.svg" alt="Sticky Note: Why Container Choice Matters" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ A wrong container choice can degrade performance by 10x-1000x. Common mistakes:
 
 ### The Iterator Layer
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-handwritten.svg" alt="Handwritten: The Iterator Layer" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-handwritten.svg" alt="Handwritten: The Iterator Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-diagram.svg" alt="Diagram: The Iterator Layer" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-diagram.svg" alt="Diagram: The Iterator Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-sticky.svg" alt="Sticky Note: The Iterator Layer" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/the-iterator-layer-sticky.svg" alt="Sticky Note: The Iterator Layer" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ Sequence containers store elements in a linear order determined by insertion. Ea
 
 ### 9.2.1 std::vector -- The Dynamic Array
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-handwritten.svg" alt="Handwritten: 9.2.1 std::vector -- The Dynamic Array" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-handwritten.svg" alt="Handwritten: 9.2.1 std::vector -- The Dynamic Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-diagram.svg" alt="Diagram: 9.2.1 std::vector -- The Dynamic Array" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-diagram.svg" alt="Diagram: 9.2.1 std::vector -- The Dynamic Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-sticky.svg" alt="Sticky Note: 9.2.1 std::vector -- The Dynamic Array" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-1-std-vector-the-dynamic-array-sticky.svg" alt="Sticky Note: 9.2.1 std::vector -- The Dynamic Array" width="30%">
 </a>
 
 
@@ -333,14 +333,14 @@ Total per element: sizeof(T) with zero overhead
 
 ### 9.2.2 std::deque -- Double-Ended Queue
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-handwritten.svg" alt="Handwritten: 9.2.2 std::deque -- Double-Ended Queue" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-handwritten.svg" alt="Handwritten: 9.2.2 std::deque -- Double-Ended Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-diagram.svg" alt="Diagram: 9.2.2 std::deque -- Double-Ended Queue" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-diagram.svg" alt="Diagram: 9.2.2 std::deque -- Double-Ended Queue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-sticky.svg" alt="Sticky Note: 9.2.2 std::deque -- Double-Ended Queue" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-2-std-deque-double-ended-queue-sticky.svg" alt="Sticky Note: 9.2.2 std::deque -- Double-Ended Queue" width="30%">
 </a>
 
 
@@ -488,14 +488,14 @@ Compared to vector:
 
 ### 9.2.3 std::list -- Doubly-Linked List
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-handwritten.svg" alt="Handwritten: 9.2.3 std::list -- Doubly-Linked List" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-handwritten.svg" alt="Handwritten: 9.2.3 std::list -- Doubly-Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-diagram.svg" alt="Diagram: 9.2.3 std::list -- Doubly-Linked List" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-diagram.svg" alt="Diagram: 9.2.3 std::list -- Doubly-Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-sticky.svg" alt="Sticky Note: 9.2.3 std::list -- Doubly-Linked List" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-3-std-list-doubly-linked-list-sticky.svg" alt="Sticky Note: 9.2.3 std::list -- Doubly-Linked List" width="30%">
 </a>
 
 
@@ -688,14 +688,14 @@ List iterators are the most stable in the STL:
 
 ### 9.2.4 std::forward_list -- Singly-Linked List
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-handwritten.svg" alt="Handwritten: 9.2.4 std::forward_list -- Singly-Linked List" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-handwritten.svg" alt="Handwritten: 9.2.4 std::forward_list -- Singly-Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-diagram.svg" alt="Diagram: 9.2.4 std::forward_list -- Singly-Linked List" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-diagram.svg" alt="Diagram: 9.2.4 std::forward_list -- Singly-Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-sticky.svg" alt="Sticky Note: 9.2.4 std::forward_list -- Singly-Linked List" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-4-std-forward-list-singly-linked-list-sticky.svg" alt="Sticky Note: 9.2.4 std::forward_list -- Singly-Linked List" width="30%">
 </a>
 
 
@@ -812,14 +812,14 @@ Same guarantees as list: only erased elements are invalidated. However, because 
 
 ### 9.2.5 std::array -- Fixed-Size Array
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-handwritten.svg" alt="Handwritten: 9.2.5 std::array -- Fixed-Size Array" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-handwritten.svg" alt="Handwritten: 9.2.5 std::array -- Fixed-Size Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-diagram.svg" alt="Diagram: 9.2.5 std::array -- Fixed-Size Array" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-diagram.svg" alt="Diagram: 9.2.5 std::array -- Fixed-Size Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-sticky.svg" alt="Sticky Note: 9.2.5 std::array -- Fixed-Size Array" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-2-5-std-array-fixed-size-array-sticky.svg" alt="Sticky Note: 9.2.5 std::array -- Fixed-Size Array" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ Ordered associative containers store elements sorted by key using a comparison f
 
 ### 9.3.1 std::set -- Unique Sorted Keys
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-handwritten.svg" alt="Handwritten: 9.3.1 std::set -- Unique Sorted Keys" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-handwritten.svg" alt="Handwritten: 9.3.1 std::set -- Unique Sorted Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-diagram.svg" alt="Diagram: 9.3.1 std::set -- Unique Sorted Keys" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-diagram.svg" alt="Diagram: 9.3.1 std::set -- Unique Sorted Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-sticky.svg" alt="Sticky Note: 9.3.1 std::set -- Unique Sorted Keys" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-1-std-set-unique-sorted-keys-sticky.svg" alt="Sticky Note: 9.3.1 std::set -- Unique Sorted Keys" width="30%">
 </a>
 
 
@@ -1134,14 +1134,14 @@ set has the highest memory overhead of any commonly used container. Each element
 
 ### 9.3.2 std::multiset -- Sorted Set Allowing Duplicates
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-handwritten.svg" alt="Handwritten: 9.3.2 std::multiset -- Sorted Set Allowing Duplicates" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-handwritten.svg" alt="Handwritten: 9.3.2 std::multiset -- Sorted Set Allowing Duplicates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-diagram.svg" alt="Diagram: 9.3.2 std::multiset -- Sorted Set Allowing Duplicates" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-diagram.svg" alt="Diagram: 9.3.2 std::multiset -- Sorted Set Allowing Duplicates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-sticky.svg" alt="Sticky Note: 9.3.2 std::multiset -- Sorted Set Allowing Duplicates" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-2-std-multiset-sorted-set-allowing-duplicates-sticky.svg" alt="Sticky Note: 9.3.2 std::multiset -- Sorted Set Allowing Duplicates" width="30%">
 </a>
 
 
@@ -1222,14 +1222,14 @@ Same as set: `insert()` does not invalidate existing iterators; `erase()` invali
 
 ### 9.3.3 std::map -- Sorted Key-Value Dictionary
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-handwritten.svg" alt="Handwritten: 9.3.3 std::map -- Sorted Key-Value Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-handwritten.svg" alt="Handwritten: 9.3.3 std::map -- Sorted Key-Value Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-diagram.svg" alt="Diagram: 9.3.3 std::map -- Sorted Key-Value Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-diagram.svg" alt="Diagram: 9.3.3 std::map -- Sorted Key-Value Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-sticky.svg" alt="Sticky Note: 9.3.3 std::map -- Sorted Key-Value Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-3-std-map-sorted-key-value-dictionary-sticky.svg" alt="Sticky Note: 9.3.3 std::map -- Sorted Key-Value Dictionary" width="30%">
 </a>
 
 
@@ -1411,14 +1411,14 @@ Same as set: `insert()` does not invalidate existing iterators; `erase()` invali
 
 ### 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-handwritten.svg" alt="Handwritten: 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-handwritten.svg" alt="Handwritten: 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-diagram.svg" alt="Diagram: 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-diagram.svg" alt="Diagram: 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-sticky.svg" alt="Sticky Note: 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-3-4-std-multimap-sorted-map-allowing-duplicate-keys-sticky.svg" alt="Sticky Note: 9.3.4 std::multimap -- Sorted Map Allowing Duplicate Keys" width="30%">
 </a>
 
 
@@ -1496,14 +1496,14 @@ Unordered containers use hash tables for average O(1) lookup. They were introduc
 
 ### 9.4.1 std::unordered_set -- Hash-Based Unique Set
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-handwritten.svg" alt="Handwritten: 9.4.1 std::unordered_set -- Hash-Based Unique Set" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-handwritten.svg" alt="Handwritten: 9.4.1 std::unordered_set -- Hash-Based Unique Set" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-diagram.svg" alt="Diagram: 9.4.1 std::unordered_set -- Hash-Based Unique Set" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-diagram.svg" alt="Diagram: 9.4.1 std::unordered_set -- Hash-Based Unique Set" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-sticky.svg" alt="Sticky Note: 9.4.1 std::unordered_set -- Hash-Based Unique Set" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-1-std-unordered-set-hash-based-unique-set-sticky.svg" alt="Sticky Note: 9.4.1 std::unordered_set -- Hash-Based Unique Set" width="30%">
 </a>
 
 
@@ -1675,14 +1675,14 @@ Unordered containers have moderate overhead: bucket array + per-node pointers. L
 
 ### 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-handwritten.svg" alt="Handwritten: 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-handwritten.svg" alt="Handwritten: 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-diagram.svg" alt="Diagram: 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-diagram.svg" alt="Diagram: 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-sticky.svg" alt="Sticky Note: 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-4-2-std-unordered-map-hash-table-key-value-dictionary-sticky.svg" alt="Sticky Note: 9.4.2 std::unordered_map -- Hash Table Key-Value Dictionary" width="30%">
 </a>
 
 
@@ -1832,14 +1832,14 @@ Container adapters provide restricted interfaces over an underlying sequence con
 
 ### 9.5.1 std::stack -- LIFO (Last-In, First-Out)
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-handwritten.svg" alt="Handwritten: 9.5.1 std::stack -- LIFO (Last-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-handwritten.svg" alt="Handwritten: 9.5.1 std::stack -- LIFO (Last-In, First-Out)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-diagram.svg" alt="Diagram: 9.5.1 std::stack -- LIFO (Last-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-diagram.svg" alt="Diagram: 9.5.1 std::stack -- LIFO (Last-In, First-Out)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-sticky.svg" alt="Sticky Note: 9.5.1 std::stack -- LIFO (Last-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-1-std-stack-lifo-last-in-first-out-sticky.svg" alt="Sticky Note: 9.5.1 std::stack -- LIFO (Last-In, First-Out)" width="30%">
 </a>
 
 
@@ -1948,14 +1948,14 @@ expression "({[]})" balanced: yes
 
 ### 9.5.2 std::queue -- FIFO (First-In, First-Out)
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-handwritten.svg" alt="Handwritten: 9.5.2 std::queue -- FIFO (First-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-handwritten.svg" alt="Handwritten: 9.5.2 std::queue -- FIFO (First-In, First-Out)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-diagram.svg" alt="Diagram: 9.5.2 std::queue -- FIFO (First-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-diagram.svg" alt="Diagram: 9.5.2 std::queue -- FIFO (First-In, First-Out)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-sticky.svg" alt="Sticky Note: 9.5.2 std::queue -- FIFO (First-In, First-Out)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-2-std-queue-fifo-first-in-first-out-sticky.svg" alt="Sticky Note: 9.5.2 std::queue -- FIFO (First-In, First-Out)" width="30%">
 </a>
 
 
@@ -2073,14 +2073,14 @@ BFS shortest steps 0->12: 4
 
 ### 9.5.3 std::priority_queue -- Max-Heap
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-handwritten.svg" alt="Handwritten: 9.5.3 std::priority_queue -- Max-Heap" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-handwritten.svg" alt="Handwritten: 9.5.3 std::priority_queue -- Max-Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-diagram.svg" alt="Diagram: 9.5.3 std::priority_queue -- Max-Heap" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-diagram.svg" alt="Diagram: 9.5.3 std::priority_queue -- Max-Heap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-sticky.svg" alt="Sticky Note: 9.5.3 std::priority_queue -- Max-Heap" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-5-3-std-priority-queue-max-heap-sticky.svg" alt="Sticky Note: 9.5.3 std::priority_queue -- Max-Heap" width="30%">
 </a>
 
 
@@ -2276,14 +2276,14 @@ std::priority_queue<int, std::vector<int>, decltype(cmp)> custom_pq(cmp);
 
 ### Decision Flow
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-handwritten.svg" alt="Handwritten: Decision Flow" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-handwritten.svg" alt="Handwritten: Decision Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-diagram.svg" alt="Diagram: Decision Flow" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-diagram.svg" alt="Diagram: Decision Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-sticky.svg" alt="Sticky Note: Decision Flow" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/decision-flow-sticky.svg" alt="Sticky Note: Decision Flow" width="30%">
 </a>
 
 
@@ -2331,14 +2331,14 @@ Need a container?
 
 ### When to Use Each Container
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-handwritten.svg" alt="Handwritten: When to Use Each Container" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-handwritten.svg" alt="Handwritten: When to Use Each Container" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-diagram.svg" alt="Diagram: When to Use Each Container" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-diagram.svg" alt="Diagram: When to Use Each Container" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-sticky.svg" alt="Sticky Note: When to Use Each Container" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-to-use-each-container-sticky.svg" alt="Sticky Note: When to Use Each Container" width="30%">
 </a>
 
 
@@ -2361,14 +2361,14 @@ Need a container?
 
 ### Performance Decision Matrix
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-handwritten.svg" alt="Handwritten: Performance Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-handwritten.svg" alt="Handwritten: Performance Decision Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-diagram.svg" alt="Diagram: Performance Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-diagram.svg" alt="Diagram: Performance Decision Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-sticky.svg" alt="Sticky Note: Performance Decision Matrix" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/performance-decision-matrix-sticky.svg" alt="Sticky Note: Performance Decision Matrix" width="30%">
 </a>
 
 
@@ -2394,14 +2394,14 @@ Iterator invalidation is one of the most common sources of bugs in C++ STL code.
 
 ### Master Invalidation Table
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-handwritten.svg" alt="Handwritten: Master Invalidation Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-handwritten.svg" alt="Handwritten: Master Invalidation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-diagram.svg" alt="Diagram: Master Invalidation Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-diagram.svg" alt="Diagram: Master Invalidation Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-sticky.svg" alt="Sticky Note: Master Invalidation Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/master-invalidation-table-sticky.svg" alt="Sticky Note: Master Invalidation Table" width="30%">
 </a>
 
 
@@ -2425,14 +2425,14 @@ Iterator invalidation is one of the most common sources of bugs in C++ STL code.
 
 ### Reference Invalidation vs Iterator Invalidation
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-handwritten.svg" alt="Handwritten: Reference Invalidation vs Iterator Invalidation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-handwritten.svg" alt="Handwritten: Reference Invalidation vs Iterator Invalidation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-diagram.svg" alt="Diagram: Reference Invalidation vs Iterator Invalidation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-diagram.svg" alt="Diagram: Reference Invalidation vs Iterator Invalidation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-sticky.svg" alt="Sticky Note: Reference Invalidation vs Iterator Invalidation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/reference-invalidation-vs-iterator-invalidation-sticky.svg" alt="Sticky Note: Reference Invalidation vs Iterator Invalidation" width="30%">
 </a>
 
 
@@ -2444,14 +2444,14 @@ Important: some operations invalidate iterators but NOT references (or vice vers
 
 ### Common Pitfalls and Correct Patterns
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-handwritten.svg" alt="Handwritten: Common Pitfalls and Correct Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-handwritten.svg" alt="Handwritten: Common Pitfalls and Correct Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-diagram.svg" alt="Diagram: Common Pitfalls and Correct Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-diagram.svg" alt="Diagram: Common Pitfalls and Correct Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-sticky.svg" alt="Sticky Note: Common Pitfalls and Correct Patterns" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/common-pitfalls-and-correct-patterns-sticky.svg" alt="Sticky Note: Common Pitfalls and Correct Patterns" width="30%">
 </a>
 
 
@@ -2544,14 +2544,14 @@ um[100] = "hundred";     // may trigger rehash -- all iterators invalidated
 
 ### Safe Erase Idiom Reference
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-handwritten.svg" alt="Handwritten: Safe Erase Idiom Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-handwritten.svg" alt="Handwritten: Safe Erase Idiom Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-diagram.svg" alt="Diagram: Safe Erase Idiom Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-diagram.svg" alt="Diagram: Safe Erase Idiom Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-sticky.svg" alt="Sticky Note: Safe Erase Idiom Reference" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/safe-erase-idiom-reference-sticky.svg" alt="Sticky Note: Safe Erase Idiom Reference" width="30%">
 </a>
 
 
@@ -2590,14 +2590,14 @@ while (it != s.end()) {
 
 ### 9.8.1 Sequence vs Associative vs Unordered Containers
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-handwritten.svg" alt="Handwritten: 9.8.1 Sequence vs Associative vs Unordered Containers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-handwritten.svg" alt="Handwritten: 9.8.1 Sequence vs Associative vs Unordered Containers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-diagram.svg" alt="Diagram: 9.8.1 Sequence vs Associative vs Unordered Containers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-diagram.svg" alt="Diagram: 9.8.1 Sequence vs Associative vs Unordered Containers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-sticky.svg" alt="Sticky Note: 9.8.1 Sequence vs Associative vs Unordered Containers" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-1-sequence-vs-associative-vs-unordered-containers-sticky.svg" alt="Sticky Note: 9.8.1 Sequence vs Associative vs Unordered Containers" width="30%">
 </a>
 
 
@@ -2616,14 +2616,14 @@ while (it != s.end()) {
 
 ### 9.8.2 std::vector vs std::deque vs std::list
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-handwritten.svg" alt="Handwritten: 9.8.2 std::vector vs std::deque vs std::list" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-handwritten.svg" alt="Handwritten: 9.8.2 std::vector vs std::deque vs std::list" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-diagram.svg" alt="Diagram: 9.8.2 std::vector vs std::deque vs std::list" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-diagram.svg" alt="Diagram: 9.8.2 std::vector vs std::deque vs std::list" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-sticky.svg" alt="Sticky Note: 9.8.2 std::vector vs std::deque vs std::list" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-2-std-vector-vs-std-deque-vs-std-list-sticky.svg" alt="Sticky Note: 9.8.2 std::vector vs std::deque vs std::list" width="30%">
 </a>
 
 
@@ -2688,14 +2688,14 @@ Deque occupies a middle ground:
 
 ### 9.8.3 std::map vs std::unordered_map
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-handwritten.svg" alt="Handwritten: 9.8.3 std::map vs std::unordered_map" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-handwritten.svg" alt="Handwritten: 9.8.3 std::map vs std::unordered_map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-diagram.svg" alt="Diagram: 9.8.3 std::map vs std::unordered_map" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-diagram.svg" alt="Diagram: 9.8.3 std::map vs std::unordered_map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-sticky.svg" alt="Sticky Note: 9.8.3 std::map vs std::unordered_map" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/9-8-3-std-map-vs-std-unordered-map-sticky.svg" alt="Sticky Note: 9.8.3 std::map vs std::unordered_map" width="30%">
 </a>
 
 
@@ -2757,14 +2757,14 @@ Understanding memory overhead is crucial for memory-constrained systems and larg
 
 ### Per-Element Overhead (for int on 64-bit Linux)
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-handwritten.svg" alt="Handwritten: Per-Element Overhead (for int on 64-bit Linux)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-handwritten.svg" alt="Handwritten: Per-Element Overhead (for int on 64-bit Linux)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-diagram.svg" alt="Diagram: Per-Element Overhead (for int on 64-bit Linux)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-diagram.svg" alt="Diagram: Per-Element Overhead (for int on 64-bit Linux)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-sticky.svg" alt="Sticky Note: Per-Element Overhead (for int on 64-bit Linux)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/per-element-overhead-for-int-on-64-bit-linux-sticky.svg" alt="Sticky Note: Per-Element Overhead (for int on 64-bit Linux)" width="30%">
 </a>
 
 
@@ -2782,14 +2782,14 @@ Understanding memory overhead is crucial for memory-constrained systems and larg
 
 ### 1 Million ints -- Total Memory Estimate
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-handwritten.svg" alt="Handwritten: 1 Million ints -- Total Memory Estimate" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-handwritten.svg" alt="Handwritten: 1 Million ints -- Total Memory Estimate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-diagram.svg" alt="Diagram: 1 Million ints -- Total Memory Estimate" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-diagram.svg" alt="Diagram: 1 Million ints -- Total Memory Estimate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-sticky.svg" alt="Sticky Note: 1 Million ints -- Total Memory Estimate" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/1-million-ints-total-memory-estimate-sticky.svg" alt="Sticky Note: 1 Million ints -- Total Memory Estimate" width="30%">
 </a>
 
 
@@ -2807,14 +2807,14 @@ Understanding memory overhead is crucial for memory-constrained systems and larg
 
 ### Container Size (sizeof the container object itself)
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-handwritten.svg" alt="Handwritten: Container Size (sizeof the container object itself)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-handwritten.svg" alt="Handwritten: Container Size (sizeof the container object itself)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-diagram.svg" alt="Diagram: Container Size (sizeof the container object itself)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-diagram.svg" alt="Diagram: Container Size (sizeof the container object itself)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-sticky.svg" alt="Sticky Note: Container Size (sizeof the container object itself)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/container-size-sizeof-the-container-object-itself-sticky.svg" alt="Sticky Note: Container Size (sizeof the container object itself)" width="30%">
 </a>
 
 
@@ -2836,14 +2836,14 @@ Understanding memory overhead is crucial for memory-constrained systems and larg
 
 ### std::vector: The Universal Sequence
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-handwritten.svg" alt="Handwritten: std::vector: The Universal Sequence" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-handwritten.svg" alt="Handwritten: std::vector: The Universal Sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-diagram.svg" alt="Diagram: std::vector: The Universal Sequence" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-diagram.svg" alt="Diagram: std::vector: The Universal Sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-sticky.svg" alt="Sticky Note: std::vector: The Universal Sequence" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-vector-the-universal-sequence-sticky.svg" alt="Sticky Note: std::vector: The Universal Sequence" width="30%">
 </a>
 
 
@@ -2861,14 +2861,14 @@ vector is the most widely used container in C++ codebases. It appears in virtual
 
 ### std::unordered_map: The Fast Dictionary
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-handwritten.svg" alt="Handwritten: std::unordered_map: The Fast Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-handwritten.svg" alt="Handwritten: std::unordered_map: The Fast Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-diagram.svg" alt="Diagram: std::unordered_map: The Fast Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-diagram.svg" alt="Diagram: std::unordered_map: The Fast Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-sticky.svg" alt="Sticky Note: std::unordered_map: The Fast Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-unordered-map-the-fast-dictionary-sticky.svg" alt="Sticky Note: std::unordered_map: The Fast Dictionary" width="30%">
 </a>
 
 
@@ -2881,14 +2881,14 @@ vector is the most widely used container in C++ codebases. It appears in virtual
 
 ### std::map: When Order Matters
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-handwritten.svg" alt="Handwritten: std::map: When Order Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-handwritten.svg" alt="Handwritten: std::map: When Order Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-diagram.svg" alt="Diagram: std::map: When Order Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-diagram.svg" alt="Diagram: std::map: When Order Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-sticky.svg" alt="Sticky Note: std::map: When Order Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-map-when-order-matters-sticky.svg" alt="Sticky Note: std::map: When Order Matters" width="30%">
 </a>
 
 
@@ -2900,14 +2900,14 @@ vector is the most widely used container in C++ codebases. It appears in virtual
 
 ### std::deque: The Double-Ended Workhorse
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-handwritten.svg" alt="Handwritten: std::deque: The Double-Ended Workhorse" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-handwritten.svg" alt="Handwritten: std::deque: The Double-Ended Workhorse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-diagram.svg" alt="Diagram: std::deque: The Double-Ended Workhorse" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-diagram.svg" alt="Diagram: std::deque: The Double-Ended Workhorse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-sticky.svg" alt="Sticky Note: std::deque: The Double-Ended Workhorse" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-deque-the-double-ended-workhorse-sticky.svg" alt="Sticky Note: std::deque: The Double-Ended Workhorse" width="30%">
 </a>
 
 
@@ -2918,14 +2918,14 @@ vector is the most widely used container in C++ codebases. It appears in virtual
 
 ### std::priority_queue: Priority-Based Processing
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-handwritten.svg" alt="Handwritten: std::priority_queue: Priority-Based Processing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-handwritten.svg" alt="Handwritten: std::priority_queue: Priority-Based Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-diagram.svg" alt="Diagram: std::priority_queue: Priority-Based Processing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-diagram.svg" alt="Diagram: std::priority_queue: Priority-Based Processing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-sticky.svg" alt="Sticky Note: std::priority_queue: Priority-Based Processing" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/std-priority-queue-priority-based-processing-sticky.svg" alt="Sticky Note: std::priority_queue: Priority-Based Processing" width="30%">
 </a>
 
 
@@ -2943,14 +2943,14 @@ The following Q&As cover the most frequently asked STL container questions in C+
 
 ### Q1: "Why is std::vector usually preferred over std::list?"
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-handwritten.svg" alt="Handwritten: "Why is std::vector usually preferred over std::list?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-handwritten.svg" alt="Handwritten: "Why is std::vector usually preferred over std::list?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-diagram.svg" alt="Diagram: "Why is std::vector usually preferred over std::list?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-diagram.svg" alt="Diagram: "Why is std::vector usually preferred over std::list?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-sticky.svg" alt="Sticky Note: "Why is std::vector usually preferred over std::list?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/why-is-std-vector-usually-preferred-over-std-list-sticky.svg" alt="Sticky Note: "Why is std::vector usually preferred over std::list?"" width="30%">
 </a>
 
 
@@ -2990,14 +2990,14 @@ vec.insert(vec.begin() + 5000, 99);  // O(n) shift via memmove
 
 ### Q2: "When would you choose std::map over std::unordered_map?"
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-handwritten.svg" alt="Handwritten: "When would you choose std::map over std::unordered_map?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-handwritten.svg" alt="Handwritten: "When would you choose std::map over std::unordered_map?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-diagram.svg" alt="Diagram: "When would you choose std::map over std::unordered_map?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-diagram.svg" alt="Diagram: "When would you choose std::map over std::unordered_map?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-sticky.svg" alt="Sticky Note: "When would you choose std::map over std::unordered_map?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/when-would-you-choose-std-map-over-std-unordered-map-sticky.svg" alt="Sticky Note: "When would you choose std::map over std::unordered_map?"" width="30%">
 </a>
 
 
@@ -3033,14 +3033,14 @@ Choose `std::unordered_map` when:
 
 ### Q3: "Explain iterator invalidation. Give examples for vector and list."
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-handwritten.svg" alt="Handwritten: "Explain iterator invalidation. Give examples for vector and list."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-handwritten.svg" alt="Handwritten: "Explain iterator invalidation. Give examples for vector and list."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-diagram.svg" alt="Diagram: "Explain iterator invalidation. Give examples for vector and list."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-diagram.svg" alt="Diagram: "Explain iterator invalidation. Give examples for vector and list."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-sticky.svg" alt="Sticky Note: "Explain iterator invalidation. Give examples for vector and list."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/explain-iterator-invalidation-give-examples-for-vector-and-list-sticky.svg" alt="Sticky Note: "Explain iterator invalidation. Give examples for vector and list."" width="30%">
 </a>
 
 
@@ -3144,14 +3144,14 @@ public:
 
 ### Q5: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-handwritten.svg" alt="Handwritten: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-handwritten.svg" alt="Handwritten: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-diagram.svg" alt="Diagram: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-diagram.svg" alt="Diagram: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-sticky.svg" alt="Sticky Note: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-happens-when-a-vector-s-capacity-is-exceeded-during-push-back-walk-through-the-steps-sticky.svg" alt="Sticky Note: "What happens when a vector's capacity is exceeded during push_back? Walk through the steps."" width="30%">
 </a>
 
 
@@ -3194,14 +3194,14 @@ v.push_back(50);
 
 ### Q6: "What is the erase-remove idiom and why is it necessary?"
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-handwritten.svg" alt="Handwritten: "What is the erase-remove idiom and why is it necessary?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-handwritten.svg" alt="Handwritten: "What is the erase-remove idiom and why is it necessary?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-diagram.svg" alt="Diagram: "What is the erase-remove idiom and why is it necessary?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-diagram.svg" alt="Diagram: "What is the erase-remove idiom and why is it necessary?"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-sticky.svg" alt="Sticky Note: "What is the erase-remove idiom and why is it necessary?"" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/what-is-the-erase-remove-idiom-and-why-is-it-necessary-sticky.svg" alt="Sticky Note: "What is the erase-remove idiom and why is it necessary?"" width="30%">
 </a>
 
 
@@ -3247,14 +3247,14 @@ v.erase(std::remove_if(v.begin(), v.end(),
 
 ### Q7: "Compare the performance of deque vs vector for a producer-consumer scenario."
 
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-handwritten.svg" alt="Handwritten: "Compare the performance of deque vs vector for a producer-consumer scenario."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-handwritten.svg" alt="Handwritten: "Compare the performance of deque vs vector for a producer-consumer scenario."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-diagram.svg" alt="Diagram: "Compare the performance of deque vs vector for a producer-consumer scenario."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-diagram.svg" alt="Diagram: "Compare the performance of deque vs vector for a producer-consumer scenario."" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-sticky.svg" alt="Sticky Note: "Compare the performance of deque vs vector for a producer-consumer scenario."" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/09-stl-containers/compare-the-performance-of-deque-vs-vector-for-a-producer-consumer-scenario-sticky.svg" alt="Sticky Note: "Compare the performance of deque vs vector for a producer-consumer scenario."" width="30%">
 </a>
 
 

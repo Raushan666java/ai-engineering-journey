@@ -117,14 +117,14 @@ ACCOUNT TAKEOVER ATTACK CLASSIFICATION
 
 ### 2.1 Phishing — The #1 Account Takeover Vector
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-handwritten.svg" alt="Handwritten: 2.1 Phishing — The #1 Account Takeover Vector" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-handwritten.svg" alt="Handwritten: 2.1 Phishing — The #1 Account Takeover Vector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-diagram.svg" alt="Diagram: 2.1 Phishing — The #1 Account Takeover Vector" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-diagram.svg" alt="Diagram: 2.1 Phishing — The #1 Account Takeover Vector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-sticky.svg" alt="Sticky Note: 2.1 Phishing — The #1 Account Takeover Vector" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-1-phishing-the-1-account-takeover-vector-sticky.svg" alt="Sticky Note: 2.1 Phishing — The #1 Account Takeover Vector" width="30%">
 </a>
 
 
@@ -529,14 +529,14 @@ class InstagramPhishDetector extends PhishingDetector {
 
 ### 2.2 Pretexting — Building a Believable Cover Story
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-handwritten.svg" alt="Handwritten: 2.2 Pretexting — Building a Believable Cover Story" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-handwritten.svg" alt="Handwritten: 2.2 Pretexting — Building a Believable Cover Story" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-diagram.svg" alt="Diagram: 2.2 Pretexting — Building a Believable Cover Story" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-diagram.svg" alt="Diagram: 2.2 Pretexting — Building a Believable Cover Story" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-sticky.svg" alt="Sticky Note: 2.2 Pretexting — Building a Believable Cover Story" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-2-pretexting-building-a-believable-cover-story-sticky.svg" alt="Sticky Note: 2.2 Pretexting — Building a Believable Cover Story" width="30%">
 </a>
 
 
@@ -584,14 +584,14 @@ STEP 5: COVER CLOSURE
 
 ### 2.3 Business Email Compromise (BEC) & CEO Fraud
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-handwritten.svg" alt="Handwritten: 2.3 Business Email Compromise (BEC) & CEO Fraud" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-handwritten.svg" alt="Handwritten: 2.3 Business Email Compromise (BEC) & CEO Fraud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-diagram.svg" alt="Diagram: 2.3 Business Email Compromise (BEC) & CEO Fraud" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-diagram.svg" alt="Diagram: 2.3 Business Email Compromise (BEC) & CEO Fraud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-sticky.svg" alt="Sticky Note: 2.3 Business Email Compromise (BEC) & CEO Fraud" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-3-business-email-compromise-bec-ceo-fraud-sticky.svg" alt="Sticky Note: 2.3 Business Email Compromise (BEC) & CEO Fraud" width="30%">
 </a>
 
 
@@ -743,14 +743,14 @@ class BECDetector {
 
 ### 2.4 OSINT Reconnaissance — How Attackers Research You
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-handwritten.svg" alt="Handwritten: 2.4 OSINT Reconnaissance — How Attackers Research You" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-handwritten.svg" alt="Handwritten: 2.4 OSINT Reconnaissance — How Attackers Research You" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-diagram.svg" alt="Diagram: 2.4 OSINT Reconnaissance — How Attackers Research You" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-diagram.svg" alt="Diagram: 2.4 OSINT Reconnaissance — How Attackers Research You" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-sticky.svg" alt="Sticky Note: 2.4 OSINT Reconnaissance — How Attackers Research You" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-4-osint-reconnaissance-how-attackers-research-you-sticky.svg" alt="Sticky Note: 2.4 OSINT Reconnaissance — How Attackers Research You" width="30%">
 </a>
 
 
@@ -806,14 +806,14 @@ OSINT REDUCTION CHECKLIST
 
 ### 2.5 Deepfake Social Engineering — The AI-Powered Threat
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-handwritten.svg" alt="Handwritten: 2.5 Deepfake Social Engineering — The AI-Powered Threat" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-handwritten.svg" alt="Handwritten: 2.5 Deepfake Social Engineering — The AI-Powered Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-diagram.svg" alt="Diagram: 2.5 Deepfake Social Engineering — The AI-Powered Threat" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-diagram.svg" alt="Diagram: 2.5 Deepfake Social Engineering — The AI-Powered Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-sticky.svg" alt="Sticky Note: 2.5 Deepfake Social Engineering — The AI-Powered Threat" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-5-deepfake-social-engineering-the-ai-powered-threat-sticky.svg" alt="Sticky Note: 2.5 Deepfake Social Engineering — The AI-Powered Threat" width="30%">
 </a>
 
 
@@ -925,14 +925,14 @@ class DeepfakeSocialEngineeringDetector {
 
 ### 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-handwritten.svg" alt="Handwritten: 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-handwritten.svg" alt="Handwritten: 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-diagram.svg" alt="Diagram: 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-diagram.svg" alt="Diagram: 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-sticky.svg" alt="Sticky Note: 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-6-the-psychology-of-social-engineering-cialdini-s-6-principles-sticky.svg" alt="Sticky Note: 2.6 The Psychology of Social Engineering — Cialdini's 6 Principles" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ P — PROCEED WITH CAUTION
 
 ### 2.7 Social Engineering Countermeasures
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-handwritten.svg" alt="Handwritten: 2.7 Social Engineering Countermeasures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-handwritten.svg" alt="Handwritten: 2.7 Social Engineering Countermeasures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-diagram.svg" alt="Diagram: 2.7 Social Engineering Countermeasures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-diagram.svg" alt="Diagram: 2.7 Social Engineering Countermeasures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-sticky.svg" alt="Sticky Note: 2.7 Social Engineering Countermeasures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/2-7-social-engineering-countermeasures-sticky.svg" alt="Sticky Note: 2.7 Social Engineering Countermeasures" width="30%">
 </a>
 
 
@@ -1019,14 +1019,14 @@ P — PROCEED WITH CAUTION
 
 ### 3.1 Credential Stuffing — The Reuse Epidemic
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-handwritten.svg" alt="Handwritten: 3.1 Credential Stuffing — The Reuse Epidemic" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-handwritten.svg" alt="Handwritten: 3.1 Credential Stuffing — The Reuse Epidemic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-diagram.svg" alt="Diagram: 3.1 Credential Stuffing — The Reuse Epidemic" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-diagram.svg" alt="Diagram: 3.1 Credential Stuffing — The Reuse Epidemic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-sticky.svg" alt="Sticky Note: 3.1 Credential Stuffing — The Reuse Epidemic" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-1-credential-stuffing-the-reuse-epidemic-sticky.svg" alt="Sticky Note: 3.1 Credential Stuffing — The Reuse Epidemic" width="30%">
 </a>
 
 
@@ -1176,14 +1176,14 @@ class CredentialStuffingDetector {
 
 ### 3.2 Password Attacks Comparison
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-handwritten.svg" alt="Handwritten: 3.2 Password Attacks Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-handwritten.svg" alt="Handwritten: 3.2 Password Attacks Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-diagram.svg" alt="Diagram: 3.2 Password Attacks Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-diagram.svg" alt="Diagram: 3.2 Password Attacks Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-sticky.svg" alt="Sticky Note: 3.2 Password Attacks Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/3-2-password-attacks-comparison-sticky.svg" alt="Sticky Note: 3.2 Password Attacks Comparison" width="30%">
 </a>
 
 
@@ -1328,14 +1328,14 @@ class PasswordStrengthCalculator {
 
 ### 4.1 Session Hijacking — The Hidden Threat
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-handwritten.svg" alt="Handwritten: 4.1 Session Hijacking — The Hidden Threat" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-handwritten.svg" alt="Handwritten: 4.1 Session Hijacking — The Hidden Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-diagram.svg" alt="Diagram: 4.1 Session Hijacking — The Hidden Threat" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-diagram.svg" alt="Diagram: 4.1 Session Hijacking — The Hidden Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-sticky.svg" alt="Sticky Note: 4.1 Session Hijacking — The Hidden Threat" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-1-session-hijacking-the-hidden-threat-sticky.svg" alt="Sticky Note: 4.1 Session Hijacking — The Hidden Threat" width="30%">
 </a>
 
 
@@ -1502,14 +1502,14 @@ class SessionSecurityUtils {
 
 ### 4.2 MFA Bypass Techniques & Countermeasures
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-handwritten.svg" alt="Handwritten: 4.2 MFA Bypass Techniques & Countermeasures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-handwritten.svg" alt="Handwritten: 4.2 MFA Bypass Techniques & Countermeasures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-diagram.svg" alt="Diagram: 4.2 MFA Bypass Techniques & Countermeasures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-diagram.svg" alt="Diagram: 4.2 MFA Bypass Techniques & Countermeasures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-sticky.svg" alt="Sticky Note: 4.2 MFA Bypass Techniques & Countermeasures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/4-2-mfa-bypass-techniques-countermeasures-sticky.svg" alt="Sticky Note: 4.2 MFA Bypass Techniques & Countermeasures" width="30%">
 </a>
 
 
@@ -1547,14 +1547,14 @@ STRONGEST
 
 ### 5.1 How SIM Swapping Works
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-handwritten.svg" alt="Handwritten: 5.1 How SIM Swapping Works" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-handwritten.svg" alt="Handwritten: 5.1 How SIM Swapping Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-diagram.svg" alt="Diagram: 5.1 How SIM Swapping Works" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-diagram.svg" alt="Diagram: 5.1 How SIM Swapping Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-sticky.svg" alt="Sticky Note: 5.1 How SIM Swapping Works" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-1-how-sim-swapping-works-sticky.svg" alt="Sticky Note: 5.1 How SIM Swapping Works" width="30%">
 </a>
 
 
@@ -1632,14 +1632,14 @@ PHASE 5: EXFILTRATION
 
 ### 5.2 SIM Swap Prevention
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-handwritten.svg" alt="Handwritten: 5.2 SIM Swap Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-handwritten.svg" alt="Handwritten: 5.2 SIM Swap Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-diagram.svg" alt="Diagram: 5.2 SIM Swap Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-diagram.svg" alt="Diagram: 5.2 SIM Swap Prevention" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-sticky.svg" alt="Sticky Note: 5.2 SIM Swap Prevention" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/5-2-sim-swap-prevention-sticky.svg" alt="Sticky Note: 5.2 SIM Swap Prevention" width="30%">
 </a>
 
 
@@ -1742,14 +1742,14 @@ Your Google account is the single most important account you own. It controls: G
 
 ### 6.1 Google Account Takeover Attack Taxonomy
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-handwritten.svg" alt="Handwritten: 6.1 Google Account Takeover Attack Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-handwritten.svg" alt="Handwritten: 6.1 Google Account Takeover Attack Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-diagram.svg" alt="Diagram: 6.1 Google Account Takeover Attack Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-diagram.svg" alt="Diagram: 6.1 Google Account Takeover Attack Taxonomy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-sticky.svg" alt="Sticky Note: 6.1 Google Account Takeover Attack Taxonomy" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-google-account-takeover-attack-taxonomy-sticky.svg" alt="Sticky Note: 6.1 Google Account Takeover Attack Taxonomy" width="30%">
 </a>
 
 
@@ -1764,14 +1764,14 @@ Your Google account is the single most important account you own. It controls: G
 
 ### 6.2 Google Account Recovery Process — Step by Step
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-handwritten.svg" alt="Handwritten: 6.2 Google Account Recovery Process — Step by Step" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-handwritten.svg" alt="Handwritten: 6.2 Google Account Recovery Process — Step by Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-diagram.svg" alt="Diagram: 6.2 Google Account Recovery Process — Step by Step" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-diagram.svg" alt="Diagram: 6.2 Google Account Recovery Process — Step by Step" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-sticky.svg" alt="Sticky Note: 6.2 Google Account Recovery Process — Step by Step" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-google-account-recovery-process-step-by-step-sticky.svg" alt="Sticky Note: 6.2 Google Account Recovery Process — Step by Step" width="30%">
 </a>
 
 
@@ -1845,14 +1845,14 @@ GOOGLE RECOVERY SETUP
 
 ### 6.3 Google Advanced Protection Program (APP)
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-handwritten.svg" alt="Handwritten: 6.3 Google Advanced Protection Program (APP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-handwritten.svg" alt="Handwritten: 6.3 Google Advanced Protection Program (APP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-diagram.svg" alt="Diagram: 6.3 Google Advanced Protection Program (APP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-diagram.svg" alt="Diagram: 6.3 Google Advanced Protection Program (APP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-sticky.svg" alt="Sticky Note: 6.3 Google Advanced Protection Program (APP)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-google-advanced-protection-program-app-sticky.svg" alt="Sticky Note: 6.3 Google Advanced Protection Program (APP)" width="30%">
 </a>
 
 
@@ -2040,14 +2040,14 @@ class GoogleSecurityAuditor {
 
 ### 6.4 Gmail Security — The Password Reset Hub
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-handwritten.svg" alt="Handwritten: 6.4 Gmail Security — The Password Reset Hub" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-handwritten.svg" alt="Handwritten: 6.4 Gmail Security — The Password Reset Hub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-diagram.svg" alt="Diagram: 6.4 Gmail Security — The Password Reset Hub" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-diagram.svg" alt="Diagram: 6.4 Gmail Security — The Password Reset Hub" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-sticky.svg" alt="Sticky Note: 6.4 Gmail Security — The Password Reset Hub" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-gmail-security-the-password-reset-hub-sticky.svg" alt="Sticky Note: 6.4 Gmail Security — The Password Reset Hub" width="30%">
 </a>
 
 
@@ -2176,14 +2176,14 @@ class GmailSecurityAudit {
 
 ### 6.5 YouTube Channel Security
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-handwritten.svg" alt="Handwritten: 6.5 YouTube Channel Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-handwritten.svg" alt="Handwritten: 6.5 YouTube Channel Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-diagram.svg" alt="Diagram: 6.5 YouTube Channel Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-diagram.svg" alt="Diagram: 6.5 YouTube Channel Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-sticky.svg" alt="Sticky Note: 6.5 YouTube Channel Security" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-youtube-channel-security-sticky.svg" alt="Sticky Note: 6.5 YouTube Channel Security" width="30%">
 </a>
 
 
@@ -2226,14 +2226,14 @@ YOUTUBE CHANNEL SECURITY
 
 ### 6.6 Google One Dark Web Report
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-handwritten.svg" alt="Handwritten: 6.6 Google One Dark Web Report" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-handwritten.svg" alt="Handwritten: 6.6 Google One Dark Web Report" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-diagram.svg" alt="Diagram: 6.6 Google One Dark Web Report" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-diagram.svg" alt="Diagram: 6.6 Google One Dark Web Report" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-sticky.svg" alt="Sticky Note: 6.6 Google One Dark Web Report" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-google-one-dark-web-report-sticky.svg" alt="Sticky Note: 6.6 Google One Dark Web Report" width="30%">
 </a>
 
 
@@ -2260,14 +2260,14 @@ Google's free (with Google One subscription) dark web monitoring scans for your 
 
 ### 6.1 Instagram Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-handwritten.svg" alt="Handwritten: 6.1 Instagram Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-handwritten.svg" alt="Handwritten: 6.1 Instagram Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-diagram.svg" alt="Diagram: 6.1 Instagram Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-diagram.svg" alt="Diagram: 6.1 Instagram Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-sticky.svg" alt="Sticky Note: 6.1 Instagram Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-1-instagram-forensics-sticky.svg" alt="Sticky Note: 6.1 Instagram Forensics" width="30%">
 </a>
 
 
@@ -2482,14 +2482,14 @@ ${this.emailChanges.length > 0 ? '  ■ Email was changed — recover email acco
 
 ### 6.2 Platform Forensics Reference
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-handwritten.svg" alt="Handwritten: 6.2 Platform Forensics Reference" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-handwritten.svg" alt="Handwritten: 6.2 Platform Forensics Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-diagram.svg" alt="Diagram: 6.2 Platform Forensics Reference" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-diagram.svg" alt="Diagram: 6.2 Platform Forensics Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-sticky.svg" alt="Sticky Note: 6.2 Platform Forensics Reference" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-2-platform-forensics-reference-sticky.svg" alt="Sticky Note: 6.2 Platform Forensics Reference" width="30%">
 </a>
 
 
@@ -2506,14 +2506,14 @@ ${this.emailChanges.length > 0 ? '  ■ Email was changed — recover email acco
 
 ### 6.3 WhatsApp Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-handwritten.svg" alt="Handwritten: 6.3 WhatsApp Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-handwritten.svg" alt="Handwritten: 6.3 WhatsApp Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-diagram.svg" alt="Diagram: 6.3 WhatsApp Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-diagram.svg" alt="Diagram: 6.3 WhatsApp Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-sticky.svg" alt="Sticky Note: 6.3 WhatsApp Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-3-whatsapp-forensics-sticky.svg" alt="Sticky Note: 6.3 WhatsApp Forensics" width="30%">
 </a>
 
 
@@ -2566,14 +2566,14 @@ RECOVERY:
 
 ### 6.4 Discord Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-handwritten.svg" alt="Handwritten: 6.4 Discord Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-handwritten.svg" alt="Handwritten: 6.4 Discord Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-diagram.svg" alt="Diagram: 6.4 Discord Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-diagram.svg" alt="Diagram: 6.4 Discord Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-sticky.svg" alt="Sticky Note: 6.4 Discord Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-4-discord-forensics-sticky.svg" alt="Sticky Note: 6.4 Discord Forensics" width="30%">
 </a>
 
 
@@ -2813,14 +2813,14 @@ class DiscordForensicEngine {
 
 ### 6.5 TikTok Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-handwritten.svg" alt="Handwritten: 6.5 TikTok Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-handwritten.svg" alt="Handwritten: 6.5 TikTok Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-diagram.svg" alt="Diagram: 6.5 TikTok Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-diagram.svg" alt="Diagram: 6.5 TikTok Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-sticky.svg" alt="Sticky Note: 6.5 TikTok Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-5-tiktok-forensics-sticky.svg" alt="Sticky Note: 6.5 TikTok Forensics" width="30%">
 </a>
 
 
@@ -2871,14 +2871,14 @@ FORENSIC COLLECTION:
 
 ### 6.6 Snapchat Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-handwritten.svg" alt="Handwritten: 6.6 Snapchat Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-handwritten.svg" alt="Handwritten: 6.6 Snapchat Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-diagram.svg" alt="Diagram: 6.6 Snapchat Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-diagram.svg" alt="Diagram: 6.6 Snapchat Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-sticky.svg" alt="Sticky Note: 6.6 Snapchat Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-6-snapchat-forensics-sticky.svg" alt="Sticky Note: 6.6 Snapchat Forensics" width="30%">
 </a>
 
 
@@ -2904,14 +2904,14 @@ Snapchat's disappearing content makes it a preferred platform for sensitive comm
 
 ### 6.7 Telegram Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-handwritten.svg" alt="Handwritten: 6.7 Telegram Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-handwritten.svg" alt="Handwritten: 6.7 Telegram Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-diagram.svg" alt="Diagram: 6.7 Telegram Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-diagram.svg" alt="Diagram: 6.7 Telegram Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-sticky.svg" alt="Sticky Note: 6.7 Telegram Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-7-telegram-forensics-sticky.svg" alt="Sticky Note: 6.7 Telegram Forensics" width="30%">
 </a>
 
 
@@ -3032,14 +3032,14 @@ class TelegramSecurityAudit {
 
 ### 6.8 Signal Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-handwritten.svg" alt="Handwritten: 6.8 Signal Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-handwritten.svg" alt="Handwritten: 6.8 Signal Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-diagram.svg" alt="Diagram: 6.8 Signal Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-diagram.svg" alt="Diagram: 6.8 Signal Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-sticky.svg" alt="Sticky Note: 6.8 Signal Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-8-signal-forensics-sticky.svg" alt="Sticky Note: 6.8 Signal Forensics" width="30%">
 </a>
 
 
@@ -3082,14 +3082,14 @@ WHAT IT DOESN'T PROTECT:
 
 ### 6.9 Amazon Account Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-handwritten.svg" alt="Handwritten: 6.9 Amazon Account Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-handwritten.svg" alt="Handwritten: 6.9 Amazon Account Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-diagram.svg" alt="Diagram: 6.9 Amazon Account Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-diagram.svg" alt="Diagram: 6.9 Amazon Account Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-sticky.svg" alt="Sticky Note: 6.9 Amazon Account Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-9-amazon-account-forensics-sticky.svg" alt="Sticky Note: 6.9 Amazon Account Forensics" width="30%">
 </a>
 
 
@@ -3134,14 +3134,14 @@ AMAZON SECURITY CHECKLIST
 
 ### 6.10 GitHub / Microsoft Account Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-handwritten.svg" alt="Handwritten: 6.10 GitHub / Microsoft Account Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-handwritten.svg" alt="Handwritten: 6.10 GitHub / Microsoft Account Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-diagram.svg" alt="Diagram: 6.10 GitHub / Microsoft Account Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-diagram.svg" alt="Diagram: 6.10 GitHub / Microsoft Account Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-sticky.svg" alt="Sticky Note: 6.10 GitHub / Microsoft Account Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-10-github-microsoft-account-forensics-sticky.svg" alt="Sticky Note: 6.10 GitHub / Microsoft Account Forensics" width="30%">
 </a>
 
 
@@ -3314,14 +3314,14 @@ interface GitHubAuditReport {
 
 ### 6.11 Facebook / Meta Forensics
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-handwritten.svg" alt="Handwritten: 6.11 Facebook / Meta Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-handwritten.svg" alt="Handwritten: 6.11 Facebook / Meta Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-diagram.svg" alt="Diagram: 6.11 Facebook / Meta Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-diagram.svg" alt="Diagram: 6.11 Facebook / Meta Forensics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-sticky.svg" alt="Sticky Note: 6.11 Facebook / Meta Forensics" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/6-11-facebook-meta-forensics-sticky.svg" alt="Sticky Note: 6.11 Facebook / Meta Forensics" width="30%">
 </a>
 
 
@@ -3378,14 +3378,14 @@ RECOVERY:
 
 ### 7.1 The Layered Defense Model
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-handwritten.svg" alt="Handwritten: 7.1 The Layered Defense Model" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-handwritten.svg" alt="Handwritten: 7.1 The Layered Defense Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-diagram.svg" alt="Diagram: 7.1 The Layered Defense Model" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-diagram.svg" alt="Diagram: 7.1 The Layered Defense Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-sticky.svg" alt="Sticky Note: 7.1 The Layered Defense Model" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-1-the-layered-defense-model-sticky.svg" alt="Sticky Note: 7.1 The Layered Defense Model" width="30%">
 </a>
 
 
@@ -3483,14 +3483,14 @@ LAYER 6 — MONITORING
 
 ### 7.2 Account Security Scanner — TypeScript
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-handwritten.svg" alt="Handwritten: 7.2 Account Security Scanner — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-handwritten.svg" alt="Handwritten: 7.2 Account Security Scanner — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-diagram.svg" alt="Diagram: 7.2 Account Security Scanner — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-diagram.svg" alt="Diagram: 7.2 Account Security Scanner — TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-sticky.svg" alt="Sticky Note: 7.2 Account Security Scanner — TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/7-2-account-security-scanner-typescript-sticky.svg" alt="Sticky Note: 7.2 Account Security Scanner — TypeScript" width="30%">
 </a>
 
 
@@ -3620,14 +3620,14 @@ class AccountSecurityScanner {
 
 ### 8.1 Immediate Action — The First 15 Minutes
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-handwritten.svg" alt="Handwritten: 8.1 Immediate Action — The First 15 Minutes" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-handwritten.svg" alt="Handwritten: 8.1 Immediate Action — The First 15 Minutes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-diagram.svg" alt="Diagram: 8.1 Immediate Action — The First 15 Minutes" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-diagram.svg" alt="Diagram: 8.1 Immediate Action — The First 15 Minutes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-sticky.svg" alt="Sticky Note: 8.1 Immediate Action — The First 15 Minutes" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-1-immediate-action-the-first-15-minutes-sticky.svg" alt="Sticky Note: 8.1 Immediate Action — The First 15 Minutes" width="30%">
 </a>
 
 
@@ -3663,14 +3663,14 @@ When you discover your account is compromised, time is critical. Follow this exa
 
 ### 8.2 Platform-Specific Recovery
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-handwritten.svg" alt="Handwritten: 8.2 Platform-Specific Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-handwritten.svg" alt="Handwritten: 8.2 Platform-Specific Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-diagram.svg" alt="Diagram: 8.2 Platform-Specific Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-diagram.svg" alt="Diagram: 8.2 Platform-Specific Recovery" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-sticky.svg" alt="Sticky Note: 8.2 Platform-Specific Recovery" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-2-platform-specific-recovery-sticky.svg" alt="Sticky Note: 8.2 Platform-Specific Recovery" width="30%">
 </a>
 
 
@@ -3688,14 +3688,14 @@ When you discover your account is compromised, time is critical. Follow this exa
 
 ### 8.3 Post-Recovery Hardening Checklist
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-handwritten.svg" alt="Handwritten: 8.3 Post-Recovery Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-handwritten.svg" alt="Handwritten: 8.3 Post-Recovery Hardening Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-diagram.svg" alt="Diagram: 8.3 Post-Recovery Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-diagram.svg" alt="Diagram: 8.3 Post-Recovery Hardening Checklist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-sticky.svg" alt="Sticky Note: 8.3 Post-Recovery Hardening Checklist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/8-3-post-recovery-hardening-checklist-sticky.svg" alt="Sticky Note: 8.3 Post-Recovery Hardening Checklist" width="30%">
 </a>
 
 
@@ -3786,14 +3786,14 @@ Date: ${new Date().toISOString().split('T')[0]}
 
 ### 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-handwritten.svg" alt="Handwritten: 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-handwritten.svg" alt="Handwritten: 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-diagram.svg" alt="Diagram: 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-diagram.svg" alt="Diagram: 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-sticky.svg" alt="Sticky Note: 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-1-twitter-bitcoin-scam-2020-the-ultimate-social-engineering-attack-sticky.svg" alt="Sticky Note: 9.1 Twitter Bitcoin Scam 2020 — The Ultimate Social Engineering Attack" width="30%">
 </a>
 
 
@@ -3870,14 +3870,14 @@ Kirk sentenced to 3 years in prison
 
 ### 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-handwritten.svg" alt="Handwritten: 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-handwritten.svg" alt="Handwritten: 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-diagram.svg" alt="Diagram: 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-diagram.svg" alt="Diagram: 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-sticky.svg" alt="Sticky Note: 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-2-telegram-oauth-hijacking-the-authentication-proxy-attack-sticky.svg" alt="Sticky Note: 9.2 Telegram OAuth Hijacking — The Authentication Proxy Attack" width="30%">
 </a>
 
 
@@ -3904,14 +3904,14 @@ VICTIM → clicks phishing link
 
 ### 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-handwritten.svg" alt="Handwritten: 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-handwritten.svg" alt="Handwritten: 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-diagram.svg" alt="Diagram: 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-diagram.svg" alt="Diagram: 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-sticky.svg" alt="Sticky Note: 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-3-sim-swap-ring-the-crypto-investor-targeted-attack-sticky.svg" alt="Sticky Note: 9.3 SIM Swap Ring — The Crypto Investor Targeted Attack" width="30%">
 </a>
 
 
@@ -3936,14 +3936,14 @@ Day 4 (8:00 AM): Terpin wakes up to "No Service" — too late
 
 ### 9.4 Google Account Takeover — The Recovery Nightmare
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-handwritten.svg" alt="Handwritten: 9.4 Google Account Takeover — The Recovery Nightmare" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-handwritten.svg" alt="Handwritten: 9.4 Google Account Takeover — The Recovery Nightmare" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-diagram.svg" alt="Diagram: 9.4 Google Account Takeover — The Recovery Nightmare" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-diagram.svg" alt="Diagram: 9.4 Google Account Takeover — The Recovery Nightmare" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-sticky.svg" alt="Sticky Note: 9.4 Google Account Takeover — The Recovery Nightmare" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-4-google-account-takeover-the-recovery-nightmare-sticky.svg" alt="Sticky Note: 9.4 Google Account Takeover — The Recovery Nightmare" width="30%">
 </a>
 
 
@@ -4058,14 +4058,14 @@ VICTIM OUTCOME:
 
 ### 9.5 Discord Token Logger — The Fake Tool That Steals Your Account
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-handwritten.svg" alt="Handwritten: 9.5 Discord Token Logger — The Fake Tool That Steals Your Account" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-handwritten.svg" alt="Handwritten: 9.5 Discord Token Logger — The Fake Tool That Steals Your Account" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-diagram.svg" alt="Diagram: 9.5 Discord Token Logger — The Fake Tool That Steals Your Account" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-diagram.svg" alt="Diagram: 9.5 Discord Token Logger — The Fake Tool That Steals Your Account" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-sticky.svg" alt="Sticky Note: 9.5 Discord Token Logger — The Fake Tool That Steals Your Account" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-5-discord-token-logger-the-fake-tool-that-steals-your-account-sticky.svg" alt="Sticky Note: 9.5 Discord Token Logger — The Fake Tool That Steals Your Account" width="30%">
 </a>
 
 
@@ -4226,14 +4226,14 @@ DISCORD TOKEN THEFT PREVENTION
 
 ### 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-handwritten.svg" alt="Handwritten: 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-handwritten.svg" alt="Handwritten: 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-diagram.svg" alt="Diagram: 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-diagram.svg" alt="Diagram: 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-sticky.svg" alt="Sticky Note: 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-6-whatsapp-social-engineering-hijack-the-i-need-the-code-scam-sticky.svg" alt="Sticky Note: 9.6 WhatsApp Social Engineering Hijack — The "I Need The Code" Scam" width="30%">
 </a>
 
 
@@ -4331,14 +4331,14 @@ If someone asks for your WhatsApp code:
 
 ### 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-handwritten.svg" alt="Handwritten: 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-handwritten.svg" alt="Handwritten: 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-diagram.svg" alt="Diagram: 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-diagram.svg" alt="Diagram: 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-sticky.svg" alt="Sticky Note: 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-7-tiktok-journalist-account-takeover-the-targeted-disinformation-attack-sticky.svg" alt="Sticky Note: 9.7 TikTok Journalist Account Takeover — The Targeted Disinformation Attack" width="30%">
 </a>
 
 
@@ -4462,14 +4462,14 @@ HIGH-PROFILE ACCOUNT SECURITY CHECKLIST
 
 ### 9.8 Business Email Compromise (BEC) — The $50 Billion Heist
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-handwritten.svg" alt="Handwritten: 9.8 Business Email Compromise (BEC) — The $50 Billion Heist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-handwritten.svg" alt="Handwritten: 9.8 Business Email Compromise (BEC) — The $50 Billion Heist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-diagram.svg" alt="Diagram: 9.8 Business Email Compromise (BEC) — The $50 Billion Heist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-diagram.svg" alt="Diagram: 9.8 Business Email Compromise (BEC) — The $50 Billion Heist" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-sticky.svg" alt="Sticky Note: 9.8 Business Email Compromise (BEC) — The $50 Billion Heist" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-8-business-email-compromise-bec-the-50-billion-heist-sticky.svg" alt="Sticky Note: 9.8 Business Email Compromise (BEC) — The $50 Billion Heist" width="30%">
 </a>
 
 
@@ -4620,14 +4620,14 @@ TECHNICAL TOOLS:
 
 ### 9.9 Deepfake CEO Fraud — The $25 Million Video Call
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-handwritten.svg" alt="Handwritten: 9.9 Deepfake CEO Fraud — The $25 Million Video Call" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-handwritten.svg" alt="Handwritten: 9.9 Deepfake CEO Fraud — The $25 Million Video Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-diagram.svg" alt="Diagram: 9.9 Deepfake CEO Fraud — The $25 Million Video Call" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-diagram.svg" alt="Diagram: 9.9 Deepfake CEO Fraud — The $25 Million Video Call" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-sticky.svg" alt="Sticky Note: 9.9 Deepfake CEO Fraud — The $25 Million Video Call" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/9-9-deepfake-ceo-fraud-the-25-million-video-call-sticky.svg" alt="Sticky Note: 9.9 Deepfake CEO Fraud — The $25 Million Video Call" width="30%">
 </a>
 
 
@@ -4799,14 +4799,14 @@ AFTER THE CALL:
 
 ### 11.1 Recommended Password Managers
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-handwritten.svg" alt="Handwritten: 11.1 Recommended Password Managers" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-handwritten.svg" alt="Handwritten: 11.1 Recommended Password Managers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-diagram.svg" alt="Diagram: 11.1 Recommended Password Managers" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-diagram.svg" alt="Diagram: 11.1 Recommended Password Managers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-sticky.svg" alt="Sticky Note: 11.1 Recommended Password Managers" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/11-1-recommended-password-managers-sticky.svg" alt="Sticky Note: 11.1 Recommended Password Managers" width="30%">
 </a>
 
 
@@ -4912,14 +4912,14 @@ AFTER THE CALL:
 
 ### Practical Exercises
 
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-handwritten.svg" alt="Handwritten: Practical Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-diagram.svg" alt="Diagram: Practical Exercises" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/21-social-media-security/practical-exercises-sticky.svg" alt="Sticky Note: Practical Exercises" width="30%">
 </a>
 
 

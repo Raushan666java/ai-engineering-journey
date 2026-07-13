@@ -17,14 +17,14 @@
 
 ### The Nature of Software Project Management
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-handwritten.svg" alt="Handwritten: The Nature of Software Project Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-handwritten.svg" alt="Handwritten: The Nature of Software Project Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-diagram.svg" alt="Diagram: The Nature of Software Project Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-diagram.svg" alt="Diagram: The Nature of Software Project Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-sticky.svg" alt="Sticky Note: The Nature of Software Project Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-sticky.svg" alt="Sticky Note: The Nature of Software Project Management" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@ graph TD
 
 ### Project Planning
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/project-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/project-planning-handwritten.svg" alt="Handwritten: Project Planning" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-handwritten.svg" alt="Handwritten: Project Planning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/project-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/project-planning-diagram.svg" alt="Diagram: Project Planning" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-diagram.svg" alt="Diagram: Project Planning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/project-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/project-planning-sticky.svg" alt="Sticky Note: Project Planning" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-sticky.svg" alt="Sticky Note: Project Planning" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@ Project planning begins with defining the project scope — the boundary between
 
 ### Work Breakdown Structure
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-handwritten.svg" alt="Handwritten: Work Breakdown Structure" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-handwritten.svg" alt="Handwritten: Work Breakdown Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-diagram.svg" alt="Diagram: Work Breakdown Structure" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-diagram.svg" alt="Diagram: Work Breakdown Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-sticky.svg" alt="Sticky Note: Work Breakdown Structure" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-sticky.svg" alt="Sticky Note: Work Breakdown Structure" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ graph TD
 
 ### Estimation Techniques
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-handwritten.svg" alt="Handwritten: Estimation Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-handwritten.svg" alt="Handwritten: Estimation Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-diagram.svg" alt="Diagram: Estimation Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-diagram.svg" alt="Diagram: Estimation Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-sticky.svg" alt="Sticky Note: Estimation Techniques" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-sticky.svg" alt="Sticky Note: Estimation Techniques" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ graph TD
 
 ### Function Points
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/function-points-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/function-points-handwritten.svg" alt="Handwritten: Function Points" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-handwritten.svg" alt="Handwritten: Function Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/function-points-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/function-points-diagram.svg" alt="Diagram: Function Points" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-diagram.svg" alt="Diagram: Function Points" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/function-points-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/function-points-sticky.svg" alt="Sticky Note: Function Points" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-sticky.svg" alt="Sticky Note: Function Points" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ class FunctionPointCalculator {
 
 ### COCOMO II
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-handwritten.svg" alt="Handwritten: COCOMO II" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-handwritten.svg" alt="Handwritten: COCOMO II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-diagram.svg" alt="Diagram: COCOMO II" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-diagram.svg" alt="Diagram: COCOMO II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-sticky.svg" alt="Sticky Note: COCOMO II" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-sticky.svg" alt="Sticky Note: COCOMO II" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ class COCOMOSimulator {
 
 ### PERT and Scheduling
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-handwritten.svg" alt="Handwritten: PERT and Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-handwritten.svg" alt="Handwritten: PERT and Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-diagram.svg" alt="Diagram: PERT and Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-diagram.svg" alt="Diagram: PERT and Scheduling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-sticky.svg" alt="Sticky Note: PERT and Scheduling" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-sticky.svg" alt="Sticky Note: PERT and Scheduling" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ gantt
 
 ### Earned Value Management (EVM)
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-handwritten.svg" alt="Handwritten: Earned Value Management (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-handwritten.svg" alt="Handwritten: Earned Value Management (EVM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-diagram.svg" alt="Diagram: Earned Value Management (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-diagram.svg" alt="Diagram: Earned Value Management (EVM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-sticky.svg" alt="Sticky Note: Earned Value Management (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-sticky.svg" alt="Sticky Note: Earned Value Management (EVM)" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ At current efficiency, the project will cost $574,713 and be ~25% late.
 
 ### Risk Management
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/risk-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/risk-management-handwritten.svg" alt="Handwritten: Risk Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-handwritten.svg" alt="Handwritten: Risk Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/risk-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/risk-management-diagram.svg" alt="Diagram: Risk Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-diagram.svg" alt="Diagram: Risk Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/risk-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/risk-management-sticky.svg" alt="Sticky Note: Risk Management" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-sticky.svg" alt="Sticky Note: Risk Management" width="30%">
 </a>
 
 
@@ -499,14 +499,14 @@ graph LR
 
 ### Team Organisation
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-handwritten.svg" alt="Handwritten: Team Organisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-handwritten.svg" alt="Handwritten: Team Organisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-diagram.svg" alt="Diagram: Team Organisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-diagram.svg" alt="Diagram: Team Organisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-sticky.svg" alt="Sticky Note: Team Organisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-sticky.svg" alt="Sticky Note: Team Organisation" width="30%">
 </a>
 
 
@@ -520,14 +520,14 @@ graph LR
 
 ### Planning Poker Estimation
 
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-handwritten.svg" alt="Handwritten: Planning Poker Estimation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-handwritten.svg" alt="Handwritten: Planning Poker Estimation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-diagram.svg" alt="Diagram: Planning Poker Estimation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-diagram.svg" alt="Diagram: Planning Poker Estimation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-sticky.svg" alt="Sticky Note: Planning Poker Estimation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-sticky.svg" alt="Sticky Note: Planning Poker Estimation" width="30%">
 </a>
 
 

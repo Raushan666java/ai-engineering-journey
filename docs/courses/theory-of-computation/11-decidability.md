@@ -42,14 +42,14 @@ flowchart LR
 
 ### 10.1 Decidable vs Undecidable Problems
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-handwritten.svg" alt="Handwritten: 10.1 Decidable vs Undecidable Problems" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-handwritten.svg" alt="Handwritten: 10.1 Decidable vs Undecidable Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-diagram.svg" alt="Diagram: 10.1 Decidable vs Undecidable Problems" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-diagram.svg" alt="Diagram: 10.1 Decidable vs Undecidable Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-sticky.svg" alt="Sticky Note: 10.1 Decidable vs Undecidable Problems" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-sticky.svg" alt="Sticky Note: 10.1 Decidable vs Undecidable Problems" width="30%">
 </a>
 
 
@@ -69,14 +69,14 @@ A problem (language) is **decidable** if there exists an algorithm (Turing machi
 
 ### 10.2 The Halting Problem
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-handwritten.svg" alt="Handwritten: 10.2 The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-handwritten.svg" alt="Handwritten: 10.2 The Halting Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-diagram.svg" alt="Diagram: 10.2 The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-diagram.svg" alt="Diagram: 10.2 The Halting Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-sticky.svg" alt="Sticky Note: 10.2 The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-sticky.svg" alt="Sticky Note: 10.2 The Halting Problem" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ Thus H cannot exist. HALT_TM is undecidable.
 
 ### 10.3 The Diagonalization Language
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-handwritten.svg" alt="Handwritten: 10.3 The Diagonalization Language" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-handwritten.svg" alt="Handwritten: 10.3 The Diagonalization Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-diagram.svg" alt="Diagram: 10.3 The Diagonalization Language" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-diagram.svg" alt="Diagram: 10.3 The Diagonalization Language" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-sticky.svg" alt="Sticky Note: 10.3 The Diagonalization Language" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-sticky.svg" alt="Sticky Note: 10.3 The Diagonalization Language" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ Define A_TM = { âŸ¨M, wâŸ© | M accepts w }.
 
 ### 10.4 The Post Correspondence Problem (PCP)
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-handwritten.svg" alt="Handwritten: 10.4 The Post Correspondence Problem (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-handwritten.svg" alt="Handwritten: 10.4 The Post Correspondence Problem (PCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-diagram.svg" alt="Diagram: 10.4 The Post Correspondence Problem (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-diagram.svg" alt="Diagram: 10.4 The Post Correspondence Problem (PCP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-sticky.svg" alt="Sticky Note: 10.4 The Post Correspondence Problem (PCP)" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-sticky.svg" alt="Sticky Note: 10.4 The Post Correspondence Problem (PCP)" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ A solution: 1, 3, 2, 3 gives:
 
 ### 10.5 Reductions
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-handwritten.svg" alt="Handwritten: 10.5 Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-handwritten.svg" alt="Handwritten: 10.5 Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-diagram.svg" alt="Diagram: 10.5 Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-diagram.svg" alt="Diagram: 10.5 Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-sticky.svg" alt="Sticky Note: 10.5 Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-sticky.svg" alt="Sticky Note: 10.5 Reductions" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ To prove B is undecidable using a reduction:
 
 ### 10.5 Decidable Problems About Regular Languages
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-handwritten.svg" alt="Handwritten: 10.5 Decidable Problems About Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-handwritten.svg" alt="Handwritten: 10.5 Decidable Problems About Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-diagram.svg" alt="Diagram: 10.5 Decidable Problems About Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-diagram.svg" alt="Diagram: 10.5 Decidable Problems About Regular Languages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-sticky.svg" alt="Sticky Note: 10.5 Decidable Problems About Regular Languages" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-sticky.svg" alt="Sticky Note: 10.5 Decidable Problems About Regular Languages" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ All of the following are decidable (proved in Chapter 4):
 
 ### 10.6 Decidable Problems About CFLs
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-handwritten.svg" alt="Handwritten: 10.6 Decidable Problems About CFLs" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-handwritten.svg" alt="Handwritten: 10.6 Decidable Problems About CFLs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-diagram.svg" alt="Diagram: 10.6 Decidable Problems About CFLs" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-diagram.svg" alt="Diagram: 10.6 Decidable Problems About CFLs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-sticky.svg" alt="Sticky Note: 10.6 Decidable Problems About CFLs" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-sticky.svg" alt="Sticky Note: 10.6 Decidable Problems About CFLs" width="30%">
 </a>
 
 
@@ -235,14 +235,14 @@ All of the following are decidable (proved in Chapter 4):
 
 ### 10.7 Undecidable Problems About TMs
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-handwritten.svg" alt="Handwritten: 10.7 Undecidable Problems About TMs" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-handwritten.svg" alt="Handwritten: 10.7 Undecidable Problems About TMs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-diagram.svg" alt="Diagram: 10.7 Undecidable Problems About TMs" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-diagram.svg" alt="Diagram: 10.7 Undecidable Problems About TMs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-sticky.svg" alt="Sticky Note: 10.7 Undecidable Problems About TMs" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-sticky.svg" alt="Sticky Note: 10.7 Undecidable Problems About TMs" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@ Once we have one undecidable problem (A_TM), we can prove many others undecidabl
 
 ### 10.8 Mapping Reductions vs Turing Reductions
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-handwritten.svg" alt="Handwritten: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-handwritten.svg" alt="Handwritten: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-diagram.svg" alt="Diagram: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-diagram.svg" alt="Diagram: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-sticky.svg" alt="Sticky Note: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-sticky.svg" alt="Sticky Note: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
 </a>
 
 
@@ -286,14 +286,14 @@ Once we have one undecidable problem (A_TM), we can prove many others undecidabl
 
 ### 10.9 Hilbert's Tenth Problem
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-handwritten.svg" alt="Handwritten: 10.9 Hilbert's Tenth Problem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-handwritten.svg" alt="Handwritten: 10.9 Hilbert's Tenth Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-diagram.svg" alt="Diagram: 10.9 Hilbert's Tenth Problem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-diagram.svg" alt="Diagram: 10.9 Hilbert's Tenth Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-sticky.svg" alt="Sticky Note: 10.9 Hilbert's Tenth Problem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-sticky.svg" alt="Sticky Note: 10.9 Hilbert's Tenth Problem" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ flowchart TD
 
 ### 10.10 Rice's Theorem
 
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-handwritten.svg" alt="Handwritten: 10.10 Rice's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-handwritten.svg" alt="Handwritten: 10.10 Rice's Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-diagram.svg" alt="Diagram: 10.10 Rice's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-diagram.svg" alt="Diagram: 10.10 Rice's Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-sticky.svg" alt="Sticky Note: 10.10 Rice's Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-sticky.svg" alt="Sticky Note: 10.10 Rice's Theorem" width="30%">
 </a>
 
 

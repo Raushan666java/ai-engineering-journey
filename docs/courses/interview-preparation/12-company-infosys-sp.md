@@ -63,14 +63,14 @@ pie showData
 
 ### Problem 1: InfyTQ — Find the Missing Number
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-handwritten.svg" alt="Handwritten: Problem 1: InfyTQ — Find the Missing Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-handwritten.svg" alt="Handwritten: Problem 1: InfyTQ — Find the Missing Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-diagram.svg" alt="Diagram: Problem 1: InfyTQ — Find the Missing Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-diagram.svg" alt="Diagram: Problem 1: InfyTQ — Find the Missing Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-sticky.svg" alt="Sticky Note: Problem 1: InfyTQ — Find the Missing Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-sticky.svg" alt="Sticky Note: Problem 1: InfyTQ — Find the Missing Number" width="30%">
 </a>
 
 
@@ -144,14 +144,14 @@ function findMissingNumberXOR(nums: number[]): number {
 
 ### Problem 2: Isomorphic Strings
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-handwritten.svg" alt="Handwritten: Problem 2: Isomorphic Strings" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-handwritten.svg" alt="Handwritten: Problem 2: Isomorphic Strings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-diagram.svg" alt="Diagram: Problem 2: Isomorphic Strings" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-diagram.svg" alt="Diagram: Problem 2: Isomorphic Strings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-sticky.svg" alt="Sticky Note: Problem 2: Isomorphic Strings" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-sticky.svg" alt="Sticky Note: Problem 2: Isomorphic Strings" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ function isIsomorphic(s: string, t: string): boolean {
 
 ### Problem 3: Find the Duplicate Number
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-handwritten.svg" alt="Handwritten: Problem 3: Find the Duplicate Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-handwritten.svg" alt="Handwritten: Problem 3: Find the Duplicate Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-diagram.svg" alt="Diagram: Problem 3: Find the Duplicate Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-diagram.svg" alt="Diagram: Problem 3: Find the Duplicate Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-sticky.svg" alt="Sticky Note: Problem 3: Find the Duplicate Number" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-sticky.svg" alt="Sticky Note: Problem 3: Find the Duplicate Number" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ function findDuplicate(nums: number[]): number {
 
 ### Problem 4: Maximum Subarray Sum (Kadane's Algorithm)
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
 </a>
 
 
@@ -374,14 +374,14 @@ function maxSubarrayWithIndices(nums: number[]): { sum: number; start: number; e
 
 ### Problem 5: Valid Parentheses with Multiple Types
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-handwritten.svg" alt="Handwritten: Problem 5: Valid Parentheses with Multiple Types" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-handwritten.svg" alt="Handwritten: Problem 5: Valid Parentheses with Multiple Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-diagram.svg" alt="Diagram: Problem 5: Valid Parentheses with Multiple Types" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-diagram.svg" alt="Diagram: Problem 5: Valid Parentheses with Multiple Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-sticky.svg" alt="Sticky Note: Problem 5: Valid Parentheses with Multiple Types" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-sticky.svg" alt="Sticky Note: Problem 5: Valid Parentheses with Multiple Types" width="30%">
 </a>
 
 
@@ -579,14 +579,14 @@ If you overtake the person in second place, you take their position.
 
 ### Number Systems
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-handwritten.svg" alt="Handwritten: Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-handwritten.svg" alt="Handwritten: Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-diagram.svg" alt="Diagram: Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-diagram.svg" alt="Diagram: Number Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-sticky.svg" alt="Sticky Note: Number Systems" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-sticky.svg" alt="Sticky Note: Number Systems" width="30%">
 </a>
 
 
@@ -631,14 +631,14 @@ HCF = 2² × 3² = 4 × 9 = 36
 
 ### Simple and Compound Interest
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-handwritten.svg" alt="Handwritten: Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-handwritten.svg" alt="Handwritten: Simple and Compound Interest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-diagram.svg" alt="Diagram: Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-diagram.svg" alt="Diagram: Simple and Compound Interest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-sticky.svg" alt="Sticky Note: Simple and Compound Interest" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-sticky.svg" alt="Sticky Note: Simple and Compound Interest" width="30%">
 </a>
 
 
@@ -670,14 +670,14 @@ R = 200/16 = 12.5%
 
 ### Work and Time
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-handwritten.svg" alt="Handwritten: Work and Time" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-handwritten.svg" alt="Handwritten: Work and Time" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-diagram.svg" alt="Diagram: Work and Time" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-diagram.svg" alt="Diagram: Work and Time" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-sticky.svg" alt="Sticky Note: Work and Time" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-sticky.svg" alt="Sticky Note: Work and Time" width="30%">
 </a>
 
 
@@ -710,14 +710,14 @@ Additional men = 20 - 15 = 5
 
 ### Probability
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-handwritten.svg" alt="Handwritten: Probability" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-handwritten.svg" alt="Handwritten: Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-diagram.svg" alt="Diagram: Probability" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-diagram.svg" alt="Diagram: Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-sticky.svg" alt="Sticky Note: Probability" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-sticky.svg" alt="Sticky Note: Probability" width="30%">
 </a>
 
 
@@ -748,14 +748,14 @@ Probability = 10/220 = 1/22
 
 ### Permutations and Combinations
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-handwritten.svg" alt="Handwritten: Permutations and Combinations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-handwritten.svg" alt="Handwritten: Permutations and Combinations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-diagram.svg" alt="Diagram: Permutations and Combinations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-diagram.svg" alt="Diagram: Permutations and Combinations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-sticky.svg" alt="Sticky Note: Permutations and Combinations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-sticky.svg" alt="Sticky Note: Permutations and Combinations" width="30%">
 </a>
 
 
@@ -788,14 +788,14 @@ Total = 120 × 20 × 6 = 14,400
 
 ### Mixtures and Allegations
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-handwritten.svg" alt="Handwritten: Mixtures and Allegations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-handwritten.svg" alt="Handwritten: Mixtures and Allegations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-diagram.svg" alt="Diagram: Mixtures and Allegations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-diagram.svg" alt="Diagram: Mixtures and Allegations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-sticky.svg" alt="Sticky Note: Mixtures and Allegations" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-sticky.svg" alt="Sticky Note: Mixtures and Allegations" width="30%">
 </a>
 
 
@@ -815,14 +815,14 @@ Ratio = 35 : 5 = 7 : 1 (Milk : Water)
 
 ### Geometry
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-handwritten.svg" alt="Handwritten: Geometry" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-handwritten.svg" alt="Handwritten: Geometry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-diagram.svg" alt="Diagram: Geometry" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-diagram.svg" alt="Diagram: Geometry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-sticky.svg" alt="Sticky Note: Geometry" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-sticky.svg" alt="Sticky Note: Geometry" width="30%">
 </a>
 
 
@@ -859,14 +859,14 @@ Full chord length = 2 × 4.8 = 9.6 cm
 
 ### Data Interpretation
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-handwritten.svg" alt="Handwritten: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-handwritten.svg" alt="Handwritten: Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-diagram.svg" alt="Diagram: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-diagram.svg" alt="Diagram: Data Interpretation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-sticky.svg" alt="Sticky Note: Data Interpretation" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-sticky.svg" alt="Sticky Note: Data Interpretation" width="30%">
 </a>
 
 
@@ -889,14 +889,14 @@ Profit % = (172 / 550) × 100 = 31.27%
 
 ### Reading Comprehension
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-handwritten.svg" alt="Handwritten: Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-handwritten.svg" alt="Handwritten: Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-diagram.svg" alt="Diagram: Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-diagram.svg" alt="Diagram: Reading Comprehension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-sticky.svg" alt="Sticky Note: Reading Comprehension" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-sticky.svg" alt="Sticky Note: Reading Comprehension" width="30%">
 </a>
 
 
@@ -933,14 +933,14 @@ The passage: "AI will also create new job categories, much like the internet cre
 
 ### Grammar
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-handwritten.svg" alt="Handwritten: Grammar" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-handwritten.svg" alt="Handwritten: Grammar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-diagram.svg" alt="Diagram: Grammar" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-diagram.svg" alt="Diagram: Grammar" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-sticky.svg" alt="Sticky Note: Grammar" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-sticky.svg" alt="Sticky Note: Grammar" width="30%">
 </a>
 
 
@@ -989,14 +989,14 @@ a) to  b) on  c) with  d) for
 
 ### Sentence Ordering
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-handwritten.svg" alt="Handwritten: Sentence Ordering" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-handwritten.svg" alt="Handwritten: Sentence Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-diagram.svg" alt="Diagram: Sentence Ordering" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-diagram.svg" alt="Diagram: Sentence Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-sticky.svg" alt="Sticky Note: Sentence Ordering" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-sticky.svg" alt="Sticky Note: Sentence Ordering" width="30%">
 </a>
 
 
@@ -1018,14 +1018,14 @@ R: By 2020, nearly 80% of adults owned a smartphone (final outcome)
 
 ### Vocabulary in Context
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-handwritten.svg" alt="Handwritten: Vocabulary in Context" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-handwritten.svg" alt="Handwritten: Vocabulary in Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-diagram.svg" alt="Diagram: Vocabulary in Context" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-diagram.svg" alt="Diagram: Vocabulary in Context" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-sticky.svg" alt="Sticky Note: Vocabulary in Context" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-sticky.svg" alt="Sticky Note: Vocabulary in Context" width="30%">
 </a>
 
 
@@ -1053,14 +1053,14 @@ Benevolent means well-meaning and kindly. Malevolent means having or showing a w
 
 ### Logical Reasoning Questions (Additional Practice)
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-handwritten.svg" alt="Handwritten: Logical Reasoning Questions (Additional Practice)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-handwritten.svg" alt="Handwritten: Logical Reasoning Questions (Additional Practice)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-diagram.svg" alt="Diagram: Logical Reasoning Questions (Additional Practice)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-diagram.svg" alt="Diagram: Logical Reasoning Questions (Additional Practice)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-sticky.svg" alt="Sticky Note: Logical Reasoning Questions (Additional Practice)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-sticky.svg" alt="Sticky Note: Logical Reasoning Questions (Additional Practice)" width="30%">
 </a>
 
 
@@ -1180,14 +1180,14 @@ Cats needed = 1 / (1/3) = 3 cats
 
 ### For Specialist Programmer (SP) Role:
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-handwritten.svg" alt="Handwritten: For Specialist Programmer (SP) Role:" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-handwritten.svg" alt="Handwritten: For Specialist Programmer (SP) Role:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-diagram.svg" alt="Diagram: For Specialist Programmer (SP) Role:" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-diagram.svg" alt="Diagram: For Specialist Programmer (SP) Role:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-sticky.svg" alt="Sticky Note: For Specialist Programmer (SP) Role:" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-sticky.svg" alt="Sticky Note: For Specialist Programmer (SP) Role:" width="30%">
 </a>
 
 | Area | Strategy |
@@ -1198,14 +1198,14 @@ Cats needed = 1 / (1/3) = 3 cats
 
 ### For Digital Specialist Engineer (DSE):
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-handwritten.svg" alt="Handwritten: For Digital Specialist Engineer (DSE):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-handwritten.svg" alt="Handwritten: For Digital Specialist Engineer (DSE):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-diagram.svg" alt="Diagram: For Digital Specialist Engineer (DSE):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-diagram.svg" alt="Diagram: For Digital Specialist Engineer (DSE):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-sticky.svg" alt="Sticky Note: For Digital Specialist Engineer (DSE):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-sticky.svg" alt="Sticky Note: For Digital Specialist Engineer (DSE):" width="30%">
 </a>
 
 | Area | Strategy |
@@ -1216,14 +1216,14 @@ Cats needed = 1 / (1/3) = 3 cats
 
 ### For Systems Engineer (SE):
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-handwritten.svg" alt="Handwritten: For Systems Engineer (SE):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-handwritten.svg" alt="Handwritten: For Systems Engineer (SE):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-diagram.svg" alt="Diagram: For Systems Engineer (SE):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-diagram.svg" alt="Diagram: For Systems Engineer (SE):" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-sticky.svg" alt="Sticky Note: For Systems Engineer (SE):" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-sticky.svg" alt="Sticky Note: For Systems Engineer (SE):" width="30%">
 </a>
 
 | Area | Strategy |
@@ -1295,14 +1295,14 @@ d) Neither is correct
 
 ### Additional Coding Practice Problems (Infosys Pattern)
 
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-handwritten.svg" alt="Handwritten: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-handwritten.svg" alt="Handwritten: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-diagram.svg" alt="Diagram: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-diagram.svg" alt="Diagram: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-sticky.svg" alt="Sticky Note: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
+<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-sticky.svg" alt="Sticky Note: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
 </a>
 
 

@@ -48,36 +48,36 @@ flowchart LR
 
 ### The Scalability Bottleneck
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" alt="Handwritten: The Scalability Bottleneck" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" alt="Handwritten: The Scalability Bottleneck" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" alt="Diagram: The Scalability Bottleneck" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" alt="Diagram: The Scalability Bottleneck" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" alt="Sticky Note: The Scalability Bottleneck" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" alt="Handwritten: The Scalability Bottleneck" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" alt="Diagram: The Scalability Bottleneck" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" alt="Sticky Note: The Scalability Bottleneck" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" alt="Sticky Note: The Scalability Bottleneck" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" alt="Handwritten: The Scalability Bottleneck" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" alt="Handwritten: The Scalability Bottleneck" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" alt="Diagram: The Scalability Bottleneck" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" alt="Diagram: The Scalability Bottleneck" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" alt="Sticky Note: The Scalability Bottleneck" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" alt="Sticky Note: The Scalability Bottleneck" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-handwritten.svg" alt="Handwritten: The Scalability Bottleneck" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-diagram.svg" alt="Diagram: The Scalability Bottleneck" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-scalability-bottleneck-sticky.svg" alt="Sticky Note: The Scalability Bottleneck" width="30%">
 </a>
 
 
@@ -116,36 +116,36 @@ flowchart TB
 
 ### Layer 1 Scaling: Sharding
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" alt="Handwritten: Layer 1 Scaling: Sharding" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" alt="Handwritten: Layer 1 Scaling: Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" alt="Diagram: Layer 1 Scaling: Sharding" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" alt="Diagram: Layer 1 Scaling: Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" alt="Sticky Note: Layer 1 Scaling: Sharding" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" alt="Handwritten: Layer 1 Scaling: Sharding" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" alt="Diagram: Layer 1 Scaling: Sharding" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" alt="Sticky Note: Layer 1 Scaling: Sharding" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" alt="Sticky Note: Layer 1 Scaling: Sharding" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" alt="Handwritten: Layer 1 Scaling: Sharding" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" alt="Handwritten: Layer 1 Scaling: Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" alt="Diagram: Layer 1 Scaling: Sharding" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" alt="Diagram: Layer 1 Scaling: Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" alt="Sticky Note: Layer 1 Scaling: Sharding" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" alt="Sticky Note: Layer 1 Scaling: Sharding" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-handwritten.svg" alt="Handwritten: Layer 1 Scaling: Sharding" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-diagram.svg" alt="Diagram: Layer 1 Scaling: Sharding" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-1-scaling-sharding-sticky.svg" alt="Sticky Note: Layer 1 Scaling: Sharding" width="30%">
 </a>
 
 
@@ -181,36 +181,36 @@ flowchart TB
 
 ### Layer 2: State Channels (Lightning Network)
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" alt="Handwritten: Layer 2: State Channels (Lightning Network)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" alt="Handwritten: Layer 2: State Channels (Lightning Network)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" alt="Diagram: Layer 2: State Channels (Lightning Network)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" alt="Diagram: Layer 2: State Channels (Lightning Network)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" alt="Sticky Note: Layer 2: State Channels (Lightning Network)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" alt="Handwritten: Layer 2: State Channels (Lightning Network)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" alt="Diagram: Layer 2: State Channels (Lightning Network)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" alt="Sticky Note: Layer 2: State Channels (Lightning Network)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" alt="Sticky Note: Layer 2: State Channels (Lightning Network)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" alt="Handwritten: Layer 2: State Channels (Lightning Network)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" alt="Handwritten: Layer 2: State Channels (Lightning Network)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" alt="Diagram: Layer 2: State Channels (Lightning Network)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" alt="Diagram: Layer 2: State Channels (Lightning Network)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" alt="Sticky Note: Layer 2: State Channels (Lightning Network)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" alt="Sticky Note: Layer 2: State Channels (Lightning Network)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-handwritten.svg" alt="Handwritten: Layer 2: State Channels (Lightning Network)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-diagram.svg" alt="Diagram: Layer 2: State Channels (Lightning Network)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-state-channels-lightning-network-sticky.svg" alt="Sticky Note: Layer 2: State Channels (Lightning Network)" width="30%">
 </a>
 
 
@@ -243,36 +243,36 @@ sequenceDiagram
 
 ### Layer 2: Sidechains
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" alt="Handwritten: Layer 2: Sidechains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" alt="Handwritten: Layer 2: Sidechains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" alt="Diagram: Layer 2: Sidechains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" alt="Diagram: Layer 2: Sidechains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" alt="Sticky Note: Layer 2: Sidechains" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" alt="Handwritten: Layer 2: Sidechains" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" alt="Diagram: Layer 2: Sidechains" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" alt="Sticky Note: Layer 2: Sidechains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" alt="Sticky Note: Layer 2: Sidechains" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" alt="Handwritten: Layer 2: Sidechains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" alt="Handwritten: Layer 2: Sidechains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" alt="Diagram: Layer 2: Sidechains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" alt="Diagram: Layer 2: Sidechains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" alt="Sticky Note: Layer 2: Sidechains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" alt="Sticky Note: Layer 2: Sidechains" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-handwritten.svg" alt="Handwritten: Layer 2: Sidechains" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-diagram.svg" alt="Diagram: Layer 2: Sidechains" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-sidechains-sticky.svg" alt="Sticky Note: Layer 2: Sidechains" width="30%">
 </a>
 
 
@@ -307,36 +307,36 @@ flowchart LR
 
 ### Layer 2: Rollups
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" alt="Handwritten: Layer 2: Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" alt="Handwritten: Layer 2: Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" alt="Diagram: Layer 2: Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" alt="Diagram: Layer 2: Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" alt="Sticky Note: Layer 2: Rollups" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" alt="Handwritten: Layer 2: Rollups" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" alt="Diagram: Layer 2: Rollups" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" alt="Sticky Note: Layer 2: Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" alt="Sticky Note: Layer 2: Rollups" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" alt="Handwritten: Layer 2: Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" alt="Handwritten: Layer 2: Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" alt="Diagram: Layer 2: Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" alt="Diagram: Layer 2: Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" alt="Sticky Note: Layer 2: Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" alt="Sticky Note: Layer 2: Rollups" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-handwritten.svg" alt="Handwritten: Layer 2: Rollups" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-diagram.svg" alt="Diagram: Layer 2: Rollups" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/layer-2-rollups-sticky.svg" alt="Sticky Note: Layer 2: Rollups" width="30%">
 </a>
 
 
@@ -365,36 +365,36 @@ flowchart TB
 
 ### Optimistic Rollups vs ZK-Rollups
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" alt="Handwritten: Optimistic Rollups vs ZK-Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" alt="Handwritten: Optimistic Rollups vs ZK-Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" alt="Diagram: Optimistic Rollups vs ZK-Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" alt="Diagram: Optimistic Rollups vs ZK-Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" alt="Sticky Note: Optimistic Rollups vs ZK-Rollups" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" alt="Handwritten: Optimistic Rollups vs ZK-Rollups" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" alt="Diagram: Optimistic Rollups vs ZK-Rollups" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" alt="Sticky Note: Optimistic Rollups vs ZK-Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" alt="Sticky Note: Optimistic Rollups vs ZK-Rollups" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" alt="Handwritten: Optimistic Rollups vs ZK-Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" alt="Handwritten: Optimistic Rollups vs ZK-Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" alt="Diagram: Optimistic Rollups vs ZK-Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" alt="Diagram: Optimistic Rollups vs ZK-Rollups" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" alt="Sticky Note: Optimistic Rollups vs ZK-Rollups" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" alt="Sticky Note: Optimistic Rollups vs ZK-Rollups" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-handwritten.svg" alt="Handwritten: Optimistic Rollups vs ZK-Rollups" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-diagram.svg" alt="Diagram: Optimistic Rollups vs ZK-Rollups" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/optimistic-rollups-vs-zk-rollups-sticky.svg" alt="Sticky Note: Optimistic Rollups vs ZK-Rollups" width="30%">
 </a>
 
 
@@ -412,36 +412,36 @@ flowchart TB
 
 ### ZK-SNARKs vs ZK-STARKs
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" alt="Handwritten: ZK-SNARKs vs ZK-STARKs" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" alt="Handwritten: ZK-SNARKs vs ZK-STARKs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" alt="Diagram: ZK-SNARKs vs ZK-STARKs" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" alt="Diagram: ZK-SNARKs vs ZK-STARKs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" alt="Sticky Note: ZK-SNARKs vs ZK-STARKs" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" alt="Handwritten: ZK-SNARKs vs ZK-STARKs" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" alt="Diagram: ZK-SNARKs vs ZK-STARKs" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" alt="Sticky Note: ZK-SNARKs vs ZK-STARKs" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" alt="Sticky Note: ZK-SNARKs vs ZK-STARKs" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" alt="Handwritten: ZK-SNARKs vs ZK-STARKs" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" alt="Handwritten: ZK-SNARKs vs ZK-STARKs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" alt="Diagram: ZK-SNARKs vs ZK-STARKs" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" alt="Diagram: ZK-SNARKs vs ZK-STARKs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" alt="Sticky Note: ZK-SNARKs vs ZK-STARKs" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" alt="Sticky Note: ZK-SNARKs vs ZK-STARKs" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-handwritten.svg" alt="Handwritten: ZK-SNARKs vs ZK-STARKs" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-diagram.svg" alt="Diagram: ZK-SNARKs vs ZK-STARKs" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/zk-snarks-vs-zk-starks-sticky.svg" alt="Sticky Note: ZK-SNARKs vs ZK-STARKs" width="30%">
 </a>
 
 
@@ -457,36 +457,36 @@ flowchart TB
 
 ### The Data Availability Problem
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" alt="Handwritten: The Data Availability Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" alt="Handwritten: The Data Availability Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" alt="Diagram: The Data Availability Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" alt="Diagram: The Data Availability Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" alt="Sticky Note: The Data Availability Problem" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" alt="Handwritten: The Data Availability Problem" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" alt="Diagram: The Data Availability Problem" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" alt="Sticky Note: The Data Availability Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" alt="Sticky Note: The Data Availability Problem" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" alt="Handwritten: The Data Availability Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" alt="Handwritten: The Data Availability Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" alt="Diagram: The Data Availability Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" alt="Diagram: The Data Availability Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" alt="Sticky Note: The Data Availability Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" alt="Sticky Note: The Data Availability Problem" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-handwritten.svg" alt="Handwritten: The Data Availability Problem" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-diagram.svg" alt="Diagram: The Data Availability Problem" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/the-data-availability-problem-sticky.svg" alt="Sticky Note: The Data Availability Problem" width="30%">
 </a>
 
 
@@ -514,36 +514,36 @@ flowchart TB
 
 ### Plasma Architecture
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" alt="Handwritten: Plasma Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" alt="Handwritten: Plasma Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" alt="Diagram: Plasma Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" alt="Diagram: Plasma Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" alt="Sticky Note: Plasma Architecture" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" alt="Handwritten: Plasma Architecture" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" alt="Diagram: Plasma Architecture" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" alt="Sticky Note: Plasma Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" alt="Sticky Note: Plasma Architecture" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" alt="Handwritten: Plasma Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" alt="Handwritten: Plasma Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" alt="Diagram: Plasma Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" alt="Diagram: Plasma Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" alt="Sticky Note: Plasma Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" alt="Sticky Note: Plasma Architecture" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-handwritten.svg" alt="Handwritten: Plasma Architecture" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-diagram.svg" alt="Diagram: Plasma Architecture" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/plasma-architecture-sticky.svg" alt="Sticky Note: Plasma Architecture" width="30%">
 </a>
 
 
@@ -572,36 +572,36 @@ flowchart TB
 
 ### Validium
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" alt="Handwritten: Validium" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" alt="Handwritten: Validium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" alt="Diagram: Validium" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" alt="Diagram: Validium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" alt="Sticky Note: Validium" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" alt="Handwritten: Validium" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" alt="Diagram: Validium" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" alt="Sticky Note: Validium" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" alt="Sticky Note: Validium" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" alt="Handwritten: Validium" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" alt="Handwritten: Validium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" alt="Diagram: Validium" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" alt="Diagram: Validium" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" alt="Sticky Note: Validium" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" alt="Sticky Note: Validium" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-handwritten.svg" alt="Handwritten: Validium" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-diagram.svg" alt="Diagram: Validium" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/validium-sticky.svg" alt="Sticky Note: Validium" width="30%">
 </a>
 
 
@@ -616,36 +616,36 @@ Validium is like a ZK-Rollup but data is stored off-chain (not on L1):
 
 ### Blockchain Security Threats
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" alt="Handwritten: Blockchain Security Threats" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" alt="Handwritten: Blockchain Security Threats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" alt="Diagram: Blockchain Security Threats" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" alt="Diagram: Blockchain Security Threats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" alt="Sticky Note: Blockchain Security Threats" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" alt="Handwritten: Blockchain Security Threats" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" alt="Diagram: Blockchain Security Threats" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" alt="Sticky Note: Blockchain Security Threats" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" alt="Sticky Note: Blockchain Security Threats" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" alt="Handwritten: Blockchain Security Threats" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" alt="Handwritten: Blockchain Security Threats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" alt="Diagram: Blockchain Security Threats" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" alt="Diagram: Blockchain Security Threats" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" alt="Sticky Note: Blockchain Security Threats" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" alt="Sticky Note: Blockchain Security Threats" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-handwritten.svg" alt="Handwritten: Blockchain Security Threats" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-diagram.svg" alt="Diagram: Blockchain Security Threats" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/blockchain-security-threats-sticky.svg" alt="Sticky Note: Blockchain Security Threats" width="30%">
 </a>
 
 
@@ -691,36 +691,36 @@ An attacker creates a fork from a point far in the past, builds a longer chain, 
 
 ### MEV (Maximal Extractable Value)
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" alt="Handwritten: MEV (Maximal Extractable Value)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" alt="Handwritten: MEV (Maximal Extractable Value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" alt="Diagram: MEV (Maximal Extractable Value)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" alt="Diagram: MEV (Maximal Extractable Value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" alt="Sticky Note: MEV (Maximal Extractable Value)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" alt="Handwritten: MEV (Maximal Extractable Value)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" alt="Diagram: MEV (Maximal Extractable Value)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" alt="Sticky Note: MEV (Maximal Extractable Value)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" alt="Sticky Note: MEV (Maximal Extractable Value)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" alt="Handwritten: MEV (Maximal Extractable Value)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" alt="Handwritten: MEV (Maximal Extractable Value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" alt="Diagram: MEV (Maximal Extractable Value)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" alt="Diagram: MEV (Maximal Extractable Value)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" alt="Sticky Note: MEV (Maximal Extractable Value)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" alt="Sticky Note: MEV (Maximal Extractable Value)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-handwritten.svg" alt="Handwritten: MEV (Maximal Extractable Value)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-diagram.svg" alt="Diagram: MEV (Maximal Extractable Value)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/mev-maximal-extractable-value-sticky.svg" alt="Sticky Note: MEV (Maximal Extractable Value)" width="30%">
 </a>
 
 
@@ -760,36 +760,36 @@ async function sandwichAttack(
 
 ### Quantum Computing Threat
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" alt="Handwritten: Quantum Computing Threat" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" alt="Handwritten: Quantum Computing Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" alt="Diagram: Quantum Computing Threat" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" alt="Diagram: Quantum Computing Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" alt="Sticky Note: Quantum Computing Threat" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" alt="Handwritten: Quantum Computing Threat" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" alt="Diagram: Quantum Computing Threat" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" alt="Sticky Note: Quantum Computing Threat" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" alt="Sticky Note: Quantum Computing Threat" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" alt="Handwritten: Quantum Computing Threat" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" alt="Handwritten: Quantum Computing Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" alt="Diagram: Quantum Computing Threat" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" alt="Diagram: Quantum Computing Threat" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" alt="Sticky Note: Quantum Computing Threat" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" alt="Sticky Note: Quantum Computing Threat" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-handwritten.svg" alt="Handwritten: Quantum Computing Threat" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-diagram.svg" alt="Diagram: Quantum Computing Threat" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/10-security-scalability/quantum-computing-threat-sticky.svg" alt="Sticky Note: Quantum Computing Threat" width="30%">
 </a>
 
 

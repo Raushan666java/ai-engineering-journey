@@ -43,14 +43,14 @@ flowchart LR
 
 ### 3.1 The Virtual Machine Model in the Cloud
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-handwritten.svg" alt="Handwritten: 3.1 The Virtual Machine Model in the Cloud" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-handwritten.svg" alt="Handwritten: 3.1 The Virtual Machine Model in the Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-diagram.svg" alt="Diagram: 3.1 The Virtual Machine Model in the Cloud" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-diagram.svg" alt="Diagram: 3.1 The Virtual Machine Model in the Cloud" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-sticky.svg" alt="Sticky Note: 3.1 The Virtual Machine Model in the Cloud" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-sticky.svg" alt="Sticky Note: 3.1 The Virtual Machine Model in the Cloud" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ The primary advantage of cloud compute is the shift from physical hardware procu
 
 ### 3.2 Provider Service Comparison
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-handwritten.svg" alt="Handwritten: 3.2 Provider Service Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-handwritten.svg" alt="Handwritten: 3.2 Provider Service Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-diagram.svg" alt="Diagram: 3.2 Provider Service Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-diagram.svg" alt="Diagram: 3.2 Provider Service Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-sticky.svg" alt="Sticky Note: 3.2 Provider Service Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-sticky.svg" alt="Sticky Note: 3.2 Provider Service Comparison" width="30%">
 </a>
 
 
@@ -82,14 +82,14 @@ The primary advantage of cloud compute is the shift from physical hardware procu
 
 ### 3.3 Instance Families and Selection
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-handwritten.svg" alt="Handwritten: 3.3 Instance Families and Selection" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-handwritten.svg" alt="Handwritten: 3.3 Instance Families and Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-diagram.svg" alt="Diagram: 3.3 Instance Families and Selection" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-diagram.svg" alt="Diagram: 3.3 Instance Families and Selection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-sticky.svg" alt="Sticky Note: 3.3 Instance Families and Selection" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-sticky.svg" alt="Sticky Note: 3.3 Instance Families and Selection" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ graph TB
 
 ### 3.4 Detailed Instance Type Specifications
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-handwritten.svg" alt="Handwritten: 3.4 Detailed Instance Type Specifications" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-handwritten.svg" alt="Handwritten: 3.4 Detailed Instance Type Specifications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-diagram.svg" alt="Diagram: 3.4 Detailed Instance Type Specifications" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-diagram.svg" alt="Diagram: 3.4 Detailed Instance Type Specifications" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-sticky.svg" alt="Sticky Note: 3.4 Detailed Instance Type Specifications" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-sticky.svg" alt="Sticky Note: 3.4 Detailed Instance Type Specifications" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ graph TB
 
 ### 3.5 Lifecycle and Pricing Models
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-handwritten.svg" alt="Handwritten: 3.5 Lifecycle and Pricing Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-handwritten.svg" alt="Handwritten: 3.5 Lifecycle and Pricing Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-diagram.svg" alt="Diagram: 3.5 Lifecycle and Pricing Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-diagram.svg" alt="Diagram: 3.5 Lifecycle and Pricing Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-sticky.svg" alt="Sticky Note: 3.5 Lifecycle and Pricing Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-sticky.svg" alt="Sticky Note: 3.5 Lifecycle and Pricing Models" width="30%">
 </a>
 
 
@@ -204,14 +204,14 @@ sequenceDiagram
 
 ### 3.6 Storage for Compute
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-handwritten.svg" alt="Handwritten: 3.6 Storage for Compute" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-handwritten.svg" alt="Handwritten: 3.6 Storage for Compute" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-diagram.svg" alt="Diagram: 3.6 Storage for Compute" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-diagram.svg" alt="Diagram: 3.6 Storage for Compute" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-sticky.svg" alt="Sticky Note: 3.6 Storage for Compute" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-sticky.svg" alt="Sticky Note: 3.6 Storage for Compute" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ Cache storage: {
 
 ### 3.7 Scaling and Availability Patterns
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-handwritten.svg" alt="Handwritten: 3.7 Scaling and Availability Patterns" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-handwritten.svg" alt="Handwritten: 3.7 Scaling and Availability Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-diagram.svg" alt="Diagram: 3.7 Scaling and Availability Patterns" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-diagram.svg" alt="Diagram: 3.7 Scaling and Availability Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-sticky.svg" alt="Sticky Note: 3.7 Scaling and Availability Patterns" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-sticky.svg" alt="Sticky Note: 3.7 Scaling and Availability Patterns" width="30%">
 </a>
 
 
@@ -374,14 +374,14 @@ console.log(configureAutoScaling("steady"));
 
 ### 3.8 Load Balancing
 
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-handwritten.svg" alt="Handwritten: 3.8 Load Balancing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-handwritten.svg" alt="Handwritten: 3.8 Load Balancing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-diagram.svg" alt="Diagram: 3.8 Load Balancing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-diagram.svg" alt="Diagram: 3.8 Load Balancing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-sticky.svg" alt="Sticky Note: 3.8 Load Balancing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-sticky.svg" alt="Sticky Note: 3.8 Load Balancing" width="30%">
 </a>
 
 

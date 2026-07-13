@@ -27,14 +27,14 @@ After completing this chapter, you will be able to:
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@ Self-assessment is the foundation of all improvement. Without knowing where you 
 
 ### The 5-Step Self-Assessment Protocol
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-handwritten.svg" alt="Handwritten: The 5-Step Self-Assessment Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-handwritten.svg" alt="Handwritten: The 5-Step Self-Assessment Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-diagram.svg" alt="Diagram: The 5-Step Self-Assessment Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-diagram.svg" alt="Diagram: The 5-Step Self-Assessment Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-sticky.svg" alt="Sticky Note: The 5-Step Self-Assessment Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-5-step-self-assessment-protocol-sticky.svg" alt="Sticky Note: The 5-Step Self-Assessment Protocol" width="30%">
 </a>
 
 
@@ -138,14 +138,14 @@ Record all scores in a spreadsheet. Re-assess monthly.
 
 ### Self-Assessment Template
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-handwritten.svg" alt="Handwritten: Self-Assessment Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-handwritten.svg" alt="Handwritten: Self-Assessment Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-diagram.svg" alt="Diagram: Self-Assessment Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-diagram.svg" alt="Diagram: Self-Assessment Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-sticky.svg" alt="Sticky Note: Self-Assessment Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/self-assessment-template-sticky.svg" alt="Sticky Note: Self-Assessment Template" width="30%">
 </a>
 
 
@@ -210,14 +210,14 @@ Gap analysis finds the difference between where you are and where you need to be
 
 ### The 4 Types of Knowledge Gaps
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-handwritten.svg" alt="Handwritten: The 4 Types of Knowledge Gaps" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-handwritten.svg" alt="Handwritten: The 4 Types of Knowledge Gaps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-diagram.svg" alt="Diagram: The 4 Types of Knowledge Gaps" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-diagram.svg" alt="Diagram: The 4 Types of Knowledge Gaps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-sticky.svg" alt="Sticky Note: The 4 Types of Knowledge Gaps" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-4-types-of-knowledge-gaps-sticky.svg" alt="Sticky Note: The 4 Types of Knowledge Gaps" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ Gap analysis finds the difference between where you are and where you need to be
 
 ### Gap Discovery Methods
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-handwritten.svg" alt="Handwritten: Gap Discovery Methods" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-handwritten.svg" alt="Handwritten: Gap Discovery Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-diagram.svg" alt="Diagram: Gap Discovery Methods" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-diagram.svg" alt="Diagram: Gap Discovery Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-sticky.svg" alt="Sticky Note: Gap Discovery Methods" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/gap-discovery-methods-sticky.svg" alt="Sticky Note: Gap Discovery Methods" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ Gap analysis finds the difference between where you are and where you need to be
 
 ### The Gap Analysis Spreadsheet
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-handwritten.svg" alt="Handwritten: The Gap Analysis Spreadsheet" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-handwritten.svg" alt="Handwritten: The Gap Analysis Spreadsheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-diagram.svg" alt="Diagram: The Gap Analysis Spreadsheet" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-diagram.svg" alt="Diagram: The Gap Analysis Spreadsheet" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-sticky.svg" alt="Sticky Note: The Gap Analysis Spreadsheet" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-gap-analysis-spreadsheet-sticky.svg" alt="Sticky Note: The Gap Analysis Spreadsheet" width="30%">
 </a>
 
 
@@ -329,14 +329,14 @@ Your strategy must match your current level. The same plan won't work for a begi
 
 ### Strategy by Skill Level
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-handwritten.svg" alt="Handwritten: Strategy by Skill Level" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-handwritten.svg" alt="Handwritten: Strategy by Skill Level" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-diagram.svg" alt="Diagram: Strategy by Skill Level" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-diagram.svg" alt="Diagram: Strategy by Skill Level" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-sticky.svg" alt="Sticky Note: Strategy by Skill Level" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-by-skill-level-sticky.svg" alt="Sticky Note: Strategy by Skill Level" width="30%">
 </a>
 
 
@@ -350,14 +350,14 @@ Your strategy must match your current level. The same plan won't work for a begi
 
 ### The Strategy Creation Framework (SCF)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-handwritten.svg" alt="Handwritten: The Strategy Creation Framework (SCF)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-handwritten.svg" alt="Handwritten: The Strategy Creation Framework (SCF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-diagram.svg" alt="Diagram: The Strategy Creation Framework (SCF)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-diagram.svg" alt="Diagram: The Strategy Creation Framework (SCF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-sticky.svg" alt="Sticky Note: The Strategy Creation Framework (SCF)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-strategy-creation-framework-scf-sticky.svg" alt="Sticky Note: The Strategy Creation Framework (SCF)" width="30%">
 </a>
 
 
@@ -406,14 +406,14 @@ flowchart TD
 
 ### Weekly Time Allocation Calculator
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-handwritten.svg" alt="Handwritten: Weekly Time Allocation Calculator" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-handwritten.svg" alt="Handwritten: Weekly Time Allocation Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-diagram.svg" alt="Diagram: Weekly Time Allocation Calculator" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-diagram.svg" alt="Diagram: Weekly Time Allocation Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-sticky.svg" alt="Sticky Note: Weekly Time Allocation Calculator" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-time-allocation-calculator-sticky.svg" alt="Sticky Note: Weekly Time Allocation Calculator" width="30%">
 </a>
 
 
@@ -480,14 +480,14 @@ A structured preparation system has three nested cycles: daily, weekly, and mont
 
 ### The 3-Cycle System
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-handwritten.svg" alt="Handwritten: The 3-Cycle System" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-handwritten.svg" alt="Handwritten: The 3-Cycle System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-diagram.svg" alt="Diagram: The 3-Cycle System" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-diagram.svg" alt="Diagram: The 3-Cycle System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-sticky.svg" alt="Sticky Note: The 3-Cycle System" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-cycle-system-sticky.svg" alt="Sticky Note: The 3-Cycle System" width="30%">
 </a>
 
 
@@ -518,14 +518,14 @@ flowchart LR
 
 ### Daily Preparation Template (3 hours)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-handwritten.svg" alt="Handwritten: Daily Preparation Template (3 hours)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-handwritten.svg" alt="Handwritten: Daily Preparation Template (3 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-diagram.svg" alt="Diagram: Daily Preparation Template (3 hours)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-diagram.svg" alt="Diagram: Daily Preparation Template (3 hours)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-sticky.svg" alt="Sticky Note: Daily Preparation Template (3 hours)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/daily-preparation-template-3-hours-sticky.svg" alt="Sticky Note: Daily Preparation Template (3 hours)" width="30%">
 </a>
 
 
@@ -539,14 +539,14 @@ flowchart LR
 
 ### Weekly Preparation Template
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-handwritten.svg" alt="Handwritten: Weekly Preparation Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-handwritten.svg" alt="Handwritten: Weekly Preparation Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-diagram.svg" alt="Diagram: Weekly Preparation Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-diagram.svg" alt="Diagram: Weekly Preparation Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-sticky.svg" alt="Sticky Note: Weekly Preparation Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-preparation-template-sticky.svg" alt="Sticky Note: Weekly Preparation Template" width="30%">
 </a>
 
 
@@ -562,14 +562,14 @@ flowchart LR
 
 ### Monthly Preparation Template
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-handwritten.svg" alt="Handwritten: Monthly Preparation Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-handwritten.svg" alt="Handwritten: Monthly Preparation Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-diagram.svg" alt="Diagram: Monthly Preparation Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-diagram.svg" alt="Diagram: Monthly Preparation Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-sticky.svg" alt="Sticky Note: Monthly Preparation Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-preparation-template-sticky.svg" alt="Sticky Note: Monthly Preparation Template" width="30%">
 </a>
 
 
@@ -588,14 +588,14 @@ Tracking the right metrics is essential for knowing if your strategy is working.
 
 ### Input Metrics (What You Do)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-handwritten.svg" alt="Handwritten: Input Metrics (What You Do)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-handwritten.svg" alt="Handwritten: Input Metrics (What You Do)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-diagram.svg" alt="Diagram: Input Metrics (What You Do)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-diagram.svg" alt="Diagram: Input Metrics (What You Do)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-sticky.svg" alt="Sticky Note: Input Metrics (What You Do)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/input-metrics-what-you-do-sticky.svg" alt="Sticky Note: Input Metrics (What You Do)" width="30%">
 </a>
 
 
@@ -609,14 +609,14 @@ Tracking the right metrics is essential for knowing if your strategy is working.
 
 ### Output Metrics (What You Achieve)
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-handwritten.svg" alt="Handwritten: Output Metrics (What You Achieve)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-handwritten.svg" alt="Handwritten: Output Metrics (What You Achieve)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-diagram.svg" alt="Diagram: Output Metrics (What You Achieve)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-diagram.svg" alt="Diagram: Output Metrics (What You Achieve)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-sticky.svg" alt="Sticky Note: Output Metrics (What You Achieve)" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/output-metrics-what-you-achieve-sticky.svg" alt="Sticky Note: Output Metrics (What You Achieve)" width="30%">
 </a>
 
 
@@ -630,14 +630,14 @@ Tracking the right metrics is essential for knowing if your strategy is working.
 
 ### The Progress Dashboard
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-handwritten.svg" alt="Handwritten: The Progress Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-handwritten.svg" alt="Handwritten: The Progress Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-diagram.svg" alt="Diagram: The Progress Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-diagram.svg" alt="Diagram: The Progress Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-sticky.svg" alt="Sticky Note: The Progress Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-progress-dashboard-sticky.svg" alt="Sticky Note: The Progress Dashboard" width="30%">
 </a>
 
 
@@ -692,14 +692,14 @@ console.log(analyzeTrend(myProgress));
 
 ### Key Metrics Dashboard
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-handwritten.svg" alt="Handwritten: Key Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-handwritten.svg" alt="Handwritten: Key Metrics Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-diagram.svg" alt="Diagram: Key Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-diagram.svg" alt="Diagram: Key Metrics Dashboard" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-sticky.svg" alt="Sticky Note: Key Metrics Dashboard" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/key-metrics-dashboard-sticky.svg" alt="Sticky Note: Key Metrics Dashboard" width="30%">
 </a>
 
 
@@ -734,14 +734,14 @@ Plateaus are normal in any learning journey. The key is recognizing them and kno
 
 ### The Dreyfus Model of Skill Acquisition
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-handwritten.svg" alt="Handwritten: The Dreyfus Model of Skill Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-handwritten.svg" alt="Handwritten: The Dreyfus Model of Skill Acquisition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-diagram.svg" alt="Diagram: The Dreyfus Model of Skill Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-diagram.svg" alt="Diagram: The Dreyfus Model of Skill Acquisition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-sticky.svg" alt="Sticky Note: The Dreyfus Model of Skill Acquisition" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-dreyfus-model-of-skill-acquisition-sticky.svg" alt="Sticky Note: The Dreyfus Model of Skill Acquisition" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@ Plateaus are normal in any learning journey. The key is recognizing them and kno
 
 ### Breaking Through Plateaus
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-handwritten.svg" alt="Handwritten: Breaking Through Plateaus" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-handwritten.svg" alt="Handwritten: Breaking Through Plateaus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-diagram.svg" alt="Diagram: Breaking Through Plateaus" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-diagram.svg" alt="Diagram: Breaking Through Plateaus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-sticky.svg" alt="Sticky Note: Breaking Through Plateaus" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/breaking-through-plateaus-sticky.svg" alt="Sticky Note: Breaking Through Plateaus" width="30%">
 </a>
 
 
@@ -776,14 +776,14 @@ Plateaus are normal in any learning journey. The key is recognizing them and kno
 
 ### The 3-Day Plateau Break Protocol
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-handwritten.svg" alt="Handwritten: The 3-Day Plateau Break Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-handwritten.svg" alt="Handwritten: The 3-Day Plateau Break Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-diagram.svg" alt="Diagram: The 3-Day Plateau Break Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-diagram.svg" alt="Diagram: The 3-Day Plateau Break Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-sticky.svg" alt="Sticky Note: The 3-Day Plateau Break Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-3-day-plateau-break-protocol-sticky.svg" alt="Sticky Note: The 3-Day Plateau Break Protocol" width="30%">
 </a>
 
 
@@ -816,14 +816,14 @@ The OODA loop (Observe, Orient, Decide, Act) was developed by military strategis
 
 ### The OODA Learning Loop
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-handwritten.svg" alt="Handwritten: The OODA Learning Loop" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-handwritten.svg" alt="Handwritten: The OODA Learning Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-diagram.svg" alt="Diagram: The OODA Learning Loop" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-diagram.svg" alt="Diagram: The OODA Learning Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-sticky.svg" alt="Sticky Note: The OODA Learning Loop" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-ooda-learning-loop-sticky.svg" alt="Sticky Note: The OODA Learning Loop" width="30%">
 </a>
 
 
@@ -837,14 +837,14 @@ flowchart TD
 
 ### Applied to Exam Preparation
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-handwritten.svg" alt="Handwritten: Applied to Exam Preparation" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-handwritten.svg" alt="Handwritten: Applied to Exam Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-diagram.svg" alt="Diagram: Applied to Exam Preparation" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-diagram.svg" alt="Diagram: Applied to Exam Preparation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-sticky.svg" alt="Sticky Note: Applied to Exam Preparation" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/applied-to-exam-preparation-sticky.svg" alt="Sticky Note: Applied to Exam Preparation" width="30%">
 </a>
 
 
@@ -857,14 +857,14 @@ flowchart TD
 
 ### Weekly OODA Review Protocol
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-handwritten.svg" alt="Handwritten: Weekly OODA Review Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-handwritten.svg" alt="Handwritten: Weekly OODA Review Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-diagram.svg" alt="Diagram: Weekly OODA Review Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-diagram.svg" alt="Diagram: Weekly OODA Review Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-sticky.svg" alt="Sticky Note: Weekly OODA Review Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/weekly-ooda-review-protocol-sticky.svg" alt="Sticky Note: Weekly OODA Review Protocol" width="30%">
 </a>
 
 
@@ -908,14 +908,14 @@ Feedback loops are the engine of improvement. The faster and more accurate your 
 
 ### Types of Feedback Loops
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-handwritten.svg" alt="Handwritten: Types of Feedback Loops" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-handwritten.svg" alt="Handwritten: Types of Feedback Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-diagram.svg" alt="Diagram: Types of Feedback Loops" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-diagram.svg" alt="Diagram: Types of Feedback Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-sticky.svg" alt="Sticky Note: Types of Feedback Loops" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/types-of-feedback-loops-sticky.svg" alt="Sticky Note: Types of Feedback Loops" width="30%">
 </a>
 
 
@@ -929,14 +929,14 @@ Feedback loops are the engine of improvement. The faster and more accurate your 
 
 ### Building Fast Feedback Into Your Study
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-handwritten.svg" alt="Handwritten: Building Fast Feedback Into Your Study" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-handwritten.svg" alt="Handwritten: Building Fast Feedback Into Your Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-diagram.svg" alt="Diagram: Building Fast Feedback Into Your Study" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-diagram.svg" alt="Diagram: Building Fast Feedback Into Your Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-sticky.svg" alt="Sticky Note: Building Fast Feedback Into Your Study" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/building-fast-feedback-into-your-study-sticky.svg" alt="Sticky Note: Building Fast Feedback Into Your Study" width="30%">
 </a>
 
 
@@ -952,14 +952,14 @@ Feedback loops are the engine of improvement. The faster and more accurate your 
 
 ### The Feedback Quality Formula
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-handwritten.svg" alt="Handwritten: The Feedback Quality Formula" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-handwritten.svg" alt="Handwritten: The Feedback Quality Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-diagram.svg" alt="Diagram: The Feedback Quality Formula" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-diagram.svg" alt="Diagram: The Feedback Quality Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-sticky.svg" alt="Sticky Note: The Feedback Quality Formula" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-feedback-quality-formula-sticky.svg" alt="Sticky Note: The Feedback Quality Formula" width="30%">
 </a>
 
 
@@ -991,14 +991,14 @@ Combining everything in this chapter into one actionable plan.
 
 ### The Complete 7-Step Personal Learning Plan
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-handwritten.svg" alt="Handwritten: The Complete 7-Step Personal Learning Plan" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-handwritten.svg" alt="Handwritten: The Complete 7-Step Personal Learning Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-diagram.svg" alt="Diagram: The Complete 7-Step Personal Learning Plan" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-diagram.svg" alt="Diagram: The Complete 7-Step Personal Learning Plan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-sticky.svg" alt="Sticky Note: The Complete 7-Step Personal Learning Plan" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-complete-7-step-personal-learning-plan-sticky.svg" alt="Sticky Note: The Complete 7-Step Personal Learning Plan" width="30%">
 </a>
 
 
@@ -1065,14 +1065,14 @@ This repository is designed to support every stage of your preparation journey.
 
 ### Preparing with This Repository
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-handwritten.svg" alt="Handwritten: Preparing with This Repository" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-handwritten.svg" alt="Handwritten: Preparing with This Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-diagram.svg" alt="Diagram: Preparing with This Repository" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-diagram.svg" alt="Diagram: Preparing with This Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-sticky.svg" alt="Sticky Note: Preparing with This Repository" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/preparing-with-this-repository-sticky.svg" alt="Sticky Note: Preparing with This Repository" width="30%">
 </a>
 
 
@@ -1091,14 +1091,14 @@ This repository is designed to support every stage of your preparation journey.
 
 ### Recommended Path Through This Repository
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-handwritten.svg" alt="Handwritten: Recommended Path Through This Repository" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-handwritten.svg" alt="Handwritten: Recommended Path Through This Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-diagram.svg" alt="Diagram: Recommended Path Through This Repository" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-diagram.svg" alt="Diagram: Recommended Path Through This Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-sticky.svg" alt="Sticky Note: Recommended Path Through This Repository" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/recommended-path-through-this-repository-sticky.svg" alt="Sticky Note: Recommended Path Through This Repository" width="30%">
 </a>
 
 
@@ -1119,14 +1119,14 @@ The biggest challenge with self-assessment is bias. Most people overestimate or 
 
 ### Common Self-Assessment Biases
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-handwritten.svg" alt="Handwritten: Common Self-Assessment Biases" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-handwritten.svg" alt="Handwritten: Common Self-Assessment Biases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-diagram.svg" alt="Diagram: Common Self-Assessment Biases" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-diagram.svg" alt="Diagram: Common Self-Assessment Biases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-sticky.svg" alt="Sticky Note: Common Self-Assessment Biases" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/common-self-assessment-biases-sticky.svg" alt="Sticky Note: Common Self-Assessment Biases" width="30%">
 </a>
 
 
@@ -1139,14 +1139,14 @@ The biggest challenge with self-assessment is bias. Most people overestimate or 
 
 ### Calibration Protocol
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-handwritten.svg" alt="Handwritten: Calibration Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-handwritten.svg" alt="Handwritten: Calibration Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-diagram.svg" alt="Diagram: Calibration Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-diagram.svg" alt="Diagram: Calibration Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-sticky.svg" alt="Sticky Note: Calibration Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/calibration-protocol-sticky.svg" alt="Sticky Note: Calibration Protocol" width="30%">
 </a>
 
 
@@ -1171,14 +1171,14 @@ Life happens. Exams get postponed. You get sick. Motivation dips. Your strategy 
 
 ### The Adaptive Strategy Framework
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-handwritten.svg" alt="Handwritten: The Adaptive Strategy Framework" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-handwritten.svg" alt="Handwritten: The Adaptive Strategy Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-diagram.svg" alt="Diagram: The Adaptive Strategy Framework" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-diagram.svg" alt="Diagram: The Adaptive Strategy Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-sticky.svg" alt="Sticky Note: The Adaptive Strategy Framework" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-adaptive-strategy-framework-sticky.svg" alt="Sticky Note: The Adaptive Strategy Framework" width="30%">
 </a>
 
 
@@ -1199,14 +1199,14 @@ flowchart TD
 
 ### Strategy Adjustment Templates
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-handwritten.svg" alt="Handwritten: Strategy Adjustment Templates" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-handwritten.svg" alt="Handwritten: Strategy Adjustment Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-diagram.svg" alt="Diagram: Strategy Adjustment Templates" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-diagram.svg" alt="Diagram: Strategy Adjustment Templates" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-sticky.svg" alt="Sticky Note: Strategy Adjustment Templates" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/strategy-adjustment-templates-sticky.svg" alt="Sticky Note: Strategy Adjustment Templates" width="30%">
 </a>
 
 
@@ -1227,14 +1227,14 @@ The monthly review is your most important feedback loop.
 
 ### Monthly Review Template
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-handwritten.svg" alt="Handwritten: Monthly Review Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-handwritten.svg" alt="Handwritten: Monthly Review Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-diagram.svg" alt="Diagram: Monthly Review Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-diagram.svg" alt="Diagram: Monthly Review Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-sticky.svg" alt="Sticky Note: Monthly Review Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/monthly-review-template-sticky.svg" alt="Sticky Note: Monthly Review Template" width="30%">
 </a>
 
 
@@ -1299,14 +1299,14 @@ Many successful candidates needed multiple attempts. Here's how to make each att
 
 ### After a Failed Attempt — First 48 Hours
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-handwritten.svg" alt="Handwritten: After a Failed Attempt — First 48 Hours" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-handwritten.svg" alt="Handwritten: After a Failed Attempt — First 48 Hours" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-diagram.svg" alt="Diagram: After a Failed Attempt — First 48 Hours" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-diagram.svg" alt="Diagram: After a Failed Attempt — First 48 Hours" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-sticky.svg" alt="Sticky Note: After a Failed Attempt — First 48 Hours" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/after-a-failed-attempt-first-48-hours-sticky.svg" alt="Sticky Note: After a Failed Attempt — First 48 Hours" width="30%">
 </a>
 
 
@@ -1326,14 +1326,14 @@ HOURS 24-48: ANALYZE
 
 ### Section-Wise Gap Analysis After Failure
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-handwritten.svg" alt="Handwritten: Section-Wise Gap Analysis After Failure" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-handwritten.svg" alt="Handwritten: Section-Wise Gap Analysis After Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-diagram.svg" alt="Diagram: Section-Wise Gap Analysis After Failure" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-diagram.svg" alt="Diagram: Section-Wise Gap Analysis After Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-sticky.svg" alt="Sticky Note: Section-Wise Gap Analysis After Failure" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/section-wise-gap-analysis-after-failure-sticky.svg" alt="Sticky Note: Section-Wise Gap Analysis After Failure" width="30%">
 </a>
 
 
@@ -1347,14 +1347,14 @@ HOURS 24-48: ANALYZE
 
 ### Retake Strategy
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-handwritten.svg" alt="Handwritten: Retake Strategy" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-handwritten.svg" alt="Handwritten: Retake Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-diagram.svg" alt="Diagram: Retake Strategy" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-diagram.svg" alt="Diagram: Retake Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-sticky.svg" alt="Sticky Note: Retake Strategy" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/retake-strategy-sticky.svg" alt="Sticky Note: Retake Strategy" width="30%">
 </a>
 
 
@@ -1374,14 +1374,14 @@ If you're mentoring or coaching someone, use this framework.
 
 ### Mentoring Assessment Protocol
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-handwritten.svg" alt="Handwritten: Mentoring Assessment Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-handwritten.svg" alt="Handwritten: Mentoring Assessment Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-diagram.svg" alt="Diagram: Mentoring Assessment Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-diagram.svg" alt="Diagram: Mentoring Assessment Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-sticky.svg" alt="Sticky Note: Mentoring Assessment Protocol" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/mentoring-assessment-protocol-sticky.svg" alt="Sticky Note: Mentoring Assessment Protocol" width="30%">
 </a>
 
 
@@ -1397,14 +1397,14 @@ If you're mentoring or coaching someone, use this framework.
 
 ### Creating a Plan for Someone Else
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-handwritten.svg" alt="Handwritten: Creating a Plan for Someone Else" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-handwritten.svg" alt="Handwritten: Creating a Plan for Someone Else" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-diagram.svg" alt="Diagram: Creating a Plan for Someone Else" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-diagram.svg" alt="Diagram: Creating a Plan for Someone Else" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-sticky.svg" alt="Sticky Note: Creating a Plan for Someone Else" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/creating-a-plan-for-someone-else-sticky.svg" alt="Sticky Note: Creating a Plan for Someone Else" width="30%">
 </a>
 
 
@@ -1426,14 +1426,14 @@ When you have multiple goals (job + exam + health + relationships), use the Eise
 
 ### The Priority Matrix
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-handwritten.svg" alt="Handwritten: The Priority Matrix" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-handwritten.svg" alt="Handwritten: The Priority Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-diagram.svg" alt="Diagram: The Priority Matrix" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-diagram.svg" alt="Diagram: The Priority Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-sticky.svg" alt="Sticky Note: The Priority Matrix" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-priority-matrix-sticky.svg" alt="Sticky Note: The Priority Matrix" width="30%">
 </a>
 
 
@@ -1449,14 +1449,14 @@ flowchart TD
 
 ### Time Allocation for Working Professionals
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-handwritten.svg" alt="Handwritten: Time Allocation for Working Professionals" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-handwritten.svg" alt="Handwritten: Time Allocation for Working Professionals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-diagram.svg" alt="Diagram: Time Allocation for Working Professionals" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-diagram.svg" alt="Diagram: Time Allocation for Working Professionals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-sticky.svg" alt="Sticky Note: Time Allocation for Working Professionals" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/time-allocation-for-working-professionals-sticky.svg" alt="Sticky Note: Time Allocation for Working Professionals" width="30%">
 </a>
 
 
@@ -1476,14 +1476,14 @@ A visual calendar helps you see the big picture and stay motivated.
 
 ### 6-Month Preparation Calendar Template
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-handwritten.svg" alt="Handwritten: 6-Month Preparation Calendar Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-handwritten.svg" alt="Handwritten: 6-Month Preparation Calendar Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-diagram.svg" alt="Diagram: 6-Month Preparation Calendar Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-diagram.svg" alt="Diagram: 6-Month Preparation Calendar Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-sticky.svg" alt="Sticky Note: 6-Month Preparation Calendar Template" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/6-month-preparation-calendar-template-sticky.svg" alt="Sticky Note: 6-Month Preparation Calendar Template" width="30%">
 </a>
 
 
@@ -1531,14 +1531,14 @@ Long-term preparation requires motivation management as much as knowledge manage
 
 ### The Motivation Curve
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-handwritten.svg" alt="Handwritten: The Motivation Curve" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-handwritten.svg" alt="Handwritten: The Motivation Curve" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-diagram.svg" alt="Diagram: The Motivation Curve" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-diagram.svg" alt="Diagram: The Motivation Curve" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-sticky.svg" alt="Sticky Note: The Motivation Curve" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-motivation-curve-sticky.svg" alt="Sticky Note: The Motivation Curve" width="30%">
 </a>
 
 
@@ -1552,14 +1552,14 @@ flowchart LR
 
 ### Motivation Maintenance Techniques
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-handwritten.svg" alt="Handwritten: Motivation Maintenance Techniques" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-handwritten.svg" alt="Handwritten: Motivation Maintenance Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-diagram.svg" alt="Diagram: Motivation Maintenance Techniques" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-diagram.svg" alt="Diagram: Motivation Maintenance Techniques" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-sticky.svg" alt="Sticky Note: Motivation Maintenance Techniques" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/motivation-maintenance-techniques-sticky.svg" alt="Sticky Note: Motivation Maintenance Techniques" width="30%">
 </a>
 
 
@@ -1581,14 +1581,14 @@ All the tools in this repository are designed to work together as a complete pre
 
 ### The Integrated System
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-handwritten.svg" alt="Handwritten: The Integrated System" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-handwritten.svg" alt="Handwritten: The Integrated System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-diagram.svg" alt="Diagram: The Integrated System" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-diagram.svg" alt="Diagram: The Integrated System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-sticky.svg" alt="Sticky Note: The Integrated System" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/the-integrated-system-sticky.svg" alt="Sticky Note: The Integrated System" width="30%">
 </a>
 
 
@@ -1618,14 +1618,14 @@ flowchart TD
 
 ### Quick Reference Card
 
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-handwritten.svg" alt="Handwritten: Quick Reference Card" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-handwritten.svg" alt="Handwritten: Quick Reference Card" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-diagram.svg" alt="Diagram: Quick Reference Card" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-diagram.svg" alt="Diagram: Quick Reference Card" width="30%">
 </a>
-<a href="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-sticky.svg" alt="Sticky Note: Quick Reference Card" width="30%">
+<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-16-self-assessment-strategy/quick-reference-card-sticky.svg" alt="Sticky Note: Quick Reference Card" width="30%">
 </a>
 
 

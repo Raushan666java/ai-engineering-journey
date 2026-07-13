@@ -84,14 +84,14 @@ flowchart TD
 
 ### 1. Kafka Core Concepts
 
-<a href="../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-handwritten.svg" alt="Handwritten: 1. Kafka Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-handwritten.svg" alt="Handwritten: 1. Kafka Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-diagram.svg" alt="Diagram: 1. Kafka Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-diagram.svg" alt="Diagram: 1. Kafka Core Concepts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-sticky.svg" alt="Sticky Note: 1. Kafka Core Concepts" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/1-kafka-core-concepts-sticky.svg" alt="Sticky Note: 1. Kafka Core Concepts" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ Spring Boot with Kafka typically uses the `spring-kafka` library:
 
 ### 2. Topic Configuration
 
-<a href="../../assets/images/diagrams/java/36-kafka/2-topic-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/2-topic-configuration-handwritten.svg" alt="Handwritten: 2. Topic Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/2-topic-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/2-topic-configuration-handwritten.svg" alt="Handwritten: 2. Topic Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/2-topic-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/2-topic-configuration-diagram.svg" alt="Diagram: 2. Topic Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/2-topic-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/2-topic-configuration-diagram.svg" alt="Diagram: 2. Topic Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/2-topic-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/2-topic-configuration-sticky.svg" alt="Sticky Note: 2. Topic Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/2-topic-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/2-topic-configuration-sticky.svg" alt="Sticky Note: 2. Topic Configuration" width="30%">
 </a>
 
 
@@ -205,14 +205,14 @@ Key topic configurations:
 
 ### 3. Producer Configuration
 
-<a href="../../assets/images/diagrams/java/36-kafka/3-producer-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/3-producer-configuration-handwritten.svg" alt="Handwritten: 3. Producer Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/3-producer-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/3-producer-configuration-handwritten.svg" alt="Handwritten: 3. Producer Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/3-producer-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/3-producer-configuration-diagram.svg" alt="Diagram: 3. Producer Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/3-producer-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/3-producer-configuration-diagram.svg" alt="Diagram: 3. Producer Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/3-producer-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/3-producer-configuration-sticky.svg" alt="Sticky Note: 3. Producer Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/3-producer-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/3-producer-configuration-sticky.svg" alt="Sticky Note: 3. Producer Configuration" width="30%">
 </a>
 
 
@@ -302,14 +302,14 @@ producerProps.put(ProducerConfig.MAX_BLOCK_MS_CONFIG, 60000);         // Block f
 
 ### 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages
 
-<a href="../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-handwritten.svg" alt="Handwritten: 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-handwritten.svg" alt="Handwritten: 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-diagram.svg" alt="Diagram: 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-diagram.svg" alt="Diagram: 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-sticky.svg" alt="Sticky Note: 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/4-kafkatemplate-producing-messages-sticky.svg" alt="Sticky Note: 4. KafkaTemplate Ã¢â‚¬â€ Producing Messages" width="30%">
 </a>
 
 
@@ -380,14 +380,14 @@ public class OrderProducer {
 
 ### 5. Custom Partitioner
 
-<a href="../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-handwritten.svg" alt="Handwritten: 5. Custom Partitioner" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-handwritten.svg" alt="Handwritten: 5. Custom Partitioner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-diagram.svg" alt="Diagram: 5. Custom Partitioner" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-diagram.svg" alt="Diagram: 5. Custom Partitioner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-sticky.svg" alt="Sticky Note: 5. Custom Partitioner" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/5-custom-partitioner-sticky.svg" alt="Sticky Note: 5. Custom Partitioner" width="30%">
 </a>
 
 
@@ -442,14 +442,14 @@ public ProducerFactory<String, Order> partitionedProducerFactory() {
 
 ### 6. Consumer Configuration
 
-<a href="../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-handwritten.svg" alt="Handwritten: 6. Consumer Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-handwritten.svg" alt="Handwritten: 6. Consumer Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-diagram.svg" alt="Diagram: 6. Consumer Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-diagram.svg" alt="Diagram: 6. Consumer Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-sticky.svg" alt="Sticky Note: 6. Consumer Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/6-consumer-configuration-sticky.svg" alt="Sticky Note: 6. Consumer Configuration" width="30%">
 </a>
 
 
@@ -548,14 +548,14 @@ consumerProps.put(ConsumerConfig.PARTITION_ASSIGNMENT_STRATEGY_CONFIG,
 
 ### 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages
 
-<a href="../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-handwritten.svg" alt="Handwritten: 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-handwritten.svg" alt="Handwritten: 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-diagram.svg" alt="Diagram: 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-diagram.svg" alt="Diagram: 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-sticky.svg" alt="Sticky Note: 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/7-kafkalistener-consuming-messages-sticky.svg" alt="Sticky Note: 7. @KafkaListener Ã¢â‚¬â€ Consuming Messages" width="30%">
 </a>
 
 
@@ -645,14 +645,14 @@ public class OrderConsumer {
 
 ### 8. AckMode Strategies
 
-<a href="../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-handwritten.svg" alt="Handwritten: 8. AckMode Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-handwritten.svg" alt="Handwritten: 8. AckMode Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-diagram.svg" alt="Diagram: 8. AckMode Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-diagram.svg" alt="Diagram: 8. AckMode Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-sticky.svg" alt="Sticky Note: 8. AckMode Strategies" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/8-ackmode-strategies-sticky.svg" alt="Sticky Note: 8. AckMode Strategies" width="30%">
 </a>
 
 
@@ -730,14 +730,14 @@ public class AckModeConfig {
 
 ### 9. Seek Operations
 
-<a href="../../assets/images/diagrams/java/36-kafka/9-seek-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/9-seek-operations-handwritten.svg" alt="Handwritten: 9. Seek Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/9-seek-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/9-seek-operations-handwritten.svg" alt="Handwritten: 9. Seek Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/9-seek-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/9-seek-operations-diagram.svg" alt="Diagram: 9. Seek Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/9-seek-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/9-seek-operations-diagram.svg" alt="Diagram: 9. Seek Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/9-seek-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/9-seek-operations-sticky.svg" alt="Sticky Note: 9. Seek Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/9-seek-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/9-seek-operations-sticky.svg" alt="Sticky Note: 9. Seek Operations" width="30%">
 </a>
 
 
@@ -820,14 +820,14 @@ public class SeekErrorHandler {
 
 ### 10. Error Handling
 
-<a href="../../assets/images/diagrams/java/36-kafka/10-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/10-error-handling-handwritten.svg" alt="Handwritten: 10. Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/10-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/10-error-handling-handwritten.svg" alt="Handwritten: 10. Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/10-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/10-error-handling-diagram.svg" alt="Diagram: 10. Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/10-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/10-error-handling-diagram.svg" alt="Diagram: 10. Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/10-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/10-error-handling-sticky.svg" alt="Sticky Note: 10. Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/10-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/10-error-handling-sticky.svg" alt="Sticky Note: 10. Error Handling" width="30%">
 </a>
 
 
@@ -1023,14 +1023,14 @@ public class CustomKafkaErrorHandler implements CommonErrorHandler {
 
 ### 11. Exactly-Once Semantics
 
-<a href="../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-handwritten.svg" alt="Handwritten: 11. Exactly-Once Semantics" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-handwritten.svg" alt="Handwritten: 11. Exactly-Once Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-diagram.svg" alt="Diagram: 11. Exactly-Once Semantics" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-diagram.svg" alt="Diagram: 11. Exactly-Once Semantics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-sticky.svg" alt="Sticky Note: 11. Exactly-Once Semantics" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/11-exactly-once-semantics-sticky.svg" alt="Sticky Note: 11. Exactly-Once Semantics" width="30%">
 </a>
 
 
@@ -1164,14 +1164,14 @@ public class ExactlyOnceConsumer {
 
 ### 12. Schema Registry Integration
 
-<a href="../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-handwritten.svg" alt="Handwritten: 12. Schema Registry Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-handwritten.svg" alt="Handwritten: 12. Schema Registry Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-diagram.svg" alt="Diagram: 12. Schema Registry Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-diagram.svg" alt="Diagram: 12. Schema Registry Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-sticky.svg" alt="Sticky Note: 12. Schema Registry Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/12-schema-registry-integration-sticky.svg" alt="Sticky Note: 12. Schema Registry Integration" width="30%">
 </a>
 
 
@@ -1297,14 +1297,14 @@ public class JsonSchemaConfig {
 
 ### 13. Kafka Streams (KStreams)
 
-<a href="../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-handwritten.svg" alt="Handwritten: 13. Kafka Streams (KStreams)" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-handwritten.svg" alt="Handwritten: 13. Kafka Streams (KStreams)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-diagram.svg" alt="Diagram: 13. Kafka Streams (KStreams)" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-diagram.svg" alt="Diagram: 13. Kafka Streams (KStreams)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-sticky.svg" alt="Sticky Note: 13. Kafka Streams (KStreams)" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/13-kafka-streams-kstreams-sticky.svg" alt="Sticky Note: 13. Kafka Streams (KStreams)" width="30%">
 </a>
 
 
@@ -1556,14 +1556,14 @@ public class WindowedOperations {
 
 ### 14. KTable and GlobalKTable
 
-<a href="../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-handwritten.svg" alt="Handwritten: 14. KTable and GlobalKTable" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-handwritten.svg" alt="Handwritten: 14. KTable and GlobalKTable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-diagram.svg" alt="Diagram: 14. KTable and GlobalKTable" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-diagram.svg" alt="Diagram: 14. KTable and GlobalKTable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-sticky.svg" alt="Sticky Note: 14. KTable and GlobalKTable" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/14-ktable-and-globalktable-sticky.svg" alt="Sticky Note: 14. KTable and GlobalKTable" width="30%">
 </a>
 
 
@@ -1619,14 +1619,14 @@ public class TableOperations {
 
 ### 15. State Stores
 
-<a href="../../assets/images/diagrams/java/36-kafka/15-state-stores-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/15-state-stores-handwritten.svg" alt="Handwritten: 15. State Stores" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/15-state-stores-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/15-state-stores-handwritten.svg" alt="Handwritten: 15. State Stores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/15-state-stores-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/15-state-stores-diagram.svg" alt="Diagram: 15. State Stores" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/15-state-stores-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/15-state-stores-diagram.svg" alt="Diagram: 15. State Stores" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/15-state-stores-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/15-state-stores-sticky.svg" alt="Sticky Note: 15. State Stores" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/15-state-stores-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/15-state-stores-sticky.svg" alt="Sticky Note: 15. State Stores" width="30%">
 </a>
 
 
@@ -1683,14 +1683,14 @@ public class ProcessorWithState {
 
 ### 16. Full Application Properties
 
-<a href="../../assets/images/diagrams/java/36-kafka/16-full-application-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/16-full-application-properties-handwritten.svg" alt="Handwritten: 16. Full Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/16-full-application-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/16-full-application-properties-handwritten.svg" alt="Handwritten: 16. Full Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/16-full-application-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/16-full-application-properties-diagram.svg" alt="Diagram: 16. Full Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/16-full-application-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/16-full-application-properties-diagram.svg" alt="Diagram: 16. Full Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/16-full-application-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/16-full-application-properties-sticky.svg" alt="Sticky Note: 16. Full Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/16-full-application-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/16-full-application-properties-sticky.svg" alt="Sticky Note: 16. Full Application Properties" width="30%">
 </a>
 
 
@@ -1739,14 +1739,14 @@ spring:
 
 ### 17. Testing Kafka
 
-<a href="../../assets/images/diagrams/java/36-kafka/17-testing-kafka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/17-testing-kafka-handwritten.svg" alt="Handwritten: 17. Testing Kafka" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/17-testing-kafka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/17-testing-kafka-handwritten.svg" alt="Handwritten: 17. Testing Kafka" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/17-testing-kafka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/17-testing-kafka-diagram.svg" alt="Diagram: 17. Testing Kafka" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/17-testing-kafka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/17-testing-kafka-diagram.svg" alt="Diagram: 17. Testing Kafka" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/36-kafka/17-testing-kafka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/36-kafka/17-testing-kafka-sticky.svg" alt="Sticky Note: 17. Testing Kafka" width="30%">
+<a href="../../../assets/images/diagrams/java/36-kafka/17-testing-kafka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/36-kafka/17-testing-kafka-sticky.svg" alt="Sticky Note: 17. Testing Kafka" width="30%">
 </a>
 
 

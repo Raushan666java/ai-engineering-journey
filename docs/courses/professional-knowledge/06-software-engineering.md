@@ -46,14 +46,14 @@ flowchart LR
 
 ### V-Model Testing Correlation
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-handwritten.svg" alt="Handwritten: V-Model Testing Correlation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-handwritten.svg" alt="Handwritten: V-Model Testing Correlation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-diagram.svg" alt="Diagram: V-Model Testing Correlation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-diagram.svg" alt="Diagram: V-Model Testing Correlation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-sticky.svg" alt="Sticky Note: V-Model Testing Correlation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/v-model-testing-correlation-sticky.svg" alt="Sticky Note: V-Model Testing Correlation" width="30%">
 </a>
 
 ```
@@ -72,14 +72,14 @@ Implementation → Unit Testing
 
 ### Symbols (Yourdon/De Marco)
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-handwritten.svg" alt="Handwritten: Symbols (Yourdon/De Marco)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-handwritten.svg" alt="Handwritten: Symbols (Yourdon/De Marco)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-diagram.svg" alt="Diagram: Symbols (Yourdon/De Marco)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-diagram.svg" alt="Diagram: Symbols (Yourdon/De Marco)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-sticky.svg" alt="Sticky Note: Symbols (Yourdon/De Marco)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/symbols-yourdon-de-marco-sticky.svg" alt="Sticky Note: Symbols (Yourdon/De Marco)" width="30%">
 </a>
 
 | Symbol | Name | Meaning |
@@ -91,14 +91,14 @@ Implementation → Unit Testing
 
 ### DFD Levels
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-handwritten.svg" alt="Handwritten: DFD Levels" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-handwritten.svg" alt="Handwritten: DFD Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-diagram.svg" alt="Diagram: DFD Levels" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-diagram.svg" alt="Diagram: DFD Levels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-sticky.svg" alt="Sticky Note: DFD Levels" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-levels-sticky.svg" alt="Sticky Note: DFD Levels" width="30%">
 </a>
 
 
@@ -117,14 +117,14 @@ Implementation → Unit Testing
 
 ### DFD vs Flowchart
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-handwritten.svg" alt="Handwritten: DFD vs Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-handwritten.svg" alt="Handwritten: DFD vs Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-diagram.svg" alt="Diagram: DFD vs Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-diagram.svg" alt="Diagram: DFD vs Flowchart" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-sticky.svg" alt="Sticky Note: DFD vs Flowchart" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-vs-flowchart-sticky.svg" alt="Sticky Note: DFD vs Flowchart" width="30%">
 </a>
 
 | DFD | Flowchart |
@@ -139,14 +139,14 @@ Implementation → Unit Testing
 
 ### IEEE 830 SRS Components
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-handwritten.svg" alt="Handwritten: IEEE 830 SRS Components" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-handwritten.svg" alt="Handwritten: IEEE 830 SRS Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-diagram.svg" alt="Diagram: IEEE 830 SRS Components" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-diagram.svg" alt="Diagram: IEEE 830 SRS Components" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-sticky.svg" alt="Sticky Note: IEEE 830 SRS Components" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-components-sticky.svg" alt="Sticky Note: IEEE 830 SRS Components" width="30%">
 </a>
 
 1. **Introduction:** Purpose, scope, definitions, overview
@@ -156,14 +156,14 @@ Implementation → Unit Testing
 
 ### Functional vs Non-Functional Requirements
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-handwritten.svg" alt="Handwritten: Functional vs Non-Functional Requirements" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-handwritten.svg" alt="Handwritten: Functional vs Non-Functional Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-diagram.svg" alt="Diagram: Functional vs Non-Functional Requirements" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-diagram.svg" alt="Diagram: Functional vs Non-Functional Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-sticky.svg" alt="Sticky Note: Functional vs Non-Functional Requirements" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/functional-vs-non-functional-requirements-sticky.svg" alt="Sticky Note: Functional vs Non-Functional Requirements" width="30%">
 </a>
 
 | Functional | Non-Functional |
@@ -178,14 +178,14 @@ Implementation → Unit Testing
 
 ### Testing Levels (V-Model)
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-handwritten.svg" alt="Handwritten: Testing Levels (V-Model)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-handwritten.svg" alt="Handwritten: Testing Levels (V-Model)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-diagram.svg" alt="Diagram: Testing Levels (V-Model)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-diagram.svg" alt="Diagram: Testing Levels (V-Model)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-sticky.svg" alt="Sticky Note: Testing Levels (V-Model)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/testing-levels-v-model-sticky.svg" alt="Sticky Note: Testing Levels (V-Model)" width="30%">
 </a>
 
 
@@ -199,14 +199,14 @@ Implementation → Unit Testing
 
 ### Black-Box Testing
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-handwritten.svg" alt="Handwritten: Black-Box Testing" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-handwritten.svg" alt="Handwritten: Black-Box Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-diagram.svg" alt="Diagram: Black-Box Testing" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-diagram.svg" alt="Diagram: Black-Box Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-sticky.svg" alt="Sticky Note: Black-Box Testing" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/black-box-testing-sticky.svg" alt="Sticky Note: Black-Box Testing" width="30%">
 </a>
 
 Tests functionality without internal knowledge.
@@ -220,14 +220,14 @@ Tests functionality without internal knowledge.
 
 ### White-Box Testing
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-handwritten.svg" alt="Handwritten: White-Box Testing" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-handwritten.svg" alt="Handwritten: White-Box Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-diagram.svg" alt="Diagram: White-Box Testing" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-diagram.svg" alt="Diagram: White-Box Testing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-sticky.svg" alt="Sticky Note: White-Box Testing" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/white-box-testing-sticky.svg" alt="Sticky Note: White-Box Testing" width="30%">
 </a>
 
 Tests internal logic and code paths.
@@ -242,14 +242,14 @@ Tests internal logic and code paths.
 
 ### McCabe's Cyclomatic Complexity
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-handwritten.svg" alt="Handwritten: McCabe's Cyclomatic Complexity" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-handwritten.svg" alt="Handwritten: McCabe's Cyclomatic Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-diagram.svg" alt="Diagram: McCabe's Cyclomatic Complexity" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-diagram.svg" alt="Diagram: McCabe's Cyclomatic Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-sticky.svg" alt="Sticky Note: McCabe's Cyclomatic Complexity" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/mccabe-s-cyclomatic-complexity-sticky.svg" alt="Sticky Note: McCabe's Cyclomatic Complexity" width="30%">
 </a>
 
 ```
@@ -283,14 +283,14 @@ Cyclomatic complexity = 3 predicates + 1 = **4**. This means we need at least 4 
 
 ### COCOMO Model Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-handwritten.svg" alt="Handwritten: COCOMO Model Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-handwritten.svg" alt="Handwritten: COCOMO Model Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-diagram.svg" alt="Diagram: COCOMO Model Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-diagram.svg" alt="Diagram: COCOMO Model Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-sticky.svg" alt="Sticky Note: COCOMO Model Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-model-types-sticky.svg" alt="Sticky Note: COCOMO Model Types" width="30%">
 </a>
 
 | Model | Level | Description |
@@ -301,14 +301,14 @@ Cyclomatic complexity = 3 predicates + 1 = **4**. This means we need at least 4 
 
 ### Basic COCOMO Formula
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-handwritten.svg" alt="Handwritten: Basic COCOMO Formula" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-handwritten.svg" alt="Handwritten: Basic COCOMO Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-diagram.svg" alt="Diagram: Basic COCOMO Formula" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-diagram.svg" alt="Diagram: Basic COCOMO Formula" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-sticky.svg" alt="Sticky Note: Basic COCOMO Formula" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/basic-cocomo-formula-sticky.svg" alt="Sticky Note: Basic COCOMO Formula" width="30%">
 </a>
 
 ```
@@ -328,14 +328,14 @@ Time = c × (Effort)^d months
 
 ### Size-Oriented Metrics
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-handwritten.svg" alt="Handwritten: Size-Oriented Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-handwritten.svg" alt="Handwritten: Size-Oriented Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-diagram.svg" alt="Diagram: Size-Oriented Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-diagram.svg" alt="Diagram: Size-Oriented Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-sticky.svg" alt="Sticky Note: Size-Oriented Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/size-oriented-metrics-sticky.svg" alt="Sticky Note: Size-Oriented Metrics" width="30%">
 </a>
 
 - LOC (Lines of Code) per person-month
@@ -345,14 +345,14 @@ Time = c × (Effort)^d months
 
 ### Function-Oriented Metrics
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-handwritten.svg" alt="Handwritten: Function-Oriented Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-handwritten.svg" alt="Handwritten: Function-Oriented Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-diagram.svg" alt="Diagram: Function-Oriented Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-diagram.svg" alt="Diagram: Function-Oriented Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-sticky.svg" alt="Sticky Note: Function-Oriented Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-oriented-metrics-sticky.svg" alt="Sticky Note: Function-Oriented Metrics" width="30%">
 </a>
 
 - **Function Point (FP):** Based on external inputs, outputs, inquiries, files, interfaces
@@ -360,14 +360,14 @@ Time = c × (Effort)^d months
 
 ### Quality Metrics
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-handwritten.svg" alt="Handwritten: Quality Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-handwritten.svg" alt="Handwritten: Quality Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-diagram.svg" alt="Diagram: Quality Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-diagram.svg" alt="Diagram: Quality Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-sticky.svg" alt="Sticky Note: Quality Metrics" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/quality-metrics-sticky.svg" alt="Sticky Note: Quality Metrics" width="30%">
 </a>
 
 | Metric | Formula | Target |
@@ -379,14 +379,14 @@ Time = c × (Effort)^d months
 
 ### ISO 9126 Quality Factors
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-handwritten.svg" alt="Handwritten: ISO 9126 Quality Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-handwritten.svg" alt="Handwritten: ISO 9126 Quality Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-diagram.svg" alt="Diagram: ISO 9126 Quality Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-diagram.svg" alt="Diagram: ISO 9126 Quality Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-sticky.svg" alt="Sticky Note: ISO 9126 Quality Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/iso-9126-quality-factors-sticky.svg" alt="Sticky Note: ISO 9126 Quality Factors" width="30%">
 </a>
 
 1. **Functionality:** Suitability, accuracy, security, interoperability
@@ -402,14 +402,14 @@ Time = c × (Effort)^d months
 
 ### Scrum Roles
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-handwritten.svg" alt="Handwritten: Scrum Roles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-handwritten.svg" alt="Handwritten: Scrum Roles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-diagram.svg" alt="Diagram: Scrum Roles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-diagram.svg" alt="Diagram: Scrum Roles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-sticky.svg" alt="Sticky Note: Scrum Roles" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-roles-sticky.svg" alt="Sticky Note: Scrum Roles" width="30%">
 </a>
 
 - **Product Owner:** Defines requirements (backlog), prioritizes
@@ -418,14 +418,14 @@ Time = c × (Effort)^d months
 
 ### Scrum Events
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-handwritten.svg" alt="Handwritten: Scrum Events" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-handwritten.svg" alt="Handwritten: Scrum Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-diagram.svg" alt="Diagram: Scrum Events" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-diagram.svg" alt="Diagram: Scrum Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-sticky.svg" alt="Sticky Note: Scrum Events" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/scrum-events-sticky.svg" alt="Sticky Note: Scrum Events" width="30%">
 </a>
 
 | Event | Time-box | Purpose |
@@ -437,14 +437,14 @@ Time = c × (Effort)^d months
 
 ### Agile Manifesto Values
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-handwritten.svg" alt="Handwritten: Agile Manifesto Values" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-handwritten.svg" alt="Handwritten: Agile Manifesto Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-diagram.svg" alt="Diagram: Agile Manifesto Values" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-diagram.svg" alt="Diagram: Agile Manifesto Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-sticky.svg" alt="Sticky Note: Agile Manifesto Values" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/agile-manifesto-values-sticky.svg" alt="Sticky Note: Agile Manifesto Values" width="30%">
 </a>
 
 1. **Individuals and interactions** over processes and tools
@@ -502,14 +502,14 @@ Time = c × (Effort)^d months
 
 ### Structural Diagrams (Static)
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-handwritten.svg" alt="Handwritten: Structural Diagrams (Static)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-handwritten.svg" alt="Handwritten: Structural Diagrams (Static)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-diagram.svg" alt="Diagram: Structural Diagrams (Static)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-diagram.svg" alt="Diagram: Structural Diagrams (Static)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-sticky.svg" alt="Sticky Note: Structural Diagrams (Static)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/structural-diagrams-static-sticky.svg" alt="Sticky Note: Structural Diagrams (Static)" width="30%">
 </a>
 
 | Diagram | Purpose | Elements |
@@ -521,14 +521,14 @@ Time = c × (Effort)^d months
 
 ### Behavioral Diagrams (Dynamic)
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-handwritten.svg" alt="Handwritten: Behavioral Diagrams (Dynamic)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-handwritten.svg" alt="Handwritten: Behavioral Diagrams (Dynamic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-diagram.svg" alt="Diagram: Behavioral Diagrams (Dynamic)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-diagram.svg" alt="Diagram: Behavioral Diagrams (Dynamic)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-sticky.svg" alt="Sticky Note: Behavioral Diagrams (Dynamic)" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/behavioral-diagrams-dynamic-sticky.svg" alt="Sticky Note: Behavioral Diagrams (Dynamic)" width="30%">
 </a>
 
 | Diagram | Purpose | Elements |
@@ -540,14 +540,14 @@ Time = c × (Effort)^d months
 
 ### Key UML Relationships
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-handwritten.svg" alt="Handwritten: Key UML Relationships" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-handwritten.svg" alt="Handwritten: Key UML Relationships" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-diagram.svg" alt="Diagram: Key UML Relationships" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-diagram.svg" alt="Diagram: Key UML Relationships" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-sticky.svg" alt="Sticky Note: Key UML Relationships" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/key-uml-relationships-sticky.svg" alt="Sticky Note: Key UML Relationships" width="30%">
 </a>
 
 | Relationship | Notation | Meaning |
@@ -563,14 +563,14 @@ Time = c × (Effort)^d months
 
 ### Maintenance Types
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-handwritten.svg" alt="Handwritten: Maintenance Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-handwritten.svg" alt="Handwritten: Maintenance Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-diagram.svg" alt="Diagram: Maintenance Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-diagram.svg" alt="Diagram: Maintenance Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-sticky.svg" alt="Sticky Note: Maintenance Types" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-types-sticky.svg" alt="Sticky Note: Maintenance Types" width="30%">
 </a>
 
 | Type | Description | Percentage |
@@ -582,14 +582,14 @@ Time = c × (Effort)^d months
 
 ### Maintenance Effort Factors
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-handwritten.svg" alt="Handwritten: Maintenance Effort Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-handwritten.svg" alt="Handwritten: Maintenance Effort Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-diagram.svg" alt="Diagram: Maintenance Effort Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-diagram.svg" alt="Diagram: Maintenance Effort Factors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-sticky.svg" alt="Sticky Note: Maintenance Effort Factors" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/maintenance-effort-factors-sticky.svg" alt="Sticky Note: Maintenance Effort Factors" width="30%">
 </a>
 
 - Module size and complexity
@@ -602,14 +602,14 @@ Time = c × (Effort)^d months
 
 ### Risk Categories
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-handwritten.svg" alt="Handwritten: Risk Categories" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-handwritten.svg" alt="Handwritten: Risk Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-diagram.svg" alt="Diagram: Risk Categories" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-diagram.svg" alt="Diagram: Risk Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-sticky.svg" alt="Sticky Note: Risk Categories" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-categories-sticky.svg" alt="Sticky Note: Risk Categories" width="30%">
 </a>
 
 | Category | Examples |
@@ -621,14 +621,14 @@ Time = c × (Effort)^d months
 
 ### Risk Management Process
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-handwritten.svg" alt="Handwritten: Risk Management Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-handwritten.svg" alt="Handwritten: Risk Management Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-diagram.svg" alt="Diagram: Risk Management Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-diagram.svg" alt="Diagram: Risk Management Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-sticky.svg" alt="Sticky Note: Risk Management Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-management-process-sticky.svg" alt="Sticky Note: Risk Management Process" width="30%">
 </a>
 
 1. **Identification:** Brainstorm, checklists, SWOT analysis
@@ -638,14 +638,14 @@ Time = c × (Effort)^d months
 
 ### Risk Response Strategies
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-handwritten.svg" alt="Handwritten: Risk Response Strategies" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-handwritten.svg" alt="Handwritten: Risk Response Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-diagram.svg" alt="Diagram: Risk Response Strategies" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-diagram.svg" alt="Diagram: Risk Response Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-sticky.svg" alt="Sticky Note: Risk Response Strategies" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/risk-response-strategies-sticky.svg" alt="Sticky Note: Risk Response Strategies" width="30%">
 </a>
 
 | Strategy | Description | Example |
@@ -659,14 +659,14 @@ Time = c × (Effort)^d months
 
 ### CM Activities
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-handwritten.svg" alt="Handwritten: CM Activities" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-handwritten.svg" alt="Handwritten: CM Activities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-diagram.svg" alt="Diagram: CM Activities" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-diagram.svg" alt="Diagram: CM Activities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-sticky.svg" alt="Sticky Note: CM Activities" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cm-activities-sticky.svg" alt="Sticky Note: CM Activities" width="30%">
 </a>
 
 1. **Identification:** Uniquely identify all configuration items (CI)
@@ -677,14 +677,14 @@ Time = c × (Effort)^d months
 
 ### Change Control Process
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-handwritten.svg" alt="Handwritten: Change Control Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-handwritten.svg" alt="Handwritten: Change Control Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-diagram.svg" alt="Diagram: Change Control Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-diagram.svg" alt="Diagram: Change Control Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-sticky.svg" alt="Sticky Note: Change Control Process" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/change-control-process-sticky.svg" alt="Sticky Note: Change Control Process" width="30%">
 </a>
 
 ```
@@ -701,14 +701,14 @@ Change Request → Impact Analysis → CCB Review → Approve/Reject → Impleme
 
 ### COCOMO Calculator — TypeScript Implementation
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-handwritten.svg" alt="Handwritten: COCOMO Calculator — TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-handwritten.svg" alt="Handwritten: COCOMO Calculator — TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-diagram.svg" alt="Diagram: COCOMO Calculator — TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-diagram.svg" alt="Diagram: COCOMO Calculator — TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-sticky.svg" alt="Sticky Note: COCOMO Calculator — TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cocomo-calculator-typescript-implementation-sticky.svg" alt="Sticky Note: COCOMO Calculator — TypeScript Implementation" width="30%">
 </a>
 
 
@@ -769,14 +769,14 @@ function intermediateCOCOMO(params: COCOMOParams): COCOMOResult {
 
 ### Cyclomatic Complexity — TypeScript Calculator
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-handwritten.svg" alt="Handwritten: Cyclomatic Complexity — TypeScript Calculator" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-handwritten.svg" alt="Handwritten: Cyclomatic Complexity — TypeScript Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-diagram.svg" alt="Diagram: Cyclomatic Complexity — TypeScript Calculator" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-diagram.svg" alt="Diagram: Cyclomatic Complexity — TypeScript Calculator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-sticky.svg" alt="Sticky Note: Cyclomatic Complexity — TypeScript Calculator" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/cyclomatic-complexity-typescript-calculator-sticky.svg" alt="Sticky Note: Cyclomatic Complexity — TypeScript Calculator" width="30%">
 </a>
 
 
@@ -821,14 +821,14 @@ function findMax(arr: number[]): number {
 
 ### DFD Generator — Level 0, 1, 2
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-handwritten.svg" alt="Handwritten: DFD Generator — Level 0, 1, 2" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-handwritten.svg" alt="Handwritten: DFD Generator — Level 0, 1, 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-diagram.svg" alt="Diagram: DFD Generator — Level 0, 1, 2" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-diagram.svg" alt="Diagram: DFD Generator — Level 0, 1, 2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-sticky.svg" alt="Sticky Note: DFD Generator — Level 0, 1, 2" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/dfd-generator-level-0-1-2-sticky.svg" alt="Sticky Note: DFD Generator — Level 0, 1, 2" width="30%">
 </a>
 
 
@@ -865,14 +865,14 @@ graph TD
 
 ### SDLC Comparison — Waterfall vs Agile vs Spiral
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-handwritten.svg" alt="Handwritten: SDLC Comparison — Waterfall vs Agile vs Spiral" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-handwritten.svg" alt="Handwritten: SDLC Comparison — Waterfall vs Agile vs Spiral" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-diagram.svg" alt="Diagram: SDLC Comparison — Waterfall vs Agile vs Spiral" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-diagram.svg" alt="Diagram: SDLC Comparison — Waterfall vs Agile vs Spiral" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-sticky.svg" alt="Sticky Note: SDLC Comparison — Waterfall vs Agile vs Spiral" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/sdlc-comparison-waterfall-vs-agile-vs-spiral-sticky.svg" alt="Sticky Note: SDLC Comparison — Waterfall vs Agile vs Spiral" width="30%">
 </a>
 
 
@@ -896,14 +896,14 @@ graph LR
 
 ### Test Case Design — White Box with TypeScript
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-handwritten.svg" alt="Handwritten: Test Case Design — White Box with TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-handwritten.svg" alt="Handwritten: Test Case Design — White Box with TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-diagram.svg" alt="Diagram: Test Case Design — White Box with TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-diagram.svg" alt="Diagram: Test Case Design — White Box with TypeScript" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-sticky.svg" alt="Sticky Note: Test Case Design — White Box with TypeScript" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/test-case-design-white-box-with-typescript-sticky.svg" alt="Sticky Note: Test Case Design — White Box with TypeScript" width="30%">
 </a>
 
 
@@ -938,14 +938,14 @@ function validateAge(age: number): string {
 
 ### IEEE 830 SRS — Detailed Structure Example
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-handwritten.svg" alt="Handwritten: IEEE 830 SRS — Detailed Structure Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-handwritten.svg" alt="Handwritten: IEEE 830 SRS — Detailed Structure Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-diagram.svg" alt="Diagram: IEEE 830 SRS — Detailed Structure Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-diagram.svg" alt="Diagram: IEEE 830 SRS — Detailed Structure Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-sticky.svg" alt="Sticky Note: IEEE 830 SRS — Detailed Structure Example" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/ieee-830-srs-detailed-structure-example-sticky.svg" alt="Sticky Note: IEEE 830 SRS — Detailed Structure Example" width="30%">
 </a>
 
 
@@ -959,14 +959,14 @@ function validateAge(age: number): string {
 
 ### Function Point Analysis
 
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-handwritten.svg" alt="Handwritten: Function Point Analysis" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-handwritten.svg" alt="Handwritten: Function Point Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-diagram.svg" alt="Diagram: Function Point Analysis" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-diagram.svg" alt="Diagram: Function Point Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-sticky.svg" alt="Sticky Note: Function Point Analysis" width="30%">
+<a href="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/professional-knowledge/06-software-engineering/function-point-analysis-sticky.svg" alt="Sticky Note: Function Point Analysis" width="30%">
 </a>
 
 

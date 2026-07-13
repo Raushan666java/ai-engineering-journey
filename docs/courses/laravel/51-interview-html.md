@@ -40,14 +40,14 @@ flowchart LR
 
 ### Q1: What is the difference between semantic and non-semantic HTML elements?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-handwritten.svg" alt="Handwritten: What is the difference between semantic and non-semantic HTML elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-handwritten.svg" alt="Handwritten: What is the difference between semantic and non-semantic HTML elements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-diagram.svg" alt="Diagram: What is the difference between semantic and non-semantic HTML elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-diagram.svg" alt="Diagram: What is the difference between semantic and non-semantic HTML elements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-sticky.svg" alt="Sticky Note: What is the difference between semantic and non-semantic HTML elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-semantic-and-non-semantic-html-elements-sticky.svg" alt="Sticky Note: What is the difference between semantic and non-semantic HTML elements?" width="30%">
 </a>
 
 **Answer:** Semantic elements clearly describe their meaning to both the browser and the developer. Non-semantic elements like `<div>` and `<span>` convey nothing about their content. Semantic elements improve accessibility, SEO, code readability, and browser interoperability.
@@ -84,14 +84,14 @@ flowchart LR
 
 ### Q2: List all the HTML5 semantic elements and their purposes.
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-handwritten.svg" alt="Handwritten: List all the HTML5 semantic elements and their purposes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-handwritten.svg" alt="Handwritten: List all the HTML5 semantic elements and their purposes." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-diagram.svg" alt="Diagram: List all the HTML5 semantic elements and their purposes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-diagram.svg" alt="Diagram: List all the HTML5 semantic elements and their purposes." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-sticky.svg" alt="Sticky Note: List all the HTML5 semantic elements and their purposes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/list-all-the-html5-semantic-elements-and-their-purposes-sticky.svg" alt="Sticky Note: List all the HTML5 semantic elements and their purposes." width="30%">
 </a>
 
 **Answer:** HTML5 introduced these semantic elements: `<header>` (introductory content or navigational aids), `<nav>` (navigation links), `<main>` (dominant content unique to the document), `<article>` (self-contained composition), `<section>` (thematic grouping of content), `<aside>` (tangentially related content), `<footer>` (footer for its nearest sectioning root), `<figure>` / `<figcaption>` (self-contained content with caption), `<mark>` (highlighted text), `<time>` (machine-readable date/time), `<details>` / `<summary>` (disclosure widget), `<address>` (contact information), and `<dialog>` (interactive modal).
@@ -114,14 +114,14 @@ flowchart LR
 
 ### Q3: How do you structure a proper HTML5 document outline with heading hierarchy?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-handwritten.svg" alt="Handwritten: How do you structure a proper HTML5 document outline with heading hierarchy?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-handwritten.svg" alt="Handwritten: How do you structure a proper HTML5 document outline with heading hierarchy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-diagram.svg" alt="Diagram: How do you structure a proper HTML5 document outline with heading hierarchy?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-diagram.svg" alt="Diagram: How do you structure a proper HTML5 document outline with heading hierarchy?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-sticky.svg" alt="Sticky Note: How do you structure a proper HTML5 document outline with heading hierarchy?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-structure-a-proper-html5-document-outline-with-heading-hierarchy-sticky.svg" alt="Sticky Note: How do you structure a proper HTML5 document outline with heading hierarchy?" width="30%">
 </a>
 
 **Answer:** Headings (`<h1>` through `<h6>`) create a document outline. Use exactly one `<h1>` per page representing the primary topic. Nest headings sequentially without skipping levels. Assistive technology users navigate by heading structure; a logical hierarchy is critical for accessibility.
@@ -148,14 +148,14 @@ flowchart LR
 
 ### Q4: When should you use `<article>` versus `<section>`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-handwritten.svg" alt="Handwritten: When should you use `<article>` versus `<section>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-handwritten.svg" alt="Handwritten: When should you use `<article>` versus `<section>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-diagram.svg" alt="Diagram: When should you use `<article>` versus `<section>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-diagram.svg" alt="Diagram: When should you use `<article>` versus `<section>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-sticky.svg" alt="Sticky Note: When should you use `<article>` versus `<section>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/when-should-you-use-article-versus-section-sticky.svg" alt="Sticky Note: When should you use `<article>` versus `<section>`?" width="30%">
 </a>
 
 **Answer:** Use `<article>` for self-contained, independently distributable content → a blog post, news story, forum comment, or product card. Use `<section>` for thematic groupings within a larger document, typically with its own heading. An `<article>` can contain multiple `<section>` elements, and a `<section>` can contain multiple `<article>` elements.
@@ -180,14 +180,14 @@ flowchart LR
 
 ### Q5: What is the purpose of the `<main>` element and how many can a page have?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-handwritten.svg" alt="Handwritten: What is the purpose of the `<main>` element and how many can a page have?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-handwritten.svg" alt="Handwritten: What is the purpose of the `<main>` element and how many can a page have?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-diagram.svg" alt="Diagram: What is the purpose of the `<main>` element and how many can a page have?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-diagram.svg" alt="Diagram: What is the purpose of the `<main>` element and how many can a page have?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-sticky.svg" alt="Sticky Note: What is the purpose of the `<main>` element and how many can a page have?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-main-element-and-how-many-can-a-page-have-sticky.svg" alt="Sticky Note: What is the purpose of the `<main>` element and how many can a page have?" width="30%">
 </a>
 
 **Answer:** `<main>` represents the dominant content of the `<body>` → content unique to the document that is not repeated across pages (unlike headers, navs, or footers). A document **must** have only one `<main>` element that is visible. It should not be a descendant of `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>`.
@@ -206,14 +206,14 @@ flowchart LR
 
 ### Q6: How does the `<figure>` element work and when is it appropriate?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-handwritten.svg" alt="Handwritten: How does the `<figure>` element work and when is it appropriate?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-handwritten.svg" alt="Handwritten: How does the `<figure>` element work and when is it appropriate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-diagram.svg" alt="Diagram: How does the `<figure>` element work and when is it appropriate?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-diagram.svg" alt="Diagram: How does the `<figure>` element work and when is it appropriate?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-sticky.svg" alt="Sticky Note: How does the `<figure>` element work and when is it appropriate?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-figure-element-work-and-when-is-it-appropriate-sticky.svg" alt="Sticky Note: How does the `<figure>` element work and when is it appropriate?" width="30%">
 </a>
 
 **Answer:** `<figure>` wraps self-contained content like images, diagrams, code blocks, or pull quotes, optionally with a `<figcaption>` caption. It is appropriate when the content could be moved to an appendix without disrupting the main flow.
@@ -227,14 +227,14 @@ flowchart LR
 
 ### Q7: Explain the `<details>` and `<summary>` elements.
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-handwritten.svg" alt="Handwritten: Explain the `<details>` and `<summary>` elements." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-handwritten.svg" alt="Handwritten: Explain the `<details>` and `<summary>` elements." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-diagram.svg" alt="Diagram: Explain the `<details>` and `<summary>` elements." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-diagram.svg" alt="Diagram: Explain the `<details>` and `<summary>` elements." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-sticky.svg" alt="Sticky Note: Explain the `<details>` and `<summary>` elements." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/explain-the-details-and-summary-elements-sticky.svg" alt="Sticky Note: Explain the `<details>` and `<summary>` elements." width="30%">
 </a>
 
 **Answer:** `<details>` creates a disclosure widget that can be toggled open/closed. `<summary>` provides the visible label. The `open` attribute renders it expanded by default. This is a native HTML5 widget requiring zero JavaScript for basic toggle behavior.
@@ -253,14 +253,14 @@ flowchart LR
 
 ### Q8: What is the correct usage of the `<nav>` element?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-handwritten.svg" alt="Handwritten: What is the correct usage of the `<nav>` element?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-handwritten.svg" alt="Handwritten: What is the correct usage of the `<nav>` element?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-diagram.svg" alt="Diagram: What is the correct usage of the `<nav>` element?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-diagram.svg" alt="Diagram: What is the correct usage of the `<nav>` element?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-sticky.svg" alt="Sticky Note: What is the correct usage of the `<nav>` element?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-correct-usage-of-the-nav-element-sticky.svg" alt="Sticky Note: What is the correct usage of the `<nav>` element?" width="30%">
 </a>
 
 **Answer:** `<nav>` identifies a section with navigation links. Use it for primary site navigation, table of contents, breadcrumbs, pagination, or any group of links where navigation is the primary purpose. Not every group of links needs `<nav>` → a footer with legal links, for example, typically does not.
@@ -285,14 +285,14 @@ flowchart LR
 
 ### Q9: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-handwritten.svg" alt="Handwritten: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-handwritten.svg" alt="Handwritten: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-diagram.svg" alt="Diagram: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-diagram.svg" alt="Diagram: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-sticky.svg" alt="Sticky Note: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-b-i-and-strong-em-sticky.svg" alt="Sticky Note: What is the difference between `<b>` / `<i>` and `<strong>` / `<em>`?" width="30%">
 </a>
 
 **Answer:** `<b>` and `<i>` are presentational → they apply bold and italic styling without semantic meaning. `<strong>` indicates strong importance or urgency (screen readers may change vocal emphasis). `<em>` indicates stress emphasis, changing the meaning of a sentence. Use `<strong>` and `<em>` for meaning; use `<b>` and `<i>` only when no semantic element fits (e.g., product names, taxonomic terms).
@@ -304,14 +304,14 @@ flowchart LR
 
 ### Q10: How do you mark up a navigation breadcrumb trail semantically?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-handwritten.svg" alt="Handwritten: How do you mark up a navigation breadcrumb trail semantically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-handwritten.svg" alt="Handwritten: How do you mark up a navigation breadcrumb trail semantically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-diagram.svg" alt="Diagram: How do you mark up a navigation breadcrumb trail semantically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-diagram.svg" alt="Diagram: How do you mark up a navigation breadcrumb trail semantically?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-sticky.svg" alt="Sticky Note: How do you mark up a navigation breadcrumb trail semantically?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-mark-up-a-navigation-breadcrumb-trail-semantically-sticky.svg" alt="Sticky Note: How do you mark up a navigation breadcrumb trail semantically?" width="30%">
 </a>
 
 **Answer:** Combine `<nav>` with `aria-label="Breadcrumb"`, an ordered list `<ol>`, and `aria-current="page"` on the current page link. This provides screen readers with a structured, navigable breadcrumb trail.
@@ -329,14 +329,14 @@ flowchart LR
 
 ### Q11: What is the purpose of the `<address>` element?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-handwritten.svg" alt="Handwritten: What is the purpose of the `<address>` element?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-handwritten.svg" alt="Handwritten: What is the purpose of the `<address>` element?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-diagram.svg" alt="Diagram: What is the purpose of the `<address>` element?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-diagram.svg" alt="Diagram: What is the purpose of the `<address>` element?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-sticky.svg" alt="Sticky Note: What is the purpose of the `<address>` element?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-address-element-sticky.svg" alt="Sticky Note: What is the purpose of the `<address>` element?" width="30%">
 </a>
 
 **Answer:** `<address>` supplies contact information for the nearest `<article>` or `<body>` ancestor. It should contain the author's or organization's contact details → email, physical address, phone, social media links. It is **not** for arbitrary postal addresses (use a `<p>` for that).
@@ -352,14 +352,14 @@ flowchart LR
 
 ### Q12: How does the `<time>` element work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-handwritten.svg" alt="Handwritten: How does the `<time>` element work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-handwritten.svg" alt="Handwritten: How does the `<time>` element work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-diagram.svg" alt="Diagram: How does the `<time>` element work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-diagram.svg" alt="Diagram: How does the `<time>` element work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-sticky.svg" alt="Sticky Note: How does the `<time>` element work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-time-element-work-sticky.svg" alt="Sticky Note: How does the `<time>` element work?" width="30%">
 </a>
 
 **Answer:** `<time>` represents a machine-readable date or time. The `datetime` attribute supplies the parseable value in ISO 8601 format. The element's inner text is the human-readable display. Without `datetime`, the content must be a valid date/time string.
@@ -372,14 +372,14 @@ flowchart LR
 
 ### Q13: What is the difference between `<div>` and `<span>`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-handwritten.svg" alt="Handwritten: What is the difference between `<div>` and `<span>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-handwritten.svg" alt="Handwritten: What is the difference between `<div>` and `<span>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-diagram.svg" alt="Diagram: What is the difference between `<div>` and `<span>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-diagram.svg" alt="Diagram: What is the difference between `<div>` and `<span>`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-sticky.svg" alt="Sticky Note: What is the difference between `<div>` and `<span>`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-div-and-span-sticky.svg" alt="Sticky Note: What is the difference between `<div>` and `<span>`?" width="30%">
 </a>
 
 **Answer:** `<div>` is a block-level container that starts on a new line and takes full width. `<span>` is an inline container that flows within text. Both are semantically neutral → use them only when no semantic element applies, and prefer semantic elements first.
@@ -393,14 +393,14 @@ flowchart LR
 
 ### Q14: Why is a logical heading hierarchy important for SEO?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-handwritten.svg" alt="Handwritten: Why is a logical heading hierarchy important for SEO?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-handwritten.svg" alt="Handwritten: Why is a logical heading hierarchy important for SEO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-diagram.svg" alt="Diagram: Why is a logical heading hierarchy important for SEO?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-diagram.svg" alt="Diagram: Why is a logical heading hierarchy important for SEO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-sticky.svg" alt="Sticky Note: Why is a logical heading hierarchy important for SEO?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/why-is-a-logical-heading-hierarchy-important-for-seo-sticky.svg" alt="Sticky Note: Why is a logical heading hierarchy important for SEO?" width="30%">
 </a>
 
 **Answer:** Search engines use headings to understand page structure and topical relevance. An `<h1>` signals the primary topic. Proper nesting (h1 → h2 → h3, never skipping) helps crawlers index content correctly. Keyword-rich, descriptive headings improve search ranking and click-through rates.
@@ -417,14 +417,14 @@ flowchart LR
 
 ### Q15: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-handwritten.svg" alt="Handwritten: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-handwritten.svg" alt="Handwritten: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-diagram.svg" alt="Diagram: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-diagram.svg" alt="Diagram: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-sticky.svg" alt="Sticky Note: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-dl-dt-and-dd-elements-sticky.svg" alt="Sticky Note: What is the purpose of the `<dl>`, `<dt>`, and `<dd>` elements?" width="30%">
 </a>
 
 **Answer:** `<dl>` defines a description list. `<dt>` specifies a term, and `<dd>` provides its description. Use for glossaries, metadata pairs (e.g., key-value data), or any name-value grouping.
@@ -444,14 +444,14 @@ flowchart LR
 
 ### Q16: What are the new input types introduced in HTML5?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-handwritten.svg" alt="Handwritten: What are the new input types introduced in HTML5?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-handwritten.svg" alt="Handwritten: What are the new input types introduced in HTML5?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-diagram.svg" alt="Diagram: What are the new input types introduced in HTML5?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-diagram.svg" alt="Diagram: What are the new input types introduced in HTML5?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-sticky.svg" alt="Sticky Note: What are the new input types introduced in HTML5?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-new-input-types-introduced-in-html5-sticky.svg" alt="Sticky Note: What are the new input types introduced in HTML5?" width="30%">
 </a>
 
 **Answer:** HTML5 introduced: `email`, `url`, `tel`, `number`, `range`, `date`, `datetime-local`, `month`, `week`, `time`, `color`, `search`, and `file` with `accept` filtering. These provide native keyboard layouts on mobile, built-in validation, and specialized UI controls.
@@ -480,14 +480,14 @@ flowchart LR
 
 ### Q17: How do you associate a `<label>` with an `<input>` and why is it required?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-handwritten.svg" alt="Handwritten: How do you associate a `<label>` with an `<input>` and why is it required?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-handwritten.svg" alt="Handwritten: How do you associate a `<label>` with an `<input>` and why is it required?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-diagram.svg" alt="Diagram: How do you associate a `<label>` with an `<input>` and why is it required?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-diagram.svg" alt="Diagram: How do you associate a `<label>` with an `<input>` and why is it required?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-sticky.svg" alt="Sticky Note: How do you associate a `<label>` with an `<input>` and why is it required?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-associate-a-label-with-an-input-and-why-is-it-required-sticky.svg" alt="Sticky Note: How do you associate a `<label>` with an `<input>` and why is it required?" width="30%">
 </a>
 
 **Answer:** Use the `for` attribute on `<label>` matching the `id` on `<input>`, or wrap the input inside the label. Labels are required for accessibility → screen readers announce the label when the input receives focus, and clicking the label toggles the input, increasing the hit target area.
@@ -505,14 +505,14 @@ flowchart LR
 
 ### Q18: Explain HTML5 constraint validation attributes.
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-handwritten.svg" alt="Handwritten: Explain HTML5 constraint validation attributes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-handwritten.svg" alt="Handwritten: Explain HTML5 constraint validation attributes." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-diagram.svg" alt="Diagram: Explain HTML5 constraint validation attributes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-diagram.svg" alt="Diagram: Explain HTML5 constraint validation attributes." width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-sticky.svg" alt="Sticky Note: Explain HTML5 constraint validation attributes." width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/explain-html5-constraint-validation-attributes-sticky.svg" alt="Sticky Note: Explain HTML5 constraint validation attributes." width="30%">
 </a>
 
 **Answer:** HTML5 provides: `required` (value must be present), `minlength` / `maxlength` (string length limits), `min` / `max` (numeric/date range), `step` (increment granularity), `pattern` (regex validation), `accept` (file MIME types), `multiple` (multiple values). These trigger browser-native validation without JavaScript.
@@ -537,14 +537,14 @@ flowchart LR
 
 ### Q19: What are the form attributes `novalidate` and `formnovalidate` used for?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-handwritten.svg" alt="Handwritten: What are the form attributes `novalidate` and `formnovalidate` used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-handwritten.svg" alt="Handwritten: What are the form attributes `novalidate` and `formnovalidate` used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-diagram.svg" alt="Diagram: What are the form attributes `novalidate` and `formnovalidate` used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-diagram.svg" alt="Diagram: What are the form attributes `novalidate` and `formnovalidate` used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-sticky.svg" alt="Sticky Note: What are the form attributes `novalidate` and `formnovalidate` used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-form-attributes-novalidate-and-formnovalidate-used-for-sticky.svg" alt="Sticky Note: What are the form attributes `novalidate` and `formnovalidate` used for?" width="30%">
 </a>
 
 **Answer:** `novalidate` on the `<form>` element disables all browser validation for that form (useful for "save draft" flows). `formnovalidate` on a submit button disables validation for that specific submission (e.g., a "Cancel" or "Save Progress" button alongside a "Submit" button).
@@ -561,14 +561,14 @@ flowchart LR
 
 ### Q20: How does the Constraint Validation API work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-handwritten.svg" alt="Handwritten: How does the Constraint Validation API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-handwritten.svg" alt="Handwritten: How does the Constraint Validation API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-diagram.svg" alt="Diagram: How does the Constraint Validation API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-diagram.svg" alt="Diagram: How does the Constraint Validation API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-sticky.svg" alt="Sticky Note: How does the Constraint Validation API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-constraint-validation-api-work-sticky.svg" alt="Sticky Note: How does the Constraint Validation API work?" width="30%">
 </a>
 
 **Answer:** The Constraint Validation API provides JavaScript access to form validation state. Key properties: `validity` (object with `valueMissing`, `typeMismatch`, `patternMismatch`, `tooLong`, `tooShort`, `rangeUnderflow`, `rangeOverflow`, `stepMismatch`, `badInput`, `customError`), `validationMessage`, `willValidate`. Key methods: `checkValidity()`, `reportValidity()`, `setCustomValidity()`.
@@ -594,14 +594,14 @@ function validateCode(input) {
 
 ### Q21: What is the `<fieldset>` and `<legend>` used for?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-handwritten.svg" alt="Handwritten: What is the `<fieldset>` and `<legend>` used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-handwritten.svg" alt="Handwritten: What is the `<fieldset>` and `<legend>` used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-diagram.svg" alt="Diagram: What is the `<fieldset>` and `<legend>` used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-diagram.svg" alt="Diagram: What is the `<fieldset>` and `<legend>` used for?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-sticky.svg" alt="Sticky Note: What is the `<fieldset>` and `<legend>` used for?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-fieldset-and-legend-used-for-sticky.svg" alt="Sticky Note: What is the `<fieldset>` and `<legend>` used for?" width="30%">
 </a>
 
 **Answer:** `<fieldset>` groups related form controls visually and semantically. `<legend>` provides the group's label. This is critical for accessibility → screen readers announce the legend before each control within the fieldset. Use for radio button groups, address sections, payment details, etc.
@@ -632,14 +632,14 @@ function validateCode(input) {
 
 ### Q22: How do you create a `<datalist>` and what problem does it solve?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-handwritten.svg" alt="Handwritten: How do you create a `<datalist>` and what problem does it solve?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-handwritten.svg" alt="Handwritten: How do you create a `<datalist>` and what problem does it solve?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-diagram.svg" alt="Diagram: How do you create a `<datalist>` and what problem does it solve?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-diagram.svg" alt="Diagram: How do you create a `<datalist>` and what problem does it solve?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-sticky.svg" alt="Sticky Note: How do you create a `<datalist>` and what problem does it solve?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-datalist-and-what-problem-does-it-solve-sticky.svg" alt="Sticky Note: How do you create a `<datalist>` and what problem does it solve?" width="30%">
 </a>
 
 **Answer:** `<datalist>` provides an autocomplete suggestion list for an `<input>` without restricting the user to predefined options (unlike `<select>`). The user can type free text. The `list` attribute on the input matches the `id` of the datalist.
@@ -658,14 +658,14 @@ function validateCode(input) {
 
 ### Q23: What are the differences between `<button>` and `<input type="submit">`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-handwritten.svg" alt="Handwritten: What are the differences between `<button>` and `<input type="submit">`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-handwritten.svg" alt="Handwritten: What are the differences between `<button>` and `<input type="submit">`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-diagram.svg" alt="Diagram: What are the differences between `<button>` and `<input type="submit">`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-diagram.svg" alt="Diagram: What are the differences between `<button>` and `<input type="submit">`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-sticky.svg" alt="Sticky Note: What are the differences between `<button>` and `<input type="submit">`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-differences-between-button-and-input-type-submit-sticky.svg" alt="Sticky Note: What are the differences between `<button>` and `<input type="submit">`?" width="30%">
 </a>
 
 **Answer:** Both submit forms, but `<button>` is more flexible → it can contain HTML content (icons, text, nested elements) and defaults to `type="submit"` (be careful: in IE/Edge it defaulted to `type="button"`). `<input type="submit">` is a void element and can only display a `value` text string. Always explicitly set `type` on `<button>` to avoid cross-browser issues.
@@ -683,14 +683,14 @@ function validateCode(input) {
 
 ### Q24: How do you implement the `autocomplete` attribute in forms?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-handwritten.svg" alt="Handwritten: How do you implement the `autocomplete` attribute in forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-handwritten.svg" alt="Handwritten: How do you implement the `autocomplete` attribute in forms?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-diagram.svg" alt="Diagram: How do you implement the `autocomplete` attribute in forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-diagram.svg" alt="Diagram: How do you implement the `autocomplete` attribute in forms?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-sticky.svg" alt="Sticky Note: How do you implement the `autocomplete` attribute in forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-autocomplete-attribute-in-forms-sticky.svg" alt="Sticky Note: How do you implement the `autocomplete` attribute in forms?" width="30%">
 </a>
 
 **Answer:** The `autocomplete` attribute on `<form>` or `<input>` controls browser autofill behavior. Values include `on`, `off`, `name`, `email`, `username`, `current-password`, `new-password`, `one-time-code`, `street-address`, `country`, `tel`, `url`, `cc-number`, `bday`, etc. Use `new-password` for registration forms and `current-password` for login forms to help password managers.
@@ -711,14 +711,14 @@ function validateCode(input) {
 
 ### Q25: How do you implement the `placeholder` attribute and what are its accessibility concerns?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-handwritten.svg" alt="Handwritten: How do you implement the `placeholder` attribute and what are its accessibility concerns?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-handwritten.svg" alt="Handwritten: How do you implement the `placeholder` attribute and what are its accessibility concerns?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-diagram.svg" alt="Diagram: How do you implement the `placeholder` attribute and what are its accessibility concerns?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-diagram.svg" alt="Diagram: How do you implement the `placeholder` attribute and what are its accessibility concerns?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-sticky.svg" alt="Sticky Note: How do you implement the `placeholder` attribute and what are its accessibility concerns?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-the-placeholder-attribute-and-what-are-its-accessibility-concerns-sticky.svg" alt="Sticky Note: How do you implement the `placeholder` attribute and what are its accessibility concerns?" width="30%">
 </a>
 
 **Answer:** `placeholder` provides a hint about the expected input format. However, it is **not a substitute for `<label>`** → placeholders disappear on input, fail contrast requirements in many browsers, and are often announced incorrectly by screen readers. Always pair with a visible `<label>`.
@@ -736,14 +736,14 @@ function validateCode(input) {
 
 ### Q26: How does the `<output>` element work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-handwritten.svg" alt="Handwritten: How does the `<output>` element work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-handwritten.svg" alt="Handwritten: How does the `<output>` element work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-diagram.svg" alt="Diagram: How does the `<output>` element work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-diagram.svg" alt="Diagram: How does the `<output>` element work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-sticky.svg" alt="Sticky Note: How does the `<output>` element work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-output-element-work-sticky.svg" alt="Sticky Note: How does the `<output>` element work?" width="30%">
 </a>
 
 **Answer:** `<output>` displays the result of a calculation or user action. It works with the `oninput` event on range inputs or other interactive controls. It has no default styling but provides semantic meaning for form results.
@@ -758,14 +758,14 @@ function validateCode(input) {
 
 ### Q27: What is the purpose of the `multiple` attribute on file inputs?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-handwritten.svg" alt="Handwritten: What is the purpose of the `multiple` attribute on file inputs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-handwritten.svg" alt="Handwritten: What is the purpose of the `multiple` attribute on file inputs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-diagram.svg" alt="Diagram: What is the purpose of the `multiple` attribute on file inputs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-diagram.svg" alt="Diagram: What is the purpose of the `multiple` attribute on file inputs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-sticky.svg" alt="Sticky Note: What is the purpose of the `multiple` attribute on file inputs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-multiple-attribute-on-file-inputs-sticky.svg" alt="Sticky Note: What is the purpose of the `multiple` attribute on file inputs?" width="30%">
 </a>
 
 **Answer:** The `multiple` attribute allows selecting more than one file in a file picker. On email inputs, it accepts multiple comma-separated email addresses. The `accept` attribute filters the allowed file types.
@@ -780,14 +780,14 @@ function validateCode(input) {
 
 ### Q28: How do you handle file upload size and type restrictions?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-handwritten.svg" alt="Handwritten: How do you handle file upload size and type restrictions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-handwritten.svg" alt="Handwritten: How do you handle file upload size and type restrictions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-diagram.svg" alt="Diagram: How do you handle file upload size and type restrictions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-diagram.svg" alt="Diagram: How do you handle file upload size and type restrictions?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-sticky.svg" alt="Sticky Note: How do you handle file upload size and type restrictions?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-handle-file-upload-size-and-type-restrictions-sticky.svg" alt="Sticky Note: How do you handle file upload size and type restrictions?" width="30%">
 </a>
 
 **Answer:** File type is restricted via the `accept` attribute on the input, but this is client-side only → always validate on the server. File size cannot be restricted via HTML alone; use JavaScript with the File API to check `file.size` before submission, and always enforce limits server-side.
@@ -817,14 +817,14 @@ function validateFile(input) {
 
 ### Q29: What is the `enterkeyhint` attribute?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-handwritten.svg" alt="Handwritten: What is the `enterkeyhint` attribute?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-handwritten.svg" alt="Handwritten: What is the `enterkeyhint` attribute?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-diagram.svg" alt="Diagram: What is the `enterkeyhint` attribute?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-diagram.svg" alt="Diagram: What is the `enterkeyhint` attribute?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-sticky.svg" alt="Sticky Note: What is the `enterkeyhint` attribute?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-enterkeyhint-attribute-sticky.svg" alt="Sticky Note: What is the `enterkeyhint` attribute?" width="30%">
 </a>
 
 **Answer:** `enterkeyhint` controls the label/icon shown on the virtual keyboard's Enter key on mobile devices. Values: `enter` (default), `done`, `go`, `next`, `previous`, `search`, `send`. This improves mobile UX by indicating what pressing Enter will do.
@@ -846,14 +846,14 @@ function validateFile(input) {
 
 ### Q30: How does the `<progress>` and `<meter>` element differ?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-handwritten.svg" alt="Handwritten: How does the `<progress>` and `<meter>` element differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-handwritten.svg" alt="Handwritten: How does the `<progress>` and `<meter>` element differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-diagram.svg" alt="Diagram: How does the `<progress>` and `<meter>` element differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-diagram.svg" alt="Diagram: How does the `<progress>` and `<meter>` element differ?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-sticky.svg" alt="Sticky Note: How does the `<progress>` and `<meter>` element differ?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-progress-and-meter-element-differ-sticky.svg" alt="Sticky Note: How does the `<progress>` and `<meter>` element differ?" width="30%">
 </a>
 
 **Answer:** `<progress>` indicates the completion progress of a task (e.g., file upload percentage), with `max` and `value` attributes. `<meter>` represents a scalar measurement within a known range (e.g., disk usage, CPU load), with `min`, `max`, `low`, `high`, `optimum`, and `value`. They are not interchangeable.
@@ -872,14 +872,14 @@ function validateFile(input) {
 
 ### Q31: What is ARIA and when should you use it?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is ARIA and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is ARIA and when should you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is ARIA and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is ARIA and when should you use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is ARIA and when should you use it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-aria-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is ARIA and when should you use it?" width="30%">
 </a>
 
 **Answer:** ARIA (Accessible Rich Internet Applications) is a set of attributes that supplement HTML to improve accessibility for assistive technologies. Use ARIA when native HTML semantics are insufficient → for custom widgets, dynamic content, or complex interactions. **First rule of ARIA**: use native HTML elements before adding ARIA. A `<button>` is better than a `<div role="button">`.
@@ -903,14 +903,14 @@ function validateFile(input) {
 
 ### Q32: What are landmark regions and how do they help screen reader users?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-handwritten.svg" alt="Handwritten: What are landmark regions and how do they help screen reader users?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-handwritten.svg" alt="Handwritten: What are landmark regions and how do they help screen reader users?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-diagram.svg" alt="Diagram: What are landmark regions and how do they help screen reader users?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-diagram.svg" alt="Diagram: What are landmark regions and how do they help screen reader users?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-sticky.svg" alt="Sticky Note: What are landmark regions and how do they help screen reader users?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-landmark-regions-and-how-do-they-help-screen-reader-users-sticky.svg" alt="Sticky Note: What are landmark regions and how do they help screen reader users?" width="30%">
 </a>
 
 **Answer:** Landmark regions are semantic elements that define major sections of a page, allowing screen reader users to jump directly to specific areas. HTML5 elements automatically create landmarks: `<header>` (banner), `<nav>` (navigation), `<main>` (main), `<aside>` (complementary), `<footer>` (contentinfo), `<form>` (form), `<section>` with `aria-label` (region). Use `aria-label` or `aria-labelledby` to differentiate multiple landmarks of the same type.
@@ -938,14 +938,14 @@ function validateFile(input) {
 
 ### Q33: What is the `aria-live` attribute and how does it work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is the `aria-live` attribute and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is the `aria-live` attribute and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-diagram.svg" alt="Diagram: What is the `aria-live` attribute and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-diagram.svg" alt="Diagram: What is the `aria-live` attribute and how does it work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is the `aria-live` attribute and how does it work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-aria-live-attribute-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is the `aria-live` attribute and how does it work?" width="30%">
 </a>
 
 **Answer:** `aria-live` tells screen readers to announce dynamic content changes without requiring user focus. Values: `off` (default, no announcement), `polite` (announce when idle), `assertive` (interrupt immediately). Use `aria-atomic="true"` for the entire region to be announced as a whole, and `aria-relevant` to control which types of changes trigger announcements.
@@ -969,14 +969,14 @@ function addNotification(msg) {
 
 ### Q34: What are the WCAG 2.2 success criteria for color contrast?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-handwritten.svg" alt="Handwritten: What are the WCAG 2.2 success criteria for color contrast?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-handwritten.svg" alt="Handwritten: What are the WCAG 2.2 success criteria for color contrast?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-diagram.svg" alt="Diagram: What are the WCAG 2.2 success criteria for color contrast?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-diagram.svg" alt="Diagram: What are the WCAG 2.2 success criteria for color contrast?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-sticky.svg" alt="Sticky Note: What are the WCAG 2.2 success criteria for color contrast?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-the-wcag-2-2-success-criteria-for-color-contrast-sticky.svg" alt="Sticky Note: What are the WCAG 2.2 success criteria for color contrast?" width="30%">
 </a>
 
 **Answer:** WCAG 2.2 Level AA requires a contrast ratio of at least 4.5:1 for normal text (under 18px or 14px bold) and 3:1 for large text (18px+ bold or 24px+ regular). Level AAA requires 7:1 for normal text and 4.5:1 for large text. Focus indicators must have 3:1 contrast against adjacent colors. UI components and graphical objects require 3:1.
@@ -1005,14 +1005,14 @@ function addNotification(msg) {
 
 ### Q35: How do you make a custom dropdown accessible?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-handwritten.svg" alt="Handwritten: How do you make a custom dropdown accessible?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-handwritten.svg" alt="Handwritten: How do you make a custom dropdown accessible?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-diagram.svg" alt="Diagram: How do you make a custom dropdown accessible?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-diagram.svg" alt="Diagram: How do you make a custom dropdown accessible?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-sticky.svg" alt="Sticky Note: How do you make a custom dropdown accessible?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-make-a-custom-dropdown-accessible-sticky.svg" alt="Sticky Note: How do you make a custom dropdown accessible?" width="30%">
 </a>
 
 **Answer:** A custom dropdown must implement: `role="combobox"` on the trigger, `role="listbox"` on the options container, `role="option"` on each item, `aria-expanded` for open/closed state, `aria-selected` for the current selection, `aria-activedescendant` pointing to the active option, keyboard navigation (Arrow keys, Enter, Escape), and proper focus management.
@@ -1035,14 +1035,14 @@ function addNotification(msg) {
 
 ### Q36: How do you implement skip-to-content links?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-handwritten.svg" alt="Handwritten: How do you implement skip-to-content links?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-handwritten.svg" alt="Handwritten: How do you implement skip-to-content links?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-diagram.svg" alt="Diagram: How do you implement skip-to-content links?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-diagram.svg" alt="Diagram: How do you implement skip-to-content links?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-sticky.svg" alt="Sticky Note: How do you implement skip-to-content links?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-skip-to-content-links-sticky.svg" alt="Sticky Note: How do you implement skip-to-content links?" width="30%">
 </a>
 
 **Answer:** A skip-to-content link is the first focusable element on the page. It is visually hidden until focused, allowing keyboard and screen reader users to bypass repetitive navigation. The link targets the `id` of the `<main>` element.
@@ -1075,14 +1075,14 @@ function addNotification(msg) {
 
 ### Q37: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-handwritten.svg" alt="Handwritten: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-handwritten.svg" alt="Handwritten: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-diagram.svg" alt="Diagram: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-diagram.svg" alt="Diagram: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-sticky.svg" alt="Sticky Note: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-aria-label-aria-labelledby-and-aria-describedby-sticky.svg" alt="Sticky Note: What is the difference between `aria-label`, `aria-labelledby`, and `aria-describedby`?" width="30%">
 </a>
 
 **Answer:** `aria-label` overrides the accessible name with a string. `aria-labelledby` references one or more elements by ID to construct the accessible name (higher priority than `aria-label`). `aria-describedby` provides additional descriptive information (announced after the name). Use `aria-labelledby` when visible text exists; use `aria-label` for icon-only buttons; use `aria-describedby` for supplementary instructions.
@@ -1107,14 +1107,14 @@ function addNotification(msg) {
 
 ### Q38: What are `aria-hidden` and `role="presentation"` / `role="none"`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-handwritten.svg" alt="Handwritten: What are `aria-hidden` and `role="presentation"` / `role="none"`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-handwritten.svg" alt="Handwritten: What are `aria-hidden` and `role="presentation"` / `role="none"`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-diagram.svg" alt="Diagram: What are `aria-hidden` and `role="presentation"` / `role="none"`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-diagram.svg" alt="Diagram: What are `aria-hidden` and `role="presentation"` / `role="none"`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-sticky.svg" alt="Sticky Note: What are `aria-hidden` and `role="presentation"` / `role="none"`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-aria-hidden-and-role-presentation-role-none-sticky.svg" alt="Sticky Note: What are `aria-hidden` and `role="presentation"` / `role="none"`?" width="30%">
 </a>
 
 **Answer:** `aria-hidden="true"` removes an element (and its children) from the accessibility tree, hiding it from screen readers. Use for decorative icons, repeated content, or offscreen panels. `role="presentation"` (or `role="none"`) removes semantic meaning while keeping content accessible → use for layout-only tables or decorative list containers.
@@ -1139,14 +1139,14 @@ function addNotification(msg) {
 
 ### Q39: How do you ensure keyboard accessibility for custom interactive elements?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-handwritten.svg" alt="Handwritten: How do you ensure keyboard accessibility for custom interactive elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-handwritten.svg" alt="Handwritten: How do you ensure keyboard accessibility for custom interactive elements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-diagram.svg" alt="Diagram: How do you ensure keyboard accessibility for custom interactive elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-diagram.svg" alt="Diagram: How do you ensure keyboard accessibility for custom interactive elements?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-sticky.svg" alt="Sticky Note: How do you ensure keyboard accessibility for custom interactive elements?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-ensure-keyboard-accessibility-for-custom-interactive-elements-sticky.svg" alt="Sticky Note: How do you ensure keyboard accessibility for custom interactive elements?" width="30%">
 </a>
 
 **Answer:** All interactive elements must be focusable (`tabindex="0"` for native focus, `tabindex="-1"` for scripted focus) and respond to keyboard events (Enter/Space for activation, Arrow keys for navigation, Escape for dismissal). Visible focus indicators are required. Use the `:focus-visible` pseudo-class to show focus only when using a keyboard.
@@ -1189,14 +1189,14 @@ function handleKeydown(event) {
 
 ### Q40: What is the `prefers-reduced-motion` media query?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-handwritten.svg" alt="Handwritten: What is the `prefers-reduced-motion` media query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-handwritten.svg" alt="Handwritten: What is the `prefers-reduced-motion` media query?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-diagram.svg" alt="Diagram: What is the `prefers-reduced-motion` media query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-diagram.svg" alt="Diagram: What is the `prefers-reduced-motion` media query?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-sticky.svg" alt="Sticky Note: What is the `prefers-reduced-motion` media query?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-prefers-reduced-motion-media-query-sticky.svg" alt="Sticky Note: What is the `prefers-reduced-motion` media query?" width="30%">
 </a>
 
 **Answer:** `prefers-reduced-motion` detects if the user has requested reduced motion in their OS accessibility settings. Respect this by disabling or scaling back animations, transitions, and auto-scrolling. This prevents vestibular disorders and motion sensitivity reactions.
@@ -1229,14 +1229,14 @@ function handleKeydown(event) {
 
 ### Q41: How does the Canvas API work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-handwritten.svg" alt="Handwritten: How does the Canvas API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-handwritten.svg" alt="Handwritten: How does the Canvas API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-diagram.svg" alt="Diagram: How does the Canvas API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-diagram.svg" alt="Diagram: How does the Canvas API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-sticky.svg" alt="Sticky Note: How does the Canvas API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-canvas-api-work-sticky.svg" alt="Sticky Note: How does the Canvas API work?" width="30%">
 </a>
 
 **Answer:** The `<canvas>` element provides a bitmap drawing surface controlled via JavaScript. Get the 2D rendering context, then use methods like `fillRect()`, `arc()`, `lineTo()`, `fillText()`, `beginPath()`, and `stroke()`. Canvas is pixel-based (not DOM-based) and great for games, charts, image processing, and real-time graphics.
@@ -1277,14 +1277,14 @@ data.forEach((value, i) => {
 
 ### Q42: How do you implement HTML5 Drag and Drop?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-handwritten.svg" alt="Handwritten: How do you implement HTML5 Drag and Drop?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-handwritten.svg" alt="Handwritten: How do you implement HTML5 Drag and Drop?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-diagram.svg" alt="Diagram: How do you implement HTML5 Drag and Drop?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-diagram.svg" alt="Diagram: How do you implement HTML5 Drag and Drop?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-sticky.svg" alt="Sticky Note: How do you implement HTML5 Drag and Drop?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-html5-drag-and-drop-sticky.svg" alt="Sticky Note: How do you implement HTML5 Drag and Drop?" width="30%">
 </a>
 
 **Answer:** The Drag and Drop API uses events: `dragstart`, `dragover`, `dragenter`, `dragleave`, `drop`, and `dragend`. Set `draggable="true"` on draggable elements. The `dataTransfer` object carries data between the source and target. Always call `preventDefault()` on `dragover` and `dragenter` to allow dropping.
@@ -1327,14 +1327,14 @@ function onDrop(event) {
 
 ### Q43: What is the difference between `localStorage`, `sessionStorage`, and cookies?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-handwritten.svg" alt="Handwritten: What is the difference between `localStorage`, `sessionStorage`, and cookies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-handwritten.svg" alt="Handwritten: What is the difference between `localStorage`, `sessionStorage`, and cookies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-diagram.svg" alt="Diagram: What is the difference between `localStorage`, `sessionStorage`, and cookies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-diagram.svg" alt="Diagram: What is the difference between `localStorage`, `sessionStorage`, and cookies?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-sticky.svg" alt="Sticky Note: What is the difference between `localStorage`, `sessionStorage`, and cookies?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-difference-between-localstorage-sessionstorage-and-cookies-sticky.svg" alt="Sticky Note: What is the difference between `localStorage`, `sessionStorage`, and cookies?" width="30%">
 </a>
 
 **Answer:** `localStorage` persists until explicitly deleted, has ~5-10MB limit, and is not sent with HTTP requests. `sessionStorage` persists only for the current tab session. Cookies have ~4KB limit, are sent with every HTTP request (affecting performance), support `HttpOnly` / `Secure` / `SameSite` flags, and have expiration dates. Use `localStorage` for client-only data, cookies for server communication.
@@ -1359,14 +1359,14 @@ document.cookie = 'theme=dark; path=/; max-age=31536000';
 
 ### Q44: How does the History API enable SPAs?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-handwritten.svg" alt="Handwritten: How does the History API enable SPAs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-handwritten.svg" alt="Handwritten: How does the History API enable SPAs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-diagram.svg" alt="Diagram: How does the History API enable SPAs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-diagram.svg" alt="Diagram: How does the History API enable SPAs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-sticky.svg" alt="Sticky Note: How does the History API enable SPAs?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-history-api-enable-spas-sticky.svg" alt="Sticky Note: How does the History API enable SPAs?" width="30%">
 </a>
 
 **Answer:** The History API provides `pushState()` and `replaceState()` to change the URL without a page reload, and the `popstate` event to respond to back/forward navigation. Combined with `fetch()` or AJAX, this enables single-page application routing. Always provide server-side fallback for direct URL access.
@@ -1402,14 +1402,14 @@ async function updateContent(path) {
 
 ### Q45: How does the Geolocation API work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-handwritten.svg" alt="Handwritten: How does the Geolocation API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-handwritten.svg" alt="Handwritten: How does the Geolocation API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-diagram.svg" alt="Diagram: How does the Geolocation API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-diagram.svg" alt="Diagram: How does the Geolocation API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-sticky.svg" alt="Sticky Note: How does the Geolocation API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-geolocation-api-work-sticky.svg" alt="Sticky Note: How does the Geolocation API work?" width="30%">
 </a>
 
 **Answer:** The Geolocation API (`navigator.geolocation`) provides device location via GPS, WiFi, or IP. `getCurrentPosition()` returns a one-time position; `watchPosition()` continuously monitors. Both accept success and error callbacks. Always handle permission denial and provide fallback content. HTTPS is required.
@@ -1462,14 +1462,14 @@ function getLocation() {
 
 ### Q46: How do Web Workers work and when should you use them?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-handwritten.svg" alt="Handwritten: How do Web Workers work and when should you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-handwritten.svg" alt="Handwritten: How do Web Workers work and when should you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-diagram.svg" alt="Diagram: How do Web Workers work and when should you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-diagram.svg" alt="Diagram: How do Web Workers work and when should you use them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-sticky.svg" alt="Sticky Note: How do Web Workers work and when should you use them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-web-workers-work-and-when-should-you-use-them-sticky.svg" alt="Sticky Note: How do Web Workers work and when should you use them?" width="30%">
 </a>
 
 **Answer:** Web Workers run JavaScript in a background thread, separate from the main UI thread. They communicate via `postMessage()` and the `onmessage` event. Workers cannot access the DOM, `window`, `document`, or `parent`. Use them for CPU-intensive operations: image processing, data parsing, encryption, or large computations that would otherwise block the UI.
@@ -1518,14 +1518,14 @@ function expensiveCalculation(n) {
 
 ### Q47: What is the Page Visibility API?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-handwritten.svg" alt="Handwritten: What is the Page Visibility API?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-handwritten.svg" alt="Handwritten: What is the Page Visibility API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-diagram.svg" alt="Diagram: What is the Page Visibility API?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-diagram.svg" alt="Diagram: What is the Page Visibility API?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-sticky.svg" alt="Sticky Note: What is the Page Visibility API?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-page-visibility-api-sticky.svg" alt="Sticky Note: What is the Page Visibility API?" width="30%">
 </a>
 
 **Answer:** The Page Visibility API (`document.visibilityState` and `visibilitychange` event) detects if the page is visible or hidden. Use it to pause video/audio, stop animations, throttle network requests, or pause WebSocket connections when the user switches tabs, saving CPU and battery.
@@ -1558,14 +1558,14 @@ function resumeVideo() {
 
 ### Q48: How does the Intersection Observer API work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-handwritten.svg" alt="Handwritten: How does the Intersection Observer API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-handwritten.svg" alt="Handwritten: How does the Intersection Observer API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-diagram.svg" alt="Diagram: How does the Intersection Observer API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-diagram.svg" alt="Diagram: How does the Intersection Observer API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-sticky.svg" alt="Sticky Note: How does the Intersection Observer API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-intersection-observer-api-work-sticky.svg" alt="Sticky Note: How does the Intersection Observer API work?" width="30%">
 </a>
 
 **Answer:** `IntersectionObserver` efficiently detects when an element enters or exits the viewport (or another container). It fires a callback with `entries`, each containing `isIntersecting`, `intersectionRatio`, and `boundingClientRect`. Use for lazy loading images, infinite scroll, animation triggers, and ad visibility tracking → much more performant than scroll event listeners.
@@ -1596,14 +1596,14 @@ document.querySelectorAll('.lazy').forEach(img => observer.observe(img));
 
 ### Q49: What is the purpose of the `download` attribute on links?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-handwritten.svg" alt="Handwritten: What is the purpose of the `download` attribute on links?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-handwritten.svg" alt="Handwritten: What is the purpose of the `download` attribute on links?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-diagram.svg" alt="Diagram: What is the purpose of the `download` attribute on links?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-diagram.svg" alt="Diagram: What is the purpose of the `download` attribute on links?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-sticky.svg" alt="Sticky Note: What is the purpose of the `download` attribute on links?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-download-attribute-on-links-sticky.svg" alt="Sticky Note: What is the purpose of the `download` attribute on links?" width="30%">
 </a>
 
 **Answer:** The `download` attribute on an `<a>` element forces the browser to download the linked file instead of navigating to it. Optionally, set the attribute value to specify the downloaded filename. The resource must be same-origin for the `download` attribute to work (CORS restrictions apply).
@@ -1620,14 +1620,14 @@ document.querySelectorAll('.lazy').forEach(img => observer.observe(img));
 
 ### Q50: How does the Fullscreen API work?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-handwritten.svg" alt="Handwritten: How does the Fullscreen API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-handwritten.svg" alt="Handwritten: How does the Fullscreen API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-diagram.svg" alt="Diagram: How does the Fullscreen API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-diagram.svg" alt="Diagram: How does the Fullscreen API work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-sticky.svg" alt="Sticky Note: How does the Fullscreen API work?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-the-fullscreen-api-work-sticky.svg" alt="Sticky Note: How does the Fullscreen API work?" width="30%">
 </a>
 
 **Answer:** The Fullscreen API (`element.requestFullscreen()` and `document.exitFullscreen()`) allows elements to occupy the entire screen. Watch `fullscreenchange` and `fullscreenerror` events. Cross-origin iframes require the `allow="fullscreen"` attribute. Always provide a visible exit mechanism.
@@ -1658,14 +1658,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q51: What essential meta tags should every HTML5 page include?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-handwritten.svg" alt="Handwritten: What essential meta tags should every HTML5 page include?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-handwritten.svg" alt="Handwritten: What essential meta tags should every HTML5 page include?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-diagram.svg" alt="Diagram: What essential meta tags should every HTML5 page include?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-diagram.svg" alt="Diagram: What essential meta tags should every HTML5 page include?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-sticky.svg" alt="Sticky Note: What essential meta tags should every HTML5 page include?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-essential-meta-tags-should-every-html5-page-include-sticky.svg" alt="Sticky Note: What essential meta tags should every HTML5 page include?" width="30%">
 </a>
 
 **Answer:** Every page should include: `charset="utf-8"` as the first meta element, `viewport` for mobile responsiveness, `description` for search snippets, `title` within `<head>`, and favicon via `<link rel="icon">`. Additionally, `robots` controls indexing, and `canonical` prevents duplicate content penalties.
@@ -1688,14 +1688,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q52: How do you implement Open Graph and Twitter Card meta tags?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-handwritten.svg" alt="Handwritten: How do you implement Open Graph and Twitter Card meta tags?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-handwritten.svg" alt="Handwritten: How do you implement Open Graph and Twitter Card meta tags?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-diagram.svg" alt="Diagram: How do you implement Open Graph and Twitter Card meta tags?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-diagram.svg" alt="Diagram: How do you implement Open Graph and Twitter Card meta tags?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-sticky.svg" alt="Sticky Note: How do you implement Open Graph and Twitter Card meta tags?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-open-graph-and-twitter-card-meta-tags-sticky.svg" alt="Sticky Note: How do you implement Open Graph and Twitter Card meta tags?" width="30%">
 </a>
 
 **Answer:** Open Graph (OG) tags control how content appears when shared on Facebook, LinkedIn, Discord, and other platforms. Twitter Cards use `twitter:` tags (or fall back to OG). Required OG tags: `og:title`, `og:description`, `og:type`, `og:url`, `og:image`. Images should be at least 1200x630 for optimal display.
@@ -1724,14 +1724,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q53: What is JSON-LD structured data and how do you implement it?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is JSON-LD structured data and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is JSON-LD structured data and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is JSON-LD structured data and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is JSON-LD structured data and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is JSON-LD structured data and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-json-ld-structured-data-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is JSON-LD structured data and how do you implement it?" width="30%">
 </a>
 
 **Answer:** JSON-LD is Google's preferred format for structured data. It's a `<script>` block in the `<head>` or `<body>` that describes the page content in a machine-readable vocabulary (Schema.org). Common types: `Article`, `Product`, `FAQPage`, `BreadcrumbList`, `LocalBusiness`, `Course`, `Organization`, `Person`. Implement with `type="application/ld+json"`.
@@ -1769,14 +1769,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q54: What is the purpose of `rel="canonical"`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-handwritten.svg" alt="Handwritten: What is the purpose of `rel="canonical"`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-handwritten.svg" alt="Handwritten: What is the purpose of `rel="canonical"`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-diagram.svg" alt="Diagram: What is the purpose of `rel="canonical"`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-diagram.svg" alt="Diagram: What is the purpose of `rel="canonical"`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-sticky.svg" alt="Sticky Note: What is the purpose of `rel="canonical"`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-rel-canonical-sticky.svg" alt="Sticky Note: What is the purpose of `rel="canonical"`?" width="30%">
 </a>
 
 **Answer:** The canonical link element tells search engines which URL is the definitive version of a page. Use it to consolidate duplicate content from query parameters (e.g., `?page=2&sort=asc`), multiple paths to the same content, or URL variants (HTTP/HTTPS, with/without `www`, trailing slash differences). The canonical URL must be absolute and point to the preferred version.
@@ -1800,14 +1800,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q55: How do you implement `rel="prev"` and `rel="next"` for paginated content?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-handwritten.svg" alt="Handwritten: How do you implement `rel="prev"` and `rel="next"` for paginated content?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-handwritten.svg" alt="Handwritten: How do you implement `rel="prev"` and `rel="next"` for paginated content?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-diagram.svg" alt="Diagram: How do you implement `rel="prev"` and `rel="next"` for paginated content?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-diagram.svg" alt="Diagram: How do you implement `rel="prev"` and `rel="next"` for paginated content?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-sticky.svg" alt="Sticky Note: How do you implement `rel="prev"` and `rel="next"` for paginated content?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-rel-prev-and-rel-next-for-paginated-content-sticky.svg" alt="Sticky Note: How do you implement `rel="prev"` and `rel="next"` for paginated content?" width="30%">
 </a>
 
 **Answer:** For paginated series, `rel="prev"` and `rel="next"` on the `<link>` element or `<a>` element tell search engines the pagination sequence. While Google now uses `rel="canonical"` and `rel="next"` differently, best practice is still to include these for clarity and for non-Google search engines.
@@ -1829,14 +1829,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q56: What are hreflang tags and how do you implement them?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-handwritten.svg" alt="Handwritten: What are hreflang tags and how do you implement them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-handwritten.svg" alt="Handwritten: What are hreflang tags and how do you implement them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-diagram.svg" alt="Diagram: What are hreflang tags and how do you implement them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-diagram.svg" alt="Diagram: What are hreflang tags and how do you implement them?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-sticky.svg" alt="Sticky Note: What are hreflang tags and how do you implement them?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-are-hreflang-tags-and-how-do-you-implement-them-sticky.svg" alt="Sticky Note: What are hreflang tags and how do you implement them?" width="30%">
 </a>
 
 **Answer:** `hreflang` tags tell search engines which language/region version of a page to serve to users. Use `<link rel="alternate" hreflang="xx">` in the `<head>` or in the HTTP header. Every language variant must link to all other variants including itself. Use `x-default` as the fallback for unspecified languages.
@@ -1855,14 +1855,14 @@ document.addEventListener('fullscreenchange', () => {
 
 ### Q57: How do you create a sitemap.xml and robots.txt?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-handwritten.svg" alt="Handwritten: How do you create a sitemap.xml and robots.txt?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-handwritten.svg" alt="Handwritten: How do you create a sitemap.xml and robots.txt?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-diagram.svg" alt="Diagram: How do you create a sitemap.xml and robots.txt?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-diagram.svg" alt="Diagram: How do you create a sitemap.xml and robots.txt?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-sticky.svg" alt="Sticky Note: How do you create a sitemap.xml and robots.txt?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-a-sitemap-xml-and-robots-txt-sticky.svg" alt="Sticky Note: How do you create a sitemap.xml and robots.txt?" width="30%">
 </a>
 
 **Answer:** `sitemap.xml` lists all crawlable URLs with optional metadata (lastmod, changefreq, priority, alternate hreflang). `robots.txt` instructs crawlers which paths to allow or disallow and points to the sitemap. Both should be at the root of the domain.
@@ -1906,14 +1906,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q58: What meta tags prevent content from being indexed or followed?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-handwritten.svg" alt="Handwritten: What meta tags prevent content from being indexed or followed?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-handwritten.svg" alt="Handwritten: What meta tags prevent content from being indexed or followed?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-diagram.svg" alt="Diagram: What meta tags prevent content from being indexed or followed?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-diagram.svg" alt="Diagram: What meta tags prevent content from being indexed or followed?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-sticky.svg" alt="Sticky Note: What meta tags prevent content from being indexed or followed?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-meta-tags-prevent-content-from-being-indexed-or-followed-sticky.svg" alt="Sticky Note: What meta tags prevent content from being indexed or followed?" width="30%">
 </a>
 
 **Answer:** The `robots` meta tag controls crawler behavior: `noindex` prevents indexing, `nofollow` prevents following links on the page, `noarchive` prevents cached copies, `nosnippet` prevents search snippet generation, `max-snippet:-1` allows unlimited snippet length, `max-image-preview:large` allows large image previews. The `X-Robots-Tag` HTTP header does the same for non-HTML content (PDFs, images).
@@ -1935,14 +1935,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q59: What is the purpose of the `<title>` tag format for SEO?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-handwritten.svg" alt="Handwritten: What is the purpose of the `<title>` tag format for SEO?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-handwritten.svg" alt="Handwritten: What is the purpose of the `<title>` tag format for SEO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-diagram.svg" alt="Diagram: What is the purpose of the `<title>` tag format for SEO?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-diagram.svg" alt="Diagram: What is the purpose of the `<title>` tag format for SEO?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-sticky.svg" alt="Sticky Note: What is the purpose of the `<title>` tag format for SEO?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/what-is-the-purpose-of-the-title-tag-format-for-seo-sticky.svg" alt="Sticky Note: What is the purpose of the `<title>` tag format for SEO?" width="30%">
 </a>
 
 **Answer:** The `<title>` is the most important on-page SEO factor. It appears as the clickable headline in search results and the browser tab. Best practices: include primary keyword near the front, keep under 60 characters, use the brand name at the end (separated by a pipe `|` or dash `→`), make it unique per page, and make it compelling to drive clicks.
@@ -1962,14 +1962,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q60: How do you implement structured data for a FAQ page?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-handwritten.svg" alt="Handwritten: How do you implement structured data for a FAQ page?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-handwritten.svg" alt="Handwritten: How do you implement structured data for a FAQ page?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-diagram.svg" alt="Diagram: How do you implement structured data for a FAQ page?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-diagram.svg" alt="Diagram: How do you implement structured data for a FAQ page?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-sticky.svg" alt="Sticky Note: How do you implement structured data for a FAQ page?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-implement-structured-data-for-a-faq-page-sticky.svg" alt="Sticky Note: How do you implement structured data for a FAQ page?" width="30%">
 </a>
 
 **Answer:** FA questions should be marked up with `FAQPage` JSON-LD schema. Each Q&A pair uses `mainEntity` with `@type="Question"`, `name` for the question, and `acceptedAnswer` with `@type="Answer"` and `text`. Google may render this as an expandable rich result in search.
@@ -2007,14 +2007,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q61: How does Laravel CSRF protection work in Blade forms?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-handwritten.svg" alt="Handwritten: How does Laravel CSRF protection work in Blade forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-handwritten.svg" alt="Handwritten: How does Laravel CSRF protection work in Blade forms?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-diagram.svg" alt="Diagram: How does Laravel CSRF protection work in Blade forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-diagram.svg" alt="Diagram: How does Laravel CSRF protection work in Blade forms?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-sticky.svg" alt="Sticky Note: How does Laravel CSRF protection work in Blade forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-does-laravel-csrf-protection-work-in-blade-forms-sticky.svg" alt="Sticky Note: How does Laravel CSRF protection work in Blade forms?" width="30%">
 </a>
 
 **Answer:** Laravel automatically generates a CSRF token per session. Every POST/PUT/PATCH/DELETE form must include `@csrf` inside the `<form>` tag. This generates a hidden input `<input type="hidden" name="_token" value="...">`. Laravel's `VerifyCsrfToken` middleware checks the submitted token against the session token. Exclude specific routes from CSRF in the middleware if needed (e.g., webhooks).
@@ -2035,14 +2035,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q62: How do you use the `@method` directive for RESTful forms?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-handwritten.svg" alt="Handwritten: How do you use the `@method` directive for RESTful forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-handwritten.svg" alt="Handwritten: How do you use the `@method` directive for RESTful forms?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-diagram.svg" alt="Diagram: How do you use the `@method` directive for RESTful forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-diagram.svg" alt="Diagram: How do you use the `@method` directive for RESTful forms?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-sticky.svg" alt="Sticky Note: How do you use the `@method` directive for RESTful forms?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-method-directive-for-restful-forms-sticky.svg" alt="Sticky Note: How do you use the `@method` directive for RESTful forms?" width="30%">
 </a>
 
 **Answer:** HTML forms only support GET and POST methods. Laravel's `@method('PUT')`, `@method('PATCH')`, and `@method('DELETE')` directives generate a hidden `_method` input. The middleware `HandlePrecognitiveRequests` or the HTTP kernel converts this back to the intended method before routing.
@@ -2069,14 +2069,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q63: How do you display old input and validation errors in Blade?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-handwritten.svg" alt="Handwritten: How do you display old input and validation errors in Blade?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-handwritten.svg" alt="Handwritten: How do you display old input and validation errors in Blade?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-diagram.svg" alt="Diagram: How do you display old input and validation errors in Blade?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-diagram.svg" alt="Diagram: How do you display old input and validation errors in Blade?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-sticky.svg" alt="Sticky Note: How do you display old input and validation errors in Blade?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-display-old-input-and-validation-errors-in-blade-sticky.svg" alt="Sticky Note: How do you display old input and validation errors in Blade?" width="30%">
 </a>
 
 **Answer:** Use the `old()` helper to repopulate form values after a validation failure. Use `@error('field')` to conditionally display the validation error message. The `$errors` variable is always available in Blade views. For grouped errors, use `$errors->get('field-name')` or `$errors->first('field-name')`.
@@ -2113,14 +2113,14 @@ Sitemap: https://example.com/sitemap.xml
 
 ### Q64: How do you create and use Blade components with slots?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-handwritten.svg" alt="Handwritten: How do you create and use Blade components with slots?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-handwritten.svg" alt="Handwritten: How do you create and use Blade components with slots?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-diagram.svg" alt="Diagram: How do you create and use Blade components with slots?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-diagram.svg" alt="Diagram: How do you create and use Blade components with slots?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-sticky.svg" alt="Sticky Note: How do you create and use Blade components with slots?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-create-and-use-blade-components-with-slots-sticky.svg" alt="Sticky Note: How do you create and use Blade components with slots?" width="30%">
 </a>
 
 **Answer:** Create a component with `php artisan make:component Alert`. The class handles logic; the Blade view defines the template. Use `{{ $slot }}` for default content, named slots with `{{ $title }}`, and component attributes with `{{ $attributes }}`. Render with `<x-alert>` syntax.
@@ -2174,14 +2174,14 @@ class Alert extends Component
 
 ### Q65: How do you use Blade's `@auth` and `@guest` directives?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-handwritten.svg" alt="Handwritten: How do you use Blade's `@auth` and `@guest` directives?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-handwritten.svg" alt="Handwritten: How do you use Blade's `@auth` and `@guest` directives?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-diagram.svg" alt="Diagram: How do you use Blade's `@auth` and `@guest` directives?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-diagram.svg" alt="Diagram: How do you use Blade's `@auth` and `@guest` directives?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-sticky.svg" alt="Sticky Note: How do you use Blade's `@auth` and `@guest` directives?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-auth-and-guest-directives-sticky.svg" alt="Sticky Note: How do you use Blade's `@auth` and `@guest` directives?" width="30%">
 </a>
 
 **Answer:** `@auth` displays content only for authenticated users. `@guest` displays content only for guests (unauthenticated). Both accept an optional guard parameter. The `@endauth` and `@endguest` directives close the blocks. These are cleaner than manual `if(auth()->check())` checks.
@@ -2215,14 +2215,14 @@ class Alert extends Component
 
 ### Q66: How do you use the `@can` and `@cannot` directives for authorization?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-handwritten.svg" alt="Handwritten: How do you use the `@can` and `@cannot` directives for authorization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-handwritten.svg" alt="Handwritten: How do you use the `@can` and `@cannot` directives for authorization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-diagram.svg" alt="Diagram: How do you use the `@can` and `@cannot` directives for authorization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-diagram.svg" alt="Diagram: How do you use the `@can` and `@cannot` directives for authorization?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-sticky.svg" alt="Sticky Note: How do you use the `@can` and `@cannot` directives for authorization?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-the-can-and-cannot-directives-for-authorization-sticky.svg" alt="Sticky Note: How do you use the `@can` and `@cannot` directives for authorization?" width="30%">
 </a>
 
 **Answer:** `@can` checks if the current user has a given ability via Laravel's Gate/Policy system. `@cannot` checks the inverse. Both accept the action name and the model. Define abilities in `App\Providers\AuthServiceProvider` or in Policy classes.
@@ -2247,14 +2247,14 @@ class Alert extends Component
 
 ### Q67: How do you iterate over collections in Blade with `@forelse`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-handwritten.svg" alt="Handwritten: How do you iterate over collections in Blade with `@forelse`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-handwritten.svg" alt="Handwritten: How do you iterate over collections in Blade with `@forelse`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-diagram.svg" alt="Diagram: How do you iterate over collections in Blade with `@forelse`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-diagram.svg" alt="Diagram: How do you iterate over collections in Blade with `@forelse`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-sticky.svg" alt="Sticky Note: How do you iterate over collections in Blade with `@forelse`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-iterate-over-collections-in-blade-with-forelse-sticky.svg" alt="Sticky Note: How do you iterate over collections in Blade with `@forelse`?" width="30%">
 </a>
 
 **Answer:** `@forelse` is a combination of `@foreach` and an `@empty` fallback for when the collection is empty. This eliminates the need for an explicit `if` check. The `$loop` variable provides iteration metadata (index, first, last, count, etc.).
@@ -2286,14 +2286,14 @@ class Alert extends Component
 
 ### Q68: How do you use form model binding with `@form` and `@model`?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-handwritten.svg" alt="Handwritten: How do you use form model binding with `@form` and `@model`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-handwritten.svg" alt="Handwritten: How do you use form model binding with `@form` and `@model`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-diagram.svg" alt="Diagram: How do you use form model binding with `@form` and `@model`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-diagram.svg" alt="Diagram: How do you use form model binding with `@form` and `@model`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-sticky.svg" alt="Sticky Note: How do you use form model binding with `@form` and `@model`?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-form-model-binding-with-form-and-model-sticky.svg" alt="Sticky Note: How do you use form model binding with `@form` and `@model`?" width="30%">
 </a>
 
 **Answer:** Laravel's `@model` directive (from `laravel-views` or custom implementations) binds an Eloquent model to the form, automatically populating field values with existing model data. The standard approach uses the `old()` helper with fallback to the model attribute: `old('title', $post->title)`.
@@ -2333,14 +2333,14 @@ class Alert extends Component
 
 ### Q69: How do you use Blade's `@push` and `@stack` for asset management?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-handwritten.svg" alt="Handwritten: How do you use Blade's `@push` and `@stack` for asset management?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-handwritten.svg" alt="Handwritten: How do you use Blade's `@push` and `@stack` for asset management?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-diagram.svg" alt="Diagram: How do you use Blade's `@push` and `@stack` for asset management?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-diagram.svg" alt="Diagram: How do you use Blade's `@push` and `@stack` for asset management?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-sticky.svg" alt="Sticky Note: How do you use Blade's `@push` and `@stack` for asset management?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-use-blade-s-push-and-stack-for-asset-management-sticky.svg" alt="Sticky Note: How do you use Blade's `@push` and `@stack` for asset management?" width="30%">
 </a>
 
 **Answer:** `@push('name')` appends content to a named stack. `@stack('name')` renders all pushed content in order. Use for deferred scripts, CSS, or any asset that child views need to inject into a layout. `@prepend('name')` adds content to the beginning of the stack.
@@ -2391,14 +2391,14 @@ class Alert extends Component
 
 ### Q70: How do you render safe HTML content and prevent XSS in Blade?
 
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-handwritten.svg" alt="Handwritten: How do you render safe HTML content and prevent XSS in Blade?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-handwritten.svg" alt="Handwritten: How do you render safe HTML content and prevent XSS in Blade?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-diagram.svg" alt="Diagram: How do you render safe HTML content and prevent XSS in Blade?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-diagram.svg" alt="Diagram: How do you render safe HTML content and prevent XSS in Blade?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-sticky.svg" alt="Sticky Note: How do you render safe HTML content and prevent XSS in Blade?" width="30%">
+<a href="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/51-interview-html/how-do-you-render-safe-html-content-and-prevent-xss-in-blade-sticky.svg" alt="Sticky Note: How do you render safe HTML content and prevent XSS in Blade?" width="30%">
 </a>
 
 **Answer:** By default, Blade uses `{{ $var }}` which escapes all output via `htmlspecialchars()` → this prevents XSS. To render trusted HTML (e.g., from a WYSIWYG editor), use `{!! $var !!}` (unescaped output). Always sanitize HTML before storing, and never use `{!! !!}` on user input without purification. Use `Str::markdown()` or HTML Purifier for safe rendering.

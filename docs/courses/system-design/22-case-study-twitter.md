@@ -54,14 +54,14 @@ flowchart LR
 
 ### Phase 1: Problem Scope and Requirements
 
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-handwritten.svg" alt="Handwritten: Phase 1: Problem Scope and Requirements" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-handwritten.svg" alt="Handwritten: Phase 1: Problem Scope and Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-diagram.svg" alt="Diagram: Phase 1: Problem Scope and Requirements" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-diagram.svg" alt="Diagram: Phase 1: Problem Scope and Requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-sticky.svg" alt="Sticky Note: Phase 1: Problem Scope and Requirements" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-1-problem-scope-and-requirements-sticky.svg" alt="Sticky Note: Phase 1: Problem Scope and Requirements" width="30%">
 </a>
 
 
@@ -80,14 +80,14 @@ Non-functional requirements include high write availability (tweets must never b
 
 ### Phase 2: Timeline Generation — Fan-Out Strategies
 
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-handwritten.svg" alt="Handwritten: Phase 2: Timeline Generation — Fan-Out Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-handwritten.svg" alt="Handwritten: Phase 2: Timeline Generation — Fan-Out Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-diagram.svg" alt="Diagram: Phase 2: Timeline Generation — Fan-Out Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-diagram.svg" alt="Diagram: Phase 2: Timeline Generation — Fan-Out Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-sticky.svg" alt="Sticky Note: Phase 2: Timeline Generation — Fan-Out Strategies" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-2-timeline-generation-fan-out-strategies-sticky.svg" alt="Sticky Note: Phase 2: Timeline Generation — Fan-Out Strategies" width="30%">
 </a>
 
 
@@ -182,14 +182,14 @@ This analysis explains the hybrid threshold. Since 99.9% of users have followers
 
 ### Phase 3: The Evolution of Twitter's Architecture
 
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-handwritten.svg" alt="Handwritten: Phase 3: The Evolution of Twitter's Architecture" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-handwritten.svg" alt="Handwritten: Phase 3: The Evolution of Twitter's Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-diagram.svg" alt="Diagram: Phase 3: The Evolution of Twitter's Architecture" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-diagram.svg" alt="Diagram: Phase 3: The Evolution of Twitter's Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-sticky.svg" alt="Sticky Note: Phase 3: The Evolution of Twitter's Architecture" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-the-evolution-of-twitter-s-architecture-sticky.svg" alt="Sticky Note: Phase 3: The Evolution of Twitter's Architecture" width="30%">
 </a>
 
 
@@ -289,14 +289,14 @@ graph TB
 
 ### Phase 3 (continued): Deep Dives
 
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-handwritten.svg" alt="Handwritten: Phase 3 (continued): Deep Dives" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-handwritten.svg" alt="Handwritten: Phase 3 (continued): Deep Dives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-diagram.svg" alt="Diagram: Phase 3 (continued): Deep Dives" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-diagram.svg" alt="Diagram: Phase 3 (continued): Deep Dives" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-sticky.svg" alt="Sticky Note: Phase 3 (continued): Deep Dives" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-3-continued-deep-dives-sticky.svg" alt="Sticky Note: Phase 3 (continued): Deep Dives" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ Twitter's early outages provide a catalog of failure modes at scale, each with a
 
 ### Phase 4: Data Model and Storage
 
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-handwritten.svg" alt="Handwritten: Phase 4: Data Model and Storage" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-handwritten.svg" alt="Handwritten: Phase 4: Data Model and Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-diagram.svg" alt="Diagram: Phase 4: Data Model and Storage" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-diagram.svg" alt="Diagram: Phase 4: Data Model and Storage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-sticky.svg" alt="Sticky Note: Phase 4: Data Model and Storage" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/phase-4-data-model-and-storage-sticky.svg" alt="Sticky Note: Phase 4: Data Model and Storage" width="30%">
 </a>
 
 
@@ -582,14 +582,14 @@ function buildTimeline(tweets: string[], followerCounts: number[]): Map<string, 
 
 ### Implementation: Twitter Architecture Case Study
 
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-handwritten.svg" alt="Handwritten: Implementation: Twitter Architecture Case Study" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-handwritten.svg" alt="Handwritten: Implementation: Twitter Architecture Case Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-diagram.svg" alt="Diagram: Implementation: Twitter Architecture Case Study" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-diagram.svg" alt="Diagram: Implementation: Twitter Architecture Case Study" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-sticky.svg" alt="Sticky Note: Implementation: Twitter Architecture Case Study" width="30%">
+<a href="../../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/22-case-study-twitter/implementation-twitter-architecture-case-study-sticky.svg" alt="Sticky Note: Implementation: Twitter Architecture Case Study" width="30%">
 </a>
 
 

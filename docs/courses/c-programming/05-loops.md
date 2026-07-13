@@ -13,14 +13,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -50,14 +50,14 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ A `for` loop is like running laps around a track: you know exactly how many laps
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -92,14 +92,14 @@ for (initialization; condition; update) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ for (initialization; condition; update) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ END WHILE
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ for (int i = 1; i <= 3; i++) {
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -292,14 +292,14 @@ int main(void) {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ int main(void) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -331,14 +331,14 @@ int main(void) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ int main(void) {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -373,14 +373,14 @@ A `while` loop is like checking your phone for a ride arrival: "While the Uber h
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -392,14 +392,14 @@ while (condition) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -410,14 +410,14 @@ while (condition) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -431,14 +431,14 @@ END WHILE
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -464,14 +464,14 @@ while (n > 0) {
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -572,14 +572,14 @@ int main(void) {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -590,14 +590,14 @@ int main(void) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -611,14 +611,14 @@ int main(void) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -637,14 +637,14 @@ int main(void) {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -652,14 +652,14 @@ A `do-while` loop is like ordering at a restaurant: "Here is the menu — order 
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -671,14 +671,14 @@ do {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -689,14 +689,14 @@ do {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -709,14 +709,14 @@ UNTIL input == quit_signal
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -743,14 +743,14 @@ do {
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -845,14 +845,14 @@ Reversed: 4321
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -863,14 +863,14 @@ Reversed: 4321
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -883,14 +883,14 @@ Reversed: 4321
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -908,14 +908,14 @@ Reversed: 4321
 
 ### 5.4.1 `break`
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-handwritten.svg" alt="Handwritten: 5.4.1 `break`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-handwritten.svg" alt="Handwritten: 5.4.1 `break`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-diagram.svg" alt="Diagram: 5.4.1 `break`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-diagram.svg" alt="Diagram: 5.4.1 `break`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-sticky.svg" alt="Sticky Note: 5.4.1 `break`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-1-break-sticky.svg" alt="Sticky Note: 5.4.1 `break`" width="30%">
 </a>
 
 
@@ -1004,14 +1004,14 @@ Only the inner loop breaks when `i==2 && j==2`. The outer loop continues normall
 
 ### 5.4.2 `continue`
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-handwritten.svg" alt="Handwritten: 5.4.2 `continue`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-handwritten.svg" alt="Handwritten: 5.4.2 `continue`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-diagram.svg" alt="Diagram: 5.4.2 `continue`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-diagram.svg" alt="Diagram: 5.4.2 `continue`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-sticky.svg" alt="Sticky Note: 5.4.2 `continue`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-2-continue-sticky.svg" alt="Sticky Note: 5.4.2 `continue`" width="30%">
 </a>
 
 
@@ -1099,14 +1099,14 @@ int main(void) {
 
 ### 5.4.3 `goto`
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-handwritten.svg" alt="Handwritten: 5.4.3 `goto`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-handwritten.svg" alt="Handwritten: 5.4.3 `goto`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-diagram.svg" alt="Diagram: 5.4.3 `goto`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-diagram.svg" alt="Diagram: 5.4.3 `goto`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-sticky.svg" alt="Sticky Note: 5.4.3 `goto`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-3-goto-sticky.svg" alt="Sticky Note: 5.4.3 `goto`" width="30%">
 </a>
 
 
@@ -1163,14 +1163,14 @@ Found 5 at [1][1]
 
 ### 5.4.4 `break` vs `continue` vs `goto` Comparison
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-handwritten.svg" alt="Handwritten: 5.4.4 `break` vs `continue` vs `goto` Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-handwritten.svg" alt="Handwritten: 5.4.4 `break` vs `continue` vs `goto` Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-diagram.svg" alt="Diagram: 5.4.4 `break` vs `continue` vs `goto` Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-diagram.svg" alt="Diagram: 5.4.4 `break` vs `continue` vs `goto` Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-sticky.svg" alt="Sticky Note: 5.4.4 `break` vs `continue` vs `goto` Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-4-4-break-vs-continue-vs-goto-comparison-sticky.svg" alt="Sticky Note: 5.4.4 `break` vs `continue` vs `goto` Comparison" width="30%">
 </a>
 
 
@@ -1192,14 +1192,14 @@ Found 5 at [1][1]
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1207,14 +1207,14 @@ A clock: the minute hand (inner loop) completes 60 ticks for each tick of the ho
 
 ### Syntax Pattern
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-handwritten.svg" alt="Handwritten: Syntax Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-handwritten.svg" alt="Handwritten: Syntax Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-diagram.svg" alt="Diagram: Syntax Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-diagram.svg" alt="Diagram: Syntax Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-sticky.svg" alt="Sticky Note: Syntax Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/syntax-pattern-sticky.svg" alt="Sticky Note: Syntax Pattern" width="30%">
 </a>
 
 
@@ -1228,14 +1228,14 @@ for (outer initialization; outer condition; outer update) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -1249,14 +1249,14 @@ for (outer initialization; outer condition; outer update) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -1271,14 +1271,14 @@ NEXT i
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -1318,14 +1318,14 @@ Total iterations: 3 (outer) x 2 (inner) = 6.
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -1430,14 +1430,14 @@ int main(void) {
 
 ### Complexity Analysis of Nested Loops
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-handwritten.svg" alt="Handwritten: Complexity Analysis of Nested Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-handwritten.svg" alt="Handwritten: Complexity Analysis of Nested Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-diagram.svg" alt="Diagram: Complexity Analysis of Nested Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-diagram.svg" alt="Diagram: Complexity Analysis of Nested Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-sticky.svg" alt="Sticky Note: Complexity Analysis of Nested Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/complexity-analysis-of-nested-loops-sticky.svg" alt="Sticky Note: Complexity Analysis of Nested Loops" width="30%">
 </a>
 
 
@@ -1453,14 +1453,14 @@ int main(void) {
 
 ### Why Dependent Inner Loops Are Still O(n²)
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-handwritten.svg" alt="Handwritten: Why Dependent Inner Loops Are Still O(n²)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-handwritten.svg" alt="Handwritten: Why Dependent Inner Loops Are Still O(n²)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-diagram.svg" alt="Diagram: Why Dependent Inner Loops Are Still O(n²)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-diagram.svg" alt="Diagram: Why Dependent Inner Loops Are Still O(n²)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-sticky.svg" alt="Sticky Note: Why Dependent Inner Loops Are Still O(n²)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/why-dependent-inner-loops-are-still-o-n-sticky.svg" alt="Sticky Note: Why Dependent Inner Loops Are Still O(n²)" width="30%">
 </a>
 
 
@@ -1472,14 +1472,14 @@ The constant factor (×½) doesn't change the complexity class. For n = 1000, n�
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1492,14 +1492,14 @@ The constant factor (×½) doesn't change the complexity class. For n = 1000, n�
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1518,14 +1518,14 @@ The constant factor (×½) doesn't change the complexity class. For n = 1000, n�
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1533,14 +1533,14 @@ A traffic light controller in an intersection runs forever: "While the system is
 
 ### Intentional Infinite Loops
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-handwritten.svg" alt="Handwritten: Intentional Infinite Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-handwritten.svg" alt="Handwritten: Intentional Infinite Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-diagram.svg" alt="Diagram: Intentional Infinite Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-diagram.svg" alt="Diagram: Intentional Infinite Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-sticky.svg" alt="Sticky Note: Intentional Infinite Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/intentional-infinite-loops-sticky.svg" alt="Sticky Note: Intentional Infinite Loops" width="30%">
 </a>
 
 
@@ -1603,14 +1603,14 @@ void idle_task(void) {
 
 ### Unintentional Infinite Loops (Bugs)
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-handwritten.svg" alt="Handwritten: Unintentional Infinite Loops (Bugs)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-handwritten.svg" alt="Handwritten: Unintentional Infinite Loops (Bugs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-diagram.svg" alt="Diagram: Unintentional Infinite Loops (Bugs)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-diagram.svg" alt="Diagram: Unintentional Infinite Loops (Bugs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-sticky.svg" alt="Sticky Note: Unintentional Infinite Loops (Bugs)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/unintentional-infinite-loops-bugs-sticky.svg" alt="Sticky Note: Unintentional Infinite Loops (Bugs)" width="30%">
 </a>
 
 
@@ -1674,14 +1674,14 @@ while (i < 10) {
 
 ### Infinite Loop Use Cases
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-handwritten.svg" alt="Handwritten: Infinite Loop Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-handwritten.svg" alt="Handwritten: Infinite Loop Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-diagram.svg" alt="Diagram: Infinite Loop Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-diagram.svg" alt="Diagram: Infinite Loop Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-sticky.svg" alt="Sticky Note: Infinite Loop Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-use-cases-sticky.svg" alt="Sticky Note: Infinite Loop Use Cases" width="30%">
 </a>
 
 
@@ -1696,14 +1696,14 @@ while (i < 10) {
 
 ### How to Stop Infinite Loops
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-handwritten.svg" alt="Handwritten: How to Stop Infinite Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-handwritten.svg" alt="Handwritten: How to Stop Infinite Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-diagram.svg" alt="Diagram: How to Stop Infinite Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-diagram.svg" alt="Diagram: How to Stop Infinite Loops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-sticky.svg" alt="Sticky Note: How to Stop Infinite Loops" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-to-stop-infinite-loops-sticky.svg" alt="Sticky Note: How to Stop Infinite Loops" width="30%">
 </a>
 
 
@@ -1717,14 +1717,14 @@ while (i < 10) {
 
 ### Well-Designed Infinite Loop with Exit Path
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-handwritten.svg" alt="Handwritten: Well-Designed Infinite Loop with Exit Path" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-handwritten.svg" alt="Handwritten: Well-Designed Infinite Loop with Exit Path" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-diagram.svg" alt="Diagram: Well-Designed Infinite Loop with Exit Path" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-diagram.svg" alt="Diagram: Well-Designed Infinite Loop with Exit Path" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-sticky.svg" alt="Sticky Note: Well-Designed Infinite Loop with Exit Path" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/well-designed-infinite-loop-with-exit-path-sticky.svg" alt="Sticky Note: Well-Designed Infinite Loop with Exit Path" width="30%">
 </a>
 
 
@@ -1758,14 +1758,14 @@ int main(void) {
 
 ### 5.7.1 `for` vs `while` vs `do-while` Comparison
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-handwritten.svg" alt="Handwritten: 5.7.1 `for` vs `while` vs `do-while` Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-handwritten.svg" alt="Handwritten: 5.7.1 `for` vs `while` vs `do-while` Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-diagram.svg" alt="Diagram: 5.7.1 `for` vs `while` vs `do-while` Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-diagram.svg" alt="Diagram: 5.7.1 `for` vs `while` vs `do-while` Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-sticky.svg" alt="Sticky Note: 5.7.1 `for` vs `while` vs `do-while` Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-1-for-vs-while-vs-do-while-comparison-sticky.svg" alt="Sticky Note: 5.7.1 `for` vs `while` vs `do-while` Comparison" width="30%">
 </a>
 
 
@@ -1785,14 +1785,14 @@ int main(void) {
 
 ### 5.7.2 Entry-Controlled vs Exit-Controlled
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-handwritten.svg" alt="Handwritten: 5.7.2 Entry-Controlled vs Exit-Controlled" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-handwritten.svg" alt="Handwritten: 5.7.2 Entry-Controlled vs Exit-Controlled" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-diagram.svg" alt="Diagram: 5.7.2 Entry-Controlled vs Exit-Controlled" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-diagram.svg" alt="Diagram: 5.7.2 Entry-Controlled vs Exit-Controlled" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-sticky.svg" alt="Sticky Note: 5.7.2 Entry-Controlled vs Exit-Controlled" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-2-entry-controlled-vs-exit-controlled-sticky.svg" alt="Sticky Note: 5.7.2 Entry-Controlled vs Exit-Controlled" width="30%">
 </a>
 
 
@@ -1806,14 +1806,14 @@ int main(void) {
 
 ### 5.7.3 Loop Selection Guide
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-handwritten.svg" alt="Handwritten: 5.7.3 Loop Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-handwritten.svg" alt="Handwritten: 5.7.3 Loop Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-diagram.svg" alt="Diagram: 5.7.3 Loop Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-diagram.svg" alt="Diagram: 5.7.3 Loop Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-sticky.svg" alt="Sticky Note: 5.7.3 Loop Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-3-loop-selection-guide-sticky.svg" alt="Sticky Note: 5.7.3 Loop Selection Guide" width="30%">
 </a>
 
 
@@ -1831,14 +1831,14 @@ int main(void) {
 
 ### 5.7.4 Complexity Comparison
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-handwritten.svg" alt="Handwritten: 5.7.4 Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-handwritten.svg" alt="Handwritten: 5.7.4 Complexity Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-diagram.svg" alt="Diagram: 5.7.4 Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-diagram.svg" alt="Diagram: 5.7.4 Complexity Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-sticky.svg" alt="Sticky Note: 5.7.4 Complexity Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/5-7-4-complexity-comparison-sticky.svg" alt="Sticky Note: 5.7.4 Complexity Comparison" width="30%">
 </a>
 
 
@@ -1857,14 +1857,14 @@ int main(void) {
 
 ### Summation
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/summation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/summation-handwritten.svg" alt="Handwritten: Summation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/summation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/summation-handwritten.svg" alt="Handwritten: Summation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/summation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/summation-diagram.svg" alt="Diagram: Summation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/summation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/summation-diagram.svg" alt="Diagram: Summation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/summation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/summation-sticky.svg" alt="Sticky Note: Summation" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/summation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/summation-sticky.svg" alt="Sticky Note: Summation" width="30%">
 </a>
 
 ```c
@@ -1876,14 +1876,14 @@ for (int i = 1; i <= n; i++) {
 
 ### Factorial
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/factorial-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/factorial-handwritten.svg" alt="Handwritten: Factorial" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/factorial-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/factorial-handwritten.svg" alt="Handwritten: Factorial" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/factorial-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/factorial-diagram.svg" alt="Diagram: Factorial" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/factorial-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/factorial-diagram.svg" alt="Diagram: Factorial" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/factorial-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/factorial-sticky.svg" alt="Sticky Note: Factorial" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/factorial-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/factorial-sticky.svg" alt="Sticky Note: Factorial" width="30%">
 </a>
 
 ```c
@@ -1895,14 +1895,14 @@ for (int i = 1; i <= n; i++) {
 
 ### Counting
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/counting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/counting-handwritten.svg" alt="Handwritten: Counting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/counting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/counting-handwritten.svg" alt="Handwritten: Counting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/counting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/counting-diagram.svg" alt="Diagram: Counting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/counting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/counting-diagram.svg" alt="Diagram: Counting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/counting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/counting-sticky.svg" alt="Sticky Note: Counting" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/counting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/counting-sticky.svg" alt="Sticky Note: Counting" width="30%">
 </a>
 
 ```c
@@ -1916,14 +1916,14 @@ for (int i = 0; i < size; i++) {
 
 ### Searching (linear search)
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-handwritten.svg" alt="Handwritten: Searching (linear search)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-handwritten.svg" alt="Handwritten: Searching (linear search)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-diagram.svg" alt="Diagram: Searching (linear search)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-diagram.svg" alt="Diagram: Searching (linear search)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-sticky.svg" alt="Sticky Note: Searching (linear search)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/searching-linear-search-sticky.svg" alt="Sticky Note: Searching (linear search)" width="30%">
 </a>
 
 ```c
@@ -1938,14 +1938,14 @@ for (int i = 0; i < size; i++) {
 
 ### Finding maximum
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/finding-maximum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/finding-maximum-handwritten.svg" alt="Handwritten: Finding maximum" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/finding-maximum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/finding-maximum-handwritten.svg" alt="Handwritten: Finding maximum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/finding-maximum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/finding-maximum-diagram.svg" alt="Diagram: Finding maximum" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/finding-maximum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/finding-maximum-diagram.svg" alt="Diagram: Finding maximum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/finding-maximum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/finding-maximum-sticky.svg" alt="Sticky Note: Finding maximum" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/finding-maximum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/finding-maximum-sticky.svg" alt="Sticky Note: Finding maximum" width="30%">
 </a>
 
 ```c
@@ -1959,14 +1959,14 @@ for (int i = 1; i < size; i++) {
 
 ### Input Validation Loop
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-handwritten.svg" alt="Handwritten: Input Validation Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-handwritten.svg" alt="Handwritten: Input Validation Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-diagram.svg" alt="Diagram: Input Validation Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-diagram.svg" alt="Diagram: Input Validation Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-sticky.svg" alt="Sticky Note: Input Validation Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/input-validation-loop-sticky.svg" alt="Sticky Note: Input Validation Loop" width="30%">
 </a>
 
 ```c
@@ -1979,14 +1979,14 @@ do {
 
 ### Sentinel-controlled loop
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-handwritten.svg" alt="Handwritten: Sentinel-controlled loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-handwritten.svg" alt="Handwritten: Sentinel-controlled loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-diagram.svg" alt="Diagram: Sentinel-controlled loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-diagram.svg" alt="Diagram: Sentinel-controlled loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-sticky.svg" alt="Sticky Note: Sentinel-controlled loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/sentinel-controlled-loop-sticky.svg" alt="Sticky Note: Sentinel-controlled loop" width="30%">
 </a>
 
 ```c
@@ -2002,14 +2002,14 @@ while (1) {
 
 ### Flag-controlled loop
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-handwritten.svg" alt="Handwritten: Flag-controlled loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-handwritten.svg" alt="Handwritten: Flag-controlled loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-diagram.svg" alt="Diagram: Flag-controlled loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-diagram.svg" alt="Diagram: Flag-controlled loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-sticky.svg" alt="Sticky Note: Flag-controlled loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/flag-controlled-loop-sticky.svg" alt="Sticky Note: Flag-controlled loop" width="30%">
 </a>
 
 ```c
@@ -2023,14 +2023,14 @@ while (!found && i < n) {
 
 ### Pointer iteration
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-handwritten.svg" alt="Handwritten: Pointer iteration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-handwritten.svg" alt="Handwritten: Pointer iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-diagram.svg" alt="Diagram: Pointer iteration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-diagram.svg" alt="Diagram: Pointer iteration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-sticky.svg" alt="Sticky Note: Pointer iteration" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/pointer-iteration-sticky.svg" alt="Sticky Note: Pointer iteration" width="30%">
 </a>
 
 ```c
@@ -2043,14 +2043,14 @@ while (*p != '\0') {
 
 ### Fibonacci sequence
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-handwritten.svg" alt="Handwritten: Fibonacci sequence" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-handwritten.svg" alt="Handwritten: Fibonacci sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-diagram.svg" alt="Diagram: Fibonacci sequence" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-diagram.svg" alt="Diagram: Fibonacci sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-sticky.svg" alt="Sticky Note: Fibonacci sequence" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/fibonacci-sequence-sticky.svg" alt="Sticky Note: Fibonacci sequence" width="30%">
 </a>
 
 ```c
@@ -2065,14 +2065,14 @@ for (int i = 0; i < n; i++) {
 
 ### GCD using Euclid's algorithm
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-handwritten.svg" alt="Handwritten: GCD using Euclid's algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-handwritten.svg" alt="Handwritten: GCD using Euclid's algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-diagram.svg" alt="Diagram: GCD using Euclid's algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-diagram.svg" alt="Diagram: GCD using Euclid's algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-sticky.svg" alt="Sticky Note: GCD using Euclid's algorithm" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/gcd-using-euclid-s-algorithm-sticky.svg" alt="Sticky Note: GCD using Euclid's algorithm" width="30%">
 </a>
 
 ```c
@@ -2096,14 +2096,14 @@ GCD = 6
 
 ### Q1: What is the difference between `for` and `while` in C?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-handwritten.svg" alt="Handwritten: What is the difference between `for` and `while` in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-handwritten.svg" alt="Handwritten: What is the difference between `for` and `while` in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-diagram.svg" alt="Diagram: What is the difference between `for` and `while` in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-diagram.svg" alt="Diagram: What is the difference between `for` and `while` in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-sticky.svg" alt="Sticky Note: What is the difference between `for` and `while` in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-difference-between-for-and-while-in-c-sticky.svg" alt="Sticky Note: What is the difference between `for` and `while` in C?" width="30%">
 </a>
 
 
@@ -2111,14 +2111,14 @@ GCD = 6
 
 ### Q2: Which loop should you use when?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-handwritten.svg" alt="Handwritten: Which loop should you use when?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-handwritten.svg" alt="Handwritten: Which loop should you use when?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-diagram.svg" alt="Diagram: Which loop should you use when?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-diagram.svg" alt="Diagram: Which loop should you use when?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-sticky.svg" alt="Sticky Note: Which loop should you use when?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/which-loop-should-you-use-when-sticky.svg" alt="Sticky Note: Which loop should you use when?" width="30%">
 </a>
 
 
@@ -2133,14 +2133,14 @@ GCD = 6
 
 ### Q3: How do you write an idiomatic infinite loop in C?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-handwritten.svg" alt="Handwritten: How do you write an idiomatic infinite loop in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-handwritten.svg" alt="Handwritten: How do you write an idiomatic infinite loop in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-diagram.svg" alt="Diagram: How do you write an idiomatic infinite loop in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-diagram.svg" alt="Diagram: How do you write an idiomatic infinite loop in C?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-sticky.svg" alt="Sticky Note: How do you write an idiomatic infinite loop in C?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-write-an-idiomatic-infinite-loop-in-c-sticky.svg" alt="Sticky Note: How do you write an idiomatic infinite loop in C?" width="30%">
 </a>
 
 
@@ -2165,14 +2165,14 @@ do {
 
 ### Q4: How can you optimize nested loops?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-handwritten.svg" alt="Handwritten: How can you optimize nested loops?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-handwritten.svg" alt="Handwritten: How can you optimize nested loops?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-diagram.svg" alt="Diagram: How can you optimize nested loops?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-diagram.svg" alt="Diagram: How can you optimize nested loops?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-sticky.svg" alt="Sticky Note: How can you optimize nested loops?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-can-you-optimize-nested-loops-sticky.svg" alt="Sticky Note: How can you optimize nested loops?" width="30%">
 </a>
 
 
@@ -2227,14 +2227,14 @@ do {
 
 ### Q5: What is loop unrolling?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-handwritten.svg" alt="Handwritten: What is loop unrolling?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-handwritten.svg" alt="Handwritten: What is loop unrolling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-diagram.svg" alt="Diagram: What is loop unrolling?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-diagram.svg" alt="Diagram: What is loop unrolling?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-sticky.svg" alt="Sticky Note: What is loop unrolling?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-loop-unrolling-sticky.svg" alt="Sticky Note: What is loop unrolling?" width="30%">
 </a>
 
 
@@ -2255,14 +2255,14 @@ for (int i = 0; i < 8; i += 2) {
 
 ### Q6: How do you break out of multiple nested loops?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-handwritten.svg" alt="Handwritten: How do you break out of multiple nested loops?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-handwritten.svg" alt="Handwritten: How do you break out of multiple nested loops?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-diagram.svg" alt="Diagram: How do you break out of multiple nested loops?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-diagram.svg" alt="Diagram: How do you break out of multiple nested loops?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-sticky.svg" alt="Sticky Note: How do you break out of multiple nested loops?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/how-do-you-break-out-of-multiple-nested-loops-sticky.svg" alt="Sticky Note: How do you break out of multiple nested loops?" width="30%">
 </a>
 
 
@@ -2277,14 +2277,14 @@ for (int i = 0; i < 8; i += 2) {
 
 ### Q7: What is the time complexity of three nested loops each running n times? Why O(n³)?
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-handwritten.svg" alt="Handwritten: What is the time complexity of three nested loops each running n times? Why O(n³)?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-handwritten.svg" alt="Handwritten: What is the time complexity of three nested loops each running n times? Why O(n³)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-diagram.svg" alt="Diagram: What is the time complexity of three nested loops each running n times? Why O(n³)?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-diagram.svg" alt="Diagram: What is the time complexity of three nested loops each running n times? Why O(n³)?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-sticky.svg" alt="Sticky Note: What is the time complexity of three nested loops each running n times? Why O(n³)?" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/what-is-the-time-complexity-of-three-nested-loops-each-running-n-times-why-o-n-sticky.svg" alt="Sticky Note: What is the time complexity of three nested loops each running n times? Why O(n³)?" width="30%">
 </a>
 
 
@@ -2296,14 +2296,14 @@ for (int i = 0; i < 8; i += 2) {
 
 ### Embedded Microcontroller Main Loop (Super Loop)
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-handwritten.svg" alt="Handwritten: Embedded Microcontroller Main Loop (Super Loop)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-handwritten.svg" alt="Handwritten: Embedded Microcontroller Main Loop (Super Loop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-diagram.svg" alt="Diagram: Embedded Microcontroller Main Loop (Super Loop)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-diagram.svg" alt="Diagram: Embedded Microcontroller Main Loop (Super Loop)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-sticky.svg" alt="Sticky Note: Embedded Microcontroller Main Loop (Super Loop)" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/embedded-microcontroller-main-loop-super-loop-sticky.svg" alt="Sticky Note: Embedded Microcontroller Main Loop (Super Loop)" width="30%">
 </a>
 
 
@@ -2334,14 +2334,14 @@ This "super loop" architecture is the foundation of countless embedded systems �
 
 ### Event-Driven System
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/event-driven-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/event-driven-system-handwritten.svg" alt="Handwritten: Event-Driven System" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/event-driven-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/event-driven-system-handwritten.svg" alt="Handwritten: Event-Driven System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/event-driven-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/event-driven-system-diagram.svg" alt="Diagram: Event-Driven System" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/event-driven-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/event-driven-system-diagram.svg" alt="Diagram: Event-Driven System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/event-driven-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/event-driven-system-sticky.svg" alt="Sticky Note: Event-Driven System" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/event-driven-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/event-driven-system-sticky.svg" alt="Sticky Note: Event-Driven System" width="30%">
 </a>
 
 
@@ -2379,14 +2379,14 @@ Used in GUI frameworks, game engines, network servers — any system where actio
 
 ### Finite State Machine Loop
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-handwritten.svg" alt="Handwritten: Finite State Machine Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-handwritten.svg" alt="Handwritten: Finite State Machine Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-diagram.svg" alt="Diagram: Finite State Machine Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-diagram.svg" alt="Diagram: Finite State Machine Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-sticky.svg" alt="Sticky Note: Finite State Machine Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/finite-state-machine-loop-sticky.svg" alt="Sticky Note: Finite State Machine Loop" width="30%">
 </a>
 
 
@@ -2425,14 +2425,14 @@ int main(void) {
 
 ### Producer-Consumer Loop
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-handwritten.svg" alt="Handwritten: Producer-Consumer Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-handwritten.svg" alt="Handwritten: Producer-Consumer Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-diagram.svg" alt="Diagram: Producer-Consumer Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-diagram.svg" alt="Diagram: Producer-Consumer Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-sticky.svg" alt="Sticky Note: Producer-Consumer Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/producer-consumer-loop-sticky.svg" alt="Sticky Note: Producer-Consumer Loop" width="30%">
 </a>
 
 
@@ -2465,14 +2465,14 @@ void consumer(void) {
 
 ### Network Server Accept Loop
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-handwritten.svg" alt="Handwritten: Network Server Accept Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-handwritten.svg" alt="Handwritten: Network Server Accept Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-diagram.svg" alt="Diagram: Network Server Accept Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-diagram.svg" alt="Diagram: Network Server Accept Loop" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-sticky.svg" alt="Sticky Note: Network Server Accept Loop" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/network-server-accept-loop-sticky.svg" alt="Sticky Note: Network Server Accept Loop" width="30%">
 </a>
 
 
@@ -2527,14 +2527,14 @@ while (i < n) {
 
 ### Loop Type Overview
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-handwritten.svg" alt="Handwritten: Loop Type Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-handwritten.svg" alt="Handwritten: Loop Type Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-diagram.svg" alt="Diagram: Loop Type Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-diagram.svg" alt="Diagram: Loop Type Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-sticky.svg" alt="Sticky Note: Loop Type Overview" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/loop-type-overview-sticky.svg" alt="Sticky Note: Loop Type Overview" width="30%">
 </a>
 
 
@@ -2548,14 +2548,14 @@ while (i < n) {
 
 ### break vs continue vs goto
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-handwritten.svg" alt="Handwritten: break vs continue vs goto" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-handwritten.svg" alt="Handwritten: break vs continue vs goto" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-diagram.svg" alt="Diagram: break vs continue vs goto" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-diagram.svg" alt="Diagram: break vs continue vs goto" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-sticky.svg" alt="Sticky Note: break vs continue vs goto" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/break-vs-continue-vs-goto-sticky.svg" alt="Sticky Note: break vs continue vs goto" width="30%">
 </a>
 
 
@@ -2570,14 +2570,14 @@ while (i < n) {
 
 ### Entry-Controlled vs Exit-Controlled
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-handwritten.svg" alt="Handwritten: Entry-Controlled vs Exit-Controlled" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-handwritten.svg" alt="Handwritten: Entry-Controlled vs Exit-Controlled" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-diagram.svg" alt="Diagram: Entry-Controlled vs Exit-Controlled" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-diagram.svg" alt="Diagram: Entry-Controlled vs Exit-Controlled" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-sticky.svg" alt="Sticky Note: Entry-Controlled vs Exit-Controlled" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/entry-controlled-vs-exit-controlled-sticky.svg" alt="Sticky Note: Entry-Controlled vs Exit-Controlled" width="30%">
 </a>
 
 
@@ -2591,14 +2591,14 @@ while (i < n) {
 
 ### Infinite Loop Patterns
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-handwritten.svg" alt="Handwritten: Infinite Loop Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-handwritten.svg" alt="Handwritten: Infinite Loop Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-diagram.svg" alt="Diagram: Infinite Loop Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-diagram.svg" alt="Diagram: Infinite Loop Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-sticky.svg" alt="Sticky Note: Infinite Loop Patterns" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/infinite-loop-patterns-sticky.svg" alt="Sticky Note: Infinite Loop Patterns" width="30%">
 </a>
 
 
@@ -2611,14 +2611,14 @@ while (i < n) {
 
 ### Edge Cases Summary
 
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-handwritten.svg" alt="Handwritten: Edge Cases Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-handwritten.svg" alt="Handwritten: Edge Cases Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-diagram.svg" alt="Diagram: Edge Cases Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-diagram.svg" alt="Diagram: Edge Cases Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-sticky.svg" alt="Sticky Note: Edge Cases Summary" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/05-loops/edge-cases-summary-sticky.svg" alt="Sticky Note: Edge Cases Summary" width="30%">
 </a>
 
 

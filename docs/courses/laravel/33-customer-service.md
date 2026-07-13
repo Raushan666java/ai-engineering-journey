@@ -128,14 +128,14 @@ flowchart LR
 
 ### 33.1 Customer Service Data Models
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-handwritten.svg" alt="Handwritten: 33.1 Customer Service Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-handwritten.svg" alt="Handwritten: 33.1 Customer Service Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-diagram.svg" alt="Diagram: 33.1 Customer Service Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-diagram.svg" alt="Diagram: 33.1 Customer Service Data Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-sticky.svg" alt="Sticky Note: 33.1 Customer Service Data Models" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-1-customer-service-data-models-sticky.svg" alt="Sticky Note: 33.1 Customer Service Data Models" width="30%">
 </a>
 
 
@@ -416,14 +416,14 @@ class SlaPolicy extends Model
 
 ### 33.2 Ticket Triage & Routing Agents
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-handwritten.svg" alt="Handwritten: 33.2 Ticket Triage & Routing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-handwritten.svg" alt="Handwritten: 33.2 Ticket Triage & Routing Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-diagram.svg" alt="Diagram: 33.2 Ticket Triage & Routing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-diagram.svg" alt="Diagram: 33.2 Ticket Triage & Routing Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-sticky.svg" alt="Sticky Note: 33.2 Ticket Triage & Routing Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-2-ticket-triage-routing-agents-sticky.svg" alt="Sticky Note: 33.2 Ticket Triage & Routing Agents" width="30%">
 </a>
 
 
@@ -561,14 +561,14 @@ class TicketTriageAgent
 
 ### 33.3 Sentiment Analysis Agents
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-handwritten.svg" alt="Handwritten: 33.3 Sentiment Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-handwritten.svg" alt="Handwritten: 33.3 Sentiment Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-diagram.svg" alt="Diagram: 33.3 Sentiment Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-diagram.svg" alt="Diagram: 33.3 Sentiment Analysis Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-sticky.svg" alt="Sticky Note: 33.3 Sentiment Analysis Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-3-sentiment-analysis-agents-sticky.svg" alt="Sticky Note: 33.3 Sentiment Analysis Agents" width="30%">
 </a>
 
 
@@ -781,14 +781,14 @@ class SentimentAnalysisAgent
 
 ### 33.4 Knowledge Base RAG
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-handwritten.svg" alt="Handwritten: 33.4 Knowledge Base RAG" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-handwritten.svg" alt="Handwritten: 33.4 Knowledge Base RAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-diagram.svg" alt="Diagram: 33.4 Knowledge Base RAG" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-diagram.svg" alt="Diagram: 33.4 Knowledge Base RAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-sticky.svg" alt="Sticky Note: 33.4 Knowledge Base RAG" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-4-knowledge-base-rag-sticky.svg" alt="Sticky Note: 33.4 Knowledge Base RAG" width="30%">
 </a>
 
 
@@ -966,14 +966,14 @@ class KnowledgeBaseAgent
 
 ### 33.5 Escalation Automation
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-handwritten.svg" alt="Handwritten: 33.5 Escalation Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-handwritten.svg" alt="Handwritten: 33.5 Escalation Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-diagram.svg" alt="Diagram: 33.5 Escalation Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-diagram.svg" alt="Diagram: 33.5 Escalation Automation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-sticky.svg" alt="Sticky Note: 33.5 Escalation Automation" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-5-escalation-automation-sticky.svg" alt="Sticky Note: 33.5 Escalation Automation" width="30%">
 </a>
 
 
@@ -1156,14 +1156,14 @@ class EscalationAgent
 
 ### 33.6 Multi-Channel Support Agents
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-handwritten.svg" alt="Handwritten: 33.6 Multi-Channel Support Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-handwritten.svg" alt="Handwritten: 33.6 Multi-Channel Support Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-diagram.svg" alt="Diagram: 33.6 Multi-Channel Support Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-diagram.svg" alt="Diagram: 33.6 Multi-Channel Support Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-sticky.svg" alt="Sticky Note: 33.6 Multi-Channel Support Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-6-multi-channel-support-agents-sticky.svg" alt="Sticky Note: 33.6 Multi-Channel Support Agents" width="30%">
 </a>
 
 
@@ -1364,14 +1364,14 @@ class MultiChannelAgent
 
 ### 33.7 Customer Satisfaction Tracking
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-handwritten.svg" alt="Handwritten: 33.7 Customer Satisfaction Tracking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-handwritten.svg" alt="Handwritten: 33.7 Customer Satisfaction Tracking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-diagram.svg" alt="Diagram: 33.7 Customer Satisfaction Tracking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-diagram.svg" alt="Diagram: 33.7 Customer Satisfaction Tracking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-sticky.svg" alt="Sticky Note: 33.7 Customer Satisfaction Tracking" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-7-customer-satisfaction-tracking-sticky.svg" alt="Sticky Note: 33.7 Customer Satisfaction Tracking" width="30%">
 </a>
 
 
@@ -1561,14 +1561,14 @@ class SatisfactionAgent
 
 ### 33.8 Self-Service Portal Agents
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-handwritten.svg" alt="Handwritten: 33.8 Self-Service Portal Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-handwritten.svg" alt="Handwritten: 33.8 Self-Service Portal Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-diagram.svg" alt="Diagram: 33.8 Self-Service Portal Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-diagram.svg" alt="Diagram: 33.8 Self-Service Portal Agents" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-sticky.svg" alt="Sticky Note: 33.8 Self-Service Portal Agents" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-8-self-service-portal-agents-sticky.svg" alt="Sticky Note: 33.8 Self-Service Portal Agents" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ class SelfServiceAgent
 
 ### 33.9 SLA Monitoring & Reporting
 
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-handwritten.svg" alt="Handwritten: 33.9 SLA Monitoring & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-handwritten.svg" alt="Handwritten: 33.9 SLA Monitoring & Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-diagram.svg" alt="Diagram: 33.9 SLA Monitoring & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-diagram.svg" alt="Diagram: 33.9 SLA Monitoring & Reporting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-sticky.svg" alt="Sticky Note: 33.9 SLA Monitoring & Reporting" width="30%">
+<a href="../../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/33-customer-service/33-9-sla-monitoring-reporting-sticky.svg" alt="Sticky Note: 33.9 SLA Monitoring & Reporting" width="30%">
 </a>
 
 

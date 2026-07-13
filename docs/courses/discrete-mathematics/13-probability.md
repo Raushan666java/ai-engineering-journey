@@ -55,14 +55,14 @@ flowchart LR
 
 ### 13.1 Sample Space and Events
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-handwritten.svg" alt="Handwritten: 13.1 Sample Space and Events" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-handwritten.svg" alt="Handwritten: 13.1 Sample Space and Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-diagram.svg" alt="Diagram: 13.1 Sample Space and Events" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-diagram.svg" alt="Diagram: 13.1 Sample Space and Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-sticky.svg" alt="Sticky Note: 13.1 Sample Space and Events" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-1-sample-space-and-events-sticky.svg" alt="Sticky Note: 13.1 Sample Space and Events" width="30%">
 </a>
 
 
@@ -81,14 +81,14 @@ $$P(E) = \frac{|E|}{|S|}$$
 
 ### 13.2 Axioms of Probability
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-handwritten.svg" alt="Handwritten: 13.2 Axioms of Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-handwritten.svg" alt="Handwritten: 13.2 Axioms of Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-diagram.svg" alt="Diagram: 13.2 Axioms of Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-diagram.svg" alt="Diagram: 13.2 Axioms of Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-sticky.svg" alt="Sticky Note: 13.2 Axioms of Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-2-axioms-of-probability-sticky.svg" alt="Sticky Note: 13.2 Axioms of Probability" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ $$P(E) = \frac{|E|}{|S|}$$
 
 ### 13.3 Conditional Probability
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-handwritten.svg" alt="Handwritten: 13.3 Conditional Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-handwritten.svg" alt="Handwritten: 13.3 Conditional Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-diagram.svg" alt="Diagram: 13.3 Conditional Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-diagram.svg" alt="Diagram: 13.3 Conditional Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-sticky.svg" alt="Sticky Note: 13.3 Conditional Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-3-conditional-probability-sticky.svg" alt="Sticky Note: 13.3 Conditional Probability" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ $$P(A_1 \cap A_2 \cap \dots \cap A_n) = P(A_1) \cdot P(A_2 \mid A_1) \cdot P(A_3
 
 ### 13.4 Independence
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-handwritten.svg" alt="Handwritten: 13.4 Independence" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-handwritten.svg" alt="Handwritten: 13.4 Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-diagram.svg" alt="Diagram: 13.4 Independence" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-diagram.svg" alt="Diagram: 13.4 Independence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-sticky.svg" alt="Sticky Note: 13.4 Independence" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-4-independence-sticky.svg" alt="Sticky Note: 13.4 Independence" width="30%">
 </a>
 
 
@@ -157,14 +157,14 @@ $$P(A_{i_1} \cap \dots \cap A_{i_k}) = P(A_{i_1}) \cdots P(A_{i_k})$$
 
 ### 13.5 Bayes' Theorem
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-handwritten.svg" alt="Handwritten: 13.5 Bayes' Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-handwritten.svg" alt="Handwritten: 13.5 Bayes' Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-diagram.svg" alt="Diagram: 13.5 Bayes' Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-diagram.svg" alt="Diagram: 13.5 Bayes' Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-sticky.svg" alt="Sticky Note: 13.5 Bayes' Theorem" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-5-bayes-theorem-sticky.svg" alt="Sticky Note: 13.5 Bayes' Theorem" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ $$P(H_j \mid E) = \frac{P(E \mid H_j) \cdot P(H_j)}{\sum_{i=1}^n P(E \mid H_i) \
 
 ### 13.6 Random Variables
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-handwritten.svg" alt="Handwritten: 13.6 Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-handwritten.svg" alt="Handwritten: 13.6 Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-diagram.svg" alt="Diagram: 13.6 Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-diagram.svg" alt="Diagram: 13.6 Random Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-sticky.svg" alt="Sticky Note: 13.6 Random Variables" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-6-random-variables-sticky.svg" alt="Sticky Note: 13.6 Random Variables" width="30%">
 </a>
 
 
@@ -211,14 +211,14 @@ A **random variable** $X$ is a function $X: S \rightarrow \mathbb{R}$ that assig
 
 ### 13.7 Expected Value and Variance
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-handwritten.svg" alt="Handwritten: 13.7 Expected Value and Variance" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-handwritten.svg" alt="Handwritten: 13.7 Expected Value and Variance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-diagram.svg" alt="Diagram: 13.7 Expected Value and Variance" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-diagram.svg" alt="Diagram: 13.7 Expected Value and Variance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-sticky.svg" alt="Sticky Note: 13.7 Expected Value and Variance" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-7-expected-value-and-variance-sticky.svg" alt="Sticky Note: 13.7 Expected Value and Variance" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ console.log(variance(die));      // ~2.917
 
 ### 13.8 Bernoulli and Binomial Distributions
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-handwritten.svg" alt="Handwritten: 13.8 Bernoulli and Binomial Distributions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-handwritten.svg" alt="Handwritten: 13.8 Bernoulli and Binomial Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-diagram.svg" alt="Diagram: 13.8 Bernoulli and Binomial Distributions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-diagram.svg" alt="Diagram: 13.8 Bernoulli and Binomial Distributions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-sticky.svg" alt="Sticky Note: 13.8 Bernoulli and Binomial Distributions" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-8-bernoulli-and-binomial-distributions-sticky.svg" alt="Sticky Note: 13.8 Bernoulli and Binomial Distributions" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ console.log(binomialProb(10, 3, 0.5)); // P(3 heads in 10 fair coin flips)
 
 ### 13.9 Geometric Distribution
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-handwritten.svg" alt="Handwritten: 13.9 Geometric Distribution" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-handwritten.svg" alt="Handwritten: 13.9 Geometric Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-diagram.svg" alt="Diagram: 13.9 Geometric Distribution" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-diagram.svg" alt="Diagram: 13.9 Geometric Distribution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-sticky.svg" alt="Sticky Note: 13.9 Geometric Distribution" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-9-geometric-distribution-sticky.svg" alt="Sticky Note: 13.9 Geometric Distribution" width="30%">
 </a>
 
 
@@ -339,14 +339,14 @@ The number of trials until the first success in independent Bernoulli trials.
 
 ### 13.10 Inclusion-Exclusion for Probability
 
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-handwritten.svg" alt="Handwritten: 13.10 Inclusion-Exclusion for Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-handwritten.svg" alt="Handwritten: 13.10 Inclusion-Exclusion for Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-diagram.svg" alt="Diagram: 13.10 Inclusion-Exclusion for Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-diagram.svg" alt="Diagram: 13.10 Inclusion-Exclusion for Probability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-sticky.svg" alt="Sticky Note: 13.10 Inclusion-Exclusion for Probability" width="30%">
+<a href="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/discrete-mathematics/13-probability/13-10-inclusion-exclusion-for-probability-sticky.svg" alt="Sticky Note: 13.10 Inclusion-Exclusion for Probability" width="30%">
 </a>
 
 

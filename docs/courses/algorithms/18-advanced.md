@@ -71,14 +71,14 @@ This chapter covers the algorithms that make modern large-scale systems possible
 
 ### 18.1 Online Algorithms
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-handwritten.svg" alt="Handwritten: 18.1 Online Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-handwritten.svg" alt="Handwritten: 18.1 Online Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-diagram.svg" alt="Diagram: 18.1 Online Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-diagram.svg" alt="Diagram: 18.1 Online Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-sticky.svg" alt="Sticky Note: 18.1 Online Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-1-online-algorithms-sticky.svg" alt="Sticky Note: 18.1 Online Algorithms" width="30%">
 </a>
 
 
@@ -222,14 +222,14 @@ SkiRental(B, days_unknown):
 
 ### 18.2 Bloom Filters
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-handwritten.svg" alt="Handwritten: 18.2 Bloom Filters" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-handwritten.svg" alt="Handwritten: 18.2 Bloom Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-diagram.svg" alt="Diagram: 18.2 Bloom Filters" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-diagram.svg" alt="Diagram: 18.2 Bloom Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-sticky.svg" alt="Sticky Note: 18.2 Bloom Filters" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-2-bloom-filters-sticky.svg" alt="Sticky Note: 18.2 Bloom Filters" width="30%">
 </a>
 
 
@@ -401,14 +401,14 @@ public class BloomFilter {
 
 ### 18.3 Skip Lists
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-handwritten.svg" alt="Handwritten: 18.3 Skip Lists" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-handwritten.svg" alt="Handwritten: 18.3 Skip Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-diagram.svg" alt="Diagram: 18.3 Skip Lists" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-diagram.svg" alt="Diagram: 18.3 Skip Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-sticky.svg" alt="Sticky Note: 18.3 Skip Lists" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-3-skip-lists-sticky.svg" alt="Sticky Note: 18.3 Skip Lists" width="30%">
 </a>
 
 
@@ -538,14 +538,14 @@ class SkipList:
 
 ### 18.4 Streaming Algorithms
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-handwritten.svg" alt="Handwritten: 18.4 Streaming Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-handwritten.svg" alt="Handwritten: 18.4 Streaming Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-diagram.svg" alt="Diagram: 18.4 Streaming Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-diagram.svg" alt="Diagram: 18.4 Streaming Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-sticky.svg" alt="Sticky Note: 18.4 Streaming Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-4-streaming-algorithms-sticky.svg" alt="Sticky Note: 18.4 Streaming Algorithms" width="30%">
 </a>
 
 
@@ -652,14 +652,14 @@ CountMinSketch:
 
 ### 18.5 External Memory Algorithms
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-handwritten.svg" alt="Handwritten: 18.5 External Memory Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-handwritten.svg" alt="Handwritten: 18.5 External Memory Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-diagram.svg" alt="Diagram: 18.5 External Memory Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-diagram.svg" alt="Diagram: 18.5 External Memory Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-sticky.svg" alt="Sticky Note: 18.5 External Memory Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-5-external-memory-algorithms-sticky.svg" alt="Sticky Note: 18.5 External Memory Algorithms" width="30%">
 </a>
 
 
@@ -699,14 +699,14 @@ where B = block size, M = RAM size, N = total data size, k = merge fan-in.
 
 ### 18.6 Parallel Algorithms
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-handwritten.svg" alt="Handwritten: 18.6 Parallel Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-handwritten.svg" alt="Handwritten: 18.6 Parallel Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-diagram.svg" alt="Diagram: 18.6 Parallel Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-diagram.svg" alt="Diagram: 18.6 Parallel Algorithms" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-sticky.svg" alt="Sticky Note: 18.6 Parallel Algorithms" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-6-parallel-algorithms-sticky.svg" alt="Sticky Note: 18.6 Parallel Algorithms" width="30%">
 </a>
 
 
@@ -752,14 +752,14 @@ T_P \le \frac{W}{P} + D.
 
 ### 18.7 Algorithmic Paradigms Summary
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-handwritten.svg" alt="Handwritten: 18.7 Algorithmic Paradigms Summary" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-handwritten.svg" alt="Handwritten: 18.7 Algorithmic Paradigms Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-diagram.svg" alt="Diagram: 18.7 Algorithmic Paradigms Summary" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-diagram.svg" alt="Diagram: 18.7 Algorithmic Paradigms Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-sticky.svg" alt="Sticky Note: 18.7 Algorithmic Paradigms Summary" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/18-7-algorithmic-paradigms-summary-sticky.svg" alt="Sticky Note: 18.7 Algorithmic Paradigms Summary" width="30%">
 </a>
 
 
@@ -829,14 +829,14 @@ This table connects all 18 chapters of the algorithms course:
 
 ### Online and Streaming Summary Table
 
-<a href="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-handwritten.svg" alt="Handwritten: Online and Streaming Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-handwritten.svg" alt="Handwritten: Online and Streaming Summary Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-diagram.svg" alt="Diagram: Online and Streaming Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-diagram.svg" alt="Diagram: Online and Streaming Summary Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-sticky.svg" alt="Sticky Note: Online and Streaming Summary Table" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/18-advanced/online-and-streaming-summary-table-sticky.svg" alt="Sticky Note: Online and Streaming Summary Table" width="30%">
 </a>
 
 

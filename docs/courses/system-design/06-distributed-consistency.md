@@ -39,14 +39,14 @@ flowchart LR
 
 ### The CAP Theorem
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-handwritten.svg" alt="Handwritten: The CAP Theorem" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-handwritten.svg" alt="Handwritten: The CAP Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-diagram.svg" alt="Diagram: The CAP Theorem" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-diagram.svg" alt="Diagram: The CAP Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-sticky.svg" alt="Sticky Note: The CAP Theorem" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/the-cap-theorem-sticky.svg" alt="Sticky Note: The CAP Theorem" width="30%">
 </a>
 
 
@@ -95,14 +95,14 @@ The CAP theorem is often misunderstood. Key clarifications:
 
 ### PACELC Extension
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-handwritten.svg" alt="Handwritten: PACELC Extension" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-handwritten.svg" alt="Handwritten: PACELC Extension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-diagram.svg" alt="Diagram: PACELC Extension" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-diagram.svg" alt="Diagram: PACELC Extension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-sticky.svg" alt="Sticky Note: PACELC Extension" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/pacelc-extension-sticky.svg" alt="Sticky Note: PACELC Extension" width="30%">
 </a>
 
 
@@ -126,14 +126,14 @@ This captures the real design space: even when no partition exists, systems choo
 
 ### Consistency Models
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-handwritten.svg" alt="Handwritten: Consistency Models" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-handwritten.svg" alt="Handwritten: Consistency Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-diagram.svg" alt="Diagram: Consistency Models" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-diagram.svg" alt="Diagram: Consistency Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-sticky.svg" alt="Sticky Note: Consistency Models" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/consistency-models-sticky.svg" alt="Sticky Note: Consistency Models" width="30%">
 </a>
 
 
@@ -207,14 +207,14 @@ Eventual consistency is the weakest model. It provides the best availability and
 
 ### Quorum Systems
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-handwritten.svg" alt="Handwritten: Quorum Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-handwritten.svg" alt="Handwritten: Quorum Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-diagram.svg" alt="Diagram: Quorum Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-diagram.svg" alt="Diagram: Quorum Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-sticky.svg" alt="Sticky Note: Quorum Systems" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/quorum-systems-sticky.svg" alt="Sticky Note: Quorum Systems" width="30%">
 </a>
 
 
@@ -273,14 +273,14 @@ Hinted handoff improves availability â€” writes succeed even when some replicas 
 
 ### Gossip Protocol
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-handwritten.svg" alt="Handwritten: Gossip Protocol" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-handwritten.svg" alt="Handwritten: Gossip Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-diagram.svg" alt="Diagram: Gossip Protocol" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-diagram.svg" alt="Diagram: Gossip Protocol" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-sticky.svg" alt="Sticky Note: Gossip Protocol" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/gossip-protocol-sticky.svg" alt="Sticky Note: Gossip Protocol" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ SWIM converges membership information in `O(log N)` rounds and detects failures 
 
 ### CRDTs (Conflict-Free Replicated Data Types)
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-handwritten.svg" alt="Handwritten: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-handwritten.svg" alt="Handwritten: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-diagram.svg" alt="Diagram: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-diagram.svg" alt="Diagram: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-sticky.svg" alt="Sticky Note: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/crdts-conflict-free-replicated-data-types-sticky.svg" alt="Sticky Note: CRDTs (Conflict-Free Replicated Data Types)" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ Two concurrent `add("x")` operations produce the same result as one `add("x")` â
 
 ### Logical Clocks
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-handwritten.svg" alt="Handwritten: Logical Clocks" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-handwritten.svg" alt="Handwritten: Logical Clocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-diagram.svg" alt="Diagram: Logical Clocks" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-diagram.svg" alt="Diagram: Logical Clocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-sticky.svg" alt="Sticky Note: Logical Clocks" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/logical-clocks-sticky.svg" alt="Sticky Note: Logical Clocks" width="30%">
 </a>
 
 
@@ -484,14 +484,14 @@ Process P1:        Process P2:
 
 ### Merkle Trees for Anti-Entropy
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-handwritten.svg" alt="Handwritten: Merkle Trees for Anti-Entropy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-handwritten.svg" alt="Handwritten: Merkle Trees for Anti-Entropy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-diagram.svg" alt="Diagram: Merkle Trees for Anti-Entropy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-diagram.svg" alt="Diagram: Merkle Trees for Anti-Entropy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-sticky.svg" alt="Sticky Note: Merkle Trees for Anti-Entropy" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/merkle-trees-for-anti-entropy-sticky.svg" alt="Sticky Note: Merkle Trees for Anti-Entropy" width="30%">
 </a>
 
 
@@ -518,14 +518,14 @@ A Merkle tree is a hash tree where leaf nodes contain hashes of data blocks and 
 
 ### Distributed Snapshots (Chandy-Lamport Algorithm)
 
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-handwritten.svg" alt="Handwritten: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-handwritten.svg" alt="Handwritten: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-diagram.svg" alt="Diagram: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-diagram.svg" alt="Diagram: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-sticky.svg" alt="Sticky Note: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/system-design/06-distributed-consistency/distributed-snapshots-chandy-lamport-algorithm-sticky.svg" alt="Sticky Note: Distributed Snapshots (Chandy-Lamport Algorithm)" width="30%">
 </a>
 
 

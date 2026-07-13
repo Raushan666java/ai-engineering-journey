@@ -53,14 +53,14 @@ flowchart LR
 
 ### 9.1 Longest Common Subsequence (LCS)
 
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: 9.1 Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: 9.1 Longest Common Subsequence (LCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: 9.1 Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: 9.1 Longest Common Subsequence (LCS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: 9.1 Longest Common Subsequence (LCS)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-1-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: 9.1 Longest Common Subsequence (LCS)" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ LCS_LENGTH_OPT(X, Y, m, n):
 
 ### 9.2 Longest Increasing Subsequence (LIS)
 
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-handwritten.svg" alt="Handwritten: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-handwritten.svg" alt="Handwritten: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-diagram.svg" alt="Diagram: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-diagram.svg" alt="Diagram: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-sticky.svg" alt="Sticky Note: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-2-longest-increasing-subsequence-lis-sticky.svg" alt="Sticky Note: 9.2 Longest Increasing Subsequence (LIS)" width="30%">
 </a>
 
 
@@ -544,14 +544,14 @@ For the O(n log n) approach, O(n) space is already optimal.
 
 ### 9.3 Edit Distance (Levenshtein Distance)
 
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-handwritten.svg" alt="Handwritten: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-handwritten.svg" alt="Handwritten: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-diagram.svg" alt="Diagram: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-diagram.svg" alt="Diagram: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-sticky.svg" alt="Sticky Note: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-3-edit-distance-levenshtein-distance-sticky.svg" alt="Sticky Note: 9.3 Edit Distance (Levenshtein Distance)" width="30%">
 </a>
 
 
@@ -756,14 +756,14 @@ EDIT_DISTANCE_OPT(X, Y, m, n):
 
 ### 9.4 Matrix Chain Multiplication
 
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-handwritten.svg" alt="Handwritten: 9.4 Matrix Chain Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-handwritten.svg" alt="Handwritten: 9.4 Matrix Chain Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-diagram.svg" alt="Diagram: 9.4 Matrix Chain Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-diagram.svg" alt="Diagram: 9.4 Matrix Chain Multiplication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-sticky.svg" alt="Sticky Note: 9.4 Matrix Chain Multiplication" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-4-matrix-chain-multiplication-sticky.svg" alt="Sticky Note: 9.4 Matrix Chain Multiplication" width="30%">
 </a>
 
 
@@ -962,14 +962,14 @@ The dp table can't be compressed to O(n) easily because interval DP needs all su
 
 ### 9.5 Palindrome Partitioning
 
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-handwritten.svg" alt="Handwritten: 9.5 Palindrome Partitioning" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-handwritten.svg" alt="Handwritten: 9.5 Palindrome Partitioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-diagram.svg" alt="Diagram: 9.5 Palindrome Partitioning" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-diagram.svg" alt="Diagram: 9.5 Palindrome Partitioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-sticky.svg" alt="Sticky Note: 9.5 Palindrome Partitioning" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/09-dp-sequences/9-5-palindrome-partitioning-sticky.svg" alt="Sticky Note: 9.5 Palindrome Partitioning" width="30%">
 </a>
 
 

@@ -58,14 +58,14 @@ flowchart TD
 
 ### How AI Solves Healthcare Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-handwritten.svg" alt="Handwritten: How AI Solves Healthcare Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-handwritten.svg" alt="Handwritten: How AI Solves Healthcare Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-diagram.svg" alt="Diagram: How AI Solves Healthcare Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-diagram.svg" alt="Diagram: How AI Solves Healthcare Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-sticky.svg" alt="Sticky Note: How AI Solves Healthcare Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-healthcare-problems-sticky.svg" alt="Sticky Note: How AI Solves Healthcare Problems" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ flowchart TD
 
 ### Diagnostic Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Diagnostic Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Diagnostic Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-diagram.svg" alt="Diagram: Diagnostic Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-diagram.svg" alt="Diagram: Diagnostic Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Diagnostic Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/diagnostic-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Diagnostic Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ function medicalDiagnosisPipeline(patientDicomPath):
 
 ### Python Implementation → Chest X-Ray Classifier
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-handwritten.svg" alt="Handwritten: Python Implementation → Chest X-Ray Classifier" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-handwritten.svg" alt="Handwritten: Python Implementation → Chest X-Ray Classifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-diagram.svg" alt="Diagram: Python Implementation → Chest X-Ray Classifier" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-diagram.svg" alt="Diagram: Python Implementation → Chest X-Ray Classifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-sticky.svg" alt="Sticky Note: Python Implementation → Chest X-Ray Classifier" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-chest-x-ray-classifier-sticky.svg" alt="Sticky Note: Python Implementation → Chest X-Ray Classifier" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ for f in result['findings']:
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -222,14 +222,14 @@ for f in result['findings']:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -245,14 +245,14 @@ for f in result['findings']:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -270,14 +270,14 @@ for f in result['findings']:
 
 ### How AI Solves Finance Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-handwritten.svg" alt="Handwritten: How AI Solves Finance Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-handwritten.svg" alt="Handwritten: How AI Solves Finance Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-diagram.svg" alt="Diagram: How AI Solves Finance Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-diagram.svg" alt="Diagram: How AI Solves Finance Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-sticky.svg" alt="Sticky Note: How AI Solves Finance Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-finance-problems-sticky.svg" alt="Sticky Note: How AI Solves Finance Problems" width="30%">
 </a>
 
 
@@ -290,14 +290,14 @@ for f in result['findings']:
 
 ### Fraud Detection Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Fraud Detection Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Fraud Detection Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-diagram.svg" alt="Diagram: Fraud Detection Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-diagram.svg" alt="Diagram: Fraud Detection Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Fraud Detection Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/fraud-detection-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Fraud Detection Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -330,14 +330,14 @@ function realtimeFraudDetection(transaction):
 
 ### Python Implementation → Anomaly-Based Fraud Detection
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-handwritten.svg" alt="Handwritten: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-handwritten.svg" alt="Handwritten: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-diagram.svg" alt="Diagram: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-diagram.svg" alt="Diagram: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-sticky.svg" alt="Sticky Note: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-based-fraud-detection-sticky.svg" alt="Sticky Note: Python Implementation → Anomaly-Based Fraud Detection" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -429,14 +429,14 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -452,14 +452,14 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -477,14 +477,14 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### How AI Solves Transportation Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-handwritten.svg" alt="Handwritten: How AI Solves Transportation Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-handwritten.svg" alt="Handwritten: How AI Solves Transportation Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-diagram.svg" alt="Diagram: How AI Solves Transportation Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-diagram.svg" alt="Diagram: How AI Solves Transportation Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-sticky.svg" alt="Sticky Note: How AI Solves Transportation Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-transportation-problems-sticky.svg" alt="Sticky Note: How AI Solves Transportation Problems" width="30%">
 </a>
 
 
@@ -497,14 +497,14 @@ print(f"Decision: {result['decision']} (score: {result['score']:.4f})")
 
 ### Perception Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Perception Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Perception Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-diagram.svg" alt="Diagram: Perception Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-diagram.svg" alt="Diagram: Perception Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Perception Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/perception-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Perception Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -543,14 +543,14 @@ function perceptionPipeline(lidarPointCloud, cameraImages):
 
 ### Python Implementation → Object Detection Pipeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-handwritten.svg" alt="Handwritten: Python Implementation → Object Detection Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-handwritten.svg" alt="Handwritten: Python Implementation → Object Detection Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-diagram.svg" alt="Diagram: Python Implementation → Object Detection Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-diagram.svg" alt="Diagram: Python Implementation → Object Detection Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-sticky.svg" alt="Sticky Note: Python Implementation → Object Detection Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-object-detection-pipeline-sticky.svg" alt="Sticky Note: Python Implementation → Object Detection Pipeline" width="30%">
 </a>
 
 
@@ -607,14 +607,14 @@ for obj in result["objects"][:5]:
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -629,14 +629,14 @@ for obj in result["objects"][:5]:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -652,14 +652,14 @@ for obj in result["objects"][:5]:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -677,14 +677,14 @@ for obj in result["objects"][:5]:
 
 ### How AI Solves Education Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-handwritten.svg" alt="Handwritten: How AI Solves Education Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-handwritten.svg" alt="Handwritten: How AI Solves Education Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-diagram.svg" alt="Diagram: How AI Solves Education Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-diagram.svg" alt="Diagram: How AI Solves Education Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-sticky.svg" alt="Sticky Note: How AI Solves Education Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-education-problems-sticky.svg" alt="Sticky Note: How AI Solves Education Problems" width="30%">
 </a>
 
 
@@ -697,14 +697,14 @@ for obj in result["objects"][:5]:
 
 ### Adaptive Learning Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Adaptive Learning Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Adaptive Learning Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-diagram.svg" alt="Diagram: Adaptive Learning Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-diagram.svg" alt="Diagram: Adaptive Learning Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Adaptive Learning Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/adaptive-learning-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Adaptive Learning Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -747,14 +747,14 @@ function adaptiveLesson(currentStudentState, curriculum):
 
 ### Python Implementation → Bayesian Knowledge Tracing
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-handwritten.svg" alt="Handwritten: Python Implementation → Bayesian Knowledge Tracing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-handwritten.svg" alt="Handwritten: Python Implementation → Bayesian Knowledge Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-diagram.svg" alt="Diagram: Python Implementation → Bayesian Knowledge Tracing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-diagram.svg" alt="Diagram: Python Implementation → Bayesian Knowledge Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-sticky.svg" alt="Sticky Note: Python Implementation → Bayesian Knowledge Tracing" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-bayesian-knowledge-tracing-sticky.svg" alt="Sticky Note: Python Implementation → Bayesian Knowledge Tracing" width="30%">
 </a>
 
 
@@ -827,14 +827,14 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -849,14 +849,14 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -872,14 +872,14 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -897,14 +897,14 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### How AI Solves Entertainment Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-handwritten.svg" alt="Handwritten: How AI Solves Entertainment Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-handwritten.svg" alt="Handwritten: How AI Solves Entertainment Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-diagram.svg" alt="Diagram: How AI Solves Entertainment Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-diagram.svg" alt="Diagram: How AI Solves Entertainment Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-sticky.svg" alt="Sticky Note: How AI Solves Entertainment Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-entertainment-problems-sticky.svg" alt="Sticky Note: How AI Solves Entertainment Problems" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@ print(f"\nWeakest skills: {bkt.weakest_skills(2)}")
 
 ### Procedural Content Generation Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Procedural Content Generation Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Procedural Content Generation Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-diagram.svg" alt="Diagram: Procedural Content Generation Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-diagram.svg" alt="Diagram: Procedural Content Generation Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Procedural Content Generation Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/procedural-content-generation-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Procedural Content Generation Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -961,14 +961,14 @@ function generateDungeonLevel(seed, difficulty, theme):
 
 ### Python Implementation → Wave Function Collapse Level Generator
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-handwritten.svg" alt="Handwritten: Python Implementation → Wave Function Collapse Level Generator" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-handwritten.svg" alt="Handwritten: Python Implementation → Wave Function Collapse Level Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-diagram.svg" alt="Diagram: Python Implementation → Wave Function Collapse Level Generator" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-diagram.svg" alt="Diagram: Python Implementation → Wave Function Collapse Level Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-sticky.svg" alt="Sticky Note: Python Implementation → Wave Function Collapse Level Generator" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-wave-function-collapse-level-generator-sticky.svg" alt="Sticky Note: Python Implementation → Wave Function Collapse Level Generator" width="30%">
 </a>
 
 
@@ -1038,14 +1038,14 @@ if result is not None:
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -1060,14 +1060,14 @@ if result is not None:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1083,14 +1083,14 @@ if result is not None:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1108,14 +1108,14 @@ if result is not None:
 
 ### How AI Solves Agriculture Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-handwritten.svg" alt="Handwritten: How AI Solves Agriculture Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-handwritten.svg" alt="Handwritten: How AI Solves Agriculture Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-diagram.svg" alt="Diagram: How AI Solves Agriculture Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-diagram.svg" alt="Diagram: How AI Solves Agriculture Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-sticky.svg" alt="Sticky Note: How AI Solves Agriculture Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-agriculture-problems-sticky.svg" alt="Sticky Note: How AI Solves Agriculture Problems" width="30%">
 </a>
 
 
@@ -1128,14 +1128,14 @@ if result is not None:
 
 ### Precision Farming Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Precision Farming Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Precision Farming Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-diagram.svg" alt="Diagram: Precision Farming Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-diagram.svg" alt="Diagram: Precision Farming Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Precision Farming Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/precision-farming-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Precision Farming Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -1181,14 +1181,14 @@ function precisionFarmingPipeline(fieldPolygon):
 
 ### Python Implementation → Crop Disease Detection
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-handwritten.svg" alt="Handwritten: Python Implementation → Crop Disease Detection" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-handwritten.svg" alt="Handwritten: Python Implementation → Crop Disease Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-diagram.svg" alt="Diagram: Python Implementation → Crop Disease Detection" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-diagram.svg" alt="Diagram: Python Implementation → Crop Disease Detection" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-sticky.svg" alt="Sticky Note: Python Implementation → Crop Disease Detection" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-crop-disease-detection-sticky.svg" alt="Sticky Note: Python Implementation → Crop Disease Detection" width="30%">
 </a>
 
 
@@ -1251,14 +1251,14 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -1273,14 +1273,14 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1296,14 +1296,14 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1321,14 +1321,14 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### How AI Solves Security Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-handwritten.svg" alt="Handwritten: How AI Solves Security Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-handwritten.svg" alt="Handwritten: How AI Solves Security Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-diagram.svg" alt="Diagram: How AI Solves Security Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-diagram.svg" alt="Diagram: How AI Solves Security Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-sticky.svg" alt="Sticky Note: How AI Solves Security Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-security-problems-sticky.svg" alt="Sticky Note: How AI Solves Security Problems" width="30%">
 </a>
 
 
@@ -1341,14 +1341,14 @@ print(f"Disease: {result['prediction']} ({result['confidence']:.1%})")
 
 ### Network Intrusion Detection Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Network Intrusion Detection Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Network Intrusion Detection Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-diagram.svg" alt="Diagram: Network Intrusion Detection Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-diagram.svg" alt="Diagram: Network Intrusion Detection Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Network Intrusion Detection Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/network-intrusion-detection-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Network Intrusion Detection Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -1393,14 +1393,14 @@ function realtimeNetworkIDS(packetStream):
 
 ### Python Implementation → Anomaly Detection for Network Security
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-handwritten.svg" alt="Handwritten: Python Implementation → Anomaly Detection for Network Security" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-handwritten.svg" alt="Handwritten: Python Implementation → Anomaly Detection for Network Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-diagram.svg" alt="Diagram: Python Implementation → Anomaly Detection for Network Security" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-diagram.svg" alt="Diagram: Python Implementation → Anomaly Detection for Network Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-sticky.svg" alt="Sticky Note: Python Implementation → Anomaly Detection for Network Security" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-anomaly-detection-for-network-security-sticky.svg" alt="Sticky Note: Python Implementation → Anomaly Detection for Network Security" width="30%">
 </a>
 
 
@@ -1488,14 +1488,14 @@ print(f"Reason: {result['reason']}")
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -1511,14 +1511,14 @@ print(f"Reason: {result['reason']}")
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1534,14 +1534,14 @@ print(f"Reason: {result['reason']}")
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1559,14 +1559,14 @@ print(f"Reason: {result['reason']}")
 
 ### How AI Solves Environmental Problems
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-handwritten.svg" alt="Handwritten: How AI Solves Environmental Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-handwritten.svg" alt="Handwritten: How AI Solves Environmental Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-diagram.svg" alt="Diagram: How AI Solves Environmental Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-diagram.svg" alt="Diagram: How AI Solves Environmental Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-sticky.svg" alt="Sticky Note: How AI Solves Environmental Problems" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-ai-solves-environmental-problems-sticky.svg" alt="Sticky Note: How AI Solves Environmental Problems" width="30%">
 </a>
 
 
@@ -1579,14 +1579,14 @@ print(f"Reason: {result['reason']}")
 
 ### Climate Forecasting Pipeline Pseudocode
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Climate Forecasting Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-handwritten.svg" alt="Handwritten: Climate Forecasting Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-diagram.svg" alt="Diagram: Climate Forecasting Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-diagram.svg" alt="Diagram: Climate Forecasting Pipeline Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Climate Forecasting Pipeline Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/climate-forecasting-pipeline-pseudocode-sticky.svg" alt="Sticky Note: Climate Forecasting Pipeline Pseudocode" width="30%">
 </a>
 
 
@@ -1633,14 +1633,14 @@ function climateForecastingPipeline(location, forecastDays):
 
 ### Python Implementation → Satellite Image Change Detection for Deforestation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-handwritten.svg" alt="Handwritten: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-handwritten.svg" alt="Handwritten: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-diagram.svg" alt="Diagram: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-diagram.svg" alt="Diagram: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-sticky.svg" alt="Sticky Note: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/python-implementation-satellite-image-change-detection-for-deforestation-sticky.svg" alt="Sticky Note: Python Implementation → Satellite Image Change Detection for Deforestation" width="30%">
 </a>
 
 
@@ -1717,14 +1717,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Impact Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-handwritten.svg" alt="Handwritten: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-diagram.svg" alt="Diagram: Impact Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/impact-analysis-sticky.svg" alt="Sticky Note: Impact Analysis" width="30%">
 </a>
 
 
@@ -1739,14 +1739,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1763,14 +1763,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1797,14 +1797,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### AI Maturity Level Definitions
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-handwritten.svg" alt="Handwritten: AI Maturity Level Definitions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-handwritten.svg" alt="Handwritten: AI Maturity Level Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-diagram.svg" alt="Diagram: AI Maturity Level Definitions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-diagram.svg" alt="Diagram: AI Maturity Level Definitions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-sticky.svg" alt="Sticky Note: AI Maturity Level Definitions" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/ai-maturity-level-definitions-sticky.svg" alt="Sticky Note: AI Maturity Level Definitions" width="30%">
 </a>
 
 
@@ -1865,14 +1865,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q2: How do you choose the right evaluation metric for an AI product?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-handwritten.svg" alt="Handwritten: How do you choose the right evaluation metric for an AI product?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-handwritten.svg" alt="Handwritten: How do you choose the right evaluation metric for an AI product?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-diagram.svg" alt="Diagram: How do you choose the right evaluation metric for an AI product?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-diagram.svg" alt="Diagram: How do you choose the right evaluation metric for an AI product?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-sticky.svg" alt="Sticky Note: How do you choose the right evaluation metric for an AI product?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-choose-the-right-evaluation-metric-for-an-ai-product-sticky.svg" alt="Sticky Note: How do you choose the right evaluation metric for an AI product?" width="30%">
 </a>
 
 
@@ -1886,14 +1886,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q3: What are the most common deployment challenges for AI systems?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-handwritten.svg" alt="Handwritten: What are the most common deployment challenges for AI systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-handwritten.svg" alt="Handwritten: What are the most common deployment challenges for AI systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-diagram.svg" alt="Diagram: What are the most common deployment challenges for AI systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-diagram.svg" alt="Diagram: What are the most common deployment challenges for AI systems?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-sticky.svg" alt="Sticky Note: What are the most common deployment challenges for AI systems?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-are-the-most-common-deployment-challenges-for-ai-systems-sticky.svg" alt="Sticky Note: What are the most common deployment challenges for AI systems?" width="30%">
 </a>
 
 
@@ -1913,14 +1913,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q4: Explain the AI product lifecycle from problem definition to maintenance.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-handwritten.svg" alt="Handwritten: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-handwritten.svg" alt="Handwritten: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-diagram.svg" alt="Diagram: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-diagram.svg" alt="Diagram: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-sticky.svg" alt="Sticky Note: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/explain-the-ai-product-lifecycle-from-problem-definition-to-maintenance-sticky.svg" alt="Sticky Note: Explain the AI product lifecycle from problem definition to maintenance." width="30%">
 </a>
 
 
@@ -1937,14 +1937,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q5: How do you handle imbalanced datasets in production AI?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-handwritten.svg" alt="Handwritten: How do you handle imbalanced datasets in production AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-handwritten.svg" alt="Handwritten: How do you handle imbalanced datasets in production AI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-diagram.svg" alt="Diagram: How do you handle imbalanced datasets in production AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-diagram.svg" alt="Diagram: How do you handle imbalanced datasets in production AI?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-sticky.svg" alt="Sticky Note: How do you handle imbalanced datasets in production AI?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/how-do-you-handle-imbalanced-datasets-in-production-ai-sticky.svg" alt="Sticky Note: How do you handle imbalanced datasets in production AI?" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Q6: What MLOps practices are essential for reliable AI deployment?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-handwritten.svg" alt="Handwritten: What MLOps practices are essential for reliable AI deployment?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-handwritten.svg" alt="Handwritten: What MLOps practices are essential for reliable AI deployment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-diagram.svg" alt="Diagram: What MLOps practices are essential for reliable AI deployment?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-diagram.svg" alt="Diagram: What MLOps practices are essential for reliable AI deployment?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-sticky.svg" alt="Sticky Note: What MLOps practices are essential for reliable AI deployment?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/what-mlops-practices-are-essential-for-reliable-ai-deployment-sticky.svg" alt="Sticky Note: What MLOps practices are essential for reliable AI deployment?" width="30%">
 </a>
 
 
@@ -1988,14 +1988,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### DeepMind (Healthcare → AlphaFold & Medical Imaging)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-handwritten.svg" alt="Handwritten: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-handwritten.svg" alt="Handwritten: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-diagram.svg" alt="Diagram: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-diagram.svg" alt="Diagram: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-sticky.svg" alt="Sticky Note: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/deepmind-healthcare-alphafold-medical-imaging-sticky.svg" alt="Sticky Note: DeepMind (Healthcare → AlphaFold & Medical Imaging)" width="30%">
 </a>
 
 
@@ -2017,14 +2017,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Waymo (Transportation → Autonomous Driving)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-handwritten.svg" alt="Handwritten: Waymo (Transportation → Autonomous Driving)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-handwritten.svg" alt="Handwritten: Waymo (Transportation → Autonomous Driving)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-diagram.svg" alt="Diagram: Waymo (Transportation → Autonomous Driving)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-diagram.svg" alt="Diagram: Waymo (Transportation → Autonomous Driving)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-sticky.svg" alt="Sticky Note: Waymo (Transportation → Autonomous Driving)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/waymo-transportation-autonomous-driving-sticky.svg" alt="Sticky Note: Waymo (Transportation → Autonomous Driving)" width="30%">
 </a>
 
 
@@ -2047,14 +2047,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### Grammarly (Education & Writing → NLP at Scale)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-handwritten.svg" alt="Handwritten: Grammarly (Education & Writing → NLP at Scale)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-handwritten.svg" alt="Handwritten: Grammarly (Education & Writing → NLP at Scale)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-diagram.svg" alt="Diagram: Grammarly (Education & Writing → NLP at Scale)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-diagram.svg" alt="Diagram: Grammarly (Education & Writing → NLP at Scale)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-sticky.svg" alt="Sticky Note: Grammarly (Education & Writing → NLP at Scale)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/grammarly-education-writing-nlp-at-scale-sticky.svg" alt="Sticky Note: Grammarly (Education & Writing → NLP at Scale)" width="30%">
 </a>
 
 
@@ -2076,14 +2076,14 @@ print(f"NDVI change: {result['ndvi_before_mean']:.3f} -> {result['ndvi_after_mea
 
 ### GitHub Copilot (Code Generation → Developer Productivity)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-handwritten.svg" alt="Handwritten: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-handwritten.svg" alt="Handwritten: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-diagram.svg" alt="Diagram: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-diagram.svg" alt="Diagram: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-sticky.svg" alt="Sticky Note: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/github-copilot-code-generation-developer-productivity-sticky.svg" alt="Sticky Note: GitHub Copilot (Code Generation → Developer Productivity)" width="30%">
 </a>
 
 
@@ -2219,14 +2219,14 @@ AI applications have transcended research labs to become integral components of 
 
 ### Key Takeaways
 
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/18-ai-applications/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
 </a>
 
 

@@ -15,14 +15,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 What Is Reading Comprehension in Govt Exams?
 
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-handwritten.svg" alt="Handwritten: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-handwritten.svg" alt="Handwritten: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-diagram.svg" alt="Diagram: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-diagram.svg" alt="Diagram: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-sticky.svg" alt="Sticky Note: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-sticky.svg" alt="Sticky Note: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
 </a>
 
 
@@ -37,14 +37,14 @@ Exams that feature RC passages:
 
 ### 1.2 Types of Passages
 
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-handwritten.svg" alt="Handwritten: 1.2 Types of Passages" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-handwritten.svg" alt="Handwritten: 1.2 Types of Passages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-diagram.svg" alt="Diagram: 1.2 Types of Passages" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-diagram.svg" alt="Diagram: 1.2 Types of Passages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-sticky.svg" alt="Sticky Note: 1.2 Types of Passages" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-sticky.svg" alt="Sticky Note: 1.2 Types of Passages" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ Exams that feature RC passages:
 
 ### 1.3 Types of Questions
 
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-handwritten.svg" alt="Handwritten: 1.3 Types of Questions" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-handwritten.svg" alt="Handwritten: 1.3 Types of Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-diagram.svg" alt="Diagram: 1.3 Types of Questions" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-diagram.svg" alt="Diagram: 1.3 Types of Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-sticky.svg" alt="Sticky Note: 1.3 Types of Questions" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-sticky.svg" alt="Sticky Note: 1.3 Types of Questions" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ Exams that feature RC passages:
 
 ### 1.4 The SQ3R Method for RC
 
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-handwritten.svg" alt="Handwritten: 1.4 The SQ3R Method for RC" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-handwritten.svg" alt="Handwritten: 1.4 The SQ3R Method for RC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-diagram.svg" alt="Diagram: 1.4 The SQ3R Method for RC" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-diagram.svg" alt="Diagram: 1.4 The SQ3R Method for RC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-sticky.svg" alt="Sticky Note: 1.4 The SQ3R Method for RC" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-sticky.svg" alt="Sticky Note: 1.4 The SQ3R Method for RC" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ Exams that feature RC passages:
 
 ### 1.5 Speed vs Accuracy Trade-off
 
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-handwritten.svg" alt="Handwritten: 1.5 Speed vs Accuracy Trade-off" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-handwritten.svg" alt="Handwritten: 1.5 Speed vs Accuracy Trade-off" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-diagram.svg" alt="Diagram: 1.5 Speed vs Accuracy Trade-off" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-diagram.svg" alt="Diagram: 1.5 Speed vs Accuracy Trade-off" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-sticky.svg" alt="Sticky Note: 1.5 Speed vs Accuracy Trade-off" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-sticky.svg" alt="Sticky Note: 1.5 Speed vs Accuracy Trade-off" width="30%">
 </a>
 
 
@@ -153,14 +153,14 @@ In IBPS SO Prelims, you have approximately **55 minutes for all sections**. Engl
 
 ### 1.6 Cloze Test Integration
 
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-handwritten.svg" alt="Handwritten: 1.6 Cloze Test Integration" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-handwritten.svg" alt="Handwritten: 1.6 Cloze Test Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-diagram.svg" alt="Diagram: 1.6 Cloze Test Integration" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-diagram.svg" alt="Diagram: 1.6 Cloze Test Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-sticky.svg" alt="Sticky Note: 1.6 Cloze Test Integration" width="30%">
+<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-sticky.svg" alt="Sticky Note: 1.6 Cloze Test Integration" width="30%">
 </a>
 
 

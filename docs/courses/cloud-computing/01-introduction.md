@@ -45,14 +45,14 @@ flowchart LR
 
 ### 1.1 Definition of Cloud Computing
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-handwritten.svg" alt="Handwritten: 1.1 Definition of Cloud Computing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-handwritten.svg" alt="Handwritten: 1.1 Definition of Cloud Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-diagram.svg" alt="Diagram: 1.1 Definition of Cloud Computing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-diagram.svg" alt="Diagram: 1.1 Definition of Cloud Computing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-sticky.svg" alt="Sticky Note: 1.1 Definition of Cloud Computing" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-sticky.svg" alt="Sticky Note: 1.1 Definition of Cloud Computing" width="30%">
 </a>
 
 
@@ -62,14 +62,14 @@ The NIST definition is significant because it establishes a clear boundary betwe
 
 ### 1.2 Essential Characteristics
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-handwritten.svg" alt="Handwritten: 1.2 Essential Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-handwritten.svg" alt="Handwritten: 1.2 Essential Characteristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-diagram.svg" alt="Diagram: 1.2 Essential Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-diagram.svg" alt="Diagram: 1.2 Essential Characteristics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-sticky.svg" alt="Sticky Note: 1.2 Essential Characteristics" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-sticky.svg" alt="Sticky Note: 1.2 Essential Characteristics" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ The NIST definition is significant because it establishes a clear boundary betwe
 
 ### 1.3 Service Models
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-handwritten.svg" alt="Handwritten: 1.3 Service Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-handwritten.svg" alt="Handwritten: 1.3 Service Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-diagram.svg" alt="Diagram: 1.3 Service Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-diagram.svg" alt="Diagram: 1.3 Service Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-sticky.svg" alt="Sticky Note: 1.3 Service Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-sticky.svg" alt="Sticky Note: 1.3 Service Models" width="30%">
 </a>
 
 
@@ -180,14 +180,14 @@ graph TB
 
 ### 1.4 Service Model Comparison
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-handwritten.svg" alt="Handwritten: 1.4 Service Model Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-handwritten.svg" alt="Handwritten: 1.4 Service Model Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-diagram.svg" alt="Diagram: 1.4 Service Model Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-diagram.svg" alt="Diagram: 1.4 Service Model Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-sticky.svg" alt="Sticky Note: 1.4 Service Model Comparison" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-sticky.svg" alt="Sticky Note: 1.4 Service Model Comparison" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ graph TB
 
 ### 1.5 Deployment Models
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-handwritten.svg" alt="Handwritten: 1.5 Deployment Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-handwritten.svg" alt="Handwritten: 1.5 Deployment Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-diagram.svg" alt="Diagram: 1.5 Deployment Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-diagram.svg" alt="Diagram: 1.5 Deployment Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-sticky.svg" alt="Sticky Note: 1.5 Deployment Models" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-sticky.svg" alt="Sticky Note: 1.5 Deployment Models" width="30%">
 </a>
 
 
@@ -242,14 +242,14 @@ graph TD
 
 ### 1.6 Cloud Economics
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-handwritten.svg" alt="Handwritten: 1.6 Cloud Economics" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-handwritten.svg" alt="Handwritten: 1.6 Cloud Economics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-diagram.svg" alt="Diagram: 1.6 Cloud Economics" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-diagram.svg" alt="Diagram: 1.6 Cloud Economics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-sticky.svg" alt="Sticky Note: 1.6 Cloud Economics" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-sticky.svg" alt="Sticky Note: 1.6 Cloud Economics" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ graph TD
 
 ### 1.7 Cloud Adoption Drivers
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-handwritten.svg" alt="Handwritten: 1.7 Cloud Adoption Drivers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-handwritten.svg" alt="Handwritten: 1.7 Cloud Adoption Drivers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-diagram.svg" alt="Diagram: 1.7 Cloud Adoption Drivers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-diagram.svg" alt="Diagram: 1.7 Cloud Adoption Drivers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-sticky.svg" alt="Sticky Note: 1.7 Cloud Adoption Drivers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-sticky.svg" alt="Sticky Note: 1.7 Cloud Adoption Drivers" width="30%">
 </a>
 
 
@@ -294,14 +294,14 @@ Organizations adopt cloud computing for several strategic reasons:
 
 ### 1.8 Common Cloud Myths
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-handwritten.svg" alt="Handwritten: 1.8 Common Cloud Myths" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-handwritten.svg" alt="Handwritten: 1.8 Common Cloud Myths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-diagram.svg" alt="Diagram: 1.8 Common Cloud Myths" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-diagram.svg" alt="Diagram: 1.8 Common Cloud Myths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-sticky.svg" alt="Sticky Note: 1.8 Common Cloud Myths" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-sticky.svg" alt="Sticky Note: 1.8 Common Cloud Myths" width="30%">
 </a>
 
 
@@ -317,14 +317,14 @@ Myth 5: "All workloads should move to the cloud." Some workloads are better kept
 
 ### 1.9 Cloud Migration Strategies (The 6 Rs)
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-handwritten.svg" alt="Handwritten: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-handwritten.svg" alt="Handwritten: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-diagram.svg" alt="Diagram: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-diagram.svg" alt="Diagram: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-sticky.svg" alt="Sticky Note: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-sticky.svg" alt="Sticky Note: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
 </a>
 
 
@@ -359,14 +359,14 @@ graph TB
 
 ### 1.10 Vendor Lock-in
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-handwritten.svg" alt="Handwritten: 1.10 Vendor Lock-in" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-handwritten.svg" alt="Handwritten: 1.10 Vendor Lock-in" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-diagram.svg" alt="Diagram: 1.10 Vendor Lock-in" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-diagram.svg" alt="Diagram: 1.10 Vendor Lock-in" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-sticky.svg" alt="Sticky Note: 1.10 Vendor Lock-in" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-sticky.svg" alt="Sticky Note: 1.10 Vendor Lock-in" width="30%">
 </a>
 
 
@@ -385,14 +385,14 @@ Vendor lock-in occurs when a customer becomes dependent on a specific provider's
 
 ### 1.11 Benefits and Challenges
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-handwritten.svg" alt="Handwritten: 1.11 Benefits and Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-handwritten.svg" alt="Handwritten: 1.11 Benefits and Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-diagram.svg" alt="Diagram: 1.11 Benefits and Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-diagram.svg" alt="Diagram: 1.11 Benefits and Challenges" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-sticky.svg" alt="Sticky Note: 1.11 Benefits and Challenges" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-sticky.svg" alt="Sticky Note: 1.11 Benefits and Challenges" width="30%">
 </a>
 
 
@@ -402,14 +402,14 @@ Vendor lock-in occurs when a customer becomes dependent on a specific provider's
 
 ### 1.12 Major Cloud Providers
 
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-handwritten.svg" alt="Handwritten: 1.12 Major Cloud Providers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-handwritten.svg" alt="Handwritten: 1.12 Major Cloud Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-diagram.svg" alt="Diagram: 1.12 Major Cloud Providers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-diagram.svg" alt="Diagram: 1.12 Major Cloud Providers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-sticky.svg" alt="Sticky Note: 1.12 Major Cloud Providers" width="30%">
+<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-sticky.svg" alt="Sticky Note: 1.12 Major Cloud Providers" width="30%">
 </a>
 
 

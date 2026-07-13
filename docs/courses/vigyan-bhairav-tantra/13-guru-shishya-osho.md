@@ -39,14 +39,14 @@
 
 ### १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.१ पारंपरिक गुरु अवधारणा पर ओशो का करारा प्रहार" width="30%">
 </a>
 
 
@@ -59,14 +59,14 @@
 
 ### १.२ गुरु एक कैटेलिस्ट है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.२ गुरु एक कैटेलिस्ट है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.२ गुरु एक कैटेलिस्ट है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.२ गुरु एक कैटेलिस्ट है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.२ गुरु एक कैटेलिस्ट है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.२ गुरु एक कैटेलिस्ट है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.२ गुरु एक कैटेलिस्ट है" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ flowchart LR
 
 ### १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: १.३ "गुरु तुम्हें आज़ाद करता है, बाँधता नहीं"" width="30%">
 </a>
 
 
@@ -141,14 +141,14 @@ mindmap
 
 ### २.१ परंपरा में दीक्षा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.१ परंपरा में दीक्षा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.१ परंपरा में दीक्षा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.१ परंपरा में दीक्षा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.१ परंपरा में दीक्षा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.१ परंपरा में दीक्षा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.१ परंपरा में दीक्षा" width="30%">
 </a>
 
 
@@ -158,14 +158,14 @@ mindmap
 
 ### २.२ शक्तिपात — ओशो की व्याख्या
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.२ शक्तिपात — ओशो की व्याख्या" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ sequenceDiagram
 
 ### २.३ ओशो की अनूठी दीक्षा प्रक्रिया
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: २.३ ओशो की अनूठी दीक्षा प्रक्रिया" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ flowchart TD
 
 ### ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.१ गुरु एक बीमारी है — ओशो का विवादास्पद कथन" width="30%">
 </a>
 
 
@@ -255,14 +255,14 @@ flowchart TD
 
 ### ३.२ श्रद्धा बनाम अंधविश्वास
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.२ श्रद्धा बनाम अंधविश्वास" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ flowchart TD
 
 ### ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ३.३ गुरु-शिष्य संबंध का ओशो का मॉडल" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ flowchart TD
 
 ### ४.1 सत्संग का अर्थ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-handwritten.svg" alt="Handwritten: ४.1 सत्संग का अर्थ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-handwritten.svg" alt="Handwritten: ४.1 सत्संग का अर्थ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-diagram.svg" alt="Diagram: ४.1 सत्संग का अर्थ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-diagram.svg" alt="Diagram: ४.1 सत्संग का अर्थ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-sticky.svg" alt="Sticky Note: ४.1 सत्संग का अर्थ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/1-sticky.svg" alt="Sticky Note: ४.1 सत्संग का अर्थ" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ flowchart TD
 
 ### ४.2 ओशो का मौन सत्संग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-handwritten.svg" alt="Handwritten: ४.2 ओशो का मौन सत्संग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-handwritten.svg" alt="Handwritten: ४.2 ओशो का मौन सत्संग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-diagram.svg" alt="Diagram: ४.2 ओशो का मौन सत्संग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-diagram.svg" alt="Diagram: ४.2 ओशो का मौन सत्संग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-sticky.svg" alt="Sticky Note: ४.2 ओशो का मौन सत्संग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/2-sticky.svg" alt="Sticky Note: ४.2 ओशो का मौन सत्संग" width="30%">
 </a>
 
 
@@ -372,14 +372,14 @@ flowchart LR
 
 ### ४.3 तीन प्रकार के सत्संग
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-handwritten.svg" alt="Handwritten: ४.3 तीन प्रकार के सत्संग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-handwritten.svg" alt="Handwritten: ४.3 तीन प्रकार के सत्संग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-diagram.svg" alt="Diagram: ४.3 तीन प्रकार के सत्संग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-diagram.svg" alt="Diagram: ४.3 तीन प्रकार के सत्संग" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-sticky.svg" alt="Sticky Note: ४.3 तीन प्रकार के सत्संग" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/3-sticky.svg" alt="Sticky Note: ४.3 तीन प्रकार के सत्संग" width="30%">
 </a>
 
 
@@ -398,14 +398,14 @@ flowchart LR
 
 ### ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ५.१ "द बुक ऑफ़ सीक्रेट्स" — ओशो की अमर कृति" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ flowchart LR
 
 ### ५.२ प्रमुख ओशो प्रवचन संदर्भ
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: ५.२ प्रमुख ओशो प्रवचन संदर्भ" width="30%">
 </a>
 
 
@@ -877,98 +877,98 @@ export {
 
 ### सूत्र १: गुरु कोई टीचर नहीं है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र १: गुरु कोई टीचर नहीं है" width="30%">
 </a>
 
 गुरु तुम्हें कुछ नहीं सिखाता — वह तो बस एक माहौल बनाता है जिसमें तुम सीख सको।
 
 ### सूत्र २: गुरु एक मित्र है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र २: गुरु एक मित्र है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र २: गुरु एक मित्र है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र २: गुरु एक मित्र है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र २: गुरु एक मित्र है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र २: गुरु एक मित्र है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र २: गुरु एक मित्र है" width="30%">
 </a>
 
 वह कोई अधिकारी नहीं, कोई बॉस नहीं — वह एक प्रेममय मित्र है जो तुम्हारे साथ चलता है।
 
 ### सूत्र ३: गुरु तुम्हें आज़ाद करता है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ३: गुरु तुम्हें आज़ाद करता है" width="30%">
 </a>
 
 अगर कोई तुम्हें बाँधता है, वह गुरु नहीं है। सच्चा गुरु तुम्हें हर बंधन से मुक्त करता है — अपने बंधन से भी।
 
 ### सूत्र ४: गुरु की उपस्थिति ही दीक्षा है
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ४: गुरु की उपस्थिति ही दीक्षा है" width="30%">
 </a>
 
 दीक्षा कोई रस्म नहीं — यह गुरु के साथ रहने का प्रभाव है। जैसे अग्नि के पास रहने से गर्मी लगती है।
 
 ### सूत्र ५: गुरु को पहचानो, मत चुनो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ५: गुरु को पहचानो, मत चुनो" width="30%">
 </a>
 
 गुरु को चुना नहीं जाता — उसे पहचाना जाता है। जब शिष्य तैयार होता है, गुरु प्रकट होता है।
 
 ### सूत्र ६: गुरु से सीखो, गुरु मत बनो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ६: गुरु से सीखो, गुरु मत बनो" width="30%">
 </a>
 
 गुरु का अनुकरण मत करो — उसकी उपस्थिति से सीखो। नकल करने से तुम कभी गुरु नहीं बन सकते।
 
 ### सूत्र ७: अंत में, गुरु को भी छोड़ दो
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: सूत्र ७: अंत में, गुरु को भी छोड़ दो" width="30%">
 </a>
 
 > *"जब तुम नदी पार कर लो, तो नाव को किनारे पर छोड़ दो। नाव को सिर पर उठाकर मत चलो।"* — ओशो
@@ -979,42 +979,42 @@ export {
 
 ### अभ्यास १: गुरु-स्मरण
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: गुरु-स्मरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: गुरु-स्मरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास १: गुरु-स्मरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास १: गुरु-स्मरण" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: गुरु-स्मरण" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: गुरु-स्मरण" width="30%">
 </a>
 
 प्रतिदिन ५ मिनट किसी ऐसे व्यक्ति को याद करो जिसने तुम्हारे जीवन में गहरा प्रभाव डाला हो — वह तुम्हारा गुरु है, चाहे उसने कभी यह खिताब न लिया हो।
 
 ### अभ्यास २: आंतरिक गुरु से संवाद
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: आंतरिक गुरु से संवाद" width="30%">
 </a>
 
 आँखें बंद करो और अपने भीतर के गुरु से बात करो। वह तुम्हारी सबसे गहरी बुद्धि है — उसकी सलाह लो।
 
 ### अभ्यास ३: गुरु-प्रश्न
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: गुरु-प्रश्न" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: गुरु-प्रश्न" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास ३: गुरु-प्रश्न" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-diagram.svg" alt="Diagram: अभ्यास ३: गुरु-प्रश्न" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: गुरु-प्रश्न" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/13-guru-shishya-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: गुरु-प्रश्न" width="30%">
 </a>
 
 अपने आप से पूछो: "अगर मैं ओशो के सामने बैठा होता, तो वह मुझसे क्या कहते?" इस प्रश्न को अपने भीतर गूँजने दो।

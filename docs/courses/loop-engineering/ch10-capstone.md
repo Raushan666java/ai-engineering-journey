@@ -68,14 +68,14 @@ A production-grade coding agent is the integration of every concept in this cour
 
 ### Tool Surface
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-handwritten.svg" alt="Handwritten: Tool Surface" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-handwritten.svg" alt="Handwritten: Tool Surface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-diagram.svg" alt="Diagram: Tool Surface" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-diagram.svg" alt="Diagram: Tool Surface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-sticky.svg" alt="Sticky Note: Tool Surface" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/tool-surface-sticky.svg" alt="Sticky Note: Tool Surface" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ interface ToolDefinition {
 
 ### State Types
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-handwritten.svg" alt="Handwritten: State Types" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-handwritten.svg" alt="Handwritten: State Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-diagram.svg" alt="Diagram: State Types" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-diagram.svg" alt="Diagram: State Types" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-sticky.svg" alt="Sticky Note: State Types" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/state-types-sticky.svg" alt="Sticky Note: State Types" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ interface EvalResult {
 
 ### Complete Implementation
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-handwritten.svg" alt="Handwritten: Complete Implementation" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-handwritten.svg" alt="Handwritten: Complete Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-diagram.svg" alt="Diagram: Complete Implementation" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-diagram.svg" alt="Diagram: Complete Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-sticky.svg" alt="Sticky Note: Complete Implementation" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/complete-implementation-sticky.svg" alt="Sticky Note: Complete Implementation" width="30%">
 </a>
 
 
@@ -556,14 +556,14 @@ Respond with JSON: { "analysis": string, "shouldRetry": boolean, "refinedArgs": 
 
 ### Running the Base Agent
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-handwritten.svg" alt="Handwritten: Running the Base Agent" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-handwritten.svg" alt="Handwritten: Running the Base Agent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-diagram.svg" alt="Diagram: Running the Base Agent" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-diagram.svg" alt="Diagram: Running the Base Agent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-sticky.svg" alt="Sticky Note: Running the Base Agent" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/running-the-base-agent-sticky.svg" alt="Sticky Note: Running the Base Agent" width="30%">
 </a>
 
 
@@ -865,14 +865,14 @@ Success: true
 
 ### Recovery from Multi-Step Failure
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-handwritten.svg" alt="Handwritten: Recovery from Multi-Step Failure" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-handwritten.svg" alt="Handwritten: Recovery from Multi-Step Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-diagram.svg" alt="Diagram: Recovery from Multi-Step Failure" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-diagram.svg" alt="Diagram: Recovery from Multi-Step Failure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-sticky.svg" alt="Sticky Note: Recovery from Multi-Step Failure" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/recovery-from-multi-step-failure-sticky.svg" alt="Sticky Note: Recovery from Multi-Step Failure" width="30%">
 </a>
 
 
@@ -933,14 +933,14 @@ await demonstrateMultiStepRecovery();
 
 ### Extended Implementation: Complete Loop System Assembly
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-handwritten.svg" alt="Handwritten: Extended Implementation: Complete Loop System Assembly" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-handwritten.svg" alt="Handwritten: Extended Implementation: Complete Loop System Assembly" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-diagram.svg" alt="Diagram: Extended Implementation: Complete Loop System Assembly" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-diagram.svg" alt="Diagram: Extended Implementation: Complete Loop System Assembly" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-sticky.svg" alt="Sticky Note: Extended Implementation: Complete Loop System Assembly" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/extended-implementation-complete-loop-system-assembly-sticky.svg" alt="Sticky Note: Extended Implementation: Complete Loop System Assembly" width="30%">
 </a>
 
 
@@ -1526,14 +1526,14 @@ Benchmark: baseline-plan (10 iterations...
 
 ### Production Platform Tooling
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-handwritten.svg" alt="Handwritten: Production Platform Tooling" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-handwritten.svg" alt="Handwritten: Production Platform Tooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-diagram.svg" alt="Diagram: Production Platform Tooling" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-diagram.svg" alt="Diagram: Production Platform Tooling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-sticky.svg" alt="Sticky Note: Production Platform Tooling" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/production-platform-tooling-sticky.svg" alt="Sticky Note: Production Platform Tooling" width="30%">
 </a>
 
 
@@ -2362,14 +2362,14 @@ The capstone integrates every loop concept from this course into a single, coher
 
 ### Challenge
 
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-handwritten.svg" alt="Handwritten: Challenge" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-handwritten.svg" alt="Handwritten: Challenge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-diagram.svg" alt="Diagram: Challenge" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-diagram.svg" alt="Diagram: Challenge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-sticky.svg" alt="Sticky Note: Challenge" width="30%">
+<a href="../../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/loop-engineering/ch10-capstone/challenge-sticky.svg" alt="Sticky Note: Challenge" width="30%">
 </a>
 
 

@@ -48,14 +48,14 @@ flowchart TD
 
 ### Q1: Two Sum
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-handwritten.svg" alt="Handwritten: Two Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-handwritten.svg" alt="Handwritten: Two Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-diagram.svg" alt="Diagram: Two Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-diagram.svg" alt="Diagram: Two Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-sticky.svg" alt="Sticky Note: Two Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/two-sum-sticky.svg" alt="Sticky Note: Two Sum" width="30%">
 </a>
 
 
@@ -101,14 +101,14 @@ public class TwoSum {
 
 ### Q2: Best Time to Buy and Sell Stock
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-handwritten.svg" alt="Handwritten: Best Time to Buy and Sell Stock" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-handwritten.svg" alt="Handwritten: Best Time to Buy and Sell Stock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-diagram.svg" alt="Diagram: Best Time to Buy and Sell Stock" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-diagram.svg" alt="Diagram: Best Time to Buy and Sell Stock" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-sticky.svg" alt="Sticky Note: Best Time to Buy and Sell Stock" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/best-time-to-buy-and-sell-stock-sticky.svg" alt="Sticky Note: Best Time to Buy and Sell Stock" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ public class BestTimeToBuyAndSellStock {
 
 ### Q3: Product of Array Except Self
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-handwritten.svg" alt="Handwritten: Product of Array Except Self" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-handwritten.svg" alt="Handwritten: Product of Array Except Self" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-diagram.svg" alt="Diagram: Product of Array Except Self" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-diagram.svg" alt="Diagram: Product of Array Except Self" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-sticky.svg" alt="Sticky Note: Product of Array Except Self" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/product-of-array-except-self-sticky.svg" alt="Sticky Note: Product of Array Except Self" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@ public class ProductOfArrayExceptSelf {
 
 ### Q4: Maximum Subarray (Kadane's Algorithm)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Maximum Subarray (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Maximum Subarray (Kadane's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Maximum Subarray (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Maximum Subarray (Kadane's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Maximum Subarray (Kadane's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Maximum Subarray (Kadane's Algorithm)" width="30%">
 </a>
 
 
@@ -244,14 +244,14 @@ public class MaximumSubarray {
 
 ### Q5: Find Minimum in Rotated Sorted Array
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Find Minimum in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Find Minimum in Rotated Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-diagram.svg" alt="Diagram: Find Minimum in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-diagram.svg" alt="Diagram: Find Minimum in Rotated Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Find Minimum in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-minimum-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Find Minimum in Rotated Sorted Array" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@ public class FindMinimumInRotatedSortedArray {
 
 ### Q6: Container With Most Water
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-handwritten.svg" alt="Handwritten: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-handwritten.svg" alt="Handwritten: Container With Most Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-diagram.svg" alt="Diagram: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-diagram.svg" alt="Diagram: Container With Most Water" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-sticky.svg" alt="Sticky Note: Container With Most Water" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/container-with-most-water-sticky.svg" alt="Sticky Note: Container With Most Water" width="30%">
 </a>
 
 
@@ -340,14 +340,14 @@ public class ContainerWithMostWater {
 
 ### Q7: 3Sum
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-handwritten.svg" alt="Handwritten: 3Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-handwritten.svg" alt="Handwritten: 3Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-diagram.svg" alt="Diagram: 3Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-diagram.svg" alt="Diagram: 3Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-sticky.svg" alt="Sticky Note: 3Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3sum-sticky.svg" alt="Sticky Note: 3Sum" width="30%">
 </a>
 
 
@@ -400,14 +400,14 @@ public class ThreeSum {
 
 ### Q8: Merge Intervals
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-handwritten.svg" alt="Handwritten: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-handwritten.svg" alt="Handwritten: Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-diagram.svg" alt="Diagram: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-diagram.svg" alt="Diagram: Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-sticky.svg" alt="Sticky Note: Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-intervals-sticky.svg" alt="Sticky Note: Merge Intervals" width="30%">
 </a>
 
 
@@ -454,14 +454,14 @@ public class MergeIntervals {
 
 ### Q9: Next Permutation
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-handwritten.svg" alt="Handwritten: Next Permutation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-handwritten.svg" alt="Handwritten: Next Permutation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-diagram.svg" alt="Diagram: Next Permutation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-diagram.svg" alt="Diagram: Next Permutation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-sticky.svg" alt="Sticky Note: Next Permutation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/next-permutation-sticky.svg" alt="Sticky Note: Next Permutation" width="30%">
 </a>
 
 
@@ -514,14 +514,14 @@ public class NextPermutation {
 
 ### Q10: Sort Colors (Dutch National Flag)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-handwritten.svg" alt="Handwritten: Sort Colors (Dutch National Flag)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-handwritten.svg" alt="Handwritten: Sort Colors (Dutch National Flag)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-diagram.svg" alt="Diagram: Sort Colors (Dutch National Flag)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-diagram.svg" alt="Diagram: Sort Colors (Dutch National Flag)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-sticky.svg" alt="Sticky Note: Sort Colors (Dutch National Flag)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sort-colors-dutch-national-flag-sticky.svg" alt="Sticky Note: Sort Colors (Dutch National Flag)" width="30%">
 </a>
 
 
@@ -570,14 +570,14 @@ public class SortColors {
 
 ### Q11: Subarray Sum Equals K
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-handwritten.svg" alt="Handwritten: Subarray Sum Equals K" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-handwritten.svg" alt="Handwritten: Subarray Sum Equals K" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-diagram.svg" alt="Diagram: Subarray Sum Equals K" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-diagram.svg" alt="Diagram: Subarray Sum Equals K" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-sticky.svg" alt="Sticky Note: Subarray Sum Equals K" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/subarray-sum-equals-k-sticky.svg" alt="Sticky Note: Subarray Sum Equals K" width="30%">
 </a>
 
 
@@ -622,14 +622,14 @@ public class SubarraySumEqualsK {
 
 ### Q12: First Missing Positive
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-handwritten.svg" alt="Handwritten: First Missing Positive" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-handwritten.svg" alt="Handwritten: First Missing Positive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-diagram.svg" alt="Diagram: First Missing Positive" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-diagram.svg" alt="Diagram: First Missing Positive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-sticky.svg" alt="Sticky Note: First Missing Positive" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/first-missing-positive-sticky.svg" alt="Sticky Note: First Missing Positive" width="30%">
 </a>
 
 
@@ -673,14 +673,14 @@ public class FirstMissingPositive {
 
 ### Q13: Longest Substring Without Repeating Characters
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Longest Substring Without Repeating Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Longest Substring Without Repeating Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Longest Substring Without Repeating Characters" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Longest Substring Without Repeating Characters" width="30%">
 </a>
 
 
@@ -724,14 +724,14 @@ public class LongestSubstringWithoutRepeating {
 
 ### Q14: Valid Anagram
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-handwritten.svg" alt="Handwritten: Valid Anagram" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-handwritten.svg" alt="Handwritten: Valid Anagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-diagram.svg" alt="Diagram: Valid Anagram" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-diagram.svg" alt="Diagram: Valid Anagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-sticky.svg" alt="Sticky Note: Valid Anagram" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-anagram-sticky.svg" alt="Sticky Note: Valid Anagram" width="30%">
 </a>
 
 
@@ -773,14 +773,14 @@ public class ValidAnagram {
 
 ### Q15: Longest Palindromic Substring
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-handwritten.svg" alt="Handwritten: Longest Palindromic Substring" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-handwritten.svg" alt="Handwritten: Longest Palindromic Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-diagram.svg" alt="Diagram: Longest Palindromic Substring" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-diagram.svg" alt="Diagram: Longest Palindromic Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-sticky.svg" alt="Sticky Note: Longest Palindromic Substring" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-palindromic-substring-sticky.svg" alt="Sticky Note: Longest Palindromic Substring" width="30%">
 </a>
 
 
@@ -830,14 +830,14 @@ public class LongestPalindromicSubstring {
 
 ### Q16: Group Anagrams
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-handwritten.svg" alt="Handwritten: Group Anagrams" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-handwritten.svg" alt="Handwritten: Group Anagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-diagram.svg" alt="Diagram: Group Anagrams" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-diagram.svg" alt="Diagram: Group Anagrams" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-sticky.svg" alt="Sticky Note: Group Anagrams" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/group-anagrams-sticky.svg" alt="Sticky Note: Group Anagrams" width="30%">
 </a>
 
 
@@ -878,14 +878,14 @@ public class GroupAnagrams {
 
 ### Q17: Valid Parentheses
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-handwritten.svg" alt="Handwritten: Valid Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-handwritten.svg" alt="Handwritten: Valid Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-diagram.svg" alt="Diagram: Valid Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-diagram.svg" alt="Diagram: Valid Parentheses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-sticky.svg" alt="Sticky Note: Valid Parentheses" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/valid-parentheses-sticky.svg" alt="Sticky Note: Valid Parentheses" width="30%">
 </a>
 
 
@@ -929,14 +929,14 @@ public class ValidParentheses {
 
 ### Q18: Count and Say
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-handwritten.svg" alt="Handwritten: Count and Say" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-handwritten.svg" alt="Handwritten: Count and Say" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-diagram.svg" alt="Diagram: Count and Say" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-diagram.svg" alt="Diagram: Count and Say" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-sticky.svg" alt="Sticky Note: Count and Say" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/count-and-say-sticky.svg" alt="Sticky Note: Count and Say" width="30%">
 </a>
 
 
@@ -983,14 +983,14 @@ public class CountAndSay {
 
 ### Q19: Implement strStr() / IndexOf
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-handwritten.svg" alt="Handwritten: Implement strStr() / IndexOf" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-handwritten.svg" alt="Handwritten: Implement strStr() / IndexOf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-diagram.svg" alt="Diagram: Implement strStr() / IndexOf" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-diagram.svg" alt="Diagram: Implement strStr() / IndexOf" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-sticky.svg" alt="Sticky Note: Implement strStr() / IndexOf" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/implement-strstr-indexof-sticky.svg" alt="Sticky Note: Implement strStr() / IndexOf" width="30%">
 </a>
 
 
@@ -1030,14 +1030,14 @@ public class ImplementStrStr {
 
 ### Q20: String to Integer (atoi)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-handwritten.svg" alt="Handwritten: String to Integer (atoi)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-handwritten.svg" alt="Handwritten: String to Integer (atoi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-diagram.svg" alt="Diagram: String to Integer (atoi)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-diagram.svg" alt="Diagram: String to Integer (atoi)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-sticky.svg" alt="Sticky Note: String to Integer (atoi)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/string-to-integer-atoi-sticky.svg" alt="Sticky Note: String to Integer (atoi)" width="30%">
 </a>
 
 
@@ -1086,14 +1086,14 @@ public class StringToInteger {
 
 ### Q21: Reverse a Linked List
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-handwritten.svg" alt="Handwritten: Reverse a Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-handwritten.svg" alt="Handwritten: Reverse a Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-diagram.svg" alt="Diagram: Reverse a Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-diagram.svg" alt="Diagram: Reverse a Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-sticky.svg" alt="Sticky Note: Reverse a Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reverse-a-linked-list-sticky.svg" alt="Sticky Note: Reverse a Linked List" width="30%">
 </a>
 
 
@@ -1147,14 +1147,14 @@ public class ReverseLinkedList {
 
 ### Q22: Detect Cycle in Linked List
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-handwritten.svg" alt="Handwritten: Detect Cycle in Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-handwritten.svg" alt="Handwritten: Detect Cycle in Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-diagram.svg" alt="Diagram: Detect Cycle in Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-diagram.svg" alt="Diagram: Detect Cycle in Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-sticky.svg" alt="Sticky Note: Detect Cycle in Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/detect-cycle-in-linked-list-sticky.svg" alt="Sticky Note: Detect Cycle in Linked List" width="30%">
 </a>
 
 
@@ -1201,14 +1201,14 @@ public class LinkedListCycle {
 
 ### Q23: Merge Two Sorted Lists
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-handwritten.svg" alt="Handwritten: Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-handwritten.svg" alt="Handwritten: Merge Two Sorted Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-diagram.svg" alt="Diagram: Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-diagram.svg" alt="Diagram: Merge Two Sorted Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-sticky.svg" alt="Sticky Note: Merge Two Sorted Lists" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-two-sorted-lists-sticky.svg" alt="Sticky Note: Merge Two Sorted Lists" width="30%">
 </a>
 
 
@@ -1267,14 +1267,14 @@ public class MergeTwoSortedLists {
 
 ### Q24: Remove Nth Node From End
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-handwritten.svg" alt="Handwritten: Remove Nth Node From End" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-handwritten.svg" alt="Handwritten: Remove Nth Node From End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-diagram.svg" alt="Diagram: Remove Nth Node From End" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-diagram.svg" alt="Diagram: Remove Nth Node From End" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-sticky.svg" alt="Sticky Note: Remove Nth Node From End" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/remove-nth-node-from-end-sticky.svg" alt="Sticky Note: Remove Nth Node From End" width="30%">
 </a>
 
 
@@ -1330,14 +1330,14 @@ public class RemoveNthFromEnd {
 
 ### Q25: Find Middle of Linked List
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-handwritten.svg" alt="Handwritten: Find Middle of Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-handwritten.svg" alt="Handwritten: Find Middle of Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-diagram.svg" alt="Diagram: Find Middle of Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-diagram.svg" alt="Diagram: Find Middle of Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-sticky.svg" alt="Sticky Note: Find Middle of Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-middle-of-linked-list-sticky.svg" alt="Sticky Note: Find Middle of Linked List" width="30%">
 </a>
 
 
@@ -1384,14 +1384,14 @@ public class MiddleOfLinkedList {
 
 ### Q26: Add Two Numbers
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-handwritten.svg" alt="Handwritten: Add Two Numbers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-handwritten.svg" alt="Handwritten: Add Two Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-diagram.svg" alt="Diagram: Add Two Numbers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-diagram.svg" alt="Diagram: Add Two Numbers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-sticky.svg" alt="Sticky Note: Add Two Numbers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/add-two-numbers-sticky.svg" alt="Sticky Note: Add Two Numbers" width="30%">
 </a>
 
 
@@ -1448,14 +1448,14 @@ public class AddTwoNumbers {
 
 ### Q27: Intersection of Two Linked Lists
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-handwritten.svg" alt="Handwritten: Intersection of Two Linked Lists" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-handwritten.svg" alt="Handwritten: Intersection of Two Linked Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-diagram.svg" alt="Diagram: Intersection of Two Linked Lists" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-diagram.svg" alt="Diagram: Intersection of Two Linked Lists" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-sticky.svg" alt="Sticky Note: Intersection of Two Linked Lists" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/intersection-of-two-linked-lists-sticky.svg" alt="Sticky Note: Intersection of Two Linked Lists" width="30%">
 </a>
 
 
@@ -1504,14 +1504,14 @@ public class IntersectionOfTwoLinkedLists {
 
 ### Q28: LRU Cache
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-handwritten.svg" alt="Handwritten: LRU Cache" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-handwritten.svg" alt="Handwritten: LRU Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-diagram.svg" alt="Diagram: LRU Cache" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-diagram.svg" alt="Diagram: LRU Cache" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-sticky.svg" alt="Sticky Note: LRU Cache" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lru-cache-sticky.svg" alt="Sticky Note: LRU Cache" width="30%">
 </a>
 
 
@@ -1608,14 +1608,14 @@ public class LRUCache {
 
 ### Q29: Maximum Depth of Binary Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-handwritten.svg" alt="Handwritten: Maximum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-diagram.svg" alt="Diagram: Maximum Depth of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Maximum Depth of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-depth-of-binary-tree-sticky.svg" alt="Sticky Note: Maximum Depth of Binary Tree" width="30%">
 </a>
 
 
@@ -1657,14 +1657,14 @@ public class MaximumDepthOfBinaryTree {
 
 ### Q30: Invert Binary Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-handwritten.svg" alt="Handwritten: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-handwritten.svg" alt="Handwritten: Invert Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-diagram.svg" alt="Diagram: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-diagram.svg" alt="Diagram: Invert Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-sticky.svg" alt="Sticky Note: Invert Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/invert-binary-tree-sticky.svg" alt="Sticky Note: Invert Binary Tree" width="30%">
 </a>
 
 
@@ -1709,14 +1709,14 @@ public class InvertBinaryTree {
 
 ### Q31: Validate Binary Search Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-handwritten.svg" alt="Handwritten: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-handwritten.svg" alt="Handwritten: Validate Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-diagram.svg" alt="Diagram: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-diagram.svg" alt="Diagram: Validate Binary Search Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-sticky.svg" alt="Sticky Note: Validate Binary Search Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/validate-binary-search-tree-sticky.svg" alt="Sticky Note: Validate Binary Search Tree" width="30%">
 </a>
 
 
@@ -1761,14 +1761,14 @@ public class ValidateBST {
 
 ### Q32: Binary Tree Level Order Traversal
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-handwritten.svg" alt="Handwritten: Binary Tree Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-diagram.svg" alt="Diagram: Binary Tree Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Binary Tree Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-level-order-traversal-sticky.svg" alt="Sticky Note: Binary Tree Level Order Traversal" width="30%">
 </a>
 
 
@@ -1826,14 +1826,14 @@ public class LevelOrderTraversal {
 
 ### Q33: Serialize and Deserialize Binary Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-handwritten.svg" alt="Handwritten: Serialize and Deserialize Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-diagram.svg" alt="Diagram: Serialize and Deserialize Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Serialize and Deserialize Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/serialize-and-deserialize-binary-tree-sticky.svg" alt="Sticky Note: Serialize and Deserialize Binary Tree" width="30%">
 </a>
 
 
@@ -1905,14 +1905,14 @@ public class SerializeDeserializeBT {
 
 ### Q34: Lowest Common Ancestor of BST
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-handwritten.svg" alt="Handwritten: Lowest Common Ancestor of BST" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-handwritten.svg" alt="Handwritten: Lowest Common Ancestor of BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-diagram.svg" alt="Diagram: Lowest Common Ancestor of BST" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-diagram.svg" alt="Diagram: Lowest Common Ancestor of BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-sticky.svg" alt="Sticky Note: Lowest Common Ancestor of BST" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/lowest-common-ancestor-of-bst-sticky.svg" alt="Sticky Note: Lowest Common Ancestor of BST" width="30%">
 </a>
 
 
@@ -1963,14 +1963,14 @@ public class LowestCommonAncestorBST {
 
 ### Q35: Diameter of Binary Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-handwritten.svg" alt="Handwritten: Diameter of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-handwritten.svg" alt="Handwritten: Diameter of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-diagram.svg" alt="Diagram: Diameter of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-diagram.svg" alt="Diagram: Diameter of Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-sticky.svg" alt="Sticky Note: Diameter of Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/diameter-of-binary-tree-sticky.svg" alt="Sticky Note: Diameter of Binary Tree" width="30%">
 </a>
 
 
@@ -2022,14 +2022,14 @@ public class DiameterOfBinaryTree {
 
 ### Q36: Balanced Binary Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-handwritten.svg" alt="Handwritten: Balanced Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-handwritten.svg" alt="Handwritten: Balanced Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-diagram.svg" alt="Diagram: Balanced Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-diagram.svg" alt="Diagram: Balanced Binary Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-sticky.svg" alt="Sticky Note: Balanced Binary Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/balanced-binary-tree-sticky.svg" alt="Sticky Note: Balanced Binary Tree" width="30%">
 </a>
 
 
@@ -2080,14 +2080,14 @@ public class BalancedBinaryTree {
 
 ### Q37: Symmetric Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-handwritten.svg" alt="Handwritten: Symmetric Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-handwritten.svg" alt="Handwritten: Symmetric Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-diagram.svg" alt="Diagram: Symmetric Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-diagram.svg" alt="Diagram: Symmetric Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-sticky.svg" alt="Sticky Note: Symmetric Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/symmetric-tree-sticky.svg" alt="Sticky Note: Symmetric Tree" width="30%">
 </a>
 
 
@@ -2135,14 +2135,14 @@ public class SymmetricTree {
 
 ### Q38: Binary Tree Right Side View
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-handwritten.svg" alt="Handwritten: Binary Tree Right Side View" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-handwritten.svg" alt="Handwritten: Binary Tree Right Side View" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-diagram.svg" alt="Diagram: Binary Tree Right Side View" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-diagram.svg" alt="Diagram: Binary Tree Right Side View" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-sticky.svg" alt="Sticky Note: Binary Tree Right Side View" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-right-side-view-sticky.svg" alt="Sticky Note: Binary Tree Right Side View" width="30%">
 </a>
 
 
@@ -2200,14 +2200,14 @@ public class BinaryTreeRightSideView {
 
 ### Q39: Climbing Stairs
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-handwritten.svg" alt="Handwritten: Climbing Stairs" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-handwritten.svg" alt="Handwritten: Climbing Stairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-diagram.svg" alt="Diagram: Climbing Stairs" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-diagram.svg" alt="Diagram: Climbing Stairs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-sticky.svg" alt="Sticky Note: Climbing Stairs" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/climbing-stairs-sticky.svg" alt="Sticky Note: Climbing Stairs" width="30%">
 </a>
 
 
@@ -2244,14 +2244,14 @@ public class ClimbingStairs {
 
 ### Q40: Coin Change
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-handwritten.svg" alt="Handwritten: Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-handwritten.svg" alt="Handwritten: Coin Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-diagram.svg" alt="Diagram: Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-diagram.svg" alt="Diagram: Coin Change" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-sticky.svg" alt="Sticky Note: Coin Change" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/coin-change-sticky.svg" alt="Sticky Note: Coin Change" width="30%">
 </a>
 
 
@@ -2294,14 +2294,14 @@ public class CoinChange {
 
 ### Q41: Longest Increasing Subsequence
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-handwritten.svg" alt="Handwritten: Longest Increasing Subsequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-handwritten.svg" alt="Handwritten: Longest Increasing Subsequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-diagram.svg" alt="Diagram: Longest Increasing Subsequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-diagram.svg" alt="Diagram: Longest Increasing Subsequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-sticky.svg" alt="Sticky Note: Longest Increasing Subsequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-increasing-subsequence-sticky.svg" alt="Sticky Note: Longest Increasing Subsequence" width="30%">
 </a>
 
 
@@ -2342,14 +2342,14 @@ public class LongestIncreasingSubsequence {
 
 ### Q42: Longest Common Subsequence
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-handwritten.svg" alt="Handwritten: Longest Common Subsequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-handwritten.svg" alt="Handwritten: Longest Common Subsequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-diagram.svg" alt="Diagram: Longest Common Subsequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-diagram.svg" alt="Diagram: Longest Common Subsequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-sticky.svg" alt="Sticky Note: Longest Common Subsequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-common-subsequence-sticky.svg" alt="Sticky Note: Longest Common Subsequence" width="30%">
 </a>
 
 
@@ -2390,14 +2390,14 @@ public class LongestCommonSubsequence {
 
 ### Q43: 0/1 Knapsack
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-handwritten.svg" alt="Handwritten: 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-handwritten.svg" alt="Handwritten: 0/1 Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-diagram.svg" alt="Diagram: 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-diagram.svg" alt="Diagram: 0/1 Knapsack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-sticky.svg" alt="Sticky Note: 0/1 Knapsack" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/0-1-knapsack-sticky.svg" alt="Sticky Note: 0/1 Knapsack" width="30%">
 </a>
 
 
@@ -2441,14 +2441,14 @@ public class Knapsack01 {
 
 ### Q44: Edit Distance
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-handwritten.svg" alt="Handwritten: Edit Distance" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-handwritten.svg" alt="Handwritten: Edit Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-diagram.svg" alt="Diagram: Edit Distance" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-diagram.svg" alt="Diagram: Edit Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-sticky.svg" alt="Sticky Note: Edit Distance" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/edit-distance-sticky.svg" alt="Sticky Note: Edit Distance" width="30%">
 </a>
 
 
@@ -2492,14 +2492,14 @@ public class EditDistance {
 
 ### Q45: House Robber
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-handwritten.svg" alt="Handwritten: House Robber" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-handwritten.svg" alt="Handwritten: House Robber" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-diagram.svg" alt="Diagram: House Robber" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-diagram.svg" alt="Diagram: House Robber" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-sticky.svg" alt="Sticky Note: House Robber" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/house-robber-sticky.svg" alt="Sticky Note: House Robber" width="30%">
 </a>
 
 
@@ -2539,14 +2539,14 @@ public class HouseRobber {
 
 ### Q46: Maximum Product Subarray
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-handwritten.svg" alt="Handwritten: Maximum Product Subarray" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-handwritten.svg" alt="Handwritten: Maximum Product Subarray" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-diagram.svg" alt="Diagram: Maximum Product Subarray" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-diagram.svg" alt="Diagram: Maximum Product Subarray" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-sticky.svg" alt="Sticky Note: Maximum Product Subarray" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/maximum-product-subarray-sticky.svg" alt="Sticky Note: Maximum Product Subarray" width="30%">
 </a>
 
 
@@ -2588,14 +2588,14 @@ public class MaximumProductSubarray {
 
 ### Q47: Word Break
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-handwritten.svg" alt="Handwritten: Word Break" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-handwritten.svg" alt="Handwritten: Word Break" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-diagram.svg" alt="Diagram: Word Break" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-diagram.svg" alt="Diagram: Word Break" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-sticky.svg" alt="Sticky Note: Word Break" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-break-sticky.svg" alt="Sticky Note: Word Break" width="30%">
 </a>
 
 
@@ -2639,14 +2639,14 @@ public class WordBreak {
 
 ### Q48: Palindromic Substrings
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-handwritten.svg" alt="Handwritten: Palindromic Substrings" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-handwritten.svg" alt="Handwritten: Palindromic Substrings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-diagram.svg" alt="Diagram: Palindromic Substrings" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-diagram.svg" alt="Diagram: Palindromic Substrings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-sticky.svg" alt="Sticky Note: Palindromic Substrings" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindromic-substrings-sticky.svg" alt="Sticky Note: Palindromic Substrings" width="30%">
 </a>
 
 
@@ -2691,14 +2691,14 @@ public class PalindromicSubstrings {
 
 ### Q49: Unique Paths
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-handwritten.svg" alt="Handwritten: Unique Paths" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-handwritten.svg" alt="Handwritten: Unique Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-diagram.svg" alt="Diagram: Unique Paths" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-diagram.svg" alt="Diagram: Unique Paths" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-sticky.svg" alt="Sticky Note: Unique Paths" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/unique-paths-sticky.svg" alt="Sticky Note: Unique Paths" width="30%">
 </a>
 
 
@@ -2736,14 +2736,14 @@ public class UniquePaths {
 
 ### Q50: Partition Equal Subset Sum
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-handwritten.svg" alt="Handwritten: Partition Equal Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-handwritten.svg" alt="Handwritten: Partition Equal Subset Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-diagram.svg" alt="Diagram: Partition Equal Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-diagram.svg" alt="Diagram: Partition Equal Subset Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-sticky.svg" alt="Sticky Note: Partition Equal Subset Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/partition-equal-subset-sum-sticky.svg" alt="Sticky Note: Partition Equal Subset Sum" width="30%">
 </a>
 
 
@@ -2787,14 +2787,14 @@ public class PartitionEqualSubsetSum {
 
 ### Q51: Clone Graph
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-handwritten.svg" alt="Handwritten: Clone Graph" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-handwritten.svg" alt="Handwritten: Clone Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-diagram.svg" alt="Diagram: Clone Graph" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-diagram.svg" alt="Diagram: Clone Graph" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-sticky.svg" alt="Sticky Note: Clone Graph" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/clone-graph-sticky.svg" alt="Sticky Note: Clone Graph" width="30%">
 </a>
 
 
@@ -2854,14 +2854,14 @@ public class CloneGraph {
 
 ### Q52: Number of Islands
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-handwritten.svg" alt="Handwritten: Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-handwritten.svg" alt="Handwritten: Number of Islands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-diagram.svg" alt="Diagram: Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-diagram.svg" alt="Diagram: Number of Islands" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-sticky.svg" alt="Sticky Note: Number of Islands" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/number-of-islands-sticky.svg" alt="Sticky Note: Number of Islands" width="30%">
 </a>
 
 
@@ -2916,14 +2916,14 @@ public class NumberOfIslands {
 
 ### Q53: Course Schedule (Topological Sort)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-handwritten.svg" alt="Handwritten: Course Schedule (Topological Sort)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-handwritten.svg" alt="Handwritten: Course Schedule (Topological Sort)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-diagram.svg" alt="Diagram: Course Schedule (Topological Sort)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-diagram.svg" alt="Diagram: Course Schedule (Topological Sort)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-sticky.svg" alt="Sticky Note: Course Schedule (Topological Sort)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/course-schedule-topological-sort-sticky.svg" alt="Sticky Note: Course Schedule (Topological Sort)" width="30%">
 </a>
 
 
@@ -2975,14 +2975,14 @@ public class CourseSchedule {
 
 ### Q54: Graph Valid Tree
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-handwritten.svg" alt="Handwritten: Graph Valid Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-handwritten.svg" alt="Handwritten: Graph Valid Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-diagram.svg" alt="Diagram: Graph Valid Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-diagram.svg" alt="Diagram: Graph Valid Tree" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-sticky.svg" alt="Sticky Note: Graph Valid Tree" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/graph-valid-tree-sticky.svg" alt="Sticky Note: Graph Valid Tree" width="30%">
 </a>
 
 
@@ -3037,14 +3037,14 @@ public class GraphValidTree {
 
 ### Q55: Word Ladder
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-handwritten.svg" alt="Handwritten: Word Ladder" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-handwritten.svg" alt="Handwritten: Word Ladder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-diagram.svg" alt="Diagram: Word Ladder" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-diagram.svg" alt="Diagram: Word Ladder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-sticky.svg" alt="Sticky Note: Word Ladder" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-sticky.svg" alt="Sticky Note: Word Ladder" width="30%">
 </a>
 
 
@@ -3102,14 +3102,14 @@ public class WordLadder {
 
 ### Q56: Pacific Atlantic Water Flow
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-handwritten.svg" alt="Handwritten: Pacific Atlantic Water Flow" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-handwritten.svg" alt="Handwritten: Pacific Atlantic Water Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-diagram.svg" alt="Diagram: Pacific Atlantic Water Flow" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-diagram.svg" alt="Diagram: Pacific Atlantic Water Flow" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-sticky.svg" alt="Sticky Note: Pacific Atlantic Water Flow" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/pacific-atlantic-water-flow-sticky.svg" alt="Sticky Note: Pacific Atlantic Water Flow" width="30%">
 </a>
 
 
@@ -3178,14 +3178,14 @@ public class PacificAtlanticWaterFlow {
 
 ### Q57: Alien Dictionary
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" alt="Handwritten: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" alt="Handwritten: Alien Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" alt="Diagram: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" alt="Diagram: Alien Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" alt="Sticky Note: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" alt="Sticky Note: Alien Dictionary" width="30%">
 </a>
 
 
@@ -3254,14 +3254,14 @@ public class AlienDictionary {
 
 ### Q58: Cheapest Flights Within K Stops
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-handwritten.svg" alt="Handwritten: Cheapest Flights Within K Stops" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-handwritten.svg" alt="Handwritten: Cheapest Flights Within K Stops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-diagram.svg" alt="Diagram: Cheapest Flights Within K Stops" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-diagram.svg" alt="Diagram: Cheapest Flights Within K Stops" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-sticky.svg" alt="Sticky Note: Cheapest Flights Within K Stops" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/cheapest-flights-within-k-stops-sticky.svg" alt="Sticky Note: Cheapest Flights Within K Stops" width="30%">
 </a>
 
 
@@ -3319,14 +3319,14 @@ public class CheapestFlightsWithinKStops {
 
 ### Q59: Min Stack
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-handwritten.svg" alt="Handwritten: Min Stack" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-handwritten.svg" alt="Handwritten: Min Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-diagram.svg" alt="Diagram: Min Stack" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-diagram.svg" alt="Diagram: Min Stack" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-sticky.svg" alt="Sticky Note: Min Stack" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/min-stack-sticky.svg" alt="Sticky Note: Min Stack" width="30%">
 </a>
 
 
@@ -3385,14 +3385,14 @@ public class MinStack {
 
 ### Q60: Daily Temperatures
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-handwritten.svg" alt="Handwritten: Daily Temperatures" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-handwritten.svg" alt="Handwritten: Daily Temperatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-diagram.svg" alt="Diagram: Daily Temperatures" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-diagram.svg" alt="Diagram: Daily Temperatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-sticky.svg" alt="Sticky Note: Daily Temperatures" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/daily-temperatures-sticky.svg" alt="Sticky Note: Daily Temperatures" width="30%">
 </a>
 
 
@@ -3438,14 +3438,14 @@ public class DailyTemperatures {
 
 ### Q61: Kth Largest Element in an Array
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-handwritten.svg" alt="Handwritten: Kth Largest Element in an Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-handwritten.svg" alt="Handwritten: Kth Largest Element in an Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-diagram.svg" alt="Diagram: Kth Largest Element in an Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-diagram.svg" alt="Diagram: Kth Largest Element in an Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-sticky.svg" alt="Sticky Note: Kth Largest Element in an Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-largest-element-in-an-array-sticky.svg" alt="Sticky Note: Kth Largest Element in an Array" width="30%">
 </a>
 
 
@@ -3483,14 +3483,14 @@ public class KthLargestElement {
 
 ### Q62: Find Median from Data Stream
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-handwritten.svg" alt="Handwritten: Find Median from Data Stream" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-handwritten.svg" alt="Handwritten: Find Median from Data Stream" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-diagram.svg" alt="Diagram: Find Median from Data Stream" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-diagram.svg" alt="Diagram: Find Median from Data Stream" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-sticky.svg" alt="Sticky Note: Find Median from Data Stream" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-median-from-data-stream-sticky.svg" alt="Sticky Note: Find Median from Data Stream" width="30%">
 </a>
 
 
@@ -3538,14 +3538,14 @@ public class MedianFinder {
 
 ### Q63: Top K Frequent Elements
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-handwritten.svg" alt="Handwritten: Top K Frequent Elements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-handwritten.svg" alt="Handwritten: Top K Frequent Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-diagram.svg" alt="Diagram: Top K Frequent Elements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-diagram.svg" alt="Diagram: Top K Frequent Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-sticky.svg" alt="Sticky Note: Top K Frequent Elements" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/top-k-frequent-elements-sticky.svg" alt="Sticky Note: Top K Frequent Elements" width="30%">
 </a>
 
 
@@ -3589,14 +3589,14 @@ public class TopKFrequentElements {
 
 ### Q64: Largest Rectangle in Histogram
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-handwritten.svg" alt="Handwritten: Largest Rectangle in Histogram" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-handwritten.svg" alt="Handwritten: Largest Rectangle in Histogram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-diagram.svg" alt="Diagram: Largest Rectangle in Histogram" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-diagram.svg" alt="Diagram: Largest Rectangle in Histogram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-sticky.svg" alt="Sticky Note: Largest Rectangle in Histogram" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/largest-rectangle-in-histogram-sticky.svg" alt="Sticky Note: Largest Rectangle in Histogram" width="30%">
 </a>
 
 
@@ -3641,14 +3641,14 @@ public class LargestRectangleInHistogram {
 
 ### Q65: Sliding Window Maximum
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-handwritten.svg" alt="Handwritten: Sliding Window Maximum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-handwritten.svg" alt="Handwritten: Sliding Window Maximum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-diagram.svg" alt="Diagram: Sliding Window Maximum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-diagram.svg" alt="Diagram: Sliding Window Maximum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-sticky.svg" alt="Sticky Note: Sliding Window Maximum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/sliding-window-maximum-sticky.svg" alt="Sticky Note: Sliding Window Maximum" width="30%">
 </a>
 
 
@@ -3693,14 +3693,14 @@ public class SlidingWindowMaximum {
 
 ### Q66: Binary Search (First and Last Position)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-handwritten.svg" alt="Handwritten: Binary Search (First and Last Position)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-handwritten.svg" alt="Handwritten: Binary Search (First and Last Position)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-diagram.svg" alt="Diagram: Binary Search (First and Last Position)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-diagram.svg" alt="Diagram: Binary Search (First and Last Position)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-sticky.svg" alt="Sticky Note: Binary Search (First and Last Position)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-search-first-and-last-position-sticky.svg" alt="Sticky Note: Binary Search (First and Last Position)" width="30%">
 </a>
 
 
@@ -3752,14 +3752,14 @@ public class BinarySearchFirstLast {
 
 ### Q67: Search in Rotated Sorted Array
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Search in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-handwritten.svg" alt="Handwritten: Search in Rotated Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-diagram.svg" alt="Diagram: Search in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-diagram.svg" alt="Diagram: Search in Rotated Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Search in Rotated Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/search-in-rotated-sorted-array-sticky.svg" alt="Sticky Note: Search in Rotated Sorted Array" width="30%">
 </a>
 
 
@@ -3808,14 +3808,14 @@ public class SearchInRotatedSortedArray {
 
 ### Q68: Kth Smallest Element in a Sorted Matrix
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-handwritten.svg" alt="Handwritten: Kth Smallest Element in a Sorted Matrix" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-handwritten.svg" alt="Handwritten: Kth Smallest Element in a Sorted Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-diagram.svg" alt="Diagram: Kth Smallest Element in a Sorted Matrix" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-diagram.svg" alt="Diagram: Kth Smallest Element in a Sorted Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-sticky.svg" alt="Sticky Note: Kth Smallest Element in a Sorted Matrix" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-sorted-matrix-sticky.svg" alt="Sticky Note: Kth Smallest Element in a Sorted Matrix" width="30%">
 </a>
 
 
@@ -3860,14 +3860,14 @@ public class KthSmallestInSortedMatrix {
 
 ### Q69: Find Peak Element
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-handwritten.svg" alt="Handwritten: Find Peak Element" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-handwritten.svg" alt="Handwritten: Find Peak Element" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-diagram.svg" alt="Diagram: Find Peak Element" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-diagram.svg" alt="Diagram: Find Peak Element" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-sticky.svg" alt="Sticky Note: Find Peak Element" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-peak-element-sticky.svg" alt="Sticky Note: Find Peak Element" width="30%">
 </a>
 
 
@@ -3907,14 +3907,14 @@ public class FindPeakElement {
 
 ### Q70: Merge Sorted Array
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-handwritten.svg" alt="Handwritten: Merge Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-handwritten.svg" alt="Handwritten: Merge Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-diagram.svg" alt="Diagram: Merge Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-diagram.svg" alt="Diagram: Merge Sorted Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-sticky.svg" alt="Sticky Note: Merge Sorted Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/merge-sorted-array-sticky.svg" alt="Sticky Note: Merge Sorted Array" width="30%">
 </a>
 
 
@@ -3958,14 +3958,14 @@ public class MergeSortedArray {
 
 ### Q71: Roman to Integer
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-handwritten.svg" alt="Handwritten: Roman to Integer" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-handwritten.svg" alt="Handwritten: Roman to Integer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-diagram.svg" alt="Diagram: Roman to Integer" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-diagram.svg" alt="Diagram: Roman to Integer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-sticky.svg" alt="Sticky Note: Roman to Integer" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/roman-to-integer-sticky.svg" alt="Sticky Note: Roman to Integer" width="30%">
 </a>
 
 
@@ -4012,14 +4012,14 @@ public class RomanToInteger {
 
 ### Q72: Excel Sheet Column Number
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-handwritten.svg" alt="Handwritten: Excel Sheet Column Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-handwritten.svg" alt="Handwritten: Excel Sheet Column Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-diagram.svg" alt="Diagram: Excel Sheet Column Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-diagram.svg" alt="Diagram: Excel Sheet Column Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-sticky.svg" alt="Sticky Note: Excel Sheet Column Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/excel-sheet-column-number-sticky.svg" alt="Sticky Note: Excel Sheet Column Number" width="30%">
 </a>
 
 
@@ -4055,14 +4055,14 @@ public class ExcelSheetColumnNumber {
 
 ### Q73: Happy Number
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-handwritten.svg" alt="Handwritten: Happy Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-handwritten.svg" alt="Handwritten: Happy Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-diagram.svg" alt="Diagram: Happy Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-diagram.svg" alt="Diagram: Happy Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-sticky.svg" alt="Sticky Note: Happy Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/happy-number-sticky.svg" alt="Sticky Note: Happy Number" width="30%">
 </a>
 
 
@@ -4106,14 +4106,14 @@ public class HappyNumber {
 
 ### Q74: Power of Three (Without Loop/Recursion)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-handwritten.svg" alt="Handwritten: Power of Three (Without Loop/Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-handwritten.svg" alt="Handwritten: Power of Three (Without Loop/Recursion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-diagram.svg" alt="Diagram: Power of Three (Without Loop/Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-diagram.svg" alt="Diagram: Power of Three (Without Loop/Recursion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-sticky.svg" alt="Sticky Note: Power of Three (Without Loop/Recursion)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/power-of-three-without-loop-recursion-sticky.svg" alt="Sticky Note: Power of Three (Without Loop/Recursion)" width="30%">
 </a>
 
 
@@ -4147,14 +4147,14 @@ public class PowerOfThree {
 
 ### Q75: Fizz Buzz
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-handwritten.svg" alt="Handwritten: Fizz Buzz" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-handwritten.svg" alt="Handwritten: Fizz Buzz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-diagram.svg" alt="Diagram: Fizz Buzz" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-diagram.svg" alt="Diagram: Fizz Buzz" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-sticky.svg" alt="Sticky Note: Fizz Buzz" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/fizz-buzz-sticky.svg" alt="Sticky Note: Fizz Buzz" width="30%">
 </a>
 
 
@@ -4232,14 +4232,14 @@ public class FizzBuzz {
 
 ### Q76: Find All Duplicates in Array
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-handwritten.svg" alt="Handwritten: Find All Duplicates in Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-handwritten.svg" alt="Handwritten: Find All Duplicates in Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-diagram.svg" alt="Diagram: Find All Duplicates in Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-diagram.svg" alt="Diagram: Find All Duplicates in Array" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-sticky.svg" alt="Sticky Note: Find All Duplicates in Array" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-all-duplicates-in-array-sticky.svg" alt="Sticky Note: Find All Duplicates in Array" width="30%">
 </a>
 
 
@@ -4281,14 +4281,14 @@ public class FindAllDuplicates {
 
 ### Q77: Longest Consecutive Sequence
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-handwritten.svg" alt="Handwritten: Longest Consecutive Sequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-handwritten.svg" alt="Handwritten: Longest Consecutive Sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-diagram.svg" alt="Diagram: Longest Consecutive Sequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-diagram.svg" alt="Diagram: Longest Consecutive Sequence" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-sticky.svg" alt="Sticky Note: Longest Consecutive Sequence" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-consecutive-sequence-sticky.svg" alt="Sticky Note: Longest Consecutive Sequence" width="30%">
 </a>
 
 
@@ -4334,14 +4334,14 @@ public class LongestConsecutiveSequence {
 
 ### Q78: Max Area of Island
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-handwritten.svg" alt="Handwritten: Max Area of Island" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-handwritten.svg" alt="Handwritten: Max Area of Island" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-diagram.svg" alt="Diagram: Max Area of Island" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-diagram.svg" alt="Diagram: Max Area of Island" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-sticky.svg" alt="Sticky Note: Max Area of Island" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/max-area-of-island-sticky.svg" alt="Sticky Note: Max Area of Island" width="30%">
 </a>
 
 
@@ -4404,14 +4404,14 @@ public class MaxAreaOfIsland {
 
 ### Q79: Jump Game II
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-handwritten.svg" alt="Handwritten: Jump Game II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-handwritten.svg" alt="Handwritten: Jump Game II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-diagram.svg" alt="Diagram: Jump Game II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-diagram.svg" alt="Diagram: Jump Game II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-sticky.svg" alt="Sticky Note: Jump Game II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/jump-game-ii-sticky.svg" alt="Sticky Note: Jump Game II" width="30%">
 </a>
 
 
@@ -4450,14 +4450,14 @@ public class JumpGameII {
 
 ### Q80: Combination Sum
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-handwritten.svg" alt="Handwritten: Combination Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-handwritten.svg" alt="Handwritten: Combination Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-diagram.svg" alt="Diagram: Combination Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-diagram.svg" alt="Diagram: Combination Sum" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-sticky.svg" alt="Sticky Note: Combination Sum" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/combination-sum-sticky.svg" alt="Sticky Note: Combination Sum" width="30%">
 </a>
 
 
@@ -4507,14 +4507,14 @@ public class CombinationSum {
 
 ### Q81: Permutations
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-handwritten.svg" alt="Handwritten: Permutations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-handwritten.svg" alt="Handwritten: Permutations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-diagram.svg" alt="Diagram: Permutations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-diagram.svg" alt="Diagram: Permutations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-sticky.svg" alt="Sticky Note: Permutations" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/permutations-sticky.svg" alt="Sticky Note: Permutations" width="30%">
 </a>
 
 
@@ -4567,14 +4567,14 @@ public class Permutations {
 
 ### Q82: Rotate Image
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-handwritten.svg" alt="Handwritten: Rotate Image" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-handwritten.svg" alt="Handwritten: Rotate Image" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-diagram.svg" alt="Diagram: Rotate Image" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-diagram.svg" alt="Diagram: Rotate Image" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-sticky.svg" alt="Sticky Note: Rotate Image" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/rotate-image-sticky.svg" alt="Sticky Note: Rotate Image" width="30%">
 </a>
 
 
@@ -4624,14 +4624,14 @@ public class RotateImage {
 
 ### Q83: Spiral Matrix
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-handwritten.svg" alt="Handwritten: Spiral Matrix" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-handwritten.svg" alt="Handwritten: Spiral Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-diagram.svg" alt="Diagram: Spiral Matrix" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-diagram.svg" alt="Diagram: Spiral Matrix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-sticky.svg" alt="Sticky Note: Spiral Matrix" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/spiral-matrix-sticky.svg" alt="Sticky Note: Spiral Matrix" width="30%">
 </a>
 
 
@@ -4681,14 +4681,14 @@ public class SpiralMatrix {
 
 ### Q84: Set Matrix Zeroes
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-handwritten.svg" alt="Handwritten: Set Matrix Zeroes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-handwritten.svg" alt="Handwritten: Set Matrix Zeroes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-diagram.svg" alt="Diagram: Set Matrix Zeroes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-diagram.svg" alt="Diagram: Set Matrix Zeroes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-sticky.svg" alt="Sticky Note: Set Matrix Zeroes" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/set-matrix-zeroes-sticky.svg" alt="Sticky Note: Set Matrix Zeroes" width="30%">
 </a>
 
 
@@ -4740,14 +4740,14 @@ public class SetMatrixZeroes {
 
 ### Q85: Word Search
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-handwritten.svg" alt="Handwritten: Word Search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-handwritten.svg" alt="Handwritten: Word Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-diagram.svg" alt="Diagram: Word Search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-diagram.svg" alt="Diagram: Word Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-sticky.svg" alt="Sticky Note: Word Search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-search-sticky.svg" alt="Sticky Note: Word Search" width="30%">
 </a>
 
 
@@ -4807,14 +4807,14 @@ public class WordSearch {
 
 ### Q86: Construct Binary Tree from Preorder and Inorder Traversal
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-handwritten.svg" alt="Handwritten: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-handwritten.svg" alt="Handwritten: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-diagram.svg" alt="Diagram: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-diagram.svg" alt="Diagram: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-sticky.svg" alt="Sticky Note: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/construct-binary-tree-from-preorder-and-inorder-traversal-sticky.svg" alt="Sticky Note: Construct Binary Tree from Preorder and Inorder Traversal" width="30%">
 </a>
 
 
@@ -4880,14 +4880,14 @@ public class ConstructBinaryTree {
 
 ### Q87: Kth Smallest Element in a BST
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-handwritten.svg" alt="Handwritten: Kth Smallest Element in a BST" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-handwritten.svg" alt="Handwritten: Kth Smallest Element in a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-diagram.svg" alt="Diagram: Kth Smallest Element in a BST" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-diagram.svg" alt="Diagram: Kth Smallest Element in a BST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-sticky.svg" alt="Sticky Note: Kth Smallest Element in a BST" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/kth-smallest-element-in-a-bst-sticky.svg" alt="Sticky Note: Kth Smallest Element in a BST" width="30%">
 </a>
 
 
@@ -4938,14 +4938,14 @@ public class KthSmallestBST {
 
 ### Q88: Binary Tree Zigzag Level Order Traversal
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-handwritten.svg" alt="Handwritten: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-diagram.svg" alt="Diagram: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Binary Tree Zigzag Level Order Traversal" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/binary-tree-zigzag-level-order-traversal-sticky.svg" alt="Sticky Note: Binary Tree Zigzag Level Order Traversal" width="30%">
 </a>
 
 
@@ -5000,14 +5000,14 @@ public class ZigzagLevelOrder {
 
 ### Q89: Populating Next Right Pointers in Each Node
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-handwritten.svg" alt="Handwritten: Populating Next Right Pointers in Each Node" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-handwritten.svg" alt="Handwritten: Populating Next Right Pointers in Each Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-diagram.svg" alt="Diagram: Populating Next Right Pointers in Each Node" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-diagram.svg" alt="Diagram: Populating Next Right Pointers in Each Node" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-sticky.svg" alt="Sticky Note: Populating Next Right Pointers in Each Node" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/populating-next-right-pointers-in-each-node-sticky.svg" alt="Sticky Note: Populating Next Right Pointers in Each Node" width="30%">
 </a>
 
 
@@ -5065,14 +5065,14 @@ public class PopulatingNextRight {
 
 ### Q90: Flatten Binary Tree to Linked List
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-handwritten.svg" alt="Handwritten: Flatten Binary Tree to Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-handwritten.svg" alt="Handwritten: Flatten Binary Tree to Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-diagram.svg" alt="Diagram: Flatten Binary Tree to Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-diagram.svg" alt="Diagram: Flatten Binary Tree to Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-sticky.svg" alt="Sticky Note: Flatten Binary Tree to Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/flatten-binary-tree-to-linked-list-sticky.svg" alt="Sticky Note: Flatten Binary Tree to Linked List" width="30%">
 </a>
 
 
@@ -5128,14 +5128,14 @@ public class FlattenBinaryTree {
 
 ### Q91: Palindrome Partitioning
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-handwritten.svg" alt="Handwritten: Palindrome Partitioning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-handwritten.svg" alt="Handwritten: Palindrome Partitioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-diagram.svg" alt="Diagram: Palindrome Partitioning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-diagram.svg" alt="Diagram: Palindrome Partitioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-sticky.svg" alt="Sticky Note: Palindrome Partitioning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/palindrome-partitioning-sticky.svg" alt="Sticky Note: Palindrome Partitioning" width="30%">
 </a>
 
 
@@ -5191,14 +5191,14 @@ public class PalindromePartitioning {
 
 ### Q92: Decode Ways
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-handwritten.svg" alt="Handwritten: Decode Ways" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-handwritten.svg" alt="Handwritten: Decode Ways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-diagram.svg" alt="Diagram: Decode Ways" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-diagram.svg" alt="Diagram: Decode Ways" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-sticky.svg" alt="Sticky Note: Decode Ways" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/decode-ways-sticky.svg" alt="Sticky Note: Decode Ways" width="30%">
 </a>
 
 
@@ -5241,14 +5241,14 @@ public class DecodeWays {
 
 ### Q93: Gas Station
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-handwritten.svg" alt="Handwritten: Gas Station" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-handwritten.svg" alt="Handwritten: Gas Station" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-diagram.svg" alt="Diagram: Gas Station" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-diagram.svg" alt="Diagram: Gas Station" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-sticky.svg" alt="Sticky Note: Gas Station" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/gas-station-sticky.svg" alt="Sticky Note: Gas Station" width="30%">
 </a>
 
 
@@ -5290,14 +5290,14 @@ public class GasStation {
 
 ### Q94: Candy
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-handwritten.svg" alt="Handwritten: Candy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-handwritten.svg" alt="Handwritten: Candy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-diagram.svg" alt="Diagram: Candy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-diagram.svg" alt="Diagram: Candy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-sticky.svg" alt="Sticky Note: Candy" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/candy-sticky.svg" alt="Sticky Note: Candy" width="30%">
 </a>
 
 
@@ -5345,14 +5345,14 @@ public class Candy {
 
 ### Q95: Majority Element II
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-handwritten.svg" alt="Handwritten: Majority Element II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-handwritten.svg" alt="Handwritten: Majority Element II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-diagram.svg" alt="Diagram: Majority Element II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-diagram.svg" alt="Diagram: Majority Element II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-sticky.svg" alt="Sticky Note: Majority Element II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/majority-element-ii-sticky.svg" alt="Sticky Note: Majority Element II" width="30%">
 </a>
 
 
@@ -5400,14 +5400,14 @@ public class MajorityElementII {
 
 ### Q96: Find the Duplicate Number
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-handwritten.svg" alt="Handwritten: Find the Duplicate Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-handwritten.svg" alt="Handwritten: Find the Duplicate Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-diagram.svg" alt="Diagram: Find the Duplicate Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-diagram.svg" alt="Diagram: Find the Duplicate Number" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-sticky.svg" alt="Sticky Note: Find the Duplicate Number" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/find-the-duplicate-number-sticky.svg" alt="Sticky Note: Find the Duplicate Number" width="30%">
 </a>
 
 
@@ -5448,14 +5448,14 @@ public class FindDuplicateNumber {
 
 ### Q97: Longest Substring with At Most K Distinct Characters
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-handwritten.svg" alt="Handwritten: Longest Substring with At Most K Distinct Characters" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-handwritten.svg" alt="Handwritten: Longest Substring with At Most K Distinct Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-diagram.svg" alt="Diagram: Longest Substring with At Most K Distinct Characters" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-diagram.svg" alt="Diagram: Longest Substring with At Most K Distinct Characters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-sticky.svg" alt="Sticky Note: Longest Substring with At Most K Distinct Characters" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/longest-substring-with-at-most-k-distinct-characters-sticky.svg" alt="Sticky Note: Longest Substring with At Most K Distinct Characters" width="30%">
 </a>
 
 
@@ -5500,14 +5500,14 @@ public class LongestSubstringKDistinct {
 
 ### Q98: Minimum Window Substring
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-handwritten.svg" alt="Handwritten: Minimum Window Substring" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-handwritten.svg" alt="Handwritten: Minimum Window Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-diagram.svg" alt="Diagram: Minimum Window Substring" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-diagram.svg" alt="Diagram: Minimum Window Substring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-sticky.svg" alt="Sticky Note: Minimum Window Substring" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/minimum-window-substring-sticky.svg" alt="Sticky Note: Minimum Window Substring" width="30%">
 </a>
 
 
@@ -5558,14 +5558,14 @@ public class MinimumWindowSubstring {
 
 ### Q99: Alien Dictionary
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" alt="Handwritten: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-handwritten.svg" alt="Handwritten: Alien Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" alt="Diagram: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-diagram.svg" alt="Diagram: Alien Dictionary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" alt="Sticky Note: Alien Dictionary" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/alien-dictionary-sticky.svg" alt="Sticky Note: Alien Dictionary" width="30%">
 </a>
 
 
@@ -5627,14 +5627,14 @@ public class AlienDictionary {
 
 ### Q100: Word Ladder II
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-handwritten.svg" alt="Handwritten: Word Ladder II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-handwritten.svg" alt="Handwritten: Word Ladder II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-diagram.svg" alt="Diagram: Word Ladder II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-diagram.svg" alt="Diagram: Word Ladder II" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-sticky.svg" alt="Sticky Note: Word Ladder II" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/word-ladder-ii-sticky.svg" alt="Sticky Note: Word Ladder II" width="30%">
 </a>
 
 
@@ -5739,14 +5739,14 @@ Master these 15 patterns to solve ~85% of DSA interview problems. Each includes 
 
 ### 1. Sliding Window
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-handwritten.svg" alt="Handwritten: 1. Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-handwritten.svg" alt="Handwritten: 1. Sliding Window" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-diagram.svg" alt="Diagram: 1. Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-diagram.svg" alt="Diagram: 1. Sliding Window" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-sticky.svg" alt="Sticky Note: 1. Sliding Window" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/1-sliding-window-sticky.svg" alt="Sticky Note: 1. Sliding Window" width="30%">
 </a>
 
 
@@ -5774,14 +5774,14 @@ int slidingWindow(int[] arr, int k) {
 
 ### 2. Two Pointers
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-handwritten.svg" alt="Handwritten: 2. Two Pointers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-handwritten.svg" alt="Handwritten: 2. Two Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-diagram.svg" alt="Diagram: 2. Two Pointers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-diagram.svg" alt="Diagram: 2. Two Pointers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-sticky.svg" alt="Sticky Note: 2. Two Pointers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/2-two-pointers-sticky.svg" alt="Sticky Note: 2. Two Pointers" width="30%">
 </a>
 
 
@@ -5807,14 +5807,14 @@ boolean twoPointers(int[] arr, int target) {
 
 ### 3. Fast & Slow Pointers (Floyd's Algorithm)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-handwritten.svg" alt="Handwritten: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-handwritten.svg" alt="Handwritten: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-diagram.svg" alt="Diagram: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-diagram.svg" alt="Diagram: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-sticky.svg" alt="Sticky Note: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/3-fast-slow-pointers-floyd-s-algorithm-sticky.svg" alt="Sticky Note: 3. Fast & Slow Pointers (Floyd's Algorithm)" width="30%">
 </a>
 
 
@@ -5839,14 +5839,14 @@ boolean hasCycle(ListNode head) {
 
 ### 4. Merge Intervals
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-handwritten.svg" alt="Handwritten: 4. Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-handwritten.svg" alt="Handwritten: 4. Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-diagram.svg" alt="Diagram: 4. Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-diagram.svg" alt="Diagram: 4. Merge Intervals" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-sticky.svg" alt="Sticky Note: 4. Merge Intervals" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/4-merge-intervals-sticky.svg" alt="Sticky Note: 4. Merge Intervals" width="30%">
 </a>
 
 
@@ -5873,14 +5873,14 @@ int[][] mergeIntervals(int[][] intervals) {
 
 ### 5. Cyclic Sort
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-handwritten.svg" alt="Handwritten: 5. Cyclic Sort" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-handwritten.svg" alt="Handwritten: 5. Cyclic Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-diagram.svg" alt="Diagram: 5. Cyclic Sort" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-diagram.svg" alt="Diagram: 5. Cyclic Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-sticky.svg" alt="Sticky Note: 5. Cyclic Sort" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/5-cyclic-sort-sticky.svg" alt="Sticky Note: 5. Cyclic Sort" width="30%">
 </a>
 
 
@@ -5907,14 +5907,14 @@ void cyclicSort(int[] nums) {
 
 ### 6. In-place Reversal of Linked List
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-handwritten.svg" alt="Handwritten: 6. In-place Reversal of Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-handwritten.svg" alt="Handwritten: 6. In-place Reversal of Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-diagram.svg" alt="Diagram: 6. In-place Reversal of Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-diagram.svg" alt="Diagram: 6. In-place Reversal of Linked List" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-sticky.svg" alt="Sticky Note: 6. In-place Reversal of Linked List" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/6-in-place-reversal-of-linked-list-sticky.svg" alt="Sticky Note: 6. In-place Reversal of Linked List" width="30%">
 </a>
 
 
@@ -5940,14 +5940,14 @@ ListNode reverse(ListNode head) {
 
 ### 7. Tree BFS (Level Order)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-handwritten.svg" alt="Handwritten: 7. Tree BFS (Level Order)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-handwritten.svg" alt="Handwritten: 7. Tree BFS (Level Order)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-diagram.svg" alt="Diagram: 7. Tree BFS (Level Order)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-diagram.svg" alt="Diagram: 7. Tree BFS (Level Order)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-sticky.svg" alt="Sticky Note: 7. Tree BFS (Level Order)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/7-tree-bfs-level-order-sticky.svg" alt="Sticky Note: 7. Tree BFS (Level Order)" width="30%">
 </a>
 
 
@@ -5976,14 +5976,14 @@ void bfs(TreeNode root) {
 
 ### 8. Tree DFS (Pre/In/Post-order)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-handwritten.svg" alt="Handwritten: 8. Tree DFS (Pre/In/Post-order)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-handwritten.svg" alt="Handwritten: 8. Tree DFS (Pre/In/Post-order)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-diagram.svg" alt="Diagram: 8. Tree DFS (Pre/In/Post-order)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-diagram.svg" alt="Diagram: 8. Tree DFS (Pre/In/Post-order)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-sticky.svg" alt="Sticky Note: 8. Tree DFS (Pre/In/Post-order)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/8-tree-dfs-pre-in-post-order-sticky.svg" alt="Sticky Note: 8. Tree DFS (Pre/In/Post-order)" width="30%">
 </a>
 
 
@@ -6007,14 +6007,14 @@ void dfs(TreeNode node) {
 
 ### 9. Subsets (Backtracking)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-handwritten.svg" alt="Handwritten: 9. Subsets (Backtracking)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-handwritten.svg" alt="Handwritten: 9. Subsets (Backtracking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-diagram.svg" alt="Diagram: 9. Subsets (Backtracking)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-diagram.svg" alt="Diagram: 9. Subsets (Backtracking)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-sticky.svg" alt="Sticky Note: 9. Subsets (Backtracking)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/9-subsets-backtracking-sticky.svg" alt="Sticky Note: 9. Subsets (Backtracking)" width="30%">
 </a>
 
 
@@ -6038,14 +6038,14 @@ void backtrack(int[] nums, int start, List<Integer> path, List<List<Integer>> re
 
 ### 10. Modified Binary Search
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-handwritten.svg" alt="Handwritten: 10. Modified Binary Search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-handwritten.svg" alt="Handwritten: 10. Modified Binary Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-diagram.svg" alt="Diagram: 10. Modified Binary Search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-diagram.svg" alt="Diagram: 10. Modified Binary Search" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-sticky.svg" alt="Sticky Note: 10. Modified Binary Search" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/10-modified-binary-search-sticky.svg" alt="Sticky Note: 10. Modified Binary Search" width="30%">
 </a>
 
 
@@ -6071,14 +6071,14 @@ int binarySearch(int[] arr, int target) {
 
 ### 11. Top K Elements (Heap)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-handwritten.svg" alt="Handwritten: 11. Top K Elements (Heap)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-handwritten.svg" alt="Handwritten: 11. Top K Elements (Heap)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-diagram.svg" alt="Diagram: 11. Top K Elements (Heap)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-diagram.svg" alt="Diagram: 11. Top K Elements (Heap)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-sticky.svg" alt="Sticky Note: 11. Top K Elements (Heap)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/11-top-k-elements-heap-sticky.svg" alt="Sticky Note: 11. Top K Elements (Heap)" width="30%">
 </a>
 
 
@@ -6102,14 +6102,14 @@ List<Integer> topK(int[] nums, int k) {
 
 ### 12. K-way Merge
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-handwritten.svg" alt="Handwritten: 12. K-way Merge" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-handwritten.svg" alt="Handwritten: 12. K-way Merge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-diagram.svg" alt="Diagram: 12. K-way Merge" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-diagram.svg" alt="Diagram: 12. K-way Merge" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-sticky.svg" alt="Sticky Note: 12. K-way Merge" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/12-k-way-merge-sticky.svg" alt="Sticky Note: 12. K-way Merge" width="30%">
 </a>
 
 
@@ -6137,14 +6137,14 @@ ListNode mergeKLists(ListNode[] lists) {
 
 ### 13. 0/1 Knapsack (DP)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-handwritten.svg" alt="Handwritten: 13. 0/1 Knapsack (DP)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-handwritten.svg" alt="Handwritten: 13. 0/1 Knapsack (DP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-diagram.svg" alt="Diagram: 13. 0/1 Knapsack (DP)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-diagram.svg" alt="Diagram: 13. 0/1 Knapsack (DP)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-sticky.svg" alt="Sticky Note: 13. 0/1 Knapsack (DP)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/13-0-1-knapsack-dp-sticky.svg" alt="Sticky Note: 13. 0/1 Knapsack (DP)" width="30%">
 </a>
 
 
@@ -6173,14 +6173,14 @@ int knapsack(int[] weights, int[] values, int capacity) {
 
 ### 14. Topological Sort (Graph)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-handwritten.svg" alt="Handwritten: 14. Topological Sort (Graph)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-handwritten.svg" alt="Handwritten: 14. Topological Sort (Graph)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-diagram.svg" alt="Diagram: 14. Topological Sort (Graph)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-diagram.svg" alt="Diagram: 14. Topological Sort (Graph)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-sticky.svg" alt="Sticky Note: 14. Topological Sort (Graph)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/14-topological-sort-graph-sticky.svg" alt="Sticky Note: 14. Topological Sort (Graph)" width="30%">
 </a>
 
 
@@ -6214,14 +6214,14 @@ List<Integer> topologicalSort(int n, int[][] edges) {
 
 ### 15. Union Find (Disjoint Set)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-handwritten.svg" alt="Handwritten: 15. Union Find (Disjoint Set)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-handwritten.svg" alt="Handwritten: 15. Union Find (Disjoint Set)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-diagram.svg" alt="Diagram: 15. Union Find (Disjoint Set)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-diagram.svg" alt="Diagram: 15. Union Find (Disjoint Set)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-sticky.svg" alt="Sticky Note: 15. Union Find (Disjoint Set)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/15-union-find-disjoint-set-sticky.svg" alt="Sticky Note: 15. Union Find (Disjoint Set)" width="30%">
 </a>
 
 
@@ -6253,14 +6253,14 @@ class UnionFind {
 
 ### 16. Trie (Prefix Tree)
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-handwritten.svg" alt="Handwritten: 16. Trie (Prefix Tree)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-handwritten.svg" alt="Handwritten: 16. Trie (Prefix Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-diagram.svg" alt="Diagram: 16. Trie (Prefix Tree)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-diagram.svg" alt="Diagram: 16. Trie (Prefix Tree)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-sticky.svg" alt="Sticky Note: 16. Trie (Prefix Tree)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/16-trie-prefix-tree-sticky.svg" alt="Sticky Note: 16. Trie (Prefix Tree)" width="30%">
 </a>
 
 
@@ -6308,14 +6308,14 @@ class Trie {
 
 ### Q101: Design a Parking Lot
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-handwritten.svg" alt="Handwritten: Design a Parking Lot" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-handwritten.svg" alt="Handwritten: Design a Parking Lot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-diagram.svg" alt="Diagram: Design a Parking Lot" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-diagram.svg" alt="Diagram: Design a Parking Lot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-sticky.svg" alt="Sticky Note: Design a Parking Lot" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-parking-lot-sticky.svg" alt="Sticky Note: Design a Parking Lot" width="30%">
 </a>
 
 
@@ -6457,14 +6457,14 @@ class ParkingLot {
 
 ### Q102: Design a Library Management System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-handwritten.svg" alt="Handwritten: Design a Library Management System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-handwritten.svg" alt="Handwritten: Design a Library Management System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-diagram.svg" alt="Diagram: Design a Library Management System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-diagram.svg" alt="Diagram: Design a Library Management System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-sticky.svg" alt="Sticky Note: Design a Library Management System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-library-management-system-sticky.svg" alt="Sticky Note: Design a Library Management System" width="30%">
 </a>
 
 
@@ -6577,14 +6577,14 @@ class Library {
 
 ### Q103: Design a Vending Machine
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-handwritten.svg" alt="Handwritten: Design a Vending Machine" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-handwritten.svg" alt="Handwritten: Design a Vending Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-diagram.svg" alt="Diagram: Design a Vending Machine" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-diagram.svg" alt="Diagram: Design a Vending Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-sticky.svg" alt="Sticky Note: Design a Vending Machine" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-vending-machine-sticky.svg" alt="Sticky Note: Design a Vending Machine" width="30%">
 </a>
 
 
@@ -6737,14 +6737,14 @@ class VendingMachine {
 
 ### Q104: Design a Snake & Ladder Game
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-handwritten.svg" alt="Handwritten: Design a Snake & Ladder Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-handwritten.svg" alt="Handwritten: Design a Snake & Ladder Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-diagram.svg" alt="Diagram: Design a Snake & Ladder Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-diagram.svg" alt="Diagram: Design a Snake & Ladder Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-sticky.svg" alt="Sticky Note: Design a Snake & Ladder Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-snake-ladder-game-sticky.svg" alt="Sticky Note: Design a Snake & Ladder Game" width="30%">
 </a>
 
 
@@ -6851,14 +6851,14 @@ class Game {
 
 ### Q105: Design a Chess Game
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-handwritten.svg" alt="Handwritten: Design a Chess Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-handwritten.svg" alt="Handwritten: Design a Chess Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-diagram.svg" alt="Diagram: Design a Chess Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-diagram.svg" alt="Diagram: Design a Chess Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-sticky.svg" alt="Sticky Note: Design a Chess Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-chess-game-sticky.svg" alt="Sticky Note: Design a Chess Game" width="30%">
 </a>
 
 
@@ -7092,14 +7092,14 @@ class ChessGame {
 
 ### Q106: Design an Elevator System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-handwritten.svg" alt="Handwritten: Design an Elevator System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-handwritten.svg" alt="Handwritten: Design an Elevator System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-diagram.svg" alt="Diagram: Design an Elevator System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-diagram.svg" alt="Diagram: Design an Elevator System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-sticky.svg" alt="Sticky Note: Design an Elevator System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-elevator-system-sticky.svg" alt="Sticky Note: Design an Elevator System" width="30%">
 </a>
 
 
@@ -7203,14 +7203,14 @@ class ElevatorController {
 
 ### Q107: Design a Tic-Tac-Toe Game
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-handwritten.svg" alt="Handwritten: Design a Tic-Tac-Toe Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-handwritten.svg" alt="Handwritten: Design a Tic-Tac-Toe Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-diagram.svg" alt="Diagram: Design a Tic-Tac-Toe Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-diagram.svg" alt="Diagram: Design a Tic-Tac-Toe Game" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-sticky.svg" alt="Sticky Note: Design a Tic-Tac-Toe Game" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-tic-tac-toe-game-sticky.svg" alt="Sticky Note: Design a Tic-Tac-Toe Game" width="30%">
 </a>
 
 
@@ -7338,14 +7338,14 @@ class TicTacToeGame {
 
 ### Q108: Design a Splitwise/Ledger System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-handwritten.svg" alt="Handwritten: Design a Splitwise/Ledger System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-handwritten.svg" alt="Handwritten: Design a Splitwise/Ledger System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-diagram.svg" alt="Diagram: Design a Splitwise/Ledger System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-diagram.svg" alt="Diagram: Design a Splitwise/Ledger System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-sticky.svg" alt="Sticky Note: Design a Splitwise/Ledger System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-splitwise-ledger-system-sticky.svg" alt="Sticky Note: Design a Splitwise/Ledger System" width="30%">
 </a>
 
 
@@ -7476,14 +7476,14 @@ class ExpenseManager {
 
 ### Q109: Design a Logger
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-handwritten.svg" alt="Handwritten: Design a Logger" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-handwritten.svg" alt="Handwritten: Design a Logger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-diagram.svg" alt="Diagram: Design a Logger" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-diagram.svg" alt="Diagram: Design a Logger" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-sticky.svg" alt="Sticky Note: Design a Logger" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-logger-sticky.svg" alt="Sticky Note: Design a Logger" width="30%">
 </a>
 
 
@@ -7614,14 +7614,14 @@ class LoggerFactory {
 
 ### Q110: Design a Task Management System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-handwritten.svg" alt="Handwritten: Design a Task Management System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-handwritten.svg" alt="Handwritten: Design a Task Management System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-diagram.svg" alt="Diagram: Design a Task Management System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-diagram.svg" alt="Diagram: Design a Task Management System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-sticky.svg" alt="Sticky Note: Design a Task Management System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-task-management-system-sticky.svg" alt="Sticky Note: Design a Task Management System" width="30%">
 </a>
 
 
@@ -7766,14 +7766,14 @@ class TaskManager {
 
 ### Q111: Design a Pub-Sub System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-handwritten.svg" alt="Handwritten: Design a Pub-Sub System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-handwritten.svg" alt="Handwritten: Design a Pub-Sub System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-diagram.svg" alt="Diagram: Design a Pub-Sub System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-diagram.svg" alt="Diagram: Design a Pub-Sub System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-sticky.svg" alt="Sticky Note: Design a Pub-Sub System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-pub-sub-system-sticky.svg" alt="Sticky Note: Design a Pub-Sub System" width="30%">
 </a>
 
 
@@ -7867,14 +7867,14 @@ class Broker {
 
 ### Q112: Design an ATM
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-handwritten.svg" alt="Handwritten: Design an ATM" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-handwritten.svg" alt="Handwritten: Design an ATM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-diagram.svg" alt="Diagram: Design an ATM" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-diagram.svg" alt="Diagram: Design an ATM" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-sticky.svg" alt="Sticky Note: Design an ATM" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-an-atm-sticky.svg" alt="Sticky Note: Design an ATM" width="30%">
 </a>
 
 
@@ -7987,14 +7987,14 @@ class ATMSession {
 
 ### Q113: Design a Coffee Machine
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-handwritten.svg" alt="Handwritten: Design a Coffee Machine" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-handwritten.svg" alt="Handwritten: Design a Coffee Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-diagram.svg" alt="Diagram: Design a Coffee Machine" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-diagram.svg" alt="Diagram: Design a Coffee Machine" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-sticky.svg" alt="Sticky Note: Design a Coffee Machine" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-coffee-machine-sticky.svg" alt="Sticky Note: Design a Coffee Machine" width="30%">
 </a>
 
 
@@ -8114,14 +8114,14 @@ class CoffeeMachine {
 
 ### Q114: Design a Restaurant Table Booking System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-handwritten.svg" alt="Handwritten: Design a Restaurant Table Booking System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-handwritten.svg" alt="Handwritten: Design a Restaurant Table Booking System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-diagram.svg" alt="Diagram: Design a Restaurant Table Booking System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-diagram.svg" alt="Diagram: Design a Restaurant Table Booking System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-sticky.svg" alt="Sticky Note: Design a Restaurant Table Booking System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-restaurant-table-booking-system-sticky.svg" alt="Sticky Note: Design a Restaurant Table Booking System" width="30%">
 </a>
 
 
@@ -8228,14 +8228,14 @@ class Restaurant {
 
 ### Q115: Design a File System
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-handwritten.svg" alt="Handwritten: Design a File System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-handwritten.svg" alt="Handwritten: Design a File System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-diagram.svg" alt="Diagram: Design a File System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-diagram.svg" alt="Diagram: Design a File System" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-sticky.svg" alt="Sticky Note: Design a File System" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/design-a-file-system-sticky.svg" alt="Sticky Note: Design a File System" width="30%">
 </a>
 
 
@@ -8472,14 +8472,14 @@ Test your understanding of the core DSA patterns covered in this chapter.
 
 ### Q116: Print Numbers 1-100 Using Two Threads Alternately
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-handwritten.svg" alt="Handwritten: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-handwritten.svg" alt="Handwritten: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-diagram.svg" alt="Diagram: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-diagram.svg" alt="Diagram: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-sticky.svg" alt="Sticky Note: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-numbers-1-100-using-two-threads-alternately-sticky.svg" alt="Sticky Note: Print Numbers 1-100 Using Two Threads Alternately" width="30%">
 </a>
 
 
@@ -8540,14 +8540,14 @@ public class EvenOddPrinter {
 
 ### Q117: Producer-Consumer Using wait/notify
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-handwritten.svg" alt="Handwritten: Producer-Consumer Using wait/notify" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-handwritten.svg" alt="Handwritten: Producer-Consumer Using wait/notify" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-diagram.svg" alt="Diagram: Producer-Consumer Using wait/notify" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-diagram.svg" alt="Diagram: Producer-Consumer Using wait/notify" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-sticky.svg" alt="Sticky Note: Producer-Consumer Using wait/notify" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-wait-notify-sticky.svg" alt="Sticky Note: Producer-Consumer Using wait/notify" width="30%">
 </a>
 
 
@@ -8635,14 +8635,14 @@ public class ProducerConsumerWaitNotify {
 
 ### Q118: Producer-Consumer Using BlockingQueue
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-handwritten.svg" alt="Handwritten: Producer-Consumer Using BlockingQueue" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-handwritten.svg" alt="Handwritten: Producer-Consumer Using BlockingQueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-diagram.svg" alt="Diagram: Producer-Consumer Using BlockingQueue" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-diagram.svg" alt="Diagram: Producer-Consumer Using BlockingQueue" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-sticky.svg" alt="Sticky Note: Producer-Consumer Using BlockingQueue" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/producer-consumer-using-blockingqueue-sticky.svg" alt="Sticky Note: Producer-Consumer Using BlockingQueue" width="30%">
 </a>
 
 
@@ -8699,14 +8699,14 @@ public class ProducerConsumerBlockingQueue {
 
 ### Q119: Reader-Writers Problem
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-handwritten.svg" alt="Handwritten: Reader-Writers Problem" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-handwritten.svg" alt="Handwritten: Reader-Writers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-diagram.svg" alt="Diagram: Reader-Writers Problem" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-diagram.svg" alt="Diagram: Reader-Writers Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-sticky.svg" alt="Sticky Note: Reader-Writers Problem" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/reader-writers-problem-sticky.svg" alt="Sticky Note: Reader-Writers Problem" width="30%">
 </a>
 
 
@@ -8785,14 +8785,14 @@ public class ReaderWritersProblem {
 
 ### Q120: Dining Philosophers
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-handwritten.svg" alt="Handwritten: Dining Philosophers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-diagram.svg" alt="Diagram: Dining Philosophers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/dining-philosophers-sticky.svg" alt="Sticky Note: Dining Philosophers" width="30%">
 </a>
 
 
@@ -8874,14 +8874,14 @@ public class DiningPhilosophers {
 
 ### Q121: Print FooBar Alternately
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-handwritten.svg" alt="Handwritten: Print FooBar Alternately" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-handwritten.svg" alt="Handwritten: Print FooBar Alternately" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-diagram.svg" alt="Diagram: Print FooBar Alternately" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-diagram.svg" alt="Diagram: Print FooBar Alternately" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-sticky.svg" alt="Sticky Note: Print FooBar Alternately" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/print-foobar-alternately-sticky.svg" alt="Sticky Note: Print FooBar Alternately" width="30%">
 </a>
 
 
@@ -8936,14 +8936,14 @@ public class FooBarAlternate {
 
 ### Q122: Zero-Even-Odd Sequence Printing
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-handwritten.svg" alt="Handwritten: Zero-Even-Odd Sequence Printing" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-handwritten.svg" alt="Handwritten: Zero-Even-Odd Sequence Printing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-diagram.svg" alt="Diagram: Zero-Even-Odd Sequence Printing" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-diagram.svg" alt="Diagram: Zero-Even-Odd Sequence Printing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-sticky.svg" alt="Sticky Note: Zero-Even-Odd Sequence Printing" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/zero-even-odd-sequence-printing-sticky.svg" alt="Sticky Note: Zero-Even-Odd Sequence Printing" width="30%">
 </a>
 
 
@@ -9014,14 +9014,14 @@ public class ZeroEvenOdd {
 
 ### Q123: Thread-Safe Singleton
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-handwritten.svg" alt="Handwritten: Thread-Safe Singleton" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-handwritten.svg" alt="Handwritten: Thread-Safe Singleton" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-diagram.svg" alt="Diagram: Thread-Safe Singleton" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-diagram.svg" alt="Diagram: Thread-Safe Singleton" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-sticky.svg" alt="Sticky Note: Thread-Safe Singleton" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/thread-safe-singleton-sticky.svg" alt="Sticky Note: Thread-Safe Singleton" width="30%">
 </a>
 
 
@@ -9113,14 +9113,14 @@ public class ThreadSafeSingleton {
 
 ### Q124: Custom Thread Pool Implementation
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-handwritten.svg" alt="Handwritten: Custom Thread Pool Implementation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-handwritten.svg" alt="Handwritten: Custom Thread Pool Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-diagram.svg" alt="Diagram: Custom Thread Pool Implementation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-diagram.svg" alt="Diagram: Custom Thread Pool Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-sticky.svg" alt="Sticky Note: Custom Thread Pool Implementation" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/custom-thread-pool-implementation-sticky.svg" alt="Sticky Note: Custom Thread Pool Implementation" width="30%">
 </a>
 
 
@@ -9225,14 +9225,14 @@ class CustomThreadPool {
 
 ### Q125: Deadlock Detection Example
 
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-handwritten.svg" alt="Handwritten: Deadlock Detection Example" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-handwritten.svg" alt="Handwritten: Deadlock Detection Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-diagram.svg" alt="Diagram: Deadlock Detection Example" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-diagram.svg" alt="Diagram: Deadlock Detection Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-sticky.svg" alt="Sticky Note: Deadlock Detection Example" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/02-dsa-problem-bank/deadlock-detection-example-sticky.svg" alt="Sticky Note: Deadlock Detection Example" width="30%">
 </a>
 
 

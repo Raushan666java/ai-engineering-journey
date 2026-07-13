@@ -52,14 +52,14 @@ flowchart LR
 
 ### 1.1 What is REST?
 
-<a href="../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-handwritten.svg" alt="Handwritten: 1.1 What is REST?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-handwritten.svg" alt="Handwritten: 1.1 What is REST?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-diagram.svg" alt="Diagram: 1.1 What is REST?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-diagram.svg" alt="Diagram: 1.1 What is REST?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-sticky.svg" alt="Sticky Note: 1.1 What is REST?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-1-what-is-rest-sticky.svg" alt="Sticky Note: 1.1 What is REST?" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ REST (Representational State Transfer) is an architectural style defined by Roy 
 
 ### 1.2 Resources and Representations
 
-<a href="../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-handwritten.svg" alt="Handwritten: 1.2 Resources and Representations" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-handwritten.svg" alt="Handwritten: 1.2 Resources and Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-diagram.svg" alt="Diagram: 1.2 Resources and Representations" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-diagram.svg" alt="Diagram: 1.2 Resources and Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-sticky.svg" alt="Sticky Note: 1.2 Resources and Representations" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-2-resources-and-representations-sticky.svg" alt="Sticky Note: 1.2 Resources and Representations" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ POST /api/users    →  Creates a new user resource
 
 ### 1.3 Richardson Maturity Model
 
-<a href="../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-handwritten.svg" alt="Handwritten: 1.3 Richardson Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-handwritten.svg" alt="Handwritten: 1.3 Richardson Maturity Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-diagram.svg" alt="Diagram: 1.3 Richardson Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-diagram.svg" alt="Diagram: 1.3 Richardson Maturity Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-sticky.svg" alt="Sticky Note: 1.3 Richardson Maturity Model" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/1-3-richardson-maturity-model-sticky.svg" alt="Sticky Note: 1.3 Richardson Maturity Model" width="30%">
 </a>
 
 
@@ -124,14 +124,14 @@ Level 2 is the minimum for a RESTful API. Level 3 (HATEOAS) is the ideal.
 
 ### 2.1 @Controller + @ResponseBody
 
-<a href="../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-handwritten.svg" alt="Handwritten: 2.1 @Controller + @ResponseBody" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-handwritten.svg" alt="Handwritten: 2.1 @Controller + @ResponseBody" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-diagram.svg" alt="Diagram: 2.1 @Controller + @ResponseBody" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-diagram.svg" alt="Diagram: 2.1 @Controller + @ResponseBody" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-sticky.svg" alt="Sticky Note: 2.1 @Controller + @ResponseBody" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-1-controller-responsebody-sticky.svg" alt="Sticky Note: 2.1 @Controller + @ResponseBody" width="30%">
 </a>
 
 
@@ -164,14 +164,14 @@ public class OldBookController {
 
 ### 2.2 @RestController → The Composed Annotation
 
-<a href="../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-handwritten.svg" alt="Handwritten: 2.2 @RestController → The Composed Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-handwritten.svg" alt="Handwritten: 2.2 @RestController → The Composed Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-diagram.svg" alt="Diagram: 2.2 @RestController → The Composed Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-diagram.svg" alt="Diagram: 2.2 @RestController → The Composed Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-sticky.svg" alt="Sticky Note: 2.2 @RestController → The Composed Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-2-restcontroller-the-composed-annotation-sticky.svg" alt="Sticky Note: 2.2 @RestController → The Composed Annotation" width="30%">
 </a>
 
 
@@ -201,14 +201,14 @@ public class BookController {
 
 ### 2.3 @RestController Source (Conceptual)
 
-<a href="../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-handwritten.svg" alt="Handwritten: 2.3 @RestController Source (Conceptual)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-handwritten.svg" alt="Handwritten: 2.3 @RestController Source (Conceptual)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-diagram.svg" alt="Diagram: 2.3 @RestController Source (Conceptual)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-diagram.svg" alt="Diagram: 2.3 @RestController Source (Conceptual)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-sticky.svg" alt="Sticky Note: 2.3 @RestController Source (Conceptual)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-3-restcontroller-source-conceptual-sticky.svg" alt="Sticky Note: 2.3 @RestController Source (Conceptual)" width="30%">
 </a>
 
 
@@ -233,14 +233,14 @@ Key insight: `@RestController` is a **composed annotation** → it inherits comp
 
 ### 2.4 Model Class Example
 
-<a href="../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-handwritten.svg" alt="Handwritten: 2.4 Model Class Example" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-handwritten.svg" alt="Handwritten: 2.4 Model Class Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-diagram.svg" alt="Diagram: 2.4 Model Class Example" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-diagram.svg" alt="Diagram: 2.4 Model Class Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-sticky.svg" alt="Sticky Note: 2.4 Model Class Example" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-4-model-class-example-sticky.svg" alt="Sticky Note: 2.4 Model Class Example" width="30%">
 </a>
 
 
@@ -313,14 +313,14 @@ public class Book {
 
 ### 2.5 Repository Stub (In-Memory)
 
-<a href="../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-handwritten.svg" alt="Handwritten: 2.5 Repository Stub (In-Memory)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-handwritten.svg" alt="Handwritten: 2.5 Repository Stub (In-Memory)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-diagram.svg" alt="Diagram: 2.5 Repository Stub (In-Memory)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-diagram.svg" alt="Diagram: 2.5 Repository Stub (In-Memory)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-sticky.svg" alt="Sticky Note: 2.5 Repository Stub (In-Memory)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/2-5-repository-stub-in-memory-sticky.svg" alt="Sticky Note: 2.5 Repository Stub (In-Memory)" width="30%">
 </a>
 
 
@@ -393,14 +393,14 @@ public class BookRepository {
 
 ### 3.1 @RequestMapping Attributes
 
-<a href="../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-handwritten.svg" alt="Handwritten: 3.1 @RequestMapping Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-handwritten.svg" alt="Handwritten: 3.1 @RequestMapping Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-diagram.svg" alt="Diagram: 3.1 @RequestMapping Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-diagram.svg" alt="Diagram: 3.1 @RequestMapping Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-sticky.svg" alt="Sticky Note: 3.1 @RequestMapping Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-1-requestmapping-attributes-sticky.svg" alt="Sticky Note: 3.1 @RequestMapping Attributes" width="30%">
 </a>
 
 
@@ -452,14 +452,14 @@ public class RequestMappingController {
 
 ### 3.2 Complete Attribute Reference
 
-<a href="../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-handwritten.svg" alt="Handwritten: 3.2 Complete Attribute Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-handwritten.svg" alt="Handwritten: 3.2 Complete Attribute Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-diagram.svg" alt="Diagram: 3.2 Complete Attribute Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-diagram.svg" alt="Diagram: 3.2 Complete Attribute Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-sticky.svg" alt="Sticky Note: 3.2 Complete Attribute Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-2-complete-attribute-reference-sticky.svg" alt="Sticky Note: 3.2 Complete Attribute Reference" width="30%">
 </a>
 
 
@@ -475,14 +475,14 @@ public class RequestMappingController {
 
 ### 3.3 params Attribute → Expressions
 
-<a href="../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-handwritten.svg" alt="Handwritten: 3.3 params Attribute → Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-handwritten.svg" alt="Handwritten: 3.3 params Attribute → Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-diagram.svg" alt="Diagram: 3.3 params Attribute → Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-diagram.svg" alt="Diagram: 3.3 params Attribute → Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-sticky.svg" alt="Sticky Note: 3.3 params Attribute → Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-3-params-attribute-expressions-sticky.svg" alt="Sticky Note: 3.3 params Attribute → Expressions" width="30%">
 </a>
 
 
@@ -495,14 +495,14 @@ public class RequestMappingController {
 
 ### 3.4 headers Attribute → Expressions
 
-<a href="../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-handwritten.svg" alt="Handwritten: 3.4 headers Attribute → Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-handwritten.svg" alt="Handwritten: 3.4 headers Attribute → Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-diagram.svg" alt="Diagram: 3.4 headers Attribute → Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-diagram.svg" alt="Diagram: 3.4 headers Attribute → Expressions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-sticky.svg" alt="Sticky Note: 3.4 headers Attribute → Expressions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/3-4-headers-attribute-expressions-sticky.svg" alt="Sticky Note: 3.4 headers Attribute → Expressions" width="30%">
 </a>
 
 
@@ -518,14 +518,14 @@ public class RequestMappingController {
 
 ### 4.1 @GetMapping
 
-<a href="../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-handwritten.svg" alt="Handwritten: 4.1 @GetMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-handwritten.svg" alt="Handwritten: 4.1 @GetMapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-diagram.svg" alt="Diagram: 4.1 @GetMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-diagram.svg" alt="Diagram: 4.1 @GetMapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-sticky.svg" alt="Sticky Note: 4.1 @GetMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-1-getmapping-sticky.svg" alt="Sticky Note: 4.1 @GetMapping" width="30%">
 </a>
 
 
@@ -566,14 +566,14 @@ public class GetMappingController {
 
 ### 4.2 @PostMapping
 
-<a href="../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-handwritten.svg" alt="Handwritten: 4.2 @PostMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-handwritten.svg" alt="Handwritten: 4.2 @PostMapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-diagram.svg" alt="Diagram: 4.2 @PostMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-diagram.svg" alt="Diagram: 4.2 @PostMapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-sticky.svg" alt="Sticky Note: 4.2 @PostMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-2-postmapping-sticky.svg" alt="Sticky Note: 4.2 @PostMapping" width="30%">
 </a>
 
 
@@ -589,14 +589,14 @@ public Book createBook(@RequestBody Book book) {
 
 ### 4.3 @PutMapping → Full Update
 
-<a href="../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-handwritten.svg" alt="Handwritten: 4.3 @PutMapping → Full Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-handwritten.svg" alt="Handwritten: 4.3 @PutMapping → Full Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-diagram.svg" alt="Diagram: 4.3 @PutMapping → Full Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-diagram.svg" alt="Diagram: 4.3 @PutMapping → Full Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-sticky.svg" alt="Sticky Note: 4.3 @PutMapping → Full Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-3-putmapping-full-update-sticky.svg" alt="Sticky Note: 4.3 @PutMapping → Full Update" width="30%">
 </a>
 
 
@@ -620,14 +620,14 @@ public Book updateBook(@PathVariable Long id, @RequestBody Book updated) {
 
 ### 4.4 @DeleteMapping
 
-<a href="../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-handwritten.svg" alt="Handwritten: 4.4 @DeleteMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-handwritten.svg" alt="Handwritten: 4.4 @DeleteMapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-diagram.svg" alt="Diagram: 4.4 @DeleteMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-diagram.svg" alt="Diagram: 4.4 @DeleteMapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-sticky.svg" alt="Sticky Note: 4.4 @DeleteMapping" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-4-deletemapping-sticky.svg" alt="Sticky Note: 4.4 @DeleteMapping" width="30%">
 </a>
 
 
@@ -644,14 +644,14 @@ public void deleteBook(@PathVariable Long id) {
 
 ### 4.5 @PatchMapping → Partial Update
 
-<a href="../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-handwritten.svg" alt="Handwritten: 4.5 @PatchMapping → Partial Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-handwritten.svg" alt="Handwritten: 4.5 @PatchMapping → Partial Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-diagram.svg" alt="Diagram: 4.5 @PatchMapping → Partial Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-diagram.svg" alt="Diagram: 4.5 @PatchMapping → Partial Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-sticky.svg" alt="Sticky Note: 4.5 @PatchMapping → Partial Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-5-patchmapping-partial-update-sticky.svg" alt="Sticky Note: 4.5 @PatchMapping → Partial Update" width="30%">
 </a>
 
 
@@ -675,14 +675,14 @@ public Book partialUpdateBook(@PathVariable Long id, @RequestBody Map<String, Ob
 
 ### 4.6 All Composed Annotations Summary
 
-<a href="../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-handwritten.svg" alt="Handwritten: 4.6 All Composed Annotations Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-handwritten.svg" alt="Handwritten: 4.6 All Composed Annotations Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-diagram.svg" alt="Diagram: 4.6 All Composed Annotations Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-diagram.svg" alt="Diagram: 4.6 All Composed Annotations Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-sticky.svg" alt="Sticky Note: 4.6 All Composed Annotations Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/4-6-all-composed-annotations-summary-sticky.svg" alt="Sticky Note: 4.6 All Composed Annotations Summary" width="30%">
 </a>
 
 
@@ -702,14 +702,14 @@ Each composed annotation supports `value`/`path`, `params`, `headers`, `consumes
 
 ### 5.1 @PathVariable → URI Template Variables
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-handwritten.svg" alt="Handwritten: 5.1 @PathVariable → URI Template Variables" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-handwritten.svg" alt="Handwritten: 5.1 @PathVariable → URI Template Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-diagram.svg" alt="Diagram: 5.1 @PathVariable → URI Template Variables" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-diagram.svg" alt="Diagram: 5.1 @PathVariable → URI Template Variables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-sticky.svg" alt="Sticky Note: 5.1 @PathVariable → URI Template Variables" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-1-pathvariable-uri-template-variables-sticky.svg" alt="Sticky Note: 5.1 @PathVariable → URI Template Variables" width="30%">
 </a>
 
 
@@ -755,14 +755,14 @@ public class PathVariableController {
 
 ### 5.2 @RequestParam → Query Parameters
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-handwritten.svg" alt="Handwritten: 5.2 @RequestParam → Query Parameters" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-handwritten.svg" alt="Handwritten: 5.2 @RequestParam → Query Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-diagram.svg" alt="Diagram: 5.2 @RequestParam → Query Parameters" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-diagram.svg" alt="Diagram: 5.2 @RequestParam → Query Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-sticky.svg" alt="Sticky Note: 5.2 @RequestParam → Query Parameters" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-2-requestparam-query-parameters-sticky.svg" alt="Sticky Note: 5.2 @RequestParam → Query Parameters" width="30%">
 </a>
 
 
@@ -830,14 +830,14 @@ public class RequestParamController {
 
 ### 5.3 @RequestHeader → HTTP Headers
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-handwritten.svg" alt="Handwritten: 5.3 @RequestHeader → HTTP Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-handwritten.svg" alt="Handwritten: 5.3 @RequestHeader → HTTP Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-diagram.svg" alt="Diagram: 5.3 @RequestHeader → HTTP Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-diagram.svg" alt="Diagram: 5.3 @RequestHeader → HTTP Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-sticky.svg" alt="Sticky Note: 5.3 @RequestHeader → HTTP Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-3-requestheader-http-headers-sticky.svg" alt="Sticky Note: 5.3 @RequestHeader → HTTP Headers" width="30%">
 </a>
 
 
@@ -878,14 +878,14 @@ public class RequestHeaderController {
 
 ### 5.4 @RequestBody → Request Body
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-handwritten.svg" alt="Handwritten: 5.4 @RequestBody → Request Body" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-handwritten.svg" alt="Handwritten: 5.4 @RequestBody → Request Body" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-diagram.svg" alt="Diagram: 5.4 @RequestBody → Request Body" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-diagram.svg" alt="Diagram: 5.4 @RequestBody → Request Body" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-sticky.svg" alt="Sticky Note: 5.4 @RequestBody → Request Body" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-4-requestbody-request-body-sticky.svg" alt="Sticky Note: 5.4 @RequestBody → Request Body" width="30%">
 </a>
 
 
@@ -921,14 +921,14 @@ public class RequestBodyController {
 
 ### 5.5 @RequestAttribute → Request Scoped Attributes
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-handwritten.svg" alt="Handwritten: 5.5 @RequestAttribute → Request Scoped Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-handwritten.svg" alt="Handwritten: 5.5 @RequestAttribute → Request Scoped Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-diagram.svg" alt="Diagram: 5.5 @RequestAttribute → Request Scoped Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-diagram.svg" alt="Diagram: 5.5 @RequestAttribute → Request Scoped Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-sticky.svg" alt="Sticky Note: 5.5 @RequestAttribute → Request Scoped Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-5-requestattribute-request-scoped-attributes-sticky.svg" alt="Sticky Note: 5.5 @RequestAttribute → Request Scoped Attributes" width="30%">
 </a>
 
 
@@ -973,14 +973,14 @@ public class RequestAttributeFilter implements Filter {
 
 ### 5.6 @MatrixVariable → Matrix Parameters
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-handwritten.svg" alt="Handwritten: 5.6 @MatrixVariable → Matrix Parameters" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-handwritten.svg" alt="Handwritten: 5.6 @MatrixVariable → Matrix Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-diagram.svg" alt="Diagram: 5.6 @MatrixVariable → Matrix Parameters" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-diagram.svg" alt="Diagram: 5.6 @MatrixVariable → Matrix Parameters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-sticky.svg" alt="Sticky Note: 5.6 @MatrixVariable → Matrix Parameters" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-6-matrixvariable-matrix-parameters-sticky.svg" alt="Sticky Note: 5.6 @MatrixVariable → Matrix Parameters" width="30%">
 </a>
 
 
@@ -1040,14 +1040,14 @@ public class MatrixVariableController {
 
 ### 5.7 Parameter Type Conversion
 
-<a href="../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-handwritten.svg" alt="Handwritten: 5.7 Parameter Type Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-handwritten.svg" alt="Handwritten: 5.7 Parameter Type Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-diagram.svg" alt="Diagram: 5.7 Parameter Type Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-diagram.svg" alt="Diagram: 5.7 Parameter Type Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-sticky.svg" alt="Sticky Note: 5.7 Parameter Type Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/5-7-parameter-type-conversion-sticky.svg" alt="Sticky Note: 5.7 Parameter Type Conversion" width="30%">
 </a>
 
 
@@ -1097,14 +1097,14 @@ public class StringToPhoneNumberConverter implements Converter<String, PhoneNumb
 
 ### 6.1 @ResponseStatus
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-handwritten.svg" alt="Handwritten: 6.1 @ResponseStatus" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-handwritten.svg" alt="Handwritten: 6.1 @ResponseStatus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-diagram.svg" alt="Diagram: 6.1 @ResponseStatus" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-diagram.svg" alt="Diagram: 6.1 @ResponseStatus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-sticky.svg" alt="Sticky Note: 6.1 @ResponseStatus" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-1-responsestatus-sticky.svg" alt="Sticky Note: 6.1 @ResponseStatus" width="30%">
 </a>
 
 
@@ -1152,14 +1152,14 @@ public class ResponseStatusController {
 
 ### 6.2 ResponseEntity → Full Control
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-handwritten.svg" alt="Handwritten: 6.2 ResponseEntity → Full Control" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-handwritten.svg" alt="Handwritten: 6.2 ResponseEntity → Full Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-diagram.svg" alt="Diagram: 6.2 ResponseEntity → Full Control" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-diagram.svg" alt="Diagram: 6.2 ResponseEntity → Full Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-sticky.svg" alt="Sticky Note: 6.2 ResponseEntity → Full Control" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-2-responseentity-full-control-sticky.svg" alt="Sticky Note: 6.2 ResponseEntity → Full Control" width="30%">
 </a>
 
 
@@ -1230,14 +1230,14 @@ public class ResponseEntityController {
 
 ### 6.3 ResponseEntity with Headers Builder
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-handwritten.svg" alt="Handwritten: 6.3 ResponseEntity with Headers Builder" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-handwritten.svg" alt="Handwritten: 6.3 ResponseEntity with Headers Builder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-diagram.svg" alt="Diagram: 6.3 ResponseEntity with Headers Builder" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-diagram.svg" alt="Diagram: 6.3 ResponseEntity with Headers Builder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-sticky.svg" alt="Sticky Note: 6.3 ResponseEntity with Headers Builder" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-3-responseentity-with-headers-builder-sticky.svg" alt="Sticky Note: 6.3 ResponseEntity with Headers Builder" width="30%">
 </a>
 
 
@@ -1261,14 +1261,14 @@ public ResponseEntity<Book> getBookComplete(@PathVariable Long id) {
 
 ### 6.4 HttpHeaders → Building Custom Headers
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-handwritten.svg" alt="Handwritten: 6.4 HttpHeaders → Building Custom Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-handwritten.svg" alt="Handwritten: 6.4 HttpHeaders → Building Custom Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-diagram.svg" alt="Diagram: 6.4 HttpHeaders → Building Custom Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-diagram.svg" alt="Diagram: 6.4 HttpHeaders → Building Custom Headers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-sticky.svg" alt="Sticky Note: 6.4 HttpHeaders → Building Custom Headers" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-4-httpheaders-building-custom-headers-sticky.svg" alt="Sticky Note: 6.4 HttpHeaders → Building Custom Headers" width="30%">
 </a>
 
 
@@ -1324,14 +1324,14 @@ public class HttpHeadersController {
 
 ### 6.5 ResponseStatusException
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-handwritten.svg" alt="Handwritten: 6.5 ResponseStatusException" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-handwritten.svg" alt="Handwritten: 6.5 ResponseStatusException" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-diagram.svg" alt="Diagram: 6.5 ResponseStatusException" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-diagram.svg" alt="Diagram: 6.5 ResponseStatusException" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-sticky.svg" alt="Sticky Note: 6.5 ResponseStatusException" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-5-responsestatusexception-sticky.svg" alt="Sticky Note: 6.5 ResponseStatusException" width="30%">
 </a>
 
 
@@ -1384,14 +1384,14 @@ public class ResponseStatusExceptionController {
 
 ### 6.6 Custom Exception + @ResponseStatus
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-handwritten.svg" alt="Handwritten: 6.6 Custom Exception + @ResponseStatus" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-handwritten.svg" alt="Handwritten: 6.6 Custom Exception + @ResponseStatus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-diagram.svg" alt="Diagram: 6.6 Custom Exception + @ResponseStatus" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-diagram.svg" alt="Diagram: 6.6 Custom Exception + @ResponseStatus" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-sticky.svg" alt="Sticky Note: 6.6 Custom Exception + @ResponseStatus" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-6-custom-exception-responsestatus-sticky.svg" alt="Sticky Note: 6.6 Custom Exception + @ResponseStatus" width="30%">
 </a>
 
 
@@ -1449,14 +1449,14 @@ public class CustomExceptionController {
 
 ### 6.7 @ExceptionHandler → Controller-Level
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-handwritten.svg" alt="Handwritten: 6.7 @ExceptionHandler → Controller-Level" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-handwritten.svg" alt="Handwritten: 6.7 @ExceptionHandler → Controller-Level" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-diagram.svg" alt="Diagram: 6.7 @ExceptionHandler → Controller-Level" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-diagram.svg" alt="Diagram: 6.7 @ExceptionHandler → Controller-Level" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-sticky.svg" alt="Sticky Note: 6.7 @ExceptionHandler → Controller-Level" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-7-exceptionhandler-controller-level-sticky.svg" alt="Sticky Note: 6.7 @ExceptionHandler → Controller-Level" width="30%">
 </a>
 
 
@@ -1498,14 +1498,14 @@ public class ExceptionHandlerController {
 
 ### 6.8 @ControllerAdvice → Global Error Handling
 
-<a href="../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-handwritten.svg" alt="Handwritten: 6.8 @ControllerAdvice → Global Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-handwritten.svg" alt="Handwritten: 6.8 @ControllerAdvice → Global Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-diagram.svg" alt="Diagram: 6.8 @ControllerAdvice → Global Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-diagram.svg" alt="Diagram: 6.8 @ControllerAdvice → Global Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-sticky.svg" alt="Sticky Note: 6.8 @ControllerAdvice → Global Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/6-8-controlleradvice-global-error-handling-sticky.svg" alt="Sticky Note: 6.8 @ControllerAdvice → Global Error Handling" width="30%">
 </a>
 
 
@@ -1595,14 +1595,14 @@ public class GlobalExceptionHandler {
 
 ### 7.1 How Content Negotiation Works
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-handwritten.svg" alt="Handwritten: 7.1 How Content Negotiation Works" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-handwritten.svg" alt="Handwritten: 7.1 How Content Negotiation Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-diagram.svg" alt="Diagram: 7.1 How Content Negotiation Works" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-diagram.svg" alt="Diagram: 7.1 How Content Negotiation Works" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-sticky.svg" alt="Sticky Note: 7.1 How Content Negotiation Works" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-1-how-content-negotiation-works-sticky.svg" alt="Sticky Note: 7.1 How Content Negotiation Works" width="30%">
 </a>
 
 
@@ -1615,14 +1615,14 @@ Content negotiation determines the media type (JSON, XML, etc.) used for request
 
 ### 7.2 Default Content Negotiation
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-handwritten.svg" alt="Handwritten: 7.2 Default Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-handwritten.svg" alt="Handwritten: 7.2 Default Content Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-diagram.svg" alt="Diagram: 7.2 Default Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-diagram.svg" alt="Diagram: 7.2 Default Content Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-sticky.svg" alt="Sticky Note: 7.2 Default Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-2-default-content-negotiation-sticky.svg" alt="Sticky Note: 7.2 Default Content Negotiation" width="30%">
 </a>
 
 
@@ -1635,14 +1635,14 @@ curl -H "Accept: application/xml" http://localhost:8080/api/books
 
 ### 7.3 Configuring Content Negotiation
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-handwritten.svg" alt="Handwritten: 7.3 Configuring Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-handwritten.svg" alt="Handwritten: 7.3 Configuring Content Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-diagram.svg" alt="Diagram: 7.3 Configuring Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-diagram.svg" alt="Diagram: 7.3 Configuring Content Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-sticky.svg" alt="Sticky Note: 7.3 Configuring Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-3-configuring-content-negotiation-sticky.svg" alt="Sticky Note: 7.3 Configuring Content Negotiation" width="30%">
 </a>
 
 
@@ -1673,14 +1673,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 7.4 Extension-Based Strategy
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-handwritten.svg" alt="Handwritten: 7.4 Extension-Based Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-handwritten.svg" alt="Handwritten: 7.4 Extension-Based Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-diagram.svg" alt="Diagram: 7.4 Extension-Based Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-diagram.svg" alt="Diagram: 7.4 Extension-Based Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-sticky.svg" alt="Sticky Note: 7.4 Extension-Based Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-4-extension-based-strategy-sticky.svg" alt="Sticky Note: 7.4 Extension-Based Strategy" width="30%">
 </a>
 
 
@@ -1702,14 +1702,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 7.5 Parameter-Based Strategy
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-handwritten.svg" alt="Handwritten: 7.5 Parameter-Based Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-handwritten.svg" alt="Handwritten: 7.5 Parameter-Based Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-diagram.svg" alt="Diagram: 7.5 Parameter-Based Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-diagram.svg" alt="Diagram: 7.5 Parameter-Based Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-sticky.svg" alt="Sticky Note: 7.5 Parameter-Based Strategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-5-parameter-based-strategy-sticky.svg" alt="Sticky Note: 7.5 Parameter-Based Strategy" width="30%">
 </a>
 
 
@@ -1732,14 +1732,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 7.6 ContentNegotiationManager → Programmatic Use
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-handwritten.svg" alt="Handwritten: 7.6 ContentNegotiationManager → Programmatic Use" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-handwritten.svg" alt="Handwritten: 7.6 ContentNegotiationManager → Programmatic Use" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-diagram.svg" alt="Diagram: 7.6 ContentNegotiationManager → Programmatic Use" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-diagram.svg" alt="Diagram: 7.6 ContentNegotiationManager → Programmatic Use" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-sticky.svg" alt="Sticky Note: 7.6 ContentNegotiationManager → Programmatic Use" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-6-contentnegotiationmanager-programmatic-use-sticky.svg" alt="Sticky Note: 7.6 ContentNegotiationManager → Programmatic Use" width="30%">
 </a>
 
 
@@ -1771,14 +1771,14 @@ public class ContentNegotiationService {
 
 ### 7.7 Controller-Level Content Negotiation
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-handwritten.svg" alt="Handwritten: 7.7 Controller-Level Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-handwritten.svg" alt="Handwritten: 7.7 Controller-Level Content Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-diagram.svg" alt="Diagram: 7.7 Controller-Level Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-diagram.svg" alt="Diagram: 7.7 Controller-Level Content Negotiation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-sticky.svg" alt="Sticky Note: 7.7 Controller-Level Content Negotiation" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-7-controller-level-content-negotiation-sticky.svg" alt="Sticky Note: 7.7 Controller-Level Content Negotiation" width="30%">
 </a>
 
 
@@ -1816,14 +1816,14 @@ public class ControllerNegotiationController {
 
 ### 7.8 Custom ContentNegotiationStrategy
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-handwritten.svg" alt="Handwritten: 7.8 Custom ContentNegotiationStrategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-handwritten.svg" alt="Handwritten: 7.8 Custom ContentNegotiationStrategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-diagram.svg" alt="Diagram: 7.8 Custom ContentNegotiationStrategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-diagram.svg" alt="Diagram: 7.8 Custom ContentNegotiationStrategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-sticky.svg" alt="Sticky Note: 7.8 Custom ContentNegotiationStrategy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-8-custom-contentnegotiationstrategy-sticky.svg" alt="Sticky Note: 7.8 Custom ContentNegotiationStrategy" width="30%">
 </a>
 
 
@@ -1870,14 +1870,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 7.9 Default Content Type
 
-<a href="../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-handwritten.svg" alt="Handwritten: 7.9 Default Content Type" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-handwritten.svg" alt="Handwritten: 7.9 Default Content Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-diagram.svg" alt="Diagram: 7.9 Default Content Type" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-diagram.svg" alt="Diagram: 7.9 Default Content Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-sticky.svg" alt="Sticky Note: 7.9 Default Content Type" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/7-9-default-content-type-sticky.svg" alt="Sticky Note: 7.9 Default Content Type" width="30%">
 </a>
 
 
@@ -1903,14 +1903,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 8.1 GET → Safe, Idempotent, Cacheable
 
-<a href="../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-handwritten.svg" alt="Handwritten: 8.1 GET → Safe, Idempotent, Cacheable" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-handwritten.svg" alt="Handwritten: 8.1 GET → Safe, Idempotent, Cacheable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-diagram.svg" alt="Diagram: 8.1 GET → Safe, Idempotent, Cacheable" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-diagram.svg" alt="Diagram: 8.1 GET → Safe, Idempotent, Cacheable" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-sticky.svg" alt="Sticky Note: 8.1 GET → Safe, Idempotent, Cacheable" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-1-get-safe-idempotent-cacheable-sticky.svg" alt="Sticky Note: 8.1 GET → Safe, Idempotent, Cacheable" width="30%">
 </a>
 
 
@@ -1949,14 +1949,14 @@ public class GetSemanticsController {
 
 ### 8.2 POST → Create, Non-Idempotent
 
-<a href="../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-handwritten.svg" alt="Handwritten: 8.2 POST → Create, Non-Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-handwritten.svg" alt="Handwritten: 8.2 POST → Create, Non-Idempotent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-diagram.svg" alt="Diagram: 8.2 POST → Create, Non-Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-diagram.svg" alt="Diagram: 8.2 POST → Create, Non-Idempotent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-sticky.svg" alt="Sticky Note: 8.2 POST → Create, Non-Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-2-post-create-non-idempotent-sticky.svg" alt="Sticky Note: 8.2 POST → Create, Non-Idempotent" width="30%">
 </a>
 
 
@@ -1991,14 +1991,14 @@ public class PostSemanticsController {
 
 ### 8.3 PUT → Full Replacement, Idempotent
 
-<a href="../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-handwritten.svg" alt="Handwritten: 8.3 PUT → Full Replacement, Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-handwritten.svg" alt="Handwritten: 8.3 PUT → Full Replacement, Idempotent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-diagram.svg" alt="Diagram: 8.3 PUT → Full Replacement, Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-diagram.svg" alt="Diagram: 8.3 PUT → Full Replacement, Idempotent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-sticky.svg" alt="Sticky Note: 8.3 PUT → Full Replacement, Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-3-put-full-replacement-idempotent-sticky.svg" alt="Sticky Note: 8.3 PUT → Full Replacement, Idempotent" width="30%">
 </a>
 
 
@@ -2047,14 +2047,14 @@ public class PutSemanticsController {
 
 ### 8.4 PATCH → Partial Update
 
-<a href="../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-handwritten.svg" alt="Handwritten: 8.4 PATCH → Partial Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-handwritten.svg" alt="Handwritten: 8.4 PATCH → Partial Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-diagram.svg" alt="Diagram: 8.4 PATCH → Partial Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-diagram.svg" alt="Diagram: 8.4 PATCH → Partial Update" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-sticky.svg" alt="Sticky Note: 8.4 PATCH → Partial Update" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-4-patch-partial-update-sticky.svg" alt="Sticky Note: 8.4 PATCH → Partial Update" width="30%">
 </a>
 
 
@@ -2094,14 +2094,14 @@ public class PatchSemanticsController {
 
 ### 8.5 DELETE → Remove, Idempotent
 
-<a href="../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-handwritten.svg" alt="Handwritten: 8.5 DELETE → Remove, Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-handwritten.svg" alt="Handwritten: 8.5 DELETE → Remove, Idempotent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-diagram.svg" alt="Diagram: 8.5 DELETE → Remove, Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-diagram.svg" alt="Diagram: 8.5 DELETE → Remove, Idempotent" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-sticky.svg" alt="Sticky Note: 8.5 DELETE → Remove, Idempotent" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-5-delete-remove-idempotent-sticky.svg" alt="Sticky Note: 8.5 DELETE → Remove, Idempotent" width="30%">
 </a>
 
 
@@ -2152,14 +2152,14 @@ public class DeleteSemanticsController {
 
 ### 8.6 HTTP Methods Summary
 
-<a href="../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-handwritten.svg" alt="Handwritten: 8.6 HTTP Methods Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-handwritten.svg" alt="Handwritten: 8.6 HTTP Methods Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-diagram.svg" alt="Diagram: 8.6 HTTP Methods Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-diagram.svg" alt="Diagram: 8.6 HTTP Methods Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-sticky.svg" alt="Sticky Note: 8.6 HTTP Methods Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/8-6-http-methods-summary-sticky.svg" alt="Sticky Note: 8.6 HTTP Methods Summary" width="30%">
 </a>
 
 
@@ -2179,14 +2179,14 @@ public class DeleteSemanticsController {
 
 ### 9.1 Complete Status Code Reference
 
-<a href="../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-handwritten.svg" alt="Handwritten: 9.1 Complete Status Code Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-handwritten.svg" alt="Handwritten: 9.1 Complete Status Code Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-diagram.svg" alt="Diagram: 9.1 Complete Status Code Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-diagram.svg" alt="Diagram: 9.1 Complete Status Code Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-sticky.svg" alt="Sticky Note: 9.1 Complete Status Code Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/9-1-complete-status-code-reference-sticky.svg" alt="Sticky Note: 9.1 Complete Status Code Reference" width="30%">
 </a>
 
 
@@ -2283,14 +2283,14 @@ public class StatusCodeDemoController {
 
 ### 9.2 Status Code Quick Reference
 
-<a href="../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-handwritten.svg" alt="Handwritten: 9.2 Status Code Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-handwritten.svg" alt="Handwritten: 9.2 Status Code Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-diagram.svg" alt="Diagram: 9.2 Status Code Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-diagram.svg" alt="Diagram: 9.2 Status Code Quick Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-sticky.svg" alt="Sticky Note: 9.2 Status Code Quick Reference" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/9-2-status-code-quick-reference-sticky.svg" alt="Sticky Note: 9.2 Status Code Quick Reference" width="30%">
 </a>
 
 
@@ -2321,14 +2321,14 @@ public class StatusCodeDemoController {
 
 ### 10.1 What is HATEOAS?
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-handwritten.svg" alt="Handwritten: 10.1 What is HATEOAS?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-handwritten.svg" alt="Handwritten: 10.1 What is HATEOAS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-diagram.svg" alt="Diagram: 10.1 What is HATEOAS?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-diagram.svg" alt="Diagram: 10.1 What is HATEOAS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-sticky.svg" alt="Sticky Note: 10.1 What is HATEOAS?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-1-what-is-hateoas-sticky.svg" alt="Sticky Note: 10.1 What is HATEOAS?" width="30%">
 </a>
 
 
@@ -2336,14 +2336,14 @@ HATEOAS (Hypermedia as the Engine of Application State) is Level 3 of the Richar
 
 ### 10.2 Maven/Gradle Dependencies
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-handwritten.svg" alt="Handwritten: 10.2 Maven/Gradle Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-handwritten.svg" alt="Handwritten: 10.2 Maven/Gradle Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-diagram.svg" alt="Diagram: 10.2 Maven/Gradle Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-diagram.svg" alt="Diagram: 10.2 Maven/Gradle Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-sticky.svg" alt="Sticky Note: 10.2 Maven/Gradle Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-2-maven-gradle-dependencies-sticky.svg" alt="Sticky Note: 10.2 Maven/Gradle Dependencies" width="30%">
 </a>
 
 
@@ -2362,14 +2362,14 @@ implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 
 ### 10.3 RepresentationModel → The Base Class
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-handwritten.svg" alt="Handwritten: 10.3 RepresentationModel → The Base Class" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-handwritten.svg" alt="Handwritten: 10.3 RepresentationModel → The Base Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-diagram.svg" alt="Diagram: 10.3 RepresentationModel → The Base Class" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-diagram.svg" alt="Diagram: 10.3 RepresentationModel → The Base Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-sticky.svg" alt="Sticky Note: 10.3 RepresentationModel → The Base Class" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-3-representationmodel-the-base-class-sticky.svg" alt="Sticky Note: 10.3 RepresentationModel → The Base Class" width="30%">
 </a>
 
 
@@ -2410,14 +2410,14 @@ public class BookModel extends RepresentationModel<BookModel> {
 
 ### 10.4 EntityModel → Single Resource
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-handwritten.svg" alt="Handwritten: 10.4 EntityModel → Single Resource" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-handwritten.svg" alt="Handwritten: 10.4 EntityModel → Single Resource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-diagram.svg" alt="Diagram: 10.4 EntityModel → Single Resource" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-diagram.svg" alt="Diagram: 10.4 EntityModel → Single Resource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-sticky.svg" alt="Sticky Note: 10.4 EntityModel → Single Resource" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-4-entitymodel-single-resource-sticky.svg" alt="Sticky Note: 10.4 EntityModel → Single Resource" width="30%">
 </a>
 
 
@@ -2458,14 +2458,14 @@ public class BookHateoasController {
 
 ### 10.5 CollectionModel → Resource Collections
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-handwritten.svg" alt="Handwritten: 10.5 CollectionModel → Resource Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-handwritten.svg" alt="Handwritten: 10.5 CollectionModel → Resource Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-diagram.svg" alt="Diagram: 10.5 CollectionModel → Resource Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-diagram.svg" alt="Diagram: 10.5 CollectionModel → Resource Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-sticky.svg" alt="Sticky Note: 10.5 CollectionModel → Resource Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-5-collectionmodel-resource-collections-sticky.svg" alt="Sticky Note: 10.5 CollectionModel → Resource Collections" width="30%">
 </a>
 
 
@@ -2490,14 +2490,14 @@ public CollectionModel<EntityModel<BookModel>> getAllBooks() {
 
 ### 10.6 Link and WebMvcLinkBuilder
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-handwritten.svg" alt="Handwritten: 10.6 Link and WebMvcLinkBuilder" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-handwritten.svg" alt="Handwritten: 10.6 Link and WebMvcLinkBuilder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-diagram.svg" alt="Diagram: 10.6 Link and WebMvcLinkBuilder" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-diagram.svg" alt="Diagram: 10.6 Link and WebMvcLinkBuilder" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-sticky.svg" alt="Sticky Note: 10.6 Link and WebMvcLinkBuilder" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-6-link-and-webmvclinkbuilder-sticky.svg" alt="Sticky Note: 10.6 Link and WebMvcLinkBuilder" width="30%">
 </a>
 
 
@@ -2547,14 +2547,14 @@ public class LinkBuilderController {
 
 ### 10.7 PagedModel → Paginated Collections
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-handwritten.svg" alt="Handwritten: 10.7 PagedModel → Paginated Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-handwritten.svg" alt="Handwritten: 10.7 PagedModel → Paginated Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-diagram.svg" alt="Diagram: 10.7 PagedModel → Paginated Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-diagram.svg" alt="Diagram: 10.7 PagedModel → Paginated Collections" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-sticky.svg" alt="Sticky Note: 10.7 PagedModel → Paginated Collections" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-7-pagedmodel-paginated-collections-sticky.svg" alt="Sticky Note: 10.7 PagedModel → Paginated Collections" width="30%">
 </a>
 
 
@@ -2594,14 +2594,14 @@ public PagedModel<EntityModel<BookModel>> getPagedBooks(Pageable pageable) {
 
 ### 10.8 RepresentationModelProcessor
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-handwritten.svg" alt="Handwritten: 10.8 RepresentationModelProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-handwritten.svg" alt="Handwritten: 10.8 RepresentationModelProcessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-diagram.svg" alt="Diagram: 10.8 RepresentationModelProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-diagram.svg" alt="Diagram: 10.8 RepresentationModelProcessor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-sticky.svg" alt="Sticky Note: 10.8 RepresentationModelProcessor" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-8-representationmodelprocessor-sticky.svg" alt="Sticky Note: 10.8 RepresentationModelProcessor" width="30%">
 </a>
 
 
@@ -2626,14 +2626,14 @@ public class BookModelProcessor implements RepresentationModelProcessor<EntityMo
 
 ### 10.9 Complete HATEOAS Response Example
 
-<a href="../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-handwritten.svg" alt="Handwritten: 10.9 Complete HATEOAS Response Example" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-handwritten.svg" alt="Handwritten: 10.9 Complete HATEOAS Response Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-diagram.svg" alt="Diagram: 10.9 Complete HATEOAS Response Example" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-diagram.svg" alt="Diagram: 10.9 Complete HATEOAS Response Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-sticky.svg" alt="Sticky Note: 10.9 Complete HATEOAS Response Example" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/10-9-complete-hateoas-response-example-sticky.svg" alt="Sticky Note: 10.9 Complete HATEOAS Response Example" width="30%">
 </a>
 
 
@@ -2658,14 +2658,14 @@ public class BookModelProcessor implements RepresentationModelProcessor<EntityMo
 
 ### 11.1 Why API Versioning
 
-<a href="../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-handwritten.svg" alt="Handwritten: 11.1 Why API Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-handwritten.svg" alt="Handwritten: 11.1 Why API Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-diagram.svg" alt="Diagram: 11.1 Why API Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-diagram.svg" alt="Diagram: 11.1 Why API Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-sticky.svg" alt="Sticky Note: 11.1 Why API Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-1-why-api-versioning-sticky.svg" alt="Sticky Note: 11.1 Why API Versioning" width="30%">
 </a>
 
 
@@ -2680,14 +2680,14 @@ API versioning allows you to evolve your API without breaking existing clients.
 
 ### 11.2 URI Path Versioning
 
-<a href="../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-handwritten.svg" alt="Handwritten: 11.2 URI Path Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-handwritten.svg" alt="Handwritten: 11.2 URI Path Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-diagram.svg" alt="Diagram: 11.2 URI Path Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-diagram.svg" alt="Diagram: 11.2 URI Path Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-sticky.svg" alt="Sticky Note: 11.2 URI Path Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-2-uri-path-versioning-sticky.svg" alt="Sticky Note: 11.2 URI Path Versioning" width="30%">
 </a>
 
 
@@ -2778,14 +2778,14 @@ public class BookV2 {
 
 ### 11.3 Request Parameter Versioning
 
-<a href="../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-handwritten.svg" alt="Handwritten: 11.3 Request Parameter Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-handwritten.svg" alt="Handwritten: 11.3 Request Parameter Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-diagram.svg" alt="Diagram: 11.3 Request Parameter Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-diagram.svg" alt="Diagram: 11.3 Request Parameter Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-sticky.svg" alt="Sticky Note: 11.3 Request Parameter Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-3-request-parameter-versioning-sticky.svg" alt="Sticky Note: 11.3 Request Parameter Versioning" width="30%">
 </a>
 
 
@@ -2813,14 +2813,14 @@ public class BookParamVersionController {
 
 ### 11.4 Custom Header Versioning
 
-<a href="../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-handwritten.svg" alt="Handwritten: 11.4 Custom Header Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-handwritten.svg" alt="Handwritten: 11.4 Custom Header Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-diagram.svg" alt="Diagram: 11.4 Custom Header Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-diagram.svg" alt="Diagram: 11.4 Custom Header Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-sticky.svg" alt="Sticky Note: 11.4 Custom Header Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-4-custom-header-versioning-sticky.svg" alt="Sticky Note: 11.4 Custom Header Versioning" width="30%">
 </a>
 
 
@@ -2849,14 +2849,14 @@ public class BookHeaderVersionController {
 
 ### 11.5 Accept Header (Media Type) Versioning
 
-<a href="../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-handwritten.svg" alt="Handwritten: 11.5 Accept Header (Media Type) Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-handwritten.svg" alt="Handwritten: 11.5 Accept Header (Media Type) Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-diagram.svg" alt="Diagram: 11.5 Accept Header (Media Type) Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-diagram.svg" alt="Diagram: 11.5 Accept Header (Media Type) Versioning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-sticky.svg" alt="Sticky Note: 11.5 Accept Header (Media Type) Versioning" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-5-accept-header-media-type-versioning-sticky.svg" alt="Sticky Note: 11.5 Accept Header (Media Type) Versioning" width="30%">
 </a>
 
 
@@ -2894,14 +2894,14 @@ public class BookAcceptVersionController {
 
 ### 11.6 Versioning Strategy Decision Guide
 
-<a href="../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-handwritten.svg" alt="Handwritten: 11.6 Versioning Strategy Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-handwritten.svg" alt="Handwritten: 11.6 Versioning Strategy Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-diagram.svg" alt="Diagram: 11.6 Versioning Strategy Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-diagram.svg" alt="Diagram: 11.6 Versioning Strategy Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-sticky.svg" alt="Sticky Note: 11.6 Versioning Strategy Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/11-6-versioning-strategy-decision-guide-sticky.svg" alt="Sticky Note: 11.6 Versioning Strategy Decision Guide" width="30%">
 </a>
 
 
@@ -2925,14 +2925,14 @@ Q: Do clients cache responses aggressively?
 
 ### 12.1 What is CORS?
 
-<a href="../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-handwritten.svg" alt="Handwritten: 12.1 What is CORS?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-handwritten.svg" alt="Handwritten: 12.1 What is CORS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-diagram.svg" alt="Diagram: 12.1 What is CORS?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-diagram.svg" alt="Diagram: 12.1 What is CORS?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-sticky.svg" alt="Sticky Note: 12.1 What is CORS?" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-1-what-is-cors-sticky.svg" alt="Sticky Note: 12.1 What is CORS?" width="30%">
 </a>
 
 
@@ -2940,14 +2940,14 @@ CORS is a security mechanism that allows browsers to make cross-origin HTTP requ
 
 ### 12.2 @CrossOrigin → Controller-Level CORS
 
-<a href="../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-handwritten.svg" alt="Handwritten: 12.2 @CrossOrigin → Controller-Level CORS" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-handwritten.svg" alt="Handwritten: 12.2 @CrossOrigin → Controller-Level CORS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-diagram.svg" alt="Diagram: 12.2 @CrossOrigin → Controller-Level CORS" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-diagram.svg" alt="Diagram: 12.2 @CrossOrigin → Controller-Level CORS" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-sticky.svg" alt="Sticky Note: 12.2 @CrossOrigin → Controller-Level CORS" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-2-crossorigin-controller-level-cors-sticky.svg" alt="Sticky Note: 12.2 @CrossOrigin → Controller-Level CORS" width="30%">
 </a>
 
 
@@ -2993,14 +2993,14 @@ public class BookController {
 
 ### 12.3 @CrossOrigin Attributes
 
-<a href="../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-handwritten.svg" alt="Handwritten: 12.3 @CrossOrigin Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-handwritten.svg" alt="Handwritten: 12.3 @CrossOrigin Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-diagram.svg" alt="Diagram: 12.3 @CrossOrigin Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-diagram.svg" alt="Diagram: 12.3 @CrossOrigin Attributes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-sticky.svg" alt="Sticky Note: 12.3 @CrossOrigin Attributes" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-3-crossorigin-attributes-sticky.svg" alt="Sticky Note: 12.3 @CrossOrigin Attributes" width="30%">
 </a>
 
 
@@ -3015,14 +3015,14 @@ public class BookController {
 
 ### 12.4 GlobalCorsConfiguration
 
-<a href="../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-handwritten.svg" alt="Handwritten: 12.4 GlobalCorsConfiguration" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-handwritten.svg" alt="Handwritten: 12.4 GlobalCorsConfiguration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-diagram.svg" alt="Diagram: 12.4 GlobalCorsConfiguration" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-diagram.svg" alt="Diagram: 12.4 GlobalCorsConfiguration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-sticky.svg" alt="Sticky Note: 12.4 GlobalCorsConfiguration" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-4-globalcorsconfiguration-sticky.svg" alt="Sticky Note: 12.4 GlobalCorsConfiguration" width="30%">
 </a>
 
 
@@ -3062,14 +3062,14 @@ public class WebConfig implements WebMvcConfigurer {
 
 ### 12.5 CORS with Properties
 
-<a href="../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-handwritten.svg" alt="Handwritten: 12.5 CORS with Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-handwritten.svg" alt="Handwritten: 12.5 CORS with Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-diagram.svg" alt="Diagram: 12.5 CORS with Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-diagram.svg" alt="Diagram: 12.5 CORS with Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-sticky.svg" alt="Sticky Note: 12.5 CORS with Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-5-cors-with-properties-sticky.svg" alt="Sticky Note: 12.5 CORS with Properties" width="30%">
 </a>
 
 
@@ -3085,14 +3085,14 @@ spring.web.cors.max-age=3600
 
 ### 12.6 CORS Error Diagnostics
 
-<a href="../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-handwritten.svg" alt="Handwritten: 12.6 CORS Error Diagnostics" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-handwritten.svg" alt="Handwritten: 12.6 CORS Error Diagnostics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-diagram.svg" alt="Diagram: 12.6 CORS Error Diagnostics" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-diagram.svg" alt="Diagram: 12.6 CORS Error Diagnostics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-sticky.svg" alt="Sticky Note: 12.6 CORS Error Diagnostics" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/12-6-cors-error-diagnostics-sticky.svg" alt="Sticky Note: 12.6 CORS Error Diagnostics" width="30%">
 </a>
 
 
@@ -3116,14 +3116,14 @@ Error: Credentials header cannot be '*'
 
 ### 13.1 Naming Conventions
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-handwritten.svg" alt="Handwritten: 13.1 Naming Conventions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-handwritten.svg" alt="Handwritten: 13.1 Naming Conventions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-diagram.svg" alt="Diagram: 13.1 Naming Conventions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-diagram.svg" alt="Diagram: 13.1 Naming Conventions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-sticky.svg" alt="Sticky Note: 13.1 Naming Conventions" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-1-naming-conventions-sticky.svg" alt="Sticky Note: 13.1 Naming Conventions" width="30%">
 </a>
 
 
@@ -3151,14 +3151,14 @@ Error: Credentials header cannot be '*'
 
 ### 13.2 Resource Hierarchy
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-handwritten.svg" alt="Handwritten: 13.2 Resource Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-handwritten.svg" alt="Handwritten: 13.2 Resource Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-diagram.svg" alt="Diagram: 13.2 Resource Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-diagram.svg" alt="Diagram: 13.2 Resource Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-sticky.svg" alt="Sticky Note: 13.2 Resource Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-2-resource-hierarchy-sticky.svg" alt="Sticky Note: 13.2 Resource Hierarchy" width="30%">
 </a>
 
 
@@ -3186,14 +3186,14 @@ public class HierarchicalController {
 
 ### 13.3 Pagination
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-3-pagination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-3-pagination-handwritten.svg" alt="Handwritten: 13.3 Pagination" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-3-pagination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-3-pagination-handwritten.svg" alt="Handwritten: 13.3 Pagination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-3-pagination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-3-pagination-diagram.svg" alt="Diagram: 13.3 Pagination" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-3-pagination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-3-pagination-diagram.svg" alt="Diagram: 13.3 Pagination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-3-pagination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-3-pagination-sticky.svg" alt="Sticky Note: 13.3 Pagination" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-3-pagination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-3-pagination-sticky.svg" alt="Sticky Note: 13.3 Pagination" width="30%">
 </a>
 
 
@@ -3270,14 +3270,14 @@ public class PaginationController {
 
 ### 13.4 Filtering
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-4-filtering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-4-filtering-handwritten.svg" alt="Handwritten: 13.4 Filtering" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-4-filtering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-4-filtering-handwritten.svg" alt="Handwritten: 13.4 Filtering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-4-filtering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-4-filtering-diagram.svg" alt="Diagram: 13.4 Filtering" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-4-filtering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-4-filtering-diagram.svg" alt="Diagram: 13.4 Filtering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-4-filtering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-4-filtering-sticky.svg" alt="Sticky Note: 13.4 Filtering" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-4-filtering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-4-filtering-sticky.svg" alt="Sticky Note: 13.4 Filtering" width="30%">
 </a>
 
 
@@ -3341,14 +3341,14 @@ public class BookFilter {
 
 ### 13.5 Sorting
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-5-sorting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-5-sorting-handwritten.svg" alt="Handwritten: 13.5 Sorting" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-5-sorting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-5-sorting-handwritten.svg" alt="Handwritten: 13.5 Sorting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-5-sorting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-5-sorting-diagram.svg" alt="Diagram: 13.5 Sorting" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-5-sorting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-5-sorting-diagram.svg" alt="Diagram: 13.5 Sorting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-5-sorting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-5-sorting-sticky.svg" alt="Sticky Note: 13.5 Sorting" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-5-sorting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-5-sorting-sticky.svg" alt="Sticky Note: 13.5 Sorting" width="30%">
 </a>
 
 
@@ -3400,14 +3400,14 @@ public class SortingController {
 
 ### 13.6 Partial Responses (Field Selection)
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-handwritten.svg" alt="Handwritten: 13.6 Partial Responses (Field Selection)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-handwritten.svg" alt="Handwritten: 13.6 Partial Responses (Field Selection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-diagram.svg" alt="Diagram: 13.6 Partial Responses (Field Selection)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-diagram.svg" alt="Diagram: 13.6 Partial Responses (Field Selection)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-sticky.svg" alt="Sticky Note: 13.6 Partial Responses (Field Selection)" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-6-partial-responses-field-selection-sticky.svg" alt="Sticky Note: 13.6 Partial Responses (Field Selection)" width="30%">
 </a>
 
 
@@ -3466,14 +3466,14 @@ public class Views {
 
 ### 13.7 ETags for Conditional Requests
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-handwritten.svg" alt="Handwritten: 13.7 ETags for Conditional Requests" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-handwritten.svg" alt="Handwritten: 13.7 ETags for Conditional Requests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-diagram.svg" alt="Diagram: 13.7 ETags for Conditional Requests" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-diagram.svg" alt="Diagram: 13.7 ETags for Conditional Requests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-sticky.svg" alt="Sticky Note: 13.7 ETags for Conditional Requests" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-7-etags-for-conditional-requests-sticky.svg" alt="Sticky Note: 13.7 ETags for Conditional Requests" width="30%">
 </a>
 
 
@@ -3524,14 +3524,14 @@ public class ETagController {
 
 ### 13.8 Idempotency Key Support
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-handwritten.svg" alt="Handwritten: 13.8 Idempotency Key Support" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-handwritten.svg" alt="Handwritten: 13.8 Idempotency Key Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-diagram.svg" alt="Diagram: 13.8 Idempotency Key Support" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-diagram.svg" alt="Diagram: 13.8 Idempotency Key Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-sticky.svg" alt="Sticky Note: 13.8 Idempotency Key Support" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-8-idempotency-key-support-sticky.svg" alt="Sticky Note: 13.8 Idempotency Key Support" width="30%">
 </a>
 
 
@@ -3564,14 +3564,14 @@ public class IdempotencyController {
 
 ### 13.9 Bulk Operations
 
-<a href="../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-handwritten.svg" alt="Handwritten: 13.9 Bulk Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-handwritten.svg" alt="Handwritten: 13.9 Bulk Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-diagram.svg" alt="Diagram: 13.9 Bulk Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-diagram.svg" alt="Diagram: 13.9 Bulk Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-sticky.svg" alt="Sticky Note: 13.9 Bulk Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/13-9-bulk-operations-sticky.svg" alt="Sticky Note: 13.9 Bulk Operations" width="30%">
 </a>
 
 
@@ -3611,14 +3611,14 @@ public class BulkController {
 
 ### 14.1 Pageable and Page Basics
 
-<a href="../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-handwritten.svg" alt="Handwritten: 14.1 Pageable and Page Basics" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-handwritten.svg" alt="Handwritten: 14.1 Pageable and Page Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-diagram.svg" alt="Diagram: 14.1 Pageable and Page Basics" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-diagram.svg" alt="Diagram: 14.1 Pageable and Page Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-sticky.svg" alt="Sticky Note: 14.1 Pageable and Page Basics" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-1-pageable-and-page-basics-sticky.svg" alt="Sticky Note: 14.1 Pageable and Page Basics" width="30%">
 </a>
 
 
@@ -3693,14 +3693,14 @@ public class PageableController {
 
 ### 14.2 @PageableDefault
 
-<a href="../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-handwritten.svg" alt="Handwritten: 14.2 @PageableDefault" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-handwritten.svg" alt="Handwritten: 14.2 @PageableDefault" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-diagram.svg" alt="Diagram: 14.2 @PageableDefault" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-diagram.svg" alt="Diagram: 14.2 @PageableDefault" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-sticky.svg" alt="Sticky Note: 14.2 @PageableDefault" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-2-pageabledefault-sticky.svg" alt="Sticky Note: 14.2 @PageableDefault" width="30%">
 </a>
 
 
@@ -3737,14 +3737,14 @@ public class PageableDefaultController {
 
 ### 14.3 Sort Parameter
 
-<a href="../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-handwritten.svg" alt="Handwritten: 14.3 Sort Parameter" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-handwritten.svg" alt="Handwritten: 14.3 Sort Parameter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-diagram.svg" alt="Diagram: 14.3 Sort Parameter" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-diagram.svg" alt="Diagram: 14.3 Sort Parameter" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-sticky.svg" alt="Sticky Note: 14.3 Sort Parameter" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-3-sort-parameter-sticky.svg" alt="Sticky Note: 14.3 Sort Parameter" width="30%">
 </a>
 
 
@@ -3807,14 +3807,14 @@ public class SortController {
 
 ### 14.4 Custom Pagination Response
 
-<a href="../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-handwritten.svg" alt="Handwritten: 14.4 Custom Pagination Response" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-handwritten.svg" alt="Handwritten: 14.4 Custom Pagination Response" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-diagram.svg" alt="Diagram: 14.4 Custom Pagination Response" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-diagram.svg" alt="Diagram: 14.4 Custom Pagination Response" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-sticky.svg" alt="Sticky Note: 14.4 Custom Pagination Response" width="30%">
+<a href="../../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/15-rest-api/14-4-custom-pagination-response-sticky.svg" alt="Sticky Note: 14.4 Custom Pagination Response" width="30%">
 </a>
 
 

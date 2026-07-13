@@ -17,14 +17,14 @@
 
 ### Design Principles
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-handwritten.svg" alt="Handwritten: Design Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-handwritten.svg" alt="Handwritten: Design Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-diagram.svg" alt="Diagram: Design Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-diagram.svg" alt="Diagram: Design Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-sticky.svg" alt="Sticky Note: Design Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-sticky.svg" alt="Sticky Note: Design Principles" width="30%">
 </a>
 
 
@@ -34,14 +34,14 @@ The primary goal of design principles is to manage **complexity**. As software s
 
 ### The SOLID Principles
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-handwritten.svg" alt="Handwritten: The SOLID Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-handwritten.svg" alt="Handwritten: The SOLID Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-diagram.svg" alt="Diagram: The SOLID Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-diagram.svg" alt="Diagram: The SOLID Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-sticky.svg" alt="Sticky Note: The SOLID Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-sticky.svg" alt="Sticky Note: The SOLID Principles" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ DIP is the foundation of dependency injection. By depending on abstractions, we 
 
 ### DRY, KISS, and YAGNI
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-handwritten.svg" alt="Handwritten: DRY, KISS, and YAGNI" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-handwritten.svg" alt="Handwritten: DRY, KISS, and YAGNI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-diagram.svg" alt="Diagram: DRY, KISS, and YAGNI" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-diagram.svg" alt="Diagram: DRY, KISS, and YAGNI" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-sticky.svg" alt="Sticky Note: DRY, KISS, and YAGNI" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-sticky.svg" alt="Sticky Note: DRY, KISS, and YAGNI" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ These three principles complement SOLID by providing guardrails against over-eng
 
 ### Coupling and Cohesion
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-handwritten.svg" alt="Handwritten: Coupling and Cohesion" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-handwritten.svg" alt="Handwritten: Coupling and Cohesion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-diagram.svg" alt="Diagram: Coupling and Cohesion" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-diagram.svg" alt="Diagram: Coupling and Cohesion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-sticky.svg" alt="Sticky Note: Coupling and Cohesion" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-sticky.svg" alt="Sticky Note: Coupling and Cohesion" width="30%">
 </a>
 
 
@@ -308,14 +308,14 @@ The relationship between coupling and cohesion is inverse: as cohesion increases
 
 ### Clean Code Principles
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-handwritten.svg" alt="Handwritten: Clean Code Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-handwritten.svg" alt="Handwritten: Clean Code Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-diagram.svg" alt="Diagram: Clean Code Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-diagram.svg" alt="Diagram: Clean Code Principles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-sticky.svg" alt="Sticky Note: Clean Code Principles" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-sticky.svg" alt="Sticky Note: Clean Code Principles" width="30%">
 </a>
 
 
@@ -354,14 +354,14 @@ class UserRegistrationService {
 
 ### Design by Contract
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-handwritten.svg" alt="Handwritten: Design by Contract" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-handwritten.svg" alt="Handwritten: Design by Contract" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-diagram.svg" alt="Diagram: Design by Contract" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-diagram.svg" alt="Diagram: Design by Contract" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-sticky.svg" alt="Sticky Note: Design by Contract" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-sticky.svg" alt="Sticky Note: Design by Contract" width="30%">
 </a>
 
 
@@ -403,14 +403,14 @@ class BankAccount {
 
 ### Refactoring Catalog and Code Smells
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-handwritten.svg" alt="Handwritten: Refactoring Catalog and Code Smells" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-handwritten.svg" alt="Handwritten: Refactoring Catalog and Code Smells" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-diagram.svg" alt="Diagram: Refactoring Catalog and Code Smells" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-diagram.svg" alt="Diagram: Refactoring Catalog and Code Smells" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-sticky.svg" alt="Sticky Note: Refactoring Catalog and Code Smells" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-sticky.svg" alt="Sticky Note: Refactoring Catalog and Code Smells" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ Code smells are surface indicators that usually correspond to deeper problems in
 
 ### Design Patterns (GoF)
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-handwritten.svg" alt="Handwritten: Design Patterns (GoF)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-handwritten.svg" alt="Handwritten: Design Patterns (GoF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-diagram.svg" alt="Diagram: Design Patterns (GoF)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-diagram.svg" alt="Diagram: Design Patterns (GoF)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-sticky.svg" alt="Sticky Note: Design Patterns (GoF)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-sticky.svg" alt="Sticky Note: Design Patterns (GoF)" width="30%">
 </a>
 
 
@@ -684,14 +684,14 @@ console.log(`${coffee.getDescription()} costs $${coffee.getCost()}`);
 
 ### Design Pattern Comparison
 
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-handwritten.svg" alt="Handwritten: Design Pattern Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-handwritten.svg" alt="Handwritten: Design Pattern Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-diagram.svg" alt="Diagram: Design Pattern Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-diagram.svg" alt="Diagram: Design Pattern Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-sticky.svg" alt="Sticky Note: Design Pattern Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-sticky.svg" alt="Sticky Note: Design Pattern Comparison" width="30%">
 </a>
 
 

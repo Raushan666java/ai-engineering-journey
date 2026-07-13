@@ -68,14 +68,14 @@ flowchart TD
 
 ### What is Ensemble Learning?
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-handwritten.svg" alt="Handwritten: What is Ensemble Learning?" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-handwritten.svg" alt="Handwritten: What is Ensemble Learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-diagram.svg" alt="Diagram: What is Ensemble Learning?" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-diagram.svg" alt="Diagram: What is Ensemble Learning?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-sticky.svg" alt="Sticky Note: What is Ensemble Learning?" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/what-is-ensemble-learning-sticky.svg" alt="Sticky Note: What is Ensemble Learning?" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ Ensemble methods combine multiple machine learning models (base learners) to pro
 
 ### Bias-Variance Decomposition of Ensembles
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-handwritten.svg" alt="Handwritten: Bias-Variance Decomposition of Ensembles" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-handwritten.svg" alt="Handwritten: Bias-Variance Decomposition of Ensembles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-diagram.svg" alt="Diagram: Bias-Variance Decomposition of Ensembles" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-diagram.svg" alt="Diagram: Bias-Variance Decomposition of Ensembles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-sticky.svg" alt="Sticky Note: Bias-Variance Decomposition of Ensembles" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bias-variance-decomposition-of-ensembles-sticky.svg" alt="Sticky Note: Bias-Variance Decomposition of Ensembles" width="30%">
 </a>
 
 
@@ -114,14 +114,14 @@ As $M \to \infty$, variance approaches $\rho\sigma^2$. This is why **decorrelati
 
 ### Bagging: Bootstrap Aggregating
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-handwritten.svg" alt="Handwritten: Bagging: Bootstrap Aggregating" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-handwritten.svg" alt="Handwritten: Bagging: Bootstrap Aggregating" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-diagram.svg" alt="Diagram: Bagging: Bootstrap Aggregating" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-diagram.svg" alt="Diagram: Bagging: Bootstrap Aggregating" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-sticky.svg" alt="Sticky Note: Bagging: Bootstrap Aggregating" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/bagging-bootstrap-aggregating-sticky.svg" alt="Sticky Note: Bagging: Bootstrap Aggregating" width="30%">
 </a>
 
 
@@ -161,14 +161,14 @@ flowchart LR
 
 ### Random Forest
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-handwritten.svg" alt="Handwritten: Random Forest" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-handwritten.svg" alt="Handwritten: Random Forest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-diagram.svg" alt="Diagram: Random Forest" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-diagram.svg" alt="Diagram: Random Forest" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-sticky.svg" alt="Sticky Note: Random Forest" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/random-forest-sticky.svg" alt="Sticky Note: Random Forest" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ Random Forest (Breiman, 2001) is Bagging applied to decision trees with one cruc
 
 ### Boosting: Sequential Error Correction
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-handwritten.svg" alt="Handwritten: Boosting: Sequential Error Correction" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-handwritten.svg" alt="Handwritten: Boosting: Sequential Error Correction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-diagram.svg" alt="Diagram: Boosting: Sequential Error Correction" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-diagram.svg" alt="Diagram: Boosting: Sequential Error Correction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-sticky.svg" alt="Sticky Note: Boosting: Sequential Error Correction" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/boosting-sequential-error-correction-sticky.svg" alt="Sticky Note: Boosting: Sequential Error Correction" width="30%">
 </a>
 
 
@@ -264,14 +264,14 @@ flowchart TD
 
 ### Stacking (Stacked Generalization)
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-handwritten.svg" alt="Handwritten: Stacking (Stacked Generalization)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-handwritten.svg" alt="Handwritten: Stacking (Stacked Generalization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-diagram.svg" alt="Diagram: Stacking (Stacked Generalization)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-diagram.svg" alt="Diagram: Stacking (Stacked Generalization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-sticky.svg" alt="Sticky Note: Stacking (Stacked Generalization)" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/stacking-stacked-generalization-sticky.svg" alt="Sticky Note: Stacking (Stacked Generalization)" width="30%">
 </a>
 
 
@@ -288,14 +288,14 @@ Stacking often wins Kaggle competitions because diverse models capture different
 
 ### Voting Ensembles
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-handwritten.svg" alt="Handwritten: Voting Ensembles" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-handwritten.svg" alt="Handwritten: Voting Ensembles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-diagram.svg" alt="Diagram: Voting Ensembles" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-diagram.svg" alt="Diagram: Voting Ensembles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-sticky.svg" alt="Sticky Note: Voting Ensembles" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/voting-ensembles-sticky.svg" alt="Sticky Note: Voting Ensembles" width="30%">
 </a>
 
 
@@ -308,14 +308,14 @@ Soft voting generally outperforms hard voting because confident models have more
 
 ### Out-of-Bag (OOB) Evaluation
 
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-handwritten.svg" alt="Handwritten: Out-of-Bag (OOB) Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-handwritten.svg" alt="Handwritten: Out-of-Bag (OOB) Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-diagram.svg" alt="Diagram: Out-of-Bag (OOB) Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-diagram.svg" alt="Diagram: Out-of-Bag (OOB) Evaluation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-sticky.svg" alt="Sticky Note: Out-of-Bag (OOB) Evaluation" width="30%">
+<a href="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/machine-learning/05-ensemble-methods/out-of-bag-oob-evaluation-sticky.svg" alt="Sticky Note: Out-of-Bag (OOB) Evaluation" width="30%">
 </a>
 
 

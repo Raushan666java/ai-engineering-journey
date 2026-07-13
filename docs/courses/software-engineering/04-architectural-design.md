@@ -17,14 +17,14 @@
 
 ### The Role of Architectural Design
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-handwritten.svg" alt="Handwritten: The Role of Architectural Design" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-handwritten.svg" alt="Handwritten: The Role of Architectural Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-diagram.svg" alt="Diagram: The Role of Architectural Design" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-diagram.svg" alt="Diagram: The Role of Architectural Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-sticky.svg" alt="Sticky Note: The Role of Architectural Design" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-sticky.svg" alt="Sticky Note: The Role of Architectural Design" width="30%">
 </a>
 
 
@@ -61,14 +61,14 @@ graph TD
 
 ### Architectural Decisions
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-handwritten.svg" alt="Handwritten: Architectural Decisions" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-handwritten.svg" alt="Handwritten: Architectural Decisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-diagram.svg" alt="Diagram: Architectural Decisions" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-diagram.svg" alt="Diagram: Architectural Decisions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-sticky.svg" alt="Sticky Note: Architectural Decisions" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-sticky.svg" alt="Sticky Note: Architectural Decisions" width="30%">
 </a>
 
 
@@ -99,14 +99,14 @@ interface ArchitectureDecisionRecord {
 
 ### Quality Attribute Scenarios
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-handwritten.svg" alt="Handwritten: Quality Attribute Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-handwritten.svg" alt="Handwritten: Quality Attribute Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-diagram.svg" alt="Diagram: Quality Attribute Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-diagram.svg" alt="Diagram: Quality Attribute Scenarios" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-sticky.svg" alt="Sticky Note: Quality Attribute Scenarios" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-sticky.svg" alt="Sticky Note: Quality Attribute Scenarios" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ Quality attribute scenarios provide a structured way to specify and evaluate qua
 
 ### Architecture Pattern Categories
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-handwritten.svg" alt="Handwritten: Architecture Pattern Categories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-handwritten.svg" alt="Handwritten: Architecture Pattern Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-diagram.svg" alt="Diagram: Architecture Pattern Categories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-diagram.svg" alt="Diagram: Architecture Pattern Categories" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-sticky.svg" alt="Sticky Note: Architecture Pattern Categories" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-sticky.svg" alt="Sticky Note: Architecture Pattern Categories" width="30%">
 </a>
 
 
@@ -154,14 +154,14 @@ Architectural patterns can be categorised by their primary concern:
 
 ### The Layered Architecture Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-handwritten.svg" alt="Handwritten: The Layered Architecture Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-handwritten.svg" alt="Handwritten: The Layered Architecture Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-diagram.svg" alt="Diagram: The Layered Architecture Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-diagram.svg" alt="Diagram: The Layered Architecture Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-sticky.svg" alt="Sticky Note: The Layered Architecture Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-sticky.svg" alt="Sticky Note: The Layered Architecture Pattern" width="30%">
 </a>
 
 
@@ -218,14 +218,14 @@ graph TD
 
 ### The Model-View-Controller Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-handwritten.svg" alt="Handwritten: The Model-View-Controller Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-handwritten.svg" alt="Handwritten: The Model-View-Controller Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-diagram.svg" alt="Diagram: The Model-View-Controller Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-diagram.svg" alt="Diagram: The Model-View-Controller Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-sticky.svg" alt="Sticky Note: The Model-View-Controller Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-sticky.svg" alt="Sticky Note: The Model-View-Controller Pattern" width="30%">
 </a>
 
 
@@ -261,14 +261,14 @@ graph LR
 
 ### The Repository Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-handwritten.svg" alt="Handwritten: The Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-handwritten.svg" alt="Handwritten: The Repository Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-diagram.svg" alt="Diagram: The Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-diagram.svg" alt="Diagram: The Repository Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-sticky.svg" alt="Sticky Note: The Repository Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-sticky.svg" alt="Sticky Note: The Repository Pattern" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@ graph TD
 
 ### The Client-Server Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-handwritten.svg" alt="Handwritten: The Client-Server Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-handwritten.svg" alt="Handwritten: The Client-Server Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-diagram.svg" alt="Diagram: The Client-Server Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-diagram.svg" alt="Diagram: The Client-Server Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-sticky.svg" alt="Sticky Note: The Client-Server Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-sticky.svg" alt="Sticky Note: The Client-Server Pattern" width="30%">
 </a>
 
 
@@ -325,14 +325,14 @@ The client-server pattern distributes the system into **servers** that provide s
 
 ### The Pipe-and-Filter Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-handwritten.svg" alt="Handwritten: The Pipe-and-Filter Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-handwritten.svg" alt="Handwritten: The Pipe-and-Filter Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-diagram.svg" alt="Diagram: The Pipe-and-Filter Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-diagram.svg" alt="Diagram: The Pipe-and-Filter Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-sticky.svg" alt="Sticky Note: The Pipe-and-Filter Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-sticky.svg" alt="Sticky Note: The Pipe-and-Filter Pattern" width="30%">
 </a>
 
 
@@ -344,14 +344,14 @@ The pipe-and-filter pattern processes data through a sequence of processing step
 
 ### Microservices Architecture
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-handwritten.svg" alt="Handwritten: Microservices Architecture" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-handwritten.svg" alt="Handwritten: Microservices Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-diagram.svg" alt="Diagram: Microservices Architecture" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-diagram.svg" alt="Diagram: Microservices Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-sticky.svg" alt="Sticky Note: Microservices Architecture" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-sticky.svg" alt="Sticky Note: Microservices Architecture" width="30%">
 </a>
 
 
@@ -401,14 +401,14 @@ graph TD
 
 ### The Event-Driven Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-handwritten.svg" alt="Handwritten: The Event-Driven Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-handwritten.svg" alt="Handwritten: The Event-Driven Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-diagram.svg" alt="Diagram: The Event-Driven Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-diagram.svg" alt="Diagram: The Event-Driven Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-sticky.svg" alt="Sticky Note: The Event-Driven Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-sticky.svg" alt="Sticky Note: The Event-Driven Pattern" width="30%">
 </a>
 
 
@@ -447,14 +447,14 @@ graph LR
 
 ### CQRS (Command Query Responsibility Segregation)
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-handwritten.svg" alt="Handwritten: CQRS (Command Query Responsibility Segregation)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-handwritten.svg" alt="Handwritten: CQRS (Command Query Responsibility Segregation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-diagram.svg" alt="Diagram: CQRS (Command Query Responsibility Segregation)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-diagram.svg" alt="Diagram: CQRS (Command Query Responsibility Segregation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-sticky.svg" alt="Sticky Note: CQRS (Command Query Responsibility Segregation)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-sticky.svg" alt="Sticky Note: CQRS (Command Query Responsibility Segregation)" width="30%">
 </a>
 
 
@@ -486,14 +486,14 @@ graph TD
 
 ### Hexagonal Architecture (Ports and Adapters)
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-handwritten.svg" alt="Handwritten: Hexagonal Architecture (Ports and Adapters)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-handwritten.svg" alt="Handwritten: Hexagonal Architecture (Ports and Adapters)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-diagram.svg" alt="Diagram: Hexagonal Architecture (Ports and Adapters)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-diagram.svg" alt="Diagram: Hexagonal Architecture (Ports and Adapters)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-sticky.svg" alt="Sticky Note: Hexagonal Architecture (Ports and Adapters)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-sticky.svg" alt="Sticky Note: Hexagonal Architecture (Ports and Adapters)" width="30%">
 </a>
 
 
@@ -537,14 +537,14 @@ graph TD
 
 ### The Broker Pattern
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-handwritten.svg" alt="Handwritten: The Broker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-handwritten.svg" alt="Handwritten: The Broker Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-diagram.svg" alt="Diagram: The Broker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-diagram.svg" alt="Diagram: The Broker Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-sticky.svg" alt="Sticky Note: The Broker Pattern" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-sticky.svg" alt="Sticky Note: The Broker Pattern" width="30%">
 </a>
 
 
@@ -554,14 +554,14 @@ The broker pattern decouples clients from servers by introducing an intermediary
 
 ### Architecture Pattern Comparison
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-handwritten.svg" alt="Handwritten: Architecture Pattern Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-handwritten.svg" alt="Handwritten: Architecture Pattern Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-diagram.svg" alt="Diagram: Architecture Pattern Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-diagram.svg" alt="Diagram: Architecture Pattern Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-sticky.svg" alt="Sticky Note: Architecture Pattern Comparison" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-sticky.svg" alt="Sticky Note: Architecture Pattern Comparison" width="30%">
 </a>
 
 
@@ -580,14 +580,14 @@ The broker pattern decouples clients from servers by introducing an intermediary
 
 ### Quality Attribute Evaluation Framework (ATAM-inspired)
 
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-handwritten.svg" alt="Handwritten: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-handwritten.svg" alt="Handwritten: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-diagram.svg" alt="Diagram: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-diagram.svg" alt="Diagram: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-sticky.svg" alt="Sticky Note: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-sticky.svg" alt="Sticky Note: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
 </a>
 
 

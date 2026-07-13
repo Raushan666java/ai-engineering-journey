@@ -55,14 +55,14 @@ flowchart LR
 
 ### 12.1 Time Complexity
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-handwritten.svg" alt="Handwritten: 12.1 Time Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-handwritten.svg" alt="Handwritten: 12.1 Time Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-diagram.svg" alt="Diagram: 12.1 Time Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-diagram.svg" alt="Diagram: 12.1 Time Complexity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-sticky.svg" alt="Sticky Note: 12.1 Time Complexity" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-1-time-complexity-sticky.svg" alt="Sticky Note: 12.1 Time Complexity" width="30%">
 </a>
 
 
@@ -76,14 +76,14 @@ Common complexity classes: O(1), O(log n), O(n), O(n log n), O(nÂ²), O(2â¿
 
 ### 12.2 The Time Hierarchy Theorem
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-handwritten.svg" alt="Handwritten: 12.2 The Time Hierarchy Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-handwritten.svg" alt="Handwritten: 12.2 The Time Hierarchy Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-diagram.svg" alt="Diagram: 12.2 The Time Hierarchy Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-diagram.svg" alt="Diagram: 12.2 The Time Hierarchy Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-sticky.svg" alt="Sticky Note: 12.2 The Time Hierarchy Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-2-the-time-hierarchy-theorem-sticky.svg" alt="Sticky Note: 12.2 The Time Hierarchy Theorem" width="30%">
 </a>
 
 
@@ -102,14 +102,14 @@ The **time hierarchy theorem** shows that more time gives more computational pow
 
 ### 12.3 The Class P
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-handwritten.svg" alt="Handwritten: 12.3 The Class P" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-handwritten.svg" alt="Handwritten: 12.3 The Class P" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-diagram.svg" alt="Diagram: 12.3 The Class P" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-diagram.svg" alt="Diagram: 12.3 The Class P" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-sticky.svg" alt="Sticky Note: 12.3 The Class P" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-3-the-class-p-sticky.svg" alt="Sticky Note: 12.3 The Class P" width="30%">
 </a>
 
 
@@ -133,14 +133,14 @@ P is the class of languages decidable in **polynomial time** on a deterministic 
 
 ### 12.4 The Class NP
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-handwritten.svg" alt="Handwritten: 12.4 The Class NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-handwritten.svg" alt="Handwritten: 12.4 The Class NP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-diagram.svg" alt="Diagram: 12.4 The Class NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-diagram.svg" alt="Diagram: 12.4 The Class NP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-sticky.svg" alt="Sticky Note: 12.4 The Class NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-4-the-class-np-sticky.svg" alt="Sticky Note: 12.4 The Class NP" width="30%">
 </a>
 
 
@@ -170,14 +170,14 @@ Most researchers believe P â‰  NP.
 
 ### 12.5 Polynomial-Time Reductions
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-handwritten.svg" alt="Handwritten: 12.5 Polynomial-Time Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-handwritten.svg" alt="Handwritten: 12.5 Polynomial-Time Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-diagram.svg" alt="Diagram: 12.5 Polynomial-Time Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-diagram.svg" alt="Diagram: 12.5 Polynomial-Time Reductions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-sticky.svg" alt="Sticky Note: 12.5 Polynomial-Time Reductions" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-5-polynomial-time-reductions-sticky.svg" alt="Sticky Note: 12.5 Polynomial-Time Reductions" width="30%">
 </a>
 
 
@@ -190,14 +190,14 @@ A language A is **polynomial-time reducible** to B (written A â‰¤_P B) if th
 
 ### 12.6 NP-Completeness
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-handwritten.svg" alt="Handwritten: 12.6 NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-handwritten.svg" alt="Handwritten: 12.6 NP-Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-diagram.svg" alt="Diagram: 12.6 NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-diagram.svg" alt="Diagram: 12.6 NP-Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-sticky.svg" alt="Sticky Note: 12.6 NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-6-np-completeness-sticky.svg" alt="Sticky Note: 12.6 NP-Completeness" width="30%">
 </a>
 
 
@@ -209,14 +209,14 @@ A language B is **NP-complete** if:
 
 ### 12.7 Cook-Levin Theorem
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-handwritten.svg" alt="Handwritten: 12.7 Cook-Levin Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-handwritten.svg" alt="Handwritten: 12.7 Cook-Levin Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-diagram.svg" alt="Diagram: 12.7 Cook-Levin Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-diagram.svg" alt="Diagram: 12.7 Cook-Levin Theorem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-sticky.svg" alt="Sticky Note: 12.7 Cook-Levin Theorem" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-cook-levin-theorem-sticky.svg" alt="Sticky Note: 12.7 Cook-Levin Theorem" width="30%">
 </a>
 
 
@@ -262,14 +262,14 @@ flowchart LR
 
 ### 12.7 Proving NP-Completeness
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-handwritten.svg" alt="Handwritten: 12.7 Proving NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-handwritten.svg" alt="Handwritten: 12.7 Proving NP-Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-diagram.svg" alt="Diagram: 12.7 Proving NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-diagram.svg" alt="Diagram: 12.7 Proving NP-Completeness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-sticky.svg" alt="Sticky Note: 12.7 Proving NP-Completeness" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-7-proving-np-completeness-sticky.svg" alt="Sticky Note: 12.7 Proving NP-Completeness" width="30%">
 </a>
 
 
@@ -290,14 +290,14 @@ To prove a problem B is NP-complete:
 
 ### 12.9 The Polynomial Hierarchy
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-handwritten.svg" alt="Handwritten: 12.9 The Polynomial Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-handwritten.svg" alt="Handwritten: 12.9 The Polynomial Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-diagram.svg" alt="Diagram: 12.9 The Polynomial Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-diagram.svg" alt="Diagram: 12.9 The Polynomial Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-sticky.svg" alt="Sticky Note: 12.9 The Polynomial Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-9-the-polynomial-hierarchy-sticky.svg" alt="Sticky Note: 12.9 The Polynomial Hierarchy" width="30%">
 </a>
 
 
@@ -320,14 +320,14 @@ If P = NP, the entire polynomial hierarchy collapses to P at the first level. Th
 
 ### 12.10 Beyond NP
 
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-handwritten.svg" alt="Handwritten: 12.10 Beyond NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-handwritten.svg" alt="Handwritten: 12.10 Beyond NP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-diagram.svg" alt="Diagram: 12.10 Beyond NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-diagram.svg" alt="Diagram: 12.10 Beyond NP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-sticky.svg" alt="Sticky Note: 12.10 Beyond NP" width="30%">
+<a href="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/theory-of-computation/13-time-complexity/12-10-beyond-np-sticky.svg" alt="Sticky Note: 12.10 Beyond NP" width="30%">
 </a>
 
 

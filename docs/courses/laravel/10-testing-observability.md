@@ -52,14 +52,14 @@ flowchart LR
 
 ### 10.1 PHPUnit in Laravel
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-handwritten.svg" alt="Handwritten: 10.1 PHPUnit in Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-handwritten.svg" alt="Handwritten: 10.1 PHPUnit in Laravel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-diagram.svg" alt="Diagram: 10.1 PHPUnit in Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-diagram.svg" alt="Diagram: 10.1 PHPUnit in Laravel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-sticky.svg" alt="Sticky Note: 10.1 PHPUnit in Laravel" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-1-phpunit-in-laravel-sticky.svg" alt="Sticky Note: 10.1 PHPUnit in Laravel" width="30%">
 </a>
 
 
@@ -236,14 +236,14 @@ class TeamControllerTest extends TestCase
 
 ### 10.2 PEST
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-handwritten.svg" alt="Handwritten: 10.2 PEST" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-handwritten.svg" alt="Handwritten: 10.2 PEST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-diagram.svg" alt="Diagram: 10.2 PEST" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-diagram.svg" alt="Diagram: 10.2 PEST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-sticky.svg" alt="Sticky Note: 10.2 PEST" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-2-pest-sticky.svg" alt="Sticky Note: 10.2 PEST" width="30%">
 </a>
 
 
@@ -343,14 +343,14 @@ arch('controllers')
 
 ### 10.3 HTTP Tests
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-handwritten.svg" alt="Handwritten: 10.3 HTTP Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-handwritten.svg" alt="Handwritten: 10.3 HTTP Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-diagram.svg" alt="Diagram: 10.3 HTTP Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-diagram.svg" alt="Diagram: 10.3 HTTP Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-sticky.svg" alt="Sticky Note: 10.3 HTTP Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-3-http-tests-sticky.svg" alt="Sticky Note: 10.3 HTTP Tests" width="30%">
 </a>
 
 
@@ -516,14 +516,14 @@ it('persists records to database', function () {
 
 ### 10.4 Database Tests
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-handwritten.svg" alt="Handwritten: 10.4 Database Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-handwritten.svg" alt="Handwritten: 10.4 Database Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-diagram.svg" alt="Diagram: 10.4 Database Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-diagram.svg" alt="Diagram: 10.4 Database Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-sticky.svg" alt="Sticky Note: 10.4 Database Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-4-database-tests-sticky.svg" alt="Sticky Note: 10.4 Database Tests" width="30%">
 </a>
 
 
@@ -644,14 +644,14 @@ it('prevents unauthenticated creation', function () {
 
 ### 10.5 Feature vs. Unit Tests
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-handwritten.svg" alt="Handwritten: 10.5 Feature vs. Unit Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-handwritten.svg" alt="Handwritten: 10.5 Feature vs. Unit Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-diagram.svg" alt="Diagram: 10.5 Feature vs. Unit Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-diagram.svg" alt="Diagram: 10.5 Feature vs. Unit Tests" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-sticky.svg" alt="Sticky Note: 10.5 Feature vs. Unit Tests" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-5-feature-vs-unit-tests-sticky.svg" alt="Sticky Note: 10.5 Feature vs. Unit Tests" width="30%">
 </a>
 
 
@@ -713,14 +713,14 @@ class ShippingCalculatorTest extends TestCase
 
 ### 10.6 Mocks & Fakes
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-handwritten.svg" alt="Handwritten: 10.6 Mocks & Fakes" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-handwritten.svg" alt="Handwritten: 10.6 Mocks & Fakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-diagram.svg" alt="Diagram: 10.6 Mocks & Fakes" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-diagram.svg" alt="Diagram: 10.6 Mocks & Fakes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-sticky.svg" alt="Sticky Note: 10.6 Mocks & Fakes" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-6-mocks-fakes-sticky.svg" alt="Sticky Note: 10.6 Mocks & Fakes" width="30%">
 </a>
 
 
@@ -922,14 +922,14 @@ it('asserts exact requests were sent', function () {
 
 ### 10.7 Browser Tests with Dusk
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-handwritten.svg" alt="Handwritten: 10.7 Browser Tests with Dusk" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-handwritten.svg" alt="Handwritten: 10.7 Browser Tests with Dusk" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-diagram.svg" alt="Diagram: 10.7 Browser Tests with Dusk" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-diagram.svg" alt="Diagram: 10.7 Browser Tests with Dusk" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-sticky.svg" alt="Sticky Note: 10.7 Browser Tests with Dusk" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-7-browser-tests-with-dusk-sticky.svg" alt="Sticky Note: 10.7 Browser Tests with Dusk" width="30%">
 </a>
 
 
@@ -1120,14 +1120,14 @@ class DatePicker extends Component
 
 ### 10.8 Laravel Telescope
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-handwritten.svg" alt="Handwritten: 10.8 Laravel Telescope" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-handwritten.svg" alt="Handwritten: 10.8 Laravel Telescope" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-diagram.svg" alt="Diagram: 10.8 Laravel Telescope" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-diagram.svg" alt="Diagram: 10.8 Laravel Telescope" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-sticky.svg" alt="Sticky Note: 10.8 Laravel Telescope" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-8-laravel-telescope-sticky.svg" alt="Sticky Note: 10.8 Laravel Telescope" width="30%">
 </a>
 
 
@@ -1223,14 +1223,14 @@ Batch entries for performance:
 
 ### 10.9 Laravel Pulse
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-handwritten.svg" alt="Handwritten: 10.9 Laravel Pulse" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-handwritten.svg" alt="Handwritten: 10.9 Laravel Pulse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-diagram.svg" alt="Diagram: 10.9 Laravel Pulse" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-diagram.svg" alt="Diagram: 10.9 Laravel Pulse" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-sticky.svg" alt="Sticky Note: 10.9 Laravel Pulse" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-9-laravel-pulse-sticky.svg" alt="Sticky Note: 10.9 Laravel Pulse" width="30%">
 </a>
 
 
@@ -1306,14 +1306,14 @@ Pulse::record('user_signups', $count)
 
 ### 10.10 Debugging Tools
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-handwritten.svg" alt="Handwritten: 10.10 Debugging Tools" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-handwritten.svg" alt="Handwritten: 10.10 Debugging Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-diagram.svg" alt="Diagram: 10.10 Debugging Tools" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-diagram.svg" alt="Diagram: 10.10 Debugging Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-sticky.svg" alt="Sticky Note: 10.10 Debugging Tools" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-10-debugging-tools-sticky.svg" alt="Sticky Note: 10.10 Debugging Tools" width="30%">
 </a>
 
 
@@ -1379,14 +1379,14 @@ Laravel's default error page with:
 
 ### 10.11 Complete Example: API Test Suite
 
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-handwritten.svg" alt="Handwritten: 10.11 Complete Example: API Test Suite" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-handwritten.svg" alt="Handwritten: 10.11 Complete Example: API Test Suite" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-diagram.svg" alt="Diagram: 10.11 Complete Example: API Test Suite" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-diagram.svg" alt="Diagram: 10.11 Complete Example: API Test Suite" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-sticky.svg" alt="Sticky Note: 10.11 Complete Example: API Test Suite" width="30%">
+<a href="../../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/10-testing-observability/10-11-complete-example-api-test-suite-sticky.svg" alt="Sticky Note: 10.11 Complete Example: API Test Suite" width="30%">
 </a>
 
 

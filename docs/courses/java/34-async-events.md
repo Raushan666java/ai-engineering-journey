@@ -81,14 +81,14 @@ flowchart TD
 
 ### 1. The Synchronous Problem
 
-<a href="../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-handwritten.svg" alt="Handwritten: 1. The Synchronous Problem" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-handwritten.svg" alt="Handwritten: 1. The Synchronous Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-diagram.svg" alt="Diagram: 1. The Synchronous Problem" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-diagram.svg" alt="Diagram: 1. The Synchronous Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-sticky.svg" alt="Sticky Note: 1. The Synchronous Problem" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-sticky.svg" alt="Sticky Note: 1. The Synchronous Problem" width="30%">
 </a>
 
 
@@ -98,14 +98,14 @@ Asynchronous processing decouples the caller from the callee's execution. The ca
 
 ### 2. Enabling Async Support
 
-<a href="../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-handwritten.svg" alt="Handwritten: 2. Enabling Async Support" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-handwritten.svg" alt="Handwritten: 2. Enabling Async Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-diagram.svg" alt="Diagram: 2. Enabling Async Support" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-diagram.svg" alt="Diagram: 2. Enabling Async Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-sticky.svg" alt="Sticky Note: 2. Enabling Async Support" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-sticky.svg" alt="Sticky Note: 2. Enabling Async Support" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ By default, Spring uses a `SimpleAsyncTaskExecutor` which creates a new thread p
 
 ### 3. Thread Pool Configuration with ThreadPoolTaskExecutor
 
-<a href="../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-handwritten.svg" alt="Handwritten: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-handwritten.svg" alt="Handwritten: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-diagram.svg" alt="Diagram: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-diagram.svg" alt="Diagram: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-sticky.svg" alt="Sticky Note: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-sticky.svg" alt="Sticky Note: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
 </a>
 
 
@@ -185,14 +185,14 @@ Key properties explained:
 
 ### 4. @Async with void Methods
 
-<a href="../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-handwritten.svg" alt="Handwritten: 4. @Async with void Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-handwritten.svg" alt="Handwritten: 4. @Async with void Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-diagram.svg" alt="Diagram: 4. @Async with void Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-diagram.svg" alt="Diagram: 4. @Async with void Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-sticky.svg" alt="Sticky Note: 4. @Async with void Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-sticky.svg" alt="Sticky Note: 4. @Async with void Methods" width="30%">
 </a>
 
 
@@ -227,14 +227,14 @@ Important caveats:
 
 ### 5. @Async with CompletableFuture
 
-<a href="../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-handwritten.svg" alt="Handwritten: 5. @Async with CompletableFuture" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-handwritten.svg" alt="Handwritten: 5. @Async with CompletableFuture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-diagram.svg" alt="Diagram: 5. @Async with CompletableFuture" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-diagram.svg" alt="Diagram: 5. @Async with CompletableFuture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-sticky.svg" alt="Sticky Note: 5. @Async with CompletableFuture" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-sticky.svg" alt="Sticky Note: 5. @Async with CompletableFuture" width="30%">
 </a>
 
 
@@ -347,14 +347,14 @@ reportService.generateReport("R-003")
 
 ### 6. @Async with ListenableFuture (Legacy)
 
-<a href="../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-handwritten.svg" alt="Handwritten: 6. @Async with ListenableFuture (Legacy)" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-handwritten.svg" alt="Handwritten: 6. @Async with ListenableFuture (Legacy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-diagram.svg" alt="Diagram: 6. @Async with ListenableFuture (Legacy)" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-diagram.svg" alt="Diagram: 6. @Async with ListenableFuture (Legacy)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-sticky.svg" alt="Sticky Note: 6. @Async with ListenableFuture (Legacy)" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-sticky.svg" alt="Sticky Note: 6. @Async with ListenableFuture (Legacy)" width="30%">
 </a>
 
 
@@ -379,14 +379,14 @@ public ListenableFuture<String> processOrderWithCallback(Long orderId) {
 
 ### 7. Async Exception Handling
 
-<a href="../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-handwritten.svg" alt="Handwritten: 7. Async Exception Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-handwritten.svg" alt="Handwritten: 7. Async Exception Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-diagram.svg" alt="Diagram: 7. Async Exception Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-diagram.svg" alt="Diagram: 7. Async Exception Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-sticky.svg" alt="Sticky Note: 7. Async Exception Handling" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-sticky.svg" alt="Sticky Note: 7. Async Exception Handling" width="30%">
 </a>
 
 
@@ -490,14 +490,14 @@ public class AsyncLoggingAspect {
 
 ### 8. Custom Thread Pool with Named Qualifier
 
-<a href="../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-handwritten.svg" alt="Handwritten: 8. Custom Thread Pool with Named Qualifier" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-handwritten.svg" alt="Handwritten: 8. Custom Thread Pool with Named Qualifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-diagram.svg" alt="Diagram: 8. Custom Thread Pool with Named Qualifier" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-diagram.svg" alt="Diagram: 8. Custom Thread Pool with Named Qualifier" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-sticky.svg" alt="Sticky Note: 8. Custom Thread Pool with Named Qualifier" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-sticky.svg" alt="Sticky Note: 8. Custom Thread Pool with Named Qualifier" width="30%">
 </a>
 
 
@@ -571,14 +571,14 @@ public class HybridService {
 
 ### 9. Application Events Ã¢â‚¬â€ The Traditional Way
 
-<a href="../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-handwritten.svg" alt="Handwritten: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-handwritten.svg" alt="Handwritten: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-diagram.svg" alt="Diagram: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-diagram.svg" alt="Diagram: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-sticky.svg" alt="Sticky Note: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-sticky.svg" alt="Sticky Note: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
 </a>
 
 
@@ -662,14 +662,14 @@ public class InventoryUpdateListener implements ApplicationListener<OrderCreated
 
 ### 10. Annotation-Based @EventListener
 
-<a href="../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-handwritten.svg" alt="Handwritten: 10. Annotation-Based @EventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-handwritten.svg" alt="Handwritten: 10. Annotation-Based @EventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-diagram.svg" alt="Diagram: 10. Annotation-Based @EventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-diagram.svg" alt="Diagram: 10. Annotation-Based @EventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-sticky.svg" alt="Sticky Note: 10. Annotation-Based @EventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-sticky.svg" alt="Sticky Note: 10. Annotation-Based @EventListener" width="30%">
 </a>
 
 
@@ -779,14 +779,14 @@ public class ConditionalEventListener {
 
 ### 11. @TransactionalEventListener
 
-<a href="../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-handwritten.svg" alt="Handwritten: 11. @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-handwritten.svg" alt="Handwritten: 11. @TransactionalEventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-diagram.svg" alt="Diagram: 11. @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-diagram.svg" alt="Diagram: 11. @TransactionalEventListener" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-sticky.svg" alt="Sticky Note: 11. @TransactionalEventListener" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-sticky.svg" alt="Sticky Note: 11. @TransactionalEventListener" width="30%">
 </a>
 
 
@@ -839,14 +839,14 @@ The `fallbackExecution` parameter (default false) controls whether the listener 
 
 ### 12. Making Event Listeners Async
 
-<a href="../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-handwritten.svg" alt="Handwritten: 12. Making Event Listeners Async" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-handwritten.svg" alt="Handwritten: 12. Making Event Listeners Async" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-diagram.svg" alt="Diagram: 12. Making Event Listeners Async" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-diagram.svg" alt="Diagram: 12. Making Event Listeners Async" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-sticky.svg" alt="Sticky Note: 12. Making Event Listeners Async" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-sticky.svg" alt="Sticky Note: 12. Making Event Listeners Async" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ public class AsyncEventListenerChain {
 
 ### 13. Generic Events
 
-<a href="../../assets/images/diagrams/java/34-async-events/13-generic-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/13-generic-events-handwritten.svg" alt="Handwritten: 13. Generic Events" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/13-generic-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/13-generic-events-handwritten.svg" alt="Handwritten: 13. Generic Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/13-generic-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/13-generic-events-diagram.svg" alt="Diagram: 13. Generic Events" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/13-generic-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/13-generic-events-diagram.svg" alt="Diagram: 13. Generic Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/13-generic-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/13-generic-events-sticky.svg" alt="Sticky Note: 13. Generic Events" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/13-generic-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/13-generic-events-sticky.svg" alt="Sticky Note: 13. Generic Events" width="30%">
 </a>
 
 
@@ -981,14 +981,14 @@ public class GenericEventHandler {
 
 ### 14. Event Payload Design
 
-<a href="../../assets/images/diagrams/java/34-async-events/14-event-payload-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/14-event-payload-design-handwritten.svg" alt="Handwritten: 14. Event Payload Design" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-handwritten.svg" alt="Handwritten: 14. Event Payload Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/14-event-payload-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/14-event-payload-design-diagram.svg" alt="Diagram: 14. Event Payload Design" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-diagram.svg" alt="Diagram: 14. Event Payload Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/14-event-payload-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/14-event-payload-design-sticky.svg" alt="Sticky Note: 14. Event Payload Design" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-sticky.svg" alt="Sticky Note: 14. Event Payload Design" width="30%">
 </a>
 
 
@@ -1038,14 +1038,14 @@ public class UserRegisteredEvent {
 
 ### 15. Event Batching
 
-<a href="../../assets/images/diagrams/java/34-async-events/15-event-batching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/15-event-batching-handwritten.svg" alt="Handwritten: 15. Event Batching" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/15-event-batching-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/15-event-batching-handwritten.svg" alt="Handwritten: 15. Event Batching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/15-event-batching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/15-event-batching-diagram.svg" alt="Diagram: 15. Event Batching" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/15-event-batching-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/15-event-batching-diagram.svg" alt="Diagram: 15. Event Batching" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/15-event-batching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/15-event-batching-sticky.svg" alt="Sticky Note: 15. Event Batching" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/15-event-batching-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/15-event-batching-sticky.svg" alt="Sticky Note: 15. Event Batching" width="30%">
 </a>
 
 
@@ -1097,14 +1097,14 @@ public class EventBatcher {
 
 ### 16. Event Priority
 
-<a href="../../assets/images/diagrams/java/34-async-events/16-event-priority-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/16-event-priority-handwritten.svg" alt="Handwritten: 16. Event Priority" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/16-event-priority-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/16-event-priority-handwritten.svg" alt="Handwritten: 16. Event Priority" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/16-event-priority-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/16-event-priority-diagram.svg" alt="Diagram: 16. Event Priority" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/16-event-priority-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/16-event-priority-diagram.svg" alt="Diagram: 16. Event Priority" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/16-event-priority-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/16-event-priority-sticky.svg" alt="Sticky Note: 16. Event Priority" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/16-event-priority-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/16-event-priority-sticky.svg" alt="Sticky Note: 16. Event Priority" width="30%">
 </a>
 
 
@@ -1167,14 +1167,14 @@ public class PriorityEventProcessor {
 
 ### 17. Event Sourcing Basics
 
-<a href="../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-handwritten.svg" alt="Handwritten: 17. Event Sourcing Basics" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-handwritten.svg" alt="Handwritten: 17. Event Sourcing Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-diagram.svg" alt="Diagram: 17. Event Sourcing Basics" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-diagram.svg" alt="Diagram: 17. Event Sourcing Basics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-sticky.svg" alt="Sticky Note: 17. Event Sourcing Basics" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-sticky.svg" alt="Sticky Note: 17. Event Sourcing Basics" width="30%">
 </a>
 
 
@@ -1338,14 +1338,14 @@ public class BankAccount {
 
 ### 18. Full Asynchronous Event Pipeline
 
-<a href="../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-handwritten.svg" alt="Handwritten: 18. Full Asynchronous Event Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-handwritten.svg" alt="Handwritten: 18. Full Asynchronous Event Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-diagram.svg" alt="Diagram: 18. Full Asynchronous Event Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-diagram.svg" alt="Diagram: 18. Full Asynchronous Event Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-sticky.svg" alt="Sticky Note: 18. Full Asynchronous Event Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-sticky.svg" alt="Sticky Note: 18. Full Asynchronous Event Pipeline" width="30%">
 </a>
 
 
@@ -1463,14 +1463,14 @@ public class TransactionAwareEventPublisher {
 
 ### 19. Unit Testing Async Methods
 
-<a href="../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-handwritten.svg" alt="Handwritten: 19. Unit Testing Async Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-handwritten.svg" alt="Handwritten: 19. Unit Testing Async Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-diagram.svg" alt="Diagram: 19. Unit Testing Async Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-diagram.svg" alt="Diagram: 19. Unit Testing Async Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-sticky.svg" alt="Sticky Note: 19. Unit Testing Async Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-sticky.svg" alt="Sticky Note: 19. Unit Testing Async Methods" width="30%">
 </a>
 
 
@@ -1518,14 +1518,14 @@ class AsyncEventHandlerTest {
 
 ### 20. Monitoring Async Execution
 
-<a href="../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-handwritten.svg" alt="Handwritten: 20. Monitoring Async Execution" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-handwritten.svg" alt="Handwritten: 20. Monitoring Async Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-diagram.svg" alt="Diagram: 20. Monitoring Async Execution" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-diagram.svg" alt="Diagram: 20. Monitoring Async Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-sticky.svg" alt="Sticky Note: 20. Monitoring Async Execution" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-sticky.svg" alt="Sticky Note: 20. Monitoring Async Execution" width="30%">
 </a>
 
 
@@ -1559,14 +1559,14 @@ public class AsyncMetricsPublisher {
 
 ### 21. Advanced ThreadPoolTaskExecutor Configuration
 
-<a href="../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-handwritten.svg" alt="Handwritten: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-handwritten.svg" alt="Handwritten: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-diagram.svg" alt="Diagram: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-diagram.svg" alt="Diagram: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-sticky.svg" alt="Sticky Note: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-sticky.svg" alt="Sticky Note: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
 </a>
 
 

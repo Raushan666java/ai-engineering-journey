@@ -33,14 +33,14 @@
 
 ### १. शरीर = मंदिर, जेल नहीं
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: १. शरीर = मंदिर, जेल नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: १. शरीर = मंदिर, जेल नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: १. शरीर = मंदिर, जेल नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: १. शरीर = मंदिर, जेल नहीं" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: १. शरीर = मंदिर, जेल नहीं" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: १. शरीर = मंदिर, जेल नहीं" width="30%">
 </a>
 
 
@@ -50,14 +50,14 @@
 
 ### २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: २. बॉडी-माइंड ब्रिज — ओशो की मौलिक अवधारणा" width="30%">
 </a>
 
 
@@ -67,14 +67,14 @@
 
 ### ३. संवेदना बनाम विचार — ओशो का जोर
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: ३. संवेदना बनाम विचार — ओशो का जोर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: ३. संवेदना बनाम विचार — ओशो का जोर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: ३. संवेदना बनाम विचार — ओशो का जोर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: ३. संवेदना बनाम विचार — ओशो का जोर" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: ३. संवेदना बनाम विचार — ओशो का जोर" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: ३. संवेदना बनाम विचार — ओशो का जोर" width="30%">
 </a>
 
 
@@ -86,14 +86,14 @@
 
 ### तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-handwritten.svg" alt="Handwritten: तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-handwritten.svg" alt="Handwritten: तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-diagram.svg" alt="Diagram: तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-diagram.svg" alt="Diagram: तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-sticky.svg" alt="Sticky Note: तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/sequential-body-awareness-sticky.svg" alt="Sticky Note: तकनीक १: अंग-अंग में चेतना (Sequential Body Awareness)" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@
 
 ### तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-handwritten.svg" alt="Handwritten: तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-handwritten.svg" alt="Handwritten: तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-diagram.svg" alt="Diagram: तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-diagram.svg" alt="Diagram: तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-sticky.svg" alt="Sticky Note: तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/skin-sensation-awareness-sticky.svg" alt="Sticky Note: तकनीक २: त्वचा संवेदना ध्यान (Skin Sensation Awareness)" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@
 
 ### तकनीक ३: तालु ध्यान (Palate Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-handwritten.svg" alt="Handwritten: तकनीक ३: तालु ध्यान (Palate Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-handwritten.svg" alt="Handwritten: तकनीक ३: तालु ध्यान (Palate Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-diagram.svg" alt="Diagram: तकनीक ३: तालु ध्यान (Palate Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-diagram.svg" alt="Diagram: तकनीक ३: तालु ध्यान (Palate Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-sticky.svg" alt="Sticky Note: तकनीक ३: तालु ध्यान (Palate Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/palate-awareness-sticky.svg" alt="Sticky Note: तकनीक ३: तालु ध्यान (Palate Awareness)" width="30%">
 </a>
 
 
@@ -200,14 +200,14 @@
 
 ### तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-handwritten.svg" alt="Handwritten: तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-handwritten.svg" alt="Handwritten: तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-diagram.svg" alt="Diagram: तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-diagram.svg" alt="Diagram: तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-sticky.svg" alt="Sticky Note: तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/goosebumps-awareness-sticky.svg" alt="Sticky Note: तकनीक ४: रोमांच अनुभव ध्यान (Goosebumps Awareness)" width="30%">
 </a>
 
 
@@ -229,14 +229,14 @@
 
 ### तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-handwritten.svg" alt="Handwritten: तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-handwritten.svg" alt="Handwritten: तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-diagram.svg" alt="Diagram: तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-diagram.svg" alt="Diagram: तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-sticky.svg" alt="Sticky Note: तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/heartbeat-awareness-sticky.svg" alt="Sticky Note: तकनीक ५: हृदय स्पन्दन ध्यान (Heartbeat Awareness)" width="30%">
 </a>
 
 
@@ -260,14 +260,14 @@
 
 ### तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-handwritten.svg" alt="Handwritten: तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-handwritten.svg" alt="Handwritten: तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-diagram.svg" alt="Diagram: तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-diagram.svg" alt="Diagram: तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-sticky.svg" alt="Sticky Note: तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/navel-center-awareness-sticky.svg" alt="Sticky Note: तकनीक ६: नाभि चक्र ध्यान (Navel Center Awareness)" width="30%">
 </a>
 
 
@@ -291,14 +291,14 @@
 
 ### तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-handwritten.svg" alt="Handwritten: तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-handwritten.svg" alt="Handwritten: तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-diagram.svg" alt="Diagram: तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-diagram.svg" alt="Diagram: तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-sticky.svg" alt="Sticky Note: तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/total-body-awareness-sticky.svg" alt="Sticky Note: तकनीक ७: सम्पूर्ण देह चेतना (Total Body Awareness)" width="30%">
 </a>
 
 
@@ -314,14 +314,14 @@
 
 ### तकनीक ८: चलने में ध्यान (Walking Meditation)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-handwritten.svg" alt="Handwritten: तकनीक ८: चलने में ध्यान (Walking Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-handwritten.svg" alt="Handwritten: तकनीक ८: चलने में ध्यान (Walking Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-diagram.svg" alt="Diagram: तकनीक ८: चलने में ध्यान (Walking Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-diagram.svg" alt="Diagram: तकनीक ८: चलने में ध्यान (Walking Meditation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-sticky.svg" alt="Sticky Note: तकनीक ८: चलने में ध्यान (Walking Meditation)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/walking-meditation-sticky.svg" alt="Sticky Note: तकनीक ८: चलने में ध्यान (Walking Meditation)" width="30%">
 </a>
 
 
@@ -337,14 +337,14 @@
 
 ### तकनीक ९: खाने में ध्यान (Eating Awareness)
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-handwritten.svg" alt="Handwritten: तकनीक ९: खाने में ध्यान (Eating Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-handwritten.svg" alt="Handwritten: तकनीक ९: खाने में ध्यान (Eating Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-diagram.svg" alt="Diagram: तकनीक ९: खाने में ध्यान (Eating Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-diagram.svg" alt="Diagram: तकनीक ९: खाने में ध्यान (Eating Awareness)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-sticky.svg" alt="Sticky Note: तकनीक ९: खाने में ध्यान (Eating Awareness)" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/eating-awareness-sticky.svg" alt="Sticky Note: तकनीक ९: खाने में ध्यान (Eating Awareness)" width="30%">
 </a>
 
 
@@ -650,14 +650,14 @@ meditation.start();
 
 ### प्रश्न १
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
 </a>
 
 **ओशो के अनुसार शरीर क्या है?**
@@ -669,14 +669,14 @@ meditation.start();
 
 ### प्रश्न २
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
 </a>
 
 **बॉडी-माइंड ब्रिज के अनुसार शरीर और मन का क्या संबंध है?**
@@ -688,14 +688,14 @@ meditation.start();
 
 ### प्रश्न ३
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
 </a>
 
 **अंग-अंग चेतना तकनीक में ध्यान कहाँ से शुरू करना चाहिए?**
@@ -707,14 +707,14 @@ meditation.start();
 
 ### प्रश्न ४
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
 </a>
 
 **तालु ध्यान में जीभ को कहाँ लगाना चाहिए?**
@@ -726,14 +726,14 @@ meditation.start();
 
 ### प्रश्न ५
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
 </a>
 
 **तालु ध्यान का मस्तिष्क पर क्या प्रभाव होता है — ओशो के अनुसार?**
@@ -745,14 +745,14 @@ meditation.start();
 
 ### प्रश्न ६
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
 </a>
 
 **त्वचा संवेदना ध्यान में त्वचा को किस रूप में देखा जाता है?**
@@ -764,14 +764,14 @@ meditation.start();
 
 ### प्रश्न ७
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
 </a>
 
 **रोमांच अनुभव ध्यान में रोमांच को किस रूप में देखा जाता है?**
@@ -783,14 +783,14 @@ meditation.start();
 
 ### प्रश्न ८
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
 </a>
 
 **सम्पूर्ण देह चेतना तकनीक में क्या करना है?**
@@ -802,14 +802,14 @@ meditation.start();
 
 ### प्रश्न ९
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
 </a>
 
 **ओशो का डायनामिक मेडिटेशन पारंपरिक VBT शारीरिक विधियों से कैसे अलग है?**
@@ -821,14 +821,14 @@ meditation.start();
 
 ### प्रश्न १०
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
 </a>
 
 **हृदय स्पन्दन ध्यान में ध्यान किस पर देना है?**
@@ -842,14 +842,14 @@ meditation.start();
 
 ### उत्तर कुंजी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
 </a>
 
 
@@ -872,14 +872,14 @@ meditation.start();
 
 ### अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास १: ११-बिन्दु शरीर स्कैन — ओशो शैली" width="30%">
 </a>
 
 
@@ -887,14 +887,14 @@ meditation.start();
 
 ### अभ्यास २: तालु ध्यान — दिन में ७ बार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास २: तालु ध्यान — दिन में ७ बार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास २: तालु ध्यान — दिन में ७ बार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास २: तालु ध्यान — दिन में ७ बार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास २: तालु ध्यान — दिन में ७ बार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास २: तालु ध्यान — दिन में ७ बार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास २: तालु ध्यान — दिन में ७ बार" width="30%">
 </a>
 
 
@@ -902,14 +902,14 @@ meditation.start();
 
 ### अभ्यास ३: त्वचा संवेदना — २१ मिनट
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ३: त्वचा संवेदना — २१ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ३: त्वचा संवेदना — २१ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ३: त्वचा संवेदना — २१ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ३: त्वचा संवेदना — २१ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ३: त्वचा संवेदना — २१ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ३: त्वचा संवेदना — २१ मिनट" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@ meditation.start();
 
 ### अभ्यास ४: हृदय स्पन्दन — १५ मिनट
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ४: हृदय स्पन्दन — १५ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ४: हृदय स्पन्दन — १५ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ४: हृदय स्पन्दन — १५ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ४: हृदय स्पन्दन — १५ मिनट" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ४: हृदय स्पन्दन — १५ मिनट" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ४: हृदय स्पन्दन — १५ मिनट" width="30%">
 </a>
 
 
@@ -932,14 +932,14 @@ meditation.start();
 
 ### अभ्यास ५: TypeScript कोड विस्तार
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
 </a>
 
 
@@ -947,14 +947,14 @@ meditation.start();
 
 ### अभ्यास ६: ओशो की शारीरिक ध्यान डायरी
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ६: ओशो की शारीरिक ध्यान डायरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ६: ओशो की शारीरिक ध्यान डायरी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ६: ओशो की शारीरिक ध्यान डायरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ६: ओशो की शारीरिक ध्यान डायरी" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ६: ओशो की शारीरिक ध्यान डायरी" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ६: ओशो की शारीरिक ध्यान डायरी" width="30%">
 </a>
 
 
@@ -968,14 +968,14 @@ meditation.start();
 
 ### अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती
 
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती" width="30%">
 </a>
-<a href="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती" width="30%">
+<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/05-sharir-chetn/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): २१-दिन शरीर चेतना चुनौती" width="30%">
 </a>
 
 

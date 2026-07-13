@@ -45,36 +45,36 @@ flowchart LR
 
 ### Cryptographic Hash Functions
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" alt="Handwritten: Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" alt="Handwritten: Cryptographic Hash Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" alt="Diagram: Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" alt="Diagram: Cryptographic Hash Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" alt="Sticky Note: Cryptographic Hash Functions" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" alt="Handwritten: Cryptographic Hash Functions" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" alt="Diagram: Cryptographic Hash Functions" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" alt="Sticky Note: Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" alt="Sticky Note: Cryptographic Hash Functions" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" alt="Handwritten: Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" alt="Handwritten: Cryptographic Hash Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" alt="Diagram: Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" alt="Diagram: Cryptographic Hash Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" alt="Sticky Note: Cryptographic Hash Functions" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" alt="Sticky Note: Cryptographic Hash Functions" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-handwritten.svg" alt="Handwritten: Cryptographic Hash Functions" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-diagram.svg" alt="Diagram: Cryptographic Hash Functions" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/cryptographic-hash-functions-sticky.svg" alt="Sticky Note: Cryptographic Hash Functions" width="30%">
 </a>
 
 
@@ -109,36 +109,36 @@ flowchart LR
 
 ### SHA-256 and the Merkle-Damgård Construction
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" alt="Handwritten: SHA-256 and the Merkle-Damgård Construction" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" alt="Handwritten: SHA-256 and the Merkle-Damgård Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" alt="Diagram: SHA-256 and the Merkle-Damgård Construction" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" alt="Diagram: SHA-256 and the Merkle-Damgård Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" alt="Sticky Note: SHA-256 and the Merkle-Damgård Construction" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" alt="Handwritten: SHA-256 and the Merkle-Damgård Construction" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" alt="Diagram: SHA-256 and the Merkle-Damgård Construction" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" alt="Sticky Note: SHA-256 and the Merkle-Damgård Construction" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" alt="Sticky Note: SHA-256 and the Merkle-Damgård Construction" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" alt="Handwritten: SHA-256 and the Merkle-Damgård Construction" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" alt="Handwritten: SHA-256 and the Merkle-Damgård Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" alt="Diagram: SHA-256 and the Merkle-Damgård Construction" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" alt="Diagram: SHA-256 and the Merkle-Damgård Construction" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" alt="Sticky Note: SHA-256 and the Merkle-Damgård Construction" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" alt="Sticky Note: SHA-256 and the Merkle-Damgård Construction" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-handwritten.svg" alt="Handwritten: SHA-256 and the Merkle-Damgård Construction" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-diagram.svg" alt="Diagram: SHA-256 and the Merkle-Damgård Construction" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/sha-256-and-the-merkle-damg-rd-construction-sticky.svg" alt="Sticky Note: SHA-256 and the Merkle-Damgård Construction" width="30%">
 </a>
 
 
@@ -178,36 +178,36 @@ This construction is important because it allows hashing of arbitrary-length inp
 
 ### Hash Chains
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" alt="Handwritten: Hash Chains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" alt="Handwritten: Hash Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" alt="Diagram: Hash Chains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" alt="Diagram: Hash Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" alt="Sticky Note: Hash Chains" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" alt="Handwritten: Hash Chains" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" alt="Diagram: Hash Chains" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" alt="Sticky Note: Hash Chains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" alt="Sticky Note: Hash Chains" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" alt="Handwritten: Hash Chains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" alt="Handwritten: Hash Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" alt="Diagram: Hash Chains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" alt="Diagram: Hash Chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" alt="Sticky Note: Hash Chains" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" alt="Sticky Note: Hash Chains" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-handwritten.svg" alt="Handwritten: Hash Chains" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-diagram.svg" alt="Diagram: Hash Chains" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/hash-chains-sticky.svg" alt="Sticky Note: Hash Chains" width="30%">
 </a>
 
 
@@ -237,36 +237,36 @@ function hashChain(seed: string, length: number): string[] {
 
 ### Public Key Cryptography (Asymmetric)
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" alt="Handwritten: Public Key Cryptography (Asymmetric)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" alt="Handwritten: Public Key Cryptography (Asymmetric)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" alt="Diagram: Public Key Cryptography (Asymmetric)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" alt="Diagram: Public Key Cryptography (Asymmetric)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" alt="Sticky Note: Public Key Cryptography (Asymmetric)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" alt="Handwritten: Public Key Cryptography (Asymmetric)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" alt="Diagram: Public Key Cryptography (Asymmetric)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" alt="Sticky Note: Public Key Cryptography (Asymmetric)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" alt="Sticky Note: Public Key Cryptography (Asymmetric)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" alt="Handwritten: Public Key Cryptography (Asymmetric)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" alt="Handwritten: Public Key Cryptography (Asymmetric)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" alt="Diagram: Public Key Cryptography (Asymmetric)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" alt="Diagram: Public Key Cryptography (Asymmetric)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" alt="Sticky Note: Public Key Cryptography (Asymmetric)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" alt="Sticky Note: Public Key Cryptography (Asymmetric)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-handwritten.svg" alt="Handwritten: Public Key Cryptography (Asymmetric)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-diagram.svg" alt="Diagram: Public Key Cryptography (Asymmetric)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/public-key-cryptography-asymmetric-sticky.svg" alt="Sticky Note: Public Key Cryptography (Asymmetric)" width="30%">
 </a>
 
 
@@ -293,36 +293,36 @@ flowchart LR
 
 ### Elliptic Curve Cryptography (ECC)
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: Elliptic Curve Cryptography (ECC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: Elliptic Curve Cryptography (ECC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: Elliptic Curve Cryptography (ECC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: Elliptic Curve Cryptography (ECC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: Elliptic Curve Cryptography (ECC)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: Elliptic Curve Cryptography (ECC)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: Elliptic Curve Cryptography (ECC)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: Elliptic Curve Cryptography (ECC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: Elliptic Curve Cryptography (ECC)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: Elliptic Curve Cryptography (ECC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: Elliptic Curve Cryptography (ECC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: Elliptic Curve Cryptography (ECC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: Elliptic Curve Cryptography (ECC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: Elliptic Curve Cryptography (ECC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: Elliptic Curve Cryptography (ECC)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-handwritten.svg" alt="Handwritten: Elliptic Curve Cryptography (ECC)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-diagram.svg" alt="Diagram: Elliptic Curve Cryptography (ECC)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/elliptic-curve-cryptography-ecc-sticky.svg" alt="Sticky Note: Elliptic Curve Cryptography (ECC)" width="30%">
 </a>
 
 
@@ -341,36 +341,36 @@ This smaller key size makes ECC ideal for blockchain, where storage and bandwidt
 
 ### Digital Signatures
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" alt="Handwritten: Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" alt="Handwritten: Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" alt="Diagram: Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" alt="Diagram: Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" alt="Sticky Note: Digital Signatures" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" alt="Handwritten: Digital Signatures" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" alt="Diagram: Digital Signatures" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" alt="Sticky Note: Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" alt="Sticky Note: Digital Signatures" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" alt="Handwritten: Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" alt="Handwritten: Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" alt="Diagram: Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" alt="Diagram: Digital Signatures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" alt="Sticky Note: Digital Signatures" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" alt="Sticky Note: Digital Signatures" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-handwritten.svg" alt="Handwritten: Digital Signatures" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-diagram.svg" alt="Diagram: Digital Signatures" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/digital-signatures-sticky.svg" alt="Sticky Note: Digital Signatures" width="30%">
 </a>
 
 
@@ -392,36 +392,36 @@ Verification uses the public key to confirm the signature was created by the cor
 
 ### Signature Scheme Comparison
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" alt="Handwritten: Signature Scheme Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" alt="Handwritten: Signature Scheme Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" alt="Diagram: Signature Scheme Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" alt="Diagram: Signature Scheme Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" alt="Sticky Note: Signature Scheme Comparison" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" alt="Handwritten: Signature Scheme Comparison" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" alt="Diagram: Signature Scheme Comparison" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" alt="Sticky Note: Signature Scheme Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" alt="Sticky Note: Signature Scheme Comparison" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" alt="Handwritten: Signature Scheme Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" alt="Handwritten: Signature Scheme Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" alt="Diagram: Signature Scheme Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" alt="Diagram: Signature Scheme Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" alt="Sticky Note: Signature Scheme Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" alt="Sticky Note: Signature Scheme Comparison" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-handwritten.svg" alt="Handwritten: Signature Scheme Comparison" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-diagram.svg" alt="Diagram: Signature Scheme Comparison" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/signature-scheme-comparison-sticky.svg" alt="Sticky Note: Signature Scheme Comparison" width="30%">
 </a>
 
 
@@ -438,36 +438,36 @@ Verification uses the public key to confirm the signature was created by the cor
 
 ### Merkle Trees
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" alt="Handwritten: Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" alt="Handwritten: Merkle Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" alt="Diagram: Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" alt="Diagram: Merkle Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" alt="Sticky Note: Merkle Trees" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" alt="Handwritten: Merkle Trees" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" alt="Diagram: Merkle Trees" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" alt="Sticky Note: Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" alt="Sticky Note: Merkle Trees" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" alt="Handwritten: Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" alt="Handwritten: Merkle Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" alt="Diagram: Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" alt="Diagram: Merkle Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" alt="Sticky Note: Merkle Trees" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" alt="Sticky Note: Merkle Trees" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-handwritten.svg" alt="Handwritten: Merkle Trees" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-diagram.svg" alt="Diagram: Merkle Trees" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-trees-sticky.svg" alt="Sticky Note: Merkle Trees" width="30%">
 </a>
 
 
@@ -509,36 +509,36 @@ sequenceDiagram
 
 ### Merkle Proof Verification
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" alt="Handwritten: Merkle Proof Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" alt="Handwritten: Merkle Proof Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" alt="Diagram: Merkle Proof Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" alt="Diagram: Merkle Proof Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" alt="Sticky Note: Merkle Proof Verification" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" alt="Handwritten: Merkle Proof Verification" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" alt="Diagram: Merkle Proof Verification" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" alt="Sticky Note: Merkle Proof Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" alt="Sticky Note: Merkle Proof Verification" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" alt="Handwritten: Merkle Proof Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" alt="Handwritten: Merkle Proof Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" alt="Diagram: Merkle Proof Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" alt="Diagram: Merkle Proof Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" alt="Sticky Note: Merkle Proof Verification" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" alt="Sticky Note: Merkle Proof Verification" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-handwritten.svg" alt="Handwritten: Merkle Proof Verification" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-diagram.svg" alt="Diagram: Merkle Proof Verification" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/02-cryptography/merkle-proof-verification-sticky.svg" alt="Sticky Note: Merkle Proof Verification" width="30%">
 </a>
 
 

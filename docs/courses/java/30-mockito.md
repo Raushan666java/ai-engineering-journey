@@ -125,14 +125,14 @@ flowchart TD
 
 ### 1.1 Static mock() Method
 
-<a href="../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-handwritten.svg" alt="Handwritten: 1.1 Static mock() Method" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-handwritten.svg" alt="Handwritten: 1.1 Static mock() Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-diagram.svg" alt="Diagram: 1.1 Static mock() Method" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-diagram.svg" alt="Diagram: 1.1 Static mock() Method" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-sticky.svg" alt="Sticky Note: 1.1 Static mock() Method" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-1-static-mock-method-sticky.svg" alt="Sticky Note: 1.1 Static mock() Method" width="30%">
 </a>
 
 
@@ -189,14 +189,14 @@ class MockCreationTest {
 
 ### 1.2 @Mock Annotation with MockitoExtension
 
-<a href="../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-handwritten.svg" alt="Handwritten: 1.2 @Mock Annotation with MockitoExtension" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-handwritten.svg" alt="Handwritten: 1.2 @Mock Annotation with MockitoExtension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-diagram.svg" alt="Diagram: 1.2 @Mock Annotation with MockitoExtension" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-diagram.svg" alt="Diagram: 1.2 @Mock Annotation with MockitoExtension" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-sticky.svg" alt="Sticky Note: 1.2 @Mock Annotation with MockitoExtension" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-2-mock-annotation-with-mockitoextension-sticky.svg" alt="Sticky Note: 1.2 @Mock Annotation with MockitoExtension" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ interface Config {
 
 ### 1.3 Manual Initialisation with MockitoAnnotations.openMocks
 
-<a href="../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-handwritten.svg" alt="Handwritten: 1.3 Manual Initialisation with MockitoAnnotations.openMocks" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-handwritten.svg" alt="Handwritten: 1.3 Manual Initialisation with MockitoAnnotations.openMocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-diagram.svg" alt="Diagram: 1.3 Manual Initialisation with MockitoAnnotations.openMocks" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-diagram.svg" alt="Diagram: 1.3 Manual Initialisation with MockitoAnnotations.openMocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-sticky.svg" alt="Sticky Note: 1.3 Manual Initialisation with MockitoAnnotations.openMocks" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/1-3-manual-initialisation-with-mockitoannotations-openmocks-sticky.svg" alt="Sticky Note: 1.3 Manual Initialisation with MockitoAnnotations.openMocks" width="30%">
 </a>
 
 
@@ -438,14 +438,14 @@ class DuplicateUserException extends RuntimeException {
 
 ### 2.1 Injection Strategy Edge Cases
 
-<a href="../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-handwritten.svg" alt="Handwritten: 2.1 Injection Strategy Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-handwritten.svg" alt="Handwritten: 2.1 Injection Strategy Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-diagram.svg" alt="Diagram: 2.1 Injection Strategy Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-diagram.svg" alt="Diagram: 2.1 Injection Strategy Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-sticky.svg" alt="Sticky Note: 2.1 Injection Strategy Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/2-1-injection-strategy-edge-cases-sticky.svg" alt="Sticky Note: 2.1 Injection Strategy Edge Cases" width="30%">
 </a>
 
 
@@ -524,14 +524,14 @@ Stubbing defines what a mock returns (or does) when a specific method is called.
 
 ### 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod
 
-<a href="../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-handwritten.svg" alt="Handwritten: 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-handwritten.svg" alt="Handwritten: 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-diagram.svg" alt="Diagram: 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-diagram.svg" alt="Diagram: 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-sticky.svg" alt="Sticky Note: 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-1-when-thenreturn-thenthrow-thenanswer-thencallrealmethod-sticky.svg" alt="Sticky Note: 3.1 when().thenReturn / thenThrow / thenAnswer / thenCallRealMethod" width="30%">
 </a>
 
 
@@ -674,14 +674,14 @@ interface InventoryService {
 
 ### 3.2 doReturn/when, doThrow/when, doAnswer/when
 
-<a href="../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-handwritten.svg" alt="Handwritten: 3.2 doReturn/when, doThrow/when, doAnswer/when" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-handwritten.svg" alt="Handwritten: 3.2 doReturn/when, doThrow/when, doAnswer/when" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-diagram.svg" alt="Diagram: 3.2 doReturn/when, doThrow/when, doAnswer/when" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-diagram.svg" alt="Diagram: 3.2 doReturn/when, doThrow/when, doAnswer/when" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-sticky.svg" alt="Sticky Note: 3.2 doReturn/when, doThrow/when, doAnswer/when" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-2-doreturn-when-dothrow-when-doanswer-when-sticky.svg" alt="Sticky Note: 3.2 doReturn/when, doThrow/when, doAnswer/when" width="30%">
 </a>
 
 
@@ -781,14 +781,14 @@ interface EventBus {
 
 ### 3.3 Stubbing with Custom Answer
 
-<a href="../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-handwritten.svg" alt="Handwritten: 3.3 Stubbing with Custom Answer" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-handwritten.svg" alt="Handwritten: 3.3 Stubbing with Custom Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-diagram.svg" alt="Diagram: 3.3 Stubbing with Custom Answer" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-diagram.svg" alt="Diagram: 3.3 Stubbing with Custom Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-sticky.svg" alt="Sticky Note: 3.3 Stubbing with Custom Answer" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/3-3-stubbing-with-custom-answer-sticky.svg" alt="Sticky Note: 3.3 Stubbing with Custom Answer" width="30%">
 </a>
 
 
@@ -885,14 +885,14 @@ Verification checks that specific interactions happened on the mock.
 
 ### 4.1 verify with Times
 
-<a href="../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-handwritten.svg" alt="Handwritten: 4.1 verify with Times" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-handwritten.svg" alt="Handwritten: 4.1 verify with Times" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-diagram.svg" alt="Diagram: 4.1 verify with Times" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-diagram.svg" alt="Diagram: 4.1 verify with Times" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-sticky.svg" alt="Sticky Note: 4.1 verify with Times" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-1-verify-with-times-sticky.svg" alt="Sticky Note: 4.1 verify with Times" width="30%">
 </a>
 
 
@@ -977,14 +977,14 @@ interface EmailService {
 
 ### 4.2 InOrder Verification
 
-<a href="../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-handwritten.svg" alt="Handwritten: 4.2 InOrder Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-handwritten.svg" alt="Handwritten: 4.2 InOrder Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-diagram.svg" alt="Diagram: 4.2 InOrder Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-diagram.svg" alt="Diagram: 4.2 InOrder Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-sticky.svg" alt="Sticky Note: 4.2 InOrder Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-2-inorder-verification-sticky.svg" alt="Sticky Note: 4.2 InOrder Verification" width="30%">
 </a>
 
 
@@ -1081,14 +1081,14 @@ class InOrderTest {
 
 ### 4.3 Timeout Verification
 
-<a href="../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-handwritten.svg" alt="Handwritten: 4.3 Timeout Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-handwritten.svg" alt="Handwritten: 4.3 Timeout Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-diagram.svg" alt="Diagram: 4.3 Timeout Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-diagram.svg" alt="Diagram: 4.3 Timeout Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-sticky.svg" alt="Sticky Note: 4.3 Timeout Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/4-3-timeout-verification-sticky.svg" alt="Sticky Note: 4.3 Timeout Verification" width="30%">
 </a>
 
 
@@ -1181,14 +1181,14 @@ Matchers allow flexible stubbing and verification when you don't know the exact 
 
 ### 5.1 Built-in Matchers
 
-<a href="../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-handwritten.svg" alt="Handwritten: 5.1 Built-in Matchers" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-handwritten.svg" alt="Handwritten: 5.1 Built-in Matchers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-diagram.svg" alt="Diagram: 5.1 Built-in Matchers" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-diagram.svg" alt="Diagram: 5.1 Built-in Matchers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-sticky.svg" alt="Sticky Note: 5.1 Built-in Matchers" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/5-1-built-in-matchers-sticky.svg" alt="Sticky Note: 5.1 Built-in Matchers" width="30%">
 </a>
 
 
@@ -1282,14 +1282,14 @@ class BuiltInMatchersTest {
 
 ### 5.2 Custom ArgumentMatcher (argThat)
 
-<a href="../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-handwritten.svg" alt="Handwritten: 5.2 Custom ArgumentMatcher (argThat)" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-handwritten.svg" alt="Handwritten: 5.2 Custom ArgumentMatcher (argThat)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-diagram.svg" alt="Diagram: 5.2 Custom ArgumentMatcher (argThat)" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-diagram.svg" alt="Diagram: 5.2 Custom ArgumentMatcher (argThat)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-sticky.svg" alt="Sticky Note: 5.2 Custom ArgumentMatcher (argThat)" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/5-2-custom-argumentmatcher-argthat-sticky.svg" alt="Sticky Note: 5.2 Custom ArgumentMatcher (argThat)" width="30%">
 </a>
 
 
@@ -1390,14 +1390,14 @@ interface InventoryService {
 
 ### 6.1 Basic Captor
 
-<a href="../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-handwritten.svg" alt="Handwritten: 6.1 Basic Captor" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-handwritten.svg" alt="Handwritten: 6.1 Basic Captor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-diagram.svg" alt="Diagram: 6.1 Basic Captor" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-diagram.svg" alt="Diagram: 6.1 Basic Captor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-sticky.svg" alt="Sticky Note: 6.1 Basic Captor" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/6-1-basic-captor-sticky.svg" alt="Sticky Note: 6.1 Basic Captor" width="30%">
 </a>
 
 
@@ -1477,14 +1477,14 @@ interface EmailService {
 
 ### 6.2 Captor with Complex Verification
 
-<a href="../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-handwritten.svg" alt="Handwritten: 6.2 Captor with Complex Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-handwritten.svg" alt="Handwritten: 6.2 Captor with Complex Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-diagram.svg" alt="Diagram: 6.2 Captor with Complex Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-diagram.svg" alt="Diagram: 6.2 Captor with Complex Verification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-sticky.svg" alt="Sticky Note: 6.2 Captor with Complex Verification" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/6-2-captor-with-complex-verification-sticky.svg" alt="Sticky Note: 6.2 Captor with Complex Verification" width="30%">
 </a>
 
 
@@ -1761,14 +1761,14 @@ A spy is a **partial mock**: it wraps a real object and by default delegates to 
 
 ### 8.1 spy() and @Spy
 
-<a href="../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-handwritten.svg" alt="Handwritten: 8.1 spy() and @Spy" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-handwritten.svg" alt="Handwritten: 8.1 spy() and @Spy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-diagram.svg" alt="Diagram: 8.1 spy() and @Spy" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-diagram.svg" alt="Diagram: 8.1 spy() and @Spy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-sticky.svg" alt="Sticky Note: 8.1 spy() and @Spy" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-1-spy-and-spy-sticky.svg" alt="Sticky Note: 8.1 spy() and @Spy" width="30%">
 </a>
 
 
@@ -1853,14 +1853,14 @@ class SpyTest {
 
 ### 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What
 
-<a href="../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-handwritten.svg" alt="Handwritten: 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-handwritten.svg" alt="Handwritten: 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-diagram.svg" alt="Diagram: 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-diagram.svg" alt="Diagram: 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-sticky.svg" alt="Sticky Note: 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-2-spy-vs-mock-when-to-use-what-sticky.svg" alt="Sticky Note: 8.2 Spy vs Mock Ã¢â‚¬â€ When to Use What" width="30%">
 </a>
 
 
@@ -1945,14 +1945,14 @@ class SpyVsMockTest {
 
 ### 8.3 Partial Mocking with Answer
 
-<a href="../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-handwritten.svg" alt="Handwritten: 8.3 Partial Mocking with Answer" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-handwritten.svg" alt="Handwritten: 8.3 Partial Mocking with Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-diagram.svg" alt="Diagram: 8.3 Partial Mocking with Answer" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-diagram.svg" alt="Diagram: 8.3 Partial Mocking with Answer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-sticky.svg" alt="Sticky Note: 8.3 Partial Mocking with Answer" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/8-3-partial-mocking-with-answer-sticky.svg" alt="Sticky Note: 8.3 Partial Mocking with Answer" width="30%">
 </a>
 
 
@@ -2007,14 +2007,14 @@ class PartialMockTest {
 
 ### 9.1 Lenient Stubbing
 
-<a href="../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-handwritten.svg" alt="Handwritten: 9.1 Lenient Stubbing" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-handwritten.svg" alt="Handwritten: 9.1 Lenient Stubbing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-diagram.svg" alt="Diagram: 9.1 Lenient Stubbing" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-diagram.svg" alt="Diagram: 9.1 Lenient Stubbing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-sticky.svg" alt="Sticky Note: 9.1 Lenient Stubbing" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-1-lenient-stubbing-sticky.svg" alt="Sticky Note: 9.1 Lenient Stubbing" width="30%">
 </a>
 
 
@@ -2089,14 +2089,14 @@ class ClassLevelLenientTest {
 
 ### 9.2 MockSettings
 
-<a href="../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-handwritten.svg" alt="Handwritten: 9.2 MockSettings" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-handwritten.svg" alt="Handwritten: 9.2 MockSettings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-diagram.svg" alt="Diagram: 9.2 MockSettings" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-diagram.svg" alt="Diagram: 9.2 MockSettings" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-sticky.svg" alt="Sticky Note: 9.2 MockSettings" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-2-mocksettings-sticky.svg" alt="Sticky Note: 9.2 MockSettings" width="30%">
 </a>
 
 
@@ -2159,14 +2159,14 @@ class MockSettingsTest {
 
 ### 9.3 Mocking Final Classes and Methods
 
-<a href="../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-handwritten.svg" alt="Handwritten: 9.3 Mocking Final Classes and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-handwritten.svg" alt="Handwritten: 9.3 Mocking Final Classes and Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-diagram.svg" alt="Diagram: 9.3 Mocking Final Classes and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-diagram.svg" alt="Diagram: 9.3 Mocking Final Classes and Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-sticky.svg" alt="Sticky Note: 9.3 Mocking Final Classes and Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-3-mocking-final-classes-and-methods-sticky.svg" alt="Sticky Note: 9.3 Mocking Final Classes and Methods" width="30%">
 </a>
 
 
@@ -2229,14 +2229,14 @@ class FinalService {
 
 ### 9.4 Mocking Static Methods
 
-<a href="../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-handwritten.svg" alt="Handwritten: 9.4 Mocking Static Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-handwritten.svg" alt="Handwritten: 9.4 Mocking Static Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-diagram.svg" alt="Diagram: 9.4 Mocking Static Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-diagram.svg" alt="Diagram: 9.4 Mocking Static Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-sticky.svg" alt="Sticky Note: 9.4 Mocking Static Methods" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-4-mocking-static-methods-sticky.svg" alt="Sticky Note: 9.4 Mocking Static Methods" width="30%">
 </a>
 
 
@@ -2314,14 +2314,14 @@ class IdGenerator {
 
 ### 9.5 Mocking Constructors
 
-<a href="../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-handwritten.svg" alt="Handwritten: 9.5 Mocking Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-handwritten.svg" alt="Handwritten: 9.5 Mocking Constructors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-diagram.svg" alt="Diagram: 9.5 Mocking Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-diagram.svg" alt="Diagram: 9.5 Mocking Constructors" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-sticky.svg" alt="Sticky Note: 9.5 Mocking Constructors" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-5-mocking-constructors-sticky.svg" alt="Sticky Note: 9.5 Mocking Constructors" width="30%">
 </a>
 
 
@@ -2410,14 +2410,14 @@ class HeavyService {
 
 ### 9.6 Mock Cleanup and Reset
 
-<a href="../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-handwritten.svg" alt="Handwritten: 9.6 Mock Cleanup and Reset" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-handwritten.svg" alt="Handwritten: 9.6 Mock Cleanup and Reset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-diagram.svg" alt="Diagram: 9.6 Mock Cleanup and Reset" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-diagram.svg" alt="Diagram: 9.6 Mock Cleanup and Reset" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-sticky.svg" alt="Sticky Note: 9.6 Mock Cleanup and Reset" width="30%">
+<a href="../../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/30-mockito/9-6-mock-cleanup-and-reset-sticky.svg" alt="Sticky Note: 9.6 Mock Cleanup and Reset" width="30%">
 </a>
 
 

@@ -34,14 +34,14 @@ LLMs don't see characters or words. They see **tokens** — subword units produc
 
 ### BPE (Byte-Pair Encoding)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-handwritten.svg" alt="Handwritten: BPE (Byte-Pair Encoding)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-handwritten.svg" alt="Handwritten: BPE (Byte-Pair Encoding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-diagram.svg" alt="Diagram: BPE (Byte-Pair Encoding)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-diagram.svg" alt="Diagram: BPE (Byte-Pair Encoding)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-sticky.svg" alt="Sticky Note: BPE (Byte-Pair Encoding)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/bpe-byte-pair-encoding-sticky.svg" alt="Sticky Note: BPE (Byte-Pair Encoding)" width="30%">
 </a>
 
 
@@ -60,14 +60,14 @@ print(text)  # "The cat sat on the mat."
 
 ### Why token count matters for cost
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-handwritten.svg" alt="Handwritten: Why token count matters for cost" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-handwritten.svg" alt="Handwritten: Why token count matters for cost" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-diagram.svg" alt="Diagram: Why token count matters for cost" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-diagram.svg" alt="Diagram: Why token count matters for cost" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-sticky.svg" alt="Sticky Note: Why token count matters for cost" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-token-count-matters-for-cost-sticky.svg" alt="Sticky Note: Why token count matters for cost" width="30%">
 </a>
 
 
@@ -142,14 +142,14 @@ for text, embedding in zip(texts, responses.data):
 
 ### Cosine Similarity
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" alt="Handwritten: Cosine Similarity" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" alt="Handwritten: Cosine Similarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" alt="Diagram: Cosine Similarity" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" alt="Diagram: Cosine Similarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" alt="Sticky Note: Cosine Similarity" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" alt="Sticky Note: Cosine Similarity" width="30%">
 </a>
 
 
@@ -203,14 +203,14 @@ Embed the same 3 sentences at 1536, 512, and 256 dimensions. Compare cosine simi
 
 ### Zero-shot
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-handwritten.svg" alt="Handwritten: Zero-shot" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-handwritten.svg" alt="Handwritten: Zero-shot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-diagram.svg" alt="Diagram: Zero-shot" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-diagram.svg" alt="Diagram: Zero-shot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-sticky.svg" alt="Sticky Note: Zero-shot" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/zero-shot-sticky.svg" alt="Sticky Note: Zero-shot" width="30%">
 </a>
 
 ```python
@@ -219,14 +219,14 @@ prompt = "Translate to French: Hello, how are you?"
 
 ### Few-shot
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-handwritten.svg" alt="Handwritten: Few-shot" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-handwritten.svg" alt="Handwritten: Few-shot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-diagram.svg" alt="Diagram: Few-shot" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-diagram.svg" alt="Diagram: Few-shot" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-sticky.svg" alt="Sticky Note: Few-shot" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/few-shot-sticky.svg" alt="Sticky Note: Few-shot" width="30%">
 </a>
 
 ```python
@@ -244,14 +244,14 @@ French:"""
 
 ### Chain-of-Thought
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-handwritten.svg" alt="Handwritten: Chain-of-Thought" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-handwritten.svg" alt="Handwritten: Chain-of-Thought" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-diagram.svg" alt="Diagram: Chain-of-Thought" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-diagram.svg" alt="Diagram: Chain-of-Thought" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-sticky.svg" alt="Sticky Note: Chain-of-Thought" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chain-of-thought-sticky.svg" alt="Sticky Note: Chain-of-Thought" width="30%">
 </a>
 
 ```python
@@ -335,14 +335,14 @@ Write the same tool schema (a RAG query tool with `query: str`, `top_k: int`, `c
 
 ### Cosine Similarity
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" alt="Handwritten: Cosine Similarity" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-handwritten.svg" alt="Handwritten: Cosine Similarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" alt="Diagram: Cosine Similarity" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-diagram.svg" alt="Diagram: Cosine Similarity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" alt="Sticky Note: Cosine Similarity" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/cosine-similarity-sticky.svg" alt="Sticky Note: Cosine Similarity" width="30%">
 </a>
 
 
@@ -354,14 +354,14 @@ Range: -1 (opposite) to 1 (identical). For text embeddings, most values are betw
 
 ### Dot Product
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-handwritten.svg" alt="Handwritten: Dot Product" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-handwritten.svg" alt="Handwritten: Dot Product" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-diagram.svg" alt="Diagram: Dot Product" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-diagram.svg" alt="Diagram: Dot Product" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-sticky.svg" alt="Sticky Note: Dot Product" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/dot-product-sticky.svg" alt="Sticky Note: Dot Product" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ Without normalization, dot product varies with magnitude. Two identical meanings
 
 ### Euclidean Distance
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-handwritten.svg" alt="Handwritten: Euclidean Distance" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-handwritten.svg" alt="Handwritten: Euclidean Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-diagram.svg" alt="Diagram: Euclidean Distance" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-diagram.svg" alt="Diagram: Euclidean Distance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-sticky.svg" alt="Sticky Note: Euclidean Distance" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/euclidean-distance-sticky.svg" alt="Sticky Note: Euclidean Distance" width="30%">
 </a>
 
 
@@ -388,14 +388,14 @@ Range: 0 to inf. For normalized vectors, this is monotonic with cosine.
 
 ### Why cosine wins for text
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-handwritten.svg" alt="Handwritten: Why cosine wins for text" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-handwritten.svg" alt="Handwritten: Why cosine wins for text" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-diagram.svg" alt="Diagram: Why cosine wins for text" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-diagram.svg" alt="Diagram: Why cosine wins for text" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-sticky.svg" alt="Sticky Note: Why cosine wins for text" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/why-cosine-wins-for-text-sticky.svg" alt="Sticky Note: Why cosine wins for text" width="30%">
 </a>
 
 
@@ -415,14 +415,14 @@ Take 2 similar and 2 dissimilar sentence pairs. Compute all 3 metrics (cosine, d
 
 ### The tradeoff
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-handwritten.svg" alt="Handwritten: The tradeoff" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-handwritten.svg" alt="Handwritten: The tradeoff" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-diagram.svg" alt="Diagram: The tradeoff" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-diagram.svg" alt="Diagram: The tradeoff" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-sticky.svg" alt="Sticky Note: The tradeoff" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/the-tradeoff-sticky.svg" alt="Sticky Note: The tradeoff" width="30%">
 </a>
 
 
@@ -436,14 +436,14 @@ Take 2 similar and 2 dissimilar sentence pairs. Compute all 3 metrics (cosine, d
 
 ### ChromaDB default
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-handwritten.svg" alt="Handwritten: ChromaDB default" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-handwritten.svg" alt="Handwritten: ChromaDB default" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-diagram.svg" alt="Diagram: ChromaDB default" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-diagram.svg" alt="Diagram: ChromaDB default" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-sticky.svg" alt="Sticky Note: ChromaDB default" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-default-sticky.svg" alt="Sticky Note: ChromaDB default" width="30%">
 </a>
 
 
@@ -525,14 +525,14 @@ Draw this pipeline from memory without looking at the diagram. Every arrow needs
 
 ### Fixed-size (naive)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-handwritten.svg" alt="Handwritten: Fixed-size (naive)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-handwritten.svg" alt="Handwritten: Fixed-size (naive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-diagram.svg" alt="Diagram: Fixed-size (naive)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-diagram.svg" alt="Diagram: Fixed-size (naive)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-sticky.svg" alt="Sticky Note: Fixed-size (naive)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/fixed-size-naive-sticky.svg" alt="Sticky Note: Fixed-size (naive)" width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ def fixed_chunks(text: str, chunk_size: int = 500, overlap: int = 50) -> list[st
 
 ### Recursive character splitting (better)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-handwritten.svg" alt="Handwritten: Recursive character splitting (better)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-handwritten.svg" alt="Handwritten: Recursive character splitting (better)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-diagram.svg" alt="Diagram: Recursive character splitting (better)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-diagram.svg" alt="Diagram: Recursive character splitting (better)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-sticky.svg" alt="Sticky Note: Recursive character splitting (better)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/recursive-character-splitting-better-sticky.svg" alt="Sticky Note: Recursive character splitting (better)" width="30%">
 </a>
 
 
@@ -576,14 +576,14 @@ chunks = splitter.split_text(long_text)
 
 ### Semantic chunking (best for RAG)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-handwritten.svg" alt="Handwritten: Semantic chunking (best for RAG)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-handwritten.svg" alt="Handwritten: Semantic chunking (best for RAG)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-diagram.svg" alt="Diagram: Semantic chunking (best for RAG)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-diagram.svg" alt="Diagram: Semantic chunking (best for RAG)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-sticky.svg" alt="Sticky Note: Semantic chunking (best for RAG)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/semantic-chunking-best-for-rag-sticky.svg" alt="Sticky Note: Semantic chunking (best for RAG)" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ Take a real PDF (a Terms of Service document, or the Indian Constitution preambl
 
 ### First-pass retrieval
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-handwritten.svg" alt="Handwritten: First-pass retrieval" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-handwritten.svg" alt="Handwritten: First-pass retrieval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-diagram.svg" alt="Diagram: First-pass retrieval" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-diagram.svg" alt="Diagram: First-pass retrieval" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-sticky.svg" alt="Sticky Note: First-pass retrieval" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/first-pass-retrieval-sticky.svg" alt="Sticky Note: First-pass retrieval" width="30%">
 </a>
 
 
@@ -628,14 +628,14 @@ Top-k from vector search. Fast but imperfect — similar-looking chunks may be s
 
 ### Second-pass re-ranking
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-handwritten.svg" alt="Handwritten: Second-pass re-ranking" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-handwritten.svg" alt="Handwritten: Second-pass re-ranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-diagram.svg" alt="Diagram: Second-pass re-ranking" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-diagram.svg" alt="Diagram: Second-pass re-ranking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-sticky.svg" alt="Sticky Note: Second-pass re-ranking" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/second-pass-re-ranking-sticky.svg" alt="Sticky Note: Second-pass re-ranking" width="30%">
 </a>
 
 
@@ -667,14 +667,14 @@ Run 5 queries through: vector-only top-5 ? LLM answer. Then vector top-20 ? re-r
 
 ### ChromaDB
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-handwritten.svg" alt="Handwritten: ChromaDB" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-handwritten.svg" alt="Handwritten: ChromaDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-diagram.svg" alt="Diagram: ChromaDB" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-diagram.svg" alt="Diagram: ChromaDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-sticky.svg" alt="Sticky Note: ChromaDB" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/chromadb-sticky.svg" alt="Sticky Note: ChromaDB" width="30%">
 </a>
 
 
@@ -689,14 +689,14 @@ Run 5 queries through: vector-only top-5 ? LLM answer. Then vector top-20 ? re-r
 
 ### Qdrant
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-handwritten.svg" alt="Handwritten: Qdrant" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-handwritten.svg" alt="Handwritten: Qdrant" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-diagram.svg" alt="Diagram: Qdrant" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-diagram.svg" alt="Diagram: Qdrant" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-sticky.svg" alt="Sticky Note: Qdrant" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qdrant-sticky.svg" alt="Sticky Note: Qdrant" width="30%">
 </a>
 
 
@@ -710,14 +710,14 @@ Run 5 queries through: vector-only top-5 ? LLM answer. Then vector top-20 ? re-r
 
 ### pgvector
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-handwritten.svg" alt="Handwritten: pgvector" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-handwritten.svg" alt="Handwritten: pgvector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-diagram.svg" alt="Diagram: pgvector" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-diagram.svg" alt="Diagram: pgvector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-sticky.svg" alt="Sticky Note: pgvector" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/pgvector-sticky.svg" alt="Sticky Note: pgvector" width="30%">
 </a>
 
 
@@ -731,14 +731,14 @@ Run 5 queries through: vector-only top-5 ? LLM answer. Then vector top-20 ? re-r
 
 ### Your choice
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-handwritten.svg" alt="Handwritten: Your choice" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-handwritten.svg" alt="Handwritten: Your choice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-diagram.svg" alt="Diagram: Your choice" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-diagram.svg" alt="Diagram: Your choice" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-sticky.svg" alt="Sticky Note: Your choice" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/your-choice-sticky.svg" alt="Sticky Note: Your choice" width="30%">
 </a>
 
 
@@ -754,14 +754,14 @@ Read all three "When to use" pages. Write a 1-paragraph honest comparison. This 
 
 ### RAG-specific hallucination causes
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-handwritten.svg" alt="Handwritten: RAG-specific hallucination causes" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-handwritten.svg" alt="Handwritten: RAG-specific hallucination causes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-diagram.svg" alt="Diagram: RAG-specific hallucination causes" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-diagram.svg" alt="Diagram: RAG-specific hallucination causes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-sticky.svg" alt="Sticky Note: RAG-specific hallucination causes" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-specific-hallucination-causes-sticky.svg" alt="Sticky Note: RAG-specific hallucination causes" width="30%">
 </a>
 
 
@@ -773,14 +773,14 @@ Read all three "When to use" pages. Write a 1-paragraph honest comparison. This 
 
 ### Mitigations
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-handwritten.svg" alt="Handwritten: Mitigations" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-handwritten.svg" alt="Handwritten: Mitigations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-diagram.svg" alt="Diagram: Mitigations" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-diagram.svg" alt="Diagram: Mitigations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-sticky.svg" alt="Sticky Note: Mitigations" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/mitigations-sticky.svg" alt="Sticky Note: Mitigations" width="30%">
 </a>
 
 
@@ -805,14 +805,14 @@ Take a query that retrieves chunks but none of them answer the question. Run it 
 
 ### Architecture
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
 </a>
 
 
@@ -826,14 +826,14 @@ Client --? FastAPI --? ChromaDB
 
 ### Endpoint spec
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-handwritten.svg" alt="Handwritten: Endpoint spec" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-handwritten.svg" alt="Handwritten: Endpoint spec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-diagram.svg" alt="Diagram: Endpoint spec" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-diagram.svg" alt="Diagram: Endpoint spec" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-sticky.svg" alt="Sticky Note: Endpoint spec" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/endpoint-spec-sticky.svg" alt="Sticky Note: Endpoint spec" width="30%">
 </a>
 
 
@@ -854,14 +854,14 @@ GET    /healthz                           Liveness probe
 
 ### Week-by-week build
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-handwritten.svg" alt="Handwritten: Week-by-week build" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-handwritten.svg" alt="Handwritten: Week-by-week build" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-diagram.svg" alt="Diagram: Week-by-week build" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-diagram.svg" alt="Diagram: Week-by-week build" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-sticky.svg" alt="Sticky Note: Week-by-week build" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/week-by-week-build-sticky.svg" alt="Sticky Note: Week-by-week build" width="30%">
 </a>
 
 
@@ -880,14 +880,14 @@ GET    /healthz                           Liveness probe
 
 ### README documentation requirements
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-handwritten.svg" alt="Handwritten: README documentation requirements" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-handwritten.svg" alt="Handwritten: README documentation requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-diagram.svg" alt="Diagram: README documentation requirements" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-diagram.svg" alt="Diagram: README documentation requirements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-sticky.svg" alt="Sticky Note: README documentation requirements" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/readme-documentation-requirements-sticky.svg" alt="Sticky Note: README documentation requirements" width="30%">
 </a>
 
 
@@ -900,14 +900,14 @@ GET    /healthz                           Liveness probe
 
 ### Server skeleton
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-handwritten.svg" alt="Handwritten: Server skeleton" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-handwritten.svg" alt="Handwritten: Server skeleton" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-diagram.svg" alt="Diagram: Server skeleton" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-diagram.svg" alt="Diagram: Server skeleton" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-sticky.svg" alt="Sticky Note: Server skeleton" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/server-skeleton-sticky.svg" alt="Sticky Note: Server skeleton" width="30%">
 </a>
 
 
@@ -937,14 +937,14 @@ Fine-tuning adapts a pretrained model to your specific task. RAG and fine-tuning
 
 ### RAG vs Fine-Tuning
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-handwritten.svg" alt="Handwritten: RAG vs Fine-Tuning" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-handwritten.svg" alt="Handwritten: RAG vs Fine-Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-diagram.svg" alt="Diagram: RAG vs Fine-Tuning" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-diagram.svg" alt="Diagram: RAG vs Fine-Tuning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-sticky.svg" alt="Sticky Note: RAG vs Fine-Tuning" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/rag-vs-fine-tuning-sticky.svg" alt="Sticky Note: RAG vs Fine-Tuning" width="30%">
 </a>
 
 
@@ -958,14 +958,14 @@ Fine-tuning adapts a pretrained model to your specific task. RAG and fine-tuning
 
 ### LoRA (Low-Rank Adaptation)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-handwritten.svg" alt="Handwritten: LoRA (Low-Rank Adaptation)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-handwritten.svg" alt="Handwritten: LoRA (Low-Rank Adaptation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-diagram.svg" alt="Diagram: LoRA (Low-Rank Adaptation)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-diagram.svg" alt="Diagram: LoRA (Low-Rank Adaptation)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-sticky.svg" alt="Sticky Note: LoRA (Low-Rank Adaptation)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/lora-low-rank-adaptation-sticky.svg" alt="Sticky Note: LoRA (Low-Rank Adaptation)" width="30%">
 </a>
 
 
@@ -998,14 +998,14 @@ print(f"Trainable params: {model.num_parameters(only_trainable=True):,}")
 
 ### QLoRA (Quantized LoRA)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-handwritten.svg" alt="Handwritten: QLoRA (Quantized LoRA)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-handwritten.svg" alt="Handwritten: QLoRA (Quantized LoRA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-diagram.svg" alt="Diagram: QLoRA (Quantized LoRA)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-diagram.svg" alt="Diagram: QLoRA (Quantized LoRA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-sticky.svg" alt="Sticky Note: QLoRA (Quantized LoRA)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/qlora-quantized-lora-sticky.svg" alt="Sticky Note: QLoRA (Quantized LoRA)" width="30%">
 </a>
 
 
@@ -1029,14 +1029,14 @@ model = AutoModelForCausalLM.from_pretrained(
 
 ### When to fine-tune (and when not to)
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-handwritten.svg" alt="Handwritten: When to fine-tune (and when not to)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-handwritten.svg" alt="Handwritten: When to fine-tune (and when not to)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-diagram.svg" alt="Diagram: When to fine-tune (and when not to)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-diagram.svg" alt="Diagram: When to fine-tune (and when not to)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-sticky.svg" alt="Sticky Note: When to fine-tune (and when not to)" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/when-to-fine-tune-and-when-not-to-sticky.svg" alt="Sticky Note: When to fine-tune (and when not to)" width="30%">
 </a>
 
 
@@ -1063,14 +1063,14 @@ When you have multiple models (GPT-4, Claude, local LLM), you need a systematic 
 
 ### Building an eval harness
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-handwritten.svg" alt="Handwritten: Building an eval harness" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-handwritten.svg" alt="Handwritten: Building an eval harness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-diagram.svg" alt="Diagram: Building an eval harness" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-diagram.svg" alt="Diagram: Building an eval harness" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-sticky.svg" alt="Sticky Note: Building an eval harness" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/building-an-eval-harness-sticky.svg" alt="Sticky Note: Building an eval harness" width="30%">
 </a>
 
 
@@ -1124,14 +1124,14 @@ print(f"Claude: {claude_score['avg_score']:.2%}")
 
 ### What to measure
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-handwritten.svg" alt="Handwritten: What to measure" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-handwritten.svg" alt="Handwritten: What to measure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-diagram.svg" alt="Diagram: What to measure" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-diagram.svg" alt="Diagram: What to measure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-sticky.svg" alt="Sticky Note: What to measure" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/what-to-measure-sticky.svg" alt="Sticky Note: What to measure" width="30%">
 </a>
 
 
@@ -1155,14 +1155,14 @@ Agents that talk to users need guardrails — both input (what users can ask) an
 
 ### Input guardrails: detect harmful queries
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-handwritten.svg" alt="Handwritten: Input guardrails: detect harmful queries" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-handwritten.svg" alt="Handwritten: Input guardrails: detect harmful queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-diagram.svg" alt="Diagram: Input guardrails: detect harmful queries" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-diagram.svg" alt="Diagram: Input guardrails: detect harmful queries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-sticky.svg" alt="Sticky Note: Input guardrails: detect harmful queries" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/input-guardrails-detect-harmful-queries-sticky.svg" alt="Sticky Note: Input guardrails: detect harmful queries" width="30%">
 </a>
 
 
@@ -1189,14 +1189,14 @@ def input_guardrail(user_input: str) -> tuple[bool, str]:
 
 ### Output guardrails: validate model responses
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-handwritten.svg" alt="Handwritten: Output guardrails: validate model responses" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-handwritten.svg" alt="Handwritten: Output guardrails: validate model responses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-diagram.svg" alt="Diagram: Output guardrails: validate model responses" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-diagram.svg" alt="Diagram: Output guardrails: validate model responses" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-sticky.svg" alt="Sticky Note: Output guardrails: validate model responses" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/output-guardrails-validate-model-responses-sticky.svg" alt="Sticky Note: Output guardrails: validate model responses" width="30%">
 </a>
 
 
@@ -1217,14 +1217,14 @@ def output_guardrail(response: str) -> tuple[bool, str]:
 
 ### Integrating guardrails into your RAG pipeline
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-handwritten.svg" alt="Handwritten: Integrating guardrails into your RAG pipeline" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-handwritten.svg" alt="Handwritten: Integrating guardrails into your RAG pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-diagram.svg" alt="Diagram: Integrating guardrails into your RAG pipeline" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-diagram.svg" alt="Diagram: Integrating guardrails into your RAG pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-sticky.svg" alt="Sticky Note: Integrating guardrails into your RAG pipeline" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/integrating-guardrails-into-your-rag-pipeline-sticky.svg" alt="Sticky Note: Integrating guardrails into your RAG pipeline" width="30%">
 </a>
 
 
@@ -1249,14 +1249,14 @@ async def query_with_guardrails(request: QueryRequest):
 
 ### Using dedicated guardrail libraries
 
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-handwritten.svg" alt="Handwritten: Using dedicated guardrail libraries" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-handwritten.svg" alt="Handwritten: Using dedicated guardrail libraries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-diagram.svg" alt="Diagram: Using dedicated guardrail libraries" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-diagram.svg" alt="Diagram: Using dedicated guardrail libraries" width="30%">
 </a>
-<a href="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-sticky.svg" alt="Sticky Note: Using dedicated guardrail libraries" width="30%">
+<a href="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/ai-agent-engineer/03-phase2-llm-rag-theory/using-dedicated-guardrail-libraries-sticky.svg" alt="Sticky Note: Using dedicated guardrail libraries" width="30%">
 </a>
 
 

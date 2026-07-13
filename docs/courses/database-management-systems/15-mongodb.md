@@ -44,14 +44,14 @@ flowchart LR
 
 ### 15.1 MongoDB Overview
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-handwritten.svg" alt="Handwritten: 15.1 MongoDB Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-handwritten.svg" alt="Handwritten: 15.1 MongoDB Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-diagram.svg" alt="Diagram: 15.1 MongoDB Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-diagram.svg" alt="Diagram: 15.1 MongoDB Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-sticky.svg" alt="Sticky Note: 15.1 MongoDB Overview" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-1-mongodb-overview-sticky.svg" alt="Sticky Note: 15.1 MongoDB Overview" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ FUNCTION FindDocument(collection, filter, projection):
 
 ### 15.2 Document Model and Schema Design
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-handwritten.svg" alt="Handwritten: 15.2 Document Model and Schema Design" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-handwritten.svg" alt="Handwritten: 15.2 Document Model and Schema Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-diagram.svg" alt="Diagram: 15.2 Document Model and Schema Design" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-diagram.svg" alt="Diagram: 15.2 Document Model and Schema Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-sticky.svg" alt="Sticky Note: 15.2 Document Model and Schema Design" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-2-document-model-and-schema-design-sticky.svg" alt="Sticky Note: 15.2 Document Model and Schema Design" width="30%">
 </a>
 
 
@@ -800,14 +800,14 @@ TRACE:
 
 ### 15.3 CRUD Operations â†’ Complete Reference
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-handwritten.svg" alt="Handwritten: 15.3 CRUD Operations â†’ Complete Reference" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-handwritten.svg" alt="Handwritten: 15.3 CRUD Operations â†’ Complete Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-diagram.svg" alt="Diagram: 15.3 CRUD Operations â†’ Complete Reference" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-diagram.svg" alt="Diagram: 15.3 CRUD Operations â†’ Complete Reference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-sticky.svg" alt="Sticky Note: 15.3 CRUD Operations â†’ Complete Reference" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-3-crud-operations-complete-reference-sticky.svg" alt="Sticky Note: 15.3 CRUD Operations â†’ Complete Reference" width="30%">
 </a>
 
 
@@ -1291,14 +1291,14 @@ Index states during step 6:
 
 ### 15.4 Indexing in MongoDB
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-handwritten.svg" alt="Handwritten: 15.4 Indexing in MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-handwritten.svg" alt="Handwritten: 15.4 Indexing in MongoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-diagram.svg" alt="Diagram: 15.4 Indexing in MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-diagram.svg" alt="Diagram: 15.4 Indexing in MongoDB" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-sticky.svg" alt="Sticky Note: 15.4 Indexing in MongoDB" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-4-indexing-in-mongodb-sticky.svg" alt="Sticky Note: 15.4 Indexing in MongoDB" width="30%">
 </a>
 
 
@@ -1900,14 +1900,14 @@ if __name__ == "__main__":
 
 ### 15.5 Aggregation Pipeline
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-handwritten.svg" alt="Handwritten: 15.5 Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-handwritten.svg" alt="Handwritten: 15.5 Aggregation Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-diagram.svg" alt="Diagram: 15.5 Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-diagram.svg" alt="Diagram: 15.5 Aggregation Pipeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-sticky.svg" alt="Sticky Note: 15.5 Aggregation Pipeline" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-5-aggregation-pipeline-sticky.svg" alt="Sticky Note: 15.5 Aggregation Pipeline" width="30%">
 </a>
 
 
@@ -2660,14 +2660,14 @@ if __name__ == "__main__":
 
 ### 15.6 Replication
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-handwritten.svg" alt="Handwritten: 15.6 Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-handwritten.svg" alt="Handwritten: 15.6 Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-diagram.svg" alt="Diagram: 15.6 Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-diagram.svg" alt="Diagram: 15.6 Replication" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-sticky.svg" alt="Sticky Note: 15.6 Replication" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-6-replication-sticky.svg" alt="Sticky Note: 15.6 Replication" width="30%">
 </a>
 
 
@@ -3077,14 +3077,14 @@ if __name__ == "__main__":
 
 ### 15.7 Sharding
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-handwritten.svg" alt="Handwritten: 15.7 Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-handwritten.svg" alt="Handwritten: 15.7 Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-diagram.svg" alt="Diagram: 15.7 Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-diagram.svg" alt="Diagram: 15.7 Sharding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-sticky.svg" alt="Sticky Note: 15.7 Sharding" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-7-sharding-sticky.svg" alt="Sticky Note: 15.7 Sharding" width="30%">
 </a>
 
 
@@ -3614,14 +3614,14 @@ if __name__ == "__main__":
 
 ### 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-handwritten.svg" alt="Handwritten: 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-handwritten.svg" alt="Handwritten: 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-diagram.svg" alt="Diagram: 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-diagram.svg" alt="Diagram: 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-sticky.svg" alt="Sticky Note: 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-8-mongodb-vs-rdbms-comprehensive-comparison-sticky.svg" alt="Sticky Note: 15.8 MongoDB vs RDBMS â†’ Comprehensive Comparison" width="30%">
 </a>
 
 
@@ -3684,14 +3684,14 @@ if __name__ == "__main__":
 
 ### 15.9 MongoDB Atomicity and Transactions
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-handwritten.svg" alt="Handwritten: 15.9 MongoDB Atomicity and Transactions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-handwritten.svg" alt="Handwritten: 15.9 MongoDB Atomicity and Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-diagram.svg" alt="Diagram: 15.9 MongoDB Atomicity and Transactions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-diagram.svg" alt="Diagram: 15.9 MongoDB Atomicity and Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-sticky.svg" alt="Sticky Note: 15.9 MongoDB Atomicity and Transactions" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-9-mongodb-atomicity-and-transactions-sticky.svg" alt="Sticky Note: 15.9 MongoDB Atomicity and Transactions" width="30%">
 </a>
 
 
@@ -3811,14 +3811,14 @@ def transfer_funds(from_id, to_id, amount):
 
 ### 15.10 Interview Corner
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-handwritten.svg" alt="Handwritten: 15.10 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-handwritten.svg" alt="Handwritten: 15.10 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-diagram.svg" alt="Diagram: 15.10 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-diagram.svg" alt="Diagram: 15.10 Interview Corner" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-sticky.svg" alt="Sticky Note: 15.10 Interview Corner" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-10-interview-corner-sticky.svg" alt="Sticky Note: 15.10 Interview Corner" width="30%">
 </a>
 
 
@@ -3967,14 +3967,14 @@ MongoDB's sharding is built-in and automatic (balancer splits and migrates chunk
 
 ### 15.11 Applications in Real Systems
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-handwritten.svg" alt="Handwritten: 15.11 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-handwritten.svg" alt="Handwritten: 15.11 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-diagram.svg" alt="Diagram: 15.11 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-diagram.svg" alt="Diagram: 15.11 Applications in Real Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-sticky.svg" alt="Sticky Note: 15.11 Applications in Real Systems" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-11-applications-in-real-systems-sticky.svg" alt="Sticky Note: 15.11 Applications in Real Systems" width="30%">
 </a>
 
 
@@ -4074,14 +4074,14 @@ db.scores.updateOne(
 
 ### 15.12 Schema Design Best Practices
 
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-handwritten.svg" alt="Handwritten: 15.12 Schema Design Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-handwritten.svg" alt="Handwritten: 15.12 Schema Design Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-diagram.svg" alt="Diagram: 15.12 Schema Design Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-diagram.svg" alt="Diagram: 15.12 Schema Design Best Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-sticky.svg" alt="Sticky Note: 15.12 Schema Design Best Practices" width="30%">
+<a href="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/database-management-systems/15-mongodb/15-12-schema-design-best-practices-sticky.svg" alt="Sticky Note: 15.12 Schema Design Best Practices" width="30%">
 </a>
 
 

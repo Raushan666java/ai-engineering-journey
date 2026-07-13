@@ -53,14 +53,14 @@ flowchart LR
 
 ### 1.1 The Philosophy of Externalized Configuration
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-handwritten.svg" alt="Handwritten: 1.1 The Philosophy of Externalized Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-handwritten.svg" alt="Handwritten: 1.1 The Philosophy of Externalized Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-diagram.svg" alt="Diagram: 1.1 The Philosophy of Externalized Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-diagram.svg" alt="Diagram: 1.1 The Philosophy of Externalized Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-sticky.svg" alt="Sticky Note: 1.1 The Philosophy of Externalized Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-1-the-philosophy-of-externalized-configuration-sticky.svg" alt="Sticky Note: 1.1 The Philosophy of Externalized Configuration" width="30%">
 </a>
 
 
@@ -70,14 +70,14 @@ The fundamental idea is that the same deployable artifact (a JAR or WAR) should 
 
 ### 1.2 Configuration Priority Order
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-handwritten.svg" alt="Handwritten: 1.2 Configuration Priority Order" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-handwritten.svg" alt="Handwritten: 1.2 Configuration Priority Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-diagram.svg" alt="Diagram: 1.2 Configuration Priority Order" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-diagram.svg" alt="Diagram: 1.2 Configuration Priority Order" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-sticky.svg" alt="Sticky Note: 1.2 Configuration Priority Order" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-2-configuration-priority-order-sticky.svg" alt="Sticky Note: 1.2 Configuration Priority Order" width="30%">
 </a>
 
 
@@ -104,14 +104,14 @@ Understanding this order is crucial for debugging "why isn't my property being p
 
 ### 1.3 application.properties vs application.yml
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-handwritten.svg" alt="Handwritten: 1.3 application.properties vs application.yml" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-handwritten.svg" alt="Handwritten: 1.3 application.properties vs application.yml" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-diagram.svg" alt="Diagram: 1.3 application.properties vs application.yml" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-diagram.svg" alt="Diagram: 1.3 application.properties vs application.yml" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-sticky.svg" alt="Sticky Note: 1.3 application.properties vs application.yml" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-3-application-properties-vs-application-yml-sticky.svg" alt="Sticky Note: 1.3 application.properties vs application.yml" width="30%">
 </a>
 
 
@@ -187,14 +187,14 @@ app:
 
 ### 1.4 Type-Safe Configuration with @ConfigurationProperties
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-handwritten.svg" alt="Handwritten: 1.4 Type-Safe Configuration with @ConfigurationProperties" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-handwritten.svg" alt="Handwritten: 1.4 Type-Safe Configuration with @ConfigurationProperties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-diagram.svg" alt="Diagram: 1.4 Type-Safe Configuration with @ConfigurationProperties" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-diagram.svg" alt="Diagram: 1.4 Type-Safe Configuration with @ConfigurationProperties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-sticky.svg" alt="Sticky Note: 1.4 Type-Safe Configuration with @ConfigurationProperties" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-4-type-safe-configuration-with-configurationproperties-sticky.svg" alt="Sticky Note: 1.4 Type-Safe Configuration with @ConfigurationProperties" width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ app:
 
 ### 1.5 @Value Annotation
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-handwritten.svg" alt="Handwritten: 1.5 @Value Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-handwritten.svg" alt="Handwritten: 1.5 @Value Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-diagram.svg" alt="Diagram: 1.5 @Value Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-diagram.svg" alt="Diagram: 1.5 @Value Annotation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-sticky.svg" alt="Sticky Note: 1.5 @Value Annotation" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-5-value-annotation-sticky.svg" alt="Sticky Note: 1.5 @Value Annotation" width="30%">
 </a>
 
 
@@ -607,14 +607,14 @@ public class EmailService {
 
 ### 1.6 @PropertySource
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-6-propertysource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-6-propertysource-handwritten.svg" alt="Handwritten: 1.6 @PropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-6-propertysource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-6-propertysource-handwritten.svg" alt="Handwritten: 1.6 @PropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-6-propertysource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-6-propertysource-diagram.svg" alt="Diagram: 1.6 @PropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-6-propertysource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-6-propertysource-diagram.svg" alt="Diagram: 1.6 @PropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-6-propertysource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-6-propertysource-sticky.svg" alt="Sticky Note: 1.6 @PropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-6-propertysource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-6-propertysource-sticky.svg" alt="Sticky Note: 1.6 @PropertySource" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ public class YamlConfig {
 
 ### 1.7 Profiles
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-7-profiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-7-profiles-handwritten.svg" alt="Handwritten: 1.7 Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-7-profiles-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-7-profiles-handwritten.svg" alt="Handwritten: 1.7 Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-7-profiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-7-profiles-diagram.svg" alt="Diagram: 1.7 Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-7-profiles-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-7-profiles-diagram.svg" alt="Diagram: 1.7 Profiles" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-7-profiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-7-profiles-sticky.svg" alt="Sticky Note: 1.7 Profiles" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-7-profiles-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-7-profiles-sticky.svg" alt="Sticky Note: 1.7 Profiles" width="30%">
 </a>
 
 
@@ -859,14 +859,14 @@ public class ProductionReadyService {
 
 ### 1.8 Relaxed Binding
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-handwritten.svg" alt="Handwritten: 1.8 Relaxed Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-handwritten.svg" alt="Handwritten: 1.8 Relaxed Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-diagram.svg" alt="Diagram: 1.8 Relaxed Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-diagram.svg" alt="Diagram: 1.8 Relaxed Binding" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-sticky.svg" alt="Sticky Note: 1.8 Relaxed Binding" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-8-relaxed-binding-sticky.svg" alt="Sticky Note: 1.8 Relaxed Binding" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@ app:
 
 ### 1.9 Random Values
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-9-random-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-9-random-values-handwritten.svg" alt="Handwritten: 1.9 Random Values" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-9-random-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-9-random-values-handwritten.svg" alt="Handwritten: 1.9 Random Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-9-random-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-9-random-values-diagram.svg" alt="Diagram: 1.9 Random Values" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-9-random-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-9-random-values-diagram.svg" alt="Diagram: 1.9 Random Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-9-random-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-9-random-values-sticky.svg" alt="Sticky Note: 1.9 Random Values" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-9-random-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-9-random-values-sticky.svg" alt="Sticky Note: 1.9 Random Values" width="30%">
 </a>
 
 
@@ -963,14 +963,14 @@ public class SecretProperties {
 
 ### 1.10 External Configuration Sources
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-handwritten.svg" alt="Handwritten: 1.10 External Configuration Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-handwritten.svg" alt="Handwritten: 1.10 External Configuration Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-diagram.svg" alt="Diagram: 1.10 External Configuration Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-diagram.svg" alt="Diagram: 1.10 External Configuration Sources" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-sticky.svg" alt="Sticky Note: 1.10 External Configuration Sources" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-10-external-configuration-sources-sticky.svg" alt="Sticky Note: 1.10 External Configuration Sources" width="30%">
 </a>
 
 
@@ -1044,14 +1044,14 @@ SPRING_APPLICATION_JSON='{"server":{"port":9090}}' java -jar app.jar
 
 ### 1.11 Config Data Locations and Ordering
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-handwritten.svg" alt="Handwritten: 1.11 Config Data Locations and Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-handwritten.svg" alt="Handwritten: 1.11 Config Data Locations and Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-diagram.svg" alt="Diagram: 1.11 Config Data Locations and Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-diagram.svg" alt="Diagram: 1.11 Config Data Locations and Ordering" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-sticky.svg" alt="Sticky Note: 1.11 Config Data Locations and Ordering" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-11-config-data-locations-and-ordering-sticky.svg" alt="Sticky Note: 1.11 Config Data Locations and Ordering" width="30%">
 </a>
 
 
@@ -1160,14 +1160,14 @@ The overall ordering from lowest to highest priority:
 
 ### 1.12 Config Tree (Kubernetes)
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-handwritten.svg" alt="Handwritten: 1.12 Config Tree (Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-handwritten.svg" alt="Handwritten: 1.12 Config Tree (Kubernetes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-diagram.svg" alt="Diagram: 1.12 Config Tree (Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-diagram.svg" alt="Diagram: 1.12 Config Tree (Kubernetes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-sticky.svg" alt="Sticky Note: 1.12 Config Tree (Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-12-config-tree-kubernetes-sticky.svg" alt="Sticky Note: 1.12 Config Tree (Kubernetes)" width="30%">
 </a>
 
 
@@ -1207,14 +1207,14 @@ spring:
 
 ### 1.13 Validation of Configuration Properties
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-handwritten.svg" alt="Handwritten: 1.13 Validation of Configuration Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-handwritten.svg" alt="Handwritten: 1.13 Validation of Configuration Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-diagram.svg" alt="Diagram: 1.13 Validation of Configuration Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-diagram.svg" alt="Diagram: 1.13 Validation of Configuration Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-sticky.svg" alt="Sticky Note: 1.13 Validation of Configuration Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-13-validation-of-configuration-properties-sticky.svg" alt="Sticky Note: 1.13 Validation of Configuration Properties" width="30%">
 </a>
 
 
@@ -1282,14 +1282,14 @@ Binding to target org.springframework.boot.context.properties.bind.BindException
 
 ### 1.14 Duration and DataSize Conversion
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-handwritten.svg" alt="Handwritten: 1.14 Duration and DataSize Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-handwritten.svg" alt="Handwritten: 1.14 Duration and DataSize Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-diagram.svg" alt="Diagram: 1.14 Duration and DataSize Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-diagram.svg" alt="Diagram: 1.14 Duration and DataSize Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-sticky.svg" alt="Sticky Note: 1.14 Duration and DataSize Conversion" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-14-duration-and-datasize-conversion-sticky.svg" alt="Sticky Note: 1.14 Duration and DataSize Conversion" width="30%">
 </a>
 
 
@@ -1371,14 +1371,14 @@ app:
 
 ### 1.15 Configuration Metadata
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-handwritten.svg" alt="Handwritten: 1.15 Configuration Metadata" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-handwritten.svg" alt="Handwritten: 1.15 Configuration Metadata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-diagram.svg" alt="Diagram: 1.15 Configuration Metadata" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-diagram.svg" alt="Diagram: 1.15 Configuration Metadata" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-sticky.svg" alt="Sticky Note: 1.15 Configuration Metadata" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-15-configuration-metadata-sticky.svg" alt="Sticky Note: 1.15 Configuration Metadata" width="30%">
 </a>
 
 
@@ -1432,14 +1432,14 @@ The Javadoc comments become descriptions in the generated metadata.
 
 ### 1.16 Complete Application Configuration Example
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-handwritten.svg" alt="Handwritten: 1.16 Complete Application Configuration Example" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-handwritten.svg" alt="Handwritten: 1.16 Complete Application Configuration Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-diagram.svg" alt="Diagram: 1.16 Complete Application Configuration Example" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-diagram.svg" alt="Diagram: 1.16 Complete Application Configuration Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-sticky.svg" alt="Sticky Note: 1.16 Complete Application Configuration Example" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-16-complete-application-configuration-example-sticky.svg" alt="Sticky Note: 1.16 Complete Application Configuration Example" width="30%">
 </a>
 
 
@@ -1724,14 +1724,14 @@ public class ConfigValidationRunner implements CommandLineRunner {
 
 ### 1.17 Programmatic Environment Access
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-handwritten.svg" alt="Handwritten: 1.17 Programmatic Environment Access" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-handwritten.svg" alt="Handwritten: 1.17 Programmatic Environment Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-diagram.svg" alt="Diagram: 1.17 Programmatic Environment Access" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-diagram.svg" alt="Diagram: 1.17 Programmatic Environment Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-sticky.svg" alt="Sticky Note: 1.17 Programmatic Environment Access" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-17-programmatic-environment-access-sticky.svg" alt="Sticky Note: 1.17 Programmatic Environment Access" width="30%">
 </a>
 
 
@@ -1770,14 +1770,14 @@ public class EnvironmentInspector {
 
 ### 1.18 Property Placeholders
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-handwritten.svg" alt="Handwritten: 1.18 Property Placeholders" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-handwritten.svg" alt="Handwritten: 1.18 Property Placeholders" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-diagram.svg" alt="Diagram: 1.18 Property Placeholders" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-diagram.svg" alt="Diagram: 1.18 Property Placeholders" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-sticky.svg" alt="Sticky Note: 1.18 Property Placeholders" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-18-property-placeholders-sticky.svg" alt="Sticky Note: 1.18 Property Placeholders" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ Nested placeholders are resolved recursively.
 
 ### 1.19 Encryption of Configuration Values
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-handwritten.svg" alt="Handwritten: 1.19 Encryption of Configuration Values" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-handwritten.svg" alt="Handwritten: 1.19 Encryption of Configuration Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-diagram.svg" alt="Diagram: 1.19 Encryption of Configuration Values" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-diagram.svg" alt="Diagram: 1.19 Encryption of Configuration Values" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-sticky.svg" alt="Sticky Note: 1.19 Encryption of Configuration Values" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-19-encryption-of-configuration-values-sticky.svg" alt="Sticky Note: 1.19 Encryption of Configuration Values" width="30%">
 </a>
 
 
@@ -1835,14 +1835,14 @@ The password is decrypted at runtime.
 
 ### 1.20 Lazy Binding with @ConfigurationPropertiesScan
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-handwritten.svg" alt="Handwritten: 1.20 Lazy Binding with @ConfigurationPropertiesScan" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-handwritten.svg" alt="Handwritten: 1.20 Lazy Binding with @ConfigurationPropertiesScan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-diagram.svg" alt="Diagram: 1.20 Lazy Binding with @ConfigurationPropertiesScan" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-diagram.svg" alt="Diagram: 1.20 Lazy Binding with @ConfigurationPropertiesScan" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-sticky.svg" alt="Sticky Note: 1.20 Lazy Binding with @ConfigurationPropertiesScan" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-20-lazy-binding-with-configurationpropertiesscan-sticky.svg" alt="Sticky Note: 1.20 Lazy Binding with @ConfigurationPropertiesScan" width="30%">
 </a>
 
 
@@ -1870,14 +1870,14 @@ public class CacheProperties {
 
 ### 1.21 Custom PropertySource
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-handwritten.svg" alt="Handwritten: 1.21 Custom PropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-handwritten.svg" alt="Handwritten: 1.21 Custom PropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-diagram.svg" alt="Diagram: 1.21 Custom PropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-diagram.svg" alt="Diagram: 1.21 Custom PropertySource" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-sticky.svg" alt="Sticky Note: 1.21 Custom PropertySource" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-21-custom-propertysource-sticky.svg" alt="Sticky Note: 1.21 Custom PropertySource" width="30%">
 </a>
 
 
@@ -1924,14 +1924,14 @@ public class DatabasePropertySourceConfig implements ApplicationContextInitializ
 
 ### 1.22 Testing with Custom Configuration
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-handwritten.svg" alt="Handwritten: 1.22 Testing with Custom Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-handwritten.svg" alt="Handwritten: 1.22 Testing with Custom Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-diagram.svg" alt="Diagram: 1.22 Testing with Custom Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-diagram.svg" alt="Diagram: 1.22 Testing with Custom Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-sticky.svg" alt="Sticky Note: 1.22 Testing with Custom Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-22-testing-with-custom-configuration-sticky.svg" alt="Sticky Note: 1.22 Testing with Custom Configuration" width="30%">
 </a>
 
 
@@ -1975,14 +1975,14 @@ class OrderServiceTest {
 
 ### 1.23 Building Config Hierarchy in Large Projects
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-handwritten.svg" alt="Handwritten: 1.23 Building Config Hierarchy in Large Projects" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-handwritten.svg" alt="Handwritten: 1.23 Building Config Hierarchy in Large Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-diagram.svg" alt="Diagram: 1.23 Building Config Hierarchy in Large Projects" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-diagram.svg" alt="Diagram: 1.23 Building Config Hierarchy in Large Projects" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-sticky.svg" alt="Sticky Note: 1.23 Building Config Hierarchy in Large Projects" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-23-building-config-hierarchy-in-large-projects-sticky.svg" alt="Sticky Note: 1.23 Building Config Hierarchy in Large Projects" width="30%">
 </a>
 
 
@@ -2011,14 +2011,14 @@ java -jar order-service.jar \
 
 ### 1.24 Spring Cloud Config Integration
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-handwritten.svg" alt="Handwritten: 1.24 Spring Cloud Config Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-handwritten.svg" alt="Handwritten: 1.24 Spring Cloud Config Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-diagram.svg" alt="Diagram: 1.24 Spring Cloud Config Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-diagram.svg" alt="Diagram: 1.24 Spring Cloud Config Integration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-sticky.svg" alt="Sticky Note: 1.24 Spring Cloud Config Integration" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-24-spring-cloud-config-integration-sticky.svg" alt="Sticky Note: 1.24 Spring Cloud Config Integration" width="30%">
 </a>
 
 
@@ -2048,14 +2048,14 @@ spring:
 
 ### 1.25 Best Practices Summary
 
-<a href="../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-handwritten.svg" alt="Handwritten: 1.25 Best Practices Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-handwritten.svg" alt="Handwritten: 1.25 Best Practices Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-diagram.svg" alt="Diagram: 1.25 Best Practices Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-diagram.svg" alt="Diagram: 1.25 Best Practices Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-sticky.svg" alt="Sticky Note: 1.25 Best Practices Summary" width="30%">
+<a href="../../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/12-configuration/1-25-best-practices-summary-sticky.svg" alt="Sticky Note: 1.25 Best Practices Summary" width="30%">
 </a>
 
 

@@ -46,36 +46,36 @@ flowchart LR
 
 ### The Enterprise Need
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" alt="Handwritten: The Enterprise Need" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" alt="Handwritten: The Enterprise Need" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" alt="Diagram: The Enterprise Need" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" alt="Diagram: The Enterprise Need" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" alt="Sticky Note: The Enterprise Need" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" alt="Handwritten: The Enterprise Need" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" alt="Diagram: The Enterprise Need" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" alt="Sticky Note: The Enterprise Need" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" alt="Sticky Note: The Enterprise Need" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" alt="Handwritten: The Enterprise Need" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" alt="Handwritten: The Enterprise Need" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" alt="Diagram: The Enterprise Need" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" alt="Diagram: The Enterprise Need" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" alt="Sticky Note: The Enterprise Need" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" alt="Sticky Note: The Enterprise Need" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-handwritten.svg" alt="Handwritten: The Enterprise Need" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-diagram.svg" alt="Diagram: The Enterprise Need" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/the-enterprise-need-sticky.svg" alt="Sticky Note: The Enterprise Need" width="30%">
 </a>
 
 
@@ -99,36 +99,36 @@ flowchart TB
 
 ### Hyperledger Fabric Architecture
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" alt="Handwritten: Hyperledger Fabric Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" alt="Handwritten: Hyperledger Fabric Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" alt="Diagram: Hyperledger Fabric Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" alt="Diagram: Hyperledger Fabric Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" alt="Sticky Note: Hyperledger Fabric Architecture" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" alt="Handwritten: Hyperledger Fabric Architecture" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" alt="Diagram: Hyperledger Fabric Architecture" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" alt="Sticky Note: Hyperledger Fabric Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" alt="Sticky Note: Hyperledger Fabric Architecture" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" alt="Handwritten: Hyperledger Fabric Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" alt="Handwritten: Hyperledger Fabric Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" alt="Diagram: Hyperledger Fabric Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" alt="Diagram: Hyperledger Fabric Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" alt="Sticky Note: Hyperledger Fabric Architecture" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" alt="Sticky Note: Hyperledger Fabric Architecture" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-handwritten.svg" alt="Handwritten: Hyperledger Fabric Architecture" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-diagram.svg" alt="Diagram: Hyperledger Fabric Architecture" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/hyperledger-fabric-architecture-sticky.svg" alt="Sticky Note: Hyperledger Fabric Architecture" width="30%">
 </a>
 
 
@@ -196,36 +196,36 @@ flowchart TB
 
 ### Identity and MSP (Membership Service Provider)
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" alt="Handwritten: Identity and MSP (Membership Service Provider)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" alt="Handwritten: Identity and MSP (Membership Service Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" alt="Diagram: Identity and MSP (Membership Service Provider)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" alt="Diagram: Identity and MSP (Membership Service Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" alt="Sticky Note: Identity and MSP (Membership Service Provider)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" alt="Handwritten: Identity and MSP (Membership Service Provider)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" alt="Diagram: Identity and MSP (Membership Service Provider)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" alt="Sticky Note: Identity and MSP (Membership Service Provider)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" alt="Sticky Note: Identity and MSP (Membership Service Provider)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" alt="Handwritten: Identity and MSP (Membership Service Provider)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" alt="Handwritten: Identity and MSP (Membership Service Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" alt="Diagram: Identity and MSP (Membership Service Provider)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" alt="Diagram: Identity and MSP (Membership Service Provider)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" alt="Sticky Note: Identity and MSP (Membership Service Provider)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" alt="Sticky Note: Identity and MSP (Membership Service Provider)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-handwritten.svg" alt="Handwritten: Identity and MSP (Membership Service Provider)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-diagram.svg" alt="Diagram: Identity and MSP (Membership Service Provider)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/identity-and-msp-membership-service-provider-sticky.svg" alt="Sticky Note: Identity and MSP (Membership Service Provider)" width="30%">
 </a>
 
 
@@ -252,36 +252,36 @@ flowchart TB
 
 ### Channels
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" alt="Handwritten: Channels" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" alt="Handwritten: Channels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" alt="Diagram: Channels" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" alt="Diagram: Channels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" alt="Sticky Note: Channels" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" alt="Handwritten: Channels" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" alt="Diagram: Channels" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" alt="Sticky Note: Channels" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" alt="Sticky Note: Channels" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" alt="Handwritten: Channels" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" alt="Handwritten: Channels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" alt="Diagram: Channels" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" alt="Diagram: Channels" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" alt="Sticky Note: Channels" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" alt="Sticky Note: Channels" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-handwritten.svg" alt="Handwritten: Channels" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-diagram.svg" alt="Diagram: Channels" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/channels-sticky.svg" alt="Sticky Note: Channels" width="30%">
 </a>
 
 
@@ -312,36 +312,36 @@ flowchart TB
 
 ### Private Data Collections (PDC)
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" alt="Handwritten: Private Data Collections (PDC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" alt="Handwritten: Private Data Collections (PDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" alt="Diagram: Private Data Collections (PDC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" alt="Diagram: Private Data Collections (PDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" alt="Sticky Note: Private Data Collections (PDC)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" alt="Handwritten: Private Data Collections (PDC)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" alt="Diagram: Private Data Collections (PDC)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" alt="Sticky Note: Private Data Collections (PDC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" alt="Sticky Note: Private Data Collections (PDC)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" alt="Handwritten: Private Data Collections (PDC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" alt="Handwritten: Private Data Collections (PDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" alt="Diagram: Private Data Collections (PDC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" alt="Diagram: Private Data Collections (PDC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" alt="Sticky Note: Private Data Collections (PDC)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" alt="Sticky Note: Private Data Collections (PDC)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-handwritten.svg" alt="Handwritten: Private Data Collections (PDC)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-diagram.svg" alt="Diagram: Private Data Collections (PDC)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/private-data-collections-pdc-sticky.svg" alt="Sticky Note: Private Data Collections (PDC)" width="30%">
 </a>
 
 
@@ -365,36 +365,36 @@ This enables scenarios where:
 
 ### Chaincode Lifecycle
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" alt="Handwritten: Chaincode Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" alt="Handwritten: Chaincode Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" alt="Diagram: Chaincode Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" alt="Diagram: Chaincode Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" alt="Sticky Note: Chaincode Lifecycle" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" alt="Handwritten: Chaincode Lifecycle" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" alt="Diagram: Chaincode Lifecycle" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" alt="Sticky Note: Chaincode Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" alt="Sticky Note: Chaincode Lifecycle" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" alt="Handwritten: Chaincode Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" alt="Handwritten: Chaincode Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" alt="Diagram: Chaincode Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" alt="Diagram: Chaincode Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" alt="Sticky Note: Chaincode Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" alt="Sticky Note: Chaincode Lifecycle" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-handwritten.svg" alt="Handwritten: Chaincode Lifecycle" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-diagram.svg" alt="Diagram: Chaincode Lifecycle" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-lifecycle-sticky.svg" alt="Sticky Note: Chaincode Lifecycle" width="30%">
 </a>
 
 
@@ -425,36 +425,36 @@ flowchart LR
 
 ### Endorsement Policies
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" alt="Handwritten: Endorsement Policies" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" alt="Handwritten: Endorsement Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" alt="Diagram: Endorsement Policies" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" alt="Diagram: Endorsement Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" alt="Sticky Note: Endorsement Policies" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" alt="Handwritten: Endorsement Policies" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" alt="Diagram: Endorsement Policies" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" alt="Sticky Note: Endorsement Policies" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" alt="Sticky Note: Endorsement Policies" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" alt="Handwritten: Endorsement Policies" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" alt="Handwritten: Endorsement Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" alt="Diagram: Endorsement Policies" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" alt="Diagram: Endorsement Policies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" alt="Sticky Note: Endorsement Policies" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" alt="Sticky Note: Endorsement Policies" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-handwritten.svg" alt="Handwritten: Endorsement Policies" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-diagram.svg" alt="Diagram: Endorsement Policies" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/endorsement-policies-sticky.svg" alt="Sticky Note: Endorsement Policies" width="30%">
 </a>
 
 
@@ -509,36 +509,36 @@ sequenceDiagram
 
 ### Chaincode Example (Node.js)
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" alt="Handwritten: Chaincode Example (Node.js)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" alt="Handwritten: Chaincode Example (Node.js)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" alt="Diagram: Chaincode Example (Node.js)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" alt="Diagram: Chaincode Example (Node.js)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" alt="Sticky Note: Chaincode Example (Node.js)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" alt="Handwritten: Chaincode Example (Node.js)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" alt="Diagram: Chaincode Example (Node.js)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" alt="Sticky Note: Chaincode Example (Node.js)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" alt="Sticky Note: Chaincode Example (Node.js)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" alt="Handwritten: Chaincode Example (Node.js)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" alt="Handwritten: Chaincode Example (Node.js)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" alt="Diagram: Chaincode Example (Node.js)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" alt="Diagram: Chaincode Example (Node.js)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" alt="Sticky Note: Chaincode Example (Node.js)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" alt="Sticky Note: Chaincode Example (Node.js)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-handwritten.svg" alt="Handwritten: Chaincode Example (Node.js)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-diagram.svg" alt="Diagram: Chaincode Example (Node.js)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/chaincode-example-node-js-sticky.svg" alt="Sticky Note: Chaincode Example (Node.js)" width="30%">
 </a>
 
 
@@ -626,36 +626,36 @@ export class AssetTransfer extends Contract {
 
 ### Consensus in Enterprise (Raft)
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" alt="Handwritten: Consensus in Enterprise (Raft)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" alt="Handwritten: Consensus in Enterprise (Raft)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" alt="Diagram: Consensus in Enterprise (Raft)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" alt="Diagram: Consensus in Enterprise (Raft)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" alt="Sticky Note: Consensus in Enterprise (Raft)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" alt="Handwritten: Consensus in Enterprise (Raft)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" alt="Diagram: Consensus in Enterprise (Raft)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" alt="Sticky Note: Consensus in Enterprise (Raft)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" alt="Sticky Note: Consensus in Enterprise (Raft)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" alt="Handwritten: Consensus in Enterprise (Raft)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" alt="Handwritten: Consensus in Enterprise (Raft)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" alt="Diagram: Consensus in Enterprise (Raft)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" alt="Diagram: Consensus in Enterprise (Raft)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" alt="Sticky Note: Consensus in Enterprise (Raft)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" alt="Sticky Note: Consensus in Enterprise (Raft)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-handwritten.svg" alt="Handwritten: Consensus in Enterprise (Raft)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-diagram.svg" alt="Diagram: Consensus in Enterprise (Raft)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/consensus-in-enterprise-raft-sticky.svg" alt="Sticky Note: Consensus in Enterprise (Raft)" width="30%">
 </a>
 
 
@@ -686,36 +686,36 @@ sequenceDiagram
 
 ### Enterprise Use Cases
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" alt="Handwritten: Enterprise Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" alt="Handwritten: Enterprise Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" alt="Diagram: Enterprise Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" alt="Diagram: Enterprise Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" alt="Sticky Note: Enterprise Use Cases" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" alt="Handwritten: Enterprise Use Cases" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" alt="Diagram: Enterprise Use Cases" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" alt="Sticky Note: Enterprise Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" alt="Sticky Note: Enterprise Use Cases" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" alt="Handwritten: Enterprise Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" alt="Handwritten: Enterprise Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" alt="Diagram: Enterprise Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" alt="Diagram: Enterprise Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" alt="Sticky Note: Enterprise Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" alt="Sticky Note: Enterprise Use Cases" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-handwritten.svg" alt="Handwritten: Enterprise Use Cases" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-diagram.svg" alt="Diagram: Enterprise Use Cases" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/enterprise-use-cases-sticky.svg" alt="Sticky Note: Enterprise Use Cases" width="30%">
 </a>
 
 
@@ -732,36 +732,36 @@ sequenceDiagram
 
 ### Public vs Enterprise Comparison
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" alt="Handwritten: Public vs Enterprise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" alt="Handwritten: Public vs Enterprise Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" alt="Diagram: Public vs Enterprise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" alt="Diagram: Public vs Enterprise Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" alt="Sticky Note: Public vs Enterprise Comparison" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" alt="Handwritten: Public vs Enterprise Comparison" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" alt="Diagram: Public vs Enterprise Comparison" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" alt="Sticky Note: Public vs Enterprise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" alt="Sticky Note: Public vs Enterprise Comparison" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" alt="Handwritten: Public vs Enterprise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" alt="Handwritten: Public vs Enterprise Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" alt="Diagram: Public vs Enterprise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" alt="Diagram: Public vs Enterprise Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" alt="Sticky Note: Public vs Enterprise Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" alt="Sticky Note: Public vs Enterprise Comparison" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-handwritten.svg" alt="Handwritten: Public vs Enterprise Comparison" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-diagram.svg" alt="Diagram: Public vs Enterprise Comparison" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/public-vs-enterprise-comparison-sticky.svg" alt="Sticky Note: Public vs Enterprise Comparison" width="30%">
 </a>
 
 
@@ -781,36 +781,36 @@ sequenceDiagram
 
 ### When to Use Each
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/09-enterprise/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
 </a>
 
 

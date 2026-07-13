@@ -45,14 +45,14 @@ flowchart LR
 
 ### 18.1 Capstone Design Philosophy
 
-<a href="../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-handwritten.svg" alt="Handwritten: 18.1 Capstone Design Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-handwritten.svg" alt="Handwritten: 18.1 Capstone Design Philosophy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-diagram.svg" alt="Diagram: 18.1 Capstone Design Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-diagram.svg" alt="Diagram: 18.1 Capstone Design Philosophy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-sticky.svg" alt="Sticky Note: 18.1 Capstone Design Philosophy" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-1-capstone-design-philosophy-sticky.svg" alt="Sticky Note: 18.1 Capstone Design Philosophy" width="30%">
 </a>
 
 
@@ -66,14 +66,14 @@ The capstone project is the culminating assessment of DevOps mastery. Unlike ind
 
 ### 18.2 Project Planning and Estimation
 
-<a href="../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-handwritten.svg" alt="Handwritten: 18.2 Project Planning and Estimation" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-handwritten.svg" alt="Handwritten: 18.2 Project Planning and Estimation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-diagram.svg" alt="Diagram: 18.2 Project Planning and Estimation" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-diagram.svg" alt="Diagram: 18.2 Project Planning and Estimation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-sticky.svg" alt="Sticky Note: 18.2 Project Planning and Estimation" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-2-project-planning-and-estimation-sticky.svg" alt="Sticky Note: 18.2 Project Planning and Estimation" width="30%">
 </a>
 
 
@@ -106,14 +106,14 @@ flowchart TD
 
 ### 18.3 Pipeline Stage Design
 
-<a href="../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-handwritten.svg" alt="Handwritten: 18.3 Pipeline Stage Design" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-handwritten.svg" alt="Handwritten: 18.3 Pipeline Stage Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-diagram.svg" alt="Diagram: 18.3 Pipeline Stage Design" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-diagram.svg" alt="Diagram: 18.3 Pipeline Stage Design" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-sticky.svg" alt="Sticky Note: 18.3 Pipeline Stage Design" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-3-pipeline-stage-design-sticky.svg" alt="Sticky Note: 18.3 Pipeline Stage Design" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ Each pipeline stage has a specific purpose, trigger, and gate:
 
 ### 18.4 Risk Mitigation Strategies
 
-<a href="../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-handwritten.svg" alt="Handwritten: 18.4 Risk Mitigation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-handwritten.svg" alt="Handwritten: 18.4 Risk Mitigation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-diagram.svg" alt="Diagram: 18.4 Risk Mitigation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-diagram.svg" alt="Diagram: 18.4 Risk Mitigation Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-sticky.svg" alt="Sticky Note: 18.4 Risk Mitigation Strategies" width="30%">
+<a href="../../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/18-capstone/18-4-risk-mitigation-strategies-sticky.svg" alt="Sticky Note: 18.4 Risk Mitigation Strategies" width="30%">
 </a>
 
 

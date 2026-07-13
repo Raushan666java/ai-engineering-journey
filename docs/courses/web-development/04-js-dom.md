@@ -60,14 +60,14 @@ graph TD
 
 ### 4.1 Selecting Elements
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-handwritten.svg" alt="Handwritten: 4.1 Selecting Elements" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-handwritten.svg" alt="Handwritten: 4.1 Selecting Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-diagram.svg" alt="Diagram: 4.1 Selecting Elements" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-diagram.svg" alt="Diagram: 4.1 Selecting Elements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-sticky.svg" alt="Sticky Note: 4.1 Selecting Elements" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-1-selecting-elements-sticky.svg" alt="Sticky Note: 4.1 Selecting Elements" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ const liveItems = document.getElementsByClassName('item');
 
 ### 4.2 Traversal
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-handwritten.svg" alt="Handwritten: 4.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-handwritten.svg" alt="Handwritten: 4.2 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-diagram.svg" alt="Diagram: 4.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-diagram.svg" alt="Diagram: 4.2 Traversal" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-sticky.svg" alt="Sticky Note: 4.2 Traversal" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-2-traversal-sticky.svg" alt="Sticky Note: 4.2 Traversal" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ el.matches('.active');          // Does el match selector?
 
 ### 4.3 Manipulation
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-handwritten.svg" alt="Handwritten: 4.3 Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-handwritten.svg" alt="Handwritten: 4.3 Manipulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-diagram.svg" alt="Diagram: 4.3 Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-diagram.svg" alt="Diagram: 4.3 Manipulation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-sticky.svg" alt="Sticky Note: 4.3 Manipulation" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-3-manipulation-sticky.svg" alt="Sticky Note: 4.3 Manipulation" width="30%">
 </a>
 
 
@@ -214,14 +214,14 @@ console.log(computed.fontSize);
 
 ### 4.4 Events
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-4-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-4-events-handwritten.svg" alt="Handwritten: 4.4 Events" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-4-events-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-4-events-handwritten.svg" alt="Handwritten: 4.4 Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-4-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-4-events-diagram.svg" alt="Diagram: 4.4 Events" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-4-events-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-4-events-diagram.svg" alt="Diagram: 4.4 Events" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-4-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-4-events-sticky.svg" alt="Sticky Note: 4.4 Events" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-4-events-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-4-events-sticky.svg" alt="Sticky Note: 4.4 Events" width="30%">
 </a>
 
 
@@ -310,14 +310,14 @@ document.addEventListener('userLogin', (e) => {
 
 ### 4.5 FormData
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-handwritten.svg" alt="Handwritten: 4.5 FormData" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-handwritten.svg" alt="Handwritten: 4.5 FormData" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-diagram.svg" alt="Diagram: 4.5 FormData" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-diagram.svg" alt="Diagram: 4.5 FormData" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-sticky.svg" alt="Sticky Note: 4.5 FormData" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-5-formdata-sticky.svg" alt="Sticky Note: 4.5 FormData" width="30%">
 </a>
 
 
@@ -358,14 +358,14 @@ form.addEventListener('submit', (event) => {
 
 ### 4.6 IntersectionObserver
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-handwritten.svg" alt="Handwritten: 4.6 IntersectionObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-handwritten.svg" alt="Handwritten: 4.6 IntersectionObserver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-diagram.svg" alt="Diagram: 4.6 IntersectionObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-diagram.svg" alt="Diagram: 4.6 IntersectionObserver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-sticky.svg" alt="Sticky Note: 4.6 IntersectionObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-6-intersectionobserver-sticky.svg" alt="Sticky Note: 4.6 IntersectionObserver" width="30%">
 </a>
 
 
@@ -395,14 +395,14 @@ document.querySelectorAll('img[data-src]').forEach((img) => observer.observe(img
 
 ### 4.7 MutationObserver
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-handwritten.svg" alt="Handwritten: 4.7 MutationObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-handwritten.svg" alt="Handwritten: 4.7 MutationObserver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-diagram.svg" alt="Diagram: 4.7 MutationObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-diagram.svg" alt="Diagram: 4.7 MutationObserver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-sticky.svg" alt="Sticky Note: 4.7 MutationObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-7-mutationobserver-sticky.svg" alt="Sticky Note: 4.7 MutationObserver" width="30%">
 </a>
 
 
@@ -446,14 +446,14 @@ observer.observe(document.getElementById('comments-section'), {
 
 ### 4.8 Custom Element Lifecycle
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-handwritten.svg" alt="Handwritten: 4.8 Custom Element Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-handwritten.svg" alt="Handwritten: 4.8 Custom Element Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-diagram.svg" alt="Diagram: 4.8 Custom Element Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-diagram.svg" alt="Diagram: 4.8 Custom Element Lifecycle" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-sticky.svg" alt="Sticky Note: 4.8 Custom Element Lifecycle" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-8-custom-element-lifecycle-sticky.svg" alt="Sticky Note: 4.8 Custom Element Lifecycle" width="30%">
 </a>
 
 
@@ -527,14 +527,14 @@ Usage in HTML:
 
 ### 4.9 ResizeObserver
 
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-handwritten.svg" alt="Handwritten: 4.9 ResizeObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-handwritten.svg" alt="Handwritten: 4.9 ResizeObserver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-diagram.svg" alt="Diagram: 4.9 ResizeObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-diagram.svg" alt="Diagram: 4.9 ResizeObserver" width="30%">
 </a>
-<a href="../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-sticky.svg" alt="Sticky Note: 4.9 ResizeObserver" width="30%">
+<a href="../../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/web-development/04-js-dom/4-9-resizeobserver-sticky.svg" alt="Sticky Note: 4.9 ResizeObserver" width="30%">
 </a>
 
 

@@ -42,14 +42,14 @@ flowchart LR
 
 ### Intermediate Representations
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-handwritten.svg" alt="Handwritten: Intermediate Representations" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-handwritten.svg" alt="Handwritten: Intermediate Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-diagram.svg" alt="Diagram: Intermediate Representations" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-diagram.svg" alt="Diagram: Intermediate Representations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-sticky.svg" alt="Sticky Note: Intermediate Representations" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/intermediate-representations-sticky.svg" alt="Sticky Note: Intermediate Representations" width="30%">
 </a>
 
 
@@ -63,14 +63,14 @@ The choice of IR significantly influences the compiler's optimization capability
 
 ### Abstract Syntax Trees
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-handwritten.svg" alt="Handwritten: Abstract Syntax Trees" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-handwritten.svg" alt="Handwritten: Abstract Syntax Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-diagram.svg" alt="Diagram: Abstract Syntax Trees" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-diagram.svg" alt="Diagram: Abstract Syntax Trees" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-sticky.svg" alt="Sticky Note: Abstract Syntax Trees" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/abstract-syntax-trees-sticky.svg" alt="Sticky Note: Abstract Syntax Trees" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ An AST node stores its operator (or token kind) and pointers to its children. Th
 
 ### Postfix Notation
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-handwritten.svg" alt="Handwritten: Postfix Notation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-handwritten.svg" alt="Handwritten: Postfix Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-diagram.svg" alt="Diagram: Postfix Notation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-diagram.svg" alt="Diagram: Postfix Notation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-sticky.svg" alt="Sticky Note: Postfix Notation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/postfix-notation-sticky.svg" alt="Sticky Note: Postfix Notation" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 
 ### Three-Address Code
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-handwritten.svg" alt="Handwritten: Three-Address Code" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-handwritten.svg" alt="Handwritten: Three-Address Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-diagram.svg" alt="Diagram: Three-Address Code" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-diagram.svg" alt="Diagram: Three-Address Code" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-sticky.svg" alt="Sticky Note: Three-Address Code" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/three-address-code-sticky.svg" alt="Sticky Note: Three-Address Code" width="30%">
 </a>
 
 
@@ -145,14 +145,14 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 
 ### Types of Three-Address Code Instructions
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-handwritten.svg" alt="Handwritten: Types of Three-Address Code Instructions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-handwritten.svg" alt="Handwritten: Types of Three-Address Code Instructions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-diagram.svg" alt="Diagram: Types of Three-Address Code Instructions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-diagram.svg" alt="Diagram: Types of Three-Address Code Instructions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-sticky.svg" alt="Sticky Note: Types of Three-Address Code Instructions" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/types-of-three-address-code-instructions-sticky.svg" alt="Sticky Note: Types of Three-Address Code Instructions" width="30%">
 </a>
 
 
@@ -175,14 +175,14 @@ Postfix is evaluated by a stack machine: operands push onto the stack, operators
 
 ### Quadruples, Triples, and Indirect Triples
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-handwritten.svg" alt="Handwritten: Quadruples, Triples, and Indirect Triples" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-handwritten.svg" alt="Handwritten: Quadruples, Triples, and Indirect Triples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-diagram.svg" alt="Diagram: Quadruples, Triples, and Indirect Triples" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-diagram.svg" alt="Diagram: Quadruples, Triples, and Indirect Triples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-sticky.svg" alt="Sticky Note: Quadruples, Triples, and Indirect Triples" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/quadruples-triples-and-indirect-triples-sticky.svg" alt="Sticky Note: Quadruples, Triples, and Indirect Triples" width="30%">
 </a>
 
 
@@ -206,14 +206,14 @@ Triples save space by omitting the result field, but they complicate code moveme
 
 ### Directed Acyclic Graphs
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-handwritten.svg" alt="Handwritten: Directed Acyclic Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-handwritten.svg" alt="Handwritten: Directed Acyclic Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-diagram.svg" alt="Diagram: Directed Acyclic Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-diagram.svg" alt="Diagram: Directed Acyclic Graphs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-sticky.svg" alt="Sticky Note: Directed Acyclic Graphs" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/directed-acyclic-graphs-sticky.svg" alt="Sticky Note: Directed Acyclic Graphs" width="30%">
 </a>
 
 
@@ -252,14 +252,14 @@ DAGs enable:
 
 ### Generating TAC for Statements
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-handwritten.svg" alt="Handwritten: Generating TAC for Statements" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-handwritten.svg" alt="Handwritten: Generating TAC for Statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-diagram.svg" alt="Diagram: Generating TAC for Statements" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-diagram.svg" alt="Diagram: Generating TAC for Statements" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-sticky.svg" alt="Sticky Note: Generating TAC for Statements" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/generating-tac-for-statements-sticky.svg" alt="Sticky Note: Generating TAC for Statements" width="30%">
 </a>
 
 
@@ -326,14 +326,14 @@ exit:
 
 ### TAC Generation from AST
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-handwritten.svg" alt="Handwritten: TAC Generation from AST" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-handwritten.svg" alt="Handwritten: TAC Generation from AST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-diagram.svg" alt="Diagram: TAC Generation from AST" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-diagram.svg" alt="Diagram: TAC Generation from AST" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-sticky.svg" alt="Sticky Note: TAC Generation from AST" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/tac-generation-from-ast-sticky.svg" alt="Sticky Note: TAC Generation from AST" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ Labels are generated sequentially (L1, L2, L3, ...). Temporaries are generated s
 
 ### Complete TypeScript TAC Generator
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-handwritten.svg" alt="Handwritten: Complete TypeScript TAC Generator" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-handwritten.svg" alt="Handwritten: Complete TypeScript TAC Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-diagram.svg" alt="Diagram: Complete TypeScript TAC Generator" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-diagram.svg" alt="Diagram: Complete TypeScript TAC Generator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-sticky.svg" alt="Sticky Note: Complete TypeScript TAC Generator" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/complete-typescript-tac-generator-sticky.svg" alt="Sticky Note: Complete TypeScript TAC Generator" width="30%">
 </a>
 
 
@@ -965,14 +965,14 @@ dag2.toTAC().forEach((instr, i) => {
 
 ### Concept Comparison
 
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/06-intermediate-code/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
 </a>
 
 

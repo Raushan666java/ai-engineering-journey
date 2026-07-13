@@ -14,14 +14,14 @@
 
 ### Chapter at a Glance
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
 </a>
 
 
@@ -61,14 +61,14 @@ flowchart LR
 
 ### Numbered Steps of Decision Making
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-handwritten.svg" alt="Handwritten: Numbered Steps of Decision Making" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-handwritten.svg" alt="Handwritten: Numbered Steps of Decision Making" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-diagram.svg" alt="Diagram: Numbered Steps of Decision Making" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-diagram.svg" alt="Diagram: Numbered Steps of Decision Making" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-sticky.svg" alt="Sticky Note: Numbered Steps of Decision Making" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-steps-of-decision-making-sticky.svg" alt="Sticky Note: Numbered Steps of Decision Making" width="30%">
 </a>
 
 
@@ -79,14 +79,14 @@ flowchart LR
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -103,14 +103,14 @@ CONTINUE with rest of program
 
 ### Decision Making Constructs in C
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-handwritten.svg" alt="Handwritten: Decision Making Constructs in C" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-handwritten.svg" alt="Handwritten: Decision Making Constructs in C" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-diagram.svg" alt="Diagram: Decision Making Constructs in C" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-diagram.svg" alt="Diagram: Decision Making Constructs in C" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-sticky.svg" alt="Sticky Note: Decision Making Constructs in C" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/decision-making-constructs-in-c-sticky.svg" alt="Sticky Note: Decision Making Constructs in C" width="30%">
 </a>
 
 
@@ -131,14 +131,14 @@ The `if` statement executes a block of code only when a condition evaluates to t
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -146,14 +146,14 @@ The `if` statement works like a security turnstile at a subway station. The turn
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -165,14 +165,14 @@ if (condition) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -183,14 +183,14 @@ if (condition) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -201,14 +201,14 @@ END IF
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -248,14 +248,14 @@ int main(void)
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -318,14 +318,14 @@ x is 5
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -334,14 +334,14 @@ x is 5
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -354,14 +354,14 @@ x is 5
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -381,14 +381,14 @@ The `if-else` statement provides two mutually exclusive code paths — one for w
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -396,14 +396,14 @@ An `if-else` is like a fork in a hiking trail. A signpost asks: "Is the bridge a
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -417,14 +417,14 @@ if (condition) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -435,14 +435,14 @@ if (condition) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -455,14 +455,14 @@ END IF
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -505,14 +505,14 @@ int main(void)
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -605,14 +605,14 @@ This prints only when x <= 0
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -621,14 +621,14 @@ This prints only when x <= 0
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -641,14 +641,14 @@ This prints only when x <= 0
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -668,14 +668,14 @@ The `if-else if` ladder tests multiple conditions in sequence and executes the b
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -683,14 +683,14 @@ The `if-else if` ladder is like a medical triage system in an emergency room. A 
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -708,14 +708,14 @@ if (condition1) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -727,14 +727,14 @@ if (condition1) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -751,14 +751,14 @@ END IF
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -811,14 +811,14 @@ int main(void)
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -852,14 +852,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -868,14 +868,14 @@ int main(void)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -888,14 +888,14 @@ int main(void)
 
 ### Important Rule: Order Matters
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-handwritten.svg" alt="Handwritten: Important Rule: Order Matters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-handwritten.svg" alt="Handwritten: Important Rule: Order Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-diagram.svg" alt="Diagram: Important Rule: Order Matters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-diagram.svg" alt="Diagram: Important Rule: Order Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-sticky.svg" alt="Sticky Note: Important Rule: Order Matters" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/important-rule-order-matters-sticky.svg" alt="Sticky Note: Important Rule: Order Matters" width="30%">
 </a>
 
 
@@ -917,14 +917,14 @@ if (score >= 60) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -943,14 +943,14 @@ A nested `if-else` is an `if-else` statement placed inside another `if` or `else
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -958,14 +958,14 @@ Nested `if-else` is like airport security screening. First check: "Do you have a
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -985,14 +985,14 @@ if (outer_condition) {
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -1034,14 +1034,14 @@ int main(void)
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -1077,14 +1077,14 @@ Largest: 25
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1093,14 +1093,14 @@ Largest: 25
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1112,14 +1112,14 @@ Largest: 25
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1139,14 +1139,14 @@ The dangling else is a classic ambiguity in C: when `if` statements are nested w
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1154,14 +1154,14 @@ The dangling else is like a sign in a building that says "If you see the recepti
 
 ### The Problem
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/the-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/the-problem-handwritten.svg" alt="Handwritten: The Problem" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/the-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/the-problem-handwritten.svg" alt="Handwritten: The Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/the-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/the-problem-diagram.svg" alt="Diagram: The Problem" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/the-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/the-problem-diagram.svg" alt="Diagram: The Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/the-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/the-problem-sticky.svg" alt="Sticky Note: The Problem" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/the-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/the-problem-sticky.svg" alt="Sticky Note: The Problem" width="30%">
 </a>
 
 
@@ -1178,14 +1178,14 @@ Despite the indentation suggesting `else` belongs to `if (x > 0)`, the compiler 
 
 ### The Fix
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/the-fix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/the-fix-handwritten.svg" alt="Handwritten: The Fix" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/the-fix-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/the-fix-handwritten.svg" alt="Handwritten: The Fix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/the-fix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/the-fix-diagram.svg" alt="Diagram: The Fix" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/the-fix-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/the-fix-diagram.svg" alt="Diagram: The Fix" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/the-fix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/the-fix-sticky.svg" alt="Sticky Note: The Fix" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/the-fix-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/the-fix-sticky.svg" alt="Sticky Note: The Fix" width="30%">
 </a>
 
 
@@ -1202,14 +1202,14 @@ if (x > 0) {
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -1223,14 +1223,14 @@ if (x > 0) {
 
 ### Code Example
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-handwritten.svg" alt="Handwritten: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-diagram.svg" alt="Diagram: Code Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/code-example-sticky.svg" alt="Sticky Note: Code Example" width="30%">
 </a>
 
 
@@ -1261,14 +1261,14 @@ x is not positive
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1277,14 +1277,14 @@ x is not positive
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1301,14 +1301,14 @@ x is not positive
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1316,14 +1316,14 @@ A `switch` statement is like a vending machine. You press a button (the expressi
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1343,14 +1343,14 @@ switch (expression) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -1363,14 +1363,14 @@ switch (expression) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -1392,14 +1392,14 @@ END SWITCH
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -1455,14 +1455,14 @@ If `day = 2` and we artificially remove `break` from case 2:
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -1547,14 +1547,14 @@ int main(void)
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1566,14 +1566,14 @@ int main(void)
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1587,14 +1587,14 @@ int main(void)
 
 ### Switch Rules and Limitations
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-handwritten.svg" alt="Handwritten: Switch Rules and Limitations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-handwritten.svg" alt="Handwritten: Switch Rules and Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-diagram.svg" alt="Diagram: Switch Rules and Limitations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-diagram.svg" alt="Diagram: Switch Rules and Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-sticky.svg" alt="Sticky Note: Switch Rules and Limitations" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/switch-rules-and-limitations-sticky.svg" alt="Sticky Note: Switch Rules and Limitations" width="30%">
 </a>
 
 
@@ -1606,14 +1606,14 @@ int main(void)
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1628,14 +1628,14 @@ int main(void)
 
 ### 4.6.1 Intentional Fall-Through
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-handwritten.svg" alt="Handwritten: 4.6.1 Intentional Fall-Through" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-handwritten.svg" alt="Handwritten: 4.6.1 Intentional Fall-Through" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-diagram.svg" alt="Diagram: 4.6.1 Intentional Fall-Through" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-diagram.svg" alt="Diagram: 4.6.1 Intentional Fall-Through" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-sticky.svg" alt="Sticky Note: 4.6.1 Intentional Fall-Through" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-6-1-intentional-fall-through-sticky.svg" alt="Sticky Note: 4.6.1 Intentional Fall-Through" width="30%">
 </a>
 
 
@@ -1692,14 +1692,14 @@ The ternary operator `?:` is an **expression** (it yields a value). It is the on
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1707,14 +1707,14 @@ The ternary operator is like a coin flip decision at a crossroads: "Heads? Go le
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1724,14 +1724,14 @@ condition ? value_if_true : value_if_false
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -1742,14 +1742,14 @@ condition ? value_if_true : value_if_false
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -1758,14 +1758,14 @@ result = IF condition THEN true_value ELSE false_value
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -1796,14 +1796,14 @@ int main(void)
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -1872,14 +1872,14 @@ if (a > b) {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -1888,14 +1888,14 @@ if (a > b) {
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -1908,14 +1908,14 @@ if (a > b) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -1936,14 +1936,14 @@ if (a > b) {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1951,14 +1951,14 @@ if (a > b) {
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -1971,14 +1971,14 @@ goto label_name;
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -1989,14 +1989,14 @@ goto label_name;
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -2008,14 +2008,14 @@ label_name:
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -2055,14 +2055,14 @@ start:
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -2168,14 +2168,14 @@ cleanup:
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2184,14 +2184,14 @@ cleanup:
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2204,14 +2204,14 @@ cleanup:
 
 ### Legitimate Uses of `goto`
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-handwritten.svg" alt="Handwritten: Legitimate Uses of `goto`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-handwritten.svg" alt="Handwritten: Legitimate Uses of `goto`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-diagram.svg" alt="Diagram: Legitimate Uses of `goto`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-diagram.svg" alt="Diagram: Legitimate Uses of `goto`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-sticky.svg" alt="Sticky Note: Legitimate Uses of `goto`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/legitimate-uses-of-goto-sticky.svg" alt="Sticky Note: Legitimate Uses of `goto`" width="30%">
 </a>
 
 
@@ -2244,14 +2244,14 @@ cleanup_buffer:
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2272,14 +2272,14 @@ cleanup_buffer:
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2288,14 +2288,14 @@ cleanup_buffer:
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -2317,14 +2317,14 @@ for (int i = 0; i < 10; i++) {
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -2340,14 +2340,14 @@ for (int i = 0; i < 10; i++) {
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 ```
@@ -2364,14 +2364,14 @@ END FOR
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -2434,14 +2434,14 @@ int main(void)
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -2531,14 +2531,14 @@ In this example, when `i == 5`, `continue` jumps to the condition check without 
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2547,14 +2547,14 @@ In this example, when `i == 5`, `continue` jumps to the condition check without 
 
 ### break vs continue → Comparison Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-handwritten.svg" alt="Handwritten: break vs continue → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-handwritten.svg" alt="Handwritten: break vs continue → Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-diagram.svg" alt="Diagram: break vs continue → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-diagram.svg" alt="Diagram: break vs continue → Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-sticky.svg" alt="Sticky Note: break vs continue → Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/break-vs-continue-comparison-table-sticky.svg" alt="Sticky Note: break vs continue → Comparison Table" width="30%">
 </a>
 
 
@@ -2570,14 +2570,14 @@ In this example, when `i == 5`, `continue` jumps to the condition check without 
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2596,14 +2596,14 @@ The `return` statement terminates the current function and optionally returns a 
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2611,14 +2611,14 @@ The `return` statement is like a cashier handing you your change and receipt aft
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -2629,14 +2629,14 @@ return expression; /* returns the value of expression */
 
 ### Numbered Execution Steps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-handwritten.svg" alt="Handwritten: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-diagram.svg" alt="Diagram: Numbered Execution Steps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/numbered-execution-steps-sticky.svg" alt="Sticky Note: Numbered Execution Steps" width="30%">
 </a>
 
 
@@ -2648,14 +2648,14 @@ return expression; /* returns the value of expression */
 
 ### Dry Run / Trace Table
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run / Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run / Trace Table" width="30%">
 </a>
 
 
@@ -2696,14 +2696,14 @@ int main(void)
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -2762,14 +2762,14 @@ Hello, Alice!
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -2778,14 +2778,14 @@ Hello, Alice!
 
 ### Advantages & Disadvantages
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
 </a>
 
 
@@ -2797,14 +2797,14 @@ Hello, Alice!
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2823,14 +2823,14 @@ Hello, Alice!
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -2838,14 +2838,14 @@ Hello, Alice!
 
 ### Syntax
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-handwritten.svg" alt="Handwritten: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-diagram.svg" alt="Diagram: Syntax" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/syntax-sticky.svg" alt="Sticky Note: Syntax" width="30%">
 </a>
 
 
@@ -2860,14 +2860,14 @@ exit(int status);
 
 ### C Code Examples
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-handwritten.svg" alt="Handwritten: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-diagram.svg" alt="Diagram: C Code Examples" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c-code-examples-sticky.svg" alt="Sticky Note: C Code Examples" width="30%">
 </a>
 
 
@@ -2929,14 +2929,14 @@ Cleanup: atexit handler called
 
 ### `return` vs `exit()` → Comparison
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-handwritten.svg" alt="Handwritten: `return` vs `exit()` → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-handwritten.svg" alt="Handwritten: `return` vs `exit()` → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-diagram.svg" alt="Diagram: `return` vs `exit()` → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-diagram.svg" alt="Diagram: `return` vs `exit()` → Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-sticky.svg" alt="Sticky Note: `return` vs `exit()` → Comparison" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/return-vs-exit-comparison-sticky.svg" alt="Sticky Note: `return` vs `exit()` → Comparison" width="30%">
 </a>
 
 
@@ -2952,14 +2952,14 @@ Cleanup: atexit handler called
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -2977,14 +2977,14 @@ C does not have a native boolean type (before C99). Any non-zero value is truthy
 
 ### Truthiness Rules
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-handwritten.svg" alt="Handwritten: Truthiness Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-handwritten.svg" alt="Handwritten: Truthiness Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-diagram.svg" alt="Diagram: Truthiness Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-diagram.svg" alt="Diagram: Truthiness Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-sticky.svg" alt="Sticky Note: Truthiness Rules" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/truthiness-rules-sticky.svg" alt="Sticky Note: Truthiness Rules" width="30%">
 </a>
 
 
@@ -3002,14 +3002,14 @@ if (done) {       /* equivalent to if (done != 0) */
 
 ### C99 Boolean Type
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-handwritten.svg" alt="Handwritten: C99 Boolean Type" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-handwritten.svg" alt="Handwritten: C99 Boolean Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-diagram.svg" alt="Diagram: C99 Boolean Type" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-diagram.svg" alt="Diagram: C99 Boolean Type" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-sticky.svg" alt="Sticky Note: C99 Boolean Type" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/c99-boolean-type-sticky.svg" alt="Sticky Note: C99 Boolean Type" width="30%">
 </a>
 
 
@@ -3027,14 +3027,14 @@ if (is_valid) {
 
 ### Integer to Boolean Conversion
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-handwritten.svg" alt="Handwritten: Integer to Boolean Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-handwritten.svg" alt="Handwritten: Integer to Boolean Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-diagram.svg" alt="Diagram: Integer to Boolean Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-diagram.svg" alt="Diagram: Integer to Boolean Conversion" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-sticky.svg" alt="Sticky Note: Integer to Boolean Conversion" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/integer-to-boolean-conversion-sticky.svg" alt="Sticky Note: Integer to Boolean Conversion" width="30%">
 </a>
 
 
@@ -3052,14 +3052,14 @@ if (count != 0) {
 
 ### Edge Cases
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
 </a>
 
 
@@ -3078,14 +3078,14 @@ if (count != 0) {
 
 ### 4.13.1 `if` vs `switch`
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-handwritten.svg" alt="Handwritten: 4.13.1 `if` vs `switch`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-handwritten.svg" alt="Handwritten: 4.13.1 `if` vs `switch`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-diagram.svg" alt="Diagram: 4.13.1 `if` vs `switch`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-diagram.svg" alt="Diagram: 4.13.1 `if` vs `switch`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-sticky.svg" alt="Sticky Note: 4.13.1 `if` vs `switch`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-1-if-vs-switch-sticky.svg" alt="Sticky Note: 4.13.1 `if` vs `switch`" width="30%">
 </a>
 
 
@@ -3104,14 +3104,14 @@ if (count != 0) {
 
 ### 4.13.2 `break` vs `continue`
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-handwritten.svg" alt="Handwritten: 4.13.2 `break` vs `continue`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-handwritten.svg" alt="Handwritten: 4.13.2 `break` vs `continue`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-diagram.svg" alt="Diagram: 4.13.2 `break` vs `continue`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-diagram.svg" alt="Diagram: 4.13.2 `break` vs `continue`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-sticky.svg" alt="Sticky Note: 4.13.2 `break` vs `continue`" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-2-break-vs-continue-sticky.svg" alt="Sticky Note: 4.13.2 `break` vs `continue`" width="30%">
 </a>
 
 
@@ -3127,14 +3127,14 @@ if (count != 0) {
 
 ### 4.13.3 `goto` vs Structured Jumps
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-handwritten.svg" alt="Handwritten: 4.13.3 `goto` vs Structured Jumps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-handwritten.svg" alt="Handwritten: 4.13.3 `goto` vs Structured Jumps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-diagram.svg" alt="Diagram: 4.13.3 `goto` vs Structured Jumps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-diagram.svg" alt="Diagram: 4.13.3 `goto` vs Structured Jumps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-sticky.svg" alt="Sticky Note: 4.13.3 `goto` vs Structured Jumps" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-3-goto-vs-structured-jumps-sticky.svg" alt="Sticky Note: 4.13.3 `goto` vs Structured Jumps" width="30%">
 </a>
 
 
@@ -3148,14 +3148,14 @@ if (count != 0) {
 
 ### 4.13.4 Conditional Control Constructs
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-handwritten.svg" alt="Handwritten: 4.13.4 Conditional Control Constructs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-handwritten.svg" alt="Handwritten: 4.13.4 Conditional Control Constructs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-diagram.svg" alt="Diagram: 4.13.4 Conditional Control Constructs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-diagram.svg" alt="Diagram: 4.13.4 Conditional Control Constructs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-sticky.svg" alt="Sticky Note: 4.13.4 Conditional Control Constructs" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-13-4-conditional-control-constructs-sticky.svg" alt="Sticky Note: 4.13.4 Conditional Control Constructs" width="30%">
 </a>
 
 
@@ -3174,14 +3174,14 @@ Common interview questions and tricky concepts related to C control flow.
 
 ### 4.14.1 Dangling Else Ambiguity
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-handwritten.svg" alt="Handwritten: 4.14.1 Dangling Else Ambiguity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-handwritten.svg" alt="Handwritten: 4.14.1 Dangling Else Ambiguity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-diagram.svg" alt="Diagram: 4.14.1 Dangling Else Ambiguity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-diagram.svg" alt="Diagram: 4.14.1 Dangling Else Ambiguity" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-sticky.svg" alt="Sticky Note: 4.14.1 Dangling Else Ambiguity" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-1-dangling-else-ambiguity-sticky.svg" alt="Sticky Note: 4.14.1 Dangling Else Ambiguity" width="30%">
 </a>
 
 
@@ -3211,14 +3211,14 @@ if (x) {
 
 ### 4.14.2 switch vs if-else Chain Performance
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-handwritten.svg" alt="Handwritten: 4.14.2 switch vs if-else Chain Performance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-handwritten.svg" alt="Handwritten: 4.14.2 switch vs if-else Chain Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-diagram.svg" alt="Diagram: 4.14.2 switch vs if-else Chain Performance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-diagram.svg" alt="Diagram: 4.14.2 switch vs if-else Chain Performance" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-sticky.svg" alt="Sticky Note: 4.14.2 switch vs if-else Chain Performance" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-2-switch-vs-if-else-chain-performance-sticky.svg" alt="Sticky Note: 4.14.2 switch vs if-else Chain Performance" width="30%">
 </a>
 
 
@@ -3236,14 +3236,14 @@ Use `if-else if` when:
 
 ### 4.14.3 Duff's Device
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-handwritten.svg" alt="Handwritten: 4.14.3 Duff's Device" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-handwritten.svg" alt="Handwritten: 4.14.3 Duff's Device" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-diagram.svg" alt="Diagram: 4.14.3 Duff's Device" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-diagram.svg" alt="Diagram: 4.14.3 Duff's Device" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-sticky.svg" alt="Sticky Note: 4.14.3 Duff's Device" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-3-duff-s-device-sticky.svg" alt="Sticky Note: 4.14.3 Duff's Device" width="30%">
 </a>
 
 
@@ -3273,14 +3273,14 @@ void send(char *to, char *from, int count)
 
 ### 4.14.4 goto in the Linux Kernel
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-handwritten.svg" alt="Handwritten: 4.14.4 goto in the Linux Kernel" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-handwritten.svg" alt="Handwritten: 4.14.4 goto in the Linux Kernel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-diagram.svg" alt="Diagram: 4.14.4 goto in the Linux Kernel" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-diagram.svg" alt="Diagram: 4.14.4 goto in the Linux Kernel" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-sticky.svg" alt="Sticky Note: 4.14.4 goto in the Linux Kernel" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-4-goto-in-the-linux-kernel-sticky.svg" alt="Sticky Note: 4.14.4 goto in the Linux Kernel" width="30%">
 </a>
 
 
@@ -3320,14 +3320,14 @@ This pattern avoids deeply nested error handling and ensures cleanup happens exa
 
 ### 4.14.5 Comma Operator in Conditions
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-handwritten.svg" alt="Handwritten: 4.14.5 Comma Operator in Conditions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-handwritten.svg" alt="Handwritten: 4.14.5 Comma Operator in Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-diagram.svg" alt="Diagram: 4.14.5 Comma Operator in Conditions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-diagram.svg" alt="Diagram: 4.14.5 Comma Operator in Conditions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-sticky.svg" alt="Sticky Note: 4.14.5 Comma Operator in Conditions" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-5-comma-operator-in-conditions-sticky.svg" alt="Sticky Note: 4.14.5 Comma Operator in Conditions" width="30%">
 </a>
 
 
@@ -3341,14 +3341,14 @@ if (x = 1, 0) printf("A"); else printf("B");
 
 ### 4.14.6 Short-Circuit Evaluation Trick
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-handwritten.svg" alt="Handwritten: 4.14.6 Short-Circuit Evaluation Trick" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-handwritten.svg" alt="Handwritten: 4.14.6 Short-Circuit Evaluation Trick" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-diagram.svg" alt="Diagram: 4.14.6 Short-Circuit Evaluation Trick" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-diagram.svg" alt="Diagram: 4.14.6 Short-Circuit Evaluation Trick" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-sticky.svg" alt="Sticky Note: 4.14.6 Short-Circuit Evaluation Trick" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-6-short-circuit-evaluation-trick-sticky.svg" alt="Sticky Note: 4.14.6 Short-Circuit Evaluation Trick" width="30%">
 </a>
 
 
@@ -3366,14 +3366,14 @@ If `i` reaches 5, `i < 5` is false and `arr[i]` is never evaluated → preventin
 
 ### 4.14.7 The `==` vs `=` Trap
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-handwritten.svg" alt="Handwritten: 4.14.7 The `==` vs `=` Trap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-handwritten.svg" alt="Handwritten: 4.14.7 The `==` vs `=` Trap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-diagram.svg" alt="Diagram: 4.14.7 The `==` vs `=` Trap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-diagram.svg" alt="Diagram: 4.14.7 The `==` vs `=` Trap" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-sticky.svg" alt="Sticky Note: 4.14.7 The `==` vs `=` Trap" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-7-the-vs-trap-sticky.svg" alt="Sticky Note: 4.14.7 The `==` vs `=` Trap" width="30%">
 </a>
 
 
@@ -3391,14 +3391,14 @@ if (x = 0) {
 
 ### 4.14.8 Nested switch
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-handwritten.svg" alt="Handwritten: 4.14.8 Nested switch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-handwritten.svg" alt="Handwritten: 4.14.8 Nested switch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-diagram.svg" alt="Diagram: 4.14.8 Nested switch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-diagram.svg" alt="Diagram: 4.14.8 Nested switch" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-sticky.svg" alt="Sticky Note: 4.14.8 Nested switch" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-14-8-nested-switch-sticky.svg" alt="Sticky Note: 4.14.8 Nested switch" width="30%">
 </a>
 
 
@@ -3427,14 +3427,14 @@ Use with caution → deeply nested switches are hard to read.
 
 ### 4.15.1 Linux Kernel: goto for Error Handling
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-handwritten.svg" alt="Handwritten: 4.15.1 Linux Kernel: goto for Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-handwritten.svg" alt="Handwritten: 4.15.1 Linux Kernel: goto for Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-diagram.svg" alt="Diagram: 4.15.1 Linux Kernel: goto for Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-diagram.svg" alt="Diagram: 4.15.1 Linux Kernel: goto for Error Handling" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-sticky.svg" alt="Sticky Note: 4.15.1 Linux Kernel: goto for Error Handling" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-1-linux-kernel-goto-for-error-handling-sticky.svg" alt="Sticky Note: 4.15.1 Linux Kernel: goto for Error Handling" width="30%">
 </a>
 
 
@@ -3466,14 +3466,14 @@ out:
 
 ### 4.15.2 Embedded Systems: switch-case State Machines
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-handwritten.svg" alt="Handwritten: 4.15.2 Embedded Systems: switch-case State Machines" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-handwritten.svg" alt="Handwritten: 4.15.2 Embedded Systems: switch-case State Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-diagram.svg" alt="Diagram: 4.15.2 Embedded Systems: switch-case State Machines" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-diagram.svg" alt="Diagram: 4.15.2 Embedded Systems: switch-case State Machines" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-sticky.svg" alt="Sticky Note: 4.15.2 Embedded Systems: switch-case State Machines" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-2-embedded-systems-switch-case-state-machines-sticky.svg" alt="Sticky Note: 4.15.2 Embedded Systems: switch-case State Machines" width="30%">
 </a>
 
 
@@ -3544,14 +3544,14 @@ Commands: 0=start, 1=pause, 2=resume, 3=stop, 4=error
 
 ### 4.15.3 Network Protocol Parsing
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-handwritten.svg" alt="Handwritten: 4.15.3 Network Protocol Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-handwritten.svg" alt="Handwritten: 4.15.3 Network Protocol Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-diagram.svg" alt="Diagram: 4.15.3 Network Protocol Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-diagram.svg" alt="Diagram: 4.15.3 Network Protocol Parsing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-sticky.svg" alt="Sticky Note: 4.15.3 Network Protocol Parsing" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-3-network-protocol-parsing-sticky.svg" alt="Sticky Note: 4.15.3 Network Protocol Parsing" width="30%">
 </a>
 
 
@@ -3584,14 +3584,14 @@ void parse_packet(unsigned char *packet)
 
 ### 4.15.4 Compiler Optimizations: Jump Tables
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-handwritten.svg" alt="Handwritten: 4.15.4 Compiler Optimizations: Jump Tables" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-handwritten.svg" alt="Handwritten: 4.15.4 Compiler Optimizations: Jump Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-diagram.svg" alt="Diagram: 4.15.4 Compiler Optimizations: Jump Tables" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-diagram.svg" alt="Diagram: 4.15.4 Compiler Optimizations: Jump Tables" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-sticky.svg" alt="Sticky Note: 4.15.4 Compiler Optimizations: Jump Tables" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-4-compiler-optimizations-jump-tables-sticky.svg" alt="Sticky Note: 4.15.4 Compiler Optimizations: Jump Tables" width="30%">
 </a>
 
 
@@ -3614,14 +3614,14 @@ This is why `switch` with many cases can be faster than `if-else if` chains.
 
 ### 4.15.5 Flight Control Systems
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-handwritten.svg" alt="Handwritten: 4.15.5 Flight Control Systems" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-handwritten.svg" alt="Handwritten: 4.15.5 Flight Control Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-diagram.svg" alt="Diagram: 4.15.5 Flight Control Systems" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-diagram.svg" alt="Diagram: 4.15.5 Flight Control Systems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-sticky.svg" alt="Sticky Note: 4.15.5 Flight Control Systems" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-5-flight-control-systems-sticky.svg" alt="Sticky Note: 4.15.5 Flight Control Systems" width="30%">
 </a>
 
 
@@ -3658,14 +3658,14 @@ switch (flight_phase) {
 
 ### 4.15.6 Database Query Execution
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-handwritten.svg" alt="Handwritten: 4.15.6 Database Query Execution" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-handwritten.svg" alt="Handwritten: 4.15.6 Database Query Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-diagram.svg" alt="Diagram: 4.15.6 Database Query Execution" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-diagram.svg" alt="Diagram: 4.15.6 Database Query Execution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-sticky.svg" alt="Sticky Note: 4.15.6 Database Query Execution" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/4-15-6-database-query-execution-sticky.svg" alt="Sticky Note: 4.15.6 Database Query Execution" width="30%">
 </a>
 
 
@@ -3705,14 +3705,14 @@ void execute_operator(plan_node_t *node)
 
 ### Guard Clause Pattern
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-handwritten.svg" alt="Handwritten: Guard Clause Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-handwritten.svg" alt="Handwritten: Guard Clause Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-diagram.svg" alt="Diagram: Guard Clause Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-diagram.svg" alt="Diagram: Guard Clause Pattern" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-sticky.svg" alt="Sticky Note: Guard Clause Pattern" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/guard-clause-pattern-sticky.svg" alt="Sticky Note: Guard Clause Pattern" width="30%">
 </a>
 
 
@@ -3730,14 +3730,14 @@ if (count <= 0) {
 
 ### Range Checking
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/range-checking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/range-checking-handwritten.svg" alt="Handwritten: Range Checking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/range-checking-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/range-checking-handwritten.svg" alt="Handwritten: Range Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/range-checking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/range-checking-diagram.svg" alt="Diagram: Range Checking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/range-checking-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/range-checking-diagram.svg" alt="Diagram: Range Checking" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/range-checking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/range-checking-sticky.svg" alt="Sticky Note: Range Checking" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/range-checking-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/range-checking-sticky.svg" alt="Sticky Note: Range Checking" width="30%">
 </a>
 
 
@@ -3754,14 +3754,14 @@ if (c == 'y' || c == 'Y') {
 
 ### Short-Circuit Safe Access
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-handwritten.svg" alt="Handwritten: Short-Circuit Safe Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-handwritten.svg" alt="Handwritten: Short-Circuit Safe Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-diagram.svg" alt="Diagram: Short-Circuit Safe Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-diagram.svg" alt="Diagram: Short-Circuit Safe Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-sticky.svg" alt="Sticky Note: Short-Circuit Safe Access" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/short-circuit-safe-access-sticky.svg" alt="Sticky Note: Short-Circuit Safe Access" width="30%">
 </a>
 
 
@@ -3783,14 +3783,14 @@ if (f1 && f2) {
 
 ### Chained Ternary for Simple Mapping
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-handwritten.svg" alt="Handwritten: Chained Ternary for Simple Mapping" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-handwritten.svg" alt="Handwritten: Chained Ternary for Simple Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-diagram.svg" alt="Diagram: Chained Ternary for Simple Mapping" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-diagram.svg" alt="Diagram: Chained Ternary for Simple Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-sticky.svg" alt="Sticky Note: Chained Ternary for Simple Mapping" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/chained-ternary-for-simple-mapping-sticky.svg" alt="Sticky Note: Chained Ternary for Simple Mapping" width="30%">
 </a>
 
 
@@ -3803,14 +3803,14 @@ const char *name = (n == 1) ? "One" :
 
 ### Flag-based Control
 
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-handwritten.svg" alt="Handwritten: Flag-based Control" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-handwritten.svg" alt="Handwritten: Flag-based Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-diagram.svg" alt="Diagram: Flag-based Control" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-diagram.svg" alt="Diagram: Flag-based Control" width="30%">
 </a>
-<a href="../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-sticky.svg" alt="Sticky Note: Flag-based Control" width="30%">
+<a href="../../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/c-programming/04-control-flow/flag-based-control-sticky.svg" alt="Sticky Note: Flag-based Control" width="30%">
 </a>
 
 

@@ -46,36 +46,36 @@ flowchart LR
 
 ### The Account Model
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" alt="Handwritten: The Account Model" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" alt="Handwritten: The Account Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" alt="Diagram: The Account Model" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" alt="Diagram: The Account Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" alt="Sticky Note: The Account Model" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" alt="Handwritten: The Account Model" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" alt="Diagram: The Account Model" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" alt="Sticky Note: The Account Model" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" alt="Sticky Note: The Account Model" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" alt="Handwritten: The Account Model" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" alt="Handwritten: The Account Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" alt="Diagram: The Account Model" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" alt="Diagram: The Account Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" alt="Sticky Note: The Account Model" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" alt="Sticky Note: The Account Model" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-handwritten.svg" alt="Handwritten: The Account Model" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-diagram.svg" alt="Diagram: The Account Model" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-account-model-sticky.svg" alt="Sticky Note: The Account Model" width="30%">
 </a>
 
 
@@ -117,36 +117,36 @@ flowchart TB
 
 ### State Trie (Patricia Merkle Trie)
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" alt="Handwritten: State Trie (Patricia Merkle Trie)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" alt="Handwritten: State Trie (Patricia Merkle Trie)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" alt="Diagram: State Trie (Patricia Merkle Trie)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" alt="Diagram: State Trie (Patricia Merkle Trie)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" alt="Sticky Note: State Trie (Patricia Merkle Trie)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" alt="Handwritten: State Trie (Patricia Merkle Trie)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" alt="Diagram: State Trie (Patricia Merkle Trie)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" alt="Sticky Note: State Trie (Patricia Merkle Trie)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" alt="Sticky Note: State Trie (Patricia Merkle Trie)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" alt="Handwritten: State Trie (Patricia Merkle Trie)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" alt="Handwritten: State Trie (Patricia Merkle Trie)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" alt="Diagram: State Trie (Patricia Merkle Trie)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" alt="Diagram: State Trie (Patricia Merkle Trie)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" alt="Sticky Note: State Trie (Patricia Merkle Trie)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" alt="Sticky Note: State Trie (Patricia Merkle Trie)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-handwritten.svg" alt="Handwritten: State Trie (Patricia Merkle Trie)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-diagram.svg" alt="Diagram: State Trie (Patricia Merkle Trie)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/state-trie-patricia-merkle-trie-sticky.svg" alt="Sticky Note: State Trie (Patricia Merkle Trie)" width="30%">
 </a>
 
 
@@ -176,36 +176,36 @@ flowchart TB
 
 ### The Ethereum Virtual Machine (EVM)
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" alt="Handwritten: The Ethereum Virtual Machine (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" alt="Handwritten: The Ethereum Virtual Machine (EVM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" alt="Diagram: The Ethereum Virtual Machine (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" alt="Diagram: The Ethereum Virtual Machine (EVM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" alt="Sticky Note: The Ethereum Virtual Machine (EVM)" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" alt="Handwritten: The Ethereum Virtual Machine (EVM)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" alt="Diagram: The Ethereum Virtual Machine (EVM)" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" alt="Sticky Note: The Ethereum Virtual Machine (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" alt="Sticky Note: The Ethereum Virtual Machine (EVM)" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" alt="Handwritten: The Ethereum Virtual Machine (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" alt="Handwritten: The Ethereum Virtual Machine (EVM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" alt="Diagram: The Ethereum Virtual Machine (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" alt="Diagram: The Ethereum Virtual Machine (EVM)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" alt="Sticky Note: The Ethereum Virtual Machine (EVM)" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" alt="Sticky Note: The Ethereum Virtual Machine (EVM)" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-handwritten.svg" alt="Handwritten: The Ethereum Virtual Machine (EVM)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-diagram.svg" alt="Diagram: The Ethereum Virtual Machine (EVM)" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/the-ethereum-virtual-machine-evm-sticky.svg" alt="Sticky Note: The Ethereum Virtual Machine (EVM)" width="30%">
 </a>
 
 
@@ -237,36 +237,36 @@ flowchart TB
 
 ### EVM Opcodes
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" alt="Handwritten: EVM Opcodes" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" alt="Handwritten: EVM Opcodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" alt="Diagram: EVM Opcodes" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" alt="Diagram: EVM Opcodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" alt="Sticky Note: EVM Opcodes" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" alt="Handwritten: EVM Opcodes" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" alt="Diagram: EVM Opcodes" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" alt="Sticky Note: EVM Opcodes" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" alt="Sticky Note: EVM Opcodes" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" alt="Handwritten: EVM Opcodes" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" alt="Handwritten: EVM Opcodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" alt="Diagram: EVM Opcodes" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" alt="Diagram: EVM Opcodes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" alt="Sticky Note: EVM Opcodes" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" alt="Sticky Note: EVM Opcodes" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-handwritten.svg" alt="Handwritten: EVM Opcodes" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-diagram.svg" alt="Diagram: EVM Opcodes" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/evm-opcodes-sticky.svg" alt="Sticky Note: EVM Opcodes" width="30%">
 </a>
 
 
@@ -302,36 +302,36 @@ The EVM has ~140+ opcodes categorized by function:
 
 ### Gas and Economic Security
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" alt="Handwritten: Gas and Economic Security" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" alt="Handwritten: Gas and Economic Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" alt="Diagram: Gas and Economic Security" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" alt="Diagram: Gas and Economic Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" alt="Sticky Note: Gas and Economic Security" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" alt="Handwritten: Gas and Economic Security" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" alt="Diagram: Gas and Economic Security" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" alt="Sticky Note: Gas and Economic Security" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" alt="Sticky Note: Gas and Economic Security" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" alt="Handwritten: Gas and Economic Security" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" alt="Handwritten: Gas and Economic Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" alt="Diagram: Gas and Economic Security" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" alt="Diagram: Gas and Economic Security" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" alt="Sticky Note: Gas and Economic Security" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" alt="Sticky Note: Gas and Economic Security" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-handwritten.svg" alt="Handwritten: Gas and Economic Security" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-diagram.svg" alt="Diagram: Gas and Economic Security" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-and-economic-security-sticky.svg" alt="Sticky Note: Gas and Economic Security" width="30%">
 </a>
 
 
@@ -366,36 +366,36 @@ flowchart TB
 
 ### EIP-1559 Fee Market
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" alt="Handwritten: EIP-1559 Fee Market" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" alt="Handwritten: EIP-1559 Fee Market" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" alt="Diagram: EIP-1559 Fee Market" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" alt="Diagram: EIP-1559 Fee Market" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" alt="Sticky Note: EIP-1559 Fee Market" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" alt="Handwritten: EIP-1559 Fee Market" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" alt="Diagram: EIP-1559 Fee Market" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" alt="Sticky Note: EIP-1559 Fee Market" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" alt="Sticky Note: EIP-1559 Fee Market" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" alt="Handwritten: EIP-1559 Fee Market" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" alt="Handwritten: EIP-1559 Fee Market" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" alt="Diagram: EIP-1559 Fee Market" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" alt="Diagram: EIP-1559 Fee Market" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" alt="Sticky Note: EIP-1559 Fee Market" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" alt="Sticky Note: EIP-1559 Fee Market" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-handwritten.svg" alt="Handwritten: EIP-1559 Fee Market" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-diagram.svg" alt="Diagram: EIP-1559 Fee Market" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eip-1559-fee-market-sticky.svg" alt="Sticky Note: EIP-1559 Fee Market" width="30%">
 </a>
 
 
@@ -450,36 +450,36 @@ function adjustBaseFee(
 
 ### Gas Calculation Example
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" alt="Handwritten: Gas Calculation Example" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" alt="Handwritten: Gas Calculation Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" alt="Diagram: Gas Calculation Example" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" alt="Diagram: Gas Calculation Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" alt="Sticky Note: Gas Calculation Example" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" alt="Handwritten: Gas Calculation Example" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" alt="Diagram: Gas Calculation Example" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" alt="Sticky Note: Gas Calculation Example" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" alt="Sticky Note: Gas Calculation Example" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" alt="Handwritten: Gas Calculation Example" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" alt="Handwritten: Gas Calculation Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" alt="Diagram: Gas Calculation Example" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" alt="Diagram: Gas Calculation Example" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" alt="Sticky Note: Gas Calculation Example" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" alt="Sticky Note: Gas Calculation Example" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-handwritten.svg" alt="Handwritten: Gas Calculation Example" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-diagram.svg" alt="Diagram: Gas Calculation Example" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/gas-calculation-example-sticky.svg" alt="Sticky Note: Gas Calculation Example" width="30%">
 </a>
 
 
@@ -512,36 +512,36 @@ const ethFee = fee / 1e9;  // Convert to ETH
 
 ### Turing Completeness and The Halting Problem
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" alt="Handwritten: Turing Completeness and The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" alt="Handwritten: Turing Completeness and The Halting Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" alt="Diagram: Turing Completeness and The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" alt="Diagram: Turing Completeness and The Halting Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" alt="Sticky Note: Turing Completeness and The Halting Problem" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" alt="Handwritten: Turing Completeness and The Halting Problem" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" alt="Diagram: Turing Completeness and The Halting Problem" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" alt="Sticky Note: Turing Completeness and The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" alt="Sticky Note: Turing Completeness and The Halting Problem" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" alt="Handwritten: Turing Completeness and The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" alt="Handwritten: Turing Completeness and The Halting Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" alt="Diagram: Turing Completeness and The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" alt="Diagram: Turing Completeness and The Halting Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" alt="Sticky Note: Turing Completeness and The Halting Problem" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" alt="Sticky Note: Turing Completeness and The Halting Problem" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-handwritten.svg" alt="Handwritten: Turing Completeness and The Halting Problem" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-diagram.svg" alt="Diagram: Turing Completeness and The Halting Problem" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/turing-completeness-and-the-halting-problem-sticky.svg" alt="Sticky Note: Turing Completeness and The Halting Problem" width="30%">
 </a>
 
 
@@ -557,36 +557,36 @@ Ethereum is **Turing complete** — it can simulate any computable function. Thi
 
 ### Ethereum Upgrades
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" alt="Handwritten: Ethereum Upgrades" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" alt="Handwritten: Ethereum Upgrades" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" alt="Diagram: Ethereum Upgrades" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" alt="Diagram: Ethereum Upgrades" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" alt="Sticky Note: Ethereum Upgrades" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" alt="Handwritten: Ethereum Upgrades" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" alt="Diagram: Ethereum Upgrades" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" alt="Sticky Note: Ethereum Upgrades" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" alt="Sticky Note: Ethereum Upgrades" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" alt="Handwritten: Ethereum Upgrades" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" alt="Handwritten: Ethereum Upgrades" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" alt="Diagram: Ethereum Upgrades" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" alt="Diagram: Ethereum Upgrades" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" alt="Sticky Note: Ethereum Upgrades" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" alt="Sticky Note: Ethereum Upgrades" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-handwritten.svg" alt="Handwritten: Ethereum Upgrades" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-diagram.svg" alt="Diagram: Ethereum Upgrades" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/ethereum-upgrades-sticky.svg" alt="Sticky Note: Ethereum Upgrades" width="30%">
 </a>
 
 
@@ -628,36 +628,36 @@ timeline
 
 ### EOA vs Contract Account Comparison
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" alt="Handwritten: EOA vs Contract Account Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" alt="Handwritten: EOA vs Contract Account Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" alt="Diagram: EOA vs Contract Account Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" alt="Diagram: EOA vs Contract Account Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" alt="Sticky Note: EOA vs Contract Account Comparison" width="30%">
-</a>
-
-
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" alt="Handwritten: EOA vs Contract Account Comparison" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" alt="Diagram: EOA vs Contract Account Comparison" width="30%">
-</a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" alt="Sticky Note: EOA vs Contract Account Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" alt="Sticky Note: EOA vs Contract Account Comparison" width="30%">
 </a>
 
 
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" alt="Handwritten: EOA vs Contract Account Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" alt="Handwritten: EOA vs Contract Account Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" alt="Diagram: EOA vs Contract Account Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" alt="Diagram: EOA vs Contract Account Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" alt="Sticky Note: EOA vs Contract Account Comparison" width="30%">
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" alt="Sticky Note: EOA vs Contract Account Comparison" width="30%">
+</a>
+
+
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-handwritten.svg" alt="Handwritten: EOA vs Contract Account Comparison" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-diagram.svg" alt="Diagram: EOA vs Contract Account Comparison" width="30%">
+</a>
+<a href="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/blockchain/05-ethereum/eoa-vs-contract-account-comparison-sticky.svg" alt="Sticky Note: EOA vs Contract Account Comparison" width="30%">
 </a>
 
 

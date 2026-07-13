@@ -19,14 +19,14 @@ flowchart LR
 
 ### Q9: What is CQRS and how do you implement it?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is CQRS and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is CQRS and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is CQRS and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is CQRS and how do you implement it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is CQRS and how do you implement it?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/what-is-cqrs-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is CQRS and how do you implement it?" width="30%">
 </a>
 
 
@@ -152,14 +152,14 @@ Apply CQRS to individual bounded contexts, not the entire system. Most services 
 
 ### Q10: How do you implement a circuit breaker with Resilience4j?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-handwritten.svg" alt="Handwritten: How do you implement a circuit breaker with Resilience4j?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-handwritten.svg" alt="Handwritten: How do you implement a circuit breaker with Resilience4j?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-diagram.svg" alt="Diagram: How do you implement a circuit breaker with Resilience4j?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-diagram.svg" alt="Diagram: How do you implement a circuit breaker with Resilience4j?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-sticky.svg" alt="Sticky Note: How do you implement a circuit breaker with Resilience4j?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-a-circuit-breaker-with-resilience4j-sticky.svg" alt="Sticky Note: How do you implement a circuit breaker with Resilience4j?" width="30%">
 </a>
 
 
@@ -274,14 +274,14 @@ Circuit breaker states: CLOSED (normal, pass through) → OPEN (fail fast, no ca
 
 ### Q11: How do you handle service-to-service authentication with OAuth2 and JWT?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-handwritten.svg" alt="Handwritten: How do you handle service-to-service authentication with OAuth2 and JWT?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-handwritten.svg" alt="Handwritten: How do you handle service-to-service authentication with OAuth2 and JWT?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-diagram.svg" alt="Diagram: How do you handle service-to-service authentication with OAuth2 and JWT?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-diagram.svg" alt="Diagram: How do you handle service-to-service authentication with OAuth2 and JWT?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-sticky.svg" alt="Sticky Note: How do you handle service-to-service authentication with OAuth2 and JWT?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-service-to-service-authentication-with-oauth2-and-jwt-sticky.svg" alt="Sticky Note: How do you handle service-to-service authentication with OAuth2 and JWT?" width="30%">
 </a>
 
 
@@ -387,14 +387,14 @@ Never embed sensitive data in JWT claims (they are base64-encoded, not encrypted
 
 ### Q12: How do you implement event-driven microservices with Kafka?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-handwritten.svg" alt="Handwritten: How do you implement event-driven microservices with Kafka?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-handwritten.svg" alt="Handwritten: How do you implement event-driven microservices with Kafka?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-diagram.svg" alt="Diagram: How do you implement event-driven microservices with Kafka?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-diagram.svg" alt="Diagram: How do you implement event-driven microservices with Kafka?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-sticky.svg" alt="Sticky Note: How do you implement event-driven microservices with Kafka?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-implement-event-driven-microservices-with-kafka-sticky.svg" alt="Sticky Note: How do you implement event-driven microservices with Kafka?" width="30%">
 </a>
 
 
@@ -547,14 +547,14 @@ Use one topic per event type or per bounded context. Partition count should be e
 
 ### Q13: How do you handle containerization for microservices with Docker?
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-handwritten.svg" alt="Handwritten: How do you handle containerization for microservices with Docker?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-handwritten.svg" alt="Handwritten: How do you handle containerization for microservices with Docker?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-diagram.svg" alt="Diagram: How do you handle containerization for microservices with Docker?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-diagram.svg" alt="Diagram: How do you handle containerization for microservices with Docker?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-sticky.svg" alt="Sticky Note: How do you handle containerization for microservices with Docker?" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/how-do-you-handle-containerization-for-microservices-with-docker-sticky.svg" alt="Sticky Note: How do you handle containerization for microservices with Docker?" width="30%">
 </a>
 
 
@@ -702,14 +702,14 @@ Key Docker best practices:
 
 ### Mistake 1: Synchronous communication chains
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-handwritten.svg" alt="Handwritten: Mistake 1: Synchronous communication chains" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-handwritten.svg" alt="Handwritten: Mistake 1: Synchronous communication chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-diagram.svg" alt="Diagram: Mistake 1: Synchronous communication chains" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-diagram.svg" alt="Diagram: Mistake 1: Synchronous communication chains" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-sticky.svg" alt="Sticky Note: Mistake 1: Synchronous communication chains" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-1-synchronous-communication-chains-sticky.svg" alt="Sticky Note: Mistake 1: Synchronous communication chains" width="30%">
 </a>
 
 ```java
@@ -734,14 +734,14 @@ public class OrderService {
 
 ### Mistake 2: Shared database across services
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-handwritten.svg" alt="Handwritten: Mistake 2: Shared database across services" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-handwritten.svg" alt="Handwritten: Mistake 2: Shared database across services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-diagram.svg" alt="Diagram: Mistake 2: Shared database across services" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-diagram.svg" alt="Diagram: Mistake 2: Shared database across services" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-sticky.svg" alt="Sticky Note: Mistake 2: Shared database across services" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-2-shared-database-across-services-sticky.svg" alt="Sticky Note: Mistake 2: Shared database across services" width="30%">
 </a>
 
 ```java
@@ -760,14 +760,14 @@ public class OrderService {
 
 ### Mistake 3: No circuit breaker on external calls
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-handwritten.svg" alt="Handwritten: Mistake 3: No circuit breaker on external calls" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-handwritten.svg" alt="Handwritten: Mistake 3: No circuit breaker on external calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-diagram.svg" alt="Diagram: Mistake 3: No circuit breaker on external calls" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-diagram.svg" alt="Diagram: Mistake 3: No circuit breaker on external calls" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-sticky.svg" alt="Sticky Note: Mistake 3: No circuit breaker on external calls" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-3-no-circuit-breaker-on-external-calls-sticky.svg" alt="Sticky Note: Mistake 3: No circuit breaker on external calls" width="30%">
 </a>
 
 ```java
@@ -797,14 +797,14 @@ public class OrderService {
 
 ### Mistake 4: Missing observability (logs, metrics, traces)
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-handwritten.svg" alt="Handwritten: Mistake 4: Missing observability (logs, metrics, traces)" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-handwritten.svg" alt="Handwritten: Mistake 4: Missing observability (logs, metrics, traces)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-diagram.svg" alt="Diagram: Mistake 4: Missing observability (logs, metrics, traces)" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-diagram.svg" alt="Diagram: Mistake 4: Missing observability (logs, metrics, traces)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-sticky.svg" alt="Sticky Note: Mistake 4: Missing observability (logs, metrics, traces)" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-4-missing-observability-logs-metrics-traces-sticky.svg" alt="Sticky Note: Mistake 4: Missing observability (logs, metrics, traces)" width="30%">
 </a>
 
 ```yaml
@@ -820,14 +820,14 @@ management.tracing.sampling.probability=1.0  # 100% sampling in dev
 
 ### Mistake 5: Over-engineering (starting with microservices)
 
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-handwritten.svg" alt="Handwritten: Mistake 5: Over-engineering (starting with microservices)" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-handwritten.svg" alt="Handwritten: Mistake 5: Over-engineering (starting with microservices)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-diagram.svg" alt="Diagram: Mistake 5: Over-engineering (starting with microservices)" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-diagram.svg" alt="Diagram: Mistake 5: Over-engineering (starting with microservices)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-sticky.svg" alt="Sticky Note: Mistake 5: Over-engineering (starting with microservices)" width="30%">
+<a href="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/60-interview-microservices-b/mistake-5-over-engineering-starting-with-microservices-sticky.svg" alt="Sticky Note: Mistake 5: Over-engineering (starting with microservices)" width="30%">
 </a>
 
 ```java

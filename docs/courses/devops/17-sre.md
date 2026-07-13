@@ -48,14 +48,14 @@ flowchart LR
 
 ### 17.1 SRE vs DevOps
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-handwritten.svg" alt="Handwritten: 17.1 SRE vs DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-handwritten.svg" alt="Handwritten: 17.1 SRE vs DevOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-diagram.svg" alt="Diagram: 17.1 SRE vs DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-diagram.svg" alt="Diagram: 17.1 SRE vs DevOps" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-sticky.svg" alt="Sticky Note: 17.1 SRE vs DevOps" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-1-sre-vs-devops-sticky.svg" alt="Sticky Note: 17.1 SRE vs DevOps" width="30%">
 </a>
 
 
@@ -77,14 +77,14 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 
 ### 17.2 Service Level Objectives (SLO, SLI, SLA)
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-handwritten.svg" alt="Handwritten: 17.2 Service Level Objectives (SLO, SLI, SLA)" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-handwritten.svg" alt="Handwritten: 17.2 Service Level Objectives (SLO, SLI, SLA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-diagram.svg" alt="Diagram: 17.2 Service Level Objectives (SLO, SLI, SLA)" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-diagram.svg" alt="Diagram: 17.2 Service Level Objectives (SLO, SLI, SLA)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-sticky.svg" alt="Sticky Note: 17.2 Service Level Objectives (SLO, SLI, SLA)" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-2-service-level-objectives-slo-sli-sla-sticky.svg" alt="Sticky Note: 17.2 Service Level Objectives (SLO, SLI, SLA)" width="30%">
 </a>
 
 
@@ -110,14 +110,14 @@ SRE operationalizes DevOps principles with engineering rigor. Many organizations
 
 ### 17.3 Error Budgets
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-handwritten.svg" alt="Handwritten: 17.3 Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-handwritten.svg" alt="Handwritten: 17.3 Error Budgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-diagram.svg" alt="Diagram: 17.3 Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-diagram.svg" alt="Diagram: 17.3 Error Budgets" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-sticky.svg" alt="Sticky Note: 17.3 Error Budgets" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-3-error-budgets-sticky.svg" alt="Sticky Note: 17.3 Error Budgets" width="30%">
 </a>
 
 
@@ -166,14 +166,14 @@ groups:
 
 ### 17.4 Toil Elimination
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-handwritten.svg" alt="Handwritten: 17.4 Toil Elimination" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-handwritten.svg" alt="Handwritten: 17.4 Toil Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-diagram.svg" alt="Diagram: 17.4 Toil Elimination" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-diagram.svg" alt="Diagram: 17.4 Toil Elimination" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-sticky.svg" alt="Sticky Note: 17.4 Toil Elimination" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-4-toil-elimination-sticky.svg" alt="Sticky Note: 17.4 Toil Elimination" width="30%">
 </a>
 
 
@@ -209,14 +209,14 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 
 ### 17.5 Incident Management
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-5-incident-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-5-incident-management-handwritten.svg" alt="Handwritten: 17.5 Incident Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-5-incident-management-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-5-incident-management-handwritten.svg" alt="Handwritten: 17.5 Incident Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-5-incident-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-5-incident-management-diagram.svg" alt="Diagram: 17.5 Incident Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-5-incident-management-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-5-incident-management-diagram.svg" alt="Diagram: 17.5 Incident Management" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-5-incident-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-5-incident-management-sticky.svg" alt="Sticky Note: 17.5 Incident Management" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-5-incident-management-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-5-incident-management-sticky.svg" alt="Sticky Note: 17.5 Incident Management" width="30%">
 </a>
 
 
@@ -245,14 +245,14 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 
 ### 17.6 On-Call Practices
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-handwritten.svg" alt="Handwritten: 17.6 On-Call Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-handwritten.svg" alt="Handwritten: 17.6 On-Call Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-diagram.svg" alt="Diagram: 17.6 On-Call Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-diagram.svg" alt="Diagram: 17.6 On-Call Practices" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-sticky.svg" alt="Sticky Note: 17.6 On-Call Practices" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-6-on-call-practices-sticky.svg" alt="Sticky Note: 17.6 On-Call Practices" width="30%">
 </a>
 
 
@@ -271,14 +271,14 @@ Toil is operational work that is manual, repetitive, automatable, tactical, and 
 
 ### 17.7 Blameless Postmortems
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-handwritten.svg" alt="Handwritten: 17.7 Blameless Postmortems" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-handwritten.svg" alt="Handwritten: 17.7 Blameless Postmortems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-diagram.svg" alt="Diagram: 17.7 Blameless Postmortems" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-diagram.svg" alt="Diagram: 17.7 Blameless Postmortems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-sticky.svg" alt="Sticky Note: 17.7 Blameless Postmortems" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-7-blameless-postmortems-sticky.svg" alt="Sticky Note: 17.7 Blameless Postmortems" width="30%">
 </a>
 
 
@@ -305,14 +305,14 @@ Postmortems are written analyses of incidents. The goal is to understand what ha
 
 ### 17.8 Capacity Planning
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-handwritten.svg" alt="Handwritten: 17.8 Capacity Planning" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-handwritten.svg" alt="Handwritten: 17.8 Capacity Planning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-diagram.svg" alt="Diagram: 17.8 Capacity Planning" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-diagram.svg" alt="Diagram: 17.8 Capacity Planning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-sticky.svg" alt="Sticky Note: 17.8 Capacity Planning" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-8-capacity-planning-sticky.svg" alt="Sticky Note: 17.8 Capacity Planning" width="30%">
 </a>
 
 
@@ -332,14 +332,14 @@ Capacity planning ensures the system has sufficient resources for current and pr
 
 ### 17.9 Reliability Patterns
 
-<a href="../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-handwritten.svg" alt="Handwritten: 17.9 Reliability Patterns" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-handwritten.svg" alt="Handwritten: 17.9 Reliability Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-diagram.svg" alt="Diagram: 17.9 Reliability Patterns" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-diagram.svg" alt="Diagram: 17.9 Reliability Patterns" width="30%">
 </a>
-<a href="../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-sticky.svg" alt="Sticky Note: 17.9 Reliability Patterns" width="30%">
+<a href="../../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/devops/17-sre/17-9-reliability-patterns-sticky.svg" alt="Sticky Note: 17.9 Reliability Patterns" width="30%">
 </a>
 
 

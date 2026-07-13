@@ -43,14 +43,14 @@ By the end of this chapter, you will be able to:
 
 ### Distributed Tracing
 
-<a href="../../assets/images/diagrams/java/43-tracing/distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/distributed-tracing-handwritten.svg" alt="Handwritten: Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/distributed-tracing-handwritten.svg" alt="Handwritten: Distributed Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/43-tracing/distributed-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/distributed-tracing-diagram.svg" alt="Diagram: Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/distributed-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/distributed-tracing-diagram.svg" alt="Diagram: Distributed Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/43-tracing/distributed-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/distributed-tracing-sticky.svg" alt="Sticky Note: Distributed Tracing" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/distributed-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/distributed-tracing-sticky.svg" alt="Sticky Note: Distributed Tracing" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ Distributed tracing tracks requests as they flow through multiple microservices.
 
 ### Micrometer Tracing
 
-<a href="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-handwritten.svg" alt="Handwritten: Micrometer Tracing" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/micrometer-tracing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/micrometer-tracing-handwritten.svg" alt="Handwritten: Micrometer Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-diagram.svg" alt="Diagram: Micrometer Tracing" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/micrometer-tracing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/micrometer-tracing-diagram.svg" alt="Diagram: Micrometer Tracing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/micrometer-tracing-sticky.svg" alt="Sticky Note: Micrometer Tracing" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/micrometer-tracing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/micrometer-tracing-sticky.svg" alt="Sticky Note: Micrometer Tracing" width="30%">
 </a>
 
 
@@ -84,14 +84,14 @@ Micrometer Tracing is the modern replacement for Spring Cloud Sleuth. It provide
 
 ### Observability Tools
 
-<a href="../../assets/images/diagrams/java/43-tracing/observability-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/observability-tools-handwritten.svg" alt="Handwritten: Observability Tools" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/observability-tools-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/observability-tools-handwritten.svg" alt="Handwritten: Observability Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/43-tracing/observability-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/observability-tools-diagram.svg" alt="Diagram: Observability Tools" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/observability-tools-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/observability-tools-diagram.svg" alt="Diagram: Observability Tools" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/43-tracing/observability-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/43-tracing/observability-tools-sticky.svg" alt="Sticky Note: Observability Tools" width="30%">
+<a href="../../../assets/images/diagrams/java/43-tracing/observability-tools-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/43-tracing/observability-tools-sticky.svg" alt="Sticky Note: Observability Tools" width="30%">
 </a>
 
 

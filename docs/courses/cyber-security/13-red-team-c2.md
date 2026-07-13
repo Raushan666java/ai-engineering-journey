@@ -1,4 +1,4 @@
-﻿# Chapter 13: Advanced Red Team Operations & C2 Frameworks
+# Chapter 13: Advanced Red Team Operations & C2 Frameworks
 
 > **Prereq:** Chapters 10 (Pentesting), 11 (SOC Threat Hunting), 12 (Malware Analysis)
 > **Target Audience:** Red team operators, penetration testers, adversary emulation engineers, C2 developers
@@ -42,14 +42,14 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 The Red Team Kill Chain
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-handwritten.svg" alt="Handwritten: 1.1 The Red Team Kill Chain" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-handwritten.svg" alt="Handwritten: 1.1 The Red Team Kill Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-diagram.svg" alt="Diagram: 1.1 The Red Team Kill Chain" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-diagram.svg" alt="Diagram: 1.1 The Red Team Kill Chain" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-sticky.svg" alt="Sticky Note: 1.1 The Red Team Kill Chain" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-1-the-red-team-kill-chain-sticky.svg" alt="Sticky Note: 1.1 The Red Team Kill Chain" width="30%">
 </a>
 
 
@@ -108,14 +108,14 @@ A red team engagement follows a structured, iterative process modeled on real ad
 
 ### 1.2 Rules of Engagement (ROE) Template
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-handwritten.svg" alt="Handwritten: 1.2 Rules of Engagement (ROE) Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-handwritten.svg" alt="Handwritten: 1.2 Rules of Engagement (ROE) Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-diagram.svg" alt="Diagram: 1.2 Rules of Engagement (ROE) Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-diagram.svg" alt="Diagram: 1.2 Rules of Engagement (ROE) Template" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-sticky.svg" alt="Sticky Note: 1.2 Rules of Engagement (ROE) Template" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-2-rules-of-engagement-roe-template-sticky.svg" alt="Sticky Note: 1.2 Rules of Engagement (ROE) Template" width="30%">
 </a>
 
 
@@ -197,14 +197,14 @@ function validateROE(roe: RulesOfEngagement): { valid: boolean; issues: string[]
 
 ### 1.3 Engagement Lifecycle â€” Time Allocation
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-handwritten.svg" alt="Handwritten: 1.3 Engagement Lifecycle â€” Time Allocation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-handwritten.svg" alt="Handwritten: 1.3 Engagement Lifecycle â€” Time Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-diagram.svg" alt="Diagram: 1.3 Engagement Lifecycle â€” Time Allocation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-diagram.svg" alt="Diagram: 1.3 Engagement Lifecycle â€” Time Allocation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-sticky.svg" alt="Sticky Note: 1.3 Engagement Lifecycle â€” Time Allocation" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/1-3-engagement-lifecycle-time-allocation-sticky.svg" alt="Sticky Note: 1.3 Engagement Lifecycle â€” Time Allocation" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ function validateROE(roe: RulesOfEngagement): { valid: boolean; issues: string[]
 
 ### 2.1 Architecture Overview
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-handwritten.svg" alt="Handwritten: 2.1 Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-handwritten.svg" alt="Handwritten: 2.1 Architecture Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-diagram.svg" alt="Diagram: 2.1 Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-diagram.svg" alt="Diagram: 2.1 Architecture Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-sticky.svg" alt="Sticky Note: 2.1 Architecture Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-1-architecture-overview-sticky.svg" alt="Sticky Note: 2.1 Architecture Overview" width="30%">
 </a>
 
 
@@ -267,14 +267,14 @@ Cobalt Strike is the industry-standard red team C2 framework. Its architecture r
 
 ### 2.2 Malleable C2 Profiles â€” Deep Dive
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-handwritten.svg" alt="Handwritten: 2.2 Malleable C2 Profiles â€” Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-handwritten.svg" alt="Handwritten: 2.2 Malleable C2 Profiles â€” Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-diagram.svg" alt="Diagram: 2.2 Malleable C2 Profiles â€” Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-diagram.svg" alt="Diagram: 2.2 Malleable C2 Profiles â€” Deep Dive" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-sticky.svg" alt="Sticky Note: 2.2 Malleable C2 Profiles â€” Deep Dive" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-2-malleable-c2-profiles-deep-dive-sticky.svg" alt="Sticky Note: 2.2 Malleable C2 Profiles â€” Deep Dive" width="30%">
 </a>
 
 
@@ -440,14 +440,14 @@ class MalleableProfileParser {
 
 ### 2.3 Beacon Types â€” Staged vs Stageless
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-handwritten.svg" alt="Handwritten: 2.3 Beacon Types â€” Staged vs Stageless" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-handwritten.svg" alt="Handwritten: 2.3 Beacon Types â€” Staged vs Stageless" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-diagram.svg" alt="Diagram: 2.3 Beacon Types â€” Staged vs Stageless" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-diagram.svg" alt="Diagram: 2.3 Beacon Types â€” Staged vs Stageless" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-sticky.svg" alt="Sticky Note: 2.3 Beacon Types â€” Staged vs Stageless" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-3-beacon-types-staged-vs-stageless-sticky.svg" alt="Sticky Note: 2.3 Beacon Types â€” Staged vs Stageless" width="30%">
 </a>
 
 
@@ -461,14 +461,14 @@ class MalleableProfileParser {
 
 ### 2.4 C2 Communication Flow Diagram
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-handwritten.svg" alt="Handwritten: 2.4 C2 Communication Flow Diagram" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-handwritten.svg" alt="Handwritten: 2.4 C2 Communication Flow Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-diagram.svg" alt="Diagram: 2.4 C2 Communication Flow Diagram" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-diagram.svg" alt="Diagram: 2.4 C2 Communication Flow Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-sticky.svg" alt="Sticky Note: 2.4 C2 Communication Flow Diagram" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-4-c2-communication-flow-diagram-sticky.svg" alt="Sticky Note: 2.4 C2 Communication Flow Diagram" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ sequenceDiagram
 
 ### 2.5 C2 Beacon Simulator (TypeScript)
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-handwritten.svg" alt="Handwritten: 2.5 C2 Beacon Simulator (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-handwritten.svg" alt="Handwritten: 2.5 C2 Beacon Simulator (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-diagram.svg" alt="Diagram: 2.5 C2 Beacon Simulator (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-diagram.svg" alt="Diagram: 2.5 C2 Beacon Simulator (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-sticky.svg" alt="Sticky Note: 2.5 C2 Beacon Simulator (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/2-5-c2-beacon-simulator-typescript-sticky.svg" alt="Sticky Note: 2.5 C2 Beacon Simulator (TypeScript)" width="30%">
 </a>
 
 
@@ -623,14 +623,14 @@ class C2Beacon {
 
 ### 3.1 Sliver Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-handwritten.svg" alt="Handwritten: 3.1 Sliver Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-handwritten.svg" alt="Handwritten: 3.1 Sliver Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-diagram.svg" alt="Diagram: 3.1 Sliver Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-diagram.svg" alt="Diagram: 3.1 Sliver Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-sticky.svg" alt="Sticky Note: 3.1 Sliver Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-1-sliver-architecture-sticky.svg" alt="Sticky Note: 3.1 Sliver Architecture" width="30%">
 </a>
 
 
@@ -647,14 +647,14 @@ Sliver is an open-source, Go-based C2 framework developed by BishopFox. It suppo
 
 ### 3.2 Sliver C2 Setup Guide â€” Full Deployment
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-handwritten.svg" alt="Handwritten: 3.2 Sliver C2 Setup Guide â€” Full Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-handwritten.svg" alt="Handwritten: 3.2 Sliver C2 Setup Guide â€” Full Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-diagram.svg" alt="Diagram: 3.2 Sliver C2 Setup Guide â€” Full Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-diagram.svg" alt="Diagram: 3.2 Sliver C2 Setup Guide â€” Full Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-sticky.svg" alt="Sticky Note: 3.2 Sliver C2 Setup Guide â€” Full Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-2-sliver-c2-setup-guide-full-deployment-sticky.svg" alt="Sticky Note: 3.2 Sliver C2 Setup Guide â€” Full Deployment" width="30%">
 </a>
 
 
@@ -693,14 +693,14 @@ execute-assembly /path/to/SharpHound.exe
 
 ### 3.3 Sliver Operator Configuration (TypeScript)
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-handwritten.svg" alt="Handwritten: 3.3 Sliver Operator Configuration (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-handwritten.svg" alt="Handwritten: 3.3 Sliver Operator Configuration (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-diagram.svg" alt="Diagram: 3.3 Sliver Operator Configuration (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-diagram.svg" alt="Diagram: 3.3 Sliver Operator Configuration (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-sticky.svg" alt="Sticky Note: 3.3 Sliver Operator Configuration (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-3-sliver-operator-configuration-typescript-sticky.svg" alt="Sticky Note: 3.3 Sliver Operator Configuration (TypeScript)" width="30%">
 </a>
 
 
@@ -753,14 +753,14 @@ class SliverManager {
 
 ### 3.4 Sliver Armory â€” Popular Packages
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-handwritten.svg" alt="Handwritten: 3.4 Sliver Armory â€” Popular Packages" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-handwritten.svg" alt="Handwritten: 3.4 Sliver Armory â€” Popular Packages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-diagram.svg" alt="Diagram: 3.4 Sliver Armory â€” Popular Packages" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-diagram.svg" alt="Diagram: 3.4 Sliver Armory â€” Popular Packages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-sticky.svg" alt="Sticky Note: 3.4 Sliver Armory â€” Popular Packages" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/3-4-sliver-armory-popular-packages-sticky.svg" alt="Sticky Note: 3.4 Sliver Armory â€” Popular Packages" width="30%">
 </a>
 
 
@@ -779,14 +779,14 @@ class SliverManager {
 
 ### 4.1 Covenant Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-handwritten.svg" alt="Handwritten: 4.1 Covenant Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-handwritten.svg" alt="Handwritten: 4.1 Covenant Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-diagram.svg" alt="Diagram: 4.1 Covenant Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-diagram.svg" alt="Diagram: 4.1 Covenant Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-sticky.svg" alt="Sticky Note: 4.1 Covenant Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-1-covenant-architecture-sticky.svg" alt="Sticky Note: 4.1 Covenant Architecture" width="30%">
 </a>
 
 
@@ -801,14 +801,14 @@ Covenant is a .NET-based C2 framework focusing on ASP.NET Core, gRPC-based stagi
 
 ### 4.2 Covenant Setup Guide
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-handwritten.svg" alt="Handwritten: 4.2 Covenant Setup Guide" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-handwritten.svg" alt="Handwritten: 4.2 Covenant Setup Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-diagram.svg" alt="Diagram: 4.2 Covenant Setup Guide" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-diagram.svg" alt="Diagram: 4.2 Covenant Setup Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-sticky.svg" alt="Sticky Note: 4.2 Covenant Setup Guide" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-2-covenant-setup-guide-sticky.svg" alt="Sticky Note: 4.2 Covenant Setup Guide" width="30%">
 </a>
 
 
@@ -831,14 +831,14 @@ dotnet run --urls "https://0.0.0.0:7443"
 
 ### 4.3 Covenant Dynamic Task Compilation (TypeScript)
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-handwritten.svg" alt="Handwritten: 4.3 Covenant Dynamic Task Compilation (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-handwritten.svg" alt="Handwritten: 4.3 Covenant Dynamic Task Compilation (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-diagram.svg" alt="Diagram: 4.3 Covenant Dynamic Task Compilation (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-diagram.svg" alt="Diagram: 4.3 Covenant Dynamic Task Compilation (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-sticky.svg" alt="Sticky Note: 4.3 Covenant Dynamic Task Compilation (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/4-3-covenant-dynamic-task-compilation-typescript-sticky.svg" alt="Sticky Note: 4.3 Covenant Dynamic Task Compilation (TypeScript)" width="30%">
 </a>
 
 
@@ -888,14 +888,14 @@ class CovenantCompiler {
 
 ### 5.1 GoPhish Deployment
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-handwritten.svg" alt="Handwritten: 5.1 GoPhish Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-handwritten.svg" alt="Handwritten: 5.1 GoPhish Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-diagram.svg" alt="Diagram: 5.1 GoPhish Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-diagram.svg" alt="Diagram: 5.1 GoPhish Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-sticky.svg" alt="Sticky Note: 5.1 GoPhish Deployment" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-1-gophish-deployment-sticky.svg" alt="Sticky Note: 5.1 GoPhish Deployment" width="30%">
 </a>
 
 
@@ -930,14 +930,14 @@ curl -k -X POST https://localhost:3333/api/smtp/ \
 
 ### 5.2 Phishing Campaign Manager (TypeScript)
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-handwritten.svg" alt="Handwritten: 5.2 Phishing Campaign Manager (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-handwritten.svg" alt="Handwritten: 5.2 Phishing Campaign Manager (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-diagram.svg" alt="Diagram: 5.2 Phishing Campaign Manager (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-diagram.svg" alt="Diagram: 5.2 Phishing Campaign Manager (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-sticky.svg" alt="Sticky Note: 5.2 Phishing Campaign Manager (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-2-phishing-campaign-manager-typescript-sticky.svg" alt="Sticky Note: 5.2 Phishing Campaign Manager (TypeScript)" width="30%">
 </a>
 
 
@@ -1052,14 +1052,14 @@ function phishDemo() {
 
 ### 5.3 Tracking Pixel Architecture
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-handwritten.svg" alt="Handwritten: 5.3 Tracking Pixel Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-handwritten.svg" alt="Handwritten: 5.3 Tracking Pixel Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-diagram.svg" alt="Diagram: 5.3 Tracking Pixel Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-diagram.svg" alt="Diagram: 5.3 Tracking Pixel Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-sticky.svg" alt="Sticky Note: 5.3 Tracking Pixel Architecture" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/5-3-tracking-pixel-architecture-sticky.svg" alt="Sticky Note: 5.3 Tracking Pixel Architecture" width="30%">
 </a>
 
 
@@ -1075,14 +1075,14 @@ When the email client loads the tracking pixel (a 1x1 transparent GIF), the GoPh
 
 ### 6.1 MITRE ATT&CK Mapping
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-handwritten.svg" alt="Handwritten: 6.1 MITRE ATT&CK Mapping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-handwritten.svg" alt="Handwritten: 6.1 MITRE ATT&CK Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-diagram.svg" alt="Diagram: 6.1 MITRE ATT&CK Mapping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-diagram.svg" alt="Diagram: 6.1 MITRE ATT&CK Mapping" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-sticky.svg" alt="Sticky Note: 6.1 MITRE ATT&CK Mapping" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-1-mitre-att-ck-mapping-sticky.svg" alt="Sticky Note: 6.1 MITRE ATT&CK Mapping" width="30%">
 </a>
 
 
@@ -1209,14 +1209,14 @@ class MITREMapper {
 
 ### 6.2 APT Emulation Procedures
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-handwritten.svg" alt="Handwritten: 6.2 APT Emulation Procedures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-handwritten.svg" alt="Handwritten: 6.2 APT Emulation Procedures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-diagram.svg" alt="Diagram: 6.2 APT Emulation Procedures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-diagram.svg" alt="Diagram: 6.2 APT Emulation Procedures" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-sticky.svg" alt="Sticky Note: 6.2 APT Emulation Procedures" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/6-2-apt-emulation-procedures-sticky.svg" alt="Sticky Note: 6.2 APT Emulation Procedures" width="30%">
 </a>
 
 
@@ -1234,14 +1234,14 @@ Phase 1 â€” Initial Access: Spearphishing with ISO/LNK files, exploit VPN a
 
 ### 7.1 AMSI Bypass
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-handwritten.svg" alt="Handwritten: 7.1 AMSI Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-handwritten.svg" alt="Handwritten: 7.1 AMSI Bypass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-diagram.svg" alt="Diagram: 7.1 AMSI Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-diagram.svg" alt="Diagram: 7.1 AMSI Bypass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-sticky.svg" alt="Sticky Note: 7.1 AMSI Bypass" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-1-amsi-bypass-sticky.svg" alt="Sticky Note: 7.1 AMSI Bypass" width="30%">
 </a>
 
 
@@ -1302,14 +1302,14 @@ class AmsiBypassGenerator {
 
 ### 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-handwritten.svg" alt="Handwritten: 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-handwritten.svg" alt="Handwritten: 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-diagram.svg" alt="Diagram: 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-diagram.svg" alt="Diagram: 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-sticky.svg" alt="Sticky Note: 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-2-syscall-direct-hell-s-gate-and-halo-s-gate-sticky.svg" alt="Sticky Note: 7.2 Syscall Direct â€” Hell's Gate and Halo's Gate" width="30%">
 </a>
 
 
@@ -1402,14 +1402,14 @@ class SandboxDetector {
 
 ### 7.3 Lateral Movement Kerberos Attack Chain Diagram
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-handwritten.svg" alt="Handwritten: 7.3 Lateral Movement Kerberos Attack Chain Diagram" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-handwritten.svg" alt="Handwritten: 7.3 Lateral Movement Kerberos Attack Chain Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-diagram.svg" alt="Diagram: 7.3 Lateral Movement Kerberos Attack Chain Diagram" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-diagram.svg" alt="Diagram: 7.3 Lateral Movement Kerberos Attack Chain Diagram" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-sticky.svg" alt="Sticky Note: 7.3 Lateral Movement Kerberos Attack Chain Diagram" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/7-3-lateral-movement-kerberos-attack-chain-diagram-sticky.svg" alt="Sticky Note: 7.3 Lateral Movement Kerberos Attack Chain Diagram" width="30%">
 </a>
 
 
@@ -1447,14 +1447,14 @@ sequenceDiagram
 
 ### 8.1 Lateral Movement Methods
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-handwritten.svg" alt="Handwritten: 8.1 Lateral Movement Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-handwritten.svg" alt="Handwritten: 8.1 Lateral Movement Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-diagram.svg" alt="Diagram: 8.1 Lateral Movement Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-diagram.svg" alt="Diagram: 8.1 Lateral Movement Methods" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-sticky.svg" alt="Sticky Note: 8.1 Lateral Movement Methods" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-1-lateral-movement-methods-sticky.svg" alt="Sticky Note: 8.1 Lateral Movement Methods" width="30%">
 </a>
 
 
@@ -1469,14 +1469,14 @@ sequenceDiagram
 
 ### 8.2 Lateral Movement Executor (TypeScript)
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-handwritten.svg" alt="Handwritten: 8.2 Lateral Movement Executor (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-handwritten.svg" alt="Handwritten: 8.2 Lateral Movement Executor (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-diagram.svg" alt="Diagram: 8.2 Lateral Movement Executor (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-diagram.svg" alt="Diagram: 8.2 Lateral Movement Executor (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-sticky.svg" alt="Sticky Note: 8.2 Lateral Movement Executor (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/8-2-lateral-movement-executor-typescript-sticky.svg" alt="Sticky Note: 8.2 Lateral Movement Executor (TypeScript)" width="30%">
 </a>
 
 
@@ -1604,14 +1604,14 @@ class PassTheHashTool {
 
 ### 9.1 Kerberos Attack Overview
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-handwritten.svg" alt="Handwritten: 9.1 Kerberos Attack Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-handwritten.svg" alt="Handwritten: 9.1 Kerberos Attack Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-diagram.svg" alt="Diagram: 9.1 Kerberos Attack Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-diagram.svg" alt="Diagram: 9.1 Kerberos Attack Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-sticky.svg" alt="Sticky Note: 9.1 Kerberos Attack Overview" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-1-kerberos-attack-overview-sticky.svg" alt="Sticky Note: 9.1 Kerberos Attack Overview" width="30%">
 </a>
 
 
@@ -1629,14 +1629,14 @@ Kerberos is the primary authentication protocol in Active Directory. Understandi
 
 ### 9.2 Kerberos Ticket Manipulation Library (TypeScript)
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-handwritten.svg" alt="Handwritten: 9.2 Kerberos Ticket Manipulation Library (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-handwritten.svg" alt="Handwritten: 9.2 Kerberos Ticket Manipulation Library (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-diagram.svg" alt="Diagram: 9.2 Kerberos Ticket Manipulation Library (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-diagram.svg" alt="Diagram: 9.2 Kerberos Ticket Manipulation Library (TypeScript)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-sticky.svg" alt="Sticky Note: 9.2 Kerberos Ticket Manipulation Library (TypeScript)" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-2-kerberos-ticket-manipulation-library-typescript-sticky.svg" alt="Sticky Note: 9.2 Kerberos Ticket Manipulation Library (TypeScript)" width="30%">
 </a>
 
 
@@ -1799,14 +1799,14 @@ class TicketForgeryEngine {
 
 ### 9.3 Kerberos Attack Walkthrough
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-handwritten.svg" alt="Handwritten: 9.3 Kerberos Attack Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-handwritten.svg" alt="Handwritten: 9.3 Kerberos Attack Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-diagram.svg" alt="Diagram: 9.3 Kerberos Attack Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-diagram.svg" alt="Diagram: 9.3 Kerberos Attack Walkthrough" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-sticky.svg" alt="Sticky Note: 9.3 Kerberos Attack Walkthrough" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/9-3-kerberos-attack-walkthrough-sticky.svg" alt="Sticky Note: 9.3 Kerberos Attack Walkthrough" width="30%">
 </a>
 
 
@@ -1836,14 +1836,14 @@ class TicketForgeryEngine {
 
 ### 10.1 SolarWinds (APT29 / Nobelium) â€” 2020
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-handwritten.svg" alt="Handwritten: 10.1 SolarWinds (APT29 / Nobelium) â€” 2020" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-handwritten.svg" alt="Handwritten: 10.1 SolarWinds (APT29 / Nobelium) â€” 2020" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-diagram.svg" alt="Diagram: 10.1 SolarWinds (APT29 / Nobelium) â€” 2020" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-diagram.svg" alt="Diagram: 10.1 SolarWinds (APT29 / Nobelium) â€” 2020" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-sticky.svg" alt="Sticky Note: 10.1 SolarWinds (APT29 / Nobelium) â€” 2020" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-1-solarwinds-apt29-nobelium-2020-sticky.svg" alt="Sticky Note: 10.1 SolarWinds (APT29 / Nobelium) â€” 2020" width="30%">
 </a>
 
 
@@ -1899,14 +1899,14 @@ The SolarWinds supply chain attack is one of the most sophisticated red-team-eva
 
 ### 10.2 Colonial Pipeline (DarkSide) â€” 2021
 
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-handwritten.svg" alt="Handwritten: 10.2 Colonial Pipeline (DarkSide) â€” 2021" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-handwritten.svg" alt="Handwritten: 10.2 Colonial Pipeline (DarkSide) â€” 2021" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-diagram.svg" alt="Diagram: 10.2 Colonial Pipeline (DarkSide) â€” 2021" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-diagram.svg" alt="Diagram: 10.2 Colonial Pipeline (DarkSide) â€” 2021" width="30%">
 </a>
-<a href="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-sticky.svg" alt="Sticky Note: 10.2 Colonial Pipeline (DarkSide) â€” 2021" width="30%">
+<a href="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/cyber-security/13-red-team-c2/10-2-colonial-pipeline-darkside-2021-sticky.svg" alt="Sticky Note: 10.2 Colonial Pipeline (DarkSide) â€” 2021" width="30%">
 </a>
 
 

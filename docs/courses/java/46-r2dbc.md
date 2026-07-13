@@ -46,14 +46,14 @@ After completing this chapter, you will be able to:
 
 ### 1.1 The Problem with JDBC
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-handwritten.svg" alt="Handwritten: 1.1 The Problem with JDBC" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-handwritten.svg" alt="Handwritten: 1.1 The Problem with JDBC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-diagram.svg" alt="Diagram: 1.1 The Problem with JDBC" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-diagram.svg" alt="Diagram: 1.1 The Problem with JDBC" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-sticky.svg" alt="Sticky Note: 1.1 The Problem with JDBC" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-1-the-problem-with-jdbc-sticky.svg" alt="Sticky Note: 1.1 The Problem with JDBC" width="30%">
 </a>
 
 
@@ -72,14 +72,14 @@ R2DBC (Reactive Relational Database Connectivity) solves this by providing a ful
 
 ### 1.2 R2DBC Specification
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-handwritten.svg" alt="Handwritten: 1.2 R2DBC Specification" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-handwritten.svg" alt="Handwritten: 1.2 R2DBC Specification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-diagram.svg" alt="Diagram: 1.2 R2DBC Specification" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-diagram.svg" alt="Diagram: 1.2 R2DBC Specification" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-sticky.svg" alt="Sticky Note: 1.2 R2DBC Specification" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-2-r2dbc-specification-sticky.svg" alt="Sticky Note: 1.2 R2DBC Specification" width="30%">
 </a>
 
 
@@ -96,14 +96,14 @@ All operations return `Publisher<T>` (typically `Flux` or `Mono`), enabling end-
 
 ### 1.3 R2DBC Drivers
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-handwritten.svg" alt="Handwritten: 1.3 R2DBC Drivers" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-handwritten.svg" alt="Handwritten: 1.3 R2DBC Drivers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-diagram.svg" alt="Diagram: 1.3 R2DBC Drivers" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-diagram.svg" alt="Diagram: 1.3 R2DBC Drivers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-sticky.svg" alt="Sticky Note: 1.3 R2DBC Drivers" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/1-3-r2dbc-drivers-sticky.svg" alt="Sticky Note: 1.3 R2DBC Drivers" width="30%">
 </a>
 
 
@@ -120,14 +120,14 @@ All operations return `Publisher<T>` (typically `Flux` or `Mono`), enabling end-
 
 ### 2.1 Maven Dependencies
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-handwritten.svg" alt="Handwritten: 2.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-handwritten.svg" alt="Handwritten: 2.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-diagram.svg" alt="Diagram: 2.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-diagram.svg" alt="Diagram: 2.1 Maven Dependencies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-sticky.svg" alt="Sticky Note: 2.1 Maven Dependencies" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-1-maven-dependencies-sticky.svg" alt="Sticky Note: 2.1 Maven Dependencies" width="30%">
 </a>
 
 
@@ -234,14 +234,14 @@ All operations return `Publisher<T>` (typically `Flux` or `Mono`), enabling end-
 
 ### 2.2 Application Configuration
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-handwritten.svg" alt="Handwritten: 2.2 Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-handwritten.svg" alt="Handwritten: 2.2 Application Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-diagram.svg" alt="Diagram: 2.2 Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-diagram.svg" alt="Diagram: 2.2 Application Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-sticky.svg" alt="Sticky Note: 2.2 Application Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-2-application-configuration-sticky.svg" alt="Sticky Note: 2.2 Application Configuration" width="30%">
 </a>
 
 
@@ -279,14 +279,14 @@ logging:
 
 ### 2.3 SQL Schema Migrations (Flyway)
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-handwritten.svg" alt="Handwritten: 2.3 SQL Schema Migrations (Flyway)" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-handwritten.svg" alt="Handwritten: 2.3 SQL Schema Migrations (Flyway)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-diagram.svg" alt="Diagram: 2.3 SQL Schema Migrations (Flyway)" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-diagram.svg" alt="Diagram: 2.3 SQL Schema Migrations (Flyway)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-sticky.svg" alt="Sticky Note: 2.3 SQL Schema Migrations (Flyway)" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-3-sql-schema-migrations-flyway-sticky.svg" alt="Sticky Note: 2.3 SQL Schema Migrations (Flyway)" width="30%">
 </a>
 
 
@@ -335,14 +335,14 @@ CREATE INDEX idx_order_items_order ON order_items(order_id);
 
 ### 2.4 Application Entry Point
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-handwritten.svg" alt="Handwritten: 2.4 Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-handwritten.svg" alt="Handwritten: 2.4 Application Entry Point" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-diagram.svg" alt="Diagram: 2.4 Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-diagram.svg" alt="Diagram: 2.4 Application Entry Point" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-sticky.svg" alt="Sticky Note: 2.4 Application Entry Point" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/2-4-application-entry-point-sticky.svg" alt="Sticky Note: 2.4 Application Entry Point" width="30%">
 </a>
 
 
@@ -369,14 +369,14 @@ public class R2dbcApplication {
 
 ### 3.1 Basic Entities
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-handwritten.svg" alt="Handwritten: 3.1 Basic Entities" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-handwritten.svg" alt="Handwritten: 3.1 Basic Entities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-diagram.svg" alt="Diagram: 3.1 Basic Entities" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-diagram.svg" alt="Diagram: 3.1 Basic Entities" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-sticky.svg" alt="Sticky Note: 3.1 Basic Entities" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-1-basic-entities-sticky.svg" alt="Sticky Note: 3.1 Basic Entities" width="30%">
 </a>
 
 
@@ -467,14 +467,14 @@ public class Product implements Persistable<UUID> {
 
 ### 3.2 Entity with Relationships
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-handwritten.svg" alt="Handwritten: 3.2 Entity with Relationships" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-handwritten.svg" alt="Handwritten: 3.2 Entity with Relationships" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-diagram.svg" alt="Diagram: 3.2 Entity with Relationships" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-diagram.svg" alt="Diagram: 3.2 Entity with Relationships" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-sticky.svg" alt="Sticky Note: 3.2 Entity with Relationships" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-2-entity-with-relationships-sticky.svg" alt="Sticky Note: 3.2 Entity with Relationships" width="30%">
 </a>
 
 
@@ -663,14 +663,14 @@ public class OrderItem {
 
 ### 3.3 Custom Converters
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-handwritten.svg" alt="Handwritten: 3.3 Custom Converters" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-handwritten.svg" alt="Handwritten: 3.3 Custom Converters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-diagram.svg" alt="Diagram: 3.3 Custom Converters" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-diagram.svg" alt="Diagram: 3.3 Custom Converters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-sticky.svg" alt="Sticky Note: 3.3 Custom Converters" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/3-3-custom-converters-sticky.svg" alt="Sticky Note: 3.3 Custom Converters" width="30%">
 </a>
 
 
@@ -739,14 +739,14 @@ public class R2dbcConverterConfig {
 
 ### 4.1 R2dbcRepository Interface
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-handwritten.svg" alt="Handwritten: 4.1 R2dbcRepository Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-handwritten.svg" alt="Handwritten: 4.1 R2dbcRepository Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-diagram.svg" alt="Diagram: 4.1 R2dbcRepository Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-diagram.svg" alt="Diagram: 4.1 R2dbcRepository Interface" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-sticky.svg" alt="Sticky Note: 4.1 R2dbcRepository Interface" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-1-r2dbcrepository-interface-sticky.svg" alt="Sticky Note: 4.1 R2dbcRepository Interface" width="30%">
 </a>
 
 
@@ -819,14 +819,14 @@ public interface ProductRepository extends R2dbcRepository<Product, UUID> {
 
 ### 4.2 Customer Repository
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-handwritten.svg" alt="Handwritten: 4.2 Customer Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-handwritten.svg" alt="Handwritten: 4.2 Customer Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-diagram.svg" alt="Diagram: 4.2 Customer Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-diagram.svg" alt="Diagram: 4.2 Customer Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-sticky.svg" alt="Sticky Note: 4.2 Customer Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-2-customer-repository-sticky.svg" alt="Sticky Note: 4.2 Customer Repository" width="30%">
 </a>
 
 
@@ -861,14 +861,14 @@ public interface CustomerRepository extends R2dbcRepository<Customer, UUID> {
 
 ### 4.3 Order Repository with Joins
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-handwritten.svg" alt="Handwritten: 4.3 Order Repository with Joins" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-handwritten.svg" alt="Handwritten: 4.3 Order Repository with Joins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-diagram.svg" alt="Diagram: 4.3 Order Repository with Joins" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-diagram.svg" alt="Diagram: 4.3 Order Repository with Joins" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-sticky.svg" alt="Sticky Note: 4.3 Order Repository with Joins" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-3-order-repository-with-joins-sticky.svg" alt="Sticky Note: 4.3 Order Repository with Joins" width="30%">
 </a>
 
 
@@ -957,14 +957,14 @@ interface DailyOrderSummary {
 
 ### 4.4 Order Item Repository
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-handwritten.svg" alt="Handwritten: 4.4 Order Item Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-handwritten.svg" alt="Handwritten: 4.4 Order Item Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-diagram.svg" alt="Diagram: 4.4 Order Item Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-diagram.svg" alt="Diagram: 4.4 Order Item Repository" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-sticky.svg" alt="Sticky Note: 4.4 Order Item Repository" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/4-4-order-item-repository-sticky.svg" alt="Sticky Note: 4.4 Order Item Repository" width="30%">
 </a>
 
 
@@ -1144,14 +1144,14 @@ public class ProductDatabaseClient {
 
 ### 6.1 Declarative Transactions with @Transactional
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-handwritten.svg" alt="Handwritten: 6.1 Declarative Transactions with @Transactional" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-handwritten.svg" alt="Handwritten: 6.1 Declarative Transactions with @Transactional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-diagram.svg" alt="Diagram: 6.1 Declarative Transactions with @Transactional" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-diagram.svg" alt="Diagram: 6.1 Declarative Transactions with @Transactional" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-sticky.svg" alt="Sticky Note: 6.1 Declarative Transactions with @Transactional" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/6-1-declarative-transactions-with-transactional-sticky.svg" alt="Sticky Note: 6.1 Declarative Transactions with @Transactional" width="30%">
 </a>
 
 
@@ -1308,14 +1308,14 @@ public class OrderService {
 
 ### 6.2 Transaction Configuration
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-handwritten.svg" alt="Handwritten: 6.2 Transaction Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-handwritten.svg" alt="Handwritten: 6.2 Transaction Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-diagram.svg" alt="Diagram: 6.2 Transaction Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-diagram.svg" alt="Diagram: 6.2 Transaction Configuration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-sticky.svg" alt="Sticky Note: 6.2 Transaction Configuration" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/6-2-transaction-configuration-sticky.svg" alt="Sticky Note: 6.2 Transaction Configuration" width="30%">
 </a>
 
 
@@ -1351,14 +1351,14 @@ public class TransactionConfig {
 
 ### 7.1 DataR2dbcTest with H2
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-handwritten.svg" alt="Handwritten: 7.1 DataR2dbcTest with H2" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-handwritten.svg" alt="Handwritten: 7.1 DataR2dbcTest with H2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-diagram.svg" alt="Diagram: 7.1 DataR2dbcTest with H2" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-diagram.svg" alt="Diagram: 7.1 DataR2dbcTest with H2" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-sticky.svg" alt="Sticky Note: 7.1 DataR2dbcTest with H2" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-1-datar2dbctest-with-h2-sticky.svg" alt="Sticky Note: 7.1 DataR2dbcTest with H2" width="30%">
 </a>
 
 
@@ -1532,14 +1532,14 @@ class ProductRepositoryTest {
 
 ### 7.2 Testcontainers with PostgreSQL
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-handwritten.svg" alt="Handwritten: 7.2 Testcontainers with PostgreSQL" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-handwritten.svg" alt="Handwritten: 7.2 Testcontainers with PostgreSQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-diagram.svg" alt="Diagram: 7.2 Testcontainers with PostgreSQL" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-diagram.svg" alt="Diagram: 7.2 Testcontainers with PostgreSQL" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-sticky.svg" alt="Sticky Note: 7.2 Testcontainers with PostgreSQL" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-2-testcontainers-with-postgresql-sticky.svg" alt="Sticky Note: 7.2 Testcontainers with PostgreSQL" width="30%">
 </a>
 
 
@@ -1602,14 +1602,14 @@ class ProductRepositoryTestcontainersTest {
 
 ### 7.3 Testing Transactions
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-handwritten.svg" alt="Handwritten: 7.3 Testing Transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-handwritten.svg" alt="Handwritten: 7.3 Testing Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-diagram.svg" alt="Diagram: 7.3 Testing Transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-diagram.svg" alt="Diagram: 7.3 Testing Transactions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-sticky.svg" alt="Sticky Note: 7.3 Testing Transactions" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/7-3-testing-transactions-sticky.svg" alt="Sticky Note: 7.3 Testing Transactions" width="30%">
 </a>
 
 
@@ -1762,14 +1762,14 @@ public abstract class AuditableEntity {
 
 ### 9.1 Connection Pool Optimization
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-handwritten.svg" alt="Handwritten: 9.1 Connection Pool Optimization" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-handwritten.svg" alt="Handwritten: 9.1 Connection Pool Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-diagram.svg" alt="Diagram: 9.1 Connection Pool Optimization" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-diagram.svg" alt="Diagram: 9.1 Connection Pool Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-sticky.svg" alt="Sticky Note: 9.1 Connection Pool Optimization" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-1-connection-pool-optimization-sticky.svg" alt="Sticky Note: 9.1 Connection Pool Optimization" width="30%">
 </a>
 
 
@@ -1792,14 +1792,14 @@ spring:
 
 ### 9.2 Batch Operations
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-handwritten.svg" alt="Handwritten: 9.2 Batch Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-handwritten.svg" alt="Handwritten: 9.2 Batch Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-diagram.svg" alt="Diagram: 9.2 Batch Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-diagram.svg" alt="Diagram: 9.2 Batch Operations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-sticky.svg" alt="Sticky Note: 9.2 Batch Operations" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-2-batch-operations-sticky.svg" alt="Sticky Note: 9.2 Batch Operations" width="30%">
 </a>
 
 
@@ -1884,14 +1884,14 @@ public class BatchService {
 
 ### 9.3 Indexing and Query Optimization
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-handwritten.svg" alt="Handwritten: 9.3 Indexing and Query Optimization" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-handwritten.svg" alt="Handwritten: 9.3 Indexing and Query Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-diagram.svg" alt="Diagram: 9.3 Indexing and Query Optimization" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-diagram.svg" alt="Diagram: 9.3 Indexing and Query Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-sticky.svg" alt="Sticky Note: 9.3 Indexing and Query Optimization" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-3-indexing-and-query-optimization-sticky.svg" alt="Sticky Note: 9.3 Indexing and Query Optimization" width="30%">
 </a>
 
 
@@ -1919,14 +1919,14 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_category_stats ON product_category_stats(c
 
 ### 9.4 Performance Comparison: R2DBC vs JPA
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-handwritten.svg" alt="Handwritten: 9.4 Performance Comparison: R2DBC vs JPA" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-handwritten.svg" alt="Handwritten: 9.4 Performance Comparison: R2DBC vs JPA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-diagram.svg" alt="Diagram: 9.4 Performance Comparison: R2DBC vs JPA" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-diagram.svg" alt="Diagram: 9.4 Performance Comparison: R2DBC vs JPA" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-sticky.svg" alt="Sticky Note: 9.4 Performance Comparison: R2DBC vs JPA" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/9-4-performance-comparison-r2dbc-vs-jpa-sticky.svg" alt="Sticky Note: 9.4 Performance Comparison: R2DBC vs JPA" width="30%">
 </a>
 
 
@@ -2044,14 +2044,14 @@ public class PerformanceComparison {
 
 ### When to Use Each
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
 </a>
 
 
@@ -2074,14 +2074,14 @@ public class PerformanceComparison {
 
 ### 11.1 Pageable Support
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-handwritten.svg" alt="Handwritten: 11.1 Pageable Support" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-handwritten.svg" alt="Handwritten: 11.1 Pageable Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-diagram.svg" alt="Diagram: 11.1 Pageable Support" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-diagram.svg" alt="Diagram: 11.1 Pageable Support" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-sticky.svg" alt="Sticky Note: 11.1 Pageable Support" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-1-pageable-support-sticky.svg" alt="Sticky Note: 11.1 Pageable Support" width="30%">
 </a>
 
 
@@ -2108,14 +2108,14 @@ public interface PaginatedProductRepository
 
 ### 11.2 Entity Callbacks
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-handwritten.svg" alt="Handwritten: 11.2 Entity Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-handwritten.svg" alt="Handwritten: 11.2 Entity Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-diagram.svg" alt="Diagram: 11.2 Entity Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-diagram.svg" alt="Diagram: 11.2 Entity Callbacks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-sticky.svg" alt="Sticky Note: 11.2 Entity Callbacks" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-2-entity-callbacks-sticky.svg" alt="Sticky Note: 11.2 Entity Callbacks" width="30%">
 </a>
 
 
@@ -2149,14 +2149,14 @@ class ProductBeforeConvertCallback implements BeforeConvertCallback<Product> {
 
 ### 11.3 Reactive Auditing with Spring Data
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-handwritten.svg" alt="Handwritten: 11.3 Reactive Auditing with Spring Data" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-handwritten.svg" alt="Handwritten: 11.3 Reactive Auditing with Spring Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-diagram.svg" alt="Diagram: 11.3 Reactive Auditing with Spring Data" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-diagram.svg" alt="Diagram: 11.3 Reactive Auditing with Spring Data" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-sticky.svg" alt="Sticky Note: 11.3 Reactive Auditing with Spring Data" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-3-reactive-auditing-with-spring-data-sticky.svg" alt="Sticky Note: 11.3 Reactive Auditing with Spring Data" width="30%">
 </a>
 
 
@@ -2182,14 +2182,14 @@ public class R2dbcAuditingConfig {
 
 ### 11.4 Schema Initialization with SQL Scripts
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-handwritten.svg" alt="Handwritten: 11.4 Schema Initialization with SQL Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-handwritten.svg" alt="Handwritten: 11.4 Schema Initialization with SQL Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-diagram.svg" alt="Diagram: 11.4 Schema Initialization with SQL Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-diagram.svg" alt="Diagram: 11.4 Schema Initialization with SQL Scripts" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-sticky.svg" alt="Sticky Note: 11.4 Schema Initialization with SQL Scripts" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-4-schema-initialization-with-sql-scripts-sticky.svg" alt="Sticky Note: 11.4 Schema Initialization with SQL Scripts" width="30%">
 </a>
 
 
@@ -2223,14 +2223,14 @@ INSERT INTO products (name, category, price, quantity) VALUES
 
 ### 11.5 Complete WebFlux + R2DBC Controller
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-handwritten.svg" alt="Handwritten: 11.5 Complete WebFlux + R2DBC Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-handwritten.svg" alt="Handwritten: 11.5 Complete WebFlux + R2DBC Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-diagram.svg" alt="Diagram: 11.5 Complete WebFlux + R2DBC Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-diagram.svg" alt="Diagram: 11.5 Complete WebFlux + R2DBC Controller" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-sticky.svg" alt="Sticky Note: 11.5 Complete WebFlux + R2DBC Controller" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/11-5-complete-webflux-r2dbc-controller-sticky.svg" alt="Sticky Note: 11.5 Complete WebFlux + R2DBC Controller" width="30%">
 </a>
 
 
@@ -2349,14 +2349,14 @@ public class ProductR2dbcController {
 
 ### 12.1 Main Application
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-handwritten.svg" alt="Handwritten: 12.1 Main Application" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-handwritten.svg" alt="Handwritten: 12.1 Main Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-diagram.svg" alt="Diagram: 12.1 Main Application" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-diagram.svg" alt="Diagram: 12.1 Main Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-sticky.svg" alt="Sticky Note: 12.1 Main Application" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/12-1-main-application-sticky.svg" alt="Sticky Note: 12.1 Main Application" width="30%">
 </a>
 
 
@@ -2379,14 +2379,14 @@ public class ReactiveDataApplication {
 
 ### 12.2 Application Properties
 
-<a href="../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-handwritten.svg" alt="Handwritten: 12.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-handwritten.svg" alt="Handwritten: 12.2 Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-diagram.svg" alt="Diagram: 12.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-diagram.svg" alt="Diagram: 12.2 Application Properties" width="30%">
 </a>
-<a href="../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-sticky.svg" alt="Sticky Note: 12.2 Application Properties" width="30%">
+<a href="../../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/java/46-r2dbc/12-2-application-properties-sticky.svg" alt="Sticky Note: 12.2 Application Properties" width="30%">
 </a>
 
 

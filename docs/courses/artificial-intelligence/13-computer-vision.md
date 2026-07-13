@@ -81,14 +81,14 @@ Think of a grayscale image as a spreadsheet where each cell holds a number betwe
 
 ### 13.1.1 Pixels and Color Spaces
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-handwritten.svg" alt="Handwritten: 13.1.1 Pixels and Color Spaces" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-handwritten.svg" alt="Handwritten: 13.1.1 Pixels and Color Spaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-diagram.svg" alt="Diagram: 13.1.1 Pixels and Color Spaces" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-diagram.svg" alt="Diagram: 13.1.1 Pixels and Color Spaces" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-sticky.svg" alt="Sticky Note: 13.1.1 Pixels and Color Spaces" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-1-pixels-and-color-spaces-sticky.svg" alt="Sticky Note: 13.1.1 Pixels and Color Spaces" width="30%">
 </a>
 
 
@@ -111,14 +111,14 @@ $$I(x, y) = [R(x, y), G(x, y), B(x, y)]^\top$$
 
 ### 13.1.2 Image as a Tensor
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-handwritten.svg" alt="Handwritten: 13.1.2 Image as a Tensor" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-handwritten.svg" alt="Handwritten: 13.1.2 Image as a Tensor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-diagram.svg" alt="Diagram: 13.1.2 Image as a Tensor" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-diagram.svg" alt="Diagram: 13.1.2 Image as a Tensor" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-sticky.svg" alt="Sticky Note: 13.1.2 Image as a Tensor" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-2-image-as-a-tensor-sticky.svg" alt="Sticky Note: 13.1.2 Image as a Tensor" width="30%">
 </a>
 
 
@@ -130,14 +130,14 @@ In deep learning frameworks, images are represented as tensors:
 
 ### 13.1.3 Algorithm: Load and Inspect Image
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-handwritten.svg" alt="Handwritten: 13.1.3 Algorithm: Load and Inspect Image" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-handwritten.svg" alt="Handwritten: 13.1.3 Algorithm: Load and Inspect Image" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-diagram.svg" alt="Diagram: 13.1.3 Algorithm: Load and Inspect Image" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-diagram.svg" alt="Diagram: 13.1.3 Algorithm: Load and Inspect Image" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-sticky.svg" alt="Sticky Note: 13.1.3 Algorithm: Load and Inspect Image" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-3-algorithm-load-and-inspect-image-sticky.svg" alt="Sticky Note: 13.1.3 Algorithm: Load and Inspect Image" width="30%">
 </a>
 
 
@@ -174,14 +174,14 @@ END FUNCTION
 
 ### 13.1.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-handwritten.svg" alt="Handwritten: 13.1.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-handwritten.svg" alt="Handwritten: 13.1.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-diagram.svg" alt="Diagram: 13.1.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-diagram.svg" alt="Diagram: 13.1.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-sticky.svg" alt="Sticky Note: 13.1.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-4-python-implementation-sticky.svg" alt="Sticky Note: 13.1.4 Python Implementation" width="30%">
 </a>
 
 
@@ -212,14 +212,14 @@ print(f'Pixel (100,200): {pixel}, Normalized range: [{gray_norm.min():.3f}, {gra
 
 ### 13.1.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 13.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 13.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-diagram.svg" alt="Diagram: 13.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-diagram.svg" alt="Diagram: 13.1.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 13.1.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 13.1.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -231,14 +231,14 @@ print(f'Pixel (100,200): {pixel}, Normalized range: [{gray_norm.min():.3f}, {gra
 
 ### 13.1.6 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.1.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.1.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.1.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.1.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.1.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.1.6 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -251,14 +251,14 @@ print(f'Pixel (100,200): {pixel}, Normalized range: [{gray_norm.min():.3f}, {gra
 
 ### 13.1.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-handwritten.svg" alt="Handwritten: 13.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-handwritten.svg" alt="Handwritten: 13.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-diagram.svg" alt="Diagram: 13.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-diagram.svg" alt="Diagram: 13.1.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-sticky.svg" alt="Sticky Note: 13.1.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-1-7-edge-cases-sticky.svg" alt="Sticky Note: 13.1.7 Edge Cases" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ Image filtering applies a small matrix called a **kernel** (or filter) across ev
 
 ### 13.2.1 Convolution Operation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-handwritten.svg" alt="Handwritten: 13.2.1 Convolution Operation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-handwritten.svg" alt="Handwritten: 13.2.1 Convolution Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-diagram.svg" alt="Diagram: 13.2.1 Convolution Operation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-diagram.svg" alt="Diagram: 13.2.1 Convolution Operation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-sticky.svg" alt="Sticky Note: 13.2.1 Convolution Operation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-1-convolution-operation-sticky.svg" alt="Sticky Note: 13.2.1 Convolution Operation" width="30%">
 </a>
 
 
@@ -300,14 +300,14 @@ where $a = \lfloor k/2 \rfloor$ and $b = \lfloor k/2 \rfloor$.
 
 ### 13.2.2 Algorithm: 2D Convolution
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-handwritten.svg" alt="Handwritten: 13.2.2 Algorithm: 2D Convolution" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-handwritten.svg" alt="Handwritten: 13.2.2 Algorithm: 2D Convolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-diagram.svg" alt="Diagram: 13.2.2 Algorithm: 2D Convolution" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-diagram.svg" alt="Diagram: 13.2.2 Algorithm: 2D Convolution" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-sticky.svg" alt="Sticky Note: 13.2.2 Algorithm: 2D Convolution" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-2-algorithm-2d-convolution-sticky.svg" alt="Sticky Note: 13.2.2 Algorithm: 2D Convolution" width="30%">
 </a>
 
 
@@ -355,14 +355,14 @@ END FUNCTION
 
 ### 13.2.3 Common Filters
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-handwritten.svg" alt="Handwritten: 13.2.3 Common Filters" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-handwritten.svg" alt="Handwritten: 13.2.3 Common Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-diagram.svg" alt="Diagram: 13.2.3 Common Filters" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-diagram.svg" alt="Diagram: 13.2.3 Common Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-sticky.svg" alt="Sticky Note: 13.2.3 Common Filters" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-3-common-filters-sticky.svg" alt="Sticky Note: 13.2.3 Common Filters" width="30%">
 </a>
 
 
@@ -377,14 +377,14 @@ END FUNCTION
 
 ### 13.2.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-handwritten.svg" alt="Handwritten: 13.2.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-handwritten.svg" alt="Handwritten: 13.2.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-diagram.svg" alt="Diagram: 13.2.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-diagram.svg" alt="Diagram: 13.2.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-sticky.svg" alt="Sticky Note: 13.2.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-4-python-implementation-sticky.svg" alt="Sticky Note: 13.2.4 Python Implementation" width="30%">
 </a>
 
 
@@ -433,14 +433,14 @@ cv2.destroyAllWindows()
 
 ### 13.2.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-handwritten.svg" alt="Handwritten: 13.2.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-handwritten.svg" alt="Handwritten: 13.2.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-diagram.svg" alt="Diagram: 13.2.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-diagram.svg" alt="Diagram: 13.2.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-sticky.svg" alt="Sticky Note: 13.2.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-5-complexity-analysis-sticky.svg" alt="Sticky Note: 13.2.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -455,14 +455,14 @@ cv2.destroyAllWindows()
 
 ### 13.2.6 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.2.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.2.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.2.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.2.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.2.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.2.6 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -476,14 +476,14 @@ cv2.destroyAllWindows()
 
 ### 13.2.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-handwritten.svg" alt="Handwritten: 13.2.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-handwritten.svg" alt="Handwritten: 13.2.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-diagram.svg" alt="Diagram: 13.2.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-diagram.svg" alt="Diagram: 13.2.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-sticky.svg" alt="Sticky Note: 13.2.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-2-7-edge-cases-sticky.svg" alt="Sticky Note: 13.2.7 Edge Cases" width="30%">
 </a>
 
 
@@ -503,14 +503,14 @@ When you color inside the lines of a coloring book, you first identify the bound
 
 ### 13.3.1 Image Gradients
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-handwritten.svg" alt="Handwritten: 13.3.1 Image Gradients" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-handwritten.svg" alt="Handwritten: 13.3.1 Image Gradients" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-diagram.svg" alt="Diagram: 13.3.1 Image Gradients" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-diagram.svg" alt="Diagram: 13.3.1 Image Gradients" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-sticky.svg" alt="Sticky Note: 13.3.1 Image Gradients" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-1-image-gradients-sticky.svg" alt="Sticky Note: 13.3.1 Image Gradients" width="30%">
 </a>
 
 
@@ -523,14 +523,14 @@ $$\nabla I(x, y) = \begin{bmatrix} \frac{\partial I}{\partial x} \\ \frac{\parti
 
 ### 13.3.2 Algorithm: Canny Edge Detector
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-handwritten.svg" alt="Handwritten: 13.3.2 Algorithm: Canny Edge Detector" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-handwritten.svg" alt="Handwritten: 13.3.2 Algorithm: Canny Edge Detector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-diagram.svg" alt="Diagram: 13.3.2 Algorithm: Canny Edge Detector" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-diagram.svg" alt="Diagram: 13.3.2 Algorithm: Canny Edge Detector" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-sticky.svg" alt="Sticky Note: 13.3.2 Algorithm: Canny Edge Detector" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-2-algorithm-canny-edge-detector-sticky.svg" alt="Sticky Note: 13.3.2 Algorithm: Canny Edge Detector" width="30%">
 </a>
 
 
@@ -600,14 +600,14 @@ Assume gradient magnitudes ($M$) and quantized directions ($\theta$) for a 5Ã�
 
 ### 13.3.3 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-handwritten.svg" alt="Handwritten: 13.3.3 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-handwritten.svg" alt="Handwritten: 13.3.3 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-diagram.svg" alt="Diagram: 13.3.3 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-diagram.svg" alt="Diagram: 13.3.3 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-sticky.svg" alt="Sticky Note: 13.3.3 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-3-python-implementation-sticky.svg" alt="Sticky Note: 13.3.3 Python Implementation" width="30%">
 </a>
 
 
@@ -679,14 +679,14 @@ cv2.destroyAllWindows()
 
 ### 13.3.4 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-handwritten.svg" alt="Handwritten: 13.3.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-handwritten.svg" alt="Handwritten: 13.3.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-diagram.svg" alt="Diagram: 13.3.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-diagram.svg" alt="Diagram: 13.3.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-sticky.svg" alt="Sticky Note: 13.3.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-4-complexity-analysis-sticky.svg" alt="Sticky Note: 13.3.4 Complexity Analysis" width="30%">
 </a>
 
 
@@ -701,14 +701,14 @@ cv2.destroyAllWindows()
 
 ### 13.3.5 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.3.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.3.5 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.3.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.3.5 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.3.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-5-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.3.5 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -721,14 +721,14 @@ cv2.destroyAllWindows()
 
 ### 13.3.6 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-handwritten.svg" alt="Handwritten: 13.3.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-handwritten.svg" alt="Handwritten: 13.3.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-diagram.svg" alt="Diagram: 13.3.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-diagram.svg" alt="Diagram: 13.3.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-sticky.svg" alt="Sticky Note: 13.3.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-3-6-edge-cases-sticky.svg" alt="Sticky Note: 13.3.6 Edge Cases" width="30%">
 </a>
 
 
@@ -748,14 +748,14 @@ When you navigate a city, you recognize locations by distinctive landmarks → a
 
 ### 13.4.1 SIFT (Scale-Invariant Feature Transform)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-handwritten.svg" alt="Handwritten: 13.4.1 SIFT (Scale-Invariant Feature Transform)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-handwritten.svg" alt="Handwritten: 13.4.1 SIFT (Scale-Invariant Feature Transform)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-diagram.svg" alt="Diagram: 13.4.1 SIFT (Scale-Invariant Feature Transform)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-diagram.svg" alt="Diagram: 13.4.1 SIFT (Scale-Invariant Feature Transform)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-sticky.svg" alt="Sticky Note: 13.4.1 SIFT (Scale-Invariant Feature Transform)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-1-sift-scale-invariant-feature-transform-sticky.svg" alt="Sticky Note: 13.4.1 SIFT (Scale-Invariant Feature Transform)" width="30%">
 </a>
 
 
@@ -840,14 +840,14 @@ Assume a keypoint at scale $\sigma = 1.6$ and a $4.5\sigma = 7.2$ pixel neighbor
 
 ### 13.4.2 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-handwritten.svg" alt="Handwritten: 13.4.2 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-handwritten.svg" alt="Handwritten: 13.4.2 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-diagram.svg" alt="Diagram: 13.4.2 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-diagram.svg" alt="Diagram: 13.4.2 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-sticky.svg" alt="Sticky Note: 13.4.2 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-2-python-implementation-sticky.svg" alt="Sticky Note: 13.4.2 Python Implementation" width="30%">
 </a>
 
 
@@ -898,14 +898,14 @@ cv2.destroyAllWindows()
 
 ### 13.4.3 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-handwritten.svg" alt="Handwritten: 13.4.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-handwritten.svg" alt="Handwritten: 13.4.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-diagram.svg" alt="Diagram: 13.4.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-diagram.svg" alt="Diagram: 13.4.3 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-sticky.svg" alt="Sticky Note: 13.4.3 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-3-complexity-analysis-sticky.svg" alt="Sticky Note: 13.4.3 Complexity Analysis" width="30%">
 </a>
 
 
@@ -918,14 +918,14 @@ cv2.destroyAllWindows()
 
 ### 13.4.4 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.4.4 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.4.4 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.4.4 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.4.4 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.4.4 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-4-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.4.4 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -939,14 +939,14 @@ cv2.destroyAllWindows()
 
 ### 13.4.5 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-handwritten.svg" alt="Handwritten: 13.4.5 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-handwritten.svg" alt="Handwritten: 13.4.5 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-diagram.svg" alt="Diagram: 13.4.5 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-diagram.svg" alt="Diagram: 13.4.5 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-sticky.svg" alt="Sticky Note: 13.4.5 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-4-5-edge-cases-sticky.svg" alt="Sticky Note: 13.4.5 Edge Cases" width="30%">
 </a>
 
 
@@ -971,14 +971,14 @@ CNNs mirror this hierarchy exactly:
 
 ### 13.5.1 CNN Building Blocks
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-handwritten.svg" alt="Handwritten: 13.5.1 CNN Building Blocks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-handwritten.svg" alt="Handwritten: 13.5.1 CNN Building Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-diagram.svg" alt="Diagram: 13.5.1 CNN Building Blocks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-diagram.svg" alt="Diagram: 13.5.1 CNN Building Blocks" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-sticky.svg" alt="Sticky Note: 13.5.1 CNN Building Blocks" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-1-cnn-building-blocks-sticky.svg" alt="Sticky Note: 13.5.1 CNN Building Blocks" width="30%">
 </a>
 
 
@@ -1003,14 +1003,14 @@ $$W_{\text{out}} = \left\lfloor \frac{W_{\text{in}} - k + 2p}{s} \right\rfloor +
 
 ### 13.5.2 Algorithm: Forward Pass Through a CNN
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-handwritten.svg" alt="Handwritten: 13.5.2 Algorithm: Forward Pass Through a CNN" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-handwritten.svg" alt="Handwritten: 13.5.2 Algorithm: Forward Pass Through a CNN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-diagram.svg" alt="Diagram: 13.5.2 Algorithm: Forward Pass Through a CNN" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-diagram.svg" alt="Diagram: 13.5.2 Algorithm: Forward Pass Through a CNN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-sticky.svg" alt="Sticky Note: 13.5.2 Algorithm: Forward Pass Through a CNN" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-2-algorithm-forward-pass-through-a-cnn-sticky.svg" alt="Sticky Note: 13.5.2 Algorithm: Forward Pass Through a CNN" width="30%">
 </a>
 
 
@@ -1065,14 +1065,14 @@ END FUNCTION
 
 ### 13.5.3 Python Implementation (PyTorch)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-handwritten.svg" alt="Handwritten: 13.5.3 Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-handwritten.svg" alt="Handwritten: 13.5.3 Python Implementation (PyTorch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-diagram.svg" alt="Diagram: 13.5.3 Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-diagram.svg" alt="Diagram: 13.5.3 Python Implementation (PyTorch)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-sticky.svg" alt="Sticky Note: 13.5.3 Python Implementation (PyTorch)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-3-python-implementation-pytorch-sticky.svg" alt="Sticky Note: 13.5.3 Python Implementation (PyTorch)" width="30%">
 </a>
 
 
@@ -1145,14 +1145,14 @@ with torch.no_grad():
 
 ### 13.5.4 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-handwritten.svg" alt="Handwritten: 13.5.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-handwritten.svg" alt="Handwritten: 13.5.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-diagram.svg" alt="Diagram: 13.5.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-diagram.svg" alt="Diagram: 13.5.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-sticky.svg" alt="Sticky Note: 13.5.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-4-complexity-analysis-sticky.svg" alt="Sticky Note: 13.5.4 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1167,14 +1167,14 @@ with torch.no_grad():
 
 ### 13.5.5 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.5.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.5.5 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.5.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.5.5 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.5.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-5-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.5.5 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -1188,14 +1188,14 @@ with torch.no_grad():
 
 ### 13.5.6 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-handwritten.svg" alt="Handwritten: 13.5.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-handwritten.svg" alt="Handwritten: 13.5.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-diagram.svg" alt="Diagram: 13.5.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-diagram.svg" alt="Diagram: 13.5.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-sticky.svg" alt="Sticky Note: 13.5.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-5-6-edge-cases-sticky.svg" alt="Sticky Note: 13.5.6 Edge Cases" width="30%">
 </a>
 
 
@@ -1218,14 +1218,14 @@ Object detection does the same: for every object in an image, it predicts a clas
 
 ### 13.6.1 Evaluation Metric: IoU and mAP
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-handwritten.svg" alt="Handwritten: 13.6.1 Evaluation Metric: IoU and mAP" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-handwritten.svg" alt="Handwritten: 13.6.1 Evaluation Metric: IoU and mAP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-diagram.svg" alt="Diagram: 13.6.1 Evaluation Metric: IoU and mAP" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-diagram.svg" alt="Diagram: 13.6.1 Evaluation Metric: IoU and mAP" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-sticky.svg" alt="Sticky Note: 13.6.1 Evaluation Metric: IoU and mAP" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-1-evaluation-metric-iou-and-map-sticky.svg" alt="Sticky Note: 13.6.1 Evaluation Metric: IoU and mAP" width="30%">
 </a>
 
 
@@ -1239,14 +1239,14 @@ A prediction is a **true positive** if IoU â‰¥ threshold (typically 0.5) AND
 
 ### 13.6.2 Two-Stage Detectors: R-CNN Family
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-handwritten.svg" alt="Handwritten: 13.6.2 Two-Stage Detectors: R-CNN Family" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-handwritten.svg" alt="Handwritten: 13.6.2 Two-Stage Detectors: R-CNN Family" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-diagram.svg" alt="Diagram: 13.6.2 Two-Stage Detectors: R-CNN Family" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-diagram.svg" alt="Diagram: 13.6.2 Two-Stage Detectors: R-CNN Family" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-sticky.svg" alt="Sticky Note: 13.6.2 Two-Stage Detectors: R-CNN Family" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-2-two-stage-detectors-r-cnn-family-sticky.svg" alt="Sticky Note: 13.6.2 Two-Stage Detectors: R-CNN Family" width="30%">
 </a>
 
 
@@ -1307,14 +1307,14 @@ Assume a feature map position $(5, 5)$ with 3 anchor boxes (ratios 1:1, 1:2, 2:1
 
 ### 13.6.3 Single-Stage Detectors: YOLO
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-handwritten.svg" alt="Handwritten: 13.6.3 Single-Stage Detectors: YOLO" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-handwritten.svg" alt="Handwritten: 13.6.3 Single-Stage Detectors: YOLO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-diagram.svg" alt="Diagram: 13.6.3 Single-Stage Detectors: YOLO" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-diagram.svg" alt="Diagram: 13.6.3 Single-Stage Detectors: YOLO" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-sticky.svg" alt="Sticky Note: 13.6.3 Single-Stage Detectors: YOLO" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-3-single-stage-detectors-yolo-sticky.svg" alt="Sticky Note: 13.6.3 Single-Stage Detectors: YOLO" width="30%">
 </a>
 
 
@@ -1377,14 +1377,14 @@ Assume grid cell (3, 4), 2 anchor boxes, 80 COCO classes:
 
 ### 13.6.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-handwritten.svg" alt="Handwritten: 13.6.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-handwritten.svg" alt="Handwritten: 13.6.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-diagram.svg" alt="Diagram: 13.6.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-diagram.svg" alt="Diagram: 13.6.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-sticky.svg" alt="Sticky Note: 13.6.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-4-python-implementation-sticky.svg" alt="Sticky Note: 13.6.4 Python Implementation" width="30%">
 </a>
 
 
@@ -1440,14 +1440,14 @@ cv2.destroyAllWindows()
 
 ### 13.6.5 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 13.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 13.6.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-diagram.svg" alt="Diagram: 13.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-diagram.svg" alt="Diagram: 13.6.5 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 13.6.5 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 13.6.5 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1462,14 +1462,14 @@ cv2.destroyAllWindows()
 
 ### 13.6.6 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.6.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.6.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.6.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.6.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.6.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.6.6 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -1483,14 +1483,14 @@ cv2.destroyAllWindows()
 
 ### 13.6.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-handwritten.svg" alt="Handwritten: 13.6.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-handwritten.svg" alt="Handwritten: 13.6.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-diagram.svg" alt="Diagram: 13.6.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-diagram.svg" alt="Diagram: 13.6.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-sticky.svg" alt="Sticky Note: 13.6.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-6-7-edge-cases-sticky.svg" alt="Sticky Note: 13.6.7 Edge Cases" width="30%">
 </a>
 
 
@@ -1510,14 +1510,14 @@ Imagine you have a coloring book page showing a house with a blue sky, green gra
 
 ### 13.7.1 Semantic Segmentation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-handwritten.svg" alt="Handwritten: 13.7.1 Semantic Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-handwritten.svg" alt="Handwritten: 13.7.1 Semantic Segmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-diagram.svg" alt="Diagram: 13.7.1 Semantic Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-diagram.svg" alt="Diagram: 13.7.1 Semantic Segmentation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-sticky.svg" alt="Sticky Note: 13.7.1 Semantic Segmentation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-1-semantic-segmentation-sticky.svg" alt="Sticky Note: 13.7.1 Semantic Segmentation" width="30%">
 </a>
 
 
@@ -1588,14 +1588,14 @@ END FUNCTION
 
 ### 13.7.2 Instance Segmentation: Mask R-CNN
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-handwritten.svg" alt="Handwritten: 13.7.2 Instance Segmentation: Mask R-CNN" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-handwritten.svg" alt="Handwritten: 13.7.2 Instance Segmentation: Mask R-CNN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-diagram.svg" alt="Diagram: 13.7.2 Instance Segmentation: Mask R-CNN" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-diagram.svg" alt="Diagram: 13.7.2 Instance Segmentation: Mask R-CNN" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-sticky.svg" alt="Sticky Note: 13.7.2 Instance Segmentation: Mask R-CNN" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-2-instance-segmentation-mask-r-cnn-sticky.svg" alt="Sticky Note: 13.7.2 Instance Segmentation: Mask R-CNN" width="30%">
 </a>
 
 
@@ -1613,14 +1613,14 @@ Mask R-CNN (He et al., 2017) extends Faster R-CNN by adding a mask prediction br
 
 ### 13.7.3 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-handwritten.svg" alt="Handwritten: 13.7.3 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-handwritten.svg" alt="Handwritten: 13.7.3 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-diagram.svg" alt="Diagram: 13.7.3 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-diagram.svg" alt="Diagram: 13.7.3 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-sticky.svg" alt="Sticky Note: 13.7.3 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-3-python-implementation-sticky.svg" alt="Sticky Note: 13.7.3 Python Implementation" width="30%">
 </a>
 
 
@@ -1729,14 +1729,14 @@ cv2.destroyAllWindows()
 
 ### 13.7.4 Complexity Analysis
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-handwritten.svg" alt="Handwritten: 13.7.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-handwritten.svg" alt="Handwritten: 13.7.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-diagram.svg" alt="Diagram: 13.7.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-diagram.svg" alt="Diagram: 13.7.4 Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-sticky.svg" alt="Sticky Note: 13.7.4 Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-4-complexity-analysis-sticky.svg" alt="Sticky Note: 13.7.4 Complexity Analysis" width="30%">
 </a>
 
 
@@ -1749,14 +1749,14 @@ cv2.destroyAllWindows()
 
 ### 13.7.5 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.7.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.7.5 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.7.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.7.5 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.7.5 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-5-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.7.5 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -1769,14 +1769,14 @@ cv2.destroyAllWindows()
 
 ### 13.7.6 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-handwritten.svg" alt="Handwritten: 13.7.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-handwritten.svg" alt="Handwritten: 13.7.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-diagram.svg" alt="Diagram: 13.7.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-diagram.svg" alt="Diagram: 13.7.6 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-sticky.svg" alt="Sticky Note: 13.7.6 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-7-6-edge-cases-sticky.svg" alt="Sticky Note: 13.7.6 Edge Cases" width="30%">
 </a>
 
 
@@ -1803,14 +1803,14 @@ cv2.destroyAllWindows()
 
 ### Task Selection Guide
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-handwritten.svg" alt="Handwritten: Task Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-handwritten.svg" alt="Handwritten: Task Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-diagram.svg" alt="Diagram: Task Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-diagram.svg" alt="Diagram: Task Selection Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-sticky.svg" alt="Sticky Note: Task Selection Guide" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/task-selection-guide-sticky.svg" alt="Sticky Note: Task Selection Guide" width="30%">
 </a>
 
 
@@ -1850,14 +1850,14 @@ AlexNet was the Model T Ford → first to prove it works. VGG was a V12 engine �
 
 ### 13.9.1 Architecture Decision Guide
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-handwritten.svg" alt="Handwritten: 13.9.1 Architecture Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-handwritten.svg" alt="Handwritten: 13.9.1 Architecture Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-diagram.svg" alt="Diagram: 13.9.1 Architecture Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-diagram.svg" alt="Diagram: 13.9.1 Architecture Decision Guide" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-sticky.svg" alt="Sticky Note: 13.9.1 Architecture Decision Guide" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-1-architecture-decision-guide-sticky.svg" alt="Sticky Note: 13.9.1 Architecture Decision Guide" width="30%">
 </a>
 
 
@@ -1873,14 +1873,14 @@ AlexNet was the Model T Ford → first to prove it works. VGG was a V12 engine �
 
 ### 13.9.2 Evolution Timeline
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-handwritten.svg" alt="Handwritten: 13.9.2 Evolution Timeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-handwritten.svg" alt="Handwritten: 13.9.2 Evolution Timeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-diagram.svg" alt="Diagram: 13.9.2 Evolution Timeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-diagram.svg" alt="Diagram: 13.9.2 Evolution Timeline" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-sticky.svg" alt="Sticky Note: 13.9.2 Evolution Timeline" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-9-2-evolution-timeline-sticky.svg" alt="Sticky Note: 13.9.2 Evolution Timeline" width="30%">
 </a>
 
 
@@ -1910,14 +1910,14 @@ timeline
 
 ### Q1: Explain the convolution operation in CNNs. How does it differ from correlation?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-handwritten.svg" alt="Handwritten: Explain the convolution operation in CNNs. How does it differ from correlation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-handwritten.svg" alt="Handwritten: Explain the convolution operation in CNNs. How does it differ from correlation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-diagram.svg" alt="Diagram: Explain the convolution operation in CNNs. How does it differ from correlation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-diagram.svg" alt="Diagram: Explain the convolution operation in CNNs. How does it differ from correlation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-sticky.svg" alt="Sticky Note: Explain the convolution operation in CNNs. How does it differ from correlation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-convolution-operation-in-cnns-how-does-it-differ-from-correlation-sticky.svg" alt="Sticky Note: Explain the convolution operation in CNNs. How does it differ from correlation?" width="30%">
 </a>
 
 
@@ -1940,14 +1940,14 @@ The only difference is that the kernel is **flipped 180 degrees** before applica
 
 ### Q2: What is receptive field? How do you compute it?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-handwritten.svg" alt="Handwritten: What is receptive field? How do you compute it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-handwritten.svg" alt="Handwritten: What is receptive field? How do you compute it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-diagram.svg" alt="Diagram: What is receptive field? How do you compute it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-diagram.svg" alt="Diagram: What is receptive field? How do you compute it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-sticky.svg" alt="Sticky Note: What is receptive field? How do you compute it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-receptive-field-how-do-you-compute-it-sticky.svg" alt="Sticky Note: What is receptive field? How do you compute it?" width="30%">
 </a>
 
 
@@ -1983,14 +1983,14 @@ By the end of VGG-16, each neuron in the final feature map "sees" a $404 \times 
 
 ### Q3: What is transfer learning? When and why do we use it?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-handwritten.svg" alt="Handwritten: What is transfer learning? When and why do we use it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-handwritten.svg" alt="Handwritten: What is transfer learning? When and why do we use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-diagram.svg" alt="Diagram: What is transfer learning? When and why do we use it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-diagram.svg" alt="Diagram: What is transfer learning? When and why do we use it?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-sticky.svg" alt="Sticky Note: What is transfer learning? When and why do we use it?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-transfer-learning-when-and-why-do-we-use-it-sticky.svg" alt="Sticky Note: What is transfer learning? When and why do we use it?" width="30%">
 </a>
 
 
@@ -2062,14 +2062,14 @@ END FUNCTION
 
 ### Q4: Explain the vanishing gradient problem and how ResNet solves it.
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-handwritten.svg" alt="Handwritten: Explain the vanishing gradient problem and how ResNet solves it." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-handwritten.svg" alt="Handwritten: Explain the vanishing gradient problem and how ResNet solves it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-diagram.svg" alt="Diagram: Explain the vanishing gradient problem and how ResNet solves it." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-diagram.svg" alt="Diagram: Explain the vanishing gradient problem and how ResNet solves it." width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-sticky.svg" alt="Sticky Note: Explain the vanishing gradient problem and how ResNet solves it." width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/explain-the-vanishing-gradient-problem-and-how-resnet-solves-it-sticky.svg" alt="Sticky Note: Explain the vanishing gradient problem and how ResNet solves it." width="30%">
 </a>
 
 
@@ -2087,14 +2087,14 @@ The "1" term ensures the gradient never vanishes → even if $\partial F/\partia
 
 ### Q5: What is the difference between semantic segmentation and instance segmentation?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-handwritten.svg" alt="Handwritten: What is the difference between semantic segmentation and instance segmentation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-handwritten.svg" alt="Handwritten: What is the difference between semantic segmentation and instance segmentation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-diagram.svg" alt="Diagram: What is the difference between semantic segmentation and instance segmentation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-diagram.svg" alt="Diagram: What is the difference between semantic segmentation and instance segmentation?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-sticky.svg" alt="Sticky Note: What is the difference between semantic segmentation and instance segmentation?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-difference-between-semantic-segmentation-and-instance-segmentation-sticky.svg" alt="Sticky Note: What is the difference between semantic segmentation and instance segmentation?" width="30%">
 </a>
 
 
@@ -2111,14 +2111,14 @@ The "1" term ensures the gradient never vanishes → even if $\partial F/\partia
 
 ### Q6: How does Non-Maximum Suppression (NMS) work?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-handwritten.svg" alt="Handwritten: How does Non-Maximum Suppression (NMS) work?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-handwritten.svg" alt="Handwritten: How does Non-Maximum Suppression (NMS) work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-diagram.svg" alt="Diagram: How does Non-Maximum Suppression (NMS) work?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-diagram.svg" alt="Diagram: How does Non-Maximum Suppression (NMS) work?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-sticky.svg" alt="Sticky Note: How does Non-Maximum Suppression (NMS) work?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/how-does-non-maximum-suppression-nms-work-sticky.svg" alt="Sticky Note: How does Non-Maximum Suppression (NMS) work?" width="30%">
 </a>
 
 
@@ -2155,14 +2155,14 @@ END FUNCTION
 
 ### Q7: What is data augmentation and why is it critical for CV?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-handwritten.svg" alt="Handwritten: What is data augmentation and why is it critical for CV?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-handwritten.svg" alt="Handwritten: What is data augmentation and why is it critical for CV?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-diagram.svg" alt="Diagram: What is data augmentation and why is it critical for CV?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-diagram.svg" alt="Diagram: What is data augmentation and why is it critical for CV?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-sticky.svg" alt="Sticky Note: What is data augmentation and why is it critical for CV?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-data-augmentation-and-why-is-it-critical-for-cv-sticky.svg" alt="Sticky Note: What is data augmentation and why is it critical for CV?" width="30%">
 </a>
 
 
@@ -2189,14 +2189,14 @@ Just as humans rely on vision for 80%+ of daily tasks (driving, reading faces, n
 
 ### 13.11.1 Face Recognition
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-handwritten.svg" alt="Handwritten: 13.11.1 Face Recognition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-handwritten.svg" alt="Handwritten: 13.11.1 Face Recognition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-diagram.svg" alt="Diagram: 13.11.1 Face Recognition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-diagram.svg" alt="Diagram: 13.11.1 Face Recognition" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-sticky.svg" alt="Sticky Note: 13.11.1 Face Recognition" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-1-face-recognition-sticky.svg" alt="Sticky Note: 13.11.1 Face Recognition" width="30%">
 </a>
 
 
@@ -2245,14 +2245,14 @@ if face is not None and prob > 0.9:
 
 ### 13.11.2 Autonomous Driving
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-handwritten.svg" alt="Handwritten: 13.11.2 Autonomous Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-handwritten.svg" alt="Handwritten: 13.11.2 Autonomous Driving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-diagram.svg" alt="Diagram: 13.11.2 Autonomous Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-diagram.svg" alt="Diagram: 13.11.2 Autonomous Driving" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-sticky.svg" alt="Sticky Note: 13.11.2 Autonomous Driving" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-2-autonomous-driving-sticky.svg" alt="Sticky Note: 13.11.2 Autonomous Driving" width="30%">
 </a>
 
 
@@ -2276,14 +2276,14 @@ Autonomous vehicles use multiple CV tasks simultaneously:
 
 ### 13.11.3 Medical Imaging
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-handwritten.svg" alt="Handwritten: 13.11.3 Medical Imaging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-handwritten.svg" alt="Handwritten: 13.11.3 Medical Imaging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-diagram.svg" alt="Diagram: 13.11.3 Medical Imaging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-diagram.svg" alt="Diagram: 13.11.3 Medical Imaging" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-sticky.svg" alt="Sticky Note: 13.11.3 Medical Imaging" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-3-medical-imaging-sticky.svg" alt="Sticky Note: 13.11.3 Medical Imaging" width="30%">
 </a>
 
 
@@ -2335,14 +2335,14 @@ print(f'Unique classes: {np.unique(mask)}')   # e.g., [0, 1, 2]
 
 ### 13.11.4 Augmented Reality Filters
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-handwritten.svg" alt="Handwritten: 13.11.4 Augmented Reality Filters" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-handwritten.svg" alt="Handwritten: 13.11.4 Augmented Reality Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-diagram.svg" alt="Diagram: 13.11.4 Augmented Reality Filters" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-diagram.svg" alt="Diagram: 13.11.4 Augmented Reality Filters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-sticky.svg" alt="Sticky Note: 13.11.4 Augmented Reality Filters" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-11-4-augmented-reality-filters-sticky.svg" alt="Sticky Note: 13.11.4 Augmented Reality Filters" width="30%">
 </a>
 
 
@@ -2371,14 +2371,14 @@ The Vision Transformer (Dosovitskiy et al., 2021) applies the transformer archit
 
 ### 13.12.1 Architecture
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-handwritten.svg" alt="Handwritten: 13.12.1 Architecture" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-handwritten.svg" alt="Handwritten: 13.12.1 Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-diagram.svg" alt="Diagram: 13.12.1 Architecture" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-diagram.svg" alt="Diagram: 13.12.1 Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-sticky.svg" alt="Sticky Note: 13.12.1 Architecture" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-1-architecture-sticky.svg" alt="Sticky Note: 13.12.1 Architecture" width="30%">
 </a>
 
 
@@ -2398,14 +2398,14 @@ The Vision Transformer (Dosovitskiy et al., 2021) applies the transformer archit
 
 ### 13.12.2 Algorithm: ViT Forward Pass
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-handwritten.svg" alt="Handwritten: 13.12.2 Algorithm: ViT Forward Pass" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-handwritten.svg" alt="Handwritten: 13.12.2 Algorithm: ViT Forward Pass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-diagram.svg" alt="Diagram: 13.12.2 Algorithm: ViT Forward Pass" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-diagram.svg" alt="Diagram: 13.12.2 Algorithm: ViT Forward Pass" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-sticky.svg" alt="Sticky Note: 13.12.2 Algorithm: ViT Forward Pass" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-2-algorithm-vit-forward-pass-sticky.svg" alt="Sticky Note: 13.12.2 Algorithm: ViT Forward Pass" width="30%">
 </a>
 
 
@@ -2451,14 +2451,14 @@ END FUNCTION
 
 ### 13.12.3 Key Advantages and Limitations
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-handwritten.svg" alt="Handwritten: 13.12.3 Key Advantages and Limitations" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-handwritten.svg" alt="Handwritten: 13.12.3 Key Advantages and Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-diagram.svg" alt="Diagram: 13.12.3 Key Advantages and Limitations" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-diagram.svg" alt="Diagram: 13.12.3 Key Advantages and Limitations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-sticky.svg" alt="Sticky Note: 13.12.3 Key Advantages and Limitations" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-3-key-advantages-and-limitations-sticky.svg" alt="Sticky Note: 13.12.3 Key Advantages and Limitations" width="30%">
 </a>
 
 
@@ -2471,14 +2471,14 @@ END FUNCTION
 
 ### 13.12.4 Efficient Variants
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-handwritten.svg" alt="Handwritten: 13.12.4 Efficient Variants" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-handwritten.svg" alt="Handwritten: 13.12.4 Efficient Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-diagram.svg" alt="Diagram: 13.12.4 Efficient Variants" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-diagram.svg" alt="Diagram: 13.12.4 Efficient Variants" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-sticky.svg" alt="Sticky Note: 13.12.4 Efficient Variants" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-12-4-efficient-variants-sticky.svg" alt="Sticky Note: 13.12.4 Efficient Variants" width="30%">
 </a>
 
 
@@ -2502,14 +2502,14 @@ Imagine two artists: a sketch artist who has never seen a person but must draw a
 
 ### 13.13.1 Generative Adversarial Networks (GANs)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-handwritten.svg" alt="Handwritten: 13.13.1 Generative Adversarial Networks (GANs)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-handwritten.svg" alt="Handwritten: 13.13.1 Generative Adversarial Networks (GANs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-diagram.svg" alt="Diagram: 13.13.1 Generative Adversarial Networks (GANs)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-diagram.svg" alt="Diagram: 13.13.1 Generative Adversarial Networks (GANs)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-sticky.svg" alt="Sticky Note: 13.13.1 Generative Adversarial Networks (GANs)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-1-generative-adversarial-networks-gans-sticky.svg" alt="Sticky Note: 13.13.1 Generative Adversarial Networks (GANs)" width="30%">
 </a>
 
 
@@ -2572,14 +2572,14 @@ END FUNCTION
 
 ### 13.13.2 Diffusion Models
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-handwritten.svg" alt="Handwritten: 13.13.2 Diffusion Models" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-handwritten.svg" alt="Handwritten: 13.13.2 Diffusion Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-diagram.svg" alt="Diagram: 13.13.2 Diffusion Models" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-diagram.svg" alt="Diagram: 13.13.2 Diffusion Models" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-sticky.svg" alt="Sticky Note: 13.13.2 Diffusion Models" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-2-diffusion-models-sticky.svg" alt="Sticky Note: 13.13.2 Diffusion Models" width="30%">
 </a>
 
 
@@ -2623,14 +2623,14 @@ END FUNCTION
 
 ### 13.13.3 Latent Diffusion Models (Stable Diffusion)
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-handwritten.svg" alt="Handwritten: 13.13.3 Latent Diffusion Models (Stable Diffusion)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-handwritten.svg" alt="Handwritten: 13.13.3 Latent Diffusion Models (Stable Diffusion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-diagram.svg" alt="Diagram: 13.13.3 Latent Diffusion Models (Stable Diffusion)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-diagram.svg" alt="Diagram: 13.13.3 Latent Diffusion Models (Stable Diffusion)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-sticky.svg" alt="Sticky Note: 13.13.3 Latent Diffusion Models (Stable Diffusion)" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-3-latent-diffusion-models-stable-diffusion-sticky.svg" alt="Sticky Note: 13.13.3 Latent Diffusion Models (Stable Diffusion)" width="30%">
 </a>
 
 
@@ -2650,14 +2650,14 @@ Standard diffusion models operate in pixel space → slow and memory-intensive. 
 
 ### 13.13.4 Python Implementation
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-handwritten.svg" alt="Handwritten: 13.13.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-handwritten.svg" alt="Handwritten: 13.13.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-diagram.svg" alt="Diagram: 13.13.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-diagram.svg" alt="Diagram: 13.13.4 Python Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-sticky.svg" alt="Sticky Note: 13.13.4 Python Implementation" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-4-python-implementation-sticky.svg" alt="Sticky Note: 13.13.4 Python Implementation" width="30%">
 </a>
 
 
@@ -2724,14 +2724,14 @@ image.save("cat_astronaut.png")
 
 ### 13.13.5 Evaluation Metrics
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-handwritten.svg" alt="Handwritten: 13.13.5 Evaluation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-handwritten.svg" alt="Handwritten: 13.13.5 Evaluation Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-diagram.svg" alt="Diagram: 13.13.5 Evaluation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-diagram.svg" alt="Diagram: 13.13.5 Evaluation Metrics" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-sticky.svg" alt="Sticky Note: 13.13.5 Evaluation Metrics" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-5-evaluation-metrics-sticky.svg" alt="Sticky Note: 13.13.5 Evaluation Metrics" width="30%">
 </a>
 
 
@@ -2744,14 +2744,14 @@ image.save("cat_astronaut.png")
 
 ### 13.13.6 Advantages and Disadvantages
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.13.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 13.13.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.13.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-diagram.svg" alt="Diagram: 13.13.6 Advantages and Disadvantages" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.13.6 Advantages and Disadvantages" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-6-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 13.13.6 Advantages and Disadvantages" width="30%">
 </a>
 
 
@@ -2766,14 +2766,14 @@ image.save("cat_astronaut.png")
 
 ### 13.13.7 Edge Cases
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-handwritten.svg" alt="Handwritten: 13.13.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-handwritten.svg" alt="Handwritten: 13.13.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-diagram.svg" alt="Diagram: 13.13.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-diagram.svg" alt="Diagram: 13.13.7 Edge Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-sticky.svg" alt="Sticky Note: 13.13.7 Edge Cases" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/13-13-7-edge-cases-sticky.svg" alt="Sticky Note: 13.13.7 Edge Cases" width="30%">
 </a>
 
 
@@ -2827,14 +2827,14 @@ image.save("cat_astronaut.png")
 
 ### Q1: What key innovation enabled ResNet to train 152-layer networks?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-handwritten.svg" alt="Handwritten: What key innovation enabled ResNet to train 152-layer networks?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-handwritten.svg" alt="Handwritten: What key innovation enabled ResNet to train 152-layer networks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-diagram.svg" alt="Diagram: What key innovation enabled ResNet to train 152-layer networks?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-diagram.svg" alt="Diagram: What key innovation enabled ResNet to train 152-layer networks?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-sticky.svg" alt="Sticky Note: What key innovation enabled ResNet to train 152-layer networks?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-key-innovation-enabled-resnet-to-train-152-layer-networks-sticky.svg" alt="Sticky Note: What key innovation enabled ResNet to train 152-layer networks?" width="30%">
 </a>
 
 
@@ -2847,14 +2847,14 @@ D) Data augmentation
 
 ### Q2: What is the main advantage of YOLO over R-CNN-style detectors?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-handwritten.svg" alt="Handwritten: What is the main advantage of YOLO over R-CNN-style detectors?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-handwritten.svg" alt="Handwritten: What is the main advantage of YOLO over R-CNN-style detectors?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-diagram.svg" alt="Diagram: What is the main advantage of YOLO over R-CNN-style detectors?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-diagram.svg" alt="Diagram: What is the main advantage of YOLO over R-CNN-style detectors?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-sticky.svg" alt="Sticky Note: What is the main advantage of YOLO over R-CNN-style detectors?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-main-advantage-of-yolo-over-r-cnn-style-detectors-sticky.svg" alt="Sticky Note: What is the main advantage of YOLO over R-CNN-style detectors?" width="30%">
 </a>
 
 
@@ -2867,14 +2867,14 @@ D) YOLO handles small objects better
 
 ### Q3: Diffusion models generate images by:
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-handwritten.svg" alt="Handwritten: Diffusion models generate images by:" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-handwritten.svg" alt="Handwritten: Diffusion models generate images by:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-diagram.svg" alt="Diagram: Diffusion models generate images by:" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-diagram.svg" alt="Diagram: Diffusion models generate images by:" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-sticky.svg" alt="Sticky Note: Diffusion models generate images by:" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/diffusion-models-generate-images-by-sticky.svg" alt="Sticky Note: Diffusion models generate images by:" width="30%">
 </a>
 
 
@@ -2887,14 +2887,14 @@ D) Matching nearest neighbors in a training set
 
 ### Q4: What does Non-Maximum Suppression (NMS) accomplish in object detection?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-handwritten.svg" alt="Handwritten: What does Non-Maximum Suppression (NMS) accomplish in object detection?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-handwritten.svg" alt="Handwritten: What does Non-Maximum Suppression (NMS) accomplish in object detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-diagram.svg" alt="Diagram: What does Non-Maximum Suppression (NMS) accomplish in object detection?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-diagram.svg" alt="Diagram: What does Non-Maximum Suppression (NMS) accomplish in object detection?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-sticky.svg" alt="Sticky Note: What does Non-Maximum Suppression (NMS) accomplish in object detection?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-non-maximum-suppression-nms-accomplish-in-object-detection-sticky.svg" alt="Sticky Note: What does Non-Maximum Suppression (NMS) accomplish in object detection?" width="30%">
 </a>
 
 
@@ -2907,14 +2907,14 @@ D) It augments the training data with random crops
 
 ### Q5: Which of the following correctly describes the receptive field of a CNN?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-handwritten.svg" alt="Handwritten: Which of the following correctly describes the receptive field of a CNN?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-handwritten.svg" alt="Handwritten: Which of the following correctly describes the receptive field of a CNN?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-diagram.svg" alt="Diagram: Which of the following correctly describes the receptive field of a CNN?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-diagram.svg" alt="Diagram: Which of the following correctly describes the receptive field of a CNN?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-sticky.svg" alt="Sticky Note: Which of the following correctly describes the receptive field of a CNN?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/which-of-the-following-correctly-describes-the-receptive-field-of-a-cnn-sticky.svg" alt="Sticky Note: Which of the following correctly describes the receptive field of a CNN?" width="30%">
 </a>
 
 
@@ -2936,14 +2936,14 @@ D) 442,368
 
 ### Q7: What is the key advantage of Vision Transformers over CNNs?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-handwritten.svg" alt="Handwritten: What is the key advantage of Vision Transformers over CNNs?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-handwritten.svg" alt="Handwritten: What is the key advantage of Vision Transformers over CNNs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-diagram.svg" alt="Diagram: What is the key advantage of Vision Transformers over CNNs?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-diagram.svg" alt="Diagram: What is the key advantage of Vision Transformers over CNNs?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-sticky.svg" alt="Sticky Note: What is the key advantage of Vision Transformers over CNNs?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-is-the-key-advantage-of-vision-transformers-over-cnns-sticky.svg" alt="Sticky Note: What is the key advantage of Vision Transformers over CNNs?" width="30%">
 </a>
 
 
@@ -2956,14 +2956,14 @@ D) They are inherently translation invariant
 
 ### Q8: In the Canny edge detector, what is the purpose of non-maximum suppression?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-handwritten.svg" alt="Handwritten: In the Canny edge detector, what is the purpose of non-maximum suppression?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-handwritten.svg" alt="Handwritten: In the Canny edge detector, what is the purpose of non-maximum suppression?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-diagram.svg" alt="Diagram: In the Canny edge detector, what is the purpose of non-maximum suppression?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-diagram.svg" alt="Diagram: In the Canny edge detector, what is the purpose of non-maximum suppression?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-sticky.svg" alt="Sticky Note: In the Canny edge detector, what is the purpose of non-maximum suppression?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/in-the-canny-edge-detector-what-is-the-purpose-of-non-maximum-suppression-sticky.svg" alt="Sticky Note: In the Canny edge detector, what is the purpose of non-maximum suppression?" width="30%">
 </a>
 
 
@@ -2976,14 +2976,14 @@ D) To connect broken edge segments
 
 ### Q9: What does the triplet loss in FaceNet enforce?
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-handwritten.svg" alt="Handwritten: What does the triplet loss in FaceNet enforce?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-handwritten.svg" alt="Handwritten: What does the triplet loss in FaceNet enforce?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-diagram.svg" alt="Diagram: What does the triplet loss in FaceNet enforce?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-diagram.svg" alt="Diagram: What does the triplet loss in FaceNet enforce?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-sticky.svg" alt="Sticky Note: What does the triplet loss in FaceNet enforce?" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/what-does-the-triplet-loss-in-facenet-enforce-sticky.svg" alt="Sticky Note: What does the triplet loss in FaceNet enforce?" width="30%">
 </a>
 
 
@@ -3073,14 +3073,14 @@ Computer vision transforms unstructured pixel data into structured understanding
 
 ### Project: Real-Time Face Filter AR Application
 
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-handwritten.svg" alt="Handwritten: Project: Real-Time Face Filter AR Application" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-handwritten.svg" alt="Handwritten: Project: Real-Time Face Filter AR Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-diagram.svg" alt="Diagram: Project: Real-Time Face Filter AR Application" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-diagram.svg" alt="Diagram: Project: Real-Time Face Filter AR Application" width="30%">
 </a>
-<a href="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-sticky.svg" alt="Sticky Note: Project: Real-Time Face Filter AR Application" width="30%">
+<a href="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/artificial-intelligence/13-computer-vision/project-real-time-face-filter-ar-application-sticky.svg" alt="Sticky Note: Project: Real-Time Face Filter AR Application" width="30%">
 </a>
 
 

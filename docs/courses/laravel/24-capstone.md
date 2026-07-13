@@ -49,14 +49,14 @@ flowchart LR
 
 ### 8.1 Project Overview
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-handwritten.svg" alt="Handwritten: 8.1 Project Overview" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-handwritten.svg" alt="Handwritten: 8.1 Project Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-diagram.svg" alt="Diagram: 8.1 Project Overview" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-diagram.svg" alt="Diagram: 8.1 Project Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-sticky.svg" alt="Sticky Note: 8.1 Project Overview" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-sticky.svg" alt="Sticky Note: 8.1 Project Overview" width="30%">
 </a>
 
 
@@ -78,14 +78,14 @@ TeamSynth is a team collaboration platform that embeds AI agents directly into t
 
 ### 8.2 Part A Ã¢â‚¬â€ System Architecture
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-handwritten.svg" alt="Handwritten: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-handwritten.svg" alt="Handwritten: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-diagram.svg" alt="Diagram: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-diagram.svg" alt="Diagram: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-sticky.svg" alt="Sticky Note: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-sticky.svg" alt="Sticky Note: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
 </a>
 
 
@@ -122,14 +122,14 @@ AI SDK Layer (DocumentAnalysis, MeetingSummarizer, CodeReview, SearchAgent)
 
 ### 8.3 Part B Ã¢â‚¬â€ Data Model
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-handwritten.svg" alt="Handwritten: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-handwritten.svg" alt="Handwritten: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-diagram.svg" alt="Diagram: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-diagram.svg" alt="Diagram: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-sticky.svg" alt="Sticky Note: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-sticky.svg" alt="Sticky Note: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
 </a>
 
 
@@ -362,14 +362,14 @@ CREATE TABLE agent_logs (
 
 ### 8.4 Part C Ã¢â‚¬â€ AI Agent Layer
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-handwritten.svg" alt="Handwritten: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-handwritten.svg" alt="Handwritten: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-diagram.svg" alt="Diagram: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-diagram.svg" alt="Diagram: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-sticky.svg" alt="Sticky Note: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-sticky.svg" alt="Sticky Note: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
 </a>
 
 
@@ -422,14 +422,14 @@ public function runFullReview(int $codeReviewId): array
 
 ### 8.5 Part D Ã¢â‚¬â€ MCP Servers
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-handwritten.svg" alt="Handwritten: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-handwritten.svg" alt="Handwritten: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-diagram.svg" alt="Diagram: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-diagram.svg" alt="Diagram: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-sticky.svg" alt="Sticky Note: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-sticky.svg" alt="Sticky Note: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
 </a>
 
 
@@ -459,14 +459,14 @@ Each MCP endpoint validates the JSON-RPC envelope (jsonrpc version, method, para
 
 ### 8.6 Part E Ã¢â‚¬â€ Search and RAG
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-handwritten.svg" alt="Handwritten: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-handwritten.svg" alt="Handwritten: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-diagram.svg" alt="Diagram: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-diagram.svg" alt="Diagram: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-sticky.svg" alt="Sticky Note: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-sticky.svg" alt="Sticky Note: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
 </a>
 
 
@@ -492,14 +492,14 @@ Search operates at three tiers with progressive fallback:
 
 ### 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-handwritten.svg" alt="Handwritten: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-handwritten.svg" alt="Handwritten: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-diagram.svg" alt="Diagram: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-diagram.svg" alt="Diagram: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-sticky.svg" alt="Sticky Note: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-sticky.svg" alt="Sticky Note: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
 </a>
 
 
@@ -543,14 +543,14 @@ class AgentProgressUpdated implements ShouldBroadcast
 
 ### 8.8 Part G Ã¢â‚¬â€ Deployment
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-handwritten.svg" alt="Handwritten: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-handwritten.svg" alt="Handwritten: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-diagram.svg" alt="Diagram: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-diagram.svg" alt="Diagram: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-sticky.svg" alt="Sticky Note: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-sticky.svg" alt="Sticky Note: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
 </a>
 
 
@@ -581,14 +581,14 @@ Git push Ã¢â€ â€™ GitHub Actions:
 
 ### 8.9 Part H Ã¢â‚¬â€ Testing Strategy
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-handwritten.svg" alt="Handwritten: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-handwritten.svg" alt="Handwritten: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-diagram.svg" alt="Diagram: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-diagram.svg" alt="Diagram: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-sticky.svg" alt="Sticky Note: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-sticky.svg" alt="Sticky Note: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
 </a>
 
 
@@ -643,14 +643,14 @@ class DocumentAnalysisAgentTest extends TestCase
 
 ### 8.10 Part I Ã¢â‚¬â€ Performance Budget
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-handwritten.svg" alt="Handwritten: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-handwritten.svg" alt="Handwritten: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-diagram.svg" alt="Diagram: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-diagram.svg" alt="Diagram: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-sticky.svg" alt="Sticky Note: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-sticky.svg" alt="Sticky Note: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
 </a>
 
 
@@ -669,14 +669,14 @@ class DocumentAnalysisAgentTest extends TestCase
 
 ### 8.11 Part J Ã¢â‚¬â€ Monitoring
 
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-handwritten.svg" alt="Handwritten: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-handwritten.svg" alt="Handwritten: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-diagram.svg" alt="Diagram: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-diagram.svg" alt="Diagram: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
 </a>
-<a href="../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-sticky.svg" alt="Sticky Note: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
+<a href="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-sticky.svg" alt="Sticky Note: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
 </a>
 
 

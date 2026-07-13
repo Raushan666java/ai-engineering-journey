@@ -133,14 +133,14 @@ graph TD
 
 ### 10.3.1 PLA Structure
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-handwritten.svg" alt="Handwritten: 10.3.1 PLA Structure" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-handwritten.svg" alt="Handwritten: 10.3.1 PLA Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-diagram.svg" alt="Diagram: 10.3.1 PLA Structure" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-diagram.svg" alt="Diagram: 10.3.1 PLA Structure" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-sticky.svg" alt="Sticky Note: 10.3.1 PLA Structure" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-1-pla-structure-sticky.svg" alt="Sticky Note: 10.3.1 PLA Structure" width="30%">
 </a>
 
 
@@ -230,14 +230,14 @@ for (let i = 0; i < 8; i++) {
 
 ### 10.3.2 PLA Minimisation
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-handwritten.svg" alt="Handwritten: 10.3.2 PLA Minimisation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-handwritten.svg" alt="Handwritten: 10.3.2 PLA Minimisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-diagram.svg" alt="Diagram: 10.3.2 PLA Minimisation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-diagram.svg" alt="Diagram: 10.3.2 PLA Minimisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-sticky.svg" alt="Sticky Note: 10.3.2 PLA Minimisation" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-3-2-pla-minimisation-sticky.svg" alt="Sticky Note: 10.3.2 PLA Minimisation" width="30%">
 </a>
 
 
@@ -303,14 +303,14 @@ graph TD
 
 ### 10.4.1 PAL Architecture
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-handwritten.svg" alt="Handwritten: 10.4.1 PAL Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-handwritten.svg" alt="Handwritten: 10.4.1 PAL Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-diagram.svg" alt="Diagram: 10.4.1 PAL Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-diagram.svg" alt="Diagram: 10.4.1 PAL Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-sticky.svg" alt="Sticky Note: 10.4.1 PAL Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-1-pal-architecture-sticky.svg" alt="Sticky Note: 10.4.1 PAL Architecture" width="30%">
 </a>
 
 
@@ -383,14 +383,14 @@ class PAL {
 
 ### 10.4.2 PAL vs PLA Comparison
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-handwritten.svg" alt="Handwritten: 10.4.2 PAL vs PLA Comparison" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-handwritten.svg" alt="Handwritten: 10.4.2 PAL vs PLA Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-diagram.svg" alt="Diagram: 10.4.2 PAL vs PLA Comparison" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-diagram.svg" alt="Diagram: 10.4.2 PAL vs PLA Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-sticky.svg" alt="Sticky Note: 10.4.2 PAL vs PLA Comparison" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-2-pal-vs-pla-comparison-sticky.svg" alt="Sticky Note: 10.4.2 PAL vs PLA Comparison" width="30%">
 </a>
 
 
@@ -406,14 +406,14 @@ class PAL {
 
 ### 10.4.3 Registered PAL Outputs
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-handwritten.svg" alt="Handwritten: 10.4.3 Registered PAL Outputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-handwritten.svg" alt="Handwritten: 10.4.3 Registered PAL Outputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-diagram.svg" alt="Diagram: 10.4.3 Registered PAL Outputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-diagram.svg" alt="Diagram: 10.4.3 Registered PAL Outputs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-sticky.svg" alt="Sticky Note: 10.4.3 Registered PAL Outputs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-4-3-registered-pal-outputs-sticky.svg" alt="Sticky Note: 10.4.3 Registered PAL Outputs" width="30%">
 </a>
 
 
@@ -502,14 +502,14 @@ The FPGA dominates modern programmable logic. It uses a **lookup table (LUT)** b
 
 ### 10.6.1 LUT-Based Logic
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-handwritten.svg" alt="Handwritten: 10.6.1 LUT-Based Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-handwritten.svg" alt="Handwritten: 10.6.1 LUT-Based Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-diagram.svg" alt="Diagram: 10.6.1 LUT-Based Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-diagram.svg" alt="Diagram: 10.6.1 LUT-Based Logic" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-sticky.svg" alt="Sticky Note: 10.6.1 LUT-Based Logic" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-1-lut-based-logic-sticky.svg" alt="Sticky Note: 10.6.1 LUT-Based Logic" width="30%">
 </a>
 
 
@@ -551,14 +551,14 @@ console.log(`1 ? 1 = ${xorLUT.evaluate([1, 1, 0, 0])}`); // 0
 
 ### 10.6.2 FPGA Slice Architecture
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-handwritten.svg" alt="Handwritten: 10.6.2 FPGA Slice Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-handwritten.svg" alt="Handwritten: 10.6.2 FPGA Slice Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-diagram.svg" alt="Diagram: 10.6.2 FPGA Slice Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-diagram.svg" alt="Diagram: 10.6.2 FPGA Slice Architecture" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-sticky.svg" alt="Sticky Note: 10.6.2 FPGA Slice Architecture" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-2-fpga-slice-architecture-sticky.svg" alt="Sticky Note: 10.6.2 FPGA Slice Architecture" width="30%">
 </a>
 
 
@@ -610,14 +610,14 @@ class FPGASlice {
 
 ### 10.6.3 FPGA Routing
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-handwritten.svg" alt="Handwritten: 10.6.3 FPGA Routing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-handwritten.svg" alt="Handwritten: 10.6.3 FPGA Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-diagram.svg" alt="Diagram: 10.6.3 FPGA Routing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-diagram.svg" alt="Diagram: 10.6.3 FPGA Routing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-sticky.svg" alt="Sticky Note: 10.6.3 FPGA Routing" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-6-3-fpga-routing-sticky.svg" alt="Sticky Note: 10.6.3 FPGA Routing" width="30%">
 </a>
 
 
@@ -649,14 +649,14 @@ class SwitchBox {
 
 ### 10.7.1 One-Hot Encoding in FPGAs
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-handwritten.svg" alt="Handwritten: 10.7.1 One-Hot Encoding in FPGAs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-handwritten.svg" alt="Handwritten: 10.7.1 One-Hot Encoding in FPGAs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-diagram.svg" alt="Diagram: 10.7.1 One-Hot Encoding in FPGAs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-diagram.svg" alt="Diagram: 10.7.1 One-Hot Encoding in FPGAs" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-sticky.svg" alt="Sticky Note: 10.7.1 One-Hot Encoding in FPGAs" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/10-7-1-one-hot-encoding-in-fpgas-sticky.svg" alt="Sticky Note: 10.7.1 One-Hot Encoding in FPGAs" width="30%">
 </a>
 
 
@@ -1015,14 +1015,14 @@ d) DRAM cells
 
 ### Answers
 
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/answers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/answers-diagram.svg" alt="Diagram: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/answers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/answers-diagram.svg" alt="Diagram: Answers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/digital-logic/10-pla-pal/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/digital-logic/10-pla-pal/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
+<a href="../../../assets/images/diagrams/digital-logic/10-pla-pal/answers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/digital-logic/10-pla-pal/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
 </a>
 
 

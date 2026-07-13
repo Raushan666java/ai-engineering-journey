@@ -153,14 +153,14 @@ Always use `@wraps` when writing decorators.
 
 ### 15.4.1 Timer
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-handwritten.svg" alt="Handwritten: 15.4.1 Timer" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-handwritten.svg" alt="Handwritten: 15.4.1 Timer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-diagram.svg" alt="Diagram: 15.4.1 Timer" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-diagram.svg" alt="Diagram: 15.4.1 Timer" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-sticky.svg" alt="Sticky Note: 15.4.1 Timer" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-1-timer-sticky.svg" alt="Sticky Note: 15.4.1 Timer" width="30%">
 </a>
 
 
@@ -188,14 +188,14 @@ slow_function()  # slow_function took 0.5012s
 
 ### 15.4.2 Debug
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-handwritten.svg" alt="Handwritten: 15.4.2 Debug" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-handwritten.svg" alt="Handwritten: 15.4.2 Debug" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-diagram.svg" alt="Diagram: 15.4.2 Debug" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-diagram.svg" alt="Diagram: 15.4.2 Debug" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-sticky.svg" alt="Sticky Note: 15.4.2 Debug" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-2-debug-sticky.svg" alt="Sticky Note: 15.4.2 Debug" width="30%">
 </a>
 
 
@@ -223,14 +223,14 @@ multiply(3, 4)
 
 ### 15.4.3 Cache (Memoization)
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-handwritten.svg" alt="Handwritten: 15.4.3 Cache (Memoization)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-handwritten.svg" alt="Handwritten: 15.4.3 Cache (Memoization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-diagram.svg" alt="Diagram: 15.4.3 Cache (Memoization)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-diagram.svg" alt="Diagram: 15.4.3 Cache (Memoization)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-sticky.svg" alt="Sticky Note: 15.4.3 Cache (Memoization)" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-3-cache-memoization-sticky.svg" alt="Sticky Note: 15.4.3 Cache (Memoization)" width="30%">
 </a>
 
 
@@ -268,14 +268,14 @@ def fibonacci(n: int) -> int:
 
 ### 15.4.4 Retry
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-handwritten.svg" alt="Handwritten: 15.4.4 Retry" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-handwritten.svg" alt="Handwritten: 15.4.4 Retry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-diagram.svg" alt="Diagram: 15.4.4 Retry" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-diagram.svg" alt="Diagram: 15.4.4 Retry" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-sticky.svg" alt="Sticky Note: 15.4.4 Retry" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-4-4-retry-sticky.svg" alt="Sticky Note: 15.4.4 Retry" width="30%">
 </a>
 
 
@@ -407,14 +407,14 @@ print(p)  # Person(name='Alice', age=30)
 
 ### 15.7.1 Singleton Decorator
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-handwritten.svg" alt="Handwritten: 15.7.1 Singleton Decorator" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-handwritten.svg" alt="Handwritten: 15.7.1 Singleton Decorator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-diagram.svg" alt="Diagram: 15.7.1 Singleton Decorator" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-diagram.svg" alt="Diagram: 15.7.1 Singleton Decorator" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-sticky.svg" alt="Sticky Note: 15.7.1 Singleton Decorator" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/15-7-1-singleton-decorator-sticky.svg" alt="Sticky Note: 15.7.1 Singleton Decorator" width="30%">
 </a>
 
 
@@ -608,14 +608,14 @@ function readOnly(target: any, key: string): void {
 
 ### Python vs TypeScript Decorators
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-handwritten.svg" alt="Handwritten: Python vs TypeScript Decorators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-handwritten.svg" alt="Handwritten: Python vs TypeScript Decorators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-diagram.svg" alt="Diagram: Python vs TypeScript Decorators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-diagram.svg" alt="Diagram: Python vs TypeScript Decorators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-sticky.svg" alt="Sticky Note: Python vs TypeScript Decorators" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/python-vs-typescript-decorators-sticky.svg" alt="Sticky Note: Python vs TypeScript Decorators" width="30%">
 </a>
 
 
@@ -630,14 +630,14 @@ function readOnly(target: any, key: string): void {
 
 ### When to Use Decorators vs Wrappers
 
-<a href="../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-handwritten.svg" alt="Handwritten: When to Use Decorators vs Wrappers" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-handwritten.svg" alt="Handwritten: When to Use Decorators vs Wrappers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-diagram.svg" alt="Diagram: When to Use Decorators vs Wrappers" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-diagram.svg" alt="Diagram: When to Use Decorators vs Wrappers" width="30%">
 </a>
-<a href="../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-sticky.svg" alt="Sticky Note: When to Use Decorators vs Wrappers" width="30%">
+<a href="../../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/python-programming/15-decorators/when-to-use-decorators-vs-wrappers-sticky.svg" alt="Sticky Note: When to Use Decorators vs Wrappers" width="30%">
 </a>
 
 

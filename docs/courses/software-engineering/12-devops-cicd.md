@@ -15,14 +15,14 @@
 
 ### What is DevOps?
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-handwritten.svg" alt="Handwritten: What is DevOps?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-handwritten.svg" alt="Handwritten: What is DevOps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-diagram.svg" alt="Diagram: What is DevOps?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-diagram.svg" alt="Diagram: What is DevOps?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-sticky.svg" alt="Sticky Note: What is DevOps?" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-sticky.svg" alt="Sticky Note: What is DevOps?" width="30%">
 </a>
 
 
@@ -46,14 +46,14 @@ graph TD
 
 ### The Three Ways of DevOps (Gene Kim)
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-handwritten.svg" alt="Handwritten: The Three Ways of DevOps (Gene Kim)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-handwritten.svg" alt="Handwritten: The Three Ways of DevOps (Gene Kim)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-diagram.svg" alt="Diagram: The Three Ways of DevOps (Gene Kim)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-diagram.svg" alt="Diagram: The Three Ways of DevOps (Gene Kim)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-sticky.svg" alt="Sticky Note: The Three Ways of DevOps (Gene Kim)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-sticky.svg" alt="Sticky Note: The Three Ways of DevOps (Gene Kim)" width="30%">
 </a>
 
 
@@ -65,14 +65,14 @@ graph TD
 
 ### The CALMS Framework
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-handwritten.svg" alt="Handwritten: The CALMS Framework" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-handwritten.svg" alt="Handwritten: The CALMS Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-diagram.svg" alt="Diagram: The CALMS Framework" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-diagram.svg" alt="Diagram: The CALMS Framework" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-sticky.svg" alt="Sticky Note: The CALMS Framework" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-sticky.svg" alt="Sticky Note: The CALMS Framework" width="30%">
 </a>
 
 
@@ -97,14 +97,14 @@ CALMS is a framework for assessing DevOps adoption across five dimensions:
 
 ### Continuous Integration (CI)
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-handwritten.svg" alt="Handwritten: Continuous Integration (CI)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-handwritten.svg" alt="Handwritten: Continuous Integration (CI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-diagram.svg" alt="Diagram: Continuous Integration (CI)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-diagram.svg" alt="Diagram: Continuous Integration (CI)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-sticky.svg" alt="Sticky Note: Continuous Integration (CI)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-sticky.svg" alt="Sticky Note: Continuous Integration (CI)" width="30%">
 </a>
 
 
@@ -148,14 +148,14 @@ graph LR
 
 ### Continuous Delivery (CD)
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-handwritten.svg" alt="Handwritten: Continuous Delivery (CD)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-handwritten.svg" alt="Handwritten: Continuous Delivery (CD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-diagram.svg" alt="Diagram: Continuous Delivery (CD)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-diagram.svg" alt="Diagram: Continuous Delivery (CD)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-sticky.svg" alt="Sticky Note: Continuous Delivery (CD)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-sticky.svg" alt="Sticky Note: Continuous Delivery (CD)" width="30%">
 </a>
 
 
@@ -184,14 +184,14 @@ graph LR
 
 ### Infrastructure as Code (IaC)
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-handwritten.svg" alt="Handwritten: Infrastructure as Code (IaC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-handwritten.svg" alt="Handwritten: Infrastructure as Code (IaC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-diagram.svg" alt="Diagram: Infrastructure as Code (IaC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-diagram.svg" alt="Diagram: Infrastructure as Code (IaC)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-sticky.svg" alt="Sticky Note: Infrastructure as Code (IaC)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-sticky.svg" alt="Sticky Note: Infrastructure as Code (IaC)" width="30%">
 </a>
 
 
@@ -216,14 +216,14 @@ IaC manages infrastructure (networks, VMs, load balancers) through machine-reada
 
 ### Containerisation
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-handwritten.svg" alt="Handwritten: Containerisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-handwritten.svg" alt="Handwritten: Containerisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-diagram.svg" alt="Diagram: Containerisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-diagram.svg" alt="Diagram: Containerisation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-sticky.svg" alt="Sticky Note: Containerisation" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-sticky.svg" alt="Sticky Note: Containerisation" width="30%">
 </a>
 
 
@@ -269,14 +269,14 @@ Multi-stage:  120 MB (90% reduction)
 
 ### Container Orchestration (Kubernetes)
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-handwritten.svg" alt="Handwritten: Container Orchestration (Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-handwritten.svg" alt="Handwritten: Container Orchestration (Kubernetes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-diagram.svg" alt="Diagram: Container Orchestration (Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-diagram.svg" alt="Diagram: Container Orchestration (Kubernetes)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-sticky.svg" alt="Sticky Note: Container Orchestration (Kubernetes)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-sticky.svg" alt="Sticky Note: Container Orchestration (Kubernetes)" width="30%">
 </a>
 
 
@@ -315,14 +315,14 @@ graph TD
 
 ### Deployment Strategies
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-handwritten.svg" alt="Handwritten: Deployment Strategies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-handwritten.svg" alt="Handwritten: Deployment Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-diagram.svg" alt="Diagram: Deployment Strategies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-diagram.svg" alt="Diagram: Deployment Strategies" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-sticky.svg" alt="Sticky Note: Deployment Strategies" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-sticky.svg" alt="Sticky Note: Deployment Strategies" width="30%">
 </a>
 
 
@@ -353,14 +353,14 @@ graph LR
 
 ### Monitoring and Observability
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-handwritten.svg" alt="Handwritten: Monitoring and Observability" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-handwritten.svg" alt="Handwritten: Monitoring and Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-diagram.svg" alt="Diagram: Monitoring and Observability" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-diagram.svg" alt="Diagram: Monitoring and Observability" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-sticky.svg" alt="Sticky Note: Monitoring and Observability" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-sticky.svg" alt="Sticky Note: Monitoring and Observability" width="30%">
 </a>
 
 
@@ -395,14 +395,14 @@ graph LR
 
 ### Security in DevOps (DevSecOps)
 
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-handwritten.svg" alt="Handwritten: Security in DevOps (DevSecOps)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-handwritten.svg" alt="Handwritten: Security in DevOps (DevSecOps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-diagram.svg" alt="Diagram: Security in DevOps (DevSecOps)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-diagram.svg" alt="Diagram: Security in DevOps (DevSecOps)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-sticky.svg" alt="Sticky Note: Security in DevOps (DevSecOps)" width="30%">
+<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-sticky.svg" alt="Sticky Note: Security in DevOps (DevSecOps)" width="30%">
 </a>
 
 

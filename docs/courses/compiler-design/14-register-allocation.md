@@ -44,14 +44,14 @@ flowchart TB
 
 ### The Register Allocation Problem
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-handwritten.svg" alt="Handwritten: The Register Allocation Problem" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-handwritten.svg" alt="Handwritten: The Register Allocation Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-diagram.svg" alt="Diagram: The Register Allocation Problem" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-diagram.svg" alt="Diagram: The Register Allocation Problem" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-sticky.svg" alt="Sticky Note: The Register Allocation Problem" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-register-allocation-problem-sticky.svg" alt="Sticky Note: The Register Allocation Problem" width="30%">
 </a>
 
 
@@ -73,14 +73,14 @@ A K-coloring corresponds to an assignment where each live range gets a register 
 
 ### Live Ranges and Interference
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-handwritten.svg" alt="Handwritten: Live Ranges and Interference" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-handwritten.svg" alt="Handwritten: Live Ranges and Interference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-diagram.svg" alt="Diagram: Live Ranges and Interference" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-diagram.svg" alt="Diagram: Live Ranges and Interference" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-sticky.svg" alt="Sticky Note: Live Ranges and Interference" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/live-ranges-and-interference-sticky.svg" alt="Sticky Note: Live Ranges and Interference" width="30%">
 </a>
 
 
@@ -127,14 +127,14 @@ Pre-colored live ranges have fixed colors in the graph. The allocator must treat
 
 ### Chaitin's Algorithm
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-handwritten.svg" alt="Handwritten: Chaitin's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-handwritten.svg" alt="Handwritten: Chaitin's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-diagram.svg" alt="Diagram: Chaitin's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-diagram.svg" alt="Diagram: Chaitin's Algorithm" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-sticky.svg" alt="Sticky Note: Chaitin's Algorithm" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/chaitin-s-algorithm-sticky.svg" alt="Sticky Note: Chaitin's Algorithm" width="30%">
 </a>
 
 
@@ -193,14 +193,14 @@ If no spills were confirmed, allocation is complete.
 
 ### The Briggs Improvement
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-handwritten.svg" alt="Handwritten: The Briggs Improvement" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-handwritten.svg" alt="Handwritten: The Briggs Improvement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-diagram.svg" alt="Diagram: The Briggs Improvement" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-diagram.svg" alt="Diagram: The Briggs Improvement" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-sticky.svg" alt="Sticky Note: The Briggs Improvement" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/the-briggs-improvement-sticky.svg" alt="Sticky Note: The Briggs Improvement" width="30%">
 </a>
 
 
@@ -228,14 +228,14 @@ Result: 1 spilled instead of 3
 
 ### Coalescing
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-handwritten.svg" alt="Handwritten: Coalescing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-handwritten.svg" alt="Handwritten: Coalescing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-diagram.svg" alt="Diagram: Coalescing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-diagram.svg" alt="Diagram: Coalescing" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-sticky.svg" alt="Sticky Note: Coalescing" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/coalescing-sticky.svg" alt="Sticky Note: Coalescing" width="30%">
 </a>
 
 
@@ -272,14 +272,14 @@ Production allocators (e.g., LLVM's `GreedyRegAlloc`) use iterative coalescing t
 
 ### Spill-Cost Optimization
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-handwritten.svg" alt="Handwritten: Spill-Cost Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-handwritten.svg" alt="Handwritten: Spill-Cost Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-diagram.svg" alt="Diagram: Spill-Cost Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-diagram.svg" alt="Diagram: Spill-Cost Optimization" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-sticky.svg" alt="Sticky Note: Spill-Cost Optimization" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/spill-cost-optimization-sticky.svg" alt="Sticky Note: Spill-Cost Optimization" width="30%">
 </a>
 
 
@@ -319,14 +319,14 @@ The allocator computes a **rematerialization cost**. If it is less than the spil
 
 ### Modern Production Allocators
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-handwritten.svg" alt="Handwritten: Modern Production Allocators" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-handwritten.svg" alt="Handwritten: Modern Production Allocators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-diagram.svg" alt="Diagram: Modern Production Allocators" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-diagram.svg" alt="Diagram: Modern Production Allocators" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-sticky.svg" alt="Sticky Note: Modern Production Allocators" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/modern-production-allocators-sticky.svg" alt="Sticky Note: Modern Production Allocators" width="30%">
 </a>
 
 
@@ -354,14 +354,14 @@ Go uses a simpler approach: a **linear-scan allocator** that processes live rang
 
 ### Putting It All Together ? TypeScript Implementation
 
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
+<a href="../../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/compiler-design/14-register-allocation/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
 </a>
 
 

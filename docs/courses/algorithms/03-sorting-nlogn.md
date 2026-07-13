@@ -56,14 +56,14 @@ flowchart LR
 
 ### 3.1 Lower Bound for Comparison Sorting
 
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-handwritten.svg" alt="Handwritten: 3.1 Lower Bound for Comparison Sorting" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-handwritten.svg" alt="Handwritten: 3.1 Lower Bound for Comparison Sorting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-diagram.svg" alt="Diagram: 3.1 Lower Bound for Comparison Sorting" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-diagram.svg" alt="Diagram: 3.1 Lower Bound for Comparison Sorting" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-sticky.svg" alt="Sticky Note: 3.1 Lower Bound for Comparison Sorting" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-1-lower-bound-for-comparison-sorting-sticky.svg" alt="Sticky Note: 3.1 Lower Bound for Comparison Sorting" width="30%">
 </a>
 
 
@@ -83,14 +83,14 @@ flowchart LR
 
 ### 3.2 Merge Sort
 
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-handwritten.svg" alt="Handwritten: 3.2 Merge Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-handwritten.svg" alt="Handwritten: 3.2 Merge Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-diagram.svg" alt="Diagram: 3.2 Merge Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-diagram.svg" alt="Diagram: 3.2 Merge Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-sticky.svg" alt="Sticky Note: 3.2 Merge Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-2-merge-sort-sticky.svg" alt="Sticky Note: 3.2 Merge Sort" width="30%">
 </a>
 
 
@@ -281,14 +281,14 @@ public class MergeSort {
 
 ### 3.3 Quick Sort
 
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-handwritten.svg" alt="Handwritten: 3.3 Quick Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-handwritten.svg" alt="Handwritten: 3.3 Quick Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-diagram.svg" alt="Diagram: 3.3 Quick Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-diagram.svg" alt="Diagram: 3.3 Quick Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-sticky.svg" alt="Sticky Note: 3.3 Quick Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-3-quick-sort-sticky.svg" alt="Sticky Note: 3.3 Quick Sort" width="30%">
 </a>
 
 
@@ -487,14 +487,14 @@ public class QuickSort {
 
 ### 3.4 Heap Sort
 
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-handwritten.svg" alt="Handwritten: 3.4 Heap Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-handwritten.svg" alt="Handwritten: 3.4 Heap Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-diagram.svg" alt="Diagram: 3.4 Heap Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-diagram.svg" alt="Diagram: 3.4 Heap Sort" width="30%">
 </a>
-<a href="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-sticky.svg" alt="Sticky Note: 3.4 Heap Sort" width="30%">
+<a href="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/algorithms/03-sorting-nlogn/3-4-heap-sort-sticky.svg" alt="Sticky Note: 3.4 Heap Sort" width="30%">
 </a>
 
 

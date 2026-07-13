@@ -38,14 +38,14 @@ flowchart TD
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -64,14 +64,14 @@ A single blueprint can produce hundreds of identical buildings. Each building is
 
 ### Step-by-Step Process
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-handwritten.svg" alt="Handwritten: Step-by-Step Process" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-handwritten.svg" alt="Handwritten: Step-by-Step Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-diagram.svg" alt="Diagram: Step-by-Step Process" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-diagram.svg" alt="Diagram: Step-by-Step Process" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-sticky.svg" alt="Sticky Note: Step-by-Step Process" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/step-by-step-process-sticky.svg" alt="Sticky Note: Step-by-Step Process" width="30%">
 </a>
 
 
@@ -85,14 +85,14 @@ A single blueprint can produce hundreds of identical buildings. Each building is
 
 ### Pseudocode
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
 </a>
 
 
@@ -132,14 +132,14 @@ END FUNCTION
 
 ### C++ Implementation
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-handwritten.svg" alt="Handwritten: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-diagram.svg" alt="Diagram: C++ Implementation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/c-implementation-sticky.svg" alt="Sticky Note: C++ Implementation" width="30%">
 </a>
 
 
@@ -205,14 +205,14 @@ Balance: $1250
 
 ### Memory Layout of an Object
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-handwritten.svg" alt="Handwritten: Memory Layout of an Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-handwritten.svg" alt="Handwritten: Memory Layout of an Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-diagram.svg" alt="Diagram: Memory Layout of an Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-diagram.svg" alt="Diagram: Memory Layout of an Object" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-sticky.svg" alt="Sticky Note: Memory Layout of an Object" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/memory-layout-of-an-object-sticky.svg" alt="Sticky Note: Memory Layout of an Object" width="30%">
 </a>
 
 
@@ -239,14 +239,14 @@ Code Segment (shared):
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -266,14 +266,14 @@ Code Segment (shared):
 
 ### Overview Table
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-handwritten.svg" alt="Handwritten: Overview Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-handwritten.svg" alt="Handwritten: Overview Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-diagram.svg" alt="Diagram: Overview Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-diagram.svg" alt="Diagram: Overview Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-sticky.svg" alt="Sticky Note: Overview Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/overview-table-sticky.svg" alt="Sticky Note: Overview Table" width="30%">
 </a>
 
 
@@ -285,14 +285,14 @@ Code Segment (shared):
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -304,14 +304,14 @@ Think of a **house**:
 
 ### Detailed Explanation
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-handwritten.svg" alt="Handwritten: Detailed Explanation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-handwritten.svg" alt="Handwritten: Detailed Explanation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-diagram.svg" alt="Diagram: Detailed Explanation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-diagram.svg" alt="Diagram: Detailed Explanation" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-sticky.svg" alt="Sticky Note: Detailed Explanation" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/detailed-explanation-sticky.svg" alt="Sticky Note: Detailed Explanation" width="30%">
 </a>
 
 
@@ -323,14 +323,14 @@ Think of a **house**:
 
 ### Code Demonstration
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-handwritten.svg" alt="Handwritten: Code Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-handwritten.svg" alt="Handwritten: Code Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-diagram.svg" alt="Diagram: Code Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-diagram.svg" alt="Diagram: Code Demonstration" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-sticky.svg" alt="Sticky Note: Code Demonstration" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/code-demonstration-sticky.svg" alt="Sticky Note: Code Demonstration" width="30%">
 </a>
 
 
@@ -404,14 +404,14 @@ Total wealth: $150000
 
 ### The Principle of Least Privilege
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-handwritten.svg" alt="Handwritten: The Principle of Least Privilege" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-handwritten.svg" alt="Handwritten: The Principle of Least Privilege" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-diagram.svg" alt="Diagram: The Principle of Least Privilege" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-diagram.svg" alt="Diagram: The Principle of Least Privilege" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-sticky.svg" alt="Sticky Note: The Principle of Least Privilege" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-principle-of-least-privilege-sticky.svg" alt="Sticky Note: The Principle of Least Privilege" width="30%">
 </a>
 
 
@@ -424,14 +424,14 @@ Total wealth: $150000
 
 ### class vs struct — Extended Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-handwritten.svg" alt="Handwritten: class vs struct — Extended Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-handwritten.svg" alt="Handwritten: class vs struct — Extended Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-diagram.svg" alt="Diagram: class vs struct — Extended Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-diagram.svg" alt="Diagram: class vs struct — Extended Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-sticky.svg" alt="Sticky Note: class vs struct — Extended Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/class-vs-struct-extended-comparison-sticky.svg" alt="Sticky Note: class vs struct — Extended Comparison" width="30%">
 </a>
 
 
@@ -496,14 +496,14 @@ Member functions (also called *methods*) are functions that belong to a class. T
 
 ### Syntax Variations
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-handwritten.svg" alt="Handwritten: Syntax Variations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-handwritten.svg" alt="Handwritten: Syntax Variations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-diagram.svg" alt="Diagram: Syntax Variations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-diagram.svg" alt="Diagram: Syntax Variations" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-sticky.svg" alt="Sticky Note: Syntax Variations" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-variations-sticky.svg" alt="Sticky Note: Syntax Variations" width="30%">
 </a>
 
 
@@ -530,14 +530,14 @@ int Demo::get_value() const {
 
 ### Types of Member Functions
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-handwritten.svg" alt="Handwritten: Types of Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-handwritten.svg" alt="Handwritten: Types of Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-diagram.svg" alt="Diagram: Types of Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-diagram.svg" alt="Diagram: Types of Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-sticky.svg" alt="Sticky Note: Types of Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/types-of-member-functions-sticky.svg" alt="Sticky Note: Types of Member Functions" width="30%">
 </a>
 
 
@@ -549,14 +549,14 @@ int Demo::get_value() const {
 
 ### Inline Member Functions
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-handwritten.svg" alt="Handwritten: Inline Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-handwritten.svg" alt="Handwritten: Inline Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-diagram.svg" alt="Diagram: Inline Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-diagram.svg" alt="Diagram: Inline Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-sticky.svg" alt="Sticky Note: Inline Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/inline-member-functions-sticky.svg" alt="Sticky Note: Inline Member Functions" width="30%">
 </a>
 
 
@@ -585,14 +585,14 @@ int FastMath::cube(int x) {
 
 ### Complexity Analysis
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
 </a>
 
 
@@ -613,14 +613,14 @@ int FastMath::cube(int x) {
 
 ### What Is `this`?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-handwritten.svg" alt="Handwritten: What Is `this`?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-handwritten.svg" alt="Handwritten: What Is `this`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-diagram.svg" alt="Diagram: What Is `this`?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-diagram.svg" alt="Diagram: What Is `this`?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-sticky.svg" alt="Sticky Note: What Is `this`?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-this-sticky.svg" alt="Sticky Note: What Is `this`?" width="30%">
 </a>
 
 
@@ -634,14 +634,14 @@ obj.member_function(args)
 
 ### Implicit vs Explicit Usage
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-handwritten.svg" alt="Handwritten: Implicit vs Explicit Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-handwritten.svg" alt="Handwritten: Implicit vs Explicit Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-diagram.svg" alt="Diagram: Implicit vs Explicit Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-diagram.svg" alt="Diagram: Implicit vs Explicit Usage" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-sticky.svg" alt="Sticky Note: Implicit vs Explicit Usage" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/implicit-vs-explicit-usage-sticky.svg" alt="Sticky Note: Implicit vs Explicit Usage" width="30%">
 </a>
 
 
@@ -669,14 +669,14 @@ public:
 
 ### Method Chaining with `*this`
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-handwritten.svg" alt="Handwritten: Method Chaining with `*this`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-handwritten.svg" alt="Handwritten: Method Chaining with `*this`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-diagram.svg" alt="Diagram: Method Chaining with `*this`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-diagram.svg" alt="Diagram: Method Chaining with `*this`" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-sticky.svg" alt="Sticky Note: Method Chaining with `*this`" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/method-chaining-with-this-sticky.svg" alt="Sticky Note: Method Chaining with `*this`" width="30%">
 </a>
 
 
@@ -739,14 +739,14 @@ The chained version is more concise and readable, especially for builder pattern
 
 ### Common `this` Use Cases
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-handwritten.svg" alt="Handwritten: Common `this` Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-handwritten.svg" alt="Handwritten: Common `this` Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-diagram.svg" alt="Diagram: Common `this` Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-diagram.svg" alt="Diagram: Common `this` Use Cases" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-sticky.svg" alt="Sticky Note: Common `this` Use Cases" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/common-this-use-cases-sticky.svg" alt="Sticky Note: Common `this` Use Cases" width="30%">
 </a>
 
 
@@ -760,14 +760,14 @@ The chained version is more concise and readable, especially for builder pattern
 
 ### Compare Objects — Identity Check
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-handwritten.svg" alt="Handwritten: Compare Objects — Identity Check" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-handwritten.svg" alt="Handwritten: Compare Objects — Identity Check" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-diagram.svg" alt="Diagram: Compare Objects — Identity Check" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-diagram.svg" alt="Diagram: Compare Objects — Identity Check" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-sticky.svg" alt="Sticky Note: Compare Objects — Identity Check" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/compare-objects-identity-check-sticky.svg" alt="Sticky Note: Compare Objects — Identity Check" width="30%">
 </a>
 
 
@@ -814,14 +814,14 @@ a is same as c: true
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -834,14 +834,14 @@ Think of a **company's break room**:
 
 ### Static Data Members
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-handwritten.svg" alt="Handwritten: Static Data Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-handwritten.svg" alt="Handwritten: Static Data Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-diagram.svg" alt="Diagram: Static Data Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-diagram.svg" alt="Diagram: Static Data Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-sticky.svg" alt="Sticky Note: Static Data Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-data-members-sticky.svg" alt="Sticky Note: Static Data Members" width="30%">
 </a>
 
 
@@ -872,14 +872,14 @@ int Employee::next_id_ = 1000;
 
 ### Dry Run — Static Variable Increment
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-handwritten.svg" alt="Handwritten: Dry Run — Static Variable Increment" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-handwritten.svg" alt="Handwritten: Dry Run — Static Variable Increment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-diagram.svg" alt="Diagram: Dry Run — Static Variable Increment" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-diagram.svg" alt="Diagram: Dry Run — Static Variable Increment" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-sticky.svg" alt="Sticky Note: Dry Run — Static Variable Increment" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-static-variable-increment-sticky.svg" alt="Sticky Note: Dry Run — Static Variable Increment" width="30%">
 </a>
 
 
@@ -906,14 +906,14 @@ Static Variable next_id_ now = 1003 (shared across all instances)
 
 ### Dry Run Trace Table
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
 </a>
 
 
@@ -928,14 +928,14 @@ Static Variable next_id_ now = 1003 (shared across all instances)
 
 ### Static Member Functions
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-handwritten.svg" alt="Handwritten: Static Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-handwritten.svg" alt="Handwritten: Static Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-diagram.svg" alt="Diagram: Static Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-diagram.svg" alt="Diagram: Static Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-sticky.svg" alt="Sticky Note: Static Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-member-functions-sticky.svg" alt="Sticky Note: Static Member Functions" width="30%">
 </a>
 
 
@@ -966,14 +966,14 @@ int main() {
 
 ### static vs Non-static — Comparison Table
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-handwritten.svg" alt="Handwritten: static vs Non-static — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-handwritten.svg" alt="Handwritten: static vs Non-static — Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-diagram.svg" alt="Diagram: static vs Non-static — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-diagram.svg" alt="Diagram: static vs Non-static — Comparison Table" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-sticky.svg" alt="Sticky Note: static vs Non-static — Comparison Table" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/static-vs-non-static-comparison-table-sticky.svg" alt="Sticky Note: static vs Non-static — Comparison Table" width="30%">
 </a>
 
 
@@ -992,14 +992,14 @@ int main() {
 
 ### Complexity Analysis of Static Members
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-handwritten.svg" alt="Handwritten: Complexity Analysis of Static Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-handwritten.svg" alt="Handwritten: Complexity Analysis of Static Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-diagram.svg" alt="Diagram: Complexity Analysis of Static Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-diagram.svg" alt="Diagram: Complexity Analysis of Static Members" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-sticky.svg" alt="Sticky Note: Complexity Analysis of Static Members" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-static-members-sticky.svg" alt="Sticky Note: Complexity Analysis of Static Members" width="30%">
 </a>
 
 
@@ -1019,14 +1019,14 @@ int main() {
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1039,14 +1039,14 @@ Think of a **doctor** and a **pharmacy**:
 
 ### What Is a Friend Function?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-handwritten.svg" alt="Handwritten: What Is a Friend Function?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-handwritten.svg" alt="Handwritten: What Is a Friend Function?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-diagram.svg" alt="Diagram: What Is a Friend Function?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-diagram.svg" alt="Diagram: What Is a Friend Function?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-sticky.svg" alt="Sticky Note: What Is a Friend Function?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-a-friend-function-sticky.svg" alt="Sticky Note: What Is a Friend Function?" width="30%">
 </a>
 
 
@@ -1089,14 +1089,14 @@ Balance: $5000
 
 ### Friend Function with Two Classes
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-handwritten.svg" alt="Handwritten: Friend Function with Two Classes" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-handwritten.svg" alt="Handwritten: Friend Function with Two Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-diagram.svg" alt="Diagram: Friend Function with Two Classes" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-diagram.svg" alt="Diagram: Friend Function with Two Classes" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-sticky.svg" alt="Sticky Note: Friend Function with Two Classes" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-with-two-classes-sticky.svg" alt="Sticky Note: Friend Function with Two Classes" width="30%">
 </a>
 
 
@@ -1146,14 +1146,14 @@ Max area: 30
 
 ### Friend Class
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-handwritten.svg" alt="Handwritten: Friend Class" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-handwritten.svg" alt="Handwritten: Friend Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-diagram.svg" alt="Diagram: Friend Class" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-diagram.svg" alt="Diagram: Friend Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-sticky.svg" alt="Sticky Note: Friend Class" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-class-sticky.svg" alt="Sticky Note: Friend Class" width="30%">
 </a>
 
 
@@ -1223,14 +1223,14 @@ Total company payroll: $110000
 
 ### Dry Run — Friend Function Access
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-handwritten.svg" alt="Handwritten: Dry Run — Friend Function Access" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-handwritten.svg" alt="Handwritten: Dry Run — Friend Function Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-diagram.svg" alt="Diagram: Dry Run — Friend Function Access" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-diagram.svg" alt="Diagram: Dry Run — Friend Function Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-sticky.svg" alt="Sticky Note: Dry Run — Friend Function Access" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/dry-run-friend-function-access-sticky.svg" alt="Sticky Note: Dry Run — Friend Function Access" width="30%">
 </a>
 
 
@@ -1247,14 +1247,14 @@ Trace `max_area(sq, rect)` where `sq.side_ = 5.0`, `rect.width_ = 3.0`, `rect.he
 
 ### Important Rules of Friendship
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-handwritten.svg" alt="Handwritten: Important Rules of Friendship" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-handwritten.svg" alt="Handwritten: Important Rules of Friendship" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-diagram.svg" alt="Diagram: Important Rules of Friendship" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-diagram.svg" alt="Diagram: Important Rules of Friendship" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-sticky.svg" alt="Sticky Note: Important Rules of Friendship" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/important-rules-of-friendship-sticky.svg" alt="Sticky Note: Important Rules of Friendship" width="30%">
 </a>
 
 
@@ -1269,14 +1269,14 @@ Trace `max_area(sq, rect)` where `sq.side_ = 5.0`, `rect.width_ = 3.0`, `rect.he
 
 ### friend Function vs Member Function — Comparison
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-handwritten.svg" alt="Handwritten: friend Function vs Member Function — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-handwritten.svg" alt="Handwritten: friend Function vs Member Function — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-diagram.svg" alt="Diagram: friend Function vs Member Function — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-diagram.svg" alt="Diagram: friend Function vs Member Function — Comparison" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-sticky.svg" alt="Sticky Note: friend Function vs Member Function — Comparison" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-function-vs-member-function-comparison-sticky.svg" alt="Sticky Note: friend Function vs Member Function — Comparison" width="30%">
 </a>
 
 
@@ -1346,14 +1346,14 @@ A **nested class** is a class defined inside another class. It's scoped within t
 
 ### Real-World Analogy
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
 </a>
 
 
@@ -1366,14 +1366,14 @@ A **car** has an **engine**:
 
 ### Syntax and Access Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-handwritten.svg" alt="Handwritten: Syntax and Access Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-handwritten.svg" alt="Handwritten: Syntax and Access Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-diagram.svg" alt="Diagram: Syntax and Access Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-diagram.svg" alt="Diagram: Syntax and Access Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-sticky.svg" alt="Sticky Note: Syntax and Access Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/syntax-and-access-rules-sticky.svg" alt="Sticky Note: Syntax and Access Rules" width="30%">
 </a>
 
 
@@ -1439,14 +1439,14 @@ Engine stopped
 
 ### Nested Class Access Rules
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-handwritten.svg" alt="Handwritten: Nested Class Access Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-handwritten.svg" alt="Handwritten: Nested Class Access Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-diagram.svg" alt="Diagram: Nested Class Access Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-diagram.svg" alt="Diagram: Nested Class Access Rules" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-sticky.svg" alt="Sticky Note: Nested Class Access Rules" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/nested-class-access-rules-sticky.svg" alt="Sticky Note: Nested Class Access Rules" width="30%">
 </a>
 
 
@@ -1491,14 +1491,14 @@ int main() {
 
 ### Visibility Hierarchy
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-handwritten.svg" alt="Handwritten: Visibility Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-handwritten.svg" alt="Handwritten: Visibility Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-diagram.svg" alt="Diagram: Visibility Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-diagram.svg" alt="Diagram: Visibility Hierarchy" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-sticky.svg" alt="Sticky Note: Visibility Hierarchy" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/visibility-hierarchy-sticky.svg" alt="Sticky Note: Visibility Hierarchy" width="30%">
 </a>
 
 
@@ -1519,14 +1519,14 @@ private:
 
 ### The Core Concept
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-handwritten.svg" alt="Handwritten: The Core Concept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-handwritten.svg" alt="Handwritten: The Core Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-diagram.svg" alt="Diagram: The Core Concept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-diagram.svg" alt="Diagram: The Core Concept" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-sticky.svg" alt="Sticky Note: The Core Concept" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-core-concept-sticky.svg" alt="Sticky Note: The Core Concept" width="30%">
 </a>
 
 
@@ -1542,14 +1542,14 @@ public:
 
 ### What `const` Actually Does
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-handwritten.svg" alt="Handwritten: What `const` Actually Does" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-handwritten.svg" alt="Handwritten: What `const` Actually Does" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-diagram.svg" alt="Diagram: What `const` Actually Does" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-diagram.svg" alt="Diagram: What `const` Actually Does" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-sticky.svg" alt="Sticky Note: What `const` Actually Does" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-actually-does-sticky.svg" alt="Sticky Note: What `const` Actually Does" width="30%">
 </a>
 
 
@@ -1570,14 +1570,14 @@ This means inside a `const` member function:
 
 ### Why const-Correctness Matters
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-handwritten.svg" alt="Handwritten: Why const-Correctness Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-handwritten.svg" alt="Handwritten: Why const-Correctness Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-diagram.svg" alt="Diagram: Why const-Correctness Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-diagram.svg" alt="Diagram: Why const-Correctness Matters" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-sticky.svg" alt="Sticky Note: Why const-Correctness Matters" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/why-const-correctness-matters-sticky.svg" alt="Sticky Note: Why const-Correctness Matters" width="30%">
 </a>
 
 
@@ -1612,14 +1612,14 @@ int main() {
 
 ### const and Non-const Overloads
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-handwritten.svg" alt="Handwritten: const and Non-const Overloads" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-handwritten.svg" alt="Handwritten: const and Non-const Overloads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-diagram.svg" alt="Diagram: const and Non-const Overloads" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-diagram.svg" alt="Diagram: const and Non-const Overloads" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-sticky.svg" alt="Sticky Note: const and Non-const Overloads" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-and-non-const-overloads-sticky.svg" alt="Sticky Note: const and Non-const Overloads" width="30%">
 </a>
 
 
@@ -1681,14 +1681,14 @@ const operator() called
 
 ### What `const` Does NOT Guarantee
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-handwritten.svg" alt="Handwritten: What `const` Does NOT Guarantee" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-handwritten.svg" alt="Handwritten: What `const` Does NOT Guarantee" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-diagram.svg" alt="Diagram: What `const` Does NOT Guarantee" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-diagram.svg" alt="Diagram: What `const` Does NOT Guarantee" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-sticky.svg" alt="Sticky Note: What `const` Does NOT Guarantee" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-const-does-not-guarantee-sticky.svg" alt="Sticky Note: What `const` Does NOT Guarantee" width="30%">
 </a>
 
 
@@ -1701,14 +1701,14 @@ const operator() called
 
 ### The `mutable` Keyword
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-handwritten.svg" alt="Handwritten: The `mutable` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-handwritten.svg" alt="Handwritten: The `mutable` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-diagram.svg" alt="Diagram: The `mutable` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-diagram.svg" alt="Diagram: The `mutable` Keyword" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-sticky.svg" alt="Sticky Note: The `mutable` Keyword" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/the-mutable-keyword-sticky.svg" alt="Sticky Note: The `mutable` Keyword" width="30%">
 </a>
 
 
@@ -1775,14 +1775,14 @@ Accessed 2 times
 
 ### Mutable — Dry Run
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-handwritten.svg" alt="Handwritten: Mutable — Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-handwritten.svg" alt="Handwritten: Mutable — Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-diagram.svg" alt="Diagram: Mutable — Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-diagram.svg" alt="Diagram: Mutable — Dry Run" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-sticky.svg" alt="Sticky Note: Mutable — Dry Run" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/mutable-dry-run-sticky.svg" alt="Sticky Note: Mutable — Dry Run" width="30%">
 </a>
 
 
@@ -1815,14 +1815,14 @@ public:
 
 ### const Correctness Rules Summary
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-handwritten.svg" alt="Handwritten: const Correctness Rules Summary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-handwritten.svg" alt="Handwritten: const Correctness Rules Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-diagram.svg" alt="Diagram: const Correctness Rules Summary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-diagram.svg" alt="Diagram: const Correctness Rules Summary" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-sticky.svg" alt="Sticky Note: const Correctness Rules Summary" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/const-correctness-rules-summary-sticky.svg" alt="Sticky Note: const Correctness Rules Summary" width="30%">
 </a>
 
 
@@ -1852,14 +1852,14 @@ public:
 
 ### Complexity Analysis of const Member Functions
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-handwritten.svg" alt="Handwritten: Complexity Analysis of const Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-handwritten.svg" alt="Handwritten: Complexity Analysis of const Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-diagram.svg" alt="Diagram: Complexity Analysis of const Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-diagram.svg" alt="Diagram: Complexity Analysis of const Member Functions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-sticky.svg" alt="Sticky Note: Complexity Analysis of const Member Functions" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/complexity-analysis-of-const-member-functions-sticky.svg" alt="Sticky Note: Complexity Analysis of const Member Functions" width="30%">
 </a>
 
 
@@ -1878,14 +1878,14 @@ public:
 
 ### Logger with Static Counter and Friend Access
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-handwritten.svg" alt="Handwritten: Logger with Static Counter and Friend Access" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-handwritten.svg" alt="Handwritten: Logger with Static Counter and Friend Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-diagram.svg" alt="Diagram: Logger with Static Counter and Friend Access" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-diagram.svg" alt="Diagram: Logger with Static Counter and Friend Access" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-sticky.svg" alt="Sticky Note: Logger with Static Counter and Friend Access" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/logger-with-static-counter-and-friend-access-sticky.svg" alt="Sticky Note: Logger with Static Counter and Friend Access" width="30%">
 </a>
 
 
@@ -1971,14 +1971,14 @@ EMERGENCY — 2 entries
 
 ### Q1: Explain the `this` pointer. When must you use it explicitly?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-handwritten.svg" alt="Handwritten: Explain the `this` pointer. When must you use it explicitly?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-handwritten.svg" alt="Handwritten: Explain the `this` pointer. When must you use it explicitly?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-diagram.svg" alt="Diagram: Explain the `this` pointer. When must you use it explicitly?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-diagram.svg" alt="Diagram: Explain the `this` pointer. When must you use it explicitly?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-sticky.svg" alt="Sticky Note: Explain the `this` pointer. When must you use it explicitly?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/explain-the-this-pointer-when-must-you-use-it-explicitly-sticky.svg" alt="Sticky Note: Explain the `this` pointer. When must you use it explicitly?" width="30%">
 </a>
 
 
@@ -2017,14 +2017,14 @@ You **must** use `this->` explicitly in these scenarios:
 
 ### Q2: What is the difference between `class` and `struct` in C++? Are they identical?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-handwritten.svg" alt="Handwritten: What is the difference between `class` and `struct` in C++? Are they identical?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-handwritten.svg" alt="Handwritten: What is the difference between `class` and `struct` in C++? Are they identical?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-diagram.svg" alt="Diagram: What is the difference between `class` and `struct` in C++? Are they identical?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-diagram.svg" alt="Diagram: What is the difference between `class` and `struct` in C++? Are they identical?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-sticky.svg" alt="Sticky Note: What is the difference between `class` and `struct` in C++? Are they identical?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-class-and-struct-in-c-are-they-identical-sticky.svg" alt="Sticky Note: What is the difference between `class` and `struct` in C++? Are they identical?" width="30%">
 </a>
 
 
@@ -2069,14 +2069,14 @@ public:
 
 ### Q3: Can a `const` member function modify an object? Explain with `mutable`.
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-handwritten.svg" alt="Handwritten: Can a `const` member function modify an object? Explain with `mutable`." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-handwritten.svg" alt="Handwritten: Can a `const` member function modify an object? Explain with `mutable`." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-diagram.svg" alt="Diagram: Can a `const` member function modify an object? Explain with `mutable`." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-diagram.svg" alt="Diagram: Can a `const` member function modify an object? Explain with `mutable`." width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-sticky.svg" alt="Sticky Note: Can a `const` member function modify an object? Explain with `mutable`." width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/can-a-const-member-function-modify-an-object-explain-with-mutable-sticky.svg" alt="Sticky Note: Can a `const` member function modify an object? Explain with `mutable`." width="30%">
 </a>
 
 
@@ -2128,14 +2128,14 @@ By default, a `const` member function **cannot** modify the object's data member
 
 ### Q4: How do static members work? Can static member functions access non-static members?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-handwritten.svg" alt="Handwritten: How do static members work? Can static member functions access non-static members?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-handwritten.svg" alt="Handwritten: How do static members work? Can static member functions access non-static members?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-diagram.svg" alt="Diagram: How do static members work? Can static member functions access non-static members?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-diagram.svg" alt="Diagram: How do static members work? Can static member functions access non-static members?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-sticky.svg" alt="Sticky Note: How do static members work? Can static member functions access non-static members?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/how-do-static-members-work-can-static-member-functions-access-non-static-members-sticky.svg" alt="Sticky Note: How do static members work? Can static member functions access non-static members?" width="30%">
 </a>
 
 
@@ -2180,14 +2180,14 @@ Demo::s_func();  // No Demo object exists — accessing x_ would be impossible
 
 ### Q5: Friend functions vs member functions — when to use each?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-handwritten.svg" alt="Handwritten: Friend functions vs member functions — when to use each?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-handwritten.svg" alt="Handwritten: Friend functions vs member functions — when to use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-diagram.svg" alt="Diagram: Friend functions vs member functions — when to use each?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-diagram.svg" alt="Diagram: Friend functions vs member functions — when to use each?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-sticky.svg" alt="Sticky Note: Friend functions vs member functions — when to use each?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/friend-functions-vs-member-functions-when-to-use-each-sticky.svg" alt="Sticky Note: Friend functions vs member functions — when to use each?" width="30%">
 </a>
 
 
@@ -2249,14 +2249,14 @@ int main() {
 
 ### Q6: What is the size of an empty class in C++? Why?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-handwritten.svg" alt="Handwritten: What is the size of an empty class in C++? Why?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-handwritten.svg" alt="Handwritten: What is the size of an empty class in C++? Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-diagram.svg" alt="Diagram: What is the size of an empty class in C++? Why?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-diagram.svg" alt="Diagram: What is the size of an empty class in C++? Why?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-sticky.svg" alt="Sticky Note: What is the size of an empty class in C++? Why?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-size-of-an-empty-class-in-c-why-sticky.svg" alt="Sticky Note: What is the size of an empty class in C++? Why?" width="30%">
 </a>
 
 
@@ -2326,14 +2326,14 @@ int main() {
 
 ### Q8: What is the difference between `private` inheritance and composition?
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-handwritten.svg" alt="Handwritten: What is the difference between `private` inheritance and composition?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-handwritten.svg" alt="Handwritten: What is the difference between `private` inheritance and composition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-diagram.svg" alt="Diagram: What is the difference between `private` inheritance and composition?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-diagram.svg" alt="Diagram: What is the difference between `private` inheritance and composition?" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-sticky.svg" alt="Sticky Note: What is the difference between `private` inheritance and composition?" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/what-is-the-difference-between-private-inheritance-and-composition-sticky.svg" alt="Sticky Note: What is the difference between `private` inheritance and composition?" width="30%">
 </a>
 
 
@@ -2376,14 +2376,14 @@ class Stopwatch : private Timer {
 
 ### 1. `std::string` — A Well-Designed Class
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-handwritten.svg" alt="Handwritten: 1. `std::string` — A Well-Designed Class" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-handwritten.svg" alt="Handwritten: 1. `std::string` — A Well-Designed Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-diagram.svg" alt="Diagram: 1. `std::string` — A Well-Designed Class" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-diagram.svg" alt="Diagram: 1. `std::string` — A Well-Designed Class" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-sticky.svg" alt="Sticky Note: 1. `std::string` — A Well-Designed Class" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/1-std-string-a-well-designed-class-sticky.svg" alt="Sticky Note: 1. `std::string` — A Well-Designed Class" width="30%">
 </a>
 
 
@@ -2421,14 +2421,14 @@ public:
 
 ### 2. GUI Widget Hierarchy (Qt-inspired)
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-handwritten.svg" alt="Handwritten: 2. GUI Widget Hierarchy (Qt-inspired)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-handwritten.svg" alt="Handwritten: 2. GUI Widget Hierarchy (Qt-inspired)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-diagram.svg" alt="Diagram: 2. GUI Widget Hierarchy (Qt-inspired)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-diagram.svg" alt="Diagram: 2. GUI Widget Hierarchy (Qt-inspired)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-sticky.svg" alt="Sticky Note: 2. GUI Widget Hierarchy (Qt-inspired)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/2-gui-widget-hierarchy-qt-inspired-sticky.svg" alt="Sticky Note: 2. GUI Widget Hierarchy (Qt-inspired)" width="30%">
 </a>
 
 
@@ -2570,14 +2570,14 @@ Widgets remaining: 0
 
 ### 3. Smart Pointer (std::unique_ptr Internals)
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-handwritten.svg" alt="Handwritten: 3. Smart Pointer (std::unique_ptr Internals)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-handwritten.svg" alt="Handwritten: 3. Smart Pointer (std::unique_ptr Internals)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-diagram.svg" alt="Diagram: 3. Smart Pointer (std::unique_ptr Internals)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-diagram.svg" alt="Diagram: 3. Smart Pointer (std::unique_ptr Internals)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-sticky.svg" alt="Sticky Note: 3. Smart Pointer (std::unique_ptr Internals)" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/3-smart-pointer-std-unique-ptr-internals-sticky.svg" alt="Sticky Note: 3. Smart Pointer (std::unique_ptr Internals)" width="30%">
 </a>
 
 
@@ -2618,14 +2618,14 @@ public:
 
 ### 4. Embedded Systems Register Map
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-handwritten.svg" alt="Handwritten: 4. Embedded Systems Register Map" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-handwritten.svg" alt="Handwritten: 4. Embedded Systems Register Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-diagram.svg" alt="Diagram: 4. Embedded Systems Register Map" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-diagram.svg" alt="Diagram: 4. Embedded Systems Register Map" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-sticky.svg" alt="Sticky Note: 4. Embedded Systems Register Map" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/4-embedded-systems-register-map-sticky.svg" alt="Sticky Note: 4. Embedded Systems Register Map" width="30%">
 </a>
 
 
@@ -2689,14 +2689,14 @@ This uses `struct` for the register map (public by default) and `static constexp
 
 ### Coding Problems
 
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/oop-cpp/02-classes-objects/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
 </a>
 
 

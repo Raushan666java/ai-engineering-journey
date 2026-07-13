@@ -63,14 +63,14 @@ flowchart LR
 
 ### Problem 1: Two Sum (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-handwritten.svg" alt="Handwritten: Problem 1: Two Sum (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-handwritten.svg" alt="Handwritten: Problem 1: Two Sum (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-diagram.svg" alt="Diagram: Problem 1: Two Sum (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-diagram.svg" alt="Diagram: Problem 1: Two Sum (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-sticky.svg" alt="Sticky Note: Problem 1: Two Sum (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-amazon-2024-sticky.svg" alt="Sticky Note: Problem 1: Two Sum (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -109,14 +109,14 @@ public class TwoSum {
 
 ### Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-handwritten.svg" alt="Handwritten: Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-handwritten.svg" alt="Handwritten: Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-diagram.svg" alt="Diagram: Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-diagram.svg" alt="Diagram: Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-sticky.svg" alt="Sticky Note: Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-substring-without-repeating-characters-amazon-2024-sticky.svg" alt="Sticky Note: Problem 2: Longest Substring Without Repeating Characters (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -155,14 +155,14 @@ public class LongestSubstring {
 
 ### Problem 3: Merge Two Sorted Lists (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-handwritten.svg" alt="Handwritten: Problem 3: Merge Two Sorted Lists (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-handwritten.svg" alt="Handwritten: Problem 3: Merge Two Sorted Lists (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-diagram.svg" alt="Diagram: Problem 3: Merge Two Sorted Lists (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-diagram.svg" alt="Diagram: Problem 3: Merge Two Sorted Lists (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-sticky.svg" alt="Sticky Note: Problem 3: Merge Two Sorted Lists (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-merge-two-sorted-lists-amazon-2024-sticky.svg" alt="Sticky Note: Problem 3: Merge Two Sorted Lists (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -215,14 +215,14 @@ public class MergeTwoLists {
 
 ### Problem 4: Kth Largest Element in an Array (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-handwritten.svg" alt="Handwritten: Problem 4: Kth Largest Element in an Array (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-handwritten.svg" alt="Handwritten: Problem 4: Kth Largest Element in an Array (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-diagram.svg" alt="Diagram: Problem 4: Kth Largest Element in an Array (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-diagram.svg" alt="Diagram: Problem 4: Kth Largest Element in an Array (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-sticky.svg" alt="Sticky Note: Problem 4: Kth Largest Element in an Array (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-kth-largest-element-in-an-array-amazon-2024-sticky.svg" alt="Sticky Note: Problem 4: Kth Largest Element in an Array (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -258,14 +258,14 @@ public class KthLargest {
 
 ### Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-handwritten.svg" alt="Handwritten: Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-handwritten.svg" alt="Handwritten: Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-diagram.svg" alt="Diagram: Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-diagram.svg" alt="Diagram: Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-sticky.svg" alt="Sticky Note: Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-binary-tree-level-order-traversal-amazon-2023-sticky.svg" alt="Sticky Note: Problem 5: Binary Tree Level Order Traversal (Amazon, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -321,14 +321,14 @@ public class LevelOrderTraversal {
 
 ### Problem 6: Number of Islands (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-handwritten.svg" alt="Handwritten: Problem 6: Number of Islands (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-handwritten.svg" alt="Handwritten: Problem 6: Number of Islands (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-diagram.svg" alt="Diagram: Problem 6: Number of Islands (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-diagram.svg" alt="Diagram: Problem 6: Number of Islands (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-sticky.svg" alt="Sticky Note: Problem 6: Number of Islands (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-number-of-islands-amazon-2024-sticky.svg" alt="Sticky Note: Problem 6: Number of Islands (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -378,14 +378,14 @@ public class NumberOfIslands {
 
 ### Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-handwritten.svg" alt="Handwritten: Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-handwritten.svg" alt="Handwritten: Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-diagram.svg" alt="Diagram: Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-diagram.svg" alt="Diagram: Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-sticky.svg" alt="Sticky Note: Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-best-time-to-buy-and-sell-stock-amazon-2024-sticky.svg" alt="Sticky Note: Problem 7: Best Time to Buy and Sell Stock (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -420,14 +420,14 @@ public class BestTimeToBuy {
 
 ### Problem 8: Coin Change (Amazon, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-handwritten.svg" alt="Handwritten: Problem 8: Coin Change (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-handwritten.svg" alt="Handwritten: Problem 8: Coin Change (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-diagram.svg" alt="Diagram: Problem 8: Coin Change (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-diagram.svg" alt="Diagram: Problem 8: Coin Change (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-sticky.svg" alt="Sticky Note: Problem 8: Coin Change (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-coin-change-amazon-2023-sticky.svg" alt="Sticky Note: Problem 8: Coin Change (Amazon, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -466,14 +466,14 @@ public class CoinChange {
 
 ### Problem 9: LRU Cache (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-handwritten.svg" alt="Handwritten: Problem 9: LRU Cache (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-handwritten.svg" alt="Handwritten: Problem 9: LRU Cache (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-diagram.svg" alt="Diagram: Problem 9: LRU Cache (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-diagram.svg" alt="Diagram: Problem 9: LRU Cache (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-sticky.svg" alt="Sticky Note: Problem 9: LRU Cache (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-lru-cache-amazon-2024-sticky.svg" alt="Sticky Note: Problem 9: LRU Cache (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -558,14 +558,14 @@ public class LRUCacheDemo {
 
 ### Problem 10: Word Ladder (Amazon, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-handwritten.svg" alt="Handwritten: Problem 10: Word Ladder (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-handwritten.svg" alt="Handwritten: Problem 10: Word Ladder (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-diagram.svg" alt="Diagram: Problem 10: Word Ladder (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-diagram.svg" alt="Diagram: Problem 10: Word Ladder (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-sticky.svg" alt="Sticky Note: Problem 10: Word Ladder (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-word-ladder-amazon-2023-sticky.svg" alt="Sticky Note: Problem 10: Word Ladder (Amazon, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -618,14 +618,14 @@ public class WordLadder {
 
 ### Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-handwritten.svg" alt="Handwritten: Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-handwritten.svg" alt="Handwritten: Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-diagram.svg" alt="Diagram: Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-diagram.svg" alt="Diagram: Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-sticky.svg" alt="Sticky Note: Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-two-sum-ii-input-array-is-sorted-amazon-2024-sticky.svg" alt="Sticky Note: Problem 11: Two Sum II → Input Array is Sorted (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -664,14 +664,14 @@ public class TwoSumSorted {
 
 ### Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-handwritten.svg" alt="Handwritten: Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-handwritten.svg" alt="Handwritten: Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-diagram.svg" alt="Diagram: Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-diagram.svg" alt="Diagram: Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-sticky.svg" alt="Sticky Note: Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-sliding-window-maximum-variation-amazon-2024-sticky.svg" alt="Sticky Note: Problem 12: Sliding Window Maximum → Variation (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -729,14 +729,14 @@ public class SlidingWindowMaxVariation {
 
 ### Problem 13: Merge K Sorted Lists (Amazon, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-handwritten.svg" alt="Handwritten: Problem 13: Merge K Sorted Lists (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-handwritten.svg" alt="Handwritten: Problem 13: Merge K Sorted Lists (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-diagram.svg" alt="Diagram: Problem 13: Merge K Sorted Lists (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-diagram.svg" alt="Diagram: Problem 13: Merge K Sorted Lists (Amazon, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-sticky.svg" alt="Sticky Note: Problem 13: Merge K Sorted Lists (Amazon, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-13-merge-k-sorted-lists-amazon-2024-sticky.svg" alt="Sticky Note: Problem 13: Merge K Sorted Lists (Amazon, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -785,14 +785,14 @@ public class MergeKSortedLists {
 
 ### Problem 14: Word Break II (Amazon, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-handwritten.svg" alt="Handwritten: Problem 14: Word Break II (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-handwritten.svg" alt="Handwritten: Problem 14: Word Break II (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-diagram.svg" alt="Diagram: Problem 14: Word Break II (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-diagram.svg" alt="Diagram: Problem 14: Word Break II (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-sticky.svg" alt="Sticky Note: Problem 14: Word Break II (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-14-word-break-ii-amazon-2023-sticky.svg" alt="Sticky Note: Problem 14: Word Break II (Amazon, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -844,14 +844,14 @@ public class WordBreakII {
 
 ### Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-handwritten.svg" alt="Handwritten: Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-handwritten.svg" alt="Handwritten: Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-diagram.svg" alt="Diagram: Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-diagram.svg" alt="Diagram: Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-sticky.svg" alt="Sticky Note: Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-15-serialize-and-deserialize-n-ary-tree-amazon-2023-sticky.svg" alt="Sticky Note: Problem 15: Serialize and Deserialize N-ary Tree (Amazon, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -927,14 +927,14 @@ public class NaryCodecDemo {
 
 ### Amazon Leadership Principles → Behavioral Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-handwritten.svg" alt="Handwritten: Amazon Leadership Principles → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-handwritten.svg" alt="Handwritten: Amazon Leadership Principles → Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-diagram.svg" alt="Diagram: Amazon Leadership Principles → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-diagram.svg" alt="Diagram: Amazon Leadership Principles → Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-sticky.svg" alt="Sticky Note: Amazon Leadership Principles → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/amazon-leadership-principles-behavioral-questions-sticky.svg" alt="Sticky Note: Amazon Leadership Principles → Behavioral Questions" width="30%">
 </a>
 
 
@@ -979,14 +979,14 @@ public class NaryCodecDemo {
 
 ### Problem 1: Two Sum → Sorted Input (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-handwritten.svg" alt="Handwritten: Problem 1: Two Sum → Sorted Input (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-handwritten.svg" alt="Handwritten: Problem 1: Two Sum → Sorted Input (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-diagram.svg" alt="Diagram: Problem 1: Two Sum → Sorted Input (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-diagram.svg" alt="Diagram: Problem 1: Two Sum → Sorted Input (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-sticky.svg" alt="Sticky Note: Problem 1: Two Sum → Sorted Input (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-two-sum-sorted-input-google-2024-sticky.svg" alt="Sticky Note: Problem 1: Two Sum → Sorted Input (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1025,14 +1025,14 @@ public class TwoSumSorted {
 
 ### Problem 2: Merge Intervals (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-handwritten.svg" alt="Handwritten: Problem 2: Merge Intervals (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-handwritten.svg" alt="Handwritten: Problem 2: Merge Intervals (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-diagram.svg" alt="Diagram: Problem 2: Merge Intervals (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-diagram.svg" alt="Diagram: Problem 2: Merge Intervals (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-sticky.svg" alt="Sticky Note: Problem 2: Merge Intervals (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-google-2024-sticky.svg" alt="Sticky Note: Problem 2: Merge Intervals (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1079,14 +1079,14 @@ public class MergeIntervals {
 
 ### Problem 3: Longest Increasing Path in a Matrix (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-handwritten.svg" alt="Handwritten: Problem 3: Longest Increasing Path in a Matrix (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-handwritten.svg" alt="Handwritten: Problem 3: Longest Increasing Path in a Matrix (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-diagram.svg" alt="Diagram: Problem 3: Longest Increasing Path in a Matrix (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-diagram.svg" alt="Diagram: Problem 3: Longest Increasing Path in a Matrix (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-sticky.svg" alt="Sticky Note: Problem 3: Longest Increasing Path in a Matrix (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-increasing-path-in-a-matrix-google-2024-sticky.svg" alt="Sticky Note: Problem 3: Longest Increasing Path in a Matrix (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -1136,14 +1136,14 @@ public class LongestIncreasingPath {
 
 ### Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-handwritten.svg" alt="Handwritten: Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-handwritten.svg" alt="Handwritten: Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-diagram.svg" alt="Diagram: Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-diagram.svg" alt="Diagram: Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-sticky.svg" alt="Sticky Note: Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-serialize-and-deserialize-binary-tree-google-2023-sticky.svg" alt="Sticky Note: Problem 4: Serialize and Deserialize Binary Tree (Google, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -1213,14 +1213,14 @@ public class CodecDemo {
 
 ### Problem 5: Group Anagrams (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-handwritten.svg" alt="Handwritten: Problem 5: Group Anagrams (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-handwritten.svg" alt="Handwritten: Problem 5: Group Anagrams (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-diagram.svg" alt="Diagram: Problem 5: Group Anagrams (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-diagram.svg" alt="Diagram: Problem 5: Group Anagrams (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-sticky.svg" alt="Sticky Note: Problem 5: Group Anagrams (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-group-anagrams-google-2024-sticky.svg" alt="Sticky Note: Problem 5: Group Anagrams (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1255,14 +1255,14 @@ public class GroupAnagrams {
 
 ### Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-handwritten.svg" alt="Handwritten: Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-handwritten.svg" alt="Handwritten: Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-diagram.svg" alt="Diagram: Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-diagram.svg" alt="Diagram: Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-sticky.svg" alt="Sticky Note: Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-maximum-subarray-kadane-s-algorithm-google-2024-sticky.svg" alt="Sticky Note: Problem 6: Maximum Subarray (Kadane's Algorithm) (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1293,14 +1293,14 @@ public class MaximumSubarray {
 
 ### Problem 7: Minimum Window Substring (Google, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-handwritten.svg" alt="Handwritten: Problem 7: Minimum Window Substring (Google, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-handwritten.svg" alt="Handwritten: Problem 7: Minimum Window Substring (Google, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-diagram.svg" alt="Diagram: Problem 7: Minimum Window Substring (Google, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-diagram.svg" alt="Diagram: Problem 7: Minimum Window Substring (Google, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-sticky.svg" alt="Sticky Note: Problem 7: Minimum Window Substring (Google, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-minimum-window-substring-google-2023-sticky.svg" alt="Sticky Note: Problem 7: Minimum Window Substring (Google, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -1351,14 +1351,14 @@ public class MinWindowSubstring {
 
 ### Problem 8: Find Median from Data Stream (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-handwritten.svg" alt="Handwritten: Problem 8: Find Median from Data Stream (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-handwritten.svg" alt="Handwritten: Problem 8: Find Median from Data Stream (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-diagram.svg" alt="Diagram: Problem 8: Find Median from Data Stream (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-diagram.svg" alt="Diagram: Problem 8: Find Median from Data Stream (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-sticky.svg" alt="Sticky Note: Problem 8: Find Median from Data Stream (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-find-median-from-data-stream-google-2024-sticky.svg" alt="Sticky Note: Problem 8: Find Median from Data Stream (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -1410,14 +1410,14 @@ public class MedianFinderDemo {
 
 ### Problem 9: Text Justification (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-handwritten.svg" alt="Handwritten: Problem 9: Text Justification (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-handwritten.svg" alt="Handwritten: Problem 9: Text Justification (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-diagram.svg" alt="Diagram: Problem 9: Text Justification (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-diagram.svg" alt="Diagram: Problem 9: Text Justification (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-sticky.svg" alt="Sticky Note: Problem 9: Text Justification (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-text-justification-google-2024-sticky.svg" alt="Sticky Note: Problem 9: Text Justification (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -1484,14 +1484,14 @@ public class TextJustification {
 
 ### Problem 10: Count of Smaller Numbers After Self (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-handwritten.svg" alt="Handwritten: Problem 10: Count of Smaller Numbers After Self (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-handwritten.svg" alt="Handwritten: Problem 10: Count of Smaller Numbers After Self (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-diagram.svg" alt="Diagram: Problem 10: Count of Smaller Numbers After Self (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-diagram.svg" alt="Diagram: Problem 10: Count of Smaller Numbers After Self (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-sticky.svg" alt="Sticky Note: Problem 10: Count of Smaller Numbers After Self (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-count-of-smaller-numbers-after-self-google-2024-sticky.svg" alt="Sticky Note: Problem 10: Count of Smaller Numbers After Self (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -1540,14 +1540,14 @@ public class CountSmallerAfterSelf {
 
 ### Problem 11: My Calendar I (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-handwritten.svg" alt="Handwritten: Problem 11: My Calendar I (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-handwritten.svg" alt="Handwritten: Problem 11: My Calendar I (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-diagram.svg" alt="Diagram: Problem 11: My Calendar I (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-diagram.svg" alt="Diagram: Problem 11: My Calendar I (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-sticky.svg" alt="Sticky Note: Problem 11: My Calendar I (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-11-my-calendar-i-google-2024-sticky.svg" alt="Sticky Note: Problem 11: My Calendar I (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1591,14 +1591,14 @@ public class MyCalendarDemo {
 
 ### Problem 12: Random Pick with Weight (Google, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-handwritten.svg" alt="Handwritten: Problem 12: Random Pick with Weight (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-handwritten.svg" alt="Handwritten: Problem 12: Random Pick with Weight (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-diagram.svg" alt="Diagram: Problem 12: Random Pick with Weight (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-diagram.svg" alt="Diagram: Problem 12: Random Pick with Weight (Google, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-sticky.svg" alt="Sticky Note: Problem 12: Random Pick with Weight (Google, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-12-random-pick-with-weight-google-2024-sticky.svg" alt="Sticky Note: Problem 12: Random Pick with Weight (Google, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1658,14 +1658,14 @@ public class GoogleRandomPickDemo {
 
 ### Googleyness → Behavioral Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-handwritten.svg" alt="Handwritten: Googleyness → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-handwritten.svg" alt="Handwritten: Googleyness → Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-diagram.svg" alt="Diagram: Googleyness → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-diagram.svg" alt="Diagram: Googleyness → Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-sticky.svg" alt="Sticky Note: Googleyness → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/googleyness-behavioral-questions-sticky.svg" alt="Sticky Note: Googleyness → Behavioral Questions" width="30%">
 </a>
 
 
@@ -1682,14 +1682,14 @@ public class GoogleRandomPickDemo {
 
 ### Google SDE-1/2 System Design Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-handwritten.svg" alt="Handwritten: Google SDE-1/2 System Design Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-handwritten.svg" alt="Handwritten: Google SDE-1/2 System Design Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-diagram.svg" alt="Diagram: Google SDE-1/2 System Design Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-diagram.svg" alt="Diagram: Google SDE-1/2 System Design Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-sticky.svg" alt="Sticky Note: Google SDE-1/2 System Design Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/google-sde-1-2-system-design-questions-sticky.svg" alt="Sticky Note: Google SDE-1/2 System Design Questions" width="30%">
 </a>
 
 
@@ -1723,14 +1723,14 @@ public class GoogleRandomPickDemo {
 
 ### Problem 1: Reverse Linked List (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 1: Reverse Linked List (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 1: Reverse Linked List (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-diagram.svg" alt="Diagram: Problem 1: Reverse Linked List (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-diagram.svg" alt="Diagram: Problem 1: Reverse Linked List (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 1: Reverse Linked List (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-reverse-linked-list-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 1: Reverse Linked List (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -1769,14 +1769,14 @@ public class ReverseLinkedList {
 
 ### Problem 2: Valid Parentheses (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 2: Valid Parentheses (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 2: Valid Parentheses (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-diagram.svg" alt="Diagram: Problem 2: Valid Parentheses (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-diagram.svg" alt="Diagram: Problem 2: Valid Parentheses (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 2: Valid Parentheses (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-valid-parentheses-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 2: Valid Parentheses (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -1811,14 +1811,14 @@ public class ValidParentheses {
 
 ### Problem 3: Longest Palindromic Substring (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 3: Longest Palindromic Substring (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 3: Longest Palindromic Substring (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-diagram.svg" alt="Diagram: Problem 3: Longest Palindromic Substring (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-diagram.svg" alt="Diagram: Problem 3: Longest Palindromic Substring (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 3: Longest Palindromic Substring (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-longest-palindromic-substring-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 3: Longest Palindromic Substring (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1864,14 +1864,14 @@ public class LongestPalindrome {
 
 ### Problem 4: Set Matrix Zeroes (Microsoft, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-handwritten.svg" alt="Handwritten: Problem 4: Set Matrix Zeroes (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-handwritten.svg" alt="Handwritten: Problem 4: Set Matrix Zeroes (Microsoft, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-diagram.svg" alt="Diagram: Problem 4: Set Matrix Zeroes (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-diagram.svg" alt="Diagram: Problem 4: Set Matrix Zeroes (Microsoft, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-sticky.svg" alt="Sticky Note: Problem 4: Set Matrix Zeroes (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-set-matrix-zeroes-microsoft-2023-sticky.svg" alt="Sticky Note: Problem 4: Set Matrix Zeroes (Microsoft, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1918,14 +1918,14 @@ public class SetMatrixZeroes {
 
 ### Problem 5: Number of Provinces (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 5: Number of Provinces (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 5: Number of Provinces (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-diagram.svg" alt="Diagram: Problem 5: Number of Provinces (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-diagram.svg" alt="Diagram: Problem 5: Number of Provinces (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 5: Number of Provinces (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-number-of-provinces-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 5: Number of Provinces (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -1969,14 +1969,14 @@ public class NumberOfProvinces {
 
 ### Problem 6: Alien Dictionary (Microsoft, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-handwritten.svg" alt="Handwritten: Problem 6: Alien Dictionary (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-handwritten.svg" alt="Handwritten: Problem 6: Alien Dictionary (Microsoft, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-diagram.svg" alt="Diagram: Problem 6: Alien Dictionary (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-diagram.svg" alt="Diagram: Problem 6: Alien Dictionary (Microsoft, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-sticky.svg" alt="Sticky Note: Problem 6: Alien Dictionary (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-alien-dictionary-microsoft-2023-sticky.svg" alt="Sticky Note: Problem 6: Alien Dictionary (Microsoft, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -2038,14 +2038,14 @@ public class AlienDictionary {
 
 ### Problem 7: Reverse Words in a String (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 7: Reverse Words in a String (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 7: Reverse Words in a String (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-diagram.svg" alt="Diagram: Problem 7: Reverse Words in a String (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-diagram.svg" alt="Diagram: Problem 7: Reverse Words in a String (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 7: Reverse Words in a String (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-reverse-words-in-a-string-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 7: Reverse Words in a String (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2078,14 +2078,14 @@ public class ReverseWords {
 
 ### Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-diagram.svg" alt="Diagram: Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-diagram.svg" alt="Diagram: Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-remove-duplicates-from-sorted-array-ii-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 8: Remove Duplicates from Sorted Array II (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2122,14 +2122,14 @@ public class RemoveDuplicatesII {
 
 ### Problem 9: Find All Duplicates in an Array (Microsoft, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 9: Find All Duplicates in an Array (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-handwritten.svg" alt="Handwritten: Problem 9: Find All Duplicates in an Array (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-diagram.svg" alt="Diagram: Problem 9: Find All Duplicates in an Array (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-diagram.svg" alt="Diagram: Problem 9: Find All Duplicates in an Array (Microsoft, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 9: Find All Duplicates in an Array (Microsoft, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-find-all-duplicates-in-an-array-microsoft-2024-sticky.svg" alt="Sticky Note: Problem 9: Find All Duplicates in an Array (Microsoft, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2167,14 +2167,14 @@ public class FindAllDuplicates {
 
 ### Problem 10: Basic Calculator II (Microsoft, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-handwritten.svg" alt="Handwritten: Problem 10: Basic Calculator II (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-handwritten.svg" alt="Handwritten: Problem 10: Basic Calculator II (Microsoft, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-diagram.svg" alt="Diagram: Problem 10: Basic Calculator II (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-diagram.svg" alt="Diagram: Problem 10: Basic Calculator II (Microsoft, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-sticky.svg" alt="Sticky Note: Problem 10: Basic Calculator II (Microsoft, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-basic-calculator-ii-microsoft-2023-sticky.svg" alt="Sticky Note: Problem 10: Basic Calculator II (Microsoft, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2222,14 +2222,14 @@ public class BasicCalculatorII {
 
 ### Microsoft ASK (Ability, Skills, Knowledge) → Behavioral
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-handwritten.svg" alt="Handwritten: Microsoft ASK (Ability, Skills, Knowledge) → Behavioral" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-handwritten.svg" alt="Handwritten: Microsoft ASK (Ability, Skills, Knowledge) → Behavioral" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-diagram.svg" alt="Diagram: Microsoft ASK (Ability, Skills, Knowledge) → Behavioral" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-diagram.svg" alt="Diagram: Microsoft ASK (Ability, Skills, Knowledge) → Behavioral" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-sticky.svg" alt="Sticky Note: Microsoft ASK (Ability, Skills, Knowledge) → Behavioral" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-ask-ability-skills-knowledge-behavioral-sticky.svg" alt="Sticky Note: Microsoft ASK (Ability, Skills, Knowledge) → Behavioral" width="30%">
 </a>
 
 
@@ -2246,14 +2246,14 @@ public class BasicCalculatorII {
 
 ### Microsoft Design Questions (SDE-1/2)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-handwritten.svg" alt="Handwritten: Microsoft Design Questions (SDE-1/2)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-handwritten.svg" alt="Handwritten: Microsoft Design Questions (SDE-1/2)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-diagram.svg" alt="Diagram: Microsoft Design Questions (SDE-1/2)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-diagram.svg" alt="Diagram: Microsoft Design Questions (SDE-1/2)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-sticky.svg" alt="Sticky Note: Microsoft Design Questions (SDE-1/2)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/microsoft-design-questions-sde-1-2-sticky.svg" alt="Sticky Note: Microsoft Design Questions (SDE-1/2)" width="30%">
 </a>
 
 
@@ -2277,14 +2277,14 @@ public class BasicCalculatorII {
 
 ### Problem 1: Valid Palindrome (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-handwritten.svg" alt="Handwritten: Problem 1: Valid Palindrome (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-handwritten.svg" alt="Handwritten: Problem 1: Valid Palindrome (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-diagram.svg" alt="Diagram: Problem 1: Valid Palindrome (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-diagram.svg" alt="Diagram: Problem 1: Valid Palindrome (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-sticky.svg" alt="Sticky Note: Problem 1: Valid Palindrome (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-palindrome-meta-2024-sticky.svg" alt="Sticky Note: Problem 1: Valid Palindrome (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -2317,14 +2317,14 @@ public class ValidPalindrome {
 
 ### Problem 2: Binary Search Tree Iterator (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-handwritten.svg" alt="Handwritten: Problem 2: Binary Search Tree Iterator (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-handwritten.svg" alt="Handwritten: Problem 2: Binary Search Tree Iterator (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-diagram.svg" alt="Diagram: Problem 2: Binary Search Tree Iterator (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-diagram.svg" alt="Diagram: Problem 2: Binary Search Tree Iterator (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-sticky.svg" alt="Sticky Note: Problem 2: Binary Search Tree Iterator (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-binary-search-tree-iterator-meta-2024-sticky.svg" alt="Sticky Note: Problem 2: Binary Search Tree Iterator (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2383,14 +2383,14 @@ public class BSTIteratorDemo {
 
 ### Problem 3: Product of Array Except Self (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-handwritten.svg" alt="Handwritten: Problem 3: Product of Array Except Self (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-handwritten.svg" alt="Handwritten: Problem 3: Product of Array Except Self (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-diagram.svg" alt="Diagram: Problem 3: Product of Array Except Self (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-diagram.svg" alt="Diagram: Problem 3: Product of Array Except Self (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-sticky.svg" alt="Sticky Note: Problem 3: Product of Array Except Self (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-product-of-array-except-self-meta-2024-sticky.svg" alt="Sticky Note: Problem 3: Product of Array Except Self (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2429,14 +2429,14 @@ public class ProductExceptSelf {
 
 ### Problem 4: Binary Tree Right Side View (Meta, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-handwritten.svg" alt="Handwritten: Problem 4: Binary Tree Right Side View (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-handwritten.svg" alt="Handwritten: Problem 4: Binary Tree Right Side View (Meta, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-diagram.svg" alt="Diagram: Problem 4: Binary Tree Right Side View (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-diagram.svg" alt="Diagram: Problem 4: Binary Tree Right Side View (Meta, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-sticky.svg" alt="Sticky Note: Problem 4: Binary Tree Right Side View (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-binary-tree-right-side-view-meta-2023-sticky.svg" alt="Sticky Note: Problem 4: Binary Tree Right Side View (Meta, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2484,14 +2484,14 @@ public class RightSideView {
 
 ### Problem 5: Accounts Merge (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-handwritten.svg" alt="Handwritten: Problem 5: Accounts Merge (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-handwritten.svg" alt="Handwritten: Problem 5: Accounts Merge (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-diagram.svg" alt="Diagram: Problem 5: Accounts Merge (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-diagram.svg" alt="Diagram: Problem 5: Accounts Merge (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-sticky.svg" alt="Sticky Note: Problem 5: Accounts Merge (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-accounts-merge-meta-2024-sticky.svg" alt="Sticky Note: Problem 5: Accounts Merge (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2563,14 +2563,14 @@ public class AccountsMerge {
 
 ### Problem 6: Random Pick with Weight (Meta, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-handwritten.svg" alt="Handwritten: Problem 6: Random Pick with Weight (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-handwritten.svg" alt="Handwritten: Problem 6: Random Pick with Weight (Meta, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-diagram.svg" alt="Diagram: Problem 6: Random Pick with Weight (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-diagram.svg" alt="Diagram: Problem 6: Random Pick with Weight (Meta, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-sticky.svg" alt="Sticky Note: Problem 6: Random Pick with Weight (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-random-pick-with-weight-meta-2023-sticky.svg" alt="Sticky Note: Problem 6: Random Pick with Weight (Meta, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2630,14 +2630,14 @@ public class RandomPickDemo {
 
 ### Problem 7: Range Sum Query → Immutable (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-handwritten.svg" alt="Handwritten: Problem 7: Range Sum Query → Immutable (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-handwritten.svg" alt="Handwritten: Problem 7: Range Sum Query → Immutable (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-diagram.svg" alt="Diagram: Problem 7: Range Sum Query → Immutable (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-diagram.svg" alt="Diagram: Problem 7: Range Sum Query → Immutable (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-sticky.svg" alt="Sticky Note: Problem 7: Range Sum Query → Immutable (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-range-sum-query-immutable-meta-2024-sticky.svg" alt="Sticky Note: Problem 7: Range Sum Query → Immutable (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -2677,14 +2677,14 @@ public class RangeSumDemo {
 
 ### Problem 8: Continuous Subarray Sum (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-handwritten.svg" alt="Handwritten: Problem 8: Continuous Subarray Sum (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-handwritten.svg" alt="Handwritten: Problem 8: Continuous Subarray Sum (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-diagram.svg" alt="Diagram: Problem 8: Continuous Subarray Sum (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-diagram.svg" alt="Diagram: Problem 8: Continuous Subarray Sum (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-sticky.svg" alt="Sticky Note: Problem 8: Continuous Subarray Sum (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-8-continuous-subarray-sum-meta-2024-sticky.svg" alt="Sticky Note: Problem 8: Continuous Subarray Sum (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2727,14 +2727,14 @@ public class ContinuousSubarraySum {
 
 ### Problem 9: Random Pick Index (Meta, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-handwritten.svg" alt="Handwritten: Problem 9: Random Pick Index (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-handwritten.svg" alt="Handwritten: Problem 9: Random Pick Index (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-diagram.svg" alt="Diagram: Problem 9: Random Pick Index (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-diagram.svg" alt="Diagram: Problem 9: Random Pick Index (Meta, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-sticky.svg" alt="Sticky Note: Problem 9: Random Pick Index (Meta, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-9-random-pick-index-meta-2024-sticky.svg" alt="Sticky Note: Problem 9: Random Pick Index (Meta, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2787,14 +2787,14 @@ public class RandomPickIndexDemo {
 
 ### Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-handwritten.svg" alt="Handwritten: Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-handwritten.svg" alt="Handwritten: Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-diagram.svg" alt="Diagram: Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-diagram.svg" alt="Diagram: Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-sticky.svg" alt="Sticky Note: Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-10-binary-tree-vertical-order-traversal-meta-2023-sticky.svg" alt="Sticky Note: Problem 10: Binary Tree Vertical Order Traversal (Meta, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2847,14 +2847,14 @@ public class VerticalOrderTraversal {
 
 ### Meta Behavioral Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-handwritten.svg" alt="Handwritten: Meta Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-handwritten.svg" alt="Handwritten: Meta Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-diagram.svg" alt="Diagram: Meta Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-diagram.svg" alt="Diagram: Meta Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-sticky.svg" alt="Sticky Note: Meta Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/meta-behavioral-questions-sticky.svg" alt="Sticky Note: Meta Behavioral Questions" width="30%">
 </a>
 
 
@@ -2877,14 +2877,14 @@ public class VerticalOrderTraversal {
 
 ### Problem 1: Grid Unique Paths (Flipkart, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 1: Grid Unique Paths (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 1: Grid Unique Paths (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-diagram.svg" alt="Diagram: Problem 1: Grid Unique Paths (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-diagram.svg" alt="Diagram: Problem 1: Grid Unique Paths (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 1: Grid Unique Paths (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-grid-unique-paths-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 1: Grid Unique Paths (Flipkart, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2918,14 +2918,14 @@ public class UniquePaths {
 
 ### Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-diagram.svg" alt="Diagram: Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-diagram.svg" alt="Diagram: Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-minimum-jumps-to-reach-end-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 2: Minimum Jumps to Reach End (Flipkart, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -2957,14 +2957,14 @@ public class JumpGame {
 
 ### Problem 3: Maximum Frequency Stack (Flipkart, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-handwritten.svg" alt="Handwritten: Problem 3: Maximum Frequency Stack (Flipkart, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-handwritten.svg" alt="Handwritten: Problem 3: Maximum Frequency Stack (Flipkart, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-diagram.svg" alt="Diagram: Problem 3: Maximum Frequency Stack (Flipkart, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-diagram.svg" alt="Diagram: Problem 3: Maximum Frequency Stack (Flipkart, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-sticky.svg" alt="Sticky Note: Problem 3: Maximum Frequency Stack (Flipkart, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-maximum-frequency-stack-flipkart-2023-sticky.svg" alt="Sticky Note: Problem 3: Maximum Frequency Stack (Flipkart, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -3017,14 +3017,14 @@ public class FreqStackDemo {
 
 ### Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-handwritten.svg" alt="Handwritten: Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-handwritten.svg" alt="Handwritten: Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-diagram.svg" alt="Diagram: Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-diagram.svg" alt="Diagram: Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-sticky.svg" alt="Sticky Note: Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-rat-in-a-maze-flipkart-machine-coding-round-2024-sticky.svg" alt="Sticky Note: Problem 4: Rat in a Maze (Flipkart Machine Coding Round, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3076,14 +3076,14 @@ public class RatInMaze {
 
 ### Problem 5: Longest Common Subsequence (Flipkart, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 5: Longest Common Subsequence (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 5: Longest Common Subsequence (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-diagram.svg" alt="Diagram: Problem 5: Longest Common Subsequence (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-diagram.svg" alt="Diagram: Problem 5: Longest Common Subsequence (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 5: Longest Common Subsequence (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-longest-common-subsequence-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 5: Longest Common Subsequence (Flipkart, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3120,14 +3120,14 @@ public class LongestCommonSubsequence {
 
 ### Problem 6: Find the Celebrity (Flipkart, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-handwritten.svg" alt="Handwritten: Problem 6: Find the Celebrity (Flipkart, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-handwritten.svg" alt="Handwritten: Problem 6: Find the Celebrity (Flipkart, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-diagram.svg" alt="Diagram: Problem 6: Find the Celebrity (Flipkart, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-diagram.svg" alt="Diagram: Problem 6: Find the Celebrity (Flipkart, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-sticky.svg" alt="Sticky Note: Problem 6: Find the Celebrity (Flipkart, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-the-celebrity-flipkart-2023-sticky.svg" alt="Sticky Note: Problem 6: Find the Celebrity (Flipkart, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3168,14 +3168,14 @@ public class FindCelebrity {
 
 ### Problem 7: Stock Span Problem (Flipkart, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 7: Stock Span Problem (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-handwritten.svg" alt="Handwritten: Problem 7: Stock Span Problem (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-diagram.svg" alt="Diagram: Problem 7: Stock Span Problem (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-diagram.svg" alt="Diagram: Problem 7: Stock Span Problem (Flipkart, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 7: Stock Span Problem (Flipkart, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-stock-span-problem-flipkart-2024-sticky.svg" alt="Sticky Note: Problem 7: Stock Span Problem (Flipkart, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3216,14 +3216,14 @@ public class StockSpan {
 
 ### Problem 1: Group Shifted Strings (Uber, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-handwritten.svg" alt="Handwritten: Problem 1: Group Shifted Strings (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-handwritten.svg" alt="Handwritten: Problem 1: Group Shifted Strings (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-diagram.svg" alt="Diagram: Problem 1: Group Shifted Strings (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-diagram.svg" alt="Diagram: Problem 1: Group Shifted Strings (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-sticky.svg" alt="Sticky Note: Problem 1: Group Shifted Strings (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-group-shifted-strings-uber-2024-sticky.svg" alt="Sticky Note: Problem 1: Group Shifted Strings (Uber, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3261,14 +3261,14 @@ public class GroupShiftedStrings {
 
 ### Problem 2: Time-Based Key-Value Store (Uber, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-handwritten.svg" alt="Handwritten: Problem 2: Time-Based Key-Value Store (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-handwritten.svg" alt="Handwritten: Problem 2: Time-Based Key-Value Store (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-diagram.svg" alt="Diagram: Problem 2: Time-Based Key-Value Store (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-diagram.svg" alt="Diagram: Problem 2: Time-Based Key-Value Store (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-sticky.svg" alt="Sticky Note: Problem 2: Time-Based Key-Value Store (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-time-based-key-value-store-uber-2024-sticky.svg" alt="Sticky Note: Problem 2: Time-Based Key-Value Store (Uber, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3314,14 +3314,14 @@ public class TimeMapDemo {
 
 ### Problem 3: Design In-Memory File System (Uber System Design, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-handwritten.svg" alt="Handwritten: Problem 3: Design In-Memory File System (Uber System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-handwritten.svg" alt="Handwritten: Problem 3: Design In-Memory File System (Uber System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-diagram.svg" alt="Diagram: Problem 3: Design In-Memory File System (Uber System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-diagram.svg" alt="Diagram: Problem 3: Design In-Memory File System (Uber System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-sticky.svg" alt="Sticky Note: Problem 3: Design In-Memory File System (Uber System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-in-memory-file-system-uber-system-design-2024-sticky.svg" alt="Sticky Note: Problem 3: Design In-Memory File System (Uber System Design, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -3408,14 +3408,14 @@ public class FileSystemDemo {
 
 ### Problem 4: Bus Routes (Uber, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-handwritten.svg" alt="Handwritten: Problem 4: Bus Routes (Uber, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-handwritten.svg" alt="Handwritten: Problem 4: Bus Routes (Uber, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-diagram.svg" alt="Diagram: Problem 4: Bus Routes (Uber, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-diagram.svg" alt="Diagram: Problem 4: Bus Routes (Uber, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-sticky.svg" alt="Sticky Note: Problem 4: Bus Routes (Uber, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-bus-routes-uber-2023-sticky.svg" alt="Sticky Note: Problem 4: Bus Routes (Uber, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -3474,14 +3474,14 @@ public class BusRoutes {
 
 ### Problem 5: Letter Combinations of a Phone Number (Uber, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-handwritten.svg" alt="Handwritten: Problem 5: Letter Combinations of a Phone Number (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-handwritten.svg" alt="Handwritten: Problem 5: Letter Combinations of a Phone Number (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-diagram.svg" alt="Diagram: Problem 5: Letter Combinations of a Phone Number (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-diagram.svg" alt="Diagram: Problem 5: Letter Combinations of a Phone Number (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-sticky.svg" alt="Sticky Note: Problem 5: Letter Combinations of a Phone Number (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-letter-combinations-of-a-phone-number-uber-2024-sticky.svg" alt="Sticky Note: Problem 5: Letter Combinations of a Phone Number (Uber, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3530,14 +3530,14 @@ public class LetterCombinations {
 
 ### Problem 6: Design Hit Counter (Uber, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-handwritten.svg" alt="Handwritten: Problem 6: Design Hit Counter (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-handwritten.svg" alt="Handwritten: Problem 6: Design Hit Counter (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-diagram.svg" alt="Diagram: Problem 6: Design Hit Counter (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-diagram.svg" alt="Diagram: Problem 6: Design Hit Counter (Uber, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-sticky.svg" alt="Sticky Note: Problem 6: Design Hit Counter (Uber, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-design-hit-counter-uber-2024-sticky.svg" alt="Sticky Note: Problem 6: Design Hit Counter (Uber, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3586,14 +3586,14 @@ public class HitCounterDemo {
 
 ### Problem 7: Maximum Product Subarray (Uber, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-handwritten.svg" alt="Handwritten: Problem 7: Maximum Product Subarray (Uber, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-handwritten.svg" alt="Handwritten: Problem 7: Maximum Product Subarray (Uber, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-diagram.svg" alt="Diagram: Problem 7: Maximum Product Subarray (Uber, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-diagram.svg" alt="Diagram: Problem 7: Maximum Product Subarray (Uber, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-sticky.svg" alt="Sticky Note: Problem 7: Maximum Product Subarray (Uber, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-maximum-product-subarray-uber-2023-sticky.svg" alt="Sticky Note: Problem 7: Maximum Product Subarray (Uber, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3633,14 +3633,14 @@ public class MaximumProductSubarray {
 
 ### Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-diagram.svg" alt="Diagram: Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-diagram.svg" alt="Diagram: Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-food-delivery-recommendation-system-swiggy-system-design-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a Food Delivery Recommendation System (Swiggy System Design, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3706,14 +3706,14 @@ public class RestaurantRecommender {
 
 ### Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-handwritten.svg" alt="Handwritten: Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-handwritten.svg" alt="Handwritten: Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-diagram.svg" alt="Diagram: Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-diagram.svg" alt="Diagram: Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-sticky.svg" alt="Sticky Note: Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-analyze-delivery-time-outliers-zomato-data-problem-2024-sticky.svg" alt="Sticky Note: Problem 2: Analyze Delivery Time Outliers (Zomato Data Problem, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3752,14 +3752,14 @@ public class DeliveryOutliers {
 
 ### Problem 3: Sliding Window Maximum (Swiggy, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-handwritten.svg" alt="Handwritten: Problem 3: Sliding Window Maximum (Swiggy, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-handwritten.svg" alt="Handwritten: Problem 3: Sliding Window Maximum (Swiggy, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-diagram.svg" alt="Diagram: Problem 3: Sliding Window Maximum (Swiggy, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-diagram.svg" alt="Diagram: Problem 3: Sliding Window Maximum (Swiggy, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-sticky.svg" alt="Sticky Note: Problem 3: Sliding Window Maximum (Swiggy, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-sliding-window-maximum-swiggy-2024-sticky.svg" alt="Sticky Note: Problem 3: Sliding Window Maximum (Swiggy, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -3805,14 +3805,14 @@ public class SlidingWindowMax {
 
 ### Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-handwritten.svg" alt="Handwritten: Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-handwritten.svg" alt="Handwritten: Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-diagram.svg" alt="Diagram: Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-diagram.svg" alt="Diagram: Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-sticky.svg" alt="Sticky Note: Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-a-coupon-distribution-system-swiggy-machine-coding-2024-sticky.svg" alt="Sticky Note: Problem 4: Design a Coupon Distribution System (Swiggy Machine Coding, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3878,14 +3878,14 @@ public class CouponSystem {
 
 ### Problem 5: Order Status Notification System (Swiggy LLD, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-handwritten.svg" alt="Handwritten: Problem 5: Order Status Notification System (Swiggy LLD, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-handwritten.svg" alt="Handwritten: Problem 5: Order Status Notification System (Swiggy LLD, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-diagram.svg" alt="Diagram: Problem 5: Order Status Notification System (Swiggy LLD, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-diagram.svg" alt="Diagram: Problem 5: Order Status Notification System (Swiggy LLD, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-sticky.svg" alt="Sticky Note: Problem 5: Order Status Notification System (Swiggy LLD, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-order-status-notification-system-swiggy-lld-2024-sticky.svg" alt="Sticky Note: Problem 5: Order Status Notification System (Swiggy LLD, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3938,14 +3938,14 @@ public class OrderNotifierDemo {
 
 ### Problem 6: Find K Closest Elements (Swiggy, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-handwritten.svg" alt="Handwritten: Problem 6: Find K Closest Elements (Swiggy, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-handwritten.svg" alt="Handwritten: Problem 6: Find K Closest Elements (Swiggy, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-diagram.svg" alt="Diagram: Problem 6: Find K Closest Elements (Swiggy, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-diagram.svg" alt="Diagram: Problem 6: Find K Closest Elements (Swiggy, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-sticky.svg" alt="Sticky Note: Problem 6: Find K Closest Elements (Swiggy, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-6-find-k-closest-elements-swiggy-2024-sticky.svg" alt="Sticky Note: Problem 6: Find K Closest Elements (Swiggy, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -3989,14 +3989,14 @@ public class KClosestElements {
 
 ### Problem 7: Max Area of Island (Swiggy, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-handwritten.svg" alt="Handwritten: Problem 7: Max Area of Island (Swiggy, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-handwritten.svg" alt="Handwritten: Problem 7: Max Area of Island (Swiggy, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-diagram.svg" alt="Diagram: Problem 7: Max Area of Island (Swiggy, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-diagram.svg" alt="Diagram: Problem 7: Max Area of Island (Swiggy, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-sticky.svg" alt="Sticky Note: Problem 7: Max Area of Island (Swiggy, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-7-max-area-of-island-swiggy-2023-sticky.svg" alt="Sticky Note: Problem 7: Max Area of Island (Swiggy, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -4049,14 +4049,14 @@ public class MaxAreaIsland {
 
 ### Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-diagram.svg" alt="Diagram: Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-diagram.svg" alt="Diagram: Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-ride-sharing-matching-algorithm-ola-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a Ride-Sharing Matching Algorithm (Ola, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -4112,14 +4112,14 @@ public class RideMatcher {
 
 ### Problem 2: Find All Duplicates in an Array (Paytm, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-handwritten.svg" alt="Handwritten: Problem 2: Find All Duplicates in an Array (Paytm, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-handwritten.svg" alt="Handwritten: Problem 2: Find All Duplicates in an Array (Paytm, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-diagram.svg" alt="Diagram: Problem 2: Find All Duplicates in an Array (Paytm, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-diagram.svg" alt="Diagram: Problem 2: Find All Duplicates in an Array (Paytm, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-sticky.svg" alt="Sticky Note: Problem 2: Find All Duplicates in an Array (Paytm, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-all-duplicates-in-an-array-paytm-2024-sticky.svg" alt="Sticky Note: Problem 2: Find All Duplicates in an Array (Paytm, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -4157,14 +4157,14 @@ public class FindDuplicates {
 
 ### Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-handwritten.svg" alt="Handwritten: Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-handwritten.svg" alt="Handwritten: Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-diagram.svg" alt="Diagram: Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-diagram.svg" alt="Diagram: Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-sticky.svg" alt="Sticky Note: Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-first-non-repeating-character-in-a-stream-ola-2023-sticky.svg" alt="Sticky Note: Problem 3: First Non-Repeating Character in a Stream (Ola, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -4203,14 +4203,14 @@ public class FirstNonRepeating {
 
 ### Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-handwritten.svg" alt="Handwritten: Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-handwritten.svg" alt="Handwritten: Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-diagram.svg" alt="Diagram: Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-diagram.svg" alt="Diagram: Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-sticky.svg" alt="Sticky Note: Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-design-splitwise-paytm-low-level-design-2024-sticky.svg" alt="Sticky Note: Problem 4: Design Splitwise (Paytm Low-Level Design, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -4310,14 +4310,14 @@ public class SplitwiseDemo {
 
 ### Aptitude & Reasoning
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
 </a>
 
 
@@ -4350,14 +4350,14 @@ public class SplitwiseDemo {
 
 ### TCS Coding Problems
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-handwritten.svg" alt="Handwritten: TCS Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-handwritten.svg" alt="Handwritten: TCS Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-diagram.svg" alt="Diagram: TCS Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-diagram.svg" alt="Diagram: TCS Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-sticky.svg" alt="Sticky Note: TCS Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-sticky.svg" alt="Sticky Note: TCS Coding Problems" width="30%">
 </a>
 
 
@@ -4460,14 +4460,14 @@ public class SecondLargest {
 
 ### TCS Coding Problems (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-handwritten.svg" alt="Handwritten: TCS Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-handwritten.svg" alt="Handwritten: TCS Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-diagram.svg" alt="Diagram: TCS Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-diagram.svg" alt="Diagram: TCS Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-sticky.svg" alt="Sticky Note: TCS Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/tcs-coding-problems-continued-sticky.svg" alt="Sticky Note: TCS Coding Problems (continued)" width="30%">
 </a>
 
 
@@ -4568,14 +4568,14 @@ public class CountDigits {
 
 ### Aptitude & Reasoning
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
 </a>
 
 
@@ -4612,14 +4612,14 @@ d) Cannot be determined
 
 ### Infosys Coding Problems
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-handwritten.svg" alt="Handwritten: Infosys Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-handwritten.svg" alt="Handwritten: Infosys Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-diagram.svg" alt="Diagram: Infosys Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-diagram.svg" alt="Diagram: Infosys Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-sticky.svg" alt="Sticky Note: Infosys Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-sticky.svg" alt="Sticky Note: Infosys Coding Problems" width="30%">
 </a>
 
 
@@ -4713,14 +4713,14 @@ public class AnagramCheck {
 
 ### Infosys Aptitude (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-handwritten.svg" alt="Handwritten: Infosys Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-handwritten.svg" alt="Handwritten: Infosys Aptitude (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-diagram.svg" alt="Diagram: Infosys Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-diagram.svg" alt="Diagram: Infosys Aptitude (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-sticky.svg" alt="Sticky Note: Infosys Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-aptitude-continued-sticky.svg" alt="Sticky Note: Infosys Aptitude (continued)" width="30%">
 </a>
 
 
@@ -4738,14 +4738,14 @@ public class AnagramCheck {
 
 ### Infosys Coding Problems (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-handwritten.svg" alt="Handwritten: Infosys Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-handwritten.svg" alt="Handwritten: Infosys Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-diagram.svg" alt="Diagram: Infosys Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-diagram.svg" alt="Diagram: Infosys Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-sticky.svg" alt="Sticky Note: Infosys Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/infosys-coding-problems-continued-sticky.svg" alt="Sticky Note: Infosys Coding Problems (continued)" width="30%">
 </a>
 
 
@@ -4835,14 +4835,14 @@ public class RemoveVowels {
 
 ### Aptitude & Reasoning
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
 </a>
 
 
@@ -4875,14 +4875,14 @@ public class RemoveVowels {
 
 ### Wipro Coding Problems
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-handwritten.svg" alt="Handwritten: Wipro Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-handwritten.svg" alt="Handwritten: Wipro Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-diagram.svg" alt="Diagram: Wipro Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-diagram.svg" alt="Diagram: Wipro Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-sticky.svg" alt="Sticky Note: Wipro Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-sticky.svg" alt="Sticky Note: Wipro Coding Problems" width="30%">
 </a>
 
 
@@ -4966,14 +4966,14 @@ public class VowelConsonantCount {
 
 ### Wipro Aptitude (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-handwritten.svg" alt="Handwritten: Wipro Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-handwritten.svg" alt="Handwritten: Wipro Aptitude (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-diagram.svg" alt="Diagram: Wipro Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-diagram.svg" alt="Diagram: Wipro Aptitude (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-sticky.svg" alt="Sticky Note: Wipro Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-aptitude-continued-sticky.svg" alt="Sticky Note: Wipro Aptitude (continued)" width="30%">
 </a>
 
 
@@ -4991,14 +4991,14 @@ public class VowelConsonantCount {
 
 ### Wipro Coding Problems (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-handwritten.svg" alt="Handwritten: Wipro Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-handwritten.svg" alt="Handwritten: Wipro Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-diagram.svg" alt="Diagram: Wipro Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-diagram.svg" alt="Diagram: Wipro Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-sticky.svg" alt="Sticky Note: Wipro Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/wipro-coding-problems-continued-sticky.svg" alt="Sticky Note: Wipro Coding Problems (continued)" width="30%">
 </a>
 
 
@@ -5090,14 +5090,14 @@ public class MaxMinArray {
 
 ### Aptitude & Reasoning
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-handwritten.svg" alt="Handwritten: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-diagram.svg" alt="Diagram: Aptitude & Reasoning" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/aptitude-reasoning-sticky.svg" alt="Sticky Note: Aptitude & Reasoning" width="30%">
 </a>
 
 
@@ -5130,14 +5130,14 @@ public class MaxMinArray {
 
 ### Accenture Coding Problems
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-handwritten.svg" alt="Handwritten: Accenture Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-handwritten.svg" alt="Handwritten: Accenture Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-diagram.svg" alt="Diagram: Accenture Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-diagram.svg" alt="Diagram: Accenture Coding Problems" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-sticky.svg" alt="Sticky Note: Accenture Coding Problems" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-sticky.svg" alt="Sticky Note: Accenture Coding Problems" width="30%">
 </a>
 
 
@@ -5241,14 +5241,14 @@ public class RemoveDuplicates {
 
 ### Accenture Aptitude (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-handwritten.svg" alt="Handwritten: Accenture Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-handwritten.svg" alt="Handwritten: Accenture Aptitude (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-diagram.svg" alt="Diagram: Accenture Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-diagram.svg" alt="Diagram: Accenture Aptitude (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-sticky.svg" alt="Sticky Note: Accenture Aptitude (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-aptitude-continued-sticky.svg" alt="Sticky Note: Accenture Aptitude (continued)" width="30%">
 </a>
 
 
@@ -5266,14 +5266,14 @@ public class RemoveDuplicates {
 
 ### Accenture Coding Problems (continued)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-handwritten.svg" alt="Handwritten: Accenture Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-handwritten.svg" alt="Handwritten: Accenture Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-diagram.svg" alt="Diagram: Accenture Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-diagram.svg" alt="Diagram: Accenture Coding Problems (continued)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-sticky.svg" alt="Sticky Note: Accenture Coding Problems (continued)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/accenture-coding-problems-continued-sticky.svg" alt="Sticky Note: Accenture Coding Problems (continued)" width="30%">
 </a>
 
 
@@ -5393,14 +5393,14 @@ public class CharFrequency {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Netflix interviews focus on system design, problem solving, and cultural fit. The process typically includes: Recruiter Screen → Technical Phone Screen (coding + system design) → Onsite (3-4 rounds: coding, system design, behavioral/culture) → Final debrief. Netflix emphasizes its unique culture of "Freedom and Responsibility."
@@ -5409,14 +5409,14 @@ Netflix interviews focus on system design, problem solving, and cultural fit. Th
 
 ### Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-handwritten.svg" alt="Handwritten: Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-handwritten.svg" alt="Handwritten: Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-diagram.svg" alt="Diagram: Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-diagram.svg" alt="Diagram: Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-sticky.svg" alt="Sticky Note: Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-movie-recommendation-system-design-netflix-system-design-2024-sticky.svg" alt="Sticky Note: Problem 1: Movie Recommendation System Design (Netflix System Design, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -5509,14 +5509,14 @@ public class MovieRecommenderDemo {
 
 ### Problem 2: Content-Based Filtering (Netflix, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-handwritten.svg" alt="Handwritten: Problem 2: Content-Based Filtering (Netflix, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-handwritten.svg" alt="Handwritten: Problem 2: Content-Based Filtering (Netflix, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-diagram.svg" alt="Diagram: Problem 2: Content-Based Filtering (Netflix, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-diagram.svg" alt="Diagram: Problem 2: Content-Based Filtering (Netflix, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-sticky.svg" alt="Sticky Note: Problem 2: Content-Based Filtering (Netflix, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-content-based-filtering-netflix-2024-sticky.svg" alt="Sticky Note: Problem 2: Content-Based Filtering (Netflix, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -5605,14 +5605,14 @@ public class ContentFilterDemo {
 
 ### Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-handwritten.svg" alt="Handwritten: Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-handwritten.svg" alt="Handwritten: Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-diagram.svg" alt="Diagram: Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-diagram.svg" alt="Diagram: Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-sticky.svg" alt="Sticky Note: Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-watch-history-patterns-most-watched-genre-netflix-2023-sticky.svg" alt="Sticky Note: Problem 3: Watch History Patterns → Most Watched Genre (Netflix, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -5693,14 +5693,14 @@ public class WatchHistoryDemo {
 
 ### Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-handwritten.svg" alt="Handwritten: Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-handwritten.svg" alt="Handwritten: Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-diagram.svg" alt="Diagram: Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-diagram.svg" alt="Diagram: Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-sticky.svg" alt="Sticky Note: Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-streaming-quality-optimization-netflix-system-design-2024-sticky.svg" alt="Sticky Note: Problem 4: Streaming Quality Optimization (Netflix System Design, 2024)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -5769,14 +5769,14 @@ public class StreamingOptimizerDemo {
 
 ### Netflix Culture Deck → Behavioral Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-handwritten.svg" alt="Handwritten: Netflix Culture Deck → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-handwritten.svg" alt="Handwritten: Netflix Culture Deck → Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-diagram.svg" alt="Diagram: Netflix Culture Deck → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-diagram.svg" alt="Diagram: Netflix Culture Deck → Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-sticky.svg" alt="Sticky Note: Netflix Culture Deck → Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/netflix-culture-deck-behavioral-questions-sticky.svg" alt="Sticky Note: Netflix Culture Deck → Behavioral Questions" width="30%">
 </a>
 
 
@@ -5792,14 +5792,14 @@ public class StreamingOptimizerDemo {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Adobe's interview process includes: Online Assessment (coding + aptitude) → Technical Phone Screen → Onsite (4-5 rounds): Data Structures & Algorithms, System Design, Problem Solving, Managerial Round, and HR. Adobe values innovation, creativity, and technical depth. Expect questions on OOP design patterns, multithreading, and product-specific technologies.
@@ -5808,14 +5808,14 @@ Adobe's interview process includes: Online Assessment (coding + aptitude) → Te
 
 ### Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-diagram.svg" alt="Diagram: Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-diagram.svg" alt="Diagram: Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-photo-editor-filter-brightness-adjustment-adobe-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a Photo Editor Filter → Brightness Adjustment (Adobe, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -5866,14 +5866,14 @@ public class ImageFilterDemo {
 
 ### Problem 2: Longest Increasing Subsequence (Adobe, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-handwritten.svg" alt="Handwritten: Problem 2: Longest Increasing Subsequence (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-handwritten.svg" alt="Handwritten: Problem 2: Longest Increasing Subsequence (Adobe, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-diagram.svg" alt="Diagram: Problem 2: Longest Increasing Subsequence (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-diagram.svg" alt="Diagram: Problem 2: Longest Increasing Subsequence (Adobe, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-sticky.svg" alt="Sticky Note: Problem 2: Longest Increasing Subsequence (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-longest-increasing-subsequence-adobe-2024-sticky.svg" alt="Sticky Note: Problem 2: Longest Increasing Subsequence (Adobe, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -5917,14 +5917,14 @@ public class LongestIncreasingSubsequence {
 
 ### Problem 3: Design a Version Comparison System (Adobe, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-handwritten.svg" alt="Handwritten: Problem 3: Design a Version Comparison System (Adobe, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-handwritten.svg" alt="Handwritten: Problem 3: Design a Version Comparison System (Adobe, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-diagram.svg" alt="Diagram: Problem 3: Design a Version Comparison System (Adobe, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-diagram.svg" alt="Diagram: Problem 3: Design a Version Comparison System (Adobe, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-sticky.svg" alt="Sticky Note: Problem 3: Design a Version Comparison System (Adobe, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-version-comparison-system-adobe-2023-sticky.svg" alt="Sticky Note: Problem 3: Design a Version Comparison System (Adobe, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -5958,14 +5958,14 @@ public class VersionCompare {
 
 ### Problem 4: Find Peak Element (Adobe, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-handwritten.svg" alt="Handwritten: Problem 4: Find Peak Element (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-handwritten.svg" alt="Handwritten: Problem 4: Find Peak Element (Adobe, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-diagram.svg" alt="Diagram: Problem 4: Find Peak Element (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-diagram.svg" alt="Diagram: Problem 4: Find Peak Element (Adobe, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-sticky.svg" alt="Sticky Note: Problem 4: Find Peak Element (Adobe, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-find-peak-element-adobe-2024-sticky.svg" alt="Sticky Note: Problem 4: Find Peak Element (Adobe, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6001,14 +6001,14 @@ public class FindPeakElement {
 
 ### Adobe Behavioral Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-handwritten.svg" alt="Handwritten: Adobe Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-handwritten.svg" alt="Handwritten: Adobe Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-diagram.svg" alt="Diagram: Adobe Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-diagram.svg" alt="Diagram: Adobe Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-sticky.svg" alt="Sticky Note: Adobe Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/adobe-behavioral-questions-sticky.svg" alt="Sticky Note: Adobe Behavioral Questions" width="30%">
 </a>
 
 
@@ -6021,14 +6021,14 @@ public class FindPeakElement {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Goldman Sachs follows a structured recruitment process: Online Assessment (HackerRank → 2 coding problems + 1 SQL + aptitude) → Superday (4-5 back-to-back interviews): Technical rounds covering data structures, algorithms, probability/puzzles, system design, and behavioral. GS values technical excellence, risk awareness, and collaboration. Expect questions on arrays, hash maps, trees, and dynamic programming with a focus on clean, production-quality code.
@@ -6037,14 +6037,14 @@ Goldman Sachs follows a structured recruitment process: Online Assessment (Hacke
 
 ### Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-handwritten.svg" alt="Handwritten: Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-handwritten.svg" alt="Handwritten: Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-diagram.svg" alt="Diagram: Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-diagram.svg" alt="Diagram: Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-sticky.svg" alt="Sticky Note: Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-maximum-size-subarray-sum-equals-k-goldman-sachs-2024-sticky.svg" alt="Sticky Note: Problem 1: Maximum Size Subarray Sum Equals K (Goldman Sachs, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6084,14 +6084,14 @@ public class MaxSubarraySumK {
 
 ### Problem 2: Gas Station (Goldman Sachs, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-handwritten.svg" alt="Handwritten: Problem 2: Gas Station (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-handwritten.svg" alt="Handwritten: Problem 2: Gas Station (Goldman Sachs, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-diagram.svg" alt="Diagram: Problem 2: Gas Station (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-diagram.svg" alt="Diagram: Problem 2: Gas Station (Goldman Sachs, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-sticky.svg" alt="Sticky Note: Problem 2: Gas Station (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-gas-station-goldman-sachs-2024-sticky.svg" alt="Sticky Note: Problem 2: Gas Station (Goldman Sachs, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6130,14 +6130,14 @@ public class GasStation {
 
 ### Problem 3: Design a Leaderboard (Goldman Sachs, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-handwritten.svg" alt="Handwritten: Problem 3: Design a Leaderboard (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-handwritten.svg" alt="Handwritten: Problem 3: Design a Leaderboard (Goldman Sachs, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-diagram.svg" alt="Diagram: Problem 3: Design a Leaderboard (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-diagram.svg" alt="Diagram: Problem 3: Design a Leaderboard (Goldman Sachs, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-sticky.svg" alt="Sticky Note: Problem 3: Design a Leaderboard (Goldman Sachs, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-design-a-leaderboard-goldman-sachs-2024-sticky.svg" alt="Sticky Note: Problem 3: Design a Leaderboard (Goldman Sachs, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6214,14 +6214,14 @@ public class LeaderboardDemo {
 
 ### Problem 4: Minimum Path Sum (Goldman Sachs, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-handwritten.svg" alt="Handwritten: Problem 4: Minimum Path Sum (Goldman Sachs, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-handwritten.svg" alt="Handwritten: Problem 4: Minimum Path Sum (Goldman Sachs, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-diagram.svg" alt="Diagram: Problem 4: Minimum Path Sum (Goldman Sachs, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-diagram.svg" alt="Diagram: Problem 4: Minimum Path Sum (Goldman Sachs, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-sticky.svg" alt="Sticky Note: Problem 4: Minimum Path Sum (Goldman Sachs, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-minimum-path-sum-goldman-sachs-2023-sticky.svg" alt="Sticky Note: Problem 4: Minimum Path Sum (Goldman Sachs, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6256,14 +6256,14 @@ public class MinPathSum {
 
 ### Goldman Sachs Behavioral Questions
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-handwritten.svg" alt="Handwritten: Goldman Sachs Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-handwritten.svg" alt="Handwritten: Goldman Sachs Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-diagram.svg" alt="Diagram: Goldman Sachs Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-diagram.svg" alt="Diagram: Goldman Sachs Behavioral Questions" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-sticky.svg" alt="Sticky Note: Goldman Sachs Behavioral Questions" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/goldman-sachs-behavioral-questions-sticky.svg" alt="Sticky Note: Goldman Sachs Behavioral Questions" width="30%">
 </a>
 
 
@@ -6279,14 +6279,14 @@ public class MinPathSum {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Apple's interview process is rigorous and values craftsmanship. It typically includes: Recruiter Screen → Technical Phone Screen (1-2 LeetCode Medium/Hard problems) → On-site (6-7 rounds: coding, system design, hiring manager, behavioral). Apple engineers code in Swift, Objective-C, Java, and C++. They value product passion, attention to detail, and cross-functional thinking. Privacy and user experience are central themes.
@@ -6295,14 +6295,14 @@ Apple's interview process is rigorous and values craftsmanship. It typically inc
 
 ### Problem 1: LRU Cache (Apple, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-handwritten.svg" alt="Handwritten: Problem 1: LRU Cache (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-handwritten.svg" alt="Handwritten: Problem 1: LRU Cache (Apple, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-diagram.svg" alt="Diagram: Problem 1: LRU Cache (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-diagram.svg" alt="Diagram: Problem 1: LRU Cache (Apple, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-sticky.svg" alt="Sticky Note: Problem 1: LRU Cache (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-lru-cache-apple-2024-sticky.svg" alt="Sticky Note: Problem 1: LRU Cache (Apple, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6374,14 +6374,14 @@ public class LRUCache {
 
 ### Problem 2: Merge Intervals (Apple, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-handwritten.svg" alt="Handwritten: Problem 2: Merge Intervals (Apple, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-handwritten.svg" alt="Handwritten: Problem 2: Merge Intervals (Apple, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-diagram.svg" alt="Diagram: Problem 2: Merge Intervals (Apple, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-diagram.svg" alt="Diagram: Problem 2: Merge Intervals (Apple, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-sticky.svg" alt="Sticky Note: Problem 2: Merge Intervals (Apple, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-intervals-apple-2023-sticky.svg" alt="Sticky Note: Problem 2: Merge Intervals (Apple, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6422,14 +6422,14 @@ public class MergeIntervals {
 
 ### Problem 3: String Compression (Apple, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-handwritten.svg" alt="Handwritten: Problem 3: String Compression (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-handwritten.svg" alt="Handwritten: Problem 3: String Compression (Apple, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-diagram.svg" alt="Diagram: Problem 3: String Compression (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-diagram.svg" alt="Diagram: Problem 3: String Compression (Apple, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-sticky.svg" alt="Sticky Note: Problem 3: String Compression (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-string-compression-apple-2024-sticky.svg" alt="Sticky Note: Problem 3: String Compression (Apple, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6463,14 +6463,14 @@ public class StringCompression {
 
 ### Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-handwritten.svg" alt="Handwritten: Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-handwritten.svg" alt="Handwritten: Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-diagram.svg" alt="Diagram: Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-diagram.svg" alt="Diagram: Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-sticky.svg" alt="Sticky Note: Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-best-time-to-buy-and-sell-stock-apple-2024-sticky.svg" alt="Sticky Note: Problem 4: Best Time to Buy and Sell Stock (Apple, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -6504,14 +6504,14 @@ public class BestTimeToBuySellStock {
 
 ### Problem 5: Word Break (Apple, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-handwritten.svg" alt="Handwritten: Problem 5: Word Break (Apple, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-handwritten.svg" alt="Handwritten: Problem 5: Word Break (Apple, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-diagram.svg" alt="Diagram: Problem 5: Word Break (Apple, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-diagram.svg" alt="Diagram: Problem 5: Word Break (Apple, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-sticky.svg" alt="Sticky Note: Problem 5: Word Break (Apple, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-5-word-break-apple-2023-sticky.svg" alt="Sticky Note: Problem 5: Word Break (Apple, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6552,14 +6552,14 @@ public class WordBreak {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 LinkedIn's interview process: Recruiter Call → Technical Phone Screen (coding + system design basics) → On-site (4-5 rounds: 2 coding, 1 system design, 1 behavioral/values, 1 hiring manager). LinkedIn values transformation, data-driven thinking, and graph algorithm expertise. Their engineering blog is an excellent preparation resource.
@@ -6568,14 +6568,14 @@ LinkedIn's interview process: Recruiter Call → Technical Phone Screen (coding 
 
 ### Problem 1: Max Stack (LinkedIn, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-handwritten.svg" alt="Handwritten: Problem 1: Max Stack (LinkedIn, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-handwritten.svg" alt="Handwritten: Problem 1: Max Stack (LinkedIn, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-diagram.svg" alt="Diagram: Problem 1: Max Stack (LinkedIn, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-diagram.svg" alt="Diagram: Problem 1: Max Stack (LinkedIn, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-sticky.svg" alt="Sticky Note: Problem 1: Max Stack (LinkedIn, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-max-stack-linkedin-2023-sticky.svg" alt="Sticky Note: Problem 1: Max Stack (LinkedIn, 2023)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -6628,14 +6628,14 @@ public class MaxStack {
 
 ### Problem 2: Nested List Weight Sum (LinkedIn, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-handwritten.svg" alt="Handwritten: Problem 2: Nested List Weight Sum (LinkedIn, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-handwritten.svg" alt="Handwritten: Problem 2: Nested List Weight Sum (LinkedIn, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-diagram.svg" alt="Diagram: Problem 2: Nested List Weight Sum (LinkedIn, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-diagram.svg" alt="Diagram: Problem 2: Nested List Weight Sum (LinkedIn, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-sticky.svg" alt="Sticky Note: Problem 2: Nested List Weight Sum (LinkedIn, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-nested-list-weight-sum-linkedin-2024-sticky.svg" alt="Sticky Note: Problem 2: Nested List Weight Sum (LinkedIn, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6675,14 +6675,14 @@ public class NestedListWeightSum {
 
 ### Problem 3: Can Place Flowers (LinkedIn, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-handwritten.svg" alt="Handwritten: Problem 3: Can Place Flowers (LinkedIn, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-handwritten.svg" alt="Handwritten: Problem 3: Can Place Flowers (LinkedIn, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-diagram.svg" alt="Diagram: Problem 3: Can Place Flowers (LinkedIn, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-diagram.svg" alt="Diagram: Problem 3: Can Place Flowers (LinkedIn, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-sticky.svg" alt="Sticky Note: Problem 3: Can Place Flowers (LinkedIn, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-can-place-flowers-linkedin-2023-sticky.svg" alt="Sticky Note: Problem 3: Can Place Flowers (LinkedIn, 2023)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -6718,14 +6718,14 @@ public class CanPlaceFlowers {
 
 ### Problem 4: Shortest Word Distance (LinkedIn, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-handwritten.svg" alt="Handwritten: Problem 4: Shortest Word Distance (LinkedIn, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-handwritten.svg" alt="Handwritten: Problem 4: Shortest Word Distance (LinkedIn, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-diagram.svg" alt="Diagram: Problem 4: Shortest Word Distance (LinkedIn, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-diagram.svg" alt="Diagram: Problem 4: Shortest Word Distance (LinkedIn, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-sticky.svg" alt="Sticky Note: Problem 4: Shortest Word Distance (LinkedIn, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-shortest-word-distance-linkedin-2024-sticky.svg" alt="Sticky Note: Problem 4: Shortest Word Distance (LinkedIn, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -6762,14 +6762,14 @@ public class ShortestWordDistance {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Salesforce's process: Recruiter Call → HackerRank/CodeSignal OA → Technical Phone Screen → On-site (4-5 rounds: DS/Algo, system design, architecture, manager, HR) → Leadership round. Salesforce values Ohana culture, multi-tenant architecture knowledge, and platform thinking. Trailhead certifications are a significant advantage.
@@ -6778,14 +6778,14 @@ Salesforce's process: Recruiter Call → HackerRank/CodeSignal OA → Technical 
 
 ### Problem 1: Valid Parentheses (Salesforce, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-handwritten.svg" alt="Handwritten: Problem 1: Valid Parentheses (Salesforce, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-handwritten.svg" alt="Handwritten: Problem 1: Valid Parentheses (Salesforce, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-diagram.svg" alt="Diagram: Problem 1: Valid Parentheses (Salesforce, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-diagram.svg" alt="Diagram: Problem 1: Valid Parentheses (Salesforce, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-sticky.svg" alt="Sticky Note: Problem 1: Valid Parentheses (Salesforce, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-valid-parentheses-salesforce-2024-sticky.svg" alt="Sticky Note: Problem 1: Valid Parentheses (Salesforce, 2024)" width="30%">
 </a>
 
 **Difficulty:** Easy
@@ -6821,14 +6821,14 @@ public class ValidParentheses {
 
 ### Problem 2: Merge k Sorted Lists (Salesforce, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-handwritten.svg" alt="Handwritten: Problem 2: Merge k Sorted Lists (Salesforce, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-handwritten.svg" alt="Handwritten: Problem 2: Merge k Sorted Lists (Salesforce, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-diagram.svg" alt="Diagram: Problem 2: Merge k Sorted Lists (Salesforce, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-diagram.svg" alt="Diagram: Problem 2: Merge k Sorted Lists (Salesforce, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-sticky.svg" alt="Sticky Note: Problem 2: Merge k Sorted Lists (Salesforce, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-merge-k-sorted-lists-salesforce-2023-sticky.svg" alt="Sticky Note: Problem 2: Merge k Sorted Lists (Salesforce, 2023)" width="30%">
 </a>
 
 **Difficulty:** Hard
@@ -6875,14 +6875,14 @@ public class MergeKSortedLists {
 
 ### Problem 3: Top K Frequent Elements (Salesforce, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-handwritten.svg" alt="Handwritten: Problem 3: Top K Frequent Elements (Salesforce, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-handwritten.svg" alt="Handwritten: Problem 3: Top K Frequent Elements (Salesforce, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-diagram.svg" alt="Diagram: Problem 3: Top K Frequent Elements (Salesforce, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-diagram.svg" alt="Diagram: Problem 3: Top K Frequent Elements (Salesforce, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-sticky.svg" alt="Sticky Note: Problem 3: Top K Frequent Elements (Salesforce, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-top-k-frequent-elements-salesforce-2024-sticky.svg" alt="Sticky Note: Problem 3: Top K Frequent Elements (Salesforce, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6921,14 +6921,14 @@ public class TopKFrequent {
 
 ### Problem 4: Clone Graph (Salesforce, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-handwritten.svg" alt="Handwritten: Problem 4: Clone Graph (Salesforce, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-handwritten.svg" alt="Handwritten: Problem 4: Clone Graph (Salesforce, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-diagram.svg" alt="Diagram: Problem 4: Clone Graph (Salesforce, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-diagram.svg" alt="Diagram: Problem 4: Clone Graph (Salesforce, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-sticky.svg" alt="Sticky Note: Problem 4: Clone Graph (Salesforce, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-4-clone-graph-salesforce-2023-sticky.svg" alt="Sticky Note: Problem 4: Clone Graph (Salesforce, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -6970,14 +6970,14 @@ public class CloneGraph {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Oracle's process: Recruiter Screen → Online Coding Test → Technical Phone Screen → On-site (4-5 rounds: DS/Algo, system design, database internals, manager, HR) → Team match. Oracle values deep systems knowledge (OS, JVM, memory management), database expertise, and Java mastery. For OCI roles, cloud architecture is central.
@@ -6986,14 +6986,14 @@ Oracle's process: Recruiter Screen → Online Coding Test → Technical Phone Sc
 
 ### Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-handwritten.svg" alt="Handwritten: Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-handwritten.svg" alt="Handwritten: Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-diagram.svg" alt="Diagram: Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-diagram.svg" alt="Diagram: Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-sticky.svg" alt="Sticky Note: Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-longest-substring-without-repeating-characters-oracle-2024-sticky.svg" alt="Sticky Note: Problem 1: Longest Substring Without Repeating Characters (Oracle, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -7030,14 +7030,14 @@ public class LongestSubstringNoRepeat {
 
 ### Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-handwritten.svg" alt="Handwritten: Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-handwritten.svg" alt="Handwritten: Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-diagram.svg" alt="Diagram: Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-diagram.svg" alt="Diagram: Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-sticky.svg" alt="Sticky Note: Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-find-minimum-in-rotated-sorted-array-oracle-2023-sticky.svg" alt="Sticky Note: Problem 2: Find Minimum in Rotated Sorted Array (Oracle, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -7071,14 +7071,14 @@ public class FindMinRotated {
 
 ### Problem 3: Zigzag Conversion (Oracle, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-handwritten.svg" alt="Handwritten: Problem 3: Zigzag Conversion (Oracle, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-handwritten.svg" alt="Handwritten: Problem 3: Zigzag Conversion (Oracle, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-diagram.svg" alt="Diagram: Problem 3: Zigzag Conversion (Oracle, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-diagram.svg" alt="Diagram: Problem 3: Zigzag Conversion (Oracle, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-sticky.svg" alt="Sticky Note: Problem 3: Zigzag Conversion (Oracle, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-zigzag-conversion-oracle-2024-sticky.svg" alt="Sticky Note: Problem 3: Zigzag Conversion (Oracle, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -7117,14 +7117,14 @@ public class ZigzagConversion {
 
 ### Interview Process Overview
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-handwritten.svg" alt="Handwritten: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-diagram.svg" alt="Diagram: Interview Process Overview" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/interview-process-overview-sticky.svg" alt="Sticky Note: Interview Process Overview" width="30%">
 </a>
 
 Atlassian's process: Recruiter Screen → Codility/CodeSignal OA → Technical Phone Screen → On-site (4-5 rounds: coding, system design, values interview, manager round). Atlassian values "Open Company, No Bullshit" culture, teamwork, and product thinking. System design questions often involve collaboration tools and workflow engines.
@@ -7133,14 +7133,14 @@ Atlassian's process: Recruiter Screen → Codility/CodeSignal OA → Technical P
 
 ### Problem 1: Design a File System (Atlassian, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a File System (Atlassian, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-handwritten.svg" alt="Handwritten: Problem 1: Design a File System (Atlassian, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-diagram.svg" alt="Diagram: Problem 1: Design a File System (Atlassian, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-diagram.svg" alt="Diagram: Problem 1: Design a File System (Atlassian, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a File System (Atlassian, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-1-design-a-file-system-atlassian-2024-sticky.svg" alt="Sticky Note: Problem 1: Design a File System (Atlassian, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -7210,14 +7210,14 @@ public class FileSystem {
 
 ### Problem 2: Most Popular Video Creator (Atlassian, 2024)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-handwritten.svg" alt="Handwritten: Problem 2: Most Popular Video Creator (Atlassian, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-handwritten.svg" alt="Handwritten: Problem 2: Most Popular Video Creator (Atlassian, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-diagram.svg" alt="Diagram: Problem 2: Most Popular Video Creator (Atlassian, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-diagram.svg" alt="Diagram: Problem 2: Most Popular Video Creator (Atlassian, 2024)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-sticky.svg" alt="Sticky Note: Problem 2: Most Popular Video Creator (Atlassian, 2024)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-2-most-popular-video-creator-atlassian-2024-sticky.svg" alt="Sticky Note: Problem 2: Most Popular Video Creator (Atlassian, 2024)" width="30%">
 </a>
 
 **Difficulty:** Medium
@@ -7271,14 +7271,14 @@ public class MostPopularCreator {
 
 ### Problem 3: Number of Islands (Atlassian, 2023)
 
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-handwritten.svg" alt="Handwritten: Problem 3: Number of Islands (Atlassian, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-handwritten.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-handwritten.svg" alt="Handwritten: Problem 3: Number of Islands (Atlassian, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-diagram.svg" alt="Diagram: Problem 3: Number of Islands (Atlassian, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-diagram.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-diagram.svg" alt="Diagram: Problem 3: Number of Islands (Atlassian, 2023)" width="30%">
 </a>
-<a href="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-sticky.svg" alt="Sticky Note: Problem 3: Number of Islands (Atlassian, 2023)" width="30%">
+<a href="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-sticky.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/diagrams/placement-preparation/07-company-wise-pyqs/problem-3-number-of-islands-atlassian-2023-sticky.svg" alt="Sticky Note: Problem 3: Number of Islands (Atlassian, 2023)" width="30%">
 </a>
 
 **Difficulty:** Medium
